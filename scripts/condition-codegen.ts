@@ -87,11 +87,15 @@ export function conditionKeyToMethodName(
 	const prefix = conditionKeyName.split(":")[0];
 	let shortName = conditionKeyName.slice(prefix.length + 1);
 
-	// Remove template variables like ${TagKey}
+	// Remove template variables like ${TagKey} and <key>
 	shortName = shortName.replace(/\/?\$\{[^}]+\}/g, "");
+	shortName = shortName.replace(/\/?<[^>]+>/g, "");
 
-	// Clean up any trailing slashes
-	shortName = shortName.replace(/\/+$/, "");
+	// Remove trailing colons and slashes
+	shortName = shortName.replace(/[/:]+$/, "");
+
+	// Replace remaining colons with hyphens for splitting
+	shortName = shortName.replace(/:/g, "-");
 
 	return toCamelCase(shortName);
 }
@@ -107,9 +111,13 @@ export function conditionKeyToConstant(conditionKeyName: string): string {
 	const prefix = conditionKeyName.split(":")[0];
 	let shortName = conditionKeyName.slice(prefix.length + 1);
 
-	// Remove template variables
+	// Remove template variables (${Var} and <var> styles)
 	shortName = shortName.replace(/\/?\$\{[^}]+\}/g, "");
-	shortName = shortName.replace(/\/+$/, "");
+	shortName = shortName.replace(/\/?<[^>]+>/g, "");
+	// Remove trailing slashes and colons
+	shortName = shortName.replace(/[/:]+$/, "");
+	// Replace remaining colons with underscores
+	shortName = shortName.replace(/:/g, "_");
 
 	return toUpperSnakeCase(shortName);
 }

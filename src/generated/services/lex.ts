@@ -507,10 +507,16 @@ export class LexActions {
 }
 
 const BotArnRegex = new RegExp(
-	"^(?:arn:(?<partition>[^:]+):lex:(?<region>[^:]*):(?<account>[^:]*):bot/(?<botId>[^:/?]+)|arn:(?<partition>[^:]+):lex:(?<region>[^:]*):(?<account>[^:]*):bot:(?<botName>[^:/?]+))$",
+	"^(?:arn:(?:[^:]+):lex:(?:[^:]*):(?:[^:]*):bot/(?:[^:/?]+)|arn:(?:[^:]+):lex:(?:[^:]*):(?:[^:]*):bot:(?:[^:/?]+))$",
+);
+const BotParseRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):lex:(?<region>[^:]*):(?<account>[^:]*):bot/(?<botId>[^:/?]+)$",
 );
 const BotAliasArnRegex = new RegExp(
-	"^(?:arn:(?<partition>[^:]+):lex:(?<region>[^:]*):(?<account>[^:]*):bot-alias/(?<botId>[^:/?]+)/(?<botAliasId>[^:/?]+)|arn:(?<partition>[^:]+):lex:(?<region>[^:]*):(?<account>[^:]*):bot:(?<botName>[^:/?]+):(?<botAlias>[^:/?]+))$",
+	"^(?:arn:(?:[^:]+):lex:(?:[^:]*):(?:[^:]*):bot-alias/(?:[^:/?]+)/(?:[^:/?]+)|arn:(?:[^:]+):lex:(?:[^:]*):(?:[^:]*):bot:(?:[^:/?]+):(?:[^:/?]+))$",
+);
+const BotAliasParseRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):lex:(?<region>[^:]*):(?<account>[^:]*):bot-alias/(?<botId>[^:/?]+)/(?<botAliasId>[^:/?]+)$",
 );
 const BotVersionArnRegex = new RegExp(
 	"^arn:(?<partition>[^:]+):lex:(?<region>[^:]*):(?<account>[^:]*):bot:(?<botName>[^:/?]+):(?<botVersion>[^:/?]+)$",
@@ -572,7 +578,7 @@ export class LexResources {
 	}
 
 	/**
-	 * Parses a bot ARN into its components.
+	 * Parses a bot ARN into its components (uses first ARN variant format).
 	 * @throws Error if the ARN does not match the expected format.
 	 */
 	static parseBotArn(arn: string): {
@@ -581,7 +587,7 @@ export class LexResources {
 		account: string;
 		botId: string;
 	} {
-		const match = BotArnRegex.exec(arn);
+		const match = BotParseRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid bot ARN: ${arn}`);
 		}
@@ -637,7 +643,7 @@ export class LexResources {
 	}
 
 	/**
-	 * Parses a bot alias ARN into its components.
+	 * Parses a bot alias ARN into its components (uses first ARN variant format).
 	 * @throws Error if the ARN does not match the expected format.
 	 */
 	static parseBotAliasArn(arn: string): {
@@ -647,7 +653,7 @@ export class LexResources {
 		botId: string;
 		botAliasId: string;
 	} {
-		const match = BotAliasArnRegex.exec(arn);
+		const match = BotAliasParseRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid bot alias ARN: ${arn}`);
 		}

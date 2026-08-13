@@ -5,7 +5,6 @@
 // Run `npx projen generate-constants` to regenerate
 // =============================================================================
 
-
 /**
  * IAM action constants for the rbin service.
  */
@@ -35,18 +34,33 @@ export class RbinActions {
 	static readonly UPDATE_RULE = "rbin:UpdateRule";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [RbinActions.GET_RULE, RbinActions.LIST_RULES, RbinActions.LIST_TAGS_FOR_RESOURCE];
+	static readonly READ_ACTIONS: string[] = [
+		RbinActions.GET_RULE,
+		RbinActions.LIST_RULES,
+		RbinActions.LIST_TAGS_FOR_RESOURCE,
+	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [RbinActions.CREATE_RULE, RbinActions.DELETE_RULE, RbinActions.LOCK_RULE, RbinActions.UNLOCK_RULE, RbinActions.UPDATE_RULE];
+	static readonly WRITE_ACTIONS: string[] = [
+		RbinActions.CREATE_RULE,
+		RbinActions.DELETE_RULE,
+		RbinActions.LOCK_RULE,
+		RbinActions.UNLOCK_RULE,
+		RbinActions.UPDATE_RULE,
+	];
 	/** All list-level actions. */
 	static readonly LIST_ACTIONS: string[] = [];
 	/** All permission-management-level actions. */
 	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [RbinActions.TAG_RESOURCE, RbinActions.UNTAG_RESOURCE];
+	static readonly TAGGING_ACTIONS: string[] = [
+		RbinActions.TAG_RESOURCE,
+		RbinActions.UNTAG_RESOURCE,
+	];
 }
 
-const RuleArnRegex = new RegExp("^arn:(?<partition>[^:]+):rbin:(?<region>[^:]*):(?<account>[^:]*):rule/(?<resourceName>[^:/?]+)$");
+const RuleArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):rbin:(?<region>[^:]*):(?<account>[^:]*):rule/(?<resourceName>[^:/?]+)$",
+);
 
 /**
  * ARN builders, validators, and parsers for rbin resources.
@@ -79,7 +93,12 @@ export class RbinResources {
 	 * Parses a rule ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRuleArn(arn: string): { partition: string; region: string; account: string; resourceName: string } {
+	static parseRuleArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		resourceName: string;
+	} {
 		const match = RuleArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid rule ARN: ${arn}`);
@@ -91,7 +110,6 @@ export class RbinResources {
 			resourceName: match.groups!.resourceName,
 		};
 	}
-
 }
 
 /**
@@ -99,7 +117,11 @@ export class RbinResources {
  */
 export class RbinOperations {
 	/** IAM actions required for the CreateRule API call. */
-	static readonly CREATE_RULE: string[] = ["rbin:CreateRule", "rbin:LockRule", "rbin:TagResource"];
+	static readonly CREATE_RULE: string[] = [
+		"rbin:CreateRule",
+		"rbin:LockRule",
+		"rbin:TagResource",
+	];
 	/** IAM actions required for the DeleteRule API call. */
 	static readonly DELETE_RULE: string[] = ["rbin:DeleteRule"];
 	/** IAM actions required for the GetRule API call. */
@@ -107,7 +129,9 @@ export class RbinOperations {
 	/** IAM actions required for the ListRules API call. */
 	static readonly LIST_RULES: string[] = ["rbin:ListRules"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = ["rbin:ListTagsForResource"];
+	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+		"rbin:ListTagsForResource",
+	];
 	/** IAM actions required for the LockRule API call. */
 	static readonly LOCK_RULE: string[] = ["rbin:LockRule"];
 	/** IAM actions required for the TagResource API call. */
@@ -125,25 +149,58 @@ export class RbinOperations {
  */
 export class RbinConditions {
 	/** Condition keys applicable to the CreateRule action. */
-	static readonly CREATE_RULE_CONDITION_KEYS: string[] = ["aws:RequestTag/${TagKey}", "aws:TagKeys", "rbin:Request/ResourceType"];
+	static readonly CREATE_RULE_CONDITION_KEYS: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+		"rbin:Request/ResourceType",
+	];
 	/** Condition keys applicable to the DeleteRule action. */
-	static readonly DELETE_RULE_CONDITION_KEYS: string[] = ["aws:ResourceTag/${TagKey}", "rbin:Attribute/ResourceType"];
+	static readonly DELETE_RULE_CONDITION_KEYS: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"rbin:Attribute/ResourceType",
+	];
 	/** Condition keys applicable to the GetRule action. */
-	static readonly GET_RULE_CONDITION_KEYS: string[] = ["aws:ResourceTag/${TagKey}", "rbin:Attribute/ResourceType"];
+	static readonly GET_RULE_CONDITION_KEYS: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"rbin:Attribute/ResourceType",
+	];
 	/** Condition keys applicable to the ListRules action. */
-	static readonly LIST_RULES_CONDITION_KEYS: string[] = ["rbin:Request/ResourceType"];
+	static readonly LIST_RULES_CONDITION_KEYS: string[] = [
+		"rbin:Request/ResourceType",
+	];
 	/** Condition keys applicable to the ListTagsForResource action. */
-	static readonly LIST_TAGS_FOR_RESOURCE_CONDITION_KEYS: string[] = ["aws:ResourceTag/${TagKey}", "rbin:Attribute/ResourceType"];
+	static readonly LIST_TAGS_FOR_RESOURCE_CONDITION_KEYS: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"rbin:Attribute/ResourceType",
+	];
 	/** Condition keys applicable to the LockRule action. */
-	static readonly LOCK_RULE_CONDITION_KEYS: string[] = ["aws:ResourceTag/${TagKey}", "rbin:Attribute/ResourceType"];
+	static readonly LOCK_RULE_CONDITION_KEYS: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"rbin:Attribute/ResourceType",
+	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:RequestTag/${TagKey}", "aws:ResourceTag/${TagKey}", "aws:TagKeys", "rbin:Attribute/ResourceType"];
+	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:ResourceTag/${TagKey}",
+		"aws:TagKeys",
+		"rbin:Attribute/ResourceType",
+	];
 	/** Condition keys applicable to the UnlockRule action. */
-	static readonly UNLOCK_RULE_CONDITION_KEYS: string[] = ["aws:ResourceTag/${TagKey}", "rbin:Attribute/ResourceType"];
+	static readonly UNLOCK_RULE_CONDITION_KEYS: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"rbin:Attribute/ResourceType",
+	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:ResourceTag/${TagKey}", "aws:TagKeys", "rbin:Attribute/ResourceType"];
+	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"aws:TagKeys",
+		"rbin:Attribute/ResourceType",
+	];
 	/** Condition keys applicable to the UpdateRule action. */
-	static readonly UPDATE_RULE_CONDITION_KEYS: string[] = ["aws:ResourceTag/${TagKey}", "rbin:Attribute/ResourceType"];
+	static readonly UPDATE_RULE_CONDITION_KEYS: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"rbin:Attribute/ResourceType",
+	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
 	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
@@ -152,22 +209,22 @@ export class RbinConditions {
 	/** Condition key: aws:TagKeys (ArrayOfString) */
 	static readonly TAG_KEYS = "aws:TagKeys";
 	/** Condition key: rbin:Attribute/ResourceType (String) */
-	static readonly ATTRIBUTE/RESOURCE_TYPE = "rbin:Attribute/ResourceType";
+	static readonly ATTRIBUTE_RESOURCE_TYPE = "rbin:Attribute/ResourceType";
 	/** Condition key: rbin:Request/ResourceType (String) */
-	static readonly REQUEST/RESOURCE_TYPE = "rbin:Request/ResourceType";
+	static readonly REQUEST_RESOURCE_TYPE = "rbin:Request/ResourceType";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.
 	 */
 	static requestTag(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "aws:RequestTag/${TagKey}": value } };
+		return { StringEquals: { "aws:RequestTag/${TagKey}": value } };
 	}
 
 	/**
 	 * Generates a condition block for `aws:ResourceTag/${TagKey}`.
 	 */
 	static resourceTag(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "aws:ResourceTag/${TagKey}": value } };
+		return { StringEquals: { "aws:ResourceTag/${TagKey}": value } };
 	}
 
 	/**
@@ -180,15 +237,18 @@ export class RbinConditions {
 	/**
 	 * Generates a condition block for `rbin:Attribute/ResourceType`.
 	 */
-	static attribute/resourceType(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "rbin:Attribute/ResourceType": value } };
+	static attributeResourceType(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "rbin:Attribute/ResourceType": value } };
 	}
 
 	/**
 	 * Generates a condition block for `rbin:Request/ResourceType`.
 	 */
-	static request/resourceType(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "rbin:Request/ResourceType": value } };
+	static requestResourceType(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "rbin:Request/ResourceType": value } };
 	}
-
 }

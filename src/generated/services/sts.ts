@@ -5,7 +5,6 @@
 // Run `npx projen generate-constants` to regenerate
 // =============================================================================
 
-
 /**
  * IAM action constants for the sts service.
  */
@@ -18,11 +17,13 @@ export class STSActions {
 	/** [Write] sts:AssumeRoleWithSAML */
 	static readonly ASSUME_ROLE_WITH_SAML = "sts:AssumeRoleWithSAML";
 	/** [Write] sts:AssumeRoleWithWebIdentity */
-	static readonly ASSUME_ROLE_WITH_WEB_IDENTITY = "sts:AssumeRoleWithWebIdentity";
+	static readonly ASSUME_ROLE_WITH_WEB_IDENTITY =
+		"sts:AssumeRoleWithWebIdentity";
 	/** [Write] sts:AssumeRoot */
 	static readonly ASSUME_ROOT = "sts:AssumeRoot";
 	/** [Write] sts:DecodeAuthorizationMessage */
-	static readonly DECODE_AUTHORIZATION_MESSAGE = "sts:DecodeAuthorizationMessage";
+	static readonly DECODE_AUTHORIZATION_MESSAGE =
+		"sts:DecodeAuthorizationMessage";
 	/** [Read] sts:GetAccessKeyInfo */
 	static readonly GET_ACCESS_KEY_INFO = "sts:GetAccessKeyInfo";
 	/** [Read] sts:GetCallerIdentity */
@@ -47,22 +48,51 @@ export class STSActions {
 	static readonly TAG_SESSION = "sts:TagSession";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [STSActions.GET_ACCESS_KEY_INFO, STSActions.GET_CALLER_IDENTITY, STSActions.GET_SERVICE_BEARER_TOKEN, STSActions.GET_SESSION_TOKEN];
+	static readonly READ_ACTIONS: string[] = [
+		STSActions.GET_ACCESS_KEY_INFO,
+		STSActions.GET_CALLER_IDENTITY,
+		STSActions.GET_SERVICE_BEARER_TOKEN,
+		STSActions.GET_SESSION_TOKEN,
+	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [STSActions.ASSUME_ROLE, STSActions.ASSUME_ROLE_WITH_SAML, STSActions.ASSUME_ROLE_WITH_WEB_IDENTITY, STSActions.ASSUME_ROOT, STSActions.DECODE_AUTHORIZATION_MESSAGE, STSActions.GET_DELEGATED_ACCESS_TOKEN, STSActions.GET_FEDERATION_TOKEN, STSActions.GET_WEB_IDENTITY_TOKEN, STSActions.SET_CONTEXT, STSActions.SET_SOURCE_IDENTITY];
+	static readonly WRITE_ACTIONS: string[] = [
+		STSActions.ASSUME_ROLE,
+		STSActions.ASSUME_ROLE_WITH_SAML,
+		STSActions.ASSUME_ROLE_WITH_WEB_IDENTITY,
+		STSActions.ASSUME_ROOT,
+		STSActions.DECODE_AUTHORIZATION_MESSAGE,
+		STSActions.GET_DELEGATED_ACCESS_TOKEN,
+		STSActions.GET_FEDERATION_TOKEN,
+		STSActions.GET_WEB_IDENTITY_TOKEN,
+		STSActions.SET_CONTEXT,
+		STSActions.SET_SOURCE_IDENTITY,
+	];
 	/** All list-level actions. */
 	static readonly LIST_ACTIONS: string[] = [];
 	/** All permission-management-level actions. */
 	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [STSActions.TAG_GET_WEB_IDENTITY_TOKEN, STSActions.TAG_SESSION];
+	static readonly TAGGING_ACTIONS: string[] = [
+		STSActions.TAG_GET_WEB_IDENTITY_TOKEN,
+		STSActions.TAG_SESSION,
+	];
 }
 
-const ContextProviderArnRegex = new RegExp("^arn:(?<partition>[^:]+):iam::aws:contextProvider/(?<contextProviderName>[^:/?]+)$");
-const FederatedUserArnRegex = new RegExp("^arn:(?<partition>[^:]+):sts::(?<account>[^:]*):federated-user/(?<federatedUserName>[^:/?]+)$");
-const RoleArnRegex = new RegExp("^arn:(?<partition>[^:]+):iam::(?<account>[^:]*):role/(?<roleNameWithPath>[^:/?]+)$");
-const RootUserArnRegex = new RegExp("^arn:(?<partition>[^:]+):iam::(?<account>[^:]*):root$");
-const SelfSessionArnRegex = new RegExp("^arn:(?<partition>[^:]+):sts::(?<account>[^:]*):self$");
+const ContextProviderArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):iam::aws:contextProvider/(?<contextProviderName>[^:/?]+)$",
+);
+const FederatedUserArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):sts::(?<account>[^:]*):federated-user/(?<federatedUserName>[^:/?]+)$",
+);
+const RoleArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):iam::(?<account>[^:]*):role/(?<roleNameWithPath>[^:/?]+)$",
+);
+const RootUserArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):iam::(?<account>[^:]*):root$",
+);
+const SelfSessionArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):sts::(?<account>[^:]*):self$",
+);
 
 /**
  * ARN builders, validators, and parsers for sts resources.
@@ -95,7 +125,12 @@ export class STSResources {
 	 * Parses a context-provider ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseContextProviderArn(arn: string): { partition: string; region: string; account: string; contextProviderName: string } {
+	static parseContextProviderArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		contextProviderName: string;
+	} {
 		const match = ContextProviderArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid context-provider ARN: ${arn}`);
@@ -133,7 +168,11 @@ export class STSResources {
 	 * Parses a federated-user ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseFederatedUserArn(arn: string): { partition: string; account: string; federatedUserName: string } {
+	static parseFederatedUserArn(arn: string): {
+		partition: string;
+		account: string;
+		federatedUserName: string;
+	} {
 		const match = FederatedUserArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid federated-user ARN: ${arn}`);
@@ -170,7 +209,11 @@ export class STSResources {
 	 * Parses a role ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRoleArn(arn: string): { partition: string; account: string; roleNameWithPath: string } {
+	static parseRoleArn(arn: string): {
+		partition: string;
+		account: string;
+		roleNameWithPath: string;
+	} {
 		const match = RoleArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid role ARN: ${arn}`);
@@ -213,7 +256,6 @@ export class STSResources {
 		return {
 			partition: match.groups.partition,
 			account: match.groups.account,
-
 		};
 	}
 
@@ -240,7 +282,10 @@ export class STSResources {
 	 * Parses a self-session ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSelfSessionArn(arn: string): { partition: string; account: string } {
+	static parseSelfSessionArn(arn: string): {
+		partition: string;
+		account: string;
+	} {
 		const match = SelfSessionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid self-session ARN: ${arn}`);
@@ -248,10 +293,8 @@ export class STSResources {
 		return {
 			partition: match.groups.partition,
 			account: match.groups.account,
-
 		};
 	}
-
 }
 
 /**
@@ -259,7 +302,12 @@ export class STSResources {
  */
 export class STSOperations {
 	/** IAM actions required for the AssumeRole API call. */
-	static readonly ASSUME_ROLE: string[] = ["sts:AssumeRole", "sts:SetContext", "sts:SetSourceIdentity", "sts:TagSession"];
+	static readonly ASSUME_ROLE: string[] = [
+		"sts:AssumeRole",
+		"sts:SetContext",
+		"sts:SetSourceIdentity",
+		"sts:TagSession",
+	];
 	/** IAM actions required for the AssumeRoleWithSAML API call. */
 	static readonly ASSUME_ROLE_WITH_SAML: string[] = [];
 	/** IAM actions required for the AssumeRoleWithWebIdentity API call. */
@@ -267,19 +315,29 @@ export class STSOperations {
 	/** IAM actions required for the AssumeRoot API call. */
 	static readonly ASSUME_ROOT: string[] = ["sts:AssumeRoot"];
 	/** IAM actions required for the DecodeAuthorizationMessage API call. */
-	static readonly DECODE_AUTHORIZATION_MESSAGE: string[] = ["sts:DecodeAuthorizationMessage"];
+	static readonly DECODE_AUTHORIZATION_MESSAGE: string[] = [
+		"sts:DecodeAuthorizationMessage",
+	];
 	/** IAM actions required for the GetAccessKeyInfo API call. */
 	static readonly GET_ACCESS_KEY_INFO: string[] = ["sts:GetAccessKeyInfo"];
 	/** IAM actions required for the GetCallerIdentity API call. */
 	static readonly GET_CALLER_IDENTITY: string[] = ["sts:GetCallerIdentity"];
 	/** IAM actions required for the GetDelegatedAccessToken API call. */
-	static readonly GET_DELEGATED_ACCESS_TOKEN: string[] = ["sts:GetDelegatedAccessToken"];
+	static readonly GET_DELEGATED_ACCESS_TOKEN: string[] = [
+		"sts:GetDelegatedAccessToken",
+	];
 	/** IAM actions required for the GetFederationToken API call. */
-	static readonly GET_FEDERATION_TOKEN: string[] = ["sts:GetFederationToken", "sts:TagSession"];
+	static readonly GET_FEDERATION_TOKEN: string[] = [
+		"sts:GetFederationToken",
+		"sts:TagSession",
+	];
 	/** IAM actions required for the GetSessionToken API call. */
 	static readonly GET_SESSION_TOKEN: string[] = ["sts:GetSessionToken"];
 	/** IAM actions required for the GetWebIdentityToken API call. */
-	static readonly GET_WEB_IDENTITY_TOKEN: string[] = ["sts:GetWebIdentityToken", "sts:TagGetWebIdentityToken"];
+	static readonly GET_WEB_IDENTITY_TOKEN: string[] = [
+		"sts:GetWebIdentityToken",
+		"sts:TagGetWebIdentityToken",
+	];
 }
 
 /**
@@ -287,32 +345,206 @@ export class STSOperations {
  */
 export class STSConditions {
 	/** Condition keys applicable to the AssumeRole action. */
-	static readonly ASSUME_ROLE_CONDITION_KEYS: string[] = ["accounts.google.com:aud", "accounts.google.com:sub", "aws:RequestTag/${TagKey}", "aws:TagKeys", "cognito-identity.amazonaws.com:amr", "cognito-identity.amazonaws.com:aud", "cognito-identity.amazonaws.com:sub", "graph.facebook.com:app_id", "graph.facebook.com:id", "iam:ResourceTag/${TagKey}", "saml:namequalifier", "saml:sub", "saml:sub_type", "sts:ExternalId", "sts:RoleSessionName", "sts:SourceIdentity", "sts:TransitiveTagKeys", "www.amazon.com:app_id", "www.amazon.com:user_id"];
+	static readonly ASSUME_ROLE_CONDITION_KEYS: string[] = [
+		"accounts.google.com:aud",
+		"accounts.google.com:sub",
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+		"cognito-identity.amazonaws.com:amr",
+		"cognito-identity.amazonaws.com:aud",
+		"cognito-identity.amazonaws.com:sub",
+		"graph.facebook.com:app_id",
+		"graph.facebook.com:id",
+		"iam:ResourceTag/${TagKey}",
+		"saml:namequalifier",
+		"saml:sub",
+		"saml:sub_type",
+		"sts:ExternalId",
+		"sts:RoleSessionName",
+		"sts:SourceIdentity",
+		"sts:TransitiveTagKeys",
+		"www.amazon.com:app_id",
+		"www.amazon.com:user_id",
+	];
 	/** Condition keys applicable to the AssumeRoleWithSAML action. */
-	static readonly ASSUME_ROLE_WITH_SAML_CONDITION_KEYS: string[] = ["aws:RequestTag/${TagKey}", "aws:TagKeys", "saml:aud", "saml:cn", "saml:commonName", "saml:doc", "saml:eduorghomepageuri", "saml:eduorgidentityauthnpolicyuri", "saml:eduorglegalname", "saml:eduorgsuperioruri", "saml:eduorgwhitepagesuri", "saml:edupersonaffiliation", "saml:edupersonassurance", "saml:edupersonentitlement", "saml:edupersonnickname", "saml:edupersonorgdn", "saml:edupersonorgunitdn", "saml:edupersonprimaryaffiliation", "saml:edupersonprimaryorgunitdn", "saml:edupersonprincipalname", "saml:edupersonscopedaffiliation", "saml:edupersontargetedid", "saml:givenName", "saml:iss", "saml:mail", "saml:name", "saml:namequalifier", "saml:organizationStatus", "saml:primaryGroupSID", "saml:sub", "saml:sub_type", "saml:surname", "saml:uid", "saml:x500UniqueIdentifier", "sts:RoleSessionName", "sts:SourceIdentity", "sts:TransitiveTagKeys"];
+	static readonly ASSUME_ROLE_WITH_SAML_CONDITION_KEYS: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+		"saml:aud",
+		"saml:cn",
+		"saml:commonName",
+		"saml:doc",
+		"saml:eduorghomepageuri",
+		"saml:eduorgidentityauthnpolicyuri",
+		"saml:eduorglegalname",
+		"saml:eduorgsuperioruri",
+		"saml:eduorgwhitepagesuri",
+		"saml:edupersonaffiliation",
+		"saml:edupersonassurance",
+		"saml:edupersonentitlement",
+		"saml:edupersonnickname",
+		"saml:edupersonorgdn",
+		"saml:edupersonorgunitdn",
+		"saml:edupersonprimaryaffiliation",
+		"saml:edupersonprimaryorgunitdn",
+		"saml:edupersonprincipalname",
+		"saml:edupersonscopedaffiliation",
+		"saml:edupersontargetedid",
+		"saml:givenName",
+		"saml:iss",
+		"saml:mail",
+		"saml:name",
+		"saml:namequalifier",
+		"saml:organizationStatus",
+		"saml:primaryGroupSID",
+		"saml:sub",
+		"saml:sub_type",
+		"saml:surname",
+		"saml:uid",
+		"saml:x500UniqueIdentifier",
+		"sts:RoleSessionName",
+		"sts:SourceIdentity",
+		"sts:TransitiveTagKeys",
+	];
 	/** Condition keys applicable to the AssumeRoleWithWebIdentity action. */
-	static readonly ASSUME_ROLE_WITH_WEB_IDENTITY_CONDITION_KEYS: string[] = ["accounts.google.com:aud", "accounts.google.com:google/organization_number", "accounts.google.com:oaud", "accounts.google.com:sub", "agent.${Domain}.buildkite.dev:build_branch", "agent.${Domain}.buildkite.dev:cluster_id", "agent.${Domain}.buildkite.dev:cluster_name", "agent.${Domain}.buildkite.dev:organization_id", "agent.${Domain}.buildkite.dev:organization_slug", "agent.${Domain}.buildkite.dev:pipeline_id", "agent.${Domain}.buildkite.dev:pipeline_slug", "agent.${Domain}.buildkite.site:build_branch", "agent.${Domain}.buildkite.site:cluster_id", "agent.${Domain}.buildkite.site:cluster_name", "agent.${Domain}.buildkite.site:organization_id", "agent.${Domain}.buildkite.site:organization_slug", "agent.${Domain}.buildkite.site:pipeline_id", "agent.${Domain}.buildkite.site:pipeline_slug", "agent.buildkite.com:build_branch", "agent.buildkite.com:cluster_id", "agent.buildkite.com:cluster_name", "agent.buildkite.com:organization_id", "agent.buildkite.com:organization_slug", "agent.buildkite.com:pipeline_id", "agent.buildkite.com:pipeline_slug", "aws:RequestTag/${TagKey}", "aws:TagKeys", "cognito-identity.amazonaws.com:amr", "cognito-identity.amazonaws.com:aud", "cognito-identity.amazonaws.com:sub", "github.com/enterprises/${EnterpriseName}:actor", "github.com/enterprises/${EnterpriseName}:actor_id", "github.com/enterprises/${EnterpriseName}:enterprise_id", "github.com/enterprises/${EnterpriseName}:environment", "github.com/enterprises/${EnterpriseName}:job_workflow_ref", "github.com/enterprises/${EnterpriseName}:ref", "github.com/enterprises/${EnterpriseName}:repository", "github.com/enterprises/${EnterpriseName}:repository_id", "github.com/enterprises/${EnterpriseName}:repository_owner_id", "github.com/enterprises/${EnterpriseName}:workflow", "gitlab.com:namespace_id", "gitlab.com:pipeline_source", "gitlab.com:project_id", "gitlab.com:ref_protected", "gitlab.com:runner_environment", "gitlab.com:user_access_level", "gitlab.com:user_email", "gitlab.com:user_id", "gitlab.com:user_login", "graph.facebook.com:app_id", "graph.facebook.com:id", "idcs-${OciUniqueIdentifier}.identity.oraclecloud.com:rpst_id", "oidc.circleci.com/org/${OrgId}:oidc.circleci.com/project-id", "sts:RoleAuthorizedByIdp", "sts:RoleSessionName", "sts:SourceIdentity", "sts:TransitiveTagKeys", "token.actions.${Domain}.ghe.com:actor", "token.actions.${Domain}.ghe.com:actor_id", "token.actions.${Domain}.ghe.com:enterprise_id", "token.actions.${Domain}.ghe.com:environment", "token.actions.${Domain}.ghe.com:job_workflow_ref", "token.actions.${Domain}.ghe.com:ref", "token.actions.${Domain}.ghe.com:repository", "token.actions.${Domain}.ghe.com:repository_id", "token.actions.${Domain}.ghe.com:repository_owner_id", "token.actions.${Domain}.ghe.com:workflow", "token.actions.githubusercontent.com/${SubPath}:actor", "token.actions.githubusercontent.com/${SubPath}:actor_id", "token.actions.githubusercontent.com/${SubPath}:enterprise_id", "token.actions.githubusercontent.com/${SubPath}:environment", "token.actions.githubusercontent.com/${SubPath}:job_workflow_ref", "token.actions.githubusercontent.com/${SubPath}:ref", "token.actions.githubusercontent.com/${SubPath}:repository", "token.actions.githubusercontent.com/${SubPath}:repository_id", "token.actions.githubusercontent.com/${SubPath}:repository_owner_id", "token.actions.githubusercontent.com/${SubPath}:workflow", "token.actions.githubusercontent.com:actor", "token.actions.githubusercontent.com:actor_id", "token.actions.githubusercontent.com:enterprise_id", "token.actions.githubusercontent.com:environment", "token.actions.githubusercontent.com:job_workflow_ref", "token.actions.githubusercontent.com:ref", "token.actions.githubusercontent.com:repository", "token.actions.githubusercontent.com:repository_id", "token.actions.githubusercontent.com:repository_owner_id", "token.actions.githubusercontent.com:workflow", "www.amazon.com:app_id", "www.amazon.com:user_id"];
+	static readonly ASSUME_ROLE_WITH_WEB_IDENTITY_CONDITION_KEYS: string[] = [
+		"accounts.google.com:aud",
+		"accounts.google.com:google/organization_number",
+		"accounts.google.com:oaud",
+		"accounts.google.com:sub",
+		"agent.${Domain}.buildkite.dev:build_branch",
+		"agent.${Domain}.buildkite.dev:cluster_id",
+		"agent.${Domain}.buildkite.dev:cluster_name",
+		"agent.${Domain}.buildkite.dev:organization_id",
+		"agent.${Domain}.buildkite.dev:organization_slug",
+		"agent.${Domain}.buildkite.dev:pipeline_id",
+		"agent.${Domain}.buildkite.dev:pipeline_slug",
+		"agent.${Domain}.buildkite.site:build_branch",
+		"agent.${Domain}.buildkite.site:cluster_id",
+		"agent.${Domain}.buildkite.site:cluster_name",
+		"agent.${Domain}.buildkite.site:organization_id",
+		"agent.${Domain}.buildkite.site:organization_slug",
+		"agent.${Domain}.buildkite.site:pipeline_id",
+		"agent.${Domain}.buildkite.site:pipeline_slug",
+		"agent.buildkite.com:build_branch",
+		"agent.buildkite.com:cluster_id",
+		"agent.buildkite.com:cluster_name",
+		"agent.buildkite.com:organization_id",
+		"agent.buildkite.com:organization_slug",
+		"agent.buildkite.com:pipeline_id",
+		"agent.buildkite.com:pipeline_slug",
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+		"cognito-identity.amazonaws.com:amr",
+		"cognito-identity.amazonaws.com:aud",
+		"cognito-identity.amazonaws.com:sub",
+		"github.com/enterprises/${EnterpriseName}:actor",
+		"github.com/enterprises/${EnterpriseName}:actor_id",
+		"github.com/enterprises/${EnterpriseName}:enterprise_id",
+		"github.com/enterprises/${EnterpriseName}:environment",
+		"github.com/enterprises/${EnterpriseName}:job_workflow_ref",
+		"github.com/enterprises/${EnterpriseName}:ref",
+		"github.com/enterprises/${EnterpriseName}:repository",
+		"github.com/enterprises/${EnterpriseName}:repository_id",
+		"github.com/enterprises/${EnterpriseName}:repository_owner_id",
+		"github.com/enterprises/${EnterpriseName}:workflow",
+		"gitlab.com:namespace_id",
+		"gitlab.com:pipeline_source",
+		"gitlab.com:project_id",
+		"gitlab.com:ref_protected",
+		"gitlab.com:runner_environment",
+		"gitlab.com:user_access_level",
+		"gitlab.com:user_email",
+		"gitlab.com:user_id",
+		"gitlab.com:user_login",
+		"graph.facebook.com:app_id",
+		"graph.facebook.com:id",
+		"idcs-${OciUniqueIdentifier}.identity.oraclecloud.com:rpst_id",
+		"oidc.circleci.com/org/${OrgId}:oidc.circleci.com/project-id",
+		"sts:RoleAuthorizedByIdp",
+		"sts:RoleSessionName",
+		"sts:SourceIdentity",
+		"sts:TransitiveTagKeys",
+		"token.actions.${Domain}.ghe.com:actor",
+		"token.actions.${Domain}.ghe.com:actor_id",
+		"token.actions.${Domain}.ghe.com:enterprise_id",
+		"token.actions.${Domain}.ghe.com:environment",
+		"token.actions.${Domain}.ghe.com:job_workflow_ref",
+		"token.actions.${Domain}.ghe.com:ref",
+		"token.actions.${Domain}.ghe.com:repository",
+		"token.actions.${Domain}.ghe.com:repository_id",
+		"token.actions.${Domain}.ghe.com:repository_owner_id",
+		"token.actions.${Domain}.ghe.com:workflow",
+		"token.actions.githubusercontent.com/${SubPath}:actor",
+		"token.actions.githubusercontent.com/${SubPath}:actor_id",
+		"token.actions.githubusercontent.com/${SubPath}:enterprise_id",
+		"token.actions.githubusercontent.com/${SubPath}:environment",
+		"token.actions.githubusercontent.com/${SubPath}:job_workflow_ref",
+		"token.actions.githubusercontent.com/${SubPath}:ref",
+		"token.actions.githubusercontent.com/${SubPath}:repository",
+		"token.actions.githubusercontent.com/${SubPath}:repository_id",
+		"token.actions.githubusercontent.com/${SubPath}:repository_owner_id",
+		"token.actions.githubusercontent.com/${SubPath}:workflow",
+		"token.actions.githubusercontent.com:actor",
+		"token.actions.githubusercontent.com:actor_id",
+		"token.actions.githubusercontent.com:enterprise_id",
+		"token.actions.githubusercontent.com:environment",
+		"token.actions.githubusercontent.com:job_workflow_ref",
+		"token.actions.githubusercontent.com:ref",
+		"token.actions.githubusercontent.com:repository",
+		"token.actions.githubusercontent.com:repository_id",
+		"token.actions.githubusercontent.com:repository_owner_id",
+		"token.actions.githubusercontent.com:workflow",
+		"www.amazon.com:app_id",
+		"www.amazon.com:user_id",
+	];
 	/** Condition keys applicable to the AssumeRoot action. */
 	static readonly ASSUME_ROOT_CONDITION_KEYS: string[] = ["sts:TaskPolicyArn"];
 	/** Condition keys applicable to the GetFederationToken action. */
-	static readonly GET_FEDERATION_TOKEN_CONDITION_KEYS: string[] = ["aws:RequestTag/${TagKey}", "aws:TagKeys"];
+	static readonly GET_FEDERATION_TOKEN_CONDITION_KEYS: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the GetServiceBearerToken action. */
-	static readonly GET_SERVICE_BEARER_TOKEN_CONDITION_KEYS: string[] = ["sts:AWSServiceName", "sts:DurationSeconds"];
+	static readonly GET_SERVICE_BEARER_TOKEN_CONDITION_KEYS: string[] = [
+		"sts:AWSServiceName",
+		"sts:DurationSeconds",
+	];
 	/** Condition keys applicable to the GetWebIdentityToken action. */
-	static readonly GET_WEB_IDENTITY_TOKEN_CONDITION_KEYS: string[] = ["aws:RequestTag/${TagKey}", "aws:TagKeys", "sts:DurationSeconds", "sts:IdentityTokenAudience", "sts:SigningAlgorithm"];
+	static readonly GET_WEB_IDENTITY_TOKEN_CONDITION_KEYS: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+		"sts:DurationSeconds",
+		"sts:IdentityTokenAudience",
+		"sts:SigningAlgorithm",
+	];
 	/** Condition keys applicable to the SetContext action. */
-	static readonly SET_CONTEXT_CONDITION_KEYS: string[] = ["sts:RequestContext/${ContextKey}", "sts:RequestContextProviders"];
+	static readonly SET_CONTEXT_CONDITION_KEYS: string[] = [
+		"sts:RequestContext/${ContextKey}",
+		"sts:RequestContextProviders",
+	];
 	/** Condition keys applicable to the SetSourceIdentity action. */
-	static readonly SET_SOURCE_IDENTITY_CONDITION_KEYS: string[] = ["sts:SourceIdentity"];
+	static readonly SET_SOURCE_IDENTITY_CONDITION_KEYS: string[] = [
+		"sts:SourceIdentity",
+	];
 	/** Condition keys applicable to the TagGetWebIdentityToken action. */
-	static readonly TAG_GET_WEB_IDENTITY_TOKEN_CONDITION_KEYS: string[] = ["aws:RequestTag/${TagKey}", "aws:TagKeys"];
+	static readonly TAG_GET_WEB_IDENTITY_TOKEN_CONDITION_KEYS: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the TagSession action. */
-	static readonly TAG_SESSION_CONDITION_KEYS: string[] = ["aws:RequestTag/${TagKey}", "aws:TagKeys", "saml:aud", "sts:TransitiveTagKeys"];
+	static readonly TAG_SESSION_CONDITION_KEYS: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+		"saml:aud",
+		"sts:TransitiveTagKeys",
+	];
 
 	/** Condition key: accounts.google.com:aud (String) */
 	static readonly AUD = "accounts.google.com:aud";
 	/** Condition key: accounts.google.com:google/organization_number (Numeric) */
-	static readonly GOOGLE/ORGANIZATION_NUMBER = "accounts.google.com:google/organization_number";
+	static readonly GOOGLE_ORGANIZATION_NUMBER =
+		"accounts.google.com:google/organization_number";
 	/** Condition key: accounts.google.com:oaud (String) */
 	static readonly OAUD = "accounts.google.com:oaud";
 	/** Condition key: accounts.google.com:sub (String) */
@@ -324,9 +556,11 @@ export class STSConditions {
 	/** Condition key: agent.${Domain}.buildkite.dev:cluster_name (String) */
 	static readonly CLUSTER_NAME = "agent.${Domain}.buildkite.dev:cluster_name";
 	/** Condition key: agent.${Domain}.buildkite.dev:organization_id (String) */
-	static readonly ORGANIZATION_ID = "agent.${Domain}.buildkite.dev:organization_id";
+	static readonly ORGANIZATION_ID =
+		"agent.${Domain}.buildkite.dev:organization_id";
 	/** Condition key: agent.${Domain}.buildkite.dev:organization_slug (String) */
-	static readonly ORGANIZATION_SLUG = "agent.${Domain}.buildkite.dev:organization_slug";
+	static readonly ORGANIZATION_SLUG =
+		"agent.${Domain}.buildkite.dev:organization_slug";
 	/** Condition key: agent.${Domain}.buildkite.dev:pipeline_id (String) */
 	static readonly PIPELINE_ID = "agent.${Domain}.buildkite.dev:pipeline_id";
 	/** Condition key: agent.${Domain}.buildkite.dev:pipeline_slug (String) */
@@ -338,13 +572,16 @@ export class STSConditions {
 	/** Condition key: agent.${Domain}.buildkite.site:cluster_name (String) */
 	static readonly CLUSTER_NAME = "agent.${Domain}.buildkite.site:cluster_name";
 	/** Condition key: agent.${Domain}.buildkite.site:organization_id (String) */
-	static readonly ORGANIZATION_ID = "agent.${Domain}.buildkite.site:organization_id";
+	static readonly ORGANIZATION_ID =
+		"agent.${Domain}.buildkite.site:organization_id";
 	/** Condition key: agent.${Domain}.buildkite.site:organization_slug (String) */
-	static readonly ORGANIZATION_SLUG = "agent.${Domain}.buildkite.site:organization_slug";
+	static readonly ORGANIZATION_SLUG =
+		"agent.${Domain}.buildkite.site:organization_slug";
 	/** Condition key: agent.${Domain}.buildkite.site:pipeline_id (String) */
 	static readonly PIPELINE_ID = "agent.${Domain}.buildkite.site:pipeline_id";
 	/** Condition key: agent.${Domain}.buildkite.site:pipeline_slug (String) */
-	static readonly PIPELINE_SLUG = "agent.${Domain}.buildkite.site:pipeline_slug";
+	static readonly PIPELINE_SLUG =
+		"agent.${Domain}.buildkite.site:pipeline_slug";
 	/** Condition key: agent.buildkite.com:build_branch (String) */
 	static readonly BUILD_BRANCH = "agent.buildkite.com:build_branch";
 	/** Condition key: agent.buildkite.com:cluster_id (String) */
@@ -374,23 +611,31 @@ export class STSConditions {
 	/** Condition key: github.com/enterprises/${EnterpriseName}:actor (String) */
 	static readonly ACTOR = "github.com/enterprises/${EnterpriseName}:actor";
 	/** Condition key: github.com/enterprises/${EnterpriseName}:actor_id (String) */
-	static readonly ACTOR_ID = "github.com/enterprises/${EnterpriseName}:actor_id";
+	static readonly ACTOR_ID =
+		"github.com/enterprises/${EnterpriseName}:actor_id";
 	/** Condition key: github.com/enterprises/${EnterpriseName}:enterprise_id (String) */
-	static readonly ENTERPRISE_ID = "github.com/enterprises/${EnterpriseName}:enterprise_id";
+	static readonly ENTERPRISE_ID =
+		"github.com/enterprises/${EnterpriseName}:enterprise_id";
 	/** Condition key: github.com/enterprises/${EnterpriseName}:environment (String) */
-	static readonly ENVIRONMENT = "github.com/enterprises/${EnterpriseName}:environment";
+	static readonly ENVIRONMENT =
+		"github.com/enterprises/${EnterpriseName}:environment";
 	/** Condition key: github.com/enterprises/${EnterpriseName}:job_workflow_ref (String) */
-	static readonly JOB_WORKFLOW_REF = "github.com/enterprises/${EnterpriseName}:job_workflow_ref";
+	static readonly JOB_WORKFLOW_REF =
+		"github.com/enterprises/${EnterpriseName}:job_workflow_ref";
 	/** Condition key: github.com/enterprises/${EnterpriseName}:ref (String) */
 	static readonly REF = "github.com/enterprises/${EnterpriseName}:ref";
 	/** Condition key: github.com/enterprises/${EnterpriseName}:repository (String) */
-	static readonly REPOSITORY = "github.com/enterprises/${EnterpriseName}:repository";
+	static readonly REPOSITORY =
+		"github.com/enterprises/${EnterpriseName}:repository";
 	/** Condition key: github.com/enterprises/${EnterpriseName}:repository_id (String) */
-	static readonly REPOSITORY_ID = "github.com/enterprises/${EnterpriseName}:repository_id";
+	static readonly REPOSITORY_ID =
+		"github.com/enterprises/${EnterpriseName}:repository_id";
 	/** Condition key: github.com/enterprises/${EnterpriseName}:repository_owner_id (String) */
-	static readonly REPOSITORY_OWNER_ID = "github.com/enterprises/${EnterpriseName}:repository_owner_id";
+	static readonly REPOSITORY_OWNER_ID =
+		"github.com/enterprises/${EnterpriseName}:repository_owner_id";
 	/** Condition key: github.com/enterprises/${EnterpriseName}:workflow (String) */
-	static readonly WORKFLOW = "github.com/enterprises/${EnterpriseName}:workflow";
+	static readonly WORKFLOW =
+		"github.com/enterprises/${EnterpriseName}:workflow";
 	/** Condition key: gitlab.com:namespace_id (String) */
 	static readonly NAMESPACE_ID = "gitlab.com:namespace_id";
 	/** Condition key: gitlab.com:pipeline_source (String) */
@@ -416,9 +661,11 @@ export class STSConditions {
 	/** Condition key: iam:ResourceTag/${TagKey} (String) */
 	static readonly RESOURCE_TAG = "iam:ResourceTag/${TagKey}";
 	/** Condition key: idcs-${OciUniqueIdentifier}.identity.oraclecloud.com:rpst_id (String) */
-	static readonly RPST_ID = "idcs-${OciUniqueIdentifier}.identity.oraclecloud.com:rpst_id";
+	static readonly RPST_ID =
+		"idcs-${OciUniqueIdentifier}.identity.oraclecloud.com:rpst_id";
 	/** Condition key: oidc.circleci.com/org/${OrgId}:oidc.circleci.com/project-id (String) */
-	static readonly OIDC_CIRCLECI_COM/PROJECT_ID = "oidc.circleci.com/org/${OrgId}:oidc.circleci.com/project-id";
+	static readonly OIDC_CIRCLECI_COM_PROJECT_ID =
+		"oidc.circleci.com/org/${OrgId}:oidc.circleci.com/project-id";
 	/** Condition key: saml:aud (String) */
 	static readonly AUD = "saml:aud";
 	/** Condition key: saml:cn (ArrayOfString) */
@@ -430,7 +677,8 @@ export class STSConditions {
 	/** Condition key: saml:eduorghomepageuri (ArrayOfString) */
 	static readonly EDUORGHOMEPAGEURI = "saml:eduorghomepageuri";
 	/** Condition key: saml:eduorgidentityauthnpolicyuri (ArrayOfString) */
-	static readonly EDUORGIDENTITYAUTHNPOLICYURI = "saml:eduorgidentityauthnpolicyuri";
+	static readonly EDUORGIDENTITYAUTHNPOLICYURI =
+		"saml:eduorgidentityauthnpolicyuri";
 	/** Condition key: saml:eduorglegalname (ArrayOfString) */
 	static readonly EDUORGLEGALNAME = "saml:eduorglegalname";
 	/** Condition key: saml:eduorgsuperioruri (ArrayOfString) */
@@ -450,13 +698,15 @@ export class STSConditions {
 	/** Condition key: saml:edupersonorgunitdn (ArrayOfString) */
 	static readonly EDUPERSONORGUNITDN = "saml:edupersonorgunitdn";
 	/** Condition key: saml:edupersonprimaryaffiliation (String) */
-	static readonly EDUPERSONPRIMARYAFFILIATION = "saml:edupersonprimaryaffiliation";
+	static readonly EDUPERSONPRIMARYAFFILIATION =
+		"saml:edupersonprimaryaffiliation";
 	/** Condition key: saml:edupersonprimaryorgunitdn (String) */
 	static readonly EDUPERSONPRIMARYORGUNITDN = "saml:edupersonprimaryorgunitdn";
 	/** Condition key: saml:edupersonprincipalname (String) */
 	static readonly EDUPERSONPRINCIPALNAME = "saml:edupersonprincipalname";
 	/** Condition key: saml:edupersonscopedaffiliation (ArrayOfString) */
-	static readonly EDUPERSONSCOPEDAFFILIATION = "saml:edupersonscopedaffiliation";
+	static readonly EDUPERSONSCOPEDAFFILIATION =
+		"saml:edupersonscopedaffiliation";
 	/** Condition key: saml:edupersontargetedid (ArrayOfString) */
 	static readonly EDUPERSONTARGETEDID = "saml:edupersontargetedid";
 	/** Condition key: saml:givenName (String) */
@@ -512,59 +762,77 @@ export class STSConditions {
 	/** Condition key: token.actions.${Domain}.ghe.com:actor_id (String) */
 	static readonly ACTOR_ID = "token.actions.${Domain}.ghe.com:actor_id";
 	/** Condition key: token.actions.${Domain}.ghe.com:enterprise_id (String) */
-	static readonly ENTERPRISE_ID = "token.actions.${Domain}.ghe.com:enterprise_id";
+	static readonly ENTERPRISE_ID =
+		"token.actions.${Domain}.ghe.com:enterprise_id";
 	/** Condition key: token.actions.${Domain}.ghe.com:environment (String) */
 	static readonly ENVIRONMENT = "token.actions.${Domain}.ghe.com:environment";
 	/** Condition key: token.actions.${Domain}.ghe.com:job_workflow_ref (String) */
-	static readonly JOB_WORKFLOW_REF = "token.actions.${Domain}.ghe.com:job_workflow_ref";
+	static readonly JOB_WORKFLOW_REF =
+		"token.actions.${Domain}.ghe.com:job_workflow_ref";
 	/** Condition key: token.actions.${Domain}.ghe.com:ref (String) */
 	static readonly REF = "token.actions.${Domain}.ghe.com:ref";
 	/** Condition key: token.actions.${Domain}.ghe.com:repository (String) */
 	static readonly REPOSITORY = "token.actions.${Domain}.ghe.com:repository";
 	/** Condition key: token.actions.${Domain}.ghe.com:repository_id (String) */
-	static readonly REPOSITORY_ID = "token.actions.${Domain}.ghe.com:repository_id";
+	static readonly REPOSITORY_ID =
+		"token.actions.${Domain}.ghe.com:repository_id";
 	/** Condition key: token.actions.${Domain}.ghe.com:repository_owner_id (String) */
-	static readonly REPOSITORY_OWNER_ID = "token.actions.${Domain}.ghe.com:repository_owner_id";
+	static readonly REPOSITORY_OWNER_ID =
+		"token.actions.${Domain}.ghe.com:repository_owner_id";
 	/** Condition key: token.actions.${Domain}.ghe.com:workflow (String) */
 	static readonly WORKFLOW = "token.actions.${Domain}.ghe.com:workflow";
 	/** Condition key: token.actions.githubusercontent.com/${SubPath}:actor (String) */
-	static readonly ACTOR = "token.actions.githubusercontent.com/${SubPath}:actor";
+	static readonly ACTOR =
+		"token.actions.githubusercontent.com/${SubPath}:actor";
 	/** Condition key: token.actions.githubusercontent.com/${SubPath}:actor_id (String) */
-	static readonly ACTOR_ID = "token.actions.githubusercontent.com/${SubPath}:actor_id";
+	static readonly ACTOR_ID =
+		"token.actions.githubusercontent.com/${SubPath}:actor_id";
 	/** Condition key: token.actions.githubusercontent.com/${SubPath}:enterprise_id (String) */
-	static readonly ENTERPRISE_ID = "token.actions.githubusercontent.com/${SubPath}:enterprise_id";
+	static readonly ENTERPRISE_ID =
+		"token.actions.githubusercontent.com/${SubPath}:enterprise_id";
 	/** Condition key: token.actions.githubusercontent.com/${SubPath}:environment (String) */
-	static readonly ENVIRONMENT = "token.actions.githubusercontent.com/${SubPath}:environment";
+	static readonly ENVIRONMENT =
+		"token.actions.githubusercontent.com/${SubPath}:environment";
 	/** Condition key: token.actions.githubusercontent.com/${SubPath}:job_workflow_ref (String) */
-	static readonly JOB_WORKFLOW_REF = "token.actions.githubusercontent.com/${SubPath}:job_workflow_ref";
+	static readonly JOB_WORKFLOW_REF =
+		"token.actions.githubusercontent.com/${SubPath}:job_workflow_ref";
 	/** Condition key: token.actions.githubusercontent.com/${SubPath}:ref (String) */
 	static readonly REF = "token.actions.githubusercontent.com/${SubPath}:ref";
 	/** Condition key: token.actions.githubusercontent.com/${SubPath}:repository (String) */
-	static readonly REPOSITORY = "token.actions.githubusercontent.com/${SubPath}:repository";
+	static readonly REPOSITORY =
+		"token.actions.githubusercontent.com/${SubPath}:repository";
 	/** Condition key: token.actions.githubusercontent.com/${SubPath}:repository_id (String) */
-	static readonly REPOSITORY_ID = "token.actions.githubusercontent.com/${SubPath}:repository_id";
+	static readonly REPOSITORY_ID =
+		"token.actions.githubusercontent.com/${SubPath}:repository_id";
 	/** Condition key: token.actions.githubusercontent.com/${SubPath}:repository_owner_id (String) */
-	static readonly REPOSITORY_OWNER_ID = "token.actions.githubusercontent.com/${SubPath}:repository_owner_id";
+	static readonly REPOSITORY_OWNER_ID =
+		"token.actions.githubusercontent.com/${SubPath}:repository_owner_id";
 	/** Condition key: token.actions.githubusercontent.com/${SubPath}:workflow (String) */
-	static readonly WORKFLOW = "token.actions.githubusercontent.com/${SubPath}:workflow";
+	static readonly WORKFLOW =
+		"token.actions.githubusercontent.com/${SubPath}:workflow";
 	/** Condition key: token.actions.githubusercontent.com:actor (String) */
 	static readonly ACTOR = "token.actions.githubusercontent.com:actor";
 	/** Condition key: token.actions.githubusercontent.com:actor_id (String) */
 	static readonly ACTOR_ID = "token.actions.githubusercontent.com:actor_id";
 	/** Condition key: token.actions.githubusercontent.com:enterprise_id (String) */
-	static readonly ENTERPRISE_ID = "token.actions.githubusercontent.com:enterprise_id";
+	static readonly ENTERPRISE_ID =
+		"token.actions.githubusercontent.com:enterprise_id";
 	/** Condition key: token.actions.githubusercontent.com:environment (String) */
-	static readonly ENVIRONMENT = "token.actions.githubusercontent.com:environment";
+	static readonly ENVIRONMENT =
+		"token.actions.githubusercontent.com:environment";
 	/** Condition key: token.actions.githubusercontent.com:job_workflow_ref (String) */
-	static readonly JOB_WORKFLOW_REF = "token.actions.githubusercontent.com:job_workflow_ref";
+	static readonly JOB_WORKFLOW_REF =
+		"token.actions.githubusercontent.com:job_workflow_ref";
 	/** Condition key: token.actions.githubusercontent.com:ref (String) */
 	static readonly REF = "token.actions.githubusercontent.com:ref";
 	/** Condition key: token.actions.githubusercontent.com:repository (String) */
 	static readonly REPOSITORY = "token.actions.githubusercontent.com:repository";
 	/** Condition key: token.actions.githubusercontent.com:repository_id (String) */
-	static readonly REPOSITORY_ID = "token.actions.githubusercontent.com:repository_id";
+	static readonly REPOSITORY_ID =
+		"token.actions.githubusercontent.com:repository_id";
 	/** Condition key: token.actions.githubusercontent.com:repository_owner_id (String) */
-	static readonly REPOSITORY_OWNER_ID = "token.actions.githubusercontent.com:repository_owner_id";
+	static readonly REPOSITORY_OWNER_ID =
+		"token.actions.githubusercontent.com:repository_owner_id";
 	/** Condition key: token.actions.githubusercontent.com:workflow (String) */
 	static readonly WORKFLOW = "token.actions.githubusercontent.com:workflow";
 	/** Condition key: www.amazon.com:app_id (String) */
@@ -576,14 +844,14 @@ export class STSConditions {
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.
 	 */
 	static requestTag(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "aws:RequestTag/${TagKey}": value } };
+		return { StringEquals: { "aws:RequestTag/${TagKey}": value } };
 	}
 
 	/**
 	 * Generates a condition block for `aws:ResourceTag/${TagKey}`.
 	 */
 	static resourceTag(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "aws:ResourceTag/${TagKey}": value } };
+		return { StringEquals: { "aws:ResourceTag/${TagKey}": value } };
 	}
 
 	/**
@@ -597,84 +865,101 @@ export class STSConditions {
 	 * Generates a condition block for `sts:AWSServiceName`.
 	 */
 	static awsServiceName(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "sts:AWSServiceName": value } };
+		return { StringEquals: { "sts:AWSServiceName": value } };
 	}
 
 	/**
 	 * Generates a condition block for `sts:DurationSeconds`.
 	 */
-	static durationSeconds(value: number): Record<string, Record<string, number>> {
-		return { "NumericEquals": { "sts:DurationSeconds": value } };
+	static durationSeconds(
+		value: number,
+	): Record<string, Record<string, number>> {
+		return { NumericEquals: { "sts:DurationSeconds": value } };
 	}
 
 	/**
 	 * Generates a condition block for `sts:ExternalId`.
 	 */
 	static externalId(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "sts:ExternalId": value } };
+		return { StringEquals: { "sts:ExternalId": value } };
 	}
 
 	/**
 	 * Generates a condition block for `sts:IdentityTokenAudience`.
 	 */
-	static identityTokenAudience(values: string[]): Record<string, Record<string, string[]>> {
-		return { "ForAllValues:StringEquals": { "sts:IdentityTokenAudience": values } };
+	static identityTokenAudience(
+		values: string[],
+	): Record<string, Record<string, string[]>> {
+		return {
+			"ForAllValues:StringEquals": { "sts:IdentityTokenAudience": values },
+		};
 	}
 
 	/**
 	 * Generates a condition block for `sts:RequestContext/${ContextKey}`.
 	 */
 	static requestContext(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "sts:RequestContext/${ContextKey}": value } };
+		return { StringEquals: { "sts:RequestContext/${ContextKey}": value } };
 	}
 
 	/**
 	 * Generates a condition block for `sts:RequestContextProviders`.
 	 */
-	static requestContextProviders(values: string[]): Record<string, Record<string, string[]>> {
-		return { "ForAllValues:ArnEquals": { "sts:RequestContextProviders": values } };
+	static requestContextProviders(
+		values: string[],
+	): Record<string, Record<string, string[]>> {
+		return {
+			"ForAllValues:ArnEquals": { "sts:RequestContextProviders": values },
+		};
 	}
 
 	/**
 	 * Generates a condition block for `sts:RoleAuthorizedByIdp`.
 	 */
-	static roleAuthorizedByIdp(value: boolean): Record<string, Record<string, boolean>> {
-		return { "Bool": { "sts:RoleAuthorizedByIdp": value } };
+	static roleAuthorizedByIdp(
+		value: boolean,
+	): Record<string, Record<string, boolean>> {
+		return { Bool: { "sts:RoleAuthorizedByIdp": value } };
 	}
 
 	/**
 	 * Generates a condition block for `sts:RoleSessionName`.
 	 */
-	static roleSessionName(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "sts:RoleSessionName": value } };
+	static roleSessionName(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "sts:RoleSessionName": value } };
 	}
 
 	/**
 	 * Generates a condition block for `sts:SigningAlgorithm`.
 	 */
-	static signingAlgorithm(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "sts:SigningAlgorithm": value } };
+	static signingAlgorithm(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "sts:SigningAlgorithm": value } };
 	}
 
 	/**
 	 * Generates a condition block for `sts:SourceIdentity`.
 	 */
 	static sourceIdentity(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "sts:SourceIdentity": value } };
+		return { StringEquals: { "sts:SourceIdentity": value } };
 	}
 
 	/**
 	 * Generates a condition block for `sts:TaskPolicyArn`.
 	 */
 	static taskPolicyARN(value: string): Record<string, Record<string, string>> {
-		return { "ArnEquals": { "sts:TaskPolicyArn": value } };
+		return { ArnEquals: { "sts:TaskPolicyArn": value } };
 	}
 
 	/**
 	 * Generates a condition block for `sts:TransitiveTagKeys`.
 	 */
-	static transitiveTagKeys(values: string[]): Record<string, Record<string, string[]>> {
+	static transitiveTagKeys(
+		values: string[],
+	): Record<string, Record<string, string[]>> {
 		return { "ForAllValues:StringEquals": { "sts:TransitiveTagKeys": values } };
 	}
-
 }

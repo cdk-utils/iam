@@ -126,11 +126,18 @@ function generateResourcesClass(data: ServiceDetail, classPrefix: string): strin
 			const parsed = parseArnTemplate(arnFormats[0]);
 			regexConstants.push(generateRegexConstant(resource.Name, parsed));
 		} else {
-			// Multi-ARN: generate combined regex (matches any variant)
-			const patterns = arnFormats.map((arn) => parseArnTemplate(arn).regexPattern.slice(1, -1)); // strip ^$
+			// Multi-ARN: generate combined regex for validation (strip named groups to avoid duplicates)
+			const patterns = arnFormats.map((arn) => {
+				const p = parseArnTemplate(arn).regexPattern.slice(1, -1); // strip ^$
+				// Replace named groups with non-capturing groups for the combined validator
+				return p.replace(/\(\?<\w+>/g, "(?:");
+			});
 			const combined = `^(?:${patterns.join("|")})$`;
 			const pascalName = toPascalCase(resource.Name);
 			regexConstants.push(`const ${pascalName}ArnRegex = new RegExp("${combined.replace(/\\/g, "\\\\")}");`);
+			// Also generate individual regexes for parsing (first variant only)
+			const firstParsed = parseArnTemplate(arnFormats[0]);
+			regexConstants.push(`const ${pascalName}ParseRegex = new RegExp("${firstParsed.regexPattern.replace(/\\/g, "\\\\")}");`);
 		}
 	}
 
@@ -160,11 +167,33 @@ function generateResourcesClass(data: ServiceDetail, classPrefix: string): strin
 				lines.push(generateBuilderCode(variantName, parsed, data.Name));
 				lines.push("");
 			}
-			// Single validator and parser that matches any variant
-			const parsed = parseArnTemplate(arnFormats[0]);
-			lines.push(generateValidatorCode(resource.Name, parsed));
+			// Validator uses the combined regex (no named groups, just matching)
+			const firstParsed = parseArnTemplate(arnFormats[0]);
+			lines.push(generateValidatorCode(resource.Name, firstParsed));
 			lines.push("");
-			lines.push(generateParserCode(resource.Name, parsed));
+			// Parser uses the first variant's regex (with named groups)
+			const pascalName = toPascalCase(resource.Name);
+			const returnFields = [
+				"partition: string",
+				...(firstParsed.isGlobal ? [] : ["region: string"]),
+				"account: string",
+				...firstParsed.resourceVariables.map((v) => `${v.paramName}: string`),
+			];
+			lines.push(`\t/**
+\t * Parses a ${resource.Name} ARN into its components (uses first ARN variant format).
+\t * @throws Error if the ARN does not match the expected format.
+\t */
+\tstatic parse${pascalName}Arn(arn: string): { ${returnFields.join("; ")} } {
+\t\tconst match = ${pascalName}ParseRegex.exec(arn);
+\t\tif (!match?.groups) {
+\t\t\tthrow new Error(\`Invalid ${resource.Name} ARN: \${arn}\`);
+\t\t}
+\t\treturn {
+\t\t\tpartition: match.groups.partition,${firstParsed.isGlobal ? "" : "\n\t\t\tregion: match.groups.region,"}
+\t\t\taccount: match.groups.account,
+${firstParsed.resourceVariables.map((v) => `\t\t\t${v.paramName}: match.groups!.${v.paramName},`).join("\n")}
+\t\t};
+\t}`);
 			lines.push("");
 		}
 	}

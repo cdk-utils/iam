@@ -5,7 +5,6 @@
 // Run `npx projen generate-constants` to regenerate
 // =============================================================================
 
-
 /**
  * IAM action constants for the apigateway service.
  */
@@ -14,9 +13,11 @@ export class ApiGatewayActions {
 	static readonly SERVICE_PREFIX = "apigateway";
 
 	/** [PermissionManagement] apigateway:AddCertificateToDomain */
-	static readonly ADD_CERTIFICATE_TO_DOMAIN = "apigateway:AddCertificateToDomain";
+	static readonly ADD_CERTIFICATE_TO_DOMAIN =
+		"apigateway:AddCertificateToDomain";
 	/** [PermissionManagement] apigateway:CreateAccessAssociation */
-	static readonly CREATE_ACCESS_ASSOCIATION = "apigateway:CreateAccessAssociation";
+	static readonly CREATE_ACCESS_ASSOCIATION =
+		"apigateway:CreateAccessAssociation";
 	/** [Write] apigateway:CreatePortal */
 	static readonly CREATE_PORTAL = "apigateway:CreatePortal";
 	/** [Write] apigateway:CreatePortalProduct */
@@ -24,7 +25,8 @@ export class ApiGatewayActions {
 	/** [Write] apigateway:CreateProductPage */
 	static readonly CREATE_PRODUCT_PAGE = "apigateway:CreateProductPage";
 	/** [Write] apigateway:CreateProductRestEndpointPage */
-	static readonly CREATE_PRODUCT_REST_ENDPOINT_PAGE = "apigateway:CreateProductRestEndpointPage";
+	static readonly CREATE_PRODUCT_REST_ENDPOINT_PAGE =
+		"apigateway:CreateProductRestEndpointPage";
 	/** [Write] apigateway:CreateRoutingRule */
 	static readonly CREATE_ROUTING_RULE = "apigateway:CreateRoutingRule";
 	/** [Write] apigateway:DELETE */
@@ -34,11 +36,13 @@ export class ApiGatewayActions {
 	/** [Write] apigateway:DeletePortalProduct */
 	static readonly DELETE_PORTAL_PRODUCT = "apigateway:DeletePortalProduct";
 	/** [PermissionManagement] apigateway:DeletePortalProductSharingPolicy */
-	static readonly DELETE_PORTAL_PRODUCT_SHARING_POLICY = "apigateway:DeletePortalProductSharingPolicy";
+	static readonly DELETE_PORTAL_PRODUCT_SHARING_POLICY =
+		"apigateway:DeletePortalProductSharingPolicy";
 	/** [Write] apigateway:DeleteProductPage */
 	static readonly DELETE_PRODUCT_PAGE = "apigateway:DeleteProductPage";
 	/** [Write] apigateway:DeleteProductRestEndpointPage */
-	static readonly DELETE_PRODUCT_REST_ENDPOINT_PAGE = "apigateway:DeleteProductRestEndpointPage";
+	static readonly DELETE_PRODUCT_REST_ENDPOINT_PAGE =
+		"apigateway:DeleteProductRestEndpointPage";
 	/** [Write] apigateway:DeleteRoutingRule */
 	static readonly DELETE_ROUTING_RULE = "apigateway:DeleteRoutingRule";
 	/** [Write] apigateway:DisablePortal */
@@ -50,11 +54,13 @@ export class ApiGatewayActions {
 	/** [Read] apigateway:GetPortalProduct */
 	static readonly GET_PORTAL_PRODUCT = "apigateway:GetPortalProduct";
 	/** [Read] apigateway:GetPortalProductSharingPolicy */
-	static readonly GET_PORTAL_PRODUCT_SHARING_POLICY = "apigateway:GetPortalProductSharingPolicy";
+	static readonly GET_PORTAL_PRODUCT_SHARING_POLICY =
+		"apigateway:GetPortalProductSharingPolicy";
 	/** [Read] apigateway:GetProductPage */
 	static readonly GET_PRODUCT_PAGE = "apigateway:GetProductPage";
 	/** [Read] apigateway:GetProductRestEndpointPage */
-	static readonly GET_PRODUCT_REST_ENDPOINT_PAGE = "apigateway:GetProductRestEndpointPage";
+	static readonly GET_PRODUCT_REST_ENDPOINT_PAGE =
+		"apigateway:GetProductRestEndpointPage";
 	/** [Read] apigateway:GetRoutingRule */
 	static readonly GET_ROUTING_RULE = "apigateway:GetRoutingRule";
 	/** [List] apigateway:ListPortalProducts */
@@ -64,7 +70,8 @@ export class ApiGatewayActions {
 	/** [List] apigateway:ListProductPages */
 	static readonly LIST_PRODUCT_PAGES = "apigateway:ListProductPages";
 	/** [List] apigateway:ListProductRestEndpointPages */
-	static readonly LIST_PRODUCT_REST_ENDPOINT_PAGES = "apigateway:ListProductRestEndpointPages";
+	static readonly LIST_PRODUCT_REST_ENDPOINT_PAGES =
+		"apigateway:ListProductRestEndpointPages";
 	/** [List] apigateway:ListRoutingRules */
 	static readonly LIST_ROUTING_RULES = "apigateway:ListRoutingRules";
 	/** [Write] apigateway:PATCH */
@@ -78,17 +85,22 @@ export class ApiGatewayActions {
 	/** [Write] apigateway:PublishPortal */
 	static readonly PUBLISH_PORTAL = "apigateway:PublishPortal";
 	/** [PermissionManagement] apigateway:PutPortalProductSharingPolicy */
-	static readonly PUT_PORTAL_PRODUCT_SHARING_POLICY = "apigateway:PutPortalProductSharingPolicy";
+	static readonly PUT_PORTAL_PRODUCT_SHARING_POLICY =
+		"apigateway:PutPortalProductSharingPolicy";
 	/** [PermissionManagement] apigateway:RejectAccessAssociation */
-	static readonly REJECT_ACCESS_ASSOCIATION = "apigateway:RejectAccessAssociation";
+	static readonly REJECT_ACCESS_ASSOCIATION =
+		"apigateway:RejectAccessAssociation";
 	/** [PermissionManagement] apigateway:RemoveCertificateFromDomain */
-	static readonly REMOVE_CERTIFICATE_FROM_DOMAIN = "apigateway:RemoveCertificateFromDomain";
+	static readonly REMOVE_CERTIFICATE_FROM_DOMAIN =
+		"apigateway:RemoveCertificateFromDomain";
 	/** [PermissionManagement] apigateway:SetWebACL */
 	static readonly SET_WEB_ACL = "apigateway:SetWebACL";
 	/** [PermissionManagement] apigateway:UpdateDomainNameManagementPolicy */
-	static readonly UPDATE_DOMAIN_NAME_MANAGEMENT_POLICY = "apigateway:UpdateDomainNameManagementPolicy";
+	static readonly UPDATE_DOMAIN_NAME_MANAGEMENT_POLICY =
+		"apigateway:UpdateDomainNameManagementPolicy";
 	/** [PermissionManagement] apigateway:UpdateDomainNamePolicy */
-	static readonly UPDATE_DOMAIN_NAME_POLICY = "apigateway:UpdateDomainNamePolicy";
+	static readonly UPDATE_DOMAIN_NAME_POLICY =
+		"apigateway:UpdateDomainNamePolicy";
 	/** [Write] apigateway:UpdatePortal */
 	static readonly UPDATE_PORTAL = "apigateway:UpdatePortal";
 	/** [Write] apigateway:UpdatePortalProduct */
@@ -96,93 +108,310 @@ export class ApiGatewayActions {
 	/** [Write] apigateway:UpdateProductPage */
 	static readonly UPDATE_PRODUCT_PAGE = "apigateway:UpdateProductPage";
 	/** [Write] apigateway:UpdateProductRestEndpointPage */
-	static readonly UPDATE_PRODUCT_REST_ENDPOINT_PAGE = "apigateway:UpdateProductRestEndpointPage";
+	static readonly UPDATE_PRODUCT_REST_ENDPOINT_PAGE =
+		"apigateway:UpdateProductRestEndpointPage";
 	/** [PermissionManagement] apigateway:UpdateRestApiPolicy */
 	static readonly UPDATE_REST_API_POLICY = "apigateway:UpdateRestApiPolicy";
 	/** [Write] apigateway:UpdateRoutingRule */
 	static readonly UPDATE_ROUTING_RULE = "apigateway:UpdateRoutingRule";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [ApiGatewayActions.GET, ApiGatewayActions.GET_PORTAL, ApiGatewayActions.GET_PORTAL_PRODUCT, ApiGatewayActions.GET_PORTAL_PRODUCT_SHARING_POLICY, ApiGatewayActions.GET_PRODUCT_PAGE, ApiGatewayActions.GET_PRODUCT_REST_ENDPOINT_PAGE, ApiGatewayActions.GET_ROUTING_RULE];
+	static readonly READ_ACTIONS: string[] = [
+		ApiGatewayActions.GET,
+		ApiGatewayActions.GET_PORTAL,
+		ApiGatewayActions.GET_PORTAL_PRODUCT,
+		ApiGatewayActions.GET_PORTAL_PRODUCT_SHARING_POLICY,
+		ApiGatewayActions.GET_PRODUCT_PAGE,
+		ApiGatewayActions.GET_PRODUCT_REST_ENDPOINT_PAGE,
+		ApiGatewayActions.GET_ROUTING_RULE,
+	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [ApiGatewayActions.CREATE_PORTAL, ApiGatewayActions.CREATE_PORTAL_PRODUCT, ApiGatewayActions.CREATE_PRODUCT_PAGE, ApiGatewayActions.CREATE_PRODUCT_REST_ENDPOINT_PAGE, ApiGatewayActions.CREATE_ROUTING_RULE, ApiGatewayActions.DELETE, ApiGatewayActions.DELETE_PORTAL, ApiGatewayActions.DELETE_PORTAL_PRODUCT, ApiGatewayActions.DELETE_PRODUCT_PAGE, ApiGatewayActions.DELETE_PRODUCT_REST_ENDPOINT_PAGE, ApiGatewayActions.DELETE_ROUTING_RULE, ApiGatewayActions.DISABLE_PORTAL, ApiGatewayActions.PATCH, ApiGatewayActions.POST, ApiGatewayActions.PUT, ApiGatewayActions.PREVIEW_PORTAL, ApiGatewayActions.PUBLISH_PORTAL, ApiGatewayActions.UPDATE_PORTAL, ApiGatewayActions.UPDATE_PORTAL_PRODUCT, ApiGatewayActions.UPDATE_PRODUCT_PAGE, ApiGatewayActions.UPDATE_PRODUCT_REST_ENDPOINT_PAGE, ApiGatewayActions.UPDATE_ROUTING_RULE];
+	static readonly WRITE_ACTIONS: string[] = [
+		ApiGatewayActions.CREATE_PORTAL,
+		ApiGatewayActions.CREATE_PORTAL_PRODUCT,
+		ApiGatewayActions.CREATE_PRODUCT_PAGE,
+		ApiGatewayActions.CREATE_PRODUCT_REST_ENDPOINT_PAGE,
+		ApiGatewayActions.CREATE_ROUTING_RULE,
+		ApiGatewayActions.DELETE,
+		ApiGatewayActions.DELETE_PORTAL,
+		ApiGatewayActions.DELETE_PORTAL_PRODUCT,
+		ApiGatewayActions.DELETE_PRODUCT_PAGE,
+		ApiGatewayActions.DELETE_PRODUCT_REST_ENDPOINT_PAGE,
+		ApiGatewayActions.DELETE_ROUTING_RULE,
+		ApiGatewayActions.DISABLE_PORTAL,
+		ApiGatewayActions.PATCH,
+		ApiGatewayActions.POST,
+		ApiGatewayActions.PUT,
+		ApiGatewayActions.PREVIEW_PORTAL,
+		ApiGatewayActions.PUBLISH_PORTAL,
+		ApiGatewayActions.UPDATE_PORTAL,
+		ApiGatewayActions.UPDATE_PORTAL_PRODUCT,
+		ApiGatewayActions.UPDATE_PRODUCT_PAGE,
+		ApiGatewayActions.UPDATE_PRODUCT_REST_ENDPOINT_PAGE,
+		ApiGatewayActions.UPDATE_ROUTING_RULE,
+	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [ApiGatewayActions.LIST_PORTAL_PRODUCTS, ApiGatewayActions.LIST_PORTALS, ApiGatewayActions.LIST_PRODUCT_PAGES, ApiGatewayActions.LIST_PRODUCT_REST_ENDPOINT_PAGES, ApiGatewayActions.LIST_ROUTING_RULES];
+	static readonly LIST_ACTIONS: string[] = [
+		ApiGatewayActions.LIST_PORTAL_PRODUCTS,
+		ApiGatewayActions.LIST_PORTALS,
+		ApiGatewayActions.LIST_PRODUCT_PAGES,
+		ApiGatewayActions.LIST_PRODUCT_REST_ENDPOINT_PAGES,
+		ApiGatewayActions.LIST_ROUTING_RULES,
+	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [ApiGatewayActions.ADD_CERTIFICATE_TO_DOMAIN, ApiGatewayActions.CREATE_ACCESS_ASSOCIATION, ApiGatewayActions.DELETE_PORTAL_PRODUCT_SHARING_POLICY, ApiGatewayActions.PUT_PORTAL_PRODUCT_SHARING_POLICY, ApiGatewayActions.REJECT_ACCESS_ASSOCIATION, ApiGatewayActions.REMOVE_CERTIFICATE_FROM_DOMAIN, ApiGatewayActions.SET_WEB_ACL, ApiGatewayActions.UPDATE_DOMAIN_NAME_MANAGEMENT_POLICY, ApiGatewayActions.UPDATE_DOMAIN_NAME_POLICY, ApiGatewayActions.UPDATE_REST_API_POLICY];
+	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
+		ApiGatewayActions.ADD_CERTIFICATE_TO_DOMAIN,
+		ApiGatewayActions.CREATE_ACCESS_ASSOCIATION,
+		ApiGatewayActions.DELETE_PORTAL_PRODUCT_SHARING_POLICY,
+		ApiGatewayActions.PUT_PORTAL_PRODUCT_SHARING_POLICY,
+		ApiGatewayActions.REJECT_ACCESS_ASSOCIATION,
+		ApiGatewayActions.REMOVE_CERTIFICATE_FROM_DOMAIN,
+		ApiGatewayActions.SET_WEB_ACL,
+		ApiGatewayActions.UPDATE_DOMAIN_NAME_MANAGEMENT_POLICY,
+		ApiGatewayActions.UPDATE_DOMAIN_NAME_POLICY,
+		ApiGatewayActions.UPDATE_REST_API_POLICY,
+	];
 	/** All tagging-level actions. */
 	static readonly TAGGING_ACTIONS: string[] = [];
 }
 
-const AccessLogSettingsArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/stages/(?<stageName>[^:/?]+)/accesslogsettings$");
-const AccountArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/account$");
-const APIArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)$");
-const APIKeyArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apikeys/(?<apiKeyId>[^:/?]+)$");
-const APIKeysArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apikeys$");
-const APIMappingArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/domainnames/(?<domainName>[^:/?]+)/apimappings/(?<apiMappingId>[^:/?]+)$");
-const APIMappingsArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/domainnames/(?<domainName>[^:/?]+)/apimappings$");
-const ApisArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis$");
-const AuthorizerArnRegex = new RegExp("^(?:arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/authorizers/(?<authorizerId>[^:/?]+)|arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/authorizers/(?<authorizerId>[^:/?]+))$");
-const AuthorizersArnRegex = new RegExp("^(?:arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/authorizers|arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/authorizers)$");
-const AuthorizersCacheArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/stages/(?<stageName>[^:/?]+)/cache/authorizers$");
-const BasePathMappingArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/domainnames/(?<domainName>[^:/?]+)/basepathmappings/(?<basePath>[^:/?]+)$");
-const BasePathMappingsArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/domainnames/(?<domainName>[^:/?]+)/basepathmappings$");
-const ClientCertificateArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/clientcertificates/(?<clientCertificateId>[^:/?]+)$");
-const ClientCertificatesArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/clientcertificates$");
-const CorsArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/cors$");
-const DeploymentArnRegex = new RegExp("^(?:arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/deployments/(?<deploymentId>[^:/?]+)|arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/deployments/(?<deploymentId>[^:/?]+))$");
-const DeploymentsArnRegex = new RegExp("^(?:arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/deployments|arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/deployments)$");
-const DocumentationPartArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/documentation/parts/(?<documentationPartId>[^:/?]+)$");
-const DocumentationPartsArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/documentation/parts$");
-const DocumentationVersionArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/documentation/versions/(?<documentationVersionId>[^:/?]+)$");
-const DocumentationVersionsArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/documentation/versions$");
-const DomainNameArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/domainnames/(?<domainName>[^:/?]+)$");
-const DomainNameAccessAssociationArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*):(?<account>[^:]*):/domainnameaccessassociations/domainname/(?<domainName>[^:/?]+)/(?<sourceType>[^:/?]+)/(?<sourceId>[^:/?]+)$");
-const DomainNameAccessAssociationsArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*):(?<account>[^:]*):/domainnameaccessassociations$");
-const DomainNamesArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/domainnames$");
-const ExportedAPIArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/exports/(?<specification>[^:/?]+)$");
-const GatewayResponseArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/gatewayresponses/(?<responseType>[^:/?]+)$");
-const GatewayResponsesArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/gatewayresponses$");
-const IntegrationArnRegex = new RegExp("^(?:arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/integrations/(?<integrationId>[^:/?]+)|arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/resources/(?<resourceId>[^:/?]+)/methods/(?<httpMethodType>[^:/?]+)/integration)$");
-const IntegrationResponseArnRegex = new RegExp("^(?:arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/integrations/(?<integrationId>[^:/?]+)/integrationresponses/(?<integrationResponseId>[^:/?]+)|arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/resources/(?<resourceId>[^:/?]+)/methods/(?<httpMethodType>[^:/?]+)/integration/responses/(?<statusCode>[^:/?]+))$");
-const IntegrationResponsesArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/integrations/(?<integrationId>[^:/?]+)/integrationresponses$");
-const IntegrationsArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/integrations$");
-const MethodArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/resources/(?<resourceId>[^:/?]+)/methods/(?<httpMethodType>[^:/?]+)$");
-const MethodResponseArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/resources/(?<resourceId>[^:/?]+)/methods/(?<httpMethodType>[^:/?]+)/responses/(?<statusCode>[^:/?]+)$");
-const ModelArnRegex = new RegExp("^(?:arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/models/(?<modelId>[^:/?]+)|arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/models/(?<modelName>[^:/?]+))$");
-const ModelTemplateArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/models/(?<modelId>[^:/?]+)/template$");
-const ModelsArnRegex = new RegExp("^(?:arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/models|arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/models)$");
-const PortalArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*):(?<account>[^:]*):/portals/(?<portalId>[^:/?]+)$");
-const PortalProductArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*):(?<account>[^:]*):/portalproducts/(?<portalProductId>[^:/?]+)$");
-const PrivateBasePathMappingArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/domainnames/(?<domainName>[^:/?]+)\\+(?<domainIdentifier>[^:/?]+)/basepathmappings/(?<basePath>[^:/?]+)$");
-const PrivateBasePathMappingsArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/domainnames/(?<domainName>[^:/?]+)\\+(?<domainIdentifier>[^:/?]+)/basepathmappings$");
-const PrivateDomainNameArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*):(?<account>[^:]*):/domainnames/(?<domainName>[^:/?]+)\\+(?<domainIdentifier>[^:/?]+)$");
-const ProductPageArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*):(?<account>[^:]*):/portalproducts/(?<portalProductId>[^:/?]+)/productpages/(?<productPageId>[^:/?]+)$");
-const ProductRestEndpointPageArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*):(?<account>[^:]*):/portalproducts/(?<portalProductId>[^:/?]+)/productrestendpointpages/(?<productRestEndpointPageId>[^:/?]+)$");
-const RequestValidatorArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/requestvalidators/(?<requestValidatorId>[^:/?]+)$");
-const RequestValidatorsArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/requestvalidators$");
-const ResourceArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/resources/(?<resourceId>[^:/?]+)$");
-const ResourcesArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/resources$");
-const RestAPIArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)$");
-const RestApisArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis$");
-const RouteArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/routes/(?<routeId>[^:/?]+)$");
-const RouteRequestParameterArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/routes/(?<routeId>[^:/?]+)/requestparameters/(?<requestParameterKey>[^:/?]+)$");
-const RouteResponseArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/routes/(?<routeId>[^:/?]+)/routeresponses/(?<routeResponseId>[^:/?]+)$");
-const RouteResponsesArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/routes/(?<routeId>[^:/?]+)/routeresponses$");
-const RouteSettingsArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/stages/(?<stageName>[^:/?]+)/routesettings/(?<routeKey>[^:/?]+)$");
-const RoutesArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/routes$");
-const RoutingRuleArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*):(?<account>[^:]*):/domainnames/(?<domainName>[^:/?]+)/routingrules/(?<routingRuleId>[^:/?]+)$");
-const SDKArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/stages/(?<stageName>[^:/?]+)/sdks/(?<sdkType>[^:/?]+)$");
-const StageArnRegex = new RegExp("^(?:arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/stages/(?<stageName>[^:/?]+)|arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/stages/(?<stageName>[^:/?]+))$");
-const StagesArnRegex = new RegExp("^(?:arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/stages|arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/stages)$");
-const TagsArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/tags/(?<urlEncodedResourceARN>[^:/?]+)$");
-const TemplateArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/models/(?<modelName>[^:/?]+)/template$");
-const UsagePlanArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/usageplans/(?<usagePlanId>[^:/?]+)$");
-const UsagePlanKeyArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/usageplans/(?<usagePlanId>[^:/?]+)/keys/(?<id>[^:/?]+)$");
-const UsagePlanKeysArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/usageplans/(?<usagePlanId>[^:/?]+)/keys$");
-const UsagePlansArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/usageplans$");
-const VPCLinkArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/vpclinks/(?<vpcLinkId>[^:/?]+)$");
-const VPCLinksArnRegex = new RegExp("^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/vpclinks$");
+const AccessLogSettingsArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/stages/(?<stageName>[^:/?]+)/accesslogsettings$",
+);
+const AccountArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/account$",
+);
+const APIArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)$",
+);
+const APIKeyArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apikeys/(?<apiKeyId>[^:/?]+)$",
+);
+const APIKeysArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apikeys$",
+);
+const APIMappingArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/domainnames/(?<domainName>[^:/?]+)/apimappings/(?<apiMappingId>[^:/?]+)$",
+);
+const APIMappingsArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/domainnames/(?<domainName>[^:/?]+)/apimappings$",
+);
+const ApisArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis$",
+);
+const AuthorizerArnRegex = new RegExp(
+	"^(?:arn:(?:[^:]+):apigateway:(?:[^:]*)::/apis/(?:[^:/?]+)/authorizers/(?:[^:/?]+)|arn:(?:[^:]+):apigateway:(?:[^:]*)::/restapis/(?:[^:/?]+)/authorizers/(?:[^:/?]+))$",
+);
+const AuthorizerParseRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/authorizers/(?<authorizerId>[^:/?]+)$",
+);
+const AuthorizersArnRegex = new RegExp(
+	"^(?:arn:(?:[^:]+):apigateway:(?:[^:]*)::/apis/(?:[^:/?]+)/authorizers|arn:(?:[^:]+):apigateway:(?:[^:]*)::/restapis/(?:[^:/?]+)/authorizers)$",
+);
+const AuthorizersParseRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/authorizers$",
+);
+const AuthorizersCacheArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/stages/(?<stageName>[^:/?]+)/cache/authorizers$",
+);
+const BasePathMappingArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/domainnames/(?<domainName>[^:/?]+)/basepathmappings/(?<basePath>[^:/?]+)$",
+);
+const BasePathMappingsArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/domainnames/(?<domainName>[^:/?]+)/basepathmappings$",
+);
+const ClientCertificateArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/clientcertificates/(?<clientCertificateId>[^:/?]+)$",
+);
+const ClientCertificatesArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/clientcertificates$",
+);
+const CorsArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/cors$",
+);
+const DeploymentArnRegex = new RegExp(
+	"^(?:arn:(?:[^:]+):apigateway:(?:[^:]*)::/apis/(?:[^:/?]+)/deployments/(?:[^:/?]+)|arn:(?:[^:]+):apigateway:(?:[^:]*)::/restapis/(?:[^:/?]+)/deployments/(?:[^:/?]+))$",
+);
+const DeploymentParseRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/deployments/(?<deploymentId>[^:/?]+)$",
+);
+const DeploymentsArnRegex = new RegExp(
+	"^(?:arn:(?:[^:]+):apigateway:(?:[^:]*)::/apis/(?:[^:/?]+)/deployments|arn:(?:[^:]+):apigateway:(?:[^:]*)::/restapis/(?:[^:/?]+)/deployments)$",
+);
+const DeploymentsParseRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/deployments$",
+);
+const DocumentationPartArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/documentation/parts/(?<documentationPartId>[^:/?]+)$",
+);
+const DocumentationPartsArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/documentation/parts$",
+);
+const DocumentationVersionArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/documentation/versions/(?<documentationVersionId>[^:/?]+)$",
+);
+const DocumentationVersionsArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/documentation/versions$",
+);
+const DomainNameArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/domainnames/(?<domainName>[^:/?]+)$",
+);
+const DomainNameAccessAssociationArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*):(?<account>[^:]*):/domainnameaccessassociations/domainname/(?<domainName>[^:/?]+)/(?<sourceType>[^:/?]+)/(?<sourceId>[^:/?]+)$",
+);
+const DomainNameAccessAssociationsArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*):(?<account>[^:]*):/domainnameaccessassociations$",
+);
+const DomainNamesArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/domainnames$",
+);
+const ExportedAPIArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/exports/(?<specification>[^:/?]+)$",
+);
+const GatewayResponseArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/gatewayresponses/(?<responseType>[^:/?]+)$",
+);
+const GatewayResponsesArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/gatewayresponses$",
+);
+const IntegrationArnRegex = new RegExp(
+	"^(?:arn:(?:[^:]+):apigateway:(?:[^:]*)::/apis/(?:[^:/?]+)/integrations/(?:[^:/?]+)|arn:(?:[^:]+):apigateway:(?:[^:]*)::/restapis/(?:[^:/?]+)/resources/(?:[^:/?]+)/methods/(?:[^:/?]+)/integration)$",
+);
+const IntegrationParseRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/integrations/(?<integrationId>[^:/?]+)$",
+);
+const IntegrationResponseArnRegex = new RegExp(
+	"^(?:arn:(?:[^:]+):apigateway:(?:[^:]*)::/apis/(?:[^:/?]+)/integrations/(?:[^:/?]+)/integrationresponses/(?:[^:/?]+)|arn:(?:[^:]+):apigateway:(?:[^:]*)::/restapis/(?:[^:/?]+)/resources/(?:[^:/?]+)/methods/(?:[^:/?]+)/integration/responses/(?:[^:/?]+))$",
+);
+const IntegrationResponseParseRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/integrations/(?<integrationId>[^:/?]+)/integrationresponses/(?<integrationResponseId>[^:/?]+)$",
+);
+const IntegrationResponsesArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/integrations/(?<integrationId>[^:/?]+)/integrationresponses$",
+);
+const IntegrationsArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/integrations$",
+);
+const MethodArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/resources/(?<resourceId>[^:/?]+)/methods/(?<httpMethodType>[^:/?]+)$",
+);
+const MethodResponseArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/resources/(?<resourceId>[^:/?]+)/methods/(?<httpMethodType>[^:/?]+)/responses/(?<statusCode>[^:/?]+)$",
+);
+const ModelArnRegex = new RegExp(
+	"^(?:arn:(?:[^:]+):apigateway:(?:[^:]*)::/apis/(?:[^:/?]+)/models/(?:[^:/?]+)|arn:(?:[^:]+):apigateway:(?:[^:]*)::/restapis/(?:[^:/?]+)/models/(?:[^:/?]+))$",
+);
+const ModelParseRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/models/(?<modelId>[^:/?]+)$",
+);
+const ModelTemplateArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/models/(?<modelId>[^:/?]+)/template$",
+);
+const ModelsArnRegex = new RegExp(
+	"^(?:arn:(?:[^:]+):apigateway:(?:[^:]*)::/apis/(?:[^:/?]+)/models|arn:(?:[^:]+):apigateway:(?:[^:]*)::/restapis/(?:[^:/?]+)/models)$",
+);
+const ModelsParseRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/models$",
+);
+const PortalArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*):(?<account>[^:]*):/portals/(?<portalId>[^:/?]+)$",
+);
+const PortalProductArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*):(?<account>[^:]*):/portalproducts/(?<portalProductId>[^:/?]+)$",
+);
+const PrivateBasePathMappingArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/domainnames/(?<domainName>[^:/?]+)\\+(?<domainIdentifier>[^:/?]+)/basepathmappings/(?<basePath>[^:/?]+)$",
+);
+const PrivateBasePathMappingsArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/domainnames/(?<domainName>[^:/?]+)\\+(?<domainIdentifier>[^:/?]+)/basepathmappings$",
+);
+const PrivateDomainNameArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*):(?<account>[^:]*):/domainnames/(?<domainName>[^:/?]+)\\+(?<domainIdentifier>[^:/?]+)$",
+);
+const ProductPageArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*):(?<account>[^:]*):/portalproducts/(?<portalProductId>[^:/?]+)/productpages/(?<productPageId>[^:/?]+)$",
+);
+const ProductRestEndpointPageArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*):(?<account>[^:]*):/portalproducts/(?<portalProductId>[^:/?]+)/productrestendpointpages/(?<productRestEndpointPageId>[^:/?]+)$",
+);
+const RequestValidatorArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/requestvalidators/(?<requestValidatorId>[^:/?]+)$",
+);
+const RequestValidatorsArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/requestvalidators$",
+);
+const ResourceArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/resources/(?<resourceId>[^:/?]+)$",
+);
+const ResourcesArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/resources$",
+);
+const RestAPIArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)$",
+);
+const RestApisArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis$",
+);
+const RouteArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/routes/(?<routeId>[^:/?]+)$",
+);
+const RouteRequestParameterArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/routes/(?<routeId>[^:/?]+)/requestparameters/(?<requestParameterKey>[^:/?]+)$",
+);
+const RouteResponseArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/routes/(?<routeId>[^:/?]+)/routeresponses/(?<routeResponseId>[^:/?]+)$",
+);
+const RouteResponsesArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/routes/(?<routeId>[^:/?]+)/routeresponses$",
+);
+const RouteSettingsArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/stages/(?<stageName>[^:/?]+)/routesettings/(?<routeKey>[^:/?]+)$",
+);
+const RoutesArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/routes$",
+);
+const RoutingRuleArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*):(?<account>[^:]*):/domainnames/(?<domainName>[^:/?]+)/routingrules/(?<routingRuleId>[^:/?]+)$",
+);
+const SDKArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/stages/(?<stageName>[^:/?]+)/sdks/(?<sdkType>[^:/?]+)$",
+);
+const StageArnRegex = new RegExp(
+	"^(?:arn:(?:[^:]+):apigateway:(?:[^:]*)::/apis/(?:[^:/?]+)/stages/(?:[^:/?]+)|arn:(?:[^:]+):apigateway:(?:[^:]*)::/restapis/(?:[^:/?]+)/stages/(?:[^:/?]+))$",
+);
+const StageParseRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/stages/(?<stageName>[^:/?]+)$",
+);
+const StagesArnRegex = new RegExp(
+	"^(?:arn:(?:[^:]+):apigateway:(?:[^:]*)::/apis/(?:[^:/?]+)/stages|arn:(?:[^:]+):apigateway:(?:[^:]*)::/restapis/(?:[^:/?]+)/stages)$",
+);
+const StagesParseRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/stages$",
+);
+const TagsArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/tags/(?<urlEncodedResourceARN>[^:/?]+)$",
+);
+const TemplateArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/models/(?<modelName>[^:/?]+)/template$",
+);
+const UsagePlanArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/usageplans/(?<usagePlanId>[^:/?]+)$",
+);
+const UsagePlanKeyArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/usageplans/(?<usagePlanId>[^:/?]+)/keys/(?<id>[^:/?]+)$",
+);
+const UsagePlanKeysArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/usageplans/(?<usagePlanId>[^:/?]+)/keys$",
+);
+const UsagePlansArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/usageplans$",
+);
+const VPCLinkArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/vpclinks/(?<vpcLinkId>[^:/?]+)$",
+);
+const VPCLinksArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/vpclinks$",
+);
 
 /**
  * ARN builders, validators, and parsers for apigateway resources.
@@ -217,7 +446,13 @@ export class ApiGatewayResources {
 	 * Parses a AccessLogSettings ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAccessLogSettingsArn(arn: string): { partition: string; region: string; account: string; apiId: string; stageName: string } {
+	static parseAccessLogSettingsArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		apiId: string;
+		stageName: string;
+	} {
 		const match = AccessLogSettingsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid AccessLogSettings ARN: ${arn}`);
@@ -256,7 +491,11 @@ export class ApiGatewayResources {
 	 * Parses a Account ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAccountArn(arn: string): { partition: string; region: string; account: string } {
+	static parseAccountArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+	} {
 		const match = AccountArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Account ARN: ${arn}`);
@@ -265,7 +504,6 @@ export class ApiGatewayResources {
 			partition: match.groups.partition,
 			region: match.groups.region,
 			account: match.groups.account,
-
 		};
 	}
 
@@ -296,7 +534,12 @@ export class ApiGatewayResources {
 	 * Parses a Api ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAPIArn(arn: string): { partition: string; region: string; account: string; apiId: string } {
+	static parseAPIArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		apiId: string;
+	} {
 		const match = APIArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Api ARN: ${arn}`);
@@ -336,7 +579,12 @@ export class ApiGatewayResources {
 	 * Parses a ApiKey ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAPIKeyArn(arn: string): { partition: string; region: string; account: string; apiKeyId: string } {
+	static parseAPIKeyArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		apiKeyId: string;
+	} {
 		const match = APIKeyArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ApiKey ARN: ${arn}`);
@@ -374,7 +622,11 @@ export class ApiGatewayResources {
 	 * Parses a ApiKeys ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAPIKeysArn(arn: string): { partition: string; region: string; account: string } {
+	static parseAPIKeysArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+	} {
 		const match = APIKeysArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ApiKeys ARN: ${arn}`);
@@ -383,7 +635,6 @@ export class ApiGatewayResources {
 			partition: match.groups.partition,
 			region: match.groups.region,
 			account: match.groups.account,
-
 		};
 	}
 
@@ -416,7 +667,13 @@ export class ApiGatewayResources {
 	 * Parses a ApiMapping ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAPIMappingArn(arn: string): { partition: string; region: string; account: string; domainName: string; apiMappingId: string } {
+	static parseAPIMappingArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		domainName: string;
+		apiMappingId: string;
+	} {
 		const match = APIMappingArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ApiMapping ARN: ${arn}`);
@@ -457,7 +714,12 @@ export class ApiGatewayResources {
 	 * Parses a ApiMappings ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAPIMappingsArn(arn: string): { partition: string; region: string; account: string; domainName: string } {
+	static parseAPIMappingsArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		domainName: string;
+	} {
 		const match = APIMappingsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ApiMappings ARN: ${arn}`);
@@ -495,7 +757,11 @@ export class ApiGatewayResources {
 	 * Parses a Apis ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseApisArn(arn: string): { partition: string; region: string; account: string } {
+	static parseApisArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+	} {
 		const match = ApisArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Apis ARN: ${arn}`);
@@ -504,7 +770,6 @@ export class ApiGatewayResources {
 			partition: match.groups.partition,
 			region: match.groups.region,
 			account: match.groups.account,
-
 		};
 	}
 
@@ -552,11 +817,17 @@ export class ApiGatewayResources {
 	}
 
 	/**
-	 * Parses a Authorizer ARN into its components.
+	 * Parses a Authorizer ARN into its components (uses first ARN variant format).
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAuthorizerArn(arn: string): { partition: string; region: string; account: string; apiId: string; authorizerId: string } {
-		const match = AuthorizerArnRegex.exec(arn);
+	static parseAuthorizerArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		apiId: string;
+		authorizerId: string;
+	} {
+		const match = AuthorizerParseRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Authorizer ARN: ${arn}`);
 		}
@@ -609,11 +880,16 @@ export class ApiGatewayResources {
 	}
 
 	/**
-	 * Parses a Authorizers ARN into its components.
+	 * Parses a Authorizers ARN into its components (uses first ARN variant format).
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAuthorizersArn(arn: string): { partition: string; region: string; account: string; apiId: string } {
-		const match = AuthorizersArnRegex.exec(arn);
+	static parseAuthorizersArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		apiId: string;
+	} {
+		const match = AuthorizersParseRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Authorizers ARN: ${arn}`);
 		}
@@ -654,7 +930,13 @@ export class ApiGatewayResources {
 	 * Parses a AuthorizersCache ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAuthorizersCacheArn(arn: string): { partition: string; region: string; account: string; apiId: string; stageName: string } {
+	static parseAuthorizersCacheArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		apiId: string;
+		stageName: string;
+	} {
 		const match = AuthorizersCacheArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid AuthorizersCache ARN: ${arn}`);
@@ -697,7 +979,13 @@ export class ApiGatewayResources {
 	 * Parses a BasePathMapping ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseBasePathMappingArn(arn: string): { partition: string; region: string; account: string; domainName: string; basePath: string } {
+	static parseBasePathMappingArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		domainName: string;
+		basePath: string;
+	} {
 		const match = BasePathMappingArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid BasePathMapping ARN: ${arn}`);
@@ -738,7 +1026,12 @@ export class ApiGatewayResources {
 	 * Parses a BasePathMappings ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseBasePathMappingsArn(arn: string): { partition: string; region: string; account: string; domainName: string } {
+	static parseBasePathMappingsArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		domainName: string;
+	} {
 		const match = BasePathMappingsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid BasePathMappings ARN: ${arn}`);
@@ -778,7 +1071,12 @@ export class ApiGatewayResources {
 	 * Parses a ClientCertificate ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseClientCertificateArn(arn: string): { partition: string; region: string; account: string; clientCertificateId: string } {
+	static parseClientCertificateArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		clientCertificateId: string;
+	} {
 		const match = ClientCertificateArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ClientCertificate ARN: ${arn}`);
@@ -816,7 +1114,11 @@ export class ApiGatewayResources {
 	 * Parses a ClientCertificates ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseClientCertificatesArn(arn: string): { partition: string; region: string; account: string } {
+	static parseClientCertificatesArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+	} {
 		const match = ClientCertificatesArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ClientCertificates ARN: ${arn}`);
@@ -825,7 +1127,6 @@ export class ApiGatewayResources {
 			partition: match.groups.partition,
 			region: match.groups.region,
 			account: match.groups.account,
-
 		};
 	}
 
@@ -856,7 +1157,12 @@ export class ApiGatewayResources {
 	 * Parses a Cors ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCorsArn(arn: string): { partition: string; region: string; account: string; apiId: string } {
+	static parseCorsArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		apiId: string;
+	} {
 		const match = CorsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Cors ARN: ${arn}`);
@@ -913,11 +1219,17 @@ export class ApiGatewayResources {
 	}
 
 	/**
-	 * Parses a Deployment ARN into its components.
+	 * Parses a Deployment ARN into its components (uses first ARN variant format).
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDeploymentArn(arn: string): { partition: string; region: string; account: string; apiId: string; deploymentId: string } {
-		const match = DeploymentArnRegex.exec(arn);
+	static parseDeploymentArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		apiId: string;
+		deploymentId: string;
+	} {
+		const match = DeploymentParseRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Deployment ARN: ${arn}`);
 		}
@@ -970,11 +1282,16 @@ export class ApiGatewayResources {
 	}
 
 	/**
-	 * Parses a Deployments ARN into its components.
+	 * Parses a Deployments ARN into its components (uses first ARN variant format).
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDeploymentsArn(arn: string): { partition: string; region: string; account: string; apiId: string } {
-		const match = DeploymentsArnRegex.exec(arn);
+	static parseDeploymentsArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		apiId: string;
+	} {
+		const match = DeploymentsParseRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Deployments ARN: ${arn}`);
 		}
@@ -1015,7 +1332,13 @@ export class ApiGatewayResources {
 	 * Parses a DocumentationPart ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDocumentationPartArn(arn: string): { partition: string; region: string; account: string; restAPIId: string; documentationPartId: string } {
+	static parseDocumentationPartArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		restAPIId: string;
+		documentationPartId: string;
+	} {
 		const match = DocumentationPartArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid DocumentationPart ARN: ${arn}`);
@@ -1056,7 +1379,12 @@ export class ApiGatewayResources {
 	 * Parses a DocumentationParts ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDocumentationPartsArn(arn: string): { partition: string; region: string; account: string; restAPIId: string } {
+	static parseDocumentationPartsArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		restAPIId: string;
+	} {
 		const match = DocumentationPartsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid DocumentationParts ARN: ${arn}`);
@@ -1098,7 +1426,13 @@ export class ApiGatewayResources {
 	 * Parses a DocumentationVersion ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDocumentationVersionArn(arn: string): { partition: string; region: string; account: string; restAPIId: string; documentationVersionId: string } {
+	static parseDocumentationVersionArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		restAPIId: string;
+		documentationVersionId: string;
+	} {
 		const match = DocumentationVersionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid DocumentationVersion ARN: ${arn}`);
@@ -1139,7 +1473,12 @@ export class ApiGatewayResources {
 	 * Parses a DocumentationVersions ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDocumentationVersionsArn(arn: string): { partition: string; region: string; account: string; restAPIId: string } {
+	static parseDocumentationVersionsArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		restAPIId: string;
+	} {
 		const match = DocumentationVersionsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid DocumentationVersions ARN: ${arn}`);
@@ -1179,7 +1518,12 @@ export class ApiGatewayResources {
 	 * Parses a DomainName ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDomainNameArn(arn: string): { partition: string; region: string; account: string; domainName: string } {
+	static parseDomainNameArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		domainName: string;
+	} {
 		const match = DomainNameArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid DomainName ARN: ${arn}`);
@@ -1223,7 +1567,14 @@ export class ApiGatewayResources {
 	 * Parses a DomainNameAccessAssociation ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDomainNameAccessAssociationArn(arn: string): { partition: string; region: string; account: string; domainName: string; sourceType: string; sourceId: string } {
+	static parseDomainNameAccessAssociationArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		domainName: string;
+		sourceType: string;
+		sourceId: string;
+	} {
 		const match = DomainNameAccessAssociationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid DomainNameAccessAssociation ARN: ${arn}`);
@@ -1263,7 +1614,11 @@ export class ApiGatewayResources {
 	 * Parses a DomainNameAccessAssociations ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDomainNameAccessAssociationsArn(arn: string): { partition: string; region: string; account: string } {
+	static parseDomainNameAccessAssociationsArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+	} {
 		const match = DomainNameAccessAssociationsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid DomainNameAccessAssociations ARN: ${arn}`);
@@ -1272,7 +1627,6 @@ export class ApiGatewayResources {
 			partition: match.groups.partition,
 			region: match.groups.region,
 			account: match.groups.account,
-
 		};
 	}
 
@@ -1301,7 +1655,11 @@ export class ApiGatewayResources {
 	 * Parses a DomainNames ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDomainNamesArn(arn: string): { partition: string; region: string; account: string } {
+	static parseDomainNamesArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+	} {
 		const match = DomainNamesArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid DomainNames ARN: ${arn}`);
@@ -1310,7 +1668,6 @@ export class ApiGatewayResources {
 			partition: match.groups.partition,
 			region: match.groups.region,
 			account: match.groups.account,
-
 		};
 	}
 
@@ -1343,7 +1700,13 @@ export class ApiGatewayResources {
 	 * Parses a ExportedAPI ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseExportedAPIArn(arn: string): { partition: string; region: string; account: string; apiId: string; specification: string } {
+	static parseExportedAPIArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		apiId: string;
+		specification: string;
+	} {
 		const match = ExportedAPIArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ExportedAPI ARN: ${arn}`);
@@ -1386,7 +1749,13 @@ export class ApiGatewayResources {
 	 * Parses a GatewayResponse ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseGatewayResponseArn(arn: string): { partition: string; region: string; account: string; restAPIId: string; responseType: string } {
+	static parseGatewayResponseArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		restAPIId: string;
+		responseType: string;
+	} {
 		const match = GatewayResponseArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid GatewayResponse ARN: ${arn}`);
@@ -1427,7 +1796,12 @@ export class ApiGatewayResources {
 	 * Parses a GatewayResponses ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseGatewayResponsesArn(arn: string): { partition: string; region: string; account: string; restAPIId: string } {
+	static parseGatewayResponsesArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		restAPIId: string;
+	} {
 		const match = GatewayResponsesArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid GatewayResponses ARN: ${arn}`);
@@ -1486,11 +1860,17 @@ export class ApiGatewayResources {
 	}
 
 	/**
-	 * Parses a Integration ARN into its components.
+	 * Parses a Integration ARN into its components (uses first ARN variant format).
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIntegrationArn(arn: string): { partition: string; region: string; account: string; apiId: string; integrationId: string } {
-		const match = IntegrationArnRegex.exec(arn);
+	static parseIntegrationArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		apiId: string;
+		integrationId: string;
+	} {
+		const match = IntegrationParseRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Integration ARN: ${arn}`);
 		}
@@ -1553,11 +1933,18 @@ export class ApiGatewayResources {
 	}
 
 	/**
-	 * Parses a IntegrationResponse ARN into its components.
+	 * Parses a IntegrationResponse ARN into its components (uses first ARN variant format).
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIntegrationResponseArn(arn: string): { partition: string; region: string; account: string; apiId: string; integrationId: string; integrationResponseId: string } {
-		const match = IntegrationResponseArnRegex.exec(arn);
+	static parseIntegrationResponseArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		apiId: string;
+		integrationId: string;
+		integrationResponseId: string;
+	} {
+		const match = IntegrationResponseParseRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid IntegrationResponse ARN: ${arn}`);
 		}
@@ -1600,7 +1987,13 @@ export class ApiGatewayResources {
 	 * Parses a IntegrationResponses ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIntegrationResponsesArn(arn: string): { partition: string; region: string; account: string; apiId: string; integrationId: string } {
+	static parseIntegrationResponsesArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		apiId: string;
+		integrationId: string;
+	} {
 		const match = IntegrationResponsesArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid IntegrationResponses ARN: ${arn}`);
@@ -1641,7 +2034,12 @@ export class ApiGatewayResources {
 	 * Parses a Integrations ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIntegrationsArn(arn: string): { partition: string; region: string; account: string; apiId: string } {
+	static parseIntegrationsArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		apiId: string;
+	} {
 		const match = IntegrationsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Integrations ARN: ${arn}`);
@@ -1685,7 +2083,14 @@ export class ApiGatewayResources {
 	 * Parses a Method ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseMethodArn(arn: string): { partition: string; region: string; account: string; restAPIId: string; resourceId: string; httpMethodType: string } {
+	static parseMethodArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		restAPIId: string;
+		resourceId: string;
+		httpMethodType: string;
+	} {
 		const match = MethodArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Method ARN: ${arn}`);
@@ -1733,7 +2138,15 @@ export class ApiGatewayResources {
 	 * Parses a MethodResponse ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseMethodResponseArn(arn: string): { partition: string; region: string; account: string; restAPIId: string; resourceId: string; httpMethodType: string; statusCode: string } {
+	static parseMethodResponseArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		restAPIId: string;
+		resourceId: string;
+		httpMethodType: string;
+		statusCode: string;
+	} {
 		const match = MethodResponseArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid MethodResponse ARN: ${arn}`);
@@ -1793,11 +2206,17 @@ export class ApiGatewayResources {
 	}
 
 	/**
-	 * Parses a Model ARN into its components.
+	 * Parses a Model ARN into its components (uses first ARN variant format).
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseModelArn(arn: string): { partition: string; region: string; account: string; apiId: string; modelId: string } {
-		const match = ModelArnRegex.exec(arn);
+	static parseModelArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		apiId: string;
+		modelId: string;
+	} {
+		const match = ModelParseRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Model ARN: ${arn}`);
 		}
@@ -1839,7 +2258,13 @@ export class ApiGatewayResources {
 	 * Parses a ModelTemplate ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseModelTemplateArn(arn: string): { partition: string; region: string; account: string; apiId: string; modelId: string } {
+	static parseModelTemplateArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		apiId: string;
+		modelId: string;
+	} {
 		const match = ModelTemplateArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ModelTemplate ARN: ${arn}`);
@@ -1893,11 +2318,16 @@ export class ApiGatewayResources {
 	}
 
 	/**
-	 * Parses a Models ARN into its components.
+	 * Parses a Models ARN into its components (uses first ARN variant format).
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseModelsArn(arn: string): { partition: string; region: string; account: string; apiId: string } {
-		const match = ModelsArnRegex.exec(arn);
+	static parseModelsArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		apiId: string;
+	} {
+		const match = ModelsParseRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Models ARN: ${arn}`);
 		}
@@ -1936,7 +2366,12 @@ export class ApiGatewayResources {
 	 * Parses a Portal ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePortalArn(arn: string): { partition: string; region: string; account: string; portalId: string } {
+	static parsePortalArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		portalId: string;
+	} {
 		const match = PortalArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Portal ARN: ${arn}`);
@@ -1976,7 +2411,12 @@ export class ApiGatewayResources {
 	 * Parses a PortalProduct ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePortalProductArn(arn: string): { partition: string; region: string; account: string; portalProductId: string } {
+	static parsePortalProductArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		portalProductId: string;
+	} {
 		const match = PortalProductArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid PortalProduct ARN: ${arn}`);
@@ -2020,7 +2460,14 @@ export class ApiGatewayResources {
 	 * Parses a PrivateBasePathMapping ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePrivateBasePathMappingArn(arn: string): { partition: string; region: string; account: string; domainName: string; domainIdentifier: string; basePath: string } {
+	static parsePrivateBasePathMappingArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		domainName: string;
+		domainIdentifier: string;
+		basePath: string;
+	} {
 		const match = PrivateBasePathMappingArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid PrivateBasePathMapping ARN: ${arn}`);
@@ -2064,7 +2511,13 @@ export class ApiGatewayResources {
 	 * Parses a PrivateBasePathMappings ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePrivateBasePathMappingsArn(arn: string): { partition: string; region: string; account: string; domainName: string; domainIdentifier: string } {
+	static parsePrivateBasePathMappingsArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		domainName: string;
+		domainIdentifier: string;
+	} {
 		const match = PrivateBasePathMappingsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid PrivateBasePathMappings ARN: ${arn}`);
@@ -2107,7 +2560,13 @@ export class ApiGatewayResources {
 	 * Parses a PrivateDomainName ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePrivateDomainNameArn(arn: string): { partition: string; region: string; account: string; domainName: string; domainIdentifier: string } {
+	static parsePrivateDomainNameArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		domainName: string;
+		domainIdentifier: string;
+	} {
 		const match = PrivateDomainNameArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid PrivateDomainName ARN: ${arn}`);
@@ -2150,7 +2609,13 @@ export class ApiGatewayResources {
 	 * Parses a ProductPage ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseProductPageArn(arn: string): { partition: string; region: string; account: string; portalProductId: string; productPageId: string } {
+	static parseProductPageArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		portalProductId: string;
+		productPageId: string;
+	} {
 		const match = ProductPageArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ProductPage ARN: ${arn}`);
@@ -2193,7 +2658,13 @@ export class ApiGatewayResources {
 	 * Parses a ProductRestEndpointPage ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseProductRestEndpointPageArn(arn: string): { partition: string; region: string; account: string; portalProductId: string; productRestEndpointPageId: string } {
+	static parseProductRestEndpointPageArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		portalProductId: string;
+		productRestEndpointPageId: string;
+	} {
 		const match = ProductRestEndpointPageArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ProductRestEndpointPage ARN: ${arn}`);
@@ -2236,7 +2707,13 @@ export class ApiGatewayResources {
 	 * Parses a RequestValidator ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRequestValidatorArn(arn: string): { partition: string; region: string; account: string; restAPIId: string; requestValidatorId: string } {
+	static parseRequestValidatorArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		restAPIId: string;
+		requestValidatorId: string;
+	} {
 		const match = RequestValidatorArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid RequestValidator ARN: ${arn}`);
@@ -2277,7 +2754,12 @@ export class ApiGatewayResources {
 	 * Parses a RequestValidators ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRequestValidatorsArn(arn: string): { partition: string; region: string; account: string; restAPIId: string } {
+	static parseRequestValidatorsArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		restAPIId: string;
+	} {
 		const match = RequestValidatorsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid RequestValidators ARN: ${arn}`);
@@ -2319,7 +2801,13 @@ export class ApiGatewayResources {
 	 * Parses a Resource ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseResourceArn(arn: string): { partition: string; region: string; account: string; restAPIId: string; resourceId: string } {
+	static parseResourceArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		restAPIId: string;
+		resourceId: string;
+	} {
 		const match = ResourceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Resource ARN: ${arn}`);
@@ -2360,7 +2848,12 @@ export class ApiGatewayResources {
 	 * Parses a Resources ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseResourcesArn(arn: string): { partition: string; region: string; account: string; restAPIId: string } {
+	static parseResourcesArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		restAPIId: string;
+	} {
 		const match = ResourcesArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Resources ARN: ${arn}`);
@@ -2400,7 +2893,12 @@ export class ApiGatewayResources {
 	 * Parses a RestApi ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRestAPIArn(arn: string): { partition: string; region: string; account: string; restAPIId: string } {
+	static parseRestAPIArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		restAPIId: string;
+	} {
 		const match = RestAPIArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid RestApi ARN: ${arn}`);
@@ -2438,7 +2936,11 @@ export class ApiGatewayResources {
 	 * Parses a RestApis ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRestApisArn(arn: string): { partition: string; region: string; account: string } {
+	static parseRestApisArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+	} {
 		const match = RestApisArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid RestApis ARN: ${arn}`);
@@ -2447,7 +2949,6 @@ export class ApiGatewayResources {
 			partition: match.groups.partition,
 			region: match.groups.region,
 			account: match.groups.account,
-
 		};
 	}
 
@@ -2480,7 +2981,13 @@ export class ApiGatewayResources {
 	 * Parses a Route ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRouteArn(arn: string): { partition: string; region: string; account: string; apiId: string; routeId: string } {
+	static parseRouteArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		apiId: string;
+		routeId: string;
+	} {
 		const match = RouteArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Route ARN: ${arn}`);
@@ -2525,7 +3032,14 @@ export class ApiGatewayResources {
 	 * Parses a RouteRequestParameter ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRouteRequestParameterArn(arn: string): { partition: string; region: string; account: string; apiId: string; routeId: string; requestParameterKey: string } {
+	static parseRouteRequestParameterArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		apiId: string;
+		routeId: string;
+		requestParameterKey: string;
+	} {
 		const match = RouteRequestParameterArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid RouteRequestParameter ARN: ${arn}`);
@@ -2571,7 +3085,14 @@ export class ApiGatewayResources {
 	 * Parses a RouteResponse ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRouteResponseArn(arn: string): { partition: string; region: string; account: string; apiId: string; routeId: string; routeResponseId: string } {
+	static parseRouteResponseArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		apiId: string;
+		routeId: string;
+		routeResponseId: string;
+	} {
 		const match = RouteResponseArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid RouteResponse ARN: ${arn}`);
@@ -2615,7 +3136,13 @@ export class ApiGatewayResources {
 	 * Parses a RouteResponses ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRouteResponsesArn(arn: string): { partition: string; region: string; account: string; apiId: string; routeId: string } {
+	static parseRouteResponsesArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		apiId: string;
+		routeId: string;
+	} {
 		const match = RouteResponsesArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid RouteResponses ARN: ${arn}`);
@@ -2660,7 +3187,14 @@ export class ApiGatewayResources {
 	 * Parses a RouteSettings ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRouteSettingsArn(arn: string): { partition: string; region: string; account: string; apiId: string; stageName: string; routeKey: string } {
+	static parseRouteSettingsArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		apiId: string;
+		stageName: string;
+		routeKey: string;
+	} {
 		const match = RouteSettingsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid RouteSettings ARN: ${arn}`);
@@ -2702,7 +3236,12 @@ export class ApiGatewayResources {
 	 * Parses a Routes ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRoutesArn(arn: string): { partition: string; region: string; account: string; apiId: string } {
+	static parseRoutesArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		apiId: string;
+	} {
 		const match = RoutesArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Routes ARN: ${arn}`);
@@ -2744,7 +3283,13 @@ export class ApiGatewayResources {
 	 * Parses a RoutingRule ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRoutingRuleArn(arn: string): { partition: string; region: string; account: string; domainName: string; routingRuleId: string } {
+	static parseRoutingRuleArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		domainName: string;
+		routingRuleId: string;
+	} {
 		const match = RoutingRuleArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid RoutingRule ARN: ${arn}`);
@@ -2789,7 +3334,14 @@ export class ApiGatewayResources {
 	 * Parses a Sdk ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSDKArn(arn: string): { partition: string; region: string; account: string; restAPIId: string; stageName: string; sdkType: string } {
+	static parseSDKArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		restAPIId: string;
+		stageName: string;
+		sdkType: string;
+	} {
 		const match = SDKArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Sdk ARN: ${arn}`);
@@ -2848,11 +3400,17 @@ export class ApiGatewayResources {
 	}
 
 	/**
-	 * Parses a Stage ARN into its components.
+	 * Parses a Stage ARN into its components (uses first ARN variant format).
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseStageArn(arn: string): { partition: string; region: string; account: string; apiId: string; stageName: string } {
-		const match = StageArnRegex.exec(arn);
+	static parseStageArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		apiId: string;
+		stageName: string;
+	} {
+		const match = StageParseRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Stage ARN: ${arn}`);
 		}
@@ -2905,11 +3463,16 @@ export class ApiGatewayResources {
 	}
 
 	/**
-	 * Parses a Stages ARN into its components.
+	 * Parses a Stages ARN into its components (uses first ARN variant format).
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseStagesArn(arn: string): { partition: string; region: string; account: string; apiId: string } {
-		const match = StagesArnRegex.exec(arn);
+	static parseStagesArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		apiId: string;
+	} {
+		const match = StagesParseRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Stages ARN: ${arn}`);
 		}
@@ -2948,7 +3511,12 @@ export class ApiGatewayResources {
 	 * Parses a Tags ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTagsArn(arn: string): { partition: string; region: string; account: string; urlEncodedResourceARN: string } {
+	static parseTagsArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		urlEncodedResourceARN: string;
+	} {
 		const match = TagsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Tags ARN: ${arn}`);
@@ -2988,7 +3556,12 @@ export class ApiGatewayResources {
 	 * Parses a Template ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTemplateArn(arn: string): { partition: string; region: string; account: string; modelName: string } {
+	static parseTemplateArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		modelName: string;
+	} {
 		const match = TemplateArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Template ARN: ${arn}`);
@@ -3028,7 +3601,12 @@ export class ApiGatewayResources {
 	 * Parses a UsagePlan ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseUsagePlanArn(arn: string): { partition: string; region: string; account: string; usagePlanId: string } {
+	static parseUsagePlanArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		usagePlanId: string;
+	} {
 		const match = UsagePlanArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid UsagePlan ARN: ${arn}`);
@@ -3070,7 +3648,13 @@ export class ApiGatewayResources {
 	 * Parses a UsagePlanKey ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseUsagePlanKeyArn(arn: string): { partition: string; region: string; account: string; usagePlanId: string; id: string } {
+	static parseUsagePlanKeyArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		usagePlanId: string;
+		id: string;
+	} {
 		const match = UsagePlanKeyArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid UsagePlanKey ARN: ${arn}`);
@@ -3111,7 +3695,12 @@ export class ApiGatewayResources {
 	 * Parses a UsagePlanKeys ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseUsagePlanKeysArn(arn: string): { partition: string; region: string; account: string; usagePlanId: string } {
+	static parseUsagePlanKeysArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		usagePlanId: string;
+	} {
 		const match = UsagePlanKeysArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid UsagePlanKeys ARN: ${arn}`);
@@ -3149,7 +3738,11 @@ export class ApiGatewayResources {
 	 * Parses a UsagePlans ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseUsagePlansArn(arn: string): { partition: string; region: string; account: string } {
+	static parseUsagePlansArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+	} {
 		const match = UsagePlansArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid UsagePlans ARN: ${arn}`);
@@ -3158,7 +3751,6 @@ export class ApiGatewayResources {
 			partition: match.groups.partition,
 			region: match.groups.region,
 			account: match.groups.account,
-
 		};
 	}
 
@@ -3189,7 +3781,12 @@ export class ApiGatewayResources {
 	 * Parses a VpcLink ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseVPCLinkArn(arn: string): { partition: string; region: string; account: string; vpcLinkId: string } {
+	static parseVPCLinkArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		vpcLinkId: string;
+	} {
 		const match = VPCLinkArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid VpcLink ARN: ${arn}`);
@@ -3227,7 +3824,11 @@ export class ApiGatewayResources {
 	 * Parses a VpcLinks ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseVPCLinksArn(arn: string): { partition: string; region: string; account: string } {
+	static parseVPCLinksArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+	} {
 		const match = VPCLinksArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid VpcLinks ARN: ${arn}`);
@@ -3236,10 +3837,8 @@ export class ApiGatewayResources {
 			partition: match.groups.partition,
 			region: match.groups.region,
 			account: match.groups.account,
-
 		};
 	}
-
 }
 
 /**
@@ -3249,11 +3848,17 @@ export class ApiGatewayOperations {
 	/** IAM actions required for the CreateApi API call. */
 	static readonly CREATE_API: string[] = ["apigateway:POST", "iam:PassRole"];
 	/** IAM actions required for the CreateApiKey API call. */
-	static readonly CREATE_API_KEY: string[] = ["apigateway:POST", "apigateway:PUT"];
+	static readonly CREATE_API_KEY: string[] = [
+		"apigateway:POST",
+		"apigateway:PUT",
+	];
 	/** IAM actions required for the CreateApiMapping API call. */
 	static readonly CREATE_API_MAPPING: string[] = ["apigateway:POST"];
 	/** IAM actions required for the CreateAuthorizer API call. */
-	static readonly CREATE_AUTHORIZER: string[] = ["apigateway:POST", "iam:PassRole"];
+	static readonly CREATE_AUTHORIZER: string[] = [
+		"apigateway:POST",
+		"iam:PassRole",
+	];
 	/** IAM actions required for the CreateBasePathMapping API call. */
 	static readonly CREATE_BASE_PATH_MAPPING: string[] = ["apigateway:POST"];
 	/** IAM actions required for the CreateDeployment API call. */
@@ -3263,43 +3868,81 @@ export class ApiGatewayOperations {
 	/** IAM actions required for the CreateDocumentationVersion API call. */
 	static readonly CREATE_DOCUMENTATION_VERSION: string[] = ["apigateway:POST"];
 	/** IAM actions required for the CreateDomainName API call. */
-	static readonly CREATE_DOMAIN_NAME: string[] = ["apigateway:AddCertificateToDomain", "apigateway:POST", "apigateway:PUT", "apigateway:UpdateDomainNamePolicy"];
+	static readonly CREATE_DOMAIN_NAME: string[] = [
+		"apigateway:AddCertificateToDomain",
+		"apigateway:POST",
+		"apigateway:PUT",
+		"apigateway:UpdateDomainNamePolicy",
+	];
 	/** IAM actions required for the CreateDomainNameAccessAssociation API call. */
-	static readonly CREATE_DOMAIN_NAME_ACCESS_ASSOCIATION: string[] = ["apigateway:CreateAccessAssociation", "apigateway:POST", "apigateway:PUT"];
+	static readonly CREATE_DOMAIN_NAME_ACCESS_ASSOCIATION: string[] = [
+		"apigateway:CreateAccessAssociation",
+		"apigateway:POST",
+		"apigateway:PUT",
+	];
 	/** IAM actions required for the CreateIntegration API call. */
-	static readonly CREATE_INTEGRATION: string[] = ["apigateway:POST", "iam:PassRole"];
+	static readonly CREATE_INTEGRATION: string[] = [
+		"apigateway:POST",
+		"iam:PassRole",
+	];
 	/** IAM actions required for the CreateIntegrationResponse API call. */
 	static readonly CREATE_INTEGRATION_RESPONSE: string[] = ["apigateway:POST"];
 	/** IAM actions required for the CreateModel API call. */
 	static readonly CREATE_MODEL: string[] = ["apigateway:POST"];
 	/** IAM actions required for the CreatePortal API call. */
-	static readonly CREATE_PORTAL: string[] = ["apigateway:CreatePortal", "apigateway:GetPortalProduct", "apigateway:POST"];
+	static readonly CREATE_PORTAL: string[] = [
+		"apigateway:CreatePortal",
+		"apigateway:GetPortalProduct",
+		"apigateway:POST",
+	];
 	/** IAM actions required for the CreatePortalProduct API call. */
-	static readonly CREATE_PORTAL_PRODUCT: string[] = ["apigateway:CreatePortalProduct", "apigateway:POST"];
+	static readonly CREATE_PORTAL_PRODUCT: string[] = [
+		"apigateway:CreatePortalProduct",
+		"apigateway:POST",
+	];
 	/** IAM actions required for the CreateProductPage API call. */
-	static readonly CREATE_PRODUCT_PAGE: string[] = ["apigateway:CreateProductPage"];
+	static readonly CREATE_PRODUCT_PAGE: string[] = [
+		"apigateway:CreateProductPage",
+	];
 	/** IAM actions required for the CreateProductRestEndpointPage API call. */
-	static readonly CREATE_PRODUCT_REST_ENDPOINT_PAGE: string[] = ["apigateway:CreateProductRestEndpointPage"];
+	static readonly CREATE_PRODUCT_REST_ENDPOINT_PAGE: string[] = [
+		"apigateway:CreateProductRestEndpointPage",
+	];
 	/** IAM actions required for the CreateRequestValidator API call. */
 	static readonly CREATE_REQUEST_VALIDATOR: string[] = ["apigateway:POST"];
 	/** IAM actions required for the CreateResource API call. */
 	static readonly CREATE_RESOURCE: string[] = ["apigateway:POST"];
 	/** IAM actions required for the CreateRestApi API call. */
-	static readonly CREATE_REST_API: string[] = ["apigateway:POST", "apigateway:PUT", "apigateway:UpdateRestApiPolicy"];
+	static readonly CREATE_REST_API: string[] = [
+		"apigateway:POST",
+		"apigateway:PUT",
+		"apigateway:UpdateRestApiPolicy",
+	];
 	/** IAM actions required for the CreateRoute API call. */
 	static readonly CREATE_ROUTE: string[] = ["apigateway:POST"];
 	/** IAM actions required for the CreateRouteResponse API call. */
 	static readonly CREATE_ROUTE_RESPONSE: string[] = ["apigateway:POST"];
 	/** IAM actions required for the CreateRoutingRule API call. */
-	static readonly CREATE_ROUTING_RULE: string[] = ["apigateway:CreateRoutingRule"];
+	static readonly CREATE_ROUTING_RULE: string[] = [
+		"apigateway:CreateRoutingRule",
+	];
 	/** IAM actions required for the CreateStage API call. */
-	static readonly CREATE_STAGE: string[] = ["apigateway:POST", "apigateway:PUT"];
+	static readonly CREATE_STAGE: string[] = [
+		"apigateway:POST",
+		"apigateway:PUT",
+	];
 	/** IAM actions required for the CreateUsagePlan API call. */
-	static readonly CREATE_USAGE_PLAN: string[] = ["apigateway:POST", "apigateway:PUT"];
+	static readonly CREATE_USAGE_PLAN: string[] = [
+		"apigateway:POST",
+		"apigateway:PUT",
+	];
 	/** IAM actions required for the CreateUsagePlanKey API call. */
 	static readonly CREATE_USAGE_PLAN_KEY: string[] = ["apigateway:POST"];
 	/** IAM actions required for the CreateVpcLink API call. */
-	static readonly CREATE_VPC_LINK: string[] = ["apigateway:POST", "apigateway:PUT"];
+	static readonly CREATE_VPC_LINK: string[] = [
+		"apigateway:POST",
+		"apigateway:PUT",
+	];
 	/** IAM actions required for the DeleteAccessLogSettings API call. */
 	static readonly DELETE_ACCESS_LOG_SETTINGS: string[] = ["apigateway:DELETE"];
 	/** IAM actions required for the DeleteApi API call. */
@@ -3321,11 +3964,18 @@ export class ApiGatewayOperations {
 	/** IAM actions required for the DeleteDocumentationPart API call. */
 	static readonly DELETE_DOCUMENTATION_PART: string[] = ["apigateway:DELETE"];
 	/** IAM actions required for the DeleteDocumentationVersion API call. */
-	static readonly DELETE_DOCUMENTATION_VERSION: string[] = ["apigateway:DELETE"];
+	static readonly DELETE_DOCUMENTATION_VERSION: string[] = [
+		"apigateway:DELETE",
+	];
 	/** IAM actions required for the DeleteDomainName API call. */
-	static readonly DELETE_DOMAIN_NAME: string[] = ["apigateway:DELETE", "apigateway:RemoveCertificateFromDomain"];
+	static readonly DELETE_DOMAIN_NAME: string[] = [
+		"apigateway:DELETE",
+		"apigateway:RemoveCertificateFromDomain",
+	];
 	/** IAM actions required for the DeleteDomainNameAccessAssociation API call. */
-	static readonly DELETE_DOMAIN_NAME_ACCESS_ASSOCIATION: string[] = ["apigateway:DELETE"];
+	static readonly DELETE_DOMAIN_NAME_ACCESS_ASSOCIATION: string[] = [
+		"apigateway:DELETE",
+	];
 	/** IAM actions required for the DeleteGatewayResponse API call. */
 	static readonly DELETE_GATEWAY_RESPONSE: string[] = ["apigateway:DELETE"];
 	/** IAM actions required for the DeleteIntegration API call. */
@@ -3341,13 +3991,21 @@ export class ApiGatewayOperations {
 	/** IAM actions required for the DeletePortal API call. */
 	static readonly DELETE_PORTAL: string[] = ["apigateway:DeletePortal"];
 	/** IAM actions required for the DeletePortalProduct API call. */
-	static readonly DELETE_PORTAL_PRODUCT: string[] = ["apigateway:DeletePortalProduct"];
+	static readonly DELETE_PORTAL_PRODUCT: string[] = [
+		"apigateway:DeletePortalProduct",
+	];
 	/** IAM actions required for the DeletePortalProductSharingPolicy API call. */
-	static readonly DELETE_PORTAL_PRODUCT_SHARING_POLICY: string[] = ["apigateway:DeletePortalProductSharingPolicy"];
+	static readonly DELETE_PORTAL_PRODUCT_SHARING_POLICY: string[] = [
+		"apigateway:DeletePortalProductSharingPolicy",
+	];
 	/** IAM actions required for the DeleteProductPage API call. */
-	static readonly DELETE_PRODUCT_PAGE: string[] = ["apigateway:DeleteProductPage"];
+	static readonly DELETE_PRODUCT_PAGE: string[] = [
+		"apigateway:DeleteProductPage",
+	];
 	/** IAM actions required for the DeleteProductRestEndpointPage API call. */
-	static readonly DELETE_PRODUCT_REST_ENDPOINT_PAGE: string[] = ["apigateway:DeleteProductRestEndpointPage"];
+	static readonly DELETE_PRODUCT_REST_ENDPOINT_PAGE: string[] = [
+		"apigateway:DeleteProductRestEndpointPage",
+	];
 	/** IAM actions required for the DeleteRequestValidator API call. */
 	static readonly DELETE_REQUEST_VALIDATOR: string[] = ["apigateway:DELETE"];
 	/** IAM actions required for the DeleteResource API call. */
@@ -3357,13 +4015,17 @@ export class ApiGatewayOperations {
 	/** IAM actions required for the DeleteRoute API call. */
 	static readonly DELETE_ROUTE: string[] = ["apigateway:DELETE"];
 	/** IAM actions required for the DeleteRouteRequestParameter API call. */
-	static readonly DELETE_ROUTE_REQUEST_PARAMETER: string[] = ["apigateway:DELETE"];
+	static readonly DELETE_ROUTE_REQUEST_PARAMETER: string[] = [
+		"apigateway:DELETE",
+	];
 	/** IAM actions required for the DeleteRouteResponse API call. */
 	static readonly DELETE_ROUTE_RESPONSE: string[] = ["apigateway:DELETE"];
 	/** IAM actions required for the DeleteRouteSettings API call. */
 	static readonly DELETE_ROUTE_SETTINGS: string[] = ["apigateway:DELETE"];
 	/** IAM actions required for the DeleteRoutingRule API call. */
-	static readonly DELETE_ROUTING_RULE: string[] = ["apigateway:DeleteRoutingRule"];
+	static readonly DELETE_ROUTING_RULE: string[] = [
+		"apigateway:DeleteRoutingRule",
+	];
 	/** IAM actions required for the DeleteStage API call. */
 	static readonly DELETE_STAGE: string[] = ["apigateway:DELETE"];
 	/** IAM actions required for the DeleteUsagePlan API call. */
@@ -3377,11 +4039,16 @@ export class ApiGatewayOperations {
 	/** IAM actions required for the ExportApi API call. */
 	static readonly EXPORT_API: string[] = ["apigateway:GET"];
 	/** IAM actions required for the FlushStageAuthorizersCache API call. */
-	static readonly FLUSH_STAGE_AUTHORIZERS_CACHE: string[] = ["apigateway:DELETE"];
+	static readonly FLUSH_STAGE_AUTHORIZERS_CACHE: string[] = [
+		"apigateway:DELETE",
+	];
 	/** IAM actions required for the FlushStageCache API call. */
 	static readonly FLUSH_STAGE_CACHE: string[] = ["apigateway:DELETE"];
 	/** IAM actions required for the GenerateClientCertificate API call. */
-	static readonly GENERATE_CLIENT_CERTIFICATE: string[] = ["apigateway:POST", "apigateway:PUT"];
+	static readonly GENERATE_CLIENT_CERTIFICATE: string[] = [
+		"apigateway:POST",
+		"apigateway:PUT",
+	];
 	/** IAM actions required for the GetAccount API call. */
 	static readonly GET_ACCOUNT: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetApi API call. */
@@ -3423,7 +4090,9 @@ export class ApiGatewayOperations {
 	/** IAM actions required for the GetDomainName API call. */
 	static readonly GET_DOMAIN_NAME: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetDomainNameAccessAssociations API call. */
-	static readonly GET_DOMAIN_NAME_ACCESS_ASSOCIATIONS: string[] = ["apigateway:GET"];
+	static readonly GET_DOMAIN_NAME_ACCESS_ASSOCIATIONS: string[] = [
+		"apigateway:GET",
+	];
 	/** IAM actions required for the GetDomainNames API call. */
 	static readonly GET_DOMAIN_NAMES: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetExport API call. */
@@ -3453,13 +4122,19 @@ export class ApiGatewayOperations {
 	/** IAM actions required for the GetPortal API call. */
 	static readonly GET_PORTAL: string[] = ["apigateway:GetPortal"];
 	/** IAM actions required for the GetPortalProduct API call. */
-	static readonly GET_PORTAL_PRODUCT: string[] = ["apigateway:GetPortalProduct"];
+	static readonly GET_PORTAL_PRODUCT: string[] = [
+		"apigateway:GetPortalProduct",
+	];
 	/** IAM actions required for the GetPortalProductSharingPolicy API call. */
-	static readonly GET_PORTAL_PRODUCT_SHARING_POLICY: string[] = ["apigateway:GetPortalProductSharingPolicy"];
+	static readonly GET_PORTAL_PRODUCT_SHARING_POLICY: string[] = [
+		"apigateway:GetPortalProductSharingPolicy",
+	];
 	/** IAM actions required for the GetProductPage API call. */
 	static readonly GET_PRODUCT_PAGE: string[] = ["apigateway:GetProductPage"];
 	/** IAM actions required for the GetProductRestEndpointPage API call. */
-	static readonly GET_PRODUCT_REST_ENDPOINT_PAGE: string[] = ["apigateway:GetProductRestEndpointPage"];
+	static readonly GET_PRODUCT_REST_ENDPOINT_PAGE: string[] = [
+		"apigateway:GetProductRestEndpointPage",
+	];
 	/** IAM actions required for the GetRequestValidator API call. */
 	static readonly GET_REQUEST_VALIDATOR: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetRequestValidators API call. */
@@ -3509,31 +4184,56 @@ export class ApiGatewayOperations {
 	/** IAM actions required for the GetVpcLinks API call. */
 	static readonly GET_VPC_LINKS: string[] = ["apigateway:GET"];
 	/** IAM actions required for the ImportApi API call. */
-	static readonly IMPORT_API: string[] = ["apigateway:POST", "apigateway:PUT", "iam:PassRole"];
+	static readonly IMPORT_API: string[] = [
+		"apigateway:POST",
+		"apigateway:PUT",
+		"iam:PassRole",
+	];
 	/** IAM actions required for the ImportApiKeys API call. */
 	static readonly IMPORT_API_KEYS: string[] = ["apigateway:POST"];
 	/** IAM actions required for the ImportDocumentationParts API call. */
 	static readonly IMPORT_DOCUMENTATION_PARTS: string[] = ["apigateway:PUT"];
 	/** IAM actions required for the ImportRestApi API call. */
-	static readonly IMPORT_REST_API: string[] = ["apigateway:POST", "iam:PassRole", "apigateway:UpdateRestApiPolicy"];
+	static readonly IMPORT_REST_API: string[] = [
+		"apigateway:POST",
+		"iam:PassRole",
+		"apigateway:UpdateRestApiPolicy",
+	];
 	/** IAM actions required for the ListPortalProducts API call. */
-	static readonly LIST_PORTAL_PRODUCTS: string[] = ["apigateway:ListPortalProducts"];
+	static readonly LIST_PORTAL_PRODUCTS: string[] = [
+		"apigateway:ListPortalProducts",
+	];
 	/** IAM actions required for the ListPortals API call. */
 	static readonly LIST_PORTALS: string[] = ["apigateway:ListPortals"];
 	/** IAM actions required for the ListProductPages API call. */
-	static readonly LIST_PRODUCT_PAGES: string[] = ["apigateway:ListProductPages"];
+	static readonly LIST_PRODUCT_PAGES: string[] = [
+		"apigateway:ListProductPages",
+	];
 	/** IAM actions required for the ListProductRestEndpointPages API call. */
-	static readonly LIST_PRODUCT_REST_ENDPOINT_PAGES: string[] = ["apigateway:ListProductRestEndpointPages"];
+	static readonly LIST_PRODUCT_REST_ENDPOINT_PAGES: string[] = [
+		"apigateway:ListProductRestEndpointPages",
+	];
 	/** IAM actions required for the ListRoutingRules API call. */
-	static readonly LIST_ROUTING_RULES: string[] = ["apigateway:ListRoutingRules"];
+	static readonly LIST_ROUTING_RULES: string[] = [
+		"apigateway:ListRoutingRules",
+	];
 	/** IAM actions required for the PreviewPortal API call. */
-	static readonly PREVIEW_PORTAL: string[] = ["apigateway:GetPortalProduct", "apigateway:PreviewPortal"];
+	static readonly PREVIEW_PORTAL: string[] = [
+		"apigateway:GetPortalProduct",
+		"apigateway:PreviewPortal",
+	];
 	/** IAM actions required for the PublishPortal API call. */
-	static readonly PUBLISH_PORTAL: string[] = ["apigateway:GetPortalProduct", "apigateway:PublishPortal"];
+	static readonly PUBLISH_PORTAL: string[] = [
+		"apigateway:GetPortalProduct",
+		"apigateway:PublishPortal",
+	];
 	/** IAM actions required for the PutGatewayResponse API call. */
 	static readonly PUT_GATEWAY_RESPONSE: string[] = ["apigateway:PUT"];
 	/** IAM actions required for the PutIntegration API call. */
-	static readonly PUT_INTEGRATION: string[] = ["apigateway:PUT", "iam:PassRole"];
+	static readonly PUT_INTEGRATION: string[] = [
+		"apigateway:PUT",
+		"iam:PassRole",
+	];
 	/** IAM actions required for the PutIntegrationResponse API call. */
 	static readonly PUT_INTEGRATION_RESPONSE: string[] = ["apigateway:PUT"];
 	/** IAM actions required for the PutMethod API call. */
@@ -3541,27 +4241,50 @@ export class ApiGatewayOperations {
 	/** IAM actions required for the PutMethodResponse API call. */
 	static readonly PUT_METHOD_RESPONSE: string[] = ["apigateway:PUT"];
 	/** IAM actions required for the PutPortalProductSharingPolicy API call. */
-	static readonly PUT_PORTAL_PRODUCT_SHARING_POLICY: string[] = ["apigateway:PutPortalProductSharingPolicy"];
+	static readonly PUT_PORTAL_PRODUCT_SHARING_POLICY: string[] = [
+		"apigateway:PutPortalProductSharingPolicy",
+	];
 	/** IAM actions required for the PutRestApi API call. */
-	static readonly PUT_REST_API: string[] = ["apigateway:PUT", "iam:PassRole", "apigateway:UpdateRestApiPolicy"];
+	static readonly PUT_REST_API: string[] = [
+		"apigateway:PUT",
+		"iam:PassRole",
+		"apigateway:UpdateRestApiPolicy",
+	];
 	/** IAM actions required for the PutRoutingRule API call. */
 	static readonly PUT_ROUTING_RULE: string[] = ["apigateway:UpdateRoutingRule"];
 	/** IAM actions required for the ReimportApi API call. */
-	static readonly REIMPORT_API: string[] = ["apigateway:DELETE", "apigateway:POST", "apigateway:PUT", "iam:PassRole"];
+	static readonly REIMPORT_API: string[] = [
+		"apigateway:DELETE",
+		"apigateway:POST",
+		"apigateway:PUT",
+		"iam:PassRole",
+	];
 	/** IAM actions required for the RejectDomainNameAccessAssociation API call. */
-	static readonly REJECT_DOMAIN_NAME_ACCESS_ASSOCIATION: string[] = ["apigateway:RejectAccessAssociation"];
+	static readonly REJECT_DOMAIN_NAME_ACCESS_ASSOCIATION: string[] = [
+		"apigateway:RejectAccessAssociation",
+	];
 	/** IAM actions required for the ResetAuthorizersCache API call. */
 	static readonly RESET_AUTHORIZERS_CACHE: string[] = ["apigateway:DELETE"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["apigateway:PATCH", "apigateway:POST", "apigateway:PUT"];
+	static readonly TAG_RESOURCE: string[] = [
+		"apigateway:PATCH",
+		"apigateway:POST",
+		"apigateway:PUT",
+	];
 	/** IAM actions required for the TestInvokeAuthorizer API call. */
 	static readonly TEST_INVOKE_AUTHORIZER: string[] = ["apigateway:POST"];
 	/** IAM actions required for the TestInvokeMethod API call. */
 	static readonly TEST_INVOKE_METHOD: string[] = ["apigateway:POST"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["apigateway:DELETE", "apigateway:PATCH"];
+	static readonly UNTAG_RESOURCE: string[] = [
+		"apigateway:DELETE",
+		"apigateway:PATCH",
+	];
 	/** IAM actions required for the UpdateAccount API call. */
-	static readonly UPDATE_ACCOUNT: string[] = ["apigateway:PATCH", "iam:PassRole"];
+	static readonly UPDATE_ACCOUNT: string[] = [
+		"apigateway:PATCH",
+		"iam:PassRole",
+	];
 	/** IAM actions required for the UpdateApi API call. */
 	static readonly UPDATE_API: string[] = ["apigateway:PATCH", "iam:PassRole"];
 	/** IAM actions required for the UpdateApiKey API call. */
@@ -3569,7 +4292,10 @@ export class ApiGatewayOperations {
 	/** IAM actions required for the UpdateApiMapping API call. */
 	static readonly UPDATE_API_MAPPING: string[] = ["apigateway:PATCH"];
 	/** IAM actions required for the UpdateAuthorizer API call. */
-	static readonly UPDATE_AUTHORIZER: string[] = ["apigateway:PATCH", "iam:PassRole"];
+	static readonly UPDATE_AUTHORIZER: string[] = [
+		"apigateway:PATCH",
+		"iam:PassRole",
+	];
 	/** IAM actions required for the UpdateBasePathMapping API call. */
 	static readonly UPDATE_BASE_PATH_MAPPING: string[] = ["apigateway:PATCH"];
 	/** IAM actions required for the UpdateClientCertificate API call. */
@@ -3581,11 +4307,20 @@ export class ApiGatewayOperations {
 	/** IAM actions required for the UpdateDocumentationVersion API call. */
 	static readonly UPDATE_DOCUMENTATION_VERSION: string[] = ["apigateway:PATCH"];
 	/** IAM actions required for the UpdateDomainName API call. */
-	static readonly UPDATE_DOMAIN_NAME: string[] = ["apigateway:AddCertificateToDomain", "apigateway:PATCH", "apigateway:RemoveCertificateFromDomain", "apigateway:UpdateDomainNameManagementPolicy", "apigateway:UpdateDomainNamePolicy"];
+	static readonly UPDATE_DOMAIN_NAME: string[] = [
+		"apigateway:AddCertificateToDomain",
+		"apigateway:PATCH",
+		"apigateway:RemoveCertificateFromDomain",
+		"apigateway:UpdateDomainNameManagementPolicy",
+		"apigateway:UpdateDomainNamePolicy",
+	];
 	/** IAM actions required for the UpdateGatewayResponse API call. */
 	static readonly UPDATE_GATEWAY_RESPONSE: string[] = ["apigateway:PATCH"];
 	/** IAM actions required for the UpdateIntegration API call. */
-	static readonly UPDATE_INTEGRATION: string[] = ["apigateway:PATCH", "iam:PassRole"];
+	static readonly UPDATE_INTEGRATION: string[] = [
+		"apigateway:PATCH",
+		"iam:PassRole",
+	];
 	/** IAM actions required for the UpdateIntegrationResponse API call. */
 	static readonly UPDATE_INTEGRATION_RESPONSE: string[] = ["apigateway:PATCH"];
 	/** IAM actions required for the UpdateMethod API call. */
@@ -3595,19 +4330,31 @@ export class ApiGatewayOperations {
 	/** IAM actions required for the UpdateModel API call. */
 	static readonly UPDATE_MODEL: string[] = ["apigateway:PATCH"];
 	/** IAM actions required for the UpdatePortal API call. */
-	static readonly UPDATE_PORTAL: string[] = ["apigateway:GetPortalProduct", "apigateway:UpdatePortal"];
+	static readonly UPDATE_PORTAL: string[] = [
+		"apigateway:GetPortalProduct",
+		"apigateway:UpdatePortal",
+	];
 	/** IAM actions required for the UpdatePortalProduct API call. */
-	static readonly UPDATE_PORTAL_PRODUCT: string[] = ["apigateway:UpdatePortalProduct"];
+	static readonly UPDATE_PORTAL_PRODUCT: string[] = [
+		"apigateway:UpdatePortalProduct",
+	];
 	/** IAM actions required for the UpdateProductPage API call. */
-	static readonly UPDATE_PRODUCT_PAGE: string[] = ["apigateway:UpdateProductPage"];
+	static readonly UPDATE_PRODUCT_PAGE: string[] = [
+		"apigateway:UpdateProductPage",
+	];
 	/** IAM actions required for the UpdateProductRestEndpointPage API call. */
-	static readonly UPDATE_PRODUCT_REST_ENDPOINT_PAGE: string[] = ["apigateway:UpdateProductRestEndpointPage"];
+	static readonly UPDATE_PRODUCT_REST_ENDPOINT_PAGE: string[] = [
+		"apigateway:UpdateProductRestEndpointPage",
+	];
 	/** IAM actions required for the UpdateRequestValidator API call. */
 	static readonly UPDATE_REQUEST_VALIDATOR: string[] = ["apigateway:PATCH"];
 	/** IAM actions required for the UpdateResource API call. */
 	static readonly UPDATE_RESOURCE: string[] = ["apigateway:PATCH"];
 	/** IAM actions required for the UpdateRestApi API call. */
-	static readonly UPDATE_REST_API: string[] = ["apigateway:PATCH", "apigateway:UpdateRestApiPolicy"];
+	static readonly UPDATE_REST_API: string[] = [
+		"apigateway:PATCH",
+		"apigateway:UpdateRestApiPolicy",
+	];
 	/** IAM actions required for the UpdateRoute API call. */
 	static readonly UPDATE_ROUTE: string[] = ["apigateway:PATCH"];
 	/** IAM actions required for the UpdateRouteResponse API call. */
@@ -3627,144 +4374,237 @@ export class ApiGatewayOperations {
  */
 export class ApiGatewayConditions {
 	/** Condition keys applicable to the CreatePortal action. */
-	static readonly CREATE_PORTAL_CONDITION_KEYS: string[] = ["apigateway:Request/CognitoUserPoolArn", "apigateway:Request/PortalDisplayName", "apigateway:Request/PortalDomainName", "aws:RequestTag/${TagKey}", "aws:TagKeys"];
+	static readonly CREATE_PORTAL_CONDITION_KEYS: string[] = [
+		"apigateway:Request/CognitoUserPoolArn",
+		"apigateway:Request/PortalDisplayName",
+		"apigateway:Request/PortalDomainName",
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the CreatePortalProduct action. */
-	static readonly CREATE_PORTAL_PRODUCT_CONDITION_KEYS: string[] = ["apigateway:Request/PortalProductDisplayName", "aws:RequestTag/${TagKey}", "aws:TagKeys"];
+	static readonly CREATE_PORTAL_PRODUCT_CONDITION_KEYS: string[] = [
+		"apigateway:Request/PortalProductDisplayName",
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the CreateProductPage action. */
-	static readonly CREATE_PRODUCT_PAGE_CONDITION_KEYS: string[] = ["apigateway:Request/ProductPageTitle"];
+	static readonly CREATE_PRODUCT_PAGE_CONDITION_KEYS: string[] = [
+		"apigateway:Request/ProductPageTitle",
+	];
 	/** Condition keys applicable to the CreateProductRestEndpointPage action. */
-	static readonly CREATE_PRODUCT_REST_ENDPOINT_PAGE_CONDITION_KEYS: string[] = ["apigateway:Request/Method", "apigateway:Request/ProductRestEndpointPageEndpointPrefix", "apigateway:Request/RestApiId", "apigateway:Request/Stage"];
+	static readonly CREATE_PRODUCT_REST_ENDPOINT_PAGE_CONDITION_KEYS: string[] = [
+		"apigateway:Request/Method",
+		"apigateway:Request/ProductRestEndpointPageEndpointPrefix",
+		"apigateway:Request/RestApiId",
+		"apigateway:Request/Stage",
+	];
 	/** Condition keys applicable to the CreateRoutingRule action. */
-	static readonly CREATE_ROUTING_RULE_CONDITION_KEYS: string[] = ["apigateway:Request/ConditionBasePaths", "apigateway:Request/Priority", "aws:ResourceTag/${TagKey}"];
+	static readonly CREATE_ROUTING_RULE_CONDITION_KEYS: string[] = [
+		"apigateway:Request/ConditionBasePaths",
+		"apigateway:Request/Priority",
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the DELETE action. */
-	static readonly DELETE_CONDITION_KEYS: string[] = ["aws:RequestTag/${TagKey}", "aws:TagKeys"];
+	static readonly DELETE_CONDITION_KEYS: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the DeleteRoutingRule action. */
-	static readonly DELETE_ROUTING_RULE_CONDITION_KEYS: string[] = ["apigateway:Resource/ConditionBasePaths", "apigateway:Resource/Priority", "aws:ResourceTag/${TagKey}"];
+	static readonly DELETE_ROUTING_RULE_CONDITION_KEYS: string[] = [
+		"apigateway:Resource/ConditionBasePaths",
+		"apigateway:Resource/Priority",
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the GetRoutingRule action. */
-	static readonly GET_ROUTING_RULE_CONDITION_KEYS: string[] = ["aws:ResourceTag/${TagKey}"];
+	static readonly GET_ROUTING_RULE_CONDITION_KEYS: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the ListRoutingRules action. */
-	static readonly LIST_ROUTING_RULES_CONDITION_KEYS: string[] = ["aws:ResourceTag/${TagKey}"];
+	static readonly LIST_ROUTING_RULES_CONDITION_KEYS: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the PATCH action. */
-	static readonly PATCH_CONDITION_KEYS: string[] = ["aws:RequestTag/${TagKey}", "aws:TagKeys"];
+	static readonly PATCH_CONDITION_KEYS: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the POST action. */
-	static readonly POST_CONDITION_KEYS: string[] = ["aws:RequestTag/${TagKey}", "aws:TagKeys"];
+	static readonly POST_CONDITION_KEYS: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the PUT action. */
-	static readonly PUT_CONDITION_KEYS: string[] = ["aws:RequestTag/${TagKey}", "aws:TagKeys"];
+	static readonly PUT_CONDITION_KEYS: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the UpdatePortal action. */
-	static readonly UPDATE_PORTAL_CONDITION_KEYS: string[] = ["apigateway:Request/CognitoUserPoolArn", "apigateway:Request/PortalDisplayName", "apigateway:Request/PortalDomainName", "aws:RequestTag/${TagKey}", "aws:TagKeys"];
+	static readonly UPDATE_PORTAL_CONDITION_KEYS: string[] = [
+		"apigateway:Request/CognitoUserPoolArn",
+		"apigateway:Request/PortalDisplayName",
+		"apigateway:Request/PortalDomainName",
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the UpdatePortalProduct action. */
-	static readonly UPDATE_PORTAL_PRODUCT_CONDITION_KEYS: string[] = ["apigateway:Request/PortalProductDisplayName", "aws:RequestTag/${TagKey}", "aws:TagKeys"];
+	static readonly UPDATE_PORTAL_PRODUCT_CONDITION_KEYS: string[] = [
+		"apigateway:Request/PortalProductDisplayName",
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the UpdateProductPage action. */
-	static readonly UPDATE_PRODUCT_PAGE_CONDITION_KEYS: string[] = ["apigateway:Request/ProductPageTitle"];
+	static readonly UPDATE_PRODUCT_PAGE_CONDITION_KEYS: string[] = [
+		"apigateway:Request/ProductPageTitle",
+	];
 	/** Condition keys applicable to the UpdateProductRestEndpointPage action. */
-	static readonly UPDATE_PRODUCT_REST_ENDPOINT_PAGE_CONDITION_KEYS: string[] = ["apigateway:Request/ProductRestEndpointPageEndpointPrefix"];
+	static readonly UPDATE_PRODUCT_REST_ENDPOINT_PAGE_CONDITION_KEYS: string[] = [
+		"apigateway:Request/ProductRestEndpointPageEndpointPrefix",
+	];
 	/** Condition keys applicable to the UpdateRoutingRule action. */
-	static readonly UPDATE_ROUTING_RULE_CONDITION_KEYS: string[] = ["apigateway:Request/ConditionBasePaths", "apigateway:Request/Priority", "apigateway:Resource/ConditionBasePaths", "apigateway:Resource/Priority", "aws:ResourceTag/${TagKey}"];
+	static readonly UPDATE_ROUTING_RULE_CONDITION_KEYS: string[] = [
+		"apigateway:Request/ConditionBasePaths",
+		"apigateway:Request/Priority",
+		"apigateway:Resource/ConditionBasePaths",
+		"apigateway:Resource/Priority",
+		"aws:ResourceTag/${TagKey}",
+	];
 
 	/** Condition key: apigateway:Request/AccessAssociationSource (String) */
-	static readonly REQUEST/ACCESS_ASSOCIATION_SOURCE = "apigateway:Request/AccessAssociationSource";
+	static readonly REQUEST_ACCESS_ASSOCIATION_SOURCE =
+		"apigateway:Request/AccessAssociationSource";
 	/** Condition key: apigateway:Request/AccessLoggingDestination (String) */
-	static readonly REQUEST/ACCESS_LOGGING_DESTINATION = "apigateway:Request/AccessLoggingDestination";
+	static readonly REQUEST_ACCESS_LOGGING_DESTINATION =
+		"apigateway:Request/AccessLoggingDestination";
 	/** Condition key: apigateway:Request/AccessLoggingFormat (String) */
-	static readonly REQUEST/ACCESS_LOGGING_FORMAT = "apigateway:Request/AccessLoggingFormat";
+	static readonly REQUEST_ACCESS_LOGGING_FORMAT =
+		"apigateway:Request/AccessLoggingFormat";
 	/** Condition key: apigateway:Request/ApiKeyRequired (ArrayOfBool) */
-	static readonly REQUEST/API_KEY_REQUIRED = "apigateway:Request/ApiKeyRequired";
+	static readonly REQUEST_API_KEY_REQUIRED =
+		"apigateway:Request/ApiKeyRequired";
 	/** Condition key: apigateway:Request/ApiName (String) */
-	static readonly REQUEST/API_NAME = "apigateway:Request/ApiName";
+	static readonly REQUEST_API_NAME = "apigateway:Request/ApiName";
 	/** Condition key: apigateway:Request/AuthorizerType (ArrayOfString) */
-	static readonly REQUEST/AUTHORIZER_TYPE = "apigateway:Request/AuthorizerType";
+	static readonly REQUEST_AUTHORIZER_TYPE = "apigateway:Request/AuthorizerType";
 	/** Condition key: apigateway:Request/AuthorizerUri (ArrayOfString) */
-	static readonly REQUEST/AUTHORIZER_URI = "apigateway:Request/AuthorizerUri";
+	static readonly REQUEST_AUTHORIZER_URI = "apigateway:Request/AuthorizerUri";
 	/** Condition key: apigateway:Request/CognitoUserPoolArn (ARN) */
-	static readonly REQUEST/COGNITO_USER_POOL_ARN = "apigateway:Request/CognitoUserPoolArn";
+	static readonly REQUEST_COGNITO_USER_POOL_ARN =
+		"apigateway:Request/CognitoUserPoolArn";
 	/** Condition key: apigateway:Request/ConditionBasePaths (ArrayOfString) */
-	static readonly REQUEST/CONDITION_BASE_PATHS = "apigateway:Request/ConditionBasePaths";
+	static readonly REQUEST_CONDITION_BASE_PATHS =
+		"apigateway:Request/ConditionBasePaths";
 	/** Condition key: apigateway:Request/DisableExecuteApiEndpoint (Bool) */
-	static readonly REQUEST/DISABLE_EXECUTE_API_ENDPOINT = "apigateway:Request/DisableExecuteApiEndpoint";
+	static readonly REQUEST_DISABLE_EXECUTE_API_ENDPOINT =
+		"apigateway:Request/DisableExecuteApiEndpoint";
 	/** Condition key: apigateway:Request/DomainNameArn (ARN) */
-	static readonly REQUEST/DOMAIN_NAME_ARN = "apigateway:Request/DomainNameArn";
+	static readonly REQUEST_DOMAIN_NAME_ARN = "apigateway:Request/DomainNameArn";
 	/** Condition key: apigateway:Request/EndpointType (ArrayOfString) */
-	static readonly REQUEST/ENDPOINT_TYPE = "apigateway:Request/EndpointType";
+	static readonly REQUEST_ENDPOINT_TYPE = "apigateway:Request/EndpointType";
 	/** Condition key: apigateway:Request/Method (String) */
-	static readonly REQUEST/METHOD = "apigateway:Request/Method";
+	static readonly REQUEST_METHOD = "apigateway:Request/Method";
 	/** Condition key: apigateway:Request/MtlsTrustStoreUri (String) */
-	static readonly REQUEST/MTLS_TRUST_STORE_URI = "apigateway:Request/MtlsTrustStoreUri";
+	static readonly REQUEST_MTLS_TRUST_STORE_URI =
+		"apigateway:Request/MtlsTrustStoreUri";
 	/** Condition key: apigateway:Request/MtlsTrustStoreVersion (String) */
-	static readonly REQUEST/MTLS_TRUST_STORE_VERSION = "apigateway:Request/MtlsTrustStoreVersion";
+	static readonly REQUEST_MTLS_TRUST_STORE_VERSION =
+		"apigateway:Request/MtlsTrustStoreVersion";
 	/** Condition key: apigateway:Request/PortalDisplayName (String) */
-	static readonly REQUEST/PORTAL_DISPLAY_NAME = "apigateway:Request/PortalDisplayName";
+	static readonly REQUEST_PORTAL_DISPLAY_NAME =
+		"apigateway:Request/PortalDisplayName";
 	/** Condition key: apigateway:Request/PortalDomainName (String) */
-	static readonly REQUEST/PORTAL_DOMAIN_NAME = "apigateway:Request/PortalDomainName";
+	static readonly REQUEST_PORTAL_DOMAIN_NAME =
+		"apigateway:Request/PortalDomainName";
 	/** Condition key: apigateway:Request/PortalProductDisplayName (String) */
-	static readonly REQUEST/PORTAL_PRODUCT_DISPLAY_NAME = "apigateway:Request/PortalProductDisplayName";
+	static readonly REQUEST_PORTAL_PRODUCT_DISPLAY_NAME =
+		"apigateway:Request/PortalProductDisplayName";
 	/** Condition key: apigateway:Request/Priority (Numeric) */
-	static readonly REQUEST/PRIORITY = "apigateway:Request/Priority";
+	static readonly REQUEST_PRIORITY = "apigateway:Request/Priority";
 	/** Condition key: apigateway:Request/ProductPageTitle (String) */
-	static readonly REQUEST/PRODUCT_PAGE_TITLE = "apigateway:Request/ProductPageTitle";
+	static readonly REQUEST_PRODUCT_PAGE_TITLE =
+		"apigateway:Request/ProductPageTitle";
 	/** Condition key: apigateway:Request/ProductRestEndpointPageEndpointPrefix (String) */
-	static readonly REQUEST/PRODUCT_REST_ENDPOINT_PAGE_ENDPOINT_PREFIX = "apigateway:Request/ProductRestEndpointPageEndpointPrefix";
+	static readonly REQUEST_PRODUCT_REST_ENDPOINT_PAGE_ENDPOINT_PREFIX =
+		"apigateway:Request/ProductRestEndpointPageEndpointPrefix";
 	/** Condition key: apigateway:Request/RestApiId (String) */
-	static readonly REQUEST/REST_API_ID = "apigateway:Request/RestApiId";
+	static readonly REQUEST_REST_API_ID = "apigateway:Request/RestApiId";
 	/** Condition key: apigateway:Request/RouteAuthorizationType (ArrayOfString) */
-	static readonly REQUEST/ROUTE_AUTHORIZATION_TYPE = "apigateway:Request/RouteAuthorizationType";
+	static readonly REQUEST_ROUTE_AUTHORIZATION_TYPE =
+		"apigateway:Request/RouteAuthorizationType";
 	/** Condition key: apigateway:Request/RoutingMode (String) */
-	static readonly REQUEST/ROUTING_MODE = "apigateway:Request/RoutingMode";
+	static readonly REQUEST_ROUTING_MODE = "apigateway:Request/RoutingMode";
 	/** Condition key: apigateway:Request/SecurityPolicy (ArrayOfString) */
-	static readonly REQUEST/SECURITY_POLICY = "apigateway:Request/SecurityPolicy";
+	static readonly REQUEST_SECURITY_POLICY = "apigateway:Request/SecurityPolicy";
 	/** Condition key: apigateway:Request/Stage (String) */
-	static readonly REQUEST/STAGE = "apigateway:Request/Stage";
+	static readonly REQUEST_STAGE = "apigateway:Request/Stage";
 	/** Condition key: apigateway:Request/StageName (String) */
-	static readonly REQUEST/STAGE_NAME = "apigateway:Request/StageName";
+	static readonly REQUEST_STAGE_NAME = "apigateway:Request/StageName";
 	/** Condition key: apigateway:Resource/AccessLoggingDestination (String) */
-	static readonly RESOURCE/ACCESS_LOGGING_DESTINATION = "apigateway:Resource/AccessLoggingDestination";
+	static readonly RESOURCE_ACCESS_LOGGING_DESTINATION =
+		"apigateway:Resource/AccessLoggingDestination";
 	/** Condition key: apigateway:Resource/AccessLoggingFormat (String) */
-	static readonly RESOURCE/ACCESS_LOGGING_FORMAT = "apigateway:Resource/AccessLoggingFormat";
+	static readonly RESOURCE_ACCESS_LOGGING_FORMAT =
+		"apigateway:Resource/AccessLoggingFormat";
 	/** Condition key: apigateway:Resource/ApiKeyRequired (ArrayOfBool) */
-	static readonly RESOURCE/API_KEY_REQUIRED = "apigateway:Resource/ApiKeyRequired";
+	static readonly RESOURCE_API_KEY_REQUIRED =
+		"apigateway:Resource/ApiKeyRequired";
 	/** Condition key: apigateway:Resource/ApiName (String) */
-	static readonly RESOURCE/API_NAME = "apigateway:Resource/ApiName";
+	static readonly RESOURCE_API_NAME = "apigateway:Resource/ApiName";
 	/** Condition key: apigateway:Resource/AuthorizerType (ArrayOfString) */
-	static readonly RESOURCE/AUTHORIZER_TYPE = "apigateway:Resource/AuthorizerType";
+	static readonly RESOURCE_AUTHORIZER_TYPE =
+		"apigateway:Resource/AuthorizerType";
 	/** Condition key: apigateway:Resource/AuthorizerUri (ArrayOfString) */
-	static readonly RESOURCE/AUTHORIZER_URI = "apigateway:Resource/AuthorizerUri";
+	static readonly RESOURCE_AUTHORIZER_URI = "apigateway:Resource/AuthorizerUri";
 	/** Condition key: apigateway:Resource/CognitoUserPoolArn (ARN) */
-	static readonly RESOURCE/COGNITO_USER_POOL_ARN = "apigateway:Resource/CognitoUserPoolArn";
+	static readonly RESOURCE_COGNITO_USER_POOL_ARN =
+		"apigateway:Resource/CognitoUserPoolArn";
 	/** Condition key: apigateway:Resource/ConditionBasePaths (ArrayOfString) */
-	static readonly RESOURCE/CONDITION_BASE_PATHS = "apigateway:Resource/ConditionBasePaths";
+	static readonly RESOURCE_CONDITION_BASE_PATHS =
+		"apigateway:Resource/ConditionBasePaths";
 	/** Condition key: apigateway:Resource/DisableExecuteApiEndpoint (Bool) */
-	static readonly RESOURCE/DISABLE_EXECUTE_API_ENDPOINT = "apigateway:Resource/DisableExecuteApiEndpoint";
+	static readonly RESOURCE_DISABLE_EXECUTE_API_ENDPOINT =
+		"apigateway:Resource/DisableExecuteApiEndpoint";
 	/** Condition key: apigateway:Resource/EndpointType (ArrayOfString) */
-	static readonly RESOURCE/ENDPOINT_TYPE = "apigateway:Resource/EndpointType";
+	static readonly RESOURCE_ENDPOINT_TYPE = "apigateway:Resource/EndpointType";
 	/** Condition key: apigateway:Resource/Method (String) */
-	static readonly RESOURCE/METHOD = "apigateway:Resource/Method";
+	static readonly RESOURCE_METHOD = "apigateway:Resource/Method";
 	/** Condition key: apigateway:Resource/MtlsTrustStoreUri (String) */
-	static readonly RESOURCE/MTLS_TRUST_STORE_URI = "apigateway:Resource/MtlsTrustStoreUri";
+	static readonly RESOURCE_MTLS_TRUST_STORE_URI =
+		"apigateway:Resource/MtlsTrustStoreUri";
 	/** Condition key: apigateway:Resource/MtlsTrustStoreVersion (String) */
-	static readonly RESOURCE/MTLS_TRUST_STORE_VERSION = "apigateway:Resource/MtlsTrustStoreVersion";
+	static readonly RESOURCE_MTLS_TRUST_STORE_VERSION =
+		"apigateway:Resource/MtlsTrustStoreVersion";
 	/** Condition key: apigateway:Resource/PortalDisplayName (String) */
-	static readonly RESOURCE/PORTAL_DISPLAY_NAME = "apigateway:Resource/PortalDisplayName";
+	static readonly RESOURCE_PORTAL_DISPLAY_NAME =
+		"apigateway:Resource/PortalDisplayName";
 	/** Condition key: apigateway:Resource/PortalDomainName (String) */
-	static readonly RESOURCE/PORTAL_DOMAIN_NAME = "apigateway:Resource/PortalDomainName";
+	static readonly RESOURCE_PORTAL_DOMAIN_NAME =
+		"apigateway:Resource/PortalDomainName";
 	/** Condition key: apigateway:Resource/PortalProductDisplayName (String) */
-	static readonly RESOURCE/PORTAL_PRODUCT_DISPLAY_NAME = "apigateway:Resource/PortalProductDisplayName";
+	static readonly RESOURCE_PORTAL_PRODUCT_DISPLAY_NAME =
+		"apigateway:Resource/PortalProductDisplayName";
 	/** Condition key: apigateway:Resource/PortalPublishStatus (String) */
-	static readonly RESOURCE/PORTAL_PUBLISH_STATUS = "apigateway:Resource/PortalPublishStatus";
+	static readonly RESOURCE_PORTAL_PUBLISH_STATUS =
+		"apigateway:Resource/PortalPublishStatus";
 	/** Condition key: apigateway:Resource/Priority (Numeric) */
-	static readonly RESOURCE/PRIORITY = "apigateway:Resource/Priority";
+	static readonly RESOURCE_PRIORITY = "apigateway:Resource/Priority";
 	/** Condition key: apigateway:Resource/ProductPageTitle (String) */
-	static readonly RESOURCE/PRODUCT_PAGE_TITLE = "apigateway:Resource/ProductPageTitle";
+	static readonly RESOURCE_PRODUCT_PAGE_TITLE =
+		"apigateway:Resource/ProductPageTitle";
 	/** Condition key: apigateway:Resource/ProductRestEndpointPageEndpointPrefix (String) */
-	static readonly RESOURCE/PRODUCT_REST_ENDPOINT_PAGE_ENDPOINT_PREFIX = "apigateway:Resource/ProductRestEndpointPageEndpointPrefix";
+	static readonly RESOURCE_PRODUCT_REST_ENDPOINT_PAGE_ENDPOINT_PREFIX =
+		"apigateway:Resource/ProductRestEndpointPageEndpointPrefix";
 	/** Condition key: apigateway:Resource/RestApiId (String) */
-	static readonly RESOURCE/REST_API_ID = "apigateway:Resource/RestApiId";
+	static readonly RESOURCE_REST_API_ID = "apigateway:Resource/RestApiId";
 	/** Condition key: apigateway:Resource/RouteAuthorizationType (ArrayOfString) */
-	static readonly RESOURCE/ROUTE_AUTHORIZATION_TYPE = "apigateway:Resource/RouteAuthorizationType";
+	static readonly RESOURCE_ROUTE_AUTHORIZATION_TYPE =
+		"apigateway:Resource/RouteAuthorizationType";
 	/** Condition key: apigateway:Resource/RoutingMode (String) */
-	static readonly RESOURCE/ROUTING_MODE = "apigateway:Resource/RoutingMode";
+	static readonly RESOURCE_ROUTING_MODE = "apigateway:Resource/RoutingMode";
 	/** Condition key: apigateway:Resource/SecurityPolicy (ArrayOfString) */
-	static readonly RESOURCE/SECURITY_POLICY = "apigateway:Resource/SecurityPolicy";
+	static readonly RESOURCE_SECURITY_POLICY =
+		"apigateway:Resource/SecurityPolicy";
 	/** Condition key: apigateway:Resource/Stage (String) */
-	static readonly RESOURCE/STAGE = "apigateway:Resource/Stage";
+	static readonly RESOURCE_STAGE = "apigateway:Resource/Stage";
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
 	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
@@ -3775,379 +4615,557 @@ export class ApiGatewayConditions {
 	/**
 	 * Generates a condition block for `apigateway:Request/AccessAssociationSource`.
 	 */
-	static request/accessAssociationSource(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "apigateway:Request/AccessAssociationSource": value } };
+	static requestAccessAssociationSource(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return {
+			StringEquals: { "apigateway:Request/AccessAssociationSource": value },
+		};
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Request/AccessLoggingDestination`.
 	 */
-	static request/accessLoggingDestination(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "apigateway:Request/AccessLoggingDestination": value } };
+	static requestAccessLoggingDestination(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return {
+			StringEquals: { "apigateway:Request/AccessLoggingDestination": value },
+		};
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Request/AccessLoggingFormat`.
 	 */
-	static request/accessLoggingFormat(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "apigateway:Request/AccessLoggingFormat": value } };
+	static requestAccessLoggingFormat(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return {
+			StringEquals: { "apigateway:Request/AccessLoggingFormat": value },
+		};
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Request/ApiKeyRequired`.
 	 */
-	static request/apiKeyRequired(values: boolean[]): Record<string, Record<string, boolean[]>> {
-		return { "ForAllValues:StringEquals": { "apigateway:Request/ApiKeyRequired": values } };
+	static requestAPIKeyRequired(
+		values: boolean[],
+	): Record<string, Record<string, boolean[]>> {
+		return {
+			"ForAllValues:StringEquals": {
+				"apigateway:Request/ApiKeyRequired": values,
+			},
+		};
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Request/ApiName`.
 	 */
-	static request/apiName(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "apigateway:Request/ApiName": value } };
+	static requestAPIName(value: string): Record<string, Record<string, string>> {
+		return { StringEquals: { "apigateway:Request/ApiName": value } };
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Request/AuthorizerType`.
 	 */
-	static request/authorizerType(values: string[]): Record<string, Record<string, string[]>> {
-		return { "ForAllValues:StringEquals": { "apigateway:Request/AuthorizerType": values } };
+	static requestAuthorizerType(
+		values: string[],
+	): Record<string, Record<string, string[]>> {
+		return {
+			"ForAllValues:StringEquals": {
+				"apigateway:Request/AuthorizerType": values,
+			},
+		};
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Request/AuthorizerUri`.
 	 */
-	static request/authorizerURI(values: string[]): Record<string, Record<string, string[]>> {
-		return { "ForAllValues:StringEquals": { "apigateway:Request/AuthorizerUri": values } };
+	static requestAuthorizerURI(
+		values: string[],
+	): Record<string, Record<string, string[]>> {
+		return {
+			"ForAllValues:StringEquals": {
+				"apigateway:Request/AuthorizerUri": values,
+			},
+		};
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Request/CognitoUserPoolArn`.
 	 */
-	static request/cognitoUserPoolARN(value: string): Record<string, Record<string, string>> {
-		return { "ArnEquals": { "apigateway:Request/CognitoUserPoolArn": value } };
+	static requestCognitoUserPoolARN(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { ArnEquals: { "apigateway:Request/CognitoUserPoolArn": value } };
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Request/ConditionBasePaths`.
 	 */
-	static request/conditionBasePaths(values: string[]): Record<string, Record<string, string[]>> {
-		return { "ForAllValues:StringEquals": { "apigateway:Request/ConditionBasePaths": values } };
+	static requestConditionBasePaths(
+		values: string[],
+	): Record<string, Record<string, string[]>> {
+		return {
+			"ForAllValues:StringEquals": {
+				"apigateway:Request/ConditionBasePaths": values,
+			},
+		};
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Request/DisableExecuteApiEndpoint`.
 	 */
-	static request/disableExecuteAPIEndpoint(value: boolean): Record<string, Record<string, boolean>> {
-		return { "Bool": { "apigateway:Request/DisableExecuteApiEndpoint": value } };
+	static requestDisableExecuteAPIEndpoint(
+		value: boolean,
+	): Record<string, Record<string, boolean>> {
+		return { Bool: { "apigateway:Request/DisableExecuteApiEndpoint": value } };
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Request/DomainNameArn`.
 	 */
-	static request/domainNameARN(value: string): Record<string, Record<string, string>> {
-		return { "ArnEquals": { "apigateway:Request/DomainNameArn": value } };
+	static requestDomainNameARN(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { ArnEquals: { "apigateway:Request/DomainNameArn": value } };
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Request/EndpointType`.
 	 */
-	static request/endpointType(values: string[]): Record<string, Record<string, string[]>> {
-		return { "ForAllValues:StringEquals": { "apigateway:Request/EndpointType": values } };
+	static requestEndpointType(
+		values: string[],
+	): Record<string, Record<string, string[]>> {
+		return {
+			"ForAllValues:StringEquals": {
+				"apigateway:Request/EndpointType": values,
+			},
+		};
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Request/Method`.
 	 */
-	static request/method(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "apigateway:Request/Method": value } };
+	static requestMethod(value: string): Record<string, Record<string, string>> {
+		return { StringEquals: { "apigateway:Request/Method": value } };
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Request/MtlsTrustStoreUri`.
 	 */
-	static request/mtlsTrustStoreURI(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "apigateway:Request/MtlsTrustStoreUri": value } };
+	static requestMtlsTrustStoreURI(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "apigateway:Request/MtlsTrustStoreUri": value } };
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Request/MtlsTrustStoreVersion`.
 	 */
-	static request/mtlsTrustStoreVersion(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "apigateway:Request/MtlsTrustStoreVersion": value } };
+	static requestMtlsTrustStoreVersion(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return {
+			StringEquals: { "apigateway:Request/MtlsTrustStoreVersion": value },
+		};
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Request/PortalDisplayName`.
 	 */
-	static request/portalDisplayName(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "apigateway:Request/PortalDisplayName": value } };
+	static requestPortalDisplayName(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "apigateway:Request/PortalDisplayName": value } };
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Request/PortalDomainName`.
 	 */
-	static request/portalDomainName(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "apigateway:Request/PortalDomainName": value } };
+	static requestPortalDomainName(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "apigateway:Request/PortalDomainName": value } };
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Request/PortalProductDisplayName`.
 	 */
-	static request/portalProductDisplayName(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "apigateway:Request/PortalProductDisplayName": value } };
+	static requestPortalProductDisplayName(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return {
+			StringEquals: { "apigateway:Request/PortalProductDisplayName": value },
+		};
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Request/Priority`.
 	 */
-	static request/priority(value: number): Record<string, Record<string, number>> {
-		return { "NumericEquals": { "apigateway:Request/Priority": value } };
+	static requestPriority(
+		value: number,
+	): Record<string, Record<string, number>> {
+		return { NumericEquals: { "apigateway:Request/Priority": value } };
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Request/ProductPageTitle`.
 	 */
-	static request/productPageTitle(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "apigateway:Request/ProductPageTitle": value } };
+	static requestProductPageTitle(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "apigateway:Request/ProductPageTitle": value } };
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Request/ProductRestEndpointPageEndpointPrefix`.
 	 */
-	static request/productRestEndpointPageEndpointPrefix(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "apigateway:Request/ProductRestEndpointPageEndpointPrefix": value } };
+	static requestProductRestEndpointPageEndpointPrefix(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return {
+			StringEquals: {
+				"apigateway:Request/ProductRestEndpointPageEndpointPrefix": value,
+			},
+		};
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Request/RestApiId`.
 	 */
-	static request/restAPIId(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "apigateway:Request/RestApiId": value } };
+	static requestRestAPIId(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "apigateway:Request/RestApiId": value } };
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Request/RouteAuthorizationType`.
 	 */
-	static request/routeAuthorizationType(values: string[]): Record<string, Record<string, string[]>> {
-		return { "ForAllValues:StringEquals": { "apigateway:Request/RouteAuthorizationType": values } };
+	static requestRouteAuthorizationType(
+		values: string[],
+	): Record<string, Record<string, string[]>> {
+		return {
+			"ForAllValues:StringEquals": {
+				"apigateway:Request/RouteAuthorizationType": values,
+			},
+		};
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Request/RoutingMode`.
 	 */
-	static request/routingMode(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "apigateway:Request/RoutingMode": value } };
+	static requestRoutingMode(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "apigateway:Request/RoutingMode": value } };
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Request/SecurityPolicy`.
 	 */
-	static request/securityPolicy(values: string[]): Record<string, Record<string, string[]>> {
-		return { "ForAllValues:StringEquals": { "apigateway:Request/SecurityPolicy": values } };
+	static requestSecurityPolicy(
+		values: string[],
+	): Record<string, Record<string, string[]>> {
+		return {
+			"ForAllValues:StringEquals": {
+				"apigateway:Request/SecurityPolicy": values,
+			},
+		};
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Request/Stage`.
 	 */
-	static request/stage(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "apigateway:Request/Stage": value } };
+	static requestStage(value: string): Record<string, Record<string, string>> {
+		return { StringEquals: { "apigateway:Request/Stage": value } };
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Request/StageName`.
 	 */
-	static request/stageName(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "apigateway:Request/StageName": value } };
+	static requestStageName(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "apigateway:Request/StageName": value } };
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Resource/AccessLoggingDestination`.
 	 */
-	static resource/accessLoggingDestination(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "apigateway:Resource/AccessLoggingDestination": value } };
+	static resourceAccessLoggingDestination(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return {
+			StringEquals: { "apigateway:Resource/AccessLoggingDestination": value },
+		};
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Resource/AccessLoggingFormat`.
 	 */
-	static resource/accessLoggingFormat(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "apigateway:Resource/AccessLoggingFormat": value } };
+	static resourceAccessLoggingFormat(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return {
+			StringEquals: { "apigateway:Resource/AccessLoggingFormat": value },
+		};
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Resource/ApiKeyRequired`.
 	 */
-	static resource/apiKeyRequired(values: boolean[]): Record<string, Record<string, boolean[]>> {
-		return { "ForAllValues:StringEquals": { "apigateway:Resource/ApiKeyRequired": values } };
+	static resourceAPIKeyRequired(
+		values: boolean[],
+	): Record<string, Record<string, boolean[]>> {
+		return {
+			"ForAllValues:StringEquals": {
+				"apigateway:Resource/ApiKeyRequired": values,
+			},
+		};
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Resource/ApiName`.
 	 */
-	static resource/apiName(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "apigateway:Resource/ApiName": value } };
+	static resourceAPIName(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "apigateway:Resource/ApiName": value } };
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Resource/AuthorizerType`.
 	 */
-	static resource/authorizerType(values: string[]): Record<string, Record<string, string[]>> {
-		return { "ForAllValues:StringEquals": { "apigateway:Resource/AuthorizerType": values } };
+	static resourceAuthorizerType(
+		values: string[],
+	): Record<string, Record<string, string[]>> {
+		return {
+			"ForAllValues:StringEquals": {
+				"apigateway:Resource/AuthorizerType": values,
+			},
+		};
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Resource/AuthorizerUri`.
 	 */
-	static resource/authorizerURI(values: string[]): Record<string, Record<string, string[]>> {
-		return { "ForAllValues:StringEquals": { "apigateway:Resource/AuthorizerUri": values } };
+	static resourceAuthorizerURI(
+		values: string[],
+	): Record<string, Record<string, string[]>> {
+		return {
+			"ForAllValues:StringEquals": {
+				"apigateway:Resource/AuthorizerUri": values,
+			},
+		};
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Resource/CognitoUserPoolArn`.
 	 */
-	static resource/cognitoUserPoolARN(value: string): Record<string, Record<string, string>> {
-		return { "ArnEquals": { "apigateway:Resource/CognitoUserPoolArn": value } };
+	static resourceCognitoUserPoolARN(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { ArnEquals: { "apigateway:Resource/CognitoUserPoolArn": value } };
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Resource/ConditionBasePaths`.
 	 */
-	static resource/conditionBasePaths(values: string[]): Record<string, Record<string, string[]>> {
-		return { "ForAllValues:StringEquals": { "apigateway:Resource/ConditionBasePaths": values } };
+	static resourceConditionBasePaths(
+		values: string[],
+	): Record<string, Record<string, string[]>> {
+		return {
+			"ForAllValues:StringEquals": {
+				"apigateway:Resource/ConditionBasePaths": values,
+			},
+		};
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Resource/DisableExecuteApiEndpoint`.
 	 */
-	static resource/disableExecuteAPIEndpoint(value: boolean): Record<string, Record<string, boolean>> {
-		return { "Bool": { "apigateway:Resource/DisableExecuteApiEndpoint": value } };
+	static resourceDisableExecuteAPIEndpoint(
+		value: boolean,
+	): Record<string, Record<string, boolean>> {
+		return { Bool: { "apigateway:Resource/DisableExecuteApiEndpoint": value } };
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Resource/EndpointType`.
 	 */
-	static resource/endpointType(values: string[]): Record<string, Record<string, string[]>> {
-		return { "ForAllValues:StringEquals": { "apigateway:Resource/EndpointType": values } };
+	static resourceEndpointType(
+		values: string[],
+	): Record<string, Record<string, string[]>> {
+		return {
+			"ForAllValues:StringEquals": {
+				"apigateway:Resource/EndpointType": values,
+			},
+		};
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Resource/Method`.
 	 */
-	static resource/method(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "apigateway:Resource/Method": value } };
+	static resourceMethod(value: string): Record<string, Record<string, string>> {
+		return { StringEquals: { "apigateway:Resource/Method": value } };
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Resource/MtlsTrustStoreUri`.
 	 */
-	static resource/mtlsTrustStoreURI(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "apigateway:Resource/MtlsTrustStoreUri": value } };
+	static resourceMtlsTrustStoreURI(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "apigateway:Resource/MtlsTrustStoreUri": value } };
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Resource/MtlsTrustStoreVersion`.
 	 */
-	static resource/mtlsTrustStoreVersion(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "apigateway:Resource/MtlsTrustStoreVersion": value } };
+	static resourceMtlsTrustStoreVersion(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return {
+			StringEquals: { "apigateway:Resource/MtlsTrustStoreVersion": value },
+		};
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Resource/PortalDisplayName`.
 	 */
-	static resource/portalDisplayName(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "apigateway:Resource/PortalDisplayName": value } };
+	static resourcePortalDisplayName(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "apigateway:Resource/PortalDisplayName": value } };
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Resource/PortalDomainName`.
 	 */
-	static resource/portalDomainName(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "apigateway:Resource/PortalDomainName": value } };
+	static resourcePortalDomainName(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "apigateway:Resource/PortalDomainName": value } };
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Resource/PortalProductDisplayName`.
 	 */
-	static resource/portalProductDisplayName(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "apigateway:Resource/PortalProductDisplayName": value } };
+	static resourcePortalProductDisplayName(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return {
+			StringEquals: { "apigateway:Resource/PortalProductDisplayName": value },
+		};
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Resource/PortalPublishStatus`.
 	 */
-	static resource/portalPublishStatus(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "apigateway:Resource/PortalPublishStatus": value } };
+	static resourcePortalPublishStatus(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return {
+			StringEquals: { "apigateway:Resource/PortalPublishStatus": value },
+		};
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Resource/Priority`.
 	 */
-	static resource/priority(value: number): Record<string, Record<string, number>> {
-		return { "NumericEquals": { "apigateway:Resource/Priority": value } };
+	static resourcePriority(
+		value: number,
+	): Record<string, Record<string, number>> {
+		return { NumericEquals: { "apigateway:Resource/Priority": value } };
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Resource/ProductPageTitle`.
 	 */
-	static resource/productPageTitle(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "apigateway:Resource/ProductPageTitle": value } };
+	static resourceProductPageTitle(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "apigateway:Resource/ProductPageTitle": value } };
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Resource/ProductRestEndpointPageEndpointPrefix`.
 	 */
-	static resource/productRestEndpointPageEndpointPrefix(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "apigateway:Resource/ProductRestEndpointPageEndpointPrefix": value } };
+	static resourceProductRestEndpointPageEndpointPrefix(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return {
+			StringEquals: {
+				"apigateway:Resource/ProductRestEndpointPageEndpointPrefix": value,
+			},
+		};
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Resource/RestApiId`.
 	 */
-	static resource/restAPIId(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "apigateway:Resource/RestApiId": value } };
+	static resourceRestAPIId(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "apigateway:Resource/RestApiId": value } };
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Resource/RouteAuthorizationType`.
 	 */
-	static resource/routeAuthorizationType(values: string[]): Record<string, Record<string, string[]>> {
-		return { "ForAllValues:StringEquals": { "apigateway:Resource/RouteAuthorizationType": values } };
+	static resourceRouteAuthorizationType(
+		values: string[],
+	): Record<string, Record<string, string[]>> {
+		return {
+			"ForAllValues:StringEquals": {
+				"apigateway:Resource/RouteAuthorizationType": values,
+			},
+		};
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Resource/RoutingMode`.
 	 */
-	static resource/routingMode(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "apigateway:Resource/RoutingMode": value } };
+	static resourceRoutingMode(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "apigateway:Resource/RoutingMode": value } };
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Resource/SecurityPolicy`.
 	 */
-	static resource/securityPolicy(values: string[]): Record<string, Record<string, string[]>> {
-		return { "ForAllValues:StringEquals": { "apigateway:Resource/SecurityPolicy": values } };
+	static resourceSecurityPolicy(
+		values: string[],
+	): Record<string, Record<string, string[]>> {
+		return {
+			"ForAllValues:StringEquals": {
+				"apigateway:Resource/SecurityPolicy": values,
+			},
+		};
 	}
 
 	/**
 	 * Generates a condition block for `apigateway:Resource/Stage`.
 	 */
-	static resource/stage(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "apigateway:Resource/Stage": value } };
+	static resourceStage(value: string): Record<string, Record<string, string>> {
+		return { StringEquals: { "apigateway:Resource/Stage": value } };
 	}
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.
 	 */
 	static requestTag(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "aws:RequestTag/${TagKey}": value } };
+		return { StringEquals: { "aws:RequestTag/${TagKey}": value } };
 	}
 
 	/**
 	 * Generates a condition block for `aws:ResourceTag/${TagKey}`.
 	 */
 	static resourceTag(value: string): Record<string, Record<string, string>> {
-		return { "StringEquals": { "aws:ResourceTag/${TagKey}": value } };
+		return { StringEquals: { "aws:ResourceTag/${TagKey}": value } };
 	}
 
 	/**
@@ -4156,5 +5174,4 @@ export class ApiGatewayConditions {
 	static tagKeys(values: string[]): Record<string, Record<string, string[]>> {
 		return { "ForAllValues:StringEquals": { "aws:TagKeys": values } };
 	}
-
 }

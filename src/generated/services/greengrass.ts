@@ -465,7 +465,10 @@ const CoreDeviceArnRegex = new RegExp(
 	"^arn:(?<partition>[^:]+):greengrass:(?<region>[^:]*):(?<account>[^:]*):coreDevices:(?<coreDeviceThingName>[^:/?]+)$",
 );
 const DeploymentArnRegex = new RegExp(
-	"^(?:arn:(?<partition>[^:]+):greengrass:(?<region>[^:]*):(?<account>[^:]*):/greengrass/groups/(?<groupId>[^:/?]+)/deployments/(?<deploymentId>[^:/?]+)|arn:(?<partition>[^:]+):greengrass:(?<region>[^:]*):(?<account>[^:]*):deployments:(?<deploymentId>[^:/?]+))$",
+	"^(?:arn:(?:[^:]+):greengrass:(?:[^:]*):(?:[^:]*):/greengrass/groups/(?:[^:/?]+)/deployments/(?:[^:/?]+)|arn:(?:[^:]+):greengrass:(?:[^:]*):(?:[^:]*):deployments:(?:[^:/?]+))$",
+);
+const DeploymentParseRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):greengrass:(?<region>[^:]*):(?<account>[^:]*):/greengrass/groups/(?<groupId>[^:/?]+)/deployments/(?<deploymentId>[^:/?]+)$",
 );
 const DeviceDefinitionArnRegex = new RegExp(
 	"^arn:(?<partition>[^:]+):greengrass:(?<region>[^:]*):(?<account>[^:]*):/greengrass/definition/devices/(?<deviceDefinitionId>[^:/?]+)$",
@@ -1022,7 +1025,7 @@ export class GreengrassResources {
 	}
 
 	/**
-	 * Parses a deployment ARN into its components.
+	 * Parses a deployment ARN into its components (uses first ARN variant format).
 	 * @throws Error if the ARN does not match the expected format.
 	 */
 	static parseDeploymentArn(arn: string): {
@@ -1032,7 +1035,7 @@ export class GreengrassResources {
 		groupId: string;
 		deploymentId: string;
 	} {
-		const match = DeploymentArnRegex.exec(arn);
+		const match = DeploymentParseRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid deployment ARN: ${arn}`);
 		}

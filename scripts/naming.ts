@@ -56,7 +56,7 @@ export function splitWords(input: string): string[] {
 		.replace(/([a-z])([A-Z])/g, "$1 $2") // camelCase boundary
 		.replace(/([A-Z]+)([A-Z][a-z])/g, "$1 $2") // ACRONYMWord boundary
 		.replace(/(\d)([A-Z])/g, "$1 $2") // digit→Uppercase boundary (e.g., S3Bucket)
-		.replace(/[-_.]+/g, " ") // separators
+		.replace(/[-_.\/]+/g, " ") // separators
 		.trim()
 		.split(/\s+/)
 		.filter((w) => w.length > 0);
