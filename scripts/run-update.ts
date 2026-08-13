@@ -114,33 +114,35 @@ export async function updateServiceReference(options?: {
 }
 
 // CLI entry point
-async function main() {
-	console.log("🔄 Updating AWS Service Authorization Reference...\n");
+if (require.main === module) {
+	async function main() {
+		console.log("🔄 Updating AWS Service Authorization Reference...\n");
 
-	const result = await updateServiceReference();
+		const result = await updateServiceReference();
 
-	if (result.skipped) {
-		console.log("✅ No updates available. All service references are up to date.");
-		return;
-	}
-
-	console.log(`✅ Updated ${result.updatedCount} service(s):`);
-	for (const name of result.updatedServices) {
-		console.log(`   • ${name}`);
-	}
-
-	if (result.failedCount > 0) {
-		console.log(`\n⚠️  ${result.failedCount} service(s) failed:`);
-		for (const f of result.failures) {
-			console.log(`   ✗ ${f.service}: ${f.error}`);
+		if (result.skipped) {
+			console.log("✅ No updates available. All service references are up to date.");
+			return;
 		}
+
+		console.log(`✅ Updated ${result.updatedCount} service(s):`);
+		for (const name of result.updatedServices) {
+			console.log(`   • ${name}`);
+		}
+
+		if (result.failedCount > 0) {
+			console.log(`\n⚠️  ${result.failedCount} service(s) failed:`);
+			for (const f of result.failures) {
+				console.log(`   ✗ ${f.service}: ${f.error}`);
+			}
+		}
+
+		console.log(`\n📝 Sync timestamp updated to: ${result.syncTimestamp}`);
+		console.log("📦 Barrel index regenerated");
 	}
 
-	console.log(`\n📝 Sync timestamp updated to: ${result.syncTimestamp}`);
-	console.log("📦 Barrel index regenerated");
+	main().catch((err) => {
+		console.error("❌ Update failed:", err.message);
+		process.exit(1);
+	});
 }
-
-main().catch((err) => {
-	console.error("❌ Update failed:", err.message);
-	process.exit(1);
-});
