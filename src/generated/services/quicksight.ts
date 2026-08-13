@@ -2994,6 +2994,10 @@ export class QuickSightOperations {
 	static readonly BATCH_DELETE_TOPIC_REVIEWED_ANSWER: string[] = [
 		"quicksight:BatchDeleteTopicReviewedAnswer",
 	];
+	/** IAM actions required for the BatchDescribeUserLimits API call. */
+	static readonly BATCH_DESCRIBE_USER_LIMITS: string[] = [
+		"quicksight:BatchDescribeUserLimits",
+	];
 	/** IAM actions required for the CancelIngestion API call. */
 	static readonly CANCEL_INGESTION: string[] = ["quicksight:CancelIngestion"];
 	/** IAM actions required for the CreateAccountCustomization API call. */
@@ -3027,6 +3031,10 @@ export class QuickSightOperations {
 		"quicksight:PassDataSet",
 		"quicksight:TagResource",
 	];
+	/** IAM actions required for the CreateApprovalPolicy API call. */
+	static readonly CREATE_APPROVAL_POLICY: string[] = [
+		"quicksight:CreateApprovalPolicy",
+	];
 	/** IAM actions required for the CreateBrand API call. */
 	static readonly CREATE_BRAND: string[] = [
 		"quicksight:CreateBrand",
@@ -3059,6 +3067,11 @@ export class QuickSightOperations {
 		"quicksight:CreateDataSource",
 		"quicksight:CreateFolderMembership",
 		"iam:PassRole",
+		"quicksight:TagResource",
+	];
+	/** IAM actions required for the CreateDlpSetting API call. */
+	static readonly CREATE_DLP_SETTING: string[] = [
+		"quicksight:CreateDlpSetting",
 		"quicksight:TagResource",
 	];
 	/** IAM actions required for the CreateFlow API call. */
@@ -3097,6 +3110,10 @@ export class QuickSightOperations {
 		"quicksight:CreateKnowledgeBase",
 		"quicksight:PassDataSource",
 		"quicksight:TagResource",
+	];
+	/** IAM actions required for the CreateLimitsProfile API call. */
+	static readonly CREATE_LIMITS_PROFILE: string[] = [
+		"quicksight:CreateLimitsProfile",
 	];
 	/** IAM actions required for the CreateNamespace API call. */
 	static readonly CREATE_NAMESPACE: string[] = [
@@ -3185,6 +3202,10 @@ export class QuickSightOperations {
 	static readonly DELETE_AGENT: string[] = ["quicksight:DeleteAgent"];
 	/** IAM actions required for the DeleteAnalysis API call. */
 	static readonly DELETE_ANALYSIS: string[] = ["quicksight:DeleteAnalysis"];
+	/** IAM actions required for the DeleteApprovalPolicy API call. */
+	static readonly DELETE_APPROVAL_POLICY: string[] = [
+		"quicksight:DeleteApprovalPolicy",
+	];
 	/** IAM actions required for the DeleteBrand API call. */
 	static readonly DELETE_BRAND: string[] = ["quicksight:DeleteBrand"];
 	/** IAM actions required for the DeleteBrandAssignment API call. */
@@ -3210,6 +3231,10 @@ export class QuickSightOperations {
 	/** IAM actions required for the DeleteDefaultQBusinessApplication API call. */
 	static readonly DELETE_DEFAULT_Q_BUSINESS_APPLICATION: string[] = [
 		"quicksight:DeleteDefaultQBusinessApplication",
+	];
+	/** IAM actions required for the DeleteDlpSetting API call. */
+	static readonly DELETE_DLP_SETTING: string[] = [
+		"quicksight:DeleteDlpSetting",
 	];
 	/** IAM actions required for the DeleteFlow API call. */
 	static readonly DELETE_FLOW: string[] = ["quicksight:DeleteFlow"];
@@ -3241,6 +3266,10 @@ export class QuickSightOperations {
 	/** IAM actions required for the DeleteKnowledgeBase API call. */
 	static readonly DELETE_KNOWLEDGE_BASE: string[] = [
 		"quicksight:DeleteKnowledgeBase",
+	];
+	/** IAM actions required for the DeleteLimitsProfile API call. */
+	static readonly DELETE_LIMITS_PROFILE: string[] = [
+		"quicksight:DeleteLimitsProfile",
 	];
 	/** IAM actions required for the DeleteNamespace API call. */
 	static readonly DELETE_NAMESPACE: string[] = ["quicksight:DeleteNamespace"];
@@ -3340,6 +3369,10 @@ export class QuickSightOperations {
 	static readonly DESCRIBE_ANALYSIS_PERMISSIONS: string[] = [
 		"quicksight:DescribeAnalysisPermissions",
 	];
+	/** IAM actions required for the DescribeApprovalPolicy API call. */
+	static readonly DESCRIBE_APPROVAL_POLICY: string[] = [
+		"quicksight:DescribeApprovalPolicy",
+	];
 	/** IAM actions required for the DescribeAssetBundleExportJob API call. */
 	static readonly DESCRIBE_ASSET_BUNDLE_EXPORT_JOB: string[] = [
 		"quicksight:DescribeAssetBundleExportJob",
@@ -3412,6 +3445,10 @@ export class QuickSightOperations {
 	static readonly DESCRIBE_DEFAULT_Q_BUSINESS_APPLICATION: string[] = [
 		"quicksight:DescribeDefaultQBusinessApplication",
 	];
+	/** IAM actions required for the DescribeDlpSetting API call. */
+	static readonly DESCRIBE_DLP_SETTING: string[] = [
+		"quicksight:DescribeDlpSetting",
+	];
 	/** IAM actions required for the DescribeFlow API call. */
 	static readonly DESCRIBE_FLOW: string[] = ["quicksight:DescribeFlow"];
 	/** IAM actions required for the DescribeFolder API call. */
@@ -3454,6 +3491,10 @@ export class QuickSightOperations {
 	/** IAM actions required for the DescribeKnowledgeBasePermissions API call. */
 	static readonly DESCRIBE_KNOWLEDGE_BASE_PERMISSIONS: string[] = [
 		"quicksight:DescribeKnowledgeBasePermissions",
+	];
+	/** IAM actions required for the DescribeLimitsProfile API call. */
+	static readonly DESCRIBE_LIMITS_PROFILE: string[] = [
+		"quicksight:DescribeLimitsProfile",
 	];
 	/** IAM actions required for the DescribeNamespace API call. */
 	static readonly DESCRIBE_NAMESPACE: string[] = [
@@ -3580,6 +3621,10 @@ export class QuickSightOperations {
 	static readonly LIST_AGENTS: string[] = ["quicksight:ListAgents"];
 	/** IAM actions required for the ListAnalyses API call. */
 	static readonly LIST_ANALYSES: string[] = ["quicksight:ListAnalyses"];
+	/** IAM actions required for the ListApprovalPolicies API call. */
+	static readonly LIST_APPROVAL_POLICIES: string[] = [
+		"quicksight:ListApprovalPolicies",
+	];
 	/** IAM actions required for the ListAssetBundleExportJobs API call. */
 	static readonly LIST_ASSET_BUNDLE_EXPORT_JOBS: string[] = [
 		"quicksight:ListAssetBundleExportJobs",
@@ -3604,6 +3649,8 @@ export class QuickSightOperations {
 	static readonly LIST_DATA_SETS: string[] = ["quicksight:ListDataSets"];
 	/** IAM actions required for the ListDataSources API call. */
 	static readonly LIST_DATA_SOURCES: string[] = ["quicksight:ListDataSources"];
+	/** IAM actions required for the ListDlpSettings API call. */
+	static readonly LIST_DLP_SETTINGS: string[] = ["quicksight:ListDlpSettings"];
 	/** IAM actions required for the ListFlows API call. */
 	static readonly LIST_FLOWS: string[] = ["quicksight:ListFlows"];
 	/** IAM actions required for the ListFolderMembers API call. */
@@ -3639,6 +3686,10 @@ export class QuickSightOperations {
 	/** IAM actions required for the ListKnowledgeBases API call. */
 	static readonly LIST_KNOWLEDGE_BASES: string[] = [
 		"quicksight:ListKnowledgeBases",
+	];
+	/** IAM actions required for the ListLimitsProfiles API call. */
+	static readonly LIST_LIMITS_PROFILES: string[] = [
+		"quicksight:ListLimitsProfiles",
 	];
 	/** IAM actions required for the ListNamespaces API call. */
 	static readonly LIST_NAMESPACES: string[] = ["quicksight:ListNamespaces"];
@@ -3831,6 +3882,10 @@ export class QuickSightOperations {
 	static readonly UPDATE_APPLICATION_WITH_TOKEN_EXCHANGE_GRANT: string[] = [
 		"quicksight:UpdateApplicationWithTokenExchangeGrant",
 	];
+	/** IAM actions required for the UpdateApprovalPolicy API call. */
+	static readonly UPDATE_APPROVAL_POLICY: string[] = [
+		"quicksight:UpdateApprovalPolicy",
+	];
 	/** IAM actions required for the UpdateBrand API call. */
 	static readonly UPDATE_BRAND: string[] = ["quicksight:UpdateBrand"];
 	/** IAM actions required for the UpdateBrandAssignment API call. */
@@ -3891,6 +3946,10 @@ export class QuickSightOperations {
 	static readonly UPDATE_DEFAULT_Q_BUSINESS_APPLICATION: string[] = [
 		"quicksight:UpdateDefaultQBusinessApplication",
 	];
+	/** IAM actions required for the UpdateDlpSetting API call. */
+	static readonly UPDATE_DLP_SETTING: string[] = [
+		"quicksight:UpdateDlpSetting",
+	];
 	/** IAM actions required for the UpdateFlow API call. */
 	static readonly UPDATE_FLOW: string[] = ["quicksight:UpdateFlow"];
 	/** IAM actions required for the UpdateFlowPermissions API call. */
@@ -3930,6 +3989,10 @@ export class QuickSightOperations {
 	/** IAM actions required for the UpdateKnowledgeBasePermissions API call. */
 	static readonly UPDATE_KNOWLEDGE_BASE_PERMISSIONS: string[] = [
 		"quicksight:UpdateKnowledgeBasePermissions",
+	];
+	/** IAM actions required for the UpdateLimitsProfile API call. */
+	static readonly UPDATE_LIMITS_PROFILE: string[] = [
+		"quicksight:UpdateLimitsProfile",
 	];
 	/** IAM actions required for the UpdateOAuthClientApplication API call. */
 	static readonly UPDATE_O_AUTH_CLIENT_APPLICATION: string[] = [
@@ -4012,13 +4075,18 @@ export class QuickSightOperations {
 		"quicksight:UpdateTopicPermissions",
 	];
 	/** IAM actions required for the UpdateTopicPermissionsV2 API call. */
-	static readonly UPDATE_TOPIC_PERMISSIONS_V2: string[] = [];
+	static readonly UPDATE_TOPIC_PERMISSIONS_V2: string[] = [
+		"quicksight:UpdateTopicPermissions",
+	];
 	/** IAM actions required for the UpdateTopicRefreshSchedule API call. */
 	static readonly UPDATE_TOPIC_REFRESH_SCHEDULE: string[] = [
 		"quicksight:UpdateTopicRefreshSchedule",
 	];
 	/** IAM actions required for the UpdateTopicV2 API call. */
-	static readonly UPDATE_TOPIC_V2: string[] = [];
+	static readonly UPDATE_TOPIC_V2: string[] = [
+		"quicksight:PassDataSet",
+		"quicksight:UpdateTopic",
+	];
 	/** IAM actions required for the UpdateUser API call. */
 	static readonly UPDATE_USER: string[] = ["quicksight:UpdateUser"];
 	/** IAM actions required for the UpdateUserCustomPermission API call. */

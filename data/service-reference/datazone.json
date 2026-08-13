@@ -6510,6 +6510,12 @@
     },
     {
       "Name": "StopNotebookRun",
+      "AuthorizedActions": [
+        {
+          "Name": "StopNotebookRun",
+          "Service": "datazone"
+        }
+      ],
       "SDK": [
         {
           "Name": "datazone",

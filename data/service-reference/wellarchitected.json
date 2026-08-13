@@ -2192,6 +2192,67 @@
       ]
     },
     {
+      "Name": "CreateAgentContext",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAgentContext",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "create_agent_context",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAgentGoal",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAgentGoal",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "create_agent_goal",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAgentProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAgentProfile",
+          "Service": "wellarchitected"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "wellarchitected.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "create_agent_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "CreateLensShare",
       "AuthorizedActions": [
         {
@@ -2359,6 +2420,54 @@
         {
           "Name": "wellarchitected",
           "Method": "create_workload_share",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAgentContext",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAgentContext",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "delete_agent_context",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAgentGoal",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAgentGoal",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "delete_agent_goal",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAgentProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAgentProfile",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "delete_agent_profile",
           "Package": "Boto3"
         }
       ]
@@ -2535,6 +2644,86 @@
         {
           "Name": "wellarchitected",
           "Method": "export_lens",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAgentContext",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAgentContext",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "get_agent_context",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAgentGoal",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAgentGoal",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "get_agent_goal",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAgentProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAgentProfile",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "get_agent_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAgentRecommendation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAgentRecommendation",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "get_agent_recommendation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAgentRecommendationGeneration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAgentRecommendationGeneration",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "get_agent_recommendation_generation",
           "Package": "Boto3"
         }
       ]
@@ -2779,6 +2968,102 @@
         {
           "Name": "wellarchitected",
           "Method": "import_lens",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAgentContexts",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAgentContexts",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "list_agent_contexts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAgentGoals",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAgentGoals",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "list_agent_goals",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAgentProfiles",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAgentProfiles",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "list_agent_profiles",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAgentRecommendationGenerations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAgentRecommendationGenerations",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "list_agent_recommendation_generations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAgentRecommendationItems",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAgentRecommendationItems",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "list_agent_recommendation_items",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAgentRecommendations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAgentRecommendations",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "list_agent_recommendations",
           "Package": "Boto3"
         }
       ]
@@ -3088,6 +3373,38 @@
       ]
     },
     {
+      "Name": "PutAgentRecommendationFeedback",
+      "AuthorizedActions": [
+        {
+          "Name": "PutAgentRecommendationFeedback",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "put_agent_recommendation_feedback",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartAgentRecommendationGeneration",
+      "AuthorizedActions": [
+        {
+          "Name": "StartAgentRecommendationGeneration",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "start_agent_recommendation_generation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "TagResource",
       "AuthorizedActions": [
         {
@@ -3115,6 +3432,79 @@
         {
           "Name": "wellarchitected",
           "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAgentContext",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAgentContext",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "update_agent_context",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAgentGoal",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAgentGoal",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "update_agent_goal",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAgentProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "wellarchitected.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateAgentProfile",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "update_agent_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAgentRecommendationStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAgentRecommendationStatus",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "update_agent_recommendation_status",
           "Package": "Boto3"
         }
       ]

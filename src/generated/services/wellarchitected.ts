@@ -652,6 +652,20 @@ export class WellArchitectedOperations {
 	static readonly ASSOCIATE_PROFILES: string[] = [
 		"wellarchitected:AssociateProfiles",
 	];
+	/** IAM actions required for the CreateAgentContext API call. */
+	static readonly CREATE_AGENT_CONTEXT: string[] = [
+		"wellarchitected:CreateAgentContext",
+	];
+	/** IAM actions required for the CreateAgentGoal API call. */
+	static readonly CREATE_AGENT_GOAL: string[] = [
+		"wellarchitected:CreateAgentGoal",
+	];
+	/** IAM actions required for the CreateAgentProfile API call. */
+	static readonly CREATE_AGENT_PROFILE: string[] = [
+		"wellarchitected:CreateAgentProfile",
+		"iam:PassRole",
+		"wellarchitected:TagResource",
+	];
 	/** IAM actions required for the CreateLensShare API call. */
 	static readonly CREATE_LENS_SHARE: string[] = [
 		"wellarchitected:CreateLensShare",
@@ -695,6 +709,18 @@ export class WellArchitectedOperations {
 	static readonly CREATE_WORKLOAD_SHARE: string[] = [
 		"wellarchitected:CreateWorkloadShare",
 	];
+	/** IAM actions required for the DeleteAgentContext API call. */
+	static readonly DELETE_AGENT_CONTEXT: string[] = [
+		"wellarchitected:DeleteAgentContext",
+	];
+	/** IAM actions required for the DeleteAgentGoal API call. */
+	static readonly DELETE_AGENT_GOAL: string[] = [
+		"wellarchitected:DeleteAgentGoal",
+	];
+	/** IAM actions required for the DeleteAgentProfile API call. */
+	static readonly DELETE_AGENT_PROFILE: string[] = [
+		"wellarchitected:DeleteAgentProfile",
+	];
 	/** IAM actions required for the DeleteLens API call. */
 	static readonly DELETE_LENS: string[] = ["wellarchitected:DeleteLens"];
 	/** IAM actions required for the DeleteLensShare API call. */
@@ -733,6 +759,24 @@ export class WellArchitectedOperations {
 	];
 	/** IAM actions required for the ExportLens API call. */
 	static readonly EXPORT_LENS: string[] = ["wellarchitected:ExportLens"];
+	/** IAM actions required for the GetAgentContext API call. */
+	static readonly GET_AGENT_CONTEXT: string[] = [
+		"wellarchitected:GetAgentContext",
+	];
+	/** IAM actions required for the GetAgentGoal API call. */
+	static readonly GET_AGENT_GOAL: string[] = ["wellarchitected:GetAgentGoal"];
+	/** IAM actions required for the GetAgentProfile API call. */
+	static readonly GET_AGENT_PROFILE: string[] = [
+		"wellarchitected:GetAgentProfile",
+	];
+	/** IAM actions required for the GetAgentRecommendation API call. */
+	static readonly GET_AGENT_RECOMMENDATION: string[] = [
+		"wellarchitected:GetAgentRecommendation",
+	];
+	/** IAM actions required for the GetAgentRecommendationGeneration API call. */
+	static readonly GET_AGENT_RECOMMENDATION_GENERATION: string[] = [
+		"wellarchitected:GetAgentRecommendationGeneration",
+	];
 	/** IAM actions required for the GetAnswer API call. */
 	static readonly GET_ANSWER: string[] = ["wellarchitected:GetAnswer"];
 	/** IAM actions required for the GetConsolidatedReport API call. */
@@ -781,6 +825,30 @@ export class WellArchitectedOperations {
 	static readonly IMPORT_LENS: string[] = [
 		"wellarchitected:ImportLens",
 		"wellarchitected:TagResource",
+	];
+	/** IAM actions required for the ListAgentContexts API call. */
+	static readonly LIST_AGENT_CONTEXTS: string[] = [
+		"wellarchitected:ListAgentContexts",
+	];
+	/** IAM actions required for the ListAgentGoals API call. */
+	static readonly LIST_AGENT_GOALS: string[] = [
+		"wellarchitected:ListAgentGoals",
+	];
+	/** IAM actions required for the ListAgentProfiles API call. */
+	static readonly LIST_AGENT_PROFILES: string[] = [
+		"wellarchitected:ListAgentProfiles",
+	];
+	/** IAM actions required for the ListAgentRecommendationGenerations API call. */
+	static readonly LIST_AGENT_RECOMMENDATION_GENERATIONS: string[] = [
+		"wellarchitected:ListAgentRecommendationGenerations",
+	];
+	/** IAM actions required for the ListAgentRecommendationItems API call. */
+	static readonly LIST_AGENT_RECOMMENDATION_ITEMS: string[] = [
+		"wellarchitected:ListAgentRecommendationItems",
+	];
+	/** IAM actions required for the ListAgentRecommendations API call. */
+	static readonly LIST_AGENT_RECOMMENDATIONS: string[] = [
+		"wellarchitected:ListAgentRecommendations",
 	];
 	/** IAM actions required for the ListAnswers API call. */
 	static readonly LIST_ANSWERS: string[] = ["wellarchitected:ListAnswers"];
@@ -850,10 +918,35 @@ export class WellArchitectedOperations {
 	];
 	/** IAM actions required for the ListWorkloads API call. */
 	static readonly LIST_WORKLOADS: string[] = ["wellarchitected:ListWorkloads"];
+	/** IAM actions required for the PutAgentRecommendationFeedback API call. */
+	static readonly PUT_AGENT_RECOMMENDATION_FEEDBACK: string[] = [
+		"wellarchitected:PutAgentRecommendationFeedback",
+	];
+	/** IAM actions required for the StartAgentRecommendationGeneration API call. */
+	static readonly START_AGENT_RECOMMENDATION_GENERATION: string[] = [
+		"wellarchitected:StartAgentRecommendationGeneration",
+	];
 	/** IAM actions required for the TagResource API call. */
 	static readonly TAG_RESOURCE: string[] = ["wellarchitected:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
 	static readonly UNTAG_RESOURCE: string[] = ["wellarchitected:UntagResource"];
+	/** IAM actions required for the UpdateAgentContext API call. */
+	static readonly UPDATE_AGENT_CONTEXT: string[] = [
+		"wellarchitected:UpdateAgentContext",
+	];
+	/** IAM actions required for the UpdateAgentGoal API call. */
+	static readonly UPDATE_AGENT_GOAL: string[] = [
+		"wellarchitected:UpdateAgentGoal",
+	];
+	/** IAM actions required for the UpdateAgentProfile API call. */
+	static readonly UPDATE_AGENT_PROFILE: string[] = [
+		"iam:PassRole",
+		"wellarchitected:UpdateAgentProfile",
+	];
+	/** IAM actions required for the UpdateAgentRecommendationStatus API call. */
+	static readonly UPDATE_AGENT_RECOMMENDATION_STATUS: string[] = [
+		"wellarchitected:UpdateAgentRecommendationStatus",
+	];
 	/** IAM actions required for the UpdateAnswer API call. */
 	static readonly UPDATE_ANSWER: string[] = ["wellarchitected:UpdateAnswer"];
 	/** IAM actions required for the UpdateGlobalSettings API call. */

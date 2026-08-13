@@ -1419,7 +1419,7 @@ export class DatazoneOperations {
 	/** IAM actions required for the StartNotebookSync API call. */
 	static readonly START_NOTEBOOK_SYNC: string[] = [];
 	/** IAM actions required for the StopNotebookRun API call. */
-	static readonly STOP_NOTEBOOK_RUN: string[] = [];
+	static readonly STOP_NOTEBOOK_RUN: string[] = ["datazone:StopNotebookRun"];
 	/** IAM actions required for the TagResource API call. */
 	static readonly TAG_RESOURCE: string[] = ["datazone:TagResource"];
 	/** IAM actions required for the UntagResource API call. */

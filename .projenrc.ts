@@ -19,6 +19,12 @@ project.addTask("sync-service-reference", {
 	exec: "tsx scripts/run-sync.ts",
 });
 
+// Unified update: sync data + regenerate constants for changed services
+project.addTask("update-service-reference", {
+	description: "Sync AWS service reference data and regenerate constants for updated services",
+	exec: "tsx scripts/run-update.ts",
+});
+
 // Add projen tasks for code generation
 project.addTask("generate-constants", {
 	description: "Generate TypeScript constants from all service reference data",

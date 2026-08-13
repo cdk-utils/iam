@@ -2367,6 +2367,7 @@ export class RDSOperations {
 	];
 	/** IAM actions required for the RestoreDBClusterFromSnapshot API call. */
 	static readonly RESTORE_DB_CLUSTER_FROM_SNAPSHOT: string[] = [
+		"rds:AddRoleToDBCluster",
 		"rds:AddTagsToResource",
 		"rds:CreateDBInstance",
 		"iam:PassRole",

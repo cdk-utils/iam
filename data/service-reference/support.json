@@ -703,6 +703,10 @@
         {
           "Name": "ListRecommendationResources",
           "Service": "trustedadvisor"
+        },
+        {
+          "Name": "ListRecommendationsForResource",
+          "Service": "trustedadvisor"
         }
       ],
       "SDK": [

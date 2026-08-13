@@ -312,6 +312,7 @@ export class TimestreamInfluxdbOperations {
 	/** IAM actions required for the CreateDbBackup API call. */
 	static readonly CREATE_DB_BACKUP: string[] = [
 		"timestream-influxdb:CreateDbBackup",
+		"timestream-influxdb:TagResource",
 	];
 	/** IAM actions required for the CreateDbCluster API call. */
 	static readonly CREATE_DB_CLUSTER: string[] = [

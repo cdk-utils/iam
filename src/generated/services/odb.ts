@@ -18,6 +18,9 @@ export class OdbActions {
 	/** [Write] odb:AssociateIamRoleToResource */
 	static readonly ASSOCIATE_IAM_ROLE_TO_RESOURCE =
 		"odb:AssociateIamRoleToResource";
+	/** [Write] odb:AssociateVirtualMachinesToExadbVmCluster */
+	static readonly ASSOCIATE_VIRTUAL_MACHINES_TO_EXADB_VM_CLUSTER =
+		"odb:AssociateVirtualMachinesToExadbVmCluster";
 	/** [Write] odb:CreateAutonomousDatabase */
 	static readonly CREATE_AUTONOMOUS_DATABASE = "odb:CreateAutonomousDatabase";
 	/** [Write] odb:CreateAutonomousDatabaseBackup */
@@ -36,6 +39,11 @@ export class OdbActions {
 	static readonly CREATE_CLOUD_VM_CLUSTER = "odb:CreateCloudVmCluster";
 	/** [Write] odb:CreateDbNode */
 	static readonly CREATE_DB_NODE = "odb:CreateDbNode";
+	/** [Write] odb:CreateExadbVmCluster */
+	static readonly CREATE_EXADB_VM_CLUSTER = "odb:CreateExadbVmCluster";
+	/** [Write] odb:CreateExascaleDbStorageVault */
+	static readonly CREATE_EXASCALE_DB_STORAGE_VAULT =
+		"odb:CreateExascaleDbStorageVault";
 	/** [Write] odb:CreateGrantShare */
 	static readonly CREATE_GRANT_SHARE = "odb:CreateGrantShare";
 	/** [Write] odb:CreateOdbNetwork */
@@ -60,6 +68,11 @@ export class OdbActions {
 	static readonly DELETE_CLOUD_VM_CLUSTER = "odb:DeleteCloudVmCluster";
 	/** [Write] odb:DeleteDbNode */
 	static readonly DELETE_DB_NODE = "odb:DeleteDbNode";
+	/** [Write] odb:DeleteExadbVmCluster */
+	static readonly DELETE_EXADB_VM_CLUSTER = "odb:DeleteExadbVmCluster";
+	/** [Write] odb:DeleteExascaleDbStorageVault */
+	static readonly DELETE_EXASCALE_DB_STORAGE_VAULT =
+		"odb:DeleteExascaleDbStorageVault";
 	/** [Write] odb:DeleteGrantShare */
 	static readonly DELETE_GRANT_SHARE = "odb:DeleteGrantShare";
 	/** [Write] odb:DeleteOdbNetwork */
@@ -72,6 +85,9 @@ export class OdbActions {
 	/** [Write] odb:DisassociateIamRoleFromResource */
 	static readonly DISASSOCIATE_IAM_ROLE_FROM_RESOURCE =
 		"odb:DisassociateIamRoleFromResource";
+	/** [Write] odb:DisassociateVirtualMachinesFromExadbVmCluster */
+	static readonly DISASSOCIATE_VIRTUAL_MACHINES_FROM_EXADB_VM_CLUSTER =
+		"odb:DisassociateVirtualMachinesFromExadbVmCluster";
 	/** [Write] odb:FailoverAutonomousDatabase */
 	static readonly FAILOVER_AUTONOMOUS_DATABASE =
 		"odb:FailoverAutonomousDatabase";
@@ -98,6 +114,11 @@ export class OdbActions {
 	static readonly GET_DB_NODE = "odb:GetDbNode";
 	/** [Read] odb:GetDbServer */
 	static readonly GET_DB_SERVER = "odb:GetDbServer";
+	/** [Read] odb:GetExadbVmCluster */
+	static readonly GET_EXADB_VM_CLUSTER = "odb:GetExadbVmCluster";
+	/** [Read] odb:GetExascaleDbStorageVault */
+	static readonly GET_EXASCALE_DB_STORAGE_VAULT =
+		"odb:GetExascaleDbStorageVault";
 	/** [Read] odb:GetOciOnboardingStatus */
 	static readonly GET_OCI_ONBOARDING_STATUS = "odb:GetOciOnboardingStatus";
 	/** [Read] odb:GetOdbNetwork */
@@ -142,8 +163,15 @@ export class OdbActions {
 	static readonly LIST_DB_SERVERS = "odb:ListDbServers";
 	/** [List] odb:ListDbSystemShapes */
 	static readonly LIST_DB_SYSTEM_SHAPES = "odb:ListDbSystemShapes";
+	/** [List] odb:ListExadbVmClusters */
+	static readonly LIST_EXADB_VM_CLUSTERS = "odb:ListExadbVmClusters";
+	/** [List] odb:ListExascaleDbStorageVaults */
+	static readonly LIST_EXASCALE_DB_STORAGE_VAULTS =
+		"odb:ListExascaleDbStorageVaults";
 	/** [List] odb:ListFlexComponents */
 	static readonly LIST_FLEX_COMPONENTS = "odb:ListFlexComponents";
+	/** [List] odb:ListGiMinorVersions */
+	static readonly LIST_GI_MINOR_VERSIONS = "odb:ListGiMinorVersions";
 	/** [List] odb:ListGiVersions */
 	static readonly LIST_GI_VERSIONS = "odb:ListGiVersions";
 	/** [List] odb:ListOdbNetworks */
@@ -188,6 +216,11 @@ export class OdbActions {
 	/** [Write] odb:UpdateCloudExadataInfrastructure */
 	static readonly UPDATE_CLOUD_EXADATA_INFRASTRUCTURE =
 		"odb:UpdateCloudExadataInfrastructure";
+	/** [Write] odb:UpdateExadbVmCluster */
+	static readonly UPDATE_EXADB_VM_CLUSTER = "odb:UpdateExadbVmCluster";
+	/** [Write] odb:UpdateExascaleDbStorageVault */
+	static readonly UPDATE_EXASCALE_DB_STORAGE_VAULT =
+		"odb:UpdateExascaleDbStorageVault";
 	/** [Write] odb:UpdateGrantShare */
 	static readonly UPDATE_GRANT_SHARE = "odb:UpdateGrantShare";
 	/** [Write] odb:UpdateOdbNetwork */
@@ -209,6 +242,8 @@ export class OdbActions {
 		OdbActions.GET_CLOUD_VM_CLUSTER,
 		OdbActions.GET_DB_NODE,
 		OdbActions.GET_DB_SERVER,
+		OdbActions.GET_EXADB_VM_CLUSTER,
+		OdbActions.GET_EXASCALE_DB_STORAGE_VAULT,
 		OdbActions.GET_OCI_ONBOARDING_STATUS,
 		OdbActions.GET_ODB_NETWORK,
 		OdbActions.GET_ODB_PEERING_CONNECTION,
@@ -219,6 +254,7 @@ export class OdbActions {
 	static readonly WRITE_ACTIONS: string[] = [
 		OdbActions.ACCEPT_MARKETPLACE_REGISTRATION,
 		OdbActions.ASSOCIATE_IAM_ROLE_TO_RESOURCE,
+		OdbActions.ASSOCIATE_VIRTUAL_MACHINES_TO_EXADB_VM_CLUSTER,
 		OdbActions.CREATE_AUTONOMOUS_DATABASE,
 		OdbActions.CREATE_AUTONOMOUS_DATABASE_BACKUP,
 		OdbActions.CREATE_AUTONOMOUS_DATABASE_WALLET,
@@ -226,6 +262,8 @@ export class OdbActions {
 		OdbActions.CREATE_CLOUD_EXADATA_INFRASTRUCTURE,
 		OdbActions.CREATE_CLOUD_VM_CLUSTER,
 		OdbActions.CREATE_DB_NODE,
+		OdbActions.CREATE_EXADB_VM_CLUSTER,
+		OdbActions.CREATE_EXASCALE_DB_STORAGE_VAULT,
 		OdbActions.CREATE_GRANT_SHARE,
 		OdbActions.CREATE_ODB_NETWORK,
 		OdbActions.CREATE_ODB_PEERING_CONNECTION,
@@ -236,11 +274,14 @@ export class OdbActions {
 		OdbActions.DELETE_CLOUD_EXADATA_INFRASTRUCTURE,
 		OdbActions.DELETE_CLOUD_VM_CLUSTER,
 		OdbActions.DELETE_DB_NODE,
+		OdbActions.DELETE_EXADB_VM_CLUSTER,
+		OdbActions.DELETE_EXASCALE_DB_STORAGE_VAULT,
 		OdbActions.DELETE_GRANT_SHARE,
 		OdbActions.DELETE_ODB_NETWORK,
 		OdbActions.DELETE_ODB_PEERING_CONNECTION,
 		OdbActions.DELETE_RESOURCE_POLICY,
 		OdbActions.DISASSOCIATE_IAM_ROLE_FROM_RESOURCE,
+		OdbActions.DISASSOCIATE_VIRTUAL_MACHINES_FROM_EXADB_VM_CLUSTER,
 		OdbActions.FAILOVER_AUTONOMOUS_DATABASE,
 		OdbActions.INITIALIZE_SERVICE,
 		OdbActions.PUT_RESOURCE_POLICY,
@@ -256,6 +297,8 @@ export class OdbActions {
 		OdbActions.UPDATE_AUTONOMOUS_DATABASE,
 		OdbActions.UPDATE_AUTONOMOUS_DATABASE_BACKUP,
 		OdbActions.UPDATE_CLOUD_EXADATA_INFRASTRUCTURE,
+		OdbActions.UPDATE_EXADB_VM_CLUSTER,
+		OdbActions.UPDATE_EXASCALE_DB_STORAGE_VAULT,
 		OdbActions.UPDATE_GRANT_SHARE,
 		OdbActions.UPDATE_ODB_NETWORK,
 		OdbActions.UPDATE_ODB_PEERING_CONNECTION,
@@ -276,7 +319,10 @@ export class OdbActions {
 		OdbActions.LIST_DB_NODES,
 		OdbActions.LIST_DB_SERVERS,
 		OdbActions.LIST_DB_SYSTEM_SHAPES,
+		OdbActions.LIST_EXADB_VM_CLUSTERS,
+		OdbActions.LIST_EXASCALE_DB_STORAGE_VAULTS,
 		OdbActions.LIST_FLEX_COMPONENTS,
+		OdbActions.LIST_GI_MINOR_VERSIONS,
 		OdbActions.LIST_GI_VERSIONS,
 		OdbActions.LIST_ODB_NETWORKS,
 		OdbActions.LIST_ODB_PEERING_CONNECTIONS,
@@ -308,6 +354,12 @@ const CloudVmClusterArnRegex = new RegExp(
 );
 const DBNodeArnRegex = new RegExp(
 	"^arn:(?<partition>[^:]+):odb:(?<region>[^:]*):(?<account>[^:]*):db-node/(?<dbNodeId>[^:/?]+)$",
+);
+const ExadbVmClusterArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):odb:(?<region>[^:]*):(?<account>[^:]*):exadb-vm-cluster/(?<exadbVmClusterId>[^:/?]+)$",
+);
+const ExascaleDBStorageVaultArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):odb:(?<region>[^:]*):(?<account>[^:]*):exascale-db-storage-vault/(?<exascaleDBStorageVaultId>[^:/?]+)$",
 );
 const OdbNetworkArnRegex = new RegExp(
 	"^arn:(?<partition>[^:]+):odb:(?<region>[^:]*):(?<account>[^:]*):odb-network/(?<odbNetworkId>[^:/?]+)$",
@@ -591,6 +643,96 @@ export class OdbResources {
 	}
 
 	/**
+	 * Builds an ARN for the exadb-vm-cluster resource.
+	 */
+	static exadbVmCluster(props: {
+		/** The ExadbVmClusterId component of the ARN. */
+		readonly exadbVmClusterId: string;
+		/** AWS region. Defaults to "*". */
+		readonly region?: string;
+		/** AWS account ID. Defaults to "*". */
+		readonly account?: string;
+		/** AWS partition. Defaults to "aws". */
+		readonly partition?: string;
+	}): string {
+		return `arn:${props.partition ?? "aws"}:odb:${props.region ?? "*"}:${props.account ?? "*"}:exadb-vm-cluster/${props.exadbVmClusterId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the exadb-vm-cluster resource.
+	 */
+	static isValidExadbVmClusterArn(arn: string): boolean {
+		return ExadbVmClusterArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a exadb-vm-cluster ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseExadbVmClusterArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		exadbVmClusterId: string;
+	} {
+		const match = ExadbVmClusterArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid exadb-vm-cluster ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			exadbVmClusterId: match.groups!.exadbVmClusterId,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the exascale-db-storage-vault resource.
+	 */
+	static exascaleDBStorageVault(props: {
+		/** The ExascaleDbStorageVaultId component of the ARN. */
+		readonly exascaleDBStorageVaultId: string;
+		/** AWS region. Defaults to "*". */
+		readonly region?: string;
+		/** AWS account ID. Defaults to "*". */
+		readonly account?: string;
+		/** AWS partition. Defaults to "aws". */
+		readonly partition?: string;
+	}): string {
+		return `arn:${props.partition ?? "aws"}:odb:${props.region ?? "*"}:${props.account ?? "*"}:exascale-db-storage-vault/${props.exascaleDBStorageVaultId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the exascale-db-storage-vault resource.
+	 */
+	static isValidExascaleDBStorageVaultArn(arn: string): boolean {
+		return ExascaleDBStorageVaultArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a exascale-db-storage-vault ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseExascaleDBStorageVaultArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		exascaleDBStorageVaultId: string;
+	} {
+		const match = ExascaleDBStorageVaultArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid exascale-db-storage-vault ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			exascaleDBStorageVaultId: match.groups!.exascaleDBStorageVaultId,
+		};
+	}
+
+	/**
 	 * Builds an ARN for the odb-network resource.
 	 */
 	static odbNetwork(props: {
@@ -694,6 +836,8 @@ export class OdbOperations {
 		"odb:AssociateIamRoleToResource",
 		"iam:PassRole",
 	];
+	/** IAM actions required for the AssociateVirtualMachinesToExadbVmCluster API call. */
+	static readonly ASSOCIATE_VIRTUAL_MACHINES_TO_EXADB_VM_CLUSTER: string[] = [];
 	/** IAM actions required for the CreateAutonomousDatabase API call. */
 	static readonly CREATE_AUTONOMOUS_DATABASE: string[] = [
 		"odb:CreateAutonomousDatabase",
@@ -723,6 +867,12 @@ export class OdbOperations {
 		"odb:CreateCloudVmCluster",
 		"odb:CreateDbNode",
 		"odb:TagResource",
+	];
+	/** IAM actions required for the CreateExadbVmCluster API call. */
+	static readonly CREATE_EXADB_VM_CLUSTER: string[] = [];
+	/** IAM actions required for the CreateExascaleDbStorageVault API call. */
+	static readonly CREATE_EXASCALE_DB_STORAGE_VAULT: string[] = [
+		"odb:CreateExascaleDbStorageVault",
 	];
 	/** IAM actions required for the CreateOdbNetwork API call. */
 	static readonly CREATE_ODB_NETWORK: string[] = [
@@ -755,6 +905,12 @@ export class OdbOperations {
 		"odb:DeleteCloudVmCluster",
 		"odb:DeleteDbNode",
 	];
+	/** IAM actions required for the DeleteExadbVmCluster API call. */
+	static readonly DELETE_EXADB_VM_CLUSTER: string[] = [];
+	/** IAM actions required for the DeleteExascaleDbStorageVault API call. */
+	static readonly DELETE_EXASCALE_DB_STORAGE_VAULT: string[] = [
+		"odb:DeleteExascaleDbStorageVault",
+	];
 	/** IAM actions required for the DeleteOdbNetwork API call. */
 	static readonly DELETE_ODB_NETWORK: string[] = ["odb:DeleteOdbNetwork"];
 	/** IAM actions required for the DeleteOdbPeeringConnection API call. */
@@ -765,6 +921,9 @@ export class OdbOperations {
 	static readonly DISASSOCIATE_IAM_ROLE_FROM_RESOURCE: string[] = [
 		"odb:DisassociateIamRoleFromResource",
 	];
+	/** IAM actions required for the DisassociateVirtualMachinesFromExadbVmCluster API call. */
+	static readonly DISASSOCIATE_VIRTUAL_MACHINES_FROM_EXADB_VM_CLUSTER: string[] =
+		[];
 	/** IAM actions required for the FailoverAutonomousDatabase API call. */
 	static readonly FAILOVER_AUTONOMOUS_DATABASE: string[] = [
 		"odb:FailoverAutonomousDatabase",
@@ -798,6 +957,12 @@ export class OdbOperations {
 	static readonly GET_DB_NODE: string[] = ["odb:GetDbNode"];
 	/** IAM actions required for the GetDbServer API call. */
 	static readonly GET_DB_SERVER: string[] = ["odb:GetDbServer"];
+	/** IAM actions required for the GetExadbVmCluster API call. */
+	static readonly GET_EXADB_VM_CLUSTER: string[] = ["odb:GetExadbVmCluster"];
+	/** IAM actions required for the GetExascaleDbStorageVault API call. */
+	static readonly GET_EXASCALE_DB_STORAGE_VAULT: string[] = [
+		"odb:GetExascaleDbStorageVault",
+	];
 	/** IAM actions required for the GetOciOnboardingStatus API call. */
 	static readonly GET_OCI_ONBOARDING_STATUS: string[] = [
 		"odb:GetOciOnboardingStatus",
@@ -856,6 +1021,18 @@ export class OdbOperations {
 	static readonly LIST_DB_SERVERS: string[] = ["odb:ListDbServers"];
 	/** IAM actions required for the ListDbSystemShapes API call. */
 	static readonly LIST_DB_SYSTEM_SHAPES: string[] = ["odb:ListDbSystemShapes"];
+	/** IAM actions required for the ListExadbVmClusters API call. */
+	static readonly LIST_EXADB_VM_CLUSTERS: string[] = [
+		"odb:ListExadbVmClusters",
+	];
+	/** IAM actions required for the ListExascaleDbStorageVaults API call. */
+	static readonly LIST_EXASCALE_DB_STORAGE_VAULTS: string[] = [
+		"odb:ListExascaleDbStorageVaults",
+	];
+	/** IAM actions required for the ListGiMinorVersions API call. */
+	static readonly LIST_GI_MINOR_VERSIONS: string[] = [
+		"odb:ListGiMinorVersions",
+	];
 	/** IAM actions required for the ListGiVersions API call. */
 	static readonly LIST_GI_VERSIONS: string[] = ["odb:ListGiVersions"];
 	/** IAM actions required for the ListOdbNetworks API call. */
@@ -917,6 +1094,14 @@ export class OdbOperations {
 	static readonly UPDATE_CLOUD_EXADATA_INFRASTRUCTURE: string[] = [
 		"odb:UpdateCloudExadataInfrastructure",
 	];
+	/** IAM actions required for the UpdateExadbVmCluster API call. */
+	static readonly UPDATE_EXADB_VM_CLUSTER: string[] = [
+		"odb:UpdateExadbVmCluster",
+	];
+	/** IAM actions required for the UpdateExascaleDbStorageVault API call. */
+	static readonly UPDATE_EXASCALE_DB_STORAGE_VAULT: string[] = [
+		"odb:UpdateExascaleDbStorageVault",
+	];
 	/** IAM actions required for the UpdateOdbNetwork API call. */
 	static readonly UPDATE_ODB_NETWORK: string[] = ["odb:UpdateOdbNetwork"];
 	/** IAM actions required for the UpdateOdbPeeringConnection API call. */
@@ -947,6 +1132,16 @@ export class OdbConditions {
 		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
 	/** Condition keys applicable to the CreateCloudVmCluster action. */
 	static readonly CREATE_CLOUD_VM_CLUSTER_CONDITION_KEYS: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
+	/** Condition keys applicable to the CreateExadbVmCluster action. */
+	static readonly CREATE_EXADB_VM_CLUSTER_CONDITION_KEYS: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
+	/** Condition keys applicable to the CreateExascaleDbStorageVault action. */
+	static readonly CREATE_EXASCALE_DB_STORAGE_VAULT_CONDITION_KEYS: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];

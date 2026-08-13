@@ -165,6 +165,8 @@ export class IAMActions {
 	static readonly GET_ACCOUNT_NAME = "iam:GetAccountName";
 	/** [Read] iam:GetAccountPasswordPolicy */
 	static readonly GET_ACCOUNT_PASSWORD_POLICY = "iam:GetAccountPasswordPolicy";
+	/** [Read] iam:GetAccountProperties */
+	static readonly GET_ACCOUNT_PROPERTIES = "iam:GetAccountProperties";
 	/** [List] iam:GetAccountSummary */
 	static readonly GET_ACCOUNT_SUMMARY = "iam:GetAccountSummary";
 	/** [Read] iam:GetCloudFrontPublicKey */
@@ -207,6 +209,8 @@ export class IAMActions {
 	static readonly GET_ROLE = "iam:GetRole";
 	/** [Read] iam:GetRolePolicy */
 	static readonly GET_ROLE_POLICY = "iam:GetRolePolicy";
+	/** [Read] iam:GetRoleTemplateVersion */
+	static readonly GET_ROLE_TEMPLATE_VERSION = "iam:GetRoleTemplateVersion";
 	/** [Read] iam:GetSAMLProvider */
 	static readonly GET_SAML_PROVIDER = "iam:GetSAMLProvider";
 	/** [Read] iam:GetSSHPublicKey */
@@ -312,6 +316,8 @@ export class IAMActions {
 	static readonly LIST_VIRTUAL_MFA_DEVICES = "iam:ListVirtualMFADevices";
 	/** [Write] iam:PassRole */
 	static readonly PASS_ROLE = "iam:PassRole";
+	/** [Write] iam:PutAccountProperties */
+	static readonly PUT_ACCOUNT_PROPERTIES = "iam:PutAccountProperties";
 	/** [PermissionManagement] iam:PutGroupPolicy */
 	static readonly PUT_GROUP_POLICY = "iam:PutGroupPolicy";
 	/** [PermissionManagement] iam:PutRolePermissionsBoundary */
@@ -445,6 +451,7 @@ export class IAMActions {
 		IAMActions.GET_ACCOUNT_EMAIL_ADDRESS,
 		IAMActions.GET_ACCOUNT_NAME,
 		IAMActions.GET_ACCOUNT_PASSWORD_POLICY,
+		IAMActions.GET_ACCOUNT_PROPERTIES,
 		IAMActions.GET_CLOUD_FRONT_PUBLIC_KEY,
 		IAMActions.GET_CONTEXT_KEYS_FOR_CUSTOM_POLICY,
 		IAMActions.GET_CONTEXT_KEYS_FOR_PRINCIPAL_POLICY,
@@ -462,6 +469,7 @@ export class IAMActions {
 		IAMActions.GET_POLICY_VERSION,
 		IAMActions.GET_ROLE,
 		IAMActions.GET_ROLE_POLICY,
+		IAMActions.GET_ROLE_TEMPLATE_VERSION,
 		IAMActions.GET_SAML_PROVIDER,
 		IAMActions.GET_SSH_PUBLIC_KEY,
 		IAMActions.GET_SERVER_CERTIFICATE,
@@ -519,6 +527,7 @@ export class IAMActions {
 		IAMActions.ENABLE_ORGANIZATIONS_ROOT_SESSIONS,
 		IAMActions.ENABLE_OUTBOUND_WEB_IDENTITY_FEDERATION,
 		IAMActions.PASS_ROLE,
+		IAMActions.PUT_ACCOUNT_PROPERTIES,
 		IAMActions.REJECT_DELEGATION_REQUEST,
 		IAMActions.REMOVE_CLIENT_ID_FROM_OPEN_ID_CONNECT_PROVIDER,
 		IAMActions.REMOVE_ROLE_FROM_INSTANCE_PROFILE,
@@ -668,6 +677,9 @@ const PolicyArnRegex = new RegExp(
 );
 const RoleArnRegex = new RegExp(
 	"^arn:(?<partition>[^:]+):iam::(?<account>[^:]*):role/(?<roleNameWithPath>[^:/?]+)$",
+);
+const RoleTemplateArnRegex = new RegExp(
+	"^arn:(?<partition>[^:]+):iam::aws:role-template/(?<awsServicePrincipal>[^:/?]+)/(?<roleTemplateName>[^:/?]+):(?<roleTemplateMajorVersion>[^:/?]+)$",
 );
 const SamlProviderArnRegex = new RegExp(
 	"^arn:(?<partition>[^:]+):iam::(?<account>[^:]*):saml-provider/(?<samlProviderName>[^:/?]+)$",
@@ -1101,6 +1113,59 @@ export class IAMResources {
 	}
 
 	/**
+	 * Builds an ARN for the role-template resource.
+	 */
+	static roleTemplate(props: {
+		/** The AWSServicePrincipal component of the ARN. */
+		readonly awsServicePrincipal: string;
+		/** The RoleTemplateName component of the ARN. */
+		readonly roleTemplateName: string;
+		/** The RoleTemplateMajorVersion component of the ARN. */
+		readonly roleTemplateMajorVersion: string;
+		/** AWS region. Defaults to "*". */
+		readonly region?: string;
+		/** AWS account ID. Defaults to "*". */
+		readonly account?: string;
+		/** AWS partition. Defaults to "aws". */
+		readonly partition?: string;
+	}): string {
+		return `arn:${props.partition ?? "aws"}:iam::aws:role-template/${props.awsServicePrincipal}/${props.roleTemplateName}:${props.roleTemplateMajorVersion}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the role-template resource.
+	 */
+	static isValidRoleTemplateArn(arn: string): boolean {
+		return RoleTemplateArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a role-template ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseRoleTemplateArn(arn: string): {
+		partition: string;
+		region: string;
+		account: string;
+		awsServicePrincipal: string;
+		roleTemplateName: string;
+		roleTemplateMajorVersion: string;
+	} {
+		const match = RoleTemplateArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid role-template ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			awsServicePrincipal: match.groups!.awsServicePrincipal,
+			roleTemplateName: match.groups!.roleTemplateName,
+			roleTemplateMajorVersion: match.groups!.roleTemplateMajorVersion,
+		};
+	}
+
+	/**
 	 * Builds an ARN for the saml-provider resource.
 	 */
 	static samlProvider(props: {
@@ -1272,6 +1337,16 @@ export class IAMOperations {
 	/** IAM actions required for the AcceptDelegationRequest API call. */
 	static readonly ACCEPT_DELEGATION_REQUEST: string[] = [
 		"iam:AcceptDelegationRequest",
+	];
+	/** IAM actions required for the AcquireRole API call. */
+	static readonly ACQUIRE_ROLE: string[] = [
+		"iam:AttachRolePolicy",
+		"iam:CreateRole",
+		"iam:GetRole",
+		"iam:GetRoleTemplateVersion",
+		"iam:PutRolePermissionsBoundary",
+		"iam:PutRolePolicy",
+		"iam:TagRole",
 	];
 	/** IAM actions required for the AddClientIDToOpenIDConnectProvider API call. */
 	static readonly ADD_CLIENT_ID_TO_OPEN_ID_CONNECT_PROVIDER: string[] = [
@@ -1466,6 +1541,10 @@ export class IAMOperations {
 	static readonly GET_ACCOUNT_PASSWORD_POLICY: string[] = [
 		"iam:GetAccountPasswordPolicy",
 	];
+	/** IAM actions required for the GetAccountProperties API call. */
+	static readonly GET_ACCOUNT_PROPERTIES: string[] = [
+		"iam:GetAccountProperties",
+	];
 	/** IAM actions required for the GetAccountSummary API call. */
 	static readonly GET_ACCOUNT_SUMMARY: string[] = ["iam:GetAccountSummary"];
 	/** IAM actions required for the GetContextKeysForCustomPolicy API call. */
@@ -1516,6 +1595,10 @@ export class IAMOperations {
 	static readonly GET_ROLE: string[] = ["iam:GetRole"];
 	/** IAM actions required for the GetRolePolicy API call. */
 	static readonly GET_ROLE_POLICY: string[] = ["iam:GetRolePolicy"];
+	/** IAM actions required for the GetRoleTemplateVersion API call. */
+	static readonly GET_ROLE_TEMPLATE_VERSION: string[] = [
+		"iam:GetRoleTemplateVersion",
+	];
 	/** IAM actions required for the GetSAMLProvider API call. */
 	static readonly GET_SAML_PROVIDER: string[] = ["iam:GetSAMLProvider"];
 	/** IAM actions required for the GetSSHPublicKey API call. */
@@ -1645,6 +1728,11 @@ export class IAMOperations {
 	/** IAM actions required for the ListVirtualMFADevices API call. */
 	static readonly LIST_VIRTUAL_MFA_DEVICES: string[] = [
 		"iam:ListVirtualMFADevices",
+	];
+	/** IAM actions required for the PutAccountProperties API call. */
+	static readonly PUT_ACCOUNT_PROPERTIES: string[] = [
+		"iam:CreateServiceLinkedRole",
+		"iam:PutAccountProperties",
 	];
 	/** IAM actions required for the PutGroupPolicy API call. */
 	static readonly PUT_GROUP_POLICY: string[] = ["iam:PutGroupPolicy"];
@@ -1811,6 +1899,7 @@ export class IAMConditions {
 	static readonly ATTACH_ROLE_POLICY_CONDITION_KEYS: string[] = [
 		"iam:PermissionsBoundary",
 		"iam:PolicyARN",
+		"iam:RoleTemplateARN",
 	];
 	/** Condition keys applicable to the AttachUserPolicy action. */
 	static readonly ATTACH_USER_POLICY_CONDITION_KEYS: string[] = [
@@ -1843,6 +1932,7 @@ export class IAMConditions {
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"iam:PermissionsBoundary",
+		"iam:RoleTemplateARN",
 	];
 	/** Condition keys applicable to the CreateSAMLProvider action. */
 	static readonly CREATE_SAML_PROVIDER_CONDITION_KEYS: string[] = [
@@ -1917,9 +2007,14 @@ export class IAMConditions {
 	/** Condition keys applicable to the GenerateOrganizationsAccessReport action. */
 	static readonly GENERATE_ORGANIZATIONS_ACCESS_REPORT_CONDITION_KEYS: string[] =
 		["iam:OrganizationsPolicyId"];
+	/** Condition keys applicable to the GetAccountProperties action. */
+	static readonly GET_ACCOUNT_PROPERTIES_CONDITION_KEYS: string[] = [
+		"iam:AccountPropertyNamespaces",
+	];
 	/** Condition keys applicable to the GetRole action. */
 	static readonly GET_ROLE_CONDITION_KEYS: string[] = [
 		"iam:PermissionsBoundary",
+		"iam:RoleTemplateARN",
 	];
 	/** Condition keys applicable to the ListDelegationRequests action. */
 	static readonly LIST_DELEGATION_REQUESTS_CONDITION_KEYS: string[] = [
@@ -1930,13 +2025,19 @@ export class IAMConditions {
 		"iam:AssociatedResourceArn",
 		"iam:PassedToService",
 	];
+	/** Condition keys applicable to the PutAccountProperties action. */
+	static readonly PUT_ACCOUNT_PROPERTIES_CONDITION_KEYS: string[] = [
+		"iam:AccountPropertyNamespaces",
+	];
 	/** Condition keys applicable to the PutRolePermissionsBoundary action. */
 	static readonly PUT_ROLE_PERMISSIONS_BOUNDARY_CONDITION_KEYS: string[] = [
 		"iam:PermissionsBoundary",
+		"iam:RoleTemplateARN",
 	];
 	/** Condition keys applicable to the PutRolePolicy action. */
 	static readonly PUT_ROLE_POLICY_CONDITION_KEYS: string[] = [
 		"iam:PermissionsBoundary",
+		"iam:RoleTemplateARN",
 	];
 	/** Condition keys applicable to the PutUserPermissionsBoundary action. */
 	static readonly PUT_USER_PERMISSIONS_BOUNDARY_CONDITION_KEYS: string[] = [
@@ -1974,6 +2075,7 @@ export class IAMConditions {
 	static readonly TAG_ROLE_CONDITION_KEYS: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
+		"iam:RoleTemplateARN",
 	];
 	/** Condition keys applicable to the TagSAMLProvider action. */
 	static readonly TAG_SAML_PROVIDER_CONDITION_KEYS: string[] = [
@@ -2043,6 +2145,8 @@ export class IAMConditions {
 	static readonly TAG_KEYS = "aws:TagKeys";
 	/** Condition key: iam:AWSServiceName (String) */
 	static readonly AWS_SERVICE_NAME = "iam:AWSServiceName";
+	/** Condition key: iam:AccountPropertyNamespaces (ArrayOfString) */
+	static readonly ACCOUNT_PROPERTY_NAMESPACES = "iam:AccountPropertyNamespaces";
 	/** Condition key: iam:AssociatedResourceArn (ARN) */
 	static readonly ASSOCIATED_RESOURCE_ARN = "iam:AssociatedResourceArn";
 	/** Condition key: iam:DelegationDuration (String) */
@@ -2071,6 +2175,8 @@ export class IAMConditions {
 	static readonly REGISTER_SECURITY_KEY = "iam:RegisterSecurityKey";
 	/** Condition key: iam:ResourceTag/${TagKey} (String) */
 	static readonly RESOURCE_TAG = "iam:ResourceTag/${TagKey}";
+	/** Condition key: iam:RoleTemplateARN (ARN) */
+	static readonly ROLE_TEMPLATE_ARN = "iam:RoleTemplateARN";
 	/** Condition key: iam:ServiceSpecificCredentialAgeDays (Numeric) */
 	static readonly SERVICE_SPECIFIC_CREDENTIAL_AGE_DAYS =
 		"iam:ServiceSpecificCredentialAgeDays";
@@ -2106,6 +2212,17 @@ export class IAMConditions {
 	 */
 	static awsServiceName(value: string): Record<string, Record<string, string>> {
 		return { StringEquals: { "iam:AWSServiceName": value } };
+	}
+
+	/**
+	 * Generates a condition block for `iam:AccountPropertyNamespaces`.
+	 */
+	static accountPropertyNamespaces(
+		values: string[],
+	): Record<string, Record<string, string[]>> {
+		return {
+			"ForAllValues:StringEquals": { "iam:AccountPropertyNamespaces": values },
+		};
 	}
 
 	/**
@@ -2219,6 +2336,15 @@ export class IAMConditions {
 	 */
 	static resourceTag(value: string): Record<string, Record<string, string>> {
 		return { StringEquals: { "iam:ResourceTag/${TagKey}": value } };
+	}
+
+	/**
+	 * Generates a condition block for `iam:RoleTemplateARN`.
+	 */
+	static roleTemplateARN(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { ArnEquals: { "iam:RoleTemplateARN": value } };
 	}
 
 	/**

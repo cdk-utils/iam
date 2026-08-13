@@ -320,9 +320,13 @@ export class QappsResources {
  */
 export class QappsOperations {
 	/** IAM actions required for the AssociateLibraryItemReview API call. */
-	static readonly ASSOCIATE_LIBRARY_ITEM_REVIEW: string[] = [];
+	static readonly ASSOCIATE_LIBRARY_ITEM_REVIEW: string[] = [
+		"qapps:AssociateLibraryItemReview",
+	];
 	/** IAM actions required for the AssociateQAppWithUser API call. */
-	static readonly ASSOCIATE_Q_APP_WITH_USER: string[] = [];
+	static readonly ASSOCIATE_Q_APP_WITH_USER: string[] = [
+		"qapps:AssociateQAppWithUser",
+	];
 	/** IAM actions required for the BatchCreateCategory API call. */
 	static readonly BATCH_CREATE_CATEGORY: string[] = [
 		"qapps:BatchCreateCategory",
@@ -350,13 +354,17 @@ export class QappsOperations {
 		"qapps:DescribeQAppPermissions",
 	];
 	/** IAM actions required for the DisassociateLibraryItemReview API call. */
-	static readonly DISASSOCIATE_LIBRARY_ITEM_REVIEW: string[] = [];
+	static readonly DISASSOCIATE_LIBRARY_ITEM_REVIEW: string[] = [
+		"qapps:DisassociateLibraryItemReview",
+	];
 	/** IAM actions required for the DisassociateQAppFromUser API call. */
 	static readonly DISASSOCIATE_Q_APP_FROM_USER: string[] = [
 		"qapps:DisassociateQAppFromUser",
 	];
 	/** IAM actions required for the ExportQAppSessionData API call. */
-	static readonly EXPORT_Q_APP_SESSION_DATA: string[] = [];
+	static readonly EXPORT_Q_APP_SESSION_DATA: string[] = [
+		"qapps:ExportQAppSessionData",
+	];
 	/** IAM actions required for the GetLibraryItem API call. */
 	static readonly GET_LIBRARY_ITEM: string[] = ["qapps:GetLibraryItem"];
 	/** IAM actions required for the GetQApp API call. */

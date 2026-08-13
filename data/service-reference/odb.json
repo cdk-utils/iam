@@ -40,6 +40,26 @@
       }
     },
     {
+      "Name": "AssociateVirtualMachinesToExadbVmCluster",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "exadb-vm-cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "CreateAutonomousDatabase",
       "ActionConditionKeys": [
         "aws:RequestTag/${TagKey}",
@@ -195,6 +215,52 @@
           "Name": "db-node"
         }
       ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateExadbVmCluster",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "exascale-db-storage-vault"
+        },
+        {
+          "Name": "odb-network"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateExascaleDbStorageVault",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -402,6 +468,46 @@
       }
     },
     {
+      "Name": "DeleteExadbVmCluster",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "exadb-vm-cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteExascaleDbStorageVault",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "exascale-db-storage-vault"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "DeleteGrantShare",
       "Annotations": {
         "Properties": {
@@ -471,6 +577,9 @@
           "Name": "cloud-exadata-infrastructure"
         },
         {
+          "Name": "exascale-db-storage-vault"
+        },
+        {
           "Name": "odb-network"
         }
       ],
@@ -495,6 +604,26 @@
         },
         {
           "Name": "cloud-vm-cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateVirtualMachinesFromExadbVmCluster",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "exadb-vm-cluster"
         }
       ],
       "SupportedBy": {
@@ -706,6 +835,46 @@
       }
     },
     {
+      "Name": "GetExadbVmCluster",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "exadb-vm-cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetExascaleDbStorageVault",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "exascale-db-storage-vault"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "GetOciOnboardingStatus",
       "Annotations": {
         "Properties": {
@@ -773,6 +942,9 @@
       "Resources": [
         {
           "Name": "cloud-exadata-infrastructure"
+        },
+        {
+          "Name": "exascale-db-storage-vault"
         },
         {
           "Name": "odb-network"
@@ -1034,7 +1206,57 @@
       }
     },
     {
+      "Name": "ListExadbVmClusters",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "exascale-db-storage-vault"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListExascaleDbStorageVaults",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ListFlexComponents",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListGiMinorVersions",
       "Annotations": {
         "Properties": {
           "IsList": true,
@@ -1146,6 +1368,12 @@
           "Name": "db-node"
         },
         {
+          "Name": "exadb-vm-cluster"
+        },
+        {
+          "Name": "exascale-db-storage-vault"
+        },
+        {
           "Name": "odb-network"
         },
         {
@@ -1170,6 +1398,9 @@
       "Resources": [
         {
           "Name": "cloud-exadata-infrastructure"
+        },
+        {
+          "Name": "exascale-db-storage-vault"
         },
         {
           "Name": "odb-network"
@@ -1404,6 +1635,12 @@
           "Name": "db-node"
         },
         {
+          "Name": "exadb-vm-cluster"
+        },
+        {
+          "Name": "exascale-db-storage-vault"
+        },
+        {
           "Name": "odb-network"
         },
         {
@@ -1447,6 +1684,12 @@
         },
         {
           "Name": "db-node"
+        },
+        {
+          "Name": "exadb-vm-cluster"
+        },
+        {
+          "Name": "exascale-db-storage-vault"
         },
         {
           "Name": "odb-network"
@@ -1513,6 +1756,46 @@
       "Resources": [
         {
           "Name": "cloud-exadata-infrastructure"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateExadbVmCluster",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "exadb-vm-cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateExascaleDbStorageVault",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "exascale-db-storage-vault"
         }
       ],
       "SupportedBy": {
@@ -1662,6 +1945,16 @@
       ]
     },
     {
+      "Name": "AssociateVirtualMachinesToExadbVmCluster",
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "associate_virtual_machines_to_exadb_vm_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "CreateAutonomousDatabase",
       "AuthorizedActions": [
         {
@@ -1782,6 +2075,32 @@
         {
           "Name": "odb",
           "Method": "create_cloud_vm_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateExadbVmCluster",
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "create_exadb_vm_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateExascaleDbStorageVault",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateExascaleDbStorageVault",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "create_exascale_db_storage_vault",
           "Package": "Boto3"
         }
       ]
@@ -1911,6 +2230,32 @@
       ]
     },
     {
+      "Name": "DeleteExadbVmCluster",
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "delete_exadb_vm_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteExascaleDbStorageVault",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteExascaleDbStorageVault",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "delete_exascale_db_storage_vault",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DeleteOdbNetwork",
       "AuthorizedActions": [
         {
@@ -1954,6 +2299,16 @@
         {
           "Name": "odb",
           "Method": "disassociate_iam_role_from_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateVirtualMachinesFromExadbVmCluster",
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "disassociate_virtual_machines_from_exadb_vm_cluster",
           "Package": "Boto3"
         }
       ]
@@ -2114,6 +2469,38 @@
         {
           "Name": "odb",
           "Method": "get_db_server",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetExadbVmCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "GetExadbVmCluster",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "get_exadb_vm_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetExascaleDbStorageVault",
+      "AuthorizedActions": [
+        {
+          "Name": "GetExascaleDbStorageVault",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "get_exascale_db_storage_vault",
           "Package": "Boto3"
         }
       ]
@@ -2386,6 +2773,54 @@
         {
           "Name": "odb",
           "Method": "list_db_system_shapes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListExadbVmClusters",
+      "AuthorizedActions": [
+        {
+          "Name": "ListExadbVmClusters",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "list_exadb_vm_clusters",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListExascaleDbStorageVaults",
+      "AuthorizedActions": [
+        {
+          "Name": "ListExascaleDbStorageVaults",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "list_exascale_db_storage_vaults",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListGiMinorVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListGiMinorVersions",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "list_gi_minor_versions",
           "Package": "Boto3"
         }
       ]
@@ -2704,6 +3139,38 @@
       ]
     },
     {
+      "Name": "UpdateExadbVmCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateExadbVmCluster",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "update_exadb_vm_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateExascaleDbStorageVault",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateExascaleDbStorageVault",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "update_exascale_db_storage_vault",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "UpdateOdbNetwork",
       "AuthorizedActions": [
         {
@@ -2786,6 +3253,24 @@
       "Name": "db-node",
       "ARNFormats": [
         "arn:${Partition}:odb:${Region}:${Account}:db-node/${DbNodeId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "exadb-vm-cluster",
+      "ARNFormats": [
+        "arn:${Partition}:odb:${Region}:${Account}:exadb-vm-cluster/${ExadbVmClusterId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "exascale-db-storage-vault",
+      "ARNFormats": [
+        "arn:${Partition}:odb:${Region}:${Account}:exascale-db-storage-vault/${ExascaleDbStorageVaultId}"
       ],
       "ConditionKeys": [
         "aws:ResourceTag/${TagKey}"

@@ -184,6 +184,7 @@ export class SupportOperations {
 		"trustedadvisor:DescribeCheckItems",
 		"support:DescribeTrustedAdvisorCheckResult",
 		"trustedadvisor:ListRecommendationResources",
+		"trustedadvisor:ListRecommendationsForResource",
 	];
 	/** IAM actions required for the DescribeTrustedAdvisorCheckSummaries API call. */
 	static readonly DESCRIBE_TRUSTED_ADVISOR_CHECK_SUMMARIES: string[] = [

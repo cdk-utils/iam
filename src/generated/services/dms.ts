@@ -1107,6 +1107,7 @@ export class DmsOperations {
 	static readonly CREATE_REPLICATION_INSTANCE: string[] = [
 		"dms:AddTagsToResource",
 		"dms:CreateReplicationInstance",
+		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateReplicationSubnetGroup API call. */
 	static readonly CREATE_REPLICATION_SUBNET_GROUP: string[] = [

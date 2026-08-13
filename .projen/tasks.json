@@ -301,6 +301,15 @@
         }
       ]
     },
+    "update-service-reference": {
+      "name": "update-service-reference",
+      "description": "Sync AWS service reference data and regenerate constants for updated services",
+      "steps": [
+        {
+          "exec": "tsx scripts/run-update.ts"
+        }
+      ]
+    },
     "upgrade": {
       "name": "upgrade",
       "description": "upgrade dependencies",

@@ -990,6 +990,12 @@
   "Operations": [
     {
       "Name": "AssociateLibraryItemReview",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateLibraryItemReview",
+          "Service": "qapps"
+        }
+      ],
       "SDK": [
         {
           "Name": "qapps",
@@ -1000,6 +1006,12 @@
     },
     {
       "Name": "AssociateQAppWithUser",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateQAppWithUser",
+          "Service": "qapps"
+        }
+      ],
       "SDK": [
         {
           "Name": "qapps",
@@ -1154,6 +1166,12 @@
     },
     {
       "Name": "DisassociateLibraryItemReview",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateLibraryItemReview",
+          "Service": "qapps"
+        }
+      ],
       "SDK": [
         {
           "Name": "qapps",
@@ -1180,6 +1198,12 @@
     },
     {
       "Name": "ExportQAppSessionData",
+      "AuthorizedActions": [
+        {
+          "Name": "ExportQAppSessionData",
+          "Service": "qapps"
+        }
+      ],
       "SDK": [
         {
           "Name": "qapps",
