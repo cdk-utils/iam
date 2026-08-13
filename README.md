@@ -4,9 +4,12 @@ CDK Constructs and helper functions to streamline the creation of IAM resources.
 
 This package provides:
 
-- **Type-safe AWS service constants** — auto-generated from the official AWS Service Authorization Reference, giving you compile-time checked action names, resource ARN patterns, and condition keys for every AWS service.
-- **IAM helper functions** — utilities to validate policies, build least-privilege statements, and simplify common IAM patterns when working with CDK.
-- **Ready-to-use CDK constructs** — opinionated, production-ready IAM constructs that encode best practices out of the box.
+- **Type-safe AWS service constants** — auto-generated from the official AWS Service Authorization Reference, giving you compile-time checked action names, resource ARN patterns, and condition keys for every 455+ AWS services.
+- **ARN builders, validators, and parsers** — type-safe functions to construct, validate, and decompose ARNs for every resource type.
+- **Operation → IAM action mappings** — know exactly which IAM actions are required for each API call (including cross-service dependencies).
+- **Condition key builders** — typed helpers to generate IAM condition blocks with the correct operators.
+
+> **Coming soon:** IAM helper functions and ready-to-use CDK constructs.
 
 ## Installation
 
@@ -14,99 +17,121 @@ This package provides:
 npm install @cdk_utils/iam
 ```
 
+## Usage
+
+```typescript
+import {
+  DynamoDBActions,
+  DynamoDBResources,
+  DynamoDBOperations,
+  DynamoDBConditions,
+} from "@cdk_utils/iam";
+
+// Action constants (type-safe, no typos)
+const action = DynamoDBActions.CreateTable; // "dynamodb:CreateTable"
+const getAction = DynamoDBActions.actionGetItem; // "dynamodb:GetItem"
+
+// Access-level groupings
+const readActions = DynamoDBActions.AllReadActions; // string[]
+const writeActions = DynamoDBActions.AllWriteActions; // string[]
+
+// ARN builders (with defaults: partition="aws", region="*", account="*")
+const tableArn = DynamoDBResources.table({ tableName: "Orders" });
+// → "arn:aws:dynamodb:*:*:table/Orders"
+
+const indexArn = DynamoDBResources.index({
+  tableName: "Orders",
+  indexName: "GSI1",
+  region: "us-east-1",
+  account: "123456789012",
+});
+// → "arn:aws:dynamodb:us-east-1:123456789012:table/Orders/index/GSI1"
+
+// ARN validation
+DynamoDBResources.isValidTableArn("arn:aws:dynamodb:us-east-1:123:table/T"); // true
+
+// ARN parsing (throws on invalid)
+const parts = DynamoDBResources.parseTableArn("arn:aws:dynamodb:us-east-1:123:table/Orders");
+// → { partition: "aws", region: "us-east-1", account: "123", tableName: "Orders" }
+
+// Operation → required IAM actions (what you actually need to call CreateTable)
+const required = DynamoDBOperations.CreateTable;
+// → ["dynamodb:AssociateTableReplica", "dynamodb:BatchWriteItem", "dynamodb:CreateTable", ...]
+
+// Condition key builders (type-safe operators)
+const condition = DynamoDBConditions.attributes(["col1", "col2"]);
+// → { "ForAllValues:StringEquals": { "dynamodb:Attributes": ["col1", "col2"] } }
+```
+
+## Generated Classes per Service
+
+Each AWS service generates up to 4 classes:
+
+| Class | Purpose | Example |
+|-------|---------|---------|
+| `{Service}Actions` | Action string constants + access-level groupings | `S3Actions.PutObject` |
+| `{Service}Resources` | ARN builders, validators (`isValid*Arn`), parsers (`parse*Arn`) | `S3Resources.bucket(...)` |
+| `{Service}Operations` | API operation → required IAM actions arrays | `S3Operations.PutObject` |
+| `{Service}Conditions` | Condition key constants + typed builder methods | `S3Conditions.prefix("docs/")` |
+
+Services without resources/operations/conditions skip the corresponding class.
+
 ## Project Structure
 
 ```
 iam/
-├── src/                              # Published library source
-│   ├── index.ts                      # Barrel exports
-│   ├── helpers/                      # IAM helper functions
-│   │   ├── index.ts
-│   │   ├── policy-validator.ts       # Validate IAM policy documents
-│   │   ├── statement-builder.ts      # Fluent API for IAM statements
-│   │   └── ...
-│   ├── constructs/                   # CDK constructs
-│   │   ├── index.ts
-│   │   ├── least-privilege-role.ts   # Role with scoped-down permissions
-│   │   └── ...
-│   └── generated/                    # Auto-generated service constants
-│       ├── index.ts
-│       └── services/                 # One file per AWS service
-│           ├── s3.ts
-│           ├── lambda.ts
-│           └── ...
+├── src/
+│   ├── index.ts                      # Barrel re-export
+│   ├── generated/                    # Auto-generated (DO NOT EDIT)
+│   │   ├── index.ts                  # Barrel for all services
+│   │   └── services/                 # One file per AWS service (455+)
+│   │       ├── dynamodb.ts
+│   │       ├── s3.ts
+│   │       ├── lambda.ts
+│   │       └── ...
+│   ├── helpers/                      # (Planned) IAM helper functions
+│   └── constructs/                   # (Planned) CDK constructs
 │
 ├── scripts/                          # Tooling (NOT published to npm)
-│   ├── fetch-service-reference.ts    # Downloads AWS service reference JSONs
-│   └── generate-constants.ts         # Transforms JSONs → TypeScript constants
+│   ├── types.ts                      # TypeScript types for the AWS API
+│   ├── fetch-service-reference.ts    # Fetch + validate API responses
+│   ├── sync-service-reference.ts     # Timestamp-based incremental sync
+│   ├── generate-service.ts           # Generate TS for a single service
+│   ├── generate-index.ts             # Regenerate barrel exports
+│   ├── generate-all.ts              # Generate all services
+│   ├── run-update.ts                 # Unified: sync + generate + index
+│   ├── run-sync.ts                   # CLI for sync-only
+│   ├── naming.ts                     # PascalCase/camelCase/UPPER_SNAKE utilities
+│   ├── arn-codegen.ts                # ARN template → code generation
+│   └── condition-codegen.ts          # Condition type → operator mapping
 │
 ├── data/                             # Raw data (NOT published to npm)
-│   └── service-reference/            # AWS service authorization reference files
-│       ├── .last-sync-timestamp      # Tracks last successful sync
-│       ├── s3.json
-│       ├── lambda.json
+│   └── service-reference/            # 455+ AWS service JSON files
+│       ├── .last-sync-timestamp
+│       ├── dynamodb.json
 │       └── ...
 │
-├── test/                             # Unit tests (mirrors src/ structure)
-│   ├── helpers/
-│   ├── constructs/
-│   └── generated/
+├── test/scripts/                     # Unit tests (154 tests)
 │
 ├── .github/workflows/
 │   ├── build.yml                     # CI (projen-managed)
 │   ├── release.yml                   # Release to npm (projen-managed)
 │   ├── upgrade-main.yml              # Dependency upgrades (projen-managed)
-│   └── update-service-reference.yml  # Cron: sync AWS data → open PR
+│   └── update-service-reference.yml  # Cron: sync → generate → PR
 │
 ├── .projenrc.ts                      # Project configuration
 └── package.json
 ```
 
-## Architecture
+## Automated Updates
 
-### Generated Constants (`src/generated/`)
+A GitHub Action (`update-service-reference.yml`) keeps the generated code in sync with AWS:
 
-The package includes auto-generated TypeScript constants derived from the [AWS Service Authorization Reference](https://docs.aws.amazon.com/service-authorization/latest/reference/). Each AWS service gets a single file exporting:
+- **Schedule:** Weekdays at 06:00 UTC
+- **Manual trigger:** `gh workflow run update-service-reference`
+- **Flow:** Fetches updated service data → regenerates only changed services → runs full build → opens a PR if anything changed
 
-- **Actions** — all IAM actions for the service (e.g., `S3Actions.GetObject`)
-- **Resource types** — ARN patterns for each resource (e.g., `S3Resources.Bucket`)
-- **Condition keys** — available condition keys (e.g., `S3ConditionKeys.Prefix`)
-
-These constants are **committed to the repository** so the package builds without running the generator, and diffs are reviewable in PRs.
-
-### Scripts (`scripts/`)
-
-Two TypeScript scripts (executed via `tsx`) handle the data pipeline:
-
-1. **`fetch-service-reference.ts`** — Connects to the AWS Service Authorization Reference API, checks modification timestamps against `.last-sync-timestamp`, and downloads updated service JSON files to `data/service-reference/`.
-
-2. **`generate-constants.ts`** — Reads the raw JSON files from `data/service-reference/`, transforms them into well-typed TypeScript source files, and writes them to `src/generated/services/`. Includes proper JSDoc comments and barrel exports.
-
-### Automated Updates (GitHub Actions)
-
-A cron-triggered GitHub Action (`update-service-reference.yml`) runs the full pipeline:
-
-1. Execute `fetch-service-reference.ts` to pull the latest data
-2. Execute `generate-constants.ts` to regenerate TypeScript files
-3. If any files changed, open a PR with the updates for review
-
-This ensures the package stays in sync with AWS service changes without manual intervention.
-
-### Helper Functions (`src/helpers/`)
-
-Utility functions for working with IAM in CDK:
-
-- **Policy validation** — validate policy document structure, check for overly permissive statements, detect common anti-patterns
-- **Statement builder** — fluent API for constructing `PolicyStatement` objects with guardrails
-- **Resource scoping** — helpers to narrow wildcard permissions to specific resource ARNs
-
-### CDK Constructs (`src/constructs/`)
-
-Production-ready constructs that encode IAM best practices:
-
-- **Least-privilege roles** — constructs that scope down permissions based on actual usage patterns
-- **Boundary-aware roles** — roles that automatically respect permission boundaries
-- **Service-linked patterns** — pre-configured role/policy combinations for common AWS service integrations
+The update is **incremental** — only services whose `modified` timestamp exceeds the stored `.last-sync-timestamp` are re-fetched and regenerated.
 
 ## Development
 
@@ -115,34 +140,34 @@ Production-ready constructs that encode IAM best practices:
 - Node.js 24.x
 - npm
 
-### Building
+### Projen Tasks
 
 ```bash
-npx projen build
+npx projen build                    # Full build (jsii + tests + packaging)
+npx projen test                     # Run unit tests
+npx projen update-service-reference # Sync data + regenerate constants
+npx projen sync-service-reference   # Fetch data only (no code generation)
+npx projen generate-constants       # Regenerate all 455+ service files
+npx projen generate-service         # Generate for a single service JSON
+npx projen generate-index           # Regenerate the barrel index
 ```
 
-### Updating AWS Service Reference Data
+### How Code Generation Works
 
-```bash
-# Fetch latest service reference files
-npx tsx scripts/fetch-service-reference.ts
-
-# Regenerate TypeScript constants
-npx tsx scripts/generate-constants.ts
-```
-
-### Running Tests
-
-```bash
-npx projen test
-```
+1. **Data source:** [AWS Service Authorization Reference API](https://servicereference.us-east-1.amazonaws.com/)
+2. **Sync:** `fetch-service-reference.ts` downloads service JSONs with timestamp-based filtering
+3. **Generate:** `generate-service.ts` transforms one JSON → one TypeScript file with named interfaces and static classes
+4. **Naming conventions:**
+   - Actions: PascalCase as-is (`CreateTable`, `PutItem`); `Get*`/`Set*` prefixed with `action`/`op` for jsii compatibility
+   - Resources: camelCase methods (`table(...)`, `index(...)`)
+   - Interfaces: `{ServicePrefix}{Resource}ArnProps` / `{ServicePrefix}{Resource}ArnComponents`
+5. **Formatting:** All generated files are auto-formatted with Biome
 
 ## Projen
 
 This project is managed by [projen](https://github.com/projen/projen) via the `@cdk_utils/projen_template` template. Do **not** manually edit generated files — modify `.projenrc.ts` and run `npx projen` instead.
 
-Files and directories excluded from the npm package (but committed to git):
-
+Files excluded from the npm package (but committed to git):
 - `scripts/` — build/sync tooling
 - `data/` — raw AWS service reference JSONs
 - `test/` — unit tests
