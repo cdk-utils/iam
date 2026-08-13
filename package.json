@@ -51,13 +51,13 @@
     "projen": "0.99.0",
     "ts-jest": "^29.4.12",
     "ts-node": "^10.9.2",
-    "typescript": "~5.7.0",
+    "typescript": "~5.9.3",
     "@cdk_utils/projen_template": "^2.0.0"
   },
   "peerDependencies": {
     "aws-cdk-lib": "^2.150.0",
     "constructs": "^10.0.5",
-    "projen": ">=0.99.0"
+    "projen": ">=0.101.31"
   },
   "keywords": [
     "aws-cdk",
