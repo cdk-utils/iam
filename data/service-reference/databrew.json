@@ -1,0 +1,1772 @@
+{
+  "Name": "databrew",
+  "Actions": [
+    {
+      "Name": "BatchDeleteRecipeVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Recipe"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateDataset",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateProfileJob",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateProject",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateRecipe",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateRecipeJob",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateRuleset",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateSchedule",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteDataset",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Dataset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteProject",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Project"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteRecipeVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Recipe"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteRuleset",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Ruleset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteSchedule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Schedule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeDataset",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Dataset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeJobRun",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeProject",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Project"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeRecipe",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Recipe"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeRuleset",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Ruleset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeSchedule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Schedule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDatasets",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListJobRuns",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListProjects",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListRecipeVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Recipe"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListRecipes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListRulesets",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListSchedules",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Dataset"
+        },
+        {
+          "Name": "Job"
+        },
+        {
+          "Name": "Project"
+        },
+        {
+          "Name": "Recipe"
+        },
+        {
+          "Name": "Ruleset"
+        },
+        {
+          "Name": "Schedule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PublishRecipe",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Recipe"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SendProjectSessionAction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Project"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartJobRun",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartProjectSession",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Project"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopJobRun",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Dataset"
+        },
+        {
+          "Name": "Job"
+        },
+        {
+          "Name": "Project"
+        },
+        {
+          "Name": "Recipe"
+        },
+        {
+          "Name": "Ruleset"
+        },
+        {
+          "Name": "Schedule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Dataset"
+        },
+        {
+          "Name": "Job"
+        },
+        {
+          "Name": "Project"
+        },
+        {
+          "Name": "Recipe"
+        },
+        {
+          "Name": "Ruleset"
+        },
+        {
+          "Name": "Schedule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateDataset",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Dataset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateProfileJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateProject",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Project"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateRecipe",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Recipe"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateRecipeJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateRuleset",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Ruleset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateSchedule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Schedule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "BatchDeleteRecipeVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchDeleteRecipeVersion",
+          "Service": "databrew"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "databrew",
+          "Method": "batch_delete_recipe_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDataset",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDataset",
+          "Service": "databrew"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "databrew"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "databrew",
+          "Method": "create_dataset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateProfileJob",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateProfileJob",
+          "Service": "databrew"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "databrew.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "databrew"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "databrew",
+          "Method": "create_profile_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateProject",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateProject",
+          "Service": "databrew"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "databrew.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "databrew"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "databrew",
+          "Method": "create_project",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRecipe",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRecipe",
+          "Service": "databrew"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "databrew"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "databrew",
+          "Method": "create_recipe",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRecipeJob",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRecipeJob",
+          "Service": "databrew"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "databrew.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "databrew"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "databrew",
+          "Method": "create_recipe_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRuleset",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRuleset",
+          "Service": "databrew"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "databrew"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "databrew",
+          "Method": "create_ruleset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSchedule",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSchedule",
+          "Service": "databrew"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "databrew"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "databrew",
+          "Method": "create_schedule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDataset",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDataset",
+          "Service": "databrew"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "databrew",
+          "Method": "delete_dataset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteJob",
+          "Service": "databrew"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "databrew",
+          "Method": "delete_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteProject",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteProject",
+          "Service": "databrew"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "databrew",
+          "Method": "delete_project",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRecipeVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRecipeVersion",
+          "Service": "databrew"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "databrew",
+          "Method": "delete_recipe_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRuleset",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRuleset",
+          "Service": "databrew"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "databrew",
+          "Method": "delete_ruleset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSchedule",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSchedule",
+          "Service": "databrew"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "databrew",
+          "Method": "delete_schedule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDataset",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDataset",
+          "Service": "databrew"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "databrew",
+          "Method": "describe_dataset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeJob",
+          "Service": "databrew"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "databrew",
+          "Method": "describe_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeJobRun",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeJobRun",
+          "Service": "databrew"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "databrew",
+          "Method": "describe_job_run",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeProject",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeProject",
+          "Service": "databrew"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "databrew",
+          "Method": "describe_project",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeRecipe",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeRecipe",
+          "Service": "databrew"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "databrew",
+          "Method": "describe_recipe",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeRuleset",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeRuleset",
+          "Service": "databrew"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "databrew",
+          "Method": "describe_ruleset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSchedule",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSchedule",
+          "Service": "databrew"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "databrew",
+          "Method": "describe_schedule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDatasets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDatasets",
+          "Service": "databrew"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "databrew",
+          "Method": "list_datasets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListJobRuns",
+      "AuthorizedActions": [
+        {
+          "Name": "ListJobRuns",
+          "Service": "databrew"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "databrew",
+          "Method": "list_job_runs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListJobs",
+          "Service": "databrew"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "databrew",
+          "Method": "list_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProjects",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProjects",
+          "Service": "databrew"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "databrew",
+          "Method": "list_projects",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRecipeVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRecipeVersions",
+          "Service": "databrew"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "databrew",
+          "Method": "list_recipe_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRecipes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRecipes",
+          "Service": "databrew"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "databrew",
+          "Method": "list_recipes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRulesets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRulesets",
+          "Service": "databrew"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "databrew",
+          "Method": "list_rulesets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSchedules",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSchedules",
+          "Service": "databrew"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "databrew",
+          "Method": "list_schedules",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "databrew"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "databrew",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PublishRecipe",
+      "AuthorizedActions": [
+        {
+          "Name": "PublishRecipe",
+          "Service": "databrew"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "databrew",
+          "Method": "publish_recipe",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SendProjectSessionAction",
+      "AuthorizedActions": [
+        {
+          "Name": "SendProjectSessionAction",
+          "Service": "databrew"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "databrew",
+          "Method": "send_project_session_action",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartJobRun",
+      "AuthorizedActions": [
+        {
+          "Name": "StartJobRun",
+          "Service": "databrew"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "databrew",
+          "Method": "start_job_run",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartProjectSession",
+      "AuthorizedActions": [
+        {
+          "Name": "StartProjectSession",
+          "Service": "databrew"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "databrew",
+          "Method": "start_project_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopJobRun",
+      "AuthorizedActions": [
+        {
+          "Name": "StopJobRun",
+          "Service": "databrew"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "databrew",
+          "Method": "stop_job_run",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "databrew"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "databrew",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "databrew"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "databrew",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDataset",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDataset",
+          "Service": "databrew"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "databrew",
+          "Method": "update_dataset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateProfileJob",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "databrew.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateProfileJob",
+          "Service": "databrew"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "databrew",
+          "Method": "update_profile_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateProject",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "databrew.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateProject",
+          "Service": "databrew"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "databrew",
+          "Method": "update_project",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRecipe",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateRecipe",
+          "Service": "databrew"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "databrew",
+          "Method": "update_recipe",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRecipeJob",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "databrew.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateRecipeJob",
+          "Service": "databrew"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "databrew",
+          "Method": "update_recipe_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRuleset",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateRuleset",
+          "Service": "databrew"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "databrew",
+          "Method": "update_ruleset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSchedule",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSchedule",
+          "Service": "databrew"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "databrew",
+          "Method": "update_schedule",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "Dataset",
+      "ARNFormats": [
+        "arn:${Partition}:databrew:${Region}:${Account}:dataset/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Job",
+      "ARNFormats": [
+        "arn:${Partition}:databrew:${Region}:${Account}:job/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Project",
+      "ARNFormats": [
+        "arn:${Partition}:databrew:${Region}:${Account}:project/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Recipe",
+      "ARNFormats": [
+        "arn:${Partition}:databrew:${Region}:${Account}:recipe/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Ruleset",
+      "ARNFormats": [
+        "arn:${Partition}:databrew:${Region}:${Account}:ruleset/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Schedule",
+      "ARNFormats": [
+        "arn:${Partition}:databrew:${Region}:${Account}:schedule/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

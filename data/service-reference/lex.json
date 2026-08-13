@@ -1,0 +1,5862 @@
+{
+  "Name": "lex",
+  "Actions": [
+    {
+      "Name": "BatchCreateCustomVocabularyItem",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchDeleteCustomVocabularyItem",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchUpdateCustomVocabularyItem",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BuildBotLocale",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateBot",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        },
+        {
+          "Name": "bot alias"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateBotAlias",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot alias"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateBotChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateBotLocale",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateBotReplica",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateBotVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        },
+        {
+          "Name": "bot version"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateCustomVocabulary",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateExport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        },
+        {
+          "Name": "test set"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateIntent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateIntentVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "intent version"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        },
+        {
+          "Name": "bot alias"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateResourcePolicyStatement",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        },
+        {
+          "Name": "bot alias"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateSlot",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateSlotType",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateSlotTypeVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "slottype version"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateTestSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateTestSetDiscrepancyReport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "test set"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateUploadUrl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteBot",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        },
+        {
+          "Name": "bot alias"
+        },
+        {
+          "Name": "bot version"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteBotAlias",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot alias"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteBotAnalyzerRecommendation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteBotChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteBotChannelAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteBotLocale",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteBotReplica",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteBotVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        },
+        {
+          "Name": "bot version"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteCustomVocabulary",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteExport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        },
+        {
+          "Name": "test set"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteImport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        },
+        {
+          "Name": "test set"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteIntent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        },
+        {
+          "Name": "intent version"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteIntentVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "intent version"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        },
+        {
+          "Name": "bot alias"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteResourcePolicyStatement",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        },
+        {
+          "Name": "bot alias"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteSession",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot alias"
+        },
+        {
+          "Name": "bot version"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteSlot",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteSlotType",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        },
+        {
+          "Name": "slottype version"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteSlotTypeVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "slottype version"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteTestSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "test set"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteUtterances",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        },
+        {
+          "Name": "bot version"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeBot",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeBotAlias",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot alias"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeBotAnalyzerRecommendation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeBotChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeBotLocale",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeBotRecommendation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeBotReplica",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeBotResourceGeneration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeBotVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeCustomVocabulary",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeCustomVocabularyMetadata",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeExport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        },
+        {
+          "Name": "test set"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeImport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        },
+        {
+          "Name": "test set"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeIntent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        },
+        {
+          "Name": "bot alias"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeSlot",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeSlotType",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeTestExecution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "test set"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeTestSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "test set"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeTestSetDiscrepancyReport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "test set"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeTestSetGeneration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "test set"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GenerateBotElement",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetBot",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot alias"
+        },
+        {
+          "Name": "bot version"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetBotAlias",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot alias"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetBotAliases",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetBotChannelAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetBotChannelAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetBotVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot version"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetBots",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetBuiltinIntent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetBuiltinIntents",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetBuiltinSlotTypes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetExport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot version"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetImport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetIntent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "intent version"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetIntentVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "intent version"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetIntents",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetMigration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetMigrations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSession",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot alias"
+        },
+        {
+          "Name": "bot version"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSlotType",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "slottype version"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSlotTypeVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "slottype version"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSlotTypes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetTestExecutionArtifactsUrl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "test set"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetUtterancesView",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot version"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAggregatedUtterances",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListBotAliasReplicas",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListBotAliases",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListBotAnalyzerRecommendations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListBotChannels",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListBotLocales",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListBotRecommendations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListBotReplicas",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListBotResourceGenerations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListBotVersionReplicas",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListBotVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListBots",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListBuiltInIntents",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListBuiltInSlotTypes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListCustomVocabularyItems",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListExports",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListImports",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListIntentMetrics",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListIntentPaths",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListIntentStageMetrics",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListIntents",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListRecommendedIntents",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListSessionAnalyticsData",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListSessionMetrics",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListSlotTypes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListSlots",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        },
+        {
+          "Name": "bot alias"
+        },
+        {
+          "Name": "channel"
+        },
+        {
+          "Name": "test set"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTestExecutionResultItems",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "test set"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTestExecutions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTestSetRecords",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "test set"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTestSets",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PostContent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot alias"
+        },
+        {
+          "Name": "bot version"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PostText",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot alias"
+        },
+        {
+          "Name": "bot version"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutBot",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot version"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutBotAlias",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot alias"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutIntent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "intent version"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutSession",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot alias"
+        },
+        {
+          "Name": "bot version"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutSlotType",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "slottype version"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RecognizeText",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot alias"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RecognizeUtterance",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot alias"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SearchAssociatedTranscripts",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartBotAnalyzer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartBotRecommendation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartBotResourceGeneration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartConversation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot alias"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartImport",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        },
+        {
+          "Name": "bot alias"
+        },
+        {
+          "Name": "test set"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartMigration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot version"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartTestExecution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "test set"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartTestSetGeneration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "test set"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopBotAnalyzer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopBotRecommendation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        },
+        {
+          "Name": "bot alias"
+        },
+        {
+          "Name": "channel"
+        },
+        {
+          "Name": "test set"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        },
+        {
+          "Name": "bot alias"
+        },
+        {
+          "Name": "channel"
+        },
+        {
+          "Name": "test set"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateBot",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateBotAlias",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot alias"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateBotLocale",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateBotRecommendation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateCustomVocabulary",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateExport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateIntent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        },
+        {
+          "Name": "bot alias"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateSlot",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateSlotType",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateTestSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "test set"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "lex:associatedIntents",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "lex:associatedSlotTypes",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "lex:channelType",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "BatchCreateCustomVocabularyItem",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchCreateCustomVocabularyItem",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "batch_create_custom_vocabulary_item",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchDeleteCustomVocabularyItem",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchDeleteCustomVocabularyItem",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "batch_delete_custom_vocabulary_item",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchUpdateCustomVocabularyItem",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchUpdateCustomVocabularyItem",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "batch_update_custom_vocabulary_item",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BuildBotLocale",
+      "AuthorizedActions": [
+        {
+          "Name": "BuildBotLocale",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "build_bot_locale",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateBot",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateBot",
+          "Service": "lex"
+        },
+        {
+          "Name": "DescribeBotAlias",
+          "Service": "lex"
+        },
+        {
+          "Name": "DescribeBotVersion",
+          "Service": "lex"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "lexv2.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "create_bot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateBotAlias",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateBotAlias",
+          "Service": "lex"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "create_bot_alias",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateBotLocale",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateBotLocale",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "create_bot_locale",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateBotReplica",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateBotReplica",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "create_bot_replica",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateBotVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateBotVersion",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lex-models",
+          "Method": "create_bot_version",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "lexv2-models",
+          "Method": "create_bot_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateExport",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateExport",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "create_export",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateIntent",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateIntent",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "create_intent",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateIntentVersion",
+      "SDK": [
+        {
+          "Name": "lex-models",
+          "Method": "create_intent_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateResourcePolicy",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "create_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateResourcePolicyStatement",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateResourcePolicy",
+          "Service": "lex"
+        },
+        {
+          "Name": "UpdateResourcePolicy",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "create_resource_policy_statement",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSlot",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSlot",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "create_slot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSlotType",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSlotType",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "create_slot_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSlotTypeVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSlotTypeVersion",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lex-models",
+          "Method": "create_slot_type_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateTestSetDiscrepancyReport",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateTestSetDiscrepancyReport",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "create_test_set_discrepancy_report",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateUploadUrl",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateUploadUrl",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "create_upload_url",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteBot",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteBot",
+          "Service": "lex"
+        },
+        {
+          "Name": "DeleteBotAlias",
+          "Service": "lex"
+        },
+        {
+          "Name": "DeleteBotChannel",
+          "Service": "lex"
+        },
+        {
+          "Name": "DeleteBotLocale",
+          "Service": "lex"
+        },
+        {
+          "Name": "DeleteBotVersion",
+          "Service": "lex"
+        },
+        {
+          "Name": "DeleteCustomVocabulary",
+          "Service": "lex"
+        },
+        {
+          "Name": "DeleteIntent",
+          "Service": "lex"
+        },
+        {
+          "Name": "DeleteResourcePolicy",
+          "Service": "lex"
+        },
+        {
+          "Name": "DeleteSlot",
+          "Service": "lex"
+        },
+        {
+          "Name": "DeleteSlotType",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lex-models",
+          "Method": "delete_bot",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "lexv2-models",
+          "Method": "delete_bot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteBotAlias",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteBotAlias",
+          "Service": "lex"
+        },
+        {
+          "Name": "DeleteResourcePolicy",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lex-models",
+          "Method": "delete_bot_alias",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "lexv2-models",
+          "Method": "delete_bot_alias",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteBotAnalyzerRecommendation",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteBotAnalyzerRecommendation",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "delete_bot_analyzer_recommendation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteBotChannelAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteBotChannelAssociation",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lex-models",
+          "Method": "delete_bot_channel_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteBotLocale",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteBotLocale",
+          "Service": "lex"
+        },
+        {
+          "Name": "DeleteCustomVocabulary",
+          "Service": "lex"
+        },
+        {
+          "Name": "DeleteIntent",
+          "Service": "lex"
+        },
+        {
+          "Name": "DeleteSlot",
+          "Service": "lex"
+        },
+        {
+          "Name": "DeleteSlotType",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "delete_bot_locale",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteBotReplica",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteBotReplica",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "delete_bot_replica",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteBotVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteBotVersion",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lex-models",
+          "Method": "delete_bot_version",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "lexv2-models",
+          "Method": "delete_bot_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCustomVocabulary",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCustomVocabulary",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "delete_custom_vocabulary",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteExport",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteExport",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "delete_export",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteImport",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteImport",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "delete_import",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteIntent",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteIntent",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lex-models",
+          "Method": "delete_intent",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "lexv2-models",
+          "Method": "delete_intent",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteIntentVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteIntentVersion",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lex-models",
+          "Method": "delete_intent_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteResourcePolicy",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "delete_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteResourcePolicyStatement",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteResourcePolicy",
+          "Service": "lex"
+        },
+        {
+          "Name": "UpdateResourcePolicy",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "delete_resource_policy_statement",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSession",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSession",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lex-runtime",
+          "Method": "delete_session",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "lexv2-runtime",
+          "Method": "delete_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSlot",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSlot",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "delete_slot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSlotType",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSlotType",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lex-models",
+          "Method": "delete_slot_type",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "lexv2-models",
+          "Method": "delete_slot_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSlotTypeVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSlotTypeVersion",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lex-models",
+          "Method": "delete_slot_type_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteTestSet",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteTestSet",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "delete_test_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteUtterances",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteUtterances",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lex-models",
+          "Method": "delete_utterances",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "lexv2-models",
+          "Method": "delete_utterances",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeBot",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeBot",
+          "Service": "lex"
+        },
+        {
+          "Name": "DescribeBotAlias",
+          "Service": "lex"
+        },
+        {
+          "Name": "DescribeBotVersion",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "describe_bot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeBotAlias",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeBotAlias",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "describe_bot_alias",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeBotAnalyzerRecommendation",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeBotAnalyzerRecommendation",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "describe_bot_analyzer_recommendation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeBotLocale",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeBotLocale",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "describe_bot_locale",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeBotRecommendation",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeBotRecommendation",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "describe_bot_recommendation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeBotReplica",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeBotReplica",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "describe_bot_replica",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeBotResourceGeneration",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeBotResourceGeneration",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "describe_bot_resource_generation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeBotVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeBotAlias",
+          "Service": "lex"
+        },
+        {
+          "Name": "DescribeBotVersion",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "describe_bot_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeCustomVocabularyMetadata",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeCustomVocabularyMetadata",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "describe_custom_vocabulary_metadata",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeExport",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeBot",
+          "Service": "lex"
+        },
+        {
+          "Name": "DescribeBotLocale",
+          "Service": "lex"
+        },
+        {
+          "Name": "DescribeCustomVocabulary",
+          "Service": "lex"
+        },
+        {
+          "Name": "DescribeExport",
+          "Service": "lex"
+        },
+        {
+          "Name": "DescribeIntent",
+          "Service": "lex"
+        },
+        {
+          "Name": "DescribeSlot",
+          "Service": "lex"
+        },
+        {
+          "Name": "DescribeSlotType",
+          "Service": "lex"
+        },
+        {
+          "Name": "DescribeTestSet",
+          "Service": "lex"
+        },
+        {
+          "Name": "ListBotLocales",
+          "Service": "lex"
+        },
+        {
+          "Name": "ListIntents",
+          "Service": "lex"
+        },
+        {
+          "Name": "ListSlotTypes",
+          "Service": "lex"
+        },
+        {
+          "Name": "ListSlots",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "describe_export",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeImport",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeImport",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "describe_import",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeIntent",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeIntent",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "describe_intent",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeResourcePolicy",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "describe_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSlot",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSlot",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "describe_slot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSlotType",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSlotType",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "describe_slot_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeTestExecution",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeTestExecution",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "describe_test_execution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeTestSet",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeTestSet",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "describe_test_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeTestSetDiscrepancyReport",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeTestSetDiscrepancyReport",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "describe_test_set_discrepancy_report",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeTestSetGeneration",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeTestSetGeneration",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "describe_test_set_generation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GenerateBotElement",
+      "AuthorizedActions": [
+        {
+          "Name": "GenerateBotElement",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "generate_bot_element",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBot",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBot",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lex-models",
+          "Method": "get_bot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBotAlias",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBotAlias",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lex-models",
+          "Method": "get_bot_alias",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBotAliases",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBotAliases",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lex-models",
+          "Method": "get_bot_aliases",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBotChannelAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBotChannelAssociation",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lex-models",
+          "Method": "get_bot_channel_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBotChannelAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBotChannelAssociations",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lex-models",
+          "Method": "get_bot_channel_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBotVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBotVersions",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lex-models",
+          "Method": "get_bot_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBots",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBots",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lex-models",
+          "Method": "get_bots",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBuiltinIntent",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBuiltinIntent",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lex-models",
+          "Method": "get_builtin_intent",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBuiltinIntents",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBuiltinIntents",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lex-models",
+          "Method": "get_builtin_intents",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBuiltinSlotTypes",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBuiltinSlotTypes",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lex-models",
+          "Method": "get_builtin_slot_types",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetExport",
+      "AuthorizedActions": [
+        {
+          "Name": "GetExport",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lex-models",
+          "Method": "get_export",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetImport",
+      "AuthorizedActions": [
+        {
+          "Name": "GetImport",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lex-models",
+          "Method": "get_import",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetIntent",
+      "AuthorizedActions": [
+        {
+          "Name": "GetIntent",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lex-models",
+          "Method": "get_intent",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetIntentVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "GetIntentVersions",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lex-models",
+          "Method": "get_intent_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetIntents",
+      "AuthorizedActions": [
+        {
+          "Name": "GetIntents",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lex-models",
+          "Method": "get_intents",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMigration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMigration",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lex-models",
+          "Method": "get_migration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMigrations",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMigrations",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lex-models",
+          "Method": "get_migrations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSession",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSession",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lex-runtime",
+          "Method": "get_session",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "lexv2-runtime",
+          "Method": "get_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSlotType",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSlotType",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lex-models",
+          "Method": "get_slot_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSlotTypeVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSlotTypeVersions",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lex-models",
+          "Method": "get_slot_type_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSlotTypes",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSlotTypes",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lex-models",
+          "Method": "get_slot_types",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetTestExecutionArtifactsUrl",
+      "AuthorizedActions": [
+        {
+          "Name": "GetTestExecutionArtifactsUrl",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "get_test_execution_artifacts_url",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetUtterancesView",
+      "AuthorizedActions": [
+        {
+          "Name": "GetUtterancesView",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lex-models",
+          "Method": "get_utterances_view",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAggregatedUtterances",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAggregatedUtterances",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "list_aggregated_utterances",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListBotAliasReplicas",
+      "AuthorizedActions": [
+        {
+          "Name": "ListBotAliasReplicas",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "list_bot_alias_replicas",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListBotAliases",
+      "AuthorizedActions": [
+        {
+          "Name": "ListBotAliases",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "list_bot_aliases",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListBotAnalyzerHistory",
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "list_bot_analyzer_history",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListBotLocales",
+      "AuthorizedActions": [
+        {
+          "Name": "ListBotLocales",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "list_bot_locales",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListBotRecommendations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListBotRecommendations",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "list_bot_recommendations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListBotReplicas",
+      "AuthorizedActions": [
+        {
+          "Name": "ListBotReplicas",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "list_bot_replicas",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListBotResourceGenerations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListBotResourceGenerations",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "list_bot_resource_generations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListBotVersionReplicas",
+      "AuthorizedActions": [
+        {
+          "Name": "ListBotVersionReplicas",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "list_bot_version_replicas",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListBotVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListBotVersions",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "list_bot_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListBots",
+      "AuthorizedActions": [
+        {
+          "Name": "ListBots",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "list_bots",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListBuiltInIntents",
+      "AuthorizedActions": [
+        {
+          "Name": "ListBuiltInIntents",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "list_built_in_intents",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListBuiltInSlotTypes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListBuiltInSlotTypes",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "list_built_in_slot_types",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCustomVocabularyItems",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCustomVocabularyItems",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "list_custom_vocabulary_items",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListExports",
+      "AuthorizedActions": [
+        {
+          "Name": "ListExports",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "list_exports",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListImports",
+      "AuthorizedActions": [
+        {
+          "Name": "ListImports",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "list_imports",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListIntentMetrics",
+      "AuthorizedActions": [
+        {
+          "Name": "ListIntentMetrics",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "list_intent_metrics",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListIntentPaths",
+      "AuthorizedActions": [
+        {
+          "Name": "ListIntentPaths",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "list_intent_paths",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListIntentStageMetrics",
+      "AuthorizedActions": [
+        {
+          "Name": "ListIntentStageMetrics",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "list_intent_stage_metrics",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListIntents",
+      "AuthorizedActions": [
+        {
+          "Name": "ListIntents",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "list_intents",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRecommendedIntents",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRecommendedIntents",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "list_recommended_intents",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSessionAnalyticsData",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSessionAnalyticsData",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "list_session_analytics_data",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSessionMetrics",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSessionMetrics",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "list_session_metrics",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSlotTypes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSlotTypes",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "list_slot_types",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSlots",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSlots",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "list_slots",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lex-models",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "lexv2-models",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTestExecutionResultItems",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTestExecutionResultItems",
+          "Service": "lex"
+        },
+        {
+          "Name": "ListTestSetRecords",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "list_test_execution_result_items",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTestExecutions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTestExecutions",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "list_test_executions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTestSetRecords",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTestSetRecords",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "list_test_set_records",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTestSets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTestSets",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "list_test_sets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListUtteranceAnalyticsData",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAggregatedUtterances",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "list_utterance_analytics_data",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListUtteranceMetrics",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAggregatedUtterances",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "list_utterance_metrics",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PostContent",
+      "AuthorizedActions": [
+        {
+          "Name": "PostContent",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lex-runtime",
+          "Method": "post_content",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PostText",
+      "AuthorizedActions": [
+        {
+          "Name": "PostText",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lex-runtime",
+          "Method": "post_text",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutBot",
+      "AuthorizedActions": [
+        {
+          "Name": "PutBot",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lex-models",
+          "Method": "put_bot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutBotAlias",
+      "SDK": [
+        {
+          "Name": "lex-models",
+          "Method": "put_bot_alias",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutIntent",
+      "AuthorizedActions": [
+        {
+          "Name": "PutIntent",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lex-models",
+          "Method": "put_intent",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutSession",
+      "AuthorizedActions": [
+        {
+          "Name": "PutSession",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lex-runtime",
+          "Method": "put_session",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "lexv2-runtime",
+          "Method": "put_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutSlotType",
+      "AuthorizedActions": [
+        {
+          "Name": "PutSlotType",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lex-models",
+          "Method": "put_slot_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RecognizeText",
+      "AuthorizedActions": [
+        {
+          "Name": "RecognizeText",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-runtime",
+          "Method": "recognize_text",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RecognizeUtterance",
+      "AuthorizedActions": [
+        {
+          "Name": "RecognizeUtterance",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-runtime",
+          "Method": "recognize_utterance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SearchAssociatedTranscripts",
+      "AuthorizedActions": [
+        {
+          "Name": "SearchAssociatedTranscripts",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "search_associated_transcripts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartBotAnalyzer",
+      "AuthorizedActions": [
+        {
+          "Name": "StartBotAnalyzer",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "start_bot_analyzer",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartBotRecommendation",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateIntent",
+          "Service": "lex"
+        },
+        {
+          "Name": "CreateSlot",
+          "Service": "lex"
+        },
+        {
+          "Name": "CreateSlotType",
+          "Service": "lex"
+        },
+        {
+          "Name": "DeleteIntent",
+          "Service": "lex"
+        },
+        {
+          "Name": "DeleteSlot",
+          "Service": "lex"
+        },
+        {
+          "Name": "DeleteSlotType",
+          "Service": "lex"
+        },
+        {
+          "Name": "StartBotRecommendation",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "start_bot_recommendation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartBotResourceGeneration",
+      "AuthorizedActions": [
+        {
+          "Name": "StartBotResourceGeneration",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "start_bot_resource_generation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartConversation",
+      "AuthorizedActions": [
+        {
+          "Name": "StartConversation",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-runtime",
+          "Method": "start_conversation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartImport",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateBot",
+          "Service": "lex"
+        },
+        {
+          "Name": "CreateBotLocale",
+          "Service": "lex"
+        },
+        {
+          "Name": "CreateCustomVocabulary",
+          "Service": "lex"
+        },
+        {
+          "Name": "CreateIntent",
+          "Service": "lex"
+        },
+        {
+          "Name": "CreateSlot",
+          "Service": "lex"
+        },
+        {
+          "Name": "CreateSlotType",
+          "Service": "lex"
+        },
+        {
+          "Name": "CreateTestSet",
+          "Service": "lex"
+        },
+        {
+          "Name": "DeleteBotLocale",
+          "Service": "lex"
+        },
+        {
+          "Name": "DeleteCustomVocabulary",
+          "Service": "lex"
+        },
+        {
+          "Name": "DeleteIntent",
+          "Service": "lex"
+        },
+        {
+          "Name": "DeleteSlot",
+          "Service": "lex"
+        },
+        {
+          "Name": "DeleteSlotType",
+          "Service": "lex"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "lexv2.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartImport",
+          "Service": "lex"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "lex"
+        },
+        {
+          "Name": "UpdateBot",
+          "Service": "lex"
+        },
+        {
+          "Name": "UpdateBotLocale",
+          "Service": "lex"
+        },
+        {
+          "Name": "UpdateCustomVocabulary",
+          "Service": "lex"
+        },
+        {
+          "Name": "UpdateIntent",
+          "Service": "lex"
+        },
+        {
+          "Name": "UpdateSlot",
+          "Service": "lex"
+        },
+        {
+          "Name": "UpdateSlotType",
+          "Service": "lex"
+        },
+        {
+          "Name": "UpdateTestSet",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lex-models",
+          "Method": "start_import",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "lexv2-models",
+          "Method": "start_import",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartMigration",
+      "SDK": [
+        {
+          "Name": "lex-models",
+          "Method": "start_migration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartTestExecution",
+      "AuthorizedActions": [
+        {
+          "Name": "StartTestExecution",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "start_test_execution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartTestSetGeneration",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "lexv2.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartTestSetGeneration",
+          "Service": "lex"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "start_test_set_generation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopBotAnalyzer",
+      "AuthorizedActions": [
+        {
+          "Name": "StopBotAnalyzer",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "stop_bot_analyzer",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopBotRecommendation",
+      "AuthorizedActions": [
+        {
+          "Name": "StopBotRecommendation",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "stop_bot_recommendation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lex-models",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "lexv2-models",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lex-models",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "lexv2-models",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateBot",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeBotAlias",
+          "Service": "lex"
+        },
+        {
+          "Name": "DescribeBotVersion",
+          "Service": "lex"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "lexv2.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateBot",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "update_bot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateBotAlias",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateBotAlias",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "update_bot_alias",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateBotLocale",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateBotLocale",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "update_bot_locale",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateBotRecommendation",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateBotRecommendation",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "update_bot_recommendation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateExport",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateExport",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "update_export",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateIntent",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateIntent",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "update_intent",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateResourcePolicy",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "update_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSlot",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSlot",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "update_slot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSlotType",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSlotType",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "update_slot_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateTestSet",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateTestSet",
+          "Service": "lex"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lexv2-models",
+          "Method": "update_test_set",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "bot",
+      "ARNFormats": [
+        "arn:${Partition}:lex:${Region}:${Account}:bot/${BotId}",
+        "arn:${Partition}:lex:${Region}:${Account}:bot:${BotName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "bot alias",
+      "ARNFormats": [
+        "arn:${Partition}:lex:${Region}:${Account}:bot-alias/${BotId}/${BotAliasId}",
+        "arn:${Partition}:lex:${Region}:${Account}:bot:${BotName}:${BotAlias}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "bot version",
+      "ARNFormats": [
+        "arn:${Partition}:lex:${Region}:${Account}:bot:${BotName}:${BotVersion}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "channel",
+      "ARNFormats": [
+        "arn:${Partition}:lex:${Region}:${Account}:bot-channel:${BotName}:${BotAlias}:${ChannelName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "intent version",
+      "ARNFormats": [
+        "arn:${Partition}:lex:${Region}:${Account}:intent:${IntentName}:${IntentVersion}"
+      ]
+    },
+    {
+      "Name": "slottype version",
+      "ARNFormats": [
+        "arn:${Partition}:lex:${Region}:${Account}:slottype:${SlotName}:${SlotVersion}"
+      ]
+    },
+    {
+      "Name": "test set",
+      "ARNFormats": [
+        "arn:${Partition}:lex:${Region}:${Account}:test-set/${TestSetId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

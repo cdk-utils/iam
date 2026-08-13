@@ -1,0 +1,1385 @@
+{
+  "Name": "tnb",
+  "Actions": [
+    {
+      "Name": "CancelSolNetworkOperation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "network-operation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateSolFunctionPackage",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "function-package"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateSolNetworkInstance",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "network-instance"
+        },
+        {
+          "Name": "network-package"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateSolNetworkPackage",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "network-package"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteSolFunctionPackage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "function-package"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteSolNetworkInstance",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "network-instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteSolNetworkPackage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "network-package"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSolFunctionInstance",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "function-instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSolFunctionPackage",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "function-package"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSolFunctionPackageContent",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "function-package"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSolFunctionPackageDescriptor",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "function-package"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSolNetworkInstance",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "network-instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSolNetworkOperation",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "network-operation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSolNetworkPackage",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "network-package"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSolNetworkPackageContent",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "network-package"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSolNetworkPackageDescriptor",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "network-package"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "InstantiateSolNetworkInstance",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "network-instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListSolFunctionInstances",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "function-instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListSolFunctionPackages",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "function-package"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListSolNetworkInstances",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "network-instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListSolNetworkOperations",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "network-operation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListSolNetworkPackages",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "network-package"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutSolFunctionPackageContent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "function-package"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutSolNetworkPackageContent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "network-package"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "function-instance"
+        },
+        {
+          "Name": "function-package"
+        },
+        {
+          "Name": "network-instance"
+        },
+        {
+          "Name": "network-operation"
+        },
+        {
+          "Name": "network-package"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TerminateSolNetworkInstance",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "network-instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "function-instance"
+        },
+        {
+          "Name": "function-package"
+        },
+        {
+          "Name": "network-instance"
+        },
+        {
+          "Name": "network-operation"
+        },
+        {
+          "Name": "network-package"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateSolFunctionPackage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "function-package"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateSolNetworkInstance",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "function-instance"
+        },
+        {
+          "Name": "network-instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateSolNetworkPackage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "network-package"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ValidateSolFunctionPackageContent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "function-package"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ValidateSolNetworkPackageContent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "network-package"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CancelSolNetworkOperation",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelSolNetworkOperation",
+          "Service": "tnb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "tnb",
+          "Method": "cancel_sol_network_operation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSolFunctionPackage",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSolFunctionPackage",
+          "Service": "tnb"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "tnb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "tnb",
+          "Method": "create_sol_function_package",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSolNetworkInstance",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSolNetworkInstance",
+          "Service": "tnb"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "tnb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "tnb",
+          "Method": "create_sol_network_instance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSolNetworkPackage",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSolNetworkPackage",
+          "Service": "tnb"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "tnb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "tnb",
+          "Method": "create_sol_network_package",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSolFunctionPackage",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSolFunctionPackage",
+          "Service": "tnb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "tnb",
+          "Method": "delete_sol_function_package",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSolNetworkInstance",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSolNetworkInstance",
+          "Service": "tnb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "tnb",
+          "Method": "delete_sol_network_instance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSolNetworkPackage",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSolNetworkPackage",
+          "Service": "tnb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "tnb",
+          "Method": "delete_sol_network_package",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSolFunctionInstance",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSolFunctionInstance",
+          "Service": "tnb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "tnb",
+          "Method": "get_sol_function_instance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSolFunctionPackage",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSolFunctionPackage",
+          "Service": "tnb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "tnb",
+          "Method": "get_sol_function_package",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSolFunctionPackageContent",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSolFunctionPackageContent",
+          "Service": "tnb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "tnb",
+          "Method": "get_sol_function_package_content",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSolFunctionPackageDescriptor",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSolFunctionPackageDescriptor",
+          "Service": "tnb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "tnb",
+          "Method": "get_sol_function_package_descriptor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSolNetworkInstance",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSolNetworkInstance",
+          "Service": "tnb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "tnb",
+          "Method": "get_sol_network_instance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSolNetworkOperation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSolNetworkOperation",
+          "Service": "tnb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "tnb",
+          "Method": "get_sol_network_operation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSolNetworkPackage",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSolNetworkPackage",
+          "Service": "tnb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "tnb",
+          "Method": "get_sol_network_package",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSolNetworkPackageContent",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSolNetworkPackageContent",
+          "Service": "tnb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "tnb",
+          "Method": "get_sol_network_package_content",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSolNetworkPackageDescriptor",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSolNetworkPackageDescriptor",
+          "Service": "tnb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "tnb",
+          "Method": "get_sol_network_package_descriptor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "InstantiateSolNetworkInstance",
+      "AuthorizedActions": [
+        {
+          "Name": "InstantiateSolNetworkInstance",
+          "Service": "tnb"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "tnb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "tnb",
+          "Method": "instantiate_sol_network_instance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSolFunctionInstances",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSolFunctionInstances",
+          "Service": "tnb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "tnb",
+          "Method": "list_sol_function_instances",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSolFunctionPackages",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSolFunctionPackages",
+          "Service": "tnb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "tnb",
+          "Method": "list_sol_function_packages",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSolNetworkInstances",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSolNetworkInstances",
+          "Service": "tnb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "tnb",
+          "Method": "list_sol_network_instances",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSolNetworkOperations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSolNetworkOperations",
+          "Service": "tnb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "tnb",
+          "Method": "list_sol_network_operations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSolNetworkPackages",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSolNetworkPackages",
+          "Service": "tnb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "tnb",
+          "Method": "list_sol_network_packages",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "tnb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "tnb",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutSolFunctionPackageContent",
+      "AuthorizedActions": [
+        {
+          "Name": "PutSolFunctionPackageContent",
+          "Service": "tnb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "tnb",
+          "Method": "put_sol_function_package_content",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutSolNetworkPackageContent",
+      "AuthorizedActions": [
+        {
+          "Name": "PutSolNetworkPackageContent",
+          "Service": "tnb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "tnb",
+          "Method": "put_sol_network_package_content",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "tnb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "tnb",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TerminateSolNetworkInstance",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "tnb"
+        },
+        {
+          "Name": "TerminateSolNetworkInstance",
+          "Service": "tnb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "tnb",
+          "Method": "terminate_sol_network_instance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "tnb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "tnb",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSolFunctionPackage",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSolFunctionPackage",
+          "Service": "tnb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "tnb",
+          "Method": "update_sol_function_package",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSolNetworkInstance",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "tnb"
+        },
+        {
+          "Name": "UpdateSolNetworkInstance",
+          "Service": "tnb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "tnb",
+          "Method": "update_sol_network_instance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSolNetworkPackage",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSolNetworkPackage",
+          "Service": "tnb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "tnb",
+          "Method": "update_sol_network_package",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ValidateSolFunctionPackageContent",
+      "AuthorizedActions": [
+        {
+          "Name": "ValidateSolFunctionPackageContent",
+          "Service": "tnb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "tnb",
+          "Method": "validate_sol_function_package_content",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ValidateSolNetworkPackageContent",
+      "AuthorizedActions": [
+        {
+          "Name": "ValidateSolNetworkPackageContent",
+          "Service": "tnb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "tnb",
+          "Method": "validate_sol_network_package_content",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "function-instance",
+      "ARNFormats": [
+        "arn:${Partition}:tnb:${Region}:${Account}:function-instance/${FunctionInstanceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "function-package",
+      "ARNFormats": [
+        "arn:${Partition}:tnb:${Region}:${Account}:function-package/${FunctionPackageId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "network-instance",
+      "ARNFormats": [
+        "arn:${Partition}:tnb:${Region}:${Account}:network-instance/${NetworkInstanceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "network-operation",
+      "ARNFormats": [
+        "arn:${Partition}:tnb:${Region}:${Account}:network-operation/${NetworkOperationId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "network-package",
+      "ARNFormats": [
+        "arn:${Partition}:tnb:${Region}:${Account}:network-package/${NetworkPackageId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

@@ -1,0 +1,1354 @@
+{
+  "Name": "shield",
+  "Actions": [
+    {
+      "Name": "AssociateDRTLogBucket",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AssociateDRTRole",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AssociateHealthCheck",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "protection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AssociateProactiveEngagementDetails",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateProtection",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateProtectionGroup",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateSubscription",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteProtection",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "protection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteProtectionGroup",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "protection-group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteSubscription",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeAttack",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "attack"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeAttackContributors",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "attack"
+        },
+        {
+          "Name": "protection-group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeAttackStatistics",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeDRTAccess",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeEmergencyContactSettings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeProtection",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "protection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeProtectionGroup",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "protection-group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeSubscription",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisableApplicationLayerAutomaticResponse",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisableProactiveEngagement",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateDRTLogBucket",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateDRTRole",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateHealthCheck",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "protection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "EnableApplicationLayerAutomaticResponse",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "EnableProactiveEngagement",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetGlobalThreatData",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSubscriptionState",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAttacks",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListMitigations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "attack"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListProtectionGroups",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListProtections",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListResourcesInProtectionGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "protection-group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "protection"
+        },
+        {
+          "Name": "protection-group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "protection"
+        },
+        {
+          "Name": "protection-group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "protection"
+        },
+        {
+          "Name": "protection-group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateApplicationLayerAutomaticResponse",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateEmergencyContactSettings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateProtectionGroup",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "protection-group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateSubscription",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AssociateDRTLogBucket",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateDRTLogBucket",
+          "Service": "shield"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "shield",
+          "Method": "associate_drt_log_bucket",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateDRTRole",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateDRTRole",
+          "Service": "shield"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "drt.shield.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "shield",
+          "Method": "associate_drt_role",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateHealthCheck",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateHealthCheck",
+          "Service": "shield"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "shield",
+          "Method": "associate_health_check",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateProactiveEngagementDetails",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateProactiveEngagementDetails",
+          "Service": "shield"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "shield",
+          "Method": "associate_proactive_engagement_details",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateProtection",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateProtection",
+          "Service": "shield"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "shield"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "shield",
+          "Method": "create_protection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateProtectionGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateProtectionGroup",
+          "Service": "shield"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "shield"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "shield",
+          "Method": "create_protection_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSubscription",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSubscription",
+          "Service": "shield"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "shield",
+          "Method": "create_subscription",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteProtection",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteProtection",
+          "Service": "shield"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "shield",
+          "Method": "delete_protection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteProtectionGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteProtectionGroup",
+          "Service": "shield"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "shield",
+          "Method": "delete_protection_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSubscription",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSubscription",
+          "Service": "shield"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "shield",
+          "Method": "delete_subscription",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAttack",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAttack",
+          "Service": "shield"
+        },
+        {
+          "Name": "DescribeProtectionGroup",
+          "Service": "shield"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "shield",
+          "Method": "describe_attack",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAttackStatistics",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAttackStatistics",
+          "Service": "shield"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "shield",
+          "Method": "describe_attack_statistics",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDRTAccess",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDRTAccess",
+          "Service": "shield"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "shield",
+          "Method": "describe_drt_access",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeEmergencyContactSettings",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeEmergencyContactSettings",
+          "Service": "shield"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "shield",
+          "Method": "describe_emergency_contact_settings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeProtection",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeProtection",
+          "Service": "shield"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "shield",
+          "Method": "describe_protection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeProtectionGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeProtectionGroup",
+          "Service": "shield"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "shield",
+          "Method": "describe_protection_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSubscription",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSubscription",
+          "Service": "shield"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "shield",
+          "Method": "describe_subscription",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisableApplicationLayerAutomaticResponse",
+      "AuthorizedActions": [
+        {
+          "Name": "DisableApplicationLayerAutomaticResponse",
+          "Service": "shield"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "shield",
+          "Method": "disable_application_layer_automatic_response",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisableProactiveEngagement",
+      "AuthorizedActions": [
+        {
+          "Name": "DisableProactiveEngagement",
+          "Service": "shield"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "shield",
+          "Method": "disable_proactive_engagement",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateDRTLogBucket",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateDRTLogBucket",
+          "Service": "shield"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "shield",
+          "Method": "disassociate_drt_log_bucket",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateDRTRole",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateDRTRole",
+          "Service": "shield"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "shield",
+          "Method": "disassociate_drt_role",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateHealthCheck",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateHealthCheck",
+          "Service": "shield"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "shield",
+          "Method": "disassociate_health_check",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "EnableApplicationLayerAutomaticResponse",
+      "AuthorizedActions": [
+        {
+          "Name": "EnableApplicationLayerAutomaticResponse",
+          "Service": "shield"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "shield",
+          "Method": "enable_application_layer_automatic_response",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "EnableProactiveEngagement",
+      "AuthorizedActions": [
+        {
+          "Name": "EnableProactiveEngagement",
+          "Service": "shield"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "shield",
+          "Method": "enable_proactive_engagement",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSubscriptionState",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSubscriptionState",
+          "Service": "shield"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "shield",
+          "Method": "get_subscription_state",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAttacks",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAttacks",
+          "Service": "shield"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "shield",
+          "Method": "list_attacks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProtectionGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProtectionGroups",
+          "Service": "shield"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "shield",
+          "Method": "list_protection_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProtections",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProtections",
+          "Service": "shield"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "shield",
+          "Method": "list_protections",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListResourcesInProtectionGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "ListResourcesInProtectionGroup",
+          "Service": "shield"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "shield",
+          "Method": "list_resources_in_protection_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "shield"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "shield",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "shield"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "shield",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "shield"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "shield",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateApplicationLayerAutomaticResponse",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateApplicationLayerAutomaticResponse",
+          "Service": "shield"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "shield",
+          "Method": "update_application_layer_automatic_response",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateEmergencyContactSettings",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateEmergencyContactSettings",
+          "Service": "shield"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "shield",
+          "Method": "update_emergency_contact_settings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateProtectionGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateProtectionGroup",
+          "Service": "shield"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "shield",
+          "Method": "update_protection_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSubscription",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSubscription",
+          "Service": "shield"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "shield",
+          "Method": "update_subscription",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "attack",
+      "ARNFormats": [
+        "arn:${Partition}:shield::${Account}:attack/${Id}"
+      ]
+    },
+    {
+      "Name": "protection",
+      "ARNFormats": [
+        "arn:${Partition}:shield::${Account}:protection/${Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "protection-group",
+      "ARNFormats": [
+        "arn:${Partition}:shield::${Account}:protection-group/${Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

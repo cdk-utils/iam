@@ -1,0 +1,811 @@
+{
+  "Name": "docdb-elastic",
+  "Actions": [
+    {
+      "Name": "ApplyPendingMaintenanceAction",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CopyClusterSnapshot",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster-snapshot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateCluster",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateClusterSnapshot",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        },
+        {
+          "Name": "cluster-snapshot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteCluster",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteClusterSnapshot",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster-snapshot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCluster",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetClusterSnapshot",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster-snapshot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetPendingMaintenanceAction",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListClusterSnapshots",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListClusters",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListPendingMaintenanceActions",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        },
+        {
+          "Name": "cluster-snapshot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RestoreClusterFromSnapshot",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        },
+        {
+          "Name": "cluster-snapshot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartCluster",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopCluster",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        },
+        {
+          "Name": "cluster-snapshot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        },
+        {
+          "Name": "cluster-snapshot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateCluster",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "ApplyPendingMaintenanceAction",
+      "AuthorizedActions": [
+        {
+          "Name": "ApplyPendingMaintenanceAction",
+          "Service": "docdb-elastic"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "docdb-elastic",
+          "Method": "apply_pending_maintenance_action",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CopyClusterSnapshot",
+      "AuthorizedActions": [
+        {
+          "Name": "CopyClusterSnapshot",
+          "Service": "docdb-elastic"
+        },
+        {
+          "Name": "CreateClusterSnapshot",
+          "Service": "docdb-elastic"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "docdb-elastic"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "docdb-elastic",
+          "Method": "copy_cluster_snapshot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCluster",
+          "Service": "docdb-elastic"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "docdb-elastic"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "docdb-elastic",
+          "Method": "create_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateClusterSnapshot",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateClusterSnapshot",
+          "Service": "docdb-elastic"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "docdb-elastic"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "docdb-elastic",
+          "Method": "create_cluster_snapshot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCluster",
+          "Service": "docdb-elastic"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "docdb-elastic",
+          "Method": "delete_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteClusterSnapshot",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteClusterSnapshot",
+          "Service": "docdb-elastic"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "docdb-elastic",
+          "Method": "delete_cluster_snapshot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCluster",
+          "Service": "docdb-elastic"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "docdb-elastic",
+          "Method": "get_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetClusterSnapshot",
+      "AuthorizedActions": [
+        {
+          "Name": "GetClusterSnapshot",
+          "Service": "docdb-elastic"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "docdb-elastic",
+          "Method": "get_cluster_snapshot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPendingMaintenanceAction",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPendingMaintenanceAction",
+          "Service": "docdb-elastic"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "docdb-elastic",
+          "Method": "get_pending_maintenance_action",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListClusterSnapshots",
+      "AuthorizedActions": [
+        {
+          "Name": "ListClusterSnapshots",
+          "Service": "docdb-elastic"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "docdb-elastic",
+          "Method": "list_cluster_snapshots",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListClusters",
+      "AuthorizedActions": [
+        {
+          "Name": "ListClusters",
+          "Service": "docdb-elastic"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "docdb-elastic",
+          "Method": "list_clusters",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPendingMaintenanceActions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPendingMaintenanceActions",
+          "Service": "docdb-elastic"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "docdb-elastic",
+          "Method": "list_pending_maintenance_actions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "docdb-elastic"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "docdb-elastic",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RestoreClusterFromSnapshot",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCluster",
+          "Service": "docdb-elastic"
+        },
+        {
+          "Name": "RestoreClusterFromSnapshot",
+          "Service": "docdb-elastic"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "docdb-elastic"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "docdb-elastic",
+          "Method": "restore_cluster_from_snapshot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "StartCluster",
+          "Service": "docdb-elastic"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "docdb-elastic",
+          "Method": "start_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "StopCluster",
+          "Service": "docdb-elastic"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "docdb-elastic",
+          "Method": "stop_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "docdb-elastic"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "docdb-elastic",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "docdb-elastic"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "docdb-elastic",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCluster",
+          "Service": "docdb-elastic"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "docdb-elastic",
+          "Method": "update_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "cluster",
+      "ARNFormats": [
+        "arn:${Partition}:docdb-elastic:${Region}:${Account}:cluster/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "cluster-snapshot",
+      "ARNFormats": [
+        "arn:${Partition}:docdb-elastic:${Region}:${Account}:cluster-snapshot/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

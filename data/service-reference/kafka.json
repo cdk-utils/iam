@@ -1,0 +1,2498 @@
+{
+  "Name": "kafka",
+  "Actions": [
+    {
+      "Name": "BatchAssociateScramSecret",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchDisassociateScramSecret",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateChannel",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateCluster",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateClusterV2",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateReplicator",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "replicator"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateTopic",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "topic"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateVpcConnection",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        },
+        {
+          "Name": "vpc-connection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        },
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteCluster",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteClusterPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteReplicator",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "replicator"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteTopic",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "topic"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteVpcConnection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vpc-connection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        },
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeCluster",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeClusterOperation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeClusterOperationV2",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeClusterV2",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeConfigurationRevision",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeReplicator",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "replicator"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeTopic",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "topic"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeTopicPartitions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "topic"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeVpcConnection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vpc-connection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetBootstrapBrokers",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetClusterPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCompatibleKafkaVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListChannels",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListClientVpcConnections",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListClusterOperations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListClusterOperationsV2",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListClusters",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListClustersV2",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListConfigurationRevisions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListKafkaVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListNodes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListReplicators",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListScramSecrets",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTopics",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListVpcConnections",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutClusterPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RebootBroker",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RejectClientVpcConnection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        },
+        {
+          "Name": "vpc-connection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        },
+        {
+          "Name": "vpc-connection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        },
+        {
+          "Name": "vpc-connection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateBrokerCount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateBrokerStorage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateBrokerType",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        },
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateClusterConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        },
+        {
+          "Name": "configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateClusterKafkaVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateConnectivity",
+      "ActionConditionKeys": [
+        "kafka:publicAccessEnabled"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateMonitoring",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateRebalancing",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateReplicationInfo",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "replicator"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateSecurity",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateStorage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateTopic",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "topic"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "kafka:publicAccessEnabled",
+      "Types": [
+        "Bool"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "BatchAssociateScramSecret",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchAssociateScramSecret",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "batch_associate_scram_secret",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchDisassociateScramSecret",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchDisassociateScramSecret",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "batch_disassociate_scram_secret",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateChannel",
+          "Service": "kafka"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "kafka.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "create_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCluster",
+          "Service": "kafka"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "create_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateClusterV2",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateClusterV2",
+          "Service": "kafka"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "create_cluster_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateConfiguration",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "create_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateReplicator",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateReplicator",
+          "Service": "kafka"
+        },
+        {
+          "Name": "DescribeClusterV2",
+          "Service": "kafka"
+        },
+        {
+          "Name": "GetBootstrapBrokers",
+          "Service": "kafka"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "kafka.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "create_replicator",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateTopic",
+      "AuthorizedActions": [
+        {
+          "Name": "Connect",
+          "Service": "kafka-cluster"
+        },
+        {
+          "Name": "CreateTopic",
+          "Service": "kafka-cluster"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "create_topic",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateVpcConnection",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateVpcConnection",
+          "Service": "kafka"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "create_vpc_connection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteChannel",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "delete_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCluster",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "delete_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteClusterPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteClusterPolicy",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "delete_cluster_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteConfiguration",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "delete_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteReplicator",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteReplicator",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "delete_replicator",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteTopic",
+      "AuthorizedActions": [
+        {
+          "Name": "Connect",
+          "Service": "kafka-cluster"
+        },
+        {
+          "Name": "DeleteTopic",
+          "Service": "kafka-cluster"
+        },
+        {
+          "Name": "DescribeTopic",
+          "Service": "kafka-cluster"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "delete_topic",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteVpcConnection",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteVpcConnection",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "delete_vpc_connection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeChannel",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "describe_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeCluster",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "describe_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeClusterOperation",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeClusterOperation",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "describe_cluster_operation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeClusterOperationV2",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeClusterOperationV2",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "describe_cluster_operation_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeClusterV2",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeClusterV2",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "describe_cluster_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeConfiguration",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "describe_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeConfigurationRevision",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeConfigurationRevision",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "describe_configuration_revision",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeReplicator",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeReplicator",
+          "Service": "kafka"
+        },
+        {
+          "Name": "ListTagsForResource",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "describe_replicator",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeTopic",
+      "AuthorizedActions": [
+        {
+          "Name": "Connect",
+          "Service": "kafka-cluster"
+        },
+        {
+          "Name": "DescribeTopic",
+          "Service": "kafka-cluster"
+        },
+        {
+          "Name": "DescribeTopicDynamicConfiguration",
+          "Service": "kafka-cluster"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "describe_topic",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeTopicPartitions",
+      "AuthorizedActions": [
+        {
+          "Name": "Connect",
+          "Service": "kafka-cluster"
+        },
+        {
+          "Name": "DescribeTopic",
+          "Service": "kafka-cluster"
+        },
+        {
+          "Name": "DescribeTopicDynamicConfiguration",
+          "Service": "kafka-cluster"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "describe_topic_partitions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeVpcConnection",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeVpcConnection",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "describe_vpc_connection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBootstrapBrokers",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBootstrapBrokers",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "get_bootstrap_brokers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetClusterPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetClusterPolicy",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "get_cluster_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCompatibleKafkaVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCompatibleKafkaVersions",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "get_compatible_kafka_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListChannels",
+      "AuthorizedActions": [
+        {
+          "Name": "ListChannels",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "list_channels",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListClientVpcConnections",
+      "AuthorizedActions": [
+        {
+          "Name": "ListClientVpcConnections",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "list_client_vpc_connections",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListClusterOperations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListClusterOperations",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "list_cluster_operations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListClusterOperationsV2",
+      "AuthorizedActions": [
+        {
+          "Name": "ListClusterOperationsV2",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "list_cluster_operations_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListClusters",
+      "AuthorizedActions": [
+        {
+          "Name": "ListClusters",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "list_clusters",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListClustersV2",
+      "AuthorizedActions": [
+        {
+          "Name": "ListClustersV2",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "list_clusters_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListConfigurationRevisions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListConfigurationRevisions",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "list_configuration_revisions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListConfigurations",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "list_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListKafkaVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListKafkaVersions",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "list_kafka_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListNodes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListNodes",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "list_nodes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListReplicators",
+      "AuthorizedActions": [
+        {
+          "Name": "ListReplicators",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "list_replicators",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListScramSecrets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListScramSecrets",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "list_scram_secrets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTopics",
+      "AuthorizedActions": [
+        {
+          "Name": "Connect",
+          "Service": "kafka-cluster"
+        },
+        {
+          "Name": "DescribeTopic",
+          "Service": "kafka-cluster"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "list_topics",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListVpcConnections",
+      "AuthorizedActions": [
+        {
+          "Name": "ListVpcConnections",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "list_vpc_connections",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutClusterPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PutClusterPolicy",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "put_cluster_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RebootBroker",
+      "AuthorizedActions": [
+        {
+          "Name": "RebootBroker",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "reboot_broker",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RejectClientVpcConnection",
+      "AuthorizedActions": [
+        {
+          "Name": "RejectClientVpcConnection",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "reject_client_vpc_connection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateBrokerCount",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateBrokerCount",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "update_broker_count",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateBrokerStorage",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateBrokerStorage",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "update_broker_storage",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateBrokerType",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateBrokerType",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "update_broker_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateChannel",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "update_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateClusterConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateClusterConfiguration",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "update_cluster_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateClusterKafkaVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateClusterKafkaVersion",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "update_cluster_kafka_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateConfiguration",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "update_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateConnectivity",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateConnectivity",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "update_connectivity",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateMonitoring",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateMonitoring",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "update_monitoring",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRebalancing",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateRebalancing",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "update_rebalancing",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateReplicationInfo",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateReplicationInfo",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "update_replication_info",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSecurity",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSecurity",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "update_security",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateStorage",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateStorage",
+          "Service": "kafka"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "update_storage",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateTopic",
+      "AuthorizedActions": [
+        {
+          "Name": "AlterTopic",
+          "Service": "kafka-cluster"
+        },
+        {
+          "Name": "AlterTopicDynamicConfiguration",
+          "Service": "kafka-cluster"
+        },
+        {
+          "Name": "Connect",
+          "Service": "kafka-cluster"
+        },
+        {
+          "Name": "DescribeTopic",
+          "Service": "kafka-cluster"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kafka",
+          "Method": "update_topic",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "channel",
+      "ARNFormats": [
+        "arn:${Partition}:kafka:${Region}:${Account}:channel/${ClusterName}/${ClusterUuid}/${ChannelName}/${Uuid}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "cluster",
+      "ARNFormats": [
+        "arn:${Partition}:kafka:${Region}:${Account}:cluster/${ClusterName}/${Uuid}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "configuration",
+      "ARNFormats": [
+        "arn:${Partition}:kafka:${Region}:${Account}:configuration/${ConfigurationName}/${Uuid}"
+      ]
+    },
+    {
+      "Name": "group",
+      "ARNFormats": [
+        "arn:${Partition}:kafka:${Region}:${Account}:group/${ClusterName}/${ClusterUuid}/${GroupName}"
+      ]
+    },
+    {
+      "Name": "replicator",
+      "ARNFormats": [
+        "arn:${Partition}:kafka:${Region}:${Account}:replicator/${ReplicatorName}/${Uuid}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "topic",
+      "ARNFormats": [
+        "arn:${Partition}:kafka:${Region}:${Account}:topic/${ClusterName}/${ClusterUuid}/${TopicName}"
+      ]
+    },
+    {
+      "Name": "transactional-id",
+      "ARNFormats": [
+        "arn:${Partition}:kafka:${Region}:${Account}:transactional-id/${ClusterName}/${ClusterUuid}/${TransactionalId}"
+      ]
+    },
+    {
+      "Name": "vpc-connection",
+      "ARNFormats": [
+        "arn:${Partition}:kafka:${Region}:${VpcOwnerAccount}:vpc-connection/${ClusterOwnerAccount}/${ClusterName}/${Uuid}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

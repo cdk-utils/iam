@@ -1,0 +1,1215 @@
+{
+  "Name": "schemas",
+  "Actions": [
+    {
+      "Name": "CreateDiscoverer",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateRegistry",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "registry"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateSchema",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "schema"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteDiscoverer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "discoverer"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteRegistry",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "registry"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "registry"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteSchema",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "schema"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteSchemaVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "schema"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeCodeBinding",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "schema"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeDiscoverer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "discoverer"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeRegistry",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "registry"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeSchema",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "schema"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ExportSchema",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "registry"
+        },
+        {
+          "Name": "schema"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCodeBindingSource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "schema"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDiscoveredSchema",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "registry"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDiscoverers",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "discoverer"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListRegistries",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "registry"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListSchemaVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "schema"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListSchemas",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "schema"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "discoverer"
+        },
+        {
+          "Name": "registry"
+        },
+        {
+          "Name": "schema"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutCodeBinding",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "schema"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "registry"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SearchSchemas",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "schema"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartDiscoverer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "discoverer"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopDiscoverer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "discoverer"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "discoverer"
+        },
+        {
+          "Name": "registry"
+        },
+        {
+          "Name": "schema"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "discoverer"
+        },
+        {
+          "Name": "registry"
+        },
+        {
+          "Name": "schema"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateDiscoverer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "discoverer"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateRegistry",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "registry"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateSchema",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "schema"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateDiscoverer",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDiscoverer",
+          "Service": "schemas"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "schemas"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "schemas",
+          "Method": "create_discoverer",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRegistry",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRegistry",
+          "Service": "schemas"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "schemas"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "schemas",
+          "Method": "create_registry",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSchema",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSchema",
+          "Service": "schemas"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "schemas"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "schemas",
+          "Method": "create_schema",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDiscoverer",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDiscoverer",
+          "Service": "schemas"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "schemas",
+          "Method": "delete_discoverer",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRegistry",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRegistry",
+          "Service": "schemas"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "schemas",
+          "Method": "delete_registry",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteResourcePolicy",
+          "Service": "schemas"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "schemas",
+          "Method": "delete_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSchema",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSchema",
+          "Service": "schemas"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "schemas",
+          "Method": "delete_schema",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSchemaVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSchemaVersion",
+          "Service": "schemas"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "schemas",
+          "Method": "delete_schema_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeCodeBinding",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeCodeBinding",
+          "Service": "schemas"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "schemas",
+          "Method": "describe_code_binding",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDiscoverer",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDiscoverer",
+          "Service": "schemas"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "schemas",
+          "Method": "describe_discoverer",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeRegistry",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeRegistry",
+          "Service": "schemas"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "schemas",
+          "Method": "describe_registry",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSchema",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSchema",
+          "Service": "schemas"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "schemas",
+          "Method": "describe_schema",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ExportSchema",
+      "AuthorizedActions": [
+        {
+          "Name": "ExportSchema",
+          "Service": "schemas"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "schemas",
+          "Method": "export_schema",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCodeBindingSource",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCodeBindingSource",
+          "Service": "schemas"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "schemas",
+          "Method": "get_code_binding_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDiscoveredSchema",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDiscoveredSchema",
+          "Service": "schemas"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "schemas",
+          "Method": "get_discovered_schema",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResourcePolicy",
+          "Service": "schemas"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "schemas",
+          "Method": "get_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDiscoverers",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDiscoverers",
+          "Service": "schemas"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "schemas",
+          "Method": "list_discoverers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRegistries",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRegistries",
+          "Service": "schemas"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "schemas",
+          "Method": "list_registries",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSchemaVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSchemaVersions",
+          "Service": "schemas"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "schemas",
+          "Method": "list_schema_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSchemas",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSchemas",
+          "Service": "schemas"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "schemas",
+          "Method": "list_schemas",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "schemas"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "schemas",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutCodeBinding",
+      "AuthorizedActions": [
+        {
+          "Name": "PutCodeBinding",
+          "Service": "schemas"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "schemas",
+          "Method": "put_code_binding",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PutResourcePolicy",
+          "Service": "schemas"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "schemas",
+          "Method": "put_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SearchSchemas",
+      "AuthorizedActions": [
+        {
+          "Name": "SearchSchemas",
+          "Service": "schemas"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "schemas",
+          "Method": "search_schemas",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartDiscoverer",
+      "AuthorizedActions": [
+        {
+          "Name": "StartDiscoverer",
+          "Service": "schemas"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "schemas",
+          "Method": "start_discoverer",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopDiscoverer",
+      "AuthorizedActions": [
+        {
+          "Name": "StopDiscoverer",
+          "Service": "schemas"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "schemas",
+          "Method": "stop_discoverer",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "schemas"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "schemas",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "schemas"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "schemas",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDiscoverer",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDiscoverer",
+          "Service": "schemas"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "schemas",
+          "Method": "update_discoverer",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRegistry",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateRegistry",
+          "Service": "schemas"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "schemas",
+          "Method": "update_registry",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSchema",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSchema",
+          "Service": "schemas"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "schemas",
+          "Method": "update_schema",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "discoverer",
+      "ARNFormats": [
+        "arn:${Partition}:schemas:${Region}:${Account}:discoverer/${DiscovererId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "registry",
+      "ARNFormats": [
+        "arn:${Partition}:schemas:${Region}:${Account}:registry/${RegistryName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "schema",
+      "ARNFormats": [
+        "arn:${Partition}:schemas:${Region}:${Account}:schema/${RegistryName}/${SchemaName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

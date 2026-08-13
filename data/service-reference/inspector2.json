@@ -1,0 +1,2772 @@
+{
+  "Name": "inspector2",
+  "Actions": [
+    {
+      "Name": "AssociateMember",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchAssociateCodeSecurityScanConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchDisassociateCodeSecurityScanConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchGetAccountStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchGetCodeSnippet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchGetFindingDetails",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchGetFreeTrialInfo",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchGetMemberEc2DeepInspectionStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchUpdateMemberEc2DeepInspectionStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CancelFindingsReport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CancelSbomExport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateCisScanConfiguration",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "CIS Scan Configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateCodeSecurityIntegration",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Code Security Integration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateCodeSecurityScanConfiguration",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Code Security Scan Configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateConnector",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Connector"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateFilter",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Filter"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateFindingsReport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateSbomExport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteCisScanConfiguration",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "CIS Scan Configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteCodeSecurityIntegration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Code Security Integration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteCodeSecurityScanConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Code Security Scan Configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteConnector",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Connector"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteFilter",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Filter"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeOrganizationConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "Disable",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisableDelegatedAdminAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateMember",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "Enable",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "EnableDelegatedAdminAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCisScanReport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCisScanResultDetails",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetClustersForImage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCodeSecurityIntegration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCodeSecurityScan",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCodeSecurityScanConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDelegatedAdminAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetEc2DeepInspectionConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetEncryptionKey",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetFindingsReportStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetMember",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSbomExport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAccountPermissions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListCisScanConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListCisScanResultsAggregatedByChecks",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListCisScanResultsAggregatedByTargetResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListCisScans",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListCodeSecurityIntegrations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListCodeSecurityScanConfigurationAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListCodeSecurityScanConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListConnectorScanConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListConnectors",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListCoverage",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListCoverageStatistics",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDelegatedAdminAccounts",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListFilters",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListFindingAggregations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListFindings",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListMembers",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListUsageTotals",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ResetEncryptionKey",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SearchVulnerabilities",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SendCisSessionHealth",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SendCisSessionTelemetry",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartCisSession",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartCodeSecurityScan",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopCisSession",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "CIS Scan Configuration"
+        },
+        {
+          "Name": "Code Security Integration"
+        },
+        {
+          "Name": "Code Security Scan Configuration"
+        },
+        {
+          "Name": "Connector"
+        },
+        {
+          "Name": "Filter"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "CIS Scan Configuration"
+        },
+        {
+          "Name": "Code Security Integration"
+        },
+        {
+          "Name": "Code Security Scan Configuration"
+        },
+        {
+          "Name": "Connector"
+        },
+        {
+          "Name": "Filter"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateCisScanConfiguration",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "CIS Scan Configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateCodeSecurityIntegration",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Code Security Integration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateCodeSecurityScanConfiguration",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Code Security Scan Configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateConnector",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Connector"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateConnectorScanConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateEc2DeepInspectionConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateEncryptionKey",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateFilter",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Filter"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateOrgEc2DeepInspectionConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateOrganizationConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AssociateMember",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateMember",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "associate_member",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchAssociateCodeSecurityScanConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchAssociateCodeSecurityScanConfiguration",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "batch_associate_code_security_scan_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchDisassociateCodeSecurityScanConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchDisassociateCodeSecurityScanConfiguration",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "batch_disassociate_code_security_scan_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetAccountStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetAccountStatus",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "batch_get_account_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetCodeSnippet",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetCodeSnippet",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "batch_get_code_snippet",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetFindingDetails",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetFindingDetails",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "batch_get_finding_details",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetFreeTrialInfo",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetFreeTrialInfo",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "batch_get_free_trial_info",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetMemberEc2DeepInspectionStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetMemberEc2DeepInspectionStatus",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "batch_get_member_ec2_deep_inspection_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchUpdateMemberEc2DeepInspectionStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchUpdateMemberEc2DeepInspectionStatus",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "batch_update_member_ec2_deep_inspection_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelFindingsReport",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelFindingsReport",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "cancel_findings_report",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelSbomExport",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelSbomExport",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "cancel_sbom_export",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateCisScanConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCisScanConfiguration",
+          "Service": "inspector2"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "create_cis_scan_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateCodeSecurityIntegration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCodeSecurityIntegration",
+          "Service": "inspector2"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "create_code_security_integration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateCodeSecurityScanConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCodeSecurityScanConfiguration",
+          "Service": "inspector2"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "create_code_security_scan_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateConnector",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateConnector",
+          "Service": "inspector2"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "create_connector",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateFilter",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateFilter",
+          "Service": "inspector2"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "create_filter",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateFindingsReport",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateFindingsReport",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "create_findings_report",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSbomExport",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSbomExport",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "create_sbom_export",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCisScanConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCisScanConfiguration",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "delete_cis_scan_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCodeSecurityIntegration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCodeSecurityIntegration",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "delete_code_security_integration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCodeSecurityScanConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCodeSecurityScanConfiguration",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "delete_code_security_scan_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteConnector",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteConnector",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "delete_connector",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteFilter",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteFilter",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "delete_filter",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeOrganizationConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeOrganizationConfiguration",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "describe_organization_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "Disable",
+      "AuthorizedActions": [
+        {
+          "Name": "Disable",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "disable",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisableDelegatedAdminAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "DisableDelegatedAdminAccount",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "disable_delegated_admin_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateMember",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateMember",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "disassociate_member",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "Enable",
+      "AuthorizedActions": [
+        {
+          "Name": "Enable",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "enable",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "EnableDelegatedAdminAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "EnableDelegatedAdminAccount",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "enable_delegated_admin_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCisScanReport",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCisScanReport",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "get_cis_scan_report",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCisScanResultDetails",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCisScanResultDetails",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "get_cis_scan_result_details",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetClustersForImage",
+      "AuthorizedActions": [
+        {
+          "Name": "GetClustersForImage",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "get_clusters_for_image",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCodeSecurityIntegration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCodeSecurityIntegration",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "get_code_security_integration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCodeSecurityScan",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCodeSecurityScan",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "get_code_security_scan",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCodeSecurityScanConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCodeSecurityScanConfiguration",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "get_code_security_scan_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetConfiguration",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "get_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDelegatedAdminAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDelegatedAdminAccount",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "get_delegated_admin_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEc2DeepInspectionConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEc2DeepInspectionConfiguration",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "get_ec2_deep_inspection_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEncryptionKey",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEncryptionKey",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "get_encryption_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetFindingsReportStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "GetFindingsReportStatus",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "get_findings_report_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMember",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMember",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "get_member",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSbomExport",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSbomExport",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "get_sbom_export",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAccountPermissions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAccountPermissions",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "list_account_permissions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCisScanConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCisScanConfigurations",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "list_cis_scan_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCisScanResultsAggregatedByChecks",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCisScanResultsAggregatedByChecks",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "list_cis_scan_results_aggregated_by_checks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCisScanResultsAggregatedByTargetResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCisScanResultsAggregatedByTargetResource",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "list_cis_scan_results_aggregated_by_target_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCisScans",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCisScans",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "list_cis_scans",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCodeSecurityIntegrations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCodeSecurityIntegrations",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "list_code_security_integrations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCodeSecurityScanConfigurationAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCodeSecurityScanConfigurationAssociations",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "list_code_security_scan_configuration_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCodeSecurityScanConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCodeSecurityScanConfigurations",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "list_code_security_scan_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListConnectorScanConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListConnectorScanConfigurations",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "list_connector_scan_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListConnectors",
+      "AuthorizedActions": [
+        {
+          "Name": "ListConnectors",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "list_connectors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCoverage",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCoverage",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "list_coverage",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCoverageStatistics",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCoverageStatistics",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "list_coverage_statistics",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDelegatedAdminAccounts",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDelegatedAdminAccounts",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "list_delegated_admin_accounts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFilters",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFilters",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "list_filters",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFindingAggregations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFindingAggregations",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "list_finding_aggregations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFindings",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFindings",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "list_findings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMembers",
+      "AuthorizedActions": [
+        {
+          "Name": "ListMembers",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "list_members",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListUsageTotals",
+      "AuthorizedActions": [
+        {
+          "Name": "ListUsageTotals",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "list_usage_totals",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ResetEncryptionKey",
+      "AuthorizedActions": [
+        {
+          "Name": "ResetEncryptionKey",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "reset_encryption_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SearchVulnerabilities",
+      "AuthorizedActions": [
+        {
+          "Name": "SearchVulnerabilities",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "search_vulnerabilities",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SendCisSessionHealth",
+      "AuthorizedActions": [
+        {
+          "Name": "SendCisSessionHealth",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "send_cis_session_health",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SendCisSessionTelemetry",
+      "AuthorizedActions": [
+        {
+          "Name": "SendCisSessionTelemetry",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "send_cis_session_telemetry",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartCisSession",
+      "AuthorizedActions": [
+        {
+          "Name": "StartCisSession",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "start_cis_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartCodeSecurityScan",
+      "AuthorizedActions": [
+        {
+          "Name": "StartCodeSecurityScan",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "start_code_security_scan",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopCisSession",
+      "AuthorizedActions": [
+        {
+          "Name": "StopCisSession",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "stop_cis_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCisScanConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCisScanConfiguration",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "update_cis_scan_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCodeSecurityIntegration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCodeSecurityIntegration",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "update_code_security_integration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCodeSecurityScanConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCodeSecurityScanConfiguration",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "update_code_security_scan_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateConfiguration",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "update_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateConnector",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateConnector",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "update_connector",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateConnectorScanConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateConnectorScanConfiguration",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "update_connector_scan_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateEc2DeepInspectionConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateEc2DeepInspectionConfiguration",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "update_ec2_deep_inspection_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateEncryptionKey",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateEncryptionKey",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "update_encryption_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateFilter",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateFilter",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "update_filter",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateOrgEc2DeepInspectionConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateOrgEc2DeepInspectionConfiguration",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "update_org_ec2_deep_inspection_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateOrganizationConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateOrganizationConfiguration",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "update_organization_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "CIS Scan Configuration",
+      "ARNFormats": [
+        "arn:${Partition}:inspector2:${Region}:${Account}:owner/${OwnerId}/cis-configuration/${CISScanConfigurationId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Code Security Integration",
+      "ARNFormats": [
+        "arn:${Partition}:inspector2:${Region}:${Account}:codesecurity-integration/${CodeSecurityIntegrationId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Code Security Scan Configuration",
+      "ARNFormats": [
+        "arn:${Partition}:inspector2:${Region}:${Account}:owner/${OwnerId}/codesecurity-configuration/${CodeSecurityScanConfigurationId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Connector",
+      "ARNFormats": [
+        "arn:${Partition}:inspector2:${Region}:${Account}:connector/${ConnectorId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Filter",
+      "ARNFormats": [
+        "arn:${Partition}:inspector2:${Region}:${Account}:owner/${OwnerId}/filter/${FilterId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Finding",
+      "ARNFormats": [
+        "arn:${Partition}:inspector2:${Region}:${Account}:finding/${FindingId}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

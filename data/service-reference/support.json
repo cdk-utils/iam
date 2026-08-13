@@ -1,0 +1,806 @@
+{
+  "Name": "support",
+  "Actions": [
+    {
+      "Name": "AddAttachmentsToSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AddCommunicationToCase",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateCase",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeAttachment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeCaseAttributes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeCaseOptions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeCases",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeCommunication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeCommunications",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeCreateCaseOptions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeIssueTypes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeServices",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeSeverityLevels",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeSupportLevel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeSupportedLanguages",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeTrustedAdvisorCheckRefreshStatuses",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeTrustedAdvisorCheckResult",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeTrustedAdvisorCheckSummaries",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeTrustedAdvisorChecks",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetInteraction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "InitiateCallForCase",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "InitiateChatForCase",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "InitiateLiveContactForCase",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListInteractionEntries",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListInteractions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutCaseAttributes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RateCaseCommunication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RefreshTrustedAdvisorCheck",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ResolveCase",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ResolveInteraction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SearchForCases",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartInteraction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateCaseSeverity",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateInteraction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AddAttachmentsToSet",
+      "AuthorizedActions": [
+        {
+          "Name": "AddAttachmentsToSet",
+          "Service": "support"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "support",
+          "Method": "add_attachments_to_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AddCommunicationToCase",
+      "AuthorizedActions": [
+        {
+          "Name": "AddCommunicationToCase",
+          "Service": "support"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "support",
+          "Method": "add_communication_to_case",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateCase",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCase",
+          "Service": "support"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "support",
+          "Method": "create_case",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAttachment",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAttachment",
+          "Service": "support"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "support",
+          "Method": "describe_attachment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeCases",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeCases",
+          "Service": "support"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "support",
+          "Method": "describe_cases",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeCommunications",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeCommunications",
+          "Service": "support"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "support",
+          "Method": "describe_communications",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeCreateCaseOptions",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeCreateCaseOptions",
+          "Service": "support"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "support",
+          "Method": "describe_create_case_options",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeServices",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeServices",
+          "Service": "support"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "support",
+          "Method": "describe_services",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSeverityLevels",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSeverityLevels",
+          "Service": "support"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "support",
+          "Method": "describe_severity_levels",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSupportedLanguages",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSupportedLanguages",
+          "Service": "support"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "support",
+          "Method": "describe_supported_languages",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeTrustedAdvisorCheckRefreshStatuses",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeTrustedAdvisorCheckRefreshStatuses",
+          "Service": "support"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "support",
+          "Method": "describe_trusted_advisor_check_refresh_statuses",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeTrustedAdvisorCheckResult",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeCheckItems",
+          "Service": "trustedadvisor"
+        },
+        {
+          "Name": "DescribeTrustedAdvisorCheckResult",
+          "Service": "support"
+        },
+        {
+          "Name": "ListRecommendationResources",
+          "Service": "trustedadvisor"
+        },
+        {
+          "Name": "ListRecommendationsForResource",
+          "Service": "trustedadvisor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "support",
+          "Method": "describe_trusted_advisor_check_result",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeTrustedAdvisorCheckSummaries",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeCheckSummaries",
+          "Service": "trustedadvisor"
+        },
+        {
+          "Name": "DescribeTrustedAdvisorCheckSummaries",
+          "Service": "support"
+        },
+        {
+          "Name": "GetRecommendation",
+          "Service": "trustedadvisor"
+        },
+        {
+          "Name": "ListRecommendations",
+          "Service": "trustedadvisor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "support",
+          "Method": "describe_trusted_advisor_check_summaries",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeTrustedAdvisorChecks",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeChecks",
+          "Service": "trustedadvisor"
+        },
+        {
+          "Name": "DescribeTrustedAdvisorChecks",
+          "Service": "support"
+        },
+        {
+          "Name": "ListChecks",
+          "Service": "trustedadvisor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "support",
+          "Method": "describe_trusted_advisor_checks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RefreshTrustedAdvisorCheck",
+      "AuthorizedActions": [
+        {
+          "Name": "RefreshTrustedAdvisorCheck",
+          "Service": "support"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "support",
+          "Method": "refresh_trusted_advisor_check",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ResolveCase",
+      "AuthorizedActions": [
+        {
+          "Name": "ResolveCase",
+          "Service": "support"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "support",
+          "Method": "resolve_case",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

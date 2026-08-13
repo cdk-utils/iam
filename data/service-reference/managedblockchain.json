@@ -1,0 +1,1234 @@
+{
+  "Name": "managedblockchain",
+  "Actions": [
+    {
+      "Name": "CreateAccessor",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateMember",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "network"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateNetwork",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateNode",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "member"
+        },
+        {
+          "Name": "network"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateProposal",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "network"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteAccessor",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "accessor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteMember",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "member"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteNode",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "node"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GET",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAccessor",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "accessor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetMember",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "member"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetNetwork",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "network"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetNode",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "node"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetProposal",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "proposal"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "Invoke",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "InvokeRpcBitcoinMainnet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "InvokeRpcBitcoinTestnet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "InvokeRpcPolygonMainnet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "InvokeRpcPolygonMumbaiTestnet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAccessors",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListInvitations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListMembers",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "network"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListNetworks",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListNodes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "member"
+        },
+        {
+          "Name": "network"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListProposalVotes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "proposal"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListProposals",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "network"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "accessor"
+        },
+        {
+          "Name": "invitation"
+        },
+        {
+          "Name": "member"
+        },
+        {
+          "Name": "network"
+        },
+        {
+          "Name": "node"
+        },
+        {
+          "Name": "proposal"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "POST",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RejectInvitation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "invitation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "accessor"
+        },
+        {
+          "Name": "invitation"
+        },
+        {
+          "Name": "member"
+        },
+        {
+          "Name": "network"
+        },
+        {
+          "Name": "node"
+        },
+        {
+          "Name": "proposal"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "accessor"
+        },
+        {
+          "Name": "invitation"
+        },
+        {
+          "Name": "member"
+        },
+        {
+          "Name": "network"
+        },
+        {
+          "Name": "node"
+        },
+        {
+          "Name": "proposal"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateMember",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "member"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateNode",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "node"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "VoteOnProposal",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "proposal"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateAccessor",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAccessor",
+          "Service": "managedblockchain"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "managedblockchain"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "managedblockchain",
+          "Method": "create_accessor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateMember",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateMember",
+          "Service": "managedblockchain"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "managedblockchain"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "managedblockchain",
+          "Method": "create_member",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateNetwork",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateNetwork",
+          "Service": "managedblockchain"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "managedblockchain"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "managedblockchain",
+          "Method": "create_network",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateNode",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateNode",
+          "Service": "managedblockchain"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "managedblockchain"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "managedblockchain",
+          "Method": "create_node",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateProposal",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateProposal",
+          "Service": "managedblockchain"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "managedblockchain"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "managedblockchain",
+          "Method": "create_proposal",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAccessor",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAccessor",
+          "Service": "managedblockchain"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "managedblockchain",
+          "Method": "delete_accessor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteMember",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteMember",
+          "Service": "managedblockchain"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "managedblockchain",
+          "Method": "delete_member",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteNode",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteNode",
+          "Service": "managedblockchain"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "managedblockchain",
+          "Method": "delete_node",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAccessor",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAccessor",
+          "Service": "managedblockchain"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "managedblockchain",
+          "Method": "get_accessor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMember",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMember",
+          "Service": "managedblockchain"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "managedblockchain",
+          "Method": "get_member",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetNetwork",
+      "AuthorizedActions": [
+        {
+          "Name": "GetNetwork",
+          "Service": "managedblockchain"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "managedblockchain",
+          "Method": "get_network",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetNode",
+      "AuthorizedActions": [
+        {
+          "Name": "GetNode",
+          "Service": "managedblockchain"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "managedblockchain",
+          "Method": "get_node",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetProposal",
+      "AuthorizedActions": [
+        {
+          "Name": "GetProposal",
+          "Service": "managedblockchain"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "managedblockchain",
+          "Method": "get_proposal",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAccessors",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAccessors",
+          "Service": "managedblockchain"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "managedblockchain",
+          "Method": "list_accessors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListInvitations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListInvitations",
+          "Service": "managedblockchain"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "managedblockchain",
+          "Method": "list_invitations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMembers",
+      "AuthorizedActions": [
+        {
+          "Name": "ListMembers",
+          "Service": "managedblockchain"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "managedblockchain",
+          "Method": "list_members",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListNetworks",
+      "AuthorizedActions": [
+        {
+          "Name": "ListNetworks",
+          "Service": "managedblockchain"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "managedblockchain",
+          "Method": "list_networks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListNodes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListNodes",
+          "Service": "managedblockchain"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "managedblockchain",
+          "Method": "list_nodes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProposalVotes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProposalVotes",
+          "Service": "managedblockchain"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "managedblockchain",
+          "Method": "list_proposal_votes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProposals",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProposals",
+          "Service": "managedblockchain"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "managedblockchain",
+          "Method": "list_proposals",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "managedblockchain"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "managedblockchain",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RejectInvitation",
+      "AuthorizedActions": [
+        {
+          "Name": "RejectInvitation",
+          "Service": "managedblockchain"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "managedblockchain",
+          "Method": "reject_invitation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "managedblockchain"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "managedblockchain",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "managedblockchain"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "managedblockchain",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateMember",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateMember",
+          "Service": "managedblockchain"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "managedblockchain",
+          "Method": "update_member",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateNode",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateNode",
+          "Service": "managedblockchain"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "managedblockchain",
+          "Method": "update_node",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "VoteOnProposal",
+      "AuthorizedActions": [
+        {
+          "Name": "VoteOnProposal",
+          "Service": "managedblockchain"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "managedblockchain",
+          "Method": "vote_on_proposal",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "accessor",
+      "ARNFormats": [
+        "arn:${Partition}:managedblockchain:${Region}:${Account}:accessors/${AccessorId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "invitation",
+      "ARNFormats": [
+        "arn:${Partition}:managedblockchain:${Region}:${Account}:invitations/${InvitationId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "member",
+      "ARNFormats": [
+        "arn:${Partition}:managedblockchain:${Region}:${Account}:members/${MemberId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "network",
+      "ARNFormats": [
+        "arn:${Partition}:managedblockchain:${Region}::networks/${NetworkId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "node",
+      "ARNFormats": [
+        "arn:${Partition}:managedblockchain:${Region}:${Account}:nodes/${NodeId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "proposal",
+      "ARNFormats": [
+        "arn:${Partition}:managedblockchain:${Region}::proposals/${ProposalId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

@@ -1,0 +1,724 @@
+{
+  "Name": "mediapackage-vod",
+  "Actions": [
+    {
+      "Name": "ConfigureLogs",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "packaging-groups"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateAsset",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreatePackagingConfiguration",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreatePackagingGroup",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteAsset",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "assets"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeletePackagingConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "packaging-configurations"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeletePackagingGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "packaging-groups"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeAsset",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "assets"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribePackagingConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "packaging-configurations"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribePackagingGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "packaging-groups"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAssets",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPackagingConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPackagingGroups",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "assets"
+        },
+        {
+          "Name": "packaging-configurations"
+        },
+        {
+          "Name": "packaging-groups"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "assets"
+        },
+        {
+          "Name": "packaging-configurations"
+        },
+        {
+          "Name": "packaging-groups"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "assets"
+        },
+        {
+          "Name": "packaging-configurations"
+        },
+        {
+          "Name": "packaging-groups"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdatePackagingGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "packaging-groups"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "ConfigureLogs",
+      "AuthorizedActions": [
+        {
+          "Name": "ConfigureLogs",
+          "Service": "mediapackage-vod"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediapackage-vod",
+          "Method": "configure_logs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAsset",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAsset",
+          "Service": "mediapackage-vod"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "mediapackage-vod.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "mediapackage-vod"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediapackage-vod",
+          "Method": "create_asset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePackagingConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreatePackagingConfiguration",
+          "Service": "mediapackage-vod"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "mediapackage-vod.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "mediapackage-vod"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediapackage-vod",
+          "Method": "create_packaging_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePackagingGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "CreatePackagingGroup",
+          "Service": "mediapackage-vod"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "mediapackage-vod.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "mediapackage-vod"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediapackage-vod",
+          "Method": "create_packaging_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAsset",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAsset",
+          "Service": "mediapackage-vod"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediapackage-vod",
+          "Method": "delete_asset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePackagingConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeletePackagingConfiguration",
+          "Service": "mediapackage-vod"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediapackage-vod",
+          "Method": "delete_packaging_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePackagingGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "DeletePackagingGroup",
+          "Service": "mediapackage-vod"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediapackage-vod",
+          "Method": "delete_packaging_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAsset",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAsset",
+          "Service": "mediapackage-vod"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediapackage-vod",
+          "Method": "describe_asset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribePackagingConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribePackagingConfiguration",
+          "Service": "mediapackage-vod"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediapackage-vod",
+          "Method": "describe_packaging_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribePackagingGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribePackagingGroup",
+          "Service": "mediapackage-vod"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediapackage-vod",
+          "Method": "describe_packaging_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAssets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAssets",
+          "Service": "mediapackage-vod"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediapackage-vod",
+          "Method": "list_assets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPackagingConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPackagingConfigurations",
+          "Service": "mediapackage-vod"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediapackage-vod",
+          "Method": "list_packaging_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPackagingGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPackagingGroups",
+          "Service": "mediapackage-vod"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediapackage-vod",
+          "Method": "list_packaging_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "mediapackage-vod"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediapackage-vod",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "mediapackage-vod"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediapackage-vod",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "mediapackage-vod"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediapackage-vod",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdatePackagingGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "mediapackage-vod.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdatePackagingGroup",
+          "Service": "mediapackage-vod"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediapackage-vod",
+          "Method": "update_packaging_group",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "assets",
+      "ARNFormats": [
+        "arn:${Partition}:mediapackage-vod:${Region}:${Account}:assets/${AssetIdentifier}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "packaging-configurations",
+      "ARNFormats": [
+        "arn:${Partition}:mediapackage-vod:${Region}:${Account}:packaging-configurations/${PackagingConfigurationIdentifier}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "packaging-groups",
+      "ARNFormats": [
+        "arn:${Partition}:mediapackage-vod:${Region}:${Account}:packaging-groups/${PackagingGroupIdentifier}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

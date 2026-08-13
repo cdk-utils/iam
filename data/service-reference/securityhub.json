@@ -1,0 +1,4585 @@
+{
+  "Name": "securityhub",
+  "Actions": [
+    {
+      "Name": "AcceptAdministratorInvitation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AcceptInvitation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AllowVendedLogDeliveryForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        },
+        {
+          "Name": "hubv2"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchDeleteAutomationRules",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "automation-rule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchDisableStandards",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchEnableStandards",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchGetAutomationRules",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "automation-rule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchGetConfigurationPolicyAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchGetControlEvaluations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchGetEnabledRegionsV2",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hubv2"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchGetSecurityControls",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchGetStandardsControlAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchImportFindings",
+      "ActionConditionKeys": [
+        "securityhub:TargetAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "product"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchUpdateAutomationRules",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "automation-rule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchUpdateFindings",
+      "ActionConditionKeys": [
+        "securityhub:ASFFSyntaxPath/${ASFFSyntaxPath}",
+        "securityhub:OCSFSyntaxPath/${OCSFSyntaxPath}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        },
+        {
+          "Name": "hubv2"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchUpdateStandardsControlAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ConnectorRegistrationsV2",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateActionTarget",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateAggregatorV2",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateAutomationRule",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateAutomationRuleV2",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateConfigurationPolicy",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateConnector",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateConnectorV2",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateFindingAggregator",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateInsight",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateMembers",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateTicketV2",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connectorv2"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeclineInvitations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteActionTarget",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteAggregatorV2",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "aggregatorv2"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteAutomationRuleV2",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "automation-rulev2"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteConfigurationPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "configuration-policy"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteConnector",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connector"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteConnectorV2",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connectorv2"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteFindingAggregator",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "finding-aggregator"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteInsight",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteInvitations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteMembers",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeActionTargets",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeHub",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeOrganizationConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeProducts",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeProductsV2",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hubv2"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeSecurityHubV2",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeStandards",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeStandardsControls",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisableImportFindingsForProduct",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisableOrganizationAdminAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisableSecurityHub",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisableSecurityHubFeatureV2",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hubv2"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisableSecurityHubV2",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateFromAdministratorAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateFromMasterAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateMembers",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "EnableImportFindingsForProduct",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "EnableOrganizationAdminAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "EnableSecurityHub",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "EnableSecurityHubFeatureV2",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hubv2"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "EnableSecurityHubV2",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GenerateRecommendedPolicyV2",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hubv2"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAdhocInsightResults",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        },
+        {
+          "Name": "hubv2"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAdministratorAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetAggregatorV2",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "aggregatorv2"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetAutomationRuleV2",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "automation-rulev2"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetConfigurationPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "configuration-policy"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetConfigurationPolicyAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetConnector",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connector"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetConnectorV2",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connectorv2"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetControlFindingSummary",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCoverageStatisticsV2",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hubv2"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetEnabledStandards",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetFindingAggregator",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "finding-aggregator"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetFindingHistory",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetFindings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        },
+        {
+          "Name": "hubv2"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetFindingsTrendsV2",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hubv2"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetFreeTrialEndDate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetFreeTrialUsage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetInsightFindingTrend",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetInsightResults",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetInsights",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetInvitationsCount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetMasterAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetMembers",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetRecommendedPolicyV2",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hubv2"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetResourcesStatisticsV2",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hubv2"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetResourcesTrendsV2",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hubv2"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetResourcesV2",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hubv2"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSecurityControlDefinition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetUsage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetUsageV2",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hubv2"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "InviteMembers",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAccountUsageV2",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hubv2"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAggregatorsV2",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAutomationRules",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAutomationRulesV2",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListConfigurationPolicies",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListConfigurationPolicyAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListConnectors",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListConnectorsV2",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListControlEvaluationSummaries",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEnabledProductsForImport",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListFindingAggregators",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListFreeTrialStatusesV2",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hubv2"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListInvitations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListMembers",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListOrganizationAdminAccounts",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListSecurityControlDefinitions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListStandardsControlAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "automation-rule"
+        },
+        {
+          "Name": "configuration-policy"
+        },
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SendFindingEvents",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SendInsightEvents",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartConfigurationPolicyAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartConfigurationPolicyDisassociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "aggregatorv2"
+        },
+        {
+          "Name": "automation-rule"
+        },
+        {
+          "Name": "automation-rulev2"
+        },
+        {
+          "Name": "configuration-policy"
+        },
+        {
+          "Name": "connector"
+        },
+        {
+          "Name": "connectorv2"
+        },
+        {
+          "Name": "hub"
+        },
+        {
+          "Name": "hubv2"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "aggregatorv2"
+        },
+        {
+          "Name": "automation-rule"
+        },
+        {
+          "Name": "automation-rulev2"
+        },
+        {
+          "Name": "configuration-policy"
+        },
+        {
+          "Name": "connector"
+        },
+        {
+          "Name": "connectorv2"
+        },
+        {
+          "Name": "hub"
+        },
+        {
+          "Name": "hubv2"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateActionTarget",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateAggregatorV2",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "aggregatorv2"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateAutomationRuleV2",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "automation-rulev2"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateConfigurationPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "configuration-policy"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateConnector",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connector"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateConnectorV2",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connectorv2"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateFindingAggregator",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "finding-aggregator"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateFindings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateInsight",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateOrganizationConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateSecurityControl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateSecurityHubConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateStandardsControl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hub"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "securityhub:ASFFSyntaxPath/${ASFFSyntaxPath}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "securityhub:OCSFSyntaxPath/${OCSFSyntaxPath}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "securityhub:TargetAccount",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AcceptAdministratorInvitation",
+      "AuthorizedActions": [
+        {
+          "Name": "AcceptAdministratorInvitation",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "accept_administrator_invitation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AcceptInvitation",
+      "AuthorizedActions": [
+        {
+          "Name": "AcceptInvitation",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "accept_invitation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchDeleteAutomationRules",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchDeleteAutomationRules",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "batch_delete_automation_rules",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchDisableStandards",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchDisableStandards",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "batch_disable_standards",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchEnableStandards",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchEnableStandards",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "batch_enable_standards",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetAutomationRules",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetAutomationRules",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "batch_get_automation_rules",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetConfigurationPolicyAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetConfigurationPolicyAssociations",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "batch_get_configuration_policy_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetSecurityControls",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetSecurityControls",
+          "Service": "securityhub"
+        },
+        {
+          "Name": "DescribeStandardsControls",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "batch_get_security_controls",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetStandardsControlAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetStandardsControlAssociations",
+          "Service": "securityhub"
+        },
+        {
+          "Name": "DescribeStandardsControls",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "batch_get_standards_control_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchImportFindings",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchImportFindings",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "batch_import_findings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchUpdateAutomationRules",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchUpdateAutomationRules",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "batch_update_automation_rules",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchUpdateFindings",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchUpdateFindings",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "batch_update_findings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchUpdateFindingsV2",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchUpdateFindings",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "batch_update_findings_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchUpdateStandardsControlAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchUpdateStandardsControlAssociations",
+          "Service": "securityhub"
+        },
+        {
+          "Name": "UpdateStandardsControl",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "batch_update_standards_control_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateActionTarget",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateActionTarget",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "create_action_target",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAggregatorV2",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAggregatorV2",
+          "Service": "securityhub"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "create_aggregator_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAutomationRule",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAutomationRule",
+          "Service": "securityhub"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "create_automation_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAutomationRuleV2",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAutomationRuleV2",
+          "Service": "securityhub"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "create_automation_rule_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateConfigurationPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateConfigurationPolicy",
+          "Service": "securityhub"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "create_configuration_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateConnector",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateConnector",
+          "Service": "securityhub"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "create_connector",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateConnectorV2",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateConnectorV2",
+          "Service": "securityhub"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "create_connector_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateFindingAggregator",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateFindingAggregator",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "create_finding_aggregator",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateInsight",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateInsight",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "create_insight",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateMembers",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateMembers",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "create_members",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateTicketV2",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateTicketV2",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "create_ticket_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeclineInvitations",
+      "AuthorizedActions": [
+        {
+          "Name": "DeclineInvitations",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "decline_invitations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteActionTarget",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteActionTarget",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "delete_action_target",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAggregatorV2",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAggregatorV2",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "delete_aggregator_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAutomationRuleV2",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAutomationRuleV2",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "delete_automation_rule_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteConfigurationPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteConfigurationPolicy",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "delete_configuration_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteConnector",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteConnector",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "delete_connector",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteConnectorV2",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteConnectorV2",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "delete_connector_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteFindingAggregator",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteFindingAggregator",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "delete_finding_aggregator",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteInsight",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteInsight",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "delete_insight",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteInvitations",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteInvitations",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "delete_invitations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteMembers",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteMembers",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "delete_members",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeActionTargets",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeActionTargets",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "describe_action_targets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeHub",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeHub",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "describe_hub",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeOrganizationConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeOrganizationConfiguration",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "describe_organization_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeProducts",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeProducts",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "describe_products",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeProductsV2",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeProductsV2",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "describe_products_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSecurityHubV2",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSecurityHubV2",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "describe_security_hub_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeStandards",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeStandards",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "describe_standards",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeStandardsControls",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeStandardsControls",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "describe_standards_controls",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisableImportFindingsForProduct",
+      "AuthorizedActions": [
+        {
+          "Name": "DisableImportFindingsForProduct",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "disable_import_findings_for_product",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisableOrganizationAdminAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "DisableOrganizationAdminAccount",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "disable_organization_admin_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisableSecurityHub",
+      "AuthorizedActions": [
+        {
+          "Name": "DisableSecurityHub",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "disable_security_hub",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisableSecurityHubFeatureV2",
+      "AuthorizedActions": [
+        {
+          "Name": "DisableSecurityHubFeatureV2",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "disable_security_hub_feature_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisableSecurityHubV2",
+      "AuthorizedActions": [
+        {
+          "Name": "DisableSecurityHubV2",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "disable_security_hub_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateFromAdministratorAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateFromAdministratorAccount",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "disassociate_from_administrator_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateFromMasterAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateFromMasterAccount",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "disassociate_from_master_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateMembers",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateMembers",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "disassociate_members",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "EnableImportFindingsForProduct",
+      "AuthorizedActions": [
+        {
+          "Name": "EnableImportFindingsForProduct",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "enable_import_findings_for_product",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "EnableOrganizationAdminAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "EnableOrganizationAdminAccount",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "enable_organization_admin_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "EnableSecurityHub",
+      "AuthorizedActions": [
+        {
+          "Name": "EnableSecurityHub",
+          "Service": "securityhub"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "enable_security_hub",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "EnableSecurityHubFeatureV2",
+      "AuthorizedActions": [
+        {
+          "Name": "EnableSecurityHubFeatureV2",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "enable_security_hub_feature_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "EnableSecurityHubV2",
+      "AuthorizedActions": [
+        {
+          "Name": "EnableSecurityHubV2",
+          "Service": "securityhub"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "enable_security_hub_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GenerateRecommendedPolicyV2",
+      "AuthorizedActions": [
+        {
+          "Name": "GenerateRecommendedPolicyV2",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "generate_recommended_policy_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAdministratorAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAdministratorAccount",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "get_administrator_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAggregatorV2",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAggregatorV2",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "get_aggregator_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAutomationRuleV2",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAutomationRuleV2",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "get_automation_rule_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetConfigurationPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetConfigurationPolicy",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "get_configuration_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetConfigurationPolicyAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetConfigurationPolicyAssociation",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "get_configuration_policy_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetConnector",
+      "AuthorizedActions": [
+        {
+          "Name": "GetConnector",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "get_connector",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetConnectorV2",
+      "AuthorizedActions": [
+        {
+          "Name": "GetConnectorV2",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "get_connector_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEnabledStandards",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEnabledStandards",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "get_enabled_standards",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetFindingAggregator",
+      "AuthorizedActions": [
+        {
+          "Name": "GetFindingAggregator",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "get_finding_aggregator",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetFindingHistory",
+      "AuthorizedActions": [
+        {
+          "Name": "GetFindingHistory",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "get_finding_history",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetFindingStatisticsV2",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAdhocInsightResults",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "get_finding_statistics_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetFindings",
+      "AuthorizedActions": [
+        {
+          "Name": "GetFindings",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "get_findings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetFindingsTrendsV2",
+      "AuthorizedActions": [
+        {
+          "Name": "GetFindingsTrendsV2",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "get_findings_trends_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetFindingsV2",
+      "AuthorizedActions": [
+        {
+          "Name": "GetFindings",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "get_findings_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetInsightResults",
+      "AuthorizedActions": [
+        {
+          "Name": "GetInsightResults",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "get_insight_results",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetInsights",
+      "AuthorizedActions": [
+        {
+          "Name": "GetInsights",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "get_insights",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetInvitationsCount",
+      "AuthorizedActions": [
+        {
+          "Name": "GetInvitationsCount",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "get_invitations_count",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMasterAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMasterAccount",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "get_master_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMembers",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMembers",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "get_members",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRecommendedPolicyV2",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRecommendedPolicyV2",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "get_recommended_policy_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResourcesStatisticsV2",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResourcesStatisticsV2",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "get_resources_statistics_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResourcesTrendsV2",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResourcesTrendsV2",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "get_resources_trends_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResourcesV2",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResourcesV2",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "get_resources_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSecurityControlDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSecurityControlDefinition",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "get_security_control_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "InviteMembers",
+      "AuthorizedActions": [
+        {
+          "Name": "InviteMembers",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "invite_members",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAggregatorsV2",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAggregatorsV2",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "list_aggregators_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAutomationRules",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAutomationRules",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "list_automation_rules",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAutomationRulesV2",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAutomationRulesV2",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "list_automation_rules_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListConfigurationPolicies",
+      "AuthorizedActions": [
+        {
+          "Name": "ListConfigurationPolicies",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "list_configuration_policies",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListConfigurationPolicyAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListConfigurationPolicyAssociations",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "list_configuration_policy_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListConnectors",
+      "AuthorizedActions": [
+        {
+          "Name": "ListConnectors",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "list_connectors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListConnectorsV2",
+      "AuthorizedActions": [
+        {
+          "Name": "ListConnectorsV2",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "list_connectors_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEnabledProductsForImport",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEnabledProductsForImport",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "list_enabled_products_for_import",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFindingAggregators",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFindingAggregators",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "list_finding_aggregators",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFreeTrialStatusesV2",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFreeTrialStatusesV2",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "list_free_trial_statuses_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListInvitations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListInvitations",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "list_invitations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMembers",
+      "AuthorizedActions": [
+        {
+          "Name": "ListMembers",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "list_members",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListOrganizationAdminAccounts",
+      "AuthorizedActions": [
+        {
+          "Name": "ListOrganizationAdminAccounts",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "list_organization_admin_accounts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSecurityControlDefinitions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSecurityControlDefinitions",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "list_security_control_definitions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListStandardsControlAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeStandardsControls",
+          "Service": "securityhub"
+        },
+        {
+          "Name": "ListStandardsControlAssociations",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "list_standards_control_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RegisterConnectorV2",
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "register_connector_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartConfigurationPolicyAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "StartConfigurationPolicyAssociation",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "start_configuration_policy_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartConfigurationPolicyDisassociation",
+      "AuthorizedActions": [
+        {
+          "Name": "StartConfigurationPolicyDisassociation",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "start_configuration_policy_disassociation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateActionTarget",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateActionTarget",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "update_action_target",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAggregatorV2",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAggregatorV2",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "update_aggregator_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAutomationRuleV2",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAutomationRuleV2",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "update_automation_rule_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateConfigurationPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateConfigurationPolicy",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "update_configuration_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateConnector",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateConnector",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "update_connector",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateConnectorV2",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateConnectorV2",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "update_connector_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateFindingAggregator",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateFindingAggregator",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "update_finding_aggregator",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateFindings",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateFindings",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "update_findings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateInsight",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateInsight",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "update_insight",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateOrganizationConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateOrganizationConfiguration",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "update_organization_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSecurityControl",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSecurityControl",
+          "Service": "securityhub"
+        },
+        {
+          "Name": "UpdateStandardsControl",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "update_security_control",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSecurityHubConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSecurityHubConfiguration",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "update_security_hub_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateStandardsControl",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateStandardsControl",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "update_standards_control",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "aggregatorv2",
+      "ARNFormats": [
+        "arn:${Partition}:securityhub:${Region}:${Account}:aggregatorv2/${AggregatorV2Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "automation-rule",
+      "ARNFormats": [
+        "arn:${Partition}:securityhub:${Region}:${Account}:automation-rule/${AutomationRuleId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "automation-rulev2",
+      "ARNFormats": [
+        "arn:${Partition}:securityhub:${Region}:${Account}:automation-rulev2/${AutomationRuleV2Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "configuration-policy",
+      "ARNFormats": [
+        "arn:${Partition}:securityhub:${Region}:${Account}:configuration-policy/${ConfigurationPolicyId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "connector",
+      "ARNFormats": [
+        "arn:${Partition}:securityhub:${Region}:${Account}:connector/${ConnectorId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "connectorv2",
+      "ARNFormats": [
+        "arn:${Partition}:securityhub:${Region}:${Account}:connectorv2/${ConnectorV2Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "finding-aggregator",
+      "ARNFormats": [
+        "arn:${Partition}:securityhub:${Region}:${Account}:finding-aggregator/${FindingAggregatorId}"
+      ]
+    },
+    {
+      "Name": "hub",
+      "ARNFormats": [
+        "arn:${Partition}:securityhub:${Region}:${Account}:hub/default"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "hubv2",
+      "ARNFormats": [
+        "arn:${Partition}:securityhub:${Region}:${Account}:hubv2/${HubV2Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "product",
+      "ARNFormats": [
+        "arn:${Partition}:securityhub:${Region}:${Account}:product/${Company}/${ProductId}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

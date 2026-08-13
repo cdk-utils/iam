@@ -1,0 +1,1217 @@
+{
+  "Name": "mechanicalturk",
+  "Actions": [
+    {
+      "Name": "AcceptQualificationRequest",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ApproveAssignment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AssociateQualificationWithWorker",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateAdditionalAssignmentsForHIT",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateHIT",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateHITType",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateHITWithHITType",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateQualificationType",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateWorkerBlock",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteHIT",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteQualificationType",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteWorkerBlock",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateQualificationFromWorker",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAccountBalance",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAssignment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetFileUploadURL",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetHIT",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetQualificationScore",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetQualificationType",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAssignmentsForHIT",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListBonusPayments",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListHITs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListHITsForQualificationType",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListQualificationRequests",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListQualificationTypes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListReviewPolicyResultsForHIT",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListReviewableHITs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListWorkerBlocks",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListWorkersWithQualificationType",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "NotifyWorkers",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RejectAssignment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RejectQualificationRequest",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SendBonus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SendTestEventNotification",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateExpirationForHIT",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateHITReviewStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateHITTypeOfHIT",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateNotificationSettings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateQualificationType",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AcceptQualificationRequest",
+      "AuthorizedActions": [
+        {
+          "Name": "AcceptQualificationRequest",
+          "Service": "mechanicalturk"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mturk",
+          "Method": "accept_qualification_request",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ApproveAssignment",
+      "AuthorizedActions": [
+        {
+          "Name": "ApproveAssignment",
+          "Service": "mechanicalturk"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mturk",
+          "Method": "approve_assignment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateQualificationWithWorker",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateQualificationWithWorker",
+          "Service": "mechanicalturk"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mturk",
+          "Method": "associate_qualification_with_worker",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAdditionalAssignmentsForHIT",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAdditionalAssignmentsForHIT",
+          "Service": "mechanicalturk"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mturk",
+          "Method": "create_additional_assignments_for_hit",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateHIT",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateHIT",
+          "Service": "mechanicalturk"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mturk",
+          "Method": "create_hit",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateHITType",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateHITType",
+          "Service": "mechanicalturk"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mturk",
+          "Method": "create_hit_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateHITWithHITType",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateHITWithHITType",
+          "Service": "mechanicalturk"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mturk",
+          "Method": "create_hit_with_hit_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateQualificationType",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateQualificationType",
+          "Service": "mechanicalturk"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mturk",
+          "Method": "create_qualification_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateWorkerBlock",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateWorkerBlock",
+          "Service": "mechanicalturk"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mturk",
+          "Method": "create_worker_block",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteHIT",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteHIT",
+          "Service": "mechanicalturk"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mturk",
+          "Method": "delete_hit",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteQualificationType",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteQualificationType",
+          "Service": "mechanicalturk"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mturk",
+          "Method": "delete_qualification_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteWorkerBlock",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteWorkerBlock",
+          "Service": "mechanicalturk"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mturk",
+          "Method": "delete_worker_block",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateQualificationFromWorker",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateQualificationFromWorker",
+          "Service": "mechanicalturk"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mturk",
+          "Method": "disassociate_qualification_from_worker",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAccountBalance",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAccountBalance",
+          "Service": "mechanicalturk"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mturk",
+          "Method": "get_account_balance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAssignment",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAssignment",
+          "Service": "mechanicalturk"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mturk",
+          "Method": "get_assignment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetFileUploadURL",
+      "AuthorizedActions": [
+        {
+          "Name": "GetFileUploadURL",
+          "Service": "mechanicalturk"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mturk",
+          "Method": "get_file_upload_url",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetHIT",
+      "AuthorizedActions": [
+        {
+          "Name": "GetHIT",
+          "Service": "mechanicalturk"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mturk",
+          "Method": "get_hit",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetQualificationScore",
+      "AuthorizedActions": [
+        {
+          "Name": "GetQualificationScore",
+          "Service": "mechanicalturk"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mturk",
+          "Method": "get_qualification_score",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetQualificationType",
+      "AuthorizedActions": [
+        {
+          "Name": "GetQualificationType",
+          "Service": "mechanicalturk"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mturk",
+          "Method": "get_qualification_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAssignmentsForHIT",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAssignmentsForHIT",
+          "Service": "mechanicalturk"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mturk",
+          "Method": "list_assignments_for_hit",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListBonusPayments",
+      "AuthorizedActions": [
+        {
+          "Name": "ListBonusPayments",
+          "Service": "mechanicalturk"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mturk",
+          "Method": "list_bonus_payments",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListHITs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListHITs",
+          "Service": "mechanicalturk"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mturk",
+          "Method": "list_hits",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListHITsForQualificationType",
+      "AuthorizedActions": [
+        {
+          "Name": "ListHITsForQualificationType",
+          "Service": "mechanicalturk"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mturk",
+          "Method": "list_hits_for_qualification_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListQualificationRequests",
+      "AuthorizedActions": [
+        {
+          "Name": "ListQualificationRequests",
+          "Service": "mechanicalturk"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mturk",
+          "Method": "list_qualification_requests",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListQualificationTypes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListQualificationTypes",
+          "Service": "mechanicalturk"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mturk",
+          "Method": "list_qualification_types",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListReviewPolicyResultsForHIT",
+      "AuthorizedActions": [
+        {
+          "Name": "ListReviewPolicyResultsForHIT",
+          "Service": "mechanicalturk"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mturk",
+          "Method": "list_review_policy_results_for_hit",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListReviewableHITs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListReviewableHITs",
+          "Service": "mechanicalturk"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mturk",
+          "Method": "list_reviewable_hits",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListWorkerBlocks",
+      "AuthorizedActions": [
+        {
+          "Name": "ListWorkerBlocks",
+          "Service": "mechanicalturk"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mturk",
+          "Method": "list_worker_blocks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListWorkersWithQualificationType",
+      "AuthorizedActions": [
+        {
+          "Name": "ListWorkersWithQualificationType",
+          "Service": "mechanicalturk"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mturk",
+          "Method": "list_workers_with_qualification_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "NotifyWorkers",
+      "AuthorizedActions": [
+        {
+          "Name": "NotifyWorkers",
+          "Service": "mechanicalturk"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mturk",
+          "Method": "notify_workers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RejectAssignment",
+      "AuthorizedActions": [
+        {
+          "Name": "RejectAssignment",
+          "Service": "mechanicalturk"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mturk",
+          "Method": "reject_assignment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RejectQualificationRequest",
+      "AuthorizedActions": [
+        {
+          "Name": "RejectQualificationRequest",
+          "Service": "mechanicalturk"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mturk",
+          "Method": "reject_qualification_request",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SendBonus",
+      "AuthorizedActions": [
+        {
+          "Name": "SendBonus",
+          "Service": "mechanicalturk"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mturk",
+          "Method": "send_bonus",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SendTestEventNotification",
+      "AuthorizedActions": [
+        {
+          "Name": "SendTestEventNotification",
+          "Service": "mechanicalturk"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mturk",
+          "Method": "send_test_event_notification",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateExpirationForHIT",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateExpirationForHIT",
+          "Service": "mechanicalturk"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mturk",
+          "Method": "update_expiration_for_hit",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateHITReviewStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateHITReviewStatus",
+          "Service": "mechanicalturk"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mturk",
+          "Method": "update_hit_review_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateHITTypeOfHIT",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateHITTypeOfHIT",
+          "Service": "mechanicalturk"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mturk",
+          "Method": "update_hit_type_of_hit",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateNotificationSettings",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateNotificationSettings",
+          "Service": "mechanicalturk"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mturk",
+          "Method": "update_notification_settings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateQualificationType",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateQualificationType",
+          "Service": "mechanicalturk"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mturk",
+          "Method": "update_qualification_type",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

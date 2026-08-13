@@ -1,0 +1,128 @@
+{
+  "Name": "sso-oauth",
+  "Actions": [
+    {
+      "Name": "CreateTokenWithIAM",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "IntrospectTokenWithIAM",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RevokeTokenWithIAM",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateToken",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateTokenWithIAM",
+          "Service": "sso-oauth"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-oidc",
+          "Method": "create_token",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateTokenWithIAM",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateTokenWithIAM",
+          "Service": "sso-oauth"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-oidc",
+          "Method": "create_token_with_iam",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RegisterClient",
+      "SDK": [
+        {
+          "Name": "sso-oidc",
+          "Method": "register_client",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartDeviceAuthorization",
+      "SDK": [
+        {
+          "Name": "sso-oidc",
+          "Method": "start_device_authorization",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "Application",
+      "ARNFormats": [
+        "arn:${Partition}:sso::${AccountId}:application/${InstanceId}/${ApplicationId}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

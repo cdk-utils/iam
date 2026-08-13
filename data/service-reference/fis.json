@@ -1,0 +1,1157 @@
+{
+  "Name": "fis",
+  "Actions": [
+    {
+      "Name": "CreateExperimentTemplate",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "action"
+        },
+        {
+          "Name": "experiment-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateTargetAccountConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "experiment-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteExperimentTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "experiment-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteTargetAccountConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "experiment-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetAction",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "action"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetExperiment",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "experiment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetExperimentTargetAccountConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "experiment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetExperimentTemplate",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "experiment-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSafetyLever",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "safety-lever"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetTargetAccountConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "experiment-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetTargetResourceType",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "InjectApiInternalError",
+      "ActionConditionKeys": [
+        "fis:Operations",
+        "fis:Percentage",
+        "fis:Service",
+        "fis:Targets"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "experiment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "InjectApiThrottleError",
+      "ActionConditionKeys": [
+        "fis:Operations",
+        "fis:Percentage",
+        "fis:Service",
+        "fis:Targets"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "experiment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "InjectApiUnavailableError",
+      "ActionConditionKeys": [
+        "fis:Operations",
+        "fis:Percentage",
+        "fis:Service",
+        "fis:Targets"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "experiment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListActions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListExperimentResolvedTargets",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "experiment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListExperimentTargetAccountConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "experiment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListExperimentTemplates",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListExperiments",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "action"
+        },
+        {
+          "Name": "experiment"
+        },
+        {
+          "Name": "experiment-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTargetAccountConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "experiment-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTargetResourceTypes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartExperiment",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "experiment"
+        },
+        {
+          "Name": "experiment-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopExperiment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "experiment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "action"
+        },
+        {
+          "Name": "experiment"
+        },
+        {
+          "Name": "experiment-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "action"
+        },
+        {
+          "Name": "experiment"
+        },
+        {
+          "Name": "experiment-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateExperimentTemplate",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "action"
+        },
+        {
+          "Name": "experiment-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateSafetyLeverState",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "safety-lever"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateTargetAccountConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "experiment-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "fis:Operations",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "fis:Percentage",
+      "Types": [
+        "Numeric"
+      ]
+    },
+    {
+      "Name": "fis:Service",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "fis:Targets",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateExperimentTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateExperimentTemplate",
+          "Service": "fis"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "fis.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "fis"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fis",
+          "Method": "create_experiment_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateTargetAccountConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateTargetAccountConfiguration",
+          "Service": "fis"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fis",
+          "Method": "create_target_account_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteExperimentTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteExperimentTemplate",
+          "Service": "fis"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fis",
+          "Method": "delete_experiment_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteTargetAccountConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteTargetAccountConfiguration",
+          "Service": "fis"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fis",
+          "Method": "delete_target_account_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAction",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAction",
+          "Service": "fis"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fis",
+          "Method": "get_action",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetExperiment",
+      "AuthorizedActions": [
+        {
+          "Name": "GetExperiment",
+          "Service": "fis"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fis",
+          "Method": "get_experiment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetExperimentTargetAccountConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetExperimentTargetAccountConfiguration",
+          "Service": "fis"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fis",
+          "Method": "get_experiment_target_account_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetExperimentTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "GetExperimentTemplate",
+          "Service": "fis"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fis",
+          "Method": "get_experiment_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSafetyLever",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSafetyLever",
+          "Service": "fis"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fis",
+          "Method": "get_safety_lever",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetTargetAccountConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetTargetAccountConfiguration",
+          "Service": "fis"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fis",
+          "Method": "get_target_account_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetTargetResourceType",
+      "AuthorizedActions": [
+        {
+          "Name": "GetTargetResourceType",
+          "Service": "fis"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fis",
+          "Method": "get_target_resource_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListActions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListActions",
+          "Service": "fis"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fis",
+          "Method": "list_actions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListExperimentResolvedTargets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListExperimentResolvedTargets",
+          "Service": "fis"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fis",
+          "Method": "list_experiment_resolved_targets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListExperimentTargetAccountConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListExperimentTargetAccountConfigurations",
+          "Service": "fis"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fis",
+          "Method": "list_experiment_target_account_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListExperimentTemplates",
+      "AuthorizedActions": [
+        {
+          "Name": "ListExperimentTemplates",
+          "Service": "fis"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fis",
+          "Method": "list_experiment_templates",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListExperiments",
+      "AuthorizedActions": [
+        {
+          "Name": "ListExperiments",
+          "Service": "fis"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fis",
+          "Method": "list_experiments",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "fis"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fis",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTargetAccountConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTargetAccountConfigurations",
+          "Service": "fis"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fis",
+          "Method": "list_target_account_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTargetResourceTypes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTargetResourceTypes",
+          "Service": "fis"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fis",
+          "Method": "list_target_resource_types",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartExperiment",
+      "AuthorizedActions": [
+        {
+          "Name": "StartExperiment",
+          "Service": "fis"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "fis"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fis",
+          "Method": "start_experiment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopExperiment",
+      "AuthorizedActions": [
+        {
+          "Name": "StopExperiment",
+          "Service": "fis"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fis",
+          "Method": "stop_experiment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "fis"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fis",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "fis"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fis",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateExperimentTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "fis.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateExperimentTemplate",
+          "Service": "fis"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fis",
+          "Method": "update_experiment_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSafetyLeverState",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSafetyLeverState",
+          "Service": "fis"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fis",
+          "Method": "update_safety_lever_state",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateTargetAccountConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateTargetAccountConfiguration",
+          "Service": "fis"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fis",
+          "Method": "update_target_account_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "action",
+      "ARNFormats": [
+        "arn:${Partition}:fis:${Region}:${Account}:action/${Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "experiment",
+      "ARNFormats": [
+        "arn:${Partition}:fis:${Region}:${Account}:experiment/${Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "experiment-template",
+      "ARNFormats": [
+        "arn:${Partition}:fis:${Region}:${Account}:experiment-template/${Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "safety-lever",
+      "ARNFormats": [
+        "arn:${Partition}:fis:${Region}:${Account}:safety-lever/${Id}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

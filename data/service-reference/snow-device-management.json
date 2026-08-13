@@ -1,0 +1,512 @@
+{
+  "Name": "snow-device-management",
+  "Actions": [
+    {
+      "Name": "CancelTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "task"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateTask",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeDevice",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "managed-device"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeDeviceEc2Instances",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "managed-device"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeExecution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "task"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDeviceResources",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "managed-device"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDevices",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListExecutions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTasks",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "managed-device"
+        },
+        {
+          "Name": "task"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "managed-device"
+        },
+        {
+          "Name": "task"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CancelTask",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelTask",
+          "Service": "snow-device-management"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "snow-device-management",
+          "Method": "cancel_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateTask",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateTask",
+          "Service": "snow-device-management"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "snow-device-management"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "snow-device-management",
+          "Method": "create_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDevice",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDevice",
+          "Service": "snow-device-management"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "snow-device-management",
+          "Method": "describe_device",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDeviceEc2Instances",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDeviceEc2Instances",
+          "Service": "snow-device-management"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "snow-device-management",
+          "Method": "describe_device_ec2_instances",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeExecution",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeExecution",
+          "Service": "snow-device-management"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "snow-device-management",
+          "Method": "describe_execution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeTask",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeTask",
+          "Service": "snow-device-management"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "snow-device-management",
+          "Method": "describe_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDeviceResources",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDeviceResources",
+          "Service": "snow-device-management"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "snow-device-management",
+          "Method": "list_device_resources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDevices",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDevices",
+          "Service": "snow-device-management"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "snow-device-management",
+          "Method": "list_devices",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListExecutions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListExecutions",
+          "Service": "snow-device-management"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "snow-device-management",
+          "Method": "list_executions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "snow-device-management"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "snow-device-management",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTasks",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTasks",
+          "Service": "snow-device-management"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "snow-device-management",
+          "Method": "list_tasks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "snow-device-management"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "snow-device-management",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "snow-device-management"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "snow-device-management",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "managed-device",
+      "ARNFormats": [
+        "arn:${Partition}:snow-device-management:${Region}:${Account}:managed-device/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "task",
+      "ARNFormats": [
+        "arn:${Partition}:snow-device-management:${Region}:${Account}:task/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

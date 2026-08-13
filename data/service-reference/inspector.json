@@ -1,0 +1,1434 @@
+{
+  "Name": "inspector",
+  "Actions": [
+    {
+      "Name": "AddAttributesToFindings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateAssessmentTarget",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateAssessmentTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateExclusionsPreview",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateResourceGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteAssessmentRun",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteAssessmentTarget",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteAssessmentTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeAssessmentRuns",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeAssessmentTargets",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeAssessmentTemplates",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeCrossAccountAccessRole",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeExclusions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeFindings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeResourceGroups",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeRulesPackages",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetAssessmentReport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetExclusionsPreview",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetTelemetryMetadata",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAssessmentRunAgents",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAssessmentRuns",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAssessmentTargets",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAssessmentTemplates",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListEventSubscriptions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListExclusions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListFindings",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListRulesPackages",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PreviewAgents",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RegisterCrossAccountAccessRole",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RemoveAttributesFromFindings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SetTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartAssessmentRun",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopAssessmentRun",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SubscribeToEvent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UnsubscribeFromEvent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateAssessmentTarget",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AddAttributesToFindings",
+      "AuthorizedActions": [
+        {
+          "Name": "AddAttributesToFindings",
+          "Service": "inspector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "add_attributes_to_findings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AttachAssessmentAndRulesPackage",
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "attach_assessment_and_rules_package",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateApplication",
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "create_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAssessment",
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "create_assessment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAssessmentTarget",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAssessmentTarget",
+          "Service": "inspector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "create_assessment_target",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAssessmentTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAssessmentTemplate",
+          "Service": "inspector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "create_assessment_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateExclusionsPreview",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateExclusionsPreview",
+          "Service": "inspector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "create_exclusions_preview",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateResourceGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateResourceGroup",
+          "Service": "inspector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "create_resource_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteApplication",
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "delete_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAssessment",
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "delete_assessment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAssessmentRun",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAssessmentRun",
+          "Service": "inspector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "delete_assessment_run",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAssessmentTarget",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAssessmentTarget",
+          "Service": "inspector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "delete_assessment_target",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAssessmentTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAssessmentTemplate",
+          "Service": "inspector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "delete_assessment_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRun",
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "delete_run",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeApplication",
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "describe_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAssessment",
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "describe_assessment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAssessmentRuns",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAssessmentRuns",
+          "Service": "inspector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "describe_assessment_runs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAssessmentTargets",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAssessmentTargets",
+          "Service": "inspector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "describe_assessment_targets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAssessmentTemplates",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAssessmentTemplates",
+          "Service": "inspector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "describe_assessment_templates",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeCrossAccountAccessRole",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeCrossAccountAccessRole",
+          "Service": "inspector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "describe_cross_account_access_role",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeExclusions",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeExclusions",
+          "Service": "inspector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "describe_exclusions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeFinding",
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "describe_finding",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeFindings",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeFindings",
+          "Service": "inspector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "describe_findings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeResourceGroup",
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "describe_resource_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeResourceGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeResourceGroups",
+          "Service": "inspector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "describe_resource_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeRulesPackage",
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "describe_rules_package",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeRulesPackages",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeRulesPackages",
+          "Service": "inspector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "describe_rules_packages",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeRun",
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "describe_run",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DetachAssessmentAndRulesPackage",
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "detach_assessment_and_rules_package",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAssessmentReport",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAssessmentReport",
+          "Service": "inspector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "get_assessment_report",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAssessmentTelemetry",
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "get_assessment_telemetry",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetExclusionsPreview",
+      "AuthorizedActions": [
+        {
+          "Name": "GetExclusionsPreview",
+          "Service": "inspector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "get_exclusions_preview",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetTelemetryMetadata",
+      "AuthorizedActions": [
+        {
+          "Name": "GetTelemetryMetadata",
+          "Service": "inspector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "get_telemetry_metadata",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListApplications",
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "list_applications",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAssessmentAgents",
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "list_assessment_agents",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAssessmentRunAgents",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAssessmentRunAgents",
+          "Service": "inspector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "list_assessment_run_agents",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAssessmentRuns",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAssessmentRuns",
+          "Service": "inspector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "list_assessment_runs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAssessmentTargets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAssessmentTargets",
+          "Service": "inspector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "list_assessment_targets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAssessmentTemplates",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAssessmentTemplates",
+          "Service": "inspector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "list_assessment_templates",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAssessments",
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "list_assessments",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAttachedAssessments",
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "list_attached_assessments",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAttachedRulesPackages",
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "list_attached_rules_packages",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEventSubscriptions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEventSubscriptions",
+          "Service": "inspector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "list_event_subscriptions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListExclusions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListExclusions",
+          "Service": "inspector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "list_exclusions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFindings",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFindings",
+          "Service": "inspector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "list_findings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRulesPackages",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRulesPackages",
+          "Service": "inspector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "list_rules_packages",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRuns",
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "list_runs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "inspector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "LocalizeText",
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "localize_text",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PreviewAgents",
+      "AuthorizedActions": [
+        {
+          "Name": "PreviewAgents",
+          "Service": "inspector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "preview_agents",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PreviewAgentsForResourceGroup",
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "preview_agents_for_resource_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RegisterCrossAccountAccessRole",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "inspector.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "RegisterCrossAccountAccessRole",
+          "Service": "inspector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "register_cross_account_access_role",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RemoveAttributesFromFindings",
+      "AuthorizedActions": [
+        {
+          "Name": "RemoveAttributesFromFindings",
+          "Service": "inspector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "remove_attributes_from_findings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RunAssessment",
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "run_assessment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SetTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "SetTagsForResource",
+          "Service": "inspector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "set_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartAssessmentRun",
+      "AuthorizedActions": [
+        {
+          "Name": "StartAssessmentRun",
+          "Service": "inspector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "start_assessment_run",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartDataCollection",
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "start_data_collection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopAssessmentRun",
+      "AuthorizedActions": [
+        {
+          "Name": "StopAssessmentRun",
+          "Service": "inspector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "stop_assessment_run",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopDataCollection",
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "stop_data_collection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SubscribeToEvent",
+      "AuthorizedActions": [
+        {
+          "Name": "SubscribeToEvent",
+          "Service": "inspector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "subscribe_to_event",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UnsubscribeFromEvent",
+      "AuthorizedActions": [
+        {
+          "Name": "UnsubscribeFromEvent",
+          "Service": "inspector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "unsubscribe_from_event",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateApplication",
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "update_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAssessment",
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "update_assessment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAssessmentTarget",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAssessmentTarget",
+          "Service": "inspector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector",
+          "Method": "update_assessment_target",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

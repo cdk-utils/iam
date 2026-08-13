@@ -1,0 +1,1005 @@
+{
+  "Name": "verifiedpermissions",
+  "Actions": [
+    {
+      "Name": "CreateIdentitySource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "policy-store"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreatePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "policy-store"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreatePolicyStore",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreatePolicyStoreAlias",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "policy-store"
+        },
+        {
+          "Name": "policy-store-alias"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreatePolicyTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "policy-store"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteIdentitySource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "policy-store"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeletePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "policy-store"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeletePolicyStore",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "policy-store"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeletePolicyStoreAlias",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "policy-store-alias"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeletePolicyTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "policy-store"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetIdentitySource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "policy-store"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "policy-store"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetPolicyStore",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "policy-store"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetPolicyStoreAlias",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "policy-store-alias"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetPolicyTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "policy-store"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSchema",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "policy-store"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "IsAuthorized",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "policy-store"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "IsAuthorizedWithToken",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "policy-store"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListIdentitySources",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "policy-store"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPolicies",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "policy-store"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPolicyStoreAliases",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPolicyStores",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPolicyTemplates",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "policy-store"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "policy-store"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutSchema",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "policy-store"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "policy-store"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "policy-store"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateIdentitySource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "policy-store"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdatePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "policy-store"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdatePolicyStore",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "policy-store"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdatePolicyTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "policy-store"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "BatchGetPolicy",
+      "SDK": [
+        {
+          "Name": "verifiedpermissions",
+          "Method": "batch_get_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchIsAuthorized",
+      "SDK": [
+        {
+          "Name": "verifiedpermissions",
+          "Method": "batch_is_authorized",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchIsAuthorizedWithToken",
+      "SDK": [
+        {
+          "Name": "verifiedpermissions",
+          "Method": "batch_is_authorized_with_token",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateIdentitySource",
+      "SDK": [
+        {
+          "Name": "verifiedpermissions",
+          "Method": "create_identity_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePolicy",
+      "SDK": [
+        {
+          "Name": "verifiedpermissions",
+          "Method": "create_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePolicyStore",
+      "SDK": [
+        {
+          "Name": "verifiedpermissions",
+          "Method": "create_policy_store",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePolicyStoreAlias",
+      "SDK": [
+        {
+          "Name": "verifiedpermissions",
+          "Method": "create_policy_store_alias",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePolicyTemplate",
+      "SDK": [
+        {
+          "Name": "verifiedpermissions",
+          "Method": "create_policy_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteIdentitySource",
+      "SDK": [
+        {
+          "Name": "verifiedpermissions",
+          "Method": "delete_identity_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePolicy",
+      "SDK": [
+        {
+          "Name": "verifiedpermissions",
+          "Method": "delete_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePolicyStore",
+      "SDK": [
+        {
+          "Name": "verifiedpermissions",
+          "Method": "delete_policy_store",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePolicyStoreAlias",
+      "SDK": [
+        {
+          "Name": "verifiedpermissions",
+          "Method": "delete_policy_store_alias",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePolicyTemplate",
+      "SDK": [
+        {
+          "Name": "verifiedpermissions",
+          "Method": "delete_policy_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetIdentitySource",
+      "SDK": [
+        {
+          "Name": "verifiedpermissions",
+          "Method": "get_identity_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPolicy",
+      "SDK": [
+        {
+          "Name": "verifiedpermissions",
+          "Method": "get_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPolicyStore",
+      "SDK": [
+        {
+          "Name": "verifiedpermissions",
+          "Method": "get_policy_store",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPolicyStoreAlias",
+      "SDK": [
+        {
+          "Name": "verifiedpermissions",
+          "Method": "get_policy_store_alias",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPolicyTemplate",
+      "SDK": [
+        {
+          "Name": "verifiedpermissions",
+          "Method": "get_policy_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSchema",
+      "SDK": [
+        {
+          "Name": "verifiedpermissions",
+          "Method": "get_schema",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "IsAuthorized",
+      "SDK": [
+        {
+          "Name": "verifiedpermissions",
+          "Method": "is_authorized",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "IsAuthorizedWithToken",
+      "SDK": [
+        {
+          "Name": "verifiedpermissions",
+          "Method": "is_authorized_with_token",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListIdentitySources",
+      "SDK": [
+        {
+          "Name": "verifiedpermissions",
+          "Method": "list_identity_sources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPolicies",
+      "SDK": [
+        {
+          "Name": "verifiedpermissions",
+          "Method": "list_policies",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPolicyStoreAliases",
+      "SDK": [
+        {
+          "Name": "verifiedpermissions",
+          "Method": "list_policy_store_aliases",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPolicyStores",
+      "SDK": [
+        {
+          "Name": "verifiedpermissions",
+          "Method": "list_policy_stores",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPolicyTemplates",
+      "SDK": [
+        {
+          "Name": "verifiedpermissions",
+          "Method": "list_policy_templates",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "SDK": [
+        {
+          "Name": "verifiedpermissions",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutSchema",
+      "SDK": [
+        {
+          "Name": "verifiedpermissions",
+          "Method": "put_schema",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "SDK": [
+        {
+          "Name": "verifiedpermissions",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "SDK": [
+        {
+          "Name": "verifiedpermissions",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateIdentitySource",
+      "SDK": [
+        {
+          "Name": "verifiedpermissions",
+          "Method": "update_identity_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdatePolicy",
+      "SDK": [
+        {
+          "Name": "verifiedpermissions",
+          "Method": "update_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdatePolicyStore",
+      "SDK": [
+        {
+          "Name": "verifiedpermissions",
+          "Method": "update_policy_store",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdatePolicyTemplate",
+      "SDK": [
+        {
+          "Name": "verifiedpermissions",
+          "Method": "update_policy_template",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "policy-store",
+      "ARNFormats": [
+        "arn:${Partition}:verifiedpermissions::${Account}:policy-store/${PolicyStoreId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "policy-store-alias",
+      "ARNFormats": [
+        "arn:${Partition}:verifiedpermissions:${Region}:${Account}:policy-store-alias/${AliasName}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

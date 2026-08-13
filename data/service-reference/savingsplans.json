@@ -1,0 +1,411 @@
+{
+  "Name": "savingsplans",
+  "Actions": [
+    {
+      "Name": "CreateSavingsPlan",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteQueuedSavingsPlan",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "savingsplan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeSavingsPlanRates",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "savingsplan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeSavingsPlans",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "savingsplan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeSavingsPlansOfferingRates",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeSavingsPlansOfferings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "savingsplan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ReturnSavingsPlan",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "savingsplan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "savingsplan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "savingsplan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateSavingsPlan",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSavingsPlan",
+          "Service": "savingsplans"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "savingsplans"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "savingsplans",
+          "Method": "create_savings_plan",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteQueuedSavingsPlan",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteQueuedSavingsPlan",
+          "Service": "savingsplans"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "savingsplans",
+          "Method": "delete_queued_savings_plan",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSavingsPlanRates",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSavingsPlanRates",
+          "Service": "savingsplans"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "savingsplans",
+          "Method": "describe_savings_plan_rates",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSavingsPlans",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSavingsPlans",
+          "Service": "savingsplans"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "savingsplans",
+          "Method": "describe_savings_plans",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSavingsPlansOfferingRates",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSavingsPlansOfferingRates",
+          "Service": "savingsplans"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "savingsplans",
+          "Method": "describe_savings_plans_offering_rates",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSavingsPlansOfferings",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSavingsPlansOfferings",
+          "Service": "savingsplans"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "savingsplans",
+          "Method": "describe_savings_plans_offerings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "savingsplans"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "savingsplans",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ReturnSavingsPlan",
+      "AuthorizedActions": [
+        {
+          "Name": "ReturnSavingsPlan",
+          "Service": "savingsplans"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "savingsplans",
+          "Method": "return_savings_plan",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "savingsplans"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "savingsplans",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "savingsplans"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "savingsplans",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "savingsplan",
+      "ARNFormats": [
+        "arn:${Partition}:savingsplans::${Account}:savingsplan/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

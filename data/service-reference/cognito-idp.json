@@ -1,0 +1,4547 @@
+{
+  "Name": "cognito-idp",
+  "Actions": [
+    {
+      "Name": "AddCustomAttributes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AddUserPoolClientSecret",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AdminAddUserToGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AdminConfirmSignUp",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AdminCreateUser",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AdminDeleteUser",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AdminDeleteUserAttributes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AdminDisableProviderForUser",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AdminDisableUser",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AdminEnableUser",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AdminForgetDevice",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AdminGetDevice",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AdminGetUser",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AdminGetUserAuthFactors",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AdminInitiateAuth",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AdminLinkProviderForUser",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AdminListDevices",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AdminListGroupsForUser",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AdminListUserAuthEvents",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AdminRemoveUserFromGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AdminResetUserPassword",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AdminRespondToAuthChallenge",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AdminSetUserMFAPreference",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AdminSetUserPassword",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AdminSetUserSettings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AdminUpdateAuthEventFeedback",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AdminUpdateDeviceStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AdminUpdateUserAttributes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AdminUserGlobalSignOut",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AssociateSoftwareToken",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AssociateWebACL",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        },
+        {
+          "Name": "webacl"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ChangePassword",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ConfirmDevice",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ConfirmForgotPassword",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ConfirmSignUp",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateIdentityProvider",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateManagedLoginBranding",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateResourceServer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateTerms",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateUserImportJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateUserPool",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateUserPoolClient",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateUserPoolDomain",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateUserPoolReplica",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteIdentityProvider",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteManagedLoginBranding",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteResourceServer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteTerms",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteUser",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteUserAttributes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteUserPool",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteUserPoolClient",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteUserPoolClientSecret",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteUserPoolDomain",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteUserPoolReplica",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeIdentityProvider",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeManagedLoginBranding",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeManagedLoginBrandingByClient",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeResourceServer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeRiskConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeTerms",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeUserImportJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeUserPool",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeUserPoolClient",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeUserPoolDomain",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateWebACL",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ForgetDevice",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ForgotPassword",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCSVHeader",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDevice",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetIdentityProviderByIdentifier",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetLogDeliveryConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetProvisionedLimit",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSigningCertificate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetTokensFromRefreshToken",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetUICustomization",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetUser",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetUserAttributeVerificationCode",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetUserPoolMfaConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetWebACLForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GlobalSignOut",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "InitiateAuth",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDevices",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListGroups",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListIdentityProviders",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListResourceServers",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListResourcesForWebACL",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "webacl"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTerms",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListUserImportJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListUserPoolClientSecrets",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListUserPoolClients",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListUserPoolReplicas",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListUserPools",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListUsers",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListUsersInGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ResendConfirmationCode",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RespondToAuthChallenge",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RevokeToken",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SetLogDeliveryConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SetRiskConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SetUICustomization",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SetUserMFAPreference",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SetUserPoolMfaConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SetUserSettings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SignUp",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartUserImportJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopUserImportJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAuthEventFeedback",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateDeviceStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateIdentityProvider",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateManagedLoginBranding",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateProvisionedLimit",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateResourceServer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateTerms",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateUserAttributes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateUserPool",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateUserPoolClient",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateUserPoolDomain",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateUserPoolReplica",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "VerifySoftwareToken",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "VerifyUserAttribute",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AddCustomAttributes",
+      "AuthorizedActions": [
+        {
+          "Name": "AddCustomAttributes",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "add_custom_attributes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AddUserPoolClientSecret",
+      "AuthorizedActions": [
+        {
+          "Name": "AddUserPoolClientSecret",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "add_user_pool_client_secret",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AdminAddUserToGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "AdminAddUserToGroup",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "admin_add_user_to_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AdminConfirmSignUp",
+      "AuthorizedActions": [
+        {
+          "Name": "AdminConfirmSignUp",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "admin_confirm_sign_up",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AdminCreateUser",
+      "AuthorizedActions": [
+        {
+          "Name": "AdminCreateUser",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "admin_create_user",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AdminDeleteUser",
+      "AuthorizedActions": [
+        {
+          "Name": "AdminDeleteUser",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "admin_delete_user",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AdminDeleteUserAttributes",
+      "AuthorizedActions": [
+        {
+          "Name": "AdminDeleteUserAttributes",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "admin_delete_user_attributes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AdminDisableProviderForUser",
+      "AuthorizedActions": [
+        {
+          "Name": "AdminDisableProviderForUser",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "admin_disable_provider_for_user",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AdminDisableUser",
+      "AuthorizedActions": [
+        {
+          "Name": "AdminDisableUser",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "admin_disable_user",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AdminEnableUser",
+      "AuthorizedActions": [
+        {
+          "Name": "AdminEnableUser",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "admin_enable_user",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AdminForgetDevice",
+      "AuthorizedActions": [
+        {
+          "Name": "AdminForgetDevice",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "admin_forget_device",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AdminGetDevice",
+      "AuthorizedActions": [
+        {
+          "Name": "AdminGetDevice",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "admin_get_device",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AdminGetUser",
+      "AuthorizedActions": [
+        {
+          "Name": "AdminGetUser",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "admin_get_user",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AdminGetUserAuthFactors",
+      "AuthorizedActions": [
+        {
+          "Name": "AdminGetUserAuthFactors",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "admin_get_user_auth_factors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AdminInitiateAuth",
+      "AuthorizedActions": [
+        {
+          "Name": "AdminInitiateAuth",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "admin_initiate_auth",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AdminLinkProviderForUser",
+      "AuthorizedActions": [
+        {
+          "Name": "AdminLinkProviderForUser",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "admin_link_provider_for_user",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AdminListDevices",
+      "AuthorizedActions": [
+        {
+          "Name": "AdminListDevices",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "admin_list_devices",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AdminListGroupsForUser",
+      "AuthorizedActions": [
+        {
+          "Name": "AdminListGroupsForUser",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "admin_list_groups_for_user",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AdminListUserAuthEvents",
+      "AuthorizedActions": [
+        {
+          "Name": "AdminListUserAuthEvents",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "admin_list_user_auth_events",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AdminRemoveUserFromGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "AdminRemoveUserFromGroup",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "admin_remove_user_from_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AdminResetUserPassword",
+      "AuthorizedActions": [
+        {
+          "Name": "AdminResetUserPassword",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "admin_reset_user_password",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AdminRespondToAuthChallenge",
+      "AuthorizedActions": [
+        {
+          "Name": "AdminRespondToAuthChallenge",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "admin_respond_to_auth_challenge",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AdminSetUserMFAPreference",
+      "AuthorizedActions": [
+        {
+          "Name": "AdminSetUserMFAPreference",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "admin_set_user_mfa_preference",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AdminSetUserPassword",
+      "AuthorizedActions": [
+        {
+          "Name": "AdminSetUserPassword",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "admin_set_user_password",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AdminSetUserSettings",
+      "AuthorizedActions": [
+        {
+          "Name": "AdminSetUserSettings",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "admin_set_user_settings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AdminUpdateAuthEventFeedback",
+      "AuthorizedActions": [
+        {
+          "Name": "AdminUpdateAuthEventFeedback",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "admin_update_auth_event_feedback",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AdminUpdateDeviceStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "AdminUpdateDeviceStatus",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "admin_update_device_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AdminUpdateUserAttributes",
+      "AuthorizedActions": [
+        {
+          "Name": "AdminUpdateUserAttributes",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "admin_update_user_attributes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AdminUserGlobalSignOut",
+      "AuthorizedActions": [
+        {
+          "Name": "AdminUserGlobalSignOut",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "admin_user_global_sign_out",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateSoftwareToken",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateSoftwareToken",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "associate_software_token",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ChangePassword",
+      "AuthorizedActions": [
+        {
+          "Name": "ChangePassword",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "change_password",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CompleteWebAuthnRegistration",
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "complete_web_authn_registration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ConfirmDevice",
+      "AuthorizedActions": [
+        {
+          "Name": "ConfirmDevice",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "confirm_device",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ConfirmForgotPassword",
+      "AuthorizedActions": [
+        {
+          "Name": "ConfirmForgotPassword",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "confirm_forgot_password",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ConfirmSignUp",
+      "AuthorizedActions": [
+        {
+          "Name": "ConfirmSignUp",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "confirm_sign_up",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateGroup",
+          "Service": "cognito-idp"
+        },
+        {
+          "Name": "PassRole",
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "create_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateIdentityProvider",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateIdentityProvider",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "create_identity_provider",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateManagedLoginBranding",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateManagedLoginBranding",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "create_managed_login_branding",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateResourceServer",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateResourceServer",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "create_resource_server",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateTerms",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateTerms",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "create_terms",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateUserImportJob",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateUserImportJob",
+          "Service": "cognito-idp"
+        },
+        {
+          "Name": "PassRole",
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "create_user_import_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateUserPool",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateUserPool",
+          "Service": "cognito-idp"
+        },
+        {
+          "Name": "PassRole",
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "create_user_pool",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateUserPoolClient",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateUserPoolClient",
+          "Service": "cognito-idp"
+        },
+        {
+          "Name": "PassRole",
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "create_user_pool_client",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateUserPoolDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateUserPoolDomain",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "create_user_pool_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateUserPoolReplica",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateUserPoolReplica",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "create_user_pool_replica",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteGroup",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "delete_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteIdentityProvider",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteIdentityProvider",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "delete_identity_provider",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteManagedLoginBranding",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteManagedLoginBranding",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "delete_managed_login_branding",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteResourceServer",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteResourceServer",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "delete_resource_server",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteTerms",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteTerms",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "delete_terms",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteUser",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteUser",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "delete_user",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteUserAttributes",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteUserAttributes",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "delete_user_attributes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteUserPool",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteUserPool",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "delete_user_pool",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteUserPoolClient",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteUserPoolClient",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "delete_user_pool_client",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteUserPoolClientSecret",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteUserPoolClientSecret",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "delete_user_pool_client_secret",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteUserPoolDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteUserPoolDomain",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "delete_user_pool_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteUserPoolReplica",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteUserPoolReplica",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "delete_user_pool_replica",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteWebAuthnCredential",
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "delete_web_authn_credential",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeIdentityProvider",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeIdentityProvider",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "describe_identity_provider",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeManagedLoginBranding",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeManagedLoginBranding",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "describe_managed_login_branding",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeManagedLoginBrandingByClient",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeManagedLoginBrandingByClient",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "describe_managed_login_branding_by_client",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeResourceServer",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeResourceServer",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "describe_resource_server",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeRiskConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeRiskConfiguration",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "describe_risk_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeTerms",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeTerms",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "describe_terms",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeUserImportJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeUserImportJob",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "describe_user_import_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeUserPool",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeUserPool",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "describe_user_pool",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeUserPoolClient",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeUserPoolClient",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "describe_user_pool_client",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeUserPoolDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeUserPoolDomain",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "describe_user_pool_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ForgetDevice",
+      "AuthorizedActions": [
+        {
+          "Name": "ForgetDevice",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "forget_device",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ForgotPassword",
+      "AuthorizedActions": [
+        {
+          "Name": "ForgotPassword",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "forgot_password",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCSVHeader",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCSVHeader",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "get_csv_header",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDevice",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDevice",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "get_device",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "GetGroup",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "get_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetIdentityProviderByIdentifier",
+      "AuthorizedActions": [
+        {
+          "Name": "GetIdentityProviderByIdentifier",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "get_identity_provider_by_identifier",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetLogDeliveryConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetLogDeliveryConfiguration",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "get_log_delivery_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetProvisionedLimit",
+      "AuthorizedActions": [
+        {
+          "Name": "GetProvisionedLimit",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "get_provisioned_limit",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSigningCertificate",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSigningCertificate",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "get_signing_certificate",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetTokensFromRefreshToken",
+      "AuthorizedActions": [
+        {
+          "Name": "GetTokensFromRefreshToken",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "get_tokens_from_refresh_token",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetUICustomization",
+      "AuthorizedActions": [
+        {
+          "Name": "GetUICustomization",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "get_ui_customization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetUser",
+      "AuthorizedActions": [
+        {
+          "Name": "GetUser",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "get_user",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetUserAttributeVerificationCode",
+      "AuthorizedActions": [
+        {
+          "Name": "GetUserAttributeVerificationCode",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "get_user_attribute_verification_code",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetUserAuthFactors",
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "get_user_auth_factors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetUserPoolMfaConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "GetUserPoolMfaConfig",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "get_user_pool_mfa_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GlobalSignOut",
+      "AuthorizedActions": [
+        {
+          "Name": "GlobalSignOut",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "global_sign_out",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "InitiateAuth",
+      "AuthorizedActions": [
+        {
+          "Name": "InitiateAuth",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "initiate_auth",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDevices",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDevices",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "list_devices",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "ListGroups",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "list_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListIdentityProviders",
+      "AuthorizedActions": [
+        {
+          "Name": "ListIdentityProviders",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "list_identity_providers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListResourceServers",
+      "AuthorizedActions": [
+        {
+          "Name": "ListResourceServers",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "list_resource_servers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTerms",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTerms",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "list_terms",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListUserImportJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListUserImportJobs",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "list_user_import_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListUserPoolClientSecrets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListUserPoolClientSecrets",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "list_user_pool_client_secrets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListUserPoolClients",
+      "AuthorizedActions": [
+        {
+          "Name": "ListUserPoolClients",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "list_user_pool_clients",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListUserPoolReplicas",
+      "AuthorizedActions": [
+        {
+          "Name": "ListUserPoolReplicas",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "list_user_pool_replicas",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListUserPools",
+      "AuthorizedActions": [
+        {
+          "Name": "ListUserPools",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "list_user_pools",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListUsers",
+      "AuthorizedActions": [
+        {
+          "Name": "ListUsers",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "list_users",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListUsersInGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "ListUsersInGroup",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "list_users_in_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListWebAuthnCredentials",
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "list_web_authn_credentials",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ResendConfirmationCode",
+      "AuthorizedActions": [
+        {
+          "Name": "ResendConfirmationCode",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "resend_confirmation_code",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RespondToAuthChallenge",
+      "AuthorizedActions": [
+        {
+          "Name": "RespondToAuthChallenge",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "respond_to_auth_challenge",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RevokeToken",
+      "AuthorizedActions": [
+        {
+          "Name": "RevokeToken",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "revoke_token",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SetLogDeliveryConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "SetLogDeliveryConfiguration",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "set_log_delivery_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SetRiskConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "SetRiskConfiguration",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "set_risk_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SetUICustomization",
+      "AuthorizedActions": [
+        {
+          "Name": "SetUICustomization",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "set_ui_customization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SetUserMFAPreference",
+      "AuthorizedActions": [
+        {
+          "Name": "SetUserMFAPreference",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "set_user_mfa_preference",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SetUserPoolMfaConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Service": "iam"
+        },
+        {
+          "Name": "SetUserPoolMfaConfig",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "set_user_pool_mfa_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SetUserSettings",
+      "AuthorizedActions": [
+        {
+          "Name": "SetUserSettings",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "set_user_settings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SignUp",
+      "AuthorizedActions": [
+        {
+          "Name": "SignUp",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "sign_up",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartUserImportJob",
+      "AuthorizedActions": [
+        {
+          "Name": "StartUserImportJob",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "start_user_import_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartWebAuthnRegistration",
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "start_web_authn_registration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopUserImportJob",
+      "AuthorizedActions": [
+        {
+          "Name": "StopUserImportJob",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "stop_user_import_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAuthEventFeedback",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAuthEventFeedback",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "update_auth_event_feedback",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDeviceStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDeviceStatus",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "update_device_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateGroup",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "update_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateIdentityProvider",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateIdentityProvider",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "update_identity_provider",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateManagedLoginBranding",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateManagedLoginBranding",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "update_managed_login_branding",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateProvisionedLimit",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateProvisionedLimit",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "update_provisioned_limit",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateResourceServer",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateResourceServer",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "update_resource_server",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateTerms",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateTerms",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "update_terms",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateUserAttributes",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateUserAttributes",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "update_user_attributes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateUserPool",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "cognito-idp"
+        },
+        {
+          "Name": "UntagResource",
+          "Service": "cognito-idp"
+        },
+        {
+          "Name": "UpdateUserPool",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "update_user_pool",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateUserPoolClient",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateUserPoolClient",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "update_user_pool_client",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateUserPoolDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateUserPoolDomain",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "update_user_pool_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateUserPoolReplica",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateUserPoolReplica",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "update_user_pool_replica",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "VerifySoftwareToken",
+      "AuthorizedActions": [
+        {
+          "Name": "VerifySoftwareToken",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "verify_software_token",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "VerifyUserAttribute",
+      "AuthorizedActions": [
+        {
+          "Name": "VerifyUserAttribute",
+          "Service": "cognito-idp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "verify_user_attribute",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "userpool",
+      "ARNFormats": [
+        "arn:${Partition}:cognito-idp:${Region}:${Account}:userpool/${UserPoolId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "webacl",
+      "ARNFormats": [
+        "arn:${Partition}:wafv2:${Region}:${Account}:${Scope}/webacl/${Name}/${Id}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

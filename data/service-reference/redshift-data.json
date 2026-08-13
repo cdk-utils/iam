@@ -1,0 +1,508 @@
+{
+  "Name": "redshift-data",
+  "Actions": [
+    {
+      "Name": "BatchExecuteStatement",
+      "ActionConditionKeys": [
+        "redshift-data:glue-catalog-arn",
+        "redshift-data:session-owner-iam-userid"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        },
+        {
+          "Name": "workgroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CancelStatement",
+      "ActionConditionKeys": [
+        "redshift-data:statement-owner-iam-userid"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeStatement",
+      "ActionConditionKeys": [
+        "redshift-data:statement-owner-iam-userid"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeTable",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        },
+        {
+          "Name": "workgroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ExecuteStatement",
+      "ActionConditionKeys": [
+        "redshift-data:glue-catalog-arn",
+        "redshift-data:session-owner-iam-userid"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        },
+        {
+          "Name": "workgroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetStagingBucketLocation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "managed-workgroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetStatementResult",
+      "ActionConditionKeys": [
+        "redshift-data:statement-owner-iam-userid"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDatabases",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        },
+        {
+          "Name": "workgroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListSchemas",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        },
+        {
+          "Name": "workgroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListSessions",
+      "ActionConditionKeys": [
+        "redshift-data:session-owner-iam-userid"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListStatements",
+      "ActionConditionKeys": [
+        "redshift-data:statement-owner-iam-userid"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTables",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        },
+        {
+          "Name": "workgroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "redshift-data:glue-catalog-arn",
+      "Types": [
+        "ARN"
+      ]
+    },
+    {
+      "Name": "redshift-data:session-owner-iam-userid",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "redshift-data:statement-owner-iam-userid",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "BatchExecuteStatement",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchExecuteStatement",
+          "Service": "redshift-data"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "redshift-data",
+          "Method": "batch_execute_statement",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelStatement",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelStatement",
+          "Service": "redshift-data"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "redshift-data",
+          "Method": "cancel_statement",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeStatement",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeStatement",
+          "Service": "redshift-data"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "redshift-data",
+          "Method": "describe_statement",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeTable",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeTable",
+          "Service": "redshift-data"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "redshift-data",
+          "Method": "describe_table",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ExecuteStatement",
+      "AuthorizedActions": [
+        {
+          "Name": "ExecuteStatement",
+          "Service": "redshift-data"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "redshift-data",
+          "Method": "execute_statement",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetStatementResult",
+      "AuthorizedActions": [
+        {
+          "Name": "GetStatementResult",
+          "Service": "redshift-data"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "redshift-data",
+          "Method": "get_statement_result",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetStatementResultV2",
+      "AuthorizedActions": [
+        {
+          "Name": "GetStatementResult",
+          "Service": "redshift-data"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "redshift-data",
+          "Method": "get_statement_result_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDatabases",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDatabases",
+          "Service": "redshift-data"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "redshift-data",
+          "Method": "list_databases",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSchemas",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSchemas",
+          "Service": "redshift-data"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "redshift-data",
+          "Method": "list_schemas",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSessions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSessions",
+          "Service": "redshift-data"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "redshift-data",
+          "Method": "list_sessions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListStatements",
+      "AuthorizedActions": [
+        {
+          "Name": "ListStatements",
+          "Service": "redshift-data"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "redshift-data",
+          "Method": "list_statements",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTables",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTables",
+          "Service": "redshift-data"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "redshift-data",
+          "Method": "list_tables",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "cluster",
+      "ARNFormats": [
+        "arn:${Partition}:redshift:${Region}:${Account}:cluster:${ClusterName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "managed-workgroup",
+      "ARNFormats": [
+        "arn:${Partition}:redshift-serverless:${Region}:${Account}:managed-workgroup/${ManagedWorkgroupId}"
+      ]
+    },
+    {
+      "Name": "workgroup",
+      "ARNFormats": [
+        "arn:${Partition}:redshift-serverless:${Region}:${Account}:workgroup/${WorkgroupId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

@@ -1,0 +1,4189 @@
+{
+  "Name": "servicecatalog",
+  "Actions": [
+    {
+      "Name": "AcceptPortfolioShare",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Portfolio"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AssociateAttributeGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        },
+        {
+          "Name": "AttributeGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AssociateBudgetWithResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AssociatePrincipalWithPortfolio",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Portfolio"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AssociateProductWithPortfolio",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AssociateResource",
+      "ActionConditionKeys": [
+        "servicecatalog:Resource",
+        "servicecatalog:ResourceType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AssociateServiceActionWithProvisioningArtifact",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Product"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AssociateTagOptionWithResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Portfolio"
+        },
+        {
+          "Name": "Product"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchAssociateServiceActionWithProvisioningArtifact",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchDisassociateServiceActionFromProvisioningArtifact",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CopyProduct",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateApplication",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateAttributeGroup",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AttributeGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateConstraint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Product"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreatePortfolio",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Portfolio"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreatePortfolioShare",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Portfolio"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateProduct",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Product"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateProvisionedProductPlan",
+      "ActionConditionKeys": [
+        "servicecatalog:accountLevel",
+        "servicecatalog:roleLevel",
+        "servicecatalog:userLevel"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateProvisioningArtifact",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Product"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateServiceAction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateTagOption",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteAttributeGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AttributeGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteConstraint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeletePortfolio",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Portfolio"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeletePortfolioShare",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Portfolio"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteProduct",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Product"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteProvisionedProductPlan",
+      "ActionConditionKeys": [
+        "servicecatalog:accountLevel",
+        "servicecatalog:roleLevel",
+        "servicecatalog:userLevel"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteProvisioningArtifact",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Product"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        },
+        {
+          "Name": "AttributeGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteServiceAction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteTagOption",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeConstraint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeCopyProductStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribePortfolio",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Portfolio"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribePortfolioShareStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribePortfolioShares",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Portfolio"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeProduct",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Product"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeProductAsAdmin",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Product"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeProductView",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeProvisionedProduct",
+      "ActionConditionKeys": [
+        "servicecatalog:accountLevel",
+        "servicecatalog:roleLevel",
+        "servicecatalog:userLevel"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeProvisionedProductPlan",
+      "ActionConditionKeys": [
+        "servicecatalog:accountLevel",
+        "servicecatalog:roleLevel",
+        "servicecatalog:userLevel"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeProvisioningArtifact",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Product"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeProvisioningParameters",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Product"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeRecord",
+      "ActionConditionKeys": [
+        "servicecatalog:accountLevel",
+        "servicecatalog:roleLevel",
+        "servicecatalog:userLevel"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeServiceAction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeServiceActionExecutionParameters",
+      "ActionConditionKeys": [
+        "servicecatalog:accountLevel",
+        "servicecatalog:roleLevel",
+        "servicecatalog:userLevel"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeTagOption",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisableAWSOrganizationsAccess",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateAttributeGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        },
+        {
+          "Name": "AttributeGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateBudgetFromResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociatePrincipalFromPortfolio",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Portfolio"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateProductFromPortfolio",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateResource",
+      "ActionConditionKeys": [
+        "servicecatalog:Resource",
+        "servicecatalog:ResourceType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateServiceActionFromProvisioningArtifact",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Product"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateTagOptionFromResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Portfolio"
+        },
+        {
+          "Name": "Product"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "EnableAWSOrganizationsAccess",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ExecuteProvisionedProductPlan",
+      "ActionConditionKeys": [
+        "servicecatalog:accountLevel",
+        "servicecatalog:roleLevel",
+        "servicecatalog:userLevel"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ExecuteProvisionedProductServiceAction",
+      "ActionConditionKeys": [
+        "servicecatalog:accountLevel",
+        "servicecatalog:roleLevel",
+        "servicecatalog:userLevel"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetAWSOrganizationsAccessStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAssociatedResource",
+      "ActionConditionKeys": [
+        "servicecatalog:Resource",
+        "servicecatalog:ResourceType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAttributeGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AttributeGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetProvisionedProductOutputs",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        },
+        {
+          "Name": "AttributeGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ImportAsProvisionedProduct",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Product"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAcceptedPortfolioShares",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListApplications",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAssociatedAttributeGroups",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAssociatedResources",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAttributeGroups",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAttributeGroupsForApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListBudgetsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListConstraintsForPortfolio",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListLaunchPaths",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Product"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListOrganizationPortfolioAccess",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListPortfolioAccess",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Portfolio"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListPortfolios",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListPortfoliosForProduct",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Product"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListPrincipalsForPortfolio",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Portfolio"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListProvisionedProductPlans",
+      "ActionConditionKeys": [
+        "servicecatalog:accountLevel",
+        "servicecatalog:roleLevel",
+        "servicecatalog:userLevel"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListProvisioningArtifacts",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Product"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListProvisioningArtifactsForServiceAction",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListRecordHistory",
+      "ActionConditionKeys": [
+        "servicecatalog:accountLevel",
+        "servicecatalog:roleLevel",
+        "servicecatalog:userLevel"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListResourcesForTagOption",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListServiceActions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListServiceActionsForProvisioningArtifact",
+      "ActionConditionKeys": [
+        "servicecatalog:accountLevel",
+        "servicecatalog:roleLevel",
+        "servicecatalog:userLevel"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Product"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListStackInstancesForProvisionedProduct",
+      "ActionConditionKeys": [
+        "servicecatalog:accountLevel",
+        "servicecatalog:roleLevel",
+        "servicecatalog:userLevel"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagOptions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        },
+        {
+          "Name": "AttributeGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "NotifyProvisionProductEngineWorkflowResult",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "NotifyTerminateProvisionedProductEngineWorkflowResult",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "NotifyUpdateProvisionedProductEngineWorkflowResult",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ProvisionProduct",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Product"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        },
+        {
+          "Name": "AttributeGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RejectPortfolioShare",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Portfolio"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ScanProvisionedProducts",
+      "ActionConditionKeys": [
+        "servicecatalog:accountLevel",
+        "servicecatalog:roleLevel",
+        "servicecatalog:userLevel"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SearchProducts",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SearchProductsAsAdmin",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SearchProvisionedProducts",
+      "ActionConditionKeys": [
+        "servicecatalog:accountLevel",
+        "servicecatalog:roleLevel",
+        "servicecatalog:userLevel"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SyncResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        },
+        {
+          "Name": "AttributeGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TerminateProvisionedProduct",
+      "ActionConditionKeys": [
+        "servicecatalog:accountLevel",
+        "servicecatalog:roleLevel",
+        "servicecatalog:userLevel"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        },
+        {
+          "Name": "AttributeGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAttributeGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AttributeGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateConstraint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdatePortfolio",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Portfolio"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdatePortfolioShare",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Portfolio"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateProduct",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Product"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateProvisionedProduct",
+      "ActionConditionKeys": [
+        "servicecatalog:accountLevel",
+        "servicecatalog:roleLevel",
+        "servicecatalog:userLevel"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateProvisionedProductProperties",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateProvisioningArtifact",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Product"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateServiceAction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateTagOption",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "servicecatalog:Resource",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "servicecatalog:ResourceType",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "servicecatalog:accountLevel",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "servicecatalog:roleLevel",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "servicecatalog:userLevel",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AcceptPortfolioShare",
+      "AuthorizedActions": [
+        {
+          "Name": "AcceptPortfolioShare",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "accept_portfolio_share",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateAttributeGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateAttributeGroup",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog-appregistry",
+          "Method": "associate_attribute_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateBudgetWithResource",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateBudgetWithResource",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "associate_budget_with_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociatePrincipalWithPortfolio",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociatePrincipalWithPortfolio",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "associate_principal_with_portfolio",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateProductWithPortfolio",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateProductWithPortfolio",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "associate_product_with_portfolio",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateResource",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateResource",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog-appregistry",
+          "Method": "associate_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateServiceActionWithProvisioningArtifact",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateServiceActionWithProvisioningArtifact",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "associate_service_action_with_provisioning_artifact",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateTagOptionWithResource",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateTagOptionWithResource",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "associate_tag_option_with_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchAssociateServiceActionWithProvisioningArtifact",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchAssociateServiceActionWithProvisioningArtifact",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "batch_associate_service_action_with_provisioning_artifact",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchDisassociateServiceActionFromProvisioningArtifact",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchDisassociateServiceActionFromProvisioningArtifact",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "batch_disassociate_service_action_from_provisioning_artifact",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CopyProduct",
+      "AuthorizedActions": [
+        {
+          "Name": "CopyProduct",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "copy_product",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateApplication",
+          "Service": "servicecatalog"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog-appregistry",
+          "Method": "create_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAttributeGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAttributeGroup",
+          "Service": "servicecatalog"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog-appregistry",
+          "Method": "create_attribute_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateConstraint",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateConstraint",
+          "Service": "servicecatalog"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "servicecatalog.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "create_constraint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePortfolio",
+      "AuthorizedActions": [
+        {
+          "Name": "CreatePortfolio",
+          "Service": "servicecatalog"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "create_portfolio",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePortfolioShare",
+      "AuthorizedActions": [
+        {
+          "Name": "CreatePortfolioShare",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "create_portfolio_share",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateProduct",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateProduct",
+          "Service": "servicecatalog"
+        },
+        {
+          "Name": "PassConnection",
+          "Service": "codestar-connections"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "create_product",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateProvisionedProductPlan",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateProvisionedProductPlan",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "create_provisioned_product_plan",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateProvisioningArtifact",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateProvisioningArtifact",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "create_provisioning_artifact",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateServiceAction",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateServiceAction",
+          "Service": "servicecatalog"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "servicecatalog.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "create_service_action",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateTagOption",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateTagOption",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "create_tag_option",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteApplication",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog-appregistry",
+          "Method": "delete_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAttributeGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAttributeGroup",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog-appregistry",
+          "Method": "delete_attribute_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteConstraint",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteConstraint",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "delete_constraint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePortfolio",
+      "AuthorizedActions": [
+        {
+          "Name": "DeletePortfolio",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "delete_portfolio",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePortfolioShare",
+      "AuthorizedActions": [
+        {
+          "Name": "DeletePortfolioShare",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "delete_portfolio_share",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteProduct",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteProduct",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "delete_product",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteProvisionedProductPlan",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteProvisionedProductPlan",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "delete_provisioned_product_plan",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteProvisioningArtifact",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteProvisioningArtifact",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "delete_provisioning_artifact",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteServiceAction",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteServiceAction",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "delete_service_action",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteTagOption",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteTagOption",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "delete_tag_option",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeConstraint",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeConstraint",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "describe_constraint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeCopyProductStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeCopyProductStatus",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "describe_copy_product_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribePortfolio",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribePortfolio",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "describe_portfolio",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribePortfolioShareStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribePortfolioShareStatus",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "describe_portfolio_share_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribePortfolioShares",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribePortfolioShares",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "describe_portfolio_shares",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeProduct",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeProduct",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "describe_product",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeProductAsAdmin",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeProductAsAdmin",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "describe_product_as_admin",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeProductView",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeProductView",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "describe_product_view",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeProvisionedProduct",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeProvisionedProduct",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "describe_provisioned_product",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeProvisionedProductPlan",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeProvisionedProductPlan",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "describe_provisioned_product_plan",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeProvisioningArtifact",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeProvisioningArtifact",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "describe_provisioning_artifact",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeProvisioningParameters",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeProvisioningParameters",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "describe_provisioning_parameters",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeRecord",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeRecord",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "describe_record",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeServiceAction",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeServiceAction",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "describe_service_action",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeServiceActionExecutionParameters",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeServiceActionExecutionParameters",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "describe_service_action_execution_parameters",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeTagOption",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeTagOption",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "describe_tag_option",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisableAWSOrganizationsAccess",
+      "AuthorizedActions": [
+        {
+          "Name": "DisableAWSOrganizationsAccess",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "disable_aws_organizations_access",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateAttributeGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateAttributeGroup",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog-appregistry",
+          "Method": "disassociate_attribute_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateBudgetFromResource",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateBudgetFromResource",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "disassociate_budget_from_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociatePrincipalFromPortfolio",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociatePrincipalFromPortfolio",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "disassociate_principal_from_portfolio",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateProductFromPortfolio",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateProductFromPortfolio",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "disassociate_product_from_portfolio",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateResource",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateResource",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog-appregistry",
+          "Method": "disassociate_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateServiceActionFromProvisioningArtifact",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateServiceActionFromProvisioningArtifact",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "disassociate_service_action_from_provisioning_artifact",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateTagOptionFromResource",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateTagOptionFromResource",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "disassociate_tag_option_from_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "EnableAWSOrganizationsAccess",
+      "AuthorizedActions": [
+        {
+          "Name": "EnableAWSOrganizationsAccess",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "enable_aws_organizations_access",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ExecuteProvisionedProductPlan",
+      "AuthorizedActions": [
+        {
+          "Name": "ExecuteProvisionedProductPlan",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "execute_provisioned_product_plan",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ExecuteProvisionedProductServiceAction",
+      "AuthorizedActions": [
+        {
+          "Name": "ExecuteProvisionedProductServiceAction",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "execute_provisioned_product_service_action",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAWSOrganizationsAccessStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAWSOrganizationsAccessStatus",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "get_aws_organizations_access_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "GetApplication",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog-appregistry",
+          "Method": "get_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAssociatedResource",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAssociatedResource",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog-appregistry",
+          "Method": "get_associated_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAttributeGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAttributeGroup",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog-appregistry",
+          "Method": "get_attribute_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetConfiguration",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog-appregistry",
+          "Method": "get_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetProvisionedProductOutputs",
+      "AuthorizedActions": [
+        {
+          "Name": "GetProvisionedProductOutputs",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "get_provisioned_product_outputs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ImportAsProvisionedProduct",
+      "AuthorizedActions": [
+        {
+          "Name": "ImportAsProvisionedProduct",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "import_as_provisioned_product",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAcceptedPortfolioShares",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAcceptedPortfolioShares",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "list_accepted_portfolio_shares",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListApplications",
+      "AuthorizedActions": [
+        {
+          "Name": "ListApplications",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog-appregistry",
+          "Method": "list_applications",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAssociatedAttributeGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAssociatedAttributeGroups",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog-appregistry",
+          "Method": "list_associated_attribute_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAssociatedResources",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAssociatedResources",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog-appregistry",
+          "Method": "list_associated_resources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAttributeGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAttributeGroups",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog-appregistry",
+          "Method": "list_attribute_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAttributeGroupsForApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAttributeGroupsForApplication",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog-appregistry",
+          "Method": "list_attribute_groups_for_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListBudgetsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListBudgetsForResource",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "list_budgets_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListConstraintsForPortfolio",
+      "AuthorizedActions": [
+        {
+          "Name": "ListConstraintsForPortfolio",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "list_constraints_for_portfolio",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListLaunchPaths",
+      "AuthorizedActions": [
+        {
+          "Name": "ListLaunchPaths",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "list_launch_paths",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListOrganizationPortfolioAccess",
+      "AuthorizedActions": [
+        {
+          "Name": "ListOrganizationPortfolioAccess",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "list_organization_portfolio_access",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPortfolioAccess",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPortfolioAccess",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "list_portfolio_access",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPortfolios",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPortfolios",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "list_portfolios",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPortfoliosForProduct",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPortfoliosForProduct",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "list_portfolios_for_product",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPrincipalsForPortfolio",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPrincipalsForPortfolio",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "list_principals_for_portfolio",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProvisionedProductPlans",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProvisionedProductPlans",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "list_provisioned_product_plans",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProvisioningArtifacts",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProvisioningArtifacts",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "list_provisioning_artifacts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProvisioningArtifactsForServiceAction",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProvisioningArtifactsForServiceAction",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "list_provisioning_artifacts_for_service_action",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRecordHistory",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRecordHistory",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "list_record_history",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListResourcesForTagOption",
+      "AuthorizedActions": [
+        {
+          "Name": "ListResourcesForTagOption",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "list_resources_for_tag_option",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListServiceActions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListServiceActions",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "list_service_actions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListServiceActionsForProvisioningArtifact",
+      "AuthorizedActions": [
+        {
+          "Name": "ListServiceActionsForProvisioningArtifact",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "list_service_actions_for_provisioning_artifact",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListStackInstancesForProvisionedProduct",
+      "AuthorizedActions": [
+        {
+          "Name": "ListStackInstancesForProvisionedProduct",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "list_stack_instances_for_provisioned_product",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagOptions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagOptions",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "list_tag_options",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog-appregistry",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "NotifyProvisionProductEngineWorkflowResult",
+      "AuthorizedActions": [
+        {
+          "Name": "NotifyProvisionProductEngineWorkflowResult",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "notify_provision_product_engine_workflow_result",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "NotifyTerminateProvisionedProductEngineWorkflowResult",
+      "AuthorizedActions": [
+        {
+          "Name": "NotifyTerminateProvisionedProductEngineWorkflowResult",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "notify_terminate_provisioned_product_engine_workflow_result",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "NotifyUpdateProvisionedProductEngineWorkflowResult",
+      "AuthorizedActions": [
+        {
+          "Name": "NotifyUpdateProvisionedProductEngineWorkflowResult",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "notify_update_provisioned_product_engine_workflow_result",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ProvisionProduct",
+      "AuthorizedActions": [
+        {
+          "Name": "ProvisionProduct",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "provision_product",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "PutConfiguration",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog-appregistry",
+          "Method": "put_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RejectPortfolioShare",
+      "AuthorizedActions": [
+        {
+          "Name": "RejectPortfolioShare",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "reject_portfolio_share",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ScanProvisionedProducts",
+      "AuthorizedActions": [
+        {
+          "Name": "ScanProvisionedProducts",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "scan_provisioned_products",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SearchProducts",
+      "AuthorizedActions": [
+        {
+          "Name": "SearchProducts",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "search_products",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SearchProductsAsAdmin",
+      "AuthorizedActions": [
+        {
+          "Name": "SearchProductsAsAdmin",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "search_products_as_admin",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SearchProvisionedProducts",
+      "AuthorizedActions": [
+        {
+          "Name": "SearchProvisionedProducts",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "search_provisioned_products",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SyncResource",
+      "AuthorizedActions": [
+        {
+          "Name": "SyncResource",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog-appregistry",
+          "Method": "sync_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog-appregistry",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TerminateProvisionedProduct",
+      "AuthorizedActions": [
+        {
+          "Name": "TerminateProvisionedProduct",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "terminate_provisioned_product",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog-appregistry",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateApplication",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog-appregistry",
+          "Method": "update_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAttributeGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAttributeGroup",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog-appregistry",
+          "Method": "update_attribute_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateConstraint",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "servicecatalog.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateConstraint",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "update_constraint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdatePortfolio",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "servicecatalog"
+        },
+        {
+          "Name": "UntagResource",
+          "Service": "servicecatalog"
+        },
+        {
+          "Name": "UpdatePortfolio",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "update_portfolio",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdatePortfolioShare",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdatePortfolioShare",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "update_portfolio_share",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateProduct",
+      "AuthorizedActions": [
+        {
+          "Name": "PassConnection",
+          "Service": "codestar-connections"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "servicecatalog"
+        },
+        {
+          "Name": "UntagResource",
+          "Service": "servicecatalog"
+        },
+        {
+          "Name": "UpdateProduct",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "update_product",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateProvisionedProduct",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateProvisionedProduct",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "update_provisioned_product",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateProvisionedProductProperties",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateProvisionedProductProperties",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "update_provisioned_product_properties",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateProvisioningArtifact",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateProvisioningArtifact",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "update_provisioning_artifact",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateServiceAction",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "servicecatalog.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateServiceAction",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "update_service_action",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateTagOption",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateTagOption",
+          "Service": "servicecatalog"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicecatalog",
+          "Method": "update_tag_option",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "Application",
+      "ARNFormats": [
+        "arn:${Partition}:servicecatalog:${Region}:${Account}:/applications/${ApplicationId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "AttributeGroup",
+      "ARNFormats": [
+        "arn:${Partition}:servicecatalog:${Region}:${Account}:/attribute-groups/${AttributeGroupId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Portfolio",
+      "ARNFormats": [
+        "arn:${Partition}:catalog:${Region}:${Account}:portfolio/${PortfolioId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Product",
+      "ARNFormats": [
+        "arn:${Partition}:catalog:${Region}:${Account}:product/${ProductId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

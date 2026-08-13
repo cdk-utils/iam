@@ -1,0 +1,4394 @@
+{
+  "Name": "profile",
+  "Actions": [
+    {
+      "Name": "AddProfileKey",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchGetCalculatedAttributeForProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "calculated-attributes"
+        },
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchGetProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateCalculatedAttributeDefinition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "calculated-attributes",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        },
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateDomain",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateDomainLayout",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "layouts",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateEventStream",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "event-streams",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateEventTrigger",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "event-triggers",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateIntegrationWorkflow",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "integrations",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateRecommender",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "recommenders",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateRecommenderFilter",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "recommender-filters"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateRecommenderSchema",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "recommender-schemas"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateSegmentDefinition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "segment-definitions",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateSegmentEstimate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateSegmentSnapshot",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "segment-definitions"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateSnapshot",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateUploadJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteCalculatedAttributeDefinition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "calculated-attributes"
+        },
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteDomain",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteDomainLayout",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "layouts"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteDomainObjectType",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain-object-types"
+        },
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteEventStream",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "event-streams"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteEventTrigger",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "event-triggers"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteIntegration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "integrations"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteProfileKey",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteProfileObject",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "object-types"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteProfileObjectType",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "object-types"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteRecommender",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "recommenders"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteRecommenderFilter",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "recommender-filters"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteRecommenderSchema",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "recommender-schemas"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteSegmentDefinition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "segment-definitions"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteWorkflow",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DetectProfileObjectType",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetAutoMergingPreview",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCalculatedAttributeDefinition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "calculated-attributes"
+        },
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCalculatedAttributeForProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "calculated-attributes"
+        },
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDomain",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDomainLayout",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "layouts"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDomainObjectType",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain-object-types"
+        },
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetEventStream",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "event-streams"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetEventTrigger",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "event-triggers"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetIdentityResolutionJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetIntegration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "integrations"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetMatches",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetObjectTypeAttributeStatistics",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "object-types"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetProfileHistoryRecord",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetProfileInsights",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetProfileObjectType",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "object-types"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetProfileObjectTypeTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetProfileRecommendations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "recommenders"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetRecommender",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "recommenders"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetRecommenderFilter",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "recommender-filters"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetRecommenderSchema",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "recommender-schemas"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSegmentDefinition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "segment-definitions"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSegmentEstimate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSegmentMembership",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "segment-definitions"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSegmentSnapshot",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "segment-definitions"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSimilarProfiles",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSnapshot",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetUploadJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetUploadJobPath",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetWorkflow",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetWorkflowSteps",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAccountIntegrations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListCalculatedAttributeDefinitions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListCalculatedAttributesForProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDomainLayouts",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDomainObjectTypes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDomainObjects",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain-object-types"
+        },
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDomains",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListEventStreams",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListEventTriggers",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListIdentityResolutionJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListIntegrations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListObjectTypeAttributeValues",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "object-types"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListObjectTypeAttributes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "object-types"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListProfileAttributeValues",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListProfileHistoryRecords",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListProfileObjectTypeTemplates",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListProfileObjectTypes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListProfileObjects",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "object-types"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListRecommenderFilters",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListRecommenderRecipes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListRecommenderSchemas",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListRecommenders",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListRuleBasedMatches",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListSegmentDefinitions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "calculated-attributes"
+        },
+        {
+          "Name": "domain-object-types"
+        },
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "event-streams"
+        },
+        {
+          "Name": "event-triggers"
+        },
+        {
+          "Name": "integrations"
+        },
+        {
+          "Name": "layouts"
+        },
+        {
+          "Name": "object-types"
+        },
+        {
+          "Name": "recommender-filters"
+        },
+        {
+          "Name": "recommender-schemas"
+        },
+        {
+          "Name": "recommenders"
+        },
+        {
+          "Name": "segment-definitions"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListUploadJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListWorkflows",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "MergeProfiles",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutDomainObjectType",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain-object-types",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        },
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutIntegration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "integrations",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutProfileObject",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "object-types"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutProfileObjectType",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "object-types",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SearchProfiles",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartRecommender",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "recommenders"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartUploadJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopRecommender",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "recommenders"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopUploadJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "calculated-attributes"
+        },
+        {
+          "Name": "domain-object-types"
+        },
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "event-streams"
+        },
+        {
+          "Name": "event-triggers"
+        },
+        {
+          "Name": "integrations"
+        },
+        {
+          "Name": "layouts"
+        },
+        {
+          "Name": "object-types"
+        },
+        {
+          "Name": "recommender-filters"
+        },
+        {
+          "Name": "recommender-schemas"
+        },
+        {
+          "Name": "recommenders"
+        },
+        {
+          "Name": "segment-definitions"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "calculated-attributes"
+        },
+        {
+          "Name": "domain-object-types"
+        },
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "event-streams"
+        },
+        {
+          "Name": "event-triggers"
+        },
+        {
+          "Name": "integrations"
+        },
+        {
+          "Name": "layouts"
+        },
+        {
+          "Name": "object-types"
+        },
+        {
+          "Name": "recommender-filters"
+        },
+        {
+          "Name": "recommender-schemas"
+        },
+        {
+          "Name": "recommenders"
+        },
+        {
+          "Name": "segment-definitions"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateCalculatedAttributeDefinition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "calculated-attributes"
+        },
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateDomain",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateDomainLayout",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "layouts"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateEventTrigger",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "event-triggers"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateRecommender",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "recommenders"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AddProfileKey",
+      "AuthorizedActions": [
+        {
+          "Name": "AddProfileKey",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "add_profile_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetCalculatedAttributeForProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetCalculatedAttributeForProfile",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "batch_get_calculated_attribute_for_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetProfile",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "batch_get_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchPutProfileObject",
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "batch_put_profile_object",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateCalculatedAttributeDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCalculatedAttributeDefinition",
+          "Service": "profile"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "create_calculated_attribute_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDomain",
+          "Service": "profile"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "create_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDomainLayout",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDomainLayout",
+          "Service": "profile"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "create_domain_layout",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateEventStream",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateEventStream",
+          "Service": "profile"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "create_event_stream",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateEventTrigger",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateEventTrigger",
+          "Service": "profile"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "create_event_trigger",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateIntegrationWorkflow",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateIntegrationWorkflow",
+          "Service": "profile"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "profile.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "create_integration_workflow",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateProfile",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "create_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRecommender",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRecommender",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "create_recommender",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRecommenderFilter",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRecommenderFilter",
+          "Service": "profile"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "create_recommender_filter",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRecommenderSchema",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRecommenderSchema",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "create_recommender_schema",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSegmentDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSegmentDefinition",
+          "Service": "profile"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "create_segment_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSegmentEstimate",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSegmentEstimate",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "create_segment_estimate",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSegmentSnapshot",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSegmentSnapshot",
+          "Service": "profile"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "profile.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "create_segment_snapshot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateUploadJob",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateUploadJob",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "create_upload_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCalculatedAttributeDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCalculatedAttributeDefinition",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "delete_calculated_attribute_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDomain",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "delete_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDomainLayout",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDomainLayout",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "delete_domain_layout",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDomainObjectType",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDomainObjectType",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "delete_domain_object_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteEventStream",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteEventStream",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "delete_event_stream",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteEventTrigger",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteEventTrigger",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "delete_event_trigger",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteIntegration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteIntegration",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "delete_integration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteProfile",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "delete_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteProfileKey",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteProfileKey",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "delete_profile_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteProfileObject",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteProfileObject",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "delete_profile_object",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteProfileObjectType",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteProfileObjectType",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "delete_profile_object_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRecommender",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRecommender",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "delete_recommender",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRecommenderFilter",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRecommenderFilter",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "delete_recommender_filter",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRecommenderSchema",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRecommenderSchema",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "delete_recommender_schema",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSegmentDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSegmentDefinition",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "delete_segment_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteWorkflow",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteWorkflow",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "delete_workflow",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DetectProfileObjectType",
+      "AuthorizedActions": [
+        {
+          "Name": "DetectProfileObjectType",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "detect_profile_object_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAutoMergingPreview",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAutoMergingPreview",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "get_auto_merging_preview",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCalculatedAttributeDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCalculatedAttributeDefinition",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "get_calculated_attribute_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCalculatedAttributeForProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCalculatedAttributeForProfile",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "get_calculated_attribute_for_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDomain",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "get_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDomainLayout",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDomainLayout",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "get_domain_layout",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDomainObjectType",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDomainObjectType",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "get_domain_object_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEventStream",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEventStream",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "get_event_stream",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEventTrigger",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEventTrigger",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "get_event_trigger",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetIdentityResolutionJob",
+      "AuthorizedActions": [
+        {
+          "Name": "GetIdentityResolutionJob",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "get_identity_resolution_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetIntegration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetIntegration",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "get_integration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMatches",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMatches",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "get_matches",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetObjectTypeAttributeStatistics",
+      "AuthorizedActions": [
+        {
+          "Name": "GetObjectTypeAttributeStatistics",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "get_object_type_attribute_statistics",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetProfileHistoryRecord",
+      "AuthorizedActions": [
+        {
+          "Name": "GetProfileHistoryRecord",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "get_profile_history_record",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetProfileObjectType",
+      "AuthorizedActions": [
+        {
+          "Name": "GetProfileObjectType",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "get_profile_object_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetProfileObjectTypeTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "GetProfileObjectTypeTemplate",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "get_profile_object_type_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetProfileRecommendations",
+      "AuthorizedActions": [
+        {
+          "Name": "GetProfileRecommendations",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "get_profile_recommendations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRecommender",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRecommender",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "get_recommender",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRecommenderFilter",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRecommenderFilter",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "get_recommender_filter",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRecommenderSchema",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRecommenderSchema",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "get_recommender_schema",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSegmentDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSegmentDefinition",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "get_segment_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSegmentEstimate",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSegmentEstimate",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "get_segment_estimate",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSegmentMembership",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSegmentMembership",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "get_segment_membership",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSegmentSnapshot",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSegmentSnapshot",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "get_segment_snapshot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSimilarProfiles",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSimilarProfiles",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "get_similar_profiles",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetUploadJob",
+      "AuthorizedActions": [
+        {
+          "Name": "GetUploadJob",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "get_upload_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetUploadJobPath",
+      "AuthorizedActions": [
+        {
+          "Name": "GetUploadJobPath",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "get_upload_job_path",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetWorkflow",
+      "AuthorizedActions": [
+        {
+          "Name": "GetWorkflow",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "get_workflow",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetWorkflowSteps",
+      "AuthorizedActions": [
+        {
+          "Name": "GetWorkflowSteps",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "get_workflow_steps",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAccountIntegrations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAccountIntegrations",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "list_account_integrations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCalculatedAttributeDefinitions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCalculatedAttributeDefinitions",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "list_calculated_attribute_definitions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCalculatedAttributesForProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCalculatedAttributesForProfile",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "list_calculated_attributes_for_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDomainLayouts",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDomainLayouts",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "list_domain_layouts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDomainObjectTypes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDomainObjectTypes",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "list_domain_object_types",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDomains",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDomains",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "list_domains",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEventStreams",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEventStreams",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "list_event_streams",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEventTriggers",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEventTriggers",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "list_event_triggers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListIdentityResolutionJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListIdentityResolutionJobs",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "list_identity_resolution_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListIntegrations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListIntegrations",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "list_integrations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListObjectTypeAttributeValues",
+      "AuthorizedActions": [
+        {
+          "Name": "ListObjectTypeAttributeValues",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "list_object_type_attribute_values",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListObjectTypeAttributes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListObjectTypeAttributes",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "list_object_type_attributes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProfileAttributeValues",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProfileAttributeValues",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "list_profile_attribute_values",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProfileHistoryRecords",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProfileHistoryRecords",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "list_profile_history_records",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProfileObjectTypeTemplates",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProfileObjectTypeTemplates",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "list_profile_object_type_templates",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProfileObjectTypes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProfileObjectTypes",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "list_profile_object_types",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProfileObjects",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProfileObjects",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "list_profile_objects",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRecommenderFilters",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRecommenderFilters",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "list_recommender_filters",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRecommenderRecipes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRecommenderRecipes",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "list_recommender_recipes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRecommenderSchemas",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRecommenderSchemas",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "list_recommender_schemas",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRecommenders",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRecommenders",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "list_recommenders",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRuleBasedMatches",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRuleBasedMatches",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "list_rule_based_matches",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSegmentDefinitions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSegmentDefinitions",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "list_segment_definitions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListUploadJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListUploadJobs",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "list_upload_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListWorkflows",
+      "AuthorizedActions": [
+        {
+          "Name": "ListWorkflows",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "list_workflows",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "MergeProfiles",
+      "AuthorizedActions": [
+        {
+          "Name": "MergeProfiles",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "merge_profiles",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutDomainObjectType",
+      "AuthorizedActions": [
+        {
+          "Name": "PutDomainObjectType",
+          "Service": "profile"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "put_domain_object_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutIntegration",
+      "AuthorizedActions": [
+        {
+          "Name": "PutIntegration",
+          "Service": "profile"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "put_integration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutProfileObject",
+      "AuthorizedActions": [
+        {
+          "Name": "PutProfileObject",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "put_profile_object",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutProfileObjectType",
+      "AuthorizedActions": [
+        {
+          "Name": "PutProfileObjectType",
+          "Service": "profile"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "put_profile_object_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SearchProfiles",
+      "AuthorizedActions": [
+        {
+          "Name": "SearchProfiles",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "search_profiles",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartRecommender",
+      "AuthorizedActions": [
+        {
+          "Name": "StartRecommender",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "start_recommender",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartUploadJob",
+      "AuthorizedActions": [
+        {
+          "Name": "StartUploadJob",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "start_upload_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopRecommender",
+      "AuthorizedActions": [
+        {
+          "Name": "StopRecommender",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "stop_recommender",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopUploadJob",
+      "AuthorizedActions": [
+        {
+          "Name": "StopUploadJob",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "stop_upload_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCalculatedAttributeDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCalculatedAttributeDefinition",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "update_calculated_attribute_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDomain",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "update_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDomainLayout",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDomainLayout",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "update_domain_layout",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateEventTrigger",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateEventTrigger",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "update_event_trigger",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateProfile",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "update_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRecommender",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateRecommender",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "update_recommender",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "calculated-attributes",
+      "ARNFormats": [
+        "arn:${Partition}:profile:${Region}:${Account}:domains/${DomainName}/calculated-attributes/${CalculatedAttributeName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "domain-object-types",
+      "ARNFormats": [
+        "arn:${Partition}:profile:${Region}:${Account}:domains/${DomainName}/domain-object-types/${ObjectTypeName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "domains",
+      "ARNFormats": [
+        "arn:${Partition}:profile:${Region}:${Account}:domains/${DomainName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "event-streams",
+      "ARNFormats": [
+        "arn:${Partition}:profile:${Region}:${Account}:domains/${DomainName}/event-streams/${EventStreamName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "event-triggers",
+      "ARNFormats": [
+        "arn:${Partition}:profile:${Region}:${Account}:domains/${DomainName}/event-triggers/${EventTriggerName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "integrations",
+      "ARNFormats": [
+        "arn:${Partition}:profile:${Region}:${Account}:domains/${DomainName}/integrations/${Uri}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "layouts",
+      "ARNFormats": [
+        "arn:${Partition}:profile:${Region}:${Account}:domains/${DomainName}/layouts/${LayoutDefinitionName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "object-types",
+      "ARNFormats": [
+        "arn:${Partition}:profile:${Region}:${Account}:domains/${DomainName}/object-types/${ObjectTypeName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "recommender-filters",
+      "ARNFormats": [
+        "arn:${Partition}:profile:${Region}:${Account}:domains/${DomainName}/recommender-filters/${RecommenderFilterName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "recommender-schemas",
+      "ARNFormats": [
+        "arn:${Partition}:profile:${Region}:${Account}:domains/${DomainName}/recommender-schemas/${RecommenderSchemaName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "recommenders",
+      "ARNFormats": [
+        "arn:${Partition}:profile:${Region}:${Account}:domains/${DomainName}/recommenders/${RecommenderTypeName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "segment-definitions",
+      "ARNFormats": [
+        "arn:${Partition}:profile:${Region}:${Account}:domains/${DomainName}/segment-definitions/${SegmentDefinitionName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

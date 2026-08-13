@@ -1,0 +1,1573 @@
+{
+  "Name": "qapps",
+  "Actions": [
+    {
+      "Name": "AssociateLibraryItemReview",
+      "ActionConditionKeys": [
+        "qapps:AppIsPublished",
+        "qapps:UserIsAppOwner"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "qapp"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AssociateQAppWithUser",
+      "ActionConditionKeys": [
+        "qapps:AppIsPublished",
+        "qapps:UserIsAppOwner"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "qapp"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchCreateCategory",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchDeleteCategory",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchUpdateCategory",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CopyQApp",
+      "ActionConditionKeys": [
+        "qapps:AppIsPublished",
+        "qapps:UserIsAppOwner"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "qapp"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateLibraryItem",
+      "ActionConditionKeys": [
+        "qapps:AppIsPublished",
+        "qapps:UserIsAppOwner"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "qapp"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateLibraryItemReview",
+      "ActionConditionKeys": [
+        "qapps:AppIsPublished",
+        "qapps:UserIsAppOwner"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "qapp"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateQApp",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateSubscriptionToken",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteLibraryItem",
+      "ActionConditionKeys": [
+        "qapps:AppIsPublished",
+        "qapps:UserIsAppOwner"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "qapp"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteQApp",
+      "ActionConditionKeys": [
+        "qapps:AppIsPublished",
+        "qapps:UserIsAppOwner"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "qapp"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeQAppPermissions",
+      "ActionConditionKeys": [
+        "qapps:AppIsPublished",
+        "qapps:UserIsAppOwner"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "qapp"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateLibraryItemReview",
+      "ActionConditionKeys": [
+        "qapps:AppIsPublished",
+        "qapps:UserIsAppOwner"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "qapp"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateQAppFromUser",
+      "ActionConditionKeys": [
+        "qapps:AppIsPublished",
+        "qapps:UserIsAppOwner"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "qapp"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ExportQAppSessionData",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "qapp-session"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetLibraryItem",
+      "ActionConditionKeys": [
+        "qapps:AppIsPublished",
+        "qapps:UserIsAppOwner"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "qapp"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetQApp",
+      "ActionConditionKeys": [
+        "qapps:AppIsPublished",
+        "qapps:UserIsAppOwner"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "qapp"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetQAppSession",
+      "ActionConditionKeys": [
+        "qapps:AppIsPublished",
+        "qapps:SessionIsShared",
+        "qapps:UserIsAppOwner",
+        "qapps:UserIsSessionModerator"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "qapp-session"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetQAppSessionMetadata",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "qapp-session"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ImportDocument",
+      "ActionConditionKeys": [
+        "qapps:AppIsPublished",
+        "qapps:SessionIsShared",
+        "qapps:UserIsAppOwner",
+        "qapps:UserIsSessionModerator"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "qapp"
+        },
+        {
+          "Name": "qapp-session"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListCategories",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListLibraryItems",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListQAppSessionData",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "qapp-session"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListQApps",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "qapp"
+        },
+        {
+          "Name": "qapp-session"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PredictProblemStatementFromConversation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PredictQApp",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PredictQAppFromProblemStatement",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartQAppSession",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "qapps:AppIsPublished",
+        "qapps:UserIsAppOwner"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "qapp"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StopQAppSession",
+      "ActionConditionKeys": [
+        "qapps:AppIsPublished",
+        "qapps:SessionIsShared",
+        "qapps:UserIsAppOwner",
+        "qapps:UserIsSessionModerator"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "qapp-session"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "qapp"
+        },
+        {
+          "Name": "qapp-session"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "qapp"
+        },
+        {
+          "Name": "qapp-session"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateLibraryItem",
+      "ActionConditionKeys": [
+        "qapps:AppIsPublished",
+        "qapps:UserIsAppOwner"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "qapp"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateLibraryItemMetadata",
+      "ActionConditionKeys": [
+        "qapps:AppIsPublished"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "qapp"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateQApp",
+      "ActionConditionKeys": [
+        "qapps:AppIsPublished",
+        "qapps:UserIsAppOwner"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "qapp"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateQAppPermissions",
+      "ActionConditionKeys": [
+        "qapps:AppIsPublished",
+        "qapps:UserIsAppOwner"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "qapp"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateQAppSession",
+      "ActionConditionKeys": [
+        "qapps:AppIsPublished",
+        "qapps:SessionIsShared",
+        "qapps:UserIsAppOwner",
+        "qapps:UserIsSessionModerator"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "qapp-session"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateQAppSessionMetadata",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "qapp-session"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "qapps:AppIsPublished",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "qapps:SessionIsShared",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "qapps:UserIsAppOwner",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "qapps:UserIsSessionModerator",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AssociateLibraryItemReview",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateLibraryItemReview",
+          "Service": "qapps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qapps",
+          "Method": "associate_library_item_review",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateQAppWithUser",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateQAppWithUser",
+          "Service": "qapps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qapps",
+          "Method": "associate_q_app_with_user",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchCreateCategory",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchCreateCategory",
+          "Service": "qapps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qapps",
+          "Method": "batch_create_category",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchDeleteCategory",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchDeleteCategory",
+          "Service": "qapps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qapps",
+          "Method": "batch_delete_category",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchUpdateCategory",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchUpdateCategory",
+          "Service": "qapps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qapps",
+          "Method": "batch_update_category",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateLibraryItem",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateLibraryItem",
+          "Service": "qapps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qapps",
+          "Method": "create_library_item",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePresignedUrl",
+      "AuthorizedActions": [
+        {
+          "Name": "ImportDocument",
+          "Service": "qapps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qapps",
+          "Method": "create_presigned_url",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateQApp",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateQApp",
+          "Service": "qapps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qapps",
+          "Method": "create_q_app",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteLibraryItem",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteLibraryItem",
+          "Service": "qapps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qapps",
+          "Method": "delete_library_item",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteQApp",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteQApp",
+          "Service": "qapps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qapps",
+          "Method": "delete_q_app",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeQAppPermissions",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeQAppPermissions",
+          "Service": "qapps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qapps",
+          "Method": "describe_q_app_permissions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateLibraryItemReview",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateLibraryItemReview",
+          "Service": "qapps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qapps",
+          "Method": "disassociate_library_item_review",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateQAppFromUser",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateQAppFromUser",
+          "Service": "qapps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qapps",
+          "Method": "disassociate_q_app_from_user",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ExportQAppSessionData",
+      "AuthorizedActions": [
+        {
+          "Name": "ExportQAppSessionData",
+          "Service": "qapps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qapps",
+          "Method": "export_q_app_session_data",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetLibraryItem",
+      "AuthorizedActions": [
+        {
+          "Name": "GetLibraryItem",
+          "Service": "qapps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qapps",
+          "Method": "get_library_item",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetQApp",
+      "AuthorizedActions": [
+        {
+          "Name": "GetQApp",
+          "Service": "qapps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qapps",
+          "Method": "get_q_app",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetQAppSession",
+      "AuthorizedActions": [
+        {
+          "Name": "GetQAppSession",
+          "Service": "qapps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qapps",
+          "Method": "get_q_app_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetQAppSessionMetadata",
+      "AuthorizedActions": [
+        {
+          "Name": "GetQAppSessionMetadata",
+          "Service": "qapps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qapps",
+          "Method": "get_q_app_session_metadata",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ImportDocument",
+      "AuthorizedActions": [
+        {
+          "Name": "ImportDocument",
+          "Service": "qapps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qapps",
+          "Method": "import_document",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCategories",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCategories",
+          "Service": "qapps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qapps",
+          "Method": "list_categories",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListLibraryItems",
+      "AuthorizedActions": [
+        {
+          "Name": "ListLibraryItems",
+          "Service": "qapps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qapps",
+          "Method": "list_library_items",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListQAppSessionData",
+      "AuthorizedActions": [
+        {
+          "Name": "ListQAppSessionData",
+          "Service": "qapps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qapps",
+          "Method": "list_q_app_session_data",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListQApps",
+      "AuthorizedActions": [
+        {
+          "Name": "ListQApps",
+          "Service": "qapps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qapps",
+          "Method": "list_q_apps",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "qapps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qapps",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PredictQApp",
+      "SDK": [
+        {
+          "Name": "qapps",
+          "Method": "predict_q_app",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartQAppSession",
+      "AuthorizedActions": [
+        {
+          "Name": "StartQAppSession",
+          "Service": "qapps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qapps",
+          "Method": "start_q_app_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopQAppSession",
+      "AuthorizedActions": [
+        {
+          "Name": "StopQAppSession",
+          "Service": "qapps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qapps",
+          "Method": "stop_q_app_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "qapps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qapps",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "qapps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qapps",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateLibraryItem",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateLibraryItem",
+          "Service": "qapps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qapps",
+          "Method": "update_library_item",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateLibraryItemMetadata",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateLibraryItemMetadata",
+          "Service": "qapps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qapps",
+          "Method": "update_library_item_metadata",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateQApp",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateQApp",
+          "Service": "qapps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qapps",
+          "Method": "update_q_app",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateQAppPermissions",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateQAppPermissions",
+          "Service": "qapps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qapps",
+          "Method": "update_q_app_permissions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateQAppSession",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateQAppSession",
+          "Service": "qapps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qapps",
+          "Method": "update_q_app_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateQAppSessionMetadata",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateQAppSessionMetadata",
+          "Service": "qapps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qapps",
+          "Method": "update_q_app_session_metadata",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "application",
+      "ARNFormats": [
+        "arn:${Partition}:qbusiness:${Region}:${Account}:application/${ApplicationId}"
+      ]
+    },
+    {
+      "Name": "qapp",
+      "ARNFormats": [
+        "arn:${Partition}:qapps:${Region}:${Account}:application/${ApplicationId}/qapp/${AppId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "qapp-session",
+      "ARNFormats": [
+        "arn:${Partition}:qapps:${Region}:${Account}:application/${ApplicationId}/qapp/${AppId}/session/${SessionId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

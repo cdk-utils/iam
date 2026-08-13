@@ -1,0 +1,268 @@
+{
+  "Name": "geo-places",
+  "Actions": [
+    {
+      "Name": "Autocomplete",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "provider"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "Geocode",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "provider"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetPlace",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "provider"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ReverseGeocode",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "provider"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SearchNearby",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "provider"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SearchText",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "provider"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "Suggest",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "provider"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "Autocomplete",
+      "AuthorizedActions": [
+        {
+          "Name": "Autocomplete",
+          "Service": "geo-places"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "geo-places",
+          "Method": "autocomplete",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "Geocode",
+      "AuthorizedActions": [
+        {
+          "Name": "Geocode",
+          "Service": "geo-places"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "geo-places",
+          "Method": "geocode",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPlace",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPlace",
+          "Service": "geo-places"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "geo-places",
+          "Method": "get_place",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ReverseGeocode",
+      "AuthorizedActions": [
+        {
+          "Name": "ReverseGeocode",
+          "Service": "geo-places"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "geo-places",
+          "Method": "reverse_geocode",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SearchNearby",
+      "AuthorizedActions": [
+        {
+          "Name": "SearchNearby",
+          "Service": "geo-places"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "geo-places",
+          "Method": "search_nearby",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SearchText",
+      "AuthorizedActions": [
+        {
+          "Name": "SearchText",
+          "Service": "geo-places"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "geo-places",
+          "Method": "search_text",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "Suggest",
+      "AuthorizedActions": [
+        {
+          "Name": "Suggest",
+          "Service": "geo-places"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "geo-places",
+          "Method": "suggest",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "provider",
+      "ARNFormats": [
+        "arn:${Partition}:geo-places:${Region}::provider/default"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

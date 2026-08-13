@@ -1,0 +1,1754 @@
+{
+  "Name": "mediatailor",
+  "Actions": [
+    {
+      "Name": "ConfigureLogsForChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ConfigureLogsForPlaybackConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "playbackConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateChannel",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateLiveSource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreatePrefetchSchedule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "playbackConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateProgram",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateSourceLocation",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateVodSource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteChannelPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteLiveSource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "liveSource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeletePlaybackConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "playbackConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeletePrefetchSchedule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "playbackConfiguration"
+        },
+        {
+          "Name": "prefetchSchedule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteProgram",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "program"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteSourceLocation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "sourceLocation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteVodSource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vodSource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeLiveSource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "liveSource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeProgram",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "program"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeSourceLocation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "sourceLocation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeVodSource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vodSource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetChannelPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetChannelSchedule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetPlaybackConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "playbackConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetPrefetchSchedule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "playbackConfiguration"
+        },
+        {
+          "Name": "prefetchSchedule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAlerts",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListChannels",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListLiveSources",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListPlaybackConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListPrefetchSchedules",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "playbackConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListSourceLocations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        },
+        {
+          "Name": "liveSource"
+        },
+        {
+          "Name": "playbackConfiguration"
+        },
+        {
+          "Name": "sourceLocation"
+        },
+        {
+          "Name": "vodSource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListVodSources",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutChannelPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutPlaybackConfiguration",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        },
+        {
+          "Name": "liveSource"
+        },
+        {
+          "Name": "playbackConfiguration"
+        },
+        {
+          "Name": "sourceLocation"
+        },
+        {
+          "Name": "vodSource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        },
+        {
+          "Name": "liveSource"
+        },
+        {
+          "Name": "playbackConfiguration"
+        },
+        {
+          "Name": "sourceLocation"
+        },
+        {
+          "Name": "vodSource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateLiveSource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "liveSource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateProgram",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "program"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateSourceLocation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "sourceLocation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateVodSource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vodSource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "ConfigureLogsForChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "ConfigureLogsForChannel",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "configure_logs_for_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ConfigureLogsForPlaybackConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "ConfigureLogsForPlaybackConfiguration",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "configure_logs_for_playback_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateChannel",
+          "Service": "mediatailor"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "create_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateLiveSource",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateLiveSource",
+          "Service": "mediatailor"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "create_live_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePrefetchSchedule",
+      "AuthorizedActions": [
+        {
+          "Name": "CreatePrefetchSchedule",
+          "Service": "mediatailor"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "create_prefetch_schedule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateProgram",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateProgram",
+          "Service": "mediatailor"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "create_program",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSourceLocation",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSourceLocation",
+          "Service": "mediatailor"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "create_source_location",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateVodSource",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateVodSource",
+          "Service": "mediatailor"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "create_vod_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteChannel",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "delete_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteChannelPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteChannelPolicy",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "delete_channel_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteFunction",
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "delete_function",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteLiveSource",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteLiveSource",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "delete_live_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePlaybackConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeletePlaybackConfiguration",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "delete_playback_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePrefetchSchedule",
+      "AuthorizedActions": [
+        {
+          "Name": "DeletePrefetchSchedule",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "delete_prefetch_schedule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteProgram",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteProgram",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "delete_program",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSourceLocation",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSourceLocation",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "delete_source_location",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteVodSource",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteVodSource",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "delete_vod_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeChannel",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "describe_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeLiveSource",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeLiveSource",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "describe_live_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeProgram",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeProgram",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "describe_program",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSourceLocation",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSourceLocation",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "describe_source_location",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeVodSource",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeVodSource",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "describe_vod_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetChannelPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetChannelPolicy",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "get_channel_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetChannelSchedule",
+      "AuthorizedActions": [
+        {
+          "Name": "GetChannelSchedule",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "get_channel_schedule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetFunction",
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "get_function",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPlaybackConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPlaybackConfiguration",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "get_playback_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPrefetchSchedule",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPrefetchSchedule",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "get_prefetch_schedule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAlerts",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAlerts",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "list_alerts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListChannels",
+      "AuthorizedActions": [
+        {
+          "Name": "ListChannels",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "list_channels",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFunctions",
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "list_functions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListLiveSources",
+      "AuthorizedActions": [
+        {
+          "Name": "ListLiveSources",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "list_live_sources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPlaybackConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPlaybackConfigurations",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "list_playback_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPrefetchSchedules",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPrefetchSchedules",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "list_prefetch_schedules",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSourceLocations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSourceLocations",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "list_source_locations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListVodSources",
+      "AuthorizedActions": [
+        {
+          "Name": "ListVodSources",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "list_vod_sources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutChannelPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PutChannelPolicy",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "put_channel_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutFunction",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "put_function",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutPlaybackConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "PutPlaybackConfiguration",
+          "Service": "mediatailor"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "put_playback_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "StartChannel",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "start_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "StopChannel",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "stop_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateChannel",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "update_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateLiveSource",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateLiveSource",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "update_live_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateProgram",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateProgram",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "update_program",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSourceLocation",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSourceLocation",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "update_source_location",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateVodSource",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateVodSource",
+          "Service": "mediatailor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediatailor",
+          "Method": "update_vod_source",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "channel",
+      "ARNFormats": [
+        "arn:${Partition}:mediatailor:${Region}:${Account}:channel/${ChannelName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "liveSource",
+      "ARNFormats": [
+        "arn:${Partition}:mediatailor:${Region}:${Account}:liveSource/${SourceLocationName}/${LiveSourceName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "playbackConfiguration",
+      "ARNFormats": [
+        "arn:${Partition}:mediatailor:${Region}:${Account}:playbackConfiguration/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "prefetchSchedule",
+      "ARNFormats": [
+        "arn:${Partition}:mediatailor:${Region}:${Account}:prefetchSchedule/${ResourceId}"
+      ]
+    },
+    {
+      "Name": "program",
+      "ARNFormats": [
+        "arn:${Partition}:mediatailor:${Region}:${Account}:program/${ChannelName}/${ProgramName}"
+      ]
+    },
+    {
+      "Name": "sourceLocation",
+      "ARNFormats": [
+        "arn:${Partition}:mediatailor:${Region}:${Account}:sourceLocation/${SourceLocationName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "vodSource",
+      "ARNFormats": [
+        "arn:${Partition}:mediatailor:${Region}:${Account}:vodSource/${SourceLocationName}/${VodSourceName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

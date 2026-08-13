@@ -1,0 +1,1231 @@
+{
+  "Name": "resource-explorer-2",
+  "Actions": [
+    {
+      "Name": "AssociateDefaultView",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchGetView",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateIndex",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateManagedView",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateResourceExplorerSetup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateStreamingAccessForService",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateView",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteIndex",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteResourceExplorerSetup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "view"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteStreamingAccessForService",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteView",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "view"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateDefaultView",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetAccountLevelServiceConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDefaultView",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetIndex",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetManagedView",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "managed-view"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResourceExplorerSetup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "view"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetServiceIndex",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetServiceView",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetView",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "view"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListIndexes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListIndexesForMembers",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListManagedViews",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListServiceIndexes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListServiceViews",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListStreamingAccessForServices",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListSupportedResourceTypes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "index"
+        },
+        {
+          "Name": "view"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListViews",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "view"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "Search",
+      "ActionConditionKeys": [
+        "resource-explorer-2:Operation"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "view"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "index"
+        },
+        {
+          "Name": "view"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "index"
+        },
+        {
+          "Name": "view"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateIndexType",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateView",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "view"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "resource-explorer-2:Operation",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AssociateDefaultView",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateDefaultView",
+          "Service": "resource-explorer-2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-explorer-2",
+          "Method": "associate_default_view",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetView",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetView",
+          "Service": "resource-explorer-2"
+        },
+        {
+          "Name": "GetView",
+          "Service": "resource-explorer-2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-explorer-2",
+          "Method": "batch_get_view",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateIndex",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateIndex",
+          "Service": "resource-explorer-2"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "resource-explorer-2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-explorer-2",
+          "Method": "create_index",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateResourceExplorerSetup",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateResourceExplorerSetup",
+          "Service": "resource-explorer-2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-explorer-2",
+          "Method": "create_resource_explorer_setup",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateView",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateView",
+          "Service": "resource-explorer-2"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "resource-explorer-2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-explorer-2",
+          "Method": "create_view",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteIndex",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteIndex",
+          "Service": "resource-explorer-2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-explorer-2",
+          "Method": "delete_index",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteResourceExplorerSetup",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteResourceExplorerSetup",
+          "Service": "resource-explorer-2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-explorer-2",
+          "Method": "delete_resource_explorer_setup",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteView",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteView",
+          "Service": "resource-explorer-2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-explorer-2",
+          "Method": "delete_view",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateDefaultView",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateDefaultView",
+          "Service": "resource-explorer-2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-explorer-2",
+          "Method": "disassociate_default_view",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAccountLevelServiceConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAccountLevelServiceConfiguration",
+          "Service": "resource-explorer-2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-explorer-2",
+          "Method": "get_account_level_service_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDefaultView",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDefaultView",
+          "Service": "resource-explorer-2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-explorer-2",
+          "Method": "get_default_view",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetIndex",
+      "AuthorizedActions": [
+        {
+          "Name": "GetIndex",
+          "Service": "resource-explorer-2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-explorer-2",
+          "Method": "get_index",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetManagedView",
+      "AuthorizedActions": [
+        {
+          "Name": "GetManagedView",
+          "Service": "resource-explorer-2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-explorer-2",
+          "Method": "get_managed_view",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResourceExplorerSetup",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResourceExplorerSetup",
+          "Service": "resource-explorer-2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-explorer-2",
+          "Method": "get_resource_explorer_setup",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetServiceIndex",
+      "AuthorizedActions": [
+        {
+          "Name": "GetServiceIndex",
+          "Service": "resource-explorer-2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-explorer-2",
+          "Method": "get_service_index",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetServiceView",
+      "AuthorizedActions": [
+        {
+          "Name": "GetServiceView",
+          "Service": "resource-explorer-2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-explorer-2",
+          "Method": "get_service_view",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetView",
+      "AuthorizedActions": [
+        {
+          "Name": "GetView",
+          "Service": "resource-explorer-2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-explorer-2",
+          "Method": "get_view",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListIndexes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListIndexes",
+          "Service": "resource-explorer-2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-explorer-2",
+          "Method": "list_indexes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListIndexesForMembers",
+      "AuthorizedActions": [
+        {
+          "Name": "ListIndexesForMembers",
+          "Service": "resource-explorer-2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-explorer-2",
+          "Method": "list_indexes_for_members",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListManagedViews",
+      "AuthorizedActions": [
+        {
+          "Name": "ListManagedViews",
+          "Service": "resource-explorer-2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-explorer-2",
+          "Method": "list_managed_views",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListResources",
+      "AuthorizedActions": [
+        {
+          "Name": "Search",
+          "Service": "resource-explorer-2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-explorer-2",
+          "Method": "list_resources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListServiceIndexes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListServiceIndexes",
+          "Service": "resource-explorer-2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-explorer-2",
+          "Method": "list_service_indexes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListServiceViews",
+      "AuthorizedActions": [
+        {
+          "Name": "ListServiceViews",
+          "Service": "resource-explorer-2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-explorer-2",
+          "Method": "list_service_views",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListStreamingAccessForServices",
+      "AuthorizedActions": [
+        {
+          "Name": "ListStreamingAccessForServices",
+          "Service": "resource-explorer-2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-explorer-2",
+          "Method": "list_streaming_access_for_services",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSupportedResourceTypes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSupportedResourceTypes",
+          "Service": "resource-explorer-2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-explorer-2",
+          "Method": "list_supported_resource_types",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "resource-explorer-2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-explorer-2",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListViews",
+      "AuthorizedActions": [
+        {
+          "Name": "ListViews",
+          "Service": "resource-explorer-2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-explorer-2",
+          "Method": "list_views",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "Search",
+      "AuthorizedActions": [
+        {
+          "Name": "Search",
+          "Service": "resource-explorer-2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-explorer-2",
+          "Method": "search",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "resource-explorer-2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-explorer-2",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "resource-explorer-2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-explorer-2",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateIndexType",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateIndexType",
+          "Service": "resource-explorer-2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-explorer-2",
+          "Method": "update_index_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateView",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateView",
+          "Service": "resource-explorer-2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-explorer-2",
+          "Method": "update_view",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "index",
+      "ARNFormats": [
+        "arn:${Partition}:resource-explorer-2:${Region}:${Account}:index/${IndexUuid}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "managed-view",
+      "ARNFormats": [
+        "arn:${Partition}:resource-explorer-2:${Region}:${Account}:managed-view/${ManagedViewName}/${ManagedViewUuid}"
+      ]
+    },
+    {
+      "Name": "view",
+      "ARNFormats": [
+        "arn:${Partition}:resource-explorer-2:${Region}:${Account}:view/${ViewName}/${ViewUuid}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

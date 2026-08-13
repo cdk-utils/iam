@@ -1,0 +1,846 @@
+{
+  "Name": "pcs",
+  "Actions": [
+    {
+      "Name": "AllowVendedLogDeliveryForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateCluster",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateComputeNodeGroup",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateQueue",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteCluster",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteComputeNodeGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        },
+        {
+          "Name": "computenodegroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteQueue",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        },
+        {
+          "Name": "queue"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCluster",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetComputeNodeGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        },
+        {
+          "Name": "computenodegroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetQueue",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        },
+        {
+          "Name": "queue"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListClusters",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListComputeNodeGroups",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListQueues",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RegisterComputeNodeGroupInstance",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "computenodegroup",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "queue",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "computenodegroup",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "queue",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateCluster",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateComputeNodeGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        },
+        {
+          "Name": "computenodegroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateQueue",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        },
+        {
+          "Name": "queue"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCluster",
+          "Service": "pcs"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "pcs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pcs",
+          "Method": "create_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateComputeNodeGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateComputeNodeGroup",
+          "Service": "pcs"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "ec2.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "pcs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pcs",
+          "Method": "create_compute_node_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateQueue",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateQueue",
+          "Service": "pcs"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "pcs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pcs",
+          "Method": "create_queue",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCluster",
+          "Service": "pcs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pcs",
+          "Method": "delete_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteComputeNodeGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteComputeNodeGroup",
+          "Service": "pcs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pcs",
+          "Method": "delete_compute_node_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteQueue",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteQueue",
+          "Service": "pcs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pcs",
+          "Method": "delete_queue",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCluster",
+          "Service": "pcs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pcs",
+          "Method": "get_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetComputeNodeGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "GetComputeNodeGroup",
+          "Service": "pcs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pcs",
+          "Method": "get_compute_node_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetQueue",
+      "AuthorizedActions": [
+        {
+          "Name": "GetQueue",
+          "Service": "pcs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pcs",
+          "Method": "get_queue",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListClusters",
+      "AuthorizedActions": [
+        {
+          "Name": "ListClusters",
+          "Service": "pcs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pcs",
+          "Method": "list_clusters",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListComputeNodeGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "ListComputeNodeGroups",
+          "Service": "pcs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pcs",
+          "Method": "list_compute_node_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListQueues",
+      "AuthorizedActions": [
+        {
+          "Name": "ListQueues",
+          "Service": "pcs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pcs",
+          "Method": "list_queues",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "pcs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pcs",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RegisterComputeNodeGroupInstance",
+      "AuthorizedActions": [
+        {
+          "Name": "RegisterComputeNodeGroupInstance",
+          "Service": "pcs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pcs",
+          "Method": "register_compute_node_group_instance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "pcs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pcs",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "pcs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pcs",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCluster",
+          "Service": "pcs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pcs",
+          "Method": "update_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateComputeNodeGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "ec2.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateComputeNodeGroup",
+          "Service": "pcs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pcs",
+          "Method": "update_compute_node_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateQueue",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateQueue",
+          "Service": "pcs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pcs",
+          "Method": "update_queue",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "cluster",
+      "ARNFormats": [
+        "arn:${Partition}:pcs:${Region}:${Account}:cluster/${ClusterIdentifier}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "computenodegroup",
+      "ARNFormats": [
+        "arn:${Partition}:pcs:${Region}:${Account}:cluster/${ClusterIdentifier}/computenodegroup/${ComputeNodeGroupIdentifier}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "queue",
+      "ARNFormats": [
+        "arn:${Partition}:pcs:${Region}:${Account}:cluster/${ClusterIdentifier}/queue/${QueueIdentifier}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

@@ -1,0 +1,1533 @@
+{
+  "Name": "entityresolution",
+  "Actions": [
+    {
+      "Name": "AddPolicyStatement",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchDeleteUniqueId",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "MatchingWorkflow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateIdMappingWorkflow",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateIdNamespace",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateMatchingWorkflow",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateSchemaMapping",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteIdMappingWorkflow",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "IdMappingWorkflow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteIdNamespace",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "IdNamespace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteMatchingWorkflow",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "MatchingWorkflow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeletePolicyStatement",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteSchemaMapping",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SchemaMapping"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GenerateMatchId",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "MatchingWorkflow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetIdMappingJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "IdMappingWorkflow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetIdMappingWorkflow",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "IdMappingWorkflow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetIdNamespace",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "IdNamespace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetMatchId",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "MatchingWorkflow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetMatchingJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "MatchingWorkflow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetMatchingWorkflow",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "MatchingWorkflow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetProviderService",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProviderService"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSchemaMapping",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SchemaMapping"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListIdMappingJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "IdMappingWorkflow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListIdMappingWorkflows",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListIdNamespaces",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListMatchingJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "MatchingWorkflow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListMatchingWorkflows",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListProviderServices",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListSchemaMappings",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartIdMappingJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "IdMappingWorkflow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartMatchingJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "MatchingWorkflow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "IdMappingWorkflow"
+        },
+        {
+          "Name": "IdNamespace"
+        },
+        {
+          "Name": "MatchingWorkflow"
+        },
+        {
+          "Name": "ProviderService"
+        },
+        {
+          "Name": "SchemaMapping"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "IdMappingWorkflow"
+        },
+        {
+          "Name": "IdNamespace"
+        },
+        {
+          "Name": "MatchingWorkflow"
+        },
+        {
+          "Name": "ProviderService"
+        },
+        {
+          "Name": "SchemaMapping"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateIdMappingWorkflow",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "IdMappingWorkflow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateIdNamespace",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "IdNamespace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateMatchingWorkflow",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "MatchingWorkflow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateSchemaMapping",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SchemaMapping"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UseIdNamespace",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UseWorkflow",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AddPolicyStatement",
+      "AuthorizedActions": [
+        {
+          "Name": "AddPolicyStatement",
+          "Service": "entityresolution"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "entityresolution",
+          "Method": "add_policy_statement",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchDeleteUniqueId",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchDeleteUniqueId",
+          "Service": "entityresolution"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "entityresolution",
+          "Method": "batch_delete_unique_id",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateIdMappingWorkflow",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateIdMappingWorkflow",
+          "Service": "entityresolution"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "entityresolution.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "entityresolution"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "entityresolution",
+          "Method": "create_id_mapping_workflow",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateIdNamespace",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateIdNamespace",
+          "Service": "entityresolution"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "entityresolution.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "entityresolution"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "entityresolution",
+          "Method": "create_id_namespace",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateMatchingWorkflow",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateMatchingWorkflow",
+          "Service": "entityresolution"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "entityresolution.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "entityresolution"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "entityresolution",
+          "Method": "create_matching_workflow",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSchemaMapping",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSchemaMapping",
+          "Service": "entityresolution"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "entityresolution"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "entityresolution",
+          "Method": "create_schema_mapping",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteIdMappingWorkflow",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteIdMappingWorkflow",
+          "Service": "entityresolution"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "entityresolution",
+          "Method": "delete_id_mapping_workflow",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteIdNamespace",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteIdNamespace",
+          "Service": "entityresolution"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "entityresolution",
+          "Method": "delete_id_namespace",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteMatchingWorkflow",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteMatchingWorkflow",
+          "Service": "entityresolution"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "entityresolution",
+          "Method": "delete_matching_workflow",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePolicyStatement",
+      "AuthorizedActions": [
+        {
+          "Name": "DeletePolicyStatement",
+          "Service": "entityresolution"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "entityresolution",
+          "Method": "delete_policy_statement",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSchemaMapping",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSchemaMapping",
+          "Service": "entityresolution"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "entityresolution",
+          "Method": "delete_schema_mapping",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GenerateMatchId",
+      "AuthorizedActions": [
+        {
+          "Name": "GenerateMatchId",
+          "Service": "entityresolution"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "entityresolution",
+          "Method": "generate_match_id",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetIdMappingJob",
+      "AuthorizedActions": [
+        {
+          "Name": "GetIdMappingJob",
+          "Service": "entityresolution"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "entityresolution",
+          "Method": "get_id_mapping_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetIdMappingWorkflow",
+      "AuthorizedActions": [
+        {
+          "Name": "GetIdMappingWorkflow",
+          "Service": "entityresolution"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "entityresolution",
+          "Method": "get_id_mapping_workflow",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetIdNamespace",
+      "AuthorizedActions": [
+        {
+          "Name": "GetIdNamespace",
+          "Service": "entityresolution"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "entityresolution",
+          "Method": "get_id_namespace",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMatchId",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMatchId",
+          "Service": "entityresolution"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "entityresolution",
+          "Method": "get_match_id",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMatchingJob",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMatchingJob",
+          "Service": "entityresolution"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "entityresolution",
+          "Method": "get_matching_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMatchingWorkflow",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMatchingWorkflow",
+          "Service": "entityresolution"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "entityresolution",
+          "Method": "get_matching_workflow",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPolicy",
+          "Service": "entityresolution"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "entityresolution",
+          "Method": "get_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetProviderService",
+      "AuthorizedActions": [
+        {
+          "Name": "GetProviderService",
+          "Service": "entityresolution"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "entityresolution",
+          "Method": "get_provider_service",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSchemaMapping",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSchemaMapping",
+          "Service": "entityresolution"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "entityresolution",
+          "Method": "get_schema_mapping",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListIdMappingJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListIdMappingJobs",
+          "Service": "entityresolution"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "entityresolution",
+          "Method": "list_id_mapping_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListIdMappingWorkflows",
+      "AuthorizedActions": [
+        {
+          "Name": "ListIdMappingWorkflows",
+          "Service": "entityresolution"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "entityresolution",
+          "Method": "list_id_mapping_workflows",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListIdNamespaces",
+      "AuthorizedActions": [
+        {
+          "Name": "ListIdNamespaces",
+          "Service": "entityresolution"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "entityresolution",
+          "Method": "list_id_namespaces",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMatchingJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListMatchingJobs",
+          "Service": "entityresolution"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "entityresolution",
+          "Method": "list_matching_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMatchingWorkflows",
+      "AuthorizedActions": [
+        {
+          "Name": "ListMatchingWorkflows",
+          "Service": "entityresolution"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "entityresolution",
+          "Method": "list_matching_workflows",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProviderServices",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProviderServices",
+          "Service": "entityresolution"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "entityresolution",
+          "Method": "list_provider_services",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSchemaMappings",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSchemaMappings",
+          "Service": "entityresolution"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "entityresolution",
+          "Method": "list_schema_mappings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "entityresolution"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "entityresolution",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PutPolicy",
+          "Service": "entityresolution"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "entityresolution",
+          "Method": "put_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartIdMappingJob",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "entityresolution.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartIdMappingJob",
+          "Service": "entityresolution"
+        },
+        {
+          "Name": "UseIdNamespace",
+          "Service": "entityresolution"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "entityresolution",
+          "Method": "start_id_mapping_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartMatchingJob",
+      "AuthorizedActions": [
+        {
+          "Name": "StartMatchingJob",
+          "Service": "entityresolution"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "entityresolution",
+          "Method": "start_matching_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "entityresolution"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "entityresolution",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "entityresolution"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "entityresolution",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateIdMappingWorkflow",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "entityresolution.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateIdMappingWorkflow",
+          "Service": "entityresolution"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "entityresolution",
+          "Method": "update_id_mapping_workflow",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateIdNamespace",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "entityresolution.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateIdNamespace",
+          "Service": "entityresolution"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "entityresolution",
+          "Method": "update_id_namespace",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateMatchingWorkflow",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "entityresolution.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateMatchingWorkflow",
+          "Service": "entityresolution"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "entityresolution",
+          "Method": "update_matching_workflow",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSchemaMapping",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSchemaMapping",
+          "Service": "entityresolution"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "entityresolution",
+          "Method": "update_schema_mapping",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "IdMappingWorkflow",
+      "ARNFormats": [
+        "arn:${Partition}:entityresolution:${Region}:${Account}:idmappingworkflow/${WorkflowName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "IdNamespace",
+      "ARNFormats": [
+        "arn:${Partition}:entityresolution:${Region}:${Account}:idnamespace/${IdNamespaceName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "MatchingWorkflow",
+      "ARNFormats": [
+        "arn:${Partition}:entityresolution:${Region}:${Account}:matchingworkflow/${WorkflowName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "ProviderService",
+      "ARNFormats": [
+        "arn:${Partition}:entityresolution:${Region}:${Account}:providerservice/${ProviderName}/${ProviderServiceName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "SchemaMapping",
+      "ARNFormats": [
+        "arn:${Partition}:entityresolution:${Region}:${Account}:schemamapping/${SchemaName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

@@ -1,0 +1,2239 @@
+{
+  "Name": "fsx",
+  "Actions": [
+    {
+      "Name": "AssociateFileGateway",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "file-system"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AssociateFileSystemAliases",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "file-system"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BypassSnaplockEnterpriseRetention",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "volume"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CancelDataRepositoryTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "task"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CopyBackup",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "backup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CopySnapshotAndUpdateVolume",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "snapshot"
+        },
+        {
+          "Name": "volume"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateAndAttachS3AccessPoint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "volume"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateBackup",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "backup"
+        },
+        {
+          "Name": "file-system"
+        },
+        {
+          "Name": "volume"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateDataRepositoryAssociation",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "association",
+          "ConditionKeys": [
+            "fsx:NfsDataRepositoryAuthenticationEnabled",
+            "fsx:NfsDataRepositoryEncryptionInTransitEnabled"
+          ]
+        },
+        {
+          "Name": "file-system"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateDataRepositoryTask",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "file-system"
+        },
+        {
+          "Name": "task"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateFileCache",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "association",
+          "ConditionKeys": [
+            "fsx:NfsDataRepositoryAuthenticationEnabled",
+            "fsx:NfsDataRepositoryEncryptionInTransitEnabled"
+          ]
+        },
+        {
+          "Name": "file-cache"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateFileSystem",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "file-system"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateFileSystemFromBackup",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "backup"
+        },
+        {
+          "Name": "file-system"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateSnapshot",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "snapshot"
+        },
+        {
+          "Name": "volume"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateStorageVirtualMachine",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "file-system"
+        },
+        {
+          "Name": "storage-virtual-machine"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateVolume",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "snapshot"
+        },
+        {
+          "Name": "storage-virtual-machine"
+        },
+        {
+          "Name": "volume",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:TagKeys",
+            "fsx:ParentVolumeId",
+            "fsx:StorageVirtualMachineId"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateVolumeFromBackup",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "fsx:StorageVirtualMachineId"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "backup"
+        },
+        {
+          "Name": "storage-virtual-machine"
+        },
+        {
+          "Name": "volume"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteBackup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "backup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteDataRepositoryAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "association"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteFileCache",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "association"
+        },
+        {
+          "Name": "file-cache"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteFileSystem",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "backup",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        },
+        {
+          "Name": "file-system"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "volume"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteSnapshot",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "snapshot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteStorageVirtualMachine",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "storage-virtual-machine"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteVolume",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "backup",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        },
+        {
+          "Name": "volume",
+          "ConditionKeys": [
+            "fsx:ParentVolumeId",
+            "fsx:StorageVirtualMachineId"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeAssociatedFileGateways",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "file-system"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeBackups",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeDataRepositoryAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeDataRepositoryTasks",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeFileCaches",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeFileSystemAliases",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "file-system"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeFileSystems",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeS3AccessPointAttachments",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeSharedVpcConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeSnapshots",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeStorageVirtualMachines",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeVolumes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DetachAndDeleteS3AccessPoint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "volume"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateFileGateway",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "file-system"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateFileSystemAliases",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "file-system"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "volume"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "association"
+        },
+        {
+          "Name": "backup"
+        },
+        {
+          "Name": "file-cache"
+        },
+        {
+          "Name": "file-system"
+        },
+        {
+          "Name": "snapshot"
+        },
+        {
+          "Name": "storage-virtual-machine"
+        },
+        {
+          "Name": "task"
+        },
+        {
+          "Name": "volume"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ManageBackupPrincipalAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "backup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "volume"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ReleaseFileSystemNfsV3Locks",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "file-system"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RestoreVolumeFromSnapshot",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "snapshot"
+        },
+        {
+          "Name": "volume"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartMisconfiguredStateRecovery",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "file-system"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "association",
+          "ConditionKeys": [
+            "fsx:NfsDataRepositoryAuthenticationEnabled",
+            "fsx:NfsDataRepositoryEncryptionInTransitEnabled"
+          ]
+        },
+        {
+          "Name": "backup"
+        },
+        {
+          "Name": "file-cache"
+        },
+        {
+          "Name": "file-system"
+        },
+        {
+          "Name": "snapshot"
+        },
+        {
+          "Name": "storage-virtual-machine"
+        },
+        {
+          "Name": "task"
+        },
+        {
+          "Name": "volume",
+          "ConditionKeys": [
+            "fsx:ParentVolumeId",
+            "fsx:StorageVirtualMachineId"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "association"
+        },
+        {
+          "Name": "backup"
+        },
+        {
+          "Name": "file-cache"
+        },
+        {
+          "Name": "file-system"
+        },
+        {
+          "Name": "snapshot"
+        },
+        {
+          "Name": "storage-virtual-machine"
+        },
+        {
+          "Name": "task"
+        },
+        {
+          "Name": "volume"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateDataRepositoryAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "association"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateFileCache",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "file-cache"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateFileSystem",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "file-system"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateSharedVpcConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateSnapshot",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "snapshot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateStorageVirtualMachine",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "storage-virtual-machine"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateVolume",
+      "ActionConditionKeys": [
+        "fsx:ParentVolumeId",
+        "fsx:StorageVirtualMachineId"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "volume"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "fsx:IsBackupCopyDestination",
+      "Types": [
+        "Bool"
+      ]
+    },
+    {
+      "Name": "fsx:IsBackupCopySource",
+      "Types": [
+        "Bool"
+      ]
+    },
+    {
+      "Name": "fsx:NfsDataRepositoryAuthenticationEnabled",
+      "Types": [
+        "Bool"
+      ]
+    },
+    {
+      "Name": "fsx:NfsDataRepositoryEncryptionInTransitEnabled",
+      "Types": [
+        "Bool"
+      ]
+    },
+    {
+      "Name": "fsx:ParentVolumeId",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "fsx:StorageVirtualMachineId",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AssociateFileSystemAliases",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateFileSystemAliases",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "associate_file_system_aliases",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelDataRepositoryTask",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelDataRepositoryTask",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "cancel_data_repository_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CopyBackup",
+      "AuthorizedActions": [
+        {
+          "Name": "CopyBackup",
+          "Service": "fsx"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "copy_backup",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CopySnapshotAndUpdateVolume",
+      "AuthorizedActions": [
+        {
+          "Name": "CopySnapshotAndUpdateVolume",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "copy_snapshot_and_update_volume",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAndAttachS3AccessPoint",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAndAttachS3AccessPoint",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "create_and_attach_s3_access_point",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateBackup",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateBackup",
+          "Service": "fsx"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "create_backup",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDataRepositoryAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDataRepositoryAssociation",
+          "Service": "fsx"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "create_data_repository_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDataRepositoryTask",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDataRepositoryTask",
+          "Service": "fsx"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "create_data_repository_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateFileCache",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDataRepositoryAssociation",
+          "Service": "fsx"
+        },
+        {
+          "Name": "CreateFileCache",
+          "Service": "fsx"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "create_file_cache",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateFileSystem",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateFileSystem",
+          "Service": "fsx"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "create_file_system",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateFileSystemFromBackup",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateFileSystemFromBackup",
+          "Service": "fsx"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "create_file_system_from_backup",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSnapshot",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSnapshot",
+          "Service": "fsx"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "create_snapshot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateStorageVirtualMachine",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateStorageVirtualMachine",
+          "Service": "fsx"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "create_storage_virtual_machine",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateVolume",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateVolume",
+          "Service": "fsx"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "create_volume",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateVolumeFromBackup",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateVolumeFromBackup",
+          "Service": "fsx"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "create_volume_from_backup",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteBackup",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteBackup",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "delete_backup",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDataRepositoryAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDataRepositoryAssociation",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "delete_data_repository_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteFileCache",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDataRepositoryAssociation",
+          "Service": "fsx"
+        },
+        {
+          "Name": "DeleteFileCache",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "delete_file_cache",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteFileSystem",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateBackup",
+          "Service": "fsx"
+        },
+        {
+          "Name": "DeleteFileSystem",
+          "Service": "fsx"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "delete_file_system",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSnapshot",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSnapshot",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "delete_snapshot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteStorageVirtualMachine",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteStorageVirtualMachine",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "delete_storage_virtual_machine",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteVolume",
+      "AuthorizedActions": [
+        {
+          "Name": "BypassSnaplockEnterpriseRetention",
+          "Service": "fsx"
+        },
+        {
+          "Name": "DeleteVolume",
+          "Service": "fsx"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "delete_volume",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeBackups",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeBackups",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "describe_backups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDataRepositoryAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDataRepositoryAssociations",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "describe_data_repository_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDataRepositoryTasks",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDataRepositoryTasks",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "describe_data_repository_tasks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeFileCaches",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeFileCaches",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "describe_file_caches",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeFileSystemAliases",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeFileSystemAliases",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "describe_file_system_aliases",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeFileSystems",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeFileSystems",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "describe_file_systems",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeS3AccessPointAttachments",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeS3AccessPointAttachments",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "describe_s3_access_point_attachments",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSharedVpcConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSharedVpcConfiguration",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "describe_shared_vpc_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSnapshots",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSnapshots",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "describe_snapshots",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeStorageVirtualMachines",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeStorageVirtualMachines",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "describe_storage_virtual_machines",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeVolumes",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeVolumes",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "describe_volumes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DetachAndDeleteS3AccessPoint",
+      "AuthorizedActions": [
+        {
+          "Name": "DetachAndDeleteS3AccessPoint",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "detach_and_delete_s3_access_point",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateFileSystemAliases",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateFileSystemAliases",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "disassociate_file_system_aliases",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ReleaseFileSystemNfsV3Locks",
+      "AuthorizedActions": [
+        {
+          "Name": "ReleaseFileSystemNfsV3Locks",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "release_file_system_nfs_v3_locks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RestoreVolumeFromSnapshot",
+      "AuthorizedActions": [
+        {
+          "Name": "RestoreVolumeFromSnapshot",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "restore_volume_from_snapshot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartMisconfiguredStateRecovery",
+      "AuthorizedActions": [
+        {
+          "Name": "StartMisconfiguredStateRecovery",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "start_misconfigured_state_recovery",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDataRepositoryAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDataRepositoryAssociation",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "update_data_repository_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateFileCache",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateFileCache",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "update_file_cache",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateFileSystem",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateFileSystem",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "update_file_system",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSharedVpcConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSharedVpcConfiguration",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "update_shared_vpc_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSnapshot",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSnapshot",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "update_snapshot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateStorageVirtualMachine",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateStorageVirtualMachine",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "update_storage_virtual_machine",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateVolume",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateVolume",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "update_volume",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "association",
+      "ARNFormats": [
+        "arn:${Partition}:fsx:${Region}:${Account}:association/${FileSystemIdOrFileCacheId}/${DataRepositoryAssociationId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "backup",
+      "ARNFormats": [
+        "arn:${Partition}:fsx:${Region}:${Account}:backup/${BackupId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "file-cache",
+      "ARNFormats": [
+        "arn:${Partition}:fsx:${Region}:${Account}:file-cache/${FileCacheId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "file-system",
+      "ARNFormats": [
+        "arn:${Partition}:fsx:${Region}:${Account}:file-system/${FileSystemId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "snapshot",
+      "ARNFormats": [
+        "arn:${Partition}:fsx:${Region}:${Account}:snapshot/${VolumeId}/${SnapshotId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "storage-virtual-machine",
+      "ARNFormats": [
+        "arn:${Partition}:fsx:${Region}:${Account}:storage-virtual-machine/${FileSystemId}/${StorageVirtualMachineId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "task",
+      "ARNFormats": [
+        "arn:${Partition}:fsx:${Region}:${Account}:task/${TaskId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "volume",
+      "ARNFormats": [
+        "arn:${Partition}:fsx:${Region}:${Account}:volume/${FileSystemId}/${VolumeId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

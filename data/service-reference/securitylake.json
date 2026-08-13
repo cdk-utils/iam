@@ -1,0 +1,1191 @@
+{
+  "Name": "securitylake",
+  "Actions": [
+    {
+      "Name": "CreateAwsLogSource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-lake"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateCustomLogSource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-lake"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateDataLake",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-lake"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateDataLakeExceptionSubscription",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateDataLakeOrganizationConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-lake"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateSubscriber",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateSubscriberNotification",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "subscriber"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteAwsLogSource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-lake"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteCustomLogSource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-lake"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteDataLake",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-lake"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteDataLakeExceptionSubscription",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteDataLakeOrganizationConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-lake"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteSubscriber",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "subscriber"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteSubscriberNotification",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "subscriber"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeregisterDataLakeDelegatedAdministrator",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDataLakeExceptionSubscription",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDataLakeOrganizationConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-lake"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDataLakeSources",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-lake"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSubscriber",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "subscriber"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDataLakeExceptions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDataLakes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListLogSources",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListSubscribers",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-lake"
+        },
+        {
+          "Name": "subscriber"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RegisterDataLakeDelegatedAdministrator",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-lake"
+        },
+        {
+          "Name": "subscriber"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-lake"
+        },
+        {
+          "Name": "subscriber"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateDataLake",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-lake"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateDataLakeExceptionSubscription",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateSubscriber",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "subscriber"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateSubscriberNotification",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "subscriber"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateAwsLogSource",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAwsLogSource",
+          "Service": "securitylake"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securitylake",
+          "Method": "create_aws_log_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateCustomLogSource",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCustomLogSource",
+          "Service": "securitylake"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "glue.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securitylake",
+          "Method": "create_custom_log_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDataLake",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDataLake",
+          "Service": "securitylake"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "lambda.amazonaws.com",
+              "s3.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "securitylake"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securitylake",
+          "Method": "create_data_lake",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDataLakeExceptionSubscription",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDataLakeExceptionSubscription",
+          "Service": "securitylake"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securitylake",
+          "Method": "create_data_lake_exception_subscription",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDataLakeOrganizationConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDataLakeOrganizationConfiguration",
+          "Service": "securitylake"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securitylake",
+          "Method": "create_data_lake_organization_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSubscriber",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSubscriber",
+          "Service": "securitylake"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "securitylake"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securitylake",
+          "Method": "create_subscriber",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSubscriberNotification",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSubscriberNotification",
+          "Service": "securitylake"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "events.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securitylake",
+          "Method": "create_subscriber_notification",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAwsLogSource",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAwsLogSource",
+          "Service": "securitylake"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securitylake",
+          "Method": "delete_aws_log_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCustomLogSource",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCustomLogSource",
+          "Service": "securitylake"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securitylake",
+          "Method": "delete_custom_log_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDataLake",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDataLake",
+          "Service": "securitylake"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securitylake",
+          "Method": "delete_data_lake",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDataLakeExceptionSubscription",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDataLakeExceptionSubscription",
+          "Service": "securitylake"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securitylake",
+          "Method": "delete_data_lake_exception_subscription",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDataLakeOrganizationConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDataLakeOrganizationConfiguration",
+          "Service": "securitylake"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securitylake",
+          "Method": "delete_data_lake_organization_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSubscriber",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSubscriber",
+          "Service": "securitylake"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securitylake",
+          "Method": "delete_subscriber",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSubscriberNotification",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSubscriberNotification",
+          "Service": "securitylake"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securitylake",
+          "Method": "delete_subscriber_notification",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeregisterDataLakeDelegatedAdministrator",
+      "AuthorizedActions": [
+        {
+          "Name": "DeregisterDataLakeDelegatedAdministrator",
+          "Service": "securitylake"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securitylake",
+          "Method": "deregister_data_lake_delegated_administrator",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDataLakeExceptionSubscription",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDataLakeExceptionSubscription",
+          "Service": "securitylake"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securitylake",
+          "Method": "get_data_lake_exception_subscription",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDataLakeOrganizationConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDataLakeOrganizationConfiguration",
+          "Service": "securitylake"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securitylake",
+          "Method": "get_data_lake_organization_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDataLakeSources",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDataLakeSources",
+          "Service": "securitylake"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securitylake",
+          "Method": "get_data_lake_sources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSubscriber",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSubscriber",
+          "Service": "securitylake"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securitylake",
+          "Method": "get_subscriber",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDataLakeExceptions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDataLakeExceptions",
+          "Service": "securitylake"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securitylake",
+          "Method": "list_data_lake_exceptions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDataLakes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDataLakes",
+          "Service": "securitylake"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securitylake",
+          "Method": "list_data_lakes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListLogSources",
+      "AuthorizedActions": [
+        {
+          "Name": "ListLogSources",
+          "Service": "securitylake"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securitylake",
+          "Method": "list_log_sources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSubscribers",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSubscribers",
+          "Service": "securitylake"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securitylake",
+          "Method": "list_subscribers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "securitylake"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securitylake",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RegisterDataLakeDelegatedAdministrator",
+      "AuthorizedActions": [
+        {
+          "Name": "RegisterDataLakeDelegatedAdministrator",
+          "Service": "securitylake"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securitylake",
+          "Method": "register_data_lake_delegated_administrator",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "securitylake"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securitylake",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "securitylake"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securitylake",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDataLake",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "s3.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateDataLake",
+          "Service": "securitylake"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securitylake",
+          "Method": "update_data_lake",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDataLakeExceptionSubscription",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDataLakeExceptionSubscription",
+          "Service": "securitylake"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securitylake",
+          "Method": "update_data_lake_exception_subscription",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSubscriber",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSubscriber",
+          "Service": "securitylake"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securitylake",
+          "Method": "update_subscriber",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSubscriberNotification",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "events.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateSubscriberNotification",
+          "Service": "securitylake"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securitylake",
+          "Method": "update_subscriber_notification",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "data-lake",
+      "ARNFormats": [
+        "arn:${Partition}:securitylake:${Region}:${Account}:data-lake/default"
+      ],
+      "ConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "subscriber",
+      "ARNFormats": [
+        "arn:${Partition}:securitylake:${Region}:${Account}:subscriber/${SubscriberId}"
+      ],
+      "ConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

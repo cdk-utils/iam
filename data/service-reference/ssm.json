@@ -1,0 +1,6413 @@
+{
+  "Name": "ssm",
+  "Actions": [
+    {
+      "Name": "AddTagsToResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "association"
+        },
+        {
+          "Name": "automation-execution"
+        },
+        {
+          "Name": "cloud-connector"
+        },
+        {
+          "Name": "document"
+        },
+        {
+          "Name": "instance"
+        },
+        {
+          "Name": "maintenancewindow"
+        },
+        {
+          "Name": "managed-instance"
+        },
+        {
+          "Name": "opsitem"
+        },
+        {
+          "Name": "opsmetadata"
+        },
+        {
+          "Name": "parameter"
+        },
+        {
+          "Name": "patchbaseline"
+        },
+        {
+          "Name": "task"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AssociateOpsItemRelatedItem",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "opsitem"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CancelCommand",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CancelMaintenanceWindowExecution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "maintenancewindow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateActivation",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateAssociation",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "association"
+        },
+        {
+          "Name": "document"
+        },
+        {
+          "Name": "instance"
+        },
+        {
+          "Name": "managed-instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateAssociationBatch",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "document"
+        },
+        {
+          "Name": "instance"
+        },
+        {
+          "Name": "managed-instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateCloudConnector",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cloud-connector"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateDocument",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "ssm:DocumentType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "document"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateMaintenanceWindow",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateOpsItem",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateOpsMetadata",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreatePatchBaseline",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateResourceDataSync",
+      "ActionConditionKeys": [
+        "ssm:SyncType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resourcedatasync"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteActivation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteAssociation",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "association"
+        },
+        {
+          "Name": "document"
+        },
+        {
+          "Name": "instance"
+        },
+        {
+          "Name": "managed-instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteCloudConnector",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cloud-connector"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteDocument",
+      "ActionConditionKeys": [
+        "ssm:DocumentType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "document"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteInventory",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteMaintenanceWindow",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "maintenancewindow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteOpsItem",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "opsitem"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteOpsMetadata",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "opsmetadata"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteParameter",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "parameter"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteParameters",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "parameter"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeletePatchBaseline",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "patchbaseline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteResourceDataSync",
+      "ActionConditionKeys": [
+        "ssm:SyncType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resourcedatasync"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "document"
+        },
+        {
+          "Name": "opsitemgroup"
+        },
+        {
+          "Name": "parameter"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeregisterManagedInstance",
+      "ActionConditionKeys": [
+        "ssm:resourceTag/tag-key"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "managed-instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeregisterPatchBaselineForPatchGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "patchbaseline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeregisterTargetFromMaintenanceWindow",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "maintenancewindow"
+        },
+        {
+          "Name": "windowtarget"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeregisterTaskFromMaintenanceWindow",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "maintenancewindow"
+        },
+        {
+          "Name": "windowtask"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeActivations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeAssociation",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "association"
+        },
+        {
+          "Name": "document"
+        },
+        {
+          "Name": "instance"
+        },
+        {
+          "Name": "managed-instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeAssociationExecutionTargets",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "association"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeAssociationExecutions",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "association"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeAutomationExecutions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeAutomationStepExecutions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "automation-execution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeAvailablePatches",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeDocument",
+      "ActionConditionKeys": [
+        "ssm:DocumentType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "document"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeDocumentParameters",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "document"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeDocumentPermission",
+      "ActionConditionKeys": [
+        "ssm:DocumentType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "document"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeEffectiveInstanceAssociations",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance"
+        },
+        {
+          "Name": "managed-instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeEffectivePatchesForPatchBaseline",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "patchbaseline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeInstanceAssociationsStatus",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance"
+        },
+        {
+          "Name": "managed-instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeInstanceInformation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeInstancePatchStates",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "ssm:resourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance"
+        },
+        {
+          "Name": "managed-instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeInstancePatchStatesForPatchGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeInstancePatches",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "ssm:resourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance"
+        },
+        {
+          "Name": "managed-instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeInstanceProperties",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeInventoryDeletions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeMaintenanceWindowExecutionTaskInvocations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeMaintenanceWindowExecutionTasks",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeMaintenanceWindowExecutions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "maintenancewindow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeMaintenanceWindowSchedule",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeMaintenanceWindowTargets",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "maintenancewindow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeMaintenanceWindowTasks",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "maintenancewindow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeMaintenanceWindows",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeMaintenanceWindowsForTarget",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeOpsItems",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeParameters",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribePatchBaselines",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribePatchGroupState",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribePatchGroups",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribePatchProperties",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeSessions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateOpsItemRelatedItem",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "opsitem"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ExecuteAPI",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAccessToken",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "opsitem"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetAutomationExecution",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "automation-execution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCalendar",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "document"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCalendarState",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "document"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCloudConnector",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cloud-connector"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCommandInvocation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetConnectionStatus",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "ssm:resourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance"
+        },
+        {
+          "Name": "managed-instance"
+        },
+        {
+          "Name": "task"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDefaultPatchBaseline",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "patchbaseline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDeployablePatchSnapshotForInstance",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDocument",
+      "ActionConditionKeys": [
+        "ssm:DocumentCategories",
+        "ssm:DocumentType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "document"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetExecutionPreview",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetInventory",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetInventorySchema",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetMaintenanceWindow",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "maintenancewindow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetMaintenanceWindowExecution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetMaintenanceWindowExecutionTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetMaintenanceWindowExecutionTaskInvocation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetMaintenanceWindowTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "maintenancewindow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetManifest",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetOpsItem",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "opsitem"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetOpsMetadata",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "opsmetadata"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetOpsSummary",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resourcedatasync"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetParameter",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "parameter"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetParameterHistory",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "parameter"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetParameters",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "parameter"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetParametersByPath",
+      "ActionConditionKeys": [
+        "ssm:Recursive"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "parameter"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetPatchBaseline",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "patchbaseline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetPatchBaselineForPatchGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResourcePolicies",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "document"
+        },
+        {
+          "Name": "opsitemgroup"
+        },
+        {
+          "Name": "parameter"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetServiceSetting",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "servicesetting"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "LabelParameterVersion",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "parameter"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAssociationVersions",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "association"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListCloudConnectors",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListCommandInvocations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListCommands",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListComplianceItems",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListComplianceSummaries",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDocumentMetadataHistory",
+      "ActionConditionKeys": [
+        "ssm:DocumentType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "document"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDocumentVersions",
+      "ActionConditionKeys": [
+        "ssm:DocumentType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "document"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDocuments",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListInstanceAssociations",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance"
+        },
+        {
+          "Name": "managed-instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListInventoryEntries",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListNodes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resourcedatasync"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListNodesSummary",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resourcedatasync"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListOpsItemEvents",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListOpsItemRelatedItems",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListOpsMetadata",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListResourceComplianceSummaries",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListResourceDataSync",
+      "ActionConditionKeys": [
+        "ssm:SyncType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "association"
+        },
+        {
+          "Name": "automation-execution"
+        },
+        {
+          "Name": "cloud-connector"
+        },
+        {
+          "Name": "document"
+        },
+        {
+          "Name": "maintenancewindow"
+        },
+        {
+          "Name": "managed-instance"
+        },
+        {
+          "Name": "opsitem"
+        },
+        {
+          "Name": "opsmetadata"
+        },
+        {
+          "Name": "parameter"
+        },
+        {
+          "Name": "patchbaseline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ModifyDocumentPermission",
+      "ActionConditionKeys": [
+        "ssm:DocumentType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "document"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutCalendar",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "document"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutComplianceItems",
+      "ActionConditionKeys": [
+        "ec2:SourceInstanceARN",
+        "ssm:SourceInstanceARN"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance"
+        },
+        {
+          "Name": "managed-instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutConfigurePackageResult",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutInventory",
+      "ActionConditionKeys": [
+        "ssm:InventoryTypeName"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutParameter",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "ssm:Overwrite",
+        "ssm:Policies"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "parameter"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "document"
+        },
+        {
+          "Name": "opsitemgroup"
+        },
+        {
+          "Name": "parameter"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RegisterDefaultPatchBaseline",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "patchbaseline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RegisterManagedInstance",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RegisterPatchBaselineForPatchGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "patchbaseline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RegisterTargetWithMaintenanceWindow",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "maintenancewindow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RegisterTaskWithMaintenanceWindow",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "maintenancewindow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RemoveTagsFromResource",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "association"
+        },
+        {
+          "Name": "automation-execution"
+        },
+        {
+          "Name": "cloud-connector"
+        },
+        {
+          "Name": "document"
+        },
+        {
+          "Name": "instance"
+        },
+        {
+          "Name": "maintenancewindow"
+        },
+        {
+          "Name": "managed-instance"
+        },
+        {
+          "Name": "opsitem"
+        },
+        {
+          "Name": "opsmetadata"
+        },
+        {
+          "Name": "parameter"
+        },
+        {
+          "Name": "patchbaseline"
+        },
+        {
+          "Name": "task"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ResetServiceSetting",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "servicesetting"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ResumeSession",
+      "ActionConditionKeys": [
+        "ssm:resourceTag/aws:ssmmessages:session-id",
+        "ssm:resourceTag/aws:ssmmessages:target-id"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "session"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SendAutomationSignal",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "automation-execution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SendCommand",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "ssm:resourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bucket"
+        },
+        {
+          "Name": "document"
+        },
+        {
+          "Name": "instance"
+        },
+        {
+          "Name": "managed-instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartAccessRequest",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance"
+        },
+        {
+          "Name": "managed-instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartAssociationsOnce",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "association"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartAutomationExecution",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "ssm:DocumentVersion"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "automation-definition"
+        },
+        {
+          "Name": "automation-execution"
+        },
+        {
+          "Name": "document"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartChangeRequestExecution",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "ssm:AutoApprove",
+        "ssm:DocumentVersion"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "automation-definition"
+        },
+        {
+          "Name": "automation-execution"
+        },
+        {
+          "Name": "document"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartExecutionPreview",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartSession",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "ssm:AccessRequestId",
+        "ssm:SessionDocumentAccessCheck",
+        "ssm:resourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "document"
+        },
+        {
+          "Name": "instance"
+        },
+        {
+          "Name": "managed-instance"
+        },
+        {
+          "Name": "task"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopAutomationExecution",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "automation-execution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TerminateSession",
+      "ActionConditionKeys": [
+        "ssm:resourceTag/aws:ssmmessages:session-id",
+        "ssm:resourceTag/aws:ssmmessages:target-id"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "session"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UnlabelParameterVersion",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "parameter"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateAssociation",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "association"
+        },
+        {
+          "Name": "document"
+        },
+        {
+          "Name": "instance"
+        },
+        {
+          "Name": "managed-instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateAssociationStatus",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "ec2:SourceInstanceARN",
+        "ssm:SourceInstanceARN"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "document"
+        },
+        {
+          "Name": "instance"
+        },
+        {
+          "Name": "managed-instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateCloudConnector",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cloud-connector"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateDocument",
+      "ActionConditionKeys": [
+        "ssm:DocumentType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "document"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateDocumentDefaultVersion",
+      "ActionConditionKeys": [
+        "ssm:DocumentType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "document"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateDocumentMetadata",
+      "ActionConditionKeys": [
+        "ssm:DocumentType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "document"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateInstanceAssociationStatus",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "ec2:SourceInstanceARN",
+        "ssm:SourceInstanceARN"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "association"
+        },
+        {
+          "Name": "instance"
+        },
+        {
+          "Name": "managed-instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateInstanceInformation",
+      "ActionConditionKeys": [
+        "ec2:SourceInstanceARN",
+        "ssm:SourceInstanceARN"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance"
+        },
+        {
+          "Name": "managed-instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateMaintenanceWindow",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "maintenancewindow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateMaintenanceWindowTarget",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "maintenancewindow"
+        },
+        {
+          "Name": "windowtarget"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateMaintenanceWindowTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "maintenancewindow"
+        },
+        {
+          "Name": "windowtask"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateManagedInstanceRole",
+      "ActionConditionKeys": [
+        "ssm:resourceTag/tag-key"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "iam-role"
+        },
+        {
+          "Name": "managed-instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateOpsItem",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "opsitem"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateOpsMetadata",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "opsmetadata"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdatePatchBaseline",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "patchbaseline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateResourceDataSync",
+      "ActionConditionKeys": [
+        "ssm:SyncType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resourcedatasync"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateServiceSetting",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "servicesetting"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ValidateCloudConnector",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cloud-connector"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "ec2:SourceInstanceARN",
+      "Types": [
+        "ARN"
+      ]
+    },
+    {
+      "Name": "ssm:AccessRequestId",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "ssm:AutoApprove",
+      "Types": [
+        "Bool"
+      ]
+    },
+    {
+      "Name": "ssm:DocumentCategories",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "ssm:DocumentType",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "ssm:DocumentVersion",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "ssm:InventoryTypeName",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "ssm:Overwrite",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "ssm:Policies",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "ssm:Recursive",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "ssm:SessionDocumentAccessCheck",
+      "Types": [
+        "Bool"
+      ]
+    },
+    {
+      "Name": "ssm:SourceInstanceARN",
+      "Types": [
+        "ARN"
+      ]
+    },
+    {
+      "Name": "ssm:SyncType",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "ssm:resourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "ssm:resourceTag/aws:ssmmessages:session-id",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "ssm:resourceTag/aws:ssmmessages:target-id",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "ssm:resourceTag/tag-key",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AddTagsToResource",
+      "AuthorizedActions": [
+        {
+          "Name": "AddTagsToResource",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "add_tags_to_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateOpsItemRelatedItem",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateOpsItemRelatedItem",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "associate_ops_item_related_item",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelCommand",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelCommand",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "cancel_command",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelMaintenanceWindowExecution",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelMaintenanceWindowExecution",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "cancel_maintenance_window_execution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateActivation",
+      "AuthorizedActions": [
+        {
+          "Name": "AddTagsToResource",
+          "Service": "ssm"
+        },
+        {
+          "Name": "CreateActivation",
+          "Service": "ssm"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "ssm.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "create_activation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "AddTagsToResource",
+          "Service": "ssm"
+        },
+        {
+          "Name": "CreateAssociation",
+          "Service": "ssm"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "ssm.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "create_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAssociationBatch",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAssociation",
+          "Service": "ssm"
+        },
+        {
+          "Name": "CreateAssociationBatch",
+          "Service": "ssm"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "ssm.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "create_association_batch",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateCloudConnector",
+      "AuthorizedActions": [
+        {
+          "Name": "AddTagsToResource",
+          "Service": "ssm"
+        },
+        {
+          "Name": "CreateCloudConnector",
+          "Service": "ssm"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "ssm.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "create_cloud_connector",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDocument",
+      "AuthorizedActions": [
+        {
+          "Name": "AddTagsToResource",
+          "Service": "ssm"
+        },
+        {
+          "Name": "CreateDocument",
+          "Service": "ssm"
+        },
+        {
+          "Name": "GetDocument",
+          "Service": "ssm"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "justintimeaccess.ssm.amazonaws.com",
+              "ssm.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "create_document",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateMaintenanceWindow",
+      "AuthorizedActions": [
+        {
+          "Name": "AddTagsToResource",
+          "Service": "ssm"
+        },
+        {
+          "Name": "CreateMaintenanceWindow",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "create_maintenance_window",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateOpsItem",
+      "AuthorizedActions": [
+        {
+          "Name": "AddTagsToResource",
+          "Service": "ssm"
+        },
+        {
+          "Name": "CreateOpsItem",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "create_ops_item",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateOpsMetadata",
+      "AuthorizedActions": [
+        {
+          "Name": "AddTagsToResource",
+          "Service": "ssm"
+        },
+        {
+          "Name": "CreateOpsMetadata",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "create_ops_metadata",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePatchBaseline",
+      "AuthorizedActions": [
+        {
+          "Name": "AddTagsToResource",
+          "Service": "ssm"
+        },
+        {
+          "Name": "CreatePatchBaseline",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "create_patch_baseline",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateResourceDataSync",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateResourceDataSync",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "create_resource_data_sync",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteActivation",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteActivation",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "delete_activation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAssociation",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "delete_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCloudConnector",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCloudConnector",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "delete_cloud_connector",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDocument",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDocument",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "delete_document",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteInventory",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteInventory",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "delete_inventory",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteMaintenanceWindow",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteMaintenanceWindow",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "delete_maintenance_window",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteOpsItem",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteOpsItem",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "delete_ops_item",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteOpsMetadata",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteOpsMetadata",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "delete_ops_metadata",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteParameter",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteParameter",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "delete_parameter",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteParameters",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteParameters",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "delete_parameters",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePatchBaseline",
+      "AuthorizedActions": [
+        {
+          "Name": "DeletePatchBaseline",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "delete_patch_baseline",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteResourceDataSync",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteResourceDataSync",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "delete_resource_data_sync",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteResourcePolicy",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "delete_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeregisterManagedInstance",
+      "AuthorizedActions": [
+        {
+          "Name": "DeregisterManagedInstance",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "deregister_managed_instance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeregisterPatchBaselineForPatchGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "DeregisterPatchBaselineForPatchGroup",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "deregister_patch_baseline_for_patch_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeregisterTargetFromMaintenanceWindow",
+      "AuthorizedActions": [
+        {
+          "Name": "DeregisterTargetFromMaintenanceWindow",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "deregister_target_from_maintenance_window",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeregisterTaskFromMaintenanceWindow",
+      "AuthorizedActions": [
+        {
+          "Name": "DeregisterTaskFromMaintenanceWindow",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "deregister_task_from_maintenance_window",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeActivations",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeActivations",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "describe_activations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAssociation",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "describe_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAssociationExecutionTargets",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAssociationExecutionTargets",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "describe_association_execution_targets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAssociationExecutions",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAssociationExecutions",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "describe_association_executions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAutomationExecutions",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAutomationExecutions",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "describe_automation_executions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAutomationStepExecutions",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAutomationStepExecutions",
+          "Service": "ssm"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "ssm.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "describe_automation_step_executions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAvailablePatches",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAvailablePatches",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "describe_available_patches",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDocument",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDocument",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "describe_document",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDocumentPermission",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDocumentPermission",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "describe_document_permission",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeEffectiveInstanceAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeEffectiveInstanceAssociations",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "describe_effective_instance_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeEffectivePatchesForPatchBaseline",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeEffectivePatchesForPatchBaseline",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "describe_effective_patches_for_patch_baseline",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeInstanceAssociationsStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeInstanceAssociationsStatus",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "describe_instance_associations_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeInstanceInformation",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeInstanceInformation",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "describe_instance_information",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeInstancePatchStates",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeInstancePatchStates",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "describe_instance_patch_states",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeInstancePatchStatesForPatchGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeInstancePatchStatesForPatchGroup",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "describe_instance_patch_states_for_patch_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeInstancePatches",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeInstancePatches",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "describe_instance_patches",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeInstanceProperties",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeInstanceProperties",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "describe_instance_properties",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeInventoryDeletions",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeInventoryDeletions",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "describe_inventory_deletions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeMaintenanceWindowExecutionTaskInvocations",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeMaintenanceWindowExecutionTaskInvocations",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "describe_maintenance_window_execution_task_invocations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeMaintenanceWindowExecutionTasks",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeMaintenanceWindowExecutionTasks",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "describe_maintenance_window_execution_tasks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeMaintenanceWindowExecutions",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeMaintenanceWindowExecutions",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "describe_maintenance_window_executions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeMaintenanceWindowSchedule",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeMaintenanceWindowSchedule",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "describe_maintenance_window_schedule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeMaintenanceWindowTargets",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeMaintenanceWindowTargets",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "describe_maintenance_window_targets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeMaintenanceWindowTasks",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeMaintenanceWindowTasks",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "describe_maintenance_window_tasks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeMaintenanceWindows",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeMaintenanceWindows",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "describe_maintenance_windows",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeMaintenanceWindowsForTarget",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeMaintenanceWindowsForTarget",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "describe_maintenance_windows_for_target",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeOpsItems",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeOpsItems",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "describe_ops_items",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeParameters",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeParameters",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "describe_parameters",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribePatchBaselines",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribePatchBaselines",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "describe_patch_baselines",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribePatchGroupState",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribePatchGroupState",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "describe_patch_group_state",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribePatchGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribePatchGroups",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "describe_patch_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribePatchProperties",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribePatchProperties",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "describe_patch_properties",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSessions",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSessions",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "describe_sessions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateOpsItemRelatedItem",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateOpsItemRelatedItem",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "disassociate_ops_item_related_item",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAccessToken",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAccessToken",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "get_access_token",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAutomationExecution",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAutomationExecution",
+          "Service": "ssm"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "ssm.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "get_automation_execution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCalendarState",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCalendarState",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "get_calendar_state",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCloudConnector",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCloudConnector",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "get_cloud_connector",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCommandInvocation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCommandInvocation",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "get_command_invocation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetConnectionStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "GetConnectionStatus",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "get_connection_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDefaultPatchBaseline",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDefaultPatchBaseline",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "get_default_patch_baseline",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDeployablePatchSnapshotForInstance",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDeployablePatchSnapshotForInstance",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "get_deployable_patch_snapshot_for_instance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDocument",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDocument",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "get_document",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetExecutionPreview",
+      "AuthorizedActions": [
+        {
+          "Name": "GetExecutionPreview",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "get_execution_preview",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetInventory",
+      "AuthorizedActions": [
+        {
+          "Name": "GetInventory",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "get_inventory",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetInventorySchema",
+      "AuthorizedActions": [
+        {
+          "Name": "GetInventorySchema",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "get_inventory_schema",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMaintenanceWindow",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMaintenanceWindow",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "get_maintenance_window",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMaintenanceWindowExecution",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMaintenanceWindowExecution",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "get_maintenance_window_execution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMaintenanceWindowExecutionTask",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMaintenanceWindowExecutionTask",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "get_maintenance_window_execution_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMaintenanceWindowExecutionTaskInvocation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMaintenanceWindowExecutionTaskInvocation",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "get_maintenance_window_execution_task_invocation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMaintenanceWindowTask",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMaintenanceWindowTask",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "get_maintenance_window_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetOpsItem",
+      "AuthorizedActions": [
+        {
+          "Name": "GetOpsItem",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "get_ops_item",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetOpsMetadata",
+      "AuthorizedActions": [
+        {
+          "Name": "GetOpsMetadata",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "get_ops_metadata",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetOpsSummary",
+      "AuthorizedActions": [
+        {
+          "Name": "GetOpsSummary",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "get_ops_summary",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetParameter",
+      "AuthorizedActions": [
+        {
+          "Name": "GetParameter",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "get_parameter",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetParameterHistory",
+      "AuthorizedActions": [
+        {
+          "Name": "GetParameterHistory",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "get_parameter_history",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetParameters",
+      "AuthorizedActions": [
+        {
+          "Name": "GetParameters",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "get_parameters",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetParametersByPath",
+      "AuthorizedActions": [
+        {
+          "Name": "GetParametersByPath",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "get_parameters_by_path",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPatchBaseline",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPatchBaseline",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "get_patch_baseline",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPatchBaselineForPatchGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPatchBaselineForPatchGroup",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "get_patch_baseline_for_patch_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResourcePolicies",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResourcePolicies",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "get_resource_policies",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetServiceSetting",
+      "AuthorizedActions": [
+        {
+          "Name": "GetServiceSetting",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "get_service_setting",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "LabelParameterVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "LabelParameterVersion",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "label_parameter_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAssociationVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAssociationVersions",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "list_association_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAssociations",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "list_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCloudConnectors",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCloudConnectors",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "list_cloud_connectors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCommandInvocations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCommandInvocations",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "list_command_invocations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCommands",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCommands",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "list_commands",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListComplianceItems",
+      "AuthorizedActions": [
+        {
+          "Name": "ListComplianceItems",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "list_compliance_items",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListComplianceSummaries",
+      "AuthorizedActions": [
+        {
+          "Name": "ListComplianceSummaries",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "list_compliance_summaries",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDocumentMetadataHistory",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDocumentMetadataHistory",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "list_document_metadata_history",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDocumentVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDocumentVersions",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "list_document_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDocuments",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDocuments",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "list_documents",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListInventoryEntries",
+      "AuthorizedActions": [
+        {
+          "Name": "ListInventoryEntries",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "list_inventory_entries",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListNodes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListNodes",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "list_nodes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListNodesSummary",
+      "AuthorizedActions": [
+        {
+          "Name": "ListNodesSummary",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "list_nodes_summary",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListOpsItemEvents",
+      "AuthorizedActions": [
+        {
+          "Name": "ListOpsItemEvents",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "list_ops_item_events",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListOpsItemRelatedItems",
+      "AuthorizedActions": [
+        {
+          "Name": "ListOpsItemRelatedItems",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "list_ops_item_related_items",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListOpsMetadata",
+      "AuthorizedActions": [
+        {
+          "Name": "ListOpsMetadata",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "list_ops_metadata",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListResourceComplianceSummaries",
+      "AuthorizedActions": [
+        {
+          "Name": "ListResourceComplianceSummaries",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "list_resource_compliance_summaries",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListResourceDataSync",
+      "AuthorizedActions": [
+        {
+          "Name": "ListResourceDataSync",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "list_resource_data_sync",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ModifyDocumentPermission",
+      "AuthorizedActions": [
+        {
+          "Name": "ModifyDocumentPermission",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "modify_document_permission",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutComplianceItems",
+      "AuthorizedActions": [
+        {
+          "Name": "PutComplianceItems",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "put_compliance_items",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutInventory",
+      "AuthorizedActions": [
+        {
+          "Name": "PutInventory",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "put_inventory",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutParameter",
+      "AuthorizedActions": [
+        {
+          "Name": "AddTagsToResource",
+          "Service": "ssm"
+        },
+        {
+          "Name": "PutParameter",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "put_parameter",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PutResourcePolicy",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "put_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RegisterDefaultPatchBaseline",
+      "AuthorizedActions": [
+        {
+          "Name": "RegisterDefaultPatchBaseline",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "register_default_patch_baseline",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RegisterPatchBaselineForPatchGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "RegisterPatchBaselineForPatchGroup",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "register_patch_baseline_for_patch_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RegisterTargetWithMaintenanceWindow",
+      "AuthorizedActions": [
+        {
+          "Name": "RegisterTargetWithMaintenanceWindow",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "register_target_with_maintenance_window",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RegisterTaskWithMaintenanceWindow",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "ssm.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "RegisterTaskWithMaintenanceWindow",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "register_task_with_maintenance_window",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RemoveTagsFromResource",
+      "AuthorizedActions": [
+        {
+          "Name": "RemoveTagsFromResource",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "remove_tags_from_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ResetServiceSetting",
+      "AuthorizedActions": [
+        {
+          "Name": "ResetServiceSetting",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "reset_service_setting",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ResumeSession",
+      "AuthorizedActions": [
+        {
+          "Name": "ResumeSession",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "resume_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SendAutomationSignal",
+      "AuthorizedActions": [
+        {
+          "Name": "SendAutomationSignal",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "send_automation_signal",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SendCommand",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "ssm.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "SendCommand",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "send_command",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartAccessRequest",
+      "AuthorizedActions": [
+        {
+          "Name": "AddTagsToResource",
+          "Service": "ssm"
+        },
+        {
+          "Name": "StartAccessRequest",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "start_access_request",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartAssociationsOnce",
+      "AuthorizedActions": [
+        {
+          "Name": "StartAssociationsOnce",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "start_associations_once",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartAutomationExecution",
+      "AuthorizedActions": [
+        {
+          "Name": "AddTagsToResource",
+          "Service": "ssm"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "ssm.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartAutomationExecution",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "start_automation_execution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartChangeRequestExecution",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "ssm.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartChangeRequestExecution",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "start_change_request_execution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartExecutionPreview",
+      "AuthorizedActions": [
+        {
+          "Name": "StartExecutionPreview",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "start_execution_preview",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartSession",
+      "AuthorizedActions": [
+        {
+          "Name": "StartSession",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "start_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopAutomationExecution",
+      "AuthorizedActions": [
+        {
+          "Name": "StopAutomationExecution",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "stop_automation_execution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TerminateSession",
+      "AuthorizedActions": [
+        {
+          "Name": "TerminateSession",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "terminate_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UnlabelParameterVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "UnlabelParameterVersion",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "unlabel_parameter_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "ssm.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateAssociation",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "update_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAssociationStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAssociationStatus",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "update_association_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCloudConnector",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCloudConnector",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "update_cloud_connector",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDocument",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "justintimeaccess.ssm.amazonaws.com",
+              "ssm.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateDocument",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "update_document",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDocumentDefaultVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDocumentDefaultVersion",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "update_document_default_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDocumentMetadata",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDocumentMetadata",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "update_document_metadata",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateMaintenanceWindow",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateMaintenanceWindow",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "update_maintenance_window",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateMaintenanceWindowTarget",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateMaintenanceWindowTarget",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "update_maintenance_window_target",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateMaintenanceWindowTask",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "ssm.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateMaintenanceWindowTask",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "update_maintenance_window_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateManagedInstanceRole",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "ssm.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateManagedInstanceRole",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "update_managed_instance_role",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateOpsItem",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateOpsItem",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "update_ops_item",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateOpsMetadata",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateOpsMetadata",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "update_ops_metadata",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdatePatchBaseline",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdatePatchBaseline",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "update_patch_baseline",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateResourceDataSync",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateResourceDataSync",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "update_resource_data_sync",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateServiceSetting",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "ssm.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateServiceSetting",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "update_service_setting",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ValidateCloudConnector",
+      "AuthorizedActions": [
+        {
+          "Name": "ValidateCloudConnector",
+          "Service": "ssm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm",
+          "Method": "validate_cloud_connector",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "association",
+      "ARNFormats": [
+        "arn:${Partition}:ssm:${Region}:${Account}:association/${AssociationId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "automation-definition",
+      "ARNFormats": [
+        "arn:${Partition}:ssm:${Region}:${Account}:automation-definition/${AutomationDefinitionName}:${VersionId}"
+      ],
+      "ConditionKeys": [
+        "ssm:DocumentType"
+      ]
+    },
+    {
+      "Name": "automation-execution",
+      "ARNFormats": [
+        "arn:${Partition}:ssm:${Region}:${Account}:automation-execution/${AutomationExecutionId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "ssm:resourceTag/tag-key"
+      ]
+    },
+    {
+      "Name": "bucket",
+      "ARNFormats": [
+        "arn:${Partition}:s3:::${BucketName}"
+      ]
+    },
+    {
+      "Name": "cloud-connector",
+      "ARNFormats": [
+        "arn:${Partition}:ssm:${Region}:${Account}:cloud-connector/${CloudConnectorId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "document",
+      "ARNFormats": [
+        "arn:${Partition}:ssm:${Region}:${Account}:document/${DocumentName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "ssm:DocumentCategories",
+        "ssm:DocumentType",
+        "ssm:resourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "iam-role",
+      "ARNFormats": [
+        "arn:${Partition}:iam::${Account}:role/${RoleName}"
+      ]
+    },
+    {
+      "Name": "instance",
+      "ARNFormats": [
+        "arn:${Partition}:ec2:${Region}:${Account}:instance/${InstanceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "ssm:resourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "maintenancewindow",
+      "ARNFormats": [
+        "arn:${Partition}:ssm:${Region}:${Account}:maintenancewindow/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "ssm:resourceTag/tag-key"
+      ]
+    },
+    {
+      "Name": "managed-instance",
+      "ARNFormats": [
+        "arn:${Partition}:ssm:${Region}:${Account}:managed-instance/${InstanceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "ssm:resourceTag/tag-key"
+      ]
+    },
+    {
+      "Name": "managed-instance-inventory",
+      "ARNFormats": [
+        "arn:${Partition}:ssm:${Region}:${Account}:managed-instance-inventory/${InstanceId}"
+      ]
+    },
+    {
+      "Name": "opsitem",
+      "ARNFormats": [
+        "arn:${Partition}:ssm:${Region}:${Account}:opsitem/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "opsitemgroup",
+      "ARNFormats": [
+        "arn:${Partition}:ssm:${Region}:${Account}:opsitemgroup/default"
+      ]
+    },
+    {
+      "Name": "opsmetadata",
+      "ARNFormats": [
+        "arn:${Partition}:ssm:${Region}:${Account}:opsmetadata/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "ssm:resourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "parameter",
+      "ARNFormats": [
+        "arn:${Partition}:ssm:${Region}:${Account}:parameter/${ParameterNameWithoutLeadingSlash}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "ssm:resourceTag/tag-key"
+      ]
+    },
+    {
+      "Name": "patchbaseline",
+      "ARNFormats": [
+        "arn:${Partition}:ssm:${Region}:${Account}:patchbaseline/${PatchBaselineIdResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "ssm:resourceTag/tag-key"
+      ]
+    },
+    {
+      "Name": "resourcedatasync",
+      "ARNFormats": [
+        "arn:${Partition}:ssm:${Region}:${Account}:resource-data-sync/${SyncName}"
+      ]
+    },
+    {
+      "Name": "servicesetting",
+      "ARNFormats": [
+        "arn:${Partition}:ssm:${Region}:${Account}:servicesetting/${ResourceId}"
+      ]
+    },
+    {
+      "Name": "session",
+      "ARNFormats": [
+        "arn:${Partition}:ssm:${Region}:${Account}:session/${SessionId}"
+      ],
+      "ConditionKeys": [
+        "ssm:resourceTag/aws:ssmmessages:session-id",
+        "ssm:resourceTag/aws:ssmmessages:target-id"
+      ]
+    },
+    {
+      "Name": "task",
+      "ARNFormats": [
+        "arn:${Partition}:ecs:${Region}:${Account}:task/${TaskId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "windowtarget",
+      "ARNFormats": [
+        "arn:${Partition}:ssm:${Region}:${Account}:windowtarget/${WindowTargetId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "ssm:resourceTag/tag-key"
+      ]
+    },
+    {
+      "Name": "windowtask",
+      "ARNFormats": [
+        "arn:${Partition}:ssm:${Region}:${Account}:windowtask/${WindowTaskId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "ssm:resourceTag/tag-key"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

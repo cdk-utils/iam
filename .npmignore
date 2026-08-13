@@ -21,6 +21,8 @@ dist
 /.projenrc.js
 tsconfig.tsbuildinfo
 !.jsii
+/scripts/
+/data/
 /.gitattributes
 /.projenrc.ts
 /projenrc

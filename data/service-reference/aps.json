@@ -1,0 +1,2244 @@
+{
+  "Name": "aps",
+  "Actions": [
+    {
+      "Name": "CreateAlertManagerAlerts",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateAlertManagerDefinition",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateAnomalyDetector",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateLoggingConfiguration",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateQueryLoggingConfiguration",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateRuleGroupsNamespace",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "rulegroupsnamespace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateScraper",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        },
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateWorkspace",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteAlertManagerDefinition",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteAlertManagerSilence",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteAnomalyDetector",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "anomalydetector"
+        },
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteLoggingConfiguration",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteQueryLoggingConfiguration",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteResourcePolicy",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteRuleGroupsNamespace",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "rulegroupsnamespace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteScraper",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "scraper"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteScraperLoggingConfiguration",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "scraper"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteWorkspace",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeAlertManagerDefinition",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeAnomalyDetector",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "anomalydetector"
+        },
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeLoggingConfiguration",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeQueryLoggingConfiguration",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeResourcePolicy",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeRuleGroupsNamespace",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "rulegroupsnamespace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeScraper",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "scraper"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeScraperLoggingConfiguration",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "scraper"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeWorkspace",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeWorkspaceConfiguration",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetAlertManagerSilence",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAlertManagerStatus",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDefaultScraperConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetLabels",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetMetricMetadata",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSeries",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAlertManagerAlertGroups",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAlertManagerAlerts",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAlertManagerReceivers",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAlertManagerSilences",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAlerts",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAnomalyDetectors",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListRuleGroupsNamespaces",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListRules",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListScrapers",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "anomalydetector"
+        },
+        {
+          "Name": "rulegroupsnamespace"
+        },
+        {
+          "Name": "scraper"
+        },
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListWorkspaces",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PreviewAnomalyDetector",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutAlertManagerDefinition",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutAlertManagerSilences",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutAnomalyDetector",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "anomalydetector"
+        },
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutResourcePolicy",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutRuleGroupsNamespace",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "rulegroupsnamespace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "QueryMetrics",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RemoteWrite",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "anomalydetector"
+        },
+        {
+          "Name": "rulegroupsnamespace"
+        },
+        {
+          "Name": "scraper"
+        },
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "anomalydetector"
+        },
+        {
+          "Name": "rulegroupsnamespace"
+        },
+        {
+          "Name": "scraper"
+        },
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateLoggingConfiguration",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateQueryLoggingConfiguration",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateScraper",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "scraper"
+        },
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateScraperLoggingConfiguration",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "scraper"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateWorkspaceAlias",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateWorkspaceConfiguration",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateAlertManagerDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAlertManagerDefinition",
+          "Service": "aps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amp",
+          "Method": "create_alert_manager_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAnomalyDetector",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAnomalyDetector",
+          "Service": "aps"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "aps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amp",
+          "Method": "create_anomaly_detector",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateLoggingConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateLoggingConfiguration",
+          "Service": "aps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amp",
+          "Method": "create_logging_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateQueryLoggingConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateQueryLoggingConfiguration",
+          "Service": "aps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amp",
+          "Method": "create_query_logging_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRuleGroupsNamespace",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRuleGroupsNamespace",
+          "Service": "aps"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "aps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amp",
+          "Method": "create_rule_groups_namespace",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateScraper",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateScraper",
+          "Service": "aps"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "aps.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "aps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amp",
+          "Method": "create_scraper",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateWorkspace",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateWorkspace",
+          "Service": "aps"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "aps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amp",
+          "Method": "create_workspace",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAlertManagerDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAlertManagerDefinition",
+          "Service": "aps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amp",
+          "Method": "delete_alert_manager_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAnomalyDetector",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAnomalyDetector",
+          "Service": "aps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amp",
+          "Method": "delete_anomaly_detector",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteLoggingConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteLoggingConfiguration",
+          "Service": "aps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amp",
+          "Method": "delete_logging_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteQueryLoggingConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteQueryLoggingConfiguration",
+          "Service": "aps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amp",
+          "Method": "delete_query_logging_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteResourcePolicy",
+          "Service": "aps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amp",
+          "Method": "delete_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRuleGroupsNamespace",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRuleGroupsNamespace",
+          "Service": "aps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amp",
+          "Method": "delete_rule_groups_namespace",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteScraper",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteScraper",
+          "Service": "aps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amp",
+          "Method": "delete_scraper",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteScraperLoggingConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteScraperLoggingConfiguration",
+          "Service": "aps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amp",
+          "Method": "delete_scraper_logging_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteWorkspace",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteWorkspace",
+          "Service": "aps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amp",
+          "Method": "delete_workspace",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAlertManagerDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAlertManagerDefinition",
+          "Service": "aps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amp",
+          "Method": "describe_alert_manager_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAnomalyDetector",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAnomalyDetector",
+          "Service": "aps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amp",
+          "Method": "describe_anomaly_detector",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeLoggingConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeLoggingConfiguration",
+          "Service": "aps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amp",
+          "Method": "describe_logging_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeQueryLoggingConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeQueryLoggingConfiguration",
+          "Service": "aps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amp",
+          "Method": "describe_query_logging_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeResourcePolicy",
+          "Service": "aps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amp",
+          "Method": "describe_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeRuleGroupsNamespace",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeRuleGroupsNamespace",
+          "Service": "aps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amp",
+          "Method": "describe_rule_groups_namespace",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeScraper",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeScraper",
+          "Service": "aps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amp",
+          "Method": "describe_scraper",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeScraperLoggingConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeScraperLoggingConfiguration",
+          "Service": "aps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amp",
+          "Method": "describe_scraper_logging_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeWorkspace",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeWorkspace",
+          "Service": "aps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amp",
+          "Method": "describe_workspace",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeWorkspaceConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeWorkspaceConfiguration",
+          "Service": "aps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amp",
+          "Method": "describe_workspace_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDefaultScraperConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDefaultScraperConfiguration",
+          "Service": "aps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amp",
+          "Method": "get_default_scraper_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAnomalyDetectors",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAnomalyDetectors",
+          "Service": "aps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amp",
+          "Method": "list_anomaly_detectors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRuleGroupsNamespaces",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRuleGroupsNamespaces",
+          "Service": "aps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amp",
+          "Method": "list_rule_groups_namespaces",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListScrapers",
+      "AuthorizedActions": [
+        {
+          "Name": "ListScrapers",
+          "Service": "aps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amp",
+          "Method": "list_scrapers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "aps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amp",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListWorkspaces",
+      "AuthorizedActions": [
+        {
+          "Name": "ListWorkspaces",
+          "Service": "aps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amp",
+          "Method": "list_workspaces",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutAlertManagerDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "PutAlertManagerDefinition",
+          "Service": "aps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amp",
+          "Method": "put_alert_manager_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutAnomalyDetector",
+      "AuthorizedActions": [
+        {
+          "Name": "PutAnomalyDetector",
+          "Service": "aps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amp",
+          "Method": "put_anomaly_detector",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PutResourcePolicy",
+          "Service": "aps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amp",
+          "Method": "put_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutRuleGroupsNamespace",
+      "AuthorizedActions": [
+        {
+          "Name": "PutRuleGroupsNamespace",
+          "Service": "aps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amp",
+          "Method": "put_rule_groups_namespace",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "aps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amp",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "aps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amp",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateLoggingConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateLoggingConfiguration",
+          "Service": "aps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amp",
+          "Method": "update_logging_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateQueryLoggingConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateQueryLoggingConfiguration",
+          "Service": "aps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amp",
+          "Method": "update_query_logging_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateScraper",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "aps.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateScraper",
+          "Service": "aps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amp",
+          "Method": "update_scraper",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateScraperLoggingConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateScraperLoggingConfiguration",
+          "Service": "aps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amp",
+          "Method": "update_scraper_logging_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateWorkspaceAlias",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateWorkspaceAlias",
+          "Service": "aps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amp",
+          "Method": "update_workspace_alias",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateWorkspaceConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateWorkspaceConfiguration",
+          "Service": "aps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amp",
+          "Method": "update_workspace_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "anomalydetector",
+      "ARNFormats": [
+        "arn:${Partition}:aps:${Region}:${Account}:anomalydetector/${WorkspaceId}/${AnomalyDetectorId}"
+      ],
+      "ConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ]
+    },
+    {
+      "Name": "cluster",
+      "ARNFormats": [
+        "arn:${Partition}:eks:${Region}:${Account}:cluster/${ClusterName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "rulegroupsnamespace",
+      "ARNFormats": [
+        "arn:${Partition}:aps:${Region}:${Account}:rulegroupsnamespace/${WorkspaceId}/${Namespace}"
+      ],
+      "ConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ]
+    },
+    {
+      "Name": "scraper",
+      "ARNFormats": [
+        "arn:${Partition}:aps:${Region}:${Account}:scraper/${ScraperId}"
+      ],
+      "ConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ]
+    },
+    {
+      "Name": "workspace",
+      "ARNFormats": [
+        "arn:${Partition}:aps:${Region}:${Account}:workspace/${WorkspaceId}"
+      ],
+      "ConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

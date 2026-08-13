@@ -1,0 +1,1158 @@
+{
+  "Name": "gameliftstreams",
+  "Actions": [
+    {
+      "Name": "AddStreamGroupLocations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AssociateApplications",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "stream group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateApplication",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateStreamGroup",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateStreamSessionAdminShell",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateStreamSessionConnection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateStreamUrl",
+      "ActionConditionKeys": [
+        "gameliftstreams:RoleArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "stream group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteStreamGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateApplications",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "stream group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ExportStreamSessionFiles",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetStreamGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetStreamSession",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetStreamUrl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListApplicationShaderCaches",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListApplications",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListStreamGroups",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListStreamSessions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListStreamSessionsByAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListStreamUrls",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "stream group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RemoveStreamGroupLocations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RevokeStreamUrl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartStreamSession",
+      "ActionConditionKeys": [
+        "gameliftstreams:RoleArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "stream group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TerminateStreamSession",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "stream group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateStreamGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "gameliftstreams:RoleArn",
+      "Types": [
+        "ARN"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AddStreamGroupLocations",
+      "AuthorizedActions": [
+        {
+          "Name": "AddStreamGroupLocations",
+          "Service": "gameliftstreams"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "gameliftstreams",
+          "Method": "add_stream_group_locations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateApplications",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateApplications",
+          "Service": "gameliftstreams"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "gameliftstreams",
+          "Method": "associate_applications",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateApplication",
+          "Service": "gameliftstreams"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "gameliftstreams"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "gameliftstreams",
+          "Method": "create_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateStreamGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateApplications",
+          "Service": "gameliftstreams"
+        },
+        {
+          "Name": "CreateStreamGroup",
+          "Service": "gameliftstreams"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "gameliftstreams"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "gameliftstreams",
+          "Method": "create_stream_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateStreamSessionAdminShell",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateStreamSessionAdminShell",
+          "Service": "gameliftstreams"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "gameliftstreams",
+          "Method": "create_stream_session_admin_shell",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateStreamSessionConnection",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateStreamSessionConnection",
+          "Service": "gameliftstreams"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "gameliftstreams",
+          "Method": "create_stream_session_connection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateStreamUrl",
+      "SDK": [
+        {
+          "Name": "gameliftstreams",
+          "Method": "create_stream_url",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteApplication",
+          "Service": "gameliftstreams"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "gameliftstreams",
+          "Method": "delete_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteStreamGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteStreamGroup",
+          "Service": "gameliftstreams"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "gameliftstreams",
+          "Method": "delete_stream_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateApplications",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateApplications",
+          "Service": "gameliftstreams"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "gameliftstreams",
+          "Method": "disassociate_applications",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ExportStreamSessionFiles",
+      "AuthorizedActions": [
+        {
+          "Name": "ExportStreamSessionFiles",
+          "Service": "gameliftstreams"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "gameliftstreams",
+          "Method": "export_stream_session_files",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "GetApplication",
+          "Service": "gameliftstreams"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "gameliftstreams",
+          "Method": "get_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetStreamGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "GetStreamGroup",
+          "Service": "gameliftstreams"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "gameliftstreams",
+          "Method": "get_stream_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetStreamSession",
+      "AuthorizedActions": [
+        {
+          "Name": "GetStreamSession",
+          "Service": "gameliftstreams"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "gameliftstreams",
+          "Method": "get_stream_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetStreamUrl",
+      "AuthorizedActions": [
+        {
+          "Name": "GetStreamUrl",
+          "Service": "gameliftstreams"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "gameliftstreams",
+          "Method": "get_stream_url",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListApplicationShaderCaches",
+      "AuthorizedActions": [
+        {
+          "Name": "ListApplicationShaderCaches",
+          "Service": "gameliftstreams"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "gameliftstreams",
+          "Method": "list_application_shader_caches",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListApplications",
+      "AuthorizedActions": [
+        {
+          "Name": "ListApplications",
+          "Service": "gameliftstreams"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "gameliftstreams",
+          "Method": "list_applications",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListStreamGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "ListStreamGroups",
+          "Service": "gameliftstreams"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "gameliftstreams",
+          "Method": "list_stream_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListStreamSessions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListStreamSessions",
+          "Service": "gameliftstreams"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "gameliftstreams",
+          "Method": "list_stream_sessions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListStreamSessionsByAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "ListStreamSessionsByAccount",
+          "Service": "gameliftstreams"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "gameliftstreams",
+          "Method": "list_stream_sessions_by_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListStreamUrls",
+      "AuthorizedActions": [
+        {
+          "Name": "ListStreamUrls",
+          "Service": "gameliftstreams"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "gameliftstreams",
+          "Method": "list_stream_urls",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "gameliftstreams"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "gameliftstreams",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RemoveStreamGroupLocations",
+      "AuthorizedActions": [
+        {
+          "Name": "RemoveStreamGroupLocations",
+          "Service": "gameliftstreams"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "gameliftstreams",
+          "Method": "remove_stream_group_locations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RevokeStreamUrl",
+      "AuthorizedActions": [
+        {
+          "Name": "RevokeStreamUrl",
+          "Service": "gameliftstreams"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "gameliftstreams",
+          "Method": "revoke_stream_url",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartStreamSession",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "gameliftstreams.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartStreamSession",
+          "Service": "gameliftstreams"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "gameliftstreams",
+          "Method": "start_stream_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "gameliftstreams"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "gameliftstreams",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TerminateStreamSession",
+      "AuthorizedActions": [
+        {
+          "Name": "TerminateStreamSession",
+          "Service": "gameliftstreams"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "gameliftstreams",
+          "Method": "terminate_stream_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "gameliftstreams"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "gameliftstreams",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateApplication",
+          "Service": "gameliftstreams"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "gameliftstreams",
+          "Method": "update_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateStreamGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateStreamGroup",
+          "Service": "gameliftstreams"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "gameliftstreams",
+          "Method": "update_stream_group",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "application",
+      "ARNFormats": [
+        "arn:${Partition}:gameliftstreams:${Region}:${Account}:application/${ApplicationId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "stream group",
+      "ARNFormats": [
+        "arn:${Partition}:gameliftstreams:${Region}:${Account}:streamgroup/${StreamGroupId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

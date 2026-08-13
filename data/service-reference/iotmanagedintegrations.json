@@ -1,0 +1,2916 @@
+{
+  "Name": "iotmanagedintegrations",
+  "Actions": [
+    {
+      "Name": "CreateAccountAssociation",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "iotmanagedintegrations:connectorDestinationId"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateCloudConnector",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateConnectorDestination",
+      "ActionConditionKeys": [
+        "iotmanagedintegrations:cloudConnectorId"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateCredentialLocker",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateDestination",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateEventLogConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateManagedThing",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "credential-locker"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateNotificationConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateOtaTask",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateOtaTaskConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateProvisioningProfile",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteAccountAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "account-association"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteCloudConnector",
+      "ActionConditionKeys": [
+        "iotmanagedintegrations:cloudConnectorId"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteConnectorDestination",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteCredentialLocker",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "credential-locker"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteDestination",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteEventLogConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteManagedThing",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "managed-thing"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteNotificationConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteOtaTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ota-task"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteOtaTaskConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteProvisioningProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "provisioning-profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeregisterAccountAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "account-association"
+        },
+        {
+          "Name": "managed-thing"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAccountAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "account-association"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCloudConnector",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetConnectorDestination",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCredentialLocker",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "credential-locker"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCustomEndpoint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDefaultEncryptionConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDestination",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDeviceDiscovery",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetEventLogConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetHubConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetManagedThing",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "managed-thing"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetManagedThingCapabilities",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "managed-thing"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetManagedThingCertificate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "managed-thing"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetManagedThingConnectivityData",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "managed-thing"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetManagedThingMetaData",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "managed-thing"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetManagedThingState",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "managed-thing"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetNotificationConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetOtaTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ota-task"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetOtaTaskConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetProvisioningProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "provisioning-profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetRuntimeLogConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSchemaVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAccountAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListCloudConnectors",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListConnectorDestinations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListCredentialLockers",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDestinations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDeviceDiscoveries",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDiscoveredDevices",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEventLogConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListManagedThingAccountAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListManagedThingSchemas",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "managed-thing"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListManagedThings",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListNotificationConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListOtaTaskConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListOtaTaskExecutions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ota-task"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListOtaTasks",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListProvisioningProfiles",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListSchemaVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "account-association"
+        },
+        {
+          "Name": "credential-locker"
+        },
+        {
+          "Name": "managed-thing"
+        },
+        {
+          "Name": "ota-task"
+        },
+        {
+          "Name": "provisioning-profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutDefaultEncryptionConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutHubConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutRuntimeLogConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RegisterAccountAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "account-association"
+        },
+        {
+          "Name": "managed-thing"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RegisterCustomEndpoint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ResetRuntimeLogConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SendConnectorEvent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SendManagedThingCommand",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "account-association"
+        },
+        {
+          "Name": "managed-thing"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartAccountAssociationRefresh",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "account-association"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartDeviceDiscovery",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "account-association"
+        },
+        {
+          "Name": "managed-thing"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "account-association"
+        },
+        {
+          "Name": "credential-locker"
+        },
+        {
+          "Name": "managed-thing"
+        },
+        {
+          "Name": "ota-task"
+        },
+        {
+          "Name": "provisioning-profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "account-association"
+        },
+        {
+          "Name": "credential-locker"
+        },
+        {
+          "Name": "managed-thing"
+        },
+        {
+          "Name": "ota-task"
+        },
+        {
+          "Name": "provisioning-profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAccountAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "account-association"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateCloudConnector",
+      "ActionConditionKeys": [
+        "iotmanagedintegrations:cloudConnectorId"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateConnectorDestination",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateDestination",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateEventLogConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateManagedThing",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "credential-locker"
+        },
+        {
+          "Name": "managed-thing"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateNotificationConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateOtaTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ota-task"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "iotmanagedintegrations:cloudConnectorId",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "iotmanagedintegrations:connectorDestinationId",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateAccountAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAccountAssociation",
+          "Service": "iotmanagedintegrations"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "create_account_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateCloudConnector",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCloudConnector",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "create_cloud_connector",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateConnectorDestination",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateConnectorDestination",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "create_connector_destination",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateCredentialLocker",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCredentialLocker",
+          "Service": "iotmanagedintegrations"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "create_credential_locker",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDestination",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDestination",
+          "Service": "iotmanagedintegrations"
+        },
+        {
+          "Name": "PassRole",
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "create_destination",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateEventLogConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateEventLogConfiguration",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "create_event_log_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateManagedThing",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateManagedThing",
+          "Service": "iotmanagedintegrations"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "create_managed_thing",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateNotificationConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateNotificationConfiguration",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "create_notification_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateOtaTask",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateOtaTask",
+          "Service": "iotmanagedintegrations"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "create_ota_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateOtaTaskConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateOtaTaskConfiguration",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "create_ota_task_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateProvisioningProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateProvisioningProfile",
+          "Service": "iotmanagedintegrations"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "create_provisioning_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAccountAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAccountAssociation",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "delete_account_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCloudConnector",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCloudConnector",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "delete_cloud_connector",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteConnectorDestination",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteConnectorDestination",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "delete_connector_destination",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCredentialLocker",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCredentialLocker",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "delete_credential_locker",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDestination",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDestination",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "delete_destination",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteEventLogConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteEventLogConfiguration",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "delete_event_log_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteManagedThing",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteManagedThing",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "delete_managed_thing",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteNotificationConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteNotificationConfiguration",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "delete_notification_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteOtaTask",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteOtaTask",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "delete_ota_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteOtaTaskConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteOtaTaskConfiguration",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "delete_ota_task_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteProvisioningProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteProvisioningProfile",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "delete_provisioning_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeregisterAccountAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "DeregisterAccountAssociation",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "deregister_account_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAccountAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAccountAssociation",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "get_account_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCloudConnector",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCloudConnector",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "get_cloud_connector",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetConnectorDestination",
+      "AuthorizedActions": [
+        {
+          "Name": "GetConnectorDestination",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "get_connector_destination",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCredentialLocker",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCredentialLocker",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "get_credential_locker",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCustomEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCustomEndpoint",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "get_custom_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDefaultEncryptionConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDefaultEncryptionConfiguration",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "get_default_encryption_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDestination",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDestination",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "get_destination",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDeviceDiscovery",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDeviceDiscovery",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "get_device_discovery",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEventLogConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEventLogConfiguration",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "get_event_log_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetHubConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetHubConfiguration",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "get_hub_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetManagedThing",
+      "AuthorizedActions": [
+        {
+          "Name": "GetManagedThing",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "get_managed_thing",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetManagedThingCapabilities",
+      "AuthorizedActions": [
+        {
+          "Name": "GetManagedThingCapabilities",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "get_managed_thing_capabilities",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetManagedThingCertificate",
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "get_managed_thing_certificate",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetManagedThingConnectivityData",
+      "AuthorizedActions": [
+        {
+          "Name": "GetManagedThingConnectivityData",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "get_managed_thing_connectivity_data",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetManagedThingMetaData",
+      "AuthorizedActions": [
+        {
+          "Name": "GetManagedThingMetaData",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "get_managed_thing_meta_data",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetManagedThingState",
+      "AuthorizedActions": [
+        {
+          "Name": "GetManagedThingState",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "get_managed_thing_state",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetNotificationConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetNotificationConfiguration",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "get_notification_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetOtaTask",
+      "AuthorizedActions": [
+        {
+          "Name": "GetOtaTask",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "get_ota_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetOtaTaskConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetOtaTaskConfiguration",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "get_ota_task_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetProvisioningProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "GetProvisioningProfile",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "get_provisioning_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRuntimeLogConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRuntimeLogConfiguration",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "get_runtime_log_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSchemaVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSchemaVersion",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "get_schema_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAccountAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAccountAssociations",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "list_account_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCloudConnectors",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCloudConnectors",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "list_cloud_connectors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListConnectorDestinations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListConnectorDestinations",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "list_connector_destinations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCredentialLockers",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCredentialLockers",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "list_credential_lockers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDestinations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDestinations",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "list_destinations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDeviceDiscoveries",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDeviceDiscoveries",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "list_device_discoveries",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDiscoveredDevices",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDiscoveredDevices",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "list_discovered_devices",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEventLogConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEventLogConfigurations",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "list_event_log_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListManagedThingAccountAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListManagedThingAccountAssociations",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "list_managed_thing_account_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListManagedThingSchemas",
+      "AuthorizedActions": [
+        {
+          "Name": "ListManagedThingSchemas",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "list_managed_thing_schemas",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListManagedThings",
+      "AuthorizedActions": [
+        {
+          "Name": "ListManagedThings",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "list_managed_things",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListNotificationConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListNotificationConfigurations",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "list_notification_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListOtaTaskConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListOtaTaskConfigurations",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "list_ota_task_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListOtaTaskExecutions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListOtaTaskExecutions",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "list_ota_task_executions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListOtaTasks",
+      "AuthorizedActions": [
+        {
+          "Name": "ListOtaTasks",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "list_ota_tasks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProvisioningProfiles",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProvisioningProfiles",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "list_provisioning_profiles",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSchemaVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSchemaVersions",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "list_schema_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutDefaultEncryptionConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "PutDefaultEncryptionConfiguration",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "put_default_encryption_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutHubConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "PutHubConfiguration",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "put_hub_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutRuntimeLogConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "PutRuntimeLogConfiguration",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "put_runtime_log_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RegisterAccountAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "RegisterAccountAssociation",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "register_account_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RegisterCustomEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "RegisterCustomEndpoint",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "register_custom_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ResetRuntimeLogConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "ResetRuntimeLogConfiguration",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "reset_runtime_log_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SendConnectorEvent",
+      "AuthorizedActions": [
+        {
+          "Name": "SendConnectorEvent",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "send_connector_event",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SendManagedThingCommand",
+      "AuthorizedActions": [
+        {
+          "Name": "SendManagedThingCommand",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "send_managed_thing_command",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartAccountAssociationRefresh",
+      "AuthorizedActions": [
+        {
+          "Name": "StartAccountAssociationRefresh",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "start_account_association_refresh",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartDeviceDiscovery",
+      "AuthorizedActions": [
+        {
+          "Name": "StartDeviceDiscovery",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "start_device_discovery",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAccountAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAccountAssociation",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "update_account_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCloudConnector",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCloudConnector",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "update_cloud_connector",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateConnectorDestination",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateConnectorDestination",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "update_connector_destination",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDestination",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDestination",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "update_destination",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateEventLogConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateEventLogConfiguration",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "update_event_log_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateManagedThing",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateManagedThing",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "update_managed_thing",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateNotificationConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateNotificationConfiguration",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "update_notification_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateOtaTask",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateOtaTask",
+          "Service": "iotmanagedintegrations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-managed-integrations",
+          "Method": "update_ota_task",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "account-association",
+      "ARNFormats": [
+        "arn:${Partition}:iotmanagedintegrations:${Region}:${Account}:account-association/${AccountAssociationId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "credential-locker",
+      "ARNFormats": [
+        "arn:${Partition}:iotmanagedintegrations:${Region}:${Account}:credential-locker/${Identifier}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "managed-thing",
+      "ARNFormats": [
+        "arn:${Partition}:iotmanagedintegrations:${Region}:${Account}:managed-thing/${Identifier}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "ota-task",
+      "ARNFormats": [
+        "arn:${Partition}:iotmanagedintegrations:${Region}:${Account}:ota-task/${Identifier}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "provisioning-profile",
+      "ARNFormats": [
+        "arn:${Partition}:iotmanagedintegrations:${Region}:${Account}:provisioning-profile/${Identifier}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

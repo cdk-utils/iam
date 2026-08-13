@@ -1,0 +1,1524 @@
+{
+  "Name": "rtbfabric",
+  "Actions": [
+    {
+      "Name": "AcceptLink",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Link"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AssociateCertificate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ResponderGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateInboundExternalLink",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ResponderGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateLink",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateLinkRoutingRule",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Link"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateOutboundExternalLink",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RequesterGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateRequesterGateway",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateResponderGateway",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteInboundExternalLink",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "InboundExternalLink"
+        },
+        {
+          "Name": "ResponderGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteLink",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Link"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteLinkRoutingRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Link"
+        },
+        {
+          "Name": "LinkRoutingRule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteOutboundExternalLink",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "OutboundExternalLink"
+        },
+        {
+          "Name": "RequesterGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteRequesterGateway",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RequesterGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteResponderGateway",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ResponderGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateCertificate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ResponderGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCertificateAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ResponderGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetInboundExternalLink",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "InboundExternalLink"
+        },
+        {
+          "Name": "ResponderGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetLink",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Link"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetLinkRoutingRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Link"
+        },
+        {
+          "Name": "LinkRoutingRule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetOutboundExternalLink",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "OutboundExternalLink"
+        },
+        {
+          "Name": "RequesterGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetRequesterGateway",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RequesterGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetResponderGateway",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ResponderGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListCertificateAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ResponderGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListLinkRoutingRules",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Link"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListLinks",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListRequesterGateways",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListResponderGateways",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "InboundExternalLink"
+        },
+        {
+          "Name": "Link"
+        },
+        {
+          "Name": "LinkRoutingRule"
+        },
+        {
+          "Name": "OutboundExternalLink"
+        },
+        {
+          "Name": "RequesterGateway"
+        },
+        {
+          "Name": "ResponderGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RejectLink",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Link"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "InboundExternalLink"
+        },
+        {
+          "Name": "Link"
+        },
+        {
+          "Name": "LinkRoutingRule"
+        },
+        {
+          "Name": "OutboundExternalLink"
+        },
+        {
+          "Name": "RequesterGateway"
+        },
+        {
+          "Name": "ResponderGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "InboundExternalLink"
+        },
+        {
+          "Name": "Link"
+        },
+        {
+          "Name": "LinkRoutingRule"
+        },
+        {
+          "Name": "OutboundExternalLink"
+        },
+        {
+          "Name": "RequesterGateway"
+        },
+        {
+          "Name": "ResponderGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateLink",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Link"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateLinkModuleFlow",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Link"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateLinkRoutingRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Link"
+        },
+        {
+          "Name": "LinkRoutingRule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateRequesterGateway",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RequesterGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateResponderGateway",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ResponderGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "rtbfabric:InboundExternalLinkGatewayId",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "rtbfabric:InboundExternalLinkLinkId",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "rtbfabric:LinkLinkId",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "rtbfabric:LinkRoutingRuleRuleId",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "rtbfabric:OutboundExternalLinkLinkId",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "rtbfabric:RequesterGatewayGatewayId",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "rtbfabric:ResponderGatewayGatewayId",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AcceptLink",
+      "AuthorizedActions": [
+        {
+          "Name": "AcceptLink",
+          "Service": "rtbfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rtbfabric",
+          "Method": "accept_link",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateCertificate",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateCertificate",
+          "Service": "rtbfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rtbfabric",
+          "Method": "associate_certificate",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateInboundExternalLink",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateInboundExternalLink",
+          "Service": "rtbfabric"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "rtbfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rtbfabric",
+          "Method": "create_inbound_external_link",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateLink",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateLink",
+          "Service": "rtbfabric"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "rtbfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rtbfabric",
+          "Method": "create_link",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateLinkRoutingRule",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateLinkRoutingRule",
+          "Service": "rtbfabric"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "rtbfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rtbfabric",
+          "Method": "create_link_routing_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateOutboundExternalLink",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateOutboundExternalLink",
+          "Service": "rtbfabric"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "rtbfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rtbfabric",
+          "Method": "create_outbound_external_link",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRequesterGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRequesterGateway",
+          "Service": "rtbfabric"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "rtbfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rtbfabric",
+          "Method": "create_requester_gateway",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateResponderGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateResponderGateway",
+          "Service": "rtbfabric"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "rtbfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rtbfabric",
+          "Method": "create_responder_gateway",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteInboundExternalLink",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteInboundExternalLink",
+          "Service": "rtbfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rtbfabric",
+          "Method": "delete_inbound_external_link",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteLink",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteLink",
+          "Service": "rtbfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rtbfabric",
+          "Method": "delete_link",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteLinkRoutingRule",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteLinkRoutingRule",
+          "Service": "rtbfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rtbfabric",
+          "Method": "delete_link_routing_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteOutboundExternalLink",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteOutboundExternalLink",
+          "Service": "rtbfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rtbfabric",
+          "Method": "delete_outbound_external_link",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRequesterGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRequesterGateway",
+          "Service": "rtbfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rtbfabric",
+          "Method": "delete_requester_gateway",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteResponderGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteResponderGateway",
+          "Service": "rtbfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rtbfabric",
+          "Method": "delete_responder_gateway",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateCertificate",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateCertificate",
+          "Service": "rtbfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rtbfabric",
+          "Method": "disassociate_certificate",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCertificateAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCertificateAssociation",
+          "Service": "rtbfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rtbfabric",
+          "Method": "get_certificate_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetInboundExternalLink",
+      "AuthorizedActions": [
+        {
+          "Name": "GetInboundExternalLink",
+          "Service": "rtbfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rtbfabric",
+          "Method": "get_inbound_external_link",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetLink",
+      "AuthorizedActions": [
+        {
+          "Name": "GetLink",
+          "Service": "rtbfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rtbfabric",
+          "Method": "get_link",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetLinkRoutingRule",
+      "AuthorizedActions": [
+        {
+          "Name": "GetLinkRoutingRule",
+          "Service": "rtbfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rtbfabric",
+          "Method": "get_link_routing_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetOutboundExternalLink",
+      "AuthorizedActions": [
+        {
+          "Name": "GetOutboundExternalLink",
+          "Service": "rtbfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rtbfabric",
+          "Method": "get_outbound_external_link",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRequesterGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRequesterGateway",
+          "Service": "rtbfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rtbfabric",
+          "Method": "get_requester_gateway",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResponderGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResponderGateway",
+          "Service": "rtbfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rtbfabric",
+          "Method": "get_responder_gateway",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCertificateAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCertificateAssociations",
+          "Service": "rtbfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rtbfabric",
+          "Method": "list_certificate_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListLinkRoutingRules",
+      "AuthorizedActions": [
+        {
+          "Name": "ListLinkRoutingRules",
+          "Service": "rtbfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rtbfabric",
+          "Method": "list_link_routing_rules",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListLinks",
+      "AuthorizedActions": [
+        {
+          "Name": "ListLinks",
+          "Service": "rtbfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rtbfabric",
+          "Method": "list_links",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRequesterGateways",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRequesterGateways",
+          "Service": "rtbfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rtbfabric",
+          "Method": "list_requester_gateways",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListResponderGateways",
+      "AuthorizedActions": [
+        {
+          "Name": "ListResponderGateways",
+          "Service": "rtbfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rtbfabric",
+          "Method": "list_responder_gateways",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "rtbfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rtbfabric",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RejectLink",
+      "AuthorizedActions": [
+        {
+          "Name": "RejectLink",
+          "Service": "rtbfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rtbfabric",
+          "Method": "reject_link",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "rtbfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rtbfabric",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "rtbfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rtbfabric",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateLink",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateLink",
+          "Service": "rtbfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rtbfabric",
+          "Method": "update_link",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateLinkModuleFlow",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateLinkModuleFlow",
+          "Service": "rtbfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rtbfabric",
+          "Method": "update_link_module_flow",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateLinkRoutingRule",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateLinkRoutingRule",
+          "Service": "rtbfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rtbfabric",
+          "Method": "update_link_routing_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRequesterGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateRequesterGateway",
+          "Service": "rtbfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rtbfabric",
+          "Method": "update_requester_gateway",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateResponderGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateResponderGateway",
+          "Service": "rtbfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rtbfabric",
+          "Method": "update_responder_gateway",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "InboundExternalLink",
+      "ARNFormats": [
+        "arn:${Partition}:rtbfabric:${Region}:${Account}:gateway/${GatewayId}/link/${LinkId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "rtbfabric:InboundExternalLinkLinkId",
+        "rtbfabric:ResponderGatewayGatewayId"
+      ]
+    },
+    {
+      "Name": "Link",
+      "ARNFormats": [
+        "arn:${Partition}:rtbfabric:${Region}:${Account}:gateway/${GatewayId}/link/${LinkId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "rtbfabric:LinkLinkId",
+        "rtbfabric:RequesterGatewayGatewayId",
+        "rtbfabric:ResponderGatewayGatewayId"
+      ]
+    },
+    {
+      "Name": "LinkRoutingRule",
+      "ARNFormats": [
+        "arn:${Partition}:rtbfabric:${Region}:${Account}:gateway/${GatewayId}/link/${LinkId}/routing-rule/${RuleId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "rtbfabric:LinkLinkId",
+        "rtbfabric:LinkRoutingRuleRuleId"
+      ]
+    },
+    {
+      "Name": "OutboundExternalLink",
+      "ARNFormats": [
+        "arn:${Partition}:rtbfabric:${Region}:${Account}:gateway/${GatewayId}/link/${LinkId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "rtbfabric:OutboundExternalLinkLinkId",
+        "rtbfabric:RequesterGatewayGatewayId"
+      ]
+    },
+    {
+      "Name": "RequesterGateway",
+      "ARNFormats": [
+        "arn:${Partition}:rtbfabric:${Region}:${Account}:gateway/${GatewayId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "rtbfabric:RequesterGatewayGatewayId"
+      ]
+    },
+    {
+      "Name": "ResponderGateway",
+      "ARNFormats": [
+        "arn:${Partition}:rtbfabric:${Region}:${Account}:gateway/${GatewayId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "rtbfabric:ResponderGatewayGatewayId"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

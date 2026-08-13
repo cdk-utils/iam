@@ -1,0 +1,1915 @@
+{
+  "Name": "opensearch",
+  "Actions": [
+    {
+      "Name": "ApplicationAccessAll",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CancelAutoOptimizeJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CancelDirectQuery",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "datasource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteAutoOptimizeJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAutoOptimizeJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDirectQuery",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "datasource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDirectQueryResult",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "datasource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAutoOptimizeJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartDirectQuery",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "datasource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SubmitAutoOptimizeJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ViewLoginPage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AcceptInboundConnection",
+      "AuthorizedActions": [
+        {
+          "Name": "AcceptInboundConnection",
+          "Service": "es"
+        },
+        {
+          "Name": "AcceptInboundCrossClusterSearchConnection",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "accept_inbound_connection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AddDataSource",
+      "AuthorizedActions": [
+        {
+          "Name": "AddDataSource",
+          "Service": "es"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "directquery.opensearchservice.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "add_data_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AddDirectQueryDataSource",
+      "AuthorizedActions": [
+        {
+          "Name": "AddDirectQueryDataSource",
+          "Service": "es"
+        },
+        {
+          "Name": "AddTags",
+          "Service": "es"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "directquery.opensearchservice.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "add_direct_query_data_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AddTags",
+      "AuthorizedActions": [
+        {
+          "Name": "AddTags",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "add_tags",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociatePackage",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociatePackage",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "associate_package",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociatePackages",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociatePackages",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "associate_packages",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AttachDataSource",
+      "AuthorizedActions": [
+        {
+          "Name": "AttachDataSource",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "attach_data_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AuthorizeVpcEndpointAccess",
+      "AuthorizedActions": [
+        {
+          "Name": "AuthorizeVpcEndpointAccess",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "authorize_vpc_endpoint_access",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelDomainConfigChange",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelDomainConfigChange",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "cancel_domain_config_change",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelServiceSoftwareUpdate",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelElasticsearchServiceSoftwareUpdate",
+          "Service": "es"
+        },
+        {
+          "Name": "CancelServiceSoftwareUpdate",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "cancel_service_software_update",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "AddTags",
+          "Service": "es"
+        },
+        {
+          "Name": "CreateApplication",
+          "Service": "es"
+        },
+        {
+          "Name": "PassRole",
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "create_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "AddTags",
+          "Service": "es"
+        },
+        {
+          "Name": "CreateDomain",
+          "Service": "es"
+        },
+        {
+          "Name": "CreateElasticsearchDomain",
+          "Service": "es"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "es.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "create_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateIndex",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateIndex",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "create_index",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateOutboundConnection",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateOutboundConnection",
+          "Service": "es"
+        },
+        {
+          "Name": "CreateOutboundCrossClusterSearchConnection",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "create_outbound_connection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePackage",
+      "AuthorizedActions": [
+        {
+          "Name": "CreatePackage",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "create_package",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateVpcEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateVpcEndpoint",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "create_vpc_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteApplication",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "delete_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDataSource",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDataSource",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "delete_data_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDirectQueryDataSource",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDirectQueryDataSource",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "delete_direct_query_data_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDomain",
+          "Service": "es"
+        },
+        {
+          "Name": "DeleteElasticsearchDomain",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "delete_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteInboundConnection",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteInboundConnection",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "delete_inbound_connection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteIndex",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteIndex",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "delete_index",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteOutboundConnection",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteOutboundConnection",
+          "Service": "es"
+        },
+        {
+          "Name": "DeleteOutboundCrossClusterSearchConnection",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "delete_outbound_connection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePackage",
+      "AuthorizedActions": [
+        {
+          "Name": "DeletePackage",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "delete_package",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteVpcEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteVpcEndpoint",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "delete_vpc_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeregisterCapability",
+      "AuthorizedActions": [
+        {
+          "Name": "DeregisterCapability",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "deregister_capability",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDataSourceAttachment",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDataSourceAttachment",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "describe_data_source_attachment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDomain",
+          "Service": "es"
+        },
+        {
+          "Name": "DescribeElasticsearchDomain",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "describe_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDomainAutoTunes",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDomainAutoTunes",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "describe_domain_auto_tunes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDomainChangeProgress",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDomainChangeProgress",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "describe_domain_change_progress",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDomainConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDomainConfig",
+          "Service": "es"
+        },
+        {
+          "Name": "DescribeElasticsearchDomainConfig",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "describe_domain_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDomainHealth",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDomainHealth",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "describe_domain_health",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDomainNodes",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDomainNodes",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "describe_domain_nodes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDomains",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDomains",
+          "Service": "es"
+        },
+        {
+          "Name": "DescribeElasticsearchDomains",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "describe_domains",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDryRunProgress",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDryRunProgress",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "describe_dry_run_progress",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeInboundConnections",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeInboundConnections",
+          "Service": "es"
+        },
+        {
+          "Name": "DescribeInboundCrossClusterSearchConnections",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "describe_inbound_connections",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeInsightDetails",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeInsightDetails",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "describe_insight_details",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeInstanceTypeLimits",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeElasticsearchInstanceTypeLimits",
+          "Service": "es"
+        },
+        {
+          "Name": "DescribeInstanceTypeLimits",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "describe_instance_type_limits",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeOutboundConnections",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeOutboundConnections",
+          "Service": "es"
+        },
+        {
+          "Name": "DescribeOutboundCrossClusterSearchConnections",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "describe_outbound_connections",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribePackages",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribePackages",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "describe_packages",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeReservedInstanceOfferings",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeReservedElasticsearchInstanceOfferings",
+          "Service": "es"
+        },
+        {
+          "Name": "DescribeReservedInstanceOfferings",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "describe_reserved_instance_offerings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeReservedInstances",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeReservedElasticsearchInstances",
+          "Service": "es"
+        },
+        {
+          "Name": "DescribeReservedInstances",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "describe_reserved_instances",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeVpcEndpoints",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeVpcEndpoints",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "describe_vpc_endpoints",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DetachDataSource",
+      "AuthorizedActions": [
+        {
+          "Name": "DetachDataSource",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "detach_data_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DissociatePackage",
+      "AuthorizedActions": [
+        {
+          "Name": "DissociatePackage",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "dissociate_package",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DissociatePackages",
+      "AuthorizedActions": [
+        {
+          "Name": "DissociatePackages",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "dissociate_packages",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "GetApplication",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "get_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCapability",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCapability",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "get_capability",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCompatibleVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCompatibleElasticsearchVersions",
+          "Service": "es"
+        },
+        {
+          "Name": "GetCompatibleVersions",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "get_compatible_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDataSource",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDataSource",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "get_data_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDefaultApplicationSetting",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDefaultApplicationSetting",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "get_default_application_setting",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDirectQueryDataSource",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDirectQueryDataSource",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "get_direct_query_data_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDomainMaintenanceStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDomainMaintenanceStatus",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "get_domain_maintenance_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetIndex",
+      "AuthorizedActions": [
+        {
+          "Name": "GetIndex",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "get_index",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMigration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMigration",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "get_migration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPackageVersionHistory",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPackageVersionHistory",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "get_package_version_history",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetUpgradeHistory",
+      "AuthorizedActions": [
+        {
+          "Name": "GetUpgradeHistory",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "get_upgrade_history",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetUpgradeStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "GetUpgradeStatus",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "get_upgrade_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "InsightFeedback",
+      "AuthorizedActions": [
+        {
+          "Name": "InsightFeedback",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "insight_feedback",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListApplications",
+      "AuthorizedActions": [
+        {
+          "Name": "ListApplications",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "list_applications",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDataSourceAttachments",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDataSourceAttachments",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "list_data_source_attachments",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDataSources",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDataSources",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "list_data_sources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDirectQueryDataSources",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDirectQueryDataSources",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "list_direct_query_data_sources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDomainMaintenances",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDomainMaintenances",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "list_domain_maintenances",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDomainNames",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDomainNames",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "list_domain_names",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDomainsForPackage",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDomainsForPackage",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "list_domains_for_package",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListInsights",
+      "AuthorizedActions": [
+        {
+          "Name": "ListInsights",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "list_insights",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListInstanceTypeDetails",
+      "AuthorizedActions": [
+        {
+          "Name": "ListElasticsearchInstanceTypeDetails",
+          "Service": "es"
+        },
+        {
+          "Name": "ListInstanceTypeDetails",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "list_instance_type_details",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMigrations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListMigrations",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "list_migrations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPackagesForDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPackagesForDomain",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "list_packages_for_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListScheduledActions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListScheduledActions",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "list_scheduled_actions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTags",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTags",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "list_tags",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListElasticsearchVersions",
+          "Service": "es"
+        },
+        {
+          "Name": "ListVersions",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "list_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListVpcEndpointAccess",
+      "AuthorizedActions": [
+        {
+          "Name": "ListVpcEndpointAccess",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "list_vpc_endpoint_access",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListVpcEndpoints",
+      "AuthorizedActions": [
+        {
+          "Name": "ListVpcEndpoints",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "list_vpc_endpoints",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListVpcEndpointsForDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "ListVpcEndpointsForDomain",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "list_vpc_endpoints_for_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PurchaseReservedInstanceOffering",
+      "AuthorizedActions": [
+        {
+          "Name": "PurchaseReservedElasticsearchInstanceOffering",
+          "Service": "es"
+        },
+        {
+          "Name": "PurchaseReservedInstanceOffering",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "purchase_reserved_instance_offering",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutDefaultApplicationSetting",
+      "AuthorizedActions": [
+        {
+          "Name": "PutDefaultApplicationSetting",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "put_default_application_setting",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RegisterCapability",
+      "AuthorizedActions": [
+        {
+          "Name": "RegisterCapability",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "register_capability",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RejectInboundConnection",
+      "AuthorizedActions": [
+        {
+          "Name": "RejectInboundConnection",
+          "Service": "es"
+        },
+        {
+          "Name": "RejectInboundCrossClusterSearchConnection",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "reject_inbound_connection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RemoveTags",
+      "AuthorizedActions": [
+        {
+          "Name": "RemoveTags",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "remove_tags",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RevokeVpcEndpointAccess",
+      "AuthorizedActions": [
+        {
+          "Name": "RevokeVpcEndpointAccess",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "revoke_vpc_endpoint_access",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RollbackServiceSoftwareUpdate",
+      "AuthorizedActions": [
+        {
+          "Name": "RollbackElasticsearchServiceSoftwareUpdate",
+          "Service": "es"
+        },
+        {
+          "Name": "RollbackServiceSoftwareUpdate",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "rollback_service_software_update",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartDomainMaintenance",
+      "AuthorizedActions": [
+        {
+          "Name": "StartDomainMaintenance",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "start_domain_maintenance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartMigration",
+      "AuthorizedActions": [
+        {
+          "Name": "StartMigration",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "start_migration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartServiceSoftwareUpdate",
+      "AuthorizedActions": [
+        {
+          "Name": "StartElasticsearchServiceSoftwareUpdate",
+          "Service": "es"
+        },
+        {
+          "Name": "StartServiceSoftwareUpdate",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "start_service_software_update",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateApplication",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "update_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDataSource",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "directquery.opensearchservice.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateDataSource",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "update_data_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDirectQueryDataSource",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "directquery.opensearchservice.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateDirectQueryDataSource",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "update_direct_query_data_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDomainConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "es.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateDomainConfig",
+          "Service": "es"
+        },
+        {
+          "Name": "UpdateElasticsearchDomainConfig",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "update_domain_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateIndex",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateIndex",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "update_index",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdatePackage",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdatePackage",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "update_package",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdatePackageScope",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdatePackageScope",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "update_package_scope",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateScheduledAction",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateScheduledAction",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "update_scheduled_action",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateVpcEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateVpcEndpoint",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "update_vpc_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpgradeDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "UpgradeDomain",
+          "Service": "es"
+        },
+        {
+          "Name": "UpgradeElasticsearchDomain",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearch",
+          "Method": "upgrade_domain",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "application",
+      "ARNFormats": [
+        "arn:${Partition}:opensearch:${Region}:${Account}:application/${AppId}"
+      ]
+    },
+    {
+      "Name": "datasource",
+      "ARNFormats": [
+        "arn:${Partition}:opensearch:${Region}:${Account}:datasource/${DataSourceName}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

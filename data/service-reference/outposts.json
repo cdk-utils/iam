@@ -1,0 +1,1551 @@
+{
+  "Name": "outposts",
+  "Actions": [
+    {
+      "Name": "CancelCapacityTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "outpost"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CancelOrder",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateOrder",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "outpost"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateOutpost",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "site"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreatePrivateConnectivityConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "outpost"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateQuote",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateRenewal",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "outpost"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateSite",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteOutpost",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "outpost"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteQuote",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteSite",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "site"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCapacityTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "outpost"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCatalogItem",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetConnection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetOrder",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetOutpost",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "outpost"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetOutpostBillingInformation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "outpost"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetOutpostInstanceTypes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "outpost"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetOutpostSupportedInstanceTypes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "outpost"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetPrivateConnectivityConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "outpost"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetQuote",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetRenewalPricing",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "outpost"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSite",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "site"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSiteAddress",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "site"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAssetInstances",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "outpost"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAssets",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "outpost"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListBlockingInstancesForCapacityTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "outpost"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListCapacityTasks",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListCatalogItems",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListOrderableInstanceTypes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListOrders",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListOutposts",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListQuotes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListSites",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartCapacityTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "outpost"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartConnection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "outpost"
+        },
+        {
+          "Name": "site"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "outpost"
+        },
+        {
+          "Name": "site"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateOutpost",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "outpost"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateQuote",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateSite",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "site"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateSiteAddress",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "site"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateSiteRackPhysicalProperties",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "site"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CancelCapacityTask",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelCapacityTask",
+          "Service": "outposts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "outposts",
+          "Method": "cancel_capacity_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelOrder",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelOrder",
+          "Service": "outposts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "outposts",
+          "Method": "cancel_order",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateOrder",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateOrder",
+          "Service": "outposts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "outposts",
+          "Method": "create_order",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateOutpost",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateOutpost",
+          "Service": "outposts"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "outposts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "outposts",
+          "Method": "create_outpost",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateQuote",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateQuote",
+          "Service": "outposts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "outposts",
+          "Method": "create_quote",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRenewal",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRenewal",
+          "Service": "outposts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "outposts",
+          "Method": "create_renewal",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSite",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSite",
+          "Service": "outposts"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "outposts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "outposts",
+          "Method": "create_site",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteOutpost",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteOutpost",
+          "Service": "outposts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "outposts",
+          "Method": "delete_outpost",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteQuote",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteQuote",
+          "Service": "outposts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "outposts",
+          "Method": "delete_quote",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSite",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSite",
+          "Service": "outposts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "outposts",
+          "Method": "delete_site",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCapacityTask",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCapacityTask",
+          "Service": "outposts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "outposts",
+          "Method": "get_capacity_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCatalogItem",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCatalogItem",
+          "Service": "outposts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "outposts",
+          "Method": "get_catalog_item",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetConnection",
+      "AuthorizedActions": [
+        {
+          "Name": "GetConnection",
+          "Service": "outposts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "outposts",
+          "Method": "get_connection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetOrder",
+      "AuthorizedActions": [
+        {
+          "Name": "GetOrder",
+          "Service": "outposts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "outposts",
+          "Method": "get_order",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetOutpost",
+      "AuthorizedActions": [
+        {
+          "Name": "GetOutpost",
+          "Service": "outposts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "outposts",
+          "Method": "get_outpost",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetOutpostBillingInformation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetOutpostBillingInformation",
+          "Service": "outposts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "outposts",
+          "Method": "get_outpost_billing_information",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetOutpostInstanceTypes",
+      "AuthorizedActions": [
+        {
+          "Name": "GetOutpostInstanceTypes",
+          "Service": "outposts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "outposts",
+          "Method": "get_outpost_instance_types",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetOutpostSupportedInstanceTypes",
+      "AuthorizedActions": [
+        {
+          "Name": "GetOutpostSupportedInstanceTypes",
+          "Service": "outposts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "outposts",
+          "Method": "get_outpost_supported_instance_types",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetQuote",
+      "AuthorizedActions": [
+        {
+          "Name": "GetQuote",
+          "Service": "outposts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "outposts",
+          "Method": "get_quote",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRenewalPricing",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRenewalPricing",
+          "Service": "outposts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "outposts",
+          "Method": "get_renewal_pricing",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSite",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSite",
+          "Service": "outposts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "outposts",
+          "Method": "get_site",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSiteAddress",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSiteAddress",
+          "Service": "outposts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "outposts",
+          "Method": "get_site_address",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAssetInstances",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAssetInstances",
+          "Service": "outposts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "outposts",
+          "Method": "list_asset_instances",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAssets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAssets",
+          "Service": "outposts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "outposts",
+          "Method": "list_assets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListBlockingInstancesForCapacityTask",
+      "AuthorizedActions": [
+        {
+          "Name": "ListBlockingInstancesForCapacityTask",
+          "Service": "outposts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "outposts",
+          "Method": "list_blocking_instances_for_capacity_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCapacityTasks",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCapacityTasks",
+          "Service": "outposts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "outposts",
+          "Method": "list_capacity_tasks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCatalogItems",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCatalogItems",
+          "Service": "outposts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "outposts",
+          "Method": "list_catalog_items",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListOrderableInstanceTypes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListOrderableInstanceTypes",
+          "Service": "outposts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "outposts",
+          "Method": "list_orderable_instance_types",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListOrders",
+      "AuthorizedActions": [
+        {
+          "Name": "ListOrders",
+          "Service": "outposts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "outposts",
+          "Method": "list_orders",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListOutposts",
+      "AuthorizedActions": [
+        {
+          "Name": "ListOutposts",
+          "Service": "outposts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "outposts",
+          "Method": "list_outposts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListQuotes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListQuotes",
+          "Service": "outposts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "outposts",
+          "Method": "list_quotes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSites",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSites",
+          "Service": "outposts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "outposts",
+          "Method": "list_sites",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "outposts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "outposts",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartCapacityTask",
+      "AuthorizedActions": [
+        {
+          "Name": "StartCapacityTask",
+          "Service": "outposts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "outposts",
+          "Method": "start_capacity_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartConnection",
+      "AuthorizedActions": [
+        {
+          "Name": "StartConnection",
+          "Service": "outposts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "outposts",
+          "Method": "start_connection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartOutpostDecommission",
+      "SDK": [
+        {
+          "Name": "outposts",
+          "Method": "start_outpost_decommission",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "outposts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "outposts",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "outposts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "outposts",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateOutpost",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateOutpost",
+          "Service": "outposts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "outposts",
+          "Method": "update_outpost",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateQuote",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateQuote",
+          "Service": "outposts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "outposts",
+          "Method": "update_quote",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSite",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSite",
+          "Service": "outposts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "outposts",
+          "Method": "update_site",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSiteAddress",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSiteAddress",
+          "Service": "outposts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "outposts",
+          "Method": "update_site_address",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSiteRackPhysicalProperties",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSiteRackPhysicalProperties",
+          "Service": "outposts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "outposts",
+          "Method": "update_site_rack_physical_properties",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "outpost",
+      "ARNFormats": [
+        "arn:${Partition}:outposts:${Region}:${Account}:outpost/${OutpostId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "site",
+      "ARNFormats": [
+        "arn:${Partition}:outposts:${Region}:${Account}:site/${SiteId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

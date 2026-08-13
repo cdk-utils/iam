@@ -1,0 +1,3125 @@
+{
+  "Name": "ivs",
+  "Actions": [
+    {
+      "Name": "BatchGetChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchGetStreamKey",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Stream-Key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchStartViewerSessionRevocation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateAdConfiguration",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Ad-Configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateChannel",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Channel"
+        },
+        {
+          "Name": "Stream-Key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateEncoderConfiguration",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Encoder-Configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateIngestConfiguration",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Ingest-Configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateParticipantToken",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Stage"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreatePlaybackRestrictionPolicy",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Playback-Restriction-Policy"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateRecordingConfiguration",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Recording-Configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateStage",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Stage"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateStorageConfiguration",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Storage-Configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateStreamKey",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Stream-Key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteAdConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Ad-Configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Channel"
+        },
+        {
+          "Name": "Stream-Key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteEncoderConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Encoder-Configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteIngestConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Ingest-Configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeletePlaybackKeyPair",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Playback-Key-Pair"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeletePlaybackRestrictionPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Playback-Restriction-Policy"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeletePublicKey",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Public-Key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteRecordingConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Recording-Configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteStage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Stage"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteStorageConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Storage-Configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteStreamKey",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Stream-Key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisconnectParticipant",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Stage"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetAdConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Ad-Configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetComposition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Composition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetEncoderConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Encoder-Configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetIngestConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Ingest-Configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetParticipant",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Stage"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetPlaybackKeyPair",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Playback-Key-Pair"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetPlaybackRestrictionPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Playback-Restriction-Policy"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetPublicKey",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Public-Key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetRecordingConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Recording-Configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetStage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Stage"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetStageSession",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Stage"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetStorageConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Storage-Configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetStream",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetStreamKey",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Stream-Key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetStreamSession",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ImportPlaybackKeyPair",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Playback-Key-Pair"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ImportPublicKey",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Public-Key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "InsertAdBreak",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAdConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListChannels",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListCompositions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Encoder-Configuration"
+        },
+        {
+          "Name": "Stage"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListEncoderConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListIngestConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListParticipantEvents",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Stage"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListParticipantReplicas",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Stage"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListParticipants",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Stage"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListPlaybackKeyPairs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Playback-Key-Pair"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListPlaybackRestrictionPolicies",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListPublicKeys",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListRecordingConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Recording-Configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListStageSessions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Stage"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListStages",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Stage"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListStorageConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListStreamKeys",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Channel"
+        },
+        {
+          "Name": "Stream-Key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListStreamSessions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListStreams",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Ad-Configuration"
+        },
+        {
+          "Name": "Channel"
+        },
+        {
+          "Name": "Composition"
+        },
+        {
+          "Name": "Encoder-Configuration"
+        },
+        {
+          "Name": "Ingest-Configuration"
+        },
+        {
+          "Name": "Playback-Key-Pair"
+        },
+        {
+          "Name": "Playback-Restriction-Policy"
+        },
+        {
+          "Name": "Public-Key"
+        },
+        {
+          "Name": "Recording-Configuration"
+        },
+        {
+          "Name": "Stage"
+        },
+        {
+          "Name": "Storage-Configuration"
+        },
+        {
+          "Name": "Stream-Key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutMetadata",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartComposition",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Channel"
+        },
+        {
+          "Name": "Encoder-Configuration"
+        },
+        {
+          "Name": "Stage"
+        },
+        {
+          "Name": "Storage-Configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartParticipantReplication",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Stage"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartViewerSessionRevocation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopComposition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Composition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopParticipantReplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Stage"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StopStream",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Ad-Configuration"
+        },
+        {
+          "Name": "Channel"
+        },
+        {
+          "Name": "Composition"
+        },
+        {
+          "Name": "Encoder-Configuration"
+        },
+        {
+          "Name": "Ingest-Configuration"
+        },
+        {
+          "Name": "Playback-Key-Pair"
+        },
+        {
+          "Name": "Playback-Restriction-Policy"
+        },
+        {
+          "Name": "Public-Key"
+        },
+        {
+          "Name": "Recording-Configuration"
+        },
+        {
+          "Name": "Stage"
+        },
+        {
+          "Name": "Storage-Configuration"
+        },
+        {
+          "Name": "Stream-Key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Ad-Configuration"
+        },
+        {
+          "Name": "Channel"
+        },
+        {
+          "Name": "Composition"
+        },
+        {
+          "Name": "Encoder-Configuration"
+        },
+        {
+          "Name": "Ingest-Configuration"
+        },
+        {
+          "Name": "Playback-Key-Pair"
+        },
+        {
+          "Name": "Playback-Restriction-Policy"
+        },
+        {
+          "Name": "Public-Key"
+        },
+        {
+          "Name": "Recording-Configuration"
+        },
+        {
+          "Name": "Stage"
+        },
+        {
+          "Name": "Storage-Configuration"
+        },
+        {
+          "Name": "Stream-Key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAdConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateIngestConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Ingest-Configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdatePlaybackRestrictionPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Playback-Restriction-Policy"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateStage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Stage"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "BatchGetChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetChannel",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "batch_get_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetStreamKey",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetStreamKey",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "batch_get_stream_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchStartViewerSessionRevocation",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchStartViewerSessionRevocation",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "batch_start_viewer_session_revocation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAdConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAdConfiguration",
+          "Service": "ivs"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "create_ad_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateChannel",
+          "Service": "ivs"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "create_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateEncoderConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateEncoderConfiguration",
+          "Service": "ivs"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs-realtime",
+          "Method": "create_encoder_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateIngestConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateIngestConfiguration",
+          "Service": "ivs"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs-realtime",
+          "Method": "create_ingest_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateParticipantToken",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateParticipantToken",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs-realtime",
+          "Method": "create_participant_token",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePlaybackRestrictionPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "CreatePlaybackRestrictionPolicy",
+          "Service": "ivs"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "create_playback_restriction_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRecordingConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRecordingConfiguration",
+          "Service": "ivs"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "create_recording_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateStage",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateStage",
+          "Service": "ivs"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs-realtime",
+          "Method": "create_stage",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateStorageConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateStorageConfiguration",
+          "Service": "ivs"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs-realtime",
+          "Method": "create_storage_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateStreamKey",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateStreamKey",
+          "Service": "ivs"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "create_stream_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAdConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAdConfiguration",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "delete_ad_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteChannel",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "delete_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteEncoderConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteEncoderConfiguration",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs-realtime",
+          "Method": "delete_encoder_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteIngestConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteIngestConfiguration",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs-realtime",
+          "Method": "delete_ingest_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePlaybackKeyPair",
+      "AuthorizedActions": [
+        {
+          "Name": "DeletePlaybackKeyPair",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "delete_playback_key_pair",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePlaybackRestrictionPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeletePlaybackRestrictionPolicy",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "delete_playback_restriction_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePublicKey",
+      "AuthorizedActions": [
+        {
+          "Name": "DeletePublicKey",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs-realtime",
+          "Method": "delete_public_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRecordingConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRecordingConfiguration",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "delete_recording_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteStage",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteStage",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs-realtime",
+          "Method": "delete_stage",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteStorageConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteStorageConfiguration",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs-realtime",
+          "Method": "delete_storage_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteStreamKey",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteStreamKey",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "delete_stream_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisconnectParticipant",
+      "AuthorizedActions": [
+        {
+          "Name": "DisconnectParticipant",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs-realtime",
+          "Method": "disconnect_participant",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAdConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAdConfiguration",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "get_ad_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "GetChannel",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "get_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetComposition",
+      "AuthorizedActions": [
+        {
+          "Name": "GetComposition",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs-realtime",
+          "Method": "get_composition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEncoderConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEncoderConfiguration",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs-realtime",
+          "Method": "get_encoder_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetIngestConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetIngestConfiguration",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs-realtime",
+          "Method": "get_ingest_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetParticipant",
+      "AuthorizedActions": [
+        {
+          "Name": "GetParticipant",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs-realtime",
+          "Method": "get_participant",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPlaybackKeyPair",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPlaybackKeyPair",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "get_playback_key_pair",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPlaybackRestrictionPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPlaybackRestrictionPolicy",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "get_playback_restriction_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPublicKey",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPublicKey",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs-realtime",
+          "Method": "get_public_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRecordingConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRecordingConfiguration",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "get_recording_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetStage",
+      "AuthorizedActions": [
+        {
+          "Name": "GetStage",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs-realtime",
+          "Method": "get_stage",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetStageSession",
+      "AuthorizedActions": [
+        {
+          "Name": "GetStageSession",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs-realtime",
+          "Method": "get_stage_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetStorageConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetStorageConfiguration",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs-realtime",
+          "Method": "get_storage_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetStream",
+      "AuthorizedActions": [
+        {
+          "Name": "GetStream",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "get_stream",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetStreamKey",
+      "AuthorizedActions": [
+        {
+          "Name": "GetStreamKey",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "get_stream_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetStreamSession",
+      "AuthorizedActions": [
+        {
+          "Name": "GetStreamSession",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "get_stream_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ImportPlaybackKeyPair",
+      "AuthorizedActions": [
+        {
+          "Name": "ImportPlaybackKeyPair",
+          "Service": "ivs"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "import_playback_key_pair",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ImportPublicKey",
+      "AuthorizedActions": [
+        {
+          "Name": "ImportPublicKey",
+          "Service": "ivs"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs-realtime",
+          "Method": "import_public_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "InsertAdBreak",
+      "AuthorizedActions": [
+        {
+          "Name": "InsertAdBreak",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "insert_ad_break",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAdConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAdConfigurations",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "list_ad_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListChannels",
+      "AuthorizedActions": [
+        {
+          "Name": "ListChannels",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "list_channels",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCompositions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCompositions",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs-realtime",
+          "Method": "list_compositions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEncoderConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEncoderConfigurations",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs-realtime",
+          "Method": "list_encoder_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListIngestConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListIngestConfigurations",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs-realtime",
+          "Method": "list_ingest_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListParticipantEvents",
+      "AuthorizedActions": [
+        {
+          "Name": "ListParticipantEvents",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs-realtime",
+          "Method": "list_participant_events",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListParticipantReplicas",
+      "AuthorizedActions": [
+        {
+          "Name": "ListParticipantReplicas",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs-realtime",
+          "Method": "list_participant_replicas",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListParticipants",
+      "AuthorizedActions": [
+        {
+          "Name": "ListParticipants",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs-realtime",
+          "Method": "list_participants",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPlaybackKeyPairs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPlaybackKeyPairs",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "list_playback_key_pairs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPlaybackRestrictionPolicies",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPlaybackRestrictionPolicies",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "list_playback_restriction_policies",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPublicKeys",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPublicKeys",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs-realtime",
+          "Method": "list_public_keys",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRecordingConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRecordingConfigurations",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "list_recording_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListStageSessions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListStageSessions",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs-realtime",
+          "Method": "list_stage_sessions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListStages",
+      "AuthorizedActions": [
+        {
+          "Name": "ListStages",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs-realtime",
+          "Method": "list_stages",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListStorageConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListStorageConfigurations",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs-realtime",
+          "Method": "list_storage_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListStreamKeys",
+      "AuthorizedActions": [
+        {
+          "Name": "ListStreamKeys",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "list_stream_keys",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListStreamSessions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListStreamSessions",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "list_stream_sessions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListStreams",
+      "AuthorizedActions": [
+        {
+          "Name": "ListStreams",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "list_streams",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "ivs-realtime",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutMetadata",
+      "AuthorizedActions": [
+        {
+          "Name": "PutMetadata",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "put_metadata",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartComposition",
+      "AuthorizedActions": [
+        {
+          "Name": "StartComposition",
+          "Service": "ivs"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs-realtime",
+          "Method": "start_composition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartParticipantReplication",
+      "AuthorizedActions": [
+        {
+          "Name": "StartParticipantReplication",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs-realtime",
+          "Method": "start_participant_replication",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartViewerSessionRevocation",
+      "AuthorizedActions": [
+        {
+          "Name": "StartViewerSessionRevocation",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "start_viewer_session_revocation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopComposition",
+      "AuthorizedActions": [
+        {
+          "Name": "StopComposition",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs-realtime",
+          "Method": "stop_composition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopParticipantReplication",
+      "AuthorizedActions": [
+        {
+          "Name": "StopParticipantReplication",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs-realtime",
+          "Method": "stop_participant_replication",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopStream",
+      "AuthorizedActions": [
+        {
+          "Name": "StopStream",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "stop_stream",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "ivs-realtime",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "ivs-realtime",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAdConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAdConfiguration",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "update_ad_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateChannel",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "update_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateIngestConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateIngestConfiguration",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs-realtime",
+          "Method": "update_ingest_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdatePlaybackRestrictionPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdatePlaybackRestrictionPolicy",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "update_playback_restriction_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateStage",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateStage",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs-realtime",
+          "Method": "update_stage",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "Ad-Configuration",
+      "ARNFormats": [
+        "arn:${Partition}:ivs:${Region}:${Account}:ad-configuration/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Channel",
+      "ARNFormats": [
+        "arn:${Partition}:ivs:${Region}:${Account}:channel/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Composition",
+      "ARNFormats": [
+        "arn:${Partition}:ivs:${Region}:${Account}:composition/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Encoder-Configuration",
+      "ARNFormats": [
+        "arn:${Partition}:ivs:${Region}:${Account}:encoder-configuration/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Ingest-Configuration",
+      "ARNFormats": [
+        "arn:${Partition}:ivs:${Region}:${Account}:ingest-configuration/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Playback-Key-Pair",
+      "ARNFormats": [
+        "arn:${Partition}:ivs:${Region}:${Account}:playback-key/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Playback-Restriction-Policy",
+      "ARNFormats": [
+        "arn:${Partition}:ivs:${Region}:${Account}:playback-restriction-policy/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Public-Key",
+      "ARNFormats": [
+        "arn:${Partition}:ivs:${Region}:${Account}:public-key/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Recording-Configuration",
+      "ARNFormats": [
+        "arn:${Partition}:ivs:${Region}:${Account}:recording-configuration/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Stage",
+      "ARNFormats": [
+        "arn:${Partition}:ivs:${Region}:${Account}:stage/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Storage-Configuration",
+      "ARNFormats": [
+        "arn:${Partition}:ivs:${Region}:${Account}:storage-configuration/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Stream-Key",
+      "ARNFormats": [
+        "arn:${Partition}:ivs:${Region}:${Account}:stream-key/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

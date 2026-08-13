@@ -1,0 +1,2791 @@
+{
+  "Name": "macie2",
+  "Actions": [
+    {
+      "Name": "AcceptInvitation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchGetCustomDataIdentifiers",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "CustomDataIdentifier"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchUpdateAutomatedDiscoveryAccounts",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateAllowList",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateClassificationJob",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ClassificationJob"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateCustomDataIdentifier",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "CustomDataIdentifier"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateFindingsFilter",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "FindingsFilter"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateInvitations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateMember",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Member"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateSampleFindings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeclineInvitations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteAllowList",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AllowList"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteCustomDataIdentifier",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "CustomDataIdentifier"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteFindingsFilter",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "FindingsFilter"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteInvitations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteMember",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Member"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeBuckets",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeClassificationJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ClassificationJob"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeOrganizationConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisableMacie",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisableOrganizationAdminAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateFromAdministratorAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateFromMasterAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateMember",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Member"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "EnableMacie",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "EnableOrganizationAdminAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAdministratorAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAllowList",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AllowList"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAutomatedDiscoveryConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetBucketStatistics",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetClassificationExportConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetClassificationScope",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCustomDataIdentifier",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "CustomDataIdentifier"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetFindingStatistics",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetFindings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetFindingsFilter",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "FindingsFilter"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetFindingsPublicationConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetInvitationsCount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetMacieSession",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetMasterAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetMember",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Member"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetResourceProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetRevealConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSensitiveDataOccurrences",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSensitiveDataOccurrencesAvailability",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSensitivityInspectionTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetUsageStatistics",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetUsageTotals",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAllowLists",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAutomatedDiscoveryAccounts",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListClassificationJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListClassificationScopes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListCustomDataIdentifiers",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListFindings",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListFindingsFilters",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListInvitations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListManagedDataIdentifiers",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListMembers",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListOrganizationAdminAccounts",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListResourceProfileArtifacts",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListResourceProfileDetections",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListSensitivityInspectionTemplates",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AllowList"
+        },
+        {
+          "Name": "ClassificationJob"
+        },
+        {
+          "Name": "CustomDataIdentifier"
+        },
+        {
+          "Name": "FindingsFilter"
+        },
+        {
+          "Name": "Member"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutClassificationExportConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutFindingsPublicationConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SearchResources",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AllowList"
+        },
+        {
+          "Name": "ClassificationJob"
+        },
+        {
+          "Name": "CustomDataIdentifier"
+        },
+        {
+          "Name": "FindingsFilter"
+        },
+        {
+          "Name": "Member"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TestCustomDataIdentifier",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AllowList"
+        },
+        {
+          "Name": "ClassificationJob"
+        },
+        {
+          "Name": "CustomDataIdentifier"
+        },
+        {
+          "Name": "FindingsFilter"
+        },
+        {
+          "Name": "Member"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAllowList",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AllowList"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAutomatedDiscoveryConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateClassificationJob",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ClassificationJob"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateClassificationScope",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateFindingsFilter",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "FindingsFilter"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateMacieSession",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateMemberSession",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateOrganizationConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateResourceProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateResourceProfileDetections",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateRevealConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateSensitivityInspectionTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AcceptInvitation",
+      "AuthorizedActions": [
+        {
+          "Name": "AcceptInvitation",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "accept_invitation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetCustomDataIdentifiers",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetCustomDataIdentifiers",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "batch_get_custom_data_identifiers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchUpdateAutomatedDiscoveryAccounts",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchUpdateAutomatedDiscoveryAccounts",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "batch_update_automated_discovery_accounts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAllowList",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAllowList",
+          "Service": "macie2"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "create_allow_list",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateClassificationJob",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateClassificationJob",
+          "Service": "macie2"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "create_classification_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateCustomDataIdentifier",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCustomDataIdentifier",
+          "Service": "macie2"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "create_custom_data_identifier",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateFindingsFilter",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateFindingsFilter",
+          "Service": "macie2"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "create_findings_filter",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateInvitations",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateInvitations",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "create_invitations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateMember",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateMember",
+          "Service": "macie2"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "create_member",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSampleFindings",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSampleFindings",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "create_sample_findings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeclineInvitations",
+      "AuthorizedActions": [
+        {
+          "Name": "DeclineInvitations",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "decline_invitations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAllowList",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAllowList",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "delete_allow_list",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCustomDataIdentifier",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCustomDataIdentifier",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "delete_custom_data_identifier",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteFindingsFilter",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteFindingsFilter",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "delete_findings_filter",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteInvitations",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteInvitations",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "delete_invitations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteMember",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteMember",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "delete_member",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeBuckets",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeBuckets",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "describe_buckets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeClassificationJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeClassificationJob",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "describe_classification_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeOrganizationConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeOrganizationConfiguration",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "describe_organization_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisableMacie",
+      "AuthorizedActions": [
+        {
+          "Name": "DisableMacie",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "disable_macie",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisableOrganizationAdminAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "DisableOrganizationAdminAccount",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "disable_organization_admin_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateFromAdministratorAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateFromAdministratorAccount",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "disassociate_from_administrator_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateFromMasterAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateFromMasterAccount",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "disassociate_from_master_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateMember",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateMember",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "disassociate_member",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "EnableMacie",
+      "AuthorizedActions": [
+        {
+          "Name": "EnableMacie",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "enable_macie",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "EnableOrganizationAdminAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "EnableOrganizationAdminAccount",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "enable_organization_admin_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAdministratorAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAdministratorAccount",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "get_administrator_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAllowList",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAllowList",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "get_allow_list",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAutomatedDiscoveryConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAutomatedDiscoveryConfiguration",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "get_automated_discovery_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBucketStatistics",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBucketStatistics",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "get_bucket_statistics",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetClassificationExportConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetClassificationExportConfiguration",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "get_classification_export_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetClassificationScope",
+      "AuthorizedActions": [
+        {
+          "Name": "GetClassificationScope",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "get_classification_scope",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCustomDataIdentifier",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCustomDataIdentifier",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "get_custom_data_identifier",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetFindingStatistics",
+      "AuthorizedActions": [
+        {
+          "Name": "GetFindingStatistics",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "get_finding_statistics",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetFindings",
+      "AuthorizedActions": [
+        {
+          "Name": "GetFindings",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "get_findings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetFindingsFilter",
+      "AuthorizedActions": [
+        {
+          "Name": "GetFindingsFilter",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "get_findings_filter",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetFindingsPublicationConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetFindingsPublicationConfiguration",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "get_findings_publication_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetInvitationsCount",
+      "AuthorizedActions": [
+        {
+          "Name": "GetInvitationsCount",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "get_invitations_count",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMacieSession",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMacieSession",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "get_macie_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMasterAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMasterAccount",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "get_master_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMember",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMember",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "get_member",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResourceProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResourceProfile",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "get_resource_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRevealConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRevealConfiguration",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "get_reveal_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSensitiveDataOccurrences",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSensitiveDataOccurrences",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "get_sensitive_data_occurrences",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSensitiveDataOccurrencesAvailability",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSensitiveDataOccurrencesAvailability",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "get_sensitive_data_occurrences_availability",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSensitivityInspectionTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSensitivityInspectionTemplate",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "get_sensitivity_inspection_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetUsageStatistics",
+      "AuthorizedActions": [
+        {
+          "Name": "GetUsageStatistics",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "get_usage_statistics",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetUsageTotals",
+      "AuthorizedActions": [
+        {
+          "Name": "GetUsageTotals",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "get_usage_totals",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAllowLists",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAllowLists",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "list_allow_lists",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAutomatedDiscoveryAccounts",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAutomatedDiscoveryAccounts",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "list_automated_discovery_accounts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListClassificationJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListClassificationJobs",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "list_classification_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListClassificationScopes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListClassificationScopes",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "list_classification_scopes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCustomDataIdentifiers",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCustomDataIdentifiers",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "list_custom_data_identifiers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFindings",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFindings",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "list_findings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFindingsFilters",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFindingsFilters",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "list_findings_filters",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListInvitations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListInvitations",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "list_invitations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListManagedDataIdentifiers",
+      "AuthorizedActions": [
+        {
+          "Name": "ListManagedDataIdentifiers",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "list_managed_data_identifiers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMembers",
+      "AuthorizedActions": [
+        {
+          "Name": "ListMembers",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "list_members",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListOrganizationAdminAccounts",
+      "AuthorizedActions": [
+        {
+          "Name": "ListOrganizationAdminAccounts",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "list_organization_admin_accounts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListResourceProfileArtifacts",
+      "AuthorizedActions": [
+        {
+          "Name": "ListResourceProfileArtifacts",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "list_resource_profile_artifacts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListResourceProfileDetections",
+      "AuthorizedActions": [
+        {
+          "Name": "ListResourceProfileDetections",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "list_resource_profile_detections",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSensitivityInspectionTemplates",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSensitivityInspectionTemplates",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "list_sensitivity_inspection_templates",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutClassificationExportConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "PutClassificationExportConfiguration",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "put_classification_export_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutFindingsPublicationConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "PutFindingsPublicationConfiguration",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "put_findings_publication_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SearchResources",
+      "AuthorizedActions": [
+        {
+          "Name": "SearchResources",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "search_resources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TestCustomDataIdentifier",
+      "AuthorizedActions": [
+        {
+          "Name": "TestCustomDataIdentifier",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "test_custom_data_identifier",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAllowList",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAllowList",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "update_allow_list",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAutomatedDiscoveryConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAutomatedDiscoveryConfiguration",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "update_automated_discovery_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateClassificationJob",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateClassificationJob",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "update_classification_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateClassificationScope",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateClassificationScope",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "update_classification_scope",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateFindingsFilter",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateFindingsFilter",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "update_findings_filter",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateMacieSession",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateMacieSession",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "update_macie_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateMemberSession",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateMemberSession",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "update_member_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateOrganizationConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateOrganizationConfiguration",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "update_organization_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateResourceProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateResourceProfile",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "update_resource_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateResourceProfileDetections",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateResourceProfileDetections",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "update_resource_profile_detections",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRevealConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "reveal-samples.macie.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateRevealConfiguration",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "update_reveal_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSensitivityInspectionTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSensitivityInspectionTemplate",
+          "Service": "macie2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "macie2",
+          "Method": "update_sensitivity_inspection_template",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "AllowList",
+      "ARNFormats": [
+        "arn:${Partition}:macie2:${Region}:${Account}:allow-list/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "ClassificationJob",
+      "ARNFormats": [
+        "arn:${Partition}:macie2:${Region}:${Account}:classification-job/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "CustomDataIdentifier",
+      "ARNFormats": [
+        "arn:${Partition}:macie2:${Region}:${Account}:custom-data-identifier/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "FindingsFilter",
+      "ARNFormats": [
+        "arn:${Partition}:macie2:${Region}:${Account}:findings-filter/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Member",
+      "ARNFormats": [
+        "arn:${Partition}:macie2:${Region}:${Account}:member/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

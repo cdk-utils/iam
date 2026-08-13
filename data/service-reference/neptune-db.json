@@ -1,0 +1,1129 @@
+{
+  "Name": "neptune-db",
+  "Actions": [
+    {
+      "Name": "CancelLoaderJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CancelMLDataProcessingJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CancelMLModelTrainingJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CancelMLModelTransformJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CancelQuery",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateMLEndpoint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteDataViaQuery",
+      "ActionConditionKeys": [
+        "neptune-db:QueryLanguage"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteMLEndpoint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteStatistics",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetEngineStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetGraphSummary",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetLoaderJobStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetMLDataProcessingJobStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetMLEndpointStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetMLModelTrainingJobStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetMLModelTransformJobStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetQueryStatus",
+      "ActionConditionKeys": [
+        "neptune-db:QueryLanguage"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetStatisticsStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetStreamRecords",
+      "ActionConditionKeys": [
+        "neptune-db:QueryLanguage"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListLoaderJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListMLDataProcessingJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListMLEndpoints",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListMLModelTrainingJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListMLModelTransformJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ManageStatistics",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ReadDataViaQuery",
+      "ActionConditionKeys": [
+        "neptune-db:QueryLanguage"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ResetDatabase",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartLoaderJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartMLDataProcessingJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartMLModelTrainingJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartMLModelTransformJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "WriteDataViaQuery",
+      "ActionConditionKeys": [
+        "neptune-db:QueryLanguage"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "connect",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "neptune-db:QueryLanguage",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CancelGremlinQuery",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "cancel_gremlin_query",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelLoaderJob",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "cancel_loader_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelMLDataProcessingJob",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "cancel_ml_data_processing_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelMLModelTrainingJob",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "cancel_ml_model_training_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelMLModelTransformJob",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "cancel_ml_model_transform_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelOpenCypherQuery",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "cancel_open_cypher_query",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateMLEndpoint",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "create_ml_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteMLEndpoint",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "delete_ml_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePropertygraphStatistics",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "delete_propertygraph_statistics",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSparqlStatistics",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "delete_sparql_statistics",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ExecuteFastReset",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "execute_fast_reset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ExecuteGremlinExplainQuery",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "execute_gremlin_explain_query",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ExecuteGremlinProfileQuery",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "execute_gremlin_profile_query",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ExecuteGremlinQuery",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "execute_gremlin_query",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ExecuteOpenCypherExplainQuery",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "execute_open_cypher_explain_query",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ExecuteOpenCypherQuery",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "execute_open_cypher_query",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEngineStatus",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "get_engine_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetGremlinQueryStatus",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "get_gremlin_query_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetLoaderJobStatus",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "get_loader_job_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMLDataProcessingJob",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "get_ml_data_processing_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMLEndpoint",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "get_ml_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMLModelTrainingJob",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "get_ml_model_training_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMLModelTransformJob",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "get_ml_model_transform_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetOpenCypherQueryStatus",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "get_open_cypher_query_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPropertygraphStatistics",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "get_propertygraph_statistics",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPropertygraphStream",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "get_propertygraph_stream",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPropertygraphSummary",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "get_propertygraph_summary",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRDFGraphSummary",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "get_rdf_graph_summary",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSparqlStatistics",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "get_sparql_statistics",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSparqlStream",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "get_sparql_stream",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListGremlinQueries",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "list_gremlin_queries",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListLoaderJobs",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "list_loader_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMLDataProcessingJobs",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "list_ml_data_processing_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMLEndpoints",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "list_ml_endpoints",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMLModelTrainingJobs",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "list_ml_model_training_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMLModelTransformJobs",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "list_ml_model_transform_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListOpenCypherQueries",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "list_open_cypher_queries",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ManagePropertygraphStatistics",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "manage_propertygraph_statistics",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ManageSparqlStatistics",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "manage_sparql_statistics",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartLoaderJob",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "start_loader_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartMLDataProcessingJob",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "start_ml_data_processing_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartMLModelTrainingJob",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "start_ml_model_training_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartMLModelTransformJob",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "start_ml_model_transform_job",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "database",
+      "ARNFormats": [
+        "arn:${Partition}:neptune-db:${Region}:${Account}:${ClusterResourceId}/*"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

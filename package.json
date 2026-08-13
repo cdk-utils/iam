@@ -15,6 +15,9 @@
     "default": "npx projen default",
     "docgen": "npx projen docgen",
     "eject": "npx projen eject",
+    "generate-constants": "npx projen generate-constants",
+    "generate-index": "npx projen generate-index",
+    "generate-service": "npx projen generate-service",
     "package": "npx projen package",
     "package-all": "npx projen package-all",
     "package:js": "npx projen package:js",
@@ -22,9 +25,11 @@
     "post-upgrade": "npx projen post-upgrade",
     "pre-compile": "npx projen pre-compile",
     "release": "npx projen release",
+    "sync-service-reference": "npx projen sync-service-reference",
     "test": "npx projen test",
     "test:watch": "npx projen test:watch",
     "unbump": "npx projen unbump",
+    "update-service-reference": "npx projen update-service-reference",
     "upgrade": "npx projen upgrade",
     "watch": "npx projen watch",
     "projen": "npx projen"
@@ -36,6 +41,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^2",
+    "@cdk_utils/projen_template": "^2.0.0",
     "@types/jest": "^30.0.0",
     "@types/node": "^26.2.0",
     "aws-cdk-lib": "2.150.0",
@@ -51,8 +57,8 @@
     "projen": "0.99.0",
     "ts-jest": "^29.4.12",
     "ts-node": "^10.9.2",
-    "typescript": "~5.7.0",
-    "@cdk_utils/projen_template": "^2.0.0"
+    "tsx": "^4.23.12",
+    "typescript": "~5.7.0"
   },
   "peerDependencies": {
     "aws-cdk-lib": "^2.150.0",

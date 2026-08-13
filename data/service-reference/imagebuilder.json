@@ -1,0 +1,3323 @@
+{
+  "Name": "imagebuilder",
+  "Actions": [
+    {
+      "Name": "CancelImageCreation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "image"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CancelLifecycleExecution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "lifecycleExecution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateComponent",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "component"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateContainerRecipe",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "containerRecipe"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateDistributionConfiguration",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "distributionConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateImage",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "image"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateImagePipeline",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "imagePipeline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateImageRecipe",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "imageRecipe"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateInfrastructureConfiguration",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "imagebuilder:CreatedResourceTag/${TagKey}",
+        "imagebuilder:CreatedResourceTagKeys",
+        "imagebuilder:Ec2MetadataHttpTokens",
+        "imagebuilder:StatusTopicArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "infrastructureConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateLifecyclePolicy",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "imagebuilder:LifecyclePolicyResourceType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "lifecyclePolicy"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateWorkflow",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workflow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteComponent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "component"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteContainerRecipe",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "containerRecipe"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteDistributionConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "distributionConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteImage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "image"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteImagePipeline",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "imagePipeline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteImageRecipe",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "imageRecipe"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteInfrastructureConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "infrastructureConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteLifecyclePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "lifecyclePolicy"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteWorkflow",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workflow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DistributeImage",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "image"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetComponent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "component"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetComponentPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "component"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetContainerRecipe",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "containerRecipe"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetContainerRecipePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "containerRecipe"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDistributionConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "distributionConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetImage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "image"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetImagePipeline",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "imagePipeline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetImagePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "image"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetImageRecipe",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "imageRecipe"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetImageRecipePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "imageRecipe"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetInfrastructureConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "infrastructureConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetLifecycleExecution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "lifecycleExecution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetLifecyclePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "lifecyclePolicy"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetMarketplaceResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "component"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetWorkflow",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workflow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetWorkflowExecution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workflowExecution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetWorkflowStepExecution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workflowStepExecution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ImportComponent",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "component"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ImportDiskImage",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "imageVersion"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ImportVmImage",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "imageVersion"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListComponentBuildVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "allComponentBuildVersions"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListComponents",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListContainerRecipes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDistributionConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListImageBuildVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "allImageBuildVersions"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListImagePackages",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "image"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListImagePipelineImages",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "imagePipeline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListImagePipelines",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListImageRecipes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListImageScanFindingAggregations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "image"
+        },
+        {
+          "Name": "imagePipeline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListImageScanFindings",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "image"
+        },
+        {
+          "Name": "imagePipeline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListImages",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListInfrastructureConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListLifecycleExecutionResources",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "lifecycleExecution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListLifecycleExecutions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "image"
+        },
+        {
+          "Name": "lifecyclePolicy"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListLifecyclePolicies",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "component"
+        },
+        {
+          "Name": "containerRecipe"
+        },
+        {
+          "Name": "distributionConfiguration"
+        },
+        {
+          "Name": "image"
+        },
+        {
+          "Name": "imagePipeline"
+        },
+        {
+          "Name": "imageRecipe"
+        },
+        {
+          "Name": "infrastructureConfiguration"
+        },
+        {
+          "Name": "lifecyclePolicy"
+        },
+        {
+          "Name": "workflow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListWaitingWorkflowSteps",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListWorkflowBuildVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "allWorkflowBuildVersions"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListWorkflowExecutions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "image"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListWorkflowStepExecutions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workflowExecution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListWorkflows",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutComponentPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "component"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutContainerRecipePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "containerRecipe"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutImagePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "image"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutImageRecipePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "imageRecipe"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RetryImage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "image"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SendWorkflowStepAction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "image"
+        },
+        {
+          "Name": "workflowStepExecution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartImagePipelineExecution",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "imagePipeline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartResourceStateUpdate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "image"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "component"
+        },
+        {
+          "Name": "containerRecipe"
+        },
+        {
+          "Name": "distributionConfiguration"
+        },
+        {
+          "Name": "image"
+        },
+        {
+          "Name": "imagePipeline"
+        },
+        {
+          "Name": "imageRecipe"
+        },
+        {
+          "Name": "infrastructureConfiguration"
+        },
+        {
+          "Name": "lifecyclePolicy"
+        },
+        {
+          "Name": "workflow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "component"
+        },
+        {
+          "Name": "containerRecipe"
+        },
+        {
+          "Name": "distributionConfiguration"
+        },
+        {
+          "Name": "image"
+        },
+        {
+          "Name": "imagePipeline"
+        },
+        {
+          "Name": "imageRecipe"
+        },
+        {
+          "Name": "infrastructureConfiguration"
+        },
+        {
+          "Name": "lifecyclePolicy"
+        },
+        {
+          "Name": "workflow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateDistributionConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "distributionConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateImagePipeline",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "imagePipeline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateInfrastructureConfiguration",
+      "ActionConditionKeys": [
+        "imagebuilder:CreatedResourceTag/${TagKey}",
+        "imagebuilder:CreatedResourceTagKeys",
+        "imagebuilder:Ec2MetadataHttpTokens",
+        "imagebuilder:StatusTopicArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "infrastructureConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateLifecyclePolicy",
+      "ActionConditionKeys": [
+        "imagebuilder:LifecyclePolicyResourceType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "lifecyclePolicy"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "imagebuilder:CreatedResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "imagebuilder:CreatedResourceTagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "imagebuilder:Ec2MetadataHttpTokens",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "imagebuilder:LifecyclePolicyResourceType",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "imagebuilder:StatusTopicArn",
+      "Types": [
+        "ARN"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CancelImageCreation",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelImageCreation",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "cancel_image_creation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelLifecycleExecution",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelLifecycleExecution",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "cancel_lifecycle_execution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateComponent",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateComponent",
+          "Service": "imagebuilder"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "create_component",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateContainerRecipe",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateContainerRecipe",
+          "Service": "imagebuilder"
+        },
+        {
+          "Name": "GetComponent",
+          "Service": "imagebuilder"
+        },
+        {
+          "Name": "GetImage",
+          "Service": "imagebuilder"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "create_container_recipe",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDistributionConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDistributionConfiguration",
+          "Service": "imagebuilder"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "vmie.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "create_distribution_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateImage",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateImage",
+          "Service": "imagebuilder"
+        },
+        {
+          "Name": "GetContainerRecipe",
+          "Service": "imagebuilder"
+        },
+        {
+          "Name": "GetDistributionConfiguration",
+          "Service": "imagebuilder"
+        },
+        {
+          "Name": "GetImageRecipe",
+          "Service": "imagebuilder"
+        },
+        {
+          "Name": "GetInfrastructureConfiguration",
+          "Service": "imagebuilder"
+        },
+        {
+          "Name": "GetWorkflow",
+          "Service": "imagebuilder"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "imagebuilder.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "create_image",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateImagePipeline",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateImagePipeline",
+          "Service": "imagebuilder"
+        },
+        {
+          "Name": "GetContainerRecipe",
+          "Service": "imagebuilder"
+        },
+        {
+          "Name": "GetDistributionConfiguration",
+          "Service": "imagebuilder"
+        },
+        {
+          "Name": "GetImageRecipe",
+          "Service": "imagebuilder"
+        },
+        {
+          "Name": "GetInfrastructureConfiguration",
+          "Service": "imagebuilder"
+        },
+        {
+          "Name": "GetWorkflow",
+          "Service": "imagebuilder"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "imagebuilder.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "create_image_pipeline",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateImageRecipe",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateImageRecipe",
+          "Service": "imagebuilder"
+        },
+        {
+          "Name": "GetComponent",
+          "Service": "imagebuilder"
+        },
+        {
+          "Name": "GetImage",
+          "Service": "imagebuilder"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "create_image_recipe",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateInfrastructureConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateInfrastructureConfiguration",
+          "Service": "imagebuilder"
+        },
+        {
+          "Name": "GetInstanceProfile",
+          "Service": "iam"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "ec2.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "create_infrastructure_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateLifecyclePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateLifecyclePolicy",
+          "Service": "imagebuilder"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "imagebuilder.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "create_lifecycle_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateWorkflow",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateWorkflow",
+          "Service": "imagebuilder"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "create_workflow",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteComponent",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteComponent",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "delete_component",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteContainerRecipe",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteContainerRecipe",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "delete_container_recipe",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDistributionConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDistributionConfiguration",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "delete_distribution_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteImage",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteImage",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "delete_image",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteImagePipeline",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteImagePipeline",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "delete_image_pipeline",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteImageRecipe",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteImageRecipe",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "delete_image_recipe",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteInfrastructureConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteInfrastructureConfiguration",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "delete_infrastructure_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteLifecyclePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteLifecyclePolicy",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "delete_lifecycle_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteWorkflow",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteWorkflow",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "delete_workflow",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DistributeImage",
+      "AuthorizedActions": [
+        {
+          "Name": "DistributeImage",
+          "Service": "imagebuilder"
+        },
+        {
+          "Name": "GetDistributionConfiguration",
+          "Service": "imagebuilder"
+        },
+        {
+          "Name": "GetImage",
+          "Service": "imagebuilder"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "imagebuilder.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "distribute_image",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetComponent",
+      "AuthorizedActions": [
+        {
+          "Name": "GetComponent",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "get_component",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetComponentPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetComponentPolicy",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "get_component_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetContainerRecipe",
+      "AuthorizedActions": [
+        {
+          "Name": "GetContainerRecipe",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "get_container_recipe",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetContainerRecipePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetContainerRecipePolicy",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "get_container_recipe_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDistributionConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDistributionConfiguration",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "get_distribution_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetImage",
+      "AuthorizedActions": [
+        {
+          "Name": "GetImage",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "get_image",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetImagePipeline",
+      "AuthorizedActions": [
+        {
+          "Name": "GetImagePipeline",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "get_image_pipeline",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetImagePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetImagePolicy",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "get_image_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetImageRecipe",
+      "AuthorizedActions": [
+        {
+          "Name": "GetImageRecipe",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "get_image_recipe",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetImageRecipePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetImageRecipePolicy",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "get_image_recipe_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetInfrastructureConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetInfrastructureConfiguration",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "get_infrastructure_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetLifecycleExecution",
+      "AuthorizedActions": [
+        {
+          "Name": "GetLifecycleExecution",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "get_lifecycle_execution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetLifecyclePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetLifecyclePolicy",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "get_lifecycle_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMarketplaceResource",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMarketplaceResource",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "get_marketplace_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetWorkflow",
+      "AuthorizedActions": [
+        {
+          "Name": "GetWorkflow",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "get_workflow",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetWorkflowExecution",
+      "AuthorizedActions": [
+        {
+          "Name": "GetWorkflowExecution",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "get_workflow_execution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetWorkflowStepExecution",
+      "AuthorizedActions": [
+        {
+          "Name": "GetWorkflowStepExecution",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "get_workflow_step_execution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ImportComponent",
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "import_component",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ImportDiskImage",
+      "AuthorizedActions": [
+        {
+          "Name": "GetInfrastructureConfiguration",
+          "Service": "imagebuilder"
+        },
+        {
+          "Name": "ImportDiskImage",
+          "Service": "imagebuilder"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "imagebuilder.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "import_disk_image",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ImportVmImage",
+      "AuthorizedActions": [
+        {
+          "Name": "ImportVmImage",
+          "Service": "imagebuilder"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "import_vm_image",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListComponentBuildVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListComponentBuildVersions",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "list_component_build_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListComponents",
+      "AuthorizedActions": [
+        {
+          "Name": "ListComponents",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "list_components",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListContainerRecipes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListContainerRecipes",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "list_container_recipes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDistributionConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDistributionConfigurations",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "list_distribution_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListImageBuildVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListImageBuildVersions",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "list_image_build_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListImagePackages",
+      "AuthorizedActions": [
+        {
+          "Name": "ListImagePackages",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "list_image_packages",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListImagePipelineImages",
+      "AuthorizedActions": [
+        {
+          "Name": "ListImagePipelineImages",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "list_image_pipeline_images",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListImagePipelines",
+      "AuthorizedActions": [
+        {
+          "Name": "ListImagePipelines",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "list_image_pipelines",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListImageRecipes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListImageRecipes",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "list_image_recipes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListImageScanFindingAggregations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListImageScanFindingAggregations",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "list_image_scan_finding_aggregations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListImageScanFindings",
+      "AuthorizedActions": [
+        {
+          "Name": "ListImageScanFindings",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "list_image_scan_findings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListImages",
+      "AuthorizedActions": [
+        {
+          "Name": "ListImages",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "list_images",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListInfrastructureConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListInfrastructureConfigurations",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "list_infrastructure_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListLifecycleExecutionResources",
+      "AuthorizedActions": [
+        {
+          "Name": "ListLifecycleExecutionResources",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "list_lifecycle_execution_resources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListLifecycleExecutions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListLifecycleExecutions",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "list_lifecycle_executions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListLifecyclePolicies",
+      "AuthorizedActions": [
+        {
+          "Name": "ListLifecyclePolicies",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "list_lifecycle_policies",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListWaitingWorkflowSteps",
+      "AuthorizedActions": [
+        {
+          "Name": "ListWaitingWorkflowSteps",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "list_waiting_workflow_steps",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListWorkflowBuildVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListWorkflowBuildVersions",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "list_workflow_build_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListWorkflowExecutions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListWorkflowExecutions",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "list_workflow_executions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListWorkflowStepExecutions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListWorkflowStepExecutions",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "list_workflow_step_executions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListWorkflows",
+      "AuthorizedActions": [
+        {
+          "Name": "ListWorkflows",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "list_workflows",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutComponentPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PutComponentPolicy",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "put_component_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutContainerRecipePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PutContainerRecipePolicy",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "put_container_recipe_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutImagePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PutImagePolicy",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "put_image_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutImageRecipePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PutImageRecipePolicy",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "put_image_recipe_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RetryImage",
+      "AuthorizedActions": [
+        {
+          "Name": "RetryImage",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "retry_image",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SendWorkflowStepAction",
+      "AuthorizedActions": [
+        {
+          "Name": "SendWorkflowStepAction",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "send_workflow_step_action",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartImagePipelineExecution",
+      "AuthorizedActions": [
+        {
+          "Name": "StartImagePipelineExecution",
+          "Service": "imagebuilder"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "start_image_pipeline_execution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartResourceStateUpdate",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "imagebuilder.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartResourceStateUpdate",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "start_resource_state_update",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDistributionConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "vmie.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateDistributionConfiguration",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "update_distribution_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateImagePipeline",
+      "AuthorizedActions": [
+        {
+          "Name": "GetContainerRecipe",
+          "Service": "imagebuilder"
+        },
+        {
+          "Name": "GetDistributionConfiguration",
+          "Service": "imagebuilder"
+        },
+        {
+          "Name": "GetImageRecipe",
+          "Service": "imagebuilder"
+        },
+        {
+          "Name": "GetInfrastructureConfiguration",
+          "Service": "imagebuilder"
+        },
+        {
+          "Name": "GetWorkflow",
+          "Service": "imagebuilder"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "imagebuilder.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "imagebuilder"
+        },
+        {
+          "Name": "UpdateImagePipeline",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "update_image_pipeline",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateInfrastructureConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetInstanceProfile",
+          "Service": "iam"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "ec2.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateInfrastructureConfiguration",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "update_infrastructure_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateLifecyclePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "imagebuilder.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateLifecyclePolicy",
+          "Service": "imagebuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "imagebuilder",
+          "Method": "update_lifecycle_policy",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "allComponentBuildVersions",
+      "ARNFormats": [
+        "arn:${Partition}:imagebuilder:${Region}:${Account}:component/${ComponentName}/${ComponentVersion}/*"
+      ]
+    },
+    {
+      "Name": "allImageBuildVersions",
+      "ARNFormats": [
+        "arn:${Partition}:imagebuilder:${Region}:${Account}:image/${ImageName}/${ImageVersion}/*"
+      ]
+    },
+    {
+      "Name": "allWorkflowBuildVersions",
+      "ARNFormats": [
+        "arn:${Partition}:imagebuilder:${Region}:${Account}:workflow/${WorkflowType}/${WorkflowName}/${WorkflowVersion}/*"
+      ]
+    },
+    {
+      "Name": "component",
+      "ARNFormats": [
+        "arn:${Partition}:imagebuilder:${Region}:${Account}:component/${ComponentName}/${ComponentVersion}/${ComponentBuildVersion}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "containerRecipe",
+      "ARNFormats": [
+        "arn:${Partition}:imagebuilder:${Region}:${Account}:container-recipe/${ContainerRecipeName}/${ContainerRecipeVersion}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "distributionConfiguration",
+      "ARNFormats": [
+        "arn:${Partition}:imagebuilder:${Region}:${Account}:distribution-configuration/${DistributionConfigurationName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "image",
+      "ARNFormats": [
+        "arn:${Partition}:imagebuilder:${Region}:${Account}:image/${ImageName}/${ImageVersion}/${ImageBuildVersion}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "imagePipeline",
+      "ARNFormats": [
+        "arn:${Partition}:imagebuilder:${Region}:${Account}:image-pipeline/${ImagePipelineName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "imageRecipe",
+      "ARNFormats": [
+        "arn:${Partition}:imagebuilder:${Region}:${Account}:image-recipe/${ImageRecipeName}/${ImageRecipeVersion}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "imageVersion",
+      "ARNFormats": [
+        "arn:${Partition}:imagebuilder:${Region}:${Account}:image/${ImageName}/${ImageVersion}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "infrastructureConfiguration",
+      "ARNFormats": [
+        "arn:${Partition}:imagebuilder:${Region}:${Account}:infrastructure-configuration/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "lifecycleExecution",
+      "ARNFormats": [
+        "arn:${Partition}:imagebuilder:${Region}:${Account}:lifecycle-execution/${LifecycleExecutionId}"
+      ]
+    },
+    {
+      "Name": "lifecyclePolicy",
+      "ARNFormats": [
+        "arn:${Partition}:imagebuilder:${Region}:${Account}:lifecycle-policy/${LifecyclePolicyName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "workflow",
+      "ARNFormats": [
+        "arn:${Partition}:imagebuilder:${Region}:${Account}:workflow/${WorkflowType}/${WorkflowName}/${WorkflowVersion}/${WorkflowBuildVersion}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "workflowExecution",
+      "ARNFormats": [
+        "arn:${Partition}:imagebuilder:${Region}:${Account}:workflow-execution/${WorkflowExecutionId}"
+      ]
+    },
+    {
+      "Name": "workflowStepExecution",
+      "ARNFormats": [
+        "arn:${Partition}:imagebuilder:${Region}:${Account}:workflow-step-execution/${WorkflowStepExecutionId}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

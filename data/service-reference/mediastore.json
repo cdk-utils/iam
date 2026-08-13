@@ -1,0 +1,1001 @@
+{
+  "Name": "mediastore",
+  "Actions": [
+    {
+      "Name": "CreateContainer",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteContainer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "container"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteContainerPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "container"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteCorsPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "container"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteLifecyclePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "container"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteMetricPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "container"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteObject",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "object"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeContainer",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "container"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeObject",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "object"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetContainerPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "container"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCorsPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "container"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetLifecyclePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "container"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetMetricPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "container"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetObject",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "object"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListContainers",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListItems",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "folder"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "container"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutContainerPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "container"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutCorsPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "container"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutLifecyclePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "container"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutMetricPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "container"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutObject",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "object"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartAccessLogging",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "container"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopAccessLogging",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "container"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "container"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "container"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateContainer",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateContainer",
+          "Service": "mediastore"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "mediastore"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediastore",
+          "Method": "create_container",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteContainer",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteContainer",
+          "Service": "mediastore"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediastore",
+          "Method": "delete_container",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteContainerPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteContainerPolicy",
+          "Service": "mediastore"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediastore",
+          "Method": "delete_container_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCorsPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCorsPolicy",
+          "Service": "mediastore"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediastore",
+          "Method": "delete_cors_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteLifecyclePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteLifecyclePolicy",
+          "Service": "mediastore"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediastore",
+          "Method": "delete_lifecycle_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteMetricPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteMetricPolicy",
+          "Service": "mediastore"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediastore",
+          "Method": "delete_metric_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteObject",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteObject",
+          "Service": "mediastore"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediastore-data",
+          "Method": "delete_object",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeContainer",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeContainer",
+          "Service": "mediastore"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediastore",
+          "Method": "describe_container",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeObject",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeObject",
+          "Service": "mediastore"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediastore-data",
+          "Method": "describe_object",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetContainerPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetContainerPolicy",
+          "Service": "mediastore"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediastore",
+          "Method": "get_container_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCorsPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCorsPolicy",
+          "Service": "mediastore"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediastore",
+          "Method": "get_cors_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetLifecyclePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetLifecyclePolicy",
+          "Service": "mediastore"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediastore",
+          "Method": "get_lifecycle_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMetricPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMetricPolicy",
+          "Service": "mediastore"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediastore",
+          "Method": "get_metric_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetObject",
+      "AuthorizedActions": [
+        {
+          "Name": "GetObject",
+          "Service": "mediastore"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediastore-data",
+          "Method": "get_object",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListContainers",
+      "AuthorizedActions": [
+        {
+          "Name": "ListContainers",
+          "Service": "mediastore"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediastore",
+          "Method": "list_containers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListItems",
+      "AuthorizedActions": [
+        {
+          "Name": "ListItems",
+          "Service": "mediastore"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediastore-data",
+          "Method": "list_items",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "mediastore"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediastore",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutContainerPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PutContainerPolicy",
+          "Service": "mediastore"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediastore",
+          "Method": "put_container_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutCorsPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PutCorsPolicy",
+          "Service": "mediastore"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediastore",
+          "Method": "put_cors_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutLifecyclePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PutLifecyclePolicy",
+          "Service": "mediastore"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediastore",
+          "Method": "put_lifecycle_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutMetricPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PutMetricPolicy",
+          "Service": "mediastore"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediastore",
+          "Method": "put_metric_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutObject",
+      "AuthorizedActions": [
+        {
+          "Name": "PutObject",
+          "Service": "mediastore"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediastore-data",
+          "Method": "put_object",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartAccessLogging",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "mediastore.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartAccessLogging",
+          "Service": "mediastore"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediastore",
+          "Method": "start_access_logging",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopAccessLogging",
+      "AuthorizedActions": [
+        {
+          "Name": "StopAccessLogging",
+          "Service": "mediastore"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediastore",
+          "Method": "stop_access_logging",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "mediastore"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediastore",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "mediastore"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediastore",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "container",
+      "ARNFormats": [
+        "arn:${Partition}:mediastore:${Region}:${Account}:container/${ContainerName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "folder",
+      "ARNFormats": [
+        "arn:${Partition}:mediastore:${Region}:${Account}:container/${ContainerName}/${FolderPath}"
+      ]
+    },
+    {
+      "Name": "object",
+      "ARNFormats": [
+        "arn:${Partition}:mediastore:${Region}:${Account}:container/${ContainerName}/${ObjectPath}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

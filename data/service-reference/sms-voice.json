@@ -1,0 +1,4513 @@
+{
+  "Name": "sms-voice",
+  "Actions": [
+    {
+      "Name": "AssociateOriginationIdentity",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "PhoneNumber"
+        },
+        {
+          "Name": "Pool"
+        },
+        {
+          "Name": "RcsAgent"
+        },
+        {
+          "Name": "SenderId"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AssociateProtectConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ConfigurationSet"
+        },
+        {
+          "Name": "ProtectConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CarrierLookup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateConfigurationSet",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateConfigurationSetEventDestination",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateEventDestination",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ConfigurationSet"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateNotifyConfiguration",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateOptOutList",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreatePool",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "PhoneNumber"
+        },
+        {
+          "Name": "SenderId"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateProtectConfiguration",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateRcsAgent",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateRegistration",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateRegistrationAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "PhoneNumber"
+        },
+        {
+          "Name": "RcsAgent"
+        },
+        {
+          "Name": "Registration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateRegistrationAttachment",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateRegistrationVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Registration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateVerifiedDestinationNumber",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteAccountDefaultProtectConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteConfigurationSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ConfigurationSet"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteConfigurationSetEventDestination",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteDefaultMessageType",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ConfigurationSet"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteDefaultSenderId",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ConfigurationSet"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteEventDestination",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ConfigurationSet"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteKeyword",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "PhoneNumber"
+        },
+        {
+          "Name": "Pool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteMediaMessageSpendLimitOverride",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteNotifyConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NotifyConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteNotifyMessageSpendLimitOverride",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteOptOutList",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "OptOutList"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteOptedOutNumber",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "OptOutList"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeletePool",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Pool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteProtectConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProtectConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteProtectConfigurationRuleSetNumberOverride",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProtectConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteRcsAgent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RcsAgent"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteRcsMessageSpendLimitOverride",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteRegistration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Registration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteRegistrationAttachment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RegistrationAttachment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteRegistrationFieldValue",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Registration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "OptOutList"
+        },
+        {
+          "Name": "PhoneNumber"
+        },
+        {
+          "Name": "Pool"
+        },
+        {
+          "Name": "SenderId"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteTextMessageSpendLimitOverride",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteVerifiedDestinationNumber",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "VerifiedDestinationNumber"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteVoiceMessageSpendLimitOverride",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeAccountAttributes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeAccountLimits",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeConfigurationSets",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ConfigurationSet"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeKeywords",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "PhoneNumber"
+        },
+        {
+          "Name": "Pool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeNotifyConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NotifyConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeNotifyTemplates",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeOptOutLists",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "OptOutList"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeOptedOutNumbers",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "OptOutList"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribePhoneNumbers",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "PhoneNumber"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribePools",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Pool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeProtectConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProtectConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeRcsAgentCountryLaunchStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RcsAgent"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeRcsAgents",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RcsAgent"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeRegistrationAttachments",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RegistrationAttachment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeRegistrationFieldDefinitions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeRegistrationFieldValues",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Registration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeRegistrationSectionDefinitions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeRegistrationTypeDefinitions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeRegistrationVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Registration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeRegistrations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Registration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeSenderIds",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SenderId"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeSpendLimits",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeVerifiedDestinationNumbers",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "VerifiedDestinationNumber"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateOriginationIdentity",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "PhoneNumber"
+        },
+        {
+          "Name": "Pool"
+        },
+        {
+          "Name": "RcsAgent"
+        },
+        {
+          "Name": "SenderId"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateProtectConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ConfigurationSet"
+        },
+        {
+          "Name": "ProtectConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DiscardRegistrationVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Registration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetConfigurationSetEventDestinations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetProtectConfigurationCountryRuleSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProtectConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "OptOutList"
+        },
+        {
+          "Name": "PhoneNumber"
+        },
+        {
+          "Name": "Pool"
+        },
+        {
+          "Name": "SenderId"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListConfigurationSets",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListNotifyCountries",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPoolOriginationIdentities",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Pool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListProtectConfigurationRuleSetNumberOverrides",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProtectConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListRegistrationAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Registration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ConfigurationSet"
+        },
+        {
+          "Name": "NotifyConfiguration"
+        },
+        {
+          "Name": "OptOutList"
+        },
+        {
+          "Name": "PhoneNumber"
+        },
+        {
+          "Name": "Pool"
+        },
+        {
+          "Name": "ProtectConfiguration"
+        },
+        {
+          "Name": "RcsAgent"
+        },
+        {
+          "Name": "Registration"
+        },
+        {
+          "Name": "RegistrationAttachment"
+        },
+        {
+          "Name": "SenderId"
+        },
+        {
+          "Name": "VerifiedDestinationNumber"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutKeyword",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "PhoneNumber"
+        },
+        {
+          "Name": "Pool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutMessageFeedback",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Message"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutOptedOutNumber",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "OptOutList"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutProtectConfigurationRuleSetNumberOverride",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProtectConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutRegistrationFieldValue",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Registration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "OptOutList"
+        },
+        {
+          "Name": "PhoneNumber"
+        },
+        {
+          "Name": "Pool"
+        },
+        {
+          "Name": "SenderId"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ReleasePhoneNumber",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "PhoneNumber"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ReleaseSenderId",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SenderId"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RequestPhoneNumber",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "OptOutList"
+        },
+        {
+          "Name": "Pool"
+        },
+        {
+          "Name": "Registration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RequestSenderId",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SendDestinationNumberVerificationCode",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ConfigurationSet"
+        },
+        {
+          "Name": "PhoneNumber"
+        },
+        {
+          "Name": "Pool"
+        },
+        {
+          "Name": "SenderId"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SendMediaMessage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ConfigurationSet"
+        },
+        {
+          "Name": "PhoneNumber"
+        },
+        {
+          "Name": "Pool"
+        },
+        {
+          "Name": "ProtectConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SendNotifyTextMessage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ConfigurationSet"
+        },
+        {
+          "Name": "NotifyConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SendNotifyVoiceMessage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ConfigurationSet"
+        },
+        {
+          "Name": "NotifyConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SendRcsMessage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ConfigurationSet"
+        },
+        {
+          "Name": "PhoneNumber"
+        },
+        {
+          "Name": "Pool"
+        },
+        {
+          "Name": "ProtectConfiguration"
+        },
+        {
+          "Name": "RcsAgent"
+        },
+        {
+          "Name": "SenderId"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SendTextMessage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ConfigurationSet"
+        },
+        {
+          "Name": "PhoneNumber"
+        },
+        {
+          "Name": "Pool"
+        },
+        {
+          "Name": "ProtectConfiguration"
+        },
+        {
+          "Name": "SenderId"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SendVoiceMessage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ConfigurationSet"
+        },
+        {
+          "Name": "PhoneNumber"
+        },
+        {
+          "Name": "Pool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SetAccountDefaultProtectConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProtectConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SetDefaultMessageFeedbackEnabled",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ConfigurationSet"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SetDefaultMessageType",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ConfigurationSet"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SetDefaultSenderId",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ConfigurationSet"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SetMediaMessageSpendLimitOverride",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SetNotifyMessageSpendLimitOverride",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SetRcsMessageSpendLimitOverride",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SetTextMessageSpendLimitOverride",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SetVoiceMessageSpendLimitOverride",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SubmitRegistrationVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Registration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ConfigurationSet"
+        },
+        {
+          "Name": "NotifyConfiguration"
+        },
+        {
+          "Name": "OptOutList"
+        },
+        {
+          "Name": "PhoneNumber"
+        },
+        {
+          "Name": "Pool"
+        },
+        {
+          "Name": "ProtectConfiguration"
+        },
+        {
+          "Name": "RcsAgent"
+        },
+        {
+          "Name": "Registration"
+        },
+        {
+          "Name": "RegistrationAttachment"
+        },
+        {
+          "Name": "SenderId"
+        },
+        {
+          "Name": "VerifiedDestinationNumber"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ConfigurationSet"
+        },
+        {
+          "Name": "NotifyConfiguration"
+        },
+        {
+          "Name": "OptOutList"
+        },
+        {
+          "Name": "PhoneNumber"
+        },
+        {
+          "Name": "Pool"
+        },
+        {
+          "Name": "ProtectConfiguration"
+        },
+        {
+          "Name": "RcsAgent"
+        },
+        {
+          "Name": "Registration"
+        },
+        {
+          "Name": "RegistrationAttachment"
+        },
+        {
+          "Name": "SenderId"
+        },
+        {
+          "Name": "VerifiedDestinationNumber"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateConfigurationSetEventDestination",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateEventDestination",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ConfigurationSet"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateNotifyConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NotifyConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdatePhoneNumber",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "OptOutList"
+        },
+        {
+          "Name": "PhoneNumber"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdatePool",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "OptOutList"
+        },
+        {
+          "Name": "Pool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateProtectConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProtectConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateProtectConfigurationCountryRuleSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProtectConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateRcsAgent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RcsAgent"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateSenderId",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SenderId"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "VerifyDestinationNumber",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "VerifiedDestinationNumber"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AssociateOriginationIdentity",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateOriginationIdentity",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "associate_origination_identity",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateProtectConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateProtectConfiguration",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "associate_protect_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CarrierLookup",
+      "AuthorizedActions": [
+        {
+          "Name": "CarrierLookup",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "carrier_lookup",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateConfigurationSet",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateConfigurationSet",
+          "Service": "sms-voice"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice",
+          "Method": "create_configuration_set",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "create_configuration_set",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "sms-voice",
+          "Method": "create_configuration_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateConfigurationSetEventDestination",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateConfigurationSetEventDestination",
+          "Service": "sms-voice"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "sms-voice.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice",
+          "Method": "create_configuration_set_event_destination",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "sms-voice",
+          "Method": "create_configuration_set_event_destination",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateEventDestination",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateEventDestination",
+          "Service": "sms-voice"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "sms-voice.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "create_event_destination",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateNotifyConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateNotifyConfiguration",
+          "Service": "sms-voice"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "create_notify_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateOptOutList",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateOptOutList",
+          "Service": "sms-voice"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "create_opt_out_list",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePool",
+      "AuthorizedActions": [
+        {
+          "Name": "CreatePool",
+          "Service": "sms-voice"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "create_pool",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateProtectConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateProtectConfiguration",
+          "Service": "sms-voice"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "create_protect_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRcsAgent",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRcsAgent",
+          "Service": "sms-voice"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "create_rcs_agent",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRegistration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRegistration",
+          "Service": "sms-voice"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "create_registration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRegistrationAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRegistrationAssociation",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "create_registration_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRegistrationAttachment",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRegistrationAttachment",
+          "Service": "sms-voice"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "create_registration_attachment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRegistrationVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRegistrationVersion",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "create_registration_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateVerifiedDestinationNumber",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateVerifiedDestinationNumber",
+          "Service": "sms-voice"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "create_verified_destination_number",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAccountDefaultProtectConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAccountDefaultProtectConfiguration",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "delete_account_default_protect_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteConfigurationSet",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteConfigurationSet",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice",
+          "Method": "delete_configuration_set",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "delete_configuration_set",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "sms-voice",
+          "Method": "delete_configuration_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteConfigurationSetEventDestination",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteConfigurationSetEventDestination",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice",
+          "Method": "delete_configuration_set_event_destination",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "sms-voice",
+          "Method": "delete_configuration_set_event_destination",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDefaultMessageType",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDefaultMessageType",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "delete_default_message_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDefaultSenderId",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDefaultSenderId",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "delete_default_sender_id",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteEventDestination",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteEventDestination",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "delete_event_destination",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteKeyword",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteKeyword",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "delete_keyword",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteMediaMessageSpendLimitOverride",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteMediaMessageSpendLimitOverride",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "delete_media_message_spend_limit_override",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteNotifyConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteNotifyConfiguration",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "delete_notify_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteNotifyMessageSpendLimitOverride",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteNotifyMessageSpendLimitOverride",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "delete_notify_message_spend_limit_override",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteOptOutList",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteOptOutList",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "delete_opt_out_list",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteOptedOutNumber",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteOptedOutNumber",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "delete_opted_out_number",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePool",
+      "AuthorizedActions": [
+        {
+          "Name": "DeletePool",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "delete_pool",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteProtectConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteProtectConfiguration",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "delete_protect_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteProtectConfigurationRuleSetNumberOverride",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteProtectConfigurationRuleSetNumberOverride",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "delete_protect_configuration_rule_set_number_override",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRcsAgent",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRcsAgent",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "delete_rcs_agent",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRcsMessageSpendLimitOverride",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRcsMessageSpendLimitOverride",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "delete_rcs_message_spend_limit_override",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRegistration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRegistration",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "delete_registration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRegistrationAttachment",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRegistrationAttachment",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "delete_registration_attachment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRegistrationFieldValue",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRegistrationFieldValue",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "delete_registration_field_value",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteResourcePolicy",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "delete_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteTextMessageSpendLimitOverride",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteTextMessageSpendLimitOverride",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "delete_text_message_spend_limit_override",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteVerifiedDestinationNumber",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteVerifiedDestinationNumber",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "delete_verified_destination_number",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteVoiceMessageSpendLimitOverride",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteVoiceMessageSpendLimitOverride",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "delete_voice_message_spend_limit_override",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAccountAttributes",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAccountAttributes",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "describe_account_attributes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAccountLimits",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAccountLimits",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "describe_account_limits",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeConfigurationSets",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeConfigurationSets",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "describe_configuration_sets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeKeywords",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeKeywords",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "describe_keywords",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeNotifyConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeNotifyConfigurations",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "describe_notify_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeNotifyTemplates",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeNotifyTemplates",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "describe_notify_templates",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeOptOutLists",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeOptOutLists",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "describe_opt_out_lists",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeOptedOutNumbers",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeOptedOutNumbers",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "describe_opted_out_numbers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribePhoneNumbers",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribePhoneNumbers",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "describe_phone_numbers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribePools",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribePools",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "describe_pools",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeProtectConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeProtectConfigurations",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "describe_protect_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeRcsAgentCountryLaunchStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeRcsAgentCountryLaunchStatus",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "describe_rcs_agent_country_launch_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeRcsAgents",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeRcsAgents",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "describe_rcs_agents",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeRegistrationAttachments",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeRegistrationAttachments",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "describe_registration_attachments",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeRegistrationFieldDefinitions",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeRegistrationFieldDefinitions",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "describe_registration_field_definitions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeRegistrationFieldValues",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeRegistrationFieldValues",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "describe_registration_field_values",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeRegistrationSectionDefinitions",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeRegistrationSectionDefinitions",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "describe_registration_section_definitions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeRegistrationTypeDefinitions",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeRegistrationTypeDefinitions",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "describe_registration_type_definitions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeRegistrationVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeRegistrationVersions",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "describe_registration_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeRegistrations",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeRegistrations",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "describe_registrations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSenderIds",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSenderIds",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "describe_sender_ids",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSpendLimits",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSpendLimits",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "describe_spend_limits",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeVerifiedDestinationNumbers",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeVerifiedDestinationNumbers",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "describe_verified_destination_numbers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateOriginationIdentity",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateOriginationIdentity",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "disassociate_origination_identity",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateProtectConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateProtectConfiguration",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "disassociate_protect_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DiscardRegistrationVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "DiscardRegistrationVersion",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "discard_registration_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetConfigurationSetEventDestinations",
+      "AuthorizedActions": [
+        {
+          "Name": "GetConfigurationSetEventDestinations",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice",
+          "Method": "get_configuration_set_event_destinations",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "sms-voice",
+          "Method": "get_configuration_set_event_destinations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetProtectConfigurationCountryRuleSet",
+      "AuthorizedActions": [
+        {
+          "Name": "GetProtectConfigurationCountryRuleSet",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "get_protect_configuration_country_rule_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResourcePolicy",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "get_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListConfigurationSets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListConfigurationSets",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice",
+          "Method": "list_configuration_sets",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "sms-voice",
+          "Method": "list_configuration_sets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListNotifyCountries",
+      "AuthorizedActions": [
+        {
+          "Name": "ListNotifyCountries",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "list_notify_countries",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPoolOriginationIdentities",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPoolOriginationIdentities",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "list_pool_origination_identities",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProtectConfigurationRuleSetNumberOverrides",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProtectConfigurationRuleSetNumberOverrides",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "list_protect_configuration_rule_set_number_overrides",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRegistrationAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRegistrationAssociations",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "list_registration_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutKeyword",
+      "AuthorizedActions": [
+        {
+          "Name": "PutKeyword",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "put_keyword",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutMessageFeedback",
+      "AuthorizedActions": [
+        {
+          "Name": "PutMessageFeedback",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "put_message_feedback",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutOptedOutNumber",
+      "AuthorizedActions": [
+        {
+          "Name": "PutOptedOutNumber",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "put_opted_out_number",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutProtectConfigurationRuleSetNumberOverride",
+      "AuthorizedActions": [
+        {
+          "Name": "PutProtectConfigurationRuleSetNumberOverride",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "put_protect_configuration_rule_set_number_override",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutRegistrationFieldValue",
+      "AuthorizedActions": [
+        {
+          "Name": "PutRegistrationFieldValue",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "put_registration_field_value",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PutResourcePolicy",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "put_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ReleasePhoneNumber",
+      "AuthorizedActions": [
+        {
+          "Name": "ReleasePhoneNumber",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "release_phone_number",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ReleaseSenderId",
+      "AuthorizedActions": [
+        {
+          "Name": "ReleaseSenderId",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "release_sender_id",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RequestPhoneNumber",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateOriginationIdentity",
+          "Service": "sms-voice"
+        },
+        {
+          "Name": "RequestPhoneNumber",
+          "Service": "sms-voice"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "request_phone_number",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RequestSenderId",
+      "AuthorizedActions": [
+        {
+          "Name": "RequestSenderId",
+          "Service": "sms-voice"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "request_sender_id",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SendDestinationNumberVerificationCode",
+      "AuthorizedActions": [
+        {
+          "Name": "SendDestinationNumberVerificationCode",
+          "Service": "sms-voice"
+        },
+        {
+          "Name": "SendTextMessage",
+          "Service": "sms-voice"
+        },
+        {
+          "Name": "SendVoiceMessage",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "send_destination_number_verification_code",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SendMediaMessage",
+      "AuthorizedActions": [
+        {
+          "Name": "SendMediaMessage",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "send_media_message",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SendNotifyTextMessage",
+      "AuthorizedActions": [
+        {
+          "Name": "SendNotifyTextMessage",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "send_notify_text_message",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SendNotifyVoiceMessage",
+      "AuthorizedActions": [
+        {
+          "Name": "SendNotifyVoiceMessage",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "send_notify_voice_message",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SendRcsMessage",
+      "AuthorizedActions": [
+        {
+          "Name": "SendRcsMessage",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "send_rcs_message",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SendTextMessage",
+      "AuthorizedActions": [
+        {
+          "Name": "SendTextMessage",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "send_text_message",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SendVoiceMessage",
+      "AuthorizedActions": [
+        {
+          "Name": "SendVoiceMessage",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice",
+          "Method": "send_voice_message",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "send_voice_message",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "sms-voice",
+          "Method": "send_voice_message",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SetAccountDefaultProtectConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "SetAccountDefaultProtectConfiguration",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "set_account_default_protect_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SetDefaultMessageFeedbackEnabled",
+      "AuthorizedActions": [
+        {
+          "Name": "SetDefaultMessageFeedbackEnabled",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "set_default_message_feedback_enabled",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SetDefaultMessageType",
+      "AuthorizedActions": [
+        {
+          "Name": "SetDefaultMessageType",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "set_default_message_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SetDefaultSenderId",
+      "AuthorizedActions": [
+        {
+          "Name": "SetDefaultSenderId",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "set_default_sender_id",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SetMediaMessageSpendLimitOverride",
+      "AuthorizedActions": [
+        {
+          "Name": "SetMediaMessageSpendLimitOverride",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "set_media_message_spend_limit_override",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SetNotifyMessageSpendLimitOverride",
+      "AuthorizedActions": [
+        {
+          "Name": "SetNotifyMessageSpendLimitOverride",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "set_notify_message_spend_limit_override",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SetRcsMessageSpendLimitOverride",
+      "AuthorizedActions": [
+        {
+          "Name": "SetRcsMessageSpendLimitOverride",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "set_rcs_message_spend_limit_override",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SetTextMessageSpendLimitOverride",
+      "AuthorizedActions": [
+        {
+          "Name": "SetTextMessageSpendLimitOverride",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "set_text_message_spend_limit_override",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SetVoiceMessageSpendLimitOverride",
+      "AuthorizedActions": [
+        {
+          "Name": "SetVoiceMessageSpendLimitOverride",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "set_voice_message_spend_limit_override",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SubmitRegistrationVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "SubmitRegistrationVersion",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "submit_registration_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateConfigurationSetEventDestination",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateConfigurationSetEventDestination",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice",
+          "Method": "update_configuration_set_event_destination",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "sms-voice",
+          "Method": "update_configuration_set_event_destination",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateEventDestination",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "sms-voice.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateEventDestination",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "update_event_destination",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateNotifyConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateNotifyConfiguration",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "update_notify_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdatePhoneNumber",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "sms-voice.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdatePhoneNumber",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "update_phone_number",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdatePool",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "sms-voice.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdatePool",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "update_pool",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateProtectConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateProtectConfiguration",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "update_protect_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateProtectConfigurationCountryRuleSet",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateProtectConfigurationCountryRuleSet",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "update_protect_configuration_country_rule_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRcsAgent",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "sms-voice.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateRcsAgent",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "update_rcs_agent",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSenderId",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSenderId",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "update_sender_id",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "VerifyDestinationNumber",
+      "AuthorizedActions": [
+        {
+          "Name": "VerifyDestinationNumber",
+          "Service": "sms-voice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "verify_destination_number",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "ConfigurationSet",
+      "ARNFormats": [
+        "arn:${Partition}:sms-voice:${Region}:${Account}:configuration-set/${ConfigurationSetName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Message",
+      "ARNFormats": [
+        "arn:${Partition}:sms-voice:${Region}:${Account}:message/${MessageId}"
+      ]
+    },
+    {
+      "Name": "NotifyConfiguration",
+      "ARNFormats": [
+        "arn:${Partition}:sms-voice:${Region}:${Account}:notify-configuration/${NotifyConfigurationId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "OptOutList",
+      "ARNFormats": [
+        "arn:${Partition}:sms-voice:${Region}:${Account}:opt-out-list/${OptOutListName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "PhoneNumber",
+      "ARNFormats": [
+        "arn:${Partition}:sms-voice:${Region}:${Account}:phone-number/${PhoneNumberId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Pool",
+      "ARNFormats": [
+        "arn:${Partition}:sms-voice:${Region}:${Account}:pool/${PoolId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "ProtectConfiguration",
+      "ARNFormats": [
+        "arn:${Partition}:sms-voice:${Region}:${Account}:protect-configuration/${ProtectConfigurationId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "RcsAgent",
+      "ARNFormats": [
+        "arn:${Partition}:sms-voice:${Region}:${Account}:rcs-agent/${RcsAgentId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Registration",
+      "ARNFormats": [
+        "arn:${Partition}:sms-voice:${Region}:${Account}:registration/${RegistrationId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "RegistrationAttachment",
+      "ARNFormats": [
+        "arn:${Partition}:sms-voice:${Region}:${Account}:registration-attachment/${RegistrationAttachmentId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "SenderId",
+      "ARNFormats": [
+        "arn:${Partition}:sms-voice:${Region}:${Account}:sender-id/${SenderId}/${IsoCountryCode}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "VerifiedDestinationNumber",
+      "ARNFormats": [
+        "arn:${Partition}:sms-voice:${Region}:${Account}:verified-destination-number/${VerifiedDestinationNumberId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

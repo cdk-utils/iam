@@ -1,0 +1,1090 @@
+{
+  "Name": "codecatalyst",
+  "Actions": [
+    {
+      "Name": "AcceptConnection",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AssociateIamRoleToConnection",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connections"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AssociateIdentityCenterApplicationToSpace",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "identity-center-applications"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AssociateIdentityToIdentityCenterApplication",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "identity-center-applications"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchAssociateIdentitiesToIdentityCenterApplication",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "identity-center-applications"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchDisassociateIdentitiesFromIdentityCenterApplication",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "identity-center-applications"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateIdentityCenterApplication",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateSpace",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateSpaceAdminRoleAssignment",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "identity-center-applications"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteConnection",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connections"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteIdentityCenterApplication",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "identity-center-applications"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateIamRoleFromConnection",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connections"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateIdentityCenterApplicationFromSpace",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "identity-center-applications"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateIdentityFromIdentityCenterApplication",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "identity-center-applications"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetBillingAuthorization",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connections"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetConnection",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connections"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetIdentityCenterApplication",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "identity-center-applications"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetPendingConnection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListConnections",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListIamRolesForConnection",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connections"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListIdentityCenterApplications",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListIdentityCenterApplicationsForSpace",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListSpacesForIdentityCenterApplication",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "identity-center-applications"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connections"
+        },
+        {
+          "Name": "identity-center-applications"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutBillingAuthorization",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connections"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RejectConnection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SynchronizeIdentityCenterApplication",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "identity-center-applications"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connections"
+        },
+        {
+          "Name": "identity-center-applications"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connections"
+        },
+        {
+          "Name": "identity-center-applications"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateIdentityCenterApplication",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "identity-center-applications"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateAccessToken",
+      "SDK": [
+        {
+          "Name": "codecatalyst",
+          "Method": "create_access_token",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDevEnvironment",
+      "SDK": [
+        {
+          "Name": "codecatalyst",
+          "Method": "create_dev_environment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateProject",
+      "SDK": [
+        {
+          "Name": "codecatalyst",
+          "Method": "create_project",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSourceRepository",
+      "SDK": [
+        {
+          "Name": "codecatalyst",
+          "Method": "create_source_repository",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSourceRepositoryBranch",
+      "SDK": [
+        {
+          "Name": "codecatalyst",
+          "Method": "create_source_repository_branch",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAccessToken",
+      "SDK": [
+        {
+          "Name": "codecatalyst",
+          "Method": "delete_access_token",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDevEnvironment",
+      "SDK": [
+        {
+          "Name": "codecatalyst",
+          "Method": "delete_dev_environment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteProject",
+      "SDK": [
+        {
+          "Name": "codecatalyst",
+          "Method": "delete_project",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSourceRepository",
+      "SDK": [
+        {
+          "Name": "codecatalyst",
+          "Method": "delete_source_repository",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSpace",
+      "SDK": [
+        {
+          "Name": "codecatalyst",
+          "Method": "delete_space",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDevEnvironment",
+      "SDK": [
+        {
+          "Name": "codecatalyst",
+          "Method": "get_dev_environment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetProject",
+      "SDK": [
+        {
+          "Name": "codecatalyst",
+          "Method": "get_project",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSourceRepository",
+      "SDK": [
+        {
+          "Name": "codecatalyst",
+          "Method": "get_source_repository",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSourceRepositoryCloneUrls",
+      "SDK": [
+        {
+          "Name": "codecatalyst",
+          "Method": "get_source_repository_clone_urls",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSpace",
+      "SDK": [
+        {
+          "Name": "codecatalyst",
+          "Method": "get_space",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSubscription",
+      "SDK": [
+        {
+          "Name": "codecatalyst",
+          "Method": "get_subscription",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetUserDetails",
+      "SDK": [
+        {
+          "Name": "codecatalyst",
+          "Method": "get_user_details",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetWorkflow",
+      "SDK": [
+        {
+          "Name": "codecatalyst",
+          "Method": "get_workflow",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetWorkflowRun",
+      "SDK": [
+        {
+          "Name": "codecatalyst",
+          "Method": "get_workflow_run",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAccessTokens",
+      "SDK": [
+        {
+          "Name": "codecatalyst",
+          "Method": "list_access_tokens",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDevEnvironmentSessions",
+      "SDK": [
+        {
+          "Name": "codecatalyst",
+          "Method": "list_dev_environment_sessions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDevEnvironments",
+      "SDK": [
+        {
+          "Name": "codecatalyst",
+          "Method": "list_dev_environments",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEventLogs",
+      "SDK": [
+        {
+          "Name": "codecatalyst",
+          "Method": "list_event_logs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProjects",
+      "SDK": [
+        {
+          "Name": "codecatalyst",
+          "Method": "list_projects",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSourceRepositories",
+      "SDK": [
+        {
+          "Name": "codecatalyst",
+          "Method": "list_source_repositories",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSourceRepositoryBranches",
+      "SDK": [
+        {
+          "Name": "codecatalyst",
+          "Method": "list_source_repository_branches",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSpaces",
+      "SDK": [
+        {
+          "Name": "codecatalyst",
+          "Method": "list_spaces",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListWorkflowRuns",
+      "SDK": [
+        {
+          "Name": "codecatalyst",
+          "Method": "list_workflow_runs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListWorkflows",
+      "SDK": [
+        {
+          "Name": "codecatalyst",
+          "Method": "list_workflows",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartDevEnvironment",
+      "SDK": [
+        {
+          "Name": "codecatalyst",
+          "Method": "start_dev_environment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartDevEnvironmentSession",
+      "SDK": [
+        {
+          "Name": "codecatalyst",
+          "Method": "start_dev_environment_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartWorkflowRun",
+      "SDK": [
+        {
+          "Name": "codecatalyst",
+          "Method": "start_workflow_run",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopDevEnvironment",
+      "SDK": [
+        {
+          "Name": "codecatalyst",
+          "Method": "stop_dev_environment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopDevEnvironmentSession",
+      "SDK": [
+        {
+          "Name": "codecatalyst",
+          "Method": "stop_dev_environment_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDevEnvironment",
+      "SDK": [
+        {
+          "Name": "codecatalyst",
+          "Method": "update_dev_environment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateProject",
+      "SDK": [
+        {
+          "Name": "codecatalyst",
+          "Method": "update_project",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSpace",
+      "SDK": [
+        {
+          "Name": "codecatalyst",
+          "Method": "update_space",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "VerifySession",
+      "SDK": [
+        {
+          "Name": "codecatalyst",
+          "Method": "verify_session",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "connections",
+      "ARNFormats": [
+        "arn:${Partition}:codecatalyst:${Region}:${Account}:/connections/${ConnectionId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "identity-center-applications",
+      "ARNFormats": [
+        "arn:${Partition}:codecatalyst:${Region}:${Account}:/identity-center-applications/${IdentityCenterApplicationId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "project",
+      "ARNFormats": [
+        "arn:${Partition}:codecatalyst:::space/${SpaceId}/project/${ProjectId}"
+      ]
+    },
+    {
+      "Name": "space",
+      "ARNFormats": [
+        "arn:${Partition}:codecatalyst:::space/${SpaceId}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

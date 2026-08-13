@@ -1,0 +1,697 @@
+{
+  "Name": "ivschat",
+  "Actions": [
+    {
+      "Name": "CreateChatToken",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Room"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateLoggingConfiguration",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Logging-Configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateRoom",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Room"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteLoggingConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Logging-Configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteMessage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Room"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteRoom",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Room"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisconnectUser",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Room"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetLoggingConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Logging-Configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetRoom",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Room"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListLoggingConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Logging-Configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListRooms",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Room"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Room"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SendEvent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Room"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Logging-Configuration"
+        },
+        {
+          "Name": "Room"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Logging-Configuration"
+        },
+        {
+          "Name": "Room"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateLoggingConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Logging-Configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateRoom",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Room"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateChatToken",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateChatToken",
+          "Service": "ivschat"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivschat",
+          "Method": "create_chat_token",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateLoggingConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateLoggingConfiguration",
+          "Service": "ivschat"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "ivschat"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivschat",
+          "Method": "create_logging_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRoom",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRoom",
+          "Service": "ivschat"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "ivschat"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivschat",
+          "Method": "create_room",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteLoggingConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteLoggingConfiguration",
+          "Service": "ivschat"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivschat",
+          "Method": "delete_logging_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteMessage",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteMessage",
+          "Service": "ivschat"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivschat",
+          "Method": "delete_message",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRoom",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRoom",
+          "Service": "ivschat"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivschat",
+          "Method": "delete_room",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisconnectUser",
+      "AuthorizedActions": [
+        {
+          "Name": "DisconnectUser",
+          "Service": "ivschat"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivschat",
+          "Method": "disconnect_user",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetLoggingConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetLoggingConfiguration",
+          "Service": "ivschat"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivschat",
+          "Method": "get_logging_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRoom",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRoom",
+          "Service": "ivschat"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivschat",
+          "Method": "get_room",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListLoggingConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListLoggingConfigurations",
+          "Service": "ivschat"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivschat",
+          "Method": "list_logging_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRooms",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRooms",
+          "Service": "ivschat"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivschat",
+          "Method": "list_rooms",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "ivschat"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivschat",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SendEvent",
+      "AuthorizedActions": [
+        {
+          "Name": "SendEvent",
+          "Service": "ivschat"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivschat",
+          "Method": "send_event",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "ivschat"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivschat",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "ivschat"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivschat",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateLoggingConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateLoggingConfiguration",
+          "Service": "ivschat"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivschat",
+          "Method": "update_logging_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRoom",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateRoom",
+          "Service": "ivschat"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivschat",
+          "Method": "update_room",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "Logging-Configuration",
+      "ARNFormats": [
+        "arn:${Partition}:ivschat:${Region}:${Account}:logging-configuration/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Room",
+      "ARNFormats": [
+        "arn:${Partition}:ivschat:${Region}:${Account}:room/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

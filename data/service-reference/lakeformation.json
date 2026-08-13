@@ -1,0 +1,1724 @@
+{
+  "Name": "lakeformation",
+  "Actions": [
+    {
+      "Name": "AddLFTagsToResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchGrantPermissions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchRevokePermissions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CancelTransaction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CommitTransaction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateDataCellsFilter",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateLFTag",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateLFTagExpression",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateLakeFormationIdentityCenterConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateLakeFormationOptIn",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteDataCellsFilter",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteLFTag",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteLFTagExpression",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteLakeFormationIdentityCenterConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteLakeFormationOptIn",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteObjectsOnCancel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeregisterResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeLakeFormationIdentityCenterConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeTransaction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ExtendTransaction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDataAccess",
+      "ActionConditionKeys": [
+        "lakeformation:EnabledOnlyForMetaDataAccess"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDataCellsFilter",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDataLakePrincipal",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDataLakeSettings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetEffectivePermissionsForPath",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetLFTag",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetLFTagExpression",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetQueryState",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetQueryStatistics",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetResourceLFTags",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetTableObjects",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetTemporaryGluePartitionCredentials",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetTemporaryGlueTableCredentials",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetWorkUnitResults",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetWorkUnits",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GrantPermissions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDataCellsFilter",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListLFTagExpressions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListLFTags",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListLakeFormationOptIns",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPermissions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListResources",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTableStorageOptimizers",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTransactions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutDataLakeSettings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RegisterResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RegisterResourceWithPrivilegedAccess",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RemoveLFTagsFromResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RevokePermissions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SearchDatabasesByLFTags",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SearchTablesByLFTags",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartQueryPlanning",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartTransaction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateDataCellsFilter",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateLFTag",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateLFTagExpression",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateLakeFormationIdentityCenterConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateTableObjects",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateTableStorageOptimizer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "lakeformation:EnabledOnlyForMetaDataAccess",
+      "Types": [
+        "Bool"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AddLFTagsToResource",
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "add_lf_tags_to_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssumeDecoratedRoleWithSAML",
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "assume_decorated_role_with_saml",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGrantPermissions",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGrantPermissions",
+          "Service": "lakeformation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "batch_grant_permissions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchRevokePermissions",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchRevokePermissions",
+          "Service": "lakeformation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "batch_revoke_permissions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelTransaction",
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "cancel_transaction",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CommitTransaction",
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "commit_transaction",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDataCellsFilter",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDataCellsFilter",
+          "Service": "lakeformation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "create_data_cells_filter",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateLFTag",
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "create_lf_tag",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateLFTagExpression",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateLFTagExpression",
+          "Service": "lakeformation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "create_lf_tag_expression",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateLakeFormationIdentityCenterConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateLakeFormationIdentityCenterConfiguration",
+          "Service": "lakeformation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "create_lake_formation_identity_center_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateLakeFormationOptIn",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateLakeFormationOptIn",
+          "Service": "lakeformation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "create_lake_formation_opt_in",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDataCellsFilter",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDataCellsFilter",
+          "Service": "lakeformation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "delete_data_cells_filter",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteLFTag",
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "delete_lf_tag",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteLFTagExpression",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteLFTagExpression",
+          "Service": "lakeformation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "delete_lf_tag_expression",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteLakeFormationIdentityCenterConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteLakeFormationIdentityCenterConfiguration",
+          "Service": "lakeformation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "delete_lake_formation_identity_center_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteLakeFormationOptIn",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteLakeFormationOptIn",
+          "Service": "lakeformation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "delete_lake_formation_opt_in",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteObjectsOnCancel",
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "delete_objects_on_cancel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeregisterResource",
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "deregister_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeLakeFormationIdentityCenterConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeLakeFormationIdentityCenterConfiguration",
+          "Service": "lakeformation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "describe_lake_formation_identity_center_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeResource",
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "describe_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeTransaction",
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "describe_transaction",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ExtendTransaction",
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "extend_transaction",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDataCellsFilter",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDataCellsFilter",
+          "Service": "lakeformation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "get_data_cells_filter",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDataLakePrincipal",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDataLakePrincipal",
+          "Service": "lakeformation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "get_data_lake_principal",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDataLakeSettings",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDataLakeSettings",
+          "Service": "lakeformation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "get_data_lake_settings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEffectivePermissionsForPath",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEffectivePermissionsForPath",
+          "Service": "lakeformation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "get_effective_permissions_for_path",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetLFTag",
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "get_lf_tag",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetLFTagExpression",
+      "AuthorizedActions": [
+        {
+          "Name": "GetLFTagExpression",
+          "Service": "lakeformation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "get_lf_tag_expression",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetQueryState",
+      "AuthorizedActions": [
+        {
+          "Name": "GetQueryState",
+          "Service": "lakeformation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "get_query_state",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetQueryStatistics",
+      "AuthorizedActions": [
+        {
+          "Name": "GetQueryStatistics",
+          "Service": "lakeformation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "get_query_statistics",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResourceLFTags",
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "get_resource_lf_tags",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetTableObjects",
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "get_table_objects",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetTemporaryDataLocationCredentials",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDataAccess",
+          "Service": "lakeformation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "get_temporary_data_location_credentials",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetTemporaryGluePartitionCredentials",
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "get_temporary_glue_partition_credentials",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetTemporaryGlueTableCredentials",
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "get_temporary_glue_table_credentials",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetWorkUnitResults",
+      "AuthorizedActions": [
+        {
+          "Name": "GetWorkUnitResults",
+          "Service": "lakeformation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "get_work_unit_results",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetWorkUnits",
+      "AuthorizedActions": [
+        {
+          "Name": "GetWorkUnits",
+          "Service": "lakeformation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "get_work_units",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GrantPermissions",
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "grant_permissions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDataCellsFilter",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDataCellsFilter",
+          "Service": "lakeformation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "list_data_cells_filter",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListLFTagExpressions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListLFTagExpressions",
+          "Service": "lakeformation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "list_lf_tag_expressions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListLFTags",
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "list_lf_tags",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListLakeFormationOptIns",
+      "AuthorizedActions": [
+        {
+          "Name": "ListLakeFormationOptIns",
+          "Service": "lakeformation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "list_lake_formation_opt_ins",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPermissions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPermissions",
+          "Service": "lakeformation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "list_permissions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListResources",
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "list_resources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTableStorageOptimizers",
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "list_table_storage_optimizers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTransactions",
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "list_transactions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutDataLakeSettings",
+      "AuthorizedActions": [
+        {
+          "Name": "PutDataLakeSettings",
+          "Service": "lakeformation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "put_data_lake_settings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RegisterResource",
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "register_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RemoveLFTagsFromResource",
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "remove_lf_tags_from_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RevokePermissions",
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "revoke_permissions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SearchDatabasesByLFTags",
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "search_databases_by_lf_tags",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SearchTablesByLFTags",
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "search_tables_by_lf_tags",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartQueryPlanning",
+      "AuthorizedActions": [
+        {
+          "Name": "StartQueryPlanning",
+          "Service": "lakeformation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "start_query_planning",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartTransaction",
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "start_transaction",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDataCellsFilter",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDataCellsFilter",
+          "Service": "lakeformation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "update_data_cells_filter",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateLFTag",
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "update_lf_tag",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateLFTagExpression",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateLFTagExpression",
+          "Service": "lakeformation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "update_lf_tag_expression",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateLakeFormationIdentityCenterConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateLakeFormationIdentityCenterConfiguration",
+          "Service": "lakeformation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "update_lake_formation_identity_center_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateResource",
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "update_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateTableObjects",
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "update_table_objects",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateTableStorageOptimizer",
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "update_table_storage_optimizer",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

@@ -1,0 +1,2409 @@
+{
+  "Name": "events",
+  "Actions": [
+    {
+      "Name": "ActivateEventSource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "event-source"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AllowVendedLogDeliveryForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "event-bus"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CancelReplay",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "replay"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateApiDestination",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "api-destination"
+        },
+        {
+          "Name": "connection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateArchive",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "alias"
+        },
+        {
+          "Name": "archive"
+        },
+        {
+          "Name": "event-bus"
+        },
+        {
+          "Name": "key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateConnection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateEndpoint",
+      "ActionConditionKeys": [
+        "events:EventBusArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "endpoint"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateEventBus",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "event-bus"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreatePartnerEventSource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "event-source"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeactivateEventSource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "event-source"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeauthorizeConnection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteApiDestination",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "api-destination"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteArchive",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "archive"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteConnection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteEndpoint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "endpoint"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteEventBus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "event-bus"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeletePartnerEventSource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "event-source"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteRule",
+      "ActionConditionKeys": [
+        "events:ManagedBy",
+        "events:creatorAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "rule-on-custom-event-bus"
+        },
+        {
+          "Name": "rule-on-default-event-bus"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeApiDestination",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "api-destination"
+        },
+        {
+          "Name": "connection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeArchive",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "archive"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeConnection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeEndpoint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "endpoint"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeEventBus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "event-bus"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeEventSource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "event-source"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribePartnerEventSource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "event-source"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeReplay",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "replay"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeRule",
+      "ActionConditionKeys": [
+        "events:creatorAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "rule-on-custom-event-bus"
+        },
+        {
+          "Name": "rule-on-default-event-bus"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisableRule",
+      "ActionConditionKeys": [
+        "events:ManagedBy",
+        "events:creatorAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "rule-on-custom-event-bus"
+        },
+        {
+          "Name": "rule-on-default-event-bus"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "EnableRule",
+      "ActionConditionKeys": [
+        "events:ManagedBy",
+        "events:creatorAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "rule-on-custom-event-bus"
+        },
+        {
+          "Name": "rule-on-default-event-bus"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "InvokeApiDestination",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "api-destination"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListApiDestinations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListArchives",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListConnections",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListEndpoints",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListEventBuses",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListEventSources",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListPartnerEventSourceAccounts",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "event-source"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListPartnerEventSources",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListReplays",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListRuleNamesByTarget",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListRules",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "ActionConditionKeys": [
+        "events:creatorAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "event-bus"
+        },
+        {
+          "Name": "rule-on-custom-event-bus"
+        },
+        {
+          "Name": "rule-on-default-event-bus"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTargetsByRule",
+      "ActionConditionKeys": [
+        "events:creatorAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "rule-on-custom-event-bus"
+        },
+        {
+          "Name": "rule-on-default-event-bus"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutEvents",
+      "ActionConditionKeys": [
+        "events:detail-type",
+        "events:eventBusInvocation",
+        "events:source"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "event-bus"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutPartnerEvents",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutPermission",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutRule",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "events:ManagedBy",
+        "events:creatorAccount",
+        "events:detail-type",
+        "events:detail.eventTypeCode",
+        "events:detail.service",
+        "events:detail.userIdentity.principalId",
+        "events:source"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "rule-on-custom-event-bus"
+        },
+        {
+          "Name": "rule-on-default-event-bus"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutTargets",
+      "ActionConditionKeys": [
+        "events:ManagedBy",
+        "events:TargetArn",
+        "events:creatorAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "rule-on-custom-event-bus"
+        },
+        {
+          "Name": "rule-on-default-event-bus"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RemovePermission",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RemoveTargets",
+      "ActionConditionKeys": [
+        "events:ManagedBy",
+        "events:creatorAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "rule-on-custom-event-bus"
+        },
+        {
+          "Name": "rule-on-default-event-bus"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RetrieveConnectionCredentials",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartReplay",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "archive"
+        },
+        {
+          "Name": "event-bus"
+        },
+        {
+          "Name": "replay"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "events:creatorAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "event-bus"
+        },
+        {
+          "Name": "rule-on-custom-event-bus"
+        },
+        {
+          "Name": "rule-on-default-event-bus"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TestEventPattern",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys",
+        "events:creatorAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "event-bus"
+        },
+        {
+          "Name": "rule-on-custom-event-bus"
+        },
+        {
+          "Name": "rule-on-default-event-bus"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateApiDestination",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "api-destination"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateArchive",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "alias"
+        },
+        {
+          "Name": "archive"
+        },
+        {
+          "Name": "key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateConnection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateEndpoint",
+      "ActionConditionKeys": [
+        "events:EventBusArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "endpoint"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateEventBus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "event-bus"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "events:EventBusArn",
+      "Types": [
+        "ArrayOfARN"
+      ]
+    },
+    {
+      "Name": "events:ManagedBy",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "events:TargetArn",
+      "Types": [
+        "ArrayOfARN"
+      ]
+    },
+    {
+      "Name": "events:creatorAccount",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "events:detail-type",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "events:detail.eventTypeCode",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "events:detail.service",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "events:detail.userIdentity.principalId",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "events:eventBusInvocation",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "events:source",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "ActivateEventSource",
+      "AuthorizedActions": [
+        {
+          "Name": "ActivateEventSource",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "activate_event_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelReplay",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelReplay",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "cancel_replay",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateApiDestination",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateApiDestination",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "create_api_destination",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateArchive",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateArchive",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "create_archive",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateConnection",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateConnection",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "create_connection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateEndpoint",
+          "Service": "events"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "events.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "create_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateEventBus",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateEventBus",
+          "Service": "events"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "create_event_bus",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePartnerEventSource",
+      "AuthorizedActions": [
+        {
+          "Name": "CreatePartnerEventSource",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "create_partner_event_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeactivateEventSource",
+      "AuthorizedActions": [
+        {
+          "Name": "DeactivateEventSource",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "deactivate_event_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeauthorizeConnection",
+      "AuthorizedActions": [
+        {
+          "Name": "DeauthorizeConnection",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "deauthorize_connection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteApiDestination",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteApiDestination",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "delete_api_destination",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteArchive",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteArchive",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "delete_archive",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteConnection",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteConnection",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "delete_connection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteEndpoint",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "delete_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteEventBus",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteEventBus",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "delete_event_bus",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePartnerEventSource",
+      "AuthorizedActions": [
+        {
+          "Name": "DeletePartnerEventSource",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "delete_partner_event_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRule",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRule",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "delete_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeApiDestination",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeApiDestination",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "describe_api_destination",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeArchive",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeArchive",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "describe_archive",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeConnection",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeConnection",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "describe_connection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeEndpoint",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "describe_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeEventBus",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeEventBus",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "describe_event_bus",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeEventSource",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeEventSource",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "describe_event_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribePartnerEventSource",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribePartnerEventSource",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "describe_partner_event_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeReplay",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeReplay",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "describe_replay",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeRule",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeRule",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "describe_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisableRule",
+      "AuthorizedActions": [
+        {
+          "Name": "DisableRule",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "disable_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "EnableRule",
+      "AuthorizedActions": [
+        {
+          "Name": "EnableRule",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "enable_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListApiDestinations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListApiDestinations",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "list_api_destinations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListArchives",
+      "AuthorizedActions": [
+        {
+          "Name": "ListArchives",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "list_archives",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListConnections",
+      "AuthorizedActions": [
+        {
+          "Name": "ListConnections",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "list_connections",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEndpoints",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEndpoints",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "list_endpoints",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEventBuses",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEventBuses",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "list_event_buses",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEventSources",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEventSources",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "list_event_sources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPartnerEventSourceAccounts",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPartnerEventSourceAccounts",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "list_partner_event_source_accounts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPartnerEventSources",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPartnerEventSources",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "list_partner_event_sources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListReplays",
+      "AuthorizedActions": [
+        {
+          "Name": "ListReplays",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "list_replays",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRuleNamesByTarget",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRuleNamesByTarget",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "list_rule_names_by_target",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRules",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRules",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "list_rules",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTargetsByRule",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTargetsByRule",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "list_targets_by_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutEvents",
+      "AuthorizedActions": [
+        {
+          "Name": "PutEvents",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "put_events",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutPartnerEvents",
+      "AuthorizedActions": [
+        {
+          "Name": "PutPartnerEvents",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "put_partner_events",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutPermission",
+      "AuthorizedActions": [
+        {
+          "Name": "PutPermission",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "put_permission",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutRule",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "events.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "PutRule",
+          "Service": "events"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "put_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutTargets",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "events.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "PutTargets",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "put_targets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RemovePermission",
+      "AuthorizedActions": [
+        {
+          "Name": "RemovePermission",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "remove_permission",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RemoveTargets",
+      "AuthorizedActions": [
+        {
+          "Name": "RemoveTargets",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "remove_targets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartReplay",
+      "AuthorizedActions": [
+        {
+          "Name": "StartReplay",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "start_replay",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TestEventPattern",
+      "AuthorizedActions": [
+        {
+          "Name": "TestEventPattern",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "test_event_pattern",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateApiDestination",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateApiDestination",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "update_api_destination",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateArchive",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateArchive",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "update_archive",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateConnection",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateConnection",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "update_connection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "events.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateEndpoint",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "update_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateEventBus",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateEventBus",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "events",
+          "Method": "update_event_bus",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "alias",
+      "ARNFormats": [
+        "arn:${Partition}:kms:${Region}:${Account}:alias/${Alias}"
+      ]
+    },
+    {
+      "Name": "api-destination",
+      "ARNFormats": [
+        "arn:${Partition}:events:${Region}:${Account}:api-destination/${ApiDestinationName}"
+      ]
+    },
+    {
+      "Name": "archive",
+      "ARNFormats": [
+        "arn:${Partition}:events:${Region}:${Account}:archive/${ArchiveName}"
+      ]
+    },
+    {
+      "Name": "connection",
+      "ARNFormats": [
+        "arn:${Partition}:events:${Region}:${Account}:connection/${ConnectionName}"
+      ]
+    },
+    {
+      "Name": "create-snapshot",
+      "ARNFormats": [
+        "arn:${Partition}:events:${Region}:${Account}:target/create-snapshot"
+      ]
+    },
+    {
+      "Name": "endpoint",
+      "ARNFormats": [
+        "arn:${Partition}:events:${Region}:${Account}:endpoint/${EndpointName}"
+      ]
+    },
+    {
+      "Name": "event-bus",
+      "ARNFormats": [
+        "arn:${Partition}:events:${Region}:${Account}:event-bus/${EventBusName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "event-source",
+      "ARNFormats": [
+        "arn:${Partition}:events:${Region}::event-source/${EventSourceName}"
+      ]
+    },
+    {
+      "Name": "key",
+      "ARNFormats": [
+        "arn:${Partition}:kms:${Region}:${Account}:key/${KeyId}"
+      ]
+    },
+    {
+      "Name": "reboot-instance",
+      "ARNFormats": [
+        "arn:${Partition}:events:${Region}:${Account}:target/reboot-instance"
+      ]
+    },
+    {
+      "Name": "replay",
+      "ARNFormats": [
+        "arn:${Partition}:events:${Region}:${Account}:replay/${ReplayName}"
+      ]
+    },
+    {
+      "Name": "rule-on-custom-event-bus",
+      "ARNFormats": [
+        "arn:${Partition}:events:${Region}:${Account}:rule/${EventBusName}/${RuleName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "rule-on-default-event-bus",
+      "ARNFormats": [
+        "arn:${Partition}:events:${Region}:${Account}:rule/${RuleName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "stop-instance",
+      "ARNFormats": [
+        "arn:${Partition}:events:${Region}:${Account}:target/stop-instance"
+      ]
+    },
+    {
+      "Name": "terminate-instance",
+      "ARNFormats": [
+        "arn:${Partition}:events:${Region}:${Account}:target/terminate-instance"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

@@ -1,0 +1,3794 @@
+{
+  "Name": "wellarchitected",
+  "Actions": [
+    {
+      "Name": "AssociateLenses",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workload"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AssociateProfiles",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workload"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ConfigureIntegration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateAgentContext",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "agent-profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateAgentGoal",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "agent-profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateAgentProfile",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateLensShare",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "lens"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateLensVersion",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "lens"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateMilestone",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workload"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateProfile",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateProfileShare",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateReviewTemplate",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateTemplateShare",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "review-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateWorkload",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "wellarchitected:JiraProjectKey"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateWorkloadShare",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workload"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteAgentContext",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "agent-profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteAgentGoal",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "agent-profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteAgentProfile",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "agent-profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteLens",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "lens"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteLensShare",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "lens"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteProfile",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteProfileShare",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteReviewTemplate",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "review-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteTemplateShare",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "review-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteWorkload",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workload"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteWorkloadShare",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workload"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateLenses",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workload"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateProfiles",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workload"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ExportLens",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "lens"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetAgentContext",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "agent-profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAgentGoal",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "agent-profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAgentProfile",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "agent-profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAgentRecommendation",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "agent-recommendation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAgentRecommendationGeneration",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "agent-profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAnswer",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workload"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetConsolidatedReport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetGlobalSettings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetLens",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "lens"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetLensReview",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workload"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetLensReviewReport",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workload"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetLensVersionDifference",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "lens"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetMilestone",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workload"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetProfile",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetProfileTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetReviewTemplate",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "review-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetReviewTemplateAnswer",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "review-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetReviewTemplateLensReview",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "review-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetWorkload",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workload"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ImportLens",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAgentContexts",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "agent-profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAgentGoals",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "agent-profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAgentProfiles",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAgentRecommendationGenerations",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "agent-profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAgentRecommendationItems",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "agent-recommendation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAgentRecommendations",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "agent-profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAnswers",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workload"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListCheckDetails",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workload"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListCheckSummaries",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workload"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListLensReviewImprovements",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workload"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListLensReviews",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workload"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListLensShares",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "lens"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListLenses",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListMilestones",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workload"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListNotifications",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListProfileNotifications",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListProfileShares",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListProfiles",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListReviewTemplateAnswers",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "review-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListReviewTemplates",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListShareInvitations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "agent-profile"
+        },
+        {
+          "Name": "agent-recommendation"
+        },
+        {
+          "Name": "lens"
+        },
+        {
+          "Name": "profile"
+        },
+        {
+          "Name": "review-template"
+        },
+        {
+          "Name": "workload"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTemplateShares",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "review-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListWorkloadShares",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workload"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListWorkloads",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutAgentRecommendationFeedback",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "agent-recommendation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartAgentRecommendationGeneration",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "agent-profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "agent-profile"
+        },
+        {
+          "Name": "agent-recommendation"
+        },
+        {
+          "Name": "lens"
+        },
+        {
+          "Name": "profile"
+        },
+        {
+          "Name": "review-template"
+        },
+        {
+          "Name": "workload"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "agent-profile"
+        },
+        {
+          "Name": "agent-recommendation"
+        },
+        {
+          "Name": "lens"
+        },
+        {
+          "Name": "profile"
+        },
+        {
+          "Name": "review-template"
+        },
+        {
+          "Name": "workload"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAgentContext",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "agent-profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAgentGoal",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "agent-profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAgentProfile",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "agent-profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAgentRecommendationStatus",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "agent-recommendation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAnswer",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workload"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateGlobalSettings",
+      "ActionConditionKeys": [
+        "wellarchitected:JiraProjectKey"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateIntegration",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workload"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateLensReview",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workload"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateProfile",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateReviewTemplate",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "review-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateReviewTemplateAnswer",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "review-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateReviewTemplateLensReview",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "review-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateShareInvitation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateWorkload",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "wellarchitected:JiraProjectKey"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workload"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateWorkloadShare",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workload"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpgradeLensReview",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workload"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpgradeProfileVersion",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "profile"
+        },
+        {
+          "Name": "workload"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpgradeReviewTemplateLensReview",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "review-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "wellarchitected:JiraProjectKey",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AssociateLenses",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateLenses",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "associate_lenses",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateProfiles",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateProfiles",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "associate_profiles",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAgentContext",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAgentContext",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "create_agent_context",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAgentGoal",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAgentGoal",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "create_agent_goal",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAgentProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAgentProfile",
+          "Service": "wellarchitected"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "wellarchitected.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "create_agent_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateLensShare",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateLensShare",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "create_lens_share",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateLensVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateLensVersion",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "create_lens_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateMilestone",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateMilestone",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "create_milestone",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateProfile",
+          "Service": "wellarchitected"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "create_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateProfileShare",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateProfileShare",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "create_profile_share",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateReviewTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateReviewTemplate",
+          "Service": "wellarchitected"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "create_review_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateTemplateShare",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateTemplateShare",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "create_template_share",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateWorkload",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateWorkload",
+          "Service": "wellarchitected"
+        },
+        {
+          "Name": "GetReviewTemplate",
+          "Service": "wellarchitected"
+        },
+        {
+          "Name": "GetReviewTemplateAnswer",
+          "Service": "wellarchitected"
+        },
+        {
+          "Name": "GetReviewTemplateLensReview",
+          "Service": "wellarchitected"
+        },
+        {
+          "Name": "ListReviewTemplateAnswers",
+          "Service": "wellarchitected"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "create_workload",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateWorkloadShare",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateWorkloadShare",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "create_workload_share",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAgentContext",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAgentContext",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "delete_agent_context",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAgentGoal",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAgentGoal",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "delete_agent_goal",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAgentProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAgentProfile",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "delete_agent_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteLens",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteLens",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "delete_lens",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteLensShare",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteLensShare",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "delete_lens_share",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteProfile",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "delete_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteProfileShare",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteProfileShare",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "delete_profile_share",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteReviewTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteReviewTemplate",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "delete_review_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteTemplateShare",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteTemplateShare",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "delete_template_share",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteWorkload",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteWorkload",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "delete_workload",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteWorkloadShare",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteWorkloadShare",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "delete_workload_share",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateLenses",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateLenses",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "disassociate_lenses",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateProfiles",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateProfiles",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "disassociate_profiles",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ExportLens",
+      "AuthorizedActions": [
+        {
+          "Name": "ExportLens",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "export_lens",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAgentContext",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAgentContext",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "get_agent_context",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAgentGoal",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAgentGoal",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "get_agent_goal",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAgentProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAgentProfile",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "get_agent_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAgentRecommendation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAgentRecommendation",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "get_agent_recommendation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAgentRecommendationGeneration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAgentRecommendationGeneration",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "get_agent_recommendation_generation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAnswer",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAnswer",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "get_answer",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetConsolidatedReport",
+      "AuthorizedActions": [
+        {
+          "Name": "GetConsolidatedReport",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "get_consolidated_report",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetGlobalSettings",
+      "AuthorizedActions": [
+        {
+          "Name": "GetGlobalSettings",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "get_global_settings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetLens",
+      "AuthorizedActions": [
+        {
+          "Name": "GetLens",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "get_lens",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetLensReview",
+      "AuthorizedActions": [
+        {
+          "Name": "GetLensReview",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "get_lens_review",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetLensReviewReport",
+      "AuthorizedActions": [
+        {
+          "Name": "GetLensReviewReport",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "get_lens_review_report",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetLensVersionDifference",
+      "AuthorizedActions": [
+        {
+          "Name": "GetLensVersionDifference",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "get_lens_version_difference",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMilestone",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMilestone",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "get_milestone",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "GetProfile",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "get_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetProfileTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "GetProfileTemplate",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "get_profile_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetReviewTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "GetReviewTemplate",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "get_review_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetReviewTemplateAnswer",
+      "AuthorizedActions": [
+        {
+          "Name": "GetReviewTemplateAnswer",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "get_review_template_answer",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetReviewTemplateLensReview",
+      "AuthorizedActions": [
+        {
+          "Name": "GetReviewTemplateLensReview",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "get_review_template_lens_review",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetWorkload",
+      "AuthorizedActions": [
+        {
+          "Name": "GetWorkload",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "get_workload",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ImportLens",
+      "AuthorizedActions": [
+        {
+          "Name": "ImportLens",
+          "Service": "wellarchitected"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "import_lens",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAgentContexts",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAgentContexts",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "list_agent_contexts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAgentGoals",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAgentGoals",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "list_agent_goals",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAgentProfiles",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAgentProfiles",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "list_agent_profiles",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAgentRecommendationGenerations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAgentRecommendationGenerations",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "list_agent_recommendation_generations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAgentRecommendationItems",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAgentRecommendationItems",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "list_agent_recommendation_items",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAgentRecommendations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAgentRecommendations",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "list_agent_recommendations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAnswers",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAnswers",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "list_answers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCheckDetails",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCheckDetails",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "list_check_details",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCheckSummaries",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCheckSummaries",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "list_check_summaries",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListLensReviewImprovements",
+      "AuthorizedActions": [
+        {
+          "Name": "ListLensReviewImprovements",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "list_lens_review_improvements",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListLensReviews",
+      "AuthorizedActions": [
+        {
+          "Name": "ListLensReviews",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "list_lens_reviews",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListLensShares",
+      "AuthorizedActions": [
+        {
+          "Name": "ListLensShares",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "list_lens_shares",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListLenses",
+      "AuthorizedActions": [
+        {
+          "Name": "ListLenses",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "list_lenses",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMilestones",
+      "AuthorizedActions": [
+        {
+          "Name": "ListMilestones",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "list_milestones",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListNotifications",
+      "AuthorizedActions": [
+        {
+          "Name": "ListNotifications",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "list_notifications",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProfileNotifications",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProfileNotifications",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "list_profile_notifications",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProfileShares",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProfileShares",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "list_profile_shares",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProfiles",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProfiles",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "list_profiles",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListReviewTemplateAnswers",
+      "AuthorizedActions": [
+        {
+          "Name": "ListReviewTemplateAnswers",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "list_review_template_answers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListReviewTemplates",
+      "AuthorizedActions": [
+        {
+          "Name": "ListReviewTemplates",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "list_review_templates",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListShareInvitations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListShareInvitations",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "list_share_invitations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTemplateShares",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTemplateShares",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "list_template_shares",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListWorkloadShares",
+      "AuthorizedActions": [
+        {
+          "Name": "ListWorkloadShares",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "list_workload_shares",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListWorkloads",
+      "AuthorizedActions": [
+        {
+          "Name": "ListWorkloads",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "list_workloads",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutAgentRecommendationFeedback",
+      "AuthorizedActions": [
+        {
+          "Name": "PutAgentRecommendationFeedback",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "put_agent_recommendation_feedback",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartAgentRecommendationGeneration",
+      "AuthorizedActions": [
+        {
+          "Name": "StartAgentRecommendationGeneration",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "start_agent_recommendation_generation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAgentContext",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAgentContext",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "update_agent_context",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAgentGoal",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAgentGoal",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "update_agent_goal",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAgentProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "wellarchitected.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateAgentProfile",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "update_agent_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAgentRecommendationStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAgentRecommendationStatus",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "update_agent_recommendation_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAnswer",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAnswer",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "update_answer",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateGlobalSettings",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateGlobalSettings",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "update_global_settings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateIntegration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateIntegration",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "update_integration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateLensReview",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateLensReview",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "update_lens_review",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateProfile",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "update_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateReviewTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateReviewTemplate",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "update_review_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateReviewTemplateAnswer",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateReviewTemplateAnswer",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "update_review_template_answer",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateReviewTemplateLensReview",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateReviewTemplateLensReview",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "update_review_template_lens_review",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateShareInvitation",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateShareInvitation",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "update_share_invitation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateWorkload",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateWorkload",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "update_workload",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateWorkloadShare",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateWorkloadShare",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "update_workload_share",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpgradeLensReview",
+      "AuthorizedActions": [
+        {
+          "Name": "UpgradeLensReview",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "upgrade_lens_review",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpgradeProfileVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "UpgradeProfileVersion",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "upgrade_profile_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpgradeReviewTemplateLensReview",
+      "AuthorizedActions": [
+        {
+          "Name": "UpgradeReviewTemplateLensReview",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "upgrade_review_template_lens_review",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "agent-profile",
+      "ARNFormats": [
+        "arn:${Partition}:wellarchitected:${Region}:${Account}:agent-profile/${ProfileName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "agent-recommendation",
+      "ARNFormats": [
+        "arn:${Partition}:wellarchitected:${Region}:${Account}:agent-recommendation/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "lens",
+      "ARNFormats": [
+        "arn:${Partition}:wellarchitected:${Region}:${Account}:lens/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "profile",
+      "ARNFormats": [
+        "arn:${Partition}:wellarchitected:${Region}:${Account}:profile/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "review-template",
+      "ARNFormats": [
+        "arn:${Partition}:wellarchitected:${Region}:${Account}:review-template/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "workload",
+      "ARNFormats": [
+        "arn:${Partition}:wellarchitected:${Region}:${Account}:workload/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

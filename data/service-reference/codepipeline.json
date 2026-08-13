@@ -1,0 +1,1678 @@
+{
+  "Name": "codepipeline",
+  "Actions": [
+    {
+      "Name": "AcknowledgeJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AcknowledgeThirdPartyJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateCustomActionType",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "actiontype"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreatePipeline",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "pipeline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteCustomActionType",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "actiontype"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeletePipeline",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "pipeline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteWebhook",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "webhook"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeregisterWebhookWithThirdParty",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "webhook"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisableStageTransition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stage"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "EnableStageTransition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stage"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetActionType",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetJobDetails",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetPipeline",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "pipeline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetPipelineExecution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "pipeline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetPipelineState",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "pipeline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetThirdPartyJobDetails",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListActionExecutions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "pipeline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListActionTypes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDeployActionExecutionTargets",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "pipeline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPipelineExecutions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "pipeline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListPipelines",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListRuleExecutions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "pipeline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListRuleTypes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "actiontype"
+        },
+        {
+          "Name": "pipeline"
+        },
+        {
+          "Name": "webhook"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListWebhooks",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "webhook"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "OverrideStageCondition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stage"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PollForJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "actiontype"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PollForThirdPartyJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutActionRevision",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "action"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutApprovalResult",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "action"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutJobFailureResult",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutJobSuccessResult",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutThirdPartyJobFailureResult",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutThirdPartyJobSuccessResult",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutWebhook",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "pipeline"
+        },
+        {
+          "Name": "webhook"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RegisterWebhookWithThirdParty",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "webhook"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RetryStageExecution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stage"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RollbackStage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stage"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartPipelineExecution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "pipeline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopPipelineExecution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "pipeline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "actiontype"
+        },
+        {
+          "Name": "pipeline"
+        },
+        {
+          "Name": "webhook"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "actiontype"
+        },
+        {
+          "Name": "pipeline"
+        },
+        {
+          "Name": "webhook"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateActionType",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "actiontype"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdatePipeline",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "pipeline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AcknowledgeJob",
+      "AuthorizedActions": [
+        {
+          "Name": "AcknowledgeJob",
+          "Service": "codepipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codepipeline",
+          "Method": "acknowledge_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AcknowledgeThirdPartyJob",
+      "AuthorizedActions": [
+        {
+          "Name": "AcknowledgeThirdPartyJob",
+          "Service": "codepipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codepipeline",
+          "Method": "acknowledge_third_party_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateCustomActionType",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCustomActionType",
+          "Service": "codepipeline"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "codepipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codepipeline",
+          "Method": "create_custom_action_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePipeline",
+      "AuthorizedActions": [
+        {
+          "Name": "CreatePipeline",
+          "Service": "codepipeline"
+        },
+        {
+          "Name": "PassConnection",
+          "Service": "codestar-connections"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "cloudformation.amazonaws.com",
+              "codepipeline.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "codepipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codepipeline",
+          "Method": "create_pipeline",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCustomActionType",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCustomActionType",
+          "Service": "codepipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codepipeline",
+          "Method": "delete_custom_action_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePipeline",
+      "AuthorizedActions": [
+        {
+          "Name": "DeletePipeline",
+          "Service": "codepipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codepipeline",
+          "Method": "delete_pipeline",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteWebhook",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteWebhook",
+          "Service": "codepipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codepipeline",
+          "Method": "delete_webhook",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeregisterWebhookWithThirdParty",
+      "AuthorizedActions": [
+        {
+          "Name": "DeregisterWebhookWithThirdParty",
+          "Service": "codepipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codepipeline",
+          "Method": "deregister_webhook_with_third_party",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisableStageTransition",
+      "AuthorizedActions": [
+        {
+          "Name": "DisableStageTransition",
+          "Service": "codepipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codepipeline",
+          "Method": "disable_stage_transition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "EnableStageTransition",
+      "AuthorizedActions": [
+        {
+          "Name": "EnableStageTransition",
+          "Service": "codepipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codepipeline",
+          "Method": "enable_stage_transition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetActionType",
+      "AuthorizedActions": [
+        {
+          "Name": "GetActionType",
+          "Service": "codepipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codepipeline",
+          "Method": "get_action_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetJobDetails",
+      "AuthorizedActions": [
+        {
+          "Name": "GetJobDetails",
+          "Service": "codepipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codepipeline",
+          "Method": "get_job_details",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPipeline",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPipeline",
+          "Service": "codepipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codepipeline",
+          "Method": "get_pipeline",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPipelineExecution",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPipelineExecution",
+          "Service": "codepipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codepipeline",
+          "Method": "get_pipeline_execution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPipelineState",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPipelineState",
+          "Service": "codepipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codepipeline",
+          "Method": "get_pipeline_state",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetThirdPartyJobDetails",
+      "AuthorizedActions": [
+        {
+          "Name": "GetThirdPartyJobDetails",
+          "Service": "codepipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codepipeline",
+          "Method": "get_third_party_job_details",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListActionExecutions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListActionExecutions",
+          "Service": "codepipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codepipeline",
+          "Method": "list_action_executions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListActionTypes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListActionTypes",
+          "Service": "codepipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codepipeline",
+          "Method": "list_action_types",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDeployActionExecutionTargets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDeployActionExecutionTargets",
+          "Service": "codepipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codepipeline",
+          "Method": "list_deploy_action_execution_targets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPipelineExecutions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPipelineExecutions",
+          "Service": "codepipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codepipeline",
+          "Method": "list_pipeline_executions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPipelines",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPipelines",
+          "Service": "codepipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codepipeline",
+          "Method": "list_pipelines",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRuleExecutions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRuleExecutions",
+          "Service": "codepipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codepipeline",
+          "Method": "list_rule_executions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRuleTypes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRuleTypes",
+          "Service": "codepipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codepipeline",
+          "Method": "list_rule_types",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "codepipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codepipeline",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListWebhooks",
+      "AuthorizedActions": [
+        {
+          "Name": "ListWebhooks",
+          "Service": "codepipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codepipeline",
+          "Method": "list_webhooks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "OverrideStageCondition",
+      "AuthorizedActions": [
+        {
+          "Name": "OverrideStageCondition",
+          "Service": "codepipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codepipeline",
+          "Method": "override_stage_condition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PollForJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "PollForJobs",
+          "Service": "codepipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codepipeline",
+          "Method": "poll_for_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PollForThirdPartyJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "PollForThirdPartyJobs",
+          "Service": "codepipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codepipeline",
+          "Method": "poll_for_third_party_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutActionRevision",
+      "AuthorizedActions": [
+        {
+          "Name": "PutActionRevision",
+          "Service": "codepipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codepipeline",
+          "Method": "put_action_revision",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutApprovalResult",
+      "AuthorizedActions": [
+        {
+          "Name": "PutApprovalResult",
+          "Service": "codepipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codepipeline",
+          "Method": "put_approval_result",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutJobFailureResult",
+      "AuthorizedActions": [
+        {
+          "Name": "PutJobFailureResult",
+          "Service": "codepipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codepipeline",
+          "Method": "put_job_failure_result",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutJobSuccessResult",
+      "AuthorizedActions": [
+        {
+          "Name": "PutJobSuccessResult",
+          "Service": "codepipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codepipeline",
+          "Method": "put_job_success_result",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutThirdPartyJobFailureResult",
+      "AuthorizedActions": [
+        {
+          "Name": "PutThirdPartyJobFailureResult",
+          "Service": "codepipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codepipeline",
+          "Method": "put_third_party_job_failure_result",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutThirdPartyJobSuccessResult",
+      "AuthorizedActions": [
+        {
+          "Name": "PutThirdPartyJobSuccessResult",
+          "Service": "codepipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codepipeline",
+          "Method": "put_third_party_job_success_result",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutWebhook",
+      "AuthorizedActions": [
+        {
+          "Name": "PutWebhook",
+          "Service": "codepipeline"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "codepipeline"
+        },
+        {
+          "Name": "UntagResource",
+          "Service": "codepipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codepipeline",
+          "Method": "put_webhook",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RegisterWebhookWithThirdParty",
+      "AuthorizedActions": [
+        {
+          "Name": "RegisterWebhookWithThirdParty",
+          "Service": "codepipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codepipeline",
+          "Method": "register_webhook_with_third_party",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RetryStageExecution",
+      "AuthorizedActions": [
+        {
+          "Name": "RetryStageExecution",
+          "Service": "codepipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codepipeline",
+          "Method": "retry_stage_execution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RollbackStage",
+      "AuthorizedActions": [
+        {
+          "Name": "RollbackStage",
+          "Service": "codepipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codepipeline",
+          "Method": "rollback_stage",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartPipelineExecution",
+      "AuthorizedActions": [
+        {
+          "Name": "StartPipelineExecution",
+          "Service": "codepipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codepipeline",
+          "Method": "start_pipeline_execution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopPipelineExecution",
+      "AuthorizedActions": [
+        {
+          "Name": "StopPipelineExecution",
+          "Service": "codepipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codepipeline",
+          "Method": "stop_pipeline_execution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "codepipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codepipeline",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "codepipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codepipeline",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateActionType",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateActionType",
+          "Service": "codepipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codepipeline",
+          "Method": "update_action_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdatePipeline",
+      "AuthorizedActions": [
+        {
+          "Name": "PassConnection",
+          "Service": "codestar-connections"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "cloudformation.amazonaws.com",
+              "codepipeline.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdatePipeline",
+          "Service": "codepipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codepipeline",
+          "Method": "update_pipeline",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "action",
+      "ARNFormats": [
+        "arn:${Partition}:codepipeline:${Region}:${Account}:${PipelineName}/${StageName}/${ActionName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "actiontype",
+      "ARNFormats": [
+        "arn:${Partition}:codepipeline:${Region}:${Account}:actiontype:${Owner}/${Category}/${Provider}/${Version}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "pipeline",
+      "ARNFormats": [
+        "arn:${Partition}:codepipeline:${Region}:${Account}:${PipelineName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "stage",
+      "ARNFormats": [
+        "arn:${Partition}:codepipeline:${Region}:${Account}:${PipelineName}/${StageName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "webhook",
+      "ARNFormats": [
+        "arn:${Partition}:codepipeline:${Region}:${Account}:webhook:${WebhookName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

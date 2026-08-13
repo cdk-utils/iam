@@ -1,0 +1,576 @@
+{
+  "Name": "application-autoscaling",
+  "Actions": [
+    {
+      "Name": "DeleteScalingPolicy",
+      "ActionConditionKeys": [
+        "application-autoscaling:scalable-dimension",
+        "application-autoscaling:service-namespace"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ScalableTarget"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteScheduledAction",
+      "ActionConditionKeys": [
+        "application-autoscaling:scalable-dimension",
+        "application-autoscaling:service-namespace"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ScalableTarget"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeregisterScalableTarget",
+      "ActionConditionKeys": [
+        "application-autoscaling:scalable-dimension",
+        "application-autoscaling:service-namespace"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ScalableTarget"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeScalableTargets",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeScalingActivities",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeScalingPolicies",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeScheduledActions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetPredictiveScalingForecast",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ScalableTarget"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutScalingPolicy",
+      "ActionConditionKeys": [
+        "application-autoscaling:scalable-dimension",
+        "application-autoscaling:service-namespace"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ScalableTarget"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutScheduledAction",
+      "ActionConditionKeys": [
+        "application-autoscaling:scalable-dimension",
+        "application-autoscaling:service-namespace"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ScalableTarget"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RegisterScalableTarget",
+      "ActionConditionKeys": [
+        "application-autoscaling:scalable-dimension",
+        "application-autoscaling:service-namespace",
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ScalableTarget"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ScalableTarget"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ScalableTarget"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "application-autoscaling:scalable-dimension",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "application-autoscaling:service-namespace",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "DeleteScalingPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteScalingPolicy",
+          "Service": "application-autoscaling"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "application-autoscaling",
+          "Method": "delete_scaling_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteScheduledAction",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteScheduledAction",
+          "Service": "application-autoscaling"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "application-autoscaling",
+          "Method": "delete_scheduled_action",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeregisterScalableTarget",
+      "AuthorizedActions": [
+        {
+          "Name": "DeregisterScalableTarget",
+          "Service": "application-autoscaling"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "application-autoscaling",
+          "Method": "deregister_scalable_target",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeScalableTargets",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeScalableTargets",
+          "Service": "application-autoscaling"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "application-autoscaling",
+          "Method": "describe_scalable_targets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeScalingActivities",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeScalingActivities",
+          "Service": "application-autoscaling"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "application-autoscaling",
+          "Method": "describe_scaling_activities",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeScalingPolicies",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeScalingPolicies",
+          "Service": "application-autoscaling"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "application-autoscaling",
+          "Method": "describe_scaling_policies",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeScheduledActions",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeScheduledActions",
+          "Service": "application-autoscaling"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "application-autoscaling",
+          "Method": "describe_scheduled_actions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPredictiveScalingForecast",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPredictiveScalingForecast",
+          "Service": "application-autoscaling"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "application-autoscaling",
+          "Method": "get_predictive_scaling_forecast",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "application-autoscaling"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "application-autoscaling",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutScalingPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PutScalingPolicy",
+          "Service": "application-autoscaling"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "application-autoscaling",
+          "Method": "put_scaling_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutScheduledAction",
+      "AuthorizedActions": [
+        {
+          "Name": "PutScheduledAction",
+          "Service": "application-autoscaling"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "application-autoscaling",
+          "Method": "put_scheduled_action",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RegisterScalableTarget",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "application-autoscaling.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "RegisterScalableTarget",
+          "Service": "application-autoscaling"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "application-autoscaling"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "application-autoscaling",
+          "Method": "register_scalable_target",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "application-autoscaling"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "application-autoscaling",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "application-autoscaling"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "application-autoscaling",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "ScalableTarget",
+      "ARNFormats": [
+        "arn:${Partition}:application-autoscaling:${Region}:${Account}:scalable-target/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

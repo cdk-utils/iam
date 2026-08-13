@@ -1,0 +1,1716 @@
+{
+  "Name": "controltower",
+  "Actions": [
+    {
+      "Name": "CreateLandingZone",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateManagedAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteLandingZone",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "LandingZone"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeregisterManagedAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeregisterOrganizationalUnit",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeAccountFactoryConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeCoreService",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeGuardrail",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeGuardrailForTarget",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeLandingZoneConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeManagedAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeManagedOrganizationalUnit",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeRegisterOrganizationalUnitOperation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeSingleSignOn",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisableBaseline",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "EnabledBaseline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisableControl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "EnabledControl"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisableGuardrail",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "EnableBaseline",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "EnableControl",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "EnabledControl"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "EnableGuardrail",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAccountInfo",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAvailableUpdates",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetBaseline",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Baseline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetBaselineOperation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetControlOperation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetEnabledBaseline",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "EnabledBaseline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetEnabledControl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "EnabledControl"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetGuardrailComplianceStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetHomeRegion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetLandingZone",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "LandingZone"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetLandingZoneDriftStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetLandingZoneOperation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetLandingZoneStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListBaselines",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListControlOperations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDirectoryGroups",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDriftDetails",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEnabledBaselines",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEnabledControls",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEnabledGuardrails",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListExtendGovernancePrecheckDetails",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListExternalConfigRuleCompliance",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListGuardrailViolations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListGuardrails",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListGuardrailsForTarget",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListLandingZoneOperations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListLandingZones",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListManagedAccounts",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListManagedAccountsForGuardrail",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListManagedAccountsForParent",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListManagedOrganizationalUnits",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListManagedOrganizationalUnitsForGuardrail",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "EnabledBaseline"
+        },
+        {
+          "Name": "EnabledControl"
+        },
+        {
+          "Name": "LandingZone"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ManageOrganizationalUnit",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PerformPreLaunchChecks",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ResetEnabledBaseline",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "EnabledBaseline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ResetEnabledControl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "EnabledControl"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ResetLandingZone",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "LandingZone"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SetupLandingZone",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "EnabledBaseline"
+        },
+        {
+          "Name": "EnabledControl"
+        },
+        {
+          "Name": "LandingZone"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "EnabledBaseline"
+        },
+        {
+          "Name": "EnabledControl"
+        },
+        {
+          "Name": "LandingZone"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAccountFactoryConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateEnabledBaseline",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "EnabledBaseline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateEnabledControl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "EnabledControl"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateLandingZone",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "LandingZone"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateLandingZone",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateLandingZone",
+          "Service": "controltower"
+        },
+        {
+          "Name": "PerformPreLaunchChecks",
+          "Service": "controltower"
+        },
+        {
+          "Name": "SetupLandingZone",
+          "Service": "controltower"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "controltower"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "controltower",
+          "Method": "create_landing_zone",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteLandingZone",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteLandingZone",
+          "Service": "controltower"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "controltower",
+          "Method": "delete_landing_zone",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisableBaseline",
+      "AuthorizedActions": [
+        {
+          "Name": "DeregisterOrganizationalUnit",
+          "Service": "controltower"
+        },
+        {
+          "Name": "DisableBaseline",
+          "Service": "controltower"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "controltower",
+          "Method": "disable_baseline",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisableControl",
+      "AuthorizedActions": [
+        {
+          "Name": "DisableControl",
+          "Service": "controltower"
+        },
+        {
+          "Name": "DisableGuardrail",
+          "Service": "controltower"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "controltower",
+          "Method": "disable_control",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "EnableBaseline",
+      "AuthorizedActions": [
+        {
+          "Name": "EnableBaseline",
+          "Service": "controltower"
+        },
+        {
+          "Name": "ManageOrganizationalUnit",
+          "Service": "controltower"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "controltower"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "controltower",
+          "Method": "enable_baseline",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "EnableControl",
+      "AuthorizedActions": [
+        {
+          "Name": "EnableControl",
+          "Service": "controltower"
+        },
+        {
+          "Name": "EnableGuardrail",
+          "Service": "controltower"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "controltower"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "controltower",
+          "Method": "enable_control",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBaseline",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBaseline",
+          "Service": "controltower"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "controltower",
+          "Method": "get_baseline",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBaselineOperation",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeRegisterOrganizationalUnitOperation",
+          "Service": "controltower"
+        },
+        {
+          "Name": "GetBaselineOperation",
+          "Service": "controltower"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "controltower",
+          "Method": "get_baseline_operation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetControlOperation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetControlOperation",
+          "Service": "controltower"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "controltower",
+          "Method": "get_control_operation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEnabledBaseline",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeManagedAccount",
+          "Service": "controltower"
+        },
+        {
+          "Name": "DescribeManagedOrganizationalUnit",
+          "Service": "controltower"
+        },
+        {
+          "Name": "GetEnabledBaseline",
+          "Service": "controltower"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "controltower",
+          "Method": "get_enabled_baseline",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEnabledControl",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeGuardrailForTarget",
+          "Service": "controltower"
+        },
+        {
+          "Name": "GetEnabledControl",
+          "Service": "controltower"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "controltower",
+          "Method": "get_enabled_control",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetLandingZone",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeLandingZoneConfiguration",
+          "Service": "controltower"
+        },
+        {
+          "Name": "GetAvailableUpdates",
+          "Service": "controltower"
+        },
+        {
+          "Name": "GetLandingZone",
+          "Service": "controltower"
+        },
+        {
+          "Name": "GetLandingZoneDriftStatus",
+          "Service": "controltower"
+        },
+        {
+          "Name": "GetLandingZoneStatus",
+          "Service": "controltower"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "controltower",
+          "Method": "get_landing_zone",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetLandingZoneOperation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetLandingZoneOperation",
+          "Service": "controltower"
+        },
+        {
+          "Name": "GetLandingZoneStatus",
+          "Service": "controltower"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "controltower",
+          "Method": "get_landing_zone_operation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListBaselines",
+      "AuthorizedActions": [
+        {
+          "Name": "ListBaselines",
+          "Service": "controltower"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "controltower",
+          "Method": "list_baselines",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListControlOperations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListControlOperations",
+          "Service": "controltower"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "controltower",
+          "Method": "list_control_operations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEnabledBaselines",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEnabledBaselines",
+          "Service": "controltower"
+        },
+        {
+          "Name": "ListManagedAccounts",
+          "Service": "controltower"
+        },
+        {
+          "Name": "ListManagedOrganizationalUnits",
+          "Service": "controltower"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "controltower",
+          "Method": "list_enabled_baselines",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEnabledControls",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEnabledControls",
+          "Service": "controltower"
+        },
+        {
+          "Name": "ListGuardrailsForTarget",
+          "Service": "controltower"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "controltower",
+          "Method": "list_enabled_controls",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListLandingZoneOperations",
+      "AuthorizedActions": [
+        {
+          "Name": "GetLandingZoneStatus",
+          "Service": "controltower"
+        },
+        {
+          "Name": "ListLandingZoneOperations",
+          "Service": "controltower"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "controltower",
+          "Method": "list_landing_zone_operations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListLandingZones",
+      "AuthorizedActions": [
+        {
+          "Name": "GetHomeRegion",
+          "Service": "controltower"
+        },
+        {
+          "Name": "ListLandingZones",
+          "Service": "controltower"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "controltower",
+          "Method": "list_landing_zones",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "controltower"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "controltower",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ResetEnabledBaseline",
+      "AuthorizedActions": [
+        {
+          "Name": "ManageOrganizationalUnit",
+          "Service": "controltower"
+        },
+        {
+          "Name": "ResetEnabledBaseline",
+          "Service": "controltower"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "controltower",
+          "Method": "reset_enabled_baseline",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ResetEnabledControl",
+      "AuthorizedActions": [
+        {
+          "Name": "ResetEnabledControl",
+          "Service": "controltower"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "controltower",
+          "Method": "reset_enabled_control",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ResetLandingZone",
+      "AuthorizedActions": [
+        {
+          "Name": "ResetLandingZone",
+          "Service": "controltower"
+        },
+        {
+          "Name": "SetupLandingZone",
+          "Service": "controltower"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "controltower",
+          "Method": "reset_landing_zone",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "controltower"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "controltower",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "controltower"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "controltower",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateEnabledBaseline",
+      "AuthorizedActions": [
+        {
+          "Name": "ManageOrganizationalUnit",
+          "Service": "controltower"
+        },
+        {
+          "Name": "UpdateEnabledBaseline",
+          "Service": "controltower"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "controltower",
+          "Method": "update_enabled_baseline",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateEnabledControl",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateEnabledControl",
+          "Service": "controltower"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "controltower",
+          "Method": "update_enabled_control",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateLandingZone",
+      "AuthorizedActions": [
+        {
+          "Name": "SetupLandingZone",
+          "Service": "controltower"
+        },
+        {
+          "Name": "UpdateLandingZone",
+          "Service": "controltower"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "controltower",
+          "Method": "update_landing_zone",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "Baseline",
+      "ARNFormats": [
+        "arn:${Partition}:controltower:${Region}::baseline/${BaselineId}"
+      ]
+    },
+    {
+      "Name": "EnabledBaseline",
+      "ARNFormats": [
+        "arn:${Partition}:controltower:${Region}:${Account}:enabledbaseline/${EnabledBaselineId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "EnabledControl",
+      "ARNFormats": [
+        "arn:${Partition}:controltower:${Region}:${Account}:enabledcontrol/${EnabledControlId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "LandingZone",
+      "ARNFormats": [
+        "arn:${Partition}:controltower:${Region}:${Account}:landingzone/${LandingZoneId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

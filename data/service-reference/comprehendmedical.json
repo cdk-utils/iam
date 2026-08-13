@@ -1,0 +1,846 @@
+{
+  "Name": "comprehendmedical",
+  "Actions": [
+    {
+      "Name": "DescribeEntitiesDetectionV2Job",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeICD10CMInferenceJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribePHIDetectionJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeRxNormInferenceJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeSNOMEDCTInferenceJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DetectEntitiesV2",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DetectPHI",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "InferICD10CM",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "InferRxNorm",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "InferSNOMEDCT",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListEntitiesDetectionV2Jobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListICD10CMInferenceJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListPHIDetectionJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListRxNormInferenceJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListSNOMEDCTInferenceJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartEntitiesDetectionV2Job",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartICD10CMInferenceJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartPHIDetectionJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartRxNormInferenceJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartSNOMEDCTInferenceJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopEntitiesDetectionV2Job",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopICD10CMInferenceJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopPHIDetectionJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopRxNormInferenceJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopSNOMEDCTInferenceJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "DescribeEntitiesDetectionV2Job",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeEntitiesDetectionV2Job",
+          "Service": "comprehendmedical"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehendmedical",
+          "Method": "describe_entities_detection_v2_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeICD10CMInferenceJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeICD10CMInferenceJob",
+          "Service": "comprehendmedical"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehendmedical",
+          "Method": "describe_icd10_cm_inference_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribePHIDetectionJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribePHIDetectionJob",
+          "Service": "comprehendmedical"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehendmedical",
+          "Method": "describe_phi_detection_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeRxNormInferenceJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeRxNormInferenceJob",
+          "Service": "comprehendmedical"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehendmedical",
+          "Method": "describe_rx_norm_inference_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSNOMEDCTInferenceJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSNOMEDCTInferenceJob",
+          "Service": "comprehendmedical"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehendmedical",
+          "Method": "describe_snomedct_inference_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DetectEntities",
+      "SDK": [
+        {
+          "Name": "comprehendmedical",
+          "Method": "detect_entities",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DetectEntitiesV2",
+      "AuthorizedActions": [
+        {
+          "Name": "DetectEntitiesV2",
+          "Service": "comprehendmedical"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehendmedical",
+          "Method": "detect_entities_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DetectPHI",
+      "AuthorizedActions": [
+        {
+          "Name": "DetectPHI",
+          "Service": "comprehendmedical"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehendmedical",
+          "Method": "detect_phi",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "InferICD10CM",
+      "AuthorizedActions": [
+        {
+          "Name": "InferICD10CM",
+          "Service": "comprehendmedical"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehendmedical",
+          "Method": "infer_icd10_cm",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "InferRxNorm",
+      "AuthorizedActions": [
+        {
+          "Name": "InferRxNorm",
+          "Service": "comprehendmedical"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehendmedical",
+          "Method": "infer_rx_norm",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "InferSNOMEDCT",
+      "AuthorizedActions": [
+        {
+          "Name": "InferSNOMEDCT",
+          "Service": "comprehendmedical"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehendmedical",
+          "Method": "infer_snomedct",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEntitiesDetectionV2Jobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEntitiesDetectionV2Jobs",
+          "Service": "comprehendmedical"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehendmedical",
+          "Method": "list_entities_detection_v2_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListICD10CMInferenceJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListICD10CMInferenceJobs",
+          "Service": "comprehendmedical"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehendmedical",
+          "Method": "list_icd10_cm_inference_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPHIDetectionJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPHIDetectionJobs",
+          "Service": "comprehendmedical"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehendmedical",
+          "Method": "list_phi_detection_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRxNormInferenceJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRxNormInferenceJobs",
+          "Service": "comprehendmedical"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehendmedical",
+          "Method": "list_rx_norm_inference_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSNOMEDCTInferenceJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSNOMEDCTInferenceJobs",
+          "Service": "comprehendmedical"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehendmedical",
+          "Method": "list_snomedct_inference_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartEntitiesDetectionV2Job",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "comprehendmedical.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartEntitiesDetectionV2Job",
+          "Service": "comprehendmedical"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehendmedical",
+          "Method": "start_entities_detection_v2_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartICD10CMInferenceJob",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "comprehendmedical.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartICD10CMInferenceJob",
+          "Service": "comprehendmedical"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehendmedical",
+          "Method": "start_icd10_cm_inference_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartPHIDetectionJob",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "comprehendmedical.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartPHIDetectionJob",
+          "Service": "comprehendmedical"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehendmedical",
+          "Method": "start_phi_detection_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartRxNormInferenceJob",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "comprehendmedical.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartRxNormInferenceJob",
+          "Service": "comprehendmedical"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehendmedical",
+          "Method": "start_rx_norm_inference_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartSNOMEDCTInferenceJob",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "comprehendmedical.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartSNOMEDCTInferenceJob",
+          "Service": "comprehendmedical"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehendmedical",
+          "Method": "start_snomedct_inference_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopEntitiesDetectionV2Job",
+      "AuthorizedActions": [
+        {
+          "Name": "StopEntitiesDetectionV2Job",
+          "Service": "comprehendmedical"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehendmedical",
+          "Method": "stop_entities_detection_v2_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopICD10CMInferenceJob",
+      "AuthorizedActions": [
+        {
+          "Name": "StopICD10CMInferenceJob",
+          "Service": "comprehendmedical"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehendmedical",
+          "Method": "stop_icd10_cm_inference_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopPHIDetectionJob",
+      "AuthorizedActions": [
+        {
+          "Name": "StopPHIDetectionJob",
+          "Service": "comprehendmedical"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehendmedical",
+          "Method": "stop_phi_detection_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopRxNormInferenceJob",
+      "AuthorizedActions": [
+        {
+          "Name": "StopRxNormInferenceJob",
+          "Service": "comprehendmedical"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehendmedical",
+          "Method": "stop_rx_norm_inference_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopSNOMEDCTInferenceJob",
+      "AuthorizedActions": [
+        {
+          "Name": "StopSNOMEDCTInferenceJob",
+          "Service": "comprehendmedical"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehendmedical",
+          "Method": "stop_snomedct_inference_job",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

@@ -1,0 +1,749 @@
+{
+  "Name": "translate",
+  "Actions": [
+    {
+      "Name": "CreateParallelData",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "parallel-data"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteParallelData",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "parallel-data"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteTerminology",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "terminology"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeTextTranslationJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetParallelData",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "parallel-data"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetTerminology",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "terminology"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ImportTerminology",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "terminology"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListLanguages",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListParallelData",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "parallel-data"
+        },
+        {
+          "Name": "terminology"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTerminologies",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTextTranslationJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartTextTranslationJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "parallel-data"
+        },
+        {
+          "Name": "terminology"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopTextTranslationJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "parallel-data"
+        },
+        {
+          "Name": "terminology"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TranslateDocument",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "terminology"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TranslateText",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "parallel-data"
+        },
+        {
+          "Name": "terminology"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "parallel-data"
+        },
+        {
+          "Name": "terminology"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateParallelData",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "parallel-data"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateParallelData",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateParallelData",
+          "Service": "translate"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "translate"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "translate",
+          "Method": "create_parallel_data",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteParallelData",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteParallelData",
+          "Service": "translate"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "translate",
+          "Method": "delete_parallel_data",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteTerminology",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteTerminology",
+          "Service": "translate"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "translate",
+          "Method": "delete_terminology",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeTextTranslationJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeTextTranslationJob",
+          "Service": "translate"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "translate",
+          "Method": "describe_text_translation_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetParallelData",
+      "AuthorizedActions": [
+        {
+          "Name": "GetParallelData",
+          "Service": "translate"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "translate",
+          "Method": "get_parallel_data",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetTerminology",
+      "AuthorizedActions": [
+        {
+          "Name": "GetTerminology",
+          "Service": "translate"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "translate",
+          "Method": "get_terminology",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ImportTerminology",
+      "AuthorizedActions": [
+        {
+          "Name": "ImportTerminology",
+          "Service": "translate"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "translate"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "translate",
+          "Method": "import_terminology",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListLanguages",
+      "AuthorizedActions": [
+        {
+          "Name": "ListLanguages",
+          "Service": "translate"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "translate",
+          "Method": "list_languages",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListParallelData",
+      "AuthorizedActions": [
+        {
+          "Name": "ListParallelData",
+          "Service": "translate"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "translate",
+          "Method": "list_parallel_data",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "translate"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "translate",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTerminologies",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTerminologies",
+          "Service": "translate"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "translate",
+          "Method": "list_terminologies",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTextTranslationJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTextTranslationJobs",
+          "Service": "translate"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "translate",
+          "Method": "list_text_translation_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartTextTranslationJob",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "translate.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartTextTranslationJob",
+          "Service": "translate"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "translate",
+          "Method": "start_text_translation_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopTextTranslationJob",
+      "AuthorizedActions": [
+        {
+          "Name": "StopTextTranslationJob",
+          "Service": "translate"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "translate",
+          "Method": "stop_text_translation_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "translate"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "translate",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TranslateDocument",
+      "AuthorizedActions": [
+        {
+          "Name": "TranslateDocument",
+          "Service": "translate"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "translate",
+          "Method": "translate_document",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TranslateText",
+      "AuthorizedActions": [
+        {
+          "Name": "TranslateText",
+          "Service": "translate"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "translate",
+          "Method": "translate_text",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "translate"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "translate",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateParallelData",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateParallelData",
+          "Service": "translate"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "translate",
+          "Method": "update_parallel_data",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "parallel-data",
+      "ARNFormats": [
+        "arn:${Partition}:translate:${Region}:${Account}:parallel-data/${ResourceName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "terminology",
+      "ARNFormats": [
+        "arn:${Partition}:translate:${Region}:${Account}:terminology/${ResourceName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

@@ -1,0 +1,1243 @@
+{
+  "Name": "route53-recovery-readiness",
+  "Actions": [
+    {
+      "Name": "CreateCell",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cell"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateCrossAccountAuthorization",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateReadinessCheck",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "readinesscheck"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateRecoveryGroup",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "recoverygroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateResourceSet",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resourceset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteCell",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cell"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteCrossAccountAuthorization",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteReadinessCheck",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "readinesscheck"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteRecoveryGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "recoverygroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteResourceSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resourceset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetArchitectureRecommendations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "recoverygroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCell",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cell"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCellReadinessSummary",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cell"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetReadinessCheck",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "readinesscheck"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetReadinessCheckResourceStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "readinesscheck"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetReadinessCheckStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "readinesscheck"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetRecoveryGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "recoverygroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetRecoveryGroupReadinessSummary",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "recoverygroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResourceSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resourceset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListCells",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListCrossAccountAuthorizations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListReadinessChecks",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListRecoveryGroups",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListResourceSets",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListRules",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResources",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cell"
+        },
+        {
+          "Name": "readinesscheck"
+        },
+        {
+          "Name": "recoverygroup"
+        },
+        {
+          "Name": "resourceset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cell"
+        },
+        {
+          "Name": "readinesscheck"
+        },
+        {
+          "Name": "recoverygroup"
+        },
+        {
+          "Name": "resourceset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateCell",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cell"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateReadinessCheck",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "readinesscheck"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateRecoveryGroup",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "recoverygroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateResourceSet",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resourceset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateCell",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCell",
+          "Service": "route53-recovery-readiness"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "route53-recovery-readiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-readiness",
+          "Method": "create_cell",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateCrossAccountAuthorization",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCrossAccountAuthorization",
+          "Service": "route53-recovery-readiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-readiness",
+          "Method": "create_cross_account_authorization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateReadinessCheck",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateReadinessCheck",
+          "Service": "route53-recovery-readiness"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "route53-recovery-readiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-readiness",
+          "Method": "create_readiness_check",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRecoveryGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRecoveryGroup",
+          "Service": "route53-recovery-readiness"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "route53-recovery-readiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-readiness",
+          "Method": "create_recovery_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateResourceSet",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateResourceSet",
+          "Service": "route53-recovery-readiness"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "route53-recovery-readiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-readiness",
+          "Method": "create_resource_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCell",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCell",
+          "Service": "route53-recovery-readiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-readiness",
+          "Method": "delete_cell",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCrossAccountAuthorization",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCrossAccountAuthorization",
+          "Service": "route53-recovery-readiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-readiness",
+          "Method": "delete_cross_account_authorization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteReadinessCheck",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteReadinessCheck",
+          "Service": "route53-recovery-readiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-readiness",
+          "Method": "delete_readiness_check",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRecoveryGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRecoveryGroup",
+          "Service": "route53-recovery-readiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-readiness",
+          "Method": "delete_recovery_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteResourceSet",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteResourceSet",
+          "Service": "route53-recovery-readiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-readiness",
+          "Method": "delete_resource_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetArchitectureRecommendations",
+      "AuthorizedActions": [
+        {
+          "Name": "GetArchitectureRecommendations",
+          "Service": "route53-recovery-readiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-readiness",
+          "Method": "get_architecture_recommendations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCell",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCell",
+          "Service": "route53-recovery-readiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-readiness",
+          "Method": "get_cell",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCellReadinessSummary",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCellReadinessSummary",
+          "Service": "route53-recovery-readiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-readiness",
+          "Method": "get_cell_readiness_summary",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetReadinessCheck",
+      "AuthorizedActions": [
+        {
+          "Name": "GetReadinessCheck",
+          "Service": "route53-recovery-readiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-readiness",
+          "Method": "get_readiness_check",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetReadinessCheckResourceStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "GetReadinessCheckResourceStatus",
+          "Service": "route53-recovery-readiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-readiness",
+          "Method": "get_readiness_check_resource_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetReadinessCheckStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "GetReadinessCheckStatus",
+          "Service": "route53-recovery-readiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-readiness",
+          "Method": "get_readiness_check_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRecoveryGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRecoveryGroup",
+          "Service": "route53-recovery-readiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-readiness",
+          "Method": "get_recovery_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRecoveryGroupReadinessSummary",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRecoveryGroupReadinessSummary",
+          "Service": "route53-recovery-readiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-readiness",
+          "Method": "get_recovery_group_readiness_summary",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResourceSet",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResourceSet",
+          "Service": "route53-recovery-readiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-readiness",
+          "Method": "get_resource_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCells",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCells",
+          "Service": "route53-recovery-readiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-readiness",
+          "Method": "list_cells",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCrossAccountAuthorizations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCrossAccountAuthorizations",
+          "Service": "route53-recovery-readiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-readiness",
+          "Method": "list_cross_account_authorizations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListReadinessChecks",
+      "AuthorizedActions": [
+        {
+          "Name": "ListReadinessChecks",
+          "Service": "route53-recovery-readiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-readiness",
+          "Method": "list_readiness_checks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRecoveryGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRecoveryGroups",
+          "Service": "route53-recovery-readiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-readiness",
+          "Method": "list_recovery_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListResourceSets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListResourceSets",
+          "Service": "route53-recovery-readiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-readiness",
+          "Method": "list_resource_sets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRules",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRules",
+          "Service": "route53-recovery-readiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-readiness",
+          "Method": "list_rules",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResources",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResources",
+          "Service": "route53-recovery-readiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-readiness",
+          "Method": "list_tags_for_resources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "route53-recovery-readiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-readiness",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "route53-recovery-readiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-readiness",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCell",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCell",
+          "Service": "route53-recovery-readiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-readiness",
+          "Method": "update_cell",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateReadinessCheck",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateReadinessCheck",
+          "Service": "route53-recovery-readiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-readiness",
+          "Method": "update_readiness_check",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRecoveryGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateRecoveryGroup",
+          "Service": "route53-recovery-readiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-readiness",
+          "Method": "update_recovery_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateResourceSet",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateResourceSet",
+          "Service": "route53-recovery-readiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-readiness",
+          "Method": "update_resource_set",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "cell",
+      "ARNFormats": [
+        "arn:${Partition}:route53-recovery-readiness::${Account}:cell/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "readinesscheck",
+      "ARNFormats": [
+        "arn:${Partition}:route53-recovery-readiness::${Account}:readiness-check/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "recoverygroup",
+      "ARNFormats": [
+        "arn:${Partition}:route53-recovery-readiness::${Account}:recovery-group/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "resourceset",
+      "ARNFormats": [
+        "arn:${Partition}:route53-recovery-readiness::${Account}:resource-set/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

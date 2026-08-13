@@ -1,0 +1,4864 @@
+{
+  "Name": "mobiletargeting",
+  "Actions": [
+    {
+      "Name": "CreateApp",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "apps"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateCampaign",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "app"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateEmailTemplate",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateExportJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "app"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateImportJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "app"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateInAppTemplate",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateJourney",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "journeys"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreatePushTemplate",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateRecommenderConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "recommenders"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateSegment",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "app"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateSmsTemplate",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateVoiceTemplate",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteAdmChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteApnsChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteApnsSandboxChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteApnsVoipChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteApnsVoipSandboxChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteApp",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "app"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteBaiduChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteCampaign",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteEmailChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteEmailTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteEndpoint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "endpoint"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteEventStream",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "event-stream"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteGcmChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteInAppTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteJourney",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "journey"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeletePushTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteRecommenderConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "recommender"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteSegment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "segment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteSmsChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteSmsTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteUserEndpoints",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "user"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteVoiceChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteVoiceTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetAdmChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetApnsChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetApnsSandboxChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetApnsVoipChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetApnsVoipSandboxChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetApp",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "app"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetApplicationDateRangeKpi",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application-metrics"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetApplicationSettings",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "app"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetApps",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "apps"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetBaiduChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCampaign",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCampaignActivities",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCampaignDateRangeKpi",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "campaign-metrics"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCampaignVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCampaignVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCampaigns",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "app"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetChannels",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channels"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetEmailChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetEmailTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetEndpoint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "endpoint"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetEventStream",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "event-stream"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetExportJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "export-job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetExportJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "app"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetGcmChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetImportJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "import-job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetImportJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "app"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetInAppMessages",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "app"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetInAppTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetJourney",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "journey"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetJourneyDateRangeKpi",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "journey-metrics"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetJourneyExecutionActivityMetrics",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "journey-execution-activity-metrics"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetJourneyExecutionMetrics",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "journey-execution-metrics"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetJourneyRunExecutionActivityMetrics",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "journey"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetJourneyRunExecutionMetrics",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "journey"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetJourneyRuns",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "journey"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetPushTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetRecommenderConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "recommender"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetRecommenderConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "recommenders"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetReports",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "reports"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSegment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "segment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSegmentExportJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "segment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSegmentImportJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "segment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSegmentVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "segment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSegmentVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "segment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSegments",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "app"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSmsChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSmsTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetUserEndpoints",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "user"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetVoiceChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetVoiceTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListJourneys",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "app"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "app"
+        },
+        {
+          "Name": "campaign"
+        },
+        {
+          "Name": "journey"
+        },
+        {
+          "Name": "segment"
+        },
+        {
+          "Name": "template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTemplateVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTemplates",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "templates"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PhoneNumberValidate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "phone-number-validate"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutEventStream",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "event-stream"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutEvents",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "events"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RemoveAttributes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "attribute"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SendMessages",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "messages"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SendOTPMessage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "otp"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SendUsersMessages",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "messages"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "app"
+        },
+        {
+          "Name": "campaign"
+        },
+        {
+          "Name": "journey"
+        },
+        {
+          "Name": "segment"
+        },
+        {
+          "Name": "template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "app"
+        },
+        {
+          "Name": "campaign"
+        },
+        {
+          "Name": "journey"
+        },
+        {
+          "Name": "segment"
+        },
+        {
+          "Name": "template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAdmChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateApnsChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateApnsSandboxChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateApnsVoipChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateApnsVoipSandboxChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateApplicationSettings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "app"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateBaiduChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateCampaign",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateEmailChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateEmailTemplate",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateEndpoint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "endpoint"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateEndpointsBatch",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "app"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateGcmChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateInAppTemplate",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateJourney",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "journey"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateJourneyState",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "journey"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdatePushTemplate",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateRecommenderConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "recommender"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateSegment",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "segment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateSmsChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateSmsTemplate",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateTemplateActiveVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateVoiceChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateVoiceTemplate",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "VerifyOTPMessage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "verify-otp"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateApp",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateApp",
+          "Service": "mobiletargeting"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "create_app",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateCampaign",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCampaign",
+          "Service": "mobiletargeting"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "create_campaign",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateEmailTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateEmailTemplate",
+          "Service": "mobiletargeting"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "create_email_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateExportJob",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateExportJob",
+          "Service": "mobiletargeting"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "mobiletargeting.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "create_export_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateImportJob",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateImportJob",
+          "Service": "mobiletargeting"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "mobiletargeting.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "create_import_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateInAppTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateInAppTemplate",
+          "Service": "mobiletargeting"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "create_in_app_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateJourney",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateJourney",
+          "Service": "mobiletargeting"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "mobiletargeting.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "create_journey",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePushTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "CreatePushTemplate",
+          "Service": "mobiletargeting"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "create_push_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRecommenderConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRecommenderConfiguration",
+          "Service": "mobiletargeting"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "mobiletargeting.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "create_recommender_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSegment",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSegment",
+          "Service": "mobiletargeting"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "create_segment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSmsTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSmsTemplate",
+          "Service": "mobiletargeting"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "create_sms_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateVoiceTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateVoiceTemplate",
+          "Service": "mobiletargeting"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "create_voice_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAdmChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAdmChannel",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "delete_adm_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteApnsChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteApnsChannel",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "delete_apns_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteApnsSandboxChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteApnsSandboxChannel",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "delete_apns_sandbox_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteApnsVoipChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteApnsVoipChannel",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "delete_apns_voip_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteApnsVoipSandboxChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteApnsVoipSandboxChannel",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "delete_apns_voip_sandbox_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteApp",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteApp",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "delete_app",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteBaiduChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteBaiduChannel",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "delete_baidu_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCampaign",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCampaign",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "delete_campaign",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteEmailChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteEmailChannel",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "delete_email_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteEmailTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteEmailTemplate",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "delete_email_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteEndpoint",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "delete_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteEventStream",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteEventStream",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "delete_event_stream",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteGcmChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteGcmChannel",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "delete_gcm_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteInAppTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteInAppTemplate",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "delete_in_app_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteJourney",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteJourney",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "delete_journey",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePushTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "DeletePushTemplate",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "delete_push_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRecommenderConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRecommenderConfiguration",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "delete_recommender_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSegment",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSegment",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "delete_segment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSmsChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSmsChannel",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "delete_sms_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSmsTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSmsTemplate",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "delete_sms_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteUserEndpoints",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteUserEndpoints",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "delete_user_endpoints",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteVoiceChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteVoiceChannel",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "delete_voice_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteVoiceTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteVoiceTemplate",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "delete_voice_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAdmChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAdmChannel",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_adm_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetApnsChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "GetApnsChannel",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_apns_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetApnsSandboxChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "GetApnsSandboxChannel",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_apns_sandbox_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetApnsVoipChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "GetApnsVoipChannel",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_apns_voip_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetApnsVoipSandboxChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "GetApnsVoipSandboxChannel",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_apns_voip_sandbox_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetApp",
+      "AuthorizedActions": [
+        {
+          "Name": "GetApp",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_app",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetApplicationDateRangeKpi",
+      "AuthorizedActions": [
+        {
+          "Name": "GetApplicationDateRangeKpi",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_application_date_range_kpi",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetApplicationSettings",
+      "AuthorizedActions": [
+        {
+          "Name": "GetApplicationSettings",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_application_settings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetApps",
+      "AuthorizedActions": [
+        {
+          "Name": "GetApps",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_apps",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBaiduChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBaiduChannel",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_baidu_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCampaign",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCampaign",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_campaign",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCampaignActivities",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCampaignActivities",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_campaign_activities",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCampaignDateRangeKpi",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCampaignDateRangeKpi",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_campaign_date_range_kpi",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCampaignVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCampaignVersion",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_campaign_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCampaignVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCampaignVersions",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_campaign_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCampaigns",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCampaigns",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_campaigns",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetChannels",
+      "AuthorizedActions": [
+        {
+          "Name": "GetChannels",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_channels",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEmailChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEmailChannel",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_email_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEmailTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEmailTemplate",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_email_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEndpoint",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEventStream",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEventStream",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_event_stream",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetExportJob",
+      "AuthorizedActions": [
+        {
+          "Name": "GetExportJob",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_export_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetExportJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "GetExportJobs",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_export_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetGcmChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "GetGcmChannel",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_gcm_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetImportJob",
+      "AuthorizedActions": [
+        {
+          "Name": "GetImportJob",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_import_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetImportJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "GetImportJobs",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_import_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetInAppMessages",
+      "AuthorizedActions": [
+        {
+          "Name": "GetInAppMessages",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_in_app_messages",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetInAppTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "GetInAppTemplate",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_in_app_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetJourney",
+      "AuthorizedActions": [
+        {
+          "Name": "GetJourney",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_journey",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetJourneyDateRangeKpi",
+      "AuthorizedActions": [
+        {
+          "Name": "GetJourneyDateRangeKpi",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_journey_date_range_kpi",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetJourneyExecutionActivityMetrics",
+      "AuthorizedActions": [
+        {
+          "Name": "GetJourneyExecutionActivityMetrics",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_journey_execution_activity_metrics",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetJourneyExecutionMetrics",
+      "AuthorizedActions": [
+        {
+          "Name": "GetJourneyExecutionMetrics",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_journey_execution_metrics",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetJourneyRunExecutionActivityMetrics",
+      "AuthorizedActions": [
+        {
+          "Name": "GetJourneyRunExecutionActivityMetrics",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_journey_run_execution_activity_metrics",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetJourneyRunExecutionMetrics",
+      "AuthorizedActions": [
+        {
+          "Name": "GetJourneyRunExecutionMetrics",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_journey_run_execution_metrics",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetJourneyRuns",
+      "AuthorizedActions": [
+        {
+          "Name": "GetJourneyRuns",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_journey_runs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPushTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPushTemplate",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_push_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRecommenderConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRecommenderConfiguration",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_recommender_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRecommenderConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRecommenderConfigurations",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_recommender_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSegment",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSegment",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_segment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSegmentExportJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSegmentExportJobs",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_segment_export_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSegmentImportJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSegmentImportJobs",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_segment_import_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSegmentVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSegmentVersion",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_segment_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSegmentVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSegmentVersions",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_segment_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSegments",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSegments",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_segments",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSmsChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSmsChannel",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_sms_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSmsTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSmsTemplate",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_sms_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetUserEndpoints",
+      "AuthorizedActions": [
+        {
+          "Name": "GetUserEndpoints",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_user_endpoints",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetVoiceChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "GetVoiceChannel",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_voice_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetVoiceTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "GetVoiceTemplate",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "get_voice_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListJourneys",
+      "AuthorizedActions": [
+        {
+          "Name": "ListJourneys",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "list_journeys",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTemplateVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTemplateVersions",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "list_template_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTemplates",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTemplates",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "list_templates",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PhoneNumberValidate",
+      "AuthorizedActions": [
+        {
+          "Name": "PhoneNumberValidate",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "phone_number_validate",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutEventStream",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "mobiletargeting.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "PutEventStream",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "put_event_stream",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutEvents",
+      "AuthorizedActions": [
+        {
+          "Name": "PutEvents",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "put_events",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RemoveAttributes",
+      "AuthorizedActions": [
+        {
+          "Name": "RemoveAttributes",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "remove_attributes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SendMessages",
+      "AuthorizedActions": [
+        {
+          "Name": "SendMessages",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "send_messages",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SendOTPMessage",
+      "AuthorizedActions": [
+        {
+          "Name": "SendOTPMessage",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "send_otp_message",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SendUsersMessages",
+      "AuthorizedActions": [
+        {
+          "Name": "SendUsersMessages",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "send_users_messages",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAdmChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAdmChannel",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "update_adm_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateApnsChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateApnsChannel",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "update_apns_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateApnsSandboxChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateApnsSandboxChannel",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "update_apns_sandbox_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateApnsVoipChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateApnsVoipChannel",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "update_apns_voip_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateApnsVoipSandboxChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateApnsVoipSandboxChannel",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "update_apns_voip_sandbox_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateApplicationSettings",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateApplicationSettings",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "update_application_settings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateBaiduChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateBaiduChannel",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "update_baidu_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCampaign",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCampaign",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "update_campaign",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateEmailChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "mobiletargeting.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateEmailChannel",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "update_email_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateEmailTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateEmailTemplate",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "update_email_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateEndpoint",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "update_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateEndpointsBatch",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateEndpointsBatch",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "update_endpoints_batch",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateGcmChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateGcmChannel",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "update_gcm_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateInAppTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateInAppTemplate",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "update_in_app_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateJourney",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "mobiletargeting.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateJourney",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "update_journey",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateJourneyState",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateJourneyState",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "update_journey_state",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdatePushTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdatePushTemplate",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "update_push_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRecommenderConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "mobiletargeting.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateRecommenderConfiguration",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "update_recommender_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSegment",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSegment",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "update_segment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSmsChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSmsChannel",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "update_sms_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSmsTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSmsTemplate",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "update_sms_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateTemplateActiveVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateTemplateActiveVersion",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "update_template_active_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateVoiceChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateVoiceChannel",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "update_voice_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateVoiceTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateVoiceTemplate",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "update_voice_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "VerifyOTPMessage",
+      "AuthorizedActions": [
+        {
+          "Name": "VerifyOTPMessage",
+          "Service": "mobiletargeting"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pinpoint",
+          "Method": "verify_otp_message",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "app",
+      "ARNFormats": [
+        "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "application-metrics",
+      "ARNFormats": [
+        "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/kpis/daterange/${KpiName}"
+      ]
+    },
+    {
+      "Name": "apps",
+      "ARNFormats": [
+        "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/*"
+      ]
+    },
+    {
+      "Name": "attribute",
+      "ARNFormats": [
+        "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/attributes/${AttributeType}"
+      ]
+    },
+    {
+      "Name": "campaign",
+      "ARNFormats": [
+        "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/campaigns/${CampaignId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "campaign-metrics",
+      "ARNFormats": [
+        "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/campaigns/${CampaignId}/kpis/daterange/${KpiName}"
+      ]
+    },
+    {
+      "Name": "channel",
+      "ARNFormats": [
+        "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/channels/${ChannelType}"
+      ]
+    },
+    {
+      "Name": "channels",
+      "ARNFormats": [
+        "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/channels"
+      ]
+    },
+    {
+      "Name": "endpoint",
+      "ARNFormats": [
+        "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/endpoints/${EndpointId}"
+      ]
+    },
+    {
+      "Name": "event-stream",
+      "ARNFormats": [
+        "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/eventstream"
+      ]
+    },
+    {
+      "Name": "events",
+      "ARNFormats": [
+        "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/events"
+      ]
+    },
+    {
+      "Name": "export-job",
+      "ARNFormats": [
+        "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/jobs/export/${JobId}"
+      ]
+    },
+    {
+      "Name": "import-job",
+      "ARNFormats": [
+        "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/jobs/import/${JobId}"
+      ]
+    },
+    {
+      "Name": "journey",
+      "ARNFormats": [
+        "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/journeys/${JourneyId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "journey-execution-activity-metrics",
+      "ARNFormats": [
+        "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/journeys/${JourneyId}/activities/${JourneyActivityId}/execution-metrics"
+      ]
+    },
+    {
+      "Name": "journey-execution-metrics",
+      "ARNFormats": [
+        "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/journeys/${JourneyId}/execution-metrics"
+      ]
+    },
+    {
+      "Name": "journey-metrics",
+      "ARNFormats": [
+        "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/journeys/${JourneyId}/kpis/daterange/${KpiName}"
+      ]
+    },
+    {
+      "Name": "journeys",
+      "ARNFormats": [
+        "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/journeys"
+      ]
+    },
+    {
+      "Name": "messages",
+      "ARNFormats": [
+        "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/messages"
+      ]
+    },
+    {
+      "Name": "otp",
+      "ARNFormats": [
+        "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/otp"
+      ]
+    },
+    {
+      "Name": "phone-number-validate",
+      "ARNFormats": [
+        "arn:${Partition}:mobiletargeting:${Region}:${Account}:phone/number/validate"
+      ]
+    },
+    {
+      "Name": "recommender",
+      "ARNFormats": [
+        "arn:${Partition}:mobiletargeting:${Region}:${Account}:recommenders/${RecommenderId}"
+      ]
+    },
+    {
+      "Name": "recommenders",
+      "ARNFormats": [
+        "arn:${Partition}:mobiletargeting:${Region}:${Account}:recommenders/*"
+      ]
+    },
+    {
+      "Name": "reports",
+      "ARNFormats": [
+        "arn:${Partition}:mobiletargeting:${Region}:${Account}:reports"
+      ]
+    },
+    {
+      "Name": "segment",
+      "ARNFormats": [
+        "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/segments/${SegmentId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "template",
+      "ARNFormats": [
+        "arn:${Partition}:mobiletargeting:${Region}:${Account}:templates/${TemplateName}/${TemplateType}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "templates",
+      "ARNFormats": [
+        "arn:${Partition}:mobiletargeting:${Region}:${Account}:templates"
+      ]
+    },
+    {
+      "Name": "user",
+      "ARNFormats": [
+        "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/users/${UserId}"
+      ]
+    },
+    {
+      "Name": "verify-otp",
+      "ARNFormats": [
+        "arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/verify-otp"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

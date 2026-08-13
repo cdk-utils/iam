@@ -1,0 +1,940 @@
+{
+  "Name": "security-ir",
+  "Actions": [
+    {
+      "Name": "BatchGetMemberAccountDetails",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "membership"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CancelMembership",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "membership"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CloseCase",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "case"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateCase",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "case"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateCaseComment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "case"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateMembership",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "membership"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCase",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "case"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCaseAttachmentDownloadUrl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "case"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCaseAttachmentUploadUrl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "case"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetMembership",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "membership"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListCaseEdits",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "case"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListCases",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListComments",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "case"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListInvestigations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "case"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListMemberships",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "case"
+        },
+        {
+          "Name": "membership"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SendFeedback",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "case"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "case"
+        },
+        {
+          "Name": "membership"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "case"
+        },
+        {
+          "Name": "membership"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateCase",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "case"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateCaseComment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "case"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateCaseStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "case"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateMembership",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "membership"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateResolverType",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "case"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "BatchGetMemberAccountDetails",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetMemberAccountDetails",
+          "Service": "security-ir"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "security-ir",
+          "Method": "batch_get_member_account_details",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelMembership",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelMembership",
+          "Service": "security-ir"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "security-ir",
+          "Method": "cancel_membership",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CloseCase",
+      "AuthorizedActions": [
+        {
+          "Name": "CloseCase",
+          "Service": "security-ir"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "security-ir",
+          "Method": "close_case",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateCase",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCase",
+          "Service": "security-ir"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "security-ir"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "security-ir",
+          "Method": "create_case",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateCaseComment",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCaseComment",
+          "Service": "security-ir"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "security-ir",
+          "Method": "create_case_comment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateMembership",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateMembership",
+          "Service": "security-ir"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "security-ir"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "security-ir",
+          "Method": "create_membership",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCase",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCase",
+          "Service": "security-ir"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "security-ir",
+          "Method": "get_case",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCaseAttachmentDownloadUrl",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCaseAttachmentDownloadUrl",
+          "Service": "security-ir"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "security-ir",
+          "Method": "get_case_attachment_download_url",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCaseAttachmentUploadUrl",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCaseAttachmentUploadUrl",
+          "Service": "security-ir"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "security-ir",
+          "Method": "get_case_attachment_upload_url",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMembership",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMembership",
+          "Service": "security-ir"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "security-ir",
+          "Method": "get_membership",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCaseEdits",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCaseEdits",
+          "Service": "security-ir"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "security-ir",
+          "Method": "list_case_edits",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCases",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCases",
+          "Service": "security-ir"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "security-ir",
+          "Method": "list_cases",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListComments",
+      "AuthorizedActions": [
+        {
+          "Name": "ListComments",
+          "Service": "security-ir"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "security-ir",
+          "Method": "list_comments",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListInvestigations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListInvestigations",
+          "Service": "security-ir"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "security-ir",
+          "Method": "list_investigations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMemberships",
+      "AuthorizedActions": [
+        {
+          "Name": "ListMemberships",
+          "Service": "security-ir"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "security-ir",
+          "Method": "list_memberships",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "security-ir"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "security-ir",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SendFeedback",
+      "AuthorizedActions": [
+        {
+          "Name": "SendFeedback",
+          "Service": "security-ir"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "security-ir",
+          "Method": "send_feedback",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "security-ir"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "security-ir",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "security-ir"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "security-ir",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCase",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCase",
+          "Service": "security-ir"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "security-ir",
+          "Method": "update_case",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCaseComment",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCaseComment",
+          "Service": "security-ir"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "security-ir",
+          "Method": "update_case_comment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCaseStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCaseStatus",
+          "Service": "security-ir"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "security-ir",
+          "Method": "update_case_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateMembership",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateMembership",
+          "Service": "security-ir"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "security-ir",
+          "Method": "update_membership",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateResolverType",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateResolverType",
+          "Service": "security-ir"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "security-ir",
+          "Method": "update_resolver_type",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "case",
+      "ARNFormats": [
+        "arn:${Partition}:security-ir:${Region}:${Account}:case/${CaseId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "membership",
+      "ARNFormats": [
+        "arn:${Partition}:security-ir:${Region}:${Account}:membership/${MembershipId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

@@ -1,0 +1,194 @@
+{
+  "Name": "autoscaling-plans",
+  "Actions": [
+    {
+      "Name": "CreateScalingPlan",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteScalingPlan",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeScalingPlanResources",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeScalingPlans",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetScalingPlanResourceForecastData",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateScalingPlan",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateScalingPlan",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateScalingPlan",
+          "Service": "autoscaling-plans"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "autoscaling-plans",
+          "Method": "create_scaling_plan",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteScalingPlan",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteScalingPlan",
+          "Service": "autoscaling-plans"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "autoscaling-plans",
+          "Method": "delete_scaling_plan",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeScalingPlanResources",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeScalingPlanResources",
+          "Service": "autoscaling-plans"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "autoscaling-plans",
+          "Method": "describe_scaling_plan_resources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeScalingPlans",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeScalingPlans",
+          "Service": "autoscaling-plans"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "autoscaling-plans",
+          "Method": "describe_scaling_plans",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetScalingPlanResourceForecastData",
+      "AuthorizedActions": [
+        {
+          "Name": "GetScalingPlanResourceForecastData",
+          "Service": "autoscaling-plans"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "autoscaling-plans",
+          "Method": "get_scaling_plan_resource_forecast_data",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateScalingPlan",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateScalingPlan",
+          "Service": "autoscaling-plans"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "autoscaling-plans",
+          "Method": "update_scaling_plan",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

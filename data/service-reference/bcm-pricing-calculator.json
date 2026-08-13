@@ -1,0 +1,1355 @@
+{
+  "Name": "bcm-pricing-calculator",
+  "Actions": [
+    {
+      "Name": "CreateBillEstimate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bill-scenario"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateBillScenario",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateBillScenarioCommitmentModification",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bill-scenario"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateBillScenarioUsageModification",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bill-scenario"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateWorkloadEstimate",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateWorkloadEstimateUsage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workload-estimate"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteBillEstimate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bill-estimate"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteBillScenario",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bill-scenario"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteBillScenarioCommitmentModification",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bill-scenario"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteBillScenarioUsageModification",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bill-scenario"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteWorkloadEstimate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workload-estimate"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteWorkloadEstimateUsage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workload-estimate"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetBillEstimate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bill-estimate"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetBillScenario",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bill-scenario"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetPreferences",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetWorkloadEstimate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workload-estimate"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListBillEstimateCommitments",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bill-estimate"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListBillEstimateInputCommitmentModifications",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bill-estimate"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListBillEstimateInputUsageModifications",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bill-estimate"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListBillEstimateLineItems",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bill-estimate"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListBillEstimates",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListBillScenarioCommitmentModifications",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bill-scenario"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListBillScenarioUsageModifications",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bill-scenario"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListBillScenarios",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListWorkloadEstimateUsage",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workload-estimate"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListWorkloadEstimates",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bill-scenario",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "workload-estimate",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bill-scenario",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "workload-estimate",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateBillEstimate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bill-estimate"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateBillScenario",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bill-scenario"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateBillScenarioCommitmentModification",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bill-scenario"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateBillScenarioUsageModification",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bill-scenario"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdatePreferences",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateWorkloadEstimate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workload-estimate"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateWorkloadEstimateUsage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workload-estimate"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "BatchCreateBillScenarioCommitmentModification",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateBillScenarioCommitmentModification",
+          "Service": "bcm-pricing-calculator"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bcm-pricing-calculator",
+          "Method": "batch_create_bill_scenario_commitment_modification",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchCreateBillScenarioUsageModification",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateBillScenarioUsageModification",
+          "Service": "bcm-pricing-calculator"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bcm-pricing-calculator",
+          "Method": "batch_create_bill_scenario_usage_modification",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchCreateWorkloadEstimateUsage",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateWorkloadEstimateUsage",
+          "Service": "bcm-pricing-calculator"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bcm-pricing-calculator",
+          "Method": "batch_create_workload_estimate_usage",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchDeleteBillScenarioCommitmentModification",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteBillScenarioCommitmentModification",
+          "Service": "bcm-pricing-calculator"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bcm-pricing-calculator",
+          "Method": "batch_delete_bill_scenario_commitment_modification",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchDeleteBillScenarioUsageModification",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteBillScenarioUsageModification",
+          "Service": "bcm-pricing-calculator"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bcm-pricing-calculator",
+          "Method": "batch_delete_bill_scenario_usage_modification",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchDeleteWorkloadEstimateUsage",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteWorkloadEstimateUsage",
+          "Service": "bcm-pricing-calculator"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bcm-pricing-calculator",
+          "Method": "batch_delete_workload_estimate_usage",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchUpdateBillScenarioCommitmentModification",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateBillScenarioCommitmentModification",
+          "Service": "bcm-pricing-calculator"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bcm-pricing-calculator",
+          "Method": "batch_update_bill_scenario_commitment_modification",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchUpdateBillScenarioUsageModification",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateBillScenarioUsageModification",
+          "Service": "bcm-pricing-calculator"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bcm-pricing-calculator",
+          "Method": "batch_update_bill_scenario_usage_modification",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchUpdateWorkloadEstimateUsage",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateWorkloadEstimateUsage",
+          "Service": "bcm-pricing-calculator"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bcm-pricing-calculator",
+          "Method": "batch_update_workload_estimate_usage",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateBillEstimate",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateBillEstimate",
+          "Service": "bcm-pricing-calculator"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "bcm-pricing-calculator"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bcm-pricing-calculator",
+          "Method": "create_bill_estimate",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateBillScenario",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateBillScenario",
+          "Service": "bcm-pricing-calculator"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "bcm-pricing-calculator"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bcm-pricing-calculator",
+          "Method": "create_bill_scenario",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateWorkloadEstimate",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateWorkloadEstimate",
+          "Service": "bcm-pricing-calculator"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "bcm-pricing-calculator"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bcm-pricing-calculator",
+          "Method": "create_workload_estimate",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteBillEstimate",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteBillEstimate",
+          "Service": "bcm-pricing-calculator"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bcm-pricing-calculator",
+          "Method": "delete_bill_estimate",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteBillScenario",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteBillScenario",
+          "Service": "bcm-pricing-calculator"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bcm-pricing-calculator",
+          "Method": "delete_bill_scenario",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteWorkloadEstimate",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteWorkloadEstimate",
+          "Service": "bcm-pricing-calculator"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bcm-pricing-calculator",
+          "Method": "delete_workload_estimate",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBillEstimate",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBillEstimate",
+          "Service": "bcm-pricing-calculator"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bcm-pricing-calculator",
+          "Method": "get_bill_estimate",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBillScenario",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBillScenario",
+          "Service": "bcm-pricing-calculator"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bcm-pricing-calculator",
+          "Method": "get_bill_scenario",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPreferences",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPreferences",
+          "Service": "bcm-pricing-calculator"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bcm-pricing-calculator",
+          "Method": "get_preferences",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetWorkloadEstimate",
+      "AuthorizedActions": [
+        {
+          "Name": "GetWorkloadEstimate",
+          "Service": "bcm-pricing-calculator"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bcm-pricing-calculator",
+          "Method": "get_workload_estimate",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListBillEstimateCommitments",
+      "AuthorizedActions": [
+        {
+          "Name": "ListBillEstimateCommitments",
+          "Service": "bcm-pricing-calculator"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bcm-pricing-calculator",
+          "Method": "list_bill_estimate_commitments",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListBillEstimateInputCommitmentModifications",
+      "AuthorizedActions": [
+        {
+          "Name": "ListBillEstimateInputCommitmentModifications",
+          "Service": "bcm-pricing-calculator"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bcm-pricing-calculator",
+          "Method": "list_bill_estimate_input_commitment_modifications",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListBillEstimateInputUsageModifications",
+      "AuthorizedActions": [
+        {
+          "Name": "ListBillEstimateInputUsageModifications",
+          "Service": "bcm-pricing-calculator"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bcm-pricing-calculator",
+          "Method": "list_bill_estimate_input_usage_modifications",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListBillEstimateLineItems",
+      "AuthorizedActions": [
+        {
+          "Name": "ListBillEstimateLineItems",
+          "Service": "bcm-pricing-calculator"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bcm-pricing-calculator",
+          "Method": "list_bill_estimate_line_items",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListBillEstimates",
+      "AuthorizedActions": [
+        {
+          "Name": "ListBillEstimates",
+          "Service": "bcm-pricing-calculator"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bcm-pricing-calculator",
+          "Method": "list_bill_estimates",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListBillScenarioCommitmentModifications",
+      "AuthorizedActions": [
+        {
+          "Name": "ListBillScenarioCommitmentModifications",
+          "Service": "bcm-pricing-calculator"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bcm-pricing-calculator",
+          "Method": "list_bill_scenario_commitment_modifications",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListBillScenarioUsageModifications",
+      "AuthorizedActions": [
+        {
+          "Name": "ListBillScenarioUsageModifications",
+          "Service": "bcm-pricing-calculator"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bcm-pricing-calculator",
+          "Method": "list_bill_scenario_usage_modifications",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListBillScenarios",
+      "AuthorizedActions": [
+        {
+          "Name": "ListBillScenarios",
+          "Service": "bcm-pricing-calculator"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bcm-pricing-calculator",
+          "Method": "list_bill_scenarios",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "bcm-pricing-calculator"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bcm-pricing-calculator",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListWorkloadEstimateUsage",
+      "AuthorizedActions": [
+        {
+          "Name": "ListWorkloadEstimateUsage",
+          "Service": "bcm-pricing-calculator"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bcm-pricing-calculator",
+          "Method": "list_workload_estimate_usage",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListWorkloadEstimates",
+      "AuthorizedActions": [
+        {
+          "Name": "ListWorkloadEstimates",
+          "Service": "bcm-pricing-calculator"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bcm-pricing-calculator",
+          "Method": "list_workload_estimates",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "bcm-pricing-calculator"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bcm-pricing-calculator",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "bcm-pricing-calculator"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bcm-pricing-calculator",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateBillEstimate",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateBillEstimate",
+          "Service": "bcm-pricing-calculator"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bcm-pricing-calculator",
+          "Method": "update_bill_estimate",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateBillScenario",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateBillScenario",
+          "Service": "bcm-pricing-calculator"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bcm-pricing-calculator",
+          "Method": "update_bill_scenario",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdatePreferences",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdatePreferences",
+          "Service": "bcm-pricing-calculator"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bcm-pricing-calculator",
+          "Method": "update_preferences",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateWorkloadEstimate",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateWorkloadEstimate",
+          "Service": "bcm-pricing-calculator"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bcm-pricing-calculator",
+          "Method": "update_workload_estimate",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "bill-estimate",
+      "ARNFormats": [
+        "arn:${Partition}:bcm-pricing-calculator::${Account}:bill-estimate/${BillEstimateId}"
+      ]
+    },
+    {
+      "Name": "bill-scenario",
+      "ARNFormats": [
+        "arn:${Partition}:bcm-pricing-calculator::${Account}:bill-scenario/${BillScenarioId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "workload-estimate",
+      "ARNFormats": [
+        "arn:${Partition}:bcm-pricing-calculator::${Account}:workload-estimate/${WorkloadEstimateId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

@@ -1,0 +1,1443 @@
+{
+  "Name": "notifications",
+  "Actions": [
+    {
+      "Name": "AssociateChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NotificationConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AssociateManagedNotificationAccountContact",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ManagedNotificationConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AssociateManagedNotificationAdditionalChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ManagedNotificationConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AssociateOrganizationalUnit",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NotificationConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateEventRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateNotificationConfiguration",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteEventRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "EventRule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteNotificationConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NotificationConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeregisterNotificationHub",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisableNotificationsAccessForOrganization",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NotificationConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateManagedNotificationAccountContact",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ManagedNotificationConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateManagedNotificationAdditionalChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ManagedNotificationConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateOrganizationalUnit",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NotificationConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "EnableNotificationsAccessForOrganization",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetEventRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "EventRule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetFeatureOptInStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetManagedNotificationChildEvent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ManagedNotificationChildEvent"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetManagedNotificationConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ManagedNotificationConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetManagedNotificationEvent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ManagedNotificationEvent"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetNotificationConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NotificationConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetNotificationEvent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NotificationEvent"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetNotificationsAccessForOrganization",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListChannels",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NotificationConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEventRules",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListManagedNotificationChannelAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ManagedNotificationConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListManagedNotificationChildEvents",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListManagedNotificationConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListManagedNotificationEvents",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListMemberAccounts",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NotificationConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListNotificationConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListNotificationEvents",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListNotificationHubs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListOrganizationalUnits",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NotificationConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutFeatureOptInStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RegisterNotificationHub",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NotificationConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NotificationConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateEventRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "EventRule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateNotificationConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NotificationConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AssociateChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateChannel",
+          "Service": "notifications"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notifications",
+          "Method": "associate_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateManagedNotificationAccountContact",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateManagedNotificationAccountContact",
+          "Service": "notifications"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notifications",
+          "Method": "associate_managed_notification_account_contact",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateManagedNotificationAdditionalChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateManagedNotificationAdditionalChannel",
+          "Service": "notifications"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notifications",
+          "Method": "associate_managed_notification_additional_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateOrganizationalUnit",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateOrganizationalUnit",
+          "Service": "notifications"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notifications",
+          "Method": "associate_organizational_unit",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateEventRule",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateEventRule",
+          "Service": "notifications"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notifications",
+          "Method": "create_event_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateNotificationConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateNotificationConfiguration",
+          "Service": "notifications"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "notifications"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notifications",
+          "Method": "create_notification_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteEventRule",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteEventRule",
+          "Service": "notifications"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notifications",
+          "Method": "delete_event_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteNotificationConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteNotificationConfiguration",
+          "Service": "notifications"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notifications",
+          "Method": "delete_notification_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeregisterNotificationHub",
+      "AuthorizedActions": [
+        {
+          "Name": "DeregisterNotificationHub",
+          "Service": "notifications"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notifications",
+          "Method": "deregister_notification_hub",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisableNotificationsAccessForOrganization",
+      "AuthorizedActions": [
+        {
+          "Name": "DisableNotificationsAccessForOrganization",
+          "Service": "notifications"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notifications",
+          "Method": "disable_notifications_access_for_organization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateChannel",
+          "Service": "notifications"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notifications",
+          "Method": "disassociate_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateManagedNotificationAccountContact",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateManagedNotificationAccountContact",
+          "Service": "notifications"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notifications",
+          "Method": "disassociate_managed_notification_account_contact",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateManagedNotificationAdditionalChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateManagedNotificationAdditionalChannel",
+          "Service": "notifications"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notifications",
+          "Method": "disassociate_managed_notification_additional_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateOrganizationalUnit",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateOrganizationalUnit",
+          "Service": "notifications"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notifications",
+          "Method": "disassociate_organizational_unit",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "EnableNotificationsAccessForOrganization",
+      "AuthorizedActions": [
+        {
+          "Name": "EnableNotificationsAccessForOrganization",
+          "Service": "notifications"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notifications",
+          "Method": "enable_notifications_access_for_organization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEventRule",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEventRule",
+          "Service": "notifications"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notifications",
+          "Method": "get_event_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetManagedNotificationChildEvent",
+      "AuthorizedActions": [
+        {
+          "Name": "GetManagedNotificationChildEvent",
+          "Service": "notifications"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notifications",
+          "Method": "get_managed_notification_child_event",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetManagedNotificationConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetManagedNotificationConfiguration",
+          "Service": "notifications"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notifications",
+          "Method": "get_managed_notification_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetManagedNotificationEvent",
+      "AuthorizedActions": [
+        {
+          "Name": "GetManagedNotificationEvent",
+          "Service": "notifications"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notifications",
+          "Method": "get_managed_notification_event",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetNotificationConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetNotificationConfiguration",
+          "Service": "notifications"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notifications",
+          "Method": "get_notification_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetNotificationEvent",
+      "AuthorizedActions": [
+        {
+          "Name": "GetNotificationEvent",
+          "Service": "notifications"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notifications",
+          "Method": "get_notification_event",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetNotificationsAccessForOrganization",
+      "AuthorizedActions": [
+        {
+          "Name": "GetNotificationsAccessForOrganization",
+          "Service": "notifications"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notifications",
+          "Method": "get_notifications_access_for_organization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListChannels",
+      "AuthorizedActions": [
+        {
+          "Name": "ListChannels",
+          "Service": "notifications"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notifications",
+          "Method": "list_channels",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEventRules",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEventRules",
+          "Service": "notifications"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notifications",
+          "Method": "list_event_rules",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListManagedNotificationChannelAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListManagedNotificationChannelAssociations",
+          "Service": "notifications"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notifications",
+          "Method": "list_managed_notification_channel_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListManagedNotificationChildEvents",
+      "AuthorizedActions": [
+        {
+          "Name": "ListManagedNotificationChildEvents",
+          "Service": "notifications"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notifications",
+          "Method": "list_managed_notification_child_events",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListManagedNotificationConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListManagedNotificationConfigurations",
+          "Service": "notifications"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notifications",
+          "Method": "list_managed_notification_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListManagedNotificationEvents",
+      "AuthorizedActions": [
+        {
+          "Name": "ListManagedNotificationEvents",
+          "Service": "notifications"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notifications",
+          "Method": "list_managed_notification_events",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMemberAccounts",
+      "AuthorizedActions": [
+        {
+          "Name": "ListMemberAccounts",
+          "Service": "notifications"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notifications",
+          "Method": "list_member_accounts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListNotificationConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListNotificationConfigurations",
+          "Service": "notifications"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notifications",
+          "Method": "list_notification_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListNotificationEvents",
+      "AuthorizedActions": [
+        {
+          "Name": "ListNotificationEvents",
+          "Service": "notifications"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notifications",
+          "Method": "list_notification_events",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListNotificationHubs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListNotificationHubs",
+          "Service": "notifications"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notifications",
+          "Method": "list_notification_hubs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListOrganizationalUnits",
+      "AuthorizedActions": [
+        {
+          "Name": "ListOrganizationalUnits",
+          "Service": "notifications"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notifications",
+          "Method": "list_organizational_units",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "notifications"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notifications",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RegisterNotificationHub",
+      "AuthorizedActions": [
+        {
+          "Name": "RegisterNotificationHub",
+          "Service": "notifications"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notifications",
+          "Method": "register_notification_hub",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "notifications"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notifications",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "notifications"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notifications",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateEventRule",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateEventRule",
+          "Service": "notifications"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notifications",
+          "Method": "update_event_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateNotificationConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateNotificationConfiguration",
+          "Service": "notifications"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notifications",
+          "Method": "update_notification_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "EventRule",
+      "ARNFormats": [
+        "arn:${Partition}:notifications::${Account}:configuration/${NotificationConfigurationId}/rule/${EventRuleId}"
+      ]
+    },
+    {
+      "Name": "ManagedNotificationChildEvent",
+      "ARNFormats": [
+        "arn:${Partition}:notifications::${Account}:managed-notification-configuration/category/${Category}/sub-category/${Subcategory}/event/${NotificationEventId}/child-event/${NotificationChildEventId}"
+      ]
+    },
+    {
+      "Name": "ManagedNotificationConfiguration",
+      "ARNFormats": [
+        "arn:${Partition}:notifications::${Account}:managed-notification-configuration/category/${Category}/sub-category/${Subcategory}"
+      ]
+    },
+    {
+      "Name": "ManagedNotificationEvent",
+      "ARNFormats": [
+        "arn:${Partition}:notifications::${Account}:managed-notification-configuration/category/${Category}/sub-category/${Subcategory}/event/${NotificationEventId}"
+      ]
+    },
+    {
+      "Name": "NotificationConfiguration",
+      "ARNFormats": [
+        "arn:${Partition}:notifications::${Account}:configuration/${NotificationConfigurationId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "NotificationEvent",
+      "ARNFormats": [
+        "arn:${Partition}:notifications:${Region}:${Account}:configuration/${NotificationConfigurationId}/event/${NotificationEventId}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

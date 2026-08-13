@@ -1,0 +1,526 @@
+{
+  "Name": "health",
+  "Actions": [
+    {
+      "Name": "DescribeAffectedAccountsForOrganization",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeAffectedEntities",
+      "ActionConditionKeys": [
+        "health:eventTypeCode",
+        "health:service"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "event"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeAffectedEntitiesForOrganization",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeEntityAggregates",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeEntityAggregatesForOrganization",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeEventAggregates",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeEventDetails",
+      "ActionConditionKeys": [
+        "health:eventTypeCode",
+        "health:service"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "event"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeEventDetailsForOrganization",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeEventTypes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeEvents",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeEventsForOrganization",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeHealthServiceStatusForOrganization",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisableHealthServiceAccessForOrganization",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "EnableHealthServiceAccessForOrganization",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "health:eventTypeCode",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "health:service",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "DescribeAffectedAccountsForOrganization",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAffectedAccountsForOrganization",
+          "Service": "health"
+        },
+        {
+          "Name": "ListAccounts",
+          "Service": "organizations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "health",
+          "Method": "describe_affected_accounts_for_organization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAffectedEntities",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAffectedEntities",
+          "Service": "health"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "health",
+          "Method": "describe_affected_entities",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAffectedEntitiesForOrganization",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAffectedEntitiesForOrganization",
+          "Service": "health"
+        },
+        {
+          "Name": "ListAccounts",
+          "Service": "organizations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "health",
+          "Method": "describe_affected_entities_for_organization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeEntityAggregates",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeEntityAggregates",
+          "Service": "health"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "health",
+          "Method": "describe_entity_aggregates",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeEntityAggregatesForOrganization",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeEntityAggregatesForOrganization",
+          "Service": "health"
+        },
+        {
+          "Name": "ListAccounts",
+          "Service": "organizations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "health",
+          "Method": "describe_entity_aggregates_for_organization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeEventAggregates",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeEventAggregates",
+          "Service": "health"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "health",
+          "Method": "describe_event_aggregates",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeEventDetails",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeEventDetails",
+          "Service": "health"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "health",
+          "Method": "describe_event_details",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeEventDetailsForOrganization",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeEventDetailsForOrganization",
+          "Service": "health"
+        },
+        {
+          "Name": "ListAccounts",
+          "Service": "organizations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "health",
+          "Method": "describe_event_details_for_organization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeEventTypes",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeEventTypes",
+          "Service": "health"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "health",
+          "Method": "describe_event_types",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeEvents",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeEvents",
+          "Service": "health"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "health",
+          "Method": "describe_events",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeEventsForOrganization",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeEventsForOrganization",
+          "Service": "health"
+        },
+        {
+          "Name": "ListAccounts",
+          "Service": "organizations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "health",
+          "Method": "describe_events_for_organization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeHealthServiceStatusForOrganization",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeHealthServiceStatusForOrganization",
+          "Service": "health"
+        },
+        {
+          "Name": "ListAccounts",
+          "Service": "organizations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "health",
+          "Method": "describe_health_service_status_for_organization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisableHealthServiceAccessForOrganization",
+      "AuthorizedActions": [
+        {
+          "Name": "DisableAWSServiceAccess",
+          "Service": "organizations"
+        },
+        {
+          "Name": "DisableHealthServiceAccessForOrganization",
+          "Service": "health"
+        },
+        {
+          "Name": "ListAccounts",
+          "Service": "organizations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "health",
+          "Method": "disable_health_service_access_for_organization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "EnableHealthServiceAccessForOrganization",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateServiceLinkedRole",
+          "Service": "iam"
+        },
+        {
+          "Name": "EnableAWSServiceAccess",
+          "Service": "organizations"
+        },
+        {
+          "Name": "EnableHealthServiceAccessForOrganization",
+          "Service": "health"
+        },
+        {
+          "Name": "ListAccounts",
+          "Service": "organizations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "health",
+          "Method": "enable_health_service_access_for_organization",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "event",
+      "ARNFormats": [
+        "arn:${Partition}:health:*::event/${Service}/${EventTypeCode}/*"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

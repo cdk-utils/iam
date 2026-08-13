@@ -1,0 +1,1660 @@
+{
+  "Name": "groundstation",
+  "Actions": [
+    {
+      "Name": "CancelContact",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Contact"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateConfig",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateDataflowEndpointGroup",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateDataflowEndpointGroupV2",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateEphemeris",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateMissionProfile",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Config"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteDataflowEndpointGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "DataflowEndpointGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteEphemeris",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "EphemerisItem"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteMissionProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "MissionProfile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeContact",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Contact"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeContactVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Contact"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeEphemeris",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "EphemerisItem"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetAgentConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Agent"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAgentTaskResponseUrl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Agent"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Config"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDataflowEndpointGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "DataflowEndpointGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetMinuteUsage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetMissionProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "MissionProfile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSatellite",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Satellite"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAntennas",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "GroundStationResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListConfigs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListContactVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Contact"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListContacts",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDataflowEndpointGroups",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListEphemerides",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListGroundStationReservations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "GroundStationResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListGroundStations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListMissionProfiles",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListSatellites",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Config"
+        },
+        {
+          "Name": "Contact"
+        },
+        {
+          "Name": "DataflowEndpointGroup"
+        },
+        {
+          "Name": "MissionProfile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RegisterAgent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ReserveContact",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Config"
+        },
+        {
+          "Name": "Contact"
+        },
+        {
+          "Name": "DataflowEndpointGroup"
+        },
+        {
+          "Name": "EphemerisItem"
+        },
+        {
+          "Name": "MissionProfile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Config"
+        },
+        {
+          "Name": "Contact"
+        },
+        {
+          "Name": "DataflowEndpointGroup"
+        },
+        {
+          "Name": "EphemerisItem"
+        },
+        {
+          "Name": "MissionProfile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAgentStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Agent"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Config"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateContact",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Contact"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateEphemeris",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "EphemerisItem"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateMissionProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "MissionProfile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "groundstation:AgentId",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "groundstation:ConfigId",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "groundstation:ConfigType",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "groundstation:ContactId",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "groundstation:DataflowEndpointGroupId",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "groundstation:EphemerisId",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "groundstation:GroundStationId",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "groundstation:MissionProfileId",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "groundstation:SatelliteId",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CancelContact",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelContact",
+          "Service": "groundstation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "groundstation",
+          "Method": "cancel_contact",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateConfig",
+          "Service": "groundstation"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "groundstation.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "groundstation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "groundstation",
+          "Method": "create_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDataflowEndpointGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDataflowEndpointGroup",
+          "Service": "groundstation"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "groundstation.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "groundstation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "groundstation",
+          "Method": "create_dataflow_endpoint_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDataflowEndpointGroupV2",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDataflowEndpointGroupV2",
+          "Service": "groundstation"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "groundstation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "groundstation",
+          "Method": "create_dataflow_endpoint_group_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateEphemeris",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateEphemeris",
+          "Service": "groundstation"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "groundstation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "groundstation",
+          "Method": "create_ephemeris",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateMissionProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateMissionProfile",
+          "Service": "groundstation"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "groundstation.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "groundstation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "groundstation",
+          "Method": "create_mission_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteConfig",
+          "Service": "groundstation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "groundstation",
+          "Method": "delete_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDataflowEndpointGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDataflowEndpointGroup",
+          "Service": "groundstation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "groundstation",
+          "Method": "delete_dataflow_endpoint_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteEphemeris",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteEphemeris",
+          "Service": "groundstation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "groundstation",
+          "Method": "delete_ephemeris",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteMissionProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteMissionProfile",
+          "Service": "groundstation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "groundstation",
+          "Method": "delete_mission_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeContact",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeContact",
+          "Service": "groundstation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "groundstation",
+          "Method": "describe_contact",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeContactVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeContactVersion",
+          "Service": "groundstation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "groundstation",
+          "Method": "describe_contact_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeEphemeris",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeEphemeris",
+          "Service": "groundstation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "groundstation",
+          "Method": "describe_ephemeris",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAgentConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAgentConfiguration",
+          "Service": "groundstation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "groundstation",
+          "Method": "get_agent_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAgentTaskResponseUrl",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAgentTaskResponseUrl",
+          "Service": "groundstation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "groundstation",
+          "Method": "get_agent_task_response_url",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "GetConfig",
+          "Service": "groundstation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "groundstation",
+          "Method": "get_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDataflowEndpointGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDataflowEndpointGroup",
+          "Service": "groundstation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "groundstation",
+          "Method": "get_dataflow_endpoint_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMinuteUsage",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMinuteUsage",
+          "Service": "groundstation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "groundstation",
+          "Method": "get_minute_usage",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMissionProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMissionProfile",
+          "Service": "groundstation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "groundstation",
+          "Method": "get_mission_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSatellite",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSatellite",
+          "Service": "groundstation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "groundstation",
+          "Method": "get_satellite",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAntennas",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAntennas",
+          "Service": "groundstation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "groundstation",
+          "Method": "list_antennas",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListConfigs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListConfigs",
+          "Service": "groundstation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "groundstation",
+          "Method": "list_configs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListContactVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListContactVersions",
+          "Service": "groundstation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "groundstation",
+          "Method": "list_contact_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListContacts",
+      "AuthorizedActions": [
+        {
+          "Name": "ListContacts",
+          "Service": "groundstation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "groundstation",
+          "Method": "list_contacts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDataflowEndpointGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDataflowEndpointGroups",
+          "Service": "groundstation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "groundstation",
+          "Method": "list_dataflow_endpoint_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEphemerides",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEphemerides",
+          "Service": "groundstation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "groundstation",
+          "Method": "list_ephemerides",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListGroundStationReservations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListGroundStationReservations",
+          "Service": "groundstation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "groundstation",
+          "Method": "list_ground_station_reservations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListGroundStations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListGroundStations",
+          "Service": "groundstation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "groundstation",
+          "Method": "list_ground_stations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMissionProfiles",
+      "AuthorizedActions": [
+        {
+          "Name": "ListMissionProfiles",
+          "Service": "groundstation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "groundstation",
+          "Method": "list_mission_profiles",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSatellites",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSatellites",
+          "Service": "groundstation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "groundstation",
+          "Method": "list_satellites",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "groundstation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "groundstation",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RegisterAgent",
+      "AuthorizedActions": [
+        {
+          "Name": "RegisterAgent",
+          "Service": "groundstation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "groundstation",
+          "Method": "register_agent",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ReserveContact",
+      "AuthorizedActions": [
+        {
+          "Name": "ReserveContact",
+          "Service": "groundstation"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "groundstation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "groundstation",
+          "Method": "reserve_contact",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "groundstation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "groundstation",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "groundstation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "groundstation",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAgentStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAgentStatus",
+          "Service": "groundstation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "groundstation",
+          "Method": "update_agent_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "groundstation.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateConfig",
+          "Service": "groundstation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "groundstation",
+          "Method": "update_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateContact",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateContact",
+          "Service": "groundstation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "groundstation",
+          "Method": "update_contact",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateEphemeris",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateEphemeris",
+          "Service": "groundstation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "groundstation",
+          "Method": "update_ephemeris",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateMissionProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "groundstation.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateMissionProfile",
+          "Service": "groundstation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "groundstation",
+          "Method": "update_mission_profile",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "Agent",
+      "ARNFormats": [
+        "arn:${Partition}:groundstation:${Region}:${Account}:agent/${AgentId}"
+      ],
+      "ConditionKeys": [
+        "groundstation:AgentId"
+      ]
+    },
+    {
+      "Name": "Config",
+      "ARNFormats": [
+        "arn:${Partition}:groundstation:${Region}:${Account}:config/${ConfigType}/${ConfigId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "groundstation:ConfigId",
+        "groundstation:ConfigType"
+      ]
+    },
+    {
+      "Name": "Contact",
+      "ARNFormats": [
+        "arn:${Partition}:groundstation:${Region}:${Account}:contact/${ContactId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "groundstation:ContactId"
+      ]
+    },
+    {
+      "Name": "DataflowEndpointGroup",
+      "ARNFormats": [
+        "arn:${Partition}:groundstation:${Region}:${Account}:dataflow-endpoint-group/${DataflowEndpointGroupId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "groundstation:DataflowEndpointGroupId"
+      ]
+    },
+    {
+      "Name": "EphemerisItem",
+      "ARNFormats": [
+        "arn:${Partition}:groundstation:${Region}:${Account}:ephemeris/${EphemerisId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "groundstation:EphemerisId"
+      ]
+    },
+    {
+      "Name": "GroundStationResource",
+      "ARNFormats": [
+        "arn:${Partition}:groundstation:${Region}:${Account}:groundstation:${GroundStationId}"
+      ],
+      "ConditionKeys": [
+        "groundstation:GroundStationId"
+      ]
+    },
+    {
+      "Name": "MissionProfile",
+      "ARNFormats": [
+        "arn:${Partition}:groundstation:${Region}:${Account}:mission-profile/${MissionProfileId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "groundstation:MissionProfileId"
+      ]
+    },
+    {
+      "Name": "Satellite",
+      "ARNFormats": [
+        "arn:${Partition}:groundstation:${Region}:${Account}:satellite/${SatelliteId}"
+      ],
+      "ConditionKeys": [
+        "groundstation:SatelliteId"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

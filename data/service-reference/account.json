@@ -1,0 +1,722 @@
+{
+  "Name": "account",
+  "Actions": [
+    {
+      "Name": "AcceptPrimaryEmailUpdate",
+      "ActionConditionKeys": [
+        "account:EmailTargetDomain"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "accountInOrganization"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CloseAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "account"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteAlternateContact",
+      "ActionConditionKeys": [
+        "account:AlternateContactTypes"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "account"
+        },
+        {
+          "Name": "accountInOrganization"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisableRegion",
+      "ActionConditionKeys": [
+        "account:TargetRegion"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "account"
+        },
+        {
+          "Name": "accountInOrganization"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "EnableRegion",
+      "ActionConditionKeys": [
+        "account:TargetRegion"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "account"
+        },
+        {
+          "Name": "accountInOrganization"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetAccountInformation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "account"
+        },
+        {
+          "Name": "accountInOrganization"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetAlternateContact",
+      "ActionConditionKeys": [
+        "account:AlternateContactTypes"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "account"
+        },
+        {
+          "Name": "accountInOrganization"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetContactInformation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "account"
+        },
+        {
+          "Name": "accountInOrganization"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetGovCloudAccountInformation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "account"
+        },
+        {
+          "Name": "accountInOrganization"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetPrimaryEmail",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "accountInOrganization"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetPrimaryEmailUpdateStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "accountInOrganization"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetRegionOptStatus",
+      "ActionConditionKeys": [
+        "account:TargetRegion"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "account"
+        },
+        {
+          "Name": "accountInOrganization"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListRegions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "account"
+        },
+        {
+          "Name": "accountInOrganization"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutAccountName",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "account"
+        },
+        {
+          "Name": "accountInOrganization"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutAlternateContact",
+      "ActionConditionKeys": [
+        "account:AlternateContactTypes"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "account"
+        },
+        {
+          "Name": "accountInOrganization"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutContactInformation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "account"
+        },
+        {
+          "Name": "accountInOrganization"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartPrimaryEmailUpdate",
+      "ActionConditionKeys": [
+        "account:EmailTargetDomain"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "accountInOrganization"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "account:AccountResourceOrgPaths",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "account:AccountResourceOrgTags/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "account:AlternateContactTypes",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "account:EmailTargetDomain",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "account:TargetRegion",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AcceptPrimaryEmailUpdate",
+      "AuthorizedActions": [
+        {
+          "Name": "AcceptPrimaryEmailUpdate",
+          "Service": "account"
+        },
+        {
+          "Name": "UpdateAccountEmailAddress",
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "account",
+          "Method": "accept_primary_email_update",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAlternateContact",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAlternateContact",
+          "Service": "account"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "account",
+          "Method": "delete_alternate_contact",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisableRegion",
+      "AuthorizedActions": [
+        {
+          "Name": "DisableRegion",
+          "Service": "account"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "account",
+          "Method": "disable_region",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "EnableRegion",
+      "AuthorizedActions": [
+        {
+          "Name": "EnableRegion",
+          "Service": "account"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "account",
+          "Method": "enable_region",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAccountInformation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAccountInformation",
+          "Service": "account"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "account",
+          "Method": "get_account_information",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAlternateContact",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAlternateContact",
+          "Service": "account"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "account",
+          "Method": "get_alternate_contact",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetContactInformation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetContactInformation",
+          "Service": "account"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "account",
+          "Method": "get_contact_information",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetGovCloudAccountInformation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetGovCloudAccountInformation",
+          "Service": "account"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "account",
+          "Method": "get_gov_cloud_account_information",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPrimaryEmail",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPrimaryEmail",
+          "Service": "account"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "account",
+          "Method": "get_primary_email",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPrimaryEmailUpdateStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPrimaryEmailUpdateStatus",
+          "Service": "account"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "account",
+          "Method": "get_primary_email_update_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRegionOptStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRegionOptStatus",
+          "Service": "account"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "account",
+          "Method": "get_region_opt_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRegions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRegions",
+          "Service": "account"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "account",
+          "Method": "list_regions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutAccountName",
+      "AuthorizedActions": [
+        {
+          "Name": "PutAccountName",
+          "Service": "account"
+        },
+        {
+          "Name": "UpdateAccountName",
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "account",
+          "Method": "put_account_name",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutAlternateContact",
+      "AuthorizedActions": [
+        {
+          "Name": "PutAlternateContact",
+          "Service": "account"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "account",
+          "Method": "put_alternate_contact",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutContactInformation",
+      "AuthorizedActions": [
+        {
+          "Name": "PutContactInformation",
+          "Service": "account"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "account",
+          "Method": "put_contact_information",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartPrimaryEmailUpdate",
+      "AuthorizedActions": [
+        {
+          "Name": "StartPrimaryEmailUpdate",
+          "Service": "account"
+        },
+        {
+          "Name": "UpdateAccountEmailAddress",
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "account",
+          "Method": "start_primary_email_update",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "account",
+      "ARNFormats": [
+        "arn:${Partition}:account::${Account}:account"
+      ]
+    },
+    {
+      "Name": "accountInOrganization",
+      "ARNFormats": [
+        "arn:${Partition}:account::${ManagementAccountId}:account/o-${OrganizationId}/${MemberAccountId}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

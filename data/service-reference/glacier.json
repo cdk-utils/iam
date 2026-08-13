@@ -1,0 +1,1203 @@
+{
+  "Name": "glacier",
+  "Actions": [
+    {
+      "Name": "AbortMultipartUpload",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vault"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AbortVaultLock",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vault"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AddTagsToVault",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vault"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CompleteMultipartUpload",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vault"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CompleteVaultLock",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vault"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateVault",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vault"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteArchive",
+      "ActionConditionKeys": [
+        "glacier:ArchiveAgeInDays"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vault"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteVault",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vault"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteVaultAccessPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vault"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteVaultNotifications",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vault"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vault"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeVault",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vault"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDataRetrievalPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetJobOutput",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vault"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetVaultAccessPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vault"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetVaultLock",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vault"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetVaultNotifications",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vault"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "InitiateJob",
+      "ActionConditionKeys": [
+        "glacier:ArchiveAgeInDays"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vault"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "InitiateMultipartUpload",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vault"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "InitiateVaultLock",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vault"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vault"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListMultipartUploads",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vault"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListParts",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vault"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListProvisionedCapacity",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForVault",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vault"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListVaults",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PurchaseProvisionedCapacity",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RemoveTagsFromVault",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vault"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SetDataRetrievalPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SetVaultAccessPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vault"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SetVaultNotifications",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vault"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UploadArchive",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vault"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UploadMultipartPart",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vault"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "glacier:ArchiveAgeInDays",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "glacier:ResourceTag/",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AbortMultipartUpload",
+      "AuthorizedActions": [
+        {
+          "Name": "AbortMultipartUpload",
+          "Service": "glacier"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glacier",
+          "Method": "abort_multipart_upload",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AbortVaultLock",
+      "AuthorizedActions": [
+        {
+          "Name": "AbortVaultLock",
+          "Service": "glacier"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glacier",
+          "Method": "abort_vault_lock",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AddTagsToVault",
+      "AuthorizedActions": [
+        {
+          "Name": "AddTagsToVault",
+          "Service": "glacier"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glacier",
+          "Method": "add_tags_to_vault",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CompleteMultipartUpload",
+      "AuthorizedActions": [
+        {
+          "Name": "CompleteMultipartUpload",
+          "Service": "glacier"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glacier",
+          "Method": "complete_multipart_upload",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CompleteVaultLock",
+      "AuthorizedActions": [
+        {
+          "Name": "CompleteVaultLock",
+          "Service": "glacier"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glacier",
+          "Method": "complete_vault_lock",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateVault",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateVault",
+          "Service": "glacier"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glacier",
+          "Method": "create_vault",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteArchive",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteArchive",
+          "Service": "glacier"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glacier",
+          "Method": "delete_archive",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteVault",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteVault",
+          "Service": "glacier"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glacier",
+          "Method": "delete_vault",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteVaultAccessPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteVaultAccessPolicy",
+          "Service": "glacier"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glacier",
+          "Method": "delete_vault_access_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteVaultNotifications",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteVaultNotifications",
+          "Service": "glacier"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glacier",
+          "Method": "delete_vault_notifications",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeJob",
+          "Service": "glacier"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glacier",
+          "Method": "describe_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeVault",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeVault",
+          "Service": "glacier"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glacier",
+          "Method": "describe_vault",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDataRetrievalPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDataRetrievalPolicy",
+          "Service": "glacier"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glacier",
+          "Method": "get_data_retrieval_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetJobOutput",
+      "AuthorizedActions": [
+        {
+          "Name": "GetJobOutput",
+          "Service": "glacier"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glacier",
+          "Method": "get_job_output",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetVaultAccessPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetVaultAccessPolicy",
+          "Service": "glacier"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glacier",
+          "Method": "get_vault_access_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetVaultLock",
+      "AuthorizedActions": [
+        {
+          "Name": "GetVaultLock",
+          "Service": "glacier"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glacier",
+          "Method": "get_vault_lock",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetVaultNotifications",
+      "AuthorizedActions": [
+        {
+          "Name": "GetVaultNotifications",
+          "Service": "glacier"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glacier",
+          "Method": "get_vault_notifications",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "InitiateJob",
+      "AuthorizedActions": [
+        {
+          "Name": "GetJobOutput",
+          "Service": "glacier"
+        },
+        {
+          "Name": "InitiateJob",
+          "Service": "glacier"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glacier",
+          "Method": "initiate_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "InitiateMultipartUpload",
+      "AuthorizedActions": [
+        {
+          "Name": "InitiateMultipartUpload",
+          "Service": "glacier"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glacier",
+          "Method": "initiate_multipart_upload",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "InitiateVaultLock",
+      "AuthorizedActions": [
+        {
+          "Name": "InitiateVaultLock",
+          "Service": "glacier"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glacier",
+          "Method": "initiate_vault_lock",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListJobs",
+          "Service": "glacier"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glacier",
+          "Method": "list_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMultipartUploads",
+      "AuthorizedActions": [
+        {
+          "Name": "ListMultipartUploads",
+          "Service": "glacier"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glacier",
+          "Method": "list_multipart_uploads",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListParts",
+      "AuthorizedActions": [
+        {
+          "Name": "ListParts",
+          "Service": "glacier"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glacier",
+          "Method": "list_parts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProvisionedCapacity",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProvisionedCapacity",
+          "Service": "glacier"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glacier",
+          "Method": "list_provisioned_capacity",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForVault",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForVault",
+          "Service": "glacier"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glacier",
+          "Method": "list_tags_for_vault",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListVaults",
+      "AuthorizedActions": [
+        {
+          "Name": "ListVaults",
+          "Service": "glacier"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glacier",
+          "Method": "list_vaults",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PurchaseProvisionedCapacity",
+      "AuthorizedActions": [
+        {
+          "Name": "PurchaseProvisionedCapacity",
+          "Service": "glacier"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glacier",
+          "Method": "purchase_provisioned_capacity",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RemoveTagsFromVault",
+      "AuthorizedActions": [
+        {
+          "Name": "RemoveTagsFromVault",
+          "Service": "glacier"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glacier",
+          "Method": "remove_tags_from_vault",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SetDataRetrievalPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "SetDataRetrievalPolicy",
+          "Service": "glacier"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glacier",
+          "Method": "set_data_retrieval_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SetVaultAccessPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "SetVaultAccessPolicy",
+          "Service": "glacier"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glacier",
+          "Method": "set_vault_access_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SetVaultNotifications",
+      "AuthorizedActions": [
+        {
+          "Name": "SetVaultNotifications",
+          "Service": "glacier"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glacier",
+          "Method": "set_vault_notifications",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UploadArchive",
+      "AuthorizedActions": [
+        {
+          "Name": "UploadArchive",
+          "Service": "glacier"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glacier",
+          "Method": "upload_archive",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UploadMultipartPart",
+      "AuthorizedActions": [
+        {
+          "Name": "UploadMultipartPart",
+          "Service": "glacier"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glacier",
+          "Method": "upload_multipart_part",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "vault",
+      "ARNFormats": [
+        "arn:${Partition}:glacier:${Region}:${Account}:vaults/${VaultName}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

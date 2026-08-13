@@ -1,0 +1,902 @@
+{
+  "Name": "discovery",
+  "Actions": [
+    {
+      "Name": "AssociateConfigurationItemsToApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchDeleteAgents",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchDeleteImportData",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateTags",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteApplications",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteTags",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeAgents",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeBatchDeleteConfigurationTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeContinuousExports",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeExportConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeExportTasks",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeImportTasks",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeTags",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateConfigurationItemsFromApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ExportConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDiscoverySummary",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetNetworkConnectionGraph",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListServerNeighbors",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartBatchDeleteConfigurationTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartContinuousExport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartDataCollectionByAgentIds",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartExportTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartImportTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StopContinuousExport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StopDataCollectionByAgentIds",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AssociateConfigurationItemsToApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateConfigurationItemsToApplication",
+          "Service": "discovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "discovery",
+          "Method": "associate_configuration_items_to_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchDeleteAgents",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchDeleteAgents",
+          "Service": "discovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "discovery",
+          "Method": "batch_delete_agents",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchDeleteImportData",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchDeleteImportData",
+          "Service": "discovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "discovery",
+          "Method": "batch_delete_import_data",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateApplication",
+          "Service": "discovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "discovery",
+          "Method": "create_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateTags",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateTags",
+          "Service": "discovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "discovery",
+          "Method": "create_tags",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteApplications",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteApplications",
+          "Service": "discovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "discovery",
+          "Method": "delete_applications",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteTags",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteTags",
+          "Service": "discovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "discovery",
+          "Method": "delete_tags",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAgents",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAgents",
+          "Service": "discovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "discovery",
+          "Method": "describe_agents",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeBatchDeleteConfigurationTask",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeBatchDeleteConfigurationTask",
+          "Service": "discovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "discovery",
+          "Method": "describe_batch_delete_configuration_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeConfigurations",
+          "Service": "discovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "discovery",
+          "Method": "describe_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeContinuousExports",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeContinuousExports",
+          "Service": "discovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "discovery",
+          "Method": "describe_continuous_exports",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeExportConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeExportConfigurations",
+          "Service": "discovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "discovery",
+          "Method": "describe_export_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeExportTasks",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeExportTasks",
+          "Service": "discovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "discovery",
+          "Method": "describe_export_tasks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeImportTasks",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeImportTasks",
+          "Service": "discovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "discovery",
+          "Method": "describe_import_tasks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeTags",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeTags",
+          "Service": "discovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "discovery",
+          "Method": "describe_tags",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateConfigurationItemsFromApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateConfigurationItemsFromApplication",
+          "Service": "discovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "discovery",
+          "Method": "disassociate_configuration_items_from_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ExportConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ExportConfigurations",
+          "Service": "discovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "discovery",
+          "Method": "export_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDiscoverySummary",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDiscoverySummary",
+          "Service": "discovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "discovery",
+          "Method": "get_discovery_summary",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListConfigurations",
+          "Service": "discovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "discovery",
+          "Method": "list_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListServerNeighbors",
+      "AuthorizedActions": [
+        {
+          "Name": "ListServerNeighbors",
+          "Service": "discovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "discovery",
+          "Method": "list_server_neighbors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartBatchDeleteConfigurationTask",
+      "AuthorizedActions": [
+        {
+          "Name": "StartBatchDeleteConfigurationTask",
+          "Service": "discovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "discovery",
+          "Method": "start_batch_delete_configuration_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartContinuousExport",
+      "AuthorizedActions": [
+        {
+          "Name": "StartContinuousExport",
+          "Service": "discovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "discovery",
+          "Method": "start_continuous_export",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartDataCollectionByAgentIds",
+      "AuthorizedActions": [
+        {
+          "Name": "StartDataCollectionByAgentIds",
+          "Service": "discovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "discovery",
+          "Method": "start_data_collection_by_agent_ids",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartExportTask",
+      "AuthorizedActions": [
+        {
+          "Name": "StartExportTask",
+          "Service": "discovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "discovery",
+          "Method": "start_export_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartImportTask",
+      "AuthorizedActions": [
+        {
+          "Name": "StartImportTask",
+          "Service": "discovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "discovery",
+          "Method": "start_import_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopContinuousExport",
+      "AuthorizedActions": [
+        {
+          "Name": "StopContinuousExport",
+          "Service": "discovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "discovery",
+          "Method": "stop_continuous_export",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopDataCollectionByAgentIds",
+      "AuthorizedActions": [
+        {
+          "Name": "StopDataCollectionByAgentIds",
+          "Service": "discovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "discovery",
+          "Method": "stop_data_collection_by_agent_ids",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateApplication",
+          "Service": "discovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "discovery",
+          "Method": "update_application",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

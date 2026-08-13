@@ -1,0 +1,874 @@
+{
+  "Name": "budgets",
+  "Actions": [
+    {
+      "Name": "CreateBudgetAction",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "budgetAction"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteBudgetAction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "budgetAction"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeBudgetAction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "budgetAction"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeBudgetActionHistories",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "budgetAction"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeBudgetActionsForAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeBudgetActionsForBudget",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "budget"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ExecuteBudgetAction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "budgetAction"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "budget"
+        },
+        {
+          "Name": "budgetAction"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ModifyBudget",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "budget"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "budget"
+        },
+        {
+          "Name": "budgetAction"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "budget"
+        },
+        {
+          "Name": "budgetAction"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateBudgetAction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "budgetAction"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ViewBudget",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "budget"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateBudget",
+      "AuthorizedActions": [
+        {
+          "Name": "ModifyBilling",
+          "Service": "aws-portal"
+        },
+        {
+          "Name": "ModifyBudget",
+          "Service": "budgets"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "budgets"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "budgets",
+          "Method": "create_budget",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateBudgetAction",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateBudgetAction",
+          "Service": "budgets"
+        },
+        {
+          "Name": "ModifyBilling",
+          "Service": "aws-portal"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "budgets.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "budgets"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "budgets",
+          "Method": "create_budget_action",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateNotification",
+      "AuthorizedActions": [
+        {
+          "Name": "ModifyBilling",
+          "Service": "aws-portal"
+        },
+        {
+          "Name": "ModifyBudget",
+          "Service": "budgets"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "budgets",
+          "Method": "create_notification",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSubscriber",
+      "AuthorizedActions": [
+        {
+          "Name": "ModifyBilling",
+          "Service": "aws-portal"
+        },
+        {
+          "Name": "ModifyBudget",
+          "Service": "budgets"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "budgets",
+          "Method": "create_subscriber",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteBudget",
+      "AuthorizedActions": [
+        {
+          "Name": "ModifyBilling",
+          "Service": "aws-portal"
+        },
+        {
+          "Name": "ModifyBudget",
+          "Service": "budgets"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "budgets",
+          "Method": "delete_budget",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteBudgetAction",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteBudgetAction",
+          "Service": "budgets"
+        },
+        {
+          "Name": "ModifyBilling",
+          "Service": "aws-portal"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "budgets",
+          "Method": "delete_budget_action",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteNotification",
+      "AuthorizedActions": [
+        {
+          "Name": "ModifyBilling",
+          "Service": "aws-portal"
+        },
+        {
+          "Name": "ModifyBudget",
+          "Service": "budgets"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "budgets",
+          "Method": "delete_notification",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSubscriber",
+      "AuthorizedActions": [
+        {
+          "Name": "ModifyBilling",
+          "Service": "aws-portal"
+        },
+        {
+          "Name": "ModifyBudget",
+          "Service": "budgets"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "budgets",
+          "Method": "delete_subscriber",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeBudget",
+      "AuthorizedActions": [
+        {
+          "Name": "ViewBilling",
+          "Service": "aws-portal"
+        },
+        {
+          "Name": "ViewBudget",
+          "Service": "budgets"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "budgets",
+          "Method": "describe_budget",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeBudgetAction",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeBudgetAction",
+          "Service": "budgets"
+        },
+        {
+          "Name": "ViewBilling",
+          "Service": "aws-portal"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "budgets",
+          "Method": "describe_budget_action",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeBudgetActionHistories",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeBudgetActionHistories",
+          "Service": "budgets"
+        },
+        {
+          "Name": "ViewBilling",
+          "Service": "aws-portal"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "budgets",
+          "Method": "describe_budget_action_histories",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeBudgetActionsForAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeBudgetActionsForAccount",
+          "Service": "budgets"
+        },
+        {
+          "Name": "ViewBilling",
+          "Service": "aws-portal"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "budgets",
+          "Method": "describe_budget_actions_for_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeBudgetActionsForBudget",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeBudgetActionsForBudget",
+          "Service": "budgets"
+        },
+        {
+          "Name": "ViewBilling",
+          "Service": "aws-portal"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "budgets",
+          "Method": "describe_budget_actions_for_budget",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeBudgetNotificationsForAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "ViewBilling",
+          "Service": "aws-portal"
+        },
+        {
+          "Name": "ViewBudget",
+          "Service": "budgets"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "budgets",
+          "Method": "describe_budget_notifications_for_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeBudgetPerformanceHistory",
+      "AuthorizedActions": [
+        {
+          "Name": "ViewBilling",
+          "Service": "aws-portal"
+        },
+        {
+          "Name": "ViewBudget",
+          "Service": "budgets"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "budgets",
+          "Method": "describe_budget_performance_history",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeBudgets",
+      "AuthorizedActions": [
+        {
+          "Name": "ViewBilling",
+          "Service": "aws-portal"
+        },
+        {
+          "Name": "ViewBudget",
+          "Service": "budgets"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "budgets",
+          "Method": "describe_budgets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeNotificationsForBudget",
+      "AuthorizedActions": [
+        {
+          "Name": "ViewBilling",
+          "Service": "aws-portal"
+        },
+        {
+          "Name": "ViewBudget",
+          "Service": "budgets"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "budgets",
+          "Method": "describe_notifications_for_budget",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSubscribersForNotification",
+      "AuthorizedActions": [
+        {
+          "Name": "ViewBilling",
+          "Service": "aws-portal"
+        },
+        {
+          "Name": "ViewBudget",
+          "Service": "budgets"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "budgets",
+          "Method": "describe_subscribers_for_notification",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ExecuteBudgetAction",
+      "AuthorizedActions": [
+        {
+          "Name": "ExecuteBudgetAction",
+          "Service": "budgets"
+        },
+        {
+          "Name": "ModifyBilling",
+          "Service": "aws-portal"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "budgets",
+          "Method": "execute_budget_action",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "budgets"
+        },
+        {
+          "Name": "ViewBilling",
+          "Service": "aws-portal"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "budgets",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ModifyBilling",
+          "Service": "aws-portal"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "budgets"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "budgets",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ModifyBilling",
+          "Service": "aws-portal"
+        },
+        {
+          "Name": "UntagResource",
+          "Service": "budgets"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "budgets",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateBudget",
+      "AuthorizedActions": [
+        {
+          "Name": "ModifyBilling",
+          "Service": "aws-portal"
+        },
+        {
+          "Name": "ModifyBudget",
+          "Service": "budgets"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "budgets",
+          "Method": "update_budget",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateBudgetAction",
+      "AuthorizedActions": [
+        {
+          "Name": "ModifyBilling",
+          "Service": "aws-portal"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "budgets.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateBudgetAction",
+          "Service": "budgets"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "budgets",
+          "Method": "update_budget_action",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateNotification",
+      "AuthorizedActions": [
+        {
+          "Name": "ModifyBilling",
+          "Service": "aws-portal"
+        },
+        {
+          "Name": "ModifyBudget",
+          "Service": "budgets"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "budgets",
+          "Method": "update_notification",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSubscriber",
+      "AuthorizedActions": [
+        {
+          "Name": "ModifyBilling",
+          "Service": "aws-portal"
+        },
+        {
+          "Name": "ModifyBudget",
+          "Service": "budgets"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "budgets",
+          "Method": "update_subscriber",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "budget",
+      "ARNFormats": [
+        "arn:${Partition}:budgets::${Account}:budget/${BudgetName}"
+      ],
+      "ConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ]
+    },
+    {
+      "Name": "budgetAction",
+      "ARNFormats": [
+        "arn:${Partition}:budgets::${Account}:budget/${BudgetName}/action/${ActionId}"
+      ],
+      "ConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

@@ -1,0 +1,2563 @@
+{
+  "Name": "clouddirectory",
+  "Actions": [
+    {
+      "Name": "AddFacetToObject",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directory"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ApplySchema",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directory"
+        },
+        {
+          "Name": "publishedSchema"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AttachObject",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directory"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AttachPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directory"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AttachToIndex",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directory"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AttachTypedLink",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directory"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchRead",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directory"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchWrite",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directory"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateDirectory",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "publishedSchema"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateFacet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "appliedSchema"
+        },
+        {
+          "Name": "developmentSchema"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateIndex",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directory"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateObject",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directory"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateSchema",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateTypedLinkFacet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "appliedSchema"
+        },
+        {
+          "Name": "developmentSchema"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteDirectory",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directory"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteFacet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "developmentSchema"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteObject",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directory"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteSchema",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "developmentSchema"
+        },
+        {
+          "Name": "publishedSchema"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteTypedLinkFacet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "developmentSchema"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DetachFromIndex",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directory"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DetachObject",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directory"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DetachPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directory"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DetachTypedLink",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directory"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisableDirectory",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directory"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "EnableDirectory",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directory"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAppliedSchemaVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "appliedSchema"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDirectory",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directory"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetFacet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "appliedSchema"
+        },
+        {
+          "Name": "developmentSchema"
+        },
+        {
+          "Name": "publishedSchema"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetLinkAttributes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directory"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetObjectAttributes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directory"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetObjectInformation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directory"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSchemaAsJson",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "appliedSchema"
+        },
+        {
+          "Name": "developmentSchema"
+        },
+        {
+          "Name": "publishedSchema"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetTypedLinkFacetInformation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "appliedSchema"
+        },
+        {
+          "Name": "developmentSchema"
+        },
+        {
+          "Name": "publishedSchema"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAppliedSchemaArns",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directory"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAttachedIndices",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directory"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDevelopmentSchemaArns",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDirectories",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListFacetAttributes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "appliedSchema"
+        },
+        {
+          "Name": "developmentSchema"
+        },
+        {
+          "Name": "publishedSchema"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListFacetNames",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "appliedSchema"
+        },
+        {
+          "Name": "developmentSchema"
+        },
+        {
+          "Name": "publishedSchema"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListIncomingTypedLinks",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directory"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListIndex",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directory"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListManagedSchemaArns",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListObjectAttributes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directory"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListObjectChildren",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directory"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListObjectParentPaths",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directory"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListObjectParents",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directory"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListObjectPolicies",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directory"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListOutgoingTypedLinks",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directory"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPolicyAttachments",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directory"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPublishedSchemaArns",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directory"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTypedLinkFacetAttributes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "appliedSchema"
+        },
+        {
+          "Name": "developmentSchema"
+        },
+        {
+          "Name": "publishedSchema"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTypedLinkFacetNames",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "appliedSchema"
+        },
+        {
+          "Name": "developmentSchema"
+        },
+        {
+          "Name": "publishedSchema"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "LookupPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directory"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PublishSchema",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "developmentSchema"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutSchemaFromJson",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RemoveFacetFromObject",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directory"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directory"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directory"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateFacet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "appliedSchema"
+        },
+        {
+          "Name": "developmentSchema"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateLinkAttributes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directory"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateObjectAttributes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directory"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateSchema",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "developmentSchema"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateTypedLinkFacet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "developmentSchema"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpgradeAppliedSchema",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directory"
+        },
+        {
+          "Name": "publishedSchema"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpgradePublishedSchema",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "developmentSchema"
+        },
+        {
+          "Name": "publishedSchema"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AddFacetToObject",
+      "AuthorizedActions": [
+        {
+          "Name": "AddFacetToObject",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "add_facet_to_object",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ApplySchema",
+      "AuthorizedActions": [
+        {
+          "Name": "ApplySchema",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "apply_schema",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AttachObject",
+      "AuthorizedActions": [
+        {
+          "Name": "AttachObject",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "attach_object",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AttachPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "AttachPolicy",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "attach_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AttachToIndex",
+      "AuthorizedActions": [
+        {
+          "Name": "AttachToIndex",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "attach_to_index",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AttachTypedLink",
+      "AuthorizedActions": [
+        {
+          "Name": "AttachTypedLink",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "attach_typed_link",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchRead",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchRead",
+          "Service": "clouddirectory"
+        },
+        {
+          "Name": "GetLinkAttributes",
+          "Service": "clouddirectory"
+        },
+        {
+          "Name": "GetObjectAttributes",
+          "Service": "clouddirectory"
+        },
+        {
+          "Name": "GetObjectInformation",
+          "Service": "clouddirectory"
+        },
+        {
+          "Name": "ListAttachedIndices",
+          "Service": "clouddirectory"
+        },
+        {
+          "Name": "ListIncomingTypedLinks",
+          "Service": "clouddirectory"
+        },
+        {
+          "Name": "ListIndex",
+          "Service": "clouddirectory"
+        },
+        {
+          "Name": "ListObjectAttributes",
+          "Service": "clouddirectory"
+        },
+        {
+          "Name": "ListObjectChildren",
+          "Service": "clouddirectory"
+        },
+        {
+          "Name": "ListObjectParentPaths",
+          "Service": "clouddirectory"
+        },
+        {
+          "Name": "ListObjectParents",
+          "Service": "clouddirectory"
+        },
+        {
+          "Name": "ListObjectPolicies",
+          "Service": "clouddirectory"
+        },
+        {
+          "Name": "ListOutgoingTypedLinks",
+          "Service": "clouddirectory"
+        },
+        {
+          "Name": "ListPolicyAttachments",
+          "Service": "clouddirectory"
+        },
+        {
+          "Name": "LookupPolicy",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "batch_read",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchWrite",
+      "AuthorizedActions": [
+        {
+          "Name": "AddFacetToObject",
+          "Service": "clouddirectory"
+        },
+        {
+          "Name": "AttachObject",
+          "Service": "clouddirectory"
+        },
+        {
+          "Name": "AttachPolicy",
+          "Service": "clouddirectory"
+        },
+        {
+          "Name": "AttachToIndex",
+          "Service": "clouddirectory"
+        },
+        {
+          "Name": "AttachTypedLink",
+          "Service": "clouddirectory"
+        },
+        {
+          "Name": "BatchWrite",
+          "Service": "clouddirectory"
+        },
+        {
+          "Name": "CreateIndex",
+          "Service": "clouddirectory"
+        },
+        {
+          "Name": "CreateObject",
+          "Service": "clouddirectory"
+        },
+        {
+          "Name": "DeleteObject",
+          "Service": "clouddirectory"
+        },
+        {
+          "Name": "DetachFromIndex",
+          "Service": "clouddirectory"
+        },
+        {
+          "Name": "DetachObject",
+          "Service": "clouddirectory"
+        },
+        {
+          "Name": "DetachTypedLink",
+          "Service": "clouddirectory"
+        },
+        {
+          "Name": "RemoveFacetFromObject",
+          "Service": "clouddirectory"
+        },
+        {
+          "Name": "UpdateLinkAttributes",
+          "Service": "clouddirectory"
+        },
+        {
+          "Name": "UpdateObjectAttributes",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "batch_write",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDirectory",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDirectory",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "create_directory",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateFacet",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateFacet",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "create_facet",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateIndex",
+      "AuthorizedActions": [
+        {
+          "Name": "AttachObject",
+          "Service": "clouddirectory"
+        },
+        {
+          "Name": "CreateIndex",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "create_index",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateObject",
+      "AuthorizedActions": [
+        {
+          "Name": "AttachObject",
+          "Service": "clouddirectory"
+        },
+        {
+          "Name": "CreateObject",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "create_object",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSchema",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSchema",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "create_schema",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateTypedLinkFacet",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateTypedLinkFacet",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "create_typed_link_facet",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDirectory",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDirectory",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "delete_directory",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteFacet",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteFacet",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "delete_facet",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteObject",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteObject",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "delete_object",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSchema",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSchema",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "delete_schema",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteTypedLinkFacet",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteTypedLinkFacet",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "delete_typed_link_facet",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DetachFromIndex",
+      "AuthorizedActions": [
+        {
+          "Name": "DetachFromIndex",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "detach_from_index",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DetachObject",
+      "AuthorizedActions": [
+        {
+          "Name": "DetachObject",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "detach_object",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DetachPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DetachPolicy",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "detach_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DetachTypedLink",
+      "AuthorizedActions": [
+        {
+          "Name": "DetachTypedLink",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "detach_typed_link",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisableDirectory",
+      "AuthorizedActions": [
+        {
+          "Name": "DisableDirectory",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "disable_directory",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "EnableDirectory",
+      "AuthorizedActions": [
+        {
+          "Name": "EnableDirectory",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "enable_directory",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAppliedSchemaVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAppliedSchemaVersion",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "get_applied_schema_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDirectory",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDirectory",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "get_directory",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetFacet",
+      "AuthorizedActions": [
+        {
+          "Name": "GetFacet",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "get_facet",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetLinkAttributes",
+      "AuthorizedActions": [
+        {
+          "Name": "GetLinkAttributes",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "get_link_attributes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetObjectAttributes",
+      "AuthorizedActions": [
+        {
+          "Name": "GetObjectAttributes",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "get_object_attributes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetObjectInformation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetObjectInformation",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "get_object_information",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSchemaAsJson",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSchemaAsJson",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "get_schema_as_json",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetTypedLinkFacetInformation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetTypedLinkFacetInformation",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "get_typed_link_facet_information",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAppliedSchemaArns",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAppliedSchemaArns",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "list_applied_schema_arns",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAttachedIndices",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAttachedIndices",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "list_attached_indices",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDevelopmentSchemaArns",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDevelopmentSchemaArns",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "list_development_schema_arns",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDirectories",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDirectories",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "list_directories",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFacetAttributes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFacetAttributes",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "list_facet_attributes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFacetNames",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFacetNames",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "list_facet_names",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListIncomingTypedLinks",
+      "AuthorizedActions": [
+        {
+          "Name": "ListIncomingTypedLinks",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "list_incoming_typed_links",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListIndex",
+      "AuthorizedActions": [
+        {
+          "Name": "ListIndex",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "list_index",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListManagedSchemaArns",
+      "AuthorizedActions": [
+        {
+          "Name": "ListManagedSchemaArns",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "list_managed_schema_arns",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListObjectAttributes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListObjectAttributes",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "list_object_attributes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListObjectChildren",
+      "AuthorizedActions": [
+        {
+          "Name": "ListObjectChildren",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "list_object_children",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListObjectParentPaths",
+      "AuthorizedActions": [
+        {
+          "Name": "ListObjectParentPaths",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "list_object_parent_paths",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListObjectParents",
+      "AuthorizedActions": [
+        {
+          "Name": "ListObjectParents",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "list_object_parents",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListObjectPolicies",
+      "AuthorizedActions": [
+        {
+          "Name": "ListObjectPolicies",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "list_object_policies",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListOutgoingTypedLinks",
+      "AuthorizedActions": [
+        {
+          "Name": "ListOutgoingTypedLinks",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "list_outgoing_typed_links",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPolicyAttachments",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPolicyAttachments",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "list_policy_attachments",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPublishedSchemaArns",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPublishedSchemaArns",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "list_published_schema_arns",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTypedLinkFacetAttributes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTypedLinkFacetAttributes",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "list_typed_link_facet_attributes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTypedLinkFacetNames",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTypedLinkFacetNames",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "list_typed_link_facet_names",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "LookupPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "LookupPolicy",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "lookup_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PublishSchema",
+      "AuthorizedActions": [
+        {
+          "Name": "PublishSchema",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "publish_schema",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutSchemaFromJson",
+      "AuthorizedActions": [
+        {
+          "Name": "PutSchemaFromJson",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "put_schema_from_json",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RemoveFacetFromObject",
+      "AuthorizedActions": [
+        {
+          "Name": "RemoveFacetFromObject",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "remove_facet_from_object",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateFacet",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateFacet",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "update_facet",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateLinkAttributes",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateLinkAttributes",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "update_link_attributes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateObjectAttributes",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateObjectAttributes",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "update_object_attributes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSchema",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSchema",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "update_schema",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateTypedLinkFacet",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateTypedLinkFacet",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "update_typed_link_facet",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpgradeAppliedSchema",
+      "AuthorizedActions": [
+        {
+          "Name": "UpgradeAppliedSchema",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "upgrade_applied_schema",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpgradePublishedSchema",
+      "AuthorizedActions": [
+        {
+          "Name": "UpgradePublishedSchema",
+          "Service": "clouddirectory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "clouddirectory",
+          "Method": "upgrade_published_schema",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "appliedSchema",
+      "ARNFormats": [
+        "arn:${Partition}:clouddirectory:${Region}:${Account}:directory/${DirectoryId}/schema/${SchemaName}/${Version}"
+      ]
+    },
+    {
+      "Name": "developmentSchema",
+      "ARNFormats": [
+        "arn:${Partition}:clouddirectory:${Region}:${Account}:schema/development/${SchemaName}"
+      ]
+    },
+    {
+      "Name": "directory",
+      "ARNFormats": [
+        "arn:${Partition}:clouddirectory:${Region}:${Account}:directory/${DirectoryId}"
+      ]
+    },
+    {
+      "Name": "publishedSchema",
+      "ARNFormats": [
+        "arn:${Partition}:clouddirectory:${Region}:${Account}:schema/published/${SchemaName}/${Version}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

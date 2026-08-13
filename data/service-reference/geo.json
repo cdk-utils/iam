@@ -1,0 +1,2759 @@
+{
+  "Name": "geo",
+  "Actions": [
+    {
+      "Name": "AssociateTrackerConsumer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "tracker"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchDeleteDevicePositionHistory",
+      "ActionConditionKeys": [
+        "geo:DeviceIds"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "tracker"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchDeleteGeofence",
+      "ActionConditionKeys": [
+        "geo:GeofenceIds"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "geofence-collection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchEvaluateGeofences",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "geofence-collection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchGetDevicePosition",
+      "ActionConditionKeys": [
+        "geo:DeviceIds"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "tracker"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchPutGeofence",
+      "ActionConditionKeys": [
+        "geo:GeofenceIds"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "geofence-collection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchUpdateDevicePosition",
+      "ActionConditionKeys": [
+        "geo:DeviceIds"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "tracker"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CalculateRoute",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "route-calculator"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CalculateRouteMatrix",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "route-calculator"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CancelJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateGeofenceCollection",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "geofence-collection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateKey",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "api-key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateMap",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "map"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreatePlaceIndex",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "place-index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateRouteCalculator",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "route-calculator"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateTracker",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "tracker"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteGeofenceCollection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "geofence-collection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteKey",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "api-key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteMap",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "map"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeletePlaceIndex",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "place-index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteRouteCalculator",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "route-calculator"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteTracker",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "tracker"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeGeofenceCollection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "geofence-collection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeKey",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "api-key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeMap",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "map"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribePlaceIndex",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "place-index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeRouteCalculator",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "route-calculator"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeTracker",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "tracker"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateTrackerConsumer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "tracker"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ForecastGeofenceEvents",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "geofence-collection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDevicePosition",
+      "ActionConditionKeys": [
+        "geo:DeviceIds"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "tracker"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDevicePositionHistory",
+      "ActionConditionKeys": [
+        "geo:DeviceIds"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "tracker"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetGeofence",
+      "ActionConditionKeys": [
+        "geo:GeofenceIds"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "geofence-collection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetMapGlyphs",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "map"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetMapSprites",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "map"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetMapStyleDescriptor",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "map"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetMapTile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "map"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetPlace",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "place-index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDevicePositions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "tracker"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListGeofenceCollections",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "geofence-collection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListGeofences",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "geofence-collection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListKeys",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "api-key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListMaps",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "map"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListPlaceIndexes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "place-index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListRouteCalculators",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "route-calculator"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "api-key"
+        },
+        {
+          "Name": "geofence-collection"
+        },
+        {
+          "Name": "job"
+        },
+        {
+          "Name": "map"
+        },
+        {
+          "Name": "place-index"
+        },
+        {
+          "Name": "route-calculator"
+        },
+        {
+          "Name": "tracker"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTrackerConsumers",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "tracker"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTrackers",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "tracker"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutGeofence",
+      "ActionConditionKeys": [
+        "geo:GeofenceIds"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "geofence-collection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SearchPlaceIndexForPosition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "place-index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SearchPlaceIndexForSuggestions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "place-index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SearchPlaceIndexForText",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "place-index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartJob",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "api-key"
+        },
+        {
+          "Name": "geofence-collection"
+        },
+        {
+          "Name": "job"
+        },
+        {
+          "Name": "map"
+        },
+        {
+          "Name": "place-index"
+        },
+        {
+          "Name": "route-calculator"
+        },
+        {
+          "Name": "tracker"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "api-key"
+        },
+        {
+          "Name": "geofence-collection"
+        },
+        {
+          "Name": "job"
+        },
+        {
+          "Name": "map"
+        },
+        {
+          "Name": "place-index"
+        },
+        {
+          "Name": "route-calculator"
+        },
+        {
+          "Name": "tracker"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateGeofenceCollection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "geofence-collection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateKey",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "api-key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateMap",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "map"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdatePlaceIndex",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "place-index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateRouteCalculator",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "route-calculator"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateTracker",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "tracker"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "VerifyDevicePosition",
+      "ActionConditionKeys": [
+        "geo:DeviceIds"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "tracker"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "geo:DeviceIds",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "geo:GeofenceIds",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AssociateTrackerConsumer",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateTrackerConsumer",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "associate_tracker_consumer",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchDeleteDevicePositionHistory",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchDeleteDevicePositionHistory",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "batch_delete_device_position_history",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchDeleteGeofence",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchDeleteGeofence",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "batch_delete_geofence",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchEvaluateGeofences",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchEvaluateGeofences",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "batch_evaluate_geofences",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetDevicePosition",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetDevicePosition",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "batch_get_device_position",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchPutGeofence",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchPutGeofence",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "batch_put_geofence",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchUpdateDevicePosition",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchUpdateDevicePosition",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "batch_update_device_position",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CalculateRoute",
+      "AuthorizedActions": [
+        {
+          "Name": "CalculateRoute",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "calculate_route",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CalculateRouteMatrix",
+      "AuthorizedActions": [
+        {
+          "Name": "CalculateRouteMatrix",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "calculate_route_matrix",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelJob",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelJob",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "cancel_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateGeofenceCollection",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateGeofenceCollection",
+          "Service": "geo"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "create_geofence_collection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateKey",
+      "AuthorizedActions": [
+        {
+          "Name": "Autocomplete",
+          "Service": "geo-places"
+        },
+        {
+          "Name": "CalculateIsolines",
+          "Service": "geo-routes"
+        },
+        {
+          "Name": "CalculateRoute",
+          "Service": "geo"
+        },
+        {
+          "Name": "CalculateRouteMatrix",
+          "Service": "geo"
+        },
+        {
+          "Name": "CalculateRouteMatrix",
+          "Service": "geo-routes"
+        },
+        {
+          "Name": "CalculateRoutes",
+          "Service": "geo-routes"
+        },
+        {
+          "Name": "CreateKey",
+          "Service": "geo"
+        },
+        {
+          "Name": "Geocode",
+          "Service": "geo-places"
+        },
+        {
+          "Name": "GetMapGlyphs",
+          "Service": "geo"
+        },
+        {
+          "Name": "GetMapSprites",
+          "Service": "geo"
+        },
+        {
+          "Name": "GetMapStyleDescriptor",
+          "Service": "geo"
+        },
+        {
+          "Name": "GetMapTile",
+          "Service": "geo"
+        },
+        {
+          "Name": "GetPlace",
+          "Service": "geo"
+        },
+        {
+          "Name": "GetPlace",
+          "Service": "geo-places"
+        },
+        {
+          "Name": "GetStaticMap",
+          "Service": "geo-maps"
+        },
+        {
+          "Name": "GetTile",
+          "Service": "geo-maps"
+        },
+        {
+          "Name": "OptimizeWaypoints",
+          "Service": "geo-routes"
+        },
+        {
+          "Name": "ReverseGeocode",
+          "Service": "geo-places"
+        },
+        {
+          "Name": "SearchNearby",
+          "Service": "geo-places"
+        },
+        {
+          "Name": "SearchPlaceIndexForPosition",
+          "Service": "geo"
+        },
+        {
+          "Name": "SearchPlaceIndexForSuggestions",
+          "Service": "geo"
+        },
+        {
+          "Name": "SearchPlaceIndexForText",
+          "Service": "geo"
+        },
+        {
+          "Name": "SearchText",
+          "Service": "geo-places"
+        },
+        {
+          "Name": "SnapToRoads",
+          "Service": "geo-routes"
+        },
+        {
+          "Name": "Suggest",
+          "Service": "geo-places"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "create_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateMap",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateMap",
+          "Service": "geo"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "create_map",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePlaceIndex",
+      "AuthorizedActions": [
+        {
+          "Name": "CreatePlaceIndex",
+          "Service": "geo"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "create_place_index",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRouteCalculator",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRouteCalculator",
+          "Service": "geo"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "create_route_calculator",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateTracker",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateTracker",
+          "Service": "geo"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "create_tracker",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteGeofenceCollection",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteGeofenceCollection",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "delete_geofence_collection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteKey",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteKey",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "delete_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteMap",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteMap",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "delete_map",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePlaceIndex",
+      "AuthorizedActions": [
+        {
+          "Name": "DeletePlaceIndex",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "delete_place_index",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRouteCalculator",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRouteCalculator",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "delete_route_calculator",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteTracker",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteTracker",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "delete_tracker",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeGeofenceCollection",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeGeofenceCollection",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "describe_geofence_collection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeKey",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeKey",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "describe_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeMap",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeMap",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "describe_map",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribePlaceIndex",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribePlaceIndex",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "describe_place_index",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeRouteCalculator",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeRouteCalculator",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "describe_route_calculator",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeTracker",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeTracker",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "describe_tracker",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateTrackerConsumer",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateTrackerConsumer",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "disassociate_tracker_consumer",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ForecastGeofenceEvents",
+      "AuthorizedActions": [
+        {
+          "Name": "ForecastGeofenceEvents",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "forecast_geofence_events",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDevicePosition",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDevicePosition",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "get_device_position",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDevicePositionHistory",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDevicePositionHistory",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "get_device_position_history",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetGeofence",
+      "AuthorizedActions": [
+        {
+          "Name": "GetGeofence",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "get_geofence",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetJob",
+      "AuthorizedActions": [
+        {
+          "Name": "GetJob",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "get_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMapGlyphs",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMapGlyphs",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "get_map_glyphs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMapSprites",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMapSprites",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "get_map_sprites",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMapStyleDescriptor",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMapStyleDescriptor",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "get_map_style_descriptor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMapTile",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMapTile",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "get_map_tile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPlace",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPlace",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "get_place",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDevicePositions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDevicePositions",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "list_device_positions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListGeofenceCollections",
+      "AuthorizedActions": [
+        {
+          "Name": "ListGeofenceCollections",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "list_geofence_collections",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListGeofences",
+      "AuthorizedActions": [
+        {
+          "Name": "ListGeofences",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "list_geofences",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListJobs",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "list_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListKeys",
+      "AuthorizedActions": [
+        {
+          "Name": "ListKeys",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "list_keys",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMaps",
+      "AuthorizedActions": [
+        {
+          "Name": "ListMaps",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "list_maps",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPlaceIndexes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPlaceIndexes",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "list_place_indexes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRouteCalculators",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRouteCalculators",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "list_route_calculators",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTrackerConsumers",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTrackerConsumers",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "list_tracker_consumers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTrackers",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTrackers",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "list_trackers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutGeofence",
+      "AuthorizedActions": [
+        {
+          "Name": "PutGeofence",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "put_geofence",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SearchPlaceIndexForPosition",
+      "AuthorizedActions": [
+        {
+          "Name": "SearchPlaceIndexForPosition",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "search_place_index_for_position",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SearchPlaceIndexForSuggestions",
+      "AuthorizedActions": [
+        {
+          "Name": "SearchPlaceIndexForSuggestions",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "search_place_index_for_suggestions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SearchPlaceIndexForText",
+      "AuthorizedActions": [
+        {
+          "Name": "SearchPlaceIndexForText",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "search_place_index_for_text",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartJob",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "geo.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartJob",
+          "Service": "geo"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "start_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateGeofenceCollection",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateGeofenceCollection",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "update_geofence_collection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateKey",
+      "AuthorizedActions": [
+        {
+          "Name": "Autocomplete",
+          "Service": "geo-places"
+        },
+        {
+          "Name": "CalculateIsolines",
+          "Service": "geo-routes"
+        },
+        {
+          "Name": "CalculateRoute",
+          "Service": "geo"
+        },
+        {
+          "Name": "CalculateRouteMatrix",
+          "Service": "geo"
+        },
+        {
+          "Name": "CalculateRouteMatrix",
+          "Service": "geo-routes"
+        },
+        {
+          "Name": "CalculateRoutes",
+          "Service": "geo-routes"
+        },
+        {
+          "Name": "Geocode",
+          "Service": "geo-places"
+        },
+        {
+          "Name": "GetMapGlyphs",
+          "Service": "geo"
+        },
+        {
+          "Name": "GetMapSprites",
+          "Service": "geo"
+        },
+        {
+          "Name": "GetMapStyleDescriptor",
+          "Service": "geo"
+        },
+        {
+          "Name": "GetMapTile",
+          "Service": "geo"
+        },
+        {
+          "Name": "GetPlace",
+          "Service": "geo"
+        },
+        {
+          "Name": "GetPlace",
+          "Service": "geo-places"
+        },
+        {
+          "Name": "GetStaticMap",
+          "Service": "geo-maps"
+        },
+        {
+          "Name": "GetTile",
+          "Service": "geo-maps"
+        },
+        {
+          "Name": "OptimizeWaypoints",
+          "Service": "geo-routes"
+        },
+        {
+          "Name": "ReverseGeocode",
+          "Service": "geo-places"
+        },
+        {
+          "Name": "SearchNearby",
+          "Service": "geo-places"
+        },
+        {
+          "Name": "SearchPlaceIndexForPosition",
+          "Service": "geo"
+        },
+        {
+          "Name": "SearchPlaceIndexForSuggestions",
+          "Service": "geo"
+        },
+        {
+          "Name": "SearchPlaceIndexForText",
+          "Service": "geo"
+        },
+        {
+          "Name": "SearchText",
+          "Service": "geo-places"
+        },
+        {
+          "Name": "SnapToRoads",
+          "Service": "geo-routes"
+        },
+        {
+          "Name": "Suggest",
+          "Service": "geo-places"
+        },
+        {
+          "Name": "UpdateKey",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "update_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateMap",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateMap",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "update_map",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdatePlaceIndex",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdatePlaceIndex",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "update_place_index",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRouteCalculator",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateRouteCalculator",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "update_route_calculator",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateTracker",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateTracker",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "update_tracker",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "VerifyDevicePosition",
+      "AuthorizedActions": [
+        {
+          "Name": "VerifyDevicePosition",
+          "Service": "geo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "location",
+          "Method": "verify_device_position",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "api-key",
+      "ARNFormats": [
+        "arn:${Partition}:geo:${Region}:${Account}:api-key/${KeyName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "geofence-collection",
+      "ARNFormats": [
+        "arn:${Partition}:geo:${Region}:${Account}:geofence-collection/${GeofenceCollectionName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "geo:GeofenceIds"
+      ]
+    },
+    {
+      "Name": "job",
+      "ARNFormats": [
+        "arn:${Partition}:geo:${Region}:${Account}:job/${JobId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "map",
+      "ARNFormats": [
+        "arn:${Partition}:geo:${Region}:${Account}:map/${MapName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "place-index",
+      "ARNFormats": [
+        "arn:${Partition}:geo:${Region}:${Account}:place-index/${IndexName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "route-calculator",
+      "ARNFormats": [
+        "arn:${Partition}:geo:${Region}:${Account}:route-calculator/${CalculatorName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "tracker",
+      "ARNFormats": [
+        "arn:${Partition}:geo:${Region}:${Account}:tracker/${TrackerName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "geo:DeviceIds"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

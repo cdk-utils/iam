@@ -1,0 +1,5390 @@
+{
+  "Name": "partnercentral",
+  "Actions": [
+    {
+      "Name": "AcceptChannelHandshake",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog",
+        "partnercentral:ChannelHandshakeType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ChannelHandshake"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AcceptConnectionInvitation",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ConnectionInvitation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AcceptEngagementInvitation",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "engagement-invitation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AmendBenefitApplication",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:Catalog",
+        "partnercentral:FulfillmentTypes",
+        "partnercentral:Programs"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "BenefitApplication"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AssignOpportunity",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Opportunity"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AssociateAwsTrainingCertificationEmailDomain",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Partner"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AssociateBenefitApplicationResource",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:Catalog",
+        "partnercentral:FulfillmentTypes",
+        "partnercentral:Programs"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "BenefitAllocation"
+        },
+        {
+          "Name": "BenefitApplication"
+        },
+        {
+          "Name": "Opportunity"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AssociateOpportunity",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog",
+        "partnercentral:RelatedEntityType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Opportunity"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CancelBenefitApplication",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:Catalog",
+        "partnercentral:FulfillmentTypes",
+        "partnercentral:Programs"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "BenefitApplication"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CancelChannelHandshake",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:Catalog",
+        "partnercentral:ChannelHandshakeType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ChannelHandshake"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CancelConnection",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Connection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CancelConnectionInvitation",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ConnectionInvitation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CancelProfileUpdateTask",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Partner"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateBenefitApplication",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "partnercentral:Catalog",
+        "partnercentral:FulfillmentTypes",
+        "partnercentral:Programs"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateBusinessPlan",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateChannelHandshake",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "partnercentral:Catalog",
+        "partnercentral:ChannelHandshakeType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProgramManagementAccount"
+        },
+        {
+          "Name": "Relationship"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateCollaborationChannelMembers",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateCollaborationChannelRequest",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateConnectionInvitation",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateEngagement",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Engagement"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateEngagementContext",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Engagement"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateEngagementInvitation",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "engagement-invitation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateMarketplaceRevenueShare",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateMarketplaceRevenueShareAllocation",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "MarketplaceRevenueShare"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateOpportunity",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Opportunity"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreatePartner",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateProgramManagementAccount",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateRelationship",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProgramManagementAccount"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateResourceSnapshot",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ResourceSnapshot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateResourceSnapshotJob",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resource-snapshot-job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateRevenueAttribution",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteProgramManagementAccount",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProgramManagementAccount"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteRelationship",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Relationship"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteResourceSnapshotJob",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resource-snapshot-job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateAwsTrainingCertificationEmailDomain",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Partner"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateBenefitApplicationResource",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:Catalog",
+        "partnercentral:FulfillmentTypes",
+        "partnercentral:Programs"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "BenefitAllocation"
+        },
+        {
+          "Name": "BenefitApplication"
+        },
+        {
+          "Name": "Opportunity"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateOpportunity",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog",
+        "partnercentral:RelatedEntityType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Opportunity"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "EnrollInPartnerPath",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAllianceLeadContact",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Partner"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAwsOpportunitySummary",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Opportunity"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetBenefit",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:Catalog",
+        "partnercentral:FulfillmentTypes",
+        "partnercentral:Programs"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Benefit"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetBenefitAllocation",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:Catalog",
+        "partnercentral:FulfillmentTypes"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "BenefitAllocation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetBenefitApplication",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:Catalog",
+        "partnercentral:FulfillmentTypes",
+        "partnercentral:Programs"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "BenefitApplication"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetBusinessPlan",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCollaborationChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetConnection",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Connection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetConnectionInvitation",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ConnectionInvitation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetConnectionPreferences",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetEngagement",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Engagement"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetEngagementInvitation",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "engagement-invitation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetMarketplaceRevenueShare",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "MarketplaceRevenueShare"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetMarketplaceRevenueShareAllocation",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "MarketplaceRevenueShare"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetOpportunity",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Opportunity"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetPartner",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Partner"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetPartnerDashboard",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Dashboard"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetPartnerProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetProfileUpdateTask",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Partner"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetProfileVisibility",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Partner"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetProgramManagementAccount",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetProspectingFromEngagementTask",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProspectingFromEngagementTask"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetQualificationsAssociationDetails",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Partner"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetQualificationsAssociationTask",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Partner"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetQualificationsDisassociationTask",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Partner"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetRelationship",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Relationship"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetResourceSnapshot",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ResourceSnapshot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetResourceSnapshotJob",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resource-snapshot-job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetRevenueAttribution",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RevenueAttribution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetRevenueAttributionAllocation",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RevenueAttribution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetRevenueAttributionAllocationsTask",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RevenueAttribution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSellingSystemSettings",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetVerification",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog",
+        "partnercentral:VerificationType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListBenefitAllocations",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog",
+        "partnercentral:FulfillmentTypes"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "BenefitAllocation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListBenefitApplications",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog",
+        "partnercentral:FulfillmentTypes",
+        "partnercentral:Programs"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "BenefitApplication"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListBenefits",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog",
+        "partnercentral:FulfillmentTypes",
+        "partnercentral:Programs"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Benefit"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListBusinessPlans",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListChannelHandshakes",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog",
+        "partnercentral:ChannelHandshakeType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ChannelHandshake"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListCollaborationChannels",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListConnectionInvitations",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListConnections",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEngagementByAcceptingInvitationTasks",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEngagementFromOpportunityTasks",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEngagementInvitations",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEngagementMembers",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Engagement"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEngagementResourceAssociations",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ResourceSnapshot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEngagements",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListMarketplaceRevenueShareAllocations",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "MarketplaceRevenueShare"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListMarketplaceRevenueShares",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListOpportunities",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListOpportunityFromEngagementTasks",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPartnerPaths",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPartners",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListProgramManagementAccounts",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProgramManagementAccount"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListProspectingFromEngagementTasks",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListRelationships",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Relationship"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListResourceSnapshotJobs",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListResourceSnapshots",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ResourceSnapshot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListRevenueAttributionAllocations",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RevenueAttribution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListRevenueAttributions",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListSolutions",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "partnercentral:Catalog",
+        "partnercentral:FulfillmentTypes",
+        "partnercentral:Programs"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutAllianceLeadContact",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Partner"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutBusinessPlan",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutProfileVisibility",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Partner"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutSellingSystemSettings",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RecallBenefitApplication",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:Catalog",
+        "partnercentral:FulfillmentTypes",
+        "partnercentral:Programs"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "BenefitApplication"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RejectChannelHandshake",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog",
+        "partnercentral:ChannelHandshakeType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ChannelHandshake"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RejectConnectionInvitation",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ConnectionInvitation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RejectEngagementInvitation",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "engagement-invitation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SearchPartnerProfiles",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SendEmailVerificationCode",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartEngagementByAcceptingInvitationTask",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "engagement-by-accepting-invitation-task"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartEngagementFromOpportunityTask",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "engagement-from-opportunity-task"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartOpportunityFromEngagementTask",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "OpportunityFromEngagementTask"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartProfileUpdateTask",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Partner"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartProspectingFromEngagementTask",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Engagement"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartQualificationsAssociationTask",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Partner"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartQualificationsDisassociationTask",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Partner"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartResourceSnapshotJob",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resource-snapshot-job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartRevenueAttributionAllocationsTask",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RevenueAttribution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartVerification",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog",
+        "partnercentral:VerificationType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StopResourceSnapshotJob",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resource-snapshot-job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SubmitBenefitApplication",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:Catalog",
+        "partnercentral:FulfillmentTypes",
+        "partnercentral:Programs"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "BenefitApplication"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SubmitOpportunity",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Opportunity"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "partnercentral:Catalog",
+        "partnercentral:FulfillmentTypes",
+        "partnercentral:Programs"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "BenefitApplication"
+        },
+        {
+          "Name": "ChannelHandshake"
+        },
+        {
+          "Name": "MarketplaceRevenueShare"
+        },
+        {
+          "Name": "Opportunity"
+        },
+        {
+          "Name": "Partner"
+        },
+        {
+          "Name": "ProgramManagementAccount"
+        },
+        {
+          "Name": "Relationship"
+        },
+        {
+          "Name": "RevenueAttribution"
+        },
+        {
+          "Name": "resource-snapshot-job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "partnercentral:Catalog",
+        "partnercentral:FulfillmentTypes",
+        "partnercentral:Programs"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "BenefitApplication"
+        },
+        {
+          "Name": "ChannelHandshake"
+        },
+        {
+          "Name": "MarketplaceRevenueShare"
+        },
+        {
+          "Name": "Opportunity"
+        },
+        {
+          "Name": "Partner"
+        },
+        {
+          "Name": "ProgramManagementAccount"
+        },
+        {
+          "Name": "Relationship"
+        },
+        {
+          "Name": "RevenueAttribution"
+        },
+        {
+          "Name": "resource-snapshot-job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateBenefitApplication",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:Catalog",
+        "partnercentral:FulfillmentTypes",
+        "partnercentral:Programs"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "BenefitApplication"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateConnectionPreferences",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateEngagementContext",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Engagement"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateMarketplaceRevenueShareAllocation",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "MarketplaceRevenueShare"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateOpportunity",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Opportunity"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateProgramManagementAccount",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProgramManagementAccount"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateRelationship",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Relationship"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateRevenueAttribution",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RevenueAttribution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UseSession",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "partnercentral:Catalog",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "partnercentral:ChannelHandshakeType",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "partnercentral:FulfillmentTypes",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "partnercentral:Programs",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "partnercentral:RelatedEntityType",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "partnercentral:VerificationType",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AcceptChannelHandshake",
+      "AuthorizedActions": [
+        {
+          "Name": "AcceptChannelHandshake",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-channel",
+          "Method": "accept_channel_handshake",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AcceptConnectionInvitation",
+      "AuthorizedActions": [
+        {
+          "Name": "AcceptConnectionInvitation",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-account",
+          "Method": "accept_connection_invitation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AcceptEngagementInvitation",
+      "AuthorizedActions": [
+        {
+          "Name": "AcceptEngagementInvitation",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "accept_engagement_invitation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AmendBenefitApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "AmendBenefitApplication",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-benefits",
+          "Method": "amend_benefit_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssignOpportunity",
+      "AuthorizedActions": [
+        {
+          "Name": "AssignOpportunity",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "assign_opportunity",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateAwsTrainingCertificationEmailDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateAwsTrainingCertificationEmailDomain",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-account",
+          "Method": "associate_aws_training_certification_email_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateBenefitApplicationResource",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateBenefitApplicationResource",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-benefits",
+          "Method": "associate_benefit_application_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateOpportunity",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateOpportunity",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "associate_opportunity",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelBenefitApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelBenefitApplication",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-benefits",
+          "Method": "cancel_benefit_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelChannelHandshake",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelChannelHandshake",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-channel",
+          "Method": "cancel_channel_handshake",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelConnection",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelConnection",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-account",
+          "Method": "cancel_connection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelConnectionInvitation",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelConnectionInvitation",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-account",
+          "Method": "cancel_connection_invitation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelProfileUpdateTask",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelProfileUpdateTask",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-account",
+          "Method": "cancel_profile_update_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateBenefitApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateBenefitApplication",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-benefits",
+          "Method": "create_benefit_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateChannelHandshake",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateChannelHandshake",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "GetProgramManagementAccount",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "GetRelationship",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-channel",
+          "Method": "create_channel_handshake",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateConnectionInvitation",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateConnectionInvitation",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-account",
+          "Method": "create_connection_invitation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateEngagement",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateEngagement",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "create_engagement",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateEngagementContext",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateEngagementContext",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "GetEngagement",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "create_engagement_context",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateEngagementInvitation",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateEngagementInvitation",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "GetEngagement",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "create_engagement_invitation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateMarketplaceRevenueShare",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateMarketplaceRevenueShare",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-revenue-measurement",
+          "Method": "create_marketplace_revenue_share",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateMarketplaceRevenueShareAllocation",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateMarketplaceRevenueShareAllocation",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-revenue-measurement",
+          "Method": "create_marketplace_revenue_share_allocation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateOpportunity",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateOpportunity",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "create_opportunity",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePartner",
+      "AuthorizedActions": [
+        {
+          "Name": "CreatePartner",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-account",
+          "Method": "create_partner",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateProgramManagementAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateProgramManagementAccount",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-channel",
+          "Method": "create_program_management_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRelationship",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRelationship",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "GetProgramManagementAccount",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-channel",
+          "Method": "create_relationship",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateResourceSnapshot",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateResourceSnapshot",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "GetAwsOpportunitySummary",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "GetOpportunity",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "create_resource_snapshot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateResourceSnapshotJob",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateResourceSnapshot",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "CreateResourceSnapshotJob",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "GetOpportunity",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "create_resource_snapshot_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRevenueAttribution",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRevenueAttribution",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-revenue-measurement",
+          "Method": "create_revenue_attribution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteProgramManagementAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteProgramManagementAccount",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-channel",
+          "Method": "delete_program_management_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRelationship",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRelationship",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-channel",
+          "Method": "delete_relationship",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteResourceSnapshotJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteResourceSnapshotJob",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "delete_resource_snapshot_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateAwsTrainingCertificationEmailDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateAwsTrainingCertificationEmailDomain",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-account",
+          "Method": "disassociate_aws_training_certification_email_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateBenefitApplicationResource",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateBenefitApplicationResource",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-benefits",
+          "Method": "disassociate_benefit_application_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateOpportunity",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateOpportunity",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "disassociate_opportunity",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAllianceLeadContact",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAllianceLeadContact",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-account",
+          "Method": "get_alliance_lead_contact",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAwsOpportunitySummary",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAwsOpportunitySummary",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "get_aws_opportunity_summary",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBenefit",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBenefit",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-benefits",
+          "Method": "get_benefit",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBenefitAllocation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBenefitAllocation",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-benefits",
+          "Method": "get_benefit_allocation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBenefitApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBenefitApplication",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "ListTagsForResource",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-benefits",
+          "Method": "get_benefit_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetConnection",
+      "AuthorizedActions": [
+        {
+          "Name": "GetConnection",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-account",
+          "Method": "get_connection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetConnectionInvitation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetConnectionInvitation",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-account",
+          "Method": "get_connection_invitation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetConnectionPreferences",
+      "AuthorizedActions": [
+        {
+          "Name": "GetConnectionPreferences",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-account",
+          "Method": "get_connection_preferences",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEngagement",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEngagement",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "get_engagement",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEngagementInvitation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEngagementInvitation",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "get_engagement_invitation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMarketplaceRevenueShare",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMarketplaceRevenueShare",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-revenue-measurement",
+          "Method": "get_marketplace_revenue_share",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMarketplaceRevenueShareAllocation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMarketplaceRevenueShareAllocation",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-revenue-measurement",
+          "Method": "get_marketplace_revenue_share_allocation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetOpportunity",
+      "AuthorizedActions": [
+        {
+          "Name": "GetOpportunity",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "get_opportunity",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPartner",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPartner",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-account",
+          "Method": "get_partner",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetProfileUpdateTask",
+      "AuthorizedActions": [
+        {
+          "Name": "GetProfileUpdateTask",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-account",
+          "Method": "get_profile_update_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetProfileVisibility",
+      "AuthorizedActions": [
+        {
+          "Name": "GetProfileVisibility",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-account",
+          "Method": "get_profile_visibility",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetProspectingFromEngagementTask",
+      "AuthorizedActions": [
+        {
+          "Name": "GetProspectingFromEngagementTask",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "get_prospecting_from_engagement_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetQualificationsAssociationDetails",
+      "AuthorizedActions": [
+        {
+          "Name": "GetQualificationsAssociationDetails",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-account",
+          "Method": "get_qualifications_association_details",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetQualificationsAssociationTask",
+      "AuthorizedActions": [
+        {
+          "Name": "GetQualificationsAssociationTask",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-account",
+          "Method": "get_qualifications_association_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetQualificationsDisassociationTask",
+      "AuthorizedActions": [
+        {
+          "Name": "GetQualificationsDisassociationTask",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-account",
+          "Method": "get_qualifications_disassociation_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRelationship",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRelationship",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-channel",
+          "Method": "get_relationship",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResourceSnapshot",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResourceSnapshot",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "get_resource_snapshot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResourceSnapshotJob",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResourceSnapshotJob",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "get_resource_snapshot_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRevenueAttribution",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRevenueAttribution",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-revenue-measurement",
+          "Method": "get_revenue_attribution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRevenueAttributionAllocation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRevenueAttributionAllocation",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-revenue-measurement",
+          "Method": "get_revenue_attribution_allocation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRevenueAttributionAllocationsTask",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRevenueAttributionAllocationsTask",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-revenue-measurement",
+          "Method": "get_revenue_attribution_allocations_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSellingSystemSettings",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSellingSystemSettings",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "get_selling_system_settings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetVerification",
+      "AuthorizedActions": [
+        {
+          "Name": "GetVerification",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-account",
+          "Method": "get_verification",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListBenefitAllocations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListBenefitAllocations",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-benefits",
+          "Method": "list_benefit_allocations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListBenefitApplications",
+      "AuthorizedActions": [
+        {
+          "Name": "ListBenefitApplications",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-benefits",
+          "Method": "list_benefit_applications",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListBenefits",
+      "AuthorizedActions": [
+        {
+          "Name": "ListBenefits",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-benefits",
+          "Method": "list_benefits",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListChannelHandshakes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListChannelHandshakes",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-channel",
+          "Method": "list_channel_handshakes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListConnectionInvitations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListConnectionInvitations",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-account",
+          "Method": "list_connection_invitations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListConnections",
+      "AuthorizedActions": [
+        {
+          "Name": "ListConnections",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-account",
+          "Method": "list_connections",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEngagementByAcceptingInvitationTasks",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEngagementByAcceptingInvitationTasks",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "list_engagement_by_accepting_invitation_tasks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEngagementFromOpportunityTasks",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEngagementFromOpportunityTasks",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "list_engagement_from_opportunity_tasks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEngagementInvitations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEngagementInvitations",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "list_engagement_invitations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEngagementMembers",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEngagementMembers",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "list_engagement_members",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEngagementResourceAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEngagementResourceAssociations",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "list_engagement_resource_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEngagements",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEngagements",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "list_engagements",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMarketplaceRevenueShareAllocations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListMarketplaceRevenueShareAllocations",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-revenue-measurement",
+          "Method": "list_marketplace_revenue_share_allocations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMarketplaceRevenueShares",
+      "AuthorizedActions": [
+        {
+          "Name": "ListMarketplaceRevenueShares",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-revenue-measurement",
+          "Method": "list_marketplace_revenue_shares",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListOpportunities",
+      "AuthorizedActions": [
+        {
+          "Name": "ListOpportunities",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "list_opportunities",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListOpportunityFromEngagementTasks",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEngagementFromOpportunityTasks",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "ListOpportunityFromEngagementTasks",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "list_opportunity_from_engagement_tasks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPartners",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPartners",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-account",
+          "Method": "list_partners",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProgramManagementAccounts",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProgramManagementAccounts",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-channel",
+          "Method": "list_program_management_accounts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProspectingFromEngagementTasks",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProspectingFromEngagementTasks",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "list_prospecting_from_engagement_tasks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRelationships",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRelationships",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-channel",
+          "Method": "list_relationships",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListResourceSnapshotJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListResourceSnapshotJobs",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "list_resource_snapshot_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListResourceSnapshots",
+      "AuthorizedActions": [
+        {
+          "Name": "ListResourceSnapshots",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "list_resource_snapshots",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRevenueAttributionAllocations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRevenueAttributionAllocations",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-revenue-measurement",
+          "Method": "list_revenue_attribution_allocations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRevenueAttributions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRevenueAttributions",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-revenue-measurement",
+          "Method": "list_revenue_attributions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSolutions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSolutions",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "list_solutions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-account",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "partnercentral-benefits",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "partnercentral-channel",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "partnercentral-revenue-measurement",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "partnercentral-selling",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutAllianceLeadContact",
+      "AuthorizedActions": [
+        {
+          "Name": "PutAllianceLeadContact",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-account",
+          "Method": "put_alliance_lead_contact",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutProfileVisibility",
+      "AuthorizedActions": [
+        {
+          "Name": "PutProfileVisibility",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-account",
+          "Method": "put_profile_visibility",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutSellingSystemSettings",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "resource-snapshot-job.partnercentral-selling.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "PutSellingSystemSettings",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "put_selling_system_settings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RecallBenefitApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "RecallBenefitApplication",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-benefits",
+          "Method": "recall_benefit_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RejectChannelHandshake",
+      "AuthorizedActions": [
+        {
+          "Name": "RejectChannelHandshake",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-channel",
+          "Method": "reject_channel_handshake",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RejectConnectionInvitation",
+      "AuthorizedActions": [
+        {
+          "Name": "RejectConnectionInvitation",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-account",
+          "Method": "reject_connection_invitation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RejectEngagementInvitation",
+      "AuthorizedActions": [
+        {
+          "Name": "RejectEngagementInvitation",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "reject_engagement_invitation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SendEmailVerificationCode",
+      "AuthorizedActions": [
+        {
+          "Name": "SendEmailVerificationCode",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-account",
+          "Method": "send_email_verification_code",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartEngagementByAcceptingInvitationTask",
+      "AuthorizedActions": [
+        {
+          "Name": "AcceptEngagementInvitation",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "CreateOpportunity",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "CreateResourceSnapshot",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "CreateResourceSnapshotJob",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "GetEngagementInvitation",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "GetOpportunity",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "StartEngagementByAcceptingInvitationTask",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "StartResourceSnapshotJob",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "SubmitOpportunity",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "start_engagement_by_accepting_invitation_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartEngagementFromOpportunityTask",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateEngagement",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "CreateResourceSnapshot",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "CreateResourceSnapshotJob",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "GetOpportunity",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "StartEngagementFromOpportunityTask",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "StartResourceSnapshotJob",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "SubmitOpportunity",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "start_engagement_from_opportunity_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartOpportunityFromEngagementTask",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateOpportunity",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "CreateResourceSnapshot",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "CreateResourceSnapshotJob",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "GetEngagement",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "GetOpportunity",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "StartOpportunityFromEngagementTask",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "StartResourceSnapshotJob",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "start_opportunity_from_engagement_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartProfileUpdateTask",
+      "AuthorizedActions": [
+        {
+          "Name": "StartProfileUpdateTask",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-account",
+          "Method": "start_profile_update_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartProspectingFromEngagementTask",
+      "AuthorizedActions": [
+        {
+          "Name": "StartProspectingFromEngagementTask",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "start_prospecting_from_engagement_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartQualificationsAssociationTask",
+      "AuthorizedActions": [
+        {
+          "Name": "StartQualificationsAssociationTask",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-account",
+          "Method": "start_qualifications_association_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartQualificationsDisassociationTask",
+      "AuthorizedActions": [
+        {
+          "Name": "StartQualificationsDisassociationTask",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-account",
+          "Method": "start_qualifications_disassociation_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartResourceSnapshotJob",
+      "AuthorizedActions": [
+        {
+          "Name": "StartResourceSnapshotJob",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "start_resource_snapshot_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartRevenueAttributionAllocationsTask",
+      "AuthorizedActions": [
+        {
+          "Name": "StartRevenueAttributionAllocationsTask",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-revenue-measurement",
+          "Method": "start_revenue_attribution_allocations_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartVerification",
+      "AuthorizedActions": [
+        {
+          "Name": "StartVerification",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-account",
+          "Method": "start_verification",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopResourceSnapshotJob",
+      "AuthorizedActions": [
+        {
+          "Name": "StopResourceSnapshotJob",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "stop_resource_snapshot_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SubmitBenefitApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "SubmitBenefitApplication",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-benefits",
+          "Method": "submit_benefit_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SubmitOpportunity",
+      "AuthorizedActions": [
+        {
+          "Name": "SubmitOpportunity",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "submit_opportunity",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-account",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "partnercentral-benefits",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "partnercentral-channel",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "partnercentral-revenue-measurement",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "partnercentral-selling",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-account",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "partnercentral-benefits",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "partnercentral-channel",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "partnercentral-revenue-measurement",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "partnercentral-selling",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateBenefitApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateBenefitApplication",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-benefits",
+          "Method": "update_benefit_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateConnectionPreferences",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateConnectionPreferences",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-account",
+          "Method": "update_connection_preferences",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateEngagementContext",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEngagement",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "UpdateEngagementContext",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "update_engagement_context",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateMarketplaceRevenueShareAllocation",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateMarketplaceRevenueShareAllocation",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-revenue-measurement",
+          "Method": "update_marketplace_revenue_share_allocation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateOpportunity",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateOpportunity",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "update_opportunity",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateProgramManagementAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateProgramManagementAccount",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-channel",
+          "Method": "update_program_management_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRelationship",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateRelationship",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-channel",
+          "Method": "update_relationship",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRevenueAttribution",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateRevenueAttribution",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-revenue-measurement",
+          "Method": "update_revenue_attribution",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "Benefit",
+      "ARNFormats": [
+        "arn:${Partition}:partnercentral:${Region}::catalog/${Catalog}/benefit/${Identifier}"
+      ]
+    },
+    {
+      "Name": "BenefitAllocation",
+      "ARNFormats": [
+        "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/benefit-allocation/${Identifier}"
+      ]
+    },
+    {
+      "Name": "BenefitApplication",
+      "ARNFormats": [
+        "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/benefit-application/${Identifier}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "ChannelHandshake",
+      "ARNFormats": [
+        "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/channel-handshake/${Identifier}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Connection",
+      "ARNFormats": [
+        "arn:${Partition}:partnercentral:${Region}::catalog/${Catalog}/connection/${Identifier}"
+      ]
+    },
+    {
+      "Name": "ConnectionInvitation",
+      "ARNFormats": [
+        "arn:${Partition}:partnercentral:${Region}::catalog/${Catalog}/connection-invitation/${Identifier}"
+      ]
+    },
+    {
+      "Name": "ConnectionPreferences",
+      "ARNFormats": [
+        "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/connection-preferences"
+      ]
+    },
+    {
+      "Name": "Dashboard",
+      "ARNFormats": [
+        "arn:${Partition}:partnercentral::${Account}:catalog/${Catalog}/ReportingData/${TableId}/Dashboard/${DashboardId}"
+      ]
+    },
+    {
+      "Name": "Engagement",
+      "ARNFormats": [
+        "arn:${Partition}:partnercentral:${Region}::catalog/${Catalog}/engagement/${Identifier}"
+      ]
+    },
+    {
+      "Name": "MarketplaceRevenueShare",
+      "ARNFormats": [
+        "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/marketplace-revenue-share/${MarketplaceProductId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Opportunity",
+      "ARNFormats": [
+        "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/opportunity/${Identifier}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "OpportunityFromEngagementTask",
+      "ARNFormats": [
+        "arn:${Partition}:partnercentral:${Region}::catalog/${Catalog}/opportunity-from-engagement-task/${TaskId}"
+      ]
+    },
+    {
+      "Name": "Partner",
+      "ARNFormats": [
+        "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/partner/${Identifier}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "ProgramManagementAccount",
+      "ARNFormats": [
+        "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/program-management-account/${Identifier}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "ProspectingFromEngagementTask",
+      "ARNFormats": [
+        "arn:${Partition}:partnercentral:${Region}::catalog/${Catalog}/prospecting-from-engagement-task/${TaskIdentifier}"
+      ]
+    },
+    {
+      "Name": "Relationship",
+      "ARNFormats": [
+        "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/program-management-account/${ProgramManagementAccountId}/relationship/${RelationshipId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "ResourceSnapshot",
+      "ARNFormats": [
+        "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/engagement/${EngagementIdentifier}/resource/${ResourceType}/${ResourceIdentifier}/template/${TemplateIdentifier}/resource-snapshot/${SnapshotRevision}"
+      ]
+    },
+    {
+      "Name": "RevenueAttribution",
+      "ARNFormats": [
+        "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/revenue-attribution/${RevenueAttributionId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Solution",
+      "ARNFormats": [
+        "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/solution/${Identifier}"
+      ]
+    },
+    {
+      "Name": "engagement-by-accepting-invitation-task",
+      "ARNFormats": [
+        "arn:${Partition}:partnercentral:${Region}::catalog/${Catalog}/engagement-by-accepting-invitation-task/${TaskId}"
+      ]
+    },
+    {
+      "Name": "engagement-from-opportunity-task",
+      "ARNFormats": [
+        "arn:${Partition}:partnercentral:${Region}::catalog/${Catalog}/engagement-from-opportunity-task/${TaskId}"
+      ]
+    },
+    {
+      "Name": "engagement-invitation",
+      "ARNFormats": [
+        "arn:${Partition}:partnercentral:${Region}::catalog/${Catalog}/engagement-invitation/${Identifier}"
+      ]
+    },
+    {
+      "Name": "resource-snapshot-job",
+      "ARNFormats": [
+        "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/resource-snapshot-job/${Identifier}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

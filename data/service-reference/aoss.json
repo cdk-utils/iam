@@ -1,0 +1,1667 @@
+{
+  "Name": "aoss",
+  "Actions": [
+    {
+      "Name": "APIAccessAll",
+      "ActionConditionKeys": [
+        "aoss:CollectionId",
+        "aoss:collection"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Collection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AddCollectionToCollectionGroup",
+      "ActionConditionKeys": [
+        "aoss:collection-group"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "CollectionGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchGetCollection",
+      "ActionConditionKeys": [
+        "aoss:collection"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchGetCollectionGroup",
+      "ActionConditionKeys": [
+        "aoss:collection-group"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchGetEffectiveLifecyclePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchGetLifecyclePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchGetVpcEndpoint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateAccessPolicy",
+      "ActionConditionKeys": [
+        "aoss:collection",
+        "aoss:index"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateCollection",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateCollectionGroup",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateIndex",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateLifecyclePolicy",
+      "ActionConditionKeys": [
+        "aoss:index"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateSecurityConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateSecurityPolicy",
+      "ActionConditionKeys": [
+        "aoss:collection"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateVpcEndpoint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DashboardsAccessAll",
+      "ActionConditionKeys": [
+        "aoss:CollectionId",
+        "aoss:collection"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Dashboards"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteAccessPolicy",
+      "ActionConditionKeys": [
+        "aoss:collection",
+        "aoss:index"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteCollection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Collection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteCollectionGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "CollectionGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteIndex",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteLifecyclePolicy",
+      "ActionConditionKeys": [
+        "aoss:index"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteSecurityConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteSecurityPolicy",
+      "ActionConditionKeys": [
+        "aoss:collection"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteVpcEndpoint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAccessPolicy",
+      "ActionConditionKeys": [
+        "aoss:collection",
+        "aoss:index"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAccountSettings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetIndex",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetPoliciesStats",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSecurityConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSecurityPolicy",
+      "ActionConditionKeys": [
+        "aoss:collection"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAccessPolicies",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListCollectionGroups",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListCollections",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListLifecyclePolicies",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListSecurityConfigs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListSecurityPolicies",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListVpcEndpoints",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAccessPolicy",
+      "ActionConditionKeys": [
+        "aoss:collection",
+        "aoss:index"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAccountSettings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateCollection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Collection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateCollectionGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "CollectionGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateIndex",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateLifecyclePolicy",
+      "ActionConditionKeys": [
+        "aoss:index"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateSecurityConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateSecurityPolicy",
+      "ActionConditionKeys": [
+        "aoss:collection"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateVpcEndpoint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aoss:CollectionId",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aoss:collection",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aoss:collection-group",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aoss:index",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "BatchGetCollection",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetCollection",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "batch_get_collection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetCollectionGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetCollectionGroup",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "batch_get_collection_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetEffectiveLifecyclePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetEffectiveLifecyclePolicy",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "batch_get_effective_lifecycle_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetLifecyclePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetLifecyclePolicy",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "batch_get_lifecycle_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetVpcEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetVpcEndpoint",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "batch_get_vpc_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAccessPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAccessPolicy",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "create_access_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateCollection",
+      "AuthorizedActions": [
+        {
+          "Name": "AddCollectionToCollectionGroup",
+          "Service": "aoss"
+        },
+        {
+          "Name": "CreateCollection",
+          "Service": "aoss"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "create_collection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateCollectionGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCollectionGroup",
+          "Service": "aoss"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "create_collection_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateIndex",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateIndex",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "create_index",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateLifecyclePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateLifecyclePolicy",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "create_lifecycle_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSecurityConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSecurityConfig",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "create_security_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSecurityPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSecurityPolicy",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "create_security_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateVpcEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateVpcEndpoint",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "create_vpc_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAccessPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAccessPolicy",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "delete_access_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCollection",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCollection",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "delete_collection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCollectionGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCollectionGroup",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "delete_collection_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteIndex",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteIndex",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "delete_index",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteLifecyclePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteLifecyclePolicy",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "delete_lifecycle_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSecurityConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSecurityConfig",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "delete_security_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSecurityPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSecurityPolicy",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "delete_security_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteVpcEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteVpcEndpoint",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "delete_vpc_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAccessPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAccessPolicy",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "get_access_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAccountSettings",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAccountSettings",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "get_account_settings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetIndex",
+      "AuthorizedActions": [
+        {
+          "Name": "GetIndex",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "get_index",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPoliciesStats",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPoliciesStats",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "get_policies_stats",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSecurityConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSecurityConfig",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "get_security_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSecurityPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSecurityPolicy",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "get_security_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAccessPolicies",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAccessPolicies",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "list_access_policies",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCollectionGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCollectionGroups",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "list_collection_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCollections",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCollections",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "list_collections",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListLifecyclePolicies",
+      "AuthorizedActions": [
+        {
+          "Name": "ListLifecyclePolicies",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "list_lifecycle_policies",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSecurityConfigs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSecurityConfigs",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "list_security_configs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSecurityPolicies",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSecurityPolicies",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "list_security_policies",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListVpcEndpoints",
+      "AuthorizedActions": [
+        {
+          "Name": "ListVpcEndpoints",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "list_vpc_endpoints",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAccessPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAccessPolicy",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "update_access_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAccountSettings",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAccountSettings",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "update_account_settings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCollection",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCollection",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "update_collection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCollectionGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCollectionGroup",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "update_collection_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateIndex",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateIndex",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "update_index",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateLifecyclePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateLifecyclePolicy",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "update_lifecycle_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSecurityConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSecurityConfig",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "update_security_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSecurityPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSecurityPolicy",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "update_security_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateVpcEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateVpcEndpoint",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "update_vpc_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "Collection",
+      "ARNFormats": [
+        "arn:${Partition}:aoss:${Region}:${Account}:collection/${CollectionId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "CollectionGroup",
+      "ARNFormats": [
+        "arn:${Partition}:aoss:${Region}:${Account}:collection-group/${CollectionGroupId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Dashboards",
+      "ARNFormats": [
+        "arn:${Partition}:aoss:${Region}:${Account}:dashboards/default"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

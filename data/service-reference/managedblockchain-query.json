@@ -1,0 +1,287 @@
+{
+  "Name": "managedblockchain-query",
+  "Actions": [
+    {
+      "Name": "BatchGetTokenBalance",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAssetContract",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetTokenBalance",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetTransaction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAssetContracts",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListFilteredTransactionEvents",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTokenBalances",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTransactionEvents",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTransactions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "BatchGetTokenBalance",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetTokenBalance",
+          "Service": "managedblockchain-query"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "managedblockchain-query",
+          "Method": "batch_get_token_balance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAssetContract",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAssetContract",
+          "Service": "managedblockchain-query"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "managedblockchain-query",
+          "Method": "get_asset_contract",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetTokenBalance",
+      "AuthorizedActions": [
+        {
+          "Name": "GetTokenBalance",
+          "Service": "managedblockchain-query"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "managedblockchain-query",
+          "Method": "get_token_balance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetTransaction",
+      "AuthorizedActions": [
+        {
+          "Name": "GetTransaction",
+          "Service": "managedblockchain-query"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "managedblockchain-query",
+          "Method": "get_transaction",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAssetContracts",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAssetContracts",
+          "Service": "managedblockchain-query"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "managedblockchain-query",
+          "Method": "list_asset_contracts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFilteredTransactionEvents",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFilteredTransactionEvents",
+          "Service": "managedblockchain-query"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "managedblockchain-query",
+          "Method": "list_filtered_transaction_events",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTokenBalances",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTokenBalances",
+          "Service": "managedblockchain-query"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "managedblockchain-query",
+          "Method": "list_token_balances",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTransactionEvents",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTransactionEvents",
+          "Service": "managedblockchain-query"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "managedblockchain-query",
+          "Method": "list_transaction_events",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTransactions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTransactions",
+          "Service": "managedblockchain-query"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "managedblockchain-query",
+          "Method": "list_transactions",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

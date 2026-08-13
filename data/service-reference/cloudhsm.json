@@ -1,0 +1,971 @@
+{
+  "Name": "cloudhsm",
+  "Actions": [
+    {
+      "Name": "CopyBackupToRegion",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "backup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateCluster",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "backup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateHsm",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteBackup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "backup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteCluster",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteHsm",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "backup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeBackups",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeClusters",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "backup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "InitializeCluster",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTags",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "backup"
+        },
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ModifyBackupAttributes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "backup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ModifyCluster",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "backup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RestoreBackup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "backup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "backup"
+        },
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "backup"
+        },
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AddTagsToResource",
+      "SDK": [
+        {
+          "Name": "cloudhsm",
+          "Method": "add_tags_to_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CopyBackupToRegion",
+      "AuthorizedActions": [
+        {
+          "Name": "CopyBackupToRegion",
+          "Service": "cloudhsm"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "cloudhsm"
+        },
+        {
+          "Name": "UntagResource",
+          "Service": "cloudhsm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudhsmv2",
+          "Method": "copy_backup_to_region",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "AuthorizeSecurityGroupEgress",
+          "Service": "ec2"
+        },
+        {
+          "Name": "AuthorizeSecurityGroupIngress",
+          "Service": "ec2"
+        },
+        {
+          "Name": "CreateCluster",
+          "Service": "cloudhsm"
+        },
+        {
+          "Name": "CreateSecurityGroup",
+          "Service": "ec2"
+        },
+        {
+          "Name": "DescribeSecurityGroups",
+          "Service": "ec2"
+        },
+        {
+          "Name": "DescribeSubnets",
+          "Service": "ec2"
+        },
+        {
+          "Name": "RevokeSecurityGroupEgress",
+          "Service": "ec2"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "cloudhsm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudhsmv2",
+          "Method": "create_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateHapg",
+      "SDK": [
+        {
+          "Name": "cloudhsm",
+          "Method": "create_hapg",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateHsm",
+      "AuthorizedActions": [
+        {
+          "Name": "AuthorizeSecurityGroupEgress",
+          "Service": "ec2"
+        },
+        {
+          "Name": "AuthorizeSecurityGroupIngress",
+          "Service": "ec2"
+        },
+        {
+          "Name": "CreateHsm",
+          "Service": "cloudhsm"
+        },
+        {
+          "Name": "CreateNetworkInterface",
+          "Service": "ec2"
+        },
+        {
+          "Name": "CreateSecurityGroup",
+          "Service": "ec2"
+        },
+        {
+          "Name": "DeleteNetworkInterface",
+          "Service": "ec2"
+        },
+        {
+          "Name": "DescribeNetworkInterfaces",
+          "Service": "ec2"
+        },
+        {
+          "Name": "DescribeSecurityGroups",
+          "Service": "ec2"
+        },
+        {
+          "Name": "DescribeSubnets",
+          "Service": "ec2"
+        },
+        {
+          "Name": "RevokeSecurityGroupEgress",
+          "Service": "ec2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudhsm",
+          "Method": "create_hsm",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "cloudhsmv2",
+          "Method": "create_hsm",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateLunaClient",
+      "SDK": [
+        {
+          "Name": "cloudhsm",
+          "Method": "create_luna_client",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteBackup",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteBackup",
+          "Service": "cloudhsm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudhsmv2",
+          "Method": "delete_backup",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCluster",
+          "Service": "cloudhsm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudhsmv2",
+          "Method": "delete_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteHapg",
+      "SDK": [
+        {
+          "Name": "cloudhsm",
+          "Method": "delete_hapg",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteHsm",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteHsm",
+          "Service": "cloudhsm"
+        },
+        {
+          "Name": "DeleteNetworkInterface",
+          "Service": "ec2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudhsm",
+          "Method": "delete_hsm",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "cloudhsmv2",
+          "Method": "delete_hsm",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteLunaClient",
+      "SDK": [
+        {
+          "Name": "cloudhsm",
+          "Method": "delete_luna_client",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteResourcePolicy",
+          "Service": "cloudhsm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudhsmv2",
+          "Method": "delete_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeBackups",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeBackups",
+          "Service": "cloudhsm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudhsmv2",
+          "Method": "describe_backups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeClusters",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeClusters",
+          "Service": "cloudhsm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudhsmv2",
+          "Method": "describe_clusters",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeHapg",
+      "SDK": [
+        {
+          "Name": "cloudhsm",
+          "Method": "describe_hapg",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeHsm",
+      "SDK": [
+        {
+          "Name": "cloudhsm",
+          "Method": "describe_hsm",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeLunaClient",
+      "SDK": [
+        {
+          "Name": "cloudhsm",
+          "Method": "describe_luna_client",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetConfig",
+      "SDK": [
+        {
+          "Name": "cloudhsm",
+          "Method": "get_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResourcePolicy",
+          "Service": "cloudhsm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudhsmv2",
+          "Method": "get_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "InitializeCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "InitializeCluster",
+          "Service": "cloudhsm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudhsmv2",
+          "Method": "initialize_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAvailableZones",
+      "SDK": [
+        {
+          "Name": "cloudhsm",
+          "Method": "list_available_zones",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListHapgs",
+      "SDK": [
+        {
+          "Name": "cloudhsm",
+          "Method": "list_hapgs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListHsms",
+      "SDK": [
+        {
+          "Name": "cloudhsm",
+          "Method": "list_hsms",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListLunaClients",
+      "SDK": [
+        {
+          "Name": "cloudhsm",
+          "Method": "list_luna_clients",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTags",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTags",
+          "Service": "cloudhsm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudhsmv2",
+          "Method": "list_tags",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "SDK": [
+        {
+          "Name": "cloudhsm",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ModifyBackupAttributes",
+      "AuthorizedActions": [
+        {
+          "Name": "ModifyBackupAttributes",
+          "Service": "cloudhsm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudhsmv2",
+          "Method": "modify_backup_attributes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ModifyCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "ModifyCluster",
+          "Service": "cloudhsm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudhsmv2",
+          "Method": "modify_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ModifyHapg",
+      "SDK": [
+        {
+          "Name": "cloudhsm",
+          "Method": "modify_hapg",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ModifyHsm",
+      "SDK": [
+        {
+          "Name": "cloudhsm",
+          "Method": "modify_hsm",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ModifyLunaClient",
+      "SDK": [
+        {
+          "Name": "cloudhsm",
+          "Method": "modify_luna_client",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PutResourcePolicy",
+          "Service": "cloudhsm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudhsmv2",
+          "Method": "put_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RemoveTagsFromResource",
+      "SDK": [
+        {
+          "Name": "cloudhsm",
+          "Method": "remove_tags_from_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RestoreBackup",
+      "AuthorizedActions": [
+        {
+          "Name": "RestoreBackup",
+          "Service": "cloudhsm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudhsmv2",
+          "Method": "restore_backup",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "cloudhsm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudhsmv2",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "cloudhsm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudhsmv2",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "backup",
+      "ARNFormats": [
+        "arn:${Partition}:cloudhsm:${Region}:${Account}:backup/${CloudHsmBackupInstanceName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "cluster",
+      "ARNFormats": [
+        "arn:${Partition}:cloudhsm:${Region}:${Account}:cluster/${CloudHsmClusterInstanceName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

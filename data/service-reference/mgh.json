@@ -1,0 +1,1334 @@
+{
+  "Name": "mgh",
+  "Actions": [
+    {
+      "Name": "AcceptConnection",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ConnectionResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AssociateAutomationUnitRole",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AutomationUnitResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AssociateCreatedArtifact",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "migrationTask"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AssociateDiscoveredResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "migrationTask"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AssociateSourceResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "migrationTask"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchAssociateIamRoleWithConnection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ConnectionResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchDisassociateIamRoleFromConnection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ConnectionResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateAutomationRun",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateAutomationUnit",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateHomeRegionControl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateProgressUpdateStream",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "progressUpdateStream"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteAutomationRun",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AutomationRunResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteAutomationUnit",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AutomationUnitResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteConnection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ConnectionResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteHomeRegionControl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteProgressUpdateStream",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "progressUpdateStream"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeApplicationState",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeAutomationRun",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AutomationRunResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeAutomationUnit",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AutomationUnitResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeHomeRegionControls",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeMigrationTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "migrationTask"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateAutomationUnitRole",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AutomationUnitResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateCreatedArtifact",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "migrationTask"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateDiscoveredResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "migrationTask"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateSourceResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "migrationTask"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetConnection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ConnectionResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetHomeRegion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ImportMigrationTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "migrationTask"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListApplicationStates",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAutomationRuns",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAutomationUnits",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListConnectionRoles",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ConnectionResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListConnections",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListCreatedArtifacts",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "migrationTask"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDiscoveredResources",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "migrationTask"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListMigrationTaskUpdates",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "migrationTask"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListMigrationTasks",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListProgressUpdateStreams",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListSourceResources",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "migrationTask"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "NotifyApplicationState",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "NotifyMigrationTaskState",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "migrationTask"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutResourceAttributes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "migrationTask"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RejectConnection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ConnectionResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "mgh:AutomationRunResourceRunID",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "mgh:AutomationUnitResourceAutomationUnitArn",
+      "Types": [
+        "ARN"
+      ]
+    },
+    {
+      "Name": "mgh:ConnectionResourceConnectionArn",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AssociateCreatedArtifact",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateCreatedArtifact",
+          "Service": "mgh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgh",
+          "Method": "associate_created_artifact",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateDiscoveredResource",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateDiscoveredResource",
+          "Service": "mgh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgh",
+          "Method": "associate_discovered_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateSourceResource",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateSourceResource",
+          "Service": "mgh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgh",
+          "Method": "associate_source_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateHomeRegionControl",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateHomeRegionControl",
+          "Service": "mgh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migrationhub-config",
+          "Method": "create_home_region_control",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateProgressUpdateStream",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateProgressUpdateStream",
+          "Service": "mgh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgh",
+          "Method": "create_progress_update_stream",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteHomeRegionControl",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteHomeRegionControl",
+          "Service": "mgh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migrationhub-config",
+          "Method": "delete_home_region_control",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteProgressUpdateStream",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteProgressUpdateStream",
+          "Service": "mgh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgh",
+          "Method": "delete_progress_update_stream",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeApplicationState",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeApplicationState",
+          "Service": "mgh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgh",
+          "Method": "describe_application_state",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeHomeRegionControls",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeHomeRegionControls",
+          "Service": "mgh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migrationhub-config",
+          "Method": "describe_home_region_controls",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeMigrationTask",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeMigrationTask",
+          "Service": "mgh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgh",
+          "Method": "describe_migration_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateCreatedArtifact",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateCreatedArtifact",
+          "Service": "mgh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgh",
+          "Method": "disassociate_created_artifact",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateDiscoveredResource",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateDiscoveredResource",
+          "Service": "mgh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgh",
+          "Method": "disassociate_discovered_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateSourceResource",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateSourceResource",
+          "Service": "mgh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgh",
+          "Method": "disassociate_source_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetHomeRegion",
+      "AuthorizedActions": [
+        {
+          "Name": "GetHomeRegion",
+          "Service": "mgh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migrationhub-config",
+          "Method": "get_home_region",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ImportMigrationTask",
+      "AuthorizedActions": [
+        {
+          "Name": "ImportMigrationTask",
+          "Service": "mgh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgh",
+          "Method": "import_migration_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListApplicationStates",
+      "AuthorizedActions": [
+        {
+          "Name": "ListApplicationStates",
+          "Service": "mgh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgh",
+          "Method": "list_application_states",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCreatedArtifacts",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCreatedArtifacts",
+          "Service": "mgh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgh",
+          "Method": "list_created_artifacts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDiscoveredResources",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDiscoveredResources",
+          "Service": "mgh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgh",
+          "Method": "list_discovered_resources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMigrationTaskUpdates",
+      "AuthorizedActions": [
+        {
+          "Name": "ListMigrationTaskUpdates",
+          "Service": "mgh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgh",
+          "Method": "list_migration_task_updates",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMigrationTasks",
+      "AuthorizedActions": [
+        {
+          "Name": "ListMigrationTasks",
+          "Service": "mgh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgh",
+          "Method": "list_migration_tasks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProgressUpdateStreams",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProgressUpdateStreams",
+          "Service": "mgh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgh",
+          "Method": "list_progress_update_streams",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSourceResources",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSourceResources",
+          "Service": "mgh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgh",
+          "Method": "list_source_resources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "NotifyApplicationState",
+      "AuthorizedActions": [
+        {
+          "Name": "NotifyApplicationState",
+          "Service": "mgh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgh",
+          "Method": "notify_application_state",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "NotifyMigrationTaskState",
+      "AuthorizedActions": [
+        {
+          "Name": "NotifyMigrationTaskState",
+          "Service": "mgh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgh",
+          "Method": "notify_migration_task_state",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutResourceAttributes",
+      "AuthorizedActions": [
+        {
+          "Name": "PutResourceAttributes",
+          "Service": "mgh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgh",
+          "Method": "put_resource_attributes",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "AutomationRunResource",
+      "ARNFormats": [
+        "arn:${Partition}:mgh:${Region}:${Account}:automation-run/${RunID}"
+      ],
+      "ConditionKeys": [
+        "mgh:AutomationRunResourceRunID"
+      ]
+    },
+    {
+      "Name": "AutomationUnitResource",
+      "ARNFormats": [
+        "arn:${Partition}:mgh:${Region}:${Account}:automation-unit/${AutomationUnitId}"
+      ],
+      "ConditionKeys": [
+        "mgh:AutomationUnitResourceAutomationUnitArn"
+      ]
+    },
+    {
+      "Name": "ConnectionResource",
+      "ARNFormats": [
+        "arn:${Partition}:mgh:${Region}:${Account}:${ConnectionArn}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "mgh:ConnectionResourceConnectionArn"
+      ]
+    },
+    {
+      "Name": "migrationTask",
+      "ARNFormats": [
+        "arn:${Partition}:mgh:${Region}:${Account}:progressUpdateStream/${Stream}/migrationTask/${Task}"
+      ]
+    },
+    {
+      "Name": "progressUpdateStream",
+      "ARNFormats": [
+        "arn:${Partition}:mgh:${Region}:${Account}:progressUpdateStream/${Stream}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

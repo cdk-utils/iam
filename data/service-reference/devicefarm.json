@@ -1,0 +1,3012 @@
+{
+  "Name": "devicefarm",
+  "Actions": [
+    {
+      "Name": "CreateDevicePool",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "project"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateInstanceProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateNetworkProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "project"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateProject",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateRemoteAccessSession",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "device"
+        },
+        {
+          "Name": "deviceinstance"
+        },
+        {
+          "Name": "project"
+        },
+        {
+          "Name": "upload"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateTestGridProject",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateTestGridUrl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "testgrid-project"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateUpload",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "project"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateVPCEConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteDevicePool",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "devicepool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteInstanceProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instanceprofile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteNetworkProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "networkprofile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteProject",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "project"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteRemoteAccessSession",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "session"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteRun",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "run"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteTestGridProject",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "testgrid-project"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteUpload",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "upload"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteVPCEConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vpceconfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetAccountSettings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDevice",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "device"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDeviceInstance",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "deviceinstance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDevicePool",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "devicepool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDevicePoolCompatibility",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "devicepool"
+        },
+        {
+          "Name": "upload"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetInstanceProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instanceprofile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetNetworkProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "networkprofile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetOfferingStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetProject",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "project"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetRemoteAccessSession",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "session"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetRun",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "run"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSuite",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "suite"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetTest",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "test"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetTestGridProject",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "testgrid-project"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetTestGridSession",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "testgrid-project"
+        },
+        {
+          "Name": "testgrid-session"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetUpload",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "upload"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetVPCEConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vpceconfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "InstallToRemoteAccessSession",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "session"
+        },
+        {
+          "Name": "upload"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListArtifacts",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "job"
+        },
+        {
+          "Name": "run"
+        },
+        {
+          "Name": "suite"
+        },
+        {
+          "Name": "test"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDeviceInstances",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDevicePools",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "project"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDevices",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListInstanceProfiles",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "run"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListNetworkProfiles",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "project"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListOfferingPromotions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListOfferingTransactions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListOfferings",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListProjects",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListRemoteAccessSessions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "project"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListRuns",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "project"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListSamples",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListSuites",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "device"
+        },
+        {
+          "Name": "deviceinstance"
+        },
+        {
+          "Name": "devicepool"
+        },
+        {
+          "Name": "instanceprofile"
+        },
+        {
+          "Name": "networkprofile"
+        },
+        {
+          "Name": "project"
+        },
+        {
+          "Name": "run"
+        },
+        {
+          "Name": "session"
+        },
+        {
+          "Name": "testgrid-project"
+        },
+        {
+          "Name": "testgrid-session"
+        },
+        {
+          "Name": "vpceconfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTestGridProjects",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTestGridSessionActions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "testgrid-session"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTestGridSessionArtifacts",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "testgrid-session"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTestGridSessions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "testgrid-project"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTests",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "suite"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListUniqueProblems",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "run"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListUploads",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "project"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListVPCEConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PurchaseOffering",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RenewOffering",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ScheduleRun",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "devicepool"
+        },
+        {
+          "Name": "project"
+        },
+        {
+          "Name": "upload"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopRemoteAccessSession",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "session"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopRun",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "run"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "device"
+        },
+        {
+          "Name": "deviceinstance"
+        },
+        {
+          "Name": "devicepool"
+        },
+        {
+          "Name": "instanceprofile"
+        },
+        {
+          "Name": "networkprofile"
+        },
+        {
+          "Name": "project"
+        },
+        {
+          "Name": "run"
+        },
+        {
+          "Name": "session"
+        },
+        {
+          "Name": "testgrid-project"
+        },
+        {
+          "Name": "testgrid-session"
+        },
+        {
+          "Name": "vpceconfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "device"
+        },
+        {
+          "Name": "deviceinstance"
+        },
+        {
+          "Name": "devicepool"
+        },
+        {
+          "Name": "instanceprofile"
+        },
+        {
+          "Name": "networkprofile"
+        },
+        {
+          "Name": "project"
+        },
+        {
+          "Name": "run"
+        },
+        {
+          "Name": "session"
+        },
+        {
+          "Name": "testgrid-project"
+        },
+        {
+          "Name": "testgrid-session"
+        },
+        {
+          "Name": "vpceconfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateDeviceInstance",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "deviceinstance"
+        },
+        {
+          "Name": "instanceprofile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateDevicePool",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "devicepool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateInstanceProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instanceprofile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateNetworkProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "networkprofile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateProject",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "project"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateTestGridProject",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "testgrid-project"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateUpload",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "upload"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateVPCEConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vpceconfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateDevicePool",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDevicePool",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "create_device_pool",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateInstanceProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateInstanceProfile",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "create_instance_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateNetworkProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateNetworkProfile",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "create_network_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateProject",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateProject",
+          "Service": "devicefarm"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "devicefarm.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "create_project",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRemoteAccessSession",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRemoteAccessSession",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "create_remote_access_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateTestGridProject",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateTestGridProject",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "create_test_grid_project",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateTestGridUrl",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateTestGridUrl",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "create_test_grid_url",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateUpload",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateUpload",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "create_upload",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateVPCEConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateVPCEConfiguration",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "create_vpce_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDevicePool",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDevicePool",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "delete_device_pool",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteInstanceProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteInstanceProfile",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "delete_instance_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteNetworkProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteNetworkProfile",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "delete_network_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteProject",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteProject",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "delete_project",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRemoteAccessSession",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRemoteAccessSession",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "delete_remote_access_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRun",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRun",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "delete_run",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteTestGridProject",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteTestGridProject",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "delete_test_grid_project",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteUpload",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteUpload",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "delete_upload",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteVPCEConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteVPCEConfiguration",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "delete_vpce_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAccountSettings",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAccountSettings",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "get_account_settings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDevice",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDevice",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "get_device",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDeviceInstance",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDeviceInstance",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "get_device_instance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDevicePool",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDevicePool",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "get_device_pool",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDevicePoolCompatibility",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDevicePoolCompatibility",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "get_device_pool_compatibility",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetInstanceProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "GetInstanceProfile",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "get_instance_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetJob",
+      "AuthorizedActions": [
+        {
+          "Name": "GetJob",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "get_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetNetworkProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "GetNetworkProfile",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "get_network_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetOfferingStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "GetOfferingStatus",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "get_offering_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetProject",
+      "AuthorizedActions": [
+        {
+          "Name": "GetProject",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "get_project",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRemoteAccessSession",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRemoteAccessSession",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "get_remote_access_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRun",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRun",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "get_run",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSuite",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSuite",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "get_suite",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetTest",
+      "AuthorizedActions": [
+        {
+          "Name": "GetTest",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "get_test",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetTestGridProject",
+      "AuthorizedActions": [
+        {
+          "Name": "GetTestGridProject",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "get_test_grid_project",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetTestGridSession",
+      "AuthorizedActions": [
+        {
+          "Name": "GetTestGridSession",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "get_test_grid_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetUpload",
+      "AuthorizedActions": [
+        {
+          "Name": "GetUpload",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "get_upload",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetVPCEConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetVPCEConfiguration",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "get_vpce_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "InstallToRemoteAccessSession",
+      "AuthorizedActions": [
+        {
+          "Name": "InstallToRemoteAccessSession",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "install_to_remote_access_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListArtifacts",
+      "AuthorizedActions": [
+        {
+          "Name": "ListArtifacts",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "list_artifacts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDeviceInstances",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDeviceInstances",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "list_device_instances",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDevicePools",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDevicePools",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "list_device_pools",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDevices",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDevices",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "list_devices",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListInstanceProfiles",
+      "AuthorizedActions": [
+        {
+          "Name": "ListInstanceProfiles",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "list_instance_profiles",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListJobs",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "list_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListNetworkProfiles",
+      "AuthorizedActions": [
+        {
+          "Name": "ListNetworkProfiles",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "list_network_profiles",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListOfferingPromotions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListOfferingPromotions",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "list_offering_promotions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListOfferingTransactions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListOfferingTransactions",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "list_offering_transactions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListOfferings",
+      "AuthorizedActions": [
+        {
+          "Name": "ListOfferings",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "list_offerings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProjects",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProjects",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "list_projects",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRemoteAccessSessions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRemoteAccessSessions",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "list_remote_access_sessions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRuns",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRuns",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "list_runs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSamples",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSamples",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "list_samples",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSuites",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSuites",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "list_suites",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTestGridProjects",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTestGridProjects",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "list_test_grid_projects",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTestGridSessionActions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTestGridSessionActions",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "list_test_grid_session_actions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTestGridSessionArtifacts",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTestGridSessionArtifacts",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "list_test_grid_session_artifacts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTestGridSessions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTestGridSessions",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "list_test_grid_sessions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTests",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTests",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "list_tests",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListUniqueProblems",
+      "AuthorizedActions": [
+        {
+          "Name": "ListUniqueProblems",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "list_unique_problems",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListUploads",
+      "AuthorizedActions": [
+        {
+          "Name": "ListUploads",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "list_uploads",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListVPCEConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListVPCEConfigurations",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "list_vpce_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PurchaseOffering",
+      "AuthorizedActions": [
+        {
+          "Name": "PurchaseOffering",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "purchase_offering",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RenewOffering",
+      "AuthorizedActions": [
+        {
+          "Name": "RenewOffering",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "renew_offering",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ScheduleRun",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "devicefarm.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "ScheduleRun",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "schedule_run",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopJob",
+      "AuthorizedActions": [
+        {
+          "Name": "StopJob",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "stop_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopRemoteAccessSession",
+      "AuthorizedActions": [
+        {
+          "Name": "StopRemoteAccessSession",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "stop_remote_access_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopRun",
+      "AuthorizedActions": [
+        {
+          "Name": "StopRun",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "stop_run",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDeviceInstance",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDeviceInstance",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "update_device_instance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDevicePool",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDevicePool",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "update_device_pool",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateInstanceProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateInstanceProfile",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "update_instance_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateNetworkProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateNetworkProfile",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "update_network_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateProject",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "devicefarm.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateProject",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "update_project",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateTestGridProject",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateTestGridProject",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "update_test_grid_project",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateUpload",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateUpload",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "update_upload",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateVPCEConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateVPCEConfiguration",
+          "Service": "devicefarm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devicefarm",
+          "Method": "update_vpce_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "artifact",
+      "ARNFormats": [
+        "arn:${Partition}:devicefarm:${Region}:${Account}:artifact:${ResourceId}"
+      ]
+    },
+    {
+      "Name": "device",
+      "ARNFormats": [
+        "arn:${Partition}:devicefarm:${Region}::device:${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "deviceinstance",
+      "ARNFormats": [
+        "arn:${Partition}:devicefarm:${Region}::deviceinstance:${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "devicepool",
+      "ARNFormats": [
+        "arn:${Partition}:devicefarm:${Region}:${Account}:devicepool:${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "instanceprofile",
+      "ARNFormats": [
+        "arn:${Partition}:devicefarm:${Region}:${Account}:instanceprofile:${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "job",
+      "ARNFormats": [
+        "arn:${Partition}:devicefarm:${Region}:${Account}:job:${ResourceId}"
+      ]
+    },
+    {
+      "Name": "networkprofile",
+      "ARNFormats": [
+        "arn:${Partition}:devicefarm:${Region}:${Account}:networkprofile:${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "project",
+      "ARNFormats": [
+        "arn:${Partition}:devicefarm:${Region}:${Account}:project:${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "run",
+      "ARNFormats": [
+        "arn:${Partition}:devicefarm:${Region}:${Account}:run:${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "sample",
+      "ARNFormats": [
+        "arn:${Partition}:devicefarm:${Region}:${Account}:sample:${ResourceId}"
+      ]
+    },
+    {
+      "Name": "session",
+      "ARNFormats": [
+        "arn:${Partition}:devicefarm:${Region}:${Account}:session:${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "suite",
+      "ARNFormats": [
+        "arn:${Partition}:devicefarm:${Region}:${Account}:suite:${ResourceId}"
+      ]
+    },
+    {
+      "Name": "test",
+      "ARNFormats": [
+        "arn:${Partition}:devicefarm:${Region}:${Account}:test:${ResourceId}"
+      ]
+    },
+    {
+      "Name": "testgrid-project",
+      "ARNFormats": [
+        "arn:${Partition}:devicefarm:${Region}:${Account}:testgrid-project:${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "testgrid-session",
+      "ARNFormats": [
+        "arn:${Partition}:devicefarm:${Region}:${Account}:testgrid-session:${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "upload",
+      "ARNFormats": [
+        "arn:${Partition}:devicefarm:${Region}:${Account}:upload:${ResourceId}"
+      ]
+    },
+    {
+      "Name": "vpceconfiguration",
+      "ARNFormats": [
+        "arn:${Partition}:devicefarm:${Region}:${Account}:vpceconfiguration:${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

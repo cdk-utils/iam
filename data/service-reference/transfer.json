@@ -1,0 +1,2909 @@
+{
+  "Name": "transfer",
+  "Actions": [
+    {
+      "Name": "CreateAccess",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "server"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateAgreement",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "server"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateConnector",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "transfer:RequestConnectorProtocol",
+        "transfer:RequestSecurityPolicyName"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateProfile",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateServer",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "transfer:RequestSecurityPolicyName",
+        "transfer:RequestServerDomain",
+        "transfer:RequestServerEndpointType",
+        "transfer:RequestServerProtocols"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateUser",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "server"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateWebApp",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateWorkflow",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteAccess",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "server"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteAgreement",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "agreement"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteCertificate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "certificate"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteConnector",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connector"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteHostKey",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "host-key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteServer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "server"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteSshPublicKey",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "user"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteUser",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "user"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteWebApp",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "webapp"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteWebAppCustomization",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "webapp"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteWorkflow",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workflow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeAccess",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "server"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeAgreement",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "agreement"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeCertificate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "certificate"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeConnector",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connector"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeExecution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workflow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeHostKey",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "host-key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeSecurityPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeServer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "server"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeUser",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "user"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeWebApp",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "webapp"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeWebAppCustomization",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "webapp"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeWorkflow",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workflow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ImportCertificate",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ImportHostKey",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "server"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ImportSshPublicKey",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "user"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAccesses",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "server"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAgreements",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "server"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListCertificates",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListConnectors",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListExecutions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workflow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListFileTransferResults",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connector"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListHostKeys",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "server"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListProfiles",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListSecurityPolicies",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListServers",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "agreement"
+        },
+        {
+          "Name": "certificate"
+        },
+        {
+          "Name": "connector"
+        },
+        {
+          "Name": "host-key"
+        },
+        {
+          "Name": "profile"
+        },
+        {
+          "Name": "server"
+        },
+        {
+          "Name": "user"
+        },
+        {
+          "Name": "workflow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListUsers",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "server"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListWebApps",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListWorkflows",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SendWorkflowStepState",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workflow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartDirectoryListing",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connector"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartFileTransfer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connector"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartRemoteDelete",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connector"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartRemoteMove",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connector"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartServer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "server"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopServer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "server"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "agreement"
+        },
+        {
+          "Name": "certificate"
+        },
+        {
+          "Name": "connector"
+        },
+        {
+          "Name": "host-key"
+        },
+        {
+          "Name": "profile"
+        },
+        {
+          "Name": "server"
+        },
+        {
+          "Name": "user"
+        },
+        {
+          "Name": "webapp"
+        },
+        {
+          "Name": "workflow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TestConnection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connector"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TestIdentityProvider",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "user"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "agreement"
+        },
+        {
+          "Name": "certificate"
+        },
+        {
+          "Name": "connector"
+        },
+        {
+          "Name": "host-key"
+        },
+        {
+          "Name": "profile"
+        },
+        {
+          "Name": "server"
+        },
+        {
+          "Name": "user"
+        },
+        {
+          "Name": "webapp"
+        },
+        {
+          "Name": "workflow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAccess",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateAgreement",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "agreement"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateCertificate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "certificate"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateConnector",
+      "ActionConditionKeys": [
+        "transfer:RequestSecurityPolicyName"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connector"
+        },
+        {
+          "Name": "profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateHostKey",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "host-key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateServer",
+      "ActionConditionKeys": [
+        "transfer:RequestSecurityPolicyName",
+        "transfer:RequestServerEndpointType",
+        "transfer:RequestServerProtocols"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "server"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateUser",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "user"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateWebApp",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "webapp"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateWebAppCustomization",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "webapp"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "transfer:RequestConnectorProtocol",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "transfer:RequestSecurityPolicyName",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "transfer:RequestServerDomain",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "transfer:RequestServerEndpointType",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "transfer:RequestServerProtocols",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateAccess",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAccess",
+          "Service": "transfer"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "transfer.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "create_access",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAgreement",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAgreement",
+          "Service": "transfer"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "transfer.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "create_agreement",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateConnector",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateConnector",
+          "Service": "transfer"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "transfer.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "create_connector",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateProfile",
+          "Service": "transfer"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "create_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateServer",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateServer",
+          "Service": "transfer"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "transfer.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "create_server",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateUser",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateUser",
+          "Service": "transfer"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "transfer.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "create_user",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateWebApp",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateWebApp",
+          "Service": "transfer"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "transfer.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "create_web_app",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateWorkflow",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateWorkflow",
+          "Service": "transfer"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "create_workflow",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAccess",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAccess",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "delete_access",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAgreement",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAgreement",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "delete_agreement",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCertificate",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCertificate",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "delete_certificate",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteConnector",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteConnector",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "delete_connector",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteHostKey",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteHostKey",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "delete_host_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteProfile",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "delete_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteServer",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteServer",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "delete_server",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSshPublicKey",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSshPublicKey",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "delete_ssh_public_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteUser",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteUser",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "delete_user",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteWebApp",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteWebApp",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "delete_web_app",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteWebAppCustomization",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteWebAppCustomization",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "delete_web_app_customization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteWorkflow",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteWorkflow",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "delete_workflow",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAccess",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAccess",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "describe_access",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAgreement",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAgreement",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "describe_agreement",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeCertificate",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeCertificate",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "describe_certificate",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeConnector",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeConnector",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "describe_connector",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeExecution",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeExecution",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "describe_execution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeHostKey",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeHostKey",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "describe_host_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeProfile",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "describe_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSecurityPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSecurityPolicy",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "describe_security_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeServer",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeServer",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "describe_server",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeUser",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeUser",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "describe_user",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeWebApp",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeWebApp",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "describe_web_app",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeWebAppCustomization",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeWebAppCustomization",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "describe_web_app_customization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeWorkflow",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeWorkflow",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "describe_workflow",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ImportCertificate",
+      "AuthorizedActions": [
+        {
+          "Name": "ImportCertificate",
+          "Service": "transfer"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "import_certificate",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ImportHostKey",
+      "AuthorizedActions": [
+        {
+          "Name": "ImportHostKey",
+          "Service": "transfer"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "import_host_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ImportSshPublicKey",
+      "AuthorizedActions": [
+        {
+          "Name": "ImportSshPublicKey",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "import_ssh_public_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAccesses",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAccesses",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "list_accesses",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAgreements",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAgreements",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "list_agreements",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCertificates",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCertificates",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "list_certificates",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListConnectors",
+      "AuthorizedActions": [
+        {
+          "Name": "ListConnectors",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "list_connectors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListExecutions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListExecutions",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "list_executions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFileTransferResults",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFileTransferResults",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "list_file_transfer_results",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListHostKeys",
+      "AuthorizedActions": [
+        {
+          "Name": "ListHostKeys",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "list_host_keys",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProfiles",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProfiles",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "list_profiles",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSecurityPolicies",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSecurityPolicies",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "list_security_policies",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListServers",
+      "AuthorizedActions": [
+        {
+          "Name": "ListServers",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "list_servers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListUsers",
+      "AuthorizedActions": [
+        {
+          "Name": "ListUsers",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "list_users",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListWebApps",
+      "AuthorizedActions": [
+        {
+          "Name": "ListWebApps",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "list_web_apps",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListWorkflows",
+      "AuthorizedActions": [
+        {
+          "Name": "ListWorkflows",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "list_workflows",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SendWorkflowStepState",
+      "AuthorizedActions": [
+        {
+          "Name": "SendWorkflowStepState",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "send_workflow_step_state",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartDirectoryListing",
+      "AuthorizedActions": [
+        {
+          "Name": "StartDirectoryListing",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "start_directory_listing",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartFileTransfer",
+      "AuthorizedActions": [
+        {
+          "Name": "StartFileTransfer",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "start_file_transfer",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartRemoteDelete",
+      "AuthorizedActions": [
+        {
+          "Name": "StartRemoteDelete",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "start_remote_delete",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartRemoteMove",
+      "AuthorizedActions": [
+        {
+          "Name": "StartRemoteMove",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "start_remote_move",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartServer",
+      "AuthorizedActions": [
+        {
+          "Name": "StartServer",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "start_server",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopServer",
+      "AuthorizedActions": [
+        {
+          "Name": "StopServer",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "stop_server",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TestConnection",
+      "AuthorizedActions": [
+        {
+          "Name": "TestConnection",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "test_connection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TestIdentityProvider",
+      "AuthorizedActions": [
+        {
+          "Name": "TestIdentityProvider",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "test_identity_provider",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAccess",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "transfer.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateAccess",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "update_access",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAgreement",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "transfer.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateAgreement",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "update_agreement",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCertificate",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCertificate",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "update_certificate",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateConnector",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "transfer.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateConnector",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "update_connector",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateHostKey",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateHostKey",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "update_host_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateProfile",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "update_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateServer",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "transfer.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateServer",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "update_server",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateUser",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "transfer.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateUser",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "update_user",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateWebApp",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "transfer.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateWebApp",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "update_web_app",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateWebAppCustomization",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateWebAppCustomization",
+          "Service": "transfer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transfer",
+          "Method": "update_web_app_customization",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "agreement",
+      "ARNFormats": [
+        "arn:${Partition}:transfer:${Region}:${Account}:agreement/${ServerId}/${AgreementId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "certificate",
+      "ARNFormats": [
+        "arn:${Partition}:transfer:${Region}:${Account}:certificate/${CertificateId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "connector",
+      "ARNFormats": [
+        "arn:${Partition}:transfer:${Region}:${Account}:connector/${ConnectorId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "host-key",
+      "ARNFormats": [
+        "arn:${Partition}:transfer:${Region}:${Account}:host-key/${ServerId}/${HostKeyId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "profile",
+      "ARNFormats": [
+        "arn:${Partition}:transfer:${Region}:${Account}:profile/${ProfileId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "server",
+      "ARNFormats": [
+        "arn:${Partition}:transfer:${Region}:${Account}:server/${ServerId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "user",
+      "ARNFormats": [
+        "arn:${Partition}:transfer:${Region}:${Account}:user/${ServerId}/${UserName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "webapp",
+      "ARNFormats": [
+        "arn:${Partition}:transfer:${Region}:${Account}:webapp/${WebAppId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "workflow",
+      "ARNFormats": [
+        "arn:${Partition}:transfer:${Region}:${Account}:workflow/${WorkflowId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

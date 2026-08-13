@@ -1,0 +1,978 @@
+{
+  "Name": "emr-serverless",
+  "Actions": [
+    {
+      "Name": "AccessInteractiveEndpoints",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AccessLivyEndpoints",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AccessSystemProfileLogs",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "jobRun"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CancelJobRun",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "jobRun"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateApplication",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDashboardForJobRun",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "jobRun"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetJobRun",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "jobRun"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResourceDashboard",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "session"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSession",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "session"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSessionEndpoint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "session"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListApplications",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListJobRunAttempts",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "jobRun"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListJobRuns",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListSessions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "jobRun"
+        },
+        {
+          "Name": "session"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartJobRun",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartSession",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StopApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "jobRun"
+        },
+        {
+          "Name": "session"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TerminateSession",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "session"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "jobRun"
+        },
+        {
+          "Name": "session"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CancelJobRun",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelJobRun",
+          "Service": "emr-serverless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr-serverless",
+          "Method": "cancel_job_run",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateApplication",
+          "Service": "emr-serverless"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "emr-serverless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr-serverless",
+          "Method": "create_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteApplication",
+          "Service": "emr-serverless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr-serverless",
+          "Method": "delete_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "GetApplication",
+          "Service": "emr-serverless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr-serverless",
+          "Method": "get_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDashboardForJobRun",
+      "AuthorizedActions": [
+        {
+          "Name": "AccessSystemProfileLogs",
+          "Service": "emr-serverless"
+        },
+        {
+          "Name": "GetDashboardForJobRun",
+          "Service": "emr-serverless"
+        },
+        {
+          "Name": "GetDatabases",
+          "Service": "glue"
+        },
+        {
+          "Name": "SearchTables",
+          "Service": "glue"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr-serverless",
+          "Method": "get_dashboard_for_job_run",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetJobRun",
+      "AuthorizedActions": [
+        {
+          "Name": "GetJobRun",
+          "Service": "emr-serverless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr-serverless",
+          "Method": "get_job_run",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResourceDashboard",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResourceDashboard",
+          "Service": "emr-serverless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr-serverless",
+          "Method": "get_resource_dashboard",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSession",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSession",
+          "Service": "emr-serverless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr-serverless",
+          "Method": "get_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSessionEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSessionEndpoint",
+          "Service": "emr-serverless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr-serverless",
+          "Method": "get_session_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListApplications",
+      "AuthorizedActions": [
+        {
+          "Name": "ListApplications",
+          "Service": "emr-serverless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr-serverless",
+          "Method": "list_applications",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListJobRunAttempts",
+      "AuthorizedActions": [
+        {
+          "Name": "ListJobRunAttempts",
+          "Service": "emr-serverless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr-serverless",
+          "Method": "list_job_run_attempts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListJobRuns",
+      "AuthorizedActions": [
+        {
+          "Name": "ListJobRuns",
+          "Service": "emr-serverless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr-serverless",
+          "Method": "list_job_runs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSessions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSessions",
+          "Service": "emr-serverless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr-serverless",
+          "Method": "list_sessions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "emr-serverless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr-serverless",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "StartApplication",
+          "Service": "emr-serverless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr-serverless",
+          "Method": "start_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartJobRun",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "emr-serverless.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartJobRun",
+          "Service": "emr-serverless"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "emr-serverless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr-serverless",
+          "Method": "start_job_run",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartSession",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "emr-serverless.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartSession",
+          "Service": "emr-serverless"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "emr-serverless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr-serverless",
+          "Method": "start_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "StopApplication",
+          "Service": "emr-serverless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr-serverless",
+          "Method": "stop_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "emr-serverless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr-serverless",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TerminateSession",
+      "AuthorizedActions": [
+        {
+          "Name": "TerminateSession",
+          "Service": "emr-serverless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr-serverless",
+          "Method": "terminate_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "emr-serverless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr-serverless",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateApplication",
+          "Service": "emr-serverless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr-serverless",
+          "Method": "update_application",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "application",
+      "ARNFormats": [
+        "arn:${Partition}:emr-serverless:${Region}:${Account}:/applications/${ApplicationId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "jobRun",
+      "ARNFormats": [
+        "arn:${Partition}:emr-serverless:${Region}:${Account}:/applications/${ApplicationId}/jobruns/${JobRunId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "session",
+      "ARNFormats": [
+        "arn:${Partition}:emr-serverless:${Region}:${Account}:/applications/${ApplicationId}/sessions/${SessionId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

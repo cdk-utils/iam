@@ -1,0 +1,147 @@
+{
+  "Name": "sustainability",
+  "Actions": [
+    {
+      "Name": "GetCarbonFootprintSummary",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetEstimatedCarbonEmissions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetEstimatedCarbonEmissionsDimensionValues",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetEstimatedWaterAllocation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetEstimatedWaterAllocationDimensionValues",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "GetEstimatedCarbonEmissions",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEstimatedCarbonEmissions",
+          "Service": "sustainability"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sustainability",
+          "Method": "get_estimated_carbon_emissions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEstimatedCarbonEmissionsDimensionValues",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEstimatedCarbonEmissionsDimensionValues",
+          "Service": "sustainability"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sustainability",
+          "Method": "get_estimated_carbon_emissions_dimension_values",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEstimatedWaterAllocation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEstimatedWaterAllocation",
+          "Service": "sustainability"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sustainability",
+          "Method": "get_estimated_water_allocation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEstimatedWaterAllocationDimensionValues",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEstimatedWaterAllocationDimensionValues",
+          "Service": "sustainability"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sustainability",
+          "Method": "get_estimated_water_allocation_dimension_values",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

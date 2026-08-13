@@ -1,0 +1,3136 @@
+{
+  "Name": "frauddetector",
+  "Actions": [
+    {
+      "Name": "BatchCreateVariable",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchGetVariable",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "variable"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CancelBatchImportJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "batch-import"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CancelBatchPredictionJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "batch-prediction"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateBatchImportJob",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "batch-import"
+        },
+        {
+          "Name": "event-type"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateBatchPredictionJob",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "batch-prediction"
+        },
+        {
+          "Name": "detector"
+        },
+        {
+          "Name": "detector-version"
+        },
+        {
+          "Name": "event-type"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateDetectorVersion",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "detector"
+        },
+        {
+          "Name": "external-model"
+        },
+        {
+          "Name": "model-version"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateList",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateModel",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "event-type"
+        },
+        {
+          "Name": "model"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateModelVersion",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "model"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateRule",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "detector"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateVariable",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteBatchImportJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "batch-import"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteBatchPredictionJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "batch-prediction"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteDetector",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "detector"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteDetectorVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "detector-version"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteEntityType",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "entity-type"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteEvent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "event-type"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteEventType",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "event-type"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteEventsByEventType",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "event-type"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteExternalModel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "external-model"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteLabel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "label"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteList",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "list"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteModel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "model"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteModelVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "model-version"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteOutcome",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "outcome"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "rule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteVariable",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "variable"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeDetector",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "detector"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeModelVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "model-version"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetBatchImportJobValidationReport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "batch-import"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetBatchImportJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "batch-import"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetBatchPredictionJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "batch-prediction"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDeleteEventsByEventTypeStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "event-type"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDetectorVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "detector-version"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDetectors",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "detector"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetEntityTypes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "entity-type"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetEvent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "event-type"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetEventPrediction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "detector"
+        },
+        {
+          "Name": "detector-version"
+        },
+        {
+          "Name": "event-type"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetEventPredictionMetadata",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "detector"
+        },
+        {
+          "Name": "detector-version"
+        },
+        {
+          "Name": "event-type"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetEventTypes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "event-type"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetExternalModels",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "external-model"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetKMSEncryptionKey",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetLabels",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "label"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetListElements",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "list"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetListsMetadata",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "list"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetModelVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "model-version"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetModels",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "model"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetOutcomes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "outcome"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetRules",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "rule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetVariables",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "variable"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListEventPredictions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "detector"
+        },
+        {
+          "Name": "detector-version"
+        },
+        {
+          "Name": "event-type"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "batch-import"
+        },
+        {
+          "Name": "batch-prediction"
+        },
+        {
+          "Name": "detector"
+        },
+        {
+          "Name": "detector-version"
+        },
+        {
+          "Name": "entity-type"
+        },
+        {
+          "Name": "event-type"
+        },
+        {
+          "Name": "external-model"
+        },
+        {
+          "Name": "label"
+        },
+        {
+          "Name": "list"
+        },
+        {
+          "Name": "model"
+        },
+        {
+          "Name": "model-version"
+        },
+        {
+          "Name": "outcome"
+        },
+        {
+          "Name": "rule"
+        },
+        {
+          "Name": "variable"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutDetector",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "detector"
+        },
+        {
+          "Name": "event-type"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutEntityType",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "entity-type"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutEventType",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "event-type"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutExternalModel",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "event-type"
+        },
+        {
+          "Name": "external-model"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutKMSEncryptionKey",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutLabel",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "label"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutOutcome",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "outcome"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SendEvent",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "event-type"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "batch-import"
+        },
+        {
+          "Name": "batch-prediction"
+        },
+        {
+          "Name": "detector"
+        },
+        {
+          "Name": "detector-version"
+        },
+        {
+          "Name": "entity-type"
+        },
+        {
+          "Name": "event-type"
+        },
+        {
+          "Name": "external-model"
+        },
+        {
+          "Name": "label"
+        },
+        {
+          "Name": "list"
+        },
+        {
+          "Name": "model"
+        },
+        {
+          "Name": "model-version"
+        },
+        {
+          "Name": "outcome"
+        },
+        {
+          "Name": "rule"
+        },
+        {
+          "Name": "variable"
+        },
+        {
+          "Name": "variable"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "batch-import"
+        },
+        {
+          "Name": "batch-prediction"
+        },
+        {
+          "Name": "detector"
+        },
+        {
+          "Name": "detector-version"
+        },
+        {
+          "Name": "entity-type"
+        },
+        {
+          "Name": "event-type"
+        },
+        {
+          "Name": "external-model"
+        },
+        {
+          "Name": "label"
+        },
+        {
+          "Name": "list"
+        },
+        {
+          "Name": "model"
+        },
+        {
+          "Name": "model-version"
+        },
+        {
+          "Name": "outcome"
+        },
+        {
+          "Name": "rule"
+        },
+        {
+          "Name": "variable"
+        },
+        {
+          "Name": "variable"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateDetectorVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "detector"
+        },
+        {
+          "Name": "external-model"
+        },
+        {
+          "Name": "model-version"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateDetectorVersionMetadata",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "detector-version"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateDetectorVersionStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "detector-version"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateEventLabel",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "event-type"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateList",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "list"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateModel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "model"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateModelVersion",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "model"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateModelVersionStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "model-version"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateRuleMetadata",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "rule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateRuleVersion",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "rule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateVariable",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "variable"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "BatchCreateVariable",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchCreateVariable",
+          "Service": "frauddetector"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "batch_create_variable",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetVariable",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetVariable",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "batch_get_variable",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelBatchImportJob",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelBatchImportJob",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "cancel_batch_import_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelBatchPredictionJob",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelBatchPredictionJob",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "cancel_batch_prediction_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateBatchImportJob",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateBatchImportJob",
+          "Service": "frauddetector"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "frauddetector.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "create_batch_import_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateBatchPredictionJob",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateBatchPredictionJob",
+          "Service": "frauddetector"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "frauddetector.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "create_batch_prediction_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDetectorVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDetectorVersion",
+          "Service": "frauddetector"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "create_detector_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateList",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateList",
+          "Service": "frauddetector"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "create_list",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateModel",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateModel",
+          "Service": "frauddetector"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "create_model",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateModelVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateModelVersion",
+          "Service": "frauddetector"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "frauddetector.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "create_model_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRule",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRule",
+          "Service": "frauddetector"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "create_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateVariable",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateVariable",
+          "Service": "frauddetector"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "create_variable",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteBatchImportJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteBatchImportJob",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "delete_batch_import_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteBatchPredictionJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteBatchPredictionJob",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "delete_batch_prediction_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDetector",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDetector",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "delete_detector",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDetectorVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDetectorVersion",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "delete_detector_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteEntityType",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteEntityType",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "delete_entity_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteEvent",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteEvent",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "delete_event",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteEventType",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteEventType",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "delete_event_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteEventsByEventType",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteEventsByEventType",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "delete_events_by_event_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteExternalModel",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteExternalModel",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "delete_external_model",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteLabel",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteLabel",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "delete_label",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteList",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteList",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "delete_list",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteModel",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteModel",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "delete_model",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteModelVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteModelVersion",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "delete_model_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteOutcome",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteOutcome",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "delete_outcome",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRule",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRule",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "delete_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteVariable",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteVariable",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "delete_variable",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDetector",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDetector",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "describe_detector",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeModelVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeModelVersions",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "describe_model_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBatchImportJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBatchImportJobs",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "get_batch_import_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBatchPredictionJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBatchPredictionJobs",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "get_batch_prediction_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDeleteEventsByEventTypeStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDeleteEventsByEventTypeStatus",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "get_delete_events_by_event_type_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDetectorVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDetectorVersion",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "get_detector_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDetectors",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDetectors",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "get_detectors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEntityTypes",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEntityTypes",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "get_entity_types",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEvent",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEvent",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "get_event",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEventPrediction",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEventPrediction",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "get_event_prediction",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEventPredictionMetadata",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEventPredictionMetadata",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "get_event_prediction_metadata",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEventTypes",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEventTypes",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "get_event_types",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetExternalModels",
+      "AuthorizedActions": [
+        {
+          "Name": "GetExternalModels",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "get_external_models",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetKMSEncryptionKey",
+      "AuthorizedActions": [
+        {
+          "Name": "GetKMSEncryptionKey",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "get_kms_encryption_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetLabels",
+      "AuthorizedActions": [
+        {
+          "Name": "GetLabels",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "get_labels",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetListElements",
+      "AuthorizedActions": [
+        {
+          "Name": "GetListElements",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "get_list_elements",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetListsMetadata",
+      "AuthorizedActions": [
+        {
+          "Name": "GetListsMetadata",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "get_lists_metadata",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetModelVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "GetModelVersion",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "get_model_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetModels",
+      "AuthorizedActions": [
+        {
+          "Name": "GetModels",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "get_models",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetOutcomes",
+      "AuthorizedActions": [
+        {
+          "Name": "GetOutcomes",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "get_outcomes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRules",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRules",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "get_rules",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetVariables",
+      "AuthorizedActions": [
+        {
+          "Name": "GetVariables",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "get_variables",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEventPredictions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEventPredictions",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "list_event_predictions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutDetector",
+      "AuthorizedActions": [
+        {
+          "Name": "PutDetector",
+          "Service": "frauddetector"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "put_detector",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutEntityType",
+      "AuthorizedActions": [
+        {
+          "Name": "PutEntityType",
+          "Service": "frauddetector"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "put_entity_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutEventType",
+      "AuthorizedActions": [
+        {
+          "Name": "PutEventType",
+          "Service": "frauddetector"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "put_event_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutExternalModel",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "frauddetector.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "PutExternalModel",
+          "Service": "frauddetector"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "put_external_model",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutKMSEncryptionKey",
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "put_kms_encryption_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutLabel",
+      "AuthorizedActions": [
+        {
+          "Name": "PutLabel",
+          "Service": "frauddetector"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "put_label",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutOutcome",
+      "AuthorizedActions": [
+        {
+          "Name": "PutOutcome",
+          "Service": "frauddetector"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "put_outcome",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SendEvent",
+      "AuthorizedActions": [
+        {
+          "Name": "SendEvent",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "send_event",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDetectorVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDetectorVersion",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "update_detector_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDetectorVersionMetadata",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDetectorVersionMetadata",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "update_detector_version_metadata",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDetectorVersionStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDetectorVersionStatus",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "update_detector_version_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateEventLabel",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateEventLabel",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "update_event_label",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateList",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateList",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "update_list",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateModel",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateModel",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "update_model",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateModelVersion",
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "update_model_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateModelVersionStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateModelVersionStatus",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "update_model_version_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRuleMetadata",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateRuleMetadata",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "update_rule_metadata",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRuleVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "frauddetector"
+        },
+        {
+          "Name": "UpdateRuleVersion",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "update_rule_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateVariable",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateVariable",
+          "Service": "frauddetector"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "frauddetector",
+          "Method": "update_variable",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "batch-import",
+      "ARNFormats": [
+        "arn:${Partition}:frauddetector:${Region}:${Account}:batch-import/${ResourcePath}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "batch-prediction",
+      "ARNFormats": [
+        "arn:${Partition}:frauddetector:${Region}:${Account}:batch-prediction/${ResourcePath}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "detector",
+      "ARNFormats": [
+        "arn:${Partition}:frauddetector:${Region}:${Account}:detector/${ResourcePath}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "detector-version",
+      "ARNFormats": [
+        "arn:${Partition}:frauddetector:${Region}:${Account}:detector-version/${ResourcePath}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "entity-type",
+      "ARNFormats": [
+        "arn:${Partition}:frauddetector:${Region}:${Account}:entity-type/${ResourcePath}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "event-type",
+      "ARNFormats": [
+        "arn:${Partition}:frauddetector:${Region}:${Account}:event-type/${ResourcePath}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "external-model",
+      "ARNFormats": [
+        "arn:${Partition}:frauddetector:${Region}:${Account}:external-model/${ResourcePath}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "label",
+      "ARNFormats": [
+        "arn:${Partition}:frauddetector:${Region}:${Account}:label/${ResourcePath}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "list",
+      "ARNFormats": [
+        "arn:${Partition}:frauddetector:${Region}:${Account}:list/${ResourcePath}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "model",
+      "ARNFormats": [
+        "arn:${Partition}:frauddetector:${Region}:${Account}:model/${ResourcePath}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "model-version",
+      "ARNFormats": [
+        "arn:${Partition}:frauddetector:${Region}:${Account}:model-version/${ResourcePath}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "outcome",
+      "ARNFormats": [
+        "arn:${Partition}:frauddetector:${Region}:${Account}:outcome/${ResourcePath}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "rule",
+      "ARNFormats": [
+        "arn:${Partition}:frauddetector:${Region}:${Account}:rule/${ResourcePath}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "variable",
+      "ARNFormats": [
+        "arn:${Partition}:frauddetector:${Region}:${Account}:variable/${ResourcePath}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

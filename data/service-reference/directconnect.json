@@ -1,0 +1,2514 @@
+{
+  "Name": "directconnect",
+  "Actions": [
+    {
+      "Name": "AcceptDirectConnectGatewayAssociationProposal",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dx-gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AllocateConnectionOnInterconnect",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dxcon"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AllocateHostedConnection",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dxcon"
+        },
+        {
+          "Name": "dxlag"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AllocatePrivateVirtualInterface",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dxcon"
+        },
+        {
+          "Name": "dxlag"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AllocatePublicVirtualInterface",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dxcon"
+        },
+        {
+          "Name": "dxlag"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AllocateTransitVirtualInterface",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dxcon"
+        },
+        {
+          "Name": "dxlag"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AssociateConnectionWithLag",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dxcon"
+        },
+        {
+          "Name": "dxlag"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AssociateHostedConnection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dxcon"
+        },
+        {
+          "Name": "dxcon"
+        },
+        {
+          "Name": "dxlag"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AssociateMacSecKey",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dxcon"
+        },
+        {
+          "Name": "dxlag"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AssociateVirtualInterface",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dxcon"
+        },
+        {
+          "Name": "dxlag"
+        },
+        {
+          "Name": "dxvif"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ConfirmConnection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dxcon"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ConfirmCustomerAgreement",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ConfirmPrivateVirtualInterface",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dxvif"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ConfirmPublicVirtualInterface",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dxvif"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ConfirmTransitVirtualInterface",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dxvif"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateBGPPeer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dxvif"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateConnection",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dxlag"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateDirectConnectGateway",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateDirectConnectGatewayAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dx-gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateDirectConnectGatewayAssociationProposal",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dx-gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateInterconnect",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dxlag"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateLag",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dxcon"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreatePrivateVirtualInterface",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dxcon"
+        },
+        {
+          "Name": "dxlag"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreatePublicVirtualInterface",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dxcon"
+        },
+        {
+          "Name": "dxlag"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateTransitVirtualInterface",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dxcon"
+        },
+        {
+          "Name": "dxlag"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteBGPPeer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dxvif"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteConnection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dxcon"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteDirectConnectGateway",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dx-gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteDirectConnectGatewayAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dx-gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteDirectConnectGatewayAssociationProposal",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteInterconnect",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dxcon"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteLag",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dxlag"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteVirtualInterface",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dxvif"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeConnectionLoa",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dxcon"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeConnections",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dxcon"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeConnectionsOnInterconnect",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dxcon"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeCustomerMetadata",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeDirectConnectGatewayAssociationProposals",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dx-gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeDirectConnectGatewayAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dx-gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeDirectConnectGatewayAttachments",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dx-gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeDirectConnectGateways",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dx-gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeHostedConnections",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dxcon"
+        },
+        {
+          "Name": "dxlag"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeInterconnectLoa",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dxcon"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeInterconnects",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dxcon"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeLags",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dxlag"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeLoa",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dxcon"
+        },
+        {
+          "Name": "dxlag"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeLocations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeRouterConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dxvif"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeTags",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dx-gateway"
+        },
+        {
+          "Name": "dxcon"
+        },
+        {
+          "Name": "dxlag"
+        },
+        {
+          "Name": "dxvif"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeVirtualGateways",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeVirtualInterfaces",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dxcon"
+        },
+        {
+          "Name": "dxlag"
+        },
+        {
+          "Name": "dxvif"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateConnectionFromLag",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dxcon"
+        },
+        {
+          "Name": "dxlag"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateMacSecKey",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dxcon"
+        },
+        {
+          "Name": "dxlag"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListVirtualInterfaceRoutes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dxvif"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListVirtualInterfaceTestHistory",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dxvif"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartBgpFailoverTest",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dxvif"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopBgpFailoverTest",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dxvif"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dx-gateway"
+        },
+        {
+          "Name": "dxcon"
+        },
+        {
+          "Name": "dxlag"
+        },
+        {
+          "Name": "dxvif"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dx-gateway"
+        },
+        {
+          "Name": "dxcon"
+        },
+        {
+          "Name": "dxlag"
+        },
+        {
+          "Name": "dxvif"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateConnection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dxcon"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateDirectConnectGateway",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dx-gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateDirectConnectGatewayAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateLag",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dxlag"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateVirtualInterfaceAttributes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dxvif"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AcceptDirectConnectGatewayAssociationProposal",
+      "AuthorizedActions": [
+        {
+          "Name": "AcceptDirectConnectGatewayAssociationProposal",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "accept_direct_connect_gateway_association_proposal",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AllocateConnectionOnInterconnect",
+      "AuthorizedActions": [
+        {
+          "Name": "AllocateConnectionOnInterconnect",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "allocate_connection_on_interconnect",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AllocateHostedConnection",
+      "AuthorizedActions": [
+        {
+          "Name": "AllocateHostedConnection",
+          "Service": "directconnect"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "allocate_hosted_connection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AllocatePrivateVirtualInterface",
+      "AuthorizedActions": [
+        {
+          "Name": "AllocatePrivateVirtualInterface",
+          "Service": "directconnect"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "allocate_private_virtual_interface",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AllocatePublicVirtualInterface",
+      "AuthorizedActions": [
+        {
+          "Name": "AllocatePublicVirtualInterface",
+          "Service": "directconnect"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "allocate_public_virtual_interface",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AllocateTransitVirtualInterface",
+      "AuthorizedActions": [
+        {
+          "Name": "AllocateTransitVirtualInterface",
+          "Service": "directconnect"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "allocate_transit_virtual_interface",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateConnectionWithLag",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateConnectionWithLag",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "associate_connection_with_lag",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateHostedConnection",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateHostedConnection",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "associate_hosted_connection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateMacSecKey",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateMacSecKey",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "associate_mac_sec_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateVirtualInterface",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateVirtualInterface",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "associate_virtual_interface",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ConfirmConnection",
+      "AuthorizedActions": [
+        {
+          "Name": "ConfirmConnection",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "confirm_connection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ConfirmCustomerAgreement",
+      "AuthorizedActions": [
+        {
+          "Name": "ConfirmCustomerAgreement",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "confirm_customer_agreement",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ConfirmPrivateVirtualInterface",
+      "AuthorizedActions": [
+        {
+          "Name": "ConfirmPrivateVirtualInterface",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "confirm_private_virtual_interface",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ConfirmPublicVirtualInterface",
+      "AuthorizedActions": [
+        {
+          "Name": "ConfirmPublicVirtualInterface",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "confirm_public_virtual_interface",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ConfirmTransitVirtualInterface",
+      "AuthorizedActions": [
+        {
+          "Name": "ConfirmTransitVirtualInterface",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "confirm_transit_virtual_interface",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateBGPPeer",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateBGPPeer",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "create_bgp_peer",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateConnection",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateConnection",
+          "Service": "directconnect"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "create_connection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDirectConnectGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDirectConnectGateway",
+          "Service": "directconnect"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "create_direct_connect_gateway",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDirectConnectGatewayAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDirectConnectGatewayAssociation",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "create_direct_connect_gateway_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDirectConnectGatewayAssociationProposal",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDirectConnectGatewayAssociationProposal",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "create_direct_connect_gateway_association_proposal",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateInterconnect",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateInterconnect",
+          "Service": "directconnect"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "create_interconnect",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateLag",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateLag",
+          "Service": "directconnect"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "create_lag",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePrivateVirtualInterface",
+      "AuthorizedActions": [
+        {
+          "Name": "CreatePrivateVirtualInterface",
+          "Service": "directconnect"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "create_private_virtual_interface",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePublicVirtualInterface",
+      "AuthorizedActions": [
+        {
+          "Name": "CreatePublicVirtualInterface",
+          "Service": "directconnect"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "create_public_virtual_interface",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateTransitVirtualInterface",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateTransitVirtualInterface",
+          "Service": "directconnect"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "create_transit_virtual_interface",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteBGPPeer",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteBGPPeer",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "delete_bgp_peer",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteConnection",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteConnection",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "delete_connection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDirectConnectGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDirectConnectGateway",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "delete_direct_connect_gateway",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDirectConnectGatewayAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDirectConnectGatewayAssociation",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "delete_direct_connect_gateway_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDirectConnectGatewayAssociationProposal",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDirectConnectGatewayAssociationProposal",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "delete_direct_connect_gateway_association_proposal",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteInterconnect",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteInterconnect",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "delete_interconnect",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteLag",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteLag",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "delete_lag",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteVirtualInterface",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteVirtualInterface",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "delete_virtual_interface",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeConnectionLoa",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeConnectionLoa",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "describe_connection_loa",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeConnections",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeConnections",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "describe_connections",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeConnectionsOnInterconnect",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeConnectionsOnInterconnect",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "describe_connections_on_interconnect",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeCustomerMetadata",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeCustomerMetadata",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "describe_customer_metadata",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDirectConnectGatewayAssociationProposals",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDirectConnectGatewayAssociationProposals",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "describe_direct_connect_gateway_association_proposals",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDirectConnectGatewayAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDirectConnectGatewayAssociations",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "describe_direct_connect_gateway_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDirectConnectGatewayAttachments",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDirectConnectGatewayAttachments",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "describe_direct_connect_gateway_attachments",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDirectConnectGateways",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDirectConnectGateways",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "describe_direct_connect_gateways",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeHostedConnections",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeHostedConnections",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "describe_hosted_connections",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeInterconnectLoa",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeInterconnectLoa",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "describe_interconnect_loa",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeInterconnects",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeInterconnects",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "describe_interconnects",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeLags",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeLags",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "describe_lags",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeLoa",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeLoa",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "describe_loa",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeLocations",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeLocations",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "describe_locations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeRouterConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeRouterConfiguration",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "describe_router_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeTags",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeTags",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "describe_tags",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeVirtualGateways",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeVirtualGateways",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "describe_virtual_gateways",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeVirtualInterfaces",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeVirtualInterfaces",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "describe_virtual_interfaces",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateConnectionFromLag",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateConnectionFromLag",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "disassociate_connection_from_lag",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateMacSecKey",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateMacSecKey",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "disassociate_mac_sec_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListVirtualInterfaceRoutes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListVirtualInterfaceRoutes",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "list_virtual_interface_routes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListVirtualInterfaceTestHistory",
+      "AuthorizedActions": [
+        {
+          "Name": "ListVirtualInterfaceTestHistory",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "list_virtual_interface_test_history",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartBgpFailoverTest",
+      "AuthorizedActions": [
+        {
+          "Name": "StartBgpFailoverTest",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "start_bgp_failover_test",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopBgpFailoverTest",
+      "AuthorizedActions": [
+        {
+          "Name": "StopBgpFailoverTest",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "stop_bgp_failover_test",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateConnection",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateConnection",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "update_connection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDirectConnectGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDirectConnectGateway",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "update_direct_connect_gateway",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDirectConnectGatewayAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDirectConnectGatewayAssociation",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "update_direct_connect_gateway_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateLag",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateLag",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "update_lag",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateVirtualInterfaceAttributes",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateVirtualInterfaceAttributes",
+          "Service": "directconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "directconnect",
+          "Method": "update_virtual_interface_attributes",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "dx-gateway",
+      "ARNFormats": [
+        "arn:${Partition}:directconnect::${Account}:dx-gateway/${DirectConnectGatewayId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "dxcon",
+      "ARNFormats": [
+        "arn:${Partition}:directconnect:${Region}:${Account}:dxcon/${ConnectionId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "dxlag",
+      "ARNFormats": [
+        "arn:${Partition}:directconnect:${Region}:${Account}:dxlag/${LagId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "dxvif",
+      "ARNFormats": [
+        "arn:${Partition}:directconnect:${Region}:${Account}:dxvif/${VirtualInterfaceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

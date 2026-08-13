@@ -1,0 +1,1125 @@
+{
+  "Name": "appfabric",
+  "Actions": [
+    {
+      "Name": "BatchGetUserAccessTasks",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "appbundle"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ConnectAppAuthorization",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "appauthorization"
+        },
+        {
+          "Name": "appbundle"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateAppAuthorization",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "appbundle"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateAppBundle",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateIngestion",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "appbundle"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateIngestionDestination",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "appbundle"
+        },
+        {
+          "Name": "ingestion"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteAppAuthorization",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "appauthorization"
+        },
+        {
+          "Name": "appbundle"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteAppBundle",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "appbundle"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteIngestion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "appbundle"
+        },
+        {
+          "Name": "ingestion"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteIngestionDestination",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "appbundle"
+        },
+        {
+          "Name": "ingestion"
+        },
+        {
+          "Name": "ingestiondestination"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAppAuthorization",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "appauthorization"
+        },
+        {
+          "Name": "appbundle"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAppBundle",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "appbundle"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetIngestion",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "appbundle"
+        },
+        {
+          "Name": "ingestion"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetIngestionDestination",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "appbundle"
+        },
+        {
+          "Name": "ingestion"
+        },
+        {
+          "Name": "ingestiondestination"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAppAuthorizations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "appbundle"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAppBundles",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListIngestionDestinations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "appbundle"
+        },
+        {
+          "Name": "ingestion"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListIngestions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "appbundle"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "appauthorization"
+        },
+        {
+          "Name": "appbundle"
+        },
+        {
+          "Name": "ingestion"
+        },
+        {
+          "Name": "ingestiondestination"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartIngestion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "appbundle"
+        },
+        {
+          "Name": "ingestion"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartUserAccessTasks",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "appbundle"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StopIngestion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "appbundle"
+        },
+        {
+          "Name": "ingestion"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "appauthorization"
+        },
+        {
+          "Name": "appbundle"
+        },
+        {
+          "Name": "ingestion"
+        },
+        {
+          "Name": "ingestiondestination"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "appauthorization"
+        },
+        {
+          "Name": "appbundle"
+        },
+        {
+          "Name": "ingestion"
+        },
+        {
+          "Name": "ingestiondestination"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAppAuthorization",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "appauthorization"
+        },
+        {
+          "Name": "appbundle"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateIngestionDestination",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "appbundle"
+        },
+        {
+          "Name": "ingestion"
+        },
+        {
+          "Name": "ingestiondestination"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "BatchGetUserAccessTasks",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetUserAccessTasks",
+          "Service": "appfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appfabric",
+          "Method": "batch_get_user_access_tasks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ConnectAppAuthorization",
+      "AuthorizedActions": [
+        {
+          "Name": "ConnectAppAuthorization",
+          "Service": "appfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appfabric",
+          "Method": "connect_app_authorization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAppAuthorization",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAppAuthorization",
+          "Service": "appfabric"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "appfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appfabric",
+          "Method": "create_app_authorization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAppBundle",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAppBundle",
+          "Service": "appfabric"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "appfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appfabric",
+          "Method": "create_app_bundle",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateIngestion",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateIngestion",
+          "Service": "appfabric"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "appfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appfabric",
+          "Method": "create_ingestion",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateIngestionDestination",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateIngestionDestination",
+          "Service": "appfabric"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "appfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appfabric",
+          "Method": "create_ingestion_destination",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAppAuthorization",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAppAuthorization",
+          "Service": "appfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appfabric",
+          "Method": "delete_app_authorization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAppBundle",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAppBundle",
+          "Service": "appfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appfabric",
+          "Method": "delete_app_bundle",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteIngestion",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteIngestion",
+          "Service": "appfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appfabric",
+          "Method": "delete_ingestion",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteIngestionDestination",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteIngestionDestination",
+          "Service": "appfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appfabric",
+          "Method": "delete_ingestion_destination",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAppAuthorization",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAppAuthorization",
+          "Service": "appfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appfabric",
+          "Method": "get_app_authorization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAppBundle",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAppBundle",
+          "Service": "appfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appfabric",
+          "Method": "get_app_bundle",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetIngestion",
+      "AuthorizedActions": [
+        {
+          "Name": "GetIngestion",
+          "Service": "appfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appfabric",
+          "Method": "get_ingestion",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetIngestionDestination",
+      "AuthorizedActions": [
+        {
+          "Name": "GetIngestionDestination",
+          "Service": "appfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appfabric",
+          "Method": "get_ingestion_destination",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAppAuthorizations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAppAuthorizations",
+          "Service": "appfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appfabric",
+          "Method": "list_app_authorizations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAppBundles",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAppBundles",
+          "Service": "appfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appfabric",
+          "Method": "list_app_bundles",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListIngestionDestinations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListIngestionDestinations",
+          "Service": "appfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appfabric",
+          "Method": "list_ingestion_destinations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListIngestions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListIngestions",
+          "Service": "appfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appfabric",
+          "Method": "list_ingestions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "appfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appfabric",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartIngestion",
+      "AuthorizedActions": [
+        {
+          "Name": "StartIngestion",
+          "Service": "appfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appfabric",
+          "Method": "start_ingestion",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartUserAccessTasks",
+      "AuthorizedActions": [
+        {
+          "Name": "StartUserAccessTasks",
+          "Service": "appfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appfabric",
+          "Method": "start_user_access_tasks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopIngestion",
+      "AuthorizedActions": [
+        {
+          "Name": "StopIngestion",
+          "Service": "appfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appfabric",
+          "Method": "stop_ingestion",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "appfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appfabric",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "appfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appfabric",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAppAuthorization",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAppAuthorization",
+          "Service": "appfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appfabric",
+          "Method": "update_app_authorization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateIngestionDestination",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateIngestionDestination",
+          "Service": "appfabric"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appfabric",
+          "Method": "update_ingestion_destination",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "appauthorization",
+      "ARNFormats": [
+        "arn:${Partition}:appfabric:${Region}:${Account}:appbundle/${AppbundleId}/appauthorization/${AppAuthorizationIdentifier}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "appbundle",
+      "ARNFormats": [
+        "arn:${Partition}:appfabric:${Region}:${Account}:appbundle/${AppBundleIdentifier}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "ingestion",
+      "ARNFormats": [
+        "arn:${Partition}:appfabric:${Region}:${Account}:appbundle/${AppbundleId}/ingestion/${IngestionIdentifier}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "ingestiondestination",
+      "ARNFormats": [
+        "arn:${Partition}:appfabric:${Region}:${Account}:appbundle/${AppbundleId}/ingestion/${IngestionIdentifier}/ingestiondestination/${IngestionDestinationIdentifier}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

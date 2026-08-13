@@ -1,0 +1,118 @@
+{
+  "Name": "geo-maps",
+  "Actions": [
+    {
+      "Name": "GetStaticMap",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "provider"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetTile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "provider"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "GetGlyphs",
+      "SDK": [
+        {
+          "Name": "geo-maps",
+          "Method": "get_glyphs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSprites",
+      "SDK": [
+        {
+          "Name": "geo-maps",
+          "Method": "get_sprites",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetStaticMap",
+      "AuthorizedActions": [
+        {
+          "Name": "GetStaticMap",
+          "Service": "geo-maps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "geo-maps",
+          "Method": "get_static_map",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetStyleDescriptor",
+      "SDK": [
+        {
+          "Name": "geo-maps",
+          "Method": "get_style_descriptor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetTile",
+      "AuthorizedActions": [
+        {
+          "Name": "GetTile",
+          "Service": "geo-maps"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "geo-maps",
+          "Method": "get_tile",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "provider",
+      "ARNFormats": [
+        "arn:${Partition}:geo-maps:${Region}::provider/default"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

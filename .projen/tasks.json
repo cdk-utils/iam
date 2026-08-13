@@ -133,6 +133,33 @@
         }
       ]
     },
+    "generate-constants": {
+      "name": "generate-constants",
+      "description": "Generate TypeScript constants from all service reference data",
+      "steps": [
+        {
+          "exec": "tsx scripts/generate-all.ts"
+        }
+      ]
+    },
+    "generate-index": {
+      "name": "generate-index",
+      "description": "Regenerate the barrel index for generated services",
+      "steps": [
+        {
+          "exec": "tsx scripts/generate-index.ts"
+        }
+      ]
+    },
+    "generate-service": {
+      "name": "generate-service",
+      "description": "Generate constants for a single service (pass file path as arg)",
+      "steps": [
+        {
+          "exec": "tsx scripts/generate-service.ts"
+        }
+      ]
+    },
     "install": {
       "name": "install",
       "description": "Install project dependencies and update lockfile (non-frozen)",
@@ -225,6 +252,15 @@
         }
       ]
     },
+    "sync-service-reference": {
+      "name": "sync-service-reference",
+      "description": "Fetch and store the latest AWS Service Authorization Reference data",
+      "steps": [
+        {
+          "exec": "tsx scripts/run-sync.ts"
+        }
+      ]
+    },
     "test": {
       "name": "test",
       "description": "Run tests",
@@ -265,6 +301,15 @@
         }
       ]
     },
+    "update-service-reference": {
+      "name": "update-service-reference",
+      "description": "Sync AWS service reference data and regenerate constants for updated services",
+      "steps": [
+        {
+          "exec": "tsx scripts/run-update.ts"
+        }
+      ]
+    },
     "upgrade": {
       "name": "upgrade",
       "description": "upgrade dependencies",
@@ -273,13 +318,13 @@
       },
       "steps": [
         {
-          "exec": "npx npm-check-updates@18 --upgrade --target=minor --peer --no-deprecated --dep=dev,peer,prod,optional --filter=@cdk-utils/projen_template,@types/jest,@types/node,jest,jsii-diff,jsii-pacmak,projen,ts-jest,ts-node,typescript"
+          "exec": "npx npm-check-updates@18 --upgrade --target=minor --peer --no-deprecated --dep=dev,peer,prod,optional --filter=@cdk_utils/projen_template,@types/jest,@types/node,jest,jsii-diff,jsii-pacmak,projen,ts-jest,ts-node,tsx,typescript"
         },
         {
           "exec": "npm install"
         },
         {
-          "exec": "npm update @biomejs/biome @cdk-utils/projen_template @types/jest @types/node commit-and-tag-version jest jest-junit jsii-diff jsii-docgen jsii-pacmak jsii-rosetta jsii projen ts-jest ts-node typescript aws-cdk-lib constructs"
+          "exec": "npm update @biomejs/biome @cdk_utils/projen_template @types/jest @types/node commit-and-tag-version jest jest-junit jsii-diff jsii-docgen jsii-pacmak jsii-rosetta jsii projen ts-jest ts-node tsx typescript aws-cdk-lib constructs"
         },
         {
           "exec": "npx projen"

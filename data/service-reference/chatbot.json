@@ -1,0 +1,1388 @@
+{
+  "Name": "chatbot",
+  "Actions": [
+    {
+      "Name": "AssociateToConfiguration",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ChatbotConfiguration"
+        },
+        {
+          "Name": "custom-action"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateChimeWebhookConfiguration",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateCustomAction",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateMicrosoftTeamsChannelConfiguration",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateSlackChannelConfiguration",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteChimeWebhookConfiguration",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ChatbotConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteCustomAction",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "custom-action"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteMicrosoftTeamsChannelConfiguration",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ChatbotConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteMicrosoftTeamsConfiguredTeam",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteMicrosoftTeamsUserIdentity",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteSlackChannelConfiguration",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ChatbotConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteSlackUserIdentity",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteSlackWorkspaceAuthorization",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeChimeWebhookConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeSlackChannelConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeSlackChannels",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeSlackUserIdentities",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeSlackWorkspaces",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateFromConfiguration",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ChatbotConfiguration"
+        },
+        {
+          "Name": "custom-action"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAccountPreferences",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCustomAction",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "custom-action"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetMicrosoftTeamsChannelConfiguration",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetMicrosoftTeamsOauthParameters",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSlackOauthParameters",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ChatbotConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListCustomActions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListMicrosoftTeamsChannelConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListMicrosoftTeamsConfiguredTeams",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListMicrosoftTeamsUserIdentities",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RedeemMicrosoftTeamsOauthCode",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RedeemSlackOauthCode",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ChatbotConfiguration"
+        },
+        {
+          "Name": "custom-action"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ChatbotConfiguration"
+        },
+        {
+          "Name": "custom-action"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAccountPreferences",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateChimeWebhookConfiguration",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ChatbotConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateCustomAction",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "custom-action"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateMicrosoftTeamsChannelConfiguration",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ChatbotConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateSlackChannelConfiguration",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ChatbotConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AssociateToConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateToConfiguration",
+          "Service": "chatbot"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "chatbot",
+          "Method": "associate_to_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateChimeWebhookConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateChimeWebhookConfiguration",
+          "Service": "chatbot"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "chatbot.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "chatbot"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "chatbot",
+          "Method": "create_chime_webhook_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateCustomAction",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCustomAction",
+          "Service": "chatbot"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "chatbot"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "chatbot",
+          "Method": "create_custom_action",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateMicrosoftTeamsChannelConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateMicrosoftTeamsChannelConfiguration",
+          "Service": "chatbot"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "chatbot.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "chatbot"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "chatbot",
+          "Method": "create_microsoft_teams_channel_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSlackChannelConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSlackChannelConfiguration",
+          "Service": "chatbot"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "chatbot.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "chatbot"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "chatbot",
+          "Method": "create_slack_channel_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteChimeWebhookConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteChimeWebhookConfiguration",
+          "Service": "chatbot"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "chatbot",
+          "Method": "delete_chime_webhook_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCustomAction",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCustomAction",
+          "Service": "chatbot"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "chatbot",
+          "Method": "delete_custom_action",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteMicrosoftTeamsChannelConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteMicrosoftTeamsChannelConfiguration",
+          "Service": "chatbot"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "chatbot",
+          "Method": "delete_microsoft_teams_channel_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteMicrosoftTeamsConfiguredTeam",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteMicrosoftTeamsConfiguredTeam",
+          "Service": "chatbot"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "chatbot",
+          "Method": "delete_microsoft_teams_configured_team",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteMicrosoftTeamsUserIdentity",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteMicrosoftTeamsUserIdentity",
+          "Service": "chatbot"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "chatbot",
+          "Method": "delete_microsoft_teams_user_identity",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSlackChannelConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSlackChannelConfiguration",
+          "Service": "chatbot"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "chatbot",
+          "Method": "delete_slack_channel_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSlackUserIdentity",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSlackUserIdentity",
+          "Service": "chatbot"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "chatbot",
+          "Method": "delete_slack_user_identity",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSlackWorkspaceAuthorization",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSlackWorkspaceAuthorization",
+          "Service": "chatbot"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "chatbot",
+          "Method": "delete_slack_workspace_authorization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeChimeWebhookConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeChimeWebhookConfigurations",
+          "Service": "chatbot"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "chatbot",
+          "Method": "describe_chime_webhook_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSlackChannelConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSlackChannelConfigurations",
+          "Service": "chatbot"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "chatbot",
+          "Method": "describe_slack_channel_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSlackUserIdentities",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSlackUserIdentities",
+          "Service": "chatbot"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "chatbot",
+          "Method": "describe_slack_user_identities",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSlackWorkspaces",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSlackWorkspaces",
+          "Service": "chatbot"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "chatbot",
+          "Method": "describe_slack_workspaces",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateFromConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateFromConfiguration",
+          "Service": "chatbot"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "chatbot",
+          "Method": "disassociate_from_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAccountPreferences",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAccountPreferences",
+          "Service": "chatbot"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "chatbot",
+          "Method": "get_account_preferences",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCustomAction",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCustomAction",
+          "Service": "chatbot"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "chatbot",
+          "Method": "get_custom_action",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMicrosoftTeamsChannelConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMicrosoftTeamsChannelConfiguration",
+          "Service": "chatbot"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "chatbot",
+          "Method": "get_microsoft_teams_channel_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAssociations",
+          "Service": "chatbot"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "chatbot",
+          "Method": "list_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCustomActions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCustomActions",
+          "Service": "chatbot"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "chatbot",
+          "Method": "list_custom_actions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMicrosoftTeamsChannelConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListMicrosoftTeamsChannelConfigurations",
+          "Service": "chatbot"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "chatbot",
+          "Method": "list_microsoft_teams_channel_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMicrosoftTeamsConfiguredTeams",
+      "AuthorizedActions": [
+        {
+          "Name": "ListMicrosoftTeamsConfiguredTeams",
+          "Service": "chatbot"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "chatbot",
+          "Method": "list_microsoft_teams_configured_teams",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMicrosoftTeamsUserIdentities",
+      "AuthorizedActions": [
+        {
+          "Name": "ListMicrosoftTeamsUserIdentities",
+          "Service": "chatbot"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "chatbot",
+          "Method": "list_microsoft_teams_user_identities",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "chatbot"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "chatbot",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "chatbot"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "chatbot",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "chatbot"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "chatbot",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAccountPreferences",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAccountPreferences",
+          "Service": "chatbot"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "chatbot",
+          "Method": "update_account_preferences",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateChimeWebhookConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "chatbot.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateChimeWebhookConfiguration",
+          "Service": "chatbot"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "chatbot",
+          "Method": "update_chime_webhook_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCustomAction",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCustomAction",
+          "Service": "chatbot"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "chatbot",
+          "Method": "update_custom_action",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateMicrosoftTeamsChannelConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "chatbot.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateMicrosoftTeamsChannelConfiguration",
+          "Service": "chatbot"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "chatbot",
+          "Method": "update_microsoft_teams_channel_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSlackChannelConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "chatbot.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateSlackChannelConfiguration",
+          "Service": "chatbot"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "chatbot",
+          "Method": "update_slack_channel_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "ChatbotConfiguration",
+      "ARNFormats": [
+        "arn:${Partition}:chatbot::${Account}:chat-configuration/${ConfigurationType}/${ChatbotConfigurationName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "custom-action",
+      "ARNFormats": [
+        "arn:${Partition}:chatbot::${Account}:custom-action/${ActionName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

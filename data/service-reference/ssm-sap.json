@@ -1,0 +1,1011 @@
+{
+  "Name": "ssm-sap",
+  "Actions": [
+    {
+      "Name": "BackupDatabase",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteResourcePermission",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeregisterApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetComponent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "component"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetConfigurationCheckOperation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDatabase",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetOperation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResourcePermission",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListApplications",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListComponents",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListConfigurationCheckDefinitions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListConfigurationCheckOperations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDatabases",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListOperationEvents",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListOperations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListSubCheckResults",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListSubCheckRuleResults",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutResourcePermission",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RegisterApplication",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RestoreDatabase",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartApplicationRefresh",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartConfigurationChecks",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "component"
+        },
+        {
+          "Name": "database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "component"
+        },
+        {
+          "Name": "database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateApplicationSettings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateHANABackupSettings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "DeleteResourcePermission",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteResourcePermission",
+          "Service": "ssm-sap"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-sap",
+          "Method": "delete_resource_permission",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeregisterApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "DeregisterApplication",
+          "Service": "ssm-sap"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-sap",
+          "Method": "deregister_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "GetApplication",
+          "Service": "ssm-sap"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-sap",
+          "Method": "get_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetComponent",
+      "AuthorizedActions": [
+        {
+          "Name": "GetComponent",
+          "Service": "ssm-sap"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-sap",
+          "Method": "get_component",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetConfigurationCheckOperation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetConfigurationCheckOperation",
+          "Service": "ssm-sap"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-sap",
+          "Method": "get_configuration_check_operation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDatabase",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDatabase",
+          "Service": "ssm-sap"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-sap",
+          "Method": "get_database",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetOperation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetOperation",
+          "Service": "ssm-sap"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-sap",
+          "Method": "get_operation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResourcePermission",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResourcePermission",
+          "Service": "ssm-sap"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-sap",
+          "Method": "get_resource_permission",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListApplications",
+      "AuthorizedActions": [
+        {
+          "Name": "ListApplications",
+          "Service": "ssm-sap"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-sap",
+          "Method": "list_applications",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListComponents",
+      "AuthorizedActions": [
+        {
+          "Name": "ListComponents",
+          "Service": "ssm-sap"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-sap",
+          "Method": "list_components",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListConfigurationCheckDefinitions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListConfigurationCheckDefinitions",
+          "Service": "ssm-sap"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-sap",
+          "Method": "list_configuration_check_definitions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListConfigurationCheckOperations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListConfigurationCheckOperations",
+          "Service": "ssm-sap"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-sap",
+          "Method": "list_configuration_check_operations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDatabases",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDatabases",
+          "Service": "ssm-sap"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-sap",
+          "Method": "list_databases",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListOperationEvents",
+      "AuthorizedActions": [
+        {
+          "Name": "ListOperationEvents",
+          "Service": "ssm-sap"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-sap",
+          "Method": "list_operation_events",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListOperations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListOperations",
+          "Service": "ssm-sap"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-sap",
+          "Method": "list_operations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSubCheckResults",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSubCheckResults",
+          "Service": "ssm-sap"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-sap",
+          "Method": "list_sub_check_results",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSubCheckRuleResults",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSubCheckRuleResults",
+          "Service": "ssm-sap"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-sap",
+          "Method": "list_sub_check_rule_results",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "ssm-sap"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-sap",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutResourcePermission",
+      "AuthorizedActions": [
+        {
+          "Name": "PutResourcePermission",
+          "Service": "ssm-sap"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-sap",
+          "Method": "put_resource_permission",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RegisterApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "RegisterApplication",
+          "Service": "ssm-sap"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "ssm-sap"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-sap",
+          "Method": "register_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "StartApplication",
+          "Service": "ssm-sap"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-sap",
+          "Method": "start_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartApplicationRefresh",
+      "AuthorizedActions": [
+        {
+          "Name": "StartApplicationRefresh",
+          "Service": "ssm-sap"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-sap",
+          "Method": "start_application_refresh",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartConfigurationChecks",
+      "AuthorizedActions": [
+        {
+          "Name": "StartConfigurationChecks",
+          "Service": "ssm-sap"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-sap",
+          "Method": "start_configuration_checks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "StopApplication",
+          "Service": "ssm-sap"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-sap",
+          "Method": "stop_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "ssm-sap"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-sap",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "ssm-sap"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-sap",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateApplicationSettings",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateApplicationSettings",
+          "Service": "ssm-sap"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-sap",
+          "Method": "update_application_settings",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "application",
+      "ARNFormats": [
+        "arn:${Partition}:ssm-sap:${Region}:${Account}:${ApplicationType}/${ApplicationId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "component",
+      "ARNFormats": [
+        "arn:${Partition}:ssm-sap:${Region}:${Account}:${ApplicationType}/${ApplicationId}/COMPONENT/${ComponentId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "database",
+      "ARNFormats": [
+        "arn:${Partition}:ssm-sap:${Region}:${Account}:${ApplicationType}/${ApplicationId}/DB/${DatabaseId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

@@ -1,0 +1,1295 @@
+{
+  "Name": "amplifybackend",
+  "Actions": [
+    {
+      "Name": "CloneBackend",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "backend"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateBackend",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "created-backend"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateBackendAPI",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "api"
+        },
+        {
+          "Name": "backend"
+        },
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateBackendAuth",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "auth"
+        },
+        {
+          "Name": "backend"
+        },
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateBackendConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "config"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateBackendStorage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "backend"
+        },
+        {
+          "Name": "environment"
+        },
+        {
+          "Name": "storage"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateToken",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "backend"
+        },
+        {
+          "Name": "token"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteBackend",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "backend"
+        },
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteBackendAPI",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "api"
+        },
+        {
+          "Name": "backend"
+        },
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteBackendAuth",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "auth"
+        },
+        {
+          "Name": "backend"
+        },
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteBackendStorage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "backend"
+        },
+        {
+          "Name": "environment"
+        },
+        {
+          "Name": "storage"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteToken",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "backend"
+        },
+        {
+          "Name": "token"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GenerateBackendAPIModels",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "api"
+        },
+        {
+          "Name": "backend"
+        },
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetBackend",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "backend"
+        },
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetBackendAPI",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "api"
+        },
+        {
+          "Name": "backend"
+        },
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetBackendAPIModels",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "api"
+        },
+        {
+          "Name": "backend"
+        },
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetBackendAuth",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "auth"
+        },
+        {
+          "Name": "backend"
+        },
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetBackendJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "backend"
+        },
+        {
+          "Name": "job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetBackendStorage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "backend"
+        },
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetToken",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "backend"
+        },
+        {
+          "Name": "token"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ImportBackendAuth",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "auth"
+        },
+        {
+          "Name": "backend"
+        },
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ImportBackendStorage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "backend"
+        },
+        {
+          "Name": "environment"
+        },
+        {
+          "Name": "storage"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListBackendJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "backend"
+        },
+        {
+          "Name": "job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListS3Buckets",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RemoveAllBackends",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "backend"
+        },
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RemoveBackendConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "config"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateBackendAPI",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "api"
+        },
+        {
+          "Name": "backend"
+        },
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateBackendAuth",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "auth"
+        },
+        {
+          "Name": "backend"
+        },
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateBackendConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "config"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateBackendJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "backend"
+        },
+        {
+          "Name": "job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateBackendStorage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "backend"
+        },
+        {
+          "Name": "environment"
+        },
+        {
+          "Name": "storage"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CloneBackend",
+      "AuthorizedActions": [
+        {
+          "Name": "CloneBackend",
+          "Service": "amplifybackend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifybackend",
+          "Method": "clone_backend",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateBackend",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateBackend",
+          "Service": "amplifybackend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifybackend",
+          "Method": "create_backend",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateBackendAPI",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateBackendAPI",
+          "Service": "amplifybackend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifybackend",
+          "Method": "create_backend_api",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateBackendAuth",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateBackendAuth",
+          "Service": "amplifybackend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifybackend",
+          "Method": "create_backend_auth",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateBackendConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateBackendConfig",
+          "Service": "amplifybackend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifybackend",
+          "Method": "create_backend_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateBackendStorage",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateBackendStorage",
+          "Service": "amplifybackend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifybackend",
+          "Method": "create_backend_storage",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateToken",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateToken",
+          "Service": "amplifybackend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifybackend",
+          "Method": "create_token",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteBackend",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteBackend",
+          "Service": "amplifybackend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifybackend",
+          "Method": "delete_backend",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteBackendAPI",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteBackendAPI",
+          "Service": "amplifybackend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifybackend",
+          "Method": "delete_backend_api",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteBackendAuth",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteBackendAuth",
+          "Service": "amplifybackend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifybackend",
+          "Method": "delete_backend_auth",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteBackendStorage",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteBackendStorage",
+          "Service": "amplifybackend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifybackend",
+          "Method": "delete_backend_storage",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteToken",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteToken",
+          "Service": "amplifybackend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifybackend",
+          "Method": "delete_token",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GenerateBackendAPIModels",
+      "AuthorizedActions": [
+        {
+          "Name": "GenerateBackendAPIModels",
+          "Service": "amplifybackend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifybackend",
+          "Method": "generate_backend_api_models",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBackend",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBackend",
+          "Service": "amplifybackend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifybackend",
+          "Method": "get_backend",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBackendAPI",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBackendAPI",
+          "Service": "amplifybackend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifybackend",
+          "Method": "get_backend_api",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBackendAPIModels",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBackendAPIModels",
+          "Service": "amplifybackend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifybackend",
+          "Method": "get_backend_api_models",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBackendAuth",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBackendAuth",
+          "Service": "amplifybackend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifybackend",
+          "Method": "get_backend_auth",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBackendJob",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBackendJob",
+          "Service": "amplifybackend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifybackend",
+          "Method": "get_backend_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBackendStorage",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBackendStorage",
+          "Service": "amplifybackend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifybackend",
+          "Method": "get_backend_storage",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetToken",
+      "AuthorizedActions": [
+        {
+          "Name": "GetToken",
+          "Service": "amplifybackend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifybackend",
+          "Method": "get_token",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ImportBackendAuth",
+      "AuthorizedActions": [
+        {
+          "Name": "ImportBackendAuth",
+          "Service": "amplifybackend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifybackend",
+          "Method": "import_backend_auth",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ImportBackendStorage",
+      "AuthorizedActions": [
+        {
+          "Name": "ImportBackendStorage",
+          "Service": "amplifybackend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifybackend",
+          "Method": "import_backend_storage",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListBackendJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListBackendJobs",
+          "Service": "amplifybackend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifybackend",
+          "Method": "list_backend_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListS3Buckets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListS3Buckets",
+          "Service": "amplifybackend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifybackend",
+          "Method": "list_s3_buckets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RemoveAllBackends",
+      "AuthorizedActions": [
+        {
+          "Name": "RemoveAllBackends",
+          "Service": "amplifybackend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifybackend",
+          "Method": "remove_all_backends",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RemoveBackendConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "RemoveBackendConfig",
+          "Service": "amplifybackend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifybackend",
+          "Method": "remove_backend_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateBackendAPI",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateBackendAPI",
+          "Service": "amplifybackend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifybackend",
+          "Method": "update_backend_api",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateBackendAuth",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateBackendAuth",
+          "Service": "amplifybackend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifybackend",
+          "Method": "update_backend_auth",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateBackendConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateBackendConfig",
+          "Service": "amplifybackend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifybackend",
+          "Method": "update_backend_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateBackendJob",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateBackendJob",
+          "Service": "amplifybackend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifybackend",
+          "Method": "update_backend_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateBackendStorage",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateBackendStorage",
+          "Service": "amplifybackend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifybackend",
+          "Method": "update_backend_storage",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "api",
+      "ARNFormats": [
+        "arn:${Partition}:amplifybackend:${Region}:${Account}:/backend/${AppId}/api/*"
+      ]
+    },
+    {
+      "Name": "auth",
+      "ARNFormats": [
+        "arn:${Partition}:amplifybackend:${Region}:${Account}:/backend/${AppId}/auth/*"
+      ]
+    },
+    {
+      "Name": "backend",
+      "ARNFormats": [
+        "arn:${Partition}:amplifybackend:${Region}:${Account}:/backend/${AppId}/*"
+      ]
+    },
+    {
+      "Name": "config",
+      "ARNFormats": [
+        "arn:${Partition}:amplifybackend:${Region}:${Account}:/backend/${AppId}/config/*"
+      ]
+    },
+    {
+      "Name": "created-backend",
+      "ARNFormats": [
+        "arn:${Partition}:amplifybackend:${Region}:${Account}:/backend/*"
+      ]
+    },
+    {
+      "Name": "environment",
+      "ARNFormats": [
+        "arn:${Partition}:amplifybackend:${Region}:${Account}:/backend/${AppId}/environments/*"
+      ]
+    },
+    {
+      "Name": "job",
+      "ARNFormats": [
+        "arn:${Partition}:amplifybackend:${Region}:${Account}:/backend/${AppId}/job/*"
+      ]
+    },
+    {
+      "Name": "storage",
+      "ARNFormats": [
+        "arn:${Partition}:amplifybackend:${Region}:${Account}:/backend/${AppId}/storage/*"
+      ]
+    },
+    {
+      "Name": "token",
+      "ARNFormats": [
+        "arn:${Partition}:amplifybackend:${Region}:${Account}:/backend/${AppId}/challenge/*"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

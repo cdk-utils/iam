@@ -1,0 +1,5818 @@
+{
+  "Name": "lightsail",
+  "Actions": [
+    {
+      "Name": "AllocateStaticIp",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AttachCertificateToDistribution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Certificate"
+        },
+        {
+          "Name": "Distribution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AttachDisk",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Disk"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AttachInstancesToLoadBalancer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "LoadBalancer"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AttachLoadBalancerTlsCertificate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "LoadBalancer"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AttachStaticIp",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance"
+        },
+        {
+          "Name": "StaticIp"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CloseInstancePublicPorts",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CopySnapshot",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateBucket",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateBucketAccessKey",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Bucket"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateCertificate",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateCloudFormationStack",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateContactMethod",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateContainerService",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateContainerServiceDeployment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ContainerService"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateContainerServiceRegistryLogin",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateDisk",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateDiskFromSnapshot",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "DiskSnapshot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateDiskSnapshot",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Disk"
+        },
+        {
+          "Name": "Instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateDistribution",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateDomain",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateDomainEntry",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateGUISessionAccessDetails",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateInstanceSnapshot",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateInstances",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateInstancesFromSnapshot",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "InstanceSnapshot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateKeyPair",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateLoadBalancer",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateLoadBalancerTlsCertificate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "LoadBalancer"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateRelationalDatabase",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateRelationalDatabaseFromSnapshot",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RelationalDatabaseSnapshot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateRelationalDatabaseSnapshot",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteAlarm",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Alarm"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteAutoSnapshot",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteBucket",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Bucket"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteBucketAccessKey",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Bucket"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteCertificate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Certificate"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteContactMethod",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteContainerImage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ContainerService"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteContainerService",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ContainerService"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteDisk",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Disk"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteDiskSnapshot",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "DiskSnapshot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteDistribution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Distribution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteDomain",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteDomainEntry",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteInstance",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteInstanceSnapshot",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "InstanceSnapshot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteKeyPair",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "KeyPair"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteKnownHostKeys",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteLoadBalancer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "LoadBalancer"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteLoadBalancerTlsCertificate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "LoadBalancer"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteRelationalDatabase",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RelationalDatabase"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteRelationalDatabaseSnapshot",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RelationalDatabaseSnapshot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DetachCertificateFromDistribution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Distribution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DetachDisk",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Disk"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DetachInstancesFromLoadBalancer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "LoadBalancer"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DetachStaticIp",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "StaticIp"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisableAddOn",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DownloadDefaultKeyPair",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "EnableAddOn",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ExportSnapshot",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "DiskSnapshot"
+        },
+        {
+          "Name": "InstanceSnapshot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetActiveNames",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetAlarms",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetAutoSnapshots",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetBlueprints",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetBucketAccessKeys",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetBucketBundles",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetBucketMetricData",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetBuckets",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetBundles",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCertificates",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCloudFormationStackRecords",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetContactMethods",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetContainerAPIMetadata",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetContainerImages",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetContainerLog",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetContainerServiceDeployments",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetContainerServiceMetricData",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetContainerServicePowers",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetContainerServices",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCostEstimate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Disk"
+        },
+        {
+          "Name": "Instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDisk",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDiskSnapshot",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDiskSnapshots",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDisks",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDistributionBundles",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDistributionLatestCacheReset",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDistributionMetricData",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDistributions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDomain",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDomains",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetExportSnapshotRecords",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetInstance",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetInstanceAccessDetails",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetInstanceMetricData",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetInstancePortStates",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetInstanceSnapshot",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetInstanceSnapshots",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetInstanceState",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetInstances",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetKeyPair",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetKeyPairs",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetLoadBalancer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetLoadBalancerMetricData",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetLoadBalancerTlsCertificates",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetLoadBalancerTlsPolicies",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetLoadBalancers",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetOperation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetOperations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetOperationsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetRegions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetRelationalDatabase",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetRelationalDatabaseBlueprints",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetRelationalDatabaseBundles",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetRelationalDatabaseEvents",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetRelationalDatabaseLogEvents",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetRelationalDatabaseLogStreams",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetRelationalDatabaseMasterUserPassword",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RelationalDatabase"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetRelationalDatabaseMetricData",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetRelationalDatabaseParameters",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetRelationalDatabaseSnapshot",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetRelationalDatabaseSnapshots",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetRelationalDatabases",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSetupHistory",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetStaticIp",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetStaticIps",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ImportKeyPair",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "IsVpcPeered",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "OpenInstancePublicPorts",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PeerVpc",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutAlarm",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Alarm"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutInstancePublicPorts",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RebootInstance",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RebootRelationalDatabase",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RelationalDatabase"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RegisterContainerImage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ContainerService"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ReleaseStaticIp",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "StaticIp"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ResetDistributionCache",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Distribution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SendContactMethodVerification",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SetIpAddressType",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Distribution"
+        },
+        {
+          "Name": "Instance"
+        },
+        {
+          "Name": "LoadBalancer"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SetResourceAccessForBucket",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Bucket"
+        },
+        {
+          "Name": "Instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SetupInstanceHttps",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartGUISession",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartInstance",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartRelationalDatabase",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RelationalDatabase"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopGUISession",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopInstance",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopRelationalDatabase",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RelationalDatabase"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Alarm"
+        },
+        {
+          "Name": "Bucket"
+        },
+        {
+          "Name": "Certificate"
+        },
+        {
+          "Name": "ContactMethod"
+        },
+        {
+          "Name": "ContainerService"
+        },
+        {
+          "Name": "Disk"
+        },
+        {
+          "Name": "DiskSnapshot"
+        },
+        {
+          "Name": "Distribution"
+        },
+        {
+          "Name": "Domain"
+        },
+        {
+          "Name": "Instance"
+        },
+        {
+          "Name": "InstanceSnapshot"
+        },
+        {
+          "Name": "KeyPair"
+        },
+        {
+          "Name": "LoadBalancer"
+        },
+        {
+          "Name": "RelationalDatabase"
+        },
+        {
+          "Name": "RelationalDatabaseSnapshot"
+        },
+        {
+          "Name": "StaticIp"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TestAlarm",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Alarm"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UnpeerVpc",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Alarm"
+        },
+        {
+          "Name": "Bucket"
+        },
+        {
+          "Name": "Certificate"
+        },
+        {
+          "Name": "ContactMethod"
+        },
+        {
+          "Name": "ContainerService"
+        },
+        {
+          "Name": "Disk"
+        },
+        {
+          "Name": "DiskSnapshot"
+        },
+        {
+          "Name": "Distribution"
+        },
+        {
+          "Name": "Domain"
+        },
+        {
+          "Name": "Instance"
+        },
+        {
+          "Name": "InstanceSnapshot"
+        },
+        {
+          "Name": "KeyPair"
+        },
+        {
+          "Name": "LoadBalancer"
+        },
+        {
+          "Name": "RelationalDatabase"
+        },
+        {
+          "Name": "RelationalDatabaseSnapshot"
+        },
+        {
+          "Name": "StaticIp"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateBucket",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Bucket"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateBucketBundle",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Bucket"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateContainerService",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ContainerService"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateDistribution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Distribution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateDistributionBundle",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Distribution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateDomainEntry",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateInstanceMetadataOptions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateLoadBalancerAttribute",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "LoadBalancer"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateRelationalDatabase",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RelationalDatabase"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateRelationalDatabaseParameters",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RelationalDatabase"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AllocateStaticIp",
+      "AuthorizedActions": [
+        {
+          "Name": "AllocateStaticIp",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "allocate_static_ip",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AttachCertificateToDistribution",
+      "AuthorizedActions": [
+        {
+          "Name": "AttachCertificateToDistribution",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "attach_certificate_to_distribution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AttachDisk",
+      "AuthorizedActions": [
+        {
+          "Name": "AttachDisk",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "attach_disk",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AttachInstancesToLoadBalancer",
+      "AuthorizedActions": [
+        {
+          "Name": "AttachInstancesToLoadBalancer",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "attach_instances_to_load_balancer",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AttachLoadBalancerTlsCertificate",
+      "AuthorizedActions": [
+        {
+          "Name": "AttachLoadBalancerTlsCertificate",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "attach_load_balancer_tls_certificate",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AttachStaticIp",
+      "AuthorizedActions": [
+        {
+          "Name": "AttachStaticIp",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "attach_static_ip",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CloseInstancePublicPorts",
+      "AuthorizedActions": [
+        {
+          "Name": "CloseInstancePublicPorts",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "close_instance_public_ports",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CopySnapshot",
+      "AuthorizedActions": [
+        {
+          "Name": "CopySnapshot",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "copy_snapshot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateBucket",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateBucket",
+          "Service": "lightsail"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "create_bucket",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateBucketAccessKey",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateBucketAccessKey",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "create_bucket_access_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateCertificate",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCertificate",
+          "Service": "lightsail"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "create_certificate",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateCloudFormationStack",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCloudFormationStack",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "create_cloud_formation_stack",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateContactMethod",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateContactMethod",
+          "Service": "lightsail"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "create_contact_method",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateContainerService",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateContainerService",
+          "Service": "lightsail"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "create_container_service",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateContainerServiceDeployment",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateContainerServiceDeployment",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "create_container_service_deployment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateContainerServiceRegistryLogin",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateContainerServiceRegistryLogin",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "create_container_service_registry_login",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDisk",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDisk",
+          "Service": "lightsail"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "create_disk",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDiskFromSnapshot",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDiskFromSnapshot",
+          "Service": "lightsail"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "create_disk_from_snapshot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDiskSnapshot",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDiskSnapshot",
+          "Service": "lightsail"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "create_disk_snapshot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDistribution",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDistribution",
+          "Service": "lightsail"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "create_distribution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDomain",
+          "Service": "lightsail"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "create_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDomainEntry",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDomainEntry",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "create_domain_entry",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateGUISessionAccessDetails",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateGUISessionAccessDetails",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "create_gui_session_access_details",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateInstanceSnapshot",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateInstanceSnapshot",
+          "Service": "lightsail"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "create_instance_snapshot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateInstances",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateInstances",
+          "Service": "lightsail"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "create_instances",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateInstancesFromSnapshot",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateInstancesFromSnapshot",
+          "Service": "lightsail"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "create_instances_from_snapshot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateKeyPair",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateKeyPair",
+          "Service": "lightsail"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "create_key_pair",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateLoadBalancer",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateLoadBalancer",
+          "Service": "lightsail"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "create_load_balancer",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateLoadBalancerTlsCertificate",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateLoadBalancerTlsCertificate",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "create_load_balancer_tls_certificate",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRelationalDatabase",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRelationalDatabase",
+          "Service": "lightsail"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "create_relational_database",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRelationalDatabaseFromSnapshot",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRelationalDatabaseFromSnapshot",
+          "Service": "lightsail"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "create_relational_database_from_snapshot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRelationalDatabaseSnapshot",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRelationalDatabaseSnapshot",
+          "Service": "lightsail"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "create_relational_database_snapshot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAlarm",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAlarm",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "delete_alarm",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAutoSnapshot",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAutoSnapshot",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "delete_auto_snapshot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteBucket",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteBucket",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "delete_bucket",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteBucketAccessKey",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteBucketAccessKey",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "delete_bucket_access_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCertificate",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCertificate",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "delete_certificate",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteContactMethod",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteContactMethod",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "delete_contact_method",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteContainerImage",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteContainerImage",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "delete_container_image",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteContainerService",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteContainerService",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "delete_container_service",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDisk",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDisk",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "delete_disk",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDiskSnapshot",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDiskSnapshot",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "delete_disk_snapshot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDistribution",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDistribution",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "delete_distribution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDomain",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "delete_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDomainEntry",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDomainEntry",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "delete_domain_entry",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteInstance",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteInstance",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "delete_instance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteInstanceSnapshot",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteInstanceSnapshot",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "delete_instance_snapshot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteKeyPair",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteKeyPair",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "delete_key_pair",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteKnownHostKeys",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteKnownHostKeys",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "delete_known_host_keys",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteLoadBalancer",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteLoadBalancer",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "delete_load_balancer",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteLoadBalancerTlsCertificate",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteLoadBalancerTlsCertificate",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "delete_load_balancer_tls_certificate",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRelationalDatabase",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRelationalDatabase",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "delete_relational_database",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRelationalDatabaseSnapshot",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRelationalDatabaseSnapshot",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "delete_relational_database_snapshot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DetachCertificateFromDistribution",
+      "AuthorizedActions": [
+        {
+          "Name": "DetachCertificateFromDistribution",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "detach_certificate_from_distribution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DetachDisk",
+      "AuthorizedActions": [
+        {
+          "Name": "DetachDisk",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "detach_disk",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DetachInstancesFromLoadBalancer",
+      "AuthorizedActions": [
+        {
+          "Name": "DetachInstancesFromLoadBalancer",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "detach_instances_from_load_balancer",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DetachStaticIp",
+      "AuthorizedActions": [
+        {
+          "Name": "DetachStaticIp",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "detach_static_ip",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisableAddOn",
+      "AuthorizedActions": [
+        {
+          "Name": "DisableAddOn",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "disable_add_on",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DownloadDefaultKeyPair",
+      "AuthorizedActions": [
+        {
+          "Name": "DownloadDefaultKeyPair",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "download_default_key_pair",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "EnableAddOn",
+      "AuthorizedActions": [
+        {
+          "Name": "EnableAddOn",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "enable_add_on",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ExportSnapshot",
+      "AuthorizedActions": [
+        {
+          "Name": "ExportSnapshot",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "export_snapshot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetActiveNames",
+      "AuthorizedActions": [
+        {
+          "Name": "GetActiveNames",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_active_names",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAlarms",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAlarms",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_alarms",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAutoSnapshots",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAutoSnapshots",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_auto_snapshots",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBlueprints",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBlueprints",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_blueprints",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBucketAccessKeys",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBucketAccessKeys",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_bucket_access_keys",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBucketBundles",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBucketBundles",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_bucket_bundles",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBucketMetricData",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBucketMetricData",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_bucket_metric_data",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBuckets",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBuckets",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_buckets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBundles",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBundles",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_bundles",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCertificates",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCertificates",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_certificates",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCloudFormationStackRecords",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCloudFormationStackRecords",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_cloud_formation_stack_records",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetContactMethods",
+      "AuthorizedActions": [
+        {
+          "Name": "GetContactMethods",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_contact_methods",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetContainerAPIMetadata",
+      "AuthorizedActions": [
+        {
+          "Name": "GetContainerAPIMetadata",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_container_api_metadata",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetContainerImages",
+      "AuthorizedActions": [
+        {
+          "Name": "GetContainerImages",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_container_images",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetContainerLog",
+      "AuthorizedActions": [
+        {
+          "Name": "GetContainerLog",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_container_log",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetContainerServiceDeployments",
+      "AuthorizedActions": [
+        {
+          "Name": "GetContainerServiceDeployments",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_container_service_deployments",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetContainerServiceMetricData",
+      "AuthorizedActions": [
+        {
+          "Name": "GetContainerServiceMetricData",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_container_service_metric_data",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetContainerServicePowers",
+      "AuthorizedActions": [
+        {
+          "Name": "GetContainerServicePowers",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_container_service_powers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetContainerServices",
+      "AuthorizedActions": [
+        {
+          "Name": "GetContainerServices",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_container_services",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCostEstimate",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCostEstimate",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_cost_estimate",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDisk",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDisk",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_disk",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDiskSnapshot",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDiskSnapshot",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_disk_snapshot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDiskSnapshots",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDiskSnapshots",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_disk_snapshots",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDisks",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDisks",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_disks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDistributionBundles",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDistributionBundles",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_distribution_bundles",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDistributionLatestCacheReset",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDistributionLatestCacheReset",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_distribution_latest_cache_reset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDistributionMetricData",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDistributionMetricData",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_distribution_metric_data",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDistributions",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDistributions",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_distributions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDomain",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDomains",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDomains",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_domains",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetExportSnapshotRecords",
+      "AuthorizedActions": [
+        {
+          "Name": "GetExportSnapshotRecords",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_export_snapshot_records",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetInstance",
+      "AuthorizedActions": [
+        {
+          "Name": "GetInstance",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_instance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetInstanceAccessDetails",
+      "AuthorizedActions": [
+        {
+          "Name": "GetInstanceAccessDetails",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_instance_access_details",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetInstanceMetricData",
+      "AuthorizedActions": [
+        {
+          "Name": "GetInstanceMetricData",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_instance_metric_data",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetInstancePortStates",
+      "AuthorizedActions": [
+        {
+          "Name": "GetInstancePortStates",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_instance_port_states",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetInstanceSnapshot",
+      "AuthorizedActions": [
+        {
+          "Name": "GetInstanceSnapshot",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_instance_snapshot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetInstanceSnapshots",
+      "AuthorizedActions": [
+        {
+          "Name": "GetInstanceSnapshots",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_instance_snapshots",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetInstanceState",
+      "AuthorizedActions": [
+        {
+          "Name": "GetInstanceState",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_instance_state",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetInstances",
+      "AuthorizedActions": [
+        {
+          "Name": "GetInstances",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_instances",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetKeyPair",
+      "AuthorizedActions": [
+        {
+          "Name": "GetKeyPair",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_key_pair",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetKeyPairs",
+      "AuthorizedActions": [
+        {
+          "Name": "GetKeyPairs",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_key_pairs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetLoadBalancer",
+      "AuthorizedActions": [
+        {
+          "Name": "GetLoadBalancer",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_load_balancer",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetLoadBalancerMetricData",
+      "AuthorizedActions": [
+        {
+          "Name": "GetLoadBalancerMetricData",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_load_balancer_metric_data",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetLoadBalancerTlsCertificates",
+      "AuthorizedActions": [
+        {
+          "Name": "GetLoadBalancerTlsCertificates",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_load_balancer_tls_certificates",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetLoadBalancerTlsPolicies",
+      "AuthorizedActions": [
+        {
+          "Name": "GetLoadBalancerTlsPolicies",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_load_balancer_tls_policies",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetLoadBalancers",
+      "AuthorizedActions": [
+        {
+          "Name": "GetLoadBalancers",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_load_balancers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetOperation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetOperation",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_operation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetOperations",
+      "AuthorizedActions": [
+        {
+          "Name": "GetOperations",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_operations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetOperationsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "GetOperationsForResource",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_operations_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRegions",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRegions",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_regions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRelationalDatabase",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRelationalDatabase",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_relational_database",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRelationalDatabaseBlueprints",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRelationalDatabaseBlueprints",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_relational_database_blueprints",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRelationalDatabaseBundles",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRelationalDatabaseBundles",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_relational_database_bundles",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRelationalDatabaseEvents",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRelationalDatabaseEvents",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_relational_database_events",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRelationalDatabaseLogEvents",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRelationalDatabaseLogEvents",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_relational_database_log_events",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRelationalDatabaseLogStreams",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRelationalDatabaseLogStreams",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_relational_database_log_streams",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRelationalDatabaseMasterUserPassword",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRelationalDatabaseMasterUserPassword",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_relational_database_master_user_password",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRelationalDatabaseMetricData",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRelationalDatabaseMetricData",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_relational_database_metric_data",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRelationalDatabaseParameters",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRelationalDatabaseParameters",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_relational_database_parameters",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRelationalDatabaseSnapshot",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRelationalDatabaseSnapshot",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_relational_database_snapshot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRelationalDatabaseSnapshots",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRelationalDatabaseSnapshots",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_relational_database_snapshots",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRelationalDatabases",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRelationalDatabases",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_relational_databases",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSetupHistory",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSetupHistory",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_setup_history",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetStaticIp",
+      "AuthorizedActions": [
+        {
+          "Name": "GetStaticIp",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_static_ip",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetStaticIps",
+      "AuthorizedActions": [
+        {
+          "Name": "GetStaticIps",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_static_ips",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ImportKeyPair",
+      "AuthorizedActions": [
+        {
+          "Name": "ImportKeyPair",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "import_key_pair",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "IsVpcPeered",
+      "AuthorizedActions": [
+        {
+          "Name": "IsVpcPeered",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "is_vpc_peered",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "OpenInstancePublicPorts",
+      "AuthorizedActions": [
+        {
+          "Name": "OpenInstancePublicPorts",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "open_instance_public_ports",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PeerVpc",
+      "AuthorizedActions": [
+        {
+          "Name": "PeerVpc",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "peer_vpc",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutAlarm",
+      "AuthorizedActions": [
+        {
+          "Name": "PutAlarm",
+          "Service": "lightsail"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "put_alarm",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutInstancePublicPorts",
+      "AuthorizedActions": [
+        {
+          "Name": "PutInstancePublicPorts",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "put_instance_public_ports",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RebootInstance",
+      "AuthorizedActions": [
+        {
+          "Name": "RebootInstance",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "reboot_instance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RebootRelationalDatabase",
+      "AuthorizedActions": [
+        {
+          "Name": "RebootRelationalDatabase",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "reboot_relational_database",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RegisterContainerImage",
+      "AuthorizedActions": [
+        {
+          "Name": "RegisterContainerImage",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "register_container_image",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ReleaseStaticIp",
+      "AuthorizedActions": [
+        {
+          "Name": "ReleaseStaticIp",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "release_static_ip",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ResetDistributionCache",
+      "AuthorizedActions": [
+        {
+          "Name": "ResetDistributionCache",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "reset_distribution_cache",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SendContactMethodVerification",
+      "AuthorizedActions": [
+        {
+          "Name": "SendContactMethodVerification",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "send_contact_method_verification",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SetIpAddressType",
+      "AuthorizedActions": [
+        {
+          "Name": "SetIpAddressType",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "set_ip_address_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SetResourceAccessForBucket",
+      "AuthorizedActions": [
+        {
+          "Name": "SetResourceAccessForBucket",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "set_resource_access_for_bucket",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SetupInstanceHttps",
+      "AuthorizedActions": [
+        {
+          "Name": "SetupInstanceHttps",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "setup_instance_https",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartGUISession",
+      "AuthorizedActions": [
+        {
+          "Name": "StartGUISession",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "start_gui_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartInstance",
+      "AuthorizedActions": [
+        {
+          "Name": "StartInstance",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "start_instance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartRelationalDatabase",
+      "AuthorizedActions": [
+        {
+          "Name": "StartRelationalDatabase",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "start_relational_database",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopGUISession",
+      "AuthorizedActions": [
+        {
+          "Name": "StopGUISession",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "stop_gui_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopInstance",
+      "AuthorizedActions": [
+        {
+          "Name": "StopInstance",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "stop_instance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopRelationalDatabase",
+      "AuthorizedActions": [
+        {
+          "Name": "StopRelationalDatabase",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "stop_relational_database",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TestAlarm",
+      "AuthorizedActions": [
+        {
+          "Name": "TestAlarm",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "test_alarm",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UnpeerVpc",
+      "AuthorizedActions": [
+        {
+          "Name": "UnpeerVpc",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "unpeer_vpc",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateBucket",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateBucket",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "update_bucket",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateBucketBundle",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateBucketBundle",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "update_bucket_bundle",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateContainerService",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateContainerService",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "update_container_service",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDistribution",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDistribution",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "update_distribution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDistributionBundle",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDistributionBundle",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "update_distribution_bundle",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDomainEntry",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDomainEntry",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "update_domain_entry",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateInstanceMetadataOptions",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateInstanceMetadataOptions",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "update_instance_metadata_options",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateLoadBalancerAttribute",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateLoadBalancerAttribute",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "update_load_balancer_attribute",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRelationalDatabase",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateRelationalDatabase",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "update_relational_database",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRelationalDatabaseParameters",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateRelationalDatabaseParameters",
+          "Service": "lightsail"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "update_relational_database_parameters",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "Alarm",
+      "ARNFormats": [
+        "arn:${Partition}:lightsail:${Region}:${Account}:Alarm/${Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Bucket",
+      "ARNFormats": [
+        "arn:${Partition}:lightsail:${Region}:${Account}:Bucket/${Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Certificate",
+      "ARNFormats": [
+        "arn:${Partition}:lightsail:${Region}:${Account}:Certificate/${Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "CloudFormationStackRecord",
+      "ARNFormats": [
+        "arn:${Partition}:lightsail:${Region}:${Account}:CloudFormationStackRecord/${Id}"
+      ]
+    },
+    {
+      "Name": "ContactMethod",
+      "ARNFormats": [
+        "arn:${Partition}:lightsail:${Region}:${Account}:ContactMethod/${Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "ContainerService",
+      "ARNFormats": [
+        "arn:${Partition}:lightsail:${Region}:${Account}:ContainerService/${Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Disk",
+      "ARNFormats": [
+        "arn:${Partition}:lightsail:${Region}:${Account}:Disk/${Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "DiskSnapshot",
+      "ARNFormats": [
+        "arn:${Partition}:lightsail:${Region}:${Account}:DiskSnapshot/${Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Distribution",
+      "ARNFormats": [
+        "arn:${Partition}:lightsail:${Region}:${Account}:Distribution/${Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Domain",
+      "ARNFormats": [
+        "arn:${Partition}:lightsail:${Region}:${Account}:Domain/${Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "ExportSnapshotRecord",
+      "ARNFormats": [
+        "arn:${Partition}:lightsail:${Region}:${Account}:ExportSnapshotRecord/${Id}"
+      ]
+    },
+    {
+      "Name": "Instance",
+      "ARNFormats": [
+        "arn:${Partition}:lightsail:${Region}:${Account}:Instance/${Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "InstanceSnapshot",
+      "ARNFormats": [
+        "arn:${Partition}:lightsail:${Region}:${Account}:InstanceSnapshot/${Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "KeyPair",
+      "ARNFormats": [
+        "arn:${Partition}:lightsail:${Region}:${Account}:KeyPair/${Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "LoadBalancer",
+      "ARNFormats": [
+        "arn:${Partition}:lightsail:${Region}:${Account}:LoadBalancer/${Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "LoadBalancerTlsCertificate",
+      "ARNFormats": [
+        "arn:${Partition}:lightsail:${Region}:${Account}:LoadBalancerTlsCertificate/${Id}"
+      ]
+    },
+    {
+      "Name": "RelationalDatabase",
+      "ARNFormats": [
+        "arn:${Partition}:lightsail:${Region}:${Account}:RelationalDatabase/${Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "RelationalDatabaseSnapshot",
+      "ARNFormats": [
+        "arn:${Partition}:lightsail:${Region}:${Account}:RelationalDatabaseSnapshot/${Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "StaticIp",
+      "ARNFormats": [
+        "arn:${Partition}:lightsail:${Region}:${Account}:StaticIp/${Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

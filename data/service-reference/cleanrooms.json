@@ -1,0 +1,4314 @@
+{
+  "Name": "cleanrooms",
+  "Actions": [
+    {
+      "Name": "BatchGetCollaborationAnalysisTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "analysistemplate"
+        },
+        {
+          "Name": "collaboration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchGetSchema",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "collaboration"
+        },
+        {
+          "Name": "configuredtableassociation"
+        },
+        {
+          "Name": "idmappingtable"
+        },
+        {
+          "Name": "intermediatetable"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchGetSchemaAnalysisRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "collaboration"
+        },
+        {
+          "Name": "configuredtableassociation"
+        },
+        {
+          "Name": "idmappingtable"
+        },
+        {
+          "Name": "intermediatetable"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateAnalysisTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "analysistemplate",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:ResourceTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        },
+        {
+          "Name": "membership",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:ResourceTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateCollaboration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "collaboration",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:ResourceTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateCollaborationChangeRequest",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "collaboration",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:ResourceTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateConfiguredAudienceModelAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "configuredaudiencemodelassociation",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:ResourceTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        },
+        {
+          "Name": "membership",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:ResourceTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateConfiguredTable",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "configuredtable",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:ResourceTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateConfiguredTableAnalysisRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "configuredtable"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateConfiguredTableAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "configuredtable",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:ResourceTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        },
+        {
+          "Name": "configuredtableassociation",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:ResourceTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        },
+        {
+          "Name": "membership",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:ResourceTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateConfiguredTableAssociationAnalysisRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "configuredtableassociation",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:ResourceTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateIdMappingTable",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "idmappingtable",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:ResourceTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        },
+        {
+          "Name": "membership",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:ResourceTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateIdNamespaceAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "idnamespaceassociation",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:ResourceTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        },
+        {
+          "Name": "membership",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:ResourceTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateIntermediateTable",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "analysistemplate"
+        },
+        {
+          "Name": "intermediatetable",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:ResourceTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        },
+        {
+          "Name": "membership",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:ResourceTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateIntermediateTableAnalysisRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "intermediatetable"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateMembership",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "collaboration",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:ResourceTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        },
+        {
+          "Name": "membership",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:ResourceTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreatePrivacyBudgetTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "membership",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:ResourceTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        },
+        {
+          "Name": "privacybudgettemplate",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:ResourceTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteAnalysisTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "analysistemplate"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteCollaboration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "collaboration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteConfiguredAudienceModelAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "configuredaudiencemodelassociation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteConfiguredTable",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "configuredtable"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteConfiguredTableAnalysisRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "configuredtable"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteConfiguredTableAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "configuredtableassociation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteConfiguredTableAssociationAnalysisRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "configuredtableassociation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteIdMappingTable",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "idmappingtable"
+        },
+        {
+          "Name": "membership"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteIdNamespaceAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "idnamespaceassociation"
+        },
+        {
+          "Name": "membership"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteIntermediateTable",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "intermediatetable"
+        },
+        {
+          "Name": "membership"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteIntermediateTableAnalysisRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "intermediatetable"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteMember",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "collaboration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteMembership",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "membership"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeletePrivacyBudgetTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "privacybudgettemplate"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisallowIntermediateTable",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "membership"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAnalysisLogExport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "membership"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAnalysisTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "analysistemplate"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCollaboration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "collaboration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCollaborationAnalysisTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "analysistemplate"
+        },
+        {
+          "Name": "collaboration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCollaborationChangeRequest",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "collaboration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCollaborationConfiguredAudienceModelAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "collaboration"
+        },
+        {
+          "Name": "configuredaudiencemodelassociation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCollaborationIdNamespaceAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "collaboration"
+        },
+        {
+          "Name": "idnamespaceassociation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCollaborationPrivacyBudgetTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "collaboration"
+        },
+        {
+          "Name": "privacybudgettemplate"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetConfiguredAudienceModelAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "configuredaudiencemodelassociation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetConfiguredTable",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "configuredtable"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetConfiguredTableAnalysisRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "configuredtable"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetConfiguredTableAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "configuredtableassociation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetConfiguredTableAssociationAnalysisRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "configuredtableassociation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetIdMappingTable",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "idmappingtable"
+        },
+        {
+          "Name": "membership"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetIdNamespaceAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "idnamespaceassociation"
+        },
+        {
+          "Name": "membership"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetIntermediateTable",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "intermediatetable"
+        },
+        {
+          "Name": "membership"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetIntermediateTableAnalysisRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "intermediatetable"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetMembership",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "membership"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetPrivacyBudgetTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "privacybudgettemplate"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetProtectedJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "membership"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetProtectedQuery",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "membership"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSchema",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "collaboration"
+        },
+        {
+          "Name": "configuredtableassociation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSchemaAnalysisRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "collaboration"
+        },
+        {
+          "Name": "configuredtableassociation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAnalysisLogExports",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "membership"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAnalysisTemplates",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "analysistemplate"
+        },
+        {
+          "Name": "membership"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListCollaborationAnalysisTemplates",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "collaboration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListCollaborationChangeRequests",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "collaboration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListCollaborationConfiguredAudienceModelAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "collaboration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListCollaborationIdNamespaceAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "collaboration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListCollaborationPrivacyBudgetTemplates",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "collaboration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListCollaborationPrivacyBudgets",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "collaboration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListCollaborations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListConfiguredAudienceModelAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "configuredaudiencemodelassociation"
+        },
+        {
+          "Name": "membership"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListConfiguredTableAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "configuredtableassociation"
+        },
+        {
+          "Name": "membership"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListConfiguredTables",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListIdMappingTables",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "idmappingtable"
+        },
+        {
+          "Name": "membership"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListIdNamespaceAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "idnamespaceassociation"
+        },
+        {
+          "Name": "membership"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListIntermediateTableVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "intermediatetable"
+        },
+        {
+          "Name": "membership"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListIntermediateTables",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "intermediatetable"
+        },
+        {
+          "Name": "membership"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListMembers",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "collaboration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListMemberships",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPrivacyBudgetTemplates",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "membership"
+        },
+        {
+          "Name": "privacybudgettemplate"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPrivacyBudgets",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "membership"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListProtectedJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "membership"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListProtectedQueries",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "membership"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListSchemas",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "collaboration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "analysistemplate"
+        },
+        {
+          "Name": "collaboration"
+        },
+        {
+          "Name": "configuredaudiencemodelassociation"
+        },
+        {
+          "Name": "configuredtable"
+        },
+        {
+          "Name": "configuredtableassociation"
+        },
+        {
+          "Name": "intermediatetable"
+        },
+        {
+          "Name": "membership"
+        },
+        {
+          "Name": "privacybudgettemplate"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PassCollaboration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "collaboration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PassMembership",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "membership"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PopulateIdMappingTable",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "idmappingtable"
+        },
+        {
+          "Name": "membership"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PopulateIntermediateTable",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "configuredtableassociation"
+        },
+        {
+          "Name": "idmappingtable"
+        },
+        {
+          "Name": "intermediatetable"
+        },
+        {
+          "Name": "membership"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PreviewPrivacyImpact",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "membership"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartAnalysisLogExport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "membership"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartProtectedJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "analysistemplate"
+        },
+        {
+          "Name": "configuredtableassociation"
+        },
+        {
+          "Name": "intermediatetable"
+        },
+        {
+          "Name": "membership"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartProtectedQuery",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "analysistemplate"
+        },
+        {
+          "Name": "configuredtableassociation"
+        },
+        {
+          "Name": "idmappingtable"
+        },
+        {
+          "Name": "intermediatetable"
+        },
+        {
+          "Name": "membership"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "analysistemplate"
+        },
+        {
+          "Name": "collaboration"
+        },
+        {
+          "Name": "configuredaudiencemodelassociation"
+        },
+        {
+          "Name": "configuredtable"
+        },
+        {
+          "Name": "configuredtableassociation"
+        },
+        {
+          "Name": "idmappingtable"
+        },
+        {
+          "Name": "idnamespaceassociation"
+        },
+        {
+          "Name": "intermediatetable"
+        },
+        {
+          "Name": "membership"
+        },
+        {
+          "Name": "privacybudgettemplate"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "analysistemplate"
+        },
+        {
+          "Name": "collaboration"
+        },
+        {
+          "Name": "configuredaudiencemodelassociation"
+        },
+        {
+          "Name": "configuredtable"
+        },
+        {
+          "Name": "configuredtableassociation"
+        },
+        {
+          "Name": "idmappingtable"
+        },
+        {
+          "Name": "idnamespaceassociation"
+        },
+        {
+          "Name": "intermediatetable"
+        },
+        {
+          "Name": "membership"
+        },
+        {
+          "Name": "privacybudgettemplate"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAnalysisTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "analysistemplate"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateCollaboration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "collaboration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateCollaborationChangeRequest",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "collaboration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateConfiguredAudienceModelAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "configuredaudiencemodelassociation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateConfiguredTable",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "configuredtable"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateConfiguredTableAllowedColumns",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "configuredtable"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateConfiguredTableAnalysisRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "configuredtable"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateConfiguredTableAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "configuredtableassociation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateConfiguredTableAssociationAnalysisRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "configuredtableassociation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateConfiguredTableReference",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "configuredtable"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateIdMappingTable",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "idmappingtable"
+        },
+        {
+          "Name": "membership"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateIdNamespaceAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "idnamespaceassociation"
+        },
+        {
+          "Name": "membership"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateIntermediateTable",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "intermediatetable"
+        },
+        {
+          "Name": "membership"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateIntermediateTableAnalysisRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "intermediatetable"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateMembership",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "membership"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdatePrivacyBudgetTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "privacybudgettemplate"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateProtectedJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "membership"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateProtectedQuery",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "membership"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "BatchGetCollaborationAnalysisTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetCollaborationAnalysisTemplate",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "batch_get_collaboration_analysis_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetSchema",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetSchema",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "batch_get_schema",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetSchemaAnalysisRule",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetSchemaAnalysisRule",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "batch_get_schema_analysis_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAnalysisTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAnalysisTemplate",
+          "Service": "cleanrooms"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "cleanrooms.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "create_analysis_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateCollaboration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCollaboration",
+          "Service": "cleanrooms"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "create_collaboration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateCollaborationChangeRequest",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCollaborationChangeRequest",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "create_collaboration_change_request",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateConfiguredAudienceModelAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateConfiguredAudienceModelAssociation",
+          "Service": "cleanrooms"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "create_configured_audience_model_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateConfiguredTable",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateConfiguredTable",
+          "Service": "cleanrooms"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "create_configured_table",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateConfiguredTableAnalysisRule",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateConfiguredTableAnalysisRule",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "create_configured_table_analysis_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateConfiguredTableAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateConfiguredTableAssociation",
+          "Service": "cleanrooms"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "cleanrooms.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "create_configured_table_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateConfiguredTableAssociationAnalysisRule",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateConfiguredTableAssociationAnalysisRule",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "create_configured_table_association_analysis_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateIdMappingTable",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateIdMappingTable",
+          "Service": "cleanrooms"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "create_id_mapping_table",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateIdNamespaceAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateIdNamespaceAssociation",
+          "Service": "cleanrooms"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "create_id_namespace_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateIntermediateTable",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateIntermediateTable",
+          "Service": "cleanrooms"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "create_intermediate_table",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateIntermediateTableAnalysisRule",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateIntermediateTableAnalysisRule",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "create_intermediate_table_analysis_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateMembership",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateMembership",
+          "Service": "cleanrooms"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "cleanrooms.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "create_membership",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePrivacyBudgetTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "CreatePrivacyBudgetTemplate",
+          "Service": "cleanrooms"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "create_privacy_budget_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAnalysisTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAnalysisTemplate",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "delete_analysis_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCollaboration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCollaboration",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "delete_collaboration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteConfiguredAudienceModelAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteConfiguredAudienceModelAssociation",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "delete_configured_audience_model_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteConfiguredTable",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteConfiguredTable",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "delete_configured_table",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteConfiguredTableAnalysisRule",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteConfiguredTableAnalysisRule",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "delete_configured_table_analysis_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteConfiguredTableAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteConfiguredTableAssociation",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "delete_configured_table_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteConfiguredTableAssociationAnalysisRule",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteConfiguredTableAssociationAnalysisRule",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "delete_configured_table_association_analysis_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteIdMappingTable",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteIdMappingTable",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "delete_id_mapping_table",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteIdNamespaceAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteIdNamespaceAssociation",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "delete_id_namespace_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteIntermediateTable",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteIntermediateTable",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "delete_intermediate_table",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteIntermediateTableAnalysisRule",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteIntermediateTableAnalysisRule",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "delete_intermediate_table_analysis_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteMember",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteMember",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "delete_member",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteMembership",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteMembership",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "delete_membership",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePrivacyBudgetTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "DeletePrivacyBudgetTemplate",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "delete_privacy_budget_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisallowIntermediateTable",
+      "AuthorizedActions": [
+        {
+          "Name": "DisallowIntermediateTable",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "disallow_intermediate_table",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAnalysisLogExport",
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "get_analysis_log_export",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAnalysisTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAnalysisTemplate",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "get_analysis_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCollaboration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCollaboration",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "get_collaboration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCollaborationAnalysisTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCollaborationAnalysisTemplate",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "get_collaboration_analysis_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCollaborationChangeRequest",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCollaborationChangeRequest",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "get_collaboration_change_request",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCollaborationConfiguredAudienceModelAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCollaborationConfiguredAudienceModelAssociation",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "get_collaboration_configured_audience_model_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCollaborationIdNamespaceAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCollaborationIdNamespaceAssociation",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "get_collaboration_id_namespace_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCollaborationPrivacyBudgetTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCollaborationPrivacyBudgetTemplate",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "get_collaboration_privacy_budget_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetConfiguredAudienceModelAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetConfiguredAudienceModelAssociation",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "get_configured_audience_model_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetConfiguredTable",
+      "AuthorizedActions": [
+        {
+          "Name": "GetConfiguredTable",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "get_configured_table",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetConfiguredTableAnalysisRule",
+      "AuthorizedActions": [
+        {
+          "Name": "GetConfiguredTableAnalysisRule",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "get_configured_table_analysis_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetConfiguredTableAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetConfiguredTableAssociation",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "get_configured_table_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetConfiguredTableAssociationAnalysisRule",
+      "AuthorizedActions": [
+        {
+          "Name": "GetConfiguredTableAssociationAnalysisRule",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "get_configured_table_association_analysis_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetIdMappingTable",
+      "AuthorizedActions": [
+        {
+          "Name": "GetIdMappingTable",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "get_id_mapping_table",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetIdNamespaceAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetIdNamespaceAssociation",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "get_id_namespace_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetIntermediateTable",
+      "AuthorizedActions": [
+        {
+          "Name": "GetIntermediateTable",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "get_intermediate_table",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetIntermediateTableAnalysisRule",
+      "AuthorizedActions": [
+        {
+          "Name": "GetIntermediateTableAnalysisRule",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "get_intermediate_table_analysis_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMembership",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMembership",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "get_membership",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPrivacyBudgetTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPrivacyBudgetTemplate",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "get_privacy_budget_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetProtectedJob",
+      "AuthorizedActions": [
+        {
+          "Name": "GetProtectedJob",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "get_protected_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetProtectedQuery",
+      "AuthorizedActions": [
+        {
+          "Name": "GetProtectedQuery",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "get_protected_query",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSchema",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSchema",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "get_schema",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSchemaAnalysisRule",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSchemaAnalysisRule",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "get_schema_analysis_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAnalysisLogExports",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAnalysisLogExports",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "list_analysis_log_exports",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAnalysisTemplates",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAnalysisTemplates",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "list_analysis_templates",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCollaborationAnalysisTemplates",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCollaborationAnalysisTemplates",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "list_collaboration_analysis_templates",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCollaborationChangeRequests",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCollaborationChangeRequests",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "list_collaboration_change_requests",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCollaborationConfiguredAudienceModelAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCollaborationConfiguredAudienceModelAssociations",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "list_collaboration_configured_audience_model_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCollaborationIdNamespaceAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCollaborationIdNamespaceAssociations",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "list_collaboration_id_namespace_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCollaborationPrivacyBudgetTemplates",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCollaborationPrivacyBudgetTemplates",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "list_collaboration_privacy_budget_templates",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCollaborationPrivacyBudgets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCollaborationPrivacyBudgets",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "list_collaboration_privacy_budgets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCollaborations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCollaborations",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "list_collaborations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListConfiguredAudienceModelAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListConfiguredAudienceModelAssociations",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "list_configured_audience_model_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListConfiguredTableAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListConfiguredTableAssociations",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "list_configured_table_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListConfiguredTables",
+      "AuthorizedActions": [
+        {
+          "Name": "ListConfiguredTables",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "list_configured_tables",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListIdMappingTables",
+      "AuthorizedActions": [
+        {
+          "Name": "ListIdMappingTables",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "list_id_mapping_tables",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListIdNamespaceAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListIdNamespaceAssociations",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "list_id_namespace_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListIntermediateTableVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListIntermediateTableVersions",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "list_intermediate_table_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListIntermediateTables",
+      "AuthorizedActions": [
+        {
+          "Name": "ListIntermediateTables",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "list_intermediate_tables",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMembers",
+      "AuthorizedActions": [
+        {
+          "Name": "ListMembers",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "list_members",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMemberships",
+      "AuthorizedActions": [
+        {
+          "Name": "ListMemberships",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "list_memberships",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPrivacyBudgetTemplates",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPrivacyBudgetTemplates",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "list_privacy_budget_templates",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPrivacyBudgets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPrivacyBudgets",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "list_privacy_budgets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProtectedJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProtectedJobs",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "list_protected_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProtectedQueries",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProtectedQueries",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "list_protected_queries",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSchemas",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSchemas",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "list_schemas",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PopulateIdMappingTable",
+      "AuthorizedActions": [
+        {
+          "Name": "PopulateIdMappingTable",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "populate_id_mapping_table",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PopulateIntermediateTable",
+      "AuthorizedActions": [
+        {
+          "Name": "PopulateIntermediateTable",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "populate_intermediate_table",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PreviewPrivacyImpact",
+      "AuthorizedActions": [
+        {
+          "Name": "PreviewPrivacyImpact",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "preview_privacy_impact",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartAnalysisLogExport",
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "start_analysis_log_export",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartProtectedJob",
+      "AuthorizedActions": [
+        {
+          "Name": "StartProtectedJob",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "start_protected_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartProtectedQuery",
+      "AuthorizedActions": [
+        {
+          "Name": "StartProtectedQuery",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "start_protected_query",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAnalysisTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAnalysisTemplate",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "update_analysis_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCollaboration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCollaboration",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "update_collaboration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCollaborationChangeRequest",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCollaborationChangeRequest",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "update_collaboration_change_request",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateConfiguredAudienceModelAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateConfiguredAudienceModelAssociation",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "update_configured_audience_model_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateConfiguredTable",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateConfiguredTable",
+          "Service": "cleanrooms"
+        },
+        {
+          "Name": "UpdateConfiguredTableAllowedColumns",
+          "Service": "cleanrooms"
+        },
+        {
+          "Name": "UpdateConfiguredTableReference",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "update_configured_table",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateConfiguredTableAnalysisRule",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateConfiguredTableAnalysisRule",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "update_configured_table_analysis_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateConfiguredTableAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "cleanrooms.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateConfiguredTableAssociation",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "update_configured_table_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateConfiguredTableAssociationAnalysisRule",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateConfiguredTableAssociationAnalysisRule",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "update_configured_table_association_analysis_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateIdMappingTable",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateIdMappingTable",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "update_id_mapping_table",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateIdNamespaceAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateIdNamespaceAssociation",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "update_id_namespace_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateIntermediateTable",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateIntermediateTable",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "update_intermediate_table",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateIntermediateTableAnalysisRule",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateIntermediateTableAnalysisRule",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "update_intermediate_table_analysis_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateMembership",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "cleanrooms.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateMembership",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "update_membership",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdatePrivacyBudgetTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdatePrivacyBudgetTemplate",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "update_privacy_budget_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateProtectedJob",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateProtectedJob",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "update_protected_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateProtectedQuery",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateProtectedQuery",
+          "Service": "cleanrooms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cleanrooms",
+          "Method": "update_protected_query",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "analysistemplate",
+      "ARNFormats": [
+        "arn:${Partition}:cleanrooms:${Region}:${Account}:membership/${MembershipId}/analysistemplate/${AnalysisTemplateId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "collaboration",
+      "ARNFormats": [
+        "arn:${Partition}:cleanrooms:${Region}:${Account}:collaboration/${CollaborationId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "configuredaudiencemodelassociation",
+      "ARNFormats": [
+        "arn:${Partition}:cleanrooms:${Region}:${Account}:membership/${MembershipId}/configuredaudiencemodelassociation/${ConfiguredAudienceModelAssociationId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "configuredtable",
+      "ARNFormats": [
+        "arn:${Partition}:cleanrooms:${Region}:${Account}:configuredtable/${ConfiguredTableId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "configuredtableassociation",
+      "ARNFormats": [
+        "arn:${Partition}:cleanrooms:${Region}:${Account}:membership/${MembershipId}/configuredtableassociation/${ConfiguredTableAssociationId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "idmappingtable",
+      "ARNFormats": [
+        "arn:${Partition}:cleanrooms:${Region}:${Account}:membership/${MembershipId}/idmappingtable/${IdMappingTableId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "idnamespaceassociation",
+      "ARNFormats": [
+        "arn:${Partition}:cleanrooms:${Region}:${Account}:membership/${MembershipId}/idnamespaceassociation/${IdNamespaceAssociationId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "intermediatetable",
+      "ARNFormats": [
+        "arn:${Partition}:cleanrooms:${Region}:${Account}:membership/${MembershipId}/intermediatetable/${IntermediateTableId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "membership",
+      "ARNFormats": [
+        "arn:${Partition}:cleanrooms:${Region}:${Account}:membership/${MembershipId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "privacybudgettemplate",
+      "ARNFormats": [
+        "arn:${Partition}:cleanrooms:${Region}:${Account}:membership/${MembershipId}/privacybudgettemplate/${PrivacyBudgetTemplateId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

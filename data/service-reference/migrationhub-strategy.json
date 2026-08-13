@@ -1,0 +1,825 @@
+{
+  "Name": "migrationhub-strategy",
+  "Actions": [
+    {
+      "Name": "GetAntiPattern",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetApplicationComponentDetails",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetApplicationComponentStrategies",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetAssessment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetImportFileTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetLatestAssessmentId",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetMessage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetPortfolioPreferences",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetPortfolioSummary",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetRecommendationReportDetails",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetServerDetails",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetServerStrategies",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAnalyzableServers",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAntiPatterns",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListApplicationComponents",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListCollectors",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListImportFileTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListJarArtifacts",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListServers",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutLogData",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutMetricData",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutPortfolioPreferences",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RegisterCollector",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SendMessage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartAssessment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartImportFileTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartRecommendationReportGeneration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopAssessment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateApplicationComponentConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateCollectorConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateServerConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "GetApplicationComponentDetails",
+      "AuthorizedActions": [
+        {
+          "Name": "GetApplicationComponentDetails",
+          "Service": "migrationhub-strategy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migrationhubstrategy",
+          "Method": "get_application_component_details",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetApplicationComponentStrategies",
+      "AuthorizedActions": [
+        {
+          "Name": "GetApplicationComponentStrategies",
+          "Service": "migrationhub-strategy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migrationhubstrategy",
+          "Method": "get_application_component_strategies",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAssessment",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAssessment",
+          "Service": "migrationhub-strategy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migrationhubstrategy",
+          "Method": "get_assessment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetImportFileTask",
+      "AuthorizedActions": [
+        {
+          "Name": "GetImportFileTask",
+          "Service": "migrationhub-strategy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migrationhubstrategy",
+          "Method": "get_import_file_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetLatestAssessmentId",
+      "AuthorizedActions": [
+        {
+          "Name": "GetLatestAssessmentId",
+          "Service": "migrationhub-strategy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migrationhubstrategy",
+          "Method": "get_latest_assessment_id",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPortfolioPreferences",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPortfolioPreferences",
+          "Service": "migrationhub-strategy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migrationhubstrategy",
+          "Method": "get_portfolio_preferences",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPortfolioSummary",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPortfolioSummary",
+          "Service": "migrationhub-strategy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migrationhubstrategy",
+          "Method": "get_portfolio_summary",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRecommendationReportDetails",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRecommendationReportDetails",
+          "Service": "migrationhub-strategy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migrationhubstrategy",
+          "Method": "get_recommendation_report_details",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetServerDetails",
+      "AuthorizedActions": [
+        {
+          "Name": "GetServerDetails",
+          "Service": "migrationhub-strategy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migrationhubstrategy",
+          "Method": "get_server_details",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetServerStrategies",
+      "AuthorizedActions": [
+        {
+          "Name": "GetServerStrategies",
+          "Service": "migrationhub-strategy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migrationhubstrategy",
+          "Method": "get_server_strategies",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAnalyzableServers",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAnalyzableServers",
+          "Service": "migrationhub-strategy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migrationhubstrategy",
+          "Method": "list_analyzable_servers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListApplicationComponents",
+      "AuthorizedActions": [
+        {
+          "Name": "ListApplicationComponents",
+          "Service": "migrationhub-strategy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migrationhubstrategy",
+          "Method": "list_application_components",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCollectors",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCollectors",
+          "Service": "migrationhub-strategy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migrationhubstrategy",
+          "Method": "list_collectors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListImportFileTask",
+      "AuthorizedActions": [
+        {
+          "Name": "ListImportFileTask",
+          "Service": "migrationhub-strategy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migrationhubstrategy",
+          "Method": "list_import_file_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListServers",
+      "AuthorizedActions": [
+        {
+          "Name": "ListServers",
+          "Service": "migrationhub-strategy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migrationhubstrategy",
+          "Method": "list_servers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutPortfolioPreferences",
+      "AuthorizedActions": [
+        {
+          "Name": "PutPortfolioPreferences",
+          "Service": "migrationhub-strategy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migrationhubstrategy",
+          "Method": "put_portfolio_preferences",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartAssessment",
+      "AuthorizedActions": [
+        {
+          "Name": "StartAssessment",
+          "Service": "migrationhub-strategy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migrationhubstrategy",
+          "Method": "start_assessment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartImportFileTask",
+      "AuthorizedActions": [
+        {
+          "Name": "StartImportFileTask",
+          "Service": "migrationhub-strategy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migrationhubstrategy",
+          "Method": "start_import_file_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartRecommendationReportGeneration",
+      "AuthorizedActions": [
+        {
+          "Name": "StartRecommendationReportGeneration",
+          "Service": "migrationhub-strategy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migrationhubstrategy",
+          "Method": "start_recommendation_report_generation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopAssessment",
+      "AuthorizedActions": [
+        {
+          "Name": "StopAssessment",
+          "Service": "migrationhub-strategy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migrationhubstrategy",
+          "Method": "stop_assessment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateApplicationComponentConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateApplicationComponentConfig",
+          "Service": "migrationhub-strategy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migrationhubstrategy",
+          "Method": "update_application_component_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateServerConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateServerConfig",
+          "Service": "migrationhub-strategy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migrationhubstrategy",
+          "Method": "update_server_config",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

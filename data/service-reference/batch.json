@@ -1,0 +1,2038 @@
+{
+  "Name": "batch",
+  "Actions": [
+    {
+      "Name": "CancelJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateComputeEnvironment",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "compute-environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateConsumableResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "consumable-resource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateJobQueue",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "compute-environment"
+        },
+        {
+          "Name": "job-queue"
+        },
+        {
+          "Name": "scheduling-policy"
+        },
+        {
+          "Name": "service-environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateQuotaShare",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "job-queue"
+        },
+        {
+          "Name": "quota-share"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateSchedulingPolicy",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "scheduling-policy"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateServiceEnvironment",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service-environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteComputeEnvironment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "compute-environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteConsumableResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "consumable-resource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteJobQueue",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "job-queue"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteQuotaShare",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "quota-share"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteSchedulingPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "scheduling-policy"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteServiceEnvironment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service-environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeregisterJobDefinition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "job-definition-revision"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeComputeEnvironments",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeConsumableResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "consumable-resource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeJobDefinitions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeJobQueues",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeQuotaShare",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "quota-share"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeSchedulingPolicies",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeServiceEnvironments",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeServiceJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetJobQueueSnapshot",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "job-queue"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListConsumableResources",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListJobsByConsumableResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "consumable-resource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListQuotaShares",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "job-queue"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListSchedulingPolicies",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListServiceJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "compute-environment"
+        },
+        {
+          "Name": "consumable-resource"
+        },
+        {
+          "Name": "job"
+        },
+        {
+          "Name": "job-definition-revision"
+        },
+        {
+          "Name": "job-queue"
+        },
+        {
+          "Name": "quota-share"
+        },
+        {
+          "Name": "scheduling-policy"
+        },
+        {
+          "Name": "service-environment"
+        },
+        {
+          "Name": "service-job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RegisterJobDefinition",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "batch:AWSLogsCreateGroup",
+        "batch:AWSLogsGroup",
+        "batch:AWSLogsRegion",
+        "batch:AWSLogsStreamPrefix",
+        "batch:EKSImage",
+        "batch:EKSNamespace",
+        "batch:EKSPrivileged",
+        "batch:EKSRunAsGroup",
+        "batch:EKSRunAsUser",
+        "batch:EKSServiceAccountName",
+        "batch:Image",
+        "batch:LogDriver",
+        "batch:Privileged",
+        "batch:User"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "consumable-resource"
+        },
+        {
+          "Name": "job-definition",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SubmitJob",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "consumable-resource"
+        },
+        {
+          "Name": "job",
+          "ConditionKeys": [
+            "batch:EKSImage",
+            "batch:EKSNamespace",
+            "batch:ShareIdentifier"
+          ]
+        },
+        {
+          "Name": "job-definition"
+        },
+        {
+          "Name": "job-definition-revision"
+        },
+        {
+          "Name": "job-queue"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SubmitServiceJob",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "batch:SchedulingPriority"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "job-queue"
+        },
+        {
+          "Name": "quota-share"
+        },
+        {
+          "Name": "service-job",
+          "ConditionKeys": [
+            "batch:ShareIdentifier"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "compute-environment"
+        },
+        {
+          "Name": "consumable-resource"
+        },
+        {
+          "Name": "job"
+        },
+        {
+          "Name": "job-definition-revision"
+        },
+        {
+          "Name": "job-queue"
+        },
+        {
+          "Name": "quota-share"
+        },
+        {
+          "Name": "scheduling-policy"
+        },
+        {
+          "Name": "service-environment"
+        },
+        {
+          "Name": "service-job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TerminateJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TerminateServiceJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service-job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "compute-environment"
+        },
+        {
+          "Name": "consumable-resource"
+        },
+        {
+          "Name": "job"
+        },
+        {
+          "Name": "job-definition-revision"
+        },
+        {
+          "Name": "job-queue"
+        },
+        {
+          "Name": "quota-share"
+        },
+        {
+          "Name": "scheduling-policy"
+        },
+        {
+          "Name": "service-environment"
+        },
+        {
+          "Name": "service-job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateComputeEnvironment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "compute-environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateConsumableResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "consumable-resource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateJobQueue",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "compute-environment"
+        },
+        {
+          "Name": "job-queue"
+        },
+        {
+          "Name": "scheduling-policy"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateQuotaShare",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "quota-share"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateSchedulingPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "scheduling-policy"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateServiceEnvironment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service-environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateServiceJob",
+      "ActionConditionKeys": [
+        "batch:SchedulingPriority"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service-job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "batch:AWSLogsCreateGroup",
+      "Types": [
+        "Bool"
+      ]
+    },
+    {
+      "Name": "batch:AWSLogsGroup",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "batch:AWSLogsRegion",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "batch:AWSLogsStreamPrefix",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "batch:EKSImage",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "batch:EKSNamespace",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "batch:EKSPrivileged",
+      "Types": [
+        "Bool"
+      ]
+    },
+    {
+      "Name": "batch:EKSRunAsGroup",
+      "Types": [
+        "Numeric"
+      ]
+    },
+    {
+      "Name": "batch:EKSRunAsUser",
+      "Types": [
+        "Numeric"
+      ]
+    },
+    {
+      "Name": "batch:EKSServiceAccountName",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "batch:Image",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "batch:LogDriver",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "batch:Privileged",
+      "Types": [
+        "Bool"
+      ]
+    },
+    {
+      "Name": "batch:SchedulingPriority",
+      "Types": [
+        "Numeric"
+      ]
+    },
+    {
+      "Name": "batch:ShareIdentifier",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "batch:User",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CancelJob",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelJob",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "cancel_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateComputeEnvironment",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateComputeEnvironment",
+          "Service": "batch"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "batch.amazonaws.com",
+              "ec2.amazonaws.com",
+              "ecs.amazonaws.com",
+              "spotfleet.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "create_compute_environment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateConsumableResource",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateConsumableResource",
+          "Service": "batch"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "create_consumable_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateJobQueue",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateJobQueue",
+          "Service": "batch"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "create_job_queue",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateQuotaShare",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateQuotaShare",
+          "Service": "batch"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "create_quota_share",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSchedulingPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSchedulingPolicy",
+          "Service": "batch"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "create_scheduling_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateServiceEnvironment",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateServiceEnvironment",
+          "Service": "batch"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "create_service_environment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteComputeEnvironment",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteComputeEnvironment",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "delete_compute_environment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteConsumableResource",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteConsumableResource",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "delete_consumable_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteJobQueue",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteJobQueue",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "delete_job_queue",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteQuotaShare",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteQuotaShare",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "delete_quota_share",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSchedulingPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSchedulingPolicy",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "delete_scheduling_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteServiceEnvironment",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteServiceEnvironment",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "delete_service_environment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeregisterJobDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "DeregisterJobDefinition",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "deregister_job_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeComputeEnvironments",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeComputeEnvironments",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "describe_compute_environments",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeConsumableResource",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeConsumableResource",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "describe_consumable_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeJobDefinitions",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeJobDefinitions",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "describe_job_definitions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeJobQueues",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeJobQueues",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "describe_job_queues",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeJobs",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "describe_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeQuotaShare",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeQuotaShare",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "describe_quota_share",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSchedulingPolicies",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSchedulingPolicies",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "describe_scheduling_policies",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeServiceEnvironments",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeServiceEnvironments",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "describe_service_environments",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeServiceJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeServiceJob",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "describe_service_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetJobQueueSnapshot",
+      "AuthorizedActions": [
+        {
+          "Name": "GetJobQueueSnapshot",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "get_job_queue_snapshot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListConsumableResources",
+      "AuthorizedActions": [
+        {
+          "Name": "ListConsumableResources",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "list_consumable_resources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListJobs",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "list_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListJobsByConsumableResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListJobsByConsumableResource",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "list_jobs_by_consumable_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListQuotaShares",
+      "AuthorizedActions": [
+        {
+          "Name": "ListQuotaShares",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "list_quota_shares",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSchedulingPolicies",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSchedulingPolicies",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "list_scheduling_policies",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListServiceJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListServiceJobs",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "list_service_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RegisterJobDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "ecs-tasks.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "RegisterJobDefinition",
+          "Service": "batch"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "register_job_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SubmitJob",
+      "AuthorizedActions": [
+        {
+          "Name": "SubmitJob",
+          "Service": "batch"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "submit_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SubmitServiceJob",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "sagemaker.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "SubmitServiceJob",
+          "Service": "batch"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "submit_service_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TerminateJob",
+      "AuthorizedActions": [
+        {
+          "Name": "TerminateJob",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "terminate_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TerminateServiceJob",
+      "AuthorizedActions": [
+        {
+          "Name": "TerminateServiceJob",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "terminate_service_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateComputeEnvironment",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "batch.amazonaws.com",
+              "ec2.amazonaws.com",
+              "ecs.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateComputeEnvironment",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "update_compute_environment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateConsumableResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateConsumableResource",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "update_consumable_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateJobQueue",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateJobQueue",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "update_job_queue",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateQuotaShare",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateQuotaShare",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "update_quota_share",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSchedulingPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSchedulingPolicy",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "update_scheduling_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateServiceEnvironment",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateServiceEnvironment",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "update_service_environment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateServiceJob",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateServiceJob",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "update_service_job",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "compute-environment",
+      "ARNFormats": [
+        "arn:${Partition}:batch:${Region}:${Account}:compute-environment/${ComputeEnvironmentName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "consumable-resource",
+      "ARNFormats": [
+        "arn:${Partition}:batch:${Region}:${Account}:consumable-resource/${ConsumableResourceName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "job",
+      "ARNFormats": [
+        "arn:${Partition}:batch:${Region}:${Account}:job/${JobId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "job-definition",
+      "ARNFormats": [
+        "arn:${Partition}:batch:${Region}:${Account}:job-definition/${JobDefinitionName}"
+      ]
+    },
+    {
+      "Name": "job-definition-revision",
+      "ARNFormats": [
+        "arn:${Partition}:batch:${Region}:${Account}:job-definition/${JobDefinitionName}:${Revision}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "job-queue",
+      "ARNFormats": [
+        "arn:${Partition}:batch:${Region}:${Account}:job-queue/${JobQueueName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "quota-share",
+      "ARNFormats": [
+        "arn:${Partition}:batch:${Region}:${Account}:job-queue/${JobQueueName}/quota-share/${QuotaShareName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "scheduling-policy",
+      "ARNFormats": [
+        "arn:${Partition}:batch:${Region}:${Account}:scheduling-policy/${SchedulingPolicyName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "service-environment",
+      "ARNFormats": [
+        "arn:${Partition}:batch:${Region}:${Account}:service-environment/${ServiceEnvironmentName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "service-job",
+      "ARNFormats": [
+        "arn:${Partition}:batch:${Region}:${Account}:service-job/${JobId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

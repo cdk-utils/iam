@@ -1,0 +1,1818 @@
+{
+  "Name": "payment-cryptography",
+  "Actions": [
+    {
+      "Name": "AddKeyReplicationRegions",
+      "ActionConditionKeys": [
+        "payment-cryptography:RequestAlias"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "alias"
+        },
+        {
+          "Name": "key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AssociateMpaTeam",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "approval-team"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateAlias",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "alias"
+        },
+        {
+          "Name": "key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateKey",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "payment-cryptography:KeyAlgorithm",
+        "payment-cryptography:KeyClass",
+        "payment-cryptography:KeyUsage"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DecryptData",
+      "ActionConditionKeys": [
+        "payment-cryptography:RequestAlias"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "alias"
+        },
+        {
+          "Name": "key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteAlias",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "alias"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteKey",
+      "ActionConditionKeys": [
+        "payment-cryptography:RequestAlias"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisableDefaultKeyReplicationRegions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateMpaTeam",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "approval-team"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "EnableDefaultKeyReplicationRegions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "EncryptData",
+      "ActionConditionKeys": [
+        "payment-cryptography:RequestAlias"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "alias"
+        },
+        {
+          "Name": "key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ExportKey",
+      "ActionConditionKeys": [
+        "payment-cryptography:CertificateAuthorityPublicKeyIdentifier",
+        "payment-cryptography:RequestAlias",
+        "payment-cryptography:WrappingKeyIdentifier"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GenerateAs2805KekValidation",
+      "ActionConditionKeys": [
+        "payment-cryptography:RequestAlias"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "alias"
+        },
+        {
+          "Name": "key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GenerateCardValidationData",
+      "ActionConditionKeys": [
+        "payment-cryptography:RequestAlias"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "alias"
+        },
+        {
+          "Name": "key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GenerateMac",
+      "ActionConditionKeys": [
+        "payment-cryptography:RequestAlias"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "alias"
+        },
+        {
+          "Name": "key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GenerateMacEmvPinChange",
+      "ActionConditionKeys": [
+        "payment-cryptography:RequestAlias"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "alias"
+        },
+        {
+          "Name": "key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GeneratePinData",
+      "ActionConditionKeys": [
+        "payment-cryptography:RequestAlias"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "alias"
+        },
+        {
+          "Name": "key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAlias",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "alias"
+        },
+        {
+          "Name": "key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCertificateSigningRequest",
+      "ActionConditionKeys": [
+        "payment-cryptography:RequestAlias"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "alias"
+        },
+        {
+          "Name": "key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDefaultKeyReplicationRegions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetKey",
+      "ActionConditionKeys": [
+        "payment-cryptography:RequestAlias"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetMpaTeamAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "approval-team"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetParametersForExport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetParametersForImport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetPublicKeyCertificate",
+      "ActionConditionKeys": [
+        "payment-cryptography:RequestAlias"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ImportKey",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "payment-cryptography:CertificateAuthorityPublicKeyIdentifier",
+        "payment-cryptography:ImportKeyMaterial",
+        "payment-cryptography:WrappingKeyIdentifier"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAliases",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListKeys",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ReEncryptData",
+      "ActionConditionKeys": [
+        "payment-cryptography:RequestAlias"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "alias"
+        },
+        {
+          "Name": "key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RemoveKeyReplicationRegions",
+      "ActionConditionKeys": [
+        "payment-cryptography:RequestAlias"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "alias"
+        },
+        {
+          "Name": "key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RestoreKey",
+      "ActionConditionKeys": [
+        "payment-cryptography:RequestAlias"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartKeyUsage",
+      "ActionConditionKeys": [
+        "payment-cryptography:RequestAlias"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StopKeyUsage",
+      "ActionConditionKeys": [
+        "payment-cryptography:RequestAlias"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TranslateKeyMaterial",
+      "ActionConditionKeys": [
+        "payment-cryptography:RequestAlias"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "alias"
+        },
+        {
+          "Name": "key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TranslatePinData",
+      "ActionConditionKeys": [
+        "payment-cryptography:RequestAlias"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "alias"
+        },
+        {
+          "Name": "key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAlias",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "alias"
+        },
+        {
+          "Name": "key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "VerifyAuthRequestCryptogram",
+      "ActionConditionKeys": [
+        "payment-cryptography:RequestAlias"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "alias"
+        },
+        {
+          "Name": "key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "VerifyCardValidationData",
+      "ActionConditionKeys": [
+        "payment-cryptography:RequestAlias"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "alias"
+        },
+        {
+          "Name": "key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "VerifyMac",
+      "ActionConditionKeys": [
+        "payment-cryptography:RequestAlias"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "alias"
+        },
+        {
+          "Name": "key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "VerifyPinData",
+      "ActionConditionKeys": [
+        "payment-cryptography:RequestAlias"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "alias"
+        },
+        {
+          "Name": "key"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "payment-cryptography:CertificateAuthorityPublicKeyIdentifier",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "payment-cryptography:ImportKeyMaterial",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "payment-cryptography:KeyAlgorithm",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "payment-cryptography:KeyClass",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "payment-cryptography:KeyUsage",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "payment-cryptography:RequestAlias",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "payment-cryptography:ResourceAliases",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "payment-cryptography:WrappingKeyIdentifier",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AddKeyReplicationRegions",
+      "AuthorizedActions": [
+        {
+          "Name": "AddKeyReplicationRegions",
+          "Service": "payment-cryptography"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "payment-cryptography",
+          "Method": "add_key_replication_regions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateMpaTeam",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateMpaTeam",
+          "Service": "payment-cryptography"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "payment-cryptography",
+          "Method": "associate_mpa_team",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAlias",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAlias",
+          "Service": "payment-cryptography"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "payment-cryptography",
+          "Method": "create_alias",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateKey",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateKey",
+          "Service": "payment-cryptography"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "payment-cryptography"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "payment-cryptography",
+          "Method": "create_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DecryptData",
+      "SDK": [
+        {
+          "Name": "payment-cryptography-data",
+          "Method": "decrypt_data",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAlias",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAlias",
+          "Service": "payment-cryptography"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "payment-cryptography",
+          "Method": "delete_alias",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteKey",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteKey",
+          "Service": "payment-cryptography"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "payment-cryptography",
+          "Method": "delete_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteResourcePolicy",
+          "Service": "payment-cryptography"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "payment-cryptography",
+          "Method": "delete_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisableDefaultKeyReplicationRegions",
+      "AuthorizedActions": [
+        {
+          "Name": "DisableDefaultKeyReplicationRegions",
+          "Service": "payment-cryptography"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "payment-cryptography",
+          "Method": "disable_default_key_replication_regions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateMpaTeam",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateMpaTeam",
+          "Service": "payment-cryptography"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "payment-cryptography",
+          "Method": "disassociate_mpa_team",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "EnableDefaultKeyReplicationRegions",
+      "AuthorizedActions": [
+        {
+          "Name": "EnableDefaultKeyReplicationRegions",
+          "Service": "payment-cryptography"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "payment-cryptography",
+          "Method": "enable_default_key_replication_regions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "EncryptData",
+      "SDK": [
+        {
+          "Name": "payment-cryptography-data",
+          "Method": "encrypt_data",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ExportKey",
+      "AuthorizedActions": [
+        {
+          "Name": "ExportKey",
+          "Service": "payment-cryptography"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "payment-cryptography",
+          "Method": "export_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GenerateAs2805KekValidation",
+      "SDK": [
+        {
+          "Name": "payment-cryptography-data",
+          "Method": "generate_as2805_kek_validation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GenerateAuthRequestCryptogram",
+      "SDK": [
+        {
+          "Name": "payment-cryptography-data",
+          "Method": "generate_auth_request_cryptogram",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GenerateCardValidationData",
+      "SDK": [
+        {
+          "Name": "payment-cryptography-data",
+          "Method": "generate_card_validation_data",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GenerateMac",
+      "SDK": [
+        {
+          "Name": "payment-cryptography-data",
+          "Method": "generate_mac",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GenerateMacEmvPinChange",
+      "SDK": [
+        {
+          "Name": "payment-cryptography-data",
+          "Method": "generate_mac_emv_pin_change",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GeneratePinData",
+      "SDK": [
+        {
+          "Name": "payment-cryptography-data",
+          "Method": "generate_pin_data",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAlias",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAlias",
+          "Service": "payment-cryptography"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "payment-cryptography",
+          "Method": "get_alias",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCertificateSigningRequest",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCertificateSigningRequest",
+          "Service": "payment-cryptography"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "payment-cryptography",
+          "Method": "get_certificate_signing_request",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDefaultKeyReplicationRegions",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDefaultKeyReplicationRegions",
+          "Service": "payment-cryptography"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "payment-cryptography",
+          "Method": "get_default_key_replication_regions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetKey",
+      "AuthorizedActions": [
+        {
+          "Name": "GetKey",
+          "Service": "payment-cryptography"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "payment-cryptography",
+          "Method": "get_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMpaTeamAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMpaTeamAssociation",
+          "Service": "payment-cryptography"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "payment-cryptography",
+          "Method": "get_mpa_team_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetParametersForExport",
+      "AuthorizedActions": [
+        {
+          "Name": "GetParametersForExport",
+          "Service": "payment-cryptography"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "payment-cryptography",
+          "Method": "get_parameters_for_export",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetParametersForImport",
+      "AuthorizedActions": [
+        {
+          "Name": "GetParametersForImport",
+          "Service": "payment-cryptography"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "payment-cryptography",
+          "Method": "get_parameters_for_import",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPublicKeyCertificate",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPublicKeyCertificate",
+          "Service": "payment-cryptography"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "payment-cryptography",
+          "Method": "get_public_key_certificate",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResourcePolicy",
+          "Service": "payment-cryptography"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "payment-cryptography",
+          "Method": "get_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ImportKey",
+      "AuthorizedActions": [
+        {
+          "Name": "ImportKey",
+          "Service": "payment-cryptography"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "payment-cryptography"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "payment-cryptography",
+          "Method": "import_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAliases",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAliases",
+          "Service": "payment-cryptography"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "payment-cryptography",
+          "Method": "list_aliases",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListKeys",
+      "AuthorizedActions": [
+        {
+          "Name": "ListKeys",
+          "Service": "payment-cryptography"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "payment-cryptography",
+          "Method": "list_keys",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "payment-cryptography"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "payment-cryptography",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PutResourcePolicy",
+          "Service": "payment-cryptography"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "payment-cryptography",
+          "Method": "put_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ReEncryptData",
+      "SDK": [
+        {
+          "Name": "payment-cryptography-data",
+          "Method": "re_encrypt_data",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RemoveKeyReplicationRegions",
+      "AuthorizedActions": [
+        {
+          "Name": "RemoveKeyReplicationRegions",
+          "Service": "payment-cryptography"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "payment-cryptography",
+          "Method": "remove_key_replication_regions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RestoreKey",
+      "AuthorizedActions": [
+        {
+          "Name": "RestoreKey",
+          "Service": "payment-cryptography"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "payment-cryptography",
+          "Method": "restore_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartKeyUsage",
+      "AuthorizedActions": [
+        {
+          "Name": "StartKeyUsage",
+          "Service": "payment-cryptography"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "payment-cryptography",
+          "Method": "start_key_usage",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopKeyUsage",
+      "AuthorizedActions": [
+        {
+          "Name": "StopKeyUsage",
+          "Service": "payment-cryptography"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "payment-cryptography",
+          "Method": "stop_key_usage",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "payment-cryptography"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "payment-cryptography",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TranslateKeyMaterial",
+      "SDK": [
+        {
+          "Name": "payment-cryptography-data",
+          "Method": "translate_key_material",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TranslatePinData",
+      "SDK": [
+        {
+          "Name": "payment-cryptography-data",
+          "Method": "translate_pin_data",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "payment-cryptography"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "payment-cryptography",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAlias",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAlias",
+          "Service": "payment-cryptography"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "payment-cryptography",
+          "Method": "update_alias",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "VerifyAuthRequestCryptogram",
+      "SDK": [
+        {
+          "Name": "payment-cryptography-data",
+          "Method": "verify_auth_request_cryptogram",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "VerifyCardValidationData",
+      "SDK": [
+        {
+          "Name": "payment-cryptography-data",
+          "Method": "verify_card_validation_data",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "VerifyMac",
+      "SDK": [
+        {
+          "Name": "payment-cryptography-data",
+          "Method": "verify_mac",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "VerifyPinData",
+      "SDK": [
+        {
+          "Name": "payment-cryptography-data",
+          "Method": "verify_pin_data",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "alias",
+      "ARNFormats": [
+        "arn:${Partition}:payment-cryptography:${Region}:${Account}:alias/${Alias}"
+      ],
+      "ConditionKeys": [
+        "payment-cryptography:ResourceAliases"
+      ]
+    },
+    {
+      "Name": "approval-team",
+      "ARNFormats": [
+        "arn:${Partition}:mpa:${Region}:${Account}:approval-team/${ApprovalTeamId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "key",
+      "ARNFormats": [
+        "arn:${Partition}:payment-cryptography:${Region}:${Account}:key/${KeyId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "payment-cryptography:ResourceAliases"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

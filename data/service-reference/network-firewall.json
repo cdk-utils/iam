@@ -1,0 +1,3420 @@
+{
+  "Name": "network-firewall",
+  "Actions": [
+    {
+      "Name": "AcceptNetworkFirewallTransitGatewayAttachment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Firewall"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AssociateAvailabilityZones",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Firewall"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AssociateFirewallPolicy",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Firewall"
+        },
+        {
+          "Name": "FirewallPolicy"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AssociateSubnets",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Firewall"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AttachRuleGroupsToProxyConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProxyConfiguration"
+        },
+        {
+          "Name": "ProxyRuleGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateContainerAssociation",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ContainerAssociation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateFirewall",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Firewall"
+        },
+        {
+          "Name": "FirewallPolicy"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateFirewallPolicy",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "FirewallPolicy"
+        },
+        {
+          "Name": "StatefulRuleGroup"
+        },
+        {
+          "Name": "StatelessRuleGroup"
+        },
+        {
+          "Name": "TLSInspectionConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateProxy",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Proxy"
+        },
+        {
+          "Name": "ProxyConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateProxyConfiguration",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProxyConfiguration"
+        },
+        {
+          "Name": "ProxyRuleGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateProxyRuleGroup",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProxyRuleGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateProxyRules",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProxyRuleGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateRuleGroup",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "StatefulRuleGroup"
+        },
+        {
+          "Name": "StatelessRuleGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateTLSInspectionConfiguration",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "TLSInspectionConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateVpcEndpointAssociation",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Firewall"
+        },
+        {
+          "Name": "VpcEndpointAssociation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteContainerAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ContainerAssociation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteFirewall",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Firewall"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteFirewallPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "FirewallPolicy"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteNetworkFirewallTransitGatewayAttachment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Firewall"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteProxy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Proxy"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteProxyConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProxyConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteProxyRuleGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProxyRuleGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteProxyRules",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProxyRuleGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Firewall"
+        },
+        {
+          "Name": "FirewallPolicy"
+        },
+        {
+          "Name": "StatefulRuleGroup"
+        },
+        {
+          "Name": "StatelessRuleGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteRuleGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "StatefulRuleGroup"
+        },
+        {
+          "Name": "StatelessRuleGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteTLSInspectionConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "TLSInspectionConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteVpcEndpointAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "VpcEndpointAssociation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeContainerAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ContainerAssociation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeFirewall",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Firewall"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeFirewallMetadata",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Firewall"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeFirewallPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "FirewallPolicy"
+        },
+        {
+          "Name": "StatefulRuleGroup"
+        },
+        {
+          "Name": "StatelessRuleGroup"
+        },
+        {
+          "Name": "TLSInspectionConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeFlowOperation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Firewall"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeLoggingConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Firewall"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeProxy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Proxy"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeProxyConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProxyConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeProxyRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProxyRuleGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeProxyRuleGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProxyRuleGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Firewall"
+        },
+        {
+          "Name": "FirewallPolicy"
+        },
+        {
+          "Name": "StatefulRuleGroup"
+        },
+        {
+          "Name": "StatelessRuleGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeRuleGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "StatefulRuleGroup"
+        },
+        {
+          "Name": "StatelessRuleGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeRuleGroupMetadata",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "StatefulRuleGroup"
+        },
+        {
+          "Name": "StatelessRuleGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeRuleGroupSummary",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "StatefulRuleGroup"
+        },
+        {
+          "Name": "StatelessRuleGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeTLSInspectionConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "TLSInspectionConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeVpcEndpointAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "VpcEndpointAssociation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DetachRuleGroupsFromProxyConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProxyConfiguration"
+        },
+        {
+          "Name": "ProxyRuleGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateAvailabilityZones",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Firewall"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateSubnets",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Firewall"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAnalysisReportResults",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Firewall"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAnalysisReports",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Firewall"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListContainerAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListFirewallPolicies",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "FirewallPolicy"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListFirewalls",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Firewall"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListFlowOperationResults",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Firewall"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListFlowOperations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Firewall"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListProxies",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Proxy"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListProxyConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProxyConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListProxyRuleGroups",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProxyRuleGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListRuleGroups",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTLSInspectionConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "TLSInspectionConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ContainerAssociation"
+        },
+        {
+          "Name": "Firewall"
+        },
+        {
+          "Name": "FirewallPolicy"
+        },
+        {
+          "Name": "StatefulRuleGroup"
+        },
+        {
+          "Name": "StatelessRuleGroup"
+        },
+        {
+          "Name": "TLSInspectionConfiguration"
+        },
+        {
+          "Name": "VpcEndpointAssociation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListVpcEndpointAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "VpcEndpointAssociation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Firewall"
+        },
+        {
+          "Name": "FirewallPolicy"
+        },
+        {
+          "Name": "StatefulRuleGroup"
+        },
+        {
+          "Name": "StatelessRuleGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RejectNetworkFirewallTransitGatewayAttachment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Firewall"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartAnalysisReport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Firewall"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartFlowCapture",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Firewall"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartFlowFlush",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Firewall"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ContainerAssociation"
+        },
+        {
+          "Name": "Firewall"
+        },
+        {
+          "Name": "FirewallPolicy"
+        },
+        {
+          "Name": "Proxy"
+        },
+        {
+          "Name": "ProxyConfiguration"
+        },
+        {
+          "Name": "ProxyRuleGroup"
+        },
+        {
+          "Name": "StatefulRuleGroup"
+        },
+        {
+          "Name": "StatelessRuleGroup"
+        },
+        {
+          "Name": "TLSInspectionConfiguration"
+        },
+        {
+          "Name": "VpcEndpointAssociation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ContainerAssociation"
+        },
+        {
+          "Name": "Firewall"
+        },
+        {
+          "Name": "FirewallPolicy"
+        },
+        {
+          "Name": "Proxy"
+        },
+        {
+          "Name": "ProxyConfiguration"
+        },
+        {
+          "Name": "ProxyRuleGroup"
+        },
+        {
+          "Name": "StatefulRuleGroup"
+        },
+        {
+          "Name": "StatelessRuleGroup"
+        },
+        {
+          "Name": "TLSInspectionConfiguration"
+        },
+        {
+          "Name": "VpcEndpointAssociation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAvailabilityZoneChangeProtection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Firewall"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateContainerAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ContainerAssociation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateFirewallAnalysisSettings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Firewall"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateFirewallDeleteProtection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Firewall"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateFirewallDescription",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Firewall"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateFirewallEncryptionConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Firewall"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateFirewallPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "FirewallPolicy"
+        },
+        {
+          "Name": "StatefulRuleGroup"
+        },
+        {
+          "Name": "StatelessRuleGroup"
+        },
+        {
+          "Name": "TLSInspectionConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateFirewallPolicyChangeProtection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Firewall"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateLoggingConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Firewall"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateProxy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Proxy"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateProxyConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProxyConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateProxyRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProxyRuleGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateProxyRuleGroupPriorities",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProxyConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateProxyRulePriorities",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProxyRuleGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateRuleGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "StatefulRuleGroup"
+        },
+        {
+          "Name": "StatelessRuleGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateSubnetChangeProtection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Firewall"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateTLSInspectionConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "TLSInspectionConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AcceptNetworkFirewallTransitGatewayAttachment",
+      "AuthorizedActions": [
+        {
+          "Name": "AcceptNetworkFirewallTransitGatewayAttachment",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "accept_network_firewall_transit_gateway_attachment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateAvailabilityZones",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateAvailabilityZones",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "associate_availability_zones",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateFirewallPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateFirewallPolicy",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "associate_firewall_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateSubnets",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateSubnets",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "associate_subnets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AttachRuleGroupsToProxyConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "AttachRuleGroupsToProxyConfiguration",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "attach_rule_groups_to_proxy_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateContainerAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateContainerAssociation",
+          "Service": "network-firewall"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "create_container_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateFirewall",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateFirewallPolicy",
+          "Service": "network-firewall"
+        },
+        {
+          "Name": "CreateFirewall",
+          "Service": "network-firewall"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "create_firewall",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateFirewallPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateFirewallPolicy",
+          "Service": "network-firewall"
+        },
+        {
+          "Name": "ListRuleGroups",
+          "Service": "network-firewall"
+        },
+        {
+          "Name": "ListTLSInspectionConfigurations",
+          "Service": "network-firewall"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "create_firewall_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateProxy",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateProxy",
+          "Service": "network-firewall"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "create_proxy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateProxyConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "AttachRuleGroupsToProxyConfiguration",
+          "Service": "network-firewall"
+        },
+        {
+          "Name": "CreateProxyConfiguration",
+          "Service": "network-firewall"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "create_proxy_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateProxyRuleGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateProxyRuleGroup",
+          "Service": "network-firewall"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "create_proxy_rule_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateProxyRules",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateProxyRules",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "create_proxy_rules",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRuleGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRuleGroup",
+          "Service": "network-firewall"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "create_rule_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateTLSInspectionConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateTLSInspectionConfiguration",
+          "Service": "network-firewall"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "create_tls_inspection_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateVpcEndpointAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateVpcEndpointAssociation",
+          "Service": "network-firewall"
+        },
+        {
+          "Name": "ListFirewalls",
+          "Service": "network-firewall"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "create_vpc_endpoint_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteContainerAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteContainerAssociation",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "delete_container_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteFirewall",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteFirewall",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "delete_firewall",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteFirewallPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteFirewallPolicy",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "delete_firewall_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteNetworkFirewallTransitGatewayAttachment",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteNetworkFirewallTransitGatewayAttachment",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "delete_network_firewall_transit_gateway_attachment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteProxy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteProxy",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "delete_proxy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteProxyConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteProxyConfiguration",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "delete_proxy_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteProxyRuleGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteProxyRuleGroup",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "delete_proxy_rule_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteProxyRules",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteProxyRules",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "delete_proxy_rules",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteResourcePolicy",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "delete_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRuleGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRuleGroup",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "delete_rule_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteTLSInspectionConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteTLSInspectionConfiguration",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "delete_tls_inspection_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteVpcEndpointAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteVpcEndpointAssociation",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "delete_vpc_endpoint_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeContainerAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeContainerAssociation",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "describe_container_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeFirewall",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeFirewall",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "describe_firewall",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeFirewallMetadata",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeFirewallMetadata",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "describe_firewall_metadata",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeFirewallPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeFirewallPolicy",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "describe_firewall_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeFlowOperation",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeFlowOperation",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "describe_flow_operation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeLoggingConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeLoggingConfiguration",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "describe_logging_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeProxy",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeProxy",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "describe_proxy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeProxyConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeProxyConfiguration",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "describe_proxy_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeProxyRule",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeProxyRule",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "describe_proxy_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeProxyRuleGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeProxyRuleGroup",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "describe_proxy_rule_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeResourcePolicy",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "describe_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeRuleGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeRuleGroup",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "describe_rule_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeRuleGroupMetadata",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeRuleGroupMetadata",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "describe_rule_group_metadata",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeRuleGroupSummary",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeRuleGroupSummary",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "describe_rule_group_summary",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeTLSInspectionConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeTLSInspectionConfiguration",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "describe_tls_inspection_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeVpcEndpointAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeVpcEndpointAssociation",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "describe_vpc_endpoint_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DetachRuleGroupsFromProxyConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DetachRuleGroupsFromProxyConfiguration",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "detach_rule_groups_from_proxy_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateAvailabilityZones",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateAvailabilityZones",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "disassociate_availability_zones",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateSubnets",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateSubnets",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "disassociate_subnets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAnalysisReportResults",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAnalysisReportResults",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "get_analysis_report_results",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAnalysisReports",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAnalysisReports",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "list_analysis_reports",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListContainerAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListContainerAssociations",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "list_container_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFirewallPolicies",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFirewallPolicies",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "list_firewall_policies",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFirewalls",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFirewalls",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "list_firewalls",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFlowOperationResults",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFlowOperationResults",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "list_flow_operation_results",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFlowOperations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFlowOperations",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "list_flow_operations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProxies",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProxies",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "list_proxies",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProxyConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProxyConfigurations",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "list_proxy_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProxyRuleGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProxyRuleGroups",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "list_proxy_rule_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRuleGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRuleGroups",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "list_rule_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTLSInspectionConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTLSInspectionConfigurations",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "list_tls_inspection_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListVpcEndpointAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListVpcEndpointAssociations",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "list_vpc_endpoint_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PutResourcePolicy",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "put_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RejectNetworkFirewallTransitGatewayAttachment",
+      "AuthorizedActions": [
+        {
+          "Name": "RejectNetworkFirewallTransitGatewayAttachment",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "reject_network_firewall_transit_gateway_attachment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartAnalysisReport",
+      "AuthorizedActions": [
+        {
+          "Name": "StartAnalysisReport",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "start_analysis_report",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartFlowCapture",
+      "AuthorizedActions": [
+        {
+          "Name": "StartFlowCapture",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "start_flow_capture",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartFlowFlush",
+      "AuthorizedActions": [
+        {
+          "Name": "StartFlowFlush",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "start_flow_flush",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAvailabilityZoneChangeProtection",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAvailabilityZoneChangeProtection",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "update_availability_zone_change_protection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateContainerAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateContainerAssociation",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "update_container_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateFirewallAnalysisSettings",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateFirewallAnalysisSettings",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "update_firewall_analysis_settings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateFirewallDeleteProtection",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateFirewallDeleteProtection",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "update_firewall_delete_protection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateFirewallDescription",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateFirewallDescription",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "update_firewall_description",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateFirewallEncryptionConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateFirewallEncryptionConfiguration",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "update_firewall_encryption_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateFirewallPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRuleGroups",
+          "Service": "network-firewall"
+        },
+        {
+          "Name": "ListTLSInspectionConfigurations",
+          "Service": "network-firewall"
+        },
+        {
+          "Name": "UpdateFirewallPolicy",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "update_firewall_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateFirewallPolicyChangeProtection",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateFirewallPolicyChangeProtection",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "update_firewall_policy_change_protection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateLoggingConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateLoggingConfiguration",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "update_logging_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateProxy",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateProxy",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "update_proxy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateProxyConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateProxyConfiguration",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "update_proxy_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateProxyRule",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateProxyRule",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "update_proxy_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateProxyRuleGroupPriorities",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateProxyRuleGroupPriorities",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "update_proxy_rule_group_priorities",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateProxyRulePriorities",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateProxyRulePriorities",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "update_proxy_rule_priorities",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateProxySettings",
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "update_proxy_settings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRuleGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateRuleGroup",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "update_rule_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSubnetChangeProtection",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSubnetChangeProtection",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "update_subnet_change_protection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateTLSInspectionConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateTLSInspectionConfiguration",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "update_tls_inspection_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "ContainerAssociation",
+      "ARNFormats": [
+        "arn:${Partition}:network-firewall:${Region}:${Account}:container-association/${Name}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Firewall",
+      "ARNFormats": [
+        "arn:${Partition}:network-firewall:${Region}:${Account}:firewall/${Name}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "FirewallPolicy",
+      "ARNFormats": [
+        "arn:${Partition}:network-firewall:${Region}:${Account}:firewall-policy/${Name}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Proxy",
+      "ARNFormats": [
+        "arn:${Partition}:network-firewall:${Region}:${Account}:proxy/${Name}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "ProxyConfiguration",
+      "ARNFormats": [
+        "arn:${Partition}:network-firewall:${Region}:${Account}:proxy-configuration/${Name}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "ProxyRuleGroup",
+      "ARNFormats": [
+        "arn:${Partition}:network-firewall:${Region}:${Account}:proxy-rule-group/${Name}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "StatefulRuleGroup",
+      "ARNFormats": [
+        "arn:${Partition}:network-firewall:${Region}:${Account}:stateful-rulegroup/${Name}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "StatelessRuleGroup",
+      "ARNFormats": [
+        "arn:${Partition}:network-firewall:${Region}:${Account}:stateless-rulegroup/${Name}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "TLSInspectionConfiguration",
+      "ARNFormats": [
+        "arn:${Partition}:network-firewall:${Region}:${Account}:tls-configuration/${Name}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "VpcEndpointAssociation",
+      "ARNFormats": [
+        "arn:${Partition}:network-firewall:${Region}:${Account}:vpc-endpoint-association/${Name}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

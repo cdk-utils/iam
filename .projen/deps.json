@@ -6,7 +6,7 @@
       "type": "build"
     },
     {
-      "name": "@cdk-utils/projen_template",
+      "name": "@cdk_utils/projen_template",
       "type": "build"
     },
     {
@@ -64,6 +64,10 @@
     },
     {
       "name": "ts-node",
+      "type": "build"
+    },
+    {
+      "name": "tsx",
       "type": "build"
     },
     {

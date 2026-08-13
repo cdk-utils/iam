@@ -1,0 +1,998 @@
+{
+  "Name": "resource-groups",
+  "Actions": [
+    {
+      "Name": "AssociateResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CancelTagSyncTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateGroup",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteGroupPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAccountSettings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetGroupConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetGroupPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetGroupQuery",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetTagSyncTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetTags",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GroupResources",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListGroupResources",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListGroupingStatuses",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListGroups",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListResourceTypes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagSyncTasks",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutGroupConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutGroupPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SearchResources",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartTagSyncTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "Tag",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UngroupResources",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "Untag",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAccountSettings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateGroupQuery",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CancelTagSyncTask",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelTagSyncTask",
+          "Service": "resource-groups"
+        },
+        {
+          "Name": "DeleteGroup",
+          "Service": "resource-groups"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-groups",
+          "Method": "cancel_tag_sync_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateGroup",
+          "Service": "resource-groups"
+        },
+        {
+          "Name": "Tag",
+          "Service": "resource-groups"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-groups",
+          "Method": "create_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteGroup",
+          "Service": "resource-groups"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-groups",
+          "Method": "delete_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAccountSettings",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAccountSettings",
+          "Service": "resource-groups"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-groups",
+          "Method": "get_account_settings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "GetGroup",
+          "Service": "resource-groups"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-groups",
+          "Method": "get_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetGroupConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetGroupConfiguration",
+          "Service": "resource-groups"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-groups",
+          "Method": "get_group_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetGroupQuery",
+      "AuthorizedActions": [
+        {
+          "Name": "GetGroupQuery",
+          "Service": "resource-groups"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-groups",
+          "Method": "get_group_query",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetTagSyncTask",
+      "AuthorizedActions": [
+        {
+          "Name": "GetTagSyncTask",
+          "Service": "resource-groups"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-groups",
+          "Method": "get_tag_sync_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetTags",
+      "AuthorizedActions": [
+        {
+          "Name": "GetTags",
+          "Service": "resource-groups"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-groups",
+          "Method": "get_tags",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GroupResources",
+      "AuthorizedActions": [
+        {
+          "Name": "GroupResources",
+          "Service": "resource-groups"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-groups",
+          "Method": "group_resources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListGroupResources",
+      "AuthorizedActions": [
+        {
+          "Name": "ListGroupResources",
+          "Service": "resource-groups"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-groups",
+          "Method": "list_group_resources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListGroupingStatuses",
+      "AuthorizedActions": [
+        {
+          "Name": "ListGroupingStatuses",
+          "Service": "resource-groups"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-groups",
+          "Method": "list_grouping_statuses",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "ListGroups",
+          "Service": "resource-groups"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-groups",
+          "Method": "list_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagSyncTasks",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagSyncTasks",
+          "Service": "resource-groups"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-groups",
+          "Method": "list_tag_sync_tasks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutGroupConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "PutGroupConfiguration",
+          "Service": "resource-groups"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-groups",
+          "Method": "put_group_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SearchResources",
+      "AuthorizedActions": [
+        {
+          "Name": "SearchResources",
+          "Service": "resource-groups"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-groups",
+          "Method": "search_resources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartTagSyncTask",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateGroup",
+          "Service": "resource-groups"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "resource-groups.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartTagSyncTask",
+          "Service": "resource-groups"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-groups",
+          "Method": "start_tag_sync_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "Tag",
+      "AuthorizedActions": [
+        {
+          "Name": "Tag",
+          "Service": "resource-groups"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-groups",
+          "Method": "tag",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UngroupResources",
+      "AuthorizedActions": [
+        {
+          "Name": "UngroupResources",
+          "Service": "resource-groups"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-groups",
+          "Method": "ungroup_resources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "Untag",
+      "AuthorizedActions": [
+        {
+          "Name": "Untag",
+          "Service": "resource-groups"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-groups",
+          "Method": "untag",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAccountSettings",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAccountSettings",
+          "Service": "resource-groups"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-groups",
+          "Method": "update_account_settings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateGroup",
+          "Service": "resource-groups"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-groups",
+          "Method": "update_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateGroupQuery",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateGroupQuery",
+          "Service": "resource-groups"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resource-groups",
+          "Method": "update_group_query",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "group",
+      "ARNFormats": [
+        "arn:${Partition}:resource-groups:${Region}:${Account}:group/${GroupName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "tagSyncTask",
+      "ARNFormats": [
+        "arn:${Partition}:resource-groups:${Region}:${Account}:group/${GroupName}/tag-sync-task/${TaskId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

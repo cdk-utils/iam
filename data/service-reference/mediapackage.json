@@ -1,0 +1,783 @@
+{
+  "Name": "mediapackage",
+  "Actions": [
+    {
+      "Name": "ConfigureLogs",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channels"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateChannel",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateHarvestJob",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateOriginEndpoint",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channels"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteOriginEndpoint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "origin_endpoints"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channels"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeHarvestJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "harvest_jobs"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeOriginEndpoint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "origin_endpoints"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListChannels",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListHarvestJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListOriginEndpoints",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channels"
+        },
+        {
+          "Name": "harvest_jobs"
+        },
+        {
+          "Name": "origin_endpoints"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RotateChannelCredentials",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channels"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RotateIngestEndpointCredentials",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channels"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channels"
+        },
+        {
+          "Name": "harvest_jobs"
+        },
+        {
+          "Name": "origin_endpoints"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channels"
+        },
+        {
+          "Name": "harvest_jobs"
+        },
+        {
+          "Name": "origin_endpoints"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channels"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateOriginEndpoint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "origin_endpoints"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "ConfigureLogs",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateChannel",
+          "Service": "mediapackage"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediapackage",
+          "Method": "configure_logs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateChannel",
+          "Service": "mediapackage"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "mediapackage"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediapackage",
+          "Method": "create_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateHarvestJob",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateHarvestJob",
+          "Service": "mediapackage"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "mediapackage.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediapackage",
+          "Method": "create_harvest_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateOriginEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateOriginEndpoint",
+          "Service": "mediapackage"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "mediapackage.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "mediapackage"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediapackage",
+          "Method": "create_origin_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteChannel",
+          "Service": "mediapackage"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediapackage",
+          "Method": "delete_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteOriginEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteOriginEndpoint",
+          "Service": "mediapackage"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediapackage",
+          "Method": "delete_origin_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeChannel",
+          "Service": "mediapackage"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediapackage",
+          "Method": "describe_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeHarvestJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeHarvestJob",
+          "Service": "mediapackage"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediapackage",
+          "Method": "describe_harvest_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeOriginEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeOriginEndpoint",
+          "Service": "mediapackage"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediapackage",
+          "Method": "describe_origin_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListChannels",
+      "AuthorizedActions": [
+        {
+          "Name": "ListChannels",
+          "Service": "mediapackage"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediapackage",
+          "Method": "list_channels",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListHarvestJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListHarvestJobs",
+          "Service": "mediapackage"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediapackage",
+          "Method": "list_harvest_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListOriginEndpoints",
+      "AuthorizedActions": [
+        {
+          "Name": "ListOriginEndpoints",
+          "Service": "mediapackage"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediapackage",
+          "Method": "list_origin_endpoints",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "mediapackage"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediapackage",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RotateChannelCredentials",
+      "AuthorizedActions": [
+        {
+          "Name": "RotateChannelCredentials",
+          "Service": "mediapackage"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediapackage",
+          "Method": "rotate_channel_credentials",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RotateIngestEndpointCredentials",
+      "AuthorizedActions": [
+        {
+          "Name": "RotateIngestEndpointCredentials",
+          "Service": "mediapackage"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediapackage",
+          "Method": "rotate_ingest_endpoint_credentials",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "mediapackage"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediapackage",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "mediapackage"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediapackage",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateChannel",
+          "Service": "mediapackage"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediapackage",
+          "Method": "update_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateOriginEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "mediapackage.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateOriginEndpoint",
+          "Service": "mediapackage"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediapackage",
+          "Method": "update_origin_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "channels",
+      "ARNFormats": [
+        "arn:${Partition}:mediapackage:${Region}:${Account}:channels/${ChannelIdentifier}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "harvest_jobs",
+      "ARNFormats": [
+        "arn:${Partition}:mediapackage:${Region}:${Account}:harvest_jobs/${HarvestJobIdentifier}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "origin_endpoints",
+      "ARNFormats": [
+        "arn:${Partition}:mediapackage:${Region}:${Account}:origin_endpoints/${OriginEndpointIdentifier}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

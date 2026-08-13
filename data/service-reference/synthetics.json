@@ -1,0 +1,942 @@
+{
+  "Name": "synthetics",
+  "Actions": [
+    {
+      "Name": "AssociateResource",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateCanary",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateGroup",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteCanary",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "canary"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteGroup",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeCanaries",
+      "ActionConditionKeys": [
+        "synthetics:Names"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeCanariesLastRun",
+      "ActionConditionKeys": [
+        "synthetics:Names"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeRuntimeVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateResource",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCanary",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "canary"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCanaryRuns",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "canary"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetGroup",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAssociatedGroups",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "canary"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListGroupResources",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListGroups",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "canary"
+        },
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartCanary",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "canary"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartCanaryDryRun",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "canary"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopCanary",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "canary"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "canary"
+        },
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "canary"
+        },
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateCanary",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "canary"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "synthetics:Names",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AssociateResource",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateResource",
+          "Service": "synthetics"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "synthetics",
+          "Method": "associate_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateCanary",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCanary",
+          "Service": "synthetics"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "synthetics.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "synthetics"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "synthetics",
+          "Method": "create_canary",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateGroup",
+          "Service": "synthetics"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "synthetics"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "synthetics",
+          "Method": "create_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCanary",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCanary",
+          "Service": "synthetics"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "synthetics",
+          "Method": "delete_canary",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteGroup",
+          "Service": "synthetics"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "synthetics",
+          "Method": "delete_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeCanaries",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeCanaries",
+          "Service": "synthetics"
+        },
+        {
+          "Name": "ListTagsForResource",
+          "Service": "synthetics"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "synthetics",
+          "Method": "describe_canaries",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeCanariesLastRun",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeCanariesLastRun",
+          "Service": "synthetics"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "synthetics",
+          "Method": "describe_canaries_last_run",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeRuntimeVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeRuntimeVersions",
+          "Service": "synthetics"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "synthetics",
+          "Method": "describe_runtime_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateResource",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateResource",
+          "Service": "synthetics"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "synthetics",
+          "Method": "disassociate_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCanary",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCanary",
+          "Service": "synthetics"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "synthetics",
+          "Method": "get_canary",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCanaryRuns",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCanaryRuns",
+          "Service": "synthetics"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "synthetics",
+          "Method": "get_canary_runs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "GetGroup",
+          "Service": "synthetics"
+        },
+        {
+          "Name": "ListTagsForResource",
+          "Service": "synthetics"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "synthetics",
+          "Method": "get_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAssociatedGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAssociatedGroups",
+          "Service": "synthetics"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "synthetics",
+          "Method": "list_associated_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListGroupResources",
+      "AuthorizedActions": [
+        {
+          "Name": "ListGroupResources",
+          "Service": "synthetics"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "synthetics",
+          "Method": "list_group_resources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "ListGroups",
+          "Service": "synthetics"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "synthetics",
+          "Method": "list_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "synthetics"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "synthetics",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartCanary",
+      "AuthorizedActions": [
+        {
+          "Name": "StartCanary",
+          "Service": "synthetics"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "synthetics",
+          "Method": "start_canary",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartCanaryDryRun",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "synthetics.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartCanaryDryRun",
+          "Service": "synthetics"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "synthetics",
+          "Method": "start_canary_dry_run",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopCanary",
+      "AuthorizedActions": [
+        {
+          "Name": "StopCanary",
+          "Service": "synthetics"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "synthetics",
+          "Method": "stop_canary",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "synthetics"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "synthetics",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "synthetics"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "synthetics",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCanary",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "synthetics.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateCanary",
+          "Service": "synthetics"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "synthetics",
+          "Method": "update_canary",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "canary",
+      "ARNFormats": [
+        "arn:${Partition}:synthetics:${Region}:${Account}:canary:${CanaryName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "group",
+      "ARNFormats": [
+        "arn:${Partition}:synthetics:${Region}:${Account}:group:${GroupId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

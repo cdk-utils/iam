@@ -1,0 +1,966 @@
+{
+  "Name": "grafana",
+  "Actions": [
+    {
+      "Name": "AssociateLicense",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateWorkspace",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateWorkspaceApiKey",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateWorkspaceServiceAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateWorkspaceServiceAccountToken",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteWorkspace",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteWorkspaceApiKey",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteWorkspaceServiceAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteWorkspaceServiceAccountToken",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeWorkspace",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeWorkspaceAuthentication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeWorkspaceConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateLicense",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListPermissions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListWorkspaceServiceAccountTokens",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListWorkspaceServiceAccounts",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListWorkspaces",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdatePermissions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateWorkspace",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateWorkspaceAuthentication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateWorkspaceConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AssociateLicense",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateLicense",
+          "Service": "grafana"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "grafana",
+          "Method": "associate_license",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateWorkspace",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateWorkspace",
+          "Service": "grafana"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "grafana.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "grafana"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "grafana",
+          "Method": "create_workspace",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateWorkspaceApiKey",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateWorkspaceApiKey",
+          "Service": "grafana"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "grafana",
+          "Method": "create_workspace_api_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateWorkspaceServiceAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateWorkspaceServiceAccount",
+          "Service": "grafana"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "grafana",
+          "Method": "create_workspace_service_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateWorkspaceServiceAccountToken",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateWorkspaceServiceAccountToken",
+          "Service": "grafana"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "grafana",
+          "Method": "create_workspace_service_account_token",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteWorkspace",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteWorkspace",
+          "Service": "grafana"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "grafana",
+          "Method": "delete_workspace",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteWorkspaceApiKey",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteWorkspaceApiKey",
+          "Service": "grafana"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "grafana",
+          "Method": "delete_workspace_api_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteWorkspaceServiceAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteWorkspaceServiceAccount",
+          "Service": "grafana"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "grafana",
+          "Method": "delete_workspace_service_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteWorkspaceServiceAccountToken",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteWorkspaceServiceAccountToken",
+          "Service": "grafana"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "grafana",
+          "Method": "delete_workspace_service_account_token",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeWorkspace",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeWorkspace",
+          "Service": "grafana"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "grafana",
+          "Method": "describe_workspace",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeWorkspaceAuthentication",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeWorkspaceAuthentication",
+          "Service": "grafana"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "grafana",
+          "Method": "describe_workspace_authentication",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeWorkspaceConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeWorkspaceConfiguration",
+          "Service": "grafana"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "grafana",
+          "Method": "describe_workspace_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateLicense",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateLicense",
+          "Service": "grafana"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "grafana",
+          "Method": "disassociate_license",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPermissions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPermissions",
+          "Service": "grafana"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "grafana",
+          "Method": "list_permissions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "grafana"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "grafana",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeWorkspace",
+          "Service": "grafana"
+        },
+        {
+          "Name": "ListVersions",
+          "Service": "grafana"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "grafana",
+          "Method": "list_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListWorkspaceServiceAccountTokens",
+      "AuthorizedActions": [
+        {
+          "Name": "ListWorkspaceServiceAccountTokens",
+          "Service": "grafana"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "grafana",
+          "Method": "list_workspace_service_account_tokens",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListWorkspaceServiceAccounts",
+      "AuthorizedActions": [
+        {
+          "Name": "ListWorkspaceServiceAccounts",
+          "Service": "grafana"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "grafana",
+          "Method": "list_workspace_service_accounts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListWorkspaces",
+      "AuthorizedActions": [
+        {
+          "Name": "ListWorkspaces",
+          "Service": "grafana"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "grafana",
+          "Method": "list_workspaces",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "grafana"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "grafana",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "grafana"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "grafana",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdatePermissions",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdatePermissions",
+          "Service": "grafana"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "grafana",
+          "Method": "update_permissions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateWorkspace",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "grafana.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateWorkspace",
+          "Service": "grafana"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "grafana",
+          "Method": "update_workspace",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateWorkspaceAuthentication",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateWorkspaceAuthentication",
+          "Service": "grafana"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "grafana",
+          "Method": "update_workspace_authentication",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateWorkspaceConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateWorkspaceConfiguration",
+          "Service": "grafana"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "grafana",
+          "Method": "update_workspace_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "workspace",
+      "ARNFormats": [
+        "arn:${Partition}:grafana:${Region}:${Account}:/workspaces/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

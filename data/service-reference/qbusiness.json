@@ -1,0 +1,3722 @@
+{
+  "Name": "qbusiness",
+  "Actions": [
+    {
+      "Name": "AllowVendedLogDeliveryForResource",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AssociatePermission",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchDeleteDocument",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchPutDocument",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CancelSubscription",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "subscription"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "Chat",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ChatSync",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CheckDocumentAccess",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateAnonymousWebExperienceUrl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "web-experience"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateApplication",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateChatResponseConfiguration",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateDataAccessor",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateDataAccessorWithTti",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateDataSource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateIndex",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateIntegration",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreatePlugin",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateRetriever",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateSubscription",
+      "ActionConditionKeys": [
+        "identitystore:GroupId",
+        "identitystore:UserId"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateUser",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateWebExperience",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteAttachment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteChatControlsConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteChatResponseConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "chat-response-configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteConversation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteDataAccessor",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "data-accessor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteDataSource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "data-source"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteIndex",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteIntegration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "integration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeletePlugin",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "plugin"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteRetriever",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "retriever"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteUser",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteWebExperience",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "web-experience"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisableAclOnDataSource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociatePermission",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetChatControlsConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetChatResponseConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "chat-response-configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDataAccessor",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "data-accessor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDataSource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "data-source"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDocumentContent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetIndex",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetIntegration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "integration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetMedia",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetPlugin",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "plugin"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetRetriever",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "retriever"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetUser",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetWebExperience",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "web-experience"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListApplications",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAttachments",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListChatResponseConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListConversations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDataAccessors",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDataSourceSyncJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "data-source"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDataSources",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDocuments",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListGroups",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListIndices",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListIntegrations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListMessages",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPluginActions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "plugin"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPluginTypeActions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPluginTypeMetadata",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPlugins",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListRetrievers",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListSubscriptions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "chat-response-configuration"
+        },
+        {
+          "Name": "data-accessor"
+        },
+        {
+          "Name": "data-source"
+        },
+        {
+          "Name": "index"
+        },
+        {
+          "Name": "integration"
+        },
+        {
+          "Name": "plugin"
+        },
+        {
+          "Name": "retriever"
+        },
+        {
+          "Name": "web-experience"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListWebExperiences",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutFeedback",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SearchRelevantContent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartDataSourceSyncJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "data-source"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartDeployment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "integration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StopDataSourceSyncJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "data-source"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "chat-response-configuration"
+        },
+        {
+          "Name": "data-accessor"
+        },
+        {
+          "Name": "data-source"
+        },
+        {
+          "Name": "index"
+        },
+        {
+          "Name": "integration"
+        },
+        {
+          "Name": "plugin"
+        },
+        {
+          "Name": "retriever"
+        },
+        {
+          "Name": "web-experience"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "chat-response-configuration"
+        },
+        {
+          "Name": "data-accessor"
+        },
+        {
+          "Name": "data-source"
+        },
+        {
+          "Name": "index"
+        },
+        {
+          "Name": "integration"
+        },
+        {
+          "Name": "plugin"
+        },
+        {
+          "Name": "retriever"
+        },
+        {
+          "Name": "web-experience"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateChatControlsConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateChatResponseConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "chat-response-configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateDataAccessor",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "data-accessor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateDataSource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "data-source"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateIndex",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateIntegration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "integration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdatePlugin",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "plugin"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateRetriever",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "retriever"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateSubscription",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "subscription"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateUser",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateWebExperience",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "web-experience"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "identitystore:GroupId",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "identitystore:UserId",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AssociatePermission",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociatePermission",
+          "Service": "qbusiness"
+        },
+        {
+          "Name": "PutResourcePolicy",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "associate_permission",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchDeleteDocument",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchDeleteDocument",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "batch_delete_document",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchPutDocument",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchPutDocument",
+          "Service": "qbusiness"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "qbusiness.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "batch_put_document",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelSubscription",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelSubscription",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "cancel_subscription",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "Chat",
+      "AuthorizedActions": [
+        {
+          "Name": "Chat",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "chat",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ChatSync",
+      "AuthorizedActions": [
+        {
+          "Name": "ChatSync",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "chat_sync",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CheckDocumentAccess",
+      "AuthorizedActions": [
+        {
+          "Name": "CheckDocumentAccess",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "check_document_access",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAnonymousWebExperienceUrl",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAnonymousWebExperienceUrl",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "create_anonymous_web_experience_url",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateApplication",
+          "Service": "qbusiness"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "qbusiness.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "create_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateChatResponseConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateChatResponseConfiguration",
+          "Service": "qbusiness"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "create_chat_response_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDataAccessor",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDataAccessor",
+          "Service": "qbusiness"
+        },
+        {
+          "Name": "CreateDataAccessorWithTti",
+          "Service": "qbusiness"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "create_data_accessor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDataSource",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDataSource",
+          "Service": "qbusiness"
+        },
+        {
+          "Name": "DisableAclOnDataSource",
+          "Service": "qbusiness"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "qbusiness.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "create_data_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateIndex",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateIndex",
+          "Service": "qbusiness"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "create_index",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePlugin",
+      "AuthorizedActions": [
+        {
+          "Name": "CreatePlugin",
+          "Service": "qbusiness"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "qbusiness.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "create_plugin",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRetriever",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRetriever",
+          "Service": "qbusiness"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "qbusiness.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "create_retriever",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSubscription",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSubscription",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "create_subscription",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateUser",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateUser",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "create_user",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateWebExperience",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateWebExperience",
+          "Service": "qbusiness"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "qbusiness.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "create_web_experience",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteApplication",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "delete_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAttachment",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAttachment",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "delete_attachment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteChatControlsConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteChatControlsConfiguration",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "delete_chat_controls_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteChatResponseConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteChatResponseConfiguration",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "delete_chat_response_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteConversation",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteConversation",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "delete_conversation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDataAccessor",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDataAccessor",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "delete_data_accessor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDataSource",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDataSource",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "delete_data_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteGroup",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "delete_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteIndex",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteIndex",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "delete_index",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePlugin",
+      "AuthorizedActions": [
+        {
+          "Name": "DeletePlugin",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "delete_plugin",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRetriever",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRetriever",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "delete_retriever",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteUser",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteUser",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "delete_user",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteWebExperience",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteWebExperience",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "delete_web_experience",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociatePermission",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociatePermission",
+          "Service": "qbusiness"
+        },
+        {
+          "Name": "PutResourcePolicy",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "disassociate_permission",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "GetApplication",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "get_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetChatControlsConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetChatControlsConfiguration",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "get_chat_controls_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetChatResponseConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetChatResponseConfiguration",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "get_chat_response_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDataAccessor",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDataAccessor",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "get_data_accessor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDataSource",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDataSource",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "get_data_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDocumentContent",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDocumentContent",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "get_document_content",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "GetGroup",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "get_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetIndex",
+      "AuthorizedActions": [
+        {
+          "Name": "GetIndex",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "get_index",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMedia",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMedia",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "get_media",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPlugin",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPlugin",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "get_plugin",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPolicy",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "get_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRetriever",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRetriever",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "get_retriever",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetUser",
+      "AuthorizedActions": [
+        {
+          "Name": "GetUser",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "get_user",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetWebExperience",
+      "AuthorizedActions": [
+        {
+          "Name": "GetWebExperience",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "get_web_experience",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListApplications",
+      "AuthorizedActions": [
+        {
+          "Name": "ListApplications",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "list_applications",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAttachments",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAttachments",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "list_attachments",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListChatResponseConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListChatResponseConfigurations",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "list_chat_response_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListConversations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListConversations",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "list_conversations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDataAccessors",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDataAccessors",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "list_data_accessors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDataSourceSyncJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDataSourceSyncJobs",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "list_data_source_sync_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDataSources",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDataSources",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "list_data_sources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDocuments",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDocuments",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "list_documents",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "ListGroups",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "list_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListIndices",
+      "AuthorizedActions": [
+        {
+          "Name": "ListIndices",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "list_indices",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMessages",
+      "AuthorizedActions": [
+        {
+          "Name": "ListMessages",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "list_messages",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPluginActions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPluginActions",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "list_plugin_actions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPluginTypeActions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPluginTypeActions",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "list_plugin_type_actions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPluginTypeMetadata",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPluginTypeMetadata",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "list_plugin_type_metadata",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPlugins",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPlugins",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "list_plugins",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRetrievers",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRetrievers",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "list_retrievers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSubscriptions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSubscriptions",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "list_subscriptions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListWebExperiences",
+      "AuthorizedActions": [
+        {
+          "Name": "ListWebExperiences",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "list_web_experiences",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutFeedback",
+      "AuthorizedActions": [
+        {
+          "Name": "PutFeedback",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "put_feedback",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "qbusiness.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "PutGroup",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "put_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SearchRelevantContent",
+      "AuthorizedActions": [
+        {
+          "Name": "SearchRelevantContent",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "search_relevant_content",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartDataSourceSyncJob",
+      "AuthorizedActions": [
+        {
+          "Name": "StartDataSourceSyncJob",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "start_data_source_sync_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopDataSourceSyncJob",
+      "AuthorizedActions": [
+        {
+          "Name": "StopDataSourceSyncJob",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "stop_data_source_sync_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "qbusiness.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateApplication",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "update_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateChatControlsConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateChatControlsConfiguration",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "update_chat_controls_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateChatResponseConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateChatResponseConfiguration",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "update_chat_response_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDataAccessor",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDataAccessor",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "update_data_accessor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDataSource",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "qbusiness.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateDataSource",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "update_data_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateIndex",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateIndex",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "update_index",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdatePlugin",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "qbusiness.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdatePlugin",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "update_plugin",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRetriever",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "qbusiness.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateRetriever",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "update_retriever",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSubscription",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSubscription",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "update_subscription",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateUser",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateUser",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "update_user",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateWebExperience",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "qbusiness.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateWebExperience",
+          "Service": "qbusiness"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qbusiness",
+          "Method": "update_web_experience",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "application",
+      "ARNFormats": [
+        "arn:${Partition}:qbusiness:${Region}:${Account}:application/${ApplicationId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "chat-response-configuration",
+      "ARNFormats": [
+        "arn:${Partition}:qbusiness:${Region}:${Account}:application/${ApplicationId}/chat-response-configuration/${ChatResponseConfigurationId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "data-accessor",
+      "ARNFormats": [
+        "arn:${Partition}:qbusiness:${Region}:${Account}:application/${ApplicationId}/data-accessor/${DataAccessorId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "data-source",
+      "ARNFormats": [
+        "arn:${Partition}:qbusiness:${Region}:${Account}:application/${ApplicationId}/index/${IndexId}/data-source/${DataSourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "index",
+      "ARNFormats": [
+        "arn:${Partition}:qbusiness:${Region}:${Account}:application/${ApplicationId}/index/${IndexId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "integration",
+      "ARNFormats": [
+        "arn:${Partition}:qbusiness:${Region}:${Account}:application/${ApplicationId}/integration/${IntegrationId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "plugin",
+      "ARNFormats": [
+        "arn:${Partition}:qbusiness:${Region}:${Account}:application/${ApplicationId}/plugin/${PluginId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "retriever",
+      "ARNFormats": [
+        "arn:${Partition}:qbusiness:${Region}:${Account}:application/${ApplicationId}/retriever/${RetrieverId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "subscription",
+      "ARNFormats": [
+        "arn:${Partition}:qbusiness:${Region}:${Account}:application/${ApplicationId}/subscription/${SubscriptionId}"
+      ]
+    },
+    {
+      "Name": "web-experience",
+      "ARNFormats": [
+        "arn:${Partition}:qbusiness:${Region}:${Account}:application/${ApplicationId}/web-experience/${WebExperienceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

@@ -1,0 +1,1311 @@
+{
+  "Name": "scn",
+  "Actions": [
+    {
+      "Name": "AssignAdminPermissionsToUser",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateBillOfMaterialsImportJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateDataIntegrationFlow",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateDataLakeDataset",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateDataLakeNamespace",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateInstance",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateSSOApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteDataIntegrationFlow",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-integration-flow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteDataLakeDataset",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteDataLakeNamespace",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "namespace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteInstance",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteSSOApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeInstance",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetBillOfMaterialsImportJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bill-of-materials-import-job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDataIntegrationEvent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDataIntegrationFlow",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-integration-flow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDataIntegrationFlowExecution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-integration-flow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDataLakeDataset",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDataLakeNamespace",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "namespace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetInstance",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAdminUsers",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDataIntegrationEvents",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDataIntegrationFlowExecutions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-integration-flow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDataIntegrationFlows",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDataLakeDatasets",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDataLakeNamespaces",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListInstances",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RemoveAdminPermissionsForUser",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SendDataIntegrationEvent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateDataIntegrationFlow",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-integration-flow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateDataLakeDataset",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateDataLakeNamespace",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "namespace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateInstance",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateBillOfMaterialsImportJob",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateBillOfMaterialsImportJob",
+          "Service": "scn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "supplychain",
+          "Method": "create_bill_of_materials_import_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDataIntegrationFlow",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDataIntegrationFlow",
+          "Service": "scn"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "scn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "supplychain",
+          "Method": "create_data_integration_flow",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDataLakeDataset",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDataLakeDataset",
+          "Service": "scn"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "scn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "supplychain",
+          "Method": "create_data_lake_dataset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDataLakeNamespace",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDataLakeNamespace",
+          "Service": "scn"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "scn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "supplychain",
+          "Method": "create_data_lake_namespace",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateInstance",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateInstance",
+          "Service": "scn"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "scn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "supplychain",
+          "Method": "create_instance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDataIntegrationFlow",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDataIntegrationFlow",
+          "Service": "scn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "supplychain",
+          "Method": "delete_data_integration_flow",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDataLakeDataset",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDataLakeDataset",
+          "Service": "scn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "supplychain",
+          "Method": "delete_data_lake_dataset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDataLakeNamespace",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDataLakeNamespace",
+          "Service": "scn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "supplychain",
+          "Method": "delete_data_lake_namespace",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteInstance",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteInstance",
+          "Service": "scn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "supplychain",
+          "Method": "delete_instance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBillOfMaterialsImportJob",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBillOfMaterialsImportJob",
+          "Service": "scn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "supplychain",
+          "Method": "get_bill_of_materials_import_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDataIntegrationEvent",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDataIntegrationEvent",
+          "Service": "scn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "supplychain",
+          "Method": "get_data_integration_event",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDataIntegrationFlow",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDataIntegrationFlow",
+          "Service": "scn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "supplychain",
+          "Method": "get_data_integration_flow",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDataIntegrationFlowExecution",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDataIntegrationFlowExecution",
+          "Service": "scn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "supplychain",
+          "Method": "get_data_integration_flow_execution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDataLakeDataset",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDataLakeDataset",
+          "Service": "scn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "supplychain",
+          "Method": "get_data_lake_dataset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDataLakeNamespace",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDataLakeNamespace",
+          "Service": "scn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "supplychain",
+          "Method": "get_data_lake_namespace",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetInstance",
+      "AuthorizedActions": [
+        {
+          "Name": "GetInstance",
+          "Service": "scn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "supplychain",
+          "Method": "get_instance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDataIntegrationEvents",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDataIntegrationEvents",
+          "Service": "scn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "supplychain",
+          "Method": "list_data_integration_events",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDataIntegrationFlowExecutions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDataIntegrationFlowExecutions",
+          "Service": "scn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "supplychain",
+          "Method": "list_data_integration_flow_executions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDataIntegrationFlows",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDataIntegrationFlows",
+          "Service": "scn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "supplychain",
+          "Method": "list_data_integration_flows",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDataLakeDatasets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDataLakeDatasets",
+          "Service": "scn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "supplychain",
+          "Method": "list_data_lake_datasets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDataLakeNamespaces",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDataLakeNamespaces",
+          "Service": "scn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "supplychain",
+          "Method": "list_data_lake_namespaces",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListInstances",
+      "AuthorizedActions": [
+        {
+          "Name": "ListInstances",
+          "Service": "scn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "supplychain",
+          "Method": "list_instances",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "scn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "supplychain",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SendDataIntegrationEvent",
+      "AuthorizedActions": [
+        {
+          "Name": "SendDataIntegrationEvent",
+          "Service": "scn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "supplychain",
+          "Method": "send_data_integration_event",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "scn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "supplychain",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "scn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "supplychain",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDataIntegrationFlow",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDataIntegrationFlow",
+          "Service": "scn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "supplychain",
+          "Method": "update_data_integration_flow",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDataLakeDataset",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDataLakeDataset",
+          "Service": "scn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "supplychain",
+          "Method": "update_data_lake_dataset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDataLakeNamespace",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDataLakeNamespace",
+          "Service": "scn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "supplychain",
+          "Method": "update_data_lake_namespace",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateInstance",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateInstance",
+          "Service": "scn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "supplychain",
+          "Method": "update_instance",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "bill-of-materials-import-job",
+      "ARNFormats": [
+        "arn:${Partition}:scn:${Region}:${Account}:instance/${InstanceId}/bill-of-materials-import-job/${JobId}"
+      ]
+    },
+    {
+      "Name": "data-integration-flow",
+      "ARNFormats": [
+        "arn:${Partition}:scn:${Region}:${Account}:instance/${InstanceId}/data-integration-flows/${FlowName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "dataset",
+      "ARNFormats": [
+        "arn:${Partition}:scn:${Region}:${Account}:instance/${InstanceId}/namespaces/${Namespace}/datasets/${DatasetName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "instance",
+      "ARNFormats": [
+        "arn:${Partition}:scn:${Region}:${Account}:instance/${InstanceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "namespace",
+      "ARNFormats": [
+        "arn:${Partition}:scn:${Region}:${Account}:instance/${InstanceId}/namespaces/${Namespace}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

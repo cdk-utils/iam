@@ -1,0 +1,2880 @@
+{
+  "Name": "forecast",
+  "Actions": [
+    {
+      "Name": "CreateAutoPredictor",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateDataset",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateDatasetGroup",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "datasetGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateDatasetImportJob",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "datasetImportJob"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateExplainability",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "forecast"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateExplainabilityExport",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "explainability"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateForecast",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "predictor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateForecastEndpoint",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "predictor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateForecastExportJob",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "forecast"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateMonitor",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "predictor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreatePredictor",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "datasetGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreatePredictorBacktestExportJob",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "predictor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateWhatIfAnalysis",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "forecast"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateWhatIfForecast",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "whatIfAnalysis"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateWhatIfForecastExport",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "whatIfForecast"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteDataset",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteDatasetGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "datasetGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteDatasetImportJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "datasetImportJob"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteExplainability",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "explainability"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteExplainabilityExport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "explainabilityExport"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteForecast",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "forecast"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteForecastEndpoint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "endpoint"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteForecastExportJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "forecastExport"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteMonitor",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "monitor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeletePredictor",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "predictor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeletePredictorBacktestExportJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "predictorBacktestExportJob"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteResourceTree",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset"
+        },
+        {
+          "Name": "datasetGroup"
+        },
+        {
+          "Name": "datasetImportJob"
+        },
+        {
+          "Name": "endpoint"
+        },
+        {
+          "Name": "explainability"
+        },
+        {
+          "Name": "explainabilityExport"
+        },
+        {
+          "Name": "forecast"
+        },
+        {
+          "Name": "forecastExport"
+        },
+        {
+          "Name": "monitor"
+        },
+        {
+          "Name": "predictor"
+        },
+        {
+          "Name": "predictorBacktestExportJob"
+        },
+        {
+          "Name": "whatIfAnalysis"
+        },
+        {
+          "Name": "whatIfForecast"
+        },
+        {
+          "Name": "whatIfForecastExport"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteWhatIfAnalysis",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "whatIfAnalysis"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteWhatIfForecast",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "whatIfForecast"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteWhatIfForecastExport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "whatIfForecastExport"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeAutoPredictor",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "predictor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeDataset",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeDatasetGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "datasetGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeDatasetImportJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "datasetImportJob"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeExplainability",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "explainability"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeExplainabilityExport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "explainabilityExport"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeForecast",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "forecast"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeForecastEndpoint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "endpoint"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeForecastExportJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "forecastExport"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeMonitor",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "monitor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribePredictor",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "predictor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribePredictorBacktestExportJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "predictorBacktestExportJob"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeWhatIfAnalysis",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "whatIfAnalysis"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeWhatIfForecast",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "whatIfForecast"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeWhatIfForecastExport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "whatIfForecastExport"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAccuracyMetrics",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "predictor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetRecentForecastContext",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "endpoint"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "InvokeForecastEndpoint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "endpoint"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDatasetGroups",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDatasetImportJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDatasets",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListExplainabilities",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListExplainabilityExports",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListForecastExportJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListForecasts",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListMonitorEvaluations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "monitor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListMonitors",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPredictorBacktestExportJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPredictors",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset"
+        },
+        {
+          "Name": "datasetGroup"
+        },
+        {
+          "Name": "datasetImportJob"
+        },
+        {
+          "Name": "endpoint"
+        },
+        {
+          "Name": "explainability"
+        },
+        {
+          "Name": "explainabilityExport"
+        },
+        {
+          "Name": "forecast"
+        },
+        {
+          "Name": "forecastExport"
+        },
+        {
+          "Name": "monitor"
+        },
+        {
+          "Name": "predictor"
+        },
+        {
+          "Name": "predictorBacktestExportJob"
+        },
+        {
+          "Name": "whatIfAnalysis"
+        },
+        {
+          "Name": "whatIfForecast"
+        },
+        {
+          "Name": "whatIfForecastExport"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListWhatIfAnalyses",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListWhatIfForecastExports",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListWhatIfForecasts",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "QueryForecast",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "forecast"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "QueryWhatIfForecast",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "whatIfForecast"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ResumeResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "monitor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StopResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "datasetImportJob"
+        },
+        {
+          "Name": "endpoint"
+        },
+        {
+          "Name": "explainability"
+        },
+        {
+          "Name": "explainabilityExport"
+        },
+        {
+          "Name": "forecast"
+        },
+        {
+          "Name": "forecastExport"
+        },
+        {
+          "Name": "monitor"
+        },
+        {
+          "Name": "predictor"
+        },
+        {
+          "Name": "predictorBacktestExportJob"
+        },
+        {
+          "Name": "whatIfAnalysis"
+        },
+        {
+          "Name": "whatIfForecast"
+        },
+        {
+          "Name": "whatIfForecastExport"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset"
+        },
+        {
+          "Name": "datasetGroup"
+        },
+        {
+          "Name": "datasetImportJob"
+        },
+        {
+          "Name": "endpoint"
+        },
+        {
+          "Name": "explainability"
+        },
+        {
+          "Name": "explainabilityExport"
+        },
+        {
+          "Name": "forecast"
+        },
+        {
+          "Name": "forecastExport"
+        },
+        {
+          "Name": "monitor"
+        },
+        {
+          "Name": "predictor"
+        },
+        {
+          "Name": "predictorBacktestExportJob"
+        },
+        {
+          "Name": "whatIfAnalysis"
+        },
+        {
+          "Name": "whatIfForecast"
+        },
+        {
+          "Name": "whatIfForecastExport"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset"
+        },
+        {
+          "Name": "datasetGroup"
+        },
+        {
+          "Name": "datasetImportJob"
+        },
+        {
+          "Name": "endpoint"
+        },
+        {
+          "Name": "explainability"
+        },
+        {
+          "Name": "explainabilityExport"
+        },
+        {
+          "Name": "forecast"
+        },
+        {
+          "Name": "forecastExport"
+        },
+        {
+          "Name": "monitor"
+        },
+        {
+          "Name": "predictor"
+        },
+        {
+          "Name": "predictorBacktestExportJob"
+        },
+        {
+          "Name": "whatIfAnalysis"
+        },
+        {
+          "Name": "whatIfForecast"
+        },
+        {
+          "Name": "whatIfForecastExport"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateDatasetGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset"
+        },
+        {
+          "Name": "datasetGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateAutoPredictor",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAutoPredictor",
+          "Service": "forecast"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "forecast.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "create_auto_predictor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDataset",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDataset",
+          "Service": "forecast"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "forecast.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "create_dataset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDatasetGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDatasetGroup",
+          "Service": "forecast"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "create_dataset_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDatasetImportJob",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDatasetImportJob",
+          "Service": "forecast"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "forecast.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "create_dataset_import_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateExplainability",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateExplainability",
+          "Service": "forecast"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "create_explainability",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateExplainabilityExport",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateExplainabilityExport",
+          "Service": "forecast"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "forecast.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "create_explainability_export",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateForecast",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateForecast",
+          "Service": "forecast"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "create_forecast",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateForecastExportJob",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateForecastExportJob",
+          "Service": "forecast"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "forecast.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "create_forecast_export_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateMonitor",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateMonitor",
+          "Service": "forecast"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "create_monitor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePredictor",
+      "AuthorizedActions": [
+        {
+          "Name": "CreatePredictor",
+          "Service": "forecast"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "forecast.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "create_predictor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePredictorBacktestExportJob",
+      "AuthorizedActions": [
+        {
+          "Name": "CreatePredictorBacktestExportJob",
+          "Service": "forecast"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "forecast.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "create_predictor_backtest_export_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateWhatIfAnalysis",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateWhatIfAnalysis",
+          "Service": "forecast"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "create_what_if_analysis",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateWhatIfForecast",
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "create_what_if_forecast",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateWhatIfForecastExport",
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "create_what_if_forecast_export",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDataset",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDataset",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "delete_dataset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDatasetGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDatasetGroup",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "delete_dataset_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDatasetImportJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDatasetImportJob",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "delete_dataset_import_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteExplainability",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteExplainability",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "delete_explainability",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteExplainabilityExport",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteExplainabilityExport",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "delete_explainability_export",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteForecast",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteForecast",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "delete_forecast",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteForecastExportJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteForecastExportJob",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "delete_forecast_export_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteMonitor",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteMonitor",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "delete_monitor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePredictor",
+      "AuthorizedActions": [
+        {
+          "Name": "DeletePredictor",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "delete_predictor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePredictorBacktestExportJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DeletePredictorBacktestExportJob",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "delete_predictor_backtest_export_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteResourceTree",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteResourceTree",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "delete_resource_tree",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteWhatIfAnalysis",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteWhatIfAnalysis",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "delete_what_if_analysis",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteWhatIfForecast",
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "delete_what_if_forecast",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteWhatIfForecastExport",
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "delete_what_if_forecast_export",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAutoPredictor",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAutoPredictor",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "describe_auto_predictor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDataset",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDataset",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "describe_dataset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDatasetGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDatasetGroup",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "describe_dataset_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDatasetImportJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDatasetImportJob",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "describe_dataset_import_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeExplainability",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeExplainability",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "describe_explainability",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeExplainabilityExport",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeExplainabilityExport",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "describe_explainability_export",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeForecast",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeForecast",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "describe_forecast",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeForecastExportJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeForecastExportJob",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "describe_forecast_export_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeMonitor",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeMonitor",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "describe_monitor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribePredictor",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribePredictor",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "describe_predictor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribePredictorBacktestExportJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribePredictorBacktestExportJob",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "describe_predictor_backtest_export_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeWhatIfAnalysis",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeWhatIfAnalysis",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "describe_what_if_analysis",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeWhatIfForecast",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeWhatIfForecast",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "describe_what_if_forecast",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeWhatIfForecastExport",
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "describe_what_if_forecast_export",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAccuracyMetrics",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAccuracyMetrics",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "get_accuracy_metrics",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDatasetGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDatasetGroups",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "list_dataset_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDatasetImportJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDatasetImportJobs",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "list_dataset_import_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDatasets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDatasets",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "list_datasets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListExplainabilities",
+      "AuthorizedActions": [
+        {
+          "Name": "ListExplainabilities",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "list_explainabilities",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListExplainabilityExports",
+      "AuthorizedActions": [
+        {
+          "Name": "ListExplainabilityExports",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "list_explainability_exports",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListForecastExportJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListForecastExportJobs",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "list_forecast_export_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListForecasts",
+      "AuthorizedActions": [
+        {
+          "Name": "ListForecasts",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "list_forecasts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMonitorEvaluations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListMonitorEvaluations",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "list_monitor_evaluations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMonitors",
+      "AuthorizedActions": [
+        {
+          "Name": "ListMonitors",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "list_monitors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPredictorBacktestExportJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPredictorBacktestExportJobs",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "list_predictor_backtest_export_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPredictors",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPredictors",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "list_predictors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListWhatIfAnalyses",
+      "AuthorizedActions": [
+        {
+          "Name": "ListWhatIfAnalyses",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "list_what_if_analyses",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListWhatIfForecastExports",
+      "AuthorizedActions": [
+        {
+          "Name": "ListWhatIfForecastExports",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "list_what_if_forecast_exports",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListWhatIfForecasts",
+      "AuthorizedActions": [
+        {
+          "Name": "ListWhatIfForecasts",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "list_what_if_forecasts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "QueryForecast",
+      "AuthorizedActions": [
+        {
+          "Name": "QueryForecast",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecastquery",
+          "Method": "query_forecast",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "QueryWhatIfForecast",
+      "AuthorizedActions": [
+        {
+          "Name": "QueryWhatIfForecast",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecastquery",
+          "Method": "query_what_if_forecast",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ResumeResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ResumeResource",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "resume_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopResource",
+      "AuthorizedActions": [
+        {
+          "Name": "StopResource",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "stop_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDatasetGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDatasetGroup",
+          "Service": "forecast"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "forecast",
+          "Method": "update_dataset_group",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "algorithm",
+      "ARNFormats": [
+        "arn:${Partition}:forecast:::algorithm/${ResourceId}"
+      ]
+    },
+    {
+      "Name": "dataset",
+      "ARNFormats": [
+        "arn:${Partition}:forecast:${Region}:${Account}:dataset/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "datasetGroup",
+      "ARNFormats": [
+        "arn:${Partition}:forecast:${Region}:${Account}:dataset-group/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "datasetImportJob",
+      "ARNFormats": [
+        "arn:${Partition}:forecast:${Region}:${Account}:dataset-import-job/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "endpoint",
+      "ARNFormats": [
+        "arn:${Partition}:forecast:${Region}:${Account}:forecast-endpoint/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "explainability",
+      "ARNFormats": [
+        "arn:${Partition}:forecast:${Region}:${Account}:explainability/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "explainabilityExport",
+      "ARNFormats": [
+        "arn:${Partition}:forecast:${Region}:${Account}:explainability-export/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "forecast",
+      "ARNFormats": [
+        "arn:${Partition}:forecast:${Region}:${Account}:forecast/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "forecastExport",
+      "ARNFormats": [
+        "arn:${Partition}:forecast:${Region}:${Account}:forecast-export-job/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "monitor",
+      "ARNFormats": [
+        "arn:${Partition}:forecast:${Region}:${Account}:monitor/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "predictor",
+      "ARNFormats": [
+        "arn:${Partition}:forecast:${Region}:${Account}:predictor/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "predictorBacktestExportJob",
+      "ARNFormats": [
+        "arn:${Partition}:forecast:${Region}:${Account}:predictor-backtest-export-job/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "whatIfAnalysis",
+      "ARNFormats": [
+        "arn:${Partition}:forecast:${Region}:${Account}:what-if-analysis/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "whatIfForecast",
+      "ARNFormats": [
+        "arn:${Partition}:forecast:${Region}:${Account}:what-if-forecast/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "whatIfForecastExport",
+      "ARNFormats": [
+        "arn:${Partition}:forecast:${Region}:${Account}:what-if-forecast-export/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

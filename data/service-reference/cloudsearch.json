@@ -1,0 +1,1212 @@
+{
+  "Name": "cloudsearch",
+  "Actions": [
+    {
+      "Name": "AddTags",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BuildSuggesters",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateDomain",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DefineAnalysisScheme",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DefineExpression",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DefineIndexField",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DefineSuggester",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteAnalysisScheme",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteDomain",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteExpression",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteIndexField",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteSuggester",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeAnalysisSchemes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeAvailabilityOptions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeDomainEndpointOptions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeDomains",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeExpressions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeIndexFields",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeScalingParameters",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeServiceAccessPolicies",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeSuggesters",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "IndexDocuments",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDomainNames",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTags",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RemoveTags",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAvailabilityOptions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateDomainEndpointOptions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateScalingParameters",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateServiceAccessPolicies",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "document",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "search",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "suggest",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "BuildSuggesters",
+      "AuthorizedActions": [
+        {
+          "Name": "BuildSuggesters",
+          "Service": "cloudsearch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudsearch",
+          "Method": "build_suggesters",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDomain",
+          "Service": "cloudsearch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudsearch",
+          "Method": "create_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DefineAnalysisScheme",
+      "AuthorizedActions": [
+        {
+          "Name": "DefineAnalysisScheme",
+          "Service": "cloudsearch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudsearch",
+          "Method": "define_analysis_scheme",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DefineExpression",
+      "AuthorizedActions": [
+        {
+          "Name": "DefineExpression",
+          "Service": "cloudsearch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudsearch",
+          "Method": "define_expression",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DefineIndexField",
+      "AuthorizedActions": [
+        {
+          "Name": "DefineIndexField",
+          "Service": "cloudsearch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudsearch",
+          "Method": "define_index_field",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DefineRankExpression",
+      "SDK": [
+        {
+          "Name": "cloudsearch",
+          "Method": "define_rank_expression",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DefineSuggester",
+      "AuthorizedActions": [
+        {
+          "Name": "DefineSuggester",
+          "Service": "cloudsearch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudsearch",
+          "Method": "define_suggester",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAnalysisScheme",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAnalysisScheme",
+          "Service": "cloudsearch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudsearch",
+          "Method": "delete_analysis_scheme",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDomain",
+          "Service": "cloudsearch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudsearch",
+          "Method": "delete_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteExpression",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteExpression",
+          "Service": "cloudsearch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudsearch",
+          "Method": "delete_expression",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteIndexField",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteIndexField",
+          "Service": "cloudsearch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudsearch",
+          "Method": "delete_index_field",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRankExpression",
+      "SDK": [
+        {
+          "Name": "cloudsearch",
+          "Method": "delete_rank_expression",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSuggester",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSuggester",
+          "Service": "cloudsearch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudsearch",
+          "Method": "delete_suggester",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAnalysisSchemes",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAnalysisSchemes",
+          "Service": "cloudsearch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudsearch",
+          "Method": "describe_analysis_schemes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAvailabilityOptions",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAvailabilityOptions",
+          "Service": "cloudsearch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudsearch",
+          "Method": "describe_availability_options",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDefaultSearchField",
+      "SDK": [
+        {
+          "Name": "cloudsearch",
+          "Method": "describe_default_search_field",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDomainEndpointOptions",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDomainEndpointOptions",
+          "Service": "cloudsearch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudsearch",
+          "Method": "describe_domain_endpoint_options",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDomains",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDomains",
+          "Service": "cloudsearch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudsearch",
+          "Method": "describe_domains",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeExpressions",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeExpressions",
+          "Service": "cloudsearch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudsearch",
+          "Method": "describe_expressions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeIndexFields",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeIndexFields",
+          "Service": "cloudsearch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudsearch",
+          "Method": "describe_index_fields",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeRankExpressions",
+      "SDK": [
+        {
+          "Name": "cloudsearch",
+          "Method": "describe_rank_expressions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeScalingParameters",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeScalingParameters",
+          "Service": "cloudsearch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudsearch",
+          "Method": "describe_scaling_parameters",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeServiceAccessPolicies",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeServiceAccessPolicies",
+          "Service": "cloudsearch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudsearch",
+          "Method": "describe_service_access_policies",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeStemmingOptions",
+      "SDK": [
+        {
+          "Name": "cloudsearch",
+          "Method": "describe_stemming_options",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeStopwordOptions",
+      "SDK": [
+        {
+          "Name": "cloudsearch",
+          "Method": "describe_stopword_options",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSuggesters",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSuggesters",
+          "Service": "cloudsearch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudsearch",
+          "Method": "describe_suggesters",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSynonymOptions",
+      "SDK": [
+        {
+          "Name": "cloudsearch",
+          "Method": "describe_synonym_options",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "IndexDocuments",
+      "AuthorizedActions": [
+        {
+          "Name": "IndexDocuments",
+          "Service": "cloudsearch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudsearch",
+          "Method": "index_documents",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDomainNames",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDomainNames",
+          "Service": "cloudsearch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudsearch",
+          "Method": "list_domain_names",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "Search",
+      "SDK": [
+        {
+          "Name": "cloudsearchdomain",
+          "Method": "search",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "Suggest",
+      "SDK": [
+        {
+          "Name": "cloudsearchdomain",
+          "Method": "suggest",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAvailabilityOptions",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAvailabilityOptions",
+          "Service": "cloudsearch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudsearch",
+          "Method": "update_availability_options",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDefaultSearchField",
+      "SDK": [
+        {
+          "Name": "cloudsearch",
+          "Method": "update_default_search_field",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDomainEndpointOptions",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDomainEndpointOptions",
+          "Service": "cloudsearch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudsearch",
+          "Method": "update_domain_endpoint_options",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateScalingParameters",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateScalingParameters",
+          "Service": "cloudsearch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudsearch",
+          "Method": "update_scaling_parameters",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateServiceAccessPolicies",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateServiceAccessPolicies",
+          "Service": "cloudsearch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudsearch",
+          "Method": "update_service_access_policies",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateStemmingOptions",
+      "SDK": [
+        {
+          "Name": "cloudsearch",
+          "Method": "update_stemming_options",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateStopwordOptions",
+      "SDK": [
+        {
+          "Name": "cloudsearch",
+          "Method": "update_stopword_options",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSynonymOptions",
+      "SDK": [
+        {
+          "Name": "cloudsearch",
+          "Method": "update_synonym_options",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UploadDocuments",
+      "SDK": [
+        {
+          "Name": "cloudsearchdomain",
+          "Method": "upload_documents",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "domain",
+      "ARNFormats": [
+        "arn:${Partition}:cloudsearch:${Region}:${Account}:domain/${DomainName}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

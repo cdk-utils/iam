@@ -1,0 +1,299 @@
+{
+  "Name": "pricingplanmanager",
+  "Actions": [
+    {
+      "Name": "ApprovePaidSubscription",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AssociateResourcesToSubscription",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CancelSubscription",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CancelSubscriptionChange",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateSubscription",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateResourcesFromSubscription",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSubscription",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListSubscriptions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateSubscription",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "ApprovePaidSubscription",
+      "AuthorizedActions": [
+        {
+          "Name": "ApprovePaidSubscription",
+          "Service": "pricingplanmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pricing-plan-manager",
+          "Method": "approve_paid_subscription",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateResourcesToSubscription",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateResourcesToSubscription",
+          "Service": "pricingplanmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pricing-plan-manager",
+          "Method": "associate_resources_to_subscription",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelSubscription",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelSubscription",
+          "Service": "pricingplanmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pricing-plan-manager",
+          "Method": "cancel_subscription",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelSubscriptionChange",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelSubscriptionChange",
+          "Service": "pricingplanmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pricing-plan-manager",
+          "Method": "cancel_subscription_change",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSubscription",
+      "AuthorizedActions": [
+        {
+          "Name": "ApprovePaidSubscription",
+          "Service": "pricingplanmanager"
+        },
+        {
+          "Name": "CreateSubscription",
+          "Service": "pricingplanmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pricing-plan-manager",
+          "Method": "create_subscription",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateResourcesFromSubscription",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateResourcesFromSubscription",
+          "Service": "pricingplanmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pricing-plan-manager",
+          "Method": "disassociate_resources_from_subscription",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSubscription",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSubscription",
+          "Service": "pricingplanmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pricing-plan-manager",
+          "Method": "get_subscription",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSubscriptions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSubscriptions",
+          "Service": "pricingplanmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pricing-plan-manager",
+          "Method": "list_subscriptions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSubscription",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSubscription",
+          "Service": "pricingplanmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pricing-plan-manager",
+          "Method": "update_subscription",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "subscription",
+      "ARNFormats": [
+        "arn:${Partition}:pricingplanmanager::${Account}:subscription/${SubscriptionId}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}
