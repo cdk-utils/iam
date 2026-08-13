@@ -1,4 +1,8 @@
-import { generateServiceFile } from "../../scripts/generate-service";
+import * as fs from "node:fs";
+import * as os from "node:os";
+import * as path from "node:path";
+
+import { generateServiceFile, generateForService } from "../../scripts/generate-service";
 import type { ServiceDetail } from "../../scripts/types";
 
 // =============================================================================
@@ -153,5 +157,145 @@ describe("generateServiceFile", () => {
 		expect(output).toContain("[Read] testservice:GetItem");
 		expect(output).toContain("[Write] testservice:PutItem");
 		expect(output).toContain("[List] testservice:ListItems");
+	});
+
+	it("generates multi-ARN resources with variant builders", () => {
+		const multiArnService: ServiceDetail = {
+			Name: "multiservice",
+			Version: "v1.0",
+			Actions: [
+				{
+					Name: "GetThing",
+					Annotations: { Properties: { IsList: false, IsPermissionManagement: false, IsTaggingOnly: false, IsWrite: false } },
+				},
+			],
+			Resources: [
+				{
+					Name: "widget",
+					ARNFormats: [
+						"arn:${Partition}:multiservice:${Region}:${Account}:apis/${ApiId}/widgets/${WidgetId}",
+						"arn:${Partition}:multiservice:${Region}:${Account}:restapis/${RestApiId}/widgets/${WidgetId}",
+					],
+				},
+			],
+		};
+
+		const output = generateServiceFile(multiArnService);
+
+		// Should generate variant builders
+		expect(output).toContain("widgetVariant1");
+		expect(output).toContain("widgetVariant2");
+		// Should have validator
+		expect(output).toContain("isValidWidgetArn");
+		// Should have parser
+		expect(output).toContain("parseWidgetArn");
+		// Should have the combined regex (non-capturing) and parse regex
+		expect(output).toContain("WidgetArnRegex");
+		expect(output).toContain("WidgetParseRegex");
+		// Regex should use non-capturing groups for the validator
+		expect(output).toMatch(/WidgetArnRegex.*\(\?:/);
+	});
+
+	it("handles resources with no ARN formats", () => {
+		const noArnService: ServiceDetail = {
+			Name: "noarn",
+			Version: "v1.0",
+			Actions: [
+				{
+					Name: "Do",
+					Annotations: { Properties: { IsList: false, IsPermissionManagement: false, IsTaggingOnly: false, IsWrite: true } },
+				},
+			],
+			Resources: [
+				{ Name: "thing" }, // No ARNFormats
+			],
+		};
+
+		const output = generateServiceFile(noArnService);
+		// Resources class should still be generated but without builders for this resource
+		expect(output).not.toContain("static thing(");
+		expect(output).not.toContain("isValidThingArn");
+	});
+
+	it("handles permission management and tagging access levels", () => {
+		const permService: ServiceDetail = {
+			Name: "permtest",
+			Version: "v1.0",
+			Actions: [
+				{
+					Name: "SetPolicy",
+					Annotations: { Properties: { IsList: false, IsPermissionManagement: true, IsTaggingOnly: false, IsWrite: false } },
+				},
+				{
+					Name: "TagResource",
+					Annotations: { Properties: { IsList: false, IsPermissionManagement: false, IsTaggingOnly: true, IsWrite: false } },
+				},
+			],
+		};
+
+		const output = generateServiceFile(permService);
+		expect(output).toContain("[PermissionManagement] permtest:SetPolicy");
+		expect(output).toContain("[Tagging] permtest:TagResource");
+		expect(output).toMatch(/PERMISSION_MANAGEMENT_ACTIONS.*PermtestActions\.SET_POLICY/s);
+		expect(output).toMatch(/TAGGING_ACTIONS.*PermtestActions\.TAG_RESOURCE/s);
+	});
+});
+
+describe("generateForService (file I/O)", () => {
+	let tmpDir: string;
+
+	beforeEach(() => {
+		tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), "gen-service-test-"));
+	});
+
+	afterEach(() => {
+		fs.rmSync(tmpDir, { recursive: true, force: true });
+	});
+
+	it("writes a TypeScript file to the output directory", async () => {
+		const dataDir = path.join(tmpDir, "data");
+		const outputDir = path.join(tmpDir, "output");
+		fs.mkdirSync(dataDir, { recursive: true });
+
+		const serviceData: ServiceDetail = {
+			Name: "filetest",
+			Version: "v1.0",
+			Actions: [
+				{
+					Name: "Read",
+					Annotations: { Properties: { IsList: false, IsPermissionManagement: false, IsTaggingOnly: false, IsWrite: false } },
+				},
+			],
+		};
+
+		const jsonPath = path.join(dataDir, "filetest.json");
+		fs.writeFileSync(jsonPath, JSON.stringify(serviceData), "utf-8");
+
+		const outputPath = await generateForService(jsonPath, outputDir);
+
+		expect(outputPath).toBe(path.join(outputDir, "filetest.ts"));
+		expect(fs.existsSync(outputPath)).toBe(true);
+
+		const content = fs.readFileSync(outputPath, "utf-8");
+		expect(content).toContain("AUTO-GENERATED FILE");
+		expect(content).toContain("FiletestActions");
+		expect(content).toContain('static readonly READ = "filetest:Read"');
+	});
+
+	it("creates the output directory if it does not exist", async () => {
+		const dataDir = path.join(tmpDir, "data");
+		const outputDir = path.join(tmpDir, "nested", "output");
+		fs.mkdirSync(dataDir, { recursive: true });
+
+		const serviceData: ServiceDetail = {
+			Name: "nested",
+			Version: "v1.0",
+			Actions: [{ Name: "Act", Annotations: { Properties: { IsList: false, IsPermissionManagement: false, IsTaggingOnly: false, IsWrite: true } } }],
+		};
+
+		fs.writeFileSync(path.join(dataDir, "nested.json"), JSON.stringify(serviceData), "utf-8");
+
+		const outputPath = await generateForService(path.join(dataDir, "nested.json"), outputDir);
+		expect(fs.existsSync(outputPath)).toBe(true);
 	});
 });
