@@ -96,7 +96,7 @@ updateWorkflow.addJob("update", {
 				"  --base main \\",
 				"  --head ${{ steps.push.outputs.branch }} \\",
 				'  --title "feat: update AWS service reference data" \\',
-				"  --body \"## Automated Service Reference Update\\n\\nThis PR updates the AWS Service Authorization Reference data and regenerates the TypeScript constants.\\n\\n### Changes\\n- Updated service reference JSON files in \\`data/service-reference/\\`\\n- Regenerated TypeScript constants in \\`src/generated/services/\\`\\n- Regenerated barrel index\\n\\n### Triggered by\\n- Schedule: Weekdays at 06:00 UTC\\n- Or manual workflow dispatch\"",
+				'  --body "## Automated Service Reference Update\\n\\nThis PR updates the AWS Service Authorization Reference data and regenerates the TypeScript constants.\\n\\n### Changes\\n- Updated service reference JSON files in \\`data/service-reference/\\`\\n- Regenerated TypeScript constants in \\`src/generated/services/\\`\\n- Regenerated barrel index\\n\\n### Triggered by\\n- Schedule: Weekdays at 06:00 UTC\\n- Or manual workflow dispatch"',
 			].join("\n"),
 		},
 	],
