@@ -133,6 +133,33 @@
         }
       ]
     },
+    "generate-constants": {
+      "name": "generate-constants",
+      "description": "Generate TypeScript constants from all service reference data",
+      "steps": [
+        {
+          "exec": "tsx scripts/generate-all.ts"
+        }
+      ]
+    },
+    "generate-index": {
+      "name": "generate-index",
+      "description": "Regenerate the barrel index for generated services",
+      "steps": [
+        {
+          "exec": "tsx scripts/generate-index.ts"
+        }
+      ]
+    },
+    "generate-service": {
+      "name": "generate-service",
+      "description": "Generate constants for a single service (pass file path as arg)",
+      "steps": [
+        {
+          "exec": "tsx scripts/generate-service.ts"
+        }
+      ]
+    },
     "install": {
       "name": "install",
       "description": "Install project dependencies and update lockfile (non-frozen)",

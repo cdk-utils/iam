@@ -19,4 +19,20 @@ project.addTask("sync-service-reference", {
 	exec: "tsx scripts/run-sync.ts",
 });
 
+// Add projen tasks for code generation
+project.addTask("generate-constants", {
+	description: "Generate TypeScript constants from all service reference data",
+	exec: "tsx scripts/generate-all.ts",
+});
+
+project.addTask("generate-service", {
+	description: "Generate constants for a single service (pass file path as arg)",
+	exec: "tsx scripts/generate-service.ts",
+});
+
+project.addTask("generate-index", {
+	description: "Regenerate the barrel index for generated services",
+	exec: "tsx scripts/generate-index.ts",
+});
+
 project.synth();
