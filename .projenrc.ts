@@ -23,6 +23,18 @@ project.gitignore.exclude("!/docs/");
 // Exclude scripts and data directories from npm package
 project.npmignore?.addPatterns("/scripts/", "/data/", "/docs/");
 
+// Speed up tests: use isolatedModules (transpile-only, no type-checking)
+// Type-checking is already handled by the jsii compilation step
+project.jest!.config.transform = {
+	"^.+\\.[t]sx?$": [
+		"ts-jest",
+		{
+			tsconfig: "tsconfig.dev.json",
+			isolatedModules: true,
+		},
+	],
+};
+
 // =============================================================================
 // GitHub Actions: Automated Service Reference Update
 // =============================================================================
@@ -84,8 +96,22 @@ updateWorkflow.addJob("update", {
 		{
 			name: "Create branch and push",
 			if: "steps.changes.outputs.changed == 'true'",
+			env: {
+				GH_TOKEN: "${{ secrets.PROJEN_GITHUB_TOKEN }}",
+			},
 			run: [
 				'BRANCH_NAME="feature/service_update_$(date +%Y-%m-%d)"',
+				"",
+				"# Skip if an open PR already exists for today's update",
+				'EXISTING_PR=$(gh pr list --head "$BRANCH_NAME" --state open --json number --jq ".[0].number")',
+				'if [ -n "$EXISTING_PR" ]; then',
+				'  echo "⏭️ PR #$EXISTING_PR already open for $BRANCH_NAME — skipping"',
+				"  exit 0",
+				"fi",
+				"",
+				"# Delete remote branch if it exists (from a prior failed run)",
+				'git push origin --delete "$BRANCH_NAME" 2>/dev/null || true',
+				"",
 				"git config user.name 'github-actions[bot]'",
 				"git config user.email 'github-actions[bot]@users.noreply.github.com'",
 				"git checkout -b $BRANCH_NAME",
@@ -98,7 +124,7 @@ updateWorkflow.addJob("update", {
 		},
 		{
 			name: "Create Pull Request",
-			if: "steps.changes.outputs.changed == 'true'",
+			if: "steps.changes.outputs.changed == 'true' && steps.push.outputs.branch",
 			env: {
 				GH_TOKEN: "${{ secrets.PROJEN_GITHUB_TOKEN }}",
 			},
