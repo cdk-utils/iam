@@ -17,7 +17,7 @@ project.tasks
 
 // Track docs/ directory instead of single API.md
 project.gitignore.removePatterns("!/API.md");
-project.gitignore.addPatterns("API.md");
+project.gitignore.addPatterns("/API.md");
 project.gitignore.exclude("!/docs/");
 
 // Exclude scripts and data directories from npm package
