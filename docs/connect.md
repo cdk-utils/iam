@@ -18006,6 +18006,7 @@ new connect.ConnectOperations()
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.SendMessage">SendMessage</a></code> | <code>string[]</code> | IAM actions required for the SendMessage API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.SendOutboundEmail">SendOutboundEmail</a></code> | <code>string[]</code> | IAM actions required for the SendOutboundEmail API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.SendOutboundWebNotification">SendOutboundWebNotification</a></code> | <code>string[]</code> | IAM actions required for the SendOutboundWebNotification API call. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.StartAssistantContact">StartAssistantContact</a></code> | <code>string[]</code> | IAM actions required for the StartAssistantContact API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.StartAttachedFileUpload">StartAttachedFileUpload</a></code> | <code>string[]</code> | IAM actions required for the StartAttachedFileUpload API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.StartAttachmentUpload">StartAttachmentUpload</a></code> | <code>string[]</code> | IAM actions required for the StartAttachmentUpload API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.StartChatContact">StartChatContact</a></code> | <code>string[]</code> | IAM actions required for the StartChatContact API call. |
@@ -21726,6 +21727,18 @@ public readonly SendOutboundWebNotification: string[];
 - *Type:* string[]
 
 IAM actions required for the SendOutboundWebNotification API call.
+
+---
+
+##### `StartAssistantContact`<sup>Required</sup> <a name="StartAssistantContact" id="@cdk_utils/iam.connect.ConnectOperations.property.StartAssistantContact"></a>
+
+```typescript
+public readonly StartAssistantContact: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StartAssistantContact API call.
 
 ---
 

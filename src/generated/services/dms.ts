@@ -1569,6 +1569,7 @@ export class DmsOperations {
 	/** IAM actions required for the ModifyReplicationInstance API call. */
 	static readonly ModifyReplicationInstance: string[] = [
 		"dms:ModifyReplicationInstance",
+		"iam:PassRole",
 	];
 	/** IAM actions required for the ModifyReplicationSubnetGroup API call. */
 	static readonly ModifyReplicationSubnetGroup: string[] = [

@@ -700,6 +700,7 @@ new acm.ACMActions()
 | <code><a href="#@cdk_utils/iam.acm.ACMActions.property.ListAcmeDomainValidations">ListAcmeDomainValidations</a></code> | <code>string</code> | [List] acm:ListAcmeDomainValidations. |
 | <code><a href="#@cdk_utils/iam.acm.ACMActions.property.ListAcmeEndpoints">ListAcmeEndpoints</a></code> | <code>string</code> | [List] acm:ListAcmeEndpoints. |
 | <code><a href="#@cdk_utils/iam.acm.ACMActions.property.ListAcmeExternalAccountBindings">ListAcmeExternalAccountBindings</a></code> | <code>string</code> | [List] acm:ListAcmeExternalAccountBindings. |
+| <code><a href="#@cdk_utils/iam.acm.ACMActions.property.ListCertificateDomainValidations">ListCertificateDomainValidations</a></code> | <code>string</code> | [List] acm:ListCertificateDomainValidations. |
 | <code><a href="#@cdk_utils/iam.acm.ACMActions.property.ListCertificates">ListCertificates</a></code> | <code>string</code> | [List] acm:ListCertificates. |
 | <code><a href="#@cdk_utils/iam.acm.ACMActions.property.ListTagsForCertificate">ListTagsForCertificate</a></code> | <code>string</code> | [Read] acm:ListTagsForCertificate. |
 | <code><a href="#@cdk_utils/iam.acm.ACMActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [Read] acm:ListTagsForResource. |
@@ -1043,6 +1044,18 @@ public readonly ListAcmeExternalAccountBindings: string;
 - *Type:* string
 
 [List] acm:ListAcmeExternalAccountBindings.
+
+---
+
+##### `ListCertificateDomainValidations`<sup>Required</sup> <a name="ListCertificateDomainValidations" id="@cdk_utils/iam.acm.ACMActions.property.ListCertificateDomainValidations"></a>
+
+```typescript
+public readonly ListCertificateDomainValidations: string;
+```
+
+- *Type:* string
+
+[List] acm:ListCertificateDomainValidations.
 
 ---
 
@@ -1496,6 +1509,7 @@ Generates a condition block for `acm:ValidationMethod`.
 | <code><a href="#@cdk_utils/iam.acm.ACMConditions.property.TagResourceConditionKeys">TagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TagResource action. |
 | <code><a href="#@cdk_utils/iam.acm.ACMConditions.property.UntagResourceConditionKeys">UntagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UntagResource action. |
 | <code><a href="#@cdk_utils/iam.acm.ACMConditions.property.UpdateCertificateConditionKeys">UpdateCertificateConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateCertificate action. |
+| <code><a href="#@cdk_utils/iam.acm.ACMConditions.property.UpdateCertificateOptionsConditionKeys">UpdateCertificateOptionsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateCertificateOptions action. |
 | <code><a href="#@cdk_utils/iam.acm.ACMConditions.property.VALIDATION_METHOD">VALIDATION_METHOD</a></code> | <code>string</code> | Condition key: acm:ValidationMethod (String). |
 
 ---
@@ -1764,6 +1778,18 @@ Condition keys applicable to the UpdateCertificate action.
 
 ---
 
+##### `UpdateCertificateOptionsConditionKeys`<sup>Required</sup> <a name="UpdateCertificateOptionsConditionKeys" id="@cdk_utils/iam.acm.ACMConditions.property.UpdateCertificateOptionsConditionKeys"></a>
+
+```typescript
+public readonly UpdateCertificateOptionsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UpdateCertificateOptions action.
+
+---
+
 ##### `VALIDATION_METHOD`<sup>Required</sup> <a name="VALIDATION_METHOD" id="@cdk_utils/iam.acm.ACMConditions.property.VALIDATION_METHOD"></a>
 
 ```typescript
@@ -1819,6 +1845,7 @@ new acm.ACMOperations()
 | <code><a href="#@cdk_utils/iam.acm.ACMOperations.property.ListAcmeDomainValidations">ListAcmeDomainValidations</a></code> | <code>string[]</code> | IAM actions required for the ListAcmeDomainValidations API call. |
 | <code><a href="#@cdk_utils/iam.acm.ACMOperations.property.ListAcmeEndpoints">ListAcmeEndpoints</a></code> | <code>string[]</code> | IAM actions required for the ListAcmeEndpoints API call. |
 | <code><a href="#@cdk_utils/iam.acm.ACMOperations.property.ListAcmeExternalAccountBindings">ListAcmeExternalAccountBindings</a></code> | <code>string[]</code> | IAM actions required for the ListAcmeExternalAccountBindings API call. |
+| <code><a href="#@cdk_utils/iam.acm.ACMOperations.property.ListCertificateDomainValidations">ListCertificateDomainValidations</a></code> | <code>string[]</code> | IAM actions required for the ListCertificateDomainValidations API call. |
 | <code><a href="#@cdk_utils/iam.acm.ACMOperations.property.ListCertificates">ListCertificates</a></code> | <code>string[]</code> | IAM actions required for the ListCertificates API call. |
 | <code><a href="#@cdk_utils/iam.acm.ACMOperations.property.ListTagsForCertificate">ListTagsForCertificate</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForCertificate API call. |
 | <code><a href="#@cdk_utils/iam.acm.ACMOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
@@ -2067,6 +2094,18 @@ public readonly ListAcmeExternalAccountBindings: string[];
 - *Type:* string[]
 
 IAM actions required for the ListAcmeExternalAccountBindings API call.
+
+---
+
+##### `ListCertificateDomainValidations`<sup>Required</sup> <a name="ListCertificateDomainValidations" id="@cdk_utils/iam.acm.ACMOperations.property.ListCertificateDomainValidations"></a>
+
+```typescript
+public readonly ListCertificateDomainValidations: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListCertificateDomainValidations API call.
 
 ---
 
