@@ -45,6 +45,7 @@ updateWorkflow.addJob("update", {
 			uses: "actions/checkout@v4",
 			with: {
 				"fetch-depth": 0,
+				token: "${{ secrets.PROJEN_GITHUB_TOKEN }}",
 			},
 		},
 		{
@@ -99,7 +100,7 @@ updateWorkflow.addJob("update", {
 			name: "Create Pull Request",
 			if: "steps.changes.outputs.changed == 'true'",
 			env: {
-				GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}",
+				GH_TOKEN: "${{ secrets.PROJEN_GITHUB_TOKEN }}",
 			},
 			run: [
 				"gh pr create \\",
