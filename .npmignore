@@ -23,6 +23,7 @@ tsconfig.tsbuildinfo
 !.jsii
 /scripts/
 /data/
+/docs/
 /.gitattributes
 /.projenrc.ts
 /projenrc

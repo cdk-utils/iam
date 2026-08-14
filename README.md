@@ -11,6 +11,10 @@ This package provides:
 
 > **Coming soon:** IAM helper functions and ready-to-use CDK constructs.
 
+## Documentation
+
+Full API reference documentation is available in the [`docs/`](./docs/) directory, with one file per AWS service. Start at **[`docs/API.md`](./docs/API.md)** for the complete table of contents.
+
 ## Installation
 
 ```bash
@@ -20,26 +24,21 @@ npm install @cdk_utils/iam
 ## Usage
 
 ```typescript
-import {
-  DynamoDBActions,
-  DynamoDBResources,
-  DynamoDBOperations,
-  DynamoDBConditions,
-} from "@cdk_utils/iam";
+import { dynamodb, s3 } from "@cdk_utils/iam";
 
 // Action constants (type-safe, no typos)
-const action = DynamoDBActions.CreateTable; // "dynamodb:CreateTable"
-const getAction = DynamoDBActions.actionGetItem; // "dynamodb:GetItem"
+const action = dynamodb.DynamoDBActions.CreateTable; // "dynamodb:CreateTable"
+const getAction = dynamodb.DynamoDBActions.actionGetItem; // "dynamodb:GetItem"
 
 // Access-level groupings
-const readActions = DynamoDBActions.AllReadActions; // string[]
-const writeActions = DynamoDBActions.AllWriteActions; // string[]
+const readActions = dynamodb.DynamoDBActions.AllReadActions; // string[]
+const writeActions = dynamodb.DynamoDBActions.AllWriteActions; // string[]
 
 // ARN builders (with defaults: partition="aws", region="*", account="*")
-const tableArn = DynamoDBResources.table({ tableName: "Orders" });
+const tableArn = dynamodb.DynamoDBResources.table({ tableName: "Orders" });
 // → "arn:aws:dynamodb:*:*:table/Orders"
 
-const indexArn = DynamoDBResources.index({
+const indexArn = dynamodb.DynamoDBResources.index({
   tableName: "Orders",
   indexName: "GSI1",
   region: "us-east-1",
@@ -48,42 +47,56 @@ const indexArn = DynamoDBResources.index({
 // → "arn:aws:dynamodb:us-east-1:123456789012:table/Orders/index/GSI1"
 
 // ARN validation
-DynamoDBResources.isValidTableArn("arn:aws:dynamodb:us-east-1:123:table/T"); // true
+dynamodb.DynamoDBResources.isValidTableArn("arn:aws:dynamodb:us-east-1:123:table/T"); // true
 
 // ARN parsing (throws on invalid)
-const parts = DynamoDBResources.parseTableArn("arn:aws:dynamodb:us-east-1:123:table/Orders");
+const parts = dynamodb.DynamoDBResources.parseTableArn(
+  "arn:aws:dynamodb:us-east-1:123:table/Orders"
+);
 // → { partition: "aws", region: "us-east-1", account: "123", tableName: "Orders" }
 
 // Operation → required IAM actions (what you actually need to call CreateTable)
-const required = DynamoDBOperations.CreateTable;
+const required = dynamodb.DynamoDBOperations.CreateTable;
 // → ["dynamodb:AssociateTableReplica", "dynamodb:BatchWriteItem", "dynamodb:CreateTable", ...]
 
 // Condition key builders (type-safe operators)
-const condition = DynamoDBConditions.attributes(["col1", "col2"]);
+const condition = dynamodb.DynamoDBConditions.attributes(["col1", "col2"]);
 // → { "ForAllValues:StringEquals": { "dynamodb:Attributes": ["col1", "col2"] } }
+
+// S3 example
+const bucketArn = s3.S3Resources.bucket({ bucketName: "my-bucket" });
+// → "arn:aws:s3:::my-bucket"
 ```
 
 ## Generated Classes per Service
 
-Each AWS service generates up to 4 classes:
+Each AWS service is exported as a **jsii submodule** (namespace). Import the service namespace from the package root:
+
+```typescript
+import { s3, lambda, ec2 } from "@cdk_utils/iam";
+```
+
+Each submodule contains up to 4 classes:
 
 | Class | Purpose | Example |
 |-------|---------|---------|
-| `{Service}Actions` | Action string constants + access-level groupings | `S3Actions.PutObject` |
-| `{Service}Resources` | ARN builders, validators (`isValid*Arn`), parsers (`parse*Arn`) | `S3Resources.bucket(...)` |
-| `{Service}Operations` | API operation → required IAM actions arrays | `S3Operations.PutObject` |
-| `{Service}Conditions` | Condition key constants + typed builder methods | `S3Conditions.prefix("docs/")` |
+| `{Service}Actions` | Action string constants + access-level groupings | `s3.S3Actions.PutObject` |
+| `{Service}Resources` | ARN builders, validators (`isValid*Arn`), parsers (`parse*Arn`) | `s3.S3Resources.bucket(...)` |
+| `{Service}Operations` | API operation → required IAM actions arrays | `s3.S3Operations.PutObject` |
+| `{Service}Conditions` | Condition key constants + typed builder methods | `s3.S3Conditions.prefix("docs/")` |
 
 Services without resources/operations/conditions skip the corresponding class.
+
+> **Note:** Submodule names use underscores for hyphenated services (e.g., `access_analyzer`, `route53_recovery_cluster`).
 
 ## Project Structure
 
 ```
 iam/
 ├── src/
-│   ├── index.ts                      # Barrel re-export
+│   ├── index.ts                      # Re-exports submodules from generated/
 │   ├── generated/                    # Auto-generated (DO NOT EDIT)
-│   │   ├── index.ts                  # Barrel for all services
+│   │   ├── index.ts                  # jsii submodule declarations (export * as ...)
 │   │   └── services/                 # One file per AWS service (455+)
 │   │       ├── dynamodb.ts
 │   │       ├── s3.ts
@@ -91,6 +104,12 @@ iam/
 │   │       └── ...
 │   ├── helpers/                      # (Planned) IAM helper functions
 │   └── constructs/                   # (Planned) CDK constructs
+│
+├── docs/                             # API documentation (NOT published to npm)
+│   ├── API.md                        # Table of contents (links to all services)
+│   ├── s3.md                         # Per-service documentation
+│   ├── dynamodb.md
+│   └── ...                           # 456 files total
 │
 ├── scripts/                          # Tooling (NOT published to npm)
 │   ├── types.ts                      # TypeScript types for the AWS API
@@ -170,6 +189,7 @@ This project is managed by [projen](https://github.com/projen/projen) via the `@
 Files excluded from the npm package (but committed to git):
 - `scripts/` — build/sync tooling
 - `data/` — raw AWS service reference JSONs
+- `docs/` — per-service API documentation (generated by jsii-docgen)
 - `test/` — unit tests
 
 ## License

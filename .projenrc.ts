@@ -10,8 +10,18 @@ const project = new CDKUtilsTemplate({
 	devDeps: ["@cdk_utils/projen_template", "tsx"],
 });
 
+// Override docgen to split documentation by submodule into docs/ directory
+project.tasks
+	.tryFind("docgen")!
+	.reset("mkdir -p docs && jsii-docgen --split-by-submodule -o docs/API");
+
+// Track docs/ directory instead of single API.md
+project.gitignore.removePatterns("!/API.md");
+project.gitignore.addPatterns("/API.md");
+project.gitignore.exclude("!/docs/");
+
 // Exclude scripts and data directories from npm package
-project.npmignore?.addPatterns("/scripts/", "/data/");
+project.npmignore?.addPatterns("/scripts/", "/data/", "/docs/");
 
 // =============================================================================
 // GitHub Actions: Automated Service Reference Update
@@ -35,6 +45,7 @@ updateWorkflow.addJob("update", {
 			uses: "actions/checkout@v4",
 			with: {
 				"fetch-depth": 0,
+				token: "${{ secrets.PROJEN_GITHUB_TOKEN }}",
 			},
 		},
 		{
@@ -89,7 +100,7 @@ updateWorkflow.addJob("update", {
 			name: "Create Pull Request",
 			if: "steps.changes.outputs.changed == 'true'",
 			env: {
-				GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}",
+				GH_TOKEN: "${{ secrets.PROJEN_GITHUB_TOKEN }}",
 			},
 			run: [
 				"gh pr create \\",
