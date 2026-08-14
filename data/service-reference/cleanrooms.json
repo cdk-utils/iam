@@ -3069,6 +3069,12 @@
     },
     {
       "Name": "GetAnalysisLogExport",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAnalysisLogExport",
+          "Service": "cleanrooms"
+        }
+      ],
       "SDK": [
         {
           "Name": "cleanrooms",
@@ -3863,6 +3869,12 @@
     },
     {
       "Name": "StartAnalysisLogExport",
+      "AuthorizedActions": [
+        {
+          "Name": "StartAnalysisLogExport",
+          "Service": "cleanrooms"
+        }
+      ],
       "SDK": [
         {
           "Name": "cleanrooms",

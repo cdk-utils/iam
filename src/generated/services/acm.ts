@@ -62,6 +62,9 @@ export class ACMActions {
 	/** [List] acm:ListAcmeExternalAccountBindings */
 	static readonly ListAcmeExternalAccountBindings =
 		"acm:ListAcmeExternalAccountBindings";
+	/** [List] acm:ListCertificateDomainValidations */
+	static readonly ListCertificateDomainValidations =
+		"acm:ListCertificateDomainValidations";
 	/** [List] acm:ListCertificates */
 	static readonly ListCertificates = "acm:ListCertificates";
 	/** [Read] acm:ListTagsForCertificate */
@@ -142,6 +145,7 @@ export class ACMActions {
 		ACMActions.ListAcmeDomainValidations,
 		ACMActions.ListAcmeEndpoints,
 		ACMActions.ListAcmeExternalAccountBindings,
+		ACMActions.ListCertificateDomainValidations,
 		ACMActions.ListCertificates,
 		ACMActions.SearchCertificates,
 	];
@@ -475,6 +479,10 @@ export class ACMOperations {
 	static readonly ListAcmeEndpoints: string[] = [];
 	/** IAM actions required for the ListAcmeExternalAccountBindings API call. */
 	static readonly ListAcmeExternalAccountBindings: string[] = [];
+	/** IAM actions required for the ListCertificateDomainValidations API call. */
+	static readonly ListCertificateDomainValidations: string[] = [
+		"acm:ListCertificateDomainValidations",
+	];
 	/** IAM actions required for the ListCertificates API call. */
 	static readonly ListCertificates: string[] = ["acm:ListCertificates"];
 	/** IAM actions required for the ListTagsForCertificate API call. */
@@ -594,6 +602,10 @@ export class ACMConditions {
 	/** Condition keys applicable to the UpdateCertificate action. */
 	static readonly UpdateCertificateConditionKeys: string[] = [
 		"acm:CertificateKeyPairOrigin",
+	];
+	/** Condition keys applicable to the UpdateCertificateOptions action. */
+	static readonly UpdateCertificateOptionsConditionKeys: string[] = [
+		"acm:ValidationMethod",
 	];
 
 	/** Condition key: acm:CertificateAuthority (String) */

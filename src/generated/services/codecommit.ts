@@ -495,6 +495,8 @@ export class CodeCommitOperations {
 	];
 	/** IAM actions required for the GetBlob API call. */
 	static readonly opGetBlob: string[] = ["codecommit:GetBlob"];
+	/** IAM actions required for the GetBlobDifferences API call. */
+	static readonly opGetBlobDifferences: string[] = [];
 	/** IAM actions required for the GetBranch API call. */
 	static readonly opGetBranch: string[] = ["codecommit:GetBranch"];
 	/** IAM actions required for the GetComment API call. */

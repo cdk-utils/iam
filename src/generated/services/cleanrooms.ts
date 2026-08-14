@@ -1226,7 +1226,9 @@ export class CleanroomsOperations {
 		"cleanrooms:DisallowIntermediateTable",
 	];
 	/** IAM actions required for the GetAnalysisLogExport API call. */
-	static readonly opGetAnalysisLogExport: string[] = [];
+	static readonly opGetAnalysisLogExport: string[] = [
+		"cleanrooms:GetAnalysisLogExport",
+	];
 	/** IAM actions required for the GetAnalysisTemplate API call. */
 	static readonly opGetAnalysisTemplate: string[] = [
 		"cleanrooms:GetAnalysisTemplate",
@@ -1410,7 +1412,9 @@ export class CleanroomsOperations {
 		"cleanrooms:PreviewPrivacyImpact",
 	];
 	/** IAM actions required for the StartAnalysisLogExport API call. */
-	static readonly StartAnalysisLogExport: string[] = [];
+	static readonly StartAnalysisLogExport: string[] = [
+		"cleanrooms:StartAnalysisLogExport",
+	];
 	/** IAM actions required for the StartProtectedJob API call. */
 	static readonly StartProtectedJob: string[] = [
 		"cleanrooms:StartProtectedJob",

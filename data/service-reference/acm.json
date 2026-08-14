@@ -493,6 +493,26 @@
       }
     },
     {
+      "Name": "ListCertificateDomainValidations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "certificate"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ListCertificates",
       "Annotations": {
         "Properties": {
@@ -900,6 +920,9 @@
     },
     {
       "Name": "UpdateCertificateOptions",
+      "ActionConditionKeys": [
+        "acm:ValidationMethod"
+      ],
       "Annotations": {
         "Properties": {
           "IsList": false,
@@ -1244,6 +1267,22 @@
         {
           "Name": "acm",
           "Method": "list_acme_external_account_bindings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCertificateDomainValidations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCertificateDomainValidations",
+          "Service": "acm"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "acm",
+          "Method": "list_certificate_domain_validations",
           "Package": "Boto3"
         }
       ]

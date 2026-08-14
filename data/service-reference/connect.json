@@ -14552,6 +14552,16 @@
       ]
     },
     {
+      "Name": "StartAssistantContact",
+      "SDK": [
+        {
+          "Name": "connect",
+          "Method": "start_assistant_contact",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "StartAttachedFileUpload",
       "AuthorizedActions": [
         {

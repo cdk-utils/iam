@@ -1865,6 +1865,7 @@ new codecommit.CodeCommitOperations()
 | <code><a href="#@cdk_utils/iam.codecommit.CodeCommitOperations.property.MergePullRequestByThreeWay">MergePullRequestByThreeWay</a></code> | <code>string[]</code> | IAM actions required for the MergePullRequestByThreeWay API call. |
 | <code><a href="#@cdk_utils/iam.codecommit.CodeCommitOperations.property.opGetApprovalRuleTemplate">opGetApprovalRuleTemplate</a></code> | <code>string[]</code> | IAM actions required for the GetApprovalRuleTemplate API call. |
 | <code><a href="#@cdk_utils/iam.codecommit.CodeCommitOperations.property.opGetBlob">opGetBlob</a></code> | <code>string[]</code> | IAM actions required for the GetBlob API call. |
+| <code><a href="#@cdk_utils/iam.codecommit.CodeCommitOperations.property.opGetBlobDifferences">opGetBlobDifferences</a></code> | <code>string[]</code> | IAM actions required for the GetBlobDifferences API call. |
 | <code><a href="#@cdk_utils/iam.codecommit.CodeCommitOperations.property.opGetBranch">opGetBranch</a></code> | <code>string[]</code> | IAM actions required for the GetBranch API call. |
 | <code><a href="#@cdk_utils/iam.codecommit.CodeCommitOperations.property.opGetComment">opGetComment</a></code> | <code>string[]</code> | IAM actions required for the GetComment API call. |
 | <code><a href="#@cdk_utils/iam.codecommit.CodeCommitOperations.property.opGetCommentReactions">opGetCommentReactions</a></code> | <code>string[]</code> | IAM actions required for the GetCommentReactions API call. |
@@ -2373,6 +2374,18 @@ public readonly opGetBlob: string[];
 - *Type:* string[]
 
 IAM actions required for the GetBlob API call.
+
+---
+
+##### `opGetBlobDifferences`<sup>Required</sup> <a name="opGetBlobDifferences" id="@cdk_utils/iam.codecommit.CodeCommitOperations.property.opGetBlobDifferences"></a>
+
+```typescript
+public readonly opGetBlobDifferences: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetBlobDifferences API call.
 
 ---
 

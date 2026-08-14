@@ -1371,7 +1371,10 @@ export class LexOperations {
 	/** IAM actions required for the PutBot API call. */
 	static readonly PutBot: string[] = ["lex:PutBot"];
 	/** IAM actions required for the PutBotAlias API call. */
-	static readonly PutBotAlias: string[] = [];
+	static readonly PutBotAlias: string[] = [
+		"lex:PutBotAlias",
+		"lex:TagResource",
+	];
 	/** IAM actions required for the PutIntent API call. */
 	static readonly PutIntent: string[] = ["lex:PutIntent"];
 	/** IAM actions required for the PutSession API call. */

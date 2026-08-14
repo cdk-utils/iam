@@ -5221,6 +5221,8 @@ export class ConnectOperations {
 	static readonly SendOutboundWebNotification: string[] = [
 		"connect:SendOutboundWebNotification",
 	];
+	/** IAM actions required for the StartAssistantContact API call. */
+	static readonly StartAssistantContact: string[] = [];
 	/** IAM actions required for the StartAttachedFileUpload API call. */
 	static readonly StartAttachedFileUpload: string[] = [
 		"connect:StartAttachedFileUpload",
