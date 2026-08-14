@@ -23,6 +23,18 @@ project.gitignore.exclude("!/docs/");
 // Exclude scripts and data directories from npm package
 project.npmignore?.addPatterns("/scripts/", "/data/", "/docs/");
 
+// Speed up tests: use isolatedModules (transpile-only, no type-checking)
+// Type-checking is already handled by the jsii compilation step
+project.jest!.config.transform = {
+	"^.+\\.[t]sx?$": [
+		"ts-jest",
+		{
+			tsconfig: "tsconfig.dev.json",
+			isolatedModules: true,
+		},
+	],
+};
+
 // =============================================================================
 // GitHub Actions: Automated Service Reference Update
 // =============================================================================
