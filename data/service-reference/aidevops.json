@@ -29,9 +29,6 @@
       "Resources": [
         {
           "Name": "agentspace"
-        },
-        {
-          "Name": "associations"
         }
       ],
       "SupportedBy": {
