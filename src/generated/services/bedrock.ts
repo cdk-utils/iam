@@ -38,6 +38,10 @@ export class BedrockActions {
 	/** [Write] bedrock:CancelAutomatedReasoningPolicyBuildWorkflow */
 	static readonly CancelAutomatedReasoningPolicyBuildWorkflow =
 		"bedrock:CancelAutomatedReasoningPolicyBuildWorkflow";
+	/** [Write] bedrock:CancelInvoke */
+	static readonly CancelInvoke = "bedrock:CancelInvoke";
+	/** [Read] bedrock:CheckIngestedDocumentAcl */
+	static readonly CheckIngestedDocumentAcl = "bedrock:CheckIngestedDocumentAcl";
 	/** [Write] bedrock:CopyBlueprintStage */
 	static readonly CopyBlueprintStage = "bedrock:CopyBlueprintStage";
 	/** [Read] bedrock:CountTokens */
@@ -175,6 +179,8 @@ export class BedrockActions {
 	static readonly DeleteImportedModel = "bedrock:DeleteImportedModel";
 	/** [Write] bedrock:DeleteInferenceProfile */
 	static readonly DeleteInferenceProfile = "bedrock:DeleteInferenceProfile";
+	/** [Write] bedrock:DeleteInvoke */
+	static readonly DeleteInvoke = "bedrock:DeleteInvoke";
 	/** [Write] bedrock:DeleteKnowledgeBase */
 	static readonly DeleteKnowledgeBase = "bedrock:DeleteKnowledgeBase";
 	/** [Write] bedrock:DeleteKnowledgeBaseDocuments */
@@ -317,10 +323,15 @@ export class BedrockActions {
 	static readonly actionGetImportedModel = "bedrock:GetImportedModel";
 	/** [Read] bedrock:GetInferenceProfile */
 	static readonly actionGetInferenceProfile = "bedrock:GetInferenceProfile";
+	/** [Read] bedrock:GetIngestedDocumentAcl */
+	static readonly actionGetIngestedDocumentAcl =
+		"bedrock:GetIngestedDocumentAcl";
 	/** [Read] bedrock:GetIngestionJob */
 	static readonly actionGetIngestionJob = "bedrock:GetIngestionJob";
 	/** [Read] bedrock:GetInvocationStep */
 	static readonly actionGetInvocationStep = "bedrock:GetInvocationStep";
+	/** [Read] bedrock:GetInvoke */
+	static readonly actionGetInvoke = "bedrock:GetInvoke";
 	/** [Read] bedrock:GetKnowledgeBase */
 	static readonly actionGetKnowledgeBase = "bedrock:GetKnowledgeBase";
 	/** [Read] bedrock:GetKnowledgeBaseDocuments */
@@ -626,6 +637,7 @@ export class BedrockActions {
 		BedrockActions.AgenticRetrieveStream,
 		BedrockActions.ApplyGuardrail,
 		BedrockActions.CallWithBearerToken,
+		BedrockActions.CheckIngestedDocumentAcl,
 		BedrockActions.CountTokens,
 		BedrockActions.DetectGeneratedContent,
 		BedrockActions.ExportAutomatedReasoningPolicyVersion,
@@ -670,8 +682,10 @@ export class BedrockActions {
 		BedrockActions.actionGetGuardrail,
 		BedrockActions.actionGetImportedModel,
 		BedrockActions.actionGetInferenceProfile,
+		BedrockActions.actionGetIngestedDocumentAcl,
 		BedrockActions.actionGetIngestionJob,
 		BedrockActions.actionGetInvocationStep,
+		BedrockActions.actionGetInvoke,
 		BedrockActions.actionGetKnowledgeBase,
 		BedrockActions.actionGetKnowledgeBaseDocuments,
 		BedrockActions.actionGetMarketplaceModelEndpoint,
@@ -710,6 +724,7 @@ export class BedrockActions {
 		BedrockActions.BatchDeleteAdvancedPromptOptimizationJob,
 		BedrockActions.BatchDeleteEvaluationJob,
 		BedrockActions.CancelAutomatedReasoningPolicyBuildWorkflow,
+		BedrockActions.CancelInvoke,
 		BedrockActions.CopyBlueprintStage,
 		BedrockActions.CreateAdvancedPromptOptimizationJob,
 		BedrockActions.CreateAgent,
@@ -768,6 +783,7 @@ export class BedrockActions {
 		BedrockActions.DeleteGuardrail,
 		BedrockActions.DeleteImportedModel,
 		BedrockActions.DeleteInferenceProfile,
+		BedrockActions.DeleteInvoke,
 		BedrockActions.DeleteKnowledgeBase,
 		BedrockActions.DeleteKnowledgeBaseDocuments,
 		BedrockActions.DeleteMarketplaceModelAgreement,
@@ -1834,6 +1850,34 @@ export interface BedrockModelInvocationJobArnComponents {
 }
 
 /**
+ * Properties for building a project ARN.
+ */
+export interface BedrockProjectArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a project ARN.
+ */
+export interface BedrockProjectArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
  * Properties for building a prompt ARN.
  */
 export interface BedrockPromptArnProps {
@@ -2067,6 +2111,8 @@ const ModelImportJobArnRegex =
 	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):model-import-job\/(?<resourceId>[^:/?]+)$/;
 const ModelInvocationJobArnRegex =
 	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):model-invocation-job\/(?<jobIdentifier>[^:/?]+)$/;
+const ProjectArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):project\/(?<resourceId>[^:/?]+)$/;
 const PromptArnRegex =
 	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):prompt\/(?<promptId>[^:/?]+)$/;
 const PromptRouterArnRegex =
@@ -3183,6 +3229,37 @@ export class BedrockResources {
 	}
 
 	/**
+	 * Builds an ARN for the project resource.
+	 */
+	static project(props: BedrockProjectArnProps): string {
+		return `arn:${props.partition ?? "aws"}:bedrock:${props.region ?? "*"}:${props.account ?? "*"}:project/${props.resourceId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the project resource.
+	 */
+	static isValidProjectArn(arn: string): boolean {
+		return ProjectArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a project ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseProjectArn(arn: string): BedrockProjectArnComponents {
+		const match = ProjectArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid project ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			resourceId: match.groups!.resourceId,
+		};
+	}
+
+	/**
 	 * Builds an ARN for the prompt resource.
 	 */
 	static prompt(props: BedrockPromptArnProps): string {
@@ -3405,6 +3482,10 @@ export class BedrockOperations {
 	/** IAM actions required for the CancelAutomatedReasoningPolicyBuildWorkflow API call. */
 	static readonly CancelAutomatedReasoningPolicyBuildWorkflow: string[] = [
 		"bedrock:CancelAutomatedReasoningPolicyBuildWorkflow",
+	];
+	/** IAM actions required for the CheckIngestedDocumentAcl API call. */
+	static readonly CheckIngestedDocumentAcl: string[] = [
+		"bedrock:CheckIngestedDocumentAcl",
 	];
 	/** IAM actions required for the Converse API call. */
 	static readonly Converse: string[] = [
@@ -3894,6 +3975,10 @@ export class BedrockOperations {
 	static readonly opGetInferenceProfile: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:GetInferenceProfile",
+	];
+	/** IAM actions required for the GetIngestedDocumentAcl API call. */
+	static readonly opGetIngestedDocumentAcl: string[] = [
+		"bedrock:GetIngestedDocumentAcl",
 	];
 	/** IAM actions required for the GetIngestionJob API call. */
 	static readonly opGetIngestionJob: string[] = ["bedrock:GetIngestionJob"];
@@ -4537,6 +4622,8 @@ export class BedrockConditions {
 		"aws:TagKeys",
 		"bedrock:GuardrailIdentifier",
 		"bedrock:InferenceProfileArn",
+		"bedrock:ModelArn",
+		"bedrock:ProjectArn",
 		"bedrock:PromptRouterArn",
 		"bedrock:ServiceTier",
 	];
@@ -4580,6 +4667,10 @@ export class BedrockConditions {
 	static readonly INFERENCE_PROFILE_ARN = "bedrock:InferenceProfileArn";
 	/** Condition key: bedrock:InlineAgentName (String) */
 	static readonly INLINE_AGENT_NAME = "bedrock:InlineAgentName";
+	/** Condition key: bedrock:ModelArn (ARN) */
+	static readonly MODEL_ARN = "bedrock:ModelArn";
+	/** Condition key: bedrock:ProjectArn (ARN) */
+	static readonly PROJECT_ARN = "bedrock:ProjectArn";
 	/** Condition key: bedrock:PromptRouterArn (ARN) */
 	static readonly PROMPT_ROUTER_ARN = "bedrock:PromptRouterArn";
 	/** Condition key: bedrock:ServiceTier (String) */
@@ -4652,6 +4743,20 @@ export class BedrockConditions {
 		value: string,
 	): Record<string, Record<string, string>> {
 		return { StringEquals: { "bedrock:InlineAgentName": value } };
+	}
+
+	/**
+	 * Generates a condition block for `bedrock:ModelArn`.
+	 */
+	static modelARN(value: string): Record<string, Record<string, string>> {
+		return { ArnEquals: { "bedrock:ModelArn": value } };
+	}
+
+	/**
+	 * Generates a condition block for `bedrock:ProjectArn`.
+	 */
+	static projectARN(value: string): Record<string, Record<string, string>> {
+		return { ArnEquals: { "bedrock:ProjectArn": value } };
 	}
 
 	/**

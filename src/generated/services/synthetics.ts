@@ -249,10 +249,7 @@ export class SyntheticsOperations {
 	/** IAM actions required for the DeleteGroup API call. */
 	static readonly DeleteGroup: string[] = ["synthetics:DeleteGroup"];
 	/** IAM actions required for the DescribeCanaries API call. */
-	static readonly DescribeCanaries: string[] = [
-		"synthetics:DescribeCanaries",
-		"synthetics:ListTagsForResource",
-	];
+	static readonly DescribeCanaries: string[] = ["synthetics:DescribeCanaries"];
 	/** IAM actions required for the DescribeCanariesLastRun API call. */
 	static readonly DescribeCanariesLastRun: string[] = [
 		"synthetics:DescribeCanariesLastRun",
@@ -270,10 +267,7 @@ export class SyntheticsOperations {
 	/** IAM actions required for the GetCanaryRuns API call. */
 	static readonly opGetCanaryRuns: string[] = ["synthetics:GetCanaryRuns"];
 	/** IAM actions required for the GetGroup API call. */
-	static readonly opGetGroup: string[] = [
-		"synthetics:GetGroup",
-		"synthetics:ListTagsForResource",
-	];
+	static readonly opGetGroup: string[] = ["synthetics:GetGroup"];
 	/** IAM actions required for the ListAssociatedGroups API call. */
 	static readonly ListAssociatedGroups: string[] = [
 		"synthetics:ListAssociatedGroups",

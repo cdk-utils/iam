@@ -259,6 +259,7 @@ export class SNSOperations {
 	static readonly CreateTopic: string[] = [
 		"sns:CreateTopic",
 		"iam:PassRole",
+		"sns:PutDataProtectionPolicy",
 		"sns:TagResource",
 	];
 	/** IAM actions required for the DeleteEndpoint API call. */

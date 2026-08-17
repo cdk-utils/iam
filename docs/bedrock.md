@@ -4991,6 +4991,154 @@ Defaults to "*".
 
 ---
 
+### BedrockProjectArnComponents <a name="BedrockProjectArnComponents" id="@cdk_utils/iam.bedrock.BedrockProjectArnComponents"></a>
+
+Parsed components of a project ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.bedrock.BedrockProjectArnComponents.Initializer"></a>
+
+```typescript
+import { bedrock } from '@cdk_utils/iam'
+
+const bedrockProjectArnComponents: bedrock.BedrockProjectArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockProjectArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockProjectArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockProjectArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockProjectArnComponents.property.resourceId">resourceId</a></code> | <code>string</code> | The ResourceId component. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.bedrock.BedrockProjectArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.bedrock.BedrockProjectArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.bedrock.BedrockProjectArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+##### `resourceId`<sup>Required</sup> <a name="resourceId" id="@cdk_utils/iam.bedrock.BedrockProjectArnComponents.property.resourceId"></a>
+
+```typescript
+public readonly resourceId: string;
+```
+
+- *Type:* string
+
+The ResourceId component.
+
+---
+
+### BedrockProjectArnProps <a name="BedrockProjectArnProps" id="@cdk_utils/iam.bedrock.BedrockProjectArnProps"></a>
+
+Properties for building a project ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.bedrock.BedrockProjectArnProps.Initializer"></a>
+
+```typescript
+import { bedrock } from '@cdk_utils/iam'
+
+const bedrockProjectArnProps: bedrock.BedrockProjectArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockProjectArnProps.property.resourceId">resourceId</a></code> | <code>string</code> | The ResourceId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockProjectArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockProjectArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockProjectArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `resourceId`<sup>Required</sup> <a name="resourceId" id="@cdk_utils/iam.bedrock.BedrockProjectArnProps.property.resourceId"></a>
+
+```typescript
+public readonly resourceId: string;
+```
+
+- *Type:* string
+
+The ResourceId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.bedrock.BedrockProjectArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.bedrock.BedrockProjectArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.bedrock.BedrockProjectArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### BedrockPromptArnComponents <a name="BedrockPromptArnComponents" id="@cdk_utils/iam.bedrock.BedrockPromptArnComponents"></a>
 
 Parsed components of a prompt ARN.
@@ -5943,8 +6091,10 @@ new bedrock.BedrockActions()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetGuardrail">actionGetGuardrail</a></code> | <code>string</code> | [Read] bedrock:GetGuardrail. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetImportedModel">actionGetImportedModel</a></code> | <code>string</code> | [Read] bedrock:GetImportedModel. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetInferenceProfile">actionGetInferenceProfile</a></code> | <code>string</code> | [Read] bedrock:GetInferenceProfile. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetIngestedDocumentAcl">actionGetIngestedDocumentAcl</a></code> | <code>string</code> | [Read] bedrock:GetIngestedDocumentAcl. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetIngestionJob">actionGetIngestionJob</a></code> | <code>string</code> | [Read] bedrock:GetIngestionJob. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetInvocationStep">actionGetInvocationStep</a></code> | <code>string</code> | [Read] bedrock:GetInvocationStep. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetInvoke">actionGetInvoke</a></code> | <code>string</code> | [Read] bedrock:GetInvoke. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetKnowledgeBase">actionGetKnowledgeBase</a></code> | <code>string</code> | [Read] bedrock:GetKnowledgeBase. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetKnowledgeBaseDocuments">actionGetKnowledgeBaseDocuments</a></code> | <code>string</code> | [Read] bedrock:GetKnowledgeBaseDocuments. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetMarketplaceModelEndpoint">actionGetMarketplaceModelEndpoint</a></code> | <code>string</code> | [Read] bedrock:GetMarketplaceModelEndpoint. |
@@ -5975,6 +6125,8 @@ new bedrock.BedrockActions()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.BatchDeleteEvaluationJob">BatchDeleteEvaluationJob</a></code> | <code>string</code> | [Write] bedrock:BatchDeleteEvaluationJob. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.CallWithBearerToken">CallWithBearerToken</a></code> | <code>string</code> | [Read] bedrock:CallWithBearerToken. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.CancelAutomatedReasoningPolicyBuildWorkflow">CancelAutomatedReasoningPolicyBuildWorkflow</a></code> | <code>string</code> | [Write] bedrock:CancelAutomatedReasoningPolicyBuildWorkflow. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.CancelInvoke">CancelInvoke</a></code> | <code>string</code> | [Write] bedrock:CancelInvoke. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.CheckIngestedDocumentAcl">CheckIngestedDocumentAcl</a></code> | <code>string</code> | [Read] bedrock:CheckIngestedDocumentAcl. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.CopyBlueprintStage">CopyBlueprintStage</a></code> | <code>string</code> | [Write] bedrock:CopyBlueprintStage. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.CountTokens">CountTokens</a></code> | <code>string</code> | [Read] bedrock:CountTokens. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.CreateAdvancedPromptOptimizationJob">CreateAdvancedPromptOptimizationJob</a></code> | <code>string</code> | [Write] bedrock:CreateAdvancedPromptOptimizationJob. |
@@ -6034,6 +6186,7 @@ new bedrock.BedrockActions()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.DeleteGuardrail">DeleteGuardrail</a></code> | <code>string</code> | [Write] bedrock:DeleteGuardrail. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.DeleteImportedModel">DeleteImportedModel</a></code> | <code>string</code> | [Write] bedrock:DeleteImportedModel. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.DeleteInferenceProfile">DeleteInferenceProfile</a></code> | <code>string</code> | [Write] bedrock:DeleteInferenceProfile. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.DeleteInvoke">DeleteInvoke</a></code> | <code>string</code> | [Write] bedrock:DeleteInvoke. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.DeleteKnowledgeBase">DeleteKnowledgeBase</a></code> | <code>string</code> | [Write] bedrock:DeleteKnowledgeBase. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.DeleteKnowledgeBaseDocuments">DeleteKnowledgeBaseDocuments</a></code> | <code>string</code> | [Write] bedrock:DeleteKnowledgeBaseDocuments. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.DeleteMarketplaceModelAgreement">DeleteMarketplaceModelAgreement</a></code> | <code>string</code> | [Write] bedrock:DeleteMarketplaceModelAgreement. |
@@ -6647,6 +6800,18 @@ public readonly actionGetInferenceProfile: string;
 
 ---
 
+##### `actionGetIngestedDocumentAcl`<sup>Required</sup> <a name="actionGetIngestedDocumentAcl" id="@cdk_utils/iam.bedrock.BedrockActions.property.actionGetIngestedDocumentAcl"></a>
+
+```typescript
+public readonly actionGetIngestedDocumentAcl: string;
+```
+
+- *Type:* string
+
+[Read] bedrock:GetIngestedDocumentAcl.
+
+---
+
 ##### `actionGetIngestionJob`<sup>Required</sup> <a name="actionGetIngestionJob" id="@cdk_utils/iam.bedrock.BedrockActions.property.actionGetIngestionJob"></a>
 
 ```typescript
@@ -6668,6 +6833,18 @@ public readonly actionGetInvocationStep: string;
 - *Type:* string
 
 [Read] bedrock:GetInvocationStep.
+
+---
+
+##### `actionGetInvoke`<sup>Required</sup> <a name="actionGetInvoke" id="@cdk_utils/iam.bedrock.BedrockActions.property.actionGetInvoke"></a>
+
+```typescript
+public readonly actionGetInvoke: string;
+```
+
+- *Type:* string
+
+[Read] bedrock:GetInvoke.
 
 ---
 
@@ -7028,6 +7205,30 @@ public readonly CancelAutomatedReasoningPolicyBuildWorkflow: string;
 - *Type:* string
 
 [Write] bedrock:CancelAutomatedReasoningPolicyBuildWorkflow.
+
+---
+
+##### `CancelInvoke`<sup>Required</sup> <a name="CancelInvoke" id="@cdk_utils/iam.bedrock.BedrockActions.property.CancelInvoke"></a>
+
+```typescript
+public readonly CancelInvoke: string;
+```
+
+- *Type:* string
+
+[Write] bedrock:CancelInvoke.
+
+---
+
+##### `CheckIngestedDocumentAcl`<sup>Required</sup> <a name="CheckIngestedDocumentAcl" id="@cdk_utils/iam.bedrock.BedrockActions.property.CheckIngestedDocumentAcl"></a>
+
+```typescript
+public readonly CheckIngestedDocumentAcl: string;
+```
+
+- *Type:* string
+
+[Read] bedrock:CheckIngestedDocumentAcl.
 
 ---
 
@@ -7736,6 +7937,18 @@ public readonly DeleteInferenceProfile: string;
 - *Type:* string
 
 [Write] bedrock:DeleteInferenceProfile.
+
+---
+
+##### `DeleteInvoke`<sup>Required</sup> <a name="DeleteInvoke" id="@cdk_utils/iam.bedrock.BedrockActions.property.DeleteInvoke"></a>
+
+```typescript
+public readonly DeleteInvoke: string;
+```
+
+- *Type:* string
+
+[Write] bedrock:DeleteInvoke.
 
 ---
 
@@ -9326,6 +9539,8 @@ new bedrock.BedrockConditions()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.guardrailIdentifier">guardrailIdentifier</a></code> | Generates a condition block for `bedrock:GuardrailIdentifier`. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.inferenceProfileARN">inferenceProfileARN</a></code> | Generates a condition block for `bedrock:InferenceProfileArn`. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.inlineAgentName">inlineAgentName</a></code> | Generates a condition block for `bedrock:InlineAgentName`. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.modelARN">modelARN</a></code> | Generates a condition block for `bedrock:ModelArn`. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.projectARN">projectARN</a></code> | Generates a condition block for `bedrock:ProjectArn`. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.promptRouterARN">promptRouterARN</a></code> | Generates a condition block for `bedrock:PromptRouterArn`. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.requestTag">requestTag</a></code> | Generates a condition block for `aws:RequestTag/${TagKey}`. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.resourceTag">resourceTag</a></code> | Generates a condition block for `aws:ResourceTag/${TagKey}`. |
@@ -9410,6 +9625,38 @@ bedrock.BedrockConditions.inlineAgentName(value: string)
 Generates a condition block for `bedrock:InlineAgentName`.
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.bedrock.BedrockConditions.inlineAgentName.parameter.value"></a>
+
+- *Type:* string
+
+---
+
+##### `modelARN` <a name="modelARN" id="@cdk_utils/iam.bedrock.BedrockConditions.modelARN"></a>
+
+```typescript
+import { bedrock } from '@cdk_utils/iam'
+
+bedrock.BedrockConditions.modelARN(value: string)
+```
+
+Generates a condition block for `bedrock:ModelArn`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.bedrock.BedrockConditions.modelARN.parameter.value"></a>
+
+- *Type:* string
+
+---
+
+##### `projectARN` <a name="projectARN" id="@cdk_utils/iam.bedrock.BedrockConditions.projectARN"></a>
+
+```typescript
+import { bedrock } from '@cdk_utils/iam'
+
+bedrock.BedrockConditions.projectARN(value: string)
+```
+
+Generates a condition block for `bedrock:ProjectArn`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.bedrock.BedrockConditions.projectARN.parameter.value"></a>
 
 - *Type:* string
 
@@ -9559,6 +9806,8 @@ Generates a condition block for `bedrock:ThirdPartyKnowledgeBaseCredentialsSecre
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.InvokeInlineAgentConditionKeys">InvokeInlineAgentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the InvokeInlineAgent action. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.InvokeModelConditionKeys">InvokeModelConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the InvokeModel action. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.InvokeModelWithResponseStreamConditionKeys">InvokeModelWithResponseStreamConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the InvokeModelWithResponseStream action. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.MODEL_ARN">MODEL_ARN</a></code> | <code>string</code> | Condition key: bedrock:ModelArn (ARN). |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.PROJECT_ARN">PROJECT_ARN</a></code> | <code>string</code> | Condition key: bedrock:ProjectArn (ARN). |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.PROMPT_ROUTER_ARN">PROMPT_ROUTER_ARN</a></code> | <code>string</code> | Condition key: bedrock:PromptRouterArn (ARN). |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.PutAccountDataRetentionConditionKeys">PutAccountDataRetentionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutAccountDataRetention action. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.PutResourcePolicyConditionKeys">PutResourcePolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutResourcePolicy action. |
@@ -10085,6 +10334,30 @@ Condition keys applicable to the InvokeModelWithResponseStream action.
 
 ---
 
+##### `MODEL_ARN`<sup>Required</sup> <a name="MODEL_ARN" id="@cdk_utils/iam.bedrock.BedrockConditions.property.MODEL_ARN"></a>
+
+```typescript
+public readonly MODEL_ARN: string;
+```
+
+- *Type:* string
+
+Condition key: bedrock:ModelArn (ARN).
+
+---
+
+##### `PROJECT_ARN`<sup>Required</sup> <a name="PROJECT_ARN" id="@cdk_utils/iam.bedrock.BedrockConditions.property.PROJECT_ARN"></a>
+
+```typescript
+public readonly PROJECT_ARN: string;
+```
+
+- *Type:* string
+
+Condition key: bedrock:ProjectArn (ARN).
+
+---
+
 ##### `PROMPT_ROUTER_ARN`<sup>Required</sup> <a name="PROMPT_ROUTER_ARN" id="@cdk_utils/iam.bedrock.BedrockConditions.property.PROMPT_ROUTER_ARN"></a>
 
 ```typescript
@@ -10200,6 +10473,7 @@ new bedrock.BedrockOperations()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.BatchDeleteAdvancedPromptOptimizationJob">BatchDeleteAdvancedPromptOptimizationJob</a></code> | <code>string[]</code> | IAM actions required for the BatchDeleteAdvancedPromptOptimizationJob API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.BatchDeleteEvaluationJob">BatchDeleteEvaluationJob</a></code> | <code>string[]</code> | IAM actions required for the BatchDeleteEvaluationJob API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.CancelAutomatedReasoningPolicyBuildWorkflow">CancelAutomatedReasoningPolicyBuildWorkflow</a></code> | <code>string[]</code> | IAM actions required for the CancelAutomatedReasoningPolicyBuildWorkflow API call. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.CheckIngestedDocumentAcl">CheckIngestedDocumentAcl</a></code> | <code>string[]</code> | IAM actions required for the CheckIngestedDocumentAcl API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.Converse">Converse</a></code> | <code>string[]</code> | IAM actions required for the Converse API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.ConverseStream">ConverseStream</a></code> | <code>string[]</code> | IAM actions required for the ConverseStream API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.CopyBlueprintStage">CopyBlueprintStage</a></code> | <code>string[]</code> | IAM actions required for the CopyBlueprintStage API call. |
@@ -10373,6 +10647,7 @@ new bedrock.BedrockOperations()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.opGetGuardrail">opGetGuardrail</a></code> | <code>string[]</code> | IAM actions required for the GetGuardrail API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.opGetImportedModel">opGetImportedModel</a></code> | <code>string[]</code> | IAM actions required for the GetImportedModel API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.opGetInferenceProfile">opGetInferenceProfile</a></code> | <code>string[]</code> | IAM actions required for the GetInferenceProfile API call. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.opGetIngestedDocumentAcl">opGetIngestedDocumentAcl</a></code> | <code>string[]</code> | IAM actions required for the GetIngestedDocumentAcl API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.opGetIngestionJob">opGetIngestionJob</a></code> | <code>string[]</code> | IAM actions required for the GetIngestionJob API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.opGetInvocationStep">opGetInvocationStep</a></code> | <code>string[]</code> | IAM actions required for the GetInvocationStep API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.opGetKnowledgeBase">opGetKnowledgeBase</a></code> | <code>string[]</code> | IAM actions required for the GetKnowledgeBase API call. |
@@ -10522,6 +10797,18 @@ public readonly CancelAutomatedReasoningPolicyBuildWorkflow: string[];
 - *Type:* string[]
 
 IAM actions required for the CancelAutomatedReasoningPolicyBuildWorkflow API call.
+
+---
+
+##### `CheckIngestedDocumentAcl`<sup>Required</sup> <a name="CheckIngestedDocumentAcl" id="@cdk_utils/iam.bedrock.BedrockOperations.property.CheckIngestedDocumentAcl"></a>
+
+```typescript
+public readonly CheckIngestedDocumentAcl: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CheckIngestedDocumentAcl API call.
 
 ---
 
@@ -12601,6 +12888,18 @@ IAM actions required for the GetInferenceProfile API call.
 
 ---
 
+##### `opGetIngestedDocumentAcl`<sup>Required</sup> <a name="opGetIngestedDocumentAcl" id="@cdk_utils/iam.bedrock.BedrockOperations.property.opGetIngestedDocumentAcl"></a>
+
+```typescript
+public readonly opGetIngestedDocumentAcl: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetIngestedDocumentAcl API call.
+
+---
+
 ##### `opGetIngestionJob`<sup>Required</sup> <a name="opGetIngestionJob" id="@cdk_utils/iam.bedrock.BedrockOperations.property.opGetIngestionJob"></a>
 
 ```typescript
@@ -13463,6 +13762,7 @@ new bedrock.BedrockResources()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.isValidModelEvaluationJobArn">isValidModelEvaluationJobArn</a></code> | Validates whether a string is a valid ARN for the model-evaluation-job resource. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.isValidModelImportJobArn">isValidModelImportJobArn</a></code> | Validates whether a string is a valid ARN for the model-import-job resource. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.isValidModelInvocationJobArn">isValidModelInvocationJobArn</a></code> | Validates whether a string is a valid ARN for the model-invocation-job resource. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.isValidProjectArn">isValidProjectArn</a></code> | Validates whether a string is a valid ARN for the project resource. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.isValidPromptArn">isValidPromptArn</a></code> | Validates whether a string is a valid ARN for the prompt resource. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.isValidPromptRouterArn">isValidPromptRouterArn</a></code> | Validates whether a string is a valid ARN for the prompt-router resource. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.isValidPromptVersionArn">isValidPromptVersionArn</a></code> | Validates whether a string is a valid ARN for the prompt-version resource. |
@@ -13508,12 +13808,14 @@ new bedrock.BedrockResources()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.parseModelEvaluationJobArn">parseModelEvaluationJobArn</a></code> | Parses a model-evaluation-job ARN into its components. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.parseModelImportJobArn">parseModelImportJobArn</a></code> | Parses a model-import-job ARN into its components. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.parseModelInvocationJobArn">parseModelInvocationJobArn</a></code> | Parses a model-invocation-job ARN into its components. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.parseProjectArn">parseProjectArn</a></code> | Parses a project ARN into its components. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.parsePromptArn">parsePromptArn</a></code> | Parses a prompt ARN into its components. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.parsePromptRouterArn">parsePromptRouterArn</a></code> | Parses a prompt-router ARN into its components. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.parsePromptVersionArn">parsePromptVersionArn</a></code> | Parses a prompt-version ARN into its components. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.parseProvisionedModelArn">parseProvisionedModelArn</a></code> | Parses a provisioned-model ARN into its components. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.parseSessionArn">parseSessionArn</a></code> | Parses a session ARN into its components. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.parseSystemToolArn">parseSystemToolArn</a></code> | Parses a system-tool ARN into its components. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.project">project</a></code> | Builds an ARN for the project resource. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.prompt">prompt</a></code> | Builds an ARN for the prompt resource. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.promptRouter">promptRouter</a></code> | Builds an ARN for the prompt-router resource. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.promptVersion">promptVersion</a></code> | Builds an ARN for the prompt-version resource. |
@@ -14483,6 +14785,22 @@ Validates whether a string is a valid ARN for the model-invocation-job resource.
 
 ---
 
+##### `isValidProjectArn` <a name="isValidProjectArn" id="@cdk_utils/iam.bedrock.BedrockResources.isValidProjectArn"></a>
+
+```typescript
+import { bedrock } from '@cdk_utils/iam'
+
+bedrock.BedrockResources.isValidProjectArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the project resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.bedrock.BedrockResources.isValidProjectArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `isValidPromptArn` <a name="isValidPromptArn" id="@cdk_utils/iam.bedrock.BedrockResources.isValidPromptArn"></a>
 
 ```typescript
@@ -15203,6 +15521,22 @@ Parses a model-invocation-job ARN into its components.
 
 ---
 
+##### `parseProjectArn` <a name="parseProjectArn" id="@cdk_utils/iam.bedrock.BedrockResources.parseProjectArn"></a>
+
+```typescript
+import { bedrock } from '@cdk_utils/iam'
+
+bedrock.BedrockResources.parseProjectArn(arn: string)
+```
+
+Parses a project ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.bedrock.BedrockResources.parseProjectArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `parsePromptArn` <a name="parsePromptArn" id="@cdk_utils/iam.bedrock.BedrockResources.parsePromptArn"></a>
 
 ```typescript
@@ -15296,6 +15630,22 @@ Parses a system-tool ARN into its components.
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.bedrock.BedrockResources.parseSystemToolArn.parameter.arn"></a>
 
 - *Type:* string
+
+---
+
+##### `project` <a name="project" id="@cdk_utils/iam.bedrock.BedrockResources.project"></a>
+
+```typescript
+import { bedrock } from '@cdk_utils/iam'
+
+bedrock.BedrockResources.project(props: BedrockProjectArnProps)
+```
+
+Builds an ARN for the project resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.bedrock.BedrockResources.project.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.bedrock.BedrockProjectArnProps">BedrockProjectArnProps</a>
 
 ---
 

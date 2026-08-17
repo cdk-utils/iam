@@ -1047,6 +1047,380 @@ Defaults to "*".
 
 ---
 
+### AppconfigExperimentdefinitionArnComponents <a name="AppconfigExperimentdefinitionArnComponents" id="@cdk_utils/iam.appconfig.AppconfigExperimentdefinitionArnComponents"></a>
+
+Parsed components of a experimentdefinition ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.appconfig.AppconfigExperimentdefinitionArnComponents.Initializer"></a>
+
+```typescript
+import { appconfig } from '@cdk_utils/iam'
+
+const appconfigExperimentdefinitionArnComponents: appconfig.AppconfigExperimentdefinitionArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigExperimentdefinitionArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigExperimentdefinitionArnComponents.property.applicationId">applicationId</a></code> | <code>string</code> | The ApplicationId component. |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigExperimentdefinitionArnComponents.property.experimentDefinitionId">experimentDefinitionId</a></code> | <code>string</code> | The ExperimentDefinitionId component. |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigExperimentdefinitionArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigExperimentdefinitionArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.appconfig.AppconfigExperimentdefinitionArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `applicationId`<sup>Required</sup> <a name="applicationId" id="@cdk_utils/iam.appconfig.AppconfigExperimentdefinitionArnComponents.property.applicationId"></a>
+
+```typescript
+public readonly applicationId: string;
+```
+
+- *Type:* string
+
+The ApplicationId component.
+
+---
+
+##### `experimentDefinitionId`<sup>Required</sup> <a name="experimentDefinitionId" id="@cdk_utils/iam.appconfig.AppconfigExperimentdefinitionArnComponents.property.experimentDefinitionId"></a>
+
+```typescript
+public readonly experimentDefinitionId: string;
+```
+
+- *Type:* string
+
+The ExperimentDefinitionId component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.appconfig.AppconfigExperimentdefinitionArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.appconfig.AppconfigExperimentdefinitionArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### AppconfigExperimentdefinitionArnProps <a name="AppconfigExperimentdefinitionArnProps" id="@cdk_utils/iam.appconfig.AppconfigExperimentdefinitionArnProps"></a>
+
+Properties for building a experimentdefinition ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.appconfig.AppconfigExperimentdefinitionArnProps.Initializer"></a>
+
+```typescript
+import { appconfig } from '@cdk_utils/iam'
+
+const appconfigExperimentdefinitionArnProps: appconfig.AppconfigExperimentdefinitionArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigExperimentdefinitionArnProps.property.applicationId">applicationId</a></code> | <code>string</code> | The ApplicationId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigExperimentdefinitionArnProps.property.experimentDefinitionId">experimentDefinitionId</a></code> | <code>string</code> | The ExperimentDefinitionId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigExperimentdefinitionArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigExperimentdefinitionArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigExperimentdefinitionArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `applicationId`<sup>Required</sup> <a name="applicationId" id="@cdk_utils/iam.appconfig.AppconfigExperimentdefinitionArnProps.property.applicationId"></a>
+
+```typescript
+public readonly applicationId: string;
+```
+
+- *Type:* string
+
+The ApplicationId component of the ARN.
+
+---
+
+##### `experimentDefinitionId`<sup>Required</sup> <a name="experimentDefinitionId" id="@cdk_utils/iam.appconfig.AppconfigExperimentdefinitionArnProps.property.experimentDefinitionId"></a>
+
+```typescript
+public readonly experimentDefinitionId: string;
+```
+
+- *Type:* string
+
+The ExperimentDefinitionId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.appconfig.AppconfigExperimentdefinitionArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.appconfig.AppconfigExperimentdefinitionArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.appconfig.AppconfigExperimentdefinitionArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
+### AppconfigExperimentrunArnComponents <a name="AppconfigExperimentrunArnComponents" id="@cdk_utils/iam.appconfig.AppconfigExperimentrunArnComponents"></a>
+
+Parsed components of a experimentrun ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.appconfig.AppconfigExperimentrunArnComponents.Initializer"></a>
+
+```typescript
+import { appconfig } from '@cdk_utils/iam'
+
+const appconfigExperimentrunArnComponents: appconfig.AppconfigExperimentrunArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigExperimentrunArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigExperimentrunArnComponents.property.applicationId">applicationId</a></code> | <code>string</code> | The ApplicationId component. |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigExperimentrunArnComponents.property.experimentDefinitionId">experimentDefinitionId</a></code> | <code>string</code> | The ExperimentDefinitionId component. |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigExperimentrunArnComponents.property.experimentRunNumber">experimentRunNumber</a></code> | <code>string</code> | The ExperimentRunNumber component. |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigExperimentrunArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigExperimentrunArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.appconfig.AppconfigExperimentrunArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `applicationId`<sup>Required</sup> <a name="applicationId" id="@cdk_utils/iam.appconfig.AppconfigExperimentrunArnComponents.property.applicationId"></a>
+
+```typescript
+public readonly applicationId: string;
+```
+
+- *Type:* string
+
+The ApplicationId component.
+
+---
+
+##### `experimentDefinitionId`<sup>Required</sup> <a name="experimentDefinitionId" id="@cdk_utils/iam.appconfig.AppconfigExperimentrunArnComponents.property.experimentDefinitionId"></a>
+
+```typescript
+public readonly experimentDefinitionId: string;
+```
+
+- *Type:* string
+
+The ExperimentDefinitionId component.
+
+---
+
+##### `experimentRunNumber`<sup>Required</sup> <a name="experimentRunNumber" id="@cdk_utils/iam.appconfig.AppconfigExperimentrunArnComponents.property.experimentRunNumber"></a>
+
+```typescript
+public readonly experimentRunNumber: string;
+```
+
+- *Type:* string
+
+The ExperimentRunNumber component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.appconfig.AppconfigExperimentrunArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.appconfig.AppconfigExperimentrunArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### AppconfigExperimentrunArnProps <a name="AppconfigExperimentrunArnProps" id="@cdk_utils/iam.appconfig.AppconfigExperimentrunArnProps"></a>
+
+Properties for building a experimentrun ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.appconfig.AppconfigExperimentrunArnProps.Initializer"></a>
+
+```typescript
+import { appconfig } from '@cdk_utils/iam'
+
+const appconfigExperimentrunArnProps: appconfig.AppconfigExperimentrunArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigExperimentrunArnProps.property.applicationId">applicationId</a></code> | <code>string</code> | The ApplicationId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigExperimentrunArnProps.property.experimentDefinitionId">experimentDefinitionId</a></code> | <code>string</code> | The ExperimentDefinitionId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigExperimentrunArnProps.property.experimentRunNumber">experimentRunNumber</a></code> | <code>string</code> | The ExperimentRunNumber component of the ARN. |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigExperimentrunArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigExperimentrunArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigExperimentrunArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `applicationId`<sup>Required</sup> <a name="applicationId" id="@cdk_utils/iam.appconfig.AppconfigExperimentrunArnProps.property.applicationId"></a>
+
+```typescript
+public readonly applicationId: string;
+```
+
+- *Type:* string
+
+The ApplicationId component of the ARN.
+
+---
+
+##### `experimentDefinitionId`<sup>Required</sup> <a name="experimentDefinitionId" id="@cdk_utils/iam.appconfig.AppconfigExperimentrunArnProps.property.experimentDefinitionId"></a>
+
+```typescript
+public readonly experimentDefinitionId: string;
+```
+
+- *Type:* string
+
+The ExperimentDefinitionId component of the ARN.
+
+---
+
+##### `experimentRunNumber`<sup>Required</sup> <a name="experimentRunNumber" id="@cdk_utils/iam.appconfig.AppconfigExperimentrunArnProps.property.experimentRunNumber"></a>
+
+```typescript
+public readonly experimentRunNumber: string;
+```
+
+- *Type:* string
+
+The ExperimentRunNumber component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.appconfig.AppconfigExperimentrunArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.appconfig.AppconfigExperimentrunArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.appconfig.AppconfigExperimentrunArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### AppconfigExtensionArnComponents <a name="AppconfigExtensionArnComponents" id="@cdk_utils/iam.appconfig.AppconfigExtensionArnComponents"></a>
 
 Parsed components of a extension ARN.
@@ -1576,6 +1950,8 @@ new appconfig.AppconfigActions()
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.actionGetDeployment">actionGetDeployment</a></code> | <code>string</code> | [Read] appconfig:GetDeployment. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.actionGetDeploymentStrategy">actionGetDeploymentStrategy</a></code> | <code>string</code> | [Read] appconfig:GetDeploymentStrategy. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.actionGetEnvironment">actionGetEnvironment</a></code> | <code>string</code> | [Read] appconfig:GetEnvironment. |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.actionGetExperimentDefinition">actionGetExperimentDefinition</a></code> | <code>string</code> | [Read] appconfig:GetExperimentDefinition. |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.actionGetExperimentRun">actionGetExperimentRun</a></code> | <code>string</code> | [Read] appconfig:GetExperimentRun. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.actionGetExtension">actionGetExtension</a></code> | <code>string</code> | [Read] appconfig:GetExtension. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.actionGetExtensionAssociation">actionGetExtensionAssociation</a></code> | <code>string</code> | [Read] appconfig:GetExtensionAssociation. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.actionGetHostedConfigurationVersion">actionGetHostedConfigurationVersion</a></code> | <code>string</code> | [Read] appconfig:GetHostedConfigurationVersion. |
@@ -1589,6 +1965,7 @@ new appconfig.AppconfigActions()
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.CreateConfigurationProfile">CreateConfigurationProfile</a></code> | <code>string</code> | [Write] appconfig:CreateConfigurationProfile. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.CreateDeploymentStrategy">CreateDeploymentStrategy</a></code> | <code>string</code> | [Write] appconfig:CreateDeploymentStrategy. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.CreateEnvironment">CreateEnvironment</a></code> | <code>string</code> | [Write] appconfig:CreateEnvironment. |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.CreateExperimentDefinition">CreateExperimentDefinition</a></code> | <code>string</code> | [Write] appconfig:CreateExperimentDefinition. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.CreateExtension">CreateExtension</a></code> | <code>string</code> | [Write] appconfig:CreateExtension. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.CreateExtensionAssociation">CreateExtensionAssociation</a></code> | <code>string</code> | [Write] appconfig:CreateExtensionAssociation. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.CreateHostedConfigurationVersion">CreateHostedConfigurationVersion</a></code> | <code>string</code> | [Write] appconfig:CreateHostedConfigurationVersion. |
@@ -1596,6 +1973,7 @@ new appconfig.AppconfigActions()
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.DeleteConfigurationProfile">DeleteConfigurationProfile</a></code> | <code>string</code> | [Write] appconfig:DeleteConfigurationProfile. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.DeleteDeploymentStrategy">DeleteDeploymentStrategy</a></code> | <code>string</code> | [Write] appconfig:DeleteDeploymentStrategy. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.DeleteEnvironment">DeleteEnvironment</a></code> | <code>string</code> | [Write] appconfig:DeleteEnvironment. |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.DeleteExperimentDefinition">DeleteExperimentDefinition</a></code> | <code>string</code> | [Write] appconfig:DeleteExperimentDefinition. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.DeleteExtension">DeleteExtension</a></code> | <code>string</code> | [Write] appconfig:DeleteExtension. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.DeleteExtensionAssociation">DeleteExtensionAssociation</a></code> | <code>string</code> | [Write] appconfig:DeleteExtensionAssociation. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.DeleteHostedConfigurationVersion">DeleteHostedConfigurationVersion</a></code> | <code>string</code> | [Write] appconfig:DeleteHostedConfigurationVersion. |
@@ -1604,6 +1982,9 @@ new appconfig.AppconfigActions()
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.ListDeployments">ListDeployments</a></code> | <code>string</code> | [List] appconfig:ListDeployments. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.ListDeploymentStrategies">ListDeploymentStrategies</a></code> | <code>string</code> | [List] appconfig:ListDeploymentStrategies. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.ListEnvironments">ListEnvironments</a></code> | <code>string</code> | [List] appconfig:ListEnvironments. |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.ListExperimentDefinitions">ListExperimentDefinitions</a></code> | <code>string</code> | [List] appconfig:ListExperimentDefinitions. |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.ListExperimentRunEvents">ListExperimentRunEvents</a></code> | <code>string</code> | [List] appconfig:ListExperimentRunEvents. |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.ListExperimentRuns">ListExperimentRuns</a></code> | <code>string</code> | [List] appconfig:ListExperimentRuns. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.ListExtensionAssociations">ListExtensionAssociations</a></code> | <code>string</code> | [List] appconfig:ListExtensionAssociations. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.ListExtensions">ListExtensions</a></code> | <code>string</code> | [List] appconfig:ListExtensions. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.ListHostedConfigurationVersions">ListHostedConfigurationVersions</a></code> | <code>string</code> | [List] appconfig:ListHostedConfigurationVersions. |
@@ -1611,7 +1992,9 @@ new appconfig.AppconfigActions()
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.StartConfigurationSession">StartConfigurationSession</a></code> | <code>string</code> | [Write] appconfig:StartConfigurationSession. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.StartDeployment">StartDeployment</a></code> | <code>string</code> | [Write] appconfig:StartDeployment. |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.StartExperimentRun">StartExperimentRun</a></code> | <code>string</code> | [Write] appconfig:StartExperimentRun. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.StopDeployment">StopDeployment</a></code> | <code>string</code> | [Write] appconfig:StopDeployment. |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.StopExperimentRun">StopExperimentRun</a></code> | <code>string</code> | [Write] appconfig:StopExperimentRun. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] appconfig:TagResource. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] appconfig:UntagResource. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.UpdateAccountSettings">UpdateAccountSettings</a></code> | <code>string</code> | [Write] appconfig:UpdateAccountSettings. |
@@ -1619,6 +2002,8 @@ new appconfig.AppconfigActions()
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.UpdateConfigurationProfile">UpdateConfigurationProfile</a></code> | <code>string</code> | [Write] appconfig:UpdateConfigurationProfile. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.UpdateDeploymentStrategy">UpdateDeploymentStrategy</a></code> | <code>string</code> | [Write] appconfig:UpdateDeploymentStrategy. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.UpdateEnvironment">UpdateEnvironment</a></code> | <code>string</code> | [Write] appconfig:UpdateEnvironment. |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.UpdateExperimentDefinition">UpdateExperimentDefinition</a></code> | <code>string</code> | [Write] appconfig:UpdateExperimentDefinition. |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.UpdateExperimentRun">UpdateExperimentRun</a></code> | <code>string</code> | [Write] appconfig:UpdateExperimentRun. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.UpdateExtension">UpdateExtension</a></code> | <code>string</code> | [Write] appconfig:UpdateExtension. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.UpdateExtensionAssociation">UpdateExtensionAssociation</a></code> | <code>string</code> | [Write] appconfig:UpdateExtensionAssociation. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigActions.property.ValidateConfiguration">ValidateConfiguration</a></code> | <code>string</code> | [Write] appconfig:ValidateConfiguration. |
@@ -1706,6 +2091,30 @@ public readonly actionGetEnvironment: string;
 - *Type:* string
 
 [Read] appconfig:GetEnvironment.
+
+---
+
+##### `actionGetExperimentDefinition`<sup>Required</sup> <a name="actionGetExperimentDefinition" id="@cdk_utils/iam.appconfig.AppconfigActions.property.actionGetExperimentDefinition"></a>
+
+```typescript
+public readonly actionGetExperimentDefinition: string;
+```
+
+- *Type:* string
+
+[Read] appconfig:GetExperimentDefinition.
+
+---
+
+##### `actionGetExperimentRun`<sup>Required</sup> <a name="actionGetExperimentRun" id="@cdk_utils/iam.appconfig.AppconfigActions.property.actionGetExperimentRun"></a>
+
+```typescript
+public readonly actionGetExperimentRun: string;
+```
+
+- *Type:* string
+
+[Read] appconfig:GetExperimentRun.
 
 ---
 
@@ -1865,6 +2274,18 @@ public readonly CreateEnvironment: string;
 
 ---
 
+##### `CreateExperimentDefinition`<sup>Required</sup> <a name="CreateExperimentDefinition" id="@cdk_utils/iam.appconfig.AppconfigActions.property.CreateExperimentDefinition"></a>
+
+```typescript
+public readonly CreateExperimentDefinition: string;
+```
+
+- *Type:* string
+
+[Write] appconfig:CreateExperimentDefinition.
+
+---
+
 ##### `CreateExtension`<sup>Required</sup> <a name="CreateExtension" id="@cdk_utils/iam.appconfig.AppconfigActions.property.CreateExtension"></a>
 
 ```typescript
@@ -1946,6 +2367,18 @@ public readonly DeleteEnvironment: string;
 - *Type:* string
 
 [Write] appconfig:DeleteEnvironment.
+
+---
+
+##### `DeleteExperimentDefinition`<sup>Required</sup> <a name="DeleteExperimentDefinition" id="@cdk_utils/iam.appconfig.AppconfigActions.property.DeleteExperimentDefinition"></a>
+
+```typescript
+public readonly DeleteExperimentDefinition: string;
+```
+
+- *Type:* string
+
+[Write] appconfig:DeleteExperimentDefinition.
 
 ---
 
@@ -2045,6 +2478,42 @@ public readonly ListEnvironments: string;
 
 ---
 
+##### `ListExperimentDefinitions`<sup>Required</sup> <a name="ListExperimentDefinitions" id="@cdk_utils/iam.appconfig.AppconfigActions.property.ListExperimentDefinitions"></a>
+
+```typescript
+public readonly ListExperimentDefinitions: string;
+```
+
+- *Type:* string
+
+[List] appconfig:ListExperimentDefinitions.
+
+---
+
+##### `ListExperimentRunEvents`<sup>Required</sup> <a name="ListExperimentRunEvents" id="@cdk_utils/iam.appconfig.AppconfigActions.property.ListExperimentRunEvents"></a>
+
+```typescript
+public readonly ListExperimentRunEvents: string;
+```
+
+- *Type:* string
+
+[List] appconfig:ListExperimentRunEvents.
+
+---
+
+##### `ListExperimentRuns`<sup>Required</sup> <a name="ListExperimentRuns" id="@cdk_utils/iam.appconfig.AppconfigActions.property.ListExperimentRuns"></a>
+
+```typescript
+public readonly ListExperimentRuns: string;
+```
+
+- *Type:* string
+
+[List] appconfig:ListExperimentRuns.
+
+---
+
 ##### `ListExtensionAssociations`<sup>Required</sup> <a name="ListExtensionAssociations" id="@cdk_utils/iam.appconfig.AppconfigActions.property.ListExtensionAssociations"></a>
 
 ```typescript
@@ -2129,6 +2598,18 @@ public readonly StartDeployment: string;
 
 ---
 
+##### `StartExperimentRun`<sup>Required</sup> <a name="StartExperimentRun" id="@cdk_utils/iam.appconfig.AppconfigActions.property.StartExperimentRun"></a>
+
+```typescript
+public readonly StartExperimentRun: string;
+```
+
+- *Type:* string
+
+[Write] appconfig:StartExperimentRun.
+
+---
+
 ##### `StopDeployment`<sup>Required</sup> <a name="StopDeployment" id="@cdk_utils/iam.appconfig.AppconfigActions.property.StopDeployment"></a>
 
 ```typescript
@@ -2138,6 +2619,18 @@ public readonly StopDeployment: string;
 - *Type:* string
 
 [Write] appconfig:StopDeployment.
+
+---
+
+##### `StopExperimentRun`<sup>Required</sup> <a name="StopExperimentRun" id="@cdk_utils/iam.appconfig.AppconfigActions.property.StopExperimentRun"></a>
+
+```typescript
+public readonly StopExperimentRun: string;
+```
+
+- *Type:* string
+
+[Write] appconfig:StopExperimentRun.
 
 ---
 
@@ -2222,6 +2715,30 @@ public readonly UpdateEnvironment: string;
 - *Type:* string
 
 [Write] appconfig:UpdateEnvironment.
+
+---
+
+##### `UpdateExperimentDefinition`<sup>Required</sup> <a name="UpdateExperimentDefinition" id="@cdk_utils/iam.appconfig.AppconfigActions.property.UpdateExperimentDefinition"></a>
+
+```typescript
+public readonly UpdateExperimentDefinition: string;
+```
+
+- *Type:* string
+
+[Write] appconfig:UpdateExperimentDefinition.
+
+---
+
+##### `UpdateExperimentRun`<sup>Required</sup> <a name="UpdateExperimentRun" id="@cdk_utils/iam.appconfig.AppconfigActions.property.UpdateExperimentRun"></a>
+
+```typescript
+public readonly UpdateExperimentRun: string;
+```
+
+- *Type:* string
+
+[Write] appconfig:UpdateExperimentRun.
 
 ---
 
@@ -2348,6 +2865,8 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigConditions.property.actionGetDeploymentConditionKeys">actionGetDeploymentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetDeployment action. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigConditions.property.actionGetDeploymentStrategyConditionKeys">actionGetDeploymentStrategyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetDeploymentStrategy action. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigConditions.property.actionGetEnvironmentConditionKeys">actionGetEnvironmentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetEnvironment action. |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigConditions.property.actionGetExperimentDefinitionConditionKeys">actionGetExperimentDefinitionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetExperimentDefinition action. |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigConditions.property.actionGetExperimentRunConditionKeys">actionGetExperimentRunConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetExperimentRun action. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigConditions.property.actionGetExtensionAssociationConditionKeys">actionGetExtensionAssociationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetExtensionAssociation action. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigConditions.property.actionGetExtensionConditionKeys">actionGetExtensionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetExtension action. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigConditions.property.actionGetLatestConfigurationConditionKeys">actionGetLatestConfigurationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetLatestConfiguration action. |
@@ -2358,17 +2877,22 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigConditions.property.CreateConfigurationProfileConditionKeys">CreateConfigurationProfileConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateConfigurationProfile action. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigConditions.property.CreateDeploymentStrategyConditionKeys">CreateDeploymentStrategyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateDeploymentStrategy action. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigConditions.property.CreateEnvironmentConditionKeys">CreateEnvironmentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateEnvironment action. |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigConditions.property.CreateExperimentDefinitionConditionKeys">CreateExperimentDefinitionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateExperimentDefinition action. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigConditions.property.CreateExtensionAssociationConditionKeys">CreateExtensionAssociationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateExtensionAssociation action. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigConditions.property.CreateExtensionConditionKeys">CreateExtensionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateExtension action. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigConditions.property.ListTagsForResourceConditionKeys">ListTagsForResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListTagsForResource action. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigConditions.property.StartConfigurationSessionConditionKeys">StartConfigurationSessionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartConfigurationSession action. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigConditions.property.StartDeploymentConditionKeys">StartDeploymentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartDeployment action. |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigConditions.property.StartExperimentRunConditionKeys">StartExperimentRunConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartExperimentRun action. |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigConditions.property.StopExperimentRunConditionKeys">StopExperimentRunConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StopExperimentRun action. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigConditions.property.TagResourceConditionKeys">TagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TagResource action. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigConditions.property.UntagResourceConditionKeys">UntagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UntagResource action. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigConditions.property.UpdateApplicationConditionKeys">UpdateApplicationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateApplication action. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigConditions.property.UpdateConfigurationProfileConditionKeys">UpdateConfigurationProfileConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateConfigurationProfile action. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigConditions.property.UpdateDeploymentStrategyConditionKeys">UpdateDeploymentStrategyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateDeploymentStrategy action. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigConditions.property.UpdateEnvironmentConditionKeys">UpdateEnvironmentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateEnvironment action. |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigConditions.property.UpdateExperimentDefinitionConditionKeys">UpdateExperimentDefinitionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateExperimentDefinition action. |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigConditions.property.UpdateExperimentRunConditionKeys">UpdateExperimentRunConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateExperimentRun action. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigConditions.property.UpdateExtensionAssociationConditionKeys">UpdateExtensionAssociationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateExtensionAssociation action. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigConditions.property.UpdateExtensionConditionKeys">UpdateExtensionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateExtension action. |
 
@@ -2443,6 +2967,30 @@ public readonly actionGetEnvironmentConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the GetEnvironment action.
+
+---
+
+##### `actionGetExperimentDefinitionConditionKeys`<sup>Required</sup> <a name="actionGetExperimentDefinitionConditionKeys" id="@cdk_utils/iam.appconfig.AppconfigConditions.property.actionGetExperimentDefinitionConditionKeys"></a>
+
+```typescript
+public readonly actionGetExperimentDefinitionConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetExperimentDefinition action.
+
+---
+
+##### `actionGetExperimentRunConditionKeys`<sup>Required</sup> <a name="actionGetExperimentRunConditionKeys" id="@cdk_utils/iam.appconfig.AppconfigConditions.property.actionGetExperimentRunConditionKeys"></a>
+
+```typescript
+public readonly actionGetExperimentRunConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetExperimentRun action.
 
 ---
 
@@ -2566,6 +3114,18 @@ Condition keys applicable to the CreateEnvironment action.
 
 ---
 
+##### `CreateExperimentDefinitionConditionKeys`<sup>Required</sup> <a name="CreateExperimentDefinitionConditionKeys" id="@cdk_utils/iam.appconfig.AppconfigConditions.property.CreateExperimentDefinitionConditionKeys"></a>
+
+```typescript
+public readonly CreateExperimentDefinitionConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateExperimentDefinition action.
+
+---
+
 ##### `CreateExtensionAssociationConditionKeys`<sup>Required</sup> <a name="CreateExtensionAssociationConditionKeys" id="@cdk_utils/iam.appconfig.AppconfigConditions.property.CreateExtensionAssociationConditionKeys"></a>
 
 ```typescript
@@ -2623,6 +3183,30 @@ public readonly StartDeploymentConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the StartDeployment action.
+
+---
+
+##### `StartExperimentRunConditionKeys`<sup>Required</sup> <a name="StartExperimentRunConditionKeys" id="@cdk_utils/iam.appconfig.AppconfigConditions.property.StartExperimentRunConditionKeys"></a>
+
+```typescript
+public readonly StartExperimentRunConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the StartExperimentRun action.
+
+---
+
+##### `StopExperimentRunConditionKeys`<sup>Required</sup> <a name="StopExperimentRunConditionKeys" id="@cdk_utils/iam.appconfig.AppconfigConditions.property.StopExperimentRunConditionKeys"></a>
+
+```typescript
+public readonly StopExperimentRunConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the StopExperimentRun action.
 
 ---
 
@@ -2695,6 +3279,30 @@ public readonly UpdateEnvironmentConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the UpdateEnvironment action.
+
+---
+
+##### `UpdateExperimentDefinitionConditionKeys`<sup>Required</sup> <a name="UpdateExperimentDefinitionConditionKeys" id="@cdk_utils/iam.appconfig.AppconfigConditions.property.UpdateExperimentDefinitionConditionKeys"></a>
+
+```typescript
+public readonly UpdateExperimentDefinitionConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UpdateExperimentDefinition action.
+
+---
+
+##### `UpdateExperimentRunConditionKeys`<sup>Required</sup> <a name="UpdateExperimentRunConditionKeys" id="@cdk_utils/iam.appconfig.AppconfigConditions.property.UpdateExperimentRunConditionKeys"></a>
+
+```typescript
+public readonly UpdateExperimentRunConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UpdateExperimentRun action.
 
 ---
 
@@ -3531,6 +4139,8 @@ new appconfig.AppconfigResources()
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigResources.deployment">deployment</a></code> | Builds an ARN for the deployment resource. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigResources.deploymentstrategy">deploymentstrategy</a></code> | Builds an ARN for the deploymentstrategy resource. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigResources.environment">environment</a></code> | Builds an ARN for the environment resource. |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigResources.experimentdefinition">experimentdefinition</a></code> | Builds an ARN for the experimentdefinition resource. |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigResources.experimentrun">experimentrun</a></code> | Builds an ARN for the experimentrun resource. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigResources.extension">extension</a></code> | Builds an ARN for the extension resource. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigResources.extensionassociation">extensionassociation</a></code> | Builds an ARN for the extensionassociation resource. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigResources.hostedconfigurationversion">hostedconfigurationversion</a></code> | Builds an ARN for the hostedconfigurationversion resource. |
@@ -3540,6 +4150,8 @@ new appconfig.AppconfigResources()
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigResources.isValidDeploymentArn">isValidDeploymentArn</a></code> | Validates whether a string is a valid ARN for the deployment resource. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigResources.isValidDeploymentstrategyArn">isValidDeploymentstrategyArn</a></code> | Validates whether a string is a valid ARN for the deploymentstrategy resource. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigResources.isValidEnvironmentArn">isValidEnvironmentArn</a></code> | Validates whether a string is a valid ARN for the environment resource. |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigResources.isValidExperimentdefinitionArn">isValidExperimentdefinitionArn</a></code> | Validates whether a string is a valid ARN for the experimentdefinition resource. |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigResources.isValidExperimentrunArn">isValidExperimentrunArn</a></code> | Validates whether a string is a valid ARN for the experimentrun resource. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigResources.isValidExtensionArn">isValidExtensionArn</a></code> | Validates whether a string is a valid ARN for the extension resource. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigResources.isValidExtensionassociationArn">isValidExtensionassociationArn</a></code> | Validates whether a string is a valid ARN for the extensionassociation resource. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigResources.isValidHostedconfigurationversionArn">isValidHostedconfigurationversionArn</a></code> | Validates whether a string is a valid ARN for the hostedconfigurationversion resource. |
@@ -3549,6 +4161,8 @@ new appconfig.AppconfigResources()
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigResources.parseDeploymentArn">parseDeploymentArn</a></code> | Parses a deployment ARN into its components. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigResources.parseDeploymentstrategyArn">parseDeploymentstrategyArn</a></code> | Parses a deploymentstrategy ARN into its components. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigResources.parseEnvironmentArn">parseEnvironmentArn</a></code> | Parses a environment ARN into its components. |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigResources.parseExperimentdefinitionArn">parseExperimentdefinitionArn</a></code> | Parses a experimentdefinition ARN into its components. |
+| <code><a href="#@cdk_utils/iam.appconfig.AppconfigResources.parseExperimentrunArn">parseExperimentrunArn</a></code> | Parses a experimentrun ARN into its components. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigResources.parseExtensionArn">parseExtensionArn</a></code> | Parses a extension ARN into its components. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigResources.parseExtensionassociationArn">parseExtensionassociationArn</a></code> | Parses a extensionassociation ARN into its components. |
 | <code><a href="#@cdk_utils/iam.appconfig.AppconfigResources.parseHostedconfigurationversionArn">parseHostedconfigurationversionArn</a></code> | Parses a hostedconfigurationversion ARN into its components. |
@@ -3648,6 +4262,38 @@ Builds an ARN for the environment resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.appconfig.AppconfigResources.environment.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.appconfig.AppconfigEnvironmentArnProps">AppconfigEnvironmentArnProps</a>
+
+---
+
+##### `experimentdefinition` <a name="experimentdefinition" id="@cdk_utils/iam.appconfig.AppconfigResources.experimentdefinition"></a>
+
+```typescript
+import { appconfig } from '@cdk_utils/iam'
+
+appconfig.AppconfigResources.experimentdefinition(props: AppconfigExperimentdefinitionArnProps)
+```
+
+Builds an ARN for the experimentdefinition resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.appconfig.AppconfigResources.experimentdefinition.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.appconfig.AppconfigExperimentdefinitionArnProps">AppconfigExperimentdefinitionArnProps</a>
+
+---
+
+##### `experimentrun` <a name="experimentrun" id="@cdk_utils/iam.appconfig.AppconfigResources.experimentrun"></a>
+
+```typescript
+import { appconfig } from '@cdk_utils/iam'
+
+appconfig.AppconfigResources.experimentrun(props: AppconfigExperimentrunArnProps)
+```
+
+Builds an ARN for the experimentrun resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.appconfig.AppconfigResources.experimentrun.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.appconfig.AppconfigExperimentrunArnProps">AppconfigExperimentrunArnProps</a>
 
 ---
 
@@ -3795,6 +4441,38 @@ Validates whether a string is a valid ARN for the environment resource.
 
 ---
 
+##### `isValidExperimentdefinitionArn` <a name="isValidExperimentdefinitionArn" id="@cdk_utils/iam.appconfig.AppconfigResources.isValidExperimentdefinitionArn"></a>
+
+```typescript
+import { appconfig } from '@cdk_utils/iam'
+
+appconfig.AppconfigResources.isValidExperimentdefinitionArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the experimentdefinition resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.appconfig.AppconfigResources.isValidExperimentdefinitionArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidExperimentrunArn` <a name="isValidExperimentrunArn" id="@cdk_utils/iam.appconfig.AppconfigResources.isValidExperimentrunArn"></a>
+
+```typescript
+import { appconfig } from '@cdk_utils/iam'
+
+appconfig.AppconfigResources.isValidExperimentrunArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the experimentrun resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.appconfig.AppconfigResources.isValidExperimentrunArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `isValidExtensionArn` <a name="isValidExtensionArn" id="@cdk_utils/iam.appconfig.AppconfigResources.isValidExtensionArn"></a>
 
 ```typescript
@@ -3934,6 +4612,38 @@ appconfig.AppconfigResources.parseEnvironmentArn(arn: string)
 Parses a environment ARN into its components.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.appconfig.AppconfigResources.parseEnvironmentArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseExperimentdefinitionArn` <a name="parseExperimentdefinitionArn" id="@cdk_utils/iam.appconfig.AppconfigResources.parseExperimentdefinitionArn"></a>
+
+```typescript
+import { appconfig } from '@cdk_utils/iam'
+
+appconfig.AppconfigResources.parseExperimentdefinitionArn(arn: string)
+```
+
+Parses a experimentdefinition ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.appconfig.AppconfigResources.parseExperimentdefinitionArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseExperimentrunArn` <a name="parseExperimentrunArn" id="@cdk_utils/iam.appconfig.AppconfigResources.parseExperimentrunArn"></a>
+
+```typescript
+import { appconfig } from '@cdk_utils/iam'
+
+appconfig.AppconfigResources.parseExperimentrunArn(arn: string)
+```
+
+Parses a experimentrun ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.appconfig.AppconfigResources.parseExperimentrunArn.parameter.arn"></a>
 
 - *Type:* string
 

@@ -199,6 +199,41 @@
       }
     },
     {
+      "Name": "CancelInvoke",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "project"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CheckIngestedDocumentAcl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "CopyBlueprintStage",
       "Annotations": {
         "Properties": {
@@ -1471,6 +1506,26 @@
       }
     },
     {
+      "Name": "DeleteInvoke",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "project"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "DeleteKnowledgeBase",
       "Annotations": {
         "Properties": {
@@ -2618,6 +2673,21 @@
       }
     },
     {
+      "Name": "GetIngestedDocumentAcl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "GetIngestionJob",
       "Annotations": {
         "Properties": {
@@ -2650,6 +2720,26 @@
       "Resources": [
         {
           "Name": "session"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetInvoke",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "project"
         }
       ],
       "SupportedBy": {
@@ -3227,6 +3317,8 @@
         "aws:TagKeys",
         "bedrock:GuardrailIdentifier",
         "bedrock:InferenceProfileArn",
+        "bedrock:ModelArn",
+        "bedrock:ProjectArn",
         "bedrock:PromptRouterArn",
         "bedrock:ServiceTier"
       ],
@@ -3262,6 +3354,9 @@
         },
         {
           "Name": "inference-profile"
+        },
+        {
+          "Name": "project"
         },
         {
           "Name": "prompt-router"
@@ -5531,6 +5626,18 @@
       ]
     },
     {
+      "Name": "bedrock:ModelArn",
+      "Types": [
+        "ARN"
+      ]
+    },
+    {
+      "Name": "bedrock:ProjectArn",
+      "Types": [
+        "ARN"
+      ]
+    },
+    {
       "Name": "bedrock:PromptRouterArn",
       "Types": [
         "ARN"
@@ -5670,6 +5777,22 @@
         {
           "Name": "bedrock",
           "Method": "cancel_automated_reasoning_policy_build_workflow",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CheckIngestedDocumentAcl",
+      "AuthorizedActions": [
+        {
+          "Name": "CheckIngestedDocumentAcl",
+          "Service": "bedrock"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bedrock-agent-runtime",
+          "Method": "check_ingested_document_acl",
           "Package": "Boto3"
         }
       ]
@@ -7888,6 +8011,22 @@
         {
           "Name": "bedrock",
           "Method": "get_inference_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetIngestedDocumentAcl",
+      "AuthorizedActions": [
+        {
+          "Name": "GetIngestedDocumentAcl",
+          "Service": "bedrock"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bedrock-agent-runtime",
+          "Method": "get_ingested_document_acl",
           "Package": "Boto3"
         }
       ]
@@ -10496,6 +10635,15 @@
       "Name": "model-invocation-job",
       "ARNFormats": [
         "arn:${Partition}:bedrock:${Region}:${Account}:model-invocation-job/${JobIdentifier}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "project",
+      "ARNFormats": [
+        "arn:${Partition}:bedrock:${Region}:${Account}:project/${ResourceId}"
       ],
       "ConditionKeys": [
         "aws:ResourceTag/${TagKey}"

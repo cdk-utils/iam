@@ -22,6 +22,9 @@ export class AppconfigActions {
 		"appconfig:CreateDeploymentStrategy";
 	/** [Write] appconfig:CreateEnvironment */
 	static readonly CreateEnvironment = "appconfig:CreateEnvironment";
+	/** [Write] appconfig:CreateExperimentDefinition */
+	static readonly CreateExperimentDefinition =
+		"appconfig:CreateExperimentDefinition";
 	/** [Write] appconfig:CreateExtension */
 	static readonly CreateExtension = "appconfig:CreateExtension";
 	/** [Write] appconfig:CreateExtensionAssociation */
@@ -40,6 +43,9 @@ export class AppconfigActions {
 		"appconfig:DeleteDeploymentStrategy";
 	/** [Write] appconfig:DeleteEnvironment */
 	static readonly DeleteEnvironment = "appconfig:DeleteEnvironment";
+	/** [Write] appconfig:DeleteExperimentDefinition */
+	static readonly DeleteExperimentDefinition =
+		"appconfig:DeleteExperimentDefinition";
 	/** [Write] appconfig:DeleteExtension */
 	static readonly DeleteExtension = "appconfig:DeleteExtension";
 	/** [Write] appconfig:DeleteExtensionAssociation */
@@ -64,6 +70,11 @@ export class AppconfigActions {
 		"appconfig:GetDeploymentStrategy";
 	/** [Read] appconfig:GetEnvironment */
 	static readonly actionGetEnvironment = "appconfig:GetEnvironment";
+	/** [Read] appconfig:GetExperimentDefinition */
+	static readonly actionGetExperimentDefinition =
+		"appconfig:GetExperimentDefinition";
+	/** [Read] appconfig:GetExperimentRun */
+	static readonly actionGetExperimentRun = "appconfig:GetExperimentRun";
 	/** [Read] appconfig:GetExtension */
 	static readonly actionGetExtension = "appconfig:GetExtension";
 	/** [Read] appconfig:GetExtensionAssociation */
@@ -87,6 +98,13 @@ export class AppconfigActions {
 	static readonly ListDeployments = "appconfig:ListDeployments";
 	/** [List] appconfig:ListEnvironments */
 	static readonly ListEnvironments = "appconfig:ListEnvironments";
+	/** [List] appconfig:ListExperimentDefinitions */
+	static readonly ListExperimentDefinitions =
+		"appconfig:ListExperimentDefinitions";
+	/** [List] appconfig:ListExperimentRunEvents */
+	static readonly ListExperimentRunEvents = "appconfig:ListExperimentRunEvents";
+	/** [List] appconfig:ListExperimentRuns */
+	static readonly ListExperimentRuns = "appconfig:ListExperimentRuns";
 	/** [List] appconfig:ListExtensionAssociations */
 	static readonly ListExtensionAssociations =
 		"appconfig:ListExtensionAssociations";
@@ -102,8 +120,12 @@ export class AppconfigActions {
 		"appconfig:StartConfigurationSession";
 	/** [Write] appconfig:StartDeployment */
 	static readonly StartDeployment = "appconfig:StartDeployment";
+	/** [Write] appconfig:StartExperimentRun */
+	static readonly StartExperimentRun = "appconfig:StartExperimentRun";
 	/** [Write] appconfig:StopDeployment */
 	static readonly StopDeployment = "appconfig:StopDeployment";
+	/** [Write] appconfig:StopExperimentRun */
+	static readonly StopExperimentRun = "appconfig:StopExperimentRun";
 	/** [Tagging] appconfig:TagResource */
 	static readonly TagResource = "appconfig:TagResource";
 	/** [Tagging] appconfig:UntagResource */
@@ -120,6 +142,11 @@ export class AppconfigActions {
 		"appconfig:UpdateDeploymentStrategy";
 	/** [Write] appconfig:UpdateEnvironment */
 	static readonly UpdateEnvironment = "appconfig:UpdateEnvironment";
+	/** [Write] appconfig:UpdateExperimentDefinition */
+	static readonly UpdateExperimentDefinition =
+		"appconfig:UpdateExperimentDefinition";
+	/** [Write] appconfig:UpdateExperimentRun */
+	static readonly UpdateExperimentRun = "appconfig:UpdateExperimentRun";
 	/** [Write] appconfig:UpdateExtension */
 	static readonly UpdateExtension = "appconfig:UpdateExtension";
 	/** [Write] appconfig:UpdateExtensionAssociation */
@@ -137,6 +164,8 @@ export class AppconfigActions {
 		AppconfigActions.actionGetDeployment,
 		AppconfigActions.actionGetDeploymentStrategy,
 		AppconfigActions.actionGetEnvironment,
+		AppconfigActions.actionGetExperimentDefinition,
+		AppconfigActions.actionGetExperimentRun,
 		AppconfigActions.actionGetExtension,
 		AppconfigActions.actionGetExtensionAssociation,
 		AppconfigActions.actionGetHostedConfigurationVersion,
@@ -149,6 +178,7 @@ export class AppconfigActions {
 		AppconfigActions.CreateConfigurationProfile,
 		AppconfigActions.CreateDeploymentStrategy,
 		AppconfigActions.CreateEnvironment,
+		AppconfigActions.CreateExperimentDefinition,
 		AppconfigActions.CreateExtension,
 		AppconfigActions.CreateExtensionAssociation,
 		AppconfigActions.CreateHostedConfigurationVersion,
@@ -156,17 +186,22 @@ export class AppconfigActions {
 		AppconfigActions.DeleteConfigurationProfile,
 		AppconfigActions.DeleteDeploymentStrategy,
 		AppconfigActions.DeleteEnvironment,
+		AppconfigActions.DeleteExperimentDefinition,
 		AppconfigActions.DeleteExtension,
 		AppconfigActions.DeleteExtensionAssociation,
 		AppconfigActions.DeleteHostedConfigurationVersion,
 		AppconfigActions.StartConfigurationSession,
 		AppconfigActions.StartDeployment,
+		AppconfigActions.StartExperimentRun,
 		AppconfigActions.StopDeployment,
+		AppconfigActions.StopExperimentRun,
 		AppconfigActions.UpdateAccountSettings,
 		AppconfigActions.UpdateApplication,
 		AppconfigActions.UpdateConfigurationProfile,
 		AppconfigActions.UpdateDeploymentStrategy,
 		AppconfigActions.UpdateEnvironment,
+		AppconfigActions.UpdateExperimentDefinition,
+		AppconfigActions.UpdateExperimentRun,
 		AppconfigActions.UpdateExtension,
 		AppconfigActions.UpdateExtensionAssociation,
 		AppconfigActions.ValidateConfiguration,
@@ -178,6 +213,9 @@ export class AppconfigActions {
 		AppconfigActions.ListDeploymentStrategies,
 		AppconfigActions.ListDeployments,
 		AppconfigActions.ListEnvironments,
+		AppconfigActions.ListExperimentDefinitions,
+		AppconfigActions.ListExperimentRunEvents,
+		AppconfigActions.ListExperimentRuns,
 		AppconfigActions.ListExtensionAssociations,
 		AppconfigActions.ListExtensions,
 		AppconfigActions.ListHostedConfigurationVersions,
@@ -384,6 +422,74 @@ export interface AppconfigEnvironmentArnComponents {
 }
 
 /**
+ * Properties for building a experimentdefinition ARN.
+ */
+export interface AppconfigExperimentdefinitionArnProps {
+	/** The ApplicationId component of the ARN. */
+	readonly applicationId: string;
+	/** The ExperimentDefinitionId component of the ARN. */
+	readonly experimentDefinitionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a experimentdefinition ARN.
+ */
+export interface AppconfigExperimentdefinitionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApplicationId component. */
+	readonly applicationId: string;
+	/** The ExperimentDefinitionId component. */
+	readonly experimentDefinitionId: string;
+}
+
+/**
+ * Properties for building a experimentrun ARN.
+ */
+export interface AppconfigExperimentrunArnProps {
+	/** The ApplicationId component of the ARN. */
+	readonly applicationId: string;
+	/** The ExperimentDefinitionId component of the ARN. */
+	readonly experimentDefinitionId: string;
+	/** The ExperimentRunNumber component of the ARN. */
+	readonly experimentRunNumber: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a experimentrun ARN.
+ */
+export interface AppconfigExperimentrunArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApplicationId component. */
+	readonly applicationId: string;
+	/** The ExperimentDefinitionId component. */
+	readonly experimentDefinitionId: string;
+	/** The ExperimentRunNumber component. */
+	readonly experimentRunNumber: string;
+}
+
+/**
  * Properties for building a extension ARN.
  */
 export interface AppconfigExtensionArnProps {
@@ -487,6 +593,10 @@ const DeploymentstrategyArnRegex =
 	/^arn:(?<partition>[^:]+):appconfig:(?<region>[^:]*):(?<account>[^:]*):deploymentstrategy\/(?<deploymentStrategyId>[^:/?]+)$/;
 const EnvironmentArnRegex =
 	/^arn:(?<partition>[^:]+):appconfig:(?<region>[^:]*):(?<account>[^:]*):application\/(?<applicationId>[^:/?]+)\/environment\/(?<environmentId>[^:/?]+)$/;
+const ExperimentdefinitionArnRegex =
+	/^arn:(?<partition>[^:]+):appconfig:(?<region>[^:]*):(?<account>[^:]*):application\/(?<applicationId>[^:/?]+)\/experimentdefinition\/(?<experimentDefinitionId>[^:/?]+)$/;
+const ExperimentrunArnRegex =
+	/^arn:(?<partition>[^:]+):appconfig:(?<region>[^:]*):(?<account>[^:]*):application\/(?<applicationId>[^:/?]+)\/experimentdefinition\/(?<experimentDefinitionId>[^:/?]+)\/experimentrun\/(?<experimentRunNumber>[^:/?]+)$/;
 const ExtensionArnRegex =
 	/^arn:(?<partition>[^:]+):appconfig:(?<region>[^:]*):(?<account>[^:]*):extension\/(?<extensionId>[^:/?]+)\/(?<extensionVersionNumber>[^:/?]+)$/;
 const ExtensionassociationArnRegex =
@@ -701,6 +811,77 @@ export class AppconfigResources {
 	}
 
 	/**
+	 * Builds an ARN for the experimentdefinition resource.
+	 */
+	static experimentdefinition(
+		props: AppconfigExperimentdefinitionArnProps,
+	): string {
+		return `arn:${props.partition ?? "aws"}:appconfig:${props.region ?? "*"}:${props.account ?? "*"}:application/${props.applicationId}/experimentdefinition/${props.experimentDefinitionId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the experimentdefinition resource.
+	 */
+	static isValidExperimentdefinitionArn(arn: string): boolean {
+		return ExperimentdefinitionArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a experimentdefinition ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseExperimentdefinitionArn(
+		arn: string,
+	): AppconfigExperimentdefinitionArnComponents {
+		const match = ExperimentdefinitionArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid experimentdefinition ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			applicationId: match.groups!.applicationId,
+			experimentDefinitionId: match.groups!.experimentDefinitionId,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the experimentrun resource.
+	 */
+	static experimentrun(props: AppconfigExperimentrunArnProps): string {
+		return `arn:${props.partition ?? "aws"}:appconfig:${props.region ?? "*"}:${props.account ?? "*"}:application/${props.applicationId}/experimentdefinition/${props.experimentDefinitionId}/experimentrun/${props.experimentRunNumber}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the experimentrun resource.
+	 */
+	static isValidExperimentrunArn(arn: string): boolean {
+		return ExperimentrunArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a experimentrun ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseExperimentrunArn(
+		arn: string,
+	): AppconfigExperimentrunArnComponents {
+		const match = ExperimentrunArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid experimentrun ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			applicationId: match.groups!.applicationId,
+			experimentDefinitionId: match.groups!.experimentDefinitionId,
+			experimentRunNumber: match.groups!.experimentRunNumber,
+		};
+	}
+
+	/**
 	 * Builds an ARN for the extension resource.
 	 */
 	static extension(props: AppconfigExtensionArnProps): string {
@@ -832,6 +1013,7 @@ export class AppconfigOperations {
 	];
 	/** IAM actions required for the CreateExperimentDefinition API call. */
 	static readonly CreateExperimentDefinition: string[] = [
+		"appconfig:CreateExperimentDefinition",
 		"appconfig:TagResource",
 	];
 	/** IAM actions required for the CreateExtension API call. */
@@ -862,7 +1044,9 @@ export class AppconfigOperations {
 	/** IAM actions required for the DeleteEnvironment API call. */
 	static readonly DeleteEnvironment: string[] = ["appconfig:DeleteEnvironment"];
 	/** IAM actions required for the DeleteExperimentDefinition API call. */
-	static readonly DeleteExperimentDefinition: string[] = [];
+	static readonly DeleteExperimentDefinition: string[] = [
+		"appconfig:DeleteExperimentDefinition",
+	];
 	/** IAM actions required for the DeleteExtension API call. */
 	static readonly DeleteExtension: string[] = ["appconfig:DeleteExtension"];
 	/** IAM actions required for the DeleteExtensionAssociation API call. */
@@ -894,9 +1078,11 @@ export class AppconfigOperations {
 	/** IAM actions required for the GetEnvironment API call. */
 	static readonly opGetEnvironment: string[] = ["appconfig:GetEnvironment"];
 	/** IAM actions required for the GetExperimentDefinition API call. */
-	static readonly opGetExperimentDefinition: string[] = [];
+	static readonly opGetExperimentDefinition: string[] = [
+		"appconfig:GetExperimentDefinition",
+	];
 	/** IAM actions required for the GetExperimentRun API call. */
-	static readonly opGetExperimentRun: string[] = [];
+	static readonly opGetExperimentRun: string[] = ["appconfig:GetExperimentRun"];
 	/** IAM actions required for the GetExtension API call. */
 	static readonly opGetExtension: string[] = ["appconfig:GetExtension"];
 	/** IAM actions required for the GetExtensionAssociation API call. */
@@ -926,11 +1112,17 @@ export class AppconfigOperations {
 	/** IAM actions required for the ListEnvironments API call. */
 	static readonly ListEnvironments: string[] = ["appconfig:ListEnvironments"];
 	/** IAM actions required for the ListExperimentDefinitions API call. */
-	static readonly ListExperimentDefinitions: string[] = [];
+	static readonly ListExperimentDefinitions: string[] = [
+		"appconfig:ListExperimentDefinitions",
+	];
 	/** IAM actions required for the ListExperimentRunEvents API call. */
-	static readonly ListExperimentRunEvents: string[] = [];
+	static readonly ListExperimentRunEvents: string[] = [
+		"appconfig:ListExperimentRunEvents",
+	];
 	/** IAM actions required for the ListExperimentRuns API call. */
-	static readonly ListExperimentRuns: string[] = [];
+	static readonly ListExperimentRuns: string[] = [
+		"appconfig:ListExperimentRuns",
+	];
 	/** IAM actions required for the ListExtensionAssociations API call. */
 	static readonly ListExtensionAssociations: string[] = [
 		"appconfig:ListExtensionAssociations",
@@ -955,11 +1147,14 @@ export class AppconfigOperations {
 		"appconfig:TagResource",
 	];
 	/** IAM actions required for the StartExperimentRun API call. */
-	static readonly StartExperimentRun: string[] = ["appconfig:TagResource"];
+	static readonly StartExperimentRun: string[] = [
+		"appconfig:StartExperimentRun",
+		"appconfig:TagResource",
+	];
 	/** IAM actions required for the StopDeployment API call. */
 	static readonly StopDeployment: string[] = ["appconfig:StopDeployment"];
 	/** IAM actions required for the StopExperimentRun API call. */
-	static readonly StopExperimentRun: string[] = [];
+	static readonly StopExperimentRun: string[] = ["appconfig:StopExperimentRun"];
 	/** IAM actions required for the TagResource API call. */
 	static readonly TagResource: string[] = ["appconfig:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
@@ -985,9 +1180,13 @@ export class AppconfigOperations {
 		"appconfig:UpdateEnvironment",
 	];
 	/** IAM actions required for the UpdateExperimentDefinition API call. */
-	static readonly UpdateExperimentDefinition: string[] = [];
+	static readonly UpdateExperimentDefinition: string[] = [
+		"appconfig:UpdateExperimentDefinition",
+	];
 	/** IAM actions required for the UpdateExperimentRun API call. */
-	static readonly UpdateExperimentRun: string[] = [];
+	static readonly UpdateExperimentRun: string[] = [
+		"appconfig:UpdateExperimentRun",
+	];
 	/** IAM actions required for the UpdateExtension API call. */
 	static readonly UpdateExtension: string[] = [
 		"iam:PassRole",
@@ -1027,6 +1226,11 @@ export class AppconfigConditions {
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
+	/** Condition keys applicable to the CreateExperimentDefinition action. */
+	static readonly CreateExperimentDefinitionConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the CreateExtension action. */
 	static readonly CreateExtensionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
@@ -1061,6 +1265,14 @@ export class AppconfigConditions {
 	static readonly actionGetEnvironmentConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
+	/** Condition keys applicable to the GetExperimentDefinition action. */
+	static readonly actionGetExperimentDefinitionConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
+	/** Condition keys applicable to the GetExperimentRun action. */
+	static readonly actionGetExperimentRunConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the GetExtension action. */
 	static readonly actionGetExtensionConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
@@ -1086,6 +1298,15 @@ export class AppconfigConditions {
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
+	/** Condition keys applicable to the StartExperimentRun action. */
+	static readonly StartExperimentRunConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
+	/** Condition keys applicable to the StopExperimentRun action. */
+	static readonly StopExperimentRunConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the TagResource action. */
 	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
@@ -1108,6 +1329,14 @@ export class AppconfigConditions {
 	];
 	/** Condition keys applicable to the UpdateEnvironment action. */
 	static readonly UpdateEnvironmentConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
+	/** Condition keys applicable to the UpdateExperimentDefinition action. */
+	static readonly UpdateExperimentDefinitionConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
+	/** Condition keys applicable to the UpdateExperimentRun action. */
+	static readonly UpdateExperimentRunConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpdateExtension action. */
