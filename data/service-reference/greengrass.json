@@ -2038,7 +2038,6 @@
     {
       "Name": "UntagResource",
       "ActionConditionKeys": [
-        "aws:RequestTag/${TagKey}",
         "aws:TagKeys"
       ],
       "Annotations": {

@@ -152,6 +152,7 @@ export class CodestarNotificationsOperations {
 	/** IAM actions required for the CreateNotificationRule API call. */
 	static readonly CreateNotificationRule: string[] = [
 		"codestar-notifications:CreateNotificationRule",
+		"codestar-notifications:TagResource",
 	];
 	/** IAM actions required for the DeleteNotificationRule API call. */
 	static readonly DeleteNotificationRule: string[] = [

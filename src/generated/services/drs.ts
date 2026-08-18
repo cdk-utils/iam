@@ -24,6 +24,9 @@ export class DRSActions {
 	/** [Write] drs:BatchDeleteSnapshotRequestForDrs */
 	static readonly BatchDeleteSnapshotRequestForDrs =
 		"drs:BatchDeleteSnapshotRequestForDrs";
+	/** [Write] drs:CancelRecoveryPlanExecution */
+	static readonly CancelRecoveryPlanExecution =
+		"drs:CancelRecoveryPlanExecution";
 	/** [Write] drs:CreateConvertedSnapshotForDrs */
 	static readonly CreateConvertedSnapshotForDrs =
 		"drs:CreateConvertedSnapshotForDrs";
@@ -35,6 +38,10 @@ export class DRSActions {
 	/** [Write] drs:CreateRecoveryInstanceForDrs */
 	static readonly CreateRecoveryInstanceForDrs =
 		"drs:CreateRecoveryInstanceForDrs";
+	/** [Write] drs:CreateRecoveryPlan */
+	static readonly CreateRecoveryPlan = "drs:CreateRecoveryPlan";
+	/** [Write] drs:CreateRecoveryPlanStep */
+	static readonly CreateRecoveryPlanStep = "drs:CreateRecoveryPlanStep";
 	/** [Write] drs:CreateReplicationConfigurationTemplate */
 	static readonly CreateReplicationConfigurationTemplate =
 		"drs:CreateReplicationConfigurationTemplate";
@@ -51,6 +58,13 @@ export class DRSActions {
 		"drs:DeleteLaunchConfigurationTemplate";
 	/** [Write] drs:DeleteRecoveryInstance */
 	static readonly DeleteRecoveryInstance = "drs:DeleteRecoveryInstance";
+	/** [Write] drs:DeleteRecoveryPlan */
+	static readonly DeleteRecoveryPlan = "drs:DeleteRecoveryPlan";
+	/** [Write] drs:DeleteRecoveryPlanExecution */
+	static readonly DeleteRecoveryPlanExecution =
+		"drs:DeleteRecoveryPlanExecution";
+	/** [Write] drs:DeleteRecoveryPlanStep */
+	static readonly DeleteRecoveryPlanStep = "drs:DeleteRecoveryPlanStep";
 	/** [Write] drs:DeleteReplicationConfigurationTemplate */
 	static readonly DeleteReplicationConfigurationTemplate =
 		"drs:DeleteReplicationConfigurationTemplate";
@@ -120,6 +134,16 @@ export class DRSActions {
 		"drs:GetFailbackReplicationConfiguration";
 	/** [Read] drs:GetLaunchConfiguration */
 	static readonly actionGetLaunchConfiguration = "drs:GetLaunchConfiguration";
+	/** [Read] drs:GetRecoveryPlan */
+	static readonly actionGetRecoveryPlan = "drs:GetRecoveryPlan";
+	/** [Read] drs:GetRecoveryPlanExecution */
+	static readonly actionGetRecoveryPlanExecution =
+		"drs:GetRecoveryPlanExecution";
+	/** [Read] drs:GetRecoveryPlanExecutionStep */
+	static readonly actionGetRecoveryPlanExecutionStep =
+		"drs:GetRecoveryPlanExecutionStep";
+	/** [Read] drs:GetRecoveryPlanStep */
+	static readonly actionGetRecoveryPlanStep = "drs:GetRecoveryPlanStep";
 	/** [Read] drs:GetReplicationConfiguration */
 	static readonly actionGetReplicationConfiguration =
 		"drs:GetReplicationConfiguration";
@@ -136,6 +160,15 @@ export class DRSActions {
 		"drs:ListExtensibleSourceServers";
 	/** [Read] drs:ListLaunchActions */
 	static readonly ListLaunchActions = "drs:ListLaunchActions";
+	/** [Read] drs:ListRecoveryPlanExecutionSteps */
+	static readonly ListRecoveryPlanExecutionSteps =
+		"drs:ListRecoveryPlanExecutionSteps";
+	/** [Read] drs:ListRecoveryPlanExecutions */
+	static readonly ListRecoveryPlanExecutions = "drs:ListRecoveryPlanExecutions";
+	/** [Read] drs:ListRecoveryPlanSteps */
+	static readonly ListRecoveryPlanSteps = "drs:ListRecoveryPlanSteps";
+	/** [Read] drs:ListRecoveryPlans */
+	static readonly ListRecoveryPlans = "drs:ListRecoveryPlans";
 	/** [Read] drs:ListStagingAccounts */
 	static readonly ListStagingAccounts = "drs:ListStagingAccounts";
 	/** [Read] drs:ListTagsForResource */
@@ -161,8 +194,13 @@ export class DRSActions {
 	static readonly NotifyVolumeEventForDrs = "drs:NotifyVolumeEventForDrs";
 	/** [Write] drs:PutLaunchAction */
 	static readonly PutLaunchAction = "drs:PutLaunchAction";
+	/** [Write] drs:ReorderRecoveryPlanSteps */
+	static readonly ReorderRecoveryPlanSteps = "drs:ReorderRecoveryPlanSteps";
 	/** [Write] drs:RetryDataReplication */
 	static readonly RetryDataReplication = "drs:RetryDataReplication";
+	/** [Write] drs:RetryRecoveryPlanExecutionStep */
+	static readonly RetryRecoveryPlanExecutionStep =
+		"drs:RetryRecoveryPlanExecutionStep";
 	/** [Write] drs:ReverseReplication */
 	static readonly ReverseReplication = "drs:ReverseReplication";
 	/** [Write] drs:SendAgentLogsForDrs */
@@ -182,6 +220,8 @@ export class DRSActions {
 	static readonly StartFailbackLaunch = "drs:StartFailbackLaunch";
 	/** [Write] drs:StartRecovery */
 	static readonly StartRecovery = "drs:StartRecovery";
+	/** [Write] drs:StartRecoveryPlanExecution */
+	static readonly StartRecoveryPlanExecution = "drs:StartRecoveryPlanExecution";
 	/** [Write] drs:StartReplication */
 	static readonly StartReplication = "drs:StartReplication";
 	/** [Write] drs:StartSourceNetworkRecovery */
@@ -230,6 +270,13 @@ export class DRSActions {
 	/** [Write] drs:UpdateLaunchConfigurationTemplate */
 	static readonly UpdateLaunchConfigurationTemplate =
 		"drs:UpdateLaunchConfigurationTemplate";
+	/** [Write] drs:UpdateRecoveryPlan */
+	static readonly UpdateRecoveryPlan = "drs:UpdateRecoveryPlan";
+	/** [Write] drs:UpdateRecoveryPlanExecutionStep */
+	static readonly UpdateRecoveryPlanExecutionStep =
+		"drs:UpdateRecoveryPlanExecutionStep";
+	/** [Write] drs:UpdateRecoveryPlanStep */
+	static readonly UpdateRecoveryPlanStep = "drs:UpdateRecoveryPlanStep";
 	/** [Write] drs:UpdateReplicationCertificateForDrs */
 	static readonly UpdateReplicationCertificateForDrs =
 		"drs:UpdateReplicationCertificateForDrs";
@@ -263,10 +310,18 @@ export class DRSActions {
 		DRSActions.actionGetFailbackLaunchRequestedForDrs,
 		DRSActions.actionGetFailbackReplicationConfiguration,
 		DRSActions.actionGetLaunchConfiguration,
+		DRSActions.actionGetRecoveryPlan,
+		DRSActions.actionGetRecoveryPlanExecution,
+		DRSActions.actionGetRecoveryPlanExecutionStep,
+		DRSActions.actionGetRecoveryPlanStep,
 		DRSActions.actionGetReplicationConfiguration,
 		DRSActions.actionGetSuggestedFailbackClientDeviceMappingForDrs,
 		DRSActions.ListExtensibleSourceServers,
 		DRSActions.ListLaunchActions,
+		DRSActions.ListRecoveryPlanExecutionSteps,
+		DRSActions.ListRecoveryPlanExecutions,
+		DRSActions.ListRecoveryPlanSteps,
+		DRSActions.ListRecoveryPlans,
 		DRSActions.ListStagingAccounts,
 		DRSActions.ListTagsForResource,
 	];
@@ -276,10 +331,13 @@ export class DRSActions {
 		DRSActions.AssociateSourceNetworkStack,
 		DRSActions.BatchCreateVolumeSnapshotGroupForDrs,
 		DRSActions.BatchDeleteSnapshotRequestForDrs,
+		DRSActions.CancelRecoveryPlanExecution,
 		DRSActions.CreateConvertedSnapshotForDrs,
 		DRSActions.CreateExtendedSourceServer,
 		DRSActions.CreateLaunchConfigurationTemplate,
 		DRSActions.CreateRecoveryInstanceForDrs,
+		DRSActions.CreateRecoveryPlan,
+		DRSActions.CreateRecoveryPlanStep,
 		DRSActions.CreateReplicationConfigurationTemplate,
 		DRSActions.CreateSourceNetwork,
 		DRSActions.CreateSourceServerForDrs,
@@ -287,6 +345,9 @@ export class DRSActions {
 		DRSActions.DeleteLaunchAction,
 		DRSActions.DeleteLaunchConfigurationTemplate,
 		DRSActions.DeleteRecoveryInstance,
+		DRSActions.DeleteRecoveryPlan,
+		DRSActions.DeleteRecoveryPlanExecution,
+		DRSActions.DeleteRecoveryPlanStep,
 		DRSActions.DeleteReplicationConfigurationTemplate,
 		DRSActions.DeleteSourceNetwork,
 		DRSActions.DeleteSourceServer,
@@ -303,7 +364,9 @@ export class DRSActions {
 		DRSActions.NotifyReplicationServerAuthenticationForDrs,
 		DRSActions.NotifyVolumeEventForDrs,
 		DRSActions.PutLaunchAction,
+		DRSActions.ReorderRecoveryPlanSteps,
 		DRSActions.RetryDataReplication,
+		DRSActions.RetryRecoveryPlanExecutionStep,
 		DRSActions.ReverseReplication,
 		DRSActions.SendAgentLogsForDrs,
 		DRSActions.SendAgentMetricsForDrs,
@@ -313,6 +376,7 @@ export class DRSActions {
 		DRSActions.SendVolumeStatsForDrs,
 		DRSActions.StartFailbackLaunch,
 		DRSActions.StartRecovery,
+		DRSActions.StartRecoveryPlanExecution,
 		DRSActions.StartReplication,
 		DRSActions.StartSourceNetworkRecovery,
 		DRSActions.StartSourceNetworkReplication,
@@ -330,6 +394,9 @@ export class DRSActions {
 		DRSActions.UpdateFailbackReplicationConfiguration,
 		DRSActions.UpdateLaunchConfiguration,
 		DRSActions.UpdateLaunchConfigurationTemplate,
+		DRSActions.UpdateRecoveryPlan,
+		DRSActions.UpdateRecoveryPlanExecutionStep,
+		DRSActions.UpdateRecoveryPlanStep,
 		DRSActions.UpdateReplicationCertificateForDrs,
 		DRSActions.UpdateReplicationConfiguration,
 		DRSActions.UpdateReplicationConfigurationTemplate,
@@ -430,6 +497,62 @@ export interface DRSRecoveryInstanceResourceArnComponents {
 }
 
 /**
+ * Properties for building a RecoveryPlanExecutionResource ARN.
+ */
+export interface DRSRecoveryPlanExecutionResourceArnProps {
+	/** The RecoveryPlanExecutionID component of the ARN. */
+	readonly recoveryPlanExecutionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a RecoveryPlanExecutionResource ARN.
+ */
+export interface DRSRecoveryPlanExecutionResourceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RecoveryPlanExecutionID component. */
+	readonly recoveryPlanExecutionId: string;
+}
+
+/**
+ * Properties for building a RecoveryPlanResource ARN.
+ */
+export interface DRSRecoveryPlanResourceArnProps {
+	/** The RecoveryPlanID component of the ARN. */
+	readonly recoveryPlanId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a RecoveryPlanResource ARN.
+ */
+export interface DRSRecoveryPlanResourceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RecoveryPlanID component. */
+	readonly recoveryPlanId: string;
+}
+
+/**
  * Properties for building a ReplicationConfigurationTemplateResource ARN.
  */
 export interface DRSReplicationConfigurationTemplateResourceArnProps {
@@ -519,6 +642,10 @@ const LaunchConfigurationTemplateResourceArnRegex =
 	/^arn:(?<partition>[^:]+):drs:(?<region>[^:]*):(?<account>[^:]*):launch-configuration-template\/(?<launchConfigurationTemplateId>[^:/?]+)$/;
 const RecoveryInstanceResourceArnRegex =
 	/^arn:(?<partition>[^:]+):drs:(?<region>[^:]*):(?<account>[^:]*):recovery-instance\/(?<recoveryInstanceId>[^:/?]+)$/;
+const RecoveryPlanExecutionResourceArnRegex =
+	/^arn:(?<partition>[^:]+):drs:(?<region>[^:]*):(?<account>[^:]*):recovery-plan-execution\/(?<recoveryPlanExecutionId>[^:/?]+)$/;
+const RecoveryPlanResourceArnRegex =
+	/^arn:(?<partition>[^:]+):drs:(?<region>[^:]*):(?<account>[^:]*):recovery-plan\/(?<recoveryPlanId>[^:/?]+)$/;
 const ReplicationConfigurationTemplateResourceArnRegex =
 	/^arn:(?<partition>[^:]+):drs:(?<region>[^:]*):(?<account>[^:]*):replication-configuration-template\/(?<replicationConfigurationTemplateId>[^:/?]+)$/;
 const SourceNetworkResourceArnRegex =
@@ -631,6 +758,74 @@ export class DRSResources {
 			region: match.groups.region,
 			account: match.groups.account,
 			recoveryInstanceId: match.groups!.recoveryInstanceId,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the RecoveryPlanExecutionResource resource.
+	 */
+	static recoveryPlanExecutionResource(
+		props: DRSRecoveryPlanExecutionResourceArnProps,
+	): string {
+		return `arn:${props.partition ?? "aws"}:drs:${props.region ?? "*"}:${props.account ?? "*"}:recovery-plan-execution/${props.recoveryPlanExecutionId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the RecoveryPlanExecutionResource resource.
+	 */
+	static isValidRecoveryPlanExecutionResourceArn(arn: string): boolean {
+		return RecoveryPlanExecutionResourceArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a RecoveryPlanExecutionResource ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseRecoveryPlanExecutionResourceArn(
+		arn: string,
+	): DRSRecoveryPlanExecutionResourceArnComponents {
+		const match = RecoveryPlanExecutionResourceArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid RecoveryPlanExecutionResource ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			recoveryPlanExecutionId: match.groups!.recoveryPlanExecutionId,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the RecoveryPlanResource resource.
+	 */
+	static recoveryPlanResource(props: DRSRecoveryPlanResourceArnProps): string {
+		return `arn:${props.partition ?? "aws"}:drs:${props.region ?? "*"}:${props.account ?? "*"}:recovery-plan/${props.recoveryPlanId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the RecoveryPlanResource resource.
+	 */
+	static isValidRecoveryPlanResourceArn(arn: string): boolean {
+		return RecoveryPlanResourceArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a RecoveryPlanResource ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseRecoveryPlanResourceArn(
+		arn: string,
+	): DRSRecoveryPlanResourceArnComponents {
+		const match = RecoveryPlanResourceArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid RecoveryPlanResource ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			recoveryPlanId: match.groups!.recoveryPlanId,
 		};
 	}
 
@@ -751,6 +946,8 @@ export class DRSOperations {
 	static readonly AssociateSourceNetworkStack: string[] = [
 		"drs:AssociateSourceNetworkStack",
 	];
+	/** IAM actions required for the CancelRecoveryPlanExecution API call. */
+	static readonly CancelRecoveryPlanExecution: string[] = [];
 	/** IAM actions required for the CreateExtendedSourceServer API call. */
 	static readonly CreateExtendedSourceServer: string[] = [
 		"drs:CreateExtendedSourceServer",
@@ -760,6 +957,12 @@ export class DRSOperations {
 	static readonly CreateLaunchConfigurationTemplate: string[] = [
 		"drs:CreateLaunchConfigurationTemplate",
 		"drs:TagResource",
+	];
+	/** IAM actions required for the CreateRecoveryPlan API call. */
+	static readonly CreateRecoveryPlan: string[] = ["drs:CreateRecoveryPlan"];
+	/** IAM actions required for the CreateRecoveryPlanStep API call. */
+	static readonly CreateRecoveryPlanStep: string[] = [
+		"drs:CreateRecoveryPlanStep",
 	];
 	/** IAM actions required for the CreateReplicationConfigurationTemplate API call. */
 	static readonly CreateReplicationConfigurationTemplate: string[] = [
@@ -782,6 +985,14 @@ export class DRSOperations {
 	/** IAM actions required for the DeleteRecoveryInstance API call. */
 	static readonly DeleteRecoveryInstance: string[] = [
 		"drs:DeleteRecoveryInstance",
+	];
+	/** IAM actions required for the DeleteRecoveryPlan API call. */
+	static readonly DeleteRecoveryPlan: string[] = ["drs:DeleteRecoveryPlan"];
+	/** IAM actions required for the DeleteRecoveryPlanExecution API call. */
+	static readonly DeleteRecoveryPlanExecution: string[] = [];
+	/** IAM actions required for the DeleteRecoveryPlanStep API call. */
+	static readonly DeleteRecoveryPlanStep: string[] = [
+		"drs:DeleteRecoveryPlanStep",
 	];
 	/** IAM actions required for the DeleteReplicationConfigurationTemplate API call. */
 	static readonly DeleteReplicationConfigurationTemplate: string[] = [
@@ -839,6 +1050,14 @@ export class DRSOperations {
 	static readonly opGetLaunchConfiguration: string[] = [
 		"drs:GetLaunchConfiguration",
 	];
+	/** IAM actions required for the GetRecoveryPlan API call. */
+	static readonly opGetRecoveryPlan: string[] = ["drs:GetRecoveryPlan"];
+	/** IAM actions required for the GetRecoveryPlanExecution API call. */
+	static readonly opGetRecoveryPlanExecution: string[] = [];
+	/** IAM actions required for the GetRecoveryPlanExecutionStep API call. */
+	static readonly opGetRecoveryPlanExecutionStep: string[] = [];
+	/** IAM actions required for the GetRecoveryPlanStep API call. */
+	static readonly opGetRecoveryPlanStep: string[] = ["drs:GetRecoveryPlanStep"];
 	/** IAM actions required for the GetReplicationConfiguration API call. */
 	static readonly opGetReplicationConfiguration: string[] = [
 		"drs:GetReplicationConfiguration",
@@ -851,14 +1070,30 @@ export class DRSOperations {
 	];
 	/** IAM actions required for the ListLaunchActions API call. */
 	static readonly ListLaunchActions: string[] = ["drs:ListLaunchActions"];
+	/** IAM actions required for the ListRecoveryPlanExecutionSteps API call. */
+	static readonly ListRecoveryPlanExecutionSteps: string[] = [];
+	/** IAM actions required for the ListRecoveryPlanExecutions API call. */
+	static readonly ListRecoveryPlanExecutions: string[] = [];
+	/** IAM actions required for the ListRecoveryPlanSteps API call. */
+	static readonly ListRecoveryPlanSteps: string[] = [
+		"drs:ListRecoveryPlanSteps",
+	];
+	/** IAM actions required for the ListRecoveryPlans API call. */
+	static readonly ListRecoveryPlans: string[] = ["drs:ListRecoveryPlans"];
 	/** IAM actions required for the ListStagingAccounts API call. */
 	static readonly ListStagingAccounts: string[] = ["drs:ListStagingAccounts"];
 	/** IAM actions required for the ListTagsForResource API call. */
 	static readonly ListTagsForResource: string[] = ["drs:ListTagsForResource"];
 	/** IAM actions required for the PutLaunchAction API call. */
 	static readonly PutLaunchAction: string[] = ["drs:PutLaunchAction"];
+	/** IAM actions required for the ReorderRecoveryPlanSteps API call. */
+	static readonly ReorderRecoveryPlanSteps: string[] = [
+		"drs:ReorderRecoveryPlanSteps",
+	];
 	/** IAM actions required for the RetryDataReplication API call. */
 	static readonly RetryDataReplication: string[] = ["drs:RetryDataReplication"];
+	/** IAM actions required for the RetryRecoveryPlanExecutionStep API call. */
+	static readonly RetryRecoveryPlanExecutionStep: string[] = [];
 	/** IAM actions required for the ReverseReplication API call. */
 	static readonly ReverseReplication: string[] = ["drs:ReverseReplication"];
 	/** IAM actions required for the StartFailbackLaunch API call. */
@@ -868,6 +1103,8 @@ export class DRSOperations {
 		"drs:StartRecovery",
 		"drs:TagResource",
 	];
+	/** IAM actions required for the StartRecoveryPlanExecution API call. */
+	static readonly StartRecoveryPlanExecution: string[] = [];
 	/** IAM actions required for the StartReplication API call. */
 	static readonly StartReplication: string[] = ["drs:StartReplication"];
 	/** IAM actions required for the StartSourceNetworkRecovery API call. */
@@ -906,6 +1143,14 @@ export class DRSOperations {
 	/** IAM actions required for the UpdateLaunchConfigurationTemplate API call. */
 	static readonly UpdateLaunchConfigurationTemplate: string[] = [
 		"drs:UpdateLaunchConfigurationTemplate",
+	];
+	/** IAM actions required for the UpdateRecoveryPlan API call. */
+	static readonly UpdateRecoveryPlan: string[] = ["drs:UpdateRecoveryPlan"];
+	/** IAM actions required for the UpdateRecoveryPlanExecutionStep API call. */
+	static readonly UpdateRecoveryPlanExecutionStep: string[] = [];
+	/** IAM actions required for the UpdateRecoveryPlanStep API call. */
+	static readonly UpdateRecoveryPlanStep: string[] = [
+		"drs:UpdateRecoveryPlanStep",
 	];
 	/** IAM actions required for the UpdateReplicationConfiguration API call. */
 	static readonly UpdateReplicationConfiguration: string[] = [
@@ -946,6 +1191,11 @@ export class DRSConditions {
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
+	/** Condition keys applicable to the CreateRecoveryPlan action. */
+	static readonly CreateRecoveryPlanConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the CreateReplicationConfigurationTemplate action. */
 	static readonly CreateReplicationConfigurationTemplateConditionKeys: string[] =
 		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
@@ -976,6 +1226,11 @@ export class DRSConditions {
 	];
 	/** Condition keys applicable to the StartRecovery action. */
 	static readonly StartRecoveryConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
+	/** Condition keys applicable to the StartRecoveryPlanExecution action. */
+	static readonly StartRecoveryPlanExecutionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];

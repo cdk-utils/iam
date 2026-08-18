@@ -1278,8 +1278,8 @@
         }
       ],
       "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
       }
     },
     {
@@ -2260,8 +2260,8 @@
         }
       ],
       "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
       }
     },
     {
@@ -3200,8 +3200,8 @@
         }
       ],
       "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
       }
     },
     {
@@ -5258,8 +5258,8 @@
         }
       ],
       "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
       }
     },
     {
@@ -6587,8 +6587,8 @@
         }
       ],
       "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
       }
     },
     {
@@ -8509,8 +8509,8 @@
         }
       ],
       "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
       }
     },
     {
@@ -8536,8 +8536,8 @@
         }
       ],
       "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
       }
     },
     {
@@ -10403,6 +10403,16 @@
       ]
     },
     {
+      "Name": "CreateExtractionDefinition",
+      "SDK": [
+        {
+          "Name": "connect",
+          "Method": "create_extraction_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "CreateHoursOfOperation",
       "AuthorizedActions": [
         {
@@ -11115,6 +11125,16 @@
       ]
     },
     {
+      "Name": "DeleteExtractionDefinition",
+      "SDK": [
+        {
+          "Name": "connect",
+          "Method": "delete_extraction_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DeleteHoursOfOperation",
       "AuthorizedActions": [
         {
@@ -11722,6 +11742,16 @@
         {
           "Name": "connect",
           "Method": "describe_evaluation_form",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeExtractionDefinition",
+      "SDK": [
+        {
+          "Name": "connect",
+          "Method": "describe_extraction_definition",
           "Package": "Boto3"
         }
       ]
@@ -13091,6 +13121,16 @@
         {
           "Name": "connect",
           "Method": "list_evaluation_forms",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListExtractionDefinitions",
+      "SDK": [
+        {
+          "Name": "connect",
+          "Method": "list_extraction_definitions",
           "Package": "Boto3"
         }
       ]
@@ -15325,6 +15365,16 @@
         {
           "Name": "connect",
           "Method": "update_evaluation_form",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateExtractionDefinition",
+      "SDK": [
+        {
+          "Name": "connect",
+          "Method": "update_extraction_definition",
           "Package": "Boto3"
         }
       ]

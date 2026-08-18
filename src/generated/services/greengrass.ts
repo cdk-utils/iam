@@ -2604,10 +2604,7 @@ export class GreengrassConditions {
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UntagResourceConditionKeys: string[] = [
-		"aws:RequestTag/${TagKey}",
-		"aws:TagKeys",
-	];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
 	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";

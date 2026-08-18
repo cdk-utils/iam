@@ -447,6 +447,302 @@ Defaults to "*".
 
 ---
 
+### DRSRecoveryPlanExecutionResourceArnComponents <a name="DRSRecoveryPlanExecutionResourceArnComponents" id="@cdk_utils/iam.drs.DRSRecoveryPlanExecutionResourceArnComponents"></a>
+
+Parsed components of a RecoveryPlanExecutionResource ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.drs.DRSRecoveryPlanExecutionResourceArnComponents.Initializer"></a>
+
+```typescript
+import { drs } from '@cdk_utils/iam'
+
+const dRSRecoveryPlanExecutionResourceArnComponents: drs.DRSRecoveryPlanExecutionResourceArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.drs.DRSRecoveryPlanExecutionResourceArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.drs.DRSRecoveryPlanExecutionResourceArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.drs.DRSRecoveryPlanExecutionResourceArnComponents.property.recoveryPlanExecutionId">recoveryPlanExecutionId</a></code> | <code>string</code> | The RecoveryPlanExecutionID component. |
+| <code><a href="#@cdk_utils/iam.drs.DRSRecoveryPlanExecutionResourceArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.drs.DRSRecoveryPlanExecutionResourceArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.drs.DRSRecoveryPlanExecutionResourceArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `recoveryPlanExecutionId`<sup>Required</sup> <a name="recoveryPlanExecutionId" id="@cdk_utils/iam.drs.DRSRecoveryPlanExecutionResourceArnComponents.property.recoveryPlanExecutionId"></a>
+
+```typescript
+public readonly recoveryPlanExecutionId: string;
+```
+
+- *Type:* string
+
+The RecoveryPlanExecutionID component.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.drs.DRSRecoveryPlanExecutionResourceArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### DRSRecoveryPlanExecutionResourceArnProps <a name="DRSRecoveryPlanExecutionResourceArnProps" id="@cdk_utils/iam.drs.DRSRecoveryPlanExecutionResourceArnProps"></a>
+
+Properties for building a RecoveryPlanExecutionResource ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.drs.DRSRecoveryPlanExecutionResourceArnProps.Initializer"></a>
+
+```typescript
+import { drs } from '@cdk_utils/iam'
+
+const dRSRecoveryPlanExecutionResourceArnProps: drs.DRSRecoveryPlanExecutionResourceArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.drs.DRSRecoveryPlanExecutionResourceArnProps.property.recoveryPlanExecutionId">recoveryPlanExecutionId</a></code> | <code>string</code> | The RecoveryPlanExecutionID component of the ARN. |
+| <code><a href="#@cdk_utils/iam.drs.DRSRecoveryPlanExecutionResourceArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.drs.DRSRecoveryPlanExecutionResourceArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.drs.DRSRecoveryPlanExecutionResourceArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `recoveryPlanExecutionId`<sup>Required</sup> <a name="recoveryPlanExecutionId" id="@cdk_utils/iam.drs.DRSRecoveryPlanExecutionResourceArnProps.property.recoveryPlanExecutionId"></a>
+
+```typescript
+public readonly recoveryPlanExecutionId: string;
+```
+
+- *Type:* string
+
+The RecoveryPlanExecutionID component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.drs.DRSRecoveryPlanExecutionResourceArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.drs.DRSRecoveryPlanExecutionResourceArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.drs.DRSRecoveryPlanExecutionResourceArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
+### DRSRecoveryPlanResourceArnComponents <a name="DRSRecoveryPlanResourceArnComponents" id="@cdk_utils/iam.drs.DRSRecoveryPlanResourceArnComponents"></a>
+
+Parsed components of a RecoveryPlanResource ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.drs.DRSRecoveryPlanResourceArnComponents.Initializer"></a>
+
+```typescript
+import { drs } from '@cdk_utils/iam'
+
+const dRSRecoveryPlanResourceArnComponents: drs.DRSRecoveryPlanResourceArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.drs.DRSRecoveryPlanResourceArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.drs.DRSRecoveryPlanResourceArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.drs.DRSRecoveryPlanResourceArnComponents.property.recoveryPlanId">recoveryPlanId</a></code> | <code>string</code> | The RecoveryPlanID component. |
+| <code><a href="#@cdk_utils/iam.drs.DRSRecoveryPlanResourceArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.drs.DRSRecoveryPlanResourceArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.drs.DRSRecoveryPlanResourceArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `recoveryPlanId`<sup>Required</sup> <a name="recoveryPlanId" id="@cdk_utils/iam.drs.DRSRecoveryPlanResourceArnComponents.property.recoveryPlanId"></a>
+
+```typescript
+public readonly recoveryPlanId: string;
+```
+
+- *Type:* string
+
+The RecoveryPlanID component.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.drs.DRSRecoveryPlanResourceArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### DRSRecoveryPlanResourceArnProps <a name="DRSRecoveryPlanResourceArnProps" id="@cdk_utils/iam.drs.DRSRecoveryPlanResourceArnProps"></a>
+
+Properties for building a RecoveryPlanResource ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.drs.DRSRecoveryPlanResourceArnProps.Initializer"></a>
+
+```typescript
+import { drs } from '@cdk_utils/iam'
+
+const dRSRecoveryPlanResourceArnProps: drs.DRSRecoveryPlanResourceArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.drs.DRSRecoveryPlanResourceArnProps.property.recoveryPlanId">recoveryPlanId</a></code> | <code>string</code> | The RecoveryPlanID component of the ARN. |
+| <code><a href="#@cdk_utils/iam.drs.DRSRecoveryPlanResourceArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.drs.DRSRecoveryPlanResourceArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.drs.DRSRecoveryPlanResourceArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `recoveryPlanId`<sup>Required</sup> <a name="recoveryPlanId" id="@cdk_utils/iam.drs.DRSRecoveryPlanResourceArnProps.property.recoveryPlanId"></a>
+
+```typescript
+public readonly recoveryPlanId: string;
+```
+
+- *Type:* string
+
+The RecoveryPlanID component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.drs.DRSRecoveryPlanResourceArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.drs.DRSRecoveryPlanResourceArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.drs.DRSRecoveryPlanResourceArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### DRSReplicationConfigurationTemplateResourceArnComponents <a name="DRSReplicationConfigurationTemplateResourceArnComponents" id="@cdk_utils/iam.drs.DRSReplicationConfigurationTemplateResourceArnComponents"></a>
 
 Parsed components of a ReplicationConfigurationTemplateResource ARN.
@@ -928,6 +1224,10 @@ new drs.DRSActions()
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.actionGetFailbackLaunchRequestedForDrs">actionGetFailbackLaunchRequestedForDrs</a></code> | <code>string</code> | [Read] drs:GetFailbackLaunchRequestedForDrs. |
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.actionGetFailbackReplicationConfiguration">actionGetFailbackReplicationConfiguration</a></code> | <code>string</code> | [Read] drs:GetFailbackReplicationConfiguration. |
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.actionGetLaunchConfiguration">actionGetLaunchConfiguration</a></code> | <code>string</code> | [Read] drs:GetLaunchConfiguration. |
+| <code><a href="#@cdk_utils/iam.drs.DRSActions.property.actionGetRecoveryPlan">actionGetRecoveryPlan</a></code> | <code>string</code> | [Read] drs:GetRecoveryPlan. |
+| <code><a href="#@cdk_utils/iam.drs.DRSActions.property.actionGetRecoveryPlanExecution">actionGetRecoveryPlanExecution</a></code> | <code>string</code> | [Read] drs:GetRecoveryPlanExecution. |
+| <code><a href="#@cdk_utils/iam.drs.DRSActions.property.actionGetRecoveryPlanExecutionStep">actionGetRecoveryPlanExecutionStep</a></code> | <code>string</code> | [Read] drs:GetRecoveryPlanExecutionStep. |
+| <code><a href="#@cdk_utils/iam.drs.DRSActions.property.actionGetRecoveryPlanStep">actionGetRecoveryPlanStep</a></code> | <code>string</code> | [Read] drs:GetRecoveryPlanStep. |
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.actionGetReplicationConfiguration">actionGetReplicationConfiguration</a></code> | <code>string</code> | [Read] drs:GetReplicationConfiguration. |
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.actionGetSuggestedFailbackClientDeviceMappingForDrs">actionGetSuggestedFailbackClientDeviceMappingForDrs</a></code> | <code>string</code> | [Read] drs:GetSuggestedFailbackClientDeviceMappingForDrs. |
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.AllListActions">AllListActions</a></code> | <code>string[]</code> | All list-level actions. |
@@ -939,10 +1239,13 @@ new drs.DRSActions()
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.AssociateSourceNetworkStack">AssociateSourceNetworkStack</a></code> | <code>string</code> | [Write] drs:AssociateSourceNetworkStack. |
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.BatchCreateVolumeSnapshotGroupForDrs">BatchCreateVolumeSnapshotGroupForDrs</a></code> | <code>string</code> | [Write] drs:BatchCreateVolumeSnapshotGroupForDrs. |
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.BatchDeleteSnapshotRequestForDrs">BatchDeleteSnapshotRequestForDrs</a></code> | <code>string</code> | [Write] drs:BatchDeleteSnapshotRequestForDrs. |
+| <code><a href="#@cdk_utils/iam.drs.DRSActions.property.CancelRecoveryPlanExecution">CancelRecoveryPlanExecution</a></code> | <code>string</code> | [Write] drs:CancelRecoveryPlanExecution. |
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.CreateConvertedSnapshotForDrs">CreateConvertedSnapshotForDrs</a></code> | <code>string</code> | [Write] drs:CreateConvertedSnapshotForDrs. |
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.CreateExtendedSourceServer">CreateExtendedSourceServer</a></code> | <code>string</code> | [Write] drs:CreateExtendedSourceServer. |
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.CreateLaunchConfigurationTemplate">CreateLaunchConfigurationTemplate</a></code> | <code>string</code> | [Write] drs:CreateLaunchConfigurationTemplate. |
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.CreateRecoveryInstanceForDrs">CreateRecoveryInstanceForDrs</a></code> | <code>string</code> | [Write] drs:CreateRecoveryInstanceForDrs. |
+| <code><a href="#@cdk_utils/iam.drs.DRSActions.property.CreateRecoveryPlan">CreateRecoveryPlan</a></code> | <code>string</code> | [Write] drs:CreateRecoveryPlan. |
+| <code><a href="#@cdk_utils/iam.drs.DRSActions.property.CreateRecoveryPlanStep">CreateRecoveryPlanStep</a></code> | <code>string</code> | [Write] drs:CreateRecoveryPlanStep. |
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.CreateReplicationConfigurationTemplate">CreateReplicationConfigurationTemplate</a></code> | <code>string</code> | [Write] drs:CreateReplicationConfigurationTemplate. |
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.CreateSourceNetwork">CreateSourceNetwork</a></code> | <code>string</code> | [Write] drs:CreateSourceNetwork. |
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.CreateSourceServerForDrs">CreateSourceServerForDrs</a></code> | <code>string</code> | [Write] drs:CreateSourceServerForDrs. |
@@ -950,6 +1253,9 @@ new drs.DRSActions()
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.DeleteLaunchAction">DeleteLaunchAction</a></code> | <code>string</code> | [Write] drs:DeleteLaunchAction. |
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.DeleteLaunchConfigurationTemplate">DeleteLaunchConfigurationTemplate</a></code> | <code>string</code> | [Write] drs:DeleteLaunchConfigurationTemplate. |
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.DeleteRecoveryInstance">DeleteRecoveryInstance</a></code> | <code>string</code> | [Write] drs:DeleteRecoveryInstance. |
+| <code><a href="#@cdk_utils/iam.drs.DRSActions.property.DeleteRecoveryPlan">DeleteRecoveryPlan</a></code> | <code>string</code> | [Write] drs:DeleteRecoveryPlan. |
+| <code><a href="#@cdk_utils/iam.drs.DRSActions.property.DeleteRecoveryPlanExecution">DeleteRecoveryPlanExecution</a></code> | <code>string</code> | [Write] drs:DeleteRecoveryPlanExecution. |
+| <code><a href="#@cdk_utils/iam.drs.DRSActions.property.DeleteRecoveryPlanStep">DeleteRecoveryPlanStep</a></code> | <code>string</code> | [Write] drs:DeleteRecoveryPlanStep. |
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.DeleteReplicationConfigurationTemplate">DeleteReplicationConfigurationTemplate</a></code> | <code>string</code> | [Write] drs:DeleteReplicationConfigurationTemplate. |
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.DeleteSourceNetwork">DeleteSourceNetwork</a></code> | <code>string</code> | [Write] drs:DeleteSourceNetwork. |
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.DeleteSourceServer">DeleteSourceServer</a></code> | <code>string</code> | [Write] drs:DeleteSourceServer. |
@@ -970,6 +1276,10 @@ new drs.DRSActions()
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.IssueAgentCertificateForDrs">IssueAgentCertificateForDrs</a></code> | <code>string</code> | [Write] drs:IssueAgentCertificateForDrs. |
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.ListExtensibleSourceServers">ListExtensibleSourceServers</a></code> | <code>string</code> | [Read] drs:ListExtensibleSourceServers. |
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.ListLaunchActions">ListLaunchActions</a></code> | <code>string</code> | [Read] drs:ListLaunchActions. |
+| <code><a href="#@cdk_utils/iam.drs.DRSActions.property.ListRecoveryPlanExecutions">ListRecoveryPlanExecutions</a></code> | <code>string</code> | [Read] drs:ListRecoveryPlanExecutions. |
+| <code><a href="#@cdk_utils/iam.drs.DRSActions.property.ListRecoveryPlanExecutionSteps">ListRecoveryPlanExecutionSteps</a></code> | <code>string</code> | [Read] drs:ListRecoveryPlanExecutionSteps. |
+| <code><a href="#@cdk_utils/iam.drs.DRSActions.property.ListRecoveryPlans">ListRecoveryPlans</a></code> | <code>string</code> | [Read] drs:ListRecoveryPlans. |
+| <code><a href="#@cdk_utils/iam.drs.DRSActions.property.ListRecoveryPlanSteps">ListRecoveryPlanSteps</a></code> | <code>string</code> | [Read] drs:ListRecoveryPlanSteps. |
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.ListStagingAccounts">ListStagingAccounts</a></code> | <code>string</code> | [Read] drs:ListStagingAccounts. |
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [Read] drs:ListTagsForResource. |
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.NotifyAgentAuthenticationForDrs">NotifyAgentAuthenticationForDrs</a></code> | <code>string</code> | [Write] drs:NotifyAgentAuthenticationForDrs. |
@@ -980,7 +1290,9 @@ new drs.DRSActions()
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.NotifyReplicationServerAuthenticationForDrs">NotifyReplicationServerAuthenticationForDrs</a></code> | <code>string</code> | [Write] drs:NotifyReplicationServerAuthenticationForDrs. |
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.NotifyVolumeEventForDrs">NotifyVolumeEventForDrs</a></code> | <code>string</code> | [Write] drs:NotifyVolumeEventForDrs. |
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.PutLaunchAction">PutLaunchAction</a></code> | <code>string</code> | [Write] drs:PutLaunchAction. |
+| <code><a href="#@cdk_utils/iam.drs.DRSActions.property.ReorderRecoveryPlanSteps">ReorderRecoveryPlanSteps</a></code> | <code>string</code> | [Write] drs:ReorderRecoveryPlanSteps. |
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.RetryDataReplication">RetryDataReplication</a></code> | <code>string</code> | [Write] drs:RetryDataReplication. |
+| <code><a href="#@cdk_utils/iam.drs.DRSActions.property.RetryRecoveryPlanExecutionStep">RetryRecoveryPlanExecutionStep</a></code> | <code>string</code> | [Write] drs:RetryRecoveryPlanExecutionStep. |
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.ReverseReplication">ReverseReplication</a></code> | <code>string</code> | [Write] drs:ReverseReplication. |
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.SendAgentLogsForDrs">SendAgentLogsForDrs</a></code> | <code>string</code> | [Write] drs:SendAgentLogsForDrs. |
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.SendAgentMetricsForDrs">SendAgentMetricsForDrs</a></code> | <code>string</code> | [Write] drs:SendAgentMetricsForDrs. |
@@ -991,6 +1303,7 @@ new drs.DRSActions()
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.StartFailbackLaunch">StartFailbackLaunch</a></code> | <code>string</code> | [Write] drs:StartFailbackLaunch. |
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.StartRecovery">StartRecovery</a></code> | <code>string</code> | [Write] drs:StartRecovery. |
+| <code><a href="#@cdk_utils/iam.drs.DRSActions.property.StartRecoveryPlanExecution">StartRecoveryPlanExecution</a></code> | <code>string</code> | [Write] drs:StartRecoveryPlanExecution. |
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.StartReplication">StartReplication</a></code> | <code>string</code> | [Write] drs:StartReplication. |
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.StartSourceNetworkRecovery">StartSourceNetworkRecovery</a></code> | <code>string</code> | [Write] drs:StartSourceNetworkRecovery. |
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.StartSourceNetworkReplication">StartSourceNetworkReplication</a></code> | <code>string</code> | [Write] drs:StartSourceNetworkReplication. |
@@ -1010,6 +1323,9 @@ new drs.DRSActions()
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.UpdateFailbackReplicationConfiguration">UpdateFailbackReplicationConfiguration</a></code> | <code>string</code> | [Write] drs:UpdateFailbackReplicationConfiguration. |
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.UpdateLaunchConfiguration">UpdateLaunchConfiguration</a></code> | <code>string</code> | [Write] drs:UpdateLaunchConfiguration. |
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.UpdateLaunchConfigurationTemplate">UpdateLaunchConfigurationTemplate</a></code> | <code>string</code> | [Write] drs:UpdateLaunchConfigurationTemplate. |
+| <code><a href="#@cdk_utils/iam.drs.DRSActions.property.UpdateRecoveryPlan">UpdateRecoveryPlan</a></code> | <code>string</code> | [Write] drs:UpdateRecoveryPlan. |
+| <code><a href="#@cdk_utils/iam.drs.DRSActions.property.UpdateRecoveryPlanExecutionStep">UpdateRecoveryPlanExecutionStep</a></code> | <code>string</code> | [Write] drs:UpdateRecoveryPlanExecutionStep. |
+| <code><a href="#@cdk_utils/iam.drs.DRSActions.property.UpdateRecoveryPlanStep">UpdateRecoveryPlanStep</a></code> | <code>string</code> | [Write] drs:UpdateRecoveryPlanStep. |
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.UpdateReplicationCertificateForDrs">UpdateReplicationCertificateForDrs</a></code> | <code>string</code> | [Write] drs:UpdateReplicationCertificateForDrs. |
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.UpdateReplicationConfiguration">UpdateReplicationConfiguration</a></code> | <code>string</code> | [Write] drs:UpdateReplicationConfiguration. |
 | <code><a href="#@cdk_utils/iam.drs.DRSActions.property.UpdateReplicationConfigurationTemplate">UpdateReplicationConfigurationTemplate</a></code> | <code>string</code> | [Write] drs:UpdateReplicationConfigurationTemplate. |
@@ -1148,6 +1464,54 @@ public readonly actionGetLaunchConfiguration: string;
 
 ---
 
+##### `actionGetRecoveryPlan`<sup>Required</sup> <a name="actionGetRecoveryPlan" id="@cdk_utils/iam.drs.DRSActions.property.actionGetRecoveryPlan"></a>
+
+```typescript
+public readonly actionGetRecoveryPlan: string;
+```
+
+- *Type:* string
+
+[Read] drs:GetRecoveryPlan.
+
+---
+
+##### `actionGetRecoveryPlanExecution`<sup>Required</sup> <a name="actionGetRecoveryPlanExecution" id="@cdk_utils/iam.drs.DRSActions.property.actionGetRecoveryPlanExecution"></a>
+
+```typescript
+public readonly actionGetRecoveryPlanExecution: string;
+```
+
+- *Type:* string
+
+[Read] drs:GetRecoveryPlanExecution.
+
+---
+
+##### `actionGetRecoveryPlanExecutionStep`<sup>Required</sup> <a name="actionGetRecoveryPlanExecutionStep" id="@cdk_utils/iam.drs.DRSActions.property.actionGetRecoveryPlanExecutionStep"></a>
+
+```typescript
+public readonly actionGetRecoveryPlanExecutionStep: string;
+```
+
+- *Type:* string
+
+[Read] drs:GetRecoveryPlanExecutionStep.
+
+---
+
+##### `actionGetRecoveryPlanStep`<sup>Required</sup> <a name="actionGetRecoveryPlanStep" id="@cdk_utils/iam.drs.DRSActions.property.actionGetRecoveryPlanStep"></a>
+
+```typescript
+public readonly actionGetRecoveryPlanStep: string;
+```
+
+- *Type:* string
+
+[Read] drs:GetRecoveryPlanStep.
+
+---
+
 ##### `actionGetReplicationConfiguration`<sup>Required</sup> <a name="actionGetReplicationConfiguration" id="@cdk_utils/iam.drs.DRSActions.property.actionGetReplicationConfiguration"></a>
 
 ```typescript
@@ -1280,6 +1644,18 @@ public readonly BatchDeleteSnapshotRequestForDrs: string;
 
 ---
 
+##### `CancelRecoveryPlanExecution`<sup>Required</sup> <a name="CancelRecoveryPlanExecution" id="@cdk_utils/iam.drs.DRSActions.property.CancelRecoveryPlanExecution"></a>
+
+```typescript
+public readonly CancelRecoveryPlanExecution: string;
+```
+
+- *Type:* string
+
+[Write] drs:CancelRecoveryPlanExecution.
+
+---
+
 ##### `CreateConvertedSnapshotForDrs`<sup>Required</sup> <a name="CreateConvertedSnapshotForDrs" id="@cdk_utils/iam.drs.DRSActions.property.CreateConvertedSnapshotForDrs"></a>
 
 ```typescript
@@ -1325,6 +1701,30 @@ public readonly CreateRecoveryInstanceForDrs: string;
 - *Type:* string
 
 [Write] drs:CreateRecoveryInstanceForDrs.
+
+---
+
+##### `CreateRecoveryPlan`<sup>Required</sup> <a name="CreateRecoveryPlan" id="@cdk_utils/iam.drs.DRSActions.property.CreateRecoveryPlan"></a>
+
+```typescript
+public readonly CreateRecoveryPlan: string;
+```
+
+- *Type:* string
+
+[Write] drs:CreateRecoveryPlan.
+
+---
+
+##### `CreateRecoveryPlanStep`<sup>Required</sup> <a name="CreateRecoveryPlanStep" id="@cdk_utils/iam.drs.DRSActions.property.CreateRecoveryPlanStep"></a>
+
+```typescript
+public readonly CreateRecoveryPlanStep: string;
+```
+
+- *Type:* string
+
+[Write] drs:CreateRecoveryPlanStep.
 
 ---
 
@@ -1409,6 +1809,42 @@ public readonly DeleteRecoveryInstance: string;
 - *Type:* string
 
 [Write] drs:DeleteRecoveryInstance.
+
+---
+
+##### `DeleteRecoveryPlan`<sup>Required</sup> <a name="DeleteRecoveryPlan" id="@cdk_utils/iam.drs.DRSActions.property.DeleteRecoveryPlan"></a>
+
+```typescript
+public readonly DeleteRecoveryPlan: string;
+```
+
+- *Type:* string
+
+[Write] drs:DeleteRecoveryPlan.
+
+---
+
+##### `DeleteRecoveryPlanExecution`<sup>Required</sup> <a name="DeleteRecoveryPlanExecution" id="@cdk_utils/iam.drs.DRSActions.property.DeleteRecoveryPlanExecution"></a>
+
+```typescript
+public readonly DeleteRecoveryPlanExecution: string;
+```
+
+- *Type:* string
+
+[Write] drs:DeleteRecoveryPlanExecution.
+
+---
+
+##### `DeleteRecoveryPlanStep`<sup>Required</sup> <a name="DeleteRecoveryPlanStep" id="@cdk_utils/iam.drs.DRSActions.property.DeleteRecoveryPlanStep"></a>
+
+```typescript
+public readonly DeleteRecoveryPlanStep: string;
+```
+
+- *Type:* string
+
+[Write] drs:DeleteRecoveryPlanStep.
 
 ---
 
@@ -1652,6 +2088,54 @@ public readonly ListLaunchActions: string;
 
 ---
 
+##### `ListRecoveryPlanExecutions`<sup>Required</sup> <a name="ListRecoveryPlanExecutions" id="@cdk_utils/iam.drs.DRSActions.property.ListRecoveryPlanExecutions"></a>
+
+```typescript
+public readonly ListRecoveryPlanExecutions: string;
+```
+
+- *Type:* string
+
+[Read] drs:ListRecoveryPlanExecutions.
+
+---
+
+##### `ListRecoveryPlanExecutionSteps`<sup>Required</sup> <a name="ListRecoveryPlanExecutionSteps" id="@cdk_utils/iam.drs.DRSActions.property.ListRecoveryPlanExecutionSteps"></a>
+
+```typescript
+public readonly ListRecoveryPlanExecutionSteps: string;
+```
+
+- *Type:* string
+
+[Read] drs:ListRecoveryPlanExecutionSteps.
+
+---
+
+##### `ListRecoveryPlans`<sup>Required</sup> <a name="ListRecoveryPlans" id="@cdk_utils/iam.drs.DRSActions.property.ListRecoveryPlans"></a>
+
+```typescript
+public readonly ListRecoveryPlans: string;
+```
+
+- *Type:* string
+
+[Read] drs:ListRecoveryPlans.
+
+---
+
+##### `ListRecoveryPlanSteps`<sup>Required</sup> <a name="ListRecoveryPlanSteps" id="@cdk_utils/iam.drs.DRSActions.property.ListRecoveryPlanSteps"></a>
+
+```typescript
+public readonly ListRecoveryPlanSteps: string;
+```
+
+- *Type:* string
+
+[Read] drs:ListRecoveryPlanSteps.
+
+---
+
 ##### `ListStagingAccounts`<sup>Required</sup> <a name="ListStagingAccounts" id="@cdk_utils/iam.drs.DRSActions.property.ListStagingAccounts"></a>
 
 ```typescript
@@ -1772,6 +2256,18 @@ public readonly PutLaunchAction: string;
 
 ---
 
+##### `ReorderRecoveryPlanSteps`<sup>Required</sup> <a name="ReorderRecoveryPlanSteps" id="@cdk_utils/iam.drs.DRSActions.property.ReorderRecoveryPlanSteps"></a>
+
+```typescript
+public readonly ReorderRecoveryPlanSteps: string;
+```
+
+- *Type:* string
+
+[Write] drs:ReorderRecoveryPlanSteps.
+
+---
+
 ##### `RetryDataReplication`<sup>Required</sup> <a name="RetryDataReplication" id="@cdk_utils/iam.drs.DRSActions.property.RetryDataReplication"></a>
 
 ```typescript
@@ -1781,6 +2277,18 @@ public readonly RetryDataReplication: string;
 - *Type:* string
 
 [Write] drs:RetryDataReplication.
+
+---
+
+##### `RetryRecoveryPlanExecutionStep`<sup>Required</sup> <a name="RetryRecoveryPlanExecutionStep" id="@cdk_utils/iam.drs.DRSActions.property.RetryRecoveryPlanExecutionStep"></a>
+
+```typescript
+public readonly RetryRecoveryPlanExecutionStep: string;
+```
+
+- *Type:* string
+
+[Write] drs:RetryRecoveryPlanExecutionStep.
 
 ---
 
@@ -1901,6 +2409,18 @@ public readonly StartRecovery: string;
 - *Type:* string
 
 [Write] drs:StartRecovery.
+
+---
+
+##### `StartRecoveryPlanExecution`<sup>Required</sup> <a name="StartRecoveryPlanExecution" id="@cdk_utils/iam.drs.DRSActions.property.StartRecoveryPlanExecution"></a>
+
+```typescript
+public readonly StartRecoveryPlanExecution: string;
+```
+
+- *Type:* string
+
+[Write] drs:StartRecoveryPlanExecution.
 
 ---
 
@@ -2132,6 +2652,42 @@ public readonly UpdateLaunchConfigurationTemplate: string;
 
 ---
 
+##### `UpdateRecoveryPlan`<sup>Required</sup> <a name="UpdateRecoveryPlan" id="@cdk_utils/iam.drs.DRSActions.property.UpdateRecoveryPlan"></a>
+
+```typescript
+public readonly UpdateRecoveryPlan: string;
+```
+
+- *Type:* string
+
+[Write] drs:UpdateRecoveryPlan.
+
+---
+
+##### `UpdateRecoveryPlanExecutionStep`<sup>Required</sup> <a name="UpdateRecoveryPlanExecutionStep" id="@cdk_utils/iam.drs.DRSActions.property.UpdateRecoveryPlanExecutionStep"></a>
+
+```typescript
+public readonly UpdateRecoveryPlanExecutionStep: string;
+```
+
+- *Type:* string
+
+[Write] drs:UpdateRecoveryPlanExecutionStep.
+
+---
+
+##### `UpdateRecoveryPlanStep`<sup>Required</sup> <a name="UpdateRecoveryPlanStep" id="@cdk_utils/iam.drs.DRSActions.property.UpdateRecoveryPlanStep"></a>
+
+```typescript
+public readonly UpdateRecoveryPlanStep: string;
+```
+
+- *Type:* string
+
+[Write] drs:UpdateRecoveryPlanStep.
+
+---
+
 ##### `UpdateReplicationCertificateForDrs`<sup>Required</sup> <a name="UpdateReplicationCertificateForDrs" id="@cdk_utils/iam.drs.DRSActions.property.UpdateReplicationCertificateForDrs"></a>
 
 ```typescript
@@ -2292,6 +2848,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.drs.DRSConditions.property.CreateExtendedSourceServerConditionKeys">CreateExtendedSourceServerConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateExtendedSourceServer action. |
 | <code><a href="#@cdk_utils/iam.drs.DRSConditions.property.CreateLaunchConfigurationTemplateConditionKeys">CreateLaunchConfigurationTemplateConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateLaunchConfigurationTemplate action. |
 | <code><a href="#@cdk_utils/iam.drs.DRSConditions.property.CreateRecoveryInstanceForDrsConditionKeys">CreateRecoveryInstanceForDrsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateRecoveryInstanceForDrs action. |
+| <code><a href="#@cdk_utils/iam.drs.DRSConditions.property.CreateRecoveryPlanConditionKeys">CreateRecoveryPlanConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateRecoveryPlan action. |
 | <code><a href="#@cdk_utils/iam.drs.DRSConditions.property.CreateReplicationConfigurationTemplateConditionKeys">CreateReplicationConfigurationTemplateConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateReplicationConfigurationTemplate action. |
 | <code><a href="#@cdk_utils/iam.drs.DRSConditions.property.CreateSourceNetworkConditionKeys">CreateSourceNetworkConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateSourceNetwork action. |
 | <code><a href="#@cdk_utils/iam.drs.DRSConditions.property.CreateSourceServerForDrsConditionKeys">CreateSourceServerForDrsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateSourceServerForDrs action. |
@@ -2300,6 +2857,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.drs.DRSConditions.property.ReverseReplicationConditionKeys">ReverseReplicationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ReverseReplication action. |
 | <code><a href="#@cdk_utils/iam.drs.DRSConditions.property.StartFailbackLaunchConditionKeys">StartFailbackLaunchConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartFailbackLaunch action. |
 | <code><a href="#@cdk_utils/iam.drs.DRSConditions.property.StartRecoveryConditionKeys">StartRecoveryConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartRecovery action. |
+| <code><a href="#@cdk_utils/iam.drs.DRSConditions.property.StartRecoveryPlanExecutionConditionKeys">StartRecoveryPlanExecutionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartRecoveryPlanExecution action. |
 | <code><a href="#@cdk_utils/iam.drs.DRSConditions.property.StartSourceNetworkRecoveryConditionKeys">StartSourceNetworkRecoveryConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartSourceNetworkRecovery action. |
 | <code><a href="#@cdk_utils/iam.drs.DRSConditions.property.TagResourceConditionKeys">TagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TagResource action. |
 | <code><a href="#@cdk_utils/iam.drs.DRSConditions.property.TerminateRecoveryInstancesConditionKeys">TerminateRecoveryInstancesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TerminateRecoveryInstances action. |
@@ -2415,6 +2973,18 @@ Condition keys applicable to the CreateRecoveryInstanceForDrs action.
 
 ---
 
+##### `CreateRecoveryPlanConditionKeys`<sup>Required</sup> <a name="CreateRecoveryPlanConditionKeys" id="@cdk_utils/iam.drs.DRSConditions.property.CreateRecoveryPlanConditionKeys"></a>
+
+```typescript
+public readonly CreateRecoveryPlanConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateRecoveryPlan action.
+
+---
+
 ##### `CreateReplicationConfigurationTemplateConditionKeys`<sup>Required</sup> <a name="CreateReplicationConfigurationTemplateConditionKeys" id="@cdk_utils/iam.drs.DRSConditions.property.CreateReplicationConfigurationTemplateConditionKeys"></a>
 
 ```typescript
@@ -2511,6 +3081,18 @@ Condition keys applicable to the StartRecovery action.
 
 ---
 
+##### `StartRecoveryPlanExecutionConditionKeys`<sup>Required</sup> <a name="StartRecoveryPlanExecutionConditionKeys" id="@cdk_utils/iam.drs.DRSConditions.property.StartRecoveryPlanExecutionConditionKeys"></a>
+
+```typescript
+public readonly StartRecoveryPlanExecutionConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the StartRecoveryPlanExecution action.
+
+---
+
 ##### `StartSourceNetworkRecoveryConditionKeys`<sup>Required</sup> <a name="StartSourceNetworkRecoveryConditionKeys" id="@cdk_utils/iam.drs.DRSConditions.property.StartSourceNetworkRecoveryConditionKeys"></a>
 
 ```typescript
@@ -2584,14 +3166,20 @@ new drs.DRSOperations()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.AssociateSourceNetworkStack">AssociateSourceNetworkStack</a></code> | <code>string[]</code> | IAM actions required for the AssociateSourceNetworkStack API call. |
+| <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.CancelRecoveryPlanExecution">CancelRecoveryPlanExecution</a></code> | <code>string[]</code> | IAM actions required for the CancelRecoveryPlanExecution API call. |
 | <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.CreateExtendedSourceServer">CreateExtendedSourceServer</a></code> | <code>string[]</code> | IAM actions required for the CreateExtendedSourceServer API call. |
 | <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.CreateLaunchConfigurationTemplate">CreateLaunchConfigurationTemplate</a></code> | <code>string[]</code> | IAM actions required for the CreateLaunchConfigurationTemplate API call. |
+| <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.CreateRecoveryPlan">CreateRecoveryPlan</a></code> | <code>string[]</code> | IAM actions required for the CreateRecoveryPlan API call. |
+| <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.CreateRecoveryPlanStep">CreateRecoveryPlanStep</a></code> | <code>string[]</code> | IAM actions required for the CreateRecoveryPlanStep API call. |
 | <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.CreateReplicationConfigurationTemplate">CreateReplicationConfigurationTemplate</a></code> | <code>string[]</code> | IAM actions required for the CreateReplicationConfigurationTemplate API call. |
 | <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.CreateSourceNetwork">CreateSourceNetwork</a></code> | <code>string[]</code> | IAM actions required for the CreateSourceNetwork API call. |
 | <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.DeleteJob">DeleteJob</a></code> | <code>string[]</code> | IAM actions required for the DeleteJob API call. |
 | <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.DeleteLaunchAction">DeleteLaunchAction</a></code> | <code>string[]</code> | IAM actions required for the DeleteLaunchAction API call. |
 | <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.DeleteLaunchConfigurationTemplate">DeleteLaunchConfigurationTemplate</a></code> | <code>string[]</code> | IAM actions required for the DeleteLaunchConfigurationTemplate API call. |
 | <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.DeleteRecoveryInstance">DeleteRecoveryInstance</a></code> | <code>string[]</code> | IAM actions required for the DeleteRecoveryInstance API call. |
+| <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.DeleteRecoveryPlan">DeleteRecoveryPlan</a></code> | <code>string[]</code> | IAM actions required for the DeleteRecoveryPlan API call. |
+| <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.DeleteRecoveryPlanExecution">DeleteRecoveryPlanExecution</a></code> | <code>string[]</code> | IAM actions required for the DeleteRecoveryPlanExecution API call. |
+| <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.DeleteRecoveryPlanStep">DeleteRecoveryPlanStep</a></code> | <code>string[]</code> | IAM actions required for the DeleteRecoveryPlanStep API call. |
 | <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.DeleteReplicationConfigurationTemplate">DeleteReplicationConfigurationTemplate</a></code> | <code>string[]</code> | IAM actions required for the DeleteReplicationConfigurationTemplate API call. |
 | <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.DeleteSourceNetwork">DeleteSourceNetwork</a></code> | <code>string[]</code> | IAM actions required for the DeleteSourceNetwork API call. |
 | <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.DeleteSourceServer">DeleteSourceServer</a></code> | <code>string[]</code> | IAM actions required for the DeleteSourceServer API call. |
@@ -2609,16 +3197,27 @@ new drs.DRSOperations()
 | <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.InitializeService">InitializeService</a></code> | <code>string[]</code> | IAM actions required for the InitializeService API call. |
 | <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.ListExtensibleSourceServers">ListExtensibleSourceServers</a></code> | <code>string[]</code> | IAM actions required for the ListExtensibleSourceServers API call. |
 | <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.ListLaunchActions">ListLaunchActions</a></code> | <code>string[]</code> | IAM actions required for the ListLaunchActions API call. |
+| <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.ListRecoveryPlanExecutions">ListRecoveryPlanExecutions</a></code> | <code>string[]</code> | IAM actions required for the ListRecoveryPlanExecutions API call. |
+| <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.ListRecoveryPlanExecutionSteps">ListRecoveryPlanExecutionSteps</a></code> | <code>string[]</code> | IAM actions required for the ListRecoveryPlanExecutionSteps API call. |
+| <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.ListRecoveryPlans">ListRecoveryPlans</a></code> | <code>string[]</code> | IAM actions required for the ListRecoveryPlans API call. |
+| <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.ListRecoveryPlanSteps">ListRecoveryPlanSteps</a></code> | <code>string[]</code> | IAM actions required for the ListRecoveryPlanSteps API call. |
 | <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.ListStagingAccounts">ListStagingAccounts</a></code> | <code>string[]</code> | IAM actions required for the ListStagingAccounts API call. |
 | <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
 | <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.opGetFailbackReplicationConfiguration">opGetFailbackReplicationConfiguration</a></code> | <code>string[]</code> | IAM actions required for the GetFailbackReplicationConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.opGetLaunchConfiguration">opGetLaunchConfiguration</a></code> | <code>string[]</code> | IAM actions required for the GetLaunchConfiguration API call. |
+| <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.opGetRecoveryPlan">opGetRecoveryPlan</a></code> | <code>string[]</code> | IAM actions required for the GetRecoveryPlan API call. |
+| <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.opGetRecoveryPlanExecution">opGetRecoveryPlanExecution</a></code> | <code>string[]</code> | IAM actions required for the GetRecoveryPlanExecution API call. |
+| <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.opGetRecoveryPlanExecutionStep">opGetRecoveryPlanExecutionStep</a></code> | <code>string[]</code> | IAM actions required for the GetRecoveryPlanExecutionStep API call. |
+| <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.opGetRecoveryPlanStep">opGetRecoveryPlanStep</a></code> | <code>string[]</code> | IAM actions required for the GetRecoveryPlanStep API call. |
 | <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.opGetReplicationConfiguration">opGetReplicationConfiguration</a></code> | <code>string[]</code> | IAM actions required for the GetReplicationConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.PutLaunchAction">PutLaunchAction</a></code> | <code>string[]</code> | IAM actions required for the PutLaunchAction API call. |
+| <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.ReorderRecoveryPlanSteps">ReorderRecoveryPlanSteps</a></code> | <code>string[]</code> | IAM actions required for the ReorderRecoveryPlanSteps API call. |
 | <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.RetryDataReplication">RetryDataReplication</a></code> | <code>string[]</code> | IAM actions required for the RetryDataReplication API call. |
+| <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.RetryRecoveryPlanExecutionStep">RetryRecoveryPlanExecutionStep</a></code> | <code>string[]</code> | IAM actions required for the RetryRecoveryPlanExecutionStep API call. |
 | <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.ReverseReplication">ReverseReplication</a></code> | <code>string[]</code> | IAM actions required for the ReverseReplication API call. |
 | <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.StartFailbackLaunch">StartFailbackLaunch</a></code> | <code>string[]</code> | IAM actions required for the StartFailbackLaunch API call. |
 | <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.StartRecovery">StartRecovery</a></code> | <code>string[]</code> | IAM actions required for the StartRecovery API call. |
+| <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.StartRecoveryPlanExecution">StartRecoveryPlanExecution</a></code> | <code>string[]</code> | IAM actions required for the StartRecoveryPlanExecution API call. |
 | <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.StartReplication">StartReplication</a></code> | <code>string[]</code> | IAM actions required for the StartReplication API call. |
 | <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.StartSourceNetworkRecovery">StartSourceNetworkRecovery</a></code> | <code>string[]</code> | IAM actions required for the StartSourceNetworkRecovery API call. |
 | <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.StartSourceNetworkReplication">StartSourceNetworkReplication</a></code> | <code>string[]</code> | IAM actions required for the StartSourceNetworkReplication API call. |
@@ -2631,6 +3230,9 @@ new drs.DRSOperations()
 | <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.UpdateFailbackReplicationConfiguration">UpdateFailbackReplicationConfiguration</a></code> | <code>string[]</code> | IAM actions required for the UpdateFailbackReplicationConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.UpdateLaunchConfiguration">UpdateLaunchConfiguration</a></code> | <code>string[]</code> | IAM actions required for the UpdateLaunchConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.UpdateLaunchConfigurationTemplate">UpdateLaunchConfigurationTemplate</a></code> | <code>string[]</code> | IAM actions required for the UpdateLaunchConfigurationTemplate API call. |
+| <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.UpdateRecoveryPlan">UpdateRecoveryPlan</a></code> | <code>string[]</code> | IAM actions required for the UpdateRecoveryPlan API call. |
+| <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.UpdateRecoveryPlanExecutionStep">UpdateRecoveryPlanExecutionStep</a></code> | <code>string[]</code> | IAM actions required for the UpdateRecoveryPlanExecutionStep API call. |
+| <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.UpdateRecoveryPlanStep">UpdateRecoveryPlanStep</a></code> | <code>string[]</code> | IAM actions required for the UpdateRecoveryPlanStep API call. |
 | <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.UpdateReplicationConfiguration">UpdateReplicationConfiguration</a></code> | <code>string[]</code> | IAM actions required for the UpdateReplicationConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.drs.DRSOperations.property.UpdateReplicationConfigurationTemplate">UpdateReplicationConfigurationTemplate</a></code> | <code>string[]</code> | IAM actions required for the UpdateReplicationConfigurationTemplate API call. |
 
@@ -2645,6 +3247,18 @@ public readonly AssociateSourceNetworkStack: string[];
 - *Type:* string[]
 
 IAM actions required for the AssociateSourceNetworkStack API call.
+
+---
+
+##### `CancelRecoveryPlanExecution`<sup>Required</sup> <a name="CancelRecoveryPlanExecution" id="@cdk_utils/iam.drs.DRSOperations.property.CancelRecoveryPlanExecution"></a>
+
+```typescript
+public readonly CancelRecoveryPlanExecution: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CancelRecoveryPlanExecution API call.
 
 ---
 
@@ -2669,6 +3283,30 @@ public readonly CreateLaunchConfigurationTemplate: string[];
 - *Type:* string[]
 
 IAM actions required for the CreateLaunchConfigurationTemplate API call.
+
+---
+
+##### `CreateRecoveryPlan`<sup>Required</sup> <a name="CreateRecoveryPlan" id="@cdk_utils/iam.drs.DRSOperations.property.CreateRecoveryPlan"></a>
+
+```typescript
+public readonly CreateRecoveryPlan: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateRecoveryPlan API call.
+
+---
+
+##### `CreateRecoveryPlanStep`<sup>Required</sup> <a name="CreateRecoveryPlanStep" id="@cdk_utils/iam.drs.DRSOperations.property.CreateRecoveryPlanStep"></a>
+
+```typescript
+public readonly CreateRecoveryPlanStep: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateRecoveryPlanStep API call.
 
 ---
 
@@ -2741,6 +3379,42 @@ public readonly DeleteRecoveryInstance: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteRecoveryInstance API call.
+
+---
+
+##### `DeleteRecoveryPlan`<sup>Required</sup> <a name="DeleteRecoveryPlan" id="@cdk_utils/iam.drs.DRSOperations.property.DeleteRecoveryPlan"></a>
+
+```typescript
+public readonly DeleteRecoveryPlan: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteRecoveryPlan API call.
+
+---
+
+##### `DeleteRecoveryPlanExecution`<sup>Required</sup> <a name="DeleteRecoveryPlanExecution" id="@cdk_utils/iam.drs.DRSOperations.property.DeleteRecoveryPlanExecution"></a>
+
+```typescript
+public readonly DeleteRecoveryPlanExecution: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteRecoveryPlanExecution API call.
+
+---
+
+##### `DeleteRecoveryPlanStep`<sup>Required</sup> <a name="DeleteRecoveryPlanStep" id="@cdk_utils/iam.drs.DRSOperations.property.DeleteRecoveryPlanStep"></a>
+
+```typescript
+public readonly DeleteRecoveryPlanStep: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteRecoveryPlanStep API call.
 
 ---
 
@@ -2948,6 +3622,54 @@ IAM actions required for the ListLaunchActions API call.
 
 ---
 
+##### `ListRecoveryPlanExecutions`<sup>Required</sup> <a name="ListRecoveryPlanExecutions" id="@cdk_utils/iam.drs.DRSOperations.property.ListRecoveryPlanExecutions"></a>
+
+```typescript
+public readonly ListRecoveryPlanExecutions: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListRecoveryPlanExecutions API call.
+
+---
+
+##### `ListRecoveryPlanExecutionSteps`<sup>Required</sup> <a name="ListRecoveryPlanExecutionSteps" id="@cdk_utils/iam.drs.DRSOperations.property.ListRecoveryPlanExecutionSteps"></a>
+
+```typescript
+public readonly ListRecoveryPlanExecutionSteps: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListRecoveryPlanExecutionSteps API call.
+
+---
+
+##### `ListRecoveryPlans`<sup>Required</sup> <a name="ListRecoveryPlans" id="@cdk_utils/iam.drs.DRSOperations.property.ListRecoveryPlans"></a>
+
+```typescript
+public readonly ListRecoveryPlans: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListRecoveryPlans API call.
+
+---
+
+##### `ListRecoveryPlanSteps`<sup>Required</sup> <a name="ListRecoveryPlanSteps" id="@cdk_utils/iam.drs.DRSOperations.property.ListRecoveryPlanSteps"></a>
+
+```typescript
+public readonly ListRecoveryPlanSteps: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListRecoveryPlanSteps API call.
+
+---
+
 ##### `ListStagingAccounts`<sup>Required</sup> <a name="ListStagingAccounts" id="@cdk_utils/iam.drs.DRSOperations.property.ListStagingAccounts"></a>
 
 ```typescript
@@ -2996,6 +3718,54 @@ IAM actions required for the GetLaunchConfiguration API call.
 
 ---
 
+##### `opGetRecoveryPlan`<sup>Required</sup> <a name="opGetRecoveryPlan" id="@cdk_utils/iam.drs.DRSOperations.property.opGetRecoveryPlan"></a>
+
+```typescript
+public readonly opGetRecoveryPlan: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetRecoveryPlan API call.
+
+---
+
+##### `opGetRecoveryPlanExecution`<sup>Required</sup> <a name="opGetRecoveryPlanExecution" id="@cdk_utils/iam.drs.DRSOperations.property.opGetRecoveryPlanExecution"></a>
+
+```typescript
+public readonly opGetRecoveryPlanExecution: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetRecoveryPlanExecution API call.
+
+---
+
+##### `opGetRecoveryPlanExecutionStep`<sup>Required</sup> <a name="opGetRecoveryPlanExecutionStep" id="@cdk_utils/iam.drs.DRSOperations.property.opGetRecoveryPlanExecutionStep"></a>
+
+```typescript
+public readonly opGetRecoveryPlanExecutionStep: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetRecoveryPlanExecutionStep API call.
+
+---
+
+##### `opGetRecoveryPlanStep`<sup>Required</sup> <a name="opGetRecoveryPlanStep" id="@cdk_utils/iam.drs.DRSOperations.property.opGetRecoveryPlanStep"></a>
+
+```typescript
+public readonly opGetRecoveryPlanStep: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetRecoveryPlanStep API call.
+
+---
+
 ##### `opGetReplicationConfiguration`<sup>Required</sup> <a name="opGetReplicationConfiguration" id="@cdk_utils/iam.drs.DRSOperations.property.opGetReplicationConfiguration"></a>
 
 ```typescript
@@ -3020,6 +3790,18 @@ IAM actions required for the PutLaunchAction API call.
 
 ---
 
+##### `ReorderRecoveryPlanSteps`<sup>Required</sup> <a name="ReorderRecoveryPlanSteps" id="@cdk_utils/iam.drs.DRSOperations.property.ReorderRecoveryPlanSteps"></a>
+
+```typescript
+public readonly ReorderRecoveryPlanSteps: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ReorderRecoveryPlanSteps API call.
+
+---
+
 ##### `RetryDataReplication`<sup>Required</sup> <a name="RetryDataReplication" id="@cdk_utils/iam.drs.DRSOperations.property.RetryDataReplication"></a>
 
 ```typescript
@@ -3029,6 +3811,18 @@ public readonly RetryDataReplication: string[];
 - *Type:* string[]
 
 IAM actions required for the RetryDataReplication API call.
+
+---
+
+##### `RetryRecoveryPlanExecutionStep`<sup>Required</sup> <a name="RetryRecoveryPlanExecutionStep" id="@cdk_utils/iam.drs.DRSOperations.property.RetryRecoveryPlanExecutionStep"></a>
+
+```typescript
+public readonly RetryRecoveryPlanExecutionStep: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the RetryRecoveryPlanExecutionStep API call.
 
 ---
 
@@ -3065,6 +3859,18 @@ public readonly StartRecovery: string[];
 - *Type:* string[]
 
 IAM actions required for the StartRecovery API call.
+
+---
+
+##### `StartRecoveryPlanExecution`<sup>Required</sup> <a name="StartRecoveryPlanExecution" id="@cdk_utils/iam.drs.DRSOperations.property.StartRecoveryPlanExecution"></a>
+
+```typescript
+public readonly StartRecoveryPlanExecution: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StartRecoveryPlanExecution API call.
 
 ---
 
@@ -3212,6 +4018,42 @@ IAM actions required for the UpdateLaunchConfigurationTemplate API call.
 
 ---
 
+##### `UpdateRecoveryPlan`<sup>Required</sup> <a name="UpdateRecoveryPlan" id="@cdk_utils/iam.drs.DRSOperations.property.UpdateRecoveryPlan"></a>
+
+```typescript
+public readonly UpdateRecoveryPlan: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateRecoveryPlan API call.
+
+---
+
+##### `UpdateRecoveryPlanExecutionStep`<sup>Required</sup> <a name="UpdateRecoveryPlanExecutionStep" id="@cdk_utils/iam.drs.DRSOperations.property.UpdateRecoveryPlanExecutionStep"></a>
+
+```typescript
+public readonly UpdateRecoveryPlanExecutionStep: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateRecoveryPlanExecutionStep API call.
+
+---
+
+##### `UpdateRecoveryPlanStep`<sup>Required</sup> <a name="UpdateRecoveryPlanStep" id="@cdk_utils/iam.drs.DRSOperations.property.UpdateRecoveryPlanStep"></a>
+
+```typescript
+public readonly UpdateRecoveryPlanStep: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateRecoveryPlanStep API call.
+
+---
+
 ##### `UpdateReplicationConfiguration`<sup>Required</sup> <a name="UpdateReplicationConfiguration" id="@cdk_utils/iam.drs.DRSOperations.property.UpdateReplicationConfiguration"></a>
 
 ```typescript
@@ -3261,6 +4103,8 @@ new drs.DRSResources()
 | <code><a href="#@cdk_utils/iam.drs.DRSResources.isValidJobResourceArn">isValidJobResourceArn</a></code> | Validates whether a string is a valid ARN for the JobResource resource. |
 | <code><a href="#@cdk_utils/iam.drs.DRSResources.isValidLaunchConfigurationTemplateResourceArn">isValidLaunchConfigurationTemplateResourceArn</a></code> | Validates whether a string is a valid ARN for the LaunchConfigurationTemplateResource resource. |
 | <code><a href="#@cdk_utils/iam.drs.DRSResources.isValidRecoveryInstanceResourceArn">isValidRecoveryInstanceResourceArn</a></code> | Validates whether a string is a valid ARN for the RecoveryInstanceResource resource. |
+| <code><a href="#@cdk_utils/iam.drs.DRSResources.isValidRecoveryPlanExecutionResourceArn">isValidRecoveryPlanExecutionResourceArn</a></code> | Validates whether a string is a valid ARN for the RecoveryPlanExecutionResource resource. |
+| <code><a href="#@cdk_utils/iam.drs.DRSResources.isValidRecoveryPlanResourceArn">isValidRecoveryPlanResourceArn</a></code> | Validates whether a string is a valid ARN for the RecoveryPlanResource resource. |
 | <code><a href="#@cdk_utils/iam.drs.DRSResources.isValidReplicationConfigurationTemplateResourceArn">isValidReplicationConfigurationTemplateResourceArn</a></code> | Validates whether a string is a valid ARN for the ReplicationConfigurationTemplateResource resource. |
 | <code><a href="#@cdk_utils/iam.drs.DRSResources.isValidSourceNetworkResourceArn">isValidSourceNetworkResourceArn</a></code> | Validates whether a string is a valid ARN for the SourceNetworkResource resource. |
 | <code><a href="#@cdk_utils/iam.drs.DRSResources.isValidSourceServerResourceArn">isValidSourceServerResourceArn</a></code> | Validates whether a string is a valid ARN for the SourceServerResource resource. |
@@ -3269,10 +4113,14 @@ new drs.DRSResources()
 | <code><a href="#@cdk_utils/iam.drs.DRSResources.parseJobResourceArn">parseJobResourceArn</a></code> | Parses a JobResource ARN into its components. |
 | <code><a href="#@cdk_utils/iam.drs.DRSResources.parseLaunchConfigurationTemplateResourceArn">parseLaunchConfigurationTemplateResourceArn</a></code> | Parses a LaunchConfigurationTemplateResource ARN into its components. |
 | <code><a href="#@cdk_utils/iam.drs.DRSResources.parseRecoveryInstanceResourceArn">parseRecoveryInstanceResourceArn</a></code> | Parses a RecoveryInstanceResource ARN into its components. |
+| <code><a href="#@cdk_utils/iam.drs.DRSResources.parseRecoveryPlanExecutionResourceArn">parseRecoveryPlanExecutionResourceArn</a></code> | Parses a RecoveryPlanExecutionResource ARN into its components. |
+| <code><a href="#@cdk_utils/iam.drs.DRSResources.parseRecoveryPlanResourceArn">parseRecoveryPlanResourceArn</a></code> | Parses a RecoveryPlanResource ARN into its components. |
 | <code><a href="#@cdk_utils/iam.drs.DRSResources.parseReplicationConfigurationTemplateResourceArn">parseReplicationConfigurationTemplateResourceArn</a></code> | Parses a ReplicationConfigurationTemplateResource ARN into its components. |
 | <code><a href="#@cdk_utils/iam.drs.DRSResources.parseSourceNetworkResourceArn">parseSourceNetworkResourceArn</a></code> | Parses a SourceNetworkResource ARN into its components. |
 | <code><a href="#@cdk_utils/iam.drs.DRSResources.parseSourceServerResourceArn">parseSourceServerResourceArn</a></code> | Parses a SourceServerResource ARN into its components. |
 | <code><a href="#@cdk_utils/iam.drs.DRSResources.recoveryInstanceResource">recoveryInstanceResource</a></code> | Builds an ARN for the RecoveryInstanceResource resource. |
+| <code><a href="#@cdk_utils/iam.drs.DRSResources.recoveryPlanExecutionResource">recoveryPlanExecutionResource</a></code> | Builds an ARN for the RecoveryPlanExecutionResource resource. |
+| <code><a href="#@cdk_utils/iam.drs.DRSResources.recoveryPlanResource">recoveryPlanResource</a></code> | Builds an ARN for the RecoveryPlanResource resource. |
 | <code><a href="#@cdk_utils/iam.drs.DRSResources.replicationConfigurationTemplateResource">replicationConfigurationTemplateResource</a></code> | Builds an ARN for the ReplicationConfigurationTemplateResource resource. |
 | <code><a href="#@cdk_utils/iam.drs.DRSResources.sourceNetworkResource">sourceNetworkResource</a></code> | Builds an ARN for the SourceNetworkResource resource. |
 | <code><a href="#@cdk_utils/iam.drs.DRSResources.sourceServerResource">sourceServerResource</a></code> | Builds an ARN for the SourceServerResource resource. |
@@ -3322,6 +4170,38 @@ drs.DRSResources.isValidRecoveryInstanceResourceArn(arn: string)
 Validates whether a string is a valid ARN for the RecoveryInstanceResource resource.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.drs.DRSResources.isValidRecoveryInstanceResourceArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidRecoveryPlanExecutionResourceArn` <a name="isValidRecoveryPlanExecutionResourceArn" id="@cdk_utils/iam.drs.DRSResources.isValidRecoveryPlanExecutionResourceArn"></a>
+
+```typescript
+import { drs } from '@cdk_utils/iam'
+
+drs.DRSResources.isValidRecoveryPlanExecutionResourceArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the RecoveryPlanExecutionResource resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.drs.DRSResources.isValidRecoveryPlanExecutionResourceArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidRecoveryPlanResourceArn` <a name="isValidRecoveryPlanResourceArn" id="@cdk_utils/iam.drs.DRSResources.isValidRecoveryPlanResourceArn"></a>
+
+```typescript
+import { drs } from '@cdk_utils/iam'
+
+drs.DRSResources.isValidRecoveryPlanResourceArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the RecoveryPlanResource resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.drs.DRSResources.isValidRecoveryPlanResourceArn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -3455,6 +4335,38 @@ Parses a RecoveryInstanceResource ARN into its components.
 
 ---
 
+##### `parseRecoveryPlanExecutionResourceArn` <a name="parseRecoveryPlanExecutionResourceArn" id="@cdk_utils/iam.drs.DRSResources.parseRecoveryPlanExecutionResourceArn"></a>
+
+```typescript
+import { drs } from '@cdk_utils/iam'
+
+drs.DRSResources.parseRecoveryPlanExecutionResourceArn(arn: string)
+```
+
+Parses a RecoveryPlanExecutionResource ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.drs.DRSResources.parseRecoveryPlanExecutionResourceArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseRecoveryPlanResourceArn` <a name="parseRecoveryPlanResourceArn" id="@cdk_utils/iam.drs.DRSResources.parseRecoveryPlanResourceArn"></a>
+
+```typescript
+import { drs } from '@cdk_utils/iam'
+
+drs.DRSResources.parseRecoveryPlanResourceArn(arn: string)
+```
+
+Parses a RecoveryPlanResource ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.drs.DRSResources.parseRecoveryPlanResourceArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `parseReplicationConfigurationTemplateResourceArn` <a name="parseReplicationConfigurationTemplateResourceArn" id="@cdk_utils/iam.drs.DRSResources.parseReplicationConfigurationTemplateResourceArn"></a>
 
 ```typescript
@@ -3516,6 +4428,38 @@ Builds an ARN for the RecoveryInstanceResource resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.drs.DRSResources.recoveryInstanceResource.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.drs.DRSRecoveryInstanceResourceArnProps">DRSRecoveryInstanceResourceArnProps</a>
+
+---
+
+##### `recoveryPlanExecutionResource` <a name="recoveryPlanExecutionResource" id="@cdk_utils/iam.drs.DRSResources.recoveryPlanExecutionResource"></a>
+
+```typescript
+import { drs } from '@cdk_utils/iam'
+
+drs.DRSResources.recoveryPlanExecutionResource(props: DRSRecoveryPlanExecutionResourceArnProps)
+```
+
+Builds an ARN for the RecoveryPlanExecutionResource resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.drs.DRSResources.recoveryPlanExecutionResource.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.drs.DRSRecoveryPlanExecutionResourceArnProps">DRSRecoveryPlanExecutionResourceArnProps</a>
+
+---
+
+##### `recoveryPlanResource` <a name="recoveryPlanResource" id="@cdk_utils/iam.drs.DRSResources.recoveryPlanResource"></a>
+
+```typescript
+import { drs } from '@cdk_utils/iam'
+
+drs.DRSResources.recoveryPlanResource(props: DRSRecoveryPlanResourceArnProps)
+```
+
+Builds an ARN for the RecoveryPlanResource resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.drs.DRSResources.recoveryPlanResource.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.drs.DRSRecoveryPlanResourceArnProps">DRSRecoveryPlanResourceArnProps</a>
 
 ---
 

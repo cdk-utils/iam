@@ -17751,6 +17751,7 @@ new connect.ConnectOperations()
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.CreateDataTableAttribute">CreateDataTableAttribute</a></code> | <code>string[]</code> | IAM actions required for the CreateDataTableAttribute API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.CreateEmailAddress">CreateEmailAddress</a></code> | <code>string[]</code> | IAM actions required for the CreateEmailAddress API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.CreateEvaluationForm">CreateEvaluationForm</a></code> | <code>string[]</code> | IAM actions required for the CreateEvaluationForm API call. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.CreateExtractionDefinition">CreateExtractionDefinition</a></code> | <code>string[]</code> | IAM actions required for the CreateExtractionDefinition API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.CreateHoursOfOperation">CreateHoursOfOperation</a></code> | <code>string[]</code> | IAM actions required for the CreateHoursOfOperation API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.CreateHoursOfOperationOverride">CreateHoursOfOperationOverride</a></code> | <code>string[]</code> | IAM actions required for the CreateHoursOfOperationOverride API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.CreateInstance">CreateInstance</a></code> | <code>string[]</code> | IAM actions required for the CreateInstance API call. |
@@ -17792,6 +17793,7 @@ new connect.ConnectOperations()
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.DeleteDataTableAttribute">DeleteDataTableAttribute</a></code> | <code>string[]</code> | IAM actions required for the DeleteDataTableAttribute API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.DeleteEmailAddress">DeleteEmailAddress</a></code> | <code>string[]</code> | IAM actions required for the DeleteEmailAddress API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.DeleteEvaluationForm">DeleteEvaluationForm</a></code> | <code>string[]</code> | IAM actions required for the DeleteEvaluationForm API call. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.DeleteExtractionDefinition">DeleteExtractionDefinition</a></code> | <code>string[]</code> | IAM actions required for the DeleteExtractionDefinition API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.DeleteHoursOfOperation">DeleteHoursOfOperation</a></code> | <code>string[]</code> | IAM actions required for the DeleteHoursOfOperation API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.DeleteHoursOfOperationOverride">DeleteHoursOfOperationOverride</a></code> | <code>string[]</code> | IAM actions required for the DeleteHoursOfOperationOverride API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.DeleteInstance">DeleteInstance</a></code> | <code>string[]</code> | IAM actions required for the DeleteInstance API call. |
@@ -17831,6 +17833,7 @@ new connect.ConnectOperations()
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.DescribeDataTableAttribute">DescribeDataTableAttribute</a></code> | <code>string[]</code> | IAM actions required for the DescribeDataTableAttribute API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.DescribeEmailAddress">DescribeEmailAddress</a></code> | <code>string[]</code> | IAM actions required for the DescribeEmailAddress API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.DescribeEvaluationForm">DescribeEvaluationForm</a></code> | <code>string[]</code> | IAM actions required for the DescribeEvaluationForm API call. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.DescribeExtractionDefinition">DescribeExtractionDefinition</a></code> | <code>string[]</code> | IAM actions required for the DescribeExtractionDefinition API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.DescribeHoursOfOperation">DescribeHoursOfOperation</a></code> | <code>string[]</code> | IAM actions required for the DescribeHoursOfOperation API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.DescribeHoursOfOperationOverride">DescribeHoursOfOperationOverride</a></code> | <code>string[]</code> | IAM actions required for the DescribeHoursOfOperationOverride API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.DescribeInstance">DescribeInstance</a></code> | <code>string[]</code> | IAM actions required for the DescribeInstance API call. |
@@ -17901,6 +17904,7 @@ new connect.ConnectOperations()
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.ListEntitySecurityProfiles">ListEntitySecurityProfiles</a></code> | <code>string[]</code> | IAM actions required for the ListEntitySecurityProfiles API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.ListEvaluationForms">ListEvaluationForms</a></code> | <code>string[]</code> | IAM actions required for the ListEvaluationForms API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.ListEvaluationFormVersions">ListEvaluationFormVersions</a></code> | <code>string[]</code> | IAM actions required for the ListEvaluationFormVersions API call. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.ListExtractionDefinitions">ListExtractionDefinitions</a></code> | <code>string[]</code> | IAM actions required for the ListExtractionDefinitions API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.ListFlowAssociations">ListFlowAssociations</a></code> | <code>string[]</code> | IAM actions required for the ListFlowAssociations API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.ListHoursOfOperationOverrides">ListHoursOfOperationOverrides</a></code> | <code>string[]</code> | IAM actions required for the ListHoursOfOperationOverrides API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.ListHoursOfOperations">ListHoursOfOperations</a></code> | <code>string[]</code> | IAM actions required for the ListHoursOfOperations API call. |
@@ -18056,6 +18060,7 @@ new connect.ConnectOperations()
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.UpdateDataTablePrimaryValues">UpdateDataTablePrimaryValues</a></code> | <code>string[]</code> | IAM actions required for the UpdateDataTablePrimaryValues API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.UpdateEmailAddressMetadata">UpdateEmailAddressMetadata</a></code> | <code>string[]</code> | IAM actions required for the UpdateEmailAddressMetadata API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.UpdateEvaluationForm">UpdateEvaluationForm</a></code> | <code>string[]</code> | IAM actions required for the UpdateEvaluationForm API call. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.UpdateExtractionDefinition">UpdateExtractionDefinition</a></code> | <code>string[]</code> | IAM actions required for the UpdateExtractionDefinition API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.UpdateHoursOfOperation">UpdateHoursOfOperation</a></code> | <code>string[]</code> | IAM actions required for the UpdateHoursOfOperation API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.UpdateHoursOfOperationOverride">UpdateHoursOfOperationOverride</a></code> | <code>string[]</code> | IAM actions required for the UpdateHoursOfOperationOverride API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.UpdateInstanceAttribute">UpdateInstanceAttribute</a></code> | <code>string[]</code> | IAM actions required for the UpdateInstanceAttribute API call. |
@@ -18670,6 +18675,18 @@ IAM actions required for the CreateEvaluationForm API call.
 
 ---
 
+##### `CreateExtractionDefinition`<sup>Required</sup> <a name="CreateExtractionDefinition" id="@cdk_utils/iam.connect.ConnectOperations.property.CreateExtractionDefinition"></a>
+
+```typescript
+public readonly CreateExtractionDefinition: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateExtractionDefinition API call.
+
+---
+
 ##### `CreateHoursOfOperation`<sup>Required</sup> <a name="CreateHoursOfOperation" id="@cdk_utils/iam.connect.ConnectOperations.property.CreateHoursOfOperation"></a>
 
 ```typescript
@@ -19162,6 +19179,18 @@ IAM actions required for the DeleteEvaluationForm API call.
 
 ---
 
+##### `DeleteExtractionDefinition`<sup>Required</sup> <a name="DeleteExtractionDefinition" id="@cdk_utils/iam.connect.ConnectOperations.property.DeleteExtractionDefinition"></a>
+
+```typescript
+public readonly DeleteExtractionDefinition: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteExtractionDefinition API call.
+
+---
+
 ##### `DeleteHoursOfOperation`<sup>Required</sup> <a name="DeleteHoursOfOperation" id="@cdk_utils/iam.connect.ConnectOperations.property.DeleteHoursOfOperation"></a>
 
 ```typescript
@@ -19627,6 +19656,18 @@ public readonly DescribeEvaluationForm: string[];
 - *Type:* string[]
 
 IAM actions required for the DescribeEvaluationForm API call.
+
+---
+
+##### `DescribeExtractionDefinition`<sup>Required</sup> <a name="DescribeExtractionDefinition" id="@cdk_utils/iam.connect.ConnectOperations.property.DescribeExtractionDefinition"></a>
+
+```typescript
+public readonly DescribeExtractionDefinition: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeExtractionDefinition API call.
 
 ---
 
@@ -20467,6 +20508,18 @@ public readonly ListEvaluationFormVersions: string[];
 - *Type:* string[]
 
 IAM actions required for the ListEvaluationFormVersions API call.
+
+---
+
+##### `ListExtractionDefinitions`<sup>Required</sup> <a name="ListExtractionDefinitions" id="@cdk_utils/iam.connect.ConnectOperations.property.ListExtractionDefinitions"></a>
+
+```typescript
+public readonly ListExtractionDefinitions: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListExtractionDefinitions API call.
 
 ---
 
@@ -22327,6 +22380,18 @@ public readonly UpdateEvaluationForm: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateEvaluationForm API call.
+
+---
+
+##### `UpdateExtractionDefinition`<sup>Required</sup> <a name="UpdateExtractionDefinition" id="@cdk_utils/iam.connect.ConnectOperations.property.UpdateExtractionDefinition"></a>
+
+```typescript
+public readonly UpdateExtractionDefinition: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateExtractionDefinition API call.
 
 ---
 
