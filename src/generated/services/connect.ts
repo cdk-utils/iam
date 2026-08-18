@@ -4346,6 +4346,8 @@ export class ConnectOperations {
 		"connect:CreateEvaluationForm",
 		"connect:TagResource",
 	];
+	/** IAM actions required for the CreateExtractionDefinition API call. */
+	static readonly CreateExtractionDefinition: string[] = [];
 	/** IAM actions required for the CreateHoursOfOperation API call. */
 	static readonly CreateHoursOfOperation: string[] = [
 		"connect:CreateHoursOfOperation",
@@ -4505,6 +4507,8 @@ export class ConnectOperations {
 	static readonly DeleteEvaluationForm: string[] = [
 		"connect:DeleteEvaluationForm",
 	];
+	/** IAM actions required for the DeleteExtractionDefinition API call. */
+	static readonly DeleteExtractionDefinition: string[] = [];
 	/** IAM actions required for the DeleteHoursOfOperation API call. */
 	static readonly DeleteHoursOfOperation: string[] = [
 		"connect:DeleteHoursOfOperation",
@@ -4625,6 +4629,8 @@ export class ConnectOperations {
 	static readonly DescribeEvaluationForm: string[] = [
 		"connect:DescribeEvaluationForm",
 	];
+	/** IAM actions required for the DescribeExtractionDefinition API call. */
+	static readonly DescribeExtractionDefinition: string[] = [];
 	/** IAM actions required for the DescribeHoursOfOperation API call. */
 	static readonly DescribeHoursOfOperation: string[] = [
 		"connect:DescribeHoursOfOperation",
@@ -4916,6 +4922,8 @@ export class ConnectOperations {
 	static readonly ListEvaluationForms: string[] = [
 		"connect:ListEvaluationForms",
 	];
+	/** IAM actions required for the ListExtractionDefinitions API call. */
+	static readonly ListExtractionDefinitions: string[] = [];
 	/** IAM actions required for the ListFlowAssociations API call. */
 	static readonly ListFlowAssociations: string[] = [
 		"connect:ListFlowAssociations",
@@ -5387,6 +5395,8 @@ export class ConnectOperations {
 	static readonly UpdateEvaluationForm: string[] = [
 		"connect:UpdateEvaluationForm",
 	];
+	/** IAM actions required for the UpdateExtractionDefinition API call. */
+	static readonly UpdateExtractionDefinition: string[] = [];
 	/** IAM actions required for the UpdateHoursOfOperation API call. */
 	static readonly UpdateHoursOfOperation: string[] = [
 		"connect:UpdateHoursOfOperation",

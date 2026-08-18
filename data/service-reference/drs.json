@@ -84,6 +84,26 @@
       }
     },
     {
+      "Name": "CancelRecoveryPlanExecution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RecoveryPlanExecutionResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "CreateConvertedSnapshotForDrs",
       "ActionConditionKeys": [
         "aws:RequestTag/${TagKey}",
@@ -162,6 +182,45 @@
       "Resources": [
         {
           "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateRecoveryPlan",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateRecoveryPlanStep",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RecoveryPlanResource"
         }
       ],
       "SupportedBy": {
@@ -302,6 +361,66 @@
       "Resources": [
         {
           "Name": "RecoveryInstanceResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteRecoveryPlan",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RecoveryPlanResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteRecoveryPlanExecution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RecoveryPlanExecutionResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteRecoveryPlanStep",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RecoveryPlanResource"
         }
       ],
       "SupportedBy": {
@@ -819,6 +938,86 @@
       }
     },
     {
+      "Name": "GetRecoveryPlan",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RecoveryPlanResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetRecoveryPlanExecution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RecoveryPlanExecutionResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetRecoveryPlanExecutionStep",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RecoveryPlanExecutionResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetRecoveryPlanStep",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RecoveryPlanResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "GetReplicationConfiguration",
       "Annotations": {
         "Properties": {
@@ -929,6 +1128,81 @@
           "Name": "SourceServerResource"
         }
       ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListRecoveryPlanExecutionSteps",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RecoveryPlanExecutionResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListRecoveryPlanExecutions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RecoveryPlanResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListRecoveryPlanSteps",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RecoveryPlanResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListRecoveryPlans",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -1140,6 +1414,26 @@
       }
     },
     {
+      "Name": "ReorderRecoveryPlanSteps",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RecoveryPlanResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "RetryDataReplication",
       "Annotations": {
         "Properties": {
@@ -1152,6 +1446,26 @@
       "Resources": [
         {
           "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RetryRecoveryPlanExecutionStep",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RecoveryPlanExecutionResource"
         }
       ],
       "SupportedBy": {
@@ -1343,6 +1657,30 @@
       }
     },
     {
+      "Name": "StartRecoveryPlanExecution",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RecoveryPlanResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "StartReplication",
       "Annotations": {
         "Properties": {
@@ -1492,6 +1830,12 @@
           "Name": "RecoveryInstanceResource"
         },
         {
+          "Name": "RecoveryPlanExecutionResource"
+        },
+        {
+          "Name": "RecoveryPlanResource"
+        },
+        {
           "Name": "ReplicationConfigurationTemplateResource"
         },
         {
@@ -1552,6 +1896,12 @@
         },
         {
           "Name": "RecoveryInstanceResource"
+        },
+        {
+          "Name": "RecoveryPlanExecutionResource"
+        },
+        {
+          "Name": "RecoveryPlanResource"
         },
         {
           "Name": "ReplicationConfigurationTemplateResource"
@@ -1784,6 +2134,66 @@
       }
     },
     {
+      "Name": "UpdateRecoveryPlan",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RecoveryPlanResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateRecoveryPlanExecutionStep",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RecoveryPlanExecutionResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateRecoveryPlanStep",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RecoveryPlanResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "UpdateReplicationCertificateForDrs",
       "Annotations": {
         "Properties": {
@@ -1894,6 +2304,16 @@
       ]
     },
     {
+      "Name": "CancelRecoveryPlanExecution",
+      "SDK": [
+        {
+          "Name": "drs",
+          "Method": "cancel_recovery_plan_execution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "CreateExtendedSourceServer",
       "AuthorizedActions": [
         {
@@ -1929,6 +2349,38 @@
         {
           "Name": "drs",
           "Method": "create_launch_configuration_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRecoveryPlan",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRecoveryPlan",
+          "Service": "drs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "drs",
+          "Method": "create_recovery_plan",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRecoveryPlanStep",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRecoveryPlanStep",
+          "Service": "drs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "drs",
+          "Method": "create_recovery_plan_step",
           "Package": "Boto3"
         }
       ]
@@ -2033,6 +2485,48 @@
         {
           "Name": "drs",
           "Method": "delete_recovery_instance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRecoveryPlan",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRecoveryPlan",
+          "Service": "drs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "drs",
+          "Method": "delete_recovery_plan",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRecoveryPlanExecution",
+      "SDK": [
+        {
+          "Name": "drs",
+          "Method": "delete_recovery_plan_execution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRecoveryPlanStep",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRecoveryPlanStep",
+          "Service": "drs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "drs",
+          "Method": "delete_recovery_plan_step",
           "Package": "Boto3"
         }
       ]
@@ -2294,6 +2788,58 @@
       ]
     },
     {
+      "Name": "GetRecoveryPlan",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRecoveryPlan",
+          "Service": "drs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "drs",
+          "Method": "get_recovery_plan",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRecoveryPlanExecution",
+      "SDK": [
+        {
+          "Name": "drs",
+          "Method": "get_recovery_plan_execution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRecoveryPlanExecutionStep",
+      "SDK": [
+        {
+          "Name": "drs",
+          "Method": "get_recovery_plan_execution_step",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRecoveryPlanStep",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRecoveryPlanStep",
+          "Service": "drs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "drs",
+          "Method": "get_recovery_plan_step",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetReplicationConfiguration",
       "AuthorizedActions": [
         {
@@ -2358,6 +2904,58 @@
       ]
     },
     {
+      "Name": "ListRecoveryPlanExecutionSteps",
+      "SDK": [
+        {
+          "Name": "drs",
+          "Method": "list_recovery_plan_execution_steps",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRecoveryPlanExecutions",
+      "SDK": [
+        {
+          "Name": "drs",
+          "Method": "list_recovery_plan_executions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRecoveryPlanSteps",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRecoveryPlanSteps",
+          "Service": "drs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "drs",
+          "Method": "list_recovery_plan_steps",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRecoveryPlans",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRecoveryPlans",
+          "Service": "drs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "drs",
+          "Method": "list_recovery_plans",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListStagingAccounts",
       "AuthorizedActions": [
         {
@@ -2406,6 +3004,22 @@
       ]
     },
     {
+      "Name": "ReorderRecoveryPlanSteps",
+      "AuthorizedActions": [
+        {
+          "Name": "ReorderRecoveryPlanSteps",
+          "Service": "drs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "drs",
+          "Method": "reorder_recovery_plan_steps",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "RetryDataReplication",
       "AuthorizedActions": [
         {
@@ -2417,6 +3031,16 @@
         {
           "Name": "drs",
           "Method": "retry_data_replication",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RetryRecoveryPlanExecutionStep",
+      "SDK": [
+        {
+          "Name": "drs",
+          "Method": "retry_recovery_plan_execution_step",
           "Package": "Boto3"
         }
       ]
@@ -2463,6 +3087,16 @@
         {
           "Name": "drs",
           "Method": "start_recovery",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartRecoveryPlanExecution",
+      "SDK": [
+        {
+          "Name": "drs",
+          "Method": "start_recovery_plan_execution",
           "Package": "Boto3"
         }
       ]
@@ -2664,6 +3298,48 @@
       ]
     },
     {
+      "Name": "UpdateRecoveryPlan",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateRecoveryPlan",
+          "Service": "drs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "drs",
+          "Method": "update_recovery_plan",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRecoveryPlanExecutionStep",
+      "SDK": [
+        {
+          "Name": "drs",
+          "Method": "update_recovery_plan_execution_step",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRecoveryPlanStep",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateRecoveryPlanStep",
+          "Service": "drs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "drs",
+          "Method": "update_recovery_plan_step",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "UpdateReplicationConfiguration",
       "AuthorizedActions": [
         {
@@ -2723,6 +3399,24 @@
       "ConditionKeys": [
         "aws:ResourceTag/${TagKey}",
         "drs:EC2InstanceARN"
+      ]
+    },
+    {
+      "Name": "RecoveryPlanExecutionResource",
+      "ARNFormats": [
+        "arn:${Partition}:drs:${Region}:${Account}:recovery-plan-execution/${RecoveryPlanExecutionID}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "RecoveryPlanResource",
+      "ARNFormats": [
+        "arn:${Partition}:drs:${Region}:${Account}:recovery-plan/${RecoveryPlanID}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
       ]
     },
     {
