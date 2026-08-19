@@ -5225,12 +5225,14 @@ new aws_marketplace.AWSMarketplaceOperations()
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.CreateAgreementRequest">CreateAgreementRequest</a></code> | <code>string[]</code> | IAM actions required for the CreateAgreementRequest API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.DeleteResourcePolicy">DeleteResourcePolicy</a></code> | <code>string[]</code> | IAM actions required for the DeleteResourcePolicy API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.DescribeAgreement">DescribeAgreement</a></code> | <code>string[]</code> | IAM actions required for the DescribeAgreement API call. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.DescribeAssessment">DescribeAssessment</a></code> | <code>string[]</code> | IAM actions required for the DescribeAssessment API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.DescribeChangeSet">DescribeChangeSet</a></code> | <code>string[]</code> | IAM actions required for the DescribeChangeSet API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.DescribeEntity">DescribeEntity</a></code> | <code>string[]</code> | IAM actions required for the DescribeEntity API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.ListAgreementCancellationRequests">ListAgreementCancellationRequests</a></code> | <code>string[]</code> | IAM actions required for the ListAgreementCancellationRequests API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.ListAgreementCharges">ListAgreementCharges</a></code> | <code>string[]</code> | IAM actions required for the ListAgreementCharges API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.ListAgreementInvoiceLineItems">ListAgreementInvoiceLineItems</a></code> | <code>string[]</code> | IAM actions required for the ListAgreementInvoiceLineItems API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.ListAgreementPaymentRequests">ListAgreementPaymentRequests</a></code> | <code>string[]</code> | IAM actions required for the ListAgreementPaymentRequests API call. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.ListAssessments">ListAssessments</a></code> | <code>string[]</code> | IAM actions required for the ListAssessments API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.ListBillingAdjustmentRequests">ListBillingAdjustmentRequests</a></code> | <code>string[]</code> | IAM actions required for the ListBillingAdjustmentRequests API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.ListChangeSets">ListChangeSets</a></code> | <code>string[]</code> | IAM actions required for the ListChangeSets API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.ListEntities">ListEntities</a></code> | <code>string[]</code> | IAM actions required for the ListEntities API call. |
@@ -5425,6 +5427,18 @@ IAM actions required for the DescribeAgreement API call.
 
 ---
 
+##### `DescribeAssessment`<sup>Required</sup> <a name="DescribeAssessment" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.DescribeAssessment"></a>
+
+```typescript
+public readonly DescribeAssessment: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeAssessment API call.
+
+---
+
 ##### `DescribeChangeSet`<sup>Required</sup> <a name="DescribeChangeSet" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.DescribeChangeSet"></a>
 
 ```typescript
@@ -5494,6 +5508,18 @@ public readonly ListAgreementPaymentRequests: string[];
 - *Type:* string[]
 
 IAM actions required for the ListAgreementPaymentRequests API call.
+
+---
+
+##### `ListAssessments`<sup>Required</sup> <a name="ListAssessments" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.ListAssessments"></a>
+
+```typescript
+public readonly ListAssessments: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListAssessments API call.
 
 ---
 

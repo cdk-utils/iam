@@ -946,6 +946,7 @@
           "Context": {
             "iam:PassedToService": [
               "cloudformation.amazonaws.com",
+              "codebuild.amazonaws.com",
               "codepipeline.amazonaws.com"
             ]
           },
@@ -1608,6 +1609,7 @@
           "Context": {
             "iam:PassedToService": [
               "cloudformation.amazonaws.com",
+              "codebuild.amazonaws.com",
               "codepipeline.amazonaws.com"
             ]
           },

@@ -2805,6 +2805,12 @@
     },
     {
       "Name": "GetRecoveryPlanExecution",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRecoveryPlanExecution",
+          "Service": "drs"
+        }
+      ],
       "SDK": [
         {
           "Name": "drs",
@@ -2915,6 +2921,12 @@
     },
     {
       "Name": "ListRecoveryPlanExecutions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRecoveryPlanExecutions",
+          "Service": "drs"
+        }
+      ],
       "SDK": [
         {
           "Name": "drs",
@@ -3093,6 +3105,12 @@
     },
     {
       "Name": "StartRecoveryPlanExecution",
+      "AuthorizedActions": [
+        {
+          "Name": "StartRecoveryPlanExecution",
+          "Service": "drs"
+        }
+      ],
       "SDK": [
         {
           "Name": "drs",
@@ -3315,6 +3333,12 @@
     },
     {
       "Name": "UpdateRecoveryPlanExecutionStep",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateRecoveryPlanExecutionStep",
+          "Service": "drs"
+        }
+      ],
       "SDK": [
         {
           "Name": "drs",

@@ -1181,6 +1181,7 @@ new outposts.OutpostsOperations()
 | <code><a href="#@cdk_utils/iam.outposts.OutpostsOperations.property.CancelOrder">CancelOrder</a></code> | <code>string[]</code> | IAM actions required for the CancelOrder API call. |
 | <code><a href="#@cdk_utils/iam.outposts.OutpostsOperations.property.CreateOrder">CreateOrder</a></code> | <code>string[]</code> | IAM actions required for the CreateOrder API call. |
 | <code><a href="#@cdk_utils/iam.outposts.OutpostsOperations.property.CreateOutpost">CreateOutpost</a></code> | <code>string[]</code> | IAM actions required for the CreateOutpost API call. |
+| <code><a href="#@cdk_utils/iam.outposts.OutpostsOperations.property.CreatePrivateConnectivityConfig">CreatePrivateConnectivityConfig</a></code> | <code>string[]</code> | IAM actions required for the CreatePrivateConnectivityConfig API call. |
 | <code><a href="#@cdk_utils/iam.outposts.OutpostsOperations.property.CreateQuote">CreateQuote</a></code> | <code>string[]</code> | IAM actions required for the CreateQuote API call. |
 | <code><a href="#@cdk_utils/iam.outposts.OutpostsOperations.property.CreateRenewal">CreateRenewal</a></code> | <code>string[]</code> | IAM actions required for the CreateRenewal API call. |
 | <code><a href="#@cdk_utils/iam.outposts.OutpostsOperations.property.CreateSite">CreateSite</a></code> | <code>string[]</code> | IAM actions required for the CreateSite API call. |
@@ -1206,6 +1207,7 @@ new outposts.OutpostsOperations()
 | <code><a href="#@cdk_utils/iam.outposts.OutpostsOperations.property.opGetOutpostBillingInformation">opGetOutpostBillingInformation</a></code> | <code>string[]</code> | IAM actions required for the GetOutpostBillingInformation API call. |
 | <code><a href="#@cdk_utils/iam.outposts.OutpostsOperations.property.opGetOutpostInstanceTypes">opGetOutpostInstanceTypes</a></code> | <code>string[]</code> | IAM actions required for the GetOutpostInstanceTypes API call. |
 | <code><a href="#@cdk_utils/iam.outposts.OutpostsOperations.property.opGetOutpostSupportedInstanceTypes">opGetOutpostSupportedInstanceTypes</a></code> | <code>string[]</code> | IAM actions required for the GetOutpostSupportedInstanceTypes API call. |
+| <code><a href="#@cdk_utils/iam.outposts.OutpostsOperations.property.opGetPrivateConnectivityConfig">opGetPrivateConnectivityConfig</a></code> | <code>string[]</code> | IAM actions required for the GetPrivateConnectivityConfig API call. |
 | <code><a href="#@cdk_utils/iam.outposts.OutpostsOperations.property.opGetQuote">opGetQuote</a></code> | <code>string[]</code> | IAM actions required for the GetQuote API call. |
 | <code><a href="#@cdk_utils/iam.outposts.OutpostsOperations.property.opGetRenewalPricing">opGetRenewalPricing</a></code> | <code>string[]</code> | IAM actions required for the GetRenewalPricing API call. |
 | <code><a href="#@cdk_utils/iam.outposts.OutpostsOperations.property.opGetSite">opGetSite</a></code> | <code>string[]</code> | IAM actions required for the GetSite API call. |
@@ -1268,6 +1270,18 @@ public readonly CreateOutpost: string[];
 - *Type:* string[]
 
 IAM actions required for the CreateOutpost API call.
+
+---
+
+##### `CreatePrivateConnectivityConfig`<sup>Required</sup> <a name="CreatePrivateConnectivityConfig" id="@cdk_utils/iam.outposts.OutpostsOperations.property.CreatePrivateConnectivityConfig"></a>
+
+```typescript
+public readonly CreatePrivateConnectivityConfig: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreatePrivateConnectivityConfig API call.
 
 ---
 
@@ -1568,6 +1582,18 @@ public readonly opGetOutpostSupportedInstanceTypes: string[];
 - *Type:* string[]
 
 IAM actions required for the GetOutpostSupportedInstanceTypes API call.
+
+---
+
+##### `opGetPrivateConnectivityConfig`<sup>Required</sup> <a name="opGetPrivateConnectivityConfig" id="@cdk_utils/iam.outposts.OutpostsOperations.property.opGetPrivateConnectivityConfig"></a>
+
+```typescript
+public readonly opGetPrivateConnectivityConfig: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetPrivateConnectivityConfig API call.
 
 ---
 

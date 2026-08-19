@@ -314,6 +314,10 @@ export class OutpostsOperations {
 		"outposts:CreateOutpost",
 		"outposts:TagResource",
 	];
+	/** IAM actions required for the CreatePrivateConnectivityConfig API call. */
+	static readonly CreatePrivateConnectivityConfig: string[] = [
+		"outposts:CreatePrivateConnectivityConfig",
+	];
 	/** IAM actions required for the CreateQuote API call. */
 	static readonly CreateQuote: string[] = ["outposts:CreateQuote"];
 	/** IAM actions required for the CreateRenewal API call. */
@@ -350,6 +354,10 @@ export class OutpostsOperations {
 	/** IAM actions required for the GetOutpostSupportedInstanceTypes API call. */
 	static readonly opGetOutpostSupportedInstanceTypes: string[] = [
 		"outposts:GetOutpostSupportedInstanceTypes",
+	];
+	/** IAM actions required for the GetPrivateConnectivityConfig API call. */
+	static readonly opGetPrivateConnectivityConfig: string[] = [
+		"outposts:GetPrivateConnectivityConfig",
 	];
 	/** IAM actions required for the GetQuote API call. */
 	static readonly opGetQuote: string[] = ["outposts:GetQuote"];
