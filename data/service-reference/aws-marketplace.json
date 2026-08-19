@@ -2113,6 +2113,22 @@
       ]
     },
     {
+      "Name": "DescribeAssessment",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAssessment",
+          "Service": "aws-marketplace"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "marketplace-catalog",
+          "Method": "describe_assessment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DescribeChangeSet",
       "AuthorizedActions": [
         {
@@ -2420,6 +2436,22 @@
         {
           "Name": "marketplace-agreement",
           "Method": "list_agreement_payment_requests",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAssessments",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAssessments",
+          "Service": "aws-marketplace"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "marketplace-catalog",
+          "Method": "list_assessments",
           "Package": "Boto3"
         }
       ]

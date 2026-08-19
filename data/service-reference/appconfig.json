@@ -908,6 +908,12 @@
           "Name": "environment"
         },
         {
+          "Name": "experimentdefinition"
+        },
+        {
+          "Name": "experimentrun"
+        },
+        {
           "Name": "extension"
         },
         {

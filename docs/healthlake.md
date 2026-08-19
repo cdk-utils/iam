@@ -386,6 +386,8 @@ new healthlake.HealthLakeActions()
 | <code><a href="#@cdk_utils/iam.healthlake.HealthLakeActions.property.SubmitPreAuthClaim">SubmitPreAuthClaim</a></code> | <code>string</code> | [Write] healthlake:SubmitPreAuthClaim. |
 | <code><a href="#@cdk_utils/iam.healthlake.HealthLakeActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] healthlake:TagResource. |
 | <code><a href="#@cdk_utils/iam.healthlake.HealthLakeActions.property.TransformData">TransformData</a></code> | <code>string</code> | [Write] healthlake:TransformData. |
+| <code><a href="#@cdk_utils/iam.healthlake.HealthLakeActions.property.TranslateConceptMapWithGet">TranslateConceptMapWithGet</a></code> | <code>string</code> | [Read] healthlake:TranslateConceptMapWithGet. |
+| <code><a href="#@cdk_utils/iam.healthlake.HealthLakeActions.property.TranslateConceptMapWithPost">TranslateConceptMapWithPost</a></code> | <code>string</code> | [Read] healthlake:TranslateConceptMapWithPost. |
 | <code><a href="#@cdk_utils/iam.healthlake.HealthLakeActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] healthlake:UntagResource. |
 | <code><a href="#@cdk_utils/iam.healthlake.HealthLakeActions.property.UpdateDataTransformationProfile">UpdateDataTransformationProfile</a></code> | <code>string</code> | [Write] healthlake:UpdateDataTransformationProfile. |
 | <code><a href="#@cdk_utils/iam.healthlake.HealthLakeActions.property.UpdateFHIRDatastore">UpdateFHIRDatastore</a></code> | <code>string</code> | [Write] healthlake:UpdateFHIRDatastore. |
@@ -1126,6 +1128,30 @@ public readonly TransformData: string;
 - *Type:* string
 
 [Write] healthlake:TransformData.
+
+---
+
+##### `TranslateConceptMapWithGet`<sup>Required</sup> <a name="TranslateConceptMapWithGet" id="@cdk_utils/iam.healthlake.HealthLakeActions.property.TranslateConceptMapWithGet"></a>
+
+```typescript
+public readonly TranslateConceptMapWithGet: string;
+```
+
+- *Type:* string
+
+[Read] healthlake:TranslateConceptMapWithGet.
+
+---
+
+##### `TranslateConceptMapWithPost`<sup>Required</sup> <a name="TranslateConceptMapWithPost" id="@cdk_utils/iam.healthlake.HealthLakeActions.property.TranslateConceptMapWithPost"></a>
+
+```typescript
+public readonly TranslateConceptMapWithPost: string;
+```
+
+- *Type:* string
+
+[Read] healthlake:TranslateConceptMapWithPost.
 
 ---
 

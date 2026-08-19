@@ -1652,6 +1652,10 @@ export class AWSMarketplaceOperations {
 		"aws-marketplace:DescribeAgreement",
 		"aws-marketplace:ViewSubscriptions",
 	];
+	/** IAM actions required for the DescribeAssessment API call. */
+	static readonly DescribeAssessment: string[] = [
+		"aws-marketplace:DescribeAssessment",
+	];
 	/** IAM actions required for the DescribeChangeSet API call. */
 	static readonly DescribeChangeSet: string[] = [
 		"aws-marketplace:DescribeChangeSet",
@@ -1717,6 +1721,10 @@ export class AWSMarketplaceOperations {
 	/** IAM actions required for the ListAgreementPaymentRequests API call. */
 	static readonly ListAgreementPaymentRequests: string[] = [
 		"aws-marketplace:ListAgreementPaymentRequests",
+	];
+	/** IAM actions required for the ListAssessments API call. */
+	static readonly ListAssessments: string[] = [
+		"aws-marketplace:ListAssessments",
 	];
 	/** IAM actions required for the ListBillingAdjustmentRequests API call. */
 	static readonly ListBillingAdjustmentRequests: string[] = [

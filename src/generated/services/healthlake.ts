@@ -144,6 +144,12 @@ export class HealthLakeActions {
 	static readonly TagResource = "healthlake:TagResource";
 	/** [Write] healthlake:TransformData */
 	static readonly TransformData = "healthlake:TransformData";
+	/** [Read] healthlake:TranslateConceptMapWithGet */
+	static readonly TranslateConceptMapWithGet =
+		"healthlake:TranslateConceptMapWithGet";
+	/** [Read] healthlake:TranslateConceptMapWithPost */
+	static readonly TranslateConceptMapWithPost =
+		"healthlake:TranslateConceptMapWithPost";
 	/** [Tagging] healthlake:UntagResource */
 	static readonly UntagResource = "healthlake:UntagResource";
 	/** [Write] healthlake:UpdateDataTransformationProfile */
@@ -185,6 +191,8 @@ export class HealthLakeActions {
 		HealthLakeActions.SearchEverything,
 		HealthLakeActions.SearchWithGet,
 		HealthLakeActions.SearchWithPost,
+		HealthLakeActions.TranslateConceptMapWithGet,
+		HealthLakeActions.TranslateConceptMapWithPost,
 		HealthLakeActions.ValidateResource,
 		HealthLakeActions.ValidateSource,
 		HealthLakeActions.VersionReadResource,
