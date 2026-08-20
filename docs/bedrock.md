@@ -6079,6 +6079,7 @@ new bedrock.BedrockActions()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetDataAutomationProject">actionGetDataAutomationProject</a></code> | <code>string</code> | [Read] bedrock:GetDataAutomationProject. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetDataAutomationStatus">actionGetDataAutomationStatus</a></code> | <code>string</code> | [Read] bedrock:GetDataAutomationStatus. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetDataSource">actionGetDataSource</a></code> | <code>string</code> | [Read] bedrock:GetDataSource. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetDataSourceAuthorizationUrl">actionGetDataSourceAuthorizationUrl</a></code> | <code>string</code> | [Read] bedrock:GetDataSourceAuthorizationUrl. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetDocumentContent">actionGetDocumentContent</a></code> | <code>string</code> | [Read] bedrock:GetDocumentContent. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetEvaluationJob">actionGetEvaluationJob</a></code> | <code>string</code> | [Read] bedrock:GetEvaluationJob. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetExecutionFlowSnapshot">actionGetExecutionFlowSnapshot</a></code> | <code>string</code> | [Read] bedrock:GetExecutionFlowSnapshot. |
@@ -6143,6 +6144,7 @@ new bedrock.BedrockActions()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.CreateDataAutomationLibrary">CreateDataAutomationLibrary</a></code> | <code>string</code> | [Write] bedrock:CreateDataAutomationLibrary. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.CreateDataAutomationProject">CreateDataAutomationProject</a></code> | <code>string</code> | [Write] bedrock:CreateDataAutomationProject. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.CreateDataSource">CreateDataSource</a></code> | <code>string</code> | [Write] bedrock:CreateDataSource. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.CreateDataSourceToken">CreateDataSourceToken</a></code> | <code>string</code> | [Write] bedrock:CreateDataSourceToken. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.CreateEvaluationJob">CreateEvaluationJob</a></code> | <code>string</code> | [Write] bedrock:CreateEvaluationJob. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.CreateFlow">CreateFlow</a></code> | <code>string</code> | [Write] bedrock:CreateFlow. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.CreateFlowAlias">CreateFlowAlias</a></code> | <code>string</code> | [Write] bedrock:CreateFlowAlias. |
@@ -6653,6 +6655,18 @@ public readonly actionGetDataSource: string;
 - *Type:* string
 
 [Read] bedrock:GetDataSource.
+
+---
+
+##### `actionGetDataSourceAuthorizationUrl`<sup>Required</sup> <a name="actionGetDataSourceAuthorizationUrl" id="@cdk_utils/iam.bedrock.BedrockActions.property.actionGetDataSourceAuthorizationUrl"></a>
+
+```typescript
+public readonly actionGetDataSourceAuthorizationUrl: string;
+```
+
+- *Type:* string
+
+[Read] bedrock:GetDataSourceAuthorizationUrl.
 
 ---
 
@@ -7421,6 +7435,18 @@ public readonly CreateDataSource: string;
 - *Type:* string
 
 [Write] bedrock:CreateDataSource.
+
+---
+
+##### `CreateDataSourceToken`<sup>Required</sup> <a name="CreateDataSourceToken" id="@cdk_utils/iam.bedrock.BedrockActions.property.CreateDataSourceToken"></a>
+
+```typescript
+public readonly CreateDataSourceToken: string;
+```
+
+- *Type:* string
+
+[Write] bedrock:CreateDataSourceToken.
 
 ---
 

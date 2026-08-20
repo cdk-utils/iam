@@ -4300,7 +4300,10 @@ export class ConnectOperations {
 		"connect:TagResource",
 	];
 	/** IAM actions required for the CreateAttachedFile API call. */
-	static readonly CreateAttachedFile: string[] = ["connect:CreateAttachedFile"];
+	static readonly CreateAttachedFile: string[] = [
+		"connect:CreateAttachedFile",
+		"connect:TagResource",
+	];
 	/** IAM actions required for the CreateAuthCode API call. */
 	static readonly CreateAuthCode: string[] = [];
 	/** IAM actions required for the CreateContact API call. */

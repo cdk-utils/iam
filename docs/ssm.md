@@ -3393,6 +3393,7 @@ new ssm.SSMActions()
 | <code><a href="#@cdk_utils/iam.ssm.SSMActions.property.RegisterTargetWithMaintenanceWindow">RegisterTargetWithMaintenanceWindow</a></code> | <code>string</code> | [Write] ssm:RegisterTargetWithMaintenanceWindow. |
 | <code><a href="#@cdk_utils/iam.ssm.SSMActions.property.RegisterTaskWithMaintenanceWindow">RegisterTaskWithMaintenanceWindow</a></code> | <code>string</code> | [Write] ssm:RegisterTaskWithMaintenanceWindow. |
 | <code><a href="#@cdk_utils/iam.ssm.SSMActions.property.RemoveTagsFromResource">RemoveTagsFromResource</a></code> | <code>string</code> | [Tagging] ssm:RemoveTagsFromResource. |
+| <code><a href="#@cdk_utils/iam.ssm.SSMActions.property.RequestManagedInstanceRoleToken">RequestManagedInstanceRoleToken</a></code> | <code>string</code> | [Write] ssm:RequestManagedInstanceRoleToken. |
 | <code><a href="#@cdk_utils/iam.ssm.SSMActions.property.ResetServiceSetting">ResetServiceSetting</a></code> | <code>string</code> | [Write] ssm:ResetServiceSetting. |
 | <code><a href="#@cdk_utils/iam.ssm.SSMActions.property.ResumeSession">ResumeSession</a></code> | <code>string</code> | [Write] ssm:ResumeSession. |
 | <code><a href="#@cdk_utils/iam.ssm.SSMActions.property.SendAutomationSignal">SendAutomationSignal</a></code> | <code>string</code> | [Write] ssm:SendAutomationSignal. |
@@ -3418,6 +3419,7 @@ new ssm.SSMActions()
 | <code><a href="#@cdk_utils/iam.ssm.SSMActions.property.UpdateMaintenanceWindow">UpdateMaintenanceWindow</a></code> | <code>string</code> | [Write] ssm:UpdateMaintenanceWindow. |
 | <code><a href="#@cdk_utils/iam.ssm.SSMActions.property.UpdateMaintenanceWindowTarget">UpdateMaintenanceWindowTarget</a></code> | <code>string</code> | [Write] ssm:UpdateMaintenanceWindowTarget. |
 | <code><a href="#@cdk_utils/iam.ssm.SSMActions.property.UpdateMaintenanceWindowTask">UpdateMaintenanceWindowTask</a></code> | <code>string</code> | [Write] ssm:UpdateMaintenanceWindowTask. |
+| <code><a href="#@cdk_utils/iam.ssm.SSMActions.property.UpdateManagedInstancePublicKey">UpdateManagedInstancePublicKey</a></code> | <code>string</code> | [Write] ssm:UpdateManagedInstancePublicKey. |
 | <code><a href="#@cdk_utils/iam.ssm.SSMActions.property.UpdateManagedInstanceRole">UpdateManagedInstanceRole</a></code> | <code>string</code> | [Write] ssm:UpdateManagedInstanceRole. |
 | <code><a href="#@cdk_utils/iam.ssm.SSMActions.property.UpdateOpsItem">UpdateOpsItem</a></code> | <code>string</code> | [Write] ssm:UpdateOpsItem. |
 | <code><a href="#@cdk_utils/iam.ssm.SSMActions.property.UpdateOpsMetadata">UpdateOpsMetadata</a></code> | <code>string</code> | [Write] ssm:UpdateOpsMetadata. |
@@ -5060,6 +5062,18 @@ public readonly RemoveTagsFromResource: string;
 
 ---
 
+##### `RequestManagedInstanceRoleToken`<sup>Required</sup> <a name="RequestManagedInstanceRoleToken" id="@cdk_utils/iam.ssm.SSMActions.property.RequestManagedInstanceRoleToken"></a>
+
+```typescript
+public readonly RequestManagedInstanceRoleToken: string;
+```
+
+- *Type:* string
+
+[Write] ssm:RequestManagedInstanceRoleToken.
+
+---
+
 ##### `ResetServiceSetting`<sup>Required</sup> <a name="ResetServiceSetting" id="@cdk_utils/iam.ssm.SSMActions.property.ResetServiceSetting"></a>
 
 ```typescript
@@ -5360,6 +5374,18 @@ public readonly UpdateMaintenanceWindowTask: string;
 
 ---
 
+##### `UpdateManagedInstancePublicKey`<sup>Required</sup> <a name="UpdateManagedInstancePublicKey" id="@cdk_utils/iam.ssm.SSMActions.property.UpdateManagedInstancePublicKey"></a>
+
+```typescript
+public readonly UpdateManagedInstancePublicKey: string;
+```
+
+- *Type:* string
+
+[Write] ssm:UpdateManagedInstancePublicKey.
+
+---
+
 ##### `UpdateManagedInstanceRole`<sup>Required</sup> <a name="UpdateManagedInstanceRole" id="@cdk_utils/iam.ssm.SSMActions.property.UpdateManagedInstanceRole"></a>
 
 ```typescript
@@ -5472,6 +5498,8 @@ new ssm.SSMConditions()
 | <code><a href="#@cdk_utils/iam.ssm.SSMConditions.documentType">documentType</a></code> | Generates a condition block for `ssm:DocumentType`. |
 | <code><a href="#@cdk_utils/iam.ssm.SSMConditions.documentVersion">documentVersion</a></code> | Generates a condition block for `ssm:DocumentVersion`. |
 | <code><a href="#@cdk_utils/iam.ssm.SSMConditions.inventoryTypeName">inventoryTypeName</a></code> | Generates a condition block for `ssm:InventoryTypeName`. |
+| <code><a href="#@cdk_utils/iam.ssm.SSMConditions.nodeAccountId">nodeAccountId</a></code> | Generates a condition block for `ssm:NodeAccountId`. |
+| <code><a href="#@cdk_utils/iam.ssm.SSMConditions.nodeOrgId">nodeOrgId</a></code> | Generates a condition block for `ssm:NodeOrgId`. |
 | <code><a href="#@cdk_utils/iam.ssm.SSMConditions.overwrite">overwrite</a></code> | Generates a condition block for `ssm:Overwrite`. |
 | <code><a href="#@cdk_utils/iam.ssm.SSMConditions.policies">policies</a></code> | Generates a condition block for `ssm:Policies`. |
 | <code><a href="#@cdk_utils/iam.ssm.SSMConditions.recursive">recursive</a></code> | Generates a condition block for `ssm:Recursive`. |
@@ -5580,6 +5608,38 @@ Generates a condition block for `ssm:InventoryTypeName`.
 ###### `values`<sup>Required</sup> <a name="values" id="@cdk_utils/iam.ssm.SSMConditions.inventoryTypeName.parameter.values"></a>
 
 - *Type:* string[]
+
+---
+
+##### `nodeAccountId` <a name="nodeAccountId" id="@cdk_utils/iam.ssm.SSMConditions.nodeAccountId"></a>
+
+```typescript
+import { ssm } from '@cdk_utils/iam'
+
+ssm.SSMConditions.nodeAccountId(value: string)
+```
+
+Generates a condition block for `ssm:NodeAccountId`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.ssm.SSMConditions.nodeAccountId.parameter.value"></a>
+
+- *Type:* string
+
+---
+
+##### `nodeOrgId` <a name="nodeOrgId" id="@cdk_utils/iam.ssm.SSMConditions.nodeOrgId"></a>
+
+```typescript
+import { ssm } from '@cdk_utils/iam'
+
+ssm.SSMConditions.nodeOrgId(value: string)
+```
+
+Generates a condition block for `ssm:NodeOrgId`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.ssm.SSMConditions.nodeOrgId.parameter.value"></a>
+
+- *Type:* string
 
 ---
 
@@ -5832,6 +5892,8 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.ssm.SSMConditions.property.ListResourceDataSyncConditionKeys">ListResourceDataSyncConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListResourceDataSync action. |
 | <code><a href="#@cdk_utils/iam.ssm.SSMConditions.property.ListTagsForResourceConditionKeys">ListTagsForResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListTagsForResource action. |
 | <code><a href="#@cdk_utils/iam.ssm.SSMConditions.property.ModifyDocumentPermissionConditionKeys">ModifyDocumentPermissionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ModifyDocumentPermission action. |
+| <code><a href="#@cdk_utils/iam.ssm.SSMConditions.property.NODE_ACCOUNT_ID">NODE_ACCOUNT_ID</a></code> | <code>string</code> | Condition key: ssm:NodeAccountId (String). |
+| <code><a href="#@cdk_utils/iam.ssm.SSMConditions.property.NODE_ORG_ID">NODE_ORG_ID</a></code> | <code>string</code> | Condition key: ssm:NodeOrgId (String). |
 | <code><a href="#@cdk_utils/iam.ssm.SSMConditions.property.OVERWRITE">OVERWRITE</a></code> | <code>string</code> | Condition key: ssm:Overwrite (String). |
 | <code><a href="#@cdk_utils/iam.ssm.SSMConditions.property.POLICIES">POLICIES</a></code> | <code>string</code> | Condition key: ssm:Policies (String). |
 | <code><a href="#@cdk_utils/iam.ssm.SSMConditions.property.PutComplianceItemsConditionKeys">PutComplianceItemsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutComplianceItems action. |
@@ -5840,6 +5902,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.ssm.SSMConditions.property.RECURSIVE">RECURSIVE</a></code> | <code>string</code> | Condition key: ssm:Recursive (String). |
 | <code><a href="#@cdk_utils/iam.ssm.SSMConditions.property.RegisterManagedInstanceConditionKeys">RegisterManagedInstanceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the RegisterManagedInstance action. |
 | <code><a href="#@cdk_utils/iam.ssm.SSMConditions.property.RemoveTagsFromResourceConditionKeys">RemoveTagsFromResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the RemoveTagsFromResource action. |
+| <code><a href="#@cdk_utils/iam.ssm.SSMConditions.property.RequestManagedInstanceRoleTokenConditionKeys">RequestManagedInstanceRoleTokenConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the RequestManagedInstanceRoleToken action. |
 | <code><a href="#@cdk_utils/iam.ssm.SSMConditions.property.RESOURCE_TAG">RESOURCE_TAG</a></code> | <code>string</code> | Condition key: ssm:resourceTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.ssm.SSMConditions.property.RESOURCE_TAG_AWS_SSMMESSAGES_SESSION_ID">RESOURCE_TAG_AWS_SSMMESSAGES_SESSION_ID</a></code> | <code>string</code> | Condition key: ssm:resourceTag/aws:ssmmessages:session-id (String). |
 | <code><a href="#@cdk_utils/iam.ssm.SSMConditions.property.RESOURCE_TAG_AWS_SSMMESSAGES_TARGET_ID">RESOURCE_TAG_AWS_SSMMESSAGES_TARGET_ID</a></code> | <code>string</code> | Condition key: ssm:resourceTag/aws:ssmmessages:target-id (String). |
@@ -5866,6 +5929,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.ssm.SSMConditions.property.UpdateDocumentMetadataConditionKeys">UpdateDocumentMetadataConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateDocumentMetadata action. |
 | <code><a href="#@cdk_utils/iam.ssm.SSMConditions.property.UpdateInstanceAssociationStatusConditionKeys">UpdateInstanceAssociationStatusConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateInstanceAssociationStatus action. |
 | <code><a href="#@cdk_utils/iam.ssm.SSMConditions.property.UpdateInstanceInformationConditionKeys">UpdateInstanceInformationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateInstanceInformation action. |
+| <code><a href="#@cdk_utils/iam.ssm.SSMConditions.property.UpdateManagedInstancePublicKeyConditionKeys">UpdateManagedInstancePublicKeyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateManagedInstancePublicKey action. |
 | <code><a href="#@cdk_utils/iam.ssm.SSMConditions.property.UpdateManagedInstanceRoleConditionKeys">UpdateManagedInstanceRoleConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateManagedInstanceRole action. |
 | <code><a href="#@cdk_utils/iam.ssm.SSMConditions.property.UpdateResourceDataSyncConditionKeys">UpdateResourceDataSyncConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateResourceDataSync action. |
 | <code><a href="#@cdk_utils/iam.ssm.SSMConditions.property.ValidateCloudConnectorConditionKeys">ValidateCloudConnectorConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ValidateCloudConnector action. |
@@ -6496,6 +6560,30 @@ Condition keys applicable to the ModifyDocumentPermission action.
 
 ---
 
+##### `NODE_ACCOUNT_ID`<sup>Required</sup> <a name="NODE_ACCOUNT_ID" id="@cdk_utils/iam.ssm.SSMConditions.property.NODE_ACCOUNT_ID"></a>
+
+```typescript
+public readonly NODE_ACCOUNT_ID: string;
+```
+
+- *Type:* string
+
+Condition key: ssm:NodeAccountId (String).
+
+---
+
+##### `NODE_ORG_ID`<sup>Required</sup> <a name="NODE_ORG_ID" id="@cdk_utils/iam.ssm.SSMConditions.property.NODE_ORG_ID"></a>
+
+```typescript
+public readonly NODE_ORG_ID: string;
+```
+
+- *Type:* string
+
+Condition key: ssm:NodeOrgId (String).
+
+---
+
 ##### `OVERWRITE`<sup>Required</sup> <a name="OVERWRITE" id="@cdk_utils/iam.ssm.SSMConditions.property.OVERWRITE"></a>
 
 ```typescript
@@ -6589,6 +6677,18 @@ public readonly RemoveTagsFromResourceConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the RemoveTagsFromResource action.
+
+---
+
+##### `RequestManagedInstanceRoleTokenConditionKeys`<sup>Required</sup> <a name="RequestManagedInstanceRoleTokenConditionKeys" id="@cdk_utils/iam.ssm.SSMConditions.property.RequestManagedInstanceRoleTokenConditionKeys"></a>
+
+```typescript
+public readonly RequestManagedInstanceRoleTokenConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the RequestManagedInstanceRoleToken action.
 
 ---
 
@@ -6901,6 +7001,18 @@ public readonly UpdateInstanceInformationConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the UpdateInstanceInformation action.
+
+---
+
+##### `UpdateManagedInstancePublicKeyConditionKeys`<sup>Required</sup> <a name="UpdateManagedInstancePublicKeyConditionKeys" id="@cdk_utils/iam.ssm.SSMConditions.property.UpdateManagedInstancePublicKeyConditionKeys"></a>
+
+```typescript
+public readonly UpdateManagedInstancePublicKeyConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UpdateManagedInstancePublicKey action.
 
 ---
 

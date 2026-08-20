@@ -1429,6 +1429,7 @@ new workspaces.WorkSpacesActions()
 | <code><a href="#@cdk_utils/iam.workspaces.WorkSpacesActions.property.ImportClientBranding">ImportClientBranding</a></code> | <code>string</code> | [Write] workspaces:ImportClientBranding. |
 | <code><a href="#@cdk_utils/iam.workspaces.WorkSpacesActions.property.ImportCustomWorkspaceImage">ImportCustomWorkspaceImage</a></code> | <code>string</code> | [Write] workspaces:ImportCustomWorkspaceImage. |
 | <code><a href="#@cdk_utils/iam.workspaces.WorkSpacesActions.property.ImportWorkspaceImage">ImportWorkspaceImage</a></code> | <code>string</code> | [Write] workspaces:ImportWorkspaceImage. |
+| <code><a href="#@cdk_utils/iam.workspaces.WorkSpacesActions.property.InvokeOnboardingAgent">InvokeOnboardingAgent</a></code> | <code>string</code> | [Write] workspaces:InvokeOnboardingAgent. |
 | <code><a href="#@cdk_utils/iam.workspaces.WorkSpacesActions.property.InvokeTroubleshootingInvestigation">InvokeTroubleshootingInvestigation</a></code> | <code>string</code> | [Read] workspaces:InvokeTroubleshootingInvestigation. |
 | <code><a href="#@cdk_utils/iam.workspaces.WorkSpacesActions.property.ListAccountLinks">ListAccountLinks</a></code> | <code>string</code> | [List] workspaces:ListAccountLinks. |
 | <code><a href="#@cdk_utils/iam.workspaces.WorkSpacesActions.property.ListAvailableManagementCidrRanges">ListAvailableManagementCidrRanges</a></code> | <code>string</code> | [List] workspaces:ListAvailableManagementCidrRanges. |
@@ -1445,6 +1446,7 @@ new workspaces.WorkSpacesActions()
 | <code><a href="#@cdk_utils/iam.workspaces.WorkSpacesActions.property.ModifyWorkspaceCreationProperties">ModifyWorkspaceCreationProperties</a></code> | <code>string</code> | [Write] workspaces:ModifyWorkspaceCreationProperties. |
 | <code><a href="#@cdk_utils/iam.workspaces.WorkSpacesActions.property.ModifyWorkspaceProperties">ModifyWorkspaceProperties</a></code> | <code>string</code> | [Write] workspaces:ModifyWorkspaceProperties. |
 | <code><a href="#@cdk_utils/iam.workspaces.WorkSpacesActions.property.ModifyWorkspaceState">ModifyWorkspaceState</a></code> | <code>string</code> | [Write] workspaces:ModifyWorkspaceState. |
+| <code><a href="#@cdk_utils/iam.workspaces.WorkSpacesActions.property.Personalization">Personalization</a></code> | <code>string</code> | [Write] workspaces:Personalization. |
 | <code><a href="#@cdk_utils/iam.workspaces.WorkSpacesActions.property.RebootWorkspaces">RebootWorkspaces</a></code> | <code>string</code> | [Write] workspaces:RebootWorkspaces. |
 | <code><a href="#@cdk_utils/iam.workspaces.WorkSpacesActions.property.RebuildWorkspaces">RebuildWorkspaces</a></code> | <code>string</code> | [Write] workspaces:RebuildWorkspaces. |
 | <code><a href="#@cdk_utils/iam.workspaces.WorkSpacesActions.property.RegisterWorkspaceDirectory">RegisterWorkspaceDirectory</a></code> | <code>string</code> | [Write] workspaces:RegisterWorkspaceDirectory. |
@@ -2287,6 +2289,18 @@ public readonly ImportWorkspaceImage: string;
 
 ---
 
+##### `InvokeOnboardingAgent`<sup>Required</sup> <a name="InvokeOnboardingAgent" id="@cdk_utils/iam.workspaces.WorkSpacesActions.property.InvokeOnboardingAgent"></a>
+
+```typescript
+public readonly InvokeOnboardingAgent: string;
+```
+
+- *Type:* string
+
+[Write] workspaces:InvokeOnboardingAgent.
+
+---
+
 ##### `InvokeTroubleshootingInvestigation`<sup>Required</sup> <a name="InvokeTroubleshootingInvestigation" id="@cdk_utils/iam.workspaces.WorkSpacesActions.property.InvokeTroubleshootingInvestigation"></a>
 
 ```typescript
@@ -2476,6 +2490,18 @@ public readonly ModifyWorkspaceState: string;
 - *Type:* string
 
 [Write] workspaces:ModifyWorkspaceState.
+
+---
+
+##### `Personalization`<sup>Required</sup> <a name="Personalization" id="@cdk_utils/iam.workspaces.WorkSpacesActions.property.Personalization"></a>
+
+```typescript
+public readonly Personalization: string;
+```
+
+- *Type:* string
+
+[Write] workspaces:Personalization.
 
 ---
 

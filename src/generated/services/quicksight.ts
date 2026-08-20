@@ -3651,7 +3651,10 @@ export class QuickSightOperations {
 		"quicksight:SetGroupMapping",
 	];
 	/** IAM actions required for the CreateSpace API call. */
-	static readonly CreateSpace: string[] = ["quicksight:CreateSpace"];
+	static readonly CreateSpace: string[] = [
+		"quicksight:CreateSpace",
+		"quicksight:TagResource",
+	];
 	/** IAM actions required for the CreateTemplate API call. */
 	static readonly CreateTemplate: string[] = [
 		"quicksight:CreateTemplate",

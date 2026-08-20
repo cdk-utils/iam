@@ -790,7 +790,12 @@ export class DataexchangeOperations {
 	/** IAM actions required for the DeleteAsset API call. */
 	static readonly DeleteAsset: string[] = ["dataexchange:DeleteAsset"];
 	/** IAM actions required for the DeleteDataGrant API call. */
-	static readonly DeleteDataGrant: string[] = ["dataexchange:DeleteDataGrant"];
+	static readonly DeleteDataGrant: string[] = [
+		"dataexchange:CreateJob",
+		"dataexchange:DeleteDataGrant",
+		"dataexchange:DeleteDataSet",
+		"dataexchange:StartJob",
+	];
 	/** IAM actions required for the DeleteDataSet API call. */
 	static readonly DeleteDataSet: string[] = ["dataexchange:DeleteDataSet"];
 	/** IAM actions required for the DeleteEventAction API call. */
