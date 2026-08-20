@@ -14,6 +14,9 @@ export class EKSActions {
 
 	/** [Read] eks:AccessKubernetesApi */
 	static readonly AccessKubernetesApi = "eks:AccessKubernetesApi";
+	/** [Write] eks:ActivateCertificateAuthority */
+	static readonly ActivateCertificateAuthority =
+		"eks:ActivateCertificateAuthority";
 	/** [Write] eks:AssociateAccessPolicy */
 	static readonly AssociateAccessPolicy = "eks:AssociateAccessPolicy";
 	/** [Write] eks:AssociateEncryptionConfig */
@@ -29,6 +32,8 @@ export class EKSActions {
 	static readonly CreateAddon = "eks:CreateAddon";
 	/** [Write] eks:CreateCapability */
 	static readonly CreateCapability = "eks:CreateCapability";
+	/** [Write] eks:CreateCertificateAuthority */
+	static readonly CreateCertificateAuthority = "eks:CreateCertificateAuthority";
 	/** [Write] eks:CreateCluster */
 	static readonly CreateCluster = "eks:CreateCluster";
 	/** [Write] eks:CreateEksAnywhereSubscription */
@@ -47,6 +52,8 @@ export class EKSActions {
 	static readonly DeleteAddon = "eks:DeleteAddon";
 	/** [Write] eks:DeleteCapability */
 	static readonly DeleteCapability = "eks:DeleteCapability";
+	/** [Write] eks:DeleteCertificateAuthority */
+	static readonly DeleteCertificateAuthority = "eks:DeleteCertificateAuthority";
 	/** [Write] eks:DeleteCluster */
 	static readonly DeleteCluster = "eks:DeleteCluster";
 	/** [Write] eks:DeleteEksAnywhereSubscription */
@@ -71,6 +78,9 @@ export class EKSActions {
 	static readonly DescribeAddonVersions = "eks:DescribeAddonVersions";
 	/** [Read] eks:DescribeCapability */
 	static readonly DescribeCapability = "eks:DescribeCapability";
+	/** [Read] eks:DescribeCertificateAuthority */
+	static readonly DescribeCertificateAuthority =
+		"eks:DescribeCertificateAuthority";
 	/** [Read] eks:DescribeCluster */
 	static readonly DescribeCluster = "eks:DescribeCluster";
 	/** [Read] eks:DescribeClusterVersions */
@@ -110,6 +120,8 @@ export class EKSActions {
 		"eks:ListAssociatedAccessPolicies";
 	/** [List] eks:ListCapabilities */
 	static readonly ListCapabilities = "eks:ListCapabilities";
+	/** [List] eks:ListCertificateAuthorities */
+	static readonly ListCertificateAuthorities = "eks:ListCertificateAuthorities";
 	/** [List] eks:ListClusters */
 	static readonly ListClusters = "eks:ListClusters";
 	/** [Read] eks:ListDashboardData */
@@ -174,6 +186,7 @@ export class EKSActions {
 		EKSActions.DescribeAddonConfiguration,
 		EKSActions.DescribeAddonVersions,
 		EKSActions.DescribeCapability,
+		EKSActions.DescribeCertificateAuthority,
 		EKSActions.DescribeCluster,
 		EKSActions.DescribeClusterVersions,
 		EKSActions.DescribeEksAnywhereSubscription,
@@ -190,6 +203,7 @@ export class EKSActions {
 	];
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
+		EKSActions.ActivateCertificateAuthority,
 		EKSActions.AssociateAccessPolicy,
 		EKSActions.AssociateEncryptionConfig,
 		EKSActions.AssociateIdentityProviderConfig,
@@ -197,6 +211,7 @@ export class EKSActions {
 		EKSActions.CreateAccessEntry,
 		EKSActions.CreateAddon,
 		EKSActions.CreateCapability,
+		EKSActions.CreateCertificateAuthority,
 		EKSActions.CreateCluster,
 		EKSActions.CreateEksAnywhereSubscription,
 		EKSActions.CreateFargateProfile,
@@ -205,6 +220,7 @@ export class EKSActions {
 		EKSActions.DeleteAccessEntry,
 		EKSActions.DeleteAddon,
 		EKSActions.DeleteCapability,
+		EKSActions.DeleteCertificateAuthority,
 		EKSActions.DeleteCluster,
 		EKSActions.DeleteEksAnywhereSubscription,
 		EKSActions.DeleteFargateProfile,
@@ -233,6 +249,7 @@ export class EKSActions {
 		EKSActions.ListAddons,
 		EKSActions.ListAssociatedAccessPolicies,
 		EKSActions.ListCapabilities,
+		EKSActions.ListCertificateAuthorities,
 		EKSActions.ListClusters,
 		EKSActions.ListEksAnywhereSubscriptions,
 		EKSActions.ListFargateProfiles,
@@ -1029,6 +1046,10 @@ export class EKSResources {
  * API operation to required IAM actions mapping for eks.
  */
 export class EKSOperations {
+	/** IAM actions required for the ActivateCertificateAuthority API call. */
+	static readonly ActivateCertificateAuthority: string[] = [
+		"eks:ActivateCertificateAuthority",
+	];
 	/** IAM actions required for the AssociateAccessPolicy API call. */
 	static readonly AssociateAccessPolicy: string[] = [
 		"eks:AssociateAccessPolicy",
@@ -1061,6 +1082,10 @@ export class EKSOperations {
 		"eks:CreateCapability",
 		"iam:PassRole",
 		"eks:TagResource",
+	];
+	/** IAM actions required for the CreateCertificateAuthority API call. */
+	static readonly CreateCertificateAuthority: string[] = [
+		"eks:CreateCertificateAuthority",
 	];
 	/** IAM actions required for the CreateCluster API call. */
 	static readonly CreateCluster: string[] = [
@@ -1098,6 +1123,10 @@ export class EKSOperations {
 	static readonly DeleteAddon: string[] = ["eks:DeleteAddon"];
 	/** IAM actions required for the DeleteCapability API call. */
 	static readonly DeleteCapability: string[] = ["eks:DeleteCapability"];
+	/** IAM actions required for the DeleteCertificateAuthority API call. */
+	static readonly DeleteCertificateAuthority: string[] = [
+		"eks:DeleteCertificateAuthority",
+	];
 	/** IAM actions required for the DeleteCluster API call. */
 	static readonly DeleteCluster: string[] = ["eks:DeleteCluster"];
 	/** IAM actions required for the DeleteEksAnywhereSubscription API call. */
@@ -1128,6 +1157,10 @@ export class EKSOperations {
 	];
 	/** IAM actions required for the DescribeCapability API call. */
 	static readonly DescribeCapability: string[] = ["eks:DescribeCapability"];
+	/** IAM actions required for the DescribeCertificateAuthority API call. */
+	static readonly DescribeCertificateAuthority: string[] = [
+		"eks:DescribeCertificateAuthority",
+	];
 	/** IAM actions required for the DescribeCluster API call. */
 	static readonly DescribeCluster: string[] = ["eks:DescribeCluster"];
 	/** IAM actions required for the DescribeClusterVersions API call. */
@@ -1180,6 +1213,10 @@ export class EKSOperations {
 	];
 	/** IAM actions required for the ListCapabilities API call. */
 	static readonly ListCapabilities: string[] = ["eks:ListCapabilities"];
+	/** IAM actions required for the ListCertificateAuthorities API call. */
+	static readonly ListCertificateAuthorities: string[] = [
+		"eks:ListCertificateAuthorities",
+	];
 	/** IAM actions required for the ListClusters API call. */
 	static readonly ListClusters: string[] = ["eks:ListClusters"];
 	/** IAM actions required for the ListEksAnywhereSubscriptions API call. */

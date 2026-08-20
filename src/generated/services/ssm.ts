@@ -309,6 +309,9 @@ export class SSMActions {
 		"ssm:RegisterTaskWithMaintenanceWindow";
 	/** [Tagging] ssm:RemoveTagsFromResource */
 	static readonly RemoveTagsFromResource = "ssm:RemoveTagsFromResource";
+	/** [Write] ssm:RequestManagedInstanceRoleToken */
+	static readonly RequestManagedInstanceRoleToken =
+		"ssm:RequestManagedInstanceRoleToken";
 	/** [Write] ssm:ResetServiceSetting */
 	static readonly ResetServiceSetting = "ssm:ResetServiceSetting";
 	/** [Write] ssm:ResumeSession */
@@ -362,6 +365,9 @@ export class SSMActions {
 	/** [Write] ssm:UpdateMaintenanceWindowTask */
 	static readonly UpdateMaintenanceWindowTask =
 		"ssm:UpdateMaintenanceWindowTask";
+	/** [Write] ssm:UpdateManagedInstancePublicKey */
+	static readonly UpdateManagedInstancePublicKey =
+		"ssm:UpdateManagedInstancePublicKey";
 	/** [Write] ssm:UpdateManagedInstanceRole */
 	static readonly UpdateManagedInstanceRole = "ssm:UpdateManagedInstanceRole";
 	/** [Write] ssm:UpdateOpsItem */
@@ -475,6 +481,7 @@ export class SSMActions {
 		SSMActions.RegisterPatchBaselineForPatchGroup,
 		SSMActions.RegisterTargetWithMaintenanceWindow,
 		SSMActions.RegisterTaskWithMaintenanceWindow,
+		SSMActions.RequestManagedInstanceRoleToken,
 		SSMActions.ResetServiceSetting,
 		SSMActions.ResumeSession,
 		SSMActions.SendAutomationSignal,
@@ -498,6 +505,7 @@ export class SSMActions {
 		SSMActions.UpdateMaintenanceWindow,
 		SSMActions.UpdateMaintenanceWindowTarget,
 		SSMActions.UpdateMaintenanceWindowTask,
+		SSMActions.UpdateManagedInstancePublicKey,
 		SSMActions.UpdateManagedInstanceRole,
 		SSMActions.UpdateOpsItem,
 		SSMActions.UpdateOpsMetadata,
@@ -2635,11 +2643,18 @@ export class SSMConditions {
 	static readonly RegisterManagedInstanceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
+		"ssm:NodeAccountId",
+		"ssm:NodeOrgId",
 	];
 	/** Condition keys applicable to the RemoveTagsFromResource action. */
 	static readonly RemoveTagsFromResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
+	];
+	/** Condition keys applicable to the RequestManagedInstanceRoleToken action. */
+	static readonly RequestManagedInstanceRoleTokenConditionKeys: string[] = [
+		"ssm:NodeAccountId",
+		"ssm:NodeOrgId",
 	];
 	/** Condition keys applicable to the ResumeSession action. */
 	static readonly ResumeSessionConditionKeys: string[] = [
@@ -2734,6 +2749,11 @@ export class SSMConditions {
 		"ec2:SourceInstanceARN",
 		"ssm:SourceInstanceARN",
 	];
+	/** Condition keys applicable to the UpdateManagedInstancePublicKey action. */
+	static readonly UpdateManagedInstancePublicKeyConditionKeys: string[] = [
+		"ssm:NodeAccountId",
+		"ssm:NodeOrgId",
+	];
 	/** Condition keys applicable to the UpdateManagedInstanceRole action. */
 	static readonly UpdateManagedInstanceRoleConditionKeys: string[] = [
 		"ssm:resourceTag/tag-key",
@@ -2767,6 +2787,10 @@ export class SSMConditions {
 	static readonly DOCUMENT_VERSION = "ssm:DocumentVersion";
 	/** Condition key: ssm:InventoryTypeName (ArrayOfString) */
 	static readonly INVENTORY_TYPE_NAME = "ssm:InventoryTypeName";
+	/** Condition key: ssm:NodeAccountId (String) */
+	static readonly NODE_ACCOUNT_ID = "ssm:NodeAccountId";
+	/** Condition key: ssm:NodeOrgId (String) */
+	static readonly NODE_ORG_ID = "ssm:NodeOrgId";
 	/** Condition key: ssm:Overwrite (String) */
 	static readonly OVERWRITE = "ssm:Overwrite";
 	/** Condition key: ssm:Policies (String) */
@@ -2860,6 +2884,20 @@ export class SSMConditions {
 		values: string[],
 	): Record<string, Record<string, string[]>> {
 		return { "ForAllValues:StringEquals": { "ssm:InventoryTypeName": values } };
+	}
+
+	/**
+	 * Generates a condition block for `ssm:NodeAccountId`.
+	 */
+	static nodeAccountId(value: string): Record<string, Record<string, string>> {
+		return { StringEquals: { "ssm:NodeAccountId": value } };
+	}
+
+	/**
+	 * Generates a condition block for `ssm:NodeOrgId`.
+	 */
+	static nodeOrgId(value: string): Record<string, Record<string, string>> {
+		return { StringEquals: { "ssm:NodeOrgId": value } };
 	}
 
 	/**

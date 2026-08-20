@@ -2100,6 +2100,7 @@ new eks.EKSActions()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.eks.EKSActions.property.AccessKubernetesApi">AccessKubernetesApi</a></code> | <code>string</code> | [Read] eks:AccessKubernetesApi. |
+| <code><a href="#@cdk_utils/iam.eks.EKSActions.property.ActivateCertificateAuthority">ActivateCertificateAuthority</a></code> | <code>string</code> | [Write] eks:ActivateCertificateAuthority. |
 | <code><a href="#@cdk_utils/iam.eks.EKSActions.property.AllListActions">AllListActions</a></code> | <code>string[]</code> | All list-level actions. |
 | <code><a href="#@cdk_utils/iam.eks.EKSActions.property.AllPermissionManagementActions">AllPermissionManagementActions</a></code> | <code>string[]</code> | All permission-management-level actions. |
 | <code><a href="#@cdk_utils/iam.eks.EKSActions.property.AllReadActions">AllReadActions</a></code> | <code>string[]</code> | All read-level actions. |
@@ -2112,6 +2113,7 @@ new eks.EKSActions()
 | <code><a href="#@cdk_utils/iam.eks.EKSActions.property.CreateAccessEntry">CreateAccessEntry</a></code> | <code>string</code> | [Write] eks:CreateAccessEntry. |
 | <code><a href="#@cdk_utils/iam.eks.EKSActions.property.CreateAddon">CreateAddon</a></code> | <code>string</code> | [Write] eks:CreateAddon. |
 | <code><a href="#@cdk_utils/iam.eks.EKSActions.property.CreateCapability">CreateCapability</a></code> | <code>string</code> | [Write] eks:CreateCapability. |
+| <code><a href="#@cdk_utils/iam.eks.EKSActions.property.CreateCertificateAuthority">CreateCertificateAuthority</a></code> | <code>string</code> | [Write] eks:CreateCertificateAuthority. |
 | <code><a href="#@cdk_utils/iam.eks.EKSActions.property.CreateCluster">CreateCluster</a></code> | <code>string</code> | [Write] eks:CreateCluster. |
 | <code><a href="#@cdk_utils/iam.eks.EKSActions.property.CreateEksAnywhereSubscription">CreateEksAnywhereSubscription</a></code> | <code>string</code> | [Write] eks:CreateEksAnywhereSubscription. |
 | <code><a href="#@cdk_utils/iam.eks.EKSActions.property.CreateFargateProfile">CreateFargateProfile</a></code> | <code>string</code> | [Write] eks:CreateFargateProfile. |
@@ -2120,6 +2122,7 @@ new eks.EKSActions()
 | <code><a href="#@cdk_utils/iam.eks.EKSActions.property.DeleteAccessEntry">DeleteAccessEntry</a></code> | <code>string</code> | [Write] eks:DeleteAccessEntry. |
 | <code><a href="#@cdk_utils/iam.eks.EKSActions.property.DeleteAddon">DeleteAddon</a></code> | <code>string</code> | [Write] eks:DeleteAddon. |
 | <code><a href="#@cdk_utils/iam.eks.EKSActions.property.DeleteCapability">DeleteCapability</a></code> | <code>string</code> | [Write] eks:DeleteCapability. |
+| <code><a href="#@cdk_utils/iam.eks.EKSActions.property.DeleteCertificateAuthority">DeleteCertificateAuthority</a></code> | <code>string</code> | [Write] eks:DeleteCertificateAuthority. |
 | <code><a href="#@cdk_utils/iam.eks.EKSActions.property.DeleteCluster">DeleteCluster</a></code> | <code>string</code> | [Write] eks:DeleteCluster. |
 | <code><a href="#@cdk_utils/iam.eks.EKSActions.property.DeleteEksAnywhereSubscription">DeleteEksAnywhereSubscription</a></code> | <code>string</code> | [Write] eks:DeleteEksAnywhereSubscription. |
 | <code><a href="#@cdk_utils/iam.eks.EKSActions.property.DeleteFargateProfile">DeleteFargateProfile</a></code> | <code>string</code> | [Write] eks:DeleteFargateProfile. |
@@ -2131,6 +2134,7 @@ new eks.EKSActions()
 | <code><a href="#@cdk_utils/iam.eks.EKSActions.property.DescribeAddonConfiguration">DescribeAddonConfiguration</a></code> | <code>string</code> | [Read] eks:DescribeAddonConfiguration. |
 | <code><a href="#@cdk_utils/iam.eks.EKSActions.property.DescribeAddonVersions">DescribeAddonVersions</a></code> | <code>string</code> | [Read] eks:DescribeAddonVersions. |
 | <code><a href="#@cdk_utils/iam.eks.EKSActions.property.DescribeCapability">DescribeCapability</a></code> | <code>string</code> | [Read] eks:DescribeCapability. |
+| <code><a href="#@cdk_utils/iam.eks.EKSActions.property.DescribeCertificateAuthority">DescribeCertificateAuthority</a></code> | <code>string</code> | [Read] eks:DescribeCertificateAuthority. |
 | <code><a href="#@cdk_utils/iam.eks.EKSActions.property.DescribeCluster">DescribeCluster</a></code> | <code>string</code> | [Read] eks:DescribeCluster. |
 | <code><a href="#@cdk_utils/iam.eks.EKSActions.property.DescribeClusterVersions">DescribeClusterVersions</a></code> | <code>string</code> | [Read] eks:DescribeClusterVersions. |
 | <code><a href="#@cdk_utils/iam.eks.EKSActions.property.DescribeEksAnywhereSubscription">DescribeEksAnywhereSubscription</a></code> | <code>string</code> | [Read] eks:DescribeEksAnywhereSubscription. |
@@ -2148,6 +2152,7 @@ new eks.EKSActions()
 | <code><a href="#@cdk_utils/iam.eks.EKSActions.property.ListAddons">ListAddons</a></code> | <code>string</code> | [List] eks:ListAddons. |
 | <code><a href="#@cdk_utils/iam.eks.EKSActions.property.ListAssociatedAccessPolicies">ListAssociatedAccessPolicies</a></code> | <code>string</code> | [List] eks:ListAssociatedAccessPolicies. |
 | <code><a href="#@cdk_utils/iam.eks.EKSActions.property.ListCapabilities">ListCapabilities</a></code> | <code>string</code> | [List] eks:ListCapabilities. |
+| <code><a href="#@cdk_utils/iam.eks.EKSActions.property.ListCertificateAuthorities">ListCertificateAuthorities</a></code> | <code>string</code> | [List] eks:ListCertificateAuthorities. |
 | <code><a href="#@cdk_utils/iam.eks.EKSActions.property.ListClusters">ListClusters</a></code> | <code>string</code> | [List] eks:ListClusters. |
 | <code><a href="#@cdk_utils/iam.eks.EKSActions.property.ListDashboardData">ListDashboardData</a></code> | <code>string</code> | [Read] eks:ListDashboardData. |
 | <code><a href="#@cdk_utils/iam.eks.EKSActions.property.ListDashboardResources">ListDashboardResources</a></code> | <code>string</code> | [Read] eks:ListDashboardResources. |
@@ -2186,6 +2191,18 @@ public readonly AccessKubernetesApi: string;
 - *Type:* string
 
 [Read] eks:AccessKubernetesApi.
+
+---
+
+##### `ActivateCertificateAuthority`<sup>Required</sup> <a name="ActivateCertificateAuthority" id="@cdk_utils/iam.eks.EKSActions.property.ActivateCertificateAuthority"></a>
+
+```typescript
+public readonly ActivateCertificateAuthority: string;
+```
+
+- *Type:* string
+
+[Write] eks:ActivateCertificateAuthority.
 
 ---
 
@@ -2333,6 +2350,18 @@ public readonly CreateCapability: string;
 
 ---
 
+##### `CreateCertificateAuthority`<sup>Required</sup> <a name="CreateCertificateAuthority" id="@cdk_utils/iam.eks.EKSActions.property.CreateCertificateAuthority"></a>
+
+```typescript
+public readonly CreateCertificateAuthority: string;
+```
+
+- *Type:* string
+
+[Write] eks:CreateCertificateAuthority.
+
+---
+
 ##### `CreateCluster`<sup>Required</sup> <a name="CreateCluster" id="@cdk_utils/iam.eks.EKSActions.property.CreateCluster"></a>
 
 ```typescript
@@ -2426,6 +2455,18 @@ public readonly DeleteCapability: string;
 - *Type:* string
 
 [Write] eks:DeleteCapability.
+
+---
+
+##### `DeleteCertificateAuthority`<sup>Required</sup> <a name="DeleteCertificateAuthority" id="@cdk_utils/iam.eks.EKSActions.property.DeleteCertificateAuthority"></a>
+
+```typescript
+public readonly DeleteCertificateAuthority: string;
+```
+
+- *Type:* string
+
+[Write] eks:DeleteCertificateAuthority.
 
 ---
 
@@ -2558,6 +2599,18 @@ public readonly DescribeCapability: string;
 - *Type:* string
 
 [Read] eks:DescribeCapability.
+
+---
+
+##### `DescribeCertificateAuthority`<sup>Required</sup> <a name="DescribeCertificateAuthority" id="@cdk_utils/iam.eks.EKSActions.property.DescribeCertificateAuthority"></a>
+
+```typescript
+public readonly DescribeCertificateAuthority: string;
+```
+
+- *Type:* string
+
+[Read] eks:DescribeCertificateAuthority.
 
 ---
 
@@ -2762,6 +2815,18 @@ public readonly ListCapabilities: string;
 - *Type:* string
 
 [List] eks:ListCapabilities.
+
+---
+
+##### `ListCertificateAuthorities`<sup>Required</sup> <a name="ListCertificateAuthorities" id="@cdk_utils/iam.eks.EKSActions.property.ListCertificateAuthorities"></a>
+
+```typescript
+public readonly ListCertificateAuthorities: string;
+```
+
+- *Type:* string
+
+[List] eks:ListCertificateAuthorities.
 
 ---
 
@@ -4315,6 +4380,7 @@ new eks.EKSOperations()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.eks.EKSOperations.property.ActivateCertificateAuthority">ActivateCertificateAuthority</a></code> | <code>string[]</code> | IAM actions required for the ActivateCertificateAuthority API call. |
 | <code><a href="#@cdk_utils/iam.eks.EKSOperations.property.AssociateAccessPolicy">AssociateAccessPolicy</a></code> | <code>string[]</code> | IAM actions required for the AssociateAccessPolicy API call. |
 | <code><a href="#@cdk_utils/iam.eks.EKSOperations.property.AssociateEncryptionConfig">AssociateEncryptionConfig</a></code> | <code>string[]</code> | IAM actions required for the AssociateEncryptionConfig API call. |
 | <code><a href="#@cdk_utils/iam.eks.EKSOperations.property.AssociateIdentityProviderConfig">AssociateIdentityProviderConfig</a></code> | <code>string[]</code> | IAM actions required for the AssociateIdentityProviderConfig API call. |
@@ -4322,6 +4388,7 @@ new eks.EKSOperations()
 | <code><a href="#@cdk_utils/iam.eks.EKSOperations.property.CreateAccessEntry">CreateAccessEntry</a></code> | <code>string[]</code> | IAM actions required for the CreateAccessEntry API call. |
 | <code><a href="#@cdk_utils/iam.eks.EKSOperations.property.CreateAddon">CreateAddon</a></code> | <code>string[]</code> | IAM actions required for the CreateAddon API call. |
 | <code><a href="#@cdk_utils/iam.eks.EKSOperations.property.CreateCapability">CreateCapability</a></code> | <code>string[]</code> | IAM actions required for the CreateCapability API call. |
+| <code><a href="#@cdk_utils/iam.eks.EKSOperations.property.CreateCertificateAuthority">CreateCertificateAuthority</a></code> | <code>string[]</code> | IAM actions required for the CreateCertificateAuthority API call. |
 | <code><a href="#@cdk_utils/iam.eks.EKSOperations.property.CreateCluster">CreateCluster</a></code> | <code>string[]</code> | IAM actions required for the CreateCluster API call. |
 | <code><a href="#@cdk_utils/iam.eks.EKSOperations.property.CreateEksAnywhereSubscription">CreateEksAnywhereSubscription</a></code> | <code>string[]</code> | IAM actions required for the CreateEksAnywhereSubscription API call. |
 | <code><a href="#@cdk_utils/iam.eks.EKSOperations.property.CreateFargateProfile">CreateFargateProfile</a></code> | <code>string[]</code> | IAM actions required for the CreateFargateProfile API call. |
@@ -4330,6 +4397,7 @@ new eks.EKSOperations()
 | <code><a href="#@cdk_utils/iam.eks.EKSOperations.property.DeleteAccessEntry">DeleteAccessEntry</a></code> | <code>string[]</code> | IAM actions required for the DeleteAccessEntry API call. |
 | <code><a href="#@cdk_utils/iam.eks.EKSOperations.property.DeleteAddon">DeleteAddon</a></code> | <code>string[]</code> | IAM actions required for the DeleteAddon API call. |
 | <code><a href="#@cdk_utils/iam.eks.EKSOperations.property.DeleteCapability">DeleteCapability</a></code> | <code>string[]</code> | IAM actions required for the DeleteCapability API call. |
+| <code><a href="#@cdk_utils/iam.eks.EKSOperations.property.DeleteCertificateAuthority">DeleteCertificateAuthority</a></code> | <code>string[]</code> | IAM actions required for the DeleteCertificateAuthority API call. |
 | <code><a href="#@cdk_utils/iam.eks.EKSOperations.property.DeleteCluster">DeleteCluster</a></code> | <code>string[]</code> | IAM actions required for the DeleteCluster API call. |
 | <code><a href="#@cdk_utils/iam.eks.EKSOperations.property.DeleteEksAnywhereSubscription">DeleteEksAnywhereSubscription</a></code> | <code>string[]</code> | IAM actions required for the DeleteEksAnywhereSubscription API call. |
 | <code><a href="#@cdk_utils/iam.eks.EKSOperations.property.DeleteFargateProfile">DeleteFargateProfile</a></code> | <code>string[]</code> | IAM actions required for the DeleteFargateProfile API call. |
@@ -4341,6 +4409,7 @@ new eks.EKSOperations()
 | <code><a href="#@cdk_utils/iam.eks.EKSOperations.property.DescribeAddonConfiguration">DescribeAddonConfiguration</a></code> | <code>string[]</code> | IAM actions required for the DescribeAddonConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.eks.EKSOperations.property.DescribeAddonVersions">DescribeAddonVersions</a></code> | <code>string[]</code> | IAM actions required for the DescribeAddonVersions API call. |
 | <code><a href="#@cdk_utils/iam.eks.EKSOperations.property.DescribeCapability">DescribeCapability</a></code> | <code>string[]</code> | IAM actions required for the DescribeCapability API call. |
+| <code><a href="#@cdk_utils/iam.eks.EKSOperations.property.DescribeCertificateAuthority">DescribeCertificateAuthority</a></code> | <code>string[]</code> | IAM actions required for the DescribeCertificateAuthority API call. |
 | <code><a href="#@cdk_utils/iam.eks.EKSOperations.property.DescribeCluster">DescribeCluster</a></code> | <code>string[]</code> | IAM actions required for the DescribeCluster API call. |
 | <code><a href="#@cdk_utils/iam.eks.EKSOperations.property.DescribeClusterVersions">DescribeClusterVersions</a></code> | <code>string[]</code> | IAM actions required for the DescribeClusterVersions API call. |
 | <code><a href="#@cdk_utils/iam.eks.EKSOperations.property.DescribeEksAnywhereSubscription">DescribeEksAnywhereSubscription</a></code> | <code>string[]</code> | IAM actions required for the DescribeEksAnywhereSubscription API call. |
@@ -4358,6 +4427,7 @@ new eks.EKSOperations()
 | <code><a href="#@cdk_utils/iam.eks.EKSOperations.property.ListAddons">ListAddons</a></code> | <code>string[]</code> | IAM actions required for the ListAddons API call. |
 | <code><a href="#@cdk_utils/iam.eks.EKSOperations.property.ListAssociatedAccessPolicies">ListAssociatedAccessPolicies</a></code> | <code>string[]</code> | IAM actions required for the ListAssociatedAccessPolicies API call. |
 | <code><a href="#@cdk_utils/iam.eks.EKSOperations.property.ListCapabilities">ListCapabilities</a></code> | <code>string[]</code> | IAM actions required for the ListCapabilities API call. |
+| <code><a href="#@cdk_utils/iam.eks.EKSOperations.property.ListCertificateAuthorities">ListCertificateAuthorities</a></code> | <code>string[]</code> | IAM actions required for the ListCertificateAuthorities API call. |
 | <code><a href="#@cdk_utils/iam.eks.EKSOperations.property.ListClusters">ListClusters</a></code> | <code>string[]</code> | IAM actions required for the ListClusters API call. |
 | <code><a href="#@cdk_utils/iam.eks.EKSOperations.property.ListEksAnywhereSubscriptions">ListEksAnywhereSubscriptions</a></code> | <code>string[]</code> | IAM actions required for the ListEksAnywhereSubscriptions API call. |
 | <code><a href="#@cdk_utils/iam.eks.EKSOperations.property.ListFargateProfiles">ListFargateProfiles</a></code> | <code>string[]</code> | IAM actions required for the ListFargateProfiles API call. |
@@ -4380,6 +4450,18 @@ new eks.EKSOperations()
 | <code><a href="#@cdk_utils/iam.eks.EKSOperations.property.UpdateNodegroupConfig">UpdateNodegroupConfig</a></code> | <code>string[]</code> | IAM actions required for the UpdateNodegroupConfig API call. |
 | <code><a href="#@cdk_utils/iam.eks.EKSOperations.property.UpdateNodegroupVersion">UpdateNodegroupVersion</a></code> | <code>string[]</code> | IAM actions required for the UpdateNodegroupVersion API call. |
 | <code><a href="#@cdk_utils/iam.eks.EKSOperations.property.UpdatePodIdentityAssociation">UpdatePodIdentityAssociation</a></code> | <code>string[]</code> | IAM actions required for the UpdatePodIdentityAssociation API call. |
+
+---
+
+##### `ActivateCertificateAuthority`<sup>Required</sup> <a name="ActivateCertificateAuthority" id="@cdk_utils/iam.eks.EKSOperations.property.ActivateCertificateAuthority"></a>
+
+```typescript
+public readonly ActivateCertificateAuthority: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ActivateCertificateAuthority API call.
 
 ---
 
@@ -4464,6 +4546,18 @@ public readonly CreateCapability: string[];
 - *Type:* string[]
 
 IAM actions required for the CreateCapability API call.
+
+---
+
+##### `CreateCertificateAuthority`<sup>Required</sup> <a name="CreateCertificateAuthority" id="@cdk_utils/iam.eks.EKSOperations.property.CreateCertificateAuthority"></a>
+
+```typescript
+public readonly CreateCertificateAuthority: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateCertificateAuthority API call.
 
 ---
 
@@ -4560,6 +4654,18 @@ public readonly DeleteCapability: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteCapability API call.
+
+---
+
+##### `DeleteCertificateAuthority`<sup>Required</sup> <a name="DeleteCertificateAuthority" id="@cdk_utils/iam.eks.EKSOperations.property.DeleteCertificateAuthority"></a>
+
+```typescript
+public readonly DeleteCertificateAuthority: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteCertificateAuthority API call.
 
 ---
 
@@ -4692,6 +4798,18 @@ public readonly DescribeCapability: string[];
 - *Type:* string[]
 
 IAM actions required for the DescribeCapability API call.
+
+---
+
+##### `DescribeCertificateAuthority`<sup>Required</sup> <a name="DescribeCertificateAuthority" id="@cdk_utils/iam.eks.EKSOperations.property.DescribeCertificateAuthority"></a>
+
+```typescript
+public readonly DescribeCertificateAuthority: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeCertificateAuthority API call.
 
 ---
 
@@ -4896,6 +5014,18 @@ public readonly ListCapabilities: string[];
 - *Type:* string[]
 
 IAM actions required for the ListCapabilities API call.
+
+---
+
+##### `ListCertificateAuthorities`<sup>Required</sup> <a name="ListCertificateAuthorities" id="@cdk_utils/iam.eks.EKSOperations.property.ListCertificateAuthorities"></a>
+
+```typescript
+public readonly ListCertificateAuthorities: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListCertificateAuthorities API call.
 
 ---
 

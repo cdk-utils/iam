@@ -582,6 +582,21 @@
       }
     },
     {
+      "Name": "CreateDataSourceToken",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "CreateEvaluationJob",
       "ActionConditionKeys": [
         "aws:RequestTag/${TagKey}",
@@ -2422,6 +2437,21 @@
           "Name": "knowledge-base"
         }
       ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDataSourceAuthorizationUrl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false

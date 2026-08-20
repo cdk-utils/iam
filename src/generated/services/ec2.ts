@@ -57,6 +57,9 @@ export class EC2Actions {
 		"ec2:AssignPrivateNatGatewayAddress";
 	/** [Write] ec2:AssociateAddress */
 	static readonly AssociateAddress = "ec2:AssociateAddress";
+	/** [Write] ec2:AssociateApplicationStatusCheck */
+	static readonly AssociateApplicationStatusCheck =
+		"ec2:AssociateApplicationStatusCheck";
 	/** [Write] ec2:AssociateCapacityReservationBillingOwner */
 	static readonly AssociateCapacityReservationBillingOwner =
 		"ec2:AssociateCapacityReservationBillingOwner";
@@ -172,6 +175,9 @@ export class EC2Actions {
 	static readonly CopySnapshot = "ec2:CopySnapshot";
 	/** [Write] ec2:CopyVolumes */
 	static readonly CopyVolumes = "ec2:CopyVolumes";
+	/** [Write] ec2:CreateApplicationStatusCheck */
+	static readonly CreateApplicationStatusCheck =
+		"ec2:CreateApplicationStatusCheck";
 	/** [Write] ec2:CreateCapacityManagerDataExport */
 	static readonly CreateCapacityManagerDataExport =
 		"ec2:CreateCapacityManagerDataExport";
@@ -380,6 +386,9 @@ export class EC2Actions {
 	/** [Write] ec2:CreateTransitGatewayPolicyTable */
 	static readonly CreateTransitGatewayPolicyTable =
 		"ec2:CreateTransitGatewayPolicyTable";
+	/** [Write] ec2:CreateTransitGatewayPolicyTableEntry */
+	static readonly CreateTransitGatewayPolicyTableEntry =
+		"ec2:CreateTransitGatewayPolicyTableEntry";
 	/** [Write] ec2:CreateTransitGatewayPrefixListReference */
 	static readonly CreateTransitGatewayPrefixListReference =
 		"ec2:CreateTransitGatewayPrefixListReference";
@@ -432,6 +441,9 @@ export class EC2Actions {
 	static readonly CreateVpnConnectionRoute = "ec2:CreateVpnConnectionRoute";
 	/** [Write] ec2:CreateVpnGateway */
 	static readonly CreateVpnGateway = "ec2:CreateVpnGateway";
+	/** [Write] ec2:DeleteApplicationStatusCheck */
+	static readonly DeleteApplicationStatusCheck =
+		"ec2:DeleteApplicationStatusCheck";
 	/** [Write] ec2:DeleteCapacityManagerDataExport */
 	static readonly DeleteCapacityManagerDataExport =
 		"ec2:DeleteCapacityManagerDataExport";
@@ -614,6 +626,9 @@ export class EC2Actions {
 	/** [Write] ec2:DeleteTransitGatewayPolicyTable */
 	static readonly DeleteTransitGatewayPolicyTable =
 		"ec2:DeleteTransitGatewayPolicyTable";
+	/** [Write] ec2:DeleteTransitGatewayPolicyTableEntry */
+	static readonly DeleteTransitGatewayPolicyTableEntry =
+		"ec2:DeleteTransitGatewayPolicyTableEntry";
 	/** [Write] ec2:DeleteTransitGatewayPrefixListReference */
 	static readonly DeleteTransitGatewayPrefixListReference =
 		"ec2:DeleteTransitGatewayPrefixListReference";
@@ -696,6 +711,14 @@ export class EC2Actions {
 	static readonly DescribeAddressesAttribute = "ec2:DescribeAddressesAttribute";
 	/** [List] ec2:DescribeAggregateIdFormat */
 	static readonly DescribeAggregateIdFormat = "ec2:DescribeAggregateIdFormat";
+	/** [List] ec2:DescribeApplicationStatus */
+	static readonly DescribeApplicationStatus = "ec2:DescribeApplicationStatus";
+	/** [List] ec2:DescribeApplicationStatusCheckAssociations */
+	static readonly DescribeApplicationStatusCheckAssociations =
+		"ec2:DescribeApplicationStatusCheckAssociations";
+	/** [List] ec2:DescribeApplicationStatusChecks */
+	static readonly DescribeApplicationStatusChecks =
+		"ec2:DescribeApplicationStatusChecks";
 	/** [List] ec2:DescribeAvailabilityZones */
 	static readonly DescribeAvailabilityZones = "ec2:DescribeAvailabilityZones";
 	/** [List] ec2:DescribeAwsNetworkPerformanceMetricSubscriptions */
@@ -1187,6 +1210,9 @@ export class EC2Actions {
 	/** [Write] ec2:DisableAllowedImagesSettings */
 	static readonly DisableAllowedImagesSettings =
 		"ec2:DisableAllowedImagesSettings";
+	/** [Write] ec2:DisableApplicationStatusCheckSuppression */
+	static readonly DisableApplicationStatusCheckSuppression =
+		"ec2:DisableApplicationStatusCheckSuppression";
 	/** [Write] ec2:DisableAwsNetworkPerformanceMetricSubscription */
 	static readonly DisableAwsNetworkPerformanceMetricSubscription =
 		"ec2:DisableAwsNetworkPerformanceMetricSubscription";
@@ -1238,6 +1264,9 @@ export class EC2Actions {
 		"ec2:DisableVpcClassicLinkDnsSupport";
 	/** [Write] ec2:DisassociateAddress */
 	static readonly DisassociateAddress = "ec2:DisassociateAddress";
+	/** [Write] ec2:DisassociateApplicationStatusCheck */
+	static readonly DisassociateApplicationStatusCheck =
+		"ec2:DisassociateApplicationStatusCheck";
 	/** [Write] ec2:DisassociateCapacityReservationBillingOwner */
 	static readonly DisassociateCapacityReservationBillingOwner =
 		"ec2:DisassociateCapacityReservationBillingOwner";
@@ -1292,6 +1321,9 @@ export class EC2Actions {
 	/** [Write] ec2:EnableAllowedImagesSettings */
 	static readonly EnableAllowedImagesSettings =
 		"ec2:EnableAllowedImagesSettings";
+	/** [Write] ec2:EnableApplicationStatusCheckSuppression */
+	static readonly EnableApplicationStatusCheckSuppression =
+		"ec2:EnableApplicationStatusCheckSuppression";
 	/** [Write] ec2:EnableAwsNetworkPerformanceMetricSubscription */
 	static readonly EnableAwsNetworkPerformanceMetricSubscription =
 		"ec2:EnableAwsNetworkPerformanceMetricSubscription";
@@ -1586,6 +1618,9 @@ export class EC2Actions {
 	static readonly LockSnapshot = "ec2:LockSnapshot";
 	/** [Write] ec2:ModifyAddressAttribute */
 	static readonly ModifyAddressAttribute = "ec2:ModifyAddressAttribute";
+	/** [Write] ec2:ModifyApplicationStatusCheck */
+	static readonly ModifyApplicationStatusCheck =
+		"ec2:ModifyApplicationStatusCheck";
 	/** [Write] ec2:ModifyAvailabilityZoneGroup */
 	static readonly ModifyAvailabilityZoneGroup =
 		"ec2:ModifyAvailabilityZoneGroup";
@@ -1714,6 +1749,9 @@ export class EC2Actions {
 	/** [Write] ec2:ModifyTransitGatewayMeteringPolicy */
 	static readonly ModifyTransitGatewayMeteringPolicy =
 		"ec2:ModifyTransitGatewayMeteringPolicy";
+	/** [Write] ec2:ModifyTransitGatewayPolicyTableEntry */
+	static readonly ModifyTransitGatewayPolicyTableEntry =
+		"ec2:ModifyTransitGatewayPolicyTableEntry";
 	/** [Write] ec2:ModifyTransitGatewayPrefixListReference */
 	static readonly ModifyTransitGatewayPrefixListReference =
 		"ec2:ModifyTransitGatewayPrefixListReference";
@@ -1759,6 +1797,9 @@ export class EC2Actions {
 	/** [Write] ec2:ModifyVpcEndpointConnectionNotification */
 	static readonly ModifyVpcEndpointConnectionNotification =
 		"ec2:ModifyVpcEndpointConnectionNotification";
+	/** [Write] ec2:ModifyVpcEndpointPayerResponsibility */
+	static readonly ModifyVpcEndpointPayerResponsibility =
+		"ec2:ModifyVpcEndpointPayerResponsibility";
 	/** [Write] ec2:ModifyVpcEndpointServiceConfiguration */
 	static readonly ModifyVpcEndpointServiceConfiguration =
 		"ec2:ModifyVpcEndpointServiceConfiguration";
@@ -2057,6 +2098,7 @@ export class EC2Actions {
 		EC2Actions.AssignPrivateIpAddresses,
 		EC2Actions.AssignPrivateNatGatewayAddress,
 		EC2Actions.AssociateAddress,
+		EC2Actions.AssociateApplicationStatusCheck,
 		EC2Actions.AssociateCapacityReservationBillingOwner,
 		EC2Actions.AssociateClientVpnTargetNetwork,
 		EC2Actions.AssociateDhcpOptions,
@@ -2102,6 +2144,7 @@ export class EC2Actions {
 		EC2Actions.CopyImage,
 		EC2Actions.CopySnapshot,
 		EC2Actions.CopyVolumes,
+		EC2Actions.CreateApplicationStatusCheck,
 		EC2Actions.CreateCapacityManagerDataExport,
 		EC2Actions.CreateCapacityReservation,
 		EC2Actions.CreateCapacityReservationBySplitting,
@@ -2184,6 +2227,7 @@ export class EC2Actions {
 		EC2Actions.CreateTransitGatewayMulticastDomain,
 		EC2Actions.CreateTransitGatewayPeeringAttachment,
 		EC2Actions.CreateTransitGatewayPolicyTable,
+		EC2Actions.CreateTransitGatewayPolicyTableEntry,
 		EC2Actions.CreateTransitGatewayPrefixListReference,
 		EC2Actions.CreateTransitGatewayRoute,
 		EC2Actions.CreateTransitGatewayRouteTable,
@@ -2205,6 +2249,7 @@ export class EC2Actions {
 		EC2Actions.CreateVpnConnection,
 		EC2Actions.CreateVpnConnectionRoute,
 		EC2Actions.CreateVpnGateway,
+		EC2Actions.DeleteApplicationStatusCheck,
 		EC2Actions.DeleteCapacityManagerDataExport,
 		EC2Actions.DeleteCarrierGateway,
 		EC2Actions.DeleteClientVpnEndpoint,
@@ -2275,6 +2320,7 @@ export class EC2Actions {
 		EC2Actions.DeleteTransitGatewayMulticastDomain,
 		EC2Actions.DeleteTransitGatewayPeeringAttachment,
 		EC2Actions.DeleteTransitGatewayPolicyTable,
+		EC2Actions.DeleteTransitGatewayPolicyTableEntry,
 		EC2Actions.DeleteTransitGatewayPrefixListReference,
 		EC2Actions.DeleteTransitGatewayRoute,
 		EC2Actions.DeleteTransitGatewayRouteTable,
@@ -2313,6 +2359,7 @@ export class EC2Actions {
 		EC2Actions.DetachVpnGateway,
 		EC2Actions.DisableAddressTransfer,
 		EC2Actions.DisableAllowedImagesSettings,
+		EC2Actions.DisableApplicationStatusCheckSuppression,
 		EC2Actions.DisableAwsNetworkPerformanceMetricSubscription,
 		EC2Actions.DisableCapacityManager,
 		EC2Actions.DisableEbsEncryptionByDefault,
@@ -2331,6 +2378,7 @@ export class EC2Actions {
 		EC2Actions.DisableVpcClassicLink,
 		EC2Actions.DisableVpcClassicLinkDnsSupport,
 		EC2Actions.DisassociateAddress,
+		EC2Actions.DisassociateApplicationStatusCheck,
 		EC2Actions.DisassociateCapacityReservationBillingOwner,
 		EC2Actions.DisassociateClientVpnTargetNetwork,
 		EC2Actions.DisassociateEnclaveCertificateIamRole,
@@ -2351,6 +2399,7 @@ export class EC2Actions {
 		EC2Actions.DisassociateVpcCidrBlock,
 		EC2Actions.EnableAddressTransfer,
 		EC2Actions.EnableAllowedImagesSettings,
+		EC2Actions.EnableApplicationStatusCheckSuppression,
 		EC2Actions.EnableAwsNetworkPerformanceMetricSubscription,
 		EC2Actions.EnableCapacityManager,
 		EC2Actions.EnableEbsEncryptionByDefault,
@@ -2383,6 +2432,7 @@ export class EC2Actions {
 		EC2Actions.InjectVolumeIOLatency,
 		EC2Actions.LockSnapshot,
 		EC2Actions.ModifyAddressAttribute,
+		EC2Actions.ModifyApplicationStatusCheck,
 		EC2Actions.ModifyAvailabilityZoneGroup,
 		EC2Actions.ModifyCapacityReservation,
 		EC2Actions.ModifyCapacityReservationFleet,
@@ -2434,6 +2484,7 @@ export class EC2Actions {
 		EC2Actions.ModifyTrafficMirrorSession,
 		EC2Actions.ModifyTransitGateway,
 		EC2Actions.ModifyTransitGatewayMeteringPolicy,
+		EC2Actions.ModifyTransitGatewayPolicyTableEntry,
 		EC2Actions.ModifyTransitGatewayPrefixListReference,
 		EC2Actions.ModifyTransitGatewayVpcAttachment,
 		EC2Actions.ModifyVerifiedAccessEndpoint,
@@ -2451,6 +2502,7 @@ export class EC2Actions {
 		EC2Actions.ModifyVpcEncryptionControl,
 		EC2Actions.ModifyVpcEndpoint,
 		EC2Actions.ModifyVpcEndpointConnectionNotification,
+		EC2Actions.ModifyVpcEndpointPayerResponsibility,
 		EC2Actions.ModifyVpcEndpointServiceConfiguration,
 		EC2Actions.ModifyVpcEndpointServicePayerResponsibility,
 		EC2Actions.ModifyVpcPeeringConnectionOptions,
@@ -2544,6 +2596,9 @@ export class EC2Actions {
 		EC2Actions.DescribeAddresses,
 		EC2Actions.DescribeAddressesAttribute,
 		EC2Actions.DescribeAggregateIdFormat,
+		EC2Actions.DescribeApplicationStatus,
+		EC2Actions.DescribeApplicationStatusCheckAssociations,
+		EC2Actions.DescribeApplicationStatusChecks,
 		EC2Actions.DescribeAvailabilityZones,
 		EC2Actions.DescribeAwsNetworkPerformanceMetricSubscriptions,
 		EC2Actions.DescribeBundleTasks,
@@ -2790,6 +2845,34 @@ export class EC2Actions {
 		EC2Actions.CreateTags,
 		EC2Actions.DeleteTags,
 	];
+}
+
+/**
+ * Properties for building a application-status-check ARN.
+ */
+export interface EC2ApplicationStatusCheckArnProps {
+	/** The ApplicationStatusCheckId component of the ARN. */
+	readonly applicationStatusCheckId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a application-status-check ARN.
+ */
+export interface EC2ApplicationStatusCheckArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApplicationStatusCheckId component. */
+	readonly applicationStatusCheckId: string;
 }
 
 /**
@@ -5888,6 +5971,8 @@ export interface EC2VPNGatewayArnComponents {
 	readonly vpnGatewayId: string;
 }
 
+const ApplicationStatusCheckArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):application-status-check\/(?<applicationStatusCheckId>[^:/?]+)$/;
 const CapacityBlockArnRegex =
 	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):capacity-block\/(?<capacityBlockId>[^:/?]+)$/;
 const CapacityManagerDataExportArnRegex =
@@ -6117,6 +6202,41 @@ const VPNGatewayArnRegex =
  * ARN builders, validators, and parsers for ec2 resources.
  */
 export class EC2Resources {
+	/**
+	 * Builds an ARN for the application-status-check resource.
+	 */
+	static applicationStatusCheck(
+		props: EC2ApplicationStatusCheckArnProps,
+	): string {
+		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:application-status-check/${props.applicationStatusCheckId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the application-status-check resource.
+	 */
+	static isValidApplicationStatusCheckArn(arn: string): boolean {
+		return ApplicationStatusCheckArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a application-status-check ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseApplicationStatusCheckArn(
+		arn: string,
+	): EC2ApplicationStatusCheckArnComponents {
+		const match = ApplicationStatusCheckArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid application-status-check ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			applicationStatusCheckId: match.groups!.applicationStatusCheckId,
+		};
+	}
+
 	/**
 	 * Builds an ARN for the capacity-block resource.
 	 */
@@ -9894,7 +10014,9 @@ export class EC2Operations {
 	/** IAM actions required for the AssociateAddress API call. */
 	static readonly AssociateAddress: string[] = ["ec2:AssociateAddress"];
 	/** IAM actions required for the AssociateApplicationStatusCheck API call. */
-	static readonly AssociateApplicationStatusCheck: string[] = [];
+	static readonly AssociateApplicationStatusCheck: string[] = [
+		"ec2:AssociateApplicationStatusCheck",
+	];
 	/** IAM actions required for the AssociateCapacityReservationBillingOwner API call. */
 	static readonly AssociateCapacityReservationBillingOwner: string[] = [
 		"ec2:AssociateCapacityReservationBillingOwner",
@@ -10051,7 +10173,10 @@ export class EC2Operations {
 	/** IAM actions required for the CopyVolumes API call. */
 	static readonly CopyVolumes: string[] = ["ec2:CopyVolumes", "ec2:CreateTags"];
 	/** IAM actions required for the CreateApplicationStatusCheck API call. */
-	static readonly CreateApplicationStatusCheck: string[] = ["ec2:CreateTags"];
+	static readonly CreateApplicationStatusCheck: string[] = [
+		"ec2:CreateApplicationStatusCheck",
+		"ec2:CreateTags",
+	];
 	/** IAM actions required for the CreateCapacityManagerDataExport API call. */
 	static readonly CreateCapacityManagerDataExport: string[] = [
 		"ec2:CreateCapacityManagerDataExport",
@@ -10447,7 +10572,9 @@ export class EC2Operations {
 		"ec2:CreateTransitGatewayPolicyTable",
 	];
 	/** IAM actions required for the CreateTransitGatewayPolicyTableEntry API call. */
-	static readonly CreateTransitGatewayPolicyTableEntry: string[] = [];
+	static readonly CreateTransitGatewayPolicyTableEntry: string[] = [
+		"ec2:CreateTransitGatewayPolicyTableEntry",
+	];
 	/** IAM actions required for the CreateTransitGatewayPrefixListReference API call. */
 	static readonly CreateTransitGatewayPrefixListReference: string[] = [
 		"ec2:CreateTransitGatewayPrefixListReference",
@@ -10547,7 +10674,9 @@ export class EC2Operations {
 		"ec2:CreateVpnGateway",
 	];
 	/** IAM actions required for the DeleteApplicationStatusCheck API call. */
-	static readonly DeleteApplicationStatusCheck: string[] = [];
+	static readonly DeleteApplicationStatusCheck: string[] = [
+		"ec2:DeleteApplicationStatusCheck",
+	];
 	/** IAM actions required for the DeleteCapacityManagerDataExport API call. */
 	static readonly DeleteCapacityManagerDataExport: string[] = [
 		"ec2:DeleteCapacityManagerDataExport",
@@ -10788,7 +10917,9 @@ export class EC2Operations {
 		"ec2:DeleteTransitGatewayPolicyTable",
 	];
 	/** IAM actions required for the DeleteTransitGatewayPolicyTableEntry API call. */
-	static readonly DeleteTransitGatewayPolicyTableEntry: string[] = [];
+	static readonly DeleteTransitGatewayPolicyTableEntry: string[] = [
+		"ec2:DeleteTransitGatewayPolicyTableEntry",
+	];
 	/** IAM actions required for the DeleteTransitGatewayPrefixListReference API call. */
 	static readonly DeleteTransitGatewayPrefixListReference: string[] = [
 		"ec2:DeleteTransitGatewayPrefixListReference",
@@ -10912,11 +11043,17 @@ export class EC2Operations {
 		"ec2:DescribeAggregateIdFormat",
 	];
 	/** IAM actions required for the DescribeApplicationStatus API call. */
-	static readonly DescribeApplicationStatus: string[] = [];
+	static readonly DescribeApplicationStatus: string[] = [
+		"ec2:DescribeApplicationStatus",
+	];
 	/** IAM actions required for the DescribeApplicationStatusCheckAssociations API call. */
-	static readonly DescribeApplicationStatusCheckAssociations: string[] = [];
+	static readonly DescribeApplicationStatusCheckAssociations: string[] = [
+		"ec2:DescribeApplicationStatusCheckAssociations",
+	];
 	/** IAM actions required for the DescribeApplicationStatusChecks API call. */
-	static readonly DescribeApplicationStatusChecks: string[] = [];
+	static readonly DescribeApplicationStatusChecks: string[] = [
+		"ec2:DescribeApplicationStatusChecks",
+	];
 	/** IAM actions required for the DescribeAvailabilityZones API call. */
 	static readonly DescribeAvailabilityZones: string[] = [
 		"ec2:DescribeAvailabilityZones",
@@ -11596,7 +11733,9 @@ export class EC2Operations {
 		"ec2:DisableAllowedImagesSettings",
 	];
 	/** IAM actions required for the DisableApplicationStatusCheckSuppression API call. */
-	static readonly DisableApplicationStatusCheckSuppression: string[] = [];
+	static readonly DisableApplicationStatusCheckSuppression: string[] = [
+		"ec2:DisableApplicationStatusCheckSuppression",
+	];
 	/** IAM actions required for the DisableAwsNetworkPerformanceMetricSubscription API call. */
 	static readonly DisableAwsNetworkPerformanceMetricSubscription: string[] = [
 		"ec2:DisableAwsNetworkPerformanceMetricSubscription",
@@ -11670,7 +11809,9 @@ export class EC2Operations {
 	/** IAM actions required for the DisassociateAddress API call. */
 	static readonly DisassociateAddress: string[] = ["ec2:DisassociateAddress"];
 	/** IAM actions required for the DisassociateApplicationStatusCheck API call. */
-	static readonly DisassociateApplicationStatusCheck: string[] = [];
+	static readonly DisassociateApplicationStatusCheck: string[] = [
+		"ec2:DisassociateApplicationStatusCheck",
+	];
 	/** IAM actions required for the DisassociateCapacityReservationBillingOwner API call. */
 	static readonly DisassociateCapacityReservationBillingOwner: string[] = [
 		"ec2:DisassociateCapacityReservationBillingOwner",
@@ -11748,7 +11889,9 @@ export class EC2Operations {
 		"ec2:EnableAllowedImagesSettings",
 	];
 	/** IAM actions required for the EnableApplicationStatusCheckSuppression API call. */
-	static readonly EnableApplicationStatusCheckSuppression: string[] = [];
+	static readonly EnableApplicationStatusCheckSuppression: string[] = [
+		"ec2:EnableApplicationStatusCheckSuppression",
+	];
 	/** IAM actions required for the EnableAwsNetworkPerformanceMetricSubscription API call. */
 	static readonly EnableAwsNetworkPerformanceMetricSubscription: string[] = [
 		"ec2:EnableAwsNetworkPerformanceMetricSubscription",
@@ -12164,7 +12307,9 @@ export class EC2Operations {
 		"ec2:ModifyAddressAttribute",
 	];
 	/** IAM actions required for the ModifyApplicationStatusCheck API call. */
-	static readonly ModifyApplicationStatusCheck: string[] = [];
+	static readonly ModifyApplicationStatusCheck: string[] = [
+		"ec2:ModifyApplicationStatusCheck",
+	];
 	/** IAM actions required for the ModifyAvailabilityZoneGroup API call. */
 	static readonly ModifyAvailabilityZoneGroup: string[] = [
 		"ec2:ModifyAvailabilityZoneGroup",
@@ -12354,7 +12499,9 @@ export class EC2Operations {
 		"ec2:ModifyTransitGatewayMeteringPolicy",
 	];
 	/** IAM actions required for the ModifyTransitGatewayPolicyTableEntry API call. */
-	static readonly ModifyTransitGatewayPolicyTableEntry: string[] = [];
+	static readonly ModifyTransitGatewayPolicyTableEntry: string[] = [
+		"ec2:ModifyTransitGatewayPolicyTableEntry",
+	];
 	/** IAM actions required for the ModifyTransitGatewayPrefixListReference API call. */
 	static readonly ModifyTransitGatewayPrefixListReference: string[] = [
 		"ec2:ModifyTransitGatewayPrefixListReference",
@@ -12418,7 +12565,9 @@ export class EC2Operations {
 		"ec2:ModifyVpcEndpointConnectionNotification",
 	];
 	/** IAM actions required for the ModifyVpcEndpointPayerResponsibility API call. */
-	static readonly ModifyVpcEndpointPayerResponsibility: string[] = [];
+	static readonly ModifyVpcEndpointPayerResponsibility: string[] = [
+		"ec2:ModifyVpcEndpointPayerResponsibility",
+	];
 	/** IAM actions required for the ModifyVpcEndpointServiceConfiguration API call. */
 	static readonly ModifyVpcEndpointServiceConfiguration: string[] = [
 		"ec2:ModifyVpcEndpointServiceConfiguration",
@@ -12802,6 +12951,10 @@ export class EC2Conditions {
 	];
 	/** Condition keys applicable to the AssociateAddress action. */
 	static readonly AssociateAddressConditionKeys: string[] = ["ec2:Region"];
+	/** Condition keys applicable to the AssociateApplicationStatusCheck action. */
+	static readonly AssociateApplicationStatusCheckConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the AssociateCapacityReservationBillingOwner action. */
 	static readonly AssociateCapacityReservationBillingOwnerConditionKeys: string[] =
 		["ec2:Region"];
@@ -12953,6 +13106,10 @@ export class EC2Conditions {
 	static readonly CopySnapshotConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CopyVolumes action. */
 	static readonly CopyVolumesConditionKeys: string[] = ["ec2:Region"];
+	/** Condition keys applicable to the CreateApplicationStatusCheck action. */
+	static readonly CreateApplicationStatusCheckConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the CreateCapacityManagerDataExport action. */
 	static readonly CreateCapacityManagerDataExportConditionKeys: string[] = [
 		"ec2:Region",
@@ -13220,6 +13377,9 @@ export class EC2Conditions {
 	static readonly CreateTransitGatewayPolicyTableConditionKeys: string[] = [
 		"ec2:Region",
 	];
+	/** Condition keys applicable to the CreateTransitGatewayPolicyTableEntry action. */
+	static readonly CreateTransitGatewayPolicyTableEntryConditionKeys: string[] =
+		["ec2:Region"];
 	/** Condition keys applicable to the CreateTransitGatewayPrefixListReference action. */
 	static readonly CreateTransitGatewayPrefixListReferenceConditionKeys: string[] =
 		["ec2:Region"];
@@ -13288,6 +13448,10 @@ export class EC2Conditions {
 	];
 	/** Condition keys applicable to the CreateVpnGateway action. */
 	static readonly CreateVpnGatewayConditionKeys: string[] = ["ec2:Region"];
+	/** Condition keys applicable to the DeleteApplicationStatusCheck action. */
+	static readonly DeleteApplicationStatusCheckConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DeleteCapacityManagerDataExport action. */
 	static readonly DeleteCapacityManagerDataExportConditionKeys: string[] = [
 		"ec2:Region",
@@ -13522,6 +13686,9 @@ export class EC2Conditions {
 	static readonly DeleteTransitGatewayPolicyTableConditionKeys: string[] = [
 		"ec2:Region",
 	];
+	/** Condition keys applicable to the DeleteTransitGatewayPolicyTableEntry action. */
+	static readonly DeleteTransitGatewayPolicyTableEntryConditionKeys: string[] =
+		["ec2:Region"];
 	/** Condition keys applicable to the DeleteTransitGatewayPrefixListReference action. */
 	static readonly DeleteTransitGatewayPrefixListReferenceConditionKeys: string[] =
 		["ec2:Region"];
@@ -13629,6 +13796,17 @@ export class EC2Conditions {
 	];
 	/** Condition keys applicable to the DescribeAggregateIdFormat action. */
 	static readonly DescribeAggregateIdFormatConditionKeys: string[] = [
+		"ec2:Region",
+	];
+	/** Condition keys applicable to the DescribeApplicationStatus action. */
+	static readonly DescribeApplicationStatusConditionKeys: string[] = [
+		"ec2:Region",
+	];
+	/** Condition keys applicable to the DescribeApplicationStatusCheckAssociations action. */
+	static readonly DescribeApplicationStatusCheckAssociationsConditionKeys: string[] =
+		["ec2:Region"];
+	/** Condition keys applicable to the DescribeApplicationStatusChecks action. */
+	static readonly DescribeApplicationStatusChecksConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeAvailabilityZones action. */
@@ -14288,6 +14466,9 @@ export class EC2Conditions {
 	static readonly DisableAllowedImagesSettingsConditionKeys: string[] = [
 		"ec2:Region",
 	];
+	/** Condition keys applicable to the DisableApplicationStatusCheckSuppression action. */
+	static readonly DisableApplicationStatusCheckSuppressionConditionKeys: string[] =
+		["ec2:Region"];
 	/** Condition keys applicable to the DisableAwsNetworkPerformanceMetricSubscription action. */
 	static readonly DisableAwsNetworkPerformanceMetricSubscriptionConditionKeys: string[] =
 		["ec2:Region"];
@@ -14354,6 +14535,10 @@ export class EC2Conditions {
 	];
 	/** Condition keys applicable to the DisassociateAddress action. */
 	static readonly DisassociateAddressConditionKeys: string[] = ["ec2:Region"];
+	/** Condition keys applicable to the DisassociateApplicationStatusCheck action. */
+	static readonly DisassociateApplicationStatusCheckConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DisassociateCapacityReservationBillingOwner action. */
 	static readonly DisassociateCapacityReservationBillingOwnerConditionKeys: string[] =
 		["ec2:Region"];
@@ -14426,6 +14611,9 @@ export class EC2Conditions {
 	static readonly EnableAllowedImagesSettingsConditionKeys: string[] = [
 		"ec2:Region",
 	];
+	/** Condition keys applicable to the EnableApplicationStatusCheckSuppression action. */
+	static readonly EnableApplicationStatusCheckSuppressionConditionKeys: string[] =
+		["ec2:Region"];
 	/** Condition keys applicable to the EnableAwsNetworkPerformanceMetricSubscription action. */
 	static readonly EnableAwsNetworkPerformanceMetricSubscriptionConditionKeys: string[] =
 		["ec2:Region"];
@@ -14804,6 +14992,10 @@ export class EC2Conditions {
 	static readonly ModifyAddressAttributeConditionKeys: string[] = [
 		"ec2:Region",
 	];
+	/** Condition keys applicable to the ModifyApplicationStatusCheck action. */
+	static readonly ModifyApplicationStatusCheckConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the ModifyAvailabilityZoneGroup action. */
 	static readonly ModifyAvailabilityZoneGroupConditionKeys: string[] = [
 		"ec2:Region",
@@ -14990,6 +15182,9 @@ export class EC2Conditions {
 	static readonly ModifyTransitGatewayMeteringPolicyConditionKeys: string[] = [
 		"ec2:Region",
 	];
+	/** Condition keys applicable to the ModifyTransitGatewayPolicyTableEntry action. */
+	static readonly ModifyTransitGatewayPolicyTableEntryConditionKeys: string[] =
+		["ec2:Region"];
 	/** Condition keys applicable to the ModifyTransitGatewayPrefixListReference action. */
 	static readonly ModifyTransitGatewayPrefixListReferenceConditionKeys: string[] =
 		["ec2:Region"];
@@ -15046,6 +15241,9 @@ export class EC2Conditions {
 	static readonly ModifyVpcEndpointConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the ModifyVpcEndpointConnectionNotification action. */
 	static readonly ModifyVpcEndpointConnectionNotificationConditionKeys: string[] =
+		["ec2:Region"];
+	/** Condition keys applicable to the ModifyVpcEndpointPayerResponsibility action. */
+	static readonly ModifyVpcEndpointPayerResponsibilityConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the ModifyVpcEndpointServiceConfiguration action. */
 	static readonly ModifyVpcEndpointServiceConfigurationConditionKeys: string[] =

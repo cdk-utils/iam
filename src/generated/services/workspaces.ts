@@ -174,6 +174,8 @@ export class WorkSpacesActions {
 		"workspaces:ImportCustomWorkspaceImage";
 	/** [Write] workspaces:ImportWorkspaceImage */
 	static readonly ImportWorkspaceImage = "workspaces:ImportWorkspaceImage";
+	/** [Write] workspaces:InvokeOnboardingAgent */
+	static readonly InvokeOnboardingAgent = "workspaces:InvokeOnboardingAgent";
 	/** [Read] workspaces:InvokeTroubleshootingInvestigation */
 	static readonly InvokeTroubleshootingInvestigation =
 		"workspaces:InvokeTroubleshootingInvestigation";
@@ -216,6 +218,8 @@ export class WorkSpacesActions {
 		"workspaces:ModifyWorkspaceProperties";
 	/** [Write] workspaces:ModifyWorkspaceState */
 	static readonly ModifyWorkspaceState = "workspaces:ModifyWorkspaceState";
+	/** [Write] workspaces:Personalization */
+	static readonly Personalization = "workspaces:Personalization";
 	/** [Write] workspaces:RebootWorkspaces */
 	static readonly RebootWorkspaces = "workspaces:RebootWorkspaces";
 	/** [Write] workspaces:RebuildWorkspaces */
@@ -323,6 +327,7 @@ export class WorkSpacesActions {
 		WorkSpacesActions.ImportClientBranding,
 		WorkSpacesActions.ImportCustomWorkspaceImage,
 		WorkSpacesActions.ImportWorkspaceImage,
+		WorkSpacesActions.InvokeOnboardingAgent,
 		WorkSpacesActions.MigrateWorkspace,
 		WorkSpacesActions.ModifyAccount,
 		WorkSpacesActions.ModifyCertificateBasedAuthProperties,
@@ -334,6 +339,7 @@ export class WorkSpacesActions {
 		WorkSpacesActions.ModifyWorkspaceCreationProperties,
 		WorkSpacesActions.ModifyWorkspaceProperties,
 		WorkSpacesActions.ModifyWorkspaceState,
+		WorkSpacesActions.Personalization,
 		WorkSpacesActions.RebootWorkspaces,
 		WorkSpacesActions.RebuildWorkspaces,
 		WorkSpacesActions.RegisterWorkspaceDirectory,

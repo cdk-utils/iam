@@ -628,6 +628,54 @@
       }
     },
     {
+      "Name": "AssociateApplicationStatusCheck",
+      "ActionConditionKeys": [
+        "ec2:Region"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application-status-check",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ec2:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "instance",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ec2:AvailabilityZone",
+            "ec2:AvailabilityZoneId",
+            "ec2:EbsOptimized",
+            "ec2:InstanceAutoRecovery",
+            "ec2:InstanceBandwidthWeighting",
+            "ec2:InstanceMarketType",
+            "ec2:InstanceMetadataTags",
+            "ec2:InstanceProfile",
+            "ec2:InstanceType",
+            "ec2:MetadataHttpEndpoint",
+            "ec2:MetadataHttpPutResponseHopLimit",
+            "ec2:MetadataHttpTokens",
+            "ec2:ResourceTag/${TagKey}",
+            "ec2:RootDeviceType",
+            "ec2:Tenancy"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "AssociateCapacityReservationBillingOwner",
       "ActionConditionKeys": [
         "ec2:Region"
@@ -969,8 +1017,6 @@
           "Name": "vpc",
           "ConditionKeys": [
             "aws:ResourceTag/${TagKey}",
-            "ec2:Ipv4IpamPoolId",
-            "ec2:Ipv6IpamPoolId",
             "ec2:ResourceTag/${TagKey}",
             "ec2:Tenancy",
             "ec2:VpcID"
@@ -1071,8 +1117,6 @@
           "Name": "vpc",
           "ConditionKeys": [
             "aws:ResourceTag/${TagKey}",
-            "ec2:Ipv4IpamPoolId",
-            "ec2:Ipv6IpamPoolId",
             "ec2:ResourceTag/${TagKey}",
             "ec2:Tenancy",
             "ec2:VpcID"
@@ -2284,6 +2328,51 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateApplicationStatusCheck",
+      "ActionConditionKeys": [
+        "ec2:Region"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application-status-check",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        },
+        {
+          "Name": "security-group",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ec2:ResourceTag/${TagKey}",
+            "ec2:Vpc"
+          ]
+        },
+        {
+          "Name": "subnet",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ec2:AvailabilityZone",
+            "ec2:AvailabilityZoneId",
+            "ec2:ResourceTag/${TagKey}",
+            "ec2:Vpc"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -4112,8 +4201,6 @@
           "Name": "vpc",
           "ConditionKeys": [
             "aws:ResourceTag/${TagKey}",
-            "ec2:Ipv4IpamPoolId",
-            "ec2:Ipv6IpamPoolId",
             "ec2:ResourceTag/${TagKey}",
             "ec2:Tenancy",
             "ec2:VpcID"
@@ -5160,6 +5247,15 @@
         }
       },
       "Resources": [
+        {
+          "Name": "application-status-check",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:ResourceTag/${TagKey}",
+            "aws:TagKeys",
+            "ec2:ResourceTag/${TagKey}"
+          ]
+        },
         {
           "Name": "capacity-block",
           "ConditionKeys": [
@@ -6667,6 +6763,42 @@
       }
     },
     {
+      "Name": "CreateTransitGatewayPolicyTableEntry",
+      "ActionConditionKeys": [
+        "ec2:Region"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "transit-gateway-policy-table",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ec2:ResourceTag/${TagKey}",
+            "ec2:transitGatewayPolicyTableId"
+          ]
+        },
+        {
+          "Name": "transit-gateway-route-table",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ec2:ResourceTag/${TagKey}",
+            "ec2:transitGatewayRouteTableId"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "CreateTransitGatewayPrefixListReference",
       "ActionConditionKeys": [
         "ec2:Region"
@@ -7158,8 +7290,6 @@
           "Name": "vpc",
           "ConditionKeys": [
             "aws:ResourceTag/${TagKey}",
-            "ec2:Ipv4IpamPoolId",
-            "ec2:Ipv6IpamPoolId",
             "ec2:ResourceTag/${TagKey}",
             "ec2:Tenancy",
             "ec2:VpcID"
@@ -7553,6 +7683,33 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteApplicationStatusCheck",
+      "ActionConditionKeys": [
+        "ec2:Region"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application-status-check",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ec2:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -9323,6 +9480,15 @@
       },
       "Resources": [
         {
+          "Name": "application-status-check",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:ResourceTag/${TagKey}",
+            "aws:TagKeys",
+            "ec2:ResourceTag/${TagKey}"
+          ]
+        },
+        {
           "Name": "capacity-block",
           "ConditionKeys": [
             "aws:RequestTag/${TagKey}",
@@ -10632,6 +10798,34 @@
       }
     },
     {
+      "Name": "DeleteTransitGatewayPolicyTableEntry",
+      "ActionConditionKeys": [
+        "ec2:Region"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "transit-gateway-policy-table",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ec2:ResourceTag/${TagKey}",
+            "ec2:transitGatewayPolicyTableId"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "DeleteTransitGatewayPrefixListReference",
       "ActionConditionKeys": [
         "ec2:Region"
@@ -11558,6 +11752,60 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeApplicationStatus",
+      "ActionConditionKeys": [
+        "ec2:Region"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeApplicationStatusCheckAssociations",
+      "ActionConditionKeys": [
+        "ec2:Region"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeApplicationStatusChecks",
+      "ActionConditionKeys": [
+        "ec2:Region"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -15527,6 +15775,47 @@
       }
     },
     {
+      "Name": "DisableApplicationStatusCheckSuppression",
+      "ActionConditionKeys": [
+        "ec2:Region"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ec2:AvailabilityZone",
+            "ec2:AvailabilityZoneId",
+            "ec2:EbsOptimized",
+            "ec2:InstanceAutoRecovery",
+            "ec2:InstanceBandwidthWeighting",
+            "ec2:InstanceMarketType",
+            "ec2:InstanceMetadataTags",
+            "ec2:InstanceProfile",
+            "ec2:InstanceType",
+            "ec2:MetadataHttpEndpoint",
+            "ec2:MetadataHttpPutResponseHopLimit",
+            "ec2:MetadataHttpTokens",
+            "ec2:ResourceTag/${TagKey}",
+            "ec2:RootDeviceType",
+            "ec2:Tenancy"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "DisableAwsNetworkPerformanceMetricSubscription",
       "ActionConditionKeys": [
         "ec2:Region"
@@ -16100,6 +16389,54 @@
       }
     },
     {
+      "Name": "DisassociateApplicationStatusCheck",
+      "ActionConditionKeys": [
+        "ec2:Region"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application-status-check",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ec2:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "instance",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ec2:AvailabilityZone",
+            "ec2:AvailabilityZoneId",
+            "ec2:EbsOptimized",
+            "ec2:InstanceAutoRecovery",
+            "ec2:InstanceBandwidthWeighting",
+            "ec2:InstanceMarketType",
+            "ec2:InstanceMetadataTags",
+            "ec2:InstanceProfile",
+            "ec2:InstanceType",
+            "ec2:MetadataHttpEndpoint",
+            "ec2:MetadataHttpPutResponseHopLimit",
+            "ec2:MetadataHttpTokens",
+            "ec2:ResourceTag/${TagKey}",
+            "ec2:RootDeviceType",
+            "ec2:Tenancy"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "DisassociateCapacityReservationBillingOwner",
       "ActionConditionKeys": [
         "ec2:Region"
@@ -16394,8 +16731,6 @@
           "Name": "vpc",
           "ConditionKeys": [
             "aws:ResourceTag/${TagKey}",
-            "ec2:Ipv4IpamPoolId",
-            "ec2:Ipv6IpamPoolId",
             "ec2:ResourceTag/${TagKey}",
             "ec2:Tenancy",
             "ec2:VpcID"
@@ -16503,8 +16838,6 @@
           "Name": "vpc",
           "ConditionKeys": [
             "aws:ResourceTag/${TagKey}",
-            "ec2:Ipv4IpamPoolId",
-            "ec2:Ipv6IpamPoolId",
             "ec2:ResourceTag/${TagKey}",
             "ec2:Tenancy",
             "ec2:VpcID"
@@ -16786,6 +17119,47 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "EnableApplicationStatusCheckSuppression",
+      "ActionConditionKeys": [
+        "ec2:Region"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ec2:AvailabilityZone",
+            "ec2:AvailabilityZoneId",
+            "ec2:EbsOptimized",
+            "ec2:InstanceAutoRecovery",
+            "ec2:InstanceBandwidthWeighting",
+            "ec2:InstanceMarketType",
+            "ec2:InstanceMetadataTags",
+            "ec2:InstanceProfile",
+            "ec2:InstanceType",
+            "ec2:MetadataHttpEndpoint",
+            "ec2:MetadataHttpPutResponseHopLimit",
+            "ec2:MetadataHttpTokens",
+            "ec2:ResourceTag/${TagKey}",
+            "ec2:RootDeviceType",
+            "ec2:Tenancy"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -19882,6 +20256,53 @@
       }
     },
     {
+      "Name": "ModifyApplicationStatusCheck",
+      "ActionConditionKeys": [
+        "ec2:Region"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application-status-check",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ec2:Attribute",
+            "ec2:Attribute/${AttributeName}",
+            "ec2:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "security-group",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ec2:ResourceTag/${TagKey}",
+            "ec2:Vpc"
+          ]
+        },
+        {
+          "Name": "subnet",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ec2:AvailabilityZone",
+            "ec2:AvailabilityZoneId",
+            "ec2:ResourceTag/${TagKey}",
+            "ec2:Vpc"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ModifyAvailabilityZoneGroup",
       "ActionConditionKeys": [
         "ec2:Region"
@@ -21849,6 +22270,42 @@
       }
     },
     {
+      "Name": "ModifyTransitGatewayPolicyTableEntry",
+      "ActionConditionKeys": [
+        "ec2:Region"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "transit-gateway-policy-table",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ec2:ResourceTag/${TagKey}",
+            "ec2:transitGatewayPolicyTableId"
+          ]
+        },
+        {
+          "Name": "transit-gateway-route-table",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ec2:ResourceTag/${TagKey}",
+            "ec2:transitGatewayRouteTableId"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ModifyTransitGatewayPrefixListReference",
       "ActionConditionKeys": [
         "ec2:Region"
@@ -22441,6 +22898,35 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ModifyVpcEndpointPayerResponsibility",
+      "ActionConditionKeys": [
+        "ec2:Region"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vpc-endpoint-service",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ec2:ResourceTag/${TagKey}",
+            "ec2:VpceMultiRegion",
+            "ec2:VpceSupportedRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -25174,6 +25660,9 @@
       },
       "Resources": [
         {
+          "Name": "group"
+        },
+        {
           "Name": "instance",
           "ConditionKeys": [
             "aws:ResourceTag/${TagKey}",
@@ -26945,6 +27434,12 @@
     },
     {
       "Name": "AssociateApplicationStatusCheck",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateApplicationStatusCheck",
+          "Service": "ec2"
+        }
+      ],
       "SDK": [
         {
           "Name": "ec2",
@@ -27719,6 +28214,10 @@
     {
       "Name": "CreateApplicationStatusCheck",
       "AuthorizedActions": [
+        {
+          "Name": "CreateApplicationStatusCheck",
+          "Service": "ec2"
+        },
         {
           "Name": "CreateTags",
           "Service": "ec2"
@@ -29411,6 +29910,12 @@
     },
     {
       "Name": "CreateTransitGatewayPolicyTableEntry",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateTransitGatewayPolicyTableEntry",
+          "Service": "ec2"
+        }
+      ],
       "SDK": [
         {
           "Name": "ec2",
@@ -29825,6 +30330,12 @@
     },
     {
       "Name": "DeleteApplicationStatusCheck",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteApplicationStatusCheck",
+          "Service": "ec2"
+        }
+      ],
       "SDK": [
         {
           "Name": "ec2",
@@ -31007,6 +31518,12 @@
     },
     {
       "Name": "DeleteTransitGatewayPolicyTableEntry",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteTransitGatewayPolicyTableEntry",
+          "Service": "ec2"
+        }
+      ],
       "SDK": [
         {
           "Name": "ec2",
@@ -31571,6 +32088,12 @@
     },
     {
       "Name": "DescribeApplicationStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeApplicationStatus",
+          "Service": "ec2"
+        }
+      ],
       "SDK": [
         {
           "Name": "ec2",
@@ -31581,6 +32104,12 @@
     },
     {
       "Name": "DescribeApplicationStatusCheckAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeApplicationStatusCheckAssociations",
+          "Service": "ec2"
+        }
+      ],
       "SDK": [
         {
           "Name": "ec2",
@@ -31591,6 +32120,12 @@
     },
     {
       "Name": "DescribeApplicationStatusChecks",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeApplicationStatusChecks",
+          "Service": "ec2"
+        }
+      ],
       "SDK": [
         {
           "Name": "ec2",
@@ -34655,6 +35190,12 @@
     },
     {
       "Name": "DisableApplicationStatusCheckSuppression",
+      "AuthorizedActions": [
+        {
+          "Name": "DisableApplicationStatusCheckSuppression",
+          "Service": "ec2"
+        }
+      ],
       "SDK": [
         {
           "Name": "ec2",
@@ -34985,6 +35526,12 @@
     },
     {
       "Name": "DisassociateApplicationStatusCheck",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateApplicationStatusCheck",
+          "Service": "ec2"
+        }
+      ],
       "SDK": [
         {
           "Name": "ec2",
@@ -35299,6 +35846,12 @@
     },
     {
       "Name": "EnableApplicationStatusCheckSuppression",
+      "AuthorizedActions": [
+        {
+          "Name": "EnableApplicationStatusCheckSuppression",
+          "Service": "ec2"
+        }
+      ],
       "SDK": [
         {
           "Name": "ec2",
@@ -37127,6 +37680,12 @@
     },
     {
       "Name": "ModifyApplicationStatusCheck",
+      "AuthorizedActions": [
+        {
+          "Name": "ModifyApplicationStatusCheck",
+          "Service": "ec2"
+        }
+      ],
       "SDK": [
         {
           "Name": "ec2",
@@ -37979,6 +38538,12 @@
     },
     {
       "Name": "ModifyTransitGatewayPolicyTableEntry",
+      "AuthorizedActions": [
+        {
+          "Name": "ModifyTransitGatewayPolicyTableEntry",
+          "Service": "ec2"
+        }
+      ],
       "SDK": [
         {
           "Name": "ec2",
@@ -38261,6 +38826,12 @@
     },
     {
       "Name": "ModifyVpcEndpointPayerResponsibility",
+      "AuthorizedActions": [
+        {
+          "Name": "ModifyVpcEndpointPayerResponsibility",
+          "Service": "ec2"
+        }
+      ],
       "SDK": [
         {
           "Name": "ec2",
@@ -39755,6 +40326,21 @@
     }
   ],
   "Resources": [
+    {
+      "Name": "application-status-check",
+      "ARNFormats": [
+        "arn:${Partition}:ec2:${Region}:${Account}:application-status-check/${ApplicationStatusCheckId}"
+      ],
+      "ConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "ec2:Attribute",
+        "ec2:Attribute/${AttributeName}",
+        "ec2:Region",
+        "ec2:ResourceTag/${TagKey}"
+      ]
+    },
     {
       "Name": "capacity-block",
       "ARNFormats": [

@@ -2561,7 +2561,9 @@
       "Name": "RegisterManagedInstance",
       "ActionConditionKeys": [
         "aws:RequestTag/${TagKey}",
-        "aws:TagKeys"
+        "aws:TagKeys",
+        "ssm:NodeAccountId",
+        "ssm:NodeOrgId"
       ],
       "Annotations": {
         "Properties": {
@@ -2690,6 +2692,33 @@
       ],
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RequestManagedInstanceRoleToken",
+      "ActionConditionKeys": [
+        "ssm:NodeAccountId",
+        "ssm:NodeOrgId"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance"
+        },
+        {
+          "Name": "managed-instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
       }
     },
@@ -3308,6 +3337,33 @@
       }
     },
     {
+      "Name": "UpdateManagedInstancePublicKey",
+      "ActionConditionKeys": [
+        "ssm:NodeAccountId",
+        "ssm:NodeOrgId"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance"
+        },
+        {
+          "Name": "managed-instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "UpdateManagedInstanceRole",
       "ActionConditionKeys": [
         "ssm:resourceTag/tag-key"
@@ -3519,6 +3575,18 @@
       "Name": "ssm:InventoryTypeName",
       "Types": [
         "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "ssm:NodeAccountId",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "ssm:NodeOrgId",
+      "Types": [
+        "String"
       ]
     },
     {

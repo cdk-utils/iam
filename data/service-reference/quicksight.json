@@ -7509,6 +7509,10 @@
         {
           "Name": "CreateSpace",
           "Service": "quicksight"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "quicksight"
         }
       ],
       "SDK": [

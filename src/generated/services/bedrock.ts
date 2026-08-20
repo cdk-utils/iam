@@ -81,6 +81,8 @@ export class BedrockActions {
 		"bedrock:CreateDataAutomationProject";
 	/** [Write] bedrock:CreateDataSource */
 	static readonly CreateDataSource = "bedrock:CreateDataSource";
+	/** [Write] bedrock:CreateDataSourceToken */
+	static readonly CreateDataSourceToken = "bedrock:CreateDataSourceToken";
 	/** [Write] bedrock:CreateEvaluationJob */
 	static readonly CreateEvaluationJob = "bedrock:CreateEvaluationJob";
 	/** [Write] bedrock:CreateFlow */
@@ -297,6 +299,9 @@ export class BedrockActions {
 		"bedrock:GetDataAutomationStatus";
 	/** [Read] bedrock:GetDataSource */
 	static readonly actionGetDataSource = "bedrock:GetDataSource";
+	/** [Read] bedrock:GetDataSourceAuthorizationUrl */
+	static readonly actionGetDataSourceAuthorizationUrl =
+		"bedrock:GetDataSourceAuthorizationUrl";
 	/** [Read] bedrock:GetDocumentContent */
 	static readonly actionGetDocumentContent = "bedrock:GetDocumentContent";
 	/** [Read] bedrock:GetEvaluationJob */
@@ -670,6 +675,7 @@ export class BedrockActions {
 		BedrockActions.actionGetDataAutomationProject,
 		BedrockActions.actionGetDataAutomationStatus,
 		BedrockActions.actionGetDataSource,
+		BedrockActions.actionGetDataSourceAuthorizationUrl,
 		BedrockActions.actionGetDocumentContent,
 		BedrockActions.actionGetEvaluationJob,
 		BedrockActions.actionGetExecutionFlowSnapshot,
@@ -740,6 +746,7 @@ export class BedrockActions {
 		BedrockActions.CreateDataAutomationLibrary,
 		BedrockActions.CreateDataAutomationProject,
 		BedrockActions.CreateDataSource,
+		BedrockActions.CreateDataSourceToken,
 		BedrockActions.CreateEvaluationJob,
 		BedrockActions.CreateFlow,
 		BedrockActions.CreateFlowAlias,
