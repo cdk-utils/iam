@@ -4417,7 +4417,10 @@ export class ConnectOperations {
 		"connect:TagResource",
 	];
 	/** IAM actions required for the CreateRule API call. */
-	static readonly CreateRule: string[] = ["connect:CreateRule"];
+	static readonly CreateRule: string[] = [
+		"connect:CreateRule",
+		"connect:TagResource",
+	];
 	/** IAM actions required for the CreateSecurityProfile API call. */
 	static readonly CreateSecurityProfile: string[] = [
 		"connect:CreateSecurityProfile",

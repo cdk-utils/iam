@@ -1239,6 +1239,7 @@ export class ProfileOperations {
 	/** IAM actions required for the CreateRecommenderSchema API call. */
 	static readonly CreateRecommenderSchema: string[] = [
 		"profile:CreateRecommenderSchema",
+		"profile:TagResource",
 	];
 	/** IAM actions required for the CreateSegmentDefinition API call. */
 	static readonly CreateSegmentDefinition: string[] = [

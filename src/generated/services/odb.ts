@@ -1017,6 +1017,7 @@ export class OdbOperations {
 	/** IAM actions required for the CreateExascaleDbStorageVault API call. */
 	static readonly CreateExascaleDbStorageVault: string[] = [
 		"odb:CreateExascaleDbStorageVault",
+		"odb:TagResource",
 	];
 	/** IAM actions required for the CreateOdbNetwork API call. */
 	static readonly CreateOdbNetwork: string[] = [

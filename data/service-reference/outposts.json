@@ -661,6 +661,11 @@
           "IsWrite": true
         }
       },
+      "Resources": [
+        {
+          "Name": "outpost"
+        }
+      ],
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true

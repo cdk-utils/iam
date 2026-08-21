@@ -2095,6 +2095,10 @@
         {
           "Name": "CreateExascaleDbStorageVault",
           "Service": "odb"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "odb"
         }
       ],
       "SDK": [
