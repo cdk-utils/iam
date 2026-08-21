@@ -10692,6 +10692,10 @@
         {
           "Name": "CreateRule",
           "Service": "connect"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "connect"
         }
       ],
       "SDK": [

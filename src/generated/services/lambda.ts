@@ -76,6 +76,8 @@ export class LambdaActions {
 	/** [Write] lambda:DeleteProvisionedConcurrencyConfig */
 	static readonly DeleteProvisionedConcurrencyConfig =
 		"lambda:DeleteProvisionedConcurrencyConfig";
+	/** [PermissionManagement] lambda:DeleteResourcePolicy */
+	static readonly DeleteResourcePolicy = "lambda:DeleteResourcePolicy";
 	/** [PermissionManagement] lambda:DisableReplication */
 	static readonly DisableReplication = "lambda:DisableReplication";
 	/** [PermissionManagement] lambda:EnableReplication */
@@ -140,6 +142,8 @@ export class LambdaActions {
 	/** [Read] lambda:GetProvisionedConcurrencyConfig */
 	static readonly actionGetProvisionedConcurrencyConfig =
 		"lambda:GetProvisionedConcurrencyConfig";
+	/** [Read] lambda:GetResourcePolicy */
+	static readonly actionGetResourcePolicy = "lambda:GetResourcePolicy";
 	/** [Read] lambda:GetRuntimeManagementConfig */
 	static readonly actionGetRuntimeManagementConfig =
 		"lambda:GetRuntimeManagementConfig";
@@ -223,6 +227,8 @@ export class LambdaActions {
 	/** [Write] lambda:PutProvisionedConcurrencyConfig */
 	static readonly PutProvisionedConcurrencyConfig =
 		"lambda:PutProvisionedConcurrencyConfig";
+	/** [PermissionManagement] lambda:PutResourcePolicy */
+	static readonly PutResourcePolicy = "lambda:PutResourcePolicy";
 	/** [Write] lambda:PutRuntimeManagementConfig */
 	static readonly PutRuntimeManagementConfig =
 		"lambda:PutRuntimeManagementConfig";
@@ -310,6 +316,7 @@ export class LambdaActions {
 		LambdaActions.actionGetNetworkConnector,
 		LambdaActions.actionGetPolicy,
 		LambdaActions.actionGetProvisionedConcurrencyConfig,
+		LambdaActions.actionGetResourcePolicy,
 		LambdaActions.actionGetRuntimeManagementConfig,
 		LambdaActions.ListTags,
 	];
@@ -404,8 +411,10 @@ export class LambdaActions {
 	static readonly AllPermissionManagementActions: string[] = [
 		LambdaActions.AddLayerVersionPermission,
 		LambdaActions.AddPermission,
+		LambdaActions.DeleteResourcePolicy,
 		LambdaActions.DisableReplication,
 		LambdaActions.EnableReplication,
+		LambdaActions.PutResourcePolicy,
 		LambdaActions.RemoveLayerVersionPermission,
 		LambdaActions.RemovePermission,
 	];
@@ -1250,6 +1259,11 @@ export class LambdaOperations {
 	static readonly DeleteProvisionedConcurrencyConfig: string[] = [
 		"lambda:DeleteProvisionedConcurrencyConfig",
 	];
+	/** IAM actions required for the DeleteResourcePolicy API call. */
+	static readonly DeleteResourcePolicy: string[] = [
+		"lambda:DeleteResourcePolicy",
+		"lambda:RemovePermission",
+	];
 	/** IAM actions required for the GetAccountSettings API call. */
 	static readonly opGetAccountSettings: string[] = [
 		"lambda:GetAccountSettings",
@@ -1344,6 +1358,11 @@ export class LambdaOperations {
 	/** IAM actions required for the GetProvisionedConcurrencyConfig API call. */
 	static readonly opGetProvisionedConcurrencyConfig: string[] = [
 		"lambda:GetProvisionedConcurrencyConfig",
+	];
+	/** IAM actions required for the GetResourcePolicy API call. */
+	static readonly opGetResourcePolicy: string[] = [
+		"lambda:GetPolicy",
+		"lambda:GetResourcePolicy",
 	];
 	/** IAM actions required for the GetRuntimeManagementConfig API call. */
 	static readonly opGetRuntimeManagementConfig: string[] = [
@@ -1462,6 +1481,12 @@ export class LambdaOperations {
 	/** IAM actions required for the PutProvisionedConcurrencyConfig API call. */
 	static readonly PutProvisionedConcurrencyConfig: string[] = [
 		"lambda:PutProvisionedConcurrencyConfig",
+	];
+	/** IAM actions required for the PutResourcePolicy API call. */
+	static readonly PutResourcePolicy: string[] = [
+		"lambda:AddPermission",
+		"lambda:PutResourcePolicy",
+		"lambda:RemovePermission",
 	];
 	/** IAM actions required for the PutRuntimeManagementConfig API call. */
 	static readonly PutRuntimeManagementConfig: string[] = [
@@ -1620,6 +1645,10 @@ export class LambdaConditions {
 		"lambda:FunctionArn",
 		"lambda:FunctionUrlAuthType",
 	];
+	/** Condition keys applicable to the DeleteResourcePolicy action. */
+	static readonly DeleteResourcePolicyConditionKeys: string[] = [
+		"lambda:Principal",
+	];
 	/** Condition keys applicable to the GetEventSourceMapping action. */
 	static readonly actionGetEventSourceMappingConditionKeys: string[] = [
 		"lambda:FunctionArn",
@@ -1647,6 +1676,10 @@ export class LambdaConditions {
 	/** Condition keys applicable to the PutFunctionCodeSigningConfig action. */
 	static readonly PutFunctionCodeSigningConfigConditionKeys: string[] = [
 		"lambda:CodeSigningConfigArn",
+	];
+	/** Condition keys applicable to the PutResourcePolicy action. */
+	static readonly PutResourcePolicyConditionKeys: string[] = [
+		"lambda:Principal",
 	];
 	/** Condition keys applicable to the RemovePermission action. */
 	static readonly RemovePermissionConditionKeys: string[] = [

@@ -242,6 +242,8 @@ export class AgentRegistryOperations {
 	/** IAM actions required for the CreateRegistryRecord API call. */
 	static readonly CreateRegistryRecord: string[] = [
 		"agent-registry:CreateRegistryRecord",
+		"bedrock-agentcore:GetResourceOauth2Token",
+		"bedrock-agentcore:GetWorkloadAccessToken",
 		"iam:PassRole",
 		"agent-registry:TagResource",
 	];
@@ -287,6 +289,8 @@ export class AgentRegistryOperations {
 	static readonly UpdateRegistry: string[] = ["agent-registry:UpdateRegistry"];
 	/** IAM actions required for the UpdateRegistryRecord API call. */
 	static readonly UpdateRegistryRecord: string[] = [
+		"bedrock-agentcore:GetResourceOauth2Token",
+		"bedrock-agentcore:GetWorkloadAccessToken",
 		"iam:PassRole",
 		"agent-registry:UpdateRegistryRecord",
 	];

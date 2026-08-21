@@ -1413,13 +1413,11 @@ export class VPCLatticeConditions {
 	static readonly CreateAccessLogSubscriptionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
-		"vpc-lattice:CreateAction",
 	];
 	/** Condition keys applicable to the CreateListener action. */
 	static readonly CreateListenerConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
-		"vpc-lattice:CreateAction",
 		"vpc-lattice:Protocol",
 		"vpc-lattice:TargetGroupArns",
 	];
@@ -1427,20 +1425,17 @@ export class VPCLatticeConditions {
 	static readonly CreateResourceConfigurationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
-		"vpc-lattice:CreateAction",
 	];
 	/** Condition keys applicable to the CreateResourceGateway action. */
 	static readonly CreateResourceGatewayConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
-		"vpc-lattice:CreateAction",
 		"vpc-lattice:VpcId",
 	];
 	/** Condition keys applicable to the CreateRule action. */
 	static readonly CreateRuleConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
-		"vpc-lattice:CreateAction",
 		"vpc-lattice:TargetGroupArns",
 	];
 	/** Condition keys applicable to the CreateService action. */
@@ -1448,21 +1443,18 @@ export class VPCLatticeConditions {
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"vpc-lattice:AuthType",
-		"vpc-lattice:CreateAction",
 	];
 	/** Condition keys applicable to the CreateServiceNetwork action. */
 	static readonly CreateServiceNetworkConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"vpc-lattice:AuthType",
-		"vpc-lattice:CreateAction",
 	];
 	/** Condition keys applicable to the CreateServiceNetworkResourceAssociation action. */
 	static readonly CreateServiceNetworkResourceAssociationConditionKeys: string[] =
 		[
 			"aws:RequestTag/${TagKey}",
 			"aws:TagKeys",
-			"vpc-lattice:CreateAction",
 			"vpc-lattice:ResourceConfigurationArn",
 			"vpc-lattice:ServiceNetworkArn",
 		];
@@ -1471,7 +1463,6 @@ export class VPCLatticeConditions {
 		[
 			"aws:RequestTag/${TagKey}",
 			"aws:TagKeys",
-			"vpc-lattice:CreateAction",
 			"vpc-lattice:ServiceArn",
 			"vpc-lattice:ServiceNetworkArn",
 		];
@@ -1479,7 +1470,6 @@ export class VPCLatticeConditions {
 	static readonly CreateServiceNetworkVpcAssociationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
-		"vpc-lattice:CreateAction",
 		"vpc-lattice:PrivateDnsPreference",
 		"vpc-lattice:PrivateDnsSpecifiedDomains",
 		"vpc-lattice:SecurityGroupIds",
@@ -1490,7 +1480,6 @@ export class VPCLatticeConditions {
 	static readonly CreateTargetGroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
-		"vpc-lattice:CreateAction",
 		"vpc-lattice:VpcId",
 	];
 	/** Condition keys applicable to the DeleteAccessLogSubscription action. */
@@ -1619,7 +1608,6 @@ export class VPCLatticeConditions {
 	static readonly StartDomainVerificationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
-		"vpc-lattice:CreateAction",
 		"vpc-lattice:DomainName",
 	];
 	/** Condition keys applicable to the TagResource action. */
@@ -1627,6 +1615,7 @@ export class VPCLatticeConditions {
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
+		"vpc-lattice:CreateAction",
 	];
 	/** Condition keys applicable to the UntagResource action. */
 	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];

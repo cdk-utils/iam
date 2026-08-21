@@ -1838,6 +1838,7 @@ new lambda.LambdaActions()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.actionGetNetworkConnector">actionGetNetworkConnector</a></code> | <code>string</code> | [Read] lambda:GetNetworkConnector. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.actionGetPolicy">actionGetPolicy</a></code> | <code>string</code> | [Read] lambda:GetPolicy. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.actionGetProvisionedConcurrencyConfig">actionGetProvisionedConcurrencyConfig</a></code> | <code>string</code> | [Read] lambda:GetProvisionedConcurrencyConfig. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.actionGetResourcePolicy">actionGetResourcePolicy</a></code> | <code>string</code> | [Read] lambda:GetResourcePolicy. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.actionGetRuntimeManagementConfig">actionGetRuntimeManagementConfig</a></code> | <code>string</code> | [Read] lambda:GetRuntimeManagementConfig. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.AddLayerVersionPermission">AddLayerVersionPermission</a></code> | <code>string</code> | [PermissionManagement] lambda:AddLayerVersionPermission. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.AddPermission">AddPermission</a></code> | <code>string</code> | [PermissionManagement] lambda:AddPermission. |
@@ -1872,6 +1873,7 @@ new lambda.LambdaActions()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.DeleteMicrovmImageVersion">DeleteMicrovmImageVersion</a></code> | <code>string</code> | [Write] lambda:DeleteMicrovmImageVersion. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.DeleteNetworkConnector">DeleteNetworkConnector</a></code> | <code>string</code> | [Write] lambda:DeleteNetworkConnector. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.DeleteProvisionedConcurrencyConfig">DeleteProvisionedConcurrencyConfig</a></code> | <code>string</code> | [Write] lambda:DeleteProvisionedConcurrencyConfig. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.DeleteResourcePolicy">DeleteResourcePolicy</a></code> | <code>string</code> | [PermissionManagement] lambda:DeleteResourcePolicy. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.DisableReplication">DisableReplication</a></code> | <code>string</code> | [PermissionManagement] lambda:DisableReplication. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.EnableReplication">EnableReplication</a></code> | <code>string</code> | [PermissionManagement] lambda:EnableReplication. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.InvokeAsync">InvokeAsync</a></code> | <code>string</code> | [Write] lambda:InvokeAsync. |
@@ -1909,6 +1911,7 @@ new lambda.LambdaActions()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.PutFunctionRecursionConfig">PutFunctionRecursionConfig</a></code> | <code>string</code> | [Write] lambda:PutFunctionRecursionConfig. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.PutFunctionScalingConfig">PutFunctionScalingConfig</a></code> | <code>string</code> | [Write] lambda:PutFunctionScalingConfig. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.PutProvisionedConcurrencyConfig">PutProvisionedConcurrencyConfig</a></code> | <code>string</code> | [Write] lambda:PutProvisionedConcurrencyConfig. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.PutResourcePolicy">PutResourcePolicy</a></code> | <code>string</code> | [PermissionManagement] lambda:PutResourcePolicy. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.PutRuntimeManagementConfig">PutRuntimeManagementConfig</a></code> | <code>string</code> | [Write] lambda:PutRuntimeManagementConfig. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.RemoveLayerVersionPermission">RemoveLayerVersionPermission</a></code> | <code>string</code> | [PermissionManagement] lambda:RemoveLayerVersionPermission. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.RemovePermission">RemovePermission</a></code> | <code>string</code> | [PermissionManagement] lambda:RemovePermission. |
@@ -2235,6 +2238,18 @@ public readonly actionGetProvisionedConcurrencyConfig: string;
 - *Type:* string
 
 [Read] lambda:GetProvisionedConcurrencyConfig.
+
+---
+
+##### `actionGetResourcePolicy`<sup>Required</sup> <a name="actionGetResourcePolicy" id="@cdk_utils/iam.lambda.LambdaActions.property.actionGetResourcePolicy"></a>
+
+```typescript
+public readonly actionGetResourcePolicy: string;
+```
+
+- *Type:* string
+
+[Read] lambda:GetResourcePolicy.
 
 ---
 
@@ -2643,6 +2658,18 @@ public readonly DeleteProvisionedConcurrencyConfig: string;
 - *Type:* string
 
 [Write] lambda:DeleteProvisionedConcurrencyConfig.
+
+---
+
+##### `DeleteResourcePolicy`<sup>Required</sup> <a name="DeleteResourcePolicy" id="@cdk_utils/iam.lambda.LambdaActions.property.DeleteResourcePolicy"></a>
+
+```typescript
+public readonly DeleteResourcePolicy: string;
+```
+
+- *Type:* string
+
+[PermissionManagement] lambda:DeleteResourcePolicy.
 
 ---
 
@@ -3087,6 +3114,18 @@ public readonly PutProvisionedConcurrencyConfig: string;
 - *Type:* string
 
 [Write] lambda:PutProvisionedConcurrencyConfig.
+
+---
+
+##### `PutResourcePolicy`<sup>Required</sup> <a name="PutResourcePolicy" id="@cdk_utils/iam.lambda.LambdaActions.property.PutResourcePolicy"></a>
+
+```typescript
+public readonly PutResourcePolicy: string;
+```
+
+- *Type:* string
+
+[PermissionManagement] lambda:PutResourcePolicy.
 
 ---
 
@@ -3686,6 +3725,7 @@ Generates a condition block for `lambda:VpcIds`.
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.CreateNetworkConnectorConditionKeys">CreateNetworkConnectorConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateNetworkConnector action. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.DeleteEventSourceMappingConditionKeys">DeleteEventSourceMappingConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteEventSourceMapping action. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.DeleteFunctionUrlConfigConditionKeys">DeleteFunctionUrlConfigConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteFunctionUrlConfig action. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.DeleteResourcePolicyConditionKeys">DeleteResourcePolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteResourcePolicy action. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.EVENT_SOURCE_TOKEN">EVENT_SOURCE_TOKEN</a></code> | <code>string</code> | Condition key: lambda:EventSourceToken (String). |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.FUNCTION_ARN">FUNCTION_ARN</a></code> | <code>string</code> | Condition key: lambda:FunctionArn (ARN). |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.FUNCTION_URL_AUTH_TYPE">FUNCTION_URL_AUTH_TYPE</a></code> | <code>string</code> | Condition key: lambda:FunctionUrlAuthType (String). |
@@ -3696,6 +3736,7 @@ Generates a condition block for `lambda:VpcIds`.
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.ListFunctionUrlConfigsConditionKeys">ListFunctionUrlConfigsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListFunctionUrlConfigs action. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.PRINCIPAL">PRINCIPAL</a></code> | <code>string</code> | Condition key: lambda:Principal (String). |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.PutFunctionCodeSigningConfigConditionKeys">PutFunctionCodeSigningConfigConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutFunctionCodeSigningConfig action. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.PutResourcePolicyConditionKeys">PutResourcePolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutResourcePolicy action. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.RemovePermissionConditionKeys">RemovePermissionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the RemovePermission action. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.SECURITY_GROUP_IDS">SECURITY_GROUP_IDS</a></code> | <code>string</code> | Condition key: lambda:SecurityGroupIds (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.SOURCE_FUNCTION_ARN">SOURCE_FUNCTION_ARN</a></code> | <code>string</code> | Condition key: lambda:SourceFunctionArn (ARN). |
@@ -3901,6 +3942,18 @@ Condition keys applicable to the DeleteFunctionUrlConfig action.
 
 ---
 
+##### `DeleteResourcePolicyConditionKeys`<sup>Required</sup> <a name="DeleteResourcePolicyConditionKeys" id="@cdk_utils/iam.lambda.LambdaConditions.property.DeleteResourcePolicyConditionKeys"></a>
+
+```typescript
+public readonly DeleteResourcePolicyConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DeleteResourcePolicy action.
+
+---
+
 ##### `EVENT_SOURCE_TOKEN`<sup>Required</sup> <a name="EVENT_SOURCE_TOKEN" id="@cdk_utils/iam.lambda.LambdaConditions.property.EVENT_SOURCE_TOKEN"></a>
 
 ```typescript
@@ -4018,6 +4071,18 @@ public readonly PutFunctionCodeSigningConfigConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the PutFunctionCodeSigningConfig action.
+
+---
+
+##### `PutResourcePolicyConditionKeys`<sup>Required</sup> <a name="PutResourcePolicyConditionKeys" id="@cdk_utils/iam.lambda.LambdaConditions.property.PutResourcePolicyConditionKeys"></a>
+
+```typescript
+public readonly PutResourcePolicyConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the PutResourcePolicy action.
 
 ---
 
@@ -4193,6 +4258,7 @@ new lambda.LambdaOperations()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteMicrovmImageVersion">DeleteMicrovmImageVersion</a></code> | <code>string[]</code> | IAM actions required for the DeleteMicrovmImageVersion API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteNetworkConnector">DeleteNetworkConnector</a></code> | <code>string[]</code> | IAM actions required for the DeleteNetworkConnector API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteProvisionedConcurrencyConfig">DeleteProvisionedConcurrencyConfig</a></code> | <code>string[]</code> | IAM actions required for the DeleteProvisionedConcurrencyConfig API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteResourcePolicy">DeleteResourcePolicy</a></code> | <code>string[]</code> | IAM actions required for the DeleteResourcePolicy API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.Invoke">Invoke</a></code> | <code>string[]</code> | IAM actions required for the Invoke API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.InvokeAsync">InvokeAsync</a></code> | <code>string[]</code> | IAM actions required for the InvokeAsync API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.InvokeWithResponseStream">InvokeWithResponseStream</a></code> | <code>string[]</code> | IAM actions required for the InvokeWithResponseStream API call. |
@@ -4246,6 +4312,7 @@ new lambda.LambdaOperations()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetNetworkConnector">opGetNetworkConnector</a></code> | <code>string[]</code> | IAM actions required for the GetNetworkConnector API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetPolicy">opGetPolicy</a></code> | <code>string[]</code> | IAM actions required for the GetPolicy API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetProvisionedConcurrencyConfig">opGetProvisionedConcurrencyConfig</a></code> | <code>string[]</code> | IAM actions required for the GetProvisionedConcurrencyConfig API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetResourcePolicy">opGetResourcePolicy</a></code> | <code>string[]</code> | IAM actions required for the GetResourcePolicy API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetRuntimeManagementConfig">opGetRuntimeManagementConfig</a></code> | <code>string[]</code> | IAM actions required for the GetRuntimeManagementConfig API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.PublishLayerVersion">PublishLayerVersion</a></code> | <code>string[]</code> | IAM actions required for the PublishLayerVersion API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.PublishVersion">PublishVersion</a></code> | <code>string[]</code> | IAM actions required for the PublishVersion API call. |
@@ -4255,6 +4322,7 @@ new lambda.LambdaOperations()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.PutFunctionRecursionConfig">PutFunctionRecursionConfig</a></code> | <code>string[]</code> | IAM actions required for the PutFunctionRecursionConfig API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.PutFunctionScalingConfig">PutFunctionScalingConfig</a></code> | <code>string[]</code> | IAM actions required for the PutFunctionScalingConfig API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.PutProvisionedConcurrencyConfig">PutProvisionedConcurrencyConfig</a></code> | <code>string[]</code> | IAM actions required for the PutProvisionedConcurrencyConfig API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.PutResourcePolicy">PutResourcePolicy</a></code> | <code>string[]</code> | IAM actions required for the PutResourcePolicy API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.PutRuntimeManagementConfig">PutRuntimeManagementConfig</a></code> | <code>string[]</code> | IAM actions required for the PutRuntimeManagementConfig API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.RemoveEventSource">RemoveEventSource</a></code> | <code>string[]</code> | IAM actions required for the RemoveEventSource API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.RemoveLayerVersionPermission">RemoveLayerVersionPermission</a></code> | <code>string[]</code> | IAM actions required for the RemoveLayerVersionPermission API call. |
@@ -4617,6 +4685,18 @@ public readonly DeleteProvisionedConcurrencyConfig: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteProvisionedConcurrencyConfig API call.
+
+---
+
+##### `DeleteResourcePolicy`<sup>Required</sup> <a name="DeleteResourcePolicy" id="@cdk_utils/iam.lambda.LambdaOperations.property.DeleteResourcePolicy"></a>
+
+```typescript
+public readonly DeleteResourcePolicy: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteResourcePolicy API call.
 
 ---
 
@@ -5256,6 +5336,18 @@ IAM actions required for the GetProvisionedConcurrencyConfig API call.
 
 ---
 
+##### `opGetResourcePolicy`<sup>Required</sup> <a name="opGetResourcePolicy" id="@cdk_utils/iam.lambda.LambdaOperations.property.opGetResourcePolicy"></a>
+
+```typescript
+public readonly opGetResourcePolicy: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetResourcePolicy API call.
+
+---
+
 ##### `opGetRuntimeManagementConfig`<sup>Required</sup> <a name="opGetRuntimeManagementConfig" id="@cdk_utils/iam.lambda.LambdaOperations.property.opGetRuntimeManagementConfig"></a>
 
 ```typescript
@@ -5361,6 +5453,18 @@ public readonly PutProvisionedConcurrencyConfig: string[];
 - *Type:* string[]
 
 IAM actions required for the PutProvisionedConcurrencyConfig API call.
+
+---
+
+##### `PutResourcePolicy`<sup>Required</sup> <a name="PutResourcePolicy" id="@cdk_utils/iam.lambda.LambdaOperations.property.PutResourcePolicy"></a>
+
+```typescript
+public readonly PutResourcePolicy: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the PutResourcePolicy API call.
 
 ---
 

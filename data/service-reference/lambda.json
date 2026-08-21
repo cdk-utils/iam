@@ -594,6 +594,29 @@
       }
     },
     {
+      "Name": "DeleteResourcePolicy",
+      "ActionConditionKeys": [
+        "lambda:Principal"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "function"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "DisableReplication",
       "Annotations": {
         "Properties": {
@@ -1136,6 +1159,26 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "function"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -1837,6 +1880,29 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutResourcePolicy",
+      "ActionConditionKeys": [
+        "lambda:Principal"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "function"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -3005,6 +3071,26 @@
       ]
     },
     {
+      "Name": "DeleteResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteResourcePolicy",
+          "Service": "lambda"
+        },
+        {
+          "Name": "RemovePermission",
+          "Service": "lambda"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lambda",
+          "Method": "delete_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetAccountSettings",
       "AuthorizedActions": [
         {
@@ -3430,6 +3516,26 @@
         {
           "Name": "lambda",
           "Method": "get_provisioned_concurrency_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPolicy",
+          "Service": "lambda"
+        },
+        {
+          "Name": "GetResourcePolicy",
+          "Service": "lambda"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lambda",
+          "Method": "get_resource_policy",
           "Package": "Boto3"
         }
       ]
@@ -3989,6 +4095,30 @@
         {
           "Name": "lambda",
           "Method": "put_provisioned_concurrency_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "AddPermission",
+          "Service": "lambda"
+        },
+        {
+          "Name": "PutResourcePolicy",
+          "Service": "lambda"
+        },
+        {
+          "Name": "RemovePermission",
+          "Service": "lambda"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lambda",
+          "Method": "put_resource_policy",
           "Package": "Boto3"
         }
       ]
