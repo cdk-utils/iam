@@ -7510,6 +7510,10 @@
       "Name": "RestoreDBClusterToPointInTime",
       "AuthorizedActions": [
         {
+          "Name": "AddRoleToDBCluster",
+          "Service": "rds"
+        },
+        {
           "Name": "AddTagsToResource",
           "Service": "rds"
         },

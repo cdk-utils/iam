@@ -10408,6 +10408,12 @@
     },
     {
       "Name": "CreateExtractionDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "connect"
+        }
+      ],
       "SDK": [
         {
           "Name": "connect",

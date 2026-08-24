@@ -4350,7 +4350,9 @@ export class ConnectOperations {
 		"connect:TagResource",
 	];
 	/** IAM actions required for the CreateExtractionDefinition API call. */
-	static readonly CreateExtractionDefinition: string[] = [];
+	static readonly CreateExtractionDefinition: string[] = [
+		"connect:TagResource",
+	];
 	/** IAM actions required for the CreateHoursOfOperation API call. */
 	static readonly CreateHoursOfOperation: string[] = [
 		"connect:CreateHoursOfOperation",

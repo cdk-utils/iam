@@ -2821,6 +2821,12 @@
     },
     {
       "Name": "GetRecoveryPlanExecutionStep",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRecoveryPlanExecutionStep",
+          "Service": "drs"
+        }
+      ],
       "SDK": [
         {
           "Name": "drs",
@@ -3049,6 +3055,12 @@
     },
     {
       "Name": "RetryRecoveryPlanExecutionStep",
+      "AuthorizedActions": [
+        {
+          "Name": "RetryRecoveryPlanExecutionStep",
+          "Service": "drs"
+        }
+      ],
       "SDK": [
         {
           "Name": "drs",

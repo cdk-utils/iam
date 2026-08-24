@@ -2667,6 +2667,7 @@ export class RDSOperations {
 	];
 	/** IAM actions required for the RestoreDBClusterToPointInTime API call. */
 	static readonly RestoreDBClusterToPointInTime: string[] = [
+		"rds:AddRoleToDBCluster",
 		"rds:AddTagsToResource",
 		"rds:CreateDBInstance",
 		"iam:PassRole",
