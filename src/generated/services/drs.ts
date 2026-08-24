@@ -1057,7 +1057,9 @@ export class DRSOperations {
 		"drs:GetRecoveryPlanExecution",
 	];
 	/** IAM actions required for the GetRecoveryPlanExecutionStep API call. */
-	static readonly opGetRecoveryPlanExecutionStep: string[] = [];
+	static readonly opGetRecoveryPlanExecutionStep: string[] = [
+		"drs:GetRecoveryPlanExecutionStep",
+	];
 	/** IAM actions required for the GetRecoveryPlanStep API call. */
 	static readonly opGetRecoveryPlanStep: string[] = ["drs:GetRecoveryPlanStep"];
 	/** IAM actions required for the GetReplicationConfiguration API call. */
@@ -1097,7 +1099,9 @@ export class DRSOperations {
 	/** IAM actions required for the RetryDataReplication API call. */
 	static readonly RetryDataReplication: string[] = ["drs:RetryDataReplication"];
 	/** IAM actions required for the RetryRecoveryPlanExecutionStep API call. */
-	static readonly RetryRecoveryPlanExecutionStep: string[] = [];
+	static readonly RetryRecoveryPlanExecutionStep: string[] = [
+		"drs:RetryRecoveryPlanExecutionStep",
+	];
 	/** IAM actions required for the ReverseReplication API call. */
 	static readonly ReverseReplication: string[] = ["drs:ReverseReplication"];
 	/** IAM actions required for the StartFailbackLaunch API call. */
