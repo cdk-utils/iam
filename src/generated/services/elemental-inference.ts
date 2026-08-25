@@ -254,6 +254,8 @@ export class ElementalInferenceOperations {
 	];
 	/** IAM actions required for the GetFeed API call. */
 	static readonly opGetFeed: string[] = ["elemental-inference:GetFeed"];
+	/** IAM actions required for the GetFixture API call. */
+	static readonly opGetFixture: string[] = [];
 	/** IAM actions required for the ListDictionaries API call. */
 	static readonly ListDictionaries: string[] = [
 		"elemental-inference:ListDictionaries",

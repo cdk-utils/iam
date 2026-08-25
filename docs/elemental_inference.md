@@ -851,6 +851,7 @@ new elemental_inference.ElementalInferenceOperations()
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.opGetDictionary">opGetDictionary</a></code> | <code>string[]</code> | IAM actions required for the GetDictionary API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.opGetFeed">opGetFeed</a></code> | <code>string[]</code> | IAM actions required for the GetFeed API call. |
+| <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.opGetFixture">opGetFixture</a></code> | <code>string[]</code> | IAM actions required for the GetFixture API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.SearchFixtures">SearchFixtures</a></code> | <code>string[]</code> | IAM actions required for the SearchFixtures API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
@@ -1000,6 +1001,18 @@ public readonly opGetFeed: string[];
 - *Type:* string[]
 
 IAM actions required for the GetFeed API call.
+
+---
+
+##### `opGetFixture`<sup>Required</sup> <a name="opGetFixture" id="@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.opGetFixture"></a>
+
+```typescript
+public readonly opGetFixture: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetFixture API call.
 
 ---
 

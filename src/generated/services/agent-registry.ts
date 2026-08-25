@@ -20,6 +20,8 @@ export class AgentRegistryActions {
 	static readonly DeleteRegistry = "agent-registry:DeleteRegistry";
 	/** [Write] agent-registry:DeleteRegistryRecord */
 	static readonly DeleteRegistryRecord = "agent-registry:DeleteRegistryRecord";
+	/** [Write] agent-registry:DeleteResourcePolicy */
+	static readonly DeleteResourcePolicy = "agent-registry:DeleteResourcePolicy";
 	/** [Read] agent-registry:GetDiscoverableRegistryRecord */
 	static readonly actionGetDiscoverableRegistryRecord =
 		"agent-registry:GetDiscoverableRegistryRecord";
@@ -27,6 +29,8 @@ export class AgentRegistryActions {
 	static readonly actionGetRegistry = "agent-registry:GetRegistry";
 	/** [Read] agent-registry:GetRegistryRecord */
 	static readonly actionGetRegistryRecord = "agent-registry:GetRegistryRecord";
+	/** [Read] agent-registry:GetResourcePolicy */
+	static readonly actionGetResourcePolicy = "agent-registry:GetResourcePolicy";
 	/** [Read] agent-registry:InvokeRegistryMcp */
 	static readonly InvokeRegistryMcp = "agent-registry:InvokeRegistryMcp";
 	/** [List] agent-registry:ListDiscoverableRegistryRecords */
@@ -38,6 +42,8 @@ export class AgentRegistryActions {
 	static readonly ListRegistryRecords = "agent-registry:ListRegistryRecords";
 	/** [List] agent-registry:ListTagsForResource */
 	static readonly ListTagsForResource = "agent-registry:ListTagsForResource";
+	/** [Write] agent-registry:PutResourcePolicy */
+	static readonly PutResourcePolicy = "agent-registry:PutResourcePolicy";
 	/** [Read] agent-registry:SearchDiscoverableRegistryRecords */
 	static readonly SearchDiscoverableRegistryRecords =
 		"agent-registry:SearchDiscoverableRegistryRecords";
@@ -61,6 +67,7 @@ export class AgentRegistryActions {
 		AgentRegistryActions.actionGetDiscoverableRegistryRecord,
 		AgentRegistryActions.actionGetRegistry,
 		AgentRegistryActions.actionGetRegistryRecord,
+		AgentRegistryActions.actionGetResourcePolicy,
 		AgentRegistryActions.InvokeRegistryMcp,
 		AgentRegistryActions.SearchDiscoverableRegistryRecords,
 	];
@@ -70,6 +77,8 @@ export class AgentRegistryActions {
 		AgentRegistryActions.CreateRegistryRecord,
 		AgentRegistryActions.DeleteRegistry,
 		AgentRegistryActions.DeleteRegistryRecord,
+		AgentRegistryActions.DeleteResourcePolicy,
+		AgentRegistryActions.PutResourcePolicy,
 		AgentRegistryActions.SubmitRegistryRecordForApproval,
 		AgentRegistryActions.UpdateRegistry,
 		AgentRegistryActions.UpdateRegistryRecord,
@@ -322,12 +331,24 @@ export class AgentRegistryConditions {
 	/** Condition keys applicable to the UntagResource action. */
 	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
+	/** Condition key: agent-registry:RecordCreatorAccount (String) */
+	static readonly RECORD_CREATOR_ACCOUNT =
+		"agent-registry:RecordCreatorAccount";
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
 	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
 	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
 	static readonly AWS_TAG_KEYS = "aws:TagKeys";
+
+	/**
+	 * Generates a condition block for `agent-registry:RecordCreatorAccount`.
+	 */
+	static recordCreatorAccount(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "agent-registry:RecordCreatorAccount": value } };
+	}
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

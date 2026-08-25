@@ -85,6 +85,26 @@
       }
     },
     {
+      "Name": "DeleteResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "registry"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "GetDiscoverableRegistryRecord",
       "Annotations": {
         "Properties": {
@@ -137,6 +157,26 @@
       "Resources": [
         {
           "Name": "registry-record"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "registry"
         }
       ],
       "SupportedBy": {
@@ -235,6 +275,26 @@
         },
         {
           "Name": "registry-record"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "registry"
         }
       ],
       "SupportedBy": {
@@ -397,6 +457,12 @@
     }
   ],
   "ConditionKeys": [
+    {
+      "Name": "agent-registry:RecordCreatorAccount",
+      "Types": [
+        "String"
+      ]
+    },
     {
       "Name": "aws:RequestTag/${TagKey}",
       "Types": [

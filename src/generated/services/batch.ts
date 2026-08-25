@@ -81,6 +81,8 @@ export class BatchActions {
 	static readonly ListTagsForResource = "batch:ListTagsForResource";
 	/** [Write] batch:RegisterJobDefinition */
 	static readonly RegisterJobDefinition = "batch:RegisterJobDefinition";
+	/** [Tagging] batch:SetCapacityTags */
+	static readonly actionSetCapacityTags = "batch:SetCapacityTags";
 	/** [Write] batch:SubmitJob */
 	static readonly SubmitJob = "batch:SubmitJob";
 	/** [Write] batch:SubmitServiceJob */
@@ -164,6 +166,7 @@ export class BatchActions {
 	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
 	static readonly AllTaggingActions: string[] = [
+		BatchActions.actionSetCapacityTags,
 		BatchActions.TagResource,
 		BatchActions.UntagResource,
 	];
@@ -817,6 +820,7 @@ export class BatchOperations {
 	static readonly CreateComputeEnvironment: string[] = [
 		"batch:CreateComputeEnvironment",
 		"iam:PassRole",
+		"batch:SetCapacityTags",
 		"batch:TagResource",
 	];
 	/** IAM actions required for the CreateConsumableResource API call. */
@@ -1022,6 +1026,11 @@ export class BatchConditions {
 		"batch:LogDriver",
 		"batch:Privileged",
 		"batch:User",
+	];
+	/** Condition keys applicable to the SetCapacityTags action. */
+	static readonly actionSetCapacityTagsConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the SubmitJob action. */
 	static readonly SubmitJobConditionKeys: string[] = [

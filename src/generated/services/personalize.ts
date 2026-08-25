@@ -1450,6 +1450,7 @@ export class PersonalizeOperations {
 	static readonly CreateDataDeletionJob: string[] = [
 		"personalize:CreateDataDeletionJob",
 		"iam:PassRole",
+		"personalize:TagResource",
 	];
 	/** IAM actions required for the CreateDataset API call. */
 	static readonly CreateDataset: string[] = [

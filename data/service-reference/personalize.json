@@ -1867,6 +1867,10 @@
             ]
           },
           "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "personalize"
         }
       ],
       "SDK": [
