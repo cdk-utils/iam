@@ -1562,6 +1562,7 @@ new batch.BatchActions()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.batch.BatchActions.property.actionGetJobQueueSnapshot">actionGetJobQueueSnapshot</a></code> | <code>string</code> | [Read] batch:GetJobQueueSnapshot. |
+| <code><a href="#@cdk_utils/iam.batch.BatchActions.property.actionSetCapacityTags">actionSetCapacityTags</a></code> | <code>string</code> | [Tagging] batch:SetCapacityTags. |
 | <code><a href="#@cdk_utils/iam.batch.BatchActions.property.AllListActions">AllListActions</a></code> | <code>string[]</code> | All list-level actions. |
 | <code><a href="#@cdk_utils/iam.batch.BatchActions.property.AllPermissionManagementActions">AllPermissionManagementActions</a></code> | <code>string[]</code> | All permission-management-level actions. |
 | <code><a href="#@cdk_utils/iam.batch.BatchActions.property.AllReadActions">AllReadActions</a></code> | <code>string[]</code> | All read-level actions. |
@@ -1624,6 +1625,18 @@ public readonly actionGetJobQueueSnapshot: string;
 - *Type:* string
 
 [Read] batch:GetJobQueueSnapshot.
+
+---
+
+##### `actionSetCapacityTags`<sup>Required</sup> <a name="actionSetCapacityTags" id="@cdk_utils/iam.batch.BatchActions.property.actionSetCapacityTags"></a>
+
+```typescript
+public readonly actionSetCapacityTags: string;
+```
+
+- *Type:* string
+
+[Tagging] batch:SetCapacityTags.
 
 ---
 
@@ -2580,6 +2593,7 @@ Generates a condition block for `batch:User`.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.batch.BatchConditions.property.actionSetCapacityTagsConditionKeys">actionSetCapacityTagsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the SetCapacityTags action. |
 | <code><a href="#@cdk_utils/iam.batch.BatchConditions.property.AWS_LOGS_CREATE_GROUP">AWS_LOGS_CREATE_GROUP</a></code> | <code>string</code> | Condition key: batch:AWSLogsCreateGroup (Bool). |
 | <code><a href="#@cdk_utils/iam.batch.BatchConditions.property.AWS_LOGS_GROUP">AWS_LOGS_GROUP</a></code> | <code>string</code> | Condition key: batch:AWSLogsGroup (String). |
 | <code><a href="#@cdk_utils/iam.batch.BatchConditions.property.AWS_LOGS_REGION">AWS_LOGS_REGION</a></code> | <code>string</code> | Condition key: batch:AWSLogsRegion (String). |
@@ -2611,6 +2625,18 @@ Generates a condition block for `batch:User`.
 | <code><a href="#@cdk_utils/iam.batch.BatchConditions.property.UntagResourceConditionKeys">UntagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UntagResource action. |
 | <code><a href="#@cdk_utils/iam.batch.BatchConditions.property.UpdateServiceJobConditionKeys">UpdateServiceJobConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateServiceJob action. |
 | <code><a href="#@cdk_utils/iam.batch.BatchConditions.property.USER">USER</a></code> | <code>string</code> | Condition key: batch:User (String). |
+
+---
+
+##### `actionSetCapacityTagsConditionKeys`<sup>Required</sup> <a name="actionSetCapacityTagsConditionKeys" id="@cdk_utils/iam.batch.BatchConditions.property.actionSetCapacityTagsConditionKeys"></a>
+
+```typescript
+public readonly actionSetCapacityTagsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the SetCapacityTags action.
 
 ---
 

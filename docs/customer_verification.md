@@ -30,6 +30,7 @@ new customer_verification.CustomerVerificationActions()
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.customer_verification.CustomerVerificationActions.property.actionGetCustomerVerificationDetails">actionGetCustomerVerificationDetails</a></code> | <code>string</code> | [Read] customer-verification:GetCustomerVerificationDetails. |
 | <code><a href="#@cdk_utils/iam.customer_verification.CustomerVerificationActions.property.actionGetCustomerVerificationEligibility">actionGetCustomerVerificationEligibility</a></code> | <code>string</code> | [Read] customer-verification:GetCustomerVerificationEligibility. |
+| <code><a href="#@cdk_utils/iam.customer_verification.CustomerVerificationActions.property.actionGetInheritanceConfig">actionGetInheritanceConfig</a></code> | <code>string</code> | [Read] customer-verification:GetInheritanceConfig. |
 | <code><a href="#@cdk_utils/iam.customer_verification.CustomerVerificationActions.property.AllListActions">AllListActions</a></code> | <code>string[]</code> | All list-level actions. |
 | <code><a href="#@cdk_utils/iam.customer_verification.CustomerVerificationActions.property.AllPermissionManagementActions">AllPermissionManagementActions</a></code> | <code>string[]</code> | All permission-management-level actions. |
 | <code><a href="#@cdk_utils/iam.customer_verification.CustomerVerificationActions.property.AllReadActions">AllReadActions</a></code> | <code>string[]</code> | All read-level actions. |
@@ -37,6 +38,7 @@ new customer_verification.CustomerVerificationActions()
 | <code><a href="#@cdk_utils/iam.customer_verification.CustomerVerificationActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
 | <code><a href="#@cdk_utils/iam.customer_verification.CustomerVerificationActions.property.CreateCustomerVerificationDetails">CreateCustomerVerificationDetails</a></code> | <code>string</code> | [Write] customer-verification:CreateCustomerVerificationDetails. |
 | <code><a href="#@cdk_utils/iam.customer_verification.CustomerVerificationActions.property.CreateUploadUrls">CreateUploadUrls</a></code> | <code>string</code> | [Write] customer-verification:CreateUploadUrls. |
+| <code><a href="#@cdk_utils/iam.customer_verification.CustomerVerificationActions.property.PutInheritanceConfig">PutInheritanceConfig</a></code> | <code>string</code> | [Write] customer-verification:PutInheritanceConfig. |
 | <code><a href="#@cdk_utils/iam.customer_verification.CustomerVerificationActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.customer_verification.CustomerVerificationActions.property.UpdateCustomerVerificationDetails">UpdateCustomerVerificationDetails</a></code> | <code>string</code> | [Write] customer-verification:UpdateCustomerVerificationDetails. |
 
@@ -63,6 +65,18 @@ public readonly actionGetCustomerVerificationEligibility: string;
 - *Type:* string
 
 [Read] customer-verification:GetCustomerVerificationEligibility.
+
+---
+
+##### `actionGetInheritanceConfig`<sup>Required</sup> <a name="actionGetInheritanceConfig" id="@cdk_utils/iam.customer_verification.CustomerVerificationActions.property.actionGetInheritanceConfig"></a>
+
+```typescript
+public readonly actionGetInheritanceConfig: string;
+```
+
+- *Type:* string
+
+[Read] customer-verification:GetInheritanceConfig.
 
 ---
 
@@ -147,6 +161,18 @@ public readonly CreateUploadUrls: string;
 - *Type:* string
 
 [Write] customer-verification:CreateUploadUrls.
+
+---
+
+##### `PutInheritanceConfig`<sup>Required</sup> <a name="PutInheritanceConfig" id="@cdk_utils/iam.customer_verification.CustomerVerificationActions.property.PutInheritanceConfig"></a>
+
+```typescript
+public readonly PutInheritanceConfig: string;
+```
+
+- *Type:* string
+
+[Write] customer-verification:PutInheritanceConfig.
 
 ---
 

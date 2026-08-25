@@ -1057,9 +1057,7 @@ export class DRSOperations {
 		"drs:GetRecoveryPlanExecution",
 	];
 	/** IAM actions required for the GetRecoveryPlanExecutionStep API call. */
-	static readonly opGetRecoveryPlanExecutionStep: string[] = [
-		"drs:GetRecoveryPlanExecutionStep",
-	];
+	static readonly opGetRecoveryPlanExecutionStep: string[] = [];
 	/** IAM actions required for the GetRecoveryPlanStep API call. */
 	static readonly opGetRecoveryPlanStep: string[] = ["drs:GetRecoveryPlanStep"];
 	/** IAM actions required for the GetReplicationConfiguration API call. */
@@ -1099,9 +1097,7 @@ export class DRSOperations {
 	/** IAM actions required for the RetryDataReplication API call. */
 	static readonly RetryDataReplication: string[] = ["drs:RetryDataReplication"];
 	/** IAM actions required for the RetryRecoveryPlanExecutionStep API call. */
-	static readonly RetryRecoveryPlanExecutionStep: string[] = [
-		"drs:RetryRecoveryPlanExecutionStep",
-	];
+	static readonly RetryRecoveryPlanExecutionStep: string[] = [];
 	/** IAM actions required for the ReverseReplication API call. */
 	static readonly ReverseReplication: string[] = ["drs:ReverseReplication"];
 	/** IAM actions required for the StartFailbackLaunch API call. */
@@ -1112,9 +1108,7 @@ export class DRSOperations {
 		"drs:TagResource",
 	];
 	/** IAM actions required for the StartRecoveryPlanExecution API call. */
-	static readonly StartRecoveryPlanExecution: string[] = [
-		"drs:StartRecoveryPlanExecution",
-	];
+	static readonly StartRecoveryPlanExecution: string[] = [];
 	/** IAM actions required for the StartReplication API call. */
 	static readonly StartReplication: string[] = ["drs:StartReplication"];
 	/** IAM actions required for the StartSourceNetworkRecovery API call. */
@@ -1157,9 +1151,7 @@ export class DRSOperations {
 	/** IAM actions required for the UpdateRecoveryPlan API call. */
 	static readonly UpdateRecoveryPlan: string[] = ["drs:UpdateRecoveryPlan"];
 	/** IAM actions required for the UpdateRecoveryPlanExecutionStep API call. */
-	static readonly UpdateRecoveryPlanExecutionStep: string[] = [
-		"drs:UpdateRecoveryPlanExecutionStep",
-	];
+	static readonly UpdateRecoveryPlanExecutionStep: string[] = [];
 	/** IAM actions required for the UpdateRecoveryPlanStep API call. */
 	static readonly UpdateRecoveryPlanStep: string[] = [
 		"drs:UpdateRecoveryPlanStep",

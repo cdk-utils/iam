@@ -23,6 +23,12 @@ export class CustomerVerificationActions {
 	/** [Read] customer-verification:GetCustomerVerificationEligibility */
 	static readonly actionGetCustomerVerificationEligibility =
 		"customer-verification:GetCustomerVerificationEligibility";
+	/** [Read] customer-verification:GetInheritanceConfig */
+	static readonly actionGetInheritanceConfig =
+		"customer-verification:GetInheritanceConfig";
+	/** [Write] customer-verification:PutInheritanceConfig */
+	static readonly PutInheritanceConfig =
+		"customer-verification:PutInheritanceConfig";
 	/** [Write] customer-verification:UpdateCustomerVerificationDetails */
 	static readonly UpdateCustomerVerificationDetails =
 		"customer-verification:UpdateCustomerVerificationDetails";
@@ -31,11 +37,13 @@ export class CustomerVerificationActions {
 	static readonly AllReadActions: string[] = [
 		CustomerVerificationActions.actionGetCustomerVerificationDetails,
 		CustomerVerificationActions.actionGetCustomerVerificationEligibility,
+		CustomerVerificationActions.actionGetInheritanceConfig,
 	];
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
 		CustomerVerificationActions.CreateCustomerVerificationDetails,
 		CustomerVerificationActions.CreateUploadUrls,
+		CustomerVerificationActions.PutInheritanceConfig,
 		CustomerVerificationActions.UpdateCustomerVerificationDetails,
 	];
 	/** All list-level actions. */

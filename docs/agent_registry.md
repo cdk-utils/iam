@@ -354,6 +354,7 @@ new agent_registry.AgentRegistryActions()
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.actionGetDiscoverableRegistryRecord">actionGetDiscoverableRegistryRecord</a></code> | <code>string</code> | [Read] agent-registry:GetDiscoverableRegistryRecord. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.actionGetRegistry">actionGetRegistry</a></code> | <code>string</code> | [Read] agent-registry:GetRegistry. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.actionGetRegistryRecord">actionGetRegistryRecord</a></code> | <code>string</code> | [Read] agent-registry:GetRegistryRecord. |
+| <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.actionGetResourcePolicy">actionGetResourcePolicy</a></code> | <code>string</code> | [Read] agent-registry:GetResourcePolicy. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.AllListActions">AllListActions</a></code> | <code>string[]</code> | All list-level actions. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.AllPermissionManagementActions">AllPermissionManagementActions</a></code> | <code>string[]</code> | All permission-management-level actions. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.AllReadActions">AllReadActions</a></code> | <code>string[]</code> | All read-level actions. |
@@ -363,11 +364,13 @@ new agent_registry.AgentRegistryActions()
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.CreateRegistryRecord">CreateRegistryRecord</a></code> | <code>string</code> | [Write] agent-registry:CreateRegistryRecord. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.DeleteRegistry">DeleteRegistry</a></code> | <code>string</code> | [Write] agent-registry:DeleteRegistry. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.DeleteRegistryRecord">DeleteRegistryRecord</a></code> | <code>string</code> | [Write] agent-registry:DeleteRegistryRecord. |
+| <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.DeleteResourcePolicy">DeleteResourcePolicy</a></code> | <code>string</code> | [Write] agent-registry:DeleteResourcePolicy. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.InvokeRegistryMcp">InvokeRegistryMcp</a></code> | <code>string</code> | [Read] agent-registry:InvokeRegistryMcp. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.ListDiscoverableRegistryRecords">ListDiscoverableRegistryRecords</a></code> | <code>string</code> | [List] agent-registry:ListDiscoverableRegistryRecords. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.ListRegistries">ListRegistries</a></code> | <code>string</code> | [List] agent-registry:ListRegistries. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.ListRegistryRecords">ListRegistryRecords</a></code> | <code>string</code> | [List] agent-registry:ListRegistryRecords. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [List] agent-registry:ListTagsForResource. |
+| <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.PutResourcePolicy">PutResourcePolicy</a></code> | <code>string</code> | [Write] agent-registry:PutResourcePolicy. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.SearchDiscoverableRegistryRecords">SearchDiscoverableRegistryRecords</a></code> | <code>string</code> | [Read] agent-registry:SearchDiscoverableRegistryRecords. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.SubmitRegistryRecordForApproval">SubmitRegistryRecordForApproval</a></code> | <code>string</code> | [Write] agent-registry:SubmitRegistryRecordForApproval. |
@@ -412,6 +415,18 @@ public readonly actionGetRegistryRecord: string;
 - *Type:* string
 
 [Read] agent-registry:GetRegistryRecord.
+
+---
+
+##### `actionGetResourcePolicy`<sup>Required</sup> <a name="actionGetResourcePolicy" id="@cdk_utils/iam.agent_registry.AgentRegistryActions.property.actionGetResourcePolicy"></a>
+
+```typescript
+public readonly actionGetResourcePolicy: string;
+```
+
+- *Type:* string
+
+[Read] agent-registry:GetResourcePolicy.
 
 ---
 
@@ -523,6 +538,18 @@ public readonly DeleteRegistryRecord: string;
 
 ---
 
+##### `DeleteResourcePolicy`<sup>Required</sup> <a name="DeleteResourcePolicy" id="@cdk_utils/iam.agent_registry.AgentRegistryActions.property.DeleteResourcePolicy"></a>
+
+```typescript
+public readonly DeleteResourcePolicy: string;
+```
+
+- *Type:* string
+
+[Write] agent-registry:DeleteResourcePolicy.
+
+---
+
 ##### `InvokeRegistryMcp`<sup>Required</sup> <a name="InvokeRegistryMcp" id="@cdk_utils/iam.agent_registry.AgentRegistryActions.property.InvokeRegistryMcp"></a>
 
 ```typescript
@@ -580,6 +607,18 @@ public readonly ListTagsForResource: string;
 - *Type:* string
 
 [List] agent-registry:ListTagsForResource.
+
+---
+
+##### `PutResourcePolicy`<sup>Required</sup> <a name="PutResourcePolicy" id="@cdk_utils/iam.agent_registry.AgentRegistryActions.property.PutResourcePolicy"></a>
+
+```typescript
+public readonly PutResourcePolicy: string;
+```
+
+- *Type:* string
+
+[Write] agent-registry:PutResourcePolicy.
 
 ---
 
@@ -701,9 +740,26 @@ new agent_registry.AgentRegistryConditions()
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryConditions.recordCreatorAccount">recordCreatorAccount</a></code> | Generates a condition block for `agent-registry:RecordCreatorAccount`. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryConditions.requestTag">requestTag</a></code> | Generates a condition block for `aws:RequestTag/${TagKey}`. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryConditions.resourceTag">resourceTag</a></code> | Generates a condition block for `aws:ResourceTag/${TagKey}`. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryConditions.tagKeys">tagKeys</a></code> | Generates a condition block for `aws:TagKeys`. |
+
+---
+
+##### `recordCreatorAccount` <a name="recordCreatorAccount" id="@cdk_utils/iam.agent_registry.AgentRegistryConditions.recordCreatorAccount"></a>
+
+```typescript
+import { agent_registry } from '@cdk_utils/iam'
+
+agent_registry.AgentRegistryConditions.recordCreatorAccount(value: string)
+```
+
+Generates a condition block for `agent-registry:RecordCreatorAccount`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.agent_registry.AgentRegistryConditions.recordCreatorAccount.parameter.value"></a>
+
+- *Type:* string
 
 ---
 
@@ -765,6 +821,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryConditions.property.AWS_TAG_KEYS">AWS_TAG_KEYS</a></code> | <code>string</code> | Condition key: aws:TagKeys (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryConditions.property.CreateRegistryConditionKeys">CreateRegistryConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateRegistry action. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryConditions.property.CreateRegistryRecordConditionKeys">CreateRegistryRecordConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateRegistryRecord action. |
+| <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryConditions.property.RECORD_CREATOR_ACCOUNT">RECORD_CREATOR_ACCOUNT</a></code> | <code>string</code> | Condition key: agent-registry:RecordCreatorAccount (String). |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryConditions.property.TagResourceConditionKeys">TagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TagResource action. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryConditions.property.UntagResourceConditionKeys">UntagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UntagResource action. |
 
@@ -827,6 +884,18 @@ public readonly CreateRegistryRecordConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the CreateRegistryRecord action.
+
+---
+
+##### `RECORD_CREATOR_ACCOUNT`<sup>Required</sup> <a name="RECORD_CREATOR_ACCOUNT" id="@cdk_utils/iam.agent_registry.AgentRegistryConditions.property.RECORD_CREATOR_ACCOUNT"></a>
+
+```typescript
+public readonly RECORD_CREATOR_ACCOUNT: string;
+```
+
+- *Type:* string
+
+Condition key: agent-registry:RecordCreatorAccount (String).
 
 ---
 
