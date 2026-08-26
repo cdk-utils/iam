@@ -5754,8 +5754,6 @@ new quicksight.QuickSightActions()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeApprovalPolicy">DescribeApprovalPolicy</a></code> | <code>string</code> | [Read] quicksight:DescribeApprovalPolicy. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeAssetBundleExportJob">DescribeAssetBundleExportJob</a></code> | <code>string</code> | [Read] quicksight:DescribeAssetBundleExportJob. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeAssetBundleImportJob">DescribeAssetBundleImportJob</a></code> | <code>string</code> | [Read] quicksight:DescribeAssetBundleImportJob. |
-| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeAutomationGroup">DescribeAutomationGroup</a></code> | <code>string</code> | [Read] quicksight:DescribeAutomationGroup. |
-| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeAutomationGroupPermissions">DescribeAutomationGroupPermissions</a></code> | <code>string</code> | [PermissionManagement] quicksight:DescribeAutomationGroupPermissions. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeAutomationJob">DescribeAutomationJob</a></code> | <code>string</code> | [Read] quicksight:DescribeAutomationJob. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeBrand">DescribeBrand</a></code> | <code>string</code> | [Read] quicksight:DescribeBrand. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeBrandAssignment">DescribeBrandAssignment</a></code> | <code>string</code> | [Read] quicksight:DescribeBrandAssignment. |
@@ -5822,9 +5820,9 @@ new quicksight.QuickSightActions()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.ListApps">ListApps</a></code> | <code>string</code> | [List] quicksight:ListApps. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.ListAssetBundleExportJobs">ListAssetBundleExportJobs</a></code> | <code>string</code> | [List] quicksight:ListAssetBundleExportJobs. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.ListAssetBundleImportJobs">ListAssetBundleImportJobs</a></code> | <code>string</code> | [List] quicksight:ListAssetBundleImportJobs. |
-| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.ListAutomationGroups">ListAutomationGroups</a></code> | <code>string</code> | [List] quicksight:ListAutomationGroups. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.ListBrands">ListBrands</a></code> | <code>string</code> | [List] quicksight:ListBrands. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.ListCustomerManagedKeys">ListCustomerManagedKeys</a></code> | <code>string</code> | [List] quicksight:ListCustomerManagedKeys. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.ListCustomPermissionAssignments">ListCustomPermissionAssignments</a></code> | <code>string</code> | [List] quicksight:ListCustomPermissionAssignments. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.ListCustomPermissions">ListCustomPermissions</a></code> | <code>string</code> | [List] quicksight:ListCustomPermissions. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.ListDashboards">ListDashboards</a></code> | <code>string</code> | [List] quicksight:ListDashboards. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.ListDashboardVersions">ListDashboardVersions</a></code> | <code>string</code> | [List] quicksight:ListDashboardVersions. |
@@ -5882,7 +5880,6 @@ new quicksight.QuickSightActions()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.SearchAgents">SearchAgents</a></code> | <code>string</code> | [List] quicksight:SearchAgents. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.SearchAnalyses">SearchAnalyses</a></code> | <code>string</code> | [List] quicksight:SearchAnalyses. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.SearchApps">SearchApps</a></code> | <code>string</code> | [List] quicksight:SearchApps. |
-| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.SearchAutomationGroups">SearchAutomationGroups</a></code> | <code>string</code> | [List] quicksight:SearchAutomationGroups. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.SearchDashboards">SearchDashboards</a></code> | <code>string</code> | [List] quicksight:SearchDashboards. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.SearchDataSets">SearchDataSets</a></code> | <code>string</code> | [List] quicksight:SearchDataSets. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.SearchDataSources">SearchDataSources</a></code> | <code>string</code> | [List] quicksight:SearchDataSources. |
@@ -5918,7 +5915,6 @@ new quicksight.QuickSightActions()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.UpdateApplicationWithTokenExchangeGrant">UpdateApplicationWithTokenExchangeGrant</a></code> | <code>string</code> | [Write] quicksight:UpdateApplicationWithTokenExchangeGrant. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.UpdateAppPermissions">UpdateAppPermissions</a></code> | <code>string</code> | [PermissionManagement] quicksight:UpdateAppPermissions. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.UpdateApprovalPolicy">UpdateApprovalPolicy</a></code> | <code>string</code> | [Write] quicksight:UpdateApprovalPolicy. |
-| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.UpdateAutomationGroupPermissions">UpdateAutomationGroupPermissions</a></code> | <code>string</code> | [PermissionManagement] quicksight:UpdateAutomationGroupPermissions. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.UpdateBrand">UpdateBrand</a></code> | <code>string</code> | [Write] quicksight:UpdateBrand. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.UpdateBrandAssignment">UpdateBrandAssignment</a></code> | <code>string</code> | [Write] quicksight:UpdateBrandAssignment. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.UpdateBrandPublishedVersion">UpdateBrandPublishedVersion</a></code> | <code>string</code> | [Write] quicksight:UpdateBrandPublishedVersion. |
@@ -7430,30 +7426,6 @@ public readonly DescribeAssetBundleImportJob: string;
 
 ---
 
-##### `DescribeAutomationGroup`<sup>Required</sup> <a name="DescribeAutomationGroup" id="@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeAutomationGroup"></a>
-
-```typescript
-public readonly DescribeAutomationGroup: string;
-```
-
-- *Type:* string
-
-[Read] quicksight:DescribeAutomationGroup.
-
----
-
-##### `DescribeAutomationGroupPermissions`<sup>Required</sup> <a name="DescribeAutomationGroupPermissions" id="@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeAutomationGroupPermissions"></a>
-
-```typescript
-public readonly DescribeAutomationGroupPermissions: string;
-```
-
-- *Type:* string
-
-[PermissionManagement] quicksight:DescribeAutomationGroupPermissions.
-
----
-
 ##### `DescribeAutomationJob`<sup>Required</sup> <a name="DescribeAutomationJob" id="@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeAutomationJob"></a>
 
 ```typescript
@@ -8246,18 +8218,6 @@ public readonly ListAssetBundleImportJobs: string;
 
 ---
 
-##### `ListAutomationGroups`<sup>Required</sup> <a name="ListAutomationGroups" id="@cdk_utils/iam.quicksight.QuickSightActions.property.ListAutomationGroups"></a>
-
-```typescript
-public readonly ListAutomationGroups: string;
-```
-
-- *Type:* string
-
-[List] quicksight:ListAutomationGroups.
-
----
-
 ##### `ListBrands`<sup>Required</sup> <a name="ListBrands" id="@cdk_utils/iam.quicksight.QuickSightActions.property.ListBrands"></a>
 
 ```typescript
@@ -8279,6 +8239,18 @@ public readonly ListCustomerManagedKeys: string;
 - *Type:* string
 
 [List] quicksight:ListCustomerManagedKeys.
+
+---
+
+##### `ListCustomPermissionAssignments`<sup>Required</sup> <a name="ListCustomPermissionAssignments" id="@cdk_utils/iam.quicksight.QuickSightActions.property.ListCustomPermissionAssignments"></a>
+
+```typescript
+public readonly ListCustomPermissionAssignments: string;
+```
+
+- *Type:* string
+
+[List] quicksight:ListCustomPermissionAssignments.
 
 ---
 
@@ -8966,18 +8938,6 @@ public readonly SearchApps: string;
 
 ---
 
-##### `SearchAutomationGroups`<sup>Required</sup> <a name="SearchAutomationGroups" id="@cdk_utils/iam.quicksight.QuickSightActions.property.SearchAutomationGroups"></a>
-
-```typescript
-public readonly SearchAutomationGroups: string;
-```
-
-- *Type:* string
-
-[List] quicksight:SearchAutomationGroups.
-
----
-
 ##### `SearchDashboards`<sup>Required</sup> <a name="SearchDashboards" id="@cdk_utils/iam.quicksight.QuickSightActions.property.SearchDashboards"></a>
 
 ```typescript
@@ -9395,18 +9355,6 @@ public readonly UpdateApprovalPolicy: string;
 - *Type:* string
 
 [Write] quicksight:UpdateApprovalPolicy.
-
----
-
-##### `UpdateAutomationGroupPermissions`<sup>Required</sup> <a name="UpdateAutomationGroupPermissions" id="@cdk_utils/iam.quicksight.QuickSightActions.property.UpdateAutomationGroupPermissions"></a>
-
-```typescript
-public readonly UpdateAutomationGroupPermissions: string;
-```
-
-- *Type:* string
-
-[PermissionManagement] quicksight:UpdateAutomationGroupPermissions.
 
 ---
 

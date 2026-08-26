@@ -2523,6 +2523,7 @@ new aidevops.AidevopsOperations()
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsOperations.property.UpdateAgentSpace">UpdateAgentSpace</a></code> | <code>string[]</code> | IAM actions required for the UpdateAgentSpace API call. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsOperations.property.UpdateApprovalAction">UpdateApprovalAction</a></code> | <code>string[]</code> | IAM actions required for the UpdateApprovalAction API call. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsOperations.property.UpdateAsset">UpdateAsset</a></code> | <code>string[]</code> | IAM actions required for the UpdateAsset API call. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsOperations.property.UpdateAssetFile">UpdateAssetFile</a></code> | <code>string[]</code> | IAM actions required for the UpdateAssetFile API call. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsOperations.property.UpdateAssociation">UpdateAssociation</a></code> | <code>string[]</code> | IAM actions required for the UpdateAssociation API call. |
@@ -3157,6 +3158,18 @@ public readonly UpdateAgentSpace: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateAgentSpace API call.
+
+---
+
+##### `UpdateApprovalAction`<sup>Required</sup> <a name="UpdateApprovalAction" id="@cdk_utils/iam.aidevops.AidevopsOperations.property.UpdateApprovalAction"></a>
+
+```typescript
+public readonly UpdateApprovalAction: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateApprovalAction API call.
 
 ---
 

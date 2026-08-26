@@ -215,6 +215,7 @@
         "autoscaling:MaxSize",
         "autoscaling:MinSize",
         "autoscaling:OperatorPrincipal",
+        "autoscaling:TargetCapacityTypes",
         "autoscaling:TargetGroupARNs",
         "autoscaling:TrafficSourceIdentifiers",
         "autoscaling:VPCZoneIdentifiers",
@@ -1372,7 +1373,8 @@
     {
       "Name": "StartInstanceRefresh",
       "ActionConditionKeys": [
-        "autoscaling:ImageId"
+        "autoscaling:ImageId",
+        "autoscaling:TargetCapacityTypes"
       ],
       "Annotations": {
         "Properties": {
@@ -1455,6 +1457,7 @@
         "autoscaling:LaunchTemplateVersionSpecified",
         "autoscaling:MaxSize",
         "autoscaling:MinSize",
+        "autoscaling:TargetCapacityTypes",
         "autoscaling:VPCZoneIdentifiers"
       ],
       "Annotations": {
@@ -1581,6 +1584,12 @@
       "Name": "autoscaling:SpotPrice",
       "Types": [
         "Numeric"
+      ]
+    },
+    {
+      "Name": "autoscaling:TargetCapacityTypes",
+      "Types": [
+        "ArrayOfString"
       ]
     },
     {

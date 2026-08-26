@@ -260,12 +260,6 @@ export class QuickSightActions {
 	/** [Read] quicksight:DescribeAssetBundleImportJob */
 	static readonly DescribeAssetBundleImportJob =
 		"quicksight:DescribeAssetBundleImportJob";
-	/** [Read] quicksight:DescribeAutomationGroup */
-	static readonly DescribeAutomationGroup =
-		"quicksight:DescribeAutomationGroup";
-	/** [PermissionManagement] quicksight:DescribeAutomationGroupPermissions */
-	static readonly DescribeAutomationGroupPermissions =
-		"quicksight:DescribeAutomationGroupPermissions";
 	/** [Read] quicksight:DescribeAutomationJob */
 	static readonly DescribeAutomationJob = "quicksight:DescribeAutomationJob";
 	/** [Read] quicksight:DescribeBrand */
@@ -456,10 +450,11 @@ export class QuickSightActions {
 	/** [List] quicksight:ListAssetBundleImportJobs */
 	static readonly ListAssetBundleImportJobs =
 		"quicksight:ListAssetBundleImportJobs";
-	/** [List] quicksight:ListAutomationGroups */
-	static readonly ListAutomationGroups = "quicksight:ListAutomationGroups";
 	/** [List] quicksight:ListBrands */
 	static readonly ListBrands = "quicksight:ListBrands";
+	/** [List] quicksight:ListCustomPermissionAssignments */
+	static readonly ListCustomPermissionAssignments =
+		"quicksight:ListCustomPermissionAssignments";
 	/** [List] quicksight:ListCustomPermissions */
 	static readonly ListCustomPermissions = "quicksight:ListCustomPermissions";
 	/** [List] quicksight:ListCustomerManagedKeys */
@@ -586,8 +581,6 @@ export class QuickSightActions {
 	static readonly SearchAnalyses = "quicksight:SearchAnalyses";
 	/** [List] quicksight:SearchApps */
 	static readonly SearchApps = "quicksight:SearchApps";
-	/** [List] quicksight:SearchAutomationGroups */
-	static readonly SearchAutomationGroups = "quicksight:SearchAutomationGroups";
 	/** [List] quicksight:SearchDashboards */
 	static readonly SearchDashboards = "quicksight:SearchDashboards";
 	/** [List] quicksight:SearchDataSets */
@@ -667,9 +660,6 @@ export class QuickSightActions {
 		"quicksight:UpdateApplicationWithTokenExchangeGrant";
 	/** [Write] quicksight:UpdateApprovalPolicy */
 	static readonly UpdateApprovalPolicy = "quicksight:UpdateApprovalPolicy";
-	/** [PermissionManagement] quicksight:UpdateAutomationGroupPermissions */
-	static readonly UpdateAutomationGroupPermissions =
-		"quicksight:UpdateAutomationGroupPermissions";
 	/** [Write] quicksight:UpdateBrand */
 	static readonly UpdateBrand = "quicksight:UpdateBrand";
 	/** [Write] quicksight:UpdateBrandAssignment */
@@ -828,7 +818,6 @@ export class QuickSightActions {
 		QuickSightActions.DescribeApprovalPolicy,
 		QuickSightActions.DescribeAssetBundleExportJob,
 		QuickSightActions.DescribeAssetBundleImportJob,
-		QuickSightActions.DescribeAutomationGroup,
 		QuickSightActions.DescribeAutomationJob,
 		QuickSightActions.DescribeBrand,
 		QuickSightActions.DescribeBrandAssignment,
@@ -1073,8 +1062,8 @@ export class QuickSightActions {
 		QuickSightActions.ListApps,
 		QuickSightActions.ListAssetBundleExportJobs,
 		QuickSightActions.ListAssetBundleImportJobs,
-		QuickSightActions.ListAutomationGroups,
 		QuickSightActions.ListBrands,
+		QuickSightActions.ListCustomPermissionAssignments,
 		QuickSightActions.ListCustomPermissions,
 		QuickSightActions.ListCustomerManagedKeys,
 		QuickSightActions.ListDashboardVersions,
@@ -1120,7 +1109,6 @@ export class QuickSightActions {
 		QuickSightActions.SearchAgents,
 		QuickSightActions.SearchAnalyses,
 		QuickSightActions.SearchApps,
-		QuickSightActions.SearchAutomationGroups,
 		QuickSightActions.SearchDashboards,
 		QuickSightActions.SearchDataSets,
 		QuickSightActions.SearchDataSources,
@@ -1135,7 +1123,6 @@ export class QuickSightActions {
 	/** All permission-management-level actions. */
 	static readonly AllPermissionManagementActions: string[] = [
 		QuickSightActions.AllowVendedLogDeliveryForResource,
-		QuickSightActions.DescribeAutomationGroupPermissions,
 		QuickSightActions.DescribeKnowledgeBasePermissions,
 		QuickSightActions.DescribeSpacePermissions,
 		QuickSightActions.DescribeTopicPermissions,
@@ -1143,7 +1130,6 @@ export class QuickSightActions {
 		QuickSightActions.UpdateAgentPermissions,
 		QuickSightActions.UpdateAnalysisPermissions,
 		QuickSightActions.UpdateAppPermissions,
-		QuickSightActions.UpdateAutomationGroupPermissions,
 		QuickSightActions.UpdateDashboardPermissions,
 		QuickSightActions.UpdateDataSetPermissions,
 		QuickSightActions.UpdateDataSourcePermissions,

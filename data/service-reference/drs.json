@@ -2359,6 +2359,10 @@
         {
           "Name": "CreateRecoveryPlan",
           "Service": "drs"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "drs"
         }
       ],
       "SDK": [

@@ -808,6 +808,8 @@ export class AidevopsOperations {
 	static readonly UntagResource: string[] = ["aidevops:UntagResource"];
 	/** IAM actions required for the UpdateAgentSpace API call. */
 	static readonly UpdateAgentSpace: string[] = ["aidevops:UpdateAgentSpace"];
+	/** IAM actions required for the UpdateApprovalAction API call. */
+	static readonly UpdateApprovalAction: string[] = [];
 	/** IAM actions required for the UpdateAsset API call. */
 	static readonly UpdateAsset: string[] = [];
 	/** IAM actions required for the UpdateAssetFile API call. */
