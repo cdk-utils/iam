@@ -2184,46 +2184,6 @@
       }
     },
     {
-      "Name": "DescribeAutomationGroup",
-      "Annotations": {
-        "Properties": {
-          "IsList": false,
-          "IsPermissionManagement": false,
-          "IsTaggingOnly": false,
-          "IsWrite": false
-        }
-      },
-      "Resources": [
-        {
-          "Name": "automationGroup"
-        }
-      ],
-      "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
-      }
-    },
-    {
-      "Name": "DescribeAutomationGroupPermissions",
-      "Annotations": {
-        "Properties": {
-          "IsList": false,
-          "IsPermissionManagement": true,
-          "IsTaggingOnly": false,
-          "IsWrite": true
-        }
-      },
-      "Resources": [
-        {
-          "Name": "automationGroup"
-        }
-      ],
-      "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
-      }
-    },
-    {
       "Name": "DescribeAutomationJob",
       "Annotations": {
         "Properties": {
@@ -3700,7 +3660,7 @@
       }
     },
     {
-      "Name": "ListAutomationGroups",
+      "Name": "ListBrands",
       "Annotations": {
         "Properties": {
           "IsList": true,
@@ -3715,7 +3675,7 @@
       }
     },
     {
-      "Name": "ListBrands",
+      "Name": "ListCustomPermissionAssignments",
       "Annotations": {
         "Properties": {
           "IsList": true,
@@ -4885,21 +4845,6 @@
       }
     },
     {
-      "Name": "SearchAutomationGroups",
-      "Annotations": {
-        "Properties": {
-          "IsList": true,
-          "IsPermissionManagement": false,
-          "IsTaggingOnly": false,
-          "IsWrite": false
-        }
-      },
-      "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
-      }
-    },
-    {
       "Name": "SearchDashboards",
       "Annotations": {
         "Properties": {
@@ -5673,26 +5618,6 @@
       "Resources": [
         {
           "Name": "approvalPolicy"
-        }
-      ],
-      "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
-      }
-    },
-    {
-      "Name": "UpdateAutomationGroupPermissions",
-      "Annotations": {
-        "Properties": {
-          "IsList": false,
-          "IsPermissionManagement": true,
-          "IsTaggingOnly": false,
-          "IsWrite": true
-        }
-      },
-      "Resources": [
-        {
-          "Name": "automationGroup"
         }
       ],
       "SupportedBy": {

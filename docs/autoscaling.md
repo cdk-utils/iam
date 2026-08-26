@@ -1383,6 +1383,7 @@ new autoscaling.AutoscalingConditions()
 | <code><a href="#@cdk_utils/iam.autoscaling.AutoscalingConditions.resourceTag">resourceTag</a></code> | Generates a condition block for `autoscaling:ResourceTag/${TagKey}`. |
 | <code><a href="#@cdk_utils/iam.autoscaling.AutoscalingConditions.spotPrice">spotPrice</a></code> | Generates a condition block for `autoscaling:SpotPrice`. |
 | <code><a href="#@cdk_utils/iam.autoscaling.AutoscalingConditions.tagKeys">tagKeys</a></code> | Generates a condition block for `aws:TagKeys`. |
+| <code><a href="#@cdk_utils/iam.autoscaling.AutoscalingConditions.targetCapacityTypes">targetCapacityTypes</a></code> | Generates a condition block for `autoscaling:TargetCapacityTypes`. |
 | <code><a href="#@cdk_utils/iam.autoscaling.AutoscalingConditions.targetGroupArNs">targetGroupArNs</a></code> | Generates a condition block for `autoscaling:TargetGroupARNs`. |
 | <code><a href="#@cdk_utils/iam.autoscaling.AutoscalingConditions.trafficSourceIdentifiers">trafficSourceIdentifiers</a></code> | Generates a condition block for `autoscaling:TrafficSourceIdentifiers`. |
 | <code><a href="#@cdk_utils/iam.autoscaling.AutoscalingConditions.vpcZoneIdentifiers">vpcZoneIdentifiers</a></code> | Generates a condition block for `autoscaling:VPCZoneIdentifiers`. |
@@ -1693,6 +1694,22 @@ Generates a condition block for `aws:TagKeys`.
 
 ---
 
+##### `targetCapacityTypes` <a name="targetCapacityTypes" id="@cdk_utils/iam.autoscaling.AutoscalingConditions.targetCapacityTypes"></a>
+
+```typescript
+import { autoscaling } from '@cdk_utils/iam'
+
+autoscaling.AutoscalingConditions.targetCapacityTypes(values: string[])
+```
+
+Generates a condition block for `autoscaling:TargetCapacityTypes`.
+
+###### `values`<sup>Required</sup> <a name="values" id="@cdk_utils/iam.autoscaling.AutoscalingConditions.targetCapacityTypes.parameter.values"></a>
+
+- *Type:* string[]
+
+---
+
 ##### `targetGroupArNs` <a name="targetGroupArNs" id="@cdk_utils/iam.autoscaling.AutoscalingConditions.targetGroupArNs"></a>
 
 ```typescript
@@ -1778,6 +1795,7 @@ Generates a condition block for `autoscaling:VPCZoneIdentifiers`.
 | <code><a href="#@cdk_utils/iam.autoscaling.AutoscalingConditions.property.RESOURCE_TAG">RESOURCE_TAG</a></code> | <code>string</code> | Condition key: autoscaling:ResourceTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.autoscaling.AutoscalingConditions.property.SPOT_PRICE">SPOT_PRICE</a></code> | <code>string</code> | Condition key: autoscaling:SpotPrice (Numeric). |
 | <code><a href="#@cdk_utils/iam.autoscaling.AutoscalingConditions.property.StartInstanceRefreshConditionKeys">StartInstanceRefreshConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartInstanceRefresh action. |
+| <code><a href="#@cdk_utils/iam.autoscaling.AutoscalingConditions.property.TARGET_CAPACITY_TYPES">TARGET_CAPACITY_TYPES</a></code> | <code>string</code> | Condition key: autoscaling:TargetCapacityTypes (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.autoscaling.AutoscalingConditions.property.TARGET_GROUP_AR_NS">TARGET_GROUP_AR_NS</a></code> | <code>string</code> | Condition key: autoscaling:TargetGroupARNs (ArrayOfARN). |
 | <code><a href="#@cdk_utils/iam.autoscaling.AutoscalingConditions.property.TRAFFIC_SOURCE_IDENTIFIERS">TRAFFIC_SOURCE_IDENTIFIERS</a></code> | <code>string</code> | Condition key: autoscaling:TrafficSourceIdentifiers (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.autoscaling.AutoscalingConditions.property.UpdateAutoScalingGroupConditionKeys">UpdateAutoScalingGroupConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateAutoScalingGroup action. |
@@ -2166,6 +2184,18 @@ public readonly StartInstanceRefreshConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the StartInstanceRefresh action.
+
+---
+
+##### `TARGET_CAPACITY_TYPES`<sup>Required</sup> <a name="TARGET_CAPACITY_TYPES" id="@cdk_utils/iam.autoscaling.AutoscalingConditions.property.TARGET_CAPACITY_TYPES"></a>
+
+```typescript
+public readonly TARGET_CAPACITY_TYPES: string;
+```
+
+- *Type:* string
+
+Condition key: autoscaling:TargetCapacityTypes (ArrayOfString).
 
 ---
 

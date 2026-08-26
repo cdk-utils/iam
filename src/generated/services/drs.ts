@@ -959,7 +959,10 @@ export class DRSOperations {
 		"drs:TagResource",
 	];
 	/** IAM actions required for the CreateRecoveryPlan API call. */
-	static readonly CreateRecoveryPlan: string[] = ["drs:CreateRecoveryPlan"];
+	static readonly CreateRecoveryPlan: string[] = [
+		"drs:CreateRecoveryPlan",
+		"drs:TagResource",
+	];
 	/** IAM actions required for the CreateRecoveryPlanStep API call. */
 	static readonly CreateRecoveryPlanStep: string[] = [
 		"drs:CreateRecoveryPlanStep",

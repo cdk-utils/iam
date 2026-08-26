@@ -678,6 +678,7 @@ export class AutoscalingConditions {
 		"autoscaling:MaxSize",
 		"autoscaling:MinSize",
 		"autoscaling:OperatorPrincipal",
+		"autoscaling:TargetCapacityTypes",
 		"autoscaling:TargetGroupARNs",
 		"autoscaling:TrafficSourceIdentifiers",
 		"autoscaling:VPCZoneIdentifiers",
@@ -723,6 +724,7 @@ export class AutoscalingConditions {
 	/** Condition keys applicable to the StartInstanceRefresh action. */
 	static readonly StartInstanceRefreshConditionKeys: string[] = [
 		"autoscaling:ImageId",
+		"autoscaling:TargetCapacityTypes",
 	];
 	/** Condition keys applicable to the UpdateAutoScalingGroup action. */
 	static readonly UpdateAutoScalingGroupConditionKeys: string[] = [
@@ -734,6 +736,7 @@ export class AutoscalingConditions {
 		"autoscaling:LaunchTemplateVersionSpecified",
 		"autoscaling:MaxSize",
 		"autoscaling:MinSize",
+		"autoscaling:TargetCapacityTypes",
 		"autoscaling:VPCZoneIdentifiers",
 	];
 
@@ -776,6 +779,8 @@ export class AutoscalingConditions {
 	static readonly RESOURCE_TAG = "autoscaling:ResourceTag/${TagKey}";
 	/** Condition key: autoscaling:SpotPrice (Numeric) */
 	static readonly SPOT_PRICE = "autoscaling:SpotPrice";
+	/** Condition key: autoscaling:TargetCapacityTypes (ArrayOfString) */
+	static readonly TARGET_CAPACITY_TYPES = "autoscaling:TargetCapacityTypes";
 	/** Condition key: autoscaling:TargetGroupARNs (ArrayOfARN) */
 	static readonly TARGET_GROUP_AR_NS = "autoscaling:TargetGroupARNs";
 	/** Condition key: autoscaling:TrafficSourceIdentifiers (ArrayOfString) */
@@ -937,6 +942,19 @@ export class AutoscalingConditions {
 	 */
 	static spotPrice(value: number): Record<string, Record<string, number>> {
 		return { NumericEquals: { "autoscaling:SpotPrice": value } };
+	}
+
+	/**
+	 * Generates a condition block for `autoscaling:TargetCapacityTypes`.
+	 */
+	static targetCapacityTypes(
+		values: string[],
+	): Record<string, Record<string, string[]>> {
+		return {
+			"ForAllValues:StringEquals": {
+				"autoscaling:TargetCapacityTypes": values,
+			},
+		};
 	}
 
 	/**
