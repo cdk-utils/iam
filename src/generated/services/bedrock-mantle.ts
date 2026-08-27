@@ -23,6 +23,8 @@ export class BedrockMantleActions {
 	static readonly CancelFineTuningJob = "bedrock-mantle:CancelFineTuningJob";
 	/** [Write] bedrock-mantle:CancelInference */
 	static readonly CancelInference = "bedrock-mantle:CancelInference";
+	/** [Read] bedrock-mantle:CountTokens */
+	static readonly CountTokens = "bedrock-mantle:CountTokens";
 	/** [Write] bedrock-mantle:CreateCustomizedModel */
 	static readonly CreateCustomizedModel =
 		"bedrock-mantle:CreateCustomizedModel";
@@ -97,6 +99,7 @@ export class BedrockMantleActions {
 
 	/** All read-level actions. */
 	static readonly AllReadActions: string[] = [
+		BedrockMantleActions.CountTokens,
 		BedrockMantleActions.actionGetAccountDataRetention,
 		BedrockMantleActions.actionGetCustomizedModel,
 		BedrockMantleActions.actionGetFile,
@@ -358,6 +361,8 @@ export class BedrockMantleConditions {
 	static readonly CancelFineTuningJobConditionKeys: string[] = [
 		"bedrock-mantle:FineTuningJob",
 	];
+	/** Condition keys applicable to the CountTokens action. */
+	static readonly CountTokensConditionKeys: string[] = ["bedrock-mantle:Model"];
 	/** Condition keys applicable to the CreateCustomizedModel action. */
 	static readonly CreateCustomizedModelConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",

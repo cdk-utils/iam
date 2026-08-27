@@ -491,6 +491,7 @@ new bedrock_mantle.BedrockMantleActions()
 | <code><a href="#@cdk_utils/iam.bedrock_mantle.BedrockMantleActions.property.CallWithBearerToken">CallWithBearerToken</a></code> | <code>string</code> | [List] bedrock-mantle:CallWithBearerToken. |
 | <code><a href="#@cdk_utils/iam.bedrock_mantle.BedrockMantleActions.property.CancelFineTuningJob">CancelFineTuningJob</a></code> | <code>string</code> | [Write] bedrock-mantle:CancelFineTuningJob. |
 | <code><a href="#@cdk_utils/iam.bedrock_mantle.BedrockMantleActions.property.CancelInference">CancelInference</a></code> | <code>string</code> | [Write] bedrock-mantle:CancelInference. |
+| <code><a href="#@cdk_utils/iam.bedrock_mantle.BedrockMantleActions.property.CountTokens">CountTokens</a></code> | <code>string</code> | [Read] bedrock-mantle:CountTokens. |
 | <code><a href="#@cdk_utils/iam.bedrock_mantle.BedrockMantleActions.property.CreateCustomizedModel">CreateCustomizedModel</a></code> | <code>string</code> | [Write] bedrock-mantle:CreateCustomizedModel. |
 | <code><a href="#@cdk_utils/iam.bedrock_mantle.BedrockMantleActions.property.CreateFile">CreateFile</a></code> | <code>string</code> | [Write] bedrock-mantle:CreateFile. |
 | <code><a href="#@cdk_utils/iam.bedrock_mantle.BedrockMantleActions.property.CreateFineTuningJob">CreateFineTuningJob</a></code> | <code>string</code> | [Write] bedrock-mantle:CreateFineTuningJob. |
@@ -732,6 +733,18 @@ public readonly CancelInference: string;
 - *Type:* string
 
 [Write] bedrock-mantle:CancelInference.
+
+---
+
+##### `CountTokens`<sup>Required</sup> <a name="CountTokens" id="@cdk_utils/iam.bedrock_mantle.BedrockMantleActions.property.CountTokens"></a>
+
+```typescript
+public readonly CountTokens: string;
+```
+
+- *Type:* string
+
+[Read] bedrock-mantle:CountTokens.
 
 ---
 
@@ -1278,6 +1291,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.bedrock_mantle.BedrockMantleConditions.property.BEARER_TOKEN_TYPE">BEARER_TOKEN_TYPE</a></code> | <code>string</code> | Condition key: bedrock-mantle:BearerTokenType (String). |
 | <code><a href="#@cdk_utils/iam.bedrock_mantle.BedrockMantleConditions.property.CallWithBearerTokenConditionKeys">CallWithBearerTokenConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CallWithBearerToken action. |
 | <code><a href="#@cdk_utils/iam.bedrock_mantle.BedrockMantleConditions.property.CancelFineTuningJobConditionKeys">CancelFineTuningJobConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CancelFineTuningJob action. |
+| <code><a href="#@cdk_utils/iam.bedrock_mantle.BedrockMantleConditions.property.CountTokensConditionKeys">CountTokensConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CountTokens action. |
 | <code><a href="#@cdk_utils/iam.bedrock_mantle.BedrockMantleConditions.property.CreateCustomizedModelConditionKeys">CreateCustomizedModelConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateCustomizedModel action. |
 | <code><a href="#@cdk_utils/iam.bedrock_mantle.BedrockMantleConditions.property.CreateFineTuningJobConditionKeys">CreateFineTuningJobConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateFineTuningJob action. |
 | <code><a href="#@cdk_utils/iam.bedrock_mantle.BedrockMantleConditions.property.CreateInferenceConditionKeys">CreateInferenceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateInference action. |
@@ -1407,6 +1421,18 @@ public readonly CancelFineTuningJobConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the CancelFineTuningJob action.
+
+---
+
+##### `CountTokensConditionKeys`<sup>Required</sup> <a name="CountTokensConditionKeys" id="@cdk_utils/iam.bedrock_mantle.BedrockMantleConditions.property.CountTokensConditionKeys"></a>
+
+```typescript
+public readonly CountTokensConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CountTokens action.
 
 ---
 

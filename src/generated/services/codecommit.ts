@@ -79,6 +79,8 @@ export class CodeCommitActions {
 		"codecommit:GetApprovalRuleTemplate";
 	/** [Read] codecommit:GetBlob */
 	static readonly actionGetBlob = "codecommit:GetBlob";
+	/** [Read] codecommit:GetBlobDifferences */
+	static readonly actionGetBlobDifferences = "codecommit:GetBlobDifferences";
 	/** [Read] codecommit:GetBranch */
 	static readonly actionGetBranch = "codecommit:GetBranch";
 	/** [Read] codecommit:GetComment */
@@ -245,6 +247,7 @@ export class CodeCommitActions {
 		CodeCommitActions.EvaluatePullRequestApprovalRules,
 		CodeCommitActions.actionGetApprovalRuleTemplate,
 		CodeCommitActions.actionGetBlob,
+		CodeCommitActions.actionGetBlobDifferences,
 		CodeCommitActions.actionGetBranch,
 		CodeCommitActions.actionGetComment,
 		CodeCommitActions.actionGetCommentReactions,
@@ -496,7 +499,9 @@ export class CodeCommitOperations {
 	/** IAM actions required for the GetBlob API call. */
 	static readonly opGetBlob: string[] = ["codecommit:GetBlob"];
 	/** IAM actions required for the GetBlobDifferences API call. */
-	static readonly opGetBlobDifferences: string[] = [];
+	static readonly opGetBlobDifferences: string[] = [
+		"codecommit:GetBlobDifferences",
+	];
 	/** IAM actions required for the GetBranch API call. */
 	static readonly opGetBranch: string[] = ["codecommit:GetBranch"];
 	/** IAM actions required for the GetComment API call. */

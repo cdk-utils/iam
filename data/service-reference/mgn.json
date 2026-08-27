@@ -1232,6 +1232,26 @@
       }
     },
     {
+      "Name": "ListNetworkMigrationExecutionArtifacts",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NetworkMigrationDefinitionResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ListNetworkMigrationExecutions",
       "Annotations": {
         "Properties": {
