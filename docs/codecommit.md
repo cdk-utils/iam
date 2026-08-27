@@ -179,6 +179,7 @@ new codecommit.CodeCommitActions()
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.codecommit.CodeCommitActions.property.actionGetApprovalRuleTemplate">actionGetApprovalRuleTemplate</a></code> | <code>string</code> | [Read] codecommit:GetApprovalRuleTemplate. |
 | <code><a href="#@cdk_utils/iam.codecommit.CodeCommitActions.property.actionGetBlob">actionGetBlob</a></code> | <code>string</code> | [Read] codecommit:GetBlob. |
+| <code><a href="#@cdk_utils/iam.codecommit.CodeCommitActions.property.actionGetBlobDifferences">actionGetBlobDifferences</a></code> | <code>string</code> | [Read] codecommit:GetBlobDifferences. |
 | <code><a href="#@cdk_utils/iam.codecommit.CodeCommitActions.property.actionGetBranch">actionGetBranch</a></code> | <code>string</code> | [Read] codecommit:GetBranch. |
 | <code><a href="#@cdk_utils/iam.codecommit.CodeCommitActions.property.actionGetComment">actionGetComment</a></code> | <code>string</code> | [Read] codecommit:GetComment. |
 | <code><a href="#@cdk_utils/iam.codecommit.CodeCommitActions.property.actionGetCommentReactions">actionGetCommentReactions</a></code> | <code>string</code> | [Read] codecommit:GetCommentReactions. |
@@ -297,6 +298,18 @@ public readonly actionGetBlob: string;
 - *Type:* string
 
 [Read] codecommit:GetBlob.
+
+---
+
+##### `actionGetBlobDifferences`<sup>Required</sup> <a name="actionGetBlobDifferences" id="@cdk_utils/iam.codecommit.CodeCommitActions.property.actionGetBlobDifferences"></a>
+
+```typescript
+public readonly actionGetBlobDifferences: string;
+```
+
+- *Type:* string
+
+[Read] codecommit:GetBlobDifferences.
 
 ---
 

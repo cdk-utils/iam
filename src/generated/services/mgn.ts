@@ -175,6 +175,9 @@ export class MgnActions {
 	/** [List] mgn:ListNetworkMigrationDeployments */
 	static readonly ListNetworkMigrationDeployments =
 		"mgn:ListNetworkMigrationDeployments";
+	/** [List] mgn:ListNetworkMigrationExecutionArtifacts */
+	static readonly ListNetworkMigrationExecutionArtifacts =
+		"mgn:ListNetworkMigrationExecutionArtifacts";
 	/** [List] mgn:ListNetworkMigrationExecutions */
 	static readonly ListNetworkMigrationExecutions =
 		"mgn:ListNetworkMigrationExecutions";
@@ -477,6 +480,7 @@ export class MgnActions {
 		MgnActions.ListNetworkMigrationDeployedStacks,
 		MgnActions.ListNetworkMigrationDeployedStacksDeletions,
 		MgnActions.ListNetworkMigrationDeployments,
+		MgnActions.ListNetworkMigrationExecutionArtifacts,
 		MgnActions.ListNetworkMigrationExecutions,
 		MgnActions.ListNetworkMigrationMapperSegmentConstructs,
 		MgnActions.ListNetworkMigrationMapperSegments,

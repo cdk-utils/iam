@@ -546,6 +546,26 @@
       }
     },
     {
+      "Name": "GetBlobDifferences",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "GetBranch",
       "Annotations": {
         "Properties": {
@@ -2245,6 +2265,12 @@
     },
     {
       "Name": "GetBlobDifferences",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBlobDifferences",
+          "Service": "codecommit"
+        }
+      ],
       "SDK": [
         {
           "Name": "codecommit",

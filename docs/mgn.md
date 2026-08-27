@@ -1728,6 +1728,7 @@ new mgn.MgnActions()
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.ListNetworkMigrationDeployedStacks">ListNetworkMigrationDeployedStacks</a></code> | <code>string</code> | [List] mgn:ListNetworkMigrationDeployedStacks. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.ListNetworkMigrationDeployedStacksDeletions">ListNetworkMigrationDeployedStacksDeletions</a></code> | <code>string</code> | [List] mgn:ListNetworkMigrationDeployedStacksDeletions. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.ListNetworkMigrationDeployments">ListNetworkMigrationDeployments</a></code> | <code>string</code> | [List] mgn:ListNetworkMigrationDeployments. |
+| <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.ListNetworkMigrationExecutionArtifacts">ListNetworkMigrationExecutionArtifacts</a></code> | <code>string</code> | [List] mgn:ListNetworkMigrationExecutionArtifacts. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.ListNetworkMigrationExecutions">ListNetworkMigrationExecutions</a></code> | <code>string</code> | [List] mgn:ListNetworkMigrationExecutions. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.ListNetworkMigrationMapperSegmentConstructs">ListNetworkMigrationMapperSegmentConstructs</a></code> | <code>string</code> | [List] mgn:ListNetworkMigrationMapperSegmentConstructs. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.ListNetworkMigrationMapperSegments">ListNetworkMigrationMapperSegments</a></code> | <code>string</code> | [List] mgn:ListNetworkMigrationMapperSegments. |
@@ -2650,6 +2651,18 @@ public readonly ListNetworkMigrationDeployments: string;
 - *Type:* string
 
 [List] mgn:ListNetworkMigrationDeployments.
+
+---
+
+##### `ListNetworkMigrationExecutionArtifacts`<sup>Required</sup> <a name="ListNetworkMigrationExecutionArtifacts" id="@cdk_utils/iam.mgn.MgnActions.property.ListNetworkMigrationExecutionArtifacts"></a>
+
+```typescript
+public readonly ListNetworkMigrationExecutionArtifacts: string;
+```
+
+- *Type:* string
+
+[List] mgn:ListNetworkMigrationExecutionArtifacts.
 
 ---
 
