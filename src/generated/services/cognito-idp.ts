@@ -606,6 +606,8 @@ export class CognitoIdpOperations {
 	];
 	/** IAM actions required for the AdminCreateUser API call. */
 	static readonly AdminCreateUser: string[] = ["cognito-idp:AdminCreateUser"];
+	/** IAM actions required for the AdminDeleteSoftwareToken API call. */
+	static readonly AdminDeleteSoftwareToken: string[] = [];
 	/** IAM actions required for the AdminDeleteUser API call. */
 	static readonly AdminDeleteUser: string[] = ["cognito-idp:AdminDeleteUser"];
 	/** IAM actions required for the AdminDeleteUserAttributes API call. */

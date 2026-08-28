@@ -31,6 +31,7 @@ new support.SupportActions()
 | <code><a href="#@cdk_utils/iam.support.SupportActions.property.actionGetInteraction">actionGetInteraction</a></code> | <code>string</code> | [Read] support:GetInteraction. |
 | <code><a href="#@cdk_utils/iam.support.SupportActions.property.AddAttachmentsToSet">AddAttachmentsToSet</a></code> | <code>string</code> | [Write] support:AddAttachmentsToSet. |
 | <code><a href="#@cdk_utils/iam.support.SupportActions.property.AddCommunicationToCase">AddCommunicationToCase</a></code> | <code>string</code> | [Write] support:AddCommunicationToCase. |
+| <code><a href="#@cdk_utils/iam.support.SupportActions.property.AddRelatedItemToCase">AddRelatedItemToCase</a></code> | <code>string</code> | [Write] support:AddRelatedItemToCase. |
 | <code><a href="#@cdk_utils/iam.support.SupportActions.property.AllListActions">AllListActions</a></code> | <code>string[]</code> | All list-level actions. |
 | <code><a href="#@cdk_utils/iam.support.SupportActions.property.AllPermissionManagementActions">AllPermissionManagementActions</a></code> | <code>string[]</code> | All permission-management-level actions. |
 | <code><a href="#@cdk_utils/iam.support.SupportActions.property.AllReadActions">AllReadActions</a></code> | <code>string[]</code> | All read-level actions. |
@@ -45,6 +46,7 @@ new support.SupportActions()
 | <code><a href="#@cdk_utils/iam.support.SupportActions.property.DescribeCommunications">DescribeCommunications</a></code> | <code>string</code> | [Read] support:DescribeCommunications. |
 | <code><a href="#@cdk_utils/iam.support.SupportActions.property.DescribeCreateCaseOptions">DescribeCreateCaseOptions</a></code> | <code>string</code> | [Read] support:DescribeCreateCaseOptions. |
 | <code><a href="#@cdk_utils/iam.support.SupportActions.property.DescribeIssueTypes">DescribeIssueTypes</a></code> | <code>string</code> | [Read] support:DescribeIssueTypes. |
+| <code><a href="#@cdk_utils/iam.support.SupportActions.property.DescribeRelatedItems">DescribeRelatedItems</a></code> | <code>string</code> | [Read] support:DescribeRelatedItems. |
 | <code><a href="#@cdk_utils/iam.support.SupportActions.property.DescribeServices">DescribeServices</a></code> | <code>string</code> | [Read] support:DescribeServices. |
 | <code><a href="#@cdk_utils/iam.support.SupportActions.property.DescribeSeverityLevels">DescribeSeverityLevels</a></code> | <code>string</code> | [Read] support:DescribeSeverityLevels. |
 | <code><a href="#@cdk_utils/iam.support.SupportActions.property.DescribeSupportedLanguages">DescribeSupportedLanguages</a></code> | <code>string</code> | [Read] support:DescribeSupportedLanguages. |
@@ -53,6 +55,8 @@ new support.SupportActions()
 | <code><a href="#@cdk_utils/iam.support.SupportActions.property.DescribeTrustedAdvisorCheckResult">DescribeTrustedAdvisorCheckResult</a></code> | <code>string</code> | [Read] support:DescribeTrustedAdvisorCheckResult. |
 | <code><a href="#@cdk_utils/iam.support.SupportActions.property.DescribeTrustedAdvisorChecks">DescribeTrustedAdvisorChecks</a></code> | <code>string</code> | [Read] support:DescribeTrustedAdvisorChecks. |
 | <code><a href="#@cdk_utils/iam.support.SupportActions.property.DescribeTrustedAdvisorCheckSummaries">DescribeTrustedAdvisorCheckSummaries</a></code> | <code>string</code> | [Read] support:DescribeTrustedAdvisorCheckSummaries. |
+| <code><a href="#@cdk_utils/iam.support.SupportActions.property.DisconnectLiveContactForCase">DisconnectLiveContactForCase</a></code> | <code>string</code> | [Write] support:DisconnectLiveContactForCase. |
+| <code><a href="#@cdk_utils/iam.support.SupportActions.property.DownloadAttachment">DownloadAttachment</a></code> | <code>string</code> | [Write] support:DownloadAttachment. |
 | <code><a href="#@cdk_utils/iam.support.SupportActions.property.InitiateCallForCase">InitiateCallForCase</a></code> | <code>string</code> | [Write] support:InitiateCallForCase. |
 | <code><a href="#@cdk_utils/iam.support.SupportActions.property.InitiateChatForCase">InitiateChatForCase</a></code> | <code>string</code> | [Write] support:InitiateChatForCase. |
 | <code><a href="#@cdk_utils/iam.support.SupportActions.property.InitiateLiveContactForCase">InitiateLiveContactForCase</a></code> | <code>string</code> | [Write] support:InitiateLiveContactForCase. |
@@ -68,6 +72,7 @@ new support.SupportActions()
 | <code><a href="#@cdk_utils/iam.support.SupportActions.property.StartInteraction">StartInteraction</a></code> | <code>string</code> | [Write] support:StartInteraction. |
 | <code><a href="#@cdk_utils/iam.support.SupportActions.property.UpdateCaseSeverity">UpdateCaseSeverity</a></code> | <code>string</code> | [Write] support:UpdateCaseSeverity. |
 | <code><a href="#@cdk_utils/iam.support.SupportActions.property.UpdateInteraction">UpdateInteraction</a></code> | <code>string</code> | [Write] support:UpdateInteraction. |
+| <code><a href="#@cdk_utils/iam.support.SupportActions.property.UploadAttachment">UploadAttachment</a></code> | <code>string</code> | [Write] support:UploadAttachment. |
 
 ---
 
@@ -104,6 +109,18 @@ public readonly AddCommunicationToCase: string;
 - *Type:* string
 
 [Write] support:AddCommunicationToCase.
+
+---
+
+##### `AddRelatedItemToCase`<sup>Required</sup> <a name="AddRelatedItemToCase" id="@cdk_utils/iam.support.SupportActions.property.AddRelatedItemToCase"></a>
+
+```typescript
+public readonly AddRelatedItemToCase: string;
+```
+
+- *Type:* string
+
+[Write] support:AddRelatedItemToCase.
 
 ---
 
@@ -275,6 +292,18 @@ public readonly DescribeIssueTypes: string;
 
 ---
 
+##### `DescribeRelatedItems`<sup>Required</sup> <a name="DescribeRelatedItems" id="@cdk_utils/iam.support.SupportActions.property.DescribeRelatedItems"></a>
+
+```typescript
+public readonly DescribeRelatedItems: string;
+```
+
+- *Type:* string
+
+[Read] support:DescribeRelatedItems.
+
+---
+
 ##### `DescribeServices`<sup>Required</sup> <a name="DescribeServices" id="@cdk_utils/iam.support.SupportActions.property.DescribeServices"></a>
 
 ```typescript
@@ -368,6 +397,30 @@ public readonly DescribeTrustedAdvisorCheckSummaries: string;
 - *Type:* string
 
 [Read] support:DescribeTrustedAdvisorCheckSummaries.
+
+---
+
+##### `DisconnectLiveContactForCase`<sup>Required</sup> <a name="DisconnectLiveContactForCase" id="@cdk_utils/iam.support.SupportActions.property.DisconnectLiveContactForCase"></a>
+
+```typescript
+public readonly DisconnectLiveContactForCase: string;
+```
+
+- *Type:* string
+
+[Write] support:DisconnectLiveContactForCase.
+
+---
+
+##### `DownloadAttachment`<sup>Required</sup> <a name="DownloadAttachment" id="@cdk_utils/iam.support.SupportActions.property.DownloadAttachment"></a>
+
+```typescript
+public readonly DownloadAttachment: string;
+```
+
+- *Type:* string
+
+[Write] support:DownloadAttachment.
 
 ---
 
@@ -548,6 +601,18 @@ public readonly UpdateInteraction: string;
 - *Type:* string
 
 [Write] support:UpdateInteraction.
+
+---
+
+##### `UploadAttachment`<sup>Required</sup> <a name="UploadAttachment" id="@cdk_utils/iam.support.SupportActions.property.UploadAttachment"></a>
+
+```typescript
+public readonly UploadAttachment: string;
+```
+
+- *Type:* string
+
+[Write] support:UploadAttachment.
 
 ---
 

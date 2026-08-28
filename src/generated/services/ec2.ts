@@ -12708,6 +12708,8 @@ export class EC2Operations {
 	static readonly ReplaceImageCriteriaInAllowedImagesSettings: string[] = [
 		"ec2:ReplaceImageCriteriaInAllowedImagesSettings",
 	];
+	/** IAM actions required for the ReplaceImageInstanceTypeSpecification API call. */
+	static readonly ReplaceImageInstanceTypeSpecification: string[] = [];
 	/** IAM actions required for the ReplaceNetworkAclAssociation API call. */
 	static readonly ReplaceNetworkAclAssociation: string[] = [
 		"ec2:ReplaceNetworkAclAssociation",

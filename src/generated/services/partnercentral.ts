@@ -2316,7 +2316,6 @@ export class PartnercentralOperations {
 	/** IAM actions required for the GetBenefitApplication API call. */
 	static readonly opGetBenefitApplication: string[] = [
 		"partnercentral:GetBenefitApplication",
-		"partnercentral:ListTagsForResource",
 	];
 	/** IAM actions required for the GetConnection API call. */
 	static readonly opGetConnection: string[] = ["partnercentral:GetConnection"];

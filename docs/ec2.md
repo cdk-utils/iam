@@ -42706,6 +42706,7 @@ new ec2.EC2Operations()
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.ReleaseIpamPoolAllocation">ReleaseIpamPoolAllocation</a></code> | <code>string[]</code> | IAM actions required for the ReleaseIpamPoolAllocation API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.ReplaceIamInstanceProfileAssociation">ReplaceIamInstanceProfileAssociation</a></code> | <code>string[]</code> | IAM actions required for the ReplaceIamInstanceProfileAssociation API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.ReplaceImageCriteriaInAllowedImagesSettings">ReplaceImageCriteriaInAllowedImagesSettings</a></code> | <code>string[]</code> | IAM actions required for the ReplaceImageCriteriaInAllowedImagesSettings API call. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.ReplaceImageInstanceTypeSpecification">ReplaceImageInstanceTypeSpecification</a></code> | <code>string[]</code> | IAM actions required for the ReplaceImageInstanceTypeSpecification API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.ReplaceNetworkAclAssociation">ReplaceNetworkAclAssociation</a></code> | <code>string[]</code> | IAM actions required for the ReplaceNetworkAclAssociation API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.ReplaceNetworkAclEntry">ReplaceNetworkAclEntry</a></code> | <code>string[]</code> | IAM actions required for the ReplaceNetworkAclEntry API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.ReplaceRoute">ReplaceRoute</a></code> | <code>string[]</code> | IAM actions required for the ReplaceRoute API call. |
@@ -51756,6 +51757,18 @@ public readonly ReplaceImageCriteriaInAllowedImagesSettings: string[];
 - *Type:* string[]
 
 IAM actions required for the ReplaceImageCriteriaInAllowedImagesSettings API call.
+
+---
+
+##### `ReplaceImageInstanceTypeSpecification`<sup>Required</sup> <a name="ReplaceImageInstanceTypeSpecification" id="@cdk_utils/iam.ec2.EC2Operations.property.ReplaceImageInstanceTypeSpecification"></a>
+
+```typescript
+public readonly ReplaceImageInstanceTypeSpecification: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ReplaceImageInstanceTypeSpecification API call.
 
 ---
 

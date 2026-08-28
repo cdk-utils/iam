@@ -16,6 +16,8 @@ export class SupportActions {
 	static readonly AddAttachmentsToSet = "support:AddAttachmentsToSet";
 	/** [Write] support:AddCommunicationToCase */
 	static readonly AddCommunicationToCase = "support:AddCommunicationToCase";
+	/** [Write] support:AddRelatedItemToCase */
+	static readonly AddRelatedItemToCase = "support:AddRelatedItemToCase";
 	/** [Write] support:CreateCase */
 	static readonly CreateCase = "support:CreateCase";
 	/** [Read] support:DescribeAttachment */
@@ -35,6 +37,8 @@ export class SupportActions {
 		"support:DescribeCreateCaseOptions";
 	/** [Read] support:DescribeIssueTypes */
 	static readonly DescribeIssueTypes = "support:DescribeIssueTypes";
+	/** [Read] support:DescribeRelatedItems */
+	static readonly DescribeRelatedItems = "support:DescribeRelatedItems";
 	/** [Read] support:DescribeServices */
 	static readonly DescribeServices = "support:DescribeServices";
 	/** [Read] support:DescribeSeverityLevels */
@@ -56,6 +60,11 @@ export class SupportActions {
 	/** [Read] support:DescribeTrustedAdvisorChecks */
 	static readonly DescribeTrustedAdvisorChecks =
 		"support:DescribeTrustedAdvisorChecks";
+	/** [Write] support:DisconnectLiveContactForCase */
+	static readonly DisconnectLiveContactForCase =
+		"support:DisconnectLiveContactForCase";
+	/** [Write] support:DownloadAttachment */
+	static readonly DownloadAttachment = "support:DownloadAttachment";
 	/** [Read] support:GetInteraction */
 	static readonly actionGetInteraction = "support:GetInteraction";
 	/** [Write] support:InitiateCallForCase */
@@ -88,6 +97,8 @@ export class SupportActions {
 	static readonly UpdateCaseSeverity = "support:UpdateCaseSeverity";
 	/** [Write] support:UpdateInteraction */
 	static readonly UpdateInteraction = "support:UpdateInteraction";
+	/** [Write] support:UploadAttachment */
+	static readonly UploadAttachment = "support:UploadAttachment";
 
 	/** All read-level actions. */
 	static readonly AllReadActions: string[] = [
@@ -99,6 +110,7 @@ export class SupportActions {
 		SupportActions.DescribeCommunications,
 		SupportActions.DescribeCreateCaseOptions,
 		SupportActions.DescribeIssueTypes,
+		SupportActions.DescribeRelatedItems,
 		SupportActions.DescribeServices,
 		SupportActions.DescribeSeverityLevels,
 		SupportActions.DescribeSupportLevel,
@@ -116,7 +128,10 @@ export class SupportActions {
 	static readonly AllWriteActions: string[] = [
 		SupportActions.AddAttachmentsToSet,
 		SupportActions.AddCommunicationToCase,
+		SupportActions.AddRelatedItemToCase,
 		SupportActions.CreateCase,
+		SupportActions.DisconnectLiveContactForCase,
+		SupportActions.DownloadAttachment,
 		SupportActions.InitiateCallForCase,
 		SupportActions.InitiateChatForCase,
 		SupportActions.InitiateLiveContactForCase,
@@ -128,6 +143,7 @@ export class SupportActions {
 		SupportActions.StartInteraction,
 		SupportActions.UpdateCaseSeverity,
 		SupportActions.UpdateInteraction,
+		SupportActions.UploadAttachment,
 	];
 	/** All list-level actions. */
 	static readonly AllListActions: string[] = [];
