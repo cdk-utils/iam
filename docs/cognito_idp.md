@@ -2326,6 +2326,7 @@ new cognito_idp.CognitoIdpOperations()
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.AdminAddUserToGroup">AdminAddUserToGroup</a></code> | <code>string[]</code> | IAM actions required for the AdminAddUserToGroup API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.AdminConfirmSignUp">AdminConfirmSignUp</a></code> | <code>string[]</code> | IAM actions required for the AdminConfirmSignUp API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.AdminCreateUser">AdminCreateUser</a></code> | <code>string[]</code> | IAM actions required for the AdminCreateUser API call. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.AdminDeleteSoftwareToken">AdminDeleteSoftwareToken</a></code> | <code>string[]</code> | IAM actions required for the AdminDeleteSoftwareToken API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.AdminDeleteUser">AdminDeleteUser</a></code> | <code>string[]</code> | IAM actions required for the AdminDeleteUser API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.AdminDeleteUserAttributes">AdminDeleteUserAttributes</a></code> | <code>string[]</code> | IAM actions required for the AdminDeleteUserAttributes API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.AdminDisableProviderForUser">AdminDisableProviderForUser</a></code> | <code>string[]</code> | IAM actions required for the AdminDisableProviderForUser API call. |
@@ -2510,6 +2511,18 @@ public readonly AdminCreateUser: string[];
 - *Type:* string[]
 
 IAM actions required for the AdminCreateUser API call.
+
+---
+
+##### `AdminDeleteSoftwareToken`<sup>Required</sup> <a name="AdminDeleteSoftwareToken" id="@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.AdminDeleteSoftwareToken"></a>
+
+```typescript
+public readonly AdminDeleteSoftwareToken: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the AdminDeleteSoftwareToken API call.
 
 ---
 

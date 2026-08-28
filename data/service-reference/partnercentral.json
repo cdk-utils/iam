@@ -3755,10 +3755,6 @@
         {
           "Name": "GetBenefitApplication",
           "Service": "partnercentral"
-        },
-        {
-          "Name": "ListTagsForResource",
-          "Service": "partnercentral"
         }
       ],
       "SDK": [

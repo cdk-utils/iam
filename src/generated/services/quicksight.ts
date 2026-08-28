@@ -3530,6 +3530,7 @@ export class QuickSightOperations {
 		"quicksight:DescribeTemplate",
 		"quicksight:DescribeTheme",
 		"quicksight:PassDataSet",
+		"quicksight:PassTopic",
 		"quicksight:TagResource",
 	];
 	/** IAM actions required for the CreateApprovalPolicy API call. */
@@ -4363,6 +4364,7 @@ export class QuickSightOperations {
 		"quicksight:DescribeTemplate",
 		"quicksight:DescribeTheme",
 		"quicksight:PassDataSet",
+		"quicksight:PassTopic",
 		"quicksight:UpdateAnalysis",
 	];
 	/** IAM actions required for the UpdateAnalysisPermissions API call. */

@@ -6979,6 +6979,10 @@
           "Service": "quicksight"
         },
         {
+          "Name": "PassTopic",
+          "Service": "quicksight"
+        },
+        {
           "Name": "TagResource",
           "Service": "quicksight"
         }
@@ -10882,6 +10886,10 @@
         },
         {
           "Name": "PassDataSet",
+          "Service": "quicksight"
+        },
+        {
+          "Name": "PassTopic",
           "Service": "quicksight"
         },
         {
