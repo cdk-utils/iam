@@ -441,6 +441,46 @@
       }
     },
     {
+      "Name": "BatchRebootClusterNodes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchReplaceClusterNodes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "BatchWriteRecord",
       "Annotations": {
         "Properties": {
@@ -1015,6 +1055,7 @@
         "aws:RequestTag/${TagKey}",
         "aws:TagKeys",
         "sagemaker:AppNetworkAccessType",
+        "sagemaker:AuthMode",
         "sagemaker:DomainSharingOutputKmsKeyArn",
         "sagemaker:ImageArns",
         "sagemaker:ImageVersionArns",
@@ -5529,6 +5570,26 @@
       }
     },
     {
+      "Name": "DescribeTrainingPlanExtensionHistory",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "training-plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "DescribeTransformJob",
       "Annotations": {
         "Properties": {
@@ -5711,6 +5772,21 @@
     },
     {
       "Name": "EnableSagemakerServicecatalogPortfolio",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ExtendTrainingPlan",
       "Annotations": {
         "Properties": {
           "IsList": false,
@@ -7754,6 +7830,10 @@
     },
     {
       "Name": "PutRecord",
+      "ActionConditionKeys": [
+        "sagemaker:IsUpdateRecord",
+        "sagemaker:UpdatableFeatures"
+      ],
       "Annotations": {
         "Properties": {
           "IsList": false,
@@ -9719,6 +9799,12 @@
       ]
     },
     {
+      "Name": "sagemaker:AuthMode",
+      "Types": [
+        "String"
+      ]
+    },
+    {
       "Name": "sagemaker:BearerTokenType",
       "Types": [
         "String"
@@ -9893,6 +9979,12 @@
       ]
     },
     {
+      "Name": "sagemaker:IsUpdateRecord",
+      "Types": [
+        "Bool"
+      ]
+    },
+    {
       "Name": "sagemaker:KeepAlivePeriod",
       "Types": [
         "Numeric"
@@ -10034,6 +10126,12 @@
       "Name": "sagemaker:TargetModel",
       "Types": [
         "String"
+      ]
+    },
+    {
+      "Name": "sagemaker:UpdatableFeatures",
+      "Types": [
+        "ArrayOfString"
       ]
     },
     {
@@ -10242,6 +10340,12 @@
     },
     {
       "Name": "BatchRebootClusterNodes",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchRebootClusterNodes",
+          "Service": "sagemaker"
+        }
+      ],
       "SDK": [
         {
           "Name": "sagemaker",
@@ -10252,6 +10356,12 @@
     },
     {
       "Name": "BatchReplaceClusterNodes",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchReplaceClusterNodes",
+          "Service": "sagemaker"
+        }
+      ],
       "SDK": [
         {
           "Name": "sagemaker",
@@ -14109,6 +14219,12 @@
     },
     {
       "Name": "DescribeTrainingPlanExtensionHistory",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeTrainingPlanExtensionHistory",
+          "Service": "sagemaker"
+        }
+      ],
       "SDK": [
         {
           "Name": "sagemaker",
@@ -14279,6 +14395,12 @@
     },
     {
       "Name": "ExtendTrainingPlan",
+      "AuthorizedActions": [
+        {
+          "Name": "ExtendTrainingPlan",
+          "Service": "sagemaker"
+        }
+      ],
       "SDK": [
         {
           "Name": "sagemaker",

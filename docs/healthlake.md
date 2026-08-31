@@ -371,6 +371,7 @@ new healthlake.HealthLakeActions()
 | <code><a href="#@cdk_utils/iam.healthlake.HealthLakeActions.property.PublishDataTransformationProfile">PublishDataTransformationProfile</a></code> | <code>string</code> | [Write] healthlake:PublishDataTransformationProfile. |
 | <code><a href="#@cdk_utils/iam.healthlake.HealthLakeActions.property.QuestionnairePackage">QuestionnairePackage</a></code> | <code>string</code> | [Read] healthlake:QuestionnairePackage. |
 | <code><a href="#@cdk_utils/iam.healthlake.HealthLakeActions.property.ReadResource">ReadResource</a></code> | <code>string</code> | [Read] healthlake:ReadResource. |
+| <code><a href="#@cdk_utils/iam.healthlake.HealthLakeActions.property.RestoreFHIRDatastore">RestoreFHIRDatastore</a></code> | <code>string</code> | [Write] healthlake:RestoreFHIRDatastore. |
 | <code><a href="#@cdk_utils/iam.healthlake.HealthLakeActions.property.RetrieveAttributionStatus">RetrieveAttributionStatus</a></code> | <code>string</code> | [Write] healthlake:RetrieveAttributionStatus. |
 | <code><a href="#@cdk_utils/iam.healthlake.HealthLakeActions.property.SearchEverything">SearchEverything</a></code> | <code>string</code> | [Read] healthlake:SearchEverything. |
 | <code><a href="#@cdk_utils/iam.healthlake.HealthLakeActions.property.SearchWithGet">SearchWithGet</a></code> | <code>string</code> | [Read] healthlake:SearchWithGet. |
@@ -951,6 +952,18 @@ public readonly ReadResource: string;
 
 ---
 
+##### `RestoreFHIRDatastore`<sup>Required</sup> <a name="RestoreFHIRDatastore" id="@cdk_utils/iam.healthlake.HealthLakeActions.property.RestoreFHIRDatastore"></a>
+
+```typescript
+public readonly RestoreFHIRDatastore: string;
+```
+
+- *Type:* string
+
+[Write] healthlake:RestoreFHIRDatastore.
+
+---
+
 ##### `RetrieveAttributionStatus`<sup>Required</sup> <a name="RetrieveAttributionStatus" id="@cdk_utils/iam.healthlake.HealthLakeActions.property.RetrieveAttributionStatus"></a>
 
 ```typescript
@@ -1337,6 +1350,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.healthlake.HealthLakeConditions.property.AWS_TAG_KEYS">AWS_TAG_KEYS</a></code> | <code>string</code> | Condition key: aws:TagKeys (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.healthlake.HealthLakeConditions.property.CreateDataTransformationProfileConditionKeys">CreateDataTransformationProfileConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateDataTransformationProfile action. |
 | <code><a href="#@cdk_utils/iam.healthlake.HealthLakeConditions.property.CreateFHIRDatastoreConditionKeys">CreateFHIRDatastoreConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateFHIRDatastore action. |
+| <code><a href="#@cdk_utils/iam.healthlake.HealthLakeConditions.property.RestoreFHIRDatastoreConditionKeys">RestoreFHIRDatastoreConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the RestoreFHIRDatastore action. |
 | <code><a href="#@cdk_utils/iam.healthlake.HealthLakeConditions.property.TagResourceConditionKeys">TagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TagResource action. |
 | <code><a href="#@cdk_utils/iam.healthlake.HealthLakeConditions.property.UntagResourceConditionKeys">UntagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UntagResource action. |
 
@@ -1399,6 +1413,18 @@ public readonly CreateFHIRDatastoreConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the CreateFHIRDatastore action.
+
+---
+
+##### `RestoreFHIRDatastoreConditionKeys`<sup>Required</sup> <a name="RestoreFHIRDatastoreConditionKeys" id="@cdk_utils/iam.healthlake.HealthLakeConditions.property.RestoreFHIRDatastoreConditionKeys"></a>
+
+```typescript
+public readonly RestoreFHIRDatastoreConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the RestoreFHIRDatastore action.
 
 ---
 
@@ -1467,6 +1493,7 @@ new healthlake.HealthLakeOperations()
 | <code><a href="#@cdk_utils/iam.healthlake.HealthLakeOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
 | <code><a href="#@cdk_utils/iam.healthlake.HealthLakeOperations.property.opGetDataTransformationProfile">opGetDataTransformationProfile</a></code> | <code>string[]</code> | IAM actions required for the GetDataTransformationProfile API call. |
 | <code><a href="#@cdk_utils/iam.healthlake.HealthLakeOperations.property.PublishDataTransformationProfile">PublishDataTransformationProfile</a></code> | <code>string[]</code> | IAM actions required for the PublishDataTransformationProfile API call. |
+| <code><a href="#@cdk_utils/iam.healthlake.HealthLakeOperations.property.RestoreFHIRDatastore">RestoreFHIRDatastore</a></code> | <code>string[]</code> | IAM actions required for the RestoreFHIRDatastore API call. |
 | <code><a href="#@cdk_utils/iam.healthlake.HealthLakeOperations.property.StartDataTransformationJob">StartDataTransformationJob</a></code> | <code>string[]</code> | IAM actions required for the StartDataTransformationJob API call. |
 | <code><a href="#@cdk_utils/iam.healthlake.HealthLakeOperations.property.StartFHIRExportJob">StartFHIRExportJob</a></code> | <code>string[]</code> | IAM actions required for the StartFHIRExportJob API call. |
 | <code><a href="#@cdk_utils/iam.healthlake.HealthLakeOperations.property.StartFHIRImportJob">StartFHIRImportJob</a></code> | <code>string[]</code> | IAM actions required for the StartFHIRImportJob API call. |
@@ -1679,6 +1706,18 @@ public readonly PublishDataTransformationProfile: string[];
 - *Type:* string[]
 
 IAM actions required for the PublishDataTransformationProfile API call.
+
+---
+
+##### `RestoreFHIRDatastore`<sup>Required</sup> <a name="RestoreFHIRDatastore" id="@cdk_utils/iam.healthlake.HealthLakeOperations.property.RestoreFHIRDatastore"></a>
+
+```typescript
+public readonly RestoreFHIRDatastore: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the RestoreFHIRDatastore API call.
 
 ---
 

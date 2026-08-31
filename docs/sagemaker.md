@@ -11197,6 +11197,8 @@ new sagemaker.SageMakerActions()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.BatchGetMetrics">BatchGetMetrics</a></code> | <code>string</code> | [Read] sagemaker:BatchGetMetrics. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.BatchGetRecord">BatchGetRecord</a></code> | <code>string</code> | [Read] sagemaker:BatchGetRecord. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.BatchPutMetrics">BatchPutMetrics</a></code> | <code>string</code> | [Write] sagemaker:BatchPutMetrics. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.BatchRebootClusterNodes">BatchRebootClusterNodes</a></code> | <code>string</code> | [Write] sagemaker:BatchRebootClusterNodes. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.BatchReplaceClusterNodes">BatchReplaceClusterNodes</a></code> | <code>string</code> | [Write] sagemaker:BatchReplaceClusterNodes. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.BatchWriteRecord">BatchWriteRecord</a></code> | <code>string</code> | [Write] sagemaker:BatchWriteRecord. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.CallMlflowAppApi">CallMlflowAppApi</a></code> | <code>string</code> | [Write] sagemaker:CallMlflowAppApi. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.CallPartnerAppApi">CallPartnerAppApi</a></code> | <code>string</code> | [Write] sagemaker:CallPartnerAppApi. |
@@ -11417,6 +11419,7 @@ new sagemaker.SageMakerActions()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeSubscribedWorkteam">DescribeSubscribedWorkteam</a></code> | <code>string</code> | [Read] sagemaker:DescribeSubscribedWorkteam. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeTrainingJob">DescribeTrainingJob</a></code> | <code>string</code> | [Read] sagemaker:DescribeTrainingJob. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeTrainingPlan">DescribeTrainingPlan</a></code> | <code>string</code> | [Read] sagemaker:DescribeTrainingPlan. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeTrainingPlanExtensionHistory">DescribeTrainingPlanExtensionHistory</a></code> | <code>string</code> | [Read] sagemaker:DescribeTrainingPlanExtensionHistory. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeTransformJob">DescribeTransformJob</a></code> | <code>string</code> | [Read] sagemaker:DescribeTransformJob. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeTrial">DescribeTrial</a></code> | <code>string</code> | [Read] sagemaker:DescribeTrial. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeTrialComponent">DescribeTrialComponent</a></code> | <code>string</code> | [Read] sagemaker:DescribeTrialComponent. |
@@ -11427,6 +11430,7 @@ new sagemaker.SageMakerActions()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DisableSagemakerServicecatalogPortfolio">DisableSagemakerServicecatalogPortfolio</a></code> | <code>string</code> | [Write] sagemaker:DisableSagemakerServicecatalogPortfolio. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DisassociateTrialComponent">DisassociateTrialComponent</a></code> | <code>string</code> | [Write] sagemaker:DisassociateTrialComponent. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.EnableSagemakerServicecatalogPortfolio">EnableSagemakerServicecatalogPortfolio</a></code> | <code>string</code> | [Write] sagemaker:EnableSagemakerServicecatalogPortfolio. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.ExtendTrainingPlan">ExtendTrainingPlan</a></code> | <code>string</code> | [Write] sagemaker:ExtendTrainingPlan. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.ImportHubContent">ImportHubContent</a></code> | <code>string</code> | [Write] sagemaker:ImportHubContent. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.InvokeEndpoint">InvokeEndpoint</a></code> | <code>string</code> | [Read] sagemaker:InvokeEndpoint. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.InvokeEndpointAsync">InvokeEndpointAsync</a></code> | <code>string</code> | [Read] sagemaker:InvokeEndpointAsync. |
@@ -11933,6 +11937,30 @@ public readonly BatchPutMetrics: string;
 - *Type:* string
 
 [Write] sagemaker:BatchPutMetrics.
+
+---
+
+##### `BatchRebootClusterNodes`<sup>Required</sup> <a name="BatchRebootClusterNodes" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.BatchRebootClusterNodes"></a>
+
+```typescript
+public readonly BatchRebootClusterNodes: string;
+```
+
+- *Type:* string
+
+[Write] sagemaker:BatchRebootClusterNodes.
+
+---
+
+##### `BatchReplaceClusterNodes`<sup>Required</sup> <a name="BatchReplaceClusterNodes" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.BatchReplaceClusterNodes"></a>
+
+```typescript
+public readonly BatchReplaceClusterNodes: string;
+```
+
+- *Type:* string
+
+[Write] sagemaker:BatchReplaceClusterNodes.
 
 ---
 
@@ -14576,6 +14604,18 @@ public readonly DescribeTrainingPlan: string;
 
 ---
 
+##### `DescribeTrainingPlanExtensionHistory`<sup>Required</sup> <a name="DescribeTrainingPlanExtensionHistory" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeTrainingPlanExtensionHistory"></a>
+
+```typescript
+public readonly DescribeTrainingPlanExtensionHistory: string;
+```
+
+- *Type:* string
+
+[Read] sagemaker:DescribeTrainingPlanExtensionHistory.
+
+---
+
 ##### `DescribeTransformJob`<sup>Required</sup> <a name="DescribeTransformJob" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeTransformJob"></a>
 
 ```typescript
@@ -14693,6 +14733,18 @@ public readonly EnableSagemakerServicecatalogPortfolio: string;
 - *Type:* string
 
 [Write] sagemaker:EnableSagemakerServicecatalogPortfolio.
+
+---
+
+##### `ExtendTrainingPlan`<sup>Required</sup> <a name="ExtendTrainingPlan" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.ExtendTrainingPlan"></a>
+
+```typescript
+public readonly ExtendTrainingPlan: string;
+```
+
+- *Type:* string
+
+[Write] sagemaker:ExtendTrainingPlan.
 
 ---
 
@@ -17048,6 +17100,7 @@ new sagemaker.SageMakerConditions()
 | --- | --- |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.acceleratorTypes">acceleratorTypes</a></code> | Generates a condition block for `sagemaker:AcceleratorTypes`. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.appNetworkAccessType">appNetworkAccessType</a></code> | Generates a condition block for `sagemaker:AppNetworkAccessType`. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.authMode">authMode</a></code> | Generates a condition block for `sagemaker:AuthMode`. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.bearerTokenType">bearerTokenType</a></code> | Generates a condition block for `sagemaker:BearerTokenType`. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.currentCustomerMetadataProperties">currentCustomerMetadataProperties</a></code> | Generates a condition block for `sagemaker:CurrentCustomerMetadataProperties/${MetadataKey}`. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.currentModelLifeCycleStage">currentModelLifeCycleStage</a></code> | Generates a condition block for `sagemaker:CurrentModelLifeCycleStage`. |
@@ -17077,6 +17130,7 @@ new sagemaker.SageMakerConditions()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.imageVersionArns">imageVersionArns</a></code> | Generates a condition block for `sagemaker:ImageVersionArns`. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.instanceTypes">instanceTypes</a></code> | Generates a condition block for `sagemaker:InstanceTypes`. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.interContainerTrafficEncryption">interContainerTrafficEncryption</a></code> | Generates a condition block for `sagemaker:InterContainerTrafficEncryption`. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.isUpdateRecord">isUpdateRecord</a></code> | Generates a condition block for `sagemaker:IsUpdateRecord`. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.keepAlivePeriod">keepAlivePeriod</a></code> | Generates a condition block for `sagemaker:KeepAlivePeriod`. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.maxRuntimeInSeconds">maxRuntimeInSeconds</a></code> | Generates a condition block for `sagemaker:MaxRuntimeInSeconds`. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.minimumInstanceMetadataServiceVersion">minimumInstanceMetadataServiceVersion</a></code> | Generates a condition block for `sagemaker:MinimumInstanceMetadataServiceVersion`. |
@@ -17102,6 +17156,7 @@ new sagemaker.SageMakerConditions()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.taggingAction">taggingAction</a></code> | Generates a condition block for `sagemaker:TaggingAction`. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.tagKeys">tagKeys</a></code> | Generates a condition block for `aws:TagKeys`. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.targetModel">targetModel</a></code> | Generates a condition block for `sagemaker:TargetModel`. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.updatableFeatures">updatableFeatures</a></code> | Generates a condition block for `sagemaker:UpdatableFeatures`. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.userProfileName">userProfileName</a></code> | Generates a condition block for `sagemaker:UserProfileName`. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.volumeKMSKey">volumeKMSKey</a></code> | Generates a condition block for `sagemaker:VolumeKmsKey`. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.volumeKMSKeyARN">volumeKMSKeyARN</a></code> | Generates a condition block for `sagemaker:VolumeKmsKeyArn`. |
@@ -17139,6 +17194,22 @@ sagemaker.SageMakerConditions.appNetworkAccessType(value: string)
 Generates a condition block for `sagemaker:AppNetworkAccessType`.
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.sagemaker.SageMakerConditions.appNetworkAccessType.parameter.value"></a>
+
+- *Type:* string
+
+---
+
+##### `authMode` <a name="authMode" id="@cdk_utils/iam.sagemaker.SageMakerConditions.authMode"></a>
+
+```typescript
+import { sagemaker } from '@cdk_utils/iam'
+
+sagemaker.SageMakerConditions.authMode(value: string)
+```
+
+Generates a condition block for `sagemaker:AuthMode`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.sagemaker.SageMakerConditions.authMode.parameter.value"></a>
 
 - *Type:* string
 
@@ -17608,6 +17679,22 @@ Generates a condition block for `sagemaker:InterContainerTrafficEncryption`.
 
 ---
 
+##### `isUpdateRecord` <a name="isUpdateRecord" id="@cdk_utils/iam.sagemaker.SageMakerConditions.isUpdateRecord"></a>
+
+```typescript
+import { sagemaker } from '@cdk_utils/iam'
+
+sagemaker.SageMakerConditions.isUpdateRecord(value: boolean)
+```
+
+Generates a condition block for `sagemaker:IsUpdateRecord`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.sagemaker.SageMakerConditions.isUpdateRecord.parameter.value"></a>
+
+- *Type:* boolean
+
+---
+
 ##### `keepAlivePeriod` <a name="keepAlivePeriod" id="@cdk_utils/iam.sagemaker.SageMakerConditions.keepAlivePeriod"></a>
 
 ```typescript
@@ -18008,6 +18095,22 @@ Generates a condition block for `sagemaker:TargetModel`.
 
 ---
 
+##### `updatableFeatures` <a name="updatableFeatures" id="@cdk_utils/iam.sagemaker.SageMakerConditions.updatableFeatures"></a>
+
+```typescript
+import { sagemaker } from '@cdk_utils/iam'
+
+sagemaker.SageMakerConditions.updatableFeatures(values: string[])
+```
+
+Generates a condition block for `sagemaker:UpdatableFeatures`.
+
+###### `values`<sup>Required</sup> <a name="values" id="@cdk_utils/iam.sagemaker.SageMakerConditions.updatableFeatures.parameter.values"></a>
+
+- *Type:* string[]
+
+---
+
 ##### `userProfileName` <a name="userProfileName" id="@cdk_utils/iam.sagemaker.SageMakerConditions.userProfileName"></a>
 
 ```typescript
@@ -18128,6 +18231,7 @@ Generates a condition block for `sagemaker:WorkteamType`.
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.ACCELERATOR_TYPES">ACCELERATOR_TYPES</a></code> | <code>string</code> | Condition key: sagemaker:AcceleratorTypes (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.AddTagsConditionKeys">AddTagsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the AddTags action. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.APP_NETWORK_ACCESS_TYPE">APP_NETWORK_ACCESS_TYPE</a></code> | <code>string</code> | Condition key: sagemaker:AppNetworkAccessType (String). |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.AUTH_MODE">AUTH_MODE</a></code> | <code>string</code> | Condition key: sagemaker:AuthMode (String). |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.AWS_REQUEST_TAG">AWS_REQUEST_TAG</a></code> | <code>string</code> | Condition key: aws:RequestTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.AWS_RESOURCE_TAG">AWS_RESOURCE_TAG</a></code> | <code>string</code> | Condition key: aws:ResourceTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.AWS_TAG_KEYS">AWS_TAG_KEYS</a></code> | <code>string</code> | Condition key: aws:TagKeys (ArrayOfString). |
@@ -18233,6 +18337,7 @@ Generates a condition block for `sagemaker:WorkteamType`.
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.INSTANCE_TYPES">INSTANCE_TYPES</a></code> | <code>string</code> | Condition key: sagemaker:InstanceTypes (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.INTER_CONTAINER_TRAFFIC_ENCRYPTION">INTER_CONTAINER_TRAFFIC_ENCRYPTION</a></code> | <code>string</code> | Condition key: sagemaker:InterContainerTrafficEncryption (Bool). |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.InvokeEndpointConditionKeys">InvokeEndpointConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the InvokeEndpoint action. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.IS_UPDATE_RECORD">IS_UPDATE_RECORD</a></code> | <code>string</code> | Condition key: sagemaker:IsUpdateRecord (Bool). |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.KEEP_ALIVE_PERIOD">KEEP_ALIVE_PERIOD</a></code> | <code>string</code> | Condition key: sagemaker:KeepAlivePeriod (Numeric). |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.MAX_RUNTIME_IN_SECONDS">MAX_RUNTIME_IN_SECONDS</a></code> | <code>string</code> | Condition key: sagemaker:MaxRuntimeInSeconds (Numeric). |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.MINIMUM_INSTANCE_METADATA_SERVICE_VERSION">MINIMUM_INSTANCE_METADATA_SERVICE_VERSION</a></code> | <code>string</code> | Condition key: sagemaker:MinimumInstanceMetadataServiceVersion (String). |
@@ -18246,6 +18351,7 @@ Generates a condition block for `sagemaker:WorkteamType`.
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.OUTPUT_KMS_KEY_ARN">OUTPUT_KMS_KEY_ARN</a></code> | <code>string</code> | Condition key: sagemaker:OutputKmsKeyArn (ARN). |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.OWNER_USER_PROFILE_ARN">OWNER_USER_PROFILE_ARN</a></code> | <code>string</code> | Condition key: sagemaker:OwnerUserProfileArn (ARN). |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.PIPELINE_VERSION_ID">PIPELINE_VERSION_ID</a></code> | <code>string</code> | Condition key: sagemaker:PipelineVersionId (String). |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.PutRecordConditionKeys">PutRecordConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutRecord action. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.RegisterDevicesConditionKeys">RegisterDevicesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the RegisterDevices action. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.REMOTE_ACCESS">REMOTE_ACCESS</a></code> | <code>string</code> | Condition key: sagemaker:RemoteAccess (String). |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.RESOURCE_TAG">RESOURCE_TAG</a></code> | <code>string</code> | Condition key: sagemaker:ResourceTag/ (String). |
@@ -18259,6 +18365,7 @@ Generates a condition block for `sagemaker:WorkteamType`.
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.STUDIO_LIFECYCLE_CONFIG_ARNS">STUDIO_LIFECYCLE_CONFIG_ARNS</a></code> | <code>string</code> | Condition key: sagemaker:StudioLifecycleConfigArns (ArrayOfARN). |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.TAGGING_ACTION">TAGGING_ACTION</a></code> | <code>string</code> | Condition key: sagemaker:TaggingAction (String). |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.TARGET_MODEL">TARGET_MODEL</a></code> | <code>string</code> | Condition key: sagemaker:TargetModel (String). |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.UPDATABLE_FEATURES">UPDATABLE_FEATURES</a></code> | <code>string</code> | Condition key: sagemaker:UpdatableFeatures (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.UpdateClusterConditionKeys">UpdateClusterConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateCluster action. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.UpdateDomainConditionKeys">UpdateDomainConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateDomain action. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.UpdateModelPackageConditionKeys">UpdateModelPackageConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateModelPackage action. |
@@ -18312,6 +18419,18 @@ public readonly APP_NETWORK_ACCESS_TYPE: string;
 - *Type:* string
 
 Condition key: sagemaker:AppNetworkAccessType (String).
+
+---
+
+##### `AUTH_MODE`<sup>Required</sup> <a name="AUTH_MODE" id="@cdk_utils/iam.sagemaker.SageMakerConditions.property.AUTH_MODE"></a>
+
+```typescript
+public readonly AUTH_MODE: string;
+```
+
+- *Type:* string
+
+Condition key: sagemaker:AuthMode (String).
 
 ---
 
@@ -19575,6 +19694,18 @@ Condition keys applicable to the InvokeEndpoint action.
 
 ---
 
+##### `IS_UPDATE_RECORD`<sup>Required</sup> <a name="IS_UPDATE_RECORD" id="@cdk_utils/iam.sagemaker.SageMakerConditions.property.IS_UPDATE_RECORD"></a>
+
+```typescript
+public readonly IS_UPDATE_RECORD: string;
+```
+
+- *Type:* string
+
+Condition key: sagemaker:IsUpdateRecord (Bool).
+
+---
+
 ##### `KEEP_ALIVE_PERIOD`<sup>Required</sup> <a name="KEEP_ALIVE_PERIOD" id="@cdk_utils/iam.sagemaker.SageMakerConditions.property.KEEP_ALIVE_PERIOD"></a>
 
 ```typescript
@@ -19731,6 +19862,18 @@ Condition key: sagemaker:PipelineVersionId (String).
 
 ---
 
+##### `PutRecordConditionKeys`<sup>Required</sup> <a name="PutRecordConditionKeys" id="@cdk_utils/iam.sagemaker.SageMakerConditions.property.PutRecordConditionKeys"></a>
+
+```typescript
+public readonly PutRecordConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the PutRecord action.
+
+---
+
 ##### `RegisterDevicesConditionKeys`<sup>Required</sup> <a name="RegisterDevicesConditionKeys" id="@cdk_utils/iam.sagemaker.SageMakerConditions.property.RegisterDevicesConditionKeys"></a>
 
 ```typescript
@@ -19884,6 +20027,18 @@ public readonly TARGET_MODEL: string;
 - *Type:* string
 
 Condition key: sagemaker:TargetModel (String).
+
+---
+
+##### `UPDATABLE_FEATURES`<sup>Required</sup> <a name="UPDATABLE_FEATURES" id="@cdk_utils/iam.sagemaker.SageMakerConditions.property.UPDATABLE_FEATURES"></a>
+
+```typescript
+public readonly UPDATABLE_FEATURES: string;
+```
+
+- *Type:* string
+
+Condition key: sagemaker:UpdatableFeatures (ArrayOfString).
 
 ---
 

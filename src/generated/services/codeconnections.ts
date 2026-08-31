@@ -495,7 +495,10 @@ export class CodeconnectionsOperations {
 		"codestar-connections:UseConnection",
 	];
 	/** IAM actions required for the UpdateSyncBlocker API call. */
-	static readonly UpdateSyncBlocker: string[] = [];
+	static readonly UpdateSyncBlocker: string[] = [
+		"codeconnections:UpdateSyncBlocker",
+		"codestar-connections:UpdateSyncBlocker",
+	];
 	/** IAM actions required for the UpdateSyncConfiguration API call. */
 	static readonly UpdateSyncConfiguration: string[] = [
 		"codeconnections:PassRepository",

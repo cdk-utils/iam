@@ -3490,6 +3490,16 @@
       ]
     },
     {
+      "Name": "DescribeTermsByClient",
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "describe_terms_by_client",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DescribeUserImportJob",
       "AuthorizedActions": [
         {
@@ -3597,6 +3607,16 @@
         {
           "Name": "cognito-idp",
           "Method": "get_csv_header",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetClientToken",
+      "SDK": [
+        {
+          "Name": "cognito-idp",
+          "Method": "get_client_token",
           "Package": "Boto3"
         }
       ]
