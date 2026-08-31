@@ -1426,6 +1426,16 @@
     },
     {
       "Name": "UpdateSyncBlocker",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSyncBlocker",
+          "Service": "codeconnections"
+        },
+        {
+          "Name": "UpdateSyncBlocker",
+          "Service": "codestar-connections"
+        }
+      ],
       "SDK": [
         {
           "Name": "codeconnections",

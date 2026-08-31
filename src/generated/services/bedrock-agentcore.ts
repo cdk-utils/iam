@@ -3504,6 +3504,8 @@ export class BedrockAgentcoreOperations {
 	static readonly opGetWorkloadIdentity: string[] = [
 		"bedrock-agentcore:GetWorkloadIdentity",
 	];
+	/** IAM actions required for the IngestData API call. */
+	static readonly IngestData: string[] = [];
 	/** IAM actions required for the InvokeAgentRuntime API call. */
 	static readonly InvokeAgentRuntime: string[] = [
 		"bedrock-agentcore:InvokeAgentRuntime",

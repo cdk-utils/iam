@@ -2386,6 +2386,7 @@ new cognito_idp.CognitoIdpOperations()
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.DescribeResourceServer">DescribeResourceServer</a></code> | <code>string[]</code> | IAM actions required for the DescribeResourceServer API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.DescribeRiskConfiguration">DescribeRiskConfiguration</a></code> | <code>string[]</code> | IAM actions required for the DescribeRiskConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.DescribeTerms">DescribeTerms</a></code> | <code>string[]</code> | IAM actions required for the DescribeTerms API call. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.DescribeTermsByClient">DescribeTermsByClient</a></code> | <code>string[]</code> | IAM actions required for the DescribeTermsByClient API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.DescribeUserImportJob">DescribeUserImportJob</a></code> | <code>string[]</code> | IAM actions required for the DescribeUserImportJob API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.DescribeUserPool">DescribeUserPool</a></code> | <code>string[]</code> | IAM actions required for the DescribeUserPool API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.DescribeUserPoolClient">DescribeUserPoolClient</a></code> | <code>string[]</code> | IAM actions required for the DescribeUserPoolClient API call. |
@@ -2408,6 +2409,7 @@ new cognito_idp.CognitoIdpOperations()
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.ListUsers">ListUsers</a></code> | <code>string[]</code> | IAM actions required for the ListUsers API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.ListUsersInGroup">ListUsersInGroup</a></code> | <code>string[]</code> | IAM actions required for the ListUsersInGroup API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.ListWebAuthnCredentials">ListWebAuthnCredentials</a></code> | <code>string[]</code> | IAM actions required for the ListWebAuthnCredentials API call. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.opGetClientToken">opGetClientToken</a></code> | <code>string[]</code> | IAM actions required for the GetClientToken API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.opGetCSVHeader">opGetCSVHeader</a></code> | <code>string[]</code> | IAM actions required for the GetCSVHeader API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.opGetDevice">opGetDevice</a></code> | <code>string[]</code> | IAM actions required for the GetDevice API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.opGetGroup">opGetGroup</a></code> | <code>string[]</code> | IAM actions required for the GetGroup API call. |
@@ -3234,6 +3236,18 @@ IAM actions required for the DescribeTerms API call.
 
 ---
 
+##### `DescribeTermsByClient`<sup>Required</sup> <a name="DescribeTermsByClient" id="@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.DescribeTermsByClient"></a>
+
+```typescript
+public readonly DescribeTermsByClient: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeTermsByClient API call.
+
+---
+
 ##### `DescribeUserImportJob`<sup>Required</sup> <a name="DescribeUserImportJob" id="@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.DescribeUserImportJob"></a>
 
 ```typescript
@@ -3495,6 +3509,18 @@ public readonly ListWebAuthnCredentials: string[];
 - *Type:* string[]
 
 IAM actions required for the ListWebAuthnCredentials API call.
+
+---
+
+##### `opGetClientToken`<sup>Required</sup> <a name="opGetClientToken" id="@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.opGetClientToken"></a>
+
+```typescript
+public readonly opGetClientToken: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetClientToken API call.
 
 ---
 

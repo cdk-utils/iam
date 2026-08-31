@@ -14,6 +14,9 @@ export class ProfileActions {
 
 	/** [Write] profile:AddProfileKey */
 	static readonly AddProfileKey = "profile:AddProfileKey";
+	/** [Write] profile:AssociateStreamForSegments */
+	static readonly AssociateStreamForSegments =
+		"profile:AssociateStreamForSegments";
 	/** [Read] profile:BatchGetCalculatedAttributeForProfile */
 	static readonly BatchGetCalculatedAttributeForProfile =
 		"profile:BatchGetCalculatedAttributeForProfile";
@@ -82,10 +85,16 @@ export class ProfileActions {
 	static readonly DeleteRecommenderSchema = "profile:DeleteRecommenderSchema";
 	/** [Write] profile:DeleteSegmentDefinition */
 	static readonly DeleteSegmentDefinition = "profile:DeleteSegmentDefinition";
+	/** [Write] profile:DeleteSegmentSubscription */
+	static readonly DeleteSegmentSubscription =
+		"profile:DeleteSegmentSubscription";
 	/** [Write] profile:DeleteWorkflow */
 	static readonly DeleteWorkflow = "profile:DeleteWorkflow";
 	/** [Read] profile:DetectProfileObjectType */
 	static readonly DetectProfileObjectType = "profile:DetectProfileObjectType";
+	/** [Write] profile:DisassociateStreamForSegments */
+	static readonly DisassociateStreamForSegments =
+		"profile:DisassociateStreamForSegments";
 	/** [Read] profile:GetAutoMergingPreview */
 	static readonly actionGetAutoMergingPreview = "profile:GetAutoMergingPreview";
 	/** [Read] profile:GetCalculatedAttributeDefinition */
@@ -141,10 +150,15 @@ export class ProfileActions {
 	static readonly actionGetSegmentMembership = "profile:GetSegmentMembership";
 	/** [Read] profile:GetSegmentSnapshot */
 	static readonly actionGetSegmentSnapshot = "profile:GetSegmentSnapshot";
+	/** [Read] profile:GetSegmentSubscription */
+	static readonly actionGetSegmentSubscription =
+		"profile:GetSegmentSubscription";
 	/** [List] profile:GetSimilarProfiles */
 	static readonly actionGetSimilarProfiles = "profile:GetSimilarProfiles";
 	/** [Read] profile:GetSnapshot */
 	static readonly actionGetSnapshot = "profile:GetSnapshot";
+	/** [Read] profile:GetStreamForSegments */
+	static readonly actionGetStreamForSegments = "profile:GetStreamForSegments";
 	/** [Read] profile:GetUploadJob */
 	static readonly actionGetUploadJob = "profile:GetUploadJob";
 	/** [Read] profile:GetUploadJobPath */
@@ -208,6 +222,9 @@ export class ProfileActions {
 	static readonly ListRuleBasedMatches = "profile:ListRuleBasedMatches";
 	/** [List] profile:ListSegmentDefinitions */
 	static readonly ListSegmentDefinitions = "profile:ListSegmentDefinitions";
+	/** [Read] profile:ListSegmentSubscriptionEvents */
+	static readonly ListSegmentSubscriptionEvents =
+		"profile:ListSegmentSubscriptionEvents";
 	/** [Read] profile:ListTagsForResource */
 	static readonly ListTagsForResource = "profile:ListTagsForResource";
 	/** [List] profile:ListUploadJobs */
@@ -224,6 +241,8 @@ export class ProfileActions {
 	static readonly PutProfileObject = "profile:PutProfileObject";
 	/** [Write] profile:PutProfileObjectType */
 	static readonly PutProfileObjectType = "profile:PutProfileObjectType";
+	/** [Write] profile:PutSegmentSubscription */
+	static readonly PutSegmentSubscription = "profile:PutSegmentSubscription";
 	/** [Read] profile:SearchProfiles */
 	static readonly SearchProfiles = "profile:SearchProfiles";
 	/** [Write] profile:StartRecommender */
@@ -280,17 +299,21 @@ export class ProfileActions {
 		ProfileActions.actionGetSegmentEstimate,
 		ProfileActions.actionGetSegmentMembership,
 		ProfileActions.actionGetSegmentSnapshot,
+		ProfileActions.actionGetSegmentSubscription,
 		ProfileActions.actionGetSnapshot,
+		ProfileActions.actionGetStreamForSegments,
 		ProfileActions.actionGetUploadJob,
 		ProfileActions.actionGetUploadJobPath,
 		ProfileActions.actionGetWorkflow,
 		ProfileActions.actionGetWorkflowSteps,
+		ProfileActions.ListSegmentSubscriptionEvents,
 		ProfileActions.ListTagsForResource,
 		ProfileActions.SearchProfiles,
 	];
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
 		ProfileActions.AddProfileKey,
+		ProfileActions.AssociateStreamForSegments,
 		ProfileActions.CreateCalculatedAttributeDefinition,
 		ProfileActions.CreateDomain,
 		ProfileActions.CreateDomainLayout,
@@ -321,12 +344,15 @@ export class ProfileActions {
 		ProfileActions.DeleteRecommenderFilter,
 		ProfileActions.DeleteRecommenderSchema,
 		ProfileActions.DeleteSegmentDefinition,
+		ProfileActions.DeleteSegmentSubscription,
 		ProfileActions.DeleteWorkflow,
+		ProfileActions.DisassociateStreamForSegments,
 		ProfileActions.MergeProfiles,
 		ProfileActions.PutDomainObjectType,
 		ProfileActions.PutIntegration,
 		ProfileActions.PutProfileObject,
 		ProfileActions.PutProfileObjectType,
+		ProfileActions.PutSegmentSubscription,
 		ProfileActions.StartRecommender,
 		ProfileActions.StartUploadJob,
 		ProfileActions.StopRecommender,

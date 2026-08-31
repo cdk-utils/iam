@@ -2115,8 +2115,10 @@ new profile.ProfileActions()
 | <code><a href="#@cdk_utils/iam.profile.ProfileActions.property.actionGetSegmentEstimate">actionGetSegmentEstimate</a></code> | <code>string</code> | [Read] profile:GetSegmentEstimate. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileActions.property.actionGetSegmentMembership">actionGetSegmentMembership</a></code> | <code>string</code> | [Read] profile:GetSegmentMembership. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileActions.property.actionGetSegmentSnapshot">actionGetSegmentSnapshot</a></code> | <code>string</code> | [Read] profile:GetSegmentSnapshot. |
+| <code><a href="#@cdk_utils/iam.profile.ProfileActions.property.actionGetSegmentSubscription">actionGetSegmentSubscription</a></code> | <code>string</code> | [Read] profile:GetSegmentSubscription. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileActions.property.actionGetSimilarProfiles">actionGetSimilarProfiles</a></code> | <code>string</code> | [List] profile:GetSimilarProfiles. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileActions.property.actionGetSnapshot">actionGetSnapshot</a></code> | <code>string</code> | [Read] profile:GetSnapshot. |
+| <code><a href="#@cdk_utils/iam.profile.ProfileActions.property.actionGetStreamForSegments">actionGetStreamForSegments</a></code> | <code>string</code> | [Read] profile:GetStreamForSegments. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileActions.property.actionGetUploadJob">actionGetUploadJob</a></code> | <code>string</code> | [Read] profile:GetUploadJob. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileActions.property.actionGetUploadJobPath">actionGetUploadJobPath</a></code> | <code>string</code> | [Read] profile:GetUploadJobPath. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileActions.property.actionGetWorkflow">actionGetWorkflow</a></code> | <code>string</code> | [Read] profile:GetWorkflow. |
@@ -2127,6 +2129,7 @@ new profile.ProfileActions()
 | <code><a href="#@cdk_utils/iam.profile.ProfileActions.property.AllReadActions">AllReadActions</a></code> | <code>string[]</code> | All read-level actions. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileActions.property.AllTaggingActions">AllTaggingActions</a></code> | <code>string[]</code> | All tagging-level actions. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
+| <code><a href="#@cdk_utils/iam.profile.ProfileActions.property.AssociateStreamForSegments">AssociateStreamForSegments</a></code> | <code>string</code> | [Write] profile:AssociateStreamForSegments. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileActions.property.BatchGetCalculatedAttributeForProfile">BatchGetCalculatedAttributeForProfile</a></code> | <code>string</code> | [Read] profile:BatchGetCalculatedAttributeForProfile. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileActions.property.BatchGetProfile">BatchGetProfile</a></code> | <code>string</code> | [Read] profile:BatchGetProfile. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileActions.property.CreateCalculatedAttributeDefinition">CreateCalculatedAttributeDefinition</a></code> | <code>string</code> | [Write] profile:CreateCalculatedAttributeDefinition. |
@@ -2159,8 +2162,10 @@ new profile.ProfileActions()
 | <code><a href="#@cdk_utils/iam.profile.ProfileActions.property.DeleteRecommenderFilter">DeleteRecommenderFilter</a></code> | <code>string</code> | [Write] profile:DeleteRecommenderFilter. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileActions.property.DeleteRecommenderSchema">DeleteRecommenderSchema</a></code> | <code>string</code> | [Write] profile:DeleteRecommenderSchema. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileActions.property.DeleteSegmentDefinition">DeleteSegmentDefinition</a></code> | <code>string</code> | [Write] profile:DeleteSegmentDefinition. |
+| <code><a href="#@cdk_utils/iam.profile.ProfileActions.property.DeleteSegmentSubscription">DeleteSegmentSubscription</a></code> | <code>string</code> | [Write] profile:DeleteSegmentSubscription. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileActions.property.DeleteWorkflow">DeleteWorkflow</a></code> | <code>string</code> | [Write] profile:DeleteWorkflow. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileActions.property.DetectProfileObjectType">DetectProfileObjectType</a></code> | <code>string</code> | [Read] profile:DetectProfileObjectType. |
+| <code><a href="#@cdk_utils/iam.profile.ProfileActions.property.DisassociateStreamForSegments">DisassociateStreamForSegments</a></code> | <code>string</code> | [Write] profile:DisassociateStreamForSegments. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileActions.property.ListAccountIntegrations">ListAccountIntegrations</a></code> | <code>string</code> | [List] profile:ListAccountIntegrations. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileActions.property.ListCalculatedAttributeDefinitions">ListCalculatedAttributeDefinitions</a></code> | <code>string</code> | [List] profile:ListCalculatedAttributeDefinitions. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileActions.property.ListCalculatedAttributesForProfile">ListCalculatedAttributesForProfile</a></code> | <code>string</code> | [List] profile:ListCalculatedAttributesForProfile. |
@@ -2185,6 +2190,7 @@ new profile.ProfileActions()
 | <code><a href="#@cdk_utils/iam.profile.ProfileActions.property.ListRecommenderSchemas">ListRecommenderSchemas</a></code> | <code>string</code> | [List] profile:ListRecommenderSchemas. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileActions.property.ListRuleBasedMatches">ListRuleBasedMatches</a></code> | <code>string</code> | [List] profile:ListRuleBasedMatches. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileActions.property.ListSegmentDefinitions">ListSegmentDefinitions</a></code> | <code>string</code> | [List] profile:ListSegmentDefinitions. |
+| <code><a href="#@cdk_utils/iam.profile.ProfileActions.property.ListSegmentSubscriptionEvents">ListSegmentSubscriptionEvents</a></code> | <code>string</code> | [Read] profile:ListSegmentSubscriptionEvents. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [Read] profile:ListTagsForResource. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileActions.property.ListUploadJobs">ListUploadJobs</a></code> | <code>string</code> | [List] profile:ListUploadJobs. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileActions.property.ListWorkflows">ListWorkflows</a></code> | <code>string</code> | [List] profile:ListWorkflows. |
@@ -2193,6 +2199,7 @@ new profile.ProfileActions()
 | <code><a href="#@cdk_utils/iam.profile.ProfileActions.property.PutIntegration">PutIntegration</a></code> | <code>string</code> | [Write] profile:PutIntegration. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileActions.property.PutProfileObject">PutProfileObject</a></code> | <code>string</code> | [Write] profile:PutProfileObject. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileActions.property.PutProfileObjectType">PutProfileObjectType</a></code> | <code>string</code> | [Write] profile:PutProfileObjectType. |
+| <code><a href="#@cdk_utils/iam.profile.ProfileActions.property.PutSegmentSubscription">PutSegmentSubscription</a></code> | <code>string</code> | [Write] profile:PutSegmentSubscription. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileActions.property.SearchProfiles">SearchProfiles</a></code> | <code>string</code> | [Read] profile:SearchProfiles. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileActions.property.StartRecommender">StartRecommender</a></code> | <code>string</code> | [Write] profile:StartRecommender. |
@@ -2498,6 +2505,18 @@ public readonly actionGetSegmentSnapshot: string;
 
 ---
 
+##### `actionGetSegmentSubscription`<sup>Required</sup> <a name="actionGetSegmentSubscription" id="@cdk_utils/iam.profile.ProfileActions.property.actionGetSegmentSubscription"></a>
+
+```typescript
+public readonly actionGetSegmentSubscription: string;
+```
+
+- *Type:* string
+
+[Read] profile:GetSegmentSubscription.
+
+---
+
 ##### `actionGetSimilarProfiles`<sup>Required</sup> <a name="actionGetSimilarProfiles" id="@cdk_utils/iam.profile.ProfileActions.property.actionGetSimilarProfiles"></a>
 
 ```typescript
@@ -2519,6 +2538,18 @@ public readonly actionGetSnapshot: string;
 - *Type:* string
 
 [Read] profile:GetSnapshot.
+
+---
+
+##### `actionGetStreamForSegments`<sup>Required</sup> <a name="actionGetStreamForSegments" id="@cdk_utils/iam.profile.ProfileActions.property.actionGetStreamForSegments"></a>
+
+```typescript
+public readonly actionGetStreamForSegments: string;
+```
+
+- *Type:* string
+
+[Read] profile:GetStreamForSegments.
 
 ---
 
@@ -2639,6 +2670,18 @@ public readonly AllWriteActions: string[];
 - *Type:* string[]
 
 All write-level actions.
+
+---
+
+##### `AssociateStreamForSegments`<sup>Required</sup> <a name="AssociateStreamForSegments" id="@cdk_utils/iam.profile.ProfileActions.property.AssociateStreamForSegments"></a>
+
+```typescript
+public readonly AssociateStreamForSegments: string;
+```
+
+- *Type:* string
+
+[Write] profile:AssociateStreamForSegments.
 
 ---
 
@@ -3026,6 +3069,18 @@ public readonly DeleteSegmentDefinition: string;
 
 ---
 
+##### `DeleteSegmentSubscription`<sup>Required</sup> <a name="DeleteSegmentSubscription" id="@cdk_utils/iam.profile.ProfileActions.property.DeleteSegmentSubscription"></a>
+
+```typescript
+public readonly DeleteSegmentSubscription: string;
+```
+
+- *Type:* string
+
+[Write] profile:DeleteSegmentSubscription.
+
+---
+
 ##### `DeleteWorkflow`<sup>Required</sup> <a name="DeleteWorkflow" id="@cdk_utils/iam.profile.ProfileActions.property.DeleteWorkflow"></a>
 
 ```typescript
@@ -3047,6 +3102,18 @@ public readonly DetectProfileObjectType: string;
 - *Type:* string
 
 [Read] profile:DetectProfileObjectType.
+
+---
+
+##### `DisassociateStreamForSegments`<sup>Required</sup> <a name="DisassociateStreamForSegments" id="@cdk_utils/iam.profile.ProfileActions.property.DisassociateStreamForSegments"></a>
+
+```typescript
+public readonly DisassociateStreamForSegments: string;
+```
+
+- *Type:* string
+
+[Write] profile:DisassociateStreamForSegments.
 
 ---
 
@@ -3338,6 +3405,18 @@ public readonly ListSegmentDefinitions: string;
 
 ---
 
+##### `ListSegmentSubscriptionEvents`<sup>Required</sup> <a name="ListSegmentSubscriptionEvents" id="@cdk_utils/iam.profile.ProfileActions.property.ListSegmentSubscriptionEvents"></a>
+
+```typescript
+public readonly ListSegmentSubscriptionEvents: string;
+```
+
+- *Type:* string
+
+[Read] profile:ListSegmentSubscriptionEvents.
+
+---
+
 ##### `ListTagsForResource`<sup>Required</sup> <a name="ListTagsForResource" id="@cdk_utils/iam.profile.ProfileActions.property.ListTagsForResource"></a>
 
 ```typescript
@@ -3431,6 +3510,18 @@ public readonly PutProfileObjectType: string;
 - *Type:* string
 
 [Write] profile:PutProfileObjectType.
+
+---
+
+##### `PutSegmentSubscription`<sup>Required</sup> <a name="PutSegmentSubscription" id="@cdk_utils/iam.profile.ProfileActions.property.PutSegmentSubscription"></a>
+
+```typescript
+public readonly PutSegmentSubscription: string;
+```
+
+- *Type:* string
+
+[Write] profile:PutSegmentSubscription.
 
 ---
 

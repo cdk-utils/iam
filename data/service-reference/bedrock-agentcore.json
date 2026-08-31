@@ -7784,6 +7784,16 @@
       ]
     },
     {
+      "Name": "IngestData",
+      "SDK": [
+        {
+          "Name": "bedrock-agentcore",
+          "Method": "ingest_data",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "InvokeAgentRuntime",
       "AuthorizedActions": [
         {

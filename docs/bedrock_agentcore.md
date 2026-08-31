@@ -9908,6 +9908,7 @@ new bedrock_agentcore.BedrockAgentcoreOperations()
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.DeleteResourcePolicy">DeleteResourcePolicy</a></code> | <code>string[]</code> | IAM actions required for the DeleteResourcePolicy API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.DeleteWorkloadIdentity">DeleteWorkloadIdentity</a></code> | <code>string[]</code> | IAM actions required for the DeleteWorkloadIdentity API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.Evaluate">Evaluate</a></code> | <code>string[]</code> | IAM actions required for the Evaluate API call. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.IngestData">IngestData</a></code> | <code>string[]</code> | IAM actions required for the IngestData API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.InvokeAgentRuntime">InvokeAgentRuntime</a></code> | <code>string[]</code> | IAM actions required for the InvokeAgentRuntime API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.InvokeAgentRuntimeCommand">InvokeAgentRuntimeCommand</a></code> | <code>string[]</code> | IAM actions required for the InvokeAgentRuntimeCommand API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.InvokeBrowser">InvokeBrowser</a></code> | <code>string[]</code> | IAM actions required for the InvokeBrowser API call. |
@@ -10975,6 +10976,18 @@ public readonly Evaluate: string[];
 - *Type:* string[]
 
 IAM actions required for the Evaluate API call.
+
+---
+
+##### `IngestData`<sup>Required</sup> <a name="IngestData" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.IngestData"></a>
+
+```typescript
+public readonly IngestData: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the IngestData API call.
 
 ---
 

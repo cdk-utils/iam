@@ -111,6 +111,8 @@ export class HealthLakeActions {
 	static readonly QuestionnairePackage = "healthlake:QuestionnairePackage";
 	/** [Read] healthlake:ReadResource */
 	static readonly ReadResource = "healthlake:ReadResource";
+	/** [Write] healthlake:RestoreFHIRDatastore */
+	static readonly RestoreFHIRDatastore = "healthlake:RestoreFHIRDatastore";
 	/** [Write] healthlake:RetrieveAttributionStatus */
 	static readonly RetrieveAttributionStatus =
 		"healthlake:RetrieveAttributionStatus";
@@ -215,6 +217,7 @@ export class HealthLakeActions {
 		HealthLakeActions.PatchResource,
 		HealthLakeActions.ProcessBundle,
 		HealthLakeActions.PublishDataTransformationProfile,
+		HealthLakeActions.RestoreFHIRDatastore,
 		HealthLakeActions.RetrieveAttributionStatus,
 		HealthLakeActions.StartDataTransformationJob,
 		HealthLakeActions.StartFHIRBulkDeleteJob,
@@ -455,6 +458,10 @@ export class HealthLakeOperations {
 	static readonly PublishDataTransformationProfile: string[] = [
 		"healthlake:PublishDataTransformationProfile",
 	];
+	/** IAM actions required for the RestoreFHIRDatastore API call. */
+	static readonly RestoreFHIRDatastore: string[] = [
+		"healthlake:RestoreFHIRDatastore",
+	];
 	/** IAM actions required for the StartDataTransformationJob API call. */
 	static readonly StartDataTransformationJob: string[] = [
 		"iam:PassRole",
@@ -500,6 +507,12 @@ export class HealthLakeConditions {
 	];
 	/** Condition keys applicable to the CreateFHIRDatastore action. */
 	static readonly CreateFHIRDatastoreConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:ResourceTag/${TagKey}",
+		"aws:TagKeys",
+	];
+	/** Condition keys applicable to the RestoreFHIRDatastore action. */
+	static readonly RestoreFHIRDatastoreConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",

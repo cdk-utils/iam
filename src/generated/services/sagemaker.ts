@@ -35,6 +35,11 @@ export class SageMakerActions {
 	static readonly BatchGetRecord = "sagemaker:BatchGetRecord";
 	/** [Write] sagemaker:BatchPutMetrics */
 	static readonly BatchPutMetrics = "sagemaker:BatchPutMetrics";
+	/** [Write] sagemaker:BatchRebootClusterNodes */
+	static readonly BatchRebootClusterNodes = "sagemaker:BatchRebootClusterNodes";
+	/** [Write] sagemaker:BatchReplaceClusterNodes */
+	static readonly BatchReplaceClusterNodes =
+		"sagemaker:BatchReplaceClusterNodes";
 	/** [Write] sagemaker:BatchWriteRecord */
 	static readonly BatchWriteRecord = "sagemaker:BatchWriteRecord";
 	/** [Write] sagemaker:CallMlflowAppApi */
@@ -544,6 +549,9 @@ export class SageMakerActions {
 	static readonly DescribeTrainingJob = "sagemaker:DescribeTrainingJob";
 	/** [Read] sagemaker:DescribeTrainingPlan */
 	static readonly DescribeTrainingPlan = "sagemaker:DescribeTrainingPlan";
+	/** [Read] sagemaker:DescribeTrainingPlanExtensionHistory */
+	static readonly DescribeTrainingPlanExtensionHistory =
+		"sagemaker:DescribeTrainingPlanExtensionHistory";
 	/** [Read] sagemaker:DescribeTransformJob */
 	static readonly DescribeTransformJob = "sagemaker:DescribeTransformJob";
 	/** [Read] sagemaker:DescribeTrial */
@@ -567,6 +575,8 @@ export class SageMakerActions {
 	/** [Write] sagemaker:EnableSagemakerServicecatalogPortfolio */
 	static readonly EnableSagemakerServicecatalogPortfolio =
 		"sagemaker:EnableSagemakerServicecatalogPortfolio";
+	/** [Write] sagemaker:ExtendTrainingPlan */
+	static readonly ExtendTrainingPlan = "sagemaker:ExtendTrainingPlan";
 	/** [Read] sagemaker:GetDeployments */
 	static readonly actionGetDeployments = "sagemaker:GetDeployments";
 	/** [Read] sagemaker:GetDeviceFleetReport */
@@ -1101,6 +1111,7 @@ export class SageMakerActions {
 		SageMakerActions.DescribeSubscribedWorkteam,
 		SageMakerActions.DescribeTrainingJob,
 		SageMakerActions.DescribeTrainingPlan,
+		SageMakerActions.DescribeTrainingPlanExtensionHistory,
 		SageMakerActions.DescribeTransformJob,
 		SageMakerActions.DescribeTrial,
 		SageMakerActions.DescribeTrialComponent,
@@ -1132,6 +1143,8 @@ export class SageMakerActions {
 		SageMakerActions.BatchAddClusterNodes,
 		SageMakerActions.BatchDeleteClusterNodes,
 		SageMakerActions.BatchPutMetrics,
+		SageMakerActions.BatchRebootClusterNodes,
+		SageMakerActions.BatchReplaceClusterNodes,
 		SageMakerActions.BatchWriteRecord,
 		SageMakerActions.CallMlflowAppApi,
 		SageMakerActions.CallPartnerAppApi,
@@ -1281,6 +1294,7 @@ export class SageMakerActions {
 		SageMakerActions.DisableSagemakerServicecatalogPortfolio,
 		SageMakerActions.DisassociateTrialComponent,
 		SageMakerActions.EnableSagemakerServicecatalogPortfolio,
+		SageMakerActions.ExtendTrainingPlan,
 		SageMakerActions.ImportHubContent,
 		SageMakerActions.PutLineageGroupPolicy,
 		SageMakerActions.PutModelPackageGroupPolicy,
@@ -6152,9 +6166,13 @@ export class SageMakerOperations {
 	/** IAM actions required for the BatchPutMetrics API call. */
 	static readonly BatchPutMetrics: string[] = ["sagemaker:BatchPutMetrics"];
 	/** IAM actions required for the BatchRebootClusterNodes API call. */
-	static readonly BatchRebootClusterNodes: string[] = [];
+	static readonly BatchRebootClusterNodes: string[] = [
+		"sagemaker:BatchRebootClusterNodes",
+	];
 	/** IAM actions required for the BatchReplaceClusterNodes API call. */
-	static readonly BatchReplaceClusterNodes: string[] = [];
+	static readonly BatchReplaceClusterNodes: string[] = [
+		"sagemaker:BatchReplaceClusterNodes",
+	];
 	/** IAM actions required for the BatchWriteRecord API call. */
 	static readonly BatchWriteRecord: string[] = [
 		"sagemaker:BatchWriteRecord",
@@ -6971,7 +6989,9 @@ export class SageMakerOperations {
 		"sagemaker:DescribeTrainingPlan",
 	];
 	/** IAM actions required for the DescribeTrainingPlanExtensionHistory API call. */
-	static readonly DescribeTrainingPlanExtensionHistory: string[] = [];
+	static readonly DescribeTrainingPlanExtensionHistory: string[] = [
+		"sagemaker:DescribeTrainingPlanExtensionHistory",
+	];
 	/** IAM actions required for the DescribeTransformJob API call. */
 	static readonly DescribeTransformJob: string[] = [
 		"sagemaker:DescribeTransformJob",
@@ -7007,7 +7027,9 @@ export class SageMakerOperations {
 		"sagemaker:EnableSagemakerServicecatalogPortfolio",
 	];
 	/** IAM actions required for the ExtendTrainingPlan API call. */
-	static readonly ExtendTrainingPlan: string[] = [];
+	static readonly ExtendTrainingPlan: string[] = [
+		"sagemaker:ExtendTrainingPlan",
+	];
 	/** IAM actions required for the GetDeployments API call. */
 	static readonly opGetDeployments: string[] = [];
 	/** IAM actions required for the GetDeviceFleetReport API call. */
@@ -7765,6 +7787,7 @@ export class SageMakerConditions {
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"sagemaker:AppNetworkAccessType",
+		"sagemaker:AuthMode",
 		"sagemaker:DomainSharingOutputKmsKeyArn",
 		"sagemaker:ImageArns",
 		"sagemaker:ImageVersionArns",
@@ -8158,6 +8181,11 @@ export class SageMakerConditions {
 	static readonly InvokeEndpointConditionKeys: string[] = [
 		"sagemaker:TargetModel",
 	];
+	/** Condition keys applicable to the PutRecord action. */
+	static readonly PutRecordConditionKeys: string[] = [
+		"sagemaker:IsUpdateRecord",
+		"sagemaker:UpdatableFeatures",
+	];
 	/** Condition keys applicable to the RegisterDevices action. */
 	static readonly RegisterDevicesConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
@@ -8263,6 +8291,8 @@ export class SageMakerConditions {
 	static readonly ACCELERATOR_TYPES = "sagemaker:AcceleratorTypes";
 	/** Condition key: sagemaker:AppNetworkAccessType (String) */
 	static readonly APP_NETWORK_ACCESS_TYPE = "sagemaker:AppNetworkAccessType";
+	/** Condition key: sagemaker:AuthMode (String) */
+	static readonly AUTH_MODE = "sagemaker:AuthMode";
 	/** Condition key: sagemaker:BearerTokenType (String) */
 	static readonly BEARER_TOKEN_TYPE = "sagemaker:BearerTokenType";
 	/** Condition key: sagemaker:CurrentCustomerMetadataProperties/${MetadataKey} (String) */
@@ -8340,6 +8370,8 @@ export class SageMakerConditions {
 	/** Condition key: sagemaker:InterContainerTrafficEncryption (Bool) */
 	static readonly INTER_CONTAINER_TRAFFIC_ENCRYPTION =
 		"sagemaker:InterContainerTrafficEncryption";
+	/** Condition key: sagemaker:IsUpdateRecord (Bool) */
+	static readonly IS_UPDATE_RECORD = "sagemaker:IsUpdateRecord";
 	/** Condition key: sagemaker:KeepAlivePeriod (Numeric) */
 	static readonly KEEP_ALIVE_PERIOD = "sagemaker:KeepAlivePeriod";
 	/** Condition key: sagemaker:MaxRuntimeInSeconds (Numeric) */
@@ -8392,6 +8424,8 @@ export class SageMakerConditions {
 	static readonly TAGGING_ACTION = "sagemaker:TaggingAction";
 	/** Condition key: sagemaker:TargetModel (String) */
 	static readonly TARGET_MODEL = "sagemaker:TargetModel";
+	/** Condition key: sagemaker:UpdatableFeatures (ArrayOfString) */
+	static readonly UPDATABLE_FEATURES = "sagemaker:UpdatableFeatures";
 	/** Condition key: sagemaker:UserProfileName (String) */
 	static readonly USER_PROFILE_NAME = "sagemaker:UserProfileName";
 	/** Condition key: sagemaker:VolumeKmsKey (ARN) */
@@ -8446,6 +8480,13 @@ export class SageMakerConditions {
 		value: string,
 	): Record<string, Record<string, string>> {
 		return { StringEquals: { "sagemaker:AppNetworkAccessType": value } };
+	}
+
+	/**
+	 * Generates a condition block for `sagemaker:AuthMode`.
+	 */
+	static authMode(value: string): Record<string, Record<string, string>> {
+		return { StringEquals: { "sagemaker:AuthMode": value } };
 	}
 
 	/**
@@ -8728,6 +8769,15 @@ export class SageMakerConditions {
 	}
 
 	/**
+	 * Generates a condition block for `sagemaker:IsUpdateRecord`.
+	 */
+	static isUpdateRecord(
+		value: boolean,
+	): Record<string, Record<string, boolean>> {
+		return { Bool: { "sagemaker:IsUpdateRecord": value } };
+	}
+
+	/**
 	 * Generates a condition block for `sagemaker:KeepAlivePeriod`.
 	 */
 	static keepAlivePeriod(
@@ -8927,6 +8977,17 @@ export class SageMakerConditions {
 	 */
 	static targetModel(value: string): Record<string, Record<string, string>> {
 		return { StringEquals: { "sagemaker:TargetModel": value } };
+	}
+
+	/**
+	 * Generates a condition block for `sagemaker:UpdatableFeatures`.
+	 */
+	static updatableFeatures(
+		values: string[],
+	): Record<string, Record<string, string[]>> {
+		return {
+			"ForAllValues:StringEquals": { "sagemaker:UpdatableFeatures": values },
+		};
 	}
 
 	/**
