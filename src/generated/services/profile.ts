@@ -1215,6 +1215,10 @@ export class ProfileResources {
 export class ProfileOperations {
 	/** IAM actions required for the AddProfileKey API call. */
 	static readonly AddProfileKey: string[] = ["profile:AddProfileKey"];
+	/** IAM actions required for the AssociateStreamForSegments API call. */
+	static readonly AssociateStreamForSegments: string[] = [
+		"profile:AssociateStreamForSegments",
+	];
 	/** IAM actions required for the BatchGetCalculatedAttributeForProfile API call. */
 	static readonly BatchGetCalculatedAttributeForProfile: string[] = [
 		"profile:BatchGetCalculatedAttributeForProfile",
@@ -1327,11 +1331,19 @@ export class ProfileOperations {
 	static readonly DeleteSegmentDefinition: string[] = [
 		"profile:DeleteSegmentDefinition",
 	];
+	/** IAM actions required for the DeleteSegmentSubscription API call. */
+	static readonly DeleteSegmentSubscription: string[] = [
+		"profile:DeleteSegmentSubscription",
+	];
 	/** IAM actions required for the DeleteWorkflow API call. */
 	static readonly DeleteWorkflow: string[] = ["profile:DeleteWorkflow"];
 	/** IAM actions required for the DetectProfileObjectType API call. */
 	static readonly DetectProfileObjectType: string[] = [
 		"profile:DetectProfileObjectType",
+	];
+	/** IAM actions required for the DisassociateStreamForSegments API call. */
+	static readonly DisassociateStreamForSegments: string[] = [
+		"profile:DisassociateStreamForSegments",
 	];
 	/** IAM actions required for the GetAutoMergingPreview API call. */
 	static readonly opGetAutoMergingPreview: string[] = [
@@ -1411,9 +1423,17 @@ export class ProfileOperations {
 	static readonly opGetSegmentSnapshot: string[] = [
 		"profile:GetSegmentSnapshot",
 	];
+	/** IAM actions required for the GetSegmentSubscription API call. */
+	static readonly opGetSegmentSubscription: string[] = [
+		"profile:GetSegmentSubscription",
+	];
 	/** IAM actions required for the GetSimilarProfiles API call. */
 	static readonly opGetSimilarProfiles: string[] = [
 		"profile:GetSimilarProfiles",
+	];
+	/** IAM actions required for the GetStreamForSegments API call. */
+	static readonly opGetStreamForSegments: string[] = [
+		"profile:GetStreamForSegments",
 	];
 	/** IAM actions required for the GetUploadJob API call. */
 	static readonly opGetUploadJob: string[] = ["profile:GetUploadJob"];
@@ -1501,6 +1521,10 @@ export class ProfileOperations {
 	static readonly ListSegmentDefinitions: string[] = [
 		"profile:ListSegmentDefinitions",
 	];
+	/** IAM actions required for the ListSegmentSubscriptionEvents API call. */
+	static readonly ListSegmentSubscriptionEvents: string[] = [
+		"profile:ListSegmentSubscriptionEvents",
+	];
 	/** IAM actions required for the ListTagsForResource API call. */
 	static readonly ListTagsForResource: string[] = [
 		"profile:ListTagsForResource",
@@ -1527,6 +1551,10 @@ export class ProfileOperations {
 	static readonly PutProfileObjectType: string[] = [
 		"profile:PutProfileObjectType",
 		"profile:TagResource",
+	];
+	/** IAM actions required for the PutSegmentSubscription API call. */
+	static readonly PutSegmentSubscription: string[] = [
+		"profile:PutSegmentSubscription",
 	];
 	/** IAM actions required for the SearchProfiles API call. */
 	static readonly SearchProfiles: string[] = ["profile:SearchProfiles"];

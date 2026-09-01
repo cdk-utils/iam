@@ -2465,6 +2465,180 @@ Defaults to "*".
 
 ---
 
+### ConnectExtractionDefinitionArnComponents <a name="ConnectExtractionDefinitionArnComponents" id="@cdk_utils/iam.connect.ConnectExtractionDefinitionArnComponents"></a>
+
+Parsed components of a extraction-definition ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.connect.ConnectExtractionDefinitionArnComponents.Initializer"></a>
+
+```typescript
+import { connect } from '@cdk_utils/iam'
+
+const connectExtractionDefinitionArnComponents: connect.ConnectExtractionDefinitionArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.connect.ConnectExtractionDefinitionArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectExtractionDefinitionArnComponents.property.extractionDefinitionId">extractionDefinitionId</a></code> | <code>string</code> | The ExtractionDefinitionId component. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectExtractionDefinitionArnComponents.property.instanceId">instanceId</a></code> | <code>string</code> | The InstanceId component. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectExtractionDefinitionArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectExtractionDefinitionArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.connect.ConnectExtractionDefinitionArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `extractionDefinitionId`<sup>Required</sup> <a name="extractionDefinitionId" id="@cdk_utils/iam.connect.ConnectExtractionDefinitionArnComponents.property.extractionDefinitionId"></a>
+
+```typescript
+public readonly extractionDefinitionId: string;
+```
+
+- *Type:* string
+
+The ExtractionDefinitionId component.
+
+---
+
+##### `instanceId`<sup>Required</sup> <a name="instanceId" id="@cdk_utils/iam.connect.ConnectExtractionDefinitionArnComponents.property.instanceId"></a>
+
+```typescript
+public readonly instanceId: string;
+```
+
+- *Type:* string
+
+The InstanceId component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.connect.ConnectExtractionDefinitionArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.connect.ConnectExtractionDefinitionArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### ConnectExtractionDefinitionArnProps <a name="ConnectExtractionDefinitionArnProps" id="@cdk_utils/iam.connect.ConnectExtractionDefinitionArnProps"></a>
+
+Properties for building a extraction-definition ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.connect.ConnectExtractionDefinitionArnProps.Initializer"></a>
+
+```typescript
+import { connect } from '@cdk_utils/iam'
+
+const connectExtractionDefinitionArnProps: connect.ConnectExtractionDefinitionArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.connect.ConnectExtractionDefinitionArnProps.property.extractionDefinitionId">extractionDefinitionId</a></code> | <code>string</code> | The ExtractionDefinitionId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectExtractionDefinitionArnProps.property.instanceId">instanceId</a></code> | <code>string</code> | The InstanceId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectExtractionDefinitionArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectExtractionDefinitionArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectExtractionDefinitionArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `extractionDefinitionId`<sup>Required</sup> <a name="extractionDefinitionId" id="@cdk_utils/iam.connect.ConnectExtractionDefinitionArnProps.property.extractionDefinitionId"></a>
+
+```typescript
+public readonly extractionDefinitionId: string;
+```
+
+- *Type:* string
+
+The ExtractionDefinitionId component of the ARN.
+
+---
+
+##### `instanceId`<sup>Required</sup> <a name="instanceId" id="@cdk_utils/iam.connect.ConnectExtractionDefinitionArnProps.property.instanceId"></a>
+
+```typescript
+public readonly instanceId: string;
+```
+
+- *Type:* string
+
+The InstanceId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.connect.ConnectExtractionDefinitionArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.connect.ConnectExtractionDefinitionArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.connect.ConnectExtractionDefinitionArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### ConnectHierarchyGroupArnComponents <a name="ConnectHierarchyGroupArnComponents" id="@cdk_utils/iam.connect.ConnectHierarchyGroupArnComponents"></a>
 
 Parsed components of a hierarchy-group ARN.
@@ -7394,6 +7568,7 @@ new connect.ConnectActions()
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.CreateDataTableAttribute">CreateDataTableAttribute</a></code> | <code>string</code> | [Write] connect:CreateDataTableAttribute. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.CreateEmailAddress">CreateEmailAddress</a></code> | <code>string</code> | [Write] connect:CreateEmailAddress. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.CreateEvaluationForm">CreateEvaluationForm</a></code> | <code>string</code> | [Write] connect:CreateEvaluationForm. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.CreateExtractionDefinition">CreateExtractionDefinition</a></code> | <code>string</code> | [Write] connect:CreateExtractionDefinition. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.CreateHoursOfOperation">CreateHoursOfOperation</a></code> | <code>string</code> | [Write] connect:CreateHoursOfOperation. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.CreateHoursOfOperationOverride">CreateHoursOfOperationOverride</a></code> | <code>string</code> | [Write] connect:CreateHoursOfOperationOverride. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.CreateInstance">CreateInstance</a></code> | <code>string</code> | [Write] connect:CreateInstance. |
@@ -7432,6 +7607,7 @@ new connect.ConnectActions()
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.DeleteDataTableAttribute">DeleteDataTableAttribute</a></code> | <code>string</code> | [Write] connect:DeleteDataTableAttribute. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.DeleteEmailAddress">DeleteEmailAddress</a></code> | <code>string</code> | [Write] connect:DeleteEmailAddress. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.DeleteEvaluationForm">DeleteEvaluationForm</a></code> | <code>string</code> | [Write] connect:DeleteEvaluationForm. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.DeleteExtractionDefinition">DeleteExtractionDefinition</a></code> | <code>string</code> | [Write] connect:DeleteExtractionDefinition. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.DeleteHoursOfOperation">DeleteHoursOfOperation</a></code> | <code>string</code> | [Write] connect:DeleteHoursOfOperation. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.DeleteHoursOfOperationOverride">DeleteHoursOfOperationOverride</a></code> | <code>string</code> | [Write] connect:DeleteHoursOfOperationOverride. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.DeleteInstance">DeleteInstance</a></code> | <code>string</code> | [Write] connect:DeleteInstance. |
@@ -7469,6 +7645,7 @@ new connect.ConnectActions()
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.DescribeDataTableAttribute">DescribeDataTableAttribute</a></code> | <code>string</code> | [Read] connect:DescribeDataTableAttribute. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.DescribeEmailAddress">DescribeEmailAddress</a></code> | <code>string</code> | [Read] connect:DescribeEmailAddress. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.DescribeEvaluationForm">DescribeEvaluationForm</a></code> | <code>string</code> | [Read] connect:DescribeEvaluationForm. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.DescribeExtractionDefinition">DescribeExtractionDefinition</a></code> | <code>string</code> | [Read] connect:DescribeExtractionDefinition. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.DescribeForecastingPlanningSchedulingIntegration">DescribeForecastingPlanningSchedulingIntegration</a></code> | <code>string</code> | [Read] connect:DescribeForecastingPlanningSchedulingIntegration. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.DescribeHoursOfOperation">DescribeHoursOfOperation</a></code> | <code>string</code> | [Read] connect:DescribeHoursOfOperation. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.DescribeHoursOfOperationOverride">DescribeHoursOfOperationOverride</a></code> | <code>string</code> | [Read] connect:DescribeHoursOfOperationOverride. |
@@ -7537,6 +7714,7 @@ new connect.ConnectActions()
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.ListEntitySecurityProfiles">ListEntitySecurityProfiles</a></code> | <code>string</code> | [List] connect:ListEntitySecurityProfiles. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.ListEvaluationForms">ListEvaluationForms</a></code> | <code>string</code> | [List] connect:ListEvaluationForms. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.ListEvaluationFormVersions">ListEvaluationFormVersions</a></code> | <code>string</code> | [List] connect:ListEvaluationFormVersions. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.ListExtractionDefinitions">ListExtractionDefinitions</a></code> | <code>string</code> | [List] connect:ListExtractionDefinitions. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.ListFlowAssociations">ListFlowAssociations</a></code> | <code>string</code> | [List] connect:ListFlowAssociations. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.ListHoursOfOperationOverrides">ListHoursOfOperationOverrides</a></code> | <code>string</code> | [List] connect:ListHoursOfOperationOverrides. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.ListHoursOfOperations">ListHoursOfOperations</a></code> | <code>string</code> | [List] connect:ListHoursOfOperations. |
@@ -7668,6 +7846,7 @@ new connect.ConnectActions()
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.UpdateDataTablePrimaryValues">UpdateDataTablePrimaryValues</a></code> | <code>string</code> | [Write] connect:UpdateDataTablePrimaryValues. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.UpdateEmailAddressMetadata">UpdateEmailAddressMetadata</a></code> | <code>string</code> | [Write] connect:UpdateEmailAddressMetadata. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.UpdateEvaluationForm">UpdateEvaluationForm</a></code> | <code>string</code> | [Write] connect:UpdateEvaluationForm. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.UpdateExtractionDefinition">UpdateExtractionDefinition</a></code> | <code>string</code> | [Write] connect:UpdateExtractionDefinition. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.UpdateHoursOfOperation">UpdateHoursOfOperation</a></code> | <code>string</code> | [Write] connect:UpdateHoursOfOperation. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.UpdateHoursOfOperationOverride">UpdateHoursOfOperationOverride</a></code> | <code>string</code> | [Write] connect:UpdateHoursOfOperationOverride. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.UpdateInstanceAttribute">UpdateInstanceAttribute</a></code> | <code>string</code> | [Write] connect:UpdateInstanceAttribute. |
@@ -8496,6 +8675,18 @@ public readonly CreateEvaluationForm: string;
 
 ---
 
+##### `CreateExtractionDefinition`<sup>Required</sup> <a name="CreateExtractionDefinition" id="@cdk_utils/iam.connect.ConnectActions.property.CreateExtractionDefinition"></a>
+
+```typescript
+public readonly CreateExtractionDefinition: string;
+```
+
+- *Type:* string
+
+[Write] connect:CreateExtractionDefinition.
+
+---
+
 ##### `CreateHoursOfOperation`<sup>Required</sup> <a name="CreateHoursOfOperation" id="@cdk_utils/iam.connect.ConnectActions.property.CreateHoursOfOperation"></a>
 
 ```typescript
@@ -8952,6 +9143,18 @@ public readonly DeleteEvaluationForm: string;
 
 ---
 
+##### `DeleteExtractionDefinition`<sup>Required</sup> <a name="DeleteExtractionDefinition" id="@cdk_utils/iam.connect.ConnectActions.property.DeleteExtractionDefinition"></a>
+
+```typescript
+public readonly DeleteExtractionDefinition: string;
+```
+
+- *Type:* string
+
+[Write] connect:DeleteExtractionDefinition.
+
+---
+
 ##### `DeleteHoursOfOperation`<sup>Required</sup> <a name="DeleteHoursOfOperation" id="@cdk_utils/iam.connect.ConnectActions.property.DeleteHoursOfOperation"></a>
 
 ```typescript
@@ -9393,6 +9596,18 @@ public readonly DescribeEvaluationForm: string;
 - *Type:* string
 
 [Read] connect:DescribeEvaluationForm.
+
+---
+
+##### `DescribeExtractionDefinition`<sup>Required</sup> <a name="DescribeExtractionDefinition" id="@cdk_utils/iam.connect.ConnectActions.property.DescribeExtractionDefinition"></a>
+
+```typescript
+public readonly DescribeExtractionDefinition: string;
+```
+
+- *Type:* string
+
+[Read] connect:DescribeExtractionDefinition.
 
 ---
 
@@ -10209,6 +10424,18 @@ public readonly ListEvaluationFormVersions: string;
 - *Type:* string
 
 [List] connect:ListEvaluationFormVersions.
+
+---
+
+##### `ListExtractionDefinitions`<sup>Required</sup> <a name="ListExtractionDefinitions" id="@cdk_utils/iam.connect.ConnectActions.property.ListExtractionDefinitions"></a>
+
+```typescript
+public readonly ListExtractionDefinitions: string;
+```
+
+- *Type:* string
+
+[List] connect:ListExtractionDefinitions.
 
 ---
 
@@ -11784,6 +12011,18 @@ public readonly UpdateEvaluationForm: string;
 
 ---
 
+##### `UpdateExtractionDefinition`<sup>Required</sup> <a name="UpdateExtractionDefinition" id="@cdk_utils/iam.connect.ConnectActions.property.UpdateExtractionDefinition"></a>
+
+```typescript
+public readonly UpdateExtractionDefinition: string;
+```
+
+- *Type:* string
+
+[Write] connect:UpdateExtractionDefinition.
+
+---
+
 ##### `UpdateHoursOfOperation`<sup>Required</sup> <a name="UpdateHoursOfOperation" id="@cdk_utils/iam.connect.ConnectActions.property.UpdateHoursOfOperation"></a>
 
 ```typescript
@@ -12777,6 +13016,7 @@ Generates a condition block for `connect:UserArn`.
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.CreateDataTableConditionKeys">CreateDataTableConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateDataTable action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.CreateEmailAddressConditionKeys">CreateEmailAddressConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateEmailAddress action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.CreateEvaluationFormConditionKeys">CreateEvaluationFormConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateEvaluationForm action. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.CreateExtractionDefinitionConditionKeys">CreateExtractionDefinitionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateExtractionDefinition action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.CreateHoursOfOperationConditionKeys">CreateHoursOfOperationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateHoursOfOperation action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.CreateHoursOfOperationOverrideConditionKeys">CreateHoursOfOperationOverrideConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateHoursOfOperationOverride action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.CreateInstanceConditionKeys">CreateInstanceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateInstance action. |
@@ -12814,6 +13054,7 @@ Generates a condition block for `connect:UserArn`.
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.DeleteDataTableConditionKeys">DeleteDataTableConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteDataTable action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.DeleteEmailAddressConditionKeys">DeleteEmailAddressConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteEmailAddress action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.DeleteEvaluationFormConditionKeys">DeleteEvaluationFormConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteEvaluationForm action. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.DeleteExtractionDefinitionConditionKeys">DeleteExtractionDefinitionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteExtractionDefinition action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.DeleteHoursOfOperationConditionKeys">DeleteHoursOfOperationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteHoursOfOperation action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.DeleteHoursOfOperationOverrideConditionKeys">DeleteHoursOfOperationOverrideConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteHoursOfOperationOverride action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.DeleteInstanceConditionKeys">DeleteInstanceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteInstance action. |
@@ -12851,6 +13092,7 @@ Generates a condition block for `connect:UserArn`.
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.DescribeDataTableConditionKeys">DescribeDataTableConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeDataTable action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.DescribeEmailAddressConditionKeys">DescribeEmailAddressConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeEmailAddress action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.DescribeEvaluationFormConditionKeys">DescribeEvaluationFormConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeEvaluationForm action. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.DescribeExtractionDefinitionConditionKeys">DescribeExtractionDefinitionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeExtractionDefinition action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.DescribeForecastingPlanningSchedulingIntegrationConditionKeys">DescribeForecastingPlanningSchedulingIntegrationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeForecastingPlanningSchedulingIntegration action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.DescribeHoursOfOperationConditionKeys">DescribeHoursOfOperationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeHoursOfOperation action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.DescribeHoursOfOperationOverrideConditionKeys">DescribeHoursOfOperationOverrideConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeHoursOfOperationOverride action. |
@@ -12921,6 +13163,7 @@ Generates a condition block for `connect:UserArn`.
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.ListEntitySecurityProfilesConditionKeys">ListEntitySecurityProfilesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListEntitySecurityProfiles action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.ListEvaluationFormsConditionKeys">ListEvaluationFormsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListEvaluationForms action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.ListEvaluationFormVersionsConditionKeys">ListEvaluationFormVersionsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListEvaluationFormVersions action. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.ListExtractionDefinitionsConditionKeys">ListExtractionDefinitionsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListExtractionDefinitions action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.ListFlowAssociationsConditionKeys">ListFlowAssociationsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListFlowAssociations action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.ListHoursOfOperationOverridesConditionKeys">ListHoursOfOperationOverridesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListHoursOfOperationOverrides action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.ListHoursOfOperationsConditionKeys">ListHoursOfOperationsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListHoursOfOperations action. |
@@ -13047,6 +13290,7 @@ Generates a condition block for `connect:UserArn`.
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.UpdateDataTablePrimaryValuesConditionKeys">UpdateDataTablePrimaryValuesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateDataTablePrimaryValues action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.UpdateEmailAddressMetadataConditionKeys">UpdateEmailAddressMetadataConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateEmailAddressMetadata action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.UpdateEvaluationFormConditionKeys">UpdateEvaluationFormConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateEvaluationForm action. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.UpdateExtractionDefinitionConditionKeys">UpdateExtractionDefinitionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateExtractionDefinition action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.UpdateHoursOfOperationConditionKeys">UpdateHoursOfOperationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateHoursOfOperation action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.UpdateHoursOfOperationOverrideConditionKeys">UpdateHoursOfOperationOverrideConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateHoursOfOperationOverride action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.UpdateInstanceAttributeConditionKeys">UpdateInstanceAttributeConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateInstanceAttribute action. |
@@ -13888,6 +14132,18 @@ Condition keys applicable to the CreateEvaluationForm action.
 
 ---
 
+##### `CreateExtractionDefinitionConditionKeys`<sup>Required</sup> <a name="CreateExtractionDefinitionConditionKeys" id="@cdk_utils/iam.connect.ConnectConditions.property.CreateExtractionDefinitionConditionKeys"></a>
+
+```typescript
+public readonly CreateExtractionDefinitionConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateExtractionDefinition action.
+
+---
+
 ##### `CreateHoursOfOperationConditionKeys`<sup>Required</sup> <a name="CreateHoursOfOperationConditionKeys" id="@cdk_utils/iam.connect.ConnectConditions.property.CreateHoursOfOperationConditionKeys"></a>
 
 ```typescript
@@ -14332,6 +14588,18 @@ Condition keys applicable to the DeleteEvaluationForm action.
 
 ---
 
+##### `DeleteExtractionDefinitionConditionKeys`<sup>Required</sup> <a name="DeleteExtractionDefinitionConditionKeys" id="@cdk_utils/iam.connect.ConnectConditions.property.DeleteExtractionDefinitionConditionKeys"></a>
+
+```typescript
+public readonly DeleteExtractionDefinitionConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DeleteExtractionDefinition action.
+
+---
+
 ##### `DeleteHoursOfOperationConditionKeys`<sup>Required</sup> <a name="DeleteHoursOfOperationConditionKeys" id="@cdk_utils/iam.connect.ConnectConditions.property.DeleteHoursOfOperationConditionKeys"></a>
 
 ```typescript
@@ -14773,6 +15041,18 @@ public readonly DescribeEvaluationFormConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the DescribeEvaluationForm action.
+
+---
+
+##### `DescribeExtractionDefinitionConditionKeys`<sup>Required</sup> <a name="DescribeExtractionDefinitionConditionKeys" id="@cdk_utils/iam.connect.ConnectConditions.property.DescribeExtractionDefinitionConditionKeys"></a>
+
+```typescript
+public readonly DescribeExtractionDefinitionConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DescribeExtractionDefinition action.
 
 ---
 
@@ -15613,6 +15893,18 @@ public readonly ListEvaluationFormVersionsConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the ListEvaluationFormVersions action.
+
+---
+
+##### `ListExtractionDefinitionsConditionKeys`<sup>Required</sup> <a name="ListExtractionDefinitionsConditionKeys" id="@cdk_utils/iam.connect.ConnectConditions.property.ListExtractionDefinitionsConditionKeys"></a>
+
+```typescript
+public readonly ListExtractionDefinitionsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ListExtractionDefinitions action.
 
 ---
 
@@ -17128,6 +17420,18 @@ Condition keys applicable to the UpdateEvaluationForm action.
 
 ---
 
+##### `UpdateExtractionDefinitionConditionKeys`<sup>Required</sup> <a name="UpdateExtractionDefinitionConditionKeys" id="@cdk_utils/iam.connect.ConnectConditions.property.UpdateExtractionDefinitionConditionKeys"></a>
+
+```typescript
+public readonly UpdateExtractionDefinitionConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UpdateExtractionDefinition action.
+
+---
+
 ##### `UpdateHoursOfOperationConditionKeys`<sup>Required</sup> <a name="UpdateHoursOfOperationConditionKeys" id="@cdk_utils/iam.connect.ConnectConditions.property.UpdateHoursOfOperationConditionKeys"></a>
 
 ```typescript
@@ -17958,6 +18262,7 @@ new connect.ConnectOperations()
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.opGetAuthenticationUrl">opGetAuthenticationUrl</a></code> | <code>string[]</code> | IAM actions required for the GetAuthenticationUrl API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.opGetContactAttributes">opGetContactAttributes</a></code> | <code>string[]</code> | IAM actions required for the GetContactAttributes API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.opGetContactMetrics">opGetContactMetrics</a></code> | <code>string[]</code> | IAM actions required for the GetContactMetrics API call. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.opGetCrossRegionRouting">opGetCrossRegionRouting</a></code> | <code>string[]</code> | IAM actions required for the GetCrossRegionRouting API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.opGetCurrentMetricData">opGetCurrentMetricData</a></code> | <code>string[]</code> | IAM actions required for the GetCurrentMetricData API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.opGetCurrentUserData">opGetCurrentUserData</a></code> | <code>string[]</code> | IAM actions required for the GetCurrentUserData API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.opGetEffectiveHoursOfOperations">opGetEffectiveHoursOfOperations</a></code> | <code>string[]</code> | IAM actions required for the GetEffectiveHoursOfOperations API call. |
@@ -18055,6 +18360,7 @@ new connect.ConnectOperations()
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.UpdateContactRoutingData">UpdateContactRoutingData</a></code> | <code>string[]</code> | IAM actions required for the UpdateContactRoutingData API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.UpdateContactSchedule">UpdateContactSchedule</a></code> | <code>string[]</code> | IAM actions required for the UpdateContactSchedule API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.UpdateContactTaskTemplate">UpdateContactTaskTemplate</a></code> | <code>string[]</code> | IAM actions required for the UpdateContactTaskTemplate API call. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.UpdateCrossRegionRouting">UpdateCrossRegionRouting</a></code> | <code>string[]</code> | IAM actions required for the UpdateCrossRegionRouting API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.UpdateDataTableAttribute">UpdateDataTableAttribute</a></code> | <code>string[]</code> | IAM actions required for the UpdateDataTableAttribute API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.UpdateDataTableMetadata">UpdateDataTableMetadata</a></code> | <code>string[]</code> | IAM actions required for the UpdateDataTableMetadata API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.UpdateDataTablePrimaryValues">UpdateDataTablePrimaryValues</a></code> | <code>string[]</code> | IAM actions required for the UpdateDataTablePrimaryValues API call. |
@@ -21159,6 +21465,18 @@ IAM actions required for the GetContactMetrics API call.
 
 ---
 
+##### `opGetCrossRegionRouting`<sup>Required</sup> <a name="opGetCrossRegionRouting" id="@cdk_utils/iam.connect.ConnectOperations.property.opGetCrossRegionRouting"></a>
+
+```typescript
+public readonly opGetCrossRegionRouting: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetCrossRegionRouting API call.
+
+---
+
 ##### `opGetCurrentMetricData`<sup>Required</sup> <a name="opGetCurrentMetricData" id="@cdk_utils/iam.connect.ConnectOperations.property.opGetCurrentMetricData"></a>
 
 ```typescript
@@ -22323,6 +22641,18 @@ IAM actions required for the UpdateContactTaskTemplate API call.
 
 ---
 
+##### `UpdateCrossRegionRouting`<sup>Required</sup> <a name="UpdateCrossRegionRouting" id="@cdk_utils/iam.connect.ConnectOperations.property.UpdateCrossRegionRouting"></a>
+
+```typescript
+public readonly UpdateCrossRegionRouting: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateCrossRegionRouting API call.
+
+---
+
 ##### `UpdateDataTableAttribute`<sup>Required</sup> <a name="UpdateDataTableAttribute" id="@cdk_utils/iam.connect.ConnectOperations.property.UpdateDataTableAttribute"></a>
 
 ```typescript
@@ -22995,6 +23325,7 @@ new connect.ConnectResources()
 | <code><a href="#@cdk_utils/iam.connect.ConnectResources.dataTable">dataTable</a></code> | Builds an ARN for the data-table resource. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectResources.emailAddress">emailAddress</a></code> | Builds an ARN for the email-address resource. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectResources.evaluationForm">evaluationForm</a></code> | Builds an ARN for the evaluation-form resource. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectResources.extractionDefinition">extractionDefinition</a></code> | Builds an ARN for the extraction-definition resource. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectResources.hierarchyGroup">hierarchyGroup</a></code> | Builds an ARN for the hierarchy-group resource. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectResources.hoursOfOperation">hoursOfOperation</a></code> | Builds an ARN for the hours-of-operation resource. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectResources.instance">instance</a></code> | Builds an ARN for the instance resource. |
@@ -23013,6 +23344,7 @@ new connect.ConnectResources()
 | <code><a href="#@cdk_utils/iam.connect.ConnectResources.isValidDataTableArn">isValidDataTableArn</a></code> | Validates whether a string is a valid ARN for the data-table resource. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectResources.isValidEmailAddressArn">isValidEmailAddressArn</a></code> | Validates whether a string is a valid ARN for the email-address resource. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectResources.isValidEvaluationFormArn">isValidEvaluationFormArn</a></code> | Validates whether a string is a valid ARN for the evaluation-form resource. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectResources.isValidExtractionDefinitionArn">isValidExtractionDefinitionArn</a></code> | Validates whether a string is a valid ARN for the extraction-definition resource. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectResources.isValidHierarchyGroupArn">isValidHierarchyGroupArn</a></code> | Validates whether a string is a valid ARN for the hierarchy-group resource. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectResources.isValidHoursOfOperationArn">isValidHoursOfOperationArn</a></code> | Validates whether a string is a valid ARN for the hours-of-operation resource. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectResources.isValidInstanceArn">isValidInstanceArn</a></code> | Validates whether a string is a valid ARN for the instance resource. |
@@ -23059,6 +23391,7 @@ new connect.ConnectResources()
 | <code><a href="#@cdk_utils/iam.connect.ConnectResources.parseDataTableArn">parseDataTableArn</a></code> | Parses a data-table ARN into its components. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectResources.parseEmailAddressArn">parseEmailAddressArn</a></code> | Parses a email-address ARN into its components. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectResources.parseEvaluationFormArn">parseEvaluationFormArn</a></code> | Parses a evaluation-form ARN into its components. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectResources.parseExtractionDefinitionArn">parseExtractionDefinitionArn</a></code> | Parses a extraction-definition ARN into its components. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectResources.parseHierarchyGroupArn">parseHierarchyGroupArn</a></code> | Parses a hierarchy-group ARN into its components. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectResources.parseHoursOfOperationArn">parseHoursOfOperationArn</a></code> | Parses a hours-of-operation ARN into its components. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectResources.parseInstanceArn">parseInstanceArn</a></code> | Parses a instance ARN into its components. |
@@ -23334,6 +23667,22 @@ Builds an ARN for the evaluation-form resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.connect.ConnectResources.evaluationForm.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.connect.ConnectEvaluationFormArnProps">ConnectEvaluationFormArnProps</a>
+
+---
+
+##### `extractionDefinition` <a name="extractionDefinition" id="@cdk_utils/iam.connect.ConnectResources.extractionDefinition"></a>
+
+```typescript
+import { connect } from '@cdk_utils/iam'
+
+connect.ConnectResources.extractionDefinition(props: ConnectExtractionDefinitionArnProps)
+```
+
+Builds an ARN for the extraction-definition resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.connect.ConnectResources.extractionDefinition.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.connect.ConnectExtractionDefinitionArnProps">ConnectExtractionDefinitionArnProps</a>
 
 ---
 
@@ -23620,6 +23969,22 @@ connect.ConnectResources.isValidEvaluationFormArn(arn: string)
 Validates whether a string is a valid ARN for the evaluation-form resource.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.connect.ConnectResources.isValidEvaluationFormArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidExtractionDefinitionArn` <a name="isValidExtractionDefinitionArn" id="@cdk_utils/iam.connect.ConnectResources.isValidExtractionDefinitionArn"></a>
+
+```typescript
+import { connect } from '@cdk_utils/iam'
+
+connect.ConnectResources.isValidExtractionDefinitionArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the extraction-definition resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.connect.ConnectResources.isValidExtractionDefinitionArn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -24356,6 +24721,22 @@ connect.ConnectResources.parseEvaluationFormArn(arn: string)
 Parses a evaluation-form ARN into its components.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.connect.ConnectResources.parseEvaluationFormArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseExtractionDefinitionArn` <a name="parseExtractionDefinitionArn" id="@cdk_utils/iam.connect.ConnectResources.parseExtractionDefinitionArn"></a>
+
+```typescript
+import { connect } from '@cdk_utils/iam'
+
+connect.ConnectResources.parseExtractionDefinitionArn(arn: string)
+```
+
+Parses a extraction-definition ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.connect.ConnectResources.parseExtractionDefinitionArn.parameter.arn"></a>
 
 - *Type:* string
 

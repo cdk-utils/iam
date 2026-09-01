@@ -334,6 +334,8 @@ export class AgentRegistryConditions {
 	/** Condition key: agent-registry:RecordCreatorAccount (String) */
 	static readonly RECORD_CREATOR_ACCOUNT =
 		"agent-registry:RecordCreatorAccount";
+	/** Condition key: agent-registry:RecordSourceAccount (String) */
+	static readonly RECORD_SOURCE_ACCOUNT = "agent-registry:RecordSourceAccount";
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
 	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
@@ -348,6 +350,15 @@ export class AgentRegistryConditions {
 		value: string,
 	): Record<string, Record<string, string>> {
 		return { StringEquals: { "agent-registry:RecordCreatorAccount": value } };
+	}
+
+	/**
+	 * Generates a condition block for `agent-registry:RecordSourceAccount`.
+	 */
+	static recordSourceAccount(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "agent-registry:RecordSourceAccount": value } };
 	}
 
 	/**

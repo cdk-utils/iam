@@ -7734,6 +7734,22 @@
       ]
     },
     {
+      "Name": "DeleteApp",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteApp",
+          "Service": "quicksight"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "quicksight",
+          "Method": "delete_app",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DeleteApprovalPolicy",
       "AuthorizedActions": [
         {
@@ -8522,6 +8538,38 @@
         {
           "Name": "quicksight",
           "Method": "describe_analysis_permissions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeApp",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeApp",
+          "Service": "quicksight"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "quicksight",
+          "Method": "describe_app",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAppPermissions",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAppPermissions",
+          "Service": "quicksight"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "quicksight",
+          "Method": "describe_app_permissions",
           "Package": "Boto3"
         }
       ]
@@ -9667,6 +9715,22 @@
       ]
     },
     {
+      "Name": "ListApps",
+      "AuthorizedActions": [
+        {
+          "Name": "ListApps",
+          "Service": "quicksight"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "quicksight",
+          "Method": "list_apps",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListAssetBundleExportJobs",
       "AuthorizedActions": [
         {
@@ -10487,6 +10551,22 @@
       ]
     },
     {
+      "Name": "SearchApps",
+      "AuthorizedActions": [
+        {
+          "Name": "SearchApps",
+          "Service": "quicksight"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "quicksight",
+          "Method": "search_apps",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "SearchDashboards",
       "AuthorizedActions": [
         {
@@ -10917,6 +10997,22 @@
         {
           "Name": "quicksight",
           "Method": "update_analysis_permissions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAppPermissions",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAppPermissions",
+          "Service": "quicksight"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "quicksight",
+          "Method": "update_app_permissions",
           "Package": "Boto3"
         }
       ]

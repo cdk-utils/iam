@@ -3705,6 +3705,8 @@ export class QuickSightOperations {
 	static readonly DeleteAgent: string[] = ["quicksight:DeleteAgent"];
 	/** IAM actions required for the DeleteAnalysis API call. */
 	static readonly DeleteAnalysis: string[] = ["quicksight:DeleteAnalysis"];
+	/** IAM actions required for the DeleteApp API call. */
+	static readonly DeleteApp: string[] = ["quicksight:DeleteApp"];
 	/** IAM actions required for the DeleteApprovalPolicy API call. */
 	static readonly DeleteApprovalPolicy: string[] = [
 		"quicksight:DeleteApprovalPolicy",
@@ -3865,6 +3867,12 @@ export class QuickSightOperations {
 	/** IAM actions required for the DescribeAnalysisPermissions API call. */
 	static readonly DescribeAnalysisPermissions: string[] = [
 		"quicksight:DescribeAnalysisPermissions",
+	];
+	/** IAM actions required for the DescribeApp API call. */
+	static readonly DescribeApp: string[] = ["quicksight:DescribeApp"];
+	/** IAM actions required for the DescribeAppPermissions API call. */
+	static readonly DescribeAppPermissions: string[] = [
+		"quicksight:DescribeAppPermissions",
 	];
 	/** IAM actions required for the DescribeApprovalPolicy API call. */
 	static readonly DescribeApprovalPolicy: string[] = [
@@ -4123,6 +4131,8 @@ export class QuickSightOperations {
 	static readonly ListApprovalPolicies: string[] = [
 		"quicksight:ListApprovalPolicies",
 	];
+	/** IAM actions required for the ListApps API call. */
+	static readonly ListApps: string[] = ["quicksight:ListApps"];
 	/** IAM actions required for the ListAssetBundleExportJobs API call. */
 	static readonly ListAssetBundleExportJobs: string[] = [
 		"quicksight:ListAssetBundleExportJobs",
@@ -4284,6 +4294,8 @@ export class QuickSightOperations {
 	static readonly SearchAgents: string[] = ["quicksight:SearchAgents"];
 	/** IAM actions required for the SearchAnalyses API call. */
 	static readonly SearchAnalyses: string[] = ["quicksight:SearchAnalyses"];
+	/** IAM actions required for the SearchApps API call. */
+	static readonly SearchApps: string[] = ["quicksight:SearchApps"];
 	/** IAM actions required for the SearchDashboards API call. */
 	static readonly SearchDashboards: string[] = ["quicksight:SearchDashboards"];
 	/** IAM actions required for the SearchDataSets API call. */
@@ -4370,6 +4382,10 @@ export class QuickSightOperations {
 	/** IAM actions required for the UpdateAnalysisPermissions API call. */
 	static readonly UpdateAnalysisPermissions: string[] = [
 		"quicksight:UpdateAnalysisPermissions",
+	];
+	/** IAM actions required for the UpdateAppPermissions API call. */
+	static readonly UpdateAppPermissions: string[] = [
+		"quicksight:UpdateAppPermissions",
 	];
 	/** IAM actions required for the UpdateApplicationWithTokenExchangeGrant API call. */
 	static readonly UpdateApplicationWithTokenExchangeGrant: string[] = [

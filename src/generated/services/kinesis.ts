@@ -363,6 +363,11 @@ export class KinesisResources {
 export class KinesisOperations {
 	/** IAM actions required for the AddTagsToStream API call. */
 	static readonly AddTagsToStream: string[] = ["kinesis:AddTagsToStream"];
+	/** IAM actions required for the CreateChannel API call. */
+	static readonly CreateChannel: string[] = [
+		"iam:PassRole",
+		"kinesis:TagResource",
+	];
 	/** IAM actions required for the CreateStream API call. */
 	static readonly CreateStream: string[] = [
 		"kinesis:AddTagsToStream",
@@ -372,6 +377,8 @@ export class KinesisOperations {
 	static readonly DecreaseStreamRetentionPeriod: string[] = [
 		"kinesis:DecreaseStreamRetentionPeriod",
 	];
+	/** IAM actions required for the DeleteChannel API call. */
+	static readonly DeleteChannel: string[] = [];
 	/** IAM actions required for the DeleteResourcePolicy API call. */
 	static readonly DeleteResourcePolicy: string[] = [
 		"kinesis:DeleteResourcePolicy",
@@ -386,6 +393,8 @@ export class KinesisOperations {
 	static readonly DescribeAccountSettings: string[] = [
 		"kinesis:DescribeAccountSettings",
 	];
+	/** IAM actions required for the DescribeChannel API call. */
+	static readonly DescribeChannel: string[] = [];
 	/** IAM actions required for the DescribeLimits API call. */
 	static readonly DescribeLimits: string[] = ["kinesis:DescribeLimits"];
 	/** IAM actions required for the DescribeStream API call. */
@@ -416,6 +425,8 @@ export class KinesisOperations {
 	static readonly IncreaseStreamRetentionPeriod: string[] = [
 		"kinesis:IncreaseStreamRetentionPeriod",
 	];
+	/** IAM actions required for the ListChannels API call. */
+	static readonly ListChannels: string[] = [];
 	/** IAM actions required for the ListShards API call. */
 	static readonly ListShards: string[] = ["kinesis:ListShards"];
 	/** IAM actions required for the ListStreamConsumers API call. */
@@ -467,6 +478,8 @@ export class KinesisOperations {
 	static readonly UpdateAccountSettings: string[] = [
 		"kinesis:UpdateAccountSettings",
 	];
+	/** IAM actions required for the UpdateChannel API call. */
+	static readonly UpdateChannel: string[] = [];
 	/** IAM actions required for the UpdateMaxRecordSize API call. */
 	static readonly UpdateMaxRecordSize: string[] = [
 		"kinesis:UpdateMaxRecordSize",

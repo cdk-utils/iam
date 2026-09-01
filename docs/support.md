@@ -56,7 +56,7 @@ new support.SupportActions()
 | <code><a href="#@cdk_utils/iam.support.SupportActions.property.DescribeTrustedAdvisorChecks">DescribeTrustedAdvisorChecks</a></code> | <code>string</code> | [Read] support:DescribeTrustedAdvisorChecks. |
 | <code><a href="#@cdk_utils/iam.support.SupportActions.property.DescribeTrustedAdvisorCheckSummaries">DescribeTrustedAdvisorCheckSummaries</a></code> | <code>string</code> | [Read] support:DescribeTrustedAdvisorCheckSummaries. |
 | <code><a href="#@cdk_utils/iam.support.SupportActions.property.DisconnectLiveContactForCase">DisconnectLiveContactForCase</a></code> | <code>string</code> | [Write] support:DisconnectLiveContactForCase. |
-| <code><a href="#@cdk_utils/iam.support.SupportActions.property.DownloadAttachment">DownloadAttachment</a></code> | <code>string</code> | [Write] support:DownloadAttachment. |
+| <code><a href="#@cdk_utils/iam.support.SupportActions.property.DownloadAttachment">DownloadAttachment</a></code> | <code>string</code> | [Read] support:DownloadAttachment. |
 | <code><a href="#@cdk_utils/iam.support.SupportActions.property.InitiateCallForCase">InitiateCallForCase</a></code> | <code>string</code> | [Write] support:InitiateCallForCase. |
 | <code><a href="#@cdk_utils/iam.support.SupportActions.property.InitiateChatForCase">InitiateChatForCase</a></code> | <code>string</code> | [Write] support:InitiateChatForCase. |
 | <code><a href="#@cdk_utils/iam.support.SupportActions.property.InitiateLiveContactForCase">InitiateLiveContactForCase</a></code> | <code>string</code> | [Write] support:InitiateLiveContactForCase. |
@@ -420,7 +420,7 @@ public readonly DownloadAttachment: string;
 
 - *Type:* string
 
-[Write] support:DownloadAttachment.
+[Read] support:DownloadAttachment.
 
 ---
 
@@ -642,8 +642,10 @@ new support.SupportOperations()
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.support.SupportOperations.property.AddAttachmentsToSet">AddAttachmentsToSet</a></code> | <code>string[]</code> | IAM actions required for the AddAttachmentsToSet API call. |
 | <code><a href="#@cdk_utils/iam.support.SupportOperations.property.AddCommunicationToCase">AddCommunicationToCase</a></code> | <code>string[]</code> | IAM actions required for the AddCommunicationToCase API call. |
+| <code><a href="#@cdk_utils/iam.support.SupportOperations.property.CompleteAttachmentUpload">CompleteAttachmentUpload</a></code> | <code>string[]</code> | IAM actions required for the CompleteAttachmentUpload API call. |
 | <code><a href="#@cdk_utils/iam.support.SupportOperations.property.CreateCase">CreateCase</a></code> | <code>string[]</code> | IAM actions required for the CreateCase API call. |
 | <code><a href="#@cdk_utils/iam.support.SupportOperations.property.DescribeAttachment">DescribeAttachment</a></code> | <code>string[]</code> | IAM actions required for the DescribeAttachment API call. |
+| <code><a href="#@cdk_utils/iam.support.SupportOperations.property.DescribeAttachmentUploadStatus">DescribeAttachmentUploadStatus</a></code> | <code>string[]</code> | IAM actions required for the DescribeAttachmentUploadStatus API call. |
 | <code><a href="#@cdk_utils/iam.support.SupportOperations.property.DescribeCases">DescribeCases</a></code> | <code>string[]</code> | IAM actions required for the DescribeCases API call. |
 | <code><a href="#@cdk_utils/iam.support.SupportOperations.property.DescribeCommunications">DescribeCommunications</a></code> | <code>string[]</code> | IAM actions required for the DescribeCommunications API call. |
 | <code><a href="#@cdk_utils/iam.support.SupportOperations.property.DescribeCreateCaseOptions">DescribeCreateCaseOptions</a></code> | <code>string[]</code> | IAM actions required for the DescribeCreateCaseOptions API call. |
@@ -654,6 +656,8 @@ new support.SupportOperations()
 | <code><a href="#@cdk_utils/iam.support.SupportOperations.property.DescribeTrustedAdvisorCheckResult">DescribeTrustedAdvisorCheckResult</a></code> | <code>string[]</code> | IAM actions required for the DescribeTrustedAdvisorCheckResult API call. |
 | <code><a href="#@cdk_utils/iam.support.SupportOperations.property.DescribeTrustedAdvisorChecks">DescribeTrustedAdvisorChecks</a></code> | <code>string[]</code> | IAM actions required for the DescribeTrustedAdvisorChecks API call. |
 | <code><a href="#@cdk_utils/iam.support.SupportOperations.property.DescribeTrustedAdvisorCheckSummaries">DescribeTrustedAdvisorCheckSummaries</a></code> | <code>string[]</code> | IAM actions required for the DescribeTrustedAdvisorCheckSummaries API call. |
+| <code><a href="#@cdk_utils/iam.support.SupportOperations.property.opGetAttachmentDownloadLink">opGetAttachmentDownloadLink</a></code> | <code>string[]</code> | IAM actions required for the GetAttachmentDownloadLink API call. |
+| <code><a href="#@cdk_utils/iam.support.SupportOperations.property.opGetAttachmentUploadLinks">opGetAttachmentUploadLinks</a></code> | <code>string[]</code> | IAM actions required for the GetAttachmentUploadLinks API call. |
 | <code><a href="#@cdk_utils/iam.support.SupportOperations.property.RefreshTrustedAdvisorCheck">RefreshTrustedAdvisorCheck</a></code> | <code>string[]</code> | IAM actions required for the RefreshTrustedAdvisorCheck API call. |
 | <code><a href="#@cdk_utils/iam.support.SupportOperations.property.ResolveCase">ResolveCase</a></code> | <code>string[]</code> | IAM actions required for the ResolveCase API call. |
 
@@ -683,6 +687,18 @@ IAM actions required for the AddCommunicationToCase API call.
 
 ---
 
+##### `CompleteAttachmentUpload`<sup>Required</sup> <a name="CompleteAttachmentUpload" id="@cdk_utils/iam.support.SupportOperations.property.CompleteAttachmentUpload"></a>
+
+```typescript
+public readonly CompleteAttachmentUpload: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CompleteAttachmentUpload API call.
+
+---
+
 ##### `CreateCase`<sup>Required</sup> <a name="CreateCase" id="@cdk_utils/iam.support.SupportOperations.property.CreateCase"></a>
 
 ```typescript
@@ -704,6 +720,18 @@ public readonly DescribeAttachment: string[];
 - *Type:* string[]
 
 IAM actions required for the DescribeAttachment API call.
+
+---
+
+##### `DescribeAttachmentUploadStatus`<sup>Required</sup> <a name="DescribeAttachmentUploadStatus" id="@cdk_utils/iam.support.SupportOperations.property.DescribeAttachmentUploadStatus"></a>
+
+```typescript
+public readonly DescribeAttachmentUploadStatus: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeAttachmentUploadStatus API call.
 
 ---
 
@@ -824,6 +852,30 @@ public readonly DescribeTrustedAdvisorCheckSummaries: string[];
 - *Type:* string[]
 
 IAM actions required for the DescribeTrustedAdvisorCheckSummaries API call.
+
+---
+
+##### `opGetAttachmentDownloadLink`<sup>Required</sup> <a name="opGetAttachmentDownloadLink" id="@cdk_utils/iam.support.SupportOperations.property.opGetAttachmentDownloadLink"></a>
+
+```typescript
+public readonly opGetAttachmentDownloadLink: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetAttachmentDownloadLink API call.
+
+---
+
+##### `opGetAttachmentUploadLinks`<sup>Required</sup> <a name="opGetAttachmentUploadLinks" id="@cdk_utils/iam.support.SupportOperations.property.opGetAttachmentUploadLinks"></a>
+
+```typescript
+public readonly opGetAttachmentUploadLinks: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetAttachmentUploadLinks API call.
 
 ---
 

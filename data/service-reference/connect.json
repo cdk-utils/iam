@@ -1160,6 +1160,31 @@
       }
     },
     {
+      "Name": "CreateExtractionDefinition",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "connect:InstanceId"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "extraction-definition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "CreateHoursOfOperation",
       "ActionConditionKeys": [
         "aws:RequestTag/${TagKey}",
@@ -2141,6 +2166,30 @@
       }
     },
     {
+      "Name": "DeleteExtractionDefinition",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "connect:InstanceId"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "extraction-definition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "DeleteHoursOfOperation",
       "ActionConditionKeys": [
         "aws:ResourceTag/${TagKey}",
@@ -3029,6 +3078,30 @@
       ],
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeExtractionDefinition",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "connect:InstanceId"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "extraction-definition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
       }
     },
@@ -5038,6 +5111,29 @@
       }
     },
     {
+      "Name": "ListExtractionDefinitions",
+      "ActionConditionKeys": [
+        "connect:InstanceId"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ListFlowAssociations",
       "ActionConditionKeys": [
         "connect:InstanceId"
@@ -5750,6 +5846,9 @@
         },
         {
           "Name": "evaluation-form"
+        },
+        {
+          "Name": "extraction-definition"
         },
         {
           "Name": "hierarchy-group"
@@ -7706,6 +7805,9 @@
           "Name": "evaluation-form"
         },
         {
+          "Name": "extraction-definition"
+        },
+        {
           "Name": "hierarchy-group"
         },
         {
@@ -7859,6 +7961,9 @@
         },
         {
           "Name": "evaluation-form"
+        },
+        {
+          "Name": "extraction-definition"
         },
         {
           "Name": "hierarchy-group"
@@ -8386,6 +8491,30 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateExtractionDefinition",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "connect:InstanceId"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "extraction-definition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -10410,6 +10539,10 @@
       "Name": "CreateExtractionDefinition",
       "AuthorizedActions": [
         {
+          "Name": "CreateExtractionDefinition",
+          "Service": "connect"
+        },
+        {
           "Name": "TagResource",
           "Service": "connect"
         }
@@ -11140,6 +11273,12 @@
     },
     {
       "Name": "DeleteExtractionDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteExtractionDefinition",
+          "Service": "connect"
+        }
+      ],
       "SDK": [
         {
           "Name": "connect",
@@ -11762,6 +11901,12 @@
     },
     {
       "Name": "DescribeExtractionDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeExtractionDefinition",
+          "Service": "connect"
+        }
+      ],
       "SDK": [
         {
           "Name": "connect",
@@ -12530,6 +12675,16 @@
       ]
     },
     {
+      "Name": "GetCrossRegionRouting",
+      "SDK": [
+        {
+          "Name": "connect",
+          "Method": "get_cross_region_routing",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetCurrentMetricData",
       "AuthorizedActions": [
         {
@@ -13141,6 +13296,12 @@
     },
     {
       "Name": "ListExtractionDefinitions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListExtractionDefinitions",
+          "Service": "connect"
+        }
+      ],
       "SDK": [
         {
           "Name": "connect",
@@ -15304,6 +15465,16 @@
       ]
     },
     {
+      "Name": "UpdateCrossRegionRouting",
+      "SDK": [
+        {
+          "Name": "connect",
+          "Method": "update_cross_region_routing",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "UpdateDataTableAttribute",
       "AuthorizedActions": [
         {
@@ -15385,6 +15556,12 @@
     },
     {
       "Name": "UpdateExtractionDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateExtractionDefinition",
+          "Service": "connect"
+        }
+      ],
       "SDK": [
         {
           "Name": "connect",
@@ -16259,6 +16436,15 @@
       "Name": "evaluation-form",
       "ARNFormats": [
         "arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/evaluation-form/${FormId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "extraction-definition",
+      "ARNFormats": [
+        "arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/extraction-definition/${ExtractionDefinitionId}"
       ],
       "ConditionKeys": [
         "aws:ResourceTag/${TagKey}"

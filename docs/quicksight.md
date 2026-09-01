@@ -11346,6 +11346,7 @@ new quicksight.QuickSightOperations()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DeleteActionConnector">DeleteActionConnector</a></code> | <code>string[]</code> | IAM actions required for the DeleteActionConnector API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DeleteAgent">DeleteAgent</a></code> | <code>string[]</code> | IAM actions required for the DeleteAgent API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DeleteAnalysis">DeleteAnalysis</a></code> | <code>string[]</code> | IAM actions required for the DeleteAnalysis API call. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DeleteApp">DeleteApp</a></code> | <code>string[]</code> | IAM actions required for the DeleteApp API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DeleteApprovalPolicy">DeleteApprovalPolicy</a></code> | <code>string[]</code> | IAM actions required for the DeleteApprovalPolicy API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DeleteBrand">DeleteBrand</a></code> | <code>string[]</code> | IAM actions required for the DeleteBrand API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DeleteBrandAssignment">DeleteBrandAssignment</a></code> | <code>string[]</code> | IAM actions required for the DeleteBrandAssignment API call. |
@@ -11393,6 +11394,8 @@ new quicksight.QuickSightOperations()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DescribeAnalysis">DescribeAnalysis</a></code> | <code>string[]</code> | IAM actions required for the DescribeAnalysis API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DescribeAnalysisDefinition">DescribeAnalysisDefinition</a></code> | <code>string[]</code> | IAM actions required for the DescribeAnalysisDefinition API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DescribeAnalysisPermissions">DescribeAnalysisPermissions</a></code> | <code>string[]</code> | IAM actions required for the DescribeAnalysisPermissions API call. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DescribeApp">DescribeApp</a></code> | <code>string[]</code> | IAM actions required for the DescribeApp API call. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DescribeAppPermissions">DescribeAppPermissions</a></code> | <code>string[]</code> | IAM actions required for the DescribeAppPermissions API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DescribeApprovalPolicy">DescribeApprovalPolicy</a></code> | <code>string[]</code> | IAM actions required for the DescribeApprovalPolicy API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DescribeAssetBundleExportJob">DescribeAssetBundleExportJob</a></code> | <code>string[]</code> | IAM actions required for the DescribeAssetBundleExportJob API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DescribeAssetBundleImportJob">DescribeAssetBundleImportJob</a></code> | <code>string[]</code> | IAM actions required for the DescribeAssetBundleImportJob API call. |
@@ -11458,6 +11461,7 @@ new quicksight.QuickSightOperations()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.ListAgents">ListAgents</a></code> | <code>string[]</code> | IAM actions required for the ListAgents API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.ListAnalyses">ListAnalyses</a></code> | <code>string[]</code> | IAM actions required for the ListAnalyses API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.ListApprovalPolicies">ListApprovalPolicies</a></code> | <code>string[]</code> | IAM actions required for the ListApprovalPolicies API call. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.ListApps">ListApps</a></code> | <code>string[]</code> | IAM actions required for the ListApps API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.ListAssetBundleExportJobs">ListAssetBundleExportJobs</a></code> | <code>string[]</code> | IAM actions required for the ListAssetBundleExportJobs API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.ListAssetBundleImportJobs">ListAssetBundleImportJobs</a></code> | <code>string[]</code> | IAM actions required for the ListAssetBundleImportJobs API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.ListBrands">ListBrands</a></code> | <code>string[]</code> | IAM actions required for the ListBrands API call. |
@@ -11513,6 +11517,7 @@ new quicksight.QuickSightOperations()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.SearchActionConnectors">SearchActionConnectors</a></code> | <code>string[]</code> | IAM actions required for the SearchActionConnectors API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.SearchAgents">SearchAgents</a></code> | <code>string[]</code> | IAM actions required for the SearchAgents API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.SearchAnalyses">SearchAnalyses</a></code> | <code>string[]</code> | IAM actions required for the SearchAnalyses API call. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.SearchApps">SearchApps</a></code> | <code>string[]</code> | IAM actions required for the SearchApps API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.SearchDashboards">SearchDashboards</a></code> | <code>string[]</code> | IAM actions required for the SearchDashboards API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.SearchDataSets">SearchDataSets</a></code> | <code>string[]</code> | IAM actions required for the SearchDataSets API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.SearchDataSources">SearchDataSources</a></code> | <code>string[]</code> | IAM actions required for the SearchDataSources API call. |
@@ -11540,6 +11545,7 @@ new quicksight.QuickSightOperations()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.UpdateAnalysis">UpdateAnalysis</a></code> | <code>string[]</code> | IAM actions required for the UpdateAnalysis API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.UpdateAnalysisPermissions">UpdateAnalysisPermissions</a></code> | <code>string[]</code> | IAM actions required for the UpdateAnalysisPermissions API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.UpdateApplicationWithTokenExchangeGrant">UpdateApplicationWithTokenExchangeGrant</a></code> | <code>string[]</code> | IAM actions required for the UpdateApplicationWithTokenExchangeGrant API call. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.UpdateAppPermissions">UpdateAppPermissions</a></code> | <code>string[]</code> | IAM actions required for the UpdateAppPermissions API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.UpdateApprovalPolicy">UpdateApprovalPolicy</a></code> | <code>string[]</code> | IAM actions required for the UpdateApprovalPolicy API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.UpdateBrand">UpdateBrand</a></code> | <code>string[]</code> | IAM actions required for the UpdateBrand API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.UpdateBrandAssignment">UpdateBrandAssignment</a></code> | <code>string[]</code> | IAM actions required for the UpdateBrandAssignment API call. |
@@ -12137,6 +12143,18 @@ IAM actions required for the DeleteAnalysis API call.
 
 ---
 
+##### `DeleteApp`<sup>Required</sup> <a name="DeleteApp" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.DeleteApp"></a>
+
+```typescript
+public readonly DeleteApp: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteApp API call.
+
+---
+
 ##### `DeleteApprovalPolicy`<sup>Required</sup> <a name="DeleteApprovalPolicy" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.DeleteApprovalPolicy"></a>
 
 ```typescript
@@ -12698,6 +12716,30 @@ public readonly DescribeAnalysisPermissions: string[];
 - *Type:* string[]
 
 IAM actions required for the DescribeAnalysisPermissions API call.
+
+---
+
+##### `DescribeApp`<sup>Required</sup> <a name="DescribeApp" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.DescribeApp"></a>
+
+```typescript
+public readonly DescribeApp: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeApp API call.
+
+---
+
+##### `DescribeAppPermissions`<sup>Required</sup> <a name="DescribeAppPermissions" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.DescribeAppPermissions"></a>
+
+```typescript
+public readonly DescribeAppPermissions: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeAppPermissions API call.
 
 ---
 
@@ -13481,6 +13523,18 @@ IAM actions required for the ListApprovalPolicies API call.
 
 ---
 
+##### `ListApps`<sup>Required</sup> <a name="ListApps" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.ListApps"></a>
+
+```typescript
+public readonly ListApps: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListApps API call.
+
+---
+
 ##### `ListAssetBundleExportJobs`<sup>Required</sup> <a name="ListAssetBundleExportJobs" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.ListAssetBundleExportJobs"></a>
 
 ```typescript
@@ -14141,6 +14195,18 @@ IAM actions required for the SearchAnalyses API call.
 
 ---
 
+##### `SearchApps`<sup>Required</sup> <a name="SearchApps" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.SearchApps"></a>
+
+```typescript
+public readonly SearchApps: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the SearchApps API call.
+
+---
+
 ##### `SearchDashboards`<sup>Required</sup> <a name="SearchDashboards" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.SearchDashboards"></a>
 
 ```typescript
@@ -14462,6 +14528,18 @@ public readonly UpdateApplicationWithTokenExchangeGrant: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateApplicationWithTokenExchangeGrant API call.
+
+---
+
+##### `UpdateAppPermissions`<sup>Required</sup> <a name="UpdateAppPermissions" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.UpdateAppPermissions"></a>
+
+```typescript
+public readonly UpdateAppPermissions: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateAppPermissions API call.
 
 ---
 

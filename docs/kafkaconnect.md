@@ -1254,6 +1254,7 @@ new kafkaconnect.KafkaconnectOperations()
 | <code><a href="#@cdk_utils/iam.kafkaconnect.KafkaconnectOperations.property.ListCustomPlugins">ListCustomPlugins</a></code> | <code>string[]</code> | IAM actions required for the ListCustomPlugins API call. |
 | <code><a href="#@cdk_utils/iam.kafkaconnect.KafkaconnectOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
 | <code><a href="#@cdk_utils/iam.kafkaconnect.KafkaconnectOperations.property.ListWorkerConfigurations">ListWorkerConfigurations</a></code> | <code>string[]</code> | IAM actions required for the ListWorkerConfigurations API call. |
+| <code><a href="#@cdk_utils/iam.kafkaconnect.KafkaconnectOperations.property.RestartConnector">RestartConnector</a></code> | <code>string[]</code> | IAM actions required for the RestartConnector API call. |
 | <code><a href="#@cdk_utils/iam.kafkaconnect.KafkaconnectOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
 | <code><a href="#@cdk_utils/iam.kafkaconnect.KafkaconnectOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
 | <code><a href="#@cdk_utils/iam.kafkaconnect.KafkaconnectOperations.property.UpdateConnector">UpdateConnector</a></code> | <code>string[]</code> | IAM actions required for the UpdateConnector API call. |
@@ -1437,6 +1438,18 @@ public readonly ListWorkerConfigurations: string[];
 - *Type:* string[]
 
 IAM actions required for the ListWorkerConfigurations API call.
+
+---
+
+##### `RestartConnector`<sup>Required</sup> <a name="RestartConnector" id="@cdk_utils/iam.kafkaconnect.KafkaconnectOperations.property.RestartConnector"></a>
+
+```typescript
+public readonly RestartConnector: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the RestartConnector API call.
 
 ---
 

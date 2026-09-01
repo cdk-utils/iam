@@ -464,6 +464,12 @@
       ]
     },
     {
+      "Name": "agent-registry:RecordSourceAccount",
+      "Types": [
+        "String"
+      ]
+    },
+    {
       "Name": "aws:RequestTag/${TagKey}",
       "Types": [
         "String"
