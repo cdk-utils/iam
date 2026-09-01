@@ -438,6 +438,8 @@ export class KafkaconnectOperations {
 	static readonly ListWorkerConfigurations: string[] = [
 		"kafkaconnect:ListWorkerConfigurations",
 	];
+	/** IAM actions required for the RestartConnector API call. */
+	static readonly RestartConnector: string[] = [];
 	/** IAM actions required for the TagResource API call. */
 	static readonly TagResource: string[] = ["kafkaconnect:TagResource"];
 	/** IAM actions required for the UntagResource API call. */

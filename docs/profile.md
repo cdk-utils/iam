@@ -3893,6 +3893,7 @@ new profile.ProfileOperations()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.AddProfileKey">AddProfileKey</a></code> | <code>string[]</code> | IAM actions required for the AddProfileKey API call. |
+| <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.AssociateStreamForSegments">AssociateStreamForSegments</a></code> | <code>string[]</code> | IAM actions required for the AssociateStreamForSegments API call. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.BatchGetCalculatedAttributeForProfile">BatchGetCalculatedAttributeForProfile</a></code> | <code>string[]</code> | IAM actions required for the BatchGetCalculatedAttributeForProfile API call. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.BatchGetProfile">BatchGetProfile</a></code> | <code>string[]</code> | IAM actions required for the BatchGetProfile API call. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.BatchPutProfileObject">BatchPutProfileObject</a></code> | <code>string[]</code> | IAM actions required for the BatchPutProfileObject API call. |
@@ -3925,8 +3926,10 @@ new profile.ProfileOperations()
 | <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.DeleteRecommenderFilter">DeleteRecommenderFilter</a></code> | <code>string[]</code> | IAM actions required for the DeleteRecommenderFilter API call. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.DeleteRecommenderSchema">DeleteRecommenderSchema</a></code> | <code>string[]</code> | IAM actions required for the DeleteRecommenderSchema API call. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.DeleteSegmentDefinition">DeleteSegmentDefinition</a></code> | <code>string[]</code> | IAM actions required for the DeleteSegmentDefinition API call. |
+| <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.DeleteSegmentSubscription">DeleteSegmentSubscription</a></code> | <code>string[]</code> | IAM actions required for the DeleteSegmentSubscription API call. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.DeleteWorkflow">DeleteWorkflow</a></code> | <code>string[]</code> | IAM actions required for the DeleteWorkflow API call. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.DetectProfileObjectType">DetectProfileObjectType</a></code> | <code>string[]</code> | IAM actions required for the DetectProfileObjectType API call. |
+| <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.DisassociateStreamForSegments">DisassociateStreamForSegments</a></code> | <code>string[]</code> | IAM actions required for the DisassociateStreamForSegments API call. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.ListAccountIntegrations">ListAccountIntegrations</a></code> | <code>string[]</code> | IAM actions required for the ListAccountIntegrations API call. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.ListCalculatedAttributeDefinitions">ListCalculatedAttributeDefinitions</a></code> | <code>string[]</code> | IAM actions required for the ListCalculatedAttributeDefinitions API call. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.ListCalculatedAttributesForProfile">ListCalculatedAttributesForProfile</a></code> | <code>string[]</code> | IAM actions required for the ListCalculatedAttributesForProfile API call. |
@@ -3950,6 +3953,7 @@ new profile.ProfileOperations()
 | <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.ListRecommenderSchemas">ListRecommenderSchemas</a></code> | <code>string[]</code> | IAM actions required for the ListRecommenderSchemas API call. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.ListRuleBasedMatches">ListRuleBasedMatches</a></code> | <code>string[]</code> | IAM actions required for the ListRuleBasedMatches API call. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.ListSegmentDefinitions">ListSegmentDefinitions</a></code> | <code>string[]</code> | IAM actions required for the ListSegmentDefinitions API call. |
+| <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.ListSegmentSubscriptionEvents">ListSegmentSubscriptionEvents</a></code> | <code>string[]</code> | IAM actions required for the ListSegmentSubscriptionEvents API call. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.ListUploadJobs">ListUploadJobs</a></code> | <code>string[]</code> | IAM actions required for the ListUploadJobs API call. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.ListWorkflows">ListWorkflows</a></code> | <code>string[]</code> | IAM actions required for the ListWorkflows API call. |
@@ -3977,7 +3981,9 @@ new profile.ProfileOperations()
 | <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.opGetSegmentEstimate">opGetSegmentEstimate</a></code> | <code>string[]</code> | IAM actions required for the GetSegmentEstimate API call. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.opGetSegmentMembership">opGetSegmentMembership</a></code> | <code>string[]</code> | IAM actions required for the GetSegmentMembership API call. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.opGetSegmentSnapshot">opGetSegmentSnapshot</a></code> | <code>string[]</code> | IAM actions required for the GetSegmentSnapshot API call. |
+| <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.opGetSegmentSubscription">opGetSegmentSubscription</a></code> | <code>string[]</code> | IAM actions required for the GetSegmentSubscription API call. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.opGetSimilarProfiles">opGetSimilarProfiles</a></code> | <code>string[]</code> | IAM actions required for the GetSimilarProfiles API call. |
+| <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.opGetStreamForSegments">opGetStreamForSegments</a></code> | <code>string[]</code> | IAM actions required for the GetStreamForSegments API call. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.opGetUploadJob">opGetUploadJob</a></code> | <code>string[]</code> | IAM actions required for the GetUploadJob API call. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.opGetUploadJobPath">opGetUploadJobPath</a></code> | <code>string[]</code> | IAM actions required for the GetUploadJobPath API call. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.opGetWorkflow">opGetWorkflow</a></code> | <code>string[]</code> | IAM actions required for the GetWorkflow API call. |
@@ -3986,6 +3992,7 @@ new profile.ProfileOperations()
 | <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.PutIntegration">PutIntegration</a></code> | <code>string[]</code> | IAM actions required for the PutIntegration API call. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.PutProfileObject">PutProfileObject</a></code> | <code>string[]</code> | IAM actions required for the PutProfileObject API call. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.PutProfileObjectType">PutProfileObjectType</a></code> | <code>string[]</code> | IAM actions required for the PutProfileObjectType API call. |
+| <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.PutSegmentSubscription">PutSegmentSubscription</a></code> | <code>string[]</code> | IAM actions required for the PutSegmentSubscription API call. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.SearchProfiles">SearchProfiles</a></code> | <code>string[]</code> | IAM actions required for the SearchProfiles API call. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.StartRecommender">StartRecommender</a></code> | <code>string[]</code> | IAM actions required for the StartRecommender API call. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.StartUploadJob">StartUploadJob</a></code> | <code>string[]</code> | IAM actions required for the StartUploadJob API call. |
@@ -4011,6 +4018,18 @@ public readonly AddProfileKey: string[];
 - *Type:* string[]
 
 IAM actions required for the AddProfileKey API call.
+
+---
+
+##### `AssociateStreamForSegments`<sup>Required</sup> <a name="AssociateStreamForSegments" id="@cdk_utils/iam.profile.ProfileOperations.property.AssociateStreamForSegments"></a>
+
+```typescript
+public readonly AssociateStreamForSegments: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the AssociateStreamForSegments API call.
 
 ---
 
@@ -4398,6 +4417,18 @@ IAM actions required for the DeleteSegmentDefinition API call.
 
 ---
 
+##### `DeleteSegmentSubscription`<sup>Required</sup> <a name="DeleteSegmentSubscription" id="@cdk_utils/iam.profile.ProfileOperations.property.DeleteSegmentSubscription"></a>
+
+```typescript
+public readonly DeleteSegmentSubscription: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteSegmentSubscription API call.
+
+---
+
 ##### `DeleteWorkflow`<sup>Required</sup> <a name="DeleteWorkflow" id="@cdk_utils/iam.profile.ProfileOperations.property.DeleteWorkflow"></a>
 
 ```typescript
@@ -4419,6 +4450,18 @@ public readonly DetectProfileObjectType: string[];
 - *Type:* string[]
 
 IAM actions required for the DetectProfileObjectType API call.
+
+---
+
+##### `DisassociateStreamForSegments`<sup>Required</sup> <a name="DisassociateStreamForSegments" id="@cdk_utils/iam.profile.ProfileOperations.property.DisassociateStreamForSegments"></a>
+
+```typescript
+public readonly DisassociateStreamForSegments: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DisassociateStreamForSegments API call.
 
 ---
 
@@ -4695,6 +4738,18 @@ public readonly ListSegmentDefinitions: string[];
 - *Type:* string[]
 
 IAM actions required for the ListSegmentDefinitions API call.
+
+---
+
+##### `ListSegmentSubscriptionEvents`<sup>Required</sup> <a name="ListSegmentSubscriptionEvents" id="@cdk_utils/iam.profile.ProfileOperations.property.ListSegmentSubscriptionEvents"></a>
+
+```typescript
+public readonly ListSegmentSubscriptionEvents: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListSegmentSubscriptionEvents API call.
 
 ---
 
@@ -5022,6 +5077,18 @@ IAM actions required for the GetSegmentSnapshot API call.
 
 ---
 
+##### `opGetSegmentSubscription`<sup>Required</sup> <a name="opGetSegmentSubscription" id="@cdk_utils/iam.profile.ProfileOperations.property.opGetSegmentSubscription"></a>
+
+```typescript
+public readonly opGetSegmentSubscription: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetSegmentSubscription API call.
+
+---
+
 ##### `opGetSimilarProfiles`<sup>Required</sup> <a name="opGetSimilarProfiles" id="@cdk_utils/iam.profile.ProfileOperations.property.opGetSimilarProfiles"></a>
 
 ```typescript
@@ -5031,6 +5098,18 @@ public readonly opGetSimilarProfiles: string[];
 - *Type:* string[]
 
 IAM actions required for the GetSimilarProfiles API call.
+
+---
+
+##### `opGetStreamForSegments`<sup>Required</sup> <a name="opGetStreamForSegments" id="@cdk_utils/iam.profile.ProfileOperations.property.opGetStreamForSegments"></a>
+
+```typescript
+public readonly opGetStreamForSegments: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetStreamForSegments API call.
 
 ---
 
@@ -5127,6 +5206,18 @@ public readonly PutProfileObjectType: string[];
 - *Type:* string[]
 
 IAM actions required for the PutProfileObjectType API call.
+
+---
+
+##### `PutSegmentSubscription`<sup>Required</sup> <a name="PutSegmentSubscription" id="@cdk_utils/iam.profile.ProfileOperations.property.PutSegmentSubscription"></a>
+
+```typescript
+public readonly PutSegmentSubscription: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the PutSegmentSubscription API call.
 
 ---
 

@@ -338,7 +338,7 @@
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
-          "IsWrite": true
+          "IsWrite": false
         }
       },
       "SupportedBy": {
@@ -621,6 +621,26 @@
       ]
     },
     {
+      "Name": "CompleteAttachmentUpload",
+      "AuthorizedActions": [
+        {
+          "Name": "AddAttachmentsToSet",
+          "Service": "support"
+        },
+        {
+          "Name": "UploadAttachment",
+          "Service": "support"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "support",
+          "Method": "complete_attachment_upload",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "CreateCase",
       "AuthorizedActions": [
         {
@@ -648,6 +668,26 @@
         {
           "Name": "support",
           "Method": "describe_attachment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAttachmentUploadStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "AddAttachmentsToSet",
+          "Service": "support"
+        },
+        {
+          "Name": "UploadAttachment",
+          "Service": "support"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "support",
+          "Method": "describe_attachment_upload_status",
           "Package": "Boto3"
         }
       ]
@@ -840,6 +880,46 @@
         {
           "Name": "support",
           "Method": "describe_trusted_advisor_checks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAttachmentDownloadLink",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAttachment",
+          "Service": "support"
+        },
+        {
+          "Name": "DownloadAttachment",
+          "Service": "support"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "support",
+          "Method": "get_attachment_download_link",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAttachmentUploadLinks",
+      "AuthorizedActions": [
+        {
+          "Name": "AddAttachmentsToSet",
+          "Service": "support"
+        },
+        {
+          "Name": "UploadAttachment",
+          "Service": "support"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "support",
+          "Method": "get_attachment_upload_links",
           "Package": "Boto3"
         }
       ]

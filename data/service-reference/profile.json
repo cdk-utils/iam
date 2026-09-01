@@ -2684,6 +2684,22 @@
       ]
     },
     {
+      "Name": "AssociateStreamForSegments",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateStreamForSegments",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "associate_stream_for_segments",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "BatchGetCalculatedAttributeForProfile",
       "AuthorizedActions": [
         {
@@ -3240,6 +3256,22 @@
       ]
     },
     {
+      "Name": "DeleteSegmentSubscription",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSegmentSubscription",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "delete_segment_subscription",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DeleteWorkflow",
       "AuthorizedActions": [
         {
@@ -3267,6 +3299,22 @@
         {
           "Name": "customer-profiles",
           "Method": "detect_profile_object_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateStreamForSegments",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateStreamForSegments",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "disassociate_stream_for_segments",
           "Package": "Boto3"
         }
       ]
@@ -3640,6 +3688,22 @@
       ]
     },
     {
+      "Name": "GetSegmentSubscription",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSegmentSubscription",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "get_segment_subscription",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetSimilarProfiles",
       "AuthorizedActions": [
         {
@@ -3651,6 +3715,22 @@
         {
           "Name": "customer-profiles",
           "Method": "get_similar_profiles",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetStreamForSegments",
+      "AuthorizedActions": [
+        {
+          "Name": "GetStreamForSegments",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "get_stream_for_segments",
           "Package": "Boto3"
         }
       ]
@@ -4088,6 +4168,22 @@
       ]
     },
     {
+      "Name": "ListSegmentSubscriptionEvents",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSegmentSubscriptionEvents",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "list_segment_subscription_events",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListTagsForResource",
       "AuthorizedActions": [
         {
@@ -4223,6 +4319,22 @@
         {
           "Name": "customer-profiles",
           "Method": "put_profile_object_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutSegmentSubscription",
+      "AuthorizedActions": [
+        {
+          "Name": "PutSegmentSubscription",
+          "Service": "profile"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "put_segment_subscription",
           "Package": "Boto3"
         }
       ]

@@ -741,6 +741,7 @@ new agent_registry.AgentRegistryConditions()
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryConditions.recordCreatorAccount">recordCreatorAccount</a></code> | Generates a condition block for `agent-registry:RecordCreatorAccount`. |
+| <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryConditions.recordSourceAccount">recordSourceAccount</a></code> | Generates a condition block for `agent-registry:RecordSourceAccount`. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryConditions.requestTag">requestTag</a></code> | Generates a condition block for `aws:RequestTag/${TagKey}`. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryConditions.resourceTag">resourceTag</a></code> | Generates a condition block for `aws:ResourceTag/${TagKey}`. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryConditions.tagKeys">tagKeys</a></code> | Generates a condition block for `aws:TagKeys`. |
@@ -758,6 +759,22 @@ agent_registry.AgentRegistryConditions.recordCreatorAccount(value: string)
 Generates a condition block for `agent-registry:RecordCreatorAccount`.
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.agent_registry.AgentRegistryConditions.recordCreatorAccount.parameter.value"></a>
+
+- *Type:* string
+
+---
+
+##### `recordSourceAccount` <a name="recordSourceAccount" id="@cdk_utils/iam.agent_registry.AgentRegistryConditions.recordSourceAccount"></a>
+
+```typescript
+import { agent_registry } from '@cdk_utils/iam'
+
+agent_registry.AgentRegistryConditions.recordSourceAccount(value: string)
+```
+
+Generates a condition block for `agent-registry:RecordSourceAccount`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.agent_registry.AgentRegistryConditions.recordSourceAccount.parameter.value"></a>
 
 - *Type:* string
 
@@ -822,6 +839,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryConditions.property.CreateRegistryConditionKeys">CreateRegistryConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateRegistry action. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryConditions.property.CreateRegistryRecordConditionKeys">CreateRegistryRecordConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateRegistryRecord action. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryConditions.property.RECORD_CREATOR_ACCOUNT">RECORD_CREATOR_ACCOUNT</a></code> | <code>string</code> | Condition key: agent-registry:RecordCreatorAccount (String). |
+| <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryConditions.property.RECORD_SOURCE_ACCOUNT">RECORD_SOURCE_ACCOUNT</a></code> | <code>string</code> | Condition key: agent-registry:RecordSourceAccount (String). |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryConditions.property.TagResourceConditionKeys">TagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TagResource action. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryConditions.property.UntagResourceConditionKeys">UntagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UntagResource action. |
 
@@ -896,6 +914,18 @@ public readonly RECORD_CREATOR_ACCOUNT: string;
 - *Type:* string
 
 Condition key: agent-registry:RecordCreatorAccount (String).
+
+---
+
+##### `RECORD_SOURCE_ACCOUNT`<sup>Required</sup> <a name="RECORD_SOURCE_ACCOUNT" id="@cdk_utils/iam.agent_registry.AgentRegistryConditions.property.RECORD_SOURCE_ACCOUNT"></a>
+
+```typescript
+public readonly RECORD_SOURCE_ACCOUNT: string;
+```
+
+- *Type:* string
+
+Condition key: agent-registry:RecordSourceAccount (String).
 
 ---
 

@@ -128,6 +128,9 @@ export class ConnectActions {
 	static readonly CreateEmailAddress = "connect:CreateEmailAddress";
 	/** [Write] connect:CreateEvaluationForm */
 	static readonly CreateEvaluationForm = "connect:CreateEvaluationForm";
+	/** [Write] connect:CreateExtractionDefinition */
+	static readonly CreateExtractionDefinition =
+		"connect:CreateExtractionDefinition";
 	/** [Write] connect:CreateHoursOfOperation */
 	static readonly CreateHoursOfOperation = "connect:CreateHoursOfOperation";
 	/** [Write] connect:CreateHoursOfOperationOverride */
@@ -212,6 +215,9 @@ export class ConnectActions {
 	static readonly DeleteEmailAddress = "connect:DeleteEmailAddress";
 	/** [Write] connect:DeleteEvaluationForm */
 	static readonly DeleteEvaluationForm = "connect:DeleteEvaluationForm";
+	/** [Write] connect:DeleteExtractionDefinition */
+	static readonly DeleteExtractionDefinition =
+		"connect:DeleteExtractionDefinition";
 	/** [Write] connect:DeleteHoursOfOperation */
 	static readonly DeleteHoursOfOperation = "connect:DeleteHoursOfOperation";
 	/** [Write] connect:DeleteHoursOfOperationOverride */
@@ -297,6 +303,9 @@ export class ConnectActions {
 	static readonly DescribeEmailAddress = "connect:DescribeEmailAddress";
 	/** [Read] connect:DescribeEvaluationForm */
 	static readonly DescribeEvaluationForm = "connect:DescribeEvaluationForm";
+	/** [Read] connect:DescribeExtractionDefinition */
+	static readonly DescribeExtractionDefinition =
+		"connect:DescribeExtractionDefinition";
 	/** [Read] connect:DescribeForecastingPlanningSchedulingIntegration */
 	static readonly DescribeForecastingPlanningSchedulingIntegration =
 		"connect:DescribeForecastingPlanningSchedulingIntegration";
@@ -494,6 +503,9 @@ export class ConnectActions {
 		"connect:ListEvaluationFormVersions";
 	/** [List] connect:ListEvaluationForms */
 	static readonly ListEvaluationForms = "connect:ListEvaluationForms";
+	/** [List] connect:ListExtractionDefinitions */
+	static readonly ListExtractionDefinitions =
+		"connect:ListExtractionDefinitions";
 	/** [List] connect:ListFlowAssociations */
 	static readonly ListFlowAssociations = "connect:ListFlowAssociations";
 	/** [List] connect:ListHoursOfOperationOverrides */
@@ -787,6 +799,9 @@ export class ConnectActions {
 		"connect:UpdateEmailAddressMetadata";
 	/** [Write] connect:UpdateEvaluationForm */
 	static readonly UpdateEvaluationForm = "connect:UpdateEvaluationForm";
+	/** [Write] connect:UpdateExtractionDefinition */
+	static readonly UpdateExtractionDefinition =
+		"connect:UpdateExtractionDefinition";
 	/** [Write] connect:UpdateHoursOfOperation */
 	static readonly UpdateHoursOfOperation = "connect:UpdateHoursOfOperation";
 	/** [Write] connect:UpdateHoursOfOperationOverride */
@@ -914,6 +929,7 @@ export class ConnectActions {
 		ConnectActions.DescribeDataTableAttribute,
 		ConnectActions.DescribeEmailAddress,
 		ConnectActions.DescribeEvaluationForm,
+		ConnectActions.DescribeExtractionDefinition,
 		ConnectActions.DescribeForecastingPlanningSchedulingIntegration,
 		ConnectActions.DescribeHoursOfOperation,
 		ConnectActions.DescribeHoursOfOperationOverride,
@@ -1025,6 +1041,7 @@ export class ConnectActions {
 		ConnectActions.CreateDataTableAttribute,
 		ConnectActions.CreateEmailAddress,
 		ConnectActions.CreateEvaluationForm,
+		ConnectActions.CreateExtractionDefinition,
 		ConnectActions.CreateHoursOfOperation,
 		ConnectActions.CreateHoursOfOperationOverride,
 		ConnectActions.CreateInstance,
@@ -1063,6 +1080,7 @@ export class ConnectActions {
 		ConnectActions.DeleteDataTableAttribute,
 		ConnectActions.DeleteEmailAddress,
 		ConnectActions.DeleteEvaluationForm,
+		ConnectActions.DeleteExtractionDefinition,
 		ConnectActions.DeleteHoursOfOperation,
 		ConnectActions.DeleteHoursOfOperationOverride,
 		ConnectActions.DeleteInstance,
@@ -1166,6 +1184,7 @@ export class ConnectActions {
 		ConnectActions.UpdateDataTablePrimaryValues,
 		ConnectActions.UpdateEmailAddressMetadata,
 		ConnectActions.UpdateEvaluationForm,
+		ConnectActions.UpdateExtractionDefinition,
 		ConnectActions.UpdateHoursOfOperation,
 		ConnectActions.UpdateHoursOfOperationOverride,
 		ConnectActions.UpdateInstanceAttribute,
@@ -1239,6 +1258,7 @@ export class ConnectActions {
 		ConnectActions.ListEntitySecurityProfiles,
 		ConnectActions.ListEvaluationFormVersions,
 		ConnectActions.ListEvaluationForms,
+		ConnectActions.ListExtractionDefinitions,
 		ConnectActions.ListFlowAssociations,
 		ConnectActions.ListHoursOfOperationOverrides,
 		ConnectActions.ListHoursOfOperations,
@@ -1742,6 +1762,38 @@ export interface ConnectEvaluationFormArnComponents {
 	readonly instanceId: string;
 	/** The FormId component. */
 	readonly formId: string;
+}
+
+/**
+ * Properties for building a extraction-definition ARN.
+ */
+export interface ConnectExtractionDefinitionArnProps {
+	/** The InstanceId component of the ARN. */
+	readonly instanceId: string;
+	/** The ExtractionDefinitionId component of the ARN. */
+	readonly extractionDefinitionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a extraction-definition ARN.
+ */
+export interface ConnectExtractionDefinitionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The InstanceId component. */
+	readonly instanceId: string;
+	/** The ExtractionDefinitionId component. */
+	readonly extractionDefinitionId: string;
 }
 
 /**
@@ -2668,6 +2720,8 @@ const EmailAddressArnRegex =
 	/^arn:(?<partition>[^:]+):connect:(?<region>[^:]*):(?<account>[^:]*):instance\/(?<instanceId>[^:/?]+)\/email-address\/(?<emailAddressId>[^:/?]+)$/;
 const EvaluationFormArnRegex =
 	/^arn:(?<partition>[^:]+):connect:(?<region>[^:]*):(?<account>[^:]*):instance\/(?<instanceId>[^:/?]+)\/evaluation-form\/(?<formId>[^:/?]+)$/;
+const ExtractionDefinitionArnRegex =
+	/^arn:(?<partition>[^:]+):connect:(?<region>[^:]*):(?<account>[^:]*):instance\/(?<instanceId>[^:/?]+)\/extraction-definition\/(?<extractionDefinitionId>[^:/?]+)$/;
 const HierarchyGroupArnRegex =
 	/^arn:(?<partition>[^:]+):connect:(?<region>[^:]*):(?<account>[^:]*):instance\/(?<instanceId>[^:/?]+)\/agent-group\/(?<hierarchyGroupId>[^:/?]+)$/;
 const HoursOfOperationArnRegex =
@@ -3197,6 +3251,42 @@ export class ConnectResources {
 			account: match.groups.account,
 			instanceId: match.groups!.instanceId,
 			formId: match.groups!.formId,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the extraction-definition resource.
+	 */
+	static extractionDefinition(
+		props: ConnectExtractionDefinitionArnProps,
+	): string {
+		return `arn:${props.partition ?? "aws"}:connect:${props.region ?? "*"}:${props.account ?? "*"}:instance/${props.instanceId}/extraction-definition/${props.extractionDefinitionId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the extraction-definition resource.
+	 */
+	static isValidExtractionDefinitionArn(arn: string): boolean {
+		return ExtractionDefinitionArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a extraction-definition ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseExtractionDefinitionArn(
+		arn: string,
+	): ConnectExtractionDefinitionArnComponents {
+		const match = ExtractionDefinitionArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid extraction-definition ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			instanceId: match.groups!.instanceId,
+			extractionDefinitionId: match.groups!.extractionDefinitionId,
 		};
 	}
 
@@ -4351,6 +4441,7 @@ export class ConnectOperations {
 	];
 	/** IAM actions required for the CreateExtractionDefinition API call. */
 	static readonly CreateExtractionDefinition: string[] = [
+		"connect:CreateExtractionDefinition",
 		"connect:TagResource",
 	];
 	/** IAM actions required for the CreateHoursOfOperation API call. */
@@ -4516,7 +4607,9 @@ export class ConnectOperations {
 		"connect:DeleteEvaluationForm",
 	];
 	/** IAM actions required for the DeleteExtractionDefinition API call. */
-	static readonly DeleteExtractionDefinition: string[] = [];
+	static readonly DeleteExtractionDefinition: string[] = [
+		"connect:DeleteExtractionDefinition",
+	];
 	/** IAM actions required for the DeleteHoursOfOperation API call. */
 	static readonly DeleteHoursOfOperation: string[] = [
 		"connect:DeleteHoursOfOperation",
@@ -4638,7 +4731,9 @@ export class ConnectOperations {
 		"connect:DescribeEvaluationForm",
 	];
 	/** IAM actions required for the DescribeExtractionDefinition API call. */
-	static readonly DescribeExtractionDefinition: string[] = [];
+	static readonly DescribeExtractionDefinition: string[] = [
+		"connect:DescribeExtractionDefinition",
+	];
 	/** IAM actions required for the DescribeHoursOfOperation API call. */
 	static readonly DescribeHoursOfOperation: string[] = [
 		"connect:DescribeHoursOfOperation",
@@ -4795,6 +4890,8 @@ export class ConnectOperations {
 	];
 	/** IAM actions required for the GetContactMetrics API call. */
 	static readonly opGetContactMetrics: string[] = ["connect:GetContactMetrics"];
+	/** IAM actions required for the GetCrossRegionRouting API call. */
+	static readonly opGetCrossRegionRouting: string[] = [];
 	/** IAM actions required for the GetCurrentMetricData API call. */
 	static readonly opGetCurrentMetricData: string[] = [
 		"connect:GetCurrentMetricData",
@@ -4931,7 +5028,9 @@ export class ConnectOperations {
 		"connect:ListEvaluationForms",
 	];
 	/** IAM actions required for the ListExtractionDefinitions API call. */
-	static readonly ListExtractionDefinitions: string[] = [];
+	static readonly ListExtractionDefinitions: string[] = [
+		"connect:ListExtractionDefinitions",
+	];
 	/** IAM actions required for the ListFlowAssociations API call. */
 	static readonly ListFlowAssociations: string[] = [
 		"connect:ListFlowAssociations",
@@ -5383,6 +5482,8 @@ export class ConnectOperations {
 	];
 	/** IAM actions required for the UpdateContactTaskTemplate API call. */
 	static readonly UpdateContactTaskTemplate: string[] = [];
+	/** IAM actions required for the UpdateCrossRegionRouting API call. */
+	static readonly UpdateCrossRegionRouting: string[] = [];
 	/** IAM actions required for the UpdateDataTableAttribute API call. */
 	static readonly UpdateDataTableAttribute: string[] = [
 		"connect:UpdateDataTableAttribute",
@@ -5404,7 +5505,9 @@ export class ConnectOperations {
 		"connect:UpdateEvaluationForm",
 	];
 	/** IAM actions required for the UpdateExtractionDefinition API call. */
-	static readonly UpdateExtractionDefinition: string[] = [];
+	static readonly UpdateExtractionDefinition: string[] = [
+		"connect:UpdateExtractionDefinition",
+	];
 	/** IAM actions required for the UpdateHoursOfOperation API call. */
 	static readonly UpdateHoursOfOperation: string[] = [
 		"connect:UpdateHoursOfOperation",
@@ -5808,6 +5911,12 @@ export class ConnectConditions {
 	static readonly CreateEvaluationFormConditionKeys: string[] = [
 		"connect:InstanceId",
 	];
+	/** Condition keys applicable to the CreateExtractionDefinition action. */
+	static readonly CreateExtractionDefinitionConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+		"connect:InstanceId",
+	];
 	/** Condition keys applicable to the CreateHoursOfOperation action. */
 	static readonly CreateHoursOfOperationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
@@ -6006,6 +6115,11 @@ export class ConnectConditions {
 		"aws:ResourceTag/${TagKey}",
 		"connect:InstanceId",
 	];
+	/** Condition keys applicable to the DeleteExtractionDefinition action. */
+	static readonly DeleteExtractionDefinitionConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"connect:InstanceId",
+	];
 	/** Condition keys applicable to the DeleteHoursOfOperation action. */
 	static readonly DeleteHoursOfOperationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
@@ -6181,6 +6295,11 @@ export class ConnectConditions {
 	];
 	/** Condition keys applicable to the DescribeEvaluationForm action. */
 	static readonly DescribeEvaluationFormConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"connect:InstanceId",
+	];
+	/** Condition keys applicable to the DescribeExtractionDefinition action. */
+	static readonly DescribeExtractionDefinitionConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"connect:InstanceId",
 	];
@@ -6555,6 +6674,10 @@ export class ConnectConditions {
 	];
 	/** Condition keys applicable to the ListEvaluationForms action. */
 	static readonly ListEvaluationFormsConditionKeys: string[] = [
+		"connect:InstanceId",
+	];
+	/** Condition keys applicable to the ListExtractionDefinitions action. */
+	static readonly ListExtractionDefinitionsConditionKeys: string[] = [
 		"connect:InstanceId",
 	];
 	/** Condition keys applicable to the ListFlowAssociations action. */
@@ -7139,6 +7262,11 @@ export class ConnectConditions {
 	];
 	/** Condition keys applicable to the UpdateEvaluationForm action. */
 	static readonly UpdateEvaluationFormConditionKeys: string[] = [
+		"connect:InstanceId",
+	];
+	/** Condition keys applicable to the UpdateExtractionDefinition action. */
+	static readonly UpdateExtractionDefinitionConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
 		"connect:InstanceId",
 	];
 	/** Condition keys applicable to the UpdateHoursOfOperation action. */

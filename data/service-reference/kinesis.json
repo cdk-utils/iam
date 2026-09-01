@@ -966,6 +966,31 @@
       ]
     },
     {
+      "Name": "CreateChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "kinesis.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "kinesis"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesis",
+          "Method": "create_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "CreateStream",
       "AuthorizedActions": [
         {
@@ -997,6 +1022,16 @@
         {
           "Name": "kinesis",
           "Method": "decrease_stream_retention_period",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteChannel",
+      "SDK": [
+        {
+          "Name": "kinesis",
+          "Method": "delete_channel",
           "Package": "Boto3"
         }
       ]
@@ -1061,6 +1096,16 @@
         {
           "Name": "kinesis",
           "Method": "describe_account_settings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeChannel",
+      "SDK": [
+        {
+          "Name": "kinesis",
+          "Method": "describe_channel",
           "Package": "Boto3"
         }
       ]
@@ -1221,6 +1266,16 @@
         {
           "Name": "kinesis",
           "Method": "increase_stream_retention_period",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListChannels",
+      "SDK": [
+        {
+          "Name": "kinesis",
+          "Method": "list_channels",
           "Package": "Boto3"
         }
       ]
@@ -1513,6 +1568,16 @@
         {
           "Name": "kinesis",
           "Method": "update_account_settings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateChannel",
+      "SDK": [
+        {
+          "Name": "kinesis",
+          "Method": "update_channel",
           "Package": "Boto3"
         }
       ]

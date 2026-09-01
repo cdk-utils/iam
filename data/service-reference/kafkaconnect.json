@@ -677,6 +677,16 @@
       ]
     },
     {
+      "Name": "RestartConnector",
+      "SDK": [
+        {
+          "Name": "kafkaconnect",
+          "Method": "restart_connector",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "TagResource",
       "AuthorizedActions": [
         {

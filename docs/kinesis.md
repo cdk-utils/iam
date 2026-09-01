@@ -1403,12 +1403,15 @@ new kinesis.KinesisOperations()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.AddTagsToStream">AddTagsToStream</a></code> | <code>string[]</code> | IAM actions required for the AddTagsToStream API call. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.CreateChannel">CreateChannel</a></code> | <code>string[]</code> | IAM actions required for the CreateChannel API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.CreateStream">CreateStream</a></code> | <code>string[]</code> | IAM actions required for the CreateStream API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.DecreaseStreamRetentionPeriod">DecreaseStreamRetentionPeriod</a></code> | <code>string[]</code> | IAM actions required for the DecreaseStreamRetentionPeriod API call. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.DeleteChannel">DeleteChannel</a></code> | <code>string[]</code> | IAM actions required for the DeleteChannel API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.DeleteResourcePolicy">DeleteResourcePolicy</a></code> | <code>string[]</code> | IAM actions required for the DeleteResourcePolicy API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.DeleteStream">DeleteStream</a></code> | <code>string[]</code> | IAM actions required for the DeleteStream API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.DeregisterStreamConsumer">DeregisterStreamConsumer</a></code> | <code>string[]</code> | IAM actions required for the DeregisterStreamConsumer API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.DescribeAccountSettings">DescribeAccountSettings</a></code> | <code>string[]</code> | IAM actions required for the DescribeAccountSettings API call. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.DescribeChannel">DescribeChannel</a></code> | <code>string[]</code> | IAM actions required for the DescribeChannel API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.DescribeLimits">DescribeLimits</a></code> | <code>string[]</code> | IAM actions required for the DescribeLimits API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.DescribeStream">DescribeStream</a></code> | <code>string[]</code> | IAM actions required for the DescribeStream API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.DescribeStreamConsumer">DescribeStreamConsumer</a></code> | <code>string[]</code> | IAM actions required for the DescribeStreamConsumer API call. |
@@ -1416,6 +1419,7 @@ new kinesis.KinesisOperations()
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.DisableEnhancedMonitoring">DisableEnhancedMonitoring</a></code> | <code>string[]</code> | IAM actions required for the DisableEnhancedMonitoring API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.EnableEnhancedMonitoring">EnableEnhancedMonitoring</a></code> | <code>string[]</code> | IAM actions required for the EnableEnhancedMonitoring API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.IncreaseStreamRetentionPeriod">IncreaseStreamRetentionPeriod</a></code> | <code>string[]</code> | IAM actions required for the IncreaseStreamRetentionPeriod API call. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.ListChannels">ListChannels</a></code> | <code>string[]</code> | IAM actions required for the ListChannels API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.ListShards">ListShards</a></code> | <code>string[]</code> | IAM actions required for the ListShards API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.ListStreamConsumers">ListStreamConsumers</a></code> | <code>string[]</code> | IAM actions required for the ListStreamConsumers API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.ListStreams">ListStreams</a></code> | <code>string[]</code> | IAM actions required for the ListStreams API call. |
@@ -1437,6 +1441,7 @@ new kinesis.KinesisOperations()
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.UpdateAccountSettings">UpdateAccountSettings</a></code> | <code>string[]</code> | IAM actions required for the UpdateAccountSettings API call. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.UpdateChannel">UpdateChannel</a></code> | <code>string[]</code> | IAM actions required for the UpdateChannel API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.UpdateMaxRecordSize">UpdateMaxRecordSize</a></code> | <code>string[]</code> | IAM actions required for the UpdateMaxRecordSize API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.UpdateShardCount">UpdateShardCount</a></code> | <code>string[]</code> | IAM actions required for the UpdateShardCount API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.UpdateStreamMode">UpdateStreamMode</a></code> | <code>string[]</code> | IAM actions required for the UpdateStreamMode API call. |
@@ -1453,6 +1458,18 @@ public readonly AddTagsToStream: string[];
 - *Type:* string[]
 
 IAM actions required for the AddTagsToStream API call.
+
+---
+
+##### `CreateChannel`<sup>Required</sup> <a name="CreateChannel" id="@cdk_utils/iam.kinesis.KinesisOperations.property.CreateChannel"></a>
+
+```typescript
+public readonly CreateChannel: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateChannel API call.
 
 ---
 
@@ -1477,6 +1494,18 @@ public readonly DecreaseStreamRetentionPeriod: string[];
 - *Type:* string[]
 
 IAM actions required for the DecreaseStreamRetentionPeriod API call.
+
+---
+
+##### `DeleteChannel`<sup>Required</sup> <a name="DeleteChannel" id="@cdk_utils/iam.kinesis.KinesisOperations.property.DeleteChannel"></a>
+
+```typescript
+public readonly DeleteChannel: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteChannel API call.
 
 ---
 
@@ -1525,6 +1554,18 @@ public readonly DescribeAccountSettings: string[];
 - *Type:* string[]
 
 IAM actions required for the DescribeAccountSettings API call.
+
+---
+
+##### `DescribeChannel`<sup>Required</sup> <a name="DescribeChannel" id="@cdk_utils/iam.kinesis.KinesisOperations.property.DescribeChannel"></a>
+
+```typescript
+public readonly DescribeChannel: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeChannel API call.
 
 ---
 
@@ -1609,6 +1650,18 @@ public readonly IncreaseStreamRetentionPeriod: string[];
 - *Type:* string[]
 
 IAM actions required for the IncreaseStreamRetentionPeriod API call.
+
+---
+
+##### `ListChannels`<sup>Required</sup> <a name="ListChannels" id="@cdk_utils/iam.kinesis.KinesisOperations.property.ListChannels"></a>
+
+```typescript
+public readonly ListChannels: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListChannels API call.
 
 ---
 
@@ -1861,6 +1914,18 @@ public readonly UpdateAccountSettings: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateAccountSettings API call.
+
+---
+
+##### `UpdateChannel`<sup>Required</sup> <a name="UpdateChannel" id="@cdk_utils/iam.kinesis.KinesisOperations.property.UpdateChannel"></a>
+
+```typescript
+public readonly UpdateChannel: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateChannel API call.
 
 ---
 

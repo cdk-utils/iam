@@ -63,7 +63,7 @@ export class SupportActions {
 	/** [Write] support:DisconnectLiveContactForCase */
 	static readonly DisconnectLiveContactForCase =
 		"support:DisconnectLiveContactForCase";
-	/** [Write] support:DownloadAttachment */
+	/** [Read] support:DownloadAttachment */
 	static readonly DownloadAttachment = "support:DownloadAttachment";
 	/** [Read] support:GetInteraction */
 	static readonly actionGetInteraction = "support:GetInteraction";
@@ -119,6 +119,7 @@ export class SupportActions {
 		SupportActions.DescribeTrustedAdvisorCheckResult,
 		SupportActions.DescribeTrustedAdvisorCheckSummaries,
 		SupportActions.DescribeTrustedAdvisorChecks,
+		SupportActions.DownloadAttachment,
 		SupportActions.actionGetInteraction,
 		SupportActions.ListInteractionEntries,
 		SupportActions.ListInteractions,
@@ -131,7 +132,6 @@ export class SupportActions {
 		SupportActions.AddRelatedItemToCase,
 		SupportActions.CreateCase,
 		SupportActions.DisconnectLiveContactForCase,
-		SupportActions.DownloadAttachment,
 		SupportActions.InitiateCallForCase,
 		SupportActions.InitiateChatForCase,
 		SupportActions.InitiateLiveContactForCase,
@@ -165,10 +165,20 @@ export class SupportOperations {
 	static readonly AddCommunicationToCase: string[] = [
 		"support:AddCommunicationToCase",
 	];
+	/** IAM actions required for the CompleteAttachmentUpload API call. */
+	static readonly CompleteAttachmentUpload: string[] = [
+		"support:AddAttachmentsToSet",
+		"support:UploadAttachment",
+	];
 	/** IAM actions required for the CreateCase API call. */
 	static readonly CreateCase: string[] = ["support:CreateCase"];
 	/** IAM actions required for the DescribeAttachment API call. */
 	static readonly DescribeAttachment: string[] = ["support:DescribeAttachment"];
+	/** IAM actions required for the DescribeAttachmentUploadStatus API call. */
+	static readonly DescribeAttachmentUploadStatus: string[] = [
+		"support:AddAttachmentsToSet",
+		"support:UploadAttachment",
+	];
 	/** IAM actions required for the DescribeCases API call. */
 	static readonly DescribeCases: string[] = ["support:DescribeCases"];
 	/** IAM actions required for the DescribeCommunications API call. */
@@ -212,6 +222,16 @@ export class SupportOperations {
 		"trustedadvisor:DescribeChecks",
 		"support:DescribeTrustedAdvisorChecks",
 		"trustedadvisor:ListChecks",
+	];
+	/** IAM actions required for the GetAttachmentDownloadLink API call. */
+	static readonly opGetAttachmentDownloadLink: string[] = [
+		"support:DescribeAttachment",
+		"support:DownloadAttachment",
+	];
+	/** IAM actions required for the GetAttachmentUploadLinks API call. */
+	static readonly opGetAttachmentUploadLinks: string[] = [
+		"support:AddAttachmentsToSet",
+		"support:UploadAttachment",
 	];
 	/** IAM actions required for the RefreshTrustedAdvisorCheck API call. */
 	static readonly RefreshTrustedAdvisorCheck: string[] = [
