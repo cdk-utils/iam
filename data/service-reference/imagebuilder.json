@@ -2476,6 +2476,16 @@
     },
     {
       "Name": "ImportComponent",
+      "AuthorizedActions": [
+        {
+          "Name": "ImportComponent",
+          "Service": "imagebuilder"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "imagebuilder"
+        }
+      ],
       "SDK": [
         {
           "Name": "imagebuilder",

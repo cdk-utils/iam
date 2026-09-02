@@ -2129,6 +2129,8 @@ export class LightSailOperations {
 	static readonly opGetOperationsForResource: string[] = [
 		"lightsail:GetOperationsForResource",
 	];
+	/** IAM actions required for the GetProfile API call. */
+	static readonly opGetProfile: string[] = [];
 	/** IAM actions required for the GetRegions API call. */
 	static readonly opGetRegions: string[] = ["lightsail:GetRegions"];
 	/** IAM actions required for the GetRelationalDatabase API call. */

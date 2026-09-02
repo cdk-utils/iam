@@ -419,6 +419,8 @@ export class ConnectActions {
 	static readonly actionGetContactAttributes = "connect:GetContactAttributes";
 	/** [Read] connect:GetContactMetrics */
 	static readonly actionGetContactMetrics = "connect:GetContactMetrics";
+	/** [Read] connect:GetCrossRegionRouting */
+	static readonly actionGetCrossRegionRouting = "connect:GetCrossRegionRouting";
 	/** [Read] connect:GetCurrentMetricData */
 	static readonly actionGetCurrentMetricData = "connect:GetCurrentMetricData";
 	/** [Read] connect:GetCurrentUserData */
@@ -787,6 +789,8 @@ export class ConnectActions {
 	static readonly UpdateContactRoutingData = "connect:UpdateContactRoutingData";
 	/** [Write] connect:UpdateContactSchedule */
 	static readonly UpdateContactSchedule = "connect:UpdateContactSchedule";
+	/** [Write] connect:UpdateCrossRegionRouting */
+	static readonly UpdateCrossRegionRouting = "connect:UpdateCrossRegionRouting";
 	/** [Write] connect:UpdateDataTableAttribute */
 	static readonly UpdateDataTableAttribute = "connect:UpdateDataTableAttribute";
 	/** [Write] connect:UpdateDataTableMetadata */
@@ -957,6 +961,7 @@ export class ConnectActions {
 		ConnectActions.actionGetAttachedFile,
 		ConnectActions.actionGetContactAttributes,
 		ConnectActions.actionGetContactMetrics,
+		ConnectActions.actionGetCrossRegionRouting,
 		ConnectActions.actionGetCurrentMetricData,
 		ConnectActions.actionGetCurrentUserData,
 		ConnectActions.actionGetEffectiveHoursOfOperations,
@@ -1179,6 +1184,7 @@ export class ConnectActions {
 		ConnectActions.UpdateContactFlowName,
 		ConnectActions.UpdateContactRoutingData,
 		ConnectActions.UpdateContactSchedule,
+		ConnectActions.UpdateCrossRegionRouting,
 		ConnectActions.UpdateDataTableAttribute,
 		ConnectActions.UpdateDataTableMetadata,
 		ConnectActions.UpdateDataTablePrimaryValues,
@@ -4891,7 +4897,9 @@ export class ConnectOperations {
 	/** IAM actions required for the GetContactMetrics API call. */
 	static readonly opGetContactMetrics: string[] = ["connect:GetContactMetrics"];
 	/** IAM actions required for the GetCrossRegionRouting API call. */
-	static readonly opGetCrossRegionRouting: string[] = [];
+	static readonly opGetCrossRegionRouting: string[] = [
+		"connect:GetCrossRegionRouting",
+	];
 	/** IAM actions required for the GetCurrentMetricData API call. */
 	static readonly opGetCurrentMetricData: string[] = [
 		"connect:GetCurrentMetricData",
@@ -5483,7 +5491,9 @@ export class ConnectOperations {
 	/** IAM actions required for the UpdateContactTaskTemplate API call. */
 	static readonly UpdateContactTaskTemplate: string[] = [];
 	/** IAM actions required for the UpdateCrossRegionRouting API call. */
-	static readonly UpdateCrossRegionRouting: string[] = [];
+	static readonly UpdateCrossRegionRouting: string[] = [
+		"connect:UpdateCrossRegionRouting",
+	];
 	/** IAM actions required for the UpdateDataTableAttribute API call. */
 	static readonly UpdateDataTableAttribute: string[] = [
 		"connect:UpdateDataTableAttribute",
@@ -6516,6 +6526,10 @@ export class ConnectConditions {
 	static readonly actionGetContactMetricsConditionKeys: string[] = [
 		"connect:InstanceId",
 	];
+	/** Condition keys applicable to the GetCrossRegionRouting action. */
+	static readonly actionGetCrossRegionRoutingConditionKeys: string[] = [
+		"connect:InstanceId",
+	];
 	/** Condition keys applicable to the GetCurrentMetricData action. */
 	static readonly actionGetCurrentMetricDataConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
@@ -7238,6 +7252,10 @@ export class ConnectConditions {
 		"connect:ContactAssociationId",
 		"connect:InstanceId",
 		"connect:UserArn",
+	];
+	/** Condition keys applicable to the UpdateCrossRegionRouting action. */
+	static readonly UpdateCrossRegionRoutingConditionKeys: string[] = [
+		"connect:InstanceId",
 	];
 	/** Condition keys applicable to the UpdateDataTableAttribute action. */
 	static readonly UpdateDataTableAttributeConditionKeys: string[] = [

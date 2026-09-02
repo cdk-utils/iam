@@ -1561,7 +1561,10 @@ export class ImageBuilderOperations {
 		"imagebuilder:GetWorkflowStepExecution",
 	];
 	/** IAM actions required for the ImportComponent API call. */
-	static readonly ImportComponent: string[] = [];
+	static readonly ImportComponent: string[] = [
+		"imagebuilder:ImportComponent",
+		"imagebuilder:TagResource",
+	];
 	/** IAM actions required for the ImportDiskImage API call. */
 	static readonly ImportDiskImage: string[] = [
 		"imagebuilder:GetInfrastructureConfiguration",

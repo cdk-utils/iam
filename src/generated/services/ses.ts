@@ -2048,6 +2048,8 @@ export class SesResources {
  * API operation to required IAM actions mapping for ses.
  */
 export class SesOperations {
+	/** IAM actions required for the AssociateEmailIdentityCertificate API call. */
+	static readonly AssociateEmailIdentityCertificate: string[] = [];
 	/** IAM actions required for the BatchGetMetricData API call. */
 	static readonly BatchGetMetricData: string[] = ["ses:BatchGetMetricData"];
 	/** IAM actions required for the CancelExportJob API call. */
@@ -2276,6 +2278,8 @@ export class SesOperations {
 	static readonly DescribeReceiptRuleSet: string[] = [
 		"ses:DescribeReceiptRuleSet",
 	];
+	/** IAM actions required for the DisassociateEmailIdentityCertificate API call. */
+	static readonly DisassociateEmailIdentityCertificate: string[] = [];
 	/** IAM actions required for the GetAccount API call. */
 	static readonly opGetAccount: string[] = ["ses:GetAccount"];
 	/** IAM actions required for the GetAccountSendingEnabled API call. */
@@ -2456,6 +2460,8 @@ export class SesOperations {
 	];
 	/** IAM actions required for the ListEmailIdentities API call. */
 	static readonly ListEmailIdentities: string[] = ["ses:ListEmailIdentities"];
+	/** IAM actions required for the ListEmailIdentityCertificates API call. */
+	static readonly ListEmailIdentityCertificates: string[] = [];
 	/** IAM actions required for the ListEmailTemplates API call. */
 	static readonly ListEmailTemplates: string[] = ["ses:ListEmailTemplates"];
 	/** IAM actions required for the ListExportJobs API call. */
@@ -2688,6 +2694,8 @@ export class SesOperations {
 	];
 	/** IAM actions required for the UpdateArchive API call. */
 	static readonly UpdateArchive: string[] = ["ses:UpdateArchive"];
+	/** IAM actions required for the UpdateConfigurationSet API call. */
+	static readonly UpdateConfigurationSet: string[] = [];
 	/** IAM actions required for the UpdateConfigurationSetEventDestination API call. */
 	static readonly UpdateConfigurationSetEventDestination: string[] = [
 		"iam:PassRole",

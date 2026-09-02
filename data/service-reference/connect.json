@@ -4233,6 +4233,29 @@
       }
     },
     {
+      "Name": "GetCrossRegionRouting",
+      "ActionConditionKeys": [
+        "connect:InstanceId"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "GetCurrentMetricData",
       "ActionConditionKeys": [
         "aws:ResourceTag/${TagKey}",
@@ -8371,6 +8394,29 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateCrossRegionRouting",
+      "ActionConditionKeys": [
+        "connect:InstanceId"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -12676,6 +12722,12 @@
     },
     {
       "Name": "GetCrossRegionRouting",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCrossRegionRouting",
+          "Service": "connect"
+        }
+      ],
       "SDK": [
         {
           "Name": "connect",
@@ -15466,6 +15518,12 @@
     },
     {
       "Name": "UpdateCrossRegionRouting",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCrossRegionRouting",
+          "Service": "connect"
+        }
+      ],
       "SDK": [
         {
           "Name": "connect",

@@ -4830,6 +4830,16 @@
       ]
     },
     {
+      "Name": "GetProfile",
+      "SDK": [
+        {
+          "Name": "lightsail",
+          "Method": "get_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetRegions",
       "AuthorizedActions": [
         {

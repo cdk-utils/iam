@@ -102,6 +102,26 @@
       }
     },
     {
+      "Name": "AdminDeleteSoftwareToken",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "AdminDeleteUser",
       "Annotations": {
         "Properties": {
@@ -2529,6 +2549,12 @@
     },
     {
       "Name": "AdminDeleteSoftwareToken",
+      "AuthorizedActions": [
+        {
+          "Name": "AdminDeleteSoftwareToken",
+          "Service": "cognito-idp"
+        }
+      ],
       "SDK": [
         {
           "Name": "cognito-idp",
@@ -3491,6 +3517,12 @@
     },
     {
       "Name": "DescribeTermsByClient",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeTerms",
+          "Service": "cognito-idp"
+        }
+      ],
       "SDK": [
         {
           "Name": "cognito-idp",

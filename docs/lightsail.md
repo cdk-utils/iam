@@ -5535,6 +5535,7 @@ new lightsail.LightSailOperations()
 | <code><a href="#@cdk_utils/iam.lightsail.LightSailOperations.property.opGetOperation">opGetOperation</a></code> | <code>string[]</code> | IAM actions required for the GetOperation API call. |
 | <code><a href="#@cdk_utils/iam.lightsail.LightSailOperations.property.opGetOperations">opGetOperations</a></code> | <code>string[]</code> | IAM actions required for the GetOperations API call. |
 | <code><a href="#@cdk_utils/iam.lightsail.LightSailOperations.property.opGetOperationsForResource">opGetOperationsForResource</a></code> | <code>string[]</code> | IAM actions required for the GetOperationsForResource API call. |
+| <code><a href="#@cdk_utils/iam.lightsail.LightSailOperations.property.opGetProfile">opGetProfile</a></code> | <code>string[]</code> | IAM actions required for the GetProfile API call. |
 | <code><a href="#@cdk_utils/iam.lightsail.LightSailOperations.property.opGetRegions">opGetRegions</a></code> | <code>string[]</code> | IAM actions required for the GetRegions API call. |
 | <code><a href="#@cdk_utils/iam.lightsail.LightSailOperations.property.opGetRelationalDatabase">opGetRelationalDatabase</a></code> | <code>string[]</code> | IAM actions required for the GetRelationalDatabase API call. |
 | <code><a href="#@cdk_utils/iam.lightsail.LightSailOperations.property.opGetRelationalDatabaseBlueprints">opGetRelationalDatabaseBlueprints</a></code> | <code>string[]</code> | IAM actions required for the GetRelationalDatabaseBlueprints API call. |
@@ -6939,6 +6940,18 @@ public readonly opGetOperationsForResource: string[];
 - *Type:* string[]
 
 IAM actions required for the GetOperationsForResource API call.
+
+---
+
+##### `opGetProfile`<sup>Required</sup> <a name="opGetProfile" id="@cdk_utils/iam.lightsail.LightSailOperations.property.opGetProfile"></a>
+
+```typescript
+public readonly opGetProfile: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetProfile API call.
 
 ---
 

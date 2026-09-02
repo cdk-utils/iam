@@ -23,6 +23,9 @@ export class CognitoIdpActions {
 	static readonly AdminConfirmSignUp = "cognito-idp:AdminConfirmSignUp";
 	/** [Write] cognito-idp:AdminCreateUser */
 	static readonly AdminCreateUser = "cognito-idp:AdminCreateUser";
+	/** [Write] cognito-idp:AdminDeleteSoftwareToken */
+	static readonly AdminDeleteSoftwareToken =
+		"cognito-idp:AdminDeleteSoftwareToken";
 	/** [Write] cognito-idp:AdminDeleteUser */
 	static readonly AdminDeleteUser = "cognito-idp:AdminDeleteUser";
 	/** [Write] cognito-idp:AdminDeleteUserAttributes */
@@ -338,6 +341,7 @@ export class CognitoIdpActions {
 		CognitoIdpActions.AdminAddUserToGroup,
 		CognitoIdpActions.AdminConfirmSignUp,
 		CognitoIdpActions.AdminCreateUser,
+		CognitoIdpActions.AdminDeleteSoftwareToken,
 		CognitoIdpActions.AdminDeleteUser,
 		CognitoIdpActions.AdminDeleteUserAttributes,
 		CognitoIdpActions.AdminDisableProviderForUser,
@@ -607,7 +611,9 @@ export class CognitoIdpOperations {
 	/** IAM actions required for the AdminCreateUser API call. */
 	static readonly AdminCreateUser: string[] = ["cognito-idp:AdminCreateUser"];
 	/** IAM actions required for the AdminDeleteSoftwareToken API call. */
-	static readonly AdminDeleteSoftwareToken: string[] = [];
+	static readonly AdminDeleteSoftwareToken: string[] = [
+		"cognito-idp:AdminDeleteSoftwareToken",
+	];
 	/** IAM actions required for the AdminDeleteUser API call. */
 	static readonly AdminDeleteUser: string[] = ["cognito-idp:AdminDeleteUser"];
 	/** IAM actions required for the AdminDeleteUserAttributes API call. */
@@ -816,7 +822,9 @@ export class CognitoIdpOperations {
 	/** IAM actions required for the DescribeTerms API call. */
 	static readonly DescribeTerms: string[] = ["cognito-idp:DescribeTerms"];
 	/** IAM actions required for the DescribeTermsByClient API call. */
-	static readonly DescribeTermsByClient: string[] = [];
+	static readonly DescribeTermsByClient: string[] = [
+		"cognito-idp:DescribeTerms",
+	];
 	/** IAM actions required for the DescribeUserImportJob API call. */
 	static readonly DescribeUserImportJob: string[] = [
 		"cognito-idp:DescribeUserImportJob",

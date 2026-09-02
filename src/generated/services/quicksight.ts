@@ -4319,7 +4319,7 @@ export class QuickSightOperations {
 	/** IAM actions required for the SearchTopics API call. */
 	static readonly SearchTopics: string[] = ["quicksight:SearchTopics"];
 	/** IAM actions required for the SearchTopicsV2 API call. */
-	static readonly SearchTopicsV2: string[] = [];
+	static readonly SearchTopicsV2: string[] = ["quicksight:SearchTopics"];
 	/** IAM actions required for the StartAssetBundleExportJob API call. */
 	static readonly StartAssetBundleExportJob: string[] = [
 		"quicksight:StartAssetBundleExportJob",

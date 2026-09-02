@@ -47,6 +47,40 @@
       }
     },
     {
+      "Name": "CreateCustomDetectionRuleAssociation",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateCustomDetectionRuleOrgConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "CreateDetector",
       "ActionConditionKeys": [
         "aws:RequestTag/${TagKey}",
@@ -266,6 +300,41 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteCustomDetectionRuleAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "customdetectionruleassociation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteCustomDetectionRuleOrgConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -616,6 +685,61 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCustomDetectionRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "customdetectionrule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCustomDetectionRuleAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "customdetectionruleassociation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCustomDetectionRuleOrgConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -974,6 +1098,51 @@
       }
     },
     {
+      "Name": "ListCustomDetectionRuleAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListCustomDetectionRuleOrgConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListCustomDetectionRules",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ListDetectors",
       "Annotations": {
         "Properties": {
@@ -1150,6 +1319,9 @@
       },
       "Resources": [
         {
+          "Name": "customdetectionruleassociation"
+        },
+        {
           "Name": "detector"
         },
         {
@@ -1315,6 +1487,9 @@
       },
       "Resources": [
         {
+          "Name": "customdetectionruleassociation"
+        },
+        {
           "Name": "detector"
         },
         {
@@ -1374,6 +1549,9 @@
       },
       "Resources": [
         {
+          "Name": "customdetectionruleassociation"
+        },
+        {
           "Name": "detector"
         },
         {
@@ -1400,6 +1578,41 @@
       ],
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateCustomDetectionRuleAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "customdetectionruleassociation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateCustomDetectionRuleOrgConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
       }
     },
@@ -1694,6 +1907,42 @@
       ]
     },
     {
+      "Name": "CreateCustomDetectionRuleAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCustomDetectionRuleAssociation",
+          "Service": "guardduty"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "guardduty"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "guardduty",
+          "Method": "create_custom_detection_rule_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateCustomDetectionRuleOrgConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCustomDetectionRuleOrgConfiguration",
+          "Service": "guardduty"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "guardduty",
+          "Method": "create_custom_detection_rule_org_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "CreateDetector",
       "AuthorizedActions": [
         {
@@ -1922,6 +2171,38 @@
         {
           "Name": "guardduty",
           "Method": "decline_invitations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCustomDetectionRuleAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCustomDetectionRuleAssociation",
+          "Service": "guardduty"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "guardduty",
+          "Method": "delete_custom_detection_rule_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCustomDetectionRuleOrgConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCustomDetectionRuleOrgConfiguration",
+          "Service": "guardduty"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "guardduty",
+          "Method": "delete_custom_detection_rule_org_configuration",
           "Package": "Boto3"
         }
       ]
@@ -2242,6 +2523,54 @@
         {
           "Name": "guardduty",
           "Method": "get_coverage_statistics",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCustomDetectionRule",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCustomDetectionRule",
+          "Service": "guardduty"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "guardduty",
+          "Method": "get_custom_detection_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCustomDetectionRuleAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCustomDetectionRuleAssociation",
+          "Service": "guardduty"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "guardduty",
+          "Method": "get_custom_detection_rule_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCustomDetectionRuleOrgConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCustomDetectionRuleOrgConfiguration",
+          "Service": "guardduty"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "guardduty",
+          "Method": "get_custom_detection_rule_org_configuration",
           "Package": "Boto3"
         }
       ]
@@ -2578,6 +2907,54 @@
         {
           "Name": "guardduty",
           "Method": "list_coverage",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCustomDetectionRuleAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCustomDetectionRuleAssociations",
+          "Service": "guardduty"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "guardduty",
+          "Method": "list_custom_detection_rule_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCustomDetectionRuleOrgConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCustomDetectionRuleOrgConfigurations",
+          "Service": "guardduty"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "guardduty",
+          "Method": "list_custom_detection_rule_org_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCustomDetectionRules",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCustomDetectionRules",
+          "Service": "guardduty"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "guardduty",
+          "Method": "list_custom_detection_rules",
           "Package": "Boto3"
         }
       ]
@@ -2944,6 +3321,32 @@
       ]
     },
     {
+      "Name": "UpdateCustomDetectionRuleAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCustomDetectionRuleAssociation",
+          "Service": "guardduty"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "guardduty",
+          "Method": "update_custom_detection_rule_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCustomDetectionRuleOrgConfiguration",
+      "SDK": [
+        {
+          "Name": "guardduty",
+          "Method": "update_custom_detection_rule_org_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "UpdateDetector",
       "AuthorizedActions": [
         {
@@ -3146,6 +3549,21 @@
     }
   ],
   "Resources": [
+    {
+      "Name": "customdetectionrule",
+      "ARNFormats": [
+        "arn:${Partition}:guardduty::aws:detection-rule/custom/${RuleId}"
+      ]
+    },
+    {
+      "Name": "customdetectionruleassociation",
+      "ARNFormats": [
+        "arn:${Partition}:guardduty:${Region}:${Account}:detection-rule/custom/${RuleId}/association/${AssociationId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
     {
       "Name": "detector",
       "ARNFormats": [

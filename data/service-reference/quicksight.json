@@ -10712,6 +10712,12 @@
     },
     {
       "Name": "SearchTopicsV2",
+      "AuthorizedActions": [
+        {
+          "Name": "SearchTopics",
+          "Service": "quicksight"
+        }
+      ],
       "SDK": [
         {
           "Name": "quicksight",

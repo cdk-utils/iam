@@ -5217,6 +5217,16 @@
   ],
   "Operations": [
     {
+      "Name": "AssociateEmailIdentityCertificate",
+      "SDK": [
+        {
+          "Name": "sesv2",
+          "Method": "associate_email_identity_certificate",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "BatchGetMetricData",
       "AuthorizedActions": [
         {
@@ -6443,6 +6453,16 @@
       ]
     },
     {
+      "Name": "DisassociateEmailIdentityCertificate",
+      "SDK": [
+        {
+          "Name": "sesv2",
+          "Method": "disassociate_email_identity_certificate",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetAccount",
       "AuthorizedActions": [
         {
@@ -7557,6 +7577,16 @@
         {
           "Name": "sesv2",
           "Method": "list_email_identities",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEmailIdentityCertificates",
+      "SDK": [
+        {
+          "Name": "sesv2",
+          "Method": "list_email_identity_certificates",
           "Package": "Boto3"
         }
       ]
@@ -8837,6 +8867,16 @@
         {
           "Name": "mailmanager",
           "Method": "update_archive",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateConfigurationSet",
+      "SDK": [
+        {
+          "Name": "sesv2",
+          "Method": "update_configuration_set",
           "Package": "Boto3"
         }
       ]

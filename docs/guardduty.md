@@ -3,6 +3,328 @@
 
 ## Structs <a name="Structs" id="Structs"></a>
 
+### GuardDutyCustomdetectionruleArnComponents <a name="GuardDutyCustomdetectionruleArnComponents" id="@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleArnComponents"></a>
+
+Parsed components of a customdetectionrule ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleArnComponents.Initializer"></a>
+
+```typescript
+import { guardduty } from '@cdk_utils/iam'
+
+const guardDutyCustomdetectionruleArnComponents: guardduty.GuardDutyCustomdetectionruleArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleArnComponents.property.ruleId">ruleId</a></code> | <code>string</code> | The RuleId component. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+##### `ruleId`<sup>Required</sup> <a name="ruleId" id="@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleArnComponents.property.ruleId"></a>
+
+```typescript
+public readonly ruleId: string;
+```
+
+- *Type:* string
+
+The RuleId component.
+
+---
+
+### GuardDutyCustomdetectionruleArnProps <a name="GuardDutyCustomdetectionruleArnProps" id="@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleArnProps"></a>
+
+Properties for building a customdetectionrule ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleArnProps.Initializer"></a>
+
+```typescript
+import { guardduty } from '@cdk_utils/iam'
+
+const guardDutyCustomdetectionruleArnProps: guardduty.GuardDutyCustomdetectionruleArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleArnProps.property.ruleId">ruleId</a></code> | <code>string</code> | The RuleId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `ruleId`<sup>Required</sup> <a name="ruleId" id="@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleArnProps.property.ruleId"></a>
+
+```typescript
+public readonly ruleId: string;
+```
+
+- *Type:* string
+
+The RuleId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
+### GuardDutyCustomdetectionruleassociationArnComponents <a name="GuardDutyCustomdetectionruleassociationArnComponents" id="@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleassociationArnComponents"></a>
+
+Parsed components of a customdetectionruleassociation ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleassociationArnComponents.Initializer"></a>
+
+```typescript
+import { guardduty } from '@cdk_utils/iam'
+
+const guardDutyCustomdetectionruleassociationArnComponents: guardduty.GuardDutyCustomdetectionruleassociationArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleassociationArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleassociationArnComponents.property.associationId">associationId</a></code> | <code>string</code> | The AssociationId component. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleassociationArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleassociationArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleassociationArnComponents.property.ruleId">ruleId</a></code> | <code>string</code> | The RuleId component. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleassociationArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `associationId`<sup>Required</sup> <a name="associationId" id="@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleassociationArnComponents.property.associationId"></a>
+
+```typescript
+public readonly associationId: string;
+```
+
+- *Type:* string
+
+The AssociationId component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleassociationArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleassociationArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+##### `ruleId`<sup>Required</sup> <a name="ruleId" id="@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleassociationArnComponents.property.ruleId"></a>
+
+```typescript
+public readonly ruleId: string;
+```
+
+- *Type:* string
+
+The RuleId component.
+
+---
+
+### GuardDutyCustomdetectionruleassociationArnProps <a name="GuardDutyCustomdetectionruleassociationArnProps" id="@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleassociationArnProps"></a>
+
+Properties for building a customdetectionruleassociation ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleassociationArnProps.Initializer"></a>
+
+```typescript
+import { guardduty } from '@cdk_utils/iam'
+
+const guardDutyCustomdetectionruleassociationArnProps: guardduty.GuardDutyCustomdetectionruleassociationArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleassociationArnProps.property.associationId">associationId</a></code> | <code>string</code> | The AssociationId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleassociationArnProps.property.ruleId">ruleId</a></code> | <code>string</code> | The RuleId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleassociationArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleassociationArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleassociationArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `associationId`<sup>Required</sup> <a name="associationId" id="@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleassociationArnProps.property.associationId"></a>
+
+```typescript
+public readonly associationId: string;
+```
+
+- *Type:* string
+
+The AssociationId component of the ARN.
+
+---
+
+##### `ruleId`<sup>Required</sup> <a name="ruleId" id="@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleassociationArnProps.property.ruleId"></a>
+
+```typescript
+public readonly ruleId: string;
+```
+
+- *Type:* string
+
+The RuleId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleassociationArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleassociationArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleassociationArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### GuardDutyDetectorArnComponents <a name="GuardDutyDetectorArnComponents" id="@cdk_utils/iam.guardduty.GuardDutyDetectorArnComponents"></a>
 
 Parsed components of a detector ARN.
@@ -1373,6 +1695,9 @@ new guardduty.GuardDutyActions()
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.AcceptInvitation">AcceptInvitation</a></code> | <code>string</code> | [Write] guardduty:AcceptInvitation. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.actionGetAdministratorAccount">actionGetAdministratorAccount</a></code> | <code>string</code> | [Read] guardduty:GetAdministratorAccount. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.actionGetCoverageStatistics">actionGetCoverageStatistics</a></code> | <code>string</code> | [Read] guardduty:GetCoverageStatistics. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.actionGetCustomDetectionRule">actionGetCustomDetectionRule</a></code> | <code>string</code> | [Read] guardduty:GetCustomDetectionRule. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.actionGetCustomDetectionRuleAssociation">actionGetCustomDetectionRuleAssociation</a></code> | <code>string</code> | [Read] guardduty:GetCustomDetectionRuleAssociation. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.actionGetCustomDetectionRuleOrgConfiguration">actionGetCustomDetectionRuleOrgConfiguration</a></code> | <code>string</code> | [Read] guardduty:GetCustomDetectionRuleOrgConfiguration. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.actionGetDetector">actionGetDetector</a></code> | <code>string</code> | [Read] guardduty:GetDetector. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.actionGetFilter">actionGetFilter</a></code> | <code>string</code> | [Read] guardduty:GetFilter. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.actionGetFindings">actionGetFindings</a></code> | <code>string</code> | [Read] guardduty:GetFindings. |
@@ -1398,6 +1723,8 @@ new guardduty.GuardDutyActions()
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.AllTaggingActions">AllTaggingActions</a></code> | <code>string[]</code> | All tagging-level actions. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.ArchiveFindings">ArchiveFindings</a></code> | <code>string</code> | [Write] guardduty:ArchiveFindings. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.CreateCustomDetectionRuleAssociation">CreateCustomDetectionRuleAssociation</a></code> | <code>string</code> | [Write] guardduty:CreateCustomDetectionRuleAssociation. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.CreateCustomDetectionRuleOrgConfiguration">CreateCustomDetectionRuleOrgConfiguration</a></code> | <code>string</code> | [Write] guardduty:CreateCustomDetectionRuleOrgConfiguration. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.CreateDetector">CreateDetector</a></code> | <code>string</code> | [Write] guardduty:CreateDetector. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.CreateFilter">CreateFilter</a></code> | <code>string</code> | [Write] guardduty:CreateFilter. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.CreateInvestigation">CreateInvestigation</a></code> | <code>string</code> | [Write] guardduty:CreateInvestigation. |
@@ -1410,6 +1737,8 @@ new guardduty.GuardDutyActions()
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.CreateThreatIntelSet">CreateThreatIntelSet</a></code> | <code>string</code> | [Write] guardduty:CreateThreatIntelSet. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.CreateTrustedEntitySet">CreateTrustedEntitySet</a></code> | <code>string</code> | [Write] guardduty:CreateTrustedEntitySet. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.DeclineInvitations">DeclineInvitations</a></code> | <code>string</code> | [Write] guardduty:DeclineInvitations. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.DeleteCustomDetectionRuleAssociation">DeleteCustomDetectionRuleAssociation</a></code> | <code>string</code> | [Write] guardduty:DeleteCustomDetectionRuleAssociation. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.DeleteCustomDetectionRuleOrgConfiguration">DeleteCustomDetectionRuleOrgConfiguration</a></code> | <code>string</code> | [Write] guardduty:DeleteCustomDetectionRuleOrgConfiguration. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.DeleteDetector">DeleteDetector</a></code> | <code>string</code> | [Write] guardduty:DeleteDetector. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.DeleteFilter">DeleteFilter</a></code> | <code>string</code> | [Write] guardduty:DeleteFilter. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.DeleteInvitations">DeleteInvitations</a></code> | <code>string</code> | [Write] guardduty:DeleteInvitations. |
@@ -1430,6 +1759,9 @@ new guardduty.GuardDutyActions()
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.EnableOrganizationAdminAccount">EnableOrganizationAdminAccount</a></code> | <code>string</code> | [Write] guardduty:EnableOrganizationAdminAccount. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.InviteMembers">InviteMembers</a></code> | <code>string</code> | [Write] guardduty:InviteMembers. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.ListCoverage">ListCoverage</a></code> | <code>string</code> | [List] guardduty:ListCoverage. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.ListCustomDetectionRuleAssociations">ListCustomDetectionRuleAssociations</a></code> | <code>string</code> | [List] guardduty:ListCustomDetectionRuleAssociations. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.ListCustomDetectionRuleOrgConfigurations">ListCustomDetectionRuleOrgConfigurations</a></code> | <code>string</code> | [List] guardduty:ListCustomDetectionRuleOrgConfigurations. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.ListCustomDetectionRules">ListCustomDetectionRules</a></code> | <code>string</code> | [List] guardduty:ListCustomDetectionRules. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.ListDetectors">ListDetectors</a></code> | <code>string</code> | [List] guardduty:ListDetectors. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.ListFilters">ListFilters</a></code> | <code>string</code> | [List] guardduty:ListFilters. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.ListFindings">ListFindings</a></code> | <code>string</code> | [List] guardduty:ListFindings. |
@@ -1454,6 +1786,8 @@ new guardduty.GuardDutyActions()
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] guardduty:TagResource. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.UnarchiveFindings">UnarchiveFindings</a></code> | <code>string</code> | [Write] guardduty:UnarchiveFindings. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] guardduty:UntagResource. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.UpdateCustomDetectionRuleAssociation">UpdateCustomDetectionRuleAssociation</a></code> | <code>string</code> | [Write] guardduty:UpdateCustomDetectionRuleAssociation. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.UpdateCustomDetectionRuleOrgConfiguration">UpdateCustomDetectionRuleOrgConfiguration</a></code> | <code>string</code> | [Write] guardduty:UpdateCustomDetectionRuleOrgConfiguration. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.UpdateDetector">UpdateDetector</a></code> | <code>string</code> | [Write] guardduty:UpdateDetector. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.UpdateFilter">UpdateFilter</a></code> | <code>string</code> | [Write] guardduty:UpdateFilter. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.UpdateFindingsFeedback">UpdateFindingsFeedback</a></code> | <code>string</code> | [Write] guardduty:UpdateFindingsFeedback. |
@@ -1514,6 +1848,42 @@ public readonly actionGetCoverageStatistics: string;
 - *Type:* string
 
 [Read] guardduty:GetCoverageStatistics.
+
+---
+
+##### `actionGetCustomDetectionRule`<sup>Required</sup> <a name="actionGetCustomDetectionRule" id="@cdk_utils/iam.guardduty.GuardDutyActions.property.actionGetCustomDetectionRule"></a>
+
+```typescript
+public readonly actionGetCustomDetectionRule: string;
+```
+
+- *Type:* string
+
+[Read] guardduty:GetCustomDetectionRule.
+
+---
+
+##### `actionGetCustomDetectionRuleAssociation`<sup>Required</sup> <a name="actionGetCustomDetectionRuleAssociation" id="@cdk_utils/iam.guardduty.GuardDutyActions.property.actionGetCustomDetectionRuleAssociation"></a>
+
+```typescript
+public readonly actionGetCustomDetectionRuleAssociation: string;
+```
+
+- *Type:* string
+
+[Read] guardduty:GetCustomDetectionRuleAssociation.
+
+---
+
+##### `actionGetCustomDetectionRuleOrgConfiguration`<sup>Required</sup> <a name="actionGetCustomDetectionRuleOrgConfiguration" id="@cdk_utils/iam.guardduty.GuardDutyActions.property.actionGetCustomDetectionRuleOrgConfiguration"></a>
+
+```typescript
+public readonly actionGetCustomDetectionRuleOrgConfiguration: string;
+```
+
+- *Type:* string
+
+[Read] guardduty:GetCustomDetectionRuleOrgConfiguration.
 
 ---
 
@@ -1817,6 +2187,30 @@ public readonly ArchiveFindings: string;
 
 ---
 
+##### `CreateCustomDetectionRuleAssociation`<sup>Required</sup> <a name="CreateCustomDetectionRuleAssociation" id="@cdk_utils/iam.guardduty.GuardDutyActions.property.CreateCustomDetectionRuleAssociation"></a>
+
+```typescript
+public readonly CreateCustomDetectionRuleAssociation: string;
+```
+
+- *Type:* string
+
+[Write] guardduty:CreateCustomDetectionRuleAssociation.
+
+---
+
+##### `CreateCustomDetectionRuleOrgConfiguration`<sup>Required</sup> <a name="CreateCustomDetectionRuleOrgConfiguration" id="@cdk_utils/iam.guardduty.GuardDutyActions.property.CreateCustomDetectionRuleOrgConfiguration"></a>
+
+```typescript
+public readonly CreateCustomDetectionRuleOrgConfiguration: string;
+```
+
+- *Type:* string
+
+[Write] guardduty:CreateCustomDetectionRuleOrgConfiguration.
+
+---
+
 ##### `CreateDetector`<sup>Required</sup> <a name="CreateDetector" id="@cdk_utils/iam.guardduty.GuardDutyActions.property.CreateDetector"></a>
 
 ```typescript
@@ -1958,6 +2352,30 @@ public readonly DeclineInvitations: string;
 - *Type:* string
 
 [Write] guardduty:DeclineInvitations.
+
+---
+
+##### `DeleteCustomDetectionRuleAssociation`<sup>Required</sup> <a name="DeleteCustomDetectionRuleAssociation" id="@cdk_utils/iam.guardduty.GuardDutyActions.property.DeleteCustomDetectionRuleAssociation"></a>
+
+```typescript
+public readonly DeleteCustomDetectionRuleAssociation: string;
+```
+
+- *Type:* string
+
+[Write] guardduty:DeleteCustomDetectionRuleAssociation.
+
+---
+
+##### `DeleteCustomDetectionRuleOrgConfiguration`<sup>Required</sup> <a name="DeleteCustomDetectionRuleOrgConfiguration" id="@cdk_utils/iam.guardduty.GuardDutyActions.property.DeleteCustomDetectionRuleOrgConfiguration"></a>
+
+```typescript
+public readonly DeleteCustomDetectionRuleOrgConfiguration: string;
+```
+
+- *Type:* string
+
+[Write] guardduty:DeleteCustomDetectionRuleOrgConfiguration.
 
 ---
 
@@ -2198,6 +2616,42 @@ public readonly ListCoverage: string;
 - *Type:* string
 
 [List] guardduty:ListCoverage.
+
+---
+
+##### `ListCustomDetectionRuleAssociations`<sup>Required</sup> <a name="ListCustomDetectionRuleAssociations" id="@cdk_utils/iam.guardduty.GuardDutyActions.property.ListCustomDetectionRuleAssociations"></a>
+
+```typescript
+public readonly ListCustomDetectionRuleAssociations: string;
+```
+
+- *Type:* string
+
+[List] guardduty:ListCustomDetectionRuleAssociations.
+
+---
+
+##### `ListCustomDetectionRuleOrgConfigurations`<sup>Required</sup> <a name="ListCustomDetectionRuleOrgConfigurations" id="@cdk_utils/iam.guardduty.GuardDutyActions.property.ListCustomDetectionRuleOrgConfigurations"></a>
+
+```typescript
+public readonly ListCustomDetectionRuleOrgConfigurations: string;
+```
+
+- *Type:* string
+
+[List] guardduty:ListCustomDetectionRuleOrgConfigurations.
+
+---
+
+##### `ListCustomDetectionRules`<sup>Required</sup> <a name="ListCustomDetectionRules" id="@cdk_utils/iam.guardduty.GuardDutyActions.property.ListCustomDetectionRules"></a>
+
+```typescript
+public readonly ListCustomDetectionRules: string;
+```
+
+- *Type:* string
+
+[List] guardduty:ListCustomDetectionRules.
 
 ---
 
@@ -2489,6 +2943,30 @@ public readonly UntagResource: string;
 
 ---
 
+##### `UpdateCustomDetectionRuleAssociation`<sup>Required</sup> <a name="UpdateCustomDetectionRuleAssociation" id="@cdk_utils/iam.guardduty.GuardDutyActions.property.UpdateCustomDetectionRuleAssociation"></a>
+
+```typescript
+public readonly UpdateCustomDetectionRuleAssociation: string;
+```
+
+- *Type:* string
+
+[Write] guardduty:UpdateCustomDetectionRuleAssociation.
+
+---
+
+##### `UpdateCustomDetectionRuleOrgConfiguration`<sup>Required</sup> <a name="UpdateCustomDetectionRuleOrgConfiguration" id="@cdk_utils/iam.guardduty.GuardDutyActions.property.UpdateCustomDetectionRuleOrgConfiguration"></a>
+
+```typescript
+public readonly UpdateCustomDetectionRuleOrgConfiguration: string;
+```
+
+- *Type:* string
+
+[Write] guardduty:UpdateCustomDetectionRuleOrgConfiguration.
+
+---
+
 ##### `UpdateDetector`<sup>Required</sup> <a name="UpdateDetector" id="@cdk_utils/iam.guardduty.GuardDutyActions.property.UpdateDetector"></a>
 
 ```typescript
@@ -2717,6 +3195,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyConditions.property.AWS_REQUEST_TAG">AWS_REQUEST_TAG</a></code> | <code>string</code> | Condition key: aws:RequestTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyConditions.property.AWS_RESOURCE_TAG">AWS_RESOURCE_TAG</a></code> | <code>string</code> | Condition key: aws:ResourceTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyConditions.property.AWS_TAG_KEYS">AWS_TAG_KEYS</a></code> | <code>string</code> | Condition key: aws:TagKeys (ArrayOfString). |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyConditions.property.CreateCustomDetectionRuleAssociationConditionKeys">CreateCustomDetectionRuleAssociationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateCustomDetectionRuleAssociation action. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyConditions.property.CreateDetectorConditionKeys">CreateDetectorConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateDetector action. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyConditions.property.CreateFilterConditionKeys">CreateFilterConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateFilter action. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyConditions.property.CreateIPSetConditionKeys">CreateIPSetConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateIPSet action. |
@@ -2763,6 +3242,18 @@ public readonly AWS_TAG_KEYS: string;
 - *Type:* string
 
 Condition key: aws:TagKeys (ArrayOfString).
+
+---
+
+##### `CreateCustomDetectionRuleAssociationConditionKeys`<sup>Required</sup> <a name="CreateCustomDetectionRuleAssociationConditionKeys" id="@cdk_utils/iam.guardduty.GuardDutyConditions.property.CreateCustomDetectionRuleAssociationConditionKeys"></a>
+
+```typescript
+public readonly CreateCustomDetectionRuleAssociationConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateCustomDetectionRuleAssociation action.
 
 ---
 
@@ -2913,6 +3404,8 @@ new guardduty.GuardDutyOperations()
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.AcceptAdministratorInvitation">AcceptAdministratorInvitation</a></code> | <code>string[]</code> | IAM actions required for the AcceptAdministratorInvitation API call. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.AcceptInvitation">AcceptInvitation</a></code> | <code>string[]</code> | IAM actions required for the AcceptInvitation API call. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.ArchiveFindings">ArchiveFindings</a></code> | <code>string[]</code> | IAM actions required for the ArchiveFindings API call. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.CreateCustomDetectionRuleAssociation">CreateCustomDetectionRuleAssociation</a></code> | <code>string[]</code> | IAM actions required for the CreateCustomDetectionRuleAssociation API call. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.CreateCustomDetectionRuleOrgConfiguration">CreateCustomDetectionRuleOrgConfiguration</a></code> | <code>string[]</code> | IAM actions required for the CreateCustomDetectionRuleOrgConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.CreateDetector">CreateDetector</a></code> | <code>string[]</code> | IAM actions required for the CreateDetector API call. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.CreateFilter">CreateFilter</a></code> | <code>string[]</code> | IAM actions required for the CreateFilter API call. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.CreateInvestigation">CreateInvestigation</a></code> | <code>string[]</code> | IAM actions required for the CreateInvestigation API call. |
@@ -2925,6 +3418,8 @@ new guardduty.GuardDutyOperations()
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.CreateThreatIntelSet">CreateThreatIntelSet</a></code> | <code>string[]</code> | IAM actions required for the CreateThreatIntelSet API call. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.CreateTrustedEntitySet">CreateTrustedEntitySet</a></code> | <code>string[]</code> | IAM actions required for the CreateTrustedEntitySet API call. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.DeclineInvitations">DeclineInvitations</a></code> | <code>string[]</code> | IAM actions required for the DeclineInvitations API call. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.DeleteCustomDetectionRuleAssociation">DeleteCustomDetectionRuleAssociation</a></code> | <code>string[]</code> | IAM actions required for the DeleteCustomDetectionRuleAssociation API call. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.DeleteCustomDetectionRuleOrgConfiguration">DeleteCustomDetectionRuleOrgConfiguration</a></code> | <code>string[]</code> | IAM actions required for the DeleteCustomDetectionRuleOrgConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.DeleteDetector">DeleteDetector</a></code> | <code>string[]</code> | IAM actions required for the DeleteDetector API call. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.DeleteFilter">DeleteFilter</a></code> | <code>string[]</code> | IAM actions required for the DeleteFilter API call. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.DeleteInvitations">DeleteInvitations</a></code> | <code>string[]</code> | IAM actions required for the DeleteInvitations API call. |
@@ -2945,6 +3440,9 @@ new guardduty.GuardDutyOperations()
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.EnableOrganizationAdminAccount">EnableOrganizationAdminAccount</a></code> | <code>string[]</code> | IAM actions required for the EnableOrganizationAdminAccount API call. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.InviteMembers">InviteMembers</a></code> | <code>string[]</code> | IAM actions required for the InviteMembers API call. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.ListCoverage">ListCoverage</a></code> | <code>string[]</code> | IAM actions required for the ListCoverage API call. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.ListCustomDetectionRuleAssociations">ListCustomDetectionRuleAssociations</a></code> | <code>string[]</code> | IAM actions required for the ListCustomDetectionRuleAssociations API call. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.ListCustomDetectionRuleOrgConfigurations">ListCustomDetectionRuleOrgConfigurations</a></code> | <code>string[]</code> | IAM actions required for the ListCustomDetectionRuleOrgConfigurations API call. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.ListCustomDetectionRules">ListCustomDetectionRules</a></code> | <code>string[]</code> | IAM actions required for the ListCustomDetectionRules API call. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.ListDetectors">ListDetectors</a></code> | <code>string[]</code> | IAM actions required for the ListDetectors API call. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.ListFilters">ListFilters</a></code> | <code>string[]</code> | IAM actions required for the ListFilters API call. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.ListFindings">ListFindings</a></code> | <code>string[]</code> | IAM actions required for the ListFindings API call. |
@@ -2962,6 +3460,9 @@ new guardduty.GuardDutyOperations()
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.ListTrustedEntitySets">ListTrustedEntitySets</a></code> | <code>string[]</code> | IAM actions required for the ListTrustedEntitySets API call. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.opGetAdministratorAccount">opGetAdministratorAccount</a></code> | <code>string[]</code> | IAM actions required for the GetAdministratorAccount API call. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.opGetCoverageStatistics">opGetCoverageStatistics</a></code> | <code>string[]</code> | IAM actions required for the GetCoverageStatistics API call. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.opGetCustomDetectionRule">opGetCustomDetectionRule</a></code> | <code>string[]</code> | IAM actions required for the GetCustomDetectionRule API call. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.opGetCustomDetectionRuleAssociation">opGetCustomDetectionRuleAssociation</a></code> | <code>string[]</code> | IAM actions required for the GetCustomDetectionRuleAssociation API call. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.opGetCustomDetectionRuleOrgConfiguration">opGetCustomDetectionRuleOrgConfiguration</a></code> | <code>string[]</code> | IAM actions required for the GetCustomDetectionRuleOrgConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.opGetDetector">opGetDetector</a></code> | <code>string[]</code> | IAM actions required for the GetDetector API call. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.opGetFilter">opGetFilter</a></code> | <code>string[]</code> | IAM actions required for the GetFilter API call. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.opGetFindings">opGetFindings</a></code> | <code>string[]</code> | IAM actions required for the GetFindings API call. |
@@ -2988,6 +3489,8 @@ new guardduty.GuardDutyOperations()
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.UnarchiveFindings">UnarchiveFindings</a></code> | <code>string[]</code> | IAM actions required for the UnarchiveFindings API call. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.UpdateCustomDetectionRuleAssociation">UpdateCustomDetectionRuleAssociation</a></code> | <code>string[]</code> | IAM actions required for the UpdateCustomDetectionRuleAssociation API call. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.UpdateCustomDetectionRuleOrgConfiguration">UpdateCustomDetectionRuleOrgConfiguration</a></code> | <code>string[]</code> | IAM actions required for the UpdateCustomDetectionRuleOrgConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.UpdateDetector">UpdateDetector</a></code> | <code>string[]</code> | IAM actions required for the UpdateDetector API call. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.UpdateFilter">UpdateFilter</a></code> | <code>string[]</code> | IAM actions required for the UpdateFilter API call. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.UpdateFindingsFeedback">UpdateFindingsFeedback</a></code> | <code>string[]</code> | IAM actions required for the UpdateFindingsFeedback API call. |
@@ -3036,6 +3539,30 @@ public readonly ArchiveFindings: string[];
 - *Type:* string[]
 
 IAM actions required for the ArchiveFindings API call.
+
+---
+
+##### `CreateCustomDetectionRuleAssociation`<sup>Required</sup> <a name="CreateCustomDetectionRuleAssociation" id="@cdk_utils/iam.guardduty.GuardDutyOperations.property.CreateCustomDetectionRuleAssociation"></a>
+
+```typescript
+public readonly CreateCustomDetectionRuleAssociation: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateCustomDetectionRuleAssociation API call.
+
+---
+
+##### `CreateCustomDetectionRuleOrgConfiguration`<sup>Required</sup> <a name="CreateCustomDetectionRuleOrgConfiguration" id="@cdk_utils/iam.guardduty.GuardDutyOperations.property.CreateCustomDetectionRuleOrgConfiguration"></a>
+
+```typescript
+public readonly CreateCustomDetectionRuleOrgConfiguration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateCustomDetectionRuleOrgConfiguration API call.
 
 ---
 
@@ -3180,6 +3707,30 @@ public readonly DeclineInvitations: string[];
 - *Type:* string[]
 
 IAM actions required for the DeclineInvitations API call.
+
+---
+
+##### `DeleteCustomDetectionRuleAssociation`<sup>Required</sup> <a name="DeleteCustomDetectionRuleAssociation" id="@cdk_utils/iam.guardduty.GuardDutyOperations.property.DeleteCustomDetectionRuleAssociation"></a>
+
+```typescript
+public readonly DeleteCustomDetectionRuleAssociation: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteCustomDetectionRuleAssociation API call.
+
+---
+
+##### `DeleteCustomDetectionRuleOrgConfiguration`<sup>Required</sup> <a name="DeleteCustomDetectionRuleOrgConfiguration" id="@cdk_utils/iam.guardduty.GuardDutyOperations.property.DeleteCustomDetectionRuleOrgConfiguration"></a>
+
+```typescript
+public readonly DeleteCustomDetectionRuleOrgConfiguration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteCustomDetectionRuleOrgConfiguration API call.
 
 ---
 
@@ -3423,6 +3974,42 @@ IAM actions required for the ListCoverage API call.
 
 ---
 
+##### `ListCustomDetectionRuleAssociations`<sup>Required</sup> <a name="ListCustomDetectionRuleAssociations" id="@cdk_utils/iam.guardduty.GuardDutyOperations.property.ListCustomDetectionRuleAssociations"></a>
+
+```typescript
+public readonly ListCustomDetectionRuleAssociations: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListCustomDetectionRuleAssociations API call.
+
+---
+
+##### `ListCustomDetectionRuleOrgConfigurations`<sup>Required</sup> <a name="ListCustomDetectionRuleOrgConfigurations" id="@cdk_utils/iam.guardduty.GuardDutyOperations.property.ListCustomDetectionRuleOrgConfigurations"></a>
+
+```typescript
+public readonly ListCustomDetectionRuleOrgConfigurations: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListCustomDetectionRuleOrgConfigurations API call.
+
+---
+
+##### `ListCustomDetectionRules`<sup>Required</sup> <a name="ListCustomDetectionRules" id="@cdk_utils/iam.guardduty.GuardDutyOperations.property.ListCustomDetectionRules"></a>
+
+```typescript
+public readonly ListCustomDetectionRules: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListCustomDetectionRules API call.
+
+---
+
 ##### `ListDetectors`<sup>Required</sup> <a name="ListDetectors" id="@cdk_utils/iam.guardduty.GuardDutyOperations.property.ListDetectors"></a>
 
 ```typescript
@@ -3624,6 +4211,42 @@ public readonly opGetCoverageStatistics: string[];
 - *Type:* string[]
 
 IAM actions required for the GetCoverageStatistics API call.
+
+---
+
+##### `opGetCustomDetectionRule`<sup>Required</sup> <a name="opGetCustomDetectionRule" id="@cdk_utils/iam.guardduty.GuardDutyOperations.property.opGetCustomDetectionRule"></a>
+
+```typescript
+public readonly opGetCustomDetectionRule: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetCustomDetectionRule API call.
+
+---
+
+##### `opGetCustomDetectionRuleAssociation`<sup>Required</sup> <a name="opGetCustomDetectionRuleAssociation" id="@cdk_utils/iam.guardduty.GuardDutyOperations.property.opGetCustomDetectionRuleAssociation"></a>
+
+```typescript
+public readonly opGetCustomDetectionRuleAssociation: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetCustomDetectionRuleAssociation API call.
+
+---
+
+##### `opGetCustomDetectionRuleOrgConfiguration`<sup>Required</sup> <a name="opGetCustomDetectionRuleOrgConfiguration" id="@cdk_utils/iam.guardduty.GuardDutyOperations.property.opGetCustomDetectionRuleOrgConfiguration"></a>
+
+```typescript
+public readonly opGetCustomDetectionRuleOrgConfiguration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetCustomDetectionRuleOrgConfiguration API call.
 
 ---
 
@@ -3939,6 +4562,30 @@ IAM actions required for the UntagResource API call.
 
 ---
 
+##### `UpdateCustomDetectionRuleAssociation`<sup>Required</sup> <a name="UpdateCustomDetectionRuleAssociation" id="@cdk_utils/iam.guardduty.GuardDutyOperations.property.UpdateCustomDetectionRuleAssociation"></a>
+
+```typescript
+public readonly UpdateCustomDetectionRuleAssociation: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateCustomDetectionRuleAssociation API call.
+
+---
+
+##### `UpdateCustomDetectionRuleOrgConfiguration`<sup>Required</sup> <a name="UpdateCustomDetectionRuleOrgConfiguration" id="@cdk_utils/iam.guardduty.GuardDutyOperations.property.UpdateCustomDetectionRuleOrgConfiguration"></a>
+
+```typescript
+public readonly UpdateCustomDetectionRuleOrgConfiguration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateCustomDetectionRuleOrgConfiguration API call.
+
+---
+
 ##### `UpdateDetector`<sup>Required</sup> <a name="UpdateDetector" id="@cdk_utils/iam.guardduty.GuardDutyOperations.property.UpdateDetector"></a>
 
 ```typescript
@@ -4105,9 +4752,13 @@ new guardduty.GuardDutyResources()
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyResources.customdetectionrule">customdetectionrule</a></code> | Builds an ARN for the customdetectionrule resource. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyResources.customdetectionruleassociation">customdetectionruleassociation</a></code> | Builds an ARN for the customdetectionruleassociation resource. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyResources.detector">detector</a></code> | Builds an ARN for the detector resource. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyResources.filter">filter</a></code> | Builds an ARN for the filter resource. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyResources.ipset">ipset</a></code> | Builds an ARN for the ipset resource. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyResources.isValidCustomdetectionruleArn">isValidCustomdetectionruleArn</a></code> | Validates whether a string is a valid ARN for the customdetectionrule resource. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyResources.isValidCustomdetectionruleassociationArn">isValidCustomdetectionruleassociationArn</a></code> | Validates whether a string is a valid ARN for the customdetectionruleassociation resource. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyResources.isValidDetectorArn">isValidDetectorArn</a></code> | Validates whether a string is a valid ARN for the detector resource. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyResources.isValidFilterArn">isValidFilterArn</a></code> | Validates whether a string is a valid ARN for the filter resource. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyResources.isValidIpsetArn">isValidIpsetArn</a></code> | Validates whether a string is a valid ARN for the ipset resource. |
@@ -4117,6 +4768,8 @@ new guardduty.GuardDutyResources()
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyResources.isValidThreatintelsetArn">isValidThreatintelsetArn</a></code> | Validates whether a string is a valid ARN for the threatintelset resource. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyResources.isValidTrustedentitysetArn">isValidTrustedentitysetArn</a></code> | Validates whether a string is a valid ARN for the trustedentityset resource. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyResources.malwareprotectionplan">malwareprotectionplan</a></code> | Builds an ARN for the malwareprotectionplan resource. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyResources.parseCustomdetectionruleArn">parseCustomdetectionruleArn</a></code> | Parses a customdetectionrule ARN into its components. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyResources.parseCustomdetectionruleassociationArn">parseCustomdetectionruleassociationArn</a></code> | Parses a customdetectionruleassociation ARN into its components. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyResources.parseDetectorArn">parseDetectorArn</a></code> | Parses a detector ARN into its components. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyResources.parseFilterArn">parseFilterArn</a></code> | Parses a filter ARN into its components. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyResources.parseIpsetArn">parseIpsetArn</a></code> | Parses a ipset ARN into its components. |
@@ -4129,6 +4782,38 @@ new guardduty.GuardDutyResources()
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyResources.threatentityset">threatentityset</a></code> | Builds an ARN for the threatentityset resource. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyResources.threatintelset">threatintelset</a></code> | Builds an ARN for the threatintelset resource. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyResources.trustedentityset">trustedentityset</a></code> | Builds an ARN for the trustedentityset resource. |
+
+---
+
+##### `customdetectionrule` <a name="customdetectionrule" id="@cdk_utils/iam.guardduty.GuardDutyResources.customdetectionrule"></a>
+
+```typescript
+import { guardduty } from '@cdk_utils/iam'
+
+guardduty.GuardDutyResources.customdetectionrule(props: GuardDutyCustomdetectionruleArnProps)
+```
+
+Builds an ARN for the customdetectionrule resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.guardduty.GuardDutyResources.customdetectionrule.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleArnProps">GuardDutyCustomdetectionruleArnProps</a>
+
+---
+
+##### `customdetectionruleassociation` <a name="customdetectionruleassociation" id="@cdk_utils/iam.guardduty.GuardDutyResources.customdetectionruleassociation"></a>
+
+```typescript
+import { guardduty } from '@cdk_utils/iam'
+
+guardduty.GuardDutyResources.customdetectionruleassociation(props: GuardDutyCustomdetectionruleassociationArnProps)
+```
+
+Builds an ARN for the customdetectionruleassociation resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.guardduty.GuardDutyResources.customdetectionruleassociation.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.guardduty.GuardDutyCustomdetectionruleassociationArnProps">GuardDutyCustomdetectionruleassociationArnProps</a>
 
 ---
 
@@ -4177,6 +4862,38 @@ Builds an ARN for the ipset resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.guardduty.GuardDutyResources.ipset.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.guardduty.GuardDutyIpsetArnProps">GuardDutyIpsetArnProps</a>
+
+---
+
+##### `isValidCustomdetectionruleArn` <a name="isValidCustomdetectionruleArn" id="@cdk_utils/iam.guardduty.GuardDutyResources.isValidCustomdetectionruleArn"></a>
+
+```typescript
+import { guardduty } from '@cdk_utils/iam'
+
+guardduty.GuardDutyResources.isValidCustomdetectionruleArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the customdetectionrule resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.guardduty.GuardDutyResources.isValidCustomdetectionruleArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidCustomdetectionruleassociationArn` <a name="isValidCustomdetectionruleassociationArn" id="@cdk_utils/iam.guardduty.GuardDutyResources.isValidCustomdetectionruleassociationArn"></a>
+
+```typescript
+import { guardduty } from '@cdk_utils/iam'
+
+guardduty.GuardDutyResources.isValidCustomdetectionruleassociationArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the customdetectionruleassociation resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.guardduty.GuardDutyResources.isValidCustomdetectionruleassociationArn.parameter.arn"></a>
+
+- *Type:* string
 
 ---
 
@@ -4321,6 +5038,38 @@ Builds an ARN for the malwareprotectionplan resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.guardduty.GuardDutyResources.malwareprotectionplan.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.guardduty.GuardDutyMalwareprotectionplanArnProps">GuardDutyMalwareprotectionplanArnProps</a>
+
+---
+
+##### `parseCustomdetectionruleArn` <a name="parseCustomdetectionruleArn" id="@cdk_utils/iam.guardduty.GuardDutyResources.parseCustomdetectionruleArn"></a>
+
+```typescript
+import { guardduty } from '@cdk_utils/iam'
+
+guardduty.GuardDutyResources.parseCustomdetectionruleArn(arn: string)
+```
+
+Parses a customdetectionrule ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.guardduty.GuardDutyResources.parseCustomdetectionruleArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseCustomdetectionruleassociationArn` <a name="parseCustomdetectionruleassociationArn" id="@cdk_utils/iam.guardduty.GuardDutyResources.parseCustomdetectionruleassociationArn"></a>
+
+```typescript
+import { guardduty } from '@cdk_utils/iam'
+
+guardduty.GuardDutyResources.parseCustomdetectionruleassociationArn(arn: string)
+```
+
+Parses a customdetectionruleassociation ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.guardduty.GuardDutyResources.parseCustomdetectionruleassociationArn.parameter.arn"></a>
+
+- *Type:* string
 
 ---
 

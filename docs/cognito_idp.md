@@ -401,6 +401,7 @@ new cognito_idp.CognitoIdpActions()
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.AdminAddUserToGroup">AdminAddUserToGroup</a></code> | <code>string</code> | [Write] cognito-idp:AdminAddUserToGroup. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.AdminConfirmSignUp">AdminConfirmSignUp</a></code> | <code>string</code> | [Write] cognito-idp:AdminConfirmSignUp. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.AdminCreateUser">AdminCreateUser</a></code> | <code>string</code> | [Write] cognito-idp:AdminCreateUser. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.AdminDeleteSoftwareToken">AdminDeleteSoftwareToken</a></code> | <code>string</code> | [Write] cognito-idp:AdminDeleteSoftwareToken. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.AdminDeleteUser">AdminDeleteUser</a></code> | <code>string</code> | [Write] cognito-idp:AdminDeleteUser. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.AdminDeleteUserAttributes">AdminDeleteUserAttributes</a></code> | <code>string</code> | [Write] cognito-idp:AdminDeleteUserAttributes. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.AdminDisableProviderForUser">AdminDisableProviderForUser</a></code> | <code>string</code> | [Write] cognito-idp:AdminDisableProviderForUser. |
@@ -799,6 +800,18 @@ public readonly AdminCreateUser: string;
 - *Type:* string
 
 [Write] cognito-idp:AdminCreateUser.
+
+---
+
+##### `AdminDeleteSoftwareToken`<sup>Required</sup> <a name="AdminDeleteSoftwareToken" id="@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.AdminDeleteSoftwareToken"></a>
+
+```typescript
+public readonly AdminDeleteSoftwareToken: string;
+```
+
+- *Type:* string
+
+[Write] cognito-idp:AdminDeleteSoftwareToken.
 
 ---
 

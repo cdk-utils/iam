@@ -14,11 +14,18 @@ export class KinesisActions {
 
 	/** [Tagging] kinesis:AddTagsToStream */
 	static readonly AddTagsToStream = "kinesis:AddTagsToStream";
+	/** [Write] kinesis:AssociateStreamsWithChannel */
+	static readonly AssociateStreamsWithChannel =
+		"kinesis:AssociateStreamsWithChannel";
+	/** [Tagging] kinesis:CreateChannel */
+	static readonly CreateChannel = "kinesis:CreateChannel";
 	/** [Write] kinesis:CreateStream */
 	static readonly CreateStream = "kinesis:CreateStream";
 	/** [Write] kinesis:DecreaseStreamRetentionPeriod */
 	static readonly DecreaseStreamRetentionPeriod =
 		"kinesis:DecreaseStreamRetentionPeriod";
+	/** [Write] kinesis:DeleteChannel */
+	static readonly DeleteChannel = "kinesis:DeleteChannel";
 	/** [Write] kinesis:DeleteResourcePolicy */
 	static readonly DeleteResourcePolicy = "kinesis:DeleteResourcePolicy";
 	/** [Write] kinesis:DeleteStream */
@@ -27,6 +34,8 @@ export class KinesisActions {
 	static readonly DeregisterStreamConsumer = "kinesis:DeregisterStreamConsumer";
 	/** [Read] kinesis:DescribeAccountSettings */
 	static readonly DescribeAccountSettings = "kinesis:DescribeAccountSettings";
+	/** [Read] kinesis:DescribeChannel */
+	static readonly DescribeChannel = "kinesis:DescribeChannel";
 	/** [Read] kinesis:DescribeLimits */
 	static readonly DescribeLimits = "kinesis:DescribeLimits";
 	/** [Read] kinesis:DescribeStream */
@@ -51,6 +60,8 @@ export class KinesisActions {
 		"kinesis:IncreaseStreamRetentionPeriod";
 	/** [Write] kinesis:InjectApiError */
 	static readonly InjectApiError = "kinesis:InjectApiError";
+	/** [List] kinesis:ListChannels */
+	static readonly ListChannels = "kinesis:ListChannels";
 	/** [List] kinesis:ListShards */
 	static readonly ListShards = "kinesis:ListShards";
 	/** [List] kinesis:ListStreamConsumers */
@@ -87,6 +98,8 @@ export class KinesisActions {
 	static readonly UntagResource = "kinesis:UntagResource";
 	/** [Write] kinesis:UpdateAccountSettings */
 	static readonly UpdateAccountSettings = "kinesis:UpdateAccountSettings";
+	/** [Write] kinesis:UpdateChannel */
+	static readonly UpdateChannel = "kinesis:UpdateChannel";
 	/** [Write] kinesis:UpdateMaxRecordSize */
 	static readonly UpdateMaxRecordSize = "kinesis:UpdateMaxRecordSize";
 	/** [Write] kinesis:UpdateShardCount */
@@ -100,6 +113,7 @@ export class KinesisActions {
 	/** All read-level actions. */
 	static readonly AllReadActions: string[] = [
 		KinesisActions.DescribeAccountSettings,
+		KinesisActions.DescribeChannel,
 		KinesisActions.DescribeLimits,
 		KinesisActions.DescribeStream,
 		KinesisActions.DescribeStreamConsumer,
@@ -113,8 +127,10 @@ export class KinesisActions {
 	];
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
+		KinesisActions.AssociateStreamsWithChannel,
 		KinesisActions.CreateStream,
 		KinesisActions.DecreaseStreamRetentionPeriod,
+		KinesisActions.DeleteChannel,
 		KinesisActions.DeleteResourcePolicy,
 		KinesisActions.DeleteStream,
 		KinesisActions.DeregisterStreamConsumer,
@@ -131,6 +147,7 @@ export class KinesisActions {
 		KinesisActions.StartStreamEncryption,
 		KinesisActions.StopStreamEncryption,
 		KinesisActions.UpdateAccountSettings,
+		KinesisActions.UpdateChannel,
 		KinesisActions.UpdateMaxRecordSize,
 		KinesisActions.UpdateShardCount,
 		KinesisActions.UpdateStreamMode,
@@ -138,6 +155,7 @@ export class KinesisActions {
 	];
 	/** All list-level actions. */
 	static readonly AllListActions: string[] = [
+		KinesisActions.ListChannels,
 		KinesisActions.ListShards,
 		KinesisActions.ListStreamConsumers,
 		KinesisActions.ListStreams,
@@ -147,10 +165,39 @@ export class KinesisActions {
 	/** All tagging-level actions. */
 	static readonly AllTaggingActions: string[] = [
 		KinesisActions.AddTagsToStream,
+		KinesisActions.CreateChannel,
 		KinesisActions.RemoveTagsFromStream,
 		KinesisActions.TagResource,
 		KinesisActions.UntagResource,
 	];
+}
+
+/**
+ * Properties for building a channel ARN.
+ */
+export interface KinesisChannelArnProps {
+	/** The ChannelId component of the ARN. */
+	readonly channelId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a channel ARN.
+ */
+export interface KinesisChannelArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ChannelId component. */
+	readonly channelId: string;
 }
 
 /**
@@ -249,6 +296,8 @@ export interface KinesisStreamArnComponents {
 	readonly streamName: string;
 }
 
+const ChannelArnRegex =
+	/^arn:(?<partition>[^:]+):kinesis:(?<region>[^:]*):(?<account>[^:]*):channel\/(?<channelId>[^:/?]+)$/;
 const ConsumerArnRegex =
 	/^arn:(?<partition>[^:]+):kinesis:(?<region>[^:]*):(?<account>[^:]*):(?<streamType>[^:/?]+)\/(?<streamName>[^:/?]+)\/consumer\/(?<consumerName>[^:/?]+):(?<consumerCreationTimpstamp>[^:/?]+)$/;
 const KMSKeyArnRegex =
@@ -260,6 +309,37 @@ const StreamArnRegex =
  * ARN builders, validators, and parsers for kinesis resources.
  */
 export class KinesisResources {
+	/**
+	 * Builds an ARN for the channel resource.
+	 */
+	static channel(props: KinesisChannelArnProps): string {
+		return `arn:${props.partition ?? "aws"}:kinesis:${props.region ?? "*"}:${props.account ?? "*"}:channel/${props.channelId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the channel resource.
+	 */
+	static isValidChannelArn(arn: string): boolean {
+		return ChannelArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a channel ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseChannelArn(arn: string): KinesisChannelArnComponents {
+		const match = ChannelArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid channel ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			channelId: match.groups!.channelId,
+		};
+	}
+
 	/**
 	 * Builds an ARN for the consumer resource.
 	 */
@@ -365,6 +445,8 @@ export class KinesisOperations {
 	static readonly AddTagsToStream: string[] = ["kinesis:AddTagsToStream"];
 	/** IAM actions required for the CreateChannel API call. */
 	static readonly CreateChannel: string[] = [
+		"kinesis:AssociateStreamsWithChannel",
+		"kinesis:CreateChannel",
 		"iam:PassRole",
 		"kinesis:TagResource",
 	];
@@ -378,7 +460,7 @@ export class KinesisOperations {
 		"kinesis:DecreaseStreamRetentionPeriod",
 	];
 	/** IAM actions required for the DeleteChannel API call. */
-	static readonly DeleteChannel: string[] = [];
+	static readonly DeleteChannel: string[] = ["kinesis:DeleteChannel"];
 	/** IAM actions required for the DeleteResourcePolicy API call. */
 	static readonly DeleteResourcePolicy: string[] = [
 		"kinesis:DeleteResourcePolicy",
@@ -394,7 +476,7 @@ export class KinesisOperations {
 		"kinesis:DescribeAccountSettings",
 	];
 	/** IAM actions required for the DescribeChannel API call. */
-	static readonly DescribeChannel: string[] = [];
+	static readonly DescribeChannel: string[] = ["kinesis:DescribeChannel"];
 	/** IAM actions required for the DescribeLimits API call. */
 	static readonly DescribeLimits: string[] = ["kinesis:DescribeLimits"];
 	/** IAM actions required for the DescribeStream API call. */
@@ -426,7 +508,7 @@ export class KinesisOperations {
 		"kinesis:IncreaseStreamRetentionPeriod",
 	];
 	/** IAM actions required for the ListChannels API call. */
-	static readonly ListChannels: string[] = [];
+	static readonly ListChannels: string[] = ["kinesis:ListChannels"];
 	/** IAM actions required for the ListShards API call. */
 	static readonly ListShards: string[] = ["kinesis:ListShards"];
 	/** IAM actions required for the ListStreamConsumers API call. */
@@ -479,7 +561,7 @@ export class KinesisOperations {
 		"kinesis:UpdateAccountSettings",
 	];
 	/** IAM actions required for the UpdateChannel API call. */
-	static readonly UpdateChannel: string[] = [];
+	static readonly UpdateChannel: string[] = ["kinesis:UpdateChannel"];
 	/** IAM actions required for the UpdateMaxRecordSize API call. */
 	static readonly UpdateMaxRecordSize: string[] = [
 		"kinesis:UpdateMaxRecordSize",

@@ -19,6 +19,12 @@ export class GuardDutyActions {
 	static readonly AcceptInvitation = "guardduty:AcceptInvitation";
 	/** [Write] guardduty:ArchiveFindings */
 	static readonly ArchiveFindings = "guardduty:ArchiveFindings";
+	/** [Write] guardduty:CreateCustomDetectionRuleAssociation */
+	static readonly CreateCustomDetectionRuleAssociation =
+		"guardduty:CreateCustomDetectionRuleAssociation";
+	/** [Write] guardduty:CreateCustomDetectionRuleOrgConfiguration */
+	static readonly CreateCustomDetectionRuleOrgConfiguration =
+		"guardduty:CreateCustomDetectionRuleOrgConfiguration";
 	/** [Write] guardduty:CreateDetector */
 	static readonly CreateDetector = "guardduty:CreateDetector";
 	/** [Write] guardduty:CreateFilter */
@@ -45,6 +51,12 @@ export class GuardDutyActions {
 	static readonly CreateTrustedEntitySet = "guardduty:CreateTrustedEntitySet";
 	/** [Write] guardduty:DeclineInvitations */
 	static readonly DeclineInvitations = "guardduty:DeclineInvitations";
+	/** [Write] guardduty:DeleteCustomDetectionRuleAssociation */
+	static readonly DeleteCustomDetectionRuleAssociation =
+		"guardduty:DeleteCustomDetectionRuleAssociation";
+	/** [Write] guardduty:DeleteCustomDetectionRuleOrgConfiguration */
+	static readonly DeleteCustomDetectionRuleOrgConfiguration =
+		"guardduty:DeleteCustomDetectionRuleOrgConfiguration";
 	/** [Write] guardduty:DeleteDetector */
 	static readonly DeleteDetector = "guardduty:DeleteDetector";
 	/** [Write] guardduty:DeleteFilter */
@@ -95,6 +107,15 @@ export class GuardDutyActions {
 	/** [Read] guardduty:GetCoverageStatistics */
 	static readonly actionGetCoverageStatistics =
 		"guardduty:GetCoverageStatistics";
+	/** [Read] guardduty:GetCustomDetectionRule */
+	static readonly actionGetCustomDetectionRule =
+		"guardduty:GetCustomDetectionRule";
+	/** [Read] guardduty:GetCustomDetectionRuleAssociation */
+	static readonly actionGetCustomDetectionRuleAssociation =
+		"guardduty:GetCustomDetectionRuleAssociation";
+	/** [Read] guardduty:GetCustomDetectionRuleOrgConfiguration */
+	static readonly actionGetCustomDetectionRuleOrgConfiguration =
+		"guardduty:GetCustomDetectionRuleOrgConfiguration";
 	/** [Read] guardduty:GetDetector */
 	static readonly actionGetDetector = "guardduty:GetDetector";
 	/** [Read] guardduty:GetFilter */
@@ -142,6 +163,15 @@ export class GuardDutyActions {
 	static readonly InviteMembers = "guardduty:InviteMembers";
 	/** [List] guardduty:ListCoverage */
 	static readonly ListCoverage = "guardduty:ListCoverage";
+	/** [List] guardduty:ListCustomDetectionRuleAssociations */
+	static readonly ListCustomDetectionRuleAssociations =
+		"guardduty:ListCustomDetectionRuleAssociations";
+	/** [List] guardduty:ListCustomDetectionRuleOrgConfigurations */
+	static readonly ListCustomDetectionRuleOrgConfigurations =
+		"guardduty:ListCustomDetectionRuleOrgConfigurations";
+	/** [List] guardduty:ListCustomDetectionRules */
+	static readonly ListCustomDetectionRules =
+		"guardduty:ListCustomDetectionRules";
 	/** [List] guardduty:ListDetectors */
 	static readonly ListDetectors = "guardduty:ListDetectors";
 	/** [List] guardduty:ListFilters */
@@ -191,6 +221,12 @@ export class GuardDutyActions {
 	static readonly UnarchiveFindings = "guardduty:UnarchiveFindings";
 	/** [Tagging] guardduty:UntagResource */
 	static readonly UntagResource = "guardduty:UntagResource";
+	/** [Write] guardduty:UpdateCustomDetectionRuleAssociation */
+	static readonly UpdateCustomDetectionRuleAssociation =
+		"guardduty:UpdateCustomDetectionRuleAssociation";
+	/** [Write] guardduty:UpdateCustomDetectionRuleOrgConfiguration */
+	static readonly UpdateCustomDetectionRuleOrgConfiguration =
+		"guardduty:UpdateCustomDetectionRuleOrgConfiguration";
 	/** [Write] guardduty:UpdateDetector */
 	static readonly UpdateDetector = "guardduty:UpdateDetector";
 	/** [Write] guardduty:UpdateFilter */
@@ -227,6 +263,9 @@ export class GuardDutyActions {
 		GuardDutyActions.DescribePublishingDestination,
 		GuardDutyActions.actionGetAdministratorAccount,
 		GuardDutyActions.actionGetCoverageStatistics,
+		GuardDutyActions.actionGetCustomDetectionRule,
+		GuardDutyActions.actionGetCustomDetectionRuleAssociation,
+		GuardDutyActions.actionGetCustomDetectionRuleOrgConfiguration,
 		GuardDutyActions.actionGetDetector,
 		GuardDutyActions.actionGetFilter,
 		GuardDutyActions.actionGetFindings,
@@ -253,6 +292,8 @@ export class GuardDutyActions {
 		GuardDutyActions.AcceptAdministratorInvitation,
 		GuardDutyActions.AcceptInvitation,
 		GuardDutyActions.ArchiveFindings,
+		GuardDutyActions.CreateCustomDetectionRuleAssociation,
+		GuardDutyActions.CreateCustomDetectionRuleOrgConfiguration,
 		GuardDutyActions.CreateDetector,
 		GuardDutyActions.CreateFilter,
 		GuardDutyActions.CreateIPSet,
@@ -265,6 +306,8 @@ export class GuardDutyActions {
 		GuardDutyActions.CreateThreatIntelSet,
 		GuardDutyActions.CreateTrustedEntitySet,
 		GuardDutyActions.DeclineInvitations,
+		GuardDutyActions.DeleteCustomDetectionRuleAssociation,
+		GuardDutyActions.DeleteCustomDetectionRuleOrgConfiguration,
 		GuardDutyActions.DeleteDetector,
 		GuardDutyActions.DeleteFilter,
 		GuardDutyActions.DeleteIPSet,
@@ -287,6 +330,8 @@ export class GuardDutyActions {
 		GuardDutyActions.StartMonitoringMembers,
 		GuardDutyActions.StopMonitoringMembers,
 		GuardDutyActions.UnarchiveFindings,
+		GuardDutyActions.UpdateCustomDetectionRuleAssociation,
+		GuardDutyActions.UpdateCustomDetectionRuleOrgConfiguration,
 		GuardDutyActions.UpdateDetector,
 		GuardDutyActions.UpdateFilter,
 		GuardDutyActions.UpdateFindingsFeedback,
@@ -303,6 +348,9 @@ export class GuardDutyActions {
 	/** All list-level actions. */
 	static readonly AllListActions: string[] = [
 		GuardDutyActions.ListCoverage,
+		GuardDutyActions.ListCustomDetectionRuleAssociations,
+		GuardDutyActions.ListCustomDetectionRuleOrgConfigurations,
+		GuardDutyActions.ListCustomDetectionRules,
 		GuardDutyActions.ListDetectors,
 		GuardDutyActions.ListFilters,
 		GuardDutyActions.ListFindings,
@@ -325,6 +373,66 @@ export class GuardDutyActions {
 		GuardDutyActions.TagResource,
 		GuardDutyActions.UntagResource,
 	];
+}
+
+/**
+ * Properties for building a customdetectionrule ARN.
+ */
+export interface GuardDutyCustomdetectionruleArnProps {
+	/** The RuleId component of the ARN. */
+	readonly ruleId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a customdetectionrule ARN.
+ */
+export interface GuardDutyCustomdetectionruleArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RuleId component. */
+	readonly ruleId: string;
+}
+
+/**
+ * Properties for building a customdetectionruleassociation ARN.
+ */
+export interface GuardDutyCustomdetectionruleassociationArnProps {
+	/** The RuleId component of the ARN. */
+	readonly ruleId: string;
+	/** The AssociationId component of the ARN. */
+	readonly associationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a customdetectionruleassociation ARN.
+ */
+export interface GuardDutyCustomdetectionruleassociationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RuleId component. */
+	readonly ruleId: string;
+	/** The AssociationId component. */
+	readonly associationId: string;
 }
 
 /**
@@ -575,6 +683,10 @@ export interface GuardDutyTrustedentitysetArnComponents {
 	readonly trustedEntitySetId: string;
 }
 
+const CustomdetectionruleArnRegex =
+	/^arn:(?<partition>[^:]+):guardduty::aws:detection-rule\/custom\/(?<ruleId>[^:/?]+)$/;
+const CustomdetectionruleassociationArnRegex =
+	/^arn:(?<partition>[^:]+):guardduty:(?<region>[^:]*):(?<account>[^:]*):detection-rule\/custom\/(?<ruleId>[^:/?]+)\/association\/(?<associationId>[^:/?]+)$/;
 const DetectorArnRegex =
 	/^arn:(?<partition>[^:]+):guardduty:(?<region>[^:]*):(?<account>[^:]*):detector\/(?<detectorId>[^:/?]+)$/;
 const FilterArnRegex =
@@ -596,6 +708,77 @@ const TrustedentitysetArnRegex =
  * ARN builders, validators, and parsers for guardduty resources.
  */
 export class GuardDutyResources {
+	/**
+	 * Builds an ARN for the customdetectionrule resource.
+	 */
+	static customdetectionrule(
+		props: GuardDutyCustomdetectionruleArnProps,
+	): string {
+		return `arn:${props.partition ?? "aws"}:guardduty::aws:detection-rule/custom/${props.ruleId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the customdetectionrule resource.
+	 */
+	static isValidCustomdetectionruleArn(arn: string): boolean {
+		return CustomdetectionruleArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a customdetectionrule ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseCustomdetectionruleArn(
+		arn: string,
+	): GuardDutyCustomdetectionruleArnComponents {
+		const match = CustomdetectionruleArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid customdetectionrule ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			ruleId: match.groups!.ruleId,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the customdetectionruleassociation resource.
+	 */
+	static customdetectionruleassociation(
+		props: GuardDutyCustomdetectionruleassociationArnProps,
+	): string {
+		return `arn:${props.partition ?? "aws"}:guardduty:${props.region ?? "*"}:${props.account ?? "*"}:detection-rule/custom/${props.ruleId}/association/${props.associationId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the customdetectionruleassociation resource.
+	 */
+	static isValidCustomdetectionruleassociationArn(arn: string): boolean {
+		return CustomdetectionruleassociationArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a customdetectionruleassociation ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseCustomdetectionruleassociationArn(
+		arn: string,
+	): GuardDutyCustomdetectionruleassociationArnComponents {
+		const match = CustomdetectionruleassociationArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid customdetectionruleassociation ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			ruleId: match.groups!.ruleId,
+			associationId: match.groups!.associationId,
+		};
+	}
+
 	/**
 	 * Builds an ARN for the detector resource.
 	 */
@@ -877,6 +1060,15 @@ export class GuardDutyOperations {
 	static readonly AcceptInvitation: string[] = ["guardduty:AcceptInvitation"];
 	/** IAM actions required for the ArchiveFindings API call. */
 	static readonly ArchiveFindings: string[] = ["guardduty:ArchiveFindings"];
+	/** IAM actions required for the CreateCustomDetectionRuleAssociation API call. */
+	static readonly CreateCustomDetectionRuleAssociation: string[] = [
+		"guardduty:CreateCustomDetectionRuleAssociation",
+		"guardduty:TagResource",
+	];
+	/** IAM actions required for the CreateCustomDetectionRuleOrgConfiguration API call. */
+	static readonly CreateCustomDetectionRuleOrgConfiguration: string[] = [
+		"guardduty:CreateCustomDetectionRuleOrgConfiguration",
+	];
 	/** IAM actions required for the CreateDetector API call. */
 	static readonly CreateDetector: string[] = [
 		"guardduty:CreateDetector",
@@ -931,6 +1123,14 @@ export class GuardDutyOperations {
 	/** IAM actions required for the DeclineInvitations API call. */
 	static readonly DeclineInvitations: string[] = [
 		"guardduty:DeclineInvitations",
+	];
+	/** IAM actions required for the DeleteCustomDetectionRuleAssociation API call. */
+	static readonly DeleteCustomDetectionRuleAssociation: string[] = [
+		"guardduty:DeleteCustomDetectionRuleAssociation",
+	];
+	/** IAM actions required for the DeleteCustomDetectionRuleOrgConfiguration API call. */
+	static readonly DeleteCustomDetectionRuleOrgConfiguration: string[] = [
+		"guardduty:DeleteCustomDetectionRuleOrgConfiguration",
 	];
 	/** IAM actions required for the DeleteDetector API call. */
 	static readonly DeleteDetector: string[] = ["guardduty:DeleteDetector"];
@@ -1002,6 +1202,18 @@ export class GuardDutyOperations {
 	static readonly opGetCoverageStatistics: string[] = [
 		"guardduty:GetCoverageStatistics",
 	];
+	/** IAM actions required for the GetCustomDetectionRule API call. */
+	static readonly opGetCustomDetectionRule: string[] = [
+		"guardduty:GetCustomDetectionRule",
+	];
+	/** IAM actions required for the GetCustomDetectionRuleAssociation API call. */
+	static readonly opGetCustomDetectionRuleAssociation: string[] = [
+		"guardduty:GetCustomDetectionRuleAssociation",
+	];
+	/** IAM actions required for the GetCustomDetectionRuleOrgConfiguration API call. */
+	static readonly opGetCustomDetectionRuleOrgConfiguration: string[] = [
+		"guardduty:GetCustomDetectionRuleOrgConfiguration",
+	];
 	/** IAM actions required for the GetDetector API call. */
 	static readonly opGetDetector: string[] = ["guardduty:GetDetector"];
 	/** IAM actions required for the GetFilter API call. */
@@ -1066,6 +1278,18 @@ export class GuardDutyOperations {
 	static readonly InviteMembers: string[] = ["guardduty:InviteMembers"];
 	/** IAM actions required for the ListCoverage API call. */
 	static readonly ListCoverage: string[] = ["guardduty:ListCoverage"];
+	/** IAM actions required for the ListCustomDetectionRuleAssociations API call. */
+	static readonly ListCustomDetectionRuleAssociations: string[] = [
+		"guardduty:ListCustomDetectionRuleAssociations",
+	];
+	/** IAM actions required for the ListCustomDetectionRuleOrgConfigurations API call. */
+	static readonly ListCustomDetectionRuleOrgConfigurations: string[] = [
+		"guardduty:ListCustomDetectionRuleOrgConfigurations",
+	];
+	/** IAM actions required for the ListCustomDetectionRules API call. */
+	static readonly ListCustomDetectionRules: string[] = [
+		"guardduty:ListCustomDetectionRules",
+	];
 	/** IAM actions required for the ListDetectors API call. */
 	static readonly ListDetectors: string[] = ["guardduty:ListDetectors"];
 	/** IAM actions required for the ListFilters API call. */
@@ -1135,6 +1359,12 @@ export class GuardDutyOperations {
 	static readonly UnarchiveFindings: string[] = ["guardduty:UnarchiveFindings"];
 	/** IAM actions required for the UntagResource API call. */
 	static readonly UntagResource: string[] = ["guardduty:UntagResource"];
+	/** IAM actions required for the UpdateCustomDetectionRuleAssociation API call. */
+	static readonly UpdateCustomDetectionRuleAssociation: string[] = [
+		"guardduty:UpdateCustomDetectionRuleAssociation",
+	];
+	/** IAM actions required for the UpdateCustomDetectionRuleOrgConfiguration API call. */
+	static readonly UpdateCustomDetectionRuleOrgConfiguration: string[] = [];
 	/** IAM actions required for the UpdateDetector API call. */
 	static readonly UpdateDetector: string[] = ["guardduty:UpdateDetector"];
 	/** IAM actions required for the UpdateFilter API call. */
@@ -1184,6 +1414,9 @@ export class GuardDutyOperations {
  * Condition key constants and builders for guardduty.
  */
 export class GuardDutyConditions {
+	/** Condition keys applicable to the CreateCustomDetectionRuleAssociation action. */
+	static readonly CreateCustomDetectionRuleAssociationConditionKeys: string[] =
+		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
 	/** Condition keys applicable to the CreateDetector action. */
 	static readonly CreateDetectorConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",

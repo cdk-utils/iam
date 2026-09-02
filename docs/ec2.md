@@ -4979,6 +4979,126 @@ Defaults to "aws".
 
 ---
 
+### EC2IpamInternetRegistryAssociationArnComponents <a name="EC2IpamInternetRegistryAssociationArnComponents" id="@cdk_utils/iam.ec2.EC2IpamInternetRegistryAssociationArnComponents"></a>
+
+Parsed components of a ipam-internet-registry-association ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.ec2.EC2IpamInternetRegistryAssociationArnComponents.Initializer"></a>
+
+```typescript
+import { ec2 } from '@cdk_utils/iam'
+
+const eC2IpamInternetRegistryAssociationArnComponents: ec2.EC2IpamInternetRegistryAssociationArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.ec2.EC2IpamInternetRegistryAssociationArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2IpamInternetRegistryAssociationArnComponents.property.ipamInternetRegistryAssociationId">ipamInternetRegistryAssociationId</a></code> | <code>string</code> | The IpamInternetRegistryAssociationId component. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2IpamInternetRegistryAssociationArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.ec2.EC2IpamInternetRegistryAssociationArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `ipamInternetRegistryAssociationId`<sup>Required</sup> <a name="ipamInternetRegistryAssociationId" id="@cdk_utils/iam.ec2.EC2IpamInternetRegistryAssociationArnComponents.property.ipamInternetRegistryAssociationId"></a>
+
+```typescript
+public readonly ipamInternetRegistryAssociationId: string;
+```
+
+- *Type:* string
+
+The IpamInternetRegistryAssociationId component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.ec2.EC2IpamInternetRegistryAssociationArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+### EC2IpamInternetRegistryAssociationArnProps <a name="EC2IpamInternetRegistryAssociationArnProps" id="@cdk_utils/iam.ec2.EC2IpamInternetRegistryAssociationArnProps"></a>
+
+Properties for building a ipam-internet-registry-association ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.ec2.EC2IpamInternetRegistryAssociationArnProps.Initializer"></a>
+
+```typescript
+import { ec2 } from '@cdk_utils/iam'
+
+const eC2IpamInternetRegistryAssociationArnProps: ec2.EC2IpamInternetRegistryAssociationArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.ec2.EC2IpamInternetRegistryAssociationArnProps.property.ipamInternetRegistryAssociationId">ipamInternetRegistryAssociationId</a></code> | <code>string</code> | The IpamInternetRegistryAssociationId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2IpamInternetRegistryAssociationArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2IpamInternetRegistryAssociationArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+
+---
+
+##### `ipamInternetRegistryAssociationId`<sup>Required</sup> <a name="ipamInternetRegistryAssociationId" id="@cdk_utils/iam.ec2.EC2IpamInternetRegistryAssociationArnProps.property.ipamInternetRegistryAssociationId"></a>
+
+```typescript
+public readonly ipamInternetRegistryAssociationId: string;
+```
+
+- *Type:* string
+
+The IpamInternetRegistryAssociationId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.ec2.EC2IpamInternetRegistryAssociationArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.ec2.EC2IpamInternetRegistryAssociationArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
 ### EC2IpamPolicyArnComponents <a name="EC2IpamPolicyArnComponents" id="@cdk_utils/iam.ec2.EC2IpamPolicyArnComponents"></a>
 
 Parsed components of a ipam-policy ARN.
@@ -16513,6 +16633,9 @@ new ec2.EC2Actions()
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.actionGetIpamDiscoveredAccounts">actionGetIpamDiscoveredAccounts</a></code> | <code>string</code> | [Read] ec2:GetIpamDiscoveredAccounts. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.actionGetIpamDiscoveredPublicAddresses">actionGetIpamDiscoveredPublicAddresses</a></code> | <code>string</code> | [Read] ec2:GetIpamDiscoveredPublicAddresses. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.actionGetIpamDiscoveredResourceCidrs">actionGetIpamDiscoveredResourceCidrs</a></code> | <code>string</code> | [Read] ec2:GetIpamDiscoveredResourceCidrs. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.actionGetIpamDiscoveredRoutes">actionGetIpamDiscoveredRoutes</a></code> | <code>string</code> | [Read] ec2:GetIpamDiscoveredRoutes. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.actionGetIpamInternetRegistryAssociationAsns">actionGetIpamInternetRegistryAssociationAsns</a></code> | <code>string</code> | [Read] ec2:GetIpamInternetRegistryAssociationAsns. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.actionGetIpamInternetRegistryAssociationCidrs">actionGetIpamInternetRegistryAssociationCidrs</a></code> | <code>string</code> | [Read] ec2:GetIpamInternetRegistryAssociationCidrs. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.actionGetIpamPolicyAllocationRules">actionGetIpamPolicyAllocationRules</a></code> | <code>string</code> | [List] ec2:GetIpamPolicyAllocationRules. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.actionGetIpamPolicyOrganizationTargets">actionGetIpamPolicyOrganizationTargets</a></code> | <code>string</code> | [List] ec2:GetIpamPolicyOrganizationTargets. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.actionGetIpamPoolAllocations">actionGetIpamPoolAllocations</a></code> | <code>string</code> | [List] ec2:GetIpamPoolAllocations. |
@@ -16521,6 +16644,10 @@ new ec2.EC2Actions()
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.actionGetIpamPrefixListResolverVersionEntries">actionGetIpamPrefixListResolverVersionEntries</a></code> | <code>string</code> | [Read] ec2:GetIpamPrefixListResolverVersionEntries. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.actionGetIpamPrefixListResolverVersions">actionGetIpamPrefixListResolverVersions</a></code> | <code>string</code> | [Read] ec2:GetIpamPrefixListResolverVersions. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.actionGetIpamResourceCidrs">actionGetIpamResourceCidrs</a></code> | <code>string</code> | [Read] ec2:GetIpamResourceCidrs. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.actionGetIpamRouteOriginAuthorizations">actionGetIpamRouteOriginAuthorizations</a></code> | <code>string</code> | [Read] ec2:GetIpamRouteOriginAuthorizations. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.actionGetIpamRouteProtectionFindings">actionGetIpamRouteProtectionFindings</a></code> | <code>string</code> | [Read] ec2:GetIpamRouteProtectionFindings. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.actionGetIpamRoutingPolicyRegistrationDeltas">actionGetIpamRoutingPolicyRegistrationDeltas</a></code> | <code>string</code> | [Read] ec2:GetIpamRoutingPolicyRegistrationDeltas. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.actionGetIpamRoutingPolicyRegistrations">actionGetIpamRoutingPolicyRegistrations</a></code> | <code>string</code> | [Read] ec2:GetIpamRoutingPolicyRegistrations. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.actionGetLaunchTemplateData">actionGetLaunchTemplateData</a></code> | <code>string</code> | [Read] ec2:GetLaunchTemplateData. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.actionGetManagedPrefixListAssociations">actionGetManagedPrefixListAssociations</a></code> | <code>string</code> | [Read] ec2:GetManagedPrefixListAssociations. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.actionGetManagedPrefixListEntries">actionGetManagedPrefixListEntries</a></code> | <code>string</code> | [Read] ec2:GetManagedPrefixListEntries. |
@@ -16600,6 +16727,7 @@ new ec2.EC2Actions()
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.AuthorizeClientVpnIngress">AuthorizeClientVpnIngress</a></code> | <code>string</code> | [Write] ec2:AuthorizeClientVpnIngress. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.AuthorizeSecurityGroupEgress">AuthorizeSecurityGroupEgress</a></code> | <code>string</code> | [Write] ec2:AuthorizeSecurityGroupEgress. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.AuthorizeSecurityGroupIngress">AuthorizeSecurityGroupIngress</a></code> | <code>string</code> | [Write] ec2:AuthorizeSecurityGroupIngress. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.BatchModifyIpamRoutingPolicyRegistrations">BatchModifyIpamRoutingPolicyRegistrations</a></code> | <code>string</code> | [Write] ec2:BatchModifyIpamRoutingPolicyRegistrations. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.BundleInstance">BundleInstance</a></code> | <code>string</code> | [Write] ec2:BundleInstance. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.CancelBundleTask">CancelBundleTask</a></code> | <code>string</code> | [Write] ec2:CancelBundleTask. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.CancelCapacityReservation">CancelCapacityReservation</a></code> | <code>string</code> | [Write] ec2:CancelCapacityReservation. |
@@ -16647,11 +16775,13 @@ new ec2.EC2Actions()
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.CreateInterruptibleCapacityReservationAllocation">CreateInterruptibleCapacityReservationAllocation</a></code> | <code>string</code> | [Write] ec2:CreateInterruptibleCapacityReservationAllocation. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.CreateIpam">CreateIpam</a></code> | <code>string</code> | [Write] ec2:CreateIpam. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.CreateIpamExternalResourceVerificationToken">CreateIpamExternalResourceVerificationToken</a></code> | <code>string</code> | [Write] ec2:CreateIpamExternalResourceVerificationToken. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.CreateIpamInternetRegistryAssociation">CreateIpamInternetRegistryAssociation</a></code> | <code>string</code> | [Write] ec2:CreateIpamInternetRegistryAssociation. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.CreateIpamPolicy">CreateIpamPolicy</a></code> | <code>string</code> | [Write] ec2:CreateIpamPolicy. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.CreateIpamPool">CreateIpamPool</a></code> | <code>string</code> | [Write] ec2:CreateIpamPool. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.CreateIpamPrefixListResolver">CreateIpamPrefixListResolver</a></code> | <code>string</code> | [Write] ec2:CreateIpamPrefixListResolver. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.CreateIpamPrefixListResolverTarget">CreateIpamPrefixListResolverTarget</a></code> | <code>string</code> | [Write] ec2:CreateIpamPrefixListResolverTarget. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.CreateIpamResourceDiscovery">CreateIpamResourceDiscovery</a></code> | <code>string</code> | [Write] ec2:CreateIpamResourceDiscovery. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.CreateIpamRoutingPolicyRegistration">CreateIpamRoutingPolicyRegistration</a></code> | <code>string</code> | [Write] ec2:CreateIpamRoutingPolicyRegistration. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.CreateIpamScope">CreateIpamScope</a></code> | <code>string</code> | [Write] ec2:CreateIpamScope. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.CreateKeyPair">CreateKeyPair</a></code> | <code>string</code> | [Write] ec2:CreateKeyPair. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.CreateLaunchTemplate">CreateLaunchTemplate</a></code> | <code>string</code> | [Write] ec2:CreateLaunchTemplate. |
@@ -16747,11 +16877,13 @@ new ec2.EC2Actions()
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.DeleteInternetGateway">DeleteInternetGateway</a></code> | <code>string</code> | [Write] ec2:DeleteInternetGateway. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.DeleteIpam">DeleteIpam</a></code> | <code>string</code> | [Write] ec2:DeleteIpam. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.DeleteIpamExternalResourceVerificationToken">DeleteIpamExternalResourceVerificationToken</a></code> | <code>string</code> | [Write] ec2:DeleteIpamExternalResourceVerificationToken. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.DeleteIpamInternetRegistryAssociation">DeleteIpamInternetRegistryAssociation</a></code> | <code>string</code> | [Write] ec2:DeleteIpamInternetRegistryAssociation. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.DeleteIpamPolicy">DeleteIpamPolicy</a></code> | <code>string</code> | [Write] ec2:DeleteIpamPolicy. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.DeleteIpamPool">DeleteIpamPool</a></code> | <code>string</code> | [Write] ec2:DeleteIpamPool. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.DeleteIpamPrefixListResolver">DeleteIpamPrefixListResolver</a></code> | <code>string</code> | [Write] ec2:DeleteIpamPrefixListResolver. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.DeleteIpamPrefixListResolverTarget">DeleteIpamPrefixListResolverTarget</a></code> | <code>string</code> | [Write] ec2:DeleteIpamPrefixListResolverTarget. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.DeleteIpamResourceDiscovery">DeleteIpamResourceDiscovery</a></code> | <code>string</code> | [Write] ec2:DeleteIpamResourceDiscovery. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.DeleteIpamRoutingPolicyRegistration">DeleteIpamRoutingPolicyRegistration</a></code> | <code>string</code> | [Write] ec2:DeleteIpamRoutingPolicyRegistration. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.DeleteIpamScope">DeleteIpamScope</a></code> | <code>string</code> | [Write] ec2:DeleteIpamScope. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.DeleteKeyPair">DeleteKeyPair</a></code> | <code>string</code> | [Write] ec2:DeleteKeyPair. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.DeleteLaunchTemplate">DeleteLaunchTemplate</a></code> | <code>string</code> | [Write] ec2:DeleteLaunchTemplate. |
@@ -16835,6 +16967,7 @@ new ec2.EC2Actions()
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.DeregisterTransitGatewayMulticastGroupMembers">DeregisterTransitGatewayMulticastGroupMembers</a></code> | <code>string</code> | [Write] ec2:DeregisterTransitGatewayMulticastGroupMembers. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.DeregisterTransitGatewayMulticastGroupSources">DeregisterTransitGatewayMulticastGroupSources</a></code> | <code>string</code> | [Write] ec2:DeregisterTransitGatewayMulticastGroupSources. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.DescribeAccountAttributes">DescribeAccountAttributes</a></code> | <code>string</code> | [List] ec2:DescribeAccountAttributes. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.DescribeAccountVpcEncryptionControl">DescribeAccountVpcEncryptionControl</a></code> | <code>string</code> | [List] ec2:DescribeAccountVpcEncryptionControl. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.DescribeAddresses">DescribeAddresses</a></code> | <code>string</code> | [List] ec2:DescribeAddresses. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.DescribeAddressesAttribute">DescribeAddressesAttribute</a></code> | <code>string</code> | [List] ec2:DescribeAddressesAttribute. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.DescribeAddressTransfers">DescribeAddressTransfers</a></code> | <code>string</code> | [List] ec2:DescribeAddressTransfers. |
@@ -16910,6 +17043,7 @@ new ec2.EC2Actions()
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.DescribeInternetGateways">DescribeInternetGateways</a></code> | <code>string</code> | [List] ec2:DescribeInternetGateways. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.DescribeIpamByoasn">DescribeIpamByoasn</a></code> | <code>string</code> | [List] ec2:DescribeIpamByoasn. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.DescribeIpamExternalResourceVerificationTokens">DescribeIpamExternalResourceVerificationTokens</a></code> | <code>string</code> | [List] ec2:DescribeIpamExternalResourceVerificationTokens. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.DescribeIpamInternetRegistryAssociations">DescribeIpamInternetRegistryAssociations</a></code> | <code>string</code> | [List] ec2:DescribeIpamInternetRegistryAssociations. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.DescribeIpamPolicies">DescribeIpamPolicies</a></code> | <code>string</code> | [List] ec2:DescribeIpamPolicies. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.DescribeIpamPoolAllocations">DescribeIpamPoolAllocations</a></code> | <code>string</code> | [List] ec2:DescribeIpamPoolAllocations. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.DescribeIpamPools">DescribeIpamPools</a></code> | <code>string</code> | [List] ec2:DescribeIpamPools. |
@@ -17090,6 +17224,7 @@ new ec2.EC2Actions()
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.EnableImageDeprecation">EnableImageDeprecation</a></code> | <code>string</code> | [Write] ec2:EnableImageDeprecation. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.EnableImageDeregistrationProtection">EnableImageDeregistrationProtection</a></code> | <code>string</code> | [Write] ec2:EnableImageDeregistrationProtection. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.EnableInstanceSqlHaStandbyDetections">EnableInstanceSqlHaStandbyDetections</a></code> | <code>string</code> | [Write] ec2:EnableInstanceSqlHaStandbyDetections. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.EnableIpamInternetRegistryAssociation">EnableIpamInternetRegistryAssociation</a></code> | <code>string</code> | [Write] ec2:EnableIpamInternetRegistryAssociation. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.EnableIpamOrganizationAdminAccount">EnableIpamOrganizationAdminAccount</a></code> | <code>string</code> | [Write] ec2:EnableIpamOrganizationAdminAccount. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.EnableIpamPolicy">EnableIpamPolicy</a></code> | <code>string</code> | [Write] ec2:EnableIpamPolicy. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.EnableReachabilityAnalyzerOrganizationSharing">EnableReachabilityAnalyzerOrganizationSharing</a></code> | <code>string</code> | [Write] ec2:EnableReachabilityAnalyzerOrganizationSharing. |
@@ -17119,6 +17254,7 @@ new ec2.EC2Actions()
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.ListSnapshotsInRecycleBin">ListSnapshotsInRecycleBin</a></code> | <code>string</code> | [List] ec2:ListSnapshotsInRecycleBin. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.ListVolumesInRecycleBin">ListVolumesInRecycleBin</a></code> | <code>string</code> | [List] ec2:ListVolumesInRecycleBin. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.LockSnapshot">LockSnapshot</a></code> | <code>string</code> | [Write] ec2:LockSnapshot. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.ModifyAccountVpcEncryptionControl">ModifyAccountVpcEncryptionControl</a></code> | <code>string</code> | [Write] ec2:ModifyAccountVpcEncryptionControl. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.ModifyAddressAttribute">ModifyAddressAttribute</a></code> | <code>string</code> | [Write] ec2:ModifyAddressAttribute. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.ModifyApplicationStatusCheck">ModifyApplicationStatusCheck</a></code> | <code>string</code> | [Write] ec2:ModifyApplicationStatusCheck. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.ModifyAvailabilityZoneGroup">ModifyAvailabilityZoneGroup</a></code> | <code>string</code> | [Write] ec2:ModifyAvailabilityZoneGroup. |
@@ -17153,6 +17289,7 @@ new ec2.EC2Actions()
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.ModifyIpamPrefixListResolverTarget">ModifyIpamPrefixListResolverTarget</a></code> | <code>string</code> | [Write] ec2:ModifyIpamPrefixListResolverTarget. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.ModifyIpamResourceCidr">ModifyIpamResourceCidr</a></code> | <code>string</code> | [Write] ec2:ModifyIpamResourceCidr. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.ModifyIpamResourceDiscovery">ModifyIpamResourceDiscovery</a></code> | <code>string</code> | [Write] ec2:ModifyIpamResourceDiscovery. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.ModifyIpamRoutingPolicyRegistration">ModifyIpamRoutingPolicyRegistration</a></code> | <code>string</code> | [Write] ec2:ModifyIpamRoutingPolicyRegistration. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.ModifyIpamScope">ModifyIpamScope</a></code> | <code>string</code> | [Write] ec2:ModifyIpamScope. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.ModifyLaunchTemplate">ModifyLaunchTemplate</a></code> | <code>string</code> | [Write] ec2:ModifyLaunchTemplate. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.ModifyLocalGatewayRoute">ModifyLocalGatewayRoute</a></code> | <code>string</code> | [Write] ec2:ModifyLocalGatewayRoute. |
@@ -17769,6 +17906,42 @@ public readonly actionGetIpamDiscoveredResourceCidrs: string;
 
 ---
 
+##### `actionGetIpamDiscoveredRoutes`<sup>Required</sup> <a name="actionGetIpamDiscoveredRoutes" id="@cdk_utils/iam.ec2.EC2Actions.property.actionGetIpamDiscoveredRoutes"></a>
+
+```typescript
+public readonly actionGetIpamDiscoveredRoutes: string;
+```
+
+- *Type:* string
+
+[Read] ec2:GetIpamDiscoveredRoutes.
+
+---
+
+##### `actionGetIpamInternetRegistryAssociationAsns`<sup>Required</sup> <a name="actionGetIpamInternetRegistryAssociationAsns" id="@cdk_utils/iam.ec2.EC2Actions.property.actionGetIpamInternetRegistryAssociationAsns"></a>
+
+```typescript
+public readonly actionGetIpamInternetRegistryAssociationAsns: string;
+```
+
+- *Type:* string
+
+[Read] ec2:GetIpamInternetRegistryAssociationAsns.
+
+---
+
+##### `actionGetIpamInternetRegistryAssociationCidrs`<sup>Required</sup> <a name="actionGetIpamInternetRegistryAssociationCidrs" id="@cdk_utils/iam.ec2.EC2Actions.property.actionGetIpamInternetRegistryAssociationCidrs"></a>
+
+```typescript
+public readonly actionGetIpamInternetRegistryAssociationCidrs: string;
+```
+
+- *Type:* string
+
+[Read] ec2:GetIpamInternetRegistryAssociationCidrs.
+
+---
+
 ##### `actionGetIpamPolicyAllocationRules`<sup>Required</sup> <a name="actionGetIpamPolicyAllocationRules" id="@cdk_utils/iam.ec2.EC2Actions.property.actionGetIpamPolicyAllocationRules"></a>
 
 ```typescript
@@ -17862,6 +18035,54 @@ public readonly actionGetIpamResourceCidrs: string;
 - *Type:* string
 
 [Read] ec2:GetIpamResourceCidrs.
+
+---
+
+##### `actionGetIpamRouteOriginAuthorizations`<sup>Required</sup> <a name="actionGetIpamRouteOriginAuthorizations" id="@cdk_utils/iam.ec2.EC2Actions.property.actionGetIpamRouteOriginAuthorizations"></a>
+
+```typescript
+public readonly actionGetIpamRouteOriginAuthorizations: string;
+```
+
+- *Type:* string
+
+[Read] ec2:GetIpamRouteOriginAuthorizations.
+
+---
+
+##### `actionGetIpamRouteProtectionFindings`<sup>Required</sup> <a name="actionGetIpamRouteProtectionFindings" id="@cdk_utils/iam.ec2.EC2Actions.property.actionGetIpamRouteProtectionFindings"></a>
+
+```typescript
+public readonly actionGetIpamRouteProtectionFindings: string;
+```
+
+- *Type:* string
+
+[Read] ec2:GetIpamRouteProtectionFindings.
+
+---
+
+##### `actionGetIpamRoutingPolicyRegistrationDeltas`<sup>Required</sup> <a name="actionGetIpamRoutingPolicyRegistrationDeltas" id="@cdk_utils/iam.ec2.EC2Actions.property.actionGetIpamRoutingPolicyRegistrationDeltas"></a>
+
+```typescript
+public readonly actionGetIpamRoutingPolicyRegistrationDeltas: string;
+```
+
+- *Type:* string
+
+[Read] ec2:GetIpamRoutingPolicyRegistrationDeltas.
+
+---
+
+##### `actionGetIpamRoutingPolicyRegistrations`<sup>Required</sup> <a name="actionGetIpamRoutingPolicyRegistrations" id="@cdk_utils/iam.ec2.EC2Actions.property.actionGetIpamRoutingPolicyRegistrations"></a>
+
+```typescript
+public readonly actionGetIpamRoutingPolicyRegistrations: string;
+```
+
+- *Type:* string
+
+[Read] ec2:GetIpamRoutingPolicyRegistrations.
 
 ---
 
@@ -18813,6 +19034,18 @@ public readonly AuthorizeSecurityGroupIngress: string;
 
 ---
 
+##### `BatchModifyIpamRoutingPolicyRegistrations`<sup>Required</sup> <a name="BatchModifyIpamRoutingPolicyRegistrations" id="@cdk_utils/iam.ec2.EC2Actions.property.BatchModifyIpamRoutingPolicyRegistrations"></a>
+
+```typescript
+public readonly BatchModifyIpamRoutingPolicyRegistrations: string;
+```
+
+- *Type:* string
+
+[Write] ec2:BatchModifyIpamRoutingPolicyRegistrations.
+
+---
+
 ##### `BundleInstance`<sup>Required</sup> <a name="BundleInstance" id="@cdk_utils/iam.ec2.EC2Actions.property.BundleInstance"></a>
 
 ```typescript
@@ -19377,6 +19610,18 @@ public readonly CreateIpamExternalResourceVerificationToken: string;
 
 ---
 
+##### `CreateIpamInternetRegistryAssociation`<sup>Required</sup> <a name="CreateIpamInternetRegistryAssociation" id="@cdk_utils/iam.ec2.EC2Actions.property.CreateIpamInternetRegistryAssociation"></a>
+
+```typescript
+public readonly CreateIpamInternetRegistryAssociation: string;
+```
+
+- *Type:* string
+
+[Write] ec2:CreateIpamInternetRegistryAssociation.
+
+---
+
 ##### `CreateIpamPolicy`<sup>Required</sup> <a name="CreateIpamPolicy" id="@cdk_utils/iam.ec2.EC2Actions.property.CreateIpamPolicy"></a>
 
 ```typescript
@@ -19434,6 +19679,18 @@ public readonly CreateIpamResourceDiscovery: string;
 - *Type:* string
 
 [Write] ec2:CreateIpamResourceDiscovery.
+
+---
+
+##### `CreateIpamRoutingPolicyRegistration`<sup>Required</sup> <a name="CreateIpamRoutingPolicyRegistration" id="@cdk_utils/iam.ec2.EC2Actions.property.CreateIpamRoutingPolicyRegistration"></a>
+
+```typescript
+public readonly CreateIpamRoutingPolicyRegistration: string;
+```
+
+- *Type:* string
+
+[Write] ec2:CreateIpamRoutingPolicyRegistration.
 
 ---
 
@@ -20577,6 +20834,18 @@ public readonly DeleteIpamExternalResourceVerificationToken: string;
 
 ---
 
+##### `DeleteIpamInternetRegistryAssociation`<sup>Required</sup> <a name="DeleteIpamInternetRegistryAssociation" id="@cdk_utils/iam.ec2.EC2Actions.property.DeleteIpamInternetRegistryAssociation"></a>
+
+```typescript
+public readonly DeleteIpamInternetRegistryAssociation: string;
+```
+
+- *Type:* string
+
+[Write] ec2:DeleteIpamInternetRegistryAssociation.
+
+---
+
 ##### `DeleteIpamPolicy`<sup>Required</sup> <a name="DeleteIpamPolicy" id="@cdk_utils/iam.ec2.EC2Actions.property.DeleteIpamPolicy"></a>
 
 ```typescript
@@ -20634,6 +20903,18 @@ public readonly DeleteIpamResourceDiscovery: string;
 - *Type:* string
 
 [Write] ec2:DeleteIpamResourceDiscovery.
+
+---
+
+##### `DeleteIpamRoutingPolicyRegistration`<sup>Required</sup> <a name="DeleteIpamRoutingPolicyRegistration" id="@cdk_utils/iam.ec2.EC2Actions.property.DeleteIpamRoutingPolicyRegistration"></a>
+
+```typescript
+public readonly DeleteIpamRoutingPolicyRegistration: string;
+```
+
+- *Type:* string
+
+[Write] ec2:DeleteIpamRoutingPolicyRegistration.
 
 ---
 
@@ -21633,6 +21914,18 @@ public readonly DescribeAccountAttributes: string;
 
 ---
 
+##### `DescribeAccountVpcEncryptionControl`<sup>Required</sup> <a name="DescribeAccountVpcEncryptionControl" id="@cdk_utils/iam.ec2.EC2Actions.property.DescribeAccountVpcEncryptionControl"></a>
+
+```typescript
+public readonly DescribeAccountVpcEncryptionControl: string;
+```
+
+- *Type:* string
+
+[List] ec2:DescribeAccountVpcEncryptionControl.
+
+---
+
 ##### `DescribeAddresses`<sup>Required</sup> <a name="DescribeAddresses" id="@cdk_utils/iam.ec2.EC2Actions.property.DescribeAddresses"></a>
 
 ```typescript
@@ -22530,6 +22823,18 @@ public readonly DescribeIpamExternalResourceVerificationTokens: string;
 - *Type:* string
 
 [List] ec2:DescribeIpamExternalResourceVerificationTokens.
+
+---
+
+##### `DescribeIpamInternetRegistryAssociations`<sup>Required</sup> <a name="DescribeIpamInternetRegistryAssociations" id="@cdk_utils/iam.ec2.EC2Actions.property.DescribeIpamInternetRegistryAssociations"></a>
+
+```typescript
+public readonly DescribeIpamInternetRegistryAssociations: string;
+```
+
+- *Type:* string
+
+[List] ec2:DescribeIpamInternetRegistryAssociations.
 
 ---
 
@@ -24693,6 +24998,18 @@ public readonly EnableInstanceSqlHaStandbyDetections: string;
 
 ---
 
+##### `EnableIpamInternetRegistryAssociation`<sup>Required</sup> <a name="EnableIpamInternetRegistryAssociation" id="@cdk_utils/iam.ec2.EC2Actions.property.EnableIpamInternetRegistryAssociation"></a>
+
+```typescript
+public readonly EnableIpamInternetRegistryAssociation: string;
+```
+
+- *Type:* string
+
+[Write] ec2:EnableIpamInternetRegistryAssociation.
+
+---
+
 ##### `EnableIpamOrganizationAdminAccount`<sup>Required</sup> <a name="EnableIpamOrganizationAdminAccount" id="@cdk_utils/iam.ec2.EC2Actions.property.EnableIpamOrganizationAdminAccount"></a>
 
 ```typescript
@@ -25038,6 +25355,18 @@ public readonly LockSnapshot: string;
 - *Type:* string
 
 [Write] ec2:LockSnapshot.
+
+---
+
+##### `ModifyAccountVpcEncryptionControl`<sup>Required</sup> <a name="ModifyAccountVpcEncryptionControl" id="@cdk_utils/iam.ec2.EC2Actions.property.ModifyAccountVpcEncryptionControl"></a>
+
+```typescript
+public readonly ModifyAccountVpcEncryptionControl: string;
+```
+
+- *Type:* string
+
+[Write] ec2:ModifyAccountVpcEncryptionControl.
 
 ---
 
@@ -25446,6 +25775,18 @@ public readonly ModifyIpamResourceDiscovery: string;
 - *Type:* string
 
 [Write] ec2:ModifyIpamResourceDiscovery.
+
+---
+
+##### `ModifyIpamRoutingPolicyRegistration`<sup>Required</sup> <a name="ModifyIpamRoutingPolicyRegistration" id="@cdk_utils/iam.ec2.EC2Actions.property.ModifyIpamRoutingPolicyRegistration"></a>
+
+```typescript
+public readonly ModifyIpamRoutingPolicyRegistration: string;
+```
+
+- *Type:* string
+
+[Write] ec2:ModifyIpamRoutingPolicyRegistration.
 
 ---
 
@@ -29581,6 +29922,9 @@ Generates a condition block for `ec2:VpcPeeringConnectionID`.
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.actionGetIpamDiscoveredAccountsConditionKeys">actionGetIpamDiscoveredAccountsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetIpamDiscoveredAccounts action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.actionGetIpamDiscoveredPublicAddressesConditionKeys">actionGetIpamDiscoveredPublicAddressesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetIpamDiscoveredPublicAddresses action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.actionGetIpamDiscoveredResourceCidrsConditionKeys">actionGetIpamDiscoveredResourceCidrsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetIpamDiscoveredResourceCidrs action. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.actionGetIpamDiscoveredRoutesConditionKeys">actionGetIpamDiscoveredRoutesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetIpamDiscoveredRoutes action. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.actionGetIpamInternetRegistryAssociationAsnsConditionKeys">actionGetIpamInternetRegistryAssociationAsnsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetIpamInternetRegistryAssociationAsns action. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.actionGetIpamInternetRegistryAssociationCidrsConditionKeys">actionGetIpamInternetRegistryAssociationCidrsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetIpamInternetRegistryAssociationCidrs action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.actionGetIpamPolicyAllocationRulesConditionKeys">actionGetIpamPolicyAllocationRulesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetIpamPolicyAllocationRules action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.actionGetIpamPolicyOrganizationTargetsConditionKeys">actionGetIpamPolicyOrganizationTargetsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetIpamPolicyOrganizationTargets action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.actionGetIpamPoolAllocationsConditionKeys">actionGetIpamPoolAllocationsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetIpamPoolAllocations action. |
@@ -29589,6 +29933,10 @@ Generates a condition block for `ec2:VpcPeeringConnectionID`.
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.actionGetIpamPrefixListResolverVersionEntriesConditionKeys">actionGetIpamPrefixListResolverVersionEntriesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetIpamPrefixListResolverVersionEntries action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.actionGetIpamPrefixListResolverVersionsConditionKeys">actionGetIpamPrefixListResolverVersionsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetIpamPrefixListResolverVersions action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.actionGetIpamResourceCidrsConditionKeys">actionGetIpamResourceCidrsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetIpamResourceCidrs action. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.actionGetIpamRouteOriginAuthorizationsConditionKeys">actionGetIpamRouteOriginAuthorizationsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetIpamRouteOriginAuthorizations action. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.actionGetIpamRouteProtectionFindingsConditionKeys">actionGetIpamRouteProtectionFindingsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetIpamRouteProtectionFindings action. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.actionGetIpamRoutingPolicyRegistrationDeltasConditionKeys">actionGetIpamRoutingPolicyRegistrationDeltasConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetIpamRoutingPolicyRegistrationDeltas action. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.actionGetIpamRoutingPolicyRegistrationsConditionKeys">actionGetIpamRoutingPolicyRegistrationsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetIpamRoutingPolicyRegistrations action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.actionGetLaunchTemplateDataConditionKeys">actionGetLaunchTemplateDataConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetLaunchTemplateData action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.actionGetManagedPrefixListAssociationsConditionKeys">actionGetManagedPrefixListAssociationsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetManagedPrefixListAssociations action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.actionGetManagedPrefixListEntriesConditionKeys">actionGetManagedPrefixListEntriesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetManagedPrefixListEntries action. |
@@ -29677,6 +30025,7 @@ Generates a condition block for `ec2:VpcPeeringConnectionID`.
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.AWS_REQUEST_TAG">AWS_REQUEST_TAG</a></code> | <code>string</code> | Condition key: aws:RequestTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.AWS_RESOURCE_TAG">AWS_RESOURCE_TAG</a></code> | <code>string</code> | Condition key: aws:ResourceTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.AWS_TAG_KEYS">AWS_TAG_KEYS</a></code> | <code>string</code> | Condition key: aws:TagKeys (ArrayOfString). |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.BatchModifyIpamRoutingPolicyRegistrationsConditionKeys">BatchModifyIpamRoutingPolicyRegistrationsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the BatchModifyIpamRoutingPolicyRegistrations action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.BundleInstanceConditionKeys">BundleInstanceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the BundleInstance action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.CancelBundleTaskConditionKeys">CancelBundleTaskConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CancelBundleTask action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.CancelCapacityReservationConditionKeys">CancelCapacityReservationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CancelCapacityReservation action. |
@@ -29732,11 +30081,13 @@ Generates a condition block for `ec2:VpcPeeringConnectionID`.
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.CreateInterruptibleCapacityReservationAllocationConditionKeys">CreateInterruptibleCapacityReservationAllocationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateInterruptibleCapacityReservationAllocation action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.CreateIpamConditionKeys">CreateIpamConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateIpam action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.CreateIpamExternalResourceVerificationTokenConditionKeys">CreateIpamExternalResourceVerificationTokenConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateIpamExternalResourceVerificationToken action. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.CreateIpamInternetRegistryAssociationConditionKeys">CreateIpamInternetRegistryAssociationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateIpamInternetRegistryAssociation action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.CreateIpamPolicyConditionKeys">CreateIpamPolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateIpamPolicy action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.CreateIpamPoolConditionKeys">CreateIpamPoolConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateIpamPool action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.CreateIpamPrefixListResolverConditionKeys">CreateIpamPrefixListResolverConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateIpamPrefixListResolver action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.CreateIpamPrefixListResolverTargetConditionKeys">CreateIpamPrefixListResolverTargetConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateIpamPrefixListResolverTarget action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.CreateIpamResourceDiscoveryConditionKeys">CreateIpamResourceDiscoveryConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateIpamResourceDiscovery action. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.CreateIpamRoutingPolicyRegistrationConditionKeys">CreateIpamRoutingPolicyRegistrationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateIpamRoutingPolicyRegistration action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.CreateIpamScopeConditionKeys">CreateIpamScopeConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateIpamScope action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.CreateKeyPairConditionKeys">CreateKeyPairConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateKeyPair action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.CreateLaunchTemplateConditionKeys">CreateLaunchTemplateConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateLaunchTemplate action. |
@@ -29832,11 +30183,13 @@ Generates a condition block for `ec2:VpcPeeringConnectionID`.
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.DeleteInternetGatewayConditionKeys">DeleteInternetGatewayConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteInternetGateway action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.DeleteIpamConditionKeys">DeleteIpamConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteIpam action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.DeleteIpamExternalResourceVerificationTokenConditionKeys">DeleteIpamExternalResourceVerificationTokenConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteIpamExternalResourceVerificationToken action. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.DeleteIpamInternetRegistryAssociationConditionKeys">DeleteIpamInternetRegistryAssociationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteIpamInternetRegistryAssociation action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.DeleteIpamPolicyConditionKeys">DeleteIpamPolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteIpamPolicy action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.DeleteIpamPoolConditionKeys">DeleteIpamPoolConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteIpamPool action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.DeleteIpamPrefixListResolverConditionKeys">DeleteIpamPrefixListResolverConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteIpamPrefixListResolver action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.DeleteIpamPrefixListResolverTargetConditionKeys">DeleteIpamPrefixListResolverTargetConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteIpamPrefixListResolverTarget action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.DeleteIpamResourceDiscoveryConditionKeys">DeleteIpamResourceDiscoveryConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteIpamResourceDiscovery action. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.DeleteIpamRoutingPolicyRegistrationConditionKeys">DeleteIpamRoutingPolicyRegistrationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteIpamRoutingPolicyRegistration action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.DeleteIpamScopeConditionKeys">DeleteIpamScopeConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteIpamScope action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.DeleteKeyPairConditionKeys">DeleteKeyPairConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteKeyPair action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.DeleteLaunchTemplateConditionKeys">DeleteLaunchTemplateConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteLaunchTemplate action. |
@@ -29920,6 +30273,7 @@ Generates a condition block for `ec2:VpcPeeringConnectionID`.
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.DeregisterTransitGatewayMulticastGroupMembersConditionKeys">DeregisterTransitGatewayMulticastGroupMembersConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeregisterTransitGatewayMulticastGroupMembers action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.DeregisterTransitGatewayMulticastGroupSourcesConditionKeys">DeregisterTransitGatewayMulticastGroupSourcesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeregisterTransitGatewayMulticastGroupSources action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.DescribeAccountAttributesConditionKeys">DescribeAccountAttributesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeAccountAttributes action. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.DescribeAccountVpcEncryptionControlConditionKeys">DescribeAccountVpcEncryptionControlConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeAccountVpcEncryptionControl action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.DescribeAddressesAttributeConditionKeys">DescribeAddressesAttributeConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeAddressesAttribute action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.DescribeAddressesConditionKeys">DescribeAddressesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeAddresses action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.DescribeAddressTransfersConditionKeys">DescribeAddressTransfersConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeAddressTransfers action. |
@@ -29995,6 +30349,7 @@ Generates a condition block for `ec2:VpcPeeringConnectionID`.
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.DescribeInternetGatewaysConditionKeys">DescribeInternetGatewaysConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeInternetGateways action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.DescribeIpamByoasnConditionKeys">DescribeIpamByoasnConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeIpamByoasn action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.DescribeIpamExternalResourceVerificationTokensConditionKeys">DescribeIpamExternalResourceVerificationTokensConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeIpamExternalResourceVerificationTokens action. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.DescribeIpamInternetRegistryAssociationsConditionKeys">DescribeIpamInternetRegistryAssociationsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeIpamInternetRegistryAssociations action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.DescribeIpamPoliciesConditionKeys">DescribeIpamPoliciesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeIpamPolicies action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.DescribeIpamPoolAllocationsConditionKeys">DescribeIpamPoolAllocationsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeIpamPoolAllocations action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.DescribeIpamPoolsConditionKeys">DescribeIpamPoolsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeIpamPools action. |
@@ -30182,6 +30537,7 @@ Generates a condition block for `ec2:VpcPeeringConnectionID`.
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.EnableImageDeprecationConditionKeys">EnableImageDeprecationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the EnableImageDeprecation action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.EnableImageDeregistrationProtectionConditionKeys">EnableImageDeregistrationProtectionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the EnableImageDeregistrationProtection action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.EnableInstanceSqlHaStandbyDetectionsConditionKeys">EnableInstanceSqlHaStandbyDetectionsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the EnableInstanceSqlHaStandbyDetections action. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.EnableIpamInternetRegistryAssociationConditionKeys">EnableIpamInternetRegistryAssociationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the EnableIpamInternetRegistryAssociation action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.EnableIpamOrganizationAdminAccountConditionKeys">EnableIpamOrganizationAdminAccountConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the EnableIpamOrganizationAdminAccount action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.EnableIpamPolicyConditionKeys">EnableIpamPolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the EnableIpamPolicy action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.EnableReachabilityAnalyzerOrganizationSharingConditionKeys">EnableReachabilityAnalyzerOrganizationSharingConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the EnableReachabilityAnalyzerOrganizationSharing action. |
@@ -30251,6 +30607,7 @@ Generates a condition block for `ec2:VpcPeeringConnectionID`.
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.METADATA_HTTP_ENDPOINT">METADATA_HTTP_ENDPOINT</a></code> | <code>string</code> | Condition key: ec2:MetadataHttpEndpoint (String). |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.METADATA_HTTP_PUT_RESPONSE_HOP_LIMIT">METADATA_HTTP_PUT_RESPONSE_HOP_LIMIT</a></code> | <code>string</code> | Condition key: ec2:MetadataHttpPutResponseHopLimit (Numeric). |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.METADATA_HTTP_TOKENS">METADATA_HTTP_TOKENS</a></code> | <code>string</code> | Condition key: ec2:MetadataHttpTokens (String). |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.ModifyAccountVpcEncryptionControlConditionKeys">ModifyAccountVpcEncryptionControlConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ModifyAccountVpcEncryptionControl action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.ModifyAddressAttributeConditionKeys">ModifyAddressAttributeConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ModifyAddressAttribute action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.ModifyApplicationStatusCheckConditionKeys">ModifyApplicationStatusCheckConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ModifyApplicationStatusCheck action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.ModifyAvailabilityZoneGroupConditionKeys">ModifyAvailabilityZoneGroupConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ModifyAvailabilityZoneGroup action. |
@@ -30285,6 +30642,7 @@ Generates a condition block for `ec2:VpcPeeringConnectionID`.
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.ModifyIpamPrefixListResolverTargetConditionKeys">ModifyIpamPrefixListResolverTargetConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ModifyIpamPrefixListResolverTarget action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.ModifyIpamResourceCidrConditionKeys">ModifyIpamResourceCidrConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ModifyIpamResourceCidr action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.ModifyIpamResourceDiscoveryConditionKeys">ModifyIpamResourceDiscoveryConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ModifyIpamResourceDiscovery action. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.ModifyIpamRoutingPolicyRegistrationConditionKeys">ModifyIpamRoutingPolicyRegistrationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ModifyIpamRoutingPolicyRegistration action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.ModifyIpamScopeConditionKeys">ModifyIpamScopeConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ModifyIpamScope action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.ModifyLaunchTemplateConditionKeys">ModifyLaunchTemplateConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ModifyLaunchTemplate action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.ModifyLocalGatewayRouteConditionKeys">ModifyLocalGatewayRouteConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ModifyLocalGatewayRoute action. |
@@ -30988,6 +31346,42 @@ Condition keys applicable to the GetIpamDiscoveredResourceCidrs action.
 
 ---
 
+##### `actionGetIpamDiscoveredRoutesConditionKeys`<sup>Required</sup> <a name="actionGetIpamDiscoveredRoutesConditionKeys" id="@cdk_utils/iam.ec2.EC2Conditions.property.actionGetIpamDiscoveredRoutesConditionKeys"></a>
+
+```typescript
+public readonly actionGetIpamDiscoveredRoutesConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetIpamDiscoveredRoutes action.
+
+---
+
+##### `actionGetIpamInternetRegistryAssociationAsnsConditionKeys`<sup>Required</sup> <a name="actionGetIpamInternetRegistryAssociationAsnsConditionKeys" id="@cdk_utils/iam.ec2.EC2Conditions.property.actionGetIpamInternetRegistryAssociationAsnsConditionKeys"></a>
+
+```typescript
+public readonly actionGetIpamInternetRegistryAssociationAsnsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetIpamInternetRegistryAssociationAsns action.
+
+---
+
+##### `actionGetIpamInternetRegistryAssociationCidrsConditionKeys`<sup>Required</sup> <a name="actionGetIpamInternetRegistryAssociationCidrsConditionKeys" id="@cdk_utils/iam.ec2.EC2Conditions.property.actionGetIpamInternetRegistryAssociationCidrsConditionKeys"></a>
+
+```typescript
+public readonly actionGetIpamInternetRegistryAssociationCidrsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetIpamInternetRegistryAssociationCidrs action.
+
+---
+
 ##### `actionGetIpamPolicyAllocationRulesConditionKeys`<sup>Required</sup> <a name="actionGetIpamPolicyAllocationRulesConditionKeys" id="@cdk_utils/iam.ec2.EC2Conditions.property.actionGetIpamPolicyAllocationRulesConditionKeys"></a>
 
 ```typescript
@@ -31081,6 +31475,54 @@ public readonly actionGetIpamResourceCidrsConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the GetIpamResourceCidrs action.
+
+---
+
+##### `actionGetIpamRouteOriginAuthorizationsConditionKeys`<sup>Required</sup> <a name="actionGetIpamRouteOriginAuthorizationsConditionKeys" id="@cdk_utils/iam.ec2.EC2Conditions.property.actionGetIpamRouteOriginAuthorizationsConditionKeys"></a>
+
+```typescript
+public readonly actionGetIpamRouteOriginAuthorizationsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetIpamRouteOriginAuthorizations action.
+
+---
+
+##### `actionGetIpamRouteProtectionFindingsConditionKeys`<sup>Required</sup> <a name="actionGetIpamRouteProtectionFindingsConditionKeys" id="@cdk_utils/iam.ec2.EC2Conditions.property.actionGetIpamRouteProtectionFindingsConditionKeys"></a>
+
+```typescript
+public readonly actionGetIpamRouteProtectionFindingsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetIpamRouteProtectionFindings action.
+
+---
+
+##### `actionGetIpamRoutingPolicyRegistrationDeltasConditionKeys`<sup>Required</sup> <a name="actionGetIpamRoutingPolicyRegistrationDeltasConditionKeys" id="@cdk_utils/iam.ec2.EC2Conditions.property.actionGetIpamRoutingPolicyRegistrationDeltasConditionKeys"></a>
+
+```typescript
+public readonly actionGetIpamRoutingPolicyRegistrationDeltasConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetIpamRoutingPolicyRegistrationDeltas action.
+
+---
+
+##### `actionGetIpamRoutingPolicyRegistrationsConditionKeys`<sup>Required</sup> <a name="actionGetIpamRoutingPolicyRegistrationsConditionKeys" id="@cdk_utils/iam.ec2.EC2Conditions.property.actionGetIpamRoutingPolicyRegistrationsConditionKeys"></a>
+
+```typescript
+public readonly actionGetIpamRoutingPolicyRegistrationsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetIpamRoutingPolicyRegistrations action.
 
 ---
 
@@ -32140,6 +32582,18 @@ Condition key: aws:TagKeys (ArrayOfString).
 
 ---
 
+##### `BatchModifyIpamRoutingPolicyRegistrationsConditionKeys`<sup>Required</sup> <a name="BatchModifyIpamRoutingPolicyRegistrationsConditionKeys" id="@cdk_utils/iam.ec2.EC2Conditions.property.BatchModifyIpamRoutingPolicyRegistrationsConditionKeys"></a>
+
+```typescript
+public readonly BatchModifyIpamRoutingPolicyRegistrationsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the BatchModifyIpamRoutingPolicyRegistrations action.
+
+---
+
 ##### `BundleInstanceConditionKeys`<sup>Required</sup> <a name="BundleInstanceConditionKeys" id="@cdk_utils/iam.ec2.EC2Conditions.property.BundleInstanceConditionKeys"></a>
 
 ```typescript
@@ -32800,6 +33254,18 @@ Condition keys applicable to the CreateIpamExternalResourceVerificationToken act
 
 ---
 
+##### `CreateIpamInternetRegistryAssociationConditionKeys`<sup>Required</sup> <a name="CreateIpamInternetRegistryAssociationConditionKeys" id="@cdk_utils/iam.ec2.EC2Conditions.property.CreateIpamInternetRegistryAssociationConditionKeys"></a>
+
+```typescript
+public readonly CreateIpamInternetRegistryAssociationConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateIpamInternetRegistryAssociation action.
+
+---
+
 ##### `CreateIpamPolicyConditionKeys`<sup>Required</sup> <a name="CreateIpamPolicyConditionKeys" id="@cdk_utils/iam.ec2.EC2Conditions.property.CreateIpamPolicyConditionKeys"></a>
 
 ```typescript
@@ -32857,6 +33323,18 @@ public readonly CreateIpamResourceDiscoveryConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the CreateIpamResourceDiscovery action.
+
+---
+
+##### `CreateIpamRoutingPolicyRegistrationConditionKeys`<sup>Required</sup> <a name="CreateIpamRoutingPolicyRegistrationConditionKeys" id="@cdk_utils/iam.ec2.EC2Conditions.property.CreateIpamRoutingPolicyRegistrationConditionKeys"></a>
+
+```typescript
+public readonly CreateIpamRoutingPolicyRegistrationConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateIpamRoutingPolicyRegistration action.
 
 ---
 
@@ -34000,6 +34478,18 @@ Condition keys applicable to the DeleteIpamExternalResourceVerificationToken act
 
 ---
 
+##### `DeleteIpamInternetRegistryAssociationConditionKeys`<sup>Required</sup> <a name="DeleteIpamInternetRegistryAssociationConditionKeys" id="@cdk_utils/iam.ec2.EC2Conditions.property.DeleteIpamInternetRegistryAssociationConditionKeys"></a>
+
+```typescript
+public readonly DeleteIpamInternetRegistryAssociationConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DeleteIpamInternetRegistryAssociation action.
+
+---
+
 ##### `DeleteIpamPolicyConditionKeys`<sup>Required</sup> <a name="DeleteIpamPolicyConditionKeys" id="@cdk_utils/iam.ec2.EC2Conditions.property.DeleteIpamPolicyConditionKeys"></a>
 
 ```typescript
@@ -34057,6 +34547,18 @@ public readonly DeleteIpamResourceDiscoveryConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the DeleteIpamResourceDiscovery action.
+
+---
+
+##### `DeleteIpamRoutingPolicyRegistrationConditionKeys`<sup>Required</sup> <a name="DeleteIpamRoutingPolicyRegistrationConditionKeys" id="@cdk_utils/iam.ec2.EC2Conditions.property.DeleteIpamRoutingPolicyRegistrationConditionKeys"></a>
+
+```typescript
+public readonly DeleteIpamRoutingPolicyRegistrationConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DeleteIpamRoutingPolicyRegistration action.
 
 ---
 
@@ -35056,6 +35558,18 @@ Condition keys applicable to the DescribeAccountAttributes action.
 
 ---
 
+##### `DescribeAccountVpcEncryptionControlConditionKeys`<sup>Required</sup> <a name="DescribeAccountVpcEncryptionControlConditionKeys" id="@cdk_utils/iam.ec2.EC2Conditions.property.DescribeAccountVpcEncryptionControlConditionKeys"></a>
+
+```typescript
+public readonly DescribeAccountVpcEncryptionControlConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DescribeAccountVpcEncryptionControl action.
+
+---
+
 ##### `DescribeAddressesAttributeConditionKeys`<sup>Required</sup> <a name="DescribeAddressesAttributeConditionKeys" id="@cdk_utils/iam.ec2.EC2Conditions.property.DescribeAddressesAttributeConditionKeys"></a>
 
 ```typescript
@@ -35953,6 +36467,18 @@ public readonly DescribeIpamExternalResourceVerificationTokensConditionKeys: str
 - *Type:* string[]
 
 Condition keys applicable to the DescribeIpamExternalResourceVerificationTokens action.
+
+---
+
+##### `DescribeIpamInternetRegistryAssociationsConditionKeys`<sup>Required</sup> <a name="DescribeIpamInternetRegistryAssociationsConditionKeys" id="@cdk_utils/iam.ec2.EC2Conditions.property.DescribeIpamInternetRegistryAssociationsConditionKeys"></a>
+
+```typescript
+public readonly DescribeIpamInternetRegistryAssociationsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DescribeIpamInternetRegistryAssociations action.
 
 ---
 
@@ -38200,6 +38726,18 @@ Condition keys applicable to the EnableInstanceSqlHaStandbyDetections action.
 
 ---
 
+##### `EnableIpamInternetRegistryAssociationConditionKeys`<sup>Required</sup> <a name="EnableIpamInternetRegistryAssociationConditionKeys" id="@cdk_utils/iam.ec2.EC2Conditions.property.EnableIpamInternetRegistryAssociationConditionKeys"></a>
+
+```typescript
+public readonly EnableIpamInternetRegistryAssociationConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the EnableIpamInternetRegistryAssociation action.
+
+---
+
 ##### `EnableIpamOrganizationAdminAccountConditionKeys`<sup>Required</sup> <a name="EnableIpamOrganizationAdminAccountConditionKeys" id="@cdk_utils/iam.ec2.EC2Conditions.property.EnableIpamOrganizationAdminAccountConditionKeys"></a>
 
 ```typescript
@@ -39028,6 +39566,18 @@ Condition key: ec2:MetadataHttpTokens (String).
 
 ---
 
+##### `ModifyAccountVpcEncryptionControlConditionKeys`<sup>Required</sup> <a name="ModifyAccountVpcEncryptionControlConditionKeys" id="@cdk_utils/iam.ec2.EC2Conditions.property.ModifyAccountVpcEncryptionControlConditionKeys"></a>
+
+```typescript
+public readonly ModifyAccountVpcEncryptionControlConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ModifyAccountVpcEncryptionControl action.
+
+---
+
 ##### `ModifyAddressAttributeConditionKeys`<sup>Required</sup> <a name="ModifyAddressAttributeConditionKeys" id="@cdk_utils/iam.ec2.EC2Conditions.property.ModifyAddressAttributeConditionKeys"></a>
 
 ```typescript
@@ -39433,6 +39983,18 @@ public readonly ModifyIpamResourceDiscoveryConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the ModifyIpamResourceDiscovery action.
+
+---
+
+##### `ModifyIpamRoutingPolicyRegistrationConditionKeys`<sup>Required</sup> <a name="ModifyIpamRoutingPolicyRegistrationConditionKeys" id="@cdk_utils/iam.ec2.EC2Conditions.property.ModifyIpamRoutingPolicyRegistrationConditionKeys"></a>
+
+```typescript
+public readonly ModifyIpamRoutingPolicyRegistrationConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ModifyIpamRoutingPolicyRegistration action.
 
 ---
 
@@ -52428,6 +52990,7 @@ new ec2.EC2Resources()
 | <code><a href="#@cdk_utils/iam.ec2.EC2Resources.internetGateway">internetGateway</a></code> | Builds an ARN for the internet-gateway resource. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Resources.ipam">ipam</a></code> | Builds an ARN for the ipam resource. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Resources.ipamExternalResourceVerificationToken">ipamExternalResourceVerificationToken</a></code> | Builds an ARN for the ipam-external-resource-verification-token resource. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Resources.ipamInternetRegistryAssociation">ipamInternetRegistryAssociation</a></code> | Builds an ARN for the ipam-internet-registry-association resource. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Resources.ipamPolicy">ipamPolicy</a></code> | Builds an ARN for the ipam-policy resource. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Resources.ipamPool">ipamPool</a></code> | Builds an ARN for the ipam-pool resource. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Resources.ipamPoolAllocation">ipamPoolAllocation</a></code> | Builds an ARN for the ipam-pool-allocation resource. |
@@ -52472,6 +53035,7 @@ new ec2.EC2Resources()
 | <code><a href="#@cdk_utils/iam.ec2.EC2Resources.isValidInternetGatewayArn">isValidInternetGatewayArn</a></code> | Validates whether a string is a valid ARN for the internet-gateway resource. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Resources.isValidIpamArn">isValidIpamArn</a></code> | Validates whether a string is a valid ARN for the ipam resource. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Resources.isValidIpamExternalResourceVerificationTokenArn">isValidIpamExternalResourceVerificationTokenArn</a></code> | Validates whether a string is a valid ARN for the ipam-external-resource-verification-token resource. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Resources.isValidIpamInternetRegistryAssociationArn">isValidIpamInternetRegistryAssociationArn</a></code> | Validates whether a string is a valid ARN for the ipam-internet-registry-association resource. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Resources.isValidIpamPolicyArn">isValidIpamPolicyArn</a></code> | Validates whether a string is a valid ARN for the ipam-policy resource. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Resources.isValidIpamPoolAllocationArn">isValidIpamPoolAllocationArn</a></code> | Validates whether a string is a valid ARN for the ipam-pool-allocation resource. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Resources.isValidIpamPoolArn">isValidIpamPoolArn</a></code> | Validates whether a string is a valid ARN for the ipam-pool resource. |
@@ -52603,6 +53167,7 @@ new ec2.EC2Resources()
 | <code><a href="#@cdk_utils/iam.ec2.EC2Resources.parseInternetGatewayArn">parseInternetGatewayArn</a></code> | Parses a internet-gateway ARN into its components. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Resources.parseIpamArn">parseIpamArn</a></code> | Parses a ipam ARN into its components. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Resources.parseIpamExternalResourceVerificationTokenArn">parseIpamExternalResourceVerificationTokenArn</a></code> | Parses a ipam-external-resource-verification-token ARN into its components. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Resources.parseIpamInternetRegistryAssociationArn">parseIpamInternetRegistryAssociationArn</a></code> | Parses a ipam-internet-registry-association ARN into its components. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Resources.parseIpamPolicyArn">parseIpamPolicyArn</a></code> | Parses a ipam-policy ARN into its components. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Resources.parseIpamPoolAllocationArn">parseIpamPoolAllocationArn</a></code> | Parses a ipam-pool-allocation ARN into its components. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Resources.parseIpamPoolArn">parseIpamPoolArn</a></code> | Parses a ipam-pool ARN into its components. |
@@ -53277,6 +53842,22 @@ Builds an ARN for the ipam-external-resource-verification-token resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.ec2.EC2Resources.ipamExternalResourceVerificationToken.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.ec2.EC2IpamExternalResourceVerificationTokenArnProps">EC2IpamExternalResourceVerificationTokenArnProps</a>
+
+---
+
+##### `ipamInternetRegistryAssociation` <a name="ipamInternetRegistryAssociation" id="@cdk_utils/iam.ec2.EC2Resources.ipamInternetRegistryAssociation"></a>
+
+```typescript
+import { ec2 } from '@cdk_utils/iam'
+
+ec2.EC2Resources.ipamInternetRegistryAssociation(props: EC2IpamInternetRegistryAssociationArnProps)
+```
+
+Builds an ARN for the ipam-internet-registry-association resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.ec2.EC2Resources.ipamInternetRegistryAssociation.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.ec2.EC2IpamInternetRegistryAssociationArnProps">EC2IpamInternetRegistryAssociationArnProps</a>
 
 ---
 
@@ -53979,6 +54560,22 @@ ec2.EC2Resources.isValidIpamExternalResourceVerificationTokenArn(arn: string)
 Validates whether a string is a valid ARN for the ipam-external-resource-verification-token resource.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.ec2.EC2Resources.isValidIpamExternalResourceVerificationTokenArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidIpamInternetRegistryAssociationArn` <a name="isValidIpamInternetRegistryAssociationArn" id="@cdk_utils/iam.ec2.EC2Resources.isValidIpamInternetRegistryAssociationArn"></a>
+
+```typescript
+import { ec2 } from '@cdk_utils/iam'
+
+ec2.EC2Resources.isValidIpamInternetRegistryAssociationArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the ipam-internet-registry-association resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.ec2.EC2Resources.isValidIpamInternetRegistryAssociationArn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -56075,6 +56672,22 @@ ec2.EC2Resources.parseIpamExternalResourceVerificationTokenArn(arn: string)
 Parses a ipam-external-resource-verification-token ARN into its components.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.ec2.EC2Resources.parseIpamExternalResourceVerificationTokenArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseIpamInternetRegistryAssociationArn` <a name="parseIpamInternetRegistryAssociationArn" id="@cdk_utils/iam.ec2.EC2Resources.parseIpamInternetRegistryAssociationArn"></a>
+
+```typescript
+import { ec2 } from '@cdk_utils/iam'
+
+ec2.EC2Resources.parseIpamInternetRegistryAssociationArn(arn: string)
+```
+
+Parses a ipam-internet-registry-association ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.ec2.EC2Resources.parseIpamInternetRegistryAssociationArn.parameter.arn"></a>
 
 - *Type:* string
 
