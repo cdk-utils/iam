@@ -3,6 +3,154 @@
 
 ## Structs <a name="Structs" id="Structs"></a>
 
+### KinesisChannelArnComponents <a name="KinesisChannelArnComponents" id="@cdk_utils/iam.kinesis.KinesisChannelArnComponents"></a>
+
+Parsed components of a channel ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.kinesis.KinesisChannelArnComponents.Initializer"></a>
+
+```typescript
+import { kinesis } from '@cdk_utils/iam'
+
+const kinesisChannelArnComponents: kinesis.KinesisChannelArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisChannelArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisChannelArnComponents.property.channelId">channelId</a></code> | <code>string</code> | The ChannelId component. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisChannelArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisChannelArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.kinesis.KinesisChannelArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `channelId`<sup>Required</sup> <a name="channelId" id="@cdk_utils/iam.kinesis.KinesisChannelArnComponents.property.channelId"></a>
+
+```typescript
+public readonly channelId: string;
+```
+
+- *Type:* string
+
+The ChannelId component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.kinesis.KinesisChannelArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.kinesis.KinesisChannelArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### KinesisChannelArnProps <a name="KinesisChannelArnProps" id="@cdk_utils/iam.kinesis.KinesisChannelArnProps"></a>
+
+Properties for building a channel ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.kinesis.KinesisChannelArnProps.Initializer"></a>
+
+```typescript
+import { kinesis } from '@cdk_utils/iam'
+
+const kinesisChannelArnProps: kinesis.KinesisChannelArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisChannelArnProps.property.channelId">channelId</a></code> | <code>string</code> | The ChannelId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisChannelArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisChannelArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisChannelArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `channelId`<sup>Required</sup> <a name="channelId" id="@cdk_utils/iam.kinesis.KinesisChannelArnProps.property.channelId"></a>
+
+```typescript
+public readonly channelId: string;
+```
+
+- *Type:* string
+
+The ChannelId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.kinesis.KinesisChannelArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.kinesis.KinesisChannelArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.kinesis.KinesisChannelArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### KinesisConsumerArnComponents <a name="KinesisConsumerArnComponents" id="@cdk_utils/iam.kinesis.KinesisConsumerArnComponents"></a>
 
 Parsed components of a consumer ARN.
@@ -560,12 +708,16 @@ new kinesis.KinesisActions()
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.AllReadActions">AllReadActions</a></code> | <code>string[]</code> | All read-level actions. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.AllTaggingActions">AllTaggingActions</a></code> | <code>string[]</code> | All tagging-level actions. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.AssociateStreamsWithChannel">AssociateStreamsWithChannel</a></code> | <code>string</code> | [Write] kinesis:AssociateStreamsWithChannel. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.CreateChannel">CreateChannel</a></code> | <code>string</code> | [Tagging] kinesis:CreateChannel. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.CreateStream">CreateStream</a></code> | <code>string</code> | [Write] kinesis:CreateStream. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.DecreaseStreamRetentionPeriod">DecreaseStreamRetentionPeriod</a></code> | <code>string</code> | [Write] kinesis:DecreaseStreamRetentionPeriod. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.DeleteChannel">DeleteChannel</a></code> | <code>string</code> | [Write] kinesis:DeleteChannel. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.DeleteResourcePolicy">DeleteResourcePolicy</a></code> | <code>string</code> | [Write] kinesis:DeleteResourcePolicy. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.DeleteStream">DeleteStream</a></code> | <code>string</code> | [Write] kinesis:DeleteStream. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.DeregisterStreamConsumer">DeregisterStreamConsumer</a></code> | <code>string</code> | [Write] kinesis:DeregisterStreamConsumer. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.DescribeAccountSettings">DescribeAccountSettings</a></code> | <code>string</code> | [Read] kinesis:DescribeAccountSettings. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.DescribeChannel">DescribeChannel</a></code> | <code>string</code> | [Read] kinesis:DescribeChannel. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.DescribeLimits">DescribeLimits</a></code> | <code>string</code> | [Read] kinesis:DescribeLimits. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.DescribeStream">DescribeStream</a></code> | <code>string</code> | [Read] kinesis:DescribeStream. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.DescribeStreamConsumer">DescribeStreamConsumer</a></code> | <code>string</code> | [Read] kinesis:DescribeStreamConsumer. |
@@ -574,6 +726,7 @@ new kinesis.KinesisActions()
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.EnableEnhancedMonitoring">EnableEnhancedMonitoring</a></code> | <code>string</code> | [Write] kinesis:EnableEnhancedMonitoring. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.IncreaseStreamRetentionPeriod">IncreaseStreamRetentionPeriod</a></code> | <code>string</code> | [Write] kinesis:IncreaseStreamRetentionPeriod. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.InjectApiError">InjectApiError</a></code> | <code>string</code> | [Write] kinesis:InjectApiError. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.ListChannels">ListChannels</a></code> | <code>string</code> | [List] kinesis:ListChannels. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.ListShards">ListShards</a></code> | <code>string</code> | [List] kinesis:ListShards. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.ListStreamConsumers">ListStreamConsumers</a></code> | <code>string</code> | [List] kinesis:ListStreamConsumers. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.ListStreams">ListStreams</a></code> | <code>string</code> | [List] kinesis:ListStreams. |
@@ -593,6 +746,7 @@ new kinesis.KinesisActions()
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] kinesis:TagResource. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] kinesis:UntagResource. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.UpdateAccountSettings">UpdateAccountSettings</a></code> | <code>string</code> | [Write] kinesis:UpdateAccountSettings. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.UpdateChannel">UpdateChannel</a></code> | <code>string</code> | [Write] kinesis:UpdateChannel. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.UpdateMaxRecordSize">UpdateMaxRecordSize</a></code> | <code>string</code> | [Write] kinesis:UpdateMaxRecordSize. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.UpdateShardCount">UpdateShardCount</a></code> | <code>string</code> | [Write] kinesis:UpdateShardCount. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.UpdateStreamMode">UpdateStreamMode</a></code> | <code>string</code> | [Write] kinesis:UpdateStreamMode. |
@@ -708,6 +862,30 @@ All write-level actions.
 
 ---
 
+##### `AssociateStreamsWithChannel`<sup>Required</sup> <a name="AssociateStreamsWithChannel" id="@cdk_utils/iam.kinesis.KinesisActions.property.AssociateStreamsWithChannel"></a>
+
+```typescript
+public readonly AssociateStreamsWithChannel: string;
+```
+
+- *Type:* string
+
+[Write] kinesis:AssociateStreamsWithChannel.
+
+---
+
+##### `CreateChannel`<sup>Required</sup> <a name="CreateChannel" id="@cdk_utils/iam.kinesis.KinesisActions.property.CreateChannel"></a>
+
+```typescript
+public readonly CreateChannel: string;
+```
+
+- *Type:* string
+
+[Tagging] kinesis:CreateChannel.
+
+---
+
 ##### `CreateStream`<sup>Required</sup> <a name="CreateStream" id="@cdk_utils/iam.kinesis.KinesisActions.property.CreateStream"></a>
 
 ```typescript
@@ -729,6 +907,18 @@ public readonly DecreaseStreamRetentionPeriod: string;
 - *Type:* string
 
 [Write] kinesis:DecreaseStreamRetentionPeriod.
+
+---
+
+##### `DeleteChannel`<sup>Required</sup> <a name="DeleteChannel" id="@cdk_utils/iam.kinesis.KinesisActions.property.DeleteChannel"></a>
+
+```typescript
+public readonly DeleteChannel: string;
+```
+
+- *Type:* string
+
+[Write] kinesis:DeleteChannel.
 
 ---
 
@@ -777,6 +967,18 @@ public readonly DescribeAccountSettings: string;
 - *Type:* string
 
 [Read] kinesis:DescribeAccountSettings.
+
+---
+
+##### `DescribeChannel`<sup>Required</sup> <a name="DescribeChannel" id="@cdk_utils/iam.kinesis.KinesisActions.property.DescribeChannel"></a>
+
+```typescript
+public readonly DescribeChannel: string;
+```
+
+- *Type:* string
+
+[Read] kinesis:DescribeChannel.
 
 ---
 
@@ -873,6 +1075,18 @@ public readonly InjectApiError: string;
 - *Type:* string
 
 [Write] kinesis:InjectApiError.
+
+---
+
+##### `ListChannels`<sup>Required</sup> <a name="ListChannels" id="@cdk_utils/iam.kinesis.KinesisActions.property.ListChannels"></a>
+
+```typescript
+public readonly ListChannels: string;
+```
+
+- *Type:* string
+
+[List] kinesis:ListChannels.
 
 ---
 
@@ -1101,6 +1315,18 @@ public readonly UpdateAccountSettings: string;
 - *Type:* string
 
 [Write] kinesis:UpdateAccountSettings.
+
+---
+
+##### `UpdateChannel`<sup>Required</sup> <a name="UpdateChannel" id="@cdk_utils/iam.kinesis.KinesisActions.property.UpdateChannel"></a>
+
+```typescript
+public readonly UpdateChannel: string;
+```
+
+- *Type:* string
+
+[Write] kinesis:UpdateChannel.
 
 ---
 
@@ -1999,15 +2225,34 @@ new kinesis.KinesisResources()
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisResources.channel">channel</a></code> | Builds an ARN for the channel resource. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisResources.consumer">consumer</a></code> | Builds an ARN for the consumer resource. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisResources.isValidChannelArn">isValidChannelArn</a></code> | Validates whether a string is a valid ARN for the channel resource. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisResources.isValidConsumerArn">isValidConsumerArn</a></code> | Validates whether a string is a valid ARN for the consumer resource. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisResources.isValidKMSKeyArn">isValidKMSKeyArn</a></code> | Validates whether a string is a valid ARN for the kmsKey resource. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisResources.isValidStreamArn">isValidStreamArn</a></code> | Validates whether a string is a valid ARN for the stream resource. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisResources.kmsKey">kmsKey</a></code> | Builds an ARN for the kmsKey resource. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisResources.parseChannelArn">parseChannelArn</a></code> | Parses a channel ARN into its components. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisResources.parseConsumerArn">parseConsumerArn</a></code> | Parses a consumer ARN into its components. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisResources.parseKMSKeyArn">parseKMSKeyArn</a></code> | Parses a kmsKey ARN into its components. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisResources.parseStreamArn">parseStreamArn</a></code> | Parses a stream ARN into its components. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisResources.stream">stream</a></code> | Builds an ARN for the stream resource. |
+
+---
+
+##### `channel` <a name="channel" id="@cdk_utils/iam.kinesis.KinesisResources.channel"></a>
+
+```typescript
+import { kinesis } from '@cdk_utils/iam'
+
+kinesis.KinesisResources.channel(props: KinesisChannelArnProps)
+```
+
+Builds an ARN for the channel resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.kinesis.KinesisResources.channel.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.kinesis.KinesisChannelArnProps">KinesisChannelArnProps</a>
 
 ---
 
@@ -2024,6 +2269,22 @@ Builds an ARN for the consumer resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.kinesis.KinesisResources.consumer.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.kinesis.KinesisConsumerArnProps">KinesisConsumerArnProps</a>
+
+---
+
+##### `isValidChannelArn` <a name="isValidChannelArn" id="@cdk_utils/iam.kinesis.KinesisResources.isValidChannelArn"></a>
+
+```typescript
+import { kinesis } from '@cdk_utils/iam'
+
+kinesis.KinesisResources.isValidChannelArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the channel resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.kinesis.KinesisResources.isValidChannelArn.parameter.arn"></a>
+
+- *Type:* string
 
 ---
 
@@ -2088,6 +2349,22 @@ Builds an ARN for the kmsKey resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.kinesis.KinesisResources.kmsKey.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.kinesis.KinesisKMSKeyArnProps">KinesisKMSKeyArnProps</a>
+
+---
+
+##### `parseChannelArn` <a name="parseChannelArn" id="@cdk_utils/iam.kinesis.KinesisResources.parseChannelArn"></a>
+
+```typescript
+import { kinesis } from '@cdk_utils/iam'
+
+kinesis.KinesisResources.parseChannelArn(arn: string)
+```
+
+Parses a channel ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.kinesis.KinesisResources.parseChannelArn.parameter.arn"></a>
+
+- *Type:* string
 
 ---
 

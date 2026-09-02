@@ -7506,6 +7506,7 @@ new connect.ConnectActions()
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.actionGetAttachedFile">actionGetAttachedFile</a></code> | <code>string</code> | [Read] connect:GetAttachedFile. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.actionGetContactAttributes">actionGetContactAttributes</a></code> | <code>string</code> | [Read] connect:GetContactAttributes. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.actionGetContactMetrics">actionGetContactMetrics</a></code> | <code>string</code> | [Read] connect:GetContactMetrics. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.actionGetCrossRegionRouting">actionGetCrossRegionRouting</a></code> | <code>string</code> | [Read] connect:GetCrossRegionRouting. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.actionGetCurrentMetricData">actionGetCurrentMetricData</a></code> | <code>string</code> | [Read] connect:GetCurrentMetricData. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.actionGetCurrentUserData">actionGetCurrentUserData</a></code> | <code>string</code> | [Read] connect:GetCurrentUserData. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.actionGetEffectiveHoursOfOperations">actionGetEffectiveHoursOfOperations</a></code> | <code>string</code> | [Read] connect:GetEffectiveHoursOfOperations. |
@@ -7841,6 +7842,7 @@ new connect.ConnectActions()
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.UpdateContactFlowName">UpdateContactFlowName</a></code> | <code>string</code> | [Write] connect:UpdateContactFlowName. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.UpdateContactRoutingData">UpdateContactRoutingData</a></code> | <code>string</code> | [Write] connect:UpdateContactRoutingData. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.UpdateContactSchedule">UpdateContactSchedule</a></code> | <code>string</code> | [Write] connect:UpdateContactSchedule. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.UpdateCrossRegionRouting">UpdateCrossRegionRouting</a></code> | <code>string</code> | [Write] connect:UpdateCrossRegionRouting. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.UpdateDataTableAttribute">UpdateDataTableAttribute</a></code> | <code>string</code> | [Write] connect:UpdateDataTableAttribute. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.UpdateDataTableMetadata">UpdateDataTableMetadata</a></code> | <code>string</code> | [Write] connect:UpdateDataTableMetadata. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.UpdateDataTablePrimaryValues">UpdateDataTablePrimaryValues</a></code> | <code>string</code> | [Write] connect:UpdateDataTablePrimaryValues. |
@@ -7928,6 +7930,18 @@ public readonly actionGetContactMetrics: string;
 - *Type:* string
 
 [Read] connect:GetContactMetrics.
+
+---
+
+##### `actionGetCrossRegionRouting`<sup>Required</sup> <a name="actionGetCrossRegionRouting" id="@cdk_utils/iam.connect.ConnectActions.property.actionGetCrossRegionRouting"></a>
+
+```typescript
+public readonly actionGetCrossRegionRouting: string;
+```
+
+- *Type:* string
+
+[Read] connect:GetCrossRegionRouting.
 
 ---
 
@@ -11951,6 +11965,18 @@ public readonly UpdateContactSchedule: string;
 
 ---
 
+##### `UpdateCrossRegionRouting`<sup>Required</sup> <a name="UpdateCrossRegionRouting" id="@cdk_utils/iam.connect.ConnectActions.property.UpdateCrossRegionRouting"></a>
+
+```typescript
+public readonly UpdateCrossRegionRouting: string;
+```
+
+- *Type:* string
+
+[Write] connect:UpdateCrossRegionRouting.
+
+---
+
 ##### `UpdateDataTableAttribute`<sup>Required</sup> <a name="UpdateDataTableAttribute" id="@cdk_utils/iam.connect.ConnectActions.property.UpdateDataTableAttribute"></a>
 
 ```typescript
@@ -12953,6 +12979,7 @@ Generates a condition block for `connect:UserArn`.
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.actionGetAttachedFileConditionKeys">actionGetAttachedFileConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetAttachedFile action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.actionGetContactAttributesConditionKeys">actionGetContactAttributesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetContactAttributes action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.actionGetContactMetricsConditionKeys">actionGetContactMetricsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetContactMetrics action. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.actionGetCrossRegionRoutingConditionKeys">actionGetCrossRegionRoutingConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetCrossRegionRouting action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.actionGetCurrentMetricDataConditionKeys">actionGetCurrentMetricDataConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetCurrentMetricData action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.actionGetCurrentUserDataConditionKeys">actionGetCurrentUserDataConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetCurrentUserData action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.actionGetEffectiveHoursOfOperationsConditionKeys">actionGetEffectiveHoursOfOperationsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetEffectiveHoursOfOperations action. |
@@ -13285,6 +13312,7 @@ Generates a condition block for `connect:UserArn`.
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.UpdateContactFlowNameConditionKeys">UpdateContactFlowNameConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateContactFlowName action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.UpdateContactRoutingDataConditionKeys">UpdateContactRoutingDataConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateContactRoutingData action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.UpdateContactScheduleConditionKeys">UpdateContactScheduleConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateContactSchedule action. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.UpdateCrossRegionRoutingConditionKeys">UpdateCrossRegionRoutingConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateCrossRegionRouting action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.UpdateDataTableAttributeConditionKeys">UpdateDataTableAttributeConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateDataTableAttribute action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.UpdateDataTableMetadataConditionKeys">UpdateDataTableMetadataConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateDataTableMetadata action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.UpdateDataTablePrimaryValuesConditionKeys">UpdateDataTablePrimaryValuesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateDataTablePrimaryValues action. |
@@ -13373,6 +13401,18 @@ public readonly actionGetContactMetricsConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the GetContactMetrics action.
+
+---
+
+##### `actionGetCrossRegionRoutingConditionKeys`<sup>Required</sup> <a name="actionGetCrossRegionRoutingConditionKeys" id="@cdk_utils/iam.connect.ConnectConditions.property.actionGetCrossRegionRoutingConditionKeys"></a>
+
+```typescript
+public readonly actionGetCrossRegionRoutingConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetCrossRegionRouting action.
 
 ---
 
@@ -17357,6 +17397,18 @@ public readonly UpdateContactScheduleConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the UpdateContactSchedule action.
+
+---
+
+##### `UpdateCrossRegionRoutingConditionKeys`<sup>Required</sup> <a name="UpdateCrossRegionRoutingConditionKeys" id="@cdk_utils/iam.connect.ConnectConditions.property.UpdateCrossRegionRoutingConditionKeys"></a>
+
+```typescript
+public readonly UpdateCrossRegionRoutingConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UpdateCrossRegionRouting action.
 
 ---
 

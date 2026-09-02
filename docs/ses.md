@@ -8924,6 +8924,7 @@ new ses.SesOperations()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.ses.SesOperations.property.AssociateEmailIdentityCertificate">AssociateEmailIdentityCertificate</a></code> | <code>string[]</code> | IAM actions required for the AssociateEmailIdentityCertificate API call. |
 | <code><a href="#@cdk_utils/iam.ses.SesOperations.property.BatchGetMetricData">BatchGetMetricData</a></code> | <code>string[]</code> | IAM actions required for the BatchGetMetricData API call. |
 | <code><a href="#@cdk_utils/iam.ses.SesOperations.property.CancelExportJob">CancelExportJob</a></code> | <code>string[]</code> | IAM actions required for the CancelExportJob API call. |
 | <code><a href="#@cdk_utils/iam.ses.SesOperations.property.CloneReceiptRuleSet">CloneReceiptRuleSet</a></code> | <code>string[]</code> | IAM actions required for the CloneReceiptRuleSet API call. |
@@ -8990,6 +8991,7 @@ new ses.SesOperations()
 | <code><a href="#@cdk_utils/iam.ses.SesOperations.property.DescribeConfigurationSet">DescribeConfigurationSet</a></code> | <code>string[]</code> | IAM actions required for the DescribeConfigurationSet API call. |
 | <code><a href="#@cdk_utils/iam.ses.SesOperations.property.DescribeReceiptRule">DescribeReceiptRule</a></code> | <code>string[]</code> | IAM actions required for the DescribeReceiptRule API call. |
 | <code><a href="#@cdk_utils/iam.ses.SesOperations.property.DescribeReceiptRuleSet">DescribeReceiptRuleSet</a></code> | <code>string[]</code> | IAM actions required for the DescribeReceiptRuleSet API call. |
+| <code><a href="#@cdk_utils/iam.ses.SesOperations.property.DisassociateEmailIdentityCertificate">DisassociateEmailIdentityCertificate</a></code> | <code>string[]</code> | IAM actions required for the DisassociateEmailIdentityCertificate API call. |
 | <code><a href="#@cdk_utils/iam.ses.SesOperations.property.ListAddonInstances">ListAddonInstances</a></code> | <code>string[]</code> | IAM actions required for the ListAddonInstances API call. |
 | <code><a href="#@cdk_utils/iam.ses.SesOperations.property.ListAddonSubscriptions">ListAddonSubscriptions</a></code> | <code>string[]</code> | IAM actions required for the ListAddonSubscriptions API call. |
 | <code><a href="#@cdk_utils/iam.ses.SesOperations.property.ListAddressListImportJobs">ListAddressListImportJobs</a></code> | <code>string[]</code> | IAM actions required for the ListAddressListImportJobs API call. |
@@ -9005,6 +9007,7 @@ new ses.SesOperations()
 | <code><a href="#@cdk_utils/iam.ses.SesOperations.property.ListDeliverabilityTestReports">ListDeliverabilityTestReports</a></code> | <code>string[]</code> | IAM actions required for the ListDeliverabilityTestReports API call. |
 | <code><a href="#@cdk_utils/iam.ses.SesOperations.property.ListDomainDeliverabilityCampaigns">ListDomainDeliverabilityCampaigns</a></code> | <code>string[]</code> | IAM actions required for the ListDomainDeliverabilityCampaigns API call. |
 | <code><a href="#@cdk_utils/iam.ses.SesOperations.property.ListEmailIdentities">ListEmailIdentities</a></code> | <code>string[]</code> | IAM actions required for the ListEmailIdentities API call. |
+| <code><a href="#@cdk_utils/iam.ses.SesOperations.property.ListEmailIdentityCertificates">ListEmailIdentityCertificates</a></code> | <code>string[]</code> | IAM actions required for the ListEmailIdentityCertificates API call. |
 | <code><a href="#@cdk_utils/iam.ses.SesOperations.property.ListEmailTemplates">ListEmailTemplates</a></code> | <code>string[]</code> | IAM actions required for the ListEmailTemplates API call. |
 | <code><a href="#@cdk_utils/iam.ses.SesOperations.property.ListExportJobs">ListExportJobs</a></code> | <code>string[]</code> | IAM actions required for the ListExportJobs API call. |
 | <code><a href="#@cdk_utils/iam.ses.SesOperations.property.ListIdentities">ListIdentities</a></code> | <code>string[]</code> | IAM actions required for the ListIdentities API call. |
@@ -9129,6 +9132,7 @@ new ses.SesOperations()
 | <code><a href="#@cdk_utils/iam.ses.SesOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
 | <code><a href="#@cdk_utils/iam.ses.SesOperations.property.UpdateAccountSendingEnabled">UpdateAccountSendingEnabled</a></code> | <code>string[]</code> | IAM actions required for the UpdateAccountSendingEnabled API call. |
 | <code><a href="#@cdk_utils/iam.ses.SesOperations.property.UpdateArchive">UpdateArchive</a></code> | <code>string[]</code> | IAM actions required for the UpdateArchive API call. |
+| <code><a href="#@cdk_utils/iam.ses.SesOperations.property.UpdateConfigurationSet">UpdateConfigurationSet</a></code> | <code>string[]</code> | IAM actions required for the UpdateConfigurationSet API call. |
 | <code><a href="#@cdk_utils/iam.ses.SesOperations.property.UpdateConfigurationSetEventDestination">UpdateConfigurationSetEventDestination</a></code> | <code>string[]</code> | IAM actions required for the UpdateConfigurationSetEventDestination API call. |
 | <code><a href="#@cdk_utils/iam.ses.SesOperations.property.UpdateConfigurationSetReputationMetricsEnabled">UpdateConfigurationSetReputationMetricsEnabled</a></code> | <code>string[]</code> | IAM actions required for the UpdateConfigurationSetReputationMetricsEnabled API call. |
 | <code><a href="#@cdk_utils/iam.ses.SesOperations.property.UpdateConfigurationSetSendingEnabled">UpdateConfigurationSetSendingEnabled</a></code> | <code>string[]</code> | IAM actions required for the UpdateConfigurationSetSendingEnabled API call. |
@@ -9150,6 +9154,18 @@ new ses.SesOperations()
 | <code><a href="#@cdk_utils/iam.ses.SesOperations.property.VerifyDomainIdentity">VerifyDomainIdentity</a></code> | <code>string[]</code> | IAM actions required for the VerifyDomainIdentity API call. |
 | <code><a href="#@cdk_utils/iam.ses.SesOperations.property.VerifyEmailAddress">VerifyEmailAddress</a></code> | <code>string[]</code> | IAM actions required for the VerifyEmailAddress API call. |
 | <code><a href="#@cdk_utils/iam.ses.SesOperations.property.VerifyEmailIdentity">VerifyEmailIdentity</a></code> | <code>string[]</code> | IAM actions required for the VerifyEmailIdentity API call. |
+
+---
+
+##### `AssociateEmailIdentityCertificate`<sup>Required</sup> <a name="AssociateEmailIdentityCertificate" id="@cdk_utils/iam.ses.SesOperations.property.AssociateEmailIdentityCertificate"></a>
+
+```typescript
+public readonly AssociateEmailIdentityCertificate: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the AssociateEmailIdentityCertificate API call.
 
 ---
 
@@ -9945,6 +9961,18 @@ IAM actions required for the DescribeReceiptRuleSet API call.
 
 ---
 
+##### `DisassociateEmailIdentityCertificate`<sup>Required</sup> <a name="DisassociateEmailIdentityCertificate" id="@cdk_utils/iam.ses.SesOperations.property.DisassociateEmailIdentityCertificate"></a>
+
+```typescript
+public readonly DisassociateEmailIdentityCertificate: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DisassociateEmailIdentityCertificate API call.
+
+---
+
 ##### `ListAddonInstances`<sup>Required</sup> <a name="ListAddonInstances" id="@cdk_utils/iam.ses.SesOperations.property.ListAddonInstances"></a>
 
 ```typescript
@@ -10122,6 +10150,18 @@ public readonly ListEmailIdentities: string[];
 - *Type:* string[]
 
 IAM actions required for the ListEmailIdentities API call.
+
+---
+
+##### `ListEmailIdentityCertificates`<sup>Required</sup> <a name="ListEmailIdentityCertificates" id="@cdk_utils/iam.ses.SesOperations.property.ListEmailIdentityCertificates"></a>
+
+```typescript
+public readonly ListEmailIdentityCertificates: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListEmailIdentityCertificates API call.
 
 ---
 
@@ -11610,6 +11650,18 @@ public readonly UpdateArchive: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateArchive API call.
+
+---
+
+##### `UpdateConfigurationSet`<sup>Required</sup> <a name="UpdateConfigurationSet" id="@cdk_utils/iam.ses.SesOperations.property.UpdateConfigurationSet"></a>
+
+```typescript
+public readonly UpdateConfigurationSet: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateConfigurationSet API call.
 
 ---
 

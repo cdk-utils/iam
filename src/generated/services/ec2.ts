@@ -137,6 +137,9 @@ export class EC2Actions {
 	/** [Write] ec2:AuthorizeSecurityGroupIngress */
 	static readonly AuthorizeSecurityGroupIngress =
 		"ec2:AuthorizeSecurityGroupIngress";
+	/** [Write] ec2:BatchModifyIpamRoutingPolicyRegistrations */
+	static readonly BatchModifyIpamRoutingPolicyRegistrations =
+		"ec2:BatchModifyIpamRoutingPolicyRegistrations";
 	/** [Write] ec2:BundleInstance */
 	static readonly BundleInstance = "ec2:BundleInstance";
 	/** [Write] ec2:CancelBundleTask */
@@ -245,6 +248,9 @@ export class EC2Actions {
 	/** [Write] ec2:CreateIpamExternalResourceVerificationToken */
 	static readonly CreateIpamExternalResourceVerificationToken =
 		"ec2:CreateIpamExternalResourceVerificationToken";
+	/** [Write] ec2:CreateIpamInternetRegistryAssociation */
+	static readonly CreateIpamInternetRegistryAssociation =
+		"ec2:CreateIpamInternetRegistryAssociation";
 	/** [Write] ec2:CreateIpamPolicy */
 	static readonly CreateIpamPolicy = "ec2:CreateIpamPolicy";
 	/** [Write] ec2:CreateIpamPool */
@@ -258,6 +264,9 @@ export class EC2Actions {
 	/** [Write] ec2:CreateIpamResourceDiscovery */
 	static readonly CreateIpamResourceDiscovery =
 		"ec2:CreateIpamResourceDiscovery";
+	/** [Write] ec2:CreateIpamRoutingPolicyRegistration */
+	static readonly CreateIpamRoutingPolicyRegistration =
+		"ec2:CreateIpamRoutingPolicyRegistration";
 	/** [Write] ec2:CreateIpamScope */
 	static readonly CreateIpamScope = "ec2:CreateIpamScope";
 	/** [Write] ec2:CreateKeyPair */
@@ -486,6 +495,9 @@ export class EC2Actions {
 	/** [Write] ec2:DeleteIpamExternalResourceVerificationToken */
 	static readonly DeleteIpamExternalResourceVerificationToken =
 		"ec2:DeleteIpamExternalResourceVerificationToken";
+	/** [Write] ec2:DeleteIpamInternetRegistryAssociation */
+	static readonly DeleteIpamInternetRegistryAssociation =
+		"ec2:DeleteIpamInternetRegistryAssociation";
 	/** [Write] ec2:DeleteIpamPolicy */
 	static readonly DeleteIpamPolicy = "ec2:DeleteIpamPolicy";
 	/** [Write] ec2:DeleteIpamPool */
@@ -499,6 +511,9 @@ export class EC2Actions {
 	/** [Write] ec2:DeleteIpamResourceDiscovery */
 	static readonly DeleteIpamResourceDiscovery =
 		"ec2:DeleteIpamResourceDiscovery";
+	/** [Write] ec2:DeleteIpamRoutingPolicyRegistration */
+	static readonly DeleteIpamRoutingPolicyRegistration =
+		"ec2:DeleteIpamRoutingPolicyRegistration";
 	/** [Write] ec2:DeleteIpamScope */
 	static readonly DeleteIpamScope = "ec2:DeleteIpamScope";
 	/** [Write] ec2:DeleteKeyPair */
@@ -703,6 +718,9 @@ export class EC2Actions {
 		"ec2:DeregisterTransitGatewayMulticastGroupSources";
 	/** [List] ec2:DescribeAccountAttributes */
 	static readonly DescribeAccountAttributes = "ec2:DescribeAccountAttributes";
+	/** [List] ec2:DescribeAccountVpcEncryptionControl */
+	static readonly DescribeAccountVpcEncryptionControl =
+		"ec2:DescribeAccountVpcEncryptionControl";
 	/** [List] ec2:DescribeAddressTransfers */
 	static readonly DescribeAddressTransfers = "ec2:DescribeAddressTransfers";
 	/** [List] ec2:DescribeAddresses */
@@ -886,6 +904,9 @@ export class EC2Actions {
 	/** [List] ec2:DescribeIpamExternalResourceVerificationTokens */
 	static readonly DescribeIpamExternalResourceVerificationTokens =
 		"ec2:DescribeIpamExternalResourceVerificationTokens";
+	/** [List] ec2:DescribeIpamInternetRegistryAssociations */
+	static readonly DescribeIpamInternetRegistryAssociations =
+		"ec2:DescribeIpamInternetRegistryAssociations";
 	/** [List] ec2:DescribeIpamPolicies */
 	static readonly DescribeIpamPolicies = "ec2:DescribeIpamPolicies";
 	/** [List] ec2:DescribeIpamPoolAllocations */
@@ -1349,6 +1370,9 @@ export class EC2Actions {
 	/** [Write] ec2:EnableInstanceSqlHaStandbyDetections */
 	static readonly EnableInstanceSqlHaStandbyDetections =
 		"ec2:EnableInstanceSqlHaStandbyDetections";
+	/** [Write] ec2:EnableIpamInternetRegistryAssociation */
+	static readonly EnableIpamInternetRegistryAssociation =
+		"ec2:EnableIpamInternetRegistryAssociation";
 	/** [Write] ec2:EnableIpamOrganizationAdminAccount */
 	static readonly EnableIpamOrganizationAdminAccount =
 		"ec2:EnableIpamOrganizationAdminAccount";
@@ -1474,6 +1498,14 @@ export class EC2Actions {
 	/** [Read] ec2:GetIpamDiscoveredResourceCidrs */
 	static readonly actionGetIpamDiscoveredResourceCidrs =
 		"ec2:GetIpamDiscoveredResourceCidrs";
+	/** [Read] ec2:GetIpamDiscoveredRoutes */
+	static readonly actionGetIpamDiscoveredRoutes = "ec2:GetIpamDiscoveredRoutes";
+	/** [Read] ec2:GetIpamInternetRegistryAssociationAsns */
+	static readonly actionGetIpamInternetRegistryAssociationAsns =
+		"ec2:GetIpamInternetRegistryAssociationAsns";
+	/** [Read] ec2:GetIpamInternetRegistryAssociationCidrs */
+	static readonly actionGetIpamInternetRegistryAssociationCidrs =
+		"ec2:GetIpamInternetRegistryAssociationCidrs";
 	/** [List] ec2:GetIpamPolicyAllocationRules */
 	static readonly actionGetIpamPolicyAllocationRules =
 		"ec2:GetIpamPolicyAllocationRules";
@@ -1495,6 +1527,18 @@ export class EC2Actions {
 		"ec2:GetIpamPrefixListResolverVersions";
 	/** [Read] ec2:GetIpamResourceCidrs */
 	static readonly actionGetIpamResourceCidrs = "ec2:GetIpamResourceCidrs";
+	/** [Read] ec2:GetIpamRouteOriginAuthorizations */
+	static readonly actionGetIpamRouteOriginAuthorizations =
+		"ec2:GetIpamRouteOriginAuthorizations";
+	/** [Read] ec2:GetIpamRouteProtectionFindings */
+	static readonly actionGetIpamRouteProtectionFindings =
+		"ec2:GetIpamRouteProtectionFindings";
+	/** [Read] ec2:GetIpamRoutingPolicyRegistrationDeltas */
+	static readonly actionGetIpamRoutingPolicyRegistrationDeltas =
+		"ec2:GetIpamRoutingPolicyRegistrationDeltas";
+	/** [Read] ec2:GetIpamRoutingPolicyRegistrations */
+	static readonly actionGetIpamRoutingPolicyRegistrations =
+		"ec2:GetIpamRoutingPolicyRegistrations";
 	/** [Read] ec2:GetLaunchTemplateData */
 	static readonly actionGetLaunchTemplateData = "ec2:GetLaunchTemplateData";
 	/** [Read] ec2:GetManagedPrefixListAssociations */
@@ -1616,6 +1660,9 @@ export class EC2Actions {
 	static readonly ListVolumesInRecycleBin = "ec2:ListVolumesInRecycleBin";
 	/** [Write] ec2:LockSnapshot */
 	static readonly LockSnapshot = "ec2:LockSnapshot";
+	/** [Write] ec2:ModifyAccountVpcEncryptionControl */
+	static readonly ModifyAccountVpcEncryptionControl =
+		"ec2:ModifyAccountVpcEncryptionControl";
 	/** [Write] ec2:ModifyAddressAttribute */
 	static readonly ModifyAddressAttribute = "ec2:ModifyAddressAttribute";
 	/** [Write] ec2:ModifyApplicationStatusCheck */
@@ -1700,6 +1747,9 @@ export class EC2Actions {
 	/** [Write] ec2:ModifyIpamResourceDiscovery */
 	static readonly ModifyIpamResourceDiscovery =
 		"ec2:ModifyIpamResourceDiscovery";
+	/** [Write] ec2:ModifyIpamRoutingPolicyRegistration */
+	static readonly ModifyIpamRoutingPolicyRegistration =
+		"ec2:ModifyIpamRoutingPolicyRegistration";
 	/** [Write] ec2:ModifyIpamScope */
 	static readonly ModifyIpamScope = "ec2:ModifyIpamScope";
 	/** [Write] ec2:ModifyLaunchTemplate */
@@ -2055,11 +2105,18 @@ export class EC2Actions {
 		EC2Actions.actionGetIpamDiscoveredAccounts,
 		EC2Actions.actionGetIpamDiscoveredPublicAddresses,
 		EC2Actions.actionGetIpamDiscoveredResourceCidrs,
+		EC2Actions.actionGetIpamDiscoveredRoutes,
+		EC2Actions.actionGetIpamInternetRegistryAssociationAsns,
+		EC2Actions.actionGetIpamInternetRegistryAssociationCidrs,
 		EC2Actions.actionGetIpamPoolCidrs,
 		EC2Actions.actionGetIpamPrefixListResolverRules,
 		EC2Actions.actionGetIpamPrefixListResolverVersionEntries,
 		EC2Actions.actionGetIpamPrefixListResolverVersions,
 		EC2Actions.actionGetIpamResourceCidrs,
+		EC2Actions.actionGetIpamRouteOriginAuthorizations,
+		EC2Actions.actionGetIpamRouteProtectionFindings,
+		EC2Actions.actionGetIpamRoutingPolicyRegistrationDeltas,
+		EC2Actions.actionGetIpamRoutingPolicyRegistrations,
 		EC2Actions.actionGetLaunchTemplateData,
 		EC2Actions.actionGetManagedPrefixListAssociations,
 		EC2Actions.actionGetManagedPrefixListEntries,
@@ -2128,6 +2185,7 @@ export class EC2Actions {
 		EC2Actions.AuthorizeClientVpnIngress,
 		EC2Actions.AuthorizeSecurityGroupEgress,
 		EC2Actions.AuthorizeSecurityGroupIngress,
+		EC2Actions.BatchModifyIpamRoutingPolicyRegistrations,
 		EC2Actions.BundleInstance,
 		EC2Actions.CancelBundleTask,
 		EC2Actions.CancelCapacityReservation,
@@ -2173,11 +2231,13 @@ export class EC2Actions {
 		EC2Actions.CreateInterruptibleCapacityReservationAllocation,
 		EC2Actions.CreateIpam,
 		EC2Actions.CreateIpamExternalResourceVerificationToken,
+		EC2Actions.CreateIpamInternetRegistryAssociation,
 		EC2Actions.CreateIpamPolicy,
 		EC2Actions.CreateIpamPool,
 		EC2Actions.CreateIpamPrefixListResolver,
 		EC2Actions.CreateIpamPrefixListResolverTarget,
 		EC2Actions.CreateIpamResourceDiscovery,
+		EC2Actions.CreateIpamRoutingPolicyRegistration,
 		EC2Actions.CreateIpamScope,
 		EC2Actions.CreateKeyPair,
 		EC2Actions.CreateLaunchTemplate,
@@ -2268,11 +2328,13 @@ export class EC2Actions {
 		EC2Actions.DeleteInternetGateway,
 		EC2Actions.DeleteIpam,
 		EC2Actions.DeleteIpamExternalResourceVerificationToken,
+		EC2Actions.DeleteIpamInternetRegistryAssociation,
 		EC2Actions.DeleteIpamPolicy,
 		EC2Actions.DeleteIpamPool,
 		EC2Actions.DeleteIpamPrefixListResolver,
 		EC2Actions.DeleteIpamPrefixListResolverTarget,
 		EC2Actions.DeleteIpamResourceDiscovery,
+		EC2Actions.DeleteIpamRoutingPolicyRegistration,
 		EC2Actions.DeleteIpamScope,
 		EC2Actions.DeleteKeyPair,
 		EC2Actions.DeleteLaunchTemplate,
@@ -2409,6 +2471,7 @@ export class EC2Actions {
 		EC2Actions.EnableImageDeprecation,
 		EC2Actions.EnableImageDeregistrationProtection,
 		EC2Actions.EnableInstanceSqlHaStandbyDetections,
+		EC2Actions.EnableIpamInternetRegistryAssociation,
 		EC2Actions.EnableIpamOrganizationAdminAccount,
 		EC2Actions.EnableIpamPolicy,
 		EC2Actions.EnableReachabilityAnalyzerOrganizationSharing,
@@ -2431,6 +2494,7 @@ export class EC2Actions {
 		EC2Actions.InjectApiError,
 		EC2Actions.InjectVolumeIOLatency,
 		EC2Actions.LockSnapshot,
+		EC2Actions.ModifyAccountVpcEncryptionControl,
 		EC2Actions.ModifyAddressAttribute,
 		EC2Actions.ModifyApplicationStatusCheck,
 		EC2Actions.ModifyAvailabilityZoneGroup,
@@ -2465,6 +2529,7 @@ export class EC2Actions {
 		EC2Actions.ModifyIpamPrefixListResolverTarget,
 		EC2Actions.ModifyIpamResourceCidr,
 		EC2Actions.ModifyIpamResourceDiscovery,
+		EC2Actions.ModifyIpamRoutingPolicyRegistration,
 		EC2Actions.ModifyIpamScope,
 		EC2Actions.ModifyLaunchTemplate,
 		EC2Actions.ModifyLocalGatewayRoute,
@@ -2592,6 +2657,7 @@ export class EC2Actions {
 	/** All list-level actions. */
 	static readonly AllListActions: string[] = [
 		EC2Actions.DescribeAccountAttributes,
+		EC2Actions.DescribeAccountVpcEncryptionControl,
 		EC2Actions.DescribeAddressTransfers,
 		EC2Actions.DescribeAddresses,
 		EC2Actions.DescribeAddressesAttribute,
@@ -2667,6 +2733,7 @@ export class EC2Actions {
 		EC2Actions.DescribeInternetGateways,
 		EC2Actions.DescribeIpamByoasn,
 		EC2Actions.DescribeIpamExternalResourceVerificationTokens,
+		EC2Actions.DescribeIpamInternetRegistryAssociations,
 		EC2Actions.DescribeIpamPolicies,
 		EC2Actions.DescribeIpamPoolAllocations,
 		EC2Actions.DescribeIpamPools,
@@ -3789,6 +3856,30 @@ export interface EC2IpamExternalResourceVerificationTokenArnComponents {
 	readonly account: string;
 	/** The IpamExternalResourceVerificationTokenId component. */
 	readonly ipamExternalResourceVerificationTokenId: string;
+}
+
+/**
+ * Properties for building a ipam-internet-registry-association ARN.
+ */
+export interface EC2IpamInternetRegistryAssociationArnProps {
+	/** The IpamInternetRegistryAssociationId component of the ARN. */
+	readonly ipamInternetRegistryAssociationId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ipam-internet-registry-association ARN.
+ */
+export interface EC2IpamInternetRegistryAssociationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The IpamInternetRegistryAssociationId component. */
+	readonly ipamInternetRegistryAssociationId: string;
 }
 
 /**
@@ -6039,6 +6130,8 @@ const IpamArnRegex =
 	/^arn:(?<partition>[^:]+):ec2::(?<account>[^:]*):ipam\/(?<ipamId>[^:/?]+)$/;
 const IpamExternalResourceVerificationTokenArnRegex =
 	/^arn:(?<partition>[^:]+):ec2::(?<account>[^:]*):ipam-external-resource-verification-token\/(?<ipamExternalResourceVerificationTokenId>[^:/?]+)$/;
+const IpamInternetRegistryAssociationArnRegex =
+	/^arn:(?<partition>[^:]+):ec2::(?<account>[^:]*):ipam-internet-registry-association\/(?<ipamInternetRegistryAssociationId>[^:/?]+)$/;
 const IpamPolicyArnRegex =
 	/^arn:(?<partition>[^:]+):ec2::(?<account>[^:]*):ipam-policy\/(?<ipamPolicyId>[^:/?]+)$/;
 const IpamPoolArnRegex =
@@ -7303,6 +7396,41 @@ export class EC2Resources {
 			account: match.groups.account,
 			ipamExternalResourceVerificationTokenId:
 				match.groups!.ipamExternalResourceVerificationTokenId,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the ipam-internet-registry-association resource.
+	 */
+	static ipamInternetRegistryAssociation(
+		props: EC2IpamInternetRegistryAssociationArnProps,
+	): string {
+		return `arn:${props.partition ?? "aws"}:ec2::${props.account ?? "*"}:ipam-internet-registry-association/${props.ipamInternetRegistryAssociationId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the ipam-internet-registry-association resource.
+	 */
+	static isValidIpamInternetRegistryAssociationArn(arn: string): boolean {
+		return IpamInternetRegistryAssociationArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a ipam-internet-registry-association ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseIpamInternetRegistryAssociationArn(
+		arn: string,
+	): EC2IpamInternetRegistryAssociationArnComponents {
+		const match = IpamInternetRegistryAssociationArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid ipam-internet-registry-association ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			account: match.groups.account,
+			ipamInternetRegistryAssociationId:
+				match.groups!.ipamInternetRegistryAssociationId,
 		};
 	}
 
@@ -10118,7 +10246,9 @@ export class EC2Operations {
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the BatchModifyIpamRoutingPolicyRegistrations API call. */
-	static readonly BatchModifyIpamRoutingPolicyRegistrations: string[] = [];
+	static readonly BatchModifyIpamRoutingPolicyRegistrations: string[] = [
+		"ec2:BatchModifyIpamRoutingPolicyRegistrations",
+	];
 	/** IAM actions required for the BundleInstance API call. */
 	static readonly BundleInstance: string[] = ["ec2:BundleInstance"];
 	/** IAM actions required for the CancelBundleTask API call. */
@@ -10299,6 +10429,7 @@ export class EC2Operations {
 	];
 	/** IAM actions required for the CreateIpamInternetRegistryAssociation API call. */
 	static readonly CreateIpamInternetRegistryAssociation: string[] = [
+		"ec2:CreateIpamInternetRegistryAssociation",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateIpamPolicy API call. */
@@ -10327,7 +10458,9 @@ export class EC2Operations {
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateIpamRoutingPolicyRegistration API call. */
-	static readonly CreateIpamRoutingPolicyRegistration: string[] = [];
+	static readonly CreateIpamRoutingPolicyRegistration: string[] = [
+		"ec2:CreateIpamRoutingPolicyRegistration",
+	];
 	/** IAM actions required for the CreateIpamScope API call. */
 	static readonly CreateIpamScope: string[] = [
 		"ec2:CreateIpamScope",
@@ -10732,7 +10865,9 @@ export class EC2Operations {
 		"ec2:DeleteIpamExternalResourceVerificationToken",
 	];
 	/** IAM actions required for the DeleteIpamInternetRegistryAssociation API call. */
-	static readonly DeleteIpamInternetRegistryAssociation: string[] = [];
+	static readonly DeleteIpamInternetRegistryAssociation: string[] = [
+		"ec2:DeleteIpamInternetRegistryAssociation",
+	];
 	/** IAM actions required for the DeleteIpamPolicy API call. */
 	static readonly DeleteIpamPolicy: string[] = ["ec2:DeleteIpamPolicy"];
 	/** IAM actions required for the DeleteIpamPool API call. */
@@ -10750,7 +10885,9 @@ export class EC2Operations {
 		"ec2:DeleteIpamResourceDiscovery",
 	];
 	/** IAM actions required for the DeleteIpamRoutingPolicyRegistration API call. */
-	static readonly DeleteIpamRoutingPolicyRegistration: string[] = [];
+	static readonly DeleteIpamRoutingPolicyRegistration: string[] = [
+		"ec2:DeleteIpamRoutingPolicyRegistration",
+	];
 	/** IAM actions required for the DeleteIpamScope API call. */
 	static readonly DeleteIpamScope: string[] = ["ec2:DeleteIpamScope"];
 	/** IAM actions required for the DeleteKeyPair API call. */
@@ -11027,7 +11164,9 @@ export class EC2Operations {
 		"ec2:DescribeAccountAttributes",
 	];
 	/** IAM actions required for the DescribeAccountVpcEncryptionControl API call. */
-	static readonly DescribeAccountVpcEncryptionControl: string[] = [];
+	static readonly DescribeAccountVpcEncryptionControl: string[] = [
+		"ec2:DescribeAccountVpcEncryptionControl",
+	];
 	/** IAM actions required for the DescribeAddressTransfers API call. */
 	static readonly DescribeAddressTransfers: string[] = [
 		"ec2:DescribeAddressTransfers",
@@ -11297,7 +11436,9 @@ export class EC2Operations {
 		"ec2:DescribeIpamExternalResourceVerificationTokens",
 	];
 	/** IAM actions required for the DescribeIpamInternetRegistryAssociations API call. */
-	static readonly DescribeIpamInternetRegistryAssociations: string[] = [];
+	static readonly DescribeIpamInternetRegistryAssociations: string[] = [
+		"ec2:DescribeIpamInternetRegistryAssociations",
+	];
 	/** IAM actions required for the DescribeIpamPolicies API call. */
 	static readonly DescribeIpamPolicies: string[] = ["ec2:DescribeIpamPolicies"];
 	/** IAM actions required for the DescribeIpamPoolAllocations API call. */
@@ -11929,7 +12070,9 @@ export class EC2Operations {
 		"ec2:EnableInstanceSqlHaStandbyDetections",
 	];
 	/** IAM actions required for the EnableIpamInternetRegistryAssociation API call. */
-	static readonly EnableIpamInternetRegistryAssociation: string[] = [];
+	static readonly EnableIpamInternetRegistryAssociation: string[] = [
+		"ec2:EnableIpamInternetRegistryAssociation",
+	];
 	/** IAM actions required for the EnableIpamOrganizationAdminAccount API call. */
 	static readonly EnableIpamOrganizationAdminAccount: string[] = [
 		"ec2:EnableIpamOrganizationAdminAccount",
@@ -12101,11 +12244,17 @@ export class EC2Operations {
 		"ec2:GetIpamDiscoveredResourceCidrs",
 	];
 	/** IAM actions required for the GetIpamDiscoveredRoutes API call. */
-	static readonly opGetIpamDiscoveredRoutes: string[] = [];
+	static readonly opGetIpamDiscoveredRoutes: string[] = [
+		"ec2:GetIpamDiscoveredRoutes",
+	];
 	/** IAM actions required for the GetIpamInternetRegistryAssociationAsns API call. */
-	static readonly opGetIpamInternetRegistryAssociationAsns: string[] = [];
+	static readonly opGetIpamInternetRegistryAssociationAsns: string[] = [
+		"ec2:GetIpamInternetRegistryAssociationAsns",
+	];
 	/** IAM actions required for the GetIpamInternetRegistryAssociationCidrs API call. */
-	static readonly opGetIpamInternetRegistryAssociationCidrs: string[] = [];
+	static readonly opGetIpamInternetRegistryAssociationCidrs: string[] = [
+		"ec2:GetIpamInternetRegistryAssociationCidrs",
+	];
 	/** IAM actions required for the GetIpamPolicyAllocationRules API call. */
 	static readonly opGetIpamPolicyAllocationRules: string[] = [
 		"ec2:GetIpamPolicyAllocationRules",
@@ -12137,13 +12286,21 @@ export class EC2Operations {
 		"ec2:GetIpamResourceCidrs",
 	];
 	/** IAM actions required for the GetIpamRouteOriginAuthorizations API call. */
-	static readonly opGetIpamRouteOriginAuthorizations: string[] = [];
+	static readonly opGetIpamRouteOriginAuthorizations: string[] = [
+		"ec2:GetIpamRouteOriginAuthorizations",
+	];
 	/** IAM actions required for the GetIpamRouteProtectionFindings API call. */
-	static readonly opGetIpamRouteProtectionFindings: string[] = [];
+	static readonly opGetIpamRouteProtectionFindings: string[] = [
+		"ec2:GetIpamRouteProtectionFindings",
+	];
 	/** IAM actions required for the GetIpamRoutingPolicyRegistrationDeltas API call. */
-	static readonly opGetIpamRoutingPolicyRegistrationDeltas: string[] = [];
+	static readonly opGetIpamRoutingPolicyRegistrationDeltas: string[] = [
+		"ec2:GetIpamRoutingPolicyRegistrationDeltas",
+	];
 	/** IAM actions required for the GetIpamRoutingPolicyRegistrations API call. */
-	static readonly opGetIpamRoutingPolicyRegistrations: string[] = [];
+	static readonly opGetIpamRoutingPolicyRegistrations: string[] = [
+		"ec2:GetIpamRoutingPolicyRegistrations",
+	];
 	/** IAM actions required for the GetLaunchTemplateData API call. */
 	static readonly opGetLaunchTemplateData: string[] = [
 		"ec2:GetLaunchTemplateData",
@@ -12301,7 +12458,9 @@ export class EC2Operations {
 	/** IAM actions required for the LockSnapshot API call. */
 	static readonly LockSnapshot: string[] = ["ec2:LockSnapshot"];
 	/** IAM actions required for the ModifyAccountVpcEncryptionControl API call. */
-	static readonly ModifyAccountVpcEncryptionControl: string[] = [];
+	static readonly ModifyAccountVpcEncryptionControl: string[] = [
+		"ec2:ModifyAccountVpcEncryptionControl",
+	];
 	/** IAM actions required for the ModifyAddressAttribute API call. */
 	static readonly ModifyAddressAttribute: string[] = [
 		"ec2:ModifyAddressAttribute",
@@ -12427,7 +12586,9 @@ export class EC2Operations {
 		"ec2:ModifyIpamResourceDiscovery",
 	];
 	/** IAM actions required for the ModifyIpamRoutingPolicyRegistration API call. */
-	static readonly ModifyIpamRoutingPolicyRegistration: string[] = [];
+	static readonly ModifyIpamRoutingPolicyRegistration: string[] = [
+		"ec2:ModifyIpamRoutingPolicyRegistration",
+	];
 	/** IAM actions required for the ModifyIpamScope API call. */
 	static readonly ModifyIpamScope: string[] = ["ec2:ModifyIpamScope"];
 	/** IAM actions required for the ModifyLaunchTemplate API call. */
@@ -13058,6 +13219,9 @@ export class EC2Conditions {
 	static readonly AuthorizeSecurityGroupIngressConditionKeys: string[] = [
 		"ec2:Region",
 	];
+	/** Condition keys applicable to the BatchModifyIpamRoutingPolicyRegistrations action. */
+	static readonly BatchModifyIpamRoutingPolicyRegistrationsConditionKeys: string[] =
+		["ec2:Region"];
 	/** Condition keys applicable to the BundleInstance action. */
 	static readonly BundleInstanceConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CancelBundleTask action. */
@@ -13195,6 +13359,9 @@ export class EC2Conditions {
 	/** Condition keys applicable to the CreateIpamExternalResourceVerificationToken action. */
 	static readonly CreateIpamExternalResourceVerificationTokenConditionKeys: string[] =
 		["ec2:Region"];
+	/** Condition keys applicable to the CreateIpamInternetRegistryAssociation action. */
+	static readonly CreateIpamInternetRegistryAssociationConditionKeys: string[] =
+		["ec2:Region"];
 	/** Condition keys applicable to the CreateIpamPolicy action. */
 	static readonly CreateIpamPolicyConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CreateIpamPool action. */
@@ -13209,6 +13376,10 @@ export class EC2Conditions {
 	];
 	/** Condition keys applicable to the CreateIpamResourceDiscovery action. */
 	static readonly CreateIpamResourceDiscoveryConditionKeys: string[] = [
+		"ec2:Region",
+	];
+	/** Condition keys applicable to the CreateIpamRoutingPolicyRegistration action. */
+	static readonly CreateIpamRoutingPolicyRegistrationConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the CreateIpamScope action. */
@@ -13507,6 +13678,9 @@ export class EC2Conditions {
 	/** Condition keys applicable to the DeleteIpamExternalResourceVerificationToken action. */
 	static readonly DeleteIpamExternalResourceVerificationTokenConditionKeys: string[] =
 		["ec2:Region"];
+	/** Condition keys applicable to the DeleteIpamInternetRegistryAssociation action. */
+	static readonly DeleteIpamInternetRegistryAssociationConditionKeys: string[] =
+		["ec2:Region"];
 	/** Condition keys applicable to the DeleteIpamPolicy action. */
 	static readonly DeleteIpamPolicyConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DeleteIpamPool action. */
@@ -13521,6 +13695,10 @@ export class EC2Conditions {
 	];
 	/** Condition keys applicable to the DeleteIpamResourceDiscovery action. */
 	static readonly DeleteIpamResourceDiscoveryConditionKeys: string[] = [
+		"ec2:Region",
+	];
+	/** Condition keys applicable to the DeleteIpamRoutingPolicyRegistration action. */
+	static readonly DeleteIpamRoutingPolicyRegistrationConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DeleteIpamScope action. */
@@ -13786,6 +13964,10 @@ export class EC2Conditions {
 	static readonly DescribeAccountAttributesConditionKeys: string[] = [
 		"ec2:Region",
 	];
+	/** Condition keys applicable to the DescribeAccountVpcEncryptionControl action. */
+	static readonly DescribeAccountVpcEncryptionControlConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DescribeAddressTransfers action. */
 	static readonly DescribeAddressTransfersConditionKeys: string[] = [
 		"ec2:Region",
@@ -14041,6 +14223,9 @@ export class EC2Conditions {
 	static readonly DescribeIpamByoasnConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DescribeIpamExternalResourceVerificationTokens action. */
 	static readonly DescribeIpamExternalResourceVerificationTokensConditionKeys: string[] =
+		["ec2:Region"];
+	/** Condition keys applicable to the DescribeIpamInternetRegistryAssociations action. */
+	static readonly DescribeIpamInternetRegistryAssociationsConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DescribeIpamPolicies action. */
 	static readonly DescribeIpamPoliciesConditionKeys: string[] = ["ec2:Region"];
@@ -14648,6 +14833,9 @@ export class EC2Conditions {
 	/** Condition keys applicable to the EnableInstanceSqlHaStandbyDetections action. */
 	static readonly EnableInstanceSqlHaStandbyDetectionsConditionKeys: string[] =
 		["ec2:Region"];
+	/** Condition keys applicable to the EnableIpamInternetRegistryAssociation action. */
+	static readonly EnableIpamInternetRegistryAssociationConditionKeys: string[] =
+		["ec2:Region"];
 	/** Condition keys applicable to the EnableIpamOrganizationAdminAccount action. */
 	static readonly EnableIpamOrganizationAdminAccountConditionKeys: string[] = [
 		"ec2:Region",
@@ -14813,6 +15001,16 @@ export class EC2Conditions {
 	/** Condition keys applicable to the GetIpamDiscoveredResourceCidrs action. */
 	static readonly actionGetIpamDiscoveredResourceCidrsConditionKeys: string[] =
 		["ec2:Region"];
+	/** Condition keys applicable to the GetIpamDiscoveredRoutes action. */
+	static readonly actionGetIpamDiscoveredRoutesConditionKeys: string[] = [
+		"ec2:Region",
+	];
+	/** Condition keys applicable to the GetIpamInternetRegistryAssociationAsns action. */
+	static readonly actionGetIpamInternetRegistryAssociationAsnsConditionKeys: string[] =
+		["ec2:Region"];
+	/** Condition keys applicable to the GetIpamInternetRegistryAssociationCidrs action. */
+	static readonly actionGetIpamInternetRegistryAssociationCidrsConditionKeys: string[] =
+		["ec2:Region"];
 	/** Condition keys applicable to the GetIpamPolicyAllocationRules action. */
 	static readonly actionGetIpamPolicyAllocationRulesConditionKeys: string[] = [
 		"ec2:Region",
@@ -14841,6 +15039,18 @@ export class EC2Conditions {
 	static readonly actionGetIpamResourceCidrsConditionKeys: string[] = [
 		"ec2:Region",
 	];
+	/** Condition keys applicable to the GetIpamRouteOriginAuthorizations action. */
+	static readonly actionGetIpamRouteOriginAuthorizationsConditionKeys: string[] =
+		["ec2:Region"];
+	/** Condition keys applicable to the GetIpamRouteProtectionFindings action. */
+	static readonly actionGetIpamRouteProtectionFindingsConditionKeys: string[] =
+		["ec2:Region"];
+	/** Condition keys applicable to the GetIpamRoutingPolicyRegistrationDeltas action. */
+	static readonly actionGetIpamRoutingPolicyRegistrationDeltasConditionKeys: string[] =
+		["ec2:Region"];
+	/** Condition keys applicable to the GetIpamRoutingPolicyRegistrations action. */
+	static readonly actionGetIpamRoutingPolicyRegistrationsConditionKeys: string[] =
+		["ec2:Region"];
 	/** Condition keys applicable to the GetLaunchTemplateData action. */
 	static readonly actionGetLaunchTemplateDataConditionKeys: string[] = [
 		"ec2:Region",
@@ -14990,6 +15200,10 @@ export class EC2Conditions {
 	];
 	/** Condition keys applicable to the LockSnapshot action. */
 	static readonly LockSnapshotConditionKeys: string[] = ["ec2:Region"];
+	/** Condition keys applicable to the ModifyAccountVpcEncryptionControl action. */
+	static readonly ModifyAccountVpcEncryptionControlConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the ModifyAddressAttribute action. */
 	static readonly ModifyAddressAttributeConditionKeys: string[] = [
 		"ec2:Region",
@@ -15111,6 +15325,10 @@ export class EC2Conditions {
 	];
 	/** Condition keys applicable to the ModifyIpamResourceDiscovery action. */
 	static readonly ModifyIpamResourceDiscoveryConditionKeys: string[] = [
+		"ec2:Region",
+	];
+	/** Condition keys applicable to the ModifyIpamRoutingPolicyRegistration action. */
+	static readonly ModifyIpamRoutingPolicyRegistrationConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ModifyIpamScope action. */
