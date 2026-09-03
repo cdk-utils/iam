@@ -2814,6 +2814,22 @@
       ]
     },
     {
+      "Name": "ListFlexComponents",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFlexComponents",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "list_flex_components",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListGiMinorVersions",
       "AuthorizedActions": [
         {

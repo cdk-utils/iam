@@ -1364,7 +1364,9 @@ export class GuardDutyOperations {
 		"guardduty:UpdateCustomDetectionRuleAssociation",
 	];
 	/** IAM actions required for the UpdateCustomDetectionRuleOrgConfiguration API call. */
-	static readonly UpdateCustomDetectionRuleOrgConfiguration: string[] = [];
+	static readonly UpdateCustomDetectionRuleOrgConfiguration: string[] = [
+		"guardduty:UpdateCustomDetectionRuleOrgConfiguration",
+	];
 	/** IAM actions required for the UpdateDetector API call. */
 	static readonly UpdateDetector: string[] = ["guardduty:UpdateDetector"];
 	/** IAM actions required for the UpdateFilter API call. */

@@ -7625,6 +7625,8 @@ export class SageMakerOperations {
 		"sagemaker:AddTags",
 		"sagemaker:UpdateProject",
 	];
+	/** IAM actions required for the UpdateRecord API call. */
+	static readonly UpdateRecord: string[] = [];
 	/** IAM actions required for the UpdateReward API call. */
 	static readonly UpdateReward: string[] = [
 		"sagemaker:CallWithBearerToken",

@@ -3335,6 +3335,154 @@ Defaults to "*".
 
 ---
 
+### QuickSightExtensionArnComponents <a name="QuickSightExtensionArnComponents" id="@cdk_utils/iam.quicksight.QuickSightExtensionArnComponents"></a>
+
+Parsed components of a extension ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.quicksight.QuickSightExtensionArnComponents.Initializer"></a>
+
+```typescript
+import { quicksight } from '@cdk_utils/iam'
+
+const quickSightExtensionArnComponents: quicksight.QuickSightExtensionArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightExtensionArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightExtensionArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightExtensionArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightExtensionArnComponents.property.resourceId">resourceId</a></code> | <code>string</code> | The ResourceId component. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.quicksight.QuickSightExtensionArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.quicksight.QuickSightExtensionArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.quicksight.QuickSightExtensionArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+##### `resourceId`<sup>Required</sup> <a name="resourceId" id="@cdk_utils/iam.quicksight.QuickSightExtensionArnComponents.property.resourceId"></a>
+
+```typescript
+public readonly resourceId: string;
+```
+
+- *Type:* string
+
+The ResourceId component.
+
+---
+
+### QuickSightExtensionArnProps <a name="QuickSightExtensionArnProps" id="@cdk_utils/iam.quicksight.QuickSightExtensionArnProps"></a>
+
+Properties for building a extension ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.quicksight.QuickSightExtensionArnProps.Initializer"></a>
+
+```typescript
+import { quicksight } from '@cdk_utils/iam'
+
+const quickSightExtensionArnProps: quicksight.QuickSightExtensionArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightExtensionArnProps.property.resourceId">resourceId</a></code> | <code>string</code> | The ResourceId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightExtensionArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightExtensionArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightExtensionArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `resourceId`<sup>Required</sup> <a name="resourceId" id="@cdk_utils/iam.quicksight.QuickSightExtensionArnProps.property.resourceId"></a>
+
+```typescript
+public readonly resourceId: string;
+```
+
+- *Type:* string
+
+The ResourceId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.quicksight.QuickSightExtensionArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.quicksight.QuickSightExtensionArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.quicksight.QuickSightExtensionArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### QuickSightFlowArnComponents <a name="QuickSightFlowArnComponents" id="@cdk_utils/iam.quicksight.QuickSightFlowArnComponents"></a>
 
 Parsed components of a flow ARN.
@@ -5671,6 +5819,7 @@ new quicksight.QuickSightActions()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.CreateDataSource">CreateDataSource</a></code> | <code>string</code> | [Write] quicksight:CreateDataSource. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.CreateDlpSetting">CreateDlpSetting</a></code> | <code>string</code> | [Write] quicksight:CreateDlpSetting. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.CreateEmailCustomizationTemplate">CreateEmailCustomizationTemplate</a></code> | <code>string</code> | [Write] quicksight:CreateEmailCustomizationTemplate. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.CreateExtension">CreateExtension</a></code> | <code>string</code> | [Write] quicksight:CreateExtension. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.CreateExtensionAccess">CreateExtensionAccess</a></code> | <code>string</code> | [Write] quicksight:CreateExtensionAccess. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.CreateFlow">CreateFlow</a></code> | <code>string</code> | [Write] quicksight:CreateFlow. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.CreateFolder">CreateFolder</a></code> | <code>string</code> | [Write] quicksight:CreateFolder. |
@@ -5713,6 +5862,7 @@ new quicksight.QuickSightActions()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DeleteDefaultQBusinessApplication">DeleteDefaultQBusinessApplication</a></code> | <code>string</code> | [Write] quicksight:DeleteDefaultQBusinessApplication. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DeleteDlpSetting">DeleteDlpSetting</a></code> | <code>string</code> | [Write] quicksight:DeleteDlpSetting. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DeleteEmailCustomizationTemplate">DeleteEmailCustomizationTemplate</a></code> | <code>string</code> | [Write] quicksight:DeleteEmailCustomizationTemplate. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DeleteExtension">DeleteExtension</a></code> | <code>string</code> | [Write] quicksight:DeleteExtension. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DeleteExtensionAccess">DeleteExtensionAccess</a></code> | <code>string</code> | [Write] quicksight:DeleteExtensionAccess. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DeleteFlow">DeleteFlow</a></code> | <code>string</code> | [Write] quicksight:DeleteFlow. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DeleteFolder">DeleteFolder</a></code> | <code>string</code> | [Write] quicksight:DeleteFolder. |
@@ -5774,7 +5924,9 @@ new quicksight.QuickSightActions()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeDlpJob">DescribeDlpJob</a></code> | <code>string</code> | [Read] quicksight:DescribeDlpJob. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeDlpSetting">DescribeDlpSetting</a></code> | <code>string</code> | [Read] quicksight:DescribeDlpSetting. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeEmailCustomizationTemplate">DescribeEmailCustomizationTemplate</a></code> | <code>string</code> | [Read] quicksight:DescribeEmailCustomizationTemplate. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeExtension">DescribeExtension</a></code> | <code>string</code> | [Read] quicksight:DescribeExtension. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeExtensionAccess">DescribeExtensionAccess</a></code> | <code>string</code> | [Read] quicksight:DescribeExtensionAccess. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeExtensionPermissions">DescribeExtensionPermissions</a></code> | <code>string</code> | [Read] quicksight:DescribeExtensionPermissions. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeFlow">DescribeFlow</a></code> | <code>string</code> | [Read] quicksight:DescribeFlow. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeFolder">DescribeFolder</a></code> | <code>string</code> | [Read] quicksight:DescribeFolder. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeFolderPermissions">DescribeFolderPermissions</a></code> | <code>string</code> | [Read] quicksight:DescribeFolderPermissions. |
@@ -5831,6 +5983,7 @@ new quicksight.QuickSightActions()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.ListDlpLabels">ListDlpLabels</a></code> | <code>string</code> | [List] quicksight:ListDlpLabels. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.ListDlpSettings">ListDlpSettings</a></code> | <code>string</code> | [List] quicksight:ListDlpSettings. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.ListExtensionAccesses">ListExtensionAccesses</a></code> | <code>string</code> | [List] quicksight:ListExtensionAccesses. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.ListExtensions">ListExtensions</a></code> | <code>string</code> | [List] quicksight:ListExtensions. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.ListFlows">ListFlows</a></code> | <code>string</code> | [List] quicksight:ListFlows. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.ListFolderMembers">ListFolderMembers</a></code> | <code>string</code> | [Read] quicksight:ListFolderMembers. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.ListFolders">ListFolders</a></code> | <code>string</code> | [List] quicksight:ListFolders. |
@@ -5898,6 +6051,7 @@ new quicksight.QuickSightActions()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.StartDashboardSnapshotJob">StartDashboardSnapshotJob</a></code> | <code>string</code> | [Write] quicksight:StartDashboardSnapshotJob. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.StartDashboardSnapshotJobSchedule">StartDashboardSnapshotJobSchedule</a></code> | <code>string</code> | [Write] quicksight:StartDashboardSnapshotJobSchedule. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.StartDlpJob">StartDlpJob</a></code> | <code>string</code> | [Write] quicksight:StartDlpJob. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.StartExtensionInstallation">StartExtensionInstallation</a></code> | <code>string</code> | [Write] quicksight:StartExtensionInstallation. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.Subscribe">Subscribe</a></code> | <code>string</code> | [Write] quicksight:Subscribe. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] quicksight:TagResource. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.UnpublishFlow">UnpublishFlow</a></code> | <code>string</code> | [Write] quicksight:UnpublishFlow. |
@@ -5932,7 +6086,9 @@ new quicksight.QuickSightActions()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.UpdateDefaultQBusinessApplication">UpdateDefaultQBusinessApplication</a></code> | <code>string</code> | [Write] quicksight:UpdateDefaultQBusinessApplication. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.UpdateDlpSetting">UpdateDlpSetting</a></code> | <code>string</code> | [Write] quicksight:UpdateDlpSetting. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.UpdateEmailCustomizationTemplate">UpdateEmailCustomizationTemplate</a></code> | <code>string</code> | [Write] quicksight:UpdateEmailCustomizationTemplate. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.UpdateExtension">UpdateExtension</a></code> | <code>string</code> | [Write] quicksight:UpdateExtension. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.UpdateExtensionAccess">UpdateExtensionAccess</a></code> | <code>string</code> | [Write] quicksight:UpdateExtensionAccess. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.UpdateExtensionPermissions">UpdateExtensionPermissions</a></code> | <code>string</code> | [PermissionManagement] quicksight:UpdateExtensionPermissions. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.UpdateFlow">UpdateFlow</a></code> | <code>string</code> | [Write] quicksight:UpdateFlow. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.UpdateFlowPermissions">UpdateFlowPermissions</a></code> | <code>string</code> | [PermissionManagement] quicksight:UpdateFlowPermissions. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.UpdateFolder">UpdateFolder</a></code> | <code>string</code> | [Write] quicksight:UpdateFolder. |
@@ -6427,6 +6583,18 @@ public readonly CreateEmailCustomizationTemplate: string;
 - *Type:* string
 
 [Write] quicksight:CreateEmailCustomizationTemplate.
+
+---
+
+##### `CreateExtension`<sup>Required</sup> <a name="CreateExtension" id="@cdk_utils/iam.quicksight.QuickSightActions.property.CreateExtension"></a>
+
+```typescript
+public readonly CreateExtension: string;
+```
+
+- *Type:* string
+
+[Write] quicksight:CreateExtension.
 
 ---
 
@@ -6931,6 +7099,18 @@ public readonly DeleteEmailCustomizationTemplate: string;
 - *Type:* string
 
 [Write] quicksight:DeleteEmailCustomizationTemplate.
+
+---
+
+##### `DeleteExtension`<sup>Required</sup> <a name="DeleteExtension" id="@cdk_utils/iam.quicksight.QuickSightActions.property.DeleteExtension"></a>
+
+```typescript
+public readonly DeleteExtension: string;
+```
+
+- *Type:* string
+
+[Write] quicksight:DeleteExtension.
 
 ---
 
@@ -7666,6 +7846,18 @@ public readonly DescribeEmailCustomizationTemplate: string;
 
 ---
 
+##### `DescribeExtension`<sup>Required</sup> <a name="DescribeExtension" id="@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeExtension"></a>
+
+```typescript
+public readonly DescribeExtension: string;
+```
+
+- *Type:* string
+
+[Read] quicksight:DescribeExtension.
+
+---
+
 ##### `DescribeExtensionAccess`<sup>Required</sup> <a name="DescribeExtensionAccess" id="@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeExtensionAccess"></a>
 
 ```typescript
@@ -7675,6 +7867,18 @@ public readonly DescribeExtensionAccess: string;
 - *Type:* string
 
 [Read] quicksight:DescribeExtensionAccess.
+
+---
+
+##### `DescribeExtensionPermissions`<sup>Required</sup> <a name="DescribeExtensionPermissions" id="@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeExtensionPermissions"></a>
+
+```typescript
+public readonly DescribeExtensionPermissions: string;
+```
+
+- *Type:* string
+
+[Read] quicksight:DescribeExtensionPermissions.
 
 ---
 
@@ -8347,6 +8551,18 @@ public readonly ListExtensionAccesses: string;
 - *Type:* string
 
 [List] quicksight:ListExtensionAccesses.
+
+---
+
+##### `ListExtensions`<sup>Required</sup> <a name="ListExtensions" id="@cdk_utils/iam.quicksight.QuickSightActions.property.ListExtensions"></a>
+
+```typescript
+public readonly ListExtensions: string;
+```
+
+- *Type:* string
+
+[List] quicksight:ListExtensions.
 
 ---
 
@@ -9154,6 +9370,18 @@ public readonly StartDlpJob: string;
 
 ---
 
+##### `StartExtensionInstallation`<sup>Required</sup> <a name="StartExtensionInstallation" id="@cdk_utils/iam.quicksight.QuickSightActions.property.StartExtensionInstallation"></a>
+
+```typescript
+public readonly StartExtensionInstallation: string;
+```
+
+- *Type:* string
+
+[Write] quicksight:StartExtensionInstallation.
+
+---
+
 ##### `Subscribe`<sup>Required</sup> <a name="Subscribe" id="@cdk_utils/iam.quicksight.QuickSightActions.property.Subscribe"></a>
 
 ```typescript
@@ -9562,6 +9790,18 @@ public readonly UpdateEmailCustomizationTemplate: string;
 
 ---
 
+##### `UpdateExtension`<sup>Required</sup> <a name="UpdateExtension" id="@cdk_utils/iam.quicksight.QuickSightActions.property.UpdateExtension"></a>
+
+```typescript
+public readonly UpdateExtension: string;
+```
+
+- *Type:* string
+
+[Write] quicksight:UpdateExtension.
+
+---
+
 ##### `UpdateExtensionAccess`<sup>Required</sup> <a name="UpdateExtensionAccess" id="@cdk_utils/iam.quicksight.QuickSightActions.property.UpdateExtensionAccess"></a>
 
 ```typescript
@@ -9571,6 +9811,18 @@ public readonly UpdateExtensionAccess: string;
 - *Type:* string
 
 [Write] quicksight:UpdateExtensionAccess.
+
+---
+
+##### `UpdateExtensionPermissions`<sup>Required</sup> <a name="UpdateExtensionPermissions" id="@cdk_utils/iam.quicksight.QuickSightActions.property.UpdateExtensionPermissions"></a>
+
+```typescript
+public readonly UpdateExtensionPermissions: string;
+```
+
+- *Type:* string
+
+[PermissionManagement] quicksight:UpdateExtensionPermissions.
 
 ---
 
@@ -15234,6 +15486,7 @@ new quicksight.QuickSightResources()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.datasource">datasource</a></code> | Builds an ARN for the datasource resource. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.dlpSetting">dlpSetting</a></code> | Builds an ARN for the dlpSetting resource. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.emailCustomizationTemplate">emailCustomizationTemplate</a></code> | Builds an ARN for the emailCustomizationTemplate resource. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.extension">extension</a></code> | Builds an ARN for the extension resource. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.extensionaccess">extensionaccess</a></code> | Builds an ARN for the extensionaccess resource. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.flow">flow</a></code> | Builds an ARN for the flow resource. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.folder">folder</a></code> | Builds an ARN for the folder resource. |
@@ -15261,6 +15514,7 @@ new quicksight.QuickSightResources()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.isValidDlpSettingArn">isValidDlpSettingArn</a></code> | Validates whether a string is a valid ARN for the dlpSetting resource. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.isValidEmailCustomizationTemplateArn">isValidEmailCustomizationTemplateArn</a></code> | Validates whether a string is a valid ARN for the emailCustomizationTemplate resource. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.isValidExtensionaccessArn">isValidExtensionaccessArn</a></code> | Validates whether a string is a valid ARN for the extensionaccess resource. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.isValidExtensionArn">isValidExtensionArn</a></code> | Validates whether a string is a valid ARN for the extension resource. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.isValidFlowArn">isValidFlowArn</a></code> | Validates whether a string is a valid ARN for the flow resource. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.isValidFolderArn">isValidFolderArn</a></code> | Validates whether a string is a valid ARN for the folder resource. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.isValidGroupArn">isValidGroupArn</a></code> | Validates whether a string is a valid ARN for the group resource. |
@@ -15302,6 +15556,7 @@ new quicksight.QuickSightResources()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.parseDlpSettingArn">parseDlpSettingArn</a></code> | Parses a dlpSetting ARN into its components. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.parseEmailCustomizationTemplateArn">parseEmailCustomizationTemplateArn</a></code> | Parses a emailCustomizationTemplate ARN into its components. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.parseExtensionaccessArn">parseExtensionaccessArn</a></code> | Parses a extensionaccess ARN into its components. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.parseExtensionArn">parseExtensionArn</a></code> | Parses a extension ARN into its components. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.parseFlowArn">parseFlowArn</a></code> | Parses a flow ARN into its components. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.parseFolderArn">parseFolderArn</a></code> | Parses a folder ARN into its components. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.parseGroupArn">parseGroupArn</a></code> | Parses a group ARN into its components. |
@@ -15660,6 +15915,22 @@ Builds an ARN for the emailCustomizationTemplate resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.quicksight.QuickSightResources.emailCustomizationTemplate.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.quicksight.QuickSightEmailCustomizationTemplateArnProps">QuickSightEmailCustomizationTemplateArnProps</a>
+
+---
+
+##### `extension` <a name="extension" id="@cdk_utils/iam.quicksight.QuickSightResources.extension"></a>
+
+```typescript
+import { quicksight } from '@cdk_utils/iam'
+
+quicksight.QuickSightResources.extension(props: QuickSightExtensionArnProps)
+```
+
+Builds an ARN for the extension resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.quicksight.QuickSightResources.extension.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.quicksight.QuickSightExtensionArnProps">QuickSightExtensionArnProps</a>
 
 ---
 
@@ -16090,6 +16361,22 @@ quicksight.QuickSightResources.isValidExtensionaccessArn(arn: string)
 Validates whether a string is a valid ARN for the extensionaccess resource.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.quicksight.QuickSightResources.isValidExtensionaccessArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidExtensionArn` <a name="isValidExtensionArn" id="@cdk_utils/iam.quicksight.QuickSightResources.isValidExtensionArn"></a>
+
+```typescript
+import { quicksight } from '@cdk_utils/iam'
+
+quicksight.QuickSightResources.isValidExtensionArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the extension resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.quicksight.QuickSightResources.isValidExtensionArn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -16746,6 +17033,22 @@ quicksight.QuickSightResources.parseExtensionaccessArn(arn: string)
 Parses a extensionaccess ARN into its components.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.quicksight.QuickSightResources.parseExtensionaccessArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseExtensionArn` <a name="parseExtensionArn" id="@cdk_utils/iam.quicksight.QuickSightResources.parseExtensionArn"></a>
+
+```typescript
+import { quicksight } from '@cdk_utils/iam'
+
+quicksight.QuickSightResources.parseExtensionArn(arn: string)
+```
+
+Parses a extension ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.quicksight.QuickSightResources.parseExtensionArn.parameter.arn"></a>
 
 - *Type:* string
 
