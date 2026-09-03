@@ -3338,6 +3338,12 @@
     },
     {
       "Name": "UpdateCustomDetectionRuleOrgConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCustomDetectionRuleOrgConfiguration",
+          "Service": "guardduty"
+        }
+      ],
       "SDK": [
         {
           "Name": "guardduty",

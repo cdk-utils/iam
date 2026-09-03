@@ -20688,6 +20688,7 @@ new sagemaker.SageMakerOperations()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.UpdatePipelineExecution">UpdatePipelineExecution</a></code> | <code>string[]</code> | IAM actions required for the UpdatePipelineExecution API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.UpdatePipelineVersion">UpdatePipelineVersion</a></code> | <code>string[]</code> | IAM actions required for the UpdatePipelineVersion API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.UpdateProject">UpdateProject</a></code> | <code>string[]</code> | IAM actions required for the UpdateProject API call. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.UpdateRecord">UpdateRecord</a></code> | <code>string[]</code> | IAM actions required for the UpdateRecord API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.UpdateReward">UpdateReward</a></code> | <code>string[]</code> | IAM actions required for the UpdateReward API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.UpdateSpace">UpdateSpace</a></code> | <code>string[]</code> | IAM actions required for the UpdateSpace API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.UpdateTrainingJob">UpdateTrainingJob</a></code> | <code>string[]</code> | IAM actions required for the UpdateTrainingJob API call. |
@@ -25712,6 +25713,18 @@ public readonly UpdateProject: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateProject API call.
+
+---
+
+##### `UpdateRecord`<sup>Required</sup> <a name="UpdateRecord" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.UpdateRecord"></a>
+
+```typescript
+public readonly UpdateRecord: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateRecord API call.
 
 ---
 

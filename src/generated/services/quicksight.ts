@@ -67,6 +67,8 @@ export class QuickSightActions {
 	/** [Write] quicksight:CreateEmailCustomizationTemplate */
 	static readonly CreateEmailCustomizationTemplate =
 		"quicksight:CreateEmailCustomizationTemplate";
+	/** [Write] quicksight:CreateExtension */
+	static readonly CreateExtension = "quicksight:CreateExtension";
 	/** [Write] quicksight:CreateExtensionAccess */
 	static readonly CreateExtensionAccess = "quicksight:CreateExtensionAccess";
 	/** [Write] quicksight:CreateFlow */
@@ -161,6 +163,8 @@ export class QuickSightActions {
 	/** [Write] quicksight:DeleteEmailCustomizationTemplate */
 	static readonly DeleteEmailCustomizationTemplate =
 		"quicksight:DeleteEmailCustomizationTemplate";
+	/** [Write] quicksight:DeleteExtension */
+	static readonly DeleteExtension = "quicksight:DeleteExtension";
 	/** [Write] quicksight:DeleteExtensionAccess */
 	static readonly DeleteExtensionAccess = "quicksight:DeleteExtensionAccess";
 	/** [Write] quicksight:DeleteFlow */
@@ -313,9 +317,14 @@ export class QuickSightActions {
 	/** [Read] quicksight:DescribeEmailCustomizationTemplate */
 	static readonly DescribeEmailCustomizationTemplate =
 		"quicksight:DescribeEmailCustomizationTemplate";
+	/** [Read] quicksight:DescribeExtension */
+	static readonly DescribeExtension = "quicksight:DescribeExtension";
 	/** [Read] quicksight:DescribeExtensionAccess */
 	static readonly DescribeExtensionAccess =
 		"quicksight:DescribeExtensionAccess";
+	/** [Read] quicksight:DescribeExtensionPermissions */
+	static readonly DescribeExtensionPermissions =
+		"quicksight:DescribeExtensionPermissions";
 	/** [Read] quicksight:DescribeFlow */
 	static readonly DescribeFlow = "quicksight:DescribeFlow";
 	/** [Read] quicksight:DescribeFolder */
@@ -474,6 +483,8 @@ export class QuickSightActions {
 	static readonly ListDlpSettings = "quicksight:ListDlpSettings";
 	/** [List] quicksight:ListExtensionAccesses */
 	static readonly ListExtensionAccesses = "quicksight:ListExtensionAccesses";
+	/** [List] quicksight:ListExtensions */
+	static readonly ListExtensions = "quicksight:ListExtensions";
 	/** [List] quicksight:ListFlows */
 	static readonly ListFlows = "quicksight:ListFlows";
 	/** [Read] quicksight:ListFolderMembers */
@@ -621,6 +632,9 @@ export class QuickSightActions {
 		"quicksight:StartDashboardSnapshotJobSchedule";
 	/** [Write] quicksight:StartDlpJob */
 	static readonly StartDlpJob = "quicksight:StartDlpJob";
+	/** [Write] quicksight:StartExtensionInstallation */
+	static readonly StartExtensionInstallation =
+		"quicksight:StartExtensionInstallation";
 	/** [Write] quicksight:Subscribe */
 	static readonly Subscribe = "quicksight:Subscribe";
 	/** [Tagging] quicksight:TagResource */
@@ -704,8 +718,13 @@ export class QuickSightActions {
 	/** [Write] quicksight:UpdateEmailCustomizationTemplate */
 	static readonly UpdateEmailCustomizationTemplate =
 		"quicksight:UpdateEmailCustomizationTemplate";
+	/** [Write] quicksight:UpdateExtension */
+	static readonly UpdateExtension = "quicksight:UpdateExtension";
 	/** [Write] quicksight:UpdateExtensionAccess */
 	static readonly UpdateExtensionAccess = "quicksight:UpdateExtensionAccess";
+	/** [PermissionManagement] quicksight:UpdateExtensionPermissions */
+	static readonly UpdateExtensionPermissions =
+		"quicksight:UpdateExtensionPermissions";
 	/** [Write] quicksight:UpdateFlow */
 	static readonly UpdateFlow = "quicksight:UpdateFlow";
 	/** [PermissionManagement] quicksight:UpdateFlowPermissions */
@@ -838,7 +857,9 @@ export class QuickSightActions {
 		QuickSightActions.DescribeDlpJob,
 		QuickSightActions.DescribeDlpSetting,
 		QuickSightActions.DescribeEmailCustomizationTemplate,
+		QuickSightActions.DescribeExtension,
 		QuickSightActions.DescribeExtensionAccess,
+		QuickSightActions.DescribeExtensionPermissions,
 		QuickSightActions.DescribeFlow,
 		QuickSightActions.DescribeFolder,
 		QuickSightActions.DescribeFolderPermissions,
@@ -911,6 +932,7 @@ export class QuickSightActions {
 		QuickSightActions.CreateDataSource,
 		QuickSightActions.CreateDlpSetting,
 		QuickSightActions.CreateEmailCustomizationTemplate,
+		QuickSightActions.CreateExtension,
 		QuickSightActions.CreateExtensionAccess,
 		QuickSightActions.CreateFlow,
 		QuickSightActions.CreateFolder,
@@ -953,6 +975,7 @@ export class QuickSightActions {
 		QuickSightActions.DeleteDefaultQBusinessApplication,
 		QuickSightActions.DeleteDlpSetting,
 		QuickSightActions.DeleteEmailCustomizationTemplate,
+		QuickSightActions.DeleteExtension,
 		QuickSightActions.DeleteExtensionAccess,
 		QuickSightActions.DeleteFlow,
 		QuickSightActions.DeleteFolder,
@@ -995,6 +1018,7 @@ export class QuickSightActions {
 		QuickSightActions.StartDashboardSnapshotJob,
 		QuickSightActions.StartDashboardSnapshotJobSchedule,
 		QuickSightActions.StartDlpJob,
+		QuickSightActions.StartExtensionInstallation,
 		QuickSightActions.Subscribe,
 		QuickSightActions.UnpublishFlow,
 		QuickSightActions.Unsubscribe,
@@ -1020,6 +1044,7 @@ export class QuickSightActions {
 		QuickSightActions.UpdateDefaultQBusinessApplication,
 		QuickSightActions.UpdateDlpSetting,
 		QuickSightActions.UpdateEmailCustomizationTemplate,
+		QuickSightActions.UpdateExtension,
 		QuickSightActions.UpdateExtensionAccess,
 		QuickSightActions.UpdateFlow,
 		QuickSightActions.UpdateFolder,
@@ -1073,6 +1098,7 @@ export class QuickSightActions {
 		QuickSightActions.ListDlpLabels,
 		QuickSightActions.ListDlpSettings,
 		QuickSightActions.ListExtensionAccesses,
+		QuickSightActions.ListExtensions,
 		QuickSightActions.ListFlows,
 		QuickSightActions.ListFolders,
 		QuickSightActions.ListFoldersForResource,
@@ -1133,6 +1159,7 @@ export class QuickSightActions {
 		QuickSightActions.UpdateDashboardPermissions,
 		QuickSightActions.UpdateDataSetPermissions,
 		QuickSightActions.UpdateDataSourcePermissions,
+		QuickSightActions.UpdateExtensionPermissions,
 		QuickSightActions.UpdateFlowPermissions,
 		QuickSightActions.UpdateFolderPermissions,
 		QuickSightActions.UpdateKnowledgeBasePermissions,
@@ -1749,6 +1776,34 @@ export interface QuickSightEmailCustomizationTemplateArnComponents {
 }
 
 /**
+ * Properties for building a extension ARN.
+ */
+export interface QuickSightExtensionArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a extension ARN.
+ */
+export interface QuickSightExtensionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
  * Properties for building a extensionaccess ARN.
  */
 export interface QuickSightExtensionaccessArnProps {
@@ -2246,6 +2301,8 @@ const DlpSettingArnRegex =
 	/^arn:(?<partition>[^:]+):quicksight:(?<region>[^:]*):(?<account>[^:]*):dlpsetting\/(?<resourceId>[^:/?]+)$/;
 const EmailCustomizationTemplateArnRegex =
 	/^arn:(?<partition>[^:]+):quicksight:(?<region>[^:]*):(?<account>[^:]*):email-customization-template\/(?<resourceId>[^:/?]+)$/;
+const ExtensionArnRegex =
+	/^arn:(?<partition>[^:]+):quicksight:(?<region>[^:]*):(?<account>[^:]*):extension\/(?<resourceId>[^:/?]+)$/;
 const ExtensionaccessArnRegex =
 	/^arn:(?<partition>[^:]+):quicksight:(?<region>[^:]*):(?<account>[^:]*):extension-access\/(?<resourceId>[^:/?]+)$/;
 const FlowArnRegex =
@@ -2956,6 +3013,37 @@ export class QuickSightResources {
 		const match = EmailCustomizationTemplateArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid emailCustomizationTemplate ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			resourceId: match.groups!.resourceId,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the extension resource.
+	 */
+	static extension(props: QuickSightExtensionArnProps): string {
+		return `arn:${props.partition ?? "aws"}:quicksight:${props.region ?? "*"}:${props.account ?? "*"}:extension/${props.resourceId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the extension resource.
+	 */
+	static isValidExtensionArn(arn: string): boolean {
+		return ExtensionArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a extension ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseExtensionArn(arn: string): QuickSightExtensionArnComponents {
+		const match = ExtensionArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid extension ARN: ${arn}`);
 		}
 		return {
 			partition: match.groups.partition,

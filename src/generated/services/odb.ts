@@ -1169,6 +1169,8 @@ export class OdbOperations {
 	static readonly ListExascaleDbStorageVaults: string[] = [
 		"odb:ListExascaleDbStorageVaults",
 	];
+	/** IAM actions required for the ListFlexComponents API call. */
+	static readonly ListFlexComponents: string[] = ["odb:ListFlexComponents"];
 	/** IAM actions required for the ListGiMinorVersions API call. */
 	static readonly ListGiMinorVersions: string[] = ["odb:ListGiMinorVersions"];
 	/** IAM actions required for the ListGiVersions API call. */

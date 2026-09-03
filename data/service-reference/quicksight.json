@@ -483,6 +483,26 @@
       }
     },
     {
+      "Name": "CreateExtension",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "extension"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "CreateExtensionAccess",
       "Annotations": {
         "Properties": {
@@ -1354,6 +1374,26 @@
       "Resources": [
         {
           "Name": "emailCustomizationTemplate"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteExtension",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "extension"
         }
       ],
       "SupportedBy": {
@@ -2580,6 +2620,26 @@
       }
     },
     {
+      "Name": "DescribeExtension",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "extension"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "DescribeExtensionAccess",
       "Annotations": {
         "Properties": {
@@ -2592,6 +2652,26 @@
       "Resources": [
         {
           "Name": "extensionaccess"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeExtensionPermissions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "extension"
         }
       ],
       "SupportedBy": {
@@ -3834,6 +3914,21 @@
     },
     {
       "Name": "ListExtensionAccesses",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListExtensions",
       "Annotations": {
         "Properties": {
           "IsList": true,
@@ -5180,6 +5275,26 @@
       }
     },
     {
+      "Name": "StartExtensionInstallation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "extension"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "Subscribe",
       "ActionConditionKeys": [
         "quicksight:DirectoryType",
@@ -5965,6 +6080,26 @@
       }
     },
     {
+      "Name": "UpdateExtension",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "extension"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "UpdateExtensionAccess",
       "Annotations": {
         "Properties": {
@@ -5977,6 +6112,26 @@
       "Resources": [
         {
           "Name": "extensionaccess"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateExtensionPermissions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "extension"
         }
       ],
       "SupportedBy": {
@@ -12135,6 +12290,12 @@
       ],
       "ConditionKeys": [
         "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "extension",
+      "ARNFormats": [
+        "arn:${Partition}:quicksight:${Region}:${Account}:extension/${ResourceId}"
       ]
     },
     {

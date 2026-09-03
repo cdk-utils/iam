@@ -17388,6 +17388,16 @@
       ]
     },
     {
+      "Name": "UpdateRecord",
+      "SDK": [
+        {
+          "Name": "sagemaker-featurestore-runtime",
+          "Method": "update_record",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "UpdateReward",
       "AuthorizedActions": [
         {

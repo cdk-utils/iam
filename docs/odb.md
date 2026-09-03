@@ -3104,6 +3104,7 @@ new odb.OdbOperations()
 | <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.ListDbSystemShapes">ListDbSystemShapes</a></code> | <code>string[]</code> | IAM actions required for the ListDbSystemShapes API call. |
 | <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.ListExadbVmClusters">ListExadbVmClusters</a></code> | <code>string[]</code> | IAM actions required for the ListExadbVmClusters API call. |
 | <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.ListExascaleDbStorageVaults">ListExascaleDbStorageVaults</a></code> | <code>string[]</code> | IAM actions required for the ListExascaleDbStorageVaults API call. |
+| <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.ListFlexComponents">ListFlexComponents</a></code> | <code>string[]</code> | IAM actions required for the ListFlexComponents API call. |
 | <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.ListGiMinorVersions">ListGiMinorVersions</a></code> | <code>string[]</code> | IAM actions required for the ListGiMinorVersions API call. |
 | <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.ListGiVersions">ListGiVersions</a></code> | <code>string[]</code> | IAM actions required for the ListGiVersions API call. |
 | <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.ListOdbNetworks">ListOdbNetworks</a></code> | <code>string[]</code> | IAM actions required for the ListOdbNetworks API call. |
@@ -3634,6 +3635,18 @@ public readonly ListExascaleDbStorageVaults: string[];
 - *Type:* string[]
 
 IAM actions required for the ListExascaleDbStorageVaults API call.
+
+---
+
+##### `ListFlexComponents`<sup>Required</sup> <a name="ListFlexComponents" id="@cdk_utils/iam.odb.OdbOperations.property.ListFlexComponents"></a>
+
+```typescript
+public readonly ListFlexComponents: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListFlexComponents API call.
 
 ---
 
