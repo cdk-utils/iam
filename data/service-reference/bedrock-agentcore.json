@@ -5854,6 +5854,16 @@
       ]
     },
     {
+      "Name": "CreateConsentPortal",
+      "SDK": [
+        {
+          "Name": "bedrock-agentcore-control",
+          "Method": "create_consent_portal",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "CreateDataset",
       "AuthorizedActions": [
         {
@@ -6532,6 +6542,16 @@
       ]
     },
     {
+      "Name": "DeleteConsentPortal",
+      "SDK": [
+        {
+          "Name": "bedrock-agentcore-control",
+          "Method": "delete_consent_portal",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DeleteDataset",
       "AuthorizedActions": [
         {
@@ -7187,6 +7207,16 @@
         {
           "Name": "bedrock-agentcore-control",
           "Method": "get_configuration_bundle_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetConsentPortal",
+      "SDK": [
+        {
+          "Name": "bedrock-agentcore-control",
+          "Method": "get_consent_portal",
           "Package": "Boto3"
         }
       ]
@@ -8131,6 +8161,16 @@
         {
           "Name": "bedrock-agentcore-control",
           "Method": "list_configuration_bundles",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListConsentPortals",
+      "SDK": [
+        {
+          "Name": "bedrock-agentcore-control",
+          "Method": "list_consent_portals",
           "Package": "Boto3"
         }
       ]
@@ -9145,6 +9185,16 @@
         {
           "Name": "bedrock-agentcore-control",
           "Method": "update_configuration_bundle",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateConsentPortal",
+      "SDK": [
+        {
+          "Name": "bedrock-agentcore-control",
+          "Method": "update_consent_portal",
           "Package": "Boto3"
         }
       ]

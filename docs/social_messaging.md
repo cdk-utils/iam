@@ -1014,6 +1014,7 @@ new social_messaging.SocialMessagingOperations()
 | <code><a href="#@cdk_utils/iam.social_messaging.SocialMessagingOperations.property.ListWhatsAppTemplateLibrary">ListWhatsAppTemplateLibrary</a></code> | <code>string[]</code> | IAM actions required for the ListWhatsAppTemplateLibrary API call. |
 | <code><a href="#@cdk_utils/iam.social_messaging.SocialMessagingOperations.property.opGetLinkedWhatsAppBusinessAccount">opGetLinkedWhatsAppBusinessAccount</a></code> | <code>string[]</code> | IAM actions required for the GetLinkedWhatsAppBusinessAccount API call. |
 | <code><a href="#@cdk_utils/iam.social_messaging.SocialMessagingOperations.property.opGetLinkedWhatsAppBusinessAccountPhoneNumber">opGetLinkedWhatsAppBusinessAccountPhoneNumber</a></code> | <code>string[]</code> | IAM actions required for the GetLinkedWhatsAppBusinessAccountPhoneNumber API call. |
+| <code><a href="#@cdk_utils/iam.social_messaging.SocialMessagingOperations.property.opGetWhatsAppBusinessPublicKey">opGetWhatsAppBusinessPublicKey</a></code> | <code>string[]</code> | IAM actions required for the GetWhatsAppBusinessPublicKey API call. |
 | <code><a href="#@cdk_utils/iam.social_messaging.SocialMessagingOperations.property.opGetWhatsAppFlow">opGetWhatsAppFlow</a></code> | <code>string[]</code> | IAM actions required for the GetWhatsAppFlow API call. |
 | <code><a href="#@cdk_utils/iam.social_messaging.SocialMessagingOperations.property.opGetWhatsAppFlowPreview">opGetWhatsAppFlowPreview</a></code> | <code>string[]</code> | IAM actions required for the GetWhatsAppFlowPreview API call. |
 | <code><a href="#@cdk_utils/iam.social_messaging.SocialMessagingOperations.property.opGetWhatsAppMessageMedia">opGetWhatsAppMessageMedia</a></code> | <code>string[]</code> | IAM actions required for the GetWhatsAppMessageMedia API call. |
@@ -1021,6 +1022,7 @@ new social_messaging.SocialMessagingOperations()
 | <code><a href="#@cdk_utils/iam.social_messaging.SocialMessagingOperations.property.PostWhatsAppMessageMedia">PostWhatsAppMessageMedia</a></code> | <code>string[]</code> | IAM actions required for the PostWhatsAppMessageMedia API call. |
 | <code><a href="#@cdk_utils/iam.social_messaging.SocialMessagingOperations.property.PublishWhatsAppFlow">PublishWhatsAppFlow</a></code> | <code>string[]</code> | IAM actions required for the PublishWhatsAppFlow API call. |
 | <code><a href="#@cdk_utils/iam.social_messaging.SocialMessagingOperations.property.PutWhatsAppBusinessAccountEventDestinations">PutWhatsAppBusinessAccountEventDestinations</a></code> | <code>string[]</code> | IAM actions required for the PutWhatsAppBusinessAccountEventDestinations API call. |
+| <code><a href="#@cdk_utils/iam.social_messaging.SocialMessagingOperations.property.PutWhatsAppBusinessPublicKey">PutWhatsAppBusinessPublicKey</a></code> | <code>string[]</code> | IAM actions required for the PutWhatsAppBusinessPublicKey API call. |
 | <code><a href="#@cdk_utils/iam.social_messaging.SocialMessagingOperations.property.SendWhatsAppConversionEvent">SendWhatsAppConversionEvent</a></code> | <code>string[]</code> | IAM actions required for the SendWhatsAppConversionEvent API call. |
 | <code><a href="#@cdk_utils/iam.social_messaging.SocialMessagingOperations.property.SendWhatsAppMessage">SendWhatsAppMessage</a></code> | <code>string[]</code> | IAM actions required for the SendWhatsAppMessage API call. |
 | <code><a href="#@cdk_utils/iam.social_messaging.SocialMessagingOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
@@ -1259,6 +1261,18 @@ IAM actions required for the GetLinkedWhatsAppBusinessAccountPhoneNumber API cal
 
 ---
 
+##### `opGetWhatsAppBusinessPublicKey`<sup>Required</sup> <a name="opGetWhatsAppBusinessPublicKey" id="@cdk_utils/iam.social_messaging.SocialMessagingOperations.property.opGetWhatsAppBusinessPublicKey"></a>
+
+```typescript
+public readonly opGetWhatsAppBusinessPublicKey: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetWhatsAppBusinessPublicKey API call.
+
+---
+
 ##### `opGetWhatsAppFlow`<sup>Required</sup> <a name="opGetWhatsAppFlow" id="@cdk_utils/iam.social_messaging.SocialMessagingOperations.property.opGetWhatsAppFlow"></a>
 
 ```typescript
@@ -1340,6 +1354,18 @@ public readonly PutWhatsAppBusinessAccountEventDestinations: string[];
 - *Type:* string[]
 
 IAM actions required for the PutWhatsAppBusinessAccountEventDestinations API call.
+
+---
+
+##### `PutWhatsAppBusinessPublicKey`<sup>Required</sup> <a name="PutWhatsAppBusinessPublicKey" id="@cdk_utils/iam.social_messaging.SocialMessagingOperations.property.PutWhatsAppBusinessPublicKey"></a>
+
+```typescript
+public readonly PutWhatsAppBusinessPublicKey: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the PutWhatsAppBusinessPublicKey API call.
 
 ---
 

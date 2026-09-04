@@ -329,6 +329,8 @@ export class SocialMessagingOperations {
 	static readonly opGetLinkedWhatsAppBusinessAccountPhoneNumber: string[] = [
 		"social-messaging:GetLinkedWhatsAppBusinessAccountPhoneNumber",
 	];
+	/** IAM actions required for the GetWhatsAppBusinessPublicKey API call. */
+	static readonly opGetWhatsAppBusinessPublicKey: string[] = [];
 	/** IAM actions required for the GetWhatsAppFlow API call. */
 	static readonly opGetWhatsAppFlow: string[] = [
 		"social-messaging:GetWhatsAppFlow",
@@ -382,6 +384,8 @@ export class SocialMessagingOperations {
 		"iam:PassRole",
 		"social-messaging:PutWhatsAppBusinessAccountEventDestinations",
 	];
+	/** IAM actions required for the PutWhatsAppBusinessPublicKey API call. */
+	static readonly PutWhatsAppBusinessPublicKey: string[] = [];
 	/** IAM actions required for the SendWhatsAppConversionEvent API call. */
 	static readonly SendWhatsAppConversionEvent: string[] = [];
 	/** IAM actions required for the SendWhatsAppMessage API call. */

@@ -1626,6 +1626,10 @@
         {
           "Name": "RestoreFHIRDatastore",
           "Service": "healthlake"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "healthlake"
         }
       ],
       "SDK": [
