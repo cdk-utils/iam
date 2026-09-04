@@ -3129,6 +3129,15 @@
         {
           "Name": "CreateTest",
           "Service": "resiliencehub"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "fis.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
         }
       ],
       "SDK": [

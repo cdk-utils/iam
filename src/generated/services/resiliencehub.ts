@@ -1045,7 +1045,10 @@ export class ResiliencehubOperations {
 		"resiliencehub:TagResource",
 	];
 	/** IAM actions required for the CreateTest API call. */
-	static readonly CreateTest: string[] = ["resiliencehub:CreateTest"];
+	static readonly CreateTest: string[] = [
+		"resiliencehub:CreateTest",
+		"iam:PassRole",
+	];
 	/** IAM actions required for the CreateUserJourney API call. */
 	static readonly CreateUserJourney: string[] = [
 		"resiliencehub:CreateUserJourney",

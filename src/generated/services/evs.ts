@@ -32,6 +32,8 @@ export class EvsActions {
 	static readonly DeleteEnvironmentHost = "evs:DeleteEnvironmentHost";
 	/** [Write] evs:DisassociateEipFromVlan */
 	static readonly DisassociateEipFromVlan = "evs:DisassociateEipFromVlan";
+	/** [Read] evs:GetAccountSettings */
+	static readonly actionGetAccountSettings = "evs:GetAccountSettings";
 	/** [Read] evs:GetDepotUrl */
 	static readonly actionGetDepotUrl = "evs:GetDepotUrl";
 	/** [Read] evs:GetEnvironment */
@@ -50,6 +52,8 @@ export class EvsActions {
 	static readonly ListTagsForResource = "evs:ListTagsForResource";
 	/** [List] evs:ListVmEntitlements */
 	static readonly ListVmEntitlements = "evs:ListVmEntitlements";
+	/** [Write] evs:PutAccountSettings */
+	static readonly PutAccountSettings = "evs:PutAccountSettings";
 	/** [Tagging] evs:TagResource */
 	static readonly TagResource = "evs:TagResource";
 	/** [Tagging] evs:UntagResource */
@@ -59,6 +63,7 @@ export class EvsActions {
 
 	/** All read-level actions. */
 	static readonly AllReadActions: string[] = [
+		EvsActions.actionGetAccountSettings,
 		EvsActions.actionGetDepotUrl,
 		EvsActions.actionGetEnvironment,
 		EvsActions.actionGetVersions,
@@ -76,6 +81,7 @@ export class EvsActions {
 		EvsActions.DeleteEnvironmentConnector,
 		EvsActions.DeleteEnvironmentHost,
 		EvsActions.DisassociateEipFromVlan,
+		EvsActions.PutAccountSettings,
 		EvsActions.UpdateEnvironmentConnector,
 	];
 	/** All list-level actions. */
@@ -199,6 +205,8 @@ export class EvsOperations {
 	static readonly DisassociateEipFromVlan: string[] = [
 		"evs:DisassociateEipFromVlan",
 	];
+	/** IAM actions required for the GetAccountSettings API call. */
+	static readonly opGetAccountSettings: string[] = ["evs:GetAccountSettings"];
 	/** IAM actions required for the GetDepotUrl API call. */
 	static readonly opGetDepotUrl: string[] = ["evs:GetDepotUrl"];
 	/** IAM actions required for the GetEnvironment API call. */
@@ -219,6 +227,8 @@ export class EvsOperations {
 	static readonly ListTagsForResource: string[] = ["evs:ListTagsForResource"];
 	/** IAM actions required for the ListVmEntitlements API call. */
 	static readonly ListVmEntitlements: string[] = ["evs:ListVmEntitlements"];
+	/** IAM actions required for the PutAccountSettings API call. */
+	static readonly PutAccountSettings: string[] = ["evs:PutAccountSettings"];
 	/** IAM actions required for the TagResource API call. */
 	static readonly TagResource: string[] = ["evs:TagResource"];
 	/** IAM actions required for the UntagResource API call. */

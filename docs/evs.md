@@ -177,6 +177,7 @@ new evs.EvsActions()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.evs.EvsActions.property.actionGetAccountSettings">actionGetAccountSettings</a></code> | <code>string</code> | [Read] evs:GetAccountSettings. |
 | <code><a href="#@cdk_utils/iam.evs.EvsActions.property.actionGetDepotUrl">actionGetDepotUrl</a></code> | <code>string</code> | [Read] evs:GetDepotUrl. |
 | <code><a href="#@cdk_utils/iam.evs.EvsActions.property.actionGetEnvironment">actionGetEnvironment</a></code> | <code>string</code> | [Read] evs:GetEnvironment. |
 | <code><a href="#@cdk_utils/iam.evs.EvsActions.property.actionGetVersions">actionGetVersions</a></code> | <code>string</code> | [Read] evs:GetVersions. |
@@ -201,10 +202,23 @@ new evs.EvsActions()
 | <code><a href="#@cdk_utils/iam.evs.EvsActions.property.ListEnvironmentVlans">ListEnvironmentVlans</a></code> | <code>string</code> | [List] evs:ListEnvironmentVlans. |
 | <code><a href="#@cdk_utils/iam.evs.EvsActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [Read] evs:ListTagsForResource. |
 | <code><a href="#@cdk_utils/iam.evs.EvsActions.property.ListVmEntitlements">ListVmEntitlements</a></code> | <code>string</code> | [List] evs:ListVmEntitlements. |
+| <code><a href="#@cdk_utils/iam.evs.EvsActions.property.PutAccountSettings">PutAccountSettings</a></code> | <code>string</code> | [Write] evs:PutAccountSettings. |
 | <code><a href="#@cdk_utils/iam.evs.EvsActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.evs.EvsActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] evs:TagResource. |
 | <code><a href="#@cdk_utils/iam.evs.EvsActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] evs:UntagResource. |
 | <code><a href="#@cdk_utils/iam.evs.EvsActions.property.UpdateEnvironmentConnector">UpdateEnvironmentConnector</a></code> | <code>string</code> | [Write] evs:UpdateEnvironmentConnector. |
+
+---
+
+##### `actionGetAccountSettings`<sup>Required</sup> <a name="actionGetAccountSettings" id="@cdk_utils/iam.evs.EvsActions.property.actionGetAccountSettings"></a>
+
+```typescript
+public readonly actionGetAccountSettings: string;
+```
+
+- *Type:* string
+
+[Read] evs:GetAccountSettings.
 
 ---
 
@@ -496,6 +510,18 @@ public readonly ListVmEntitlements: string;
 
 ---
 
+##### `PutAccountSettings`<sup>Required</sup> <a name="PutAccountSettings" id="@cdk_utils/iam.evs.EvsActions.property.PutAccountSettings"></a>
+
+```typescript
+public readonly PutAccountSettings: string;
+```
+
+- *Type:* string
+
+[Write] evs:PutAccountSettings.
+
+---
+
 ##### `SERVICE_PREFIX`<sup>Required</sup> <a name="SERVICE_PREFIX" id="@cdk_utils/iam.evs.EvsActions.property.SERVICE_PREFIX"></a>
 
 ```typescript
@@ -746,9 +772,11 @@ new evs.EvsOperations()
 | <code><a href="#@cdk_utils/iam.evs.EvsOperations.property.ListEnvironmentVlans">ListEnvironmentVlans</a></code> | <code>string[]</code> | IAM actions required for the ListEnvironmentVlans API call. |
 | <code><a href="#@cdk_utils/iam.evs.EvsOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
 | <code><a href="#@cdk_utils/iam.evs.EvsOperations.property.ListVmEntitlements">ListVmEntitlements</a></code> | <code>string[]</code> | IAM actions required for the ListVmEntitlements API call. |
+| <code><a href="#@cdk_utils/iam.evs.EvsOperations.property.opGetAccountSettings">opGetAccountSettings</a></code> | <code>string[]</code> | IAM actions required for the GetAccountSettings API call. |
 | <code><a href="#@cdk_utils/iam.evs.EvsOperations.property.opGetDepotUrl">opGetDepotUrl</a></code> | <code>string[]</code> | IAM actions required for the GetDepotUrl API call. |
 | <code><a href="#@cdk_utils/iam.evs.EvsOperations.property.opGetEnvironment">opGetEnvironment</a></code> | <code>string[]</code> | IAM actions required for the GetEnvironment API call. |
 | <code><a href="#@cdk_utils/iam.evs.EvsOperations.property.opGetVersions">opGetVersions</a></code> | <code>string[]</code> | IAM actions required for the GetVersions API call. |
+| <code><a href="#@cdk_utils/iam.evs.EvsOperations.property.PutAccountSettings">PutAccountSettings</a></code> | <code>string[]</code> | IAM actions required for the PutAccountSettings API call. |
 | <code><a href="#@cdk_utils/iam.evs.EvsOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
 | <code><a href="#@cdk_utils/iam.evs.EvsOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
 | <code><a href="#@cdk_utils/iam.evs.EvsOperations.property.UpdateEnvironmentConnector">UpdateEnvironmentConnector</a></code> | <code>string[]</code> | IAM actions required for the UpdateEnvironmentConnector API call. |
@@ -947,6 +975,18 @@ IAM actions required for the ListVmEntitlements API call.
 
 ---
 
+##### `opGetAccountSettings`<sup>Required</sup> <a name="opGetAccountSettings" id="@cdk_utils/iam.evs.EvsOperations.property.opGetAccountSettings"></a>
+
+```typescript
+public readonly opGetAccountSettings: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetAccountSettings API call.
+
+---
+
 ##### `opGetDepotUrl`<sup>Required</sup> <a name="opGetDepotUrl" id="@cdk_utils/iam.evs.EvsOperations.property.opGetDepotUrl"></a>
 
 ```typescript
@@ -980,6 +1020,18 @@ public readonly opGetVersions: string[];
 - *Type:* string[]
 
 IAM actions required for the GetVersions API call.
+
+---
+
+##### `PutAccountSettings`<sup>Required</sup> <a name="PutAccountSettings" id="@cdk_utils/iam.evs.EvsOperations.property.PutAccountSettings"></a>
+
+```typescript
+public readonly PutAccountSettings: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the PutAccountSettings API call.
 
 ---
 

@@ -3071,6 +3071,8 @@ export class BedrockAgentcoreOperations {
 		"bedrock-agentcore:CreateConfigurationBundle",
 		"bedrock-agentcore:TagResource",
 	];
+	/** IAM actions required for the CreateConsentPortal API call. */
+	static readonly CreateConsentPortal: string[] = [];
 	/** IAM actions required for the CreateDataset API call. */
 	static readonly CreateDataset: string[] = [
 		"bedrock-agentcore:CreateDataset",
@@ -3225,6 +3227,8 @@ export class BedrockAgentcoreOperations {
 	static readonly DeleteConfigurationBundle: string[] = [
 		"bedrock-agentcore:DeleteConfigurationBundle",
 	];
+	/** IAM actions required for the DeleteConsentPortal API call. */
+	static readonly DeleteConsentPortal: string[] = [];
 	/** IAM actions required for the DeleteDataset API call. */
 	static readonly DeleteDataset: string[] = ["bedrock-agentcore:DeleteDataset"];
 	/** IAM actions required for the DeleteDatasetExamples API call. */
@@ -3372,6 +3376,8 @@ export class BedrockAgentcoreOperations {
 	static readonly opGetConfigurationBundleVersion: string[] = [
 		"bedrock-agentcore:GetConfigurationBundleVersion",
 	];
+	/** IAM actions required for the GetConsentPortal API call. */
+	static readonly opGetConsentPortal: string[] = [];
 	/** IAM actions required for the GetDataset API call. */
 	static readonly opGetDataset: string[] = ["bedrock-agentcore:GetDataset"];
 	/** IAM actions required for the GetEvaluator API call. */
@@ -3585,6 +3591,8 @@ export class BedrockAgentcoreOperations {
 	static readonly ListConfigurationBundles: string[] = [
 		"bedrock-agentcore:ListConfigurationBundles",
 	];
+	/** IAM actions required for the ListConsentPortals API call. */
+	static readonly ListConsentPortals: string[] = [];
 	/** IAM actions required for the ListDatasetExamples API call. */
 	static readonly ListDatasetExamples: string[] = [
 		"bedrock-agentcore:ListDatasetExamples",
@@ -3818,6 +3826,8 @@ export class BedrockAgentcoreOperations {
 	static readonly UpdateConfigurationBundle: string[] = [
 		"bedrock-agentcore:UpdateConfigurationBundle",
 	];
+	/** IAM actions required for the UpdateConsentPortal API call. */
+	static readonly UpdateConsentPortal: string[] = [];
 	/** IAM actions required for the UpdateDataset API call. */
 	static readonly UpdateDataset: string[] = ["bedrock-agentcore:UpdateDataset"];
 	/** IAM actions required for the UpdateDatasetExamples API call. */

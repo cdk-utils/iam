@@ -9847,6 +9847,7 @@ new bedrock_agentcore.BedrockAgentcoreOperations()
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.CreateCapacityProvider">CreateCapacityProvider</a></code> | <code>string[]</code> | IAM actions required for the CreateCapacityProvider API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.CreateCodeInterpreter">CreateCodeInterpreter</a></code> | <code>string[]</code> | IAM actions required for the CreateCodeInterpreter API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.CreateConfigurationBundle">CreateConfigurationBundle</a></code> | <code>string[]</code> | IAM actions required for the CreateConfigurationBundle API call. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.CreateConsentPortal">CreateConsentPortal</a></code> | <code>string[]</code> | IAM actions required for the CreateConsentPortal API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.CreateDataset">CreateDataset</a></code> | <code>string[]</code> | IAM actions required for the CreateDataset API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.CreateDatasetVersion">CreateDatasetVersion</a></code> | <code>string[]</code> | IAM actions required for the CreateDatasetVersion API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.CreateEvaluator">CreateEvaluator</a></code> | <code>string[]</code> | IAM actions required for the CreateEvaluator API call. |
@@ -9881,6 +9882,7 @@ new bedrock_agentcore.BedrockAgentcoreOperations()
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.DeleteCapacityProviderSession">DeleteCapacityProviderSession</a></code> | <code>string[]</code> | IAM actions required for the DeleteCapacityProviderSession API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.DeleteCodeInterpreter">DeleteCodeInterpreter</a></code> | <code>string[]</code> | IAM actions required for the DeleteCodeInterpreter API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.DeleteConfigurationBundle">DeleteConfigurationBundle</a></code> | <code>string[]</code> | IAM actions required for the DeleteConfigurationBundle API call. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.DeleteConsentPortal">DeleteConsentPortal</a></code> | <code>string[]</code> | IAM actions required for the DeleteConsentPortal API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.DeleteDataset">DeleteDataset</a></code> | <code>string[]</code> | IAM actions required for the DeleteDataset API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.DeleteDatasetExamples">DeleteDatasetExamples</a></code> | <code>string[]</code> | IAM actions required for the DeleteDatasetExamples API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.DeleteEvaluator">DeleteEvaluator</a></code> | <code>string[]</code> | IAM actions required for the DeleteEvaluator API call. |
@@ -9930,6 +9932,7 @@ new bedrock_agentcore.BedrockAgentcoreOperations()
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.ListCodeInterpreterSessions">ListCodeInterpreterSessions</a></code> | <code>string[]</code> | IAM actions required for the ListCodeInterpreterSessions API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.ListConfigurationBundles">ListConfigurationBundles</a></code> | <code>string[]</code> | IAM actions required for the ListConfigurationBundles API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.ListConfigurationBundleVersions">ListConfigurationBundleVersions</a></code> | <code>string[]</code> | IAM actions required for the ListConfigurationBundleVersions API call. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.ListConsentPortals">ListConsentPortals</a></code> | <code>string[]</code> | IAM actions required for the ListConsentPortals API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.ListDatasetExamples">ListDatasetExamples</a></code> | <code>string[]</code> | IAM actions required for the ListDatasetExamples API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.ListDatasets">ListDatasets</a></code> | <code>string[]</code> | IAM actions required for the ListDatasets API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.ListDatasetVersions">ListDatasetVersions</a></code> | <code>string[]</code> | IAM actions required for the ListDatasetVersions API call. |
@@ -9979,6 +9982,7 @@ new bedrock_agentcore.BedrockAgentcoreOperations()
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.opGetCodeInterpreterSession">opGetCodeInterpreterSession</a></code> | <code>string[]</code> | IAM actions required for the GetCodeInterpreterSession API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.opGetConfigurationBundle">opGetConfigurationBundle</a></code> | <code>string[]</code> | IAM actions required for the GetConfigurationBundle API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.opGetConfigurationBundleVersion">opGetConfigurationBundleVersion</a></code> | <code>string[]</code> | IAM actions required for the GetConfigurationBundleVersion API call. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.opGetConsentPortal">opGetConsentPortal</a></code> | <code>string[]</code> | IAM actions required for the GetConsentPortal API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.opGetDataset">opGetDataset</a></code> | <code>string[]</code> | IAM actions required for the GetDataset API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.opGetEvaluator">opGetEvaluator</a></code> | <code>string[]</code> | IAM actions required for the GetEvaluator API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.opGetEvent">opGetEvent</a></code> | <code>string[]</code> | IAM actions required for the GetEvent API call. |
@@ -10043,6 +10047,7 @@ new bedrock_agentcore.BedrockAgentcoreOperations()
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.UpdateBrowserStream">UpdateBrowserStream</a></code> | <code>string[]</code> | IAM actions required for the UpdateBrowserStream API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.UpdateCapacityProvider">UpdateCapacityProvider</a></code> | <code>string[]</code> | IAM actions required for the UpdateCapacityProvider API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.UpdateConfigurationBundle">UpdateConfigurationBundle</a></code> | <code>string[]</code> | IAM actions required for the UpdateConfigurationBundle API call. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.UpdateConsentPortal">UpdateConsentPortal</a></code> | <code>string[]</code> | IAM actions required for the UpdateConsentPortal API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.UpdateDataset">UpdateDataset</a></code> | <code>string[]</code> | IAM actions required for the UpdateDataset API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.UpdateDatasetExamples">UpdateDatasetExamples</a></code> | <code>string[]</code> | IAM actions required for the UpdateDatasetExamples API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.UpdateEvaluator">UpdateEvaluator</a></code> | <code>string[]</code> | IAM actions required for the UpdateEvaluator API call. |
@@ -10244,6 +10249,18 @@ public readonly CreateConfigurationBundle: string[];
 - *Type:* string[]
 
 IAM actions required for the CreateConfigurationBundle API call.
+
+---
+
+##### `CreateConsentPortal`<sup>Required</sup> <a name="CreateConsentPortal" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.CreateConsentPortal"></a>
+
+```typescript
+public readonly CreateConsentPortal: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateConsentPortal API call.
 
 ---
 
@@ -10652,6 +10669,18 @@ public readonly DeleteConfigurationBundle: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteConfigurationBundle API call.
+
+---
+
+##### `DeleteConsentPortal`<sup>Required</sup> <a name="DeleteConsentPortal" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.DeleteConsentPortal"></a>
+
+```typescript
+public readonly DeleteConsentPortal: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteConsentPortal API call.
 
 ---
 
@@ -11243,6 +11272,18 @@ IAM actions required for the ListConfigurationBundleVersions API call.
 
 ---
 
+##### `ListConsentPortals`<sup>Required</sup> <a name="ListConsentPortals" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.ListConsentPortals"></a>
+
+```typescript
+public readonly ListConsentPortals: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListConsentPortals API call.
+
+---
+
 ##### `ListDatasetExamples`<sup>Required</sup> <a name="ListDatasetExamples" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.ListDatasetExamples"></a>
 
 ```typescript
@@ -11828,6 +11869,18 @@ public readonly opGetConfigurationBundleVersion: string[];
 - *Type:* string[]
 
 IAM actions required for the GetConfigurationBundleVersion API call.
+
+---
+
+##### `opGetConsentPortal`<sup>Required</sup> <a name="opGetConsentPortal" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.opGetConsentPortal"></a>
+
+```typescript
+public readonly opGetConsentPortal: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetConsentPortal API call.
 
 ---
 
@@ -12596,6 +12649,18 @@ public readonly UpdateConfigurationBundle: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateConfigurationBundle API call.
+
+---
+
+##### `UpdateConsentPortal`<sup>Required</sup> <a name="UpdateConsentPortal" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.UpdateConsentPortal"></a>
+
+```typescript
+public readonly UpdateConsentPortal: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateConsentPortal API call.
 
 ---
 

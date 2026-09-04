@@ -872,6 +872,16 @@
       ]
     },
     {
+      "Name": "GetWhatsAppBusinessPublicKey",
+      "SDK": [
+        {
+          "Name": "socialmessaging",
+          "Method": "get_whats_app_business_public_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetWhatsAppFlow",
       "AuthorizedActions": [
         {
@@ -1084,6 +1094,16 @@
         {
           "Name": "socialmessaging",
           "Method": "put_whatsapp_business_account_event_destinations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutWhatsAppBusinessPublicKey",
+      "SDK": [
+        {
+          "Name": "socialmessaging",
+          "Method": "put_whats_app_business_public_key",
           "Package": "Boto3"
         }
       ]

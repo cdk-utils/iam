@@ -461,6 +461,7 @@ export class HealthLakeOperations {
 	/** IAM actions required for the RestoreFHIRDatastore API call. */
 	static readonly RestoreFHIRDatastore: string[] = [
 		"healthlake:RestoreFHIRDatastore",
+		"healthlake:TagResource",
 	];
 	/** IAM actions required for the StartDataTransformationJob API call. */
 	static readonly StartDataTransformationJob: string[] = [
