@@ -5855,6 +5855,21 @@
     },
     {
       "Name": "CreateConsentPortal",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "bedrock-agentcore.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "bedrock-agentcore"
+        }
+      ],
       "SDK": [
         {
           "Name": "bedrock-agentcore-control",

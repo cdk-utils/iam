@@ -1474,6 +1474,7 @@ export class ComprehendOperations {
 	static readonly ImportModel: string[] = [
 		"comprehend:ImportModel",
 		"iam:PassRole",
+		"comprehend:TagResource",
 	];
 	/** IAM actions required for the ListDatasets API call. */
 	static readonly ListDatasets: string[] = ["comprehend:ListDatasets"];

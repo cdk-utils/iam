@@ -3905,10 +3905,6 @@
       "Name": "TagResource",
       "AuthorizedActions": [
         {
-          "Name": "CreateRunGroup",
-          "Service": "omics"
-        },
-        {
           "Name": "TagResource",
           "Service": "omics"
         }

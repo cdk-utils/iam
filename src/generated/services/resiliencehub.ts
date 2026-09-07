@@ -1419,7 +1419,10 @@ export class ResiliencehubOperations {
 	/** IAM actions required for the UpdateSystem API call. */
 	static readonly UpdateSystem: string[] = ["resiliencehub:UpdateSystem"];
 	/** IAM actions required for the UpdateTest API call. */
-	static readonly UpdateTest: string[] = ["resiliencehub:UpdateTest"];
+	static readonly UpdateTest: string[] = [
+		"iam:PassRole",
+		"resiliencehub:UpdateTest",
+	];
 	/** IAM actions required for the UpdateUserJourney API call. */
 	static readonly UpdateUserJourney: string[] = [
 		"resiliencehub:UpdateUserJourney",

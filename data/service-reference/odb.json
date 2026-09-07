@@ -2309,6 +2309,12 @@
     },
     {
       "Name": "DisassociateVirtualMachinesFromExadbVmCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateVirtualMachinesFromExadbVmCluster",
+          "Service": "odb"
+        }
+      ],
       "SDK": [
         {
           "Name": "odb",

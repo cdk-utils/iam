@@ -501,6 +501,7 @@ new payment_cryptography.PaymentCryptographyActions()
 | <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyActions.property.EncryptData">EncryptData</a></code> | <code>string</code> | [Write] payment-cryptography:EncryptData. |
 | <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyActions.property.ExportKey">ExportKey</a></code> | <code>string</code> | [Write] payment-cryptography:ExportKey. |
 | <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyActions.property.GenerateAs2805KekValidation">GenerateAs2805KekValidation</a></code> | <code>string</code> | [Write] payment-cryptography:GenerateAs2805KekValidation. |
+| <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyActions.property.GenerateAuthRequestCryptogram">GenerateAuthRequestCryptogram</a></code> | <code>string</code> | [Write] payment-cryptography:GenerateAuthRequestCryptogram. |
 | <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyActions.property.GenerateCardValidationData">GenerateCardValidationData</a></code> | <code>string</code> | [Write] payment-cryptography:GenerateCardValidationData. |
 | <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyActions.property.GenerateMac">GenerateMac</a></code> | <code>string</code> | [Write] payment-cryptography:GenerateMac. |
 | <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyActions.property.GenerateMacEmvPinChange">GenerateMacEmvPinChange</a></code> | <code>string</code> | [Write] payment-cryptography:GenerateMacEmvPinChange. |
@@ -864,6 +865,18 @@ public readonly GenerateAs2805KekValidation: string;
 
 ---
 
+##### `GenerateAuthRequestCryptogram`<sup>Required</sup> <a name="GenerateAuthRequestCryptogram" id="@cdk_utils/iam.payment_cryptography.PaymentCryptographyActions.property.GenerateAuthRequestCryptogram"></a>
+
+```typescript
+public readonly GenerateAuthRequestCryptogram: string;
+```
+
+- *Type:* string
+
+[Write] payment-cryptography:GenerateAuthRequestCryptogram.
+
+---
+
 ##### `GenerateCardValidationData`<sup>Required</sup> <a name="GenerateCardValidationData" id="@cdk_utils/iam.payment_cryptography.PaymentCryptographyActions.property.GenerateCardValidationData"></a>
 
 ```typescript
@@ -1175,14 +1188,19 @@ new payment_cryptography.PaymentCryptographyConditions()
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.certificateAuthorityPublicKeyIdentifier">certificateAuthorityPublicKeyIdentifier</a></code> | Generates a condition block for `payment-cryptography:CertificateAuthorityPublicKeyIdentifier`. |
+| <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.deriveKeyUsage">deriveKeyUsage</a></code> | Generates a condition block for `payment-cryptography:DeriveKeyUsage`. |
+| <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.exportDukptInitialKey">exportDukptInitialKey</a></code> | Generates a condition block for `payment-cryptography:ExportDukptInitialKey`. |
+| <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.exportKeyMaterial">exportKeyMaterial</a></code> | Generates a condition block for `payment-cryptography:ExportKeyMaterial`. |
 | <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.importKeyMaterial">importKeyMaterial</a></code> | Generates a condition block for `payment-cryptography:ImportKeyMaterial`. |
 | <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.keyAlgorithm">keyAlgorithm</a></code> | Generates a condition block for `payment-cryptography:KeyAlgorithm`. |
 | <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.keyClass">keyClass</a></code> | Generates a condition block for `payment-cryptography:KeyClass`. |
 | <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.keyUsage">keyUsage</a></code> | Generates a condition block for `payment-cryptography:KeyUsage`. |
+| <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.privateKeyIdentifier">privateKeyIdentifier</a></code> | Generates a condition block for `payment-cryptography:PrivateKeyIdentifier`. |
 | <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.requestAlias">requestAlias</a></code> | Generates a condition block for `payment-cryptography:RequestAlias`. |
 | <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.requestTag">requestTag</a></code> | Generates a condition block for `aws:RequestTag/${TagKey}`. |
 | <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.resourceAliases">resourceAliases</a></code> | Generates a condition block for `payment-cryptography:ResourceAliases`. |
 | <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.resourceTag">resourceTag</a></code> | Generates a condition block for `aws:ResourceTag/${TagKey}`. |
+| <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.signingKeyIdentifier">signingKeyIdentifier</a></code> | Generates a condition block for `payment-cryptography:SigningKeyIdentifier`. |
 | <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.tagKeys">tagKeys</a></code> | Generates a condition block for `aws:TagKeys`. |
 | <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.wrappingKeyIdentifier">wrappingKeyIdentifier</a></code> | Generates a condition block for `payment-cryptography:WrappingKeyIdentifier`. |
 
@@ -1199,6 +1217,54 @@ payment_cryptography.PaymentCryptographyConditions.certificateAuthorityPublicKey
 Generates a condition block for `payment-cryptography:CertificateAuthorityPublicKeyIdentifier`.
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.certificateAuthorityPublicKeyIdentifier.parameter.value"></a>
+
+- *Type:* string
+
+---
+
+##### `deriveKeyUsage` <a name="deriveKeyUsage" id="@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.deriveKeyUsage"></a>
+
+```typescript
+import { payment_cryptography } from '@cdk_utils/iam'
+
+payment_cryptography.PaymentCryptographyConditions.deriveKeyUsage(value: string)
+```
+
+Generates a condition block for `payment-cryptography:DeriveKeyUsage`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.deriveKeyUsage.parameter.value"></a>
+
+- *Type:* string
+
+---
+
+##### `exportDukptInitialKey` <a name="exportDukptInitialKey" id="@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.exportDukptInitialKey"></a>
+
+```typescript
+import { payment_cryptography } from '@cdk_utils/iam'
+
+payment_cryptography.PaymentCryptographyConditions.exportDukptInitialKey(value: boolean)
+```
+
+Generates a condition block for `payment-cryptography:ExportDukptInitialKey`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.exportDukptInitialKey.parameter.value"></a>
+
+- *Type:* boolean
+
+---
+
+##### `exportKeyMaterial` <a name="exportKeyMaterial" id="@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.exportKeyMaterial"></a>
+
+```typescript
+import { payment_cryptography } from '@cdk_utils/iam'
+
+payment_cryptography.PaymentCryptographyConditions.exportKeyMaterial(value: string)
+```
+
+Generates a condition block for `payment-cryptography:ExportKeyMaterial`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.exportKeyMaterial.parameter.value"></a>
 
 - *Type:* string
 
@@ -1268,6 +1334,22 @@ Generates a condition block for `payment-cryptography:KeyUsage`.
 
 ---
 
+##### `privateKeyIdentifier` <a name="privateKeyIdentifier" id="@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.privateKeyIdentifier"></a>
+
+```typescript
+import { payment_cryptography } from '@cdk_utils/iam'
+
+payment_cryptography.PaymentCryptographyConditions.privateKeyIdentifier(value: string)
+```
+
+Generates a condition block for `payment-cryptography:PrivateKeyIdentifier`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.privateKeyIdentifier.parameter.value"></a>
+
+- *Type:* string
+
+---
+
 ##### `requestAlias` <a name="requestAlias" id="@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.requestAlias"></a>
 
 ```typescript
@@ -1332,6 +1414,22 @@ Generates a condition block for `aws:ResourceTag/${TagKey}`.
 
 ---
 
+##### `signingKeyIdentifier` <a name="signingKeyIdentifier" id="@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.signingKeyIdentifier"></a>
+
+```typescript
+import { payment_cryptography } from '@cdk_utils/iam'
+
+payment_cryptography.PaymentCryptographyConditions.signingKeyIdentifier(value: string)
+```
+
+Generates a condition block for `payment-cryptography:SigningKeyIdentifier`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.signingKeyIdentifier.parameter.value"></a>
+
+- *Type:* string
+
+---
+
 ##### `tagKeys` <a name="tagKeys" id="@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.tagKeys"></a>
 
 ```typescript
@@ -1382,9 +1480,13 @@ Generates a condition block for `payment-cryptography:WrappingKeyIdentifier`.
 | <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.property.DecryptDataConditionKeys">DecryptDataConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DecryptData action. |
 | <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.property.DeleteAliasConditionKeys">DeleteAliasConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteAlias action. |
 | <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.property.DeleteKeyConditionKeys">DeleteKeyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteKey action. |
+| <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.property.DERIVE_KEY_USAGE">DERIVE_KEY_USAGE</a></code> | <code>string</code> | Condition key: payment-cryptography:DeriveKeyUsage (String). |
 | <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.property.EncryptDataConditionKeys">EncryptDataConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the EncryptData action. |
+| <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.property.EXPORT_DUKPT_INITIAL_KEY">EXPORT_DUKPT_INITIAL_KEY</a></code> | <code>string</code> | Condition key: payment-cryptography:ExportDukptInitialKey (Bool). |
+| <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.property.EXPORT_KEY_MATERIAL">EXPORT_KEY_MATERIAL</a></code> | <code>string</code> | Condition key: payment-cryptography:ExportKeyMaterial (String). |
 | <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.property.ExportKeyConditionKeys">ExportKeyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ExportKey action. |
 | <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.property.GenerateAs2805KekValidationConditionKeys">GenerateAs2805KekValidationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GenerateAs2805KekValidation action. |
+| <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.property.GenerateAuthRequestCryptogramConditionKeys">GenerateAuthRequestCryptogramConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GenerateAuthRequestCryptogram action. |
 | <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.property.GenerateCardValidationDataConditionKeys">GenerateCardValidationDataConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GenerateCardValidationData action. |
 | <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.property.GenerateMacConditionKeys">GenerateMacConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GenerateMac action. |
 | <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.property.GenerateMacEmvPinChangeConditionKeys">GenerateMacEmvPinChangeConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GenerateMacEmvPinChange action. |
@@ -1394,11 +1496,13 @@ Generates a condition block for `payment-cryptography:WrappingKeyIdentifier`.
 | <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.property.KEY_ALGORITHM">KEY_ALGORITHM</a></code> | <code>string</code> | Condition key: payment-cryptography:KeyAlgorithm (String). |
 | <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.property.KEY_CLASS">KEY_CLASS</a></code> | <code>string</code> | Condition key: payment-cryptography:KeyClass (String). |
 | <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.property.KEY_USAGE">KEY_USAGE</a></code> | <code>string</code> | Condition key: payment-cryptography:KeyUsage (String). |
+| <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.property.PRIVATE_KEY_IDENTIFIER">PRIVATE_KEY_IDENTIFIER</a></code> | <code>string</code> | Condition key: payment-cryptography:PrivateKeyIdentifier (String). |
 | <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.property.ReEncryptDataConditionKeys">ReEncryptDataConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ReEncryptData action. |
 | <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.property.RemoveKeyReplicationRegionsConditionKeys">RemoveKeyReplicationRegionsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the RemoveKeyReplicationRegions action. |
 | <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.property.REQUEST_ALIAS">REQUEST_ALIAS</a></code> | <code>string</code> | Condition key: payment-cryptography:RequestAlias (String). |
 | <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.property.RESOURCE_ALIASES">RESOURCE_ALIASES</a></code> | <code>string</code> | Condition key: payment-cryptography:ResourceAliases (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.property.RestoreKeyConditionKeys">RestoreKeyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the RestoreKey action. |
+| <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.property.SIGNING_KEY_IDENTIFIER">SIGNING_KEY_IDENTIFIER</a></code> | <code>string</code> | Condition key: payment-cryptography:SigningKeyIdentifier (String). |
 | <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.property.StartKeyUsageConditionKeys">StartKeyUsageConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartKeyUsage action. |
 | <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.property.StopKeyUsageConditionKeys">StopKeyUsageConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StopKeyUsage action. |
 | <code><a href="#@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.property.TagResourceConditionKeys">TagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TagResource action. |
@@ -1570,6 +1674,18 @@ Condition keys applicable to the DeleteKey action.
 
 ---
 
+##### `DERIVE_KEY_USAGE`<sup>Required</sup> <a name="DERIVE_KEY_USAGE" id="@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.property.DERIVE_KEY_USAGE"></a>
+
+```typescript
+public readonly DERIVE_KEY_USAGE: string;
+```
+
+- *Type:* string
+
+Condition key: payment-cryptography:DeriveKeyUsage (String).
+
+---
+
 ##### `EncryptDataConditionKeys`<sup>Required</sup> <a name="EncryptDataConditionKeys" id="@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.property.EncryptDataConditionKeys"></a>
 
 ```typescript
@@ -1579,6 +1695,30 @@ public readonly EncryptDataConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the EncryptData action.
+
+---
+
+##### `EXPORT_DUKPT_INITIAL_KEY`<sup>Required</sup> <a name="EXPORT_DUKPT_INITIAL_KEY" id="@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.property.EXPORT_DUKPT_INITIAL_KEY"></a>
+
+```typescript
+public readonly EXPORT_DUKPT_INITIAL_KEY: string;
+```
+
+- *Type:* string
+
+Condition key: payment-cryptography:ExportDukptInitialKey (Bool).
+
+---
+
+##### `EXPORT_KEY_MATERIAL`<sup>Required</sup> <a name="EXPORT_KEY_MATERIAL" id="@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.property.EXPORT_KEY_MATERIAL"></a>
+
+```typescript
+public readonly EXPORT_KEY_MATERIAL: string;
+```
+
+- *Type:* string
+
+Condition key: payment-cryptography:ExportKeyMaterial (String).
 
 ---
 
@@ -1603,6 +1743,18 @@ public readonly GenerateAs2805KekValidationConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the GenerateAs2805KekValidation action.
+
+---
+
+##### `GenerateAuthRequestCryptogramConditionKeys`<sup>Required</sup> <a name="GenerateAuthRequestCryptogramConditionKeys" id="@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.property.GenerateAuthRequestCryptogramConditionKeys"></a>
+
+```typescript
+public readonly GenerateAuthRequestCryptogramConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GenerateAuthRequestCryptogram action.
 
 ---
 
@@ -1714,6 +1866,18 @@ Condition key: payment-cryptography:KeyUsage (String).
 
 ---
 
+##### `PRIVATE_KEY_IDENTIFIER`<sup>Required</sup> <a name="PRIVATE_KEY_IDENTIFIER" id="@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.property.PRIVATE_KEY_IDENTIFIER"></a>
+
+```typescript
+public readonly PRIVATE_KEY_IDENTIFIER: string;
+```
+
+- *Type:* string
+
+Condition key: payment-cryptography:PrivateKeyIdentifier (String).
+
+---
+
 ##### `ReEncryptDataConditionKeys`<sup>Required</sup> <a name="ReEncryptDataConditionKeys" id="@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.property.ReEncryptDataConditionKeys"></a>
 
 ```typescript
@@ -1771,6 +1935,18 @@ public readonly RestoreKeyConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the RestoreKey action.
+
+---
+
+##### `SIGNING_KEY_IDENTIFIER`<sup>Required</sup> <a name="SIGNING_KEY_IDENTIFIER" id="@cdk_utils/iam.payment_cryptography.PaymentCryptographyConditions.property.SIGNING_KEY_IDENTIFIER"></a>
+
+```typescript
+public readonly SIGNING_KEY_IDENTIFIER: string;
+```
+
+- *Type:* string
+
+Condition key: payment-cryptography:SigningKeyIdentifier (String).
 
 ---
 

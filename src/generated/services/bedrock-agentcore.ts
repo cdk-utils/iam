@@ -3072,7 +3072,10 @@ export class BedrockAgentcoreOperations {
 		"bedrock-agentcore:TagResource",
 	];
 	/** IAM actions required for the CreateConsentPortal API call. */
-	static readonly CreateConsentPortal: string[] = [];
+	static readonly CreateConsentPortal: string[] = [
+		"iam:PassRole",
+		"bedrock-agentcore:TagResource",
+	];
 	/** IAM actions required for the CreateDataset API call. */
 	static readonly CreateDataset: string[] = [
 		"bedrock-agentcore:CreateDataset",

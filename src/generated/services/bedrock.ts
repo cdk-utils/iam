@@ -3942,10 +3942,7 @@ export class BedrockOperations {
 		"bedrock:Retrieve",
 	];
 	/** IAM actions required for the GetEvaluationJob API call. */
-	static readonly opGetEvaluationJob: string[] = [
-		"bedrock:CallWithBearerToken",
-		"bedrock:GetEvaluationJob",
-	];
+	static readonly opGetEvaluationJob: string[] = ["bedrock:GetEvaluationJob"];
 	/** IAM actions required for the GetExecutionFlowSnapshot API call. */
 	static readonly opGetExecutionFlowSnapshot: string[] = [
 		"bedrock:GetExecutionFlowSnapshot",
