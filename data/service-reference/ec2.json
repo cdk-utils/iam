@@ -40878,6 +40878,16 @@
       ]
     },
     {
+      "Name": "ValidateSecurityGroupQuotasForInterface",
+      "SDK": [
+        {
+          "Name": "ec2",
+          "Method": "validate_security_group_quotas_for_interface",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "WithdrawByoipCidr",
       "AuthorizedActions": [
         {

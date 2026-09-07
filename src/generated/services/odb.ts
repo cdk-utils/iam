@@ -1067,7 +1067,9 @@ export class OdbOperations {
 		"odb:DisassociateIamRoleFromResource",
 	];
 	/** IAM actions required for the DisassociateVirtualMachinesFromExadbVmCluster API call. */
-	static readonly DisassociateVirtualMachinesFromExadbVmCluster: string[] = [];
+	static readonly DisassociateVirtualMachinesFromExadbVmCluster: string[] = [
+		"odb:DisassociateVirtualMachinesFromExadbVmCluster",
+	];
 	/** IAM actions required for the FailoverAutonomousDatabase API call. */
 	static readonly FailoverAutonomousDatabase: string[] = [
 		"odb:FailoverAutonomousDatabase",

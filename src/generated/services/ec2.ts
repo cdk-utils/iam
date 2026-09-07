@@ -13054,6 +13054,8 @@ export class EC2Operations {
 	static readonly UpdateSecurityGroupRuleDescriptionsIngress: string[] = [
 		"ec2:UpdateSecurityGroupRuleDescriptionsIngress",
 	];
+	/** IAM actions required for the ValidateSecurityGroupQuotasForInterface API call. */
+	static readonly ValidateSecurityGroupQuotasForInterface: string[] = [];
 	/** IAM actions required for the WithdrawByoipCidr API call. */
 	static readonly WithdrawByoipCidr: string[] = ["ec2:WithdrawByoipCidr"];
 }

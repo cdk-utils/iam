@@ -1629,10 +1629,7 @@ export class OmicsOperations {
 		"omics:StartVariantImportJob",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TagResource: string[] = [
-		"omics:CreateRunGroup",
-		"omics:TagResource",
-	];
+	static readonly TagResource: string[] = ["omics:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
 	static readonly UntagResource: string[] = ["omics:UntagResource"];
 	/** IAM actions required for the UpdateAnnotationStore API call. */

@@ -43318,6 +43318,7 @@ new ec2.EC2Operations()
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.UpdateInterruptibleCapacityReservationAllocation">UpdateInterruptibleCapacityReservationAllocation</a></code> | <code>string[]</code> | IAM actions required for the UpdateInterruptibleCapacityReservationAllocation API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.UpdateSecurityGroupRuleDescriptionsEgress">UpdateSecurityGroupRuleDescriptionsEgress</a></code> | <code>string[]</code> | IAM actions required for the UpdateSecurityGroupRuleDescriptionsEgress API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.UpdateSecurityGroupRuleDescriptionsIngress">UpdateSecurityGroupRuleDescriptionsIngress</a></code> | <code>string[]</code> | IAM actions required for the UpdateSecurityGroupRuleDescriptionsIngress API call. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.ValidateSecurityGroupQuotasForInterface">ValidateSecurityGroupQuotasForInterface</a></code> | <code>string[]</code> | IAM actions required for the ValidateSecurityGroupQuotasForInterface API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.WithdrawByoipCidr">WithdrawByoipCidr</a></code> | <code>string[]</code> | IAM actions required for the WithdrawByoipCidr API call. |
 
 ---
@@ -52919,6 +52920,18 @@ public readonly UpdateSecurityGroupRuleDescriptionsIngress: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateSecurityGroupRuleDescriptionsIngress API call.
+
+---
+
+##### `ValidateSecurityGroupQuotasForInterface`<sup>Required</sup> <a name="ValidateSecurityGroupQuotasForInterface" id="@cdk_utils/iam.ec2.EC2Operations.property.ValidateSecurityGroupQuotasForInterface"></a>
+
+```typescript
+public readonly ValidateSecurityGroupQuotasForInterface: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ValidateSecurityGroupQuotasForInterface API call.
 
 ---
 

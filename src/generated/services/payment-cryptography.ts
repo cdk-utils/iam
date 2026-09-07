@@ -46,6 +46,9 @@ export class PaymentCryptographyActions {
 	/** [Write] payment-cryptography:GenerateAs2805KekValidation */
 	static readonly GenerateAs2805KekValidation =
 		"payment-cryptography:GenerateAs2805KekValidation";
+	/** [Write] payment-cryptography:GenerateAuthRequestCryptogram */
+	static readonly GenerateAuthRequestCryptogram =
+		"payment-cryptography:GenerateAuthRequestCryptogram";
 	/** [Write] payment-cryptography:GenerateCardValidationData */
 	static readonly GenerateCardValidationData =
 		"payment-cryptography:GenerateCardValidationData";
@@ -153,6 +156,7 @@ export class PaymentCryptographyActions {
 		PaymentCryptographyActions.EncryptData,
 		PaymentCryptographyActions.ExportKey,
 		PaymentCryptographyActions.GenerateAs2805KekValidation,
+		PaymentCryptographyActions.GenerateAuthRequestCryptogram,
 		PaymentCryptographyActions.GenerateCardValidationData,
 		PaymentCryptographyActions.GenerateMac,
 		PaymentCryptographyActions.GenerateMacEmvPinChange,
@@ -535,6 +539,7 @@ export class PaymentCryptographyConditions {
 	static readonly CreateKeyConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
+		"payment-cryptography:DeriveKeyUsage",
 		"payment-cryptography:KeyAlgorithm",
 		"payment-cryptography:KeyClass",
 		"payment-cryptography:KeyUsage",
@@ -559,11 +564,19 @@ export class PaymentCryptographyConditions {
 	/** Condition keys applicable to the ExportKey action. */
 	static readonly ExportKeyConditionKeys: string[] = [
 		"payment-cryptography:CertificateAuthorityPublicKeyIdentifier",
+		"payment-cryptography:ExportDukptInitialKey",
+		"payment-cryptography:ExportKeyMaterial",
+		"payment-cryptography:PrivateKeyIdentifier",
 		"payment-cryptography:RequestAlias",
+		"payment-cryptography:SigningKeyIdentifier",
 		"payment-cryptography:WrappingKeyIdentifier",
 	];
 	/** Condition keys applicable to the GenerateAs2805KekValidation action. */
 	static readonly GenerateAs2805KekValidationConditionKeys: string[] = [
+		"payment-cryptography:RequestAlias",
+	];
+	/** Condition keys applicable to the GenerateAuthRequestCryptogram action. */
+	static readonly GenerateAuthRequestCryptogramConditionKeys: string[] = [
 		"payment-cryptography:RequestAlias",
 	];
 	/** Condition keys applicable to the GenerateCardValidationData action. */
@@ -605,6 +618,7 @@ export class PaymentCryptographyConditions {
 		"aws:TagKeys",
 		"payment-cryptography:CertificateAuthorityPublicKeyIdentifier",
 		"payment-cryptography:ImportKeyMaterial",
+		"payment-cryptography:PrivateKeyIdentifier",
 		"payment-cryptography:WrappingKeyIdentifier",
 	];
 	/** Condition keys applicable to the ReEncryptData action. */
@@ -673,6 +687,14 @@ export class PaymentCryptographyConditions {
 	/** Condition key: payment-cryptography:CertificateAuthorityPublicKeyIdentifier (String) */
 	static readonly CERTIFICATE_AUTHORITY_PUBLIC_KEY_IDENTIFIER =
 		"payment-cryptography:CertificateAuthorityPublicKeyIdentifier";
+	/** Condition key: payment-cryptography:DeriveKeyUsage (String) */
+	static readonly DERIVE_KEY_USAGE = "payment-cryptography:DeriveKeyUsage";
+	/** Condition key: payment-cryptography:ExportDukptInitialKey (Bool) */
+	static readonly EXPORT_DUKPT_INITIAL_KEY =
+		"payment-cryptography:ExportDukptInitialKey";
+	/** Condition key: payment-cryptography:ExportKeyMaterial (String) */
+	static readonly EXPORT_KEY_MATERIAL =
+		"payment-cryptography:ExportKeyMaterial";
 	/** Condition key: payment-cryptography:ImportKeyMaterial (String) */
 	static readonly IMPORT_KEY_MATERIAL =
 		"payment-cryptography:ImportKeyMaterial";
@@ -682,10 +704,16 @@ export class PaymentCryptographyConditions {
 	static readonly KEY_CLASS = "payment-cryptography:KeyClass";
 	/** Condition key: payment-cryptography:KeyUsage (String) */
 	static readonly KEY_USAGE = "payment-cryptography:KeyUsage";
+	/** Condition key: payment-cryptography:PrivateKeyIdentifier (String) */
+	static readonly PRIVATE_KEY_IDENTIFIER =
+		"payment-cryptography:PrivateKeyIdentifier";
 	/** Condition key: payment-cryptography:RequestAlias (String) */
 	static readonly REQUEST_ALIAS = "payment-cryptography:RequestAlias";
 	/** Condition key: payment-cryptography:ResourceAliases (ArrayOfString) */
 	static readonly RESOURCE_ALIASES = "payment-cryptography:ResourceAliases";
+	/** Condition key: payment-cryptography:SigningKeyIdentifier (String) */
+	static readonly SIGNING_KEY_IDENTIFIER =
+		"payment-cryptography:SigningKeyIdentifier";
 	/** Condition key: payment-cryptography:WrappingKeyIdentifier (String) */
 	static readonly WRAPPING_KEY_IDENTIFIER =
 		"payment-cryptography:WrappingKeyIdentifier";
@@ -725,6 +753,33 @@ export class PaymentCryptographyConditions {
 	}
 
 	/**
+	 * Generates a condition block for `payment-cryptography:DeriveKeyUsage`.
+	 */
+	static deriveKeyUsage(value: string): Record<string, Record<string, string>> {
+		return { StringEquals: { "payment-cryptography:DeriveKeyUsage": value } };
+	}
+
+	/**
+	 * Generates a condition block for `payment-cryptography:ExportDukptInitialKey`.
+	 */
+	static exportDukptInitialKey(
+		value: boolean,
+	): Record<string, Record<string, boolean>> {
+		return { Bool: { "payment-cryptography:ExportDukptInitialKey": value } };
+	}
+
+	/**
+	 * Generates a condition block for `payment-cryptography:ExportKeyMaterial`.
+	 */
+	static exportKeyMaterial(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return {
+			StringEquals: { "payment-cryptography:ExportKeyMaterial": value },
+		};
+	}
+
+	/**
 	 * Generates a condition block for `payment-cryptography:ImportKeyMaterial`.
 	 */
 	static importKeyMaterial(
@@ -757,6 +812,17 @@ export class PaymentCryptographyConditions {
 	}
 
 	/**
+	 * Generates a condition block for `payment-cryptography:PrivateKeyIdentifier`.
+	 */
+	static privateKeyIdentifier(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return {
+			StringEquals: { "payment-cryptography:PrivateKeyIdentifier": value },
+		};
+	}
+
+	/**
 	 * Generates a condition block for `payment-cryptography:RequestAlias`.
 	 */
 	static requestAlias(value: string): Record<string, Record<string, string>> {
@@ -773,6 +839,17 @@ export class PaymentCryptographyConditions {
 			"ForAllValues:StringEquals": {
 				"payment-cryptography:ResourceAliases": values,
 			},
+		};
+	}
+
+	/**
+	 * Generates a condition block for `payment-cryptography:SigningKeyIdentifier`.
+	 */
+	static signingKeyIdentifier(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return {
+			StringEquals: { "payment-cryptography:SigningKeyIdentifier": value },
 		};
 	}
 
