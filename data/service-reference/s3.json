@@ -4492,6 +4492,8 @@
         "s3:authType",
         "s3:if-match",
         "s3:if-none-match",
+        "s3:object-lock-event-hold",
+        "s3:object-lock-event-hold-duration-days",
         "s3:object-lock-legal-hold",
         "s3:object-lock-mode",
         "s3:object-lock-remaining-retention-days",
@@ -4646,6 +4648,8 @@
         "s3:ResourceAccount",
         "s3:TlsVersion",
         "s3:authType",
+        "s3:object-lock-event-hold",
+        "s3:object-lock-event-hold-duration-days",
         "s3:object-lock-mode",
         "s3:object-lock-remaining-retention-days",
         "s3:object-lock-retain-until-date",
@@ -4936,6 +4940,8 @@
         "s3:ResourceAccount",
         "s3:TlsVersion",
         "s3:authType",
+        "s3:object-lock-event-hold",
+        "s3:object-lock-event-hold-duration-days",
         "s3:signatureAge",
         "s3:signatureversion",
         "s3:x-amz-content-sha256",
@@ -5613,6 +5619,18 @@
     },
     {
       "Name": "s3:max-keys",
+      "Types": [
+        "Numeric"
+      ]
+    },
+    {
+      "Name": "s3:object-lock-event-hold",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "s3:object-lock-event-hold-duration-days",
       "Types": [
         "Numeric"
       ]
