@@ -1172,7 +1172,10 @@ export class ResiliencehubOperations {
 	/** IAM actions required for the GetUserJourney API call. */
 	static readonly opGetUserJourney: string[] = ["resiliencehub:GetUserJourney"];
 	/** IAM actions required for the ImportApp API call. */
-	static readonly ImportApp: string[] = ["resiliencehub:ImportApp"];
+	static readonly ImportApp: string[] = [
+		"resiliencehub:ImportApp",
+		"resiliencehub:TagResource",
+	];
 	/** IAM actions required for the ImportPolicy API call. */
 	static readonly ImportPolicy: string[] = ["resiliencehub:ImportPolicy"];
 	/** IAM actions required for the ImportResourcesToDraftAppVersion API call. */

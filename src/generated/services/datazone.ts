@@ -1405,7 +1405,7 @@ export class DatazoneOperations {
 	/** IAM actions required for the StartNotebookRun API call. */
 	static readonly StartNotebookRun: string[] = ["datazone:StartNotebookRun"];
 	/** IAM actions required for the StartNotebookSync API call. */
-	static readonly StartNotebookSync: string[] = [];
+	static readonly StartNotebookSync: string[] = ["datazone:StartNotebookSync"];
 	/** IAM actions required for the StopNotebookRun API call. */
 	static readonly StopNotebookRun: string[] = ["datazone:StopNotebookRun"];
 	/** IAM actions required for the TagResource API call. */

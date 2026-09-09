@@ -3746,6 +3746,10 @@
         {
           "Name": "ImportApp",
           "Service": "resiliencehub"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "resiliencehub"
         }
       ],
       "SDK": [

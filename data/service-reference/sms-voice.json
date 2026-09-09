@@ -3606,6 +3606,16 @@
       ]
     },
     {
+      "Name": "ListAvailablePhoneNumbers",
+      "SDK": [
+        {
+          "Name": "pinpoint-sms-voice-v2",
+          "Method": "list_available_phone_numbers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListConfigurationSets",
       "AuthorizedActions": [
         {

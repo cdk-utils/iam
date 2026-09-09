@@ -3776,6 +3776,7 @@ new sms_voice.SMSVoiceOperations()
 | <code><a href="#@cdk_utils/iam.sms_voice.SMSVoiceOperations.property.DisassociateOriginationIdentity">DisassociateOriginationIdentity</a></code> | <code>string[]</code> | IAM actions required for the DisassociateOriginationIdentity API call. |
 | <code><a href="#@cdk_utils/iam.sms_voice.SMSVoiceOperations.property.DisassociateProtectConfiguration">DisassociateProtectConfiguration</a></code> | <code>string[]</code> | IAM actions required for the DisassociateProtectConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.sms_voice.SMSVoiceOperations.property.DiscardRegistrationVersion">DiscardRegistrationVersion</a></code> | <code>string[]</code> | IAM actions required for the DiscardRegistrationVersion API call. |
+| <code><a href="#@cdk_utils/iam.sms_voice.SMSVoiceOperations.property.ListAvailablePhoneNumbers">ListAvailablePhoneNumbers</a></code> | <code>string[]</code> | IAM actions required for the ListAvailablePhoneNumbers API call. |
 | <code><a href="#@cdk_utils/iam.sms_voice.SMSVoiceOperations.property.ListConfigurationSets">ListConfigurationSets</a></code> | <code>string[]</code> | IAM actions required for the ListConfigurationSets API call. |
 | <code><a href="#@cdk_utils/iam.sms_voice.SMSVoiceOperations.property.ListNotifyCountries">ListNotifyCountries</a></code> | <code>string[]</code> | IAM actions required for the ListNotifyCountries API call. |
 | <code><a href="#@cdk_utils/iam.sms_voice.SMSVoiceOperations.property.ListPoolOriginationIdentities">ListPoolOriginationIdentities</a></code> | <code>string[]</code> | IAM actions required for the ListPoolOriginationIdentities API call. |
@@ -4616,6 +4617,18 @@ public readonly DiscardRegistrationVersion: string[];
 - *Type:* string[]
 
 IAM actions required for the DiscardRegistrationVersion API call.
+
+---
+
+##### `ListAvailablePhoneNumbers`<sup>Required</sup> <a name="ListAvailablePhoneNumbers" id="@cdk_utils/iam.sms_voice.SMSVoiceOperations.property.ListAvailablePhoneNumbers"></a>
+
+```typescript
+public readonly ListAvailablePhoneNumbers: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListAvailablePhoneNumbers API call.
 
 ---
 

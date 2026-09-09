@@ -3803,6 +3803,8 @@ export class S3Conditions {
 		"s3:authType",
 		"s3:if-match",
 		"s3:if-none-match",
+		"s3:object-lock-event-hold",
+		"s3:object-lock-event-hold-duration-days",
 		"s3:object-lock-legal-hold",
 		"s3:object-lock-mode",
 		"s3:object-lock-remaining-retention-days",
@@ -3869,6 +3871,8 @@ export class S3Conditions {
 		"s3:ResourceAccount",
 		"s3:TlsVersion",
 		"s3:authType",
+		"s3:object-lock-event-hold",
+		"s3:object-lock-event-hold-duration-days",
 		"s3:object-lock-mode",
 		"s3:object-lock-remaining-retention-days",
 		"s3:object-lock-retain-until-date",
@@ -3978,6 +3982,8 @@ export class S3Conditions {
 		"s3:ResourceAccount",
 		"s3:TlsVersion",
 		"s3:authType",
+		"s3:object-lock-event-hold",
+		"s3:object-lock-event-hold-duration-days",
 		"s3:signatureAge",
 		"s3:signatureversion",
 		"s3:x-amz-content-sha256",
@@ -4202,6 +4208,11 @@ export class S3Conditions {
 	static readonly MAX_ANNOTATION_RESULTS = "s3:max-annotation-results";
 	/** Condition key: s3:max-keys (Numeric) */
 	static readonly MAX_KEYS = "s3:max-keys";
+	/** Condition key: s3:object-lock-event-hold (String) */
+	static readonly OBJECT_LOCK_EVENT_HOLD = "s3:object-lock-event-hold";
+	/** Condition key: s3:object-lock-event-hold-duration-days (Numeric) */
+	static readonly OBJECT_LOCK_EVENT_HOLD_DURATION_DAYS =
+		"s3:object-lock-event-hold-duration-days";
 	/** Condition key: s3:object-lock-legal-hold (String) */
 	static readonly OBJECT_LOCK_LEGAL_HOLD = "s3:object-lock-legal-hold";
 	/** Condition key: s3:object-lock-mode (String) */
@@ -4560,6 +4571,26 @@ export class S3Conditions {
 	 */
 	static maxKeys(value: number): Record<string, Record<string, number>> {
 		return { NumericEquals: { "s3:max-keys": value } };
+	}
+
+	/**
+	 * Generates a condition block for `s3:object-lock-event-hold`.
+	 */
+	static objectLockEventHold(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "s3:object-lock-event-hold": value } };
+	}
+
+	/**
+	 * Generates a condition block for `s3:object-lock-event-hold-duration-days`.
+	 */
+	static objectLockEventHoldDurationDays(
+		value: number,
+	): Record<string, Record<string, number>> {
+		return {
+			NumericEquals: { "s3:object-lock-event-hold-duration-days": value },
+		};
 	}
 
 	/**
