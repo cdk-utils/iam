@@ -240,6 +240,8 @@ export class ElementalInferenceOperations {
 	];
 	/** IAM actions required for the DeleteFeed API call. */
 	static readonly DeleteFeed: string[] = ["elemental-inference:DeleteFeed"];
+	/** IAM actions required for the DeleteFeedPolicy API call. */
+	static readonly DeleteFeedPolicy: string[] = [];
 	/** IAM actions required for the DisassociateFeed API call. */
 	static readonly DisassociateFeed: string[] = [
 		"elemental-inference:DisassociateFeed",
@@ -254,6 +256,8 @@ export class ElementalInferenceOperations {
 	];
 	/** IAM actions required for the GetFeed API call. */
 	static readonly opGetFeed: string[] = ["elemental-inference:GetFeed"];
+	/** IAM actions required for the GetFeedPolicy API call. */
+	static readonly opGetFeedPolicy: string[] = [];
 	/** IAM actions required for the GetFixture API call. */
 	static readonly opGetFixture: string[] = [];
 	/** IAM actions required for the ListDictionaries API call. */
@@ -266,6 +270,8 @@ export class ElementalInferenceOperations {
 	static readonly ListTagsForResource: string[] = [
 		"elemental-inference:ListTagsForResource",
 	];
+	/** IAM actions required for the PutFeedPolicy API call. */
+	static readonly PutFeedPolicy: string[] = [];
 	/** IAM actions required for the SearchFixtures API call. */
 	static readonly SearchFixtures: string[] = [];
 	/** IAM actions required for the TagResource API call. */

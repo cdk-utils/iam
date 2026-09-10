@@ -844,6 +844,7 @@ new elemental_inference.ElementalInferenceOperations()
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.CreateFeed">CreateFeed</a></code> | <code>string[]</code> | IAM actions required for the CreateFeed API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.DeleteDictionary">DeleteDictionary</a></code> | <code>string[]</code> | IAM actions required for the DeleteDictionary API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.DeleteFeed">DeleteFeed</a></code> | <code>string[]</code> | IAM actions required for the DeleteFeed API call. |
+| <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.DeleteFeedPolicy">DeleteFeedPolicy</a></code> | <code>string[]</code> | IAM actions required for the DeleteFeedPolicy API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.DisassociateFeed">DisassociateFeed</a></code> | <code>string[]</code> | IAM actions required for the DisassociateFeed API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.ExportDictionaryEntries">ExportDictionaryEntries</a></code> | <code>string[]</code> | IAM actions required for the ExportDictionaryEntries API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.ListDictionaries">ListDictionaries</a></code> | <code>string[]</code> | IAM actions required for the ListDictionaries API call. |
@@ -851,7 +852,9 @@ new elemental_inference.ElementalInferenceOperations()
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.opGetDictionary">opGetDictionary</a></code> | <code>string[]</code> | IAM actions required for the GetDictionary API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.opGetFeed">opGetFeed</a></code> | <code>string[]</code> | IAM actions required for the GetFeed API call. |
+| <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.opGetFeedPolicy">opGetFeedPolicy</a></code> | <code>string[]</code> | IAM actions required for the GetFeedPolicy API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.opGetFixture">opGetFixture</a></code> | <code>string[]</code> | IAM actions required for the GetFixture API call. |
+| <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.PutFeedPolicy">PutFeedPolicy</a></code> | <code>string[]</code> | IAM actions required for the PutFeedPolicy API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.SearchFixtures">SearchFixtures</a></code> | <code>string[]</code> | IAM actions required for the SearchFixtures API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
@@ -917,6 +920,18 @@ public readonly DeleteFeed: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteFeed API call.
+
+---
+
+##### `DeleteFeedPolicy`<sup>Required</sup> <a name="DeleteFeedPolicy" id="@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.DeleteFeedPolicy"></a>
+
+```typescript
+public readonly DeleteFeedPolicy: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteFeedPolicy API call.
 
 ---
 
@@ -1004,6 +1019,18 @@ IAM actions required for the GetFeed API call.
 
 ---
 
+##### `opGetFeedPolicy`<sup>Required</sup> <a name="opGetFeedPolicy" id="@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.opGetFeedPolicy"></a>
+
+```typescript
+public readonly opGetFeedPolicy: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetFeedPolicy API call.
+
+---
+
 ##### `opGetFixture`<sup>Required</sup> <a name="opGetFixture" id="@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.opGetFixture"></a>
 
 ```typescript
@@ -1013,6 +1040,18 @@ public readonly opGetFixture: string[];
 - *Type:* string[]
 
 IAM actions required for the GetFixture API call.
+
+---
+
+##### `PutFeedPolicy`<sup>Required</sup> <a name="PutFeedPolicy" id="@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.PutFeedPolicy"></a>
+
+```typescript
+public readonly PutFeedPolicy: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the PutFeedPolicy API call.
 
 ---
 

@@ -2081,6 +2081,20 @@
     },
     {
       "Name": "CreateExadbVmCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDbNode",
+          "Service": "odb"
+        },
+        {
+          "Name": "CreateExadbVmCluster",
+          "Service": "odb"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "odb"
+        }
+      ],
       "SDK": [
         {
           "Name": "odb",
