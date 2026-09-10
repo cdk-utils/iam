@@ -1013,7 +1013,11 @@ export class OdbOperations {
 		"odb:TagResource",
 	];
 	/** IAM actions required for the CreateExadbVmCluster API call. */
-	static readonly CreateExadbVmCluster: string[] = [];
+	static readonly CreateExadbVmCluster: string[] = [
+		"odb:CreateDbNode",
+		"odb:CreateExadbVmCluster",
+		"odb:TagResource",
+	];
 	/** IAM actions required for the CreateExascaleDbStorageVault API call. */
 	static readonly CreateExascaleDbStorageVault: string[] = [
 		"odb:CreateExascaleDbStorageVault",

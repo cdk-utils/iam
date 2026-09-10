@@ -13315,6 +13315,16 @@
       ]
     },
     {
+      "Name": "ListEvaluationFormAIVersions",
+      "SDK": [
+        {
+          "Name": "connect",
+          "Method": "list_evaluation_form_ai_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListEvaluationFormVersions",
       "AuthorizedActions": [
         {

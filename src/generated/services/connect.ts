@@ -5027,6 +5027,8 @@ export class ConnectOperations {
 	static readonly ListEntitySecurityProfiles: string[] = [
 		"connect:ListEntitySecurityProfiles",
 	];
+	/** IAM actions required for the ListEvaluationFormAIVersions API call. */
+	static readonly ListEvaluationFormAIVersions: string[] = [];
 	/** IAM actions required for the ListEvaluationFormVersions API call. */
 	static readonly ListEvaluationFormVersions: string[] = [
 		"connect:ListEvaluationFormVersions",

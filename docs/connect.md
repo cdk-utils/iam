@@ -18258,6 +18258,7 @@ new connect.ConnectOperations()
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.ListDataTableValues">ListDataTableValues</a></code> | <code>string[]</code> | IAM actions required for the ListDataTableValues API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.ListDefaultVocabularies">ListDefaultVocabularies</a></code> | <code>string[]</code> | IAM actions required for the ListDefaultVocabularies API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.ListEntitySecurityProfiles">ListEntitySecurityProfiles</a></code> | <code>string[]</code> | IAM actions required for the ListEntitySecurityProfiles API call. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.ListEvaluationFormAIVersions">ListEvaluationFormAIVersions</a></code> | <code>string[]</code> | IAM actions required for the ListEvaluationFormAIVersions API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.ListEvaluationForms">ListEvaluationForms</a></code> | <code>string[]</code> | IAM actions required for the ListEvaluationForms API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.ListEvaluationFormVersions">ListEvaluationFormVersions</a></code> | <code>string[]</code> | IAM actions required for the ListEvaluationFormVersions API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.ListExtractionDefinitions">ListExtractionDefinitions</a></code> | <code>string[]</code> | IAM actions required for the ListExtractionDefinitions API call. |
@@ -20842,6 +20843,18 @@ public readonly ListEntitySecurityProfiles: string[];
 - *Type:* string[]
 
 IAM actions required for the ListEntitySecurityProfiles API call.
+
+---
+
+##### `ListEvaluationFormAIVersions`<sup>Required</sup> <a name="ListEvaluationFormAIVersions" id="@cdk_utils/iam.connect.ConnectOperations.property.ListEvaluationFormAIVersions"></a>
+
+```typescript
+public readonly ListEvaluationFormAIVersions: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListEvaluationFormAIVersions API call.
 
 ---
 

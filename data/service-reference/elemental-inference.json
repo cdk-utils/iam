@@ -477,6 +477,16 @@
       ]
     },
     {
+      "Name": "DeleteFeedPolicy",
+      "SDK": [
+        {
+          "Name": "elementalinference",
+          "Method": "delete_feed_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DisassociateFeed",
       "AuthorizedActions": [
         {
@@ -541,6 +551,16 @@
       ]
     },
     {
+      "Name": "GetFeedPolicy",
+      "SDK": [
+        {
+          "Name": "elementalinference",
+          "Method": "get_feed_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetFixture",
       "SDK": [
         {
@@ -594,6 +614,16 @@
         {
           "Name": "elementalinference",
           "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutFeedPolicy",
+      "SDK": [
+        {
+          "Name": "elementalinference",
+          "Method": "put_feed_policy",
           "Package": "Boto3"
         }
       ]
