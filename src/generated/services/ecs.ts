@@ -1655,6 +1655,8 @@ export class ECSConditions {
 		"ecs:cluster",
 		"ecs:enable-ebs-volumes",
 		"ecs:enable-execute-command",
+		"ecs:task-cpu",
+		"ecs:task-memory",
 	];
 	/** Condition keys applicable to the StartTask action. */
 	static readonly StartTaskConditionKeys: string[] = [

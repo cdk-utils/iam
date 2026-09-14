@@ -1310,8 +1310,10 @@ new resiliencehub.ResiliencehubActions()
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubActions.property.ListSystems">ListSystems</a></code> | <code>string</code> | [Read] resiliencehub:ListSystems. |
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [Read] resiliencehub:ListTagsForResource. |
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubActions.property.ListTestRecommendations">ListTestRecommendations</a></code> | <code>string</code> | [List] resiliencehub:ListTestRecommendations. |
+| <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubActions.property.ListTestRunDependencies">ListTestRunDependencies</a></code> | <code>string</code> | [Read] resiliencehub:ListTestRunDependencies. |
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubActions.property.ListTestRunEvents">ListTestRunEvents</a></code> | <code>string</code> | [Read] resiliencehub:ListTestRunEvents. |
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubActions.property.ListTestRuns">ListTestRuns</a></code> | <code>string</code> | [Read] resiliencehub:ListTestRuns. |
+| <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubActions.property.ListTestRunSourceEvents">ListTestRunSourceEvents</a></code> | <code>string</code> | [Read] resiliencehub:ListTestRunSourceEvents. |
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubActions.property.ListTestRunSources">ListTestRunSources</a></code> | <code>string</code> | [Read] resiliencehub:ListTestRunSources. |
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubActions.property.ListTests">ListTests</a></code> | <code>string</code> | [Read] resiliencehub:ListTests. |
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubActions.property.ListTestSources">ListTestSources</a></code> | <code>string</code> | [Read] resiliencehub:ListTestSources. |
@@ -2514,6 +2516,18 @@ public readonly ListTestRecommendations: string;
 
 ---
 
+##### `ListTestRunDependencies`<sup>Required</sup> <a name="ListTestRunDependencies" id="@cdk_utils/iam.resiliencehub.ResiliencehubActions.property.ListTestRunDependencies"></a>
+
+```typescript
+public readonly ListTestRunDependencies: string;
+```
+
+- *Type:* string
+
+[Read] resiliencehub:ListTestRunDependencies.
+
+---
+
 ##### `ListTestRunEvents`<sup>Required</sup> <a name="ListTestRunEvents" id="@cdk_utils/iam.resiliencehub.ResiliencehubActions.property.ListTestRunEvents"></a>
 
 ```typescript
@@ -2535,6 +2549,18 @@ public readonly ListTestRuns: string;
 - *Type:* string
 
 [Read] resiliencehub:ListTestRuns.
+
+---
+
+##### `ListTestRunSourceEvents`<sup>Required</sup> <a name="ListTestRunSourceEvents" id="@cdk_utils/iam.resiliencehub.ResiliencehubActions.property.ListTestRunSourceEvents"></a>
+
+```typescript
+public readonly ListTestRunSourceEvents: string;
+```
+
+- *Type:* string
+
+[Read] resiliencehub:ListTestRunSourceEvents.
 
 ---
 
@@ -3267,8 +3293,10 @@ new resiliencehub.ResiliencehubOperations()
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubOperations.property.ListSystems">ListSystems</a></code> | <code>string[]</code> | IAM actions required for the ListSystems API call. |
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubOperations.property.ListTestRecommendations">ListTestRecommendations</a></code> | <code>string[]</code> | IAM actions required for the ListTestRecommendations API call. |
+| <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubOperations.property.ListTestRunDependencies">ListTestRunDependencies</a></code> | <code>string[]</code> | IAM actions required for the ListTestRunDependencies API call. |
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubOperations.property.ListTestRunEvents">ListTestRunEvents</a></code> | <code>string[]</code> | IAM actions required for the ListTestRunEvents API call. |
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubOperations.property.ListTestRuns">ListTestRuns</a></code> | <code>string[]</code> | IAM actions required for the ListTestRuns API call. |
+| <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubOperations.property.ListTestRunSourceEvents">ListTestRunSourceEvents</a></code> | <code>string[]</code> | IAM actions required for the ListTestRunSourceEvents API call. |
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubOperations.property.ListTestRunSources">ListTestRunSources</a></code> | <code>string[]</code> | IAM actions required for the ListTestRunSources API call. |
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubOperations.property.ListTests">ListTests</a></code> | <code>string[]</code> | IAM actions required for the ListTests API call. |
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubOperations.property.ListTestSources">ListTestSources</a></code> | <code>string[]</code> | IAM actions required for the ListTestSources API call. |
@@ -4322,6 +4350,18 @@ IAM actions required for the ListTestRecommendations API call.
 
 ---
 
+##### `ListTestRunDependencies`<sup>Required</sup> <a name="ListTestRunDependencies" id="@cdk_utils/iam.resiliencehub.ResiliencehubOperations.property.ListTestRunDependencies"></a>
+
+```typescript
+public readonly ListTestRunDependencies: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListTestRunDependencies API call.
+
+---
+
 ##### `ListTestRunEvents`<sup>Required</sup> <a name="ListTestRunEvents" id="@cdk_utils/iam.resiliencehub.ResiliencehubOperations.property.ListTestRunEvents"></a>
 
 ```typescript
@@ -4343,6 +4383,18 @@ public readonly ListTestRuns: string[];
 - *Type:* string[]
 
 IAM actions required for the ListTestRuns API call.
+
+---
+
+##### `ListTestRunSourceEvents`<sup>Required</sup> <a name="ListTestRunSourceEvents" id="@cdk_utils/iam.resiliencehub.ResiliencehubOperations.property.ListTestRunSourceEvents"></a>
+
+```typescript
+public readonly ListTestRunSourceEvents: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListTestRunSourceEvents API call.
 
 ---
 

@@ -1743,7 +1743,6 @@ export class AWSMarketplaceOperations {
 	];
 	/** IAM actions required for the ListPurchaseOptions API call. */
 	static readonly ListPurchaseOptions: string[] = [
-		"aws-marketplace:ListPrivateListings",
 		"aws-marketplace:ListPurchaseOptions",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */

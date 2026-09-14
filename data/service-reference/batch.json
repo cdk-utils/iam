@@ -1188,6 +1188,22 @@
       ]
     },
     {
+      "Name": "CancelJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelJob",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "cancel_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "CreateComputeEnvironment",
       "AuthorizedActions": [
         {
@@ -1818,6 +1834,22 @@
       ]
     },
     {
+      "Name": "TerminateJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "TerminateJob",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "terminate_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "TerminateServiceJob",
       "AuthorizedActions": [
         {
@@ -1829,6 +1861,22 @@
         {
           "Name": "batch",
           "Method": "terminate_service_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TerminateServiceJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "TerminateServiceJob",
+          "Service": "batch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "batch",
+          "Method": "terminate_service_jobs",
           "Package": "Boto3"
         }
       ]
@@ -1862,6 +1910,10 @@
             ]
           },
           "Service": "iam"
+        },
+        {
+          "Name": "SetCapacityTags",
+          "Service": "batch"
         },
         {
           "Name": "UpdateComputeEnvironment",

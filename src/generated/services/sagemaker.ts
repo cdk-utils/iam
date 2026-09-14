@@ -6143,6 +6143,8 @@ export class SageMakerOperations {
 	static readonly AssociateTrialComponent: string[] = [
 		"sagemaker:AssociateTrialComponent",
 	];
+	/** IAM actions required for the AttachClusterNodeNetworkInterface API call. */
+	static readonly AttachClusterNodeNetworkInterface: string[] = [];
 	/** IAM actions required for the AttachClusterNodeVolume API call. */
 	static readonly AttachClusterNodeVolume: string[] = [
 		"sagemaker:AttachClusterNodeVolume",
@@ -6467,7 +6469,6 @@ export class SageMakerOperations {
 	];
 	/** IAM actions required for the CreatePartnerApp API call. */
 	static readonly CreatePartnerApp: string[] = [
-		"sagemaker:AddTags",
 		"sagemaker:CreatePartnerApp",
 		"iam:PassRole",
 	];

@@ -62,6 +62,12 @@
   ],
   "ConditionKeys": [
     {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
       "Name": "vpc-lattice-svcs:Port",
       "Types": [
         "Numeric"
@@ -121,12 +127,18 @@
       "Name": "Service",
       "ARNFormats": [
         "arn:${Partition}:vpc-lattice:${Region}:${Account}:service/${ServiceId}/${RequestPath}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
       ]
     },
     {
       "Name": "TCP Service",
       "ARNFormats": [
         "arn:${Partition}:vpc-lattice:${Region}:${Account}:service/${ServiceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
       ]
     }
   ],

@@ -64,6 +64,8 @@ export class BedrockAgentcoreActions {
 	/** [Write] bedrock-agentcore:CreateConfigurationBundle */
 	static readonly CreateConfigurationBundle =
 		"bedrock-agentcore:CreateConfigurationBundle";
+	/** [Write] bedrock-agentcore:CreateConsentPortal */
+	static readonly CreateConsentPortal = "bedrock-agentcore:CreateConsentPortal";
 	/** [Write] bedrock-agentcore:CreateDataset */
 	static readonly CreateDataset = "bedrock-agentcore:CreateDataset";
 	/** [Write] bedrock-agentcore:CreateDatasetVersion */
@@ -152,6 +154,8 @@ export class BedrockAgentcoreActions {
 	/** [Write] bedrock-agentcore:DeleteConfigurationBundle */
 	static readonly DeleteConfigurationBundle =
 		"bedrock-agentcore:DeleteConfigurationBundle";
+	/** [Write] bedrock-agentcore:DeleteConsentPortal */
+	static readonly DeleteConsentPortal = "bedrock-agentcore:DeleteConsentPortal";
 	/** [Write] bedrock-agentcore:DeleteDataset */
 	static readonly DeleteDataset = "bedrock-agentcore:DeleteDataset";
 	/** [Write] bedrock-agentcore:DeleteDatasetExamples */
@@ -270,6 +274,8 @@ export class BedrockAgentcoreActions {
 	/** [Read] bedrock-agentcore:GetConfigurationBundleVersion */
 	static readonly actionGetConfigurationBundleVersion =
 		"bedrock-agentcore:GetConfigurationBundleVersion";
+	/** [Read] bedrock-agentcore:GetConsentPortal */
+	static readonly actionGetConsentPortal = "bedrock-agentcore:GetConsentPortal";
 	/** [Read] bedrock-agentcore:GetDataset */
 	static readonly actionGetDataset = "bedrock-agentcore:GetDataset";
 	/** [Read] bedrock-agentcore:GetEvaluator */
@@ -437,6 +443,8 @@ export class BedrockAgentcoreActions {
 	/** [List] bedrock-agentcore:ListConfigurationBundles */
 	static readonly ListConfigurationBundles =
 		"bedrock-agentcore:ListConfigurationBundles";
+	/** [List] bedrock-agentcore:ListConsentPortals */
+	static readonly ListConsentPortals = "bedrock-agentcore:ListConsentPortals";
 	/** [List] bedrock-agentcore:ListDatasetExamples */
 	static readonly ListDatasetExamples = "bedrock-agentcore:ListDatasetExamples";
 	/** [List] bedrock-agentcore:ListDatasetVersions */
@@ -601,6 +609,8 @@ export class BedrockAgentcoreActions {
 	/** [Write] bedrock-agentcore:UpdateConfigurationBundle */
 	static readonly UpdateConfigurationBundle =
 		"bedrock-agentcore:UpdateConfigurationBundle";
+	/** [Write] bedrock-agentcore:UpdateConsentPortal */
+	static readonly UpdateConsentPortal = "bedrock-agentcore:UpdateConsentPortal";
 	/** [Write] bedrock-agentcore:UpdateDataset */
 	static readonly UpdateDataset = "bedrock-agentcore:UpdateDataset";
 	/** [Write] bedrock-agentcore:UpdateDatasetExamples */
@@ -675,6 +685,7 @@ export class BedrockAgentcoreActions {
 		BedrockAgentcoreActions.actionGetCodeInterpreterSession,
 		BedrockAgentcoreActions.actionGetConfigurationBundle,
 		BedrockAgentcoreActions.actionGetConfigurationBundleVersion,
+		BedrockAgentcoreActions.actionGetConsentPortal,
 		BedrockAgentcoreActions.actionGetDataset,
 		BedrockAgentcoreActions.actionGetEvaluator,
 		BedrockAgentcoreActions.actionGetEvent,
@@ -731,6 +742,7 @@ export class BedrockAgentcoreActions {
 		BedrockAgentcoreActions.CreateCapacityProvider,
 		BedrockAgentcoreActions.CreateCodeInterpreter,
 		BedrockAgentcoreActions.CreateConfigurationBundle,
+		BedrockAgentcoreActions.CreateConsentPortal,
 		BedrockAgentcoreActions.CreateDataset,
 		BedrockAgentcoreActions.CreateDatasetVersion,
 		BedrockAgentcoreActions.CreateEvaluator,
@@ -765,6 +777,7 @@ export class BedrockAgentcoreActions {
 		BedrockAgentcoreActions.DeleteCapacityProviderSession,
 		BedrockAgentcoreActions.DeleteCodeInterpreter,
 		BedrockAgentcoreActions.DeleteConfigurationBundle,
+		BedrockAgentcoreActions.DeleteConsentPortal,
 		BedrockAgentcoreActions.DeleteDataset,
 		BedrockAgentcoreActions.DeleteDatasetExamples,
 		BedrockAgentcoreActions.DeleteEvaluator,
@@ -829,6 +842,7 @@ export class BedrockAgentcoreActions {
 		BedrockAgentcoreActions.UpdateBrowserStream,
 		BedrockAgentcoreActions.UpdateCapacityProvider,
 		BedrockAgentcoreActions.UpdateConfigurationBundle,
+		BedrockAgentcoreActions.UpdateConsentPortal,
 		BedrockAgentcoreActions.UpdateDataset,
 		BedrockAgentcoreActions.UpdateDatasetExamples,
 		BedrockAgentcoreActions.UpdateEvaluator,
@@ -869,6 +883,7 @@ export class BedrockAgentcoreActions {
 		BedrockAgentcoreActions.ListCodeInterpreters,
 		BedrockAgentcoreActions.ListConfigurationBundleVersions,
 		BedrockAgentcoreActions.ListConfigurationBundles,
+		BedrockAgentcoreActions.ListConsentPortals,
 		BedrockAgentcoreActions.ListDatasetExamples,
 		BedrockAgentcoreActions.ListDatasetVersions,
 		BedrockAgentcoreActions.ListDatasets,
@@ -1204,6 +1219,34 @@ export interface BedrockAgentcoreConfigurationBundleArnComponents {
 	readonly account: string;
 	/** The ConfigurationBundleId component. */
 	readonly configurationBundleId: string;
+}
+
+/**
+ * Properties for building a consent-portal ARN.
+ */
+export interface BedrockAgentcoreConsentPortalArnProps {
+	/** The ConsentPortalId component of the ARN. */
+	readonly consentPortalId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a consent-portal ARN.
+ */
+export interface BedrockAgentcoreConsentPortalArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ConsentPortalId component. */
+	readonly consentPortalId: string;
 }
 
 /**
@@ -1870,6 +1913,8 @@ const CodeInterpreterCustomArnRegex =
 	/^arn:(?<partition>[^:]+):bedrock-agentcore:(?<region>[^:]*):(?<account>[^:]*):code-interpreter-custom\/(?<codeInterpreterId>[^:/?]+)$/;
 const ConfigurationBundleArnRegex =
 	/^arn:(?<partition>[^:]+):bedrock-agentcore:(?<region>[^:]*):(?<account>[^:]*):configuration-bundle\/(?<configurationBundleId>[^:/?]+)$/;
+const ConsentPortalArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock-agentcore:(?<region>[^:]*):(?<account>[^:]*):consent-portal\/(?<consentPortalId>[^:/?]+)$/;
 const DatasetArnRegex =
 	/^arn:(?<partition>[^:]+):bedrock-agentcore:(?<region>[^:]*):(?<account>[^:]*):dataset\/(?<datasetId>[^:/?]+)$/;
 const EvaluatorArnRegex =
@@ -2253,6 +2298,39 @@ export class BedrockAgentcoreResources {
 			region: match.groups.region,
 			account: match.groups.account,
 			configurationBundleId: match.groups!.configurationBundleId,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the consent-portal resource.
+	 */
+	static consentPortal(props: BedrockAgentcoreConsentPortalArnProps): string {
+		return `arn:${props.partition ?? "aws"}:bedrock-agentcore:${props.region ?? "*"}:${props.account ?? "*"}:consent-portal/${props.consentPortalId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the consent-portal resource.
+	 */
+	static isValidConsentPortalArn(arn: string): boolean {
+		return ConsentPortalArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a consent-portal ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseConsentPortalArn(
+		arn: string,
+	): BedrockAgentcoreConsentPortalArnComponents {
+		const match = ConsentPortalArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid consent-portal ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			consentPortalId: match.groups!.consentPortalId,
 		};
 	}
 
@@ -3073,6 +3151,7 @@ export class BedrockAgentcoreOperations {
 	];
 	/** IAM actions required for the CreateConsentPortal API call. */
 	static readonly CreateConsentPortal: string[] = [
+		"bedrock-agentcore:CreateConsentPortal",
 		"iam:PassRole",
 		"bedrock-agentcore:TagResource",
 	];
@@ -3231,7 +3310,9 @@ export class BedrockAgentcoreOperations {
 		"bedrock-agentcore:DeleteConfigurationBundle",
 	];
 	/** IAM actions required for the DeleteConsentPortal API call. */
-	static readonly DeleteConsentPortal: string[] = [];
+	static readonly DeleteConsentPortal: string[] = [
+		"bedrock-agentcore:DeleteConsentPortal",
+	];
 	/** IAM actions required for the DeleteDataset API call. */
 	static readonly DeleteDataset: string[] = ["bedrock-agentcore:DeleteDataset"];
 	/** IAM actions required for the DeleteDatasetExamples API call. */
@@ -3380,7 +3461,9 @@ export class BedrockAgentcoreOperations {
 		"bedrock-agentcore:GetConfigurationBundleVersion",
 	];
 	/** IAM actions required for the GetConsentPortal API call. */
-	static readonly opGetConsentPortal: string[] = [];
+	static readonly opGetConsentPortal: string[] = [
+		"bedrock-agentcore:GetConsentPortal",
+	];
 	/** IAM actions required for the GetDataset API call. */
 	static readonly opGetDataset: string[] = ["bedrock-agentcore:GetDataset"];
 	/** IAM actions required for the GetEvaluator API call. */
@@ -3595,7 +3678,9 @@ export class BedrockAgentcoreOperations {
 		"bedrock-agentcore:ListConfigurationBundles",
 	];
 	/** IAM actions required for the ListConsentPortals API call. */
-	static readonly ListConsentPortals: string[] = [];
+	static readonly ListConsentPortals: string[] = [
+		"bedrock-agentcore:ListConsentPortals",
+	];
 	/** IAM actions required for the ListDatasetExamples API call. */
 	static readonly ListDatasetExamples: string[] = [
 		"bedrock-agentcore:ListDatasetExamples",
@@ -3830,7 +3915,9 @@ export class BedrockAgentcoreOperations {
 		"bedrock-agentcore:UpdateConfigurationBundle",
 	];
 	/** IAM actions required for the UpdateConsentPortal API call. */
-	static readonly UpdateConsentPortal: string[] = [];
+	static readonly UpdateConsentPortal: string[] = [
+		"bedrock-agentcore:UpdateConsentPortal",
+	];
 	/** IAM actions required for the UpdateDataset API call. */
 	static readonly UpdateDataset: string[] = ["bedrock-agentcore:UpdateDataset"];
 	/** IAM actions required for the UpdateDatasetExamples API call. */
@@ -3986,6 +4073,11 @@ export class BedrockAgentcoreConditions {
 		"aws:TagKeys",
 		"bedrock-agentcore:securityGroups",
 		"bedrock-agentcore:subnets",
+	];
+	/** Condition keys applicable to the CreateConsentPortal action. */
+	static readonly CreateConsentPortalConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateDataset action. */
 	static readonly CreateDatasetConditionKeys: string[] = [

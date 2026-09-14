@@ -851,6 +851,11 @@ export class AidevopsConditions {
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
+	/** Condition keys applicable to the CreateBacklogTask action. */
+	static readonly CreateBacklogTaskConditionKeys: string[] = [
+		"aidevops:SourceAgentSpaceArn",
+		"aidevops:TargetAgentSpaceArn",
+	];
 	/** Condition keys applicable to the CreatePrivateConnection action. */
 	static readonly CreatePrivateConnectionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
@@ -877,9 +882,54 @@ export class AidevopsConditions {
 	static readonly actionGetAgentSpaceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
+	/** Condition keys applicable to the GetAsset action. */
+	static readonly actionGetAssetConditionKeys: string[] = [
+		"aidevops:SourceAgentSpaceArn",
+		"aidevops:TargetAgentSpaceArn",
+	];
+	/** Condition keys applicable to the GetAssetContent action. */
+	static readonly actionGetAssetContentConditionKeys: string[] = [
+		"aidevops:SourceAgentSpaceArn",
+		"aidevops:TargetAgentSpaceArn",
+	];
+	/** Condition keys applicable to the GetAssetFile action. */
+	static readonly actionGetAssetFileConditionKeys: string[] = [
+		"aidevops:SourceAgentSpaceArn",
+		"aidevops:TargetAgentSpaceArn",
+	];
+	/** Condition keys applicable to the GetBacklogTask action. */
+	static readonly actionGetBacklogTaskConditionKeys: string[] = [
+		"aidevops:SourceAgentSpaceArn",
+		"aidevops:TargetAgentSpaceArn",
+	];
 	/** Condition keys applicable to the GetService action. */
 	static readonly actionGetServiceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
+	];
+	/** Condition keys applicable to the ListAssetFiles action. */
+	static readonly ListAssetFilesConditionKeys: string[] = [
+		"aidevops:SourceAgentSpaceArn",
+		"aidevops:TargetAgentSpaceArn",
+	];
+	/** Condition keys applicable to the ListAssets action. */
+	static readonly ListAssetsConditionKeys: string[] = [
+		"aidevops:SourceAgentSpaceArn",
+		"aidevops:TargetAgentSpaceArn",
+	];
+	/** Condition keys applicable to the ListBacklogTasks action. */
+	static readonly ListBacklogTasksConditionKeys: string[] = [
+		"aidevops:SourceAgentSpaceArn",
+		"aidevops:TargetAgentSpaceArn",
+	];
+	/** Condition keys applicable to the ListExecutions action. */
+	static readonly ListExecutionsConditionKeys: string[] = [
+		"aidevops:SourceAgentSpaceArn",
+		"aidevops:TargetAgentSpaceArn",
+	];
+	/** Condition keys applicable to the ListJournalRecords action. */
+	static readonly ListJournalRecordsConditionKeys: string[] = [
+		"aidevops:SourceAgentSpaceArn",
+		"aidevops:TargetAgentSpaceArn",
 	];
 	/** Condition keys applicable to the ListTagsForResource action. */
 	static readonly ListTagsForResourceConditionKeys: string[] = [
@@ -911,12 +961,34 @@ export class AidevopsConditions {
 		"aws:ResourceTag/${TagKey}",
 	];
 
+	/** Condition key: aidevops:SourceAgentSpaceArn (String) */
+	static readonly SOURCE_AGENT_SPACE_ARN = "aidevops:SourceAgentSpaceArn";
+	/** Condition key: aidevops:TargetAgentSpaceArn (String) */
+	static readonly TARGET_AGENT_SPACE_ARN = "aidevops:TargetAgentSpaceArn";
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
 	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
 	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
 	static readonly AWS_TAG_KEYS = "aws:TagKeys";
+
+	/**
+	 * Generates a condition block for `aidevops:SourceAgentSpaceArn`.
+	 */
+	static sourceAgentSpaceARN(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "aidevops:SourceAgentSpaceArn": value } };
+	}
+
+	/**
+	 * Generates a condition block for `aidevops:TargetAgentSpaceArn`.
+	 */
+	static targetAgentSpaceARN(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "aidevops:TargetAgentSpaceArn": value } };
+	}
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

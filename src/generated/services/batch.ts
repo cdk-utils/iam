@@ -816,6 +816,8 @@ export class BatchResources {
 export class BatchOperations {
 	/** IAM actions required for the CancelJob API call. */
 	static readonly CancelJob: string[] = ["batch:CancelJob"];
+	/** IAM actions required for the CancelJobs API call. */
+	static readonly CancelJobs: string[] = ["batch:CancelJob"];
 	/** IAM actions required for the CreateComputeEnvironment API call. */
 	static readonly CreateComputeEnvironment: string[] = [
 		"batch:CreateComputeEnvironment",
@@ -945,13 +947,20 @@ export class BatchOperations {
 	static readonly TagResource: string[] = ["batch:TagResource"];
 	/** IAM actions required for the TerminateJob API call. */
 	static readonly TerminateJob: string[] = ["batch:TerminateJob"];
+	/** IAM actions required for the TerminateJobs API call. */
+	static readonly TerminateJobs: string[] = ["batch:TerminateJob"];
 	/** IAM actions required for the TerminateServiceJob API call. */
 	static readonly TerminateServiceJob: string[] = ["batch:TerminateServiceJob"];
+	/** IAM actions required for the TerminateServiceJobs API call. */
+	static readonly TerminateServiceJobs: string[] = [
+		"batch:TerminateServiceJob",
+	];
 	/** IAM actions required for the UntagResource API call. */
 	static readonly UntagResource: string[] = ["batch:UntagResource"];
 	/** IAM actions required for the UpdateComputeEnvironment API call. */
 	static readonly UpdateComputeEnvironment: string[] = [
 		"iam:PassRole",
+		"batch:SetCapacityTags",
 		"batch:UpdateComputeEnvironment",
 	];
 	/** IAM actions required for the UpdateConsumableResource API call. */

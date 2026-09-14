@@ -1509,6 +1509,154 @@ Defaults to "*".
 
 ---
 
+### BedrockAgentcoreConsentPortalArnComponents <a name="BedrockAgentcoreConsentPortalArnComponents" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConsentPortalArnComponents"></a>
+
+Parsed components of a consent-portal ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConsentPortalArnComponents.Initializer"></a>
+
+```typescript
+import { bedrock_agentcore } from '@cdk_utils/iam'
+
+const bedrockAgentcoreConsentPortalArnComponents: bedrock_agentcore.BedrockAgentcoreConsentPortalArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConsentPortalArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConsentPortalArnComponents.property.consentPortalId">consentPortalId</a></code> | <code>string</code> | The ConsentPortalId component. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConsentPortalArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConsentPortalArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConsentPortalArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `consentPortalId`<sup>Required</sup> <a name="consentPortalId" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConsentPortalArnComponents.property.consentPortalId"></a>
+
+```typescript
+public readonly consentPortalId: string;
+```
+
+- *Type:* string
+
+The ConsentPortalId component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConsentPortalArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConsentPortalArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### BedrockAgentcoreConsentPortalArnProps <a name="BedrockAgentcoreConsentPortalArnProps" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConsentPortalArnProps"></a>
+
+Properties for building a consent-portal ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConsentPortalArnProps.Initializer"></a>
+
+```typescript
+import { bedrock_agentcore } from '@cdk_utils/iam'
+
+const bedrockAgentcoreConsentPortalArnProps: bedrock_agentcore.BedrockAgentcoreConsentPortalArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConsentPortalArnProps.property.consentPortalId">consentPortalId</a></code> | <code>string</code> | The ConsentPortalId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConsentPortalArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConsentPortalArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConsentPortalArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `consentPortalId`<sup>Required</sup> <a name="consentPortalId" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConsentPortalArnProps.property.consentPortalId"></a>
+
+```typescript
+public readonly consentPortalId: string;
+```
+
+- *Type:* string
+
+The ConsentPortalId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConsentPortalArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConsentPortalArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConsentPortalArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### BedrockAgentcoreDatasetArnComponents <a name="BedrockAgentcoreDatasetArnComponents" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreDatasetArnComponents"></a>
 
 Parsed components of a dataset ARN.
@@ -4987,6 +5135,7 @@ new bedrock_agentcore.BedrockAgentcoreActions()
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.actionGetCodeInterpreterSession">actionGetCodeInterpreterSession</a></code> | <code>string</code> | [Read] bedrock-agentcore:GetCodeInterpreterSession. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.actionGetConfigurationBundle">actionGetConfigurationBundle</a></code> | <code>string</code> | [Read] bedrock-agentcore:GetConfigurationBundle. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.actionGetConfigurationBundleVersion">actionGetConfigurationBundleVersion</a></code> | <code>string</code> | [Read] bedrock-agentcore:GetConfigurationBundleVersion. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.actionGetConsentPortal">actionGetConsentPortal</a></code> | <code>string</code> | [Read] bedrock-agentcore:GetConsentPortal. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.actionGetDataset">actionGetDataset</a></code> | <code>string</code> | [Read] bedrock-agentcore:GetDataset. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.actionGetEvaluator">actionGetEvaluator</a></code> | <code>string</code> | [Read] bedrock-agentcore:GetEvaluator. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.actionGetEvent">actionGetEvent</a></code> | <code>string</code> | [Read] bedrock-agentcore:GetEvent. |
@@ -5049,6 +5198,7 @@ new bedrock_agentcore.BedrockAgentcoreActions()
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.CreateCapacityProvider">CreateCapacityProvider</a></code> | <code>string</code> | [Write] bedrock-agentcore:CreateCapacityProvider. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.CreateCodeInterpreter">CreateCodeInterpreter</a></code> | <code>string</code> | [Write] bedrock-agentcore:CreateCodeInterpreter. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.CreateConfigurationBundle">CreateConfigurationBundle</a></code> | <code>string</code> | [Write] bedrock-agentcore:CreateConfigurationBundle. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.CreateConsentPortal">CreateConsentPortal</a></code> | <code>string</code> | [Write] bedrock-agentcore:CreateConsentPortal. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.CreateDataset">CreateDataset</a></code> | <code>string</code> | [Write] bedrock-agentcore:CreateDataset. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.CreateDatasetVersion">CreateDatasetVersion</a></code> | <code>string</code> | [Write] bedrock-agentcore:CreateDatasetVersion. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.CreateEvaluator">CreateEvaluator</a></code> | <code>string</code> | [Write] bedrock-agentcore:CreateEvaluator. |
@@ -5083,6 +5233,7 @@ new bedrock_agentcore.BedrockAgentcoreActions()
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.DeleteCapacityProviderSession">DeleteCapacityProviderSession</a></code> | <code>string</code> | [Write] bedrock-agentcore:DeleteCapacityProviderSession. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.DeleteCodeInterpreter">DeleteCodeInterpreter</a></code> | <code>string</code> | [Write] bedrock-agentcore:DeleteCodeInterpreter. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.DeleteConfigurationBundle">DeleteConfigurationBundle</a></code> | <code>string</code> | [Write] bedrock-agentcore:DeleteConfigurationBundle. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.DeleteConsentPortal">DeleteConsentPortal</a></code> | <code>string</code> | [Write] bedrock-agentcore:DeleteConsentPortal. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.DeleteDataset">DeleteDataset</a></code> | <code>string</code> | [Write] bedrock-agentcore:DeleteDataset. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.DeleteDatasetExamples">DeleteDatasetExamples</a></code> | <code>string</code> | [Write] bedrock-agentcore:DeleteDatasetExamples. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.DeleteEvaluator">DeleteEvaluator</a></code> | <code>string</code> | [Write] bedrock-agentcore:DeleteEvaluator. |
@@ -5141,6 +5292,7 @@ new bedrock_agentcore.BedrockAgentcoreActions()
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.ListCodeInterpreterSessions">ListCodeInterpreterSessions</a></code> | <code>string</code> | [List] bedrock-agentcore:ListCodeInterpreterSessions. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.ListConfigurationBundles">ListConfigurationBundles</a></code> | <code>string</code> | [List] bedrock-agentcore:ListConfigurationBundles. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.ListConfigurationBundleVersions">ListConfigurationBundleVersions</a></code> | <code>string</code> | [List] bedrock-agentcore:ListConfigurationBundleVersions. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.ListConsentPortals">ListConsentPortals</a></code> | <code>string</code> | [List] bedrock-agentcore:ListConsentPortals. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.ListDatasetExamples">ListDatasetExamples</a></code> | <code>string</code> | [List] bedrock-agentcore:ListDatasetExamples. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.ListDatasets">ListDatasets</a></code> | <code>string</code> | [List] bedrock-agentcore:ListDatasets. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.ListDatasetVersions">ListDatasetVersions</a></code> | <code>string</code> | [List] bedrock-agentcore:ListDatasetVersions. |
@@ -5208,6 +5360,7 @@ new bedrock_agentcore.BedrockAgentcoreActions()
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.UpdateBrowserStream">UpdateBrowserStream</a></code> | <code>string</code> | [Write] bedrock-agentcore:UpdateBrowserStream. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.UpdateCapacityProvider">UpdateCapacityProvider</a></code> | <code>string</code> | [Write] bedrock-agentcore:UpdateCapacityProvider. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.UpdateConfigurationBundle">UpdateConfigurationBundle</a></code> | <code>string</code> | [Write] bedrock-agentcore:UpdateConfigurationBundle. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.UpdateConsentPortal">UpdateConsentPortal</a></code> | <code>string</code> | [Write] bedrock-agentcore:UpdateConsentPortal. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.UpdateDataset">UpdateDataset</a></code> | <code>string</code> | [Write] bedrock-agentcore:UpdateDataset. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.UpdateDatasetExamples">UpdateDatasetExamples</a></code> | <code>string</code> | [Write] bedrock-agentcore:UpdateDatasetExamples. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.UpdateEvaluator">UpdateEvaluator</a></code> | <code>string</code> | [Write] bedrock-agentcore:UpdateEvaluator. |
@@ -5397,6 +5550,18 @@ public readonly actionGetConfigurationBundleVersion: string;
 - *Type:* string
 
 [Read] bedrock-agentcore:GetConfigurationBundleVersion.
+
+---
+
+##### `actionGetConsentPortal`<sup>Required</sup> <a name="actionGetConsentPortal" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.actionGetConsentPortal"></a>
+
+```typescript
+public readonly actionGetConsentPortal: string;
+```
+
+- *Type:* string
+
+[Read] bedrock-agentcore:GetConsentPortal.
 
 ---
 
@@ -6144,6 +6309,18 @@ public readonly CreateConfigurationBundle: string;
 
 ---
 
+##### `CreateConsentPortal`<sup>Required</sup> <a name="CreateConsentPortal" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.CreateConsentPortal"></a>
+
+```typescript
+public readonly CreateConsentPortal: string;
+```
+
+- *Type:* string
+
+[Write] bedrock-agentcore:CreateConsentPortal.
+
+---
+
 ##### `CreateDataset`<sup>Required</sup> <a name="CreateDataset" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.CreateDataset"></a>
 
 ```typescript
@@ -6549,6 +6726,18 @@ public readonly DeleteConfigurationBundle: string;
 - *Type:* string
 
 [Write] bedrock-agentcore:DeleteConfigurationBundle.
+
+---
+
+##### `DeleteConsentPortal`<sup>Required</sup> <a name="DeleteConsentPortal" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.DeleteConsentPortal"></a>
+
+```typescript
+public readonly DeleteConsentPortal: string;
+```
+
+- *Type:* string
+
+[Write] bedrock-agentcore:DeleteConsentPortal.
 
 ---
 
@@ -7245,6 +7434,18 @@ public readonly ListConfigurationBundleVersions: string;
 - *Type:* string
 
 [List] bedrock-agentcore:ListConfigurationBundleVersions.
+
+---
+
+##### `ListConsentPortals`<sup>Required</sup> <a name="ListConsentPortals" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.ListConsentPortals"></a>
+
+```typescript
+public readonly ListConsentPortals: string;
+```
+
+- *Type:* string
+
+[List] bedrock-agentcore:ListConsentPortals.
 
 ---
 
@@ -8049,6 +8250,18 @@ public readonly UpdateConfigurationBundle: string;
 - *Type:* string
 
 [Write] bedrock-agentcore:UpdateConfigurationBundle.
+
+---
+
+##### `UpdateConsentPortal`<sup>Required</sup> <a name="UpdateConsentPortal" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.UpdateConsentPortal"></a>
+
+```typescript
+public readonly UpdateConsentPortal: string;
+```
+
+- *Type:* string
+
+[Write] bedrock-agentcore:UpdateConsentPortal.
 
 ---
 
@@ -8915,6 +9128,7 @@ Generates a condition block for `bedrock-agentcore:userid`.
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.CreateBrowserProfileConditionKeys">CreateBrowserProfileConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateBrowserProfile action. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.CreateCapacityProviderConditionKeys">CreateCapacityProviderConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateCapacityProvider action. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.CreateCodeInterpreterConditionKeys">CreateCodeInterpreterConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateCodeInterpreter action. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.CreateConsentPortalConditionKeys">CreateConsentPortalConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateConsentPortal action. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.CreateDatasetConditionKeys">CreateDatasetConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateDataset action. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.CreateEvaluatorConditionKeys">CreateEvaluatorConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateEvaluator action. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.CreateEventConditionKeys">CreateEventConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateEvent action. |
@@ -9205,6 +9419,18 @@ public readonly CreateCodeInterpreterConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the CreateCodeInterpreter action.
+
+---
+
+##### `CreateConsentPortalConditionKeys`<sup>Required</sup> <a name="CreateConsentPortalConditionKeys" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.CreateConsentPortalConditionKeys"></a>
+
+```typescript
+public readonly CreateConsentPortalConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateConsentPortal action.
 
 ---
 
@@ -12948,6 +13174,7 @@ new bedrock_agentcore.BedrockAgentcoreResources()
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.codeInterpreter">codeInterpreter</a></code> | Builds an ARN for the code-interpreter resource. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.codeInterpreterCustom">codeInterpreterCustom</a></code> | Builds an ARN for the code-interpreter-custom resource. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.configurationBundle">configurationBundle</a></code> | Builds an ARN for the configuration-bundle resource. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.consentPortal">consentPortal</a></code> | Builds an ARN for the consent-portal resource. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.dataset">dataset</a></code> | Builds an ARN for the dataset resource. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.evaluator">evaluator</a></code> | Builds an ARN for the evaluator resource. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.gateway">gateway</a></code> | Builds an ARN for the gateway resource. |
@@ -12963,6 +13190,7 @@ new bedrock_agentcore.BedrockAgentcoreResources()
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.isValidCodeInterpreterArn">isValidCodeInterpreterArn</a></code> | Validates whether a string is a valid ARN for the code-interpreter resource. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.isValidCodeInterpreterCustomArn">isValidCodeInterpreterCustomArn</a></code> | Validates whether a string is a valid ARN for the code-interpreter-custom resource. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.isValidConfigurationBundleArn">isValidConfigurationBundleArn</a></code> | Validates whether a string is a valid ARN for the configuration-bundle resource. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.isValidConsentPortalArn">isValidConsentPortalArn</a></code> | Validates whether a string is a valid ARN for the consent-portal resource. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.isValidDatasetArn">isValidDatasetArn</a></code> | Validates whether a string is a valid ARN for the dataset resource. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.isValidEvaluatorArn">isValidEvaluatorArn</a></code> | Validates whether a string is a valid ARN for the evaluator resource. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.isValidGatewayArn">isValidGatewayArn</a></code> | Validates whether a string is a valid ARN for the gateway resource. |
@@ -12998,6 +13226,7 @@ new bedrock_agentcore.BedrockAgentcoreResources()
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.parseCodeInterpreterArn">parseCodeInterpreterArn</a></code> | Parses a code-interpreter ARN into its components. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.parseCodeInterpreterCustomArn">parseCodeInterpreterCustomArn</a></code> | Parses a code-interpreter-custom ARN into its components. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.parseConfigurationBundleArn">parseConfigurationBundleArn</a></code> | Parses a configuration-bundle ARN into its components. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.parseConsentPortalArn">parseConsentPortalArn</a></code> | Parses a consent-portal ARN into its components. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.parseDatasetArn">parseDatasetArn</a></code> | Parses a dataset ARN into its components. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.parseEvaluatorArn">parseEvaluatorArn</a></code> | Parses a evaluator ARN into its components. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.parseGatewayArn">parseGatewayArn</a></code> | Parses a gateway ARN into its components. |
@@ -13194,6 +13423,22 @@ Builds an ARN for the configuration-bundle resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.configurationBundle.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConfigurationBundleArnProps">BedrockAgentcoreConfigurationBundleArnProps</a>
+
+---
+
+##### `consentPortal` <a name="consentPortal" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.consentPortal"></a>
+
+```typescript
+import { bedrock_agentcore } from '@cdk_utils/iam'
+
+bedrock_agentcore.BedrockAgentcoreResources.consentPortal(props: BedrockAgentcoreConsentPortalArnProps)
+```
+
+Builds an ARN for the consent-portal resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.consentPortal.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConsentPortalArnProps">BedrockAgentcoreConsentPortalArnProps</a>
 
 ---
 
@@ -13432,6 +13677,22 @@ bedrock_agentcore.BedrockAgentcoreResources.isValidConfigurationBundleArn(arn: s
 Validates whether a string is a valid ARN for the configuration-bundle resource.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.isValidConfigurationBundleArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidConsentPortalArn` <a name="isValidConsentPortalArn" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.isValidConsentPortalArn"></a>
+
+```typescript
+import { bedrock_agentcore } from '@cdk_utils/iam'
+
+bedrock_agentcore.BedrockAgentcoreResources.isValidConsentPortalArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the consent-portal resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.isValidConsentPortalArn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -13992,6 +14253,22 @@ bedrock_agentcore.BedrockAgentcoreResources.parseConfigurationBundleArn(arn: str
 Parses a configuration-bundle ARN into its components.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.parseConfigurationBundleArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseConsentPortalArn` <a name="parseConsentPortalArn" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.parseConsentPortalArn"></a>
+
+```typescript
+import { bedrock_agentcore } from '@cdk_utils/iam'
+
+bedrock_agentcore.BedrockAgentcoreResources.parseConsentPortalArn(arn: string)
+```
+
+Parses a consent-portal ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.parseConsentPortalArn.parameter.arn"></a>
 
 - *Type:* string
 

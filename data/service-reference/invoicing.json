@@ -721,6 +721,38 @@
       ]
     },
     {
+      "Name": "ListProcurementPortalSuppliers",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProcurementPortalSuppliers",
+          "Service": "invoicing"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "invoicing",
+          "Method": "list_procurement_portal_suppliers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProcurementPortals",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProcurementPortals",
+          "Service": "invoicing"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "invoicing",
+          "Method": "list_procurement_portals",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListTagsForResource",
       "AuthorizedActions": [
         {

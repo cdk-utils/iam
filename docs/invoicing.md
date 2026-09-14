@@ -999,6 +999,8 @@ new invoicing.InvoicingOperations()
 | <code><a href="#@cdk_utils/iam.invoicing.InvoicingOperations.property.ListInvoiceSummaries">ListInvoiceSummaries</a></code> | <code>string[]</code> | IAM actions required for the ListInvoiceSummaries API call. |
 | <code><a href="#@cdk_utils/iam.invoicing.InvoicingOperations.property.ListInvoiceUnits">ListInvoiceUnits</a></code> | <code>string[]</code> | IAM actions required for the ListInvoiceUnits API call. |
 | <code><a href="#@cdk_utils/iam.invoicing.InvoicingOperations.property.ListProcurementPortalPreferences">ListProcurementPortalPreferences</a></code> | <code>string[]</code> | IAM actions required for the ListProcurementPortalPreferences API call. |
+| <code><a href="#@cdk_utils/iam.invoicing.InvoicingOperations.property.ListProcurementPortals">ListProcurementPortals</a></code> | <code>string[]</code> | IAM actions required for the ListProcurementPortals API call. |
+| <code><a href="#@cdk_utils/iam.invoicing.InvoicingOperations.property.ListProcurementPortalSuppliers">ListProcurementPortalSuppliers</a></code> | <code>string[]</code> | IAM actions required for the ListProcurementPortalSuppliers API call. |
 | <code><a href="#@cdk_utils/iam.invoicing.InvoicingOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
 | <code><a href="#@cdk_utils/iam.invoicing.InvoicingOperations.property.opGetInvoicePDF">opGetInvoicePDF</a></code> | <code>string[]</code> | IAM actions required for the GetInvoicePDF API call. |
 | <code><a href="#@cdk_utils/iam.invoicing.InvoicingOperations.property.opGetInvoiceUnit">opGetInvoiceUnit</a></code> | <code>string[]</code> | IAM actions required for the GetInvoiceUnit API call. |
@@ -1106,6 +1108,30 @@ public readonly ListProcurementPortalPreferences: string[];
 - *Type:* string[]
 
 IAM actions required for the ListProcurementPortalPreferences API call.
+
+---
+
+##### `ListProcurementPortals`<sup>Required</sup> <a name="ListProcurementPortals" id="@cdk_utils/iam.invoicing.InvoicingOperations.property.ListProcurementPortals"></a>
+
+```typescript
+public readonly ListProcurementPortals: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListProcurementPortals API call.
+
+---
+
+##### `ListProcurementPortalSuppliers`<sup>Required</sup> <a name="ListProcurementPortalSuppliers" id="@cdk_utils/iam.invoicing.InvoicingOperations.property.ListProcurementPortalSuppliers"></a>
+
+```typescript
+public readonly ListProcurementPortalSuppliers: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListProcurementPortalSuppliers API call.
 
 ---
 

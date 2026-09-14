@@ -301,6 +301,14 @@ export class InvoicingOperations {
 		"invoicing:ListProcurementPortalPreferences",
 		"aws-portal:ViewBilling",
 	];
+	/** IAM actions required for the ListProcurementPortalSuppliers API call. */
+	static readonly ListProcurementPortalSuppliers: string[] = [
+		"invoicing:ListProcurementPortalSuppliers",
+	];
+	/** IAM actions required for the ListProcurementPortals API call. */
+	static readonly ListProcurementPortals: string[] = [
+		"invoicing:ListProcurementPortals",
+	];
 	/** IAM actions required for the ListTagsForResource API call. */
 	static readonly ListTagsForResource: string[] = [
 		"invoicing:ListTagsForResource",
