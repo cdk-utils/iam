@@ -1972,7 +1972,53 @@
       }
     },
     {
+      "Name": "ListTestRunDependencies",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ListTestRunEvents",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTestRunSourceEvents",
       "Annotations": {
         "Properties": {
           "IsList": false,
@@ -4358,6 +4404,22 @@
       ]
     },
     {
+      "Name": "ListTestRunDependencies",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTestRunDependencies",
+          "Service": "resiliencehub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resiliencehubv2",
+          "Method": "list_test_run_dependencies",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListTestRunEvents",
       "AuthorizedActions": [
         {
@@ -4369,6 +4431,22 @@
         {
           "Name": "resiliencehubv2",
           "Method": "list_test_run_events",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTestRunSourceEvents",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTestRunSourceEvents",
+          "Service": "resiliencehub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "resiliencehubv2",
+          "Method": "list_test_run_source_events",
           "Package": "Boto3"
         }
       ]

@@ -1980,7 +1980,9 @@ export class ChimeOperations {
 		"chime:AssociateChannelFlow",
 	];
 	/** IAM actions required for the AssociatePhoneNumberWithUser API call. */
-	static readonly AssociatePhoneNumberWithUser: string[] = [];
+	static readonly AssociatePhoneNumberWithUser: string[] = [
+		"chime:AssociatePhoneNumberWithUser",
+	];
 	/** IAM actions required for the AssociatePhoneNumbersWithVoiceConnector API call. */
 	static readonly AssociatePhoneNumbersWithVoiceConnector: string[] = [
 		"chime:AssociatePhoneNumbersWithVoiceConnector",
@@ -1990,7 +1992,9 @@ export class ChimeOperations {
 		"chime:AssociatePhoneNumbersWithVoiceConnectorGroup",
 	];
 	/** IAM actions required for the AssociateSigninDelegateGroupsWithAccount API call. */
-	static readonly AssociateSigninDelegateGroupsWithAccount: string[] = [];
+	static readonly AssociateSigninDelegateGroupsWithAccount: string[] = [
+		"chime:AssociateSigninDelegateGroupsWithAccount",
+	];
 	/** IAM actions required for the BatchCreateAttendee API call. */
 	static readonly BatchCreateAttendee: string[] = ["chime:BatchCreateAttendee"];
 	/** IAM actions required for the BatchCreateChannelMembership API call. */
@@ -2006,9 +2010,9 @@ export class ChimeOperations {
 		"chime:BatchDeletePhoneNumber",
 	];
 	/** IAM actions required for the BatchSuspendUser API call. */
-	static readonly BatchSuspendUser: string[] = [];
+	static readonly BatchSuspendUser: string[] = ["chime:BatchSuspendUser"];
 	/** IAM actions required for the BatchUnsuspendUser API call. */
-	static readonly BatchUnsuspendUser: string[] = [];
+	static readonly BatchUnsuspendUser: string[] = ["chime:BatchUnsuspendUser"];
 	/** IAM actions required for the BatchUpdateAttendeeCapabilitiesExcept API call. */
 	static readonly BatchUpdateAttendeeCapabilitiesExcept: string[] = [
 		"chime:BatchUpdateAttendeeCapabilitiesExcept",
@@ -2149,7 +2153,7 @@ export class ChimeOperations {
 	/** IAM actions required for the CreateSipRule API call. */
 	static readonly CreateSipRule: string[] = ["chime:CreateSipRule"];
 	/** IAM actions required for the CreateUser API call. */
-	static readonly CreateUser: string[] = [];
+	static readonly CreateUser: string[] = ["chime:CreateUser"];
 	/** IAM actions required for the CreateVoiceConnector API call. */
 	static readonly CreateVoiceConnector: string[] = [
 		"chime:CreateConnectAnalyticsConnector",
@@ -2334,7 +2338,9 @@ export class ChimeOperations {
 		"chime:DisassociateChannelFlow",
 	];
 	/** IAM actions required for the DisassociatePhoneNumberFromUser API call. */
-	static readonly DisassociatePhoneNumberFromUser: string[] = [];
+	static readonly DisassociatePhoneNumberFromUser: string[] = [
+		"chime:DisassociatePhoneNumberFromUser",
+	];
 	/** IAM actions required for the DisassociatePhoneNumbersFromVoiceConnector API call. */
 	static readonly DisassociatePhoneNumbersFromVoiceConnector: string[] = [
 		"chime:DisassociatePhoneNumbersFromVoiceConnector",
@@ -2344,7 +2350,9 @@ export class ChimeOperations {
 		"chime:DisassociatePhoneNumbersFromVoiceConnectorGroup",
 	];
 	/** IAM actions required for the DisassociateSigninDelegateGroupsFromAccount API call. */
-	static readonly DisassociateSigninDelegateGroupsFromAccount: string[] = [];
+	static readonly DisassociateSigninDelegateGroupsFromAccount: string[] = [
+		"chime:DisassociateSigninDelegateGroupsFromAccount",
+	];
 	/** IAM actions required for the GetAccount API call. */
 	static readonly opGetAccount: string[] = ["chime:GetAccount"];
 	/** IAM actions required for the GetAccountSettings API call. */
@@ -2688,7 +2696,7 @@ export class ChimeOperations {
 		"chime:RegisterAppInstanceUserEndpoint",
 	];
 	/** IAM actions required for the ResetPersonalPIN API call. */
-	static readonly ResetPersonalPIN: string[] = [];
+	static readonly ResetPersonalPIN: string[] = ["chime:ResetPersonalPIN"];
 	/** IAM actions required for the RestorePhoneNumber API call. */
 	static readonly RestorePhoneNumber: string[] = ["chime:RestorePhoneNumber"];
 	/** IAM actions required for the SearchAvailablePhoneNumbers API call. */
@@ -2730,7 +2738,9 @@ export class ChimeOperations {
 	/** IAM actions required for the UpdateAccount API call. */
 	static readonly UpdateAccount: string[] = [];
 	/** IAM actions required for the UpdateAccountSettings API call. */
-	static readonly UpdateAccountSettings: string[] = [];
+	static readonly UpdateAccountSettings: string[] = [
+		"chime:UpdateAccountSettings",
+	];
 	/** IAM actions required for the UpdateAppInstance API call. */
 	static readonly UpdateAppInstance: string[] = ["chime:UpdateAppInstance"];
 	/** IAM actions required for the UpdateAppInstanceBot API call. */
@@ -2805,7 +2815,7 @@ export class ChimeOperations {
 	/** IAM actions required for the UpdateSipRule API call. */
 	static readonly UpdateSipRule: string[] = ["chime:UpdateSipRule"];
 	/** IAM actions required for the UpdateUser API call. */
-	static readonly UpdateUser: string[] = [];
+	static readonly UpdateUser: string[] = ["chime:UpdateUser"];
 	/** IAM actions required for the UpdateUserSettings API call. */
 	static readonly UpdateUserSettings: string[] = [];
 	/** IAM actions required for the UpdateVoiceConnector API call. */

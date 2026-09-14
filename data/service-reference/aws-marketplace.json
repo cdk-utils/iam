@@ -2528,10 +2528,6 @@
       "Name": "ListPurchaseOptions",
       "AuthorizedActions": [
         {
-          "Name": "ListPrivateListings",
-          "Service": "aws-marketplace"
-        },
-        {
           "Name": "ListPurchaseOptions",
           "Service": "aws-marketplace"
         }

@@ -500,6 +500,9 @@ export class ConnectActions {
 	/** [List] connect:ListEntitySecurityProfiles */
 	static readonly ListEntitySecurityProfiles =
 		"connect:ListEntitySecurityProfiles";
+	/** [List] connect:ListEvaluationFormAIVersions */
+	static readonly ListEvaluationFormAIVersions =
+		"connect:ListEvaluationFormAIVersions";
 	/** [List] connect:ListEvaluationFormVersions */
 	static readonly ListEvaluationFormVersions =
 		"connect:ListEvaluationFormVersions";
@@ -1262,6 +1265,7 @@ export class ConnectActions {
 		ConnectActions.ListDataTables,
 		ConnectActions.ListDefaultVocabularies,
 		ConnectActions.ListEntitySecurityProfiles,
+		ConnectActions.ListEvaluationFormAIVersions,
 		ConnectActions.ListEvaluationFormVersions,
 		ConnectActions.ListEvaluationForms,
 		ConnectActions.ListExtractionDefinitions,
@@ -4526,7 +4530,10 @@ export class ConnectOperations {
 		"connect:TagResource",
 	];
 	/** IAM actions required for the CreateTaskTemplate API call. */
-	static readonly CreateTaskTemplate: string[] = ["connect:CreateTaskTemplate"];
+	static readonly CreateTaskTemplate: string[] = [
+		"connect:CreateTaskTemplate",
+		"connect:TagResource",
+	];
 	/** IAM actions required for the CreateTestCase API call. */
 	static readonly CreateTestCase: string[] = ["connect:TagResource"];
 	/** IAM actions required for the CreateTrafficDistributionGroup API call. */
@@ -5028,7 +5035,9 @@ export class ConnectOperations {
 		"connect:ListEntitySecurityProfiles",
 	];
 	/** IAM actions required for the ListEvaluationFormAIVersions API call. */
-	static readonly ListEvaluationFormAIVersions: string[] = [];
+	static readonly ListEvaluationFormAIVersions: string[] = [
+		"connect:ListEvaluationFormAIVersions",
+	];
 	/** IAM actions required for the ListEvaluationFormVersions API call. */
 	static readonly ListEvaluationFormVersions: string[] = [
 		"connect:ListEvaluationFormVersions",
@@ -6682,6 +6691,10 @@ export class ConnectConditions {
 	/** Condition keys applicable to the ListEntitySecurityProfiles action. */
 	static readonly ListEntitySecurityProfilesConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
+		"connect:InstanceId",
+	];
+	/** Condition keys applicable to the ListEvaluationFormAIVersions action. */
+	static readonly ListEvaluationFormAIVersionsConditionKeys: string[] = [
 		"connect:InstanceId",
 	];
 	/** Condition keys applicable to the ListEvaluationFormVersions action. */

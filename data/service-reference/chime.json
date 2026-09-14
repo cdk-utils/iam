@@ -6064,6 +6064,12 @@
     },
     {
       "Name": "AssociatePhoneNumberWithUser",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociatePhoneNumberWithUser",
+          "Service": "chime"
+        }
+      ],
       "SDK": [
         {
           "Name": "chime",
@@ -6106,6 +6112,12 @@
     },
     {
       "Name": "AssociateSigninDelegateGroupsWithAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateSigninDelegateGroupsWithAccount",
+          "Service": "chime"
+        }
+      ],
       "SDK": [
         {
           "Name": "chime",
@@ -6185,6 +6197,12 @@
     },
     {
       "Name": "BatchSuspendUser",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchSuspendUser",
+          "Service": "chime"
+        }
+      ],
       "SDK": [
         {
           "Name": "chime",
@@ -6195,6 +6213,12 @@
     },
     {
       "Name": "BatchUnsuspendUser",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchUnsuspendUser",
+          "Service": "chime"
+        }
+      ],
       "SDK": [
         {
           "Name": "chime",
@@ -6839,6 +6863,12 @@
     },
     {
       "Name": "CreateUser",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateUser",
+          "Service": "chime"
+        }
+      ],
       "SDK": [
         {
           "Name": "chime",
@@ -7734,6 +7764,12 @@
     },
     {
       "Name": "DisassociatePhoneNumberFromUser",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociatePhoneNumberFromUser",
+          "Service": "chime"
+        }
+      ],
       "SDK": [
         {
           "Name": "chime",
@@ -7776,6 +7812,12 @@
     },
     {
       "Name": "DisassociateSigninDelegateGroupsFromAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateSigninDelegateGroupsFromAccount",
+          "Service": "chime"
+        }
+      ],
       "SDK": [
         {
           "Name": "chime",
@@ -9531,6 +9573,12 @@
     },
     {
       "Name": "ResetPersonalPIN",
+      "AuthorizedActions": [
+        {
+          "Name": "ResetPersonalPIN",
+          "Service": "chime"
+        }
+      ],
       "SDK": [
         {
           "Name": "chime",
@@ -9813,6 +9861,12 @@
     },
     {
       "Name": "UpdateAccountSettings",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAccountSettings",
+          "Service": "chime"
+        }
+      ],
       "SDK": [
         {
           "Name": "chime",
@@ -10199,6 +10253,12 @@
     },
     {
       "Name": "UpdateUser",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateUser",
+          "Service": "chime"
+        }
+      ],
       "SDK": [
         {
           "Name": "chime",

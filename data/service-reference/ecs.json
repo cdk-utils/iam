@@ -1468,7 +1468,9 @@
         "ecs:capacity-provider",
         "ecs:cluster",
         "ecs:enable-ebs-volumes",
-        "ecs:enable-execute-command"
+        "ecs:enable-execute-command",
+        "ecs:task-cpu",
+        "ecs:task-memory"
       ],
       "Annotations": {
         "Properties": {

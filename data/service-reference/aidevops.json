@@ -123,6 +123,10 @@
     },
     {
       "Name": "CreateBacklogTask",
+      "ActionConditionKeys": [
+        "aidevops:SourceAgentSpaceArn",
+        "aidevops:TargetAgentSpaceArn"
+      ],
       "Annotations": {
         "Properties": {
           "IsList": false,
@@ -621,6 +625,10 @@
     },
     {
       "Name": "GetAsset",
+      "ActionConditionKeys": [
+        "aidevops:SourceAgentSpaceArn",
+        "aidevops:TargetAgentSpaceArn"
+      ],
       "Annotations": {
         "Properties": {
           "IsList": false,
@@ -641,6 +649,10 @@
     },
     {
       "Name": "GetAssetContent",
+      "ActionConditionKeys": [
+        "aidevops:SourceAgentSpaceArn",
+        "aidevops:TargetAgentSpaceArn"
+      ],
       "Annotations": {
         "Properties": {
           "IsList": false,
@@ -661,6 +673,10 @@
     },
     {
       "Name": "GetAssetFile",
+      "ActionConditionKeys": [
+        "aidevops:SourceAgentSpaceArn",
+        "aidevops:TargetAgentSpaceArn"
+      ],
       "Annotations": {
         "Properties": {
           "IsList": false,
@@ -704,6 +720,10 @@
     },
     {
       "Name": "GetBacklogTask",
+      "ActionConditionKeys": [
+        "aidevops:SourceAgentSpaceArn",
+        "aidevops:TargetAgentSpaceArn"
+      ],
       "Annotations": {
         "Properties": {
           "IsList": false,
@@ -882,6 +902,10 @@
     },
     {
       "Name": "ListAssetFiles",
+      "ActionConditionKeys": [
+        "aidevops:SourceAgentSpaceArn",
+        "aidevops:TargetAgentSpaceArn"
+      ],
       "Annotations": {
         "Properties": {
           "IsList": true,
@@ -937,6 +961,10 @@
     },
     {
       "Name": "ListAssets",
+      "ActionConditionKeys": [
+        "aidevops:SourceAgentSpaceArn",
+        "aidevops:TargetAgentSpaceArn"
+      ],
       "Annotations": {
         "Properties": {
           "IsList": true,
@@ -977,6 +1005,10 @@
     },
     {
       "Name": "ListBacklogTasks",
+      "ActionConditionKeys": [
+        "aidevops:SourceAgentSpaceArn",
+        "aidevops:TargetAgentSpaceArn"
+      ],
       "Annotations": {
         "Properties": {
           "IsList": true,
@@ -1017,6 +1049,10 @@
     },
     {
       "Name": "ListExecutions",
+      "ActionConditionKeys": [
+        "aidevops:SourceAgentSpaceArn",
+        "aidevops:TargetAgentSpaceArn"
+      ],
       "Annotations": {
         "Properties": {
           "IsList": true,
@@ -1057,6 +1093,10 @@
     },
     {
       "Name": "ListJournalRecords",
+      "ActionConditionKeys": [
+        "aidevops:SourceAgentSpaceArn",
+        "aidevops:TargetAgentSpaceArn"
+      ],
       "Annotations": {
         "Properties": {
           "IsList": true,
@@ -1731,6 +1771,18 @@
     }
   ],
   "ConditionKeys": [
+    {
+      "Name": "aidevops:SourceAgentSpaceArn",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aidevops:TargetAgentSpaceArn",
+      "Types": [
+        "String"
+      ]
+    },
     {
       "Name": "aws:RequestTag/${TagKey}",
       "Types": [

@@ -3037,6 +3037,7 @@ new batch.BatchOperations()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.batch.BatchOperations.property.CancelJob">CancelJob</a></code> | <code>string[]</code> | IAM actions required for the CancelJob API call. |
+| <code><a href="#@cdk_utils/iam.batch.BatchOperations.property.CancelJobs">CancelJobs</a></code> | <code>string[]</code> | IAM actions required for the CancelJobs API call. |
 | <code><a href="#@cdk_utils/iam.batch.BatchOperations.property.CreateComputeEnvironment">CreateComputeEnvironment</a></code> | <code>string[]</code> | IAM actions required for the CreateComputeEnvironment API call. |
 | <code><a href="#@cdk_utils/iam.batch.BatchOperations.property.CreateConsumableResource">CreateConsumableResource</a></code> | <code>string[]</code> | IAM actions required for the CreateConsumableResource API call. |
 | <code><a href="#@cdk_utils/iam.batch.BatchOperations.property.CreateJobQueue">CreateJobQueue</a></code> | <code>string[]</code> | IAM actions required for the CreateJobQueue API call. |
@@ -3072,7 +3073,9 @@ new batch.BatchOperations()
 | <code><a href="#@cdk_utils/iam.batch.BatchOperations.property.SubmitServiceJob">SubmitServiceJob</a></code> | <code>string[]</code> | IAM actions required for the SubmitServiceJob API call. |
 | <code><a href="#@cdk_utils/iam.batch.BatchOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
 | <code><a href="#@cdk_utils/iam.batch.BatchOperations.property.TerminateJob">TerminateJob</a></code> | <code>string[]</code> | IAM actions required for the TerminateJob API call. |
+| <code><a href="#@cdk_utils/iam.batch.BatchOperations.property.TerminateJobs">TerminateJobs</a></code> | <code>string[]</code> | IAM actions required for the TerminateJobs API call. |
 | <code><a href="#@cdk_utils/iam.batch.BatchOperations.property.TerminateServiceJob">TerminateServiceJob</a></code> | <code>string[]</code> | IAM actions required for the TerminateServiceJob API call. |
+| <code><a href="#@cdk_utils/iam.batch.BatchOperations.property.TerminateServiceJobs">TerminateServiceJobs</a></code> | <code>string[]</code> | IAM actions required for the TerminateServiceJobs API call. |
 | <code><a href="#@cdk_utils/iam.batch.BatchOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
 | <code><a href="#@cdk_utils/iam.batch.BatchOperations.property.UpdateComputeEnvironment">UpdateComputeEnvironment</a></code> | <code>string[]</code> | IAM actions required for the UpdateComputeEnvironment API call. |
 | <code><a href="#@cdk_utils/iam.batch.BatchOperations.property.UpdateConsumableResource">UpdateConsumableResource</a></code> | <code>string[]</code> | IAM actions required for the UpdateConsumableResource API call. |
@@ -3093,6 +3096,18 @@ public readonly CancelJob: string[];
 - *Type:* string[]
 
 IAM actions required for the CancelJob API call.
+
+---
+
+##### `CancelJobs`<sup>Required</sup> <a name="CancelJobs" id="@cdk_utils/iam.batch.BatchOperations.property.CancelJobs"></a>
+
+```typescript
+public readonly CancelJobs: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CancelJobs API call.
 
 ---
 
@@ -3516,6 +3531,18 @@ IAM actions required for the TerminateJob API call.
 
 ---
 
+##### `TerminateJobs`<sup>Required</sup> <a name="TerminateJobs" id="@cdk_utils/iam.batch.BatchOperations.property.TerminateJobs"></a>
+
+```typescript
+public readonly TerminateJobs: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the TerminateJobs API call.
+
+---
+
 ##### `TerminateServiceJob`<sup>Required</sup> <a name="TerminateServiceJob" id="@cdk_utils/iam.batch.BatchOperations.property.TerminateServiceJob"></a>
 
 ```typescript
@@ -3525,6 +3552,18 @@ public readonly TerminateServiceJob: string[];
 - *Type:* string[]
 
 IAM actions required for the TerminateServiceJob API call.
+
+---
+
+##### `TerminateServiceJobs`<sup>Required</sup> <a name="TerminateServiceJobs" id="@cdk_utils/iam.batch.BatchOperations.property.TerminateServiceJobs"></a>
+
+```typescript
+public readonly TerminateServiceJobs: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the TerminateServiceJobs API call.
 
 ---
 

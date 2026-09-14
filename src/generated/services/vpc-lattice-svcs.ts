@@ -192,6 +192,8 @@ export class VPCLatticeSvcsConditions {
 		"vpc-lattice-svcs:SourceVpcOwnerAccount",
 	];
 
+	/** Condition key: aws:ResourceTag/${TagKey} (String) */
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: vpc-lattice-svcs:Port (Numeric) */
 	static readonly PORT = "vpc-lattice-svcs:Port";
 	/** Condition key: vpc-lattice-svcs:RequestHeader/${HeaderName} (String) */
@@ -213,6 +215,13 @@ export class VPCLatticeSvcsConditions {
 	/** Condition key: vpc-lattice-svcs:SourceVpcOwnerAccount (String) */
 	static readonly SOURCE_VPC_OWNER_ACCOUNT =
 		"vpc-lattice-svcs:SourceVpcOwnerAccount";
+
+	/**
+	 * Generates a condition block for `aws:ResourceTag/${TagKey}`.
+	 */
+	static resourceTag(value: string): Record<string, Record<string, string>> {
+		return { StringEquals: { "aws:ResourceTag/${TagKey}": value } };
+	}
 
 	/**
 	 * Generates a condition block for `vpc-lattice-svcs:Port`.

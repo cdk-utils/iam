@@ -236,8 +236,14 @@ export class ResiliencehubActions {
 	/** [List] resiliencehub:ListTestRecommendations */
 	static readonly ListTestRecommendations =
 		"resiliencehub:ListTestRecommendations";
+	/** [Read] resiliencehub:ListTestRunDependencies */
+	static readonly ListTestRunDependencies =
+		"resiliencehub:ListTestRunDependencies";
 	/** [Read] resiliencehub:ListTestRunEvents */
 	static readonly ListTestRunEvents = "resiliencehub:ListTestRunEvents";
+	/** [Read] resiliencehub:ListTestRunSourceEvents */
+	static readonly ListTestRunSourceEvents =
+		"resiliencehub:ListTestRunSourceEvents";
 	/** [Read] resiliencehub:ListTestRunSources */
 	static readonly ListTestRunSources = "resiliencehub:ListTestRunSources";
 	/** [Read] resiliencehub:ListTestRuns */
@@ -357,7 +363,9 @@ export class ResiliencehubActions {
 		ResiliencehubActions.ListSystemEvents,
 		ResiliencehubActions.ListSystems,
 		ResiliencehubActions.ListTagsForResource,
+		ResiliencehubActions.ListTestRunDependencies,
 		ResiliencehubActions.ListTestRunEvents,
+		ResiliencehubActions.ListTestRunSourceEvents,
 		ResiliencehubActions.ListTestRunSources,
 		ResiliencehubActions.ListTestRuns,
 		ResiliencehubActions.ListTestSources,
@@ -1304,9 +1312,17 @@ export class ResiliencehubOperations {
 	static readonly ListTestRecommendations: string[] = [
 		"resiliencehub:ListTestRecommendations",
 	];
+	/** IAM actions required for the ListTestRunDependencies API call. */
+	static readonly ListTestRunDependencies: string[] = [
+		"resiliencehub:ListTestRunDependencies",
+	];
 	/** IAM actions required for the ListTestRunEvents API call. */
 	static readonly ListTestRunEvents: string[] = [
 		"resiliencehub:ListTestRunEvents",
+	];
+	/** IAM actions required for the ListTestRunSourceEvents API call. */
+	static readonly ListTestRunSourceEvents: string[] = [
+		"resiliencehub:ListTestRunSourceEvents",
 	];
 	/** IAM actions required for the ListTestRunSources API call. */
 	static readonly ListTestRunSources: string[] = [

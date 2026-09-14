@@ -20273,6 +20273,7 @@ new sagemaker.SageMakerOperations()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.AddAssociation">AddAssociation</a></code> | <code>string[]</code> | IAM actions required for the AddAssociation API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.AddTags">AddTags</a></code> | <code>string[]</code> | IAM actions required for the AddTags API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.AssociateTrialComponent">AssociateTrialComponent</a></code> | <code>string[]</code> | IAM actions required for the AssociateTrialComponent API call. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.AttachClusterNodeNetworkInterface">AttachClusterNodeNetworkInterface</a></code> | <code>string[]</code> | IAM actions required for the AttachClusterNodeNetworkInterface API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.AttachClusterNodeVolume">AttachClusterNodeVolume</a></code> | <code>string[]</code> | IAM actions required for the AttachClusterNodeVolume API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.BatchAddClusterNodes">BatchAddClusterNodes</a></code> | <code>string[]</code> | IAM actions required for the BatchAddClusterNodes API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.BatchDeleteClusterNodes">BatchDeleteClusterNodes</a></code> | <code>string[]</code> | IAM actions required for the BatchDeleteClusterNodes API call. |
@@ -20733,6 +20734,18 @@ public readonly AssociateTrialComponent: string[];
 - *Type:* string[]
 
 IAM actions required for the AssociateTrialComponent API call.
+
+---
+
+##### `AttachClusterNodeNetworkInterface`<sup>Required</sup> <a name="AttachClusterNodeNetworkInterface" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.AttachClusterNodeNetworkInterface"></a>
+
+```typescript
+public readonly AttachClusterNodeNetworkInterface: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the AttachClusterNodeNetworkInterface API call.
 
 ---
 

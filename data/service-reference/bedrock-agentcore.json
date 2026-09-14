@@ -405,6 +405,30 @@
       }
     },
     {
+      "Name": "CreateConsentPortal",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "consent-portal"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "CreateDataset",
       "ActionConditionKeys": [
         "aws:RequestTag/${TagKey}",
@@ -1104,6 +1128,26 @@
       "Resources": [
         {
           "Name": "configuration-bundle"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteConsentPortal",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "consent-portal"
         }
       ],
       "SupportedBy": {
@@ -2039,6 +2083,26 @@
       "Resources": [
         {
           "Name": "configuration-bundle"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetConsentPortal",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "consent-portal"
         }
       ],
       "SupportedBy": {
@@ -3363,6 +3427,21 @@
     },
     {
       "Name": "ListConfigurationBundles",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListConsentPortals",
       "Annotations": {
         "Properties": {
           "IsList": true,
@@ -4888,6 +4967,26 @@
       }
     },
     {
+      "Name": "UpdateConsentPortal",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "consent-portal"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "UpdateDataset",
       "Annotations": {
         "Properties": {
@@ -5857,6 +5956,10 @@
       "Name": "CreateConsentPortal",
       "AuthorizedActions": [
         {
+          "Name": "CreateConsentPortal",
+          "Service": "bedrock-agentcore"
+        },
+        {
           "Name": "PassRole",
           "Context": {
             "iam:PassedToService": [
@@ -6558,6 +6661,12 @@
     },
     {
       "Name": "DeleteConsentPortal",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteConsentPortal",
+          "Service": "bedrock-agentcore"
+        }
+      ],
       "SDK": [
         {
           "Name": "bedrock-agentcore-control",
@@ -7228,6 +7337,12 @@
     },
     {
       "Name": "GetConsentPortal",
+      "AuthorizedActions": [
+        {
+          "Name": "GetConsentPortal",
+          "Service": "bedrock-agentcore"
+        }
+      ],
       "SDK": [
         {
           "Name": "bedrock-agentcore-control",
@@ -8182,6 +8297,12 @@
     },
     {
       "Name": "ListConsentPortals",
+      "AuthorizedActions": [
+        {
+          "Name": "ListConsentPortals",
+          "Service": "bedrock-agentcore"
+        }
+      ],
       "SDK": [
         {
           "Name": "bedrock-agentcore-control",
@@ -9206,6 +9327,12 @@
     },
     {
       "Name": "UpdateConsentPortal",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateConsentPortal",
+          "Service": "bedrock-agentcore"
+        }
+      ],
       "SDK": [
         {
           "Name": "bedrock-agentcore-control",
@@ -9701,6 +9828,15 @@
       "Name": "configuration-bundle",
       "ARNFormats": [
         "arn:${Partition}:bedrock-agentcore:${Region}:${Account}:configuration-bundle/${ConfigurationBundleId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "consent-portal",
+      "ARNFormats": [
+        "arn:${Partition}:bedrock-agentcore:${Region}:${Account}:consent-portal/${ConsentPortalId}"
       ],
       "ConditionKeys": [
         "aws:ResourceTag/${TagKey}"

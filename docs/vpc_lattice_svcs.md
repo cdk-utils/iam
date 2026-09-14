@@ -485,6 +485,7 @@ new vpc_lattice_svcs.VPCLatticeSvcsConditions()
 | <code><a href="#@cdk_utils/iam.vpc_lattice_svcs.VPCLatticeSvcsConditions.requestMethod">requestMethod</a></code> | Generates a condition block for `vpc-lattice-svcs:RequestMethod`. |
 | <code><a href="#@cdk_utils/iam.vpc_lattice_svcs.VPCLatticeSvcsConditions.requestPath">requestPath</a></code> | Generates a condition block for `vpc-lattice-svcs:RequestPath`. |
 | <code><a href="#@cdk_utils/iam.vpc_lattice_svcs.VPCLatticeSvcsConditions.requestQueryString">requestQueryString</a></code> | Generates a condition block for `vpc-lattice-svcs:RequestQueryString/${QueryStringKey}`. |
+| <code><a href="#@cdk_utils/iam.vpc_lattice_svcs.VPCLatticeSvcsConditions.resourceTag">resourceTag</a></code> | Generates a condition block for `aws:ResourceTag/${TagKey}`. |
 | <code><a href="#@cdk_utils/iam.vpc_lattice_svcs.VPCLatticeSvcsConditions.serviceARN">serviceARN</a></code> | Generates a condition block for `vpc-lattice-svcs:ServiceArn`. |
 | <code><a href="#@cdk_utils/iam.vpc_lattice_svcs.VPCLatticeSvcsConditions.serviceNetworkARN">serviceNetworkARN</a></code> | Generates a condition block for `vpc-lattice-svcs:ServiceNetworkArn`. |
 | <code><a href="#@cdk_utils/iam.vpc_lattice_svcs.VPCLatticeSvcsConditions.sourceVPC">sourceVPC</a></code> | Generates a condition block for `vpc-lattice-svcs:SourceVpc`. |
@@ -572,6 +573,22 @@ Generates a condition block for `vpc-lattice-svcs:RequestQueryString/${QueryStri
 
 ---
 
+##### `resourceTag` <a name="resourceTag" id="@cdk_utils/iam.vpc_lattice_svcs.VPCLatticeSvcsConditions.resourceTag"></a>
+
+```typescript
+import { vpc_lattice_svcs } from '@cdk_utils/iam'
+
+vpc_lattice_svcs.VPCLatticeSvcsConditions.resourceTag(value: string)
+```
+
+Generates a condition block for `aws:ResourceTag/${TagKey}`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.vpc_lattice_svcs.VPCLatticeSvcsConditions.resourceTag.parameter.value"></a>
+
+- *Type:* string
+
+---
+
 ##### `serviceARN` <a name="serviceARN" id="@cdk_utils/iam.vpc_lattice_svcs.VPCLatticeSvcsConditions.serviceARN"></a>
 
 ```typescript
@@ -641,6 +658,7 @@ Generates a condition block for `vpc-lattice-svcs:SourceVpcOwnerAccount`.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.vpc_lattice_svcs.VPCLatticeSvcsConditions.property.AWS_RESOURCE_TAG">AWS_RESOURCE_TAG</a></code> | <code>string</code> | Condition key: aws:ResourceTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.vpc_lattice_svcs.VPCLatticeSvcsConditions.property.ConnectConditionKeys">ConnectConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the Connect action. |
 | <code><a href="#@cdk_utils/iam.vpc_lattice_svcs.VPCLatticeSvcsConditions.property.InvokeConditionKeys">InvokeConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the Invoke action. |
 | <code><a href="#@cdk_utils/iam.vpc_lattice_svcs.VPCLatticeSvcsConditions.property.PORT">PORT</a></code> | <code>string</code> | Condition key: vpc-lattice-svcs:Port (Numeric). |
@@ -652,6 +670,18 @@ Generates a condition block for `vpc-lattice-svcs:SourceVpcOwnerAccount`.
 | <code><a href="#@cdk_utils/iam.vpc_lattice_svcs.VPCLatticeSvcsConditions.property.SERVICE_NETWORK_ARN">SERVICE_NETWORK_ARN</a></code> | <code>string</code> | Condition key: vpc-lattice-svcs:ServiceNetworkArn (ARN). |
 | <code><a href="#@cdk_utils/iam.vpc_lattice_svcs.VPCLatticeSvcsConditions.property.SOURCE_VPC">SOURCE_VPC</a></code> | <code>string</code> | Condition key: vpc-lattice-svcs:SourceVpc (String). |
 | <code><a href="#@cdk_utils/iam.vpc_lattice_svcs.VPCLatticeSvcsConditions.property.SOURCE_VPC_OWNER_ACCOUNT">SOURCE_VPC_OWNER_ACCOUNT</a></code> | <code>string</code> | Condition key: vpc-lattice-svcs:SourceVpcOwnerAccount (String). |
+
+---
+
+##### `AWS_RESOURCE_TAG`<sup>Required</sup> <a name="AWS_RESOURCE_TAG" id="@cdk_utils/iam.vpc_lattice_svcs.VPCLatticeSvcsConditions.property.AWS_RESOURCE_TAG"></a>
+
+```typescript
+public readonly AWS_RESOURCE_TAG: string;
+```
+
+- *Type:* string
+
+Condition key: aws:ResourceTag/${TagKey} (String).
 
 ---
 

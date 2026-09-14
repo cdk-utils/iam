@@ -7713,6 +7713,7 @@ new connect.ConnectActions()
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.ListDataTableValues">ListDataTableValues</a></code> | <code>string</code> | [List] connect:ListDataTableValues. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.ListDefaultVocabularies">ListDefaultVocabularies</a></code> | <code>string</code> | [List] connect:ListDefaultVocabularies. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.ListEntitySecurityProfiles">ListEntitySecurityProfiles</a></code> | <code>string</code> | [List] connect:ListEntitySecurityProfiles. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.ListEvaluationFormAIVersions">ListEvaluationFormAIVersions</a></code> | <code>string</code> | [List] connect:ListEvaluationFormAIVersions. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.ListEvaluationForms">ListEvaluationForms</a></code> | <code>string</code> | [List] connect:ListEvaluationForms. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.ListEvaluationFormVersions">ListEvaluationFormVersions</a></code> | <code>string</code> | [List] connect:ListEvaluationFormVersions. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.ListExtractionDefinitions">ListExtractionDefinitions</a></code> | <code>string</code> | [List] connect:ListExtractionDefinitions. |
@@ -10414,6 +10415,18 @@ public readonly ListEntitySecurityProfiles: string;
 - *Type:* string
 
 [List] connect:ListEntitySecurityProfiles.
+
+---
+
+##### `ListEvaluationFormAIVersions`<sup>Required</sup> <a name="ListEvaluationFormAIVersions" id="@cdk_utils/iam.connect.ConnectActions.property.ListEvaluationFormAIVersions"></a>
+
+```typescript
+public readonly ListEvaluationFormAIVersions: string;
+```
+
+- *Type:* string
+
+[List] connect:ListEvaluationFormAIVersions.
 
 ---
 
@@ -13188,6 +13201,7 @@ Generates a condition block for `connect:UserArn`.
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.ListDataTableValuesConditionKeys">ListDataTableValuesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListDataTableValues action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.ListDefaultVocabulariesConditionKeys">ListDefaultVocabulariesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListDefaultVocabularies action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.ListEntitySecurityProfilesConditionKeys">ListEntitySecurityProfilesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListEntitySecurityProfiles action. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.ListEvaluationFormAIVersionsConditionKeys">ListEvaluationFormAIVersionsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListEvaluationFormAIVersions action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.ListEvaluationFormsConditionKeys">ListEvaluationFormsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListEvaluationForms action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.ListEvaluationFormVersionsConditionKeys">ListEvaluationFormVersionsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListEvaluationFormVersions action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.ListExtractionDefinitionsConditionKeys">ListExtractionDefinitionsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListExtractionDefinitions action. |
@@ -15909,6 +15923,18 @@ public readonly ListEntitySecurityProfilesConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the ListEntitySecurityProfiles action.
+
+---
+
+##### `ListEvaluationFormAIVersionsConditionKeys`<sup>Required</sup> <a name="ListEvaluationFormAIVersionsConditionKeys" id="@cdk_utils/iam.connect.ConnectConditions.property.ListEvaluationFormAIVersionsConditionKeys"></a>
+
+```typescript
+public readonly ListEvaluationFormAIVersionsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ListEvaluationFormAIVersions action.
 
 ---
 
