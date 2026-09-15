@@ -33077,6 +33077,12 @@
     },
     {
       "Name": "DescribeElasticGpus",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeElasticGpus",
+          "Service": "ec2"
+        }
+      ],
       "SDK": [
         {
           "Name": "ec2",

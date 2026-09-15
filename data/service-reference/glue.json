@@ -10193,6 +10193,16 @@
       ]
     },
     {
+      "Name": "ListIntegrationTableProperties",
+      "SDK": [
+        {
+          "Name": "glue",
+          "Method": "list_integration_table_properties",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListIterableForms",
       "SDK": [
         {

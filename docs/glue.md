@@ -9215,6 +9215,7 @@ new glue.GlueOperations()
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.ListGlossaries">ListGlossaries</a></code> | <code>string[]</code> | IAM actions required for the ListGlossaries API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.ListGlossaryTerms">ListGlossaryTerms</a></code> | <code>string[]</code> | IAM actions required for the ListGlossaryTerms API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.ListIntegrationResourceProperties">ListIntegrationResourceProperties</a></code> | <code>string[]</code> | IAM actions required for the ListIntegrationResourceProperties API call. |
+| <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.ListIntegrationTableProperties">ListIntegrationTableProperties</a></code> | <code>string[]</code> | IAM actions required for the ListIntegrationTableProperties API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.ListIterableForms">ListIterableForms</a></code> | <code>string[]</code> | IAM actions required for the ListIterableForms API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.ListJobs">ListJobs</a></code> | <code>string[]</code> | IAM actions required for the ListJobs API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.ListMaterializedViewRefreshTaskRuns">ListMaterializedViewRefreshTaskRuns</a></code> | <code>string[]</code> | IAM actions required for the ListMaterializedViewRefreshTaskRuns API call. |
@@ -10856,6 +10857,18 @@ public readonly ListIntegrationResourceProperties: string[];
 - *Type:* string[]
 
 IAM actions required for the ListIntegrationResourceProperties API call.
+
+---
+
+##### `ListIntegrationTableProperties`<sup>Required</sup> <a name="ListIntegrationTableProperties" id="@cdk_utils/iam.glue.GlueOperations.property.ListIntegrationTableProperties"></a>
+
+```typescript
+public readonly ListIntegrationTableProperties: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListIntegrationTableProperties API call.
 
 ---
 

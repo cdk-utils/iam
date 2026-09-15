@@ -3148,6 +3148,8 @@ export class GlueOperations {
 	static readonly ListIntegrationResourceProperties: string[] = [
 		"glue:ListIntegrationResourceProperties",
 	];
+	/** IAM actions required for the ListIntegrationTableProperties API call. */
+	static readonly ListIntegrationTableProperties: string[] = [];
 	/** IAM actions required for the ListIterableForms API call. */
 	static readonly ListIterableForms: string[] = [];
 	/** IAM actions required for the ListJobs API call. */
