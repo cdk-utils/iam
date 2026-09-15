@@ -11298,7 +11298,7 @@ export class EC2Operations {
 		"ec2:DescribeEgressOnlyInternetGateways",
 	];
 	/** IAM actions required for the DescribeElasticGpus API call. */
-	static readonly DescribeElasticGpus: string[] = [];
+	static readonly DescribeElasticGpus: string[] = ["ec2:DescribeElasticGpus"];
 	/** IAM actions required for the DescribeExportImageTasks API call. */
 	static readonly DescribeExportImageTasks: string[] = [
 		"ec2:DescribeExportImageTasks",
