@@ -876,7 +876,7 @@
       "SDK": [
         {
           "Name": "socialmessaging",
-          "Method": "get_whats_app_business_public_key",
+          "Method": "get_whatsapp_business_public_key",
           "Package": "Boto3"
         }
       ]
@@ -1103,7 +1103,7 @@
       "SDK": [
         {
           "Name": "socialmessaging",
-          "Method": "put_whats_app_business_public_key",
+          "Method": "put_whatsapp_business_public_key",
           "Package": "Boto3"
         }
       ]

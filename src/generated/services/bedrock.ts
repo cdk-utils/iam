@@ -3814,6 +3814,7 @@ export class BedrockOperations {
 	static readonly DeleteSession: string[] = ["bedrock:DeleteSession"];
 	/** IAM actions required for the DeregisterMarketplaceModelEndpoint API call. */
 	static readonly DeregisterMarketplaceModelEndpoint: string[] = [
+		"bedrock:CallWithBearerToken",
 		"bedrock:DeregisterMarketplaceModelEndpoint",
 	];
 	/** IAM actions required for the DisassociateAgentCollaborator API call. */

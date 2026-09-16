@@ -7273,6 +7273,10 @@
       "Name": "DeregisterMarketplaceModelEndpoint",
       "AuthorizedActions": [
         {
+          "Name": "CallWithBearerToken",
+          "Service": "bedrock"
+        },
+        {
           "Name": "DeregisterMarketplaceModelEndpoint",
           "Service": "bedrock"
         }

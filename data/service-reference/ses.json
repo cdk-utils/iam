@@ -31,6 +31,50 @@
       }
     },
     {
+      "Name": "ApplyTrackingConfigurationOverrides",
+      "ActionConditionKeys": [
+        "ses:ClickTrackingEnabled",
+        "ses:OpenTrackingEnabled"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AssociateEmailIdentityCertificate",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "ses:ApiVersion",
+        "ses:FromAddress"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "identity"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "BatchGetMetricData",
       "ActionConditionKeys": [
         "aws:ResourceTag/${TagKey}",
@@ -1546,6 +1590,31 @@
       }
     },
     {
+      "Name": "DisassociateEmailIdentityCertificate",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "ses:ApiVersion",
+        "ses:FromAddress"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "identity"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "GetAccount",
       "ActionConditionKeys": [
         "ses:ApiVersion"
@@ -2868,6 +2937,30 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListEmailIdentityCertificates",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "ses:ApiVersion"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "identity"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -4664,6 +4757,31 @@
       }
     },
     {
+      "Name": "UpdateConfigurationSet",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "ses:ApiVersion",
+        "ses:ConfigurationSetOptions"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "configuration-set"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "UpdateConfigurationSetEventDestination",
       "ActionConditionKeys": [
         "aws:ResourceTag/${TagKey}",
@@ -5149,6 +5267,18 @@
       ]
     },
     {
+      "Name": "ses:ClickTrackingEnabled",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "ses:ConfigurationSetOptions",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
       "Name": "ses:ExportSourceType",
       "Types": [
         "String"
@@ -5197,6 +5327,12 @@
       ]
     },
     {
+      "Name": "ses:OpenTrackingEnabled",
+      "Types": [
+        "String"
+      ]
+    },
+    {
       "Name": "ses:Recipients",
       "Types": [
         "ArrayOfString"
@@ -5218,6 +5354,12 @@
   "Operations": [
     {
       "Name": "AssociateEmailIdentityCertificate",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateEmailIdentityCertificate",
+          "Service": "ses"
+        }
+      ],
       "SDK": [
         {
           "Name": "sesv2",
@@ -6454,6 +6596,12 @@
     },
     {
       "Name": "DisassociateEmailIdentityCertificate",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateEmailIdentityCertificate",
+          "Service": "ses"
+        }
+      ],
       "SDK": [
         {
           "Name": "sesv2",
@@ -7583,6 +7731,12 @@
     },
     {
       "Name": "ListEmailIdentityCertificates",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEmailIdentityCertificates",
+          "Service": "ses"
+        }
+      ],
       "SDK": [
         {
           "Name": "sesv2",
@@ -8873,6 +9027,12 @@
     },
     {
       "Name": "UpdateConfigurationSet",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateConfigurationSet",
+          "Service": "ses"
+        }
+      ],
       "SDK": [
         {
           "Name": "sesv2",
