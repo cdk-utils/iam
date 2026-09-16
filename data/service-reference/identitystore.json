@@ -11,6 +11,11 @@
           "IsWrite": true
         }
       },
+      "Resources": [
+        {
+          "Name": "Identitystore"
+        }
+      ],
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -178,6 +183,11 @@
           "IsWrite": true
         }
       },
+      "Resources": [
+        {
+          "Name": "Identitystore"
+        }
+      ],
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -282,6 +292,11 @@
           "IsWrite": false
         }
       },
+      "Resources": [
+        {
+          "Name": "Identitystore"
+        }
+      ],
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -528,6 +543,11 @@
           "IsWrite": false
         }
       },
+      "Resources": [
+        {
+          "Name": "Identitystore"
+        }
+      ],
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -570,6 +590,11 @@
           "IsWrite": true
         }
       },
+      "Resources": [
+        {
+          "Name": "Identitystore"
+        }
+      ],
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -635,6 +660,11 @@
           "IsWrite": true
         }
       },
+      "Resources": [
+        {
+          "Name": "Identitystore"
+        }
+      ],
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false

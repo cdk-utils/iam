@@ -293,7 +293,11 @@ export class GameliftstreamsOperations {
 		"gameliftstreams:CreateStreamSessionConnection",
 	];
 	/** IAM actions required for the CreateStreamUrl API call. */
-	static readonly CreateStreamUrl: string[] = [];
+	static readonly CreateStreamUrl: string[] = [
+		"gameliftstreams:CreateStreamUrl",
+		"iam:PassRole",
+		"gameliftstreams:StartStreamSession",
+	];
 	/** IAM actions required for the DeleteApplication API call. */
 	static readonly DeleteApplication: string[] = [
 		"gameliftstreams:DeleteApplication",

@@ -15,6 +15,12 @@ export class SesActions {
 	/** [PermissionManagement] ses:AllowVendedLogDeliveryForResource */
 	static readonly AllowVendedLogDeliveryForResource =
 		"ses:AllowVendedLogDeliveryForResource";
+	/** [PermissionManagement] ses:ApplyTrackingConfigurationOverrides */
+	static readonly ApplyTrackingConfigurationOverrides =
+		"ses:ApplyTrackingConfigurationOverrides";
+	/** [Write] ses:AssociateEmailIdentityCertificate */
+	static readonly AssociateEmailIdentityCertificate =
+		"ses:AssociateEmailIdentityCertificate";
 	/** [Read] ses:BatchGetMetricData */
 	static readonly BatchGetMetricData = "ses:BatchGetMetricData";
 	/** [Write] ses:CancelExportJob */
@@ -159,6 +165,9 @@ export class SesActions {
 	static readonly DescribeReceiptRule = "ses:DescribeReceiptRule";
 	/** [Read] ses:DescribeReceiptRuleSet */
 	static readonly DescribeReceiptRuleSet = "ses:DescribeReceiptRuleSet";
+	/** [Write] ses:DisassociateEmailIdentityCertificate */
+	static readonly DisassociateEmailIdentityCertificate =
+		"ses:DisassociateEmailIdentityCertificate";
 	/** [Read] ses:GetAccount */
 	static readonly actionGetAccount = "ses:GetAccount";
 	/** [Read] ses:GetAccountSendingEnabled */
@@ -304,6 +313,9 @@ export class SesActions {
 		"ses:ListDomainDeliverabilityCampaigns";
 	/** [List] ses:ListEmailIdentities */
 	static readonly ListEmailIdentities = "ses:ListEmailIdentities";
+	/** [List] ses:ListEmailIdentityCertificates */
+	static readonly ListEmailIdentityCertificates =
+		"ses:ListEmailIdentityCertificates";
 	/** [List] ses:ListEmailTemplates */
 	static readonly ListEmailTemplates = "ses:ListEmailTemplates";
 	/** [List] ses:ListExportJobs */
@@ -484,6 +496,8 @@ export class SesActions {
 		"ses:UpdateAccountSendingEnabled";
 	/** [Write] ses:UpdateArchive */
 	static readonly UpdateArchive = "ses:UpdateArchive";
+	/** [Write] ses:UpdateConfigurationSet */
+	static readonly UpdateConfigurationSet = "ses:UpdateConfigurationSet";
 	/** [Write] ses:UpdateConfigurationSetEventDestination */
 	static readonly UpdateConfigurationSetEventDestination =
 		"ses:UpdateConfigurationSetEventDestination";
@@ -600,6 +614,7 @@ export class SesActions {
 	];
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
+		SesActions.AssociateEmailIdentityCertificate,
 		SesActions.CancelExportJob,
 		SesActions.CloneReceiptRuleSet,
 		SesActions.CreateAddonInstance,
@@ -658,6 +673,7 @@ export class SesActions {
 		SesActions.DeleteTrafficPolicy,
 		SesActions.DeleteVerifiedEmailAddress,
 		SesActions.DeregisterMemberFromAddressList,
+		SesActions.DisassociateEmailIdentityCertificate,
 		SesActions.PutAccountDedicatedIpWarmupAttributes,
 		SesActions.PutAccountDetails,
 		SesActions.PutAccountPricingAttributes,
@@ -708,6 +724,7 @@ export class SesActions {
 		SesActions.TestRenderTemplate,
 		SesActions.UpdateAccountSendingEnabled,
 		SesActions.UpdateArchive,
+		SesActions.UpdateConfigurationSet,
 		SesActions.UpdateConfigurationSetEventDestination,
 		SesActions.UpdateConfigurationSetReputationMetricsEnabled,
 		SesActions.UpdateConfigurationSetSendingEnabled,
@@ -745,6 +762,7 @@ export class SesActions {
 		SesActions.ListDedicatedIpPools,
 		SesActions.ListDeliverabilityTestReports,
 		SesActions.ListEmailIdentities,
+		SesActions.ListEmailIdentityCertificates,
 		SesActions.ListEmailTemplates,
 		SesActions.ListExportJobs,
 		SesActions.ListIdentities,
@@ -765,6 +783,7 @@ export class SesActions {
 	/** All permission-management-level actions. */
 	static readonly AllPermissionManagementActions: string[] = [
 		SesActions.AllowVendedLogDeliveryForResource,
+		SesActions.ApplyTrackingConfigurationOverrides,
 		SesActions.CreateEmailIdentityPolicy,
 		SesActions.DeleteEmailIdentityPolicy,
 		SesActions.DeleteIdentityPolicy,
@@ -2049,7 +2068,9 @@ export class SesResources {
  */
 export class SesOperations {
 	/** IAM actions required for the AssociateEmailIdentityCertificate API call. */
-	static readonly AssociateEmailIdentityCertificate: string[] = [];
+	static readonly AssociateEmailIdentityCertificate: string[] = [
+		"ses:AssociateEmailIdentityCertificate",
+	];
 	/** IAM actions required for the BatchGetMetricData API call. */
 	static readonly BatchGetMetricData: string[] = ["ses:BatchGetMetricData"];
 	/** IAM actions required for the CancelExportJob API call. */
@@ -2279,7 +2300,9 @@ export class SesOperations {
 		"ses:DescribeReceiptRuleSet",
 	];
 	/** IAM actions required for the DisassociateEmailIdentityCertificate API call. */
-	static readonly DisassociateEmailIdentityCertificate: string[] = [];
+	static readonly DisassociateEmailIdentityCertificate: string[] = [
+		"ses:DisassociateEmailIdentityCertificate",
+	];
 	/** IAM actions required for the GetAccount API call. */
 	static readonly opGetAccount: string[] = ["ses:GetAccount"];
 	/** IAM actions required for the GetAccountSendingEnabled API call. */
@@ -2461,7 +2484,9 @@ export class SesOperations {
 	/** IAM actions required for the ListEmailIdentities API call. */
 	static readonly ListEmailIdentities: string[] = ["ses:ListEmailIdentities"];
 	/** IAM actions required for the ListEmailIdentityCertificates API call. */
-	static readonly ListEmailIdentityCertificates: string[] = [];
+	static readonly ListEmailIdentityCertificates: string[] = [
+		"ses:ListEmailIdentityCertificates",
+	];
 	/** IAM actions required for the ListEmailTemplates API call. */
 	static readonly ListEmailTemplates: string[] = ["ses:ListEmailTemplates"];
 	/** IAM actions required for the ListExportJobs API call. */
@@ -2695,7 +2720,9 @@ export class SesOperations {
 	/** IAM actions required for the UpdateArchive API call. */
 	static readonly UpdateArchive: string[] = ["ses:UpdateArchive"];
 	/** IAM actions required for the UpdateConfigurationSet API call. */
-	static readonly UpdateConfigurationSet: string[] = [];
+	static readonly UpdateConfigurationSet: string[] = [
+		"ses:UpdateConfigurationSet",
+	];
 	/** IAM actions required for the UpdateConfigurationSetEventDestination API call. */
 	static readonly UpdateConfigurationSetEventDestination: string[] = [
 		"iam:PassRole",
@@ -2767,6 +2794,17 @@ export class SesOperations {
  * Condition key constants and builders for ses.
  */
 export class SesConditions {
+	/** Condition keys applicable to the ApplyTrackingConfigurationOverrides action. */
+	static readonly ApplyTrackingConfigurationOverridesConditionKeys: string[] = [
+		"ses:ClickTrackingEnabled",
+		"ses:OpenTrackingEnabled",
+	];
+	/** Condition keys applicable to the AssociateEmailIdentityCertificate action. */
+	static readonly AssociateEmailIdentityCertificateConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"ses:ApiVersion",
+		"ses:FromAddress",
+	];
 	/** Condition keys applicable to the BatchGetMetricData action. */
 	static readonly BatchGetMetricDataConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
@@ -3018,6 +3056,9 @@ export class SesConditions {
 	static readonly DescribeReceiptRuleSetConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
+	/** Condition keys applicable to the DisassociateEmailIdentityCertificate action. */
+	static readonly DisassociateEmailIdentityCertificateConditionKeys: string[] =
+		["aws:ResourceTag/${TagKey}", "ses:ApiVersion", "ses:FromAddress"];
 	/** Condition keys applicable to the GetAccount action. */
 	static readonly actionGetAccountConditionKeys: string[] = ["ses:ApiVersion"];
 	/** Condition keys applicable to the GetAccountSendingEnabled action. */
@@ -3182,6 +3223,11 @@ export class SesConditions {
 	];
 	/** Condition keys applicable to the ListEmailIdentities action. */
 	static readonly ListEmailIdentitiesConditionKeys: string[] = [
+		"ses:ApiVersion",
+	];
+	/** Condition keys applicable to the ListEmailIdentityCertificates action. */
+	static readonly ListEmailIdentityCertificatesConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the ListEmailTemplates action. */
@@ -3462,6 +3508,12 @@ export class SesConditions {
 	static readonly UpdateAccountSendingEnabledConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
+	/** Condition keys applicable to the UpdateConfigurationSet action. */
+	static readonly UpdateConfigurationSetConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"ses:ApiVersion",
+		"ses:ConfigurationSetOptions",
+	];
 	/** Condition keys applicable to the UpdateConfigurationSetEventDestination action. */
 	static readonly UpdateConfigurationSetEventDestinationConditionKeys: string[] =
 		["aws:ResourceTag/${TagKey}", "ses:ApiVersion"];
@@ -3539,6 +3591,10 @@ export class SesConditions {
 	static readonly ADDON_SUBSCRIPTION_ARN = "ses:AddonSubscriptionArn";
 	/** Condition key: ses:ApiVersion (String) */
 	static readonly API_VERSION = "ses:ApiVersion";
+	/** Condition key: ses:ClickTrackingEnabled (String) */
+	static readonly CLICK_TRACKING_ENABLED = "ses:ClickTrackingEnabled";
+	/** Condition key: ses:ConfigurationSetOptions (ArrayOfString) */
+	static readonly CONFIGURATION_SET_OPTIONS = "ses:ConfigurationSetOptions";
 	/** Condition key: ses:ExportSourceType (String) */
 	static readonly EXPORT_SOURCE_TYPE = "ses:ExportSourceType";
 	/** Condition key: ses:FeedbackAddress (String) */
@@ -3557,6 +3613,8 @@ export class SesConditions {
 		"ses:MailManagerTrafficPolicyArn";
 	/** Condition key: ses:MultiRegionEndpointId (String) */
 	static readonly MULTI_REGION_ENDPOINT_ID = "ses:MultiRegionEndpointId";
+	/** Condition key: ses:OpenTrackingEnabled (String) */
+	static readonly OPEN_TRACKING_ENABLED = "ses:OpenTrackingEnabled";
 	/** Condition key: ses:Recipients (ArrayOfString) */
 	static readonly RECIPIENTS = "ses:Recipients";
 	/** Condition key: ses:ReplicaRegion (ArrayOfString) */
@@ -3599,6 +3657,26 @@ export class SesConditions {
 	 */
 	static apiVersion(value: string): Record<string, Record<string, string>> {
 		return { StringEquals: { "ses:ApiVersion": value } };
+	}
+
+	/**
+	 * Generates a condition block for `ses:ClickTrackingEnabled`.
+	 */
+	static clickTrackingEnabled(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "ses:ClickTrackingEnabled": value } };
+	}
+
+	/**
+	 * Generates a condition block for `ses:ConfigurationSetOptions`.
+	 */
+	static configurationSetOptions(
+		values: string[],
+	): Record<string, Record<string, string[]>> {
+		return {
+			"ForAllValues:StringEquals": { "ses:ConfigurationSetOptions": values },
+		};
 	}
 
 	/**
@@ -3669,6 +3747,15 @@ export class SesConditions {
 		value: string,
 	): Record<string, Record<string, string>> {
 		return { StringEquals: { "ses:MultiRegionEndpointId": value } };
+	}
+
+	/**
+	 * Generates a condition block for `ses:OpenTrackingEnabled`.
+	 */
+	static openTrackingEnabled(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "ses:OpenTrackingEnabled": value } };
 	}
 
 	/**

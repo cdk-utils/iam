@@ -3077,6 +3077,8 @@ new ses.SesActions()
 | <code><a href="#@cdk_utils/iam.ses.SesActions.property.AllReadActions">AllReadActions</a></code> | <code>string[]</code> | All read-level actions. |
 | <code><a href="#@cdk_utils/iam.ses.SesActions.property.AllTaggingActions">AllTaggingActions</a></code> | <code>string[]</code> | All tagging-level actions. |
 | <code><a href="#@cdk_utils/iam.ses.SesActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
+| <code><a href="#@cdk_utils/iam.ses.SesActions.property.ApplyTrackingConfigurationOverrides">ApplyTrackingConfigurationOverrides</a></code> | <code>string</code> | [PermissionManagement] ses:ApplyTrackingConfigurationOverrides. |
+| <code><a href="#@cdk_utils/iam.ses.SesActions.property.AssociateEmailIdentityCertificate">AssociateEmailIdentityCertificate</a></code> | <code>string</code> | [Write] ses:AssociateEmailIdentityCertificate. |
 | <code><a href="#@cdk_utils/iam.ses.SesActions.property.BatchGetMetricData">BatchGetMetricData</a></code> | <code>string</code> | [Read] ses:BatchGetMetricData. |
 | <code><a href="#@cdk_utils/iam.ses.SesActions.property.CancelExportJob">CancelExportJob</a></code> | <code>string</code> | [Write] ses:CancelExportJob. |
 | <code><a href="#@cdk_utils/iam.ses.SesActions.property.CloneReceiptRuleSet">CloneReceiptRuleSet</a></code> | <code>string</code> | [Write] ses:CloneReceiptRuleSet. |
@@ -3143,6 +3145,7 @@ new ses.SesActions()
 | <code><a href="#@cdk_utils/iam.ses.SesActions.property.DescribeConfigurationSet">DescribeConfigurationSet</a></code> | <code>string</code> | [Read] ses:DescribeConfigurationSet. |
 | <code><a href="#@cdk_utils/iam.ses.SesActions.property.DescribeReceiptRule">DescribeReceiptRule</a></code> | <code>string</code> | [Read] ses:DescribeReceiptRule. |
 | <code><a href="#@cdk_utils/iam.ses.SesActions.property.DescribeReceiptRuleSet">DescribeReceiptRuleSet</a></code> | <code>string</code> | [Read] ses:DescribeReceiptRuleSet. |
+| <code><a href="#@cdk_utils/iam.ses.SesActions.property.DisassociateEmailIdentityCertificate">DisassociateEmailIdentityCertificate</a></code> | <code>string</code> | [Write] ses:DisassociateEmailIdentityCertificate. |
 | <code><a href="#@cdk_utils/iam.ses.SesActions.property.ListAddonInstances">ListAddonInstances</a></code> | <code>string</code> | [List] ses:ListAddonInstances. |
 | <code><a href="#@cdk_utils/iam.ses.SesActions.property.ListAddonSubscriptions">ListAddonSubscriptions</a></code> | <code>string</code> | [List] ses:ListAddonSubscriptions. |
 | <code><a href="#@cdk_utils/iam.ses.SesActions.property.ListAddressListImportJobs">ListAddressListImportJobs</a></code> | <code>string</code> | [List] ses:ListAddressListImportJobs. |
@@ -3158,6 +3161,7 @@ new ses.SesActions()
 | <code><a href="#@cdk_utils/iam.ses.SesActions.property.ListDeliverabilityTestReports">ListDeliverabilityTestReports</a></code> | <code>string</code> | [List] ses:ListDeliverabilityTestReports. |
 | <code><a href="#@cdk_utils/iam.ses.SesActions.property.ListDomainDeliverabilityCampaigns">ListDomainDeliverabilityCampaigns</a></code> | <code>string</code> | [Read] ses:ListDomainDeliverabilityCampaigns. |
 | <code><a href="#@cdk_utils/iam.ses.SesActions.property.ListEmailIdentities">ListEmailIdentities</a></code> | <code>string</code> | [List] ses:ListEmailIdentities. |
+| <code><a href="#@cdk_utils/iam.ses.SesActions.property.ListEmailIdentityCertificates">ListEmailIdentityCertificates</a></code> | <code>string</code> | [List] ses:ListEmailIdentityCertificates. |
 | <code><a href="#@cdk_utils/iam.ses.SesActions.property.ListEmailTemplates">ListEmailTemplates</a></code> | <code>string</code> | [List] ses:ListEmailTemplates. |
 | <code><a href="#@cdk_utils/iam.ses.SesActions.property.ListExportJobs">ListExportJobs</a></code> | <code>string</code> | [List] ses:ListExportJobs. |
 | <code><a href="#@cdk_utils/iam.ses.SesActions.property.ListIdentities">ListIdentities</a></code> | <code>string</code> | [List] ses:ListIdentities. |
@@ -3228,6 +3232,7 @@ new ses.SesActions()
 | <code><a href="#@cdk_utils/iam.ses.SesActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] ses:UntagResource. |
 | <code><a href="#@cdk_utils/iam.ses.SesActions.property.UpdateAccountSendingEnabled">UpdateAccountSendingEnabled</a></code> | <code>string</code> | [Write] ses:UpdateAccountSendingEnabled. |
 | <code><a href="#@cdk_utils/iam.ses.SesActions.property.UpdateArchive">UpdateArchive</a></code> | <code>string</code> | [Write] ses:UpdateArchive. |
+| <code><a href="#@cdk_utils/iam.ses.SesActions.property.UpdateConfigurationSet">UpdateConfigurationSet</a></code> | <code>string</code> | [Write] ses:UpdateConfigurationSet. |
 | <code><a href="#@cdk_utils/iam.ses.SesActions.property.UpdateConfigurationSetEventDestination">UpdateConfigurationSetEventDestination</a></code> | <code>string</code> | [Write] ses:UpdateConfigurationSetEventDestination. |
 | <code><a href="#@cdk_utils/iam.ses.SesActions.property.UpdateConfigurationSetReputationMetricsEnabled">UpdateConfigurationSetReputationMetricsEnabled</a></code> | <code>string</code> | [Write] ses:UpdateConfigurationSetReputationMetricsEnabled. |
 | <code><a href="#@cdk_utils/iam.ses.SesActions.property.UpdateConfigurationSetSendingEnabled">UpdateConfigurationSetSendingEnabled</a></code> | <code>string</code> | [Write] ses:UpdateConfigurationSetSendingEnabled. |
@@ -3993,6 +3998,30 @@ public readonly AllWriteActions: string[];
 - *Type:* string[]
 
 All write-level actions.
+
+---
+
+##### `ApplyTrackingConfigurationOverrides`<sup>Required</sup> <a name="ApplyTrackingConfigurationOverrides" id="@cdk_utils/iam.ses.SesActions.property.ApplyTrackingConfigurationOverrides"></a>
+
+```typescript
+public readonly ApplyTrackingConfigurationOverrides: string;
+```
+
+- *Type:* string
+
+[PermissionManagement] ses:ApplyTrackingConfigurationOverrides.
+
+---
+
+##### `AssociateEmailIdentityCertificate`<sup>Required</sup> <a name="AssociateEmailIdentityCertificate" id="@cdk_utils/iam.ses.SesActions.property.AssociateEmailIdentityCertificate"></a>
+
+```typescript
+public readonly AssociateEmailIdentityCertificate: string;
+```
+
+- *Type:* string
+
+[Write] ses:AssociateEmailIdentityCertificate.
 
 ---
 
@@ -4788,6 +4817,18 @@ public readonly DescribeReceiptRuleSet: string;
 
 ---
 
+##### `DisassociateEmailIdentityCertificate`<sup>Required</sup> <a name="DisassociateEmailIdentityCertificate" id="@cdk_utils/iam.ses.SesActions.property.DisassociateEmailIdentityCertificate"></a>
+
+```typescript
+public readonly DisassociateEmailIdentityCertificate: string;
+```
+
+- *Type:* string
+
+[Write] ses:DisassociateEmailIdentityCertificate.
+
+---
+
 ##### `ListAddonInstances`<sup>Required</sup> <a name="ListAddonInstances" id="@cdk_utils/iam.ses.SesActions.property.ListAddonInstances"></a>
 
 ```typescript
@@ -4965,6 +5006,18 @@ public readonly ListEmailIdentities: string;
 - *Type:* string
 
 [List] ses:ListEmailIdentities.
+
+---
+
+##### `ListEmailIdentityCertificates`<sup>Required</sup> <a name="ListEmailIdentityCertificates" id="@cdk_utils/iam.ses.SesActions.property.ListEmailIdentityCertificates"></a>
+
+```typescript
+public readonly ListEmailIdentityCertificates: string;
+```
+
+- *Type:* string
+
+[List] ses:ListEmailIdentityCertificates.
 
 ---
 
@@ -5808,6 +5861,18 @@ public readonly UpdateArchive: string;
 
 ---
 
+##### `UpdateConfigurationSet`<sup>Required</sup> <a name="UpdateConfigurationSet" id="@cdk_utils/iam.ses.SesActions.property.UpdateConfigurationSet"></a>
+
+```typescript
+public readonly UpdateConfigurationSet: string;
+```
+
+- *Type:* string
+
+[Write] ses:UpdateConfigurationSet.
+
+---
+
 ##### `UpdateConfigurationSetEventDestination`<sup>Required</sup> <a name="UpdateConfigurationSetEventDestination" id="@cdk_utils/iam.ses.SesActions.property.UpdateConfigurationSetEventDestination"></a>
 
 ```typescript
@@ -6084,6 +6149,8 @@ new ses.SesConditions()
 | --- | --- |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.addonSubscriptionARN">addonSubscriptionARN</a></code> | Generates a condition block for `ses:AddonSubscriptionArn`. |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.apiVersion">apiVersion</a></code> | Generates a condition block for `ses:ApiVersion`. |
+| <code><a href="#@cdk_utils/iam.ses.SesConditions.clickTrackingEnabled">clickTrackingEnabled</a></code> | Generates a condition block for `ses:ClickTrackingEnabled`. |
+| <code><a href="#@cdk_utils/iam.ses.SesConditions.configurationSetOptions">configurationSetOptions</a></code> | Generates a condition block for `ses:ConfigurationSetOptions`. |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.exportSourceType">exportSourceType</a></code> | Generates a condition block for `ses:ExportSourceType`. |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.feedbackAddress">feedbackAddress</a></code> | Generates a condition block for `ses:FeedbackAddress`. |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.fromAddress">fromAddress</a></code> | Generates a condition block for `ses:FromAddress`. |
@@ -6092,6 +6159,7 @@ new ses.SesConditions()
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.mailManagerRuleSetARN">mailManagerRuleSetARN</a></code> | Generates a condition block for `ses:MailManagerRuleSetArn`. |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.mailManagerTrafficPolicyARN">mailManagerTrafficPolicyARN</a></code> | Generates a condition block for `ses:MailManagerTrafficPolicyArn`. |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.multiRegionEndpointId">multiRegionEndpointId</a></code> | Generates a condition block for `ses:MultiRegionEndpointId`. |
+| <code><a href="#@cdk_utils/iam.ses.SesConditions.openTrackingEnabled">openTrackingEnabled</a></code> | Generates a condition block for `ses:OpenTrackingEnabled`. |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.recipients">recipients</a></code> | Generates a condition block for `ses:Recipients`. |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.replicaRegion">replicaRegion</a></code> | Generates a condition block for `ses:ReplicaRegion`. |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.requestTag">requestTag</a></code> | Generates a condition block for `aws:RequestTag/${TagKey}`. |
@@ -6130,6 +6198,38 @@ Generates a condition block for `ses:ApiVersion`.
 ###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.ses.SesConditions.apiVersion.parameter.value"></a>
 
 - *Type:* string
+
+---
+
+##### `clickTrackingEnabled` <a name="clickTrackingEnabled" id="@cdk_utils/iam.ses.SesConditions.clickTrackingEnabled"></a>
+
+```typescript
+import { ses } from '@cdk_utils/iam'
+
+ses.SesConditions.clickTrackingEnabled(value: string)
+```
+
+Generates a condition block for `ses:ClickTrackingEnabled`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.ses.SesConditions.clickTrackingEnabled.parameter.value"></a>
+
+- *Type:* string
+
+---
+
+##### `configurationSetOptions` <a name="configurationSetOptions" id="@cdk_utils/iam.ses.SesConditions.configurationSetOptions"></a>
+
+```typescript
+import { ses } from '@cdk_utils/iam'
+
+ses.SesConditions.configurationSetOptions(values: string[])
+```
+
+Generates a condition block for `ses:ConfigurationSetOptions`.
+
+###### `values`<sup>Required</sup> <a name="values" id="@cdk_utils/iam.ses.SesConditions.configurationSetOptions.parameter.values"></a>
+
+- *Type:* string[]
 
 ---
 
@@ -6256,6 +6356,22 @@ ses.SesConditions.multiRegionEndpointId(value: string)
 Generates a condition block for `ses:MultiRegionEndpointId`.
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.ses.SesConditions.multiRegionEndpointId.parameter.value"></a>
+
+- *Type:* string
+
+---
+
+##### `openTrackingEnabled` <a name="openTrackingEnabled" id="@cdk_utils/iam.ses.SesConditions.openTrackingEnabled"></a>
+
+```typescript
+import { ses } from '@cdk_utils/iam'
+
+ses.SesConditions.openTrackingEnabled(value: string)
+```
+
+Generates a condition block for `ses:OpenTrackingEnabled`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.ses.SesConditions.openTrackingEnabled.parameter.value"></a>
 
 - *Type:* string
 
@@ -6405,12 +6521,16 @@ Generates a condition block for `ses:TenantName`.
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.property.actionSetReceiptRulePositionConditionKeys">actionSetReceiptRulePositionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the SetReceiptRulePosition action. |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.property.ADDON_SUBSCRIPTION_ARN">ADDON_SUBSCRIPTION_ARN</a></code> | <code>string</code> | Condition key: ses:AddonSubscriptionArn (ARN). |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.property.API_VERSION">API_VERSION</a></code> | <code>string</code> | Condition key: ses:ApiVersion (String). |
+| <code><a href="#@cdk_utils/iam.ses.SesConditions.property.ApplyTrackingConfigurationOverridesConditionKeys">ApplyTrackingConfigurationOverridesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ApplyTrackingConfigurationOverrides action. |
+| <code><a href="#@cdk_utils/iam.ses.SesConditions.property.AssociateEmailIdentityCertificateConditionKeys">AssociateEmailIdentityCertificateConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the AssociateEmailIdentityCertificate action. |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.property.AWS_REQUEST_TAG">AWS_REQUEST_TAG</a></code> | <code>string</code> | Condition key: aws:RequestTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.property.AWS_RESOURCE_TAG">AWS_RESOURCE_TAG</a></code> | <code>string</code> | Condition key: aws:ResourceTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.property.AWS_TAG_KEYS">AWS_TAG_KEYS</a></code> | <code>string</code> | Condition key: aws:TagKeys (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.property.BatchGetMetricDataConditionKeys">BatchGetMetricDataConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the BatchGetMetricData action. |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.property.CancelExportJobConditionKeys">CancelExportJobConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CancelExportJob action. |
+| <code><a href="#@cdk_utils/iam.ses.SesConditions.property.CLICK_TRACKING_ENABLED">CLICK_TRACKING_ENABLED</a></code> | <code>string</code> | Condition key: ses:ClickTrackingEnabled (String). |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.property.CloneReceiptRuleSetConditionKeys">CloneReceiptRuleSetConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CloneReceiptRuleSet action. |
+| <code><a href="#@cdk_utils/iam.ses.SesConditions.property.CONFIGURATION_SET_OPTIONS">CONFIGURATION_SET_OPTIONS</a></code> | <code>string</code> | Condition key: ses:ConfigurationSetOptions (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.property.CreateAddonInstanceConditionKeys">CreateAddonInstanceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateAddonInstance action. |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.property.CreateAddonSubscriptionConditionKeys">CreateAddonSubscriptionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateAddonSubscription action. |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.property.CreateAddressListConditionKeys">CreateAddressListConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateAddressList action. |
@@ -6464,6 +6584,7 @@ Generates a condition block for `ses:TenantName`.
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.property.DescribeConfigurationSetConditionKeys">DescribeConfigurationSetConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeConfigurationSet action. |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.property.DescribeReceiptRuleConditionKeys">DescribeReceiptRuleConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeReceiptRule action. |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.property.DescribeReceiptRuleSetConditionKeys">DescribeReceiptRuleSetConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeReceiptRuleSet action. |
+| <code><a href="#@cdk_utils/iam.ses.SesConditions.property.DisassociateEmailIdentityCertificateConditionKeys">DisassociateEmailIdentityCertificateConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DisassociateEmailIdentityCertificate action. |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.property.EXPORT_SOURCE_TYPE">EXPORT_SOURCE_TYPE</a></code> | <code>string</code> | Condition key: ses:ExportSourceType (String). |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.property.FEEDBACK_ADDRESS">FEEDBACK_ADDRESS</a></code> | <code>string</code> | Condition key: ses:FeedbackAddress (String). |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.property.FROM_ADDRESS">FROM_ADDRESS</a></code> | <code>string</code> | Condition key: ses:FromAddress (String). |
@@ -6476,6 +6597,7 @@ Generates a condition block for `ses:TenantName`.
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.property.ListDeliverabilityTestReportsConditionKeys">ListDeliverabilityTestReportsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListDeliverabilityTestReports action. |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.property.ListDomainDeliverabilityCampaignsConditionKeys">ListDomainDeliverabilityCampaignsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListDomainDeliverabilityCampaigns action. |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.property.ListEmailIdentitiesConditionKeys">ListEmailIdentitiesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListEmailIdentities action. |
+| <code><a href="#@cdk_utils/iam.ses.SesConditions.property.ListEmailIdentityCertificatesConditionKeys">ListEmailIdentityCertificatesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListEmailIdentityCertificates action. |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.property.ListEmailTemplatesConditionKeys">ListEmailTemplatesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListEmailTemplates action. |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.property.ListExportJobsConditionKeys">ListExportJobsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListExportJobs action. |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.property.ListIdentitiesConditionKeys">ListIdentitiesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListIdentities action. |
@@ -6497,6 +6619,7 @@ Generates a condition block for `ses:TenantName`.
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.property.MAIL_MANAGER_RULE_SET_ARN">MAIL_MANAGER_RULE_SET_ARN</a></code> | <code>string</code> | Condition key: ses:MailManagerRuleSetArn (ARN). |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.property.MAIL_MANAGER_TRAFFIC_POLICY_ARN">MAIL_MANAGER_TRAFFIC_POLICY_ARN</a></code> | <code>string</code> | Condition key: ses:MailManagerTrafficPolicyArn (ARN). |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.property.MULTI_REGION_ENDPOINT_ID">MULTI_REGION_ENDPOINT_ID</a></code> | <code>string</code> | Condition key: ses:MultiRegionEndpointId (String). |
+| <code><a href="#@cdk_utils/iam.ses.SesConditions.property.OPEN_TRACKING_ENABLED">OPEN_TRACKING_ENABLED</a></code> | <code>string</code> | Condition key: ses:OpenTrackingEnabled (String). |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.property.PutAccountDedicatedIpWarmupAttributesConditionKeys">PutAccountDedicatedIpWarmupAttributesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutAccountDedicatedIpWarmupAttributes action. |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.property.PutAccountDetailsConditionKeys">PutAccountDetailsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutAccountDetails action. |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.property.PutAccountPricingAttributesConditionKeys">PutAccountPricingAttributesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutAccountPricingAttributes action. |
@@ -6539,6 +6662,7 @@ Generates a condition block for `ses:TenantName`.
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.property.TestRenderTemplateConditionKeys">TestRenderTemplateConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TestRenderTemplate action. |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.property.UntagResourceConditionKeys">UntagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UntagResource action. |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.property.UpdateAccountSendingEnabledConditionKeys">UpdateAccountSendingEnabledConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateAccountSendingEnabled action. |
+| <code><a href="#@cdk_utils/iam.ses.SesConditions.property.UpdateConfigurationSetConditionKeys">UpdateConfigurationSetConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateConfigurationSet action. |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.property.UpdateConfigurationSetEventDestinationConditionKeys">UpdateConfigurationSetEventDestinationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateConfigurationSetEventDestination action. |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.property.UpdateConfigurationSetReputationMetricsEnabledConditionKeys">UpdateConfigurationSetReputationMetricsEnabledConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateConfigurationSetReputationMetricsEnabled action. |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.property.UpdateConfigurationSetSendingEnabledConditionKeys">UpdateConfigurationSetSendingEnabledConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateConfigurationSetSendingEnabled action. |
@@ -7076,6 +7200,30 @@ Condition key: ses:ApiVersion (String).
 
 ---
 
+##### `ApplyTrackingConfigurationOverridesConditionKeys`<sup>Required</sup> <a name="ApplyTrackingConfigurationOverridesConditionKeys" id="@cdk_utils/iam.ses.SesConditions.property.ApplyTrackingConfigurationOverridesConditionKeys"></a>
+
+```typescript
+public readonly ApplyTrackingConfigurationOverridesConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ApplyTrackingConfigurationOverrides action.
+
+---
+
+##### `AssociateEmailIdentityCertificateConditionKeys`<sup>Required</sup> <a name="AssociateEmailIdentityCertificateConditionKeys" id="@cdk_utils/iam.ses.SesConditions.property.AssociateEmailIdentityCertificateConditionKeys"></a>
+
+```typescript
+public readonly AssociateEmailIdentityCertificateConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the AssociateEmailIdentityCertificate action.
+
+---
+
 ##### `AWS_REQUEST_TAG`<sup>Required</sup> <a name="AWS_REQUEST_TAG" id="@cdk_utils/iam.ses.SesConditions.property.AWS_REQUEST_TAG"></a>
 
 ```typescript
@@ -7136,6 +7284,18 @@ Condition keys applicable to the CancelExportJob action.
 
 ---
 
+##### `CLICK_TRACKING_ENABLED`<sup>Required</sup> <a name="CLICK_TRACKING_ENABLED" id="@cdk_utils/iam.ses.SesConditions.property.CLICK_TRACKING_ENABLED"></a>
+
+```typescript
+public readonly CLICK_TRACKING_ENABLED: string;
+```
+
+- *Type:* string
+
+Condition key: ses:ClickTrackingEnabled (String).
+
+---
+
 ##### `CloneReceiptRuleSetConditionKeys`<sup>Required</sup> <a name="CloneReceiptRuleSetConditionKeys" id="@cdk_utils/iam.ses.SesConditions.property.CloneReceiptRuleSetConditionKeys"></a>
 
 ```typescript
@@ -7145,6 +7305,18 @@ public readonly CloneReceiptRuleSetConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the CloneReceiptRuleSet action.
+
+---
+
+##### `CONFIGURATION_SET_OPTIONS`<sup>Required</sup> <a name="CONFIGURATION_SET_OPTIONS" id="@cdk_utils/iam.ses.SesConditions.property.CONFIGURATION_SET_OPTIONS"></a>
+
+```typescript
+public readonly CONFIGURATION_SET_OPTIONS: string;
+```
+
+- *Type:* string
+
+Condition key: ses:ConfigurationSetOptions (ArrayOfString).
 
 ---
 
@@ -7784,6 +7956,18 @@ Condition keys applicable to the DescribeReceiptRuleSet action.
 
 ---
 
+##### `DisassociateEmailIdentityCertificateConditionKeys`<sup>Required</sup> <a name="DisassociateEmailIdentityCertificateConditionKeys" id="@cdk_utils/iam.ses.SesConditions.property.DisassociateEmailIdentityCertificateConditionKeys"></a>
+
+```typescript
+public readonly DisassociateEmailIdentityCertificateConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DisassociateEmailIdentityCertificate action.
+
+---
+
 ##### `EXPORT_SOURCE_TYPE`<sup>Required</sup> <a name="EXPORT_SOURCE_TYPE" id="@cdk_utils/iam.ses.SesConditions.property.EXPORT_SOURCE_TYPE"></a>
 
 ```typescript
@@ -7925,6 +8109,18 @@ public readonly ListEmailIdentitiesConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the ListEmailIdentities action.
+
+---
+
+##### `ListEmailIdentityCertificatesConditionKeys`<sup>Required</sup> <a name="ListEmailIdentityCertificatesConditionKeys" id="@cdk_utils/iam.ses.SesConditions.property.ListEmailIdentityCertificatesConditionKeys"></a>
+
+```typescript
+public readonly ListEmailIdentityCertificatesConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ListEmailIdentityCertificates action.
 
 ---
 
@@ -8177,6 +8373,18 @@ public readonly MULTI_REGION_ENDPOINT_ID: string;
 - *Type:* string
 
 Condition key: ses:MultiRegionEndpointId (String).
+
+---
+
+##### `OPEN_TRACKING_ENABLED`<sup>Required</sup> <a name="OPEN_TRACKING_ENABLED" id="@cdk_utils/iam.ses.SesConditions.property.OPEN_TRACKING_ENABLED"></a>
+
+```typescript
+public readonly OPEN_TRACKING_ENABLED: string;
+```
+
+- *Type:* string
+
+Condition key: ses:OpenTrackingEnabled (String).
 
 ---
 
@@ -8681,6 +8889,18 @@ public readonly UpdateAccountSendingEnabledConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the UpdateAccountSendingEnabled action.
+
+---
+
+##### `UpdateConfigurationSetConditionKeys`<sup>Required</sup> <a name="UpdateConfigurationSetConditionKeys" id="@cdk_utils/iam.ses.SesConditions.property.UpdateConfigurationSetConditionKeys"></a>
+
+```typescript
+public readonly UpdateConfigurationSetConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UpdateConfigurationSet action.
 
 ---
 

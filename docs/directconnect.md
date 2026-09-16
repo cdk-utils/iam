@@ -419,6 +419,126 @@ Defaults to "*".
 
 ---
 
+### DirectConnectDxResiliencyGroupArnComponents <a name="DirectConnectDxResiliencyGroupArnComponents" id="@cdk_utils/iam.directconnect.DirectConnectDxResiliencyGroupArnComponents"></a>
+
+Parsed components of a dx-resiliency-group ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.directconnect.DirectConnectDxResiliencyGroupArnComponents.Initializer"></a>
+
+```typescript
+import { directconnect } from '@cdk_utils/iam'
+
+const directConnectDxResiliencyGroupArnComponents: directconnect.DirectConnectDxResiliencyGroupArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.directconnect.DirectConnectDxResiliencyGroupArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.directconnect.DirectConnectDxResiliencyGroupArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.directconnect.DirectConnectDxResiliencyGroupArnComponents.property.resiliencyGroupId">resiliencyGroupId</a></code> | <code>string</code> | The ResiliencyGroupId component. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.directconnect.DirectConnectDxResiliencyGroupArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.directconnect.DirectConnectDxResiliencyGroupArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `resiliencyGroupId`<sup>Required</sup> <a name="resiliencyGroupId" id="@cdk_utils/iam.directconnect.DirectConnectDxResiliencyGroupArnComponents.property.resiliencyGroupId"></a>
+
+```typescript
+public readonly resiliencyGroupId: string;
+```
+
+- *Type:* string
+
+The ResiliencyGroupId component.
+
+---
+
+### DirectConnectDxResiliencyGroupArnProps <a name="DirectConnectDxResiliencyGroupArnProps" id="@cdk_utils/iam.directconnect.DirectConnectDxResiliencyGroupArnProps"></a>
+
+Properties for building a dx-resiliency-group ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.directconnect.DirectConnectDxResiliencyGroupArnProps.Initializer"></a>
+
+```typescript
+import { directconnect } from '@cdk_utils/iam'
+
+const directConnectDxResiliencyGroupArnProps: directconnect.DirectConnectDxResiliencyGroupArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.directconnect.DirectConnectDxResiliencyGroupArnProps.property.resiliencyGroupId">resiliencyGroupId</a></code> | <code>string</code> | The ResiliencyGroupId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.directconnect.DirectConnectDxResiliencyGroupArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.directconnect.DirectConnectDxResiliencyGroupArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+
+---
+
+##### `resiliencyGroupId`<sup>Required</sup> <a name="resiliencyGroupId" id="@cdk_utils/iam.directconnect.DirectConnectDxResiliencyGroupArnProps.property.resiliencyGroupId"></a>
+
+```typescript
+public readonly resiliencyGroupId: string;
+```
+
+- *Type:* string
+
+The ResiliencyGroupId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.directconnect.DirectConnectDxResiliencyGroupArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.directconnect.DirectConnectDxResiliencyGroupArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
 ### DirectConnectDxvifArnComponents <a name="DirectConnectDxvifArnComponents" id="@cdk_utils/iam.directconnect.DirectConnectDxvifArnComponents"></a>
 
 Parsed components of a dxvif ARN.
@@ -594,6 +714,7 @@ new directconnect.DirectConnectActions()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.AcceptDirectConnectGatewayAssociationProposal">AcceptDirectConnectGatewayAssociationProposal</a></code> | <code>string</code> | [Write] directconnect:AcceptDirectConnectGatewayAssociationProposal. |
+| <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.actionGetResiliencyGroup">actionGetResiliencyGroup</a></code> | <code>string</code> | [Read] directconnect:GetResiliencyGroup. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.AllListActions">AllListActions</a></code> | <code>string[]</code> | All list-level actions. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.AllocateConnectionOnInterconnect">AllocateConnectionOnInterconnect</a></code> | <code>string</code> | [Write] directconnect:AllocateConnectionOnInterconnect. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.AllocateHostedConnection">AllocateHostedConnection</a></code> | <code>string</code> | [Write] directconnect:AllocateHostedConnection. |
@@ -604,6 +725,7 @@ new directconnect.DirectConnectActions()
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.AllReadActions">AllReadActions</a></code> | <code>string[]</code> | All read-level actions. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.AllTaggingActions">AllTaggingActions</a></code> | <code>string[]</code> | All tagging-level actions. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
+| <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.AssociateConnectionsToResiliencyGroup">AssociateConnectionsToResiliencyGroup</a></code> | <code>string</code> | [Write] directconnect:AssociateConnectionsToResiliencyGroup. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.AssociateConnectionWithLag">AssociateConnectionWithLag</a></code> | <code>string</code> | [Write] directconnect:AssociateConnectionWithLag. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.AssociateHostedConnection">AssociateHostedConnection</a></code> | <code>string</code> | [Write] directconnect:AssociateHostedConnection. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.AssociateMacSecKey">AssociateMacSecKey</a></code> | <code>string</code> | [Write] directconnect:AssociateMacSecKey. |
@@ -622,6 +744,7 @@ new directconnect.DirectConnectActions()
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.CreateLag">CreateLag</a></code> | <code>string</code> | [Write] directconnect:CreateLag. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.CreatePrivateVirtualInterface">CreatePrivateVirtualInterface</a></code> | <code>string</code> | [Write] directconnect:CreatePrivateVirtualInterface. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.CreatePublicVirtualInterface">CreatePublicVirtualInterface</a></code> | <code>string</code> | [Write] directconnect:CreatePublicVirtualInterface. |
+| <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.CreateResiliencyGroup">CreateResiliencyGroup</a></code> | <code>string</code> | [Write] directconnect:CreateResiliencyGroup. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.CreateTransitVirtualInterface">CreateTransitVirtualInterface</a></code> | <code>string</code> | [Write] directconnect:CreateTransitVirtualInterface. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.DeleteBGPPeer">DeleteBGPPeer</a></code> | <code>string</code> | [Write] directconnect:DeleteBGPPeer. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.DeleteConnection">DeleteConnection</a></code> | <code>string</code> | [Write] directconnect:DeleteConnection. |
@@ -630,6 +753,7 @@ new directconnect.DirectConnectActions()
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.DeleteDirectConnectGatewayAssociationProposal">DeleteDirectConnectGatewayAssociationProposal</a></code> | <code>string</code> | [Write] directconnect:DeleteDirectConnectGatewayAssociationProposal. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.DeleteInterconnect">DeleteInterconnect</a></code> | <code>string</code> | [Write] directconnect:DeleteInterconnect. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.DeleteLag">DeleteLag</a></code> | <code>string</code> | [Write] directconnect:DeleteLag. |
+| <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.DeleteResiliencyGroup">DeleteResiliencyGroup</a></code> | <code>string</code> | [Write] directconnect:DeleteResiliencyGroup. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.DeleteVirtualInterface">DeleteVirtualInterface</a></code> | <code>string</code> | [Write] directconnect:DeleteVirtualInterface. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.DescribeConnectionLoa">DescribeConnectionLoa</a></code> | <code>string</code> | [Read] directconnect:DescribeConnectionLoa. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.DescribeConnections">DescribeConnections</a></code> | <code>string</code> | [Read] directconnect:DescribeConnections. |
@@ -650,7 +774,10 @@ new directconnect.DirectConnectActions()
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.DescribeVirtualGateways">DescribeVirtualGateways</a></code> | <code>string</code> | [Read] directconnect:DescribeVirtualGateways. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.DescribeVirtualInterfaces">DescribeVirtualInterfaces</a></code> | <code>string</code> | [Read] directconnect:DescribeVirtualInterfaces. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.DisassociateConnectionFromLag">DisassociateConnectionFromLag</a></code> | <code>string</code> | [Write] directconnect:DisassociateConnectionFromLag. |
+| <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.DisassociateConnectionsFromResiliencyGroup">DisassociateConnectionsFromResiliencyGroup</a></code> | <code>string</code> | [Write] directconnect:DisassociateConnectionsFromResiliencyGroup. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.DisassociateMacSecKey">DisassociateMacSecKey</a></code> | <code>string</code> | [Write] directconnect:DisassociateMacSecKey. |
+| <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.ListResiliencyGroupAssociations">ListResiliencyGroupAssociations</a></code> | <code>string</code> | [List] directconnect:ListResiliencyGroupAssociations. |
+| <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.ListResiliencyGroups">ListResiliencyGroups</a></code> | <code>string</code> | [List] directconnect:ListResiliencyGroups. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.ListVirtualInterfaceRoutes">ListVirtualInterfaceRoutes</a></code> | <code>string</code> | [List] directconnect:ListVirtualInterfaceRoutes. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.ListVirtualInterfaceTestHistory">ListVirtualInterfaceTestHistory</a></code> | <code>string</code> | [List] directconnect:ListVirtualInterfaceTestHistory. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
@@ -659,9 +786,11 @@ new directconnect.DirectConnectActions()
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] directconnect:TagResource. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] directconnect:UntagResource. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.UpdateConnection">UpdateConnection</a></code> | <code>string</code> | [Write] directconnect:UpdateConnection. |
+| <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.UpdateConnectionsBillingMode">UpdateConnectionsBillingMode</a></code> | <code>string</code> | [Write] directconnect:UpdateConnectionsBillingMode. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.UpdateDirectConnectGateway">UpdateDirectConnectGateway</a></code> | <code>string</code> | [Write] directconnect:UpdateDirectConnectGateway. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.UpdateDirectConnectGatewayAssociation">UpdateDirectConnectGatewayAssociation</a></code> | <code>string</code> | [Write] directconnect:UpdateDirectConnectGatewayAssociation. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.UpdateLag">UpdateLag</a></code> | <code>string</code> | [Write] directconnect:UpdateLag. |
+| <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.UpdateResiliencyGroup">UpdateResiliencyGroup</a></code> | <code>string</code> | [Write] directconnect:UpdateResiliencyGroup. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectActions.property.UpdateVirtualInterfaceAttributes">UpdateVirtualInterfaceAttributes</a></code> | <code>string</code> | [Write] directconnect:UpdateVirtualInterfaceAttributes. |
 
 ---
@@ -675,6 +804,18 @@ public readonly AcceptDirectConnectGatewayAssociationProposal: string;
 - *Type:* string
 
 [Write] directconnect:AcceptDirectConnectGatewayAssociationProposal.
+
+---
+
+##### `actionGetResiliencyGroup`<sup>Required</sup> <a name="actionGetResiliencyGroup" id="@cdk_utils/iam.directconnect.DirectConnectActions.property.actionGetResiliencyGroup"></a>
+
+```typescript
+public readonly actionGetResiliencyGroup: string;
+```
+
+- *Type:* string
+
+[Read] directconnect:GetResiliencyGroup.
 
 ---
 
@@ -795,6 +936,18 @@ public readonly AllWriteActions: string[];
 - *Type:* string[]
 
 All write-level actions.
+
+---
+
+##### `AssociateConnectionsToResiliencyGroup`<sup>Required</sup> <a name="AssociateConnectionsToResiliencyGroup" id="@cdk_utils/iam.directconnect.DirectConnectActions.property.AssociateConnectionsToResiliencyGroup"></a>
+
+```typescript
+public readonly AssociateConnectionsToResiliencyGroup: string;
+```
+
+- *Type:* string
+
+[Write] directconnect:AssociateConnectionsToResiliencyGroup.
 
 ---
 
@@ -1014,6 +1167,18 @@ public readonly CreatePublicVirtualInterface: string;
 
 ---
 
+##### `CreateResiliencyGroup`<sup>Required</sup> <a name="CreateResiliencyGroup" id="@cdk_utils/iam.directconnect.DirectConnectActions.property.CreateResiliencyGroup"></a>
+
+```typescript
+public readonly CreateResiliencyGroup: string;
+```
+
+- *Type:* string
+
+[Write] directconnect:CreateResiliencyGroup.
+
+---
+
 ##### `CreateTransitVirtualInterface`<sup>Required</sup> <a name="CreateTransitVirtualInterface" id="@cdk_utils/iam.directconnect.DirectConnectActions.property.CreateTransitVirtualInterface"></a>
 
 ```typescript
@@ -1107,6 +1272,18 @@ public readonly DeleteLag: string;
 - *Type:* string
 
 [Write] directconnect:DeleteLag.
+
+---
+
+##### `DeleteResiliencyGroup`<sup>Required</sup> <a name="DeleteResiliencyGroup" id="@cdk_utils/iam.directconnect.DirectConnectActions.property.DeleteResiliencyGroup"></a>
+
+```typescript
+public readonly DeleteResiliencyGroup: string;
+```
+
+- *Type:* string
+
+[Write] directconnect:DeleteResiliencyGroup.
 
 ---
 
@@ -1350,6 +1527,18 @@ public readonly DisassociateConnectionFromLag: string;
 
 ---
 
+##### `DisassociateConnectionsFromResiliencyGroup`<sup>Required</sup> <a name="DisassociateConnectionsFromResiliencyGroup" id="@cdk_utils/iam.directconnect.DirectConnectActions.property.DisassociateConnectionsFromResiliencyGroup"></a>
+
+```typescript
+public readonly DisassociateConnectionsFromResiliencyGroup: string;
+```
+
+- *Type:* string
+
+[Write] directconnect:DisassociateConnectionsFromResiliencyGroup.
+
+---
+
 ##### `DisassociateMacSecKey`<sup>Required</sup> <a name="DisassociateMacSecKey" id="@cdk_utils/iam.directconnect.DirectConnectActions.property.DisassociateMacSecKey"></a>
 
 ```typescript
@@ -1359,6 +1548,30 @@ public readonly DisassociateMacSecKey: string;
 - *Type:* string
 
 [Write] directconnect:DisassociateMacSecKey.
+
+---
+
+##### `ListResiliencyGroupAssociations`<sup>Required</sup> <a name="ListResiliencyGroupAssociations" id="@cdk_utils/iam.directconnect.DirectConnectActions.property.ListResiliencyGroupAssociations"></a>
+
+```typescript
+public readonly ListResiliencyGroupAssociations: string;
+```
+
+- *Type:* string
+
+[List] directconnect:ListResiliencyGroupAssociations.
+
+---
+
+##### `ListResiliencyGroups`<sup>Required</sup> <a name="ListResiliencyGroups" id="@cdk_utils/iam.directconnect.DirectConnectActions.property.ListResiliencyGroups"></a>
+
+```typescript
+public readonly ListResiliencyGroups: string;
+```
+
+- *Type:* string
+
+[List] directconnect:ListResiliencyGroups.
 
 ---
 
@@ -1458,6 +1671,18 @@ public readonly UpdateConnection: string;
 
 ---
 
+##### `UpdateConnectionsBillingMode`<sup>Required</sup> <a name="UpdateConnectionsBillingMode" id="@cdk_utils/iam.directconnect.DirectConnectActions.property.UpdateConnectionsBillingMode"></a>
+
+```typescript
+public readonly UpdateConnectionsBillingMode: string;
+```
+
+- *Type:* string
+
+[Write] directconnect:UpdateConnectionsBillingMode.
+
+---
+
 ##### `UpdateDirectConnectGateway`<sup>Required</sup> <a name="UpdateDirectConnectGateway" id="@cdk_utils/iam.directconnect.DirectConnectActions.property.UpdateDirectConnectGateway"></a>
 
 ```typescript
@@ -1491,6 +1716,18 @@ public readonly UpdateLag: string;
 - *Type:* string
 
 [Write] directconnect:UpdateLag.
+
+---
+
+##### `UpdateResiliencyGroup`<sup>Required</sup> <a name="UpdateResiliencyGroup" id="@cdk_utils/iam.directconnect.DirectConnectActions.property.UpdateResiliencyGroup"></a>
+
+```typescript
+public readonly UpdateResiliencyGroup: string;
+```
+
+- *Type:* string
+
+[Write] directconnect:UpdateResiliencyGroup.
 
 ---
 
@@ -1600,6 +1837,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectConditions.property.CreateLagConditionKeys">CreateLagConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateLag action. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectConditions.property.CreatePrivateVirtualInterfaceConditionKeys">CreatePrivateVirtualInterfaceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreatePrivateVirtualInterface action. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectConditions.property.CreatePublicVirtualInterfaceConditionKeys">CreatePublicVirtualInterfaceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreatePublicVirtualInterface action. |
+| <code><a href="#@cdk_utils/iam.directconnect.DirectConnectConditions.property.CreateResiliencyGroupConditionKeys">CreateResiliencyGroupConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateResiliencyGroup action. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectConditions.property.CreateTransitVirtualInterfaceConditionKeys">CreateTransitVirtualInterfaceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateTransitVirtualInterface action. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectConditions.property.TagResourceConditionKeys">TagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TagResource action. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectConditions.property.UntagResourceConditionKeys">UntagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UntagResource action. |
@@ -1762,6 +2000,18 @@ Condition keys applicable to the CreatePublicVirtualInterface action.
 
 ---
 
+##### `CreateResiliencyGroupConditionKeys`<sup>Required</sup> <a name="CreateResiliencyGroupConditionKeys" id="@cdk_utils/iam.directconnect.DirectConnectConditions.property.CreateResiliencyGroupConditionKeys"></a>
+
+```typescript
+public readonly CreateResiliencyGroupConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateResiliencyGroup action.
+
+---
+
 ##### `CreateTransitVirtualInterfaceConditionKeys`<sup>Required</sup> <a name="CreateTransitVirtualInterfaceConditionKeys" id="@cdk_utils/iam.directconnect.DirectConnectConditions.property.CreateTransitVirtualInterfaceConditionKeys"></a>
 
 ```typescript
@@ -1828,6 +2078,7 @@ new directconnect.DirectConnectOperations()
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectOperations.property.AllocatePrivateVirtualInterface">AllocatePrivateVirtualInterface</a></code> | <code>string[]</code> | IAM actions required for the AllocatePrivateVirtualInterface API call. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectOperations.property.AllocatePublicVirtualInterface">AllocatePublicVirtualInterface</a></code> | <code>string[]</code> | IAM actions required for the AllocatePublicVirtualInterface API call. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectOperations.property.AllocateTransitVirtualInterface">AllocateTransitVirtualInterface</a></code> | <code>string[]</code> | IAM actions required for the AllocateTransitVirtualInterface API call. |
+| <code><a href="#@cdk_utils/iam.directconnect.DirectConnectOperations.property.AssociateConnectionsToResiliencyGroup">AssociateConnectionsToResiliencyGroup</a></code> | <code>string[]</code> | IAM actions required for the AssociateConnectionsToResiliencyGroup API call. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectOperations.property.AssociateConnectionWithLag">AssociateConnectionWithLag</a></code> | <code>string[]</code> | IAM actions required for the AssociateConnectionWithLag API call. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectOperations.property.AssociateHostedConnection">AssociateHostedConnection</a></code> | <code>string[]</code> | IAM actions required for the AssociateHostedConnection API call. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectOperations.property.AssociateMacSecKey">AssociateMacSecKey</a></code> | <code>string[]</code> | IAM actions required for the AssociateMacSecKey API call. |
@@ -1846,6 +2097,7 @@ new directconnect.DirectConnectOperations()
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectOperations.property.CreateLag">CreateLag</a></code> | <code>string[]</code> | IAM actions required for the CreateLag API call. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectOperations.property.CreatePrivateVirtualInterface">CreatePrivateVirtualInterface</a></code> | <code>string[]</code> | IAM actions required for the CreatePrivateVirtualInterface API call. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectOperations.property.CreatePublicVirtualInterface">CreatePublicVirtualInterface</a></code> | <code>string[]</code> | IAM actions required for the CreatePublicVirtualInterface API call. |
+| <code><a href="#@cdk_utils/iam.directconnect.DirectConnectOperations.property.CreateResiliencyGroup">CreateResiliencyGroup</a></code> | <code>string[]</code> | IAM actions required for the CreateResiliencyGroup API call. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectOperations.property.CreateTransitVirtualInterface">CreateTransitVirtualInterface</a></code> | <code>string[]</code> | IAM actions required for the CreateTransitVirtualInterface API call. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectOperations.property.DeleteBGPPeer">DeleteBGPPeer</a></code> | <code>string[]</code> | IAM actions required for the DeleteBGPPeer API call. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectOperations.property.DeleteConnection">DeleteConnection</a></code> | <code>string[]</code> | IAM actions required for the DeleteConnection API call. |
@@ -1854,6 +2106,7 @@ new directconnect.DirectConnectOperations()
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectOperations.property.DeleteDirectConnectGatewayAssociationProposal">DeleteDirectConnectGatewayAssociationProposal</a></code> | <code>string[]</code> | IAM actions required for the DeleteDirectConnectGatewayAssociationProposal API call. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectOperations.property.DeleteInterconnect">DeleteInterconnect</a></code> | <code>string[]</code> | IAM actions required for the DeleteInterconnect API call. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectOperations.property.DeleteLag">DeleteLag</a></code> | <code>string[]</code> | IAM actions required for the DeleteLag API call. |
+| <code><a href="#@cdk_utils/iam.directconnect.DirectConnectOperations.property.DeleteResiliencyGroup">DeleteResiliencyGroup</a></code> | <code>string[]</code> | IAM actions required for the DeleteResiliencyGroup API call. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectOperations.property.DeleteVirtualInterface">DeleteVirtualInterface</a></code> | <code>string[]</code> | IAM actions required for the DeleteVirtualInterface API call. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectOperations.property.DescribeConnectionLoa">DescribeConnectionLoa</a></code> | <code>string[]</code> | IAM actions required for the DescribeConnectionLoa API call. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectOperations.property.DescribeConnections">DescribeConnections</a></code> | <code>string[]</code> | IAM actions required for the DescribeConnections API call. |
@@ -1874,17 +2127,23 @@ new directconnect.DirectConnectOperations()
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectOperations.property.DescribeVirtualGateways">DescribeVirtualGateways</a></code> | <code>string[]</code> | IAM actions required for the DescribeVirtualGateways API call. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectOperations.property.DescribeVirtualInterfaces">DescribeVirtualInterfaces</a></code> | <code>string[]</code> | IAM actions required for the DescribeVirtualInterfaces API call. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectOperations.property.DisassociateConnectionFromLag">DisassociateConnectionFromLag</a></code> | <code>string[]</code> | IAM actions required for the DisassociateConnectionFromLag API call. |
+| <code><a href="#@cdk_utils/iam.directconnect.DirectConnectOperations.property.DisassociateConnectionsFromResiliencyGroup">DisassociateConnectionsFromResiliencyGroup</a></code> | <code>string[]</code> | IAM actions required for the DisassociateConnectionsFromResiliencyGroup API call. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectOperations.property.DisassociateMacSecKey">DisassociateMacSecKey</a></code> | <code>string[]</code> | IAM actions required for the DisassociateMacSecKey API call. |
+| <code><a href="#@cdk_utils/iam.directconnect.DirectConnectOperations.property.ListResiliencyGroupAssociations">ListResiliencyGroupAssociations</a></code> | <code>string[]</code> | IAM actions required for the ListResiliencyGroupAssociations API call. |
+| <code><a href="#@cdk_utils/iam.directconnect.DirectConnectOperations.property.ListResiliencyGroups">ListResiliencyGroups</a></code> | <code>string[]</code> | IAM actions required for the ListResiliencyGroups API call. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectOperations.property.ListVirtualInterfaceRoutes">ListVirtualInterfaceRoutes</a></code> | <code>string[]</code> | IAM actions required for the ListVirtualInterfaceRoutes API call. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectOperations.property.ListVirtualInterfaceTestHistory">ListVirtualInterfaceTestHistory</a></code> | <code>string[]</code> | IAM actions required for the ListVirtualInterfaceTestHistory API call. |
+| <code><a href="#@cdk_utils/iam.directconnect.DirectConnectOperations.property.opGetResiliencyGroup">opGetResiliencyGroup</a></code> | <code>string[]</code> | IAM actions required for the GetResiliencyGroup API call. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectOperations.property.StartBgpFailoverTest">StartBgpFailoverTest</a></code> | <code>string[]</code> | IAM actions required for the StartBgpFailoverTest API call. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectOperations.property.StopBgpFailoverTest">StopBgpFailoverTest</a></code> | <code>string[]</code> | IAM actions required for the StopBgpFailoverTest API call. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectOperations.property.UpdateConnection">UpdateConnection</a></code> | <code>string[]</code> | IAM actions required for the UpdateConnection API call. |
+| <code><a href="#@cdk_utils/iam.directconnect.DirectConnectOperations.property.UpdateConnectionsBillingMode">UpdateConnectionsBillingMode</a></code> | <code>string[]</code> | IAM actions required for the UpdateConnectionsBillingMode API call. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectOperations.property.UpdateDirectConnectGateway">UpdateDirectConnectGateway</a></code> | <code>string[]</code> | IAM actions required for the UpdateDirectConnectGateway API call. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectOperations.property.UpdateDirectConnectGatewayAssociation">UpdateDirectConnectGatewayAssociation</a></code> | <code>string[]</code> | IAM actions required for the UpdateDirectConnectGatewayAssociation API call. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectOperations.property.UpdateLag">UpdateLag</a></code> | <code>string[]</code> | IAM actions required for the UpdateLag API call. |
+| <code><a href="#@cdk_utils/iam.directconnect.DirectConnectOperations.property.UpdateResiliencyGroup">UpdateResiliencyGroup</a></code> | <code>string[]</code> | IAM actions required for the UpdateResiliencyGroup API call. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectOperations.property.UpdateVirtualInterfaceAttributes">UpdateVirtualInterfaceAttributes</a></code> | <code>string[]</code> | IAM actions required for the UpdateVirtualInterfaceAttributes API call. |
 
 ---
@@ -1958,6 +2217,18 @@ public readonly AllocateTransitVirtualInterface: string[];
 - *Type:* string[]
 
 IAM actions required for the AllocateTransitVirtualInterface API call.
+
+---
+
+##### `AssociateConnectionsToResiliencyGroup`<sup>Required</sup> <a name="AssociateConnectionsToResiliencyGroup" id="@cdk_utils/iam.directconnect.DirectConnectOperations.property.AssociateConnectionsToResiliencyGroup"></a>
+
+```typescript
+public readonly AssociateConnectionsToResiliencyGroup: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the AssociateConnectionsToResiliencyGroup API call.
 
 ---
 
@@ -2177,6 +2448,18 @@ IAM actions required for the CreatePublicVirtualInterface API call.
 
 ---
 
+##### `CreateResiliencyGroup`<sup>Required</sup> <a name="CreateResiliencyGroup" id="@cdk_utils/iam.directconnect.DirectConnectOperations.property.CreateResiliencyGroup"></a>
+
+```typescript
+public readonly CreateResiliencyGroup: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateResiliencyGroup API call.
+
+---
+
 ##### `CreateTransitVirtualInterface`<sup>Required</sup> <a name="CreateTransitVirtualInterface" id="@cdk_utils/iam.directconnect.DirectConnectOperations.property.CreateTransitVirtualInterface"></a>
 
 ```typescript
@@ -2270,6 +2553,18 @@ public readonly DeleteLag: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteLag API call.
+
+---
+
+##### `DeleteResiliencyGroup`<sup>Required</sup> <a name="DeleteResiliencyGroup" id="@cdk_utils/iam.directconnect.DirectConnectOperations.property.DeleteResiliencyGroup"></a>
+
+```typescript
+public readonly DeleteResiliencyGroup: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteResiliencyGroup API call.
 
 ---
 
@@ -2513,6 +2808,18 @@ IAM actions required for the DisassociateConnectionFromLag API call.
 
 ---
 
+##### `DisassociateConnectionsFromResiliencyGroup`<sup>Required</sup> <a name="DisassociateConnectionsFromResiliencyGroup" id="@cdk_utils/iam.directconnect.DirectConnectOperations.property.DisassociateConnectionsFromResiliencyGroup"></a>
+
+```typescript
+public readonly DisassociateConnectionsFromResiliencyGroup: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DisassociateConnectionsFromResiliencyGroup API call.
+
+---
+
 ##### `DisassociateMacSecKey`<sup>Required</sup> <a name="DisassociateMacSecKey" id="@cdk_utils/iam.directconnect.DirectConnectOperations.property.DisassociateMacSecKey"></a>
 
 ```typescript
@@ -2522,6 +2829,30 @@ public readonly DisassociateMacSecKey: string[];
 - *Type:* string[]
 
 IAM actions required for the DisassociateMacSecKey API call.
+
+---
+
+##### `ListResiliencyGroupAssociations`<sup>Required</sup> <a name="ListResiliencyGroupAssociations" id="@cdk_utils/iam.directconnect.DirectConnectOperations.property.ListResiliencyGroupAssociations"></a>
+
+```typescript
+public readonly ListResiliencyGroupAssociations: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListResiliencyGroupAssociations API call.
+
+---
+
+##### `ListResiliencyGroups`<sup>Required</sup> <a name="ListResiliencyGroups" id="@cdk_utils/iam.directconnect.DirectConnectOperations.property.ListResiliencyGroups"></a>
+
+```typescript
+public readonly ListResiliencyGroups: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListResiliencyGroups API call.
 
 ---
 
@@ -2546,6 +2877,18 @@ public readonly ListVirtualInterfaceTestHistory: string[];
 - *Type:* string[]
 
 IAM actions required for the ListVirtualInterfaceTestHistory API call.
+
+---
+
+##### `opGetResiliencyGroup`<sup>Required</sup> <a name="opGetResiliencyGroup" id="@cdk_utils/iam.directconnect.DirectConnectOperations.property.opGetResiliencyGroup"></a>
+
+```typescript
+public readonly opGetResiliencyGroup: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetResiliencyGroup API call.
 
 ---
 
@@ -2609,6 +2952,18 @@ IAM actions required for the UpdateConnection API call.
 
 ---
 
+##### `UpdateConnectionsBillingMode`<sup>Required</sup> <a name="UpdateConnectionsBillingMode" id="@cdk_utils/iam.directconnect.DirectConnectOperations.property.UpdateConnectionsBillingMode"></a>
+
+```typescript
+public readonly UpdateConnectionsBillingMode: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateConnectionsBillingMode API call.
+
+---
+
 ##### `UpdateDirectConnectGateway`<sup>Required</sup> <a name="UpdateDirectConnectGateway" id="@cdk_utils/iam.directconnect.DirectConnectOperations.property.UpdateDirectConnectGateway"></a>
 
 ```typescript
@@ -2642,6 +2997,18 @@ public readonly UpdateLag: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateLag API call.
+
+---
+
+##### `UpdateResiliencyGroup`<sup>Required</sup> <a name="UpdateResiliencyGroup" id="@cdk_utils/iam.directconnect.DirectConnectOperations.property.UpdateResiliencyGroup"></a>
+
+```typescript
+public readonly UpdateResiliencyGroup: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateResiliencyGroup API call.
 
 ---
 
@@ -2682,14 +3049,17 @@ new directconnect.DirectConnectResources()
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectResources.dxcon">dxcon</a></code> | Builds an ARN for the dxcon resource. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectResources.dxGateway">dxGateway</a></code> | Builds an ARN for the dx-gateway resource. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectResources.dxlag">dxlag</a></code> | Builds an ARN for the dxlag resource. |
+| <code><a href="#@cdk_utils/iam.directconnect.DirectConnectResources.dxResiliencyGroup">dxResiliencyGroup</a></code> | Builds an ARN for the dx-resiliency-group resource. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectResources.dxvif">dxvif</a></code> | Builds an ARN for the dxvif resource. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectResources.isValidDxconArn">isValidDxconArn</a></code> | Validates whether a string is a valid ARN for the dxcon resource. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectResources.isValidDxGatewayArn">isValidDxGatewayArn</a></code> | Validates whether a string is a valid ARN for the dx-gateway resource. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectResources.isValidDxlagArn">isValidDxlagArn</a></code> | Validates whether a string is a valid ARN for the dxlag resource. |
+| <code><a href="#@cdk_utils/iam.directconnect.DirectConnectResources.isValidDxResiliencyGroupArn">isValidDxResiliencyGroupArn</a></code> | Validates whether a string is a valid ARN for the dx-resiliency-group resource. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectResources.isValidDxvifArn">isValidDxvifArn</a></code> | Validates whether a string is a valid ARN for the dxvif resource. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectResources.parseDxconArn">parseDxconArn</a></code> | Parses a dxcon ARN into its components. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectResources.parseDxGatewayArn">parseDxGatewayArn</a></code> | Parses a dx-gateway ARN into its components. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectResources.parseDxlagArn">parseDxlagArn</a></code> | Parses a dxlag ARN into its components. |
+| <code><a href="#@cdk_utils/iam.directconnect.DirectConnectResources.parseDxResiliencyGroupArn">parseDxResiliencyGroupArn</a></code> | Parses a dx-resiliency-group ARN into its components. |
 | <code><a href="#@cdk_utils/iam.directconnect.DirectConnectResources.parseDxvifArn">parseDxvifArn</a></code> | Parses a dxvif ARN into its components. |
 
 ---
@@ -2739,6 +3109,22 @@ Builds an ARN for the dxlag resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.directconnect.DirectConnectResources.dxlag.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.directconnect.DirectConnectDxlagArnProps">DirectConnectDxlagArnProps</a>
+
+---
+
+##### `dxResiliencyGroup` <a name="dxResiliencyGroup" id="@cdk_utils/iam.directconnect.DirectConnectResources.dxResiliencyGroup"></a>
+
+```typescript
+import { directconnect } from '@cdk_utils/iam'
+
+directconnect.DirectConnectResources.dxResiliencyGroup(props: DirectConnectDxResiliencyGroupArnProps)
+```
+
+Builds an ARN for the dx-resiliency-group resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.directconnect.DirectConnectResources.dxResiliencyGroup.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.directconnect.DirectConnectDxResiliencyGroupArnProps">DirectConnectDxResiliencyGroupArnProps</a>
 
 ---
 
@@ -2806,6 +3192,22 @@ Validates whether a string is a valid ARN for the dxlag resource.
 
 ---
 
+##### `isValidDxResiliencyGroupArn` <a name="isValidDxResiliencyGroupArn" id="@cdk_utils/iam.directconnect.DirectConnectResources.isValidDxResiliencyGroupArn"></a>
+
+```typescript
+import { directconnect } from '@cdk_utils/iam'
+
+directconnect.DirectConnectResources.isValidDxResiliencyGroupArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the dx-resiliency-group resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.directconnect.DirectConnectResources.isValidDxResiliencyGroupArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `isValidDxvifArn` <a name="isValidDxvifArn" id="@cdk_utils/iam.directconnect.DirectConnectResources.isValidDxvifArn"></a>
 
 ```typescript
@@ -2865,6 +3267,22 @@ directconnect.DirectConnectResources.parseDxlagArn(arn: string)
 Parses a dxlag ARN into its components.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.directconnect.DirectConnectResources.parseDxlagArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseDxResiliencyGroupArn` <a name="parseDxResiliencyGroupArn" id="@cdk_utils/iam.directconnect.DirectConnectResources.parseDxResiliencyGroupArn"></a>
+
+```typescript
+import { directconnect } from '@cdk_utils/iam'
+
+directconnect.DirectConnectResources.parseDxResiliencyGroupArn(arn: string)
+```
+
+Parses a dx-resiliency-group ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.directconnect.DirectConnectResources.parseDxResiliencyGroupArn.parameter.arn"></a>
 
 - *Type:* string
 

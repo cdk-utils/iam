@@ -33,6 +33,9 @@ export class DirectConnectActions {
 	/** [Write] directconnect:AssociateConnectionWithLag */
 	static readonly AssociateConnectionWithLag =
 		"directconnect:AssociateConnectionWithLag";
+	/** [Write] directconnect:AssociateConnectionsToResiliencyGroup */
+	static readonly AssociateConnectionsToResiliencyGroup =
+		"directconnect:AssociateConnectionsToResiliencyGroup";
 	/** [Write] directconnect:AssociateHostedConnection */
 	static readonly AssociateHostedConnection =
 		"directconnect:AssociateHostedConnection";
@@ -78,6 +81,8 @@ export class DirectConnectActions {
 	/** [Write] directconnect:CreatePublicVirtualInterface */
 	static readonly CreatePublicVirtualInterface =
 		"directconnect:CreatePublicVirtualInterface";
+	/** [Write] directconnect:CreateResiliencyGroup */
+	static readonly CreateResiliencyGroup = "directconnect:CreateResiliencyGroup";
 	/** [Write] directconnect:CreateTransitVirtualInterface */
 	static readonly CreateTransitVirtualInterface =
 		"directconnect:CreateTransitVirtualInterface";
@@ -98,6 +103,8 @@ export class DirectConnectActions {
 	static readonly DeleteInterconnect = "directconnect:DeleteInterconnect";
 	/** [Write] directconnect:DeleteLag */
 	static readonly DeleteLag = "directconnect:DeleteLag";
+	/** [Write] directconnect:DeleteResiliencyGroup */
+	static readonly DeleteResiliencyGroup = "directconnect:DeleteResiliencyGroup";
 	/** [Write] directconnect:DeleteVirtualInterface */
 	static readonly DeleteVirtualInterface =
 		"directconnect:DeleteVirtualInterface";
@@ -151,8 +158,18 @@ export class DirectConnectActions {
 	/** [Write] directconnect:DisassociateConnectionFromLag */
 	static readonly DisassociateConnectionFromLag =
 		"directconnect:DisassociateConnectionFromLag";
+	/** [Write] directconnect:DisassociateConnectionsFromResiliencyGroup */
+	static readonly DisassociateConnectionsFromResiliencyGroup =
+		"directconnect:DisassociateConnectionsFromResiliencyGroup";
 	/** [Write] directconnect:DisassociateMacSecKey */
 	static readonly DisassociateMacSecKey = "directconnect:DisassociateMacSecKey";
+	/** [Read] directconnect:GetResiliencyGroup */
+	static readonly actionGetResiliencyGroup = "directconnect:GetResiliencyGroup";
+	/** [List] directconnect:ListResiliencyGroupAssociations */
+	static readonly ListResiliencyGroupAssociations =
+		"directconnect:ListResiliencyGroupAssociations";
+	/** [List] directconnect:ListResiliencyGroups */
+	static readonly ListResiliencyGroups = "directconnect:ListResiliencyGroups";
 	/** [List] directconnect:ListVirtualInterfaceRoutes */
 	static readonly ListVirtualInterfaceRoutes =
 		"directconnect:ListVirtualInterfaceRoutes";
@@ -169,6 +186,9 @@ export class DirectConnectActions {
 	static readonly UntagResource = "directconnect:UntagResource";
 	/** [Write] directconnect:UpdateConnection */
 	static readonly UpdateConnection = "directconnect:UpdateConnection";
+	/** [Write] directconnect:UpdateConnectionsBillingMode */
+	static readonly UpdateConnectionsBillingMode =
+		"directconnect:UpdateConnectionsBillingMode";
 	/** [Write] directconnect:UpdateDirectConnectGateway */
 	static readonly UpdateDirectConnectGateway =
 		"directconnect:UpdateDirectConnectGateway";
@@ -177,6 +197,8 @@ export class DirectConnectActions {
 		"directconnect:UpdateDirectConnectGatewayAssociation";
 	/** [Write] directconnect:UpdateLag */
 	static readonly UpdateLag = "directconnect:UpdateLag";
+	/** [Write] directconnect:UpdateResiliencyGroup */
+	static readonly UpdateResiliencyGroup = "directconnect:UpdateResiliencyGroup";
 	/** [Write] directconnect:UpdateVirtualInterfaceAttributes */
 	static readonly UpdateVirtualInterfaceAttributes =
 		"directconnect:UpdateVirtualInterfaceAttributes";
@@ -201,6 +223,7 @@ export class DirectConnectActions {
 		DirectConnectActions.DescribeTags,
 		DirectConnectActions.DescribeVirtualGateways,
 		DirectConnectActions.DescribeVirtualInterfaces,
+		DirectConnectActions.actionGetResiliencyGroup,
 	];
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
@@ -211,6 +234,7 @@ export class DirectConnectActions {
 		DirectConnectActions.AllocatePublicVirtualInterface,
 		DirectConnectActions.AllocateTransitVirtualInterface,
 		DirectConnectActions.AssociateConnectionWithLag,
+		DirectConnectActions.AssociateConnectionsToResiliencyGroup,
 		DirectConnectActions.AssociateHostedConnection,
 		DirectConnectActions.AssociateMacSecKey,
 		DirectConnectActions.AssociateVirtualInterface,
@@ -228,6 +252,7 @@ export class DirectConnectActions {
 		DirectConnectActions.CreateLag,
 		DirectConnectActions.CreatePrivateVirtualInterface,
 		DirectConnectActions.CreatePublicVirtualInterface,
+		DirectConnectActions.CreateResiliencyGroup,
 		DirectConnectActions.CreateTransitVirtualInterface,
 		DirectConnectActions.DeleteBGPPeer,
 		DirectConnectActions.DeleteConnection,
@@ -236,19 +261,25 @@ export class DirectConnectActions {
 		DirectConnectActions.DeleteDirectConnectGatewayAssociationProposal,
 		DirectConnectActions.DeleteInterconnect,
 		DirectConnectActions.DeleteLag,
+		DirectConnectActions.DeleteResiliencyGroup,
 		DirectConnectActions.DeleteVirtualInterface,
 		DirectConnectActions.DisassociateConnectionFromLag,
+		DirectConnectActions.DisassociateConnectionsFromResiliencyGroup,
 		DirectConnectActions.DisassociateMacSecKey,
 		DirectConnectActions.StartBgpFailoverTest,
 		DirectConnectActions.StopBgpFailoverTest,
 		DirectConnectActions.UpdateConnection,
+		DirectConnectActions.UpdateConnectionsBillingMode,
 		DirectConnectActions.UpdateDirectConnectGateway,
 		DirectConnectActions.UpdateDirectConnectGatewayAssociation,
 		DirectConnectActions.UpdateLag,
+		DirectConnectActions.UpdateResiliencyGroup,
 		DirectConnectActions.UpdateVirtualInterfaceAttributes,
 	];
 	/** All list-level actions. */
 	static readonly AllListActions: string[] = [
+		DirectConnectActions.ListResiliencyGroupAssociations,
+		DirectConnectActions.ListResiliencyGroups,
 		DirectConnectActions.ListVirtualInterfaceRoutes,
 		DirectConnectActions.ListVirtualInterfaceTestHistory,
 	];
@@ -283,6 +314,30 @@ export interface DirectConnectDxGatewayArnComponents {
 	readonly account: string;
 	/** The DirectConnectGatewayId component. */
 	readonly directConnectGatewayId: string;
+}
+
+/**
+ * Properties for building a dx-resiliency-group ARN.
+ */
+export interface DirectConnectDxResiliencyGroupArnProps {
+	/** The ResiliencyGroupId component of the ARN. */
+	readonly resiliencyGroupId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a dx-resiliency-group ARN.
+ */
+export interface DirectConnectDxResiliencyGroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResiliencyGroupId component. */
+	readonly resiliencyGroupId: string;
 }
 
 /**
@@ -371,6 +426,8 @@ export interface DirectConnectDxvifArnComponents {
 
 const DxGatewayArnRegex =
 	/^arn:(?<partition>[^:]+):directconnect::(?<account>[^:]*):dx-gateway\/(?<directConnectGatewayId>[^:/?]+)$/;
+const DxResiliencyGroupArnRegex =
+	/^arn:(?<partition>[^:]+):directconnect::(?<account>[^:]*):dx-resiliency-group\/(?<resiliencyGroupId>[^:/?]+)$/;
 const DxconArnRegex =
 	/^arn:(?<partition>[^:]+):directconnect:(?<region>[^:]*):(?<account>[^:]*):dxcon\/(?<connectionId>[^:/?]+)$/;
 const DxlagArnRegex =
@@ -409,6 +466,40 @@ export class DirectConnectResources {
 			partition: match.groups.partition,
 			account: match.groups.account,
 			directConnectGatewayId: match.groups!.directConnectGatewayId,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the dx-resiliency-group resource.
+	 */
+	static dxResiliencyGroup(
+		props: DirectConnectDxResiliencyGroupArnProps,
+	): string {
+		return `arn:${props.partition ?? "aws"}:directconnect::${props.account ?? "*"}:dx-resiliency-group/${props.resiliencyGroupId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the dx-resiliency-group resource.
+	 */
+	static isValidDxResiliencyGroupArn(arn: string): boolean {
+		return DxResiliencyGroupArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a dx-resiliency-group ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseDxResiliencyGroupArn(
+		arn: string,
+	): DirectConnectDxResiliencyGroupArnComponents {
+		const match = DxResiliencyGroupArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid dx-resiliency-group ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			account: match.groups.account,
+			resiliencyGroupId: match.groups!.resiliencyGroupId,
 		};
 	}
 
@@ -542,6 +633,10 @@ export class DirectConnectOperations {
 	static readonly AssociateConnectionWithLag: string[] = [
 		"directconnect:AssociateConnectionWithLag",
 	];
+	/** IAM actions required for the AssociateConnectionsToResiliencyGroup API call. */
+	static readonly AssociateConnectionsToResiliencyGroup: string[] = [
+		"directconnect:AssociateConnectionsToResiliencyGroup",
+	];
 	/** IAM actions required for the AssociateHostedConnection API call. */
 	static readonly AssociateHostedConnection: string[] = [
 		"directconnect:AssociateHostedConnection",
@@ -614,6 +709,8 @@ export class DirectConnectOperations {
 		"directconnect:CreatePublicVirtualInterface",
 		"directconnect:TagResource",
 	];
+	/** IAM actions required for the CreateResiliencyGroup API call. */
+	static readonly CreateResiliencyGroup: string[] = [];
 	/** IAM actions required for the CreateTransitVirtualInterface API call. */
 	static readonly CreateTransitVirtualInterface: string[] = [
 		"directconnect:CreateTransitVirtualInterface",
@@ -643,6 +740,10 @@ export class DirectConnectOperations {
 	];
 	/** IAM actions required for the DeleteLag API call. */
 	static readonly DeleteLag: string[] = ["directconnect:DeleteLag"];
+	/** IAM actions required for the DeleteResiliencyGroup API call. */
+	static readonly DeleteResiliencyGroup: string[] = [
+		"directconnect:DeleteResiliencyGroup",
+	];
 	/** IAM actions required for the DeleteVirtualInterface API call. */
 	static readonly DeleteVirtualInterface: string[] = [
 		"directconnect:DeleteVirtualInterface",
@@ -717,9 +818,25 @@ export class DirectConnectOperations {
 	static readonly DisassociateConnectionFromLag: string[] = [
 		"directconnect:DisassociateConnectionFromLag",
 	];
+	/** IAM actions required for the DisassociateConnectionsFromResiliencyGroup API call. */
+	static readonly DisassociateConnectionsFromResiliencyGroup: string[] = [
+		"directconnect:DisassociateConnectionsFromResiliencyGroup",
+	];
 	/** IAM actions required for the DisassociateMacSecKey API call. */
 	static readonly DisassociateMacSecKey: string[] = [
 		"directconnect:DisassociateMacSecKey",
+	];
+	/** IAM actions required for the GetResiliencyGroup API call. */
+	static readonly opGetResiliencyGroup: string[] = [
+		"directconnect:GetResiliencyGroup",
+	];
+	/** IAM actions required for the ListResiliencyGroupAssociations API call. */
+	static readonly ListResiliencyGroupAssociations: string[] = [
+		"directconnect:ListResiliencyGroupAssociations",
+	];
+	/** IAM actions required for the ListResiliencyGroups API call. */
+	static readonly ListResiliencyGroups: string[] = [
+		"directconnect:ListResiliencyGroups",
 	];
 	/** IAM actions required for the ListVirtualInterfaceRoutes API call. */
 	static readonly ListVirtualInterfaceRoutes: string[] = [
@@ -745,6 +862,10 @@ export class DirectConnectOperations {
 	static readonly UpdateConnection: string[] = [
 		"directconnect:UpdateConnection",
 	];
+	/** IAM actions required for the UpdateConnectionsBillingMode API call. */
+	static readonly UpdateConnectionsBillingMode: string[] = [
+		"directconnect:UpdateConnectionsBillingMode",
+	];
 	/** IAM actions required for the UpdateDirectConnectGateway API call. */
 	static readonly UpdateDirectConnectGateway: string[] = [
 		"directconnect:UpdateDirectConnectGateway",
@@ -755,6 +876,10 @@ export class DirectConnectOperations {
 	];
 	/** IAM actions required for the UpdateLag API call. */
 	static readonly UpdateLag: string[] = ["directconnect:UpdateLag"];
+	/** IAM actions required for the UpdateResiliencyGroup API call. */
+	static readonly UpdateResiliencyGroup: string[] = [
+		"directconnect:UpdateResiliencyGroup",
+	];
 	/** IAM actions required for the UpdateVirtualInterfaceAttributes API call. */
 	static readonly UpdateVirtualInterfaceAttributes: string[] = [
 		"directconnect:UpdateVirtualInterfaceAttributes",
@@ -812,6 +937,11 @@ export class DirectConnectConditions {
 	];
 	/** Condition keys applicable to the CreatePublicVirtualInterface action. */
 	static readonly CreatePublicVirtualInterfaceConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
+	/** Condition keys applicable to the CreateResiliencyGroup action. */
+	static readonly CreateResiliencyGroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
