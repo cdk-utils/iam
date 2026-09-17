@@ -345,6 +345,7 @@ new healthlake.HealthLakeActions()
 | <code><a href="#@cdk_utils/iam.healthlake.HealthLakeActions.property.DescribeDataTransformationJob">DescribeDataTransformationJob</a></code> | <code>string</code> | [Read] healthlake:DescribeDataTransformationJob. |
 | <code><a href="#@cdk_utils/iam.healthlake.HealthLakeActions.property.DescribeFHIRBulkDeleteJob">DescribeFHIRBulkDeleteJob</a></code> | <code>string</code> | [Read] healthlake:DescribeFHIRBulkDeleteJob. |
 | <code><a href="#@cdk_utils/iam.healthlake.HealthLakeActions.property.DescribeFHIRBulkMemberMatchJob">DescribeFHIRBulkMemberMatchJob</a></code> | <code>string</code> | [Read] healthlake:DescribeFHIRBulkMemberMatchJob. |
+| <code><a href="#@cdk_utils/iam.healthlake.HealthLakeActions.property.DescribeFHIRBulkPatchJob">DescribeFHIRBulkPatchJob</a></code> | <code>string</code> | [Read] healthlake:DescribeFHIRBulkPatchJob. |
 | <code><a href="#@cdk_utils/iam.healthlake.HealthLakeActions.property.DescribeFHIRDatastore">DescribeFHIRDatastore</a></code> | <code>string</code> | [Read] healthlake:DescribeFHIRDatastore. |
 | <code><a href="#@cdk_utils/iam.healthlake.HealthLakeActions.property.DescribeFHIRExportJob">DescribeFHIRExportJob</a></code> | <code>string</code> | [Read] healthlake:DescribeFHIRExportJob. |
 | <code><a href="#@cdk_utils/iam.healthlake.HealthLakeActions.property.DescribeFHIRExportJobWithGet">DescribeFHIRExportJobWithGet</a></code> | <code>string</code> | [Read] healthlake:DescribeFHIRExportJobWithGet. |
@@ -380,6 +381,7 @@ new healthlake.HealthLakeActions()
 | <code><a href="#@cdk_utils/iam.healthlake.HealthLakeActions.property.StartDataTransformationJob">StartDataTransformationJob</a></code> | <code>string</code> | [Write] healthlake:StartDataTransformationJob. |
 | <code><a href="#@cdk_utils/iam.healthlake.HealthLakeActions.property.StartFHIRBulkDeleteJob">StartFHIRBulkDeleteJob</a></code> | <code>string</code> | [Write] healthlake:StartFHIRBulkDeleteJob. |
 | <code><a href="#@cdk_utils/iam.healthlake.HealthLakeActions.property.StartFHIRBulkMemberMatchJob">StartFHIRBulkMemberMatchJob</a></code> | <code>string</code> | [Write] healthlake:StartFHIRBulkMemberMatchJob. |
+| <code><a href="#@cdk_utils/iam.healthlake.HealthLakeActions.property.StartFHIRBulkPatchJob">StartFHIRBulkPatchJob</a></code> | <code>string</code> | [Write] healthlake:StartFHIRBulkPatchJob. |
 | <code><a href="#@cdk_utils/iam.healthlake.HealthLakeActions.property.StartFHIRExportJob">StartFHIRExportJob</a></code> | <code>string</code> | [Write] healthlake:StartFHIRExportJob. |
 | <code><a href="#@cdk_utils/iam.healthlake.HealthLakeActions.property.StartFHIRExportJobWithGet">StartFHIRExportJobWithGet</a></code> | <code>string</code> | [Write] healthlake:StartFHIRExportJobWithGet. |
 | <code><a href="#@cdk_utils/iam.healthlake.HealthLakeActions.property.StartFHIRExportJobWithPost">StartFHIRExportJobWithPost</a></code> | <code>string</code> | [Write] healthlake:StartFHIRExportJobWithPost. |
@@ -637,6 +639,18 @@ public readonly DescribeFHIRBulkMemberMatchJob: string;
 - *Type:* string
 
 [Read] healthlake:DescribeFHIRBulkMemberMatchJob.
+
+---
+
+##### `DescribeFHIRBulkPatchJob`<sup>Required</sup> <a name="DescribeFHIRBulkPatchJob" id="@cdk_utils/iam.healthlake.HealthLakeActions.property.DescribeFHIRBulkPatchJob"></a>
+
+```typescript
+public readonly DescribeFHIRBulkPatchJob: string;
+```
+
+- *Type:* string
+
+[Read] healthlake:DescribeFHIRBulkPatchJob.
 
 ---
 
@@ -1057,6 +1071,18 @@ public readonly StartFHIRBulkMemberMatchJob: string;
 - *Type:* string
 
 [Write] healthlake:StartFHIRBulkMemberMatchJob.
+
+---
+
+##### `StartFHIRBulkPatchJob`<sup>Required</sup> <a name="StartFHIRBulkPatchJob" id="@cdk_utils/iam.healthlake.HealthLakeActions.property.StartFHIRBulkPatchJob"></a>
+
+```typescript
+public readonly StartFHIRBulkPatchJob: string;
+```
+
+- *Type:* string
+
+[Write] healthlake:StartFHIRBulkPatchJob.
 
 ---
 

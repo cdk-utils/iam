@@ -3994,6 +3994,7 @@ new profile.ProfileOperations()
 | <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.PutProfileObjectType">PutProfileObjectType</a></code> | <code>string[]</code> | IAM actions required for the PutProfileObjectType API call. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.PutSegmentSubscription">PutSegmentSubscription</a></code> | <code>string[]</code> | IAM actions required for the PutSegmentSubscription API call. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.SearchProfiles">SearchProfiles</a></code> | <code>string[]</code> | IAM actions required for the SearchProfiles API call. |
+| <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.SearchRecommendations">SearchRecommendations</a></code> | <code>string[]</code> | IAM actions required for the SearchRecommendations API call. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.StartRecommender">StartRecommender</a></code> | <code>string[]</code> | IAM actions required for the StartRecommender API call. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.StartUploadJob">StartUploadJob</a></code> | <code>string[]</code> | IAM actions required for the StartUploadJob API call. |
 | <code><a href="#@cdk_utils/iam.profile.ProfileOperations.property.StopRecommender">StopRecommender</a></code> | <code>string[]</code> | IAM actions required for the StopRecommender API call. |
@@ -5230,6 +5231,18 @@ public readonly SearchProfiles: string[];
 - *Type:* string[]
 
 IAM actions required for the SearchProfiles API call.
+
+---
+
+##### `SearchRecommendations`<sup>Required</sup> <a name="SearchRecommendations" id="@cdk_utils/iam.profile.ProfileOperations.property.SearchRecommendations"></a>
+
+```typescript
+public readonly SearchRecommendations: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the SearchRecommendations API call.
 
 ---
 

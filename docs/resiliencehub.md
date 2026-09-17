@@ -3277,6 +3277,7 @@ new resiliencehub.ResiliencehubOperations()
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubOperations.property.ListInputSources">ListInputSources</a></code> | <code>string[]</code> | IAM actions required for the ListInputSources API call. |
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubOperations.property.ListMetrics">ListMetrics</a></code> | <code>string[]</code> | IAM actions required for the ListMetrics API call. |
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubOperations.property.ListPolicies">ListPolicies</a></code> | <code>string[]</code> | IAM actions required for the ListPolicies API call. |
+| <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubOperations.property.ListPolicyEvents">ListPolicyEvents</a></code> | <code>string[]</code> | IAM actions required for the ListPolicyEvents API call. |
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubOperations.property.ListRecommendationTemplates">ListRecommendationTemplates</a></code> | <code>string[]</code> | IAM actions required for the ListRecommendationTemplates API call. |
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubOperations.property.ListReports">ListReports</a></code> | <code>string[]</code> | IAM actions required for the ListReports API call. |
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubOperations.property.ListResiliencyPolicies">ListResiliencyPolicies</a></code> | <code>string[]</code> | IAM actions required for the ListResiliencyPolicies API call. |
@@ -3303,6 +3304,7 @@ new resiliencehub.ResiliencehubOperations()
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubOperations.property.ListTestTemplates">ListTestTemplates</a></code> | <code>string[]</code> | IAM actions required for the ListTestTemplates API call. |
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubOperations.property.ListUnsupportedAppVersionResources">ListUnsupportedAppVersionResources</a></code> | <code>string[]</code> | IAM actions required for the ListUnsupportedAppVersionResources API call. |
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubOperations.property.ListUserJourneys">ListUserJourneys</a></code> | <code>string[]</code> | IAM actions required for the ListUserJourneys API call. |
+| <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubOperations.property.opGetDependencyInsights">opGetDependencyInsights</a></code> | <code>string[]</code> | IAM actions required for the GetDependencyInsights API call. |
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubOperations.property.opGetFailureModeFinding">opGetFailureModeFinding</a></code> | <code>string[]</code> | IAM actions required for the GetFailureModeFinding API call. |
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubOperations.property.opGetPolicy">opGetPolicy</a></code> | <code>string[]</code> | IAM actions required for the GetPolicy API call. |
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubOperations.property.opGetService">opGetService</a></code> | <code>string[]</code> | IAM actions required for the GetService API call. |
@@ -3318,6 +3320,7 @@ new resiliencehub.ResiliencehubOperations()
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubOperations.property.RemoveDraftAppVersionResourceMappings">RemoveDraftAppVersionResourceMappings</a></code> | <code>string[]</code> | IAM actions required for the RemoveDraftAppVersionResourceMappings API call. |
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubOperations.property.ResolveAppVersionResources">ResolveAppVersionResources</a></code> | <code>string[]</code> | IAM actions required for the ResolveAppVersionResources API call. |
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubOperations.property.StartAppAssessment">StartAppAssessment</a></code> | <code>string[]</code> | IAM actions required for the StartAppAssessment API call. |
+| <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubOperations.property.StartDependencyInsights">StartDependencyInsights</a></code> | <code>string[]</code> | IAM actions required for the StartDependencyInsights API call. |
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubOperations.property.StartFailureModeAssessment">StartFailureModeAssessment</a></code> | <code>string[]</code> | IAM actions required for the StartFailureModeAssessment API call. |
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubOperations.property.StartMetricsExport">StartMetricsExport</a></code> | <code>string[]</code> | IAM actions required for the StartMetricsExport API call. |
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubOperations.property.StartResourceGroupingRecommendationTask">StartResourceGroupingRecommendationTask</a></code> | <code>string[]</code> | IAM actions required for the StartResourceGroupingRecommendationTask API call. |
@@ -4158,6 +4161,18 @@ IAM actions required for the ListPolicies API call.
 
 ---
 
+##### `ListPolicyEvents`<sup>Required</sup> <a name="ListPolicyEvents" id="@cdk_utils/iam.resiliencehub.ResiliencehubOperations.property.ListPolicyEvents"></a>
+
+```typescript
+public readonly ListPolicyEvents: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListPolicyEvents API call.
+
+---
+
 ##### `ListRecommendationTemplates`<sup>Required</sup> <a name="ListRecommendationTemplates" id="@cdk_utils/iam.resiliencehub.ResiliencehubOperations.property.ListRecommendationTemplates"></a>
 
 ```typescript
@@ -4470,6 +4485,18 @@ IAM actions required for the ListUserJourneys API call.
 
 ---
 
+##### `opGetDependencyInsights`<sup>Required</sup> <a name="opGetDependencyInsights" id="@cdk_utils/iam.resiliencehub.ResiliencehubOperations.property.opGetDependencyInsights"></a>
+
+```typescript
+public readonly opGetDependencyInsights: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetDependencyInsights API call.
+
+---
+
 ##### `opGetFailureModeFinding`<sup>Required</sup> <a name="opGetFailureModeFinding" id="@cdk_utils/iam.resiliencehub.ResiliencehubOperations.property.opGetFailureModeFinding"></a>
 
 ```typescript
@@ -4647,6 +4674,18 @@ public readonly StartAppAssessment: string[];
 - *Type:* string[]
 
 IAM actions required for the StartAppAssessment API call.
+
+---
+
+##### `StartDependencyInsights`<sup>Required</sup> <a name="StartDependencyInsights" id="@cdk_utils/iam.resiliencehub.ResiliencehubOperations.property.StartDependencyInsights"></a>
+
+```typescript
+public readonly StartDependencyInsights: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StartDependencyInsights API call.
 
 ---
 

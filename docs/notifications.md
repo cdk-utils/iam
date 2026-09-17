@@ -985,6 +985,7 @@ new notifications.NotificationsActions()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.notifications.NotificationsActions.property.AccessSensitiveEvents">AccessSensitiveEvents</a></code> | <code>string</code> | [Read] notifications:AccessSensitiveEvents. |
 | <code><a href="#@cdk_utils/iam.notifications.NotificationsActions.property.actionGetEventRule">actionGetEventRule</a></code> | <code>string</code> | [Read] notifications:GetEventRule. |
 | <code><a href="#@cdk_utils/iam.notifications.NotificationsActions.property.actionGetFeatureOptInStatus">actionGetFeatureOptInStatus</a></code> | <code>string</code> | [Read] notifications:GetFeatureOptInStatus. |
 | <code><a href="#@cdk_utils/iam.notifications.NotificationsActions.property.actionGetManagedNotificationChildEvent">actionGetManagedNotificationChildEvent</a></code> | <code>string</code> | [Read] notifications:GetManagedNotificationChildEvent. |
@@ -1028,10 +1029,24 @@ new notifications.NotificationsActions()
 | <code><a href="#@cdk_utils/iam.notifications.NotificationsActions.property.PutFeatureOptInStatus">PutFeatureOptInStatus</a></code> | <code>string</code> | [Write] notifications:PutFeatureOptInStatus. |
 | <code><a href="#@cdk_utils/iam.notifications.NotificationsActions.property.RegisterNotificationHub">RegisterNotificationHub</a></code> | <code>string</code> | [Write] notifications:RegisterNotificationHub. |
 | <code><a href="#@cdk_utils/iam.notifications.NotificationsActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
+| <code><a href="#@cdk_utils/iam.notifications.NotificationsActions.property.SubscribeSensitiveEvents">SubscribeSensitiveEvents</a></code> | <code>string</code> | [Write] notifications:SubscribeSensitiveEvents. |
 | <code><a href="#@cdk_utils/iam.notifications.NotificationsActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] notifications:TagResource. |
 | <code><a href="#@cdk_utils/iam.notifications.NotificationsActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] notifications:UntagResource. |
 | <code><a href="#@cdk_utils/iam.notifications.NotificationsActions.property.UpdateEventRule">UpdateEventRule</a></code> | <code>string</code> | [Write] notifications:UpdateEventRule. |
+| <code><a href="#@cdk_utils/iam.notifications.NotificationsActions.property.UpdateManagedNotificationChannelAssociation">UpdateManagedNotificationChannelAssociation</a></code> | <code>string</code> | [Write] notifications:UpdateManagedNotificationChannelAssociation. |
 | <code><a href="#@cdk_utils/iam.notifications.NotificationsActions.property.UpdateNotificationConfiguration">UpdateNotificationConfiguration</a></code> | <code>string</code> | [Write] notifications:UpdateNotificationConfiguration. |
+
+---
+
+##### `AccessSensitiveEvents`<sup>Required</sup> <a name="AccessSensitiveEvents" id="@cdk_utils/iam.notifications.NotificationsActions.property.AccessSensitiveEvents"></a>
+
+```typescript
+public readonly AccessSensitiveEvents: string;
+```
+
+- *Type:* string
+
+[Read] notifications:AccessSensitiveEvents.
 
 ---
 
@@ -1551,6 +1566,18 @@ The IAM service prefix.
 
 ---
 
+##### `SubscribeSensitiveEvents`<sup>Required</sup> <a name="SubscribeSensitiveEvents" id="@cdk_utils/iam.notifications.NotificationsActions.property.SubscribeSensitiveEvents"></a>
+
+```typescript
+public readonly SubscribeSensitiveEvents: string;
+```
+
+- *Type:* string
+
+[Write] notifications:SubscribeSensitiveEvents.
+
+---
+
 ##### `TagResource`<sup>Required</sup> <a name="TagResource" id="@cdk_utils/iam.notifications.NotificationsActions.property.TagResource"></a>
 
 ```typescript
@@ -1584,6 +1611,18 @@ public readonly UpdateEventRule: string;
 - *Type:* string
 
 [Write] notifications:UpdateEventRule.
+
+---
+
+##### `UpdateManagedNotificationChannelAssociation`<sup>Required</sup> <a name="UpdateManagedNotificationChannelAssociation" id="@cdk_utils/iam.notifications.NotificationsActions.property.UpdateManagedNotificationChannelAssociation"></a>
+
+```typescript
+public readonly UpdateManagedNotificationChannelAssociation: string;
+```
+
+- *Type:* string
+
+[Write] notifications:UpdateManagedNotificationChannelAssociation.
 
 ---
 

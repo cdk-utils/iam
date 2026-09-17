@@ -40,6 +40,9 @@ export class HealthLakeActions {
 	/** [Read] healthlake:DescribeFHIRBulkMemberMatchJob */
 	static readonly DescribeFHIRBulkMemberMatchJob =
 		"healthlake:DescribeFHIRBulkMemberMatchJob";
+	/** [Read] healthlake:DescribeFHIRBulkPatchJob */
+	static readonly DescribeFHIRBulkPatchJob =
+		"healthlake:DescribeFHIRBulkPatchJob";
 	/** [Read] healthlake:DescribeFHIRDatastore */
 	static readonly DescribeFHIRDatastore = "healthlake:DescribeFHIRDatastore";
 	/** [Read] healthlake:DescribeFHIRExportJob */
@@ -130,6 +133,8 @@ export class HealthLakeActions {
 	/** [Write] healthlake:StartFHIRBulkMemberMatchJob */
 	static readonly StartFHIRBulkMemberMatchJob =
 		"healthlake:StartFHIRBulkMemberMatchJob";
+	/** [Write] healthlake:StartFHIRBulkPatchJob */
+	static readonly StartFHIRBulkPatchJob = "healthlake:StartFHIRBulkPatchJob";
 	/** [Write] healthlake:StartFHIRExportJob */
 	static readonly StartFHIRExportJob = "healthlake:StartFHIRExportJob";
 	/** [Write] healthlake:StartFHIRExportJobWithGet */
@@ -175,6 +180,7 @@ export class HealthLakeActions {
 		HealthLakeActions.DescribeDataTransformationJob,
 		HealthLakeActions.DescribeFHIRBulkDeleteJob,
 		HealthLakeActions.DescribeFHIRBulkMemberMatchJob,
+		HealthLakeActions.DescribeFHIRBulkPatchJob,
 		HealthLakeActions.DescribeFHIRDatastore,
 		HealthLakeActions.DescribeFHIRExportJob,
 		HealthLakeActions.DescribeFHIRExportJobWithGet,
@@ -222,6 +228,7 @@ export class HealthLakeActions {
 		HealthLakeActions.StartDataTransformationJob,
 		HealthLakeActions.StartFHIRBulkDeleteJob,
 		HealthLakeActions.StartFHIRBulkMemberMatchJob,
+		HealthLakeActions.StartFHIRBulkPatchJob,
 		HealthLakeActions.StartFHIRExportJob,
 		HealthLakeActions.StartFHIRExportJobWithGet,
 		HealthLakeActions.StartFHIRExportJobWithPost,

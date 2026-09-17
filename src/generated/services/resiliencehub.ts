@@ -1159,6 +1159,8 @@ export class ResiliencehubOperations {
 	static readonly DescribeResourceGroupingRecommendationTask: string[] = [
 		"resiliencehub:DescribeResourceGroupingRecommendationTask",
 	];
+	/** IAM actions required for the GetDependencyInsights API call. */
+	static readonly opGetDependencyInsights: string[] = [];
 	/** IAM actions required for the GetFailureModeFinding API call. */
 	static readonly opGetFailureModeFinding: string[] = [
 		"resiliencehub:GetFailureModeFinding",
@@ -1256,6 +1258,8 @@ export class ResiliencehubOperations {
 	static readonly ListMetrics: string[] = ["resiliencehub:ListMetrics"];
 	/** IAM actions required for the ListPolicies API call. */
 	static readonly ListPolicies: string[] = ["resiliencehub:ListPolicies"];
+	/** IAM actions required for the ListPolicyEvents API call. */
+	static readonly ListPolicyEvents: string[] = [];
 	/** IAM actions required for the ListRecommendationTemplates API call. */
 	static readonly ListRecommendationTemplates: string[] = [
 		"resiliencehub:ListRecommendationTemplates",
@@ -1373,6 +1377,8 @@ export class ResiliencehubOperations {
 		"resiliencehub:StartAppAssessment",
 		"resiliencehub:TagResource",
 	];
+	/** IAM actions required for the StartDependencyInsights API call. */
+	static readonly StartDependencyInsights: string[] = [];
 	/** IAM actions required for the StartFailureModeAssessment API call. */
 	static readonly StartFailureModeAssessment: string[] = [
 		"resiliencehub:StartFailureModeAssessment",
