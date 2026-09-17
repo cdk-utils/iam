@@ -2,6 +2,21 @@
   "Name": "notifications",
   "Actions": [
     {
+      "Name": "AccessSensitiveEvents",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "AssociateChannel",
       "Annotations": {
         "Properties": {
@@ -661,6 +676,26 @@
       }
     },
     {
+      "Name": "SubscribeSensitiveEvents",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ManagedNotificationConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "TagResource",
       "ActionConditionKeys": [
         "aws:RequestTag/${TagKey}",
@@ -720,6 +755,26 @@
       "Resources": [
         {
           "Name": "EventRule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateManagedNotificationChannelAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ManagedNotificationConfiguration"
         }
       ],
       "SupportedBy": {
@@ -791,6 +846,10 @@
         {
           "Name": "AssociateManagedNotificationAccountContact",
           "Service": "notifications"
+        },
+        {
+          "Name": "SubscribeSensitiveEvents",
+          "Service": "notifications"
         }
       ],
       "SDK": [
@@ -806,6 +865,10 @@
       "AuthorizedActions": [
         {
           "Name": "AssociateManagedNotificationAdditionalChannel",
+          "Service": "notifications"
+        },
+        {
+          "Name": "SubscribeSensitiveEvents",
           "Service": "notifications"
         }
       ],
@@ -1065,6 +1128,10 @@
       "Name": "GetManagedNotificationEvent",
       "AuthorizedActions": [
         {
+          "Name": "AccessSensitiveEvents",
+          "Service": "notifications"
+        },
+        {
           "Name": "GetManagedNotificationEvent",
           "Service": "notifications"
         }
@@ -1208,6 +1275,10 @@
     {
       "Name": "ListManagedNotificationEvents",
       "AuthorizedActions": [
+        {
+          "Name": "AccessSensitiveEvents",
+          "Service": "notifications"
+        },
         {
           "Name": "ListManagedNotificationEvents",
           "Service": "notifications"

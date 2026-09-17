@@ -3659,6 +3659,16 @@
       ]
     },
     {
+      "Name": "GetDependencyInsights",
+      "SDK": [
+        {
+          "Name": "resiliencehubv2",
+          "Method": "get_dependency_insights",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetFailureModeFinding",
       "AuthorizedActions": [
         {
@@ -4138,6 +4148,16 @@
         {
           "Name": "resiliencehubv2",
           "Method": "list_policies",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPolicyEvents",
+      "SDK": [
+        {
+          "Name": "resiliencehubv2",
+          "Method": "list_policy_events",
           "Package": "Boto3"
         }
       ]
@@ -4675,6 +4695,16 @@
         {
           "Name": "resiliencehub",
           "Method": "start_app_assessment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartDependencyInsights",
+      "SDK": [
+        {
+          "Name": "resiliencehubv2",
+          "Method": "start_dependency_insights",
           "Package": "Boto3"
         }
       ]

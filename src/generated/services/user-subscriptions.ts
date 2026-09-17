@@ -12,10 +12,22 @@ export class UserSubscriptionsActions {
 	/** The IAM service prefix. */
 	static readonly SERVICE_PREFIX = "user-subscriptions";
 
+	/** [Write] user-subscriptions:CancelPurchaseSession */
+	static readonly CancelPurchaseSession =
+		"user-subscriptions:CancelPurchaseSession";
+	/** [Write] user-subscriptions:ConfirmPurchaseSession */
+	static readonly ConfirmPurchaseSession =
+		"user-subscriptions:ConfirmPurchaseSession";
 	/** [Write] user-subscriptions:CreateClaim */
 	static readonly CreateClaim = "user-subscriptions:CreateClaim";
 	/** [Write] user-subscriptions:CreateClaimAddOn */
 	static readonly CreateClaimAddOn = "user-subscriptions:CreateClaimAddOn";
+	/** [Write] user-subscriptions:CreatePurchaseSession */
+	static readonly CreatePurchaseSession =
+		"user-subscriptions:CreatePurchaseSession";
+	/** [Write] user-subscriptions:CreateUpdatePlanPreview */
+	static readonly CreateUpdatePlanPreview =
+		"user-subscriptions:CreateUpdatePlanPreview";
 	/** [Write] user-subscriptions:DeleteAutoTopUpRule */
 	static readonly DeleteAutoTopUpRule =
 		"user-subscriptions:DeleteAutoTopUpRule";
@@ -24,9 +36,15 @@ export class UserSubscriptionsActions {
 	/** [Read] user-subscriptions:GetAutoTopUpRule */
 	static readonly actionGetAutoTopUpRule =
 		"user-subscriptions:GetAutoTopUpRule";
+	/** [Read] user-subscriptions:GetCurrentPlanDetails */
+	static readonly actionGetCurrentPlanDetails =
+		"user-subscriptions:GetCurrentPlanDetails";
 	/** [Read] user-subscriptions:GetEffectiveUsageLimit */
 	static readonly actionGetEffectiveUsageLimit =
 		"user-subscriptions:GetEffectiveUsageLimit";
+	/** [Read] user-subscriptions:GetPurchaseSession */
+	static readonly actionGetPurchaseSession =
+		"user-subscriptions:GetPurchaseSession";
 	/** [Read] user-subscriptions:GetUsageLimitHistory */
 	static readonly actionGetUsageLimitHistory =
 		"user-subscriptions:GetUsageLimitHistory";
@@ -58,13 +76,19 @@ export class UserSubscriptionsActions {
 	/** All read-level actions. */
 	static readonly AllReadActions: string[] = [
 		UserSubscriptionsActions.actionGetAutoTopUpRule,
+		UserSubscriptionsActions.actionGetCurrentPlanDetails,
 		UserSubscriptionsActions.actionGetEffectiveUsageLimit,
+		UserSubscriptionsActions.actionGetPurchaseSession,
 		UserSubscriptionsActions.actionGetUsageLimitHistory,
 	];
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
+		UserSubscriptionsActions.CancelPurchaseSession,
+		UserSubscriptionsActions.ConfirmPurchaseSession,
 		UserSubscriptionsActions.CreateClaim,
 		UserSubscriptionsActions.CreateClaimAddOn,
+		UserSubscriptionsActions.CreatePurchaseSession,
+		UserSubscriptionsActions.CreateUpdatePlanPreview,
 		UserSubscriptionsActions.DeleteAutoTopUpRule,
 		UserSubscriptionsActions.DeleteClaim,
 		UserSubscriptionsActions.actionSetAutoTopUpRule,

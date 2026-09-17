@@ -4356,6 +4356,16 @@
       ]
     },
     {
+      "Name": "SearchRecommendations",
+      "SDK": [
+        {
+          "Name": "customer-profiles",
+          "Method": "search_recommendations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "StartRecommender",
       "AuthorizedActions": [
         {

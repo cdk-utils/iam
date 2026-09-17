@@ -1409,6 +1409,7 @@ export class ConfigOperations {
 	/** IAM actions required for the PutOrganizationConfigRule API call. */
 	static readonly PutOrganizationConfigRule: string[] = [
 		"config:PutOrganizationConfigRule",
+		"config:TagResource",
 	];
 	/** IAM actions required for the PutOrganizationConformancePack API call. */
 	static readonly PutOrganizationConformancePack: string[] = [

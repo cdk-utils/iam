@@ -1558,6 +1558,8 @@ export class ProfileOperations {
 	];
 	/** IAM actions required for the SearchProfiles API call. */
 	static readonly SearchProfiles: string[] = ["profile:SearchProfiles"];
+	/** IAM actions required for the SearchRecommendations API call. */
+	static readonly SearchRecommendations: string[] = [];
 	/** IAM actions required for the StartRecommender API call. */
 	static readonly StartRecommender: string[] = ["profile:StartRecommender"];
 	/** IAM actions required for the StartUploadJob API call. */

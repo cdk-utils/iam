@@ -12,6 +12,8 @@ export class NotificationsActions {
 	/** The IAM service prefix. */
 	static readonly SERVICE_PREFIX = "notifications";
 
+	/** [Read] notifications:AccessSensitiveEvents */
+	static readonly AccessSensitiveEvents = "notifications:AccessSensitiveEvents";
 	/** [Write] notifications:AssociateChannel */
 	static readonly AssociateChannel = "notifications:AssociateChannel";
 	/** [Write] notifications:AssociateManagedNotificationAccountContact */
@@ -112,18 +114,25 @@ export class NotificationsActions {
 	/** [Write] notifications:RegisterNotificationHub */
 	static readonly RegisterNotificationHub =
 		"notifications:RegisterNotificationHub";
+	/** [Write] notifications:SubscribeSensitiveEvents */
+	static readonly SubscribeSensitiveEvents =
+		"notifications:SubscribeSensitiveEvents";
 	/** [Tagging] notifications:TagResource */
 	static readonly TagResource = "notifications:TagResource";
 	/** [Tagging] notifications:UntagResource */
 	static readonly UntagResource = "notifications:UntagResource";
 	/** [Write] notifications:UpdateEventRule */
 	static readonly UpdateEventRule = "notifications:UpdateEventRule";
+	/** [Write] notifications:UpdateManagedNotificationChannelAssociation */
+	static readonly UpdateManagedNotificationChannelAssociation =
+		"notifications:UpdateManagedNotificationChannelAssociation";
 	/** [Write] notifications:UpdateNotificationConfiguration */
 	static readonly UpdateNotificationConfiguration =
 		"notifications:UpdateNotificationConfiguration";
 
 	/** All read-level actions. */
 	static readonly AllReadActions: string[] = [
+		NotificationsActions.AccessSensitiveEvents,
 		NotificationsActions.actionGetEventRule,
 		NotificationsActions.actionGetFeatureOptInStatus,
 		NotificationsActions.actionGetManagedNotificationChildEvent,
@@ -150,7 +159,9 @@ export class NotificationsActions {
 		NotificationsActions.DisassociateOrganizationalUnit,
 		NotificationsActions.PutFeatureOptInStatus,
 		NotificationsActions.RegisterNotificationHub,
+		NotificationsActions.SubscribeSensitiveEvents,
 		NotificationsActions.UpdateEventRule,
+		NotificationsActions.UpdateManagedNotificationChannelAssociation,
 		NotificationsActions.UpdateNotificationConfiguration,
 	];
 	/** All list-level actions. */
@@ -598,10 +609,12 @@ export class NotificationsOperations {
 	/** IAM actions required for the AssociateManagedNotificationAccountContact API call. */
 	static readonly AssociateManagedNotificationAccountContact: string[] = [
 		"notifications:AssociateManagedNotificationAccountContact",
+		"notifications:SubscribeSensitiveEvents",
 	];
 	/** IAM actions required for the AssociateManagedNotificationAdditionalChannel API call. */
 	static readonly AssociateManagedNotificationAdditionalChannel: string[] = [
 		"notifications:AssociateManagedNotificationAdditionalChannel",
+		"notifications:SubscribeSensitiveEvents",
 	];
 	/** IAM actions required for the AssociateOrganizationalUnit API call. */
 	static readonly AssociateOrganizationalUnit: string[] = [
@@ -660,6 +673,7 @@ export class NotificationsOperations {
 	];
 	/** IAM actions required for the GetManagedNotificationEvent API call. */
 	static readonly opGetManagedNotificationEvent: string[] = [
+		"notifications:AccessSensitiveEvents",
 		"notifications:GetManagedNotificationEvent",
 	];
 	/** IAM actions required for the GetNotificationConfiguration API call. */
@@ -692,6 +706,7 @@ export class NotificationsOperations {
 	];
 	/** IAM actions required for the ListManagedNotificationEvents API call. */
 	static readonly ListManagedNotificationEvents: string[] = [
+		"notifications:AccessSensitiveEvents",
 		"notifications:ListManagedNotificationEvents",
 	];
 	/** IAM actions required for the ListMemberAccounts API call. */

@@ -29,7 +29,9 @@ new user_subscriptions.UserSubscriptionsActions()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.user_subscriptions.UserSubscriptionsActions.property.actionGetAutoTopUpRule">actionGetAutoTopUpRule</a></code> | <code>string</code> | [Read] user-subscriptions:GetAutoTopUpRule. |
+| <code><a href="#@cdk_utils/iam.user_subscriptions.UserSubscriptionsActions.property.actionGetCurrentPlanDetails">actionGetCurrentPlanDetails</a></code> | <code>string</code> | [Read] user-subscriptions:GetCurrentPlanDetails. |
 | <code><a href="#@cdk_utils/iam.user_subscriptions.UserSubscriptionsActions.property.actionGetEffectiveUsageLimit">actionGetEffectiveUsageLimit</a></code> | <code>string</code> | [Read] user-subscriptions:GetEffectiveUsageLimit. |
+| <code><a href="#@cdk_utils/iam.user_subscriptions.UserSubscriptionsActions.property.actionGetPurchaseSession">actionGetPurchaseSession</a></code> | <code>string</code> | [Read] user-subscriptions:GetPurchaseSession. |
 | <code><a href="#@cdk_utils/iam.user_subscriptions.UserSubscriptionsActions.property.actionGetUsageLimitHistory">actionGetUsageLimitHistory</a></code> | <code>string</code> | [Read] user-subscriptions:GetUsageLimitHistory. |
 | <code><a href="#@cdk_utils/iam.user_subscriptions.UserSubscriptionsActions.property.actionSetAutoTopUpRule">actionSetAutoTopUpRule</a></code> | <code>string</code> | [Write] user-subscriptions:SetAutoTopUpRule. |
 | <code><a href="#@cdk_utils/iam.user_subscriptions.UserSubscriptionsActions.property.actionSetOverageConfig">actionSetOverageConfig</a></code> | <code>string</code> | [Write] user-subscriptions:SetOverageConfig. |
@@ -39,8 +41,12 @@ new user_subscriptions.UserSubscriptionsActions()
 | <code><a href="#@cdk_utils/iam.user_subscriptions.UserSubscriptionsActions.property.AllReadActions">AllReadActions</a></code> | <code>string[]</code> | All read-level actions. |
 | <code><a href="#@cdk_utils/iam.user_subscriptions.UserSubscriptionsActions.property.AllTaggingActions">AllTaggingActions</a></code> | <code>string[]</code> | All tagging-level actions. |
 | <code><a href="#@cdk_utils/iam.user_subscriptions.UserSubscriptionsActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
+| <code><a href="#@cdk_utils/iam.user_subscriptions.UserSubscriptionsActions.property.CancelPurchaseSession">CancelPurchaseSession</a></code> | <code>string</code> | [Write] user-subscriptions:CancelPurchaseSession. |
+| <code><a href="#@cdk_utils/iam.user_subscriptions.UserSubscriptionsActions.property.ConfirmPurchaseSession">ConfirmPurchaseSession</a></code> | <code>string</code> | [Write] user-subscriptions:ConfirmPurchaseSession. |
 | <code><a href="#@cdk_utils/iam.user_subscriptions.UserSubscriptionsActions.property.CreateClaim">CreateClaim</a></code> | <code>string</code> | [Write] user-subscriptions:CreateClaim. |
 | <code><a href="#@cdk_utils/iam.user_subscriptions.UserSubscriptionsActions.property.CreateClaimAddOn">CreateClaimAddOn</a></code> | <code>string</code> | [Write] user-subscriptions:CreateClaimAddOn. |
+| <code><a href="#@cdk_utils/iam.user_subscriptions.UserSubscriptionsActions.property.CreatePurchaseSession">CreatePurchaseSession</a></code> | <code>string</code> | [Write] user-subscriptions:CreatePurchaseSession. |
+| <code><a href="#@cdk_utils/iam.user_subscriptions.UserSubscriptionsActions.property.CreateUpdatePlanPreview">CreateUpdatePlanPreview</a></code> | <code>string</code> | [Write] user-subscriptions:CreateUpdatePlanPreview. |
 | <code><a href="#@cdk_utils/iam.user_subscriptions.UserSubscriptionsActions.property.DeleteAutoTopUpRule">DeleteAutoTopUpRule</a></code> | <code>string</code> | [Write] user-subscriptions:DeleteAutoTopUpRule. |
 | <code><a href="#@cdk_utils/iam.user_subscriptions.UserSubscriptionsActions.property.DeleteClaim">DeleteClaim</a></code> | <code>string</code> | [Write] user-subscriptions:DeleteClaim. |
 | <code><a href="#@cdk_utils/iam.user_subscriptions.UserSubscriptionsActions.property.ListApplicationClaims">ListApplicationClaims</a></code> | <code>string</code> | [List] user-subscriptions:ListApplicationClaims. |
@@ -66,6 +72,18 @@ public readonly actionGetAutoTopUpRule: string;
 
 ---
 
+##### `actionGetCurrentPlanDetails`<sup>Required</sup> <a name="actionGetCurrentPlanDetails" id="@cdk_utils/iam.user_subscriptions.UserSubscriptionsActions.property.actionGetCurrentPlanDetails"></a>
+
+```typescript
+public readonly actionGetCurrentPlanDetails: string;
+```
+
+- *Type:* string
+
+[Read] user-subscriptions:GetCurrentPlanDetails.
+
+---
+
 ##### `actionGetEffectiveUsageLimit`<sup>Required</sup> <a name="actionGetEffectiveUsageLimit" id="@cdk_utils/iam.user_subscriptions.UserSubscriptionsActions.property.actionGetEffectiveUsageLimit"></a>
 
 ```typescript
@@ -75,6 +93,18 @@ public readonly actionGetEffectiveUsageLimit: string;
 - *Type:* string
 
 [Read] user-subscriptions:GetEffectiveUsageLimit.
+
+---
+
+##### `actionGetPurchaseSession`<sup>Required</sup> <a name="actionGetPurchaseSession" id="@cdk_utils/iam.user_subscriptions.UserSubscriptionsActions.property.actionGetPurchaseSession"></a>
+
+```typescript
+public readonly actionGetPurchaseSession: string;
+```
+
+- *Type:* string
+
+[Read] user-subscriptions:GetPurchaseSession.
 
 ---
 
@@ -186,6 +216,30 @@ All write-level actions.
 
 ---
 
+##### `CancelPurchaseSession`<sup>Required</sup> <a name="CancelPurchaseSession" id="@cdk_utils/iam.user_subscriptions.UserSubscriptionsActions.property.CancelPurchaseSession"></a>
+
+```typescript
+public readonly CancelPurchaseSession: string;
+```
+
+- *Type:* string
+
+[Write] user-subscriptions:CancelPurchaseSession.
+
+---
+
+##### `ConfirmPurchaseSession`<sup>Required</sup> <a name="ConfirmPurchaseSession" id="@cdk_utils/iam.user_subscriptions.UserSubscriptionsActions.property.ConfirmPurchaseSession"></a>
+
+```typescript
+public readonly ConfirmPurchaseSession: string;
+```
+
+- *Type:* string
+
+[Write] user-subscriptions:ConfirmPurchaseSession.
+
+---
+
 ##### `CreateClaim`<sup>Required</sup> <a name="CreateClaim" id="@cdk_utils/iam.user_subscriptions.UserSubscriptionsActions.property.CreateClaim"></a>
 
 ```typescript
@@ -207,6 +261,30 @@ public readonly CreateClaimAddOn: string;
 - *Type:* string
 
 [Write] user-subscriptions:CreateClaimAddOn.
+
+---
+
+##### `CreatePurchaseSession`<sup>Required</sup> <a name="CreatePurchaseSession" id="@cdk_utils/iam.user_subscriptions.UserSubscriptionsActions.property.CreatePurchaseSession"></a>
+
+```typescript
+public readonly CreatePurchaseSession: string;
+```
+
+- *Type:* string
+
+[Write] user-subscriptions:CreatePurchaseSession.
+
+---
+
+##### `CreateUpdatePlanPreview`<sup>Required</sup> <a name="CreateUpdatePlanPreview" id="@cdk_utils/iam.user_subscriptions.UserSubscriptionsActions.property.CreateUpdatePlanPreview"></a>
+
+```typescript
+public readonly CreateUpdatePlanPreview: string;
+```
+
+- *Type:* string
+
+[Write] user-subscriptions:CreateUpdatePlanPreview.
 
 ---
 
