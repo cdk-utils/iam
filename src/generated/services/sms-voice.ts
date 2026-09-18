@@ -190,6 +190,9 @@ export class SMSVoiceActions {
 		"sms-voice:GetProtectConfigurationCountryRuleSet";
 	/** [Read] sms-voice:GetResourcePolicy */
 	static readonly actionGetResourcePolicy = "sms-voice:GetResourcePolicy";
+	/** [Read] sms-voice:ListAvailablePhoneNumbers */
+	static readonly ListAvailablePhoneNumbers =
+		"sms-voice:ListAvailablePhoneNumbers";
 	/** [Read] sms-voice:ListConfigurationSets */
 	static readonly ListConfigurationSets = "sms-voice:ListConfigurationSets";
 	/** [Read] sms-voice:ListNotifyCountries */
@@ -329,6 +332,7 @@ export class SMSVoiceActions {
 		SMSVoiceActions.actionGetConfigurationSetEventDestinations,
 		SMSVoiceActions.actionGetProtectConfigurationCountryRuleSet,
 		SMSVoiceActions.actionGetResourcePolicy,
+		SMSVoiceActions.ListAvailablePhoneNumbers,
 		SMSVoiceActions.ListConfigurationSets,
 		SMSVoiceActions.ListNotifyCountries,
 		SMSVoiceActions.ListPoolOriginationIdentities,
@@ -1465,7 +1469,9 @@ export class SMSVoiceOperations {
 		"sms-voice:GetResourcePolicy",
 	];
 	/** IAM actions required for the ListAvailablePhoneNumbers API call. */
-	static readonly ListAvailablePhoneNumbers: string[] = [];
+	static readonly ListAvailablePhoneNumbers: string[] = [
+		"sms-voice:ListAvailablePhoneNumbers",
+	];
 	/** IAM actions required for the ListConfigurationSets API call. */
 	static readonly ListConfigurationSets: string[] = [
 		"sms-voice:ListConfigurationSets",

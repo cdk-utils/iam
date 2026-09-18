@@ -954,6 +954,7 @@ new securityagent.SecurityagentActions()
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.BatchGetThreatModelJobTasks">BatchGetThreatModelJobTasks</a></code> | <code>string</code> | [Read] securityagent:BatchGetThreatModelJobTasks. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.BatchGetThreatModels">BatchGetThreatModels</a></code> | <code>string</code> | [Read] securityagent:BatchGetThreatModels. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.BatchGetThreats">BatchGetThreats</a></code> | <code>string</code> | [Read] securityagent:BatchGetThreats. |
+| <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.BatchGetValidationRuns">BatchGetValidationRuns</a></code> | <code>string</code> | [Read] securityagent:BatchGetValidationRuns. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.BatchUpdateSecurityRequirements">BatchUpdateSecurityRequirements</a></code> | <code>string</code> | [Write] securityagent:BatchUpdateSecurityRequirements. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.CreateAgentSpace">CreateAgentSpace</a></code> | <code>string</code> | [Write] securityagent:CreateAgentSpace. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.CreateApplication">CreateApplication</a></code> | <code>string</code> | [Write] securityagent:CreateApplication. |
@@ -991,6 +992,7 @@ new securityagent.SecurityagentActions()
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.ListCodeReviews">ListCodeReviews</a></code> | <code>string</code> | [List] securityagent:ListCodeReviews. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.ListDesignReviewComments">ListDesignReviewComments</a></code> | <code>string</code> | [List] securityagent:ListDesignReviewComments. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.ListDesignReviews">ListDesignReviews</a></code> | <code>string</code> | [List] securityagent:ListDesignReviews. |
+| <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.ListDiscoveredDomains">ListDiscoveredDomains</a></code> | <code>string</code> | [List] securityagent:ListDiscoveredDomains. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.ListDiscoveredEndpoints">ListDiscoveredEndpoints</a></code> | <code>string</code> | [List] securityagent:ListDiscoveredEndpoints. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.ListFindings">ListFindings</a></code> | <code>string</code> | [List] securityagent:ListFindings. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.ListIntegratedResources">ListIntegratedResources</a></code> | <code>string</code> | [List] securityagent:ListIntegratedResources. |
@@ -1015,6 +1017,7 @@ new securityagent.SecurityagentActions()
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.StartCodeReviewJob">StartCodeReviewJob</a></code> | <code>string</code> | [Write] securityagent:StartCodeReviewJob. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.StartPentestJob">StartPentestJob</a></code> | <code>string</code> | [Write] securityagent:StartPentestJob. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.StartThreatModelJob">StartThreatModelJob</a></code> | <code>string</code> | [Write] securityagent:StartThreatModelJob. |
+| <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.StartValidationRun">StartValidationRun</a></code> | <code>string</code> | [Write] securityagent:StartValidationRun. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.StopCodeReviewJob">StopCodeReviewJob</a></code> | <code>string</code> | [Write] securityagent:StopCodeReviewJob. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.StopPentestJob">StopPentestJob</a></code> | <code>string</code> | [Write] securityagent:StopPentestJob. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.StopThreatModelJob">StopThreatModelJob</a></code> | <code>string</code> | [Write] securityagent:StopThreatModelJob. |
@@ -1024,6 +1027,7 @@ new securityagent.SecurityagentActions()
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.UpdateAgentSpace">UpdateAgentSpace</a></code> | <code>string</code> | [Write] securityagent:UpdateAgentSpace. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.UpdateApplication">UpdateApplication</a></code> | <code>string</code> | [Write] securityagent:UpdateApplication. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.UpdateCodeReview">UpdateCodeReview</a></code> | <code>string</code> | [Write] securityagent:UpdateCodeReview. |
+| <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.UpdateDiscoveredDomains">UpdateDiscoveredDomains</a></code> | <code>string</code> | [Write] securityagent:UpdateDiscoveredDomains. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.UpdateFinding">UpdateFinding</a></code> | <code>string</code> | [Write] securityagent:UpdateFinding. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.UpdateIntegratedResources">UpdateIntegratedResources</a></code> | <code>string</code> | [Write] securityagent:UpdateIntegratedResources. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.UpdatePentest">UpdatePentest</a></code> | <code>string</code> | [Write] securityagent:UpdatePentest. |
@@ -1481,6 +1485,18 @@ public readonly BatchGetThreats: string;
 
 ---
 
+##### `BatchGetValidationRuns`<sup>Required</sup> <a name="BatchGetValidationRuns" id="@cdk_utils/iam.securityagent.SecurityagentActions.property.BatchGetValidationRuns"></a>
+
+```typescript
+public readonly BatchGetValidationRuns: string;
+```
+
+- *Type:* string
+
+[Read] securityagent:BatchGetValidationRuns.
+
+---
+
 ##### `BatchUpdateSecurityRequirements`<sup>Required</sup> <a name="BatchUpdateSecurityRequirements" id="@cdk_utils/iam.securityagent.SecurityagentActions.property.BatchUpdateSecurityRequirements"></a>
 
 ```typescript
@@ -1925,6 +1941,18 @@ public readonly ListDesignReviews: string;
 
 ---
 
+##### `ListDiscoveredDomains`<sup>Required</sup> <a name="ListDiscoveredDomains" id="@cdk_utils/iam.securityagent.SecurityagentActions.property.ListDiscoveredDomains"></a>
+
+```typescript
+public readonly ListDiscoveredDomains: string;
+```
+
+- *Type:* string
+
+[List] securityagent:ListDiscoveredDomains.
+
+---
+
 ##### `ListDiscoveredEndpoints`<sup>Required</sup> <a name="ListDiscoveredEndpoints" id="@cdk_utils/iam.securityagent.SecurityagentActions.property.ListDiscoveredEndpoints"></a>
 
 ```typescript
@@ -2213,6 +2241,18 @@ public readonly StartThreatModelJob: string;
 
 ---
 
+##### `StartValidationRun`<sup>Required</sup> <a name="StartValidationRun" id="@cdk_utils/iam.securityagent.SecurityagentActions.property.StartValidationRun"></a>
+
+```typescript
+public readonly StartValidationRun: string;
+```
+
+- *Type:* string
+
+[Write] securityagent:StartValidationRun.
+
+---
+
 ##### `StopCodeReviewJob`<sup>Required</sup> <a name="StopCodeReviewJob" id="@cdk_utils/iam.securityagent.SecurityagentActions.property.StopCodeReviewJob"></a>
 
 ```typescript
@@ -2318,6 +2358,18 @@ public readonly UpdateCodeReview: string;
 - *Type:* string
 
 [Write] securityagent:UpdateCodeReview.
+
+---
+
+##### `UpdateDiscoveredDomains`<sup>Required</sup> <a name="UpdateDiscoveredDomains" id="@cdk_utils/iam.securityagent.SecurityagentActions.property.UpdateDiscoveredDomains"></a>
+
+```typescript
+public readonly UpdateDiscoveredDomains: string;
+```
+
+- *Type:* string
+
+[Write] securityagent:UpdateDiscoveredDomains.
 
 ---
 

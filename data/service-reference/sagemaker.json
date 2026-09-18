@@ -17395,6 +17395,12 @@
     },
     {
       "Name": "UpdateRecord",
+      "AuthorizedActions": [
+        {
+          "Name": "PutRecord",
+          "Service": "sagemaker"
+        }
+      ],
       "SDK": [
         {
           "Name": "sagemaker-featurestore-runtime",

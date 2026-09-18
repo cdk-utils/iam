@@ -2544,7 +2544,9 @@ export class GlueOperations {
 		"glue:GetDataQualityResult",
 	];
 	/** IAM actions required for the BatchGetDataQualityRulesetEvaluationRun API call. */
-	static readonly BatchGetDataQualityRulesetEvaluationRun: string[] = [];
+	static readonly BatchGetDataQualityRulesetEvaluationRun: string[] = [
+		"glue:GetDataQualityRulesetEvaluationRun",
+	];
 	/** IAM actions required for the BatchGetDevEndpoints API call. */
 	static readonly BatchGetDevEndpoints: string[] = [
 		"glue:BatchGetDevEndpoints",

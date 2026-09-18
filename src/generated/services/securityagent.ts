@@ -70,6 +70,9 @@ export class SecurityagentActions {
 	static readonly BatchGetThreatModels = "securityagent:BatchGetThreatModels";
 	/** [Read] securityagent:BatchGetThreats */
 	static readonly BatchGetThreats = "securityagent:BatchGetThreats";
+	/** [Read] securityagent:BatchGetValidationRuns */
+	static readonly BatchGetValidationRuns =
+		"securityagent:BatchGetValidationRuns";
 	/** [Write] securityagent:BatchUpdateSecurityRequirements */
 	static readonly BatchUpdateSecurityRequirements =
 		"securityagent:BatchUpdateSecurityRequirements";
@@ -182,6 +185,8 @@ export class SecurityagentActions {
 		"securityagent:ListDesignReviewComments";
 	/** [List] securityagent:ListDesignReviews */
 	static readonly ListDesignReviews = "securityagent:ListDesignReviews";
+	/** [List] securityagent:ListDiscoveredDomains */
+	static readonly ListDiscoveredDomains = "securityagent:ListDiscoveredDomains";
 	/** [List] securityagent:ListDiscoveredEndpoints */
 	static readonly ListDiscoveredEndpoints =
 		"securityagent:ListDiscoveredEndpoints";
@@ -237,6 +242,8 @@ export class SecurityagentActions {
 	static readonly StartPentestJob = "securityagent:StartPentestJob";
 	/** [Write] securityagent:StartThreatModelJob */
 	static readonly StartThreatModelJob = "securityagent:StartThreatModelJob";
+	/** [Write] securityagent:StartValidationRun */
+	static readonly StartValidationRun = "securityagent:StartValidationRun";
 	/** [Write] securityagent:StopCodeReviewJob */
 	static readonly StopCodeReviewJob = "securityagent:StopCodeReviewJob";
 	/** [Write] securityagent:StopPentestJob */
@@ -256,6 +263,9 @@ export class SecurityagentActions {
 	static readonly UpdateApplication = "securityagent:UpdateApplication";
 	/** [Write] securityagent:UpdateCodeReview */
 	static readonly UpdateCodeReview = "securityagent:UpdateCodeReview";
+	/** [Write] securityagent:UpdateDiscoveredDomains */
+	static readonly UpdateDiscoveredDomains =
+		"securityagent:UpdateDiscoveredDomains";
 	/** [Write] securityagent:UpdateFinding */
 	static readonly UpdateFinding = "securityagent:UpdateFinding";
 	/** [Write] securityagent:UpdateIntegratedResources */
@@ -299,6 +309,7 @@ export class SecurityagentActions {
 		SecurityagentActions.BatchGetThreatModelJobs,
 		SecurityagentActions.BatchGetThreatModels,
 		SecurityagentActions.BatchGetThreats,
+		SecurityagentActions.BatchGetValidationRuns,
 		SecurityagentActions.DescribePrivateConnection,
 		SecurityagentActions.actionGetApplication,
 		SecurityagentActions.actionGetArtifact,
@@ -353,6 +364,7 @@ export class SecurityagentActions {
 		SecurityagentActions.StartCodeReviewJob,
 		SecurityagentActions.StartPentestJob,
 		SecurityagentActions.StartThreatModelJob,
+		SecurityagentActions.StartValidationRun,
 		SecurityagentActions.StopCodeReviewJob,
 		SecurityagentActions.StopPentestJob,
 		SecurityagentActions.StopThreatModelJob,
@@ -360,6 +372,7 @@ export class SecurityagentActions {
 		SecurityagentActions.UpdateAgentSpace,
 		SecurityagentActions.UpdateApplication,
 		SecurityagentActions.UpdateCodeReview,
+		SecurityagentActions.UpdateDiscoveredDomains,
 		SecurityagentActions.UpdateFinding,
 		SecurityagentActions.UpdateIntegratedResources,
 		SecurityagentActions.UpdatePentest,
@@ -381,6 +394,7 @@ export class SecurityagentActions {
 		SecurityagentActions.ListCodeReviews,
 		SecurityagentActions.ListDesignReviewComments,
 		SecurityagentActions.ListDesignReviews,
+		SecurityagentActions.ListDiscoveredDomains,
 		SecurityagentActions.ListDiscoveredEndpoints,
 		SecurityagentActions.ListFindings,
 		SecurityagentActions.ListIntegratedResources,

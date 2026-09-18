@@ -331,6 +331,8 @@ export class SocialMessagingOperations {
 	];
 	/** IAM actions required for the GetWhatsAppBusinessPublicKey API call. */
 	static readonly opGetWhatsAppBusinessPublicKey: string[] = [];
+	/** IAM actions required for the GetWhatsAppCallPermission API call. */
+	static readonly opGetWhatsAppCallPermission: string[] = [];
 	/** IAM actions required for the GetWhatsAppFlow API call. */
 	static readonly opGetWhatsAppFlow: string[] = [
 		"social-messaging:GetWhatsAppFlow",
@@ -386,6 +388,8 @@ export class SocialMessagingOperations {
 	];
 	/** IAM actions required for the PutWhatsAppBusinessPublicKey API call. */
 	static readonly PutWhatsAppBusinessPublicKey: string[] = [];
+	/** IAM actions required for the SendWhatsAppCallEvent API call. */
+	static readonly SendWhatsAppCallEvent: string[] = [];
 	/** IAM actions required for the SendWhatsAppConversionEvent API call. */
 	static readonly SendWhatsAppConversionEvent: string[] = [];
 	/** IAM actions required for the SendWhatsAppMessage API call. */
@@ -396,6 +400,8 @@ export class SocialMessagingOperations {
 	static readonly TagResource: string[] = ["social-messaging:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
 	static readonly UntagResource: string[] = ["social-messaging:UntagResource"];
+	/** IAM actions required for the UpdateLinkedWhatsAppBusinessAccountPhoneNumber API call. */
+	static readonly UpdateLinkedWhatsAppBusinessAccountPhoneNumber: string[] = [];
 	/** IAM actions required for the UpdateWhatsAppFlow API call. */
 	static readonly UpdateWhatsAppFlow: string[] = [
 		"social-messaging:UpdateWhatsAppFlow",

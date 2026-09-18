@@ -743,6 +743,8 @@ export class NotificationsOperations {
 	static readonly UntagResource: string[] = ["notifications:UntagResource"];
 	/** IAM actions required for the UpdateEventRule API call. */
 	static readonly UpdateEventRule: string[] = ["notifications:UpdateEventRule"];
+	/** IAM actions required for the UpdateManagedNotificationChannelAssociation API call. */
+	static readonly UpdateManagedNotificationChannelAssociation: string[] = [];
 	/** IAM actions required for the UpdateNotificationConfiguration API call. */
 	static readonly UpdateNotificationConfiguration: string[] = [
 		"notifications:UpdateNotificationConfiguration",

@@ -782,7 +782,10 @@ export class GroundStationOperations {
 		"groundstation:ListTagsForResource",
 	];
 	/** IAM actions required for the RegisterAgent API call. */
-	static readonly RegisterAgent: string[] = ["groundstation:RegisterAgent"];
+	static readonly RegisterAgent: string[] = [
+		"groundstation:RegisterAgent",
+		"groundstation:TagResource",
+	];
 	/** IAM actions required for the ReserveContact API call. */
 	static readonly ReserveContact: string[] = [
 		"groundstation:ReserveContact",

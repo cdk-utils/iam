@@ -247,29 +247,22 @@ export class InvoicingOperations {
 	/** IAM actions required for the BatchGetInvoiceProfile API call. */
 	static readonly BatchGetInvoiceProfile: string[] = [
 		"invoicing:BatchGetInvoiceProfile",
-		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the CreateInvoiceUnit API call. */
 	static readonly CreateInvoiceUnit: string[] = [
 		"invoicing:CreateInvoiceUnit",
 		"invoicing:TagResource",
-		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the CreateProcurementPortalPreference API call. */
 	static readonly CreateProcurementPortalPreference: string[] = [
 		"invoicing:CreateProcurementPortalPreference",
-		"aws-portal:ModifyBilling",
 		"invoicing:TagResource",
 	];
 	/** IAM actions required for the DeleteInvoiceUnit API call. */
-	static readonly DeleteInvoiceUnit: string[] = [
-		"invoicing:DeleteInvoiceUnit",
-		"aws-portal:ViewBilling",
-	];
+	static readonly DeleteInvoiceUnit: string[] = ["invoicing:DeleteInvoiceUnit"];
 	/** IAM actions required for the DeleteProcurementPortalPreference API call. */
 	static readonly DeleteProcurementPortalPreference: string[] = [
 		"invoicing:DeleteProcurementPortalPreference",
-		"aws-portal:ModifyBilling",
 	];
 	/** IAM actions required for the GetInvoicePDF API call. */
 	static readonly opGetInvoicePDF: string[] = [
@@ -277,14 +270,10 @@ export class InvoicingOperations {
 		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the GetInvoiceUnit API call. */
-	static readonly opGetInvoiceUnit: string[] = [
-		"invoicing:GetInvoiceUnit",
-		"aws-portal:ViewBilling",
-	];
+	static readonly opGetInvoiceUnit: string[] = ["invoicing:GetInvoiceUnit"];
 	/** IAM actions required for the GetProcurementPortalPreference API call. */
 	static readonly opGetProcurementPortalPreference: string[] = [
 		"invoicing:GetProcurementPortalPreference",
-		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the ListInvoiceSummaries API call. */
 	static readonly ListInvoiceSummaries: string[] = [
@@ -292,14 +281,10 @@ export class InvoicingOperations {
 		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the ListInvoiceUnits API call. */
-	static readonly ListInvoiceUnits: string[] = [
-		"invoicing:ListInvoiceUnits",
-		"aws-portal:ViewBilling",
-	];
+	static readonly ListInvoiceUnits: string[] = ["invoicing:ListInvoiceUnits"];
 	/** IAM actions required for the ListProcurementPortalPreferences API call. */
 	static readonly ListProcurementPortalPreferences: string[] = [
 		"invoicing:ListProcurementPortalPreferences",
-		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the ListProcurementPortalSuppliers API call. */
 	static readonly ListProcurementPortalSuppliers: string[] = [
@@ -312,11 +297,9 @@ export class InvoicingOperations {
 	/** IAM actions required for the ListTagsForResource API call. */
 	static readonly ListTagsForResource: string[] = [
 		"invoicing:ListTagsForResource",
-		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the PutProcurementPortalPreference API call. */
 	static readonly PutProcurementPortalPreference: string[] = [
-		"aws-portal:ModifyBilling",
 		"invoicing:PutProcurementPortalPreference",
 	];
 	/** IAM actions required for the SendProcurementPortalValidation API call. */
@@ -324,23 +307,13 @@ export class InvoicingOperations {
 		"invoicing:SendProcurementPortalValidation",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TagResource: string[] = [
-		"aws-portal:ModifyBilling",
-		"invoicing:TagResource",
-	];
+	static readonly TagResource: string[] = ["invoicing:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UntagResource: string[] = [
-		"aws-portal:ModifyBilling",
-		"invoicing:UntagResource",
-	];
+	static readonly UntagResource: string[] = ["invoicing:UntagResource"];
 	/** IAM actions required for the UpdateInvoiceUnit API call. */
-	static readonly UpdateInvoiceUnit: string[] = [
-		"invoicing:UpdateInvoiceUnit",
-		"aws-portal:ViewBilling",
-	];
+	static readonly UpdateInvoiceUnit: string[] = ["invoicing:UpdateInvoiceUnit"];
 	/** IAM actions required for the UpdateProcurementPortalPreferenceStatus API call. */
 	static readonly UpdateProcurementPortalPreferenceStatus: string[] = [
-		"aws-portal:ModifyBilling",
 		"invoicing:UpdateProcurementPortalPreferenceStatus",
 	];
 	/** IAM actions required for the VerifyProcurementPortalValidation API call. */

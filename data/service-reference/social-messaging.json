@@ -882,6 +882,16 @@
       ]
     },
     {
+      "Name": "GetWhatsAppCallPermission",
+      "SDK": [
+        {
+          "Name": "socialmessaging",
+          "Method": "get_whats_app_call_permission",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetWhatsAppFlow",
       "AuthorizedActions": [
         {
@@ -1109,6 +1119,16 @@
       ]
     },
     {
+      "Name": "SendWhatsAppCallEvent",
+      "SDK": [
+        {
+          "Name": "socialmessaging",
+          "Method": "send_whats_app_call_event",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "SendWhatsAppConversionEvent",
       "SDK": [
         {
@@ -1162,6 +1182,16 @@
         {
           "Name": "socialmessaging",
           "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateLinkedWhatsAppBusinessAccountPhoneNumber",
+      "SDK": [
+        {
+          "Name": "socialmessaging",
+          "Method": "update_linked_whats_app_business_account_phone_number",
           "Package": "Boto3"
         }
       ]

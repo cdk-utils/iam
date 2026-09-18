@@ -2034,6 +2034,16 @@
     },
     {
       "Name": "CreateResiliencyGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateResiliencyGroup",
+          "Service": "directconnect"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "directconnect"
+        }
+      ],
       "SDK": [
         {
           "Name": "directconnect",

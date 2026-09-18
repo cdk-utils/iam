@@ -6951,6 +6951,12 @@
     },
     {
       "Name": "BatchGetDataQualityRulesetEvaluationRun",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDataQualityRulesetEvaluationRun",
+          "Service": "glue"
+        }
+      ],
       "SDK": [
         {
           "Name": "glue",
