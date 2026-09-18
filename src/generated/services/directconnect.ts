@@ -710,7 +710,10 @@ export class DirectConnectOperations {
 		"directconnect:TagResource",
 	];
 	/** IAM actions required for the CreateResiliencyGroup API call. */
-	static readonly CreateResiliencyGroup: string[] = [];
+	static readonly CreateResiliencyGroup: string[] = [
+		"directconnect:CreateResiliencyGroup",
+		"directconnect:TagResource",
+	];
 	/** IAM actions required for the CreateTransitVirtualInterface API call. */
 	static readonly CreateTransitVirtualInterface: string[] = [
 		"directconnect:CreateTransitVirtualInterface",

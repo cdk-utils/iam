@@ -1415,6 +1415,10 @@
         {
           "Name": "RegisterAgent",
           "Service": "groundstation"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "groundstation"
         }
       ],
       "SDK": [

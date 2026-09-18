@@ -1862,6 +1862,7 @@ new notifications.NotificationsOperations()
 | <code><a href="#@cdk_utils/iam.notifications.NotificationsOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
 | <code><a href="#@cdk_utils/iam.notifications.NotificationsOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
 | <code><a href="#@cdk_utils/iam.notifications.NotificationsOperations.property.UpdateEventRule">UpdateEventRule</a></code> | <code>string[]</code> | IAM actions required for the UpdateEventRule API call. |
+| <code><a href="#@cdk_utils/iam.notifications.NotificationsOperations.property.UpdateManagedNotificationChannelAssociation">UpdateManagedNotificationChannelAssociation</a></code> | <code>string[]</code> | IAM actions required for the UpdateManagedNotificationChannelAssociation API call. |
 | <code><a href="#@cdk_utils/iam.notifications.NotificationsOperations.property.UpdateNotificationConfiguration">UpdateNotificationConfiguration</a></code> | <code>string[]</code> | IAM actions required for the UpdateNotificationConfiguration API call. |
 
 ---
@@ -2319,6 +2320,18 @@ public readonly UpdateEventRule: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateEventRule API call.
+
+---
+
+##### `UpdateManagedNotificationChannelAssociation`<sup>Required</sup> <a name="UpdateManagedNotificationChannelAssociation" id="@cdk_utils/iam.notifications.NotificationsOperations.property.UpdateManagedNotificationChannelAssociation"></a>
+
+```typescript
+public readonly UpdateManagedNotificationChannelAssociation: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateManagedNotificationChannelAssociation API call.
 
 ---
 

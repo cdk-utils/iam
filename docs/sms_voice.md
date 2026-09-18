@@ -1914,6 +1914,7 @@ new sms_voice.SMSVoiceActions()
 | <code><a href="#@cdk_utils/iam.sms_voice.SMSVoiceActions.property.DisassociateOriginationIdentity">DisassociateOriginationIdentity</a></code> | <code>string</code> | [Write] sms-voice:DisassociateOriginationIdentity. |
 | <code><a href="#@cdk_utils/iam.sms_voice.SMSVoiceActions.property.DisassociateProtectConfiguration">DisassociateProtectConfiguration</a></code> | <code>string</code> | [Write] sms-voice:DisassociateProtectConfiguration. |
 | <code><a href="#@cdk_utils/iam.sms_voice.SMSVoiceActions.property.DiscardRegistrationVersion">DiscardRegistrationVersion</a></code> | <code>string</code> | [Write] sms-voice:DiscardRegistrationVersion. |
+| <code><a href="#@cdk_utils/iam.sms_voice.SMSVoiceActions.property.ListAvailablePhoneNumbers">ListAvailablePhoneNumbers</a></code> | <code>string</code> | [Read] sms-voice:ListAvailablePhoneNumbers. |
 | <code><a href="#@cdk_utils/iam.sms_voice.SMSVoiceActions.property.ListConfigurationSets">ListConfigurationSets</a></code> | <code>string</code> | [Read] sms-voice:ListConfigurationSets. |
 | <code><a href="#@cdk_utils/iam.sms_voice.SMSVoiceActions.property.ListNotifyCountries">ListNotifyCountries</a></code> | <code>string</code> | [Read] sms-voice:ListNotifyCountries. |
 | <code><a href="#@cdk_utils/iam.sms_voice.SMSVoiceActions.property.ListPoolOriginationIdentities">ListPoolOriginationIdentities</a></code> | <code>string</code> | [Read] sms-voice:ListPoolOriginationIdentities. |
@@ -2947,6 +2948,18 @@ public readonly DiscardRegistrationVersion: string;
 - *Type:* string
 
 [Write] sms-voice:DiscardRegistrationVersion.
+
+---
+
+##### `ListAvailablePhoneNumbers`<sup>Required</sup> <a name="ListAvailablePhoneNumbers" id="@cdk_utils/iam.sms_voice.SMSVoiceActions.property.ListAvailablePhoneNumbers"></a>
+
+```typescript
+public readonly ListAvailablePhoneNumbers: string;
+```
+
+- *Type:* string
+
+[Read] sms-voice:ListAvailablePhoneNumbers.
 
 ---
 

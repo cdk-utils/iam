@@ -232,7 +232,11 @@ export class BackupSearchOperations {
 		"backup-search:TagResource",
 	];
 	/** IAM actions required for the StartSearchResultExportJob API call. */
-	static readonly StartSearchResultExportJob: string[] = [];
+	static readonly StartSearchResultExportJob: string[] = [
+		"iam:PassRole",
+		"backup-search:StartSearchResultExportJob",
+		"backup-search:TagResource",
+	];
 	/** IAM actions required for the StopSearchJob API call. */
 	static readonly StopSearchJob: string[] = ["backup-search:StopSearchJob"];
 	/** IAM actions required for the TagResource API call. */

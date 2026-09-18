@@ -1453,6 +1453,16 @@
       ]
     },
     {
+      "Name": "UpdateManagedNotificationChannelAssociation",
+      "SDK": [
+        {
+          "Name": "notifications",
+          "Method": "update_managed_notification_channel_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "UpdateNotificationConfiguration",
       "AuthorizedActions": [
         {
