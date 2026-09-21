@@ -5132,6 +5132,8 @@ export class ConnectOperations {
 	static readonly ListRules: string[] = ["connect:ListRules"];
 	/** IAM actions required for the ListSecurityKeys API call. */
 	static readonly ListSecurityKeys: string[] = ["connect:ListSecurityKeys"];
+	/** IAM actions required for the ListSecurityProfileAIAgents API call. */
+	static readonly ListSecurityProfileAIAgents: string[] = [];
 	/** IAM actions required for the ListSecurityProfileApplications API call. */
 	static readonly ListSecurityProfileApplications: string[] = [
 		"connect:ListSecurityProfileApplications",

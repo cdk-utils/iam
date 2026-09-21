@@ -948,6 +948,8 @@ export class TranscribeOperations {
 	static readonly UpdateCallAnalyticsCategory: string[] = [
 		"transcribe:UpdateCallAnalyticsCategory",
 	];
+	/** IAM actions required for the UpdateLanguageModel API call. */
+	static readonly UpdateLanguageModel: string[] = ["iam:PassRole"];
 	/** IAM actions required for the UpdateMedicalVocabulary API call. */
 	static readonly UpdateMedicalVocabulary: string[] = [
 		"transcribe:UpdateMedicalVocabulary",

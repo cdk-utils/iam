@@ -9470,6 +9470,10 @@
       "Name": "UpdateHarness",
       "AuthorizedActions": [
         {
+          "Name": "CreateAgentRuntime",
+          "Service": "bedrock-agentcore"
+        },
+        {
           "Name": "GetMemory",
           "Service": "bedrock-agentcore"
         },

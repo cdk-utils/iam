@@ -11279,8 +11279,7 @@
           "Name": "PassRole",
           "Context": {
             "iam:PassedToService": [
-              "job.sagemaker.amazonaws.com",
-              "sagemaker.amazonaws.com"
+              "job.sagemaker.amazonaws.com"
             ]
           },
           "Service": "iam"

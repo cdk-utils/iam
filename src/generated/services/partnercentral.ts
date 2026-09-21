@@ -2463,7 +2463,6 @@ export class PartnercentralOperations {
 	];
 	/** IAM actions required for the ListOpportunityFromEngagementTasks API call. */
 	static readonly ListOpportunityFromEngagementTasks: string[] = [
-		"partnercentral:ListEngagementFromOpportunityTasks",
 		"partnercentral:ListOpportunityFromEngagementTasks",
 	];
 	/** IAM actions required for the ListPartners API call. */
