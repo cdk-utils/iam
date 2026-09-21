@@ -3350,6 +3350,7 @@ export class GlueOperations {
 	];
 	/** IAM actions required for the UpdateConnection API call. */
 	static readonly UpdateConnection: string[] = [
+		"glue:DescribeConnectionType",
 		"iam:PassRole",
 		"glue:UpdateConnection",
 	];

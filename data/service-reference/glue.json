@@ -11276,6 +11276,10 @@
       "Name": "UpdateConnection",
       "AuthorizedActions": [
         {
+          "Name": "DescribeConnectionType",
+          "Service": "glue"
+        },
+        {
           "Name": "PassRole",
           "Context": {
             "iam:PassedToService": [

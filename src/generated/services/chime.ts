@@ -2022,7 +2022,7 @@ export class ChimeOperations {
 		"chime:BatchUpdatePhoneNumber",
 	];
 	/** IAM actions required for the BatchUpdateUser API call. */
-	static readonly BatchUpdateUser: string[] = [];
+	static readonly BatchUpdateUser: string[] = ["chime:BatchUpdateUser"];
 	/** IAM actions required for the ChannelFlowCallback API call. */
 	static readonly ChannelFlowCallback: string[] = ["chime:ChannelFlowCallback"];
 	/** IAM actions required for the CreateAccount API call. */

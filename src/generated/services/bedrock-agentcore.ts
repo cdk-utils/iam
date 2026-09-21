@@ -3948,6 +3948,7 @@ export class BedrockAgentcoreOperations {
 	];
 	/** IAM actions required for the UpdateHarness API call. */
 	static readonly UpdateHarness: string[] = [
+		"bedrock-agentcore:CreateAgentRuntime",
 		"bedrock-agentcore:GetMemory",
 		"iam:PassRole",
 		"bedrock-agentcore:UpdateAgentRuntime",

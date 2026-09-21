@@ -13822,6 +13822,16 @@
       ]
     },
     {
+      "Name": "ListSecurityProfileAIAgents",
+      "SDK": [
+        {
+          "Name": "connect",
+          "Method": "list_security_profile_ai_agents",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListSecurityProfileApplications",
       "AuthorizedActions": [
         {

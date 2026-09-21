@@ -2555,6 +2555,7 @@ new transcribe.TranscribeOperations()
 | <code><a href="#@cdk_utils/iam.transcribe.TranscribeOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
 | <code><a href="#@cdk_utils/iam.transcribe.TranscribeOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
 | <code><a href="#@cdk_utils/iam.transcribe.TranscribeOperations.property.UpdateCallAnalyticsCategory">UpdateCallAnalyticsCategory</a></code> | <code>string[]</code> | IAM actions required for the UpdateCallAnalyticsCategory API call. |
+| <code><a href="#@cdk_utils/iam.transcribe.TranscribeOperations.property.UpdateLanguageModel">UpdateLanguageModel</a></code> | <code>string[]</code> | IAM actions required for the UpdateLanguageModel API call. |
 | <code><a href="#@cdk_utils/iam.transcribe.TranscribeOperations.property.UpdateMedicalVocabulary">UpdateMedicalVocabulary</a></code> | <code>string[]</code> | IAM actions required for the UpdateMedicalVocabulary API call. |
 | <code><a href="#@cdk_utils/iam.transcribe.TranscribeOperations.property.UpdateVocabulary">UpdateVocabulary</a></code> | <code>string[]</code> | IAM actions required for the UpdateVocabulary API call. |
 | <code><a href="#@cdk_utils/iam.transcribe.TranscribeOperations.property.UpdateVocabularyFilter">UpdateVocabularyFilter</a></code> | <code>string[]</code> | IAM actions required for the UpdateVocabularyFilter API call. |
@@ -3038,6 +3039,18 @@ public readonly UpdateCallAnalyticsCategory: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateCallAnalyticsCategory API call.
+
+---
+
+##### `UpdateLanguageModel`<sup>Required</sup> <a name="UpdateLanguageModel" id="@cdk_utils/iam.transcribe.TranscribeOperations.property.UpdateLanguageModel"></a>
+
+```typescript
+public readonly UpdateLanguageModel: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateLanguageModel API call.
 
 ---
 

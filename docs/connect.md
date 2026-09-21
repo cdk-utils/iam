@@ -18314,6 +18314,7 @@ new connect.ConnectOperations()
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.ListRoutingProfiles">ListRoutingProfiles</a></code> | <code>string[]</code> | IAM actions required for the ListRoutingProfiles API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.ListRules">ListRules</a></code> | <code>string[]</code> | IAM actions required for the ListRules API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.ListSecurityKeys">ListSecurityKeys</a></code> | <code>string[]</code> | IAM actions required for the ListSecurityKeys API call. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.ListSecurityProfileAIAgents">ListSecurityProfileAIAgents</a></code> | <code>string[]</code> | IAM actions required for the ListSecurityProfileAIAgents API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.ListSecurityProfileApplications">ListSecurityProfileApplications</a></code> | <code>string[]</code> | IAM actions required for the ListSecurityProfileApplications API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.ListSecurityProfileFlowModules">ListSecurityProfileFlowModules</a></code> | <code>string[]</code> | IAM actions required for the ListSecurityProfileFlowModules API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.ListSecurityProfilePermissions">ListSecurityProfilePermissions</a></code> | <code>string[]</code> | IAM actions required for the ListSecurityProfilePermissions API call. |
@@ -21229,6 +21230,18 @@ public readonly ListSecurityKeys: string[];
 - *Type:* string[]
 
 IAM actions required for the ListSecurityKeys API call.
+
+---
+
+##### `ListSecurityProfileAIAgents`<sup>Required</sup> <a name="ListSecurityProfileAIAgents" id="@cdk_utils/iam.connect.ConnectOperations.property.ListSecurityProfileAIAgents"></a>
+
+```typescript
+public readonly ListSecurityProfileAIAgents: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListSecurityProfileAIAgents API call.
 
 ---
 

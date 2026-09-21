@@ -1718,6 +1718,27 @@
       ]
     },
     {
+      "Name": "UpdateLanguageModel",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "transcribe.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transcribe",
+          "Method": "update_language_model",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "UpdateMedicalVocabulary",
       "AuthorizedActions": [
         {
