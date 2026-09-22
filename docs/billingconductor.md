@@ -510,6 +510,7 @@ new billingconductor.BillingconductorActions()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.billingconductor.BillingconductorActions.property.actionGetBillingGroupCostReport">actionGetBillingGroupCostReport</a></code> | <code>string</code> | [Read] billingconductor:GetBillingGroupCostReport. |
+| <code><a href="#@cdk_utils/iam.billingconductor.BillingconductorActions.property.actionGetBillingTransferPreference">actionGetBillingTransferPreference</a></code> | <code>string</code> | [Read] billingconductor:GetBillingTransferPreference. |
 | <code><a href="#@cdk_utils/iam.billingconductor.BillingconductorActions.property.AllListActions">AllListActions</a></code> | <code>string[]</code> | All list-level actions. |
 | <code><a href="#@cdk_utils/iam.billingconductor.BillingconductorActions.property.AllPermissionManagementActions">AllPermissionManagementActions</a></code> | <code>string[]</code> | All permission-management-level actions. |
 | <code><a href="#@cdk_utils/iam.billingconductor.BillingconductorActions.property.AllReadActions">AllReadActions</a></code> | <code>string[]</code> | All read-level actions. |
@@ -544,6 +545,7 @@ new billingconductor.BillingconductorActions()
 | <code><a href="#@cdk_utils/iam.billingconductor.BillingconductorActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] billingconductor:TagResource. |
 | <code><a href="#@cdk_utils/iam.billingconductor.BillingconductorActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] billingconductor:UntagResource. |
 | <code><a href="#@cdk_utils/iam.billingconductor.BillingconductorActions.property.UpdateBillingGroup">UpdateBillingGroup</a></code> | <code>string</code> | [Write] billingconductor:UpdateBillingGroup. |
+| <code><a href="#@cdk_utils/iam.billingconductor.BillingconductorActions.property.UpdateBillingTransferPreference">UpdateBillingTransferPreference</a></code> | <code>string</code> | [Write] billingconductor:UpdateBillingTransferPreference. |
 | <code><a href="#@cdk_utils/iam.billingconductor.BillingconductorActions.property.UpdateCustomLineItem">UpdateCustomLineItem</a></code> | <code>string</code> | [Write] billingconductor:UpdateCustomLineItem. |
 | <code><a href="#@cdk_utils/iam.billingconductor.BillingconductorActions.property.UpdatePricingPlan">UpdatePricingPlan</a></code> | <code>string</code> | [Write] billingconductor:UpdatePricingPlan. |
 | <code><a href="#@cdk_utils/iam.billingconductor.BillingconductorActions.property.UpdatePricingRule">UpdatePricingRule</a></code> | <code>string</code> | [Write] billingconductor:UpdatePricingRule. |
@@ -559,6 +561,18 @@ public readonly actionGetBillingGroupCostReport: string;
 - *Type:* string
 
 [Read] billingconductor:GetBillingGroupCostReport.
+
+---
+
+##### `actionGetBillingTransferPreference`<sup>Required</sup> <a name="actionGetBillingTransferPreference" id="@cdk_utils/iam.billingconductor.BillingconductorActions.property.actionGetBillingTransferPreference"></a>
+
+```typescript
+public readonly actionGetBillingTransferPreference: string;
+```
+
+- *Type:* string
+
+[Read] billingconductor:GetBillingTransferPreference.
 
 ---
 
@@ -970,6 +984,18 @@ public readonly UpdateBillingGroup: string;
 
 ---
 
+##### `UpdateBillingTransferPreference`<sup>Required</sup> <a name="UpdateBillingTransferPreference" id="@cdk_utils/iam.billingconductor.BillingconductorActions.property.UpdateBillingTransferPreference"></a>
+
+```typescript
+public readonly UpdateBillingTransferPreference: string;
+```
+
+- *Type:* string
+
+[Write] billingconductor:UpdateBillingTransferPreference.
+
+---
+
 ##### `UpdateCustomLineItem`<sup>Required</sup> <a name="UpdateCustomLineItem" id="@cdk_utils/iam.billingconductor.BillingconductorActions.property.UpdateCustomLineItem"></a>
 
 ```typescript
@@ -1028,9 +1054,26 @@ new billingconductor.BillingconductorConditions()
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdk_utils/iam.billingconductor.BillingconductorConditions.pricingPlanARN">pricingPlanARN</a></code> | Generates a condition block for `billingconductor:PricingPlanArn`. |
 | <code><a href="#@cdk_utils/iam.billingconductor.BillingconductorConditions.requestTag">requestTag</a></code> | Generates a condition block for `aws:RequestTag/${TagKey}`. |
 | <code><a href="#@cdk_utils/iam.billingconductor.BillingconductorConditions.resourceTag">resourceTag</a></code> | Generates a condition block for `aws:ResourceTag/${TagKey}`. |
 | <code><a href="#@cdk_utils/iam.billingconductor.BillingconductorConditions.tagKeys">tagKeys</a></code> | Generates a condition block for `aws:TagKeys`. |
+
+---
+
+##### `pricingPlanARN` <a name="pricingPlanARN" id="@cdk_utils/iam.billingconductor.BillingconductorConditions.pricingPlanARN"></a>
+
+```typescript
+import { billingconductor } from '@cdk_utils/iam'
+
+billingconductor.BillingconductorConditions.pricingPlanARN(value: string)
+```
+
+Generates a condition block for `billingconductor:PricingPlanArn`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.billingconductor.BillingconductorConditions.pricingPlanARN.parameter.value"></a>
+
+- *Type:* string
 
 ---
 
@@ -1095,8 +1138,10 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.billingconductor.BillingconductorConditions.property.CreatePricingPlanConditionKeys">CreatePricingPlanConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreatePricingPlan action. |
 | <code><a href="#@cdk_utils/iam.billingconductor.BillingconductorConditions.property.CreatePricingRuleConditionKeys">CreatePricingRuleConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreatePricingRule action. |
 | <code><a href="#@cdk_utils/iam.billingconductor.BillingconductorConditions.property.ListTagsForResourceConditionKeys">ListTagsForResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListTagsForResource action. |
+| <code><a href="#@cdk_utils/iam.billingconductor.BillingconductorConditions.property.PRICING_PLAN_ARN">PRICING_PLAN_ARN</a></code> | <code>string</code> | Condition key: billingconductor:PricingPlanArn (ARN). |
 | <code><a href="#@cdk_utils/iam.billingconductor.BillingconductorConditions.property.TagResourceConditionKeys">TagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TagResource action. |
 | <code><a href="#@cdk_utils/iam.billingconductor.BillingconductorConditions.property.UntagResourceConditionKeys">UntagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UntagResource action. |
+| <code><a href="#@cdk_utils/iam.billingconductor.BillingconductorConditions.property.UpdateBillingTransferPreferenceConditionKeys">UpdateBillingTransferPreferenceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateBillingTransferPreference action. |
 
 ---
 
@@ -1196,6 +1241,18 @@ Condition keys applicable to the ListTagsForResource action.
 
 ---
 
+##### `PRICING_PLAN_ARN`<sup>Required</sup> <a name="PRICING_PLAN_ARN" id="@cdk_utils/iam.billingconductor.BillingconductorConditions.property.PRICING_PLAN_ARN"></a>
+
+```typescript
+public readonly PRICING_PLAN_ARN: string;
+```
+
+- *Type:* string
+
+Condition key: billingconductor:PricingPlanArn (ARN).
+
+---
+
 ##### `TagResourceConditionKeys`<sup>Required</sup> <a name="TagResourceConditionKeys" id="@cdk_utils/iam.billingconductor.BillingconductorConditions.property.TagResourceConditionKeys"></a>
 
 ```typescript
@@ -1217,6 +1274,18 @@ public readonly UntagResourceConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the UntagResource action.
+
+---
+
+##### `UpdateBillingTransferPreferenceConditionKeys`<sup>Required</sup> <a name="UpdateBillingTransferPreferenceConditionKeys" id="@cdk_utils/iam.billingconductor.BillingconductorConditions.property.UpdateBillingTransferPreferenceConditionKeys"></a>
+
+```typescript
+public readonly UpdateBillingTransferPreferenceConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UpdateBillingTransferPreference action.
 
 ---
 
@@ -1270,9 +1339,11 @@ new billingconductor.BillingconductorOperations()
 | <code><a href="#@cdk_utils/iam.billingconductor.BillingconductorOperations.property.ListResourcesAssociatedToCustomLineItem">ListResourcesAssociatedToCustomLineItem</a></code> | <code>string[]</code> | IAM actions required for the ListResourcesAssociatedToCustomLineItem API call. |
 | <code><a href="#@cdk_utils/iam.billingconductor.BillingconductorOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
 | <code><a href="#@cdk_utils/iam.billingconductor.BillingconductorOperations.property.opGetBillingGroupCostReport">opGetBillingGroupCostReport</a></code> | <code>string[]</code> | IAM actions required for the GetBillingGroupCostReport API call. |
+| <code><a href="#@cdk_utils/iam.billingconductor.BillingconductorOperations.property.opGetBillingTransferPreference">opGetBillingTransferPreference</a></code> | <code>string[]</code> | IAM actions required for the GetBillingTransferPreference API call. |
 | <code><a href="#@cdk_utils/iam.billingconductor.BillingconductorOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
 | <code><a href="#@cdk_utils/iam.billingconductor.BillingconductorOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
 | <code><a href="#@cdk_utils/iam.billingconductor.BillingconductorOperations.property.UpdateBillingGroup">UpdateBillingGroup</a></code> | <code>string[]</code> | IAM actions required for the UpdateBillingGroup API call. |
+| <code><a href="#@cdk_utils/iam.billingconductor.BillingconductorOperations.property.UpdateBillingTransferPreference">UpdateBillingTransferPreference</a></code> | <code>string[]</code> | IAM actions required for the UpdateBillingTransferPreference API call. |
 | <code><a href="#@cdk_utils/iam.billingconductor.BillingconductorOperations.property.UpdateCustomLineItem">UpdateCustomLineItem</a></code> | <code>string[]</code> | IAM actions required for the UpdateCustomLineItem API call. |
 | <code><a href="#@cdk_utils/iam.billingconductor.BillingconductorOperations.property.UpdatePricingPlan">UpdatePricingPlan</a></code> | <code>string[]</code> | IAM actions required for the UpdatePricingPlan API call. |
 | <code><a href="#@cdk_utils/iam.billingconductor.BillingconductorOperations.property.UpdatePricingRule">UpdatePricingRule</a></code> | <code>string[]</code> | IAM actions required for the UpdatePricingRule API call. |
@@ -1591,6 +1662,18 @@ IAM actions required for the GetBillingGroupCostReport API call.
 
 ---
 
+##### `opGetBillingTransferPreference`<sup>Required</sup> <a name="opGetBillingTransferPreference" id="@cdk_utils/iam.billingconductor.BillingconductorOperations.property.opGetBillingTransferPreference"></a>
+
+```typescript
+public readonly opGetBillingTransferPreference: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetBillingTransferPreference API call.
+
+---
+
 ##### `TagResource`<sup>Required</sup> <a name="TagResource" id="@cdk_utils/iam.billingconductor.BillingconductorOperations.property.TagResource"></a>
 
 ```typescript
@@ -1624,6 +1707,18 @@ public readonly UpdateBillingGroup: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateBillingGroup API call.
+
+---
+
+##### `UpdateBillingTransferPreference`<sup>Required</sup> <a name="UpdateBillingTransferPreference" id="@cdk_utils/iam.billingconductor.BillingconductorOperations.property.UpdateBillingTransferPreference"></a>
+
+```typescript
+public readonly UpdateBillingTransferPreference: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateBillingTransferPreference API call.
 
 ---
 

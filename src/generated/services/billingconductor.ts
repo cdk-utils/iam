@@ -50,6 +50,9 @@ export class BillingconductorActions {
 	/** [Read] billingconductor:GetBillingGroupCostReport */
 	static readonly actionGetBillingGroupCostReport =
 		"billingconductor:GetBillingGroupCostReport";
+	/** [Read] billingconductor:GetBillingTransferPreference */
+	static readonly actionGetBillingTransferPreference =
+		"billingconductor:GetBillingTransferPreference";
 	/** [List] billingconductor:ListAccountAssociations */
 	static readonly ListAccountAssociations =
 		"billingconductor:ListAccountAssociations";
@@ -84,6 +87,9 @@ export class BillingconductorActions {
 	static readonly UntagResource = "billingconductor:UntagResource";
 	/** [Write] billingconductor:UpdateBillingGroup */
 	static readonly UpdateBillingGroup = "billingconductor:UpdateBillingGroup";
+	/** [Write] billingconductor:UpdateBillingTransferPreference */
+	static readonly UpdateBillingTransferPreference =
+		"billingconductor:UpdateBillingTransferPreference";
 	/** [Write] billingconductor:UpdateCustomLineItem */
 	static readonly UpdateCustomLineItem =
 		"billingconductor:UpdateCustomLineItem";
@@ -95,6 +101,7 @@ export class BillingconductorActions {
 	/** All read-level actions. */
 	static readonly AllReadActions: string[] = [
 		BillingconductorActions.actionGetBillingGroupCostReport,
+		BillingconductorActions.actionGetBillingTransferPreference,
 		BillingconductorActions.ListBillingGroupCostReports,
 		BillingconductorActions.ListBillingGroups,
 		BillingconductorActions.ListCustomLineItemVersions,
@@ -120,6 +127,7 @@ export class BillingconductorActions {
 		BillingconductorActions.DisassociateAccounts,
 		BillingconductorActions.DisassociatePricingRules,
 		BillingconductorActions.UpdateBillingGroup,
+		BillingconductorActions.UpdateBillingTransferPreference,
 		BillingconductorActions.UpdateCustomLineItem,
 		BillingconductorActions.UpdatePricingPlan,
 		BillingconductorActions.UpdatePricingRule,
@@ -446,6 +454,10 @@ export class BillingconductorOperations {
 	static readonly opGetBillingGroupCostReport: string[] = [
 		"billingconductor:GetBillingGroupCostReport",
 	];
+	/** IAM actions required for the GetBillingTransferPreference API call. */
+	static readonly opGetBillingTransferPreference: string[] = [
+		"billingconductor:GetBillingTransferPreference",
+	];
 	/** IAM actions required for the ListAccountAssociations API call. */
 	static readonly ListAccountAssociations: string[] = [
 		"billingconductor:ListAccountAssociations",
@@ -499,6 +511,10 @@ export class BillingconductorOperations {
 	static readonly UpdateBillingGroup: string[] = [
 		"billingconductor:UpdateBillingGroup",
 	];
+	/** IAM actions required for the UpdateBillingTransferPreference API call. */
+	static readonly UpdateBillingTransferPreference: string[] = [
+		"billingconductor:UpdateBillingTransferPreference",
+	];
 	/** IAM actions required for the UpdateCustomLineItem API call. */
 	static readonly UpdateCustomLineItem: string[] = [
 		"billingconductor:UpdateCustomLineItem",
@@ -549,6 +565,10 @@ export class BillingconductorConditions {
 	];
 	/** Condition keys applicable to the UntagResource action. */
 	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
+	/** Condition keys applicable to the UpdateBillingTransferPreference action. */
+	static readonly UpdateBillingTransferPreferenceConditionKeys: string[] = [
+		"billingconductor:PricingPlanArn",
+	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
 	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
@@ -556,6 +576,8 @@ export class BillingconductorConditions {
 	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
 	static readonly AWS_TAG_KEYS = "aws:TagKeys";
+	/** Condition key: billingconductor:PricingPlanArn (ARN) */
+	static readonly PRICING_PLAN_ARN = "billingconductor:PricingPlanArn";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.
@@ -576,5 +598,12 @@ export class BillingconductorConditions {
 	 */
 	static tagKeys(values: string[]): Record<string, Record<string, string[]>> {
 		return { "ForAllValues:StringEquals": { "aws:TagKeys": values } };
+	}
+
+	/**
+	 * Generates a condition block for `billingconductor:PricingPlanArn`.
+	 */
+	static pricingPlanARN(value: string): Record<string, Record<string, string>> {
+		return { ArnEquals: { "billingconductor:PricingPlanArn": value } };
 	}
 }
