@@ -1677,6 +1677,11 @@ export class OmicsConditions {
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
+	/** Condition keys applicable to the CreateMultipartReadSetUpload action. */
+	static readonly CreateMultipartReadSetUploadConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the CreateReferenceStore action. */
 	static readonly CreateReferenceStoreConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
@@ -1709,6 +1714,16 @@ export class OmicsConditions {
 	];
 	/** Condition keys applicable to the CreateWorkflowVersion action. */
 	static readonly CreateWorkflowVersionConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
+	/** Condition keys applicable to the StartReadSetImportJob action. */
+	static readonly StartReadSetImportJobConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
+	/** Condition keys applicable to the StartReferenceImportJob action. */
+	static readonly StartReferenceImportJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];

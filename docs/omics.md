@@ -3912,6 +3912,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.omics.OmicsConditions.property.CreateAnnotationStoreConditionKeys">CreateAnnotationStoreConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateAnnotationStore action. |
 | <code><a href="#@cdk_utils/iam.omics.OmicsConditions.property.CreateAnnotationStoreVersionConditionKeys">CreateAnnotationStoreVersionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateAnnotationStoreVersion action. |
 | <code><a href="#@cdk_utils/iam.omics.OmicsConditions.property.CreateConfigurationConditionKeys">CreateConfigurationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateConfiguration action. |
+| <code><a href="#@cdk_utils/iam.omics.OmicsConditions.property.CreateMultipartReadSetUploadConditionKeys">CreateMultipartReadSetUploadConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateMultipartReadSetUpload action. |
 | <code><a href="#@cdk_utils/iam.omics.OmicsConditions.property.CreateReferenceStoreConditionKeys">CreateReferenceStoreConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateReferenceStore action. |
 | <code><a href="#@cdk_utils/iam.omics.OmicsConditions.property.CreateRunCacheConditionKeys">CreateRunCacheConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateRunCache action. |
 | <code><a href="#@cdk_utils/iam.omics.OmicsConditions.property.CreateRunGroupConditionKeys">CreateRunGroupConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateRunGroup action. |
@@ -3919,6 +3920,8 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.omics.OmicsConditions.property.CreateVariantStoreConditionKeys">CreateVariantStoreConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateVariantStore action. |
 | <code><a href="#@cdk_utils/iam.omics.OmicsConditions.property.CreateWorkflowConditionKeys">CreateWorkflowConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateWorkflow action. |
 | <code><a href="#@cdk_utils/iam.omics.OmicsConditions.property.CreateWorkflowVersionConditionKeys">CreateWorkflowVersionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateWorkflowVersion action. |
+| <code><a href="#@cdk_utils/iam.omics.OmicsConditions.property.StartReadSetImportJobConditionKeys">StartReadSetImportJobConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartReadSetImportJob action. |
+| <code><a href="#@cdk_utils/iam.omics.OmicsConditions.property.StartReferenceImportJobConditionKeys">StartReferenceImportJobConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartReferenceImportJob action. |
 | <code><a href="#@cdk_utils/iam.omics.OmicsConditions.property.StartRunBatchConditionKeys">StartRunBatchConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartRunBatch action. |
 | <code><a href="#@cdk_utils/iam.omics.OmicsConditions.property.StartRunConditionKeys">StartRunConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartRun action. |
 | <code><a href="#@cdk_utils/iam.omics.OmicsConditions.property.TagResourceConditionKeys">TagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TagResource action. |
@@ -3995,6 +3998,18 @@ public readonly CreateConfigurationConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the CreateConfiguration action.
+
+---
+
+##### `CreateMultipartReadSetUploadConditionKeys`<sup>Required</sup> <a name="CreateMultipartReadSetUploadConditionKeys" id="@cdk_utils/iam.omics.OmicsConditions.property.CreateMultipartReadSetUploadConditionKeys"></a>
+
+```typescript
+public readonly CreateMultipartReadSetUploadConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateMultipartReadSetUpload action.
 
 ---
 
@@ -4079,6 +4094,30 @@ public readonly CreateWorkflowVersionConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the CreateWorkflowVersion action.
+
+---
+
+##### `StartReadSetImportJobConditionKeys`<sup>Required</sup> <a name="StartReadSetImportJobConditionKeys" id="@cdk_utils/iam.omics.OmicsConditions.property.StartReadSetImportJobConditionKeys"></a>
+
+```typescript
+public readonly StartReadSetImportJobConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the StartReadSetImportJob action.
+
+---
+
+##### `StartReferenceImportJobConditionKeys`<sup>Required</sup> <a name="StartReferenceImportJobConditionKeys" id="@cdk_utils/iam.omics.OmicsConditions.property.StartReferenceImportJobConditionKeys"></a>
+
+```typescript
+public readonly StartReferenceImportJobConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the StartReferenceImportJob action.
 
 ---
 
