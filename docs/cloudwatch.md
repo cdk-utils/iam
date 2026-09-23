@@ -6234,12 +6234,33 @@ new cloudwatch.CloudWatchOperations()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.AssociateDatasetKmsKey">AssociateDatasetKmsKey</a></code> | <code>string[]</code> | IAM actions required for the AssociateDatasetKmsKey API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.CreateAccessGrant">CreateAccessGrant</a></code> | <code>string[]</code> | IAM actions required for the CreateAccessGrant API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.CreateAccessProfile">CreateAccessProfile</a></code> | <code>string[]</code> | IAM actions required for the CreateAccessProfile API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.CreateAlert">CreateAlert</a></code> | <code>string[]</code> | IAM actions required for the CreateAlert API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.CreateDomain">CreateDomain</a></code> | <code>string[]</code> | IAM actions required for the CreateDomain API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.CreateDomainAccessGrantForOrganization">CreateDomainAccessGrantForOrganization</a></code> | <code>string[]</code> | IAM actions required for the CreateDomainAccessGrantForOrganization API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.CreateDomainForOrganization">CreateDomainForOrganization</a></code> | <code>string[]</code> | IAM actions required for the CreateDomainForOrganization API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.CreateIntegration">CreateIntegration</a></code> | <code>string[]</code> | IAM actions required for the CreateIntegration API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.CreateOmniDashboard">CreateOmniDashboard</a></code> | <code>string[]</code> | IAM actions required for the CreateOmniDashboard API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.CreateOneTimeDeepLinkCode">CreateOneTimeDeepLinkCode</a></code> | <code>string[]</code> | IAM actions required for the CreateOneTimeDeepLinkCode API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.CreateSpace">CreateSpace</a></code> | <code>string[]</code> | IAM actions required for the CreateSpace API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.CreateView">CreateView</a></code> | <code>string[]</code> | IAM actions required for the CreateView API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.DeleteAccessGrant">DeleteAccessGrant</a></code> | <code>string[]</code> | IAM actions required for the DeleteAccessGrant API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.DeleteAccessProfile">DeleteAccessProfile</a></code> | <code>string[]</code> | IAM actions required for the DeleteAccessProfile API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.DeleteAlarmMuteRule">DeleteAlarmMuteRule</a></code> | <code>string[]</code> | IAM actions required for the DeleteAlarmMuteRule API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.DeleteAlarms">DeleteAlarms</a></code> | <code>string[]</code> | IAM actions required for the DeleteAlarms API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.DeleteAlert">DeleteAlert</a></code> | <code>string[]</code> | IAM actions required for the DeleteAlert API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.DeleteAnomalyDetector">DeleteAnomalyDetector</a></code> | <code>string[]</code> | IAM actions required for the DeleteAnomalyDetector API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.DeleteDashboards">DeleteDashboards</a></code> | <code>string[]</code> | IAM actions required for the DeleteDashboards API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.DeleteDomain">DeleteDomain</a></code> | <code>string[]</code> | IAM actions required for the DeleteDomain API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.DeleteDomainAccessGrantForOrganization">DeleteDomainAccessGrantForOrganization</a></code> | <code>string[]</code> | IAM actions required for the DeleteDomainAccessGrantForOrganization API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.DeleteDomainForOrganization">DeleteDomainForOrganization</a></code> | <code>string[]</code> | IAM actions required for the DeleteDomainForOrganization API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.DeleteInsightRules">DeleteInsightRules</a></code> | <code>string[]</code> | IAM actions required for the DeleteInsightRules API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.DeleteIntegration">DeleteIntegration</a></code> | <code>string[]</code> | IAM actions required for the DeleteIntegration API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.DeleteMetricStream">DeleteMetricStream</a></code> | <code>string[]</code> | IAM actions required for the DeleteMetricStream API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.DeleteOmniDashboard">DeleteOmniDashboard</a></code> | <code>string[]</code> | IAM actions required for the DeleteOmniDashboard API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.DeleteSpace">DeleteSpace</a></code> | <code>string[]</code> | IAM actions required for the DeleteSpace API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.DeleteView">DeleteView</a></code> | <code>string[]</code> | IAM actions required for the DeleteView API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.DescribeAlarmContributors">DescribeAlarmContributors</a></code> | <code>string[]</code> | IAM actions required for the DescribeAlarmContributors API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.DescribeAlarmHistory">DescribeAlarmHistory</a></code> | <code>string[]</code> | IAM actions required for the DescribeAlarmHistory API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.DescribeAlarms">DescribeAlarms</a></code> | <code>string[]</code> | IAM actions required for the DescribeAlarms API call. |
@@ -6251,38 +6272,78 @@ new cloudwatch.CloudWatchOperations()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.DisassociateDatasetKmsKey">DisassociateDatasetKmsKey</a></code> | <code>string[]</code> | IAM actions required for the DisassociateDatasetKmsKey API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.EnableAlarmActions">EnableAlarmActions</a></code> | <code>string[]</code> | IAM actions required for the EnableAlarmActions API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.EnableInsightRules">EnableInsightRules</a></code> | <code>string[]</code> | IAM actions required for the EnableInsightRules API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.ListAccessGrants">ListAccessGrants</a></code> | <code>string[]</code> | IAM actions required for the ListAccessGrants API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.ListAccessProfiles">ListAccessProfiles</a></code> | <code>string[]</code> | IAM actions required for the ListAccessProfiles API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.ListAlarmMuteRules">ListAlarmMuteRules</a></code> | <code>string[]</code> | IAM actions required for the ListAlarmMuteRules API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.ListAlerts">ListAlerts</a></code> | <code>string[]</code> | IAM actions required for the ListAlerts API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.ListDashboards">ListDashboards</a></code> | <code>string[]</code> | IAM actions required for the ListDashboards API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.ListDomainAccessGrantsForOrganization">ListDomainAccessGrantsForOrganization</a></code> | <code>string[]</code> | IAM actions required for the ListDomainAccessGrantsForOrganization API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.ListDomains">ListDomains</a></code> | <code>string[]</code> | IAM actions required for the ListDomains API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.ListIntegrations">ListIntegrations</a></code> | <code>string[]</code> | IAM actions required for the ListIntegrations API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.ListManagedInsightRules">ListManagedInsightRules</a></code> | <code>string[]</code> | IAM actions required for the ListManagedInsightRules API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.ListMetrics">ListMetrics</a></code> | <code>string[]</code> | IAM actions required for the ListMetrics API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.ListMetricStreams">ListMetricStreams</a></code> | <code>string[]</code> | IAM actions required for the ListMetricStreams API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.ListOmniDashboards">ListOmniDashboards</a></code> | <code>string[]</code> | IAM actions required for the ListOmniDashboards API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.ListSpaces">ListSpaces</a></code> | <code>string[]</code> | IAM actions required for the ListSpaces API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.ListSpacesForOrganization">ListSpacesForOrganization</a></code> | <code>string[]</code> | IAM actions required for the ListSpacesForOrganization API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.ListTelemetryFields">ListTelemetryFields</a></code> | <code>string[]</code> | IAM actions required for the ListTelemetryFields API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.ListTelemetryQuerySessions">ListTelemetryQuerySessions</a></code> | <code>string[]</code> | IAM actions required for the ListTelemetryQuerySessions API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.ListViews">ListViews</a></code> | <code>string[]</code> | IAM actions required for the ListViews API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetAccessGrant">opGetAccessGrant</a></code> | <code>string[]</code> | IAM actions required for the GetAccessGrant API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetAccessProfile">opGetAccessProfile</a></code> | <code>string[]</code> | IAM actions required for the GetAccessProfile API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetAlarmMuteRule">opGetAlarmMuteRule</a></code> | <code>string[]</code> | IAM actions required for the GetAlarmMuteRule API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetAlert">opGetAlert</a></code> | <code>string[]</code> | IAM actions required for the GetAlert API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetContextGraph">opGetContextGraph</a></code> | <code>string[]</code> | IAM actions required for the GetContextGraph API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetDashboard">opGetDashboard</a></code> | <code>string[]</code> | IAM actions required for the GetDashboard API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetDataset">opGetDataset</a></code> | <code>string[]</code> | IAM actions required for the GetDataset API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetDomain">opGetDomain</a></code> | <code>string[]</code> | IAM actions required for the GetDomain API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetDomainAccessGrantForOrganization">opGetDomainAccessGrantForOrganization</a></code> | <code>string[]</code> | IAM actions required for the GetDomainAccessGrantForOrganization API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetDomainForOrganization">opGetDomainForOrganization</a></code> | <code>string[]</code> | IAM actions required for the GetDomainForOrganization API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetInsightRuleReport">opGetInsightRuleReport</a></code> | <code>string[]</code> | IAM actions required for the GetInsightRuleReport API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetIntegration">opGetIntegration</a></code> | <code>string[]</code> | IAM actions required for the GetIntegration API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetIntelligenceConfiguration">opGetIntelligenceConfiguration</a></code> | <code>string[]</code> | IAM actions required for the GetIntelligenceConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetMetricData">opGetMetricData</a></code> | <code>string[]</code> | IAM actions required for the GetMetricData API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetMetricStatistics">opGetMetricStatistics</a></code> | <code>string[]</code> | IAM actions required for the GetMetricStatistics API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetMetricStream">opGetMetricStream</a></code> | <code>string[]</code> | IAM actions required for the GetMetricStream API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetMetricWidgetImage">opGetMetricWidgetImage</a></code> | <code>string[]</code> | IAM actions required for the GetMetricWidgetImage API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetOmniDashboard">opGetOmniDashboard</a></code> | <code>string[]</code> | IAM actions required for the GetOmniDashboard API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetOTelEnrichment">opGetOTelEnrichment</a></code> | <code>string[]</code> | IAM actions required for the GetOTelEnrichment API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetSpace">opGetSpace</a></code> | <code>string[]</code> | IAM actions required for the GetSpace API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetSpaceCredentialsForOrganization">opGetSpaceCredentialsForOrganization</a></code> | <code>string[]</code> | IAM actions required for the GetSpaceCredentialsForOrganization API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetTelemetryQueryResults">opGetTelemetryQueryResults</a></code> | <code>string[]</code> | IAM actions required for the GetTelemetryQueryResults API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetView">opGetView</a></code> | <code>string[]</code> | IAM actions required for the GetView API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opSetAlarmState">opSetAlarmState</a></code> | <code>string[]</code> | IAM actions required for the SetAlarmState API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.PutAlarmMuteRule">PutAlarmMuteRule</a></code> | <code>string[]</code> | IAM actions required for the PutAlarmMuteRule API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.PutAnomalyDetector">PutAnomalyDetector</a></code> | <code>string[]</code> | IAM actions required for the PutAnomalyDetector API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.PutCompositeAlarm">PutCompositeAlarm</a></code> | <code>string[]</code> | IAM actions required for the PutCompositeAlarm API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.PutDashboard">PutDashboard</a></code> | <code>string[]</code> | IAM actions required for the PutDashboard API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.PutInsightRule">PutInsightRule</a></code> | <code>string[]</code> | IAM actions required for the PutInsightRule API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.PutIntelligenceConfiguration">PutIntelligenceConfiguration</a></code> | <code>string[]</code> | IAM actions required for the PutIntelligenceConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.PutLogAlarm">PutLogAlarm</a></code> | <code>string[]</code> | IAM actions required for the PutLogAlarm API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.PutManagedInsightRules">PutManagedInsightRules</a></code> | <code>string[]</code> | IAM actions required for the PutManagedInsightRules API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.PutMetricAlarm">PutMetricAlarm</a></code> | <code>string[]</code> | IAM actions required for the PutMetricAlarm API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.PutMetricData">PutMetricData</a></code> | <code>string[]</code> | IAM actions required for the PutMetricData API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.PutMetricStream">PutMetricStream</a></code> | <code>string[]</code> | IAM actions required for the PutMetricStream API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.SearchPrincipals">SearchPrincipals</a></code> | <code>string[]</code> | IAM actions required for the SearchPrincipals API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.StartMetricStreams">StartMetricStreams</a></code> | <code>string[]</code> | IAM actions required for the StartMetricStreams API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.StartOTelEnrichment">StartOTelEnrichment</a></code> | <code>string[]</code> | IAM actions required for the StartOTelEnrichment API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.StartTelemetryQuery">StartTelemetryQuery</a></code> | <code>string[]</code> | IAM actions required for the StartTelemetryQuery API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.StartTelemetryQuerySession">StartTelemetryQuerySession</a></code> | <code>string[]</code> | IAM actions required for the StartTelemetryQuerySession API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.StopMetricStreams">StopMetricStreams</a></code> | <code>string[]</code> | IAM actions required for the StopMetricStreams API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.StopOTelEnrichment">StopOTelEnrichment</a></code> | <code>string[]</code> | IAM actions required for the StopOTelEnrichment API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.StopTelemetryQuery">StopTelemetryQuery</a></code> | <code>string[]</code> | IAM actions required for the StopTelemetryQuery API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.StopTelemetryQuerySession">StopTelemetryQuerySession</a></code> | <code>string[]</code> | IAM actions required for the StopTelemetryQuerySession API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.UpdateAccessProfile">UpdateAccessProfile</a></code> | <code>string[]</code> | IAM actions required for the UpdateAccessProfile API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.UpdateAlert">UpdateAlert</a></code> | <code>string[]</code> | IAM actions required for the UpdateAlert API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.UpdateDomain">UpdateDomain</a></code> | <code>string[]</code> | IAM actions required for the UpdateDomain API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.UpdateDomainForOrganization">UpdateDomainForOrganization</a></code> | <code>string[]</code> | IAM actions required for the UpdateDomainForOrganization API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.UpdateIntegration">UpdateIntegration</a></code> | <code>string[]</code> | IAM actions required for the UpdateIntegration API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.UpdateOmniDashboard">UpdateOmniDashboard</a></code> | <code>string[]</code> | IAM actions required for the UpdateOmniDashboard API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.UpdateSpace">UpdateSpace</a></code> | <code>string[]</code> | IAM actions required for the UpdateSpace API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.UpdateView">UpdateView</a></code> | <code>string[]</code> | IAM actions required for the UpdateView API call. |
 
 ---
 
@@ -6295,6 +6356,162 @@ public readonly AssociateDatasetKmsKey: string[];
 - *Type:* string[]
 
 IAM actions required for the AssociateDatasetKmsKey API call.
+
+---
+
+##### `CreateAccessGrant`<sup>Required</sup> <a name="CreateAccessGrant" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.CreateAccessGrant"></a>
+
+```typescript
+public readonly CreateAccessGrant: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateAccessGrant API call.
+
+---
+
+##### `CreateAccessProfile`<sup>Required</sup> <a name="CreateAccessProfile" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.CreateAccessProfile"></a>
+
+```typescript
+public readonly CreateAccessProfile: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateAccessProfile API call.
+
+---
+
+##### `CreateAlert`<sup>Required</sup> <a name="CreateAlert" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.CreateAlert"></a>
+
+```typescript
+public readonly CreateAlert: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateAlert API call.
+
+---
+
+##### `CreateDomain`<sup>Required</sup> <a name="CreateDomain" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.CreateDomain"></a>
+
+```typescript
+public readonly CreateDomain: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateDomain API call.
+
+---
+
+##### `CreateDomainAccessGrantForOrganization`<sup>Required</sup> <a name="CreateDomainAccessGrantForOrganization" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.CreateDomainAccessGrantForOrganization"></a>
+
+```typescript
+public readonly CreateDomainAccessGrantForOrganization: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateDomainAccessGrantForOrganization API call.
+
+---
+
+##### `CreateDomainForOrganization`<sup>Required</sup> <a name="CreateDomainForOrganization" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.CreateDomainForOrganization"></a>
+
+```typescript
+public readonly CreateDomainForOrganization: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateDomainForOrganization API call.
+
+---
+
+##### `CreateIntegration`<sup>Required</sup> <a name="CreateIntegration" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.CreateIntegration"></a>
+
+```typescript
+public readonly CreateIntegration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateIntegration API call.
+
+---
+
+##### `CreateOmniDashboard`<sup>Required</sup> <a name="CreateOmniDashboard" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.CreateOmniDashboard"></a>
+
+```typescript
+public readonly CreateOmniDashboard: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateOmniDashboard API call.
+
+---
+
+##### `CreateOneTimeDeepLinkCode`<sup>Required</sup> <a name="CreateOneTimeDeepLinkCode" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.CreateOneTimeDeepLinkCode"></a>
+
+```typescript
+public readonly CreateOneTimeDeepLinkCode: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateOneTimeDeepLinkCode API call.
+
+---
+
+##### `CreateSpace`<sup>Required</sup> <a name="CreateSpace" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.CreateSpace"></a>
+
+```typescript
+public readonly CreateSpace: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateSpace API call.
+
+---
+
+##### `CreateView`<sup>Required</sup> <a name="CreateView" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.CreateView"></a>
+
+```typescript
+public readonly CreateView: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateView API call.
+
+---
+
+##### `DeleteAccessGrant`<sup>Required</sup> <a name="DeleteAccessGrant" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.DeleteAccessGrant"></a>
+
+```typescript
+public readonly DeleteAccessGrant: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteAccessGrant API call.
+
+---
+
+##### `DeleteAccessProfile`<sup>Required</sup> <a name="DeleteAccessProfile" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.DeleteAccessProfile"></a>
+
+```typescript
+public readonly DeleteAccessProfile: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteAccessProfile API call.
 
 ---
 
@@ -6322,6 +6539,18 @@ IAM actions required for the DeleteAlarms API call.
 
 ---
 
+##### `DeleteAlert`<sup>Required</sup> <a name="DeleteAlert" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.DeleteAlert"></a>
+
+```typescript
+public readonly DeleteAlert: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteAlert API call.
+
+---
+
 ##### `DeleteAnomalyDetector`<sup>Required</sup> <a name="DeleteAnomalyDetector" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.DeleteAnomalyDetector"></a>
 
 ```typescript
@@ -6346,6 +6575,42 @@ IAM actions required for the DeleteDashboards API call.
 
 ---
 
+##### `DeleteDomain`<sup>Required</sup> <a name="DeleteDomain" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.DeleteDomain"></a>
+
+```typescript
+public readonly DeleteDomain: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteDomain API call.
+
+---
+
+##### `DeleteDomainAccessGrantForOrganization`<sup>Required</sup> <a name="DeleteDomainAccessGrantForOrganization" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.DeleteDomainAccessGrantForOrganization"></a>
+
+```typescript
+public readonly DeleteDomainAccessGrantForOrganization: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteDomainAccessGrantForOrganization API call.
+
+---
+
+##### `DeleteDomainForOrganization`<sup>Required</sup> <a name="DeleteDomainForOrganization" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.DeleteDomainForOrganization"></a>
+
+```typescript
+public readonly DeleteDomainForOrganization: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteDomainForOrganization API call.
+
+---
+
 ##### `DeleteInsightRules`<sup>Required</sup> <a name="DeleteInsightRules" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.DeleteInsightRules"></a>
 
 ```typescript
@@ -6358,6 +6623,18 @@ IAM actions required for the DeleteInsightRules API call.
 
 ---
 
+##### `DeleteIntegration`<sup>Required</sup> <a name="DeleteIntegration" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.DeleteIntegration"></a>
+
+```typescript
+public readonly DeleteIntegration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteIntegration API call.
+
+---
+
 ##### `DeleteMetricStream`<sup>Required</sup> <a name="DeleteMetricStream" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.DeleteMetricStream"></a>
 
 ```typescript
@@ -6367,6 +6644,42 @@ public readonly DeleteMetricStream: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteMetricStream API call.
+
+---
+
+##### `DeleteOmniDashboard`<sup>Required</sup> <a name="DeleteOmniDashboard" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.DeleteOmniDashboard"></a>
+
+```typescript
+public readonly DeleteOmniDashboard: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteOmniDashboard API call.
+
+---
+
+##### `DeleteSpace`<sup>Required</sup> <a name="DeleteSpace" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.DeleteSpace"></a>
+
+```typescript
+public readonly DeleteSpace: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteSpace API call.
+
+---
+
+##### `DeleteView`<sup>Required</sup> <a name="DeleteView" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.DeleteView"></a>
+
+```typescript
+public readonly DeleteView: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteView API call.
 
 ---
 
@@ -6502,6 +6815,30 @@ IAM actions required for the EnableInsightRules API call.
 
 ---
 
+##### `ListAccessGrants`<sup>Required</sup> <a name="ListAccessGrants" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.ListAccessGrants"></a>
+
+```typescript
+public readonly ListAccessGrants: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListAccessGrants API call.
+
+---
+
+##### `ListAccessProfiles`<sup>Required</sup> <a name="ListAccessProfiles" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.ListAccessProfiles"></a>
+
+```typescript
+public readonly ListAccessProfiles: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListAccessProfiles API call.
+
+---
+
 ##### `ListAlarmMuteRules`<sup>Required</sup> <a name="ListAlarmMuteRules" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.ListAlarmMuteRules"></a>
 
 ```typescript
@@ -6514,6 +6851,18 @@ IAM actions required for the ListAlarmMuteRules API call.
 
 ---
 
+##### `ListAlerts`<sup>Required</sup> <a name="ListAlerts" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.ListAlerts"></a>
+
+```typescript
+public readonly ListAlerts: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListAlerts API call.
+
+---
+
 ##### `ListDashboards`<sup>Required</sup> <a name="ListDashboards" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.ListDashboards"></a>
 
 ```typescript
@@ -6523,6 +6872,42 @@ public readonly ListDashboards: string[];
 - *Type:* string[]
 
 IAM actions required for the ListDashboards API call.
+
+---
+
+##### `ListDomainAccessGrantsForOrganization`<sup>Required</sup> <a name="ListDomainAccessGrantsForOrganization" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.ListDomainAccessGrantsForOrganization"></a>
+
+```typescript
+public readonly ListDomainAccessGrantsForOrganization: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListDomainAccessGrantsForOrganization API call.
+
+---
+
+##### `ListDomains`<sup>Required</sup> <a name="ListDomains" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.ListDomains"></a>
+
+```typescript
+public readonly ListDomains: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListDomains API call.
+
+---
+
+##### `ListIntegrations`<sup>Required</sup> <a name="ListIntegrations" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.ListIntegrations"></a>
+
+```typescript
+public readonly ListIntegrations: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListIntegrations API call.
 
 ---
 
@@ -6562,6 +6947,42 @@ IAM actions required for the ListMetricStreams API call.
 
 ---
 
+##### `ListOmniDashboards`<sup>Required</sup> <a name="ListOmniDashboards" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.ListOmniDashboards"></a>
+
+```typescript
+public readonly ListOmniDashboards: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListOmniDashboards API call.
+
+---
+
+##### `ListSpaces`<sup>Required</sup> <a name="ListSpaces" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.ListSpaces"></a>
+
+```typescript
+public readonly ListSpaces: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListSpaces API call.
+
+---
+
+##### `ListSpacesForOrganization`<sup>Required</sup> <a name="ListSpacesForOrganization" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.ListSpacesForOrganization"></a>
+
+```typescript
+public readonly ListSpacesForOrganization: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListSpacesForOrganization API call.
+
+---
+
 ##### `ListTagsForResource`<sup>Required</sup> <a name="ListTagsForResource" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.ListTagsForResource"></a>
 
 ```typescript
@@ -6574,6 +6995,66 @@ IAM actions required for the ListTagsForResource API call.
 
 ---
 
+##### `ListTelemetryFields`<sup>Required</sup> <a name="ListTelemetryFields" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.ListTelemetryFields"></a>
+
+```typescript
+public readonly ListTelemetryFields: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListTelemetryFields API call.
+
+---
+
+##### `ListTelemetryQuerySessions`<sup>Required</sup> <a name="ListTelemetryQuerySessions" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.ListTelemetryQuerySessions"></a>
+
+```typescript
+public readonly ListTelemetryQuerySessions: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListTelemetryQuerySessions API call.
+
+---
+
+##### `ListViews`<sup>Required</sup> <a name="ListViews" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.ListViews"></a>
+
+```typescript
+public readonly ListViews: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListViews API call.
+
+---
+
+##### `opGetAccessGrant`<sup>Required</sup> <a name="opGetAccessGrant" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetAccessGrant"></a>
+
+```typescript
+public readonly opGetAccessGrant: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetAccessGrant API call.
+
+---
+
+##### `opGetAccessProfile`<sup>Required</sup> <a name="opGetAccessProfile" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetAccessProfile"></a>
+
+```typescript
+public readonly opGetAccessProfile: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetAccessProfile API call.
+
+---
+
 ##### `opGetAlarmMuteRule`<sup>Required</sup> <a name="opGetAlarmMuteRule" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetAlarmMuteRule"></a>
 
 ```typescript
@@ -6583,6 +7064,30 @@ public readonly opGetAlarmMuteRule: string[];
 - *Type:* string[]
 
 IAM actions required for the GetAlarmMuteRule API call.
+
+---
+
+##### `opGetAlert`<sup>Required</sup> <a name="opGetAlert" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetAlert"></a>
+
+```typescript
+public readonly opGetAlert: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetAlert API call.
+
+---
+
+##### `opGetContextGraph`<sup>Required</sup> <a name="opGetContextGraph" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetContextGraph"></a>
+
+```typescript
+public readonly opGetContextGraph: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetContextGraph API call.
 
 ---
 
@@ -6610,6 +7115,42 @@ IAM actions required for the GetDataset API call.
 
 ---
 
+##### `opGetDomain`<sup>Required</sup> <a name="opGetDomain" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetDomain"></a>
+
+```typescript
+public readonly opGetDomain: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetDomain API call.
+
+---
+
+##### `opGetDomainAccessGrantForOrganization`<sup>Required</sup> <a name="opGetDomainAccessGrantForOrganization" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetDomainAccessGrantForOrganization"></a>
+
+```typescript
+public readonly opGetDomainAccessGrantForOrganization: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetDomainAccessGrantForOrganization API call.
+
+---
+
+##### `opGetDomainForOrganization`<sup>Required</sup> <a name="opGetDomainForOrganization" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetDomainForOrganization"></a>
+
+```typescript
+public readonly opGetDomainForOrganization: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetDomainForOrganization API call.
+
+---
+
 ##### `opGetInsightRuleReport`<sup>Required</sup> <a name="opGetInsightRuleReport" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetInsightRuleReport"></a>
 
 ```typescript
@@ -6619,6 +7160,30 @@ public readonly opGetInsightRuleReport: string[];
 - *Type:* string[]
 
 IAM actions required for the GetInsightRuleReport API call.
+
+---
+
+##### `opGetIntegration`<sup>Required</sup> <a name="opGetIntegration" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetIntegration"></a>
+
+```typescript
+public readonly opGetIntegration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetIntegration API call.
+
+---
+
+##### `opGetIntelligenceConfiguration`<sup>Required</sup> <a name="opGetIntelligenceConfiguration" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetIntelligenceConfiguration"></a>
+
+```typescript
+public readonly opGetIntelligenceConfiguration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetIntelligenceConfiguration API call.
 
 ---
 
@@ -6670,6 +7235,18 @@ IAM actions required for the GetMetricWidgetImage API call.
 
 ---
 
+##### `opGetOmniDashboard`<sup>Required</sup> <a name="opGetOmniDashboard" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetOmniDashboard"></a>
+
+```typescript
+public readonly opGetOmniDashboard: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetOmniDashboard API call.
+
+---
+
 ##### `opGetOTelEnrichment`<sup>Required</sup> <a name="opGetOTelEnrichment" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetOTelEnrichment"></a>
 
 ```typescript
@@ -6679,6 +7256,54 @@ public readonly opGetOTelEnrichment: string[];
 - *Type:* string[]
 
 IAM actions required for the GetOTelEnrichment API call.
+
+---
+
+##### `opGetSpace`<sup>Required</sup> <a name="opGetSpace" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetSpace"></a>
+
+```typescript
+public readonly opGetSpace: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetSpace API call.
+
+---
+
+##### `opGetSpaceCredentialsForOrganization`<sup>Required</sup> <a name="opGetSpaceCredentialsForOrganization" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetSpaceCredentialsForOrganization"></a>
+
+```typescript
+public readonly opGetSpaceCredentialsForOrganization: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetSpaceCredentialsForOrganization API call.
+
+---
+
+##### `opGetTelemetryQueryResults`<sup>Required</sup> <a name="opGetTelemetryQueryResults" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetTelemetryQueryResults"></a>
+
+```typescript
+public readonly opGetTelemetryQueryResults: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetTelemetryQueryResults API call.
+
+---
+
+##### `opGetView`<sup>Required</sup> <a name="opGetView" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetView"></a>
+
+```typescript
+public readonly opGetView: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetView API call.
 
 ---
 
@@ -6754,6 +7379,18 @@ IAM actions required for the PutInsightRule API call.
 
 ---
 
+##### `PutIntelligenceConfiguration`<sup>Required</sup> <a name="PutIntelligenceConfiguration" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.PutIntelligenceConfiguration"></a>
+
+```typescript
+public readonly PutIntelligenceConfiguration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the PutIntelligenceConfiguration API call.
+
+---
+
 ##### `PutLogAlarm`<sup>Required</sup> <a name="PutLogAlarm" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.PutLogAlarm"></a>
 
 ```typescript
@@ -6814,6 +7451,18 @@ IAM actions required for the PutMetricStream API call.
 
 ---
 
+##### `SearchPrincipals`<sup>Required</sup> <a name="SearchPrincipals" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.SearchPrincipals"></a>
+
+```typescript
+public readonly SearchPrincipals: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the SearchPrincipals API call.
+
+---
+
 ##### `StartMetricStreams`<sup>Required</sup> <a name="StartMetricStreams" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.StartMetricStreams"></a>
 
 ```typescript
@@ -6835,6 +7484,30 @@ public readonly StartOTelEnrichment: string[];
 - *Type:* string[]
 
 IAM actions required for the StartOTelEnrichment API call.
+
+---
+
+##### `StartTelemetryQuery`<sup>Required</sup> <a name="StartTelemetryQuery" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.StartTelemetryQuery"></a>
+
+```typescript
+public readonly StartTelemetryQuery: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StartTelemetryQuery API call.
+
+---
+
+##### `StartTelemetryQuerySession`<sup>Required</sup> <a name="StartTelemetryQuerySession" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.StartTelemetryQuerySession"></a>
+
+```typescript
+public readonly StartTelemetryQuerySession: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StartTelemetryQuerySession API call.
 
 ---
 
@@ -6862,6 +7535,30 @@ IAM actions required for the StopOTelEnrichment API call.
 
 ---
 
+##### `StopTelemetryQuery`<sup>Required</sup> <a name="StopTelemetryQuery" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.StopTelemetryQuery"></a>
+
+```typescript
+public readonly StopTelemetryQuery: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StopTelemetryQuery API call.
+
+---
+
+##### `StopTelemetryQuerySession`<sup>Required</sup> <a name="StopTelemetryQuerySession" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.StopTelemetryQuerySession"></a>
+
+```typescript
+public readonly StopTelemetryQuerySession: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StopTelemetryQuerySession API call.
+
+---
+
 ##### `TagResource`<sup>Required</sup> <a name="TagResource" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.TagResource"></a>
 
 ```typescript
@@ -6883,6 +7580,102 @@ public readonly UntagResource: string[];
 - *Type:* string[]
 
 IAM actions required for the UntagResource API call.
+
+---
+
+##### `UpdateAccessProfile`<sup>Required</sup> <a name="UpdateAccessProfile" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.UpdateAccessProfile"></a>
+
+```typescript
+public readonly UpdateAccessProfile: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateAccessProfile API call.
+
+---
+
+##### `UpdateAlert`<sup>Required</sup> <a name="UpdateAlert" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.UpdateAlert"></a>
+
+```typescript
+public readonly UpdateAlert: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateAlert API call.
+
+---
+
+##### `UpdateDomain`<sup>Required</sup> <a name="UpdateDomain" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.UpdateDomain"></a>
+
+```typescript
+public readonly UpdateDomain: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateDomain API call.
+
+---
+
+##### `UpdateDomainForOrganization`<sup>Required</sup> <a name="UpdateDomainForOrganization" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.UpdateDomainForOrganization"></a>
+
+```typescript
+public readonly UpdateDomainForOrganization: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateDomainForOrganization API call.
+
+---
+
+##### `UpdateIntegration`<sup>Required</sup> <a name="UpdateIntegration" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.UpdateIntegration"></a>
+
+```typescript
+public readonly UpdateIntegration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateIntegration API call.
+
+---
+
+##### `UpdateOmniDashboard`<sup>Required</sup> <a name="UpdateOmniDashboard" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.UpdateOmniDashboard"></a>
+
+```typescript
+public readonly UpdateOmniDashboard: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateOmniDashboard API call.
+
+---
+
+##### `UpdateSpace`<sup>Required</sup> <a name="UpdateSpace" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.UpdateSpace"></a>
+
+```typescript
+public readonly UpdateSpace: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateSpace API call.
+
+---
+
+##### `UpdateView`<sup>Required</sup> <a name="UpdateView" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.UpdateView"></a>
+
+```typescript
+public readonly UpdateView: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateView API call.
 
 ---
 

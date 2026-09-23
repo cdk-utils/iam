@@ -2432,6 +2432,10 @@
       "Name": "CreateGlobalReplicationGroup",
       "AuthorizedActions": [
         {
+          "Name": "AddTagsToResource",
+          "Service": "elasticache"
+        },
+        {
           "Name": "CreateGlobalReplicationGroup",
           "Service": "elasticache"
         }

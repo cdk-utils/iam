@@ -1280,6 +1280,16 @@
     },
     {
       "Name": "ListRepositorySyncDefinitions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRepositorySyncDefinitions",
+          "Service": "codeconnections"
+        },
+        {
+          "Name": "ListRepositorySyncDefinitions",
+          "Service": "codestar-connections"
+        }
+      ],
       "SDK": [
         {
           "Name": "codeconnections",

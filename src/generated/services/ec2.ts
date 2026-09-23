@@ -10327,6 +10327,10 @@ export class EC2Operations {
 		"ec2:CreateCapacityReservationCancellationQuote",
 		"ec2:CreateTags",
 	];
+	/** IAM actions required for the CreateCapacityReservationDateChangeQuote API call. */
+	static readonly CreateCapacityReservationDateChangeQuote: string[] = [
+		"ec2:CreateTags",
+	];
 	/** IAM actions required for the CreateCapacityReservationFleet API call. */
 	static readonly CreateCapacityReservationFleet: string[] = [
 		"ec2:CreateCapacityReservationFleet",
@@ -11237,6 +11241,8 @@ export class EC2Operations {
 	static readonly DescribeCapacityReservationCancellationQuotes: string[] = [
 		"ec2:DescribeCapacityReservationCancellationQuotes",
 	];
+	/** IAM actions required for the DescribeCapacityReservationDateChangeQuotes API call. */
+	static readonly DescribeCapacityReservationDateChangeQuotes: string[] = [];
 	/** IAM actions required for the DescribeCapacityReservationFleets API call. */
 	static readonly DescribeCapacityReservationFleets: string[] = [
 		"ec2:DescribeCapacityReservationFleets",

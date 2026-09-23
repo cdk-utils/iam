@@ -1599,6 +1599,15 @@
       },
       "Resources": [
         {
+          "Name": "application"
+        },
+        {
+          "Name": "contact-flow-module"
+        },
+        {
+          "Name": "hierarchy-group"
+        },
+        {
           "Name": "security-profile"
         }
       ],
@@ -5767,6 +5776,30 @@
       }
     },
     {
+      "Name": "ListSecurityProfileAIAgents",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "connect:InstanceId"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "security-profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ListSecurityProfileApplications",
       "ActionConditionKeys": [
         "aws:ResourceTag/${TagKey}",
@@ -9283,6 +9316,15 @@
         }
       },
       "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "contact-flow-module"
+        },
+        {
+          "Name": "hierarchy-group"
+        },
         {
           "Name": "security-profile"
         }
@@ -13823,6 +13865,12 @@
     },
     {
       "Name": "ListSecurityProfileAIAgents",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSecurityProfileAIAgents",
+          "Service": "connect"
+        }
+      ],
       "SDK": [
         {
           "Name": "connect",
@@ -16442,6 +16490,15 @@
       "Name": "ai-agent",
       "ARNFormats": [
         "arn:${Partition}:wisdom:${Region}:${Account}:ai-agent/${AssistantId}/${AIAgentId}:${Version}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "application",
+      "ARNFormats": [
+        "arn:${Partition}:app-integrations:${Region}:${Account}:application/${ApplicationId}"
       ],
       "ConditionKeys": [
         "aws:ResourceTag/${TagKey}"

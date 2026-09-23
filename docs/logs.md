@@ -1469,6 +1469,7 @@ new logs.LogsActions()
 | <code><a href="#@cdk_utils/iam.logs.LogsActions.property.DisassociateKmsKey">DisassociateKmsKey</a></code> | <code>string</code> | [Write] logs:DisassociateKmsKey. |
 | <code><a href="#@cdk_utils/iam.logs.LogsActions.property.DisassociateSourceFromS3TableIntegration">DisassociateSourceFromS3TableIntegration</a></code> | <code>string</code> | [Write] logs:DisassociateSourceFromS3TableIntegration. |
 | <code><a href="#@cdk_utils/iam.logs.LogsActions.property.FilterLogEvents">FilterLogEvents</a></code> | <code>string</code> | [Read] logs:FilterLogEvents. |
+| <code><a href="#@cdk_utils/iam.logs.LogsActions.property.IntegrateWithDataset">IntegrateWithDataset</a></code> | <code>string</code> | [Write] logs:IntegrateWithDataset. |
 | <code><a href="#@cdk_utils/iam.logs.LogsActions.property.IntegrateWithS3Table">IntegrateWithS3Table</a></code> | <code>string</code> | [Write] logs:IntegrateWithS3Table. |
 | <code><a href="#@cdk_utils/iam.logs.LogsActions.property.Link">Link</a></code> | <code>string</code> | [Write] logs:Link. |
 | <code><a href="#@cdk_utils/iam.logs.LogsActions.property.ListAggregateLogGroupSummaries">ListAggregateLogGroupSummaries</a></code> | <code>string</code> | [List] logs:ListAggregateLogGroupSummaries. |
@@ -2509,6 +2510,18 @@ public readonly FilterLogEvents: string;
 - *Type:* string
 
 [Read] logs:FilterLogEvents.
+
+---
+
+##### `IntegrateWithDataset`<sup>Required</sup> <a name="IntegrateWithDataset" id="@cdk_utils/iam.logs.LogsActions.property.IntegrateWithDataset"></a>
+
+```typescript
+public readonly IntegrateWithDataset: string;
+```
+
+- *Type:* string
+
+[Write] logs:IntegrateWithDataset.
 
 ---
 

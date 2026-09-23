@@ -459,7 +459,10 @@ export class CodeconnectionsOperations {
 		"codestar-connections:ListRepositoryLinks",
 	];
 	/** IAM actions required for the ListRepositorySyncDefinitions API call. */
-	static readonly ListRepositorySyncDefinitions: string[] = [];
+	static readonly ListRepositorySyncDefinitions: string[] = [
+		"codeconnections:ListRepositorySyncDefinitions",
+		"codestar-connections:ListRepositorySyncDefinitions",
+	];
 	/** IAM actions required for the ListSyncConfigurations API call. */
 	static readonly ListSyncConfigurations: string[] = [
 		"codeconnections:ListSyncConfigurations",

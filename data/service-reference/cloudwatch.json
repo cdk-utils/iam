@@ -3086,6 +3086,256 @@
       ]
     },
     {
+      "Name": "CreateAccessGrant",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAccessGrant",
+          "Service": "cloudwatch"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "create_access_grant",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAccessProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAccessProfile",
+          "Service": "cloudwatch"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "create_access_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAlert",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAlert",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "create_alert",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDomain",
+          "Service": "cloudwatch"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "create_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDomainAccessGrantForOrganization",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDomainAccessGrantForOrganization",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "create_domain_access_grant_for_organization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDomainForOrganization",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDomainForOrganization",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "create_domain_for_organization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateIntegration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateIntegration",
+          "Service": "cloudwatch"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "cloudwatch.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "create_integration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateOmniDashboard",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateOmniDashboard",
+          "Service": "cloudwatch"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "create_omni_dashboard",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateOneTimeDeepLinkCode",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateOneTimeDeepLinkCode",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "create_one_time_deep_link_code",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSpace",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSpace",
+          "Service": "cloudwatch"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "cloudwatch.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "create_space",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateView",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateView",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "create_view",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAccessGrant",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAccessGrant",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "delete_access_grant",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAccessProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAccessProfile",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "delete_access_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DeleteAlarmMuteRule",
       "AuthorizedActions": [
         {
@@ -3113,6 +3363,16 @@
         {
           "Name": "cloudwatch",
           "Method": "delete_alarms",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAlert",
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "delete_alert",
           "Package": "Boto3"
         }
       ]
@@ -3150,6 +3410,54 @@
       ]
     },
     {
+      "Name": "DeleteDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDomain",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "delete_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDomainAccessGrantForOrganization",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDomainAccessGrantForOrganization",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "delete_domain_access_grant_for_organization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDomainForOrganization",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDomainForOrganization",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "delete_domain_for_organization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DeleteInsightRules",
       "AuthorizedActions": [
         {
@@ -3166,6 +3474,22 @@
       ]
     },
     {
+      "Name": "DeleteIntegration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteIntegration",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "delete_integration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DeleteMetricStream",
       "AuthorizedActions": [
         {
@@ -3177,6 +3501,54 @@
         {
           "Name": "cloudwatch",
           "Method": "delete_metric_stream",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteOmniDashboard",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteOmniDashboard",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "delete_omni_dashboard",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSpace",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSpace",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "delete_space",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteView",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteView",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "delete_view",
           "Package": "Boto3"
         }
       ]
@@ -3346,6 +3718,38 @@
       ]
     },
     {
+      "Name": "GetAccessGrant",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAccessGrant",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "get_access_grant",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAccessProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAccessProfile",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "get_access_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetAlarmMuteRule",
       "AuthorizedActions": [
         {
@@ -3357,6 +3761,38 @@
         {
           "Name": "cloudwatch",
           "Method": "get_alarm_mute_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAlert",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAlert",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "get_alert",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetContextGraph",
+      "AuthorizedActions": [
+        {
+          "Name": "GetContextGraph",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "get_context_graph",
           "Package": "Boto3"
         }
       ]
@@ -3394,6 +3830,54 @@
       ]
     },
     {
+      "Name": "GetDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDomain",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "get_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDomainAccessGrantForOrganization",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDomainAccessGrantForOrganization",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "get_domain_access_grant_for_organization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDomainForOrganization",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDomainForOrganization",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "get_domain_for_organization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetInsightRuleReport",
       "AuthorizedActions": [
         {
@@ -3405,6 +3889,38 @@
         {
           "Name": "cloudwatch",
           "Method": "get_insight_rule_report",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetIntegration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetIntegration",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "get_integration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetIntelligenceConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetIntelligenceConfiguration",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "get_intelligence_configuration",
           "Package": "Boto3"
         }
       ]
@@ -3490,6 +4006,118 @@
       ]
     },
     {
+      "Name": "GetOmniDashboard",
+      "AuthorizedActions": [
+        {
+          "Name": "GetOmniDashboard",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "get_omni_dashboard",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSpace",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSpace",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "get_space",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSpaceCredentialsForOrganization",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSpaceCredentialsForOrganization",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "get_space_credentials_for_organization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetTelemetryQueryResults",
+      "AuthorizedActions": [
+        {
+          "Name": "GetTelemetryQueryResults",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "get_telemetry_query_results",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetView",
+      "AuthorizedActions": [
+        {
+          "Name": "GetView",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "get_view",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAccessGrants",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAccessGrants",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "list_access_grants",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAccessProfiles",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAccessProfiles",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "list_access_profiles",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListAlarmMuteRules",
       "AuthorizedActions": [
         {
@@ -3506,6 +4134,22 @@
       ]
     },
     {
+      "Name": "ListAlerts",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAlerts",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "list_alerts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListDashboards",
       "AuthorizedActions": [
         {
@@ -3517,6 +4161,54 @@
         {
           "Name": "cloudwatch",
           "Method": "list_dashboards",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDomainAccessGrantsForOrganization",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDomainAccessGrantsForOrganization",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "list_domain_access_grants_for_organization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDomains",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDomains",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "list_domains",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListIntegrations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListIntegrations",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "list_integrations",
           "Package": "Boto3"
         }
       ]
@@ -3570,6 +4262,54 @@
       ]
     },
     {
+      "Name": "ListOmniDashboards",
+      "AuthorizedActions": [
+        {
+          "Name": "ListOmniDashboards",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "list_omni_dashboards",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSpaces",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSpaces",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "list_spaces",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSpacesForOrganization",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSpacesForOrganization",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "list_spaces_for_organization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListTagsForResource",
       "AuthorizedActions": [
         {
@@ -3585,6 +4325,62 @@
         {
           "Name": "cloudwatch",
           "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTelemetryFields",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRecords",
+          "Service": "cloudwatch"
+        },
+        {
+          "Name": "ListMetrics",
+          "Service": "cloudwatch"
+        },
+        {
+          "Name": "ListTelemetryFields",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "list_telemetry_fields",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTelemetryQuerySessions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTelemetryQuerySessions",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "list_telemetry_query_sessions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListViews",
+      "AuthorizedActions": [
+        {
+          "Name": "ListViews",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "list_views",
           "Package": "Boto3"
         }
       ]
@@ -3681,6 +4477,22 @@
         {
           "Name": "cloudwatch",
           "Method": "put_insight_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutIntelligenceConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "PutIntelligenceConfiguration",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "put_intelligence_configuration",
           "Package": "Boto3"
         }
       ]
@@ -3796,6 +4608,22 @@
       ]
     },
     {
+      "Name": "SearchPrincipals",
+      "AuthorizedActions": [
+        {
+          "Name": "SearchPrincipals",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "search_principals",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "SetAlarmState",
       "AuthorizedActions": [
         {
@@ -3844,6 +4672,46 @@
       ]
     },
     {
+      "Name": "StartTelemetryQuery",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMetricData",
+          "Service": "cloudwatch"
+        },
+        {
+          "Name": "GetRecords",
+          "Service": "cloudwatch"
+        },
+        {
+          "Name": "ListMetrics",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "start_telemetry_query",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartTelemetryQuerySession",
+      "AuthorizedActions": [
+        {
+          "Name": "StartTelemetryQuerySession",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "start_telemetry_query_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "StopMetricStreams",
       "AuthorizedActions": [
         {
@@ -3871,6 +4739,38 @@
         {
           "Name": "cloudwatch",
           "Method": "stop_otel_enrichment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopTelemetryQuery",
+      "AuthorizedActions": [
+        {
+          "Name": "StopTelemetryQuery",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "stop_telemetry_query",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopTelemetryQuerySession",
+      "AuthorizedActions": [
+        {
+          "Name": "StopTelemetryQuerySession",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "stop_telemetry_query_session",
           "Package": "Boto3"
         }
       ]
@@ -3911,6 +4811,137 @@
         {
           "Name": "cloudwatch",
           "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAccessProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAccessProfile",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "update_access_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAlert",
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "update_alert",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDomain",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "update_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDomainForOrganization",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDomainForOrganization",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "update_domain_for_organization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateIntegration",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "cloudwatch.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateIntegration",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "update_integration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateOmniDashboard",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateOmniDashboard",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "update_omni_dashboard",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSpace",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSpace",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "update_space",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateView",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateView",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "update_view",
           "Package": "Boto3"
         }
       ]
