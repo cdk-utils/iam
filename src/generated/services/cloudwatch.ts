@@ -1710,26 +1710,106 @@ export class CloudWatchResources {
 export class CloudWatchOperations {
 	/** IAM actions required for the AssociateDatasetKmsKey API call. */
 	static readonly AssociateDatasetKmsKey: string[] = [];
+	/** IAM actions required for the CreateAccessGrant API call. */
+	static readonly CreateAccessGrant: string[] = [
+		"cloudwatch:CreateAccessGrant",
+		"cloudwatch:TagResource",
+	];
+	/** IAM actions required for the CreateAccessProfile API call. */
+	static readonly CreateAccessProfile: string[] = [
+		"cloudwatch:CreateAccessProfile",
+		"cloudwatch:TagResource",
+	];
+	/** IAM actions required for the CreateAlert API call. */
+	static readonly CreateAlert: string[] = ["cloudwatch:CreateAlert"];
+	/** IAM actions required for the CreateDomain API call. */
+	static readonly CreateDomain: string[] = [
+		"cloudwatch:CreateDomain",
+		"cloudwatch:TagResource",
+	];
+	/** IAM actions required for the CreateDomainAccessGrantForOrganization API call. */
+	static readonly CreateDomainAccessGrantForOrganization: string[] = [
+		"cloudwatch:CreateDomainAccessGrantForOrganization",
+	];
+	/** IAM actions required for the CreateDomainForOrganization API call. */
+	static readonly CreateDomainForOrganization: string[] = [
+		"cloudwatch:CreateDomainForOrganization",
+	];
+	/** IAM actions required for the CreateIntegration API call. */
+	static readonly CreateIntegration: string[] = [
+		"cloudwatch:CreateIntegration",
+		"iam:PassRole",
+		"cloudwatch:TagResource",
+	];
+	/** IAM actions required for the CreateOmniDashboard API call. */
+	static readonly CreateOmniDashboard: string[] = [
+		"cloudwatch:CreateOmniDashboard",
+		"cloudwatch:TagResource",
+	];
+	/** IAM actions required for the CreateOneTimeDeepLinkCode API call. */
+	static readonly CreateOneTimeDeepLinkCode: string[] = [
+		"cloudwatch:CreateOneTimeDeepLinkCode",
+	];
+	/** IAM actions required for the CreateSpace API call. */
+	static readonly CreateSpace: string[] = [
+		"cloudwatch:CreateSpace",
+		"iam:PassRole",
+		"cloudwatch:TagResource",
+	];
+	/** IAM actions required for the CreateView API call. */
+	static readonly CreateView: string[] = ["cloudwatch:CreateView"];
+	/** IAM actions required for the DeleteAccessGrant API call. */
+	static readonly DeleteAccessGrant: string[] = [
+		"cloudwatch:DeleteAccessGrant",
+	];
+	/** IAM actions required for the DeleteAccessProfile API call. */
+	static readonly DeleteAccessProfile: string[] = [
+		"cloudwatch:DeleteAccessProfile",
+	];
 	/** IAM actions required for the DeleteAlarmMuteRule API call. */
 	static readonly DeleteAlarmMuteRule: string[] = [
 		"cloudwatch:DeleteAlarmMuteRule",
 	];
 	/** IAM actions required for the DeleteAlarms API call. */
 	static readonly DeleteAlarms: string[] = ["cloudwatch:DeleteAlarms"];
+	/** IAM actions required for the DeleteAlert API call. */
+	static readonly DeleteAlert: string[] = [];
 	/** IAM actions required for the DeleteAnomalyDetector API call. */
 	static readonly DeleteAnomalyDetector: string[] = [
 		"cloudwatch:DeleteAnomalyDetector",
 	];
 	/** IAM actions required for the DeleteDashboards API call. */
 	static readonly DeleteDashboards: string[] = ["cloudwatch:DeleteDashboards"];
+	/** IAM actions required for the DeleteDomain API call. */
+	static readonly DeleteDomain: string[] = ["cloudwatch:DeleteDomain"];
+	/** IAM actions required for the DeleteDomainAccessGrantForOrganization API call. */
+	static readonly DeleteDomainAccessGrantForOrganization: string[] = [
+		"cloudwatch:DeleteDomainAccessGrantForOrganization",
+	];
+	/** IAM actions required for the DeleteDomainForOrganization API call. */
+	static readonly DeleteDomainForOrganization: string[] = [
+		"cloudwatch:DeleteDomainForOrganization",
+	];
 	/** IAM actions required for the DeleteInsightRules API call. */
 	static readonly DeleteInsightRules: string[] = [
 		"cloudwatch:DeleteInsightRules",
+	];
+	/** IAM actions required for the DeleteIntegration API call. */
+	static readonly DeleteIntegration: string[] = [
+		"cloudwatch:DeleteIntegration",
 	];
 	/** IAM actions required for the DeleteMetricStream API call. */
 	static readonly DeleteMetricStream: string[] = [
 		"cloudwatch:DeleteMetricStream",
 	];
+	/** IAM actions required for the DeleteOmniDashboard API call. */
+	static readonly DeleteOmniDashboard: string[] = [
+		"cloudwatch:DeleteOmniDashboard",
+	];
+	/** IAM actions required for the DeleteSpace API call. */
+	static readonly DeleteSpace: string[] = ["cloudwatch:DeleteSpace"];
+	/** IAM actions required for the DeleteView API call. */
+	static readonly DeleteView: string[] = ["cloudwatch:DeleteView"];
 	/** IAM actions required for the DescribeAlarmContributors API call. */
 	static readonly DescribeAlarmContributors: string[] = [];
 	/** IAM actions required for the DescribeAlarmHistory API call. */
@@ -1768,17 +1848,43 @@ export class CloudWatchOperations {
 	static readonly EnableInsightRules: string[] = [
 		"cloudwatch:EnableInsightRules",
 	];
+	/** IAM actions required for the GetAccessGrant API call. */
+	static readonly opGetAccessGrant: string[] = ["cloudwatch:GetAccessGrant"];
+	/** IAM actions required for the GetAccessProfile API call. */
+	static readonly opGetAccessProfile: string[] = [
+		"cloudwatch:GetAccessProfile",
+	];
 	/** IAM actions required for the GetAlarmMuteRule API call. */
 	static readonly opGetAlarmMuteRule: string[] = [
 		"cloudwatch:GetAlarmMuteRule",
 	];
+	/** IAM actions required for the GetAlert API call. */
+	static readonly opGetAlert: string[] = ["cloudwatch:GetAlert"];
+	/** IAM actions required for the GetContextGraph API call. */
+	static readonly opGetContextGraph: string[] = ["cloudwatch:GetContextGraph"];
 	/** IAM actions required for the GetDashboard API call. */
 	static readonly opGetDashboard: string[] = ["cloudwatch:GetDashboard"];
 	/** IAM actions required for the GetDataset API call. */
 	static readonly opGetDataset: string[] = ["cloudwatch:GetDataset"];
+	/** IAM actions required for the GetDomain API call. */
+	static readonly opGetDomain: string[] = ["cloudwatch:GetDomain"];
+	/** IAM actions required for the GetDomainAccessGrantForOrganization API call. */
+	static readonly opGetDomainAccessGrantForOrganization: string[] = [
+		"cloudwatch:GetDomainAccessGrantForOrganization",
+	];
+	/** IAM actions required for the GetDomainForOrganization API call. */
+	static readonly opGetDomainForOrganization: string[] = [
+		"cloudwatch:GetDomainForOrganization",
+	];
 	/** IAM actions required for the GetInsightRuleReport API call. */
 	static readonly opGetInsightRuleReport: string[] = [
 		"cloudwatch:GetInsightRuleReport",
+	];
+	/** IAM actions required for the GetIntegration API call. */
+	static readonly opGetIntegration: string[] = ["cloudwatch:GetIntegration"];
+	/** IAM actions required for the GetIntelligenceConfiguration API call. */
+	static readonly opGetIntelligenceConfiguration: string[] = [
+		"cloudwatch:GetIntelligenceConfiguration",
 	];
 	/** IAM actions required for the GetMetricData API call. */
 	static readonly opGetMetricData: string[] = ["cloudwatch:GetMetricData"];
@@ -1796,12 +1902,44 @@ export class CloudWatchOperations {
 	static readonly opGetOTelEnrichment: string[] = [
 		"cloudwatch:GetOTelEnrichment",
 	];
+	/** IAM actions required for the GetOmniDashboard API call. */
+	static readonly opGetOmniDashboard: string[] = [
+		"cloudwatch:GetOmniDashboard",
+	];
+	/** IAM actions required for the GetSpace API call. */
+	static readonly opGetSpace: string[] = ["cloudwatch:GetSpace"];
+	/** IAM actions required for the GetSpaceCredentialsForOrganization API call. */
+	static readonly opGetSpaceCredentialsForOrganization: string[] = [
+		"cloudwatch:GetSpaceCredentialsForOrganization",
+	];
+	/** IAM actions required for the GetTelemetryQueryResults API call. */
+	static readonly opGetTelemetryQueryResults: string[] = [
+		"cloudwatch:GetTelemetryQueryResults",
+	];
+	/** IAM actions required for the GetView API call. */
+	static readonly opGetView: string[] = ["cloudwatch:GetView"];
+	/** IAM actions required for the ListAccessGrants API call. */
+	static readonly ListAccessGrants: string[] = ["cloudwatch:ListAccessGrants"];
+	/** IAM actions required for the ListAccessProfiles API call. */
+	static readonly ListAccessProfiles: string[] = [
+		"cloudwatch:ListAccessProfiles",
+	];
 	/** IAM actions required for the ListAlarmMuteRules API call. */
 	static readonly ListAlarmMuteRules: string[] = [
 		"cloudwatch:ListAlarmMuteRules",
 	];
+	/** IAM actions required for the ListAlerts API call. */
+	static readonly ListAlerts: string[] = ["cloudwatch:ListAlerts"];
 	/** IAM actions required for the ListDashboards API call. */
 	static readonly ListDashboards: string[] = ["cloudwatch:ListDashboards"];
+	/** IAM actions required for the ListDomainAccessGrantsForOrganization API call. */
+	static readonly ListDomainAccessGrantsForOrganization: string[] = [
+		"cloudwatch:ListDomainAccessGrantsForOrganization",
+	];
+	/** IAM actions required for the ListDomains API call. */
+	static readonly ListDomains: string[] = ["cloudwatch:ListDomains"];
+	/** IAM actions required for the ListIntegrations API call. */
+	static readonly ListIntegrations: string[] = ["cloudwatch:ListIntegrations"];
 	/** IAM actions required for the ListManagedInsightRules API call. */
 	static readonly ListManagedInsightRules: string[] = [
 		"cloudwatch:ListManagedInsightRules",
@@ -1812,11 +1950,33 @@ export class CloudWatchOperations {
 	];
 	/** IAM actions required for the ListMetrics API call. */
 	static readonly ListMetrics: string[] = ["cloudwatch:ListMetrics"];
+	/** IAM actions required for the ListOmniDashboards API call. */
+	static readonly ListOmniDashboards: string[] = [
+		"cloudwatch:ListOmniDashboards",
+	];
+	/** IAM actions required for the ListSpaces API call. */
+	static readonly ListSpaces: string[] = ["cloudwatch:ListSpaces"];
+	/** IAM actions required for the ListSpacesForOrganization API call. */
+	static readonly ListSpacesForOrganization: string[] = [
+		"cloudwatch:ListSpacesForOrganization",
+	];
 	/** IAM actions required for the ListTagsForResource API call. */
 	static readonly ListTagsForResource: string[] = [
 		"cloudwatch:ListTagsForResource",
 		"oam:ListTagsForResource",
 	];
+	/** IAM actions required for the ListTelemetryFields API call. */
+	static readonly ListTelemetryFields: string[] = [
+		"cloudwatch:GetRecords",
+		"cloudwatch:ListMetrics",
+		"cloudwatch:ListTelemetryFields",
+	];
+	/** IAM actions required for the ListTelemetryQuerySessions API call. */
+	static readonly ListTelemetryQuerySessions: string[] = [
+		"cloudwatch:ListTelemetryQuerySessions",
+	];
+	/** IAM actions required for the ListViews API call. */
+	static readonly ListViews: string[] = ["cloudwatch:ListViews"];
 	/** IAM actions required for the PutAlarmMuteRule API call. */
 	static readonly PutAlarmMuteRule: string[] = [
 		"cloudwatch:PutAlarmMuteRule",
@@ -1841,6 +2001,10 @@ export class CloudWatchOperations {
 		"cloudwatch:PutInsightRule",
 		"cloudwatch:TagResource",
 	];
+	/** IAM actions required for the PutIntelligenceConfiguration API call. */
+	static readonly PutIntelligenceConfiguration: string[] = [
+		"cloudwatch:PutIntelligenceConfiguration",
+	];
 	/** IAM actions required for the PutLogAlarm API call. */
 	static readonly PutLogAlarm: string[] = [
 		"iam:PassRole",
@@ -1864,6 +2028,8 @@ export class CloudWatchOperations {
 		"cloudwatch:PutMetricStream",
 		"cloudwatch:TagResource",
 	];
+	/** IAM actions required for the SearchPrincipals API call. */
+	static readonly SearchPrincipals: string[] = ["cloudwatch:SearchPrincipals"];
 	/** IAM actions required for the SetAlarmState API call. */
 	static readonly opSetAlarmState: string[] = ["cloudwatch:SetAlarmState"];
 	/** IAM actions required for the StartMetricStreams API call. */
@@ -1874,6 +2040,16 @@ export class CloudWatchOperations {
 	static readonly StartOTelEnrichment: string[] = [
 		"cloudwatch:StartOTelEnrichment",
 	];
+	/** IAM actions required for the StartTelemetryQuery API call. */
+	static readonly StartTelemetryQuery: string[] = [
+		"cloudwatch:GetMetricData",
+		"cloudwatch:GetRecords",
+		"cloudwatch:ListMetrics",
+	];
+	/** IAM actions required for the StartTelemetryQuerySession API call. */
+	static readonly StartTelemetryQuerySession: string[] = [
+		"cloudwatch:StartTelemetryQuerySession",
+	];
 	/** IAM actions required for the StopMetricStreams API call. */
 	static readonly StopMetricStreams: string[] = [
 		"cloudwatch:StopMetricStreams",
@@ -1881,6 +2057,14 @@ export class CloudWatchOperations {
 	/** IAM actions required for the StopOTelEnrichment API call. */
 	static readonly StopOTelEnrichment: string[] = [
 		"cloudwatch:StopOTelEnrichment",
+	];
+	/** IAM actions required for the StopTelemetryQuery API call. */
+	static readonly StopTelemetryQuery: string[] = [
+		"cloudwatch:StopTelemetryQuery",
+	];
+	/** IAM actions required for the StopTelemetryQuerySession API call. */
+	static readonly StopTelemetryQuerySession: string[] = [
+		"cloudwatch:StopTelemetryQuerySession",
 	];
 	/** IAM actions required for the TagResource API call. */
 	static readonly TagResource: string[] = [
@@ -1892,6 +2076,31 @@ export class CloudWatchOperations {
 		"cloudwatch:UntagResource",
 		"oam:UntagResource",
 	];
+	/** IAM actions required for the UpdateAccessProfile API call. */
+	static readonly UpdateAccessProfile: string[] = [
+		"cloudwatch:UpdateAccessProfile",
+	];
+	/** IAM actions required for the UpdateAlert API call. */
+	static readonly UpdateAlert: string[] = [];
+	/** IAM actions required for the UpdateDomain API call. */
+	static readonly UpdateDomain: string[] = ["cloudwatch:UpdateDomain"];
+	/** IAM actions required for the UpdateDomainForOrganization API call. */
+	static readonly UpdateDomainForOrganization: string[] = [
+		"cloudwatch:UpdateDomainForOrganization",
+	];
+	/** IAM actions required for the UpdateIntegration API call. */
+	static readonly UpdateIntegration: string[] = [
+		"iam:PassRole",
+		"cloudwatch:UpdateIntegration",
+	];
+	/** IAM actions required for the UpdateOmniDashboard API call. */
+	static readonly UpdateOmniDashboard: string[] = [
+		"cloudwatch:UpdateOmniDashboard",
+	];
+	/** IAM actions required for the UpdateSpace API call. */
+	static readonly UpdateSpace: string[] = ["cloudwatch:UpdateSpace"];
+	/** IAM actions required for the UpdateView API call. */
+	static readonly UpdateView: string[] = ["cloudwatch:UpdateView"];
 }
 
 /**

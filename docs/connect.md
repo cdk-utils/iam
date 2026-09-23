@@ -377,6 +377,154 @@ Defaults to "*".
 
 ---
 
+### ConnectApplicationArnComponents <a name="ConnectApplicationArnComponents" id="@cdk_utils/iam.connect.ConnectApplicationArnComponents"></a>
+
+Parsed components of a application ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.connect.ConnectApplicationArnComponents.Initializer"></a>
+
+```typescript
+import { connect } from '@cdk_utils/iam'
+
+const connectApplicationArnComponents: connect.ConnectApplicationArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.connect.ConnectApplicationArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectApplicationArnComponents.property.applicationId">applicationId</a></code> | <code>string</code> | The ApplicationId component. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectApplicationArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectApplicationArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.connect.ConnectApplicationArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `applicationId`<sup>Required</sup> <a name="applicationId" id="@cdk_utils/iam.connect.ConnectApplicationArnComponents.property.applicationId"></a>
+
+```typescript
+public readonly applicationId: string;
+```
+
+- *Type:* string
+
+The ApplicationId component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.connect.ConnectApplicationArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.connect.ConnectApplicationArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### ConnectApplicationArnProps <a name="ConnectApplicationArnProps" id="@cdk_utils/iam.connect.ConnectApplicationArnProps"></a>
+
+Properties for building a application ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.connect.ConnectApplicationArnProps.Initializer"></a>
+
+```typescript
+import { connect } from '@cdk_utils/iam'
+
+const connectApplicationArnProps: connect.ConnectApplicationArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.connect.ConnectApplicationArnProps.property.applicationId">applicationId</a></code> | <code>string</code> | The ApplicationId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectApplicationArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectApplicationArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectApplicationArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `applicationId`<sup>Required</sup> <a name="applicationId" id="@cdk_utils/iam.connect.ConnectApplicationArnProps.property.applicationId"></a>
+
+```typescript
+public readonly applicationId: string;
+```
+
+- *Type:* string
+
+The ApplicationId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.connect.ConnectApplicationArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.connect.ConnectApplicationArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.connect.ConnectApplicationArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### ConnectAttachedFileArnComponents <a name="ConnectAttachedFileArnComponents" id="@cdk_utils/iam.connect.ConnectAttachedFileArnComponents"></a>
 
 Parsed components of a attached-file ARN.
@@ -7743,6 +7891,7 @@ new connect.ConnectActions()
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.ListRoutingProfiles">ListRoutingProfiles</a></code> | <code>string</code> | [List] connect:ListRoutingProfiles. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.ListRules">ListRules</a></code> | <code>string</code> | [List] connect:ListRules. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.ListSecurityKeys">ListSecurityKeys</a></code> | <code>string</code> | [List] connect:ListSecurityKeys. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.ListSecurityProfileAIAgents">ListSecurityProfileAIAgents</a></code> | <code>string</code> | [List] connect:ListSecurityProfileAIAgents. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.ListSecurityProfileApplications">ListSecurityProfileApplications</a></code> | <code>string</code> | [List] connect:ListSecurityProfileApplications. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.ListSecurityProfileFlowModules">ListSecurityProfileFlowModules</a></code> | <code>string</code> | [List] connect:ListSecurityProfileFlowModules. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.ListSecurityProfilePermissions">ListSecurityProfilePermissions</a></code> | <code>string</code> | [List] connect:ListSecurityProfilePermissions. |
@@ -10778,6 +10927,18 @@ public readonly ListSecurityKeys: string;
 
 ---
 
+##### `ListSecurityProfileAIAgents`<sup>Required</sup> <a name="ListSecurityProfileAIAgents" id="@cdk_utils/iam.connect.ConnectActions.property.ListSecurityProfileAIAgents"></a>
+
+```typescript
+public readonly ListSecurityProfileAIAgents: string;
+```
+
+- *Type:* string
+
+[List] connect:ListSecurityProfileAIAgents.
+
+---
+
 ##### `ListSecurityProfileApplications`<sup>Required</sup> <a name="ListSecurityProfileApplications" id="@cdk_utils/iam.connect.ConnectActions.property.ListSecurityProfileApplications"></a>
 
 ```typescript
@@ -13226,6 +13387,7 @@ Generates a condition block for `connect:UserArn`.
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.ListRoutingProfilesConditionKeys">ListRoutingProfilesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListRoutingProfiles action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.ListRulesConditionKeys">ListRulesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListRules action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.ListSecurityKeysConditionKeys">ListSecurityKeysConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListSecurityKeys action. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.ListSecurityProfileAIAgentsConditionKeys">ListSecurityProfileAIAgentsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListSecurityProfileAIAgents action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.ListSecurityProfileApplicationsConditionKeys">ListSecurityProfileApplicationsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListSecurityProfileApplications action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.ListSecurityProfileFlowModulesConditionKeys">ListSecurityProfileFlowModulesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListSecurityProfileFlowModules action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.ListSecurityProfilePermissionsConditionKeys">ListSecurityProfilePermissionsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListSecurityProfilePermissions action. |
@@ -16223,6 +16385,18 @@ public readonly ListSecurityKeysConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the ListSecurityKeys action.
+
+---
+
+##### `ListSecurityProfileAIAgentsConditionKeys`<sup>Required</sup> <a name="ListSecurityProfileAIAgentsConditionKeys" id="@cdk_utils/iam.connect.ConnectConditions.property.ListSecurityProfileAIAgentsConditionKeys"></a>
+
+```typescript
+public readonly ListSecurityProfileAIAgentsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ListSecurityProfileAIAgents action.
 
 ---
 
@@ -23417,6 +23591,7 @@ new connect.ConnectResources()
 | --- | --- |
 | <code><a href="#@cdk_utils/iam.connect.ConnectResources.agentStatus">agentStatus</a></code> | Builds an ARN for the agent-status resource. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectResources.aiAgent">aiAgent</a></code> | Builds an ARN for the ai-agent resource. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectResources.application">application</a></code> | Builds an ARN for the application resource. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectResources.attachedFile">attachedFile</a></code> | Builds an ARN for the attached-file resource. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectResources.authenticationProfile">authenticationProfile</a></code> | Builds an ARN for the authentication-profile resource. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectResources.awsManagedView">awsManagedView</a></code> | Builds an ARN for the aws-managed-view resource. |
@@ -23436,6 +23611,7 @@ new connect.ConnectResources()
 | <code><a href="#@cdk_utils/iam.connect.ConnectResources.integrationAssociation">integrationAssociation</a></code> | Builds an ARN for the integration-association resource. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectResources.isValidAgentStatusArn">isValidAgentStatusArn</a></code> | Validates whether a string is a valid ARN for the agent-status resource. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectResources.isValidAiAgentArn">isValidAiAgentArn</a></code> | Validates whether a string is a valid ARN for the ai-agent resource. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectResources.isValidApplicationArn">isValidApplicationArn</a></code> | Validates whether a string is a valid ARN for the application resource. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectResources.isValidAttachedFileArn">isValidAttachedFileArn</a></code> | Validates whether a string is a valid ARN for the attached-file resource. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectResources.isValidAuthenticationProfileArn">isValidAuthenticationProfileArn</a></code> | Validates whether a string is a valid ARN for the authentication-profile resource. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectResources.isValidAWSManagedViewArn">isValidAWSManagedViewArn</a></code> | Validates whether a string is a valid ARN for the aws-managed-view resource. |
@@ -23483,6 +23659,7 @@ new connect.ConnectResources()
 | <code><a href="#@cdk_utils/iam.connect.ConnectResources.notification">notification</a></code> | Builds an ARN for the notification resource. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectResources.parseAgentStatusArn">parseAgentStatusArn</a></code> | Parses a agent-status ARN into its components. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectResources.parseAiAgentArn">parseAiAgentArn</a></code> | Parses a ai-agent ARN into its components. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectResources.parseApplicationArn">parseApplicationArn</a></code> | Parses a application ARN into its components. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectResources.parseAttachedFileArn">parseAttachedFileArn</a></code> | Parses a attached-file ARN into its components. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectResources.parseAuthenticationProfileArn">parseAuthenticationProfileArn</a></code> | Parses a authentication-profile ARN into its components. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectResources.parseAWSManagedViewArn">parseAWSManagedViewArn</a></code> | Parses a aws-managed-view ARN into its components. |
@@ -23579,6 +23756,22 @@ Builds an ARN for the ai-agent resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.connect.ConnectResources.aiAgent.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.connect.ConnectAiAgentArnProps">ConnectAiAgentArnProps</a>
+
+---
+
+##### `application` <a name="application" id="@cdk_utils/iam.connect.ConnectResources.application"></a>
+
+```typescript
+import { connect } from '@cdk_utils/iam'
+
+connect.ConnectResources.application(props: ConnectApplicationArnProps)
+```
+
+Builds an ARN for the application resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.connect.ConnectResources.application.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.connect.ConnectApplicationArnProps">ConnectApplicationArnProps</a>
 
 ---
 
@@ -23881,6 +24074,22 @@ connect.ConnectResources.isValidAiAgentArn(arn: string)
 Validates whether a string is a valid ARN for the ai-agent resource.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.connect.ConnectResources.isValidAiAgentArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidApplicationArn` <a name="isValidApplicationArn" id="@cdk_utils/iam.connect.ConnectResources.isValidApplicationArn"></a>
+
+```typescript
+import { connect } from '@cdk_utils/iam'
+
+connect.ConnectResources.isValidApplicationArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the application resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.connect.ConnectResources.isValidApplicationArn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -24633,6 +24842,22 @@ connect.ConnectResources.parseAiAgentArn(arn: string)
 Parses a ai-agent ARN into its components.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.connect.ConnectResources.parseAiAgentArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseApplicationArn` <a name="parseApplicationArn" id="@cdk_utils/iam.connect.ConnectResources.parseApplicationArn"></a>
+
+```typescript
+import { connect } from '@cdk_utils/iam'
+
+connect.ConnectResources.parseApplicationArn(arn: string)
+```
+
+Parses a application ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.connect.ConnectResources.parseApplicationArn.parameter.arn"></a>
 
 - *Type:* string
 

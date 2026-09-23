@@ -569,6 +569,9 @@ export class ConnectActions {
 	static readonly ListRules = "connect:ListRules";
 	/** [List] connect:ListSecurityKeys */
 	static readonly ListSecurityKeys = "connect:ListSecurityKeys";
+	/** [List] connect:ListSecurityProfileAIAgents */
+	static readonly ListSecurityProfileAIAgents =
+		"connect:ListSecurityProfileAIAgents";
 	/** [List] connect:ListSecurityProfileApplications */
 	static readonly ListSecurityProfileApplications =
 		"connect:ListSecurityProfileApplications";
@@ -1293,6 +1296,7 @@ export class ConnectActions {
 		ConnectActions.ListRoutingProfiles,
 		ConnectActions.ListRules,
 		ConnectActions.ListSecurityKeys,
+		ConnectActions.ListSecurityProfileAIAgents,
 		ConnectActions.ListSecurityProfileApplications,
 		ConnectActions.ListSecurityProfileFlowModules,
 		ConnectActions.ListSecurityProfilePermissions,
@@ -1388,6 +1392,34 @@ export interface ConnectAiAgentArnComponents {
 	readonly aiAgentId: string;
 	/** The Version component. */
 	readonly version: string;
+}
+
+/**
+ * Properties for building a application ARN.
+ */
+export interface ConnectApplicationArnProps {
+	/** The ApplicationId component of the ARN. */
+	readonly applicationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a application ARN.
+ */
+export interface ConnectApplicationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApplicationId component. */
+	readonly applicationId: string;
 }
 
 /**
@@ -2706,6 +2738,8 @@ const AgentStatusArnRegex =
 	/^arn:(?<partition>[^:]+):connect:(?<region>[^:]*):(?<account>[^:]*):instance\/(?<instanceId>[^:/?]+)\/agent-state\/(?<agentStatusId>[^:/?]+)$/;
 const AiAgentArnRegex =
 	/^arn:(?<partition>[^:]+):wisdom:(?<region>[^:]*):(?<account>[^:]*):ai-agent\/(?<assistantId>[^:/?]+)\/(?<aiAgentId>[^:/?]+):(?<version>[^:/?]+)$/;
+const ApplicationArnRegex =
+	/^arn:(?<partition>[^:]+):app-integrations:(?<region>[^:]*):(?<account>[^:]*):application\/(?<applicationId>[^:/?]+)$/;
 const AttachedFileArnRegex =
 	/^arn:(?<partition>[^:]+):connect:(?<region>[^:]*):(?<account>[^:]*):instance\/(?<instanceId>[^:/?]+)\/file\/(?<fileId>[^:/?]+)$/;
 const AuthenticationProfileArnRegex =
@@ -2857,6 +2891,37 @@ export class ConnectResources {
 			assistantId: match.groups!.assistantId,
 			aiAgentId: match.groups!.aiAgentId,
 			version: match.groups!.version,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the application resource.
+	 */
+	static application(props: ConnectApplicationArnProps): string {
+		return `arn:${props.partition ?? "aws"}:app-integrations:${props.region ?? "*"}:${props.account ?? "*"}:application/${props.applicationId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the application resource.
+	 */
+	static isValidApplicationArn(arn: string): boolean {
+		return ApplicationArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a application ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseApplicationArn(arn: string): ConnectApplicationArnComponents {
+		const match = ApplicationArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid application ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			applicationId: match.groups!.applicationId,
 		};
 	}
 
@@ -5133,7 +5198,9 @@ export class ConnectOperations {
 	/** IAM actions required for the ListSecurityKeys API call. */
 	static readonly ListSecurityKeys: string[] = ["connect:ListSecurityKeys"];
 	/** IAM actions required for the ListSecurityProfileAIAgents API call. */
-	static readonly ListSecurityProfileAIAgents: string[] = [];
+	static readonly ListSecurityProfileAIAgents: string[] = [
+		"connect:ListSecurityProfileAIAgents",
+	];
 	/** IAM actions required for the ListSecurityProfileApplications API call. */
 	static readonly ListSecurityProfileApplications: string[] = [
 		"connect:ListSecurityProfileApplications",
@@ -6790,6 +6857,11 @@ export class ConnectConditions {
 	static readonly ListRulesConditionKeys: string[] = ["connect:InstanceId"];
 	/** Condition keys applicable to the ListSecurityKeys action. */
 	static readonly ListSecurityKeysConditionKeys: string[] = [
+		"connect:InstanceId",
+	];
+	/** Condition keys applicable to the ListSecurityProfileAIAgents action. */
+	static readonly ListSecurityProfileAIAgentsConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
 		"connect:InstanceId",
 	];
 	/** Condition keys applicable to the ListSecurityProfileApplications action. */

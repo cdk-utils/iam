@@ -176,6 +176,8 @@ export class LogsActions {
 	static readonly actionGetStorageTierPolicy = "logs:GetStorageTierPolicy";
 	/** [Read] logs:GetTransformer */
 	static readonly actionGetTransformer = "logs:GetTransformer";
+	/** [Write] logs:IntegrateWithDataset */
+	static readonly IntegrateWithDataset = "logs:IntegrateWithDataset";
 	/** [Write] logs:IntegrateWithS3Table */
 	static readonly IntegrateWithS3Table = "logs:IntegrateWithS3Table";
 	/** [Write] logs:Link */
@@ -362,6 +364,7 @@ export class LogsActions {
 		LogsActions.DeleteTransformer,
 		LogsActions.DisassociateKmsKey,
 		LogsActions.DisassociateSourceFromS3TableIntegration,
+		LogsActions.IntegrateWithDataset,
 		LogsActions.IntegrateWithS3Table,
 		LogsActions.Link,
 		LogsActions.ProcessWithPipeline,

@@ -1103,6 +1103,7 @@ export class ElastiCacheOperations {
 	];
 	/** IAM actions required for the CreateGlobalReplicationGroup API call. */
 	static readonly CreateGlobalReplicationGroup: string[] = [
+		"elasticache:AddTagsToResource",
 		"elasticache:CreateGlobalReplicationGroup",
 	];
 	/** IAM actions required for the CreateReplicationGroup API call. */

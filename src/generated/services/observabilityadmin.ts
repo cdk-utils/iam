@@ -15,6 +15,9 @@ export class ObservabilityadminActions {
 	/** [Write] observabilityadmin:CreateCentralizationRuleForOrganization */
 	static readonly CreateCentralizationRuleForOrganization =
 		"observabilityadmin:CreateCentralizationRuleForOrganization";
+	/** [Write] observabilityadmin:CreateDatasetIntegration */
+	static readonly CreateDatasetIntegration =
+		"observabilityadmin:CreateDatasetIntegration";
 	/** [Write] observabilityadmin:CreateS3TableIntegration */
 	static readonly CreateS3TableIntegration =
 		"observabilityadmin:CreateS3TableIntegration";
@@ -30,6 +33,9 @@ export class ObservabilityadminActions {
 	/** [Write] observabilityadmin:DeleteCentralizationRuleForOrganization */
 	static readonly DeleteCentralizationRuleForOrganization =
 		"observabilityadmin:DeleteCentralizationRuleForOrganization";
+	/** [Write] observabilityadmin:DeleteDatasetIntegration */
+	static readonly DeleteDatasetIntegration =
+		"observabilityadmin:DeleteDatasetIntegration";
 	/** [Write] observabilityadmin:DeleteS3TableIntegration */
 	static readonly DeleteS3TableIntegration =
 		"observabilityadmin:DeleteS3TableIntegration";
@@ -45,6 +51,9 @@ export class ObservabilityadminActions {
 	/** [Read] observabilityadmin:GetCentralizationRuleForOrganization */
 	static readonly actionGetCentralizationRuleForOrganization =
 		"observabilityadmin:GetCentralizationRuleForOrganization";
+	/** [Read] observabilityadmin:GetDatasetIntegration */
+	static readonly actionGetDatasetIntegration =
+		"observabilityadmin:GetDatasetIntegration";
 	/** [Read] observabilityadmin:GetS3TableIntegration */
 	static readonly actionGetS3TableIntegration =
 		"observabilityadmin:GetS3TableIntegration";
@@ -69,6 +78,9 @@ export class ObservabilityadminActions {
 	/** [List] observabilityadmin:ListCentralizationRulesForOrganization */
 	static readonly ListCentralizationRulesForOrganization =
 		"observabilityadmin:ListCentralizationRulesForOrganization";
+	/** [List] observabilityadmin:ListDatasetIntegrations */
+	static readonly ListDatasetIntegrations =
+		"observabilityadmin:ListDatasetIntegrations";
 	/** [Read] observabilityadmin:ListResourceTelemetry */
 	static readonly ListResourceTelemetry =
 		"observabilityadmin:ListResourceTelemetry";
@@ -117,6 +129,9 @@ export class ObservabilityadminActions {
 	/** [Write] observabilityadmin:UpdateCentralizationRuleForOrganization */
 	static readonly UpdateCentralizationRuleForOrganization =
 		"observabilityadmin:UpdateCentralizationRuleForOrganization";
+	/** [Write] observabilityadmin:UpdateDatasetIntegration */
+	static readonly UpdateDatasetIntegration =
+		"observabilityadmin:UpdateDatasetIntegration";
 	/** [Write] observabilityadmin:UpdateTelemetryPipeline */
 	static readonly UpdateTelemetryPipeline =
 		"observabilityadmin:UpdateTelemetryPipeline";
@@ -133,6 +148,7 @@ export class ObservabilityadminActions {
 	/** All read-level actions. */
 	static readonly AllReadActions: string[] = [
 		ObservabilityadminActions.actionGetCentralizationRuleForOrganization,
+		ObservabilityadminActions.actionGetDatasetIntegration,
 		ObservabilityadminActions.actionGetS3TableIntegration,
 		ObservabilityadminActions.actionGetTelemetryEnrichmentStatus,
 		ObservabilityadminActions.actionGetTelemetryEvaluationStatus,
@@ -148,11 +164,13 @@ export class ObservabilityadminActions {
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
 		ObservabilityadminActions.CreateCentralizationRuleForOrganization,
+		ObservabilityadminActions.CreateDatasetIntegration,
 		ObservabilityadminActions.CreateS3TableIntegration,
 		ObservabilityadminActions.CreateTelemetryPipeline,
 		ObservabilityadminActions.CreateTelemetryRule,
 		ObservabilityadminActions.CreateTelemetryRuleForOrganization,
 		ObservabilityadminActions.DeleteCentralizationRuleForOrganization,
+		ObservabilityadminActions.DeleteDatasetIntegration,
 		ObservabilityadminActions.DeleteS3TableIntegration,
 		ObservabilityadminActions.DeleteTelemetryPipeline,
 		ObservabilityadminActions.DeleteTelemetryRule,
@@ -164,6 +182,7 @@ export class ObservabilityadminActions {
 		ObservabilityadminActions.StopTelemetryEvaluation,
 		ObservabilityadminActions.StopTelemetryEvaluationForOrganization,
 		ObservabilityadminActions.UpdateCentralizationRuleForOrganization,
+		ObservabilityadminActions.UpdateDatasetIntegration,
 		ObservabilityadminActions.UpdateTelemetryPipeline,
 		ObservabilityadminActions.UpdateTelemetryRule,
 		ObservabilityadminActions.UpdateTelemetryRuleForOrganization,
@@ -171,6 +190,7 @@ export class ObservabilityadminActions {
 	/** All list-level actions. */
 	static readonly AllListActions: string[] = [
 		ObservabilityadminActions.ListCentralizationRulesForOrganization,
+		ObservabilityadminActions.ListDatasetIntegrations,
 		ObservabilityadminActions.ListS3TableIntegrations,
 		ObservabilityadminActions.ListTagsForResource,
 		ObservabilityadminActions.ListTelemetryPipelines,
@@ -184,6 +204,34 @@ export class ObservabilityadminActions {
 		ObservabilityadminActions.TagResource,
 		ObservabilityadminActions.UntagResource,
 	];
+}
+
+/**
+ * Properties for building a dataset-integration ARN.
+ */
+export interface ObservabilityadminDatasetIntegrationArnProps {
+	/** The DatasetIntegrationIdentifier component of the ARN. */
+	readonly datasetIntegrationIdentifier: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a dataset-integration ARN.
+ */
+export interface ObservabilityadminDatasetIntegrationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DatasetIntegrationIdentifier component. */
+	readonly datasetIntegrationIdentifier: string;
 }
 
 /**
@@ -326,6 +374,8 @@ export interface ObservabilityadminTelemetryRuleArnComponents {
 	readonly telemetryRuleName: string;
 }
 
+const DatasetIntegrationArnRegex =
+	/^arn:(?<partition>[^:]+):observabilityadmin:(?<region>[^:]*):(?<account>[^:]*):dataset-integration\/(?<datasetIntegrationIdentifier>[^:/?]+)$/;
 const OrganizationCentralizationRuleArnRegex =
 	/^arn:(?<partition>[^:]+):observabilityadmin:(?<region>[^:]*):(?<account>[^:]*):organization-centralization-rule\/(?<centralizationRuleName>[^:/?]+)$/;
 const OrganizationTelemetryRuleArnRegex =
@@ -341,6 +391,41 @@ const TelemetryRuleArnRegex =
  * ARN builders, validators, and parsers for observabilityadmin resources.
  */
 export class ObservabilityadminResources {
+	/**
+	 * Builds an ARN for the dataset-integration resource.
+	 */
+	static datasetIntegration(
+		props: ObservabilityadminDatasetIntegrationArnProps,
+	): string {
+		return `arn:${props.partition ?? "aws"}:observabilityadmin:${props.region ?? "*"}:${props.account ?? "*"}:dataset-integration/${props.datasetIntegrationIdentifier}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the dataset-integration resource.
+	 */
+	static isValidDatasetIntegrationArn(arn: string): boolean {
+		return DatasetIntegrationArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a dataset-integration ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseDatasetIntegrationArn(
+		arn: string,
+	): ObservabilityadminDatasetIntegrationArnComponents {
+		const match = DatasetIntegrationArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid dataset-integration ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			datasetIntegrationIdentifier: match.groups!.datasetIntegrationIdentifier,
+		};
+	}
+
 	/**
 	 * Builds an ARN for the organization-centralization-rule resource.
 	 */
@@ -524,6 +609,12 @@ export class ObservabilityadminOperations {
 		"observabilityadmin:CreateCentralizationRuleForOrganization",
 		"observabilityadmin:TagResource",
 	];
+	/** IAM actions required for the CreateDatasetIntegration API call. */
+	static readonly CreateDatasetIntegration: string[] = [
+		"observabilityadmin:CreateDatasetIntegration",
+		"iam:PassRole",
+		"observabilityadmin:TagResource",
+	];
 	/** IAM actions required for the CreateS3TableIntegration API call. */
 	static readonly CreateS3TableIntegration: string[] = [
 		"observabilityadmin:CreateS3TableIntegration",
@@ -551,6 +642,10 @@ export class ObservabilityadminOperations {
 	static readonly DeleteCentralizationRuleForOrganization: string[] = [
 		"observabilityadmin:DeleteCentralizationRuleForOrganization",
 	];
+	/** IAM actions required for the DeleteDatasetIntegration API call. */
+	static readonly DeleteDatasetIntegration: string[] = [
+		"observabilityadmin:DeleteDatasetIntegration",
+	];
 	/** IAM actions required for the DeleteS3TableIntegration API call. */
 	static readonly DeleteS3TableIntegration: string[] = [
 		"observabilityadmin:DeleteS3TableIntegration",
@@ -571,6 +666,10 @@ export class ObservabilityadminOperations {
 	/** IAM actions required for the GetCentralizationRuleForOrganization API call. */
 	static readonly opGetCentralizationRuleForOrganization: string[] = [
 		"observabilityadmin:GetCentralizationRuleForOrganization",
+	];
+	/** IAM actions required for the GetDatasetIntegration API call. */
+	static readonly opGetDatasetIntegration: string[] = [
+		"observabilityadmin:GetDatasetIntegration",
 	];
 	/** IAM actions required for the GetS3TableIntegration API call. */
 	static readonly opGetS3TableIntegration: string[] = [
@@ -603,6 +702,10 @@ export class ObservabilityadminOperations {
 	/** IAM actions required for the ListCentralizationRulesForOrganization API call. */
 	static readonly ListCentralizationRulesForOrganization: string[] = [
 		"observabilityadmin:ListCentralizationRulesForOrganization",
+	];
+	/** IAM actions required for the ListDatasetIntegrations API call. */
+	static readonly ListDatasetIntegrations: string[] = [
+		"observabilityadmin:ListDatasetIntegrations",
 	];
 	/** IAM actions required for the ListResourceTelemetry API call. */
 	static readonly ListResourceTelemetry: string[] = [
@@ -670,6 +773,11 @@ export class ObservabilityadminOperations {
 	static readonly UpdateCentralizationRuleForOrganization: string[] = [
 		"observabilityadmin:UpdateCentralizationRuleForOrganization",
 	];
+	/** IAM actions required for the UpdateDatasetIntegration API call. */
+	static readonly UpdateDatasetIntegration: string[] = [
+		"iam:PassRole",
+		"observabilityadmin:UpdateDatasetIntegration",
+	];
 	/** IAM actions required for the UpdateTelemetryPipeline API call. */
 	static readonly UpdateTelemetryPipeline: string[] = [
 		"iam:PassRole",
@@ -706,6 +814,11 @@ export class ObservabilityadminConditions {
 			"observabilityadmin:CentralizationSourceId",
 			"observabilityadmin:CentralizationSourceRegions",
 		];
+	/** Condition keys applicable to the CreateDatasetIntegration action. */
+	static readonly CreateDatasetIntegrationConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the CreateS3TableIntegration action. */
 	static readonly CreateS3TableIntegrationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",

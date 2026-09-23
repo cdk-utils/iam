@@ -3,6 +3,154 @@
 
 ## Structs <a name="Structs" id="Structs"></a>
 
+### ObservabilityadminDatasetIntegrationArnComponents <a name="ObservabilityadminDatasetIntegrationArnComponents" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminDatasetIntegrationArnComponents"></a>
+
+Parsed components of a dataset-integration ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminDatasetIntegrationArnComponents.Initializer"></a>
+
+```typescript
+import { observabilityadmin } from '@cdk_utils/iam'
+
+const observabilityadminDatasetIntegrationArnComponents: observabilityadmin.ObservabilityadminDatasetIntegrationArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminDatasetIntegrationArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminDatasetIntegrationArnComponents.property.datasetIntegrationIdentifier">datasetIntegrationIdentifier</a></code> | <code>string</code> | The DatasetIntegrationIdentifier component. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminDatasetIntegrationArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminDatasetIntegrationArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminDatasetIntegrationArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `datasetIntegrationIdentifier`<sup>Required</sup> <a name="datasetIntegrationIdentifier" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminDatasetIntegrationArnComponents.property.datasetIntegrationIdentifier"></a>
+
+```typescript
+public readonly datasetIntegrationIdentifier: string;
+```
+
+- *Type:* string
+
+The DatasetIntegrationIdentifier component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminDatasetIntegrationArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminDatasetIntegrationArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### ObservabilityadminDatasetIntegrationArnProps <a name="ObservabilityadminDatasetIntegrationArnProps" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminDatasetIntegrationArnProps"></a>
+
+Properties for building a dataset-integration ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminDatasetIntegrationArnProps.Initializer"></a>
+
+```typescript
+import { observabilityadmin } from '@cdk_utils/iam'
+
+const observabilityadminDatasetIntegrationArnProps: observabilityadmin.ObservabilityadminDatasetIntegrationArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminDatasetIntegrationArnProps.property.datasetIntegrationIdentifier">datasetIntegrationIdentifier</a></code> | <code>string</code> | The DatasetIntegrationIdentifier component of the ARN. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminDatasetIntegrationArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminDatasetIntegrationArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminDatasetIntegrationArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `datasetIntegrationIdentifier`<sup>Required</sup> <a name="datasetIntegrationIdentifier" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminDatasetIntegrationArnProps.property.datasetIntegrationIdentifier"></a>
+
+```typescript
+public readonly datasetIntegrationIdentifier: string;
+```
+
+- *Type:* string
+
+The DatasetIntegrationIdentifier component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminDatasetIntegrationArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminDatasetIntegrationArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminDatasetIntegrationArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### ObservabilityadminOrganizationCentralizationRuleArnComponents <a name="ObservabilityadminOrganizationCentralizationRuleArnComponents" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminOrganizationCentralizationRuleArnComponents"></a>
 
 Parsed components of a organization-centralization-rule ARN.
@@ -770,6 +918,7 @@ new observabilityadmin.ObservabilityadminActions()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.actionGetCentralizationRuleForOrganization">actionGetCentralizationRuleForOrganization</a></code> | <code>string</code> | [Read] observabilityadmin:GetCentralizationRuleForOrganization. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.actionGetDatasetIntegration">actionGetDatasetIntegration</a></code> | <code>string</code> | [Read] observabilityadmin:GetDatasetIntegration. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.actionGetS3TableIntegration">actionGetS3TableIntegration</a></code> | <code>string</code> | [Read] observabilityadmin:GetS3TableIntegration. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.actionGetTelemetryEnrichmentStatus">actionGetTelemetryEnrichmentStatus</a></code> | <code>string</code> | [Read] observabilityadmin:GetTelemetryEnrichmentStatus. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.actionGetTelemetryEvaluationStatus">actionGetTelemetryEvaluationStatus</a></code> | <code>string</code> | [Read] observabilityadmin:GetTelemetryEvaluationStatus. |
@@ -783,16 +932,19 @@ new observabilityadmin.ObservabilityadminActions()
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.AllTaggingActions">AllTaggingActions</a></code> | <code>string[]</code> | All tagging-level actions. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.CreateCentralizationRuleForOrganization">CreateCentralizationRuleForOrganization</a></code> | <code>string</code> | [Write] observabilityadmin:CreateCentralizationRuleForOrganization. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.CreateDatasetIntegration">CreateDatasetIntegration</a></code> | <code>string</code> | [Write] observabilityadmin:CreateDatasetIntegration. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.CreateS3TableIntegration">CreateS3TableIntegration</a></code> | <code>string</code> | [Write] observabilityadmin:CreateS3TableIntegration. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.CreateTelemetryPipeline">CreateTelemetryPipeline</a></code> | <code>string</code> | [Write] observabilityadmin:CreateTelemetryPipeline. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.CreateTelemetryRule">CreateTelemetryRule</a></code> | <code>string</code> | [Write] observabilityadmin:CreateTelemetryRule. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.CreateTelemetryRuleForOrganization">CreateTelemetryRuleForOrganization</a></code> | <code>string</code> | [Write] observabilityadmin:CreateTelemetryRuleForOrganization. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.DeleteCentralizationRuleForOrganization">DeleteCentralizationRuleForOrganization</a></code> | <code>string</code> | [Write] observabilityadmin:DeleteCentralizationRuleForOrganization. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.DeleteDatasetIntegration">DeleteDatasetIntegration</a></code> | <code>string</code> | [Write] observabilityadmin:DeleteDatasetIntegration. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.DeleteS3TableIntegration">DeleteS3TableIntegration</a></code> | <code>string</code> | [Write] observabilityadmin:DeleteS3TableIntegration. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.DeleteTelemetryPipeline">DeleteTelemetryPipeline</a></code> | <code>string</code> | [Write] observabilityadmin:DeleteTelemetryPipeline. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.DeleteTelemetryRule">DeleteTelemetryRule</a></code> | <code>string</code> | [Write] observabilityadmin:DeleteTelemetryRule. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.DeleteTelemetryRuleForOrganization">DeleteTelemetryRuleForOrganization</a></code> | <code>string</code> | [Write] observabilityadmin:DeleteTelemetryRuleForOrganization. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.ListCentralizationRulesForOrganization">ListCentralizationRulesForOrganization</a></code> | <code>string</code> | [List] observabilityadmin:ListCentralizationRulesForOrganization. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.ListDatasetIntegrations">ListDatasetIntegrations</a></code> | <code>string</code> | [List] observabilityadmin:ListDatasetIntegrations. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.ListResourceTelemetry">ListResourceTelemetry</a></code> | <code>string</code> | [Read] observabilityadmin:ListResourceTelemetry. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.ListResourceTelemetryForOrganization">ListResourceTelemetryForOrganization</a></code> | <code>string</code> | [Read] observabilityadmin:ListResourceTelemetryForOrganization. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.ListS3TableIntegrations">ListS3TableIntegrations</a></code> | <code>string</code> | [List] observabilityadmin:ListS3TableIntegrations. |
@@ -811,6 +963,7 @@ new observabilityadmin.ObservabilityadminActions()
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.TestTelemetryPipeline">TestTelemetryPipeline</a></code> | <code>string</code> | [Read] observabilityadmin:TestTelemetryPipeline. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] observabilityadmin:UntagResource. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.UpdateCentralizationRuleForOrganization">UpdateCentralizationRuleForOrganization</a></code> | <code>string</code> | [Write] observabilityadmin:UpdateCentralizationRuleForOrganization. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.UpdateDatasetIntegration">UpdateDatasetIntegration</a></code> | <code>string</code> | [Write] observabilityadmin:UpdateDatasetIntegration. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.UpdateTelemetryPipeline">UpdateTelemetryPipeline</a></code> | <code>string</code> | [Write] observabilityadmin:UpdateTelemetryPipeline. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.UpdateTelemetryRule">UpdateTelemetryRule</a></code> | <code>string</code> | [Write] observabilityadmin:UpdateTelemetryRule. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.UpdateTelemetryRuleForOrganization">UpdateTelemetryRuleForOrganization</a></code> | <code>string</code> | [Write] observabilityadmin:UpdateTelemetryRuleForOrganization. |
@@ -827,6 +980,18 @@ public readonly actionGetCentralizationRuleForOrganization: string;
 - *Type:* string
 
 [Read] observabilityadmin:GetCentralizationRuleForOrganization.
+
+---
+
+##### `actionGetDatasetIntegration`<sup>Required</sup> <a name="actionGetDatasetIntegration" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.actionGetDatasetIntegration"></a>
+
+```typescript
+public readonly actionGetDatasetIntegration: string;
+```
+
+- *Type:* string
+
+[Read] observabilityadmin:GetDatasetIntegration.
 
 ---
 
@@ -986,6 +1151,18 @@ public readonly CreateCentralizationRuleForOrganization: string;
 
 ---
 
+##### `CreateDatasetIntegration`<sup>Required</sup> <a name="CreateDatasetIntegration" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.CreateDatasetIntegration"></a>
+
+```typescript
+public readonly CreateDatasetIntegration: string;
+```
+
+- *Type:* string
+
+[Write] observabilityadmin:CreateDatasetIntegration.
+
+---
+
 ##### `CreateS3TableIntegration`<sup>Required</sup> <a name="CreateS3TableIntegration" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.CreateS3TableIntegration"></a>
 
 ```typescript
@@ -1046,6 +1223,18 @@ public readonly DeleteCentralizationRuleForOrganization: string;
 
 ---
 
+##### `DeleteDatasetIntegration`<sup>Required</sup> <a name="DeleteDatasetIntegration" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.DeleteDatasetIntegration"></a>
+
+```typescript
+public readonly DeleteDatasetIntegration: string;
+```
+
+- *Type:* string
+
+[Write] observabilityadmin:DeleteDatasetIntegration.
+
+---
+
 ##### `DeleteS3TableIntegration`<sup>Required</sup> <a name="DeleteS3TableIntegration" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.DeleteS3TableIntegration"></a>
 
 ```typescript
@@ -1103,6 +1292,18 @@ public readonly ListCentralizationRulesForOrganization: string;
 - *Type:* string
 
 [List] observabilityadmin:ListCentralizationRulesForOrganization.
+
+---
+
+##### `ListDatasetIntegrations`<sup>Required</sup> <a name="ListDatasetIntegrations" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.ListDatasetIntegrations"></a>
+
+```typescript
+public readonly ListDatasetIntegrations: string;
+```
+
+- *Type:* string
+
+[List] observabilityadmin:ListDatasetIntegrations.
 
 ---
 
@@ -1319,6 +1520,18 @@ public readonly UpdateCentralizationRuleForOrganization: string;
 - *Type:* string
 
 [Write] observabilityadmin:UpdateCentralizationRuleForOrganization.
+
+---
+
+##### `UpdateDatasetIntegration`<sup>Required</sup> <a name="UpdateDatasetIntegration" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.UpdateDatasetIntegration"></a>
+
+```typescript
+public readonly UpdateDatasetIntegration: string;
+```
+
+- *Type:* string
+
+[Write] observabilityadmin:UpdateDatasetIntegration.
 
 ---
 
@@ -1598,6 +1811,7 @@ Generates a condition block for `observabilityadmin:TargetRegions`.
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.property.CENTRALIZATION_SOURCE_ID">CENTRALIZATION_SOURCE_ID</a></code> | <code>string</code> | Condition key: observabilityadmin:CentralizationSourceId (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.property.CENTRALIZATION_SOURCE_REGIONS">CENTRALIZATION_SOURCE_REGIONS</a></code> | <code>string</code> | Condition key: observabilityadmin:CentralizationSourceRegions (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.property.CreateCentralizationRuleForOrganizationConditionKeys">CreateCentralizationRuleForOrganizationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateCentralizationRuleForOrganization action. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.property.CreateDatasetIntegrationConditionKeys">CreateDatasetIntegrationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateDatasetIntegration action. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.property.CreateS3TableIntegrationConditionKeys">CreateS3TableIntegrationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateS3TableIntegration action. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.property.CreateTelemetryPipelineConditionKeys">CreateTelemetryPipelineConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateTelemetryPipeline action. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.property.CreateTelemetryRuleConditionKeys">CreateTelemetryRuleConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateTelemetryRule action. |
@@ -1746,6 +1960,18 @@ public readonly CreateCentralizationRuleForOrganizationConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the CreateCentralizationRuleForOrganization action.
+
+---
+
+##### `CreateDatasetIntegrationConditionKeys`<sup>Required</sup> <a name="CreateDatasetIntegrationConditionKeys" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.property.CreateDatasetIntegrationConditionKeys"></a>
+
+```typescript
+public readonly CreateDatasetIntegrationConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateDatasetIntegration action.
 
 ---
 
@@ -1966,16 +2192,19 @@ new observabilityadmin.ObservabilityadminOperations()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.CreateCentralizationRuleForOrganization">CreateCentralizationRuleForOrganization</a></code> | <code>string[]</code> | IAM actions required for the CreateCentralizationRuleForOrganization API call. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.CreateDatasetIntegration">CreateDatasetIntegration</a></code> | <code>string[]</code> | IAM actions required for the CreateDatasetIntegration API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.CreateS3TableIntegration">CreateS3TableIntegration</a></code> | <code>string[]</code> | IAM actions required for the CreateS3TableIntegration API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.CreateTelemetryPipeline">CreateTelemetryPipeline</a></code> | <code>string[]</code> | IAM actions required for the CreateTelemetryPipeline API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.CreateTelemetryRule">CreateTelemetryRule</a></code> | <code>string[]</code> | IAM actions required for the CreateTelemetryRule API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.CreateTelemetryRuleForOrganization">CreateTelemetryRuleForOrganization</a></code> | <code>string[]</code> | IAM actions required for the CreateTelemetryRuleForOrganization API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.DeleteCentralizationRuleForOrganization">DeleteCentralizationRuleForOrganization</a></code> | <code>string[]</code> | IAM actions required for the DeleteCentralizationRuleForOrganization API call. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.DeleteDatasetIntegration">DeleteDatasetIntegration</a></code> | <code>string[]</code> | IAM actions required for the DeleteDatasetIntegration API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.DeleteS3TableIntegration">DeleteS3TableIntegration</a></code> | <code>string[]</code> | IAM actions required for the DeleteS3TableIntegration API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.DeleteTelemetryPipeline">DeleteTelemetryPipeline</a></code> | <code>string[]</code> | IAM actions required for the DeleteTelemetryPipeline API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.DeleteTelemetryRule">DeleteTelemetryRule</a></code> | <code>string[]</code> | IAM actions required for the DeleteTelemetryRule API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.DeleteTelemetryRuleForOrganization">DeleteTelemetryRuleForOrganization</a></code> | <code>string[]</code> | IAM actions required for the DeleteTelemetryRuleForOrganization API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.ListCentralizationRulesForOrganization">ListCentralizationRulesForOrganization</a></code> | <code>string[]</code> | IAM actions required for the ListCentralizationRulesForOrganization API call. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.ListDatasetIntegrations">ListDatasetIntegrations</a></code> | <code>string[]</code> | IAM actions required for the ListDatasetIntegrations API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.ListResourceTelemetry">ListResourceTelemetry</a></code> | <code>string[]</code> | IAM actions required for the ListResourceTelemetry API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.ListResourceTelemetryForOrganization">ListResourceTelemetryForOrganization</a></code> | <code>string[]</code> | IAM actions required for the ListResourceTelemetryForOrganization API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.ListS3TableIntegrations">ListS3TableIntegrations</a></code> | <code>string[]</code> | IAM actions required for the ListS3TableIntegrations API call. |
@@ -1984,6 +2213,7 @@ new observabilityadmin.ObservabilityadminOperations()
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.ListTelemetryRules">ListTelemetryRules</a></code> | <code>string[]</code> | IAM actions required for the ListTelemetryRules API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.ListTelemetryRulesForOrganization">ListTelemetryRulesForOrganization</a></code> | <code>string[]</code> | IAM actions required for the ListTelemetryRulesForOrganization API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.opGetCentralizationRuleForOrganization">opGetCentralizationRuleForOrganization</a></code> | <code>string[]</code> | IAM actions required for the GetCentralizationRuleForOrganization API call. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.opGetDatasetIntegration">opGetDatasetIntegration</a></code> | <code>string[]</code> | IAM actions required for the GetDatasetIntegration API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.opGetS3TableIntegration">opGetS3TableIntegration</a></code> | <code>string[]</code> | IAM actions required for the GetS3TableIntegration API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.opGetTelemetryEnrichmentStatus">opGetTelemetryEnrichmentStatus</a></code> | <code>string[]</code> | IAM actions required for the GetTelemetryEnrichmentStatus API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.opGetTelemetryEvaluationStatus">opGetTelemetryEvaluationStatus</a></code> | <code>string[]</code> | IAM actions required for the GetTelemetryEvaluationStatus API call. |
@@ -2001,6 +2231,7 @@ new observabilityadmin.ObservabilityadminOperations()
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.TestTelemetryPipeline">TestTelemetryPipeline</a></code> | <code>string[]</code> | IAM actions required for the TestTelemetryPipeline API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.UpdateCentralizationRuleForOrganization">UpdateCentralizationRuleForOrganization</a></code> | <code>string[]</code> | IAM actions required for the UpdateCentralizationRuleForOrganization API call. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.UpdateDatasetIntegration">UpdateDatasetIntegration</a></code> | <code>string[]</code> | IAM actions required for the UpdateDatasetIntegration API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.UpdateTelemetryPipeline">UpdateTelemetryPipeline</a></code> | <code>string[]</code> | IAM actions required for the UpdateTelemetryPipeline API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.UpdateTelemetryRule">UpdateTelemetryRule</a></code> | <code>string[]</code> | IAM actions required for the UpdateTelemetryRule API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.UpdateTelemetryRuleForOrganization">UpdateTelemetryRuleForOrganization</a></code> | <code>string[]</code> | IAM actions required for the UpdateTelemetryRuleForOrganization API call. |
@@ -2017,6 +2248,18 @@ public readonly CreateCentralizationRuleForOrganization: string[];
 - *Type:* string[]
 
 IAM actions required for the CreateCentralizationRuleForOrganization API call.
+
+---
+
+##### `CreateDatasetIntegration`<sup>Required</sup> <a name="CreateDatasetIntegration" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.CreateDatasetIntegration"></a>
+
+```typescript
+public readonly CreateDatasetIntegration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateDatasetIntegration API call.
 
 ---
 
@@ -2080,6 +2323,18 @@ IAM actions required for the DeleteCentralizationRuleForOrganization API call.
 
 ---
 
+##### `DeleteDatasetIntegration`<sup>Required</sup> <a name="DeleteDatasetIntegration" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.DeleteDatasetIntegration"></a>
+
+```typescript
+public readonly DeleteDatasetIntegration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteDatasetIntegration API call.
+
+---
+
 ##### `DeleteS3TableIntegration`<sup>Required</sup> <a name="DeleteS3TableIntegration" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.DeleteS3TableIntegration"></a>
 
 ```typescript
@@ -2137,6 +2392,18 @@ public readonly ListCentralizationRulesForOrganization: string[];
 - *Type:* string[]
 
 IAM actions required for the ListCentralizationRulesForOrganization API call.
+
+---
+
+##### `ListDatasetIntegrations`<sup>Required</sup> <a name="ListDatasetIntegrations" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.ListDatasetIntegrations"></a>
+
+```typescript
+public readonly ListDatasetIntegrations: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListDatasetIntegrations API call.
 
 ---
 
@@ -2233,6 +2500,18 @@ public readonly opGetCentralizationRuleForOrganization: string[];
 - *Type:* string[]
 
 IAM actions required for the GetCentralizationRuleForOrganization API call.
+
+---
+
+##### `opGetDatasetIntegration`<sup>Required</sup> <a name="opGetDatasetIntegration" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.opGetDatasetIntegration"></a>
+
+```typescript
+public readonly opGetDatasetIntegration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetDatasetIntegration API call.
 
 ---
 
@@ -2440,6 +2719,18 @@ IAM actions required for the UpdateCentralizationRuleForOrganization API call.
 
 ---
 
+##### `UpdateDatasetIntegration`<sup>Required</sup> <a name="UpdateDatasetIntegration" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.UpdateDatasetIntegration"></a>
+
+```typescript
+public readonly UpdateDatasetIntegration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateDatasetIntegration API call.
+
+---
+
 ##### `UpdateTelemetryPipeline`<sup>Required</sup> <a name="UpdateTelemetryPipeline" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.UpdateTelemetryPipeline"></a>
 
 ```typescript
@@ -2510,6 +2801,8 @@ new observabilityadmin.ObservabilityadminResources()
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.datasetIntegration">datasetIntegration</a></code> | Builds an ARN for the dataset-integration resource. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.isValidDatasetIntegrationArn">isValidDatasetIntegrationArn</a></code> | Validates whether a string is a valid ARN for the dataset-integration resource. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.isValidOrganizationCentralizationRuleArn">isValidOrganizationCentralizationRuleArn</a></code> | Validates whether a string is a valid ARN for the organization-centralization-rule resource. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.isValidOrganizationTelemetryRuleArn">isValidOrganizationTelemetryRuleArn</a></code> | Validates whether a string is a valid ARN for the organization-telemetry-rule resource. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.isValidS3tableintegrationArn">isValidS3tableintegrationArn</a></code> | Validates whether a string is a valid ARN for the s3tableintegration resource. |
@@ -2517,6 +2810,7 @@ new observabilityadmin.ObservabilityadminResources()
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.isValidTelemetryRuleArn">isValidTelemetryRuleArn</a></code> | Validates whether a string is a valid ARN for the telemetry-rule resource. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.organizationCentralizationRule">organizationCentralizationRule</a></code> | Builds an ARN for the organization-centralization-rule resource. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.organizationTelemetryRule">organizationTelemetryRule</a></code> | Builds an ARN for the organization-telemetry-rule resource. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.parseDatasetIntegrationArn">parseDatasetIntegrationArn</a></code> | Parses a dataset-integration ARN into its components. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.parseOrganizationCentralizationRuleArn">parseOrganizationCentralizationRuleArn</a></code> | Parses a organization-centralization-rule ARN into its components. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.parseOrganizationTelemetryRuleArn">parseOrganizationTelemetryRuleArn</a></code> | Parses a organization-telemetry-rule ARN into its components. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.parseS3tableintegrationArn">parseS3tableintegrationArn</a></code> | Parses a s3tableintegration ARN into its components. |
@@ -2525,6 +2819,38 @@ new observabilityadmin.ObservabilityadminResources()
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.s3tableintegration">s3tableintegration</a></code> | Builds an ARN for the s3tableintegration resource. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.telemetryPipeline">telemetryPipeline</a></code> | Builds an ARN for the telemetry-pipeline resource. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.telemetryRule">telemetryRule</a></code> | Builds an ARN for the telemetry-rule resource. |
+
+---
+
+##### `datasetIntegration` <a name="datasetIntegration" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.datasetIntegration"></a>
+
+```typescript
+import { observabilityadmin } from '@cdk_utils/iam'
+
+observabilityadmin.ObservabilityadminResources.datasetIntegration(props: ObservabilityadminDatasetIntegrationArnProps)
+```
+
+Builds an ARN for the dataset-integration resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.datasetIntegration.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminDatasetIntegrationArnProps">ObservabilityadminDatasetIntegrationArnProps</a>
+
+---
+
+##### `isValidDatasetIntegrationArn` <a name="isValidDatasetIntegrationArn" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.isValidDatasetIntegrationArn"></a>
+
+```typescript
+import { observabilityadmin } from '@cdk_utils/iam'
+
+observabilityadmin.ObservabilityadminResources.isValidDatasetIntegrationArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the dataset-integration resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.isValidDatasetIntegrationArn.parameter.arn"></a>
+
+- *Type:* string
 
 ---
 
@@ -2637,6 +2963,22 @@ Builds an ARN for the organization-telemetry-rule resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.organizationTelemetryRule.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOrganizationTelemetryRuleArnProps">ObservabilityadminOrganizationTelemetryRuleArnProps</a>
+
+---
+
+##### `parseDatasetIntegrationArn` <a name="parseDatasetIntegrationArn" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.parseDatasetIntegrationArn"></a>
+
+```typescript
+import { observabilityadmin } from '@cdk_utils/iam'
+
+observabilityadmin.ObservabilityadminResources.parseDatasetIntegrationArn(arn: string)
+```
+
+Parses a dataset-integration ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.parseDatasetIntegrationArn.parameter.arn"></a>
+
+- *Type:* string
 
 ---
 

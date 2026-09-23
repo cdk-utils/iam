@@ -149,6 +149,12 @@ export class Wafv2Actions {
 	static readonly UpdateRuleGroup = "wafv2:UpdateRuleGroup";
 	/** [Write] wafv2:UpdateWebACL */
 	static readonly UpdateWebACL = "wafv2:UpdateWebACL";
+	/** [Read] wafv2:ValidateNetworkSecurityManagerRuleConfiguration */
+	static readonly ValidateNetworkSecurityManagerRuleConfiguration =
+		"wafv2:ValidateNetworkSecurityManagerRuleConfiguration";
+	/** [Read] wafv2:ValidateNetworkSecurityManagerWebACLConfiguration */
+	static readonly ValidateNetworkSecurityManagerWebACLConfiguration =
+		"wafv2:ValidateNetworkSecurityManagerWebACLConfiguration";
 
 	/** All read-level actions. */
 	static readonly AllReadActions: string[] = [
@@ -174,6 +180,8 @@ export class Wafv2Actions {
 		Wafv2Actions.actionGetWebACL,
 		Wafv2Actions.actionGetWebACLForResource,
 		Wafv2Actions.ListTagsForResource,
+		Wafv2Actions.ValidateNetworkSecurityManagerRuleConfiguration,
+		Wafv2Actions.ValidateNetworkSecurityManagerWebACLConfiguration,
 	];
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [

@@ -32,6 +32,30 @@
       }
     },
     {
+      "Name": "CreateDatasetIntegration",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset-integration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "CreateS3TableIntegration",
       "ActionConditionKeys": [
         "aws:RequestTag/${TagKey}",
@@ -154,6 +178,26 @@
       }
     },
     {
+      "Name": "DeleteDatasetIntegration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset-integration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "DeleteS3TableIntegration",
       "Annotations": {
         "Properties": {
@@ -249,6 +293,26 @@
       "Resources": [
         {
           "Name": "organization-centralization-rule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDatasetIntegration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset-integration"
         }
       ],
       "SupportedBy": {
@@ -397,6 +461,21 @@
       }
     },
     {
+      "Name": "ListDatasetIntegrations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ListResourceTelemetry",
       "ActionConditionKeys": [
         "observabilityadmin:TargetRegions"
@@ -458,6 +537,9 @@
         }
       },
       "Resources": [
+        {
+          "Name": "dataset-integration"
+        },
         {
           "Name": "organization-centralization-rule"
         },
@@ -636,6 +718,9 @@
       },
       "Resources": [
         {
+          "Name": "dataset-integration"
+        },
+        {
           "Name": "organization-centralization-rule"
         },
         {
@@ -686,6 +771,9 @@
       },
       "Resources": [
         {
+          "Name": "dataset-integration"
+        },
+        {
           "Name": "organization-centralization-rule"
         },
         {
@@ -727,6 +815,26 @@
       "Resources": [
         {
           "Name": "organization-centralization-rule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateDatasetIntegration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset-integration"
         }
       ],
       "SupportedBy": {
@@ -906,6 +1014,36 @@
       ]
     },
     {
+      "Name": "CreateDatasetIntegration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDatasetIntegration",
+          "Service": "observabilityadmin"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "logs.amazonaws.com",
+              "test.logs.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "observabilityadmin"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "observabilityadmin",
+          "Method": "create_dataset_integration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "CreateS3TableIntegration",
       "AuthorizedActions": [
         {
@@ -1026,6 +1164,22 @@
       ]
     },
     {
+      "Name": "DeleteDatasetIntegration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDatasetIntegration",
+          "Service": "observabilityadmin"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "observabilityadmin",
+          "Method": "delete_dataset_integration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DeleteS3TableIntegration",
       "AuthorizedActions": [
         {
@@ -1105,6 +1259,22 @@
         {
           "Name": "observabilityadmin",
           "Method": "get_centralization_rule_for_organization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDatasetIntegration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDatasetIntegration",
+          "Service": "observabilityadmin"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "observabilityadmin",
+          "Method": "get_dataset_integration",
           "Package": "Boto3"
         }
       ]
@@ -1233,6 +1403,22 @@
         {
           "Name": "observabilityadmin",
           "Method": "list_centralization_rules_for_organization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDatasetIntegrations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDatasetIntegrations",
+          "Service": "observabilityadmin"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "observabilityadmin",
+          "Method": "list_dataset_integrations",
           "Package": "Boto3"
         }
       ]
@@ -1510,6 +1696,32 @@
       ]
     },
     {
+      "Name": "UpdateDatasetIntegration",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "logs.amazonaws.com",
+              "test.logs.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateDatasetIntegration",
+          "Service": "observabilityadmin"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "observabilityadmin",
+          "Method": "update_dataset_integration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "UpdateTelemetryPipeline",
       "AuthorizedActions": [
         {
@@ -1589,6 +1801,15 @@
     }
   ],
   "Resources": [
+    {
+      "Name": "dataset-integration",
+      "ARNFormats": [
+        "arn:${Partition}:observabilityadmin:${Region}:${Account}:dataset-integration/${DatasetIntegrationIdentifier}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
     {
       "Name": "organization-centralization-rule",
       "ARNFormats": [

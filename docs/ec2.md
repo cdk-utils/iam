@@ -42588,6 +42588,7 @@ new ec2.EC2Operations()
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.CreateCapacityReservation">CreateCapacityReservation</a></code> | <code>string[]</code> | IAM actions required for the CreateCapacityReservation API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.CreateCapacityReservationBySplitting">CreateCapacityReservationBySplitting</a></code> | <code>string[]</code> | IAM actions required for the CreateCapacityReservationBySplitting API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.CreateCapacityReservationCancellationQuote">CreateCapacityReservationCancellationQuote</a></code> | <code>string[]</code> | IAM actions required for the CreateCapacityReservationCancellationQuote API call. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.CreateCapacityReservationDateChangeQuote">CreateCapacityReservationDateChangeQuote</a></code> | <code>string[]</code> | IAM actions required for the CreateCapacityReservationDateChangeQuote API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.CreateCapacityReservationFleet">CreateCapacityReservationFleet</a></code> | <code>string[]</code> | IAM actions required for the CreateCapacityReservationFleet API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.CreateCarrierGateway">CreateCarrierGateway</a></code> | <code>string[]</code> | IAM actions required for the CreateCarrierGateway API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.CreateClientVpnEndpoint">CreateClientVpnEndpoint</a></code> | <code>string[]</code> | IAM actions required for the CreateClientVpnEndpoint API call. |
@@ -42818,6 +42819,7 @@ new ec2.EC2Operations()
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.DescribeCapacityManagerDataExports">DescribeCapacityManagerDataExports</a></code> | <code>string[]</code> | IAM actions required for the DescribeCapacityManagerDataExports API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.DescribeCapacityReservationBillingRequests">DescribeCapacityReservationBillingRequests</a></code> | <code>string[]</code> | IAM actions required for the DescribeCapacityReservationBillingRequests API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.DescribeCapacityReservationCancellationQuotes">DescribeCapacityReservationCancellationQuotes</a></code> | <code>string[]</code> | IAM actions required for the DescribeCapacityReservationCancellationQuotes API call. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.DescribeCapacityReservationDateChangeQuotes">DescribeCapacityReservationDateChangeQuotes</a></code> | <code>string[]</code> | IAM actions required for the DescribeCapacityReservationDateChangeQuotes API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.DescribeCapacityReservationFleets">DescribeCapacityReservationFleets</a></code> | <code>string[]</code> | IAM actions required for the DescribeCapacityReservationFleets API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.DescribeCapacityReservations">DescribeCapacityReservations</a></code> | <code>string[]</code> | IAM actions required for the DescribeCapacityReservations API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.DescribeCapacityReservationTopology">DescribeCapacityReservationTopology</a></code> | <code>string[]</code> | IAM actions required for the DescribeCapacityReservationTopology API call. |
@@ -44160,6 +44162,18 @@ public readonly CreateCapacityReservationCancellationQuote: string[];
 - *Type:* string[]
 
 IAM actions required for the CreateCapacityReservationCancellationQuote API call.
+
+---
+
+##### `CreateCapacityReservationDateChangeQuote`<sup>Required</sup> <a name="CreateCapacityReservationDateChangeQuote" id="@cdk_utils/iam.ec2.EC2Operations.property.CreateCapacityReservationDateChangeQuote"></a>
+
+```typescript
+public readonly CreateCapacityReservationDateChangeQuote: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateCapacityReservationDateChangeQuote API call.
 
 ---
 
@@ -46920,6 +46934,18 @@ public readonly DescribeCapacityReservationCancellationQuotes: string[];
 - *Type:* string[]
 
 IAM actions required for the DescribeCapacityReservationCancellationQuotes API call.
+
+---
+
+##### `DescribeCapacityReservationDateChangeQuotes`<sup>Required</sup> <a name="DescribeCapacityReservationDateChangeQuotes" id="@cdk_utils/iam.ec2.EC2Operations.property.DescribeCapacityReservationDateChangeQuotes"></a>
+
+```typescript
+public readonly DescribeCapacityReservationDateChangeQuotes: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeCapacityReservationDateChangeQuotes API call.
 
 ---
 

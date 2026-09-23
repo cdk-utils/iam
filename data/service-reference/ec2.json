@@ -28777,6 +28777,22 @@
       ]
     },
     {
+      "Name": "CreateCapacityReservationDateChangeQuote",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateTags",
+          "Service": "ec2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ec2",
+          "Method": "create_capacity_reservation_date_change_quote",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "CreateCapacityReservationFleet",
       "AuthorizedActions": [
         {
@@ -32815,6 +32831,16 @@
         {
           "Name": "ec2",
           "Method": "describe_capacity_reservation_cancellation_quotes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeCapacityReservationDateChangeQuotes",
+      "SDK": [
+        {
+          "Name": "ec2",
+          "Method": "describe_capacity_reservation_date_change_quotes",
           "Package": "Boto3"
         }
       ]

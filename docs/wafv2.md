@@ -2358,6 +2358,8 @@ new wafv2.Wafv2Actions()
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Actions.property.UpdateRegexPatternSet">UpdateRegexPatternSet</a></code> | <code>string</code> | [Write] wafv2:UpdateRegexPatternSet. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Actions.property.UpdateRuleGroup">UpdateRuleGroup</a></code> | <code>string</code> | [Write] wafv2:UpdateRuleGroup. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Actions.property.UpdateWebACL">UpdateWebACL</a></code> | <code>string</code> | [Write] wafv2:UpdateWebACL. |
+| <code><a href="#@cdk_utils/iam.wafv2.Wafv2Actions.property.ValidateNetworkSecurityManagerRuleConfiguration">ValidateNetworkSecurityManagerRuleConfiguration</a></code> | <code>string</code> | [Read] wafv2:ValidateNetworkSecurityManagerRuleConfiguration. |
+| <code><a href="#@cdk_utils/iam.wafv2.Wafv2Actions.property.ValidateNetworkSecurityManagerWebACLConfiguration">ValidateNetworkSecurityManagerWebACLConfiguration</a></code> | <code>string</code> | [Read] wafv2:ValidateNetworkSecurityManagerWebACLConfiguration. |
 
 ---
 
@@ -3162,6 +3164,30 @@ public readonly UpdateWebACL: string;
 - *Type:* string
 
 [Write] wafv2:UpdateWebACL.
+
+---
+
+##### `ValidateNetworkSecurityManagerRuleConfiguration`<sup>Required</sup> <a name="ValidateNetworkSecurityManagerRuleConfiguration" id="@cdk_utils/iam.wafv2.Wafv2Actions.property.ValidateNetworkSecurityManagerRuleConfiguration"></a>
+
+```typescript
+public readonly ValidateNetworkSecurityManagerRuleConfiguration: string;
+```
+
+- *Type:* string
+
+[Read] wafv2:ValidateNetworkSecurityManagerRuleConfiguration.
+
+---
+
+##### `ValidateNetworkSecurityManagerWebACLConfiguration`<sup>Required</sup> <a name="ValidateNetworkSecurityManagerWebACLConfiguration" id="@cdk_utils/iam.wafv2.Wafv2Actions.property.ValidateNetworkSecurityManagerWebACLConfiguration"></a>
+
+```typescript
+public readonly ValidateNetworkSecurityManagerWebACLConfiguration: string;
+```
+
+- *Type:* string
+
+[Read] wafv2:ValidateNetworkSecurityManagerWebACLConfiguration.
 
 ---
 
