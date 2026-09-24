@@ -56,6 +56,8 @@ export class BillingActions {
 	static readonly actionGetResourcePolicy = "billing:GetResourcePolicy";
 	/** [Read] billing:GetSellerOfRecord */
 	static readonly actionGetSellerOfRecord = "billing:GetSellerOfRecord";
+	/** [List] billing:ListBillingViewSegments */
+	static readonly ListBillingViewSegments = "billing:ListBillingViewSegments";
 	/** [Read] billing:ListBillingViews */
 	static readonly ListBillingViews = "billing:ListBillingViews";
 	/** [List] billing:ListEnterpriseSupportLinkedAccountCharges */
@@ -119,6 +121,7 @@ export class BillingActions {
 	];
 	/** All list-level actions. */
 	static readonly AllListActions: string[] = [
+		BillingActions.ListBillingViewSegments,
 		BillingActions.ListEnterpriseSupportLinkedAccountCharges,
 		BillingActions.ListSourceViewsForBillingView,
 	];
@@ -244,6 +247,10 @@ export class BillingOperations {
 	];
 	/** IAM actions required for the GetResourcePolicy API call. */
 	static readonly opGetResourcePolicy: string[] = ["billing:GetResourcePolicy"];
+	/** IAM actions required for the ListBillingViewSegments API call. */
+	static readonly ListBillingViewSegments: string[] = [
+		"billing:ListBillingViewSegments",
+	];
 	/** IAM actions required for the ListBillingViews API call. */
 	static readonly ListBillingViews: string[] = ["billing:ListBillingViews"];
 	/** IAM actions required for the ListEnterpriseSupportLinkedAccountCharges API call. */

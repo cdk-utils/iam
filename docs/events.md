@@ -1013,6 +1013,180 @@ Defaults to "*".
 
 ---
 
+### EventsEventBusv2ArnComponents <a name="EventsEventBusv2ArnComponents" id="@cdk_utils/iam.events.EventsEventBusv2ArnComponents"></a>
+
+Parsed components of a event-busv2 ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.events.EventsEventBusv2ArnComponents.Initializer"></a>
+
+```typescript
+import { events } from '@cdk_utils/iam'
+
+const eventsEventBusv2ArnComponents: events.EventsEventBusv2ArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.events.EventsEventBusv2ArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.events.EventsEventBusv2ArnComponents.property.eventBusName">eventBusName</a></code> | <code>string</code> | The EventBusName component. |
+| <code><a href="#@cdk_utils/iam.events.EventsEventBusv2ArnComponents.property.opaqueId">opaqueId</a></code> | <code>string</code> | The OpaqueId component. |
+| <code><a href="#@cdk_utils/iam.events.EventsEventBusv2ArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.events.EventsEventBusv2ArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.events.EventsEventBusv2ArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `eventBusName`<sup>Required</sup> <a name="eventBusName" id="@cdk_utils/iam.events.EventsEventBusv2ArnComponents.property.eventBusName"></a>
+
+```typescript
+public readonly eventBusName: string;
+```
+
+- *Type:* string
+
+The EventBusName component.
+
+---
+
+##### `opaqueId`<sup>Required</sup> <a name="opaqueId" id="@cdk_utils/iam.events.EventsEventBusv2ArnComponents.property.opaqueId"></a>
+
+```typescript
+public readonly opaqueId: string;
+```
+
+- *Type:* string
+
+The OpaqueId component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.events.EventsEventBusv2ArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.events.EventsEventBusv2ArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### EventsEventBusv2ArnProps <a name="EventsEventBusv2ArnProps" id="@cdk_utils/iam.events.EventsEventBusv2ArnProps"></a>
+
+Properties for building a event-busv2 ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.events.EventsEventBusv2ArnProps.Initializer"></a>
+
+```typescript
+import { events } from '@cdk_utils/iam'
+
+const eventsEventBusv2ArnProps: events.EventsEventBusv2ArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.events.EventsEventBusv2ArnProps.property.eventBusName">eventBusName</a></code> | <code>string</code> | The EventBusName component of the ARN. |
+| <code><a href="#@cdk_utils/iam.events.EventsEventBusv2ArnProps.property.opaqueId">opaqueId</a></code> | <code>string</code> | The OpaqueId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.events.EventsEventBusv2ArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.events.EventsEventBusv2ArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.events.EventsEventBusv2ArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `eventBusName`<sup>Required</sup> <a name="eventBusName" id="@cdk_utils/iam.events.EventsEventBusv2ArnProps.property.eventBusName"></a>
+
+```typescript
+public readonly eventBusName: string;
+```
+
+- *Type:* string
+
+The EventBusName component of the ARN.
+
+---
+
+##### `opaqueId`<sup>Required</sup> <a name="opaqueId" id="@cdk_utils/iam.events.EventsEventBusv2ArnProps.property.opaqueId"></a>
+
+```typescript
+public readonly opaqueId: string;
+```
+
+- *Type:* string
+
+The OpaqueId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.events.EventsEventBusv2ArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.events.EventsEventBusv2ArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.events.EventsEventBusv2ArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### EventsEventSourceArnComponents <a name="EventsEventSourceArnComponents" id="@cdk_utils/iam.events.EventsEventSourceArnComponents"></a>
 
 Parsed components of a event-source ARN.
@@ -1148,6 +1322,206 @@ Defaults to "aws".
 ---
 
 ##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.events.EventsEventSourceArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
+### EventsEventSourcev2ArnComponents <a name="EventsEventSourcev2ArnComponents" id="@cdk_utils/iam.events.EventsEventSourcev2ArnComponents"></a>
+
+Parsed components of a event-sourcev2 ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.events.EventsEventSourcev2ArnComponents.Initializer"></a>
+
+```typescript
+import { events } from '@cdk_utils/iam'
+
+const eventsEventSourcev2ArnComponents: events.EventsEventSourcev2ArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.events.EventsEventSourcev2ArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.events.EventsEventSourcev2ArnComponents.property.eventSourceName">eventSourceName</a></code> | <code>string</code> | The EventSourceName component. |
+| <code><a href="#@cdk_utils/iam.events.EventsEventSourcev2ArnComponents.property.opaqueId">opaqueId</a></code> | <code>string</code> | The OpaqueId component. |
+| <code><a href="#@cdk_utils/iam.events.EventsEventSourcev2ArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.events.EventsEventSourcev2ArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+| <code><a href="#@cdk_utils/iam.events.EventsEventSourcev2ArnComponents.property.sourceType">sourceType</a></code> | <code>string</code> | The SourceType component. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.events.EventsEventSourcev2ArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `eventSourceName`<sup>Required</sup> <a name="eventSourceName" id="@cdk_utils/iam.events.EventsEventSourcev2ArnComponents.property.eventSourceName"></a>
+
+```typescript
+public readonly eventSourceName: string;
+```
+
+- *Type:* string
+
+The EventSourceName component.
+
+---
+
+##### `opaqueId`<sup>Required</sup> <a name="opaqueId" id="@cdk_utils/iam.events.EventsEventSourcev2ArnComponents.property.opaqueId"></a>
+
+```typescript
+public readonly opaqueId: string;
+```
+
+- *Type:* string
+
+The OpaqueId component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.events.EventsEventSourcev2ArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.events.EventsEventSourcev2ArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+##### `sourceType`<sup>Required</sup> <a name="sourceType" id="@cdk_utils/iam.events.EventsEventSourcev2ArnComponents.property.sourceType"></a>
+
+```typescript
+public readonly sourceType: string;
+```
+
+- *Type:* string
+
+The SourceType component.
+
+---
+
+### EventsEventSourcev2ArnProps <a name="EventsEventSourcev2ArnProps" id="@cdk_utils/iam.events.EventsEventSourcev2ArnProps"></a>
+
+Properties for building a event-sourcev2 ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.events.EventsEventSourcev2ArnProps.Initializer"></a>
+
+```typescript
+import { events } from '@cdk_utils/iam'
+
+const eventsEventSourcev2ArnProps: events.EventsEventSourcev2ArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.events.EventsEventSourcev2ArnProps.property.eventSourceName">eventSourceName</a></code> | <code>string</code> | The EventSourceName component of the ARN. |
+| <code><a href="#@cdk_utils/iam.events.EventsEventSourcev2ArnProps.property.opaqueId">opaqueId</a></code> | <code>string</code> | The OpaqueId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.events.EventsEventSourcev2ArnProps.property.sourceType">sourceType</a></code> | <code>string</code> | The SourceType component of the ARN. |
+| <code><a href="#@cdk_utils/iam.events.EventsEventSourcev2ArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.events.EventsEventSourcev2ArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.events.EventsEventSourcev2ArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `eventSourceName`<sup>Required</sup> <a name="eventSourceName" id="@cdk_utils/iam.events.EventsEventSourcev2ArnProps.property.eventSourceName"></a>
+
+```typescript
+public readonly eventSourceName: string;
+```
+
+- *Type:* string
+
+The EventSourceName component of the ARN.
+
+---
+
+##### `opaqueId`<sup>Required</sup> <a name="opaqueId" id="@cdk_utils/iam.events.EventsEventSourcev2ArnProps.property.opaqueId"></a>
+
+```typescript
+public readonly opaqueId: string;
+```
+
+- *Type:* string
+
+The OpaqueId component of the ARN.
+
+---
+
+##### `sourceType`<sup>Required</sup> <a name="sourceType" id="@cdk_utils/iam.events.EventsEventSourcev2ArnProps.property.sourceType"></a>
+
+```typescript
+public readonly sourceType: string;
+```
+
+- *Type:* string
+
+The SourceType component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.events.EventsEventSourcev2ArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.events.EventsEventSourcev2ArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.events.EventsEventSourcev2ArnProps.property.region"></a>
 
 ```typescript
 public readonly region: string;
@@ -2023,6 +2397,180 @@ Defaults to "*".
 
 ---
 
+### EventsSubscriberArnComponents <a name="EventsSubscriberArnComponents" id="@cdk_utils/iam.events.EventsSubscriberArnComponents"></a>
+
+Parsed components of a subscriber ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.events.EventsSubscriberArnComponents.Initializer"></a>
+
+```typescript
+import { events } from '@cdk_utils/iam'
+
+const eventsSubscriberArnComponents: events.EventsSubscriberArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.events.EventsSubscriberArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.events.EventsSubscriberArnComponents.property.opaqueId">opaqueId</a></code> | <code>string</code> | The OpaqueId component. |
+| <code><a href="#@cdk_utils/iam.events.EventsSubscriberArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.events.EventsSubscriberArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+| <code><a href="#@cdk_utils/iam.events.EventsSubscriberArnComponents.property.subscriberName">subscriberName</a></code> | <code>string</code> | The SubscriberName component. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.events.EventsSubscriberArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `opaqueId`<sup>Required</sup> <a name="opaqueId" id="@cdk_utils/iam.events.EventsSubscriberArnComponents.property.opaqueId"></a>
+
+```typescript
+public readonly opaqueId: string;
+```
+
+- *Type:* string
+
+The OpaqueId component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.events.EventsSubscriberArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.events.EventsSubscriberArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+##### `subscriberName`<sup>Required</sup> <a name="subscriberName" id="@cdk_utils/iam.events.EventsSubscriberArnComponents.property.subscriberName"></a>
+
+```typescript
+public readonly subscriberName: string;
+```
+
+- *Type:* string
+
+The SubscriberName component.
+
+---
+
+### EventsSubscriberArnProps <a name="EventsSubscriberArnProps" id="@cdk_utils/iam.events.EventsSubscriberArnProps"></a>
+
+Properties for building a subscriber ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.events.EventsSubscriberArnProps.Initializer"></a>
+
+```typescript
+import { events } from '@cdk_utils/iam'
+
+const eventsSubscriberArnProps: events.EventsSubscriberArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.events.EventsSubscriberArnProps.property.opaqueId">opaqueId</a></code> | <code>string</code> | The OpaqueId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.events.EventsSubscriberArnProps.property.subscriberName">subscriberName</a></code> | <code>string</code> | The SubscriberName component of the ARN. |
+| <code><a href="#@cdk_utils/iam.events.EventsSubscriberArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.events.EventsSubscriberArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.events.EventsSubscriberArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `opaqueId`<sup>Required</sup> <a name="opaqueId" id="@cdk_utils/iam.events.EventsSubscriberArnProps.property.opaqueId"></a>
+
+```typescript
+public readonly opaqueId: string;
+```
+
+- *Type:* string
+
+The OpaqueId component of the ARN.
+
+---
+
+##### `subscriberName`<sup>Required</sup> <a name="subscriberName" id="@cdk_utils/iam.events.EventsSubscriberArnProps.property.subscriberName"></a>
+
+```typescript
+public readonly subscriberName: string;
+```
+
+- *Type:* string
+
+The SubscriberName component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.events.EventsSubscriberArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.events.EventsSubscriberArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.events.EventsSubscriberArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### EventsTerminateInstanceArnComponents <a name="EventsTerminateInstanceArnComponents" id="@cdk_utils/iam.events.EventsTerminateInstanceArnComponents"></a>
 
 Parsed components of a terminate-instance ARN.
@@ -2171,6 +2719,7 @@ new events.EventsActions()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.events.EventsActions.property.actionGetResourcePolicy">actionGetResourcePolicy</a></code> | <code>string</code> | [Read] events:GetResourcePolicy. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.ActivateEventSource">ActivateEventSource</a></code> | <code>string</code> | [Write] events:ActivateEventSource. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.AllListActions">AllListActions</a></code> | <code>string[]</code> | All list-level actions. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.AllowVendedLogDeliveryForResource">AllowVendedLogDeliveryForResource</a></code> | <code>string</code> | [Write] events:AllowVendedLogDeliveryForResource. |
@@ -2184,7 +2733,9 @@ new events.EventsActions()
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.CreateConnection">CreateConnection</a></code> | <code>string</code> | [Write] events:CreateConnection. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.CreateEndpoint">CreateEndpoint</a></code> | <code>string</code> | [Write] events:CreateEndpoint. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.CreateEventBus">CreateEventBus</a></code> | <code>string</code> | [Write] events:CreateEventBus. |
+| <code><a href="#@cdk_utils/iam.events.EventsActions.property.CreateEventSource">CreateEventSource</a></code> | <code>string</code> | [Write] events:CreateEventSource. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.CreatePartnerEventSource">CreatePartnerEventSource</a></code> | <code>string</code> | [Write] events:CreatePartnerEventSource. |
+| <code><a href="#@cdk_utils/iam.events.EventsActions.property.CreateSubscriber">CreateSubscriber</a></code> | <code>string</code> | [Write] events:CreateSubscriber. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.DeactivateEventSource">DeactivateEventSource</a></code> | <code>string</code> | [Write] events:DeactivateEventSource. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.DeauthorizeConnection">DeauthorizeConnection</a></code> | <code>string</code> | [Write] events:DeauthorizeConnection. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.DeleteApiDestination">DeleteApiDestination</a></code> | <code>string</code> | [Write] events:DeleteApiDestination. |
@@ -2192,8 +2743,11 @@ new events.EventsActions()
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.DeleteConnection">DeleteConnection</a></code> | <code>string</code> | [Write] events:DeleteConnection. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.DeleteEndpoint">DeleteEndpoint</a></code> | <code>string</code> | [Write] events:DeleteEndpoint. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.DeleteEventBus">DeleteEventBus</a></code> | <code>string</code> | [Write] events:DeleteEventBus. |
+| <code><a href="#@cdk_utils/iam.events.EventsActions.property.DeleteEventSource">DeleteEventSource</a></code> | <code>string</code> | [Write] events:DeleteEventSource. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.DeletePartnerEventSource">DeletePartnerEventSource</a></code> | <code>string</code> | [Write] events:DeletePartnerEventSource. |
+| <code><a href="#@cdk_utils/iam.events.EventsActions.property.DeleteResourcePolicy">DeleteResourcePolicy</a></code> | <code>string</code> | [PermissionManagement] events:DeleteResourcePolicy. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.DeleteRule">DeleteRule</a></code> | <code>string</code> | [Write] events:DeleteRule. |
+| <code><a href="#@cdk_utils/iam.events.EventsActions.property.DeleteSubscriber">DeleteSubscriber</a></code> | <code>string</code> | [Write] events:DeleteSubscriber. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.DescribeApiDestination">DescribeApiDestination</a></code> | <code>string</code> | [Read] events:DescribeApiDestination. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.DescribeArchive">DescribeArchive</a></code> | <code>string</code> | [Read] events:DescribeArchive. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.DescribeConnection">DescribeConnection</a></code> | <code>string</code> | [Read] events:DescribeConnection. |
@@ -2203,6 +2757,7 @@ new events.EventsActions()
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.DescribePartnerEventSource">DescribePartnerEventSource</a></code> | <code>string</code> | [Read] events:DescribePartnerEventSource. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.DescribeReplay">DescribeReplay</a></code> | <code>string</code> | [Read] events:DescribeReplay. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.DescribeRule">DescribeRule</a></code> | <code>string</code> | [Read] events:DescribeRule. |
+| <code><a href="#@cdk_utils/iam.events.EventsActions.property.DescribeSubscriber">DescribeSubscriber</a></code> | <code>string</code> | [Read] events:DescribeSubscriber. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.DisableRule">DisableRule</a></code> | <code>string</code> | [Write] events:DisableRule. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.EnableRule">EnableRule</a></code> | <code>string</code> | [Write] events:EnableRule. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.InvokeApiDestination">InvokeApiDestination</a></code> | <code>string</code> | [Write] events:InvokeApiDestination. |
@@ -2215,18 +2770,23 @@ new events.EventsActions()
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.ListPartnerEventSourceAccounts">ListPartnerEventSourceAccounts</a></code> | <code>string</code> | [List] events:ListPartnerEventSourceAccounts. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.ListPartnerEventSources">ListPartnerEventSources</a></code> | <code>string</code> | [List] events:ListPartnerEventSources. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.ListReplays">ListReplays</a></code> | <code>string</code> | [List] events:ListReplays. |
+| <code><a href="#@cdk_utils/iam.events.EventsActions.property.ListResourcePolicies">ListResourcePolicies</a></code> | <code>string</code> | [List] events:ListResourcePolicies. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.ListRuleNamesByTarget">ListRuleNamesByTarget</a></code> | <code>string</code> | [List] events:ListRuleNamesByTarget. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.ListRules">ListRules</a></code> | <code>string</code> | [List] events:ListRules. |
+| <code><a href="#@cdk_utils/iam.events.EventsActions.property.ListSubscribers">ListSubscribers</a></code> | <code>string</code> | [List] events:ListSubscribers. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [List] events:ListTagsForResource. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.ListTargetsByRule">ListTargetsByRule</a></code> | <code>string</code> | [List] events:ListTargetsByRule. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.PutEvents">PutEvents</a></code> | <code>string</code> | [Write] events:PutEvents. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.PutPartnerEvents">PutPartnerEvents</a></code> | <code>string</code> | [Write] events:PutPartnerEvents. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.PutPermission">PutPermission</a></code> | <code>string</code> | [PermissionManagement] events:PutPermission. |
+| <code><a href="#@cdk_utils/iam.events.EventsActions.property.PutRawEvents">PutRawEvents</a></code> | <code>string</code> | [Write] events:PutRawEvents. |
+| <code><a href="#@cdk_utils/iam.events.EventsActions.property.PutResourcePolicy">PutResourcePolicy</a></code> | <code>string</code> | [PermissionManagement] events:PutResourcePolicy. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.PutRule">PutRule</a></code> | <code>string</code> | [Write] events:PutRule. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.PutTargets">PutTargets</a></code> | <code>string</code> | [Write] events:PutTargets. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.RemovePermission">RemovePermission</a></code> | <code>string</code> | [PermissionManagement] events:RemovePermission. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.RemoveTargets">RemoveTargets</a></code> | <code>string</code> | [Write] events:RemoveTargets. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.RetrieveConnectionCredentials">RetrieveConnectionCredentials</a></code> | <code>string</code> | [Write] events:RetrieveConnectionCredentials. |
+| <code><a href="#@cdk_utils/iam.events.EventsActions.property.RevokeResource">RevokeResource</a></code> | <code>string</code> | [Write] events:RevokeResource. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.StartReplay">StartReplay</a></code> | <code>string</code> | [Write] events:StartReplay. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] events:TagResource. |
@@ -2237,6 +2797,20 @@ new events.EventsActions()
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.UpdateConnection">UpdateConnection</a></code> | <code>string</code> | [Write] events:UpdateConnection. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.UpdateEndpoint">UpdateEndpoint</a></code> | <code>string</code> | [Write] events:UpdateEndpoint. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.UpdateEventBus">UpdateEventBus</a></code> | <code>string</code> | [Write] events:UpdateEventBus. |
+| <code><a href="#@cdk_utils/iam.events.EventsActions.property.UpdateEventSource">UpdateEventSource</a></code> | <code>string</code> | [Write] events:UpdateEventSource. |
+| <code><a href="#@cdk_utils/iam.events.EventsActions.property.UpdateSubscriber">UpdateSubscriber</a></code> | <code>string</code> | [Write] events:UpdateSubscriber. |
+
+---
+
+##### `actionGetResourcePolicy`<sup>Required</sup> <a name="actionGetResourcePolicy" id="@cdk_utils/iam.events.EventsActions.property.actionGetResourcePolicy"></a>
+
+```typescript
+public readonly actionGetResourcePolicy: string;
+```
+
+- *Type:* string
+
+[Read] events:GetResourcePolicy.
 
 ---
 
@@ -2396,6 +2970,18 @@ public readonly CreateEventBus: string;
 
 ---
 
+##### `CreateEventSource`<sup>Required</sup> <a name="CreateEventSource" id="@cdk_utils/iam.events.EventsActions.property.CreateEventSource"></a>
+
+```typescript
+public readonly CreateEventSource: string;
+```
+
+- *Type:* string
+
+[Write] events:CreateEventSource.
+
+---
+
 ##### `CreatePartnerEventSource`<sup>Required</sup> <a name="CreatePartnerEventSource" id="@cdk_utils/iam.events.EventsActions.property.CreatePartnerEventSource"></a>
 
 ```typescript
@@ -2405,6 +2991,18 @@ public readonly CreatePartnerEventSource: string;
 - *Type:* string
 
 [Write] events:CreatePartnerEventSource.
+
+---
+
+##### `CreateSubscriber`<sup>Required</sup> <a name="CreateSubscriber" id="@cdk_utils/iam.events.EventsActions.property.CreateSubscriber"></a>
+
+```typescript
+public readonly CreateSubscriber: string;
+```
+
+- *Type:* string
+
+[Write] events:CreateSubscriber.
 
 ---
 
@@ -2492,6 +3090,18 @@ public readonly DeleteEventBus: string;
 
 ---
 
+##### `DeleteEventSource`<sup>Required</sup> <a name="DeleteEventSource" id="@cdk_utils/iam.events.EventsActions.property.DeleteEventSource"></a>
+
+```typescript
+public readonly DeleteEventSource: string;
+```
+
+- *Type:* string
+
+[Write] events:DeleteEventSource.
+
+---
+
 ##### `DeletePartnerEventSource`<sup>Required</sup> <a name="DeletePartnerEventSource" id="@cdk_utils/iam.events.EventsActions.property.DeletePartnerEventSource"></a>
 
 ```typescript
@@ -2504,6 +3114,18 @@ public readonly DeletePartnerEventSource: string;
 
 ---
 
+##### `DeleteResourcePolicy`<sup>Required</sup> <a name="DeleteResourcePolicy" id="@cdk_utils/iam.events.EventsActions.property.DeleteResourcePolicy"></a>
+
+```typescript
+public readonly DeleteResourcePolicy: string;
+```
+
+- *Type:* string
+
+[PermissionManagement] events:DeleteResourcePolicy.
+
+---
+
 ##### `DeleteRule`<sup>Required</sup> <a name="DeleteRule" id="@cdk_utils/iam.events.EventsActions.property.DeleteRule"></a>
 
 ```typescript
@@ -2513,6 +3135,18 @@ public readonly DeleteRule: string;
 - *Type:* string
 
 [Write] events:DeleteRule.
+
+---
+
+##### `DeleteSubscriber`<sup>Required</sup> <a name="DeleteSubscriber" id="@cdk_utils/iam.events.EventsActions.property.DeleteSubscriber"></a>
+
+```typescript
+public readonly DeleteSubscriber: string;
+```
+
+- *Type:* string
+
+[Write] events:DeleteSubscriber.
 
 ---
 
@@ -2621,6 +3255,18 @@ public readonly DescribeRule: string;
 - *Type:* string
 
 [Read] events:DescribeRule.
+
+---
+
+##### `DescribeSubscriber`<sup>Required</sup> <a name="DescribeSubscriber" id="@cdk_utils/iam.events.EventsActions.property.DescribeSubscriber"></a>
+
+```typescript
+public readonly DescribeSubscriber: string;
+```
+
+- *Type:* string
+
+[Read] events:DescribeSubscriber.
 
 ---
 
@@ -2768,6 +3414,18 @@ public readonly ListReplays: string;
 
 ---
 
+##### `ListResourcePolicies`<sup>Required</sup> <a name="ListResourcePolicies" id="@cdk_utils/iam.events.EventsActions.property.ListResourcePolicies"></a>
+
+```typescript
+public readonly ListResourcePolicies: string;
+```
+
+- *Type:* string
+
+[List] events:ListResourcePolicies.
+
+---
+
 ##### `ListRuleNamesByTarget`<sup>Required</sup> <a name="ListRuleNamesByTarget" id="@cdk_utils/iam.events.EventsActions.property.ListRuleNamesByTarget"></a>
 
 ```typescript
@@ -2789,6 +3447,18 @@ public readonly ListRules: string;
 - *Type:* string
 
 [List] events:ListRules.
+
+---
+
+##### `ListSubscribers`<sup>Required</sup> <a name="ListSubscribers" id="@cdk_utils/iam.events.EventsActions.property.ListSubscribers"></a>
+
+```typescript
+public readonly ListSubscribers: string;
+```
+
+- *Type:* string
+
+[List] events:ListSubscribers.
 
 ---
 
@@ -2852,6 +3522,30 @@ public readonly PutPermission: string;
 
 ---
 
+##### `PutRawEvents`<sup>Required</sup> <a name="PutRawEvents" id="@cdk_utils/iam.events.EventsActions.property.PutRawEvents"></a>
+
+```typescript
+public readonly PutRawEvents: string;
+```
+
+- *Type:* string
+
+[Write] events:PutRawEvents.
+
+---
+
+##### `PutResourcePolicy`<sup>Required</sup> <a name="PutResourcePolicy" id="@cdk_utils/iam.events.EventsActions.property.PutResourcePolicy"></a>
+
+```typescript
+public readonly PutResourcePolicy: string;
+```
+
+- *Type:* string
+
+[PermissionManagement] events:PutResourcePolicy.
+
+---
+
 ##### `PutRule`<sup>Required</sup> <a name="PutRule" id="@cdk_utils/iam.events.EventsActions.property.PutRule"></a>
 
 ```typescript
@@ -2909,6 +3603,18 @@ public readonly RetrieveConnectionCredentials: string;
 - *Type:* string
 
 [Write] events:RetrieveConnectionCredentials.
+
+---
+
+##### `RevokeResource`<sup>Required</sup> <a name="RevokeResource" id="@cdk_utils/iam.events.EventsActions.property.RevokeResource"></a>
+
+```typescript
+public readonly RevokeResource: string;
+```
+
+- *Type:* string
+
+[Write] events:RevokeResource.
 
 ---
 
@@ -3032,6 +3738,30 @@ public readonly UpdateEventBus: string;
 
 ---
 
+##### `UpdateEventSource`<sup>Required</sup> <a name="UpdateEventSource" id="@cdk_utils/iam.events.EventsActions.property.UpdateEventSource"></a>
+
+```typescript
+public readonly UpdateEventSource: string;
+```
+
+- *Type:* string
+
+[Write] events:UpdateEventSource.
+
+---
+
+##### `UpdateSubscriber`<sup>Required</sup> <a name="UpdateSubscriber" id="@cdk_utils/iam.events.EventsActions.property.UpdateSubscriber"></a>
+
+```typescript
+public readonly UpdateSubscriber: string;
+```
+
+- *Type:* string
+
+[Write] events:UpdateSubscriber.
+
+---
+
 ### EventsConditions <a name="EventsConditions" id="@cdk_utils/iam.events.EventsConditions"></a>
 
 Condition key constants and builders for events.
@@ -3054,6 +3784,7 @@ new events.EventsConditions()
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdk_utils/iam.events.EventsConditions.contentFilterPresent">contentFilterPresent</a></code> | Generates a condition block for `events:ContentFilterPresent`. |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.creatorAccount">creatorAccount</a></code> | Generates a condition block for `events:creatorAccount`. |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.detailEventTypeCode">detailEventTypeCode</a></code> | Generates a condition block for `events:detail.eventTypeCode`. |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.detailService">detailService</a></code> | Generates a condition block for `events:detail.service`. |
@@ -3062,11 +3793,33 @@ new events.EventsConditions()
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.eventBusARN">eventBusARN</a></code> | Generates a condition block for `events:EventBusArn`. |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.eventBusInvocation">eventBusInvocation</a></code> | Generates a condition block for `events:eventBusInvocation`. |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.managedBy">managedBy</a></code> | Generates a condition block for `events:ManagedBy`. |
+| <code><a href="#@cdk_utils/iam.events.EventsConditions.metadata">metadata</a></code> | Generates a condition block for `events:Metadata/${MetadataKey}`. |
+| <code><a href="#@cdk_utils/iam.events.EventsConditions.metadataMatcher">metadataMatcher</a></code> | Generates a condition block for `events:Metadata/${MetadataKey}/Matcher`. |
+| <code><a href="#@cdk_utils/iam.events.EventsConditions.policyName">policyName</a></code> | Generates a condition block for `events:PolicyName`. |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.requestTag">requestTag</a></code> | Generates a condition block for `aws:RequestTag/${TagKey}`. |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.resourceTag">resourceTag</a></code> | Generates a condition block for `aws:ResourceTag/${TagKey}`. |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.source">source</a></code> | Generates a condition block for `events:source`. |
+| <code><a href="#@cdk_utils/iam.events.EventsConditions.systemMetadataAWSDetailType">systemMetadataAWSDetailType</a></code> | Generates a condition block for `events:SystemMetadata/AwsDetailType`. |
+| <code><a href="#@cdk_utils/iam.events.EventsConditions.systemMetadataAWSSource">systemMetadataAWSSource</a></code> | Generates a condition block for `events:SystemMetadata/AwsSource`. |
+| <code><a href="#@cdk_utils/iam.events.EventsConditions.systemMetadataContentType">systemMetadataContentType</a></code> | Generates a condition block for `events:SystemMetadata/ContentType`. |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.tagKeys">tagKeys</a></code> | Generates a condition block for `aws:TagKeys`. |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.targetARN">targetARN</a></code> | Generates a condition block for `events:TargetArn`. |
+
+---
+
+##### `contentFilterPresent` <a name="contentFilterPresent" id="@cdk_utils/iam.events.EventsConditions.contentFilterPresent"></a>
+
+```typescript
+import { events } from '@cdk_utils/iam'
+
+events.EventsConditions.contentFilterPresent(value: boolean)
+```
+
+Generates a condition block for `events:ContentFilterPresent`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.events.EventsConditions.contentFilterPresent.parameter.value"></a>
+
+- *Type:* boolean
 
 ---
 
@@ -3198,6 +3951,54 @@ Generates a condition block for `events:ManagedBy`.
 
 ---
 
+##### `metadata` <a name="metadata" id="@cdk_utils/iam.events.EventsConditions.metadata"></a>
+
+```typescript
+import { events } from '@cdk_utils/iam'
+
+events.EventsConditions.metadata(values: string[])
+```
+
+Generates a condition block for `events:Metadata/${MetadataKey}`.
+
+###### `values`<sup>Required</sup> <a name="values" id="@cdk_utils/iam.events.EventsConditions.metadata.parameter.values"></a>
+
+- *Type:* string[]
+
+---
+
+##### `metadataMatcher` <a name="metadataMatcher" id="@cdk_utils/iam.events.EventsConditions.metadataMatcher"></a>
+
+```typescript
+import { events } from '@cdk_utils/iam'
+
+events.EventsConditions.metadataMatcher(value: string)
+```
+
+Generates a condition block for `events:Metadata/${MetadataKey}/Matcher`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.events.EventsConditions.metadataMatcher.parameter.value"></a>
+
+- *Type:* string
+
+---
+
+##### `policyName` <a name="policyName" id="@cdk_utils/iam.events.EventsConditions.policyName"></a>
+
+```typescript
+import { events } from '@cdk_utils/iam'
+
+events.EventsConditions.policyName(value: string)
+```
+
+Generates a condition block for `events:PolicyName`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.events.EventsConditions.policyName.parameter.value"></a>
+
+- *Type:* string
+
+---
+
 ##### `requestTag` <a name="requestTag" id="@cdk_utils/iam.events.EventsConditions.requestTag"></a>
 
 ```typescript
@@ -3246,6 +4047,54 @@ Generates a condition block for `events:source`.
 
 ---
 
+##### `systemMetadataAWSDetailType` <a name="systemMetadataAWSDetailType" id="@cdk_utils/iam.events.EventsConditions.systemMetadataAWSDetailType"></a>
+
+```typescript
+import { events } from '@cdk_utils/iam'
+
+events.EventsConditions.systemMetadataAWSDetailType(value: string)
+```
+
+Generates a condition block for `events:SystemMetadata/AwsDetailType`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.events.EventsConditions.systemMetadataAWSDetailType.parameter.value"></a>
+
+- *Type:* string
+
+---
+
+##### `systemMetadataAWSSource` <a name="systemMetadataAWSSource" id="@cdk_utils/iam.events.EventsConditions.systemMetadataAWSSource"></a>
+
+```typescript
+import { events } from '@cdk_utils/iam'
+
+events.EventsConditions.systemMetadataAWSSource(value: string)
+```
+
+Generates a condition block for `events:SystemMetadata/AwsSource`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.events.EventsConditions.systemMetadataAWSSource.parameter.value"></a>
+
+- *Type:* string
+
+---
+
+##### `systemMetadataContentType` <a name="systemMetadataContentType" id="@cdk_utils/iam.events.EventsConditions.systemMetadataContentType"></a>
+
+```typescript
+import { events } from '@cdk_utils/iam'
+
+events.EventsConditions.systemMetadataContentType(value: string)
+```
+
+Generates a condition block for `events:SystemMetadata/ContentType`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.events.EventsConditions.systemMetadataContentType.parameter.value"></a>
+
+- *Type:* string
+
+---
+
 ##### `tagKeys` <a name="tagKeys" id="@cdk_utils/iam.events.EventsConditions.tagKeys"></a>
 
 ```typescript
@@ -3283,12 +4132,17 @@ Generates a condition block for `events:TargetArn`.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.events.EventsConditions.property.actionGetResourcePolicyConditionKeys">actionGetResourcePolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetResourcePolicy action. |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.property.AWS_REQUEST_TAG">AWS_REQUEST_TAG</a></code> | <code>string</code> | Condition key: aws:RequestTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.property.AWS_RESOURCE_TAG">AWS_RESOURCE_TAG</a></code> | <code>string</code> | Condition key: aws:ResourceTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.property.AWS_TAG_KEYS">AWS_TAG_KEYS</a></code> | <code>string</code> | Condition key: aws:TagKeys (ArrayOfString). |
+| <code><a href="#@cdk_utils/iam.events.EventsConditions.property.CONTENT_FILTER_PRESENT">CONTENT_FILTER_PRESENT</a></code> | <code>string</code> | Condition key: events:ContentFilterPresent (Bool). |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.property.CreateEndpointConditionKeys">CreateEndpointConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateEndpoint action. |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.property.CreateEventBusConditionKeys">CreateEventBusConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateEventBus action. |
+| <code><a href="#@cdk_utils/iam.events.EventsConditions.property.CreateEventSourceConditionKeys">CreateEventSourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateEventSource action. |
+| <code><a href="#@cdk_utils/iam.events.EventsConditions.property.CreateSubscriberConditionKeys">CreateSubscriberConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateSubscriber action. |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.property.CREATOR_ACCOUNT">CREATOR_ACCOUNT</a></code> | <code>string</code> | Condition key: events:creatorAccount (String). |
+| <code><a href="#@cdk_utils/iam.events.EventsConditions.property.DeleteResourcePolicyConditionKeys">DeleteResourcePolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteResourcePolicy action. |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.property.DeleteRuleConditionKeys">DeleteRuleConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteRule action. |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.property.DescribeRuleConditionKeys">DescribeRuleConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeRule action. |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.property.DETAIL_EVENT_TYPE_CODE">DETAIL_EVENT_TYPE_CODE</a></code> | <code>string</code> | Condition key: events:detail.eventTypeCode (String). |
@@ -3302,15 +4156,37 @@ Generates a condition block for `events:TargetArn`.
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.property.ListTagsForResourceConditionKeys">ListTagsForResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListTagsForResource action. |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.property.ListTargetsByRuleConditionKeys">ListTargetsByRuleConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListTargetsByRule action. |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.property.MANAGED_BY">MANAGED_BY</a></code> | <code>string</code> | Condition key: events:ManagedBy (String). |
+| <code><a href="#@cdk_utils/iam.events.EventsConditions.property.METADATA">METADATA</a></code> | <code>string</code> | Condition key: events:Metadata/${MetadataKey} (ArrayOfString). |
+| <code><a href="#@cdk_utils/iam.events.EventsConditions.property.METADATA_MATCHER">METADATA_MATCHER</a></code> | <code>string</code> | Condition key: events:Metadata/${MetadataKey}/Matcher (String). |
+| <code><a href="#@cdk_utils/iam.events.EventsConditions.property.POLICY_NAME">POLICY_NAME</a></code> | <code>string</code> | Condition key: events:PolicyName (String). |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.property.PutEventsConditionKeys">PutEventsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutEvents action. |
+| <code><a href="#@cdk_utils/iam.events.EventsConditions.property.PutRawEventsConditionKeys">PutRawEventsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutRawEvents action. |
+| <code><a href="#@cdk_utils/iam.events.EventsConditions.property.PutResourcePolicyConditionKeys">PutResourcePolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutResourcePolicy action. |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.property.PutRuleConditionKeys">PutRuleConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutRule action. |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.property.PutTargetsConditionKeys">PutTargetsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutTargets action. |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.property.RemoveTargetsConditionKeys">RemoveTargetsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the RemoveTargets action. |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.property.SOURCE">SOURCE</a></code> | <code>string</code> | Condition key: events:source (ArrayOfString). |
+| <code><a href="#@cdk_utils/iam.events.EventsConditions.property.SYSTEM_METADATA_AWS_DETAIL_TYPE">SYSTEM_METADATA_AWS_DETAIL_TYPE</a></code> | <code>string</code> | Condition key: events:SystemMetadata/AwsDetailType (String). |
+| <code><a href="#@cdk_utils/iam.events.EventsConditions.property.SYSTEM_METADATA_AWS_SOURCE">SYSTEM_METADATA_AWS_SOURCE</a></code> | <code>string</code> | Condition key: events:SystemMetadata/AwsSource (String). |
+| <code><a href="#@cdk_utils/iam.events.EventsConditions.property.SYSTEM_METADATA_CONTENT_TYPE">SYSTEM_METADATA_CONTENT_TYPE</a></code> | <code>string</code> | Condition key: events:SystemMetadata/ContentType (String). |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.property.TagResourceConditionKeys">TagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TagResource action. |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.property.TARGET_ARN">TARGET_ARN</a></code> | <code>string</code> | Condition key: events:TargetArn (ArrayOfARN). |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.property.UntagResourceConditionKeys">UntagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UntagResource action. |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.property.UpdateEndpointConditionKeys">UpdateEndpointConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateEndpoint action. |
+| <code><a href="#@cdk_utils/iam.events.EventsConditions.property.UpdateEventSourceConditionKeys">UpdateEventSourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateEventSource action. |
+| <code><a href="#@cdk_utils/iam.events.EventsConditions.property.UpdateSubscriberConditionKeys">UpdateSubscriberConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateSubscriber action. |
+
+---
+
+##### `actionGetResourcePolicyConditionKeys`<sup>Required</sup> <a name="actionGetResourcePolicyConditionKeys" id="@cdk_utils/iam.events.EventsConditions.property.actionGetResourcePolicyConditionKeys"></a>
+
+```typescript
+public readonly actionGetResourcePolicyConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetResourcePolicy action.
 
 ---
 
@@ -3350,6 +4226,18 @@ Condition key: aws:TagKeys (ArrayOfString).
 
 ---
 
+##### `CONTENT_FILTER_PRESENT`<sup>Required</sup> <a name="CONTENT_FILTER_PRESENT" id="@cdk_utils/iam.events.EventsConditions.property.CONTENT_FILTER_PRESENT"></a>
+
+```typescript
+public readonly CONTENT_FILTER_PRESENT: string;
+```
+
+- *Type:* string
+
+Condition key: events:ContentFilterPresent (Bool).
+
+---
+
 ##### `CreateEndpointConditionKeys`<sup>Required</sup> <a name="CreateEndpointConditionKeys" id="@cdk_utils/iam.events.EventsConditions.property.CreateEndpointConditionKeys"></a>
 
 ```typescript
@@ -3374,6 +4262,30 @@ Condition keys applicable to the CreateEventBus action.
 
 ---
 
+##### `CreateEventSourceConditionKeys`<sup>Required</sup> <a name="CreateEventSourceConditionKeys" id="@cdk_utils/iam.events.EventsConditions.property.CreateEventSourceConditionKeys"></a>
+
+```typescript
+public readonly CreateEventSourceConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateEventSource action.
+
+---
+
+##### `CreateSubscriberConditionKeys`<sup>Required</sup> <a name="CreateSubscriberConditionKeys" id="@cdk_utils/iam.events.EventsConditions.property.CreateSubscriberConditionKeys"></a>
+
+```typescript
+public readonly CreateSubscriberConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateSubscriber action.
+
+---
+
 ##### `CREATOR_ACCOUNT`<sup>Required</sup> <a name="CREATOR_ACCOUNT" id="@cdk_utils/iam.events.EventsConditions.property.CREATOR_ACCOUNT"></a>
 
 ```typescript
@@ -3383,6 +4295,18 @@ public readonly CREATOR_ACCOUNT: string;
 - *Type:* string
 
 Condition key: events:creatorAccount (String).
+
+---
+
+##### `DeleteResourcePolicyConditionKeys`<sup>Required</sup> <a name="DeleteResourcePolicyConditionKeys" id="@cdk_utils/iam.events.EventsConditions.property.DeleteResourcePolicyConditionKeys"></a>
+
+```typescript
+public readonly DeleteResourcePolicyConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DeleteResourcePolicy action.
 
 ---
 
@@ -3542,6 +4466,42 @@ Condition key: events:ManagedBy (String).
 
 ---
 
+##### `METADATA`<sup>Required</sup> <a name="METADATA" id="@cdk_utils/iam.events.EventsConditions.property.METADATA"></a>
+
+```typescript
+public readonly METADATA: string;
+```
+
+- *Type:* string
+
+Condition key: events:Metadata/${MetadataKey} (ArrayOfString).
+
+---
+
+##### `METADATA_MATCHER`<sup>Required</sup> <a name="METADATA_MATCHER" id="@cdk_utils/iam.events.EventsConditions.property.METADATA_MATCHER"></a>
+
+```typescript
+public readonly METADATA_MATCHER: string;
+```
+
+- *Type:* string
+
+Condition key: events:Metadata/${MetadataKey}/Matcher (String).
+
+---
+
+##### `POLICY_NAME`<sup>Required</sup> <a name="POLICY_NAME" id="@cdk_utils/iam.events.EventsConditions.property.POLICY_NAME"></a>
+
+```typescript
+public readonly POLICY_NAME: string;
+```
+
+- *Type:* string
+
+Condition key: events:PolicyName (String).
+
+---
+
 ##### `PutEventsConditionKeys`<sup>Required</sup> <a name="PutEventsConditionKeys" id="@cdk_utils/iam.events.EventsConditions.property.PutEventsConditionKeys"></a>
 
 ```typescript
@@ -3551,6 +4511,30 @@ public readonly PutEventsConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the PutEvents action.
+
+---
+
+##### `PutRawEventsConditionKeys`<sup>Required</sup> <a name="PutRawEventsConditionKeys" id="@cdk_utils/iam.events.EventsConditions.property.PutRawEventsConditionKeys"></a>
+
+```typescript
+public readonly PutRawEventsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the PutRawEvents action.
+
+---
+
+##### `PutResourcePolicyConditionKeys`<sup>Required</sup> <a name="PutResourcePolicyConditionKeys" id="@cdk_utils/iam.events.EventsConditions.property.PutResourcePolicyConditionKeys"></a>
+
+```typescript
+public readonly PutResourcePolicyConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the PutResourcePolicy action.
 
 ---
 
@@ -3602,6 +4586,42 @@ Condition key: events:source (ArrayOfString).
 
 ---
 
+##### `SYSTEM_METADATA_AWS_DETAIL_TYPE`<sup>Required</sup> <a name="SYSTEM_METADATA_AWS_DETAIL_TYPE" id="@cdk_utils/iam.events.EventsConditions.property.SYSTEM_METADATA_AWS_DETAIL_TYPE"></a>
+
+```typescript
+public readonly SYSTEM_METADATA_AWS_DETAIL_TYPE: string;
+```
+
+- *Type:* string
+
+Condition key: events:SystemMetadata/AwsDetailType (String).
+
+---
+
+##### `SYSTEM_METADATA_AWS_SOURCE`<sup>Required</sup> <a name="SYSTEM_METADATA_AWS_SOURCE" id="@cdk_utils/iam.events.EventsConditions.property.SYSTEM_METADATA_AWS_SOURCE"></a>
+
+```typescript
+public readonly SYSTEM_METADATA_AWS_SOURCE: string;
+```
+
+- *Type:* string
+
+Condition key: events:SystemMetadata/AwsSource (String).
+
+---
+
+##### `SYSTEM_METADATA_CONTENT_TYPE`<sup>Required</sup> <a name="SYSTEM_METADATA_CONTENT_TYPE" id="@cdk_utils/iam.events.EventsConditions.property.SYSTEM_METADATA_CONTENT_TYPE"></a>
+
+```typescript
+public readonly SYSTEM_METADATA_CONTENT_TYPE: string;
+```
+
+- *Type:* string
+
+Condition key: events:SystemMetadata/ContentType (String).
+
+---
+
 ##### `TagResourceConditionKeys`<sup>Required</sup> <a name="TagResourceConditionKeys" id="@cdk_utils/iam.events.EventsConditions.property.TagResourceConditionKeys"></a>
 
 ```typescript
@@ -3647,6 +4667,30 @@ public readonly UpdateEndpointConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the UpdateEndpoint action.
+
+---
+
+##### `UpdateEventSourceConditionKeys`<sup>Required</sup> <a name="UpdateEventSourceConditionKeys" id="@cdk_utils/iam.events.EventsConditions.property.UpdateEventSourceConditionKeys"></a>
+
+```typescript
+public readonly UpdateEventSourceConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UpdateEventSource action.
+
+---
+
+##### `UpdateSubscriberConditionKeys`<sup>Required</sup> <a name="UpdateSubscriberConditionKeys" id="@cdk_utils/iam.events.EventsConditions.property.UpdateSubscriberConditionKeys"></a>
+
+```typescript
+public readonly UpdateSubscriberConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UpdateSubscriber action.
 
 ---
 
@@ -4447,7 +5491,9 @@ new events.EventsResources()
 | <code><a href="#@cdk_utils/iam.events.EventsResources.createSnapshot">createSnapshot</a></code> | Builds an ARN for the create-snapshot resource. |
 | <code><a href="#@cdk_utils/iam.events.EventsResources.endpoint">endpoint</a></code> | Builds an ARN for the endpoint resource. |
 | <code><a href="#@cdk_utils/iam.events.EventsResources.eventBus">eventBus</a></code> | Builds an ARN for the event-bus resource. |
+| <code><a href="#@cdk_utils/iam.events.EventsResources.eventBusv2">eventBusv2</a></code> | Builds an ARN for the event-busv2 resource. |
 | <code><a href="#@cdk_utils/iam.events.EventsResources.eventSource">eventSource</a></code> | Builds an ARN for the event-source resource. |
+| <code><a href="#@cdk_utils/iam.events.EventsResources.eventSourcev2">eventSourcev2</a></code> | Builds an ARN for the event-sourcev2 resource. |
 | <code><a href="#@cdk_utils/iam.events.EventsResources.isValidAliasArn">isValidAliasArn</a></code> | Validates whether a string is a valid ARN for the alias resource. |
 | <code><a href="#@cdk_utils/iam.events.EventsResources.isValidAPIDestinationArn">isValidAPIDestinationArn</a></code> | Validates whether a string is a valid ARN for the api-destination resource. |
 | <code><a href="#@cdk_utils/iam.events.EventsResources.isValidArchiveArn">isValidArchiveArn</a></code> | Validates whether a string is a valid ARN for the archive resource. |
@@ -4455,13 +5501,16 @@ new events.EventsResources()
 | <code><a href="#@cdk_utils/iam.events.EventsResources.isValidCreateSnapshotArn">isValidCreateSnapshotArn</a></code> | Validates whether a string is a valid ARN for the create-snapshot resource. |
 | <code><a href="#@cdk_utils/iam.events.EventsResources.isValidEndpointArn">isValidEndpointArn</a></code> | Validates whether a string is a valid ARN for the endpoint resource. |
 | <code><a href="#@cdk_utils/iam.events.EventsResources.isValidEventBusArn">isValidEventBusArn</a></code> | Validates whether a string is a valid ARN for the event-bus resource. |
+| <code><a href="#@cdk_utils/iam.events.EventsResources.isValidEventBusv2Arn">isValidEventBusv2Arn</a></code> | Validates whether a string is a valid ARN for the event-busv2 resource. |
 | <code><a href="#@cdk_utils/iam.events.EventsResources.isValidEventSourceArn">isValidEventSourceArn</a></code> | Validates whether a string is a valid ARN for the event-source resource. |
+| <code><a href="#@cdk_utils/iam.events.EventsResources.isValidEventSourcev2Arn">isValidEventSourcev2Arn</a></code> | Validates whether a string is a valid ARN for the event-sourcev2 resource. |
 | <code><a href="#@cdk_utils/iam.events.EventsResources.isValidKeyArn">isValidKeyArn</a></code> | Validates whether a string is a valid ARN for the key resource. |
 | <code><a href="#@cdk_utils/iam.events.EventsResources.isValidRebootInstanceArn">isValidRebootInstanceArn</a></code> | Validates whether a string is a valid ARN for the reboot-instance resource. |
 | <code><a href="#@cdk_utils/iam.events.EventsResources.isValidReplayArn">isValidReplayArn</a></code> | Validates whether a string is a valid ARN for the replay resource. |
 | <code><a href="#@cdk_utils/iam.events.EventsResources.isValidRuleOnCustomEventBusArn">isValidRuleOnCustomEventBusArn</a></code> | Validates whether a string is a valid ARN for the rule-on-custom-event-bus resource. |
 | <code><a href="#@cdk_utils/iam.events.EventsResources.isValidRuleOnDefaultEventBusArn">isValidRuleOnDefaultEventBusArn</a></code> | Validates whether a string is a valid ARN for the rule-on-default-event-bus resource. |
 | <code><a href="#@cdk_utils/iam.events.EventsResources.isValidStopInstanceArn">isValidStopInstanceArn</a></code> | Validates whether a string is a valid ARN for the stop-instance resource. |
+| <code><a href="#@cdk_utils/iam.events.EventsResources.isValidSubscriberArn">isValidSubscriberArn</a></code> | Validates whether a string is a valid ARN for the subscriber resource. |
 | <code><a href="#@cdk_utils/iam.events.EventsResources.isValidTerminateInstanceArn">isValidTerminateInstanceArn</a></code> | Validates whether a string is a valid ARN for the terminate-instance resource. |
 | <code><a href="#@cdk_utils/iam.events.EventsResources.key">key</a></code> | Builds an ARN for the key resource. |
 | <code><a href="#@cdk_utils/iam.events.EventsResources.parseAliasArn">parseAliasArn</a></code> | Parses a alias ARN into its components. |
@@ -4471,19 +5520,23 @@ new events.EventsResources()
 | <code><a href="#@cdk_utils/iam.events.EventsResources.parseCreateSnapshotArn">parseCreateSnapshotArn</a></code> | Parses a create-snapshot ARN into its components. |
 | <code><a href="#@cdk_utils/iam.events.EventsResources.parseEndpointArn">parseEndpointArn</a></code> | Parses a endpoint ARN into its components. |
 | <code><a href="#@cdk_utils/iam.events.EventsResources.parseEventBusArn">parseEventBusArn</a></code> | Parses a event-bus ARN into its components. |
+| <code><a href="#@cdk_utils/iam.events.EventsResources.parseEventBusv2Arn">parseEventBusv2Arn</a></code> | Parses a event-busv2 ARN into its components. |
 | <code><a href="#@cdk_utils/iam.events.EventsResources.parseEventSourceArn">parseEventSourceArn</a></code> | Parses a event-source ARN into its components. |
+| <code><a href="#@cdk_utils/iam.events.EventsResources.parseEventSourcev2Arn">parseEventSourcev2Arn</a></code> | Parses a event-sourcev2 ARN into its components. |
 | <code><a href="#@cdk_utils/iam.events.EventsResources.parseKeyArn">parseKeyArn</a></code> | Parses a key ARN into its components. |
 | <code><a href="#@cdk_utils/iam.events.EventsResources.parseRebootInstanceArn">parseRebootInstanceArn</a></code> | Parses a reboot-instance ARN into its components. |
 | <code><a href="#@cdk_utils/iam.events.EventsResources.parseReplayArn">parseReplayArn</a></code> | Parses a replay ARN into its components. |
 | <code><a href="#@cdk_utils/iam.events.EventsResources.parseRuleOnCustomEventBusArn">parseRuleOnCustomEventBusArn</a></code> | Parses a rule-on-custom-event-bus ARN into its components. |
 | <code><a href="#@cdk_utils/iam.events.EventsResources.parseRuleOnDefaultEventBusArn">parseRuleOnDefaultEventBusArn</a></code> | Parses a rule-on-default-event-bus ARN into its components. |
 | <code><a href="#@cdk_utils/iam.events.EventsResources.parseStopInstanceArn">parseStopInstanceArn</a></code> | Parses a stop-instance ARN into its components. |
+| <code><a href="#@cdk_utils/iam.events.EventsResources.parseSubscriberArn">parseSubscriberArn</a></code> | Parses a subscriber ARN into its components. |
 | <code><a href="#@cdk_utils/iam.events.EventsResources.parseTerminateInstanceArn">parseTerminateInstanceArn</a></code> | Parses a terminate-instance ARN into its components. |
 | <code><a href="#@cdk_utils/iam.events.EventsResources.rebootInstance">rebootInstance</a></code> | Builds an ARN for the reboot-instance resource. |
 | <code><a href="#@cdk_utils/iam.events.EventsResources.replay">replay</a></code> | Builds an ARN for the replay resource. |
 | <code><a href="#@cdk_utils/iam.events.EventsResources.ruleOnCustomEventBus">ruleOnCustomEventBus</a></code> | Builds an ARN for the rule-on-custom-event-bus resource. |
 | <code><a href="#@cdk_utils/iam.events.EventsResources.ruleOnDefaultEventBus">ruleOnDefaultEventBus</a></code> | Builds an ARN for the rule-on-default-event-bus resource. |
 | <code><a href="#@cdk_utils/iam.events.EventsResources.stopInstance">stopInstance</a></code> | Builds an ARN for the stop-instance resource. |
+| <code><a href="#@cdk_utils/iam.events.EventsResources.subscriber">subscriber</a></code> | Builds an ARN for the subscriber resource. |
 | <code><a href="#@cdk_utils/iam.events.EventsResources.terminateInstance">terminateInstance</a></code> | Builds an ARN for the terminate-instance resource. |
 
 ---
@@ -4600,6 +5653,22 @@ Builds an ARN for the event-bus resource.
 
 ---
 
+##### `eventBusv2` <a name="eventBusv2" id="@cdk_utils/iam.events.EventsResources.eventBusv2"></a>
+
+```typescript
+import { events } from '@cdk_utils/iam'
+
+events.EventsResources.eventBusv2(props: EventsEventBusv2ArnProps)
+```
+
+Builds an ARN for the event-busv2 resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.events.EventsResources.eventBusv2.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.events.EventsEventBusv2ArnProps">EventsEventBusv2ArnProps</a>
+
+---
+
 ##### `eventSource` <a name="eventSource" id="@cdk_utils/iam.events.EventsResources.eventSource"></a>
 
 ```typescript
@@ -4613,6 +5682,22 @@ Builds an ARN for the event-source resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.events.EventsResources.eventSource.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.events.EventsEventSourceArnProps">EventsEventSourceArnProps</a>
+
+---
+
+##### `eventSourcev2` <a name="eventSourcev2" id="@cdk_utils/iam.events.EventsResources.eventSourcev2"></a>
+
+```typescript
+import { events } from '@cdk_utils/iam'
+
+events.EventsResources.eventSourcev2(props: EventsEventSourcev2ArnProps)
+```
+
+Builds an ARN for the event-sourcev2 resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.events.EventsResources.eventSourcev2.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.events.EventsEventSourcev2ArnProps">EventsEventSourcev2ArnProps</a>
 
 ---
 
@@ -4728,6 +5813,22 @@ Validates whether a string is a valid ARN for the event-bus resource.
 
 ---
 
+##### `isValidEventBusv2Arn` <a name="isValidEventBusv2Arn" id="@cdk_utils/iam.events.EventsResources.isValidEventBusv2Arn"></a>
+
+```typescript
+import { events } from '@cdk_utils/iam'
+
+events.EventsResources.isValidEventBusv2Arn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the event-busv2 resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.events.EventsResources.isValidEventBusv2Arn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `isValidEventSourceArn` <a name="isValidEventSourceArn" id="@cdk_utils/iam.events.EventsResources.isValidEventSourceArn"></a>
 
 ```typescript
@@ -4739,6 +5840,22 @@ events.EventsResources.isValidEventSourceArn(arn: string)
 Validates whether a string is a valid ARN for the event-source resource.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.events.EventsResources.isValidEventSourceArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidEventSourcev2Arn` <a name="isValidEventSourcev2Arn" id="@cdk_utils/iam.events.EventsResources.isValidEventSourcev2Arn"></a>
+
+```typescript
+import { events } from '@cdk_utils/iam'
+
+events.EventsResources.isValidEventSourcev2Arn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the event-sourcev2 resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.events.EventsResources.isValidEventSourcev2Arn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -4835,6 +5952,22 @@ events.EventsResources.isValidStopInstanceArn(arn: string)
 Validates whether a string is a valid ARN for the stop-instance resource.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.events.EventsResources.isValidStopInstanceArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidSubscriberArn` <a name="isValidSubscriberArn" id="@cdk_utils/iam.events.EventsResources.isValidSubscriberArn"></a>
+
+```typescript
+import { events } from '@cdk_utils/iam'
+
+events.EventsResources.isValidSubscriberArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the subscriber resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.events.EventsResources.isValidSubscriberArn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -4984,6 +6117,22 @@ Parses a event-bus ARN into its components.
 
 ---
 
+##### `parseEventBusv2Arn` <a name="parseEventBusv2Arn" id="@cdk_utils/iam.events.EventsResources.parseEventBusv2Arn"></a>
+
+```typescript
+import { events } from '@cdk_utils/iam'
+
+events.EventsResources.parseEventBusv2Arn(arn: string)
+```
+
+Parses a event-busv2 ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.events.EventsResources.parseEventBusv2Arn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `parseEventSourceArn` <a name="parseEventSourceArn" id="@cdk_utils/iam.events.EventsResources.parseEventSourceArn"></a>
 
 ```typescript
@@ -4995,6 +6144,22 @@ events.EventsResources.parseEventSourceArn(arn: string)
 Parses a event-source ARN into its components.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.events.EventsResources.parseEventSourceArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseEventSourcev2Arn` <a name="parseEventSourcev2Arn" id="@cdk_utils/iam.events.EventsResources.parseEventSourcev2Arn"></a>
+
+```typescript
+import { events } from '@cdk_utils/iam'
+
+events.EventsResources.parseEventSourcev2Arn(arn: string)
+```
+
+Parses a event-sourcev2 ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.events.EventsResources.parseEventSourcev2Arn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -5096,6 +6261,22 @@ Parses a stop-instance ARN into its components.
 
 ---
 
+##### `parseSubscriberArn` <a name="parseSubscriberArn" id="@cdk_utils/iam.events.EventsResources.parseSubscriberArn"></a>
+
+```typescript
+import { events } from '@cdk_utils/iam'
+
+events.EventsResources.parseSubscriberArn(arn: string)
+```
+
+Parses a subscriber ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.events.EventsResources.parseSubscriberArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `parseTerminateInstanceArn` <a name="parseTerminateInstanceArn" id="@cdk_utils/iam.events.EventsResources.parseTerminateInstanceArn"></a>
 
 ```typescript
@@ -5189,6 +6370,22 @@ Builds an ARN for the stop-instance resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.events.EventsResources.stopInstance.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.events.EventsStopInstanceArnProps">EventsStopInstanceArnProps</a>
+
+---
+
+##### `subscriber` <a name="subscriber" id="@cdk_utils/iam.events.EventsResources.subscriber"></a>
+
+```typescript
+import { events } from '@cdk_utils/iam'
+
+events.EventsResources.subscriber(props: EventsSubscriberArnProps)
+```
+
+Builds an ARN for the subscriber resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.events.EventsResources.subscriber.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.events.EventsSubscriberArnProps">EventsSubscriberArnProps</a>
 
 ---
 

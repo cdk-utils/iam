@@ -365,6 +365,21 @@
       }
     },
     {
+      "Name": "ListBillingViewSegments",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ListBillingViews",
       "Annotations": {
         "Properties": {
@@ -824,6 +839,22 @@
         {
           "Name": "billing",
           "Method": "get_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListBillingViewSegments",
+      "AuthorizedActions": [
+        {
+          "Name": "ListBillingViewSegments",
+          "Service": "billing"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "billing",
+          "Method": "list_billing_view_segments",
           "Package": "Boto3"
         }
       ]

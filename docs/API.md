@@ -287,6 +287,7 @@ The following submodules are available:
 - [neptune_graph](./neptune_graph.md)
 - [network_firewall](./network_firewall.md)
 - [network_security_director](./network_security_director.md)
+- [network_security_manager](./network_security_manager.md)
 - [networkflowmonitor](./networkflowmonitor.md)
 - [networkmanager](./networkmanager.md)
 - [networkmanager_chat](./networkmanager_chat.md)

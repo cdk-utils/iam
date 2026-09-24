@@ -625,7 +625,6 @@ export class ObservabilityadminOperations {
 	static readonly CreateTelemetryPipeline: string[] = [
 		"observabilityadmin:CreateTelemetryPipeline",
 		"iam:PassRole",
-		"cloudwatch:PutPipelineRule",
 		"observabilityadmin:TagResource",
 	];
 	/** IAM actions required for the CreateTelemetryRule API call. */
@@ -652,7 +651,6 @@ export class ObservabilityadminOperations {
 	];
 	/** IAM actions required for the DeleteTelemetryPipeline API call. */
 	static readonly DeleteTelemetryPipeline: string[] = [
-		"cloudwatch:DeletePipelineRule",
 		"observabilityadmin:DeleteTelemetryPipeline",
 	];
 	/** IAM actions required for the DeleteTelemetryRule API call. */
@@ -781,7 +779,6 @@ export class ObservabilityadminOperations {
 	/** IAM actions required for the UpdateTelemetryPipeline API call. */
 	static readonly UpdateTelemetryPipeline: string[] = [
 		"iam:PassRole",
-		"cloudwatch:PutPipelineRule",
 		"observabilityadmin:UpdateTelemetryPipeline",
 	];
 	/** IAM actions required for the UpdateTelemetryRule API call. */

@@ -106,6 +106,9 @@ export class KinesisActions {
 	static readonly UpdateShardCount = "kinesis:UpdateShardCount";
 	/** [Write] kinesis:UpdateStreamMode */
 	static readonly UpdateStreamMode = "kinesis:UpdateStreamMode";
+	/** [Write] kinesis:UpdateStreamRecordDistributionStrategy */
+	static readonly UpdateStreamRecordDistributionStrategy =
+		"kinesis:UpdateStreamRecordDistributionStrategy";
 	/** [Write] kinesis:UpdateStreamWarmThroughput */
 	static readonly UpdateStreamWarmThroughput =
 		"kinesis:UpdateStreamWarmThroughput";
@@ -151,6 +154,7 @@ export class KinesisActions {
 		KinesisActions.UpdateMaxRecordSize,
 		KinesisActions.UpdateShardCount,
 		KinesisActions.UpdateStreamMode,
+		KinesisActions.UpdateStreamRecordDistributionStrategy,
 		KinesisActions.UpdateStreamWarmThroughput,
 	];
 	/** All list-level actions. */
@@ -570,6 +574,10 @@ export class KinesisOperations {
 	static readonly UpdateShardCount: string[] = ["kinesis:UpdateShardCount"];
 	/** IAM actions required for the UpdateStreamMode API call. */
 	static readonly UpdateStreamMode: string[] = ["kinesis:UpdateStreamMode"];
+	/** IAM actions required for the UpdateStreamRecordDistributionStrategy API call. */
+	static readonly UpdateStreamRecordDistributionStrategy: string[] = [
+		"kinesis:UpdateStreamRecordDistributionStrategy",
+	];
 	/** IAM actions required for the UpdateStreamWarmThroughput API call. */
 	static readonly UpdateStreamWarmThroughput: string[] = [
 		"kinesis:UpdateStreamWarmThroughput",

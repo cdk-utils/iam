@@ -507,8 +507,8 @@
         }
       },
       "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
       }
     },
     {
@@ -1043,6 +1043,29 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateStreamRecordDistributionStrategy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -1817,6 +1840,22 @@
         {
           "Name": "kinesis",
           "Method": "update_stream_mode",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateStreamRecordDistributionStrategy",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateStreamRecordDistributionStrategy",
+          "Service": "kinesis"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesis",
+          "Method": "update_stream_record_distribution_strategy",
           "Package": "Boto3"
         }
       ]
