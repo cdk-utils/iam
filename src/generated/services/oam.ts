@@ -206,35 +206,52 @@ export class OamResources {
  */
 export class OamOperations {
 	/** IAM actions required for the CreateLink API call. */
-	static readonly CreateLink: string[] = [];
+	static readonly CreateLink: string[] = [
+		"oam:CreateLink",
+		"application-signals:Link",
+		"applicationinsights:Link",
+		"cloudwatch:Link",
+		"internetmonitor:Link",
+		"logs:Link",
+		"xray:Link",
+		"oam:TagResource",
+	];
 	/** IAM actions required for the CreateSink API call. */
-	static readonly CreateSink: string[] = [];
+	static readonly CreateSink: string[] = ["oam:CreateSink", "oam:TagResource"];
 	/** IAM actions required for the DeleteLink API call. */
-	static readonly DeleteLink: string[] = [];
+	static readonly DeleteLink: string[] = ["oam:DeleteLink"];
 	/** IAM actions required for the DeleteSink API call. */
-	static readonly DeleteSink: string[] = [];
+	static readonly DeleteSink: string[] = ["oam:DeleteSink"];
 	/** IAM actions required for the GetLink API call. */
-	static readonly opGetLink: string[] = [];
+	static readonly opGetLink: string[] = ["oam:GetLink"];
 	/** IAM actions required for the GetSink API call. */
-	static readonly opGetSink: string[] = [];
+	static readonly opGetSink: string[] = ["oam:GetSink"];
 	/** IAM actions required for the GetSinkPolicy API call. */
-	static readonly opGetSinkPolicy: string[] = [];
+	static readonly opGetSinkPolicy: string[] = ["oam:GetSinkPolicy"];
 	/** IAM actions required for the ListAttachedLinks API call. */
-	static readonly ListAttachedLinks: string[] = [];
+	static readonly ListAttachedLinks: string[] = ["oam:ListAttachedLinks"];
 	/** IAM actions required for the ListLinks API call. */
-	static readonly ListLinks: string[] = [];
+	static readonly ListLinks: string[] = ["oam:ListLinks"];
 	/** IAM actions required for the ListSinks API call. */
-	static readonly ListSinks: string[] = [];
+	static readonly ListSinks: string[] = ["oam:ListSinks"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly ListTagsForResource: string[] = [];
+	static readonly ListTagsForResource: string[] = ["oam:ListTagsForResource"];
 	/** IAM actions required for the PutSinkPolicy API call. */
-	static readonly PutSinkPolicy: string[] = [];
+	static readonly PutSinkPolicy: string[] = ["oam:PutSinkPolicy"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TagResource: string[] = [];
+	static readonly TagResource: string[] = ["oam:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UntagResource: string[] = [];
+	static readonly UntagResource: string[] = ["oam:UntagResource"];
 	/** IAM actions required for the UpdateLink API call. */
-	static readonly UpdateLink: string[] = [];
+	static readonly UpdateLink: string[] = [
+		"application-signals:Link",
+		"applicationinsights:Link",
+		"cloudwatch:Link",
+		"internetmonitor:Link",
+		"logs:Link",
+		"xray:Link",
+		"oam:UpdateLink",
+	];
 }
 
 /**

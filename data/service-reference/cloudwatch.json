@@ -3167,6 +3167,10 @@
         {
           "Name": "CreateDomainAccessGrantForOrganization",
           "Service": "cloudwatch"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "cloudwatch"
         }
       ],
       "SDK": [
@@ -3182,6 +3186,19 @@
       "AuthorizedActions": [
         {
           "Name": "CreateDomainForOrganization",
+          "Service": "cloudwatch"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "cloudwatch.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
           "Service": "cloudwatch"
         }
       ],

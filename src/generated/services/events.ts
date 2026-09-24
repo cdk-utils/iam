@@ -29,8 +29,12 @@ export class EventsActions {
 	static readonly CreateEndpoint = "events:CreateEndpoint";
 	/** [Write] events:CreateEventBus */
 	static readonly CreateEventBus = "events:CreateEventBus";
+	/** [Write] events:CreateEventSource */
+	static readonly CreateEventSource = "events:CreateEventSource";
 	/** [Write] events:CreatePartnerEventSource */
 	static readonly CreatePartnerEventSource = "events:CreatePartnerEventSource";
+	/** [Write] events:CreateSubscriber */
+	static readonly CreateSubscriber = "events:CreateSubscriber";
 	/** [Write] events:DeactivateEventSource */
 	static readonly DeactivateEventSource = "events:DeactivateEventSource";
 	/** [Write] events:DeauthorizeConnection */
@@ -45,10 +49,16 @@ export class EventsActions {
 	static readonly DeleteEndpoint = "events:DeleteEndpoint";
 	/** [Write] events:DeleteEventBus */
 	static readonly DeleteEventBus = "events:DeleteEventBus";
+	/** [Write] events:DeleteEventSource */
+	static readonly DeleteEventSource = "events:DeleteEventSource";
 	/** [Write] events:DeletePartnerEventSource */
 	static readonly DeletePartnerEventSource = "events:DeletePartnerEventSource";
+	/** [PermissionManagement] events:DeleteResourcePolicy */
+	static readonly DeleteResourcePolicy = "events:DeleteResourcePolicy";
 	/** [Write] events:DeleteRule */
 	static readonly DeleteRule = "events:DeleteRule";
+	/** [Write] events:DeleteSubscriber */
+	static readonly DeleteSubscriber = "events:DeleteSubscriber";
 	/** [Read] events:DescribeApiDestination */
 	static readonly DescribeApiDestination = "events:DescribeApiDestination";
 	/** [Read] events:DescribeArchive */
@@ -68,10 +78,14 @@ export class EventsActions {
 	static readonly DescribeReplay = "events:DescribeReplay";
 	/** [Read] events:DescribeRule */
 	static readonly DescribeRule = "events:DescribeRule";
+	/** [Read] events:DescribeSubscriber */
+	static readonly DescribeSubscriber = "events:DescribeSubscriber";
 	/** [Write] events:DisableRule */
 	static readonly DisableRule = "events:DisableRule";
 	/** [Write] events:EnableRule */
 	static readonly EnableRule = "events:EnableRule";
+	/** [Read] events:GetResourcePolicy */
+	static readonly actionGetResourcePolicy = "events:GetResourcePolicy";
 	/** [Write] events:InvokeApiDestination */
 	static readonly InvokeApiDestination = "events:InvokeApiDestination";
 	/** [List] events:ListApiDestinations */
@@ -93,10 +107,14 @@ export class EventsActions {
 	static readonly ListPartnerEventSources = "events:ListPartnerEventSources";
 	/** [List] events:ListReplays */
 	static readonly ListReplays = "events:ListReplays";
+	/** [List] events:ListResourcePolicies */
+	static readonly ListResourcePolicies = "events:ListResourcePolicies";
 	/** [List] events:ListRuleNamesByTarget */
 	static readonly ListRuleNamesByTarget = "events:ListRuleNamesByTarget";
 	/** [List] events:ListRules */
 	static readonly ListRules = "events:ListRules";
+	/** [List] events:ListSubscribers */
+	static readonly ListSubscribers = "events:ListSubscribers";
 	/** [List] events:ListTagsForResource */
 	static readonly ListTagsForResource = "events:ListTagsForResource";
 	/** [List] events:ListTargetsByRule */
@@ -107,6 +125,10 @@ export class EventsActions {
 	static readonly PutPartnerEvents = "events:PutPartnerEvents";
 	/** [PermissionManagement] events:PutPermission */
 	static readonly PutPermission = "events:PutPermission";
+	/** [Write] events:PutRawEvents */
+	static readonly PutRawEvents = "events:PutRawEvents";
+	/** [PermissionManagement] events:PutResourcePolicy */
+	static readonly PutResourcePolicy = "events:PutResourcePolicy";
 	/** [Write] events:PutRule */
 	static readonly PutRule = "events:PutRule";
 	/** [Write] events:PutTargets */
@@ -118,6 +140,8 @@ export class EventsActions {
 	/** [Write] events:RetrieveConnectionCredentials */
 	static readonly RetrieveConnectionCredentials =
 		"events:RetrieveConnectionCredentials";
+	/** [Write] events:RevokeResource */
+	static readonly RevokeResource = "events:RevokeResource";
 	/** [Write] events:StartReplay */
 	static readonly StartReplay = "events:StartReplay";
 	/** [Tagging] events:TagResource */
@@ -136,6 +160,10 @@ export class EventsActions {
 	static readonly UpdateEndpoint = "events:UpdateEndpoint";
 	/** [Write] events:UpdateEventBus */
 	static readonly UpdateEventBus = "events:UpdateEventBus";
+	/** [Write] events:UpdateEventSource */
+	static readonly UpdateEventSource = "events:UpdateEventSource";
+	/** [Write] events:UpdateSubscriber */
+	static readonly UpdateSubscriber = "events:UpdateSubscriber";
 
 	/** All read-level actions. */
 	static readonly AllReadActions: string[] = [
@@ -148,6 +176,8 @@ export class EventsActions {
 		EventsActions.DescribePartnerEventSource,
 		EventsActions.DescribeReplay,
 		EventsActions.DescribeRule,
+		EventsActions.DescribeSubscriber,
+		EventsActions.actionGetResourcePolicy,
 		EventsActions.TestEventPattern,
 	];
 	/** All write-level actions. */
@@ -160,7 +190,9 @@ export class EventsActions {
 		EventsActions.CreateConnection,
 		EventsActions.CreateEndpoint,
 		EventsActions.CreateEventBus,
+		EventsActions.CreateEventSource,
 		EventsActions.CreatePartnerEventSource,
+		EventsActions.CreateSubscriber,
 		EventsActions.DeactivateEventSource,
 		EventsActions.DeauthorizeConnection,
 		EventsActions.DeleteApiDestination,
@@ -168,23 +200,29 @@ export class EventsActions {
 		EventsActions.DeleteConnection,
 		EventsActions.DeleteEndpoint,
 		EventsActions.DeleteEventBus,
+		EventsActions.DeleteEventSource,
 		EventsActions.DeletePartnerEventSource,
 		EventsActions.DeleteRule,
+		EventsActions.DeleteSubscriber,
 		EventsActions.DisableRule,
 		EventsActions.EnableRule,
 		EventsActions.InvokeApiDestination,
 		EventsActions.PutEvents,
 		EventsActions.PutPartnerEvents,
+		EventsActions.PutRawEvents,
 		EventsActions.PutRule,
 		EventsActions.PutTargets,
 		EventsActions.RemoveTargets,
 		EventsActions.RetrieveConnectionCredentials,
+		EventsActions.RevokeResource,
 		EventsActions.StartReplay,
 		EventsActions.UpdateApiDestination,
 		EventsActions.UpdateArchive,
 		EventsActions.UpdateConnection,
 		EventsActions.UpdateEndpoint,
 		EventsActions.UpdateEventBus,
+		EventsActions.UpdateEventSource,
+		EventsActions.UpdateSubscriber,
 	];
 	/** All list-level actions. */
 	static readonly AllListActions: string[] = [
@@ -197,14 +235,18 @@ export class EventsActions {
 		EventsActions.ListPartnerEventSourceAccounts,
 		EventsActions.ListPartnerEventSources,
 		EventsActions.ListReplays,
+		EventsActions.ListResourcePolicies,
 		EventsActions.ListRuleNamesByTarget,
 		EventsActions.ListRules,
+		EventsActions.ListSubscribers,
 		EventsActions.ListTagsForResource,
 		EventsActions.ListTargetsByRule,
 	];
 	/** All permission-management-level actions. */
 	static readonly AllPermissionManagementActions: string[] = [
+		EventsActions.DeleteResourcePolicy,
 		EventsActions.PutPermission,
+		EventsActions.PutResourcePolicy,
 		EventsActions.RemovePermission,
 	];
 	/** All tagging-level actions. */
@@ -407,6 +449,38 @@ export interface EventsEventBusArnComponents {
 }
 
 /**
+ * Properties for building a event-busv2 ARN.
+ */
+export interface EventsEventBusv2ArnProps {
+	/** The EventBusName component of the ARN. */
+	readonly eventBusName: string;
+	/** The OpaqueId component of the ARN. */
+	readonly opaqueId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a event-busv2 ARN.
+ */
+export interface EventsEventBusv2ArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The EventBusName component. */
+	readonly eventBusName: string;
+	/** The OpaqueId component. */
+	readonly opaqueId: string;
+}
+
+/**
  * Properties for building a event-source ARN.
  */
 export interface EventsEventSourceArnProps {
@@ -432,6 +506,42 @@ export interface EventsEventSourceArnComponents {
 	readonly account: string;
 	/** The EventSourceName component. */
 	readonly eventSourceName: string;
+}
+
+/**
+ * Properties for building a event-sourcev2 ARN.
+ */
+export interface EventsEventSourcev2ArnProps {
+	/** The SourceType component of the ARN. */
+	readonly sourceType: string;
+	/** The EventSourceName component of the ARN. */
+	readonly eventSourceName: string;
+	/** The OpaqueId component of the ARN. */
+	readonly opaqueId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a event-sourcev2 ARN.
+ */
+export interface EventsEventSourcev2ArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SourceType component. */
+	readonly sourceType: string;
+	/** The EventSourceName component. */
+	readonly eventSourceName: string;
+	/** The OpaqueId component. */
+	readonly opaqueId: string;
 }
 
 /**
@@ -599,6 +709,38 @@ export interface EventsStopInstanceArnComponents {
 }
 
 /**
+ * Properties for building a subscriber ARN.
+ */
+export interface EventsSubscriberArnProps {
+	/** The SubscriberName component of the ARN. */
+	readonly subscriberName: string;
+	/** The OpaqueId component of the ARN. */
+	readonly opaqueId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a subscriber ARN.
+ */
+export interface EventsSubscriberArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SubscriberName component. */
+	readonly subscriberName: string;
+	/** The OpaqueId component. */
+	readonly opaqueId: string;
+}
+
+/**
  * Properties for building a terminate-instance ARN.
  */
 export interface EventsTerminateInstanceArnProps {
@@ -636,8 +778,12 @@ const EndpointArnRegex =
 	/^arn:(?<partition>[^:]+):events:(?<region>[^:]*):(?<account>[^:]*):endpoint\/(?<endpointName>[^:/?]+)$/;
 const EventBusArnRegex =
 	/^arn:(?<partition>[^:]+):events:(?<region>[^:]*):(?<account>[^:]*):event-bus\/(?<eventBusName>[^:/?]+)$/;
+const EventBusv2ArnRegex =
+	/^arn:(?<partition>[^:]+):events:(?<region>[^:]*):(?<account>[^:]*):event-busv2\/(?<eventBusName>[^:/?]+)\/(?<opaqueId>[^:/?]+)$/;
 const EventSourceArnRegex =
 	/^arn:(?<partition>[^:]+):events:(?<region>[^:]*)::event-source\/(?<eventSourceName>[^:/?]+)$/;
+const EventSourcev2ArnRegex =
+	/^arn:(?<partition>[^:]+):events:(?<region>[^:]*):(?<account>[^:]*):event-sourcev2\/(?<sourceType>[^:/?]+)\/(?<eventSourceName>[^:/?]+)\/(?<opaqueId>[^:/?]+)$/;
 const KeyArnRegex =
 	/^arn:(?<partition>[^:]+):kms:(?<region>[^:]*):(?<account>[^:]*):key\/(?<keyId>[^:/?]+)$/;
 const RebootInstanceArnRegex =
@@ -650,6 +796,8 @@ const RuleOnDefaultEventBusArnRegex =
 	/^arn:(?<partition>[^:]+):events:(?<region>[^:]*):(?<account>[^:]*):rule\/(?<ruleName>[^:/?]+)$/;
 const StopInstanceArnRegex =
 	/^arn:(?<partition>[^:]+):events:(?<region>[^:]*):(?<account>[^:]*):target\/stop-instance$/;
+const SubscriberArnRegex =
+	/^arn:(?<partition>[^:]+):events:(?<region>[^:]*):(?<account>[^:]*):subscriber\/(?<subscriberName>[^:/?]+)\/(?<opaqueId>[^:/?]+)$/;
 const TerminateInstanceArnRegex =
 	/^arn:(?<partition>[^:]+):events:(?<region>[^:]*):(?<account>[^:]*):target\/terminate-instance$/;
 
@@ -878,6 +1026,38 @@ export class EventsResources {
 	}
 
 	/**
+	 * Builds an ARN for the event-busv2 resource.
+	 */
+	static eventBusv2(props: EventsEventBusv2ArnProps): string {
+		return `arn:${props.partition ?? "aws"}:events:${props.region ?? "*"}:${props.account ?? "*"}:event-busv2/${props.eventBusName}/${props.opaqueId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the event-busv2 resource.
+	 */
+	static isValidEventBusv2Arn(arn: string): boolean {
+		return EventBusv2ArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a event-busv2 ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseEventBusv2Arn(arn: string): EventsEventBusv2ArnComponents {
+		const match = EventBusv2ArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid event-busv2 ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			eventBusName: match.groups!.eventBusName,
+			opaqueId: match.groups!.opaqueId,
+		};
+	}
+
+	/**
 	 * Builds an ARN for the event-source resource.
 	 */
 	static eventSource(props: EventsEventSourceArnProps): string {
@@ -905,6 +1085,39 @@ export class EventsResources {
 			region: match.groups.region,
 			account: match.groups.account,
 			eventSourceName: match.groups!.eventSourceName,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the event-sourcev2 resource.
+	 */
+	static eventSourcev2(props: EventsEventSourcev2ArnProps): string {
+		return `arn:${props.partition ?? "aws"}:events:${props.region ?? "*"}:${props.account ?? "*"}:event-sourcev2/${props.sourceType}/${props.eventSourceName}/${props.opaqueId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the event-sourcev2 resource.
+	 */
+	static isValidEventSourcev2Arn(arn: string): boolean {
+		return EventSourcev2ArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a event-sourcev2 ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseEventSourcev2Arn(arn: string): EventsEventSourcev2ArnComponents {
+		const match = EventSourcev2ArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid event-sourcev2 ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			sourceType: match.groups!.sourceType,
+			eventSourceName: match.groups!.eventSourceName,
+			opaqueId: match.groups!.opaqueId,
 		};
 	}
 
@@ -1100,6 +1313,38 @@ export class EventsResources {
 			partition: match.groups.partition,
 			region: match.groups.region,
 			account: match.groups.account,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the subscriber resource.
+	 */
+	static subscriber(props: EventsSubscriberArnProps): string {
+		return `arn:${props.partition ?? "aws"}:events:${props.region ?? "*"}:${props.account ?? "*"}:subscriber/${props.subscriberName}/${props.opaqueId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the subscriber resource.
+	 */
+	static isValidSubscriberArn(arn: string): boolean {
+		return SubscriberArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a subscriber ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseSubscriberArn(arn: string): EventsSubscriberArnComponents {
+		const match = SubscriberArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid subscriber ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			subscriberName: match.groups!.subscriberName,
+			opaqueId: match.groups!.opaqueId,
 		};
 	}
 
@@ -1314,6 +1559,24 @@ export class EventsConditions {
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
+	/** Condition keys applicable to the CreateEventSource action. */
+	static readonly CreateEventSourceConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+		"events:source",
+	];
+	/** Condition keys applicable to the CreateSubscriber action. */
+	static readonly CreateSubscriberConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+		"events:ContentFilterPresent",
+		"events:Metadata/${MetadataKey}",
+		"events:Metadata/${MetadataKey}/Matcher",
+	];
+	/** Condition keys applicable to the DeleteResourcePolicy action. */
+	static readonly DeleteResourcePolicyConditionKeys: string[] = [
+		"events:PolicyName",
+	];
 	/** Condition keys applicable to the DeleteRule action. */
 	static readonly DeleteRuleConditionKeys: string[] = [
 		"events:ManagedBy",
@@ -1333,6 +1596,10 @@ export class EventsConditions {
 		"events:ManagedBy",
 		"events:creatorAccount",
 	];
+	/** Condition keys applicable to the GetResourcePolicy action. */
+	static readonly actionGetResourcePolicyConditionKeys: string[] = [
+		"events:PolicyName",
+	];
 	/** Condition keys applicable to the ListTagsForResource action. */
 	static readonly ListTagsForResourceConditionKeys: string[] = [
 		"events:creatorAccount",
@@ -1343,9 +1610,24 @@ export class EventsConditions {
 	];
 	/** Condition keys applicable to the PutEvents action. */
 	static readonly PutEventsConditionKeys: string[] = [
+		"events:SystemMetadata/AwsDetailType",
+		"events:SystemMetadata/AwsSource",
+		"events:SystemMetadata/ContentType",
 		"events:detail-type",
 		"events:eventBusInvocation",
 		"events:source",
+	];
+	/** Condition keys applicable to the PutRawEvents action. */
+	static readonly PutRawEventsConditionKeys: string[] = [
+		"events:Metadata/${MetadataKey}",
+		"events:SystemMetadata/AwsDetailType",
+		"events:SystemMetadata/AwsSource",
+		"events:SystemMetadata/ContentType",
+		"events:eventBusInvocation",
+	];
+	/** Condition keys applicable to the PutResourcePolicy action. */
+	static readonly PutResourcePolicyConditionKeys: string[] = [
+		"events:PolicyName",
 	];
 	/** Condition keys applicable to the PutRule action. */
 	static readonly PutRuleConditionKeys: string[] = [
@@ -1385,6 +1667,14 @@ export class EventsConditions {
 	static readonly UpdateEndpointConditionKeys: string[] = [
 		"events:EventBusArn",
 	];
+	/** Condition keys applicable to the UpdateEventSource action. */
+	static readonly UpdateEventSourceConditionKeys: string[] = ["events:source"];
+	/** Condition keys applicable to the UpdateSubscriber action. */
+	static readonly UpdateSubscriberConditionKeys: string[] = [
+		"events:ContentFilterPresent",
+		"events:Metadata/${MetadataKey}",
+		"events:Metadata/${MetadataKey}/Matcher",
+	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
 	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
@@ -1392,10 +1682,27 @@ export class EventsConditions {
 	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
 	static readonly AWS_TAG_KEYS = "aws:TagKeys";
+	/** Condition key: events:ContentFilterPresent (Bool) */
+	static readonly CONTENT_FILTER_PRESENT = "events:ContentFilterPresent";
 	/** Condition key: events:EventBusArn (ArrayOfARN) */
 	static readonly EVENT_BUS_ARN = "events:EventBusArn";
 	/** Condition key: events:ManagedBy (String) */
 	static readonly MANAGED_BY = "events:ManagedBy";
+	/** Condition key: events:Metadata/${MetadataKey} (ArrayOfString) */
+	static readonly METADATA = "events:Metadata/${MetadataKey}";
+	/** Condition key: events:Metadata/${MetadataKey}/Matcher (String) */
+	static readonly METADATA_MATCHER = "events:Metadata/${MetadataKey}/Matcher";
+	/** Condition key: events:PolicyName (String) */
+	static readonly POLICY_NAME = "events:PolicyName";
+	/** Condition key: events:SystemMetadata/AwsDetailType (String) */
+	static readonly SYSTEM_METADATA_AWS_DETAIL_TYPE =
+		"events:SystemMetadata/AwsDetailType";
+	/** Condition key: events:SystemMetadata/AwsSource (String) */
+	static readonly SYSTEM_METADATA_AWS_SOURCE =
+		"events:SystemMetadata/AwsSource";
+	/** Condition key: events:SystemMetadata/ContentType (String) */
+	static readonly SYSTEM_METADATA_CONTENT_TYPE =
+		"events:SystemMetadata/ContentType";
 	/** Condition key: events:TargetArn (ArrayOfARN) */
 	static readonly TARGET_ARN = "events:TargetArn";
 	/** Condition key: events:creatorAccount (String) */
@@ -1436,6 +1743,15 @@ export class EventsConditions {
 	}
 
 	/**
+	 * Generates a condition block for `events:ContentFilterPresent`.
+	 */
+	static contentFilterPresent(
+		value: boolean,
+	): Record<string, Record<string, boolean>> {
+		return { Bool: { "events:ContentFilterPresent": value } };
+	}
+
+	/**
 	 * Generates a condition block for `events:EventBusArn`.
 	 */
 	static eventBusARN(
@@ -1449,6 +1765,60 @@ export class EventsConditions {
 	 */
 	static managedBy(value: string): Record<string, Record<string, string>> {
 		return { StringEquals: { "events:ManagedBy": value } };
+	}
+
+	/**
+	 * Generates a condition block for `events:Metadata/${MetadataKey}`.
+	 */
+	static metadata(values: string[]): Record<string, Record<string, string[]>> {
+		return {
+			"ForAllValues:StringEquals": { "events:Metadata/${MetadataKey}": values },
+		};
+	}
+
+	/**
+	 * Generates a condition block for `events:Metadata/${MetadataKey}/Matcher`.
+	 */
+	static metadataMatcher(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return {
+			StringEquals: { "events:Metadata/${MetadataKey}/Matcher": value },
+		};
+	}
+
+	/**
+	 * Generates a condition block for `events:PolicyName`.
+	 */
+	static policyName(value: string): Record<string, Record<string, string>> {
+		return { StringEquals: { "events:PolicyName": value } };
+	}
+
+	/**
+	 * Generates a condition block for `events:SystemMetadata/AwsDetailType`.
+	 */
+	static systemMetadataAWSDetailType(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "events:SystemMetadata/AwsDetailType": value } };
+	}
+
+	/**
+	 * Generates a condition block for `events:SystemMetadata/AwsSource`.
+	 */
+	static systemMetadataAWSSource(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "events:SystemMetadata/AwsSource": value } };
+	}
+
+	/**
+	 * Generates a condition block for `events:SystemMetadata/ContentType`.
+	 */
+	static systemMetadataContentType(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "events:SystemMetadata/ContentType": value } };
 	}
 
 	/**

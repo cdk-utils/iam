@@ -750,6 +750,7 @@ new kinesis.KinesisActions()
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.UpdateMaxRecordSize">UpdateMaxRecordSize</a></code> | <code>string</code> | [Write] kinesis:UpdateMaxRecordSize. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.UpdateShardCount">UpdateShardCount</a></code> | <code>string</code> | [Write] kinesis:UpdateShardCount. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.UpdateStreamMode">UpdateStreamMode</a></code> | <code>string</code> | [Write] kinesis:UpdateStreamMode. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.UpdateStreamRecordDistributionStrategy">UpdateStreamRecordDistributionStrategy</a></code> | <code>string</code> | [Write] kinesis:UpdateStreamRecordDistributionStrategy. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.UpdateStreamWarmThroughput">UpdateStreamWarmThroughput</a></code> | <code>string</code> | [Write] kinesis:UpdateStreamWarmThroughput. |
 
 ---
@@ -1366,6 +1367,18 @@ public readonly UpdateStreamMode: string;
 
 ---
 
+##### `UpdateStreamRecordDistributionStrategy`<sup>Required</sup> <a name="UpdateStreamRecordDistributionStrategy" id="@cdk_utils/iam.kinesis.KinesisActions.property.UpdateStreamRecordDistributionStrategy"></a>
+
+```typescript
+public readonly UpdateStreamRecordDistributionStrategy: string;
+```
+
+- *Type:* string
+
+[Write] kinesis:UpdateStreamRecordDistributionStrategy.
+
+---
+
 ##### `UpdateStreamWarmThroughput`<sup>Required</sup> <a name="UpdateStreamWarmThroughput" id="@cdk_utils/iam.kinesis.KinesisActions.property.UpdateStreamWarmThroughput"></a>
 
 ```typescript
@@ -1671,6 +1684,7 @@ new kinesis.KinesisOperations()
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.UpdateMaxRecordSize">UpdateMaxRecordSize</a></code> | <code>string[]</code> | IAM actions required for the UpdateMaxRecordSize API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.UpdateShardCount">UpdateShardCount</a></code> | <code>string[]</code> | IAM actions required for the UpdateShardCount API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.UpdateStreamMode">UpdateStreamMode</a></code> | <code>string[]</code> | IAM actions required for the UpdateStreamMode API call. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.UpdateStreamRecordDistributionStrategy">UpdateStreamRecordDistributionStrategy</a></code> | <code>string[]</code> | IAM actions required for the UpdateStreamRecordDistributionStrategy API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.UpdateStreamWarmThroughput">UpdateStreamWarmThroughput</a></code> | <code>string[]</code> | IAM actions required for the UpdateStreamWarmThroughput API call. |
 
 ---
@@ -2188,6 +2202,18 @@ public readonly UpdateStreamMode: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateStreamMode API call.
+
+---
+
+##### `UpdateStreamRecordDistributionStrategy`<sup>Required</sup> <a name="UpdateStreamRecordDistributionStrategy" id="@cdk_utils/iam.kinesis.KinesisOperations.property.UpdateStreamRecordDistributionStrategy"></a>
+
+```typescript
+public readonly UpdateStreamRecordDistributionStrategy: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateStreamRecordDistributionStrategy API call.
 
 ---
 

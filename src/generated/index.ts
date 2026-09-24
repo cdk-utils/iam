@@ -288,6 +288,7 @@ export * as neptune_db from "./services/neptune-db";
 export * as neptune_graph from "./services/neptune-graph";
 export * as network_firewall from "./services/network-firewall";
 export * as network_security_director from "./services/network-security-director";
+export * as network_security_manager from "./services/network-security-manager";
 export * as networkflowmonitor from "./services/networkflowmonitor";
 export * as networkmanager from "./services/networkmanager";
 export * as networkmanager_chat from "./services/networkmanager-chat";

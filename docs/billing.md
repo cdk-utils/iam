@@ -174,6 +174,7 @@ new billing.BillingActions()
 | <code><a href="#@cdk_utils/iam.billing.BillingActions.property.DeleteResourcePolicy">DeleteResourcePolicy</a></code> | <code>string</code> | [PermissionManagement] billing:DeleteResourcePolicy. |
 | <code><a href="#@cdk_utils/iam.billing.BillingActions.property.DisassociateSourceViews">DisassociateSourceViews</a></code> | <code>string</code> | [Write] billing:DisassociateSourceViews. |
 | <code><a href="#@cdk_utils/iam.billing.BillingActions.property.ListBillingViews">ListBillingViews</a></code> | <code>string</code> | [Read] billing:ListBillingViews. |
+| <code><a href="#@cdk_utils/iam.billing.BillingActions.property.ListBillingViewSegments">ListBillingViewSegments</a></code> | <code>string</code> | [List] billing:ListBillingViewSegments. |
 | <code><a href="#@cdk_utils/iam.billing.BillingActions.property.ListEnterpriseSupportLinkedAccountCharges">ListEnterpriseSupportLinkedAccountCharges</a></code> | <code>string</code> | [List] billing:ListEnterpriseSupportLinkedAccountCharges. |
 | <code><a href="#@cdk_utils/iam.billing.BillingActions.property.ListSourceViewsForBillingView">ListSourceViewsForBillingView</a></code> | <code>string</code> | [List] billing:ListSourceViewsForBillingView. |
 | <code><a href="#@cdk_utils/iam.billing.BillingActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [Read] billing:ListTagsForResource. |
@@ -487,6 +488,18 @@ public readonly ListBillingViews: string;
 - *Type:* string
 
 [Read] billing:ListBillingViews.
+
+---
+
+##### `ListBillingViewSegments`<sup>Required</sup> <a name="ListBillingViewSegments" id="@cdk_utils/iam.billing.BillingActions.property.ListBillingViewSegments"></a>
+
+```typescript
+public readonly ListBillingViewSegments: string;
+```
+
+- *Type:* string
+
+[List] billing:ListBillingViewSegments.
 
 ---
 
@@ -993,6 +1006,7 @@ new billing.BillingOperations()
 | <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.DeleteBillingView">DeleteBillingView</a></code> | <code>string[]</code> | IAM actions required for the DeleteBillingView API call. |
 | <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.DisassociateSourceViews">DisassociateSourceViews</a></code> | <code>string[]</code> | IAM actions required for the DisassociateSourceViews API call. |
 | <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.ListBillingViews">ListBillingViews</a></code> | <code>string[]</code> | IAM actions required for the ListBillingViews API call. |
+| <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.ListBillingViewSegments">ListBillingViewSegments</a></code> | <code>string[]</code> | IAM actions required for the ListBillingViewSegments API call. |
 | <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.ListEnterpriseSupportLinkedAccountCharges">ListEnterpriseSupportLinkedAccountCharges</a></code> | <code>string[]</code> | IAM actions required for the ListEnterpriseSupportLinkedAccountCharges API call. |
 | <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.ListSourceViewsForBillingView">ListSourceViewsForBillingView</a></code> | <code>string[]</code> | IAM actions required for the ListSourceViewsForBillingView API call. |
 | <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
@@ -1068,6 +1082,18 @@ public readonly ListBillingViews: string[];
 - *Type:* string[]
 
 IAM actions required for the ListBillingViews API call.
+
+---
+
+##### `ListBillingViewSegments`<sup>Required</sup> <a name="ListBillingViewSegments" id="@cdk_utils/iam.billing.BillingOperations.property.ListBillingViewSegments"></a>
+
+```typescript
+public readonly ListBillingViewSegments: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListBillingViewSegments API call.
 
 ---
 

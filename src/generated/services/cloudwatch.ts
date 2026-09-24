@@ -1730,10 +1730,13 @@ export class CloudWatchOperations {
 	/** IAM actions required for the CreateDomainAccessGrantForOrganization API call. */
 	static readonly CreateDomainAccessGrantForOrganization: string[] = [
 		"cloudwatch:CreateDomainAccessGrantForOrganization",
+		"cloudwatch:TagResource",
 	];
 	/** IAM actions required for the CreateDomainForOrganization API call. */
 	static readonly CreateDomainForOrganization: string[] = [
 		"cloudwatch:CreateDomainForOrganization",
+		"iam:PassRole",
+		"cloudwatch:TagResource",
 	];
 	/** IAM actions required for the CreateIntegration API call. */
 	static readonly CreateIntegration: string[] = [
