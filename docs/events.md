@@ -4725,7 +4725,9 @@ new events.EventsOperations()
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.CreateConnection">CreateConnection</a></code> | <code>string[]</code> | IAM actions required for the CreateConnection API call. |
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.CreateEndpoint">CreateEndpoint</a></code> | <code>string[]</code> | IAM actions required for the CreateEndpoint API call. |
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.CreateEventBus">CreateEventBus</a></code> | <code>string[]</code> | IAM actions required for the CreateEventBus API call. |
+| <code><a href="#@cdk_utils/iam.events.EventsOperations.property.CreateEventSource">CreateEventSource</a></code> | <code>string[]</code> | IAM actions required for the CreateEventSource API call. |
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.CreatePartnerEventSource">CreatePartnerEventSource</a></code> | <code>string[]</code> | IAM actions required for the CreatePartnerEventSource API call. |
+| <code><a href="#@cdk_utils/iam.events.EventsOperations.property.CreateSubscriber">CreateSubscriber</a></code> | <code>string[]</code> | IAM actions required for the CreateSubscriber API call. |
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.DeactivateEventSource">DeactivateEventSource</a></code> | <code>string[]</code> | IAM actions required for the DeactivateEventSource API call. |
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.DeauthorizeConnection">DeauthorizeConnection</a></code> | <code>string[]</code> | IAM actions required for the DeauthorizeConnection API call. |
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.DeleteApiDestination">DeleteApiDestination</a></code> | <code>string[]</code> | IAM actions required for the DeleteApiDestination API call. |
@@ -4733,8 +4735,11 @@ new events.EventsOperations()
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.DeleteConnection">DeleteConnection</a></code> | <code>string[]</code> | IAM actions required for the DeleteConnection API call. |
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.DeleteEndpoint">DeleteEndpoint</a></code> | <code>string[]</code> | IAM actions required for the DeleteEndpoint API call. |
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.DeleteEventBus">DeleteEventBus</a></code> | <code>string[]</code> | IAM actions required for the DeleteEventBus API call. |
+| <code><a href="#@cdk_utils/iam.events.EventsOperations.property.DeleteEventSource">DeleteEventSource</a></code> | <code>string[]</code> | IAM actions required for the DeleteEventSource API call. |
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.DeletePartnerEventSource">DeletePartnerEventSource</a></code> | <code>string[]</code> | IAM actions required for the DeletePartnerEventSource API call. |
+| <code><a href="#@cdk_utils/iam.events.EventsOperations.property.DeleteResourcePolicy">DeleteResourcePolicy</a></code> | <code>string[]</code> | IAM actions required for the DeleteResourcePolicy API call. |
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.DeleteRule">DeleteRule</a></code> | <code>string[]</code> | IAM actions required for the DeleteRule API call. |
+| <code><a href="#@cdk_utils/iam.events.EventsOperations.property.DeleteSubscriber">DeleteSubscriber</a></code> | <code>string[]</code> | IAM actions required for the DeleteSubscriber API call. |
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.DescribeApiDestination">DescribeApiDestination</a></code> | <code>string[]</code> | IAM actions required for the DescribeApiDestination API call. |
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.DescribeArchive">DescribeArchive</a></code> | <code>string[]</code> | IAM actions required for the DescribeArchive API call. |
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.DescribeConnection">DescribeConnection</a></code> | <code>string[]</code> | IAM actions required for the DescribeConnection API call. |
@@ -4744,6 +4749,7 @@ new events.EventsOperations()
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.DescribePartnerEventSource">DescribePartnerEventSource</a></code> | <code>string[]</code> | IAM actions required for the DescribePartnerEventSource API call. |
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.DescribeReplay">DescribeReplay</a></code> | <code>string[]</code> | IAM actions required for the DescribeReplay API call. |
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.DescribeRule">DescribeRule</a></code> | <code>string[]</code> | IAM actions required for the DescribeRule API call. |
+| <code><a href="#@cdk_utils/iam.events.EventsOperations.property.DescribeSubscriber">DescribeSubscriber</a></code> | <code>string[]</code> | IAM actions required for the DescribeSubscriber API call. |
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.DisableRule">DisableRule</a></code> | <code>string[]</code> | IAM actions required for the DisableRule API call. |
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.EnableRule">EnableRule</a></code> | <code>string[]</code> | IAM actions required for the EnableRule API call. |
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.ListApiDestinations">ListApiDestinations</a></code> | <code>string[]</code> | IAM actions required for the ListApiDestinations API call. |
@@ -4755,17 +4761,23 @@ new events.EventsOperations()
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.ListPartnerEventSourceAccounts">ListPartnerEventSourceAccounts</a></code> | <code>string[]</code> | IAM actions required for the ListPartnerEventSourceAccounts API call. |
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.ListPartnerEventSources">ListPartnerEventSources</a></code> | <code>string[]</code> | IAM actions required for the ListPartnerEventSources API call. |
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.ListReplays">ListReplays</a></code> | <code>string[]</code> | IAM actions required for the ListReplays API call. |
+| <code><a href="#@cdk_utils/iam.events.EventsOperations.property.ListResourcePolicies">ListResourcePolicies</a></code> | <code>string[]</code> | IAM actions required for the ListResourcePolicies API call. |
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.ListRuleNamesByTarget">ListRuleNamesByTarget</a></code> | <code>string[]</code> | IAM actions required for the ListRuleNamesByTarget API call. |
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.ListRules">ListRules</a></code> | <code>string[]</code> | IAM actions required for the ListRules API call. |
+| <code><a href="#@cdk_utils/iam.events.EventsOperations.property.ListSubscribers">ListSubscribers</a></code> | <code>string[]</code> | IAM actions required for the ListSubscribers API call. |
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.ListTargetsByRule">ListTargetsByRule</a></code> | <code>string[]</code> | IAM actions required for the ListTargetsByRule API call. |
+| <code><a href="#@cdk_utils/iam.events.EventsOperations.property.opGetResourcePolicy">opGetResourcePolicy</a></code> | <code>string[]</code> | IAM actions required for the GetResourcePolicy API call. |
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.PutEvents">PutEvents</a></code> | <code>string[]</code> | IAM actions required for the PutEvents API call. |
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.PutPartnerEvents">PutPartnerEvents</a></code> | <code>string[]</code> | IAM actions required for the PutPartnerEvents API call. |
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.PutPermission">PutPermission</a></code> | <code>string[]</code> | IAM actions required for the PutPermission API call. |
+| <code><a href="#@cdk_utils/iam.events.EventsOperations.property.PutRawEvents">PutRawEvents</a></code> | <code>string[]</code> | IAM actions required for the PutRawEvents API call. |
+| <code><a href="#@cdk_utils/iam.events.EventsOperations.property.PutResourcePolicy">PutResourcePolicy</a></code> | <code>string[]</code> | IAM actions required for the PutResourcePolicy API call. |
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.PutRule">PutRule</a></code> | <code>string[]</code> | IAM actions required for the PutRule API call. |
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.PutTargets">PutTargets</a></code> | <code>string[]</code> | IAM actions required for the PutTargets API call. |
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.RemovePermission">RemovePermission</a></code> | <code>string[]</code> | IAM actions required for the RemovePermission API call. |
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.RemoveTargets">RemoveTargets</a></code> | <code>string[]</code> | IAM actions required for the RemoveTargets API call. |
+| <code><a href="#@cdk_utils/iam.events.EventsOperations.property.RevokeResource">RevokeResource</a></code> | <code>string[]</code> | IAM actions required for the RevokeResource API call. |
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.StartReplay">StartReplay</a></code> | <code>string[]</code> | IAM actions required for the StartReplay API call. |
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.TestEventPattern">TestEventPattern</a></code> | <code>string[]</code> | IAM actions required for the TestEventPattern API call. |
@@ -4775,6 +4787,8 @@ new events.EventsOperations()
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.UpdateConnection">UpdateConnection</a></code> | <code>string[]</code> | IAM actions required for the UpdateConnection API call. |
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.UpdateEndpoint">UpdateEndpoint</a></code> | <code>string[]</code> | IAM actions required for the UpdateEndpoint API call. |
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.UpdateEventBus">UpdateEventBus</a></code> | <code>string[]</code> | IAM actions required for the UpdateEventBus API call. |
+| <code><a href="#@cdk_utils/iam.events.EventsOperations.property.UpdateEventSource">UpdateEventSource</a></code> | <code>string[]</code> | IAM actions required for the UpdateEventSource API call. |
+| <code><a href="#@cdk_utils/iam.events.EventsOperations.property.UpdateSubscriber">UpdateSubscriber</a></code> | <code>string[]</code> | IAM actions required for the UpdateSubscriber API call. |
 
 ---
 
@@ -4862,6 +4876,18 @@ IAM actions required for the CreateEventBus API call.
 
 ---
 
+##### `CreateEventSource`<sup>Required</sup> <a name="CreateEventSource" id="@cdk_utils/iam.events.EventsOperations.property.CreateEventSource"></a>
+
+```typescript
+public readonly CreateEventSource: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateEventSource API call.
+
+---
+
 ##### `CreatePartnerEventSource`<sup>Required</sup> <a name="CreatePartnerEventSource" id="@cdk_utils/iam.events.EventsOperations.property.CreatePartnerEventSource"></a>
 
 ```typescript
@@ -4871,6 +4897,18 @@ public readonly CreatePartnerEventSource: string[];
 - *Type:* string[]
 
 IAM actions required for the CreatePartnerEventSource API call.
+
+---
+
+##### `CreateSubscriber`<sup>Required</sup> <a name="CreateSubscriber" id="@cdk_utils/iam.events.EventsOperations.property.CreateSubscriber"></a>
+
+```typescript
+public readonly CreateSubscriber: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateSubscriber API call.
 
 ---
 
@@ -4958,6 +4996,18 @@ IAM actions required for the DeleteEventBus API call.
 
 ---
 
+##### `DeleteEventSource`<sup>Required</sup> <a name="DeleteEventSource" id="@cdk_utils/iam.events.EventsOperations.property.DeleteEventSource"></a>
+
+```typescript
+public readonly DeleteEventSource: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteEventSource API call.
+
+---
+
 ##### `DeletePartnerEventSource`<sup>Required</sup> <a name="DeletePartnerEventSource" id="@cdk_utils/iam.events.EventsOperations.property.DeletePartnerEventSource"></a>
 
 ```typescript
@@ -4970,6 +5020,18 @@ IAM actions required for the DeletePartnerEventSource API call.
 
 ---
 
+##### `DeleteResourcePolicy`<sup>Required</sup> <a name="DeleteResourcePolicy" id="@cdk_utils/iam.events.EventsOperations.property.DeleteResourcePolicy"></a>
+
+```typescript
+public readonly DeleteResourcePolicy: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteResourcePolicy API call.
+
+---
+
 ##### `DeleteRule`<sup>Required</sup> <a name="DeleteRule" id="@cdk_utils/iam.events.EventsOperations.property.DeleteRule"></a>
 
 ```typescript
@@ -4979,6 +5041,18 @@ public readonly DeleteRule: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteRule API call.
+
+---
+
+##### `DeleteSubscriber`<sup>Required</sup> <a name="DeleteSubscriber" id="@cdk_utils/iam.events.EventsOperations.property.DeleteSubscriber"></a>
+
+```typescript
+public readonly DeleteSubscriber: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteSubscriber API call.
 
 ---
 
@@ -5087,6 +5161,18 @@ public readonly DescribeRule: string[];
 - *Type:* string[]
 
 IAM actions required for the DescribeRule API call.
+
+---
+
+##### `DescribeSubscriber`<sup>Required</sup> <a name="DescribeSubscriber" id="@cdk_utils/iam.events.EventsOperations.property.DescribeSubscriber"></a>
+
+```typescript
+public readonly DescribeSubscriber: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeSubscriber API call.
 
 ---
 
@@ -5222,6 +5308,18 @@ IAM actions required for the ListReplays API call.
 
 ---
 
+##### `ListResourcePolicies`<sup>Required</sup> <a name="ListResourcePolicies" id="@cdk_utils/iam.events.EventsOperations.property.ListResourcePolicies"></a>
+
+```typescript
+public readonly ListResourcePolicies: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListResourcePolicies API call.
+
+---
+
 ##### `ListRuleNamesByTarget`<sup>Required</sup> <a name="ListRuleNamesByTarget" id="@cdk_utils/iam.events.EventsOperations.property.ListRuleNamesByTarget"></a>
 
 ```typescript
@@ -5246,6 +5344,18 @@ IAM actions required for the ListRules API call.
 
 ---
 
+##### `ListSubscribers`<sup>Required</sup> <a name="ListSubscribers" id="@cdk_utils/iam.events.EventsOperations.property.ListSubscribers"></a>
+
+```typescript
+public readonly ListSubscribers: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListSubscribers API call.
+
+---
+
 ##### `ListTagsForResource`<sup>Required</sup> <a name="ListTagsForResource" id="@cdk_utils/iam.events.EventsOperations.property.ListTagsForResource"></a>
 
 ```typescript
@@ -5267,6 +5377,18 @@ public readonly ListTargetsByRule: string[];
 - *Type:* string[]
 
 IAM actions required for the ListTargetsByRule API call.
+
+---
+
+##### `opGetResourcePolicy`<sup>Required</sup> <a name="opGetResourcePolicy" id="@cdk_utils/iam.events.EventsOperations.property.opGetResourcePolicy"></a>
+
+```typescript
+public readonly opGetResourcePolicy: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetResourcePolicy API call.
 
 ---
 
@@ -5303,6 +5425,30 @@ public readonly PutPermission: string[];
 - *Type:* string[]
 
 IAM actions required for the PutPermission API call.
+
+---
+
+##### `PutRawEvents`<sup>Required</sup> <a name="PutRawEvents" id="@cdk_utils/iam.events.EventsOperations.property.PutRawEvents"></a>
+
+```typescript
+public readonly PutRawEvents: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the PutRawEvents API call.
+
+---
+
+##### `PutResourcePolicy`<sup>Required</sup> <a name="PutResourcePolicy" id="@cdk_utils/iam.events.EventsOperations.property.PutResourcePolicy"></a>
+
+```typescript
+public readonly PutResourcePolicy: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the PutResourcePolicy API call.
 
 ---
 
@@ -5351,6 +5497,18 @@ public readonly RemoveTargets: string[];
 - *Type:* string[]
 
 IAM actions required for the RemoveTargets API call.
+
+---
+
+##### `RevokeResource`<sup>Required</sup> <a name="RevokeResource" id="@cdk_utils/iam.events.EventsOperations.property.RevokeResource"></a>
+
+```typescript
+public readonly RevokeResource: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the RevokeResource API call.
 
 ---
 
@@ -5459,6 +5617,30 @@ public readonly UpdateEventBus: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateEventBus API call.
+
+---
+
+##### `UpdateEventSource`<sup>Required</sup> <a name="UpdateEventSource" id="@cdk_utils/iam.events.EventsOperations.property.UpdateEventSource"></a>
+
+```typescript
+public readonly UpdateEventSource: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateEventSource API call.
+
+---
+
+##### `UpdateSubscriber`<sup>Required</sup> <a name="UpdateSubscriber" id="@cdk_utils/iam.events.EventsOperations.property.UpdateSubscriber"></a>
+
+```typescript
+public readonly UpdateSubscriber: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateSubscriber API call.
 
 ---
 

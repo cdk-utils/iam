@@ -35,6 +35,8 @@ export class IdentitystoreActions {
 	/** [Read] identitystore:DescribeGroupMembership */
 	static readonly DescribeGroupMembership =
 		"identitystore:DescribeGroupMembership";
+	/** [Read] identitystore:DescribeIdentityStore */
+	static readonly DescribeIdentityStore = "identitystore:DescribeIdentityStore";
 	/** [Read] identitystore:DescribeRegion */
 	static readonly DescribeRegion = "identitystore:DescribeRegion";
 	/** [Read] identitystore:DescribeUser */
@@ -55,6 +57,8 @@ export class IdentitystoreActions {
 		"identitystore:ListGroupMembershipsForMember";
 	/** [List] identitystore:ListGroups */
 	static readonly ListGroups = "identitystore:ListGroups";
+	/** [List] identitystore:ListIdentityStores */
+	static readonly ListIdentityStores = "identitystore:ListIdentityStores";
 	/** [List] identitystore:ListRegions */
 	static readonly ListRegions = "identitystore:ListRegions";
 	/** [List] identitystore:ListUsers */
@@ -74,6 +78,7 @@ export class IdentitystoreActions {
 	static readonly AllReadActions: string[] = [
 		IdentitystoreActions.DescribeGroup,
 		IdentitystoreActions.DescribeGroupMembership,
+		IdentitystoreActions.DescribeIdentityStore,
 		IdentitystoreActions.DescribeRegion,
 		IdentitystoreActions.DescribeUser,
 		IdentitystoreActions.actionGetGroupId,
@@ -103,6 +108,7 @@ export class IdentitystoreActions {
 		IdentitystoreActions.ListGroupMemberships,
 		IdentitystoreActions.ListGroupMembershipsForMember,
 		IdentitystoreActions.ListGroups,
+		IdentitystoreActions.ListIdentityStores,
 		IdentitystoreActions.ListRegions,
 		IdentitystoreActions.ListUsers,
 	];
@@ -682,6 +688,10 @@ export class IdentitystoreConditions {
 	];
 	/** Condition keys applicable to the DescribeGroupMembership action. */
 	static readonly DescribeGroupMembershipConditionKeys: string[] = [
+		"identitystore:PrimaryRegion",
+	];
+	/** Condition keys applicable to the DescribeIdentityStore action. */
+	static readonly DescribeIdentityStoreConditionKeys: string[] = [
 		"identitystore:PrimaryRegion",
 	];
 	/** Condition keys applicable to the DescribeRegion action. */

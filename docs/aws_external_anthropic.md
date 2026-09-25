@@ -182,6 +182,7 @@ new aws_external_anthropic.AWSExternalAnthropicActions()
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.actionGetBatchInference">actionGetBatchInference</a></code> | <code>string</code> | [Read] aws-external-anthropic:GetBatchInference. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.actionGetEnvironment">actionGetEnvironment</a></code> | <code>string</code> | [Read] aws-external-anthropic:GetEnvironment. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.actionGetFile">actionGetFile</a></code> | <code>string</code> | [Read] aws-external-anthropic:GetFile. |
+| <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.actionGetKey">actionGetKey</a></code> | <code>string</code> | [Read] aws-external-anthropic:GetKey. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.actionGetMemoryStore">actionGetMemoryStore</a></code> | <code>string</code> | [Read] aws-external-anthropic:GetMemoryStore. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.actionGetModel">actionGetModel</a></code> | <code>string</code> | [Read] aws-external-anthropic:GetModel. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.actionGetSession">actionGetSession</a></code> | <code>string</code> | [Read] aws-external-anthropic:GetSession. |
@@ -226,10 +227,12 @@ new aws_external_anthropic.AWSExternalAnthropicActions()
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.DeleteSkill">DeleteSkill</a></code> | <code>string</code> | [Write] aws-external-anthropic:DeleteSkill. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.DeleteVault">DeleteVault</a></code> | <code>string</code> | [Write] aws-external-anthropic:DeleteVault. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.DeleteWebhook">DeleteWebhook</a></code> | <code>string</code> | [Write] aws-external-anthropic:DeleteWebhook. |
+| <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.DisableKey">DisableKey</a></code> | <code>string</code> | [Write] aws-external-anthropic:DisableKey. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.ListAgents">ListAgents</a></code> | <code>string</code> | [List] aws-external-anthropic:ListAgents. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.ListBatchInferences">ListBatchInferences</a></code> | <code>string</code> | [List] aws-external-anthropic:ListBatchInferences. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.ListEnvironments">ListEnvironments</a></code> | <code>string</code> | [List] aws-external-anthropic:ListEnvironments. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.ListFiles">ListFiles</a></code> | <code>string</code> | [List] aws-external-anthropic:ListFiles. |
+| <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.ListKeys">ListKeys</a></code> | <code>string</code> | [List] aws-external-anthropic:ListKeys. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.ListMemoryStores">ListMemoryStores</a></code> | <code>string</code> | [List] aws-external-anthropic:ListMemoryStores. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.ListModels">ListModels</a></code> | <code>string</code> | [List] aws-external-anthropic:ListModels. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.ListSessions">ListSessions</a></code> | <code>string</code> | [List] aws-external-anthropic:ListSessions. |
@@ -240,12 +243,14 @@ new aws_external_anthropic.AWSExternalAnthropicActions()
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.ListWebhooks">ListWebhooks</a></code> | <code>string</code> | [List] aws-external-anthropic:ListWebhooks. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.ListWorkspaces">ListWorkspaces</a></code> | <code>string</code> | [List] aws-external-anthropic:ListWorkspaces. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.ProcessEnvironmentWork">ProcessEnvironmentWork</a></code> | <code>string</code> | [Write] aws-external-anthropic:ProcessEnvironmentWork. |
+| <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.RegisterKey">RegisterKey</a></code> | <code>string</code> | [Write] aws-external-anthropic:RegisterKey. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.RotateWebhookSecret">RotateWebhookSecret</a></code> | <code>string</code> | [Write] aws-external-anthropic:RotateWebhookSecret. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] aws-external-anthropic:TagResource. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] aws-external-anthropic:UntagResource. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.UpdateAgent">UpdateAgent</a></code> | <code>string</code> | [Write] aws-external-anthropic:UpdateAgent. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.UpdateEnvironment">UpdateEnvironment</a></code> | <code>string</code> | [Write] aws-external-anthropic:UpdateEnvironment. |
+| <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.UpdateKey">UpdateKey</a></code> | <code>string</code> | [Write] aws-external-anthropic:UpdateKey. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.UpdateMemoryStore">UpdateMemoryStore</a></code> | <code>string</code> | [Write] aws-external-anthropic:UpdateMemoryStore. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.UpdateSession">UpdateSession</a></code> | <code>string</code> | [Write] aws-external-anthropic:UpdateSession. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.UpdateSkill">UpdateSkill</a></code> | <code>string</code> | [Write] aws-external-anthropic:UpdateSkill. |
@@ -313,6 +318,18 @@ public readonly actionGetFile: string;
 - *Type:* string
 
 [Read] aws-external-anthropic:GetFile.
+
+---
+
+##### `actionGetKey`<sup>Required</sup> <a name="actionGetKey" id="@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.actionGetKey"></a>
+
+```typescript
+public readonly actionGetKey: string;
+```
+
+- *Type:* string
+
+[Read] aws-external-anthropic:GetKey.
 
 ---
 
@@ -844,6 +861,18 @@ public readonly DeleteWebhook: string;
 
 ---
 
+##### `DisableKey`<sup>Required</sup> <a name="DisableKey" id="@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.DisableKey"></a>
+
+```typescript
+public readonly DisableKey: string;
+```
+
+- *Type:* string
+
+[Write] aws-external-anthropic:DisableKey.
+
+---
+
 ##### `ListAgents`<sup>Required</sup> <a name="ListAgents" id="@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.ListAgents"></a>
 
 ```typescript
@@ -889,6 +918,18 @@ public readonly ListFiles: string;
 - *Type:* string
 
 [List] aws-external-anthropic:ListFiles.
+
+---
+
+##### `ListKeys`<sup>Required</sup> <a name="ListKeys" id="@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.ListKeys"></a>
+
+```typescript
+public readonly ListKeys: string;
+```
+
+- *Type:* string
+
+[List] aws-external-anthropic:ListKeys.
 
 ---
 
@@ -1012,6 +1053,18 @@ public readonly ProcessEnvironmentWork: string;
 
 ---
 
+##### `RegisterKey`<sup>Required</sup> <a name="RegisterKey" id="@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.RegisterKey"></a>
+
+```typescript
+public readonly RegisterKey: string;
+```
+
+- *Type:* string
+
+[Write] aws-external-anthropic:RegisterKey.
+
+---
+
 ##### `RotateWebhookSecret`<sup>Required</sup> <a name="RotateWebhookSecret" id="@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.RotateWebhookSecret"></a>
 
 ```typescript
@@ -1081,6 +1134,18 @@ public readonly UpdateEnvironment: string;
 - *Type:* string
 
 [Write] aws-external-anthropic:UpdateEnvironment.
+
+---
+
+##### `UpdateKey`<sup>Required</sup> <a name="UpdateKey" id="@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.UpdateKey"></a>
+
+```typescript
+public readonly UpdateKey: string;
+```
+
+- *Type:* string
+
+[Write] aws-external-anthropic:UpdateKey.
 
 ---
 
@@ -1193,6 +1258,7 @@ new aws_external_anthropic.AWSExternalAnthropicConditions()
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicConditions.bearerTokenType">bearerTokenType</a></code> | Generates a condition block for `aws-external-anthropic:BearerTokenType`. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicConditions.calledViaConsole">calledViaConsole</a></code> | Generates a condition block for `aws-external-anthropic:CalledViaConsole`. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicConditions.capability">capability</a></code> | Generates a condition block for `aws-external-anthropic:Capability`. |
+| <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicConditions.keyARN">keyARN</a></code> | Generates a condition block for `aws-external-anthropic:KeyArn`. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicConditions.requestTag">requestTag</a></code> | Generates a condition block for `aws:RequestTag/${TagKey}`. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicConditions.resourceTag">resourceTag</a></code> | Generates a condition block for `aws:ResourceTag/${TagKey}`. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicConditions.tagKeys">tagKeys</a></code> | Generates a condition block for `aws:TagKeys`. |
@@ -1242,6 +1308,22 @@ aws_external_anthropic.AWSExternalAnthropicConditions.capability(value: string)
 Generates a condition block for `aws-external-anthropic:Capability`.
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicConditions.capability.parameter.value"></a>
+
+- *Type:* string
+
+---
+
+##### `keyARN` <a name="keyARN" id="@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicConditions.keyARN"></a>
+
+```typescript
+import { aws_external_anthropic } from '@cdk_utils/iam'
+
+aws_external_anthropic.AWSExternalAnthropicConditions.keyARN(value: string)
+```
+
+Generates a condition block for `aws-external-anthropic:KeyArn`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicConditions.keyARN.parameter.value"></a>
 
 - *Type:* string
 
@@ -1300,6 +1382,7 @@ Generates a condition block for `aws:TagKeys`.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicConditions.property.actionGetKeyConditionKeys">actionGetKeyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetKey action. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicConditions.property.AssumeConsoleConditionKeys">AssumeConsoleConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the AssumeConsole action. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicConditions.property.AWS_REQUEST_TAG">AWS_REQUEST_TAG</a></code> | <code>string</code> | Condition key: aws:RequestTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicConditions.property.AWS_RESOURCE_TAG">AWS_RESOURCE_TAG</a></code> | <code>string</code> | Condition key: aws:ResourceTag/${TagKey} (String). |
@@ -1309,8 +1392,24 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicConditions.property.CallWithBearerTokenConditionKeys">CallWithBearerTokenConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CallWithBearerToken action. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicConditions.property.CAPABILITY">CAPABILITY</a></code> | <code>string</code> | Condition key: aws-external-anthropic:Capability (String). |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicConditions.property.CreateWorkspaceConditionKeys">CreateWorkspaceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateWorkspace action. |
+| <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicConditions.property.DisableKeyConditionKeys">DisableKeyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DisableKey action. |
+| <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicConditions.property.KEY_ARN">KEY_ARN</a></code> | <code>string</code> | Condition key: aws-external-anthropic:KeyArn (ARN). |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicConditions.property.TagResourceConditionKeys">TagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TagResource action. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicConditions.property.UntagResourceConditionKeys">UntagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UntagResource action. |
+| <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicConditions.property.UpdateKeyConditionKeys">UpdateKeyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateKey action. |
+| <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicConditions.property.UpdateWorkspaceConditionKeys">UpdateWorkspaceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateWorkspace action. |
+
+---
+
+##### `actionGetKeyConditionKeys`<sup>Required</sup> <a name="actionGetKeyConditionKeys" id="@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicConditions.property.actionGetKeyConditionKeys"></a>
+
+```typescript
+public readonly actionGetKeyConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetKey action.
 
 ---
 
@@ -1422,6 +1521,30 @@ Condition keys applicable to the CreateWorkspace action.
 
 ---
 
+##### `DisableKeyConditionKeys`<sup>Required</sup> <a name="DisableKeyConditionKeys" id="@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicConditions.property.DisableKeyConditionKeys"></a>
+
+```typescript
+public readonly DisableKeyConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DisableKey action.
+
+---
+
+##### `KEY_ARN`<sup>Required</sup> <a name="KEY_ARN" id="@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicConditions.property.KEY_ARN"></a>
+
+```typescript
+public readonly KEY_ARN: string;
+```
+
+- *Type:* string
+
+Condition key: aws-external-anthropic:KeyArn (ARN).
+
+---
+
 ##### `TagResourceConditionKeys`<sup>Required</sup> <a name="TagResourceConditionKeys" id="@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicConditions.property.TagResourceConditionKeys"></a>
 
 ```typescript
@@ -1443,6 +1566,30 @@ public readonly UntagResourceConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the UntagResource action.
+
+---
+
+##### `UpdateKeyConditionKeys`<sup>Required</sup> <a name="UpdateKeyConditionKeys" id="@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicConditions.property.UpdateKeyConditionKeys"></a>
+
+```typescript
+public readonly UpdateKeyConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UpdateKey action.
+
+---
+
+##### `UpdateWorkspaceConditionKeys`<sup>Required</sup> <a name="UpdateWorkspaceConditionKeys" id="@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicConditions.property.UpdateWorkspaceConditionKeys"></a>
+
+```typescript
+public readonly UpdateWorkspaceConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UpdateWorkspace action.
 
 ---
 

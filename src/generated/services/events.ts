@@ -1409,9 +1409,20 @@ export class EventsOperations {
 		"events:CreateEventBus",
 		"events:TagResource",
 	];
+	/** IAM actions required for the CreateEventSource API call. */
+	static readonly CreateEventSource: string[] = [
+		"events:CreateEventSource",
+		"events:TagResource",
+	];
 	/** IAM actions required for the CreatePartnerEventSource API call. */
 	static readonly CreatePartnerEventSource: string[] = [
 		"events:CreatePartnerEventSource",
+	];
+	/** IAM actions required for the CreateSubscriber API call. */
+	static readonly CreateSubscriber: string[] = [
+		"events:CreateSubscriber",
+		"iam:PassRole",
+		"events:TagResource",
 	];
 	/** IAM actions required for the DeactivateEventSource API call. */
 	static readonly DeactivateEventSource: string[] = [
@@ -1433,12 +1444,20 @@ export class EventsOperations {
 	static readonly DeleteEndpoint: string[] = ["events:DeleteEndpoint"];
 	/** IAM actions required for the DeleteEventBus API call. */
 	static readonly DeleteEventBus: string[] = ["events:DeleteEventBus"];
+	/** IAM actions required for the DeleteEventSource API call. */
+	static readonly DeleteEventSource: string[] = ["events:DeleteEventSource"];
 	/** IAM actions required for the DeletePartnerEventSource API call. */
 	static readonly DeletePartnerEventSource: string[] = [
 		"events:DeletePartnerEventSource",
 	];
+	/** IAM actions required for the DeleteResourcePolicy API call. */
+	static readonly DeleteResourcePolicy: string[] = [
+		"events:DeleteResourcePolicy",
+	];
 	/** IAM actions required for the DeleteRule API call. */
 	static readonly DeleteRule: string[] = ["events:DeleteRule"];
+	/** IAM actions required for the DeleteSubscriber API call. */
+	static readonly DeleteSubscriber: string[] = ["events:DeleteSubscriber"];
 	/** IAM actions required for the DescribeApiDestination API call. */
 	static readonly DescribeApiDestination: string[] = [
 		"events:DescribeApiDestination",
@@ -1463,10 +1482,14 @@ export class EventsOperations {
 	static readonly DescribeReplay: string[] = ["events:DescribeReplay"];
 	/** IAM actions required for the DescribeRule API call. */
 	static readonly DescribeRule: string[] = ["events:DescribeRule"];
+	/** IAM actions required for the DescribeSubscriber API call. */
+	static readonly DescribeSubscriber: string[] = ["events:DescribeSubscriber"];
 	/** IAM actions required for the DisableRule API call. */
 	static readonly DisableRule: string[] = ["events:DisableRule"];
 	/** IAM actions required for the EnableRule API call. */
 	static readonly EnableRule: string[] = ["events:EnableRule"];
+	/** IAM actions required for the GetResourcePolicy API call. */
+	static readonly opGetResourcePolicy: string[] = ["events:GetResourcePolicy"];
 	/** IAM actions required for the ListApiDestinations API call. */
 	static readonly ListApiDestinations: string[] = [
 		"events:ListApiDestinations",
@@ -1491,12 +1514,18 @@ export class EventsOperations {
 	];
 	/** IAM actions required for the ListReplays API call. */
 	static readonly ListReplays: string[] = ["events:ListReplays"];
+	/** IAM actions required for the ListResourcePolicies API call. */
+	static readonly ListResourcePolicies: string[] = [
+		"events:ListResourcePolicies",
+	];
 	/** IAM actions required for the ListRuleNamesByTarget API call. */
 	static readonly ListRuleNamesByTarget: string[] = [
 		"events:ListRuleNamesByTarget",
 	];
 	/** IAM actions required for the ListRules API call. */
 	static readonly ListRules: string[] = ["events:ListRules"];
+	/** IAM actions required for the ListSubscribers API call. */
+	static readonly ListSubscribers: string[] = ["events:ListSubscribers"];
 	/** IAM actions required for the ListTagsForResource API call. */
 	static readonly ListTagsForResource: string[] = [
 		"events:ListTagsForResource",
@@ -1509,6 +1538,10 @@ export class EventsOperations {
 	static readonly PutPartnerEvents: string[] = ["events:PutPartnerEvents"];
 	/** IAM actions required for the PutPermission API call. */
 	static readonly PutPermission: string[] = ["events:PutPermission"];
+	/** IAM actions required for the PutRawEvents API call. */
+	static readonly PutRawEvents: string[] = ["events:PutRawEvents"];
+	/** IAM actions required for the PutResourcePolicy API call. */
+	static readonly PutResourcePolicy: string[] = ["events:PutResourcePolicy"];
 	/** IAM actions required for the PutRule API call. */
 	static readonly PutRule: string[] = [
 		"iam:PassRole",
@@ -1521,6 +1554,8 @@ export class EventsOperations {
 	static readonly RemovePermission: string[] = ["events:RemovePermission"];
 	/** IAM actions required for the RemoveTargets API call. */
 	static readonly RemoveTargets: string[] = ["events:RemoveTargets"];
+	/** IAM actions required for the RevokeResource API call. */
+	static readonly RevokeResource: string[] = ["events:RevokeResource"];
 	/** IAM actions required for the StartReplay API call. */
 	static readonly StartReplay: string[] = ["events:StartReplay"];
 	/** IAM actions required for the TagResource API call. */
@@ -1544,6 +1579,13 @@ export class EventsOperations {
 	];
 	/** IAM actions required for the UpdateEventBus API call. */
 	static readonly UpdateEventBus: string[] = ["events:UpdateEventBus"];
+	/** IAM actions required for the UpdateEventSource API call. */
+	static readonly UpdateEventSource: string[] = ["events:UpdateEventSource"];
+	/** IAM actions required for the UpdateSubscriber API call. */
+	static readonly UpdateSubscriber: string[] = [
+		"iam:PassRole",
+		"events:UpdateSubscriber",
+	];
 }
 
 /**

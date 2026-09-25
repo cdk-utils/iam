@@ -1882,8 +1882,33 @@
       ],
       "SDK": [
         {
+          "Name": "eventbridgev2",
+          "Method": "create_event_bus",
+          "Package": "Boto3"
+        },
+        {
           "Name": "events",
           "Method": "create_event_bus",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateEventSource",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateEventSource",
+          "Service": "events"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "eventbridgev2",
+          "Method": "create_event_source",
           "Package": "Boto3"
         }
       ]
@@ -1900,6 +1925,35 @@
         {
           "Name": "events",
           "Method": "create_partner_event_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSubscriber",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSubscriber",
+          "Service": "events"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "events.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "eventbridgev2",
+          "Method": "create_subscriber",
           "Package": "Boto3"
         }
       ]
@@ -2010,8 +2064,29 @@
       ],
       "SDK": [
         {
+          "Name": "eventbridgev2",
+          "Method": "delete_event_bus",
+          "Package": "Boto3"
+        },
+        {
           "Name": "events",
           "Method": "delete_event_bus",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteEventSource",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteEventSource",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "eventbridgev2",
+          "Method": "delete_event_source",
           "Package": "Boto3"
         }
       ]
@@ -2033,6 +2108,22 @@
       ]
     },
     {
+      "Name": "DeleteResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteResourcePolicy",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "eventbridgev2",
+          "Method": "delete_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DeleteRule",
       "AuthorizedActions": [
         {
@@ -2044,6 +2135,22 @@
         {
           "Name": "events",
           "Method": "delete_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSubscriber",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSubscriber",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "eventbridgev2",
+          "Method": "delete_subscriber",
           "Package": "Boto3"
         }
       ]
@@ -2122,6 +2229,11 @@
       ],
       "SDK": [
         {
+          "Name": "eventbridgev2",
+          "Method": "describe_event_bus",
+          "Package": "Boto3"
+        },
+        {
           "Name": "events",
           "Method": "describe_event_bus",
           "Package": "Boto3"
@@ -2137,6 +2249,11 @@
         }
       ],
       "SDK": [
+        {
+          "Name": "eventbridgev2",
+          "Method": "describe_event_source",
+          "Package": "Boto3"
+        },
         {
           "Name": "events",
           "Method": "describe_event_source",
@@ -2193,6 +2310,22 @@
       ]
     },
     {
+      "Name": "DescribeSubscriber",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSubscriber",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "eventbridgev2",
+          "Method": "describe_subscriber",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DisableRule",
       "AuthorizedActions": [
         {
@@ -2220,6 +2353,22 @@
         {
           "Name": "events",
           "Method": "enable_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResourcePolicy",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "eventbridgev2",
+          "Method": "get_resource_policy",
           "Package": "Boto3"
         }
       ]
@@ -2298,6 +2447,11 @@
       ],
       "SDK": [
         {
+          "Name": "eventbridgev2",
+          "Method": "list_event_buses",
+          "Package": "Boto3"
+        },
+        {
           "Name": "events",
           "Method": "list_event_buses",
           "Package": "Boto3"
@@ -2313,6 +2467,11 @@
         }
       ],
       "SDK": [
+        {
+          "Name": "eventbridgev2",
+          "Method": "list_event_sources",
+          "Package": "Boto3"
+        },
         {
           "Name": "events",
           "Method": "list_event_sources",
@@ -2369,6 +2528,22 @@
       ]
     },
     {
+      "Name": "ListResourcePolicies",
+      "AuthorizedActions": [
+        {
+          "Name": "ListResourcePolicies",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "eventbridgev2",
+          "Method": "list_resource_policies",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListRuleNamesByTarget",
       "AuthorizedActions": [
         {
@@ -2401,6 +2576,22 @@
       ]
     },
     {
+      "Name": "ListSubscribers",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSubscribers",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "eventbridgev2",
+          "Method": "list_subscribers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListTagsForResource",
       "AuthorizedActions": [
         {
@@ -2409,6 +2600,11 @@
         }
       ],
       "SDK": [
+        {
+          "Name": "eventbridgev2",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        },
         {
           "Name": "events",
           "Method": "list_tags_for_resource",
@@ -2441,6 +2637,11 @@
         }
       ],
       "SDK": [
+        {
+          "Name": "eventbridgev2",
+          "Method": "put_events",
+          "Package": "Boto3"
+        },
         {
           "Name": "events",
           "Method": "put_events",
@@ -2476,6 +2677,38 @@
         {
           "Name": "events",
           "Method": "put_permission",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutRawEvents",
+      "AuthorizedActions": [
+        {
+          "Name": "PutRawEvents",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "eventbridgev2",
+          "Method": "put_raw_events",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PutResourcePolicy",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "eventbridgev2",
+          "Method": "put_resource_policy",
           "Package": "Boto3"
         }
       ]
@@ -2567,6 +2800,22 @@
       ]
     },
     {
+      "Name": "RevokeResource",
+      "AuthorizedActions": [
+        {
+          "Name": "RevokeResource",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "eventbridgev2",
+          "Method": "revoke_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "StartReplay",
       "AuthorizedActions": [
         {
@@ -2591,6 +2840,11 @@
         }
       ],
       "SDK": [
+        {
+          "Name": "eventbridgev2",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        },
         {
           "Name": "events",
           "Method": "tag_resource",
@@ -2623,6 +2877,11 @@
         }
       ],
       "SDK": [
+        {
+          "Name": "eventbridgev2",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        },
         {
           "Name": "events",
           "Method": "untag_resource",
@@ -2713,8 +2972,54 @@
       ],
       "SDK": [
         {
+          "Name": "eventbridgev2",
+          "Method": "update_event_bus",
+          "Package": "Boto3"
+        },
+        {
           "Name": "events",
           "Method": "update_event_bus",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateEventSource",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateEventSource",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "eventbridgev2",
+          "Method": "update_event_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSubscriber",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "events.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateSubscriber",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "eventbridgev2",
+          "Method": "update_subscriber",
           "Package": "Boto3"
         }
       ]

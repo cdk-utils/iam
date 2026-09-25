@@ -3331,6 +3331,7 @@ Generates a condition block for `elasticache:UserAuthenticationMode`.
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.DeleteCacheParameterGroupConditionKeys">DeleteCacheParameterGroupConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteCacheParameterGroup action. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.DeleteCacheSecurityGroupConditionKeys">DeleteCacheSecurityGroupConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteCacheSecurityGroup action. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.DeleteCacheSubnetGroupConditionKeys">DeleteCacheSubnetGroupConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteCacheSubnetGroup action. |
+| <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.DeleteGlobalReplicationGroupConditionKeys">DeleteGlobalReplicationGroupConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteGlobalReplicationGroup action. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.DeleteSnapshotConditionKeys">DeleteSnapshotConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteSnapshot action. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.DeleteUserConditionKeys">DeleteUserConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteUser action. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.DeleteUserGroupConditionKeys">DeleteUserGroupConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteUserGroup action. |
@@ -3339,15 +3340,18 @@ Generates a condition block for `elasticache:UserAuthenticationMode`.
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.DescribeCacheParametersConditionKeys">DescribeCacheParametersConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeCacheParameters action. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.DescribeCacheSecurityGroupsConditionKeys">DescribeCacheSecurityGroupsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeCacheSecurityGroups action. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.DescribeCacheSubnetGroupsConditionKeys">DescribeCacheSubnetGroupsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeCacheSubnetGroups action. |
+| <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.DescribeGlobalReplicationGroupsConditionKeys">DescribeGlobalReplicationGroupsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeGlobalReplicationGroups action. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.DescribeReplicationGroupsConditionKeys">DescribeReplicationGroupsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeReplicationGroups action. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.DescribeReservedCacheNodesConditionKeys">DescribeReservedCacheNodesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeReservedCacheNodes action. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.DescribeSnapshotsConditionKeys">DescribeSnapshotsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeSnapshots action. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.DescribeUpdateActionsConditionKeys">DescribeUpdateActionsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeUpdateActions action. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.DescribeUserGroupsConditionKeys">DescribeUserGroupsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeUserGroups action. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.DescribeUsersConditionKeys">DescribeUsersConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeUsers action. |
+| <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.DisassociateGlobalReplicationGroupConditionKeys">DisassociateGlobalReplicationGroupConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DisassociateGlobalReplicationGroup action. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.DURABILITY">DURABILITY</a></code> | <code>string</code> | Condition key: elasticache:Durability (String). |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.ENGINE_TYPE">ENGINE_TYPE</a></code> | <code>string</code> | Condition key: elasticache:EngineType (String). |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.ENGINE_VERSION">ENGINE_VERSION</a></code> | <code>string</code> | Condition key: elasticache:EngineVersion (String). |
+| <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.FailoverGlobalReplicationGroupConditionKeys">FailoverGlobalReplicationGroupConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the FailoverGlobalReplicationGroup action. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.IncreaseNodeGroupsInGlobalReplicationGroupConditionKeys">IncreaseNodeGroupsInGlobalReplicationGroupConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the IncreaseNodeGroupsInGlobalReplicationGroup action. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.IncreaseReplicaCountConditionKeys">IncreaseReplicaCountConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the IncreaseReplicaCount action. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.InterruptClusterAzPowerConditionKeys">InterruptClusterAzPowerConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the InterruptClusterAzPower action. |
@@ -3369,6 +3373,7 @@ Generates a condition block for `elasticache:UserAuthenticationMode`.
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.MULTI_AZ_ENABLED">MULTI_AZ_ENABLED</a></code> | <code>string</code> | Condition key: elasticache:MultiAZEnabled (Bool). |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.NUM_NODE_GROUPS">NUM_NODE_GROUPS</a></code> | <code>string</code> | Condition key: elasticache:NumNodeGroups (Numeric). |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.PurchaseReservedCacheNodesOfferingConditionKeys">PurchaseReservedCacheNodesOfferingConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PurchaseReservedCacheNodesOffering action. |
+| <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.RebalanceSlotsInGlobalReplicationGroupConditionKeys">RebalanceSlotsInGlobalReplicationGroupConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the RebalanceSlotsInGlobalReplicationGroup action. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.RebootCacheClusterConditionKeys">RebootCacheClusterConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the RebootCacheCluster action. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.RemoveTagsFromResourceConditionKeys">RemoveTagsFromResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the RemoveTagsFromResource action. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.REPLICAS_PER_NODE_GROUP">REPLICAS_PER_NODE_GROUP</a></code> | <code>string</code> | Condition key: elasticache:ReplicasPerNodeGroup (Numeric). |
@@ -3791,6 +3796,18 @@ Condition keys applicable to the DeleteCacheSubnetGroup action.
 
 ---
 
+##### `DeleteGlobalReplicationGroupConditionKeys`<sup>Required</sup> <a name="DeleteGlobalReplicationGroupConditionKeys" id="@cdk_utils/iam.elasticache.ElastiCacheConditions.property.DeleteGlobalReplicationGroupConditionKeys"></a>
+
+```typescript
+public readonly DeleteGlobalReplicationGroupConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DeleteGlobalReplicationGroup action.
+
+---
+
 ##### `DeleteSnapshotConditionKeys`<sup>Required</sup> <a name="DeleteSnapshotConditionKeys" id="@cdk_utils/iam.elasticache.ElastiCacheConditions.property.DeleteSnapshotConditionKeys"></a>
 
 ```typescript
@@ -3887,6 +3904,18 @@ Condition keys applicable to the DescribeCacheSubnetGroups action.
 
 ---
 
+##### `DescribeGlobalReplicationGroupsConditionKeys`<sup>Required</sup> <a name="DescribeGlobalReplicationGroupsConditionKeys" id="@cdk_utils/iam.elasticache.ElastiCacheConditions.property.DescribeGlobalReplicationGroupsConditionKeys"></a>
+
+```typescript
+public readonly DescribeGlobalReplicationGroupsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DescribeGlobalReplicationGroups action.
+
+---
+
 ##### `DescribeReplicationGroupsConditionKeys`<sup>Required</sup> <a name="DescribeReplicationGroupsConditionKeys" id="@cdk_utils/iam.elasticache.ElastiCacheConditions.property.DescribeReplicationGroupsConditionKeys"></a>
 
 ```typescript
@@ -3959,6 +3988,18 @@ Condition keys applicable to the DescribeUsers action.
 
 ---
 
+##### `DisassociateGlobalReplicationGroupConditionKeys`<sup>Required</sup> <a name="DisassociateGlobalReplicationGroupConditionKeys" id="@cdk_utils/iam.elasticache.ElastiCacheConditions.property.DisassociateGlobalReplicationGroupConditionKeys"></a>
+
+```typescript
+public readonly DisassociateGlobalReplicationGroupConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DisassociateGlobalReplicationGroup action.
+
+---
+
 ##### `DURABILITY`<sup>Required</sup> <a name="DURABILITY" id="@cdk_utils/iam.elasticache.ElastiCacheConditions.property.DURABILITY"></a>
 
 ```typescript
@@ -3992,6 +4033,18 @@ public readonly ENGINE_VERSION: string;
 - *Type:* string
 
 Condition key: elasticache:EngineVersion (String).
+
+---
+
+##### `FailoverGlobalReplicationGroupConditionKeys`<sup>Required</sup> <a name="FailoverGlobalReplicationGroupConditionKeys" id="@cdk_utils/iam.elasticache.ElastiCacheConditions.property.FailoverGlobalReplicationGroupConditionKeys"></a>
+
+```typescript
+public readonly FailoverGlobalReplicationGroupConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the FailoverGlobalReplicationGroup action.
 
 ---
 
@@ -4244,6 +4297,18 @@ public readonly PurchaseReservedCacheNodesOfferingConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the PurchaseReservedCacheNodesOffering action.
+
+---
+
+##### `RebalanceSlotsInGlobalReplicationGroupConditionKeys`<sup>Required</sup> <a name="RebalanceSlotsInGlobalReplicationGroupConditionKeys" id="@cdk_utils/iam.elasticache.ElastiCacheConditions.property.RebalanceSlotsInGlobalReplicationGroupConditionKeys"></a>
+
+```typescript
+public readonly RebalanceSlotsInGlobalReplicationGroupConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the RebalanceSlotsInGlobalReplicationGroup action.
 
 ---
 

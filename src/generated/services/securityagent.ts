@@ -166,6 +166,8 @@ export class SecurityagentActions {
 	/** [Write] securityagent:InitiateProviderRegistration */
 	static readonly InitiateProviderRegistration =
 		"securityagent:InitiateProviderRegistration";
+	/** [List] securityagent:ListActorMessages */
+	static readonly ListActorMessages = "securityagent:ListActorMessages";
 	/** [List] securityagent:ListAgentSpaces */
 	static readonly ListAgentSpaces = "securityagent:ListAgentSpaces";
 	/** [List] securityagent:ListApplications */
@@ -386,6 +388,7 @@ export class SecurityagentActions {
 	];
 	/** All list-level actions. */
 	static readonly AllListActions: string[] = [
+		SecurityagentActions.ListActorMessages,
 		SecurityagentActions.ListAgentSpaces,
 		SecurityagentActions.ListApplications,
 		SecurityagentActions.ListArtifacts,
