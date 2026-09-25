@@ -3276,6 +3276,16 @@
       ]
     },
     {
+      "Name": "CreateResourceMetricsConfiguration",
+      "SDK": [
+        {
+          "Name": "cloudwatch",
+          "Method": "create_resource_metrics_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "CreateSpace",
       "AuthorizedActions": [
         {
@@ -3534,6 +3544,16 @@
         {
           "Name": "cloudwatchomni",
           "Method": "delete_omni_dashboard",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteResourceMetricsConfiguration",
+      "SDK": [
+        {
+          "Name": "cloudwatch",
+          "Method": "delete_resource_metrics_configuration",
           "Package": "Boto3"
         }
       ]
@@ -4034,6 +4054,16 @@
         {
           "Name": "cloudwatchomni",
           "Method": "get_omni_dashboard",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResourceMetricsConfiguration",
+      "SDK": [
+        {
+          "Name": "cloudwatch",
+          "Method": "get_resource_metrics_configuration",
           "Package": "Boto3"
         }
       ]
@@ -4850,6 +4880,12 @@
     },
     {
       "Name": "UpdateAlert",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAlert",
+          "Service": "cloudwatch"
+        }
+      ],
       "SDK": [
         {
           "Name": "cloudwatchomni",
@@ -4916,6 +4952,16 @@
       ]
     },
     {
+      "Name": "UpdateOTelEnrichment",
+      "SDK": [
+        {
+          "Name": "cloudwatch",
+          "Method": "update_o_tel_enrichment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "UpdateOmniDashboard",
       "AuthorizedActions": [
         {
@@ -4927,6 +4973,16 @@
         {
           "Name": "cloudwatchomni",
           "Method": "update_omni_dashboard",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateResourceMetricsConfiguration",
+      "SDK": [
+        {
+          "Name": "cloudwatch",
+          "Method": "update_resource_metrics_configuration",
           "Package": "Boto3"
         }
       ]

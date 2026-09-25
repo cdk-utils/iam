@@ -500,6 +500,7 @@
     {
       "Name": "CreateWorkspace",
       "ActionConditionKeys": [
+        "aws-external-anthropic:KeyArn",
         "aws:RequestTag/${TagKey}",
         "aws:TagKeys"
       ],
@@ -701,6 +702,24 @@
       }
     },
     {
+      "Name": "DisableKey",
+      "ActionConditionKeys": [
+        "aws-external-anthropic:KeyArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "GetAccountStatus",
       "Annotations": {
         "Properties": {
@@ -802,6 +821,24 @@
           ]
         }
       ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetKey",
+      "ActionConditionKeys": [
+        "aws-external-anthropic:KeyArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -1084,6 +1121,21 @@
       }
     },
     {
+      "Name": "ListKeys",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ListMemoryStores",
       "Annotations": {
         "Properties": {
@@ -1306,6 +1358,21 @@
       }
     },
     {
+      "Name": "RegisterKey",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "RotateWebhookSecret",
       "Annotations": {
         "Properties": {
@@ -1422,6 +1489,24 @@
           ]
         }
       ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateKey",
+      "ActionConditionKeys": [
+        "aws-external-anthropic:KeyArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -1567,6 +1652,9 @@
     },
     {
       "Name": "UpdateWorkspace",
+      "ActionConditionKeys": [
+        "aws-external-anthropic:KeyArn"
+      ],
       "Annotations": {
         "Properties": {
           "IsList": false,
@@ -1606,6 +1694,12 @@
       "Name": "aws-external-anthropic:Capability",
       "Types": [
         "String"
+      ]
+    },
+    {
+      "Name": "aws-external-anthropic:KeyArn",
+      "Types": [
+        "ARN"
       ]
     },
     {

@@ -1450,7 +1450,7 @@ export class ElastiCacheConditions {
 	];
 	/** Condition keys applicable to the DecreaseNodeGroupsInGlobalReplicationGroup action. */
 	static readonly DecreaseNodeGroupsInGlobalReplicationGroupConditionKeys: string[] =
-		["elasticache:NumNodeGroups"];
+		["aws:ResourceTag/${TagKey}", "elasticache:NumNodeGroups"];
 	/** Condition keys applicable to the DecreaseReplicaCount action. */
 	static readonly DecreaseReplicaCountConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
@@ -1467,6 +1467,10 @@ export class ElastiCacheConditions {
 	];
 	/** Condition keys applicable to the DeleteCacheSubnetGroup action. */
 	static readonly DeleteCacheSubnetGroupConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
+	/** Condition keys applicable to the DeleteGlobalReplicationGroup action. */
+	static readonly DeleteGlobalReplicationGroupConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteSnapshot action. */
@@ -1501,6 +1505,10 @@ export class ElastiCacheConditions {
 	static readonly DescribeCacheSubnetGroupsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
+	/** Condition keys applicable to the DescribeGlobalReplicationGroups action. */
+	static readonly DescribeGlobalReplicationGroupsConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the DescribeReplicationGroups action. */
 	static readonly DescribeReplicationGroupsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
@@ -1525,9 +1533,17 @@ export class ElastiCacheConditions {
 	static readonly DescribeUsersConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
+	/** Condition keys applicable to the DisassociateGlobalReplicationGroup action. */
+	static readonly DisassociateGlobalReplicationGroupConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
+	/** Condition keys applicable to the FailoverGlobalReplicationGroup action. */
+	static readonly FailoverGlobalReplicationGroupConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the IncreaseNodeGroupsInGlobalReplicationGroup action. */
 	static readonly IncreaseNodeGroupsInGlobalReplicationGroupConditionKeys: string[] =
-		["elasticache:NumNodeGroups"];
+		["aws:ResourceTag/${TagKey}", "elasticache:NumNodeGroups"];
 	/** Condition keys applicable to the IncreaseReplicaCount action. */
 	static readonly IncreaseReplicaCountConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
@@ -1560,6 +1576,7 @@ export class ElastiCacheConditions {
 	];
 	/** Condition keys applicable to the ModifyGlobalReplicationGroup action. */
 	static readonly ModifyGlobalReplicationGroupConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
 		"elasticache:AutomaticFailoverEnabled",
 		"elasticache:CacheNodeType",
 		"elasticache:EngineVersion",
@@ -1586,6 +1603,9 @@ export class ElastiCacheConditions {
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
+	/** Condition keys applicable to the RebalanceSlotsInGlobalReplicationGroup action. */
+	static readonly RebalanceSlotsInGlobalReplicationGroupConditionKeys: string[] =
+		["aws:ResourceTag/${TagKey}"];
 	/** Condition keys applicable to the RebootCacheCluster action. */
 	static readonly RebootCacheClusterConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",

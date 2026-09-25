@@ -100,6 +100,26 @@
       }
     },
     {
+      "Name": "DeleteFeedPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "feed"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "DisassociateFeed",
       "Annotations": {
         "Properties": {
@@ -180,6 +200,26 @@
       }
     },
     {
+      "Name": "GetFeedPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "feed"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "GetMetadata",
       "Annotations": {
         "Properties": {
@@ -239,6 +279,26 @@
           "IsWrite": false
         }
       },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutFeedPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "feed"
+        }
+      ],
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -478,6 +538,12 @@
     },
     {
       "Name": "DeleteFeedPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteFeedPolicy",
+          "Service": "elemental-inference"
+        }
+      ],
       "SDK": [
         {
           "Name": "elementalinference",
@@ -552,6 +618,12 @@
     },
     {
       "Name": "GetFeedPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetFeedPolicy",
+          "Service": "elemental-inference"
+        }
+      ],
       "SDK": [
         {
           "Name": "elementalinference",
@@ -620,6 +692,12 @@
     },
     {
       "Name": "PutFeedPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PutFeedPolicy",
+          "Service": "elemental-inference"
+        }
+      ],
       "SDK": [
         {
           "Name": "elementalinference",

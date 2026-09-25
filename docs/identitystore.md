@@ -978,12 +978,14 @@ new identitystore.IdentitystoreActions()
 | <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreActions.property.DeleteUser">DeleteUser</a></code> | <code>string</code> | [Write] identitystore:DeleteUser. |
 | <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreActions.property.DescribeGroup">DescribeGroup</a></code> | <code>string</code> | [Read] identitystore:DescribeGroup. |
 | <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreActions.property.DescribeGroupMembership">DescribeGroupMembership</a></code> | <code>string</code> | [Read] identitystore:DescribeGroupMembership. |
+| <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreActions.property.DescribeIdentityStore">DescribeIdentityStore</a></code> | <code>string</code> | [Read] identitystore:DescribeIdentityStore. |
 | <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreActions.property.DescribeRegion">DescribeRegion</a></code> | <code>string</code> | [Read] identitystore:DescribeRegion. |
 | <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreActions.property.DescribeUser">DescribeUser</a></code> | <code>string</code> | [Read] identitystore:DescribeUser. |
 | <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreActions.property.IsMemberInGroups">IsMemberInGroups</a></code> | <code>string</code> | [Read] identitystore:IsMemberInGroups. |
 | <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreActions.property.ListGroupMemberships">ListGroupMemberships</a></code> | <code>string</code> | [List] identitystore:ListGroupMemberships. |
 | <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreActions.property.ListGroupMembershipsForMember">ListGroupMembershipsForMember</a></code> | <code>string</code> | [List] identitystore:ListGroupMembershipsForMember. |
 | <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreActions.property.ListGroups">ListGroups</a></code> | <code>string</code> | [List] identitystore:ListGroups. |
+| <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreActions.property.ListIdentityStores">ListIdentityStores</a></code> | <code>string</code> | [List] identitystore:ListIdentityStores. |
 | <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreActions.property.ListRegions">ListRegions</a></code> | <code>string</code> | [List] identitystore:ListRegions. |
 | <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreActions.property.ListUsers">ListUsers</a></code> | <code>string</code> | [List] identitystore:ListUsers. |
 | <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreActions.property.RemoveRegion">RemoveRegion</a></code> | <code>string</code> | [Write] identitystore:RemoveRegion. |
@@ -1223,6 +1225,18 @@ public readonly DescribeGroupMembership: string;
 
 ---
 
+##### `DescribeIdentityStore`<sup>Required</sup> <a name="DescribeIdentityStore" id="@cdk_utils/iam.identitystore.IdentitystoreActions.property.DescribeIdentityStore"></a>
+
+```typescript
+public readonly DescribeIdentityStore: string;
+```
+
+- *Type:* string
+
+[Read] identitystore:DescribeIdentityStore.
+
+---
+
 ##### `DescribeRegion`<sup>Required</sup> <a name="DescribeRegion" id="@cdk_utils/iam.identitystore.IdentitystoreActions.property.DescribeRegion"></a>
 
 ```typescript
@@ -1292,6 +1306,18 @@ public readonly ListGroups: string;
 - *Type:* string
 
 [List] identitystore:ListGroups.
+
+---
+
+##### `ListIdentityStores`<sup>Required</sup> <a name="ListIdentityStores" id="@cdk_utils/iam.identitystore.IdentitystoreActions.property.ListIdentityStores"></a>
+
+```typescript
+public readonly ListIdentityStores: string;
+```
+
+- *Type:* string
+
+[List] identitystore:ListIdentityStores.
 
 ---
 
@@ -1534,6 +1560,7 @@ Generates a condition block for `identitystore:UserId`.
 | <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreConditions.property.DeleteUserConditionKeys">DeleteUserConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteUser action. |
 | <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreConditions.property.DescribeGroupConditionKeys">DescribeGroupConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeGroup action. |
 | <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreConditions.property.DescribeGroupMembershipConditionKeys">DescribeGroupMembershipConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeGroupMembership action. |
+| <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreConditions.property.DescribeIdentityStoreConditionKeys">DescribeIdentityStoreConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeIdentityStore action. |
 | <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreConditions.property.DescribeRegionConditionKeys">DescribeRegionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeRegion action. |
 | <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreConditions.property.DescribeUserConditionKeys">DescribeUserConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeUser action. |
 | <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreConditions.property.GROUP_EXTERNAL_ID_ISSUERS">GROUP_EXTERNAL_ID_ISSUERS</a></code> | <code>string</code> | Condition key: identitystore:GroupExternalIdIssuers (ArrayOfARN). |
@@ -1683,6 +1710,18 @@ public readonly DescribeGroupMembershipConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the DescribeGroupMembership action.
+
+---
+
+##### `DescribeIdentityStoreConditionKeys`<sup>Required</sup> <a name="DescribeIdentityStoreConditionKeys" id="@cdk_utils/iam.identitystore.IdentitystoreConditions.property.DescribeIdentityStoreConditionKeys"></a>
+
+```typescript
+public readonly DescribeIdentityStoreConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DescribeIdentityStore action.
 
 ---
 

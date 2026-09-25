@@ -22,6 +22,8 @@ export class ElementalInferenceActions {
 	static readonly DeleteDictionary = "elemental-inference:DeleteDictionary";
 	/** [Write] elemental-inference:DeleteFeed */
 	static readonly DeleteFeed = "elemental-inference:DeleteFeed";
+	/** [Write] elemental-inference:DeleteFeedPolicy */
+	static readonly DeleteFeedPolicy = "elemental-inference:DeleteFeedPolicy";
 	/** [Write] elemental-inference:DisassociateFeed */
 	static readonly DisassociateFeed = "elemental-inference:DisassociateFeed";
 	/** [Read] elemental-inference:ExportDictionaryEntries */
@@ -31,6 +33,8 @@ export class ElementalInferenceActions {
 	static readonly actionGetDictionary = "elemental-inference:GetDictionary";
 	/** [Read] elemental-inference:GetFeed */
 	static readonly actionGetFeed = "elemental-inference:GetFeed";
+	/** [Read] elemental-inference:GetFeedPolicy */
+	static readonly actionGetFeedPolicy = "elemental-inference:GetFeedPolicy";
 	/** [Read] elemental-inference:GetMetadata */
 	static readonly actionGetMetadata = "elemental-inference:GetMetadata";
 	/** [List] elemental-inference:ListDictionaries */
@@ -40,6 +44,8 @@ export class ElementalInferenceActions {
 	/** [Read] elemental-inference:ListTagsForResource */
 	static readonly ListTagsForResource =
 		"elemental-inference:ListTagsForResource";
+	/** [Write] elemental-inference:PutFeedPolicy */
+	static readonly PutFeedPolicy = "elemental-inference:PutFeedPolicy";
 	/** [Write] elemental-inference:PutMedia */
 	static readonly PutMedia = "elemental-inference:PutMedia";
 	/** [Tagging] elemental-inference:TagResource */
@@ -56,6 +62,7 @@ export class ElementalInferenceActions {
 		ElementalInferenceActions.ExportDictionaryEntries,
 		ElementalInferenceActions.actionGetDictionary,
 		ElementalInferenceActions.actionGetFeed,
+		ElementalInferenceActions.actionGetFeedPolicy,
 		ElementalInferenceActions.actionGetMetadata,
 		ElementalInferenceActions.ListTagsForResource,
 	];
@@ -66,7 +73,9 @@ export class ElementalInferenceActions {
 		ElementalInferenceActions.CreateFeed,
 		ElementalInferenceActions.DeleteDictionary,
 		ElementalInferenceActions.DeleteFeed,
+		ElementalInferenceActions.DeleteFeedPolicy,
 		ElementalInferenceActions.DisassociateFeed,
+		ElementalInferenceActions.PutFeedPolicy,
 		ElementalInferenceActions.PutMedia,
 		ElementalInferenceActions.UpdateDictionary,
 		ElementalInferenceActions.UpdateFeed,
@@ -241,7 +250,9 @@ export class ElementalInferenceOperations {
 	/** IAM actions required for the DeleteFeed API call. */
 	static readonly DeleteFeed: string[] = ["elemental-inference:DeleteFeed"];
 	/** IAM actions required for the DeleteFeedPolicy API call. */
-	static readonly DeleteFeedPolicy: string[] = [];
+	static readonly DeleteFeedPolicy: string[] = [
+		"elemental-inference:DeleteFeedPolicy",
+	];
 	/** IAM actions required for the DisassociateFeed API call. */
 	static readonly DisassociateFeed: string[] = [
 		"elemental-inference:DisassociateFeed",
@@ -257,7 +268,9 @@ export class ElementalInferenceOperations {
 	/** IAM actions required for the GetFeed API call. */
 	static readonly opGetFeed: string[] = ["elemental-inference:GetFeed"];
 	/** IAM actions required for the GetFeedPolicy API call. */
-	static readonly opGetFeedPolicy: string[] = [];
+	static readonly opGetFeedPolicy: string[] = [
+		"elemental-inference:GetFeedPolicy",
+	];
 	/** IAM actions required for the GetFixture API call. */
 	static readonly opGetFixture: string[] = [];
 	/** IAM actions required for the ListDictionaries API call. */
@@ -271,7 +284,9 @@ export class ElementalInferenceOperations {
 		"elemental-inference:ListTagsForResource",
 	];
 	/** IAM actions required for the PutFeedPolicy API call. */
-	static readonly PutFeedPolicy: string[] = [];
+	static readonly PutFeedPolicy: string[] = [
+		"elemental-inference:PutFeedPolicy",
+	];
 	/** IAM actions required for the SearchFixtures API call. */
 	static readonly SearchFixtures: string[] = [];
 	/** IAM actions required for the TagResource API call. */

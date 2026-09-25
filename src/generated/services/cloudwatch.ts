@@ -1753,6 +1753,8 @@ export class CloudWatchOperations {
 	static readonly CreateOneTimeDeepLinkCode: string[] = [
 		"cloudwatch:CreateOneTimeDeepLinkCode",
 	];
+	/** IAM actions required for the CreateResourceMetricsConfiguration API call. */
+	static readonly CreateResourceMetricsConfiguration: string[] = [];
 	/** IAM actions required for the CreateSpace API call. */
 	static readonly CreateSpace: string[] = [
 		"cloudwatch:CreateSpace",
@@ -1809,6 +1811,8 @@ export class CloudWatchOperations {
 	static readonly DeleteOmniDashboard: string[] = [
 		"cloudwatch:DeleteOmniDashboard",
 	];
+	/** IAM actions required for the DeleteResourceMetricsConfiguration API call. */
+	static readonly DeleteResourceMetricsConfiguration: string[] = [];
 	/** IAM actions required for the DeleteSpace API call. */
 	static readonly DeleteSpace: string[] = ["cloudwatch:DeleteSpace"];
 	/** IAM actions required for the DeleteView API call. */
@@ -1909,6 +1913,8 @@ export class CloudWatchOperations {
 	static readonly opGetOmniDashboard: string[] = [
 		"cloudwatch:GetOmniDashboard",
 	];
+	/** IAM actions required for the GetResourceMetricsConfiguration API call. */
+	static readonly opGetResourceMetricsConfiguration: string[] = [];
 	/** IAM actions required for the GetSpace API call. */
 	static readonly opGetSpace: string[] = ["cloudwatch:GetSpace"];
 	/** IAM actions required for the GetSpaceCredentialsForOrganization API call. */
@@ -2084,7 +2090,7 @@ export class CloudWatchOperations {
 		"cloudwatch:UpdateAccessProfile",
 	];
 	/** IAM actions required for the UpdateAlert API call. */
-	static readonly UpdateAlert: string[] = [];
+	static readonly UpdateAlert: string[] = ["cloudwatch:UpdateAlert"];
 	/** IAM actions required for the UpdateDomain API call. */
 	static readonly UpdateDomain: string[] = ["cloudwatch:UpdateDomain"];
 	/** IAM actions required for the UpdateDomainForOrganization API call. */
@@ -2096,10 +2102,14 @@ export class CloudWatchOperations {
 		"iam:PassRole",
 		"cloudwatch:UpdateIntegration",
 	];
+	/** IAM actions required for the UpdateOTelEnrichment API call. */
+	static readonly UpdateOTelEnrichment: string[] = [];
 	/** IAM actions required for the UpdateOmniDashboard API call. */
 	static readonly UpdateOmniDashboard: string[] = [
 		"cloudwatch:UpdateOmniDashboard",
 	];
+	/** IAM actions required for the UpdateResourceMetricsConfiguration API call. */
+	static readonly UpdateResourceMetricsConfiguration: string[] = [];
 	/** IAM actions required for the UpdateSpace API call. */
 	static readonly UpdateSpace: string[] = ["cloudwatch:UpdateSpace"];
 	/** IAM actions required for the UpdateView API call. */

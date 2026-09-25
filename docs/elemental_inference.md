@@ -327,6 +327,7 @@ new elemental_inference.ElementalInferenceActions()
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceActions.property.actionGetDictionary">actionGetDictionary</a></code> | <code>string</code> | [Read] elemental-inference:GetDictionary. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceActions.property.actionGetFeed">actionGetFeed</a></code> | <code>string</code> | [Read] elemental-inference:GetFeed. |
+| <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceActions.property.actionGetFeedPolicy">actionGetFeedPolicy</a></code> | <code>string</code> | [Read] elemental-inference:GetFeedPolicy. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceActions.property.actionGetMetadata">actionGetMetadata</a></code> | <code>string</code> | [Read] elemental-inference:GetMetadata. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceActions.property.AllListActions">AllListActions</a></code> | <code>string[]</code> | All list-level actions. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceActions.property.AllPermissionManagementActions">AllPermissionManagementActions</a></code> | <code>string[]</code> | All permission-management-level actions. |
@@ -338,11 +339,13 @@ new elemental_inference.ElementalInferenceActions()
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceActions.property.CreateFeed">CreateFeed</a></code> | <code>string</code> | [Write] elemental-inference:CreateFeed. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceActions.property.DeleteDictionary">DeleteDictionary</a></code> | <code>string</code> | [Write] elemental-inference:DeleteDictionary. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceActions.property.DeleteFeed">DeleteFeed</a></code> | <code>string</code> | [Write] elemental-inference:DeleteFeed. |
+| <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceActions.property.DeleteFeedPolicy">DeleteFeedPolicy</a></code> | <code>string</code> | [Write] elemental-inference:DeleteFeedPolicy. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceActions.property.DisassociateFeed">DisassociateFeed</a></code> | <code>string</code> | [Write] elemental-inference:DisassociateFeed. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceActions.property.ExportDictionaryEntries">ExportDictionaryEntries</a></code> | <code>string</code> | [Read] elemental-inference:ExportDictionaryEntries. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceActions.property.ListDictionaries">ListDictionaries</a></code> | <code>string</code> | [List] elemental-inference:ListDictionaries. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceActions.property.ListFeeds">ListFeeds</a></code> | <code>string</code> | [List] elemental-inference:ListFeeds. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [Read] elemental-inference:ListTagsForResource. |
+| <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceActions.property.PutFeedPolicy">PutFeedPolicy</a></code> | <code>string</code> | [Write] elemental-inference:PutFeedPolicy. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceActions.property.PutMedia">PutMedia</a></code> | <code>string</code> | [Write] elemental-inference:PutMedia. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] elemental-inference:TagResource. |
@@ -373,6 +376,18 @@ public readonly actionGetFeed: string;
 - *Type:* string
 
 [Read] elemental-inference:GetFeed.
+
+---
+
+##### `actionGetFeedPolicy`<sup>Required</sup> <a name="actionGetFeedPolicy" id="@cdk_utils/iam.elemental_inference.ElementalInferenceActions.property.actionGetFeedPolicy"></a>
+
+```typescript
+public readonly actionGetFeedPolicy: string;
+```
+
+- *Type:* string
+
+[Read] elemental-inference:GetFeedPolicy.
 
 ---
 
@@ -508,6 +523,18 @@ public readonly DeleteFeed: string;
 
 ---
 
+##### `DeleteFeedPolicy`<sup>Required</sup> <a name="DeleteFeedPolicy" id="@cdk_utils/iam.elemental_inference.ElementalInferenceActions.property.DeleteFeedPolicy"></a>
+
+```typescript
+public readonly DeleteFeedPolicy: string;
+```
+
+- *Type:* string
+
+[Write] elemental-inference:DeleteFeedPolicy.
+
+---
+
 ##### `DisassociateFeed`<sup>Required</sup> <a name="DisassociateFeed" id="@cdk_utils/iam.elemental_inference.ElementalInferenceActions.property.DisassociateFeed"></a>
 
 ```typescript
@@ -565,6 +592,18 @@ public readonly ListTagsForResource: string;
 - *Type:* string
 
 [Read] elemental-inference:ListTagsForResource.
+
+---
+
+##### `PutFeedPolicy`<sup>Required</sup> <a name="PutFeedPolicy" id="@cdk_utils/iam.elemental_inference.ElementalInferenceActions.property.PutFeedPolicy"></a>
+
+```typescript
+public readonly PutFeedPolicy: string;
+```
+
+- *Type:* string
+
+[Write] elemental-inference:PutFeedPolicy.
 
 ---
 

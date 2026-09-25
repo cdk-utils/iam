@@ -86,6 +86,8 @@ export class AWSExternalAnthropicActions {
 	static readonly DeleteVault = "aws-external-anthropic:DeleteVault";
 	/** [Write] aws-external-anthropic:DeleteWebhook */
 	static readonly DeleteWebhook = "aws-external-anthropic:DeleteWebhook";
+	/** [Write] aws-external-anthropic:DisableKey */
+	static readonly DisableKey = "aws-external-anthropic:DisableKey";
 	/** [Read] aws-external-anthropic:GetAccountStatus */
 	static readonly actionGetAccountStatus =
 		"aws-external-anthropic:GetAccountStatus";
@@ -99,6 +101,8 @@ export class AWSExternalAnthropicActions {
 		"aws-external-anthropic:GetEnvironment";
 	/** [Read] aws-external-anthropic:GetFile */
 	static readonly actionGetFile = "aws-external-anthropic:GetFile";
+	/** [Read] aws-external-anthropic:GetKey */
+	static readonly actionGetKey = "aws-external-anthropic:GetKey";
 	/** [Read] aws-external-anthropic:GetMemoryStore */
 	static readonly actionGetMemoryStore =
 		"aws-external-anthropic:GetMemoryStore";
@@ -126,6 +130,8 @@ export class AWSExternalAnthropicActions {
 	static readonly ListEnvironments = "aws-external-anthropic:ListEnvironments";
 	/** [List] aws-external-anthropic:ListFiles */
 	static readonly ListFiles = "aws-external-anthropic:ListFiles";
+	/** [List] aws-external-anthropic:ListKeys */
+	static readonly ListKeys = "aws-external-anthropic:ListKeys";
 	/** [List] aws-external-anthropic:ListMemoryStores */
 	static readonly ListMemoryStores = "aws-external-anthropic:ListMemoryStores";
 	/** [List] aws-external-anthropic:ListModels */
@@ -148,6 +154,8 @@ export class AWSExternalAnthropicActions {
 	/** [Write] aws-external-anthropic:ProcessEnvironmentWork */
 	static readonly ProcessEnvironmentWork =
 		"aws-external-anthropic:ProcessEnvironmentWork";
+	/** [Write] aws-external-anthropic:RegisterKey */
+	static readonly RegisterKey = "aws-external-anthropic:RegisterKey";
 	/** [Write] aws-external-anthropic:RotateWebhookSecret */
 	static readonly RotateWebhookSecret =
 		"aws-external-anthropic:RotateWebhookSecret";
@@ -160,6 +168,8 @@ export class AWSExternalAnthropicActions {
 	/** [Write] aws-external-anthropic:UpdateEnvironment */
 	static readonly UpdateEnvironment =
 		"aws-external-anthropic:UpdateEnvironment";
+	/** [Write] aws-external-anthropic:UpdateKey */
+	static readonly UpdateKey = "aws-external-anthropic:UpdateKey";
 	/** [Write] aws-external-anthropic:UpdateMemoryStore */
 	static readonly UpdateMemoryStore =
 		"aws-external-anthropic:UpdateMemoryStore";
@@ -184,6 +194,7 @@ export class AWSExternalAnthropicActions {
 		AWSExternalAnthropicActions.actionGetBatchInference,
 		AWSExternalAnthropicActions.actionGetEnvironment,
 		AWSExternalAnthropicActions.actionGetFile,
+		AWSExternalAnthropicActions.actionGetKey,
 		AWSExternalAnthropicActions.actionGetMemoryStore,
 		AWSExternalAnthropicActions.actionGetModel,
 		AWSExternalAnthropicActions.actionGetSession,
@@ -226,10 +237,13 @@ export class AWSExternalAnthropicActions {
 		AWSExternalAnthropicActions.DeleteSkill,
 		AWSExternalAnthropicActions.DeleteVault,
 		AWSExternalAnthropicActions.DeleteWebhook,
+		AWSExternalAnthropicActions.DisableKey,
 		AWSExternalAnthropicActions.ProcessEnvironmentWork,
+		AWSExternalAnthropicActions.RegisterKey,
 		AWSExternalAnthropicActions.RotateWebhookSecret,
 		AWSExternalAnthropicActions.UpdateAgent,
 		AWSExternalAnthropicActions.UpdateEnvironment,
+		AWSExternalAnthropicActions.UpdateKey,
 		AWSExternalAnthropicActions.UpdateMemoryStore,
 		AWSExternalAnthropicActions.UpdateSession,
 		AWSExternalAnthropicActions.UpdateSkill,
@@ -245,6 +259,7 @@ export class AWSExternalAnthropicActions {
 		AWSExternalAnthropicActions.ListBatchInferences,
 		AWSExternalAnthropicActions.ListEnvironments,
 		AWSExternalAnthropicActions.ListFiles,
+		AWSExternalAnthropicActions.ListKeys,
 		AWSExternalAnthropicActions.ListMemoryStores,
 		AWSExternalAnthropicActions.ListModels,
 		AWSExternalAnthropicActions.ListSessions,
@@ -346,8 +361,17 @@ export class AWSExternalAnthropicConditions {
 	];
 	/** Condition keys applicable to the CreateWorkspace action. */
 	static readonly CreateWorkspaceConditionKeys: string[] = [
+		"aws-external-anthropic:KeyArn",
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
+	];
+	/** Condition keys applicable to the DisableKey action. */
+	static readonly DisableKeyConditionKeys: string[] = [
+		"aws-external-anthropic:KeyArn",
+	];
+	/** Condition keys applicable to the GetKey action. */
+	static readonly actionGetKeyConditionKeys: string[] = [
+		"aws-external-anthropic:KeyArn",
 	];
 	/** Condition keys applicable to the TagResource action. */
 	static readonly TagResourceConditionKeys: string[] = [
@@ -356,6 +380,14 @@ export class AWSExternalAnthropicConditions {
 	];
 	/** Condition keys applicable to the UntagResource action. */
 	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
+	/** Condition keys applicable to the UpdateKey action. */
+	static readonly UpdateKeyConditionKeys: string[] = [
+		"aws-external-anthropic:KeyArn",
+	];
+	/** Condition keys applicable to the UpdateWorkspace action. */
+	static readonly UpdateWorkspaceConditionKeys: string[] = [
+		"aws-external-anthropic:KeyArn",
+	];
 
 	/** Condition key: aws-external-anthropic:BearerTokenType (String) */
 	static readonly BEARER_TOKEN_TYPE = "aws-external-anthropic:BearerTokenType";
@@ -364,6 +396,8 @@ export class AWSExternalAnthropicConditions {
 		"aws-external-anthropic:CalledViaConsole";
 	/** Condition key: aws-external-anthropic:Capability (String) */
 	static readonly CAPABILITY = "aws-external-anthropic:Capability";
+	/** Condition key: aws-external-anthropic:KeyArn (ARN) */
+	static readonly KEY_ARN = "aws-external-anthropic:KeyArn";
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
 	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
@@ -396,6 +430,13 @@ export class AWSExternalAnthropicConditions {
 	 */
 	static capability(value: string): Record<string, Record<string, string>> {
 		return { StringEquals: { "aws-external-anthropic:Capability": value } };
+	}
+
+	/**
+	 * Generates a condition block for `aws-external-anthropic:KeyArn`.
+	 */
+	static keyARN(value: string): Record<string, Record<string, string>> {
+		return { ArnEquals: { "aws-external-anthropic:KeyArn": value } };
 	}
 
 	/**

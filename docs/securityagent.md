@@ -984,6 +984,7 @@ new securityagent.SecurityagentActions()
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.HandleProviderRegistrationCallback">HandleProviderRegistrationCallback</a></code> | <code>string</code> | [Write] securityagent:HandleProviderRegistrationCallback. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.ImportSecurityRequirements">ImportSecurityRequirements</a></code> | <code>string</code> | [Write] securityagent:ImportSecurityRequirements. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.InitiateProviderRegistration">InitiateProviderRegistration</a></code> | <code>string</code> | [Write] securityagent:InitiateProviderRegistration. |
+| <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.ListActorMessages">ListActorMessages</a></code> | <code>string</code> | [List] securityagent:ListActorMessages. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.ListAgentSpaces">ListAgentSpaces</a></code> | <code>string</code> | [List] securityagent:ListAgentSpaces. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.ListApplications">ListApplications</a></code> | <code>string</code> | [List] securityagent:ListApplications. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.ListArtifacts">ListArtifacts</a></code> | <code>string</code> | [List] securityagent:ListArtifacts. |
@@ -1842,6 +1843,18 @@ public readonly InitiateProviderRegistration: string;
 - *Type:* string
 
 [Write] securityagent:InitiateProviderRegistration.
+
+---
+
+##### `ListActorMessages`<sup>Required</sup> <a name="ListActorMessages" id="@cdk_utils/iam.securityagent.SecurityagentActions.property.ListActorMessages"></a>
+
+```typescript
+public readonly ListActorMessages: string;
+```
+
+- *Type:* string
+
+[List] securityagent:ListActorMessages.
 
 ---
 
