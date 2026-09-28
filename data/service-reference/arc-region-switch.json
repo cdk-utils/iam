@@ -741,6 +741,16 @@
       ]
     },
     {
+      "Name": "ListServiceQuotaWarnings",
+      "SDK": [
+        {
+          "Name": "arc-region-switch",
+          "Method": "list_service_quota_warnings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListTagsForResource",
       "AuthorizedActions": [
         {

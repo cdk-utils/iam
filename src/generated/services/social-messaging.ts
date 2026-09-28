@@ -46,6 +46,9 @@ export class SocialMessagingActions {
 	/** [Read] social-messaging:GetLinkedWhatsAppBusinessAccountPhoneNumber */
 	static readonly actionGetLinkedWhatsAppBusinessAccountPhoneNumber =
 		"social-messaging:GetLinkedWhatsAppBusinessAccountPhoneNumber";
+	/** [Read] social-messaging:GetWhatsAppCallPermission */
+	static readonly actionGetWhatsAppCallPermission =
+		"social-messaging:GetWhatsAppCallPermission";
 	/** [Read] social-messaging:GetWhatsAppFlow */
 	static readonly actionGetWhatsAppFlow = "social-messaging:GetWhatsAppFlow";
 	/** [Read] social-messaging:GetWhatsAppFlowPreview */
@@ -81,12 +84,18 @@ export class SocialMessagingActions {
 	/** [Write] social-messaging:PutWhatsAppBusinessAccountEventDestinations */
 	static readonly PutWhatsAppBusinessAccountEventDestinations =
 		"social-messaging:PutWhatsAppBusinessAccountEventDestinations";
+	/** [Write] social-messaging:SendWhatsAppCallEvent */
+	static readonly SendWhatsAppCallEvent =
+		"social-messaging:SendWhatsAppCallEvent";
 	/** [Write] social-messaging:SendWhatsAppMessage */
 	static readonly SendWhatsAppMessage = "social-messaging:SendWhatsAppMessage";
 	/** [Tagging] social-messaging:TagResource */
 	static readonly TagResource = "social-messaging:TagResource";
 	/** [Tagging] social-messaging:UntagResource */
 	static readonly UntagResource = "social-messaging:UntagResource";
+	/** [Write] social-messaging:UpdateLinkedWhatsAppBusinessAccountPhoneNumber */
+	static readonly UpdateLinkedWhatsAppBusinessAccountPhoneNumber =
+		"social-messaging:UpdateLinkedWhatsAppBusinessAccountPhoneNumber";
 	/** [Write] social-messaging:UpdateWhatsAppFlow */
 	static readonly UpdateWhatsAppFlow = "social-messaging:UpdateWhatsAppFlow";
 	/** [Write] social-messaging:UpdateWhatsAppFlowAssets */
@@ -100,6 +109,7 @@ export class SocialMessagingActions {
 	static readonly AllReadActions: string[] = [
 		SocialMessagingActions.actionGetLinkedWhatsAppBusinessAccount,
 		SocialMessagingActions.actionGetLinkedWhatsAppBusinessAccountPhoneNumber,
+		SocialMessagingActions.actionGetWhatsAppCallPermission,
 		SocialMessagingActions.actionGetWhatsAppFlow,
 		SocialMessagingActions.actionGetWhatsAppFlowPreview,
 		SocialMessagingActions.actionGetWhatsAppMessageTemplate,
@@ -121,7 +131,9 @@ export class SocialMessagingActions {
 		SocialMessagingActions.PostWhatsAppMessageMedia,
 		SocialMessagingActions.PublishWhatsAppFlow,
 		SocialMessagingActions.PutWhatsAppBusinessAccountEventDestinations,
+		SocialMessagingActions.SendWhatsAppCallEvent,
 		SocialMessagingActions.SendWhatsAppMessage,
+		SocialMessagingActions.UpdateLinkedWhatsAppBusinessAccountPhoneNumber,
 		SocialMessagingActions.UpdateWhatsAppFlow,
 		SocialMessagingActions.UpdateWhatsAppFlowAssets,
 		SocialMessagingActions.UpdateWhatsAppMessageTemplate,
@@ -332,7 +344,9 @@ export class SocialMessagingOperations {
 	/** IAM actions required for the GetWhatsAppBusinessPublicKey API call. */
 	static readonly opGetWhatsAppBusinessPublicKey: string[] = [];
 	/** IAM actions required for the GetWhatsAppCallPermission API call. */
-	static readonly opGetWhatsAppCallPermission: string[] = [];
+	static readonly opGetWhatsAppCallPermission: string[] = [
+		"social-messaging:GetWhatsAppCallPermission",
+	];
 	/** IAM actions required for the GetWhatsAppFlow API call. */
 	static readonly opGetWhatsAppFlow: string[] = [
 		"social-messaging:GetWhatsAppFlow",
@@ -389,7 +403,9 @@ export class SocialMessagingOperations {
 	/** IAM actions required for the PutWhatsAppBusinessPublicKey API call. */
 	static readonly PutWhatsAppBusinessPublicKey: string[] = [];
 	/** IAM actions required for the SendWhatsAppCallEvent API call. */
-	static readonly SendWhatsAppCallEvent: string[] = [];
+	static readonly SendWhatsAppCallEvent: string[] = [
+		"social-messaging:SendWhatsAppCallEvent",
+	];
 	/** IAM actions required for the SendWhatsAppConversionEvent API call. */
 	static readonly SendWhatsAppConversionEvent: string[] = [];
 	/** IAM actions required for the SendWhatsAppMessage API call. */
@@ -401,7 +417,9 @@ export class SocialMessagingOperations {
 	/** IAM actions required for the UntagResource API call. */
 	static readonly UntagResource: string[] = ["social-messaging:UntagResource"];
 	/** IAM actions required for the UpdateLinkedWhatsAppBusinessAccountPhoneNumber API call. */
-	static readonly UpdateLinkedWhatsAppBusinessAccountPhoneNumber: string[] = [];
+	static readonly UpdateLinkedWhatsAppBusinessAccountPhoneNumber: string[] = [
+		"social-messaging:UpdateLinkedWhatsAppBusinessAccountPhoneNumber",
+	];
 	/** IAM actions required for the UpdateWhatsAppFlow API call. */
 	static readonly UpdateWhatsAppFlow: string[] = [
 		"social-messaging:UpdateWhatsAppFlow",

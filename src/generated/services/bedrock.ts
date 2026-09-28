@@ -3697,6 +3697,8 @@ export class BedrockOperations {
 		"bedrock:CreateSession",
 		"bedrock:TagResource",
 	];
+	/** IAM actions required for the CreateVpcConfiguration API call. */
+	static readonly CreateVpcConfiguration: string[] = [];
 	/** IAM actions required for the DeleteAgent API call. */
 	static readonly DeleteAgent: string[] = ["bedrock:DeleteAgent"];
 	/** IAM actions required for the DeleteAgentActionGroup API call. */
@@ -3811,6 +3813,8 @@ export class BedrockOperations {
 	];
 	/** IAM actions required for the DeleteSession API call. */
 	static readonly DeleteSession: string[] = ["bedrock:DeleteSession"];
+	/** IAM actions required for the DeleteVpcConfiguration API call. */
+	static readonly DeleteVpcConfiguration: string[] = [];
 	/** IAM actions required for the DeregisterMarketplaceModelEndpoint API call. */
 	static readonly DeregisterMarketplaceModelEndpoint: string[] = [
 		"bedrock:CallWithBearerToken",
@@ -4045,6 +4049,8 @@ export class BedrockOperations {
 		"bedrock:CallWithBearerToken",
 		"bedrock:GetUseCaseForModelAccess",
 	];
+	/** IAM actions required for the GetVpcConfiguration API call. */
+	static readonly opGetVpcConfiguration: string[] = [];
 	/** IAM actions required for the IngestKnowledgeBaseDocuments API call. */
 	static readonly IngestKnowledgeBaseDocuments: string[] = [
 		"bedrock:AssociateThirdPartyKnowledgeBase",
@@ -4274,6 +4280,8 @@ export class BedrockOperations {
 		"bedrock:CallWithBearerToken",
 		"bedrock:ListTagsForResource",
 	];
+	/** IAM actions required for the ListVpcConfigurations API call. */
+	static readonly ListVpcConfigurations: string[] = [];
 	/** IAM actions required for the OptimizePrompt API call. */
 	static readonly OptimizePrompt: string[] = ["bedrock:OptimizePrompt"];
 	/** IAM actions required for the PrepareAgent API call. */

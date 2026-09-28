@@ -157,6 +157,9 @@ export class SecurityagentActions {
 	/** [Read] securityagent:GetSecurityRequirementPack */
 	static readonly actionGetSecurityRequirementPack =
 		"securityagent:GetSecurityRequirementPack";
+	/** [Write] securityagent:HandleProviderCallback */
+	static readonly HandleProviderCallback =
+		"securityagent:HandleProviderCallback";
 	/** [Write] securityagent:HandleProviderRegistrationCallback */
 	static readonly HandleProviderRegistrationCallback =
 		"securityagent:HandleProviderRegistrationCallback";
@@ -273,6 +276,8 @@ export class SecurityagentActions {
 	/** [Write] securityagent:UpdateIntegratedResources */
 	static readonly UpdateIntegratedResources =
 		"securityagent:UpdateIntegratedResources";
+	/** [Write] securityagent:UpdateIntegration */
+	static readonly UpdateIntegration = "securityagent:UpdateIntegration";
 	/** [Write] securityagent:UpdatePentest */
 	static readonly UpdatePentest = "securityagent:UpdatePentest";
 	/** [Write] securityagent:UpdatePrivateConnectionCertificate */
@@ -358,6 +363,7 @@ export class SecurityagentActions {
 		SecurityagentActions.DeleteSecurityRequirement,
 		SecurityagentActions.DeleteSecurityRequirementPack,
 		SecurityagentActions.DeleteTargetDomain,
+		SecurityagentActions.HandleProviderCallback,
 		SecurityagentActions.HandleProviderRegistrationCallback,
 		SecurityagentActions.ImportSecurityRequirements,
 		SecurityagentActions.InitiateProviderRegistration,
@@ -377,6 +383,7 @@ export class SecurityagentActions {
 		SecurityagentActions.UpdateDiscoveredDomains,
 		SecurityagentActions.UpdateFinding,
 		SecurityagentActions.UpdateIntegratedResources,
+		SecurityagentActions.UpdateIntegration,
 		SecurityagentActions.UpdatePentest,
 		SecurityagentActions.UpdatePrivateConnectionCertificate,
 		SecurityagentActions.UpdateSecurityRequirement,
@@ -998,6 +1005,10 @@ export class SecurityagentOperations {
 	/** IAM actions required for the InitiateProviderRegistration API call. */
 	static readonly InitiateProviderRegistration: string[] = [
 		"securityagent:InitiateProviderRegistration",
+	];
+	/** IAM actions required for the ListActorMessages API call. */
+	static readonly ListActorMessages: string[] = [
+		"securityagent:ListActorMessages",
 	];
 	/** IAM actions required for the ListAgentSpaces API call. */
 	static readonly ListAgentSpaces: string[] = ["securityagent:ListAgentSpaces"];

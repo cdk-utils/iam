@@ -17371,6 +17371,7 @@ new ec2.EC2Actions()
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.ReleaseIpamPoolAllocation">ReleaseIpamPoolAllocation</a></code> | <code>string</code> | [Write] ec2:ReleaseIpamPoolAllocation. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.ReplaceIamInstanceProfileAssociation">ReplaceIamInstanceProfileAssociation</a></code> | <code>string</code> | [Write] ec2:ReplaceIamInstanceProfileAssociation. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.ReplaceImageCriteriaInAllowedImagesSettings">ReplaceImageCriteriaInAllowedImagesSettings</a></code> | <code>string</code> | [Write] ec2:ReplaceImageCriteriaInAllowedImagesSettings. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.ReplaceImageInstanceTypeSpecification">ReplaceImageInstanceTypeSpecification</a></code> | <code>string</code> | [Write] ec2:ReplaceImageInstanceTypeSpecification. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.ReplaceNetworkAclAssociation">ReplaceNetworkAclAssociation</a></code> | <code>string</code> | [Write] ec2:ReplaceNetworkAclAssociation. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.ReplaceNetworkAclEntry">ReplaceNetworkAclEntry</a></code> | <code>string</code> | [Write] ec2:ReplaceNetworkAclEntry. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.ReplaceRoute">ReplaceRoute</a></code> | <code>string</code> | [Write] ec2:ReplaceRoute. |
@@ -17422,6 +17423,7 @@ new ec2.EC2Actions()
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.UpdateInterruptibleCapacityReservationAllocation">UpdateInterruptibleCapacityReservationAllocation</a></code> | <code>string</code> | [Write] ec2:UpdateInterruptibleCapacityReservationAllocation. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.UpdateSecurityGroupRuleDescriptionsEgress">UpdateSecurityGroupRuleDescriptionsEgress</a></code> | <code>string</code> | [Write] ec2:UpdateSecurityGroupRuleDescriptionsEgress. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.UpdateSecurityGroupRuleDescriptionsIngress">UpdateSecurityGroupRuleDescriptionsIngress</a></code> | <code>string</code> | [Write] ec2:UpdateSecurityGroupRuleDescriptionsIngress. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.ValidateSecurityGroupQuotasForInterface">ValidateSecurityGroupQuotasForInterface</a></code> | <code>string</code> | [Read] ec2:ValidateSecurityGroupQuotasForInterface. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.WithdrawByoipCidr">WithdrawByoipCidr</a></code> | <code>string</code> | [Write] ec2:WithdrawByoipCidr. |
 
 ---
@@ -26762,6 +26764,18 @@ public readonly ReplaceImageCriteriaInAllowedImagesSettings: string;
 
 ---
 
+##### `ReplaceImageInstanceTypeSpecification`<sup>Required</sup> <a name="ReplaceImageInstanceTypeSpecification" id="@cdk_utils/iam.ec2.EC2Actions.property.ReplaceImageInstanceTypeSpecification"></a>
+
+```typescript
+public readonly ReplaceImageInstanceTypeSpecification: string;
+```
+
+- *Type:* string
+
+[Write] ec2:ReplaceImageInstanceTypeSpecification.
+
+---
+
 ##### `ReplaceNetworkAclAssociation`<sup>Required</sup> <a name="ReplaceNetworkAclAssociation" id="@cdk_utils/iam.ec2.EC2Actions.property.ReplaceNetworkAclAssociation"></a>
 
 ```typescript
@@ -27374,6 +27388,18 @@ public readonly UpdateSecurityGroupRuleDescriptionsIngress: string;
 
 ---
 
+##### `ValidateSecurityGroupQuotasForInterface`<sup>Required</sup> <a name="ValidateSecurityGroupQuotasForInterface" id="@cdk_utils/iam.ec2.EC2Actions.property.ValidateSecurityGroupQuotasForInterface"></a>
+
+```typescript
+public readonly ValidateSecurityGroupQuotasForInterface: string;
+```
+
+- *Type:* string
+
+[Read] ec2:ValidateSecurityGroupQuotasForInterface.
+
+---
+
 ##### `WithdrawByoipCidr`<sup>Required</sup> <a name="WithdrawByoipCidr" id="@cdk_utils/iam.ec2.EC2Actions.property.WithdrawByoipCidr"></a>
 
 ```typescript
@@ -27420,6 +27446,7 @@ new ec2.EC2Conditions()
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.autoPlacement">autoPlacement</a></code> | Generates a condition block for `ec2:AutoPlacement`. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.availabilityZone">availabilityZone</a></code> | Generates a condition block for `ec2:AvailabilityZone`. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.availabilityZoneId">availabilityZoneId</a></code> | Generates a condition block for `ec2:AvailabilityZoneId`. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.bootModeOverride">bootModeOverride</a></code> | Generates a condition block for `ec2:BootModeOverride`. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.capacityReservationFleet">capacityReservationFleet</a></code> | Generates a condition block for `ec2:CapacityReservationFleet`. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.clientRootCertificateChainARN">clientRootCertificateChainARN</a></code> | Generates a condition block for `ec2:ClientRootCertificateChainArn`. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.cloudwatchLogGroupARN">cloudwatchLogGroupARN</a></code> | Generates a condition block for `ec2:CloudwatchLogGroupArn`. |
@@ -27743,6 +27770,22 @@ ec2.EC2Conditions.availabilityZoneId(value: string)
 Generates a condition block for `ec2:AvailabilityZoneId`.
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.ec2.EC2Conditions.availabilityZoneId.parameter.value"></a>
+
+- *Type:* string
+
+---
+
+##### `bootModeOverride` <a name="bootModeOverride" id="@cdk_utils/iam.ec2.EC2Conditions.bootModeOverride"></a>
+
+```typescript
+import { ec2 } from '@cdk_utils/iam'
+
+ec2.EC2Conditions.bootModeOverride(value: string)
+```
+
+Generates a condition block for `ec2:BootModeOverride`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.ec2.EC2Conditions.bootModeOverride.parameter.value"></a>
 
 - *Type:* string
 
@@ -30026,6 +30069,7 @@ Generates a condition block for `ec2:VpcPeeringConnectionID`.
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.AWS_RESOURCE_TAG">AWS_RESOURCE_TAG</a></code> | <code>string</code> | Condition key: aws:ResourceTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.AWS_TAG_KEYS">AWS_TAG_KEYS</a></code> | <code>string</code> | Condition key: aws:TagKeys (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.BatchModifyIpamRoutingPolicyRegistrationsConditionKeys">BatchModifyIpamRoutingPolicyRegistrationsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the BatchModifyIpamRoutingPolicyRegistrations action. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.BOOT_MODE_OVERRIDE">BOOT_MODE_OVERRIDE</a></code> | <code>string</code> | Condition key: ec2:BootModeOverride (String). |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.BundleInstanceConditionKeys">BundleInstanceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the BundleInstance action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.CancelBundleTaskConditionKeys">CancelBundleTaskConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CancelBundleTask action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.CancelCapacityReservationConditionKeys">CancelCapacityReservationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CancelCapacityReservation action. |
@@ -30752,6 +30796,7 @@ Generates a condition block for `ec2:VpcPeeringConnectionID`.
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.REMOVE_USER_ID">REMOVE_USER_ID</a></code> | <code>string</code> | Condition key: ec2:Remove/userId (String). |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.ReplaceIamInstanceProfileAssociationConditionKeys">ReplaceIamInstanceProfileAssociationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ReplaceIamInstanceProfileAssociation action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.ReplaceImageCriteriaInAllowedImagesSettingsConditionKeys">ReplaceImageCriteriaInAllowedImagesSettingsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ReplaceImageCriteriaInAllowedImagesSettings action. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.ReplaceImageInstanceTypeSpecificationConditionKeys">ReplaceImageInstanceTypeSpecificationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ReplaceImageInstanceTypeSpecification action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.ReplaceNetworkAclAssociationConditionKeys">ReplaceNetworkAclAssociationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ReplaceNetworkAclAssociation action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.ReplaceNetworkAclEntryConditionKeys">ReplaceNetworkAclEntryConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ReplaceNetworkAclEntry action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.ReplaceRouteConditionKeys">ReplaceRouteConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ReplaceRoute action. |
@@ -30833,6 +30878,7 @@ Generates a condition block for `ec2:VpcPeeringConnectionID`.
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.UpdateInterruptibleCapacityReservationAllocationConditionKeys">UpdateInterruptibleCapacityReservationAllocationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateInterruptibleCapacityReservationAllocation action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.UpdateSecurityGroupRuleDescriptionsEgressConditionKeys">UpdateSecurityGroupRuleDescriptionsEgressConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateSecurityGroupRuleDescriptionsEgress action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.UpdateSecurityGroupRuleDescriptionsIngressConditionKeys">UpdateSecurityGroupRuleDescriptionsIngressConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateSecurityGroupRuleDescriptionsIngress action. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.ValidateSecurityGroupQuotasForInterfaceConditionKeys">ValidateSecurityGroupQuotasForInterfaceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ValidateSecurityGroupQuotasForInterface action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.VOLUME_ID">VOLUME_ID</a></code> | <code>string</code> | Condition key: ec2:VolumeID (String). |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.VOLUME_INITIALIZATION_RATE">VOLUME_INITIALIZATION_RATE</a></code> | <code>string</code> | Condition key: ec2:VolumeInitializationRate (Numeric). |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.VOLUME_IOPS">VOLUME_IOPS</a></code> | <code>string</code> | Condition key: ec2:VolumeIops (Numeric). |
@@ -32591,6 +32637,18 @@ public readonly BatchModifyIpamRoutingPolicyRegistrationsConditionKeys: string[]
 - *Type:* string[]
 
 Condition keys applicable to the BatchModifyIpamRoutingPolicyRegistrations action.
+
+---
+
+##### `BOOT_MODE_OVERRIDE`<sup>Required</sup> <a name="BOOT_MODE_OVERRIDE" id="@cdk_utils/iam.ec2.EC2Conditions.property.BOOT_MODE_OVERRIDE"></a>
+
+```typescript
+public readonly BOOT_MODE_OVERRIDE: string;
+```
+
+- *Type:* string
+
+Condition key: ec2:BootModeOverride (String).
 
 ---
 
@@ -41306,6 +41364,18 @@ Condition keys applicable to the ReplaceImageCriteriaInAllowedImagesSettings act
 
 ---
 
+##### `ReplaceImageInstanceTypeSpecificationConditionKeys`<sup>Required</sup> <a name="ReplaceImageInstanceTypeSpecificationConditionKeys" id="@cdk_utils/iam.ec2.EC2Conditions.property.ReplaceImageInstanceTypeSpecificationConditionKeys"></a>
+
+```typescript
+public readonly ReplaceImageInstanceTypeSpecificationConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ReplaceImageInstanceTypeSpecification action.
+
+---
+
 ##### `ReplaceNetworkAclAssociationConditionKeys`<sup>Required</sup> <a name="ReplaceNetworkAclAssociationConditionKeys" id="@cdk_utils/iam.ec2.EC2Conditions.property.ReplaceNetworkAclAssociationConditionKeys"></a>
 
 ```typescript
@@ -42275,6 +42345,18 @@ public readonly UpdateSecurityGroupRuleDescriptionsIngressConditionKeys: string[
 - *Type:* string[]
 
 Condition keys applicable to the UpdateSecurityGroupRuleDescriptionsIngress action.
+
+---
+
+##### `ValidateSecurityGroupQuotasForInterfaceConditionKeys`<sup>Required</sup> <a name="ValidateSecurityGroupQuotasForInterfaceConditionKeys" id="@cdk_utils/iam.ec2.EC2Conditions.property.ValidateSecurityGroupQuotasForInterfaceConditionKeys"></a>
+
+```typescript
+public readonly ValidateSecurityGroupQuotasForInterfaceConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ValidateSecurityGroupQuotasForInterface action.
 
 ---
 

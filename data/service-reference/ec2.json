@@ -52,7 +52,6 @@
             "ec2:AvailabilityZone",
             "ec2:CapacityReservationFleet",
             "ec2:CreateDate",
-            "ec2:DestinationCapacityReservationId",
             "ec2:EbsOptimized",
             "ec2:EndDate",
             "ec2:EndDateType",
@@ -63,7 +62,6 @@
             "ec2:OutpostArn",
             "ec2:PlacementGroup",
             "ec2:ResourceTag/${TagKey}",
-            "ec2:SourceCapacityReservationId",
             "ec2:Tenancy"
           ]
         }
@@ -696,7 +694,6 @@
             "ec2:AvailabilityZone",
             "ec2:CapacityReservationFleet",
             "ec2:CreateDate",
-            "ec2:DestinationCapacityReservationId",
             "ec2:EbsOptimized",
             "ec2:EndDate",
             "ec2:EndDateType",
@@ -707,7 +704,6 @@
             "ec2:OutpostArn",
             "ec2:PlacementGroup",
             "ec2:ResourceTag/${TagKey}",
-            "ec2:SourceCapacityReservationId",
             "ec2:Tenancy"
           ]
         }
@@ -2986,6 +2982,13 @@
       },
       "Resources": [
         {
+          "Name": "capacity-reservation",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ec2:ResourceTag/${TagKey}"
+          ]
+        },
+        {
           "Name": "fleet",
           "ConditionKeys": [
             "aws:RequestTag/${TagKey}",
@@ -3201,6 +3204,7 @@
           "ConditionKeys": [
             "aws:RequestTag/${TagKey}",
             "aws:TagKeys",
+            "ec2:BootModeOverride",
             "ec2:ImageID",
             "ec2:Owner"
           ]
@@ -16653,7 +16657,6 @@
             "ec2:AvailabilityZone",
             "ec2:CapacityReservationFleet",
             "ec2:CreateDate",
-            "ec2:DestinationCapacityReservationId",
             "ec2:EbsOptimized",
             "ec2:EndDate",
             "ec2:EndDateType",
@@ -16664,7 +16667,6 @@
             "ec2:OutpostArn",
             "ec2:PlacementGroup",
             "ec2:ResourceTag/${TagKey}",
-            "ec2:SourceCapacityReservationId",
             "ec2:Tenancy"
           ]
         }
@@ -24372,7 +24374,6 @@
             "ec2:AvailabilityZone",
             "ec2:CapacityReservationFleet",
             "ec2:CreateDate",
-            "ec2:DestinationCapacityReservationId",
             "ec2:EbsOptimized",
             "ec2:EndDate",
             "ec2:EndDateType",
@@ -24383,7 +24384,6 @@
             "ec2:OutpostArn",
             "ec2:PlacementGroup",
             "ec2:ResourceTag/${TagKey}",
-            "ec2:SourceCapacityReservationId",
             "ec2:Tenancy"
           ]
         }
@@ -24719,6 +24719,38 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ReplaceImageInstanceTypeSpecification",
+      "ActionConditionKeys": [
+        "ec2:Region"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "image",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ec2:ImageID",
+            "ec2:ImageType",
+            "ec2:Owner",
+            "ec2:Public",
+            "ec2:ResourceTag/${TagKey}",
+            "ec2:RootDeviceType"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -26684,6 +26716,35 @@
       }
     },
     {
+      "Name": "ValidateSecurityGroupQuotasForInterface",
+      "ActionConditionKeys": [
+        "ec2:Region"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "security-group",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ec2:ResourceTag/${TagKey}",
+            "ec2:SecurityGroupID",
+            "ec2:Vpc"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "WithdrawByoipCidr",
       "ActionConditionKeys": [
         "ec2:Region"
@@ -26795,6 +26856,12 @@
     },
     {
       "Name": "ec2:AvailabilityZoneId",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "ec2:BootModeOverride",
       "Types": [
         "String"
       ]
@@ -40072,6 +40139,12 @@
     },
     {
       "Name": "ReplaceImageInstanceTypeSpecification",
+      "AuthorizedActions": [
+        {
+          "Name": "ReplaceImageInstanceTypeSpecification",
+          "Service": "ec2"
+        }
+      ],
       "SDK": [
         {
           "Name": "ec2",
@@ -40911,6 +40984,12 @@
     },
     {
       "Name": "ValidateSecurityGroupQuotasForInterface",
+      "AuthorizedActions": [
+        {
+          "Name": "ValidateSecurityGroupQuotasForInterface",
+          "Service": "ec2"
+        }
+      ],
       "SDK": [
         {
           "Name": "ec2",
@@ -41309,6 +41388,7 @@
         "aws:TagKeys",
         "ec2:Attribute",
         "ec2:Attribute/${AttributeName}",
+        "ec2:BootModeOverride",
         "ec2:ImageID",
         "ec2:ImageType",
         "ec2:IsLaunchTemplateResource",

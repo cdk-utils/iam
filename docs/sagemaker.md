@@ -11190,6 +11190,7 @@ new sagemaker.SageMakerActions()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.AllTaggingActions">AllTaggingActions</a></code> | <code>string[]</code> | All tagging-level actions. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.AssociateTrialComponent">AssociateTrialComponent</a></code> | <code>string</code> | [Write] sagemaker:AssociateTrialComponent. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.AttachClusterNodeNetworkInterface">AttachClusterNodeNetworkInterface</a></code> | <code>string</code> | [Write] sagemaker:AttachClusterNodeNetworkInterface. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.AttachClusterNodeVolume">AttachClusterNodeVolume</a></code> | <code>string</code> | [Write] sagemaker:AttachClusterNodeVolume. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.BatchAddClusterNodes">BatchAddClusterNodes</a></code> | <code>string</code> | [Write] sagemaker:BatchAddClusterNodes. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.BatchDeleteClusterNodes">BatchDeleteClusterNodes</a></code> | <code>string</code> | [Write] sagemaker:BatchDeleteClusterNodes. |
@@ -11853,6 +11854,18 @@ public readonly AssociateTrialComponent: string;
 - *Type:* string
 
 [Write] sagemaker:AssociateTrialComponent.
+
+---
+
+##### `AttachClusterNodeNetworkInterface`<sup>Required</sup> <a name="AttachClusterNodeNetworkInterface" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.AttachClusterNodeNetworkInterface"></a>
+
+```typescript
+public readonly AttachClusterNodeNetworkInterface: string;
+```
+
+- *Type:* string
+
+[Write] sagemaker:AttachClusterNodeNetworkInterface.
 
 ---
 
@@ -18308,7 +18321,6 @@ Generates a condition block for `sagemaker:WorkteamType`.
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.CUSTOMER_METADATA_PROPERTIES">CUSTOMER_METADATA_PROPERTIES</a></code> | <code>string</code> | Condition key: sagemaker:CustomerMetadataProperties/${MetadataKey} (String). |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.CUSTOMER_METADATA_PROPERTIES_TO_REMOVE">CUSTOMER_METADATA_PROPERTIES_TO_REMOVE</a></code> | <code>string</code> | Condition key: sagemaker:CustomerMetadataPropertiesToRemove (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.DeleteAppConditionKeys">DeleteAppConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteApp action. |
-| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.DeleteFeatureGroupConditionKeys">DeleteFeatureGroupConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteFeatureGroup action. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.DeleteSpaceConditionKeys">DeleteSpaceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteSpace action. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.DeleteTagsConditionKeys">DeleteTagsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteTags action. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.DescribePipelineConditionKeys">DescribePipelineConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribePipeline action. |
@@ -19343,18 +19355,6 @@ public readonly DeleteAppConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the DeleteApp action.
-
----
-
-##### `DeleteFeatureGroupConditionKeys`<sup>Required</sup> <a name="DeleteFeatureGroupConditionKeys" id="@cdk_utils/iam.sagemaker.SageMakerConditions.property.DeleteFeatureGroupConditionKeys"></a>
-
-```typescript
-public readonly DeleteFeatureGroupConditionKeys: string[];
-```
-
-- *Type:* string[]
-
-Condition keys applicable to the DeleteFeatureGroup action.
 
 ---
 

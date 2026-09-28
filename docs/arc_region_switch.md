@@ -751,6 +751,7 @@ new arc_region_switch.ArcRegionSwitchOperations()
 | <code><a href="#@cdk_utils/iam.arc_region_switch.ArcRegionSwitchOperations.property.ListPlansInRegion">ListPlansInRegion</a></code> | <code>string[]</code> | IAM actions required for the ListPlansInRegion API call. |
 | <code><a href="#@cdk_utils/iam.arc_region_switch.ArcRegionSwitchOperations.property.ListRoute53HealthChecks">ListRoute53HealthChecks</a></code> | <code>string[]</code> | IAM actions required for the ListRoute53HealthChecks API call. |
 | <code><a href="#@cdk_utils/iam.arc_region_switch.ArcRegionSwitchOperations.property.ListRoute53HealthChecksInRegion">ListRoute53HealthChecksInRegion</a></code> | <code>string[]</code> | IAM actions required for the ListRoute53HealthChecksInRegion API call. |
+| <code><a href="#@cdk_utils/iam.arc_region_switch.ArcRegionSwitchOperations.property.ListServiceQuotaWarnings">ListServiceQuotaWarnings</a></code> | <code>string[]</code> | IAM actions required for the ListServiceQuotaWarnings API call. |
 | <code><a href="#@cdk_utils/iam.arc_region_switch.ArcRegionSwitchOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
 | <code><a href="#@cdk_utils/iam.arc_region_switch.ArcRegionSwitchOperations.property.opGetPlan">opGetPlan</a></code> | <code>string[]</code> | IAM actions required for the GetPlan API call. |
 | <code><a href="#@cdk_utils/iam.arc_region_switch.ArcRegionSwitchOperations.property.opGetPlanEvaluationStatus">opGetPlanEvaluationStatus</a></code> | <code>string[]</code> | IAM actions required for the GetPlanEvaluationStatus API call. |
@@ -882,6 +883,18 @@ public readonly ListRoute53HealthChecksInRegion: string[];
 - *Type:* string[]
 
 IAM actions required for the ListRoute53HealthChecksInRegion API call.
+
+---
+
+##### `ListServiceQuotaWarnings`<sup>Required</sup> <a name="ListServiceQuotaWarnings" id="@cdk_utils/iam.arc_region_switch.ArcRegionSwitchOperations.property.ListServiceQuotaWarnings"></a>
+
+```typescript
+public readonly ListServiceQuotaWarnings: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListServiceQuotaWarnings API call.
 
 ---
 

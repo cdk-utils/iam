@@ -10538,6 +10538,7 @@ new bedrock.BedrockOperations()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.CreatePromptVersion">CreatePromptVersion</a></code> | <code>string[]</code> | IAM actions required for the CreatePromptVersion API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.CreateProvisionedModelThroughput">CreateProvisionedModelThroughput</a></code> | <code>string[]</code> | IAM actions required for the CreateProvisionedModelThroughput API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.CreateSession">CreateSession</a></code> | <code>string[]</code> | IAM actions required for the CreateSession API call. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.CreateVpcConfiguration">CreateVpcConfiguration</a></code> | <code>string[]</code> | IAM actions required for the CreateVpcConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.DeleteAgent">DeleteAgent</a></code> | <code>string[]</code> | IAM actions required for the DeleteAgent API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.DeleteAgentActionGroup">DeleteAgentActionGroup</a></code> | <code>string[]</code> | IAM actions required for the DeleteAgentActionGroup API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.DeleteAgentAlias">DeleteAgentAlias</a></code> | <code>string[]</code> | IAM actions required for the DeleteAgentAlias API call. |
@@ -10569,6 +10570,7 @@ new bedrock.BedrockOperations()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.DeleteProvisionedModelThroughput">DeleteProvisionedModelThroughput</a></code> | <code>string[]</code> | IAM actions required for the DeleteProvisionedModelThroughput API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.DeleteResourcePolicy">DeleteResourcePolicy</a></code> | <code>string[]</code> | IAM actions required for the DeleteResourcePolicy API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.DeleteSession">DeleteSession</a></code> | <code>string[]</code> | IAM actions required for the DeleteSession API call. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.DeleteVpcConfiguration">DeleteVpcConfiguration</a></code> | <code>string[]</code> | IAM actions required for the DeleteVpcConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.DeregisterMarketplaceModelEndpoint">DeregisterMarketplaceModelEndpoint</a></code> | <code>string[]</code> | IAM actions required for the DeregisterMarketplaceModelEndpoint API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.DisassociateAgentCollaborator">DisassociateAgentCollaborator</a></code> | <code>string[]</code> | IAM actions required for the DisassociateAgentCollaborator API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.DisassociateAgentKnowledgeBase">DisassociateAgentKnowledgeBase</a></code> | <code>string[]</code> | IAM actions required for the DisassociateAgentKnowledgeBase API call. |
@@ -10634,6 +10636,7 @@ new bedrock.BedrockOperations()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.ListProvisionedModelThroughputs">ListProvisionedModelThroughputs</a></code> | <code>string[]</code> | IAM actions required for the ListProvisionedModelThroughputs API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.ListSessions">ListSessions</a></code> | <code>string[]</code> | IAM actions required for the ListSessions API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.ListVpcConfigurations">ListVpcConfigurations</a></code> | <code>string[]</code> | IAM actions required for the ListVpcConfigurations API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.opGetAccountDataRetention">opGetAccountDataRetention</a></code> | <code>string[]</code> | IAM actions required for the GetAccountDataRetention API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.opGetAdvancedPromptOptimizationJob">opGetAdvancedPromptOptimizationJob</a></code> | <code>string[]</code> | IAM actions required for the GetAdvancedPromptOptimizationJob API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.opGetAgent">opGetAgent</a></code> | <code>string[]</code> | IAM actions required for the GetAgent API call. |
@@ -10690,6 +10693,7 @@ new bedrock.BedrockOperations()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.opGetResourcePolicy">opGetResourcePolicy</a></code> | <code>string[]</code> | IAM actions required for the GetResourcePolicy API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.opGetSession">opGetSession</a></code> | <code>string[]</code> | IAM actions required for the GetSession API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.opGetUseCaseForModelAccess">opGetUseCaseForModelAccess</a></code> | <code>string[]</code> | IAM actions required for the GetUseCaseForModelAccess API call. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.opGetVpcConfiguration">opGetVpcConfiguration</a></code> | <code>string[]</code> | IAM actions required for the GetVpcConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.OptimizePrompt">OptimizePrompt</a></code> | <code>string[]</code> | IAM actions required for the OptimizePrompt API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.PrepareAgent">PrepareAgent</a></code> | <code>string[]</code> | IAM actions required for the PrepareAgent API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.PrepareFlow">PrepareFlow</a></code> | <code>string[]</code> | IAM actions required for the PrepareFlow API call. |
@@ -11294,6 +11298,18 @@ IAM actions required for the CreateSession API call.
 
 ---
 
+##### `CreateVpcConfiguration`<sup>Required</sup> <a name="CreateVpcConfiguration" id="@cdk_utils/iam.bedrock.BedrockOperations.property.CreateVpcConfiguration"></a>
+
+```typescript
+public readonly CreateVpcConfiguration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateVpcConfiguration API call.
+
+---
+
 ##### `DeleteAgent`<sup>Required</sup> <a name="DeleteAgent" id="@cdk_utils/iam.bedrock.BedrockOperations.property.DeleteAgent"></a>
 
 ```typescript
@@ -11663,6 +11679,18 @@ public readonly DeleteSession: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteSession API call.
+
+---
+
+##### `DeleteVpcConfiguration`<sup>Required</sup> <a name="DeleteVpcConfiguration" id="@cdk_utils/iam.bedrock.BedrockOperations.property.DeleteVpcConfiguration"></a>
+
+```typescript
+public readonly DeleteVpcConfiguration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteVpcConfiguration API call.
 
 ---
 
@@ -12446,6 +12474,18 @@ IAM actions required for the ListTagsForResource API call.
 
 ---
 
+##### `ListVpcConfigurations`<sup>Required</sup> <a name="ListVpcConfigurations" id="@cdk_utils/iam.bedrock.BedrockOperations.property.ListVpcConfigurations"></a>
+
+```typescript
+public readonly ListVpcConfigurations: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListVpcConfigurations API call.
+
+---
+
 ##### `opGetAccountDataRetention`<sup>Required</sup> <a name="opGetAccountDataRetention" id="@cdk_utils/iam.bedrock.BedrockOperations.property.opGetAccountDataRetention"></a>
 
 ```typescript
@@ -13115,6 +13155,18 @@ public readonly opGetUseCaseForModelAccess: string[];
 - *Type:* string[]
 
 IAM actions required for the GetUseCaseForModelAccess API call.
+
+---
+
+##### `opGetVpcConfiguration`<sup>Required</sup> <a name="opGetVpcConfiguration" id="@cdk_utils/iam.bedrock.BedrockOperations.property.opGetVpcConfiguration"></a>
+
+```typescript
+public readonly opGetVpcConfiguration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetVpcConfiguration API call.
 
 ---
 

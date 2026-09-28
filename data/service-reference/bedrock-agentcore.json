@@ -8920,6 +8920,16 @@
       ]
     },
     {
+      "Name": "RotatePaymentConnectorCredentials",
+      "SDK": [
+        {
+          "Name": "bedrock-agentcore-control",
+          "Method": "rotate_payment_connector_credentials",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "SaveBrowserSessionProfile",
       "AuthorizedActions": [
         {

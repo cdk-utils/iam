@@ -229,6 +229,8 @@ export class ArcRegionSwitchOperations {
 	static readonly ListRoute53HealthChecksInRegion: string[] = [
 		"arc-region-switch:ListRoute53HealthChecksInRegion",
 	];
+	/** IAM actions required for the ListServiceQuotaWarnings API call. */
+	static readonly ListServiceQuotaWarnings: string[] = [];
 	/** IAM actions required for the ListTagsForResource API call. */
 	static readonly ListTagsForResource: string[] = [
 		"arc-region-switch:ListTagsForResource",

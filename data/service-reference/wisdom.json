@@ -13,9 +13,6 @@
       },
       "Resources": [
         {
-          "Name": "KnowledgeBase"
-        },
-        {
           "Name": "MessageTemplate"
         }
       ],
@@ -252,9 +249,6 @@
       "Resources": [
         {
           "Name": "Content"
-        },
-        {
-          "Name": "KnowledgeBase"
         }
       ],
       "SupportedBy": {
@@ -317,9 +311,6 @@
       },
       "Resources": [
         {
-          "Name": "KnowledgeBase"
-        },
-        {
           "Name": "MessageTemplate"
         }
       ],
@@ -339,9 +330,6 @@
         }
       },
       "Resources": [
-        {
-          "Name": "KnowledgeBase"
-        },
         {
           "Name": "MessageTemplate"
         }
@@ -400,9 +388,6 @@
         }
       },
       "Resources": [
-        {
-          "Name": "KnowledgeBase"
-        },
         {
           "Name": "MessageTemplate"
         }
@@ -585,9 +570,6 @@
       "Resources": [
         {
           "Name": "Content"
-        },
-        {
-          "Name": "KnowledgeBase"
         }
       ],
       "SupportedBy": {
@@ -611,9 +593,6 @@
         },
         {
           "Name": "ContentAssociation"
-        },
-        {
-          "Name": "KnowledgeBase"
         }
       ],
       "SupportedBy": {
@@ -673,9 +652,6 @@
       },
       "Resources": [
         {
-          "Name": "KnowledgeBase"
-        },
-        {
           "Name": "MessageTemplate"
         }
       ],
@@ -696,9 +672,6 @@
       },
       "Resources": [
         {
-          "Name": "KnowledgeBase"
-        },
-        {
           "Name": "MessageTemplate"
         }
       ],
@@ -718,9 +691,6 @@
         }
       },
       "Resources": [
-        {
-          "Name": "KnowledgeBase"
-        },
         {
           "Name": "QuickResponse"
         }
@@ -843,9 +813,6 @@
       "Resources": [
         {
           "Name": "Content"
-        },
-        {
-          "Name": "KnowledgeBase"
         }
       ],
       "SupportedBy": {
@@ -869,9 +836,6 @@
         },
         {
           "Name": "ContentAssociation"
-        },
-        {
-          "Name": "KnowledgeBase"
         }
       ],
       "SupportedBy": {
@@ -892,9 +856,6 @@
       "Resources": [
         {
           "Name": "Content"
-        },
-        {
-          "Name": "KnowledgeBase"
         }
       ],
       "SupportedBy": {
@@ -957,9 +918,6 @@
       },
       "Resources": [
         {
-          "Name": "KnowledgeBase"
-        },
-        {
           "Name": "MessageTemplate"
         }
       ],
@@ -999,9 +957,6 @@
         }
       },
       "Resources": [
-        {
-          "Name": "KnowledgeBase"
-        },
         {
           "Name": "QuickResponse"
         }
@@ -1199,9 +1154,6 @@
       "Resources": [
         {
           "Name": "Content"
-        },
-        {
-          "Name": "KnowledgeBase"
         }
       ],
       "SupportedBy": {
@@ -1275,9 +1227,6 @@
         }
       },
       "Resources": [
-        {
-          "Name": "KnowledgeBase"
-        },
         {
           "Name": "MessageTemplate"
         }
@@ -1516,9 +1465,6 @@
         }
       },
       "Resources": [
-        {
-          "Name": "KnowledgeBase"
-        },
         {
           "Name": "MessageTemplate"
         }
@@ -1878,9 +1824,6 @@
       "Resources": [
         {
           "Name": "Content"
-        },
-        {
-          "Name": "KnowledgeBase"
         }
       ],
       "SupportedBy": {
@@ -1920,9 +1863,6 @@
       },
       "Resources": [
         {
-          "Name": "KnowledgeBase"
-        },
-        {
           "Name": "MessageTemplate"
         }
       ],
@@ -1943,9 +1883,6 @@
       },
       "Resources": [
         {
-          "Name": "KnowledgeBase"
-        },
-        {
           "Name": "MessageTemplate"
         }
       ],
@@ -1965,9 +1902,6 @@
         }
       },
       "Resources": [
-        {
-          "Name": "KnowledgeBase"
-        },
         {
           "Name": "QuickResponse"
         }

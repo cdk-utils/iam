@@ -1762,7 +1762,10 @@ export class CloudWatchOperations {
 		"cloudwatch:TagResource",
 	];
 	/** IAM actions required for the CreateView API call. */
-	static readonly CreateView: string[] = ["cloudwatch:CreateView"];
+	static readonly CreateView: string[] = [
+		"cloudwatch:CreateView",
+		"cloudwatch:TagResource",
+	];
 	/** IAM actions required for the DeleteAccessGrant API call. */
 	static readonly DeleteAccessGrant: string[] = [
 		"cloudwatch:DeleteAccessGrant",

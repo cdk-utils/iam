@@ -981,6 +981,7 @@ new securityagent.SecurityagentActions()
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.DeleteSecurityRequirementPack">DeleteSecurityRequirementPack</a></code> | <code>string</code> | [Write] securityagent:DeleteSecurityRequirementPack. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.DeleteTargetDomain">DeleteTargetDomain</a></code> | <code>string</code> | [Write] securityagent:DeleteTargetDomain. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.DescribePrivateConnection">DescribePrivateConnection</a></code> | <code>string</code> | [Read] securityagent:DescribePrivateConnection. |
+| <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.HandleProviderCallback">HandleProviderCallback</a></code> | <code>string</code> | [Write] securityagent:HandleProviderCallback. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.HandleProviderRegistrationCallback">HandleProviderRegistrationCallback</a></code> | <code>string</code> | [Write] securityagent:HandleProviderRegistrationCallback. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.ImportSecurityRequirements">ImportSecurityRequirements</a></code> | <code>string</code> | [Write] securityagent:ImportSecurityRequirements. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.InitiateProviderRegistration">InitiateProviderRegistration</a></code> | <code>string</code> | [Write] securityagent:InitiateProviderRegistration. |
@@ -1031,6 +1032,7 @@ new securityagent.SecurityagentActions()
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.UpdateDiscoveredDomains">UpdateDiscoveredDomains</a></code> | <code>string</code> | [Write] securityagent:UpdateDiscoveredDomains. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.UpdateFinding">UpdateFinding</a></code> | <code>string</code> | [Write] securityagent:UpdateFinding. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.UpdateIntegratedResources">UpdateIntegratedResources</a></code> | <code>string</code> | [Write] securityagent:UpdateIntegratedResources. |
+| <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.UpdateIntegration">UpdateIntegration</a></code> | <code>string</code> | [Write] securityagent:UpdateIntegration. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.UpdatePentest">UpdatePentest</a></code> | <code>string</code> | [Write] securityagent:UpdatePentest. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.UpdatePrivateConnectionCertificate">UpdatePrivateConnectionCertificate</a></code> | <code>string</code> | [Write] securityagent:UpdatePrivateConnectionCertificate. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.UpdateSecurityRequirement">UpdateSecurityRequirement</a></code> | <code>string</code> | [Write] securityagent:UpdateSecurityRequirement. |
@@ -1810,6 +1812,18 @@ public readonly DescribePrivateConnection: string;
 
 ---
 
+##### `HandleProviderCallback`<sup>Required</sup> <a name="HandleProviderCallback" id="@cdk_utils/iam.securityagent.SecurityagentActions.property.HandleProviderCallback"></a>
+
+```typescript
+public readonly HandleProviderCallback: string;
+```
+
+- *Type:* string
+
+[Write] securityagent:HandleProviderCallback.
+
+---
+
 ##### `HandleProviderRegistrationCallback`<sup>Required</sup> <a name="HandleProviderRegistrationCallback" id="@cdk_utils/iam.securityagent.SecurityagentActions.property.HandleProviderRegistrationCallback"></a>
 
 ```typescript
@@ -2410,6 +2424,18 @@ public readonly UpdateIntegratedResources: string;
 
 ---
 
+##### `UpdateIntegration`<sup>Required</sup> <a name="UpdateIntegration" id="@cdk_utils/iam.securityagent.SecurityagentActions.property.UpdateIntegration"></a>
+
+```typescript
+public readonly UpdateIntegration: string;
+```
+
+- *Type:* string
+
+[Write] securityagent:UpdateIntegration.
+
+---
+
 ##### `UpdatePentest`<sup>Required</sup> <a name="UpdatePentest" id="@cdk_utils/iam.securityagent.SecurityagentActions.property.UpdatePentest"></a>
 
 ```typescript
@@ -2788,6 +2814,7 @@ new securityagent.SecurityagentOperations()
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentOperations.property.DescribePrivateConnection">DescribePrivateConnection</a></code> | <code>string[]</code> | IAM actions required for the DescribePrivateConnection API call. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentOperations.property.ImportSecurityRequirements">ImportSecurityRequirements</a></code> | <code>string[]</code> | IAM actions required for the ImportSecurityRequirements API call. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentOperations.property.InitiateProviderRegistration">InitiateProviderRegistration</a></code> | <code>string[]</code> | IAM actions required for the InitiateProviderRegistration API call. |
+| <code><a href="#@cdk_utils/iam.securityagent.SecurityagentOperations.property.ListActorMessages">ListActorMessages</a></code> | <code>string[]</code> | IAM actions required for the ListActorMessages API call. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentOperations.property.ListAgentSpaces">ListAgentSpaces</a></code> | <code>string[]</code> | IAM actions required for the ListAgentSpaces API call. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentOperations.property.ListApplications">ListApplications</a></code> | <code>string[]</code> | IAM actions required for the ListApplications API call. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentOperations.property.ListArtifacts">ListArtifacts</a></code> | <code>string[]</code> | IAM actions required for the ListArtifacts API call. |
@@ -3364,6 +3391,18 @@ public readonly InitiateProviderRegistration: string[];
 - *Type:* string[]
 
 IAM actions required for the InitiateProviderRegistration API call.
+
+---
+
+##### `ListActorMessages`<sup>Required</sup> <a name="ListActorMessages" id="@cdk_utils/iam.securityagent.SecurityagentOperations.property.ListActorMessages"></a>
+
+```typescript
+public readonly ListActorMessages: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListActorMessages API call.
 
 ---
 

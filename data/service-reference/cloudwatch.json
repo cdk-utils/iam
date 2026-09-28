@@ -3320,6 +3320,10 @@
         {
           "Name": "CreateView",
           "Service": "cloudwatch"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "cloudwatch"
         }
       ],
       "SDK": [
