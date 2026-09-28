@@ -242,6 +242,26 @@
       }
     },
     {
+      "Name": "GetWhatsAppCallPermission",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "phone-number-id"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "GetWhatsAppFlow",
       "Annotations": {
         "Properties": {
@@ -500,6 +520,26 @@
       }
     },
     {
+      "Name": "SendWhatsAppCallEvent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "phone-number-id"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "SendWhatsAppMessage",
       "Annotations": {
         "Properties": {
@@ -567,6 +607,26 @@
         },
         {
           "Name": "waba"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateLinkedWhatsAppBusinessAccountPhoneNumber",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "phone-number-id"
         }
       ],
       "SupportedBy": {
@@ -883,6 +943,12 @@
     },
     {
       "Name": "GetWhatsAppCallPermission",
+      "AuthorizedActions": [
+        {
+          "Name": "GetWhatsAppCallPermission",
+          "Service": "social-messaging"
+        }
+      ],
       "SDK": [
         {
           "Name": "socialmessaging",
@@ -1120,6 +1186,12 @@
     },
     {
       "Name": "SendWhatsAppCallEvent",
+      "AuthorizedActions": [
+        {
+          "Name": "SendWhatsAppCallEvent",
+          "Service": "social-messaging"
+        }
+      ],
       "SDK": [
         {
           "Name": "socialmessaging",
@@ -1188,6 +1260,12 @@
     },
     {
       "Name": "UpdateLinkedWhatsAppBusinessAccountPhoneNumber",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateLinkedWhatsAppBusinessAccountPhoneNumber",
+          "Service": "social-messaging"
+        }
+      ],
       "SDK": [
         {
           "Name": "socialmessaging",

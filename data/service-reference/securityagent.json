@@ -1167,6 +1167,21 @@
       }
     },
     {
+      "Name": "HandleProviderCallback",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "HandleProviderRegistrationCallback",
       "Annotations": {
         "Properties": {
@@ -2152,6 +2167,26 @@
         {
           "Name": "AgentSpace"
         },
+        {
+          "Name": "Integration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateIntegration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
         {
           "Name": "Integration"
         }
@@ -3149,6 +3184,22 @@
         {
           "Name": "securityagent",
           "Method": "initiate_provider_registration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListActorMessages",
+      "AuthorizedActions": [
+        {
+          "Name": "ListActorMessages",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "list_actor_messages",
           "Package": "Boto3"
         }
       ]

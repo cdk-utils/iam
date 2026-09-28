@@ -20,6 +20,9 @@ export class SageMakerActions {
 	static readonly AddTags = "sagemaker:AddTags";
 	/** [Write] sagemaker:AssociateTrialComponent */
 	static readonly AssociateTrialComponent = "sagemaker:AssociateTrialComponent";
+	/** [Write] sagemaker:AttachClusterNodeNetworkInterface */
+	static readonly AttachClusterNodeNetworkInterface =
+		"sagemaker:AttachClusterNodeNetworkInterface";
 	/** [Write] sagemaker:AttachClusterNodeVolume */
 	static readonly AttachClusterNodeVolume = "sagemaker:AttachClusterNodeVolume";
 	/** [Write] sagemaker:BatchAddClusterNodes */
@@ -1139,6 +1142,7 @@ export class SageMakerActions {
 	static readonly AllWriteActions: string[] = [
 		SageMakerActions.AddAssociation,
 		SageMakerActions.AssociateTrialComponent,
+		SageMakerActions.AttachClusterNodeNetworkInterface,
 		SageMakerActions.AttachClusterNodeVolume,
 		SageMakerActions.BatchAddClusterNodes,
 		SageMakerActions.BatchDeleteClusterNodes,
@@ -6144,7 +6148,9 @@ export class SageMakerOperations {
 		"sagemaker:AssociateTrialComponent",
 	];
 	/** IAM actions required for the AttachClusterNodeNetworkInterface API call. */
-	static readonly AttachClusterNodeNetworkInterface: string[] = [];
+	static readonly AttachClusterNodeNetworkInterface: string[] = [
+		"sagemaker:AttachClusterNodeNetworkInterface",
+	];
 	/** IAM actions required for the AttachClusterNodeVolume API call. */
 	static readonly AttachClusterNodeVolume: string[] = [
 		"sagemaker:AttachClusterNodeVolume",
@@ -8159,10 +8165,6 @@ export class SageMakerConditions {
 	static readonly DeleteAppConditionKeys: string[] = [
 		"sagemaker:OwnerUserProfileArn",
 		"sagemaker:SpaceSharingType",
-	];
-	/** Condition keys applicable to the DeleteFeatureGroup action. */
-	static readonly DeleteFeatureGroupConditionKeys: string[] = [
-		"aws:RequestTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteSpace action. */
 	static readonly DeleteSpaceConditionKeys: string[] = [

@@ -3819,6 +3819,8 @@ export class BedrockAgentcoreOperations {
 	static readonly RetrieveMemoryRecords: string[] = [
 		"bedrock-agentcore:RetrieveMemoryRecords",
 	];
+	/** IAM actions required for the RotatePaymentConnectorCredentials API call. */
+	static readonly RotatePaymentConnectorCredentials: string[] = [];
 	/** IAM actions required for the SaveBrowserSessionProfile API call. */
 	static readonly SaveBrowserSessionProfile: string[] = [
 		"bedrock-agentcore:SaveBrowserSessionProfile",

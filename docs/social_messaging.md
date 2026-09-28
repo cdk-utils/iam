@@ -327,6 +327,7 @@ new social_messaging.SocialMessagingActions()
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.social_messaging.SocialMessagingActions.property.actionGetLinkedWhatsAppBusinessAccount">actionGetLinkedWhatsAppBusinessAccount</a></code> | <code>string</code> | [Read] social-messaging:GetLinkedWhatsAppBusinessAccount. |
 | <code><a href="#@cdk_utils/iam.social_messaging.SocialMessagingActions.property.actionGetLinkedWhatsAppBusinessAccountPhoneNumber">actionGetLinkedWhatsAppBusinessAccountPhoneNumber</a></code> | <code>string</code> | [Read] social-messaging:GetLinkedWhatsAppBusinessAccountPhoneNumber. |
+| <code><a href="#@cdk_utils/iam.social_messaging.SocialMessagingActions.property.actionGetWhatsAppCallPermission">actionGetWhatsAppCallPermission</a></code> | <code>string</code> | [Read] social-messaging:GetWhatsAppCallPermission. |
 | <code><a href="#@cdk_utils/iam.social_messaging.SocialMessagingActions.property.actionGetWhatsAppFlow">actionGetWhatsAppFlow</a></code> | <code>string</code> | [Read] social-messaging:GetWhatsAppFlow. |
 | <code><a href="#@cdk_utils/iam.social_messaging.SocialMessagingActions.property.actionGetWhatsAppFlowPreview">actionGetWhatsAppFlowPreview</a></code> | <code>string</code> | [Read] social-messaging:GetWhatsAppFlowPreview. |
 | <code><a href="#@cdk_utils/iam.social_messaging.SocialMessagingActions.property.actionGetWhatsAppMessageMedia">actionGetWhatsAppMessageMedia</a></code> | <code>string</code> | [Write] social-messaging:GetWhatsAppMessageMedia. |
@@ -355,10 +356,12 @@ new social_messaging.SocialMessagingActions()
 | <code><a href="#@cdk_utils/iam.social_messaging.SocialMessagingActions.property.PostWhatsAppMessageMedia">PostWhatsAppMessageMedia</a></code> | <code>string</code> | [Write] social-messaging:PostWhatsAppMessageMedia. |
 | <code><a href="#@cdk_utils/iam.social_messaging.SocialMessagingActions.property.PublishWhatsAppFlow">PublishWhatsAppFlow</a></code> | <code>string</code> | [Write] social-messaging:PublishWhatsAppFlow. |
 | <code><a href="#@cdk_utils/iam.social_messaging.SocialMessagingActions.property.PutWhatsAppBusinessAccountEventDestinations">PutWhatsAppBusinessAccountEventDestinations</a></code> | <code>string</code> | [Write] social-messaging:PutWhatsAppBusinessAccountEventDestinations. |
+| <code><a href="#@cdk_utils/iam.social_messaging.SocialMessagingActions.property.SendWhatsAppCallEvent">SendWhatsAppCallEvent</a></code> | <code>string</code> | [Write] social-messaging:SendWhatsAppCallEvent. |
 | <code><a href="#@cdk_utils/iam.social_messaging.SocialMessagingActions.property.SendWhatsAppMessage">SendWhatsAppMessage</a></code> | <code>string</code> | [Write] social-messaging:SendWhatsAppMessage. |
 | <code><a href="#@cdk_utils/iam.social_messaging.SocialMessagingActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.social_messaging.SocialMessagingActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] social-messaging:TagResource. |
 | <code><a href="#@cdk_utils/iam.social_messaging.SocialMessagingActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] social-messaging:UntagResource. |
+| <code><a href="#@cdk_utils/iam.social_messaging.SocialMessagingActions.property.UpdateLinkedWhatsAppBusinessAccountPhoneNumber">UpdateLinkedWhatsAppBusinessAccountPhoneNumber</a></code> | <code>string</code> | [Write] social-messaging:UpdateLinkedWhatsAppBusinessAccountPhoneNumber. |
 | <code><a href="#@cdk_utils/iam.social_messaging.SocialMessagingActions.property.UpdateWhatsAppFlow">UpdateWhatsAppFlow</a></code> | <code>string</code> | [Write] social-messaging:UpdateWhatsAppFlow. |
 | <code><a href="#@cdk_utils/iam.social_messaging.SocialMessagingActions.property.UpdateWhatsAppFlowAssets">UpdateWhatsAppFlowAssets</a></code> | <code>string</code> | [Write] social-messaging:UpdateWhatsAppFlowAssets. |
 | <code><a href="#@cdk_utils/iam.social_messaging.SocialMessagingActions.property.UpdateWhatsAppMessageTemplate">UpdateWhatsAppMessageTemplate</a></code> | <code>string</code> | [Write] social-messaging:UpdateWhatsAppMessageTemplate. |
@@ -386,6 +389,18 @@ public readonly actionGetLinkedWhatsAppBusinessAccountPhoneNumber: string;
 - *Type:* string
 
 [Read] social-messaging:GetLinkedWhatsAppBusinessAccountPhoneNumber.
+
+---
+
+##### `actionGetWhatsAppCallPermission`<sup>Required</sup> <a name="actionGetWhatsAppCallPermission" id="@cdk_utils/iam.social_messaging.SocialMessagingActions.property.actionGetWhatsAppCallPermission"></a>
+
+```typescript
+public readonly actionGetWhatsAppCallPermission: string;
+```
+
+- *Type:* string
+
+[Read] social-messaging:GetWhatsAppCallPermission.
 
 ---
 
@@ -725,6 +740,18 @@ public readonly PutWhatsAppBusinessAccountEventDestinations: string;
 
 ---
 
+##### `SendWhatsAppCallEvent`<sup>Required</sup> <a name="SendWhatsAppCallEvent" id="@cdk_utils/iam.social_messaging.SocialMessagingActions.property.SendWhatsAppCallEvent"></a>
+
+```typescript
+public readonly SendWhatsAppCallEvent: string;
+```
+
+- *Type:* string
+
+[Write] social-messaging:SendWhatsAppCallEvent.
+
+---
+
 ##### `SendWhatsAppMessage`<sup>Required</sup> <a name="SendWhatsAppMessage" id="@cdk_utils/iam.social_messaging.SocialMessagingActions.property.SendWhatsAppMessage"></a>
 
 ```typescript
@@ -770,6 +797,18 @@ public readonly UntagResource: string;
 - *Type:* string
 
 [Tagging] social-messaging:UntagResource.
+
+---
+
+##### `UpdateLinkedWhatsAppBusinessAccountPhoneNumber`<sup>Required</sup> <a name="UpdateLinkedWhatsAppBusinessAccountPhoneNumber" id="@cdk_utils/iam.social_messaging.SocialMessagingActions.property.UpdateLinkedWhatsAppBusinessAccountPhoneNumber"></a>
+
+```typescript
+public readonly UpdateLinkedWhatsAppBusinessAccountPhoneNumber: string;
+```
+
+- *Type:* string
+
+[Write] social-messaging:UpdateLinkedWhatsAppBusinessAccountPhoneNumber.
 
 ---
 

@@ -497,7 +497,10 @@ export class MediaConvertOperations {
 		"mediaconvert:DisassociateCertificate",
 	];
 	/** IAM actions required for the GetJob API call. */
-	static readonly opGetJob: string[] = ["mediaconvert:GetJob"];
+	static readonly opGetJob: string[] = [
+		"mediaconvert:GetJob",
+		"mediaconvert:ListJobs",
+	];
 	/** IAM actions required for the GetJobTemplate API call. */
 	static readonly opGetJobTemplate: string[] = [
 		"mediaconvert:GetJobTemplate",

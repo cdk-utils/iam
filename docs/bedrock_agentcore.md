@@ -10250,6 +10250,7 @@ new bedrock_agentcore.BedrockAgentcoreOperations()
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.ProcessPayment">ProcessPayment</a></code> | <code>string[]</code> | IAM actions required for the ProcessPayment API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.PutResourcePolicy">PutResourcePolicy</a></code> | <code>string[]</code> | IAM actions required for the PutResourcePolicy API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.RetrieveMemoryRecords">RetrieveMemoryRecords</a></code> | <code>string[]</code> | IAM actions required for the RetrieveMemoryRecords API call. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.RotatePaymentConnectorCredentials">RotatePaymentConnectorCredentials</a></code> | <code>string[]</code> | IAM actions required for the RotatePaymentConnectorCredentials API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.SaveBrowserSessionProfile">SaveBrowserSessionProfile</a></code> | <code>string[]</code> | IAM actions required for the SaveBrowserSessionProfile API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.SearchRegistryRecords">SearchRegistryRecords</a></code> | <code>string[]</code> | IAM actions required for the SearchRegistryRecords API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.StartBatchEvaluation">StartBatchEvaluation</a></code> | <code>string[]</code> | IAM actions required for the StartBatchEvaluation API call. |
@@ -12599,6 +12600,18 @@ public readonly RetrieveMemoryRecords: string[];
 - *Type:* string[]
 
 IAM actions required for the RetrieveMemoryRecords API call.
+
+---
+
+##### `RotatePaymentConnectorCredentials`<sup>Required</sup> <a name="RotatePaymentConnectorCredentials" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.RotatePaymentConnectorCredentials"></a>
+
+```typescript
+public readonly RotatePaymentConnectorCredentials: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the RotatePaymentConnectorCredentials API call.
 
 ---
 

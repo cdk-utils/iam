@@ -6717,6 +6717,16 @@
       ]
     },
     {
+      "Name": "CreateVpcConfiguration",
+      "SDK": [
+        {
+          "Name": "bedrock-agent",
+          "Method": "create_vpc_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DeleteAgent",
       "AuthorizedActions": [
         {
@@ -7261,6 +7271,16 @@
         {
           "Name": "bedrock-agent-runtime",
           "Method": "delete_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteVpcConfiguration",
+      "SDK": [
+        {
+          "Name": "bedrock-agent",
+          "Method": "delete_vpc_configuration",
           "Package": "Boto3"
         }
       ]
@@ -8355,6 +8375,16 @@
       ]
     },
     {
+      "Name": "GetVpcConfiguration",
+      "SDK": [
+        {
+          "Name": "bedrock-agent",
+          "Method": "get_vpc_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "IngestKnowledgeBaseDocuments",
       "AuthorizedActions": [
         {
@@ -9438,6 +9468,16 @@
         {
           "Name": "bedrock-data-automation-runtime",
           "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListVpcConfigurations",
+      "SDK": [
+        {
+          "Name": "bedrock-agent",
+          "Method": "list_vpc_configurations",
           "Package": "Boto3"
         }
       ]

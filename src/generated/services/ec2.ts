@@ -1951,6 +1951,9 @@ export class EC2Actions {
 	/** [Write] ec2:ReplaceImageCriteriaInAllowedImagesSettings */
 	static readonly ReplaceImageCriteriaInAllowedImagesSettings =
 		"ec2:ReplaceImageCriteriaInAllowedImagesSettings";
+	/** [Write] ec2:ReplaceImageInstanceTypeSpecification */
+	static readonly ReplaceImageInstanceTypeSpecification =
+		"ec2:ReplaceImageInstanceTypeSpecification";
 	/** [Write] ec2:ReplaceNetworkAclAssociation */
 	static readonly ReplaceNetworkAclAssociation =
 		"ec2:ReplaceNetworkAclAssociation";
@@ -2070,6 +2073,9 @@ export class EC2Actions {
 	/** [Write] ec2:UpdateSecurityGroupRuleDescriptionsIngress */
 	static readonly UpdateSecurityGroupRuleDescriptionsIngress =
 		"ec2:UpdateSecurityGroupRuleDescriptionsIngress";
+	/** [Read] ec2:ValidateSecurityGroupQuotasForInterface */
+	static readonly ValidateSecurityGroupQuotasForInterface =
+		"ec2:ValidateSecurityGroupQuotasForInterface";
 	/** [Write] ec2:WithdrawByoipCidr */
 	static readonly WithdrawByoipCidr = "ec2:WithdrawByoipCidr";
 
@@ -2134,6 +2140,7 @@ export class EC2Actions {
 		EC2Actions.actionGetSpotPlacementScores,
 		EC2Actions.actionGetSubnetCidrReservations,
 		EC2Actions.StartDeclarativePoliciesReport,
+		EC2Actions.ValidateSecurityGroupQuotasForInterface,
 	];
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
@@ -2607,6 +2614,7 @@ export class EC2Actions {
 		EC2Actions.ReleaseIpamPoolAllocation,
 		EC2Actions.ReplaceIamInstanceProfileAssociation,
 		EC2Actions.ReplaceImageCriteriaInAllowedImagesSettings,
+		EC2Actions.ReplaceImageInstanceTypeSpecification,
 		EC2Actions.ReplaceNetworkAclAssociation,
 		EC2Actions.ReplaceNetworkAclEntry,
 		EC2Actions.ReplaceRoute,
@@ -12876,7 +12884,9 @@ export class EC2Operations {
 		"ec2:ReplaceImageCriteriaInAllowedImagesSettings",
 	];
 	/** IAM actions required for the ReplaceImageInstanceTypeSpecification API call. */
-	static readonly ReplaceImageInstanceTypeSpecification: string[] = [];
+	static readonly ReplaceImageInstanceTypeSpecification: string[] = [
+		"ec2:ReplaceImageInstanceTypeSpecification",
+	];
 	/** IAM actions required for the ReplaceNetworkAclAssociation API call. */
 	static readonly ReplaceNetworkAclAssociation: string[] = [
 		"ec2:ReplaceNetworkAclAssociation",
@@ -13061,7 +13071,9 @@ export class EC2Operations {
 		"ec2:UpdateSecurityGroupRuleDescriptionsIngress",
 	];
 	/** IAM actions required for the ValidateSecurityGroupQuotasForInterface API call. */
-	static readonly ValidateSecurityGroupQuotasForInterface: string[] = [];
+	static readonly ValidateSecurityGroupQuotasForInterface: string[] = [
+		"ec2:ValidateSecurityGroupQuotasForInterface",
+	];
 	/** IAM actions required for the WithdrawByoipCidr API call. */
 	static readonly WithdrawByoipCidr: string[] = ["ec2:WithdrawByoipCidr"];
 }
@@ -15596,6 +15608,9 @@ export class EC2Conditions {
 	/** Condition keys applicable to the ReplaceImageCriteriaInAllowedImagesSettings action. */
 	static readonly ReplaceImageCriteriaInAllowedImagesSettingsConditionKeys: string[] =
 		["ec2:Region"];
+	/** Condition keys applicable to the ReplaceImageInstanceTypeSpecification action. */
+	static readonly ReplaceImageInstanceTypeSpecificationConditionKeys: string[] =
+		["ec2:Region"];
 	/** Condition keys applicable to the ReplaceNetworkAclAssociation action. */
 	static readonly ReplaceNetworkAclAssociationConditionKeys: string[] = [
 		"ec2:Region",
@@ -15757,6 +15772,9 @@ export class EC2Conditions {
 	/** Condition keys applicable to the UpdateSecurityGroupRuleDescriptionsIngress action. */
 	static readonly UpdateSecurityGroupRuleDescriptionsIngressConditionKeys: string[] =
 		["ec2:Region"];
+	/** Condition keys applicable to the ValidateSecurityGroupQuotasForInterface action. */
+	static readonly ValidateSecurityGroupQuotasForInterfaceConditionKeys: string[] =
+		["ec2:Region"];
 	/** Condition keys applicable to the WithdrawByoipCidr action. */
 	static readonly WithdrawByoipCidrConditionKeys: string[] = ["ec2:Region"];
 
@@ -15790,6 +15808,8 @@ export class EC2Conditions {
 	static readonly AVAILABILITY_ZONE = "ec2:AvailabilityZone";
 	/** Condition key: ec2:AvailabilityZoneId (String) */
 	static readonly AVAILABILITY_ZONE_ID = "ec2:AvailabilityZoneId";
+	/** Condition key: ec2:BootModeOverride (String) */
+	static readonly BOOT_MODE_OVERRIDE = "ec2:BootModeOverride";
 	/** Condition key: ec2:CapacityReservationFleet (ARN) */
 	static readonly CAPACITY_RESERVATION_FLEET = "ec2:CapacityReservationFleet";
 	/** Condition key: ec2:ClientRootCertificateChainArn (ARN) */
@@ -16185,6 +16205,15 @@ export class EC2Conditions {
 		value: string,
 	): Record<string, Record<string, string>> {
 		return { StringEquals: { "ec2:AvailabilityZoneId": value } };
+	}
+
+	/**
+	 * Generates a condition block for `ec2:BootModeOverride`.
+	 */
+	static bootModeOverride(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "ec2:BootModeOverride": value } };
 	}
 
 	/**
