@@ -311,6 +311,21 @@
       }
     },
     {
+      "Name": "ListServiceQuotaWarnings",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ListTagsForResource",
       "ActionConditionKeys": [
         "aws:ResourceTag/${TagKey}"
@@ -742,6 +757,12 @@
     },
     {
       "Name": "ListServiceQuotaWarnings",
+      "AuthorizedActions": [
+        {
+          "Name": "ListServiceQuotaWarnings",
+          "Service": "arc-region-switch"
+        }
+      ],
       "SDK": [
         {
           "Name": "arc-region-switch",

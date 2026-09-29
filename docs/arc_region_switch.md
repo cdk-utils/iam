@@ -170,6 +170,7 @@ new arc_region_switch.ArcRegionSwitchActions()
 | <code><a href="#@cdk_utils/iam.arc_region_switch.ArcRegionSwitchActions.property.ListPlansInRegion">ListPlansInRegion</a></code> | <code>string</code> | [List] arc-region-switch:ListPlansInRegion. |
 | <code><a href="#@cdk_utils/iam.arc_region_switch.ArcRegionSwitchActions.property.ListRoute53HealthChecks">ListRoute53HealthChecks</a></code> | <code>string</code> | [List] arc-region-switch:ListRoute53HealthChecks. |
 | <code><a href="#@cdk_utils/iam.arc_region_switch.ArcRegionSwitchActions.property.ListRoute53HealthChecksInRegion">ListRoute53HealthChecksInRegion</a></code> | <code>string</code> | [List] arc-region-switch:ListRoute53HealthChecksInRegion. |
+| <code><a href="#@cdk_utils/iam.arc_region_switch.ArcRegionSwitchActions.property.ListServiceQuotaWarnings">ListServiceQuotaWarnings</a></code> | <code>string</code> | [List] arc-region-switch:ListServiceQuotaWarnings. |
 | <code><a href="#@cdk_utils/iam.arc_region_switch.ArcRegionSwitchActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [Read] arc-region-switch:ListTagsForResource. |
 | <code><a href="#@cdk_utils/iam.arc_region_switch.ArcRegionSwitchActions.property.PutResourcePolicy">PutResourcePolicy</a></code> | <code>string</code> | [PermissionManagement] arc-region-switch:PutResourcePolicy. |
 | <code><a href="#@cdk_utils/iam.arc_region_switch.ArcRegionSwitchActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
@@ -431,6 +432,18 @@ public readonly ListRoute53HealthChecksInRegion: string;
 - *Type:* string
 
 [List] arc-region-switch:ListRoute53HealthChecksInRegion.
+
+---
+
+##### `ListServiceQuotaWarnings`<sup>Required</sup> <a name="ListServiceQuotaWarnings" id="@cdk_utils/iam.arc_region_switch.ArcRegionSwitchActions.property.ListServiceQuotaWarnings"></a>
+
+```typescript
+public readonly ListServiceQuotaWarnings: string;
+```
+
+- *Type:* string
+
+[List] arc-region-switch:ListServiceQuotaWarnings.
 
 ---
 

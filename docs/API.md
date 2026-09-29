@@ -410,6 +410,7 @@ The following submodules are available:
 - [sso](./sso.md)
 - [sso_directory](./sso_directory.md)
 - [sso_oauth](./sso_oauth.md)
+- [startups](./startups.md)
 - [states](./states.md)
 - [storagegateway](./storagegateway.md)
 - [sts](./sts.md)

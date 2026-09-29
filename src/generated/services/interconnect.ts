@@ -263,6 +263,7 @@ export class InterconnectConditions {
 	static readonly CreateConnectionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
+		"interconnect:RemoteAccount",
 	];
 	/** Condition keys applicable to the TagResource action. */
 	static readonly TagResourceConditionKeys: string[] = [
@@ -278,6 +279,8 @@ export class InterconnectConditions {
 	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
 	static readonly AWS_TAG_KEYS = "aws:TagKeys";
+	/** Condition key: interconnect:RemoteAccount (String) */
+	static readonly REMOTE_ACCOUNT = "interconnect:RemoteAccount";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.
@@ -298,5 +301,12 @@ export class InterconnectConditions {
 	 */
 	static tagKeys(values: string[]): Record<string, Record<string, string[]>> {
 		return { "ForAllValues:StringEquals": { "aws:TagKeys": values } };
+	}
+
+	/**
+	 * Generates a condition block for `interconnect:RemoteAccount`.
+	 */
+	static remoteAccount(value: string): Record<string, Record<string, string>> {
+		return { StringEquals: { "interconnect:RemoteAccount": value } };
 	}
 }

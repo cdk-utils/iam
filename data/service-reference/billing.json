@@ -876,6 +876,26 @@
       ]
     },
     {
+      "Name": "ListBusinessSupportAccountCharges",
+      "SDK": [
+        {
+          "Name": "billing",
+          "Method": "list_business_support_account_charges",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListBusinessSupportSubscriptionHistory",
+      "SDK": [
+        {
+          "Name": "billing",
+          "Method": "list_business_support_subscription_history",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListEnterpriseSupportLinkedAccountCharges",
       "AuthorizedActions": [
         {

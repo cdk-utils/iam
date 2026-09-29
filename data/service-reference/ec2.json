@@ -30951,6 +30951,16 @@
       ]
     },
     {
+      "Name": "DeleteClientVpnEndpointAuthorizationPolicy",
+      "SDK": [
+        {
+          "Name": "ec2",
+          "Method": "delete_client_vpn_endpoint_authorization_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DeleteClientVpnRoute",
       "AuthorizedActions": [
         {
@@ -37055,6 +37065,16 @@
       ]
     },
     {
+      "Name": "GetClientVpnEndpointAuthorizationPolicy",
+      "SDK": [
+        {
+          "Name": "ec2",
+          "Method": "get_client_vpn_endpoint_authorization_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetCoipPoolUsage",
       "AuthorizedActions": [
         {
@@ -38406,6 +38426,16 @@
         {
           "Name": "ec2",
           "Method": "modify_client_vpn_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ModifyClientVpnEndpointAuthorizationPolicy",
+      "SDK": [
+        {
+          "Name": "ec2",
+          "Method": "modify_client_vpn_endpoint_authorization_policy",
           "Package": "Boto3"
         }
       ]

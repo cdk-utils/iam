@@ -10832,6 +10832,8 @@ export class EC2Operations {
 	static readonly DeleteClientVpnEndpoint: string[] = [
 		"ec2:DeleteClientVpnEndpoint",
 	];
+	/** IAM actions required for the DeleteClientVpnEndpointAuthorizationPolicy API call. */
+	static readonly DeleteClientVpnEndpointAuthorizationPolicy: string[] = [];
 	/** IAM actions required for the DeleteClientVpnRoute API call. */
 	static readonly DeleteClientVpnRoute: string[] = ["ec2:DeleteClientVpnRoute"];
 	/** IAM actions required for the DeleteCoipCidr API call. */
@@ -12183,6 +12185,8 @@ export class EC2Operations {
 	static readonly opGetCapacityReservationUsage: string[] = [
 		"ec2:GetCapacityReservationUsage",
 	];
+	/** IAM actions required for the GetClientVpnEndpointAuthorizationPolicy API call. */
+	static readonly opGetClientVpnEndpointAuthorizationPolicy: string[] = [];
 	/** IAM actions required for the GetCoipPoolUsage API call. */
 	static readonly opGetCoipPoolUsage: string[] = ["ec2:GetCoipPoolUsage"];
 	/** IAM actions required for the GetConsoleOutput API call. */
@@ -12499,6 +12503,8 @@ export class EC2Operations {
 	static readonly ModifyClientVpnEndpoint: string[] = [
 		"ec2:ModifyClientVpnEndpoint",
 	];
+	/** IAM actions required for the ModifyClientVpnEndpointAuthorizationPolicy API call. */
+	static readonly ModifyClientVpnEndpointAuthorizationPolicy: string[] = [];
 	/** IAM actions required for the ModifyDefaultCreditSpecification API call. */
 	static readonly ModifyDefaultCreditSpecification: string[] = [
 		"ec2:ModifyDefaultCreditSpecification",

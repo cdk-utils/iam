@@ -3712,7 +3712,6 @@ export class QuickSightOperations {
 	];
 	/** IAM actions required for the CreateOAuthClientApplication API call. */
 	static readonly CreateOAuthClientApplication: string[] = [
-		"quicksight:CreateDataSource",
 		"quicksight:CreateOAuthClientApplication",
 		"quicksight:TagResource",
 	];
@@ -3864,7 +3863,6 @@ export class QuickSightOperations {
 	static readonly DeleteNamespace: string[] = ["quicksight:DeleteNamespace"];
 	/** IAM actions required for the DeleteOAuthClientApplication API call. */
 	static readonly DeleteOAuthClientApplication: string[] = [
-		"quicksight:DeleteDataSource",
 		"quicksight:DeleteOAuthClientApplication",
 	];
 	/** IAM actions required for the DeleteRefreshSchedule API call. */
@@ -4095,7 +4093,6 @@ export class QuickSightOperations {
 	];
 	/** IAM actions required for the DescribeOAuthClientApplication API call. */
 	static readonly DescribeOAuthClientApplication: string[] = [
-		"quicksight:DescribeDataSource",
 		"quicksight:DescribeOAuthClientApplication",
 	];
 	/** IAM actions required for the DescribeQPersonalizationConfiguration API call. */
@@ -4291,7 +4288,6 @@ export class QuickSightOperations {
 	static readonly ListNamespaces: string[] = ["quicksight:ListNamespaces"];
 	/** IAM actions required for the ListOAuthClientApplications API call. */
 	static readonly ListOAuthClientApplications: string[] = [
-		"quicksight:ListDataSources",
 		"quicksight:ListOAuthClientApplications",
 	];
 	/** IAM actions required for the ListRefreshSchedules API call. */
@@ -4591,7 +4587,6 @@ export class QuickSightOperations {
 	];
 	/** IAM actions required for the UpdateOAuthClientApplication API call. */
 	static readonly UpdateOAuthClientApplication: string[] = [
-		"quicksight:UpdateDataSource",
 		"quicksight:UpdateOAuthClientApplication",
 	];
 	/** IAM actions required for the UpdatePublicSharingSettings API call. */
