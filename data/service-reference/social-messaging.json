@@ -22,6 +22,26 @@
       }
     },
     {
+      "Name": "CreateWhatsAppDataset",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "waba"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "CreateWhatsAppFlow",
       "Annotations": {
         "Properties": {
@@ -223,6 +243,26 @@
     },
     {
       "Name": "GetLinkedWhatsAppBusinessAccountPhoneNumber",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "phone-number-id"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetWhatsAppBusinessPublicKey",
       "Annotations": {
         "Properties": {
           "IsList": false,
@@ -520,6 +560,26 @@
       }
     },
     {
+      "Name": "PutWhatsAppBusinessPublicKey",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "phone-number-id"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "SendWhatsAppCallEvent",
       "Annotations": {
         "Properties": {
@@ -532,6 +592,26 @@
       "Resources": [
         {
           "Name": "phone-number-id"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SendWhatsAppConversionEvent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "waba"
         }
       ],
       "SupportedBy": {
@@ -747,6 +827,12 @@
     },
     {
       "Name": "CreateWhatsAppDataset",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateWhatsAppDataset",
+          "Service": "social-messaging"
+        }
+      ],
       "SDK": [
         {
           "Name": "socialmessaging",
@@ -933,6 +1019,12 @@
     },
     {
       "Name": "GetWhatsAppBusinessPublicKey",
+      "AuthorizedActions": [
+        {
+          "Name": "GetWhatsAppBusinessPublicKey",
+          "Service": "social-messaging"
+        }
+      ],
       "SDK": [
         {
           "Name": "socialmessaging",
@@ -952,7 +1044,7 @@
       "SDK": [
         {
           "Name": "socialmessaging",
-          "Method": "get_whats_app_call_permission",
+          "Method": "get_whatsapp_call_permission",
           "Package": "Boto3"
         }
       ]
@@ -1176,6 +1268,12 @@
     },
     {
       "Name": "PutWhatsAppBusinessPublicKey",
+      "AuthorizedActions": [
+        {
+          "Name": "PutWhatsAppBusinessPublicKey",
+          "Service": "social-messaging"
+        }
+      ],
       "SDK": [
         {
           "Name": "socialmessaging",
@@ -1195,13 +1293,19 @@
       "SDK": [
         {
           "Name": "socialmessaging",
-          "Method": "send_whats_app_call_event",
+          "Method": "send_whatsapp_call_event",
           "Package": "Boto3"
         }
       ]
     },
     {
       "Name": "SendWhatsAppConversionEvent",
+      "AuthorizedActions": [
+        {
+          "Name": "SendWhatsAppConversionEvent",
+          "Service": "social-messaging"
+        }
+      ],
       "SDK": [
         {
           "Name": "socialmessaging",
@@ -1269,7 +1373,7 @@
       "SDK": [
         {
           "Name": "socialmessaging",
-          "Method": "update_linked_whats_app_business_account_phone_number",
+          "Method": "update_linked_whatsapp_business_account_phone_number",
           "Package": "Boto3"
         }
       ]

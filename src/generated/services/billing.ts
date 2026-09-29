@@ -253,6 +253,10 @@ export class BillingOperations {
 	];
 	/** IAM actions required for the ListBillingViews API call. */
 	static readonly ListBillingViews: string[] = ["billing:ListBillingViews"];
+	/** IAM actions required for the ListBusinessSupportAccountCharges API call. */
+	static readonly ListBusinessSupportAccountCharges: string[] = [];
+	/** IAM actions required for the ListBusinessSupportSubscriptionHistory API call. */
+	static readonly ListBusinessSupportSubscriptionHistory: string[] = [];
 	/** IAM actions required for the ListEnterpriseSupportLinkedAccountCharges API call. */
 	static readonly ListEnterpriseSupportLinkedAccountCharges: string[] = [
 		"billing:ListEnterpriseSupportLinkedAccountCharges",

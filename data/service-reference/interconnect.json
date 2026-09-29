@@ -24,7 +24,8 @@
       "Name": "CreateConnection",
       "ActionConditionKeys": [
         "aws:RequestTag/${TagKey}",
-        "aws:TagKeys"
+        "aws:TagKeys",
+        "interconnect:RemoteAccount"
       ],
       "Annotations": {
         "Properties": {
@@ -264,6 +265,12 @@
       "Name": "aws:TagKeys",
       "Types": [
         "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "interconnect:RemoteAccount",
+      "Types": [
+        "String"
       ]
     }
   ],

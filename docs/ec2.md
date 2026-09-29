@@ -42779,6 +42779,7 @@ new ec2.EC2Operations()
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.DeleteCapacityManagerDataExport">DeleteCapacityManagerDataExport</a></code> | <code>string[]</code> | IAM actions required for the DeleteCapacityManagerDataExport API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.DeleteCarrierGateway">DeleteCarrierGateway</a></code> | <code>string[]</code> | IAM actions required for the DeleteCarrierGateway API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.DeleteClientVpnEndpoint">DeleteClientVpnEndpoint</a></code> | <code>string[]</code> | IAM actions required for the DeleteClientVpnEndpoint API call. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.DeleteClientVpnEndpointAuthorizationPolicy">DeleteClientVpnEndpointAuthorizationPolicy</a></code> | <code>string[]</code> | IAM actions required for the DeleteClientVpnEndpointAuthorizationPolicy API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.DeleteClientVpnRoute">DeleteClientVpnRoute</a></code> | <code>string[]</code> | IAM actions required for the DeleteClientVpnRoute API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.DeleteCoipCidr">DeleteCoipCidr</a></code> | <code>string[]</code> | IAM actions required for the DeleteCoipCidr API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.DeleteCoipPool">DeleteCoipPool</a></code> | <code>string[]</code> | IAM actions required for the DeleteCoipPool API call. |
@@ -43168,6 +43169,7 @@ new ec2.EC2Operations()
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.ModifyCapacityReservation">ModifyCapacityReservation</a></code> | <code>string[]</code> | IAM actions required for the ModifyCapacityReservation API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.ModifyCapacityReservationFleet">ModifyCapacityReservationFleet</a></code> | <code>string[]</code> | IAM actions required for the ModifyCapacityReservationFleet API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.ModifyClientVpnEndpoint">ModifyClientVpnEndpoint</a></code> | <code>string[]</code> | IAM actions required for the ModifyClientVpnEndpoint API call. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.ModifyClientVpnEndpointAuthorizationPolicy">ModifyClientVpnEndpointAuthorizationPolicy</a></code> | <code>string[]</code> | IAM actions required for the ModifyClientVpnEndpointAuthorizationPolicy API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.ModifyDefaultCreditSpecification">ModifyDefaultCreditSpecification</a></code> | <code>string[]</code> | IAM actions required for the ModifyDefaultCreditSpecification API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.ModifyEbsDefaultKmsKeyId">ModifyEbsDefaultKmsKeyId</a></code> | <code>string[]</code> | IAM actions required for the ModifyEbsDefaultKmsKeyId API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.ModifyFleet">ModifyFleet</a></code> | <code>string[]</code> | IAM actions required for the ModifyFleet API call. |
@@ -43259,6 +43261,7 @@ new ec2.EC2Operations()
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.opGetCapacityManagerMetricDimensions">opGetCapacityManagerMetricDimensions</a></code> | <code>string[]</code> | IAM actions required for the GetCapacityManagerMetricDimensions API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.opGetCapacityManagerMonitoredTagKeys">opGetCapacityManagerMonitoredTagKeys</a></code> | <code>string[]</code> | IAM actions required for the GetCapacityManagerMonitoredTagKeys API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.opGetCapacityReservationUsage">opGetCapacityReservationUsage</a></code> | <code>string[]</code> | IAM actions required for the GetCapacityReservationUsage API call. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.opGetClientVpnEndpointAuthorizationPolicy">opGetClientVpnEndpointAuthorizationPolicy</a></code> | <code>string[]</code> | IAM actions required for the GetClientVpnEndpointAuthorizationPolicy API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.opGetCoipPoolUsage">opGetCoipPoolUsage</a></code> | <code>string[]</code> | IAM actions required for the GetCoipPoolUsage API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.opGetConsoleOutput">opGetConsoleOutput</a></code> | <code>string[]</code> | IAM actions required for the GetConsoleOutput API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.opGetConsoleScreenshot">opGetConsoleScreenshot</a></code> | <code>string[]</code> | IAM actions required for the GetConsoleScreenshot API call. |
@@ -45552,6 +45555,18 @@ public readonly DeleteClientVpnEndpoint: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteClientVpnEndpoint API call.
+
+---
+
+##### `DeleteClientVpnEndpointAuthorizationPolicy`<sup>Required</sup> <a name="DeleteClientVpnEndpointAuthorizationPolicy" id="@cdk_utils/iam.ec2.EC2Operations.property.DeleteClientVpnEndpointAuthorizationPolicy"></a>
+
+```typescript
+public readonly DeleteClientVpnEndpointAuthorizationPolicy: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteClientVpnEndpointAuthorizationPolicy API call.
 
 ---
 
@@ -50223,6 +50238,18 @@ IAM actions required for the ModifyClientVpnEndpoint API call.
 
 ---
 
+##### `ModifyClientVpnEndpointAuthorizationPolicy`<sup>Required</sup> <a name="ModifyClientVpnEndpointAuthorizationPolicy" id="@cdk_utils/iam.ec2.EC2Operations.property.ModifyClientVpnEndpointAuthorizationPolicy"></a>
+
+```typescript
+public readonly ModifyClientVpnEndpointAuthorizationPolicy: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ModifyClientVpnEndpointAuthorizationPolicy API call.
+
+---
+
 ##### `ModifyDefaultCreditSpecification`<sup>Required</sup> <a name="ModifyDefaultCreditSpecification" id="@cdk_utils/iam.ec2.EC2Operations.property.ModifyDefaultCreditSpecification"></a>
 
 ```typescript
@@ -51312,6 +51339,18 @@ public readonly opGetCapacityReservationUsage: string[];
 - *Type:* string[]
 
 IAM actions required for the GetCapacityReservationUsage API call.
+
+---
+
+##### `opGetClientVpnEndpointAuthorizationPolicy`<sup>Required</sup> <a name="opGetClientVpnEndpointAuthorizationPolicy" id="@cdk_utils/iam.ec2.EC2Operations.property.opGetClientVpnEndpointAuthorizationPolicy"></a>
+
+```typescript
+public readonly opGetClientVpnEndpointAuthorizationPolicy: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetClientVpnEndpointAuthorizationPolicy API call.
 
 ---
 

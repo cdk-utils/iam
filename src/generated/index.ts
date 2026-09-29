@@ -411,6 +411,7 @@ export * as ssmmessages from "./services/ssmmessages";
 export * as sso from "./services/sso";
 export * as sso_directory from "./services/sso-directory";
 export * as sso_oauth from "./services/sso-oauth";
+export * as startups from "./services/startups";
 export * as states from "./services/states";
 export * as storagegateway from "./services/storagegateway";
 export * as sts from "./services/sts";

@@ -15,6 +15,9 @@ export class SocialMessagingActions {
 	/** [Write] social-messaging:AssociateWhatsAppBusinessAccount */
 	static readonly AssociateWhatsAppBusinessAccount =
 		"social-messaging:AssociateWhatsAppBusinessAccount";
+	/** [Write] social-messaging:CreateWhatsAppDataset */
+	static readonly CreateWhatsAppDataset =
+		"social-messaging:CreateWhatsAppDataset";
 	/** [Write] social-messaging:CreateWhatsAppFlow */
 	static readonly CreateWhatsAppFlow = "social-messaging:CreateWhatsAppFlow";
 	/** [Write] social-messaging:CreateWhatsAppMessageTemplate */
@@ -46,6 +49,9 @@ export class SocialMessagingActions {
 	/** [Read] social-messaging:GetLinkedWhatsAppBusinessAccountPhoneNumber */
 	static readonly actionGetLinkedWhatsAppBusinessAccountPhoneNumber =
 		"social-messaging:GetLinkedWhatsAppBusinessAccountPhoneNumber";
+	/** [Read] social-messaging:GetWhatsAppBusinessPublicKey */
+	static readonly actionGetWhatsAppBusinessPublicKey =
+		"social-messaging:GetWhatsAppBusinessPublicKey";
 	/** [Read] social-messaging:GetWhatsAppCallPermission */
 	static readonly actionGetWhatsAppCallPermission =
 		"social-messaging:GetWhatsAppCallPermission";
@@ -84,9 +90,15 @@ export class SocialMessagingActions {
 	/** [Write] social-messaging:PutWhatsAppBusinessAccountEventDestinations */
 	static readonly PutWhatsAppBusinessAccountEventDestinations =
 		"social-messaging:PutWhatsAppBusinessAccountEventDestinations";
+	/** [Write] social-messaging:PutWhatsAppBusinessPublicKey */
+	static readonly PutWhatsAppBusinessPublicKey =
+		"social-messaging:PutWhatsAppBusinessPublicKey";
 	/** [Write] social-messaging:SendWhatsAppCallEvent */
 	static readonly SendWhatsAppCallEvent =
 		"social-messaging:SendWhatsAppCallEvent";
+	/** [Write] social-messaging:SendWhatsAppConversionEvent */
+	static readonly SendWhatsAppConversionEvent =
+		"social-messaging:SendWhatsAppConversionEvent";
 	/** [Write] social-messaging:SendWhatsAppMessage */
 	static readonly SendWhatsAppMessage = "social-messaging:SendWhatsAppMessage";
 	/** [Tagging] social-messaging:TagResource */
@@ -109,6 +121,7 @@ export class SocialMessagingActions {
 	static readonly AllReadActions: string[] = [
 		SocialMessagingActions.actionGetLinkedWhatsAppBusinessAccount,
 		SocialMessagingActions.actionGetLinkedWhatsAppBusinessAccountPhoneNumber,
+		SocialMessagingActions.actionGetWhatsAppBusinessPublicKey,
 		SocialMessagingActions.actionGetWhatsAppCallPermission,
 		SocialMessagingActions.actionGetWhatsAppFlow,
 		SocialMessagingActions.actionGetWhatsAppFlowPreview,
@@ -118,6 +131,7 @@ export class SocialMessagingActions {
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
 		SocialMessagingActions.AssociateWhatsAppBusinessAccount,
+		SocialMessagingActions.CreateWhatsAppDataset,
 		SocialMessagingActions.CreateWhatsAppFlow,
 		SocialMessagingActions.CreateWhatsAppMessageTemplate,
 		SocialMessagingActions.CreateWhatsAppMessageTemplateFromLibrary,
@@ -131,7 +145,9 @@ export class SocialMessagingActions {
 		SocialMessagingActions.PostWhatsAppMessageMedia,
 		SocialMessagingActions.PublishWhatsAppFlow,
 		SocialMessagingActions.PutWhatsAppBusinessAccountEventDestinations,
+		SocialMessagingActions.PutWhatsAppBusinessPublicKey,
 		SocialMessagingActions.SendWhatsAppCallEvent,
+		SocialMessagingActions.SendWhatsAppConversionEvent,
 		SocialMessagingActions.SendWhatsAppMessage,
 		SocialMessagingActions.UpdateLinkedWhatsAppBusinessAccountPhoneNumber,
 		SocialMessagingActions.UpdateWhatsAppFlow,
@@ -296,7 +312,9 @@ export class SocialMessagingOperations {
 		"social-messaging:TagResource",
 	];
 	/** IAM actions required for the CreateWhatsAppDataset API call. */
-	static readonly CreateWhatsAppDataset: string[] = [];
+	static readonly CreateWhatsAppDataset: string[] = [
+		"social-messaging:CreateWhatsAppDataset",
+	];
 	/** IAM actions required for the CreateWhatsAppFlow API call. */
 	static readonly CreateWhatsAppFlow: string[] = [
 		"social-messaging:CreateWhatsAppFlow",
@@ -342,7 +360,9 @@ export class SocialMessagingOperations {
 		"social-messaging:GetLinkedWhatsAppBusinessAccountPhoneNumber",
 	];
 	/** IAM actions required for the GetWhatsAppBusinessPublicKey API call. */
-	static readonly opGetWhatsAppBusinessPublicKey: string[] = [];
+	static readonly opGetWhatsAppBusinessPublicKey: string[] = [
+		"social-messaging:GetWhatsAppBusinessPublicKey",
+	];
 	/** IAM actions required for the GetWhatsAppCallPermission API call. */
 	static readonly opGetWhatsAppCallPermission: string[] = [
 		"social-messaging:GetWhatsAppCallPermission",
@@ -401,13 +421,17 @@ export class SocialMessagingOperations {
 		"social-messaging:PutWhatsAppBusinessAccountEventDestinations",
 	];
 	/** IAM actions required for the PutWhatsAppBusinessPublicKey API call. */
-	static readonly PutWhatsAppBusinessPublicKey: string[] = [];
+	static readonly PutWhatsAppBusinessPublicKey: string[] = [
+		"social-messaging:PutWhatsAppBusinessPublicKey",
+	];
 	/** IAM actions required for the SendWhatsAppCallEvent API call. */
 	static readonly SendWhatsAppCallEvent: string[] = [
 		"social-messaging:SendWhatsAppCallEvent",
 	];
 	/** IAM actions required for the SendWhatsAppConversionEvent API call. */
-	static readonly SendWhatsAppConversionEvent: string[] = [];
+	static readonly SendWhatsAppConversionEvent: string[] = [
+		"social-messaging:SendWhatsAppConversionEvent",
+	];
 	/** IAM actions required for the SendWhatsAppMessage API call. */
 	static readonly SendWhatsAppMessage: string[] = [
 		"social-messaging:SendWhatsAppMessage",

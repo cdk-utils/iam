@@ -1007,6 +1007,8 @@ new billing.BillingOperations()
 | <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.DisassociateSourceViews">DisassociateSourceViews</a></code> | <code>string[]</code> | IAM actions required for the DisassociateSourceViews API call. |
 | <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.ListBillingViews">ListBillingViews</a></code> | <code>string[]</code> | IAM actions required for the ListBillingViews API call. |
 | <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.ListBillingViewSegments">ListBillingViewSegments</a></code> | <code>string[]</code> | IAM actions required for the ListBillingViewSegments API call. |
+| <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.ListBusinessSupportAccountCharges">ListBusinessSupportAccountCharges</a></code> | <code>string[]</code> | IAM actions required for the ListBusinessSupportAccountCharges API call. |
+| <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.ListBusinessSupportSubscriptionHistory">ListBusinessSupportSubscriptionHistory</a></code> | <code>string[]</code> | IAM actions required for the ListBusinessSupportSubscriptionHistory API call. |
 | <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.ListEnterpriseSupportLinkedAccountCharges">ListEnterpriseSupportLinkedAccountCharges</a></code> | <code>string[]</code> | IAM actions required for the ListEnterpriseSupportLinkedAccountCharges API call. |
 | <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.ListSourceViewsForBillingView">ListSourceViewsForBillingView</a></code> | <code>string[]</code> | IAM actions required for the ListSourceViewsForBillingView API call. |
 | <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
@@ -1094,6 +1096,30 @@ public readonly ListBillingViewSegments: string[];
 - *Type:* string[]
 
 IAM actions required for the ListBillingViewSegments API call.
+
+---
+
+##### `ListBusinessSupportAccountCharges`<sup>Required</sup> <a name="ListBusinessSupportAccountCharges" id="@cdk_utils/iam.billing.BillingOperations.property.ListBusinessSupportAccountCharges"></a>
+
+```typescript
+public readonly ListBusinessSupportAccountCharges: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListBusinessSupportAccountCharges API call.
+
+---
+
+##### `ListBusinessSupportSubscriptionHistory`<sup>Required</sup> <a name="ListBusinessSupportSubscriptionHistory" id="@cdk_utils/iam.billing.BillingOperations.property.ListBusinessSupportSubscriptionHistory"></a>
+
+```typescript
+public readonly ListBusinessSupportSubscriptionHistory: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListBusinessSupportSubscriptionHistory API call.
 
 ---
 

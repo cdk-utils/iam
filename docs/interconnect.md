@@ -597,9 +597,26 @@ new interconnect.InterconnectConditions()
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdk_utils/iam.interconnect.InterconnectConditions.remoteAccount">remoteAccount</a></code> | Generates a condition block for `interconnect:RemoteAccount`. |
 | <code><a href="#@cdk_utils/iam.interconnect.InterconnectConditions.requestTag">requestTag</a></code> | Generates a condition block for `aws:RequestTag/${TagKey}`. |
 | <code><a href="#@cdk_utils/iam.interconnect.InterconnectConditions.resourceTag">resourceTag</a></code> | Generates a condition block for `aws:ResourceTag/${TagKey}`. |
 | <code><a href="#@cdk_utils/iam.interconnect.InterconnectConditions.tagKeys">tagKeys</a></code> | Generates a condition block for `aws:TagKeys`. |
+
+---
+
+##### `remoteAccount` <a name="remoteAccount" id="@cdk_utils/iam.interconnect.InterconnectConditions.remoteAccount"></a>
+
+```typescript
+import { interconnect } from '@cdk_utils/iam'
+
+interconnect.InterconnectConditions.remoteAccount(value: string)
+```
+
+Generates a condition block for `interconnect:RemoteAccount`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.interconnect.InterconnectConditions.remoteAccount.parameter.value"></a>
+
+- *Type:* string
 
 ---
 
@@ -661,6 +678,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.interconnect.InterconnectConditions.property.AWS_RESOURCE_TAG">AWS_RESOURCE_TAG</a></code> | <code>string</code> | Condition key: aws:ResourceTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.interconnect.InterconnectConditions.property.AWS_TAG_KEYS">AWS_TAG_KEYS</a></code> | <code>string</code> | Condition key: aws:TagKeys (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.interconnect.InterconnectConditions.property.CreateConnectionConditionKeys">CreateConnectionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateConnection action. |
+| <code><a href="#@cdk_utils/iam.interconnect.InterconnectConditions.property.REMOTE_ACCOUNT">REMOTE_ACCOUNT</a></code> | <code>string</code> | Condition key: interconnect:RemoteAccount (String). |
 | <code><a href="#@cdk_utils/iam.interconnect.InterconnectConditions.property.TagResourceConditionKeys">TagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TagResource action. |
 | <code><a href="#@cdk_utils/iam.interconnect.InterconnectConditions.property.UntagResourceConditionKeys">UntagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UntagResource action. |
 
@@ -723,6 +741,18 @@ public readonly CreateConnectionConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the CreateConnection action.
+
+---
+
+##### `REMOTE_ACCOUNT`<sup>Required</sup> <a name="REMOTE_ACCOUNT" id="@cdk_utils/iam.interconnect.InterconnectConditions.property.REMOTE_ACCOUNT"></a>
+
+```typescript
+public readonly REMOTE_ACCOUNT: string;
+```
+
+- *Type:* string
+
+Condition key: interconnect:RemoteAccount (String).
 
 ---
 

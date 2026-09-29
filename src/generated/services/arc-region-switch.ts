@@ -51,6 +51,9 @@ export class ArcRegionSwitchActions {
 	/** [List] arc-region-switch:ListRoute53HealthChecksInRegion */
 	static readonly ListRoute53HealthChecksInRegion =
 		"arc-region-switch:ListRoute53HealthChecksInRegion";
+	/** [List] arc-region-switch:ListServiceQuotaWarnings */
+	static readonly ListServiceQuotaWarnings =
+		"arc-region-switch:ListServiceQuotaWarnings";
 	/** [Read] arc-region-switch:ListTagsForResource */
 	static readonly ListTagsForResource = "arc-region-switch:ListTagsForResource";
 	/** [PermissionManagement] arc-region-switch:PutResourcePolicy */
@@ -96,6 +99,7 @@ export class ArcRegionSwitchActions {
 		ArcRegionSwitchActions.ListPlansInRegion,
 		ArcRegionSwitchActions.ListRoute53HealthChecks,
 		ArcRegionSwitchActions.ListRoute53HealthChecksInRegion,
+		ArcRegionSwitchActions.ListServiceQuotaWarnings,
 	];
 	/** All permission-management-level actions. */
 	static readonly AllPermissionManagementActions: string[] = [
@@ -230,7 +234,9 @@ export class ArcRegionSwitchOperations {
 		"arc-region-switch:ListRoute53HealthChecksInRegion",
 	];
 	/** IAM actions required for the ListServiceQuotaWarnings API call. */
-	static readonly ListServiceQuotaWarnings: string[] = [];
+	static readonly ListServiceQuotaWarnings: string[] = [
+		"arc-region-switch:ListServiceQuotaWarnings",
+	];
 	/** IAM actions required for the ListTagsForResource API call. */
 	static readonly ListTagsForResource: string[] = [
 		"arc-region-switch:ListTagsForResource",
