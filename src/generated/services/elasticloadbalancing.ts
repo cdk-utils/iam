@@ -1458,7 +1458,6 @@ export class ElasticloadbalancingConditions {
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
-		"elasticloadbalancing:ListenerProtocol",
 		"elasticloadbalancing:ResourceTag/${TagKey}",
 		"elasticloadbalancing:Scheme",
 		"elasticloadbalancing:SecurityGroup",

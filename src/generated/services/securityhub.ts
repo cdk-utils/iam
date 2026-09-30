@@ -218,6 +218,8 @@ export class SecurityHubActions {
 	/** [Read] securityhub:GetRecommendedPolicyV2 */
 	static readonly actionGetRecommendedPolicyV2 =
 		"securityhub:GetRecommendedPolicyV2";
+	/** [Read] securityhub:GetRemediationsV2 */
+	static readonly actionGetRemediationsV2 = "securityhub:GetRemediationsV2";
 	/** [Read] securityhub:GetResourcesStatisticsV2 */
 	static readonly actionGetResourcesStatisticsV2 =
 		"securityhub:GetResourcesStatisticsV2";
@@ -259,6 +261,9 @@ export class SecurityHubActions {
 	/** [List] securityhub:ListEnabledProductsForImport */
 	static readonly ListEnabledProductsForImport =
 		"securityhub:ListEnabledProductsForImport";
+	/** [List] securityhub:ListExposuresByRemediationV2 */
+	static readonly ListExposuresByRemediationV2 =
+		"securityhub:ListExposuresByRemediationV2";
 	/** [List] securityhub:ListFindingAggregators */
 	static readonly ListFindingAggregators = "securityhub:ListFindingAggregators";
 	/** [List] securityhub:ListFreeTrialStatusesV2 */
@@ -362,6 +367,7 @@ export class SecurityHubActions {
 		SecurityHubActions.actionGetMasterAccount,
 		SecurityHubActions.actionGetMembers,
 		SecurityHubActions.actionGetRecommendedPolicyV2,
+		SecurityHubActions.actionGetRemediationsV2,
 		SecurityHubActions.actionGetResourcesStatisticsV2,
 		SecurityHubActions.actionGetResourcesTrendsV2,
 		SecurityHubActions.actionGetResourcesV2,
@@ -451,6 +457,7 @@ export class SecurityHubActions {
 		SecurityHubActions.ListConnectors,
 		SecurityHubActions.ListConnectorsV2,
 		SecurityHubActions.ListEnabledProductsForImport,
+		SecurityHubActions.ListExposuresByRemediationV2,
 		SecurityHubActions.ListFindingAggregators,
 		SecurityHubActions.ListFreeTrialStatusesV2,
 		SecurityHubActions.ListInvitations,

@@ -583,6 +583,10 @@ export class IdentitystoreOperations {
 		"sso-directory:ListGroupsForMember",
 		"sso-directory:ListGroupsForUser",
 	];
+	/** IAM actions required for the DescribeIdentityStore API call. */
+	static readonly DescribeIdentityStore: string[] = [
+		"identitystore:DescribeIdentityStore",
+	];
 	/** IAM actions required for the DescribeUser API call. */
 	static readonly DescribeUser: string[] = [
 		"identitystore:DescribeUser",
@@ -628,6 +632,10 @@ export class IdentitystoreOperations {
 		"sso-directory:ListGroups",
 		"sso-directory:SearchGroups",
 	];
+	/** IAM actions required for the ListIdentityStores API call. */
+	static readonly ListIdentityStores: string[] = [
+		"identitystore:ListIdentityStores",
+	];
 	/** IAM actions required for the ListUsers API call. */
 	static readonly ListUsers: string[] = [
 		"identitystore:ListUsers",
@@ -639,6 +647,10 @@ export class IdentitystoreOperations {
 		"identitystore:UpdateGroup",
 		"sso-directory:UpdateGroup",
 		"sso-directory:UpdateGroupDisplayName",
+	];
+	/** IAM actions required for the UpdateIdentityStore API call. */
+	static readonly UpdateIdentityStore: string[] = [
+		"identitystore:UpdateIdentityStore",
 	];
 	/** IAM actions required for the UpdateUser API call. */
 	static readonly UpdateUser: string[] = [
