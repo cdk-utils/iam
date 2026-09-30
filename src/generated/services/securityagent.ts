@@ -1136,6 +1136,10 @@ export class SecurityagentOperations {
 	static readonly UpdateIntegratedResources: string[] = [
 		"securityagent:UpdateIntegratedResources",
 	];
+	/** IAM actions required for the UpdateIntegration API call. */
+	static readonly UpdateIntegration: string[] = [
+		"securityagent:UpdateIntegration",
+	];
 	/** IAM actions required for the UpdatePentest API call. */
 	static readonly UpdatePentest: string[] = ["securityagent:UpdatePentest"];
 	/** IAM actions required for the UpdatePrivateConnectionCertificate API call. */

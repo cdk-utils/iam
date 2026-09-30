@@ -1961,16 +1961,19 @@ new identitystore.IdentitystoreOperations()
 | <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreOperations.property.DeleteUser">DeleteUser</a></code> | <code>string[]</code> | IAM actions required for the DeleteUser API call. |
 | <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreOperations.property.DescribeGroup">DescribeGroup</a></code> | <code>string[]</code> | IAM actions required for the DescribeGroup API call. |
 | <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreOperations.property.DescribeGroupMembership">DescribeGroupMembership</a></code> | <code>string[]</code> | IAM actions required for the DescribeGroupMembership API call. |
+| <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreOperations.property.DescribeIdentityStore">DescribeIdentityStore</a></code> | <code>string[]</code> | IAM actions required for the DescribeIdentityStore API call. |
 | <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreOperations.property.DescribeUser">DescribeUser</a></code> | <code>string[]</code> | IAM actions required for the DescribeUser API call. |
 | <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreOperations.property.IsMemberInGroups">IsMemberInGroups</a></code> | <code>string[]</code> | IAM actions required for the IsMemberInGroups API call. |
 | <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreOperations.property.ListGroupMemberships">ListGroupMemberships</a></code> | <code>string[]</code> | IAM actions required for the ListGroupMemberships API call. |
 | <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreOperations.property.ListGroupMembershipsForMember">ListGroupMembershipsForMember</a></code> | <code>string[]</code> | IAM actions required for the ListGroupMembershipsForMember API call. |
 | <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreOperations.property.ListGroups">ListGroups</a></code> | <code>string[]</code> | IAM actions required for the ListGroups API call. |
+| <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreOperations.property.ListIdentityStores">ListIdentityStores</a></code> | <code>string[]</code> | IAM actions required for the ListIdentityStores API call. |
 | <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreOperations.property.ListUsers">ListUsers</a></code> | <code>string[]</code> | IAM actions required for the ListUsers API call. |
 | <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreOperations.property.opGetGroupId">opGetGroupId</a></code> | <code>string[]</code> | IAM actions required for the GetGroupId API call. |
 | <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreOperations.property.opGetGroupMembershipId">opGetGroupMembershipId</a></code> | <code>string[]</code> | IAM actions required for the GetGroupMembershipId API call. |
 | <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreOperations.property.opGetUserId">opGetUserId</a></code> | <code>string[]</code> | IAM actions required for the GetUserId API call. |
 | <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreOperations.property.UpdateGroup">UpdateGroup</a></code> | <code>string[]</code> | IAM actions required for the UpdateGroup API call. |
+| <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreOperations.property.UpdateIdentityStore">UpdateIdentityStore</a></code> | <code>string[]</code> | IAM actions required for the UpdateIdentityStore API call. |
 | <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreOperations.property.UpdateUser">UpdateUser</a></code> | <code>string[]</code> | IAM actions required for the UpdateUser API call. |
 
 ---
@@ -2071,6 +2074,18 @@ IAM actions required for the DescribeGroupMembership API call.
 
 ---
 
+##### `DescribeIdentityStore`<sup>Required</sup> <a name="DescribeIdentityStore" id="@cdk_utils/iam.identitystore.IdentitystoreOperations.property.DescribeIdentityStore"></a>
+
+```typescript
+public readonly DescribeIdentityStore: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeIdentityStore API call.
+
+---
+
 ##### `DescribeUser`<sup>Required</sup> <a name="DescribeUser" id="@cdk_utils/iam.identitystore.IdentitystoreOperations.property.DescribeUser"></a>
 
 ```typescript
@@ -2131,6 +2146,18 @@ IAM actions required for the ListGroups API call.
 
 ---
 
+##### `ListIdentityStores`<sup>Required</sup> <a name="ListIdentityStores" id="@cdk_utils/iam.identitystore.IdentitystoreOperations.property.ListIdentityStores"></a>
+
+```typescript
+public readonly ListIdentityStores: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListIdentityStores API call.
+
+---
+
 ##### `ListUsers`<sup>Required</sup> <a name="ListUsers" id="@cdk_utils/iam.identitystore.IdentitystoreOperations.property.ListUsers"></a>
 
 ```typescript
@@ -2188,6 +2215,18 @@ public readonly UpdateGroup: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateGroup API call.
+
+---
+
+##### `UpdateIdentityStore`<sup>Required</sup> <a name="UpdateIdentityStore" id="@cdk_utils/iam.identitystore.IdentitystoreOperations.property.UpdateIdentityStore"></a>
+
+```typescript
+public readonly UpdateIdentityStore: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateIdentityStore API call.
 
 ---
 

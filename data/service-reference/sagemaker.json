@@ -11723,6 +11723,10 @@
       "Name": "CreatePartnerApp",
       "AuthorizedActions": [
         {
+          "Name": "AddTags",
+          "Service": "sagemaker"
+        },
+        {
           "Name": "CreatePartnerApp",
           "Service": "sagemaker"
         },

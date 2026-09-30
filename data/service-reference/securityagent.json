@@ -3815,6 +3815,22 @@
       ]
     },
     {
+      "Name": "UpdateIntegration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateIntegration",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "update_integration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "UpdatePentest",
       "AuthorizedActions": [
         {

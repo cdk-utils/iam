@@ -2856,6 +2856,7 @@ new securityagent.SecurityagentOperations()
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentOperations.property.UpdateCodeReview">UpdateCodeReview</a></code> | <code>string[]</code> | IAM actions required for the UpdateCodeReview API call. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentOperations.property.UpdateFinding">UpdateFinding</a></code> | <code>string[]</code> | IAM actions required for the UpdateFinding API call. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentOperations.property.UpdateIntegratedResources">UpdateIntegratedResources</a></code> | <code>string[]</code> | IAM actions required for the UpdateIntegratedResources API call. |
+| <code><a href="#@cdk_utils/iam.securityagent.SecurityagentOperations.property.UpdateIntegration">UpdateIntegration</a></code> | <code>string[]</code> | IAM actions required for the UpdateIntegration API call. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentOperations.property.UpdatePentest">UpdatePentest</a></code> | <code>string[]</code> | IAM actions required for the UpdatePentest API call. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentOperations.property.UpdatePrivateConnectionCertificate">UpdatePrivateConnectionCertificate</a></code> | <code>string[]</code> | IAM actions required for the UpdatePrivateConnectionCertificate API call. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentOperations.property.UpdateSecurityRequirementPack">UpdateSecurityRequirementPack</a></code> | <code>string[]</code> | IAM actions required for the UpdateSecurityRequirementPack API call. |
@@ -3895,6 +3896,18 @@ public readonly UpdateIntegratedResources: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateIntegratedResources API call.
+
+---
+
+##### `UpdateIntegration`<sup>Required</sup> <a name="UpdateIntegration" id="@cdk_utils/iam.securityagent.SecurityagentOperations.property.UpdateIntegration"></a>
+
+```typescript
+public readonly UpdateIntegration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateIntegration API call.
 
 ---
 

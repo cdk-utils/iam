@@ -6475,6 +6475,7 @@ export class SageMakerOperations {
 	];
 	/** IAM actions required for the CreatePartnerApp API call. */
 	static readonly CreatePartnerApp: string[] = [
+		"sagemaker:AddTags",
 		"sagemaker:CreatePartnerApp",
 		"iam:PassRole",
 	];

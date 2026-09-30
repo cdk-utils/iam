@@ -944,6 +944,22 @@
       ]
     },
     {
+      "Name": "DescribeIdentityStore",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeIdentityStore",
+          "Service": "identitystore"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "identitystore",
+          "Method": "describe_identity_store",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DescribeUser",
       "AuthorizedActions": [
         {
@@ -1124,6 +1140,22 @@
       ]
     },
     {
+      "Name": "ListIdentityStores",
+      "AuthorizedActions": [
+        {
+          "Name": "ListIdentityStores",
+          "Service": "identitystore"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "identitystore",
+          "Method": "list_identity_stores",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListUsers",
       "AuthorizedActions": [
         {
@@ -1167,6 +1199,22 @@
         {
           "Name": "identitystore",
           "Method": "update_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateIdentityStore",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateIdentityStore",
+          "Service": "identitystore"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "identitystore",
+          "Method": "update_identity_store",
           "Package": "Boto3"
         }
       ]

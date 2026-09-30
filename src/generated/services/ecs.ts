@@ -1667,6 +1667,8 @@ export class ECSConditions {
 		"ecs:container-instances",
 		"ecs:enable-ebs-volumes",
 		"ecs:enable-execute-command",
+		"ecs:task-cpu",
+		"ecs:task-memory",
 	];
 	/** Condition keys applicable to the StartTelemetrySession action. */
 	static readonly StartTelemetrySessionConditionKeys: string[] = [

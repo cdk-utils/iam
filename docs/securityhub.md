@@ -1535,6 +1535,7 @@ new securityhub.SecurityHubActions()
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.actionGetMasterAccount">actionGetMasterAccount</a></code> | <code>string</code> | [Read] securityhub:GetMasterAccount. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.actionGetMembers">actionGetMembers</a></code> | <code>string</code> | [Read] securityhub:GetMembers. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.actionGetRecommendedPolicyV2">actionGetRecommendedPolicyV2</a></code> | <code>string</code> | [Read] securityhub:GetRecommendedPolicyV2. |
+| <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.actionGetRemediationsV2">actionGetRemediationsV2</a></code> | <code>string</code> | [Read] securityhub:GetRemediationsV2. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.actionGetResourcesStatisticsV2">actionGetResourcesStatisticsV2</a></code> | <code>string</code> | [Read] securityhub:GetResourcesStatisticsV2. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.actionGetResourcesTrendsV2">actionGetResourcesTrendsV2</a></code> | <code>string</code> | [Read] securityhub:GetResourcesTrendsV2. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.actionGetResourcesV2">actionGetResourcesV2</a></code> | <code>string</code> | [Read] securityhub:GetResourcesV2. |
@@ -1616,6 +1617,7 @@ new securityhub.SecurityHubActions()
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.ListConnectorsV2">ListConnectorsV2</a></code> | <code>string</code> | [List] securityhub:ListConnectorsV2. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.ListControlEvaluationSummaries">ListControlEvaluationSummaries</a></code> | <code>string</code> | [Read] securityhub:ListControlEvaluationSummaries. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.ListEnabledProductsForImport">ListEnabledProductsForImport</a></code> | <code>string</code> | [List] securityhub:ListEnabledProductsForImport. |
+| <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.ListExposuresByRemediationV2">ListExposuresByRemediationV2</a></code> | <code>string</code> | [List] securityhub:ListExposuresByRemediationV2. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.ListFindingAggregators">ListFindingAggregators</a></code> | <code>string</code> | [List] securityhub:ListFindingAggregators. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.ListFreeTrialStatusesV2">ListFreeTrialStatusesV2</a></code> | <code>string</code> | [List] securityhub:ListFreeTrialStatusesV2. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.ListInvitations">ListInvitations</a></code> | <code>string</code> | [List] securityhub:ListInvitations. |
@@ -1956,6 +1958,18 @@ public readonly actionGetRecommendedPolicyV2: string;
 - *Type:* string
 
 [Read] securityhub:GetRecommendedPolicyV2.
+
+---
+
+##### `actionGetRemediationsV2`<sup>Required</sup> <a name="actionGetRemediationsV2" id="@cdk_utils/iam.securityhub.SecurityHubActions.property.actionGetRemediationsV2"></a>
+
+```typescript
+public readonly actionGetRemediationsV2: string;
+```
+
+- *Type:* string
+
+[Read] securityhub:GetRemediationsV2.
 
 ---
 
@@ -2928,6 +2942,18 @@ public readonly ListEnabledProductsForImport: string;
 - *Type:* string
 
 [List] securityhub:ListEnabledProductsForImport.
+
+---
+
+##### `ListExposuresByRemediationV2`<sup>Required</sup> <a name="ListExposuresByRemediationV2" id="@cdk_utils/iam.securityhub.SecurityHubActions.property.ListExposuresByRemediationV2"></a>
+
+```typescript
+public readonly ListExposuresByRemediationV2: string;
+```
+
+- *Type:* string
+
+[List] securityhub:ListExposuresByRemediationV2.
 
 ---
 

@@ -2786,6 +2786,11 @@
         },
         {
           "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "lambda.amazonaws.com"
+            ]
+          },
           "Service": "iam"
         },
         {
@@ -4206,6 +4211,11 @@
         },
         {
           "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "lambda.amazonaws.com"
+            ]
+          },
           "Service": "iam"
         },
         {
@@ -4513,6 +4523,11 @@
         },
         {
           "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "lambda.amazonaws.com"
+            ]
+          },
           "Service": "iam"
         },
         {
