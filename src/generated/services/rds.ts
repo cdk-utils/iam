@@ -2120,7 +2120,6 @@ export class RDSOperations {
 	/** IAM actions required for the CopyDBSnapshot API call. */
 	static readonly CopyDBSnapshot: string[] = [
 		"rds:AddTagsToResource",
-		"rds:CopyCustomDBEngineVersion",
 		"rds:CopyDBSnapshot",
 	];
 	/** IAM actions required for the CopyOptionGroup API call. */

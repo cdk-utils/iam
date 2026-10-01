@@ -758,7 +758,6 @@ export class ServiceCatalogOperations {
 	/** IAM actions required for the CreatePortfolio API call. */
 	static readonly CreatePortfolio: string[] = [
 		"servicecatalog:CreatePortfolio",
-		"servicecatalog:TagResource",
 	];
 	/** IAM actions required for the CreatePortfolioShare API call. */
 	static readonly CreatePortfolioShare: string[] = [
@@ -768,7 +767,6 @@ export class ServiceCatalogOperations {
 	static readonly CreateProduct: string[] = [
 		"servicecatalog:CreateProduct",
 		"codestar-connections:PassConnection",
-		"servicecatalog:TagResource",
 	];
 	/** IAM actions required for the CreateProvisionedProductPlan API call. */
 	static readonly CreateProvisionedProductPlan: string[] = [
@@ -1111,8 +1109,6 @@ export class ServiceCatalogOperations {
 	];
 	/** IAM actions required for the UpdatePortfolio API call. */
 	static readonly UpdatePortfolio: string[] = [
-		"servicecatalog:TagResource",
-		"servicecatalog:UntagResource",
 		"servicecatalog:UpdatePortfolio",
 	];
 	/** IAM actions required for the UpdatePortfolioShare API call. */
@@ -1122,8 +1118,6 @@ export class ServiceCatalogOperations {
 	/** IAM actions required for the UpdateProduct API call. */
 	static readonly UpdateProduct: string[] = [
 		"codestar-connections:PassConnection",
-		"servicecatalog:TagResource",
-		"servicecatalog:UntagResource",
 		"servicecatalog:UpdateProduct",
 	];
 	/** IAM actions required for the UpdateProvisionedProduct API call. */

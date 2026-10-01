@@ -377,15 +377,6 @@
       "Resources": [
         {
           "Name": "association"
-        },
-        {
-          "Name": "document"
-        },
-        {
-          "Name": "instance"
-        },
-        {
-          "Name": "managed-instance"
         }
       ],
       "SupportedBy": {
@@ -749,15 +740,6 @@
       "Resources": [
         {
           "Name": "association"
-        },
-        {
-          "Name": "document"
-        },
-        {
-          "Name": "instance"
-        },
-        {
-          "Name": "managed-instance"
         }
       ],
       "SupportedBy": {

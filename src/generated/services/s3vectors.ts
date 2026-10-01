@@ -42,6 +42,9 @@ export class S3vectorsActions {
 	static readonly ListVectorBuckets = "s3vectors:ListVectorBuckets";
 	/** [List] s3vectors:ListVectors */
 	static readonly ListVectors = "s3vectors:ListVectors";
+	/** [Write] s3vectors:PutVectorBucketDefaultIndexMode */
+	static readonly PutVectorBucketDefaultIndexMode =
+		"s3vectors:PutVectorBucketDefaultIndexMode";
 	/** [PermissionManagement] s3vectors:PutVectorBucketPolicy */
 	static readonly PutVectorBucketPolicy = "s3vectors:PutVectorBucketPolicy";
 	/** [Write] s3vectors:PutVectors */
@@ -52,6 +55,8 @@ export class S3vectorsActions {
 	static readonly TagResource = "s3vectors:TagResource";
 	/** [Tagging] s3vectors:UntagResource */
 	static readonly UntagResource = "s3vectors:UntagResource";
+	/** [Write] s3vectors:UpdateIndexMode */
+	static readonly UpdateIndexMode = "s3vectors:UpdateIndexMode";
 
 	/** All read-level actions. */
 	static readonly AllReadActions: string[] = [
@@ -68,7 +73,9 @@ export class S3vectorsActions {
 		S3vectorsActions.DeleteIndex,
 		S3vectorsActions.DeleteVectorBucket,
 		S3vectorsActions.DeleteVectors,
+		S3vectorsActions.PutVectorBucketDefaultIndexMode,
 		S3vectorsActions.PutVectors,
+		S3vectorsActions.UpdateIndexMode,
 	];
 	/** All list-level actions. */
 	static readonly AllListActions: string[] = [
@@ -254,6 +261,8 @@ export class S3vectorsOperations {
 	static readonly ListVectorBuckets: string[] = [];
 	/** IAM actions required for the ListVectors API call. */
 	static readonly ListVectors: string[] = [];
+	/** IAM actions required for the PutVectorBucketDefaultIndexMode API call. */
+	static readonly PutVectorBucketDefaultIndexMode: string[] = [];
 	/** IAM actions required for the PutVectorBucketPolicy API call. */
 	static readonly PutVectorBucketPolicy: string[] = [];
 	/** IAM actions required for the PutVectors API call. */
@@ -264,6 +273,8 @@ export class S3vectorsOperations {
 	static readonly TagResource: string[] = [];
 	/** IAM actions required for the UntagResource API call. */
 	static readonly UntagResource: string[] = [];
+	/** IAM actions required for the UpdateIndexMode API call. */
+	static readonly UpdateIndexMode: string[] = [];
 }
 
 /**
@@ -343,6 +354,11 @@ export class S3vectorsConditions {
 		"aws:ResourceTag/${TagKey}",
 		"s3vectors:VectorBucketTag/${TagKey}",
 	];
+	/** Condition keys applicable to the PutVectorBucketDefaultIndexMode action. */
+	static readonly PutVectorBucketDefaultIndexModeConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"s3vectors:VectorBucketTag/${TagKey}",
+	];
 	/** Condition keys applicable to the PutVectorBucketPolicy action. */
 	static readonly PutVectorBucketPolicyConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
@@ -369,6 +385,11 @@ export class S3vectorsConditions {
 	static readonly UntagResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
+		"s3vectors:VectorBucketTag/${TagKey}",
+	];
+	/** Condition keys applicable to the UpdateIndexMode action. */
+	static readonly UpdateIndexModeConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
 		"s3vectors:VectorBucketTag/${TagKey}",
 	];
 

@@ -1658,6 +1658,8 @@ export class ElastiCacheConditions {
 		"elasticache:CacheParameterGroupName";
 	/** Condition key: elasticache:ClusterModeEnabled (Bool) */
 	static readonly CLUSTER_MODE_ENABLED = "elasticache:ClusterModeEnabled";
+	/** Condition key: elasticache:ConnectionType (String) */
+	static readonly CONNECTION_TYPE = "elasticache:ConnectionType";
 	/** Condition key: elasticache:DataStorageUnit (String) */
 	static readonly DATA_STORAGE_UNIT = "elasticache:DataStorageUnit";
 	/** Condition key: elasticache:Durability (String) */
@@ -1763,6 +1765,13 @@ export class ElastiCacheConditions {
 		value: boolean,
 	): Record<string, Record<string, boolean>> {
 		return { Bool: { "elasticache:ClusterModeEnabled": value } };
+	}
+
+	/**
+	 * Generates a condition block for `elasticache:ConnectionType`.
+	 */
+	static connectionType(value: string): Record<string, Record<string, string>> {
+		return { StringEquals: { "elasticache:ConnectionType": value } };
 	}
 
 	/**

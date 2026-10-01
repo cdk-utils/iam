@@ -370,12 +370,14 @@ new s3vectors.S3vectorsActions()
 | <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [List] s3vectors:ListTagsForResource. |
 | <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsActions.property.ListVectorBuckets">ListVectorBuckets</a></code> | <code>string</code> | [List] s3vectors:ListVectorBuckets. |
 | <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsActions.property.ListVectors">ListVectors</a></code> | <code>string</code> | [List] s3vectors:ListVectors. |
+| <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsActions.property.PutVectorBucketDefaultIndexMode">PutVectorBucketDefaultIndexMode</a></code> | <code>string</code> | [Write] s3vectors:PutVectorBucketDefaultIndexMode. |
 | <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsActions.property.PutVectorBucketPolicy">PutVectorBucketPolicy</a></code> | <code>string</code> | [PermissionManagement] s3vectors:PutVectorBucketPolicy. |
 | <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsActions.property.PutVectors">PutVectors</a></code> | <code>string</code> | [Write] s3vectors:PutVectors. |
 | <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsActions.property.QueryVectors">QueryVectors</a></code> | <code>string</code> | [Read] s3vectors:QueryVectors. |
 | <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] s3vectors:TagResource. |
 | <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] s3vectors:UntagResource. |
+| <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsActions.property.UpdateIndexMode">UpdateIndexMode</a></code> | <code>string</code> | [Write] s3vectors:UpdateIndexMode. |
 
 ---
 
@@ -607,6 +609,18 @@ public readonly ListVectors: string;
 
 ---
 
+##### `PutVectorBucketDefaultIndexMode`<sup>Required</sup> <a name="PutVectorBucketDefaultIndexMode" id="@cdk_utils/iam.s3vectors.S3vectorsActions.property.PutVectorBucketDefaultIndexMode"></a>
+
+```typescript
+public readonly PutVectorBucketDefaultIndexMode: string;
+```
+
+- *Type:* string
+
+[Write] s3vectors:PutVectorBucketDefaultIndexMode.
+
+---
+
 ##### `PutVectorBucketPolicy`<sup>Required</sup> <a name="PutVectorBucketPolicy" id="@cdk_utils/iam.s3vectors.S3vectorsActions.property.PutVectorBucketPolicy"></a>
 
 ```typescript
@@ -676,6 +690,18 @@ public readonly UntagResource: string;
 - *Type:* string
 
 [Tagging] s3vectors:UntagResource.
+
+---
+
+##### `UpdateIndexMode`<sup>Required</sup> <a name="UpdateIndexMode" id="@cdk_utils/iam.s3vectors.S3vectorsActions.property.UpdateIndexMode"></a>
+
+```typescript
+public readonly UpdateIndexMode: string;
+```
+
+- *Type:* string
+
+[Write] s3vectors:UpdateIndexMode.
 
 ---
 
@@ -828,12 +854,14 @@ Generates a condition block for `s3vectors:VectorBucketTag/${TagKey}`.
 | <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsConditions.property.ListIndexesConditionKeys">ListIndexesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListIndexes action. |
 | <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsConditions.property.ListTagsForResourceConditionKeys">ListTagsForResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListTagsForResource action. |
 | <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsConditions.property.ListVectorsConditionKeys">ListVectorsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListVectors action. |
+| <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsConditions.property.PutVectorBucketDefaultIndexModeConditionKeys">PutVectorBucketDefaultIndexModeConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutVectorBucketDefaultIndexMode action. |
 | <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsConditions.property.PutVectorBucketPolicyConditionKeys">PutVectorBucketPolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutVectorBucketPolicy action. |
 | <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsConditions.property.PutVectorsConditionKeys">PutVectorsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutVectors action. |
 | <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsConditions.property.QueryVectorsConditionKeys">QueryVectorsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the QueryVectors action. |
 | <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsConditions.property.SSE_TYPE">SSE_TYPE</a></code> | <code>string</code> | Condition key: s3vectors:sseType (String). |
 | <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsConditions.property.TagResourceConditionKeys">TagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TagResource action. |
 | <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsConditions.property.UntagResourceConditionKeys">UntagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UntagResource action. |
+| <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsConditions.property.UpdateIndexModeConditionKeys">UpdateIndexModeConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateIndexMode action. |
 | <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsConditions.property.VECTOR_BUCKET_TAG">VECTOR_BUCKET_TAG</a></code> | <code>string</code> | Condition key: s3vectors:VectorBucketTag/${TagKey} (String). |
 
 ---
@@ -1042,6 +1070,18 @@ Condition keys applicable to the ListVectors action.
 
 ---
 
+##### `PutVectorBucketDefaultIndexModeConditionKeys`<sup>Required</sup> <a name="PutVectorBucketDefaultIndexModeConditionKeys" id="@cdk_utils/iam.s3vectors.S3vectorsConditions.property.PutVectorBucketDefaultIndexModeConditionKeys"></a>
+
+```typescript
+public readonly PutVectorBucketDefaultIndexModeConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the PutVectorBucketDefaultIndexMode action.
+
+---
+
 ##### `PutVectorBucketPolicyConditionKeys`<sup>Required</sup> <a name="PutVectorBucketPolicyConditionKeys" id="@cdk_utils/iam.s3vectors.S3vectorsConditions.property.PutVectorBucketPolicyConditionKeys"></a>
 
 ```typescript
@@ -1114,6 +1154,18 @@ Condition keys applicable to the UntagResource action.
 
 ---
 
+##### `UpdateIndexModeConditionKeys`<sup>Required</sup> <a name="UpdateIndexModeConditionKeys" id="@cdk_utils/iam.s3vectors.S3vectorsConditions.property.UpdateIndexModeConditionKeys"></a>
+
+```typescript
+public readonly UpdateIndexModeConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UpdateIndexMode action.
+
+---
+
 ##### `VECTOR_BUCKET_TAG`<sup>Required</sup> <a name="VECTOR_BUCKET_TAG" id="@cdk_utils/iam.s3vectors.S3vectorsConditions.property.VECTOR_BUCKET_TAG"></a>
 
 ```typescript
@@ -1164,11 +1216,13 @@ new s3vectors.S3vectorsOperations()
 | <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsOperations.property.opGetVectorBucket">opGetVectorBucket</a></code> | <code>string[]</code> | IAM actions required for the GetVectorBucket API call. |
 | <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsOperations.property.opGetVectorBucketPolicy">opGetVectorBucketPolicy</a></code> | <code>string[]</code> | IAM actions required for the GetVectorBucketPolicy API call. |
 | <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsOperations.property.opGetVectors">opGetVectors</a></code> | <code>string[]</code> | IAM actions required for the GetVectors API call. |
+| <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsOperations.property.PutVectorBucketDefaultIndexMode">PutVectorBucketDefaultIndexMode</a></code> | <code>string[]</code> | IAM actions required for the PutVectorBucketDefaultIndexMode API call. |
 | <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsOperations.property.PutVectorBucketPolicy">PutVectorBucketPolicy</a></code> | <code>string[]</code> | IAM actions required for the PutVectorBucketPolicy API call. |
 | <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsOperations.property.PutVectors">PutVectors</a></code> | <code>string[]</code> | IAM actions required for the PutVectors API call. |
 | <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsOperations.property.QueryVectors">QueryVectors</a></code> | <code>string[]</code> | IAM actions required for the QueryVectors API call. |
 | <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
 | <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
+| <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsOperations.property.UpdateIndexMode">UpdateIndexMode</a></code> | <code>string[]</code> | IAM actions required for the UpdateIndexMode API call. |
 
 ---
 
@@ -1340,6 +1394,18 @@ IAM actions required for the GetVectors API call.
 
 ---
 
+##### `PutVectorBucketDefaultIndexMode`<sup>Required</sup> <a name="PutVectorBucketDefaultIndexMode" id="@cdk_utils/iam.s3vectors.S3vectorsOperations.property.PutVectorBucketDefaultIndexMode"></a>
+
+```typescript
+public readonly PutVectorBucketDefaultIndexMode: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the PutVectorBucketDefaultIndexMode API call.
+
+---
+
 ##### `PutVectorBucketPolicy`<sup>Required</sup> <a name="PutVectorBucketPolicy" id="@cdk_utils/iam.s3vectors.S3vectorsOperations.property.PutVectorBucketPolicy"></a>
 
 ```typescript
@@ -1397,6 +1463,18 @@ public readonly UntagResource: string[];
 - *Type:* string[]
 
 IAM actions required for the UntagResource API call.
+
+---
+
+##### `UpdateIndexMode`<sup>Required</sup> <a name="UpdateIndexMode" id="@cdk_utils/iam.s3vectors.S3vectorsOperations.property.UpdateIndexMode"></a>
+
+```typescript
+public readonly UpdateIndexMode: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateIndexMode API call.
 
 ---
 

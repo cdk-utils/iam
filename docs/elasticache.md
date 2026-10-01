@@ -2887,6 +2887,7 @@ new elasticache.ElastiCacheConditions()
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.cacheNodeType">cacheNodeType</a></code> | Generates a condition block for `elasticache:CacheNodeType`. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.cacheParameterGroupName">cacheParameterGroupName</a></code> | Generates a condition block for `elasticache:CacheParameterGroupName`. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.clusterModeEnabled">clusterModeEnabled</a></code> | Generates a condition block for `elasticache:ClusterModeEnabled`. |
+| <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.connectionType">connectionType</a></code> | Generates a condition block for `elasticache:ConnectionType`. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.dataStorageUnit">dataStorageUnit</a></code> | Generates a condition block for `elasticache:DataStorageUnit`. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.durability">durability</a></code> | Generates a condition block for `elasticache:Durability`. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.engineType">engineType</a></code> | Generates a condition block for `elasticache:EngineType`. |
@@ -3001,6 +3002,22 @@ Generates a condition block for `elasticache:ClusterModeEnabled`.
 ###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.elasticache.ElastiCacheConditions.clusterModeEnabled.parameter.value"></a>
 
 - *Type:* boolean
+
+---
+
+##### `connectionType` <a name="connectionType" id="@cdk_utils/iam.elasticache.ElastiCacheConditions.connectionType"></a>
+
+```typescript
+import { elasticache } from '@cdk_utils/iam'
+
+elasticache.ElastiCacheConditions.connectionType(value: string)
+```
+
+Generates a condition block for `elasticache:ConnectionType`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.elasticache.ElastiCacheConditions.connectionType.parameter.value"></a>
+
+- *Type:* string
 
 ---
 
@@ -3312,6 +3329,7 @@ Generates a condition block for `elasticache:UserAuthenticationMode`.
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.CLUSTER_MODE_ENABLED">CLUSTER_MODE_ENABLED</a></code> | <code>string</code> | Condition key: elasticache:ClusterModeEnabled (Bool). |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.CompleteMigrationConditionKeys">CompleteMigrationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CompleteMigration action. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.ConnectConditionKeys">ConnectConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the Connect action. |
+| <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.CONNECTION_TYPE">CONNECTION_TYPE</a></code> | <code>string</code> | Condition key: elasticache:ConnectionType (String). |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.CopyServerlessCacheSnapshotConditionKeys">CopyServerlessCacheSnapshotConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CopyServerlessCacheSnapshot action. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.CopySnapshotConditionKeys">CopySnapshotConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CopySnapshot action. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.CreateCacheClusterConditionKeys">CreateCacheClusterConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateCacheCluster action. |
@@ -3565,6 +3583,18 @@ public readonly ConnectConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the Connect action.
+
+---
+
+##### `CONNECTION_TYPE`<sup>Required</sup> <a name="CONNECTION_TYPE" id="@cdk_utils/iam.elasticache.ElastiCacheConditions.property.CONNECTION_TYPE"></a>
+
+```typescript
+public readonly CONNECTION_TYPE: string;
+```
+
+- *Type:* string
+
+Condition key: elasticache:ConnectionType (String).
 
 ---
 
