@@ -46,8 +46,13 @@ export class AccountActions {
 	static readonly PutAlternateContact = "account:PutAlternateContact";
 	/** [Write] account:PutContactInformation */
 	static readonly PutContactInformation = "account:PutContactInformation";
+	/** [Write] account:SendPhoneNumberVerification */
+	static readonly SendPhoneNumberVerification =
+		"account:SendPhoneNumberVerification";
 	/** [Write] account:StartPrimaryEmailUpdate */
 	static readonly StartPrimaryEmailUpdate = "account:StartPrimaryEmailUpdate";
+	/** [Write] account:VerifyPhoneNumber */
+	static readonly VerifyPhoneNumber = "account:VerifyPhoneNumber";
 
 	/** All read-level actions. */
 	static readonly AllReadActions: string[] = [
@@ -69,7 +74,9 @@ export class AccountActions {
 		AccountActions.PutAccountName,
 		AccountActions.PutAlternateContact,
 		AccountActions.PutContactInformation,
+		AccountActions.SendPhoneNumberVerification,
 		AccountActions.StartPrimaryEmailUpdate,
+		AccountActions.VerifyPhoneNumber,
 	];
 	/** All list-level actions. */
 	static readonly AllListActions: string[] = [AccountActions.ListRegions];
@@ -269,11 +276,17 @@ export class AccountOperations {
 	static readonly PutContactInformation: string[] = [
 		"account:PutContactInformation",
 	];
+	/** IAM actions required for the SendPhoneNumberVerification API call. */
+	static readonly SendPhoneNumberVerification: string[] = [
+		"account:SendPhoneNumberVerification",
+	];
 	/** IAM actions required for the StartPrimaryEmailUpdate API call. */
 	static readonly StartPrimaryEmailUpdate: string[] = [
 		"account:StartPrimaryEmailUpdate",
 		"iam:UpdateAccountEmailAddress",
 	];
+	/** IAM actions required for the VerifyPhoneNumber API call. */
+	static readonly VerifyPhoneNumber: string[] = ["account:VerifyPhoneNumber"];
 }
 
 /**

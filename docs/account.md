@@ -344,8 +344,10 @@ new account.AccountActions()
 | <code><a href="#@cdk_utils/iam.account.AccountActions.property.PutAccountName">PutAccountName</a></code> | <code>string</code> | [Write] account:PutAccountName. |
 | <code><a href="#@cdk_utils/iam.account.AccountActions.property.PutAlternateContact">PutAlternateContact</a></code> | <code>string</code> | [Write] account:PutAlternateContact. |
 | <code><a href="#@cdk_utils/iam.account.AccountActions.property.PutContactInformation">PutContactInformation</a></code> | <code>string</code> | [Write] account:PutContactInformation. |
+| <code><a href="#@cdk_utils/iam.account.AccountActions.property.SendPhoneNumberVerification">SendPhoneNumberVerification</a></code> | <code>string</code> | [Write] account:SendPhoneNumberVerification. |
 | <code><a href="#@cdk_utils/iam.account.AccountActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.account.AccountActions.property.StartPrimaryEmailUpdate">StartPrimaryEmailUpdate</a></code> | <code>string</code> | [Write] account:StartPrimaryEmailUpdate. |
+| <code><a href="#@cdk_utils/iam.account.AccountActions.property.VerifyPhoneNumber">VerifyPhoneNumber</a></code> | <code>string</code> | [Write] account:VerifyPhoneNumber. |
 
 ---
 
@@ -601,6 +603,18 @@ public readonly PutContactInformation: string;
 
 ---
 
+##### `SendPhoneNumberVerification`<sup>Required</sup> <a name="SendPhoneNumberVerification" id="@cdk_utils/iam.account.AccountActions.property.SendPhoneNumberVerification"></a>
+
+```typescript
+public readonly SendPhoneNumberVerification: string;
+```
+
+- *Type:* string
+
+[Write] account:SendPhoneNumberVerification.
+
+---
+
 ##### `SERVICE_PREFIX`<sup>Required</sup> <a name="SERVICE_PREFIX" id="@cdk_utils/iam.account.AccountActions.property.SERVICE_PREFIX"></a>
 
 ```typescript
@@ -622,6 +636,18 @@ public readonly StartPrimaryEmailUpdate: string;
 - *Type:* string
 
 [Write] account:StartPrimaryEmailUpdate.
+
+---
+
+##### `VerifyPhoneNumber`<sup>Required</sup> <a name="VerifyPhoneNumber" id="@cdk_utils/iam.account.AccountActions.property.VerifyPhoneNumber"></a>
+
+```typescript
+public readonly VerifyPhoneNumber: string;
+```
+
+- *Type:* string
+
+[Write] account:VerifyPhoneNumber.
 
 ---
 
@@ -951,7 +977,9 @@ new account.AccountOperations()
 | <code><a href="#@cdk_utils/iam.account.AccountOperations.property.PutAccountName">PutAccountName</a></code> | <code>string[]</code> | IAM actions required for the PutAccountName API call. |
 | <code><a href="#@cdk_utils/iam.account.AccountOperations.property.PutAlternateContact">PutAlternateContact</a></code> | <code>string[]</code> | IAM actions required for the PutAlternateContact API call. |
 | <code><a href="#@cdk_utils/iam.account.AccountOperations.property.PutContactInformation">PutContactInformation</a></code> | <code>string[]</code> | IAM actions required for the PutContactInformation API call. |
+| <code><a href="#@cdk_utils/iam.account.AccountOperations.property.SendPhoneNumberVerification">SendPhoneNumberVerification</a></code> | <code>string[]</code> | IAM actions required for the SendPhoneNumberVerification API call. |
 | <code><a href="#@cdk_utils/iam.account.AccountOperations.property.StartPrimaryEmailUpdate">StartPrimaryEmailUpdate</a></code> | <code>string[]</code> | IAM actions required for the StartPrimaryEmailUpdate API call. |
+| <code><a href="#@cdk_utils/iam.account.AccountOperations.property.VerifyPhoneNumber">VerifyPhoneNumber</a></code> | <code>string[]</code> | IAM actions required for the VerifyPhoneNumber API call. |
 
 ---
 
@@ -1135,6 +1163,18 @@ IAM actions required for the PutContactInformation API call.
 
 ---
 
+##### `SendPhoneNumberVerification`<sup>Required</sup> <a name="SendPhoneNumberVerification" id="@cdk_utils/iam.account.AccountOperations.property.SendPhoneNumberVerification"></a>
+
+```typescript
+public readonly SendPhoneNumberVerification: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the SendPhoneNumberVerification API call.
+
+---
+
 ##### `StartPrimaryEmailUpdate`<sup>Required</sup> <a name="StartPrimaryEmailUpdate" id="@cdk_utils/iam.account.AccountOperations.property.StartPrimaryEmailUpdate"></a>
 
 ```typescript
@@ -1144,6 +1184,18 @@ public readonly StartPrimaryEmailUpdate: string[];
 - *Type:* string[]
 
 IAM actions required for the StartPrimaryEmailUpdate API call.
+
+---
+
+##### `VerifyPhoneNumber`<sup>Required</sup> <a name="VerifyPhoneNumber" id="@cdk_utils/iam.account.AccountOperations.property.VerifyPhoneNumber"></a>
+
+```typescript
+public readonly VerifyPhoneNumber: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the VerifyPhoneNumber API call.
 
 ---
 

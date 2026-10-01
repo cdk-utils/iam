@@ -477,8 +477,7 @@
           "Name": "PassRole",
           "Context": {
             "iam:PassedToService": [
-              "braket.amazonaws.com",
-              "sagemaker.amazonaws.com"
+              "braket.amazonaws.com"
             ]
           },
           "Service": "iam"

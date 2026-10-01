@@ -340,6 +340,30 @@
       }
     },
     {
+      "Name": "PutVectorBucketDefaultIndexMode",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "s3vectors:VectorBucketTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "VectorBucket"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "PutVectorBucketPolicy",
       "ActionConditionKeys": [
         "aws:ResourceTag/${TagKey}",
@@ -461,6 +485,30 @@
         },
         {
           "Name": "VectorBucket"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateIndexMode",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "s3vectors:VectorBucketTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Index"
         }
       ],
       "SupportedBy": {
@@ -649,6 +697,16 @@
       ]
     },
     {
+      "Name": "PutVectorBucketDefaultIndexMode",
+      "SDK": [
+        {
+          "Name": "s3vectors",
+          "Method": "put_vector_bucket_default_index_mode",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "PutVectorBucketPolicy",
       "SDK": [
         {
@@ -694,6 +752,16 @@
         {
           "Name": "s3vectors",
           "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateIndexMode",
+      "SDK": [
+        {
+          "Name": "s3vectors",
+          "Method": "update_index_mode",
           "Package": "Boto3"
         }
       ]

@@ -505,6 +505,7 @@
           "Name": "serverlesscache",
           "ConditionKeys": [
             "aws:ResourceTag/${TagKey}",
+            "elasticache:ConnectionType",
             "elasticache:DataStorageUnit",
             "elasticache:EngineType",
             "elasticache:EngineVersion",
@@ -2162,6 +2163,12 @@
       "Name": "elasticache:ClusterModeEnabled",
       "Types": [
         "Bool"
+      ]
+    },
+    {
+      "Name": "elasticache:ConnectionType",
+      "Types": [
+        "String"
       ]
     },
     {
