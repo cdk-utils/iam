@@ -462,6 +462,16 @@
       ]
     },
     {
+      "Name": "DescribeServiceLifecycle",
+      "SDK": [
+        {
+          "Name": "health",
+          "Method": "describe_service_lifecycle",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DisableHealthServiceAccessForOrganization",
       "AuthorizedActions": [
         {

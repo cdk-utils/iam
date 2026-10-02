@@ -328,6 +328,7 @@ new security_ir.SecurityIrActions()
 | <code><a href="#@cdk_utils/iam.security_ir.SecurityIrActions.property.actionGetCase">actionGetCase</a></code> | <code>string</code> | [Read] security-ir:GetCase. |
 | <code><a href="#@cdk_utils/iam.security_ir.SecurityIrActions.property.actionGetCaseAttachmentDownloadUrl">actionGetCaseAttachmentDownloadUrl</a></code> | <code>string</code> | [Read] security-ir:GetCaseAttachmentDownloadUrl. |
 | <code><a href="#@cdk_utils/iam.security_ir.SecurityIrActions.property.actionGetCaseAttachmentUploadUrl">actionGetCaseAttachmentUploadUrl</a></code> | <code>string</code> | [Write] security-ir:GetCaseAttachmentUploadUrl. |
+| <code><a href="#@cdk_utils/iam.security_ir.SecurityIrActions.property.actionGetFindingMetrics">actionGetFindingMetrics</a></code> | <code>string</code> | [Read] security-ir:GetFindingMetrics. |
 | <code><a href="#@cdk_utils/iam.security_ir.SecurityIrActions.property.actionGetMembership">actionGetMembership</a></code> | <code>string</code> | [Read] security-ir:GetMembership. |
 | <code><a href="#@cdk_utils/iam.security_ir.SecurityIrActions.property.AllListActions">AllListActions</a></code> | <code>string[]</code> | All list-level actions. |
 | <code><a href="#@cdk_utils/iam.security_ir.SecurityIrActions.property.AllPermissionManagementActions">AllPermissionManagementActions</a></code> | <code>string[]</code> | All permission-management-level actions. |
@@ -391,6 +392,18 @@ public readonly actionGetCaseAttachmentUploadUrl: string;
 - *Type:* string
 
 [Write] security-ir:GetCaseAttachmentUploadUrl.
+
+---
+
+##### `actionGetFindingMetrics`<sup>Required</sup> <a name="actionGetFindingMetrics" id="@cdk_utils/iam.security_ir.SecurityIrActions.property.actionGetFindingMetrics"></a>
+
+```typescript
+public readonly actionGetFindingMetrics: string;
+```
+
+- *Type:* string
+
+[Read] security-ir:GetFindingMetrics.
 
 ---
 

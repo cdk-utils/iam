@@ -638,9 +638,7 @@
     {
       "Name": "DeleteServiceNetworkServiceAssociation",
       "ActionConditionKeys": [
-        "aws:ResourceTag/${TagKey}",
-        "vpc-lattice:ServiceArn",
-        "vpc-lattice:ServiceNetworkArn"
+        "aws:ResourceTag/${TagKey}"
       ],
       "Annotations": {
         "Properties": {
@@ -987,9 +985,7 @@
     {
       "Name": "GetServiceNetworkServiceAssociation",
       "ActionConditionKeys": [
-        "aws:ResourceTag/${TagKey}",
-        "vpc-lattice:ServiceArn",
-        "vpc-lattice:ServiceNetworkArn"
+        "aws:ResourceTag/${TagKey}"
       ],
       "Annotations": {
         "Properties": {
@@ -1203,8 +1199,7 @@
     {
       "Name": "ListServiceNetworkVpcAssociations",
       "ActionConditionKeys": [
-        "vpc-lattice:ServiceNetworkArn",
-        "vpc-lattice:VpcId"
+        "vpc-lattice:ServiceNetworkArn"
       ],
       "Annotations": {
         "Properties": {
@@ -2052,6 +2047,10 @@
     {
       "Name": "CreateServiceNetworkVpcAssociation",
       "AuthorizedActions": [
+        {
+          "Name": "AssociateViaAWSService",
+          "Service": "vpc-lattice"
+        },
         {
           "Name": "CreateServiceNetworkVpcAssociation",
           "Service": "vpc-lattice"

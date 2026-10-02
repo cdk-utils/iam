@@ -395,6 +395,36 @@
       }
     },
     {
+      "Name": "ListBusinessSupportAccountCharges",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListBusinessSupportSubscriptionHistory",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ListEnterpriseSupportLinkedAccountCharges",
       "Annotations": {
         "Properties": {
@@ -877,6 +907,12 @@
     },
     {
       "Name": "ListBusinessSupportAccountCharges",
+      "AuthorizedActions": [
+        {
+          "Name": "ListBusinessSupportAccountCharges",
+          "Service": "billing"
+        }
+      ],
       "SDK": [
         {
           "Name": "billing",
@@ -887,6 +923,12 @@
     },
     {
       "Name": "ListBusinessSupportSubscriptionHistory",
+      "AuthorizedActions": [
+        {
+          "Name": "ListBusinessSupportSubscriptionHistory",
+          "Service": "billing"
+        }
+      ],
       "SDK": [
         {
           "Name": "billing",

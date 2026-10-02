@@ -3714,6 +3714,7 @@ new securityhub.SecurityHubOperations()
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.ListConnectors">ListConnectors</a></code> | <code>string[]</code> | IAM actions required for the ListConnectors API call. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.ListConnectorsV2">ListConnectorsV2</a></code> | <code>string[]</code> | IAM actions required for the ListConnectorsV2 API call. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.ListEnabledProductsForImport">ListEnabledProductsForImport</a></code> | <code>string[]</code> | IAM actions required for the ListEnabledProductsForImport API call. |
+| <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.ListExposuresByRemediationV2">ListExposuresByRemediationV2</a></code> | <code>string[]</code> | IAM actions required for the ListExposuresByRemediationV2 API call. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.ListFindingAggregators">ListFindingAggregators</a></code> | <code>string[]</code> | IAM actions required for the ListFindingAggregators API call. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.ListFreeTrialStatusesV2">ListFreeTrialStatusesV2</a></code> | <code>string[]</code> | IAM actions required for the ListFreeTrialStatusesV2 API call. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.ListInvitations">ListInvitations</a></code> | <code>string[]</code> | IAM actions required for the ListInvitations API call. |
@@ -3742,6 +3743,7 @@ new securityhub.SecurityHubOperations()
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.opGetMasterAccount">opGetMasterAccount</a></code> | <code>string[]</code> | IAM actions required for the GetMasterAccount API call. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.opGetMembers">opGetMembers</a></code> | <code>string[]</code> | IAM actions required for the GetMembers API call. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.opGetRecommendedPolicyV2">opGetRecommendedPolicyV2</a></code> | <code>string[]</code> | IAM actions required for the GetRecommendedPolicyV2 API call. |
+| <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.opGetRemediationsV2">opGetRemediationsV2</a></code> | <code>string[]</code> | IAM actions required for the GetRemediationsV2 API call. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.opGetResourcesStatisticsV2">opGetResourcesStatisticsV2</a></code> | <code>string[]</code> | IAM actions required for the GetResourcesStatisticsV2 API call. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.opGetResourcesTrendsV2">opGetResourcesTrendsV2</a></code> | <code>string[]</code> | IAM actions required for the GetResourcesTrendsV2 API call. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.opGetResourcesV2">opGetResourcesV2</a></code> | <code>string[]</code> | IAM actions required for the GetResourcesV2 API call. |
@@ -4571,6 +4573,18 @@ IAM actions required for the ListEnabledProductsForImport API call.
 
 ---
 
+##### `ListExposuresByRemediationV2`<sup>Required</sup> <a name="ListExposuresByRemediationV2" id="@cdk_utils/iam.securityhub.SecurityHubOperations.property.ListExposuresByRemediationV2"></a>
+
+```typescript
+public readonly ListExposuresByRemediationV2: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListExposuresByRemediationV2 API call.
+
+---
+
 ##### `ListFindingAggregators`<sup>Required</sup> <a name="ListFindingAggregators" id="@cdk_utils/iam.securityhub.SecurityHubOperations.property.ListFindingAggregators"></a>
 
 ```typescript
@@ -4904,6 +4918,18 @@ public readonly opGetRecommendedPolicyV2: string[];
 - *Type:* string[]
 
 IAM actions required for the GetRecommendedPolicyV2 API call.
+
+---
+
+##### `opGetRemediationsV2`<sup>Required</sup> <a name="opGetRemediationsV2" id="@cdk_utils/iam.securityhub.SecurityHubOperations.property.opGetRemediationsV2"></a>
+
+```typescript
+public readonly opGetRemediationsV2: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetRemediationsV2 API call.
 
 ---
 

@@ -3642,6 +3642,7 @@ export class QuickSightOperations {
 		"quicksight:DescribeTemplate",
 		"quicksight:DescribeTheme",
 		"quicksight:PassDataSet",
+		"quicksight:PassTopic",
 		"quicksight:TagResource",
 	];
 	/** IAM actions required for the CreateDataSet API call. */

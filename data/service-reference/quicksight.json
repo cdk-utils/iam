@@ -7230,6 +7230,10 @@
           "Service": "quicksight"
         },
         {
+          "Name": "PassTopic",
+          "Service": "quicksight"
+        },
+        {
           "Name": "TagResource",
           "Service": "quicksight"
         }
