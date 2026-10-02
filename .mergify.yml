@@ -44,5 +44,17 @@ pull_request_rules:
     conditions:
       - author=Lorenzohidalgo
       - label=do-not-merge
+  - name: Auto-approve daily service-reference update PRs
+    conditions:
+      - "title=feat: update AWS service reference data"
+      - author=Lorenzohidalgo
+      - label=merge
+      - -label~=(do-not-merge)
+    actions:
+      review:
+        type: APPROVE
+        message: "Auto-approved: scheduled AWS service-reference data update."
+      comment:
+        message: "@Lorenzohidalgo a new AWS service-reference update has been approved and will be merged and published shortly once CI passes."
 merge_queue:
   max_parallel_checks: 1
