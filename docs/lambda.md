@@ -1787,6 +1787,502 @@ Defaults to "*".
 
 ---
 
+### LambdaWebFunctionArnComponents <a name="LambdaWebFunctionArnComponents" id="@cdk_utils/iam.lambda.LambdaWebFunctionArnComponents"></a>
+
+Parsed components of a webFunction ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.lambda.LambdaWebFunctionArnComponents.Initializer"></a>
+
+```typescript
+import { lambda } from '@cdk_utils/iam'
+
+const lambdaWebFunctionArnComponents: lambda.LambdaWebFunctionArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaWebFunctionArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaWebFunctionArnComponents.property.functionName">functionName</a></code> | <code>string</code> | The FunctionName component. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaWebFunctionArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaWebFunctionArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.lambda.LambdaWebFunctionArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `functionName`<sup>Required</sup> <a name="functionName" id="@cdk_utils/iam.lambda.LambdaWebFunctionArnComponents.property.functionName"></a>
+
+```typescript
+public readonly functionName: string;
+```
+
+- *Type:* string
+
+The FunctionName component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.lambda.LambdaWebFunctionArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.lambda.LambdaWebFunctionArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### LambdaWebFunctionArnProps <a name="LambdaWebFunctionArnProps" id="@cdk_utils/iam.lambda.LambdaWebFunctionArnProps"></a>
+
+Properties for building a webFunction ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.lambda.LambdaWebFunctionArnProps.Initializer"></a>
+
+```typescript
+import { lambda } from '@cdk_utils/iam'
+
+const lambdaWebFunctionArnProps: lambda.LambdaWebFunctionArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaWebFunctionArnProps.property.functionName">functionName</a></code> | <code>string</code> | The FunctionName component of the ARN. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaWebFunctionArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaWebFunctionArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaWebFunctionArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `functionName`<sup>Required</sup> <a name="functionName" id="@cdk_utils/iam.lambda.LambdaWebFunctionArnProps.property.functionName"></a>
+
+```typescript
+public readonly functionName: string;
+```
+
+- *Type:* string
+
+The FunctionName component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.lambda.LambdaWebFunctionArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.lambda.LambdaWebFunctionArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.lambda.LambdaWebFunctionArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
+### LambdaWebFunctionEndpointArnComponents <a name="LambdaWebFunctionEndpointArnComponents" id="@cdk_utils/iam.lambda.LambdaWebFunctionEndpointArnComponents"></a>
+
+Parsed components of a webFunctionEndpoint ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.lambda.LambdaWebFunctionEndpointArnComponents.Initializer"></a>
+
+```typescript
+import { lambda } from '@cdk_utils/iam'
+
+const lambdaWebFunctionEndpointArnComponents: lambda.LambdaWebFunctionEndpointArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaWebFunctionEndpointArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaWebFunctionEndpointArnComponents.property.endpointName">endpointName</a></code> | <code>string</code> | The EndpointName component. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaWebFunctionEndpointArnComponents.property.functionName">functionName</a></code> | <code>string</code> | The FunctionName component. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaWebFunctionEndpointArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaWebFunctionEndpointArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.lambda.LambdaWebFunctionEndpointArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `endpointName`<sup>Required</sup> <a name="endpointName" id="@cdk_utils/iam.lambda.LambdaWebFunctionEndpointArnComponents.property.endpointName"></a>
+
+```typescript
+public readonly endpointName: string;
+```
+
+- *Type:* string
+
+The EndpointName component.
+
+---
+
+##### `functionName`<sup>Required</sup> <a name="functionName" id="@cdk_utils/iam.lambda.LambdaWebFunctionEndpointArnComponents.property.functionName"></a>
+
+```typescript
+public readonly functionName: string;
+```
+
+- *Type:* string
+
+The FunctionName component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.lambda.LambdaWebFunctionEndpointArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.lambda.LambdaWebFunctionEndpointArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### LambdaWebFunctionEndpointArnProps <a name="LambdaWebFunctionEndpointArnProps" id="@cdk_utils/iam.lambda.LambdaWebFunctionEndpointArnProps"></a>
+
+Properties for building a webFunctionEndpoint ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.lambda.LambdaWebFunctionEndpointArnProps.Initializer"></a>
+
+```typescript
+import { lambda } from '@cdk_utils/iam'
+
+const lambdaWebFunctionEndpointArnProps: lambda.LambdaWebFunctionEndpointArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaWebFunctionEndpointArnProps.property.endpointName">endpointName</a></code> | <code>string</code> | The EndpointName component of the ARN. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaWebFunctionEndpointArnProps.property.functionName">functionName</a></code> | <code>string</code> | The FunctionName component of the ARN. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaWebFunctionEndpointArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaWebFunctionEndpointArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaWebFunctionEndpointArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `endpointName`<sup>Required</sup> <a name="endpointName" id="@cdk_utils/iam.lambda.LambdaWebFunctionEndpointArnProps.property.endpointName"></a>
+
+```typescript
+public readonly endpointName: string;
+```
+
+- *Type:* string
+
+The EndpointName component of the ARN.
+
+---
+
+##### `functionName`<sup>Required</sup> <a name="functionName" id="@cdk_utils/iam.lambda.LambdaWebFunctionEndpointArnProps.property.functionName"></a>
+
+```typescript
+public readonly functionName: string;
+```
+
+- *Type:* string
+
+The FunctionName component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.lambda.LambdaWebFunctionEndpointArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.lambda.LambdaWebFunctionEndpointArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.lambda.LambdaWebFunctionEndpointArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
+### LambdaWebFunctionRevisionArnComponents <a name="LambdaWebFunctionRevisionArnComponents" id="@cdk_utils/iam.lambda.LambdaWebFunctionRevisionArnComponents"></a>
+
+Parsed components of a webFunctionRevision ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.lambda.LambdaWebFunctionRevisionArnComponents.Initializer"></a>
+
+```typescript
+import { lambda } from '@cdk_utils/iam'
+
+const lambdaWebFunctionRevisionArnComponents: lambda.LambdaWebFunctionRevisionArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaWebFunctionRevisionArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaWebFunctionRevisionArnComponents.property.functionName">functionName</a></code> | <code>string</code> | The FunctionName component. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaWebFunctionRevisionArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaWebFunctionRevisionArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaWebFunctionRevisionArnComponents.property.revisionId">revisionId</a></code> | <code>string</code> | The RevisionId component. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.lambda.LambdaWebFunctionRevisionArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `functionName`<sup>Required</sup> <a name="functionName" id="@cdk_utils/iam.lambda.LambdaWebFunctionRevisionArnComponents.property.functionName"></a>
+
+```typescript
+public readonly functionName: string;
+```
+
+- *Type:* string
+
+The FunctionName component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.lambda.LambdaWebFunctionRevisionArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.lambda.LambdaWebFunctionRevisionArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+##### `revisionId`<sup>Required</sup> <a name="revisionId" id="@cdk_utils/iam.lambda.LambdaWebFunctionRevisionArnComponents.property.revisionId"></a>
+
+```typescript
+public readonly revisionId: string;
+```
+
+- *Type:* string
+
+The RevisionId component.
+
+---
+
+### LambdaWebFunctionRevisionArnProps <a name="LambdaWebFunctionRevisionArnProps" id="@cdk_utils/iam.lambda.LambdaWebFunctionRevisionArnProps"></a>
+
+Properties for building a webFunctionRevision ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.lambda.LambdaWebFunctionRevisionArnProps.Initializer"></a>
+
+```typescript
+import { lambda } from '@cdk_utils/iam'
+
+const lambdaWebFunctionRevisionArnProps: lambda.LambdaWebFunctionRevisionArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaWebFunctionRevisionArnProps.property.functionName">functionName</a></code> | <code>string</code> | The FunctionName component of the ARN. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaWebFunctionRevisionArnProps.property.revisionId">revisionId</a></code> | <code>string</code> | The RevisionId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaWebFunctionRevisionArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaWebFunctionRevisionArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaWebFunctionRevisionArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `functionName`<sup>Required</sup> <a name="functionName" id="@cdk_utils/iam.lambda.LambdaWebFunctionRevisionArnProps.property.functionName"></a>
+
+```typescript
+public readonly functionName: string;
+```
+
+- *Type:* string
+
+The FunctionName component of the ARN.
+
+---
+
+##### `revisionId`<sup>Required</sup> <a name="revisionId" id="@cdk_utils/iam.lambda.LambdaWebFunctionRevisionArnProps.property.revisionId"></a>
+
+```typescript
+public readonly revisionId: string;
+```
+
+- *Type:* string
+
+The RevisionId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.lambda.LambdaWebFunctionRevisionArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.lambda.LambdaWebFunctionRevisionArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.lambda.LambdaWebFunctionRevisionArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ## Classes <a name="Classes" id="Classes"></a>
 
 ### LambdaActions <a name="LambdaActions" id="@cdk_utils/iam.lambda.LambdaActions"></a>
@@ -1840,6 +2336,10 @@ new lambda.LambdaActions()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.actionGetProvisionedConcurrencyConfig">actionGetProvisionedConcurrencyConfig</a></code> | <code>string</code> | [Read] lambda:GetProvisionedConcurrencyConfig. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.actionGetResourcePolicy">actionGetResourcePolicy</a></code> | <code>string</code> | [Read] lambda:GetResourcePolicy. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.actionGetRuntimeManagementConfig">actionGetRuntimeManagementConfig</a></code> | <code>string</code> | [Read] lambda:GetRuntimeManagementConfig. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.actionGetWebAccountSettings">actionGetWebAccountSettings</a></code> | <code>string</code> | [Read] lambda:GetWebAccountSettings. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.actionGetWebFunction">actionGetWebFunction</a></code> | <code>string</code> | [Read] lambda:GetWebFunction. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.actionGetWebFunctionEndpoint">actionGetWebFunctionEndpoint</a></code> | <code>string</code> | [Read] lambda:GetWebFunctionEndpoint. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.actionGetWebFunctionRevision">actionGetWebFunctionRevision</a></code> | <code>string</code> | [Read] lambda:GetWebFunctionRevision. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.AddLayerVersionPermission">AddLayerVersionPermission</a></code> | <code>string</code> | [PermissionManagement] lambda:AddLayerVersionPermission. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.AddPermission">AddPermission</a></code> | <code>string</code> | [PermissionManagement] lambda:AddPermission. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.AllListActions">AllListActions</a></code> | <code>string[]</code> | All list-level actions. |
@@ -1859,6 +2359,9 @@ new lambda.LambdaActions()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.CreateMicrovmImage">CreateMicrovmImage</a></code> | <code>string</code> | [Write] lambda:CreateMicrovmImage. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.CreateMicrovmShellAuthToken">CreateMicrovmShellAuthToken</a></code> | <code>string</code> | [Write] lambda:CreateMicrovmShellAuthToken. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.CreateNetworkConnector">CreateNetworkConnector</a></code> | <code>string</code> | [Write] lambda:CreateNetworkConnector. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.CreateWebFunction">CreateWebFunction</a></code> | <code>string</code> | [Write] lambda:CreateWebFunction. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.CreateWebFunctionEndpoint">CreateWebFunctionEndpoint</a></code> | <code>string</code> | [Write] lambda:CreateWebFunctionEndpoint. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.CreateWebFunctionRevision">CreateWebFunctionRevision</a></code> | <code>string</code> | [Write] lambda:CreateWebFunctionRevision. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.DeleteAlias">DeleteAlias</a></code> | <code>string</code> | [Write] lambda:DeleteAlias. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.DeleteCapacityProvider">DeleteCapacityProvider</a></code> | <code>string</code> | [Write] lambda:DeleteCapacityProvider. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.DeleteCodeSigningConfig">DeleteCodeSigningConfig</a></code> | <code>string</code> | [Write] lambda:DeleteCodeSigningConfig. |
@@ -1874,11 +2377,15 @@ new lambda.LambdaActions()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.DeleteNetworkConnector">DeleteNetworkConnector</a></code> | <code>string</code> | [Write] lambda:DeleteNetworkConnector. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.DeleteProvisionedConcurrencyConfig">DeleteProvisionedConcurrencyConfig</a></code> | <code>string</code> | [Write] lambda:DeleteProvisionedConcurrencyConfig. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.DeleteResourcePolicy">DeleteResourcePolicy</a></code> | <code>string</code> | [PermissionManagement] lambda:DeleteResourcePolicy. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.DeleteWebFunction">DeleteWebFunction</a></code> | <code>string</code> | [Write] lambda:DeleteWebFunction. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.DeleteWebFunctionEndpoint">DeleteWebFunctionEndpoint</a></code> | <code>string</code> | [Write] lambda:DeleteWebFunctionEndpoint. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.DeleteWebFunctionRevision">DeleteWebFunctionRevision</a></code> | <code>string</code> | [Write] lambda:DeleteWebFunctionRevision. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.DisableReplication">DisableReplication</a></code> | <code>string</code> | [PermissionManagement] lambda:DisableReplication. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.EnableReplication">EnableReplication</a></code> | <code>string</code> | [PermissionManagement] lambda:EnableReplication. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.InvokeAsync">InvokeAsync</a></code> | <code>string</code> | [Write] lambda:InvokeAsync. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.InvokeFunction">InvokeFunction</a></code> | <code>string</code> | [Write] lambda:InvokeFunction. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.InvokeFunctionUrl">InvokeFunctionUrl</a></code> | <code>string</code> | [Write] lambda:InvokeFunctionUrl. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.InvokeWebFunctionEndpoint">InvokeWebFunctionEndpoint</a></code> | <code>string</code> | [Write] lambda:InvokeWebFunctionEndpoint. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.ListAliases">ListAliases</a></code> | <code>string</code> | [List] lambda:ListAliases. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.ListCapacityProviders">ListCapacityProviders</a></code> | <code>string</code> | [List] lambda:ListCapacityProviders. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.ListCodeSigningConfigs">ListCodeSigningConfigs</a></code> | <code>string</code> | [List] lambda:ListCodeSigningConfigs. |
@@ -1901,6 +2408,9 @@ new lambda.LambdaActions()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.ListProvisionedConcurrencyConfigs">ListProvisionedConcurrencyConfigs</a></code> | <code>string</code> | [List] lambda:ListProvisionedConcurrencyConfigs. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.ListTags">ListTags</a></code> | <code>string</code> | [Read] lambda:ListTags. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.ListVersionsByFunction">ListVersionsByFunction</a></code> | <code>string</code> | [List] lambda:ListVersionsByFunction. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.ListWebFunctionEndpoints">ListWebFunctionEndpoints</a></code> | <code>string</code> | [List] lambda:ListWebFunctionEndpoints. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.ListWebFunctionRevisions">ListWebFunctionRevisions</a></code> | <code>string</code> | [List] lambda:ListWebFunctionRevisions. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.ListWebFunctions">ListWebFunctions</a></code> | <code>string</code> | [List] lambda:ListWebFunctions. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.PassCapacityProvider">PassCapacityProvider</a></code> | <code>string</code> | [Write] lambda:PassCapacityProvider. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.PassNetworkConnector">PassNetworkConnector</a></code> | <code>string</code> | [Write] lambda:PassNetworkConnector. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.PublishLayerVersion">PublishLayerVersion</a></code> | <code>string</code> | [Write] lambda:PublishLayerVersion. |
@@ -1938,6 +2448,7 @@ new lambda.LambdaActions()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.UpdateMicrovmImage">UpdateMicrovmImage</a></code> | <code>string</code> | [Write] lambda:UpdateMicrovmImage. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.UpdateMicrovmImageVersion">UpdateMicrovmImageVersion</a></code> | <code>string</code> | [Write] lambda:UpdateMicrovmImageVersion. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.UpdateNetworkConnector">UpdateNetworkConnector</a></code> | <code>string</code> | [Write] lambda:UpdateNetworkConnector. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.UpdateWebFunctionEndpoint">UpdateWebFunctionEndpoint</a></code> | <code>string</code> | [Write] lambda:UpdateWebFunctionEndpoint. |
 
 ---
 
@@ -2265,6 +2776,54 @@ public readonly actionGetRuntimeManagementConfig: string;
 
 ---
 
+##### `actionGetWebAccountSettings`<sup>Required</sup> <a name="actionGetWebAccountSettings" id="@cdk_utils/iam.lambda.LambdaActions.property.actionGetWebAccountSettings"></a>
+
+```typescript
+public readonly actionGetWebAccountSettings: string;
+```
+
+- *Type:* string
+
+[Read] lambda:GetWebAccountSettings.
+
+---
+
+##### `actionGetWebFunction`<sup>Required</sup> <a name="actionGetWebFunction" id="@cdk_utils/iam.lambda.LambdaActions.property.actionGetWebFunction"></a>
+
+```typescript
+public readonly actionGetWebFunction: string;
+```
+
+- *Type:* string
+
+[Read] lambda:GetWebFunction.
+
+---
+
+##### `actionGetWebFunctionEndpoint`<sup>Required</sup> <a name="actionGetWebFunctionEndpoint" id="@cdk_utils/iam.lambda.LambdaActions.property.actionGetWebFunctionEndpoint"></a>
+
+```typescript
+public readonly actionGetWebFunctionEndpoint: string;
+```
+
+- *Type:* string
+
+[Read] lambda:GetWebFunctionEndpoint.
+
+---
+
+##### `actionGetWebFunctionRevision`<sup>Required</sup> <a name="actionGetWebFunctionRevision" id="@cdk_utils/iam.lambda.LambdaActions.property.actionGetWebFunctionRevision"></a>
+
+```typescript
+public readonly actionGetWebFunctionRevision: string;
+```
+
+- *Type:* string
+
+[Read] lambda:GetWebFunctionRevision.
+
+---
+
 ##### `AddLayerVersionPermission`<sup>Required</sup> <a name="AddLayerVersionPermission" id="@cdk_utils/iam.lambda.LambdaActions.property.AddLayerVersionPermission"></a>
 
 ```typescript
@@ -2493,6 +3052,42 @@ public readonly CreateNetworkConnector: string;
 
 ---
 
+##### `CreateWebFunction`<sup>Required</sup> <a name="CreateWebFunction" id="@cdk_utils/iam.lambda.LambdaActions.property.CreateWebFunction"></a>
+
+```typescript
+public readonly CreateWebFunction: string;
+```
+
+- *Type:* string
+
+[Write] lambda:CreateWebFunction.
+
+---
+
+##### `CreateWebFunctionEndpoint`<sup>Required</sup> <a name="CreateWebFunctionEndpoint" id="@cdk_utils/iam.lambda.LambdaActions.property.CreateWebFunctionEndpoint"></a>
+
+```typescript
+public readonly CreateWebFunctionEndpoint: string;
+```
+
+- *Type:* string
+
+[Write] lambda:CreateWebFunctionEndpoint.
+
+---
+
+##### `CreateWebFunctionRevision`<sup>Required</sup> <a name="CreateWebFunctionRevision" id="@cdk_utils/iam.lambda.LambdaActions.property.CreateWebFunctionRevision"></a>
+
+```typescript
+public readonly CreateWebFunctionRevision: string;
+```
+
+- *Type:* string
+
+[Write] lambda:CreateWebFunctionRevision.
+
+---
+
 ##### `DeleteAlias`<sup>Required</sup> <a name="DeleteAlias" id="@cdk_utils/iam.lambda.LambdaActions.property.DeleteAlias"></a>
 
 ```typescript
@@ -2673,6 +3268,42 @@ public readonly DeleteResourcePolicy: string;
 
 ---
 
+##### `DeleteWebFunction`<sup>Required</sup> <a name="DeleteWebFunction" id="@cdk_utils/iam.lambda.LambdaActions.property.DeleteWebFunction"></a>
+
+```typescript
+public readonly DeleteWebFunction: string;
+```
+
+- *Type:* string
+
+[Write] lambda:DeleteWebFunction.
+
+---
+
+##### `DeleteWebFunctionEndpoint`<sup>Required</sup> <a name="DeleteWebFunctionEndpoint" id="@cdk_utils/iam.lambda.LambdaActions.property.DeleteWebFunctionEndpoint"></a>
+
+```typescript
+public readonly DeleteWebFunctionEndpoint: string;
+```
+
+- *Type:* string
+
+[Write] lambda:DeleteWebFunctionEndpoint.
+
+---
+
+##### `DeleteWebFunctionRevision`<sup>Required</sup> <a name="DeleteWebFunctionRevision" id="@cdk_utils/iam.lambda.LambdaActions.property.DeleteWebFunctionRevision"></a>
+
+```typescript
+public readonly DeleteWebFunctionRevision: string;
+```
+
+- *Type:* string
+
+[Write] lambda:DeleteWebFunctionRevision.
+
+---
+
 ##### `DisableReplication`<sup>Required</sup> <a name="DisableReplication" id="@cdk_utils/iam.lambda.LambdaActions.property.DisableReplication"></a>
 
 ```typescript
@@ -2730,6 +3361,18 @@ public readonly InvokeFunctionUrl: string;
 - *Type:* string
 
 [Write] lambda:InvokeFunctionUrl.
+
+---
+
+##### `InvokeWebFunctionEndpoint`<sup>Required</sup> <a name="InvokeWebFunctionEndpoint" id="@cdk_utils/iam.lambda.LambdaActions.property.InvokeWebFunctionEndpoint"></a>
+
+```typescript
+public readonly InvokeWebFunctionEndpoint: string;
+```
+
+- *Type:* string
+
+[Write] lambda:InvokeWebFunctionEndpoint.
 
 ---
 
@@ -2994,6 +3637,42 @@ public readonly ListVersionsByFunction: string;
 - *Type:* string
 
 [List] lambda:ListVersionsByFunction.
+
+---
+
+##### `ListWebFunctionEndpoints`<sup>Required</sup> <a name="ListWebFunctionEndpoints" id="@cdk_utils/iam.lambda.LambdaActions.property.ListWebFunctionEndpoints"></a>
+
+```typescript
+public readonly ListWebFunctionEndpoints: string;
+```
+
+- *Type:* string
+
+[List] lambda:ListWebFunctionEndpoints.
+
+---
+
+##### `ListWebFunctionRevisions`<sup>Required</sup> <a name="ListWebFunctionRevisions" id="@cdk_utils/iam.lambda.LambdaActions.property.ListWebFunctionRevisions"></a>
+
+```typescript
+public readonly ListWebFunctionRevisions: string;
+```
+
+- *Type:* string
+
+[List] lambda:ListWebFunctionRevisions.
+
+---
+
+##### `ListWebFunctions`<sup>Required</sup> <a name="ListWebFunctions" id="@cdk_utils/iam.lambda.LambdaActions.property.ListWebFunctions"></a>
+
+```typescript
+public readonly ListWebFunctions: string;
+```
+
+- *Type:* string
+
+[List] lambda:ListWebFunctions.
 
 ---
 
@@ -3441,6 +4120,18 @@ public readonly UpdateNetworkConnector: string;
 
 ---
 
+##### `UpdateWebFunctionEndpoint`<sup>Required</sup> <a name="UpdateWebFunctionEndpoint" id="@cdk_utils/iam.lambda.LambdaActions.property.UpdateWebFunctionEndpoint"></a>
+
+```typescript
+public readonly UpdateWebFunctionEndpoint: string;
+```
+
+- *Type:* string
+
+[Write] lambda:UpdateWebFunctionEndpoint.
+
+---
+
 ### LambdaConditions <a name="LambdaConditions" id="@cdk_utils/iam.lambda.LambdaConditions"></a>
 
 Condition key constants and builders for lambda.
@@ -3471,7 +4162,9 @@ new lambda.LambdaConditions()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.layer">layer</a></code> | Generates a condition block for `lambda:Layer`. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.principal">principal</a></code> | Generates a condition block for `lambda:Principal`. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.requestTag">requestTag</a></code> | Generates a condition block for `aws:RequestTag/${TagKey}`. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.requestWebFunctionAuthType">requestWebFunctionAuthType</a></code> | Generates a condition block for `lambda:Request/WebFunctionAuthType`. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.resourceTag">resourceTag</a></code> | Generates a condition block for `aws:ResourceTag/${TagKey}`. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.resourceWebFunctionAuthType">resourceWebFunctionAuthType</a></code> | Generates a condition block for `lambda:Resource/WebFunctionAuthType`. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.securityGroupIds">securityGroupIds</a></code> | Generates a condition block for `lambda:SecurityGroupIds`. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.sourceFunctionARN">sourceFunctionARN</a></code> | Generates a condition block for `lambda:SourceFunctionArn`. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.subnetIds">subnetIds</a></code> | Generates a condition block for `lambda:SubnetIds`. |
@@ -3608,6 +4301,22 @@ Generates a condition block for `aws:RequestTag/${TagKey}`.
 
 ---
 
+##### `requestWebFunctionAuthType` <a name="requestWebFunctionAuthType" id="@cdk_utils/iam.lambda.LambdaConditions.requestWebFunctionAuthType"></a>
+
+```typescript
+import { lambda } from '@cdk_utils/iam'
+
+lambda.LambdaConditions.requestWebFunctionAuthType(value: string)
+```
+
+Generates a condition block for `lambda:Request/WebFunctionAuthType`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.lambda.LambdaConditions.requestWebFunctionAuthType.parameter.value"></a>
+
+- *Type:* string
+
+---
+
 ##### `resourceTag` <a name="resourceTag" id="@cdk_utils/iam.lambda.LambdaConditions.resourceTag"></a>
 
 ```typescript
@@ -3619,6 +4328,22 @@ lambda.LambdaConditions.resourceTag(value: string)
 Generates a condition block for `aws:ResourceTag/${TagKey}`.
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.lambda.LambdaConditions.resourceTag.parameter.value"></a>
+
+- *Type:* string
+
+---
+
+##### `resourceWebFunctionAuthType` <a name="resourceWebFunctionAuthType" id="@cdk_utils/iam.lambda.LambdaConditions.resourceWebFunctionAuthType"></a>
+
+```typescript
+import { lambda } from '@cdk_utils/iam'
+
+lambda.LambdaConditions.resourceWebFunctionAuthType(value: string)
+```
+
+Generates a condition block for `lambda:Resource/WebFunctionAuthType`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.lambda.LambdaConditions.resourceWebFunctionAuthType.parameter.value"></a>
 
 - *Type:* string
 
@@ -3711,6 +4436,7 @@ Generates a condition block for `lambda:VpcIds`.
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.actionGetEventSourceMappingConditionKeys">actionGetEventSourceMappingConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetEventSourceMapping action. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.actionGetFunctionUrlConfigConditionKeys">actionGetFunctionUrlConfigConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetFunctionUrlConfig action. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.actionGetWebFunctionEndpointConditionKeys">actionGetWebFunctionEndpointConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetWebFunctionEndpoint action. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.AddPermissionConditionKeys">AddPermissionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the AddPermission action. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.AWS_REQUEST_TAG">AWS_REQUEST_TAG</a></code> | <code>string</code> | Condition key: aws:RequestTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.AWS_RESOURCE_TAG">AWS_RESOURCE_TAG</a></code> | <code>string</code> | Condition key: aws:ResourceTag/${TagKey} (String). |
@@ -3723,21 +4449,27 @@ Generates a condition block for `lambda:VpcIds`.
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.CreateFunctionUrlConfigConditionKeys">CreateFunctionUrlConfigConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateFunctionUrlConfig action. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.CreateMicrovmImageConditionKeys">CreateMicrovmImageConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateMicrovmImage action. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.CreateNetworkConnectorConditionKeys">CreateNetworkConnectorConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateNetworkConnector action. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.CreateWebFunctionConditionKeys">CreateWebFunctionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateWebFunction action. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.CreateWebFunctionEndpointConditionKeys">CreateWebFunctionEndpointConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateWebFunctionEndpoint action. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.DeleteEventSourceMappingConditionKeys">DeleteEventSourceMappingConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteEventSourceMapping action. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.DeleteFunctionUrlConfigConditionKeys">DeleteFunctionUrlConfigConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteFunctionUrlConfig action. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.DeleteResourcePolicyConditionKeys">DeleteResourcePolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteResourcePolicy action. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.DeleteWebFunctionEndpointConditionKeys">DeleteWebFunctionEndpointConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteWebFunctionEndpoint action. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.EVENT_SOURCE_TOKEN">EVENT_SOURCE_TOKEN</a></code> | <code>string</code> | Condition key: lambda:EventSourceToken (String). |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.FUNCTION_ARN">FUNCTION_ARN</a></code> | <code>string</code> | Condition key: lambda:FunctionArn (ARN). |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.FUNCTION_URL_AUTH_TYPE">FUNCTION_URL_AUTH_TYPE</a></code> | <code>string</code> | Condition key: lambda:FunctionUrlAuthType (String). |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.INVOKED_VIA_FUNCTION_URL">INVOKED_VIA_FUNCTION_URL</a></code> | <code>string</code> | Condition key: lambda:InvokedViaFunctionUrl (Bool). |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.InvokeFunctionConditionKeys">InvokeFunctionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the InvokeFunction action. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.InvokeFunctionUrlConditionKeys">InvokeFunctionUrlConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the InvokeFunctionUrl action. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.InvokeWebFunctionEndpointConditionKeys">InvokeWebFunctionEndpointConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the InvokeWebFunctionEndpoint action. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.LAYER">LAYER</a></code> | <code>string</code> | Condition key: lambda:Layer (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.ListFunctionUrlConfigsConditionKeys">ListFunctionUrlConfigsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListFunctionUrlConfigs action. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.PRINCIPAL">PRINCIPAL</a></code> | <code>string</code> | Condition key: lambda:Principal (String). |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.PutFunctionCodeSigningConfigConditionKeys">PutFunctionCodeSigningConfigConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutFunctionCodeSigningConfig action. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.PutResourcePolicyConditionKeys">PutResourcePolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutResourcePolicy action. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.RemovePermissionConditionKeys">RemovePermissionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the RemovePermission action. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.REQUEST_WEB_FUNCTION_AUTH_TYPE">REQUEST_WEB_FUNCTION_AUTH_TYPE</a></code> | <code>string</code> | Condition key: lambda:Request/WebFunctionAuthType (String). |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.RESOURCE_WEB_FUNCTION_AUTH_TYPE">RESOURCE_WEB_FUNCTION_AUTH_TYPE</a></code> | <code>string</code> | Condition key: lambda:Resource/WebFunctionAuthType (String). |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.SECURITY_GROUP_IDS">SECURITY_GROUP_IDS</a></code> | <code>string</code> | Condition key: lambda:SecurityGroupIds (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.SOURCE_FUNCTION_ARN">SOURCE_FUNCTION_ARN</a></code> | <code>string</code> | Condition key: lambda:SourceFunctionArn (ARN). |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.SUBNET_IDS">SUBNET_IDS</a></code> | <code>string</code> | Condition key: lambda:SubnetIds (ArrayOfString). |
@@ -3746,6 +4478,7 @@ Generates a condition block for `lambda:VpcIds`.
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.UpdateEventSourceMappingConditionKeys">UpdateEventSourceMappingConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateEventSourceMapping action. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.UpdateFunctionConfigurationConditionKeys">UpdateFunctionConfigurationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateFunctionConfiguration action. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.UpdateFunctionUrlConfigConditionKeys">UpdateFunctionUrlConfigConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateFunctionUrlConfig action. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.UpdateWebFunctionEndpointConditionKeys">UpdateWebFunctionEndpointConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateWebFunctionEndpoint action. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.VPC_IDS">VPC_IDS</a></code> | <code>string</code> | Condition key: lambda:VpcIds (String). |
 
 ---
@@ -3771,6 +4504,18 @@ public readonly actionGetFunctionUrlConfigConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the GetFunctionUrlConfig action.
+
+---
+
+##### `actionGetWebFunctionEndpointConditionKeys`<sup>Required</sup> <a name="actionGetWebFunctionEndpointConditionKeys" id="@cdk_utils/iam.lambda.LambdaConditions.property.actionGetWebFunctionEndpointConditionKeys"></a>
+
+```typescript
+public readonly actionGetWebFunctionEndpointConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetWebFunctionEndpoint action.
 
 ---
 
@@ -3918,6 +4663,30 @@ Condition keys applicable to the CreateNetworkConnector action.
 
 ---
 
+##### `CreateWebFunctionConditionKeys`<sup>Required</sup> <a name="CreateWebFunctionConditionKeys" id="@cdk_utils/iam.lambda.LambdaConditions.property.CreateWebFunctionConditionKeys"></a>
+
+```typescript
+public readonly CreateWebFunctionConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateWebFunction action.
+
+---
+
+##### `CreateWebFunctionEndpointConditionKeys`<sup>Required</sup> <a name="CreateWebFunctionEndpointConditionKeys" id="@cdk_utils/iam.lambda.LambdaConditions.property.CreateWebFunctionEndpointConditionKeys"></a>
+
+```typescript
+public readonly CreateWebFunctionEndpointConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateWebFunctionEndpoint action.
+
+---
+
 ##### `DeleteEventSourceMappingConditionKeys`<sup>Required</sup> <a name="DeleteEventSourceMappingConditionKeys" id="@cdk_utils/iam.lambda.LambdaConditions.property.DeleteEventSourceMappingConditionKeys"></a>
 
 ```typescript
@@ -3951,6 +4720,18 @@ public readonly DeleteResourcePolicyConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the DeleteResourcePolicy action.
+
+---
+
+##### `DeleteWebFunctionEndpointConditionKeys`<sup>Required</sup> <a name="DeleteWebFunctionEndpointConditionKeys" id="@cdk_utils/iam.lambda.LambdaConditions.property.DeleteWebFunctionEndpointConditionKeys"></a>
+
+```typescript
+public readonly DeleteWebFunctionEndpointConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DeleteWebFunctionEndpoint action.
 
 ---
 
@@ -4026,6 +4807,18 @@ Condition keys applicable to the InvokeFunctionUrl action.
 
 ---
 
+##### `InvokeWebFunctionEndpointConditionKeys`<sup>Required</sup> <a name="InvokeWebFunctionEndpointConditionKeys" id="@cdk_utils/iam.lambda.LambdaConditions.property.InvokeWebFunctionEndpointConditionKeys"></a>
+
+```typescript
+public readonly InvokeWebFunctionEndpointConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the InvokeWebFunctionEndpoint action.
+
+---
+
 ##### `LAYER`<sup>Required</sup> <a name="LAYER" id="@cdk_utils/iam.lambda.LambdaConditions.property.LAYER"></a>
 
 ```typescript
@@ -4095,6 +4888,30 @@ public readonly RemovePermissionConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the RemovePermission action.
+
+---
+
+##### `REQUEST_WEB_FUNCTION_AUTH_TYPE`<sup>Required</sup> <a name="REQUEST_WEB_FUNCTION_AUTH_TYPE" id="@cdk_utils/iam.lambda.LambdaConditions.property.REQUEST_WEB_FUNCTION_AUTH_TYPE"></a>
+
+```typescript
+public readonly REQUEST_WEB_FUNCTION_AUTH_TYPE: string;
+```
+
+- *Type:* string
+
+Condition key: lambda:Request/WebFunctionAuthType (String).
+
+---
+
+##### `RESOURCE_WEB_FUNCTION_AUTH_TYPE`<sup>Required</sup> <a name="RESOURCE_WEB_FUNCTION_AUTH_TYPE" id="@cdk_utils/iam.lambda.LambdaConditions.property.RESOURCE_WEB_FUNCTION_AUTH_TYPE"></a>
+
+```typescript
+public readonly RESOURCE_WEB_FUNCTION_AUTH_TYPE: string;
+```
+
+- *Type:* string
+
+Condition key: lambda:Resource/WebFunctionAuthType (String).
 
 ---
 
@@ -4194,6 +5011,18 @@ Condition keys applicable to the UpdateFunctionUrlConfig action.
 
 ---
 
+##### `UpdateWebFunctionEndpointConditionKeys`<sup>Required</sup> <a name="UpdateWebFunctionEndpointConditionKeys" id="@cdk_utils/iam.lambda.LambdaConditions.property.UpdateWebFunctionEndpointConditionKeys"></a>
+
+```typescript
+public readonly UpdateWebFunctionEndpointConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UpdateWebFunctionEndpoint action.
+
+---
+
 ##### `VPC_IDS`<sup>Required</sup> <a name="VPC_IDS" id="@cdk_utils/iam.lambda.LambdaConditions.property.VPC_IDS"></a>
 
 ```typescript
@@ -4244,6 +5073,9 @@ new lambda.LambdaOperations()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.CreateMicrovmImage">CreateMicrovmImage</a></code> | <code>string[]</code> | IAM actions required for the CreateMicrovmImage API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.CreateMicrovmShellAuthToken">CreateMicrovmShellAuthToken</a></code> | <code>string[]</code> | IAM actions required for the CreateMicrovmShellAuthToken API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.CreateNetworkConnector">CreateNetworkConnector</a></code> | <code>string[]</code> | IAM actions required for the CreateNetworkConnector API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.CreateWebFunction">CreateWebFunction</a></code> | <code>string[]</code> | IAM actions required for the CreateWebFunction API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.CreateWebFunctionEndpoint">CreateWebFunctionEndpoint</a></code> | <code>string[]</code> | IAM actions required for the CreateWebFunctionEndpoint API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.CreateWebFunctionRevision">CreateWebFunctionRevision</a></code> | <code>string[]</code> | IAM actions required for the CreateWebFunctionRevision API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteAlias">DeleteAlias</a></code> | <code>string[]</code> | IAM actions required for the DeleteAlias API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteCapacityProvider">DeleteCapacityProvider</a></code> | <code>string[]</code> | IAM actions required for the DeleteCapacityProvider API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteCodeSigningConfig">DeleteCodeSigningConfig</a></code> | <code>string[]</code> | IAM actions required for the DeleteCodeSigningConfig API call. |
@@ -4259,6 +5091,9 @@ new lambda.LambdaOperations()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteNetworkConnector">DeleteNetworkConnector</a></code> | <code>string[]</code> | IAM actions required for the DeleteNetworkConnector API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteProvisionedConcurrencyConfig">DeleteProvisionedConcurrencyConfig</a></code> | <code>string[]</code> | IAM actions required for the DeleteProvisionedConcurrencyConfig API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteResourcePolicy">DeleteResourcePolicy</a></code> | <code>string[]</code> | IAM actions required for the DeleteResourcePolicy API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteWebFunction">DeleteWebFunction</a></code> | <code>string[]</code> | IAM actions required for the DeleteWebFunction API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteWebFunctionEndpoint">DeleteWebFunctionEndpoint</a></code> | <code>string[]</code> | IAM actions required for the DeleteWebFunctionEndpoint API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteWebFunctionRevision">DeleteWebFunctionRevision</a></code> | <code>string[]</code> | IAM actions required for the DeleteWebFunctionRevision API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.Invoke">Invoke</a></code> | <code>string[]</code> | IAM actions required for the Invoke API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.InvokeAsync">InvokeAsync</a></code> | <code>string[]</code> | IAM actions required for the InvokeAsync API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.InvokeWithResponseStream">InvokeWithResponseStream</a></code> | <code>string[]</code> | IAM actions required for the InvokeWithResponseStream API call. |
@@ -4285,6 +5120,9 @@ new lambda.LambdaOperations()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.ListProvisionedConcurrencyConfigs">ListProvisionedConcurrencyConfigs</a></code> | <code>string[]</code> | IAM actions required for the ListProvisionedConcurrencyConfigs API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.ListTags">ListTags</a></code> | <code>string[]</code> | IAM actions required for the ListTags API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.ListVersionsByFunction">ListVersionsByFunction</a></code> | <code>string[]</code> | IAM actions required for the ListVersionsByFunction API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.ListWebFunctionEndpoints">ListWebFunctionEndpoints</a></code> | <code>string[]</code> | IAM actions required for the ListWebFunctionEndpoints API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.ListWebFunctionRevisions">ListWebFunctionRevisions</a></code> | <code>string[]</code> | IAM actions required for the ListWebFunctionRevisions API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.ListWebFunctions">ListWebFunctions</a></code> | <code>string[]</code> | IAM actions required for the ListWebFunctions API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetAccountSettings">opGetAccountSettings</a></code> | <code>string[]</code> | IAM actions required for the GetAccountSettings API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetAlias">opGetAlias</a></code> | <code>string[]</code> | IAM actions required for the GetAlias API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetCapacityProvider">opGetCapacityProvider</a></code> | <code>string[]</code> | IAM actions required for the GetCapacityProvider API call. |
@@ -4314,6 +5152,10 @@ new lambda.LambdaOperations()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetProvisionedConcurrencyConfig">opGetProvisionedConcurrencyConfig</a></code> | <code>string[]</code> | IAM actions required for the GetProvisionedConcurrencyConfig API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetResourcePolicy">opGetResourcePolicy</a></code> | <code>string[]</code> | IAM actions required for the GetResourcePolicy API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetRuntimeManagementConfig">opGetRuntimeManagementConfig</a></code> | <code>string[]</code> | IAM actions required for the GetRuntimeManagementConfig API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetWebAccountSettings">opGetWebAccountSettings</a></code> | <code>string[]</code> | IAM actions required for the GetWebAccountSettings API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetWebFunction">opGetWebFunction</a></code> | <code>string[]</code> | IAM actions required for the GetWebFunction API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetWebFunctionEndpoint">opGetWebFunctionEndpoint</a></code> | <code>string[]</code> | IAM actions required for the GetWebFunctionEndpoint API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetWebFunctionRevision">opGetWebFunctionRevision</a></code> | <code>string[]</code> | IAM actions required for the GetWebFunctionRevision API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.PublishLayerVersion">PublishLayerVersion</a></code> | <code>string[]</code> | IAM actions required for the PublishLayerVersion API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.PublishVersion">PublishVersion</a></code> | <code>string[]</code> | IAM actions required for the PublishVersion API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.PutFunctionCodeSigningConfig">PutFunctionCodeSigningConfig</a></code> | <code>string[]</code> | IAM actions required for the PutFunctionCodeSigningConfig API call. |
@@ -4348,6 +5190,7 @@ new lambda.LambdaOperations()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.UpdateMicrovmImage">UpdateMicrovmImage</a></code> | <code>string[]</code> | IAM actions required for the UpdateMicrovmImage API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.UpdateMicrovmImageVersion">UpdateMicrovmImageVersion</a></code> | <code>string[]</code> | IAM actions required for the UpdateMicrovmImageVersion API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.UpdateNetworkConnector">UpdateNetworkConnector</a></code> | <code>string[]</code> | IAM actions required for the UpdateNetworkConnector API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.UpdateWebFunctionEndpoint">UpdateWebFunctionEndpoint</a></code> | <code>string[]</code> | IAM actions required for the UpdateWebFunctionEndpoint API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.UploadFunction">UploadFunction</a></code> | <code>string[]</code> | IAM actions required for the UploadFunction API call. |
 
 ---
@@ -4517,6 +5360,42 @@ public readonly CreateNetworkConnector: string[];
 - *Type:* string[]
 
 IAM actions required for the CreateNetworkConnector API call.
+
+---
+
+##### `CreateWebFunction`<sup>Required</sup> <a name="CreateWebFunction" id="@cdk_utils/iam.lambda.LambdaOperations.property.CreateWebFunction"></a>
+
+```typescript
+public readonly CreateWebFunction: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateWebFunction API call.
+
+---
+
+##### `CreateWebFunctionEndpoint`<sup>Required</sup> <a name="CreateWebFunctionEndpoint" id="@cdk_utils/iam.lambda.LambdaOperations.property.CreateWebFunctionEndpoint"></a>
+
+```typescript
+public readonly CreateWebFunctionEndpoint: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateWebFunctionEndpoint API call.
+
+---
+
+##### `CreateWebFunctionRevision`<sup>Required</sup> <a name="CreateWebFunctionRevision" id="@cdk_utils/iam.lambda.LambdaOperations.property.CreateWebFunctionRevision"></a>
+
+```typescript
+public readonly CreateWebFunctionRevision: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateWebFunctionRevision API call.
 
 ---
 
@@ -4697,6 +5576,42 @@ public readonly DeleteResourcePolicy: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteResourcePolicy API call.
+
+---
+
+##### `DeleteWebFunction`<sup>Required</sup> <a name="DeleteWebFunction" id="@cdk_utils/iam.lambda.LambdaOperations.property.DeleteWebFunction"></a>
+
+```typescript
+public readonly DeleteWebFunction: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteWebFunction API call.
+
+---
+
+##### `DeleteWebFunctionEndpoint`<sup>Required</sup> <a name="DeleteWebFunctionEndpoint" id="@cdk_utils/iam.lambda.LambdaOperations.property.DeleteWebFunctionEndpoint"></a>
+
+```typescript
+public readonly DeleteWebFunctionEndpoint: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteWebFunctionEndpoint API call.
+
+---
+
+##### `DeleteWebFunctionRevision`<sup>Required</sup> <a name="DeleteWebFunctionRevision" id="@cdk_utils/iam.lambda.LambdaOperations.property.DeleteWebFunctionRevision"></a>
+
+```typescript
+public readonly DeleteWebFunctionRevision: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteWebFunctionRevision API call.
 
 ---
 
@@ -5009,6 +5924,42 @@ public readonly ListVersionsByFunction: string[];
 - *Type:* string[]
 
 IAM actions required for the ListVersionsByFunction API call.
+
+---
+
+##### `ListWebFunctionEndpoints`<sup>Required</sup> <a name="ListWebFunctionEndpoints" id="@cdk_utils/iam.lambda.LambdaOperations.property.ListWebFunctionEndpoints"></a>
+
+```typescript
+public readonly ListWebFunctionEndpoints: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListWebFunctionEndpoints API call.
+
+---
+
+##### `ListWebFunctionRevisions`<sup>Required</sup> <a name="ListWebFunctionRevisions" id="@cdk_utils/iam.lambda.LambdaOperations.property.ListWebFunctionRevisions"></a>
+
+```typescript
+public readonly ListWebFunctionRevisions: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListWebFunctionRevisions API call.
+
+---
+
+##### `ListWebFunctions`<sup>Required</sup> <a name="ListWebFunctions" id="@cdk_utils/iam.lambda.LambdaOperations.property.ListWebFunctions"></a>
+
+```typescript
+public readonly ListWebFunctions: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListWebFunctions API call.
 
 ---
 
@@ -5357,6 +6308,54 @@ public readonly opGetRuntimeManagementConfig: string[];
 - *Type:* string[]
 
 IAM actions required for the GetRuntimeManagementConfig API call.
+
+---
+
+##### `opGetWebAccountSettings`<sup>Required</sup> <a name="opGetWebAccountSettings" id="@cdk_utils/iam.lambda.LambdaOperations.property.opGetWebAccountSettings"></a>
+
+```typescript
+public readonly opGetWebAccountSettings: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetWebAccountSettings API call.
+
+---
+
+##### `opGetWebFunction`<sup>Required</sup> <a name="opGetWebFunction" id="@cdk_utils/iam.lambda.LambdaOperations.property.opGetWebFunction"></a>
+
+```typescript
+public readonly opGetWebFunction: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetWebFunction API call.
+
+---
+
+##### `opGetWebFunctionEndpoint`<sup>Required</sup> <a name="opGetWebFunctionEndpoint" id="@cdk_utils/iam.lambda.LambdaOperations.property.opGetWebFunctionEndpoint"></a>
+
+```typescript
+public readonly opGetWebFunctionEndpoint: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetWebFunctionEndpoint API call.
+
+---
+
+##### `opGetWebFunctionRevision`<sup>Required</sup> <a name="opGetWebFunctionRevision" id="@cdk_utils/iam.lambda.LambdaOperations.property.opGetWebFunctionRevision"></a>
+
+```typescript
+public readonly opGetWebFunctionRevision: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetWebFunctionRevision API call.
 
 ---
 
@@ -5768,6 +6767,18 @@ IAM actions required for the UpdateNetworkConnector API call.
 
 ---
 
+##### `UpdateWebFunctionEndpoint`<sup>Required</sup> <a name="UpdateWebFunctionEndpoint" id="@cdk_utils/iam.lambda.LambdaOperations.property.UpdateWebFunctionEndpoint"></a>
+
+```typescript
+public readonly UpdateWebFunctionEndpoint: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateWebFunctionEndpoint API call.
+
+---
+
 ##### `UploadFunction`<sup>Required</sup> <a name="UploadFunction" id="@cdk_utils/iam.lambda.LambdaOperations.property.UploadFunction"></a>
 
 ```typescript
@@ -5820,6 +6831,9 @@ new lambda.LambdaResources()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaResources.isValidLayerVersionArn">isValidLayerVersionArn</a></code> | Validates whether a string is a valid ARN for the layerVersion resource. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaResources.isValidMicrovmImageArn">isValidMicrovmImageArn</a></code> | Validates whether a string is a valid ARN for the microvmImage resource. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaResources.isValidNetworkConnectorArn">isValidNetworkConnectorArn</a></code> | Validates whether a string is a valid ARN for the networkConnector resource. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaResources.isValidWebFunctionArn">isValidWebFunctionArn</a></code> | Validates whether a string is a valid ARN for the webFunction resource. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaResources.isValidWebFunctionEndpointArn">isValidWebFunctionEndpointArn</a></code> | Validates whether a string is a valid ARN for the webFunctionEndpoint resource. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaResources.isValidWebFunctionRevisionArn">isValidWebFunctionRevisionArn</a></code> | Validates whether a string is a valid ARN for the webFunctionRevision resource. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaResources.layer">layer</a></code> | Builds an ARN for the layer resource. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaResources.layerVersion">layerVersion</a></code> | Builds an ARN for the layerVersion resource. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaResources.microvmImage">microvmImage</a></code> | Builds an ARN for the microvmImage resource. |
@@ -5835,6 +6849,12 @@ new lambda.LambdaResources()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaResources.parseLayerVersionArn">parseLayerVersionArn</a></code> | Parses a layerVersion ARN into its components. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaResources.parseMicrovmImageArn">parseMicrovmImageArn</a></code> | Parses a microvmImage ARN into its components. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaResources.parseNetworkConnectorArn">parseNetworkConnectorArn</a></code> | Parses a networkConnector ARN into its components. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaResources.parseWebFunctionArn">parseWebFunctionArn</a></code> | Parses a webFunction ARN into its components. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaResources.parseWebFunctionEndpointArn">parseWebFunctionEndpointArn</a></code> | Parses a webFunctionEndpoint ARN into its components. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaResources.parseWebFunctionRevisionArn">parseWebFunctionRevisionArn</a></code> | Parses a webFunctionRevision ARN into its components. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaResources.webFunction">webFunction</a></code> | Builds an ARN for the webFunction resource. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaResources.webFunctionEndpoint">webFunctionEndpoint</a></code> | Builds an ARN for the webFunctionEndpoint resource. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaResources.webFunctionRevision">webFunctionRevision</a></code> | Builds an ARN for the webFunctionRevision resource. |
 
 ---
 
@@ -6126,6 +7146,54 @@ Validates whether a string is a valid ARN for the networkConnector resource.
 
 ---
 
+##### `isValidWebFunctionArn` <a name="isValidWebFunctionArn" id="@cdk_utils/iam.lambda.LambdaResources.isValidWebFunctionArn"></a>
+
+```typescript
+import { lambda } from '@cdk_utils/iam'
+
+lambda.LambdaResources.isValidWebFunctionArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the webFunction resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.lambda.LambdaResources.isValidWebFunctionArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidWebFunctionEndpointArn` <a name="isValidWebFunctionEndpointArn" id="@cdk_utils/iam.lambda.LambdaResources.isValidWebFunctionEndpointArn"></a>
+
+```typescript
+import { lambda } from '@cdk_utils/iam'
+
+lambda.LambdaResources.isValidWebFunctionEndpointArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the webFunctionEndpoint resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.lambda.LambdaResources.isValidWebFunctionEndpointArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidWebFunctionRevisionArn` <a name="isValidWebFunctionRevisionArn" id="@cdk_utils/iam.lambda.LambdaResources.isValidWebFunctionRevisionArn"></a>
+
+```typescript
+import { lambda } from '@cdk_utils/iam'
+
+lambda.LambdaResources.isValidWebFunctionRevisionArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the webFunctionRevision resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.lambda.LambdaResources.isValidWebFunctionRevisionArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `layer` <a name="layer" id="@cdk_utils/iam.lambda.LambdaResources.layer"></a>
 
 ```typescript
@@ -6363,6 +7431,102 @@ Parses a networkConnector ARN into its components.
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.lambda.LambdaResources.parseNetworkConnectorArn.parameter.arn"></a>
 
 - *Type:* string
+
+---
+
+##### `parseWebFunctionArn` <a name="parseWebFunctionArn" id="@cdk_utils/iam.lambda.LambdaResources.parseWebFunctionArn"></a>
+
+```typescript
+import { lambda } from '@cdk_utils/iam'
+
+lambda.LambdaResources.parseWebFunctionArn(arn: string)
+```
+
+Parses a webFunction ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.lambda.LambdaResources.parseWebFunctionArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseWebFunctionEndpointArn` <a name="parseWebFunctionEndpointArn" id="@cdk_utils/iam.lambda.LambdaResources.parseWebFunctionEndpointArn"></a>
+
+```typescript
+import { lambda } from '@cdk_utils/iam'
+
+lambda.LambdaResources.parseWebFunctionEndpointArn(arn: string)
+```
+
+Parses a webFunctionEndpoint ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.lambda.LambdaResources.parseWebFunctionEndpointArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseWebFunctionRevisionArn` <a name="parseWebFunctionRevisionArn" id="@cdk_utils/iam.lambda.LambdaResources.parseWebFunctionRevisionArn"></a>
+
+```typescript
+import { lambda } from '@cdk_utils/iam'
+
+lambda.LambdaResources.parseWebFunctionRevisionArn(arn: string)
+```
+
+Parses a webFunctionRevision ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.lambda.LambdaResources.parseWebFunctionRevisionArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `webFunction` <a name="webFunction" id="@cdk_utils/iam.lambda.LambdaResources.webFunction"></a>
+
+```typescript
+import { lambda } from '@cdk_utils/iam'
+
+lambda.LambdaResources.webFunction(props: LambdaWebFunctionArnProps)
+```
+
+Builds an ARN for the webFunction resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.lambda.LambdaResources.webFunction.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.lambda.LambdaWebFunctionArnProps">LambdaWebFunctionArnProps</a>
+
+---
+
+##### `webFunctionEndpoint` <a name="webFunctionEndpoint" id="@cdk_utils/iam.lambda.LambdaResources.webFunctionEndpoint"></a>
+
+```typescript
+import { lambda } from '@cdk_utils/iam'
+
+lambda.LambdaResources.webFunctionEndpoint(props: LambdaWebFunctionEndpointArnProps)
+```
+
+Builds an ARN for the webFunctionEndpoint resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.lambda.LambdaResources.webFunctionEndpoint.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.lambda.LambdaWebFunctionEndpointArnProps">LambdaWebFunctionEndpointArnProps</a>
+
+---
+
+##### `webFunctionRevision` <a name="webFunctionRevision" id="@cdk_utils/iam.lambda.LambdaResources.webFunctionRevision"></a>
+
+```typescript
+import { lambda } from '@cdk_utils/iam'
+
+lambda.LambdaResources.webFunctionRevision(props: LambdaWebFunctionRevisionArnProps)
+```
+
+Builds an ARN for the webFunctionRevision resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.lambda.LambdaResources.webFunctionRevision.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.lambda.LambdaWebFunctionRevisionArnProps">LambdaWebFunctionRevisionArnProps</a>
 
 ---
 

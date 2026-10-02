@@ -3909,6 +3909,22 @@
       ]
     },
     {
+      "Name": "GetRemediationsV2",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRemediationsV2",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "get_remediations_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetResourcesStatisticsV2",
       "AuthorizedActions": [
         {
@@ -4112,6 +4128,22 @@
         {
           "Name": "securityhub",
           "Method": "list_enabled_products_for_import",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListExposuresByRemediationV2",
+      "AuthorizedActions": [
+        {
+          "Name": "ListExposuresByRemediationV2",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "list_exposures_by_remediation_v2",
           "Package": "Boto3"
         }
       ]
