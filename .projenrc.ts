@@ -1,5 +1,13 @@
 import { CDKUtilsTemplate } from "@cdk_utils/projen_template";
 
+// The exact title the daily service-reference update PR is opened with. Shared by
+// the workflow (commit subject + PR title) and the Mergify auto-approve rule so
+// the two can never drift out of sync.
+const UPDATE_PR_TITLE = "feat: update AWS service reference data";
+// The Mergify label that marks a PR as ready to merge (the org-standard template
+// uses `do-not-merge` as the blocker and `merge` as the go-ahead).
+const MERGE_LABEL = "merge";
+
 const project = new CDKUtilsTemplate({
 	name: "@cdk_utils/iam",
 	repositoryUrl: "https://github.com/cdk-utils/iam.git",
@@ -41,7 +49,7 @@ project.jest!.config.transform = {
 
 const updateWorkflow = project.github!.addWorkflow("update-service-reference");
 updateWorkflow.on({
-	schedule: [{ cron: "0 6 * * 1-5" }], // Weekdays at 06:00 UTC
+	schedule: [{ cron: "7 6 * * 1-5" }], // Weekdays at 06:07 UTC
 	workflowDispatch: {}, // Allow manual triggers
 });
 
@@ -116,7 +124,7 @@ updateWorkflow.addJob("update", {
 				"git config user.email 'github-actions[bot]@users.noreply.github.com'",
 				"git checkout -b $BRANCH_NAME",
 				"git add -A",
-				'git commit -m "feat: update AWS service reference data"',
+				`git commit -m "${UPDATE_PR_TITLE}"`,
 				"git push origin $BRANCH_NAME",
 				'echo "branch=$BRANCH_NAME" >> $GITHUB_OUTPUT',
 			].join("\n"),
@@ -139,13 +147,14 @@ updateWorkflow.addJob("update", {
 				"- Regenerated barrel index",
 				"",
 				"### Triggered by",
-				"- Schedule: Weekdays at 06:00 UTC",
+				"- Schedule: Weekdays at 06:07 UTC",
 				'- Or manual workflow dispatch"',
 				"",
 				"gh pr create \\",
 				"  --base main \\",
 				"  --head ${{ steps.push.outputs.branch }} \\",
-				'  --title "feat: update AWS service reference data" \\',
+				`  --title "${UPDATE_PR_TITLE}" \\`,
+				`  --label "${MERGE_LABEL}" \\`,
 				'  --body "$PR_BODY"',
 			].join("\n"),
 		},
@@ -185,6 +194,53 @@ project.addTask("generate-service", {
 project.addTask("generate-index", {
 	description: "Regenerate the barrel index for generated services",
 	exec: "tsx scripts/generate-index.ts",
+});
+
+// =============================================================================
+// Mergify: auto-approve + auto-merge the daily service-reference update PRs
+// =============================================================================
+//
+// The `update-service-reference` workflow opens a PR titled exactly
+// "feat: update AWS service reference data" (authored by the admin, since it
+// pushes with PROJEN_GITHUB_TOKEN). We want those PRs to merge themselves once
+// CI is green, WITHOUT the manual do-not-merge -> merge label swap the template's
+// org-standard rules impose on admin PRs.
+//
+// How the template rules interact (the Mergify component is append-only, so we
+// work WITH them, not against them):
+//   - "Add Blocking label on default PRs" adds `do-not-merge` to an admin PR that
+//     has NEITHER `do-not-merge` NOR `merge`. Its `-label~=(merge)` guard is the
+//     seam we use: a PR that already carries `merge` is never blocked.
+//   - projen's AwsCdkConstructLibrary auto-merge rule + queue merge a PR once it
+//     has an approval, no `do-not-merge`, and build + package-js are green.
+//
+// Two coordinated changes make the update PR self-merge with no race:
+//   1. The workflow creates the PR already carrying the `merge` label (see the
+//      `gh pr create --label merge` step above). Because the label exists BEFORE
+//      Mergify first evaluates the PR, the blocking rule's `-label~=(merge)`
+//      guard is already false, so `do-not-merge` is never added. No label race.
+//   2. The rule below approves that PR (matched by its exact title) so the
+//      auto-merge rule's `#approved-reviews-by>=1` is satisfied without a human.
+// With `merge` present, no `do-not-merge`, an approval, and green checks, the
+// existing auto-merge rule/queue merges it and deletes the branch.
+project.tryFindObjectFile(".mergify.yml")?.addToArray("pull_request_rules", {
+	name: "Auto-approve daily service-reference update PRs",
+	conditions: [
+		`title=${UPDATE_PR_TITLE}`,
+		"author=Lorenzohidalgo",
+		`label=${MERGE_LABEL}`,
+		"-label~=(do-not-merge)",
+	],
+	actions: {
+		review: {
+			type: "APPROVE",
+			message: "Auto-approved: scheduled AWS service-reference data update.",
+		},
+		comment: {
+			message:
+				"@Lorenzohidalgo a new AWS service-reference update has been approved and will be merged and published shortly once CI passes.",
+		},
+	},
 });
 
 project.synth();
