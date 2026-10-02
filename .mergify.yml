@@ -33,6 +33,7 @@ pull_request_rules:
       - author=Lorenzohidalgo
       - -label~=(do-not-merge)
       - -label~=(merge)
+      - "-title=feat: update AWS service reference data"
   - name: Auto Approve on admin PR
     actions:
       comment:
@@ -48,13 +49,14 @@ pull_request_rules:
     conditions:
       - "title=feat: update AWS service reference data"
       - author=Lorenzohidalgo
-      - label=merge
       - -label~=(do-not-merge)
+      - status-success=build
+      - status-success=package-js
     actions:
       review:
         type: APPROVE
         message: "Auto-approved: scheduled AWS service-reference data update."
       comment:
-        message: "@Lorenzohidalgo a new AWS service-reference update has been approved and will be merged and published shortly once CI passes."
+        message: "@Lorenzohidalgo a new AWS service-reference update has passed all checks and will be merged and published shortly."
 merge_queue:
   max_parallel_checks: 1
