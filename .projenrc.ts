@@ -230,7 +230,10 @@ mergifyFile?.patch(
 		"/pull_request_rules/1/name",
 		"Add Blocking label on default PRs",
 	),
-	JsonPatch.add("/pull_request_rules/1/conditions/-", `-title=${UPDATE_PR_TITLE}`),
+	JsonPatch.add(
+		"/pull_request_rules/1/conditions/-",
+		`-title=${UPDATE_PR_TITLE}`,
+	),
 );
 
 mergifyFile?.addToArray("pull_request_rules", {
