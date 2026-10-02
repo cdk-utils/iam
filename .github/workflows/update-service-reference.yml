@@ -85,5 +85,4 @@ jobs:
             --base main \
             --head ${{ steps.push.outputs.branch }} \
             --title "feat: update AWS service reference data" \
-            --label "merge" \
             --body "$PR_BODY"

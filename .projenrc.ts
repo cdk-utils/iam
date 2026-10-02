@@ -1,12 +1,10 @@
 import { CDKUtilsTemplate } from "@cdk_utils/projen_template";
+import { JsonPatch } from "projen";
 
 // The exact title the daily service-reference update PR is opened with. Shared by
 // the workflow (commit subject + PR title) and the Mergify auto-approve rule so
 // the two can never drift out of sync.
 const UPDATE_PR_TITLE = "feat: update AWS service reference data";
-// The Mergify label that marks a PR as ready to merge (the org-standard template
-// uses `do-not-merge` as the blocker and `merge` as the go-ahead).
-const MERGE_LABEL = "merge";
 
 const project = new CDKUtilsTemplate({
 	name: "@cdk_utils/iam",
@@ -154,7 +152,6 @@ updateWorkflow.addJob("update", {
 				"  --base main \\",
 				"  --head ${{ steps.push.outputs.branch }} \\",
 				`  --title "${UPDATE_PR_TITLE}" \\`,
-				`  --label "${MERGE_LABEL}" \\`,
 				'  --body "$PR_BODY"',
 			].join("\n"),
 		},
@@ -206,30 +203,51 @@ project.addTask("generate-index", {
 // CI is green, WITHOUT the manual do-not-merge -> merge label swap the template's
 // org-standard rules impose on admin PRs.
 //
-// How the template rules interact (the Mergify component is append-only, so we
-// work WITH them, not against them):
-//   - "Add Blocking label on default PRs" adds `do-not-merge` to an admin PR that
-//     has NEITHER `do-not-merge` NOR `merge`. Its `-label~=(merge)` guard is the
-//     seam we use: a PR that already carries `merge` is never blocked.
-//   - projen's AwsCdkConstructLibrary auto-merge rule + queue merge a PR once it
-//     has an approval, no `do-not-merge`, and build + package-js are green.
+// Mechanism (Mergify owns the whole lifecycle, keyed on the PR TITLE — no label
+// is set by the workflow, so nothing lands before checks and nothing is
+// mis-attributed to the admin user):
+//   1. Exclude the update PR from the template's "Add Blocking label" rule, so it
+//      never gets `do-not-merge`. Done with a guarded JSON patch below, since the
+//      Mergify component is append-only and cannot mutate a template rule.
+//   2. Approve the update PR by title (the rule below).
+//   3. The existing auto-merge rule + queue merge it once `build` + `package-js`
+//      pass. The WAIT-FOR-CHECKS guarantee lives in the queue's `status-success`
+//      conditions, NOT in a label — which is why no `merge` label is needed.
 //
-// Two coordinated changes make the update PR self-merge with no race:
-//   1. The workflow creates the PR already carrying the `merge` label (see the
-//      `gh pr create --label merge` step above). Because the label exists BEFORE
-//      Mergify first evaluates the PR, the blocking rule's `-label~=(merge)`
-//      guard is already false, so `do-not-merge` is never added. No label race.
-//   2. The rule below approves that PR (matched by its exact title) so the
-//      auto-merge rule's `#approved-reviews-by>=1` is satisfied without a human.
-// With `merge` present, no `do-not-merge`, an approval, and green checks, the
-// existing auto-merge rule/queue merges it and deletes the branch.
-project.tryFindObjectFile(".mergify.yml")?.addToArray("pull_request_rules", {
+// Why not label at creation (the previous, broken approach): `gh pr create
+// --label merge` ran as the admin's PAT, so the label was attributed to the user
+// (not Mergify) AND was present before any check ran. The label was never a
+// checks-passed signal, so it only removed the block prematurely. Excluding the
+// PR from the blocking rule by title is the correct, race-free equivalent.
+const mergifyFile = project.tryFindObjectFile(".mergify.yml");
+
+// The template contributes "Add Blocking label on default PRs" as the SECOND
+// pull_request_rule (index 1); projen's auto-merge rule is index 0. The `test`
+// op asserts that identity, so if the template ever reorders or renames its
+// rules the synth fails loudly instead of patching the wrong rule.
+mergifyFile?.patch(
+	JsonPatch.test(
+		"/pull_request_rules/1/name",
+		"Add Blocking label on default PRs",
+	),
+	JsonPatch.add(
+		"/pull_request_rules/1/conditions/-",
+		`-title=${UPDATE_PR_TITLE}`,
+	),
+);
+
+mergifyFile?.addToArray("pull_request_rules", {
 	name: "Auto-approve daily service-reference update PRs",
 	conditions: [
 		`title=${UPDATE_PR_TITLE}`,
 		"author=Lorenzohidalgo",
-		`label=${MERGE_LABEL}`,
 		"-label~=(do-not-merge)",
+		// Only approve + comment once CI has actually PASSED. `status-success=X`
+		// is false while X is still running and false if X failed, so this rule
+		// never fires early or on a red build. These mirror the queue's own
+		// status-success conditions, so the approval cannot outrun the merge gate.
+		"status-success=build",
+		"status-success=package-js",
 	],
 	actions: {
 		review: {
@@ -238,7 +256,7 @@ project.tryFindObjectFile(".mergify.yml")?.addToArray("pull_request_rules", {
 		},
 		comment: {
 			message:
-				"@Lorenzohidalgo a new AWS service-reference update has been approved and will be merged and published shortly once CI passes.",
+				"@Lorenzohidalgo a new AWS service-reference update has passed all checks and will be merged and published shortly.",
 		},
 	},
 });
