@@ -1192,6 +1192,7 @@ export class VPCLatticeOperations {
 	];
 	/** IAM actions required for the CreateServiceNetworkVpcAssociation API call. */
 	static readonly CreateServiceNetworkVpcAssociation: string[] = [
+		"vpc-lattice:AssociateViaAWSService",
 		"vpc-lattice:CreateServiceNetworkVpcAssociation",
 		"vpc-lattice:TagResource",
 	];
@@ -1523,11 +1524,7 @@ export class VPCLatticeConditions {
 		["aws:ResourceTag/${TagKey}"];
 	/** Condition keys applicable to the DeleteServiceNetworkServiceAssociation action. */
 	static readonly DeleteServiceNetworkServiceAssociationConditionKeys: string[] =
-		[
-			"aws:ResourceTag/${TagKey}",
-			"vpc-lattice:ServiceArn",
-			"vpc-lattice:ServiceNetworkArn",
-		];
+		["aws:ResourceTag/${TagKey}"];
 	/** Condition keys applicable to the DeleteServiceNetworkVpcAssociation action. */
 	static readonly DeleteServiceNetworkVpcAssociationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
@@ -1575,11 +1572,7 @@ export class VPCLatticeConditions {
 		["aws:ResourceTag/${TagKey}"];
 	/** Condition keys applicable to the GetServiceNetworkServiceAssociation action. */
 	static readonly actionGetServiceNetworkServiceAssociationConditionKeys: string[] =
-		[
-			"aws:ResourceTag/${TagKey}",
-			"vpc-lattice:ServiceArn",
-			"vpc-lattice:ServiceNetworkArn",
-		];
+		["aws:ResourceTag/${TagKey}"];
 	/** Condition keys applicable to the GetServiceNetworkVpcAssociation action. */
 	static readonly actionGetServiceNetworkVpcAssociationConditionKeys: string[] =
 		[
@@ -1602,7 +1595,6 @@ export class VPCLatticeConditions {
 	/** Condition keys applicable to the ListServiceNetworkVpcAssociations action. */
 	static readonly ListServiceNetworkVpcAssociationsConditionKeys: string[] = [
 		"vpc-lattice:ServiceNetworkArn",
-		"vpc-lattice:VpcId",
 	];
 	/** Condition keys applicable to the StartDomainVerification action. */
 	static readonly StartDomainVerificationConditionKeys: string[] = [

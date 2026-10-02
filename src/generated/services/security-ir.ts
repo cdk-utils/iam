@@ -33,6 +33,8 @@ export class SecurityIrActions {
 	/** [Write] security-ir:GetCaseAttachmentUploadUrl */
 	static readonly actionGetCaseAttachmentUploadUrl =
 		"security-ir:GetCaseAttachmentUploadUrl";
+	/** [Read] security-ir:GetFindingMetrics */
+	static readonly actionGetFindingMetrics = "security-ir:GetFindingMetrics";
 	/** [Read] security-ir:GetMembership */
 	static readonly actionGetMembership = "security-ir:GetMembership";
 	/** [Read] security-ir:ListCaseEdits */
@@ -69,6 +71,7 @@ export class SecurityIrActions {
 		SecurityIrActions.BatchGetMemberAccountDetails,
 		SecurityIrActions.actionGetCase,
 		SecurityIrActions.actionGetCaseAttachmentDownloadUrl,
+		SecurityIrActions.actionGetFindingMetrics,
 		SecurityIrActions.actionGetMembership,
 		SecurityIrActions.ListCaseEdits,
 		SecurityIrActions.ListComments,

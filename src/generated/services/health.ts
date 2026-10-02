@@ -203,6 +203,8 @@ export class HealthOperations {
 		"health:DescribeHealthServiceStatusForOrganization",
 		"organizations:ListAccounts",
 	];
+	/** IAM actions required for the DescribeServiceLifecycle API call. */
+	static readonly DescribeServiceLifecycle: string[] = [];
 	/** IAM actions required for the DisableHealthServiceAccessForOrganization API call. */
 	static readonly DisableHealthServiceAccessForOrganization: string[] = [
 		"organizations:DisableAWSServiceAccess",
