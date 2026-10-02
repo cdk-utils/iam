@@ -1402,6 +1402,10 @@ export class SecurityHubOperations {
 	static readonly opGetRecommendedPolicyV2: string[] = [
 		"securityhub:GetRecommendedPolicyV2",
 	];
+	/** IAM actions required for the GetRemediationsV2 API call. */
+	static readonly opGetRemediationsV2: string[] = [
+		"securityhub:GetRemediationsV2",
+	];
 	/** IAM actions required for the GetResourcesStatisticsV2 API call. */
 	static readonly opGetResourcesStatisticsV2: string[] = [
 		"securityhub:GetResourcesStatisticsV2",
@@ -1445,6 +1449,10 @@ export class SecurityHubOperations {
 	/** IAM actions required for the ListEnabledProductsForImport API call. */
 	static readonly ListEnabledProductsForImport: string[] = [
 		"securityhub:ListEnabledProductsForImport",
+	];
+	/** IAM actions required for the ListExposuresByRemediationV2 API call. */
+	static readonly ListExposuresByRemediationV2: string[] = [
+		"securityhub:ListExposuresByRemediationV2",
 	];
 	/** IAM actions required for the ListFindingAggregators API call. */
 	static readonly ListFindingAggregators: string[] = [

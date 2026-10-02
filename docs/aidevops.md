@@ -2280,11 +2280,13 @@ Generates a condition block for `aidevops:TargetAgentSpaceArn`.
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.ListJournalRecordsConditionKeys">ListJournalRecordsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListJournalRecords action. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.ListTagsForResourceConditionKeys">ListTagsForResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListTagsForResource action. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.RegisterServiceConditionKeys">RegisterServiceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the RegisterService action. |
-| <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.SOURCE_AGENT_SPACE_ARN">SOURCE_AGENT_SPACE_ARN</a></code> | <code>string</code> | Condition key: aidevops:SourceAgentSpaceArn (String). |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.SendMessageConditionKeys">SendMessageConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the SendMessage action. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.SOURCE_AGENT_SPACE_ARN">SOURCE_AGENT_SPACE_ARN</a></code> | <code>string</code> | Condition key: aidevops:SourceAgentSpaceArn (ARN). |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.TagResourceConditionKeys">TagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TagResource action. |
-| <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.TARGET_AGENT_SPACE_ARN">TARGET_AGENT_SPACE_ARN</a></code> | <code>string</code> | Condition key: aidevops:TargetAgentSpaceArn (String). |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.TARGET_AGENT_SPACE_ARN">TARGET_AGENT_SPACE_ARN</a></code> | <code>string</code> | Condition key: aidevops:TargetAgentSpaceArn (ARN). |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.UntagResourceConditionKeys">UntagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UntagResource action. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.UpdateAgentSpaceConditionKeys">UpdateAgentSpaceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateAgentSpace action. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.UpdateBacklogTaskConditionKeys">UpdateBacklogTaskConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateBacklogTask action. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.UpdatePrivateConnectionCertificateConditionKeys">UpdatePrivateConnectionCertificateConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdatePrivateConnectionCertificate action. |
 
 ---
@@ -2565,6 +2567,18 @@ Condition keys applicable to the RegisterService action.
 
 ---
 
+##### `SendMessageConditionKeys`<sup>Required</sup> <a name="SendMessageConditionKeys" id="@cdk_utils/iam.aidevops.AidevopsConditions.property.SendMessageConditionKeys"></a>
+
+```typescript
+public readonly SendMessageConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the SendMessage action.
+
+---
+
 ##### `SOURCE_AGENT_SPACE_ARN`<sup>Required</sup> <a name="SOURCE_AGENT_SPACE_ARN" id="@cdk_utils/iam.aidevops.AidevopsConditions.property.SOURCE_AGENT_SPACE_ARN"></a>
 
 ```typescript
@@ -2573,7 +2587,7 @@ public readonly SOURCE_AGENT_SPACE_ARN: string;
 
 - *Type:* string
 
-Condition key: aidevops:SourceAgentSpaceArn (String).
+Condition key: aidevops:SourceAgentSpaceArn (ARN).
 
 ---
 
@@ -2597,7 +2611,7 @@ public readonly TARGET_AGENT_SPACE_ARN: string;
 
 - *Type:* string
 
-Condition key: aidevops:TargetAgentSpaceArn (String).
+Condition key: aidevops:TargetAgentSpaceArn (ARN).
 
 ---
 
@@ -2622,6 +2636,18 @@ public readonly UpdateAgentSpaceConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the UpdateAgentSpace action.
+
+---
+
+##### `UpdateBacklogTaskConditionKeys`<sup>Required</sup> <a name="UpdateBacklogTaskConditionKeys" id="@cdk_utils/iam.aidevops.AidevopsConditions.property.UpdateBacklogTaskConditionKeys"></a>
+
+```typescript
+public readonly UpdateBacklogTaskConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UpdateBacklogTask action.
 
 ---
 

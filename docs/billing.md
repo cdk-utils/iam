@@ -175,6 +175,8 @@ new billing.BillingActions()
 | <code><a href="#@cdk_utils/iam.billing.BillingActions.property.DisassociateSourceViews">DisassociateSourceViews</a></code> | <code>string</code> | [Write] billing:DisassociateSourceViews. |
 | <code><a href="#@cdk_utils/iam.billing.BillingActions.property.ListBillingViews">ListBillingViews</a></code> | <code>string</code> | [Read] billing:ListBillingViews. |
 | <code><a href="#@cdk_utils/iam.billing.BillingActions.property.ListBillingViewSegments">ListBillingViewSegments</a></code> | <code>string</code> | [List] billing:ListBillingViewSegments. |
+| <code><a href="#@cdk_utils/iam.billing.BillingActions.property.ListBusinessSupportAccountCharges">ListBusinessSupportAccountCharges</a></code> | <code>string</code> | [List] billing:ListBusinessSupportAccountCharges. |
+| <code><a href="#@cdk_utils/iam.billing.BillingActions.property.ListBusinessSupportSubscriptionHistory">ListBusinessSupportSubscriptionHistory</a></code> | <code>string</code> | [List] billing:ListBusinessSupportSubscriptionHistory. |
 | <code><a href="#@cdk_utils/iam.billing.BillingActions.property.ListEnterpriseSupportLinkedAccountCharges">ListEnterpriseSupportLinkedAccountCharges</a></code> | <code>string</code> | [List] billing:ListEnterpriseSupportLinkedAccountCharges. |
 | <code><a href="#@cdk_utils/iam.billing.BillingActions.property.ListSourceViewsForBillingView">ListSourceViewsForBillingView</a></code> | <code>string</code> | [List] billing:ListSourceViewsForBillingView. |
 | <code><a href="#@cdk_utils/iam.billing.BillingActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [Read] billing:ListTagsForResource. |
@@ -500,6 +502,30 @@ public readonly ListBillingViewSegments: string;
 - *Type:* string
 
 [List] billing:ListBillingViewSegments.
+
+---
+
+##### `ListBusinessSupportAccountCharges`<sup>Required</sup> <a name="ListBusinessSupportAccountCharges" id="@cdk_utils/iam.billing.BillingActions.property.ListBusinessSupportAccountCharges"></a>
+
+```typescript
+public readonly ListBusinessSupportAccountCharges: string;
+```
+
+- *Type:* string
+
+[List] billing:ListBusinessSupportAccountCharges.
+
+---
+
+##### `ListBusinessSupportSubscriptionHistory`<sup>Required</sup> <a name="ListBusinessSupportSubscriptionHistory" id="@cdk_utils/iam.billing.BillingActions.property.ListBusinessSupportSubscriptionHistory"></a>
+
+```typescript
+public readonly ListBusinessSupportSubscriptionHistory: string;
+```
+
+- *Type:* string
+
+[List] billing:ListBusinessSupportSubscriptionHistory.
 
 ---
 

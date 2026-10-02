@@ -2330,6 +2330,7 @@ new wafv2.Wafv2Actions()
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Actions.property.DescribeAllManagedProducts">DescribeAllManagedProducts</a></code> | <code>string</code> | [Read] wafv2:DescribeAllManagedProducts. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Actions.property.DescribeManagedProductsByVendor">DescribeManagedProductsByVendor</a></code> | <code>string</code> | [Read] wafv2:DescribeManagedProductsByVendor. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Actions.property.DescribeManagedRuleGroup">DescribeManagedRuleGroup</a></code> | <code>string</code> | [Read] wafv2:DescribeManagedRuleGroup. |
+| <code><a href="#@cdk_utils/iam.wafv2.Wafv2Actions.property.DescribeTopContributorsByEvent">DescribeTopContributorsByEvent</a></code> | <code>string</code> | [Read] wafv2:DescribeTopContributorsByEvent. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Actions.property.DisassociateFirewallManager">DisassociateFirewallManager</a></code> | <code>string</code> | [Write] wafv2:DisassociateFirewallManager. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Actions.property.DisassociateWebACL">DisassociateWebACL</a></code> | <code>string</code> | [Write] wafv2:DisassociateWebACL. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Actions.property.GenerateMobileSdkReleaseUrl">GenerateMobileSdkReleaseUrl</a></code> | <code>string</code> | [Read] wafv2:GenerateMobileSdkReleaseUrl. |
@@ -2828,6 +2829,18 @@ public readonly DescribeManagedRuleGroup: string;
 - *Type:* string
 
 [Read] wafv2:DescribeManagedRuleGroup.
+
+---
+
+##### `DescribeTopContributorsByEvent`<sup>Required</sup> <a name="DescribeTopContributorsByEvent" id="@cdk_utils/iam.wafv2.Wafv2Actions.property.DescribeTopContributorsByEvent"></a>
+
+```typescript
+public readonly DescribeTopContributorsByEvent: string;
+```
+
+- *Type:* string
+
+[Read] wafv2:DescribeTopContributorsByEvent.
 
 ---
 

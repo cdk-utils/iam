@@ -52,6 +52,9 @@ export class Wafv2Actions {
 		"wafv2:DescribeManagedProductsByVendor";
 	/** [Read] wafv2:DescribeManagedRuleGroup */
 	static readonly DescribeManagedRuleGroup = "wafv2:DescribeManagedRuleGroup";
+	/** [Read] wafv2:DescribeTopContributorsByEvent */
+	static readonly DescribeTopContributorsByEvent =
+		"wafv2:DescribeTopContributorsByEvent";
 	/** [Write] wafv2:DisassociateFirewallManager */
 	static readonly DisassociateFirewallManager =
 		"wafv2:DisassociateFirewallManager";
@@ -162,6 +165,7 @@ export class Wafv2Actions {
 		Wafv2Actions.DescribeAllManagedProducts,
 		Wafv2Actions.DescribeManagedProductsByVendor,
 		Wafv2Actions.DescribeManagedRuleGroup,
+		Wafv2Actions.DescribeTopContributorsByEvent,
 		Wafv2Actions.GenerateMobileSdkReleaseUrl,
 		Wafv2Actions.actionGetDecryptedAPIKey,
 		Wafv2Actions.actionGetIPSet,

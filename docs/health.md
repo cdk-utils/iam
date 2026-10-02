@@ -621,6 +621,7 @@ new health.HealthOperations()
 | <code><a href="#@cdk_utils/iam.health.HealthOperations.property.DescribeEventsForOrganization">DescribeEventsForOrganization</a></code> | <code>string[]</code> | IAM actions required for the DescribeEventsForOrganization API call. |
 | <code><a href="#@cdk_utils/iam.health.HealthOperations.property.DescribeEventTypes">DescribeEventTypes</a></code> | <code>string[]</code> | IAM actions required for the DescribeEventTypes API call. |
 | <code><a href="#@cdk_utils/iam.health.HealthOperations.property.DescribeHealthServiceStatusForOrganization">DescribeHealthServiceStatusForOrganization</a></code> | <code>string[]</code> | IAM actions required for the DescribeHealthServiceStatusForOrganization API call. |
+| <code><a href="#@cdk_utils/iam.health.HealthOperations.property.DescribeServiceLifecycle">DescribeServiceLifecycle</a></code> | <code>string[]</code> | IAM actions required for the DescribeServiceLifecycle API call. |
 | <code><a href="#@cdk_utils/iam.health.HealthOperations.property.DisableHealthServiceAccessForOrganization">DisableHealthServiceAccessForOrganization</a></code> | <code>string[]</code> | IAM actions required for the DisableHealthServiceAccessForOrganization API call. |
 | <code><a href="#@cdk_utils/iam.health.HealthOperations.property.EnableHealthServiceAccessForOrganization">EnableHealthServiceAccessForOrganization</a></code> | <code>string[]</code> | IAM actions required for the EnableHealthServiceAccessForOrganization API call. |
 
@@ -767,6 +768,18 @@ public readonly DescribeHealthServiceStatusForOrganization: string[];
 - *Type:* string[]
 
 IAM actions required for the DescribeHealthServiceStatusForOrganization API call.
+
+---
+
+##### `DescribeServiceLifecycle`<sup>Required</sup> <a name="DescribeServiceLifecycle" id="@cdk_utils/iam.health.HealthOperations.property.DescribeServiceLifecycle"></a>
+
+```typescript
+public readonly DescribeServiceLifecycle: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeServiceLifecycle API call.
 
 ---
 

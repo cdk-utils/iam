@@ -3698,7 +3698,7 @@ export class IotOperations {
 	/** IAM actions required for the ListViolationEvents API call. */
 	static readonly ListViolationEvents: string[] = ["iot:ListViolationEvents"];
 	/** IAM actions required for the OpenTunnel API call. */
-	static readonly OpenTunnel: string[] = ["iot:OpenTunnel"];
+	static readonly OpenTunnel: string[] = ["iot:OpenTunnel", "iot:TagResource"];
 	/** IAM actions required for the Publish API call. */
 	static readonly Publish: string[] = [];
 	/** IAM actions required for the PutVerificationStateOnViolation API call. */

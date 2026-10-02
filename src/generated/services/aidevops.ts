@@ -941,6 +941,11 @@ export class AidevopsConditions {
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
+	/** Condition keys applicable to the SendMessage action. */
+	static readonly SendMessageConditionKeys: string[] = [
+		"aidevops:SourceAgentSpaceArn",
+		"aidevops:TargetAgentSpaceArn",
+	];
 	/** Condition keys applicable to the TagResource action. */
 	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
@@ -956,14 +961,19 @@ export class AidevopsConditions {
 	static readonly UpdateAgentSpaceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
+	/** Condition keys applicable to the UpdateBacklogTask action. */
+	static readonly UpdateBacklogTaskConditionKeys: string[] = [
+		"aidevops:SourceAgentSpaceArn",
+		"aidevops:TargetAgentSpaceArn",
+	];
 	/** Condition keys applicable to the UpdatePrivateConnectionCertificate action. */
 	static readonly UpdatePrivateConnectionCertificateConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 
-	/** Condition key: aidevops:SourceAgentSpaceArn (String) */
+	/** Condition key: aidevops:SourceAgentSpaceArn (ARN) */
 	static readonly SOURCE_AGENT_SPACE_ARN = "aidevops:SourceAgentSpaceArn";
-	/** Condition key: aidevops:TargetAgentSpaceArn (String) */
+	/** Condition key: aidevops:TargetAgentSpaceArn (ARN) */
 	static readonly TARGET_AGENT_SPACE_ARN = "aidevops:TargetAgentSpaceArn";
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
 	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
@@ -978,7 +988,7 @@ export class AidevopsConditions {
 	static sourceAgentSpaceARN(
 		value: string,
 	): Record<string, Record<string, string>> {
-		return { StringEquals: { "aidevops:SourceAgentSpaceArn": value } };
+		return { ArnEquals: { "aidevops:SourceAgentSpaceArn": value } };
 	}
 
 	/**
@@ -987,7 +997,7 @@ export class AidevopsConditions {
 	static targetAgentSpaceARN(
 		value: string,
 	): Record<string, Record<string, string>> {
-		return { StringEquals: { "aidevops:TargetAgentSpaceArn": value } };
+		return { ArnEquals: { "aidevops:TargetAgentSpaceArn": value } };
 	}
 
 	/**

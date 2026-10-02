@@ -43,6 +43,14 @@ export class LambdaActions {
 		"lambda:CreateMicrovmShellAuthToken";
 	/** [Write] lambda:CreateNetworkConnector */
 	static readonly CreateNetworkConnector = "lambda:CreateNetworkConnector";
+	/** [Write] lambda:CreateWebFunction */
+	static readonly CreateWebFunction = "lambda:CreateWebFunction";
+	/** [Write] lambda:CreateWebFunctionEndpoint */
+	static readonly CreateWebFunctionEndpoint =
+		"lambda:CreateWebFunctionEndpoint";
+	/** [Write] lambda:CreateWebFunctionRevision */
+	static readonly CreateWebFunctionRevision =
+		"lambda:CreateWebFunctionRevision";
 	/** [Write] lambda:DeleteAlias */
 	static readonly DeleteAlias = "lambda:DeleteAlias";
 	/** [Write] lambda:DeleteCapacityProvider */
@@ -78,6 +86,14 @@ export class LambdaActions {
 		"lambda:DeleteProvisionedConcurrencyConfig";
 	/** [PermissionManagement] lambda:DeleteResourcePolicy */
 	static readonly DeleteResourcePolicy = "lambda:DeleteResourcePolicy";
+	/** [Write] lambda:DeleteWebFunction */
+	static readonly DeleteWebFunction = "lambda:DeleteWebFunction";
+	/** [Write] lambda:DeleteWebFunctionEndpoint */
+	static readonly DeleteWebFunctionEndpoint =
+		"lambda:DeleteWebFunctionEndpoint";
+	/** [Write] lambda:DeleteWebFunctionRevision */
+	static readonly DeleteWebFunctionRevision =
+		"lambda:DeleteWebFunctionRevision";
 	/** [PermissionManagement] lambda:DisableReplication */
 	static readonly DisableReplication = "lambda:DisableReplication";
 	/** [PermissionManagement] lambda:EnableReplication */
@@ -147,12 +163,25 @@ export class LambdaActions {
 	/** [Read] lambda:GetRuntimeManagementConfig */
 	static readonly actionGetRuntimeManagementConfig =
 		"lambda:GetRuntimeManagementConfig";
+	/** [Read] lambda:GetWebAccountSettings */
+	static readonly actionGetWebAccountSettings = "lambda:GetWebAccountSettings";
+	/** [Read] lambda:GetWebFunction */
+	static readonly actionGetWebFunction = "lambda:GetWebFunction";
+	/** [Read] lambda:GetWebFunctionEndpoint */
+	static readonly actionGetWebFunctionEndpoint =
+		"lambda:GetWebFunctionEndpoint";
+	/** [Read] lambda:GetWebFunctionRevision */
+	static readonly actionGetWebFunctionRevision =
+		"lambda:GetWebFunctionRevision";
 	/** [Write] lambda:InvokeAsync */
 	static readonly InvokeAsync = "lambda:InvokeAsync";
 	/** [Write] lambda:InvokeFunction */
 	static readonly InvokeFunction = "lambda:InvokeFunction";
 	/** [Write] lambda:InvokeFunctionUrl */
 	static readonly InvokeFunctionUrl = "lambda:InvokeFunctionUrl";
+	/** [Write] lambda:InvokeWebFunctionEndpoint */
+	static readonly InvokeWebFunctionEndpoint =
+		"lambda:InvokeWebFunctionEndpoint";
 	/** [List] lambda:ListAliases */
 	static readonly ListAliases = "lambda:ListAliases";
 	/** [List] lambda:ListCapacityProviders */
@@ -203,6 +232,12 @@ export class LambdaActions {
 	static readonly ListTags = "lambda:ListTags";
 	/** [List] lambda:ListVersionsByFunction */
 	static readonly ListVersionsByFunction = "lambda:ListVersionsByFunction";
+	/** [List] lambda:ListWebFunctionEndpoints */
+	static readonly ListWebFunctionEndpoints = "lambda:ListWebFunctionEndpoints";
+	/** [List] lambda:ListWebFunctionRevisions */
+	static readonly ListWebFunctionRevisions = "lambda:ListWebFunctionRevisions";
+	/** [List] lambda:ListWebFunctions */
+	static readonly ListWebFunctions = "lambda:ListWebFunctions";
 	/** [Write] lambda:PassCapacityProvider */
 	static readonly PassCapacityProvider = "lambda:PassCapacityProvider";
 	/** [Write] lambda:PassNetworkConnector */
@@ -288,6 +323,9 @@ export class LambdaActions {
 		"lambda:UpdateMicrovmImageVersion";
 	/** [Write] lambda:UpdateNetworkConnector */
 	static readonly UpdateNetworkConnector = "lambda:UpdateNetworkConnector";
+	/** [Write] lambda:UpdateWebFunctionEndpoint */
+	static readonly UpdateWebFunctionEndpoint =
+		"lambda:UpdateWebFunctionEndpoint";
 
 	/** All read-level actions. */
 	static readonly AllReadActions: string[] = [
@@ -318,6 +356,10 @@ export class LambdaActions {
 		LambdaActions.actionGetProvisionedConcurrencyConfig,
 		LambdaActions.actionGetResourcePolicy,
 		LambdaActions.actionGetRuntimeManagementConfig,
+		LambdaActions.actionGetWebAccountSettings,
+		LambdaActions.actionGetWebFunction,
+		LambdaActions.actionGetWebFunctionEndpoint,
+		LambdaActions.actionGetWebFunctionRevision,
 		LambdaActions.ListTags,
 	];
 	/** All write-level actions. */
@@ -334,6 +376,9 @@ export class LambdaActions {
 		LambdaActions.CreateMicrovmImage,
 		LambdaActions.CreateMicrovmShellAuthToken,
 		LambdaActions.CreateNetworkConnector,
+		LambdaActions.CreateWebFunction,
+		LambdaActions.CreateWebFunctionEndpoint,
+		LambdaActions.CreateWebFunctionRevision,
 		LambdaActions.DeleteAlias,
 		LambdaActions.DeleteCapacityProvider,
 		LambdaActions.DeleteCodeSigningConfig,
@@ -348,9 +393,13 @@ export class LambdaActions {
 		LambdaActions.DeleteMicrovmImageVersion,
 		LambdaActions.DeleteNetworkConnector,
 		LambdaActions.DeleteProvisionedConcurrencyConfig,
+		LambdaActions.DeleteWebFunction,
+		LambdaActions.DeleteWebFunctionEndpoint,
+		LambdaActions.DeleteWebFunctionRevision,
 		LambdaActions.InvokeAsync,
 		LambdaActions.InvokeFunction,
 		LambdaActions.InvokeFunctionUrl,
+		LambdaActions.InvokeWebFunctionEndpoint,
 		LambdaActions.PassCapacityProvider,
 		LambdaActions.PassNetworkConnector,
 		LambdaActions.PublishLayerVersion,
@@ -382,6 +431,7 @@ export class LambdaActions {
 		LambdaActions.UpdateMicrovmImage,
 		LambdaActions.UpdateMicrovmImageVersion,
 		LambdaActions.UpdateNetworkConnector,
+		LambdaActions.UpdateWebFunctionEndpoint,
 	];
 	/** All list-level actions. */
 	static readonly AllListActions: string[] = [
@@ -406,6 +456,9 @@ export class LambdaActions {
 		LambdaActions.ListNetworkConnectors,
 		LambdaActions.ListProvisionedConcurrencyConfigs,
 		LambdaActions.ListVersionsByFunction,
+		LambdaActions.ListWebFunctionEndpoints,
+		LambdaActions.ListWebFunctionRevisions,
+		LambdaActions.ListWebFunctions,
 	];
 	/** All permission-management-level actions. */
 	static readonly AllPermissionManagementActions: string[] = [
@@ -757,6 +810,98 @@ export interface LambdaNetworkConnectorArnComponents {
 	readonly networkConnectorId: string;
 }
 
+/**
+ * Properties for building a webFunction ARN.
+ */
+export interface LambdaWebFunctionArnProps {
+	/** The FunctionName component of the ARN. */
+	readonly functionName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a webFunction ARN.
+ */
+export interface LambdaWebFunctionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The FunctionName component. */
+	readonly functionName: string;
+}
+
+/**
+ * Properties for building a webFunctionEndpoint ARN.
+ */
+export interface LambdaWebFunctionEndpointArnProps {
+	/** The FunctionName component of the ARN. */
+	readonly functionName: string;
+	/** The EndpointName component of the ARN. */
+	readonly endpointName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a webFunctionEndpoint ARN.
+ */
+export interface LambdaWebFunctionEndpointArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The FunctionName component. */
+	readonly functionName: string;
+	/** The EndpointName component. */
+	readonly endpointName: string;
+}
+
+/**
+ * Properties for building a webFunctionRevision ARN.
+ */
+export interface LambdaWebFunctionRevisionArnProps {
+	/** The FunctionName component of the ARN. */
+	readonly functionName: string;
+	/** The RevisionId component of the ARN. */
+	readonly revisionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a webFunctionRevision ARN.
+ */
+export interface LambdaWebFunctionRevisionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The FunctionName component. */
+	readonly functionName: string;
+	/** The RevisionId component. */
+	readonly revisionId: string;
+}
+
 const CapacityProviderArnRegex =
 	/^arn:(?<partition>[^:]+):lambda:(?<region>[^:]*):(?<account>[^:]*):capacity-provider:(?<capacityProviderName>[^:/?]+)$/;
 const CodeSigningConfigArnRegex =
@@ -779,6 +924,12 @@ const MicrovmImageArnRegex =
 	/^arn:(?<partition>[^:]+):lambda:(?<region>[^:]*):(?<account>[^:]*):microvm-image:(?<microvmImageName>[^:/?]+)$/;
 const NetworkConnectorArnRegex =
 	/^arn:(?<partition>[^:]+):lambda:(?<region>[^:]*):(?<account>[^:]*):network-connector:(?<networkConnectorId>[^:/?]+)$/;
+const WebFunctionArnRegex =
+	/^arn:(?<partition>[^:]+):lambda:(?<region>[^:]*):(?<account>[^:]*):web-function\/(?<functionName>[^:/?]+)$/;
+const WebFunctionEndpointArnRegex =
+	/^arn:(?<partition>[^:]+):lambda:(?<region>[^:]*):(?<account>[^:]*):web-function\/(?<functionName>[^:/?]+)\/endpoint\/(?<endpointName>[^:/?]+)$/;
+const WebFunctionRevisionArnRegex =
+	/^arn:(?<partition>[^:]+):lambda:(?<region>[^:]*):(?<account>[^:]*):web-function\/(?<functionName>[^:/?]+)\/revision\/(?<revisionId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for lambda resources.
@@ -1142,6 +1293,105 @@ export class LambdaResources {
 			networkConnectorId: match.groups!.networkConnectorId,
 		};
 	}
+
+	/**
+	 * Builds an ARN for the webFunction resource.
+	 */
+	static webFunction(props: LambdaWebFunctionArnProps): string {
+		return `arn:${props.partition ?? "aws"}:lambda:${props.region ?? "*"}:${props.account ?? "*"}:web-function/${props.functionName}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the webFunction resource.
+	 */
+	static isValidWebFunctionArn(arn: string): boolean {
+		return WebFunctionArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a webFunction ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseWebFunctionArn(arn: string): LambdaWebFunctionArnComponents {
+		const match = WebFunctionArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid webFunction ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			functionName: match.groups!.functionName,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the webFunctionEndpoint resource.
+	 */
+	static webFunctionEndpoint(props: LambdaWebFunctionEndpointArnProps): string {
+		return `arn:${props.partition ?? "aws"}:lambda:${props.region ?? "*"}:${props.account ?? "*"}:web-function/${props.functionName}/endpoint/${props.endpointName}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the webFunctionEndpoint resource.
+	 */
+	static isValidWebFunctionEndpointArn(arn: string): boolean {
+		return WebFunctionEndpointArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a webFunctionEndpoint ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseWebFunctionEndpointArn(
+		arn: string,
+	): LambdaWebFunctionEndpointArnComponents {
+		const match = WebFunctionEndpointArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid webFunctionEndpoint ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			functionName: match.groups!.functionName,
+			endpointName: match.groups!.endpointName,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the webFunctionRevision resource.
+	 */
+	static webFunctionRevision(props: LambdaWebFunctionRevisionArnProps): string {
+		return `arn:${props.partition ?? "aws"}:lambda:${props.region ?? "*"}:${props.account ?? "*"}:web-function/${props.functionName}/revision/${props.revisionId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the webFunctionRevision resource.
+	 */
+	static isValidWebFunctionRevisionArn(arn: string): boolean {
+		return WebFunctionRevisionArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a webFunctionRevision ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseWebFunctionRevisionArn(
+		arn: string,
+	): LambdaWebFunctionRevisionArnComponents {
+		const match = WebFunctionRevisionArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid webFunctionRevision ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			functionName: match.groups!.functionName,
+			revisionId: match.groups!.revisionId,
+		};
+	}
 }
 
 /**
@@ -1211,6 +1461,21 @@ export class LambdaOperations {
 		"iam:PassRole",
 		"lambda:TagResource",
 	];
+	/** IAM actions required for the CreateWebFunction API call. */
+	static readonly CreateWebFunction: string[] = [
+		"lambda:CreateWebFunction",
+		"iam:PassRole",
+		"lambda:TagResource",
+	];
+	/** IAM actions required for the CreateWebFunctionEndpoint API call. */
+	static readonly CreateWebFunctionEndpoint: string[] = [
+		"lambda:CreateWebFunctionEndpoint",
+	];
+	/** IAM actions required for the CreateWebFunctionRevision API call. */
+	static readonly CreateWebFunctionRevision: string[] = [
+		"lambda:CreateWebFunctionRevision",
+		"iam:PassRole",
+	];
 	/** IAM actions required for the DeleteAlias API call. */
 	static readonly DeleteAlias: string[] = ["lambda:DeleteAlias"];
 	/** IAM actions required for the DeleteCapacityProvider API call. */
@@ -1263,6 +1528,16 @@ export class LambdaOperations {
 	static readonly DeleteResourcePolicy: string[] = [
 		"lambda:DeleteResourcePolicy",
 		"lambda:RemovePermission",
+	];
+	/** IAM actions required for the DeleteWebFunction API call. */
+	static readonly DeleteWebFunction: string[] = ["lambda:DeleteWebFunction"];
+	/** IAM actions required for the DeleteWebFunctionEndpoint API call. */
+	static readonly DeleteWebFunctionEndpoint: string[] = [
+		"lambda:DeleteWebFunctionEndpoint",
+	];
+	/** IAM actions required for the DeleteWebFunctionRevision API call. */
+	static readonly DeleteWebFunctionRevision: string[] = [
+		"lambda:DeleteWebFunctionRevision",
 	];
 	/** IAM actions required for the GetAccountSettings API call. */
 	static readonly opGetAccountSettings: string[] = [
@@ -1368,6 +1643,20 @@ export class LambdaOperations {
 	static readonly opGetRuntimeManagementConfig: string[] = [
 		"lambda:GetRuntimeManagementConfig",
 	];
+	/** IAM actions required for the GetWebAccountSettings API call. */
+	static readonly opGetWebAccountSettings: string[] = [
+		"lambda:GetWebAccountSettings",
+	];
+	/** IAM actions required for the GetWebFunction API call. */
+	static readonly opGetWebFunction: string[] = ["lambda:GetWebFunction"];
+	/** IAM actions required for the GetWebFunctionEndpoint API call. */
+	static readonly opGetWebFunctionEndpoint: string[] = [
+		"lambda:GetWebFunctionEndpoint",
+	];
+	/** IAM actions required for the GetWebFunctionRevision API call. */
+	static readonly opGetWebFunctionRevision: string[] = [
+		"lambda:GetWebFunctionRevision",
+	];
 	/** IAM actions required for the Invoke API call. */
 	static readonly Invoke: string[] = ["lambda:InvokeFunction"];
 	/** IAM actions required for the InvokeAsync API call. */
@@ -1452,6 +1741,16 @@ export class LambdaOperations {
 	static readonly ListVersionsByFunction: string[] = [
 		"lambda:ListVersionsByFunction",
 	];
+	/** IAM actions required for the ListWebFunctionEndpoints API call. */
+	static readonly ListWebFunctionEndpoints: string[] = [
+		"lambda:ListWebFunctionEndpoints",
+	];
+	/** IAM actions required for the ListWebFunctionRevisions API call. */
+	static readonly ListWebFunctionRevisions: string[] = [
+		"lambda:ListWebFunctionRevisions",
+	];
+	/** IAM actions required for the ListWebFunctions API call. */
+	static readonly ListWebFunctions: string[] = ["lambda:ListWebFunctions"];
 	/** IAM actions required for the PublishLayerVersion API call. */
 	static readonly PublishLayerVersion: string[] = [
 		"lambda:PublishLayerVersion",
@@ -1578,6 +1877,10 @@ export class LambdaOperations {
 		"iam:PassRole",
 		"lambda:UpdateNetworkConnector",
 	];
+	/** IAM actions required for the UpdateWebFunctionEndpoint API call. */
+	static readonly UpdateWebFunctionEndpoint: string[] = [
+		"lambda:UpdateWebFunctionEndpoint",
+	];
 	/** IAM actions required for the UploadFunction API call. */
 	static readonly UploadFunction: string[] = [];
 }
@@ -1636,6 +1939,16 @@ export class LambdaConditions {
 		"lambda:SecurityGroupIds",
 		"lambda:SubnetIds",
 	];
+	/** Condition keys applicable to the CreateWebFunction action. */
+	static readonly CreateWebFunctionConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+		"lambda:Request/WebFunctionAuthType",
+	];
+	/** Condition keys applicable to the CreateWebFunctionEndpoint action. */
+	static readonly CreateWebFunctionEndpointConditionKeys: string[] = [
+		"lambda:Request/WebFunctionAuthType",
+	];
 	/** Condition keys applicable to the DeleteEventSourceMapping action. */
 	static readonly DeleteEventSourceMappingConditionKeys: string[] = [
 		"lambda:FunctionArn",
@@ -1649,6 +1962,10 @@ export class LambdaConditions {
 	static readonly DeleteResourcePolicyConditionKeys: string[] = [
 		"lambda:Principal",
 	];
+	/** Condition keys applicable to the DeleteWebFunctionEndpoint action. */
+	static readonly DeleteWebFunctionEndpointConditionKeys: string[] = [
+		"lambda:Resource/WebFunctionAuthType",
+	];
 	/** Condition keys applicable to the GetEventSourceMapping action. */
 	static readonly actionGetEventSourceMappingConditionKeys: string[] = [
 		"lambda:FunctionArn",
@@ -1657,6 +1974,10 @@ export class LambdaConditions {
 	static readonly actionGetFunctionUrlConfigConditionKeys: string[] = [
 		"lambda:FunctionArn",
 		"lambda:FunctionUrlAuthType",
+	];
+	/** Condition keys applicable to the GetWebFunctionEndpoint action. */
+	static readonly actionGetWebFunctionEndpointConditionKeys: string[] = [
+		"lambda:Resource/WebFunctionAuthType",
 	];
 	/** Condition keys applicable to the InvokeFunction action. */
 	static readonly InvokeFunctionConditionKeys: string[] = [
@@ -1668,6 +1989,10 @@ export class LambdaConditions {
 		"lambda:EventSourceToken",
 		"lambda:FunctionArn",
 		"lambda:FunctionUrlAuthType",
+	];
+	/** Condition keys applicable to the InvokeWebFunctionEndpoint action. */
+	static readonly InvokeWebFunctionEndpointConditionKeys: string[] = [
+		"lambda:Resource/WebFunctionAuthType",
 	];
 	/** Condition keys applicable to the ListFunctionUrlConfigs action. */
 	static readonly ListFunctionUrlConfigsConditionKeys: string[] = [
@@ -1709,6 +2034,11 @@ export class LambdaConditions {
 		"lambda:FunctionArn",
 		"lambda:FunctionUrlAuthType",
 	];
+	/** Condition keys applicable to the UpdateWebFunctionEndpoint action. */
+	static readonly UpdateWebFunctionEndpointConditionKeys: string[] = [
+		"lambda:Request/WebFunctionAuthType",
+		"lambda:Resource/WebFunctionAuthType",
+	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
 	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
@@ -1730,6 +2060,12 @@ export class LambdaConditions {
 	static readonly LAYER = "lambda:Layer";
 	/** Condition key: lambda:Principal (String) */
 	static readonly PRINCIPAL = "lambda:Principal";
+	/** Condition key: lambda:Request/WebFunctionAuthType (String) */
+	static readonly REQUEST_WEB_FUNCTION_AUTH_TYPE =
+		"lambda:Request/WebFunctionAuthType";
+	/** Condition key: lambda:Resource/WebFunctionAuthType (String) */
+	static readonly RESOURCE_WEB_FUNCTION_AUTH_TYPE =
+		"lambda:Resource/WebFunctionAuthType";
 	/** Condition key: lambda:SecurityGroupIds (ArrayOfString) */
 	static readonly SECURITY_GROUP_IDS = "lambda:SecurityGroupIds";
 	/** Condition key: lambda:SourceFunctionArn (ARN) */
@@ -1815,6 +2151,24 @@ export class LambdaConditions {
 	 */
 	static principal(value: string): Record<string, Record<string, string>> {
 		return { StringEquals: { "lambda:Principal": value } };
+	}
+
+	/**
+	 * Generates a condition block for `lambda:Request/WebFunctionAuthType`.
+	 */
+	static requestWebFunctionAuthType(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "lambda:Request/WebFunctionAuthType": value } };
+	}
+
+	/**
+	 * Generates a condition block for `lambda:Resource/WebFunctionAuthType`.
+	 */
+	static resourceWebFunctionAuthType(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "lambda:Resource/WebFunctionAuthType": value } };
 	}
 
 	/**

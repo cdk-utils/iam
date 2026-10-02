@@ -60,6 +60,12 @@ export class BillingActions {
 	static readonly ListBillingViewSegments = "billing:ListBillingViewSegments";
 	/** [Read] billing:ListBillingViews */
 	static readonly ListBillingViews = "billing:ListBillingViews";
+	/** [List] billing:ListBusinessSupportAccountCharges */
+	static readonly ListBusinessSupportAccountCharges =
+		"billing:ListBusinessSupportAccountCharges";
+	/** [List] billing:ListBusinessSupportSubscriptionHistory */
+	static readonly ListBusinessSupportSubscriptionHistory =
+		"billing:ListBusinessSupportSubscriptionHistory";
 	/** [List] billing:ListEnterpriseSupportLinkedAccountCharges */
 	static readonly ListEnterpriseSupportLinkedAccountCharges =
 		"billing:ListEnterpriseSupportLinkedAccountCharges";
@@ -122,6 +128,8 @@ export class BillingActions {
 	/** All list-level actions. */
 	static readonly AllListActions: string[] = [
 		BillingActions.ListBillingViewSegments,
+		BillingActions.ListBusinessSupportAccountCharges,
+		BillingActions.ListBusinessSupportSubscriptionHistory,
 		BillingActions.ListEnterpriseSupportLinkedAccountCharges,
 		BillingActions.ListSourceViewsForBillingView,
 	];
@@ -254,9 +262,13 @@ export class BillingOperations {
 	/** IAM actions required for the ListBillingViews API call. */
 	static readonly ListBillingViews: string[] = ["billing:ListBillingViews"];
 	/** IAM actions required for the ListBusinessSupportAccountCharges API call. */
-	static readonly ListBusinessSupportAccountCharges: string[] = [];
+	static readonly ListBusinessSupportAccountCharges: string[] = [
+		"billing:ListBusinessSupportAccountCharges",
+	];
 	/** IAM actions required for the ListBusinessSupportSubscriptionHistory API call. */
-	static readonly ListBusinessSupportSubscriptionHistory: string[] = [];
+	static readonly ListBusinessSupportSubscriptionHistory: string[] = [
+		"billing:ListBusinessSupportSubscriptionHistory",
+	];
 	/** IAM actions required for the ListEnterpriseSupportLinkedAccountCharges API call. */
 	static readonly ListEnterpriseSupportLinkedAccountCharges: string[] = [
 		"billing:ListEnterpriseSupportLinkedAccountCharges",
