@@ -4499,6 +4499,7 @@ export class QuickSightOperations {
 		"quicksight:DescribeTemplate",
 		"quicksight:DescribeTheme",
 		"quicksight:PassDataSet",
+		"quicksight:PassTopic",
 		"quicksight:UpdateDashboard",
 	];
 	/** IAM actions required for the UpdateDashboardLinks API call. */
