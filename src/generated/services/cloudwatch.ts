@@ -48,6 +48,9 @@ export class CloudWatchActions {
 	/** [Write] cloudwatch:CreateOneTimeDeepLinkCode */
 	static readonly CreateOneTimeDeepLinkCode =
 		"cloudwatch:CreateOneTimeDeepLinkCode";
+	/** [Write] cloudwatch:CreateResourceMetricsConfiguration */
+	static readonly CreateResourceMetricsConfiguration =
+		"cloudwatch:CreateResourceMetricsConfiguration";
 	/** [Write] cloudwatch:CreateServiceLevelObjective */
 	static readonly CreateServiceLevelObjective =
 		"cloudwatch:CreateServiceLevelObjective";
@@ -92,6 +95,9 @@ export class CloudWatchActions {
 	static readonly DeleteOmniThread = "cloudwatch:DeleteOmniThread";
 	/** [Write] cloudwatch:DeletePipelineRule */
 	static readonly DeletePipelineRule = "cloudwatch:DeletePipelineRule";
+	/** [Write] cloudwatch:DeleteResourceMetricsConfiguration */
+	static readonly DeleteResourceMetricsConfiguration =
+		"cloudwatch:DeleteResourceMetricsConfiguration";
 	/** [Write] cloudwatch:DeleteServiceLevelObjective */
 	static readonly DeleteServiceLevelObjective =
 		"cloudwatch:DeleteServiceLevelObjective";
@@ -181,6 +187,9 @@ export class CloudWatchActions {
 	static readonly actionGetPreferences = "cloudwatch:GetPreferences";
 	/** [Read] cloudwatch:GetRecords */
 	static readonly actionGetRecords = "cloudwatch:GetRecords";
+	/** [Read] cloudwatch:GetResourceMetricsConfiguration */
+	static readonly actionGetResourceMetricsConfiguration =
+		"cloudwatch:GetResourceMetricsConfiguration";
 	/** [Read] cloudwatch:GetService */
 	static readonly actionGetService = "cloudwatch:GetService";
 	/** [Read] cloudwatch:GetServiceData */
@@ -335,12 +344,17 @@ export class CloudWatchActions {
 		"cloudwatch:UpdateIngestionEndpoint";
 	/** [Write] cloudwatch:UpdateIntegration */
 	static readonly UpdateIntegration = "cloudwatch:UpdateIntegration";
+	/** [Write] cloudwatch:UpdateOTelEnrichment */
+	static readonly UpdateOTelEnrichment = "cloudwatch:UpdateOTelEnrichment";
 	/** [Write] cloudwatch:UpdateOmniDashboard */
 	static readonly UpdateOmniDashboard = "cloudwatch:UpdateOmniDashboard";
 	/** [Write] cloudwatch:UpdateOmniThread */
 	static readonly UpdateOmniThread = "cloudwatch:UpdateOmniThread";
 	/** [Write] cloudwatch:UpdatePreferences */
 	static readonly UpdatePreferences = "cloudwatch:UpdatePreferences";
+	/** [Write] cloudwatch:UpdateResourceMetricsConfiguration */
+	static readonly UpdateResourceMetricsConfiguration =
+		"cloudwatch:UpdateResourceMetricsConfiguration";
 	/** [Write] cloudwatch:UpdateServiceLevelObjective */
 	static readonly UpdateServiceLevelObjective =
 		"cloudwatch:UpdateServiceLevelObjective";
@@ -384,6 +398,7 @@ export class CloudWatchActions {
 		CloudWatchActions.actionGetOmniThread,
 		CloudWatchActions.actionGetPreferences,
 		CloudWatchActions.actionGetRecords,
+		CloudWatchActions.actionGetResourceMetricsConfiguration,
 		CloudWatchActions.actionGetService,
 		CloudWatchActions.actionGetServiceData,
 		CloudWatchActions.actionGetServiceLevelObjective,
@@ -407,6 +422,7 @@ export class CloudWatchActions {
 		CloudWatchActions.CreateOmniDashboard,
 		CloudWatchActions.CreateOmniThread,
 		CloudWatchActions.CreateOneTimeDeepLinkCode,
+		CloudWatchActions.CreateResourceMetricsConfiguration,
 		CloudWatchActions.CreateServiceLevelObjective,
 		CloudWatchActions.CreateSpace,
 		CloudWatchActions.CreateView,
@@ -424,6 +440,7 @@ export class CloudWatchActions {
 		CloudWatchActions.DeleteOmniDashboard,
 		CloudWatchActions.DeleteOmniThread,
 		CloudWatchActions.DeletePipelineRule,
+		CloudWatchActions.DeleteResourceMetricsConfiguration,
 		CloudWatchActions.DeleteServiceLevelObjective,
 		CloudWatchActions.DeleteSpace,
 		CloudWatchActions.DeleteView,
@@ -464,9 +481,11 @@ export class CloudWatchActions {
 		CloudWatchActions.UpdateDomainForOrganization,
 		CloudWatchActions.UpdateIngestionEndpoint,
 		CloudWatchActions.UpdateIntegration,
+		CloudWatchActions.UpdateOTelEnrichment,
 		CloudWatchActions.UpdateOmniDashboard,
 		CloudWatchActions.UpdateOmniThread,
 		CloudWatchActions.UpdatePreferences,
+		CloudWatchActions.UpdateResourceMetricsConfiguration,
 		CloudWatchActions.UpdateServiceLevelObjective,
 		CloudWatchActions.UpdateSpace,
 		CloudWatchActions.UpdateView,
@@ -1754,7 +1773,9 @@ export class CloudWatchOperations {
 		"cloudwatch:CreateOneTimeDeepLinkCode",
 	];
 	/** IAM actions required for the CreateResourceMetricsConfiguration API call. */
-	static readonly CreateResourceMetricsConfiguration: string[] = [];
+	static readonly CreateResourceMetricsConfiguration: string[] = [
+		"cloudwatch:CreateResourceMetricsConfiguration",
+	];
 	/** IAM actions required for the CreateSpace API call. */
 	static readonly CreateSpace: string[] = [
 		"cloudwatch:CreateSpace",
@@ -1815,7 +1836,9 @@ export class CloudWatchOperations {
 		"cloudwatch:DeleteOmniDashboard",
 	];
 	/** IAM actions required for the DeleteResourceMetricsConfiguration API call. */
-	static readonly DeleteResourceMetricsConfiguration: string[] = [];
+	static readonly DeleteResourceMetricsConfiguration: string[] = [
+		"cloudwatch:DeleteResourceMetricsConfiguration",
+	];
 	/** IAM actions required for the DeleteSpace API call. */
 	static readonly DeleteSpace: string[] = ["cloudwatch:DeleteSpace"];
 	/** IAM actions required for the DeleteView API call. */
@@ -1917,7 +1940,9 @@ export class CloudWatchOperations {
 		"cloudwatch:GetOmniDashboard",
 	];
 	/** IAM actions required for the GetResourceMetricsConfiguration API call. */
-	static readonly opGetResourceMetricsConfiguration: string[] = [];
+	static readonly opGetResourceMetricsConfiguration: string[] = [
+		"cloudwatch:GetResourceMetricsConfiguration",
+	];
 	/** IAM actions required for the GetSpace API call. */
 	static readonly opGetSpace: string[] = ["cloudwatch:GetSpace"];
 	/** IAM actions required for the GetSpaceCredentialsForOrganization API call. */
@@ -2019,6 +2044,7 @@ export class CloudWatchOperations {
 	];
 	/** IAM actions required for the PutLogAlarm API call. */
 	static readonly PutLogAlarm: string[] = [
+		"cloudwatch:ListTagsForResource",
 		"iam:PassRole",
 		"cloudwatch:PutLogAlarm",
 		"cloudwatch:TagResource",
@@ -2106,13 +2132,17 @@ export class CloudWatchOperations {
 		"cloudwatch:UpdateIntegration",
 	];
 	/** IAM actions required for the UpdateOTelEnrichment API call. */
-	static readonly UpdateOTelEnrichment: string[] = [];
+	static readonly UpdateOTelEnrichment: string[] = [
+		"cloudwatch:UpdateOTelEnrichment",
+	];
 	/** IAM actions required for the UpdateOmniDashboard API call. */
 	static readonly UpdateOmniDashboard: string[] = [
 		"cloudwatch:UpdateOmniDashboard",
 	];
 	/** IAM actions required for the UpdateResourceMetricsConfiguration API call. */
-	static readonly UpdateResourceMetricsConfiguration: string[] = [];
+	static readonly UpdateResourceMetricsConfiguration: string[] = [
+		"cloudwatch:UpdateResourceMetricsConfiguration",
+	];
 	/** IAM actions required for the UpdateSpace API call. */
 	static readonly UpdateSpace: string[] = ["cloudwatch:UpdateSpace"];
 	/** IAM actions required for the UpdateView API call. */
@@ -2154,6 +2184,10 @@ export class CloudWatchConditions {
 	static readonly CreateOmniThreadConditionKeys: string[] = [
 		"cloudwatch:HasAccessGrant",
 	];
+	/** Condition keys applicable to the CreateResourceMetricsConfiguration action. */
+	static readonly CreateResourceMetricsConfigurationConditionKeys: string[] = [
+		"cloudwatch:ResourceArn",
+	];
 	/** Condition keys applicable to the CreateServiceLevelObjective action. */
 	static readonly CreateServiceLevelObjectiveConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
@@ -2189,6 +2223,10 @@ export class CloudWatchConditions {
 	/** Condition keys applicable to the DeleteOmniThread action. */
 	static readonly DeleteOmniThreadConditionKeys: string[] = [
 		"cloudwatch:HasAccessGrant",
+	];
+	/** Condition keys applicable to the DeleteResourceMetricsConfiguration action. */
+	static readonly DeleteResourceMetricsConfigurationConditionKeys: string[] = [
+		"cloudwatch:ResourceArn",
 	];
 	/** Condition keys applicable to the DeleteView action. */
 	static readonly DeleteViewConditionKeys: string[] = [
@@ -2249,6 +2287,9 @@ export class CloudWatchConditions {
 	static readonly actionGetRecordsConditionKeys: string[] = [
 		"cloudwatch:HasAccessGrant",
 	];
+	/** Condition keys applicable to the GetResourceMetricsConfiguration action. */
+	static readonly actionGetResourceMetricsConfigurationConditionKeys: string[] =
+		["cloudwatch:ResourceArn"];
 	/** Condition keys applicable to the GetSpace action. */
 	static readonly actionGetSpaceConditionKeys: string[] = [
 		"cloudwatch:HasAccessGrant",
@@ -2450,6 +2491,10 @@ export class CloudWatchConditions {
 	static readonly UpdatePreferencesConditionKeys: string[] = [
 		"cloudwatch:HasAccessGrant",
 	];
+	/** Condition keys applicable to the UpdateResourceMetricsConfiguration action. */
+	static readonly UpdateResourceMetricsConfigurationConditionKeys: string[] = [
+		"cloudwatch:ResourceArn",
+	];
 	/** Condition keys applicable to the UpdateSpace action. */
 	static readonly UpdateSpaceConditionKeys: string[] = [
 		"cloudwatch:HasAccessGrant",
@@ -2469,6 +2514,8 @@ export class CloudWatchConditions {
 	static readonly ALARM_ACTIONS = "cloudwatch:AlarmActions";
 	/** Condition key: cloudwatch:HasAccessGrant (String) */
 	static readonly HAS_ACCESS_GRANT = "cloudwatch:HasAccessGrant";
+	/** Condition key: cloudwatch:ResourceArn (ARN) */
+	static readonly RESOURCE_ARN = "cloudwatch:ResourceArn";
 	/** Condition key: cloudwatch:namespace (String) */
 	static readonly NAMESPACE = "cloudwatch:namespace";
 	/** Condition key: cloudwatch:requestInsightRuleLogGroups (ArrayOfString) */
@@ -2515,6 +2562,13 @@ export class CloudWatchConditions {
 	 */
 	static hasAccessGrant(value: string): Record<string, Record<string, string>> {
 		return { StringEquals: { "cloudwatch:HasAccessGrant": value } };
+	}
+
+	/**
+	 * Generates a condition block for `cloudwatch:ResourceArn`.
+	 */
+	static resourceARN(value: string): Record<string, Record<string, string>> {
+		return { ArnEquals: { "cloudwatch:ResourceArn": value } };
 	}
 
 	/**

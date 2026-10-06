@@ -256,6 +256,24 @@
       }
     },
     {
+      "Name": "CreateResourceMetricsConfiguration",
+      "ActionConditionKeys": [
+        "cloudwatch:ResourceArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "CreateServiceLevelObjective",
       "ActionConditionKeys": [
         "aws:RequestTag/${TagKey}",
@@ -653,6 +671,24 @@
           "Name": "dataset"
         }
       ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteResourceMetricsConfiguration",
+      "ActionConditionKeys": [
+        "cloudwatch:ResourceArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -1397,6 +1433,24 @@
       "Name": "GetRecords",
       "ActionConditionKeys": [
         "cloudwatch:HasAccessGrant"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetResourceMetricsConfiguration",
+      "ActionConditionKeys": [
+        "cloudwatch:ResourceArn"
       ],
       "Annotations": {
         "Properties": {
@@ -2899,6 +2953,21 @@
       }
     },
     {
+      "Name": "UpdateOTelEnrichment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "UpdateOmniDashboard",
       "ActionConditionKeys": [
         "cloudwatch:HasAccessGrant"
@@ -2943,6 +3012,24 @@
       "Name": "UpdatePreferences",
       "ActionConditionKeys": [
         "cloudwatch:HasAccessGrant"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateResourceMetricsConfiguration",
+      "ActionConditionKeys": [
+        "cloudwatch:ResourceArn"
       ],
       "Annotations": {
         "Properties": {
@@ -3053,6 +3140,12 @@
       "Name": "cloudwatch:HasAccessGrant",
       "Types": [
         "String"
+      ]
+    },
+    {
+      "Name": "cloudwatch:ResourceArn",
+      "Types": [
+        "ARN"
       ]
     },
     {
@@ -3277,6 +3370,12 @@
     },
     {
       "Name": "CreateResourceMetricsConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateResourceMetricsConfiguration",
+          "Service": "cloudwatch"
+        }
+      ],
       "SDK": [
         {
           "Name": "cloudwatch",
@@ -3554,6 +3653,12 @@
     },
     {
       "Name": "DeleteResourceMetricsConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteResourceMetricsConfiguration",
+          "Service": "cloudwatch"
+        }
+      ],
       "SDK": [
         {
           "Name": "cloudwatch",
@@ -4064,6 +4169,12 @@
     },
     {
       "Name": "GetResourceMetricsConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResourceMetricsConfiguration",
+          "Service": "cloudwatch"
+        }
+      ],
       "SDK": [
         {
           "Name": "cloudwatch",
@@ -4552,6 +4663,10 @@
       "Name": "PutLogAlarm",
       "AuthorizedActions": [
         {
+          "Name": "ListTagsForResource",
+          "Service": "cloudwatch"
+        },
+        {
           "Name": "PassRole",
           "Context": {
             "iam:PassedToService": [
@@ -4957,6 +5072,12 @@
     },
     {
       "Name": "UpdateOTelEnrichment",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateOTelEnrichment",
+          "Service": "cloudwatch"
+        }
+      ],
       "SDK": [
         {
           "Name": "cloudwatch",
@@ -4983,6 +5104,12 @@
     },
     {
       "Name": "UpdateResourceMetricsConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateResourceMetricsConfiguration",
+          "Service": "cloudwatch"
+        }
+      ],
       "SDK": [
         {
           "Name": "cloudwatch",
