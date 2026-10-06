@@ -2889,6 +2889,7 @@ new cloudwatch.CloudWatchActions()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetOTelEnrichment">actionGetOTelEnrichment</a></code> | <code>string</code> | [Read] cloudwatch:GetOTelEnrichment. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetPreferences">actionGetPreferences</a></code> | <code>string</code> | [Read] cloudwatch:GetPreferences. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetRecords">actionGetRecords</a></code> | <code>string</code> | [Read] cloudwatch:GetRecords. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetResourceMetricsConfiguration">actionGetResourceMetricsConfiguration</a></code> | <code>string</code> | [Read] cloudwatch:GetResourceMetricsConfiguration. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetService">actionGetService</a></code> | <code>string</code> | [Read] cloudwatch:GetService. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetServiceData">actionGetServiceData</a></code> | <code>string</code> | [Read] cloudwatch:GetServiceData. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetServiceLevelObjective">actionGetServiceLevelObjective</a></code> | <code>string</code> | [Read] cloudwatch:GetServiceLevelObjective. |
@@ -2920,6 +2921,7 @@ new cloudwatch.CloudWatchActions()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CreateOmniDashboard">CreateOmniDashboard</a></code> | <code>string</code> | [Write] cloudwatch:CreateOmniDashboard. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CreateOmniThread">CreateOmniThread</a></code> | <code>string</code> | [Write] cloudwatch:CreateOmniThread. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CreateOneTimeDeepLinkCode">CreateOneTimeDeepLinkCode</a></code> | <code>string</code> | [Write] cloudwatch:CreateOneTimeDeepLinkCode. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CreateResourceMetricsConfiguration">CreateResourceMetricsConfiguration</a></code> | <code>string</code> | [Write] cloudwatch:CreateResourceMetricsConfiguration. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CreateServiceLevelObjective">CreateServiceLevelObjective</a></code> | <code>string</code> | [Write] cloudwatch:CreateServiceLevelObjective. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CreateSpace">CreateSpace</a></code> | <code>string</code> | [Write] cloudwatch:CreateSpace. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CreateView">CreateView</a></code> | <code>string</code> | [Write] cloudwatch:CreateView. |
@@ -2940,6 +2942,7 @@ new cloudwatch.CloudWatchActions()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DeleteOmniDashboard">DeleteOmniDashboard</a></code> | <code>string</code> | [Write] cloudwatch:DeleteOmniDashboard. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DeleteOmniThread">DeleteOmniThread</a></code> | <code>string</code> | [Write] cloudwatch:DeleteOmniThread. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DeletePipelineRule">DeletePipelineRule</a></code> | <code>string</code> | [Write] cloudwatch:DeletePipelineRule. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DeleteResourceMetricsConfiguration">DeleteResourceMetricsConfiguration</a></code> | <code>string</code> | [Write] cloudwatch:DeleteResourceMetricsConfiguration. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DeleteServiceLevelObjective">DeleteServiceLevelObjective</a></code> | <code>string</code> | [Write] cloudwatch:DeleteServiceLevelObjective. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DeleteSpace">DeleteSpace</a></code> | <code>string</code> | [Write] cloudwatch:DeleteSpace. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DeleteView">DeleteView</a></code> | <code>string</code> | [Write] cloudwatch:DeleteView. |
@@ -3017,7 +3020,9 @@ new cloudwatch.CloudWatchActions()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.UpdateIntegration">UpdateIntegration</a></code> | <code>string</code> | [Write] cloudwatch:UpdateIntegration. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.UpdateOmniDashboard">UpdateOmniDashboard</a></code> | <code>string</code> | [Write] cloudwatch:UpdateOmniDashboard. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.UpdateOmniThread">UpdateOmniThread</a></code> | <code>string</code> | [Write] cloudwatch:UpdateOmniThread. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.UpdateOTelEnrichment">UpdateOTelEnrichment</a></code> | <code>string</code> | [Write] cloudwatch:UpdateOTelEnrichment. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.UpdatePreferences">UpdatePreferences</a></code> | <code>string</code> | [Write] cloudwatch:UpdatePreferences. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.UpdateResourceMetricsConfiguration">UpdateResourceMetricsConfiguration</a></code> | <code>string</code> | [Write] cloudwatch:UpdateResourceMetricsConfiguration. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.UpdateServiceLevelObjective">UpdateServiceLevelObjective</a></code> | <code>string</code> | [Write] cloudwatch:UpdateServiceLevelObjective. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.UpdateSpace">UpdateSpace</a></code> | <code>string</code> | [Write] cloudwatch:UpdateSpace. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.UpdateView">UpdateView</a></code> | <code>string</code> | [Write] cloudwatch:UpdateView. |
@@ -3309,6 +3314,18 @@ public readonly actionGetRecords: string;
 - *Type:* string
 
 [Read] cloudwatch:GetRecords.
+
+---
+
+##### `actionGetResourceMetricsConfiguration`<sup>Required</sup> <a name="actionGetResourceMetricsConfiguration" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetResourceMetricsConfiguration"></a>
+
+```typescript
+public readonly actionGetResourceMetricsConfiguration: string;
+```
+
+- *Type:* string
+
+[Read] cloudwatch:GetResourceMetricsConfiguration.
 
 ---
 
@@ -3684,6 +3701,18 @@ public readonly CreateOneTimeDeepLinkCode: string;
 
 ---
 
+##### `CreateResourceMetricsConfiguration`<sup>Required</sup> <a name="CreateResourceMetricsConfiguration" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CreateResourceMetricsConfiguration"></a>
+
+```typescript
+public readonly CreateResourceMetricsConfiguration: string;
+```
+
+- *Type:* string
+
+[Write] cloudwatch:CreateResourceMetricsConfiguration.
+
+---
+
 ##### `CreateServiceLevelObjective`<sup>Required</sup> <a name="CreateServiceLevelObjective" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CreateServiceLevelObjective"></a>
 
 ```typescript
@@ -3921,6 +3950,18 @@ public readonly DeletePipelineRule: string;
 - *Type:* string
 
 [Write] cloudwatch:DeletePipelineRule.
+
+---
+
+##### `DeleteResourceMetricsConfiguration`<sup>Required</sup> <a name="DeleteResourceMetricsConfiguration" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DeleteResourceMetricsConfiguration"></a>
+
+```typescript
+public readonly DeleteResourceMetricsConfiguration: string;
+```
+
+- *Type:* string
+
+[Write] cloudwatch:DeleteResourceMetricsConfiguration.
 
 ---
 
@@ -4848,6 +4889,18 @@ public readonly UpdateOmniThread: string;
 
 ---
 
+##### `UpdateOTelEnrichment`<sup>Required</sup> <a name="UpdateOTelEnrichment" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.UpdateOTelEnrichment"></a>
+
+```typescript
+public readonly UpdateOTelEnrichment: string;
+```
+
+- *Type:* string
+
+[Write] cloudwatch:UpdateOTelEnrichment.
+
+---
+
 ##### `UpdatePreferences`<sup>Required</sup> <a name="UpdatePreferences" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.UpdatePreferences"></a>
 
 ```typescript
@@ -4857,6 +4910,18 @@ public readonly UpdatePreferences: string;
 - *Type:* string
 
 [Write] cloudwatch:UpdatePreferences.
+
+---
+
+##### `UpdateResourceMetricsConfiguration`<sup>Required</sup> <a name="UpdateResourceMetricsConfiguration" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.UpdateResourceMetricsConfiguration"></a>
+
+```typescript
+public readonly UpdateResourceMetricsConfiguration: string;
+```
+
+- *Type:* string
+
+[Write] cloudwatch:UpdateResourceMetricsConfiguration.
 
 ---
 
@@ -4924,6 +4989,7 @@ new cloudwatch.CloudWatchConditions()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.requestInsightRuleLogGroups">requestInsightRuleLogGroups</a></code> | Generates a condition block for `cloudwatch:requestInsightRuleLogGroups`. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.requestManagedResourceArNs">requestManagedResourceArNs</a></code> | Generates a condition block for `cloudwatch:requestManagedResourceARNs`. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.requestTag">requestTag</a></code> | Generates a condition block for `aws:RequestTag/${TagKey}`. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.resourceARN">resourceARN</a></code> | Generates a condition block for `cloudwatch:ResourceArn`. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.resourceTag">resourceTag</a></code> | Generates a condition block for `aws:ResourceTag/${TagKey}`. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.tagKeys">tagKeys</a></code> | Generates a condition block for `aws:TagKeys`. |
 
@@ -5025,6 +5091,22 @@ Generates a condition block for `aws:RequestTag/${TagKey}`.
 
 ---
 
+##### `resourceARN` <a name="resourceARN" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.resourceARN"></a>
+
+```typescript
+import { cloudwatch } from '@cdk_utils/iam'
+
+cloudwatch.CloudWatchConditions.resourceARN(value: string)
+```
+
+Generates a condition block for `cloudwatch:ResourceArn`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.resourceARN.parameter.value"></a>
+
+- *Type:* string
+
+---
+
 ##### `resourceTag` <a name="resourceTag" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.resourceTag"></a>
 
 ```typescript
@@ -5076,6 +5158,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetOmniThreadConditionKeys">actionGetOmniThreadConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetOmniThread action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetPreferencesConditionKeys">actionGetPreferencesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetPreferences action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetRecordsConditionKeys">actionGetRecordsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetRecords action. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetResourceMetricsConfigurationConditionKeys">actionGetResourceMetricsConfigurationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetResourceMetricsConfiguration action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetSpaceConditionKeys">actionGetSpaceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetSpace action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetTelemetryQueryResultsConditionKeys">actionGetTelemetryQueryResultsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetTelemetryQueryResults action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetViewConditionKeys">actionGetViewConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetView action. |
@@ -5091,6 +5174,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.CreateIntegrationConditionKeys">CreateIntegrationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateIntegration action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.CreateOmniDashboardConditionKeys">CreateOmniDashboardConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateOmniDashboard action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.CreateOmniThreadConditionKeys">CreateOmniThreadConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateOmniThread action. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.CreateResourceMetricsConfigurationConditionKeys">CreateResourceMetricsConfigurationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateResourceMetricsConfiguration action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.CreateServiceLevelObjectiveConditionKeys">CreateServiceLevelObjectiveConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateServiceLevelObjective action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.CreateViewConditionKeys">CreateViewConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateView action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.DeleteAccessGrantConditionKeys">DeleteAccessGrantConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteAccessGrant action. |
@@ -5100,6 +5184,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.DeleteIntegrationConditionKeys">DeleteIntegrationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteIntegration action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.DeleteOmniDashboardConditionKeys">DeleteOmniDashboardConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteOmniDashboard action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.DeleteOmniThreadConditionKeys">DeleteOmniThreadConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteOmniThread action. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.DeleteResourceMetricsConfigurationConditionKeys">DeleteResourceMetricsConfigurationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteResourceMetricsConfiguration action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.DeleteViewConditionKeys">DeleteViewConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteView action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.HAS_ACCESS_GRANT">HAS_ACCESS_GRANT</a></code> | <code>string</code> | Condition key: cloudwatch:HasAccessGrant (String). |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.InvokeIntegrationConditionKeys">InvokeIntegrationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the InvokeIntegration action. |
@@ -5133,6 +5218,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.PutMetricStreamConditionKeys">PutMetricStreamConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutMetricStream action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.REQUEST_INSIGHT_RULE_LOG_GROUPS">REQUEST_INSIGHT_RULE_LOG_GROUPS</a></code> | <code>string</code> | Condition key: cloudwatch:requestInsightRuleLogGroups (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.REQUEST_MANAGED_RESOURCE_AR_NS">REQUEST_MANAGED_RESOURCE_AR_NS</a></code> | <code>string</code> | Condition key: cloudwatch:requestManagedResourceARNs (ArrayOfARN). |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.RESOURCE_ARN">RESOURCE_ARN</a></code> | <code>string</code> | Condition key: cloudwatch:ResourceArn (ARN). |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.SearchPrincipalsConditionKeys">SearchPrincipalsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the SearchPrincipals action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.StartOmniThreadSessionConditionKeys">StartOmniThreadSessionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartOmniThreadSession action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.StartTelemetryQueryConditionKeys">StartTelemetryQueryConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartTelemetryQuery action. |
@@ -5148,6 +5234,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.UpdateOmniDashboardConditionKeys">UpdateOmniDashboardConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateOmniDashboard action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.UpdateOmniThreadConditionKeys">UpdateOmniThreadConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateOmniThread action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.UpdatePreferencesConditionKeys">UpdatePreferencesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdatePreferences action. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.UpdateResourceMetricsConfigurationConditionKeys">UpdateResourceMetricsConfigurationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateResourceMetricsConfiguration action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.UpdateSpaceConditionKeys">UpdateSpaceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateSpace action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.UpdateViewConditionKeys">UpdateViewConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateView action. |
 
@@ -5318,6 +5405,18 @@ public readonly actionGetRecordsConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the GetRecords action.
+
+---
+
+##### `actionGetResourceMetricsConfigurationConditionKeys`<sup>Required</sup> <a name="actionGetResourceMetricsConfigurationConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetResourceMetricsConfigurationConditionKeys"></a>
+
+```typescript
+public readonly actionGetResourceMetricsConfigurationConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetResourceMetricsConfiguration action.
 
 ---
 
@@ -5501,6 +5600,18 @@ Condition keys applicable to the CreateOmniThread action.
 
 ---
 
+##### `CreateResourceMetricsConfigurationConditionKeys`<sup>Required</sup> <a name="CreateResourceMetricsConfigurationConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.CreateResourceMetricsConfigurationConditionKeys"></a>
+
+```typescript
+public readonly CreateResourceMetricsConfigurationConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateResourceMetricsConfiguration action.
+
+---
+
 ##### `CreateServiceLevelObjectiveConditionKeys`<sup>Required</sup> <a name="CreateServiceLevelObjectiveConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.CreateServiceLevelObjectiveConditionKeys"></a>
 
 ```typescript
@@ -5606,6 +5717,18 @@ public readonly DeleteOmniThreadConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the DeleteOmniThread action.
+
+---
+
+##### `DeleteResourceMetricsConfigurationConditionKeys`<sup>Required</sup> <a name="DeleteResourceMetricsConfigurationConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.DeleteResourceMetricsConfigurationConditionKeys"></a>
+
+```typescript
+public readonly DeleteResourceMetricsConfigurationConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DeleteResourceMetricsConfiguration action.
 
 ---
 
@@ -6005,6 +6128,18 @@ Condition key: cloudwatch:requestManagedResourceARNs (ArrayOfARN).
 
 ---
 
+##### `RESOURCE_ARN`<sup>Required</sup> <a name="RESOURCE_ARN" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.RESOURCE_ARN"></a>
+
+```typescript
+public readonly RESOURCE_ARN: string;
+```
+
+- *Type:* string
+
+Condition key: cloudwatch:ResourceArn (ARN).
+
+---
+
 ##### `SearchPrincipalsConditionKeys`<sup>Required</sup> <a name="SearchPrincipalsConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.SearchPrincipalsConditionKeys"></a>
 
 ```typescript
@@ -6182,6 +6317,18 @@ public readonly UpdatePreferencesConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the UpdatePreferences action.
+
+---
+
+##### `UpdateResourceMetricsConfigurationConditionKeys`<sup>Required</sup> <a name="UpdateResourceMetricsConfigurationConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.UpdateResourceMetricsConfigurationConditionKeys"></a>
+
+```typescript
+public readonly UpdateResourceMetricsConfigurationConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UpdateResourceMetricsConfiguration action.
 
 ---
 
