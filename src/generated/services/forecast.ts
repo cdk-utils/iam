@@ -1361,7 +1361,9 @@ export class ForecastOperations {
 		"forecast:DescribeWhatIfForecast",
 	];
 	/** IAM actions required for the DescribeWhatIfForecastExport API call. */
-	static readonly DescribeWhatIfForecastExport: string[] = [];
+	static readonly DescribeWhatIfForecastExport: string[] = [
+		"forecast:DescribeWhatIfForecastExport",
+	];
 	/** IAM actions required for the GetAccuracyMetrics API call. */
 	static readonly opGetAccuracyMetrics: string[] = [
 		"forecast:GetAccuracyMetrics",

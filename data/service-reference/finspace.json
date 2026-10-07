@@ -1396,10 +1396,6 @@
         {
           "Name": "CreateKxDataview",
           "Service": "finspace"
-        },
-        {
-          "Name": "TagResource",
-          "Service": "finspace"
         }
       ],
       "SDK": [

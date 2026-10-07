@@ -2144,7 +2144,10 @@ export class CloudWatchOperations {
 		"cloudwatch:UpdateResourceMetricsConfiguration",
 	];
 	/** IAM actions required for the UpdateSpace API call. */
-	static readonly UpdateSpace: string[] = ["cloudwatch:UpdateSpace"];
+	static readonly UpdateSpace: string[] = [
+		"iam:PassRole",
+		"cloudwatch:UpdateSpace",
+	];
 	/** IAM actions required for the UpdateView API call. */
 	static readonly UpdateView: string[] = ["cloudwatch:UpdateView"];
 }
