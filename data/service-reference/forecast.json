@@ -2365,6 +2365,12 @@
     },
     {
       "Name": "DescribeWhatIfForecastExport",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeWhatIfForecastExport",
+          "Service": "forecast"
+        }
+      ],
       "SDK": [
         {
           "Name": "forecast",

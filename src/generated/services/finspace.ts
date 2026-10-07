@@ -828,10 +828,7 @@ export class FinspaceOperations {
 		"finspace:TagResource",
 	];
 	/** IAM actions required for the CreateKxDataview API call. */
-	static readonly CreateKxDataview: string[] = [
-		"finspace:CreateKxDataview",
-		"finspace:TagResource",
-	];
+	static readonly CreateKxDataview: string[] = ["finspace:CreateKxDataview"];
 	/** IAM actions required for the CreateKxEnvironment API call. */
 	static readonly CreateKxEnvironment: string[] = [
 		"finspace:CreateKxEnvironment",

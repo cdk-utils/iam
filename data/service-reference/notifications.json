@@ -1454,6 +1454,16 @@
     },
     {
       "Name": "UpdateManagedNotificationChannelAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "SubscribeSensitiveEvents",
+          "Service": "notifications"
+        },
+        {
+          "Name": "UpdateManagedNotificationChannelAssociation",
+          "Service": "notifications"
+        }
+      ],
       "SDK": [
         {
           "Name": "notifications",
