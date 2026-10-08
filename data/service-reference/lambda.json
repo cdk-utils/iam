@@ -3193,76 +3193,6 @@
       ]
     },
     {
-      "Name": "CreateWebFunction",
-      "AuthorizedActions": [
-        {
-          "Name": "CreateWebFunction",
-          "Service": "lambda"
-        },
-        {
-          "Name": "PassRole",
-          "Context": {
-            "iam:PassedToService": [
-              "lambda.amazonaws.com"
-            ]
-          },
-          "Service": "iam"
-        },
-        {
-          "Name": "TagResource",
-          "Service": "lambda"
-        }
-      ],
-      "SDK": [
-        {
-          "Name": "lambda-web",
-          "Method": "create_web_function",
-          "Package": "Boto3"
-        }
-      ]
-    },
-    {
-      "Name": "CreateWebFunctionEndpoint",
-      "AuthorizedActions": [
-        {
-          "Name": "CreateWebFunctionEndpoint",
-          "Service": "lambda"
-        }
-      ],
-      "SDK": [
-        {
-          "Name": "lambda-web",
-          "Method": "create_web_function_endpoint",
-          "Package": "Boto3"
-        }
-      ]
-    },
-    {
-      "Name": "CreateWebFunctionRevision",
-      "AuthorizedActions": [
-        {
-          "Name": "CreateWebFunctionRevision",
-          "Service": "lambda"
-        },
-        {
-          "Name": "PassRole",
-          "Context": {
-            "iam:PassedToService": [
-              "lambda.amazonaws.com"
-            ]
-          },
-          "Service": "iam"
-        }
-      ],
-      "SDK": [
-        {
-          "Name": "lambda-web",
-          "Method": "create_web_function_revision",
-          "Package": "Boto3"
-        }
-      ]
-    },
-    {
       "Name": "DeleteAlias",
       "AuthorizedActions": [
         {
@@ -3502,59 +3432,6 @@
         {
           "Name": "lambda",
           "Method": "delete_resource_policy",
-          "Package": "Boto3"
-        },
-        {
-          "Name": "lambda-web",
-          "Method": "delete_resource_policy",
-          "Package": "Boto3"
-        }
-      ]
-    },
-    {
-      "Name": "DeleteWebFunction",
-      "AuthorizedActions": [
-        {
-          "Name": "DeleteWebFunction",
-          "Service": "lambda"
-        }
-      ],
-      "SDK": [
-        {
-          "Name": "lambda-web",
-          "Method": "delete_web_function",
-          "Package": "Boto3"
-        }
-      ]
-    },
-    {
-      "Name": "DeleteWebFunctionEndpoint",
-      "AuthorizedActions": [
-        {
-          "Name": "DeleteWebFunctionEndpoint",
-          "Service": "lambda"
-        }
-      ],
-      "SDK": [
-        {
-          "Name": "lambda-web",
-          "Method": "delete_web_function_endpoint",
-          "Package": "Boto3"
-        }
-      ]
-    },
-    {
-      "Name": "DeleteWebFunctionRevision",
-      "AuthorizedActions": [
-        {
-          "Name": "DeleteWebFunctionRevision",
-          "Service": "lambda"
-        }
-      ],
-      "SDK": [
-        {
-          "Name": "lambda-web",
-          "Method": "delete_web_function_revision",
           "Package": "Boto3"
         }
       ]
@@ -4006,11 +3883,6 @@
           "Name": "lambda",
           "Method": "get_resource_policy",
           "Package": "Boto3"
-        },
-        {
-          "Name": "lambda-web",
-          "Method": "get_resource_policy",
-          "Package": "Boto3"
         }
       ]
     },
@@ -4042,54 +3914,6 @@
         {
           "Name": "lambda-web",
           "Method": "get_web_account_settings",
-          "Package": "Boto3"
-        }
-      ]
-    },
-    {
-      "Name": "GetWebFunction",
-      "AuthorizedActions": [
-        {
-          "Name": "GetWebFunction",
-          "Service": "lambda"
-        }
-      ],
-      "SDK": [
-        {
-          "Name": "lambda-web",
-          "Method": "get_web_function",
-          "Package": "Boto3"
-        }
-      ]
-    },
-    {
-      "Name": "GetWebFunctionEndpoint",
-      "AuthorizedActions": [
-        {
-          "Name": "GetWebFunctionEndpoint",
-          "Service": "lambda"
-        }
-      ],
-      "SDK": [
-        {
-          "Name": "lambda-web",
-          "Method": "get_web_function_endpoint",
-          "Package": "Boto3"
-        }
-      ]
-    },
-    {
-      "Name": "GetWebFunctionRevision",
-      "AuthorizedActions": [
-        {
-          "Name": "GetWebFunctionRevision",
-          "Service": "lambda"
-        }
-      ],
-      "SDK": [
-        {
-          "Name": "lambda-web",
-          "Method": "get_web_function_revision",
           "Package": "Boto3"
         }
       ]
@@ -4490,11 +4314,6 @@
           "Name": "lambda-microvms",
           "Method": "list_tags",
           "Package": "Boto3"
-        },
-        {
-          "Name": "lambda-web",
-          "Method": "list_tags",
-          "Package": "Boto3"
         }
       ]
     },
@@ -4510,54 +4329,6 @@
         {
           "Name": "lambda",
           "Method": "list_versions_by_function",
-          "Package": "Boto3"
-        }
-      ]
-    },
-    {
-      "Name": "ListWebFunctionEndpoints",
-      "AuthorizedActions": [
-        {
-          "Name": "ListWebFunctionEndpoints",
-          "Service": "lambda"
-        }
-      ],
-      "SDK": [
-        {
-          "Name": "lambda-web",
-          "Method": "list_web_function_endpoints",
-          "Package": "Boto3"
-        }
-      ]
-    },
-    {
-      "Name": "ListWebFunctionRevisions",
-      "AuthorizedActions": [
-        {
-          "Name": "ListWebFunctionRevisions",
-          "Service": "lambda"
-        }
-      ],
-      "SDK": [
-        {
-          "Name": "lambda-web",
-          "Method": "list_web_function_revisions",
-          "Package": "Boto3"
-        }
-      ]
-    },
-    {
-      "Name": "ListWebFunctions",
-      "AuthorizedActions": [
-        {
-          "Name": "ListWebFunctions",
-          "Service": "lambda"
-        }
-      ],
-      "SDK": [
-        {
-          "Name": "lambda-web",
-          "Method": "list_web_functions",
           "Package": "Boto3"
         }
       ]
@@ -4709,11 +4480,6 @@
       "SDK": [
         {
           "Name": "lambda",
-          "Method": "put_resource_policy",
-          "Package": "Boto3"
-        },
-        {
-          "Name": "lambda-web",
           "Method": "put_resource_policy",
           "Package": "Boto3"
         }
@@ -4920,11 +4686,6 @@
           "Name": "lambda-microvms",
           "Method": "tag_resource",
           "Package": "Boto3"
-        },
-        {
-          "Name": "lambda-web",
-          "Method": "tag_resource",
-          "Package": "Boto3"
         }
       ]
     },
@@ -4960,11 +4721,6 @@
         },
         {
           "Name": "lambda-microvms",
-          "Method": "untag_resource",
-          "Package": "Boto3"
-        },
-        {
-          "Name": "lambda-web",
           "Method": "untag_resource",
           "Package": "Boto3"
         }
@@ -5181,22 +4937,6 @@
         {
           "Name": "lambda-core",
           "Method": "update_network_connector",
-          "Package": "Boto3"
-        }
-      ]
-    },
-    {
-      "Name": "UpdateWebFunctionEndpoint",
-      "AuthorizedActions": [
-        {
-          "Name": "UpdateWebFunctionEndpoint",
-          "Service": "lambda"
-        }
-      ],
-      "SDK": [
-        {
-          "Name": "lambda-web",
-          "Method": "update_web_function_endpoint",
           "Package": "Boto3"
         }
       ]

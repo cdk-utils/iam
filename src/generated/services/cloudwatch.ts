@@ -324,6 +324,8 @@ export class CloudWatchActions {
 	/** [Write] cloudwatch:StopTelemetryQuerySession */
 	static readonly StopTelemetryQuerySession =
 		"cloudwatch:StopTelemetryQuerySession";
+	/** [Write] cloudwatch:SubmitAlarmFeedback */
+	static readonly SubmitAlarmFeedback = "cloudwatch:SubmitAlarmFeedback";
 	/** [Write] cloudwatch:SubmitFeedback */
 	static readonly SubmitFeedback = "cloudwatch:SubmitFeedback";
 	/** [Tagging] cloudwatch:TagResource */
@@ -475,6 +477,7 @@ export class CloudWatchActions {
 		CloudWatchActions.StopOTelEnrichment,
 		CloudWatchActions.StopTelemetryQuery,
 		CloudWatchActions.StopTelemetryQuerySession,
+		CloudWatchActions.SubmitAlarmFeedback,
 		CloudWatchActions.SubmitFeedback,
 		CloudWatchActions.UpdateAlert,
 		CloudWatchActions.UpdateDomain,

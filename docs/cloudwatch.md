@@ -3009,6 +3009,7 @@ new cloudwatch.CloudWatchActions()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.StopOTelEnrichment">StopOTelEnrichment</a></code> | <code>string</code> | [Write] cloudwatch:StopOTelEnrichment. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.StopTelemetryQuery">StopTelemetryQuery</a></code> | <code>string</code> | [Write] cloudwatch:StopTelemetryQuery. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.StopTelemetryQuerySession">StopTelemetryQuerySession</a></code> | <code>string</code> | [Write] cloudwatch:StopTelemetryQuerySession. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.SubmitAlarmFeedback">SubmitAlarmFeedback</a></code> | <code>string</code> | [Write] cloudwatch:SubmitAlarmFeedback. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.SubmitFeedback">SubmitFeedback</a></code> | <code>string</code> | [Write] cloudwatch:SubmitFeedback. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] cloudwatch:TagResource. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] cloudwatch:UntagResource. |
@@ -4754,6 +4755,18 @@ public readonly StopTelemetryQuerySession: string;
 - *Type:* string
 
 [Write] cloudwatch:StopTelemetryQuerySession.
+
+---
+
+##### `SubmitAlarmFeedback`<sup>Required</sup> <a name="SubmitAlarmFeedback" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.SubmitAlarmFeedback"></a>
+
+```typescript
+public readonly SubmitAlarmFeedback: string;
+```
+
+- *Type:* string
+
+[Write] cloudwatch:SubmitAlarmFeedback.
 
 ---
 

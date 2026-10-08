@@ -169,6 +169,7 @@ The following submodules are available:
 - [elemental_support_content](./elemental_support_content.md)
 - [emr_containers](./emr_containers.md)
 - [emr_serverless](./emr_serverless.md)
+- [end_user_messaging](./end_user_messaging.md)
 - [entityresolution](./entityresolution.md)
 - [es](./es.md)
 - [events](./events.md)

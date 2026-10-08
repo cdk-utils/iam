@@ -170,6 +170,7 @@ export * as elemental_support_cases from "./services/elemental-support-cases";
 export * as elemental_support_content from "./services/elemental-support-content";
 export * as emr_containers from "./services/emr-containers";
 export * as emr_serverless from "./services/emr-serverless";
+export * as end_user_messaging from "./services/end-user-messaging";
 export * as entityresolution from "./services/entityresolution";
 export * as es from "./services/es";
 export * as events from "./services/events";

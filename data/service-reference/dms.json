@@ -2884,6 +2884,15 @@
         {
           "Name": "CreateInstanceProfile",
           "Service": "dms"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "dms.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
         }
       ],
       "SDK": [
@@ -4182,6 +4191,15 @@
     {
       "Name": "ModifyInstanceProfile",
       "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "dms.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
         {
           "Name": "UpdateInstanceProfile",
           "Service": "dms"
