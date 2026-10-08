@@ -2382,6 +2382,7 @@ export class SSMOperations {
 	static readonly UpdateCloudConnector: string[] = ["ssm:UpdateCloudConnector"];
 	/** IAM actions required for the UpdateDocument API call. */
 	static readonly UpdateDocument: string[] = [
+		"ssm:GetDocument",
 		"iam:PassRole",
 		"ssm:UpdateDocument",
 	];

@@ -6022,6 +6022,10 @@
       "Name": "UpdateDocument",
       "AuthorizedActions": [
         {
+          "Name": "GetDocument",
+          "Service": "ssm"
+        },
+        {
           "Name": "PassRole",
           "Context": {
             "iam:PassedToService": [

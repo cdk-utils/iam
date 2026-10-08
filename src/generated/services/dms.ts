@@ -1263,6 +1263,7 @@ export class DmsOperations {
 	static readonly CreateInstanceProfile: string[] = [
 		"dms:AddTagsToResource",
 		"dms:CreateInstanceProfile",
+		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateMigrationProject API call. */
 	static readonly CreateMigrationProject: string[] = [
@@ -1555,6 +1556,7 @@ export class DmsOperations {
 	];
 	/** IAM actions required for the ModifyInstanceProfile API call. */
 	static readonly ModifyInstanceProfile: string[] = [
+		"iam:PassRole",
 		"dms:UpdateInstanceProfile",
 	];
 	/** IAM actions required for the ModifyMigrationProject API call. */
