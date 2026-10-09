@@ -2997,6 +2997,7 @@ new cloudwatch.CloudWatchActions()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.PutMetricData">PutMetricData</a></code> | <code>string</code> | [Write] cloudwatch:PutMetricData. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.PutMetricStream">PutMetricStream</a></code> | <code>string</code> | [Write] cloudwatch:PutMetricStream. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.PutPipelineRule">PutPipelineRule</a></code> | <code>string</code> | [Write] cloudwatch:PutPipelineRule. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.PutRecords">PutRecords</a></code> | <code>string</code> | [Write] cloudwatch:PutRecords. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.QueryTraces">QueryTraces</a></code> | <code>string</code> | [Write] cloudwatch:QueryTraces. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.SearchPrincipals">SearchPrincipals</a></code> | <code>string</code> | [Write] cloudwatch:SearchPrincipals. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
@@ -4614,6 +4615,18 @@ public readonly PutPipelineRule: string;
 
 ---
 
+##### `PutRecords`<sup>Required</sup> <a name="PutRecords" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.PutRecords"></a>
+
+```typescript
+public readonly PutRecords: string;
+```
+
+- *Type:* string
+
+[Write] cloudwatch:PutRecords.
+
+---
+
 ##### `QueryTraces`<sup>Required</sup> <a name="QueryTraces" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.QueryTraces"></a>
 
 ```typescript
@@ -5229,6 +5242,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.PutMetricAlarmConditionKeys">PutMetricAlarmConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutMetricAlarm action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.PutMetricDataConditionKeys">PutMetricDataConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutMetricData action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.PutMetricStreamConditionKeys">PutMetricStreamConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutMetricStream action. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.PutRecordsConditionKeys">PutRecordsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutRecords action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.REQUEST_INSIGHT_RULE_LOG_GROUPS">REQUEST_INSIGHT_RULE_LOG_GROUPS</a></code> | <code>string</code> | Condition key: cloudwatch:requestInsightRuleLogGroups (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.REQUEST_MANAGED_RESOURCE_AR_NS">REQUEST_MANAGED_RESOURCE_AR_NS</a></code> | <code>string</code> | Condition key: cloudwatch:requestManagedResourceARNs (ArrayOfARN). |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.RESOURCE_ARN">RESOURCE_ARN</a></code> | <code>string</code> | Condition key: cloudwatch:ResourceArn (ARN). |
@@ -6114,6 +6128,18 @@ public readonly PutMetricStreamConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the PutMetricStream action.
+
+---
+
+##### `PutRecordsConditionKeys`<sup>Required</sup> <a name="PutRecordsConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.PutRecordsConditionKeys"></a>
+
+```typescript
+public readonly PutRecordsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the PutRecords action.
 
 ---
 

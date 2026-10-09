@@ -3768,6 +3768,8 @@ new glue.GlueActions()
 | <code><a href="#@cdk_utils/iam.glue.GlueActions.property.actionGetStatement">actionGetStatement</a></code> | <code>string</code> | [Read] glue:GetStatement. |
 | <code><a href="#@cdk_utils/iam.glue.GlueActions.property.actionGetStorage">actionGetStorage</a></code> | <code>string</code> | [PermissionManagement] glue:GetStorage. |
 | <code><a href="#@cdk_utils/iam.glue.GlueActions.property.actionGetStorageUnit">actionGetStorageUnit</a></code> | <code>string</code> | [PermissionManagement] glue:GetStorageUnit. |
+| <code><a href="#@cdk_utils/iam.glue.GlueActions.property.actionGetSystemLogsForJobRun">actionGetSystemLogsForJobRun</a></code> | <code>string</code> | [Read] glue:GetSystemLogsForJobRun. |
+| <code><a href="#@cdk_utils/iam.glue.GlueActions.property.actionGetSystemLogsForSession">actionGetSystemLogsForSession</a></code> | <code>string</code> | [Read] glue:GetSystemLogsForSession. |
 | <code><a href="#@cdk_utils/iam.glue.GlueActions.property.actionGetTable">actionGetTable</a></code> | <code>string</code> | [Read] glue:GetTable. |
 | <code><a href="#@cdk_utils/iam.glue.GlueActions.property.actionGetTableOptimizer">actionGetTableOptimizer</a></code> | <code>string</code> | [Read] glue:GetTableOptimizer. |
 | <code><a href="#@cdk_utils/iam.glue.GlueActions.property.actionGetTables">actionGetTables</a></code> | <code>string</code> | [Read] glue:GetTables. |
@@ -4991,6 +4993,30 @@ public readonly actionGetStorageUnit: string;
 - *Type:* string
 
 [PermissionManagement] glue:GetStorageUnit.
+
+---
+
+##### `actionGetSystemLogsForJobRun`<sup>Required</sup> <a name="actionGetSystemLogsForJobRun" id="@cdk_utils/iam.glue.GlueActions.property.actionGetSystemLogsForJobRun"></a>
+
+```typescript
+public readonly actionGetSystemLogsForJobRun: string;
+```
+
+- *Type:* string
+
+[Read] glue:GetSystemLogsForJobRun.
+
+---
+
+##### `actionGetSystemLogsForSession`<sup>Required</sup> <a name="actionGetSystemLogsForSession" id="@cdk_utils/iam.glue.GlueActions.property.actionGetSystemLogsForSession"></a>
+
+```typescript
+public readonly actionGetSystemLogsForSession: string;
+```
+
+- *Type:* string
+
+[Read] glue:GetSystemLogsForSession.
 
 ---
 
@@ -9299,6 +9325,8 @@ new glue.GlueOperations()
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetSession">opGetSession</a></code> | <code>string[]</code> | IAM actions required for the GetSession API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetSessionEndpoint">opGetSessionEndpoint</a></code> | <code>string[]</code> | IAM actions required for the GetSessionEndpoint API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetStatement">opGetStatement</a></code> | <code>string[]</code> | IAM actions required for the GetStatement API call. |
+| <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetSystemLogsForJobRun">opGetSystemLogsForJobRun</a></code> | <code>string[]</code> | IAM actions required for the GetSystemLogsForJobRun API call. |
+| <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetSystemLogsForSession">opGetSystemLogsForSession</a></code> | <code>string[]</code> | IAM actions required for the GetSystemLogsForSession API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetTable">opGetTable</a></code> | <code>string[]</code> | IAM actions required for the GetTable API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetTableOptimizer">opGetTableOptimizer</a></code> | <code>string[]</code> | IAM actions required for the GetTableOptimizer API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetTables">opGetTables</a></code> | <code>string[]</code> | IAM actions required for the GetTables API call. |
@@ -11865,6 +11893,30 @@ public readonly opGetStatement: string[];
 - *Type:* string[]
 
 IAM actions required for the GetStatement API call.
+
+---
+
+##### `opGetSystemLogsForJobRun`<sup>Required</sup> <a name="opGetSystemLogsForJobRun" id="@cdk_utils/iam.glue.GlueOperations.property.opGetSystemLogsForJobRun"></a>
+
+```typescript
+public readonly opGetSystemLogsForJobRun: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetSystemLogsForJobRun API call.
+
+---
+
+##### `opGetSystemLogsForSession`<sup>Required</sup> <a name="opGetSystemLogsForSession" id="@cdk_utils/iam.glue.GlueOperations.property.opGetSystemLogsForSession"></a>
+
+```typescript
+public readonly opGetSystemLogsForSession: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetSystemLogsForSession API call.
 
 ---
 

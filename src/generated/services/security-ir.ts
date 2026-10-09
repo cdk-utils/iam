@@ -271,6 +271,10 @@ export class SecurityIrOperations {
 	static readonly opGetCaseAttachmentUploadUrl: string[] = [
 		"security-ir:GetCaseAttachmentUploadUrl",
 	];
+	/** IAM actions required for the GetFindingMetrics API call. */
+	static readonly opGetFindingMetrics: string[] = [
+		"security-ir:GetFindingMetrics",
+	];
 	/** IAM actions required for the GetMembership API call. */
 	static readonly opGetMembership: string[] = ["security-ir:GetMembership"];
 	/** IAM actions required for the ListCaseEdits API call. */

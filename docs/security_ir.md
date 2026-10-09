@@ -958,6 +958,7 @@ new security_ir.SecurityIrOperations()
 | <code><a href="#@cdk_utils/iam.security_ir.SecurityIrOperations.property.opGetCase">opGetCase</a></code> | <code>string[]</code> | IAM actions required for the GetCase API call. |
 | <code><a href="#@cdk_utils/iam.security_ir.SecurityIrOperations.property.opGetCaseAttachmentDownloadUrl">opGetCaseAttachmentDownloadUrl</a></code> | <code>string[]</code> | IAM actions required for the GetCaseAttachmentDownloadUrl API call. |
 | <code><a href="#@cdk_utils/iam.security_ir.SecurityIrOperations.property.opGetCaseAttachmentUploadUrl">opGetCaseAttachmentUploadUrl</a></code> | <code>string[]</code> | IAM actions required for the GetCaseAttachmentUploadUrl API call. |
+| <code><a href="#@cdk_utils/iam.security_ir.SecurityIrOperations.property.opGetFindingMetrics">opGetFindingMetrics</a></code> | <code>string[]</code> | IAM actions required for the GetFindingMetrics API call. |
 | <code><a href="#@cdk_utils/iam.security_ir.SecurityIrOperations.property.opGetMembership">opGetMembership</a></code> | <code>string[]</code> | IAM actions required for the GetMembership API call. |
 | <code><a href="#@cdk_utils/iam.security_ir.SecurityIrOperations.property.SendFeedback">SendFeedback</a></code> | <code>string[]</code> | IAM actions required for the SendFeedback API call. |
 | <code><a href="#@cdk_utils/iam.security_ir.SecurityIrOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
@@ -1147,6 +1148,18 @@ public readonly opGetCaseAttachmentUploadUrl: string[];
 - *Type:* string[]
 
 IAM actions required for the GetCaseAttachmentUploadUrl API call.
+
+---
+
+##### `opGetFindingMetrics`<sup>Required</sup> <a name="opGetFindingMetrics" id="@cdk_utils/iam.security_ir.SecurityIrOperations.property.opGetFindingMetrics"></a>
+
+```typescript
+public readonly opGetFindingMetrics: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetFindingMetrics API call.
 
 ---
 

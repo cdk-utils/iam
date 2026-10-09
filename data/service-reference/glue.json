@@ -3845,6 +3845,46 @@
       }
     },
     {
+      "Name": "GetSystemLogsForJobRun",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSystemLogsForSession",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "session"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "GetTable",
       "ActionConditionKeys": [
         "glue:FederatedAuthorizationSource",
@@ -9620,6 +9660,54 @@
         {
           "Name": "glue",
           "Method": "get_statement",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSystemLogsForJobRun",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDatabases",
+          "Service": "glue"
+        },
+        {
+          "Name": "GetSystemLogsForJobRun",
+          "Service": "glue"
+        },
+        {
+          "Name": "SearchTables",
+          "Service": "glue"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glue",
+          "Method": "get_system_logs_for_job_run",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSystemLogsForSession",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDatabases",
+          "Service": "glue"
+        },
+        {
+          "Name": "GetSystemLogsForSession",
+          "Service": "glue"
+        },
+        {
+          "Name": "SearchTables",
+          "Service": "glue"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glue",
+          "Method": "get_system_logs_for_session",
           "Package": "Boto3"
         }
       ]

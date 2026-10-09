@@ -66,6 +66,11 @@ export class BillingActions {
 	/** [List] billing:ListBusinessSupportSubscriptionHistory */
 	static readonly ListBusinessSupportSubscriptionHistory =
 		"billing:ListBusinessSupportSubscriptionHistory";
+	/** [Read] billing:ListCreditEntitlementPeriods */
+	static readonly ListCreditEntitlementPeriods =
+		"billing:ListCreditEntitlementPeriods";
+	/** [Read] billing:ListCreditEntitlements */
+	static readonly ListCreditEntitlements = "billing:ListCreditEntitlements";
 	/** [List] billing:ListEnterpriseSupportLinkedAccountCharges */
 	static readonly ListEnterpriseSupportLinkedAccountCharges =
 		"billing:ListEnterpriseSupportLinkedAccountCharges";
@@ -80,8 +85,12 @@ export class BillingActions {
 	static readonly PutResourcePolicy = "billing:PutResourcePolicy";
 	/** [Write] billing:RedeemCredits */
 	static readonly RedeemCredits = "billing:RedeemCredits";
+	/** [Write] billing:SplitCredit */
+	static readonly SplitCredit = "billing:SplitCredit";
 	/** [Tagging] billing:TagResource */
 	static readonly TagResource = "billing:TagResource";
+	/** [Write] billing:TransferCredit */
+	static readonly TransferCredit = "billing:TransferCredit";
 	/** [Tagging] billing:UntagResource */
 	static readonly UntagResource = "billing:UntagResource";
 	/** [Write] billing:UpdateBillingPreferences */
@@ -110,6 +119,8 @@ export class BillingActions {
 		BillingActions.actionGetIAMAccessPreference,
 		BillingActions.actionGetSellerOfRecord,
 		BillingActions.ListBillingViews,
+		BillingActions.ListCreditEntitlementPeriods,
+		BillingActions.ListCreditEntitlements,
 		BillingActions.ListTagsForResource,
 		BillingActions.UseSourceView,
 	];
@@ -121,6 +132,8 @@ export class BillingActions {
 		BillingActions.DisassociateSourceViews,
 		BillingActions.PutContractInformation,
 		BillingActions.RedeemCredits,
+		BillingActions.SplitCredit,
+		BillingActions.TransferCredit,
 		BillingActions.UpdateBillingPreferences,
 		BillingActions.UpdateBillingView,
 		BillingActions.UpdateIAMAccessPreference,

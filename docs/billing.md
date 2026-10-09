@@ -177,6 +177,8 @@ new billing.BillingActions()
 | <code><a href="#@cdk_utils/iam.billing.BillingActions.property.ListBillingViewSegments">ListBillingViewSegments</a></code> | <code>string</code> | [List] billing:ListBillingViewSegments. |
 | <code><a href="#@cdk_utils/iam.billing.BillingActions.property.ListBusinessSupportAccountCharges">ListBusinessSupportAccountCharges</a></code> | <code>string</code> | [List] billing:ListBusinessSupportAccountCharges. |
 | <code><a href="#@cdk_utils/iam.billing.BillingActions.property.ListBusinessSupportSubscriptionHistory">ListBusinessSupportSubscriptionHistory</a></code> | <code>string</code> | [List] billing:ListBusinessSupportSubscriptionHistory. |
+| <code><a href="#@cdk_utils/iam.billing.BillingActions.property.ListCreditEntitlementPeriods">ListCreditEntitlementPeriods</a></code> | <code>string</code> | [Read] billing:ListCreditEntitlementPeriods. |
+| <code><a href="#@cdk_utils/iam.billing.BillingActions.property.ListCreditEntitlements">ListCreditEntitlements</a></code> | <code>string</code> | [Read] billing:ListCreditEntitlements. |
 | <code><a href="#@cdk_utils/iam.billing.BillingActions.property.ListEnterpriseSupportLinkedAccountCharges">ListEnterpriseSupportLinkedAccountCharges</a></code> | <code>string</code> | [List] billing:ListEnterpriseSupportLinkedAccountCharges. |
 | <code><a href="#@cdk_utils/iam.billing.BillingActions.property.ListSourceViewsForBillingView">ListSourceViewsForBillingView</a></code> | <code>string</code> | [List] billing:ListSourceViewsForBillingView. |
 | <code><a href="#@cdk_utils/iam.billing.BillingActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [Read] billing:ListTagsForResource. |
@@ -184,7 +186,9 @@ new billing.BillingActions()
 | <code><a href="#@cdk_utils/iam.billing.BillingActions.property.PutResourcePolicy">PutResourcePolicy</a></code> | <code>string</code> | [PermissionManagement] billing:PutResourcePolicy. |
 | <code><a href="#@cdk_utils/iam.billing.BillingActions.property.RedeemCredits">RedeemCredits</a></code> | <code>string</code> | [Write] billing:RedeemCredits. |
 | <code><a href="#@cdk_utils/iam.billing.BillingActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
+| <code><a href="#@cdk_utils/iam.billing.BillingActions.property.SplitCredit">SplitCredit</a></code> | <code>string</code> | [Write] billing:SplitCredit. |
 | <code><a href="#@cdk_utils/iam.billing.BillingActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] billing:TagResource. |
+| <code><a href="#@cdk_utils/iam.billing.BillingActions.property.TransferCredit">TransferCredit</a></code> | <code>string</code> | [Write] billing:TransferCredit. |
 | <code><a href="#@cdk_utils/iam.billing.BillingActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] billing:UntagResource. |
 | <code><a href="#@cdk_utils/iam.billing.BillingActions.property.UpdateBillingPreferences">UpdateBillingPreferences</a></code> | <code>string</code> | [Write] billing:UpdateBillingPreferences. |
 | <code><a href="#@cdk_utils/iam.billing.BillingActions.property.UpdateBillingView">UpdateBillingView</a></code> | <code>string</code> | [Write] billing:UpdateBillingView. |
@@ -529,6 +533,30 @@ public readonly ListBusinessSupportSubscriptionHistory: string;
 
 ---
 
+##### `ListCreditEntitlementPeriods`<sup>Required</sup> <a name="ListCreditEntitlementPeriods" id="@cdk_utils/iam.billing.BillingActions.property.ListCreditEntitlementPeriods"></a>
+
+```typescript
+public readonly ListCreditEntitlementPeriods: string;
+```
+
+- *Type:* string
+
+[Read] billing:ListCreditEntitlementPeriods.
+
+---
+
+##### `ListCreditEntitlements`<sup>Required</sup> <a name="ListCreditEntitlements" id="@cdk_utils/iam.billing.BillingActions.property.ListCreditEntitlements"></a>
+
+```typescript
+public readonly ListCreditEntitlements: string;
+```
+
+- *Type:* string
+
+[Read] billing:ListCreditEntitlements.
+
+---
+
 ##### `ListEnterpriseSupportLinkedAccountCharges`<sup>Required</sup> <a name="ListEnterpriseSupportLinkedAccountCharges" id="@cdk_utils/iam.billing.BillingActions.property.ListEnterpriseSupportLinkedAccountCharges"></a>
 
 ```typescript
@@ -613,6 +641,18 @@ The IAM service prefix.
 
 ---
 
+##### `SplitCredit`<sup>Required</sup> <a name="SplitCredit" id="@cdk_utils/iam.billing.BillingActions.property.SplitCredit"></a>
+
+```typescript
+public readonly SplitCredit: string;
+```
+
+- *Type:* string
+
+[Write] billing:SplitCredit.
+
+---
+
 ##### `TagResource`<sup>Required</sup> <a name="TagResource" id="@cdk_utils/iam.billing.BillingActions.property.TagResource"></a>
 
 ```typescript
@@ -622,6 +662,18 @@ public readonly TagResource: string;
 - *Type:* string
 
 [Tagging] billing:TagResource.
+
+---
+
+##### `TransferCredit`<sup>Required</sup> <a name="TransferCredit" id="@cdk_utils/iam.billing.BillingActions.property.TransferCredit"></a>
+
+```typescript
+public readonly TransferCredit: string;
+```
+
+- *Type:* string
+
+[Write] billing:TransferCredit.
 
 ---
 
