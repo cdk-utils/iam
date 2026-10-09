@@ -696,6 +696,22 @@
       ]
     },
     {
+      "Name": "GetFindingMetrics",
+      "AuthorizedActions": [
+        {
+          "Name": "GetFindingMetrics",
+          "Service": "security-ir"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "security-ir",
+          "Method": "get_finding_metrics",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetMembership",
       "AuthorizedActions": [
         {

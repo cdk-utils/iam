@@ -21,12 +21,16 @@ export class AgentaccessMcpActions {
 	static readonly DoubleClick = "agentaccess-mcp:DoubleClick";
 	/** [Read] agentaccess-mcp:GetScreenshot */
 	static readonly actionGetScreenshot = "agentaccess-mcp:GetScreenshot";
+	/** [Read] agentaccess-mcp:GetSessionInfo */
+	static readonly actionGetSessionInfo = "agentaccess-mcp:GetSessionInfo";
 	/** [Write] agentaccess-mcp:HoldKey */
 	static readonly HoldKey = "agentaccess-mcp:HoldKey";
 	/** [Write] agentaccess-mcp:InvokeMcp */
 	static readonly InvokeMcp = "agentaccess-mcp:InvokeMcp";
 	/** [Write] agentaccess-mcp:KeyPress */
 	static readonly KeyPress = "agentaccess-mcp:KeyPress";
+	/** [Write] agentaccess-mcp:LaunchApplication */
+	static readonly LaunchApplication = "agentaccess-mcp:LaunchApplication";
 	/** [Write] agentaccess-mcp:LeftClick */
 	static readonly LeftClick = "agentaccess-mcp:LeftClick";
 	/** [Write] agentaccess-mcp:LeftClickDrag */
@@ -43,6 +47,8 @@ export class AgentaccessMcpActions {
 	static readonly RightClick = "agentaccess-mcp:RightClick";
 	/** [Write] agentaccess-mcp:Scroll */
 	static readonly Scroll = "agentaccess-mcp:Scroll";
+	/** [Write] agentaccess-mcp:ToggleAppSwitcher */
+	static readonly ToggleAppSwitcher = "agentaccess-mcp:ToggleAppSwitcher";
 	/** [Write] agentaccess-mcp:TripleClick */
 	static readonly TripleClick = "agentaccess-mcp:TripleClick";
 	/** [Write] agentaccess-mcp:TypeText */
@@ -52,6 +58,7 @@ export class AgentaccessMcpActions {
 	static readonly AllReadActions: string[] = [
 		AgentaccessMcpActions.CheckConnectionStatus,
 		AgentaccessMcpActions.actionGetScreenshot,
+		AgentaccessMcpActions.actionGetSessionInfo,
 	];
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
@@ -60,6 +67,7 @@ export class AgentaccessMcpActions {
 		AgentaccessMcpActions.HoldKey,
 		AgentaccessMcpActions.InvokeMcp,
 		AgentaccessMcpActions.KeyPress,
+		AgentaccessMcpActions.LaunchApplication,
 		AgentaccessMcpActions.LeftClick,
 		AgentaccessMcpActions.LeftClickDrag,
 		AgentaccessMcpActions.LeftMouseDown,
@@ -68,6 +76,7 @@ export class AgentaccessMcpActions {
 		AgentaccessMcpActions.MovePointer,
 		AgentaccessMcpActions.RightClick,
 		AgentaccessMcpActions.Scroll,
+		AgentaccessMcpActions.ToggleAppSwitcher,
 		AgentaccessMcpActions.TripleClick,
 		AgentaccessMcpActions.TypeText,
 	];
@@ -99,6 +108,10 @@ export class AgentaccessMcpConditions {
 	static readonly actionGetScreenshotConditionKeys: string[] = [
 		"agentaccess-mcp:StackArn",
 	];
+	/** Condition keys applicable to the GetSessionInfo action. */
+	static readonly actionGetSessionInfoConditionKeys: string[] = [
+		"agentaccess-mcp:StackArn",
+	];
 	/** Condition keys applicable to the HoldKey action. */
 	static readonly HoldKeyConditionKeys: string[] = ["agentaccess-mcp:StackArn"];
 	/** Condition keys applicable to the InvokeMcp action. */
@@ -107,6 +120,10 @@ export class AgentaccessMcpConditions {
 	];
 	/** Condition keys applicable to the KeyPress action. */
 	static readonly KeyPressConditionKeys: string[] = [
+		"agentaccess-mcp:StackArn",
+	];
+	/** Condition keys applicable to the LaunchApplication action. */
+	static readonly LaunchApplicationConditionKeys: string[] = [
 		"agentaccess-mcp:StackArn",
 	];
 	/** Condition keys applicable to the LeftClick action. */
@@ -139,6 +156,10 @@ export class AgentaccessMcpConditions {
 	];
 	/** Condition keys applicable to the Scroll action. */
 	static readonly ScrollConditionKeys: string[] = ["agentaccess-mcp:StackArn"];
+	/** Condition keys applicable to the ToggleAppSwitcher action. */
+	static readonly ToggleAppSwitcherConditionKeys: string[] = [
+		"agentaccess-mcp:StackArn",
+	];
 	/** Condition keys applicable to the TripleClick action. */
 	static readonly TripleClickConditionKeys: string[] = [
 		"agentaccess-mcp:StackArn",

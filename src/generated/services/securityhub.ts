@@ -55,6 +55,8 @@ export class SecurityHubActions {
 	/** [Write] securityhub:BatchUpdateStandardsControlAssociations */
 	static readonly BatchUpdateStandardsControlAssociations =
 		"securityhub:BatchUpdateStandardsControlAssociations";
+	/** [Write] securityhub:CancelExportJobV2 */
+	static readonly CancelExportJobV2 = "securityhub:CancelExportJobV2";
 	/** [Write] securityhub:ConnectorRegistrationsV2 */
 	static readonly ConnectorRegistrationsV2 =
 		"securityhub:ConnectorRegistrationsV2";
@@ -189,6 +191,8 @@ export class SecurityHubActions {
 		"securityhub:GetCoverageStatisticsV2";
 	/** [List] securityhub:GetEnabledStandards */
 	static readonly actionGetEnabledStandards = "securityhub:GetEnabledStandards";
+	/** [Read] securityhub:GetExportJobV2 */
+	static readonly actionGetExportJobV2 = "securityhub:GetExportJobV2";
 	/** [Read] securityhub:GetFindingAggregator */
 	static readonly actionGetFindingAggregator =
 		"securityhub:GetFindingAggregator";
@@ -261,6 +265,8 @@ export class SecurityHubActions {
 	/** [List] securityhub:ListEnabledProductsForImport */
 	static readonly ListEnabledProductsForImport =
 		"securityhub:ListEnabledProductsForImport";
+	/** [List] securityhub:ListExportJobsV2 */
+	static readonly ListExportJobsV2 = "securityhub:ListExportJobsV2";
 	/** [List] securityhub:ListExposuresByRemediationV2 */
 	static readonly ListExposuresByRemediationV2 =
 		"securityhub:ListExposuresByRemediationV2";
@@ -294,6 +300,8 @@ export class SecurityHubActions {
 	/** [Write] securityhub:StartConfigurationPolicyDisassociation */
 	static readonly StartConfigurationPolicyDisassociation =
 		"securityhub:StartConfigurationPolicyDisassociation";
+	/** [Write] securityhub:StartExportJobV2 */
+	static readonly StartExportJobV2 = "securityhub:StartExportJobV2";
 	/** [Tagging] securityhub:TagResource */
 	static readonly TagResource = "securityhub:TagResource";
 	/** [Tagging] securityhub:UntagResource */
@@ -355,6 +363,7 @@ export class SecurityHubActions {
 		SecurityHubActions.actionGetConnectorV2,
 		SecurityHubActions.actionGetControlFindingSummary,
 		SecurityHubActions.actionGetCoverageStatisticsV2,
+		SecurityHubActions.actionGetExportJobV2,
 		SecurityHubActions.actionGetFindingAggregator,
 		SecurityHubActions.actionGetFindingHistory,
 		SecurityHubActions.actionGetFindings,
@@ -390,6 +399,7 @@ export class SecurityHubActions {
 		SecurityHubActions.BatchUpdateAutomationRules,
 		SecurityHubActions.BatchUpdateFindings,
 		SecurityHubActions.BatchUpdateStandardsControlAssociations,
+		SecurityHubActions.CancelExportJobV2,
 		SecurityHubActions.ConnectorRegistrationsV2,
 		SecurityHubActions.CreateActionTarget,
 		SecurityHubActions.CreateAggregatorV2,
@@ -430,6 +440,7 @@ export class SecurityHubActions {
 		SecurityHubActions.InviteMembers,
 		SecurityHubActions.StartConfigurationPolicyAssociation,
 		SecurityHubActions.StartConfigurationPolicyDisassociation,
+		SecurityHubActions.StartExportJobV2,
 		SecurityHubActions.UpdateActionTarget,
 		SecurityHubActions.UpdateAggregatorV2,
 		SecurityHubActions.UpdateAutomationRuleV2,
@@ -457,6 +468,7 @@ export class SecurityHubActions {
 		SecurityHubActions.ListConnectors,
 		SecurityHubActions.ListConnectorsV2,
 		SecurityHubActions.ListEnabledProductsForImport,
+		SecurityHubActions.ListExportJobsV2,
 		SecurityHubActions.ListExposuresByRemediationV2,
 		SecurityHubActions.ListFindingAggregators,
 		SecurityHubActions.ListFreeTrialStatusesV2,
@@ -1168,6 +1180,10 @@ export class SecurityHubOperations {
 		"securityhub:BatchUpdateStandardsControlAssociations",
 		"securityhub:UpdateStandardsControl",
 	];
+	/** IAM actions required for the CancelExportJobV2 API call. */
+	static readonly CancelExportJobV2: string[] = [
+		"securityhub:CancelExportJobV2",
+	];
 	/** IAM actions required for the CreateActionTarget API call. */
 	static readonly CreateActionTarget: string[] = [
 		"securityhub:CreateActionTarget",
@@ -1362,6 +1378,8 @@ export class SecurityHubOperations {
 	static readonly opGetEnabledStandards: string[] = [
 		"securityhub:GetEnabledStandards",
 	];
+	/** IAM actions required for the GetExportJobV2 API call. */
+	static readonly opGetExportJobV2: string[] = ["securityhub:GetExportJobV2"];
 	/** IAM actions required for the GetFindingAggregator API call. */
 	static readonly opGetFindingAggregator: string[] = [
 		"securityhub:GetFindingAggregator",
@@ -1450,6 +1468,8 @@ export class SecurityHubOperations {
 	static readonly ListEnabledProductsForImport: string[] = [
 		"securityhub:ListEnabledProductsForImport",
 	];
+	/** IAM actions required for the ListExportJobsV2 API call. */
+	static readonly ListExportJobsV2: string[] = ["securityhub:ListExportJobsV2"];
 	/** IAM actions required for the ListExposuresByRemediationV2 API call. */
 	static readonly ListExposuresByRemediationV2: string[] = [
 		"securityhub:ListExposuresByRemediationV2",
@@ -1492,6 +1512,11 @@ export class SecurityHubOperations {
 	/** IAM actions required for the StartConfigurationPolicyDisassociation API call. */
 	static readonly StartConfigurationPolicyDisassociation: string[] = [
 		"securityhub:StartConfigurationPolicyDisassociation",
+	];
+	/** IAM actions required for the StartExportJobV2 API call. */
+	static readonly StartExportJobV2: string[] = [
+		"securityhub:GetFindings",
+		"securityhub:StartExportJobV2",
 	];
 	/** IAM actions required for the TagResource API call. */
 	static readonly TagResource: string[] = ["securityhub:TagResource"];

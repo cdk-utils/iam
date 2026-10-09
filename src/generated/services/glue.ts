@@ -400,6 +400,11 @@ export class GlueActions {
 	static readonly actionGetStorage = "glue:GetStorage";
 	/** [PermissionManagement] glue:GetStorageUnit */
 	static readonly actionGetStorageUnit = "glue:GetStorageUnit";
+	/** [Read] glue:GetSystemLogsForJobRun */
+	static readonly actionGetSystemLogsForJobRun = "glue:GetSystemLogsForJobRun";
+	/** [Read] glue:GetSystemLogsForSession */
+	static readonly actionGetSystemLogsForSession =
+		"glue:GetSystemLogsForSession";
 	/** [Read] glue:GetTable */
 	static readonly actionGetTable = "glue:GetTable";
 	/** [Read] glue:GetTableOptimizer */
@@ -760,6 +765,8 @@ export class GlueActions {
 		GlueActions.actionGetSession,
 		GlueActions.actionGetSessionEndpoint,
 		GlueActions.actionGetStatement,
+		GlueActions.actionGetSystemLogsForJobRun,
+		GlueActions.actionGetSystemLogsForSession,
 		GlueActions.actionGetTable,
 		GlueActions.actionGetTableOptimizer,
 		GlueActions.actionGetTableVersion,
@@ -3047,6 +3054,18 @@ export class GlueOperations {
 	static readonly opGetSessionEndpoint: string[] = ["glue:GetSessionEndpoint"];
 	/** IAM actions required for the GetStatement API call. */
 	static readonly opGetStatement: string[] = ["glue:GetStatement"];
+	/** IAM actions required for the GetSystemLogsForJobRun API call. */
+	static readonly opGetSystemLogsForJobRun: string[] = [
+		"glue:GetDatabases",
+		"glue:GetSystemLogsForJobRun",
+		"glue:SearchTables",
+	];
+	/** IAM actions required for the GetSystemLogsForSession API call. */
+	static readonly opGetSystemLogsForSession: string[] = [
+		"glue:GetDatabases",
+		"glue:GetSystemLogsForSession",
+		"glue:SearchTables",
+	];
 	/** IAM actions required for the GetTable API call. */
 	static readonly opGetTable: string[] = ["athena:GetTable", "glue:GetTable"];
 	/** IAM actions required for the GetTableOptimizer API call. */

@@ -1522,6 +1522,7 @@ new securityhub.SecurityHubActions()
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.actionGetControlFindingSummary">actionGetControlFindingSummary</a></code> | <code>string</code> | [Read] securityhub:GetControlFindingSummary. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.actionGetCoverageStatisticsV2">actionGetCoverageStatisticsV2</a></code> | <code>string</code> | [Read] securityhub:GetCoverageStatisticsV2. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.actionGetEnabledStandards">actionGetEnabledStandards</a></code> | <code>string</code> | [List] securityhub:GetEnabledStandards. |
+| <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.actionGetExportJobV2">actionGetExportJobV2</a></code> | <code>string</code> | [Read] securityhub:GetExportJobV2. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.actionGetFindingAggregator">actionGetFindingAggregator</a></code> | <code>string</code> | [Read] securityhub:GetFindingAggregator. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.actionGetFindingHistory">actionGetFindingHistory</a></code> | <code>string</code> | [Read] securityhub:GetFindingHistory. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.actionGetFindings">actionGetFindings</a></code> | <code>string</code> | [Read] securityhub:GetFindings. |
@@ -1561,6 +1562,7 @@ new securityhub.SecurityHubActions()
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.BatchUpdateAutomationRules">BatchUpdateAutomationRules</a></code> | <code>string</code> | [Write] securityhub:BatchUpdateAutomationRules. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.BatchUpdateFindings">BatchUpdateFindings</a></code> | <code>string</code> | [Write] securityhub:BatchUpdateFindings. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.BatchUpdateStandardsControlAssociations">BatchUpdateStandardsControlAssociations</a></code> | <code>string</code> | [Write] securityhub:BatchUpdateStandardsControlAssociations. |
+| <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.CancelExportJobV2">CancelExportJobV2</a></code> | <code>string</code> | [Write] securityhub:CancelExportJobV2. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.ConnectorRegistrationsV2">ConnectorRegistrationsV2</a></code> | <code>string</code> | [Write] securityhub:ConnectorRegistrationsV2. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.CreateActionTarget">CreateActionTarget</a></code> | <code>string</code> | [Write] securityhub:CreateActionTarget. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.CreateAggregatorV2">CreateAggregatorV2</a></code> | <code>string</code> | [Write] securityhub:CreateAggregatorV2. |
@@ -1617,6 +1619,7 @@ new securityhub.SecurityHubActions()
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.ListConnectorsV2">ListConnectorsV2</a></code> | <code>string</code> | [List] securityhub:ListConnectorsV2. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.ListControlEvaluationSummaries">ListControlEvaluationSummaries</a></code> | <code>string</code> | [Read] securityhub:ListControlEvaluationSummaries. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.ListEnabledProductsForImport">ListEnabledProductsForImport</a></code> | <code>string</code> | [List] securityhub:ListEnabledProductsForImport. |
+| <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.ListExportJobsV2">ListExportJobsV2</a></code> | <code>string</code> | [List] securityhub:ListExportJobsV2. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.ListExposuresByRemediationV2">ListExposuresByRemediationV2</a></code> | <code>string</code> | [List] securityhub:ListExposuresByRemediationV2. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.ListFindingAggregators">ListFindingAggregators</a></code> | <code>string</code> | [List] securityhub:ListFindingAggregators. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.ListFreeTrialStatusesV2">ListFreeTrialStatusesV2</a></code> | <code>string</code> | [List] securityhub:ListFreeTrialStatusesV2. |
@@ -1631,6 +1634,7 @@ new securityhub.SecurityHubActions()
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.StartConfigurationPolicyAssociation">StartConfigurationPolicyAssociation</a></code> | <code>string</code> | [Write] securityhub:StartConfigurationPolicyAssociation. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.StartConfigurationPolicyDisassociation">StartConfigurationPolicyDisassociation</a></code> | <code>string</code> | [Write] securityhub:StartConfigurationPolicyDisassociation. |
+| <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.StartExportJobV2">StartExportJobV2</a></code> | <code>string</code> | [Write] securityhub:StartExportJobV2. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] securityhub:TagResource. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] securityhub:UntagResource. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.UpdateActionTarget">UpdateActionTarget</a></code> | <code>string</code> | [Write] securityhub:UpdateActionTarget. |
@@ -1802,6 +1806,18 @@ public readonly actionGetEnabledStandards: string;
 - *Type:* string
 
 [List] securityhub:GetEnabledStandards.
+
+---
+
+##### `actionGetExportJobV2`<sup>Required</sup> <a name="actionGetExportJobV2" id="@cdk_utils/iam.securityhub.SecurityHubActions.property.actionGetExportJobV2"></a>
+
+```typescript
+public readonly actionGetExportJobV2: string;
+```
+
+- *Type:* string
+
+[Read] securityhub:GetExportJobV2.
 
 ---
 
@@ -2270,6 +2286,18 @@ public readonly BatchUpdateStandardsControlAssociations: string;
 - *Type:* string
 
 [Write] securityhub:BatchUpdateStandardsControlAssociations.
+
+---
+
+##### `CancelExportJobV2`<sup>Required</sup> <a name="CancelExportJobV2" id="@cdk_utils/iam.securityhub.SecurityHubActions.property.CancelExportJobV2"></a>
+
+```typescript
+public readonly CancelExportJobV2: string;
+```
+
+- *Type:* string
+
+[Write] securityhub:CancelExportJobV2.
 
 ---
 
@@ -2945,6 +2973,18 @@ public readonly ListEnabledProductsForImport: string;
 
 ---
 
+##### `ListExportJobsV2`<sup>Required</sup> <a name="ListExportJobsV2" id="@cdk_utils/iam.securityhub.SecurityHubActions.property.ListExportJobsV2"></a>
+
+```typescript
+public readonly ListExportJobsV2: string;
+```
+
+- *Type:* string
+
+[List] securityhub:ListExportJobsV2.
+
+---
+
 ##### `ListExposuresByRemediationV2`<sup>Required</sup> <a name="ListExposuresByRemediationV2" id="@cdk_utils/iam.securityhub.SecurityHubActions.property.ListExposuresByRemediationV2"></a>
 
 ```typescript
@@ -3110,6 +3150,18 @@ public readonly StartConfigurationPolicyDisassociation: string;
 - *Type:* string
 
 [Write] securityhub:StartConfigurationPolicyDisassociation.
+
+---
+
+##### `StartExportJobV2`<sup>Required</sup> <a name="StartExportJobV2" id="@cdk_utils/iam.securityhub.SecurityHubActions.property.StartExportJobV2"></a>
+
+```typescript
+public readonly StartExportJobV2: string;
+```
+
+- *Type:* string
+
+[Write] securityhub:StartExportJobV2.
 
 ---
 
@@ -3661,6 +3713,7 @@ new securityhub.SecurityHubOperations()
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.BatchUpdateFindings">BatchUpdateFindings</a></code> | <code>string[]</code> | IAM actions required for the BatchUpdateFindings API call. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.BatchUpdateFindingsV2">BatchUpdateFindingsV2</a></code> | <code>string[]</code> | IAM actions required for the BatchUpdateFindingsV2 API call. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.BatchUpdateStandardsControlAssociations">BatchUpdateStandardsControlAssociations</a></code> | <code>string[]</code> | IAM actions required for the BatchUpdateStandardsControlAssociations API call. |
+| <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.CancelExportJobV2">CancelExportJobV2</a></code> | <code>string[]</code> | IAM actions required for the CancelExportJobV2 API call. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.CreateActionTarget">CreateActionTarget</a></code> | <code>string[]</code> | IAM actions required for the CreateActionTarget API call. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.CreateAggregatorV2">CreateAggregatorV2</a></code> | <code>string[]</code> | IAM actions required for the CreateAggregatorV2 API call. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.CreateAutomationRule">CreateAutomationRule</a></code> | <code>string[]</code> | IAM actions required for the CreateAutomationRule API call. |
@@ -3714,6 +3767,7 @@ new securityhub.SecurityHubOperations()
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.ListConnectors">ListConnectors</a></code> | <code>string[]</code> | IAM actions required for the ListConnectors API call. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.ListConnectorsV2">ListConnectorsV2</a></code> | <code>string[]</code> | IAM actions required for the ListConnectorsV2 API call. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.ListEnabledProductsForImport">ListEnabledProductsForImport</a></code> | <code>string[]</code> | IAM actions required for the ListEnabledProductsForImport API call. |
+| <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.ListExportJobsV2">ListExportJobsV2</a></code> | <code>string[]</code> | IAM actions required for the ListExportJobsV2 API call. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.ListExposuresByRemediationV2">ListExposuresByRemediationV2</a></code> | <code>string[]</code> | IAM actions required for the ListExposuresByRemediationV2 API call. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.ListFindingAggregators">ListFindingAggregators</a></code> | <code>string[]</code> | IAM actions required for the ListFindingAggregators API call. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.ListFreeTrialStatusesV2">ListFreeTrialStatusesV2</a></code> | <code>string[]</code> | IAM actions required for the ListFreeTrialStatusesV2 API call. |
@@ -3731,6 +3785,7 @@ new securityhub.SecurityHubOperations()
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.opGetConnector">opGetConnector</a></code> | <code>string[]</code> | IAM actions required for the GetConnector API call. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.opGetConnectorV2">opGetConnectorV2</a></code> | <code>string[]</code> | IAM actions required for the GetConnectorV2 API call. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.opGetEnabledStandards">opGetEnabledStandards</a></code> | <code>string[]</code> | IAM actions required for the GetEnabledStandards API call. |
+| <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.opGetExportJobV2">opGetExportJobV2</a></code> | <code>string[]</code> | IAM actions required for the GetExportJobV2 API call. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.opGetFindingAggregator">opGetFindingAggregator</a></code> | <code>string[]</code> | IAM actions required for the GetFindingAggregator API call. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.opGetFindingHistory">opGetFindingHistory</a></code> | <code>string[]</code> | IAM actions required for the GetFindingHistory API call. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.opGetFindings">opGetFindings</a></code> | <code>string[]</code> | IAM actions required for the GetFindings API call. |
@@ -3751,6 +3806,7 @@ new securityhub.SecurityHubOperations()
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.RegisterConnectorV2">RegisterConnectorV2</a></code> | <code>string[]</code> | IAM actions required for the RegisterConnectorV2 API call. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.StartConfigurationPolicyAssociation">StartConfigurationPolicyAssociation</a></code> | <code>string[]</code> | IAM actions required for the StartConfigurationPolicyAssociation API call. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.StartConfigurationPolicyDisassociation">StartConfigurationPolicyDisassociation</a></code> | <code>string[]</code> | IAM actions required for the StartConfigurationPolicyDisassociation API call. |
+| <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.StartExportJobV2">StartExportJobV2</a></code> | <code>string[]</code> | IAM actions required for the StartExportJobV2 API call. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.UpdateActionTarget">UpdateActionTarget</a></code> | <code>string[]</code> | IAM actions required for the UpdateActionTarget API call. |
@@ -3934,6 +3990,18 @@ public readonly BatchUpdateStandardsControlAssociations: string[];
 - *Type:* string[]
 
 IAM actions required for the BatchUpdateStandardsControlAssociations API call.
+
+---
+
+##### `CancelExportJobV2`<sup>Required</sup> <a name="CancelExportJobV2" id="@cdk_utils/iam.securityhub.SecurityHubOperations.property.CancelExportJobV2"></a>
+
+```typescript
+public readonly CancelExportJobV2: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CancelExportJobV2 API call.
 
 ---
 
@@ -4573,6 +4641,18 @@ IAM actions required for the ListEnabledProductsForImport API call.
 
 ---
 
+##### `ListExportJobsV2`<sup>Required</sup> <a name="ListExportJobsV2" id="@cdk_utils/iam.securityhub.SecurityHubOperations.property.ListExportJobsV2"></a>
+
+```typescript
+public readonly ListExportJobsV2: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListExportJobsV2 API call.
+
+---
+
 ##### `ListExposuresByRemediationV2`<sup>Required</sup> <a name="ListExposuresByRemediationV2" id="@cdk_utils/iam.securityhub.SecurityHubOperations.property.ListExposuresByRemediationV2"></a>
 
 ```typescript
@@ -4774,6 +4854,18 @@ public readonly opGetEnabledStandards: string[];
 - *Type:* string[]
 
 IAM actions required for the GetEnabledStandards API call.
+
+---
+
+##### `opGetExportJobV2`<sup>Required</sup> <a name="opGetExportJobV2" id="@cdk_utils/iam.securityhub.SecurityHubOperations.property.opGetExportJobV2"></a>
+
+```typescript
+public readonly opGetExportJobV2: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetExportJobV2 API call.
 
 ---
 
@@ -5014,6 +5106,18 @@ public readonly StartConfigurationPolicyDisassociation: string[];
 - *Type:* string[]
 
 IAM actions required for the StartConfigurationPolicyDisassociation API call.
+
+---
+
+##### `StartExportJobV2`<sup>Required</sup> <a name="StartExportJobV2" id="@cdk_utils/iam.securityhub.SecurityHubOperations.property.StartExportJobV2"></a>
+
+```typescript
+public readonly StartExportJobV2: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StartExportJobV2 API call.
 
 ---
 

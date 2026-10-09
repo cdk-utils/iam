@@ -298,6 +298,8 @@ export class CloudWatchActions {
 	static readonly PutMetricStream = "cloudwatch:PutMetricStream";
 	/** [Write] cloudwatch:PutPipelineRule */
 	static readonly PutPipelineRule = "cloudwatch:PutPipelineRule";
+	/** [Write] cloudwatch:PutRecords */
+	static readonly PutRecords = "cloudwatch:PutRecords";
 	/** [Write] cloudwatch:QueryTraces */
 	static readonly QueryTraces = "cloudwatch:QueryTraces";
 	/** [Write] cloudwatch:SearchPrincipals */
@@ -465,6 +467,7 @@ export class CloudWatchActions {
 		CloudWatchActions.PutMetricData,
 		CloudWatchActions.PutMetricStream,
 		CloudWatchActions.PutPipelineRule,
+		CloudWatchActions.PutRecords,
 		CloudWatchActions.QueryTraces,
 		CloudWatchActions.SearchPrincipals,
 		CloudWatchActions.actionSetAlarmState,
@@ -2433,6 +2436,10 @@ export class CloudWatchConditions {
 	static readonly PutMetricStreamConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
+	];
+	/** Condition keys applicable to the PutRecords action. */
+	static readonly PutRecordsConditionKeys: string[] = [
+		"cloudwatch:HasAccessGrant",
 	];
 	/** Condition keys applicable to the SearchPrincipals action. */
 	static readonly SearchPrincipalsConditionKeys: string[] = [
