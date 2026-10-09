@@ -11,6 +11,7 @@
     "includes": [
       "src/**",
       "test/**",
+      "!src/generated",
       ".projenrc.ts",
       "projenrc/**",
       "!.gitattributes",
