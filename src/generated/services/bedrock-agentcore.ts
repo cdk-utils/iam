@@ -3225,6 +3225,7 @@ export class BedrockAgentcoreOperations {
 	/** IAM actions required for the CreatePaymentConnector API call. */
 	static readonly CreatePaymentConnector: string[] = [
 		"bedrock-agentcore:CreatePaymentConnector",
+		"bedrock-agentcore:GetPaymentCredentialProvider",
 	];
 	/** IAM actions required for the CreatePaymentCredentialProvider API call. */
 	static readonly CreatePaymentCredentialProvider: string[] = [
@@ -3977,6 +3978,7 @@ export class BedrockAgentcoreOperations {
 	];
 	/** IAM actions required for the UpdatePaymentConnector API call. */
 	static readonly UpdatePaymentConnector: string[] = [
+		"bedrock-agentcore:GetPaymentCredentialProvider",
 		"bedrock-agentcore:UpdatePaymentConnector",
 	];
 	/** IAM actions required for the UpdatePaymentCredentialProvider API call. */

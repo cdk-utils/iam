@@ -1676,6 +1676,7 @@ new deadline.DeadlineActions()
 | <code><a href="#@cdk_utils/iam.deadline.DeadlineActions.property.ListJobs">ListJobs</a></code> | <code>string</code> | [List] deadline:ListJobs. |
 | <code><a href="#@cdk_utils/iam.deadline.DeadlineActions.property.ListLicenseEndpoints">ListLicenseEndpoints</a></code> | <code>string</code> | [List] deadline:ListLicenseEndpoints. |
 | <code><a href="#@cdk_utils/iam.deadline.DeadlineActions.property.ListLimits">ListLimits</a></code> | <code>string</code> | [List] deadline:ListLimits. |
+| <code><a href="#@cdk_utils/iam.deadline.DeadlineActions.property.ListMemberships">ListMemberships</a></code> | <code>string</code> | [List] deadline:ListMemberships. |
 | <code><a href="#@cdk_utils/iam.deadline.DeadlineActions.property.ListMeteredProducts">ListMeteredProducts</a></code> | <code>string</code> | [List] deadline:ListMeteredProducts. |
 | <code><a href="#@cdk_utils/iam.deadline.DeadlineActions.property.ListMonitors">ListMonitors</a></code> | <code>string</code> | [List] deadline:ListMonitors. |
 | <code><a href="#@cdk_utils/iam.deadline.DeadlineActions.property.ListQueueEnvironments">ListQueueEnvironments</a></code> | <code>string</code> | [List] deadline:ListQueueEnvironments. |
@@ -2696,6 +2697,18 @@ public readonly ListLimits: string;
 
 ---
 
+##### `ListMemberships`<sup>Required</sup> <a name="ListMemberships" id="@cdk_utils/iam.deadline.DeadlineActions.property.ListMemberships"></a>
+
+```typescript
+public readonly ListMemberships: string;
+```
+
+- *Type:* string
+
+[List] deadline:ListMemberships.
+
+---
+
 ##### `ListMeteredProducts`<sup>Required</sup> <a name="ListMeteredProducts" id="@cdk_utils/iam.deadline.DeadlineActions.property.ListMeteredProducts"></a>
 
 ```typescript
@@ -3497,6 +3510,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.deadline.DeadlineConditions.property.ListFarmsConditionKeys">ListFarmsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListFarms action. |
 | <code><a href="#@cdk_utils/iam.deadline.DeadlineConditions.property.ListFleetsConditionKeys">ListFleetsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListFleets action. |
 | <code><a href="#@cdk_utils/iam.deadline.DeadlineConditions.property.ListJobsConditionKeys">ListJobsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListJobs action. |
+| <code><a href="#@cdk_utils/iam.deadline.DeadlineConditions.property.ListMembershipsConditionKeys">ListMembershipsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListMemberships action. |
 | <code><a href="#@cdk_utils/iam.deadline.DeadlineConditions.property.ListQueuesConditionKeys">ListQueuesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListQueues action. |
 | <code><a href="#@cdk_utils/iam.deadline.DeadlineConditions.property.ListTagsForResourceConditionKeys">ListTagsForResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListTagsForResource action. |
 | <code><a href="#@cdk_utils/iam.deadline.DeadlineConditions.property.MEMBERSHIP_LEVEL">MEMBERSHIP_LEVEL</a></code> | <code>string</code> | Condition key: deadline:MembershipLevel (String). |
@@ -3832,6 +3846,18 @@ Condition keys applicable to the ListJobs action.
 
 ---
 
+##### `ListMembershipsConditionKeys`<sup>Required</sup> <a name="ListMembershipsConditionKeys" id="@cdk_utils/iam.deadline.DeadlineConditions.property.ListMembershipsConditionKeys"></a>
+
+```typescript
+public readonly ListMembershipsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ListMemberships action.
+
+---
+
 ##### `ListQueuesConditionKeys`<sup>Required</sup> <a name="ListQueuesConditionKeys" id="@cdk_utils/iam.deadline.DeadlineConditions.property.ListQueuesConditionKeys"></a>
 
 ```typescript
@@ -4013,6 +4039,7 @@ new deadline.DeadlineOperations()
 | <code><a href="#@cdk_utils/iam.deadline.DeadlineOperations.property.ListJobs">ListJobs</a></code> | <code>string[]</code> | IAM actions required for the ListJobs API call. |
 | <code><a href="#@cdk_utils/iam.deadline.DeadlineOperations.property.ListLicenseEndpoints">ListLicenseEndpoints</a></code> | <code>string[]</code> | IAM actions required for the ListLicenseEndpoints API call. |
 | <code><a href="#@cdk_utils/iam.deadline.DeadlineOperations.property.ListLimits">ListLimits</a></code> | <code>string[]</code> | IAM actions required for the ListLimits API call. |
+| <code><a href="#@cdk_utils/iam.deadline.DeadlineOperations.property.ListMemberships">ListMemberships</a></code> | <code>string[]</code> | IAM actions required for the ListMemberships API call. |
 | <code><a href="#@cdk_utils/iam.deadline.DeadlineOperations.property.ListMeteredProducts">ListMeteredProducts</a></code> | <code>string[]</code> | IAM actions required for the ListMeteredProducts API call. |
 | <code><a href="#@cdk_utils/iam.deadline.DeadlineOperations.property.ListMonitors">ListMonitors</a></code> | <code>string[]</code> | IAM actions required for the ListMonitors API call. |
 | <code><a href="#@cdk_utils/iam.deadline.DeadlineOperations.property.ListQueueEnvironments">ListQueueEnvironments</a></code> | <code>string[]</code> | IAM actions required for the ListQueueEnvironments API call. |
@@ -4810,6 +4837,18 @@ public readonly ListLimits: string[];
 - *Type:* string[]
 
 IAM actions required for the ListLimits API call.
+
+---
+
+##### `ListMemberships`<sup>Required</sup> <a name="ListMemberships" id="@cdk_utils/iam.deadline.DeadlineOperations.property.ListMemberships"></a>
+
+```typescript
+public readonly ListMemberships: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListMemberships API call.
 
 ---
 

@@ -344,6 +344,7 @@ new account.AccountActions()
 | <code><a href="#@cdk_utils/iam.account.AccountActions.property.PutAccountName">PutAccountName</a></code> | <code>string</code> | [Write] account:PutAccountName. |
 | <code><a href="#@cdk_utils/iam.account.AccountActions.property.PutAlternateContact">PutAlternateContact</a></code> | <code>string</code> | [Write] account:PutAlternateContact. |
 | <code><a href="#@cdk_utils/iam.account.AccountActions.property.PutContactInformation">PutContactInformation</a></code> | <code>string</code> | [Write] account:PutContactInformation. |
+| <code><a href="#@cdk_utils/iam.account.AccountActions.property.ReopenAccount">ReopenAccount</a></code> | <code>string</code> | [Write] account:ReopenAccount. |
 | <code><a href="#@cdk_utils/iam.account.AccountActions.property.SendPhoneNumberVerification">SendPhoneNumberVerification</a></code> | <code>string</code> | [Write] account:SendPhoneNumberVerification. |
 | <code><a href="#@cdk_utils/iam.account.AccountActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.account.AccountActions.property.StartPrimaryEmailUpdate">StartPrimaryEmailUpdate</a></code> | <code>string</code> | [Write] account:StartPrimaryEmailUpdate. |
@@ -600,6 +601,18 @@ public readonly PutContactInformation: string;
 - *Type:* string
 
 [Write] account:PutContactInformation.
+
+---
+
+##### `ReopenAccount`<sup>Required</sup> <a name="ReopenAccount" id="@cdk_utils/iam.account.AccountActions.property.ReopenAccount"></a>
+
+```typescript
+public readonly ReopenAccount: string;
+```
+
+- *Type:* string
+
+[Write] account:ReopenAccount.
 
 ---
 
