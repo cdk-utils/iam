@@ -2658,7 +2658,7 @@ export class SesOperations {
 	/** IAM actions required for the SendRawEmail API call. */
 	static readonly SendRawEmail: string[] = [];
 	/** IAM actions required for the SendTemplatedEmail API call. */
-	static readonly SendTemplatedEmail: string[] = [];
+	static readonly SendTemplatedEmail: string[] = ["ses:SendTemplatedEmail"];
 	/** IAM actions required for the SetActiveReceiptRuleSet API call. */
 	static readonly opSetActiveReceiptRuleSet: string[] = [
 		"ses:SetActiveReceiptRuleSet",

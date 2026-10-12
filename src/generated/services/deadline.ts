@@ -181,6 +181,8 @@ export class DeadlineActions {
 	static readonly ListLicenseEndpoints = "deadline:ListLicenseEndpoints";
 	/** [List] deadline:ListLimits */
 	static readonly ListLimits = "deadline:ListLimits";
+	/** [List] deadline:ListMemberships */
+	static readonly ListMemberships = "deadline:ListMemberships";
 	/** [List] deadline:ListMeteredProducts */
 	static readonly ListMeteredProducts = "deadline:ListMeteredProducts";
 	/** [List] deadline:ListMonitors */
@@ -376,6 +378,7 @@ export class DeadlineActions {
 		DeadlineActions.ListJobs,
 		DeadlineActions.ListLicenseEndpoints,
 		DeadlineActions.ListLimits,
+		DeadlineActions.ListMemberships,
 		DeadlineActions.ListMeteredProducts,
 		DeadlineActions.ListMonitors,
 		DeadlineActions.ListQueueEnvironments,
@@ -1285,6 +1288,8 @@ export class DeadlineOperations {
 	];
 	/** IAM actions required for the ListLimits API call. */
 	static readonly ListLimits: string[] = ["deadline:ListLimits"];
+	/** IAM actions required for the ListMemberships API call. */
+	static readonly ListMemberships: string[] = ["deadline:ListMemberships"];
 	/** IAM actions required for the ListMeteredProducts API call. */
 	static readonly ListMeteredProducts: string[] = [
 		"deadline:ListMeteredProducts",
@@ -1510,6 +1515,11 @@ export class DeadlineConditions {
 	];
 	/** Condition keys applicable to the ListJobs action. */
 	static readonly ListJobsConditionKeys: string[] = [
+		"deadline:PrincipalId",
+		"deadline:RequesterPrincipalId",
+	];
+	/** Condition keys applicable to the ListMemberships action. */
+	static readonly ListMembershipsConditionKeys: string[] = [
 		"deadline:PrincipalId",
 		"deadline:RequesterPrincipalId",
 	];

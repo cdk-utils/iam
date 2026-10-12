@@ -8693,6 +8693,12 @@
     },
     {
       "Name": "SendTemplatedEmail",
+      "AuthorizedActions": [
+        {
+          "Name": "SendTemplatedEmail",
+          "Service": "ses"
+        }
+      ],
       "SDK": [
         {
           "Name": "ses",

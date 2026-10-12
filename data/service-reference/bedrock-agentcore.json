@@ -6283,6 +6283,10 @@
         {
           "Name": "CreatePaymentConnector",
           "Service": "bedrock-agentcore"
+        },
+        {
+          "Name": "GetPaymentCredentialProvider",
+          "Service": "bedrock-agentcore"
         }
       ],
       "SDK": [
@@ -9602,6 +9606,10 @@
     {
       "Name": "UpdatePaymentConnector",
       "AuthorizedActions": [
+        {
+          "Name": "GetPaymentCredentialProvider",
+          "Service": "bedrock-agentcore"
+        },
         {
           "Name": "UpdatePaymentConnector",
           "Service": "bedrock-agentcore"

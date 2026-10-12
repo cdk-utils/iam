@@ -4203,7 +4203,6 @@
           "Name": "PassRole",
           "Context": {
             "iam:PassedToService": [
-              "rds-preview.amazonaws.com",
               "rds.amazonaws.com"
             ]
           },

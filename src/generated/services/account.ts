@@ -46,6 +46,8 @@ export class AccountActions {
 	static readonly PutAlternateContact = "account:PutAlternateContact";
 	/** [Write] account:PutContactInformation */
 	static readonly PutContactInformation = "account:PutContactInformation";
+	/** [Write] account:ReopenAccount */
+	static readonly ReopenAccount = "account:ReopenAccount";
 	/** [Write] account:SendPhoneNumberVerification */
 	static readonly SendPhoneNumberVerification =
 		"account:SendPhoneNumberVerification";
@@ -74,6 +76,7 @@ export class AccountActions {
 		AccountActions.PutAccountName,
 		AccountActions.PutAlternateContact,
 		AccountActions.PutContactInformation,
+		AccountActions.ReopenAccount,
 		AccountActions.SendPhoneNumberVerification,
 		AccountActions.StartPrimaryEmailUpdate,
 		AccountActions.VerifyPhoneNumber,
