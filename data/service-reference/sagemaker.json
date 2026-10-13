@@ -2406,6 +2406,33 @@
       }
     },
     {
+      "Name": "CreateTrainingSession",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "sagemaker:OutputKmsKeyArn",
+        "sagemaker:VpcSecurityGroupIds",
+        "sagemaker:VpcSubnets"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "training-session"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "CreateTransformJob",
       "ActionConditionKeys": [
         "aws:RequestTag/${TagKey}",
@@ -3991,6 +4018,26 @@
       "Resources": [
         {
           "Name": "training-job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteTrainingSession",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "training-session"
         }
       ],
       "SupportedBy": {
@@ -5607,6 +5654,26 @@
       }
     },
     {
+      "Name": "DescribeTrainingSession",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "training-session"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "DescribeTransformJob",
       "Annotations": {
         "Properties": {
@@ -5803,6 +5870,46 @@
       }
     },
     {
+      "Name": "ExecuteSamplingOperation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "training-session"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ExecuteTrainingOperation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "training-session"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ExtendTrainingPlan",
       "Annotations": {
         "Properties": {
@@ -5963,6 +6070,26 @@
       }
     },
     {
+      "Name": "GetSamplingOperationResult",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "training-session"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "GetScalingConfigurationRecommendation",
       "Annotations": {
         "Properties": {
@@ -5992,6 +6119,26 @@
           "IsWrite": false
         }
       },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetTrainingOperationResult",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "training-session"
+        }
+      ],
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -7701,6 +7848,21 @@
       }
     },
     {
+      "Name": "ListTrainingSessions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ListTransformJobs",
       "Annotations": {
         "Properties": {
@@ -7971,6 +8133,46 @@
       "Resources": [
         {
           "Name": "job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SampleTrainingSession",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "training-session"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SampleTrainingSessionWithResponseStream",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "training-session"
         }
       ],
       "SupportedBy": {
@@ -8675,6 +8877,26 @@
       "Resources": [
         {
           "Name": "training-job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StopTrainingSession",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "training-session"
         }
       ],
       "SupportedBy": {
@@ -12009,6 +12231,36 @@
       ]
     },
     {
+      "Name": "CreateTrainingSession",
+      "AuthorizedActions": [
+        {
+          "Name": "AddTags",
+          "Service": "sagemaker"
+        },
+        {
+          "Name": "CreateTrainingSession",
+          "Service": "sagemaker"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "sagemaker.amazonaws.com",
+              "training-session.sagemaker.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sagemaker",
+          "Method": "create_training_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "CreateTransformJob",
       "AuthorizedActions": [
         {
@@ -13059,6 +13311,22 @@
         {
           "Name": "sagemaker",
           "Method": "delete_training_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteTrainingSession",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteTrainingSession",
+          "Service": "sagemaker"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sagemaker",
+          "Method": "delete_training_session",
           "Package": "Boto3"
         }
       ]
@@ -14266,6 +14534,22 @@
       ]
     },
     {
+      "Name": "DescribeTrainingSession",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeTrainingSession",
+          "Service": "sagemaker"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sagemaker",
+          "Method": "describe_training_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DescribeTransformJob",
       "AuthorizedActions": [
         {
@@ -14426,6 +14710,38 @@
       ]
     },
     {
+      "Name": "ExecuteSamplingOperation",
+      "AuthorizedActions": [
+        {
+          "Name": "ExecuteSamplingOperation",
+          "Service": "sagemaker"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sagemakertrainingsessionruntime",
+          "Method": "execute_sampling_operation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ExecuteTrainingOperation",
+      "AuthorizedActions": [
+        {
+          "Name": "ExecuteTrainingOperation",
+          "Service": "sagemaker"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sagemakertrainingsessionruntime",
+          "Method": "execute_training_operation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ExtendTrainingPlan",
       "AuthorizedActions": [
         {
@@ -14536,6 +14852,22 @@
       ]
     },
     {
+      "Name": "GetSamplingOperationResult",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSamplingOperationResult",
+          "Service": "sagemaker"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sagemakertrainingsessionruntime",
+          "Method": "get_sampling_operation_result",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetScalingConfigurationRecommendation",
       "AuthorizedActions": [
         {
@@ -14563,6 +14895,22 @@
         {
           "Name": "sagemaker",
           "Method": "get_search_suggestions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetTrainingOperationResult",
+      "AuthorizedActions": [
+        {
+          "Name": "GetTrainingOperationResult",
+          "Service": "sagemaker"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sagemakertrainingsessionruntime",
+          "Method": "get_training_operation_result",
           "Package": "Boto3"
         }
       ]
@@ -15979,6 +16327,22 @@
       ]
     },
     {
+      "Name": "ListTrainingSessions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTrainingSessions",
+          "Service": "sagemaker"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sagemaker",
+          "Method": "list_training_sessions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListTransformJobs",
       "AuthorizedActions": [
         {
@@ -16205,6 +16569,46 @@
         {
           "Name": "sagemakerjobruntime",
           "Method": "sample",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SampleTrainingSession",
+      "AuthorizedActions": [
+        {
+          "Name": "CallWithBearerToken",
+          "Service": "sagemaker"
+        },
+        {
+          "Name": "SampleTrainingSession",
+          "Service": "sagemaker"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sagemakertrainingsessionruntime",
+          "Method": "sample_training_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SampleTrainingSessionWithResponseStream",
+      "AuthorizedActions": [
+        {
+          "Name": "CallWithBearerToken",
+          "Service": "sagemaker"
+        },
+        {
+          "Name": "SampleTrainingSessionWithResponseStream",
+          "Service": "sagemaker"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sagemakertrainingsessionruntime",
+          "Method": "sample_training_session_with_response_stream",
           "Package": "Boto3"
         }
       ]
@@ -16729,6 +17133,22 @@
         {
           "Name": "sagemaker",
           "Method": "stop_training_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopTrainingSession",
+      "AuthorizedActions": [
+        {
+          "Name": "StopTrainingSession",
+          "Service": "sagemaker"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sagemaker",
+          "Method": "stop_training_session",
           "Package": "Boto3"
         }
       ]
@@ -18241,6 +18661,16 @@
       "Name": "training-plan",
       "ARNFormats": [
         "arn:${Partition}:sagemaker:${Region}:${Account}:training-plan/${TrainingPlanName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "sagemaker:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "training-session",
+      "ARNFormats": [
+        "arn:${Partition}:sagemaker:${Region}:${Account}:training-session/${SessionName}"
       ],
       "ConditionKeys": [
         "aws:ResourceTag/${TagKey}",

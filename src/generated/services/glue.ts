@@ -2550,6 +2550,10 @@ export class GlueOperations {
 	static readonly BatchGetDataQualityResult: string[] = [
 		"glue:GetDataQualityResult",
 	];
+	/** IAM actions required for the BatchGetDataQualityResultV2 API call. */
+	static readonly BatchGetDataQualityResultV2: string[] = [
+		"glue:GetDataQualityResult",
+	];
 	/** IAM actions required for the BatchGetDataQualityRulesetEvaluationRun API call. */
 	static readonly BatchGetDataQualityRulesetEvaluationRun: string[] = [
 		"glue:GetDataQualityRulesetEvaluationRun",
@@ -2950,6 +2954,10 @@ export class GlueOperations {
 	static readonly opGetDataQualityResult: string[] = [
 		"glue:GetDataQualityResult",
 	];
+	/** IAM actions required for the GetDataQualityResultV2 API call. */
+	static readonly opGetDataQualityResultV2: string[] = [
+		"glue:GetDataQualityResult",
+	];
 	/** IAM actions required for the GetDataQualityRuleRecommendationRun API call. */
 	static readonly opGetDataQualityRuleRecommendationRun: string[] = [
 		"glue:GetDataQualityRuleRecommendationRun",
@@ -3135,6 +3143,10 @@ export class GlueOperations {
 	static readonly ListDataQualityResults: string[] = [
 		"glue:ListDataQualityResults",
 	];
+	/** IAM actions required for the ListDataQualityResultsV2 API call. */
+	static readonly ListDataQualityResultsV2: string[] = [
+		"glue:ListDataQualityResults",
+	];
 	/** IAM actions required for the ListDataQualityRuleRecommendationRuns API call. */
 	static readonly ListDataQualityRuleRecommendationRuns: string[] = [
 		"glue:ListDataQualityRuleRecommendationRuns",
@@ -3201,6 +3213,10 @@ export class GlueOperations {
 	static readonly ListWorkflows: string[] = ["glue:ListWorkflows"];
 	/** IAM actions required for the ModifyIntegration API call. */
 	static readonly ModifyIntegration: string[] = ["glue:ModifyIntegration"];
+	/** IAM actions required for the PublishDataQualityResultV2 API call. */
+	static readonly PublishDataQualityResultV2: string[] = [
+		"glue:PublishDataQuality",
+	];
 	/** IAM actions required for the PutAsset API call. */
 	static readonly PutAsset: string[] = [];
 	/** IAM actions required for the PutAssetType API call. */

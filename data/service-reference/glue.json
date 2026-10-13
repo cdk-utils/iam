@@ -6990,6 +6990,22 @@
       ]
     },
     {
+      "Name": "BatchGetDataQualityResultV2",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDataQualityResult",
+          "Service": "glue"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glue",
+          "Method": "batch_get_data_quality_result_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "BatchGetDataQualityRulesetEvaluationRun",
       "AuthorizedActions": [
         {
@@ -9017,6 +9033,22 @@
       ]
     },
     {
+      "Name": "GetDataQualityResultV2",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDataQualityResult",
+          "Service": "glue"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glue",
+          "Method": "get_data_quality_result_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetDataQualityRuleRecommendationRun",
       "AuthorizedActions": [
         {
@@ -10129,6 +10161,22 @@
       ]
     },
     {
+      "Name": "ListDataQualityResultsV2",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDataQualityResults",
+          "Service": "glue"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glue",
+          "Method": "list_data_quality_results_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListDataQualityRuleRecommendationRuns",
       "AuthorizedActions": [
         {
@@ -10504,6 +10552,22 @@
         {
           "Name": "glue",
           "Method": "modify_integration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PublishDataQualityResultV2",
+      "AuthorizedActions": [
+        {
+          "Name": "PublishDataQuality",
+          "Service": "glue"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glue",
+          "Method": "publish_data_quality_result_v2",
           "Package": "Boto3"
         }
       ]

@@ -216,6 +216,8 @@ export class SageMakerActions {
 	static readonly CreateTrainingJob = "sagemaker:CreateTrainingJob";
 	/** [Write] sagemaker:CreateTrainingPlan */
 	static readonly CreateTrainingPlan = "sagemaker:CreateTrainingPlan";
+	/** [Write] sagemaker:CreateTrainingSession */
+	static readonly CreateTrainingSession = "sagemaker:CreateTrainingSession";
 	/** [Write] sagemaker:CreateTransformJob */
 	static readonly CreateTransformJob = "sagemaker:CreateTransformJob";
 	/** [Write] sagemaker:CreateTrial */
@@ -368,6 +370,8 @@ export class SageMakerActions {
 	static readonly DeleteTags = "sagemaker:DeleteTags";
 	/** [Write] sagemaker:DeleteTrainingJob */
 	static readonly DeleteTrainingJob = "sagemaker:DeleteTrainingJob";
+	/** [Write] sagemaker:DeleteTrainingSession */
+	static readonly DeleteTrainingSession = "sagemaker:DeleteTrainingSession";
 	/** [Write] sagemaker:DeleteTrial */
 	static readonly DeleteTrial = "sagemaker:DeleteTrial";
 	/** [Write] sagemaker:DeleteTrialComponent */
@@ -555,6 +559,8 @@ export class SageMakerActions {
 	/** [Read] sagemaker:DescribeTrainingPlanExtensionHistory */
 	static readonly DescribeTrainingPlanExtensionHistory =
 		"sagemaker:DescribeTrainingPlanExtensionHistory";
+	/** [Read] sagemaker:DescribeTrainingSession */
+	static readonly DescribeTrainingSession = "sagemaker:DescribeTrainingSession";
 	/** [Read] sagemaker:DescribeTransformJob */
 	static readonly DescribeTransformJob = "sagemaker:DescribeTransformJob";
 	/** [Read] sagemaker:DescribeTrial */
@@ -578,6 +584,12 @@ export class SageMakerActions {
 	/** [Write] sagemaker:EnableSagemakerServicecatalogPortfolio */
 	static readonly EnableSagemakerServicecatalogPortfolio =
 		"sagemaker:EnableSagemakerServicecatalogPortfolio";
+	/** [Write] sagemaker:ExecuteSamplingOperation */
+	static readonly ExecuteSamplingOperation =
+		"sagemaker:ExecuteSamplingOperation";
+	/** [Write] sagemaker:ExecuteTrainingOperation */
+	static readonly ExecuteTrainingOperation =
+		"sagemaker:ExecuteTrainingOperation";
 	/** [Write] sagemaker:ExtendTrainingPlan */
 	static readonly ExtendTrainingPlan = "sagemaker:ExtendTrainingPlan";
 	/** [Read] sagemaker:GetDeployments */
@@ -600,11 +612,17 @@ export class SageMakerActions {
 	/** [Read] sagemaker:GetSagemakerServicecatalogPortfolioStatus */
 	static readonly actionGetSagemakerServicecatalogPortfolioStatus =
 		"sagemaker:GetSagemakerServicecatalogPortfolioStatus";
+	/** [Read] sagemaker:GetSamplingOperationResult */
+	static readonly actionGetSamplingOperationResult =
+		"sagemaker:GetSamplingOperationResult";
 	/** [Read] sagemaker:GetScalingConfigurationRecommendation */
 	static readonly actionGetScalingConfigurationRecommendation =
 		"sagemaker:GetScalingConfigurationRecommendation";
 	/** [Read] sagemaker:GetSearchSuggestions */
 	static readonly actionGetSearchSuggestions = "sagemaker:GetSearchSuggestions";
+	/** [Read] sagemaker:GetTrainingOperationResult */
+	static readonly actionGetTrainingOperationResult =
+		"sagemaker:GetTrainingOperationResult";
 	/** [Write] sagemaker:ImportHubContent */
 	static readonly ImportHubContent = "sagemaker:ImportHubContent";
 	/** [Read] sagemaker:InvokeEndpoint */
@@ -810,6 +828,8 @@ export class SageMakerActions {
 		"sagemaker:ListTrainingJobsForHyperParameterTuningJob";
 	/** [List] sagemaker:ListTrainingPlans */
 	static readonly ListTrainingPlans = "sagemaker:ListTrainingPlans";
+	/** [List] sagemaker:ListTrainingSessions */
+	static readonly ListTrainingSessions = "sagemaker:ListTrainingSessions";
 	/** [List] sagemaker:ListTransformJobs */
 	static readonly ListTransformJobs = "sagemaker:ListTransformJobs";
 	/** [List] sagemaker:ListTrialComponents */
@@ -844,6 +864,11 @@ export class SageMakerActions {
 	static readonly RetryPipelineExecution = "sagemaker:RetryPipelineExecution";
 	/** [Write] sagemaker:Sample */
 	static readonly Sample = "sagemaker:Sample";
+	/** [Write] sagemaker:SampleTrainingSession */
+	static readonly SampleTrainingSession = "sagemaker:SampleTrainingSession";
+	/** [Write] sagemaker:SampleTrainingSessionWithResponseStream */
+	static readonly SampleTrainingSessionWithResponseStream =
+		"sagemaker:SampleTrainingSessionWithResponseStream";
 	/** [Write] sagemaker:SampleWithResponseStream */
 	static readonly SampleWithResponseStream =
 		"sagemaker:SampleWithResponseStream";
@@ -924,6 +949,8 @@ export class SageMakerActions {
 	static readonly StopProcessingJob = "sagemaker:StopProcessingJob";
 	/** [Write] sagemaker:StopTrainingJob */
 	static readonly StopTrainingJob = "sagemaker:StopTrainingJob";
+	/** [Write] sagemaker:StopTrainingSession */
+	static readonly StopTrainingSession = "sagemaker:StopTrainingSession";
 	/** [Write] sagemaker:StopTransformJob */
 	static readonly StopTransformJob = "sagemaker:StopTransformJob";
 	/** [Write] sagemaker:TrainHubModel */
@@ -1115,6 +1142,7 @@ export class SageMakerActions {
 		SageMakerActions.DescribeTrainingJob,
 		SageMakerActions.DescribeTrainingPlan,
 		SageMakerActions.DescribeTrainingPlanExtensionHistory,
+		SageMakerActions.DescribeTrainingSession,
 		SageMakerActions.DescribeTransformJob,
 		SageMakerActions.DescribeTrial,
 		SageMakerActions.DescribeTrialComponent,
@@ -1129,8 +1157,10 @@ export class SageMakerActions {
 		SageMakerActions.actionGetRecord,
 		SageMakerActions.actionGetResourcePolicy,
 		SageMakerActions.actionGetSagemakerServicecatalogPortfolioStatus,
+		SageMakerActions.actionGetSamplingOperationResult,
 		SageMakerActions.actionGetScalingConfigurationRecommendation,
 		SageMakerActions.actionGetSearchSuggestions,
+		SageMakerActions.actionGetTrainingOperationResult,
 		SageMakerActions.InvokeEndpoint,
 		SageMakerActions.InvokeEndpointAsync,
 		SageMakerActions.InvokeEndpointWithResponseStream,
@@ -1221,6 +1251,7 @@ export class SageMakerActions {
 		SageMakerActions.CreateStudioLifecycleConfig,
 		SageMakerActions.CreateTrainingJob,
 		SageMakerActions.CreateTrainingPlan,
+		SageMakerActions.CreateTrainingSession,
 		SageMakerActions.CreateTransformJob,
 		SageMakerActions.CreateTrial,
 		SageMakerActions.CreateTrialComponent,
@@ -1287,6 +1318,7 @@ export class SageMakerActions {
 		SageMakerActions.DeleteSpace,
 		SageMakerActions.DeleteStudioLifecycleConfig,
 		SageMakerActions.DeleteTrainingJob,
+		SageMakerActions.DeleteTrainingSession,
 		SageMakerActions.DeleteTrial,
 		SageMakerActions.DeleteTrialComponent,
 		SageMakerActions.DeleteUserProfile,
@@ -1298,6 +1330,8 @@ export class SageMakerActions {
 		SageMakerActions.DisableSagemakerServicecatalogPortfolio,
 		SageMakerActions.DisassociateTrialComponent,
 		SageMakerActions.EnableSagemakerServicecatalogPortfolio,
+		SageMakerActions.ExecuteSamplingOperation,
+		SageMakerActions.ExecuteTrainingOperation,
 		SageMakerActions.ExtendTrainingPlan,
 		SageMakerActions.ImportHubContent,
 		SageMakerActions.PutLineageGroupPolicy,
@@ -1307,6 +1341,8 @@ export class SageMakerActions {
 		SageMakerActions.RegisterDevices,
 		SageMakerActions.RetryPipelineExecution,
 		SageMakerActions.Sample,
+		SageMakerActions.SampleTrainingSession,
+		SageMakerActions.SampleTrainingSessionWithResponseStream,
 		SageMakerActions.SampleWithResponseStream,
 		SageMakerActions.SendHeartbeat,
 		SageMakerActions.SendPipelineExecutionStepFailure,
@@ -1340,6 +1376,7 @@ export class SageMakerActions {
 		SageMakerActions.StopPipelineExecution,
 		SageMakerActions.StopProcessingJob,
 		SageMakerActions.StopTrainingJob,
+		SageMakerActions.StopTrainingSession,
 		SageMakerActions.StopTransformJob,
 		SageMakerActions.TrainHubModel,
 		SageMakerActions.UpdateAction,
@@ -1481,6 +1518,7 @@ export class SageMakerActions {
 		SageMakerActions.ListTrainingJobs,
 		SageMakerActions.ListTrainingJobsForHyperParameterTuningJob,
 		SageMakerActions.ListTrainingPlans,
+		SageMakerActions.ListTrainingSessions,
 		SageMakerActions.ListTransformJobs,
 		SageMakerActions.ListTrialComponents,
 		SageMakerActions.ListTrials,
@@ -3480,6 +3518,34 @@ export interface SageMakerTrainingPlanArnComponents {
 }
 
 /**
+ * Properties for building a training-session ARN.
+ */
+export interface SageMakerTrainingSessionArnProps {
+	/** The SessionName component of the ARN. */
+	readonly sessionName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a training-session ARN.
+ */
+export interface SageMakerTrainingSessionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SessionName component. */
+	readonly sessionName: string;
+}
+
+/**
  * Properties for building a transform-job ARN.
  */
 export interface SageMakerTransformJobArnProps {
@@ -3733,6 +3799,8 @@ const TrainingJobArnRegex =
 	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):training-job\/(?<trainingJobName>[^:/?]+)$/;
 const TrainingPlanArnRegex =
 	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):training-plan\/(?<trainingPlanName>[^:/?]+)$/;
+const TrainingSessionArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):training-session\/(?<sessionName>[^:/?]+)$/;
 const TransformJobArnRegex =
 	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):transform-job\/(?<transformJobName>[^:/?]+)$/;
 const UserProfileArnRegex =
@@ -6010,6 +6078,39 @@ export class SageMakerResources {
 	}
 
 	/**
+	 * Builds an ARN for the training-session resource.
+	 */
+	static trainingSession(props: SageMakerTrainingSessionArnProps): string {
+		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:training-session/${props.sessionName}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the training-session resource.
+	 */
+	static isValidTrainingSessionArn(arn: string): boolean {
+		return TrainingSessionArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a training-session ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseTrainingSessionArn(
+		arn: string,
+	): SageMakerTrainingSessionArnComponents {
+		const match = TrainingSessionArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid training-session ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			sessionName: match.groups!.sessionName,
+		};
+	}
+
+	/**
 	 * Builds an ARN for the transform-job resource.
 	 */
 	static transformJob(props: SageMakerTransformJobArnProps): string {
@@ -6539,6 +6640,12 @@ export class SageMakerOperations {
 		"sagemaker:CreateReservedCapacity",
 		"sagemaker:CreateTrainingPlan",
 	];
+	/** IAM actions required for the CreateTrainingSession API call. */
+	static readonly CreateTrainingSession: string[] = [
+		"sagemaker:AddTags",
+		"sagemaker:CreateTrainingSession",
+		"iam:PassRole",
+	];
 	/** IAM actions required for the CreateTransformJob API call. */
 	static readonly CreateTransformJob: string[] = [
 		"sagemaker:AddTags",
@@ -6748,6 +6855,10 @@ export class SageMakerOperations {
 	static readonly DeleteTags: string[] = ["sagemaker:DeleteTags"];
 	/** IAM actions required for the DeleteTrainingJob API call. */
 	static readonly DeleteTrainingJob: string[] = ["sagemaker:DeleteTrainingJob"];
+	/** IAM actions required for the DeleteTrainingSession API call. */
+	static readonly DeleteTrainingSession: string[] = [
+		"sagemaker:DeleteTrainingSession",
+	];
 	/** IAM actions required for the DeleteTrial API call. */
 	static readonly DeleteTrial: string[] = ["sagemaker:DeleteTrial"];
 	/** IAM actions required for the DeleteTrialComponent API call. */
@@ -7000,6 +7111,10 @@ export class SageMakerOperations {
 	static readonly DescribeTrainingPlanExtensionHistory: string[] = [
 		"sagemaker:DescribeTrainingPlanExtensionHistory",
 	];
+	/** IAM actions required for the DescribeTrainingSession API call. */
+	static readonly DescribeTrainingSession: string[] = [
+		"sagemaker:DescribeTrainingSession",
+	];
 	/** IAM actions required for the DescribeTransformJob API call. */
 	static readonly DescribeTransformJob: string[] = [
 		"sagemaker:DescribeTransformJob",
@@ -7034,6 +7149,14 @@ export class SageMakerOperations {
 	static readonly EnableSagemakerServicecatalogPortfolio: string[] = [
 		"sagemaker:EnableSagemakerServicecatalogPortfolio",
 	];
+	/** IAM actions required for the ExecuteSamplingOperation API call. */
+	static readonly ExecuteSamplingOperation: string[] = [
+		"sagemaker:ExecuteSamplingOperation",
+	];
+	/** IAM actions required for the ExecuteTrainingOperation API call. */
+	static readonly ExecuteTrainingOperation: string[] = [
+		"sagemaker:ExecuteTrainingOperation",
+	];
 	/** IAM actions required for the ExtendTrainingPlan API call. */
 	static readonly ExtendTrainingPlan: string[] = [
 		"sagemaker:ExtendTrainingPlan",
@@ -7058,6 +7181,10 @@ export class SageMakerOperations {
 	static readonly opGetSagemakerServicecatalogPortfolioStatus: string[] = [
 		"sagemaker:GetSagemakerServicecatalogPortfolioStatus",
 	];
+	/** IAM actions required for the GetSamplingOperationResult API call. */
+	static readonly opGetSamplingOperationResult: string[] = [
+		"sagemaker:GetSamplingOperationResult",
+	];
 	/** IAM actions required for the GetScalingConfigurationRecommendation API call. */
 	static readonly opGetScalingConfigurationRecommendation: string[] = [
 		"sagemaker:GetScalingConfigurationRecommendation",
@@ -7065,6 +7192,10 @@ export class SageMakerOperations {
 	/** IAM actions required for the GetSearchSuggestions API call. */
 	static readonly opGetSearchSuggestions: string[] = [
 		"sagemaker:GetSearchSuggestions",
+	];
+	/** IAM actions required for the GetTrainingOperationResult API call. */
+	static readonly opGetTrainingOperationResult: string[] = [
+		"sagemaker:GetTrainingOperationResult",
 	];
 	/** IAM actions required for the ImportHubContent API call. */
 	static readonly ImportHubContent: string[] = [
@@ -7337,6 +7468,10 @@ export class SageMakerOperations {
 	];
 	/** IAM actions required for the ListTrainingPlans API call. */
 	static readonly ListTrainingPlans: string[] = ["sagemaker:ListTrainingPlans"];
+	/** IAM actions required for the ListTrainingSessions API call. */
+	static readonly ListTrainingSessions: string[] = [
+		"sagemaker:ListTrainingSessions",
+	];
 	/** IAM actions required for the ListTransformJobs API call. */
 	static readonly ListTransformJobs: string[] = ["sagemaker:ListTransformJobs"];
 	/** IAM actions required for the ListTrialComponents API call. */
@@ -7378,6 +7513,16 @@ export class SageMakerOperations {
 	static readonly Sample: string[] = [
 		"sagemaker:CallWithBearerToken",
 		"sagemaker:Sample",
+	];
+	/** IAM actions required for the SampleTrainingSession API call. */
+	static readonly SampleTrainingSession: string[] = [
+		"sagemaker:CallWithBearerToken",
+		"sagemaker:SampleTrainingSession",
+	];
+	/** IAM actions required for the SampleTrainingSessionWithResponseStream API call. */
+	static readonly SampleTrainingSessionWithResponseStream: string[] = [
+		"sagemaker:CallWithBearerToken",
+		"sagemaker:SampleTrainingSessionWithResponseStream",
 	];
 	/** IAM actions required for the SampleWithResponseStream API call. */
 	static readonly SampleWithResponseStream: string[] = [
@@ -7490,6 +7635,10 @@ export class SageMakerOperations {
 	static readonly StopProcessingJob: string[] = ["sagemaker:StopProcessingJob"];
 	/** IAM actions required for the StopTrainingJob API call. */
 	static readonly StopTrainingJob: string[] = ["sagemaker:StopTrainingJob"];
+	/** IAM actions required for the StopTrainingSession API call. */
+	static readonly StopTrainingSession: string[] = [
+		"sagemaker:StopTrainingSession",
+	];
 	/** IAM actions required for the StopTransformJob API call. */
 	static readonly StopTransformJob: string[] = ["sagemaker:StopTransformJob"];
 	/** IAM actions required for the UpdateAction API call. */
@@ -8121,6 +8270,14 @@ export class SageMakerConditions {
 	static readonly CreateTrainingPlanConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
+	];
+	/** Condition keys applicable to the CreateTrainingSession action. */
+	static readonly CreateTrainingSessionConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+		"sagemaker:OutputKmsKeyArn",
+		"sagemaker:VpcSecurityGroupIds",
+		"sagemaker:VpcSubnets",
 	];
 	/** Condition keys applicable to the CreateTransformJob action. */
 	static readonly CreateTransformJobConditionKeys: string[] = [

@@ -2405,6 +2405,7 @@ new lambda.LambdaActions()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.ListMicrovmImageVersions">ListMicrovmImageVersions</a></code> | <code>string</code> | [List] lambda:ListMicrovmImageVersions. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.ListMicrovms">ListMicrovms</a></code> | <code>string</code> | [List] lambda:ListMicrovms. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.ListNetworkConnectors">ListNetworkConnectors</a></code> | <code>string</code> | [List] lambda:ListNetworkConnectors. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.ListNetworkConnectorVersions">ListNetworkConnectorVersions</a></code> | <code>string</code> | [List] lambda:ListNetworkConnectorVersions. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.ListProvisionedConcurrencyConfigs">ListProvisionedConcurrencyConfigs</a></code> | <code>string</code> | [List] lambda:ListProvisionedConcurrencyConfigs. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.ListTags">ListTags</a></code> | <code>string</code> | [Read] lambda:ListTags. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.ListVersionsByFunction">ListVersionsByFunction</a></code> | <code>string</code> | [List] lambda:ListVersionsByFunction. |
@@ -3601,6 +3602,18 @@ public readonly ListNetworkConnectors: string;
 - *Type:* string
 
 [List] lambda:ListNetworkConnectors.
+
+---
+
+##### `ListNetworkConnectorVersions`<sup>Required</sup> <a name="ListNetworkConnectorVersions" id="@cdk_utils/iam.lambda.LambdaActions.property.ListNetworkConnectorVersions"></a>
+
+```typescript
+public readonly ListNetworkConnectorVersions: string;
+```
+
+- *Type:* string
+
+[List] lambda:ListNetworkConnectorVersions.
 
 ---
 
@@ -5073,6 +5086,9 @@ new lambda.LambdaOperations()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.CreateMicrovmImage">CreateMicrovmImage</a></code> | <code>string[]</code> | IAM actions required for the CreateMicrovmImage API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.CreateMicrovmShellAuthToken">CreateMicrovmShellAuthToken</a></code> | <code>string[]</code> | IAM actions required for the CreateMicrovmShellAuthToken API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.CreateNetworkConnector">CreateNetworkConnector</a></code> | <code>string[]</code> | IAM actions required for the CreateNetworkConnector API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.CreateWebFunction">CreateWebFunction</a></code> | <code>string[]</code> | IAM actions required for the CreateWebFunction API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.CreateWebFunctionEndpoint">CreateWebFunctionEndpoint</a></code> | <code>string[]</code> | IAM actions required for the CreateWebFunctionEndpoint API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.CreateWebFunctionRevision">CreateWebFunctionRevision</a></code> | <code>string[]</code> | IAM actions required for the CreateWebFunctionRevision API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteAlias">DeleteAlias</a></code> | <code>string[]</code> | IAM actions required for the DeleteAlias API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteCapacityProvider">DeleteCapacityProvider</a></code> | <code>string[]</code> | IAM actions required for the DeleteCapacityProvider API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteCodeSigningConfig">DeleteCodeSigningConfig</a></code> | <code>string[]</code> | IAM actions required for the DeleteCodeSigningConfig API call. |
@@ -5088,6 +5104,9 @@ new lambda.LambdaOperations()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteNetworkConnector">DeleteNetworkConnector</a></code> | <code>string[]</code> | IAM actions required for the DeleteNetworkConnector API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteProvisionedConcurrencyConfig">DeleteProvisionedConcurrencyConfig</a></code> | <code>string[]</code> | IAM actions required for the DeleteProvisionedConcurrencyConfig API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteResourcePolicy">DeleteResourcePolicy</a></code> | <code>string[]</code> | IAM actions required for the DeleteResourcePolicy API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteWebFunction">DeleteWebFunction</a></code> | <code>string[]</code> | IAM actions required for the DeleteWebFunction API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteWebFunctionEndpoint">DeleteWebFunctionEndpoint</a></code> | <code>string[]</code> | IAM actions required for the DeleteWebFunctionEndpoint API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteWebFunctionRevision">DeleteWebFunctionRevision</a></code> | <code>string[]</code> | IAM actions required for the DeleteWebFunctionRevision API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.Invoke">Invoke</a></code> | <code>string[]</code> | IAM actions required for the Invoke API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.InvokeAsync">InvokeAsync</a></code> | <code>string[]</code> | IAM actions required for the InvokeAsync API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.InvokeWithResponseStream">InvokeWithResponseStream</a></code> | <code>string[]</code> | IAM actions required for the InvokeWithResponseStream API call. |
@@ -5111,9 +5130,13 @@ new lambda.LambdaOperations()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.ListMicrovmImageVersions">ListMicrovmImageVersions</a></code> | <code>string[]</code> | IAM actions required for the ListMicrovmImageVersions API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.ListMicrovms">ListMicrovms</a></code> | <code>string[]</code> | IAM actions required for the ListMicrovms API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.ListNetworkConnectors">ListNetworkConnectors</a></code> | <code>string[]</code> | IAM actions required for the ListNetworkConnectors API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.ListNetworkConnectorVersions">ListNetworkConnectorVersions</a></code> | <code>string[]</code> | IAM actions required for the ListNetworkConnectorVersions API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.ListProvisionedConcurrencyConfigs">ListProvisionedConcurrencyConfigs</a></code> | <code>string[]</code> | IAM actions required for the ListProvisionedConcurrencyConfigs API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.ListTags">ListTags</a></code> | <code>string[]</code> | IAM actions required for the ListTags API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.ListVersionsByFunction">ListVersionsByFunction</a></code> | <code>string[]</code> | IAM actions required for the ListVersionsByFunction API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.ListWebFunctionEndpoints">ListWebFunctionEndpoints</a></code> | <code>string[]</code> | IAM actions required for the ListWebFunctionEndpoints API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.ListWebFunctionRevisions">ListWebFunctionRevisions</a></code> | <code>string[]</code> | IAM actions required for the ListWebFunctionRevisions API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.ListWebFunctions">ListWebFunctions</a></code> | <code>string[]</code> | IAM actions required for the ListWebFunctions API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetAccountSettings">opGetAccountSettings</a></code> | <code>string[]</code> | IAM actions required for the GetAccountSettings API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetAlias">opGetAlias</a></code> | <code>string[]</code> | IAM actions required for the GetAlias API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetCapacityProvider">opGetCapacityProvider</a></code> | <code>string[]</code> | IAM actions required for the GetCapacityProvider API call. |
@@ -5144,6 +5167,9 @@ new lambda.LambdaOperations()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetResourcePolicy">opGetResourcePolicy</a></code> | <code>string[]</code> | IAM actions required for the GetResourcePolicy API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetRuntimeManagementConfig">opGetRuntimeManagementConfig</a></code> | <code>string[]</code> | IAM actions required for the GetRuntimeManagementConfig API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetWebAccountSettings">opGetWebAccountSettings</a></code> | <code>string[]</code> | IAM actions required for the GetWebAccountSettings API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetWebFunction">opGetWebFunction</a></code> | <code>string[]</code> | IAM actions required for the GetWebFunction API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetWebFunctionEndpoint">opGetWebFunctionEndpoint</a></code> | <code>string[]</code> | IAM actions required for the GetWebFunctionEndpoint API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetWebFunctionRevision">opGetWebFunctionRevision</a></code> | <code>string[]</code> | IAM actions required for the GetWebFunctionRevision API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.PublishLayerVersion">PublishLayerVersion</a></code> | <code>string[]</code> | IAM actions required for the PublishLayerVersion API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.PublishVersion">PublishVersion</a></code> | <code>string[]</code> | IAM actions required for the PublishVersion API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.PutFunctionCodeSigningConfig">PutFunctionCodeSigningConfig</a></code> | <code>string[]</code> | IAM actions required for the PutFunctionCodeSigningConfig API call. |
@@ -5178,6 +5204,7 @@ new lambda.LambdaOperations()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.UpdateMicrovmImage">UpdateMicrovmImage</a></code> | <code>string[]</code> | IAM actions required for the UpdateMicrovmImage API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.UpdateMicrovmImageVersion">UpdateMicrovmImageVersion</a></code> | <code>string[]</code> | IAM actions required for the UpdateMicrovmImageVersion API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.UpdateNetworkConnector">UpdateNetworkConnector</a></code> | <code>string[]</code> | IAM actions required for the UpdateNetworkConnector API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.UpdateWebFunctionEndpoint">UpdateWebFunctionEndpoint</a></code> | <code>string[]</code> | IAM actions required for the UpdateWebFunctionEndpoint API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.UploadFunction">UploadFunction</a></code> | <code>string[]</code> | IAM actions required for the UploadFunction API call. |
 
 ---
@@ -5347,6 +5374,42 @@ public readonly CreateNetworkConnector: string[];
 - *Type:* string[]
 
 IAM actions required for the CreateNetworkConnector API call.
+
+---
+
+##### `CreateWebFunction`<sup>Required</sup> <a name="CreateWebFunction" id="@cdk_utils/iam.lambda.LambdaOperations.property.CreateWebFunction"></a>
+
+```typescript
+public readonly CreateWebFunction: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateWebFunction API call.
+
+---
+
+##### `CreateWebFunctionEndpoint`<sup>Required</sup> <a name="CreateWebFunctionEndpoint" id="@cdk_utils/iam.lambda.LambdaOperations.property.CreateWebFunctionEndpoint"></a>
+
+```typescript
+public readonly CreateWebFunctionEndpoint: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateWebFunctionEndpoint API call.
+
+---
+
+##### `CreateWebFunctionRevision`<sup>Required</sup> <a name="CreateWebFunctionRevision" id="@cdk_utils/iam.lambda.LambdaOperations.property.CreateWebFunctionRevision"></a>
+
+```typescript
+public readonly CreateWebFunctionRevision: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateWebFunctionRevision API call.
 
 ---
 
@@ -5527,6 +5590,42 @@ public readonly DeleteResourcePolicy: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteResourcePolicy API call.
+
+---
+
+##### `DeleteWebFunction`<sup>Required</sup> <a name="DeleteWebFunction" id="@cdk_utils/iam.lambda.LambdaOperations.property.DeleteWebFunction"></a>
+
+```typescript
+public readonly DeleteWebFunction: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteWebFunction API call.
+
+---
+
+##### `DeleteWebFunctionEndpoint`<sup>Required</sup> <a name="DeleteWebFunctionEndpoint" id="@cdk_utils/iam.lambda.LambdaOperations.property.DeleteWebFunctionEndpoint"></a>
+
+```typescript
+public readonly DeleteWebFunctionEndpoint: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteWebFunctionEndpoint API call.
+
+---
+
+##### `DeleteWebFunctionRevision`<sup>Required</sup> <a name="DeleteWebFunctionRevision" id="@cdk_utils/iam.lambda.LambdaOperations.property.DeleteWebFunctionRevision"></a>
+
+```typescript
+public readonly DeleteWebFunctionRevision: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteWebFunctionRevision API call.
 
 ---
 
@@ -5806,6 +5905,18 @@ IAM actions required for the ListNetworkConnectors API call.
 
 ---
 
+##### `ListNetworkConnectorVersions`<sup>Required</sup> <a name="ListNetworkConnectorVersions" id="@cdk_utils/iam.lambda.LambdaOperations.property.ListNetworkConnectorVersions"></a>
+
+```typescript
+public readonly ListNetworkConnectorVersions: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListNetworkConnectorVersions API call.
+
+---
+
 ##### `ListProvisionedConcurrencyConfigs`<sup>Required</sup> <a name="ListProvisionedConcurrencyConfigs" id="@cdk_utils/iam.lambda.LambdaOperations.property.ListProvisionedConcurrencyConfigs"></a>
 
 ```typescript
@@ -5839,6 +5950,42 @@ public readonly ListVersionsByFunction: string[];
 - *Type:* string[]
 
 IAM actions required for the ListVersionsByFunction API call.
+
+---
+
+##### `ListWebFunctionEndpoints`<sup>Required</sup> <a name="ListWebFunctionEndpoints" id="@cdk_utils/iam.lambda.LambdaOperations.property.ListWebFunctionEndpoints"></a>
+
+```typescript
+public readonly ListWebFunctionEndpoints: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListWebFunctionEndpoints API call.
+
+---
+
+##### `ListWebFunctionRevisions`<sup>Required</sup> <a name="ListWebFunctionRevisions" id="@cdk_utils/iam.lambda.LambdaOperations.property.ListWebFunctionRevisions"></a>
+
+```typescript
+public readonly ListWebFunctionRevisions: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListWebFunctionRevisions API call.
+
+---
+
+##### `ListWebFunctions`<sup>Required</sup> <a name="ListWebFunctions" id="@cdk_utils/iam.lambda.LambdaOperations.property.ListWebFunctions"></a>
+
+```typescript
+public readonly ListWebFunctions: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListWebFunctions API call.
 
 ---
 
@@ -6199,6 +6346,42 @@ public readonly opGetWebAccountSettings: string[];
 - *Type:* string[]
 
 IAM actions required for the GetWebAccountSettings API call.
+
+---
+
+##### `opGetWebFunction`<sup>Required</sup> <a name="opGetWebFunction" id="@cdk_utils/iam.lambda.LambdaOperations.property.opGetWebFunction"></a>
+
+```typescript
+public readonly opGetWebFunction: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetWebFunction API call.
+
+---
+
+##### `opGetWebFunctionEndpoint`<sup>Required</sup> <a name="opGetWebFunctionEndpoint" id="@cdk_utils/iam.lambda.LambdaOperations.property.opGetWebFunctionEndpoint"></a>
+
+```typescript
+public readonly opGetWebFunctionEndpoint: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetWebFunctionEndpoint API call.
+
+---
+
+##### `opGetWebFunctionRevision`<sup>Required</sup> <a name="opGetWebFunctionRevision" id="@cdk_utils/iam.lambda.LambdaOperations.property.opGetWebFunctionRevision"></a>
+
+```typescript
+public readonly opGetWebFunctionRevision: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetWebFunctionRevision API call.
 
 ---
 
@@ -6607,6 +6790,18 @@ public readonly UpdateNetworkConnector: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateNetworkConnector API call.
+
+---
+
+##### `UpdateWebFunctionEndpoint`<sup>Required</sup> <a name="UpdateWebFunctionEndpoint" id="@cdk_utils/iam.lambda.LambdaOperations.property.UpdateWebFunctionEndpoint"></a>
+
+```typescript
+public readonly UpdateWebFunctionEndpoint: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateWebFunctionEndpoint API call.
 
 ---
 

@@ -30,6 +30,11 @@ export class SecurityagentActions {
 		"securityagent:BatchDeleteThreatModels";
 	/** [Write] securityagent:BatchDeleteThreats */
 	static readonly BatchDeleteThreats = "securityagent:BatchDeleteThreats";
+	/** [Write] securityagent:BatchDisassociateFindingIssue */
+	static readonly BatchDisassociateFindingIssue =
+		"securityagent:BatchDisassociateFindingIssue";
+	/** [Write] securityagent:BatchExportFindings */
+	static readonly BatchExportFindings = "securityagent:BatchExportFindings";
 	/** [Read] securityagent:BatchGetAgentSpaces */
 	static readonly BatchGetAgentSpaces = "securityagent:BatchGetAgentSpaces";
 	/** [Read] securityagent:BatchGetArtifactMetadata */
@@ -338,6 +343,8 @@ export class SecurityagentActions {
 		SecurityagentActions.BatchDeleteSecurityRequirements,
 		SecurityagentActions.BatchDeleteThreatModels,
 		SecurityagentActions.BatchDeleteThreats,
+		SecurityagentActions.BatchDisassociateFindingIssue,
+		SecurityagentActions.BatchExportFindings,
 		SecurityagentActions.BatchUpdateSecurityRequirements,
 		SecurityagentActions.CreateAgentSpace,
 		SecurityagentActions.CreateApplication,
@@ -844,6 +851,10 @@ export class SecurityagentOperations {
 	static readonly BatchDeleteThreatModels: string[] = [
 		"securityagent:BatchDeleteThreatModels",
 	];
+	/** IAM actions required for the BatchDisassociateFindingIssue API call. */
+	static readonly BatchDisassociateFindingIssue: string[] = [];
+	/** IAM actions required for the BatchExportFindings API call. */
+	static readonly BatchExportFindings: string[] = [];
 	/** IAM actions required for the BatchGetAgentSpaces API call. */
 	static readonly BatchGetAgentSpaces: string[] = [
 		"securityagent:BatchGetAgentSpaces",

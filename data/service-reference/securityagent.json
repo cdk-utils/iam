@@ -142,6 +142,46 @@
       }
     },
     {
+      "Name": "BatchDisassociateFindingIssue",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchExportFindings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "BatchGetAgentSpaces",
       "Annotations": {
         "Properties": {
@@ -2470,6 +2510,26 @@
         {
           "Name": "securityagent",
           "Method": "batch_delete_threat_models",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchDisassociateFindingIssue",
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "batch_disassociate_finding_issue",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchExportFindings",
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "batch_export_findings",
           "Package": "Boto3"
         }
       ]

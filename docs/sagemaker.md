@@ -10527,6 +10527,154 @@ Defaults to "*".
 
 ---
 
+### SageMakerTrainingSessionArnComponents <a name="SageMakerTrainingSessionArnComponents" id="@cdk_utils/iam.sagemaker.SageMakerTrainingSessionArnComponents"></a>
+
+Parsed components of a training-session ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.sagemaker.SageMakerTrainingSessionArnComponents.Initializer"></a>
+
+```typescript
+import { sagemaker } from '@cdk_utils/iam'
+
+const sageMakerTrainingSessionArnComponents: sagemaker.SageMakerTrainingSessionArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerTrainingSessionArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerTrainingSessionArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerTrainingSessionArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerTrainingSessionArnComponents.property.sessionName">sessionName</a></code> | <code>string</code> | The SessionName component. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.sagemaker.SageMakerTrainingSessionArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.sagemaker.SageMakerTrainingSessionArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.sagemaker.SageMakerTrainingSessionArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+##### `sessionName`<sup>Required</sup> <a name="sessionName" id="@cdk_utils/iam.sagemaker.SageMakerTrainingSessionArnComponents.property.sessionName"></a>
+
+```typescript
+public readonly sessionName: string;
+```
+
+- *Type:* string
+
+The SessionName component.
+
+---
+
+### SageMakerTrainingSessionArnProps <a name="SageMakerTrainingSessionArnProps" id="@cdk_utils/iam.sagemaker.SageMakerTrainingSessionArnProps"></a>
+
+Properties for building a training-session ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.sagemaker.SageMakerTrainingSessionArnProps.Initializer"></a>
+
+```typescript
+import { sagemaker } from '@cdk_utils/iam'
+
+const sageMakerTrainingSessionArnProps: sagemaker.SageMakerTrainingSessionArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerTrainingSessionArnProps.property.sessionName">sessionName</a></code> | <code>string</code> | The SessionName component of the ARN. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerTrainingSessionArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerTrainingSessionArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerTrainingSessionArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `sessionName`<sup>Required</sup> <a name="sessionName" id="@cdk_utils/iam.sagemaker.SageMakerTrainingSessionArnProps.property.sessionName"></a>
+
+```typescript
+public readonly sessionName: string;
+```
+
+- *Type:* string
+
+The SessionName component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.sagemaker.SageMakerTrainingSessionArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.sagemaker.SageMakerTrainingSessionArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.sagemaker.SageMakerTrainingSessionArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### SageMakerTransformJobArnComponents <a name="SageMakerTransformJobArnComponents" id="@cdk_utils/iam.sagemaker.SageMakerTransformJobArnComponents"></a>
 
 Parsed components of a transform-job ARN.
@@ -11180,8 +11328,10 @@ new sagemaker.SageMakerActions()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.actionGetRecord">actionGetRecord</a></code> | <code>string</code> | [Read] sagemaker:GetRecord. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.actionGetResourcePolicy">actionGetResourcePolicy</a></code> | <code>string</code> | [Read] sagemaker:GetResourcePolicy. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.actionGetSagemakerServicecatalogPortfolioStatus">actionGetSagemakerServicecatalogPortfolioStatus</a></code> | <code>string</code> | [Read] sagemaker:GetSagemakerServicecatalogPortfolioStatus. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.actionGetSamplingOperationResult">actionGetSamplingOperationResult</a></code> | <code>string</code> | [Read] sagemaker:GetSamplingOperationResult. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.actionGetScalingConfigurationRecommendation">actionGetScalingConfigurationRecommendation</a></code> | <code>string</code> | [Read] sagemaker:GetScalingConfigurationRecommendation. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.actionGetSearchSuggestions">actionGetSearchSuggestions</a></code> | <code>string</code> | [Read] sagemaker:GetSearchSuggestions. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.actionGetTrainingOperationResult">actionGetTrainingOperationResult</a></code> | <code>string</code> | [Read] sagemaker:GetTrainingOperationResult. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.AddAssociation">AddAssociation</a></code> | <code>string</code> | [Write] sagemaker:AddAssociation. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.AddTags">AddTags</a></code> | <code>string</code> | [Tagging] sagemaker:AddTags. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.AllListActions">AllListActions</a></code> | <code>string[]</code> | All list-level actions. |
@@ -11274,6 +11424,7 @@ new sagemaker.SageMakerActions()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.CreateStudioLifecycleConfig">CreateStudioLifecycleConfig</a></code> | <code>string</code> | [Write] sagemaker:CreateStudioLifecycleConfig. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.CreateTrainingJob">CreateTrainingJob</a></code> | <code>string</code> | [Write] sagemaker:CreateTrainingJob. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.CreateTrainingPlan">CreateTrainingPlan</a></code> | <code>string</code> | [Write] sagemaker:CreateTrainingPlan. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.CreateTrainingSession">CreateTrainingSession</a></code> | <code>string</code> | [Write] sagemaker:CreateTrainingSession. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.CreateTransformJob">CreateTransformJob</a></code> | <code>string</code> | [Write] sagemaker:CreateTransformJob. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.CreateTrial">CreateTrial</a></code> | <code>string</code> | [Write] sagemaker:CreateTrial. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.CreateTrialComponent">CreateTrialComponent</a></code> | <code>string</code> | [Write] sagemaker:CreateTrialComponent. |
@@ -11341,6 +11492,7 @@ new sagemaker.SageMakerActions()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DeleteStudioLifecycleConfig">DeleteStudioLifecycleConfig</a></code> | <code>string</code> | [Write] sagemaker:DeleteStudioLifecycleConfig. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DeleteTags">DeleteTags</a></code> | <code>string</code> | [Tagging] sagemaker:DeleteTags. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DeleteTrainingJob">DeleteTrainingJob</a></code> | <code>string</code> | [Write] sagemaker:DeleteTrainingJob. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DeleteTrainingSession">DeleteTrainingSession</a></code> | <code>string</code> | [Write] sagemaker:DeleteTrainingSession. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DeleteTrial">DeleteTrial</a></code> | <code>string</code> | [Write] sagemaker:DeleteTrial. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DeleteTrialComponent">DeleteTrialComponent</a></code> | <code>string</code> | [Write] sagemaker:DeleteTrialComponent. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DeleteUserProfile">DeleteUserProfile</a></code> | <code>string</code> | [Write] sagemaker:DeleteUserProfile. |
@@ -11421,6 +11573,7 @@ new sagemaker.SageMakerActions()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeTrainingJob">DescribeTrainingJob</a></code> | <code>string</code> | [Read] sagemaker:DescribeTrainingJob. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeTrainingPlan">DescribeTrainingPlan</a></code> | <code>string</code> | [Read] sagemaker:DescribeTrainingPlan. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeTrainingPlanExtensionHistory">DescribeTrainingPlanExtensionHistory</a></code> | <code>string</code> | [Read] sagemaker:DescribeTrainingPlanExtensionHistory. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeTrainingSession">DescribeTrainingSession</a></code> | <code>string</code> | [Read] sagemaker:DescribeTrainingSession. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeTransformJob">DescribeTransformJob</a></code> | <code>string</code> | [Read] sagemaker:DescribeTransformJob. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeTrial">DescribeTrial</a></code> | <code>string</code> | [Read] sagemaker:DescribeTrial. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeTrialComponent">DescribeTrialComponent</a></code> | <code>string</code> | [Read] sagemaker:DescribeTrialComponent. |
@@ -11431,6 +11584,8 @@ new sagemaker.SageMakerActions()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DisableSagemakerServicecatalogPortfolio">DisableSagemakerServicecatalogPortfolio</a></code> | <code>string</code> | [Write] sagemaker:DisableSagemakerServicecatalogPortfolio. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DisassociateTrialComponent">DisassociateTrialComponent</a></code> | <code>string</code> | [Write] sagemaker:DisassociateTrialComponent. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.EnableSagemakerServicecatalogPortfolio">EnableSagemakerServicecatalogPortfolio</a></code> | <code>string</code> | [Write] sagemaker:EnableSagemakerServicecatalogPortfolio. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.ExecuteSamplingOperation">ExecuteSamplingOperation</a></code> | <code>string</code> | [Write] sagemaker:ExecuteSamplingOperation. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.ExecuteTrainingOperation">ExecuteTrainingOperation</a></code> | <code>string</code> | [Write] sagemaker:ExecuteTrainingOperation. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.ExtendTrainingPlan">ExtendTrainingPlan</a></code> | <code>string</code> | [Write] sagemaker:ExtendTrainingPlan. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.ImportHubContent">ImportHubContent</a></code> | <code>string</code> | [Write] sagemaker:ImportHubContent. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.InvokeEndpoint">InvokeEndpoint</a></code> | <code>string</code> | [Read] sagemaker:InvokeEndpoint. |
@@ -11524,6 +11679,7 @@ new sagemaker.SageMakerActions()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.ListTrainingJobs">ListTrainingJobs</a></code> | <code>string</code> | [List] sagemaker:ListTrainingJobs. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.ListTrainingJobsForHyperParameterTuningJob">ListTrainingJobsForHyperParameterTuningJob</a></code> | <code>string</code> | [List] sagemaker:ListTrainingJobsForHyperParameterTuningJob. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.ListTrainingPlans">ListTrainingPlans</a></code> | <code>string</code> | [List] sagemaker:ListTrainingPlans. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.ListTrainingSessions">ListTrainingSessions</a></code> | <code>string</code> | [List] sagemaker:ListTrainingSessions. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.ListTransformJobs">ListTransformJobs</a></code> | <code>string</code> | [List] sagemaker:ListTransformJobs. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.ListTrialComponents">ListTrialComponents</a></code> | <code>string</code> | [List] sagemaker:ListTrialComponents. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.ListTrials">ListTrials</a></code> | <code>string</code> | [List] sagemaker:ListTrials. |
@@ -11540,6 +11696,8 @@ new sagemaker.SageMakerActions()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.RenderUiTemplate">RenderUiTemplate</a></code> | <code>string</code> | [Read] sagemaker:RenderUiTemplate. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.RetryPipelineExecution">RetryPipelineExecution</a></code> | <code>string</code> | [Write] sagemaker:RetryPipelineExecution. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.Sample">Sample</a></code> | <code>string</code> | [Write] sagemaker:Sample. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.SampleTrainingSession">SampleTrainingSession</a></code> | <code>string</code> | [Write] sagemaker:SampleTrainingSession. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.SampleTrainingSessionWithResponseStream">SampleTrainingSessionWithResponseStream</a></code> | <code>string</code> | [Write] sagemaker:SampleTrainingSessionWithResponseStream. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.SampleWithResponseStream">SampleWithResponseStream</a></code> | <code>string</code> | [Write] sagemaker:SampleWithResponseStream. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.Search">Search</a></code> | <code>string</code> | [Read] sagemaker:Search. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.SearchTrainingPlanOfferings">SearchTrainingPlanOfferings</a></code> | <code>string</code> | [Read] sagemaker:SearchTrainingPlanOfferings. |
@@ -11576,6 +11734,7 @@ new sagemaker.SageMakerActions()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.StopPipelineExecution">StopPipelineExecution</a></code> | <code>string</code> | [Write] sagemaker:StopPipelineExecution. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.StopProcessingJob">StopProcessingJob</a></code> | <code>string</code> | [Write] sagemaker:StopProcessingJob. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.StopTrainingJob">StopTrainingJob</a></code> | <code>string</code> | [Write] sagemaker:StopTrainingJob. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.StopTrainingSession">StopTrainingSession</a></code> | <code>string</code> | [Write] sagemaker:StopTrainingSession. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.StopTransformJob">StopTransformJob</a></code> | <code>string</code> | [Write] sagemaker:StopTransformJob. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.TrainHubModel">TrainHubModel</a></code> | <code>string</code> | [Write] sagemaker:TrainHubModel. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.UpdateAction">UpdateAction</a></code> | <code>string</code> | [Write] sagemaker:UpdateAction. |
@@ -11737,6 +11896,18 @@ public readonly actionGetSagemakerServicecatalogPortfolioStatus: string;
 
 ---
 
+##### `actionGetSamplingOperationResult`<sup>Required</sup> <a name="actionGetSamplingOperationResult" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.actionGetSamplingOperationResult"></a>
+
+```typescript
+public readonly actionGetSamplingOperationResult: string;
+```
+
+- *Type:* string
+
+[Read] sagemaker:GetSamplingOperationResult.
+
+---
+
 ##### `actionGetScalingConfigurationRecommendation`<sup>Required</sup> <a name="actionGetScalingConfigurationRecommendation" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.actionGetScalingConfigurationRecommendation"></a>
 
 ```typescript
@@ -11758,6 +11929,18 @@ public readonly actionGetSearchSuggestions: string;
 - *Type:* string
 
 [Read] sagemaker:GetSearchSuggestions.
+
+---
+
+##### `actionGetTrainingOperationResult`<sup>Required</sup> <a name="actionGetTrainingOperationResult" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.actionGetTrainingOperationResult"></a>
+
+```typescript
+public readonly actionGetTrainingOperationResult: string;
+```
+
+- *Type:* string
+
+[Read] sagemaker:GetTrainingOperationResult.
 
 ---
 
@@ -12865,6 +13048,18 @@ public readonly CreateTrainingPlan: string;
 
 ---
 
+##### `CreateTrainingSession`<sup>Required</sup> <a name="CreateTrainingSession" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.CreateTrainingSession"></a>
+
+```typescript
+public readonly CreateTrainingSession: string;
+```
+
+- *Type:* string
+
+[Write] sagemaker:CreateTrainingSession.
+
+---
+
 ##### `CreateTransformJob`<sup>Required</sup> <a name="CreateTransformJob" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.CreateTransformJob"></a>
 
 ```typescript
@@ -13666,6 +13861,18 @@ public readonly DeleteTrainingJob: string;
 - *Type:* string
 
 [Write] sagemaker:DeleteTrainingJob.
+
+---
+
+##### `DeleteTrainingSession`<sup>Required</sup> <a name="DeleteTrainingSession" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.DeleteTrainingSession"></a>
+
+```typescript
+public readonly DeleteTrainingSession: string;
+```
+
+- *Type:* string
+
+[Write] sagemaker:DeleteTrainingSession.
 
 ---
 
@@ -14629,6 +14836,18 @@ public readonly DescribeTrainingPlanExtensionHistory: string;
 
 ---
 
+##### `DescribeTrainingSession`<sup>Required</sup> <a name="DescribeTrainingSession" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeTrainingSession"></a>
+
+```typescript
+public readonly DescribeTrainingSession: string;
+```
+
+- *Type:* string
+
+[Read] sagemaker:DescribeTrainingSession.
+
+---
+
 ##### `DescribeTransformJob`<sup>Required</sup> <a name="DescribeTransformJob" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeTransformJob"></a>
 
 ```typescript
@@ -14746,6 +14965,30 @@ public readonly EnableSagemakerServicecatalogPortfolio: string;
 - *Type:* string
 
 [Write] sagemaker:EnableSagemakerServicecatalogPortfolio.
+
+---
+
+##### `ExecuteSamplingOperation`<sup>Required</sup> <a name="ExecuteSamplingOperation" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.ExecuteSamplingOperation"></a>
+
+```typescript
+public readonly ExecuteSamplingOperation: string;
+```
+
+- *Type:* string
+
+[Write] sagemaker:ExecuteSamplingOperation.
+
+---
+
+##### `ExecuteTrainingOperation`<sup>Required</sup> <a name="ExecuteTrainingOperation" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.ExecuteTrainingOperation"></a>
+
+```typescript
+public readonly ExecuteTrainingOperation: string;
+```
+
+- *Type:* string
+
+[Write] sagemaker:ExecuteTrainingOperation.
 
 ---
 
@@ -15865,6 +16108,18 @@ public readonly ListTrainingPlans: string;
 
 ---
 
+##### `ListTrainingSessions`<sup>Required</sup> <a name="ListTrainingSessions" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.ListTrainingSessions"></a>
+
+```typescript
+public readonly ListTrainingSessions: string;
+```
+
+- *Type:* string
+
+[List] sagemaker:ListTrainingSessions.
+
+---
+
 ##### `ListTransformJobs`<sup>Required</sup> <a name="ListTransformJobs" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.ListTransformJobs"></a>
 
 ```typescript
@@ -16054,6 +16309,30 @@ public readonly Sample: string;
 - *Type:* string
 
 [Write] sagemaker:Sample.
+
+---
+
+##### `SampleTrainingSession`<sup>Required</sup> <a name="SampleTrainingSession" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.SampleTrainingSession"></a>
+
+```typescript
+public readonly SampleTrainingSession: string;
+```
+
+- *Type:* string
+
+[Write] sagemaker:SampleTrainingSession.
+
+---
+
+##### `SampleTrainingSessionWithResponseStream`<sup>Required</sup> <a name="SampleTrainingSessionWithResponseStream" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.SampleTrainingSessionWithResponseStream"></a>
+
+```typescript
+public readonly SampleTrainingSessionWithResponseStream: string;
+```
+
+- *Type:* string
+
+[Write] sagemaker:SampleTrainingSessionWithResponseStream.
 
 ---
 
@@ -16486,6 +16765,18 @@ public readonly StopTrainingJob: string;
 - *Type:* string
 
 [Write] sagemaker:StopTrainingJob.
+
+---
+
+##### `StopTrainingSession`<sup>Required</sup> <a name="StopTrainingSession" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.StopTrainingSession"></a>
+
+```typescript
+public readonly StopTrainingSession: string;
+```
+
+- *Type:* string
+
+[Write] sagemaker:StopTrainingSession.
 
 ---
 
@@ -18309,6 +18600,7 @@ Generates a condition block for `sagemaker:WorkteamType`.
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.CreateStudioLifecycleConfigConditionKeys">CreateStudioLifecycleConfigConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateStudioLifecycleConfig action. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.CreateTrainingJobConditionKeys">CreateTrainingJobConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateTrainingJob action. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.CreateTrainingPlanConditionKeys">CreateTrainingPlanConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateTrainingPlan action. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.CreateTrainingSessionConditionKeys">CreateTrainingSessionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateTrainingSession action. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.CreateTransformJobConditionKeys">CreateTransformJobConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateTransformJob action. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.CreateTrialComponentConditionKeys">CreateTrialComponentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateTrialComponent action. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.CreateTrialConditionKeys">CreateTrialConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateTrial action. |
@@ -19211,6 +19503,18 @@ public readonly CreateTrainingPlanConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the CreateTrainingPlan action.
+
+---
+
+##### `CreateTrainingSessionConditionKeys`<sup>Required</sup> <a name="CreateTrainingSessionConditionKeys" id="@cdk_utils/iam.sagemaker.SageMakerConditions.property.CreateTrainingSessionConditionKeys"></a>
+
+```typescript
+public readonly CreateTrainingSessionConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateTrainingSession action.
 
 ---
 
@@ -20351,6 +20655,7 @@ new sagemaker.SageMakerOperations()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.CreateStudioLifecycleConfig">CreateStudioLifecycleConfig</a></code> | <code>string[]</code> | IAM actions required for the CreateStudioLifecycleConfig API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.CreateTrainingJob">CreateTrainingJob</a></code> | <code>string[]</code> | IAM actions required for the CreateTrainingJob API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.CreateTrainingPlan">CreateTrainingPlan</a></code> | <code>string[]</code> | IAM actions required for the CreateTrainingPlan API call. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.CreateTrainingSession">CreateTrainingSession</a></code> | <code>string[]</code> | IAM actions required for the CreateTrainingSession API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.CreateTransformJob">CreateTransformJob</a></code> | <code>string[]</code> | IAM actions required for the CreateTransformJob API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.CreateTrial">CreateTrial</a></code> | <code>string[]</code> | IAM actions required for the CreateTrial API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.CreateTrialComponent">CreateTrialComponent</a></code> | <code>string[]</code> | IAM actions required for the CreateTrialComponent API call. |
@@ -20416,6 +20721,7 @@ new sagemaker.SageMakerOperations()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DeleteStudioLifecycleConfig">DeleteStudioLifecycleConfig</a></code> | <code>string[]</code> | IAM actions required for the DeleteStudioLifecycleConfig API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DeleteTags">DeleteTags</a></code> | <code>string[]</code> | IAM actions required for the DeleteTags API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DeleteTrainingJob">DeleteTrainingJob</a></code> | <code>string[]</code> | IAM actions required for the DeleteTrainingJob API call. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DeleteTrainingSession">DeleteTrainingSession</a></code> | <code>string[]</code> | IAM actions required for the DeleteTrainingSession API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DeleteTrial">DeleteTrial</a></code> | <code>string[]</code> | IAM actions required for the DeleteTrial API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DeleteTrialComponent">DeleteTrialComponent</a></code> | <code>string[]</code> | IAM actions required for the DeleteTrialComponent API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DeleteUserProfile">DeleteUserProfile</a></code> | <code>string[]</code> | IAM actions required for the DeleteUserProfile API call. |
@@ -20493,6 +20799,7 @@ new sagemaker.SageMakerOperations()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeTrainingJob">DescribeTrainingJob</a></code> | <code>string[]</code> | IAM actions required for the DescribeTrainingJob API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeTrainingPlan">DescribeTrainingPlan</a></code> | <code>string[]</code> | IAM actions required for the DescribeTrainingPlan API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeTrainingPlanExtensionHistory">DescribeTrainingPlanExtensionHistory</a></code> | <code>string[]</code> | IAM actions required for the DescribeTrainingPlanExtensionHistory API call. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeTrainingSession">DescribeTrainingSession</a></code> | <code>string[]</code> | IAM actions required for the DescribeTrainingSession API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeTransformJob">DescribeTransformJob</a></code> | <code>string[]</code> | IAM actions required for the DescribeTransformJob API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeTrial">DescribeTrial</a></code> | <code>string[]</code> | IAM actions required for the DescribeTrial API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeTrialComponent">DescribeTrialComponent</a></code> | <code>string[]</code> | IAM actions required for the DescribeTrialComponent API call. |
@@ -20503,6 +20810,8 @@ new sagemaker.SageMakerOperations()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DisableSagemakerServicecatalogPortfolio">DisableSagemakerServicecatalogPortfolio</a></code> | <code>string[]</code> | IAM actions required for the DisableSagemakerServicecatalogPortfolio API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DisassociateTrialComponent">DisassociateTrialComponent</a></code> | <code>string[]</code> | IAM actions required for the DisassociateTrialComponent API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.EnableSagemakerServicecatalogPortfolio">EnableSagemakerServicecatalogPortfolio</a></code> | <code>string[]</code> | IAM actions required for the EnableSagemakerServicecatalogPortfolio API call. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ExecuteSamplingOperation">ExecuteSamplingOperation</a></code> | <code>string[]</code> | IAM actions required for the ExecuteSamplingOperation API call. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ExecuteTrainingOperation">ExecuteTrainingOperation</a></code> | <code>string[]</code> | IAM actions required for the ExecuteTrainingOperation API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ExtendTrainingPlan">ExtendTrainingPlan</a></code> | <code>string[]</code> | IAM actions required for the ExtendTrainingPlan API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ImportHubContent">ImportHubContent</a></code> | <code>string[]</code> | IAM actions required for the ImportHubContent API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.InvokeEndpoint">InvokeEndpoint</a></code> | <code>string[]</code> | IAM actions required for the InvokeEndpoint API call. |
@@ -20593,6 +20902,7 @@ new sagemaker.SageMakerOperations()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListTrainingJobs">ListTrainingJobs</a></code> | <code>string[]</code> | IAM actions required for the ListTrainingJobs API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListTrainingJobsForHyperParameterTuningJob">ListTrainingJobsForHyperParameterTuningJob</a></code> | <code>string[]</code> | IAM actions required for the ListTrainingJobsForHyperParameterTuningJob API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListTrainingPlans">ListTrainingPlans</a></code> | <code>string[]</code> | IAM actions required for the ListTrainingPlans API call. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListTrainingSessions">ListTrainingSessions</a></code> | <code>string[]</code> | IAM actions required for the ListTrainingSessions API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListTransformJobs">ListTransformJobs</a></code> | <code>string[]</code> | IAM actions required for the ListTransformJobs API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListTrialComponents">ListTrialComponents</a></code> | <code>string[]</code> | IAM actions required for the ListTrialComponents API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListTrials">ListTrials</a></code> | <code>string[]</code> | IAM actions required for the ListTrials API call. |
@@ -20607,8 +20917,10 @@ new sagemaker.SageMakerOperations()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.opGetModelPackageGroupPolicy">opGetModelPackageGroupPolicy</a></code> | <code>string[]</code> | IAM actions required for the GetModelPackageGroupPolicy API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.opGetRecord">opGetRecord</a></code> | <code>string[]</code> | IAM actions required for the GetRecord API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.opGetSagemakerServicecatalogPortfolioStatus">opGetSagemakerServicecatalogPortfolioStatus</a></code> | <code>string[]</code> | IAM actions required for the GetSagemakerServicecatalogPortfolioStatus API call. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.opGetSamplingOperationResult">opGetSamplingOperationResult</a></code> | <code>string[]</code> | IAM actions required for the GetSamplingOperationResult API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.opGetScalingConfigurationRecommendation">opGetScalingConfigurationRecommendation</a></code> | <code>string[]</code> | IAM actions required for the GetScalingConfigurationRecommendation API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.opGetSearchSuggestions">opGetSearchSuggestions</a></code> | <code>string[]</code> | IAM actions required for the GetSearchSuggestions API call. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.opGetTrainingOperationResult">opGetTrainingOperationResult</a></code> | <code>string[]</code> | IAM actions required for the GetTrainingOperationResult API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.PutModelPackageGroupPolicy">PutModelPackageGroupPolicy</a></code> | <code>string[]</code> | IAM actions required for the PutModelPackageGroupPolicy API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.PutRecord">PutRecord</a></code> | <code>string[]</code> | IAM actions required for the PutRecord API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.QueryLineage">QueryLineage</a></code> | <code>string[]</code> | IAM actions required for the QueryLineage API call. |
@@ -20616,6 +20928,8 @@ new sagemaker.SageMakerOperations()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.RenderUiTemplate">RenderUiTemplate</a></code> | <code>string[]</code> | IAM actions required for the RenderUiTemplate API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.RetryPipelineExecution">RetryPipelineExecution</a></code> | <code>string[]</code> | IAM actions required for the RetryPipelineExecution API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.Sample">Sample</a></code> | <code>string[]</code> | IAM actions required for the Sample API call. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.SampleTrainingSession">SampleTrainingSession</a></code> | <code>string[]</code> | IAM actions required for the SampleTrainingSession API call. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.SampleTrainingSessionWithResponseStream">SampleTrainingSessionWithResponseStream</a></code> | <code>string[]</code> | IAM actions required for the SampleTrainingSessionWithResponseStream API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.SampleWithResponseStream">SampleWithResponseStream</a></code> | <code>string[]</code> | IAM actions required for the SampleWithResponseStream API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.Search">Search</a></code> | <code>string[]</code> | IAM actions required for the Search API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.SearchTrainingPlanOfferings">SearchTrainingPlanOfferings</a></code> | <code>string[]</code> | IAM actions required for the SearchTrainingPlanOfferings API call. |
@@ -20650,6 +20964,7 @@ new sagemaker.SageMakerOperations()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.StopPipelineExecution">StopPipelineExecution</a></code> | <code>string[]</code> | IAM actions required for the StopPipelineExecution API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.StopProcessingJob">StopProcessingJob</a></code> | <code>string[]</code> | IAM actions required for the StopProcessingJob API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.StopTrainingJob">StopTrainingJob</a></code> | <code>string[]</code> | IAM actions required for the StopTrainingJob API call. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.StopTrainingSession">StopTrainingSession</a></code> | <code>string[]</code> | IAM actions required for the StopTrainingSession API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.StopTransformJob">StopTransformJob</a></code> | <code>string[]</code> | IAM actions required for the StopTransformJob API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.UpdateAction">UpdateAction</a></code> | <code>string[]</code> | IAM actions required for the UpdateAction API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.UpdateAppImageConfig">UpdateAppImageConfig</a></code> | <code>string[]</code> | IAM actions required for the UpdateAppImageConfig API call. |
@@ -21673,6 +21988,18 @@ IAM actions required for the CreateTrainingPlan API call.
 
 ---
 
+##### `CreateTrainingSession`<sup>Required</sup> <a name="CreateTrainingSession" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.CreateTrainingSession"></a>
+
+```typescript
+public readonly CreateTrainingSession: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateTrainingSession API call.
+
+---
+
 ##### `CreateTransformJob`<sup>Required</sup> <a name="CreateTransformJob" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.CreateTransformJob"></a>
 
 ```typescript
@@ -22450,6 +22777,18 @@ public readonly DeleteTrainingJob: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteTrainingJob API call.
+
+---
+
+##### `DeleteTrainingSession`<sup>Required</sup> <a name="DeleteTrainingSession" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.DeleteTrainingSession"></a>
+
+```typescript
+public readonly DeleteTrainingSession: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteTrainingSession API call.
 
 ---
 
@@ -23377,6 +23716,18 @@ IAM actions required for the DescribeTrainingPlanExtensionHistory API call.
 
 ---
 
+##### `DescribeTrainingSession`<sup>Required</sup> <a name="DescribeTrainingSession" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeTrainingSession"></a>
+
+```typescript
+public readonly DescribeTrainingSession: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeTrainingSession API call.
+
+---
+
 ##### `DescribeTransformJob`<sup>Required</sup> <a name="DescribeTransformJob" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeTransformJob"></a>
 
 ```typescript
@@ -23494,6 +23845,30 @@ public readonly EnableSagemakerServicecatalogPortfolio: string[];
 - *Type:* string[]
 
 IAM actions required for the EnableSagemakerServicecatalogPortfolio API call.
+
+---
+
+##### `ExecuteSamplingOperation`<sup>Required</sup> <a name="ExecuteSamplingOperation" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.ExecuteSamplingOperation"></a>
+
+```typescript
+public readonly ExecuteSamplingOperation: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ExecuteSamplingOperation API call.
+
+---
+
+##### `ExecuteTrainingOperation`<sup>Required</sup> <a name="ExecuteTrainingOperation" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.ExecuteTrainingOperation"></a>
+
+```typescript
+public readonly ExecuteTrainingOperation: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ExecuteTrainingOperation API call.
 
 ---
 
@@ -24577,6 +24952,18 @@ IAM actions required for the ListTrainingPlans API call.
 
 ---
 
+##### `ListTrainingSessions`<sup>Required</sup> <a name="ListTrainingSessions" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListTrainingSessions"></a>
+
+```typescript
+public readonly ListTrainingSessions: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListTrainingSessions API call.
+
+---
+
 ##### `ListTransformJobs`<sup>Required</sup> <a name="ListTransformJobs" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListTransformJobs"></a>
 
 ```typescript
@@ -24745,6 +25132,18 @@ IAM actions required for the GetSagemakerServicecatalogPortfolioStatus API call.
 
 ---
 
+##### `opGetSamplingOperationResult`<sup>Required</sup> <a name="opGetSamplingOperationResult" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.opGetSamplingOperationResult"></a>
+
+```typescript
+public readonly opGetSamplingOperationResult: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetSamplingOperationResult API call.
+
+---
+
 ##### `opGetScalingConfigurationRecommendation`<sup>Required</sup> <a name="opGetScalingConfigurationRecommendation" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.opGetScalingConfigurationRecommendation"></a>
 
 ```typescript
@@ -24766,6 +25165,18 @@ public readonly opGetSearchSuggestions: string[];
 - *Type:* string[]
 
 IAM actions required for the GetSearchSuggestions API call.
+
+---
+
+##### `opGetTrainingOperationResult`<sup>Required</sup> <a name="opGetTrainingOperationResult" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.opGetTrainingOperationResult"></a>
+
+```typescript
+public readonly opGetTrainingOperationResult: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetTrainingOperationResult API call.
 
 ---
 
@@ -24850,6 +25261,30 @@ public readonly Sample: string[];
 - *Type:* string[]
 
 IAM actions required for the Sample API call.
+
+---
+
+##### `SampleTrainingSession`<sup>Required</sup> <a name="SampleTrainingSession" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.SampleTrainingSession"></a>
+
+```typescript
+public readonly SampleTrainingSession: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the SampleTrainingSession API call.
+
+---
+
+##### `SampleTrainingSessionWithResponseStream`<sup>Required</sup> <a name="SampleTrainingSessionWithResponseStream" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.SampleTrainingSessionWithResponseStream"></a>
+
+```typescript
+public readonly SampleTrainingSessionWithResponseStream: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the SampleTrainingSessionWithResponseStream API call.
 
 ---
 
@@ -25258,6 +25693,18 @@ public readonly StopTrainingJob: string[];
 - *Type:* string[]
 
 IAM actions required for the StopTrainingJob API call.
+
+---
+
+##### `StopTrainingSession`<sup>Required</sup> <a name="StopTrainingSession" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.StopTrainingSession"></a>
+
+```typescript
+public readonly StopTrainingSession: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StopTrainingSession API call.
 
 ---
 
@@ -25966,6 +26413,7 @@ new sagemaker.SageMakerResources()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.isValidStudioLifecycleConfigArn">isValidStudioLifecycleConfigArn</a></code> | Validates whether a string is a valid ARN for the studio-lifecycle-config resource. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.isValidTrainingJobArn">isValidTrainingJobArn</a></code> | Validates whether a string is a valid ARN for the training-job resource. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.isValidTrainingPlanArn">isValidTrainingPlanArn</a></code> | Validates whether a string is a valid ARN for the training-plan resource. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.isValidTrainingSessionArn">isValidTrainingSessionArn</a></code> | Validates whether a string is a valid ARN for the training-session resource. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.isValidTransformJobArn">isValidTransformJobArn</a></code> | Validates whether a string is a valid ARN for the transform-job resource. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.isValidUserProfileArn">isValidUserProfileArn</a></code> | Validates whether a string is a valid ARN for the user-profile resource. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.isValidWorkforceArn">isValidWorkforceArn</a></code> | Validates whether a string is a valid ARN for the workforce resource. |
@@ -26057,6 +26505,7 @@ new sagemaker.SageMakerResources()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.parseStudioLifecycleConfigArn">parseStudioLifecycleConfigArn</a></code> | Parses a studio-lifecycle-config ARN into its components. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.parseTrainingJobArn">parseTrainingJobArn</a></code> | Parses a training-job ARN into its components. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.parseTrainingPlanArn">parseTrainingPlanArn</a></code> | Parses a training-plan ARN into its components. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.parseTrainingSessionArn">parseTrainingSessionArn</a></code> | Parses a training-session ARN into its components. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.parseTransformJobArn">parseTransformJobArn</a></code> | Parses a transform-job ARN into its components. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.parseUserProfileArn">parseUserProfileArn</a></code> | Parses a user-profile ARN into its components. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.parseWorkforceArn">parseWorkforceArn</a></code> | Parses a workforce ARN into its components. |
@@ -26074,6 +26523,7 @@ new sagemaker.SageMakerResources()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.studioLifecycleConfig">studioLifecycleConfig</a></code> | Builds an ARN for the studio-lifecycle-config resource. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.trainingJob">trainingJob</a></code> | Builds an ARN for the training-job resource. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.trainingPlan">trainingPlan</a></code> | Builds an ARN for the training-plan resource. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.trainingSession">trainingSession</a></code> | Builds an ARN for the training-session resource. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.transformJob">transformJob</a></code> | Builds an ARN for the transform-job resource. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.userProfile">userProfile</a></code> | Builds an ARN for the user-profile resource. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.workforce">workforce</a></code> | Builds an ARN for the workforce resource. |
@@ -27793,6 +28243,22 @@ Validates whether a string is a valid ARN for the training-plan resource.
 
 ---
 
+##### `isValidTrainingSessionArn` <a name="isValidTrainingSessionArn" id="@cdk_utils/iam.sagemaker.SageMakerResources.isValidTrainingSessionArn"></a>
+
+```typescript
+import { sagemaker } from '@cdk_utils/iam'
+
+sagemaker.SageMakerResources.isValidTrainingSessionArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the training-session resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.sagemaker.SageMakerResources.isValidTrainingSessionArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `isValidTransformJobArn` <a name="isValidTransformJobArn" id="@cdk_utils/iam.sagemaker.SageMakerResources.isValidTransformJobArn"></a>
 
 ```typescript
@@ -29249,6 +29715,22 @@ Parses a training-plan ARN into its components.
 
 ---
 
+##### `parseTrainingSessionArn` <a name="parseTrainingSessionArn" id="@cdk_utils/iam.sagemaker.SageMakerResources.parseTrainingSessionArn"></a>
+
+```typescript
+import { sagemaker } from '@cdk_utils/iam'
+
+sagemaker.SageMakerResources.parseTrainingSessionArn(arn: string)
+```
+
+Parses a training-session ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.sagemaker.SageMakerResources.parseTrainingSessionArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `parseTransformJobArn` <a name="parseTransformJobArn" id="@cdk_utils/iam.sagemaker.SageMakerResources.parseTransformJobArn"></a>
 
 ```typescript
@@ -29518,6 +30000,22 @@ Builds an ARN for the training-plan resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.sagemaker.SageMakerResources.trainingPlan.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.sagemaker.SageMakerTrainingPlanArnProps">SageMakerTrainingPlanArnProps</a>
+
+---
+
+##### `trainingSession` <a name="trainingSession" id="@cdk_utils/iam.sagemaker.SageMakerResources.trainingSession"></a>
+
+```typescript
+import { sagemaker } from '@cdk_utils/iam'
+
+sagemaker.SageMakerResources.trainingSession(props: SageMakerTrainingSessionArnProps)
+```
+
+Builds an ARN for the training-session resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.sagemaker.SageMakerResources.trainingSession.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.sagemaker.SageMakerTrainingSessionArnProps">SageMakerTrainingSessionArnProps</a>
 
 ---
 
