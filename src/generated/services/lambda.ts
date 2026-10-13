@@ -223,6 +223,9 @@ export class LambdaActions {
 	static readonly ListMicrovmImages = "lambda:ListMicrovmImages";
 	/** [List] lambda:ListMicrovms */
 	static readonly ListMicrovms = "lambda:ListMicrovms";
+	/** [List] lambda:ListNetworkConnectorVersions */
+	static readonly ListNetworkConnectorVersions =
+		"lambda:ListNetworkConnectorVersions";
 	/** [List] lambda:ListNetworkConnectors */
 	static readonly ListNetworkConnectors = "lambda:ListNetworkConnectors";
 	/** [List] lambda:ListProvisionedConcurrencyConfigs */
@@ -453,6 +456,7 @@ export class LambdaActions {
 		LambdaActions.ListMicrovmImageVersions,
 		LambdaActions.ListMicrovmImages,
 		LambdaActions.ListMicrovms,
+		LambdaActions.ListNetworkConnectorVersions,
 		LambdaActions.ListNetworkConnectors,
 		LambdaActions.ListProvisionedConcurrencyConfigs,
 		LambdaActions.ListVersionsByFunction,
@@ -1461,6 +1465,21 @@ export class LambdaOperations {
 		"iam:PassRole",
 		"lambda:TagResource",
 	];
+	/** IAM actions required for the CreateWebFunction API call. */
+	static readonly CreateWebFunction: string[] = [
+		"lambda:CreateWebFunction",
+		"iam:PassRole",
+		"lambda:TagResource",
+	];
+	/** IAM actions required for the CreateWebFunctionEndpoint API call. */
+	static readonly CreateWebFunctionEndpoint: string[] = [
+		"lambda:CreateWebFunctionEndpoint",
+	];
+	/** IAM actions required for the CreateWebFunctionRevision API call. */
+	static readonly CreateWebFunctionRevision: string[] = [
+		"lambda:CreateWebFunctionRevision",
+		"iam:PassRole",
+	];
 	/** IAM actions required for the DeleteAlias API call. */
 	static readonly DeleteAlias: string[] = ["lambda:DeleteAlias"];
 	/** IAM actions required for the DeleteCapacityProvider API call. */
@@ -1513,6 +1532,16 @@ export class LambdaOperations {
 	static readonly DeleteResourcePolicy: string[] = [
 		"lambda:DeleteResourcePolicy",
 		"lambda:RemovePermission",
+	];
+	/** IAM actions required for the DeleteWebFunction API call. */
+	static readonly DeleteWebFunction: string[] = ["lambda:DeleteWebFunction"];
+	/** IAM actions required for the DeleteWebFunctionEndpoint API call. */
+	static readonly DeleteWebFunctionEndpoint: string[] = [
+		"lambda:DeleteWebFunctionEndpoint",
+	];
+	/** IAM actions required for the DeleteWebFunctionRevision API call. */
+	static readonly DeleteWebFunctionRevision: string[] = [
+		"lambda:DeleteWebFunctionRevision",
 	];
 	/** IAM actions required for the GetAccountSettings API call. */
 	static readonly opGetAccountSettings: string[] = [
@@ -1622,6 +1651,16 @@ export class LambdaOperations {
 	static readonly opGetWebAccountSettings: string[] = [
 		"lambda:GetWebAccountSettings",
 	];
+	/** IAM actions required for the GetWebFunction API call. */
+	static readonly opGetWebFunction: string[] = ["lambda:GetWebFunction"];
+	/** IAM actions required for the GetWebFunctionEndpoint API call. */
+	static readonly opGetWebFunctionEndpoint: string[] = [
+		"lambda:GetWebFunctionEndpoint",
+	];
+	/** IAM actions required for the GetWebFunctionRevision API call. */
+	static readonly opGetWebFunctionRevision: string[] = [
+		"lambda:GetWebFunctionRevision",
+	];
 	/** IAM actions required for the Invoke API call. */
 	static readonly Invoke: string[] = ["lambda:InvokeFunction"];
 	/** IAM actions required for the InvokeAsync API call. */
@@ -1692,6 +1731,10 @@ export class LambdaOperations {
 	static readonly ListMicrovmImages: string[] = ["lambda:ListMicrovmImages"];
 	/** IAM actions required for the ListMicrovms API call. */
 	static readonly ListMicrovms: string[] = ["lambda:ListMicrovms"];
+	/** IAM actions required for the ListNetworkConnectorVersions API call. */
+	static readonly ListNetworkConnectorVersions: string[] = [
+		"lambda:ListNetworkConnectorVersions",
+	];
 	/** IAM actions required for the ListNetworkConnectors API call. */
 	static readonly ListNetworkConnectors: string[] = [
 		"lambda:ListNetworkConnectors",
@@ -1706,6 +1749,16 @@ export class LambdaOperations {
 	static readonly ListVersionsByFunction: string[] = [
 		"lambda:ListVersionsByFunction",
 	];
+	/** IAM actions required for the ListWebFunctionEndpoints API call. */
+	static readonly ListWebFunctionEndpoints: string[] = [
+		"lambda:ListWebFunctionEndpoints",
+	];
+	/** IAM actions required for the ListWebFunctionRevisions API call. */
+	static readonly ListWebFunctionRevisions: string[] = [
+		"lambda:ListWebFunctionRevisions",
+	];
+	/** IAM actions required for the ListWebFunctions API call. */
+	static readonly ListWebFunctions: string[] = ["lambda:ListWebFunctions"];
 	/** IAM actions required for the PublishLayerVersion API call. */
 	static readonly PublishLayerVersion: string[] = [
 		"lambda:PublishLayerVersion",
@@ -1831,6 +1884,10 @@ export class LambdaOperations {
 	static readonly UpdateNetworkConnector: string[] = [
 		"iam:PassRole",
 		"lambda:UpdateNetworkConnector",
+	];
+	/** IAM actions required for the UpdateWebFunctionEndpoint API call. */
+	static readonly UpdateWebFunctionEndpoint: string[] = [
+		"lambda:UpdateWebFunctionEndpoint",
 	];
 	/** IAM actions required for the UploadFunction API call. */
 	static readonly UploadFunction: string[] = [];

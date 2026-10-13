@@ -9129,6 +9129,7 @@ new glue.GlueOperations()
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.BatchGetCrawlers">BatchGetCrawlers</a></code> | <code>string[]</code> | IAM actions required for the BatchGetCrawlers API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.BatchGetCustomEntityTypes">BatchGetCustomEntityTypes</a></code> | <code>string[]</code> | IAM actions required for the BatchGetCustomEntityTypes API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.BatchGetDataQualityResult">BatchGetDataQualityResult</a></code> | <code>string[]</code> | IAM actions required for the BatchGetDataQualityResult API call. |
+| <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.BatchGetDataQualityResultV2">BatchGetDataQualityResultV2</a></code> | <code>string[]</code> | IAM actions required for the BatchGetDataQualityResultV2 API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.BatchGetDataQualityRulesetEvaluationRun">BatchGetDataQualityRulesetEvaluationRun</a></code> | <code>string[]</code> | IAM actions required for the BatchGetDataQualityRulesetEvaluationRun API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.BatchGetDevEndpoints">BatchGetDevEndpoints</a></code> | <code>string[]</code> | IAM actions required for the BatchGetDevEndpoints API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.BatchGetIterableForms">BatchGetIterableForms</a></code> | <code>string[]</code> | IAM actions required for the BatchGetIterableForms API call. |
@@ -9230,6 +9231,7 @@ new glue.GlueOperations()
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.ListCrawls">ListCrawls</a></code> | <code>string[]</code> | IAM actions required for the ListCrawls API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.ListCustomEntityTypes">ListCustomEntityTypes</a></code> | <code>string[]</code> | IAM actions required for the ListCustomEntityTypes API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.ListDataQualityResults">ListDataQualityResults</a></code> | <code>string[]</code> | IAM actions required for the ListDataQualityResults API call. |
+| <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.ListDataQualityResultsV2">ListDataQualityResultsV2</a></code> | <code>string[]</code> | IAM actions required for the ListDataQualityResultsV2 API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.ListDataQualityRuleRecommendationRuns">ListDataQualityRuleRecommendationRuns</a></code> | <code>string[]</code> | IAM actions required for the ListDataQualityRuleRecommendationRuns API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.ListDataQualityRulesetEvaluationRuns">ListDataQualityRulesetEvaluationRuns</a></code> | <code>string[]</code> | IAM actions required for the ListDataQualityRulesetEvaluationRuns API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.ListDataQualityRulesets">ListDataQualityRulesets</a></code> | <code>string[]</code> | IAM actions required for the ListDataQualityRulesets API call. |
@@ -9286,6 +9288,7 @@ new glue.GlueOperations()
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetDataQualityModel">opGetDataQualityModel</a></code> | <code>string[]</code> | IAM actions required for the GetDataQualityModel API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetDataQualityModelResult">opGetDataQualityModelResult</a></code> | <code>string[]</code> | IAM actions required for the GetDataQualityModelResult API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetDataQualityResult">opGetDataQualityResult</a></code> | <code>string[]</code> | IAM actions required for the GetDataQualityResult API call. |
+| <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetDataQualityResultV2">opGetDataQualityResultV2</a></code> | <code>string[]</code> | IAM actions required for the GetDataQualityResultV2 API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetDataQualityRuleRecommendationRun">opGetDataQualityRuleRecommendationRun</a></code> | <code>string[]</code> | IAM actions required for the GetDataQualityRuleRecommendationRun API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetDataQualityRuleset">opGetDataQualityRuleset</a></code> | <code>string[]</code> | IAM actions required for the GetDataQualityRuleset API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetDataQualityRulesetEvaluationRun">opGetDataQualityRulesetEvaluationRun</a></code> | <code>string[]</code> | IAM actions required for the GetDataQualityRulesetEvaluationRun API call. |
@@ -9345,6 +9348,7 @@ new glue.GlueOperations()
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetWorkflowRun">opGetWorkflowRun</a></code> | <code>string[]</code> | IAM actions required for the GetWorkflowRun API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetWorkflowRunProperties">opGetWorkflowRunProperties</a></code> | <code>string[]</code> | IAM actions required for the GetWorkflowRunProperties API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetWorkflowRuns">opGetWorkflowRuns</a></code> | <code>string[]</code> | IAM actions required for the GetWorkflowRuns API call. |
+| <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.PublishDataQualityResultV2">PublishDataQualityResultV2</a></code> | <code>string[]</code> | IAM actions required for the PublishDataQualityResultV2 API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.PutAsset">PutAsset</a></code> | <code>string[]</code> | IAM actions required for the PutAsset API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.PutAssetType">PutAssetType</a></code> | <code>string[]</code> | IAM actions required for the PutAssetType API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.PutAttachment">PutAttachment</a></code> | <code>string[]</code> | IAM actions required for the PutAttachment API call. |
@@ -9541,6 +9545,18 @@ public readonly BatchGetDataQualityResult: string[];
 - *Type:* string[]
 
 IAM actions required for the BatchGetDataQualityResult API call.
+
+---
+
+##### `BatchGetDataQualityResultV2`<sup>Required</sup> <a name="BatchGetDataQualityResultV2" id="@cdk_utils/iam.glue.GlueOperations.property.BatchGetDataQualityResultV2"></a>
+
+```typescript
+public readonly BatchGetDataQualityResultV2: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the BatchGetDataQualityResultV2 API call.
 
 ---
 
@@ -10756,6 +10772,18 @@ IAM actions required for the ListDataQualityResults API call.
 
 ---
 
+##### `ListDataQualityResultsV2`<sup>Required</sup> <a name="ListDataQualityResultsV2" id="@cdk_utils/iam.glue.GlueOperations.property.ListDataQualityResultsV2"></a>
+
+```typescript
+public readonly ListDataQualityResultsV2: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListDataQualityResultsV2 API call.
+
+---
+
 ##### `ListDataQualityRuleRecommendationRuns`<sup>Required</sup> <a name="ListDataQualityRuleRecommendationRuns" id="@cdk_utils/iam.glue.GlueOperations.property.ListDataQualityRuleRecommendationRuns"></a>
 
 ```typescript
@@ -11425,6 +11453,18 @@ public readonly opGetDataQualityResult: string[];
 - *Type:* string[]
 
 IAM actions required for the GetDataQualityResult API call.
+
+---
+
+##### `opGetDataQualityResultV2`<sup>Required</sup> <a name="opGetDataQualityResultV2" id="@cdk_utils/iam.glue.GlueOperations.property.opGetDataQualityResultV2"></a>
+
+```typescript
+public readonly opGetDataQualityResultV2: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetDataQualityResultV2 API call.
 
 ---
 
@@ -12133,6 +12173,18 @@ public readonly opGetWorkflowRuns: string[];
 - *Type:* string[]
 
 IAM actions required for the GetWorkflowRuns API call.
+
+---
+
+##### `PublishDataQualityResultV2`<sup>Required</sup> <a name="PublishDataQualityResultV2" id="@cdk_utils/iam.glue.GlueOperations.property.PublishDataQualityResultV2"></a>
+
+```typescript
+public readonly PublishDataQualityResultV2: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the PublishDataQualityResultV2 API call.
 
 ---
 

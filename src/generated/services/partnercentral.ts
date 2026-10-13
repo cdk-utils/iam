@@ -158,6 +158,12 @@ export class PartnercentralActions {
 	static readonly actionGetOpportunity = "partnercentral:GetOpportunity";
 	/** [Read] partnercentral:GetPartner */
 	static readonly actionGetPartner = "partnercentral:GetPartner";
+	/** [Read] partnercentral:GetPartnerCentralContentDocument */
+	static readonly actionGetPartnerCentralContentDocument =
+		"partnercentral:GetPartnerCentralContentDocument";
+	/** [Read] partnercentral:GetPartnerCentralContentMetadata */
+	static readonly actionGetPartnerCentralContentMetadata =
+		"partnercentral:GetPartnerCentralContentMetadata";
 	/** [Read] partnercentral:GetPartnerDashboard */
 	static readonly actionGetPartnerDashboard =
 		"partnercentral:GetPartnerDashboard";
@@ -255,6 +261,9 @@ export class PartnercentralActions {
 	/** [List] partnercentral:ListOpportunityFromEngagementTasks */
 	static readonly ListOpportunityFromEngagementTasks =
 		"partnercentral:ListOpportunityFromEngagementTasks";
+	/** [List] partnercentral:ListPartnerCentralContent */
+	static readonly ListPartnerCentralContent =
+		"partnercentral:ListPartnerCentralContent";
 	/** [List] partnercentral:ListPartnerPaths */
 	static readonly ListPartnerPaths = "partnercentral:ListPartnerPaths";
 	/** [List] partnercentral:ListPartners */
@@ -305,6 +314,9 @@ export class PartnercentralActions {
 	/** [Write] partnercentral:RejectEngagementInvitation */
 	static readonly RejectEngagementInvitation =
 		"partnercentral:RejectEngagementInvitation";
+	/** [List] partnercentral:SearchPartnerCentralContent */
+	static readonly SearchPartnerCentralContent =
+		"partnercentral:SearchPartnerCentralContent";
 	/** [List] partnercentral:SearchPartnerProfiles */
 	static readonly SearchPartnerProfiles =
 		"partnercentral:SearchPartnerProfiles";
@@ -395,6 +407,8 @@ export class PartnercentralActions {
 		PartnercentralActions.actionGetMarketplaceRevenueShareAllocation,
 		PartnercentralActions.actionGetOpportunity,
 		PartnercentralActions.actionGetPartner,
+		PartnercentralActions.actionGetPartnerCentralContentDocument,
+		PartnercentralActions.actionGetPartnerCentralContentMetadata,
 		PartnercentralActions.actionGetPartnerDashboard,
 		PartnercentralActions.actionGetPartnerProfile,
 		PartnercentralActions.actionGetProfileUpdateTask,
@@ -506,6 +520,7 @@ export class PartnercentralActions {
 		PartnercentralActions.ListMarketplaceRevenueShares,
 		PartnercentralActions.ListOpportunities,
 		PartnercentralActions.ListOpportunityFromEngagementTasks,
+		PartnercentralActions.ListPartnerCentralContent,
 		PartnercentralActions.ListPartnerPaths,
 		PartnercentralActions.ListPartners,
 		PartnercentralActions.ListProgramManagementAccounts,
@@ -516,6 +531,7 @@ export class PartnercentralActions {
 		PartnercentralActions.ListRevenueAttributionAllocations,
 		PartnercentralActions.ListRevenueAttributions,
 		PartnercentralActions.ListSolutions,
+		PartnercentralActions.SearchPartnerCentralContent,
 		PartnercentralActions.SearchPartnerProfiles,
 	];
 	/** All permission-management-level actions. */
@@ -2897,6 +2913,12 @@ export class PartnercentralConditions {
 		"aws:ResourceTag/${TagKey}",
 		"partnercentral:Catalog",
 	];
+	/** Condition keys applicable to the GetPartnerCentralContentDocument action. */
+	static readonly actionGetPartnerCentralContentDocumentConditionKeys: string[] =
+		["partnercentral:Catalog"];
+	/** Condition keys applicable to the GetPartnerCentralContentMetadata action. */
+	static readonly actionGetPartnerCentralContentMetadataConditionKeys: string[] =
+		["partnercentral:Catalog"];
 	/** Condition keys applicable to the GetPartnerDashboard action. */
 	static readonly actionGetPartnerDashboardConditionKeys: string[] = [
 		"partnercentral:Catalog",
@@ -3027,6 +3049,10 @@ export class PartnercentralConditions {
 	static readonly ListOpportunityFromEngagementTasksConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
+	/** Condition keys applicable to the ListPartnerCentralContent action. */
+	static readonly ListPartnerCentralContentConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
 	/** Condition keys applicable to the ListPartners action. */
 	static readonly ListPartnersConditionKeys: string[] = [
 		"partnercentral:Catalog",
@@ -3103,6 +3129,10 @@ export class PartnercentralConditions {
 	];
 	/** Condition keys applicable to the RejectEngagementInvitation action. */
 	static readonly RejectEngagementInvitationConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the SearchPartnerCentralContent action. */
+	static readonly SearchPartnerCentralContentConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the SendEmailVerificationCode action. */

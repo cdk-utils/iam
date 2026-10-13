@@ -938,6 +938,8 @@ new securityagent.SecurityagentActions()
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.BatchDeleteSecurityRequirements">BatchDeleteSecurityRequirements</a></code> | <code>string</code> | [Write] securityagent:BatchDeleteSecurityRequirements. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.BatchDeleteThreatModels">BatchDeleteThreatModels</a></code> | <code>string</code> | [Write] securityagent:BatchDeleteThreatModels. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.BatchDeleteThreats">BatchDeleteThreats</a></code> | <code>string</code> | [Write] securityagent:BatchDeleteThreats. |
+| <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.BatchDisassociateFindingIssue">BatchDisassociateFindingIssue</a></code> | <code>string</code> | [Write] securityagent:BatchDisassociateFindingIssue. |
+| <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.BatchExportFindings">BatchExportFindings</a></code> | <code>string</code> | [Write] securityagent:BatchExportFindings. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.BatchGetAgentSpaces">BatchGetAgentSpaces</a></code> | <code>string</code> | [Read] securityagent:BatchGetAgentSpaces. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.BatchGetArtifactMetadata">BatchGetArtifactMetadata</a></code> | <code>string</code> | [Read] securityagent:BatchGetArtifactMetadata. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.BatchGetCodeReviewJobs">BatchGetCodeReviewJobs</a></code> | <code>string</code> | [Read] securityagent:BatchGetCodeReviewJobs. |
@@ -1293,6 +1295,30 @@ public readonly BatchDeleteThreats: string;
 - *Type:* string
 
 [Write] securityagent:BatchDeleteThreats.
+
+---
+
+##### `BatchDisassociateFindingIssue`<sup>Required</sup> <a name="BatchDisassociateFindingIssue" id="@cdk_utils/iam.securityagent.SecurityagentActions.property.BatchDisassociateFindingIssue"></a>
+
+```typescript
+public readonly BatchDisassociateFindingIssue: string;
+```
+
+- *Type:* string
+
+[Write] securityagent:BatchDisassociateFindingIssue.
+
+---
+
+##### `BatchExportFindings`<sup>Required</sup> <a name="BatchExportFindings" id="@cdk_utils/iam.securityagent.SecurityagentActions.property.BatchExportFindings"></a>
+
+```typescript
+public readonly BatchExportFindings: string;
+```
+
+- *Type:* string
+
+[Write] securityagent:BatchExportFindings.
 
 ---
 
@@ -2776,6 +2802,8 @@ new securityagent.SecurityagentOperations()
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentOperations.property.BatchDeletePentests">BatchDeletePentests</a></code> | <code>string[]</code> | IAM actions required for the BatchDeletePentests API call. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentOperations.property.BatchDeleteSecurityRequirements">BatchDeleteSecurityRequirements</a></code> | <code>string[]</code> | IAM actions required for the BatchDeleteSecurityRequirements API call. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentOperations.property.BatchDeleteThreatModels">BatchDeleteThreatModels</a></code> | <code>string[]</code> | IAM actions required for the BatchDeleteThreatModels API call. |
+| <code><a href="#@cdk_utils/iam.securityagent.SecurityagentOperations.property.BatchDisassociateFindingIssue">BatchDisassociateFindingIssue</a></code> | <code>string[]</code> | IAM actions required for the BatchDisassociateFindingIssue API call. |
+| <code><a href="#@cdk_utils/iam.securityagent.SecurityagentOperations.property.BatchExportFindings">BatchExportFindings</a></code> | <code>string[]</code> | IAM actions required for the BatchExportFindings API call. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentOperations.property.BatchGetAgentSpaces">BatchGetAgentSpaces</a></code> | <code>string[]</code> | IAM actions required for the BatchGetAgentSpaces API call. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentOperations.property.BatchGetArtifactMetadata">BatchGetArtifactMetadata</a></code> | <code>string[]</code> | IAM actions required for the BatchGetArtifactMetadata API call. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentOperations.property.BatchGetCodeReviewJobs">BatchGetCodeReviewJobs</a></code> | <code>string[]</code> | IAM actions required for the BatchGetCodeReviewJobs API call. |
@@ -2936,6 +2964,30 @@ public readonly BatchDeleteThreatModels: string[];
 - *Type:* string[]
 
 IAM actions required for the BatchDeleteThreatModels API call.
+
+---
+
+##### `BatchDisassociateFindingIssue`<sup>Required</sup> <a name="BatchDisassociateFindingIssue" id="@cdk_utils/iam.securityagent.SecurityagentOperations.property.BatchDisassociateFindingIssue"></a>
+
+```typescript
+public readonly BatchDisassociateFindingIssue: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the BatchDisassociateFindingIssue API call.
+
+---
+
+##### `BatchExportFindings`<sup>Required</sup> <a name="BatchExportFindings" id="@cdk_utils/iam.securityagent.SecurityagentOperations.property.BatchExportFindings"></a>
+
+```typescript
+public readonly BatchExportFindings: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the BatchExportFindings API call.
 
 ---
 

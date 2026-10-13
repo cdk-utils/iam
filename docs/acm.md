@@ -685,6 +685,7 @@ new acm.ACMActions()
 | <code><a href="#@cdk_utils/iam.acm.ACMActions.property.CreateAcmeDomainValidation">CreateAcmeDomainValidation</a></code> | <code>string</code> | [Write] acm:CreateAcmeDomainValidation. |
 | <code><a href="#@cdk_utils/iam.acm.ACMActions.property.CreateAcmeEndpoint">CreateAcmeEndpoint</a></code> | <code>string</code> | [Write] acm:CreateAcmeEndpoint. |
 | <code><a href="#@cdk_utils/iam.acm.ACMActions.property.CreateAcmeExternalAccountBinding">CreateAcmeExternalAccountBinding</a></code> | <code>string</code> | [Write] acm:CreateAcmeExternalAccountBinding. |
+| <code><a href="#@cdk_utils/iam.acm.ACMActions.property.CreateTimeStamp">CreateTimeStamp</a></code> | <code>string</code> | [Write] acm:CreateTimeStamp. |
 | <code><a href="#@cdk_utils/iam.acm.ACMActions.property.DeleteAcmeDomainValidation">DeleteAcmeDomainValidation</a></code> | <code>string</code> | [Write] acm:DeleteAcmeDomainValidation. |
 | <code><a href="#@cdk_utils/iam.acm.ACMActions.property.DeleteAcmeEndpoint">DeleteAcmeEndpoint</a></code> | <code>string</code> | [Write] acm:DeleteAcmeEndpoint. |
 | <code><a href="#@cdk_utils/iam.acm.ACMActions.property.DeleteAcmeExternalAccountBinding">DeleteAcmeExternalAccountBinding</a></code> | <code>string</code> | [Write] acm:DeleteAcmeExternalAccountBinding. |
@@ -864,6 +865,18 @@ public readonly CreateAcmeExternalAccountBinding: string;
 - *Type:* string
 
 [Write] acm:CreateAcmeExternalAccountBinding.
+
+---
+
+##### `CreateTimeStamp`<sup>Required</sup> <a name="CreateTimeStamp" id="@cdk_utils/iam.acm.ACMActions.property.CreateTimeStamp"></a>
+
+```typescript
+public readonly CreateTimeStamp: string;
+```
+
+- *Type:* string
+
+[Write] acm:CreateTimeStamp.
 
 ---
 

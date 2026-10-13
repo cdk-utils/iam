@@ -21,6 +21,8 @@ export class ACMActions {
 	/** [Write] acm:CreateAcmeExternalAccountBinding */
 	static readonly CreateAcmeExternalAccountBinding =
 		"acm:CreateAcmeExternalAccountBinding";
+	/** [Write] acm:CreateTimeStamp */
+	static readonly CreateTimeStamp = "acm:CreateTimeStamp";
 	/** [Write] acm:DeleteAcmeDomainValidation */
 	static readonly DeleteAcmeDomainValidation = "acm:DeleteAcmeDomainValidation";
 	/** [Write] acm:DeleteAcmeEndpoint */
@@ -122,6 +124,7 @@ export class ACMActions {
 		ACMActions.CreateAcmeDomainValidation,
 		ACMActions.CreateAcmeEndpoint,
 		ACMActions.CreateAcmeExternalAccountBinding,
+		ACMActions.CreateTimeStamp,
 		ACMActions.DeleteAcmeDomainValidation,
 		ACMActions.DeleteAcmeEndpoint,
 		ACMActions.DeleteAcmeExternalAccountBinding,

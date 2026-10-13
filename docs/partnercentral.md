@@ -4152,6 +4152,8 @@ new partnercentral.PartnercentralActions()
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.actionGetMarketplaceRevenueShareAllocation">actionGetMarketplaceRevenueShareAllocation</a></code> | <code>string</code> | [Read] partnercentral:GetMarketplaceRevenueShareAllocation. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.actionGetOpportunity">actionGetOpportunity</a></code> | <code>string</code> | [Read] partnercentral:GetOpportunity. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.actionGetPartner">actionGetPartner</a></code> | <code>string</code> | [Read] partnercentral:GetPartner. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.actionGetPartnerCentralContentDocument">actionGetPartnerCentralContentDocument</a></code> | <code>string</code> | [Read] partnercentral:GetPartnerCentralContentDocument. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.actionGetPartnerCentralContentMetadata">actionGetPartnerCentralContentMetadata</a></code> | <code>string</code> | [Read] partnercentral:GetPartnerCentralContentMetadata. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.actionGetPartnerDashboard">actionGetPartnerDashboard</a></code> | <code>string</code> | [Read] partnercentral:GetPartnerDashboard. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.actionGetPartnerProfile">actionGetPartnerProfile</a></code> | <code>string</code> | [Read] partnercentral:GetPartnerProfile. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.actionGetProfileUpdateTask">actionGetProfileUpdateTask</a></code> | <code>string</code> | [Read] partnercentral:GetProfileUpdateTask. |
@@ -4227,6 +4229,7 @@ new partnercentral.PartnercentralActions()
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.ListMarketplaceRevenueShares">ListMarketplaceRevenueShares</a></code> | <code>string</code> | [List] partnercentral:ListMarketplaceRevenueShares. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.ListOpportunities">ListOpportunities</a></code> | <code>string</code> | [List] partnercentral:ListOpportunities. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.ListOpportunityFromEngagementTasks">ListOpportunityFromEngagementTasks</a></code> | <code>string</code> | [List] partnercentral:ListOpportunityFromEngagementTasks. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.ListPartnerCentralContent">ListPartnerCentralContent</a></code> | <code>string</code> | [List] partnercentral:ListPartnerCentralContent. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.ListPartnerPaths">ListPartnerPaths</a></code> | <code>string</code> | [List] partnercentral:ListPartnerPaths. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.ListPartners">ListPartners</a></code> | <code>string</code> | [List] partnercentral:ListPartners. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.ListProgramManagementAccounts">ListProgramManagementAccounts</a></code> | <code>string</code> | [List] partnercentral:ListProgramManagementAccounts. |
@@ -4246,6 +4249,7 @@ new partnercentral.PartnercentralActions()
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.RejectChannelHandshake">RejectChannelHandshake</a></code> | <code>string</code> | [Write] partnercentral:RejectChannelHandshake. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.RejectConnectionInvitation">RejectConnectionInvitation</a></code> | <code>string</code> | [Write] partnercentral:RejectConnectionInvitation. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.RejectEngagementInvitation">RejectEngagementInvitation</a></code> | <code>string</code> | [Write] partnercentral:RejectEngagementInvitation. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.SearchPartnerCentralContent">SearchPartnerCentralContent</a></code> | <code>string</code> | [List] partnercentral:SearchPartnerCentralContent. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.SearchPartnerProfiles">SearchPartnerProfiles</a></code> | <code>string</code> | [List] partnercentral:SearchPartnerProfiles. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.SendEmailVerificationCode">SendEmailVerificationCode</a></code> | <code>string</code> | [Write] partnercentral:SendEmailVerificationCode. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
@@ -4501,6 +4505,30 @@ public readonly actionGetPartner: string;
 - *Type:* string
 
 [Read] partnercentral:GetPartner.
+
+---
+
+##### `actionGetPartnerCentralContentDocument`<sup>Required</sup> <a name="actionGetPartnerCentralContentDocument" id="@cdk_utils/iam.partnercentral.PartnercentralActions.property.actionGetPartnerCentralContentDocument"></a>
+
+```typescript
+public readonly actionGetPartnerCentralContentDocument: string;
+```
+
+- *Type:* string
+
+[Read] partnercentral:GetPartnerCentralContentDocument.
+
+---
+
+##### `actionGetPartnerCentralContentMetadata`<sup>Required</sup> <a name="actionGetPartnerCentralContentMetadata" id="@cdk_utils/iam.partnercentral.PartnercentralActions.property.actionGetPartnerCentralContentMetadata"></a>
+
+```typescript
+public readonly actionGetPartnerCentralContentMetadata: string;
+```
+
+- *Type:* string
+
+[Read] partnercentral:GetPartnerCentralContentMetadata.
 
 ---
 
@@ -5404,6 +5432,18 @@ public readonly ListOpportunityFromEngagementTasks: string;
 
 ---
 
+##### `ListPartnerCentralContent`<sup>Required</sup> <a name="ListPartnerCentralContent" id="@cdk_utils/iam.partnercentral.PartnercentralActions.property.ListPartnerCentralContent"></a>
+
+```typescript
+public readonly ListPartnerCentralContent: string;
+```
+
+- *Type:* string
+
+[List] partnercentral:ListPartnerCentralContent.
+
+---
+
 ##### `ListPartnerPaths`<sup>Required</sup> <a name="ListPartnerPaths" id="@cdk_utils/iam.partnercentral.PartnercentralActions.property.ListPartnerPaths"></a>
 
 ```typescript
@@ -5629,6 +5669,18 @@ public readonly RejectEngagementInvitation: string;
 - *Type:* string
 
 [Write] partnercentral:RejectEngagementInvitation.
+
+---
+
+##### `SearchPartnerCentralContent`<sup>Required</sup> <a name="SearchPartnerCentralContent" id="@cdk_utils/iam.partnercentral.PartnercentralActions.property.SearchPartnerCentralContent"></a>
+
+```typescript
+public readonly SearchPartnerCentralContent: string;
+```
+
+- *Type:* string
+
+[List] partnercentral:SearchPartnerCentralContent.
 
 ---
 
@@ -6155,6 +6207,8 @@ Generates a condition block for `partnercentral:VerificationType`.
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.actionGetMarketplaceRevenueShareAllocationConditionKeys">actionGetMarketplaceRevenueShareAllocationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetMarketplaceRevenueShareAllocation action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.actionGetMarketplaceRevenueShareConditionKeys">actionGetMarketplaceRevenueShareConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetMarketplaceRevenueShare action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.actionGetOpportunityConditionKeys">actionGetOpportunityConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetOpportunity action. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.actionGetPartnerCentralContentDocumentConditionKeys">actionGetPartnerCentralContentDocumentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetPartnerCentralContentDocument action. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.actionGetPartnerCentralContentMetadataConditionKeys">actionGetPartnerCentralContentMetadataConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetPartnerCentralContentMetadata action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.actionGetPartnerConditionKeys">actionGetPartnerConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetPartner action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.actionGetPartnerDashboardConditionKeys">actionGetPartnerDashboardConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetPartnerDashboard action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.actionGetProfileUpdateTaskConditionKeys">actionGetProfileUpdateTaskConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetProfileUpdateTask action. |
@@ -6225,6 +6279,7 @@ Generates a condition block for `partnercentral:VerificationType`.
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.ListMarketplaceRevenueSharesConditionKeys">ListMarketplaceRevenueSharesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListMarketplaceRevenueShares action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.ListOpportunitiesConditionKeys">ListOpportunitiesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListOpportunities action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.ListOpportunityFromEngagementTasksConditionKeys">ListOpportunityFromEngagementTasksConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListOpportunityFromEngagementTasks action. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.ListPartnerCentralContentConditionKeys">ListPartnerCentralContentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListPartnerCentralContent action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.ListPartnersConditionKeys">ListPartnersConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListPartners action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.ListProgramManagementAccountsConditionKeys">ListProgramManagementAccountsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListProgramManagementAccounts action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.ListProspectingFromEngagementTasksConditionKeys">ListProspectingFromEngagementTasksConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListProspectingFromEngagementTasks action. |
@@ -6244,6 +6299,7 @@ Generates a condition block for `partnercentral:VerificationType`.
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.RejectConnectionInvitationConditionKeys">RejectConnectionInvitationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the RejectConnectionInvitation action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.RejectEngagementInvitationConditionKeys">RejectEngagementInvitationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the RejectEngagementInvitation action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.RELATED_ENTITY_TYPE">RELATED_ENTITY_TYPE</a></code> | <code>string</code> | Condition key: partnercentral:RelatedEntityType (String). |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.SearchPartnerCentralContentConditionKeys">SearchPartnerCentralContentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the SearchPartnerCentralContent action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.SendEmailVerificationCodeConditionKeys">SendEmailVerificationCodeConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the SendEmailVerificationCode action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.StartEngagementByAcceptingInvitationTaskConditionKeys">StartEngagementByAcceptingInvitationTaskConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartEngagementByAcceptingInvitationTask action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.StartEngagementFromOpportunityTaskConditionKeys">StartEngagementFromOpportunityTaskConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartEngagementFromOpportunityTask action. |
@@ -6462,6 +6518,30 @@ public readonly actionGetOpportunityConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the GetOpportunity action.
+
+---
+
+##### `actionGetPartnerCentralContentDocumentConditionKeys`<sup>Required</sup> <a name="actionGetPartnerCentralContentDocumentConditionKeys" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.property.actionGetPartnerCentralContentDocumentConditionKeys"></a>
+
+```typescript
+public readonly actionGetPartnerCentralContentDocumentConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetPartnerCentralContentDocument action.
+
+---
+
+##### `actionGetPartnerCentralContentMetadataConditionKeys`<sup>Required</sup> <a name="actionGetPartnerCentralContentMetadataConditionKeys" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.property.actionGetPartnerCentralContentMetadataConditionKeys"></a>
+
+```typescript
+public readonly actionGetPartnerCentralContentMetadataConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetPartnerCentralContentMetadata action.
 
 ---
 
@@ -7305,6 +7385,18 @@ Condition keys applicable to the ListOpportunityFromEngagementTasks action.
 
 ---
 
+##### `ListPartnerCentralContentConditionKeys`<sup>Required</sup> <a name="ListPartnerCentralContentConditionKeys" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.property.ListPartnerCentralContentConditionKeys"></a>
+
+```typescript
+public readonly ListPartnerCentralContentConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ListPartnerCentralContent action.
+
+---
+
 ##### `ListPartnersConditionKeys`<sup>Required</sup> <a name="ListPartnersConditionKeys" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.property.ListPartnersConditionKeys"></a>
 
 ```typescript
@@ -7530,6 +7622,18 @@ public readonly RELATED_ENTITY_TYPE: string;
 - *Type:* string
 
 Condition key: partnercentral:RelatedEntityType (String).
+
+---
+
+##### `SearchPartnerCentralContentConditionKeys`<sup>Required</sup> <a name="SearchPartnerCentralContentConditionKeys" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.property.SearchPartnerCentralContentConditionKeys"></a>
+
+```typescript
+public readonly SearchPartnerCentralContentConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the SearchPartnerCentralContent action.
 
 ---
 
