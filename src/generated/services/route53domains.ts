@@ -51,6 +51,8 @@ export class Route53domainsActions {
 		"route53domains:GetContactReachabilityStatus";
 	/** [Read] route53domains:GetDomainDetail */
 	static readonly actionGetDomainDetail = "route53domains:GetDomainDetail";
+	/** [Read] route53domains:GetDomainPrices */
+	static readonly actionGetDomainPrices = "route53domains:GetDomainPrices";
 	/** [Read] route53domains:GetDomainSuggestions */
 	static readonly actionGetDomainSuggestions =
 		"route53domains:GetDomainSuggestions";
@@ -107,6 +109,7 @@ export class Route53domainsActions {
 		Route53domainsActions.CheckDomainTransferability,
 		Route53domainsActions.actionGetContactReachabilityStatus,
 		Route53domainsActions.actionGetDomainDetail,
+		Route53domainsActions.actionGetDomainPrices,
 		Route53domainsActions.actionGetDomainSuggestions,
 		Route53domainsActions.actionGetOperationDetail,
 		Route53domainsActions.ListTagsForDomain,
@@ -208,6 +211,10 @@ export class Route53domainsOperations {
 	/** IAM actions required for the GetDomainDetail API call. */
 	static readonly opGetDomainDetail: string[] = [
 		"route53domains:GetDomainDetail",
+	];
+	/** IAM actions required for the GetDomainPrices API call. */
+	static readonly opGetDomainPrices: string[] = [
+		"route53domains:GetDomainPrices",
 	];
 	/** IAM actions required for the GetDomainSuggestions API call. */
 	static readonly opGetDomainSuggestions: string[] = [

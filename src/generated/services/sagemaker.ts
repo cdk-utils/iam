@@ -6650,6 +6650,7 @@ export class SageMakerOperations {
 	static readonly CreateTransformJob: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateTransformJob",
+		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateTrial API call. */
 	static readonly CreateTrial: string[] = [

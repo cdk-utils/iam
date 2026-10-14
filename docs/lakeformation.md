@@ -38,6 +38,7 @@ new lakeformation.LakeFormationActions()
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.actionGetQueryState">actionGetQueryState</a></code> | <code>string</code> | [Read] lakeformation:GetQueryState. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.actionGetQueryStatistics">actionGetQueryStatistics</a></code> | <code>string</code> | [Read] lakeformation:GetQueryStatistics. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.actionGetResourceLFTags">actionGetResourceLFTags</a></code> | <code>string</code> | [Read] lakeformation:GetResourceLFTags. |
+| <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.actionGetRLSPolicy">actionGetRLSPolicy</a></code> | <code>string</code> | [Read] lakeformation:GetRLSPolicy. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.actionGetTableObjects">actionGetTableObjects</a></code> | <code>string</code> | [Read] lakeformation:GetTableObjects. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.actionGetTemporaryGluePartitionCredentials">actionGetTemporaryGluePartitionCredentials</a></code> | <code>string</code> | [Read] lakeformation:GetTemporaryGluePartitionCredentials. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.actionGetTemporaryGlueTableCredentials">actionGetTemporaryGlueTableCredentials</a></code> | <code>string</code> | [Read] lakeformation:GetTemporaryGlueTableCredentials. |
@@ -49,6 +50,7 @@ new lakeformation.LakeFormationActions()
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.AllReadActions">AllReadActions</a></code> | <code>string[]</code> | All read-level actions. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.AllTaggingActions">AllTaggingActions</a></code> | <code>string[]</code> | All tagging-level actions. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
+| <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.AttachRLSPolicy">AttachRLSPolicy</a></code> | <code>string</code> | [PermissionManagement] lakeformation:AttachRLSPolicy. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.BatchGrantPermissions">BatchGrantPermissions</a></code> | <code>string</code> | [PermissionManagement] lakeformation:BatchGrantPermissions. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.BatchRevokePermissions">BatchRevokePermissions</a></code> | <code>string</code> | [PermissionManagement] lakeformation:BatchRevokePermissions. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.CancelTransaction">CancelTransaction</a></code> | <code>string</code> | [Write] lakeformation:CancelTransaction. |
@@ -58,16 +60,19 @@ new lakeformation.LakeFormationActions()
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.CreateLakeFormationOptIn">CreateLakeFormationOptIn</a></code> | <code>string</code> | [Write] lakeformation:CreateLakeFormationOptIn. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.CreateLFTag">CreateLFTag</a></code> | <code>string</code> | [Write] lakeformation:CreateLFTag. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.CreateLFTagExpression">CreateLFTagExpression</a></code> | <code>string</code> | [Write] lakeformation:CreateLFTagExpression. |
+| <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.CreateRLSPolicy">CreateRLSPolicy</a></code> | <code>string</code> | [Write] lakeformation:CreateRLSPolicy. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.DeleteDataCellsFilter">DeleteDataCellsFilter</a></code> | <code>string</code> | [Write] lakeformation:DeleteDataCellsFilter. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.DeleteLakeFormationIdentityCenterConfiguration">DeleteLakeFormationIdentityCenterConfiguration</a></code> | <code>string</code> | [Write] lakeformation:DeleteLakeFormationIdentityCenterConfiguration. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.DeleteLakeFormationOptIn">DeleteLakeFormationOptIn</a></code> | <code>string</code> | [Write] lakeformation:DeleteLakeFormationOptIn. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.DeleteLFTag">DeleteLFTag</a></code> | <code>string</code> | [Write] lakeformation:DeleteLFTag. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.DeleteLFTagExpression">DeleteLFTagExpression</a></code> | <code>string</code> | [Write] lakeformation:DeleteLFTagExpression. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.DeleteObjectsOnCancel">DeleteObjectsOnCancel</a></code> | <code>string</code> | [Write] lakeformation:DeleteObjectsOnCancel. |
+| <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.DeleteRLSPolicy">DeleteRLSPolicy</a></code> | <code>string</code> | [Write] lakeformation:DeleteRLSPolicy. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.DeregisterResource">DeregisterResource</a></code> | <code>string</code> | [Write] lakeformation:DeregisterResource. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.DescribeLakeFormationIdentityCenterConfiguration">DescribeLakeFormationIdentityCenterConfiguration</a></code> | <code>string</code> | [Read] lakeformation:DescribeLakeFormationIdentityCenterConfiguration. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.DescribeResource">DescribeResource</a></code> | <code>string</code> | [Read] lakeformation:DescribeResource. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.DescribeTransaction">DescribeTransaction</a></code> | <code>string</code> | [Read] lakeformation:DescribeTransaction. |
+| <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.DetachRLSPolicy">DetachRLSPolicy</a></code> | <code>string</code> | [PermissionManagement] lakeformation:DetachRLSPolicy. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.ExtendTransaction">ExtendTransaction</a></code> | <code>string</code> | [Write] lakeformation:ExtendTransaction. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.GrantPermissions">GrantPermissions</a></code> | <code>string</code> | [PermissionManagement] lakeformation:GrantPermissions. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.ListDataCellsFilter">ListDataCellsFilter</a></code> | <code>string</code> | [List] lakeformation:ListDataCellsFilter. |
@@ -76,6 +81,8 @@ new lakeformation.LakeFormationActions()
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.ListLFTags">ListLFTags</a></code> | <code>string</code> | [Read] lakeformation:ListLFTags. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.ListPermissions">ListPermissions</a></code> | <code>string</code> | [List] lakeformation:ListPermissions. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.ListResources">ListResources</a></code> | <code>string</code> | [List] lakeformation:ListResources. |
+| <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.ListRLSPolicies">ListRLSPolicies</a></code> | <code>string</code> | [List] lakeformation:ListRLSPolicies. |
+| <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.ListRLSPolicyAttachments">ListRLSPolicyAttachments</a></code> | <code>string</code> | [List] lakeformation:ListRLSPolicyAttachments. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.ListTableStorageOptimizers">ListTableStorageOptimizers</a></code> | <code>string</code> | [List] lakeformation:ListTableStorageOptimizers. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.ListTransactions">ListTransactions</a></code> | <code>string</code> | [List] lakeformation:ListTransactions. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.PutDataLakeSettings">PutDataLakeSettings</a></code> | <code>string</code> | [PermissionManagement] lakeformation:PutDataLakeSettings. |
@@ -93,6 +100,7 @@ new lakeformation.LakeFormationActions()
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.UpdateLFTag">UpdateLFTag</a></code> | <code>string</code> | [Write] lakeformation:UpdateLFTag. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.UpdateLFTagExpression">UpdateLFTagExpression</a></code> | <code>string</code> | [Write] lakeformation:UpdateLFTagExpression. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.UpdateResource">UpdateResource</a></code> | <code>string</code> | [Write] lakeformation:UpdateResource. |
+| <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.UpdateRLSPolicy">UpdateRLSPolicy</a></code> | <code>string</code> | [Write] lakeformation:UpdateRLSPolicy. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.UpdateTableObjects">UpdateTableObjects</a></code> | <code>string</code> | [Write] lakeformation:UpdateTableObjects. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationActions.property.UpdateTableStorageOptimizer">UpdateTableStorageOptimizer</a></code> | <code>string</code> | [Write] lakeformation:UpdateTableStorageOptimizer. |
 
@@ -215,6 +223,18 @@ public readonly actionGetResourceLFTags: string;
 - *Type:* string
 
 [Read] lakeformation:GetResourceLFTags.
+
+---
+
+##### `actionGetRLSPolicy`<sup>Required</sup> <a name="actionGetRLSPolicy" id="@cdk_utils/iam.lakeformation.LakeFormationActions.property.actionGetRLSPolicy"></a>
+
+```typescript
+public readonly actionGetRLSPolicy: string;
+```
+
+- *Type:* string
+
+[Read] lakeformation:GetRLSPolicy.
 
 ---
 
@@ -350,6 +370,18 @@ All write-level actions.
 
 ---
 
+##### `AttachRLSPolicy`<sup>Required</sup> <a name="AttachRLSPolicy" id="@cdk_utils/iam.lakeformation.LakeFormationActions.property.AttachRLSPolicy"></a>
+
+```typescript
+public readonly AttachRLSPolicy: string;
+```
+
+- *Type:* string
+
+[PermissionManagement] lakeformation:AttachRLSPolicy.
+
+---
+
 ##### `BatchGrantPermissions`<sup>Required</sup> <a name="BatchGrantPermissions" id="@cdk_utils/iam.lakeformation.LakeFormationActions.property.BatchGrantPermissions"></a>
 
 ```typescript
@@ -458,6 +490,18 @@ public readonly CreateLFTagExpression: string;
 
 ---
 
+##### `CreateRLSPolicy`<sup>Required</sup> <a name="CreateRLSPolicy" id="@cdk_utils/iam.lakeformation.LakeFormationActions.property.CreateRLSPolicy"></a>
+
+```typescript
+public readonly CreateRLSPolicy: string;
+```
+
+- *Type:* string
+
+[Write] lakeformation:CreateRLSPolicy.
+
+---
+
 ##### `DeleteDataCellsFilter`<sup>Required</sup> <a name="DeleteDataCellsFilter" id="@cdk_utils/iam.lakeformation.LakeFormationActions.property.DeleteDataCellsFilter"></a>
 
 ```typescript
@@ -530,6 +574,18 @@ public readonly DeleteObjectsOnCancel: string;
 
 ---
 
+##### `DeleteRLSPolicy`<sup>Required</sup> <a name="DeleteRLSPolicy" id="@cdk_utils/iam.lakeformation.LakeFormationActions.property.DeleteRLSPolicy"></a>
+
+```typescript
+public readonly DeleteRLSPolicy: string;
+```
+
+- *Type:* string
+
+[Write] lakeformation:DeleteRLSPolicy.
+
+---
+
 ##### `DeregisterResource`<sup>Required</sup> <a name="DeregisterResource" id="@cdk_utils/iam.lakeformation.LakeFormationActions.property.DeregisterResource"></a>
 
 ```typescript
@@ -575,6 +631,18 @@ public readonly DescribeTransaction: string;
 - *Type:* string
 
 [Read] lakeformation:DescribeTransaction.
+
+---
+
+##### `DetachRLSPolicy`<sup>Required</sup> <a name="DetachRLSPolicy" id="@cdk_utils/iam.lakeformation.LakeFormationActions.property.DetachRLSPolicy"></a>
+
+```typescript
+public readonly DetachRLSPolicy: string;
+```
+
+- *Type:* string
+
+[PermissionManagement] lakeformation:DetachRLSPolicy.
 
 ---
 
@@ -671,6 +739,30 @@ public readonly ListResources: string;
 - *Type:* string
 
 [List] lakeformation:ListResources.
+
+---
+
+##### `ListRLSPolicies`<sup>Required</sup> <a name="ListRLSPolicies" id="@cdk_utils/iam.lakeformation.LakeFormationActions.property.ListRLSPolicies"></a>
+
+```typescript
+public readonly ListRLSPolicies: string;
+```
+
+- *Type:* string
+
+[List] lakeformation:ListRLSPolicies.
+
+---
+
+##### `ListRLSPolicyAttachments`<sup>Required</sup> <a name="ListRLSPolicyAttachments" id="@cdk_utils/iam.lakeformation.LakeFormationActions.property.ListRLSPolicyAttachments"></a>
+
+```typescript
+public readonly ListRLSPolicyAttachments: string;
+```
+
+- *Type:* string
+
+[List] lakeformation:ListRLSPolicyAttachments.
 
 ---
 
@@ -878,6 +970,18 @@ public readonly UpdateResource: string;
 
 ---
 
+##### `UpdateRLSPolicy`<sup>Required</sup> <a name="UpdateRLSPolicy" id="@cdk_utils/iam.lakeformation.LakeFormationActions.property.UpdateRLSPolicy"></a>
+
+```typescript
+public readonly UpdateRLSPolicy: string;
+```
+
+- *Type:* string
+
+[Write] lakeformation:UpdateRLSPolicy.
+
+---
+
 ##### `UpdateTableObjects`<sup>Required</sup> <a name="UpdateTableObjects" id="@cdk_utils/iam.lakeformation.LakeFormationActions.property.UpdateTableObjects"></a>
 
 ```typescript
@@ -1004,6 +1108,7 @@ new lakeformation.LakeFormationOperations()
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.AddLFTagsToResource">AddLFTagsToResource</a></code> | <code>string[]</code> | IAM actions required for the AddLFTagsToResource API call. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.AssumeDecoratedRoleWithSAML">AssumeDecoratedRoleWithSAML</a></code> | <code>string[]</code> | IAM actions required for the AssumeDecoratedRoleWithSAML API call. |
+| <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.AttachRLSPolicy">AttachRLSPolicy</a></code> | <code>string[]</code> | IAM actions required for the AttachRLSPolicy API call. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.BatchGrantPermissions">BatchGrantPermissions</a></code> | <code>string[]</code> | IAM actions required for the BatchGrantPermissions API call. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.BatchRevokePermissions">BatchRevokePermissions</a></code> | <code>string[]</code> | IAM actions required for the BatchRevokePermissions API call. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.CancelTransaction">CancelTransaction</a></code> | <code>string[]</code> | IAM actions required for the CancelTransaction API call. |
@@ -1013,16 +1118,19 @@ new lakeformation.LakeFormationOperations()
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.CreateLakeFormationOptIn">CreateLakeFormationOptIn</a></code> | <code>string[]</code> | IAM actions required for the CreateLakeFormationOptIn API call. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.CreateLFTag">CreateLFTag</a></code> | <code>string[]</code> | IAM actions required for the CreateLFTag API call. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.CreateLFTagExpression">CreateLFTagExpression</a></code> | <code>string[]</code> | IAM actions required for the CreateLFTagExpression API call. |
+| <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.CreateRLSPolicy">CreateRLSPolicy</a></code> | <code>string[]</code> | IAM actions required for the CreateRLSPolicy API call. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.DeleteDataCellsFilter">DeleteDataCellsFilter</a></code> | <code>string[]</code> | IAM actions required for the DeleteDataCellsFilter API call. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.DeleteLakeFormationIdentityCenterConfiguration">DeleteLakeFormationIdentityCenterConfiguration</a></code> | <code>string[]</code> | IAM actions required for the DeleteLakeFormationIdentityCenterConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.DeleteLakeFormationOptIn">DeleteLakeFormationOptIn</a></code> | <code>string[]</code> | IAM actions required for the DeleteLakeFormationOptIn API call. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.DeleteLFTag">DeleteLFTag</a></code> | <code>string[]</code> | IAM actions required for the DeleteLFTag API call. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.DeleteLFTagExpression">DeleteLFTagExpression</a></code> | <code>string[]</code> | IAM actions required for the DeleteLFTagExpression API call. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.DeleteObjectsOnCancel">DeleteObjectsOnCancel</a></code> | <code>string[]</code> | IAM actions required for the DeleteObjectsOnCancel API call. |
+| <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.DeleteRLSPolicy">DeleteRLSPolicy</a></code> | <code>string[]</code> | IAM actions required for the DeleteRLSPolicy API call. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.DeregisterResource">DeregisterResource</a></code> | <code>string[]</code> | IAM actions required for the DeregisterResource API call. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.DescribeLakeFormationIdentityCenterConfiguration">DescribeLakeFormationIdentityCenterConfiguration</a></code> | <code>string[]</code> | IAM actions required for the DescribeLakeFormationIdentityCenterConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.DescribeResource">DescribeResource</a></code> | <code>string[]</code> | IAM actions required for the DescribeResource API call. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.DescribeTransaction">DescribeTransaction</a></code> | <code>string[]</code> | IAM actions required for the DescribeTransaction API call. |
+| <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.DetachRLSPolicy">DetachRLSPolicy</a></code> | <code>string[]</code> | IAM actions required for the DetachRLSPolicy API call. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.ExtendTransaction">ExtendTransaction</a></code> | <code>string[]</code> | IAM actions required for the ExtendTransaction API call. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.GrantPermissions">GrantPermissions</a></code> | <code>string[]</code> | IAM actions required for the GrantPermissions API call. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.ListDataCellsFilter">ListDataCellsFilter</a></code> | <code>string[]</code> | IAM actions required for the ListDataCellsFilter API call. |
@@ -1031,6 +1139,8 @@ new lakeformation.LakeFormationOperations()
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.ListLFTags">ListLFTags</a></code> | <code>string[]</code> | IAM actions required for the ListLFTags API call. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.ListPermissions">ListPermissions</a></code> | <code>string[]</code> | IAM actions required for the ListPermissions API call. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.ListResources">ListResources</a></code> | <code>string[]</code> | IAM actions required for the ListResources API call. |
+| <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.ListRLSPolicies">ListRLSPolicies</a></code> | <code>string[]</code> | IAM actions required for the ListRLSPolicies API call. |
+| <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.ListRLSPolicyAttachments">ListRLSPolicyAttachments</a></code> | <code>string[]</code> | IAM actions required for the ListRLSPolicyAttachments API call. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.ListTableStorageOptimizers">ListTableStorageOptimizers</a></code> | <code>string[]</code> | IAM actions required for the ListTableStorageOptimizers API call. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.ListTransactions">ListTransactions</a></code> | <code>string[]</code> | IAM actions required for the ListTransactions API call. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.opGetDataCellsFilter">opGetDataCellsFilter</a></code> | <code>string[]</code> | IAM actions required for the GetDataCellsFilter API call. |
@@ -1042,6 +1152,7 @@ new lakeformation.LakeFormationOperations()
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.opGetQueryState">opGetQueryState</a></code> | <code>string[]</code> | IAM actions required for the GetQueryState API call. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.opGetQueryStatistics">opGetQueryStatistics</a></code> | <code>string[]</code> | IAM actions required for the GetQueryStatistics API call. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.opGetResourceLFTags">opGetResourceLFTags</a></code> | <code>string[]</code> | IAM actions required for the GetResourceLFTags API call. |
+| <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.opGetRLSPolicy">opGetRLSPolicy</a></code> | <code>string[]</code> | IAM actions required for the GetRLSPolicy API call. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.opGetTableObjects">opGetTableObjects</a></code> | <code>string[]</code> | IAM actions required for the GetTableObjects API call. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.opGetTemporaryDataLocationCredentials">opGetTemporaryDataLocationCredentials</a></code> | <code>string[]</code> | IAM actions required for the GetTemporaryDataLocationCredentials API call. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.opGetTemporaryGluePartitionCredentials">opGetTemporaryGluePartitionCredentials</a></code> | <code>string[]</code> | IAM actions required for the GetTemporaryGluePartitionCredentials API call. |
@@ -1061,6 +1172,7 @@ new lakeformation.LakeFormationOperations()
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.UpdateLFTag">UpdateLFTag</a></code> | <code>string[]</code> | IAM actions required for the UpdateLFTag API call. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.UpdateLFTagExpression">UpdateLFTagExpression</a></code> | <code>string[]</code> | IAM actions required for the UpdateLFTagExpression API call. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.UpdateResource">UpdateResource</a></code> | <code>string[]</code> | IAM actions required for the UpdateResource API call. |
+| <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.UpdateRLSPolicy">UpdateRLSPolicy</a></code> | <code>string[]</code> | IAM actions required for the UpdateRLSPolicy API call. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.UpdateTableObjects">UpdateTableObjects</a></code> | <code>string[]</code> | IAM actions required for the UpdateTableObjects API call. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.UpdateTableStorageOptimizer">UpdateTableStorageOptimizer</a></code> | <code>string[]</code> | IAM actions required for the UpdateTableStorageOptimizer API call. |
 
@@ -1087,6 +1199,18 @@ public readonly AssumeDecoratedRoleWithSAML: string[];
 - *Type:* string[]
 
 IAM actions required for the AssumeDecoratedRoleWithSAML API call.
+
+---
+
+##### `AttachRLSPolicy`<sup>Required</sup> <a name="AttachRLSPolicy" id="@cdk_utils/iam.lakeformation.LakeFormationOperations.property.AttachRLSPolicy"></a>
+
+```typescript
+public readonly AttachRLSPolicy: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the AttachRLSPolicy API call.
 
 ---
 
@@ -1198,6 +1322,18 @@ IAM actions required for the CreateLFTagExpression API call.
 
 ---
 
+##### `CreateRLSPolicy`<sup>Required</sup> <a name="CreateRLSPolicy" id="@cdk_utils/iam.lakeformation.LakeFormationOperations.property.CreateRLSPolicy"></a>
+
+```typescript
+public readonly CreateRLSPolicy: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateRLSPolicy API call.
+
+---
+
 ##### `DeleteDataCellsFilter`<sup>Required</sup> <a name="DeleteDataCellsFilter" id="@cdk_utils/iam.lakeformation.LakeFormationOperations.property.DeleteDataCellsFilter"></a>
 
 ```typescript
@@ -1270,6 +1406,18 @@ IAM actions required for the DeleteObjectsOnCancel API call.
 
 ---
 
+##### `DeleteRLSPolicy`<sup>Required</sup> <a name="DeleteRLSPolicy" id="@cdk_utils/iam.lakeformation.LakeFormationOperations.property.DeleteRLSPolicy"></a>
+
+```typescript
+public readonly DeleteRLSPolicy: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteRLSPolicy API call.
+
+---
+
 ##### `DeregisterResource`<sup>Required</sup> <a name="DeregisterResource" id="@cdk_utils/iam.lakeformation.LakeFormationOperations.property.DeregisterResource"></a>
 
 ```typescript
@@ -1315,6 +1463,18 @@ public readonly DescribeTransaction: string[];
 - *Type:* string[]
 
 IAM actions required for the DescribeTransaction API call.
+
+---
+
+##### `DetachRLSPolicy`<sup>Required</sup> <a name="DetachRLSPolicy" id="@cdk_utils/iam.lakeformation.LakeFormationOperations.property.DetachRLSPolicy"></a>
+
+```typescript
+public readonly DetachRLSPolicy: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DetachRLSPolicy API call.
 
 ---
 
@@ -1411,6 +1571,30 @@ public readonly ListResources: string[];
 - *Type:* string[]
 
 IAM actions required for the ListResources API call.
+
+---
+
+##### `ListRLSPolicies`<sup>Required</sup> <a name="ListRLSPolicies" id="@cdk_utils/iam.lakeformation.LakeFormationOperations.property.ListRLSPolicies"></a>
+
+```typescript
+public readonly ListRLSPolicies: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListRLSPolicies API call.
+
+---
+
+##### `ListRLSPolicyAttachments`<sup>Required</sup> <a name="ListRLSPolicyAttachments" id="@cdk_utils/iam.lakeformation.LakeFormationOperations.property.ListRLSPolicyAttachments"></a>
+
+```typescript
+public readonly ListRLSPolicyAttachments: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListRLSPolicyAttachments API call.
 
 ---
 
@@ -1543,6 +1727,18 @@ public readonly opGetResourceLFTags: string[];
 - *Type:* string[]
 
 IAM actions required for the GetResourceLFTags API call.
+
+---
+
+##### `opGetRLSPolicy`<sup>Required</sup> <a name="opGetRLSPolicy" id="@cdk_utils/iam.lakeformation.LakeFormationOperations.property.opGetRLSPolicy"></a>
+
+```typescript
+public readonly opGetRLSPolicy: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetRLSPolicy API call.
 
 ---
 
@@ -1771,6 +1967,18 @@ public readonly UpdateResource: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateResource API call.
+
+---
+
+##### `UpdateRLSPolicy`<sup>Required</sup> <a name="UpdateRLSPolicy" id="@cdk_utils/iam.lakeformation.LakeFormationOperations.property.UpdateRLSPolicy"></a>
+
+```typescript
+public readonly UpdateRLSPolicy: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateRLSPolicy API call.
 
 ---
 

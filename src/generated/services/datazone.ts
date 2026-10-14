@@ -66,6 +66,8 @@ export class DatazoneActions {
 	static readonly CreateCellRun = "datazone:CreateCellRun";
 	/** [Write] datazone:CreateConnection */
 	static readonly CreateConnection = "datazone:CreateConnection";
+	/** [Write] datazone:CreateDataApp */
+	static readonly CreateDataApp = "datazone:CreateDataApp";
 	/** [Write] datazone:CreateDataProduct */
 	static readonly CreateDataProduct = "datazone:CreateDataProduct";
 	/** [Write] datazone:CreateDataProductRevision */
@@ -121,6 +123,9 @@ export class DatazoneActions {
 	static readonly CreateUserProfile = "datazone:CreateUserProfile";
 	/** [Write] datazone:DeleteAccountPool */
 	static readonly DeleteAccountPool = "datazone:DeleteAccountPool";
+	/** [Write] datazone:DeleteAgentApprovalPolicy */
+	static readonly DeleteAgentApprovalPolicy =
+		"datazone:DeleteAgentApprovalPolicy";
 	/** [Write] datazone:DeleteAsset */
 	static readonly DeleteAsset = "datazone:DeleteAsset";
 	/** [Write] datazone:DeleteAssetFilter */
@@ -133,6 +138,10 @@ export class DatazoneActions {
 	static readonly DeleteCellRun = "datazone:DeleteCellRun";
 	/** [Write] datazone:DeleteConnection */
 	static readonly DeleteConnection = "datazone:DeleteConnection";
+	/** [Write] datazone:DeleteConversation */
+	static readonly DeleteConversation = "datazone:DeleteConversation";
+	/** [Write] datazone:DeleteDataApp */
+	static readonly DeleteDataApp = "datazone:DeleteDataApp";
 	/** [Write] datazone:DeleteDataExportConfiguration */
 	static readonly DeleteDataExportConfiguration =
 		"datazone:DeleteDataExportConfiguration";
@@ -193,6 +202,8 @@ export class DatazoneActions {
 	/** [Write] datazone:DeleteTimeSeriesDataPoints */
 	static readonly DeleteTimeSeriesDataPoints =
 		"datazone:DeleteTimeSeriesDataPoints";
+	/** [Write] datazone:DeregisterAgentArtifact */
+	static readonly DeregisterAgentArtifact = "datazone:DeregisterAgentArtifact";
 	/** [Write] datazone:DisassociateEnvironmentRole */
 	static readonly DisassociateEnvironmentRole =
 		"datazone:DisassociateEnvironmentRole";
@@ -203,6 +214,9 @@ export class DatazoneActions {
 	static readonly GenerateCode = "datazone:GenerateCode";
 	/** [Read] datazone:GetAccountPool */
 	static readonly actionGetAccountPool = "datazone:GetAccountPool";
+	/** [Read] datazone:GetAgentApprovalPolicy */
+	static readonly actionGetAgentApprovalPolicy =
+		"datazone:GetAgentApprovalPolicy";
 	/** [Read] datazone:GetAsset */
 	static readonly actionGetAsset = "datazone:GetAsset";
 	/** [Read] datazone:GetAssetFilter */
@@ -224,6 +238,8 @@ export class DatazoneActions {
 	/** [Read] datazone:GetCurrentEffectivePolicy */
 	static readonly actionGetCurrentEffectivePolicy =
 		"datazone:GetCurrentEffectivePolicy";
+	/** [Read] datazone:GetDataApp */
+	static readonly actionGetDataApp = "datazone:GetDataApp";
 	/** [Read] datazone:GetDataExportConfiguration */
 	static readonly actionGetDataExportConfiguration =
 		"datazone:GetDataExportConfiguration";
@@ -319,6 +335,8 @@ export class DatazoneActions {
 	static readonly actionGetUpdateEligibility = "datazone:GetUpdateEligibility";
 	/** [Read] datazone:GetUserProfile */
 	static readonly actionGetUserProfile = "datazone:GetUserProfile";
+	/** [Write] datazone:InvokeAgent */
+	static readonly InvokeAgent = "datazone:InvokeAgent";
 	/** [List] datazone:ListAccountEnvironments */
 	static readonly ListAccountEnvironments = "datazone:ListAccountEnvironments";
 	/** [List] datazone:ListAccountPools */
@@ -326,6 +344,10 @@ export class DatazoneActions {
 	/** [List] datazone:ListAccountsInAccountPool */
 	static readonly ListAccountsInAccountPool =
 		"datazone:ListAccountsInAccountPool";
+	/** [List] datazone:ListAgentArtifacts */
+	static readonly ListAgentArtifacts = "datazone:ListAgentArtifacts";
+	/** [List] datazone:ListAgentSessionRecords */
+	static readonly ListAgentSessionRecords = "datazone:ListAgentSessionRecords";
 	/** [List] datazone:ListAssetFilters */
 	static readonly ListAssetFilters = "datazone:ListAssetFilters";
 	/** [List] datazone:ListAssetRevisions */
@@ -336,6 +358,8 @@ export class DatazoneActions {
 	static readonly ListConnections = "datazone:ListConnections";
 	/** [List] datazone:ListConversations */
 	static readonly ListConversations = "datazone:ListConversations";
+	/** [List] datazone:ListDataApps */
+	static readonly ListDataApps = "datazone:ListDataApps";
 	/** [List] datazone:ListDataProductRevisions */
 	static readonly ListDataProductRevisions =
 		"datazone:ListDataProductRevisions";
@@ -399,6 +423,8 @@ export class DatazoneActions {
 	static readonly ListProjects = "datazone:ListProjects";
 	/** [List] datazone:ListRules */
 	static readonly ListRules = "datazone:ListRules";
+	/** [List] datazone:ListSharedDataApps */
+	static readonly ListSharedDataApps = "datazone:ListSharedDataApps";
 	/** [List] datazone:ListSubscriptionGrants */
 	static readonly ListSubscriptionGrants = "datazone:ListSubscriptionGrants";
 	/** [List] datazone:ListSubscriptionRequests */
@@ -422,6 +448,8 @@ export class DatazoneActions {
 		"datazone:PostTimeSeriesDataPoints";
 	/** [Write] datazone:ProvisionDomain */
 	static readonly ProvisionDomain = "datazone:ProvisionDomain";
+	/** [Write] datazone:PutAgentApprovalPolicy */
+	static readonly PutAgentApprovalPolicy = "datazone:PutAgentApprovalPolicy";
 	/** [Write] datazone:PutCellRunResult */
 	static readonly PutCellRunResult = "datazone:PutCellRunResult";
 	/** [Write] datazone:PutDataExportConfiguration */
@@ -436,6 +464,8 @@ export class DatazoneActions {
 	static readonly QueryGraph = "datazone:QueryGraph";
 	/** [Write] datazone:RefreshToken */
 	static readonly RefreshToken = "datazone:RefreshToken";
+	/** [Write] datazone:RegisterAgentArtifact */
+	static readonly RegisterAgentArtifact = "datazone:RegisterAgentArtifact";
 	/** [Write] datazone:RejectPredictions */
 	static readonly RejectPredictions = "datazone:RejectPredictions";
 	/** [Write] datazone:RejectSubscriptionRequest */
@@ -487,6 +517,8 @@ export class DatazoneActions {
 	static readonly StartNotebookRun = "datazone:StartNotebookRun";
 	/** [Write] datazone:StartNotebookSync */
 	static readonly StartNotebookSync = "datazone:StartNotebookSync";
+	/** [Write] datazone:StopAgent */
+	static readonly StopAgent = "datazone:StopAgent";
 	/** [Write] datazone:StopCompute */
 	static readonly StopCompute = "datazone:StopCompute";
 	/** [Write] datazone:StopMetadataGenerationRun */
@@ -510,6 +542,10 @@ export class DatazoneActions {
 	static readonly UpdateCellRun = "datazone:UpdateCellRun";
 	/** [Write] datazone:UpdateConnection */
 	static readonly UpdateConnection = "datazone:UpdateConnection";
+	/** [Write] datazone:UpdateConversation */
+	static readonly UpdateConversation = "datazone:UpdateConversation";
+	/** [Write] datazone:UpdateDataApp */
+	static readonly UpdateDataApp = "datazone:UpdateDataApp";
 	/** [Write] datazone:UpdateDataSource */
 	static readonly UpdateDataSource = "datazone:UpdateDataSource";
 	/** [Write] datazone:UpdateDataSourceRunActivities */
@@ -573,6 +609,7 @@ export class DatazoneActions {
 		DatazoneActions.BatchGetCell,
 		DatazoneActions.BatchGetCellRun,
 		DatazoneActions.actionGetAccountPool,
+		DatazoneActions.actionGetAgentApprovalPolicy,
 		DatazoneActions.actionGetAsset,
 		DatazoneActions.actionGetAssetFilter,
 		DatazoneActions.actionGetAssetType,
@@ -583,6 +620,7 @@ export class DatazoneActions {
 		DatazoneActions.actionGetConnection,
 		DatazoneActions.actionGetConversation,
 		DatazoneActions.actionGetCurrentEffectivePolicy,
+		DatazoneActions.actionGetDataApp,
 		DatazoneActions.actionGetDataExportConfiguration,
 		DatazoneActions.actionGetDataProduct,
 		DatazoneActions.actionGetDataSource,
@@ -648,6 +686,7 @@ export class DatazoneActions {
 		DatazoneActions.CreateCell,
 		DatazoneActions.CreateCellRun,
 		DatazoneActions.CreateConnection,
+		DatazoneActions.CreateDataApp,
 		DatazoneActions.CreateDataProduct,
 		DatazoneActions.CreateDataProductRevision,
 		DatazoneActions.CreateDataSource,
@@ -673,12 +712,15 @@ export class DatazoneActions {
 		DatazoneActions.CreateSubscriptionTarget,
 		DatazoneActions.CreateUserProfile,
 		DatazoneActions.DeleteAccountPool,
+		DatazoneActions.DeleteAgentApprovalPolicy,
 		DatazoneActions.DeleteAsset,
 		DatazoneActions.DeleteAssetFilter,
 		DatazoneActions.DeleteAssetType,
 		DatazoneActions.DeleteCell,
 		DatazoneActions.DeleteCellRun,
 		DatazoneActions.DeleteConnection,
+		DatazoneActions.DeleteConversation,
+		DatazoneActions.DeleteDataApp,
 		DatazoneActions.DeleteDataExportConfiguration,
 		DatazoneActions.DeleteDataProduct,
 		DatazoneActions.DeleteDataSource,
@@ -704,16 +746,20 @@ export class DatazoneActions {
 		DatazoneActions.DeleteSubscriptionRequest,
 		DatazoneActions.DeleteSubscriptionTarget,
 		DatazoneActions.DeleteTimeSeriesDataPoints,
+		DatazoneActions.DeregisterAgentArtifact,
 		DatazoneActions.DisassociateEnvironmentRole,
 		DatazoneActions.DisassociateGovernedTerms,
 		DatazoneActions.GenerateCode,
+		DatazoneActions.InvokeAgent,
 		DatazoneActions.PostLineageEvent,
 		DatazoneActions.PostTimeSeriesDataPoints,
 		DatazoneActions.ProvisionDomain,
+		DatazoneActions.PutAgentApprovalPolicy,
 		DatazoneActions.PutCellRunResult,
 		DatazoneActions.PutDataExportConfiguration,
 		DatazoneActions.PutEnvironmentBlueprintConfiguration,
 		DatazoneActions.RefreshToken,
+		DatazoneActions.RegisterAgentArtifact,
 		DatazoneActions.RejectPredictions,
 		DatazoneActions.RejectSubscriptionRequest,
 		DatazoneActions.RemoveEntityOwner,
@@ -730,6 +776,7 @@ export class DatazoneActions {
 		DatazoneActions.StartNotebookImport,
 		DatazoneActions.StartNotebookRun,
 		DatazoneActions.StartNotebookSync,
+		DatazoneActions.StopAgent,
 		DatazoneActions.StopCompute,
 		DatazoneActions.StopMetadataGenerationRun,
 		DatazoneActions.StopNotebookCompute,
@@ -739,6 +786,8 @@ export class DatazoneActions {
 		DatazoneActions.UpdateCell,
 		DatazoneActions.UpdateCellRun,
 		DatazoneActions.UpdateConnection,
+		DatazoneActions.UpdateConversation,
+		DatazoneActions.UpdateDataApp,
 		DatazoneActions.UpdateDataSource,
 		DatazoneActions.UpdateDataSourceRunActivities,
 		DatazoneActions.UpdateDesignation,
@@ -768,11 +817,14 @@ export class DatazoneActions {
 		DatazoneActions.ListAccountEnvironments,
 		DatazoneActions.ListAccountPools,
 		DatazoneActions.ListAccountsInAccountPool,
+		DatazoneActions.ListAgentArtifacts,
+		DatazoneActions.ListAgentSessionRecords,
 		DatazoneActions.ListAssetFilters,
 		DatazoneActions.ListAssetRevisions,
 		DatazoneActions.ListCellRuns,
 		DatazoneActions.ListConnections,
 		DatazoneActions.ListConversations,
+		DatazoneActions.ListDataApps,
 		DatazoneActions.ListDataProductRevisions,
 		DatazoneActions.ListDataSourceRunActivities,
 		DatazoneActions.ListDataSourceRuns,
@@ -801,6 +853,7 @@ export class DatazoneActions {
 		DatazoneActions.ListProjectProfiles,
 		DatazoneActions.ListProjects,
 		DatazoneActions.ListRules,
+		DatazoneActions.ListSharedDataApps,
 		DatazoneActions.ListSubscriptionGrants,
 		DatazoneActions.ListSubscriptionRequests,
 		DatazoneActions.ListSubscriptionTargets,
@@ -953,7 +1006,10 @@ export class DatazoneOperations {
 	/** IAM actions required for the CreateAssetType API call. */
 	static readonly CreateAssetType: string[] = ["datazone:CreateAssetType"];
 	/** IAM actions required for the CreateConnection API call. */
-	static readonly CreateConnection: string[] = ["datazone:CreateConnection"];
+	static readonly CreateConnection: string[] = [
+		"datazone:CreateConnection",
+		"iam:PassRole",
+	];
 	/** IAM actions required for the CreateDataProduct API call. */
 	static readonly CreateDataProduct: string[] = ["datazone:CreateDataProduct"];
 	/** IAM actions required for the CreateDataProductRevision API call. */
