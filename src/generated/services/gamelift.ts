@@ -1135,13 +1135,11 @@ export class GameLiftOperations {
 	/** IAM actions required for the CreateBuild API call. */
 	static readonly CreateBuild: string[] = [
 		"gamelift:CreateBuild",
-		"gamelift:CreateBuild",
 		"iam:PassRole",
 		"gamelift:TagResource",
 	];
 	/** IAM actions required for the CreateContainerFleet API call. */
 	static readonly CreateContainerFleet: string[] = [
-		"gamelift:CreateContainerFleet",
 		"gamelift:CreateContainerFleet",
 		"iam:PassRole",
 		"gamelift:TagResource",
@@ -1149,12 +1147,10 @@ export class GameLiftOperations {
 	/** IAM actions required for the CreateContainerGroupDefinition API call. */
 	static readonly CreateContainerGroupDefinition: string[] = [
 		"gamelift:CreateContainerGroupDefinition",
-		"gamelift:CreateContainerGroupDefinition",
 		"gamelift:TagResource",
 	];
 	/** IAM actions required for the CreateFleet API call. */
 	static readonly CreateFleet: string[] = [
-		"gamelift:CreateFleet",
 		"gamelift:CreateFleet",
 		"iam:PassRole",
 		"gamelift:TagResource",
@@ -1166,7 +1162,6 @@ export class GameLiftOperations {
 	/** IAM actions required for the CreateGameServerGroup API call. */
 	static readonly CreateGameServerGroup: string[] = [
 		"gamelift:CreateGameServerGroup",
-		"gamelift:CreateGameServerGroup",
 		"iam:PassRole",
 		"gamelift:TagResource",
 	];
@@ -1174,7 +1169,6 @@ export class GameLiftOperations {
 	static readonly CreateGameSession: string[] = ["gamelift:CreateGameSession"];
 	/** IAM actions required for the CreateGameSessionQueue API call. */
 	static readonly CreateGameSessionQueue: string[] = [
-		"gamelift:CreateGameSessionQueue",
 		"gamelift:CreateGameSessionQueue",
 		"gamelift:TagResource",
 	];
@@ -1186,12 +1180,10 @@ export class GameLiftOperations {
 	/** IAM actions required for the CreateMatchmakingConfiguration API call. */
 	static readonly CreateMatchmakingConfiguration: string[] = [
 		"gamelift:CreateMatchmakingConfiguration",
-		"gamelift:CreateMatchmakingConfiguration",
 		"gamelift:TagResource",
 	];
 	/** IAM actions required for the CreateMatchmakingRuleSet API call. */
 	static readonly CreateMatchmakingRuleSet: string[] = [
-		"gamelift:CreateMatchmakingRuleSet",
 		"gamelift:CreateMatchmakingRuleSet",
 		"gamelift:TagResource",
 	];
@@ -1205,7 +1197,6 @@ export class GameLiftOperations {
 	];
 	/** IAM actions required for the CreateScript API call. */
 	static readonly CreateScript: string[] = [
-		"gamelift:CreateScript",
 		"gamelift:CreateScript",
 		"iam:PassRole",
 		"gamelift:TagResource",
@@ -1499,19 +1490,13 @@ export class GameLiftOperations {
 		"gamelift:SuspendGameServerGroup",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TagResource: string[] = [
-		"gamelift:TagResource",
-		"gamelift:TagResource",
-	];
+	static readonly TagResource: string[] = ["gamelift:TagResource"];
 	/** IAM actions required for the TerminateGameSession API call. */
 	static readonly TerminateGameSession: string[] = [
 		"gamelift:TerminateGameSession",
 	];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UntagResource: string[] = [
-		"gamelift:UntagResource",
-		"gamelift:UntagResource",
-	];
+	static readonly UntagResource: string[] = ["gamelift:UntagResource"];
 	/** IAM actions required for the UpdateAlias API call. */
 	static readonly UpdateAlias: string[] = ["gamelift:UpdateAlias"];
 	/** IAM actions required for the UpdateBuild API call. */

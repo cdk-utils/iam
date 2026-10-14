@@ -14,6 +14,8 @@ export class LakeFormationActions {
 
 	/** [Tagging] lakeformation:AddLFTagsToResource */
 	static readonly AddLFTagsToResource = "lakeformation:AddLFTagsToResource";
+	/** [PermissionManagement] lakeformation:AttachRLSPolicy */
+	static readonly AttachRLSPolicy = "lakeformation:AttachRLSPolicy";
 	/** [PermissionManagement] lakeformation:BatchGrantPermissions */
 	static readonly BatchGrantPermissions = "lakeformation:BatchGrantPermissions";
 	/** [PermissionManagement] lakeformation:BatchRevokePermissions */
@@ -35,6 +37,8 @@ export class LakeFormationActions {
 	/** [Write] lakeformation:CreateLakeFormationOptIn */
 	static readonly CreateLakeFormationOptIn =
 		"lakeformation:CreateLakeFormationOptIn";
+	/** [Write] lakeformation:CreateRLSPolicy */
+	static readonly CreateRLSPolicy = "lakeformation:CreateRLSPolicy";
 	/** [Write] lakeformation:DeleteDataCellsFilter */
 	static readonly DeleteDataCellsFilter = "lakeformation:DeleteDataCellsFilter";
 	/** [Write] lakeformation:DeleteLFTag */
@@ -49,6 +53,8 @@ export class LakeFormationActions {
 		"lakeformation:DeleteLakeFormationOptIn";
 	/** [Write] lakeformation:DeleteObjectsOnCancel */
 	static readonly DeleteObjectsOnCancel = "lakeformation:DeleteObjectsOnCancel";
+	/** [Write] lakeformation:DeleteRLSPolicy */
+	static readonly DeleteRLSPolicy = "lakeformation:DeleteRLSPolicy";
 	/** [Write] lakeformation:DeregisterResource */
 	static readonly DeregisterResource = "lakeformation:DeregisterResource";
 	/** [Read] lakeformation:DescribeLakeFormationIdentityCenterConfiguration */
@@ -58,6 +64,8 @@ export class LakeFormationActions {
 	static readonly DescribeResource = "lakeformation:DescribeResource";
 	/** [Read] lakeformation:DescribeTransaction */
 	static readonly DescribeTransaction = "lakeformation:DescribeTransaction";
+	/** [PermissionManagement] lakeformation:DetachRLSPolicy */
+	static readonly DetachRLSPolicy = "lakeformation:DetachRLSPolicy";
 	/** [Write] lakeformation:ExtendTransaction */
 	static readonly ExtendTransaction = "lakeformation:ExtendTransaction";
 	/** [Write] lakeformation:GetDataAccess */
@@ -81,6 +89,8 @@ export class LakeFormationActions {
 	static readonly actionGetQueryState = "lakeformation:GetQueryState";
 	/** [Read] lakeformation:GetQueryStatistics */
 	static readonly actionGetQueryStatistics = "lakeformation:GetQueryStatistics";
+	/** [Read] lakeformation:GetRLSPolicy */
+	static readonly actionGetRLSPolicy = "lakeformation:GetRLSPolicy";
 	/** [Read] lakeformation:GetResourceLFTags */
 	static readonly actionGetResourceLFTags = "lakeformation:GetResourceLFTags";
 	/** [Read] lakeformation:GetTableObjects */
@@ -108,6 +118,11 @@ export class LakeFormationActions {
 		"lakeformation:ListLakeFormationOptIns";
 	/** [List] lakeformation:ListPermissions */
 	static readonly ListPermissions = "lakeformation:ListPermissions";
+	/** [List] lakeformation:ListRLSPolicies */
+	static readonly ListRLSPolicies = "lakeformation:ListRLSPolicies";
+	/** [List] lakeformation:ListRLSPolicyAttachments */
+	static readonly ListRLSPolicyAttachments =
+		"lakeformation:ListRLSPolicyAttachments";
 	/** [List] lakeformation:ListResources */
 	static readonly ListResources = "lakeformation:ListResources";
 	/** [List] lakeformation:ListTableStorageOptimizers */
@@ -145,6 +160,8 @@ export class LakeFormationActions {
 	/** [Write] lakeformation:UpdateLakeFormationIdentityCenterConfiguration */
 	static readonly UpdateLakeFormationIdentityCenterConfiguration =
 		"lakeformation:UpdateLakeFormationIdentityCenterConfiguration";
+	/** [Write] lakeformation:UpdateRLSPolicy */
+	static readonly UpdateRLSPolicy = "lakeformation:UpdateRLSPolicy";
 	/** [Write] lakeformation:UpdateResource */
 	static readonly UpdateResource = "lakeformation:UpdateResource";
 	/** [Write] lakeformation:UpdateTableObjects */
@@ -166,6 +183,7 @@ export class LakeFormationActions {
 		LakeFormationActions.actionGetLFTagExpression,
 		LakeFormationActions.actionGetQueryState,
 		LakeFormationActions.actionGetQueryStatistics,
+		LakeFormationActions.actionGetRLSPolicy,
 		LakeFormationActions.actionGetResourceLFTags,
 		LakeFormationActions.actionGetTableObjects,
 		LakeFormationActions.actionGetTemporaryGluePartitionCredentials,
@@ -186,12 +204,14 @@ export class LakeFormationActions {
 		LakeFormationActions.CreateLFTagExpression,
 		LakeFormationActions.CreateLakeFormationIdentityCenterConfiguration,
 		LakeFormationActions.CreateLakeFormationOptIn,
+		LakeFormationActions.CreateRLSPolicy,
 		LakeFormationActions.DeleteDataCellsFilter,
 		LakeFormationActions.DeleteLFTag,
 		LakeFormationActions.DeleteLFTagExpression,
 		LakeFormationActions.DeleteLakeFormationIdentityCenterConfiguration,
 		LakeFormationActions.DeleteLakeFormationOptIn,
 		LakeFormationActions.DeleteObjectsOnCancel,
+		LakeFormationActions.DeleteRLSPolicy,
 		LakeFormationActions.DeregisterResource,
 		LakeFormationActions.ExtendTransaction,
 		LakeFormationActions.actionGetDataAccess,
@@ -203,6 +223,7 @@ export class LakeFormationActions {
 		LakeFormationActions.UpdateLFTag,
 		LakeFormationActions.UpdateLFTagExpression,
 		LakeFormationActions.UpdateLakeFormationIdentityCenterConfiguration,
+		LakeFormationActions.UpdateRLSPolicy,
 		LakeFormationActions.UpdateResource,
 		LakeFormationActions.UpdateTableObjects,
 		LakeFormationActions.UpdateTableStorageOptimizer,
@@ -212,14 +233,18 @@ export class LakeFormationActions {
 		LakeFormationActions.ListDataCellsFilter,
 		LakeFormationActions.ListLakeFormationOptIns,
 		LakeFormationActions.ListPermissions,
+		LakeFormationActions.ListRLSPolicies,
+		LakeFormationActions.ListRLSPolicyAttachments,
 		LakeFormationActions.ListResources,
 		LakeFormationActions.ListTableStorageOptimizers,
 		LakeFormationActions.ListTransactions,
 	];
 	/** All permission-management-level actions. */
 	static readonly AllPermissionManagementActions: string[] = [
+		LakeFormationActions.AttachRLSPolicy,
 		LakeFormationActions.BatchGrantPermissions,
 		LakeFormationActions.BatchRevokePermissions,
+		LakeFormationActions.DetachRLSPolicy,
 		LakeFormationActions.GrantPermissions,
 		LakeFormationActions.PutDataLakeSettings,
 		LakeFormationActions.RevokePermissions,
@@ -239,6 +264,8 @@ export class LakeFormationOperations {
 	static readonly AddLFTagsToResource: string[] = [];
 	/** IAM actions required for the AssumeDecoratedRoleWithSAML API call. */
 	static readonly AssumeDecoratedRoleWithSAML: string[] = [];
+	/** IAM actions required for the AttachRLSPolicy API call. */
+	static readonly AttachRLSPolicy: string[] = ["lakeformation:AttachRLSPolicy"];
 	/** IAM actions required for the BatchGrantPermissions API call. */
 	static readonly BatchGrantPermissions: string[] = [
 		"lakeformation:BatchGrantPermissions",
@@ -269,6 +296,8 @@ export class LakeFormationOperations {
 	static readonly CreateLakeFormationOptIn: string[] = [
 		"lakeformation:CreateLakeFormationOptIn",
 	];
+	/** IAM actions required for the CreateRLSPolicy API call. */
+	static readonly CreateRLSPolicy: string[] = ["lakeformation:CreateRLSPolicy"];
 	/** IAM actions required for the DeleteDataCellsFilter API call. */
 	static readonly DeleteDataCellsFilter: string[] = [
 		"lakeformation:DeleteDataCellsFilter",
@@ -289,6 +318,8 @@ export class LakeFormationOperations {
 	];
 	/** IAM actions required for the DeleteObjectsOnCancel API call. */
 	static readonly DeleteObjectsOnCancel: string[] = [];
+	/** IAM actions required for the DeleteRLSPolicy API call. */
+	static readonly DeleteRLSPolicy: string[] = ["lakeformation:DeleteRLSPolicy"];
 	/** IAM actions required for the DeregisterResource API call. */
 	static readonly DeregisterResource: string[] = [];
 	/** IAM actions required for the DescribeLakeFormationIdentityCenterConfiguration API call. */
@@ -299,6 +330,8 @@ export class LakeFormationOperations {
 	static readonly DescribeResource: string[] = [];
 	/** IAM actions required for the DescribeTransaction API call. */
 	static readonly DescribeTransaction: string[] = [];
+	/** IAM actions required for the DetachRLSPolicy API call. */
+	static readonly DetachRLSPolicy: string[] = ["lakeformation:DetachRLSPolicy"];
 	/** IAM actions required for the ExtendTransaction API call. */
 	static readonly ExtendTransaction: string[] = [];
 	/** IAM actions required for the GetDataCellsFilter API call. */
@@ -329,6 +362,8 @@ export class LakeFormationOperations {
 	static readonly opGetQueryStatistics: string[] = [
 		"lakeformation:GetQueryStatistics",
 	];
+	/** IAM actions required for the GetRLSPolicy API call. */
+	static readonly opGetRLSPolicy: string[] = ["lakeformation:GetRLSPolicy"];
 	/** IAM actions required for the GetResourceLFTags API call. */
 	static readonly opGetResourceLFTags: string[] = [];
 	/** IAM actions required for the GetTableObjects API call. */
@@ -365,6 +400,12 @@ export class LakeFormationOperations {
 	];
 	/** IAM actions required for the ListPermissions API call. */
 	static readonly ListPermissions: string[] = ["lakeformation:ListPermissions"];
+	/** IAM actions required for the ListRLSPolicies API call. */
+	static readonly ListRLSPolicies: string[] = ["lakeformation:ListRLSPolicies"];
+	/** IAM actions required for the ListRLSPolicyAttachments API call. */
+	static readonly ListRLSPolicyAttachments: string[] = [
+		"lakeformation:ListRLSPolicyAttachments",
+	];
 	/** IAM actions required for the ListResources API call. */
 	static readonly ListResources: string[] = [];
 	/** IAM actions required for the ListTableStorageOptimizers API call. */
@@ -405,6 +446,8 @@ export class LakeFormationOperations {
 	static readonly UpdateLakeFormationIdentityCenterConfiguration: string[] = [
 		"lakeformation:UpdateLakeFormationIdentityCenterConfiguration",
 	];
+	/** IAM actions required for the UpdateRLSPolicy API call. */
+	static readonly UpdateRLSPolicy: string[] = ["lakeformation:UpdateRLSPolicy"];
 	/** IAM actions required for the UpdateResource API call. */
 	static readonly UpdateResource: string[] = [];
 	/** IAM actions required for the UpdateTableObjects API call. */

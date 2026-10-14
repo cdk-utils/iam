@@ -10503,6 +10503,16 @@
       ]
     },
     {
+      "Name": "CreateContactFlowAlias",
+      "SDK": [
+        {
+          "Name": "connect",
+          "Method": "create_contact_flow_alias",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "CreateContactFlowModule",
       "AuthorizedActions": [
         {
@@ -11259,6 +11269,16 @@
       ]
     },
     {
+      "Name": "DeleteContactFlowAlias",
+      "SDK": [
+        {
+          "Name": "connect",
+          "Method": "delete_contact_flow_alias",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DeleteContactFlowModule",
       "AuthorizedActions": [
         {
@@ -11914,6 +11934,16 @@
         {
           "Name": "connect",
           "Method": "describe_contact_flow",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeContactFlowAlias",
+      "SDK": [
+        {
+          "Name": "connect",
+          "Method": "describe_contact_flow_alias",
           "Package": "Boto3"
         }
       ]
@@ -13187,6 +13217,16 @@
         {
           "Name": "connect",
           "Method": "list_contact_evaluations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListContactFlowAliases",
+      "SDK": [
+        {
+          "Name": "connect",
+          "Method": "list_contact_flow_aliases",
           "Package": "Boto3"
         }
       ]
@@ -15475,6 +15515,16 @@
         {
           "Name": "connect",
           "Method": "update_contact_evaluation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateContactFlowAlias",
+      "SDK": [
+        {
+          "Name": "connect",
+          "Method": "update_contact_flow_alias",
           "Package": "Boto3"
         }
       ]

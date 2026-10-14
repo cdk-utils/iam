@@ -1214,6 +1214,7 @@ new resiliencehub.ResiliencehubActions()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubActions.property.AcceptResourceGroupingRecommendations">AcceptResourceGroupingRecommendations</a></code> | <code>string</code> | [Write] resiliencehub:AcceptResourceGroupingRecommendations. |
+| <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubActions.property.actionGetDependencyInsights">actionGetDependencyInsights</a></code> | <code>string</code> | [Read] resiliencehub:GetDependencyInsights. |
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubActions.property.actionGetFailureModeFinding">actionGetFailureModeFinding</a></code> | <code>string</code> | [Read] resiliencehub:GetFailureModeFinding. |
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubActions.property.actionGetPolicy">actionGetPolicy</a></code> | <code>string</code> | [Read] resiliencehub:GetPolicy. |
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubActions.property.actionGetService">actionGetService</a></code> | <code>string</code> | [Read] resiliencehub:GetService. |
@@ -1294,6 +1295,7 @@ new resiliencehub.ResiliencehubActions()
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubActions.property.ListInputSources">ListInputSources</a></code> | <code>string</code> | [Read] resiliencehub:ListInputSources. |
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubActions.property.ListMetrics">ListMetrics</a></code> | <code>string</code> | [List] resiliencehub:ListMetrics. |
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubActions.property.ListPolicies">ListPolicies</a></code> | <code>string</code> | [Read] resiliencehub:ListPolicies. |
+| <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubActions.property.ListPolicyEvents">ListPolicyEvents</a></code> | <code>string</code> | [Read] resiliencehub:ListPolicyEvents. |
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubActions.property.ListRecommendationTemplates">ListRecommendationTemplates</a></code> | <code>string</code> | [List] resiliencehub:ListRecommendationTemplates. |
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubActions.property.ListReports">ListReports</a></code> | <code>string</code> | [Read] resiliencehub:ListReports. |
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubActions.property.ListResiliencyPolicies">ListResiliencyPolicies</a></code> | <code>string</code> | [List] resiliencehub:ListResiliencyPolicies. |
@@ -1328,6 +1330,7 @@ new resiliencehub.ResiliencehubActions()
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubActions.property.ResolveAppVersionResources">ResolveAppVersionResources</a></code> | <code>string</code> | [Write] resiliencehub:ResolveAppVersionResources. |
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubActions.property.StartAppAssessment">StartAppAssessment</a></code> | <code>string</code> | [Write] resiliencehub:StartAppAssessment. |
+| <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubActions.property.StartDependencyInsights">StartDependencyInsights</a></code> | <code>string</code> | [Write] resiliencehub:StartDependencyInsights. |
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubActions.property.StartFailureModeAssessment">StartFailureModeAssessment</a></code> | <code>string</code> | [Write] resiliencehub:StartFailureModeAssessment. |
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubActions.property.StartMetricsExport">StartMetricsExport</a></code> | <code>string</code> | [Write] resiliencehub:StartMetricsExport. |
 | <code><a href="#@cdk_utils/iam.resiliencehub.ResiliencehubActions.property.StartResourceGroupingRecommendationTask">StartResourceGroupingRecommendationTask</a></code> | <code>string</code> | [Write] resiliencehub:StartResourceGroupingRecommendationTask. |
@@ -1361,6 +1364,18 @@ public readonly AcceptResourceGroupingRecommendations: string;
 - *Type:* string
 
 [Write] resiliencehub:AcceptResourceGroupingRecommendations.
+
+---
+
+##### `actionGetDependencyInsights`<sup>Required</sup> <a name="actionGetDependencyInsights" id="@cdk_utils/iam.resiliencehub.ResiliencehubActions.property.actionGetDependencyInsights"></a>
+
+```typescript
+public readonly actionGetDependencyInsights: string;
+```
+
+- *Type:* string
+
+[Read] resiliencehub:GetDependencyInsights.
 
 ---
 
@@ -2324,6 +2339,18 @@ public readonly ListPolicies: string;
 
 ---
 
+##### `ListPolicyEvents`<sup>Required</sup> <a name="ListPolicyEvents" id="@cdk_utils/iam.resiliencehub.ResiliencehubActions.property.ListPolicyEvents"></a>
+
+```typescript
+public readonly ListPolicyEvents: string;
+```
+
+- *Type:* string
+
+[Read] resiliencehub:ListPolicyEvents.
+
+---
+
 ##### `ListRecommendationTemplates`<sup>Required</sup> <a name="ListRecommendationTemplates" id="@cdk_utils/iam.resiliencehub.ResiliencehubActions.property.ListRecommendationTemplates"></a>
 
 ```typescript
@@ -2729,6 +2756,18 @@ public readonly StartAppAssessment: string;
 - *Type:* string
 
 [Write] resiliencehub:StartAppAssessment.
+
+---
+
+##### `StartDependencyInsights`<sup>Required</sup> <a name="StartDependencyInsights" id="@cdk_utils/iam.resiliencehub.ResiliencehubActions.property.StartDependencyInsights"></a>
+
+```typescript
+public readonly StartDependencyInsights: string;
+```
+
+- *Type:* string
+
+[Write] resiliencehub:StartDependencyInsights.
 
 ---
 

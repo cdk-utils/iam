@@ -18299,6 +18299,7 @@ new connect.ConnectOperations()
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.CreateAuthCode">CreateAuthCode</a></code> | <code>string[]</code> | IAM actions required for the CreateAuthCode API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.CreateContact">CreateContact</a></code> | <code>string[]</code> | IAM actions required for the CreateContact API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.CreateContactFlow">CreateContactFlow</a></code> | <code>string[]</code> | IAM actions required for the CreateContactFlow API call. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.CreateContactFlowAlias">CreateContactFlowAlias</a></code> | <code>string[]</code> | IAM actions required for the CreateContactFlowAlias API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.CreateContactFlowModule">CreateContactFlowModule</a></code> | <code>string[]</code> | IAM actions required for the CreateContactFlowModule API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.CreateContactFlowModuleAlias">CreateContactFlowModuleAlias</a></code> | <code>string[]</code> | IAM actions required for the CreateContactFlowModuleAlias API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.CreateContactFlowModuleVersion">CreateContactFlowModuleVersion</a></code> | <code>string[]</code> | IAM actions required for the CreateContactFlowModuleVersion API call. |
@@ -18341,6 +18342,7 @@ new connect.ConnectOperations()
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.DeleteContactData">DeleteContactData</a></code> | <code>string[]</code> | IAM actions required for the DeleteContactData API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.DeleteContactEvaluation">DeleteContactEvaluation</a></code> | <code>string[]</code> | IAM actions required for the DeleteContactEvaluation API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.DeleteContactFlow">DeleteContactFlow</a></code> | <code>string[]</code> | IAM actions required for the DeleteContactFlow API call. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.DeleteContactFlowAlias">DeleteContactFlowAlias</a></code> | <code>string[]</code> | IAM actions required for the DeleteContactFlowAlias API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.DeleteContactFlowModule">DeleteContactFlowModule</a></code> | <code>string[]</code> | IAM actions required for the DeleteContactFlowModule API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.DeleteContactFlowModuleAlias">DeleteContactFlowModuleAlias</a></code> | <code>string[]</code> | IAM actions required for the DeleteContactFlowModuleAlias API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.DeleteContactFlowModuleVersion">DeleteContactFlowModuleVersion</a></code> | <code>string[]</code> | IAM actions required for the DeleteContactFlowModuleVersion API call. |
@@ -18383,6 +18385,7 @@ new connect.ConnectOperations()
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.DescribeContact">DescribeContact</a></code> | <code>string[]</code> | IAM actions required for the DescribeContact API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.DescribeContactEvaluation">DescribeContactEvaluation</a></code> | <code>string[]</code> | IAM actions required for the DescribeContactEvaluation API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.DescribeContactFlow">DescribeContactFlow</a></code> | <code>string[]</code> | IAM actions required for the DescribeContactFlow API call. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.DescribeContactFlowAlias">DescribeContactFlowAlias</a></code> | <code>string[]</code> | IAM actions required for the DescribeContactFlowAlias API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.DescribeContactFlowModule">DescribeContactFlowModule</a></code> | <code>string[]</code> | IAM actions required for the DescribeContactFlowModule API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.DescribeContactFlowModuleAlias">DescribeContactFlowModuleAlias</a></code> | <code>string[]</code> | IAM actions required for the DescribeContactFlowModuleAlias API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.DescribeDataTable">DescribeDataTable</a></code> | <code>string[]</code> | IAM actions required for the DescribeDataTable API call. |
@@ -18446,6 +18449,7 @@ new connect.ConnectOperations()
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.ListBots">ListBots</a></code> | <code>string[]</code> | IAM actions required for the ListBots API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.ListChildHoursOfOperations">ListChildHoursOfOperations</a></code> | <code>string[]</code> | IAM actions required for the ListChildHoursOfOperations API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.ListContactEvaluations">ListContactEvaluations</a></code> | <code>string[]</code> | IAM actions required for the ListContactEvaluations API call. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.ListContactFlowAliases">ListContactFlowAliases</a></code> | <code>string[]</code> | IAM actions required for the ListContactFlowAliases API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.ListContactFlowModuleAliases">ListContactFlowModuleAliases</a></code> | <code>string[]</code> | IAM actions required for the ListContactFlowModuleAliases API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.ListContactFlowModules">ListContactFlowModules</a></code> | <code>string[]</code> | IAM actions required for the ListContactFlowModules API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.ListContactFlowModuleVersions">ListContactFlowModuleVersions</a></code> | <code>string[]</code> | IAM actions required for the ListContactFlowModuleVersions API call. |
@@ -18605,6 +18609,7 @@ new connect.ConnectOperations()
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.UpdateContact">UpdateContact</a></code> | <code>string[]</code> | IAM actions required for the UpdateContact API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.UpdateContactAttributes">UpdateContactAttributes</a></code> | <code>string[]</code> | IAM actions required for the UpdateContactAttributes API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.UpdateContactEvaluation">UpdateContactEvaluation</a></code> | <code>string[]</code> | IAM actions required for the UpdateContactEvaluation API call. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.UpdateContactFlowAlias">UpdateContactFlowAlias</a></code> | <code>string[]</code> | IAM actions required for the UpdateContactFlowAlias API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.UpdateContactFlowContent">UpdateContactFlowContent</a></code> | <code>string[]</code> | IAM actions required for the UpdateContactFlowContent API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.UpdateContactFlowMetadata">UpdateContactFlowMetadata</a></code> | <code>string[]</code> | IAM actions required for the UpdateContactFlowMetadata API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.UpdateContactFlowModuleAlias">UpdateContactFlowModuleAlias</a></code> | <code>string[]</code> | IAM actions required for the UpdateContactFlowModuleAlias API call. |
@@ -19139,6 +19144,18 @@ IAM actions required for the CreateContactFlow API call.
 
 ---
 
+##### `CreateContactFlowAlias`<sup>Required</sup> <a name="CreateContactFlowAlias" id="@cdk_utils/iam.connect.ConnectOperations.property.CreateContactFlowAlias"></a>
+
+```typescript
+public readonly CreateContactFlowAlias: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateContactFlowAlias API call.
+
+---
+
 ##### `CreateContactFlowModule`<sup>Required</sup> <a name="CreateContactFlowModule" id="@cdk_utils/iam.connect.ConnectOperations.property.CreateContactFlowModule"></a>
 
 ```typescript
@@ -19643,6 +19660,18 @@ IAM actions required for the DeleteContactFlow API call.
 
 ---
 
+##### `DeleteContactFlowAlias`<sup>Required</sup> <a name="DeleteContactFlowAlias" id="@cdk_utils/iam.connect.ConnectOperations.property.DeleteContactFlowAlias"></a>
+
+```typescript
+public readonly DeleteContactFlowAlias: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteContactFlowAlias API call.
+
+---
+
 ##### `DeleteContactFlowModule`<sup>Required</sup> <a name="DeleteContactFlowModule" id="@cdk_utils/iam.connect.ConnectOperations.property.DeleteContactFlowModule"></a>
 
 ```typescript
@@ -20144,6 +20173,18 @@ public readonly DescribeContactFlow: string[];
 - *Type:* string[]
 
 IAM actions required for the DescribeContactFlow API call.
+
+---
+
+##### `DescribeContactFlowAlias`<sup>Required</sup> <a name="DescribeContactFlowAlias" id="@cdk_utils/iam.connect.ConnectOperations.property.DescribeContactFlowAlias"></a>
+
+```typescript
+public readonly DescribeContactFlowAlias: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeContactFlowAlias API call.
 
 ---
 
@@ -20900,6 +20941,18 @@ public readonly ListContactEvaluations: string[];
 - *Type:* string[]
 
 IAM actions required for the ListContactEvaluations API call.
+
+---
+
+##### `ListContactFlowAliases`<sup>Required</sup> <a name="ListContactFlowAliases" id="@cdk_utils/iam.connect.ConnectOperations.property.ListContactFlowAliases"></a>
+
+```typescript
+public readonly ListContactFlowAliases: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListContactFlowAliases API call.
 
 ---
 
@@ -22808,6 +22861,18 @@ public readonly UpdateContactEvaluation: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateContactEvaluation API call.
+
+---
+
+##### `UpdateContactFlowAlias`<sup>Required</sup> <a name="UpdateContactFlowAlias" id="@cdk_utils/iam.connect.ConnectOperations.property.UpdateContactFlowAlias"></a>
+
+```typescript
+public readonly UpdateContactFlowAlias: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateContactFlowAlias API call.
 
 ---
 

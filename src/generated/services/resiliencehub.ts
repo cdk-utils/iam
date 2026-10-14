@@ -124,6 +124,9 @@ export class ResiliencehubActions {
 	/** [Read] resiliencehub:DescribeResourceGroupingRecommendationTask */
 	static readonly DescribeResourceGroupingRecommendationTask =
 		"resiliencehub:DescribeResourceGroupingRecommendationTask";
+	/** [Read] resiliencehub:GetDependencyInsights */
+	static readonly actionGetDependencyInsights =
+		"resiliencehub:GetDependencyInsights";
 	/** [Read] resiliencehub:GetFailureModeFinding */
 	static readonly actionGetFailureModeFinding =
 		"resiliencehub:GetFailureModeFinding";
@@ -196,6 +199,8 @@ export class ResiliencehubActions {
 	static readonly ListMetrics = "resiliencehub:ListMetrics";
 	/** [Read] resiliencehub:ListPolicies */
 	static readonly ListPolicies = "resiliencehub:ListPolicies";
+	/** [Read] resiliencehub:ListPolicyEvents */
+	static readonly ListPolicyEvents = "resiliencehub:ListPolicyEvents";
 	/** [List] resiliencehub:ListRecommendationTemplates */
 	static readonly ListRecommendationTemplates =
 		"resiliencehub:ListRecommendationTemplates";
@@ -277,6 +282,9 @@ export class ResiliencehubActions {
 		"resiliencehub:ResolveAppVersionResources";
 	/** [Write] resiliencehub:StartAppAssessment */
 	static readonly StartAppAssessment = "resiliencehub:StartAppAssessment";
+	/** [Write] resiliencehub:StartDependencyInsights */
+	static readonly StartDependencyInsights =
+		"resiliencehub:StartDependencyInsights";
 	/** [Write] resiliencehub:StartFailureModeAssessment */
 	static readonly StartFailureModeAssessment =
 		"resiliencehub:StartFailureModeAssessment";
@@ -339,6 +347,7 @@ export class ResiliencehubActions {
 		ResiliencehubActions.DescribeMetricsExport,
 		ResiliencehubActions.DescribeResiliencyPolicy,
 		ResiliencehubActions.DescribeResourceGroupingRecommendationTask,
+		ResiliencehubActions.actionGetDependencyInsights,
 		ResiliencehubActions.actionGetFailureModeFinding,
 		ResiliencehubActions.actionGetPolicy,
 		ResiliencehubActions.actionGetService,
@@ -353,6 +362,7 @@ export class ResiliencehubActions {
 		ResiliencehubActions.ListFailureModeFindings,
 		ResiliencehubActions.ListInputSources,
 		ResiliencehubActions.ListPolicies,
+		ResiliencehubActions.ListPolicyEvents,
 		ResiliencehubActions.ListReports,
 		ResiliencehubActions.ListResolvedTestRunTargetResources,
 		ResiliencehubActions.ListResources,
@@ -420,6 +430,7 @@ export class ResiliencehubActions {
 		ResiliencehubActions.RemoveDraftAppVersionResourceMappings,
 		ResiliencehubActions.ResolveAppVersionResources,
 		ResiliencehubActions.StartAppAssessment,
+		ResiliencehubActions.StartDependencyInsights,
 		ResiliencehubActions.StartFailureModeAssessment,
 		ResiliencehubActions.StartMetricsExport,
 		ResiliencehubActions.StartResourceGroupingRecommendationTask,
@@ -1160,7 +1171,9 @@ export class ResiliencehubOperations {
 		"resiliencehub:DescribeResourceGroupingRecommendationTask",
 	];
 	/** IAM actions required for the GetDependencyInsights API call. */
-	static readonly opGetDependencyInsights: string[] = [];
+	static readonly opGetDependencyInsights: string[] = [
+		"resiliencehub:GetDependencyInsights",
+	];
 	/** IAM actions required for the GetFailureModeFinding API call. */
 	static readonly opGetFailureModeFinding: string[] = [
 		"resiliencehub:GetFailureModeFinding",
@@ -1259,7 +1272,9 @@ export class ResiliencehubOperations {
 	/** IAM actions required for the ListPolicies API call. */
 	static readonly ListPolicies: string[] = ["resiliencehub:ListPolicies"];
 	/** IAM actions required for the ListPolicyEvents API call. */
-	static readonly ListPolicyEvents: string[] = [];
+	static readonly ListPolicyEvents: string[] = [
+		"resiliencehub:ListPolicyEvents",
+	];
 	/** IAM actions required for the ListRecommendationTemplates API call. */
 	static readonly ListRecommendationTemplates: string[] = [
 		"resiliencehub:ListRecommendationTemplates",
@@ -1378,7 +1393,9 @@ export class ResiliencehubOperations {
 		"resiliencehub:TagResource",
 	];
 	/** IAM actions required for the StartDependencyInsights API call. */
-	static readonly StartDependencyInsights: string[] = [];
+	static readonly StartDependencyInsights: string[] = [
+		"resiliencehub:StartDependencyInsights",
+	];
 	/** IAM actions required for the StartFailureModeAssessment API call. */
 	static readonly StartFailureModeAssessment: string[] = [
 		"resiliencehub:StartFailureModeAssessment",

@@ -17,6 +17,21 @@
       }
     },
     {
+      "Name": "AttachRLSPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "BatchGrantPermissions",
       "Annotations": {
         "Properties": {
@@ -152,6 +167,21 @@
       }
     },
     {
+      "Name": "CreateRLSPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "DeleteDataCellsFilter",
       "Annotations": {
         "Properties": {
@@ -242,6 +272,21 @@
       }
     },
     {
+      "Name": "DeleteRLSPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "DeregisterResource",
       "Annotations": {
         "Properties": {
@@ -294,6 +339,21 @@
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
           "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DetachRLSPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
         }
       },
       "SupportedBy": {
@@ -441,6 +501,21 @@
     },
     {
       "Name": "GetQueryStatistics",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetRLSPolicy",
       "Annotations": {
         "Properties": {
           "IsList": false,
@@ -621,6 +696,36 @@
     },
     {
       "Name": "ListPermissions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListRLSPolicies",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListRLSPolicyAttachments",
       "Annotations": {
         "Properties": {
           "IsList": true,
@@ -875,6 +980,21 @@
       }
     },
     {
+      "Name": "UpdateRLSPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "UpdateResource",
       "Annotations": {
         "Properties": {
@@ -945,6 +1065,22 @@
         {
           "Name": "lakeformation",
           "Method": "assume_decorated_role_with_saml",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AttachRLSPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "AttachRLSPolicy",
+          "Service": "lakeformation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "attach_rls_policy",
           "Package": "Boto3"
         }
       ]
@@ -1076,6 +1212,22 @@
       ]
     },
     {
+      "Name": "CreateRLSPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRLSPolicy",
+          "Service": "lakeformation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "create_rls_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DeleteDataCellsFilter",
       "AuthorizedActions": [
         {
@@ -1160,6 +1312,22 @@
       ]
     },
     {
+      "Name": "DeleteRLSPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRLSPolicy",
+          "Service": "lakeformation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "delete_rls_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DeregisterResource",
       "SDK": [
         {
@@ -1201,6 +1369,22 @@
         {
           "Name": "lakeformation",
           "Method": "describe_transaction",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DetachRLSPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DetachRLSPolicy",
+          "Service": "lakeformation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "detach_rls_policy",
           "Package": "Boto3"
         }
       ]
@@ -1333,6 +1517,22 @@
         {
           "Name": "lakeformation",
           "Method": "get_query_statistics",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRLSPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRLSPolicy",
+          "Service": "lakeformation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "get_rls_policy",
           "Package": "Boto3"
         }
       ]
@@ -1505,6 +1705,38 @@
         {
           "Name": "lakeformation",
           "Method": "list_permissions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRLSPolicies",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRLSPolicies",
+          "Service": "lakeformation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "list_rls_policies",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRLSPolicyAttachments",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRLSPolicyAttachments",
+          "Service": "lakeformation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "list_rls_policy_attachments",
           "Package": "Boto3"
         }
       ]
@@ -1685,6 +1917,22 @@
         {
           "Name": "lakeformation",
           "Method": "update_lake_formation_identity_center_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRLSPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateRLSPolicy",
+          "Service": "lakeformation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "update_rls_policy",
           "Package": "Boto3"
         }
       ]

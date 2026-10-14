@@ -31,6 +31,7 @@ new route53domains.Route53domainsActions()
 | <code><a href="#@cdk_utils/iam.route53domains.Route53domainsActions.property.AcceptDomainTransferFromAnotherAwsAccount">AcceptDomainTransferFromAnotherAwsAccount</a></code> | <code>string</code> | [Write] route53domains:AcceptDomainTransferFromAnotherAwsAccount. |
 | <code><a href="#@cdk_utils/iam.route53domains.Route53domainsActions.property.actionGetContactReachabilityStatus">actionGetContactReachabilityStatus</a></code> | <code>string</code> | [Read] route53domains:GetContactReachabilityStatus. |
 | <code><a href="#@cdk_utils/iam.route53domains.Route53domainsActions.property.actionGetDomainDetail">actionGetDomainDetail</a></code> | <code>string</code> | [Read] route53domains:GetDomainDetail. |
+| <code><a href="#@cdk_utils/iam.route53domains.Route53domainsActions.property.actionGetDomainPrices">actionGetDomainPrices</a></code> | <code>string</code> | [Read] route53domains:GetDomainPrices. |
 | <code><a href="#@cdk_utils/iam.route53domains.Route53domainsActions.property.actionGetDomainSuggestions">actionGetDomainSuggestions</a></code> | <code>string</code> | [Read] route53domains:GetDomainSuggestions. |
 | <code><a href="#@cdk_utils/iam.route53domains.Route53domainsActions.property.actionGetOperationDetail">actionGetOperationDetail</a></code> | <code>string</code> | [Read] route53domains:GetOperationDetail. |
 | <code><a href="#@cdk_utils/iam.route53domains.Route53domainsActions.property.AllListActions">AllListActions</a></code> | <code>string[]</code> | All list-level actions. |
@@ -104,6 +105,18 @@ public readonly actionGetDomainDetail: string;
 - *Type:* string
 
 [Read] route53domains:GetDomainDetail.
+
+---
+
+##### `actionGetDomainPrices`<sup>Required</sup> <a name="actionGetDomainPrices" id="@cdk_utils/iam.route53domains.Route53domainsActions.property.actionGetDomainPrices"></a>
+
+```typescript
+public readonly actionGetDomainPrices: string;
+```
+
+- *Type:* string
+
+[Read] route53domains:GetDomainPrices.
 
 ---
 
@@ -593,6 +606,7 @@ new route53domains.Route53domainsOperations()
 | <code><a href="#@cdk_utils/iam.route53domains.Route53domainsOperations.property.ListTagsForDomain">ListTagsForDomain</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForDomain API call. |
 | <code><a href="#@cdk_utils/iam.route53domains.Route53domainsOperations.property.opGetContactReachabilityStatus">opGetContactReachabilityStatus</a></code> | <code>string[]</code> | IAM actions required for the GetContactReachabilityStatus API call. |
 | <code><a href="#@cdk_utils/iam.route53domains.Route53domainsOperations.property.opGetDomainDetail">opGetDomainDetail</a></code> | <code>string[]</code> | IAM actions required for the GetDomainDetail API call. |
+| <code><a href="#@cdk_utils/iam.route53domains.Route53domainsOperations.property.opGetDomainPrices">opGetDomainPrices</a></code> | <code>string[]</code> | IAM actions required for the GetDomainPrices API call. |
 | <code><a href="#@cdk_utils/iam.route53domains.Route53domainsOperations.property.opGetDomainSuggestions">opGetDomainSuggestions</a></code> | <code>string[]</code> | IAM actions required for the GetDomainSuggestions API call. |
 | <code><a href="#@cdk_utils/iam.route53domains.Route53domainsOperations.property.opGetOperationDetail">opGetOperationDetail</a></code> | <code>string[]</code> | IAM actions required for the GetOperationDetail API call. |
 | <code><a href="#@cdk_utils/iam.route53domains.Route53domainsOperations.property.PushDomain">PushDomain</a></code> | <code>string[]</code> | IAM actions required for the PushDomain API call. |
@@ -825,6 +839,18 @@ public readonly opGetDomainDetail: string[];
 - *Type:* string[]
 
 IAM actions required for the GetDomainDetail API call.
+
+---
+
+##### `opGetDomainPrices`<sup>Required</sup> <a name="opGetDomainPrices" id="@cdk_utils/iam.route53domains.Route53domainsOperations.property.opGetDomainPrices"></a>
+
+```typescript
+public readonly opGetDomainPrices: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetDomainPrices API call.
 
 ---
 

@@ -4478,6 +4478,8 @@ export class ConnectOperations {
 		"connect:CreateContactFlow",
 		"connect:TagResource",
 	];
+	/** IAM actions required for the CreateContactFlowAlias API call. */
+	static readonly CreateContactFlowAlias: string[] = [];
 	/** IAM actions required for the CreateContactFlowModule API call. */
 	static readonly CreateContactFlowModule: string[] = [
 		"connect:CreateContactFlowModule",
@@ -4656,6 +4658,8 @@ export class ConnectOperations {
 	];
 	/** IAM actions required for the DeleteContactFlow API call. */
 	static readonly DeleteContactFlow: string[] = ["connect:DeleteContactFlow"];
+	/** IAM actions required for the DeleteContactFlowAlias API call. */
+	static readonly DeleteContactFlowAlias: string[] = [];
 	/** IAM actions required for the DeleteContactFlowModule API call. */
 	static readonly DeleteContactFlowModule: string[] = [
 		"connect:DeleteContactFlowModule",
@@ -4786,6 +4790,8 @@ export class ConnectOperations {
 	static readonly DescribeContactFlow: string[] = [
 		"connect:DescribeContactFlow",
 	];
+	/** IAM actions required for the DescribeContactFlowAlias API call. */
+	static readonly DescribeContactFlowAlias: string[] = [];
 	/** IAM actions required for the DescribeContactFlowModule API call. */
 	static readonly DescribeContactFlowModule: string[] = [
 		"connect:DescribeContactFlowModule",
@@ -5055,6 +5061,8 @@ export class ConnectOperations {
 	static readonly ListContactEvaluations: string[] = [
 		"connect:ListContactEvaluations",
 	];
+	/** IAM actions required for the ListContactFlowAliases API call. */
+	static readonly ListContactFlowAliases: string[] = [];
 	/** IAM actions required for the ListContactFlowModuleAliases API call. */
 	static readonly ListContactFlowModuleAliases: string[] = [
 		"connect:ListContactFlowModuleAliases",
@@ -5536,6 +5544,8 @@ export class ConnectOperations {
 	static readonly UpdateContactEvaluation: string[] = [
 		"connect:UpdateContactEvaluation",
 	];
+	/** IAM actions required for the UpdateContactFlowAlias API call. */
+	static readonly UpdateContactFlowAlias: string[] = [];
 	/** IAM actions required for the UpdateContactFlowContent API call. */
 	static readonly UpdateContactFlowContent: string[] = [
 		"connect:UpdateContactFlowContent",

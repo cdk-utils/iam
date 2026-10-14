@@ -391,7 +391,6 @@ export class CassandraOperations {
 		"cassandra:Create",
 		"cassandra:CreateMultiRegionResource",
 		"application-autoscaling:DescribeScalableTargets",
-		"application-autoscaling:DescribeScalableTargets",
 		"application-autoscaling:DescribeScalingPolicies",
 		"cassandra:Modify",
 		"cassandra:ModifyMultiRegionResource",
