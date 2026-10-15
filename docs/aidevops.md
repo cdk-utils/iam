@@ -2166,6 +2166,7 @@ new aidevops.AidevopsConditions()
 | --- | --- |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.requestTag">requestTag</a></code> | Generates a condition block for `aws:RequestTag/${TagKey}`. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.resourceTag">resourceTag</a></code> | Generates a condition block for `aws:ResourceTag/${TagKey}`. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.serviceType">serviceType</a></code> | Generates a condition block for `aidevops:ServiceType`. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.sourceAgentSpaceARN">sourceAgentSpaceARN</a></code> | Generates a condition block for `aidevops:SourceAgentSpaceArn`. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.tagKeys">tagKeys</a></code> | Generates a condition block for `aws:TagKeys`. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.targetAgentSpaceARN">targetAgentSpaceARN</a></code> | Generates a condition block for `aidevops:TargetAgentSpaceArn`. |
@@ -2199,6 +2200,22 @@ aidevops.AidevopsConditions.resourceTag(value: string)
 Generates a condition block for `aws:ResourceTag/${TagKey}`.
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.aidevops.AidevopsConditions.resourceTag.parameter.value"></a>
+
+- *Type:* string
+
+---
+
+##### `serviceType` <a name="serviceType" id="@cdk_utils/iam.aidevops.AidevopsConditions.serviceType"></a>
+
+```typescript
+import { aidevops } from '@cdk_utils/iam'
+
+aidevops.AidevopsConditions.serviceType(value: string)
+```
+
+Generates a condition block for `aidevops:ServiceType`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.aidevops.AidevopsConditions.serviceType.parameter.value"></a>
 
 - *Type:* string
 
@@ -2261,8 +2278,10 @@ Generates a condition block for `aidevops:TargetAgentSpaceArn`.
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.actionGetAssetConditionKeys">actionGetAssetConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetAsset action. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.actionGetAssetContentConditionKeys">actionGetAssetContentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetAssetContent action. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.actionGetAssetFileConditionKeys">actionGetAssetFileConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetAssetFile action. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.actionGetAssociationConditionKeys">actionGetAssociationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetAssociation action. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.actionGetBacklogTaskConditionKeys">actionGetBacklogTaskConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetBacklogTask action. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.actionGetServiceConditionKeys">actionGetServiceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetService action. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.AssociateServiceConditionKeys">AssociateServiceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the AssociateService action. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.AWS_REQUEST_TAG">AWS_REQUEST_TAG</a></code> | <code>string</code> | Condition key: aws:RequestTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.AWS_RESOURCE_TAG">AWS_RESOURCE_TAG</a></code> | <code>string</code> | Condition key: aws:ResourceTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.AWS_TAG_KEYS">AWS_TAG_KEYS</a></code> | <code>string</code> | Condition key: aws:TagKeys (ArrayOfString). |
@@ -2273,19 +2292,23 @@ Generates a condition block for `aidevops:TargetAgentSpaceArn`.
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.DeletePrivateConnectionConditionKeys">DeletePrivateConnectionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeletePrivateConnection action. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.DeregisterServiceConditionKeys">DeregisterServiceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeregisterService action. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.DescribePrivateConnectionConditionKeys">DescribePrivateConnectionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribePrivateConnection action. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.DisassociateServiceConditionKeys">DisassociateServiceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DisassociateService action. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.ListAssetFilesConditionKeys">ListAssetFilesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListAssetFiles action. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.ListAssetsConditionKeys">ListAssetsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListAssets action. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.ListBacklogTasksConditionKeys">ListBacklogTasksConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListBacklogTasks action. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.ListExecutionsConditionKeys">ListExecutionsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListExecutions action. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.ListJournalRecordsConditionKeys">ListJournalRecordsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListJournalRecords action. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.ListTagsForResourceConditionKeys">ListTagsForResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListTagsForResource action. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.ListWebhooksConditionKeys">ListWebhooksConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListWebhooks action. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.RegisterServiceConditionKeys">RegisterServiceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the RegisterService action. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.SendMessageConditionKeys">SendMessageConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the SendMessage action. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.SERVICE_TYPE">SERVICE_TYPE</a></code> | <code>string</code> | Condition key: aidevops:ServiceType (String). |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.SOURCE_AGENT_SPACE_ARN">SOURCE_AGENT_SPACE_ARN</a></code> | <code>string</code> | Condition key: aidevops:SourceAgentSpaceArn (ARN). |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.TagResourceConditionKeys">TagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TagResource action. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.TARGET_AGENT_SPACE_ARN">TARGET_AGENT_SPACE_ARN</a></code> | <code>string</code> | Condition key: aidevops:TargetAgentSpaceArn (ARN). |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.UntagResourceConditionKeys">UntagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UntagResource action. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.UpdateAgentSpaceConditionKeys">UpdateAgentSpaceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateAgentSpace action. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.UpdateAssociationConditionKeys">UpdateAssociationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateAssociation action. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.UpdateBacklogTaskConditionKeys">UpdateBacklogTaskConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateBacklogTask action. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.UpdatePrivateConnectionCertificateConditionKeys">UpdatePrivateConnectionCertificateConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdatePrivateConnectionCertificate action. |
 
@@ -2339,6 +2362,18 @@ Condition keys applicable to the GetAssetFile action.
 
 ---
 
+##### `actionGetAssociationConditionKeys`<sup>Required</sup> <a name="actionGetAssociationConditionKeys" id="@cdk_utils/iam.aidevops.AidevopsConditions.property.actionGetAssociationConditionKeys"></a>
+
+```typescript
+public readonly actionGetAssociationConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetAssociation action.
+
+---
+
 ##### `actionGetBacklogTaskConditionKeys`<sup>Required</sup> <a name="actionGetBacklogTaskConditionKeys" id="@cdk_utils/iam.aidevops.AidevopsConditions.property.actionGetBacklogTaskConditionKeys"></a>
 
 ```typescript
@@ -2360,6 +2395,18 @@ public readonly actionGetServiceConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the GetService action.
+
+---
+
+##### `AssociateServiceConditionKeys`<sup>Required</sup> <a name="AssociateServiceConditionKeys" id="@cdk_utils/iam.aidevops.AidevopsConditions.property.AssociateServiceConditionKeys"></a>
+
+```typescript
+public readonly AssociateServiceConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the AssociateService action.
 
 ---
 
@@ -2483,6 +2530,18 @@ Condition keys applicable to the DescribePrivateConnection action.
 
 ---
 
+##### `DisassociateServiceConditionKeys`<sup>Required</sup> <a name="DisassociateServiceConditionKeys" id="@cdk_utils/iam.aidevops.AidevopsConditions.property.DisassociateServiceConditionKeys"></a>
+
+```typescript
+public readonly DisassociateServiceConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DisassociateService action.
+
+---
+
 ##### `ListAssetFilesConditionKeys`<sup>Required</sup> <a name="ListAssetFilesConditionKeys" id="@cdk_utils/iam.aidevops.AidevopsConditions.property.ListAssetFilesConditionKeys"></a>
 
 ```typescript
@@ -2555,6 +2614,18 @@ Condition keys applicable to the ListTagsForResource action.
 
 ---
 
+##### `ListWebhooksConditionKeys`<sup>Required</sup> <a name="ListWebhooksConditionKeys" id="@cdk_utils/iam.aidevops.AidevopsConditions.property.ListWebhooksConditionKeys"></a>
+
+```typescript
+public readonly ListWebhooksConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ListWebhooks action.
+
+---
+
 ##### `RegisterServiceConditionKeys`<sup>Required</sup> <a name="RegisterServiceConditionKeys" id="@cdk_utils/iam.aidevops.AidevopsConditions.property.RegisterServiceConditionKeys"></a>
 
 ```typescript
@@ -2576,6 +2647,18 @@ public readonly SendMessageConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the SendMessage action.
+
+---
+
+##### `SERVICE_TYPE`<sup>Required</sup> <a name="SERVICE_TYPE" id="@cdk_utils/iam.aidevops.AidevopsConditions.property.SERVICE_TYPE"></a>
+
+```typescript
+public readonly SERVICE_TYPE: string;
+```
+
+- *Type:* string
+
+Condition key: aidevops:ServiceType (String).
 
 ---
 
@@ -2636,6 +2719,18 @@ public readonly UpdateAgentSpaceConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the UpdateAgentSpace action.
+
+---
+
+##### `UpdateAssociationConditionKeys`<sup>Required</sup> <a name="UpdateAssociationConditionKeys" id="@cdk_utils/iam.aidevops.AidevopsConditions.property.UpdateAssociationConditionKeys"></a>
+
+```typescript
+public readonly UpdateAssociationConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UpdateAssociation action.
 
 ---
 
