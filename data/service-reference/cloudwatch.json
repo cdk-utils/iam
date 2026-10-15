@@ -2220,7 +2220,8 @@
       "ActionConditionKeys": [
         "aws:RequestTag/${TagKey}",
         "aws:TagKeys",
-        "cloudwatch:AlarmActions"
+        "cloudwatch:AlarmActions",
+        "cloudwatch:AlarmTagsPropagationEnabled"
       ],
       "Annotations": {
         "Properties": {
@@ -2312,7 +2313,8 @@
       "ActionConditionKeys": [
         "aws:RequestTag/${TagKey}",
         "aws:TagKeys",
-        "cloudwatch:AlarmActions"
+        "cloudwatch:AlarmActions",
+        "cloudwatch:AlarmTagsPropagationEnabled"
       ],
       "Annotations": {
         "Properties": {
@@ -2357,7 +2359,8 @@
       "ActionConditionKeys": [
         "aws:RequestTag/${TagKey}",
         "aws:TagKeys",
-        "cloudwatch:AlarmActions"
+        "cloudwatch:AlarmActions",
+        "cloudwatch:AlarmTagsPropagationEnabled"
       ],
       "Annotations": {
         "Properties": {
@@ -3167,6 +3170,12 @@
       "Name": "cloudwatch:AlarmActions",
       "Types": [
         "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "cloudwatch:AlarmTagsPropagationEnabled",
+      "Types": [
+        "Bool"
       ]
     },
     {

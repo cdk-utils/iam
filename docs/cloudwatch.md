@@ -5010,6 +5010,7 @@ new cloudwatch.CloudWatchConditions()
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.alarmActions">alarmActions</a></code> | Generates a condition block for `cloudwatch:AlarmActions`. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.alarmTagsPropagationEnabled">alarmTagsPropagationEnabled</a></code> | Generates a condition block for `cloudwatch:AlarmTagsPropagationEnabled`. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.hasAccessGrant">hasAccessGrant</a></code> | Generates a condition block for `cloudwatch:HasAccessGrant`. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.namespace">namespace</a></code> | Generates a condition block for `cloudwatch:namespace`. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.requestInsightRuleLogGroups">requestInsightRuleLogGroups</a></code> | Generates a condition block for `cloudwatch:requestInsightRuleLogGroups`. |
@@ -5034,6 +5035,22 @@ Generates a condition block for `cloudwatch:AlarmActions`.
 ###### `values`<sup>Required</sup> <a name="values" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.alarmActions.parameter.values"></a>
 
 - *Type:* string[]
+
+---
+
+##### `alarmTagsPropagationEnabled` <a name="alarmTagsPropagationEnabled" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.alarmTagsPropagationEnabled"></a>
+
+```typescript
+import { cloudwatch } from '@cdk_utils/iam'
+
+cloudwatch.CloudWatchConditions.alarmTagsPropagationEnabled(value: boolean)
+```
+
+Generates a condition block for `cloudwatch:AlarmTagsPropagationEnabled`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.alarmTagsPropagationEnabled.parameter.value"></a>
+
+- *Type:* boolean
 
 ---
 
@@ -5189,6 +5206,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetTelemetryQueryResultsConditionKeys">actionGetTelemetryQueryResultsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetTelemetryQueryResults action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetViewConditionKeys">actionGetViewConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetView action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.ALARM_ACTIONS">ALARM_ACTIONS</a></code> | <code>string</code> | Condition key: cloudwatch:AlarmActions (ArrayOfString). |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.ALARM_TAGS_PROPAGATION_ENABLED">ALARM_TAGS_PROPAGATION_ENABLED</a></code> | <code>string</code> | Condition key: cloudwatch:AlarmTagsPropagationEnabled (Bool). |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.AssumeAccessProfileConditionKeys">AssumeAccessProfileConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the AssumeAccessProfile action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.AWS_REQUEST_TAG">AWS_REQUEST_TAG</a></code> | <code>string</code> | Condition key: aws:RequestTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.AWS_RESOURCE_TAG">AWS_RESOURCE_TAG</a></code> | <code>string</code> | Condition key: aws:ResourceTag/${TagKey} (String). |
@@ -5492,6 +5510,18 @@ public readonly ALARM_ACTIONS: string;
 - *Type:* string
 
 Condition key: cloudwatch:AlarmActions (ArrayOfString).
+
+---
+
+##### `ALARM_TAGS_PROPAGATION_ENABLED`<sup>Required</sup> <a name="ALARM_TAGS_PROPAGATION_ENABLED" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.ALARM_TAGS_PROPAGATION_ENABLED"></a>
+
+```typescript
+public readonly ALARM_TAGS_PROPAGATION_ENABLED: string;
+```
+
+- *Type:* string
+
+Condition key: cloudwatch:AlarmTagsPropagationEnabled (Bool).
 
 ---
 

@@ -180,6 +180,7 @@ new aws_external_anthropic.AWSExternalAnthropicActions()
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.actionGetAccountStatus">actionGetAccountStatus</a></code> | <code>string</code> | [Read] aws-external-anthropic:GetAccountStatus. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.actionGetAgent">actionGetAgent</a></code> | <code>string</code> | [Read] aws-external-anthropic:GetAgent. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.actionGetBatchInference">actionGetBatchInference</a></code> | <code>string</code> | [Read] aws-external-anthropic:GetBatchInference. |
+| <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.actionGetDeployment">actionGetDeployment</a></code> | <code>string</code> | [Read] aws-external-anthropic:GetDeployment. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.actionGetEnvironment">actionGetEnvironment</a></code> | <code>string</code> | [Read] aws-external-anthropic:GetEnvironment. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.actionGetFile">actionGetFile</a></code> | <code>string</code> | [Read] aws-external-anthropic:GetFile. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.actionGetKey">actionGetKey</a></code> | <code>string</code> | [Read] aws-external-anthropic:GetKey. |
@@ -197,6 +198,7 @@ new aws_external_anthropic.AWSExternalAnthropicActions()
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.AllTaggingActions">AllTaggingActions</a></code> | <code>string[]</code> | All tagging-level actions. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.ArchiveAgent">ArchiveAgent</a></code> | <code>string</code> | [Write] aws-external-anthropic:ArchiveAgent. |
+| <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.ArchiveDeployment">ArchiveDeployment</a></code> | <code>string</code> | [Write] aws-external-anthropic:ArchiveDeployment. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.ArchiveEnvironment">ArchiveEnvironment</a></code> | <code>string</code> | [Write] aws-external-anthropic:ArchiveEnvironment. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.ArchiveMemoryStore">ArchiveMemoryStore</a></code> | <code>string</code> | [Write] aws-external-anthropic:ArchiveMemoryStore. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.ArchiveSession">ArchiveSession</a></code> | <code>string</code> | [Write] aws-external-anthropic:ArchiveSession. |
@@ -208,6 +210,7 @@ new aws_external_anthropic.AWSExternalAnthropicActions()
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.CountTokens">CountTokens</a></code> | <code>string</code> | [Write] aws-external-anthropic:CountTokens. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.CreateAgent">CreateAgent</a></code> | <code>string</code> | [Write] aws-external-anthropic:CreateAgent. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.CreateBatchInference">CreateBatchInference</a></code> | <code>string</code> | [Write] aws-external-anthropic:CreateBatchInference. |
+| <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.CreateDeployment">CreateDeployment</a></code> | <code>string</code> | [Write] aws-external-anthropic:CreateDeployment. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.CreateEnvironment">CreateEnvironment</a></code> | <code>string</code> | [Write] aws-external-anthropic:CreateEnvironment. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.CreateFile">CreateFile</a></code> | <code>string</code> | [Write] aws-external-anthropic:CreateFile. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.CreateInference">CreateInference</a></code> | <code>string</code> | [Write] aws-external-anthropic:CreateInference. |
@@ -230,6 +233,7 @@ new aws_external_anthropic.AWSExternalAnthropicActions()
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.DisableKey">DisableKey</a></code> | <code>string</code> | [Write] aws-external-anthropic:DisableKey. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.ListAgents">ListAgents</a></code> | <code>string</code> | [List] aws-external-anthropic:ListAgents. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.ListBatchInferences">ListBatchInferences</a></code> | <code>string</code> | [List] aws-external-anthropic:ListBatchInferences. |
+| <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.ListDeployments">ListDeployments</a></code> | <code>string</code> | [List] aws-external-anthropic:ListDeployments. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.ListEnvironments">ListEnvironments</a></code> | <code>string</code> | [List] aws-external-anthropic:ListEnvironments. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.ListFiles">ListFiles</a></code> | <code>string</code> | [List] aws-external-anthropic:ListFiles. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.ListKeys">ListKeys</a></code> | <code>string</code> | [List] aws-external-anthropic:ListKeys. |
@@ -242,13 +246,17 @@ new aws_external_anthropic.AWSExternalAnthropicActions()
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.ListVaults">ListVaults</a></code> | <code>string</code> | [List] aws-external-anthropic:ListVaults. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.ListWebhooks">ListWebhooks</a></code> | <code>string</code> | [List] aws-external-anthropic:ListWebhooks. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.ListWorkspaces">ListWorkspaces</a></code> | <code>string</code> | [List] aws-external-anthropic:ListWorkspaces. |
+| <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.PauseDeployment">PauseDeployment</a></code> | <code>string</code> | [Write] aws-external-anthropic:PauseDeployment. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.ProcessEnvironmentWork">ProcessEnvironmentWork</a></code> | <code>string</code> | [Write] aws-external-anthropic:ProcessEnvironmentWork. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.RegisterKey">RegisterKey</a></code> | <code>string</code> | [Write] aws-external-anthropic:RegisterKey. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.RotateWebhookSecret">RotateWebhookSecret</a></code> | <code>string</code> | [Write] aws-external-anthropic:RotateWebhookSecret. |
+| <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.RunDeployment">RunDeployment</a></code> | <code>string</code> | [Write] aws-external-anthropic:RunDeployment. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] aws-external-anthropic:TagResource. |
+| <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.UnpauseDeployment">UnpauseDeployment</a></code> | <code>string</code> | [Write] aws-external-anthropic:UnpauseDeployment. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] aws-external-anthropic:UntagResource. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.UpdateAgent">UpdateAgent</a></code> | <code>string</code> | [Write] aws-external-anthropic:UpdateAgent. |
+| <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.UpdateDeployment">UpdateDeployment</a></code> | <code>string</code> | [Write] aws-external-anthropic:UpdateDeployment. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.UpdateEnvironment">UpdateEnvironment</a></code> | <code>string</code> | [Write] aws-external-anthropic:UpdateEnvironment. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.UpdateKey">UpdateKey</a></code> | <code>string</code> | [Write] aws-external-anthropic:UpdateKey. |
 | <code><a href="#@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.UpdateMemoryStore">UpdateMemoryStore</a></code> | <code>string</code> | [Write] aws-external-anthropic:UpdateMemoryStore. |
@@ -294,6 +302,18 @@ public readonly actionGetBatchInference: string;
 - *Type:* string
 
 [Read] aws-external-anthropic:GetBatchInference.
+
+---
+
+##### `actionGetDeployment`<sup>Required</sup> <a name="actionGetDeployment" id="@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.actionGetDeployment"></a>
+
+```typescript
+public readonly actionGetDeployment: string;
+```
+
+- *Type:* string
+
+[Read] aws-external-anthropic:GetDeployment.
 
 ---
 
@@ -501,6 +521,18 @@ public readonly ArchiveAgent: string;
 
 ---
 
+##### `ArchiveDeployment`<sup>Required</sup> <a name="ArchiveDeployment" id="@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.ArchiveDeployment"></a>
+
+```typescript
+public readonly ArchiveDeployment: string;
+```
+
+- *Type:* string
+
+[Write] aws-external-anthropic:ArchiveDeployment.
+
+---
+
 ##### `ArchiveEnvironment`<sup>Required</sup> <a name="ArchiveEnvironment" id="@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.ArchiveEnvironment"></a>
 
 ```typescript
@@ -630,6 +662,18 @@ public readonly CreateBatchInference: string;
 - *Type:* string
 
 [Write] aws-external-anthropic:CreateBatchInference.
+
+---
+
+##### `CreateDeployment`<sup>Required</sup> <a name="CreateDeployment" id="@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.CreateDeployment"></a>
+
+```typescript
+public readonly CreateDeployment: string;
+```
+
+- *Type:* string
+
+[Write] aws-external-anthropic:CreateDeployment.
 
 ---
 
@@ -897,6 +941,18 @@ public readonly ListBatchInferences: string;
 
 ---
 
+##### `ListDeployments`<sup>Required</sup> <a name="ListDeployments" id="@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.ListDeployments"></a>
+
+```typescript
+public readonly ListDeployments: string;
+```
+
+- *Type:* string
+
+[List] aws-external-anthropic:ListDeployments.
+
+---
+
 ##### `ListEnvironments`<sup>Required</sup> <a name="ListEnvironments" id="@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.ListEnvironments"></a>
 
 ```typescript
@@ -1041,6 +1097,18 @@ public readonly ListWorkspaces: string;
 
 ---
 
+##### `PauseDeployment`<sup>Required</sup> <a name="PauseDeployment" id="@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.PauseDeployment"></a>
+
+```typescript
+public readonly PauseDeployment: string;
+```
+
+- *Type:* string
+
+[Write] aws-external-anthropic:PauseDeployment.
+
+---
+
 ##### `ProcessEnvironmentWork`<sup>Required</sup> <a name="ProcessEnvironmentWork" id="@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.ProcessEnvironmentWork"></a>
 
 ```typescript
@@ -1077,6 +1145,18 @@ public readonly RotateWebhookSecret: string;
 
 ---
 
+##### `RunDeployment`<sup>Required</sup> <a name="RunDeployment" id="@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.RunDeployment"></a>
+
+```typescript
+public readonly RunDeployment: string;
+```
+
+- *Type:* string
+
+[Write] aws-external-anthropic:RunDeployment.
+
+---
+
 ##### `SERVICE_PREFIX`<sup>Required</sup> <a name="SERVICE_PREFIX" id="@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.SERVICE_PREFIX"></a>
 
 ```typescript
@@ -1101,6 +1181,18 @@ public readonly TagResource: string;
 
 ---
 
+##### `UnpauseDeployment`<sup>Required</sup> <a name="UnpauseDeployment" id="@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.UnpauseDeployment"></a>
+
+```typescript
+public readonly UnpauseDeployment: string;
+```
+
+- *Type:* string
+
+[Write] aws-external-anthropic:UnpauseDeployment.
+
+---
+
 ##### `UntagResource`<sup>Required</sup> <a name="UntagResource" id="@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.UntagResource"></a>
 
 ```typescript
@@ -1122,6 +1214,18 @@ public readonly UpdateAgent: string;
 - *Type:* string
 
 [Write] aws-external-anthropic:UpdateAgent.
+
+---
+
+##### `UpdateDeployment`<sup>Required</sup> <a name="UpdateDeployment" id="@cdk_utils/iam.aws_external_anthropic.AWSExternalAnthropicActions.property.UpdateDeployment"></a>
+
+```typescript
+public readonly UpdateDeployment: string;
+```
+
+- *Type:* string
+
+[Write] aws-external-anthropic:UpdateDeployment.
 
 ---
 

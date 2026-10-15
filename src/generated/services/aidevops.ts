@@ -845,6 +845,10 @@ export class AidevopsOperations {
  * Condition key constants and builders for aidevops.
  */
 export class AidevopsConditions {
+	/** Condition keys applicable to the AssociateService action. */
+	static readonly AssociateServiceConditionKeys: string[] = [
+		"aidevops:ServiceType",
+	];
 	/** Condition keys applicable to the CreateAgentSpace action. */
 	static readonly CreateAgentSpaceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
@@ -878,6 +882,10 @@ export class AidevopsConditions {
 	static readonly DescribePrivateConnectionConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
+	/** Condition keys applicable to the DisassociateService action. */
+	static readonly DisassociateServiceConditionKeys: string[] = [
+		"aidevops:ServiceType",
+	];
 	/** Condition keys applicable to the GetAgentSpace action. */
 	static readonly actionGetAgentSpaceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
@@ -896,6 +904,10 @@ export class AidevopsConditions {
 	static readonly actionGetAssetFileConditionKeys: string[] = [
 		"aidevops:SourceAgentSpaceArn",
 		"aidevops:TargetAgentSpaceArn",
+	];
+	/** Condition keys applicable to the GetAssociation action. */
+	static readonly actionGetAssociationConditionKeys: string[] = [
+		"aidevops:ServiceType",
 	];
 	/** Condition keys applicable to the GetBacklogTask action. */
 	static readonly actionGetBacklogTaskConditionKeys: string[] = [
@@ -935,6 +947,10 @@ export class AidevopsConditions {
 	static readonly ListTagsForResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
+	/** Condition keys applicable to the ListWebhooks action. */
+	static readonly ListWebhooksConditionKeys: string[] = [
+		"aidevops:ServiceType",
+	];
 	/** Condition keys applicable to the RegisterService action. */
 	static readonly RegisterServiceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
@@ -961,6 +977,10 @@ export class AidevopsConditions {
 	static readonly UpdateAgentSpaceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
+	/** Condition keys applicable to the UpdateAssociation action. */
+	static readonly UpdateAssociationConditionKeys: string[] = [
+		"aidevops:ServiceType",
+	];
 	/** Condition keys applicable to the UpdateBacklogTask action. */
 	static readonly UpdateBacklogTaskConditionKeys: string[] = [
 		"aidevops:SourceAgentSpaceArn",
@@ -971,6 +991,8 @@ export class AidevopsConditions {
 		"aws:ResourceTag/${TagKey}",
 	];
 
+	/** Condition key: aidevops:ServiceType (String) */
+	static readonly SERVICE_TYPE = "aidevops:ServiceType";
 	/** Condition key: aidevops:SourceAgentSpaceArn (ARN) */
 	static readonly SOURCE_AGENT_SPACE_ARN = "aidevops:SourceAgentSpaceArn";
 	/** Condition key: aidevops:TargetAgentSpaceArn (ARN) */
@@ -981,6 +1003,13 @@ export class AidevopsConditions {
 	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
 	static readonly AWS_TAG_KEYS = "aws:TagKeys";
+
+	/**
+	 * Generates a condition block for `aidevops:ServiceType`.
+	 */
+	static serviceType(value: string): Record<string, Record<string, string>> {
+		return { StringEquals: { "aidevops:ServiceType": value } };
+	}
 
 	/**
 	 * Generates a condition block for `aidevops:SourceAgentSpaceArn`.

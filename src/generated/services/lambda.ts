@@ -1468,6 +1468,7 @@ export class LambdaOperations {
 	/** IAM actions required for the CreateWebFunction API call. */
 	static readonly CreateWebFunction: string[] = [
 		"lambda:CreateWebFunction",
+		"lambda:PassNetworkConnector",
 		"iam:PassRole",
 		"lambda:TagResource",
 	];
@@ -1478,6 +1479,7 @@ export class LambdaOperations {
 	/** IAM actions required for the CreateWebFunctionRevision API call. */
 	static readonly CreateWebFunctionRevision: string[] = [
 		"lambda:CreateWebFunctionRevision",
+		"lambda:PassNetworkConnector",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the DeleteAlias API call. */

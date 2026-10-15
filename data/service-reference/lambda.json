@@ -3220,6 +3220,10 @@
           "Service": "lambda"
         },
         {
+          "Name": "PassNetworkConnector",
+          "Service": "lambda"
+        },
+        {
           "Name": "PassRole",
           "Context": {
             "iam:PassedToService": [
@@ -3262,6 +3266,10 @@
       "AuthorizedActions": [
         {
           "Name": "CreateWebFunctionRevision",
+          "Service": "lambda"
+        },
+        {
+          "Name": "PassNetworkConnector",
           "Service": "lambda"
         },
         {

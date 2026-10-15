@@ -14,6 +14,9 @@ export class AWSExternalAnthropicActions {
 
 	/** [Write] aws-external-anthropic:ArchiveAgent */
 	static readonly ArchiveAgent = "aws-external-anthropic:ArchiveAgent";
+	/** [Write] aws-external-anthropic:ArchiveDeployment */
+	static readonly ArchiveDeployment =
+		"aws-external-anthropic:ArchiveDeployment";
 	/** [Write] aws-external-anthropic:ArchiveEnvironment */
 	static readonly ArchiveEnvironment =
 		"aws-external-anthropic:ArchiveEnvironment";
@@ -41,6 +44,8 @@ export class AWSExternalAnthropicActions {
 	/** [Write] aws-external-anthropic:CreateBatchInference */
 	static readonly CreateBatchInference =
 		"aws-external-anthropic:CreateBatchInference";
+	/** [Write] aws-external-anthropic:CreateDeployment */
+	static readonly CreateDeployment = "aws-external-anthropic:CreateDeployment";
 	/** [Write] aws-external-anthropic:CreateEnvironment */
 	static readonly CreateEnvironment =
 		"aws-external-anthropic:CreateEnvironment";
@@ -96,6 +101,8 @@ export class AWSExternalAnthropicActions {
 	/** [Read] aws-external-anthropic:GetBatchInference */
 	static readonly actionGetBatchInference =
 		"aws-external-anthropic:GetBatchInference";
+	/** [Read] aws-external-anthropic:GetDeployment */
+	static readonly actionGetDeployment = "aws-external-anthropic:GetDeployment";
 	/** [Read] aws-external-anthropic:GetEnvironment */
 	static readonly actionGetEnvironment =
 		"aws-external-anthropic:GetEnvironment";
@@ -126,6 +133,8 @@ export class AWSExternalAnthropicActions {
 	/** [List] aws-external-anthropic:ListBatchInferences */
 	static readonly ListBatchInferences =
 		"aws-external-anthropic:ListBatchInferences";
+	/** [List] aws-external-anthropic:ListDeployments */
+	static readonly ListDeployments = "aws-external-anthropic:ListDeployments";
 	/** [List] aws-external-anthropic:ListEnvironments */
 	static readonly ListEnvironments = "aws-external-anthropic:ListEnvironments";
 	/** [List] aws-external-anthropic:ListFiles */
@@ -151,6 +160,8 @@ export class AWSExternalAnthropicActions {
 	static readonly ListWebhooks = "aws-external-anthropic:ListWebhooks";
 	/** [List] aws-external-anthropic:ListWorkspaces */
 	static readonly ListWorkspaces = "aws-external-anthropic:ListWorkspaces";
+	/** [Write] aws-external-anthropic:PauseDeployment */
+	static readonly PauseDeployment = "aws-external-anthropic:PauseDeployment";
 	/** [Write] aws-external-anthropic:ProcessEnvironmentWork */
 	static readonly ProcessEnvironmentWork =
 		"aws-external-anthropic:ProcessEnvironmentWork";
@@ -159,12 +170,19 @@ export class AWSExternalAnthropicActions {
 	/** [Write] aws-external-anthropic:RotateWebhookSecret */
 	static readonly RotateWebhookSecret =
 		"aws-external-anthropic:RotateWebhookSecret";
+	/** [Write] aws-external-anthropic:RunDeployment */
+	static readonly RunDeployment = "aws-external-anthropic:RunDeployment";
 	/** [Tagging] aws-external-anthropic:TagResource */
 	static readonly TagResource = "aws-external-anthropic:TagResource";
+	/** [Write] aws-external-anthropic:UnpauseDeployment */
+	static readonly UnpauseDeployment =
+		"aws-external-anthropic:UnpauseDeployment";
 	/** [Tagging] aws-external-anthropic:UntagResource */
 	static readonly UntagResource = "aws-external-anthropic:UntagResource";
 	/** [Write] aws-external-anthropic:UpdateAgent */
 	static readonly UpdateAgent = "aws-external-anthropic:UpdateAgent";
+	/** [Write] aws-external-anthropic:UpdateDeployment */
+	static readonly UpdateDeployment = "aws-external-anthropic:UpdateDeployment";
 	/** [Write] aws-external-anthropic:UpdateEnvironment */
 	static readonly UpdateEnvironment =
 		"aws-external-anthropic:UpdateEnvironment";
@@ -192,6 +210,7 @@ export class AWSExternalAnthropicActions {
 		AWSExternalAnthropicActions.actionGetAccountStatus,
 		AWSExternalAnthropicActions.actionGetAgent,
 		AWSExternalAnthropicActions.actionGetBatchInference,
+		AWSExternalAnthropicActions.actionGetDeployment,
 		AWSExternalAnthropicActions.actionGetEnvironment,
 		AWSExternalAnthropicActions.actionGetFile,
 		AWSExternalAnthropicActions.actionGetKey,
@@ -208,6 +227,7 @@ export class AWSExternalAnthropicActions {
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
 		AWSExternalAnthropicActions.ArchiveAgent,
+		AWSExternalAnthropicActions.ArchiveDeployment,
 		AWSExternalAnthropicActions.ArchiveEnvironment,
 		AWSExternalAnthropicActions.ArchiveMemoryStore,
 		AWSExternalAnthropicActions.ArchiveSession,
@@ -218,6 +238,7 @@ export class AWSExternalAnthropicActions {
 		AWSExternalAnthropicActions.CountTokens,
 		AWSExternalAnthropicActions.CreateAgent,
 		AWSExternalAnthropicActions.CreateBatchInference,
+		AWSExternalAnthropicActions.CreateDeployment,
 		AWSExternalAnthropicActions.CreateEnvironment,
 		AWSExternalAnthropicActions.CreateFile,
 		AWSExternalAnthropicActions.CreateInference,
@@ -238,10 +259,14 @@ export class AWSExternalAnthropicActions {
 		AWSExternalAnthropicActions.DeleteVault,
 		AWSExternalAnthropicActions.DeleteWebhook,
 		AWSExternalAnthropicActions.DisableKey,
+		AWSExternalAnthropicActions.PauseDeployment,
 		AWSExternalAnthropicActions.ProcessEnvironmentWork,
 		AWSExternalAnthropicActions.RegisterKey,
 		AWSExternalAnthropicActions.RotateWebhookSecret,
+		AWSExternalAnthropicActions.RunDeployment,
+		AWSExternalAnthropicActions.UnpauseDeployment,
 		AWSExternalAnthropicActions.UpdateAgent,
+		AWSExternalAnthropicActions.UpdateDeployment,
 		AWSExternalAnthropicActions.UpdateEnvironment,
 		AWSExternalAnthropicActions.UpdateKey,
 		AWSExternalAnthropicActions.UpdateMemoryStore,
@@ -257,6 +282,7 @@ export class AWSExternalAnthropicActions {
 		AWSExternalAnthropicActions.CallWithBearerToken,
 		AWSExternalAnthropicActions.ListAgents,
 		AWSExternalAnthropicActions.ListBatchInferences,
+		AWSExternalAnthropicActions.ListDeployments,
 		AWSExternalAnthropicActions.ListEnvironments,
 		AWSExternalAnthropicActions.ListFiles,
 		AWSExternalAnthropicActions.ListKeys,

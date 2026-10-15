@@ -2394,6 +2394,7 @@ export class CloudWatchConditions {
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"cloudwatch:AlarmActions",
+		"cloudwatch:AlarmTagsPropagationEnabled",
 	];
 	/** Condition keys applicable to the PutDashboard action. */
 	static readonly PutDashboardConditionKeys: string[] = [
@@ -2415,6 +2416,7 @@ export class CloudWatchConditions {
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"cloudwatch:AlarmActions",
+		"cloudwatch:AlarmTagsPropagationEnabled",
 	];
 	/** Condition keys applicable to the PutManagedInsightRules action. */
 	static readonly PutManagedInsightRulesConditionKeys: string[] = [
@@ -2427,6 +2429,7 @@ export class CloudWatchConditions {
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"cloudwatch:AlarmActions",
+		"cloudwatch:AlarmTagsPropagationEnabled",
 	];
 	/** Condition keys applicable to the PutMetricData action. */
 	static readonly PutMetricDataConditionKeys: string[] = [
@@ -2525,6 +2528,9 @@ export class CloudWatchConditions {
 	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: cloudwatch:AlarmActions (ArrayOfString) */
 	static readonly ALARM_ACTIONS = "cloudwatch:AlarmActions";
+	/** Condition key: cloudwatch:AlarmTagsPropagationEnabled (Bool) */
+	static readonly ALARM_TAGS_PROPAGATION_ENABLED =
+		"cloudwatch:AlarmTagsPropagationEnabled";
 	/** Condition key: cloudwatch:HasAccessGrant (String) */
 	static readonly HAS_ACCESS_GRANT = "cloudwatch:HasAccessGrant";
 	/** Condition key: cloudwatch:ResourceArn (ARN) */
@@ -2568,6 +2574,15 @@ export class CloudWatchConditions {
 		return {
 			"ForAllValues:StringEquals": { "cloudwatch:AlarmActions": values },
 		};
+	}
+
+	/**
+	 * Generates a condition block for `cloudwatch:AlarmTagsPropagationEnabled`.
+	 */
+	static alarmTagsPropagationEnabled(
+		value: boolean,
+	): Record<string, Record<string, boolean>> {
+		return { Bool: { "cloudwatch:AlarmTagsPropagationEnabled": value } };
 	}
 
 	/**
