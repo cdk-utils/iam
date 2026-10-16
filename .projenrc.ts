@@ -1,5 +1,6 @@
 import { CDKUtilsTemplate } from "@cdk_utils/projen_template";
-import { JsonPatch } from "projen";
+import { JsonPatch, javascript } from "projen";
+import { JobPermission } from "projen/lib/github/workflows-model";
 
 // The exact title the daily service-reference update PR is opened with. Shared by
 // the workflow (commit subject + PR title) and the Mergify auto-approve rule so
@@ -15,6 +16,21 @@ const project = new CDKUtilsTemplate({
 	keywords: ["iam", "aws-cdk", "cdk", "constructs", "aws-iam"],
 	devDeps: ["@cdk_utils/projen_template", "tsx"],
 });
+
+// Exclude machine-generated service constants from Biome. src/generated/** is
+// authored by the codegen scripts (and regenerated daily), is shaped for jsii
+// (static-only classes), and carries AWS condition keys with literal ${...}
+// placeholders — so Biome's noStaticOnlyClass / noTemplateCurlyInString /
+// noNonNullAssertion fire thousands of times on code no human edits. jsii still
+// type-checks these files at compile time, so dropping them from the linter
+// loses no correctness coverage. `!` prefix is Biome's ignore syntax.
+const biome = javascript.Biome.of(project);
+if (!biome) {
+	throw new Error(
+		"Biome component not found on project — expected it enabled by CDKUtilsTemplate",
+	);
+}
+biome.addFilePattern("!src/generated/**");
 
 // Override docgen to split documentation by submodule into docs/ directory
 project.tasks
@@ -54,8 +70,8 @@ updateWorkflow.on({
 updateWorkflow.addJob("update", {
 	runsOn: ["ubuntu-latest"],
 	permissions: {
-		contents: "write" as any,
-		pullRequests: "write" as any,
+		contents: JobPermission.WRITE,
+		pullRequests: JobPermission.WRITE,
 	},
 	steps: [
 		{
