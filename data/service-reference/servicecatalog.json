@@ -4053,6 +4053,15 @@
       "Name": "UpdateProvisionedProductProperties",
       "AuthorizedActions": [
         {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "servicecatalog.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
           "Name": "UpdateProvisionedProductProperties",
           "Service": "servicecatalog"
         }

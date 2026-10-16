@@ -1076,7 +1076,9 @@ export class DRSOperations {
 	/** IAM actions required for the ListLaunchActions API call. */
 	static readonly ListLaunchActions: string[] = ["drs:ListLaunchActions"];
 	/** IAM actions required for the ListRecoveryPlanExecutionSteps API call. */
-	static readonly ListRecoveryPlanExecutionSteps: string[] = [];
+	static readonly ListRecoveryPlanExecutionSteps: string[] = [
+		"drs:ListRecoveryPlanExecutionSteps",
+	];
 	/** IAM actions required for the ListRecoveryPlanExecutions API call. */
 	static readonly ListRecoveryPlanExecutions: string[] = [
 		"drs:ListRecoveryPlanExecutions",

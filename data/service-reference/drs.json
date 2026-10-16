@@ -2915,6 +2915,12 @@
     },
     {
       "Name": "ListRecoveryPlanExecutionSteps",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRecoveryPlanExecutionSteps",
+          "Service": "drs"
+        }
+      ],
       "SDK": [
         {
           "Name": "drs",

@@ -2526,6 +2526,12 @@
     },
     {
       "Name": "BatchExportFindings",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchExportFindings",
+          "Service": "securityagent"
+        }
+      ],
       "SDK": [
         {
           "Name": "securityagent",
