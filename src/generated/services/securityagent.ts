@@ -854,7 +854,9 @@ export class SecurityagentOperations {
 	/** IAM actions required for the BatchDisassociateFindingIssue API call. */
 	static readonly BatchDisassociateFindingIssue: string[] = [];
 	/** IAM actions required for the BatchExportFindings API call. */
-	static readonly BatchExportFindings: string[] = [];
+	static readonly BatchExportFindings: string[] = [
+		"securityagent:BatchExportFindings",
+	];
 	/** IAM actions required for the BatchGetAgentSpaces API call. */
 	static readonly BatchGetAgentSpaces: string[] = [
 		"securityagent:BatchGetAgentSpaces",

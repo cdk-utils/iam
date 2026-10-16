@@ -1126,6 +1126,7 @@ export class ServiceCatalogOperations {
 	];
 	/** IAM actions required for the UpdateProvisionedProductProperties API call. */
 	static readonly UpdateProvisionedProductProperties: string[] = [
+		"iam:PassRole",
 		"servicecatalog:UpdateProvisionedProductProperties",
 	];
 	/** IAM actions required for the UpdateProvisioningArtifact API call. */

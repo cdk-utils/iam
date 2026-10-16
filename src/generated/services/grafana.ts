@@ -256,7 +256,11 @@ export class GrafanaOperations {
 	/** IAM actions required for the ListWorkspaces API call. */
 	static readonly ListWorkspaces: string[] = ["grafana:ListWorkspaces"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TagResource: string[] = ["grafana:TagResource"];
+	static readonly TagResource: string[] = [
+		"grafana:CreateWorkspace",
+		"iam:PassRole",
+		"grafana:TagResource",
+	];
 	/** IAM actions required for the UntagResource API call. */
 	static readonly UntagResource: string[] = ["grafana:UntagResource"];
 	/** IAM actions required for the UpdatePermissions API call. */
