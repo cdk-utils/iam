@@ -1607,7 +1607,6 @@ export class AWSMarketplaceOperations {
 	static readonly AcceptAgreementRequest: string[] = [
 		"aws-marketplace:AcceptAgreementRequest",
 		"aws-marketplace:Subscribe",
-		"aws-marketplace:UpdatePurchaseOrders",
 	];
 	/** IAM actions required for the BatchCreateBillingAdjustmentRequest API call. */
 	static readonly BatchCreateBillingAdjustmentRequest: string[] = [

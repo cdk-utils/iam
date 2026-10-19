@@ -1461,8 +1461,7 @@
           "Name": "PassRole",
           "Context": {
             "iam:PassedToService": [
-              "cloudtrail.amazonaws.com",
-              "cloudtrail.preprod.amazonaws.com"
+              "cloudtrail.amazonaws.com"
             ]
           },
           "Service": "iam"
@@ -1631,8 +1630,7 @@
           "Name": "PassRole",
           "Context": {
             "iam:PassedToService": [
-              "cloudtrail.amazonaws.com",
-              "cloudtrail.preprod.amazonaws.com"
+              "cloudtrail.amazonaws.com"
             ]
           },
           "Service": "iam"
@@ -2205,8 +2203,7 @@
           "Name": "PassRole",
           "Context": {
             "iam:PassedToService": [
-              "cloudtrail.amazonaws.com",
-              "cloudtrail.preprod.amazonaws.com"
+              "cloudtrail.amazonaws.com"
             ]
           },
           "Service": "iam"
@@ -2367,8 +2364,7 @@
           "Name": "PassRole",
           "Context": {
             "iam:PassedToService": [
-              "cloudtrail.amazonaws.com",
-              "cloudtrail.preprod.amazonaws.com"
+              "cloudtrail.amazonaws.com"
             ]
           },
           "Service": "iam"

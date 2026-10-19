@@ -10275,6 +10275,12 @@
     },
     {
       "Name": "UpdateUserSettings",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateUserSettings",
+          "Service": "chime"
+        }
+      ],
       "SDK": [
         {
           "Name": "chime",

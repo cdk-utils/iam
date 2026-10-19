@@ -80,6 +80,8 @@ export class TransferActions {
 		"transfer:DescribeWebAppCustomization";
 	/** [Read] transfer:DescribeWorkflow */
 	static readonly DescribeWorkflow = "transfer:DescribeWorkflow";
+	/** [Write] transfer:ExportHostKey */
+	static readonly ExportHostKey = "transfer:ExportHostKey";
 	/** [Write] transfer:ImportCertificate */
 	static readonly ImportCertificate = "transfer:ImportCertificate";
 	/** [Write] transfer:ImportHostKey */
@@ -206,6 +208,7 @@ export class TransferActions {
 		TransferActions.DeleteWebApp,
 		TransferActions.DeleteWebAppCustomization,
 		TransferActions.DeleteWorkflow,
+		TransferActions.ExportHostKey,
 		TransferActions.ImportCertificate,
 		TransferActions.ImportHostKey,
 		TransferActions.ImportSshPublicKey,
@@ -1018,7 +1021,10 @@ export class TransferOperations {
 		"transfer:UpdateConnector",
 	];
 	/** IAM actions required for the UpdateHostKey API call. */
-	static readonly UpdateHostKey: string[] = ["transfer:UpdateHostKey"];
+	static readonly UpdateHostKey: string[] = [
+		"transfer:ExportHostKey",
+		"transfer:UpdateHostKey",
+	];
 	/** IAM actions required for the UpdateProfile API call. */
 	static readonly UpdateProfile: string[] = ["transfer:UpdateProfile"];
 	/** IAM actions required for the UpdateServer API call. */

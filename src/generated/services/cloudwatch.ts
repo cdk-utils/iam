@@ -1808,7 +1808,7 @@ export class CloudWatchOperations {
 	/** IAM actions required for the DeleteAlarms API call. */
 	static readonly DeleteAlarms: string[] = ["cloudwatch:DeleteAlarms"];
 	/** IAM actions required for the DeleteAlert API call. */
-	static readonly DeleteAlert: string[] = [];
+	static readonly DeleteAlert: string[] = ["cloudwatch:DeleteAlert"];
 	/** IAM actions required for the DeleteAnomalyDetector API call. */
 	static readonly DeleteAnomalyDetector: string[] = [
 		"cloudwatch:DeleteAnomalyDetector",
