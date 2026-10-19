@@ -840,10 +840,7 @@ export class RekognitionOperations {
 		"rekognition:StartMediaAnalysisJob",
 	];
 	/** IAM actions required for the StartPersonTracking API call. */
-	static readonly StartPersonTracking: string[] = [
-		"iam:PassRole",
-		"rekognition:StartPersonTracking",
-	];
+	static readonly StartPersonTracking: string[] = [];
 	/** IAM actions required for the StartProjectVersion API call. */
 	static readonly StartProjectVersion: string[] = [
 		"rekognition:StartProjectVersion",

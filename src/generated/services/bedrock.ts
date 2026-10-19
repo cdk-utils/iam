@@ -3848,6 +3848,7 @@ export class BedrockOperations {
 	];
 	/** IAM actions required for the GetAdvancedPromptOptimizationJob API call. */
 	static readonly opGetAdvancedPromptOptimizationJob: string[] = [
+		"bedrock:CallWithBearerToken",
 		"bedrock:GetAdvancedPromptOptimizationJob",
 	];
 	/** IAM actions required for the GetAgent API call. */

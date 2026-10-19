@@ -2565,21 +2565,6 @@
     },
     {
       "Name": "StartPersonTracking",
-      "AuthorizedActions": [
-        {
-          "Name": "PassRole",
-          "Context": {
-            "iam:PassedToService": [
-              "rekognition.amazonaws.com"
-            ]
-          },
-          "Service": "iam"
-        },
-        {
-          "Name": "StartPersonTracking",
-          "Service": "rekognition"
-        }
-      ],
       "SDK": [
         {
           "Name": "rekognition",

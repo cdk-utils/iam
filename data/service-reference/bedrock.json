@@ -7421,6 +7421,10 @@
       "Name": "GetAdvancedPromptOptimizationJob",
       "AuthorizedActions": [
         {
+          "Name": "CallWithBearerToken",
+          "Service": "bedrock"
+        },
+        {
           "Name": "GetAdvancedPromptOptimizationJob",
           "Service": "bedrock"
         }

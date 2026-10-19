@@ -3115,6 +3115,16 @@
     },
     {
       "Name": "StartRecoveryPlanExecution",
+      "AuthorizedActions": [
+        {
+          "Name": "StartRecoveryPlanExecution",
+          "Service": "drs"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "drs"
+        }
+      ],
       "SDK": [
         {
           "Name": "drs",

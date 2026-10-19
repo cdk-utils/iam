@@ -1477,6 +1477,7 @@ new transfer.TransferActions()
 | <code><a href="#@cdk_utils/iam.transfer.TransferActions.property.DescribeWebApp">DescribeWebApp</a></code> | <code>string</code> | [Read] transfer:DescribeWebApp. |
 | <code><a href="#@cdk_utils/iam.transfer.TransferActions.property.DescribeWebAppCustomization">DescribeWebAppCustomization</a></code> | <code>string</code> | [Read] transfer:DescribeWebAppCustomization. |
 | <code><a href="#@cdk_utils/iam.transfer.TransferActions.property.DescribeWorkflow">DescribeWorkflow</a></code> | <code>string</code> | [Read] transfer:DescribeWorkflow. |
+| <code><a href="#@cdk_utils/iam.transfer.TransferActions.property.ExportHostKey">ExportHostKey</a></code> | <code>string</code> | [Write] transfer:ExportHostKey. |
 | <code><a href="#@cdk_utils/iam.transfer.TransferActions.property.ImportCertificate">ImportCertificate</a></code> | <code>string</code> | [Write] transfer:ImportCertificate. |
 | <code><a href="#@cdk_utils/iam.transfer.TransferActions.property.ImportHostKey">ImportHostKey</a></code> | <code>string</code> | [Write] transfer:ImportHostKey. |
 | <code><a href="#@cdk_utils/iam.transfer.TransferActions.property.ImportSshPublicKey">ImportSshPublicKey</a></code> | <code>string</code> | [Write] transfer:ImportSshPublicKey. |
@@ -1972,6 +1973,18 @@ public readonly DescribeWorkflow: string;
 - *Type:* string
 
 [Read] transfer:DescribeWorkflow.
+
+---
+
+##### `ExportHostKey`<sup>Required</sup> <a name="ExportHostKey" id="@cdk_utils/iam.transfer.TransferActions.property.ExportHostKey"></a>
+
+```typescript
+public readonly ExportHostKey: string;
+```
+
+- *Type:* string
+
+[Write] transfer:ExportHostKey.
 
 ---
 

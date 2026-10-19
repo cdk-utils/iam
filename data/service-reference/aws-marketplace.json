@@ -1926,10 +1926,6 @@
         {
           "Name": "Subscribe",
           "Service": "aws-marketplace"
-        },
-        {
-          "Name": "UpdatePurchaseOrders",
-          "Service": "aws-marketplace"
         }
       ],
       "SDK": [

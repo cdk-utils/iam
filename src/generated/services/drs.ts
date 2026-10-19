@@ -1113,7 +1113,10 @@ export class DRSOperations {
 		"drs:TagResource",
 	];
 	/** IAM actions required for the StartRecoveryPlanExecution API call. */
-	static readonly StartRecoveryPlanExecution: string[] = [];
+	static readonly StartRecoveryPlanExecution: string[] = [
+		"drs:StartRecoveryPlanExecution",
+		"drs:TagResource",
+	];
 	/** IAM actions required for the StartReplication API call. */
 	static readonly StartReplication: string[] = ["drs:StartReplication"];
 	/** IAM actions required for the StartSourceNetworkRecovery API call. */

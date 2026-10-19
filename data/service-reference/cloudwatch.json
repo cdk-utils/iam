@@ -3541,6 +3541,12 @@
     },
     {
       "Name": "DeleteAlert",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAlert",
+          "Service": "cloudwatch"
+        }
+      ],
       "SDK": [
         {
           "Name": "cloudwatchomni",

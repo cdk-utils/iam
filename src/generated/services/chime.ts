@@ -2817,7 +2817,7 @@ export class ChimeOperations {
 	/** IAM actions required for the UpdateUser API call. */
 	static readonly UpdateUser: string[] = ["chime:UpdateUser"];
 	/** IAM actions required for the UpdateUserSettings API call. */
-	static readonly UpdateUserSettings: string[] = [];
+	static readonly UpdateUserSettings: string[] = ["chime:UpdateUserSettings"];
 	/** IAM actions required for the UpdateVoiceConnector API call. */
 	static readonly UpdateVoiceConnector: string[] = [
 		"chime:UpdateVoiceConnector",
