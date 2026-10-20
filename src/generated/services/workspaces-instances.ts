@@ -40,6 +40,8 @@ export class WorkspacesInstancesActions {
 	/** [List] workspaces-instances:ListWorkspaceInstances */
 	static readonly ListWorkspaceInstances =
 		"workspaces-instances:ListWorkspaceInstances";
+	/** [Write] workspaces-instances:ModifyVolume */
+	static readonly ModifyVolume = "workspaces-instances:ModifyVolume";
 	/** [Tagging] workspaces-instances:TagResource */
 	static readonly TagResource = "workspaces-instances:TagResource";
 	/** [Tagging] workspaces-instances:UntagResource */
@@ -57,6 +59,7 @@ export class WorkspacesInstancesActions {
 		WorkspacesInstancesActions.DeleteVolume,
 		WorkspacesInstancesActions.DeleteWorkspaceInstance,
 		WorkspacesInstancesActions.DisassociateVolume,
+		WorkspacesInstancesActions.ModifyVolume,
 	];
 	/** All list-level actions. */
 	static readonly AllListActions: string[] = [
@@ -254,6 +257,10 @@ export class WorkspacesInstancesOperations {
 	/** IAM actions required for the ListWorkspaceInstances API call. */
 	static readonly ListWorkspaceInstances: string[] = [
 		"workspaces-instances:ListWorkspaceInstances",
+	];
+	/** IAM actions required for the ModifyVolume API call. */
+	static readonly ModifyVolume: string[] = [
+		"workspaces-instances:ModifyVolume",
 	];
 	/** IAM actions required for the TagResource API call. */
 	static readonly TagResource: string[] = ["workspaces-instances:TagResource"];

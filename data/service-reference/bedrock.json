@@ -6701,6 +6701,32 @@
       ]
     },
     {
+      "Name": "CreateRetrievalInstruction",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "bedrock"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bedrock-agent",
+          "Method": "create_retrieval_instruction",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRetrievalInstructionVersion",
+      "SDK": [
+        {
+          "Name": "bedrock-agent",
+          "Method": "create_retrieval_instruction_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "CreateSession",
       "AuthorizedActions": [
         {
@@ -7259,6 +7285,16 @@
         {
           "Name": "bedrock-agent",
           "Method": "delete_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRetrievalInstruction",
+      "SDK": [
+        {
+          "Name": "bedrock-agent",
+          "Method": "delete_retrieval_instruction",
           "Package": "Boto3"
         }
       ]
@@ -8347,6 +8383,16 @@
       ]
     },
     {
+      "Name": "GetRetrievalInstruction",
+      "SDK": [
+        {
+          "Name": "bedrock-agent",
+          "Method": "get_retrieval_instruction",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetSession",
       "AuthorizedActions": [
         {
@@ -9425,6 +9471,26 @@
       ]
     },
     {
+      "Name": "ListRetrievalInstructionVersions",
+      "SDK": [
+        {
+          "Name": "bedrock-agent",
+          "Method": "list_retrieval_instruction_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRetrievalInstructions",
+      "SDK": [
+        {
+          "Name": "bedrock-agent",
+          "Method": "list_retrieval_instructions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListSessions",
       "AuthorizedActions": [
         {
@@ -10400,6 +10466,16 @@
         {
           "Name": "bedrock",
           "Method": "update_provisioned_model_throughput",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRetrievalInstruction",
+      "SDK": [
+        {
+          "Name": "bedrock-agent",
+          "Method": "update_retrieval_instruction",
           "Package": "Boto3"
         }
       ]

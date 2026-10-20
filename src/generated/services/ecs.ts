@@ -15,6 +15,9 @@ export class ECSActions {
 	/** [PermissionManagement] ecs:AllowVendedLogDeliveryForResource */
 	static readonly AllowVendedLogDeliveryForResource =
 		"ecs:AllowVendedLogDeliveryForResource";
+	/** [Write] ecs:AssociateGatewayWithCluster */
+	static readonly AssociateGatewayWithCluster =
+		"ecs:AssociateGatewayWithCluster";
 	/** [Write] ecs:ContinueServiceDeployment */
 	static readonly ContinueServiceDeployment = "ecs:ContinueServiceDeployment";
 	/** [Write] ecs:CreateCapacityProvider */
@@ -26,6 +29,8 @@ export class ECSActions {
 	/** [Write] ecs:CreateExpressGatewayService */
 	static readonly CreateExpressGatewayService =
 		"ecs:CreateExpressGatewayService";
+	/** [Write] ecs:CreateGateway */
+	static readonly CreateGateway = "ecs:CreateGateway";
 	/** [Write] ecs:CreateService */
 	static readonly CreateService = "ecs:CreateService";
 	/** [Write] ecs:CreateTaskSet */
@@ -45,6 +50,8 @@ export class ECSActions {
 	/** [Write] ecs:DeleteExpressGatewayService */
 	static readonly DeleteExpressGatewayService =
 		"ecs:DeleteExpressGatewayService";
+	/** [Write] ecs:DeleteGateway */
+	static readonly DeleteGateway = "ecs:DeleteGateway";
 	/** [Write] ecs:DeleteService */
 	static readonly DeleteService = "ecs:DeleteService";
 	/** [Write] ecs:DeleteTaskDefinitions */
@@ -74,6 +81,12 @@ export class ECSActions {
 	/** [Read] ecs:DescribeExpressGatewayService */
 	static readonly DescribeExpressGatewayService =
 		"ecs:DescribeExpressGatewayService";
+	/** [Read] ecs:DescribeGateway */
+	static readonly DescribeGateway = "ecs:DescribeGateway";
+	/** [Read] ecs:DescribeGatewayResources */
+	static readonly DescribeGatewayResources = "ecs:DescribeGatewayResources";
+	/** [Read] ecs:DescribeGatewayRoute */
+	static readonly DescribeGatewayRoute = "ecs:DescribeGatewayRoute";
 	/** [Read] ecs:DescribeServiceDeployments */
 	static readonly DescribeServiceDeployments = "ecs:DescribeServiceDeployments";
 	/** [Read] ecs:DescribeServiceRevisions */
@@ -86,6 +99,9 @@ export class ECSActions {
 	static readonly DescribeTaskSets = "ecs:DescribeTaskSets";
 	/** [Read] ecs:DescribeTasks */
 	static readonly DescribeTasks = "ecs:DescribeTasks";
+	/** [Write] ecs:DisassociateGatewayFromCluster */
+	static readonly DisassociateGatewayFromCluster =
+		"ecs:DisassociateGatewayFromCluster";
 	/** [Write] ecs:DiscoverPollEndpoint */
 	static readonly DiscoverPollEndpoint = "ecs:DiscoverPollEndpoint";
 	/** [Write] ecs:ExecuteCommand */
@@ -106,6 +122,13 @@ export class ECSActions {
 	static readonly ListDaemonTaskDefinitions = "ecs:ListDaemonTaskDefinitions";
 	/** [List] ecs:ListDaemons */
 	static readonly ListDaemons = "ecs:ListDaemons";
+	/** [List] ecs:ListGatewayClusterAssociations */
+	static readonly ListGatewayClusterAssociations =
+		"ecs:ListGatewayClusterAssociations";
+	/** [List] ecs:ListGatewayRoutes */
+	static readonly ListGatewayRoutes = "ecs:ListGatewayRoutes";
+	/** [List] ecs:ListGateways */
+	static readonly ListGateways = "ecs:ListGateways";
 	/** [List] ecs:ListServiceDeployments */
 	static readonly ListServiceDeployments = "ecs:ListServiceDeployments";
 	/** [List] ecs:ListServices */
@@ -177,6 +200,8 @@ export class ECSActions {
 	/** [Write] ecs:UpdateExpressGatewayService */
 	static readonly UpdateExpressGatewayService =
 		"ecs:UpdateExpressGatewayService";
+	/** [Write] ecs:UpdateGateway */
+	static readonly UpdateGateway = "ecs:UpdateGateway";
 	/** [Write] ecs:UpdateService */
 	static readonly UpdateService = "ecs:UpdateService";
 	/** [Write] ecs:UpdateServicePrimaryTaskSet */
@@ -197,6 +222,9 @@ export class ECSActions {
 		ECSActions.DescribeDaemonRevisions,
 		ECSActions.DescribeDaemonTaskDefinition,
 		ECSActions.DescribeExpressGatewayService,
+		ECSActions.DescribeGateway,
+		ECSActions.DescribeGatewayResources,
+		ECSActions.DescribeGatewayRoute,
 		ECSActions.DescribeServiceDeployments,
 		ECSActions.DescribeServiceRevisions,
 		ECSActions.DescribeServices,
@@ -209,11 +237,13 @@ export class ECSActions {
 	];
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
+		ECSActions.AssociateGatewayWithCluster,
 		ECSActions.ContinueServiceDeployment,
 		ECSActions.CreateCapacityProvider,
 		ECSActions.CreateCluster,
 		ECSActions.CreateDaemon,
 		ECSActions.CreateExpressGatewayService,
+		ECSActions.CreateGateway,
 		ECSActions.CreateService,
 		ECSActions.CreateTaskSet,
 		ECSActions.DeleteAccountSetting,
@@ -223,11 +253,13 @@ export class ECSActions {
 		ECSActions.DeleteDaemon,
 		ECSActions.DeleteDaemonTaskDefinition,
 		ECSActions.DeleteExpressGatewayService,
+		ECSActions.DeleteGateway,
 		ECSActions.DeleteService,
 		ECSActions.DeleteTaskDefinitions,
 		ECSActions.DeleteTaskSet,
 		ECSActions.DeregisterContainerInstance,
 		ECSActions.DeregisterTaskDefinition,
+		ECSActions.DisassociateGatewayFromCluster,
 		ECSActions.DiscoverPollEndpoint,
 		ECSActions.ExecuteCommand,
 		ECSActions.Poll,
@@ -254,6 +286,7 @@ export class ECSActions {
 		ECSActions.UpdateContainerInstancesState,
 		ECSActions.UpdateDaemon,
 		ECSActions.UpdateExpressGatewayService,
+		ECSActions.UpdateGateway,
 		ECSActions.UpdateService,
 		ECSActions.UpdateServicePrimaryTaskSet,
 		ECSActions.UpdateTaskProtection,
@@ -267,6 +300,9 @@ export class ECSActions {
 		ECSActions.ListDaemonDeployments,
 		ECSActions.ListDaemonTaskDefinitions,
 		ECSActions.ListDaemons,
+		ECSActions.ListGatewayClusterAssociations,
+		ECSActions.ListGatewayRoutes,
+		ECSActions.ListGateways,
 		ECSActions.ListServiceDeployments,
 		ECSActions.ListServices,
 		ECSActions.ListServicesByNamespace,
@@ -510,6 +546,74 @@ export interface ECSDaemonTaskDefinitionArnComponents {
 }
 
 /**
+ * Properties for building a gateway ARN.
+ */
+export interface ECSGatewayArnProps {
+	/** The GatewayName component of the ARN. */
+	readonly gatewayName: string;
+	/** The GatewayId component of the ARN. */
+	readonly gatewayId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a gateway ARN.
+ */
+export interface ECSGatewayArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The GatewayName component. */
+	readonly gatewayName: string;
+	/** The GatewayId component. */
+	readonly gatewayId: string;
+}
+
+/**
+ * Properties for building a gateway-route ARN.
+ */
+export interface ECSGatewayRouteArnProps {
+	/** The GatewayName component of the ARN. */
+	readonly gatewayName: string;
+	/** The GatewayId component of the ARN. */
+	readonly gatewayId: string;
+	/** The RouteId component of the ARN. */
+	readonly routeId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a gateway-route ARN.
+ */
+export interface ECSGatewayRouteArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The GatewayName component. */
+	readonly gatewayName: string;
+	/** The GatewayId component. */
+	readonly gatewayId: string;
+	/** The RouteId component. */
+	readonly routeId: string;
+}
+
+/**
  * Properties for building a service ARN.
  */
 export interface ECSServiceArnProps {
@@ -727,6 +831,10 @@ const DaemonRevisionArnRegex =
 	/^arn:(?<partition>[^:]+):ecs:(?<region>[^:]*):(?<account>[^:]*):daemon-revision\/(?<clusterName>[^:/?]+)\/(?<daemonName>[^:/?]+)\/(?<daemonRevisionId>[^:/?]+)$/;
 const DaemonTaskDefinitionArnRegex =
 	/^arn:(?<partition>[^:]+):ecs:(?<region>[^:]*):(?<account>[^:]*):daemon-task-definition\/(?<daemonTaskDefinitionFamilyName>[^:/?]+):(?<daemonTaskDefinitionRevisionNumber>[^:/?]+)$/;
+const GatewayArnRegex =
+	/^arn:(?<partition>[^:]+):ecs:(?<region>[^:]*):(?<account>[^:]*):gateway\/(?<gatewayName>[^:/?]+)\/(?<gatewayId>[^:/?]+)$/;
+const GatewayRouteArnRegex =
+	/^arn:(?<partition>[^:]+):ecs:(?<region>[^:]*):(?<account>[^:]*):gateway-route\/(?<gatewayName>[^:/?]+)\/(?<gatewayId>[^:/?]+)\/(?<routeId>[^:/?]+)$/;
 const ServiceArnRegex =
 	/^arn:(?<partition>[^:]+):ecs:(?<region>[^:]*):(?<account>[^:]*):service\/(?<clusterName>[^:/?]+)\/(?<serviceName>[^:/?]+)$/;
 const ServiceDeploymentArnRegex =
@@ -979,6 +1087,71 @@ export class ECSResources {
 	}
 
 	/**
+	 * Builds an ARN for the gateway resource.
+	 */
+	static gateway(props: ECSGatewayArnProps): string {
+		return `arn:${props.partition ?? "aws"}:ecs:${props.region ?? "*"}:${props.account ?? "*"}:gateway/${props.gatewayName}/${props.gatewayId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the gateway resource.
+	 */
+	static isValidGatewayArn(arn: string): boolean {
+		return GatewayArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a gateway ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseGatewayArn(arn: string): ECSGatewayArnComponents {
+		const match = GatewayArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid gateway ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			gatewayName: match.groups!.gatewayName,
+			gatewayId: match.groups!.gatewayId,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the gateway-route resource.
+	 */
+	static gatewayRoute(props: ECSGatewayRouteArnProps): string {
+		return `arn:${props.partition ?? "aws"}:ecs:${props.region ?? "*"}:${props.account ?? "*"}:gateway-route/${props.gatewayName}/${props.gatewayId}/${props.routeId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the gateway-route resource.
+	 */
+	static isValidGatewayRouteArn(arn: string): boolean {
+		return GatewayRouteArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a gateway-route ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseGatewayRouteArn(arn: string): ECSGatewayRouteArnComponents {
+		const match = GatewayRouteArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid gateway-route ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			gatewayName: match.groups!.gatewayName,
+			gatewayId: match.groups!.gatewayId,
+			routeId: match.groups!.routeId,
+		};
+	}
+
+	/**
 	 * Builds an ARN for the service resource.
 	 */
 	static service(props: ECSServiceArnProps): string {
@@ -1204,8 +1377,10 @@ export class ECSOperations {
 	];
 	/** IAM actions required for the CreateExpressGatewayService API call. */
 	static readonly CreateExpressGatewayService: string[] = [
+		"ecs:AssociateGatewayWithCluster",
 		"ecs:CreateCluster",
 		"ecs:CreateExpressGatewayService",
+		"ecs:CreateGateway",
 		"iam:PassRole",
 		"ecs:RegisterTaskDefinition",
 		"ecs:TagResource",
@@ -1436,6 +1611,8 @@ export class ECSOperations {
 	static readonly UpdateDaemon: string[] = ["iam:PassRole", "ecs:UpdateDaemon"];
 	/** IAM actions required for the UpdateExpressGatewayService API call. */
 	static readonly UpdateExpressGatewayService: string[] = [
+		"ecs:AssociateGatewayWithCluster",
+		"ecs:CreateGateway",
 		"iam:PassRole",
 		"ecs:RegisterTaskDefinition",
 		"ecs:UpdateExpressGatewayService",
@@ -1495,6 +1672,13 @@ export class ECSConditions {
 		"ecs:task-cpu",
 		"ecs:task-definition",
 		"ecs:task-memory",
+	];
+	/** Condition keys applicable to the CreateGateway action. */
+	static readonly CreateGatewayConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+		"ecs:enable-ecs-managed-tags",
+		"ecs:propagate-tags",
 	];
 	/** Condition keys applicable to the CreateService action. */
 	static readonly CreateServiceConditionKeys: string[] = [
@@ -1729,6 +1913,11 @@ export class ECSConditions {
 		"ecs:task-cpu",
 		"ecs:task-definition",
 		"ecs:task-memory",
+	];
+	/** Condition keys applicable to the UpdateGateway action. */
+	static readonly UpdateGatewayConditionKeys: string[] = [
+		"ecs:enable-ecs-managed-tags",
+		"ecs:propagate-tags",
 	];
 	/** Condition keys applicable to the UpdateService action. */
 	static readonly UpdateServiceConditionKeys: string[] = [

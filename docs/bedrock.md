@@ -10537,6 +10537,8 @@ new bedrock.BedrockOperations()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.CreatePromptRouter">CreatePromptRouter</a></code> | <code>string[]</code> | IAM actions required for the CreatePromptRouter API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.CreatePromptVersion">CreatePromptVersion</a></code> | <code>string[]</code> | IAM actions required for the CreatePromptVersion API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.CreateProvisionedModelThroughput">CreateProvisionedModelThroughput</a></code> | <code>string[]</code> | IAM actions required for the CreateProvisionedModelThroughput API call. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.CreateRetrievalInstruction">CreateRetrievalInstruction</a></code> | <code>string[]</code> | IAM actions required for the CreateRetrievalInstruction API call. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.CreateRetrievalInstructionVersion">CreateRetrievalInstructionVersion</a></code> | <code>string[]</code> | IAM actions required for the CreateRetrievalInstructionVersion API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.CreateSession">CreateSession</a></code> | <code>string[]</code> | IAM actions required for the CreateSession API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.CreateVpcConfiguration">CreateVpcConfiguration</a></code> | <code>string[]</code> | IAM actions required for the CreateVpcConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.DeleteAgent">DeleteAgent</a></code> | <code>string[]</code> | IAM actions required for the DeleteAgent API call. |
@@ -10569,6 +10571,7 @@ new bedrock.BedrockOperations()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.DeletePromptRouter">DeletePromptRouter</a></code> | <code>string[]</code> | IAM actions required for the DeletePromptRouter API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.DeleteProvisionedModelThroughput">DeleteProvisionedModelThroughput</a></code> | <code>string[]</code> | IAM actions required for the DeleteProvisionedModelThroughput API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.DeleteResourcePolicy">DeleteResourcePolicy</a></code> | <code>string[]</code> | IAM actions required for the DeleteResourcePolicy API call. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.DeleteRetrievalInstruction">DeleteRetrievalInstruction</a></code> | <code>string[]</code> | IAM actions required for the DeleteRetrievalInstruction API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.DeleteSession">DeleteSession</a></code> | <code>string[]</code> | IAM actions required for the DeleteSession API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.DeleteVpcConfiguration">DeleteVpcConfiguration</a></code> | <code>string[]</code> | IAM actions required for the DeleteVpcConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.DeregisterMarketplaceModelEndpoint">DeregisterMarketplaceModelEndpoint</a></code> | <code>string[]</code> | IAM actions required for the DeregisterMarketplaceModelEndpoint API call. |
@@ -10634,6 +10637,8 @@ new bedrock.BedrockOperations()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.ListPromptRouters">ListPromptRouters</a></code> | <code>string[]</code> | IAM actions required for the ListPromptRouters API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.ListPrompts">ListPrompts</a></code> | <code>string[]</code> | IAM actions required for the ListPrompts API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.ListProvisionedModelThroughputs">ListProvisionedModelThroughputs</a></code> | <code>string[]</code> | IAM actions required for the ListProvisionedModelThroughputs API call. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.ListRetrievalInstructions">ListRetrievalInstructions</a></code> | <code>string[]</code> | IAM actions required for the ListRetrievalInstructions API call. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.ListRetrievalInstructionVersions">ListRetrievalInstructionVersions</a></code> | <code>string[]</code> | IAM actions required for the ListRetrievalInstructionVersions API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.ListSessions">ListSessions</a></code> | <code>string[]</code> | IAM actions required for the ListSessions API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.ListVpcConfigurations">ListVpcConfigurations</a></code> | <code>string[]</code> | IAM actions required for the ListVpcConfigurations API call. |
@@ -10691,6 +10696,7 @@ new bedrock.BedrockOperations()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.opGetPromptRouter">opGetPromptRouter</a></code> | <code>string[]</code> | IAM actions required for the GetPromptRouter API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.opGetProvisionedModelThroughput">opGetProvisionedModelThroughput</a></code> | <code>string[]</code> | IAM actions required for the GetProvisionedModelThroughput API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.opGetResourcePolicy">opGetResourcePolicy</a></code> | <code>string[]</code> | IAM actions required for the GetResourcePolicy API call. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.opGetRetrievalInstruction">opGetRetrievalInstruction</a></code> | <code>string[]</code> | IAM actions required for the GetRetrievalInstruction API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.opGetSession">opGetSession</a></code> | <code>string[]</code> | IAM actions required for the GetSession API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.opGetUseCaseForModelAccess">opGetUseCaseForModelAccess</a></code> | <code>string[]</code> | IAM actions required for the GetUseCaseForModelAccess API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.opGetVpcConfiguration">opGetVpcConfiguration</a></code> | <code>string[]</code> | IAM actions required for the GetVpcConfiguration API call. |
@@ -10741,6 +10747,7 @@ new bedrock.BedrockOperations()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.UpdateMarketplaceModelEndpoint">UpdateMarketplaceModelEndpoint</a></code> | <code>string[]</code> | IAM actions required for the UpdateMarketplaceModelEndpoint API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.UpdatePrompt">UpdatePrompt</a></code> | <code>string[]</code> | IAM actions required for the UpdatePrompt API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.UpdateProvisionedModelThroughput">UpdateProvisionedModelThroughput</a></code> | <code>string[]</code> | IAM actions required for the UpdateProvisionedModelThroughput API call. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.UpdateRetrievalInstruction">UpdateRetrievalInstruction</a></code> | <code>string[]</code> | IAM actions required for the UpdateRetrievalInstruction API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.UpdateSession">UpdateSession</a></code> | <code>string[]</code> | IAM actions required for the UpdateSession API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.ValidateFlowDefinition">ValidateFlowDefinition</a></code> | <code>string[]</code> | IAM actions required for the ValidateFlowDefinition API call. |
 
@@ -11286,6 +11293,30 @@ IAM actions required for the CreateProvisionedModelThroughput API call.
 
 ---
 
+##### `CreateRetrievalInstruction`<sup>Required</sup> <a name="CreateRetrievalInstruction" id="@cdk_utils/iam.bedrock.BedrockOperations.property.CreateRetrievalInstruction"></a>
+
+```typescript
+public readonly CreateRetrievalInstruction: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateRetrievalInstruction API call.
+
+---
+
+##### `CreateRetrievalInstructionVersion`<sup>Required</sup> <a name="CreateRetrievalInstructionVersion" id="@cdk_utils/iam.bedrock.BedrockOperations.property.CreateRetrievalInstructionVersion"></a>
+
+```typescript
+public readonly CreateRetrievalInstructionVersion: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateRetrievalInstructionVersion API call.
+
+---
+
 ##### `CreateSession`<sup>Required</sup> <a name="CreateSession" id="@cdk_utils/iam.bedrock.BedrockOperations.property.CreateSession"></a>
 
 ```typescript
@@ -11667,6 +11698,18 @@ public readonly DeleteResourcePolicy: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteResourcePolicy API call.
+
+---
+
+##### `DeleteRetrievalInstruction`<sup>Required</sup> <a name="DeleteRetrievalInstruction" id="@cdk_utils/iam.bedrock.BedrockOperations.property.DeleteRetrievalInstruction"></a>
+
+```typescript
+public readonly DeleteRetrievalInstruction: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteRetrievalInstruction API call.
 
 ---
 
@@ -12450,6 +12493,30 @@ IAM actions required for the ListProvisionedModelThroughputs API call.
 
 ---
 
+##### `ListRetrievalInstructions`<sup>Required</sup> <a name="ListRetrievalInstructions" id="@cdk_utils/iam.bedrock.BedrockOperations.property.ListRetrievalInstructions"></a>
+
+```typescript
+public readonly ListRetrievalInstructions: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListRetrievalInstructions API call.
+
+---
+
+##### `ListRetrievalInstructionVersions`<sup>Required</sup> <a name="ListRetrievalInstructionVersions" id="@cdk_utils/iam.bedrock.BedrockOperations.property.ListRetrievalInstructionVersions"></a>
+
+```typescript
+public readonly ListRetrievalInstructionVersions: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListRetrievalInstructionVersions API call.
+
+---
+
 ##### `ListSessions`<sup>Required</sup> <a name="ListSessions" id="@cdk_utils/iam.bedrock.BedrockOperations.property.ListSessions"></a>
 
 ```typescript
@@ -13134,6 +13201,18 @@ IAM actions required for the GetResourcePolicy API call.
 
 ---
 
+##### `opGetRetrievalInstruction`<sup>Required</sup> <a name="opGetRetrievalInstruction" id="@cdk_utils/iam.bedrock.BedrockOperations.property.opGetRetrievalInstruction"></a>
+
+```typescript
+public readonly opGetRetrievalInstruction: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetRetrievalInstruction API call.
+
+---
+
 ##### `opGetSession`<sup>Required</sup> <a name="opGetSession" id="@cdk_utils/iam.bedrock.BedrockOperations.property.opGetSession"></a>
 
 ```typescript
@@ -13731,6 +13810,18 @@ public readonly UpdateProvisionedModelThroughput: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateProvisionedModelThroughput API call.
+
+---
+
+##### `UpdateRetrievalInstruction`<sup>Required</sup> <a name="UpdateRetrievalInstruction" id="@cdk_utils/iam.bedrock.BedrockOperations.property.UpdateRetrievalInstruction"></a>
+
+```typescript
+public readonly UpdateRetrievalInstruction: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateRetrievalInstruction API call.
 
 ---
 

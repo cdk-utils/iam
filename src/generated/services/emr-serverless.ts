@@ -340,7 +340,10 @@ export class EmrServerlessOperations {
 	static readonly opGetJobRun: string[] = ["emr-serverless:GetJobRun"];
 	/** IAM actions required for the GetResourceDashboard API call. */
 	static readonly opGetResourceDashboard: string[] = [
+		"emr-serverless:AccessSystemProfileLogs",
+		"glue:GetDatabases",
 		"emr-serverless:GetResourceDashboard",
+		"glue:SearchTables",
 	];
 	/** IAM actions required for the GetSession API call. */
 	static readonly opGetSession: string[] = ["emr-serverless:GetSession"];

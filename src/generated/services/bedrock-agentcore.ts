@@ -373,6 +373,8 @@ export class BedrockAgentcoreActions {
 	/** [Read] bedrock-agentcore:GetWorkloadIdentity */
 	static readonly actionGetWorkloadIdentity =
 		"bedrock-agentcore:GetWorkloadIdentity";
+	/** [Write] bedrock-agentcore:IngestData */
+	static readonly IngestData = "bedrock-agentcore:IngestData";
 	/** [Write] bedrock-agentcore:InvokeAgentRuntime */
 	static readonly InvokeAgentRuntime = "bedrock-agentcore:InvokeAgentRuntime";
 	/** [Write] bedrock-agentcore:InvokeAgentRuntimeCommand */
@@ -545,6 +547,9 @@ export class BedrockAgentcoreActions {
 	static readonly PutResourcePolicy = "bedrock-agentcore:PutResourcePolicy";
 	/** [Write] bedrock-agentcore:PutSystemLogEvents */
 	static readonly PutSystemLogEvents = "bedrock-agentcore:PutSystemLogEvents";
+	/** [Write] bedrock-agentcore:ResetTokenVaultKeyMaterial */
+	static readonly ResetTokenVaultKeyMaterial =
+		"bedrock-agentcore:ResetTokenVaultKeyMaterial";
 	/** [List] bedrock-agentcore:RetrieveMemoryRecords */
 	static readonly RetrieveMemoryRecords =
 		"bedrock-agentcore:RetrieveMemoryRecords";
@@ -634,6 +639,9 @@ export class BedrockAgentcoreActions {
 		"bedrock-agentcore:UpdateHarnessEndpoint";
 	/** [Write] bedrock-agentcore:UpdateMemory */
 	static readonly UpdateMemory = "bedrock-agentcore:UpdateMemory";
+	/** [Write] bedrock-agentcore:UpdateMemoryRecordExpirySpecification */
+	static readonly UpdateMemoryRecordExpirySpecification =
+		"bedrock-agentcore:UpdateMemoryRecordExpirySpecification";
 	/** [Write] bedrock-agentcore:UpdateOauth2CredentialProvider */
 	static readonly UpdateOauth2CredentialProvider =
 		"bedrock-agentcore:UpdateOauth2CredentialProvider";
@@ -810,6 +818,7 @@ export class BedrockAgentcoreActions {
 		BedrockAgentcoreActions.actionGetWorkloadAccessToken,
 		BedrockAgentcoreActions.actionGetWorkloadAccessTokenForJWT,
 		BedrockAgentcoreActions.actionGetWorkloadAccessTokenForUserId,
+		BedrockAgentcoreActions.IngestData,
 		BedrockAgentcoreActions.InvokeAgentRuntime,
 		BedrockAgentcoreActions.InvokeAgentRuntimeCommand,
 		BedrockAgentcoreActions.InvokeAgentRuntimeCommandShell,
@@ -822,6 +831,7 @@ export class BedrockAgentcoreActions {
 		BedrockAgentcoreActions.ProcessPayment,
 		BedrockAgentcoreActions.PutResourcePolicy,
 		BedrockAgentcoreActions.PutSystemLogEvents,
+		BedrockAgentcoreActions.ResetTokenVaultKeyMaterial,
 		BedrockAgentcoreActions.SaveBrowserSessionProfile,
 		BedrockAgentcoreActions.actionSetTokenVaultCMK,
 		BedrockAgentcoreActions.StartBatchEvaluation,
@@ -853,6 +863,7 @@ export class BedrockAgentcoreActions {
 		BedrockAgentcoreActions.UpdateHarness,
 		BedrockAgentcoreActions.UpdateHarnessEndpoint,
 		BedrockAgentcoreActions.UpdateMemory,
+		BedrockAgentcoreActions.UpdateMemoryRecordExpirySpecification,
 		BedrockAgentcoreActions.UpdateOauth2CredentialProvider,
 		BedrockAgentcoreActions.UpdateOnlineEvaluationConfig,
 		BedrockAgentcoreActions.UpdatePaymentConnector,
@@ -3093,6 +3104,7 @@ export class BedrockAgentcoreOperations {
 	/** IAM actions required for the BatchUpdateMemoryRecords API call. */
 	static readonly BatchUpdateMemoryRecords: string[] = [
 		"bedrock-agentcore:BatchUpdateMemoryRecords",
+		"bedrock-agentcore:UpdateMemoryRecordExpirySpecification",
 	];
 	/** IAM actions required for the CompleteResourceTokenAuth API call. */
 	static readonly CompleteResourceTokenAuth: string[] = [
@@ -3210,6 +3222,7 @@ export class BedrockAgentcoreOperations {
 		"bedrock-agentcore:CreateMemory",
 		"iam:PassRole",
 		"bedrock-agentcore:TagResource",
+		"bedrock-agentcore:UpdateMemoryRecordExpirySpecification",
 	];
 	/** IAM actions required for the CreateOauth2CredentialProvider API call. */
 	static readonly CreateOauth2CredentialProvider: string[] = [
@@ -3598,7 +3611,7 @@ export class BedrockAgentcoreOperations {
 		"bedrock-agentcore:GetWorkloadIdentity",
 	];
 	/** IAM actions required for the IngestData API call. */
-	static readonly IngestData: string[] = [];
+	static readonly IngestData: string[] = ["bedrock-agentcore:IngestData"];
 	/** IAM actions required for the InvokeAgentRuntime API call. */
 	static readonly InvokeAgentRuntime: string[] = [
 		"bedrock-agentcore:InvokeAgentRuntime",
@@ -3966,6 +3979,7 @@ export class BedrockAgentcoreOperations {
 	static readonly UpdateMemory: string[] = [
 		"iam:PassRole",
 		"bedrock-agentcore:UpdateMemory",
+		"bedrock-agentcore:UpdateMemoryRecordExpirySpecification",
 	];
 	/** IAM actions required for the UpdateOauth2CredentialProvider API call. */
 	static readonly UpdateOauth2CredentialProvider: string[] = [
@@ -4023,9 +4037,14 @@ export class BedrockAgentcoreConditions {
 	static readonly BatchCreateMemoryRecordsConditionKeys: string[] = [
 		"bedrock-agentcore:namespace",
 	];
+	/** Condition keys applicable to the BatchDeleteMemoryRecords action. */
+	static readonly BatchDeleteMemoryRecordsConditionKeys: string[] = [
+		"bedrock-agentcore:namespace",
+	];
 	/** Condition keys applicable to the BatchUpdateMemoryRecords action. */
 	static readonly BatchUpdateMemoryRecordsConditionKeys: string[] = [
 		"bedrock-agentcore:namespace",
+		"bedrock-agentcore:sourceNamespace",
 	];
 	/** Condition keys applicable to the CompleteResourceTokenAuth action. */
 	static readonly CompleteResourceTokenAuthConditionKeys: string[] = [
@@ -4099,6 +4118,7 @@ export class BedrockAgentcoreConditions {
 	/** Condition keys applicable to the CreateEvent action. */
 	static readonly CreateEventConditionKeys: string[] = [
 		"bedrock-agentcore:actorId",
+		"bedrock-agentcore:namespaceVariable/${VariableName}",
 		"bedrock-agentcore:sessionId",
 	];
 	/** Condition keys applicable to the CreateGateway action. */
@@ -4159,10 +4179,18 @@ export class BedrockAgentcoreConditions {
 		"bedrock-agentcore:actorId",
 		"bedrock-agentcore:sessionId",
 	];
+	/** Condition keys applicable to the DeleteMemoryRecord action. */
+	static readonly DeleteMemoryRecordConditionKeys: string[] = [
+		"bedrock-agentcore:namespace",
+	];
 	/** Condition keys applicable to the GetEvent action. */
 	static readonly actionGetEventConditionKeys: string[] = [
 		"bedrock-agentcore:actorId",
 		"bedrock-agentcore:sessionId",
+	];
+	/** Condition keys applicable to the GetMemoryRecord action. */
+	static readonly actionGetMemoryRecordConditionKeys: string[] = [
+		"bedrock-agentcore:namespace",
 	];
 	/** Condition keys applicable to the GetWorkloadAccessTokenForJWT action. */
 	static readonly actionGetWorkloadAccessTokenForJWTConditionKeys: string[] = [
@@ -4175,6 +4203,12 @@ export class BedrockAgentcoreConditions {
 	/** Condition keys applicable to the GetWorkloadAccessTokenForUserId action. */
 	static readonly actionGetWorkloadAccessTokenForUserIdConditionKeys: string[] =
 		["bedrock-agentcore:userid"];
+	/** Condition keys applicable to the IngestData action. */
+	static readonly IngestDataConditionKeys: string[] = [
+		"bedrock-agentcore:actorId",
+		"bedrock-agentcore:namespaceVariable/${VariableName}",
+		"bedrock-agentcore:sessionId",
+	];
 	/** Condition keys applicable to the ListEvents action. */
 	static readonly ListEventsConditionKeys: string[] = [
 		"bedrock-agentcore:actorId",
@@ -4183,6 +4217,7 @@ export class BedrockAgentcoreConditions {
 	/** Condition keys applicable to the ListMemoryRecords action. */
 	static readonly ListMemoryRecordsConditionKeys: string[] = [
 		"bedrock-agentcore:namespace",
+		"bedrock-agentcore:namespacePath",
 		"bedrock-agentcore:strategyId",
 	];
 	/** Condition keys applicable to the ListSessions action. */
@@ -4196,6 +4231,7 @@ export class BedrockAgentcoreConditions {
 	/** Condition keys applicable to the RetrieveMemoryRecords action. */
 	static readonly RetrieveMemoryRecordsConditionKeys: string[] = [
 		"bedrock-agentcore:namespace",
+		"bedrock-agentcore:namespacePath",
 		"bedrock-agentcore:strategyId",
 	];
 	/** Condition keys applicable to the StartMemoryExtractionJob action. */
@@ -4293,12 +4329,19 @@ export class BedrockAgentcoreConditions {
 	static readonly ACTOR_ID = "bedrock-agentcore:actorId";
 	/** Condition key: bedrock-agentcore:namespace (String) */
 	static readonly NAMESPACE = "bedrock-agentcore:namespace";
+	/** Condition key: bedrock-agentcore:namespacePath (String) */
+	static readonly NAMESPACE_PATH = "bedrock-agentcore:namespacePath";
+	/** Condition key: bedrock-agentcore:namespaceVariable/${VariableName} (String) */
+	static readonly NAMESPACE_VARIABLE =
+		"bedrock-agentcore:namespaceVariable/${VariableName}";
 	/** Condition key: bedrock-agentcore:runtimeSessionId (String) */
 	static readonly RUNTIME_SESSION_ID = "bedrock-agentcore:runtimeSessionId";
 	/** Condition key: bedrock-agentcore:securityGroups (ArrayOfString) */
 	static readonly SECURITY_GROUPS = "bedrock-agentcore:securityGroups";
 	/** Condition key: bedrock-agentcore:sessionId (String) */
 	static readonly SESSION_ID = "bedrock-agentcore:sessionId";
+	/** Condition key: bedrock-agentcore:sourceNamespace (String) */
+	static readonly SOURCE_NAMESPACE = "bedrock-agentcore:sourceNamespace";
 	/** Condition key: bedrock-agentcore:strategyId (String) */
 	static readonly STRATEGY_ID = "bedrock-agentcore:strategyId";
 	/** Condition key: bedrock-agentcore:subnets (ArrayOfString) */
@@ -4578,6 +4621,26 @@ export class BedrockAgentcoreConditions {
 	}
 
 	/**
+	 * Generates a condition block for `bedrock-agentcore:namespacePath`.
+	 */
+	static namespacePath(value: string): Record<string, Record<string, string>> {
+		return { StringEquals: { "bedrock-agentcore:namespacePath": value } };
+	}
+
+	/**
+	 * Generates a condition block for `bedrock-agentcore:namespaceVariable/${VariableName}`.
+	 */
+	static namespaceVariable(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return {
+			StringEquals: {
+				"bedrock-agentcore:namespaceVariable/${VariableName}": value,
+			},
+		};
+	}
+
+	/**
 	 * Generates a condition block for `bedrock-agentcore:runtimeSessionId`.
 	 */
 	static runtimeSessionId(
@@ -4604,6 +4667,15 @@ export class BedrockAgentcoreConditions {
 	 */
 	static sessionId(value: string): Record<string, Record<string, string>> {
 		return { StringEquals: { "bedrock-agentcore:sessionId": value } };
+	}
+
+	/**
+	 * Generates a condition block for `bedrock-agentcore:sourceNamespace`.
+	 */
+	static sourceNamespace(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "bedrock-agentcore:sourceNamespace": value } };
 	}
 
 	/**

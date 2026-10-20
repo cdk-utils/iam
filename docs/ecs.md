@@ -1221,6 +1221,380 @@ Defaults to "*".
 
 ---
 
+### ECSGatewayArnComponents <a name="ECSGatewayArnComponents" id="@cdk_utils/iam.ecs.ECSGatewayArnComponents"></a>
+
+Parsed components of a gateway ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.ecs.ECSGatewayArnComponents.Initializer"></a>
+
+```typescript
+import { ecs } from '@cdk_utils/iam'
+
+const eCSGatewayArnComponents: ecs.ECSGatewayArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.ecs.ECSGatewayArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSGatewayArnComponents.property.gatewayId">gatewayId</a></code> | <code>string</code> | The GatewayId component. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSGatewayArnComponents.property.gatewayName">gatewayName</a></code> | <code>string</code> | The GatewayName component. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSGatewayArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSGatewayArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.ecs.ECSGatewayArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `gatewayId`<sup>Required</sup> <a name="gatewayId" id="@cdk_utils/iam.ecs.ECSGatewayArnComponents.property.gatewayId"></a>
+
+```typescript
+public readonly gatewayId: string;
+```
+
+- *Type:* string
+
+The GatewayId component.
+
+---
+
+##### `gatewayName`<sup>Required</sup> <a name="gatewayName" id="@cdk_utils/iam.ecs.ECSGatewayArnComponents.property.gatewayName"></a>
+
+```typescript
+public readonly gatewayName: string;
+```
+
+- *Type:* string
+
+The GatewayName component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.ecs.ECSGatewayArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.ecs.ECSGatewayArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### ECSGatewayArnProps <a name="ECSGatewayArnProps" id="@cdk_utils/iam.ecs.ECSGatewayArnProps"></a>
+
+Properties for building a gateway ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.ecs.ECSGatewayArnProps.Initializer"></a>
+
+```typescript
+import { ecs } from '@cdk_utils/iam'
+
+const eCSGatewayArnProps: ecs.ECSGatewayArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.ecs.ECSGatewayArnProps.property.gatewayId">gatewayId</a></code> | <code>string</code> | The GatewayId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSGatewayArnProps.property.gatewayName">gatewayName</a></code> | <code>string</code> | The GatewayName component of the ARN. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSGatewayArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSGatewayArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSGatewayArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `gatewayId`<sup>Required</sup> <a name="gatewayId" id="@cdk_utils/iam.ecs.ECSGatewayArnProps.property.gatewayId"></a>
+
+```typescript
+public readonly gatewayId: string;
+```
+
+- *Type:* string
+
+The GatewayId component of the ARN.
+
+---
+
+##### `gatewayName`<sup>Required</sup> <a name="gatewayName" id="@cdk_utils/iam.ecs.ECSGatewayArnProps.property.gatewayName"></a>
+
+```typescript
+public readonly gatewayName: string;
+```
+
+- *Type:* string
+
+The GatewayName component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.ecs.ECSGatewayArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.ecs.ECSGatewayArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.ecs.ECSGatewayArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
+### ECSGatewayRouteArnComponents <a name="ECSGatewayRouteArnComponents" id="@cdk_utils/iam.ecs.ECSGatewayRouteArnComponents"></a>
+
+Parsed components of a gateway-route ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.ecs.ECSGatewayRouteArnComponents.Initializer"></a>
+
+```typescript
+import { ecs } from '@cdk_utils/iam'
+
+const eCSGatewayRouteArnComponents: ecs.ECSGatewayRouteArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.ecs.ECSGatewayRouteArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSGatewayRouteArnComponents.property.gatewayId">gatewayId</a></code> | <code>string</code> | The GatewayId component. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSGatewayRouteArnComponents.property.gatewayName">gatewayName</a></code> | <code>string</code> | The GatewayName component. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSGatewayRouteArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSGatewayRouteArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSGatewayRouteArnComponents.property.routeId">routeId</a></code> | <code>string</code> | The RouteId component. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.ecs.ECSGatewayRouteArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `gatewayId`<sup>Required</sup> <a name="gatewayId" id="@cdk_utils/iam.ecs.ECSGatewayRouteArnComponents.property.gatewayId"></a>
+
+```typescript
+public readonly gatewayId: string;
+```
+
+- *Type:* string
+
+The GatewayId component.
+
+---
+
+##### `gatewayName`<sup>Required</sup> <a name="gatewayName" id="@cdk_utils/iam.ecs.ECSGatewayRouteArnComponents.property.gatewayName"></a>
+
+```typescript
+public readonly gatewayName: string;
+```
+
+- *Type:* string
+
+The GatewayName component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.ecs.ECSGatewayRouteArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.ecs.ECSGatewayRouteArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+##### `routeId`<sup>Required</sup> <a name="routeId" id="@cdk_utils/iam.ecs.ECSGatewayRouteArnComponents.property.routeId"></a>
+
+```typescript
+public readonly routeId: string;
+```
+
+- *Type:* string
+
+The RouteId component.
+
+---
+
+### ECSGatewayRouteArnProps <a name="ECSGatewayRouteArnProps" id="@cdk_utils/iam.ecs.ECSGatewayRouteArnProps"></a>
+
+Properties for building a gateway-route ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.ecs.ECSGatewayRouteArnProps.Initializer"></a>
+
+```typescript
+import { ecs } from '@cdk_utils/iam'
+
+const eCSGatewayRouteArnProps: ecs.ECSGatewayRouteArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.ecs.ECSGatewayRouteArnProps.property.gatewayId">gatewayId</a></code> | <code>string</code> | The GatewayId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSGatewayRouteArnProps.property.gatewayName">gatewayName</a></code> | <code>string</code> | The GatewayName component of the ARN. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSGatewayRouteArnProps.property.routeId">routeId</a></code> | <code>string</code> | The RouteId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSGatewayRouteArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSGatewayRouteArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSGatewayRouteArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `gatewayId`<sup>Required</sup> <a name="gatewayId" id="@cdk_utils/iam.ecs.ECSGatewayRouteArnProps.property.gatewayId"></a>
+
+```typescript
+public readonly gatewayId: string;
+```
+
+- *Type:* string
+
+The GatewayId component of the ARN.
+
+---
+
+##### `gatewayName`<sup>Required</sup> <a name="gatewayName" id="@cdk_utils/iam.ecs.ECSGatewayRouteArnProps.property.gatewayName"></a>
+
+```typescript
+public readonly gatewayName: string;
+```
+
+- *Type:* string
+
+The GatewayName component of the ARN.
+
+---
+
+##### `routeId`<sup>Required</sup> <a name="routeId" id="@cdk_utils/iam.ecs.ECSGatewayRouteArnProps.property.routeId"></a>
+
+```typescript
+public readonly routeId: string;
+```
+
+- *Type:* string
+
+The RouteId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.ecs.ECSGatewayRouteArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.ecs.ECSGatewayRouteArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.ecs.ECSGatewayRouteArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### ECSServiceArnComponents <a name="ECSServiceArnComponents" id="@cdk_utils/iam.ecs.ECSServiceArnComponents"></a>
 
 Parsed components of a service ARN.
@@ -2376,11 +2750,13 @@ new ecs.ECSActions()
 | <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.AllReadActions">AllReadActions</a></code> | <code>string[]</code> | All read-level actions. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.AllTaggingActions">AllTaggingActions</a></code> | <code>string[]</code> | All tagging-level actions. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.AssociateGatewayWithCluster">AssociateGatewayWithCluster</a></code> | <code>string</code> | [Write] ecs:AssociateGatewayWithCluster. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.ContinueServiceDeployment">ContinueServiceDeployment</a></code> | <code>string</code> | [Write] ecs:ContinueServiceDeployment. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.CreateCapacityProvider">CreateCapacityProvider</a></code> | <code>string</code> | [Write] ecs:CreateCapacityProvider. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.CreateCluster">CreateCluster</a></code> | <code>string</code> | [Write] ecs:CreateCluster. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.CreateDaemon">CreateDaemon</a></code> | <code>string</code> | [Write] ecs:CreateDaemon. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.CreateExpressGatewayService">CreateExpressGatewayService</a></code> | <code>string</code> | [Write] ecs:CreateExpressGatewayService. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.CreateGateway">CreateGateway</a></code> | <code>string</code> | [Write] ecs:CreateGateway. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.CreateService">CreateService</a></code> | <code>string</code> | [Write] ecs:CreateService. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.CreateTaskSet">CreateTaskSet</a></code> | <code>string</code> | [Write] ecs:CreateTaskSet. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.DeleteAccountSetting">DeleteAccountSetting</a></code> | <code>string</code> | [Write] ecs:DeleteAccountSetting. |
@@ -2390,6 +2766,7 @@ new ecs.ECSActions()
 | <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.DeleteDaemon">DeleteDaemon</a></code> | <code>string</code> | [Write] ecs:DeleteDaemon. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.DeleteDaemonTaskDefinition">DeleteDaemonTaskDefinition</a></code> | <code>string</code> | [Write] ecs:DeleteDaemonTaskDefinition. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.DeleteExpressGatewayService">DeleteExpressGatewayService</a></code> | <code>string</code> | [Write] ecs:DeleteExpressGatewayService. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.DeleteGateway">DeleteGateway</a></code> | <code>string</code> | [Write] ecs:DeleteGateway. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.DeleteService">DeleteService</a></code> | <code>string</code> | [Write] ecs:DeleteService. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.DeleteTaskDefinitions">DeleteTaskDefinitions</a></code> | <code>string</code> | [Write] ecs:DeleteTaskDefinitions. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.DeleteTaskSet">DeleteTaskSet</a></code> | <code>string</code> | [Write] ecs:DeleteTaskSet. |
@@ -2403,12 +2780,16 @@ new ecs.ECSActions()
 | <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.DescribeDaemonRevisions">DescribeDaemonRevisions</a></code> | <code>string</code> | [Read] ecs:DescribeDaemonRevisions. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.DescribeDaemonTaskDefinition">DescribeDaemonTaskDefinition</a></code> | <code>string</code> | [Read] ecs:DescribeDaemonTaskDefinition. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.DescribeExpressGatewayService">DescribeExpressGatewayService</a></code> | <code>string</code> | [Read] ecs:DescribeExpressGatewayService. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.DescribeGateway">DescribeGateway</a></code> | <code>string</code> | [Read] ecs:DescribeGateway. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.DescribeGatewayResources">DescribeGatewayResources</a></code> | <code>string</code> | [Read] ecs:DescribeGatewayResources. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.DescribeGatewayRoute">DescribeGatewayRoute</a></code> | <code>string</code> | [Read] ecs:DescribeGatewayRoute. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.DescribeServiceDeployments">DescribeServiceDeployments</a></code> | <code>string</code> | [Read] ecs:DescribeServiceDeployments. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.DescribeServiceRevisions">DescribeServiceRevisions</a></code> | <code>string</code> | [Read] ecs:DescribeServiceRevisions. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.DescribeServices">DescribeServices</a></code> | <code>string</code> | [Read] ecs:DescribeServices. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.DescribeTaskDefinition">DescribeTaskDefinition</a></code> | <code>string</code> | [Read] ecs:DescribeTaskDefinition. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.DescribeTasks">DescribeTasks</a></code> | <code>string</code> | [Read] ecs:DescribeTasks. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.DescribeTaskSets">DescribeTaskSets</a></code> | <code>string</code> | [Read] ecs:DescribeTaskSets. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.DisassociateGatewayFromCluster">DisassociateGatewayFromCluster</a></code> | <code>string</code> | [Write] ecs:DisassociateGatewayFromCluster. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.DiscoverPollEndpoint">DiscoverPollEndpoint</a></code> | <code>string</code> | [Write] ecs:DiscoverPollEndpoint. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.ExecuteCommand">ExecuteCommand</a></code> | <code>string</code> | [Write] ecs:ExecuteCommand. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.ListAccountSettings">ListAccountSettings</a></code> | <code>string</code> | [Read] ecs:ListAccountSettings. |
@@ -2418,6 +2799,9 @@ new ecs.ECSActions()
 | <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.ListDaemonDeployments">ListDaemonDeployments</a></code> | <code>string</code> | [List] ecs:ListDaemonDeployments. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.ListDaemons">ListDaemons</a></code> | <code>string</code> | [List] ecs:ListDaemons. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.ListDaemonTaskDefinitions">ListDaemonTaskDefinitions</a></code> | <code>string</code> | [List] ecs:ListDaemonTaskDefinitions. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.ListGatewayClusterAssociations">ListGatewayClusterAssociations</a></code> | <code>string</code> | [List] ecs:ListGatewayClusterAssociations. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.ListGatewayRoutes">ListGatewayRoutes</a></code> | <code>string</code> | [List] ecs:ListGatewayRoutes. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.ListGateways">ListGateways</a></code> | <code>string</code> | [List] ecs:ListGateways. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.ListServiceDeployments">ListServiceDeployments</a></code> | <code>string</code> | [List] ecs:ListServiceDeployments. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.ListServices">ListServices</a></code> | <code>string</code> | [List] ecs:ListServices. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.ListServicesByNamespace">ListServicesByNamespace</a></code> | <code>string</code> | [List] ecs:ListServicesByNamespace. |
@@ -2452,6 +2836,7 @@ new ecs.ECSActions()
 | <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.UpdateContainerInstancesState">UpdateContainerInstancesState</a></code> | <code>string</code> | [Write] ecs:UpdateContainerInstancesState. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.UpdateDaemon">UpdateDaemon</a></code> | <code>string</code> | [Write] ecs:UpdateDaemon. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.UpdateExpressGatewayService">UpdateExpressGatewayService</a></code> | <code>string</code> | [Write] ecs:UpdateExpressGatewayService. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.UpdateGateway">UpdateGateway</a></code> | <code>string</code> | [Write] ecs:UpdateGateway. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.UpdateService">UpdateService</a></code> | <code>string</code> | [Write] ecs:UpdateService. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.UpdateServicePrimaryTaskSet">UpdateServicePrimaryTaskSet</a></code> | <code>string</code> | [Write] ecs:UpdateServicePrimaryTaskSet. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSActions.property.UpdateTaskProtection">UpdateTaskProtection</a></code> | <code>string</code> | [Write] ecs:UpdateTaskProtection. |
@@ -2543,6 +2928,18 @@ All write-level actions.
 
 ---
 
+##### `AssociateGatewayWithCluster`<sup>Required</sup> <a name="AssociateGatewayWithCluster" id="@cdk_utils/iam.ecs.ECSActions.property.AssociateGatewayWithCluster"></a>
+
+```typescript
+public readonly AssociateGatewayWithCluster: string;
+```
+
+- *Type:* string
+
+[Write] ecs:AssociateGatewayWithCluster.
+
+---
+
 ##### `ContinueServiceDeployment`<sup>Required</sup> <a name="ContinueServiceDeployment" id="@cdk_utils/iam.ecs.ECSActions.property.ContinueServiceDeployment"></a>
 
 ```typescript
@@ -2600,6 +2997,18 @@ public readonly CreateExpressGatewayService: string;
 - *Type:* string
 
 [Write] ecs:CreateExpressGatewayService.
+
+---
+
+##### `CreateGateway`<sup>Required</sup> <a name="CreateGateway" id="@cdk_utils/iam.ecs.ECSActions.property.CreateGateway"></a>
+
+```typescript
+public readonly CreateGateway: string;
+```
+
+- *Type:* string
+
+[Write] ecs:CreateGateway.
 
 ---
 
@@ -2708,6 +3117,18 @@ public readonly DeleteExpressGatewayService: string;
 - *Type:* string
 
 [Write] ecs:DeleteExpressGatewayService.
+
+---
+
+##### `DeleteGateway`<sup>Required</sup> <a name="DeleteGateway" id="@cdk_utils/iam.ecs.ECSActions.property.DeleteGateway"></a>
+
+```typescript
+public readonly DeleteGateway: string;
+```
+
+- *Type:* string
+
+[Write] ecs:DeleteGateway.
 
 ---
 
@@ -2867,6 +3288,42 @@ public readonly DescribeExpressGatewayService: string;
 
 ---
 
+##### `DescribeGateway`<sup>Required</sup> <a name="DescribeGateway" id="@cdk_utils/iam.ecs.ECSActions.property.DescribeGateway"></a>
+
+```typescript
+public readonly DescribeGateway: string;
+```
+
+- *Type:* string
+
+[Read] ecs:DescribeGateway.
+
+---
+
+##### `DescribeGatewayResources`<sup>Required</sup> <a name="DescribeGatewayResources" id="@cdk_utils/iam.ecs.ECSActions.property.DescribeGatewayResources"></a>
+
+```typescript
+public readonly DescribeGatewayResources: string;
+```
+
+- *Type:* string
+
+[Read] ecs:DescribeGatewayResources.
+
+---
+
+##### `DescribeGatewayRoute`<sup>Required</sup> <a name="DescribeGatewayRoute" id="@cdk_utils/iam.ecs.ECSActions.property.DescribeGatewayRoute"></a>
+
+```typescript
+public readonly DescribeGatewayRoute: string;
+```
+
+- *Type:* string
+
+[Read] ecs:DescribeGatewayRoute.
+
+---
+
 ##### `DescribeServiceDeployments`<sup>Required</sup> <a name="DescribeServiceDeployments" id="@cdk_utils/iam.ecs.ECSActions.property.DescribeServiceDeployments"></a>
 
 ```typescript
@@ -2936,6 +3393,18 @@ public readonly DescribeTaskSets: string;
 - *Type:* string
 
 [Read] ecs:DescribeTaskSets.
+
+---
+
+##### `DisassociateGatewayFromCluster`<sup>Required</sup> <a name="DisassociateGatewayFromCluster" id="@cdk_utils/iam.ecs.ECSActions.property.DisassociateGatewayFromCluster"></a>
+
+```typescript
+public readonly DisassociateGatewayFromCluster: string;
+```
+
+- *Type:* string
+
+[Write] ecs:DisassociateGatewayFromCluster.
 
 ---
 
@@ -3044,6 +3513,42 @@ public readonly ListDaemonTaskDefinitions: string;
 - *Type:* string
 
 [List] ecs:ListDaemonTaskDefinitions.
+
+---
+
+##### `ListGatewayClusterAssociations`<sup>Required</sup> <a name="ListGatewayClusterAssociations" id="@cdk_utils/iam.ecs.ECSActions.property.ListGatewayClusterAssociations"></a>
+
+```typescript
+public readonly ListGatewayClusterAssociations: string;
+```
+
+- *Type:* string
+
+[List] ecs:ListGatewayClusterAssociations.
+
+---
+
+##### `ListGatewayRoutes`<sup>Required</sup> <a name="ListGatewayRoutes" id="@cdk_utils/iam.ecs.ECSActions.property.ListGatewayRoutes"></a>
+
+```typescript
+public readonly ListGatewayRoutes: string;
+```
+
+- *Type:* string
+
+[List] ecs:ListGatewayRoutes.
+
+---
+
+##### `ListGateways`<sup>Required</sup> <a name="ListGateways" id="@cdk_utils/iam.ecs.ECSActions.property.ListGateways"></a>
+
+```typescript
+public readonly ListGateways: string;
+```
+
+- *Type:* string
+
+[List] ecs:ListGateways.
 
 ---
 
@@ -3452,6 +3957,18 @@ public readonly UpdateExpressGatewayService: string;
 - *Type:* string
 
 [Write] ecs:UpdateExpressGatewayService.
+
+---
+
+##### `UpdateGateway`<sup>Required</sup> <a name="UpdateGateway" id="@cdk_utils/iam.ecs.ECSActions.property.UpdateGateway"></a>
+
+```typescript
+public readonly UpdateGateway: string;
+```
+
+- *Type:* string
+
+[Write] ecs:UpdateGateway.
 
 ---
 
@@ -4059,6 +4576,7 @@ Generates a condition block for `ecs:task-memory`.
 | <code><a href="#@cdk_utils/iam.ecs.ECSConditions.property.CreateClusterConditionKeys">CreateClusterConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateCluster action. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSConditions.property.CreateDaemonConditionKeys">CreateDaemonConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateDaemon action. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSConditions.property.CreateExpressGatewayServiceConditionKeys">CreateExpressGatewayServiceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateExpressGatewayService action. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSConditions.property.CreateGatewayConditionKeys">CreateGatewayConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateGateway action. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSConditions.property.CreateServiceConditionKeys">CreateServiceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateService action. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSConditions.property.CreateTaskSetConditionKeys">CreateTaskSetConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateTaskSet action. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSConditions.property.DAEMON">DAEMON</a></code> | <code>string</code> | Condition key: ecs:daemon (ARN). |
@@ -4118,6 +4636,7 @@ Generates a condition block for `ecs:task-memory`.
 | <code><a href="#@cdk_utils/iam.ecs.ECSConditions.property.UpdateContainerInstancesStateConditionKeys">UpdateContainerInstancesStateConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateContainerInstancesState action. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSConditions.property.UpdateDaemonConditionKeys">UpdateDaemonConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateDaemon action. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSConditions.property.UpdateExpressGatewayServiceConditionKeys">UpdateExpressGatewayServiceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateExpressGatewayService action. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSConditions.property.UpdateGatewayConditionKeys">UpdateGatewayConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateGateway action. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSConditions.property.UpdateServiceConditionKeys">UpdateServiceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateService action. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSConditions.property.UpdateServicePrimaryTaskSetConditionKeys">UpdateServicePrimaryTaskSetConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateServicePrimaryTaskSet action. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSConditions.property.UpdateTaskProtectionConditionKeys">UpdateTaskProtectionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateTaskProtection action. |
@@ -4314,6 +4833,18 @@ public readonly CreateExpressGatewayServiceConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the CreateExpressGatewayService action.
+
+---
+
+##### `CreateGatewayConditionKeys`<sup>Required</sup> <a name="CreateGatewayConditionKeys" id="@cdk_utils/iam.ecs.ECSConditions.property.CreateGatewayConditionKeys"></a>
+
+```typescript
+public readonly CreateGatewayConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateGateway action.
 
 ---
 
@@ -5022,6 +5553,18 @@ public readonly UpdateExpressGatewayServiceConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the UpdateExpressGatewayService action.
+
+---
+
+##### `UpdateGatewayConditionKeys`<sup>Required</sup> <a name="UpdateGatewayConditionKeys" id="@cdk_utils/iam.ecs.ECSConditions.property.UpdateGatewayConditionKeys"></a>
+
+```typescript
+public readonly UpdateGatewayConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UpdateGateway action.
 
 ---
 
@@ -6130,6 +6673,8 @@ new ecs.ECSResources()
 | <code><a href="#@cdk_utils/iam.ecs.ECSResources.daemonDeployment">daemonDeployment</a></code> | Builds an ARN for the daemon-deployment resource. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSResources.daemonRevision">daemonRevision</a></code> | Builds an ARN for the daemon-revision resource. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSResources.daemonTaskDefinition">daemonTaskDefinition</a></code> | Builds an ARN for the daemon-task-definition resource. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSResources.gateway">gateway</a></code> | Builds an ARN for the gateway resource. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSResources.gatewayRoute">gatewayRoute</a></code> | Builds an ARN for the gateway-route resource. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSResources.isValidCapacityProviderArn">isValidCapacityProviderArn</a></code> | Validates whether a string is a valid ARN for the capacity-provider resource. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSResources.isValidClusterArn">isValidClusterArn</a></code> | Validates whether a string is a valid ARN for the cluster resource. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSResources.isValidContainerInstanceArn">isValidContainerInstanceArn</a></code> | Validates whether a string is a valid ARN for the container-instance resource. |
@@ -6137,6 +6682,8 @@ new ecs.ECSResources()
 | <code><a href="#@cdk_utils/iam.ecs.ECSResources.isValidDaemonDeploymentArn">isValidDaemonDeploymentArn</a></code> | Validates whether a string is a valid ARN for the daemon-deployment resource. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSResources.isValidDaemonRevisionArn">isValidDaemonRevisionArn</a></code> | Validates whether a string is a valid ARN for the daemon-revision resource. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSResources.isValidDaemonTaskDefinitionArn">isValidDaemonTaskDefinitionArn</a></code> | Validates whether a string is a valid ARN for the daemon-task-definition resource. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSResources.isValidGatewayArn">isValidGatewayArn</a></code> | Validates whether a string is a valid ARN for the gateway resource. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSResources.isValidGatewayRouteArn">isValidGatewayRouteArn</a></code> | Validates whether a string is a valid ARN for the gateway-route resource. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSResources.isValidServiceArn">isValidServiceArn</a></code> | Validates whether a string is a valid ARN for the service resource. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSResources.isValidServiceDeploymentArn">isValidServiceDeploymentArn</a></code> | Validates whether a string is a valid ARN for the service-deployment resource. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSResources.isValidServiceRevisionArn">isValidServiceRevisionArn</a></code> | Validates whether a string is a valid ARN for the service-revision resource. |
@@ -6150,6 +6697,8 @@ new ecs.ECSResources()
 | <code><a href="#@cdk_utils/iam.ecs.ECSResources.parseDaemonDeploymentArn">parseDaemonDeploymentArn</a></code> | Parses a daemon-deployment ARN into its components. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSResources.parseDaemonRevisionArn">parseDaemonRevisionArn</a></code> | Parses a daemon-revision ARN into its components. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSResources.parseDaemonTaskDefinitionArn">parseDaemonTaskDefinitionArn</a></code> | Parses a daemon-task-definition ARN into its components. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSResources.parseGatewayArn">parseGatewayArn</a></code> | Parses a gateway ARN into its components. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSResources.parseGatewayRouteArn">parseGatewayRouteArn</a></code> | Parses a gateway-route ARN into its components. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSResources.parseServiceArn">parseServiceArn</a></code> | Parses a service ARN into its components. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSResources.parseServiceDeploymentArn">parseServiceDeploymentArn</a></code> | Parses a service-deployment ARN into its components. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSResources.parseServiceRevisionArn">parseServiceRevisionArn</a></code> | Parses a service-revision ARN into its components. |
@@ -6277,6 +6826,38 @@ Builds an ARN for the daemon-task-definition resource.
 
 ---
 
+##### `gateway` <a name="gateway" id="@cdk_utils/iam.ecs.ECSResources.gateway"></a>
+
+```typescript
+import { ecs } from '@cdk_utils/iam'
+
+ecs.ECSResources.gateway(props: ECSGatewayArnProps)
+```
+
+Builds an ARN for the gateway resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.ecs.ECSResources.gateway.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.ecs.ECSGatewayArnProps">ECSGatewayArnProps</a>
+
+---
+
+##### `gatewayRoute` <a name="gatewayRoute" id="@cdk_utils/iam.ecs.ECSResources.gatewayRoute"></a>
+
+```typescript
+import { ecs } from '@cdk_utils/iam'
+
+ecs.ECSResources.gatewayRoute(props: ECSGatewayRouteArnProps)
+```
+
+Builds an ARN for the gateway-route resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.ecs.ECSResources.gatewayRoute.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.ecs.ECSGatewayRouteArnProps">ECSGatewayRouteArnProps</a>
+
+---
+
 ##### `isValidCapacityProviderArn` <a name="isValidCapacityProviderArn" id="@cdk_utils/iam.ecs.ECSResources.isValidCapacityProviderArn"></a>
 
 ```typescript
@@ -6384,6 +6965,38 @@ ecs.ECSResources.isValidDaemonTaskDefinitionArn(arn: string)
 Validates whether a string is a valid ARN for the daemon-task-definition resource.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.ecs.ECSResources.isValidDaemonTaskDefinitionArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidGatewayArn` <a name="isValidGatewayArn" id="@cdk_utils/iam.ecs.ECSResources.isValidGatewayArn"></a>
+
+```typescript
+import { ecs } from '@cdk_utils/iam'
+
+ecs.ECSResources.isValidGatewayArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the gateway resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.ecs.ECSResources.isValidGatewayArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidGatewayRouteArn` <a name="isValidGatewayRouteArn" id="@cdk_utils/iam.ecs.ECSResources.isValidGatewayRouteArn"></a>
+
+```typescript
+import { ecs } from '@cdk_utils/iam'
+
+ecs.ECSResources.isValidGatewayRouteArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the gateway-route resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.ecs.ECSResources.isValidGatewayRouteArn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -6592,6 +7205,38 @@ ecs.ECSResources.parseDaemonTaskDefinitionArn(arn: string)
 Parses a daemon-task-definition ARN into its components.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.ecs.ECSResources.parseDaemonTaskDefinitionArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseGatewayArn` <a name="parseGatewayArn" id="@cdk_utils/iam.ecs.ECSResources.parseGatewayArn"></a>
+
+```typescript
+import { ecs } from '@cdk_utils/iam'
+
+ecs.ECSResources.parseGatewayArn(arn: string)
+```
+
+Parses a gateway ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.ecs.ECSResources.parseGatewayArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseGatewayRouteArn` <a name="parseGatewayRouteArn" id="@cdk_utils/iam.ecs.ECSResources.parseGatewayRouteArn"></a>
+
+```typescript
+import { ecs } from '@cdk_utils/iam'
+
+ecs.ECSResources.parseGatewayRouteArn(arn: string)
+```
+
+Parses a gateway-route ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.ecs.ECSResources.parseGatewayRouteArn.parameter.arn"></a>
 
 - *Type:* string
 
