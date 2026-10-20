@@ -666,8 +666,20 @@
       "Name": "GetResourceDashboard",
       "AuthorizedActions": [
         {
+          "Name": "AccessSystemProfileLogs",
+          "Service": "emr-serverless"
+        },
+        {
+          "Name": "GetDatabases",
+          "Service": "glue"
+        },
+        {
           "Name": "GetResourceDashboard",
           "Service": "emr-serverless"
+        },
+        {
+          "Name": "SearchTables",
+          "Service": "glue"
         }
       ],
       "SDK": [

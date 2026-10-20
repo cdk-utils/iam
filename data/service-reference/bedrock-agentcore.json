@@ -92,6 +92,9 @@
     },
     {
       "Name": "BatchDeleteMemoryRecords",
+      "ActionConditionKeys": [
+        "bedrock-agentcore:namespace"
+      ],
       "Annotations": {
         "Properties": {
           "IsList": false,
@@ -133,7 +136,8 @@
     {
       "Name": "BatchUpdateMemoryRecords",
       "ActionConditionKeys": [
-        "bedrock-agentcore:namespace"
+        "bedrock-agentcore:namespace",
+        "bedrock-agentcore:sourceNamespace"
       ],
       "Annotations": {
         "Properties": {
@@ -492,6 +496,7 @@
       "Name": "CreateEvent",
       "ActionConditionKeys": [
         "bedrock-agentcore:actorId",
+        "bedrock-agentcore:namespaceVariable/${VariableName}",
         "bedrock-agentcore:sessionId"
       ],
       "Annotations": {
@@ -1384,6 +1389,9 @@
     },
     {
       "Name": "DeleteMemoryRecord",
+      "ActionConditionKeys": [
+        "bedrock-agentcore:namespace"
+      ],
       "Annotations": {
         "Properties": {
           "IsList": false,
@@ -2319,6 +2327,9 @@
     },
     {
       "Name": "GetMemoryRecord",
+      "ActionConditionKeys": [
+        "bedrock-agentcore:namespace"
+      ],
       "Annotations": {
         "Properties": {
           "IsList": false,
@@ -2923,6 +2934,31 @@
         },
         {
           "Name": "workload-identity-directory"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "IngestData",
+      "ActionConditionKeys": [
+        "bedrock-agentcore:actorId",
+        "bedrock-agentcore:namespaceVariable/${VariableName}",
+        "bedrock-agentcore:sessionId"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "memory"
         }
       ],
       "SupportedBy": {
@@ -3708,6 +3744,7 @@
       "Name": "ListMemoryRecords",
       "ActionConditionKeys": [
         "bedrock-agentcore:namespace",
+        "bedrock-agentcore:namespacePath",
         "bedrock-agentcore:strategyId"
       ],
       "Annotations": {
@@ -4315,9 +4352,30 @@
       }
     },
     {
+      "Name": "ResetTokenVaultKeyMaterial",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "token-vault"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "RetrieveMemoryRecords",
       "ActionConditionKeys": [
         "bedrock-agentcore:namespace",
+        "bedrock-agentcore:namespacePath",
         "bedrock-agentcore:strategyId"
       ],
       "Annotations": {
@@ -5190,6 +5248,26 @@
       }
     },
     {
+      "Name": "UpdateMemoryRecordExpirySpecification",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "memory"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "UpdateOauth2CredentialProvider",
       "Annotations": {
         "Properties": {
@@ -5589,6 +5667,18 @@
       ]
     },
     {
+      "Name": "bedrock-agentcore:namespacePath",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "bedrock-agentcore:namespaceVariable/${VariableName}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
       "Name": "bedrock-agentcore:runtimeSessionId",
       "Types": [
         "String"
@@ -5602,6 +5692,12 @@
     },
     {
       "Name": "bedrock-agentcore:sessionId",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "bedrock-agentcore:sourceNamespace",
       "Types": [
         "String"
       ]
@@ -5695,6 +5791,10 @@
       "AuthorizedActions": [
         {
           "Name": "BatchUpdateMemoryRecords",
+          "Service": "bedrock-agentcore"
+        },
+        {
+          "Name": "UpdateMemoryRecordExpirySpecification",
           "Service": "bedrock-agentcore"
         }
       ],
@@ -6217,6 +6317,10 @@
         },
         {
           "Name": "TagResource",
+          "Service": "bedrock-agentcore"
+        },
+        {
+          "Name": "UpdateMemoryRecordExpirySpecification",
           "Service": "bedrock-agentcore"
         }
       ],
@@ -7949,6 +8053,12 @@
     },
     {
       "Name": "IngestData",
+      "AuthorizedActions": [
+        {
+          "Name": "IngestData",
+          "Service": "bedrock-agentcore"
+        }
+      ],
       "SDK": [
         {
           "Name": "bedrock-agentcore",
@@ -9551,6 +9661,10 @@
         },
         {
           "Name": "UpdateMemory",
+          "Service": "bedrock-agentcore"
+        },
+        {
+          "Name": "UpdateMemoryRecordExpirySpecification",
           "Service": "bedrock-agentcore"
         }
       ],

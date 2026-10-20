@@ -201,6 +201,26 @@
       }
     },
     {
+      "Name": "ModifyVolume",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "VolumeId"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "TagResource",
       "ActionConditionKeys": [
         "aws:RequestTag/${TagKey}",
@@ -445,6 +465,22 @@
         {
           "Name": "workspaces-instances",
           "Method": "list_workspace_instances",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ModifyVolume",
+      "AuthorizedActions": [
+        {
+          "Name": "ModifyVolume",
+          "Service": "workspaces-instances"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces-instances",
+          "Method": "modify_volume",
           "Package": "Boto3"
         }
       ]

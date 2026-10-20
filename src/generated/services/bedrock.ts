@@ -3693,6 +3693,12 @@ export class BedrockOperations {
 		"bedrock:CreateProvisionedModelThroughput",
 		"bedrock:TagResource",
 	];
+	/** IAM actions required for the CreateRetrievalInstruction API call. */
+	static readonly CreateRetrievalInstruction: string[] = [
+		"bedrock:TagResource",
+	];
+	/** IAM actions required for the CreateRetrievalInstructionVersion API call. */
+	static readonly CreateRetrievalInstructionVersion: string[] = [];
 	/** IAM actions required for the CreateSession API call. */
 	static readonly CreateSession: string[] = [
 		"bedrock:CreateSession",
@@ -3812,6 +3818,8 @@ export class BedrockOperations {
 		"bedrock:DeleteResourcePolicy",
 		"bedrock:PutResourcePolicy",
 	];
+	/** IAM actions required for the DeleteRetrievalInstruction API call. */
+	static readonly DeleteRetrievalInstruction: string[] = [];
 	/** IAM actions required for the DeleteSession API call. */
 	static readonly DeleteSession: string[] = ["bedrock:DeleteSession"];
 	/** IAM actions required for the DeleteVpcConfiguration API call. */
@@ -4044,6 +4052,8 @@ export class BedrockOperations {
 	];
 	/** IAM actions required for the GetResourcePolicy API call. */
 	static readonly opGetResourcePolicy: string[] = ["bedrock:GetResourcePolicy"];
+	/** IAM actions required for the GetRetrievalInstruction API call. */
+	static readonly opGetRetrievalInstruction: string[] = [];
 	/** IAM actions required for the GetSession API call. */
 	static readonly opGetSession: string[] = ["bedrock:GetSession"];
 	/** IAM actions required for the GetUseCaseForModelAccess API call. */
@@ -4275,6 +4285,10 @@ export class BedrockOperations {
 		"bedrock:CallWithBearerToken",
 		"bedrock:ListProvisionedModelThroughputs",
 	];
+	/** IAM actions required for the ListRetrievalInstructionVersions API call. */
+	static readonly ListRetrievalInstructionVersions: string[] = [];
+	/** IAM actions required for the ListRetrievalInstructions API call. */
+	static readonly ListRetrievalInstructions: string[] = [];
 	/** IAM actions required for the ListSessions API call. */
 	static readonly ListSessions: string[] = ["bedrock:ListSessions"];
 	/** IAM actions required for the ListTagsForResource API call. */
@@ -4460,6 +4474,8 @@ export class BedrockOperations {
 		"bedrock:CallWithBearerToken",
 		"bedrock:UpdateProvisionedModelThroughput",
 	];
+	/** IAM actions required for the UpdateRetrievalInstruction API call. */
+	static readonly UpdateRetrievalInstruction: string[] = [];
 	/** IAM actions required for the UpdateSession API call. */
 	static readonly UpdateSession: string[] = ["bedrock:UpdateSession"];
 	/** IAM actions required for the ValidateFlowDefinition API call. */

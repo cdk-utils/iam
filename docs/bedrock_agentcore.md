@@ -5265,6 +5265,7 @@ new bedrock_agentcore.BedrockAgentcoreActions()
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.GatewayDisassociateWebACL">GatewayDisassociateWebACL</a></code> | <code>string</code> | [Write] bedrock-agentcore:GatewayDisassociateWebACL. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.GatewayGetWebACLForResource">GatewayGetWebACLForResource</a></code> | <code>string</code> | [Read] bedrock-agentcore:GatewayGetWebACLForResource. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.GatewayListResourcesForWebACL">GatewayListResourcesForWebACL</a></code> | <code>string</code> | [List] bedrock-agentcore:GatewayListResourcesForWebACL. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.IngestData">IngestData</a></code> | <code>string</code> | [Write] bedrock-agentcore:IngestData. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.InvokeAgentRuntime">InvokeAgentRuntime</a></code> | <code>string</code> | [Write] bedrock-agentcore:InvokeAgentRuntime. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.InvokeAgentRuntimeCommand">InvokeAgentRuntimeCommand</a></code> | <code>string</code> | [Write] bedrock-agentcore:InvokeAgentRuntimeCommand. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.InvokeAgentRuntimeCommandShell">InvokeAgentRuntimeCommandShell</a></code> | <code>string</code> | [Write] bedrock-agentcore:InvokeAgentRuntimeCommandShell. |
@@ -5335,6 +5336,7 @@ new bedrock_agentcore.BedrockAgentcoreActions()
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.ProcessPayment">ProcessPayment</a></code> | <code>string</code> | [Write] bedrock-agentcore:ProcessPayment. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.PutResourcePolicy">PutResourcePolicy</a></code> | <code>string</code> | [Write] bedrock-agentcore:PutResourcePolicy. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.PutSystemLogEvents">PutSystemLogEvents</a></code> | <code>string</code> | [Write] bedrock-agentcore:PutSystemLogEvents. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.ResetTokenVaultKeyMaterial">ResetTokenVaultKeyMaterial</a></code> | <code>string</code> | [Write] bedrock-agentcore:ResetTokenVaultKeyMaterial. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.RetrieveMemoryRecords">RetrieveMemoryRecords</a></code> | <code>string</code> | [List] bedrock-agentcore:RetrieveMemoryRecords. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.SaveBrowserSessionProfile">SaveBrowserSessionProfile</a></code> | <code>string</code> | [Write] bedrock-agentcore:SaveBrowserSessionProfile. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.SearchRegistryRecords">SearchRegistryRecords</a></code> | <code>string</code> | [Read] bedrock-agentcore:SearchRegistryRecords. |
@@ -5371,6 +5373,7 @@ new bedrock_agentcore.BedrockAgentcoreActions()
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.UpdateHarness">UpdateHarness</a></code> | <code>string</code> | [Write] bedrock-agentcore:UpdateHarness. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.UpdateHarnessEndpoint">UpdateHarnessEndpoint</a></code> | <code>string</code> | [Write] bedrock-agentcore:UpdateHarnessEndpoint. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.UpdateMemory">UpdateMemory</a></code> | <code>string</code> | [Write] bedrock-agentcore:UpdateMemory. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.UpdateMemoryRecordExpirySpecification">UpdateMemoryRecordExpirySpecification</a></code> | <code>string</code> | [Write] bedrock-agentcore:UpdateMemoryRecordExpirySpecification. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.UpdateOauth2CredentialProvider">UpdateOauth2CredentialProvider</a></code> | <code>string</code> | [Write] bedrock-agentcore:UpdateOauth2CredentialProvider. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.UpdateOnlineEvaluationConfig">UpdateOnlineEvaluationConfig</a></code> | <code>string</code> | [Write] bedrock-agentcore:UpdateOnlineEvaluationConfig. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.UpdatePaymentConnector">UpdatePaymentConnector</a></code> | <code>string</code> | [Write] bedrock-agentcore:UpdatePaymentConnector. |
@@ -7113,6 +7116,18 @@ public readonly GatewayListResourcesForWebACL: string;
 
 ---
 
+##### `IngestData`<sup>Required</sup> <a name="IngestData" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.IngestData"></a>
+
+```typescript
+public readonly IngestData: string;
+```
+
+- *Type:* string
+
+[Write] bedrock-agentcore:IngestData.
+
+---
+
 ##### `InvokeAgentRuntime`<sup>Required</sup> <a name="InvokeAgentRuntime" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.InvokeAgentRuntime"></a>
 
 ```typescript
@@ -7953,6 +7968,18 @@ public readonly PutSystemLogEvents: string;
 
 ---
 
+##### `ResetTokenVaultKeyMaterial`<sup>Required</sup> <a name="ResetTokenVaultKeyMaterial" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.ResetTokenVaultKeyMaterial"></a>
+
+```typescript
+public readonly ResetTokenVaultKeyMaterial: string;
+```
+
+- *Type:* string
+
+[Write] bedrock-agentcore:ResetTokenVaultKeyMaterial.
+
+---
+
 ##### `RetrieveMemoryRecords`<sup>Required</sup> <a name="RetrieveMemoryRecords" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.RetrieveMemoryRecords"></a>
 
 ```typescript
@@ -8385,6 +8412,18 @@ public readonly UpdateMemory: string;
 
 ---
 
+##### `UpdateMemoryRecordExpirySpecification`<sup>Required</sup> <a name="UpdateMemoryRecordExpirySpecification" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.UpdateMemoryRecordExpirySpecification"></a>
+
+```typescript
+public readonly UpdateMemoryRecordExpirySpecification: string;
+```
+
+- *Type:* string
+
+[Write] bedrock-agentcore:UpdateMemoryRecordExpirySpecification.
+
+---
+
 ##### `UpdateOauth2CredentialProvider`<sup>Required</sup> <a name="UpdateOauth2CredentialProvider" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.UpdateOauth2CredentialProvider"></a>
 
 ```typescript
@@ -8557,6 +8596,8 @@ new bedrock_agentcore.BedrockAgentcoreConditions()
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.kmsKeyARN">kmsKeyARN</a></code> | Generates a condition block for `bedrock-agentcore:KmsKeyArn`. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.mcpTargetConfigurationType">mcpTargetConfigurationType</a></code> | Generates a condition block for `bedrock-agentcore:McpTargetConfigurationType`. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.namespace">namespace</a></code> | Generates a condition block for `bedrock-agentcore:namespace`. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.namespacePath">namespacePath</a></code> | Generates a condition block for `bedrock-agentcore:namespacePath`. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.namespaceVariable">namespaceVariable</a></code> | Generates a condition block for `bedrock-agentcore:namespaceVariable/${VariableName}`. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.policyEngineARN">policyEngineARN</a></code> | Generates a condition block for `bedrock-agentcore:PolicyEngineArn`. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.policyEngineMode">policyEngineMode</a></code> | Generates a condition block for `bedrock-agentcore:PolicyEngineMode`. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.privateEndpointType">privateEndpointType</a></code> | Generates a condition block for `bedrock-agentcore:PrivateEndpointType`. |
@@ -8568,6 +8609,7 @@ new bedrock_agentcore.BedrockAgentcoreConditions()
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.runtimeSessionId">runtimeSessionId</a></code> | Generates a condition block for `bedrock-agentcore:runtimeSessionId`. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.securityGroups">securityGroups</a></code> | Generates a condition block for `bedrock-agentcore:securityGroups`. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.sessionId">sessionId</a></code> | Generates a condition block for `bedrock-agentcore:sessionId`. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.sourceNamespace">sourceNamespace</a></code> | Generates a condition block for `bedrock-agentcore:sourceNamespace`. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.strategyId">strategyId</a></code> | Generates a condition block for `bedrock-agentcore:strategyId`. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.subnets">subnets</a></code> | Generates a condition block for `bedrock-agentcore:subnets`. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.tagKeys">tagKeys</a></code> | Generates a condition block for `aws:TagKeys`. |
@@ -8863,6 +8905,38 @@ Generates a condition block for `bedrock-agentcore:namespace`.
 
 ---
 
+##### `namespacePath` <a name="namespacePath" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.namespacePath"></a>
+
+```typescript
+import { bedrock_agentcore } from '@cdk_utils/iam'
+
+bedrock_agentcore.BedrockAgentcoreConditions.namespacePath(value: string)
+```
+
+Generates a condition block for `bedrock-agentcore:namespacePath`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.namespacePath.parameter.value"></a>
+
+- *Type:* string
+
+---
+
+##### `namespaceVariable` <a name="namespaceVariable" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.namespaceVariable"></a>
+
+```typescript
+import { bedrock_agentcore } from '@cdk_utils/iam'
+
+bedrock_agentcore.BedrockAgentcoreConditions.namespaceVariable(value: string)
+```
+
+Generates a condition block for `bedrock-agentcore:namespaceVariable/${VariableName}`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.namespaceVariable.parameter.value"></a>
+
+- *Type:* string
+
+---
+
 ##### `policyEngineARN` <a name="policyEngineARN" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.policyEngineARN"></a>
 
 ```typescript
@@ -9039,6 +9113,22 @@ Generates a condition block for `bedrock-agentcore:sessionId`.
 
 ---
 
+##### `sourceNamespace` <a name="sourceNamespace" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.sourceNamespace"></a>
+
+```typescript
+import { bedrock_agentcore } from '@cdk_utils/iam'
+
+bedrock_agentcore.BedrockAgentcoreConditions.sourceNamespace(value: string)
+```
+
+Generates a condition block for `bedrock-agentcore:sourceNamespace`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.sourceNamespace.parameter.value"></a>
+
+- *Type:* string
+
+---
+
 ##### `strategyId` <a name="strategyId" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.strategyId"></a>
 
 ```typescript
@@ -9109,6 +9199,7 @@ Generates a condition block for `bedrock-agentcore:userid`.
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.actionGetEventConditionKeys">actionGetEventConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetEvent action. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.actionGetMemoryRecordConditionKeys">actionGetMemoryRecordConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetMemoryRecord action. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.actionGetWorkloadAccessTokenForJWTConditionKeys">actionGetWorkloadAccessTokenForJWTConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetWorkloadAccessTokenForJWT action. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.actionGetWorkloadAccessTokenForUserIdConditionKeys">actionGetWorkloadAccessTokenForUserIdConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetWorkloadAccessTokenForUserId action. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.ACTOR_ID">ACTOR_ID</a></code> | <code>string</code> | Condition key: bedrock-agentcore:actorId (String). |
@@ -9119,6 +9210,7 @@ Generates a condition block for `bedrock-agentcore:userid`.
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.AWS_RESOURCE_TAG">AWS_RESOURCE_TAG</a></code> | <code>string</code> | Condition key: aws:ResourceTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.AWS_TAG_KEYS">AWS_TAG_KEYS</a></code> | <code>string</code> | Condition key: aws:TagKeys (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.BatchCreateMemoryRecordsConditionKeys">BatchCreateMemoryRecordsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the BatchCreateMemoryRecords action. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.BatchDeleteMemoryRecordsConditionKeys">BatchDeleteMemoryRecordsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the BatchDeleteMemoryRecords action. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.BatchUpdateMemoryRecordsConditionKeys">BatchUpdateMemoryRecordsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the BatchUpdateMemoryRecords action. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.CompleteResourceTokenAuthConditionKeys">CompleteResourceTokenAuthConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CompleteResourceTokenAuth action. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.CreateAgentRuntimeConditionKeys">CreateAgentRuntimeConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateAgentRuntime action. |
@@ -9145,6 +9237,7 @@ Generates a condition block for `bedrock-agentcore:userid`.
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.CREDENTIAL_PROVIDER_SCOPE">CREDENTIAL_PROVIDER_SCOPE</a></code> | <code>string</code> | Condition key: bedrock-agentcore:CredentialProviderScope (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.CREDENTIAL_PROVIDER_TYPE">CREDENTIAL_PROVIDER_TYPE</a></code> | <code>string</code> | Condition key: bedrock-agentcore:CredentialProviderType (String). |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.DeleteEventConditionKeys">DeleteEventConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteEvent action. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.DeleteMemoryRecordConditionKeys">DeleteMemoryRecordConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteMemoryRecord action. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.DISCOVERY_URL">DISCOVERY_URL</a></code> | <code>string</code> | Condition key: bedrock-agentcore:DiscoveryUrl (String). |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.GATEWAY_AUTHORIZER_TYPE">GATEWAY_AUTHORIZER_TYPE</a></code> | <code>string</code> | Condition key: bedrock-agentcore:GatewayAuthorizerType (String). |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.HTTP_TARGET_CONFIGURATION_TYPE">HTTP_TARGET_CONFIGURATION_TYPE</a></code> | <code>string</code> | Condition key: bedrock-agentcore:HttpTargetConfigurationType (String). |
@@ -9154,12 +9247,15 @@ Generates a condition block for `bedrock-agentcore:userid`.
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.INBOUND_JWT_CLAIM_SCOPE">INBOUND_JWT_CLAIM_SCOPE</a></code> | <code>string</code> | Condition key: bedrock-agentcore:InboundJwtClaim/scope (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.INBOUND_JWT_CLAIM_SUB">INBOUND_JWT_CLAIM_SUB</a></code> | <code>string</code> | Condition key: bedrock-agentcore:InboundJwtClaim/sub (String). |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.INFERENCE_TARGET_CONFIGURATION_TYPE">INFERENCE_TARGET_CONFIGURATION_TYPE</a></code> | <code>string</code> | Condition key: bedrock-agentcore:InferenceTargetConfigurationType (String). |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.IngestDataConditionKeys">IngestDataConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the IngestData action. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.KMS_KEY_ARN">KMS_KEY_ARN</a></code> | <code>string</code> | Condition key: bedrock-agentcore:KmsKeyArn (String). |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.ListEventsConditionKeys">ListEventsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListEvents action. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.ListMemoryRecordsConditionKeys">ListMemoryRecordsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListMemoryRecords action. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.ListSessionsConditionKeys">ListSessionsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListSessions action. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.MCP_TARGET_CONFIGURATION_TYPE">MCP_TARGET_CONFIGURATION_TYPE</a></code> | <code>string</code> | Condition key: bedrock-agentcore:McpTargetConfigurationType (String). |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.NAMESPACE">NAMESPACE</a></code> | <code>string</code> | Condition key: bedrock-agentcore:namespace (String). |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.NAMESPACE_PATH">NAMESPACE_PATH</a></code> | <code>string</code> | Condition key: bedrock-agentcore:namespacePath (String). |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.NAMESPACE_VARIABLE">NAMESPACE_VARIABLE</a></code> | <code>string</code> | Condition key: bedrock-agentcore:namespaceVariable/${VariableName} (String). |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.POLICY_ENGINE_ARN">POLICY_ENGINE_ARN</a></code> | <code>string</code> | Condition key: bedrock-agentcore:PolicyEngineArn (String). |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.POLICY_ENGINE_MODE">POLICY_ENGINE_MODE</a></code> | <code>string</code> | Condition key: bedrock-agentcore:PolicyEngineMode (String). |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.PRIVATE_ENDPOINT_TYPE">PRIVATE_ENDPOINT_TYPE</a></code> | <code>string</code> | Condition key: bedrock-agentcore:PrivateEndpointType (String). |
@@ -9171,6 +9267,7 @@ Generates a condition block for `bedrock-agentcore:userid`.
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.RUNTIME_SESSION_ID">RUNTIME_SESSION_ID</a></code> | <code>string</code> | Condition key: bedrock-agentcore:runtimeSessionId (String). |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.SECURITY_GROUPS">SECURITY_GROUPS</a></code> | <code>string</code> | Condition key: bedrock-agentcore:securityGroups (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.SESSION_ID">SESSION_ID</a></code> | <code>string</code> | Condition key: bedrock-agentcore:sessionId (String). |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.SOURCE_NAMESPACE">SOURCE_NAMESPACE</a></code> | <code>string</code> | Condition key: bedrock-agentcore:sourceNamespace (String). |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.StartMemoryExtractionJobConditionKeys">StartMemoryExtractionJobConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartMemoryExtractionJob action. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.STRATEGY_ID">STRATEGY_ID</a></code> | <code>string</code> | Condition key: bedrock-agentcore:strategyId (String). |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.SUBNETS">SUBNETS</a></code> | <code>string</code> | Condition key: bedrock-agentcore:subnets (ArrayOfString). |
@@ -9191,6 +9288,18 @@ public readonly actionGetEventConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the GetEvent action.
+
+---
+
+##### `actionGetMemoryRecordConditionKeys`<sup>Required</sup> <a name="actionGetMemoryRecordConditionKeys" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.actionGetMemoryRecordConditionKeys"></a>
+
+```typescript
+public readonly actionGetMemoryRecordConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetMemoryRecord action.
 
 ---
 
@@ -9311,6 +9420,18 @@ public readonly BatchCreateMemoryRecordsConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the BatchCreateMemoryRecords action.
+
+---
+
+##### `BatchDeleteMemoryRecordsConditionKeys`<sup>Required</sup> <a name="BatchDeleteMemoryRecordsConditionKeys" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.BatchDeleteMemoryRecordsConditionKeys"></a>
+
+```typescript
+public readonly BatchDeleteMemoryRecordsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the BatchDeleteMemoryRecords action.
 
 ---
 
@@ -9626,6 +9747,18 @@ Condition keys applicable to the DeleteEvent action.
 
 ---
 
+##### `DeleteMemoryRecordConditionKeys`<sup>Required</sup> <a name="DeleteMemoryRecordConditionKeys" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.DeleteMemoryRecordConditionKeys"></a>
+
+```typescript
+public readonly DeleteMemoryRecordConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DeleteMemoryRecord action.
+
+---
+
 ##### `DISCOVERY_URL`<sup>Required</sup> <a name="DISCOVERY_URL" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.DISCOVERY_URL"></a>
 
 ```typescript
@@ -9734,6 +9867,18 @@ Condition key: bedrock-agentcore:InferenceTargetConfigurationType (String).
 
 ---
 
+##### `IngestDataConditionKeys`<sup>Required</sup> <a name="IngestDataConditionKeys" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.IngestDataConditionKeys"></a>
+
+```typescript
+public readonly IngestDataConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the IngestData action.
+
+---
+
 ##### `KMS_KEY_ARN`<sup>Required</sup> <a name="KMS_KEY_ARN" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.KMS_KEY_ARN"></a>
 
 ```typescript
@@ -9803,6 +9948,30 @@ public readonly NAMESPACE: string;
 - *Type:* string
 
 Condition key: bedrock-agentcore:namespace (String).
+
+---
+
+##### `NAMESPACE_PATH`<sup>Required</sup> <a name="NAMESPACE_PATH" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.NAMESPACE_PATH"></a>
+
+```typescript
+public readonly NAMESPACE_PATH: string;
+```
+
+- *Type:* string
+
+Condition key: bedrock-agentcore:namespacePath (String).
+
+---
+
+##### `NAMESPACE_VARIABLE`<sup>Required</sup> <a name="NAMESPACE_VARIABLE" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.NAMESPACE_VARIABLE"></a>
+
+```typescript
+public readonly NAMESPACE_VARIABLE: string;
+```
+
+- *Type:* string
+
+Condition key: bedrock-agentcore:namespaceVariable/${VariableName} (String).
 
 ---
 
@@ -9935,6 +10104,18 @@ public readonly SESSION_ID: string;
 - *Type:* string
 
 Condition key: bedrock-agentcore:sessionId (String).
+
+---
+
+##### `SOURCE_NAMESPACE`<sup>Required</sup> <a name="SOURCE_NAMESPACE" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.SOURCE_NAMESPACE"></a>
+
+```typescript
+public readonly SOURCE_NAMESPACE: string;
+```
+
+- *Type:* string
+
+Condition key: bedrock-agentcore:sourceNamespace (String).
 
 ---
 

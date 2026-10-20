@@ -341,6 +341,7 @@ new workspaces_instances.WorkspacesInstancesActions()
 | <code><a href="#@cdk_utils/iam.workspaces_instances.WorkspacesInstancesActions.property.ListRegions">ListRegions</a></code> | <code>string</code> | [List] workspaces-instances:ListRegions. |
 | <code><a href="#@cdk_utils/iam.workspaces_instances.WorkspacesInstancesActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [List] workspaces-instances:ListTagsForResource. |
 | <code><a href="#@cdk_utils/iam.workspaces_instances.WorkspacesInstancesActions.property.ListWorkspaceInstances">ListWorkspaceInstances</a></code> | <code>string</code> | [List] workspaces-instances:ListWorkspaceInstances. |
+| <code><a href="#@cdk_utils/iam.workspaces_instances.WorkspacesInstancesActions.property.ModifyVolume">ModifyVolume</a></code> | <code>string</code> | [Write] workspaces-instances:ModifyVolume. |
 | <code><a href="#@cdk_utils/iam.workspaces_instances.WorkspacesInstancesActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.workspaces_instances.WorkspacesInstancesActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] workspaces-instances:TagResource. |
 | <code><a href="#@cdk_utils/iam.workspaces_instances.WorkspacesInstancesActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] workspaces-instances:UntagResource. |
@@ -536,6 +537,18 @@ public readonly ListWorkspaceInstances: string;
 - *Type:* string
 
 [List] workspaces-instances:ListWorkspaceInstances.
+
+---
+
+##### `ModifyVolume`<sup>Required</sup> <a name="ModifyVolume" id="@cdk_utils/iam.workspaces_instances.WorkspacesInstancesActions.property.ModifyVolume"></a>
+
+```typescript
+public readonly ModifyVolume: string;
+```
+
+- *Type:* string
+
+[Write] workspaces-instances:ModifyVolume.
 
 ---
 
@@ -771,6 +784,7 @@ new workspaces_instances.WorkspacesInstancesOperations()
 | <code><a href="#@cdk_utils/iam.workspaces_instances.WorkspacesInstancesOperations.property.ListRegions">ListRegions</a></code> | <code>string[]</code> | IAM actions required for the ListRegions API call. |
 | <code><a href="#@cdk_utils/iam.workspaces_instances.WorkspacesInstancesOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
 | <code><a href="#@cdk_utils/iam.workspaces_instances.WorkspacesInstancesOperations.property.ListWorkspaceInstances">ListWorkspaceInstances</a></code> | <code>string[]</code> | IAM actions required for the ListWorkspaceInstances API call. |
+| <code><a href="#@cdk_utils/iam.workspaces_instances.WorkspacesInstancesOperations.property.ModifyVolume">ModifyVolume</a></code> | <code>string[]</code> | IAM actions required for the ModifyVolume API call. |
 | <code><a href="#@cdk_utils/iam.workspaces_instances.WorkspacesInstancesOperations.property.opGetWorkspaceInstance">opGetWorkspaceInstance</a></code> | <code>string[]</code> | IAM actions required for the GetWorkspaceInstance API call. |
 | <code><a href="#@cdk_utils/iam.workspaces_instances.WorkspacesInstancesOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
 | <code><a href="#@cdk_utils/iam.workspaces_instances.WorkspacesInstancesOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
@@ -894,6 +908,18 @@ public readonly ListWorkspaceInstances: string[];
 - *Type:* string[]
 
 IAM actions required for the ListWorkspaceInstances API call.
+
+---
+
+##### `ModifyVolume`<sup>Required</sup> <a name="ModifyVolume" id="@cdk_utils/iam.workspaces_instances.WorkspacesInstancesOperations.property.ModifyVolume"></a>
+
+```typescript
+public readonly ModifyVolume: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ModifyVolume API call.
 
 ---
 
