@@ -297,6 +297,69 @@ The IAM service prefix.
 
 ---
 
+### RDSDBConditions <a name="RDSDBConditions" id="@cdk_utils/iam.rds_db.RDSDBConditions"></a>
+
+Condition key constants and builders for rds-db.
+
+#### Initializers <a name="Initializers" id="@cdk_utils/iam.rds_db.RDSDBConditions.Initializer"></a>
+
+```typescript
+import { rds_db } from '@cdk_utils/iam'
+
+new rds_db.RDSDBConditions()
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+
+---
+
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdk_utils/iam.rds_db.RDSDBConditions.resourceTag">resourceTag</a></code> | Generates a condition block for `aws:ResourceTag/${TagKey}`. |
+
+---
+
+##### `resourceTag` <a name="resourceTag" id="@cdk_utils/iam.rds_db.RDSDBConditions.resourceTag"></a>
+
+```typescript
+import { rds_db } from '@cdk_utils/iam'
+
+rds_db.RDSDBConditions.resourceTag(value: string)
+```
+
+Generates a condition block for `aws:ResourceTag/${TagKey}`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.rds_db.RDSDBConditions.resourceTag.parameter.value"></a>
+
+- *Type:* string
+
+---
+
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.rds_db.RDSDBConditions.property.AWS_RESOURCE_TAG">AWS_RESOURCE_TAG</a></code> | <code>string</code> | Condition key: aws:ResourceTag/${TagKey} (String). |
+
+---
+
+##### `AWS_RESOURCE_TAG`<sup>Required</sup> <a name="AWS_RESOURCE_TAG" id="@cdk_utils/iam.rds_db.RDSDBConditions.property.AWS_RESOURCE_TAG"></a>
+
+```typescript
+public readonly AWS_RESOURCE_TAG: string;
+```
+
+- *Type:* string
+
+Condition key: aws:ResourceTag/${TagKey} (String).
+
+---
+
 ### RDSDBResources <a name="RDSDBResources" id="@cdk_utils/iam.rds_db.RDSDBResources"></a>
 
 ARN builders, validators, and parsers for rds-db resources.

@@ -47,6 +47,7 @@ export * as arc_region_switch from "./services/arc-region-switch";
 export * as arc_zonal_shift from "./services/arc-zonal-shift";
 export * as arsenal from "./services/arsenal";
 export * as artifact from "./services/artifact";
+export * as assurance from "./services/assurance";
 export * as athena from "./services/athena";
 export * as auditmanager from "./services/auditmanager";
 export * as autoscaling from "./services/autoscaling";

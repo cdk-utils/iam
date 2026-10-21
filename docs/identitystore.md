@@ -1445,6 +1445,7 @@ new identitystore.IdentitystoreConditions()
 | <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreConditions.reservedUserId">reservedUserId</a></code> | Generates a condition block for `identitystore:ReservedUserId`. |
 | <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreConditions.userExternalIdIssuers">userExternalIdIssuers</a></code> | Generates a condition block for `identitystore:UserExternalIdIssuers`. |
 | <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreConditions.userId">userId</a></code> | Generates a condition block for `identitystore:UserId`. |
+| <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreConditions.vpceAccessRequired">vpceAccessRequired</a></code> | Generates a condition block for `identitystore:VpceAccessRequired`. |
 
 ---
 
@@ -1544,6 +1545,22 @@ Generates a condition block for `identitystore:UserId`.
 
 ---
 
+##### `vpceAccessRequired` <a name="vpceAccessRequired" id="@cdk_utils/iam.identitystore.IdentitystoreConditions.vpceAccessRequired"></a>
+
+```typescript
+import { identitystore } from '@cdk_utils/iam'
+
+identitystore.IdentitystoreConditions.vpceAccessRequired(value: boolean)
+```
+
+Generates a condition block for `identitystore:VpceAccessRequired`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.identitystore.IdentitystoreConditions.vpceAccessRequired.parameter.value"></a>
+
+- *Type:* boolean
+
+---
+
 
 #### Constants <a name="Constants" id="Constants"></a>
 
@@ -1575,9 +1592,11 @@ Generates a condition block for `identitystore:UserId`.
 | <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreConditions.property.RESERVED_USER_ID">RESERVED_USER_ID</a></code> | <code>string</code> | Condition key: identitystore:ReservedUserId (String). |
 | <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreConditions.property.ReserveUserConditionKeys">ReserveUserConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ReserveUser action. |
 | <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreConditions.property.UpdateGroupConditionKeys">UpdateGroupConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateGroup action. |
+| <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreConditions.property.UpdateIdentityStoreConditionKeys">UpdateIdentityStoreConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateIdentityStore action. |
 | <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreConditions.property.UpdateUserConditionKeys">UpdateUserConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateUser action. |
 | <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreConditions.property.USER_EXTERNAL_ID_ISSUERS">USER_EXTERNAL_ID_ISSUERS</a></code> | <code>string</code> | Condition key: identitystore:UserExternalIdIssuers (ArrayOfARN). |
 | <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreConditions.property.USER_ID">USER_ID</a></code> | <code>string</code> | Condition key: identitystore:UserId (String). |
+| <code><a href="#@cdk_utils/iam.identitystore.IdentitystoreConditions.property.VPCE_ACCESS_REQUIRED">VPCE_ACCESS_REQUIRED</a></code> | <code>string</code> | Condition key: identitystore:VpceAccessRequired (Bool). |
 
 ---
 
@@ -1893,6 +1912,18 @@ Condition keys applicable to the UpdateGroup action.
 
 ---
 
+##### `UpdateIdentityStoreConditionKeys`<sup>Required</sup> <a name="UpdateIdentityStoreConditionKeys" id="@cdk_utils/iam.identitystore.IdentitystoreConditions.property.UpdateIdentityStoreConditionKeys"></a>
+
+```typescript
+public readonly UpdateIdentityStoreConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UpdateIdentityStore action.
+
+---
+
 ##### `UpdateUserConditionKeys`<sup>Required</sup> <a name="UpdateUserConditionKeys" id="@cdk_utils/iam.identitystore.IdentitystoreConditions.property.UpdateUserConditionKeys"></a>
 
 ```typescript
@@ -1926,6 +1957,18 @@ public readonly USER_ID: string;
 - *Type:* string
 
 Condition key: identitystore:UserId (String).
+
+---
+
+##### `VPCE_ACCESS_REQUIRED`<sup>Required</sup> <a name="VPCE_ACCESS_REQUIRED" id="@cdk_utils/iam.identitystore.IdentitystoreConditions.property.VPCE_ACCESS_REQUIRED"></a>
+
+```typescript
+public readonly VPCE_ACCESS_REQUIRED: string;
+```
+
+- *Type:* string
+
+Condition key: identitystore:VpceAccessRequired (Bool).
 
 ---
 

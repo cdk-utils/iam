@@ -127,6 +127,12 @@ export class BedrockActions {
 	/** [Write] bedrock:CreateProvisionedModelThroughput */
 	static readonly CreateProvisionedModelThroughput =
 		"bedrock:CreateProvisionedModelThroughput";
+	/** [Write] bedrock:CreateRetrievalInstruction */
+	static readonly CreateRetrievalInstruction =
+		"bedrock:CreateRetrievalInstruction";
+	/** [Write] bedrock:CreateRetrievalInstructionVersion */
+	static readonly CreateRetrievalInstructionVersion =
+		"bedrock:CreateRetrievalInstructionVersion";
 	/** [Write] bedrock:CreateSession */
 	static readonly CreateSession = "bedrock:CreateSession";
 	/** [Write] bedrock:DeleteAgent */
@@ -206,6 +212,9 @@ export class BedrockActions {
 		"bedrock:DeleteProvisionedModelThroughput";
 	/** [Write] bedrock:DeleteResourcePolicy */
 	static readonly DeleteResourcePolicy = "bedrock:DeleteResourcePolicy";
+	/** [Write] bedrock:DeleteRetrievalInstruction */
+	static readonly DeleteRetrievalInstruction =
+		"bedrock:DeleteRetrievalInstruction";
 	/** [Write] bedrock:DeleteSession */
 	static readonly DeleteSession = "bedrock:DeleteSession";
 	/** [Write] bedrock:DeregisterMarketplaceModelEndpoint */
@@ -368,6 +377,9 @@ export class BedrockActions {
 		"bedrock:GetProvisionedModelThroughput";
 	/** [Read] bedrock:GetResourcePolicy */
 	static readonly actionGetResourcePolicy = "bedrock:GetResourcePolicy";
+	/** [Read] bedrock:GetRetrievalInstruction */
+	static readonly actionGetRetrievalInstruction =
+		"bedrock:GetRetrievalInstruction";
 	/** [Read] bedrock:GetSession */
 	static readonly actionGetSession = "bedrock:GetSession";
 	/** [Read] bedrock:GetUseCaseForModelAccess */
@@ -518,6 +530,12 @@ export class BedrockActions {
 	/** [List] bedrock:ListProvisionedModelThroughputs */
 	static readonly ListProvisionedModelThroughputs =
 		"bedrock:ListProvisionedModelThroughputs";
+	/** [List] bedrock:ListRetrievalInstructionVersions */
+	static readonly ListRetrievalInstructionVersions =
+		"bedrock:ListRetrievalInstructionVersions";
+	/** [List] bedrock:ListRetrievalInstructions */
+	static readonly ListRetrievalInstructions =
+		"bedrock:ListRetrievalInstructions";
 	/** [List] bedrock:ListSessions */
 	static readonly ListSessions = "bedrock:ListSessions";
 	/** [Read] bedrock:ListTagsForResource */
@@ -632,6 +650,9 @@ export class BedrockActions {
 	/** [Write] bedrock:UpdateProvisionedModelThroughput */
 	static readonly UpdateProvisionedModelThroughput =
 		"bedrock:UpdateProvisionedModelThroughput";
+	/** [Write] bedrock:UpdateRetrievalInstruction */
+	static readonly UpdateRetrievalInstruction =
+		"bedrock:UpdateRetrievalInstruction";
 	/** [Write] bedrock:UpdateSession */
 	static readonly UpdateSession = "bedrock:UpdateSession";
 	/** [Read] bedrock:ValidateFlowDefinition */
@@ -705,6 +726,7 @@ export class BedrockActions {
 		BedrockActions.actionGetPromptRouter,
 		BedrockActions.actionGetProvisionedModelThroughput,
 		BedrockActions.actionGetResourcePolicy,
+		BedrockActions.actionGetRetrievalInstruction,
 		BedrockActions.actionGetSession,
 		BedrockActions.actionGetUseCaseForModelAccess,
 		BedrockActions.InvokeAgent,
@@ -767,6 +789,8 @@ export class BedrockActions {
 		BedrockActions.CreatePromptRouter,
 		BedrockActions.CreatePromptVersion,
 		BedrockActions.CreateProvisionedModelThroughput,
+		BedrockActions.CreateRetrievalInstruction,
+		BedrockActions.CreateRetrievalInstructionVersion,
 		BedrockActions.CreateSession,
 		BedrockActions.DeleteAgent,
 		BedrockActions.DeleteAgentActionGroup,
@@ -800,6 +824,7 @@ export class BedrockActions {
 		BedrockActions.DeletePromptRouter,
 		BedrockActions.DeleteProvisionedModelThroughput,
 		BedrockActions.DeleteResourcePolicy,
+		BedrockActions.DeleteRetrievalInstruction,
 		BedrockActions.DeleteSession,
 		BedrockActions.DeregisterMarketplaceModelEndpoint,
 		BedrockActions.DisassociateAgentCollaborator,
@@ -854,6 +879,7 @@ export class BedrockActions {
 		BedrockActions.UpdateMarketplaceModelEndpoint,
 		BedrockActions.UpdatePrompt,
 		BedrockActions.UpdateProvisionedModelThroughput,
+		BedrockActions.UpdateRetrievalInstruction,
 		BedrockActions.UpdateSession,
 	];
 	/** All list-level actions. */
@@ -903,6 +929,8 @@ export class BedrockActions {
 		BedrockActions.ListPromptRouters,
 		BedrockActions.ListPrompts,
 		BedrockActions.ListProvisionedModelThroughputs,
+		BedrockActions.ListRetrievalInstructionVersions,
+		BedrockActions.ListRetrievalInstructions,
 		BedrockActions.ListSessions,
 	];
 	/** All permission-management-level actions. */
@@ -2001,6 +2029,34 @@ export interface BedrockProvisionedModelArnComponents {
 }
 
 /**
+ * Properties for building a retrieval-instruction ARN.
+ */
+export interface BedrockRetrievalInstructionArnProps {
+	/** The RetrievalInstructionId component of the ARN. */
+	readonly retrievalInstructionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a retrieval-instruction ARN.
+ */
+export interface BedrockRetrievalInstructionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RetrievalInstructionId component. */
+	readonly retrievalInstructionId: string;
+}
+
+/**
  * Properties for building a session ARN.
  */
 export interface BedrockSessionArnProps {
@@ -2128,6 +2184,8 @@ const PromptVersionArnRegex =
 	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):prompt\/(?<promptId>[^:/?]+):(?<promptVersion>[^:/?]+)$/;
 const ProvisionedModelArnRegex =
 	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):provisioned-model\/(?<resourceId>[^:/?]+)$/;
+const RetrievalInstructionArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):retrieval-instruction\/(?<retrievalInstructionId>[^:/?]+)$/;
 const SessionArnRegex =
 	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):session\/(?<sessionId>[^:/?]+)$/;
 const SystemToolArnRegex =
@@ -3394,6 +3452,41 @@ export class BedrockResources {
 	}
 
 	/**
+	 * Builds an ARN for the retrieval-instruction resource.
+	 */
+	static retrievalInstruction(
+		props: BedrockRetrievalInstructionArnProps,
+	): string {
+		return `arn:${props.partition ?? "aws"}:bedrock:${props.region ?? "*"}:${props.account ?? "*"}:retrieval-instruction/${props.retrievalInstructionId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the retrieval-instruction resource.
+	 */
+	static isValidRetrievalInstructionArn(arn: string): boolean {
+		return RetrievalInstructionArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a retrieval-instruction ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseRetrievalInstructionArn(
+		arn: string,
+	): BedrockRetrievalInstructionArnComponents {
+		const match = RetrievalInstructionArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid retrieval-instruction ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			retrievalInstructionId: match.groups!.retrievalInstructionId,
+		};
+	}
+
+	/**
 	 * Builds an ARN for the session resource.
 	 */
 	static session(props: BedrockSessionArnProps): string {
@@ -3695,10 +3788,13 @@ export class BedrockOperations {
 	];
 	/** IAM actions required for the CreateRetrievalInstruction API call. */
 	static readonly CreateRetrievalInstruction: string[] = [
+		"bedrock:CreateRetrievalInstruction",
 		"bedrock:TagResource",
 	];
 	/** IAM actions required for the CreateRetrievalInstructionVersion API call. */
-	static readonly CreateRetrievalInstructionVersion: string[] = [];
+	static readonly CreateRetrievalInstructionVersion: string[] = [
+		"bedrock:CreateRetrievalInstructionVersion",
+	];
 	/** IAM actions required for the CreateSession API call. */
 	static readonly CreateSession: string[] = [
 		"bedrock:CreateSession",
@@ -3819,7 +3915,9 @@ export class BedrockOperations {
 		"bedrock:PutResourcePolicy",
 	];
 	/** IAM actions required for the DeleteRetrievalInstruction API call. */
-	static readonly DeleteRetrievalInstruction: string[] = [];
+	static readonly DeleteRetrievalInstruction: string[] = [
+		"bedrock:DeleteRetrievalInstruction",
+	];
 	/** IAM actions required for the DeleteSession API call. */
 	static readonly DeleteSession: string[] = ["bedrock:DeleteSession"];
 	/** IAM actions required for the DeleteVpcConfiguration API call. */
@@ -4053,7 +4151,9 @@ export class BedrockOperations {
 	/** IAM actions required for the GetResourcePolicy API call. */
 	static readonly opGetResourcePolicy: string[] = ["bedrock:GetResourcePolicy"];
 	/** IAM actions required for the GetRetrievalInstruction API call. */
-	static readonly opGetRetrievalInstruction: string[] = [];
+	static readonly opGetRetrievalInstruction: string[] = [
+		"bedrock:GetRetrievalInstruction",
+	];
 	/** IAM actions required for the GetSession API call. */
 	static readonly opGetSession: string[] = ["bedrock:GetSession"];
 	/** IAM actions required for the GetUseCaseForModelAccess API call. */
@@ -4286,9 +4386,13 @@ export class BedrockOperations {
 		"bedrock:ListProvisionedModelThroughputs",
 	];
 	/** IAM actions required for the ListRetrievalInstructionVersions API call. */
-	static readonly ListRetrievalInstructionVersions: string[] = [];
+	static readonly ListRetrievalInstructionVersions: string[] = [
+		"bedrock:ListRetrievalInstructionVersions",
+	];
 	/** IAM actions required for the ListRetrievalInstructions API call. */
-	static readonly ListRetrievalInstructions: string[] = [];
+	static readonly ListRetrievalInstructions: string[] = [
+		"bedrock:ListRetrievalInstructions",
+	];
 	/** IAM actions required for the ListSessions API call. */
 	static readonly ListSessions: string[] = ["bedrock:ListSessions"];
 	/** IAM actions required for the ListTagsForResource API call. */
@@ -4475,7 +4579,9 @@ export class BedrockOperations {
 		"bedrock:UpdateProvisionedModelThroughput",
 	];
 	/** IAM actions required for the UpdateRetrievalInstruction API call. */
-	static readonly UpdateRetrievalInstruction: string[] = [];
+	static readonly UpdateRetrievalInstruction: string[] = [
+		"bedrock:UpdateRetrievalInstruction",
+	];
 	/** IAM actions required for the UpdateSession API call. */
 	static readonly UpdateSession: string[] = ["bedrock:UpdateSession"];
 	/** IAM actions required for the ValidateFlowDefinition API call. */
@@ -4621,6 +4727,11 @@ export class BedrockConditions {
 	];
 	/** Condition keys applicable to the CreateProvisionedModelThroughput action. */
 	static readonly CreateProvisionedModelThroughputConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
+	/** Condition keys applicable to the CreateRetrievalInstruction action. */
+	static readonly CreateRetrievalInstructionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];

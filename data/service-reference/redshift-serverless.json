@@ -1177,6 +1177,26 @@
       }
     },
     {
+      "Name": "UpdateLakehouseConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "namespace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "UpdateNamespace",
       "Annotations": {
         "Properties": {
@@ -2334,6 +2354,10 @@
         {
           "Name": "RegisterNamespace",
           "Service": "redshift"
+        },
+        {
+          "Name": "UpdateLakehouseConfiguration",
+          "Service": "redshift-serverless"
         }
       ],
       "SDK": [

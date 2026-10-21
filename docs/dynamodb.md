@@ -1209,6 +1209,7 @@ new dynamodb.DynamoDBActions()
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBActions.property.DescribeTableReplicaAutoScaling">DescribeTableReplicaAutoScaling</a></code> | <code>string</code> | [Read] dynamodb:DescribeTableReplicaAutoScaling. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBActions.property.DescribeTimeToLive">DescribeTimeToLive</a></code> | <code>string</code> | [Read] dynamodb:DescribeTimeToLive. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBActions.property.DisableKinesisStreamingDestination">DisableKinesisStreamingDestination</a></code> | <code>string</code> | [Write] dynamodb:DisableKinesisStreamingDestination. |
+| <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBActions.property.DisassociateTableReplica">DisassociateTableReplica</a></code> | <code>string</code> | [Write] dynamodb:DisassociateTableReplica. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBActions.property.EnableKinesisStreamingDestination">EnableKinesisStreamingDestination</a></code> | <code>string</code> | [Write] dynamodb:EnableKinesisStreamingDestination. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBActions.property.ExportTableToPointInTime">ExportTableToPointInTime</a></code> | <code>string</code> | [Write] dynamodb:ExportTableToPointInTime. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBActions.property.ImportTable">ImportTable</a></code> | <code>string</code> | [Write] dynamodb:ImportTable. |
@@ -1756,6 +1757,18 @@ public readonly DisableKinesisStreamingDestination: string;
 - *Type:* string
 
 [Write] dynamodb:DisableKinesisStreamingDestination.
+
+---
+
+##### `DisassociateTableReplica`<sup>Required</sup> <a name="DisassociateTableReplica" id="@cdk_utils/iam.dynamodb.DynamoDBActions.property.DisassociateTableReplica"></a>
+
+```typescript
+public readonly DisassociateTableReplica: string;
+```
+
+- *Type:* string
+
+[Write] dynamodb:DisassociateTableReplica.
 
 ---
 

@@ -3384,6 +3384,16 @@
       ]
     },
     {
+      "Name": "PrepareMigration",
+      "SDK": [
+        {
+          "Name": "elasticache",
+          "Method": "prepare_migration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "PurchaseReservedCacheNodesOffering",
       "AuthorizedActions": [
         {
@@ -3495,6 +3505,16 @@
         {
           "Name": "elasticache",
           "Method": "start_migration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopMigration",
+      "SDK": [
+        {
+          "Name": "elasticache",
+          "Method": "stop_migration",
           "Package": "Boto3"
         }
       ]

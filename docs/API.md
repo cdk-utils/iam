@@ -46,6 +46,7 @@ The following submodules are available:
 - [arc_zonal_shift](./arc_zonal_shift.md)
 - [arsenal](./arsenal.md)
 - [artifact](./artifact.md)
+- [assurance](./assurance.md)
 - [athena](./athena.md)
 - [auditmanager](./auditmanager.md)
 - [autoscaling](./autoscaling.md)

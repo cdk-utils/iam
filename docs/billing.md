@@ -123,6 +123,126 @@ Defaults to "aws".
 
 ---
 
+### BillingContractArnComponents <a name="BillingContractArnComponents" id="@cdk_utils/iam.billing.BillingContractArnComponents"></a>
+
+Parsed components of a contract ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.billing.BillingContractArnComponents.Initializer"></a>
+
+```typescript
+import { billing } from '@cdk_utils/iam'
+
+const billingContractArnComponents: billing.BillingContractArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.billing.BillingContractArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.billing.BillingContractArnComponents.property.contractId">contractId</a></code> | <code>string</code> | The ContractId component. |
+| <code><a href="#@cdk_utils/iam.billing.BillingContractArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.billing.BillingContractArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `contractId`<sup>Required</sup> <a name="contractId" id="@cdk_utils/iam.billing.BillingContractArnComponents.property.contractId"></a>
+
+```typescript
+public readonly contractId: string;
+```
+
+- *Type:* string
+
+The ContractId component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.billing.BillingContractArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+### BillingContractArnProps <a name="BillingContractArnProps" id="@cdk_utils/iam.billing.BillingContractArnProps"></a>
+
+Properties for building a contract ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.billing.BillingContractArnProps.Initializer"></a>
+
+```typescript
+import { billing } from '@cdk_utils/iam'
+
+const billingContractArnProps: billing.BillingContractArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.billing.BillingContractArnProps.property.contractId">contractId</a></code> | <code>string</code> | The ContractId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.billing.BillingContractArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.billing.BillingContractArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+
+---
+
+##### `contractId`<sup>Required</sup> <a name="contractId" id="@cdk_utils/iam.billing.BillingContractArnProps.property.contractId"></a>
+
+```typescript
+public readonly contractId: string;
+```
+
+- *Type:* string
+
+The ContractId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.billing.BillingContractArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.billing.BillingContractArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
 ## Classes <a name="Classes" id="Classes"></a>
 
 ### BillingActions <a name="BillingActions" id="@cdk_utils/iam.billing.BillingActions"></a>
@@ -168,15 +288,23 @@ new billing.BillingActions()
 | <code><a href="#@cdk_utils/iam.billing.BillingActions.property.AllReadActions">AllReadActions</a></code> | <code>string[]</code> | All read-level actions. |
 | <code><a href="#@cdk_utils/iam.billing.BillingActions.property.AllTaggingActions">AllTaggingActions</a></code> | <code>string[]</code> | All tagging-level actions. |
 | <code><a href="#@cdk_utils/iam.billing.BillingActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
+| <code><a href="#@cdk_utils/iam.billing.BillingActions.property.AssociateContract">AssociateContract</a></code> | <code>string</code> | [Write] billing:AssociateContract. |
 | <code><a href="#@cdk_utils/iam.billing.BillingActions.property.AssociateSourceViews">AssociateSourceViews</a></code> | <code>string</code> | [Write] billing:AssociateSourceViews. |
+| <code><a href="#@cdk_utils/iam.billing.BillingActions.property.CancelContractualInvestmentAttestation">CancelContractualInvestmentAttestation</a></code> | <code>string</code> | [Write] billing:CancelContractualInvestmentAttestation. |
 | <code><a href="#@cdk_utils/iam.billing.BillingActions.property.CreateBillingView">CreateBillingView</a></code> | <code>string</code> | [Write] billing:CreateBillingView. |
+| <code><a href="#@cdk_utils/iam.billing.BillingActions.property.CreateContractualInvestmentAttestation">CreateContractualInvestmentAttestation</a></code> | <code>string</code> | [Write] billing:CreateContractualInvestmentAttestation. |
 | <code><a href="#@cdk_utils/iam.billing.BillingActions.property.DeleteBillingView">DeleteBillingView</a></code> | <code>string</code> | [Write] billing:DeleteBillingView. |
 | <code><a href="#@cdk_utils/iam.billing.BillingActions.property.DeleteResourcePolicy">DeleteResourcePolicy</a></code> | <code>string</code> | [PermissionManagement] billing:DeleteResourcePolicy. |
+| <code><a href="#@cdk_utils/iam.billing.BillingActions.property.DisassociateContract">DisassociateContract</a></code> | <code>string</code> | [Write] billing:DisassociateContract. |
 | <code><a href="#@cdk_utils/iam.billing.BillingActions.property.DisassociateSourceViews">DisassociateSourceViews</a></code> | <code>string</code> | [Write] billing:DisassociateSourceViews. |
 | <code><a href="#@cdk_utils/iam.billing.BillingActions.property.ListBillingViews">ListBillingViews</a></code> | <code>string</code> | [Read] billing:ListBillingViews. |
 | <code><a href="#@cdk_utils/iam.billing.BillingActions.property.ListBillingViewSegments">ListBillingViewSegments</a></code> | <code>string</code> | [List] billing:ListBillingViewSegments. |
 | <code><a href="#@cdk_utils/iam.billing.BillingActions.property.ListBusinessSupportAccountCharges">ListBusinessSupportAccountCharges</a></code> | <code>string</code> | [List] billing:ListBusinessSupportAccountCharges. |
 | <code><a href="#@cdk_utils/iam.billing.BillingActions.property.ListBusinessSupportSubscriptionHistory">ListBusinessSupportSubscriptionHistory</a></code> | <code>string</code> | [List] billing:ListBusinessSupportSubscriptionHistory. |
+| <code><a href="#@cdk_utils/iam.billing.BillingActions.property.ListContracts">ListContracts</a></code> | <code>string</code> | [List] billing:ListContracts. |
+| <code><a href="#@cdk_utils/iam.billing.BillingActions.property.ListContractualInvestmentAttestations">ListContractualInvestmentAttestations</a></code> | <code>string</code> | [Read] billing:ListContractualInvestmentAttestations. |
+| <code><a href="#@cdk_utils/iam.billing.BillingActions.property.ListContractualInvestments">ListContractualInvestments</a></code> | <code>string</code> | [Read] billing:ListContractualInvestments. |
+| <code><a href="#@cdk_utils/iam.billing.BillingActions.property.ListContractualInvestmentSummaries">ListContractualInvestmentSummaries</a></code> | <code>string</code> | [Read] billing:ListContractualInvestmentSummaries. |
 | <code><a href="#@cdk_utils/iam.billing.BillingActions.property.ListCreditEntitlementPeriods">ListCreditEntitlementPeriods</a></code> | <code>string</code> | [Read] billing:ListCreditEntitlementPeriods. |
 | <code><a href="#@cdk_utils/iam.billing.BillingActions.property.ListCreditEntitlements">ListCreditEntitlements</a></code> | <code>string</code> | [Read] billing:ListCreditEntitlements. |
 | <code><a href="#@cdk_utils/iam.billing.BillingActions.property.ListEnterpriseSupportLinkedAccountCharges">ListEnterpriseSupportLinkedAccountCharges</a></code> | <code>string</code> | [List] billing:ListEnterpriseSupportLinkedAccountCharges. |
@@ -425,6 +553,18 @@ All write-level actions.
 
 ---
 
+##### `AssociateContract`<sup>Required</sup> <a name="AssociateContract" id="@cdk_utils/iam.billing.BillingActions.property.AssociateContract"></a>
+
+```typescript
+public readonly AssociateContract: string;
+```
+
+- *Type:* string
+
+[Write] billing:AssociateContract.
+
+---
+
 ##### `AssociateSourceViews`<sup>Required</sup> <a name="AssociateSourceViews" id="@cdk_utils/iam.billing.BillingActions.property.AssociateSourceViews"></a>
 
 ```typescript
@@ -437,6 +577,18 @@ public readonly AssociateSourceViews: string;
 
 ---
 
+##### `CancelContractualInvestmentAttestation`<sup>Required</sup> <a name="CancelContractualInvestmentAttestation" id="@cdk_utils/iam.billing.BillingActions.property.CancelContractualInvestmentAttestation"></a>
+
+```typescript
+public readonly CancelContractualInvestmentAttestation: string;
+```
+
+- *Type:* string
+
+[Write] billing:CancelContractualInvestmentAttestation.
+
+---
+
 ##### `CreateBillingView`<sup>Required</sup> <a name="CreateBillingView" id="@cdk_utils/iam.billing.BillingActions.property.CreateBillingView"></a>
 
 ```typescript
@@ -446,6 +598,18 @@ public readonly CreateBillingView: string;
 - *Type:* string
 
 [Write] billing:CreateBillingView.
+
+---
+
+##### `CreateContractualInvestmentAttestation`<sup>Required</sup> <a name="CreateContractualInvestmentAttestation" id="@cdk_utils/iam.billing.BillingActions.property.CreateContractualInvestmentAttestation"></a>
+
+```typescript
+public readonly CreateContractualInvestmentAttestation: string;
+```
+
+- *Type:* string
+
+[Write] billing:CreateContractualInvestmentAttestation.
 
 ---
 
@@ -470,6 +634,18 @@ public readonly DeleteResourcePolicy: string;
 - *Type:* string
 
 [PermissionManagement] billing:DeleteResourcePolicy.
+
+---
+
+##### `DisassociateContract`<sup>Required</sup> <a name="DisassociateContract" id="@cdk_utils/iam.billing.BillingActions.property.DisassociateContract"></a>
+
+```typescript
+public readonly DisassociateContract: string;
+```
+
+- *Type:* string
+
+[Write] billing:DisassociateContract.
 
 ---
 
@@ -530,6 +706,54 @@ public readonly ListBusinessSupportSubscriptionHistory: string;
 - *Type:* string
 
 [List] billing:ListBusinessSupportSubscriptionHistory.
+
+---
+
+##### `ListContracts`<sup>Required</sup> <a name="ListContracts" id="@cdk_utils/iam.billing.BillingActions.property.ListContracts"></a>
+
+```typescript
+public readonly ListContracts: string;
+```
+
+- *Type:* string
+
+[List] billing:ListContracts.
+
+---
+
+##### `ListContractualInvestmentAttestations`<sup>Required</sup> <a name="ListContractualInvestmentAttestations" id="@cdk_utils/iam.billing.BillingActions.property.ListContractualInvestmentAttestations"></a>
+
+```typescript
+public readonly ListContractualInvestmentAttestations: string;
+```
+
+- *Type:* string
+
+[Read] billing:ListContractualInvestmentAttestations.
+
+---
+
+##### `ListContractualInvestments`<sup>Required</sup> <a name="ListContractualInvestments" id="@cdk_utils/iam.billing.BillingActions.property.ListContractualInvestments"></a>
+
+```typescript
+public readonly ListContractualInvestments: string;
+```
+
+- *Type:* string
+
+[Read] billing:ListContractualInvestments.
+
+---
+
+##### `ListContractualInvestmentSummaries`<sup>Required</sup> <a name="ListContractualInvestmentSummaries" id="@cdk_utils/iam.billing.BillingActions.property.ListContractualInvestmentSummaries"></a>
+
+```typescript
+public readonly ListContractualInvestmentSummaries: string;
+```
+
+- *Type:* string
+
+[Read] billing:ListContractualInvestmentSummaries.
 
 ---
 
@@ -1404,8 +1628,11 @@ new billing.BillingResources()
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdk_utils/iam.billing.BillingResources.billingview">billingview</a></code> | Builds an ARN for the billingview resource. |
+| <code><a href="#@cdk_utils/iam.billing.BillingResources.contract">contract</a></code> | Builds an ARN for the contract resource. |
 | <code><a href="#@cdk_utils/iam.billing.BillingResources.isValidBillingviewArn">isValidBillingviewArn</a></code> | Validates whether a string is a valid ARN for the billingview resource. |
+| <code><a href="#@cdk_utils/iam.billing.BillingResources.isValidContractArn">isValidContractArn</a></code> | Validates whether a string is a valid ARN for the contract resource. |
 | <code><a href="#@cdk_utils/iam.billing.BillingResources.parseBillingviewArn">parseBillingviewArn</a></code> | Parses a billingview ARN into its components. |
+| <code><a href="#@cdk_utils/iam.billing.BillingResources.parseContractArn">parseContractArn</a></code> | Parses a contract ARN into its components. |
 
 ---
 
@@ -1425,6 +1652,22 @@ Builds an ARN for the billingview resource.
 
 ---
 
+##### `contract` <a name="contract" id="@cdk_utils/iam.billing.BillingResources.contract"></a>
+
+```typescript
+import { billing } from '@cdk_utils/iam'
+
+billing.BillingResources.contract(props: BillingContractArnProps)
+```
+
+Builds an ARN for the contract resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.billing.BillingResources.contract.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.billing.BillingContractArnProps">BillingContractArnProps</a>
+
+---
+
 ##### `isValidBillingviewArn` <a name="isValidBillingviewArn" id="@cdk_utils/iam.billing.BillingResources.isValidBillingviewArn"></a>
 
 ```typescript
@@ -1441,6 +1684,22 @@ Validates whether a string is a valid ARN for the billingview resource.
 
 ---
 
+##### `isValidContractArn` <a name="isValidContractArn" id="@cdk_utils/iam.billing.BillingResources.isValidContractArn"></a>
+
+```typescript
+import { billing } from '@cdk_utils/iam'
+
+billing.BillingResources.isValidContractArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the contract resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.billing.BillingResources.isValidContractArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `parseBillingviewArn` <a name="parseBillingviewArn" id="@cdk_utils/iam.billing.BillingResources.parseBillingviewArn"></a>
 
 ```typescript
@@ -1452,6 +1711,22 @@ billing.BillingResources.parseBillingviewArn(arn: string)
 Parses a billingview ARN into its components.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.billing.BillingResources.parseBillingviewArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseContractArn` <a name="parseContractArn" id="@cdk_utils/iam.billing.BillingResources.parseContractArn"></a>
+
+```typescript
+import { billing } from '@cdk_utils/iam'
+
+billing.BillingResources.parseContractArn(arn: string)
+```
+
+Parses a contract ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.billing.BillingResources.parseContractArn.parameter.arn"></a>
 
 - *Type:* string
 

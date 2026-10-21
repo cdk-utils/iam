@@ -82,6 +82,9 @@
       "Resources": [
         {
           "Name": "cluster"
+        },
+        {
+          "Name": "configuration"
         }
       ],
       "SupportedBy": {
@@ -106,6 +109,9 @@
       "Resources": [
         {
           "Name": "cluster"
+        },
+        {
+          "Name": "configuration"
         }
       ],
       "SupportedBy": {

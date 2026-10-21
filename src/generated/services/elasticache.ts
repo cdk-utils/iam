@@ -1317,6 +1317,8 @@ export class ElastiCacheOperations {
 	static readonly ModifyUser: string[] = ["elasticache:ModifyUser"];
 	/** IAM actions required for the ModifyUserGroup API call. */
 	static readonly ModifyUserGroup: string[] = ["elasticache:ModifyUserGroup"];
+	/** IAM actions required for the PrepareMigration API call. */
+	static readonly PrepareMigration: string[] = [];
 	/** IAM actions required for the PurchaseReservedCacheNodesOffering API call. */
 	static readonly PurchaseReservedCacheNodesOffering: string[] = [
 		"elasticache:AddTagsToResource",
@@ -1344,6 +1346,8 @@ export class ElastiCacheOperations {
 	];
 	/** IAM actions required for the StartMigration API call. */
 	static readonly StartMigration: string[] = ["elasticache:StartMigration"];
+	/** IAM actions required for the StopMigration API call. */
+	static readonly StopMigration: string[] = [];
 	/** IAM actions required for the TestFailover API call. */
 	static readonly TestFailover: string[] = ["elasticache:TestFailover"];
 	/** IAM actions required for the TestMigration API call. */
