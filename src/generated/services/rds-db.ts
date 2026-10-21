@@ -100,3 +100,18 @@ export class RDSDBResources {
 		};
 	}
 }
+
+/**
+ * Condition key constants and builders for rds-db.
+ */
+export class RDSDBConditions {
+	/** Condition key: aws:ResourceTag/${TagKey} (String) */
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+
+	/**
+	 * Generates a condition block for `aws:ResourceTag/${TagKey}`.
+	 */
+	static resourceTag(value: string): Record<string, Record<string, string>> {
+		return { StringEquals: { "aws:ResourceTag/${TagKey}": value } };
+	}
+}

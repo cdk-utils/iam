@@ -1144,7 +1144,10 @@ export class SecurityagentOperations {
 		"securityagent:UpdateCodeReview",
 	];
 	/** IAM actions required for the UpdateFinding API call. */
-	static readonly UpdateFinding: string[] = ["securityagent:UpdateFinding"];
+	static readonly UpdateFinding: string[] = [
+		"iam:PassRole",
+		"securityagent:UpdateFinding",
+	];
 	/** IAM actions required for the UpdateIntegratedResources API call. */
 	static readonly UpdateIntegratedResources: string[] = [
 		"securityagent:UpdateIntegratedResources",

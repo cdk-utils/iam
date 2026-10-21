@@ -690,6 +690,9 @@
     },
     {
       "Name": "UpdateIdentityStore",
+      "ActionConditionKeys": [
+        "identitystore:VpceAccessRequired"
+      ],
       "Annotations": {
         "Properties": {
           "IsList": false,
@@ -771,6 +774,12 @@
       "Name": "identitystore:UserId",
       "Types": [
         "String"
+      ]
+    },
+    {
+      "Name": "identitystore:VpceAccessRequired",
+      "Types": [
+        "Bool"
       ]
     }
   ],

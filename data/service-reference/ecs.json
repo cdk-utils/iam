@@ -2564,6 +2564,22 @@
   ],
   "Operations": [
     {
+      "Name": "AssociateGatewayWithCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateGatewayWithCluster",
+          "Service": "ecs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ecs",
+          "Method": "associate_gateway_with_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ContinueServiceDeployment",
       "AuthorizedActions": [
         {
@@ -2703,6 +2719,35 @@
         {
           "Name": "ecs",
           "Method": "create_express_gateway_service",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateGateway",
+          "Service": "ecs"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "ecs.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "ecs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ecs",
+          "Method": "create_gateway",
           "Package": "Boto3"
         }
       ]
@@ -2878,6 +2923,22 @@
         {
           "Name": "ecs",
           "Method": "delete_express_gateway_service",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteGateway",
+          "Service": "ecs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ecs",
+          "Method": "delete_gateway",
           "Package": "Boto3"
         }
       ]
@@ -3091,6 +3152,54 @@
       ]
     },
     {
+      "Name": "DescribeGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeGateway",
+          "Service": "ecs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ecs",
+          "Method": "describe_gateway",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeGatewayResources",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeGatewayResources",
+          "Service": "ecs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ecs",
+          "Method": "describe_gateway_resources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeGatewayRoute",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeGatewayRoute",
+          "Service": "ecs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ecs",
+          "Method": "describe_gateway_route",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DescribeServiceDeployments",
       "AuthorizedActions": [
         {
@@ -3182,6 +3291,22 @@
         {
           "Name": "ecs",
           "Method": "describe_tasks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateGatewayFromCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateGatewayFromCluster",
+          "Service": "ecs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ecs",
+          "Method": "disassociate_gateway_from_cluster",
           "Package": "Boto3"
         }
       ]
@@ -3342,6 +3467,54 @@
         {
           "Name": "ecs",
           "Method": "list_daemons",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListGatewayClusterAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListGatewayClusterAssociations",
+          "Service": "ecs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ecs",
+          "Method": "list_gateway_cluster_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListGatewayRoutes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListGatewayRoutes",
+          "Service": "ecs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ecs",
+          "Method": "list_gateway_routes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListGateways",
+      "AuthorizedActions": [
+        {
+          "Name": "ListGateways",
+          "Service": "ecs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ecs",
+          "Method": "list_gateways",
           "Package": "Boto3"
         }
       ]
@@ -3924,6 +4097,31 @@
         {
           "Name": "ecs",
           "Method": "update_express_gateway_service",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "ecs.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateGateway",
+          "Service": "ecs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ecs",
+          "Method": "update_gateway",
           "Package": "Boto3"
         }
       ]

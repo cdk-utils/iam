@@ -1239,6 +1239,154 @@ Defaults to "*".
 
 ---
 
+### RDSDBCapacityReservationArnComponents <a name="RDSDBCapacityReservationArnComponents" id="@cdk_utils/iam.rds.RDSDBCapacityReservationArnComponents"></a>
+
+Parsed components of a db-capacity-reservation ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.rds.RDSDBCapacityReservationArnComponents.Initializer"></a>
+
+```typescript
+import { rds } from '@cdk_utils/iam'
+
+const rDSDBCapacityReservationArnComponents: rds.RDSDBCapacityReservationArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.rds.RDSDBCapacityReservationArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.rds.RDSDBCapacityReservationArnComponents.property.dbCapacityReservationIdentifier">dbCapacityReservationIdentifier</a></code> | <code>string</code> | The DBCapacityReservationIdentifier component. |
+| <code><a href="#@cdk_utils/iam.rds.RDSDBCapacityReservationArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.rds.RDSDBCapacityReservationArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.rds.RDSDBCapacityReservationArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `dbCapacityReservationIdentifier`<sup>Required</sup> <a name="dbCapacityReservationIdentifier" id="@cdk_utils/iam.rds.RDSDBCapacityReservationArnComponents.property.dbCapacityReservationIdentifier"></a>
+
+```typescript
+public readonly dbCapacityReservationIdentifier: string;
+```
+
+- *Type:* string
+
+The DBCapacityReservationIdentifier component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.rds.RDSDBCapacityReservationArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.rds.RDSDBCapacityReservationArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### RDSDBCapacityReservationArnProps <a name="RDSDBCapacityReservationArnProps" id="@cdk_utils/iam.rds.RDSDBCapacityReservationArnProps"></a>
+
+Properties for building a db-capacity-reservation ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.rds.RDSDBCapacityReservationArnProps.Initializer"></a>
+
+```typescript
+import { rds } from '@cdk_utils/iam'
+
+const rDSDBCapacityReservationArnProps: rds.RDSDBCapacityReservationArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.rds.RDSDBCapacityReservationArnProps.property.dbCapacityReservationIdentifier">dbCapacityReservationIdentifier</a></code> | <code>string</code> | The DBCapacityReservationIdentifier component of the ARN. |
+| <code><a href="#@cdk_utils/iam.rds.RDSDBCapacityReservationArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.rds.RDSDBCapacityReservationArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.rds.RDSDBCapacityReservationArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `dbCapacityReservationIdentifier`<sup>Required</sup> <a name="dbCapacityReservationIdentifier" id="@cdk_utils/iam.rds.RDSDBCapacityReservationArnProps.property.dbCapacityReservationIdentifier"></a>
+
+```typescript
+public readonly dbCapacityReservationIdentifier: string;
+```
+
+- *Type:* string
+
+The DBCapacityReservationIdentifier component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.rds.RDSDBCapacityReservationArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.rds.RDSDBCapacityReservationArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.rds.RDSDBCapacityReservationArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### RDSDeploymentArnComponents <a name="RDSDeploymentArnComponents" id="@cdk_utils/iam.rds.RDSDeploymentArnComponents"></a>
 
 Parsed components of a deployment ARN.
@@ -3643,6 +3791,7 @@ new rds.RDSActions()
 | <code><a href="#@cdk_utils/iam.rds.RDSActions.property.ApplyPendingMaintenanceAction">ApplyPendingMaintenanceAction</a></code> | <code>string</code> | [Write] rds:ApplyPendingMaintenanceAction. |
 | <code><a href="#@cdk_utils/iam.rds.RDSActions.property.AuthorizeDBSecurityGroupIngress">AuthorizeDBSecurityGroupIngress</a></code> | <code>string</code> | [PermissionManagement] rds:AuthorizeDBSecurityGroupIngress. |
 | <code><a href="#@cdk_utils/iam.rds.RDSActions.property.BacktrackDBCluster">BacktrackDBCluster</a></code> | <code>string</code> | [Write] rds:BacktrackDBCluster. |
+| <code><a href="#@cdk_utils/iam.rds.RDSActions.property.CancelDBCapacityReservation">CancelDBCapacityReservation</a></code> | <code>string</code> | [Write] rds:CancelDBCapacityReservation. |
 | <code><a href="#@cdk_utils/iam.rds.RDSActions.property.CancelExportTask">CancelExportTask</a></code> | <code>string</code> | [Write] rds:CancelExportTask. |
 | <code><a href="#@cdk_utils/iam.rds.RDSActions.property.CopyCustomDBEngineVersion">CopyCustomDBEngineVersion</a></code> | <code>string</code> | [Write] rds:CopyCustomDBEngineVersion. |
 | <code><a href="#@cdk_utils/iam.rds.RDSActions.property.CopyDBClusterParameterGroup">CopyDBClusterParameterGroup</a></code> | <code>string</code> | [Write] rds:CopyDBClusterParameterGroup. |
@@ -3652,6 +3801,7 @@ new rds.RDSActions()
 | <code><a href="#@cdk_utils/iam.rds.RDSActions.property.CopyOptionGroup">CopyOptionGroup</a></code> | <code>string</code> | [Write] rds:CopyOptionGroup. |
 | <code><a href="#@cdk_utils/iam.rds.RDSActions.property.CreateBlueGreenDeployment">CreateBlueGreenDeployment</a></code> | <code>string</code> | [Write] rds:CreateBlueGreenDeployment. |
 | <code><a href="#@cdk_utils/iam.rds.RDSActions.property.CreateCustomDBEngineVersion">CreateCustomDBEngineVersion</a></code> | <code>string</code> | [Write] rds:CreateCustomDBEngineVersion. |
+| <code><a href="#@cdk_utils/iam.rds.RDSActions.property.CreateDBCapacityReservation">CreateDBCapacityReservation</a></code> | <code>string</code> | [Write] rds:CreateDBCapacityReservation. |
 | <code><a href="#@cdk_utils/iam.rds.RDSActions.property.CreateDBCluster">CreateDBCluster</a></code> | <code>string</code> | [Write] rds:CreateDBCluster. |
 | <code><a href="#@cdk_utils/iam.rds.RDSActions.property.CreateDBClusterEndpoint">CreateDBClusterEndpoint</a></code> | <code>string</code> | [Write] rds:CreateDBClusterEndpoint. |
 | <code><a href="#@cdk_utils/iam.rds.RDSActions.property.CreateDBClusterParameterGroup">CreateDBClusterParameterGroup</a></code> | <code>string</code> | [Write] rds:CreateDBClusterParameterGroup. |
@@ -3696,6 +3846,7 @@ new rds.RDSActions()
 | <code><a href="#@cdk_utils/iam.rds.RDSActions.property.DescribeAccountAttributes">DescribeAccountAttributes</a></code> | <code>string</code> | [List] rds:DescribeAccountAttributes. |
 | <code><a href="#@cdk_utils/iam.rds.RDSActions.property.DescribeBlueGreenDeployments">DescribeBlueGreenDeployments</a></code> | <code>string</code> | [List] rds:DescribeBlueGreenDeployments. |
 | <code><a href="#@cdk_utils/iam.rds.RDSActions.property.DescribeCertificates">DescribeCertificates</a></code> | <code>string</code> | [List] rds:DescribeCertificates. |
+| <code><a href="#@cdk_utils/iam.rds.RDSActions.property.DescribeDBCapacityReservations">DescribeDBCapacityReservations</a></code> | <code>string</code> | [List] rds:DescribeDBCapacityReservations. |
 | <code><a href="#@cdk_utils/iam.rds.RDSActions.property.DescribeDBClusterAutomatedBackups">DescribeDBClusterAutomatedBackups</a></code> | <code>string</code> | [List] rds:DescribeDBClusterAutomatedBackups. |
 | <code><a href="#@cdk_utils/iam.rds.RDSActions.property.DescribeDBClusterBacktracks">DescribeDBClusterBacktracks</a></code> | <code>string</code> | [List] rds:DescribeDBClusterBacktracks. |
 | <code><a href="#@cdk_utils/iam.rds.RDSActions.property.DescribeDBClusterEndpoints">DescribeDBClusterEndpoints</a></code> | <code>string</code> | [List] rds:DescribeDBClusterEndpoints. |
@@ -3752,6 +3903,7 @@ new rds.RDSActions()
 | <code><a href="#@cdk_utils/iam.rds.RDSActions.property.ModifyCertificates">ModifyCertificates</a></code> | <code>string</code> | [Write] rds:ModifyCertificates. |
 | <code><a href="#@cdk_utils/iam.rds.RDSActions.property.ModifyCurrentDBClusterCapacity">ModifyCurrentDBClusterCapacity</a></code> | <code>string</code> | [Write] rds:ModifyCurrentDBClusterCapacity. |
 | <code><a href="#@cdk_utils/iam.rds.RDSActions.property.ModifyCustomDBEngineVersion">ModifyCustomDBEngineVersion</a></code> | <code>string</code> | [Write] rds:ModifyCustomDBEngineVersion. |
+| <code><a href="#@cdk_utils/iam.rds.RDSActions.property.ModifyDBCapacityReservation">ModifyDBCapacityReservation</a></code> | <code>string</code> | [Write] rds:ModifyDBCapacityReservation. |
 | <code><a href="#@cdk_utils/iam.rds.RDSActions.property.ModifyDBCluster">ModifyDBCluster</a></code> | <code>string</code> | [Write] rds:ModifyDBCluster. |
 | <code><a href="#@cdk_utils/iam.rds.RDSActions.property.ModifyDBClusterEndpoint">ModifyDBClusterEndpoint</a></code> | <code>string</code> | [Write] rds:ModifyDBClusterEndpoint. |
 | <code><a href="#@cdk_utils/iam.rds.RDSActions.property.ModifyDBClusterParameterGroup">ModifyDBClusterParameterGroup</a></code> | <code>string</code> | [Write] rds:ModifyDBClusterParameterGroup. |
@@ -3953,6 +4105,18 @@ public readonly BacktrackDBCluster: string;
 
 ---
 
+##### `CancelDBCapacityReservation`<sup>Required</sup> <a name="CancelDBCapacityReservation" id="@cdk_utils/iam.rds.RDSActions.property.CancelDBCapacityReservation"></a>
+
+```typescript
+public readonly CancelDBCapacityReservation: string;
+```
+
+- *Type:* string
+
+[Write] rds:CancelDBCapacityReservation.
+
+---
+
 ##### `CancelExportTask`<sup>Required</sup> <a name="CancelExportTask" id="@cdk_utils/iam.rds.RDSActions.property.CancelExportTask"></a>
 
 ```typescript
@@ -4058,6 +4222,18 @@ public readonly CreateCustomDBEngineVersion: string;
 - *Type:* string
 
 [Write] rds:CreateCustomDBEngineVersion.
+
+---
+
+##### `CreateDBCapacityReservation`<sup>Required</sup> <a name="CreateDBCapacityReservation" id="@cdk_utils/iam.rds.RDSActions.property.CreateDBCapacityReservation"></a>
+
+```typescript
+public readonly CreateDBCapacityReservation: string;
+```
+
+- *Type:* string
+
+[Write] rds:CreateDBCapacityReservation.
 
 ---
 
@@ -4586,6 +4762,18 @@ public readonly DescribeCertificates: string;
 - *Type:* string
 
 [List] rds:DescribeCertificates.
+
+---
+
+##### `DescribeDBCapacityReservations`<sup>Required</sup> <a name="DescribeDBCapacityReservations" id="@cdk_utils/iam.rds.RDSActions.property.DescribeDBCapacityReservations"></a>
+
+```typescript
+public readonly DescribeDBCapacityReservations: string;
+```
+
+- *Type:* string
+
+[List] rds:DescribeDBCapacityReservations.
 
 ---
 
@@ -5258,6 +5446,18 @@ public readonly ModifyCustomDBEngineVersion: string;
 - *Type:* string
 
 [Write] rds:ModifyCustomDBEngineVersion.
+
+---
+
+##### `ModifyDBCapacityReservation`<sup>Required</sup> <a name="ModifyDBCapacityReservation" id="@cdk_utils/iam.rds.RDSActions.property.ModifyDBCapacityReservation"></a>
+
+```typescript
+public readonly ModifyDBCapacityReservation: string;
+```
+
+- *Type:* string
+
+[Write] rds:ModifyDBCapacityReservation.
 
 ---
 
@@ -6465,6 +6665,7 @@ Generates a condition block for `rds:Vpc`.
 | <code><a href="#@cdk_utils/iam.rds.RDSConditions.property.CopyOptionGroupConditionKeys">CopyOptionGroupConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CopyOptionGroup action. |
 | <code><a href="#@cdk_utils/iam.rds.RDSConditions.property.CreateBlueGreenDeploymentConditionKeys">CreateBlueGreenDeploymentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateBlueGreenDeployment action. |
 | <code><a href="#@cdk_utils/iam.rds.RDSConditions.property.CreateCustomDBEngineVersionConditionKeys">CreateCustomDBEngineVersionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateCustomDBEngineVersion action. |
+| <code><a href="#@cdk_utils/iam.rds.RDSConditions.property.CreateDBCapacityReservationConditionKeys">CreateDBCapacityReservationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateDBCapacityReservation action. |
 | <code><a href="#@cdk_utils/iam.rds.RDSConditions.property.CreateDBClusterConditionKeys">CreateDBClusterConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateDBCluster action. |
 | <code><a href="#@cdk_utils/iam.rds.RDSConditions.property.CreateDBClusterEndpointConditionKeys">CreateDBClusterEndpointConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateDBClusterEndpoint action. |
 | <code><a href="#@cdk_utils/iam.rds.RDSConditions.property.CreateDBClusterParameterGroupConditionKeys">CreateDBClusterParameterGroupConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateDBClusterParameterGroup action. |
@@ -6712,6 +6913,18 @@ public readonly CreateCustomDBEngineVersionConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the CreateCustomDBEngineVersion action.
+
+---
+
+##### `CreateDBCapacityReservationConditionKeys`<sup>Required</sup> <a name="CreateDBCapacityReservationConditionKeys" id="@cdk_utils/iam.rds.RDSConditions.property.CreateDBCapacityReservationConditionKeys"></a>
+
+```typescript
+public readonly CreateDBCapacityReservationConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateDBCapacityReservation action.
 
 ---
 
@@ -7406,6 +7619,7 @@ new rds.RDSOperations()
 | <code><a href="#@cdk_utils/iam.rds.RDSOperations.property.ApplyPendingMaintenanceAction">ApplyPendingMaintenanceAction</a></code> | <code>string[]</code> | IAM actions required for the ApplyPendingMaintenanceAction API call. |
 | <code><a href="#@cdk_utils/iam.rds.RDSOperations.property.AuthorizeDBSecurityGroupIngress">AuthorizeDBSecurityGroupIngress</a></code> | <code>string[]</code> | IAM actions required for the AuthorizeDBSecurityGroupIngress API call. |
 | <code><a href="#@cdk_utils/iam.rds.RDSOperations.property.BacktrackDBCluster">BacktrackDBCluster</a></code> | <code>string[]</code> | IAM actions required for the BacktrackDBCluster API call. |
+| <code><a href="#@cdk_utils/iam.rds.RDSOperations.property.CancelDBCapacityReservation">CancelDBCapacityReservation</a></code> | <code>string[]</code> | IAM actions required for the CancelDBCapacityReservation API call. |
 | <code><a href="#@cdk_utils/iam.rds.RDSOperations.property.CancelExportTask">CancelExportTask</a></code> | <code>string[]</code> | IAM actions required for the CancelExportTask API call. |
 | <code><a href="#@cdk_utils/iam.rds.RDSOperations.property.CopyDBClusterParameterGroup">CopyDBClusterParameterGroup</a></code> | <code>string[]</code> | IAM actions required for the CopyDBClusterParameterGroup API call. |
 | <code><a href="#@cdk_utils/iam.rds.RDSOperations.property.CopyDBClusterSnapshot">CopyDBClusterSnapshot</a></code> | <code>string[]</code> | IAM actions required for the CopyDBClusterSnapshot API call. |
@@ -7414,6 +7628,7 @@ new rds.RDSOperations()
 | <code><a href="#@cdk_utils/iam.rds.RDSOperations.property.CopyOptionGroup">CopyOptionGroup</a></code> | <code>string[]</code> | IAM actions required for the CopyOptionGroup API call. |
 | <code><a href="#@cdk_utils/iam.rds.RDSOperations.property.CreateBlueGreenDeployment">CreateBlueGreenDeployment</a></code> | <code>string[]</code> | IAM actions required for the CreateBlueGreenDeployment API call. |
 | <code><a href="#@cdk_utils/iam.rds.RDSOperations.property.CreateCustomDBEngineVersion">CreateCustomDBEngineVersion</a></code> | <code>string[]</code> | IAM actions required for the CreateCustomDBEngineVersion API call. |
+| <code><a href="#@cdk_utils/iam.rds.RDSOperations.property.CreateDBCapacityReservation">CreateDBCapacityReservation</a></code> | <code>string[]</code> | IAM actions required for the CreateDBCapacityReservation API call. |
 | <code><a href="#@cdk_utils/iam.rds.RDSOperations.property.CreateDBCluster">CreateDBCluster</a></code> | <code>string[]</code> | IAM actions required for the CreateDBCluster API call. |
 | <code><a href="#@cdk_utils/iam.rds.RDSOperations.property.CreateDBClusterEndpoint">CreateDBClusterEndpoint</a></code> | <code>string[]</code> | IAM actions required for the CreateDBClusterEndpoint API call. |
 | <code><a href="#@cdk_utils/iam.rds.RDSOperations.property.CreateDBClusterParameterGroup">CreateDBClusterParameterGroup</a></code> | <code>string[]</code> | IAM actions required for the CreateDBClusterParameterGroup API call. |
@@ -7457,6 +7672,7 @@ new rds.RDSOperations()
 | <code><a href="#@cdk_utils/iam.rds.RDSOperations.property.DescribeAccountAttributes">DescribeAccountAttributes</a></code> | <code>string[]</code> | IAM actions required for the DescribeAccountAttributes API call. |
 | <code><a href="#@cdk_utils/iam.rds.RDSOperations.property.DescribeBlueGreenDeployments">DescribeBlueGreenDeployments</a></code> | <code>string[]</code> | IAM actions required for the DescribeBlueGreenDeployments API call. |
 | <code><a href="#@cdk_utils/iam.rds.RDSOperations.property.DescribeCertificates">DescribeCertificates</a></code> | <code>string[]</code> | IAM actions required for the DescribeCertificates API call. |
+| <code><a href="#@cdk_utils/iam.rds.RDSOperations.property.DescribeDBCapacityReservations">DescribeDBCapacityReservations</a></code> | <code>string[]</code> | IAM actions required for the DescribeDBCapacityReservations API call. |
 | <code><a href="#@cdk_utils/iam.rds.RDSOperations.property.DescribeDBClusterAutomatedBackups">DescribeDBClusterAutomatedBackups</a></code> | <code>string[]</code> | IAM actions required for the DescribeDBClusterAutomatedBackups API call. |
 | <code><a href="#@cdk_utils/iam.rds.RDSOperations.property.DescribeDBClusterBacktracks">DescribeDBClusterBacktracks</a></code> | <code>string[]</code> | IAM actions required for the DescribeDBClusterBacktracks API call. |
 | <code><a href="#@cdk_utils/iam.rds.RDSOperations.property.DescribeDBClusterEndpoints">DescribeDBClusterEndpoints</a></code> | <code>string[]</code> | IAM actions required for the DescribeDBClusterEndpoints API call. |
@@ -7511,6 +7727,7 @@ new rds.RDSOperations()
 | <code><a href="#@cdk_utils/iam.rds.RDSOperations.property.ModifyCertificates">ModifyCertificates</a></code> | <code>string[]</code> | IAM actions required for the ModifyCertificates API call. |
 | <code><a href="#@cdk_utils/iam.rds.RDSOperations.property.ModifyCurrentDBClusterCapacity">ModifyCurrentDBClusterCapacity</a></code> | <code>string[]</code> | IAM actions required for the ModifyCurrentDBClusterCapacity API call. |
 | <code><a href="#@cdk_utils/iam.rds.RDSOperations.property.ModifyCustomDBEngineVersion">ModifyCustomDBEngineVersion</a></code> | <code>string[]</code> | IAM actions required for the ModifyCustomDBEngineVersion API call. |
+| <code><a href="#@cdk_utils/iam.rds.RDSOperations.property.ModifyDBCapacityReservation">ModifyDBCapacityReservation</a></code> | <code>string[]</code> | IAM actions required for the ModifyDBCapacityReservation API call. |
 | <code><a href="#@cdk_utils/iam.rds.RDSOperations.property.ModifyDBCluster">ModifyDBCluster</a></code> | <code>string[]</code> | IAM actions required for the ModifyDBCluster API call. |
 | <code><a href="#@cdk_utils/iam.rds.RDSOperations.property.ModifyDBClusterEndpoint">ModifyDBClusterEndpoint</a></code> | <code>string[]</code> | IAM actions required for the ModifyDBClusterEndpoint API call. |
 | <code><a href="#@cdk_utils/iam.rds.RDSOperations.property.ModifyDBClusterParameterGroup">ModifyDBClusterParameterGroup</a></code> | <code>string[]</code> | IAM actions required for the ModifyDBClusterParameterGroup API call. |
@@ -7650,6 +7867,18 @@ IAM actions required for the BacktrackDBCluster API call.
 
 ---
 
+##### `CancelDBCapacityReservation`<sup>Required</sup> <a name="CancelDBCapacityReservation" id="@cdk_utils/iam.rds.RDSOperations.property.CancelDBCapacityReservation"></a>
+
+```typescript
+public readonly CancelDBCapacityReservation: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CancelDBCapacityReservation API call.
+
+---
+
 ##### `CancelExportTask`<sup>Required</sup> <a name="CancelExportTask" id="@cdk_utils/iam.rds.RDSOperations.property.CancelExportTask"></a>
 
 ```typescript
@@ -7743,6 +7972,18 @@ public readonly CreateCustomDBEngineVersion: string[];
 - *Type:* string[]
 
 IAM actions required for the CreateCustomDBEngineVersion API call.
+
+---
+
+##### `CreateDBCapacityReservation`<sup>Required</sup> <a name="CreateDBCapacityReservation" id="@cdk_utils/iam.rds.RDSOperations.property.CreateDBCapacityReservation"></a>
+
+```typescript
+public readonly CreateDBCapacityReservation: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateDBCapacityReservation API call.
 
 ---
 
@@ -8259,6 +8500,18 @@ public readonly DescribeCertificates: string[];
 - *Type:* string[]
 
 IAM actions required for the DescribeCertificates API call.
+
+---
+
+##### `DescribeDBCapacityReservations`<sup>Required</sup> <a name="DescribeDBCapacityReservations" id="@cdk_utils/iam.rds.RDSOperations.property.DescribeDBCapacityReservations"></a>
+
+```typescript
+public readonly DescribeDBCapacityReservations: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeDBCapacityReservations API call.
 
 ---
 
@@ -8907,6 +9160,18 @@ public readonly ModifyCustomDBEngineVersion: string[];
 - *Type:* string[]
 
 IAM actions required for the ModifyCustomDBEngineVersion API call.
+
+---
+
+##### `ModifyDBCapacityReservation`<sup>Required</sup> <a name="ModifyDBCapacityReservation" id="@cdk_utils/iam.rds.RDSOperations.property.ModifyDBCapacityReservation"></a>
+
+```typescript
+public readonly ModifyDBCapacityReservation: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ModifyDBCapacityReservation API call.
 
 ---
 
@@ -9564,6 +9829,7 @@ new rds.RDSResources()
 | <code><a href="#@cdk_utils/iam.rds.RDSResources.clusterPg">clusterPg</a></code> | Builds an ARN for the cluster-pg resource. |
 | <code><a href="#@cdk_utils/iam.rds.RDSResources.clusterSnapshot">clusterSnapshot</a></code> | Builds an ARN for the cluster-snapshot resource. |
 | <code><a href="#@cdk_utils/iam.rds.RDSResources.db">db</a></code> | Builds an ARN for the db resource. |
+| <code><a href="#@cdk_utils/iam.rds.RDSResources.dbCapacityReservation">dbCapacityReservation</a></code> | Builds an ARN for the db-capacity-reservation resource. |
 | <code><a href="#@cdk_utils/iam.rds.RDSResources.deployment">deployment</a></code> | Builds an ARN for the deployment resource. |
 | <code><a href="#@cdk_utils/iam.rds.RDSResources.es">es</a></code> | Builds an ARN for the es resource. |
 | <code><a href="#@cdk_utils/iam.rds.RDSResources.globalCluster">globalCluster</a></code> | Builds an ARN for the global-cluster resource. |
@@ -9576,6 +9842,7 @@ new rds.RDSResources()
 | <code><a href="#@cdk_utils/iam.rds.RDSResources.isValidClusterPgArn">isValidClusterPgArn</a></code> | Validates whether a string is a valid ARN for the cluster-pg resource. |
 | <code><a href="#@cdk_utils/iam.rds.RDSResources.isValidClusterSnapshotArn">isValidClusterSnapshotArn</a></code> | Validates whether a string is a valid ARN for the cluster-snapshot resource. |
 | <code><a href="#@cdk_utils/iam.rds.RDSResources.isValidDBArn">isValidDBArn</a></code> | Validates whether a string is a valid ARN for the db resource. |
+| <code><a href="#@cdk_utils/iam.rds.RDSResources.isValidDBCapacityReservationArn">isValidDBCapacityReservationArn</a></code> | Validates whether a string is a valid ARN for the db-capacity-reservation resource. |
 | <code><a href="#@cdk_utils/iam.rds.RDSResources.isValidDeploymentArn">isValidDeploymentArn</a></code> | Validates whether a string is a valid ARN for the deployment resource. |
 | <code><a href="#@cdk_utils/iam.rds.RDSResources.isValidEsArn">isValidEsArn</a></code> | Validates whether a string is a valid ARN for the es resource. |
 | <code><a href="#@cdk_utils/iam.rds.RDSResources.isValidGlobalClusterArn">isValidGlobalClusterArn</a></code> | Validates whether a string is a valid ARN for the global-cluster resource. |
@@ -9601,6 +9868,7 @@ new rds.RDSResources()
 | <code><a href="#@cdk_utils/iam.rds.RDSResources.parseClusterPgArn">parseClusterPgArn</a></code> | Parses a cluster-pg ARN into its components. |
 | <code><a href="#@cdk_utils/iam.rds.RDSResources.parseClusterSnapshotArn">parseClusterSnapshotArn</a></code> | Parses a cluster-snapshot ARN into its components. |
 | <code><a href="#@cdk_utils/iam.rds.RDSResources.parseDBArn">parseDBArn</a></code> | Parses a db ARN into its components. |
+| <code><a href="#@cdk_utils/iam.rds.RDSResources.parseDBCapacityReservationArn">parseDBCapacityReservationArn</a></code> | Parses a db-capacity-reservation ARN into its components. |
 | <code><a href="#@cdk_utils/iam.rds.RDSResources.parseDeploymentArn">parseDeploymentArn</a></code> | Parses a deployment ARN into its components. |
 | <code><a href="#@cdk_utils/iam.rds.RDSResources.parseEsArn">parseEsArn</a></code> | Parses a es ARN into its components. |
 | <code><a href="#@cdk_utils/iam.rds.RDSResources.parseGlobalClusterArn">parseGlobalClusterArn</a></code> | Parses a global-cluster ARN into its components. |
@@ -9756,6 +10024,22 @@ Builds an ARN for the db resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.rds.RDSResources.db.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.rds.RDSDBArnProps">RDSDBArnProps</a>
+
+---
+
+##### `dbCapacityReservation` <a name="dbCapacityReservation" id="@cdk_utils/iam.rds.RDSResources.dbCapacityReservation"></a>
+
+```typescript
+import { rds } from '@cdk_utils/iam'
+
+rds.RDSResources.dbCapacityReservation(props: RDSDBCapacityReservationArnProps)
+```
+
+Builds an ARN for the db-capacity-reservation resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.rds.RDSResources.dbCapacityReservation.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.rds.RDSDBCapacityReservationArnProps">RDSDBCapacityReservationArnProps</a>
 
 ---
 
@@ -9946,6 +10230,22 @@ rds.RDSResources.isValidDBArn(arn: string)
 Validates whether a string is a valid ARN for the db resource.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.rds.RDSResources.isValidDBArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidDBCapacityReservationArn` <a name="isValidDBCapacityReservationArn" id="@cdk_utils/iam.rds.RDSResources.isValidDBCapacityReservationArn"></a>
+
+```typescript
+import { rds } from '@cdk_utils/iam'
+
+rds.RDSResources.isValidDBCapacityReservationArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the db-capacity-reservation resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.rds.RDSResources.isValidDBCapacityReservationArn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -10346,6 +10646,22 @@ rds.RDSResources.parseDBArn(arn: string)
 Parses a db ARN into its components.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.rds.RDSResources.parseDBArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseDBCapacityReservationArn` <a name="parseDBCapacityReservationArn" id="@cdk_utils/iam.rds.RDSResources.parseDBCapacityReservationArn"></a>
+
+```typescript
+import { rds } from '@cdk_utils/iam'
+
+rds.RDSResources.parseDBCapacityReservationArn(arn: string)
+```
+
+Parses a db-capacity-reservation ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.rds.RDSResources.parseDBCapacityReservationArn.parameter.arn"></a>
 
 - *Type:* string
 

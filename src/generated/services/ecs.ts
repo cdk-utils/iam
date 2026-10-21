@@ -1353,6 +1353,10 @@ export class ECSResources {
  * API operation to required IAM actions mapping for ecs.
  */
 export class ECSOperations {
+	/** IAM actions required for the AssociateGatewayWithCluster API call. */
+	static readonly AssociateGatewayWithCluster: string[] = [
+		"ecs:AssociateGatewayWithCluster",
+	];
 	/** IAM actions required for the ContinueServiceDeployment API call. */
 	static readonly ContinueServiceDeployment: string[] = [
 		"ecs:ContinueServiceDeployment",
@@ -1383,6 +1387,12 @@ export class ECSOperations {
 		"ecs:CreateGateway",
 		"iam:PassRole",
 		"ecs:RegisterTaskDefinition",
+		"ecs:TagResource",
+	];
+	/** IAM actions required for the CreateGateway API call. */
+	static readonly CreateGateway: string[] = [
+		"ecs:CreateGateway",
+		"iam:PassRole",
 		"ecs:TagResource",
 	];
 	/** IAM actions required for the CreateService API call. */
@@ -1418,6 +1428,8 @@ export class ECSOperations {
 	static readonly DeleteExpressGatewayService: string[] = [
 		"ecs:DeleteExpressGatewayService",
 	];
+	/** IAM actions required for the DeleteGateway API call. */
+	static readonly DeleteGateway: string[] = ["ecs:DeleteGateway"];
 	/** IAM actions required for the DeleteService API call. */
 	static readonly DeleteService: string[] = ["ecs:DeleteService"];
 	/** IAM actions required for the DeleteTaskDefinitions API call. */
@@ -1462,6 +1474,14 @@ export class ECSOperations {
 	static readonly DescribeExpressGatewayService: string[] = [
 		"ecs:DescribeExpressGatewayService",
 	];
+	/** IAM actions required for the DescribeGateway API call. */
+	static readonly DescribeGateway: string[] = ["ecs:DescribeGateway"];
+	/** IAM actions required for the DescribeGatewayResources API call. */
+	static readonly DescribeGatewayResources: string[] = [
+		"ecs:DescribeGatewayResources",
+	];
+	/** IAM actions required for the DescribeGatewayRoute API call. */
+	static readonly DescribeGatewayRoute: string[] = ["ecs:DescribeGatewayRoute"];
 	/** IAM actions required for the DescribeServiceDeployments API call. */
 	static readonly DescribeServiceDeployments: string[] = [
 		"ecs:DescribeServiceDeployments",
@@ -1480,6 +1500,10 @@ export class ECSOperations {
 	static readonly DescribeTaskSets: string[] = ["ecs:DescribeTaskSets"];
 	/** IAM actions required for the DescribeTasks API call. */
 	static readonly DescribeTasks: string[] = ["ecs:DescribeTasks"];
+	/** IAM actions required for the DisassociateGatewayFromCluster API call. */
+	static readonly DisassociateGatewayFromCluster: string[] = [
+		"ecs:DisassociateGatewayFromCluster",
+	];
 	/** IAM actions required for the DiscoverPollEndpoint API call. */
 	static readonly DiscoverPollEndpoint: string[] = ["ecs:DiscoverPollEndpoint"];
 	/** IAM actions required for the ExecuteCommand API call. */
@@ -1506,6 +1530,14 @@ export class ECSOperations {
 	];
 	/** IAM actions required for the ListDaemons API call. */
 	static readonly ListDaemons: string[] = ["ecs:ListDaemons"];
+	/** IAM actions required for the ListGatewayClusterAssociations API call. */
+	static readonly ListGatewayClusterAssociations: string[] = [
+		"ecs:ListGatewayClusterAssociations",
+	];
+	/** IAM actions required for the ListGatewayRoutes API call. */
+	static readonly ListGatewayRoutes: string[] = ["ecs:ListGatewayRoutes"];
+	/** IAM actions required for the ListGateways API call. */
+	static readonly ListGateways: string[] = ["ecs:ListGateways"];
 	/** IAM actions required for the ListServiceDeployments API call. */
 	static readonly ListServiceDeployments: string[] = [
 		"ecs:ListServiceDeployments",
@@ -1616,6 +1648,11 @@ export class ECSOperations {
 		"iam:PassRole",
 		"ecs:RegisterTaskDefinition",
 		"ecs:UpdateExpressGatewayService",
+	];
+	/** IAM actions required for the UpdateGateway API call. */
+	static readonly UpdateGateway: string[] = [
+		"iam:PassRole",
+		"ecs:UpdateGateway",
 	];
 	/** IAM actions required for the UpdateService API call. */
 	static readonly UpdateService: string[] = [

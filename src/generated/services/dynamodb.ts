@@ -86,6 +86,9 @@ export class DynamoDBActions {
 	/** [Write] dynamodb:DisableKinesisStreamingDestination */
 	static readonly DisableKinesisStreamingDestination =
 		"dynamodb:DisableKinesisStreamingDestination";
+	/** [Write] dynamodb:DisassociateTableReplica */
+	static readonly DisassociateTableReplica =
+		"dynamodb:DisassociateTableReplica";
 	/** [Write] dynamodb:EnableKinesisStreamingDestination */
 	static readonly EnableKinesisStreamingDestination =
 		"dynamodb:EnableKinesisStreamingDestination";
@@ -239,6 +242,7 @@ export class DynamoDBActions {
 		DynamoDBActions.DeleteTable,
 		DynamoDBActions.DeleteTableReplica,
 		DynamoDBActions.DisableKinesisStreamingDestination,
+		DynamoDBActions.DisassociateTableReplica,
 		DynamoDBActions.EnableKinesisStreamingDestination,
 		DynamoDBActions.ExportTableToPointInTime,
 		DynamoDBActions.ImportTable,

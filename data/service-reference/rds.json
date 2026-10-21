@@ -103,6 +103,9 @@
           "Name": "db"
         },
         {
+          "Name": "db-capacity-reservation"
+        },
+        {
           "Name": "deployment"
         },
         {
@@ -217,6 +220,26 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CancelDBCapacityReservation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "db-capacity-reservation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -456,6 +479,31 @@
       }
     },
     {
+      "Name": "CreateDBCapacityReservation",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "rds:req-tag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "db-capacity-reservation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "CreateDBCluster",
       "ActionConditionKeys": [
         "aws:RequestTag/${TagKey}",
@@ -610,6 +658,9 @@
           "Name": "db"
         },
         {
+          "Name": "db-capacity-reservation"
+        },
+        {
           "Name": "og"
         },
         {
@@ -649,6 +700,9 @@
         },
         {
           "Name": "db"
+        },
+        {
+          "Name": "db-capacity-reservation"
         },
         {
           "Name": "og"
@@ -1515,6 +1569,26 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeDBCapacityReservations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "db-capacity-reservation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -2556,6 +2630,9 @@
           "Name": "db"
         },
         {
+          "Name": "db-capacity-reservation"
+        },
+        {
           "Name": "es"
         },
         {
@@ -2682,6 +2759,26 @@
       }
     },
     {
+      "Name": "ModifyDBCapacityReservation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "db-capacity-reservation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ModifyDBCluster",
       "ActionConditionKeys": [
         "rds:DatabaseClass",
@@ -2792,6 +2889,9 @@
       "Resources": [
         {
           "Name": "db"
+        },
+        {
+          "Name": "db-capacity-reservation"
         },
         {
           "Name": "og"
@@ -3383,6 +3483,9 @@
           "Name": "db"
         },
         {
+          "Name": "db-capacity-reservation"
+        },
+        {
           "Name": "deployment"
         },
         {
@@ -3623,6 +3726,9 @@
           "Name": "db"
         },
         {
+          "Name": "db-capacity-reservation"
+        },
+        {
           "Name": "og"
         },
         {
@@ -3660,6 +3766,9 @@
       "Resources": [
         {
           "Name": "db"
+        },
+        {
+          "Name": "db-capacity-reservation"
         },
         {
           "Name": "og"
@@ -3703,6 +3812,9 @@
         },
         {
           "Name": "db"
+        },
+        {
+          "Name": "db-capacity-reservation"
         },
         {
           "Name": "og"
@@ -3795,6 +3907,9 @@
       "Resources": [
         {
           "Name": "db"
+        },
+        {
+          "Name": "db-capacity-reservation"
         }
       ],
       "SupportedBy": {
@@ -4359,6 +4474,22 @@
       ]
     },
     {
+      "Name": "CancelDBCapacityReservation",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelDBCapacityReservation",
+          "Service": "rds"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rds",
+          "Method": "cancel_db_capacity_reservation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "CancelExportTask",
       "AuthorizedActions": [
         {
@@ -4564,6 +4695,26 @@
         {
           "Name": "rds",
           "Method": "create_custom_db_engine_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDBCapacityReservation",
+      "AuthorizedActions": [
+        {
+          "Name": "AddTagsToResource",
+          "Service": "rds"
+        },
+        {
+          "Name": "CreateDBCapacityReservation",
+          "Service": "rds"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rds",
+          "Method": "create_db_capacity_reservation",
           "Package": "Boto3"
         }
       ]
@@ -5604,6 +5755,22 @@
         {
           "Name": "rds",
           "Method": "describe_certificates",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDBCapacityReservations",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDBCapacityReservations",
+          "Service": "rds"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rds",
+          "Method": "describe_db_capacity_reservations",
           "Package": "Boto3"
         }
       ]
@@ -6667,6 +6834,22 @@
         {
           "Name": "rds",
           "Method": "modify_custom_db_engine_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ModifyDBCapacityReservation",
+      "AuthorizedActions": [
+        {
+          "Name": "ModifyDBCapacityReservation",
+          "Service": "rds"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rds",
+          "Method": "modify_db_capacity_reservation",
           "Package": "Boto3"
         }
       ]
@@ -8008,6 +8191,15 @@
         "rds:StorageSize",
         "rds:Vpc",
         "rds:db-tag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "db-capacity-reservation",
+      "ARNFormats": [
+        "arn:${Partition}:rds:${Region}:${Account}:db-capacity-reservation:${DBCapacityReservationIdentifier}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
       ]
     },
     {

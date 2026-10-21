@@ -4564,6 +4564,7 @@ new elasticache.ElastiCacheOperations()
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheOperations.property.ModifyServerlessCache">ModifyServerlessCache</a></code> | <code>string[]</code> | IAM actions required for the ModifyServerlessCache API call. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheOperations.property.ModifyUser">ModifyUser</a></code> | <code>string[]</code> | IAM actions required for the ModifyUser API call. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheOperations.property.ModifyUserGroup">ModifyUserGroup</a></code> | <code>string[]</code> | IAM actions required for the ModifyUserGroup API call. |
+| <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheOperations.property.PrepareMigration">PrepareMigration</a></code> | <code>string[]</code> | IAM actions required for the PrepareMigration API call. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheOperations.property.PurchaseReservedCacheNodesOffering">PurchaseReservedCacheNodesOffering</a></code> | <code>string[]</code> | IAM actions required for the PurchaseReservedCacheNodesOffering API call. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheOperations.property.RebalanceSlotsInGlobalReplicationGroup">RebalanceSlotsInGlobalReplicationGroup</a></code> | <code>string[]</code> | IAM actions required for the RebalanceSlotsInGlobalReplicationGroup API call. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheOperations.property.RebootCacheCluster">RebootCacheCluster</a></code> | <code>string[]</code> | IAM actions required for the RebootCacheCluster API call. |
@@ -4571,6 +4572,7 @@ new elasticache.ElastiCacheOperations()
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheOperations.property.ResetCacheParameterGroup">ResetCacheParameterGroup</a></code> | <code>string[]</code> | IAM actions required for the ResetCacheParameterGroup API call. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheOperations.property.RevokeCacheSecurityGroupIngress">RevokeCacheSecurityGroupIngress</a></code> | <code>string[]</code> | IAM actions required for the RevokeCacheSecurityGroupIngress API call. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheOperations.property.StartMigration">StartMigration</a></code> | <code>string[]</code> | IAM actions required for the StartMigration API call. |
+| <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheOperations.property.StopMigration">StopMigration</a></code> | <code>string[]</code> | IAM actions required for the StopMigration API call. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheOperations.property.TestFailover">TestFailover</a></code> | <code>string[]</code> | IAM actions required for the TestFailover API call. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheOperations.property.TestMigration">TestMigration</a></code> | <code>string[]</code> | IAM actions required for the TestMigration API call. |
 
@@ -5368,6 +5370,18 @@ IAM actions required for the ModifyUserGroup API call.
 
 ---
 
+##### `PrepareMigration`<sup>Required</sup> <a name="PrepareMigration" id="@cdk_utils/iam.elasticache.ElastiCacheOperations.property.PrepareMigration"></a>
+
+```typescript
+public readonly PrepareMigration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the PrepareMigration API call.
+
+---
+
 ##### `PurchaseReservedCacheNodesOffering`<sup>Required</sup> <a name="PurchaseReservedCacheNodesOffering" id="@cdk_utils/iam.elasticache.ElastiCacheOperations.property.PurchaseReservedCacheNodesOffering"></a>
 
 ```typescript
@@ -5449,6 +5463,18 @@ public readonly StartMigration: string[];
 - *Type:* string[]
 
 IAM actions required for the StartMigration API call.
+
+---
+
+##### `StopMigration`<sup>Required</sup> <a name="StopMigration" id="@cdk_utils/iam.elasticache.ElastiCacheOperations.property.StopMigration"></a>
+
+```typescript
+public readonly StopMigration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StopMigration API call.
 
 ---
 

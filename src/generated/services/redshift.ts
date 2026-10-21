@@ -358,6 +358,9 @@ export class RedshiftActions {
 	static readonly ModifyEventSubscription = "redshift:ModifyEventSubscription";
 	/** [Write] redshift:ModifyIntegration */
 	static readonly ModifyIntegration = "redshift:ModifyIntegration";
+	/** [Write] redshift:ModifyLakehouseConfiguration */
+	static readonly ModifyLakehouseConfiguration =
+		"redshift:ModifyLakehouseConfiguration";
 	/** [Write] redshift:ModifyQev2IdcApplication */
 	static readonly ModifyQev2IdcApplication =
 		"redshift:ModifyQev2IdcApplication";
@@ -536,6 +539,7 @@ export class RedshiftActions {
 		RedshiftActions.ModifyEndpointAccess,
 		RedshiftActions.ModifyEventSubscription,
 		RedshiftActions.ModifyIntegration,
+		RedshiftActions.ModifyLakehouseConfiguration,
 		RedshiftActions.ModifyQev2IdcApplication,
 		RedshiftActions.ModifyRedshiftIdcApplication,
 		RedshiftActions.ModifySavedQuery,
@@ -2463,6 +2467,7 @@ export class RedshiftOperations {
 	static readonly ModifyLakehouseConfiguration: string[] = [
 		"redshift:AssociateDataShareConsumer",
 		"redshift:DeregisterNamespace",
+		"redshift:ModifyLakehouseConfiguration",
 		"iam:PassRole",
 		"redshift:RegisterNamespace",
 	];

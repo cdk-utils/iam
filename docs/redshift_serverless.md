@@ -985,6 +985,7 @@ new redshift_serverless.RedshiftServerlessActions()
 | <code><a href="#@cdk_utils/iam.redshift_serverless.RedshiftServerlessActions.property.UpdateAutonomicsDenylist">UpdateAutonomicsDenylist</a></code> | <code>string</code> | [Write] redshift-serverless:UpdateAutonomicsDenylist. |
 | <code><a href="#@cdk_utils/iam.redshift_serverless.RedshiftServerlessActions.property.UpdateCustomDomainAssociation">UpdateCustomDomainAssociation</a></code> | <code>string</code> | [Write] redshift-serverless:UpdateCustomDomainAssociation. |
 | <code><a href="#@cdk_utils/iam.redshift_serverless.RedshiftServerlessActions.property.UpdateEndpointAccess">UpdateEndpointAccess</a></code> | <code>string</code> | [Write] redshift-serverless:UpdateEndpointAccess. |
+| <code><a href="#@cdk_utils/iam.redshift_serverless.RedshiftServerlessActions.property.UpdateLakehouseConfiguration">UpdateLakehouseConfiguration</a></code> | <code>string</code> | [Write] redshift-serverless:UpdateLakehouseConfiguration. |
 | <code><a href="#@cdk_utils/iam.redshift_serverless.RedshiftServerlessActions.property.UpdateNamespace">UpdateNamespace</a></code> | <code>string</code> | [Write] redshift-serverless:UpdateNamespace. |
 | <code><a href="#@cdk_utils/iam.redshift_serverless.RedshiftServerlessActions.property.UpdateScheduledAction">UpdateScheduledAction</a></code> | <code>string</code> | [Write] redshift-serverless:UpdateScheduledAction. |
 | <code><a href="#@cdk_utils/iam.redshift_serverless.RedshiftServerlessActions.property.UpdateSnapshot">UpdateSnapshot</a></code> | <code>string</code> | [Write] redshift-serverless:UpdateSnapshot. |
@@ -1807,6 +1808,18 @@ public readonly UpdateEndpointAccess: string;
 - *Type:* string
 
 [Write] redshift-serverless:UpdateEndpointAccess.
+
+---
+
+##### `UpdateLakehouseConfiguration`<sup>Required</sup> <a name="UpdateLakehouseConfiguration" id="@cdk_utils/iam.redshift_serverless.RedshiftServerlessActions.property.UpdateLakehouseConfiguration"></a>
+
+```typescript
+public readonly UpdateLakehouseConfiguration: string;
+```
+
+- *Type:* string
+
+[Write] redshift-serverless:UpdateLakehouseConfiguration.
 
 ---
 

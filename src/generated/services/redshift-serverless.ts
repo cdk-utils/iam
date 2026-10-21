@@ -171,6 +171,9 @@ export class RedshiftServerlessActions {
 	/** [Write] redshift-serverless:UpdateEndpointAccess */
 	static readonly UpdateEndpointAccess =
 		"redshift-serverless:UpdateEndpointAccess";
+	/** [Write] redshift-serverless:UpdateLakehouseConfiguration */
+	static readonly UpdateLakehouseConfiguration =
+		"redshift-serverless:UpdateLakehouseConfiguration";
 	/** [Write] redshift-serverless:UpdateNamespace */
 	static readonly UpdateNamespace = "redshift-serverless:UpdateNamespace";
 	/** [Write] redshift-serverless:UpdateScheduledAction */
@@ -236,6 +239,7 @@ export class RedshiftServerlessActions {
 		RedshiftServerlessActions.UpdateAutonomicsDenylist,
 		RedshiftServerlessActions.UpdateCustomDomainAssociation,
 		RedshiftServerlessActions.UpdateEndpointAccess,
+		RedshiftServerlessActions.UpdateLakehouseConfiguration,
 		RedshiftServerlessActions.UpdateNamespace,
 		RedshiftServerlessActions.UpdateScheduledAction,
 		RedshiftServerlessActions.UpdateSnapshot,
@@ -899,6 +903,7 @@ export class RedshiftServerlessOperations {
 		"redshift:DeregisterNamespace",
 		"iam:PassRole",
 		"redshift:RegisterNamespace",
+		"redshift-serverless:UpdateLakehouseConfiguration",
 	];
 	/** IAM actions required for the UpdateNamespace API call. */
 	static readonly UpdateNamespace: string[] = [

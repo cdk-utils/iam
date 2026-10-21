@@ -5757,6 +5757,154 @@ Defaults to "*".
 
 ---
 
+### BedrockRetrievalInstructionArnComponents <a name="BedrockRetrievalInstructionArnComponents" id="@cdk_utils/iam.bedrock.BedrockRetrievalInstructionArnComponents"></a>
+
+Parsed components of a retrieval-instruction ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.bedrock.BedrockRetrievalInstructionArnComponents.Initializer"></a>
+
+```typescript
+import { bedrock } from '@cdk_utils/iam'
+
+const bedrockRetrievalInstructionArnComponents: bedrock.BedrockRetrievalInstructionArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockRetrievalInstructionArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockRetrievalInstructionArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockRetrievalInstructionArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockRetrievalInstructionArnComponents.property.retrievalInstructionId">retrievalInstructionId</a></code> | <code>string</code> | The RetrievalInstructionId component. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.bedrock.BedrockRetrievalInstructionArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.bedrock.BedrockRetrievalInstructionArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.bedrock.BedrockRetrievalInstructionArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+##### `retrievalInstructionId`<sup>Required</sup> <a name="retrievalInstructionId" id="@cdk_utils/iam.bedrock.BedrockRetrievalInstructionArnComponents.property.retrievalInstructionId"></a>
+
+```typescript
+public readonly retrievalInstructionId: string;
+```
+
+- *Type:* string
+
+The RetrievalInstructionId component.
+
+---
+
+### BedrockRetrievalInstructionArnProps <a name="BedrockRetrievalInstructionArnProps" id="@cdk_utils/iam.bedrock.BedrockRetrievalInstructionArnProps"></a>
+
+Properties for building a retrieval-instruction ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.bedrock.BedrockRetrievalInstructionArnProps.Initializer"></a>
+
+```typescript
+import { bedrock } from '@cdk_utils/iam'
+
+const bedrockRetrievalInstructionArnProps: bedrock.BedrockRetrievalInstructionArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockRetrievalInstructionArnProps.property.retrievalInstructionId">retrievalInstructionId</a></code> | <code>string</code> | The RetrievalInstructionId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockRetrievalInstructionArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockRetrievalInstructionArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockRetrievalInstructionArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `retrievalInstructionId`<sup>Required</sup> <a name="retrievalInstructionId" id="@cdk_utils/iam.bedrock.BedrockRetrievalInstructionArnProps.property.retrievalInstructionId"></a>
+
+```typescript
+public readonly retrievalInstructionId: string;
+```
+
+- *Type:* string
+
+The RetrievalInstructionId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.bedrock.BedrockRetrievalInstructionArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.bedrock.BedrockRetrievalInstructionArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.bedrock.BedrockRetrievalInstructionArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### BedrockSessionArnComponents <a name="BedrockSessionArnComponents" id="@cdk_utils/iam.bedrock.BedrockSessionArnComponents"></a>
 
 Parsed components of a session ARN.
@@ -6109,6 +6257,7 @@ new bedrock.BedrockActions()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetPromptRouter">actionGetPromptRouter</a></code> | <code>string</code> | [Read] bedrock:GetPromptRouter. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetProvisionedModelThroughput">actionGetProvisionedModelThroughput</a></code> | <code>string</code> | [Read] bedrock:GetProvisionedModelThroughput. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetResourcePolicy">actionGetResourcePolicy</a></code> | <code>string</code> | [Read] bedrock:GetResourcePolicy. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetRetrievalInstruction">actionGetRetrievalInstruction</a></code> | <code>string</code> | [Read] bedrock:GetRetrievalInstruction. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetSession">actionGetSession</a></code> | <code>string</code> | [Read] bedrock:GetSession. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetUseCaseForModelAccess">actionGetUseCaseForModelAccess</a></code> | <code>string</code> | [Read] bedrock:GetUseCaseForModelAccess. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.AgenticRetrieveStream">AgenticRetrieveStream</a></code> | <code>string</code> | [Read] bedrock:AgenticRetrieveStream. |
@@ -6165,6 +6314,8 @@ new bedrock.BedrockActions()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.CreatePromptRouter">CreatePromptRouter</a></code> | <code>string</code> | [Write] bedrock:CreatePromptRouter. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.CreatePromptVersion">CreatePromptVersion</a></code> | <code>string</code> | [Write] bedrock:CreatePromptVersion. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.CreateProvisionedModelThroughput">CreateProvisionedModelThroughput</a></code> | <code>string</code> | [Write] bedrock:CreateProvisionedModelThroughput. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.CreateRetrievalInstruction">CreateRetrievalInstruction</a></code> | <code>string</code> | [Write] bedrock:CreateRetrievalInstruction. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.CreateRetrievalInstructionVersion">CreateRetrievalInstructionVersion</a></code> | <code>string</code> | [Write] bedrock:CreateRetrievalInstructionVersion. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.CreateSession">CreateSession</a></code> | <code>string</code> | [Write] bedrock:CreateSession. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.DeleteAgent">DeleteAgent</a></code> | <code>string</code> | [Write] bedrock:DeleteAgent. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.DeleteAgentActionGroup">DeleteAgentActionGroup</a></code> | <code>string</code> | [Write] bedrock:DeleteAgentActionGroup. |
@@ -6198,6 +6349,7 @@ new bedrock.BedrockActions()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.DeletePromptRouter">DeletePromptRouter</a></code> | <code>string</code> | [Write] bedrock:DeletePromptRouter. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.DeleteProvisionedModelThroughput">DeleteProvisionedModelThroughput</a></code> | <code>string</code> | [Write] bedrock:DeleteProvisionedModelThroughput. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.DeleteResourcePolicy">DeleteResourcePolicy</a></code> | <code>string</code> | [Write] bedrock:DeleteResourcePolicy. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.DeleteRetrievalInstruction">DeleteRetrievalInstruction</a></code> | <code>string</code> | [Write] bedrock:DeleteRetrievalInstruction. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.DeleteSession">DeleteSession</a></code> | <code>string</code> | [Write] bedrock:DeleteSession. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.DeregisterMarketplaceModelEndpoint">DeregisterMarketplaceModelEndpoint</a></code> | <code>string</code> | [Write] bedrock:DeregisterMarketplaceModelEndpoint. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.DetectGeneratedContent">DetectGeneratedContent</a></code> | <code>string</code> | [Read] bedrock:DetectGeneratedContent. |
@@ -6267,6 +6419,8 @@ new bedrock.BedrockActions()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.ListPromptRouters">ListPromptRouters</a></code> | <code>string</code> | [List] bedrock:ListPromptRouters. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.ListPrompts">ListPrompts</a></code> | <code>string</code> | [List] bedrock:ListPrompts. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.ListProvisionedModelThroughputs">ListProvisionedModelThroughputs</a></code> | <code>string</code> | [List] bedrock:ListProvisionedModelThroughputs. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.ListRetrievalInstructions">ListRetrievalInstructions</a></code> | <code>string</code> | [List] bedrock:ListRetrievalInstructions. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.ListRetrievalInstructionVersions">ListRetrievalInstructionVersions</a></code> | <code>string</code> | [List] bedrock:ListRetrievalInstructionVersions. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.ListSessions">ListSessions</a></code> | <code>string</code> | [List] bedrock:ListSessions. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [Read] bedrock:ListTagsForResource. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.OptimizePrompt">OptimizePrompt</a></code> | <code>string</code> | [Read] bedrock:OptimizePrompt. |
@@ -6317,6 +6471,7 @@ new bedrock.BedrockActions()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.UpdateMarketplaceModelEndpoint">UpdateMarketplaceModelEndpoint</a></code> | <code>string</code> | [Write] bedrock:UpdateMarketplaceModelEndpoint. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.UpdatePrompt">UpdatePrompt</a></code> | <code>string</code> | [Write] bedrock:UpdatePrompt. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.UpdateProvisionedModelThroughput">UpdateProvisionedModelThroughput</a></code> | <code>string</code> | [Write] bedrock:UpdateProvisionedModelThroughput. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.UpdateRetrievalInstruction">UpdateRetrievalInstruction</a></code> | <code>string</code> | [Write] bedrock:UpdateRetrievalInstruction. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.UpdateSession">UpdateSession</a></code> | <code>string</code> | [Write] bedrock:UpdateSession. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.ValidateFlowDefinition">ValidateFlowDefinition</a></code> | <code>string</code> | [Read] bedrock:ValidateFlowDefinition. |
 
@@ -7018,6 +7173,18 @@ public readonly actionGetResourcePolicy: string;
 
 ---
 
+##### `actionGetRetrievalInstruction`<sup>Required</sup> <a name="actionGetRetrievalInstruction" id="@cdk_utils/iam.bedrock.BedrockActions.property.actionGetRetrievalInstruction"></a>
+
+```typescript
+public readonly actionGetRetrievalInstruction: string;
+```
+
+- *Type:* string
+
+[Read] bedrock:GetRetrievalInstruction.
+
+---
+
 ##### `actionGetSession`<sup>Required</sup> <a name="actionGetSession" id="@cdk_utils/iam.bedrock.BedrockActions.property.actionGetSession"></a>
 
 ```typescript
@@ -7690,6 +7857,30 @@ public readonly CreateProvisionedModelThroughput: string;
 
 ---
 
+##### `CreateRetrievalInstruction`<sup>Required</sup> <a name="CreateRetrievalInstruction" id="@cdk_utils/iam.bedrock.BedrockActions.property.CreateRetrievalInstruction"></a>
+
+```typescript
+public readonly CreateRetrievalInstruction: string;
+```
+
+- *Type:* string
+
+[Write] bedrock:CreateRetrievalInstruction.
+
+---
+
+##### `CreateRetrievalInstructionVersion`<sup>Required</sup> <a name="CreateRetrievalInstructionVersion" id="@cdk_utils/iam.bedrock.BedrockActions.property.CreateRetrievalInstructionVersion"></a>
+
+```typescript
+public readonly CreateRetrievalInstructionVersion: string;
+```
+
+- *Type:* string
+
+[Write] bedrock:CreateRetrievalInstructionVersion.
+
+---
+
 ##### `CreateSession`<sup>Required</sup> <a name="CreateSession" id="@cdk_utils/iam.bedrock.BedrockActions.property.CreateSession"></a>
 
 ```typescript
@@ -8083,6 +8274,18 @@ public readonly DeleteResourcePolicy: string;
 - *Type:* string
 
 [Write] bedrock:DeleteResourcePolicy.
+
+---
+
+##### `DeleteRetrievalInstruction`<sup>Required</sup> <a name="DeleteRetrievalInstruction" id="@cdk_utils/iam.bedrock.BedrockActions.property.DeleteRetrievalInstruction"></a>
+
+```typescript
+public readonly DeleteRetrievalInstruction: string;
+```
+
+- *Type:* string
+
+[Write] bedrock:DeleteRetrievalInstruction.
 
 ---
 
@@ -8914,6 +9117,30 @@ public readonly ListProvisionedModelThroughputs: string;
 
 ---
 
+##### `ListRetrievalInstructions`<sup>Required</sup> <a name="ListRetrievalInstructions" id="@cdk_utils/iam.bedrock.BedrockActions.property.ListRetrievalInstructions"></a>
+
+```typescript
+public readonly ListRetrievalInstructions: string;
+```
+
+- *Type:* string
+
+[List] bedrock:ListRetrievalInstructions.
+
+---
+
+##### `ListRetrievalInstructionVersions`<sup>Required</sup> <a name="ListRetrievalInstructionVersions" id="@cdk_utils/iam.bedrock.BedrockActions.property.ListRetrievalInstructionVersions"></a>
+
+```typescript
+public readonly ListRetrievalInstructionVersions: string;
+```
+
+- *Type:* string
+
+[List] bedrock:ListRetrievalInstructionVersions.
+
+---
+
 ##### `ListSessions`<sup>Required</sup> <a name="ListSessions" id="@cdk_utils/iam.bedrock.BedrockActions.property.ListSessions"></a>
 
 ```typescript
@@ -9514,6 +9741,18 @@ public readonly UpdateProvisionedModelThroughput: string;
 
 ---
 
+##### `UpdateRetrievalInstruction`<sup>Required</sup> <a name="UpdateRetrievalInstruction" id="@cdk_utils/iam.bedrock.BedrockActions.property.UpdateRetrievalInstruction"></a>
+
+```typescript
+public readonly UpdateRetrievalInstruction: string;
+```
+
+- *Type:* string
+
+[Write] bedrock:UpdateRetrievalInstruction.
+
+---
+
 ##### `UpdateSession`<sup>Required</sup> <a name="UpdateSession" id="@cdk_utils/iam.bedrock.BedrockActions.property.UpdateSession"></a>
 
 ```typescript
@@ -9821,6 +10060,7 @@ Generates a condition block for `bedrock:ThirdPartyKnowledgeBaseCredentialsSecre
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.CreatePromptRouterConditionKeys">CreatePromptRouterConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreatePromptRouter action. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.CreatePromptVersionConditionKeys">CreatePromptVersionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreatePromptVersion action. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.CreateProvisionedModelThroughputConditionKeys">CreateProvisionedModelThroughputConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateProvisionedModelThroughput action. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.CreateRetrievalInstructionConditionKeys">CreateRetrievalInstructionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateRetrievalInstruction action. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.CreateSessionConditionKeys">CreateSessionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateSession action. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.DATA_RETENTION_MODE">DATA_RETENTION_MODE</a></code> | <code>string</code> | Condition key: bedrock:DataRetentionMode (String). |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.GUARDRAIL_IDENTIFIER">GUARDRAIL_IDENTIFIER</a></code> | <code>string</code> | Condition key: bedrock:GuardrailIdentifier (ARN). |
@@ -10225,6 +10465,18 @@ public readonly CreateProvisionedModelThroughputConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the CreateProvisionedModelThroughput action.
+
+---
+
+##### `CreateRetrievalInstructionConditionKeys`<sup>Required</sup> <a name="CreateRetrievalInstructionConditionKeys" id="@cdk_utils/iam.bedrock.BedrockConditions.property.CreateRetrievalInstructionConditionKeys"></a>
+
+```typescript
+public readonly CreateRetrievalInstructionConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateRetrievalInstruction action.
 
 ---
 
@@ -13936,6 +14188,7 @@ new bedrock.BedrockResources()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.isValidPromptRouterArn">isValidPromptRouterArn</a></code> | Validates whether a string is a valid ARN for the prompt-router resource. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.isValidPromptVersionArn">isValidPromptVersionArn</a></code> | Validates whether a string is a valid ARN for the prompt-version resource. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.isValidProvisionedModelArn">isValidProvisionedModelArn</a></code> | Validates whether a string is a valid ARN for the provisioned-model resource. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.isValidRetrievalInstructionArn">isValidRetrievalInstructionArn</a></code> | Validates whether a string is a valid ARN for the retrieval-instruction resource. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.isValidSessionArn">isValidSessionArn</a></code> | Validates whether a string is a valid ARN for the session resource. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.isValidSystemToolArn">isValidSystemToolArn</a></code> | Validates whether a string is a valid ARN for the system-tool resource. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.knowledgeBase">knowledgeBase</a></code> | Builds an ARN for the knowledge-base resource. |
@@ -13982,6 +14235,7 @@ new bedrock.BedrockResources()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.parsePromptRouterArn">parsePromptRouterArn</a></code> | Parses a prompt-router ARN into its components. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.parsePromptVersionArn">parsePromptVersionArn</a></code> | Parses a prompt-version ARN into its components. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.parseProvisionedModelArn">parseProvisionedModelArn</a></code> | Parses a provisioned-model ARN into its components. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.parseRetrievalInstructionArn">parseRetrievalInstructionArn</a></code> | Parses a retrieval-instruction ARN into its components. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.parseSessionArn">parseSessionArn</a></code> | Parses a session ARN into its components. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.parseSystemToolArn">parseSystemToolArn</a></code> | Parses a system-tool ARN into its components. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.project">project</a></code> | Builds an ARN for the project resource. |
@@ -13989,6 +14243,7 @@ new bedrock.BedrockResources()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.promptRouter">promptRouter</a></code> | Builds an ARN for the prompt-router resource. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.promptVersion">promptVersion</a></code> | Builds an ARN for the prompt-version resource. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.provisionedModel">provisionedModel</a></code> | Builds an ARN for the provisioned-model resource. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.retrievalInstruction">retrievalInstruction</a></code> | Builds an ARN for the retrieval-instruction resource. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.session">session</a></code> | Builds an ARN for the session resource. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.systemTool">systemTool</a></code> | Builds an ARN for the system-tool resource. |
 
@@ -15034,6 +15289,22 @@ Validates whether a string is a valid ARN for the provisioned-model resource.
 
 ---
 
+##### `isValidRetrievalInstructionArn` <a name="isValidRetrievalInstructionArn" id="@cdk_utils/iam.bedrock.BedrockResources.isValidRetrievalInstructionArn"></a>
+
+```typescript
+import { bedrock } from '@cdk_utils/iam'
+
+bedrock.BedrockResources.isValidRetrievalInstructionArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the retrieval-instruction resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.bedrock.BedrockResources.isValidRetrievalInstructionArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `isValidSessionArn` <a name="isValidSessionArn" id="@cdk_utils/iam.bedrock.BedrockResources.isValidSessionArn"></a>
 
 ```typescript
@@ -15770,6 +16041,22 @@ Parses a provisioned-model ARN into its components.
 
 ---
 
+##### `parseRetrievalInstructionArn` <a name="parseRetrievalInstructionArn" id="@cdk_utils/iam.bedrock.BedrockResources.parseRetrievalInstructionArn"></a>
+
+```typescript
+import { bedrock } from '@cdk_utils/iam'
+
+bedrock.BedrockResources.parseRetrievalInstructionArn(arn: string)
+```
+
+Parses a retrieval-instruction ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.bedrock.BedrockResources.parseRetrievalInstructionArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `parseSessionArn` <a name="parseSessionArn" id="@cdk_utils/iam.bedrock.BedrockResources.parseSessionArn"></a>
 
 ```typescript
@@ -15879,6 +16166,22 @@ Builds an ARN for the provisioned-model resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.bedrock.BedrockResources.provisionedModel.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.bedrock.BedrockProvisionedModelArnProps">BedrockProvisionedModelArnProps</a>
+
+---
+
+##### `retrievalInstruction` <a name="retrievalInstruction" id="@cdk_utils/iam.bedrock.BedrockResources.retrievalInstruction"></a>
+
+```typescript
+import { bedrock } from '@cdk_utils/iam'
+
+bedrock.BedrockResources.retrievalInstruction(props: BedrockRetrievalInstructionArnProps)
+```
+
+Builds an ARN for the retrieval-instruction resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.bedrock.BedrockResources.retrievalInstruction.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.bedrock.BedrockRetrievalInstructionArnProps">BedrockRetrievalInstructionArnProps</a>
 
 ---
 

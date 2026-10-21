@@ -762,6 +762,10 @@ export class IdentitystoreConditions {
 		"identitystore:GroupExternalIdIssuers",
 		"identitystore:PrimaryRegion",
 	];
+	/** Condition keys applicable to the UpdateIdentityStore action. */
+	static readonly UpdateIdentityStoreConditionKeys: string[] = [
+		"identitystore:VpceAccessRequired",
+	];
 	/** Condition keys applicable to the UpdateUser action. */
 	static readonly UpdateUserConditionKeys: string[] = [
 		"identitystore:PrimaryRegion",
@@ -782,6 +786,8 @@ export class IdentitystoreConditions {
 		"identitystore:UserExternalIdIssuers";
 	/** Condition key: identitystore:UserId (String) */
 	static readonly USER_ID = "identitystore:UserId";
+	/** Condition key: identitystore:VpceAccessRequired (Bool) */
+	static readonly VPCE_ACCESS_REQUIRED = "identitystore:VpceAccessRequired";
 
 	/**
 	 * Generates a condition block for `identitystore:GroupExternalIdIssuers`.
@@ -837,5 +843,14 @@ export class IdentitystoreConditions {
 	 */
 	static userId(value: string): Record<string, Record<string, string>> {
 		return { StringEquals: { "identitystore:UserId": value } };
+	}
+
+	/**
+	 * Generates a condition block for `identitystore:VpceAccessRequired`.
+	 */
+	static vpceAccessRequired(
+		value: boolean,
+	): Record<string, Record<string, boolean>> {
+		return { Bool: { "identitystore:VpceAccessRequired": value } };
 	}
 }

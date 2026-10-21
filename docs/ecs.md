@@ -5640,11 +5640,13 @@ new ecs.ECSOperations()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.AssociateGatewayWithCluster">AssociateGatewayWithCluster</a></code> | <code>string[]</code> | IAM actions required for the AssociateGatewayWithCluster API call. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.ContinueServiceDeployment">ContinueServiceDeployment</a></code> | <code>string[]</code> | IAM actions required for the ContinueServiceDeployment API call. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.CreateCapacityProvider">CreateCapacityProvider</a></code> | <code>string[]</code> | IAM actions required for the CreateCapacityProvider API call. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.CreateCluster">CreateCluster</a></code> | <code>string[]</code> | IAM actions required for the CreateCluster API call. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.CreateDaemon">CreateDaemon</a></code> | <code>string[]</code> | IAM actions required for the CreateDaemon API call. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.CreateExpressGatewayService">CreateExpressGatewayService</a></code> | <code>string[]</code> | IAM actions required for the CreateExpressGatewayService API call. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.CreateGateway">CreateGateway</a></code> | <code>string[]</code> | IAM actions required for the CreateGateway API call. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.CreateService">CreateService</a></code> | <code>string[]</code> | IAM actions required for the CreateService API call. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.CreateTaskSet">CreateTaskSet</a></code> | <code>string[]</code> | IAM actions required for the CreateTaskSet API call. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.DeleteAccountSetting">DeleteAccountSetting</a></code> | <code>string[]</code> | IAM actions required for the DeleteAccountSetting API call. |
@@ -5654,6 +5656,7 @@ new ecs.ECSOperations()
 | <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.DeleteDaemon">DeleteDaemon</a></code> | <code>string[]</code> | IAM actions required for the DeleteDaemon API call. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.DeleteDaemonTaskDefinition">DeleteDaemonTaskDefinition</a></code> | <code>string[]</code> | IAM actions required for the DeleteDaemonTaskDefinition API call. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.DeleteExpressGatewayService">DeleteExpressGatewayService</a></code> | <code>string[]</code> | IAM actions required for the DeleteExpressGatewayService API call. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.DeleteGateway">DeleteGateway</a></code> | <code>string[]</code> | IAM actions required for the DeleteGateway API call. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.DeleteService">DeleteService</a></code> | <code>string[]</code> | IAM actions required for the DeleteService API call. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.DeleteTaskDefinitions">DeleteTaskDefinitions</a></code> | <code>string[]</code> | IAM actions required for the DeleteTaskDefinitions API call. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.DeleteTaskSet">DeleteTaskSet</a></code> | <code>string[]</code> | IAM actions required for the DeleteTaskSet API call. |
@@ -5667,12 +5670,16 @@ new ecs.ECSOperations()
 | <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.DescribeDaemonRevisions">DescribeDaemonRevisions</a></code> | <code>string[]</code> | IAM actions required for the DescribeDaemonRevisions API call. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.DescribeDaemonTaskDefinition">DescribeDaemonTaskDefinition</a></code> | <code>string[]</code> | IAM actions required for the DescribeDaemonTaskDefinition API call. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.DescribeExpressGatewayService">DescribeExpressGatewayService</a></code> | <code>string[]</code> | IAM actions required for the DescribeExpressGatewayService API call. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.DescribeGateway">DescribeGateway</a></code> | <code>string[]</code> | IAM actions required for the DescribeGateway API call. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.DescribeGatewayResources">DescribeGatewayResources</a></code> | <code>string[]</code> | IAM actions required for the DescribeGatewayResources API call. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.DescribeGatewayRoute">DescribeGatewayRoute</a></code> | <code>string[]</code> | IAM actions required for the DescribeGatewayRoute API call. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.DescribeServiceDeployments">DescribeServiceDeployments</a></code> | <code>string[]</code> | IAM actions required for the DescribeServiceDeployments API call. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.DescribeServiceRevisions">DescribeServiceRevisions</a></code> | <code>string[]</code> | IAM actions required for the DescribeServiceRevisions API call. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.DescribeServices">DescribeServices</a></code> | <code>string[]</code> | IAM actions required for the DescribeServices API call. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.DescribeTaskDefinition">DescribeTaskDefinition</a></code> | <code>string[]</code> | IAM actions required for the DescribeTaskDefinition API call. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.DescribeTasks">DescribeTasks</a></code> | <code>string[]</code> | IAM actions required for the DescribeTasks API call. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.DescribeTaskSets">DescribeTaskSets</a></code> | <code>string[]</code> | IAM actions required for the DescribeTaskSets API call. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.DisassociateGatewayFromCluster">DisassociateGatewayFromCluster</a></code> | <code>string[]</code> | IAM actions required for the DisassociateGatewayFromCluster API call. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.DiscoverPollEndpoint">DiscoverPollEndpoint</a></code> | <code>string[]</code> | IAM actions required for the DiscoverPollEndpoint API call. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.ExecuteCommand">ExecuteCommand</a></code> | <code>string[]</code> | IAM actions required for the ExecuteCommand API call. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.ListAccountSettings">ListAccountSettings</a></code> | <code>string[]</code> | IAM actions required for the ListAccountSettings API call. |
@@ -5682,6 +5689,9 @@ new ecs.ECSOperations()
 | <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.ListDaemonDeployments">ListDaemonDeployments</a></code> | <code>string[]</code> | IAM actions required for the ListDaemonDeployments API call. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.ListDaemons">ListDaemons</a></code> | <code>string[]</code> | IAM actions required for the ListDaemons API call. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.ListDaemonTaskDefinitions">ListDaemonTaskDefinitions</a></code> | <code>string[]</code> | IAM actions required for the ListDaemonTaskDefinitions API call. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.ListGatewayClusterAssociations">ListGatewayClusterAssociations</a></code> | <code>string[]</code> | IAM actions required for the ListGatewayClusterAssociations API call. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.ListGatewayRoutes">ListGatewayRoutes</a></code> | <code>string[]</code> | IAM actions required for the ListGatewayRoutes API call. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.ListGateways">ListGateways</a></code> | <code>string[]</code> | IAM actions required for the ListGateways API call. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.ListServiceDeployments">ListServiceDeployments</a></code> | <code>string[]</code> | IAM actions required for the ListServiceDeployments API call. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.ListServices">ListServices</a></code> | <code>string[]</code> | IAM actions required for the ListServices API call. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.ListServicesByNamespace">ListServicesByNamespace</a></code> | <code>string[]</code> | IAM actions required for the ListServicesByNamespace API call. |
@@ -5713,10 +5723,23 @@ new ecs.ECSOperations()
 | <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.UpdateContainerInstancesState">UpdateContainerInstancesState</a></code> | <code>string[]</code> | IAM actions required for the UpdateContainerInstancesState API call. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.UpdateDaemon">UpdateDaemon</a></code> | <code>string[]</code> | IAM actions required for the UpdateDaemon API call. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.UpdateExpressGatewayService">UpdateExpressGatewayService</a></code> | <code>string[]</code> | IAM actions required for the UpdateExpressGatewayService API call. |
+| <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.UpdateGateway">UpdateGateway</a></code> | <code>string[]</code> | IAM actions required for the UpdateGateway API call. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.UpdateService">UpdateService</a></code> | <code>string[]</code> | IAM actions required for the UpdateService API call. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.UpdateServicePrimaryTaskSet">UpdateServicePrimaryTaskSet</a></code> | <code>string[]</code> | IAM actions required for the UpdateServicePrimaryTaskSet API call. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.UpdateTaskProtection">UpdateTaskProtection</a></code> | <code>string[]</code> | IAM actions required for the UpdateTaskProtection API call. |
 | <code><a href="#@cdk_utils/iam.ecs.ECSOperations.property.UpdateTaskSet">UpdateTaskSet</a></code> | <code>string[]</code> | IAM actions required for the UpdateTaskSet API call. |
+
+---
+
+##### `AssociateGatewayWithCluster`<sup>Required</sup> <a name="AssociateGatewayWithCluster" id="@cdk_utils/iam.ecs.ECSOperations.property.AssociateGatewayWithCluster"></a>
+
+```typescript
+public readonly AssociateGatewayWithCluster: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the AssociateGatewayWithCluster API call.
 
 ---
 
@@ -5777,6 +5800,18 @@ public readonly CreateExpressGatewayService: string[];
 - *Type:* string[]
 
 IAM actions required for the CreateExpressGatewayService API call.
+
+---
+
+##### `CreateGateway`<sup>Required</sup> <a name="CreateGateway" id="@cdk_utils/iam.ecs.ECSOperations.property.CreateGateway"></a>
+
+```typescript
+public readonly CreateGateway: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateGateway API call.
 
 ---
 
@@ -5885,6 +5920,18 @@ public readonly DeleteExpressGatewayService: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteExpressGatewayService API call.
+
+---
+
+##### `DeleteGateway`<sup>Required</sup> <a name="DeleteGateway" id="@cdk_utils/iam.ecs.ECSOperations.property.DeleteGateway"></a>
+
+```typescript
+public readonly DeleteGateway: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteGateway API call.
 
 ---
 
@@ -6044,6 +6091,42 @@ IAM actions required for the DescribeExpressGatewayService API call.
 
 ---
 
+##### `DescribeGateway`<sup>Required</sup> <a name="DescribeGateway" id="@cdk_utils/iam.ecs.ECSOperations.property.DescribeGateway"></a>
+
+```typescript
+public readonly DescribeGateway: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeGateway API call.
+
+---
+
+##### `DescribeGatewayResources`<sup>Required</sup> <a name="DescribeGatewayResources" id="@cdk_utils/iam.ecs.ECSOperations.property.DescribeGatewayResources"></a>
+
+```typescript
+public readonly DescribeGatewayResources: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeGatewayResources API call.
+
+---
+
+##### `DescribeGatewayRoute`<sup>Required</sup> <a name="DescribeGatewayRoute" id="@cdk_utils/iam.ecs.ECSOperations.property.DescribeGatewayRoute"></a>
+
+```typescript
+public readonly DescribeGatewayRoute: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeGatewayRoute API call.
+
+---
+
 ##### `DescribeServiceDeployments`<sup>Required</sup> <a name="DescribeServiceDeployments" id="@cdk_utils/iam.ecs.ECSOperations.property.DescribeServiceDeployments"></a>
 
 ```typescript
@@ -6113,6 +6196,18 @@ public readonly DescribeTaskSets: string[];
 - *Type:* string[]
 
 IAM actions required for the DescribeTaskSets API call.
+
+---
+
+##### `DisassociateGatewayFromCluster`<sup>Required</sup> <a name="DisassociateGatewayFromCluster" id="@cdk_utils/iam.ecs.ECSOperations.property.DisassociateGatewayFromCluster"></a>
+
+```typescript
+public readonly DisassociateGatewayFromCluster: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DisassociateGatewayFromCluster API call.
 
 ---
 
@@ -6221,6 +6316,42 @@ public readonly ListDaemonTaskDefinitions: string[];
 - *Type:* string[]
 
 IAM actions required for the ListDaemonTaskDefinitions API call.
+
+---
+
+##### `ListGatewayClusterAssociations`<sup>Required</sup> <a name="ListGatewayClusterAssociations" id="@cdk_utils/iam.ecs.ECSOperations.property.ListGatewayClusterAssociations"></a>
+
+```typescript
+public readonly ListGatewayClusterAssociations: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListGatewayClusterAssociations API call.
+
+---
+
+##### `ListGatewayRoutes`<sup>Required</sup> <a name="ListGatewayRoutes" id="@cdk_utils/iam.ecs.ECSOperations.property.ListGatewayRoutes"></a>
+
+```typescript
+public readonly ListGatewayRoutes: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListGatewayRoutes API call.
+
+---
+
+##### `ListGateways`<sup>Required</sup> <a name="ListGateways" id="@cdk_utils/iam.ecs.ECSOperations.property.ListGateways"></a>
+
+```typescript
+public readonly ListGateways: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListGateways API call.
 
 ---
 
@@ -6593,6 +6724,18 @@ public readonly UpdateExpressGatewayService: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateExpressGatewayService API call.
+
+---
+
+##### `UpdateGateway`<sup>Required</sup> <a name="UpdateGateway" id="@cdk_utils/iam.ecs.ECSOperations.property.UpdateGateway"></a>
+
+```typescript
+public readonly UpdateGateway: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateGateway API call.
 
 ---
 

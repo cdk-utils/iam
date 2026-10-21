@@ -3852,6 +3852,15 @@
       "Name": "UpdateFinding",
       "AuthorizedActions": [
         {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "securityagent.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
           "Name": "UpdateFinding",
           "Service": "securityagent"
         }

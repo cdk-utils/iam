@@ -3543,6 +3543,7 @@ new redshift.RedshiftActions()
 | <code><a href="#@cdk_utils/iam.redshift.RedshiftActions.property.ModifyEndpointAccess">ModifyEndpointAccess</a></code> | <code>string</code> | [Write] redshift:ModifyEndpointAccess. |
 | <code><a href="#@cdk_utils/iam.redshift.RedshiftActions.property.ModifyEventSubscription">ModifyEventSubscription</a></code> | <code>string</code> | [Write] redshift:ModifyEventSubscription. |
 | <code><a href="#@cdk_utils/iam.redshift.RedshiftActions.property.ModifyIntegration">ModifyIntegration</a></code> | <code>string</code> | [Write] redshift:ModifyIntegration. |
+| <code><a href="#@cdk_utils/iam.redshift.RedshiftActions.property.ModifyLakehouseConfiguration">ModifyLakehouseConfiguration</a></code> | <code>string</code> | [Write] redshift:ModifyLakehouseConfiguration. |
 | <code><a href="#@cdk_utils/iam.redshift.RedshiftActions.property.ModifyQev2IdcApplication">ModifyQev2IdcApplication</a></code> | <code>string</code> | [Write] redshift:ModifyQev2IdcApplication. |
 | <code><a href="#@cdk_utils/iam.redshift.RedshiftActions.property.ModifyRedshiftIdcApplication">ModifyRedshiftIdcApplication</a></code> | <code>string</code> | [Write] redshift:ModifyRedshiftIdcApplication. |
 | <code><a href="#@cdk_utils/iam.redshift.RedshiftActions.property.ModifySavedQuery">ModifySavedQuery</a></code> | <code>string</code> | [Write] redshift:ModifySavedQuery. |
@@ -5321,6 +5322,18 @@ public readonly ModifyIntegration: string;
 - *Type:* string
 
 [Write] redshift:ModifyIntegration.
+
+---
+
+##### `ModifyLakehouseConfiguration`<sup>Required</sup> <a name="ModifyLakehouseConfiguration" id="@cdk_utils/iam.redshift.RedshiftActions.property.ModifyLakehouseConfiguration"></a>
+
+```typescript
+public readonly ModifyLakehouseConfiguration: string;
+```
+
+- *Type:* string
+
+[Write] redshift:ModifyLakehouseConfiguration.
 
 ---
 

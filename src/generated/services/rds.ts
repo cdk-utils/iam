@@ -29,6 +29,9 @@ export class RDSActions {
 		"rds:AuthorizeDBSecurityGroupIngress";
 	/** [Write] rds:BacktrackDBCluster */
 	static readonly BacktrackDBCluster = "rds:BacktrackDBCluster";
+	/** [Write] rds:CancelDBCapacityReservation */
+	static readonly CancelDBCapacityReservation =
+		"rds:CancelDBCapacityReservation";
 	/** [Write] rds:CancelExportTask */
 	static readonly CancelExportTask = "rds:CancelExportTask";
 	/** [Write] rds:CopyCustomDBEngineVersion */
@@ -49,6 +52,9 @@ export class RDSActions {
 	/** [Write] rds:CreateCustomDBEngineVersion */
 	static readonly CreateCustomDBEngineVersion =
 		"rds:CreateCustomDBEngineVersion";
+	/** [Write] rds:CreateDBCapacityReservation */
+	static readonly CreateDBCapacityReservation =
+		"rds:CreateDBCapacityReservation";
 	/** [Write] rds:CreateDBCluster */
 	static readonly CreateDBCluster = "rds:CreateDBCluster";
 	/** [Write] rds:CreateDBClusterEndpoint */
@@ -144,6 +150,9 @@ export class RDSActions {
 		"rds:DescribeBlueGreenDeployments";
 	/** [List] rds:DescribeCertificates */
 	static readonly DescribeCertificates = "rds:DescribeCertificates";
+	/** [List] rds:DescribeDBCapacityReservations */
+	static readonly DescribeDBCapacityReservations =
+		"rds:DescribeDBCapacityReservations";
 	/** [List] rds:DescribeDBClusterAutomatedBackups */
 	static readonly DescribeDBClusterAutomatedBackups =
 		"rds:DescribeDBClusterAutomatedBackups";
@@ -276,6 +285,9 @@ export class RDSActions {
 	/** [Write] rds:ModifyCustomDBEngineVersion */
 	static readonly ModifyCustomDBEngineVersion =
 		"rds:ModifyCustomDBEngineVersion";
+	/** [Write] rds:ModifyDBCapacityReservation */
+	static readonly ModifyDBCapacityReservation =
+		"rds:ModifyDBCapacityReservation";
 	/** [Write] rds:ModifyDBCluster */
 	static readonly ModifyDBCluster = "rds:ModifyDBCluster";
 	/** [Write] rds:ModifyDBClusterEndpoint */
@@ -412,6 +424,7 @@ export class RDSActions {
 		RDSActions.AddSourceIdentifierToSubscription,
 		RDSActions.ApplyPendingMaintenanceAction,
 		RDSActions.BacktrackDBCluster,
+		RDSActions.CancelDBCapacityReservation,
 		RDSActions.CancelExportTask,
 		RDSActions.CopyCustomDBEngineVersion,
 		RDSActions.CopyDBClusterParameterGroup,
@@ -421,6 +434,7 @@ export class RDSActions {
 		RDSActions.CopyOptionGroup,
 		RDSActions.CreateBlueGreenDeployment,
 		RDSActions.CreateCustomDBEngineVersion,
+		RDSActions.CreateDBCapacityReservation,
 		RDSActions.CreateDBCluster,
 		RDSActions.CreateDBClusterEndpoint,
 		RDSActions.CreateDBClusterParameterGroup,
@@ -470,6 +484,7 @@ export class RDSActions {
 		RDSActions.ModifyCertificates,
 		RDSActions.ModifyCurrentDBClusterCapacity,
 		RDSActions.ModifyCustomDBEngineVersion,
+		RDSActions.ModifyDBCapacityReservation,
 		RDSActions.ModifyDBCluster,
 		RDSActions.ModifyDBClusterEndpoint,
 		RDSActions.ModifyDBClusterParameterGroup,
@@ -528,6 +543,7 @@ export class RDSActions {
 		RDSActions.DescribeAccountAttributes,
 		RDSActions.DescribeBlueGreenDeployments,
 		RDSActions.DescribeCertificates,
+		RDSActions.DescribeDBCapacityReservations,
 		RDSActions.DescribeDBClusterAutomatedBackups,
 		RDSActions.DescribeDBClusterBacktracks,
 		RDSActions.DescribeDBClusterEndpoints,
@@ -813,6 +829,34 @@ export interface RDSDBArnComponents {
 	readonly account: string;
 	/** The DbInstanceName component. */
 	readonly dbInstanceName: string;
+}
+
+/**
+ * Properties for building a db-capacity-reservation ARN.
+ */
+export interface RDSDBCapacityReservationArnProps {
+	/** The DBCapacityReservationIdentifier component of the ARN. */
+	readonly dbCapacityReservationIdentifier: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a db-capacity-reservation ARN.
+ */
+export interface RDSDBCapacityReservationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DBCapacityReservationIdentifier component. */
+	readonly dbCapacityReservationIdentifier: string;
 }
 
 /**
@@ -1279,6 +1323,8 @@ const ClusterSnapshotArnRegex =
 	/^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):cluster-snapshot:(?<clusterSnapshotName>[^:/?]+)$/;
 const DBArnRegex =
 	/^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):db:(?<dbInstanceName>[^:/?]+)$/;
+const DBCapacityReservationArnRegex =
+	/^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):db-capacity-reservation:(?<dbCapacityReservationIdentifier>[^:/?]+)$/;
 const DeploymentArnRegex =
 	/^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):deployment:(?<blueGreenDeploymentIdentifier>[^:/?]+)$/;
 const EsArnRegex =
@@ -1565,6 +1611,42 @@ export class RDSResources {
 			region: match.groups.region,
 			account: match.groups.account,
 			dbInstanceName: match.groups!.dbInstanceName,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the db-capacity-reservation resource.
+	 */
+	static dbCapacityReservation(
+		props: RDSDBCapacityReservationArnProps,
+	): string {
+		return `arn:${props.partition ?? "aws"}:rds:${props.region ?? "*"}:${props.account ?? "*"}:db-capacity-reservation:${props.dbCapacityReservationIdentifier}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the db-capacity-reservation resource.
+	 */
+	static isValidDBCapacityReservationArn(arn: string): boolean {
+		return DBCapacityReservationArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a db-capacity-reservation ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseDBCapacityReservationArn(
+		arn: string,
+	): RDSDBCapacityReservationArnComponents {
+		const match = DBCapacityReservationArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid db-capacity-reservation ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			dbCapacityReservationIdentifier:
+				match.groups!.dbCapacityReservationIdentifier,
 		};
 	}
 
@@ -2100,6 +2182,10 @@ export class RDSOperations {
 	];
 	/** IAM actions required for the BacktrackDBCluster API call. */
 	static readonly BacktrackDBCluster: string[] = ["rds:BacktrackDBCluster"];
+	/** IAM actions required for the CancelDBCapacityReservation API call. */
+	static readonly CancelDBCapacityReservation: string[] = [
+		"rds:CancelDBCapacityReservation",
+	];
 	/** IAM actions required for the CancelExportTask API call. */
 	static readonly CancelExportTask: string[] = ["rds:CancelExportTask"];
 	/** IAM actions required for the CopyDBClusterParameterGroup API call. */
@@ -2142,6 +2228,11 @@ export class RDSOperations {
 	static readonly CreateCustomDBEngineVersion: string[] = [
 		"rds:AddTagsToResource",
 		"rds:CreateCustomDBEngineVersion",
+	];
+	/** IAM actions required for the CreateDBCapacityReservation API call. */
+	static readonly CreateDBCapacityReservation: string[] = [
+		"rds:AddTagsToResource",
+		"rds:CreateDBCapacityReservation",
 	];
 	/** IAM actions required for the CreateDBCluster API call. */
 	static readonly CreateDBCluster: string[] = [
@@ -2340,6 +2431,10 @@ export class RDSOperations {
 	];
 	/** IAM actions required for the DescribeCertificates API call. */
 	static readonly DescribeCertificates: string[] = ["rds:DescribeCertificates"];
+	/** IAM actions required for the DescribeDBCapacityReservations API call. */
+	static readonly DescribeDBCapacityReservations: string[] = [
+		"rds:DescribeDBCapacityReservations",
+	];
 	/** IAM actions required for the DescribeDBClusterAutomatedBackups API call. */
 	static readonly DescribeDBClusterAutomatedBackups: string[] = [
 		"rds:DescribeDBClusterAutomatedBackups",
@@ -2521,6 +2616,10 @@ export class RDSOperations {
 	/** IAM actions required for the ModifyCustomDBEngineVersion API call. */
 	static readonly ModifyCustomDBEngineVersion: string[] = [
 		"rds:ModifyCustomDBEngineVersion",
+	];
+	/** IAM actions required for the ModifyDBCapacityReservation API call. */
+	static readonly ModifyDBCapacityReservation: string[] = [
+		"rds:ModifyDBCapacityReservation",
 	];
 	/** IAM actions required for the ModifyDBCluster API call. */
 	static readonly ModifyDBCluster: string[] = [
@@ -2808,6 +2907,12 @@ export class RDSConditions {
 	];
 	/** Condition keys applicable to the CreateCustomDBEngineVersion action. */
 	static readonly CreateCustomDBEngineVersionConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+		"rds:req-tag/${TagKey}",
+	];
+	/** Condition keys applicable to the CreateDBCapacityReservation action. */
+	static readonly CreateDBCapacityReservationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"rds:req-tag/${TagKey}",

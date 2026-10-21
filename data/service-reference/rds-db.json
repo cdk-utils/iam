@@ -13,7 +13,10 @@
       },
       "Resources": [
         {
-          "Name": "db-user"
+          "Name": "db-user",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
         }
       ],
       "SupportedBy": {
@@ -22,11 +25,22 @@
       }
     }
   ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
   "Resources": [
     {
       "Name": "db-user",
       "ARNFormats": [
         "arn:${Partition}:rds-db:${Region}:${Account}:dbuser:${DbiResourceId}/${DbUserName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
       ]
     }
   ],

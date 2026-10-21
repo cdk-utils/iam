@@ -12,14 +12,24 @@ export class BillingActions {
 	/** The IAM service prefix. */
 	static readonly SERVICE_PREFIX = "billing";
 
+	/** [Write] billing:AssociateContract */
+	static readonly AssociateContract = "billing:AssociateContract";
 	/** [Write] billing:AssociateSourceViews */
 	static readonly AssociateSourceViews = "billing:AssociateSourceViews";
+	/** [Write] billing:CancelContractualInvestmentAttestation */
+	static readonly CancelContractualInvestmentAttestation =
+		"billing:CancelContractualInvestmentAttestation";
 	/** [Write] billing:CreateBillingView */
 	static readonly CreateBillingView = "billing:CreateBillingView";
+	/** [Write] billing:CreateContractualInvestmentAttestation */
+	static readonly CreateContractualInvestmentAttestation =
+		"billing:CreateContractualInvestmentAttestation";
 	/** [Write] billing:DeleteBillingView */
 	static readonly DeleteBillingView = "billing:DeleteBillingView";
 	/** [PermissionManagement] billing:DeleteResourcePolicy */
 	static readonly DeleteResourcePolicy = "billing:DeleteResourcePolicy";
+	/** [Write] billing:DisassociateContract */
+	static readonly DisassociateContract = "billing:DisassociateContract";
 	/** [Write] billing:DisassociateSourceViews */
 	static readonly DisassociateSourceViews = "billing:DisassociateSourceViews";
 	/** [Read] billing:GetBillingData */
@@ -66,6 +76,17 @@ export class BillingActions {
 	/** [List] billing:ListBusinessSupportSubscriptionHistory */
 	static readonly ListBusinessSupportSubscriptionHistory =
 		"billing:ListBusinessSupportSubscriptionHistory";
+	/** [List] billing:ListContracts */
+	static readonly ListContracts = "billing:ListContracts";
+	/** [Read] billing:ListContractualInvestmentAttestations */
+	static readonly ListContractualInvestmentAttestations =
+		"billing:ListContractualInvestmentAttestations";
+	/** [Read] billing:ListContractualInvestmentSummaries */
+	static readonly ListContractualInvestmentSummaries =
+		"billing:ListContractualInvestmentSummaries";
+	/** [Read] billing:ListContractualInvestments */
+	static readonly ListContractualInvestments =
+		"billing:ListContractualInvestments";
 	/** [Read] billing:ListCreditEntitlementPeriods */
 	static readonly ListCreditEntitlementPeriods =
 		"billing:ListCreditEntitlementPeriods";
@@ -119,6 +140,9 @@ export class BillingActions {
 		BillingActions.actionGetIAMAccessPreference,
 		BillingActions.actionGetSellerOfRecord,
 		BillingActions.ListBillingViews,
+		BillingActions.ListContractualInvestmentAttestations,
+		BillingActions.ListContractualInvestmentSummaries,
+		BillingActions.ListContractualInvestments,
 		BillingActions.ListCreditEntitlementPeriods,
 		BillingActions.ListCreditEntitlements,
 		BillingActions.ListTagsForResource,
@@ -126,9 +150,13 @@ export class BillingActions {
 	];
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
+		BillingActions.AssociateContract,
 		BillingActions.AssociateSourceViews,
+		BillingActions.CancelContractualInvestmentAttestation,
 		BillingActions.CreateBillingView,
+		BillingActions.CreateContractualInvestmentAttestation,
 		BillingActions.DeleteBillingView,
+		BillingActions.DisassociateContract,
 		BillingActions.DisassociateSourceViews,
 		BillingActions.PutContractInformation,
 		BillingActions.RedeemCredits,
@@ -143,6 +171,7 @@ export class BillingActions {
 		BillingActions.ListBillingViewSegments,
 		BillingActions.ListBusinessSupportAccountCharges,
 		BillingActions.ListBusinessSupportSubscriptionHistory,
+		BillingActions.ListContracts,
 		BillingActions.ListEnterpriseSupportLinkedAccountCharges,
 		BillingActions.ListSourceViewsForBillingView,
 	];
@@ -183,8 +212,34 @@ export interface BillingBillingviewArnComponents {
 	readonly resourceId: string;
 }
 
+/**
+ * Properties for building a contract ARN.
+ */
+export interface BillingContractArnProps {
+	/** The ContractId component of the ARN. */
+	readonly contractId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a contract ARN.
+ */
+export interface BillingContractArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ContractId component. */
+	readonly contractId: string;
+}
+
 const BillingviewArnRegex =
 	/^arn:(?<partition>[^:]+):billing::(?<account>[^:]*):billingview\/(?<resourceId>[^:/?]+)$/;
+const ContractArnRegex =
+	/^arn:(?<partition>[^:]+):billing::(?<account>[^:]*):contract\/(?<contractId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for billing resources.
@@ -217,6 +272,36 @@ export class BillingResources {
 			partition: match.groups.partition,
 			account: match.groups.account,
 			resourceId: match.groups!.resourceId,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the contract resource.
+	 */
+	static contract(props: BillingContractArnProps): string {
+		return `arn:${props.partition ?? "aws"}:billing::${props.account ?? "*"}:contract/${props.contractId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the contract resource.
+	 */
+	static isValidContractArn(arn: string): boolean {
+		return ContractArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a contract ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseContractArn(arn: string): BillingContractArnComponents {
+		const match = ContractArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid contract ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			account: match.groups.account,
+			contractId: match.groups!.contractId,
 		};
 	}
 }
