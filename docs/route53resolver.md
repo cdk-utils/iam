@@ -1678,6 +1678,7 @@ new route53resolver.Route53resolverActions()
 | <code><a href="#@cdk_utils/iam.route53resolver.Route53resolverActions.property.AllTaggingActions">AllTaggingActions</a></code> | <code>string[]</code> | All tagging-level actions. |
 | <code><a href="#@cdk_utils/iam.route53resolver.Route53resolverActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
 | <code><a href="#@cdk_utils/iam.route53resolver.Route53resolverActions.property.AssociateFirewallRuleGroup">AssociateFirewallRuleGroup</a></code> | <code>string</code> | [Write] route53resolver:AssociateFirewallRuleGroup. |
+| <code><a href="#@cdk_utils/iam.route53resolver.Route53resolverActions.property.AssociateFirewallRuleGroupWithService">AssociateFirewallRuleGroupWithService</a></code> | <code>string</code> | [Write] route53resolver:AssociateFirewallRuleGroupWithService. |
 | <code><a href="#@cdk_utils/iam.route53resolver.Route53resolverActions.property.AssociateResolverEndpointIpAddress">AssociateResolverEndpointIpAddress</a></code> | <code>string</code> | [Write] route53resolver:AssociateResolverEndpointIpAddress. |
 | <code><a href="#@cdk_utils/iam.route53resolver.Route53resolverActions.property.AssociateResolverQueryLogConfig">AssociateResolverQueryLogConfig</a></code> | <code>string</code> | [Write] route53resolver:AssociateResolverQueryLogConfig. |
 | <code><a href="#@cdk_utils/iam.route53resolver.Route53resolverActions.property.AssociateResolverRule">AssociateResolverRule</a></code> | <code>string</code> | [Write] route53resolver:AssociateResolverRule. |
@@ -1984,6 +1985,18 @@ public readonly AssociateFirewallRuleGroup: string;
 - *Type:* string
 
 [Write] route53resolver:AssociateFirewallRuleGroup.
+
+---
+
+##### `AssociateFirewallRuleGroupWithService`<sup>Required</sup> <a name="AssociateFirewallRuleGroupWithService" id="@cdk_utils/iam.route53resolver.Route53resolverActions.property.AssociateFirewallRuleGroupWithService"></a>
+
+```typescript
+public readonly AssociateFirewallRuleGroupWithService: string;
+```
+
+- *Type:* string
+
+[Write] route53resolver:AssociateFirewallRuleGroupWithService.
 
 ---
 

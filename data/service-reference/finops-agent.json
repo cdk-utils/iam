@@ -1,5 +1,6 @@
 {
   "Name": "finops-agent",
+  "ServiceName": "FinOps Agent",
   "Actions": [
     {
       "Name": "AcceptAgentRequest",
@@ -692,5 +693,5 @@
       }
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

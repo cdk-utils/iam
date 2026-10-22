@@ -486,6 +486,10 @@ export class AutoscalingOperations {
 	static readonly DescribeAccountLimits: string[] = [
 		"autoscaling:DescribeAccountLimits",
 	];
+	/** IAM actions required for the DescribeAccountSettings API call. */
+	static readonly DescribeAccountSettings: string[] = [
+		"autoscaling:DescribeAccountSettings",
+	];
 	/** IAM actions required for the DescribeAdjustmentTypes API call. */
 	static readonly DescribeAdjustmentTypes: string[] = [
 		"autoscaling:DescribeAdjustmentTypes",
@@ -594,6 +598,10 @@ export class AutoscalingOperations {
 	];
 	/** IAM actions required for the LaunchInstances API call. */
 	static readonly LaunchInstances: string[] = ["autoscaling:LaunchInstances"];
+	/** IAM actions required for the PutAccountSetting API call. */
+	static readonly PutAccountSetting: string[] = [
+		"autoscaling:PutAccountSetting",
+	];
 	/** IAM actions required for the PutLifecycleHook API call. */
 	static readonly PutLifecycleHook: string[] = [
 		"iam:PassRole",

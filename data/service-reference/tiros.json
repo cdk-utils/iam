@@ -1,5 +1,6 @@
 {
   "Name": "tiros",
+  "ServiceName": "Tiros",
   "Actions": [
     {
       "Name": "CreateQuery",
@@ -77,5 +78,5 @@
       }
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

@@ -1021,6 +1021,8 @@ export class DatazoneOperations {
 		"datazone:CreateDataSource",
 		"iam:PassRole",
 	];
+	/** IAM actions required for the CreateDesignation API call. */
+	static readonly CreateDesignation: string[] = ["datazone:CreateDesignation"];
 	/** IAM actions required for the CreateDomain API call. */
 	static readonly CreateDomain: string[] = [
 		"datazone:CreateDomain",
@@ -1109,6 +1111,8 @@ export class DatazoneOperations {
 	static readonly DeleteDataProduct: string[] = ["datazone:DeleteDataProduct"];
 	/** IAM actions required for the DeleteDataSource API call. */
 	static readonly DeleteDataSource: string[] = ["datazone:DeleteDataSource"];
+	/** IAM actions required for the DeleteDesignation API call. */
+	static readonly DeleteDesignation: string[] = ["datazone:DeleteDesignation"];
 	/** IAM actions required for the DeleteDomain API call. */
 	static readonly DeleteDomain: string[] = ["datazone:DeleteDomain"];
 	/** IAM actions required for the DeleteDomainUnit API call. */
@@ -1203,6 +1207,8 @@ export class DatazoneOperations {
 	static readonly opGetDataSource: string[] = ["datazone:GetDataSource"];
 	/** IAM actions required for the GetDataSourceRun API call. */
 	static readonly opGetDataSourceRun: string[] = ["datazone:GetDataSourceRun"];
+	/** IAM actions required for the GetDesignation API call. */
+	static readonly opGetDesignation: string[] = ["datazone:GetDesignation"];
 	/** IAM actions required for the GetDomain API call. */
 	static readonly opGetDomain: string[] = ["datazone:GetDomain"];
 	/** IAM actions required for the GetDomainUnit API call. */
@@ -1317,6 +1323,8 @@ export class DatazoneOperations {
 	];
 	/** IAM actions required for the ListDataSources API call. */
 	static readonly ListDataSources: string[] = ["datazone:ListDataSources"];
+	/** IAM actions required for the ListDesignations API call. */
+	static readonly ListDesignations: string[] = ["datazone:ListDesignations"];
 	/** IAM actions required for the ListDomainUnitsForParent API call. */
 	static readonly ListDomainUnitsForParent: string[] = [
 		"datazone:ListDomainUnitsForParent",
@@ -1482,6 +1490,8 @@ export class DatazoneOperations {
 		"iam:PassRole",
 		"datazone:UpdateDataSource",
 	];
+	/** IAM actions required for the UpdateDesignation API call. */
+	static readonly UpdateDesignation: string[] = ["datazone:UpdateDesignation"];
 	/** IAM actions required for the UpdateDomain API call. */
 	static readonly UpdateDomain: string[] = [
 		"iam:PassRole",

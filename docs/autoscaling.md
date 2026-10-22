@@ -2291,6 +2291,7 @@ new autoscaling.AutoscalingOperations()
 | <code><a href="#@cdk_utils/iam.autoscaling.AutoscalingOperations.property.DeleteTags">DeleteTags</a></code> | <code>string[]</code> | IAM actions required for the DeleteTags API call. |
 | <code><a href="#@cdk_utils/iam.autoscaling.AutoscalingOperations.property.DeleteWarmPool">DeleteWarmPool</a></code> | <code>string[]</code> | IAM actions required for the DeleteWarmPool API call. |
 | <code><a href="#@cdk_utils/iam.autoscaling.AutoscalingOperations.property.DescribeAccountLimits">DescribeAccountLimits</a></code> | <code>string[]</code> | IAM actions required for the DescribeAccountLimits API call. |
+| <code><a href="#@cdk_utils/iam.autoscaling.AutoscalingOperations.property.DescribeAccountSettings">DescribeAccountSettings</a></code> | <code>string[]</code> | IAM actions required for the DescribeAccountSettings API call. |
 | <code><a href="#@cdk_utils/iam.autoscaling.AutoscalingOperations.property.DescribeAdjustmentTypes">DescribeAdjustmentTypes</a></code> | <code>string[]</code> | IAM actions required for the DescribeAdjustmentTypes API call. |
 | <code><a href="#@cdk_utils/iam.autoscaling.AutoscalingOperations.property.DescribeAutoScalingGroups">DescribeAutoScalingGroups</a></code> | <code>string[]</code> | IAM actions required for the DescribeAutoScalingGroups API call. |
 | <code><a href="#@cdk_utils/iam.autoscaling.AutoscalingOperations.property.DescribeAutoScalingInstances">DescribeAutoScalingInstances</a></code> | <code>string[]</code> | IAM actions required for the DescribeAutoScalingInstances API call. |
@@ -2325,6 +2326,7 @@ new autoscaling.AutoscalingOperations()
 | <code><a href="#@cdk_utils/iam.autoscaling.AutoscalingOperations.property.opSetDesiredCapacity">opSetDesiredCapacity</a></code> | <code>string[]</code> | IAM actions required for the SetDesiredCapacity API call. |
 | <code><a href="#@cdk_utils/iam.autoscaling.AutoscalingOperations.property.opSetInstanceHealth">opSetInstanceHealth</a></code> | <code>string[]</code> | IAM actions required for the SetInstanceHealth API call. |
 | <code><a href="#@cdk_utils/iam.autoscaling.AutoscalingOperations.property.opSetInstanceProtection">opSetInstanceProtection</a></code> | <code>string[]</code> | IAM actions required for the SetInstanceProtection API call. |
+| <code><a href="#@cdk_utils/iam.autoscaling.AutoscalingOperations.property.PutAccountSetting">PutAccountSetting</a></code> | <code>string[]</code> | IAM actions required for the PutAccountSetting API call. |
 | <code><a href="#@cdk_utils/iam.autoscaling.AutoscalingOperations.property.PutLifecycleHook">PutLifecycleHook</a></code> | <code>string[]</code> | IAM actions required for the PutLifecycleHook API call. |
 | <code><a href="#@cdk_utils/iam.autoscaling.AutoscalingOperations.property.PutNotificationConfiguration">PutNotificationConfiguration</a></code> | <code>string[]</code> | IAM actions required for the PutNotificationConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.autoscaling.AutoscalingOperations.property.PutScalingPolicy">PutScalingPolicy</a></code> | <code>string[]</code> | IAM actions required for the PutScalingPolicy API call. |
@@ -2577,6 +2579,18 @@ public readonly DescribeAccountLimits: string[];
 - *Type:* string[]
 
 IAM actions required for the DescribeAccountLimits API call.
+
+---
+
+##### `DescribeAccountSettings`<sup>Required</sup> <a name="DescribeAccountSettings" id="@cdk_utils/iam.autoscaling.AutoscalingOperations.property.DescribeAccountSettings"></a>
+
+```typescript
+public readonly DescribeAccountSettings: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeAccountSettings API call.
 
 ---
 
@@ -2985,6 +2999,18 @@ public readonly opSetInstanceProtection: string[];
 - *Type:* string[]
 
 IAM actions required for the SetInstanceProtection API call.
+
+---
+
+##### `PutAccountSetting`<sup>Required</sup> <a name="PutAccountSetting" id="@cdk_utils/iam.autoscaling.AutoscalingOperations.property.PutAccountSetting"></a>
+
+```typescript
+public readonly PutAccountSetting: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the PutAccountSetting API call.
 
 ---
 

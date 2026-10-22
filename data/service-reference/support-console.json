@@ -1,5 +1,6 @@
 {
   "Name": "support-console",
+  "ServiceName": "Support Console",
   "Actions": [
     {
       "Name": "CheckSubscription",
@@ -197,5 +198,5 @@
       }
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

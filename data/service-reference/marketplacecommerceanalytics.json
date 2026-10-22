@@ -1,5 +1,6 @@
 {
   "Name": "marketplacecommerceanalytics",
+  "ServiceName": "CAS",
   "Actions": [
     {
       "Name": "GenerateDataSet",
@@ -54,5 +55,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

@@ -1,5 +1,6 @@
 {
   "Name": "q",
+  "ServiceName": "Q",
   "Actions": [
     {
       "Name": "AssociateConnectorResource",
@@ -1028,5 +1029,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

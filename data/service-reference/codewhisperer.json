@@ -1,5 +1,6 @@
 {
   "Name": "codewhisperer",
+  "ServiceName": "CodeWhisperer",
   "Actions": [
     {
       "Name": "AllowVendedLogDeliveryForResource",
@@ -451,5 +452,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

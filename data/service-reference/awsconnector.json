@@ -1,5 +1,6 @@
 {
   "Name": "awsconnector",
+  "ServiceName": "Connector Service",
   "Actions": [
     {
       "Name": "GetConnectorHealth",
@@ -47,5 +48,5 @@
       }
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

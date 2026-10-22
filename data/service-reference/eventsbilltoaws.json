@@ -1,5 +1,6 @@
 {
   "Name": "eventsbilltoaws",
+  "ServiceName": "eventsbilltoaws",
   "Actions": [
     {
       "Name": "approve",
@@ -82,5 +83,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

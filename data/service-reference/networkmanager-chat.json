@@ -1,5 +1,6 @@
 {
   "Name": "networkmanager-chat",
+  "ServiceName": "Network Manager Chat",
   "Actions": [
     {
       "Name": "CancelMessageResponse",
@@ -107,5 +108,5 @@
       }
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

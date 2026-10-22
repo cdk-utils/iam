@@ -1,5 +1,6 @@
 {
   "Name": "aws-external-anthropic",
+  "ServiceName": "Claude Platform on AWS",
   "Actions": [
     {
       "Name": "ArchiveAgent",
@@ -1876,5 +1877,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

@@ -937,7 +937,6 @@ new securityagent.SecurityagentActions()
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.BatchDeletePentests">BatchDeletePentests</a></code> | <code>string</code> | [Write] securityagent:BatchDeletePentests. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.BatchDeleteSecurityRequirements">BatchDeleteSecurityRequirements</a></code> | <code>string</code> | [Write] securityagent:BatchDeleteSecurityRequirements. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.BatchDeleteThreatModels">BatchDeleteThreatModels</a></code> | <code>string</code> | [Write] securityagent:BatchDeleteThreatModels. |
-| <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.BatchDeleteThreats">BatchDeleteThreats</a></code> | <code>string</code> | [Write] securityagent:BatchDeleteThreats. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.BatchDisassociateFindingIssue">BatchDisassociateFindingIssue</a></code> | <code>string</code> | [Write] securityagent:BatchDisassociateFindingIssue. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.BatchExportFindings">BatchExportFindings</a></code> | <code>string</code> | [Write] securityagent:BatchExportFindings. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.BatchGetAgentSpaces">BatchGetAgentSpaces</a></code> | <code>string</code> | [Read] securityagent:BatchGetAgentSpaces. |
@@ -1283,18 +1282,6 @@ public readonly BatchDeleteThreatModels: string;
 - *Type:* string
 
 [Write] securityagent:BatchDeleteThreatModels.
-
----
-
-##### `BatchDeleteThreats`<sup>Required</sup> <a name="BatchDeleteThreats" id="@cdk_utils/iam.securityagent.SecurityagentActions.property.BatchDeleteThreats"></a>
-
-```typescript
-public readonly BatchDeleteThreats: string;
-```
-
-- *Type:* string
-
-[Write] securityagent:BatchDeleteThreats.
 
 ---
 

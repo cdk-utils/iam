@@ -1,5 +1,6 @@
 {
   "Name": "ssm-guiconnect",
+  "ServiceName": "GUI Connect",
   "Actions": [
     {
       "Name": "CancelConnection",
@@ -20,6 +21,7 @@
       "Name": "DeleteConnectionRecordingPreferences",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -50,6 +52,7 @@
       "Name": "GetConnectionRecordingPreferences",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -95,6 +98,7 @@
       "Name": "UpdateConnectionRecordingPreferences",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -157,5 +161,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

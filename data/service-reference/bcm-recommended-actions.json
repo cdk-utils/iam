@@ -1,10 +1,12 @@
 {
   "Name": "bcm-recommended-actions",
+  "ServiceName": "BillingAndCostManagementRecommendedActions",
   "Actions": [
     {
       "Name": "ListRecommendedActions",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -35,5 +37,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

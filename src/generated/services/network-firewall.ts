@@ -34,6 +34,9 @@ export class NetworkFirewallActions {
 	/** [Write] network-firewall:CreateFirewallPolicy */
 	static readonly CreateFirewallPolicy =
 		"network-firewall:CreateFirewallPolicy";
+	/** [Write] network-firewall:CreateFirewallPolicyV2 */
+	static readonly CreateFirewallPolicyV2 =
+		"network-firewall:CreateFirewallPolicyV2";
 	/** [Write] network-firewall:CreateProxy */
 	static readonly CreateProxy = "network-firewall:CreateProxy";
 	/** [Write] network-firewall:CreateProxyConfiguration */
@@ -60,6 +63,9 @@ export class NetworkFirewallActions {
 	/** [Write] network-firewall:DeleteFirewallPolicy */
 	static readonly DeleteFirewallPolicy =
 		"network-firewall:DeleteFirewallPolicy";
+	/** [Write] network-firewall:DeleteFirewallPolicyV2 */
+	static readonly DeleteFirewallPolicyV2 =
+		"network-firewall:DeleteFirewallPolicyV2";
 	/** [Write] network-firewall:DeleteNetworkFirewallTransitGatewayAttachment */
 	static readonly DeleteNetworkFirewallTransitGatewayAttachment =
 		"network-firewall:DeleteNetworkFirewallTransitGatewayAttachment";
@@ -95,6 +101,9 @@ export class NetworkFirewallActions {
 	/** [Read] network-firewall:DescribeFirewallPolicy */
 	static readonly DescribeFirewallPolicy =
 		"network-firewall:DescribeFirewallPolicy";
+	/** [Read] network-firewall:DescribeFirewallPolicyV2 */
+	static readonly DescribeFirewallPolicyV2 =
+		"network-firewall:DescribeFirewallPolicyV2";
 	/** [Read] network-firewall:DescribeFlowOperation */
 	static readonly DescribeFlowOperation =
 		"network-firewall:DescribeFlowOperation";
@@ -147,6 +156,9 @@ export class NetworkFirewallActions {
 	/** [List] network-firewall:ListFirewallPolicies */
 	static readonly ListFirewallPolicies =
 		"network-firewall:ListFirewallPolicies";
+	/** [List] network-firewall:ListFirewallPoliciesV2 */
+	static readonly ListFirewallPoliciesV2 =
+		"network-firewall:ListFirewallPoliciesV2";
 	/** [List] network-firewall:ListFirewalls */
 	static readonly ListFirewalls = "network-firewall:ListFirewalls";
 	/** [Read] network-firewall:ListFlowOperationResults */
@@ -210,6 +222,9 @@ export class NetworkFirewallActions {
 	/** [Write] network-firewall:UpdateFirewallPolicyChangeProtection */
 	static readonly UpdateFirewallPolicyChangeProtection =
 		"network-firewall:UpdateFirewallPolicyChangeProtection";
+	/** [Write] network-firewall:UpdateFirewallPolicyV2 */
+	static readonly UpdateFirewallPolicyV2 =
+		"network-firewall:UpdateFirewallPolicyV2";
 	/** [Write] network-firewall:UpdateLoggingConfiguration */
 	static readonly UpdateLoggingConfiguration =
 		"network-firewall:UpdateLoggingConfiguration";
@@ -241,6 +256,7 @@ export class NetworkFirewallActions {
 		NetworkFirewallActions.DescribeFirewall,
 		NetworkFirewallActions.DescribeFirewallMetadata,
 		NetworkFirewallActions.DescribeFirewallPolicy,
+		NetworkFirewallActions.DescribeFirewallPolicyV2,
 		NetworkFirewallActions.DescribeFlowOperation,
 		NetworkFirewallActions.DescribeLoggingConfiguration,
 		NetworkFirewallActions.DescribeProxy,
@@ -266,6 +282,7 @@ export class NetworkFirewallActions {
 		NetworkFirewallActions.CreateContainerAssociation,
 		NetworkFirewallActions.CreateFirewall,
 		NetworkFirewallActions.CreateFirewallPolicy,
+		NetworkFirewallActions.CreateFirewallPolicyV2,
 		NetworkFirewallActions.CreateProxy,
 		NetworkFirewallActions.CreateProxyConfiguration,
 		NetworkFirewallActions.CreateProxyRuleGroup,
@@ -276,6 +293,7 @@ export class NetworkFirewallActions {
 		NetworkFirewallActions.DeleteContainerAssociation,
 		NetworkFirewallActions.DeleteFirewall,
 		NetworkFirewallActions.DeleteFirewallPolicy,
+		NetworkFirewallActions.DeleteFirewallPolicyV2,
 		NetworkFirewallActions.DeleteNetworkFirewallTransitGatewayAttachment,
 		NetworkFirewallActions.DeleteProxy,
 		NetworkFirewallActions.DeleteProxyConfiguration,
@@ -301,6 +319,7 @@ export class NetworkFirewallActions {
 		NetworkFirewallActions.UpdateFirewallEncryptionConfiguration,
 		NetworkFirewallActions.UpdateFirewallPolicy,
 		NetworkFirewallActions.UpdateFirewallPolicyChangeProtection,
+		NetworkFirewallActions.UpdateFirewallPolicyV2,
 		NetworkFirewallActions.UpdateLoggingConfiguration,
 		NetworkFirewallActions.UpdateProxy,
 		NetworkFirewallActions.UpdateProxyConfiguration,
@@ -316,6 +335,7 @@ export class NetworkFirewallActions {
 		NetworkFirewallActions.ListAnalysisReports,
 		NetworkFirewallActions.ListContainerAssociations,
 		NetworkFirewallActions.ListFirewallPolicies,
+		NetworkFirewallActions.ListFirewallPoliciesV2,
 		NetworkFirewallActions.ListFirewalls,
 		NetworkFirewallActions.ListFlowOperations,
 		NetworkFirewallActions.ListProxies,
@@ -409,6 +429,90 @@ export interface NetworkFirewallFirewallPolicyArnProps {
  * Parsed components of a FirewallPolicy ARN.
  */
 export interface NetworkFirewallFirewallPolicyArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Name component. */
+	readonly name: string;
+}
+
+/**
+ * Properties for building a FirewallPolicyV2 ARN.
+ */
+export interface NetworkFirewallFirewallPolicyV2ArnProps {
+	/** The Name component of the ARN. */
+	readonly name: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a FirewallPolicyV2 ARN.
+ */
+export interface NetworkFirewallFirewallPolicyV2ArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Name component. */
+	readonly name: string;
+}
+
+/**
+ * Properties for building a FirewallRuleGroup ARN.
+ */
+export interface NetworkFirewallFirewallRuleGroupArnProps {
+	/** The Name component of the ARN. */
+	readonly name: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a FirewallRuleGroup ARN.
+ */
+export interface NetworkFirewallFirewallRuleGroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Name component. */
+	readonly name: string;
+}
+
+/**
+ * Properties for building a IpsRuleGroup ARN.
+ */
+export interface NetworkFirewallIpsRuleGroupArnProps {
+	/** The Name component of the ARN. */
+	readonly name: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a IpsRuleGroup ARN.
+ */
+export interface NetworkFirewallIpsRuleGroupArnComponents {
 	/** AWS partition. */
 	readonly partition: string;
 	/** AWS region. */
@@ -621,6 +725,12 @@ const FirewallArnRegex =
 	/^arn:(?<partition>[^:]+):network-firewall:(?<region>[^:]*):(?<account>[^:]*):firewall\/(?<name>[^:/?]+)$/;
 const FirewallPolicyArnRegex =
 	/^arn:(?<partition>[^:]+):network-firewall:(?<region>[^:]*):(?<account>[^:]*):firewall-policy\/(?<name>[^:/?]+)$/;
+const FirewallPolicyV2ArnRegex =
+	/^arn:(?<partition>[^:]+):network-firewall:(?<region>[^:]*):(?<account>[^:]*):firewall-policy-v2\/(?<name>[^:/?]+)$/;
+const FirewallRuleGroupArnRegex =
+	/^arn:(?<partition>[^:]+):network-firewall:(?<region>[^:]*):(?<account>[^:]*):firewall-rulegroup\/(?<name>[^:/?]+)$/;
+const IpsRuleGroupArnRegex =
+	/^arn:(?<partition>[^:]+):network-firewall:(?<region>[^:]*):(?<account>[^:]*):ips-rulegroup\/(?<name>[^:/?]+)$/;
 const ProxyArnRegex =
 	/^arn:(?<partition>[^:]+):network-firewall:(?<region>[^:]*):(?<account>[^:]*):proxy\/(?<name>[^:/?]+)$/;
 const ProxyConfigurationArnRegex =
@@ -730,6 +840,109 @@ export class NetworkFirewallResources {
 		const match = FirewallPolicyArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid FirewallPolicy ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			name: match.groups!.name,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the FirewallPolicyV2 resource.
+	 */
+	static firewallPolicyV2(
+		props: NetworkFirewallFirewallPolicyV2ArnProps,
+	): string {
+		return `arn:${props.partition ?? "aws"}:network-firewall:${props.region ?? "*"}:${props.account ?? "*"}:firewall-policy-v2/${props.name}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the FirewallPolicyV2 resource.
+	 */
+	static isValidFirewallPolicyV2Arn(arn: string): boolean {
+		return FirewallPolicyV2ArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a FirewallPolicyV2 ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseFirewallPolicyV2Arn(
+		arn: string,
+	): NetworkFirewallFirewallPolicyV2ArnComponents {
+		const match = FirewallPolicyV2ArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid FirewallPolicyV2 ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			name: match.groups!.name,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the FirewallRuleGroup resource.
+	 */
+	static firewallRuleGroup(
+		props: NetworkFirewallFirewallRuleGroupArnProps,
+	): string {
+		return `arn:${props.partition ?? "aws"}:network-firewall:${props.region ?? "*"}:${props.account ?? "*"}:firewall-rulegroup/${props.name}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the FirewallRuleGroup resource.
+	 */
+	static isValidFirewallRuleGroupArn(arn: string): boolean {
+		return FirewallRuleGroupArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a FirewallRuleGroup ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseFirewallRuleGroupArn(
+		arn: string,
+	): NetworkFirewallFirewallRuleGroupArnComponents {
+		const match = FirewallRuleGroupArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid FirewallRuleGroup ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			name: match.groups!.name,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the IpsRuleGroup resource.
+	 */
+	static ipsRuleGroup(props: NetworkFirewallIpsRuleGroupArnProps): string {
+		return `arn:${props.partition ?? "aws"}:network-firewall:${props.region ?? "*"}:${props.account ?? "*"}:ips-rulegroup/${props.name}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the IpsRuleGroup resource.
+	 */
+	static isValidIpsRuleGroupArn(arn: string): boolean {
+		return IpsRuleGroupArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a IpsRuleGroup ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseIpsRuleGroupArn(
+		arn: string,
+	): NetworkFirewallIpsRuleGroupArnComponents {
+		const match = IpsRuleGroupArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid IpsRuleGroup ARN: ${arn}`);
 		}
 		return {
 			partition: match.groups.partition,
@@ -1346,6 +1559,11 @@ export class NetworkFirewallConditions {
 	];
 	/** Condition keys applicable to the CreateFirewallPolicy action. */
 	static readonly CreateFirewallPolicyConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
+	/** Condition keys applicable to the CreateFirewallPolicyV2 action. */
+	static readonly CreateFirewallPolicyV2ConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];

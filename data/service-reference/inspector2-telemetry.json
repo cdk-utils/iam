@@ -1,5 +1,6 @@
 {
   "Name": "inspector2-telemetry",
+  "ServiceName": "Inspector2Telemtry",
   "Actions": [
     {
       "Name": "NotifyHeartbeat",
@@ -77,5 +78,5 @@
       }
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

@@ -1,5 +1,6 @@
 {
   "Name": "verifiedpermissions",
+  "ServiceName": "Verified Permissions",
   "Actions": [
     {
       "Name": "CreateIdentitySource",
@@ -1001,5 +1002,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

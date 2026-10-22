@@ -1,5 +1,6 @@
 {
   "Name": "codedeploy-commands-secure",
+  "ServiceName": "CodeDeploy Commands Secure",
   "Actions": [
     {
       "Name": "GetDeploymentSpecification",
@@ -62,5 +63,5 @@
       }
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

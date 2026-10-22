@@ -1,5 +1,6 @@
 {
   "Name": "bedrock-websearch",
+  "ServiceName": "Bedrock Web Search",
   "Actions": [
     {
       "Name": "ExternalWebAccess",
@@ -65,5 +66,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

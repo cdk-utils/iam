@@ -1,5 +1,6 @@
 {
   "Name": "iotfleethub",
+  "ServiceName": "IoT Fleet Hub",
   "Actions": [
     {
       "Name": "CreateApplication",
@@ -194,5 +195,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

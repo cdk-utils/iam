@@ -1,5 +1,6 @@
 {
   "Name": "user-subscriptions",
+  "ServiceName": "User Subscriptions",
   "Actions": [
     {
       "Name": "CancelPurchaseSession",
@@ -358,5 +359,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

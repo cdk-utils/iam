@@ -1,5 +1,6 @@
 {
   "Name": "elemental-support-content",
+  "ServiceName": "Elemental Support Content",
   "Actions": [
     {
       "Name": "Query",
@@ -17,5 +18,5 @@
       }
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

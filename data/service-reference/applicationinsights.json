@@ -1,5 +1,6 @@
 {
   "Name": "applicationinsights",
+  "ServiceName": "CloudWatch Application Insights",
   "Actions": [
     {
       "Name": "AddWorkload",
@@ -871,5 +872,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

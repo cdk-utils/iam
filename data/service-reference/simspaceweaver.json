@@ -1,5 +1,6 @@
 {
   "Name": "simspaceweaver",
+  "ServiceName": "SimSpace Weaver",
   "Actions": [
     {
       "Name": "CreateSnapshot",
@@ -349,5 +350,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

@@ -1,5 +1,6 @@
 {
   "Name": "ecs-mcp",
+  "ServiceName": "ECS MCP",
   "Actions": [
     {
       "Name": "InvokeReadOnlyTools",
@@ -32,5 +33,5 @@
       }
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

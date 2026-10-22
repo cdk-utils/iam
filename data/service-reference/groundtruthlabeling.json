@@ -1,5 +1,6 @@
 {
   "Name": "groundtruthlabeling",
+  "ServiceName": "GroundTruth Labeling",
   "Actions": [
     {
       "Name": "AssociatePatchToManifestJob",
@@ -242,5 +243,5 @@
       }
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

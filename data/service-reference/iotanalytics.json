@@ -1,5 +1,6 @@
 {
   "Name": "iotanalytics",
+  "ServiceName": "IoT Analytics",
   "Actions": [
     {
       "Name": "BatchPutMessage",
@@ -764,5 +765,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

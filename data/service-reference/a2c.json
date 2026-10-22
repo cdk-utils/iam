@@ -1,5 +1,6 @@
 {
   "Name": "a2c",
+  "ServiceName": "App2Container",
   "Actions": [
     {
       "Name": "GetContainerizationJobDetails",
@@ -62,5 +63,5 @@
       }
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

@@ -1,5 +1,6 @@
 {
   "Name": "sqlworkbench",
+  "ServiceName": "SQL Workbench",
   "Actions": [
     {
       "Name": "AssociateConnectionWithChart",
@@ -1549,5 +1550,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

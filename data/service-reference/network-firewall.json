@@ -1,10 +1,12 @@
 {
   "Name": "network-firewall",
+  "ServiceName": "Network Firewall",
   "Actions": [
     {
       "Name": "AcceptNetworkFirewallTransitGatewayAttachment",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -25,6 +27,7 @@
       "Name": "AssociateAvailabilityZones",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -49,6 +52,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -61,6 +65,9 @@
         },
         {
           "Name": "FirewallPolicy"
+        },
+        {
+          "Name": "FirewallPolicyV2"
         }
       ],
       "SupportedBy": {
@@ -72,6 +79,7 @@
       "Name": "AssociateSubnets",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -92,6 +100,7 @@
       "Name": "AttachRuleGroupsToProxyConfiguration",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -119,6 +128,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -143,6 +153,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -155,6 +166,9 @@
         },
         {
           "Name": "FirewallPolicy"
+        },
+        {
+          "Name": "FirewallPolicyV2"
         }
       ],
       "SupportedBy": {
@@ -170,6 +184,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -196,6 +211,39 @@
       }
     },
     {
+      "Name": "CreateFirewallPolicyV2",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "FirewallPolicyV2"
+        },
+        {
+          "Name": "FirewallRuleGroup"
+        },
+        {
+          "Name": "IpsRuleGroup"
+        },
+        {
+          "Name": "TLSInspectionConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "CreateProxy",
       "ActionConditionKeys": [
         "aws:RequestTag/${TagKey}",
@@ -203,6 +251,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -230,6 +279,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -257,6 +307,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -277,6 +328,7 @@
       "Name": "CreateProxyRules",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -301,6 +353,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -308,6 +361,12 @@
         }
       },
       "Resources": [
+        {
+          "Name": "FirewallRuleGroup"
+        },
+        {
+          "Name": "IpsRuleGroup"
+        },
         {
           "Name": "StatefulRuleGroup"
         },
@@ -328,6 +387,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -352,6 +412,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -375,6 +436,7 @@
       "Name": "DeleteContainerAssociation",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -395,6 +457,7 @@
       "Name": "DeleteFirewall",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -415,6 +478,7 @@
       "Name": "DeleteFirewallPolicy",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -432,9 +496,30 @@
       }
     },
     {
+      "Name": "DeleteFirewallPolicyV2",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "FirewallPolicyV2"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "DeleteNetworkFirewallTransitGatewayAttachment",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -455,6 +540,7 @@
       "Name": "DeleteProxy",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -475,6 +561,7 @@
       "Name": "DeleteProxyConfiguration",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -495,6 +582,7 @@
       "Name": "DeleteProxyRuleGroup",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -515,6 +603,7 @@
       "Name": "DeleteProxyRules",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -535,6 +624,7 @@
       "Name": "DeleteResourcePolicy",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -547,6 +637,15 @@
         },
         {
           "Name": "FirewallPolicy"
+        },
+        {
+          "Name": "FirewallPolicyV2"
+        },
+        {
+          "Name": "FirewallRuleGroup"
+        },
+        {
+          "Name": "IpsRuleGroup"
         },
         {
           "Name": "StatefulRuleGroup"
@@ -564,6 +663,7 @@
       "Name": "DeleteRuleGroup",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -571,6 +671,12 @@
         }
       },
       "Resources": [
+        {
+          "Name": "FirewallRuleGroup"
+        },
+        {
+          "Name": "IpsRuleGroup"
+        },
         {
           "Name": "StatefulRuleGroup"
         },
@@ -587,6 +693,7 @@
       "Name": "DeleteTLSInspectionConfiguration",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -607,6 +714,7 @@
       "Name": "DeleteVpcEndpointAssociation",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -627,6 +735,7 @@
       "Name": "DescribeContainerAssociation",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -647,6 +756,7 @@
       "Name": "DescribeFirewall",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -667,6 +777,7 @@
       "Name": "DescribeFirewallMetadata",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -687,6 +798,7 @@
       "Name": "DescribeFirewallPolicy",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -713,9 +825,39 @@
       }
     },
     {
+      "Name": "DescribeFirewallPolicyV2",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "FirewallPolicyV2"
+        },
+        {
+          "Name": "FirewallRuleGroup"
+        },
+        {
+          "Name": "IpsRuleGroup"
+        },
+        {
+          "Name": "TLSInspectionConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "DescribeFlowOperation",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -736,6 +878,7 @@
       "Name": "DescribeLoggingConfiguration",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -756,6 +899,7 @@
       "Name": "DescribeProxy",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -776,6 +920,7 @@
       "Name": "DescribeProxyConfiguration",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -796,6 +941,7 @@
       "Name": "DescribeProxyRule",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -816,6 +962,7 @@
       "Name": "DescribeProxyRuleGroup",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -836,6 +983,7 @@
       "Name": "DescribeResourcePolicy",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -848,6 +996,15 @@
         },
         {
           "Name": "FirewallPolicy"
+        },
+        {
+          "Name": "FirewallPolicyV2"
+        },
+        {
+          "Name": "FirewallRuleGroup"
+        },
+        {
+          "Name": "IpsRuleGroup"
         },
         {
           "Name": "StatefulRuleGroup"
@@ -865,6 +1022,7 @@
       "Name": "DescribeRuleGroup",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -872,6 +1030,12 @@
         }
       },
       "Resources": [
+        {
+          "Name": "FirewallRuleGroup"
+        },
+        {
+          "Name": "IpsRuleGroup"
+        },
         {
           "Name": "StatefulRuleGroup"
         },
@@ -888,6 +1052,7 @@
       "Name": "DescribeRuleGroupMetadata",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -895,6 +1060,12 @@
         }
       },
       "Resources": [
+        {
+          "Name": "FirewallRuleGroup"
+        },
+        {
+          "Name": "IpsRuleGroup"
+        },
         {
           "Name": "StatefulRuleGroup"
         },
@@ -911,6 +1082,7 @@
       "Name": "DescribeRuleGroupSummary",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -918,6 +1090,12 @@
         }
       },
       "Resources": [
+        {
+          "Name": "FirewallRuleGroup"
+        },
+        {
+          "Name": "IpsRuleGroup"
+        },
         {
           "Name": "StatefulRuleGroup"
         },
@@ -934,6 +1112,7 @@
       "Name": "DescribeTLSInspectionConfiguration",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -954,6 +1133,7 @@
       "Name": "DescribeVpcEndpointAssociation",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -974,6 +1154,7 @@
       "Name": "DetachRuleGroupsFromProxyConfiguration",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -997,6 +1178,7 @@
       "Name": "DisassociateAvailabilityZones",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1017,6 +1199,7 @@
       "Name": "DisassociateSubnets",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1037,6 +1220,7 @@
       "Name": "GetAnalysisReportResults",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1057,6 +1241,7 @@
       "Name": "ListAnalysisReports",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1077,6 +1262,7 @@
       "Name": "ListContainerAssociations",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1092,6 +1278,7 @@
       "Name": "ListFirewallPolicies",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1109,9 +1296,30 @@
       }
     },
     {
+      "Name": "ListFirewallPoliciesV2",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "FirewallPolicyV2"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ListFirewalls",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1132,6 +1340,7 @@
       "Name": "ListFlowOperationResults",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1152,6 +1361,7 @@
       "Name": "ListFlowOperations",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1172,6 +1382,7 @@
       "Name": "ListProxies",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1192,6 +1403,7 @@
       "Name": "ListProxyConfigurations",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1212,6 +1424,7 @@
       "Name": "ListProxyRuleGroups",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1232,6 +1445,7 @@
       "Name": "ListRuleGroups",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1247,6 +1461,7 @@
       "Name": "ListTLSInspectionConfigurations",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1267,6 +1482,7 @@
       "Name": "ListTagsForResource",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1282,6 +1498,15 @@
         },
         {
           "Name": "FirewallPolicy"
+        },
+        {
+          "Name": "FirewallPolicyV2"
+        },
+        {
+          "Name": "FirewallRuleGroup"
+        },
+        {
+          "Name": "IpsRuleGroup"
         },
         {
           "Name": "StatefulRuleGroup"
@@ -1305,6 +1530,7 @@
       "Name": "ListVpcEndpointAssociations",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1325,6 +1551,7 @@
       "Name": "PutResourcePolicy",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1337,6 +1564,15 @@
         },
         {
           "Name": "FirewallPolicy"
+        },
+        {
+          "Name": "FirewallPolicyV2"
+        },
+        {
+          "Name": "FirewallRuleGroup"
+        },
+        {
+          "Name": "IpsRuleGroup"
         },
         {
           "Name": "StatefulRuleGroup"
@@ -1354,6 +1590,7 @@
       "Name": "RejectNetworkFirewallTransitGatewayAttachment",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1374,6 +1611,7 @@
       "Name": "StartAnalysisReport",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1394,6 +1632,7 @@
       "Name": "StartFlowCapture",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1414,6 +1653,7 @@
       "Name": "StartFlowFlush",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1438,6 +1678,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": true,
@@ -1453,6 +1694,15 @@
         },
         {
           "Name": "FirewallPolicy"
+        },
+        {
+          "Name": "FirewallPolicyV2"
+        },
+        {
+          "Name": "FirewallRuleGroup"
+        },
+        {
+          "Name": "IpsRuleGroup"
         },
         {
           "Name": "Proxy"
@@ -1488,6 +1738,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": true,
@@ -1503,6 +1754,15 @@
         },
         {
           "Name": "FirewallPolicy"
+        },
+        {
+          "Name": "FirewallPolicyV2"
+        },
+        {
+          "Name": "FirewallRuleGroup"
+        },
+        {
+          "Name": "IpsRuleGroup"
         },
         {
           "Name": "Proxy"
@@ -1535,6 +1795,7 @@
       "Name": "UpdateAvailabilityZoneChangeProtection",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1555,6 +1816,7 @@
       "Name": "UpdateContainerAssociation",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1575,6 +1837,7 @@
       "Name": "UpdateFirewallAnalysisSettings",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1595,6 +1858,7 @@
       "Name": "UpdateFirewallDeleteProtection",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1615,6 +1879,7 @@
       "Name": "UpdateFirewallDescription",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1635,6 +1900,7 @@
       "Name": "UpdateFirewallEncryptionConfiguration",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1655,6 +1921,7 @@
       "Name": "UpdateFirewallPolicy",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1684,6 +1951,7 @@
       "Name": "UpdateFirewallPolicyChangeProtection",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1701,9 +1969,39 @@
       }
     },
     {
+      "Name": "UpdateFirewallPolicyV2",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "FirewallPolicyV2"
+        },
+        {
+          "Name": "FirewallRuleGroup"
+        },
+        {
+          "Name": "IpsRuleGroup"
+        },
+        {
+          "Name": "TLSInspectionConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "UpdateLoggingConfiguration",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1724,6 +2022,7 @@
       "Name": "UpdateProxy",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1744,6 +2043,7 @@
       "Name": "UpdateProxyConfiguration",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1764,6 +2064,7 @@
       "Name": "UpdateProxyRule",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1784,6 +2085,7 @@
       "Name": "UpdateProxyRuleGroupPriorities",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1804,6 +2106,7 @@
       "Name": "UpdateProxyRulePriorities",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1824,6 +2127,7 @@
       "Name": "UpdateRuleGroup",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1831,6 +2135,12 @@
         }
       },
       "Resources": [
+        {
+          "Name": "FirewallRuleGroup"
+        },
+        {
+          "Name": "IpsRuleGroup"
+        },
         {
           "Name": "StatefulRuleGroup"
         },
@@ -1847,6 +2157,7 @@
       "Name": "UpdateSubnetChangeProtection",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1867,6 +2178,7 @@
       "Name": "UpdateTLSInspectionConfiguration",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3353,6 +3665,33 @@
       ]
     },
     {
+      "Name": "FirewallPolicyV2",
+      "ARNFormats": [
+        "arn:${Partition}:network-firewall:${Region}:${Account}:firewall-policy-v2/${Name}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "FirewallRuleGroup",
+      "ARNFormats": [
+        "arn:${Partition}:network-firewall:${Region}:${Account}:firewall-rulegroup/${Name}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "IpsRuleGroup",
+      "ARNFormats": [
+        "arn:${Partition}:network-firewall:${Region}:${Account}:ips-rulegroup/${Name}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
       "Name": "Proxy",
       "ARNFormats": [
         "arn:${Partition}:network-firewall:${Region}:${Account}:proxy/${Name}"
@@ -3416,5 +3755,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

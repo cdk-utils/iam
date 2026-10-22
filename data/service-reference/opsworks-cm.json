@@ -1,5 +1,6 @@
 {
   "Name": "opsworks-cm",
+  "ServiceName": "OpsworksCM",
   "Actions": [
     {
       "Name": "AssociateNode",
@@ -301,5 +302,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

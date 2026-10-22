@@ -1,5 +1,6 @@
 {
   "Name": "iq-permission",
+  "ServiceName": "IQ Permission",
   "Actions": [
     {
       "Name": "ApproveAccessGrant",
@@ -190,5 +191,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

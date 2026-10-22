@@ -1,5 +1,6 @@
 {
   "Name": "elastictranscoder",
+  "ServiceName": "Elastic Transcoder",
   "Actions": [
     {
       "Name": "CancelJob",
@@ -335,5 +336,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

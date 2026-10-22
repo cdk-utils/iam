@@ -1,5 +1,6 @@
 {
   "Name": "backup-search",
+  "ServiceName": "Backup Search",
   "Actions": [
     {
       "Name": "GetSearchJob",
@@ -503,5 +504,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

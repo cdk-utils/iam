@@ -1,5 +1,6 @@
 {
   "Name": "verified-access",
+  "ServiceName": "Verified Access",
   "Actions": [
     {
       "Name": "AllowVerifiedAccess",
@@ -17,5 +18,5 @@
       }
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

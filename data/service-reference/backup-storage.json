@@ -1,5 +1,6 @@
 {
   "Name": "backup-storage",
+  "ServiceName": "Backup Storage",
   "Actions": [
     {
       "Name": "CommitBackupJob",
@@ -227,5 +228,5 @@
       }
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

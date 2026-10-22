@@ -1,5 +1,6 @@
 {
   "Name": "lookoutvision",
+  "ServiceName": "Lookout Vision",
   "Actions": [
     {
       "Name": "CreateDataset",
@@ -490,5 +491,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

@@ -1,5 +1,6 @@
 {
   "Name": "private-networks",
+  "ServiceName": "Private 5G",
   "Actions": [
     {
       "Name": "AcknowledgeOrderReceipt",
@@ -642,5 +643,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

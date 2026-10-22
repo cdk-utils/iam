@@ -1,5 +1,6 @@
 {
   "Name": "freertos",
+  "ServiceName": "FreeRTOS",
   "Actions": [
     {
       "Name": "CreateSoftwareConfiguration",
@@ -375,5 +376,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

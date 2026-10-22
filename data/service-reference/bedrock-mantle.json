@@ -1,5 +1,6 @@
 {
   "Name": "bedrock-mantle",
+  "ServiceName": "Bedrock Mantle",
   "Actions": [
     {
       "Name": "ArchiveProject",
@@ -1079,5 +1080,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

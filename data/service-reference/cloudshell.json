@@ -1,5 +1,6 @@
 {
   "Name": "cloudshell",
+  "ServiceName": "CloudShell",
   "Actions": [
     {
       "Name": "ApproveCommand",
@@ -245,5 +246,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

@@ -1,5 +1,6 @@
 {
   "Name": "worklink",
+  "ServiceName": "WorkLink",
   "Actions": [
     {
       "Name": "AssociateDomain",
@@ -722,5 +723,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

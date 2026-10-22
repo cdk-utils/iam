@@ -15,6 +15,9 @@ export class Route53resolverActions {
 	/** [Write] route53resolver:AssociateFirewallRuleGroup */
 	static readonly AssociateFirewallRuleGroup =
 		"route53resolver:AssociateFirewallRuleGroup";
+	/** [Write] route53resolver:AssociateFirewallRuleGroupWithService */
+	static readonly AssociateFirewallRuleGroupWithService =
+		"route53resolver:AssociateFirewallRuleGroupWithService";
 	/** [Write] route53resolver:AssociateResolverEndpointIpAddress */
 	static readonly AssociateResolverEndpointIpAddress =
 		"route53resolver:AssociateResolverEndpointIpAddress";
@@ -222,6 +225,7 @@ export class Route53resolverActions {
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
 		Route53resolverActions.AssociateFirewallRuleGroup,
+		Route53resolverActions.AssociateFirewallRuleGroupWithService,
 		Route53resolverActions.AssociateResolverEndpointIpAddress,
 		Route53resolverActions.AssociateResolverQueryLogConfig,
 		Route53resolverActions.AssociateResolverRule,
@@ -1122,6 +1126,7 @@ export class Route53resolverOperations {
 	];
 	/** IAM actions required for the GetFirewallRuleGroup API call. */
 	static readonly opGetFirewallRuleGroup: string[] = [
+		"route53resolver:AssociateFirewallRuleGroupWithService",
 		"route53resolver:GetFirewallRuleGroup",
 	];
 	/** IAM actions required for the GetFirewallRuleGroupAssociation API call. */
