@@ -1,10 +1,12 @@
 {
   "Name": "proton",
+  "ServiceName": "Proton",
   "Actions": [
     {
       "Name": "AcceptEnvironmentAccountConnection",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -25,6 +27,7 @@
       "Name": "CancelComponentDeployment",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -48,6 +51,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -71,6 +75,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -94,6 +99,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -118,6 +124,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -143,6 +150,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -167,6 +175,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -186,6 +195,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -258,6 +268,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -282,6 +293,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -307,6 +319,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -332,6 +345,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -352,6 +366,7 @@
       "Name": "CreateServiceSyncConfig",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -371,6 +386,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -443,6 +459,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -463,6 +480,7 @@
       "Name": "CreateTemplateSyncConfig",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -493,6 +511,7 @@
       "Name": "DeleteComponent",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -513,6 +532,7 @@
       "Name": "DeleteDeployment",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -536,6 +556,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -556,6 +577,7 @@
       "Name": "DeleteEnvironmentAccountConnection",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -576,6 +598,7 @@
       "Name": "DeleteEnvironmentTemplate",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -636,6 +659,7 @@
       "Name": "DeleteEnvironmentTemplateVersion",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -656,6 +680,7 @@
       "Name": "DeleteRepository",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -679,6 +704,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -699,6 +725,7 @@
       "Name": "DeleteServiceSyncConfig",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -714,6 +741,7 @@
       "Name": "DeleteServiceTemplate",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -774,6 +802,7 @@
       "Name": "DeleteServiceTemplateVersion",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -794,6 +823,7 @@
       "Name": "DeleteTemplateSyncConfig",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -824,6 +854,7 @@
       "Name": "GetAccountSettings",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -839,6 +870,7 @@
       "Name": "GetComponent",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -859,6 +891,7 @@
       "Name": "GetDeployment",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -879,6 +912,7 @@
       "Name": "GetEnvironment",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -899,6 +933,7 @@
       "Name": "GetEnvironmentAccountConnection",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -919,6 +954,7 @@
       "Name": "GetEnvironmentTemplate",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -979,6 +1015,7 @@
       "Name": "GetEnvironmentTemplateVersion",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -999,6 +1036,7 @@
       "Name": "GetRepository",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1019,6 +1057,7 @@
       "Name": "GetRepositorySyncStatus",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1049,6 +1088,7 @@
       "Name": "GetResourcesSummary",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1064,6 +1104,7 @@
       "Name": "GetService",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1084,6 +1125,7 @@
       "Name": "GetServiceInstance",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1104,6 +1146,7 @@
       "Name": "GetServiceInstanceSyncStatus",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1119,6 +1162,7 @@
       "Name": "GetServiceSyncBlockerSummary",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1134,6 +1178,7 @@
       "Name": "GetServiceSyncConfig",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1149,6 +1194,7 @@
       "Name": "GetServiceTemplate",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1209,6 +1255,7 @@
       "Name": "GetServiceTemplateVersion",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1229,6 +1276,7 @@
       "Name": "GetTemplateSyncConfig",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1244,6 +1292,7 @@
       "Name": "GetTemplateSyncStatus",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1259,6 +1308,7 @@
       "Name": "ListComponentOutputs",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1282,6 +1332,7 @@
       "Name": "ListComponentProvisionedResources",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1302,6 +1353,7 @@
       "Name": "ListComponents",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1328,6 +1380,7 @@
       "Name": "ListDeployments",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1343,6 +1396,7 @@
       "Name": "ListEnvironmentAccountConnections",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1358,6 +1412,7 @@
       "Name": "ListEnvironmentOutputs",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1381,6 +1436,7 @@
       "Name": "ListEnvironmentProvisionedResources",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1441,6 +1497,7 @@
       "Name": "ListEnvironmentTemplateVersions",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1461,6 +1518,7 @@
       "Name": "ListEnvironmentTemplates",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1476,6 +1534,7 @@
       "Name": "ListEnvironments",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1491,6 +1550,7 @@
       "Name": "ListRepositories",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1506,6 +1566,7 @@
       "Name": "ListRepositorySyncDefinitions",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1521,6 +1582,7 @@
       "Name": "ListServiceInstanceOutputs",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1547,6 +1609,7 @@
       "Name": "ListServiceInstanceProvisionedResources",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1570,6 +1633,7 @@
       "Name": "ListServiceInstances",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1585,6 +1649,7 @@
       "Name": "ListServicePipelineOutputs",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1608,6 +1673,7 @@
       "Name": "ListServicePipelineProvisionedResources",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1668,6 +1734,7 @@
       "Name": "ListServiceTemplateVersions",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1688,6 +1755,7 @@
       "Name": "ListServiceTemplates",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1703,6 +1771,7 @@
       "Name": "ListServices",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1718,6 +1787,7 @@
       "Name": "ListTagsForResource",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1777,6 +1847,7 @@
       "Name": "NotifyResourceDeploymentStatusChange",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1800,6 +1871,7 @@
       "Name": "RejectEnvironmentAccountConnection",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1824,6 +1896,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": true,
@@ -1886,6 +1959,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": true,
@@ -1960,6 +2034,7 @@
       "Name": "UpdateAccountSettings",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1975,6 +2050,7 @@
       "Name": "UpdateComponent",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1998,6 +2074,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2018,6 +2095,7 @@
       "Name": "UpdateEnvironmentAccountConnection",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2038,6 +2116,7 @@
       "Name": "UpdateEnvironmentTemplate",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2098,6 +2177,7 @@
       "Name": "UpdateEnvironmentTemplateVersion",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2121,6 +2201,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2144,6 +2225,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2167,6 +2249,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2187,6 +2270,7 @@
       "Name": "UpdateServiceSyncBlocker",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2217,6 +2301,7 @@
       "Name": "UpdateServiceTemplate",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2277,6 +2362,7 @@
       "Name": "UpdateServiceTemplateVersion",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2297,6 +2383,7 @@
       "Name": "UpdateTemplateSyncConfig",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3975,5 +4062,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

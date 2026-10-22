@@ -1,5 +1,6 @@
 {
   "Name": "iq",
+  "ServiceName": "IQ",
   "Actions": [
     {
       "Name": "AcceptCall",
@@ -1291,5 +1292,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

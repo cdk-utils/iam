@@ -1,5 +1,6 @@
 {
   "Name": "quicksight",
+  "ServiceName": "QuickSight",
   "Actions": [
     {
       "Name": "AccountConfigurations",
@@ -39,6 +40,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -59,6 +61,7 @@
       "Name": "BatchDeleteKnowledgeBase",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -83,6 +86,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -103,6 +107,7 @@
       "Name": "BatchDescribeUserLimits",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -157,6 +162,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -181,6 +187,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -200,6 +207,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -219,6 +227,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -259,6 +268,7 @@
       "Name": "CreateAgent",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -283,6 +293,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -303,6 +314,7 @@
       "Name": "CreateApprovalPolicy",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -327,6 +339,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -351,6 +364,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -375,6 +389,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -399,6 +414,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -423,6 +439,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -442,6 +459,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -526,6 +544,7 @@
       "Name": "CreateFlow",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -550,6 +569,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -570,6 +590,7 @@
       "Name": "CreateFolderMembership",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -599,6 +620,7 @@
       "Name": "CreateGroup",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -623,6 +645,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -646,6 +669,7 @@
       "Name": "CreateIAMPolicyAssignment",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -670,6 +694,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -694,6 +719,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -717,6 +743,7 @@
       "Name": "CreateLimitsProfile",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -741,6 +768,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -765,6 +793,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -800,6 +829,7 @@
       "Name": "CreateRefreshSchedule",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -823,6 +853,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -838,6 +869,7 @@
       "Name": "CreateSpace",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -862,6 +894,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -886,6 +919,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -910,6 +944,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -934,6 +969,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -958,6 +994,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -978,6 +1015,7 @@
       "Name": "CreateTopicRefreshSchedule",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1022,6 +1060,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1037,6 +1076,7 @@
       "Name": "DeleteAccountCustomPermission",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1052,6 +1092,7 @@
       "Name": "DeleteAccountCustomization",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1072,6 +1113,7 @@
       "Name": "DeleteAccountSubscription",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1092,6 +1134,7 @@
       "Name": "DeleteActionConnector",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1112,6 +1155,7 @@
       "Name": "DeleteAgent",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1132,6 +1176,7 @@
       "Name": "DeleteAnalysis",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1152,6 +1197,7 @@
       "Name": "DeleteApp",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1172,6 +1218,7 @@
       "Name": "DeleteApprovalPolicy",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1192,6 +1239,7 @@
       "Name": "DeleteBrand",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1212,6 +1260,7 @@
       "Name": "DeleteBrandAssignment",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1227,6 +1276,7 @@
       "Name": "DeleteCustomPermissions",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1242,6 +1292,7 @@
       "Name": "DeleteDashboard",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1266,6 +1317,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1286,6 +1338,7 @@
       "Name": "DeleteDataSetRefreshProperties",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1310,6 +1363,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1330,6 +1384,7 @@
       "Name": "DeleteDefaultQBusinessApplication",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1345,6 +1400,7 @@
       "Name": "DeleteDlpSetting",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1425,6 +1481,7 @@
       "Name": "DeleteFlow",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1445,6 +1502,7 @@
       "Name": "DeleteFolder",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1465,6 +1523,7 @@
       "Name": "DeleteFolderMembership",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1494,6 +1553,7 @@
       "Name": "DeleteGroup",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1514,6 +1574,7 @@
       "Name": "DeleteGroupMembership",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1537,6 +1598,7 @@
       "Name": "DeleteIAMPolicyAssignment",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1557,6 +1619,7 @@
       "Name": "DeleteIdentityPropagationConfig",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1572,6 +1635,7 @@
       "Name": "DeleteKnowledgeBase",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1592,6 +1656,7 @@
       "Name": "DeleteLimitsProfile",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1612,6 +1677,7 @@
       "Name": "DeleteNamespace",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1636,6 +1702,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1656,6 +1723,7 @@
       "Name": "DeleteRefreshSchedule",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1676,6 +1744,7 @@
       "Name": "DeleteRoleCustomPermission",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1694,6 +1763,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1709,6 +1779,7 @@
       "Name": "DeleteSpace",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1729,6 +1800,7 @@
       "Name": "DeleteTemplate",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1749,6 +1821,7 @@
       "Name": "DeleteTemplateAlias",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1769,6 +1842,7 @@
       "Name": "DeleteTheme",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1789,6 +1863,7 @@
       "Name": "DeleteThemeAlias",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1813,6 +1888,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1833,6 +1909,7 @@
       "Name": "DeleteTopicRefreshSchedule",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1853,6 +1930,7 @@
       "Name": "DeleteUser",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1873,6 +1951,7 @@
       "Name": "DeleteUserByPrincipalId",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1893,6 +1972,7 @@
       "Name": "DeleteUserCustomPermission",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1917,6 +1997,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1937,6 +2018,7 @@
       "Name": "DescribeAccountCustomPermission",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1952,6 +2034,7 @@
       "Name": "DescribeAccountCustomization",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1972,6 +2055,7 @@
       "Name": "DescribeAccountSettings",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1987,6 +2071,7 @@
       "Name": "DescribeAccountSubscription",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2007,6 +2092,7 @@
       "Name": "DescribeActionConnector",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2027,6 +2113,7 @@
       "Name": "DescribeActionConnectorPermissions",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2047,6 +2134,7 @@
       "Name": "DescribeAgent",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2067,6 +2155,7 @@
       "Name": "DescribeAgentPermissions",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2087,6 +2176,7 @@
       "Name": "DescribeAnalysis",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2107,6 +2197,7 @@
       "Name": "DescribeAnalysisPermissions",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2127,6 +2218,7 @@
       "Name": "DescribeApp",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2147,6 +2239,7 @@
       "Name": "DescribeAppPermissions",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2167,6 +2260,7 @@
       "Name": "DescribeApprovalPolicy",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2187,6 +2281,7 @@
       "Name": "DescribeAssetBundleExportJob",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2207,6 +2302,7 @@
       "Name": "DescribeAssetBundleImportJob",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2227,6 +2323,7 @@
       "Name": "DescribeAutomationJob",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2247,6 +2344,7 @@
       "Name": "DescribeBrand",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2267,6 +2365,7 @@
       "Name": "DescribeBrandAssignment",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2282,6 +2381,7 @@
       "Name": "DescribeBrandPublishedVersion",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2317,6 +2417,7 @@
       "Name": "DescribeCustomPermissions",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2337,6 +2438,7 @@
       "Name": "DescribeDashboard",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2357,6 +2459,7 @@
       "Name": "DescribeDashboardPermissions",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2377,6 +2480,7 @@
       "Name": "DescribeDashboardSnapshotJob",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2397,6 +2501,7 @@
       "Name": "DescribeDashboardSnapshotJobResult",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2417,6 +2522,7 @@
       "Name": "DescribeDashboardsQAConfiguration",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2436,6 +2542,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2460,6 +2567,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2480,6 +2588,7 @@
       "Name": "DescribeDataSetRefreshProperties",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2504,6 +2613,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2528,6 +2638,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2548,6 +2659,7 @@
       "Name": "DescribeDefaultQBusinessApplication",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2583,6 +2695,7 @@
       "Name": "DescribeDlpSetting",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2683,6 +2796,7 @@
       "Name": "DescribeFlow",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2703,6 +2817,7 @@
       "Name": "DescribeFolder",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2723,6 +2838,7 @@
       "Name": "DescribeFolderPermissions",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2743,6 +2859,7 @@
       "Name": "DescribeFolderResolvedPermissions",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2763,6 +2880,7 @@
       "Name": "DescribeGroup",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2783,6 +2901,7 @@
       "Name": "DescribeGroupMembership",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2806,6 +2925,7 @@
       "Name": "DescribeIAMPolicyAssignment",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2830,6 +2950,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2850,6 +2971,7 @@
       "Name": "DescribeIpRestriction",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2865,6 +2987,7 @@
       "Name": "DescribeKeyRegistration",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2880,6 +3003,7 @@
       "Name": "DescribeKnowledgeBase",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2900,6 +3024,7 @@
       "Name": "DescribeKnowledgeBasePermissions",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": true,
           "IsTaggingOnly": false,
@@ -2920,6 +3045,7 @@
       "Name": "DescribeLimitsProfile",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2940,6 +3066,7 @@
       "Name": "DescribeNamespace",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2964,6 +3091,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2984,6 +3112,7 @@
       "Name": "DescribeQPersonalizationConfiguration",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3014,6 +3143,7 @@
       "Name": "DescribeQuickSightQSearchConfiguration",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3029,6 +3159,7 @@
       "Name": "DescribeRefreshSchedule",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3049,6 +3180,7 @@
       "Name": "DescribeRoleCustomPermission",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3064,6 +3196,7 @@
       "Name": "DescribeSelfUpgradeConfiguration",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3079,6 +3212,7 @@
       "Name": "DescribeSpace",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3099,6 +3233,7 @@
       "Name": "DescribeSpacePermissions",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": true,
           "IsTaggingOnly": false,
@@ -3119,6 +3254,7 @@
       "Name": "DescribeTemplate",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3139,6 +3275,7 @@
       "Name": "DescribeTemplateAlias",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3159,6 +3296,7 @@
       "Name": "DescribeTemplatePermissions",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3179,6 +3317,7 @@
       "Name": "DescribeTheme",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3199,6 +3338,7 @@
       "Name": "DescribeThemeAlias",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3219,6 +3359,7 @@
       "Name": "DescribeThemePermissions",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3243,6 +3384,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3267,6 +3409,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": true,
           "IsTaggingOnly": false,
@@ -3291,6 +3434,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3311,6 +3455,7 @@
       "Name": "DescribeTopicRefreshSchedule",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3331,6 +3476,7 @@
       "Name": "DescribeUser",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3355,6 +3501,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3378,6 +3525,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3410,6 +3558,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3433,6 +3582,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3448,6 +3598,7 @@
       "Name": "GetAnonymousUserEmbedUrl",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3463,6 +3614,7 @@
       "Name": "GetAuthCode",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3498,6 +3650,7 @@
       "Name": "GetDashboardEmbedUrl",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3518,6 +3671,7 @@
       "Name": "GetFlowMetadata",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3538,6 +3692,7 @@
       "Name": "GetFlowPermissions",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3558,6 +3713,7 @@
       "Name": "GetGroupMapping",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3573,6 +3729,7 @@
       "Name": "GetIdentityContext",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3593,6 +3750,7 @@
       "Name": "GetSessionEmbedUrl",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3608,6 +3766,7 @@
       "Name": "ListActionConnectors",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3623,6 +3782,7 @@
       "Name": "ListAgents",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3643,6 +3803,7 @@
       "Name": "ListAnalyses",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3663,6 +3824,7 @@
       "Name": "ListApprovalPolicies",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3683,6 +3845,7 @@
       "Name": "ListApps",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3703,6 +3866,7 @@
       "Name": "ListAssetBundleExportJobs",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3723,6 +3887,7 @@
       "Name": "ListAssetBundleImportJobs",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3743,6 +3908,7 @@
       "Name": "ListBrands",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3773,6 +3939,7 @@
       "Name": "ListCustomPermissions",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3788,6 +3955,7 @@
       "Name": "ListCustomerManagedKeys",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3803,6 +3971,7 @@
       "Name": "ListDashboardVersions",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3823,6 +3992,7 @@
       "Name": "ListDashboards",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3847,6 +4017,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3866,6 +4037,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3896,6 +4068,7 @@
       "Name": "ListDlpSettings",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3946,6 +4119,7 @@
       "Name": "ListFlows",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3961,6 +4135,7 @@
       "Name": "ListFolderMembers",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3981,6 +4156,7 @@
       "Name": "ListFolders",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4001,6 +4177,7 @@
       "Name": "ListFoldersForResource",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4033,6 +4210,7 @@
       "Name": "ListGroupMemberships",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4053,6 +4231,7 @@
       "Name": "ListGroups",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4073,6 +4252,7 @@
       "Name": "ListIAMPolicyAssignments",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4093,6 +4273,7 @@
       "Name": "ListIAMPolicyAssignmentsForUser",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4113,6 +4294,7 @@
       "Name": "ListIdentityPropagationConfigs",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4132,6 +4314,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4162,6 +4345,7 @@
       "Name": "ListKnowledgeBases",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4177,6 +4361,7 @@
       "Name": "ListLimitsProfiles",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4197,6 +4382,7 @@
       "Name": "ListNamespaces",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4216,6 +4402,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4231,6 +4418,7 @@
       "Name": "ListRefreshSchedules",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4246,6 +4434,7 @@
       "Name": "ListRoleMemberships",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4261,6 +4450,7 @@
       "Name": "ListSelfUpgrades",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4281,6 +4471,7 @@
       "Name": "ListSpaceResources",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4301,6 +4492,7 @@
       "Name": "ListSpaces",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4316,6 +4508,7 @@
       "Name": "ListTagsForResource",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4393,6 +4586,7 @@
       "Name": "ListTemplateAliases",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4413,6 +4607,7 @@
       "Name": "ListTemplateVersions",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4433,6 +4628,7 @@
       "Name": "ListTemplates",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4453,6 +4649,7 @@
       "Name": "ListThemeAliases",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4473,6 +4670,7 @@
       "Name": "ListThemeVersions",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4493,6 +4691,7 @@
       "Name": "ListThemes",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4513,6 +4712,7 @@
       "Name": "ListTopicRefreshSchedules",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4532,6 +4732,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4551,6 +4752,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4566,6 +4768,7 @@
       "Name": "ListUserGroups",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4586,6 +4789,7 @@
       "Name": "ListUsers",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4606,6 +4810,7 @@
       "Name": "ListUsersIndexCapacity",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4625,6 +4830,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4644,6 +4850,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4668,6 +4875,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4692,6 +4900,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4712,6 +4921,7 @@
       "Name": "PredictQAResults",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4735,6 +4945,7 @@
       "Name": "PutDataSetRefreshProperties",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4770,6 +4981,7 @@
       "Name": "RegisterCustomerManagedKey",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4789,6 +5001,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4813,6 +5026,7 @@
       "Name": "RemoveCustomerManagedKey",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4828,6 +5042,7 @@
       "Name": "RestoreAnalysis",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4863,6 +5078,7 @@
       "Name": "SearchActionConnectors",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4883,6 +5099,7 @@
       "Name": "SearchAgents",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4903,6 +5120,7 @@
       "Name": "SearchAnalyses",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4923,6 +5141,7 @@
       "Name": "SearchApps",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4943,6 +5162,7 @@
       "Name": "SearchDashboards",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4963,6 +5183,7 @@
       "Name": "SearchDataSets",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4983,6 +5204,7 @@
       "Name": "SearchDataSources",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -5018,6 +5240,7 @@
       "Name": "SearchFlows",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -5033,6 +5256,7 @@
       "Name": "SearchFolders",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -5053,6 +5277,7 @@
       "Name": "SearchGroups",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -5073,6 +5298,7 @@
       "Name": "SearchKnowledgeBases",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -5093,6 +5319,7 @@
       "Name": "SearchSpaces",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -5108,6 +5335,7 @@
       "Name": "SearchTopics",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -5148,6 +5376,7 @@
       "Name": "SetGroupMapping",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -5163,6 +5392,7 @@
       "Name": "StartAssetBundleExportJob",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -5183,6 +5413,7 @@
       "Name": "StartAssetBundleImportJob",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -5203,6 +5434,7 @@
       "Name": "StartAutomationJob",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -5223,6 +5455,7 @@
       "Name": "StartDashboardSnapshotJob",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -5243,6 +5476,7 @@
       "Name": "StartDashboardSnapshotJobSchedule",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -5302,6 +5536,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -5321,6 +5556,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": true,
@@ -5421,6 +5657,7 @@
       "Name": "Unsubscribe",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -5439,6 +5676,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": true,
@@ -5519,6 +5757,7 @@
       "Name": "UpdateAccountCustomPermission",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -5534,6 +5773,7 @@
       "Name": "UpdateAccountCustomization",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -5554,6 +5794,7 @@
       "Name": "UpdateAccountSettings",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -5569,6 +5810,7 @@
       "Name": "UpdateActionConnector",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -5589,6 +5831,7 @@
       "Name": "UpdateActionConnectorPermissions",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": true,
           "IsTaggingOnly": false,
@@ -5609,6 +5852,7 @@
       "Name": "UpdateAgent",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -5629,6 +5873,7 @@
       "Name": "UpdateAgentPermissions",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": true,
           "IsTaggingOnly": false,
@@ -5649,6 +5894,7 @@
       "Name": "UpdateAnalysis",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -5669,6 +5915,7 @@
       "Name": "UpdateAnalysisPermissions",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": true,
           "IsTaggingOnly": false,
@@ -5689,6 +5936,7 @@
       "Name": "UpdateAppPermissions",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": true,
           "IsTaggingOnly": false,
@@ -5709,6 +5957,7 @@
       "Name": "UpdateApplicationWithTokenExchangeGrant",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -5724,6 +5973,7 @@
       "Name": "UpdateApprovalPolicy",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -5744,6 +5994,7 @@
       "Name": "UpdateBrand",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -5764,6 +6015,7 @@
       "Name": "UpdateBrandAssignment",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -5779,6 +6031,7 @@
       "Name": "UpdateBrandPublishedVersion",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -5814,6 +6067,7 @@
       "Name": "UpdateCustomPermissions",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -5834,6 +6088,7 @@
       "Name": "UpdateDashboard",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -5854,6 +6109,7 @@
       "Name": "UpdateDashboardLinks",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -5874,6 +6130,7 @@
       "Name": "UpdateDashboardPermissions",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": true,
           "IsTaggingOnly": false,
@@ -5894,6 +6151,7 @@
       "Name": "UpdateDashboardPublishedVersion",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -5914,6 +6172,7 @@
       "Name": "UpdateDashboardsQAConfiguration",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -5933,6 +6192,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -5960,6 +6220,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": true,
           "IsTaggingOnly": false,
@@ -5984,6 +6245,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -6008,6 +6270,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": true,
           "IsTaggingOnly": false,
@@ -6028,6 +6291,7 @@
       "Name": "UpdateDefaultQBusinessApplication",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -6043,6 +6307,7 @@
       "Name": "UpdateDlpSetting",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -6143,6 +6408,7 @@
       "Name": "UpdateFlow",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -6163,6 +6429,7 @@
       "Name": "UpdateFlowPermissions",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": true,
           "IsTaggingOnly": false,
@@ -6183,6 +6450,7 @@
       "Name": "UpdateFolder",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -6203,6 +6471,7 @@
       "Name": "UpdateFolderPermissions",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": true,
           "IsTaggingOnly": false,
@@ -6223,6 +6492,7 @@
       "Name": "UpdateGroup",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -6243,6 +6513,7 @@
       "Name": "UpdateIAMPolicyAssignment",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -6263,6 +6534,7 @@
       "Name": "UpdateIdentityPropagationConfig",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -6278,6 +6550,7 @@
       "Name": "UpdateIpRestriction",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -6293,6 +6566,7 @@
       "Name": "UpdateKeyRegistration",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -6308,6 +6582,7 @@
       "Name": "UpdateKnowledgeBase",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -6328,6 +6603,7 @@
       "Name": "UpdateKnowledgeBasePermissions",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": true,
           "IsTaggingOnly": false,
@@ -6348,6 +6624,7 @@
       "Name": "UpdateLimitsProfile",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -6372,6 +6649,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -6392,6 +6670,7 @@
       "Name": "UpdatePublicSharingSettings",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -6407,6 +6686,7 @@
       "Name": "UpdateQPersonalizationConfiguration",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -6437,6 +6717,7 @@
       "Name": "UpdateQuickSightQSearchConfiguration",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -6452,6 +6733,7 @@
       "Name": "UpdateRefreshSchedule",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -6487,6 +6769,7 @@
       "Name": "UpdateRoleCustomPermission",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -6502,6 +6785,7 @@
       "Name": "UpdateSPICECapacityConfiguration",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -6517,6 +6801,7 @@
       "Name": "UpdateSelfUpgrade",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -6537,6 +6822,7 @@
       "Name": "UpdateSelfUpgradeConfiguration",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -6552,6 +6838,7 @@
       "Name": "UpdateSpace",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -6572,6 +6859,7 @@
       "Name": "UpdateSpacePermissions",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": true,
           "IsTaggingOnly": false,
@@ -6592,6 +6880,7 @@
       "Name": "UpdateSpaceResources",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -6612,6 +6901,7 @@
       "Name": "UpdateTemplate",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -6632,6 +6922,7 @@
       "Name": "UpdateTemplateAlias",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -6652,6 +6943,7 @@
       "Name": "UpdateTemplatePermissions",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": true,
           "IsTaggingOnly": false,
@@ -6672,6 +6964,7 @@
       "Name": "UpdateTheme",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -6692,6 +6985,7 @@
       "Name": "UpdateThemeAlias",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -6712,6 +7006,7 @@
       "Name": "UpdateThemePermissions",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": true,
           "IsTaggingOnly": false,
@@ -6736,6 +7031,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -6763,6 +7059,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": true,
           "IsTaggingOnly": false,
@@ -6783,6 +7080,7 @@
       "Name": "UpdateTopicRefreshSchedule",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -6803,6 +7101,7 @@
       "Name": "UpdateUser",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -6823,6 +7122,7 @@
       "Name": "UpdateUserCustomPermission",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -6847,6 +7147,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -12416,5 +12717,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

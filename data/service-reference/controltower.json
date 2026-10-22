@@ -1,5 +1,6 @@
 {
   "Name": "controltower",
+  "ServiceName": "Control Tower",
   "Actions": [
     {
       "Name": "CreateLandingZone",
@@ -9,6 +10,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -39,6 +41,7 @@
       "Name": "DeleteLandingZone",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -74,6 +77,7 @@
       "Name": "DeregisterOrganizationalUnit",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -134,6 +138,7 @@
       "Name": "DescribeGuardrailForTarget",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -149,6 +154,7 @@
       "Name": "DescribeLandingZoneConfiguration",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -164,6 +170,7 @@
       "Name": "DescribeManagedAccount",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -179,6 +186,7 @@
       "Name": "DescribeManagedOrganizationalUnit",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -194,6 +202,7 @@
       "Name": "DescribeRegisterOrganizationalUnitOperation",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -224,6 +233,7 @@
       "Name": "DisableBaseline",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -244,6 +254,7 @@
       "Name": "DisableControl",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -264,6 +275,7 @@
       "Name": "DisableGuardrail",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -283,6 +295,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -302,6 +315,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -322,6 +336,7 @@
       "Name": "EnableGuardrail",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -352,6 +367,7 @@
       "Name": "GetAvailableUpdates",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -367,6 +383,7 @@
       "Name": "GetBaseline",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -387,6 +404,7 @@
       "Name": "GetBaselineOperation",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -402,6 +420,7 @@
       "Name": "GetControlOperation",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -417,6 +436,7 @@
       "Name": "GetEnabledBaseline",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -437,6 +457,7 @@
       "Name": "GetEnabledControl",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -472,6 +493,7 @@
       "Name": "GetHomeRegion",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -487,6 +509,7 @@
       "Name": "GetLandingZone",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -507,6 +530,7 @@
       "Name": "GetLandingZoneDriftStatus",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -522,6 +546,7 @@
       "Name": "GetLandingZoneOperation",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -537,6 +562,7 @@
       "Name": "GetLandingZoneStatus",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -552,6 +578,7 @@
       "Name": "ListBaselines",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -567,6 +594,7 @@
       "Name": "ListControlOperations",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -612,6 +640,7 @@
       "Name": "ListEnabledBaselines",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -627,6 +656,7 @@
       "Name": "ListEnabledControls",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -717,6 +747,7 @@
       "Name": "ListGuardrailsForTarget",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -732,6 +763,7 @@
       "Name": "ListLandingZoneOperations",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -747,6 +779,7 @@
       "Name": "ListLandingZones",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -762,6 +795,7 @@
       "Name": "ListManagedAccounts",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -807,6 +841,7 @@
       "Name": "ListManagedOrganizationalUnits",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -837,6 +872,7 @@
       "Name": "ListTagsForResource",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -863,6 +899,7 @@
       "Name": "ManageOrganizationalUnit",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -878,6 +915,7 @@
       "Name": "PerformPreLaunchChecks",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -893,6 +931,7 @@
       "Name": "ResetEnabledBaseline",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -913,6 +952,7 @@
       "Name": "ResetEnabledControl",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -933,6 +973,7 @@
       "Name": "ResetLandingZone",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -953,6 +994,7 @@
       "Name": "SetupLandingZone",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -972,6 +1014,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": true,
@@ -1001,6 +1044,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": true,
@@ -1042,6 +1086,7 @@
       "Name": "UpdateEnabledBaseline",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1062,6 +1107,7 @@
       "Name": "UpdateEnabledControl",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1082,6 +1128,7 @@
       "Name": "UpdateLandingZone",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1712,5 +1759,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

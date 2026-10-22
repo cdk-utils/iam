@@ -1,10 +1,12 @@
 {
   "Name": "batch",
+  "ServiceName": "Batch",
   "Actions": [
     {
       "Name": "CancelJob",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -29,6 +31,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -53,6 +56,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -77,6 +81,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -110,6 +115,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -137,6 +143,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -161,6 +168,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -181,6 +189,7 @@
       "Name": "DeleteComputeEnvironment",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -201,6 +210,7 @@
       "Name": "DeleteConsumableResource",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -221,6 +231,7 @@
       "Name": "DeleteJobQueue",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -241,6 +252,7 @@
       "Name": "DeleteQuotaShare",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -261,6 +273,7 @@
       "Name": "DeleteSchedulingPolicy",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -281,6 +294,7 @@
       "Name": "DeleteServiceEnvironment",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -301,6 +315,7 @@
       "Name": "DeregisterJobDefinition",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -321,6 +336,7 @@
       "Name": "DescribeComputeEnvironments",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -336,6 +352,7 @@
       "Name": "DescribeConsumableResource",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -356,6 +373,7 @@
       "Name": "DescribeJobDefinitions",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -371,6 +389,7 @@
       "Name": "DescribeJobQueues",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -386,6 +405,7 @@
       "Name": "DescribeJobs",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -401,6 +421,7 @@
       "Name": "DescribeQuotaShare",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -421,6 +442,7 @@
       "Name": "DescribeSchedulingPolicies",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -436,6 +458,7 @@
       "Name": "DescribeServiceEnvironments",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -451,6 +474,7 @@
       "Name": "DescribeServiceJob",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -466,6 +490,7 @@
       "Name": "GetJobQueueSnapshot",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -486,6 +511,7 @@
       "Name": "ListConsumableResources",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -501,6 +527,7 @@
       "Name": "ListJobs",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -516,6 +543,7 @@
       "Name": "ListJobsByConsumableResource",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -536,6 +564,7 @@
       "Name": "ListQuotaShares",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -556,6 +585,7 @@
       "Name": "ListSchedulingPolicies",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -571,6 +601,7 @@
       "Name": "ListServiceJobs",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -586,6 +617,7 @@
       "Name": "ListTagsForResource",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -648,6 +680,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -678,6 +711,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": true,
@@ -702,6 +736,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -744,6 +779,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -777,6 +813,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": true,
@@ -821,6 +858,7 @@
       "Name": "TerminateJob",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -841,6 +879,7 @@
       "Name": "TerminateServiceJob",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -864,6 +903,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": true,
@@ -908,6 +948,7 @@
       "Name": "UpdateComputeEnvironment",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -928,6 +969,7 @@
       "Name": "UpdateConsumableResource",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -948,6 +990,7 @@
       "Name": "UpdateJobQueue",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -974,6 +1017,7 @@
       "Name": "UpdateQuotaShare",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -994,6 +1038,7 @@
       "Name": "UpdateSchedulingPolicy",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1014,6 +1059,7 @@
       "Name": "UpdateServiceEnvironment",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1037,6 +1083,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2114,5 +2161,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

@@ -1,5 +1,6 @@
 {
   "Name": "sso-directory",
+  "ServiceName": "IAM Identity Center directory",
   "Actions": [
     {
       "Name": "AddMemberToGroup",
@@ -857,5 +858,5 @@
       }
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

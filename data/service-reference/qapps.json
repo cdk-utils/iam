@@ -1,5 +1,6 @@
 {
   "Name": "qapps",
+  "ServiceName": "Q Apps",
   "Actions": [
     {
       "Name": "AssociateLibraryItemReview",
@@ -9,6 +10,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -33,6 +35,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -56,6 +59,7 @@
       "Name": "BatchCreateCategory",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -76,6 +80,7 @@
       "Name": "BatchDeleteCategory",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -96,6 +101,7 @@
       "Name": "BatchUpdateCategory",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -147,6 +153,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -201,6 +208,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -245,6 +253,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -272,6 +281,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -299,6 +309,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -326,6 +337,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -350,6 +362,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -373,6 +386,7 @@
       "Name": "ExportQAppSessionData",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -397,6 +411,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -424,6 +439,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -453,6 +469,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -473,6 +490,7 @@
       "Name": "GetQAppSessionMetadata",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -499,6 +517,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -522,6 +541,7 @@
       "Name": "ListCategories",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -542,6 +562,7 @@
       "Name": "ListLibraryItems",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -562,6 +583,7 @@
       "Name": "ListQAppSessionData",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -582,6 +604,7 @@
       "Name": "ListQApps",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -602,6 +625,7 @@
       "Name": "ListTagsForResource",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -691,6 +715,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -720,6 +745,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -747,6 +773,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": true,
@@ -773,6 +800,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": true,
@@ -800,6 +828,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -826,6 +855,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -850,6 +880,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -877,6 +908,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -906,6 +938,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -926,6 +959,7 @@
       "Name": "UpdateQAppSessionMetadata",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1569,5 +1603,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

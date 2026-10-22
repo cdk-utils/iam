@@ -1,5 +1,6 @@
 {
   "Name": "resource-explorer",
+  "ServiceName": "Tag Editor",
   "Actions": [
     {
       "Name": "ListResourceTypes",
@@ -47,5 +48,5 @@
       }
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

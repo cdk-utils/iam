@@ -1,5 +1,6 @@
 {
   "Name": "consoleapp",
+  "ServiceName": "Console Mobile App",
   "Actions": [
     {
       "Name": "GetDeviceIdentity",
@@ -45,5 +46,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

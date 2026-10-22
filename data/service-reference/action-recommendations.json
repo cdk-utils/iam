@@ -1,5 +1,6 @@
 {
   "Name": "action-recommendations",
+  "ServiceName": "Action Recommendations",
   "Actions": [
     {
       "Name": "ListRecommendedActions",
@@ -17,5 +18,5 @@
       }
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

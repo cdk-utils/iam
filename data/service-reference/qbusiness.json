@@ -1,5 +1,6 @@
 {
   "Name": "qbusiness",
+  "ServiceName": "Q Business",
   "Actions": [
     {
       "Name": "AllowVendedLogDeliveryForResource",
@@ -28,6 +29,7 @@
       "Name": "AssociatePermission",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -48,6 +50,7 @@
       "Name": "BatchDeleteDocument",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -71,6 +74,7 @@
       "Name": "BatchPutDocument",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -94,6 +98,7 @@
       "Name": "CancelSubscription",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -117,6 +122,7 @@
       "Name": "Chat",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -137,6 +143,7 @@
       "Name": "ChatSync",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -157,6 +164,7 @@
       "Name": "CheckDocumentAccess",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -180,6 +188,7 @@
       "Name": "CreateAnonymousWebExperienceUrl",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -207,6 +216,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -226,6 +236,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -250,6 +261,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -270,6 +282,7 @@
       "Name": "CreateDataAccessorWithTti",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -294,6 +307,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -321,6 +335,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -369,6 +384,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -393,6 +409,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -417,6 +434,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -437,6 +455,7 @@
       "Name": "CreateUser",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -461,6 +480,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -481,6 +501,7 @@
       "Name": "DeleteApplication",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -501,6 +522,7 @@
       "Name": "DeleteAttachment",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -521,6 +543,7 @@
       "Name": "DeleteChatControlsConfiguration",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -541,6 +564,7 @@
       "Name": "DeleteChatResponseConfiguration",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -564,6 +588,7 @@
       "Name": "DeleteConversation",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -584,6 +609,7 @@
       "Name": "DeleteDataAccessor",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -607,6 +633,7 @@
       "Name": "DeleteDataSource",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -633,6 +660,7 @@
       "Name": "DeleteGroup",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -656,6 +684,7 @@
       "Name": "DeleteIndex",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -702,6 +731,7 @@
       "Name": "DeletePlugin",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -725,6 +755,7 @@
       "Name": "DeleteRetriever",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -748,6 +779,7 @@
       "Name": "DeleteUser",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -768,6 +800,7 @@
       "Name": "DeleteWebExperience",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -791,6 +824,7 @@
       "Name": "DisableAclOnDataSource",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -811,6 +845,7 @@
       "Name": "DisassociatePermission",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -831,6 +866,7 @@
       "Name": "GetApplication",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -851,6 +887,7 @@
       "Name": "GetChatControlsConfiguration",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -871,6 +908,7 @@
       "Name": "GetChatResponseConfiguration",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -894,6 +932,7 @@
       "Name": "GetDataAccessor",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -917,6 +956,7 @@
       "Name": "GetDataSource",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -943,6 +983,7 @@
       "Name": "GetDocumentContent",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -966,6 +1007,7 @@
       "Name": "GetGroup",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -989,6 +1031,7 @@
       "Name": "GetIndex",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1035,6 +1078,7 @@
       "Name": "GetMedia",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1055,6 +1099,7 @@
       "Name": "GetPlugin",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1078,6 +1123,7 @@
       "Name": "GetPolicy",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1098,6 +1144,7 @@
       "Name": "GetRetriever",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1121,6 +1168,7 @@
       "Name": "GetUser",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1141,6 +1189,7 @@
       "Name": "GetWebExperience",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1164,6 +1213,7 @@
       "Name": "ListApplications",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1179,6 +1229,7 @@
       "Name": "ListAttachments",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1199,6 +1250,7 @@
       "Name": "ListChatResponseConfigurations",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1219,6 +1271,7 @@
       "Name": "ListConversations",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1239,6 +1292,7 @@
       "Name": "ListDataAccessors",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1259,6 +1313,7 @@
       "Name": "ListDataSourceSyncJobs",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1285,6 +1340,7 @@
       "Name": "ListDataSources",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1308,6 +1364,7 @@
       "Name": "ListDocuments",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1331,6 +1388,7 @@
       "Name": "ListGroups",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1354,6 +1412,7 @@
       "Name": "ListIndices",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1394,6 +1453,7 @@
       "Name": "ListMessages",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1414,6 +1474,7 @@
       "Name": "ListPluginActions",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1437,6 +1498,7 @@
       "Name": "ListPluginTypeActions",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1452,6 +1514,7 @@
       "Name": "ListPluginTypeMetadata",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1467,6 +1530,7 @@
       "Name": "ListPlugins",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1487,6 +1551,7 @@
       "Name": "ListRetrievers",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1507,6 +1572,7 @@
       "Name": "ListSubscriptions",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1527,6 +1593,7 @@
       "Name": "ListTagsForResource",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1571,6 +1638,7 @@
       "Name": "ListWebExperiences",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1591,6 +1659,7 @@
       "Name": "PutFeedback",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1611,6 +1680,7 @@
       "Name": "PutGroup",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1634,6 +1704,7 @@
       "Name": "PutResourcePolicy",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1654,6 +1725,7 @@
       "Name": "SearchRelevantContent",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1674,6 +1746,7 @@
       "Name": "StartDataSourceSyncJob",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1723,6 +1796,7 @@
       "Name": "StopDataSourceSyncJob",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1753,6 +1827,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": true,
@@ -1800,6 +1875,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": true,
@@ -1844,6 +1920,7 @@
       "Name": "UpdateApplication",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1864,6 +1941,7 @@
       "Name": "UpdateChatControlsConfiguration",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1884,6 +1962,7 @@
       "Name": "UpdateChatResponseConfiguration",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1907,6 +1986,7 @@
       "Name": "UpdateDataAccessor",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1930,6 +2010,7 @@
       "Name": "UpdateDataSource",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1956,6 +2037,7 @@
       "Name": "UpdateIndex",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2002,6 +2084,7 @@
       "Name": "UpdatePlugin",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2025,6 +2108,7 @@
       "Name": "UpdateRetriever",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2048,6 +2132,7 @@
       "Name": "UpdateSubscription",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2071,6 +2156,7 @@
       "Name": "UpdateUser",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2091,6 +2177,7 @@
       "Name": "UpdateWebExperience",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3718,5 +3805,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

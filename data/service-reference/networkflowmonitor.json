@@ -1,5 +1,6 @@
 {
   "Name": "networkflowmonitor",
+  "ServiceName": "Network Flow Monitor",
   "Actions": [
     {
       "Name": "CreateMonitor",
@@ -9,6 +10,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -33,6 +35,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -48,6 +51,7 @@
       "Name": "DeleteMonitor",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -68,6 +72,7 @@
       "Name": "DeleteScope",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -88,6 +93,7 @@
       "Name": "GetMonitor",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -108,6 +114,7 @@
       "Name": "GetQueryResultsMonitorTopContributors",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -128,6 +135,7 @@
       "Name": "GetQueryResultsWorkloadInsightsTopContributors",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -148,6 +156,7 @@
       "Name": "GetQueryResultsWorkloadInsightsTopContributorsData",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -168,6 +177,7 @@
       "Name": "GetQueryStatusMonitorTopContributors",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -188,6 +198,7 @@
       "Name": "GetQueryStatusWorkloadInsightsTopContributors",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -208,6 +219,7 @@
       "Name": "GetQueryStatusWorkloadInsightsTopContributorsData",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -228,6 +240,7 @@
       "Name": "GetScope",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -248,6 +261,7 @@
       "Name": "ListMonitors",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -263,6 +277,7 @@
       "Name": "ListScopes",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -278,6 +293,7 @@
       "Name": "ListTagsForResource",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -316,6 +332,7 @@
       "Name": "StartQueryMonitorTopContributors",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -336,6 +353,7 @@
       "Name": "StartQueryWorkloadInsightsTopContributors",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -356,6 +374,7 @@
       "Name": "StartQueryWorkloadInsightsTopContributorsData",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -376,6 +395,7 @@
       "Name": "StopQueryMonitorTopContributors",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -396,6 +416,7 @@
       "Name": "StopQueryWorkloadInsightsTopContributors",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -416,6 +437,7 @@
       "Name": "StopQueryWorkloadInsightsTopContributorsData",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -440,6 +462,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": true,
@@ -466,6 +489,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": true,
@@ -489,6 +513,7 @@
       "Name": "UpdateMonitor",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -509,6 +534,7 @@
       "Name": "UpdateScope",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -976,5 +1002,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

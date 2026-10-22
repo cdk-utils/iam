@@ -1,5 +1,6 @@
 {
   "Name": "sagemaker-unified-studio-mcp",
+  "ServiceName": "SageMaker Unified Studio MCP",
   "Actions": [
     {
       "Name": "AuthorizeVpce",
@@ -17,5 +18,5 @@
       }
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

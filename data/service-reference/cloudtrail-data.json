@@ -1,10 +1,12 @@
 {
   "Name": "cloudtrail-data",
+  "ServiceName": "CloudTrail-Data",
   "Actions": [
     {
       "Name": "PutAuditEvents",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -71,5 +73,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

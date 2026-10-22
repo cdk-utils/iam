@@ -1,5 +1,6 @@
 {
   "Name": "vendor-insights",
+  "ServiceName": "Vendor Insights",
   "Actions": [
     {
       "Name": "ActivateSecurityProfile",
@@ -566,5 +567,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

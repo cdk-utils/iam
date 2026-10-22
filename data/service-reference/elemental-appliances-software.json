@@ -1,5 +1,6 @@
 {
   "Name": "elemental-appliances-software",
+  "ServiceName": "Elemental Appliances and Software",
   "Actions": [
     {
       "Name": "CompleteUpload",
@@ -235,5 +236,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

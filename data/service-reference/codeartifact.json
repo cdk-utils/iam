@@ -1,5 +1,6 @@
 {
   "Name": "codeartifact",
+  "ServiceName": "CodeArtifact",
   "Actions": [
     {
       "Name": "AssociateExternalConnection",
@@ -1574,5 +1575,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

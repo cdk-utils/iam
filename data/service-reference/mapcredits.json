@@ -1,5 +1,6 @@
 {
   "Name": "mapcredits",
+  "ServiceName": "MapCredits",
   "Actions": [
     {
       "Name": "ListAssociatedPrograms",
@@ -70,5 +71,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

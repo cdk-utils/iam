@@ -1,5 +1,6 @@
 {
   "Name": "neptune-db",
+  "ServiceName": "Neptune",
   "Actions": [
     {
       "Name": "CancelLoaderJob",
@@ -1125,5 +1126,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

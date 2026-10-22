@@ -1,5 +1,6 @@
 {
   "Name": "ec2messages",
+  "ServiceName": "EC2 Messages",
   "Actions": [
     {
       "Name": "AcknowledgeMessage",
@@ -114,5 +115,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

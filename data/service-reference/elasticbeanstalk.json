@@ -1,5 +1,6 @@
 {
   "Name": "elasticbeanstalk",
+  "ServiceName": "Elastic Beanstalk",
   "Actions": [
     {
       "Name": "AbortEnvironmentUpdate",
@@ -620,6 +621,7 @@
       "Name": "DescribeEnvironments",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1805,5 +1807,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

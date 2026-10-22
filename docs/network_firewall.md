@@ -447,6 +447,450 @@ Defaults to "*".
 
 ---
 
+### NetworkFirewallFirewallPolicyV2ArnComponents <a name="NetworkFirewallFirewallPolicyV2ArnComponents" id="@cdk_utils/iam.network_firewall.NetworkFirewallFirewallPolicyV2ArnComponents"></a>
+
+Parsed components of a FirewallPolicyV2 ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.network_firewall.NetworkFirewallFirewallPolicyV2ArnComponents.Initializer"></a>
+
+```typescript
+import { network_firewall } from '@cdk_utils/iam'
+
+const networkFirewallFirewallPolicyV2ArnComponents: network_firewall.NetworkFirewallFirewallPolicyV2ArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallFirewallPolicyV2ArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallFirewallPolicyV2ArnComponents.property.name">name</a></code> | <code>string</code> | The Name component. |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallFirewallPolicyV2ArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallFirewallPolicyV2ArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.network_firewall.NetworkFirewallFirewallPolicyV2ArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdk_utils/iam.network_firewall.NetworkFirewallFirewallPolicyV2ArnComponents.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+The Name component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.network_firewall.NetworkFirewallFirewallPolicyV2ArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.network_firewall.NetworkFirewallFirewallPolicyV2ArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### NetworkFirewallFirewallPolicyV2ArnProps <a name="NetworkFirewallFirewallPolicyV2ArnProps" id="@cdk_utils/iam.network_firewall.NetworkFirewallFirewallPolicyV2ArnProps"></a>
+
+Properties for building a FirewallPolicyV2 ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.network_firewall.NetworkFirewallFirewallPolicyV2ArnProps.Initializer"></a>
+
+```typescript
+import { network_firewall } from '@cdk_utils/iam'
+
+const networkFirewallFirewallPolicyV2ArnProps: network_firewall.NetworkFirewallFirewallPolicyV2ArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallFirewallPolicyV2ArnProps.property.name">name</a></code> | <code>string</code> | The Name component of the ARN. |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallFirewallPolicyV2ArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallFirewallPolicyV2ArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallFirewallPolicyV2ArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdk_utils/iam.network_firewall.NetworkFirewallFirewallPolicyV2ArnProps.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+The Name component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.network_firewall.NetworkFirewallFirewallPolicyV2ArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.network_firewall.NetworkFirewallFirewallPolicyV2ArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.network_firewall.NetworkFirewallFirewallPolicyV2ArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
+### NetworkFirewallFirewallRuleGroupArnComponents <a name="NetworkFirewallFirewallRuleGroupArnComponents" id="@cdk_utils/iam.network_firewall.NetworkFirewallFirewallRuleGroupArnComponents"></a>
+
+Parsed components of a FirewallRuleGroup ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.network_firewall.NetworkFirewallFirewallRuleGroupArnComponents.Initializer"></a>
+
+```typescript
+import { network_firewall } from '@cdk_utils/iam'
+
+const networkFirewallFirewallRuleGroupArnComponents: network_firewall.NetworkFirewallFirewallRuleGroupArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallFirewallRuleGroupArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallFirewallRuleGroupArnComponents.property.name">name</a></code> | <code>string</code> | The Name component. |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallFirewallRuleGroupArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallFirewallRuleGroupArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.network_firewall.NetworkFirewallFirewallRuleGroupArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdk_utils/iam.network_firewall.NetworkFirewallFirewallRuleGroupArnComponents.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+The Name component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.network_firewall.NetworkFirewallFirewallRuleGroupArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.network_firewall.NetworkFirewallFirewallRuleGroupArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### NetworkFirewallFirewallRuleGroupArnProps <a name="NetworkFirewallFirewallRuleGroupArnProps" id="@cdk_utils/iam.network_firewall.NetworkFirewallFirewallRuleGroupArnProps"></a>
+
+Properties for building a FirewallRuleGroup ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.network_firewall.NetworkFirewallFirewallRuleGroupArnProps.Initializer"></a>
+
+```typescript
+import { network_firewall } from '@cdk_utils/iam'
+
+const networkFirewallFirewallRuleGroupArnProps: network_firewall.NetworkFirewallFirewallRuleGroupArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallFirewallRuleGroupArnProps.property.name">name</a></code> | <code>string</code> | The Name component of the ARN. |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallFirewallRuleGroupArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallFirewallRuleGroupArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallFirewallRuleGroupArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdk_utils/iam.network_firewall.NetworkFirewallFirewallRuleGroupArnProps.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+The Name component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.network_firewall.NetworkFirewallFirewallRuleGroupArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.network_firewall.NetworkFirewallFirewallRuleGroupArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.network_firewall.NetworkFirewallFirewallRuleGroupArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
+### NetworkFirewallIpsRuleGroupArnComponents <a name="NetworkFirewallIpsRuleGroupArnComponents" id="@cdk_utils/iam.network_firewall.NetworkFirewallIpsRuleGroupArnComponents"></a>
+
+Parsed components of a IpsRuleGroup ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.network_firewall.NetworkFirewallIpsRuleGroupArnComponents.Initializer"></a>
+
+```typescript
+import { network_firewall } from '@cdk_utils/iam'
+
+const networkFirewallIpsRuleGroupArnComponents: network_firewall.NetworkFirewallIpsRuleGroupArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallIpsRuleGroupArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallIpsRuleGroupArnComponents.property.name">name</a></code> | <code>string</code> | The Name component. |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallIpsRuleGroupArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallIpsRuleGroupArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.network_firewall.NetworkFirewallIpsRuleGroupArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdk_utils/iam.network_firewall.NetworkFirewallIpsRuleGroupArnComponents.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+The Name component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.network_firewall.NetworkFirewallIpsRuleGroupArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.network_firewall.NetworkFirewallIpsRuleGroupArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### NetworkFirewallIpsRuleGroupArnProps <a name="NetworkFirewallIpsRuleGroupArnProps" id="@cdk_utils/iam.network_firewall.NetworkFirewallIpsRuleGroupArnProps"></a>
+
+Properties for building a IpsRuleGroup ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.network_firewall.NetworkFirewallIpsRuleGroupArnProps.Initializer"></a>
+
+```typescript
+import { network_firewall } from '@cdk_utils/iam'
+
+const networkFirewallIpsRuleGroupArnProps: network_firewall.NetworkFirewallIpsRuleGroupArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallIpsRuleGroupArnProps.property.name">name</a></code> | <code>string</code> | The Name component of the ARN. |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallIpsRuleGroupArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallIpsRuleGroupArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallIpsRuleGroupArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdk_utils/iam.network_firewall.NetworkFirewallIpsRuleGroupArnProps.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+The Name component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.network_firewall.NetworkFirewallIpsRuleGroupArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.network_firewall.NetworkFirewallIpsRuleGroupArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.network_firewall.NetworkFirewallIpsRuleGroupArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### NetworkFirewallProxyArnComponents <a name="NetworkFirewallProxyArnComponents" id="@cdk_utils/iam.network_firewall.NetworkFirewallProxyArnComponents"></a>
 
 Parsed components of a Proxy ARN.
@@ -1523,6 +1967,7 @@ new network_firewall.NetworkFirewallActions()
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.CreateContainerAssociation">CreateContainerAssociation</a></code> | <code>string</code> | [Write] network-firewall:CreateContainerAssociation. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.CreateFirewall">CreateFirewall</a></code> | <code>string</code> | [Write] network-firewall:CreateFirewall. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.CreateFirewallPolicy">CreateFirewallPolicy</a></code> | <code>string</code> | [Write] network-firewall:CreateFirewallPolicy. |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.CreateFirewallPolicyV2">CreateFirewallPolicyV2</a></code> | <code>string</code> | [Write] network-firewall:CreateFirewallPolicyV2. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.CreateProxy">CreateProxy</a></code> | <code>string</code> | [Write] network-firewall:CreateProxy. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.CreateProxyConfiguration">CreateProxyConfiguration</a></code> | <code>string</code> | [Write] network-firewall:CreateProxyConfiguration. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.CreateProxyRuleGroup">CreateProxyRuleGroup</a></code> | <code>string</code> | [Write] network-firewall:CreateProxyRuleGroup. |
@@ -1533,6 +1978,7 @@ new network_firewall.NetworkFirewallActions()
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.DeleteContainerAssociation">DeleteContainerAssociation</a></code> | <code>string</code> | [Write] network-firewall:DeleteContainerAssociation. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.DeleteFirewall">DeleteFirewall</a></code> | <code>string</code> | [Write] network-firewall:DeleteFirewall. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.DeleteFirewallPolicy">DeleteFirewallPolicy</a></code> | <code>string</code> | [Write] network-firewall:DeleteFirewallPolicy. |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.DeleteFirewallPolicyV2">DeleteFirewallPolicyV2</a></code> | <code>string</code> | [Write] network-firewall:DeleteFirewallPolicyV2. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.DeleteNetworkFirewallTransitGatewayAttachment">DeleteNetworkFirewallTransitGatewayAttachment</a></code> | <code>string</code> | [Write] network-firewall:DeleteNetworkFirewallTransitGatewayAttachment. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.DeleteProxy">DeleteProxy</a></code> | <code>string</code> | [Write] network-firewall:DeleteProxy. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.DeleteProxyConfiguration">DeleteProxyConfiguration</a></code> | <code>string</code> | [Write] network-firewall:DeleteProxyConfiguration. |
@@ -1546,6 +1992,7 @@ new network_firewall.NetworkFirewallActions()
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.DescribeFirewall">DescribeFirewall</a></code> | <code>string</code> | [Read] network-firewall:DescribeFirewall. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.DescribeFirewallMetadata">DescribeFirewallMetadata</a></code> | <code>string</code> | [Read] network-firewall:DescribeFirewallMetadata. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.DescribeFirewallPolicy">DescribeFirewallPolicy</a></code> | <code>string</code> | [Read] network-firewall:DescribeFirewallPolicy. |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.DescribeFirewallPolicyV2">DescribeFirewallPolicyV2</a></code> | <code>string</code> | [Read] network-firewall:DescribeFirewallPolicyV2. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.DescribeFlowOperation">DescribeFlowOperation</a></code> | <code>string</code> | [Read] network-firewall:DescribeFlowOperation. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.DescribeLoggingConfiguration">DescribeLoggingConfiguration</a></code> | <code>string</code> | [Read] network-firewall:DescribeLoggingConfiguration. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.DescribeProxy">DescribeProxy</a></code> | <code>string</code> | [Read] network-firewall:DescribeProxy. |
@@ -1564,6 +2011,7 @@ new network_firewall.NetworkFirewallActions()
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.ListAnalysisReports">ListAnalysisReports</a></code> | <code>string</code> | [List] network-firewall:ListAnalysisReports. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.ListContainerAssociations">ListContainerAssociations</a></code> | <code>string</code> | [List] network-firewall:ListContainerAssociations. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.ListFirewallPolicies">ListFirewallPolicies</a></code> | <code>string</code> | [List] network-firewall:ListFirewallPolicies. |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.ListFirewallPoliciesV2">ListFirewallPoliciesV2</a></code> | <code>string</code> | [List] network-firewall:ListFirewallPoliciesV2. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.ListFirewalls">ListFirewalls</a></code> | <code>string</code> | [List] network-firewall:ListFirewalls. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.ListFlowOperationResults">ListFlowOperationResults</a></code> | <code>string</code> | [Read] network-firewall:ListFlowOperationResults. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.ListFlowOperations">ListFlowOperations</a></code> | <code>string</code> | [List] network-firewall:ListFlowOperations. |
@@ -1590,6 +2038,7 @@ new network_firewall.NetworkFirewallActions()
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.UpdateFirewallEncryptionConfiguration">UpdateFirewallEncryptionConfiguration</a></code> | <code>string</code> | [Write] network-firewall:UpdateFirewallEncryptionConfiguration. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.UpdateFirewallPolicy">UpdateFirewallPolicy</a></code> | <code>string</code> | [Write] network-firewall:UpdateFirewallPolicy. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.UpdateFirewallPolicyChangeProtection">UpdateFirewallPolicyChangeProtection</a></code> | <code>string</code> | [Write] network-firewall:UpdateFirewallPolicyChangeProtection. |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.UpdateFirewallPolicyV2">UpdateFirewallPolicyV2</a></code> | <code>string</code> | [Write] network-firewall:UpdateFirewallPolicyV2. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.UpdateLoggingConfiguration">UpdateLoggingConfiguration</a></code> | <code>string</code> | [Write] network-firewall:UpdateLoggingConfiguration. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.UpdateProxy">UpdateProxy</a></code> | <code>string</code> | [Write] network-firewall:UpdateProxy. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.UpdateProxyConfiguration">UpdateProxyConfiguration</a></code> | <code>string</code> | [Write] network-firewall:UpdateProxyConfiguration. |
@@ -1770,6 +2219,18 @@ public readonly CreateFirewallPolicy: string;
 
 ---
 
+##### `CreateFirewallPolicyV2`<sup>Required</sup> <a name="CreateFirewallPolicyV2" id="@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.CreateFirewallPolicyV2"></a>
+
+```typescript
+public readonly CreateFirewallPolicyV2: string;
+```
+
+- *Type:* string
+
+[Write] network-firewall:CreateFirewallPolicyV2.
+
+---
+
 ##### `CreateProxy`<sup>Required</sup> <a name="CreateProxy" id="@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.CreateProxy"></a>
 
 ```typescript
@@ -1887,6 +2348,18 @@ public readonly DeleteFirewallPolicy: string;
 - *Type:* string
 
 [Write] network-firewall:DeleteFirewallPolicy.
+
+---
+
+##### `DeleteFirewallPolicyV2`<sup>Required</sup> <a name="DeleteFirewallPolicyV2" id="@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.DeleteFirewallPolicyV2"></a>
+
+```typescript
+public readonly DeleteFirewallPolicyV2: string;
+```
+
+- *Type:* string
+
+[Write] network-firewall:DeleteFirewallPolicyV2.
 
 ---
 
@@ -2043,6 +2516,18 @@ public readonly DescribeFirewallPolicy: string;
 - *Type:* string
 
 [Read] network-firewall:DescribeFirewallPolicy.
+
+---
+
+##### `DescribeFirewallPolicyV2`<sup>Required</sup> <a name="DescribeFirewallPolicyV2" id="@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.DescribeFirewallPolicyV2"></a>
+
+```typescript
+public readonly DescribeFirewallPolicyV2: string;
+```
+
+- *Type:* string
+
+[Read] network-firewall:DescribeFirewallPolicyV2.
 
 ---
 
@@ -2259,6 +2744,18 @@ public readonly ListFirewallPolicies: string;
 - *Type:* string
 
 [List] network-firewall:ListFirewallPolicies.
+
+---
+
+##### `ListFirewallPoliciesV2`<sup>Required</sup> <a name="ListFirewallPoliciesV2" id="@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.ListFirewallPoliciesV2"></a>
+
+```typescript
+public readonly ListFirewallPoliciesV2: string;
+```
+
+- *Type:* string
+
+[List] network-firewall:ListFirewallPoliciesV2.
 
 ---
 
@@ -2574,6 +3071,18 @@ public readonly UpdateFirewallPolicyChangeProtection: string;
 
 ---
 
+##### `UpdateFirewallPolicyV2`<sup>Required</sup> <a name="UpdateFirewallPolicyV2" id="@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.UpdateFirewallPolicyV2"></a>
+
+```typescript
+public readonly UpdateFirewallPolicyV2: string;
+```
+
+- *Type:* string
+
+[Write] network-firewall:UpdateFirewallPolicyV2.
+
+---
+
 ##### `UpdateLoggingConfiguration`<sup>Required</sup> <a name="UpdateLoggingConfiguration" id="@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.UpdateLoggingConfiguration"></a>
 
 ```typescript
@@ -2770,6 +3279,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallConditions.property.CreateContainerAssociationConditionKeys">CreateContainerAssociationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateContainerAssociation action. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallConditions.property.CreateFirewallConditionKeys">CreateFirewallConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateFirewall action. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallConditions.property.CreateFirewallPolicyConditionKeys">CreateFirewallPolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateFirewallPolicy action. |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallConditions.property.CreateFirewallPolicyV2ConditionKeys">CreateFirewallPolicyV2ConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateFirewallPolicyV2 action. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallConditions.property.CreateProxyConditionKeys">CreateProxyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateProxy action. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallConditions.property.CreateProxyConfigurationConditionKeys">CreateProxyConfigurationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateProxyConfiguration action. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallConditions.property.CreateProxyRuleGroupConditionKeys">CreateProxyRuleGroupConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateProxyRuleGroup action. |
@@ -2862,6 +3372,18 @@ public readonly CreateFirewallPolicyConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the CreateFirewallPolicy action.
+
+---
+
+##### `CreateFirewallPolicyV2ConditionKeys`<sup>Required</sup> <a name="CreateFirewallPolicyV2ConditionKeys" id="@cdk_utils/iam.network_firewall.NetworkFirewallConditions.property.CreateFirewallPolicyV2ConditionKeys"></a>
+
+```typescript
+public readonly CreateFirewallPolicyV2ConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateFirewallPolicyV2 action.
 
 ---
 
@@ -4118,9 +4640,15 @@ new network_firewall.NetworkFirewallResources()
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallResources.containerAssociation">containerAssociation</a></code> | Builds an ARN for the ContainerAssociation resource. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallResources.firewall">firewall</a></code> | Builds an ARN for the Firewall resource. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallResources.firewallPolicy">firewallPolicy</a></code> | Builds an ARN for the FirewallPolicy resource. |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallResources.firewallPolicyV2">firewallPolicyV2</a></code> | Builds an ARN for the FirewallPolicyV2 resource. |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallResources.firewallRuleGroup">firewallRuleGroup</a></code> | Builds an ARN for the FirewallRuleGroup resource. |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallResources.ipsRuleGroup">ipsRuleGroup</a></code> | Builds an ARN for the IpsRuleGroup resource. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallResources.isValidContainerAssociationArn">isValidContainerAssociationArn</a></code> | Validates whether a string is a valid ARN for the ContainerAssociation resource. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallResources.isValidFirewallArn">isValidFirewallArn</a></code> | Validates whether a string is a valid ARN for the Firewall resource. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallResources.isValidFirewallPolicyArn">isValidFirewallPolicyArn</a></code> | Validates whether a string is a valid ARN for the FirewallPolicy resource. |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallResources.isValidFirewallPolicyV2Arn">isValidFirewallPolicyV2Arn</a></code> | Validates whether a string is a valid ARN for the FirewallPolicyV2 resource. |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallResources.isValidFirewallRuleGroupArn">isValidFirewallRuleGroupArn</a></code> | Validates whether a string is a valid ARN for the FirewallRuleGroup resource. |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallResources.isValidIpsRuleGroupArn">isValidIpsRuleGroupArn</a></code> | Validates whether a string is a valid ARN for the IpsRuleGroup resource. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallResources.isValidProxyArn">isValidProxyArn</a></code> | Validates whether a string is a valid ARN for the Proxy resource. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallResources.isValidProxyConfigurationArn">isValidProxyConfigurationArn</a></code> | Validates whether a string is a valid ARN for the ProxyConfiguration resource. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallResources.isValidProxyRuleGroupArn">isValidProxyRuleGroupArn</a></code> | Validates whether a string is a valid ARN for the ProxyRuleGroup resource. |
@@ -4131,6 +4659,9 @@ new network_firewall.NetworkFirewallResources()
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallResources.parseContainerAssociationArn">parseContainerAssociationArn</a></code> | Parses a ContainerAssociation ARN into its components. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallResources.parseFirewallArn">parseFirewallArn</a></code> | Parses a Firewall ARN into its components. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallResources.parseFirewallPolicyArn">parseFirewallPolicyArn</a></code> | Parses a FirewallPolicy ARN into its components. |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallResources.parseFirewallPolicyV2Arn">parseFirewallPolicyV2Arn</a></code> | Parses a FirewallPolicyV2 ARN into its components. |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallResources.parseFirewallRuleGroupArn">parseFirewallRuleGroupArn</a></code> | Parses a FirewallRuleGroup ARN into its components. |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallResources.parseIpsRuleGroupArn">parseIpsRuleGroupArn</a></code> | Parses a IpsRuleGroup ARN into its components. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallResources.parseProxyArn">parseProxyArn</a></code> | Parses a Proxy ARN into its components. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallResources.parseProxyConfigurationArn">parseProxyConfigurationArn</a></code> | Parses a ProxyConfiguration ARN into its components. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallResources.parseProxyRuleGroupArn">parseProxyRuleGroupArn</a></code> | Parses a ProxyRuleGroup ARN into its components. |
@@ -4196,6 +4727,54 @@ Builds an ARN for the FirewallPolicy resource.
 
 ---
 
+##### `firewallPolicyV2` <a name="firewallPolicyV2" id="@cdk_utils/iam.network_firewall.NetworkFirewallResources.firewallPolicyV2"></a>
+
+```typescript
+import { network_firewall } from '@cdk_utils/iam'
+
+network_firewall.NetworkFirewallResources.firewallPolicyV2(props: NetworkFirewallFirewallPolicyV2ArnProps)
+```
+
+Builds an ARN for the FirewallPolicyV2 resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.network_firewall.NetworkFirewallResources.firewallPolicyV2.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.network_firewall.NetworkFirewallFirewallPolicyV2ArnProps">NetworkFirewallFirewallPolicyV2ArnProps</a>
+
+---
+
+##### `firewallRuleGroup` <a name="firewallRuleGroup" id="@cdk_utils/iam.network_firewall.NetworkFirewallResources.firewallRuleGroup"></a>
+
+```typescript
+import { network_firewall } from '@cdk_utils/iam'
+
+network_firewall.NetworkFirewallResources.firewallRuleGroup(props: NetworkFirewallFirewallRuleGroupArnProps)
+```
+
+Builds an ARN for the FirewallRuleGroup resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.network_firewall.NetworkFirewallResources.firewallRuleGroup.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.network_firewall.NetworkFirewallFirewallRuleGroupArnProps">NetworkFirewallFirewallRuleGroupArnProps</a>
+
+---
+
+##### `ipsRuleGroup` <a name="ipsRuleGroup" id="@cdk_utils/iam.network_firewall.NetworkFirewallResources.ipsRuleGroup"></a>
+
+```typescript
+import { network_firewall } from '@cdk_utils/iam'
+
+network_firewall.NetworkFirewallResources.ipsRuleGroup(props: NetworkFirewallIpsRuleGroupArnProps)
+```
+
+Builds an ARN for the IpsRuleGroup resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.network_firewall.NetworkFirewallResources.ipsRuleGroup.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.network_firewall.NetworkFirewallIpsRuleGroupArnProps">NetworkFirewallIpsRuleGroupArnProps</a>
+
+---
+
 ##### `isValidContainerAssociationArn` <a name="isValidContainerAssociationArn" id="@cdk_utils/iam.network_firewall.NetworkFirewallResources.isValidContainerAssociationArn"></a>
 
 ```typescript
@@ -4239,6 +4818,54 @@ network_firewall.NetworkFirewallResources.isValidFirewallPolicyArn(arn: string)
 Validates whether a string is a valid ARN for the FirewallPolicy resource.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.network_firewall.NetworkFirewallResources.isValidFirewallPolicyArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidFirewallPolicyV2Arn` <a name="isValidFirewallPolicyV2Arn" id="@cdk_utils/iam.network_firewall.NetworkFirewallResources.isValidFirewallPolicyV2Arn"></a>
+
+```typescript
+import { network_firewall } from '@cdk_utils/iam'
+
+network_firewall.NetworkFirewallResources.isValidFirewallPolicyV2Arn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the FirewallPolicyV2 resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.network_firewall.NetworkFirewallResources.isValidFirewallPolicyV2Arn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidFirewallRuleGroupArn` <a name="isValidFirewallRuleGroupArn" id="@cdk_utils/iam.network_firewall.NetworkFirewallResources.isValidFirewallRuleGroupArn"></a>
+
+```typescript
+import { network_firewall } from '@cdk_utils/iam'
+
+network_firewall.NetworkFirewallResources.isValidFirewallRuleGroupArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the FirewallRuleGroup resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.network_firewall.NetworkFirewallResources.isValidFirewallRuleGroupArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidIpsRuleGroupArn` <a name="isValidIpsRuleGroupArn" id="@cdk_utils/iam.network_firewall.NetworkFirewallResources.isValidIpsRuleGroupArn"></a>
+
+```typescript
+import { network_firewall } from '@cdk_utils/iam'
+
+network_firewall.NetworkFirewallResources.isValidIpsRuleGroupArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the IpsRuleGroup resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.network_firewall.NetworkFirewallResources.isValidIpsRuleGroupArn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -4399,6 +5026,54 @@ network_firewall.NetworkFirewallResources.parseFirewallPolicyArn(arn: string)
 Parses a FirewallPolicy ARN into its components.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.network_firewall.NetworkFirewallResources.parseFirewallPolicyArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseFirewallPolicyV2Arn` <a name="parseFirewallPolicyV2Arn" id="@cdk_utils/iam.network_firewall.NetworkFirewallResources.parseFirewallPolicyV2Arn"></a>
+
+```typescript
+import { network_firewall } from '@cdk_utils/iam'
+
+network_firewall.NetworkFirewallResources.parseFirewallPolicyV2Arn(arn: string)
+```
+
+Parses a FirewallPolicyV2 ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.network_firewall.NetworkFirewallResources.parseFirewallPolicyV2Arn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseFirewallRuleGroupArn` <a name="parseFirewallRuleGroupArn" id="@cdk_utils/iam.network_firewall.NetworkFirewallResources.parseFirewallRuleGroupArn"></a>
+
+```typescript
+import { network_firewall } from '@cdk_utils/iam'
+
+network_firewall.NetworkFirewallResources.parseFirewallRuleGroupArn(arn: string)
+```
+
+Parses a FirewallRuleGroup ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.network_firewall.NetworkFirewallResources.parseFirewallRuleGroupArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseIpsRuleGroupArn` <a name="parseIpsRuleGroupArn" id="@cdk_utils/iam.network_firewall.NetworkFirewallResources.parseIpsRuleGroupArn"></a>
+
+```typescript
+import { network_firewall } from '@cdk_utils/iam'
+
+network_firewall.NetworkFirewallResources.parseIpsRuleGroupArn(arn: string)
+```
+
+Parses a IpsRuleGroup ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.network_firewall.NetworkFirewallResources.parseIpsRuleGroupArn.parameter.arn"></a>
 
 - *Type:* string
 

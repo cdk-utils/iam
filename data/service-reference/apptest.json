@@ -1,5 +1,6 @@
 {
   "Name": "apptest",
+  "ServiceName": "Mainframe Modernization Application Testing",
   "Actions": [
     {
       "Name": "CreateTestCase",
@@ -536,5 +537,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

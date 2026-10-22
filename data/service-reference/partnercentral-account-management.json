@@ -1,5 +1,6 @@
 {
   "Name": "partnercentral-account-management",
+  "ServiceName": "Partner central account management",
   "Actions": [
     {
       "Name": "AccessLegacyPartnerCentral",
@@ -121,5 +122,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

@@ -1,5 +1,6 @@
 {
   "Name": "s3-outposts",
+  "ServiceName": "S3 Outposts",
   "Actions": [
     {
       "Name": "AbortMultipartUpload",
@@ -89,6 +90,7 @@
       "Name": "CreateEndpoint",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -219,6 +221,7 @@
       "Name": "DeleteEndpoint",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -836,6 +839,7 @@
       "Name": "ListEndpoints",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -880,6 +884,7 @@
       "Name": "ListOutpostsWithS3",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -916,6 +921,7 @@
       "Name": "ListSharedEndpoints",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1523,5 +1529,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

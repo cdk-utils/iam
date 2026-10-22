@@ -1,5 +1,6 @@
 {
   "Name": "nimble",
+  "ServiceName": "Nimble Studio",
   "Actions": [
     {
       "Name": "AcceptEulas",
@@ -1261,5 +1262,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

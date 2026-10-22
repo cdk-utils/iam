@@ -24,6 +24,8 @@ export class KMSActions {
 	static readonly CreateGrant = "kms:CreateGrant";
 	/** [Write] kms:CreateKey */
 	static readonly CreateKey = "kms:CreateKey";
+	/** [Write] kms:Decapsulate */
+	static readonly Decapsulate = "kms:Decapsulate";
 	/** [Write] kms:Decrypt */
 	static readonly Decrypt = "kms:Decrypt";
 	/** [Write] kms:DeleteAlias */
@@ -48,6 +50,8 @@ export class KMSActions {
 	static readonly EnableKey = "kms:EnableKey";
 	/** [Write] kms:EnableKeyRotation */
 	static readonly EnableKeyRotation = "kms:EnableKeyRotation";
+	/** [Write] kms:Encapsulate */
+	static readonly Encapsulate = "kms:Encapsulate";
 	/** [Write] kms:Encrypt */
 	static readonly Encrypt = "kms:Encrypt";
 	/** [Write] kms:GenerateDataKey */
@@ -144,6 +148,7 @@ export class KMSActions {
 		KMSActions.CreateAlias,
 		KMSActions.CreateCustomKeyStore,
 		KMSActions.CreateKey,
+		KMSActions.Decapsulate,
 		KMSActions.Decrypt,
 		KMSActions.DeleteAlias,
 		KMSActions.DeleteCustomKeyStore,
@@ -154,6 +159,7 @@ export class KMSActions {
 		KMSActions.DisconnectCustomKeyStore,
 		KMSActions.EnableKey,
 		KMSActions.EnableKeyRotation,
+		KMSActions.Encapsulate,
 		KMSActions.Encrypt,
 		KMSActions.GenerateDataKey,
 		KMSActions.GenerateDataKeyPair,
@@ -516,6 +522,13 @@ export class KMSConditions {
 		"kms:MultiRegionKeyType",
 		"kms:ViaService",
 	];
+	/** Condition keys applicable to the Decapsulate action. */
+	static readonly DecapsulateConditionKeys: string[] = [
+		"kms:CallerAccount",
+		"kms:EncapsulationAlgorithm",
+		"kms:RequestAlias",
+		"kms:ViaService",
+	];
 	/** Condition keys applicable to the Decrypt action. */
 	static readonly DecryptConditionKeys: string[] = [
 		"kms:CallerAccount",
@@ -578,6 +591,7 @@ export class KMSConditions {
 		"kms:RecipientAttestation:PCR6",
 		"kms:RecipientAttestation:PCR7",
 		"kms:RecipientAttestation:PCR8",
+		"kms:RecipientAttestation:PCR8:ServiceName",
 		"kms:RecipientAttestation:PCR9",
 		"kms:RequestAlias",
 		"kms:ViaService",
@@ -656,6 +670,7 @@ export class KMSConditions {
 		"kms:RecipientAttestation:PCR6",
 		"kms:RecipientAttestation:PCR7",
 		"kms:RecipientAttestation:PCR8",
+		"kms:RecipientAttestation:PCR8:ServiceName",
 		"kms:RecipientAttestation:PCR9",
 		"kms:RequestAlias",
 		"kms:ViaService",
@@ -694,6 +709,13 @@ export class KMSConditions {
 	static readonly EnableKeyRotationConditionKeys: string[] = [
 		"kms:CallerAccount",
 		"kms:RotationPeriodInDays",
+		"kms:ViaService",
+	];
+	/** Condition keys applicable to the Encapsulate action. */
+	static readonly EncapsulateConditionKeys: string[] = [
+		"kms:CallerAccount",
+		"kms:EncapsulationAlgorithm",
+		"kms:RequestAlias",
 		"kms:ViaService",
 	];
 	/** Condition keys applicable to the Encrypt action. */
@@ -767,6 +789,7 @@ export class KMSConditions {
 		"kms:RecipientAttestation:PCR6",
 		"kms:RecipientAttestation:PCR7",
 		"kms:RecipientAttestation:PCR8",
+		"kms:RecipientAttestation:PCR8:ServiceName",
 		"kms:RecipientAttestation:PCR9",
 		"kms:RequestAlias",
 		"kms:ViaService",
@@ -834,6 +857,7 @@ export class KMSConditions {
 		"kms:RecipientAttestation:PCR6",
 		"kms:RecipientAttestation:PCR7",
 		"kms:RecipientAttestation:PCR8",
+		"kms:RecipientAttestation:PCR8:ServiceName",
 		"kms:RecipientAttestation:PCR9",
 		"kms:RequestAlias",
 		"kms:ViaService",
@@ -866,6 +890,7 @@ export class KMSConditions {
 	];
 	/** Condition keys applicable to the GenerateRandom action. */
 	static readonly GenerateRandomConditionKeys: string[] = [
+		"kms:CallerAccount",
 		"kms:RecipientAttestation:ImageSha384",
 		"kms:RecipientAttestation:NitroTPMPCR0",
 		"kms:RecipientAttestation:NitroTPMPCR1",
@@ -922,6 +947,7 @@ export class KMSConditions {
 		"kms:RecipientAttestation:PCR6",
 		"kms:RecipientAttestation:PCR7",
 		"kms:RecipientAttestation:PCR8",
+		"kms:RecipientAttestation:PCR8:ServiceName",
 		"kms:RecipientAttestation:PCR9",
 	];
 	/** Condition keys applicable to the GetKeyLastUsage action. */
@@ -959,6 +985,11 @@ export class KMSConditions {
 		"kms:ValidTo",
 		"kms:ViaService",
 	];
+	/** Condition keys applicable to the ListAliases action. */
+	static readonly ListAliasesConditionKeys: string[] = [
+		"kms:CallerAccount",
+		"kms:ViaService",
+	];
 	/** Condition keys applicable to the ListGrants action. */
 	static readonly ListGrantsConditionKeys: string[] = [
 		"kms:CallerAccount",
@@ -972,6 +1003,11 @@ export class KMSConditions {
 	];
 	/** Condition keys applicable to the ListKeyRotations action. */
 	static readonly ListKeyRotationsConditionKeys: string[] = [
+		"kms:CallerAccount",
+		"kms:ViaService",
+	];
+	/** Condition keys applicable to the ListKeys action. */
+	static readonly ListKeysConditionKeys: string[] = [
 		"kms:CallerAccount",
 		"kms:ViaService",
 	];
@@ -1112,6 +1148,8 @@ export class KMSConditions {
 	static readonly CUSTOMER_MASTER_KEY_USAGE = "kms:CustomerMasterKeyUsage";
 	/** Condition key: kms:DataKeyPairSpec (String) */
 	static readonly DATA_KEY_PAIR_SPEC = "kms:DataKeyPairSpec";
+	/** Condition key: kms:EncapsulationAlgorithm (String) */
+	static readonly ENCAPSULATION_ALGORITHM = "kms:EncapsulationAlgorithm";
 	/** Condition key: kms:EncryptionAlgorithm (String) */
 	static readonly ENCRYPTION_ALGORITHM = "kms:EncryptionAlgorithm";
 	/** Condition key: kms:EncryptionContext:${EncryptionContextKey} (String) */
@@ -1405,6 +1443,15 @@ export class KMSConditions {
 		value: string,
 	): Record<string, Record<string, string>> {
 		return { StringEquals: { "kms:DataKeyPairSpec": value } };
+	}
+
+	/**
+	 * Generates a condition block for `kms:EncapsulationAlgorithm`.
+	 */
+	static encapsulationAlgorithm(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "kms:EncapsulationAlgorithm": value } };
 	}
 
 	/**

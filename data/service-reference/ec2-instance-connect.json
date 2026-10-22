@@ -1,5 +1,6 @@
 {
   "Name": "ec2-instance-connect",
+  "ServiceName": "EC2 Instance Connect",
   "Actions": [
     {
       "Name": "OpenTunnel",
@@ -38,6 +39,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -58,6 +60,7 @@
       "Name": "SendSerialConsoleSSHPublicKey",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -169,5 +172,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

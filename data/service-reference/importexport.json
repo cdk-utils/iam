@@ -1,5 +1,6 @@
 {
   "Name": "importexport",
+  "ServiceName": "Import/Export",
   "Actions": [
     {
       "Name": "CancelJob",
@@ -154,5 +155,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

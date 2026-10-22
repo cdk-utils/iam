@@ -3092,6 +3092,7 @@ export class BedrockAgentcoreOperations {
 	/** IAM actions required for the BatchCreateMemoryRecords API call. */
 	static readonly BatchCreateMemoryRecords: string[] = [
 		"bedrock-agentcore:BatchCreateMemoryRecords",
+		"bedrock-agentcore:UpdateMemoryRecordExpirySpecification",
 	];
 	/** IAM actions required for the BatchDeleteMemoryRecords API call. */
 	static readonly BatchDeleteMemoryRecords: string[] = [

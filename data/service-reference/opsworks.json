@@ -1,5 +1,6 @@
 {
   "Name": "opsworks",
+  "ServiceName": "OpsWorks",
   "Actions": [
     {
       "Name": "AssignInstance",
@@ -1450,5 +1451,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

@@ -1,5 +1,6 @@
 {
   "Name": "activate",
+  "ServiceName": "Activate",
   "Actions": [
     {
       "Name": "CreateForm",
@@ -122,5 +123,5 @@
       }
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

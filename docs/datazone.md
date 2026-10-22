@@ -3985,6 +3985,7 @@ new datazone.DatazoneOperations()
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneOperations.property.CreateDataProduct">CreateDataProduct</a></code> | <code>string[]</code> | IAM actions required for the CreateDataProduct API call. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneOperations.property.CreateDataProductRevision">CreateDataProductRevision</a></code> | <code>string[]</code> | IAM actions required for the CreateDataProductRevision API call. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneOperations.property.CreateDataSource">CreateDataSource</a></code> | <code>string[]</code> | IAM actions required for the CreateDataSource API call. |
+| <code><a href="#@cdk_utils/iam.datazone.DatazoneOperations.property.CreateDesignation">CreateDesignation</a></code> | <code>string[]</code> | IAM actions required for the CreateDesignation API call. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneOperations.property.CreateDomain">CreateDomain</a></code> | <code>string[]</code> | IAM actions required for the CreateDomain API call. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneOperations.property.CreateDomainUnit">CreateDomainUnit</a></code> | <code>string[]</code> | IAM actions required for the CreateDomainUnit API call. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneOperations.property.CreateEnvironment">CreateEnvironment</a></code> | <code>string[]</code> | IAM actions required for the CreateEnvironment API call. |
@@ -4013,6 +4014,7 @@ new datazone.DatazoneOperations()
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneOperations.property.DeleteDataExportConfiguration">DeleteDataExportConfiguration</a></code> | <code>string[]</code> | IAM actions required for the DeleteDataExportConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneOperations.property.DeleteDataProduct">DeleteDataProduct</a></code> | <code>string[]</code> | IAM actions required for the DeleteDataProduct API call. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneOperations.property.DeleteDataSource">DeleteDataSource</a></code> | <code>string[]</code> | IAM actions required for the DeleteDataSource API call. |
+| <code><a href="#@cdk_utils/iam.datazone.DatazoneOperations.property.DeleteDesignation">DeleteDesignation</a></code> | <code>string[]</code> | IAM actions required for the DeleteDesignation API call. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneOperations.property.DeleteDomain">DeleteDomain</a></code> | <code>string[]</code> | IAM actions required for the DeleteDomain API call. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneOperations.property.DeleteDomainUnit">DeleteDomainUnit</a></code> | <code>string[]</code> | IAM actions required for the DeleteDomainUnit API call. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneOperations.property.DeleteEnvironment">DeleteEnvironment</a></code> | <code>string[]</code> | IAM actions required for the DeleteEnvironment API call. |
@@ -4045,6 +4047,7 @@ new datazone.DatazoneOperations()
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneOperations.property.ListDataSourceRunActivities">ListDataSourceRunActivities</a></code> | <code>string[]</code> | IAM actions required for the ListDataSourceRunActivities API call. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneOperations.property.ListDataSourceRuns">ListDataSourceRuns</a></code> | <code>string[]</code> | IAM actions required for the ListDataSourceRuns API call. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneOperations.property.ListDataSources">ListDataSources</a></code> | <code>string[]</code> | IAM actions required for the ListDataSources API call. |
+| <code><a href="#@cdk_utils/iam.datazone.DatazoneOperations.property.ListDesignations">ListDesignations</a></code> | <code>string[]</code> | IAM actions required for the ListDesignations API call. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneOperations.property.ListDomains">ListDomains</a></code> | <code>string[]</code> | IAM actions required for the ListDomains API call. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneOperations.property.ListDomainUnitsForParent">ListDomainUnitsForParent</a></code> | <code>string[]</code> | IAM actions required for the ListDomainUnitsForParent API call. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneOperations.property.ListEntityOwners">ListEntityOwners</a></code> | <code>string[]</code> | IAM actions required for the ListEntityOwners API call. |
@@ -4080,6 +4083,7 @@ new datazone.DatazoneOperations()
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneOperations.property.opGetDataProduct">opGetDataProduct</a></code> | <code>string[]</code> | IAM actions required for the GetDataProduct API call. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneOperations.property.opGetDataSource">opGetDataSource</a></code> | <code>string[]</code> | IAM actions required for the GetDataSource API call. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneOperations.property.opGetDataSourceRun">opGetDataSourceRun</a></code> | <code>string[]</code> | IAM actions required for the GetDataSourceRun API call. |
+| <code><a href="#@cdk_utils/iam.datazone.DatazoneOperations.property.opGetDesignation">opGetDesignation</a></code> | <code>string[]</code> | IAM actions required for the GetDesignation API call. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneOperations.property.opGetDomain">opGetDomain</a></code> | <code>string[]</code> | IAM actions required for the GetDomain API call. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneOperations.property.opGetDomainUnit">opGetDomainUnit</a></code> | <code>string[]</code> | IAM actions required for the GetDomainUnit API call. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneOperations.property.opGetEnvironment">opGetEnvironment</a></code> | <code>string[]</code> | IAM actions required for the GetEnvironment API call. |
@@ -4138,6 +4142,7 @@ new datazone.DatazoneOperations()
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneOperations.property.UpdateAssetFilter">UpdateAssetFilter</a></code> | <code>string[]</code> | IAM actions required for the UpdateAssetFilter API call. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneOperations.property.UpdateConnection">UpdateConnection</a></code> | <code>string[]</code> | IAM actions required for the UpdateConnection API call. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneOperations.property.UpdateDataSource">UpdateDataSource</a></code> | <code>string[]</code> | IAM actions required for the UpdateDataSource API call. |
+| <code><a href="#@cdk_utils/iam.datazone.DatazoneOperations.property.UpdateDesignation">UpdateDesignation</a></code> | <code>string[]</code> | IAM actions required for the UpdateDesignation API call. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneOperations.property.UpdateDomain">UpdateDomain</a></code> | <code>string[]</code> | IAM actions required for the UpdateDomain API call. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneOperations.property.UpdateDomainUnit">UpdateDomainUnit</a></code> | <code>string[]</code> | IAM actions required for the UpdateDomainUnit API call. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneOperations.property.UpdateEnvironment">UpdateEnvironment</a></code> | <code>string[]</code> | IAM actions required for the UpdateEnvironment API call. |
@@ -4384,6 +4389,18 @@ public readonly CreateDataSource: string[];
 - *Type:* string[]
 
 IAM actions required for the CreateDataSource API call.
+
+---
+
+##### `CreateDesignation`<sup>Required</sup> <a name="CreateDesignation" id="@cdk_utils/iam.datazone.DatazoneOperations.property.CreateDesignation"></a>
+
+```typescript
+public readonly CreateDesignation: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateDesignation API call.
 
 ---
 
@@ -4720,6 +4737,18 @@ public readonly DeleteDataSource: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteDataSource API call.
+
+---
+
+##### `DeleteDesignation`<sup>Required</sup> <a name="DeleteDesignation" id="@cdk_utils/iam.datazone.DatazoneOperations.property.DeleteDesignation"></a>
+
+```typescript
+public readonly DeleteDesignation: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteDesignation API call.
 
 ---
 
@@ -5104,6 +5133,18 @@ public readonly ListDataSources: string[];
 - *Type:* string[]
 
 IAM actions required for the ListDataSources API call.
+
+---
+
+##### `ListDesignations`<sup>Required</sup> <a name="ListDesignations" id="@cdk_utils/iam.datazone.DatazoneOperations.property.ListDesignations"></a>
+
+```typescript
+public readonly ListDesignations: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListDesignations API call.
 
 ---
 
@@ -5524,6 +5565,18 @@ public readonly opGetDataSourceRun: string[];
 - *Type:* string[]
 
 IAM actions required for the GetDataSourceRun API call.
+
+---
+
+##### `opGetDesignation`<sup>Required</sup> <a name="opGetDesignation" id="@cdk_utils/iam.datazone.DatazoneOperations.property.opGetDesignation"></a>
+
+```typescript
+public readonly opGetDesignation: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetDesignation API call.
 
 ---
 
@@ -6220,6 +6273,18 @@ public readonly UpdateDataSource: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateDataSource API call.
+
+---
+
+##### `UpdateDesignation`<sup>Required</sup> <a name="UpdateDesignation" id="@cdk_utils/iam.datazone.DatazoneOperations.property.UpdateDesignation"></a>
+
+```typescript
+public readonly UpdateDesignation: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateDesignation API call.
 
 ---
 

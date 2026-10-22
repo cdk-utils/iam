@@ -1,5 +1,6 @@
 {
   "Name": "aws-portal",
+  "ServiceName": "Billing Console",
   "Actions": [
     {
       "Name": "GetConsoleActionSetEnforced",
@@ -137,5 +138,5 @@
       }
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

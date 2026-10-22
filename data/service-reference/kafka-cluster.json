@@ -1,5 +1,6 @@
 {
   "Name": "kafka-cluster",
+  "ServiceName": "Apache Kafka APIs for MSK",
   "Actions": [
     {
       "Name": "AlterCluster",
@@ -419,5 +420,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

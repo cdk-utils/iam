@@ -341,6 +341,7 @@ new kms.KMSActions()
 | <code><a href="#@cdk_utils/iam.kms.KMSActions.property.CreateCustomKeyStore">CreateCustomKeyStore</a></code> | <code>string</code> | [Write] kms:CreateCustomKeyStore. |
 | <code><a href="#@cdk_utils/iam.kms.KMSActions.property.CreateGrant">CreateGrant</a></code> | <code>string</code> | [PermissionManagement] kms:CreateGrant. |
 | <code><a href="#@cdk_utils/iam.kms.KMSActions.property.CreateKey">CreateKey</a></code> | <code>string</code> | [Write] kms:CreateKey. |
+| <code><a href="#@cdk_utils/iam.kms.KMSActions.property.Decapsulate">Decapsulate</a></code> | <code>string</code> | [Write] kms:Decapsulate. |
 | <code><a href="#@cdk_utils/iam.kms.KMSActions.property.Decrypt">Decrypt</a></code> | <code>string</code> | [Write] kms:Decrypt. |
 | <code><a href="#@cdk_utils/iam.kms.KMSActions.property.DeleteAlias">DeleteAlias</a></code> | <code>string</code> | [Write] kms:DeleteAlias. |
 | <code><a href="#@cdk_utils/iam.kms.KMSActions.property.DeleteCustomKeyStore">DeleteCustomKeyStore</a></code> | <code>string</code> | [Write] kms:DeleteCustomKeyStore. |
@@ -353,6 +354,7 @@ new kms.KMSActions()
 | <code><a href="#@cdk_utils/iam.kms.KMSActions.property.DisconnectCustomKeyStore">DisconnectCustomKeyStore</a></code> | <code>string</code> | [Write] kms:DisconnectCustomKeyStore. |
 | <code><a href="#@cdk_utils/iam.kms.KMSActions.property.EnableKey">EnableKey</a></code> | <code>string</code> | [Write] kms:EnableKey. |
 | <code><a href="#@cdk_utils/iam.kms.KMSActions.property.EnableKeyRotation">EnableKeyRotation</a></code> | <code>string</code> | [Write] kms:EnableKeyRotation. |
+| <code><a href="#@cdk_utils/iam.kms.KMSActions.property.Encapsulate">Encapsulate</a></code> | <code>string</code> | [Write] kms:Encapsulate. |
 | <code><a href="#@cdk_utils/iam.kms.KMSActions.property.Encrypt">Encrypt</a></code> | <code>string</code> | [Write] kms:Encrypt. |
 | <code><a href="#@cdk_utils/iam.kms.KMSActions.property.GenerateDataKey">GenerateDataKey</a></code> | <code>string</code> | [Write] kms:GenerateDataKey. |
 | <code><a href="#@cdk_utils/iam.kms.KMSActions.property.GenerateDataKeyPair">GenerateDataKeyPair</a></code> | <code>string</code> | [Write] kms:GenerateDataKeyPair. |
@@ -582,6 +584,18 @@ public readonly CreateKey: string;
 
 ---
 
+##### `Decapsulate`<sup>Required</sup> <a name="Decapsulate" id="@cdk_utils/iam.kms.KMSActions.property.Decapsulate"></a>
+
+```typescript
+public readonly Decapsulate: string;
+```
+
+- *Type:* string
+
+[Write] kms:Decapsulate.
+
+---
+
 ##### `Decrypt`<sup>Required</sup> <a name="Decrypt" id="@cdk_utils/iam.kms.KMSActions.property.Decrypt"></a>
 
 ```typescript
@@ -723,6 +737,18 @@ public readonly EnableKeyRotation: string;
 - *Type:* string
 
 [Write] kms:EnableKeyRotation.
+
+---
+
+##### `Encapsulate`<sup>Required</sup> <a name="Encapsulate" id="@cdk_utils/iam.kms.KMSActions.property.Encapsulate"></a>
+
+```typescript
+public readonly Encapsulate: string;
+```
+
+- *Type:* string
+
+[Write] kms:Encapsulate.
 
 ---
 
@@ -1161,6 +1187,7 @@ new kms.KMSConditions()
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.customerMasterKeySpec">customerMasterKeySpec</a></code> | Generates a condition block for `kms:CustomerMasterKeySpec`. |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.customerMasterKeyUsage">customerMasterKeyUsage</a></code> | Generates a condition block for `kms:CustomerMasterKeyUsage`. |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.dataKeyPairSpec">dataKeyPairSpec</a></code> | Generates a condition block for `kms:DataKeyPairSpec`. |
+| <code><a href="#@cdk_utils/iam.kms.KMSConditions.encapsulationAlgorithm">encapsulationAlgorithm</a></code> | Generates a condition block for `kms:EncapsulationAlgorithm`. |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.encryptionAlgorithm">encryptionAlgorithm</a></code> | Generates a condition block for `kms:EncryptionAlgorithm`. |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.encryptionContext">encryptionContext</a></code> | Generates a condition block for `kms:EncryptionContext:${EncryptionContextKey}`. |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.encryptionContextKeys">encryptionContextKeys</a></code> | Generates a condition block for `kms:EncryptionContextKeys`. |
@@ -1332,6 +1359,22 @@ kms.KMSConditions.dataKeyPairSpec(value: string)
 Generates a condition block for `kms:DataKeyPairSpec`.
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.kms.KMSConditions.dataKeyPairSpec.parameter.value"></a>
+
+- *Type:* string
+
+---
+
+##### `encapsulationAlgorithm` <a name="encapsulationAlgorithm" id="@cdk_utils/iam.kms.KMSConditions.encapsulationAlgorithm"></a>
+
+```typescript
+import { kms } from '@cdk_utils/iam'
+
+kms.KMSConditions.encapsulationAlgorithm(value: string)
+```
+
+Generates a condition block for `kms:EncapsulationAlgorithm`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.kms.KMSConditions.encapsulationAlgorithm.parameter.value"></a>
 
 - *Type:* string
 
@@ -2849,6 +2892,7 @@ Generates a condition block for `kms:WrappingKeySpec`.
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.CUSTOMER_MASTER_KEY_SPEC">CUSTOMER_MASTER_KEY_SPEC</a></code> | <code>string</code> | Condition key: kms:CustomerMasterKeySpec (String). |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.CUSTOMER_MASTER_KEY_USAGE">CUSTOMER_MASTER_KEY_USAGE</a></code> | <code>string</code> | Condition key: kms:CustomerMasterKeyUsage (String). |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.DATA_KEY_PAIR_SPEC">DATA_KEY_PAIR_SPEC</a></code> | <code>string</code> | Condition key: kms:DataKeyPairSpec (String). |
+| <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.DecapsulateConditionKeys">DecapsulateConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the Decapsulate action. |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.DecryptConditionKeys">DecryptConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the Decrypt action. |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.DeleteAliasConditionKeys">DeleteAliasConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteAlias action. |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.DeleteCustomKeyStoreConditionKeys">DeleteCustomKeyStoreConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteCustomKeyStore action. |
@@ -2861,6 +2905,8 @@ Generates a condition block for `kms:WrappingKeySpec`.
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.DisconnectCustomKeyStoreConditionKeys">DisconnectCustomKeyStoreConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DisconnectCustomKeyStore action. |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.EnableKeyConditionKeys">EnableKeyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the EnableKey action. |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.EnableKeyRotationConditionKeys">EnableKeyRotationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the EnableKeyRotation action. |
+| <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.EncapsulateConditionKeys">EncapsulateConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the Encapsulate action. |
+| <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.ENCAPSULATION_ALGORITHM">ENCAPSULATION_ALGORITHM</a></code> | <code>string</code> | Condition key: kms:EncapsulationAlgorithm (String). |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.EncryptConditionKeys">EncryptConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the Encrypt action. |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.ENCRYPTION_ALGORITHM">ENCRYPTION_ALGORITHM</a></code> | <code>string</code> | Condition key: kms:EncryptionAlgorithm (String). |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.ENCRYPTION_CONTEXT">ENCRYPTION_CONTEXT</a></code> | <code>string</code> | Condition key: kms:EncryptionContext:${EncryptionContextKey} (String). |
@@ -2883,9 +2929,11 @@ Generates a condition block for `kms:WrappingKeySpec`.
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.KEY_ORIGIN">KEY_ORIGIN</a></code> | <code>string</code> | Condition key: kms:KeyOrigin (String). |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.KEY_SPEC">KEY_SPEC</a></code> | <code>string</code> | Condition key: kms:KeySpec (String). |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.KEY_USAGE">KEY_USAGE</a></code> | <code>string</code> | Condition key: kms:KeyUsage (String). |
+| <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.ListAliasesConditionKeys">ListAliasesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListAliases action. |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.ListGrantsConditionKeys">ListGrantsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListGrants action. |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.ListKeyPoliciesConditionKeys">ListKeyPoliciesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListKeyPolicies action. |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.ListKeyRotationsConditionKeys">ListKeyRotationsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListKeyRotations action. |
+| <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.ListKeysConditionKeys">ListKeysConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListKeys action. |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.ListResourceTagsConditionKeys">ListResourceTagsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListResourceTags action. |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.MAC_ALGORITHM">MAC_ALGORITHM</a></code> | <code>string</code> | Condition key: kms:MacAlgorithm (String). |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.MESSAGE_TYPE">MESSAGE_TYPE</a></code> | <code>string</code> | Condition key: kms:MessageType (String). |
@@ -3211,6 +3259,18 @@ Condition key: kms:DataKeyPairSpec (String).
 
 ---
 
+##### `DecapsulateConditionKeys`<sup>Required</sup> <a name="DecapsulateConditionKeys" id="@cdk_utils/iam.kms.KMSConditions.property.DecapsulateConditionKeys"></a>
+
+```typescript
+public readonly DecapsulateConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the Decapsulate action.
+
+---
+
 ##### `DecryptConditionKeys`<sup>Required</sup> <a name="DecryptConditionKeys" id="@cdk_utils/iam.kms.KMSConditions.property.DecryptConditionKeys"></a>
 
 ```typescript
@@ -3352,6 +3412,30 @@ public readonly EnableKeyRotationConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the EnableKeyRotation action.
+
+---
+
+##### `EncapsulateConditionKeys`<sup>Required</sup> <a name="EncapsulateConditionKeys" id="@cdk_utils/iam.kms.KMSConditions.property.EncapsulateConditionKeys"></a>
+
+```typescript
+public readonly EncapsulateConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the Encapsulate action.
+
+---
+
+##### `ENCAPSULATION_ALGORITHM`<sup>Required</sup> <a name="ENCAPSULATION_ALGORITHM" id="@cdk_utils/iam.kms.KMSConditions.property.ENCAPSULATION_ALGORITHM"></a>
+
+```typescript
+public readonly ENCAPSULATION_ALGORITHM: string;
+```
+
+- *Type:* string
+
+Condition key: kms:EncapsulationAlgorithm (String).
 
 ---
 
@@ -3619,6 +3703,18 @@ Condition key: kms:KeyUsage (String).
 
 ---
 
+##### `ListAliasesConditionKeys`<sup>Required</sup> <a name="ListAliasesConditionKeys" id="@cdk_utils/iam.kms.KMSConditions.property.ListAliasesConditionKeys"></a>
+
+```typescript
+public readonly ListAliasesConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ListAliases action.
+
+---
+
 ##### `ListGrantsConditionKeys`<sup>Required</sup> <a name="ListGrantsConditionKeys" id="@cdk_utils/iam.kms.KMSConditions.property.ListGrantsConditionKeys"></a>
 
 ```typescript
@@ -3652,6 +3748,18 @@ public readonly ListKeyRotationsConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the ListKeyRotations action.
+
+---
+
+##### `ListKeysConditionKeys`<sup>Required</sup> <a name="ListKeysConditionKeys" id="@cdk_utils/iam.kms.KMSConditions.property.ListKeysConditionKeys"></a>
+
+```typescript
+public readonly ListKeysConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ListKeys action.
 
 ---
 

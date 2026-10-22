@@ -1,5 +1,6 @@
 {
   "Name": "vpc-lattice-svcs",
+  "ServiceName": "VPC Lattice Services",
   "Actions": [
     {
       "Name": "Connect",
@@ -142,5 +143,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }

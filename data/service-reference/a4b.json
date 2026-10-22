@@ -1,5 +1,6 @@
 {
   "Name": "a4b",
+  "ServiceName": "Alexa for Business",
   "Actions": [
     {
       "Name": "ApproveSkill",
@@ -1941,5 +1942,5 @@
       ]
     }
   ],
-  "Version": "v1.4"
+  "Version": "v1.5"
 }
