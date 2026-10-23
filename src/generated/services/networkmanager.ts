@@ -175,6 +175,9 @@ export class NetworkManagerActions {
 		"networkmanager:GetTransitGatewayRouteTableAttachment";
 	/** [Read] networkmanager:GetVpcAttachment */
 	static readonly actionGetVpcAttachment = "networkmanager:GetVpcAttachment";
+	/** [List] networkmanager:ListAttachmentNatConfigurations */
+	static readonly ListAttachmentNatConfigurations =
+		"networkmanager:ListAttachmentNatConfigurations";
 	/** [List] networkmanager:ListAttachmentRoutingPolicyAssociations */
 	static readonly ListAttachmentRoutingPolicyAssociations =
 		"networkmanager:ListAttachmentRoutingPolicyAssociations";
@@ -227,6 +230,9 @@ export class NetworkManagerActions {
 	static readonly TagResource = "networkmanager:TagResource";
 	/** [Tagging] networkmanager:UntagResource */
 	static readonly UntagResource = "networkmanager:UntagResource";
+	/** [Write] networkmanager:UpdateAttachmentNatConfiguration */
+	static readonly UpdateAttachmentNatConfiguration =
+		"networkmanager:UpdateAttachmentNatConfiguration";
 	/** [Write] networkmanager:UpdateConnection */
 	static readonly UpdateConnection = "networkmanager:UpdateConnection";
 	/** [Write] networkmanager:UpdateCoreNetwork */
@@ -316,6 +322,7 @@ export class NetworkManagerActions {
 		NetworkManagerActions.RemoveAttachmentRoutingPolicyLabel,
 		NetworkManagerActions.RestoreCoreNetworkPolicyVersion,
 		NetworkManagerActions.StartRouteAnalysis,
+		NetworkManagerActions.UpdateAttachmentNatConfiguration,
 		NetworkManagerActions.UpdateConnection,
 		NetworkManagerActions.UpdateCoreNetwork,
 		NetworkManagerActions.UpdateDevice,
@@ -337,6 +344,7 @@ export class NetworkManagerActions {
 		NetworkManagerActions.actionGetSites,
 		NetworkManagerActions.actionGetTransitGatewayConnectPeerAssociations,
 		NetworkManagerActions.actionGetTransitGatewayRegistrations,
+		NetworkManagerActions.ListAttachmentNatConfigurations,
 		NetworkManagerActions.ListAttachmentRoutingPolicyAssociations,
 		NetworkManagerActions.ListAttachments,
 		NetworkManagerActions.ListConnectPeers,
@@ -927,6 +935,7 @@ export class NetworkManagerOperations {
 		"networkmanager:CreateConnectAttachment",
 		"networkmanager:PutAttachmentRoutingPolicyLabel",
 		"networkmanager:TagResource",
+		"networkmanager:UpdateAttachmentNatConfiguration",
 	];
 	/** IAM actions required for the CreateConnectPeer API call. */
 	static readonly CreateConnectPeer: string[] = [
@@ -957,6 +966,7 @@ export class NetworkManagerOperations {
 		"networkmanager:CreateDirectConnectGatewayAttachment",
 		"networkmanager:PutAttachmentRoutingPolicyLabel",
 		"networkmanager:TagResource",
+		"networkmanager:UpdateAttachmentNatConfiguration",
 	];
 	/** IAM actions required for the CreateGlobalNetwork API call. */
 	static readonly CreateGlobalNetwork: string[] = [
@@ -978,6 +988,7 @@ export class NetworkManagerOperations {
 		"networkmanager:CreateSiteToSiteVpnAttachment",
 		"networkmanager:PutAttachmentRoutingPolicyLabel",
 		"networkmanager:TagResource",
+		"networkmanager:UpdateAttachmentNatConfiguration",
 	];
 	/** IAM actions required for the CreateTransitGatewayPeering API call. */
 	static readonly CreateTransitGatewayPeering: string[] = [
@@ -995,6 +1006,7 @@ export class NetworkManagerOperations {
 		"networkmanager:CreateVpcAttachment",
 		"networkmanager:PutAttachmentRoutingPolicyLabel",
 		"networkmanager:TagResource",
+		"networkmanager:UpdateAttachmentNatConfiguration",
 	];
 	/** IAM actions required for the DeleteAttachment API call. */
 	static readonly DeleteAttachment: string[] = [
@@ -1166,6 +1178,10 @@ export class NetworkManagerOperations {
 	static readonly opGetVpcAttachment: string[] = [
 		"networkmanager:GetVpcAttachment",
 	];
+	/** IAM actions required for the ListAttachmentNatConfigurations API call. */
+	static readonly ListAttachmentNatConfigurations: string[] = [
+		"networkmanager:ListAttachmentNatConfigurations",
+	];
 	/** IAM actions required for the ListAttachmentRoutingPolicyAssociations API call. */
 	static readonly ListAttachmentRoutingPolicyAssociations: string[] = [
 		"networkmanager:ListAttachmentRoutingPolicyAssociations",
@@ -1244,6 +1260,10 @@ export class NetworkManagerOperations {
 	static readonly TagResource: string[] = ["networkmanager:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
 	static readonly UntagResource: string[] = ["networkmanager:UntagResource"];
+	/** IAM actions required for the UpdateAttachmentNatConfiguration API call. */
+	static readonly UpdateAttachmentNatConfiguration: string[] = [
+		"networkmanager:UpdateAttachmentNatConfiguration",
+	];
 	/** IAM actions required for the UpdateConnection API call. */
 	static readonly UpdateConnection: string[] = [
 		"networkmanager:UpdateConnection",

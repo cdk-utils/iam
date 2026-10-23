@@ -120,6 +120,7 @@ The following submodules are available:
 - [connect_campaigns](./connect_campaigns.md)
 - [consoleapp](./consoleapp.md)
 - [consolidatedbilling](./consolidatedbilling.md)
+- [continuum](./continuum.md)
 - [controlcatalog](./controlcatalog.md)
 - [controltower](./controltower.md)
 - [cost_optimization_hub](./cost_optimization_hub.md)

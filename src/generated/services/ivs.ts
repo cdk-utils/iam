@@ -149,6 +149,8 @@ export class IvsActions {
 	static readonly ListTagsForResource = "ivs:ListTagsForResource";
 	/** [Write] ivs:PutMetadata */
 	static readonly PutMetadata = "ivs:PutMetadata";
+	/** [Write] ivs:RevokeConnectionToken */
+	static readonly RevokeConnectionToken = "ivs:RevokeConnectionToken";
 	/** [Write] ivs:StartComposition */
 	static readonly StartComposition = "ivs:StartComposition";
 	/** [Write] ivs:StartParticipantReplication */
@@ -230,6 +232,7 @@ export class IvsActions {
 		IvsActions.ImportPublicKey,
 		IvsActions.InsertAdBreak,
 		IvsActions.PutMetadata,
+		IvsActions.RevokeConnectionToken,
 		IvsActions.StartComposition,
 		IvsActions.StartParticipantReplication,
 		IvsActions.StartViewerSessionRevocation,
@@ -1233,6 +1236,10 @@ export class IvsOperations {
 	static readonly ListTagsForResource: string[] = ["ivs:ListTagsForResource"];
 	/** IAM actions required for the PutMetadata API call. */
 	static readonly PutMetadata: string[] = ["ivs:PutMetadata"];
+	/** IAM actions required for the RevokeConnectionToken API call. */
+	static readonly RevokeConnectionToken: string[] = [
+		"ivs:RevokeConnectionToken",
+	];
 	/** IAM actions required for the StartComposition API call. */
 	static readonly StartComposition: string[] = [
 		"ivs:StartComposition",

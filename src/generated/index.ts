@@ -121,6 +121,7 @@ export * as connect from "./services/connect";
 export * as connect_campaigns from "./services/connect-campaigns";
 export * as consoleapp from "./services/consoleapp";
 export * as consolidatedbilling from "./services/consolidatedbilling";
+export * as continuum from "./services/continuum";
 export * as controlcatalog from "./services/controlcatalog";
 export * as controltower from "./services/controltower";
 export * as cost_optimization_hub from "./services/cost-optimization-hub";

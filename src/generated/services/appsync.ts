@@ -1004,6 +1004,7 @@ export class AppsyncOperations {
 	/** IAM actions required for the CreateDataSource API call. */
 	static readonly CreateDataSource: string[] = [
 		"appsync:CreateDataSource",
+		"lambda:PassNetworkConnector",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateDomainName API call. */
@@ -1171,6 +1172,7 @@ export class AppsyncOperations {
 	];
 	/** IAM actions required for the UpdateDataSource API call. */
 	static readonly UpdateDataSource: string[] = [
+		"lambda:PassNetworkConnector",
 		"iam:PassRole",
 		"appsync:UpdateDataSource",
 	];

@@ -12381,6 +12381,8 @@ export class EC2Operations {
 	static readonly opGetSubnetCidrReservations: string[] = [
 		"ec2:GetSubnetCidrReservations",
 	];
+	/** IAM actions required for the GetTransitGatewayAttachmentNatConfiguration API call. */
+	static readonly opGetTransitGatewayAttachmentNatConfiguration: string[] = [];
 	/** IAM actions required for the GetTransitGatewayAttachmentPropagations API call. */
 	static readonly opGetTransitGatewayAttachmentPropagations: string[] = [
 		"ec2:GetTransitGatewayAttachmentPropagations",
@@ -12675,6 +12677,8 @@ export class EC2Operations {
 	];
 	/** IAM actions required for the ModifyTransitGateway API call. */
 	static readonly ModifyTransitGateway: string[] = ["ec2:ModifyTransitGateway"];
+	/** IAM actions required for the ModifyTransitGatewayAttachmentNatConfiguration API call. */
+	static readonly ModifyTransitGatewayAttachmentNatConfiguration: string[] = [];
 	/** IAM actions required for the ModifyTransitGatewayMeteringPolicy API call. */
 	static readonly ModifyTransitGatewayMeteringPolicy: string[] = [
 		"ec2:ModifyTransitGatewayMeteringPolicy",

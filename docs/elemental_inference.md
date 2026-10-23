@@ -881,13 +881,16 @@ new elemental_inference.ElementalInferenceOperations()
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.AssociateFeed">AssociateFeed</a></code> | <code>string[]</code> | IAM actions required for the AssociateFeed API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.CreateDictionary">CreateDictionary</a></code> | <code>string[]</code> | IAM actions required for the CreateDictionary API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.CreateFeed">CreateFeed</a></code> | <code>string[]</code> | IAM actions required for the CreateFeed API call. |
+| <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.CreateScheduleAction">CreateScheduleAction</a></code> | <code>string[]</code> | IAM actions required for the CreateScheduleAction API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.DeleteDictionary">DeleteDictionary</a></code> | <code>string[]</code> | IAM actions required for the DeleteDictionary API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.DeleteFeed">DeleteFeed</a></code> | <code>string[]</code> | IAM actions required for the DeleteFeed API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.DeleteFeedPolicy">DeleteFeedPolicy</a></code> | <code>string[]</code> | IAM actions required for the DeleteFeedPolicy API call. |
+| <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.DeleteScheduleAction">DeleteScheduleAction</a></code> | <code>string[]</code> | IAM actions required for the DeleteScheduleAction API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.DisassociateFeed">DisassociateFeed</a></code> | <code>string[]</code> | IAM actions required for the DisassociateFeed API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.ExportDictionaryEntries">ExportDictionaryEntries</a></code> | <code>string[]</code> | IAM actions required for the ExportDictionaryEntries API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.ListDictionaries">ListDictionaries</a></code> | <code>string[]</code> | IAM actions required for the ListDictionaries API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.ListFeeds">ListFeeds</a></code> | <code>string[]</code> | IAM actions required for the ListFeeds API call. |
+| <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.ListScheduleActions">ListScheduleActions</a></code> | <code>string[]</code> | IAM actions required for the ListScheduleActions API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.opGetDictionary">opGetDictionary</a></code> | <code>string[]</code> | IAM actions required for the GetDictionary API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.opGetFeed">opGetFeed</a></code> | <code>string[]</code> | IAM actions required for the GetFeed API call. |
@@ -938,6 +941,18 @@ IAM actions required for the CreateFeed API call.
 
 ---
 
+##### `CreateScheduleAction`<sup>Required</sup> <a name="CreateScheduleAction" id="@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.CreateScheduleAction"></a>
+
+```typescript
+public readonly CreateScheduleAction: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateScheduleAction API call.
+
+---
+
 ##### `DeleteDictionary`<sup>Required</sup> <a name="DeleteDictionary" id="@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.DeleteDictionary"></a>
 
 ```typescript
@@ -971,6 +986,18 @@ public readonly DeleteFeedPolicy: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteFeedPolicy API call.
+
+---
+
+##### `DeleteScheduleAction`<sup>Required</sup> <a name="DeleteScheduleAction" id="@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.DeleteScheduleAction"></a>
+
+```typescript
+public readonly DeleteScheduleAction: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteScheduleAction API call.
 
 ---
 
@@ -1019,6 +1046,18 @@ public readonly ListFeeds: string[];
 - *Type:* string[]
 
 IAM actions required for the ListFeeds API call.
+
+---
+
+##### `ListScheduleActions`<sup>Required</sup> <a name="ListScheduleActions" id="@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.ListScheduleActions"></a>
+
+```typescript
+public readonly ListScheduleActions: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListScheduleActions API call.
 
 ---
 

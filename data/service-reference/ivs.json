@@ -1414,6 +1414,22 @@
       }
     },
     {
+      "Name": "RevokeConnectionToken",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "StartComposition",
       "ActionConditionKeys": [
         "aws:RequestTag/${TagKey}",
@@ -2862,6 +2878,22 @@
         {
           "Name": "ivs",
           "Method": "put_metadata",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RevokeConnectionToken",
+      "AuthorizedActions": [
+        {
+          "Name": "RevokeConnectionToken",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs-realtime",
+          "Method": "revoke_connection_token",
           "Package": "Boto3"
         }
       ]

@@ -43218,6 +43218,7 @@ new ec2.EC2Operations()
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.ModifyTrafficMirrorFilterRule">ModifyTrafficMirrorFilterRule</a></code> | <code>string[]</code> | IAM actions required for the ModifyTrafficMirrorFilterRule API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.ModifyTrafficMirrorSession">ModifyTrafficMirrorSession</a></code> | <code>string[]</code> | IAM actions required for the ModifyTrafficMirrorSession API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.ModifyTransitGateway">ModifyTransitGateway</a></code> | <code>string[]</code> | IAM actions required for the ModifyTransitGateway API call. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.ModifyTransitGatewayAttachmentNatConfiguration">ModifyTransitGatewayAttachmentNatConfiguration</a></code> | <code>string[]</code> | IAM actions required for the ModifyTransitGatewayAttachmentNatConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.ModifyTransitGatewayMeteringPolicy">ModifyTransitGatewayMeteringPolicy</a></code> | <code>string[]</code> | IAM actions required for the ModifyTransitGatewayMeteringPolicy API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.ModifyTransitGatewayPolicyTableEntry">ModifyTransitGatewayPolicyTableEntry</a></code> | <code>string[]</code> | IAM actions required for the ModifyTransitGatewayPolicyTableEntry API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.ModifyTransitGatewayPrefixListReference">ModifyTransitGatewayPrefixListReference</a></code> | <code>string[]</code> | IAM actions required for the ModifyTransitGatewayPrefixListReference API call. |
@@ -43314,6 +43315,7 @@ new ec2.EC2Operations()
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.opGetSnapshotBlockPublicAccessState">opGetSnapshotBlockPublicAccessState</a></code> | <code>string[]</code> | IAM actions required for the GetSnapshotBlockPublicAccessState API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.opGetSpotPlacementScores">opGetSpotPlacementScores</a></code> | <code>string[]</code> | IAM actions required for the GetSpotPlacementScores API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.opGetSubnetCidrReservations">opGetSubnetCidrReservations</a></code> | <code>string[]</code> | IAM actions required for the GetSubnetCidrReservations API call. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.opGetTransitGatewayAttachmentNatConfiguration">opGetTransitGatewayAttachmentNatConfiguration</a></code> | <code>string[]</code> | IAM actions required for the GetTransitGatewayAttachmentNatConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.opGetTransitGatewayAttachmentPropagations">opGetTransitGatewayAttachmentPropagations</a></code> | <code>string[]</code> | IAM actions required for the GetTransitGatewayAttachmentPropagations API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.opGetTransitGatewayMeteringPolicyEntries">opGetTransitGatewayMeteringPolicyEntries</a></code> | <code>string[]</code> | IAM actions required for the GetTransitGatewayMeteringPolicyEntries API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.opGetTransitGatewayMulticastDomainAssociations">opGetTransitGatewayMulticastDomainAssociations</a></code> | <code>string[]</code> | IAM actions required for the GetTransitGatewayMulticastDomainAssociations API call. |
@@ -50826,6 +50828,18 @@ IAM actions required for the ModifyTransitGateway API call.
 
 ---
 
+##### `ModifyTransitGatewayAttachmentNatConfiguration`<sup>Required</sup> <a name="ModifyTransitGatewayAttachmentNatConfiguration" id="@cdk_utils/iam.ec2.EC2Operations.property.ModifyTransitGatewayAttachmentNatConfiguration"></a>
+
+```typescript
+public readonly ModifyTransitGatewayAttachmentNatConfiguration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ModifyTransitGatewayAttachmentNatConfiguration API call.
+
+---
+
 ##### `ModifyTransitGatewayMeteringPolicy`<sup>Required</sup> <a name="ModifyTransitGatewayMeteringPolicy" id="@cdk_utils/iam.ec2.EC2Operations.property.ModifyTransitGatewayMeteringPolicy"></a>
 
 ```typescript
@@ -51975,6 +51989,18 @@ public readonly opGetSubnetCidrReservations: string[];
 - *Type:* string[]
 
 IAM actions required for the GetSubnetCidrReservations API call.
+
+---
+
+##### `opGetTransitGatewayAttachmentNatConfiguration`<sup>Required</sup> <a name="opGetTransitGatewayAttachmentNatConfiguration" id="@cdk_utils/iam.ec2.EC2Operations.property.opGetTransitGatewayAttachmentNatConfiguration"></a>
+
+```typescript
+public readonly opGetTransitGatewayAttachmentNatConfiguration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetTransitGatewayAttachmentNatConfiguration API call.
 
 ---
 

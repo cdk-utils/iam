@@ -1853,6 +1853,10 @@
           "Service": "appsync"
         },
         {
+          "Name": "PassNetworkConnector",
+          "Service": "lambda"
+        },
+        {
           "Name": "PassRole",
           "Context": {
             "iam:PassedToService": [
@@ -2843,6 +2847,10 @@
     {
       "Name": "UpdateDataSource",
       "AuthorizedActions": [
+        {
+          "Name": "PassNetworkConnector",
+          "Service": "lambda"
+        },
         {
           "Name": "PassRole",
           "Context": {

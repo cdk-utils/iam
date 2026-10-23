@@ -14203,6 +14203,16 @@
       ]
     },
     {
+      "Name": "ListReplicationFindings",
+      "SDK": [
+        {
+          "Name": "connect",
+          "Method": "list_replication_findings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListRoutingProfileManualAssignmentQueues",
       "AuthorizedActions": [
         {

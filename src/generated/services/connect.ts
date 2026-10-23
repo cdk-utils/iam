@@ -5189,6 +5189,8 @@ export class ConnectOperations {
 	static readonly ListRealtimeContactAnalysisSegmentsV2: string[] = [
 		"connect:ListRealtimeContactAnalysisSegmentsV2",
 	];
+	/** IAM actions required for the ListReplicationFindings API call. */
+	static readonly ListReplicationFindings: string[] = [];
 	/** IAM actions required for the ListRoutingProfileManualAssignmentQueues API call. */
 	static readonly ListRoutingProfileManualAssignmentQueues: string[] = [
 		"connect:ListRoutingProfileManualAssignmentQueues",
