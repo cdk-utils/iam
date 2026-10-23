@@ -383,6 +383,8 @@ export class AossOperations {
 	];
 	/** IAM actions required for the BatchGetVpcEndpoint API call. */
 	static readonly BatchGetVpcEndpoint: string[] = ["aoss:BatchGetVpcEndpoint"];
+	/** IAM actions required for the CancelIngestionJob API call. */
+	static readonly CancelIngestionJob: string[] = [];
 	/** IAM actions required for the CreateAccessPolicy API call. */
 	static readonly CreateAccessPolicy: string[] = ["aoss:CreateAccessPolicy"];
 	/** IAM actions required for the CreateCollection API call. */
@@ -398,6 +400,10 @@ export class AossOperations {
 	];
 	/** IAM actions required for the CreateIndex API call. */
 	static readonly CreateIndex: string[] = ["aoss:CreateIndex"];
+	/** IAM actions required for the CreateIngestionJob API call. */
+	static readonly CreateIngestionJob: string[] = ["aoss:TagResource"];
+	/** IAM actions required for the CreateIngestionStream API call. */
+	static readonly CreateIngestionStream: string[] = ["iam:PassRole"];
 	/** IAM actions required for the CreateLifecyclePolicy API call. */
 	static readonly CreateLifecyclePolicy: string[] = [
 		"aoss:CreateLifecyclePolicy",
@@ -422,6 +428,8 @@ export class AossOperations {
 	];
 	/** IAM actions required for the DeleteIndex API call. */
 	static readonly DeleteIndex: string[] = ["aoss:DeleteIndex"];
+	/** IAM actions required for the DeleteIngestionStream API call. */
+	static readonly DeleteIngestionStream: string[] = [];
 	/** IAM actions required for the DeleteLifecyclePolicy API call. */
 	static readonly DeleteLifecyclePolicy: string[] = [
 		"aoss:DeleteLifecyclePolicy",
@@ -442,6 +450,10 @@ export class AossOperations {
 	static readonly opGetAccountSettings: string[] = ["aoss:GetAccountSettings"];
 	/** IAM actions required for the GetIndex API call. */
 	static readonly opGetIndex: string[] = ["aoss:GetIndex"];
+	/** IAM actions required for the GetIngestionJob API call. */
+	static readonly opGetIngestionJob: string[] = [];
+	/** IAM actions required for the GetIngestionStream API call. */
+	static readonly opGetIngestionStream: string[] = [];
 	/** IAM actions required for the GetPoliciesStats API call. */
 	static readonly opGetPoliciesStats: string[] = ["aoss:GetPoliciesStats"];
 	/** IAM actions required for the GetSecurityConfig API call. */
@@ -456,6 +468,10 @@ export class AossOperations {
 	];
 	/** IAM actions required for the ListCollections API call. */
 	static readonly ListCollections: string[] = ["aoss:ListCollections"];
+	/** IAM actions required for the ListIngestionJobs API call. */
+	static readonly ListIngestionJobs: string[] = [];
+	/** IAM actions required for the ListIngestionStreams API call. */
+	static readonly ListIngestionStreams: string[] = [];
 	/** IAM actions required for the ListLifecyclePolicies API call. */
 	static readonly ListLifecyclePolicies: string[] = [
 		"aoss:ListLifecyclePolicies",

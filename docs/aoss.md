@@ -1697,10 +1697,13 @@ new aoss.AossOperations()
 | <code><a href="#@cdk_utils/iam.aoss.AossOperations.property.BatchGetEffectiveLifecyclePolicy">BatchGetEffectiveLifecyclePolicy</a></code> | <code>string[]</code> | IAM actions required for the BatchGetEffectiveLifecyclePolicy API call. |
 | <code><a href="#@cdk_utils/iam.aoss.AossOperations.property.BatchGetLifecyclePolicy">BatchGetLifecyclePolicy</a></code> | <code>string[]</code> | IAM actions required for the BatchGetLifecyclePolicy API call. |
 | <code><a href="#@cdk_utils/iam.aoss.AossOperations.property.BatchGetVpcEndpoint">BatchGetVpcEndpoint</a></code> | <code>string[]</code> | IAM actions required for the BatchGetVpcEndpoint API call. |
+| <code><a href="#@cdk_utils/iam.aoss.AossOperations.property.CancelIngestionJob">CancelIngestionJob</a></code> | <code>string[]</code> | IAM actions required for the CancelIngestionJob API call. |
 | <code><a href="#@cdk_utils/iam.aoss.AossOperations.property.CreateAccessPolicy">CreateAccessPolicy</a></code> | <code>string[]</code> | IAM actions required for the CreateAccessPolicy API call. |
 | <code><a href="#@cdk_utils/iam.aoss.AossOperations.property.CreateCollection">CreateCollection</a></code> | <code>string[]</code> | IAM actions required for the CreateCollection API call. |
 | <code><a href="#@cdk_utils/iam.aoss.AossOperations.property.CreateCollectionGroup">CreateCollectionGroup</a></code> | <code>string[]</code> | IAM actions required for the CreateCollectionGroup API call. |
 | <code><a href="#@cdk_utils/iam.aoss.AossOperations.property.CreateIndex">CreateIndex</a></code> | <code>string[]</code> | IAM actions required for the CreateIndex API call. |
+| <code><a href="#@cdk_utils/iam.aoss.AossOperations.property.CreateIngestionJob">CreateIngestionJob</a></code> | <code>string[]</code> | IAM actions required for the CreateIngestionJob API call. |
+| <code><a href="#@cdk_utils/iam.aoss.AossOperations.property.CreateIngestionStream">CreateIngestionStream</a></code> | <code>string[]</code> | IAM actions required for the CreateIngestionStream API call. |
 | <code><a href="#@cdk_utils/iam.aoss.AossOperations.property.CreateLifecyclePolicy">CreateLifecyclePolicy</a></code> | <code>string[]</code> | IAM actions required for the CreateLifecyclePolicy API call. |
 | <code><a href="#@cdk_utils/iam.aoss.AossOperations.property.CreateSecurityConfig">CreateSecurityConfig</a></code> | <code>string[]</code> | IAM actions required for the CreateSecurityConfig API call. |
 | <code><a href="#@cdk_utils/iam.aoss.AossOperations.property.CreateSecurityPolicy">CreateSecurityPolicy</a></code> | <code>string[]</code> | IAM actions required for the CreateSecurityPolicy API call. |
@@ -1709,6 +1712,7 @@ new aoss.AossOperations()
 | <code><a href="#@cdk_utils/iam.aoss.AossOperations.property.DeleteCollection">DeleteCollection</a></code> | <code>string[]</code> | IAM actions required for the DeleteCollection API call. |
 | <code><a href="#@cdk_utils/iam.aoss.AossOperations.property.DeleteCollectionGroup">DeleteCollectionGroup</a></code> | <code>string[]</code> | IAM actions required for the DeleteCollectionGroup API call. |
 | <code><a href="#@cdk_utils/iam.aoss.AossOperations.property.DeleteIndex">DeleteIndex</a></code> | <code>string[]</code> | IAM actions required for the DeleteIndex API call. |
+| <code><a href="#@cdk_utils/iam.aoss.AossOperations.property.DeleteIngestionStream">DeleteIngestionStream</a></code> | <code>string[]</code> | IAM actions required for the DeleteIngestionStream API call. |
 | <code><a href="#@cdk_utils/iam.aoss.AossOperations.property.DeleteLifecyclePolicy">DeleteLifecyclePolicy</a></code> | <code>string[]</code> | IAM actions required for the DeleteLifecyclePolicy API call. |
 | <code><a href="#@cdk_utils/iam.aoss.AossOperations.property.DeleteSecurityConfig">DeleteSecurityConfig</a></code> | <code>string[]</code> | IAM actions required for the DeleteSecurityConfig API call. |
 | <code><a href="#@cdk_utils/iam.aoss.AossOperations.property.DeleteSecurityPolicy">DeleteSecurityPolicy</a></code> | <code>string[]</code> | IAM actions required for the DeleteSecurityPolicy API call. |
@@ -1716,6 +1720,8 @@ new aoss.AossOperations()
 | <code><a href="#@cdk_utils/iam.aoss.AossOperations.property.ListAccessPolicies">ListAccessPolicies</a></code> | <code>string[]</code> | IAM actions required for the ListAccessPolicies API call. |
 | <code><a href="#@cdk_utils/iam.aoss.AossOperations.property.ListCollectionGroups">ListCollectionGroups</a></code> | <code>string[]</code> | IAM actions required for the ListCollectionGroups API call. |
 | <code><a href="#@cdk_utils/iam.aoss.AossOperations.property.ListCollections">ListCollections</a></code> | <code>string[]</code> | IAM actions required for the ListCollections API call. |
+| <code><a href="#@cdk_utils/iam.aoss.AossOperations.property.ListIngestionJobs">ListIngestionJobs</a></code> | <code>string[]</code> | IAM actions required for the ListIngestionJobs API call. |
+| <code><a href="#@cdk_utils/iam.aoss.AossOperations.property.ListIngestionStreams">ListIngestionStreams</a></code> | <code>string[]</code> | IAM actions required for the ListIngestionStreams API call. |
 | <code><a href="#@cdk_utils/iam.aoss.AossOperations.property.ListLifecyclePolicies">ListLifecyclePolicies</a></code> | <code>string[]</code> | IAM actions required for the ListLifecyclePolicies API call. |
 | <code><a href="#@cdk_utils/iam.aoss.AossOperations.property.ListSecurityConfigs">ListSecurityConfigs</a></code> | <code>string[]</code> | IAM actions required for the ListSecurityConfigs API call. |
 | <code><a href="#@cdk_utils/iam.aoss.AossOperations.property.ListSecurityPolicies">ListSecurityPolicies</a></code> | <code>string[]</code> | IAM actions required for the ListSecurityPolicies API call. |
@@ -1724,6 +1730,8 @@ new aoss.AossOperations()
 | <code><a href="#@cdk_utils/iam.aoss.AossOperations.property.opGetAccessPolicy">opGetAccessPolicy</a></code> | <code>string[]</code> | IAM actions required for the GetAccessPolicy API call. |
 | <code><a href="#@cdk_utils/iam.aoss.AossOperations.property.opGetAccountSettings">opGetAccountSettings</a></code> | <code>string[]</code> | IAM actions required for the GetAccountSettings API call. |
 | <code><a href="#@cdk_utils/iam.aoss.AossOperations.property.opGetIndex">opGetIndex</a></code> | <code>string[]</code> | IAM actions required for the GetIndex API call. |
+| <code><a href="#@cdk_utils/iam.aoss.AossOperations.property.opGetIngestionJob">opGetIngestionJob</a></code> | <code>string[]</code> | IAM actions required for the GetIngestionJob API call. |
+| <code><a href="#@cdk_utils/iam.aoss.AossOperations.property.opGetIngestionStream">opGetIngestionStream</a></code> | <code>string[]</code> | IAM actions required for the GetIngestionStream API call. |
 | <code><a href="#@cdk_utils/iam.aoss.AossOperations.property.opGetPoliciesStats">opGetPoliciesStats</a></code> | <code>string[]</code> | IAM actions required for the GetPoliciesStats API call. |
 | <code><a href="#@cdk_utils/iam.aoss.AossOperations.property.opGetSecurityConfig">opGetSecurityConfig</a></code> | <code>string[]</code> | IAM actions required for the GetSecurityConfig API call. |
 | <code><a href="#@cdk_utils/iam.aoss.AossOperations.property.opGetSecurityPolicy">opGetSecurityPolicy</a></code> | <code>string[]</code> | IAM actions required for the GetSecurityPolicy API call. |
@@ -1801,6 +1809,18 @@ IAM actions required for the BatchGetVpcEndpoint API call.
 
 ---
 
+##### `CancelIngestionJob`<sup>Required</sup> <a name="CancelIngestionJob" id="@cdk_utils/iam.aoss.AossOperations.property.CancelIngestionJob"></a>
+
+```typescript
+public readonly CancelIngestionJob: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CancelIngestionJob API call.
+
+---
+
 ##### `CreateAccessPolicy`<sup>Required</sup> <a name="CreateAccessPolicy" id="@cdk_utils/iam.aoss.AossOperations.property.CreateAccessPolicy"></a>
 
 ```typescript
@@ -1846,6 +1866,30 @@ public readonly CreateIndex: string[];
 - *Type:* string[]
 
 IAM actions required for the CreateIndex API call.
+
+---
+
+##### `CreateIngestionJob`<sup>Required</sup> <a name="CreateIngestionJob" id="@cdk_utils/iam.aoss.AossOperations.property.CreateIngestionJob"></a>
+
+```typescript
+public readonly CreateIngestionJob: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateIngestionJob API call.
+
+---
+
+##### `CreateIngestionStream`<sup>Required</sup> <a name="CreateIngestionStream" id="@cdk_utils/iam.aoss.AossOperations.property.CreateIngestionStream"></a>
+
+```typescript
+public readonly CreateIngestionStream: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateIngestionStream API call.
 
 ---
 
@@ -1945,6 +1989,18 @@ IAM actions required for the DeleteIndex API call.
 
 ---
 
+##### `DeleteIngestionStream`<sup>Required</sup> <a name="DeleteIngestionStream" id="@cdk_utils/iam.aoss.AossOperations.property.DeleteIngestionStream"></a>
+
+```typescript
+public readonly DeleteIngestionStream: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteIngestionStream API call.
+
+---
+
 ##### `DeleteLifecyclePolicy`<sup>Required</sup> <a name="DeleteLifecyclePolicy" id="@cdk_utils/iam.aoss.AossOperations.property.DeleteLifecyclePolicy"></a>
 
 ```typescript
@@ -2026,6 +2082,30 @@ public readonly ListCollections: string[];
 - *Type:* string[]
 
 IAM actions required for the ListCollections API call.
+
+---
+
+##### `ListIngestionJobs`<sup>Required</sup> <a name="ListIngestionJobs" id="@cdk_utils/iam.aoss.AossOperations.property.ListIngestionJobs"></a>
+
+```typescript
+public readonly ListIngestionJobs: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListIngestionJobs API call.
+
+---
+
+##### `ListIngestionStreams`<sup>Required</sup> <a name="ListIngestionStreams" id="@cdk_utils/iam.aoss.AossOperations.property.ListIngestionStreams"></a>
+
+```typescript
+public readonly ListIngestionStreams: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListIngestionStreams API call.
 
 ---
 
@@ -2122,6 +2202,30 @@ public readonly opGetIndex: string[];
 - *Type:* string[]
 
 IAM actions required for the GetIndex API call.
+
+---
+
+##### `opGetIngestionJob`<sup>Required</sup> <a name="opGetIngestionJob" id="@cdk_utils/iam.aoss.AossOperations.property.opGetIngestionJob"></a>
+
+```typescript
+public readonly opGetIngestionJob: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetIngestionJob API call.
+
+---
+
+##### `opGetIngestionStream`<sup>Required</sup> <a name="opGetIngestionStream" id="@cdk_utils/iam.aoss.AossOperations.property.opGetIngestionStream"></a>
+
+```typescript
+public readonly opGetIngestionStream: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetIngestionStream API call.
 
 ---
 

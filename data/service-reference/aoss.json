@@ -1017,6 +1017,16 @@
       ]
     },
     {
+      "Name": "CancelIngestionJob",
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "cancel_ingestion_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "CreateAccessPolicy",
       "AuthorizedActions": [
         {
@@ -1088,6 +1098,38 @@
         {
           "Name": "opensearchserverless",
           "Method": "create_index",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateIngestionJob",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "aoss"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "create_ingestion_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateIngestionStream",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "create_ingestion_stream",
           "Package": "Boto3"
         }
       ]
@@ -1221,6 +1263,16 @@
       ]
     },
     {
+      "Name": "DeleteIngestionStream",
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "delete_ingestion_stream",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DeleteLifecyclePolicy",
       "AuthorizedActions": [
         {
@@ -1333,6 +1385,26 @@
       ]
     },
     {
+      "Name": "GetIngestionJob",
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "get_ingestion_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetIngestionStream",
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "get_ingestion_stream",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetPoliciesStats",
       "AuthorizedActions": [
         {
@@ -1424,6 +1496,26 @@
         {
           "Name": "opensearchserverless",
           "Method": "list_collections",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListIngestionJobs",
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "list_ingestion_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListIngestionStreams",
+      "SDK": [
+        {
+          "Name": "opensearchserverless",
+          "Method": "list_ingestion_streams",
           "Package": "Boto3"
         }
       ]

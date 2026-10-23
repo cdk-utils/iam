@@ -1874,6 +1874,7 @@ new ivs.IvsActions()
 | <code><a href="#@cdk_utils/iam.ivs.IvsActions.property.ListStreamSessions">ListStreamSessions</a></code> | <code>string</code> | [List] ivs:ListStreamSessions. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [Read] ivs:ListTagsForResource. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsActions.property.PutMetadata">PutMetadata</a></code> | <code>string</code> | [Write] ivs:PutMetadata. |
+| <code><a href="#@cdk_utils/iam.ivs.IvsActions.property.RevokeConnectionToken">RevokeConnectionToken</a></code> | <code>string</code> | [Write] ivs:RevokeConnectionToken. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsActions.property.StartComposition">StartComposition</a></code> | <code>string</code> | [Write] ivs:StartComposition. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsActions.property.StartParticipantReplication">StartParticipantReplication</a></code> | <code>string</code> | [Write] ivs:StartParticipantReplication. |
@@ -2719,6 +2720,18 @@ public readonly PutMetadata: string;
 
 ---
 
+##### `RevokeConnectionToken`<sup>Required</sup> <a name="RevokeConnectionToken" id="@cdk_utils/iam.ivs.IvsActions.property.RevokeConnectionToken"></a>
+
+```typescript
+public readonly RevokeConnectionToken: string;
+```
+
+- *Type:* string
+
+[Write] ivs:RevokeConnectionToken.
+
+---
+
 ##### `SERVICE_PREFIX`<sup>Required</sup> <a name="SERVICE_PREFIX" id="@cdk_utils/iam.ivs.IvsActions.property.SERVICE_PREFIX"></a>
 
 ```typescript
@@ -3319,6 +3332,7 @@ new ivs.IvsOperations()
 | <code><a href="#@cdk_utils/iam.ivs.IvsOperations.property.opGetStreamKey">opGetStreamKey</a></code> | <code>string[]</code> | IAM actions required for the GetStreamKey API call. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsOperations.property.opGetStreamSession">opGetStreamSession</a></code> | <code>string[]</code> | IAM actions required for the GetStreamSession API call. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsOperations.property.PutMetadata">PutMetadata</a></code> | <code>string[]</code> | IAM actions required for the PutMetadata API call. |
+| <code><a href="#@cdk_utils/iam.ivs.IvsOperations.property.RevokeConnectionToken">RevokeConnectionToken</a></code> | <code>string[]</code> | IAM actions required for the RevokeConnectionToken API call. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsOperations.property.StartComposition">StartComposition</a></code> | <code>string[]</code> | IAM actions required for the StartComposition API call. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsOperations.property.StartParticipantReplication">StartParticipantReplication</a></code> | <code>string[]</code> | IAM actions required for the StartParticipantReplication API call. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsOperations.property.StartViewerSessionRevocation">StartViewerSessionRevocation</a></code> | <code>string[]</code> | IAM actions required for the StartViewerSessionRevocation API call. |
@@ -4100,6 +4114,18 @@ public readonly PutMetadata: string[];
 - *Type:* string[]
 
 IAM actions required for the PutMetadata API call.
+
+---
+
+##### `RevokeConnectionToken`<sup>Required</sup> <a name="RevokeConnectionToken" id="@cdk_utils/iam.ivs.IvsOperations.property.RevokeConnectionToken"></a>
+
+```typescript
+public readonly RevokeConnectionToken: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the RevokeConnectionToken API call.
 
 ---
 

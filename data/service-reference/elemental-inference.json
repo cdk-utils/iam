@@ -525,6 +525,16 @@
       ]
     },
     {
+      "Name": "CreateScheduleAction",
+      "SDK": [
+        {
+          "Name": "elementalinference",
+          "Method": "create_schedule_action",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DeleteDictionary",
       "AuthorizedActions": [
         {
@@ -568,6 +578,16 @@
         {
           "Name": "elementalinference",
           "Method": "delete_feed_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteScheduleAction",
+      "SDK": [
+        {
+          "Name": "elementalinference",
+          "Method": "delete_schedule_action",
           "Package": "Boto3"
         }
       ]
@@ -690,6 +710,16 @@
         {
           "Name": "elementalinference",
           "Method": "list_feeds",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListScheduleActions",
+      "SDK": [
+        {
+          "Name": "elementalinference",
+          "Method": "list_schedule_actions",
           "Package": "Boto3"
         }
       ]

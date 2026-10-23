@@ -38707,6 +38707,16 @@
       ]
     },
     {
+      "Name": "GetTransitGatewayAttachmentNatConfiguration",
+      "SDK": [
+        {
+          "Name": "ec2",
+          "Method": "get_transit_gateway_attachment_nat_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetTransitGatewayAttachmentPropagations",
       "AuthorizedActions": [
         {
@@ -40004,6 +40014,16 @@
         {
           "Name": "ec2",
           "Method": "modify_transit_gateway",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ModifyTransitGatewayAttachmentNatConfiguration",
+      "SDK": [
+        {
+          "Name": "ec2",
+          "Method": "modify_transit_gateway_attachment_nat_configuration",
           "Package": "Boto3"
         }
       ]

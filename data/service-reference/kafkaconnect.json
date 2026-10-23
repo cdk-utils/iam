@@ -696,11 +696,31 @@
       ]
     },
     {
+      "Name": "PauseConnector",
+      "SDK": [
+        {
+          "Name": "kafkaconnect",
+          "Method": "pause_connector",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "RestartConnector",
       "SDK": [
         {
           "Name": "kafkaconnect",
           "Method": "restart_connector",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ResumeConnector",
+      "SDK": [
+        {
+          "Name": "kafkaconnect",
+          "Method": "resume_connector",
           "Package": "Boto3"
         }
       ]

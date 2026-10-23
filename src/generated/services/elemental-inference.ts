@@ -243,6 +243,8 @@ export class ElementalInferenceOperations {
 		"iam:PassRole",
 		"elemental-inference:TagResource",
 	];
+	/** IAM actions required for the CreateScheduleAction API call. */
+	static readonly CreateScheduleAction: string[] = [];
 	/** IAM actions required for the DeleteDictionary API call. */
 	static readonly DeleteDictionary: string[] = [
 		"elemental-inference:DeleteDictionary",
@@ -253,6 +255,8 @@ export class ElementalInferenceOperations {
 	static readonly DeleteFeedPolicy: string[] = [
 		"elemental-inference:DeleteFeedPolicy",
 	];
+	/** IAM actions required for the DeleteScheduleAction API call. */
+	static readonly DeleteScheduleAction: string[] = [];
 	/** IAM actions required for the DisassociateFeed API call. */
 	static readonly DisassociateFeed: string[] = [
 		"elemental-inference:DisassociateFeed",
@@ -279,6 +283,8 @@ export class ElementalInferenceOperations {
 	];
 	/** IAM actions required for the ListFeeds API call. */
 	static readonly ListFeeds: string[] = ["elemental-inference:ListFeeds"];
+	/** IAM actions required for the ListScheduleActions API call. */
+	static readonly ListScheduleActions: string[] = [];
 	/** IAM actions required for the ListTagsForResource API call. */
 	static readonly ListTagsForResource: string[] = [
 		"elemental-inference:ListTagsForResource",

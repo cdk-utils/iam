@@ -1500,6 +1500,27 @@
       }
     },
     {
+      "Name": "ListAttachmentNatConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "attachment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ListAttachmentRoutingPolicyAssociations",
       "Annotations": {
         "Properties": {
@@ -2013,6 +2034,27 @@
       }
     },
     {
+      "Name": "UpdateAttachmentNatConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "attachment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "UpdateConnection",
       "Annotations": {
         "Properties": {
@@ -2393,6 +2435,10 @@
         {
           "Name": "TagResource",
           "Service": "networkmanager"
+        },
+        {
+          "Name": "UpdateAttachmentNatConfiguration",
+          "Service": "networkmanager"
         }
       ],
       "SDK": [
@@ -2513,6 +2559,10 @@
         {
           "Name": "TagResource",
           "Service": "networkmanager"
+        },
+        {
+          "Name": "UpdateAttachmentNatConfiguration",
+          "Service": "networkmanager"
         }
       ],
       "SDK": [
@@ -2597,6 +2647,10 @@
         {
           "Name": "TagResource",
           "Service": "networkmanager"
+        },
+        {
+          "Name": "UpdateAttachmentNatConfiguration",
+          "Service": "networkmanager"
         }
       ],
       "SDK": [
@@ -2664,6 +2718,10 @@
         },
         {
           "Name": "TagResource",
+          "Service": "networkmanager"
+        },
+        {
+          "Name": "UpdateAttachmentNatConfiguration",
           "Service": "networkmanager"
         }
       ],
@@ -3412,6 +3470,22 @@
       ]
     },
     {
+      "Name": "ListAttachmentNatConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAttachmentNatConfigurations",
+          "Service": "networkmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "networkmanager",
+          "Method": "list_attachment_nat_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListAttachmentRoutingPolicyAssociations",
       "AuthorizedActions": [
         {
@@ -3743,6 +3817,22 @@
         {
           "Name": "networkmanager",
           "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAttachmentNatConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAttachmentNatConfiguration",
+          "Service": "networkmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "networkmanager",
+          "Method": "update_attachment_nat_configuration",
           "Package": "Boto3"
         }
       ]

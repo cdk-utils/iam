@@ -1283,6 +1283,7 @@ new networkmanager.NetworkManagerActions()
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.DisassociateLink">DisassociateLink</a></code> | <code>string</code> | [Write] networkmanager:DisassociateLink. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.DisassociateTransitGatewayConnectPeer">DisassociateTransitGatewayConnectPeer</a></code> | <code>string</code> | [Write] networkmanager:DisassociateTransitGatewayConnectPeer. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.ExecuteCoreNetworkChangeSet">ExecuteCoreNetworkChangeSet</a></code> | <code>string</code> | [Write] networkmanager:ExecuteCoreNetworkChangeSet. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.ListAttachmentNatConfigurations">ListAttachmentNatConfigurations</a></code> | <code>string</code> | [List] networkmanager:ListAttachmentNatConfigurations. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.ListAttachmentRoutingPolicyAssociations">ListAttachmentRoutingPolicyAssociations</a></code> | <code>string</code> | [List] networkmanager:ListAttachmentRoutingPolicyAssociations. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.ListAttachments">ListAttachments</a></code> | <code>string</code> | [List] networkmanager:ListAttachments. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.ListConnectPeers">ListConnectPeers</a></code> | <code>string</code> | [List] networkmanager:ListConnectPeers. |
@@ -1305,6 +1306,7 @@ new networkmanager.NetworkManagerActions()
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.StartRouteAnalysis">StartRouteAnalysis</a></code> | <code>string</code> | [Write] networkmanager:StartRouteAnalysis. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] networkmanager:TagResource. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] networkmanager:UntagResource. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.UpdateAttachmentNatConfiguration">UpdateAttachmentNatConfiguration</a></code> | <code>string</code> | [Write] networkmanager:UpdateAttachmentNatConfiguration. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.UpdateConnection">UpdateConnection</a></code> | <code>string</code> | [Write] networkmanager:UpdateConnection. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.UpdateCoreNetwork">UpdateCoreNetwork</a></code> | <code>string</code> | [Write] networkmanager:UpdateCoreNetwork. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.UpdateDevice">UpdateDevice</a></code> | <code>string</code> | [Write] networkmanager:UpdateDevice. |
@@ -2157,6 +2159,18 @@ public readonly ExecuteCoreNetworkChangeSet: string;
 
 ---
 
+##### `ListAttachmentNatConfigurations`<sup>Required</sup> <a name="ListAttachmentNatConfigurations" id="@cdk_utils/iam.networkmanager.NetworkManagerActions.property.ListAttachmentNatConfigurations"></a>
+
+```typescript
+public readonly ListAttachmentNatConfigurations: string;
+```
+
+- *Type:* string
+
+[List] networkmanager:ListAttachmentNatConfigurations.
+
+---
+
 ##### `ListAttachmentRoutingPolicyAssociations`<sup>Required</sup> <a name="ListAttachmentRoutingPolicyAssociations" id="@cdk_utils/iam.networkmanager.NetworkManagerActions.property.ListAttachmentRoutingPolicyAssociations"></a>
 
 ```typescript
@@ -2418,6 +2432,18 @@ public readonly UntagResource: string;
 - *Type:* string
 
 [Tagging] networkmanager:UntagResource.
+
+---
+
+##### `UpdateAttachmentNatConfiguration`<sup>Required</sup> <a name="UpdateAttachmentNatConfiguration" id="@cdk_utils/iam.networkmanager.NetworkManagerActions.property.UpdateAttachmentNatConfiguration"></a>
+
+```typescript
+public readonly UpdateAttachmentNatConfiguration: string;
+```
+
+- *Type:* string
+
+[Write] networkmanager:UpdateAttachmentNatConfiguration.
 
 ---
 
@@ -3296,6 +3322,7 @@ new networkmanager.NetworkManagerOperations()
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.DisassociateLink">DisassociateLink</a></code> | <code>string[]</code> | IAM actions required for the DisassociateLink API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.DisassociateTransitGatewayConnectPeer">DisassociateTransitGatewayConnectPeer</a></code> | <code>string[]</code> | IAM actions required for the DisassociateTransitGatewayConnectPeer API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.ExecuteCoreNetworkChangeSet">ExecuteCoreNetworkChangeSet</a></code> | <code>string[]</code> | IAM actions required for the ExecuteCoreNetworkChangeSet API call. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.ListAttachmentNatConfigurations">ListAttachmentNatConfigurations</a></code> | <code>string[]</code> | IAM actions required for the ListAttachmentNatConfigurations API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.ListAttachmentRoutingPolicyAssociations">ListAttachmentRoutingPolicyAssociations</a></code> | <code>string[]</code> | IAM actions required for the ListAttachmentRoutingPolicyAssociations API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.ListAttachments">ListAttachments</a></code> | <code>string[]</code> | IAM actions required for the ListAttachments API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.ListConnectPeers">ListConnectPeers</a></code> | <code>string[]</code> | IAM actions required for the ListConnectPeers API call. |
@@ -3344,6 +3371,7 @@ new networkmanager.NetworkManagerOperations()
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.StartRouteAnalysis">StartRouteAnalysis</a></code> | <code>string[]</code> | IAM actions required for the StartRouteAnalysis API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.UpdateAttachmentNatConfiguration">UpdateAttachmentNatConfiguration</a></code> | <code>string[]</code> | IAM actions required for the UpdateAttachmentNatConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.UpdateConnection">UpdateConnection</a></code> | <code>string[]</code> | IAM actions required for the UpdateConnection API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.UpdateCoreNetwork">UpdateCoreNetwork</a></code> | <code>string[]</code> | IAM actions required for the UpdateCoreNetwork API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.UpdateDevice">UpdateDevice</a></code> | <code>string[]</code> | IAM actions required for the UpdateDevice API call. |
@@ -3809,6 +3837,18 @@ public readonly ExecuteCoreNetworkChangeSet: string[];
 - *Type:* string[]
 
 IAM actions required for the ExecuteCoreNetworkChangeSet API call.
+
+---
+
+##### `ListAttachmentNatConfigurations`<sup>Required</sup> <a name="ListAttachmentNatConfigurations" id="@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.ListAttachmentNatConfigurations"></a>
+
+```typescript
+public readonly ListAttachmentNatConfigurations: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListAttachmentNatConfigurations API call.
 
 ---
 
@@ -4385,6 +4425,18 @@ public readonly UntagResource: string[];
 - *Type:* string[]
 
 IAM actions required for the UntagResource API call.
+
+---
+
+##### `UpdateAttachmentNatConfiguration`<sup>Required</sup> <a name="UpdateAttachmentNatConfiguration" id="@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.UpdateAttachmentNatConfiguration"></a>
+
+```typescript
+public readonly UpdateAttachmentNatConfiguration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateAttachmentNatConfiguration API call.
 
 ---
 

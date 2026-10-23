@@ -18487,6 +18487,7 @@ new connect.ConnectOperations()
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.ListQuickConnects">ListQuickConnects</a></code> | <code>string[]</code> | IAM actions required for the ListQuickConnects API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.ListRealtimeContactAnalysisSegments">ListRealtimeContactAnalysisSegments</a></code> | <code>string[]</code> | IAM actions required for the ListRealtimeContactAnalysisSegments API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.ListRealtimeContactAnalysisSegmentsV2">ListRealtimeContactAnalysisSegmentsV2</a></code> | <code>string[]</code> | IAM actions required for the ListRealtimeContactAnalysisSegmentsV2 API call. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.ListReplicationFindings">ListReplicationFindings</a></code> | <code>string[]</code> | IAM actions required for the ListReplicationFindings API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.ListRoutingProfileManualAssignmentQueues">ListRoutingProfileManualAssignmentQueues</a></code> | <code>string[]</code> | IAM actions required for the ListRoutingProfileManualAssignmentQueues API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.ListRoutingProfileQueues">ListRoutingProfileQueues</a></code> | <code>string[]</code> | IAM actions required for the ListRoutingProfileQueues API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.ListRoutingProfiles">ListRoutingProfiles</a></code> | <code>string[]</code> | IAM actions required for the ListRoutingProfiles API call. |
@@ -21397,6 +21398,18 @@ public readonly ListRealtimeContactAnalysisSegmentsV2: string[];
 - *Type:* string[]
 
 IAM actions required for the ListRealtimeContactAnalysisSegmentsV2 API call.
+
+---
+
+##### `ListReplicationFindings`<sup>Required</sup> <a name="ListReplicationFindings" id="@cdk_utils/iam.connect.ConnectOperations.property.ListReplicationFindings"></a>
+
+```typescript
+public readonly ListReplicationFindings: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListReplicationFindings API call.
 
 ---
 
