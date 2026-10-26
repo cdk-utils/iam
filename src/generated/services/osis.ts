@@ -366,10 +366,7 @@ export class OsisOperations {
 		"osis:UpdatePipeline",
 	];
 	/** IAM actions required for the ValidatePipeline API call. */
-	static readonly ValidatePipeline: string[] = [
-		"iam:PassRole",
-		"osis:ValidatePipeline",
-	];
+	static readonly ValidatePipeline: string[] = ["osis:ValidatePipeline"];
 }
 
 /**

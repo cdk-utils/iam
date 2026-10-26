@@ -165,6 +165,12 @@ export class WisdomActions {
 	static readonly PutFeedback = "wisdom:PutFeedback";
 	/** [Read] wisdom:QueryAssistant */
 	static readonly QueryAssistant = "wisdom:QueryAssistant";
+	/** [Write] wisdom:RegisterAssistantReplicaKey */
+	static readonly RegisterAssistantReplicaKey =
+		"wisdom:RegisterAssistantReplicaKey";
+	/** [Write] wisdom:RegisterKnowledgeBaseReplicaKey */
+	static readonly RegisterKnowledgeBaseReplicaKey =
+		"wisdom:RegisterKnowledgeBaseReplicaKey";
 	/** [Write] wisdom:RemoveAssistantAIAgent */
 	static readonly RemoveAssistantAIAgent = "wisdom:RemoveAssistantAIAgent";
 	/** [Write] wisdom:RemoveKnowledgeBaseTemplateUri */
@@ -280,6 +286,8 @@ export class WisdomActions {
 		WisdomActions.DeleteQuickResponse,
 		WisdomActions.NotifyRecommendationsReceived,
 		WisdomActions.PutFeedback,
+		WisdomActions.RegisterAssistantReplicaKey,
+		WisdomActions.RegisterKnowledgeBaseReplicaKey,
 		WisdomActions.RemoveAssistantAIAgent,
 		WisdomActions.RemoveKnowledgeBaseTemplateUri,
 		WisdomActions.SendMessage,

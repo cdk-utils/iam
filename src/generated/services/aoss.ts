@@ -28,6 +28,8 @@ export class AossActions {
 	static readonly BatchGetLifecyclePolicy = "aoss:BatchGetLifecyclePolicy";
 	/** [Read] aoss:BatchGetVpcEndpoint */
 	static readonly BatchGetVpcEndpoint = "aoss:BatchGetVpcEndpoint";
+	/** [Write] aoss:CancelIngestionJob */
+	static readonly CancelIngestionJob = "aoss:CancelIngestionJob";
 	/** [Write] aoss:CreateAccessPolicy */
 	static readonly CreateAccessPolicy = "aoss:CreateAccessPolicy";
 	/** [Write] aoss:CreateCollection */
@@ -36,6 +38,10 @@ export class AossActions {
 	static readonly CreateCollectionGroup = "aoss:CreateCollectionGroup";
 	/** [Write] aoss:CreateIndex */
 	static readonly CreateIndex = "aoss:CreateIndex";
+	/** [Write] aoss:CreateIngestionJob */
+	static readonly CreateIngestionJob = "aoss:CreateIngestionJob";
+	/** [Write] aoss:CreateIngestionStream */
+	static readonly CreateIngestionStream = "aoss:CreateIngestionStream";
 	/** [Write] aoss:CreateLifecyclePolicy */
 	static readonly CreateLifecyclePolicy = "aoss:CreateLifecyclePolicy";
 	/** [Write] aoss:CreateSecurityConfig */
@@ -54,6 +60,8 @@ export class AossActions {
 	static readonly DeleteCollectionGroup = "aoss:DeleteCollectionGroup";
 	/** [Write] aoss:DeleteIndex */
 	static readonly DeleteIndex = "aoss:DeleteIndex";
+	/** [Write] aoss:DeleteIngestionStream */
+	static readonly DeleteIngestionStream = "aoss:DeleteIngestionStream";
 	/** [Write] aoss:DeleteLifecyclePolicy */
 	static readonly DeleteLifecyclePolicy = "aoss:DeleteLifecyclePolicy";
 	/** [Write] aoss:DeleteSecurityConfig */
@@ -68,6 +76,10 @@ export class AossActions {
 	static readonly actionGetAccountSettings = "aoss:GetAccountSettings";
 	/** [Read] aoss:GetIndex */
 	static readonly actionGetIndex = "aoss:GetIndex";
+	/** [Read] aoss:GetIngestionJob */
+	static readonly actionGetIngestionJob = "aoss:GetIngestionJob";
+	/** [Read] aoss:GetIngestionStream */
+	static readonly actionGetIngestionStream = "aoss:GetIngestionStream";
 	/** [Read] aoss:GetPoliciesStats */
 	static readonly actionGetPoliciesStats = "aoss:GetPoliciesStats";
 	/** [Read] aoss:GetSecurityConfig */
@@ -80,6 +92,10 @@ export class AossActions {
 	static readonly ListCollectionGroups = "aoss:ListCollectionGroups";
 	/** [List] aoss:ListCollections */
 	static readonly ListCollections = "aoss:ListCollections";
+	/** [List] aoss:ListIngestionJobs */
+	static readonly ListIngestionJobs = "aoss:ListIngestionJobs";
+	/** [List] aoss:ListIngestionStreams */
+	static readonly ListIngestionStreams = "aoss:ListIngestionStreams";
 	/** [List] aoss:ListLifecyclePolicies */
 	static readonly ListLifecyclePolicies = "aoss:ListLifecyclePolicies";
 	/** [List] aoss:ListSecurityConfigs */
@@ -90,9 +106,9 @@ export class AossActions {
 	static readonly ListTagsForResource = "aoss:ListTagsForResource";
 	/** [List] aoss:ListVpcEndpoints */
 	static readonly ListVpcEndpoints = "aoss:ListVpcEndpoints";
-	/** [Write] aoss:TagResource */
+	/** [Tagging] aoss:TagResource */
 	static readonly TagResource = "aoss:TagResource";
-	/** [Write] aoss:UntagResource */
+	/** [Tagging] aoss:UntagResource */
 	static readonly UntagResource = "aoss:UntagResource";
 	/** [Write] aoss:UpdateAccessPolicy */
 	static readonly UpdateAccessPolicy = "aoss:UpdateAccessPolicy";
@@ -123,6 +139,8 @@ export class AossActions {
 		AossActions.actionGetAccessPolicy,
 		AossActions.actionGetAccountSettings,
 		AossActions.actionGetIndex,
+		AossActions.actionGetIngestionJob,
+		AossActions.actionGetIngestionStream,
 		AossActions.actionGetPoliciesStats,
 		AossActions.actionGetSecurityConfig,
 		AossActions.actionGetSecurityPolicy,
@@ -131,10 +149,13 @@ export class AossActions {
 	static readonly AllWriteActions: string[] = [
 		AossActions.APIAccessAll,
 		AossActions.AddCollectionToCollectionGroup,
+		AossActions.CancelIngestionJob,
 		AossActions.CreateAccessPolicy,
 		AossActions.CreateCollection,
 		AossActions.CreateCollectionGroup,
 		AossActions.CreateIndex,
+		AossActions.CreateIngestionJob,
+		AossActions.CreateIngestionStream,
 		AossActions.CreateLifecyclePolicy,
 		AossActions.CreateSecurityConfig,
 		AossActions.CreateSecurityPolicy,
@@ -144,12 +165,11 @@ export class AossActions {
 		AossActions.DeleteCollection,
 		AossActions.DeleteCollectionGroup,
 		AossActions.DeleteIndex,
+		AossActions.DeleteIngestionStream,
 		AossActions.DeleteLifecyclePolicy,
 		AossActions.DeleteSecurityConfig,
 		AossActions.DeleteSecurityPolicy,
 		AossActions.DeleteVpcEndpoint,
-		AossActions.TagResource,
-		AossActions.UntagResource,
 		AossActions.UpdateAccessPolicy,
 		AossActions.UpdateAccountSettings,
 		AossActions.UpdateCollection,
@@ -165,6 +185,8 @@ export class AossActions {
 		AossActions.ListAccessPolicies,
 		AossActions.ListCollectionGroups,
 		AossActions.ListCollections,
+		AossActions.ListIngestionJobs,
+		AossActions.ListIngestionStreams,
 		AossActions.ListLifecyclePolicies,
 		AossActions.ListSecurityConfigs,
 		AossActions.ListSecurityPolicies,
@@ -174,7 +196,10 @@ export class AossActions {
 	/** All permission-management-level actions. */
 	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly AllTaggingActions: string[] = [];
+	static readonly AllTaggingActions: string[] = [
+		AossActions.TagResource,
+		AossActions.UntagResource,
+	];
 }
 
 /**
@@ -257,12 +282,80 @@ export interface AossDashboardsArnComponents {
 	readonly account: string;
 }
 
+/**
+ * Properties for building a IngestionJob ARN.
+ */
+export interface AossIngestionJobArnProps {
+	/** The CollectionId component of the ARN. */
+	readonly collectionId: string;
+	/** The IngestionJobId component of the ARN. */
+	readonly ingestionJobId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a IngestionJob ARN.
+ */
+export interface AossIngestionJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CollectionId component. */
+	readonly collectionId: string;
+	/** The IngestionJobId component. */
+	readonly ingestionJobId: string;
+}
+
+/**
+ * Properties for building a IngestionStream ARN.
+ */
+export interface AossIngestionStreamArnProps {
+	/** The CollectionId component of the ARN. */
+	readonly collectionId: string;
+	/** The IngestionStreamId component of the ARN. */
+	readonly ingestionStreamId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a IngestionStream ARN.
+ */
+export interface AossIngestionStreamArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CollectionId component. */
+	readonly collectionId: string;
+	/** The IngestionStreamId component. */
+	readonly ingestionStreamId: string;
+}
+
 const CollectionArnRegex =
 	/^arn:(?<partition>[^:]+):aoss:(?<region>[^:]*):(?<account>[^:]*):collection\/(?<collectionId>[^:/?]+)$/;
 const CollectionGroupArnRegex =
 	/^arn:(?<partition>[^:]+):aoss:(?<region>[^:]*):(?<account>[^:]*):collection-group\/(?<collectionGroupId>[^:/?]+)$/;
 const DashboardsArnRegex =
 	/^arn:(?<partition>[^:]+):aoss:(?<region>[^:]*):(?<account>[^:]*):dashboards\/default$/;
+const IngestionJobArnRegex =
+	/^arn:(?<partition>[^:]+):aoss:(?<region>[^:]*):(?<account>[^:]*):collection\/(?<collectionId>[^:/?]+)\/ingestion-job\/(?<ingestionJobId>[^:/?]+)$/;
+const IngestionStreamArnRegex =
+	/^arn:(?<partition>[^:]+):aoss:(?<region>[^:]*):(?<account>[^:]*):collection\/(?<collectionId>[^:/?]+)\/ingestion-stream\/(?<ingestionStreamId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for aoss resources.
@@ -361,6 +454,72 @@ export class AossResources {
 			account: match.groups.account,
 		};
 	}
+
+	/**
+	 * Builds an ARN for the IngestionJob resource.
+	 */
+	static ingestionJob(props: AossIngestionJobArnProps): string {
+		return `arn:${props.partition ?? "aws"}:aoss:${props.region ?? "*"}:${props.account ?? "*"}:collection/${props.collectionId}/ingestion-job/${props.ingestionJobId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the IngestionJob resource.
+	 */
+	static isValidIngestionJobArn(arn: string): boolean {
+		return IngestionJobArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a IngestionJob ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseIngestionJobArn(arn: string): AossIngestionJobArnComponents {
+		const match = IngestionJobArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid IngestionJob ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			collectionId: match.groups!.collectionId,
+			ingestionJobId: match.groups!.ingestionJobId,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the IngestionStream resource.
+	 */
+	static ingestionStream(props: AossIngestionStreamArnProps): string {
+		return `arn:${props.partition ?? "aws"}:aoss:${props.region ?? "*"}:${props.account ?? "*"}:collection/${props.collectionId}/ingestion-stream/${props.ingestionStreamId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the IngestionStream resource.
+	 */
+	static isValidIngestionStreamArn(arn: string): boolean {
+		return IngestionStreamArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a IngestionStream ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseIngestionStreamArn(
+		arn: string,
+	): AossIngestionStreamArnComponents {
+		const match = IngestionStreamArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid IngestionStream ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			collectionId: match.groups!.collectionId,
+			ingestionStreamId: match.groups!.ingestionStreamId,
+		};
+	}
 }
 
 /**
@@ -384,7 +543,7 @@ export class AossOperations {
 	/** IAM actions required for the BatchGetVpcEndpoint API call. */
 	static readonly BatchGetVpcEndpoint: string[] = ["aoss:BatchGetVpcEndpoint"];
 	/** IAM actions required for the CancelIngestionJob API call. */
-	static readonly CancelIngestionJob: string[] = [];
+	static readonly CancelIngestionJob: string[] = ["aoss:CancelIngestionJob"];
 	/** IAM actions required for the CreateAccessPolicy API call. */
 	static readonly CreateAccessPolicy: string[] = ["aoss:CreateAccessPolicy"];
 	/** IAM actions required for the CreateCollection API call. */
@@ -401,9 +560,16 @@ export class AossOperations {
 	/** IAM actions required for the CreateIndex API call. */
 	static readonly CreateIndex: string[] = ["aoss:CreateIndex"];
 	/** IAM actions required for the CreateIngestionJob API call. */
-	static readonly CreateIngestionJob: string[] = ["aoss:TagResource"];
+	static readonly CreateIngestionJob: string[] = [
+		"aoss:CreateIngestionJob",
+		"aoss:TagResource",
+	];
 	/** IAM actions required for the CreateIngestionStream API call. */
-	static readonly CreateIngestionStream: string[] = ["iam:PassRole"];
+	static readonly CreateIngestionStream: string[] = [
+		"aoss:CreateIngestionStream",
+		"iam:PassRole",
+		"aoss:TagResource",
+	];
 	/** IAM actions required for the CreateLifecyclePolicy API call. */
 	static readonly CreateLifecyclePolicy: string[] = [
 		"aoss:CreateLifecyclePolicy",
@@ -429,7 +595,9 @@ export class AossOperations {
 	/** IAM actions required for the DeleteIndex API call. */
 	static readonly DeleteIndex: string[] = ["aoss:DeleteIndex"];
 	/** IAM actions required for the DeleteIngestionStream API call. */
-	static readonly DeleteIngestionStream: string[] = [];
+	static readonly DeleteIngestionStream: string[] = [
+		"aoss:DeleteIngestionStream",
+	];
 	/** IAM actions required for the DeleteLifecyclePolicy API call. */
 	static readonly DeleteLifecyclePolicy: string[] = [
 		"aoss:DeleteLifecyclePolicy",
@@ -451,9 +619,9 @@ export class AossOperations {
 	/** IAM actions required for the GetIndex API call. */
 	static readonly opGetIndex: string[] = ["aoss:GetIndex"];
 	/** IAM actions required for the GetIngestionJob API call. */
-	static readonly opGetIngestionJob: string[] = [];
+	static readonly opGetIngestionJob: string[] = ["aoss:GetIngestionJob"];
 	/** IAM actions required for the GetIngestionStream API call. */
-	static readonly opGetIngestionStream: string[] = [];
+	static readonly opGetIngestionStream: string[] = ["aoss:GetIngestionStream"];
 	/** IAM actions required for the GetPoliciesStats API call. */
 	static readonly opGetPoliciesStats: string[] = ["aoss:GetPoliciesStats"];
 	/** IAM actions required for the GetSecurityConfig API call. */
@@ -469,9 +637,11 @@ export class AossOperations {
 	/** IAM actions required for the ListCollections API call. */
 	static readonly ListCollections: string[] = ["aoss:ListCollections"];
 	/** IAM actions required for the ListIngestionJobs API call. */
-	static readonly ListIngestionJobs: string[] = [];
+	static readonly ListIngestionJobs: string[] = ["aoss:ListIngestionJobs"];
 	/** IAM actions required for the ListIngestionStreams API call. */
-	static readonly ListIngestionStreams: string[] = [];
+	static readonly ListIngestionStreams: string[] = [
+		"aoss:ListIngestionStreams",
+	];
 	/** IAM actions required for the ListLifecyclePolicies API call. */
 	static readonly ListLifecyclePolicies: string[] = [
 		"aoss:ListLifecyclePolicies",
@@ -557,6 +727,16 @@ export class AossConditions {
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
+	/** Condition keys applicable to the CreateIngestionJob action. */
+	static readonly CreateIngestionJobConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
+	/** Condition keys applicable to the CreateIngestionStream action. */
+	static readonly CreateIngestionStreamConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the CreateLifecyclePolicy action. */
 	static readonly CreateLifecyclePolicyConditionKeys: string[] = ["aoss:index"];
 	/** Condition keys applicable to the CreateSecurityPolicy action. */
@@ -601,6 +781,10 @@ export class AossConditions {
 		"aoss:collection",
 		"aoss:index",
 	];
+	/** Condition keys applicable to the UpdateCollection action. */
+	static readonly UpdateCollectionConditionKeys: string[] = [
+		"aoss:DeletionProtection",
+	];
 	/** Condition keys applicable to the UpdateLifecyclePolicy action. */
 	static readonly UpdateLifecyclePolicyConditionKeys: string[] = ["aoss:index"];
 	/** Condition keys applicable to the UpdateSecurityPolicy action. */
@@ -610,6 +794,8 @@ export class AossConditions {
 
 	/** Condition key: aoss:CollectionId (String) */
 	static readonly COLLECTION_ID = "aoss:CollectionId";
+	/** Condition key: aoss:DeletionProtection (String) */
+	static readonly DELETION_PROTECTION = "aoss:DeletionProtection";
 	/** Condition key: aoss:collection (String) */
 	static readonly COLLECTION = "aoss:collection";
 	/** Condition key: aoss:collection-group (String) */
@@ -628,6 +814,15 @@ export class AossConditions {
 	 */
 	static collectionId(value: string): Record<string, Record<string, string>> {
 		return { StringEquals: { "aoss:CollectionId": value } };
+	}
+
+	/**
+	 * Generates a condition block for `aoss:DeletionProtection`.
+	 */
+	static deletionProtection(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "aoss:DeletionProtection": value } };
 	}
 
 	/**

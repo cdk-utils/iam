@@ -1484,7 +1484,10 @@ export class DatazoneOperations {
 	/** IAM actions required for the UpdateAssetFilter API call. */
 	static readonly UpdateAssetFilter: string[] = ["datazone:UpdateAssetFilter"];
 	/** IAM actions required for the UpdateConnection API call. */
-	static readonly UpdateConnection: string[] = ["datazone:UpdateConnection"];
+	static readonly UpdateConnection: string[] = [
+		"iam:PassRole",
+		"datazone:UpdateConnection",
+	];
 	/** IAM actions required for the UpdateDataSource API call. */
 	static readonly UpdateDataSource: string[] = [
 		"iam:PassRole",

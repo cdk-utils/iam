@@ -1415,6 +1415,7 @@ new transcribe.TranscribeActions()
 | <code><a href="#@cdk_utils/iam.transcribe.TranscribeActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] transcribe:TagResource. |
 | <code><a href="#@cdk_utils/iam.transcribe.TranscribeActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] transcribe:UntagResource. |
 | <code><a href="#@cdk_utils/iam.transcribe.TranscribeActions.property.UpdateCallAnalyticsCategory">UpdateCallAnalyticsCategory</a></code> | <code>string</code> | [Write] transcribe:UpdateCallAnalyticsCategory. |
+| <code><a href="#@cdk_utils/iam.transcribe.TranscribeActions.property.UpdateLanguageModel">UpdateLanguageModel</a></code> | <code>string</code> | [Write] transcribe:UpdateLanguageModel. |
 | <code><a href="#@cdk_utils/iam.transcribe.TranscribeActions.property.UpdateMedicalVocabulary">UpdateMedicalVocabulary</a></code> | <code>string</code> | [Write] transcribe:UpdateMedicalVocabulary. |
 | <code><a href="#@cdk_utils/iam.transcribe.TranscribeActions.property.UpdateVocabulary">UpdateVocabulary</a></code> | <code>string</code> | [Write] transcribe:UpdateVocabulary. |
 | <code><a href="#@cdk_utils/iam.transcribe.TranscribeActions.property.UpdateVocabularyFilter">UpdateVocabularyFilter</a></code> | <code>string</code> | [Write] transcribe:UpdateVocabularyFilter. |
@@ -2066,6 +2067,18 @@ public readonly UpdateCallAnalyticsCategory: string;
 - *Type:* string
 
 [Write] transcribe:UpdateCallAnalyticsCategory.
+
+---
+
+##### `UpdateLanguageModel`<sup>Required</sup> <a name="UpdateLanguageModel" id="@cdk_utils/iam.transcribe.TranscribeActions.property.UpdateLanguageModel"></a>
+
+```typescript
+public readonly UpdateLanguageModel: string;
+```
+
+- *Type:* string
+
+[Write] transcribe:UpdateLanguageModel.
 
 ---
 

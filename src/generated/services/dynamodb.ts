@@ -941,7 +941,10 @@ export class DynamoDBOperations {
 		"dynamodb:UpdateItem",
 	];
 	/** IAM actions required for the Scan API call. */
-	static readonly Scan: string[] = ["dynamodb:Scan"];
+	static readonly Scan: string[] = [
+		"dynamodb:ReadDataForReplication",
+		"dynamodb:Scan",
+	];
 	/** IAM actions required for the SearchVectors API call. */
 	static readonly SearchVectors: string[] = [];
 	/** IAM actions required for the TagResource API call. */

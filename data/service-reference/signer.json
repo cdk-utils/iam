@@ -72,7 +72,7 @@
       "Name": "GetRevocationStatus",
       "Annotations": {
         "Properties": {
-          "IsDataPlane": false,
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,

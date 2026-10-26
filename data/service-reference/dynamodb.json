@@ -2784,6 +2784,10 @@
       "Name": "Scan",
       "AuthorizedActions": [
         {
+          "Name": "ReadDataForReplication",
+          "Service": "dynamodb"
+        },
+        {
           "Name": "Scan",
           "Service": "dynamodb"
         }

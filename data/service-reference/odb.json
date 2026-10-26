@@ -491,6 +491,7 @@
       "Name": "DeleteExadbVmCluster",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2330,6 +2331,16 @@
     },
     {
       "Name": "DeleteExadbVmCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDbNode",
+          "Service": "odb"
+        },
+        {
+          "Name": "DeleteExadbVmCluster",
+          "Service": "odb"
+        }
+      ],
       "SDK": [
         {
           "Name": "odb",
