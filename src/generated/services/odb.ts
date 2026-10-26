@@ -1055,7 +1055,10 @@ export class OdbOperations {
 		"odb:DeleteDbNode",
 	];
 	/** IAM actions required for the DeleteExadbVmCluster API call. */
-	static readonly DeleteExadbVmCluster: string[] = [];
+	static readonly DeleteExadbVmCluster: string[] = [
+		"odb:DeleteDbNode",
+		"odb:DeleteExadbVmCluster",
+	];
 	/** IAM actions required for the DeleteExascaleDbStorageVault API call. */
 	static readonly DeleteExascaleDbStorageVault: string[] = [
 		"odb:DeleteExascaleDbStorageVault",

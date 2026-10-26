@@ -129,6 +129,8 @@ export class TranscribeActions {
 	/** [Write] transcribe:UpdateCallAnalyticsCategory */
 	static readonly UpdateCallAnalyticsCategory =
 		"transcribe:UpdateCallAnalyticsCategory";
+	/** [Write] transcribe:UpdateLanguageModel */
+	static readonly UpdateLanguageModel = "transcribe:UpdateLanguageModel";
 	/** [Write] transcribe:UpdateMedicalVocabulary */
 	static readonly UpdateMedicalVocabulary =
 		"transcribe:UpdateMedicalVocabulary";
@@ -179,6 +181,7 @@ export class TranscribeActions {
 		TranscribeActions.StartStreamTranscriptionWebSocket,
 		TranscribeActions.StartTranscriptionJob,
 		TranscribeActions.UpdateCallAnalyticsCategory,
+		TranscribeActions.UpdateLanguageModel,
 		TranscribeActions.UpdateMedicalVocabulary,
 		TranscribeActions.UpdateVocabulary,
 		TranscribeActions.UpdateVocabularyFilter,
@@ -949,7 +952,10 @@ export class TranscribeOperations {
 		"transcribe:UpdateCallAnalyticsCategory",
 	];
 	/** IAM actions required for the UpdateLanguageModel API call. */
-	static readonly UpdateLanguageModel: string[] = ["iam:PassRole"];
+	static readonly UpdateLanguageModel: string[] = [
+		"iam:PassRole",
+		"transcribe:UpdateLanguageModel",
+	];
 	/** IAM actions required for the UpdateMedicalVocabulary API call. */
 	static readonly UpdateMedicalVocabulary: string[] = [
 		"transcribe:UpdateMedicalVocabulary",

@@ -421,6 +421,354 @@ Defaults to "*".
 
 ---
 
+### AossIngestionJobArnComponents <a name="AossIngestionJobArnComponents" id="@cdk_utils/iam.aoss.AossIngestionJobArnComponents"></a>
+
+Parsed components of a IngestionJob ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.aoss.AossIngestionJobArnComponents.Initializer"></a>
+
+```typescript
+import { aoss } from '@cdk_utils/iam'
+
+const aossIngestionJobArnComponents: aoss.AossIngestionJobArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.aoss.AossIngestionJobArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.aoss.AossIngestionJobArnComponents.property.collectionId">collectionId</a></code> | <code>string</code> | The CollectionId component. |
+| <code><a href="#@cdk_utils/iam.aoss.AossIngestionJobArnComponents.property.ingestionJobId">ingestionJobId</a></code> | <code>string</code> | The IngestionJobId component. |
+| <code><a href="#@cdk_utils/iam.aoss.AossIngestionJobArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.aoss.AossIngestionJobArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.aoss.AossIngestionJobArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `collectionId`<sup>Required</sup> <a name="collectionId" id="@cdk_utils/iam.aoss.AossIngestionJobArnComponents.property.collectionId"></a>
+
+```typescript
+public readonly collectionId: string;
+```
+
+- *Type:* string
+
+The CollectionId component.
+
+---
+
+##### `ingestionJobId`<sup>Required</sup> <a name="ingestionJobId" id="@cdk_utils/iam.aoss.AossIngestionJobArnComponents.property.ingestionJobId"></a>
+
+```typescript
+public readonly ingestionJobId: string;
+```
+
+- *Type:* string
+
+The IngestionJobId component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.aoss.AossIngestionJobArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.aoss.AossIngestionJobArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### AossIngestionJobArnProps <a name="AossIngestionJobArnProps" id="@cdk_utils/iam.aoss.AossIngestionJobArnProps"></a>
+
+Properties for building a IngestionJob ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.aoss.AossIngestionJobArnProps.Initializer"></a>
+
+```typescript
+import { aoss } from '@cdk_utils/iam'
+
+const aossIngestionJobArnProps: aoss.AossIngestionJobArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.aoss.AossIngestionJobArnProps.property.collectionId">collectionId</a></code> | <code>string</code> | The CollectionId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.aoss.AossIngestionJobArnProps.property.ingestionJobId">ingestionJobId</a></code> | <code>string</code> | The IngestionJobId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.aoss.AossIngestionJobArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.aoss.AossIngestionJobArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.aoss.AossIngestionJobArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `collectionId`<sup>Required</sup> <a name="collectionId" id="@cdk_utils/iam.aoss.AossIngestionJobArnProps.property.collectionId"></a>
+
+```typescript
+public readonly collectionId: string;
+```
+
+- *Type:* string
+
+The CollectionId component of the ARN.
+
+---
+
+##### `ingestionJobId`<sup>Required</sup> <a name="ingestionJobId" id="@cdk_utils/iam.aoss.AossIngestionJobArnProps.property.ingestionJobId"></a>
+
+```typescript
+public readonly ingestionJobId: string;
+```
+
+- *Type:* string
+
+The IngestionJobId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.aoss.AossIngestionJobArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.aoss.AossIngestionJobArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.aoss.AossIngestionJobArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
+### AossIngestionStreamArnComponents <a name="AossIngestionStreamArnComponents" id="@cdk_utils/iam.aoss.AossIngestionStreamArnComponents"></a>
+
+Parsed components of a IngestionStream ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.aoss.AossIngestionStreamArnComponents.Initializer"></a>
+
+```typescript
+import { aoss } from '@cdk_utils/iam'
+
+const aossIngestionStreamArnComponents: aoss.AossIngestionStreamArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.aoss.AossIngestionStreamArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.aoss.AossIngestionStreamArnComponents.property.collectionId">collectionId</a></code> | <code>string</code> | The CollectionId component. |
+| <code><a href="#@cdk_utils/iam.aoss.AossIngestionStreamArnComponents.property.ingestionStreamId">ingestionStreamId</a></code> | <code>string</code> | The IngestionStreamId component. |
+| <code><a href="#@cdk_utils/iam.aoss.AossIngestionStreamArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.aoss.AossIngestionStreamArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.aoss.AossIngestionStreamArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `collectionId`<sup>Required</sup> <a name="collectionId" id="@cdk_utils/iam.aoss.AossIngestionStreamArnComponents.property.collectionId"></a>
+
+```typescript
+public readonly collectionId: string;
+```
+
+- *Type:* string
+
+The CollectionId component.
+
+---
+
+##### `ingestionStreamId`<sup>Required</sup> <a name="ingestionStreamId" id="@cdk_utils/iam.aoss.AossIngestionStreamArnComponents.property.ingestionStreamId"></a>
+
+```typescript
+public readonly ingestionStreamId: string;
+```
+
+- *Type:* string
+
+The IngestionStreamId component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.aoss.AossIngestionStreamArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.aoss.AossIngestionStreamArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### AossIngestionStreamArnProps <a name="AossIngestionStreamArnProps" id="@cdk_utils/iam.aoss.AossIngestionStreamArnProps"></a>
+
+Properties for building a IngestionStream ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.aoss.AossIngestionStreamArnProps.Initializer"></a>
+
+```typescript
+import { aoss } from '@cdk_utils/iam'
+
+const aossIngestionStreamArnProps: aoss.AossIngestionStreamArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.aoss.AossIngestionStreamArnProps.property.collectionId">collectionId</a></code> | <code>string</code> | The CollectionId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.aoss.AossIngestionStreamArnProps.property.ingestionStreamId">ingestionStreamId</a></code> | <code>string</code> | The IngestionStreamId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.aoss.AossIngestionStreamArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.aoss.AossIngestionStreamArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.aoss.AossIngestionStreamArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `collectionId`<sup>Required</sup> <a name="collectionId" id="@cdk_utils/iam.aoss.AossIngestionStreamArnProps.property.collectionId"></a>
+
+```typescript
+public readonly collectionId: string;
+```
+
+- *Type:* string
+
+The CollectionId component of the ARN.
+
+---
+
+##### `ingestionStreamId`<sup>Required</sup> <a name="ingestionStreamId" id="@cdk_utils/iam.aoss.AossIngestionStreamArnProps.property.ingestionStreamId"></a>
+
+```typescript
+public readonly ingestionStreamId: string;
+```
+
+- *Type:* string
+
+The IngestionStreamId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.aoss.AossIngestionStreamArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.aoss.AossIngestionStreamArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.aoss.AossIngestionStreamArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ## Classes <a name="Classes" id="Classes"></a>
 
 ### AossActions <a name="AossActions" id="@cdk_utils/iam.aoss.AossActions"></a>
@@ -450,6 +798,8 @@ new aoss.AossActions()
 | <code><a href="#@cdk_utils/iam.aoss.AossActions.property.actionGetAccessPolicy">actionGetAccessPolicy</a></code> | <code>string</code> | [Read] aoss:GetAccessPolicy. |
 | <code><a href="#@cdk_utils/iam.aoss.AossActions.property.actionGetAccountSettings">actionGetAccountSettings</a></code> | <code>string</code> | [Read] aoss:GetAccountSettings. |
 | <code><a href="#@cdk_utils/iam.aoss.AossActions.property.actionGetIndex">actionGetIndex</a></code> | <code>string</code> | [Read] aoss:GetIndex. |
+| <code><a href="#@cdk_utils/iam.aoss.AossActions.property.actionGetIngestionJob">actionGetIngestionJob</a></code> | <code>string</code> | [Read] aoss:GetIngestionJob. |
+| <code><a href="#@cdk_utils/iam.aoss.AossActions.property.actionGetIngestionStream">actionGetIngestionStream</a></code> | <code>string</code> | [Read] aoss:GetIngestionStream. |
 | <code><a href="#@cdk_utils/iam.aoss.AossActions.property.actionGetPoliciesStats">actionGetPoliciesStats</a></code> | <code>string</code> | [Read] aoss:GetPoliciesStats. |
 | <code><a href="#@cdk_utils/iam.aoss.AossActions.property.actionGetSecurityConfig">actionGetSecurityConfig</a></code> | <code>string</code> | [Read] aoss:GetSecurityConfig. |
 | <code><a href="#@cdk_utils/iam.aoss.AossActions.property.actionGetSecurityPolicy">actionGetSecurityPolicy</a></code> | <code>string</code> | [Read] aoss:GetSecurityPolicy. |
@@ -465,10 +815,13 @@ new aoss.AossActions()
 | <code><a href="#@cdk_utils/iam.aoss.AossActions.property.BatchGetEffectiveLifecyclePolicy">BatchGetEffectiveLifecyclePolicy</a></code> | <code>string</code> | [Read] aoss:BatchGetEffectiveLifecyclePolicy. |
 | <code><a href="#@cdk_utils/iam.aoss.AossActions.property.BatchGetLifecyclePolicy">BatchGetLifecyclePolicy</a></code> | <code>string</code> | [Read] aoss:BatchGetLifecyclePolicy. |
 | <code><a href="#@cdk_utils/iam.aoss.AossActions.property.BatchGetVpcEndpoint">BatchGetVpcEndpoint</a></code> | <code>string</code> | [Read] aoss:BatchGetVpcEndpoint. |
+| <code><a href="#@cdk_utils/iam.aoss.AossActions.property.CancelIngestionJob">CancelIngestionJob</a></code> | <code>string</code> | [Write] aoss:CancelIngestionJob. |
 | <code><a href="#@cdk_utils/iam.aoss.AossActions.property.CreateAccessPolicy">CreateAccessPolicy</a></code> | <code>string</code> | [Write] aoss:CreateAccessPolicy. |
 | <code><a href="#@cdk_utils/iam.aoss.AossActions.property.CreateCollection">CreateCollection</a></code> | <code>string</code> | [Write] aoss:CreateCollection. |
 | <code><a href="#@cdk_utils/iam.aoss.AossActions.property.CreateCollectionGroup">CreateCollectionGroup</a></code> | <code>string</code> | [Write] aoss:CreateCollectionGroup. |
 | <code><a href="#@cdk_utils/iam.aoss.AossActions.property.CreateIndex">CreateIndex</a></code> | <code>string</code> | [Write] aoss:CreateIndex. |
+| <code><a href="#@cdk_utils/iam.aoss.AossActions.property.CreateIngestionJob">CreateIngestionJob</a></code> | <code>string</code> | [Write] aoss:CreateIngestionJob. |
+| <code><a href="#@cdk_utils/iam.aoss.AossActions.property.CreateIngestionStream">CreateIngestionStream</a></code> | <code>string</code> | [Write] aoss:CreateIngestionStream. |
 | <code><a href="#@cdk_utils/iam.aoss.AossActions.property.CreateLifecyclePolicy">CreateLifecyclePolicy</a></code> | <code>string</code> | [Write] aoss:CreateLifecyclePolicy. |
 | <code><a href="#@cdk_utils/iam.aoss.AossActions.property.CreateSecurityConfig">CreateSecurityConfig</a></code> | <code>string</code> | [Write] aoss:CreateSecurityConfig. |
 | <code><a href="#@cdk_utils/iam.aoss.AossActions.property.CreateSecurityPolicy">CreateSecurityPolicy</a></code> | <code>string</code> | [Write] aoss:CreateSecurityPolicy. |
@@ -478,6 +831,7 @@ new aoss.AossActions()
 | <code><a href="#@cdk_utils/iam.aoss.AossActions.property.DeleteCollection">DeleteCollection</a></code> | <code>string</code> | [Write] aoss:DeleteCollection. |
 | <code><a href="#@cdk_utils/iam.aoss.AossActions.property.DeleteCollectionGroup">DeleteCollectionGroup</a></code> | <code>string</code> | [Write] aoss:DeleteCollectionGroup. |
 | <code><a href="#@cdk_utils/iam.aoss.AossActions.property.DeleteIndex">DeleteIndex</a></code> | <code>string</code> | [Write] aoss:DeleteIndex. |
+| <code><a href="#@cdk_utils/iam.aoss.AossActions.property.DeleteIngestionStream">DeleteIngestionStream</a></code> | <code>string</code> | [Write] aoss:DeleteIngestionStream. |
 | <code><a href="#@cdk_utils/iam.aoss.AossActions.property.DeleteLifecyclePolicy">DeleteLifecyclePolicy</a></code> | <code>string</code> | [Write] aoss:DeleteLifecyclePolicy. |
 | <code><a href="#@cdk_utils/iam.aoss.AossActions.property.DeleteSecurityConfig">DeleteSecurityConfig</a></code> | <code>string</code> | [Write] aoss:DeleteSecurityConfig. |
 | <code><a href="#@cdk_utils/iam.aoss.AossActions.property.DeleteSecurityPolicy">DeleteSecurityPolicy</a></code> | <code>string</code> | [Write] aoss:DeleteSecurityPolicy. |
@@ -485,14 +839,16 @@ new aoss.AossActions()
 | <code><a href="#@cdk_utils/iam.aoss.AossActions.property.ListAccessPolicies">ListAccessPolicies</a></code> | <code>string</code> | [List] aoss:ListAccessPolicies. |
 | <code><a href="#@cdk_utils/iam.aoss.AossActions.property.ListCollectionGroups">ListCollectionGroups</a></code> | <code>string</code> | [List] aoss:ListCollectionGroups. |
 | <code><a href="#@cdk_utils/iam.aoss.AossActions.property.ListCollections">ListCollections</a></code> | <code>string</code> | [List] aoss:ListCollections. |
+| <code><a href="#@cdk_utils/iam.aoss.AossActions.property.ListIngestionJobs">ListIngestionJobs</a></code> | <code>string</code> | [List] aoss:ListIngestionJobs. |
+| <code><a href="#@cdk_utils/iam.aoss.AossActions.property.ListIngestionStreams">ListIngestionStreams</a></code> | <code>string</code> | [List] aoss:ListIngestionStreams. |
 | <code><a href="#@cdk_utils/iam.aoss.AossActions.property.ListLifecyclePolicies">ListLifecyclePolicies</a></code> | <code>string</code> | [List] aoss:ListLifecyclePolicies. |
 | <code><a href="#@cdk_utils/iam.aoss.AossActions.property.ListSecurityConfigs">ListSecurityConfigs</a></code> | <code>string</code> | [List] aoss:ListSecurityConfigs. |
 | <code><a href="#@cdk_utils/iam.aoss.AossActions.property.ListSecurityPolicies">ListSecurityPolicies</a></code> | <code>string</code> | [List] aoss:ListSecurityPolicies. |
 | <code><a href="#@cdk_utils/iam.aoss.AossActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [List] aoss:ListTagsForResource. |
 | <code><a href="#@cdk_utils/iam.aoss.AossActions.property.ListVpcEndpoints">ListVpcEndpoints</a></code> | <code>string</code> | [List] aoss:ListVpcEndpoints. |
 | <code><a href="#@cdk_utils/iam.aoss.AossActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
-| <code><a href="#@cdk_utils/iam.aoss.AossActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Write] aoss:TagResource. |
-| <code><a href="#@cdk_utils/iam.aoss.AossActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Write] aoss:UntagResource. |
+| <code><a href="#@cdk_utils/iam.aoss.AossActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] aoss:TagResource. |
+| <code><a href="#@cdk_utils/iam.aoss.AossActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] aoss:UntagResource. |
 | <code><a href="#@cdk_utils/iam.aoss.AossActions.property.UpdateAccessPolicy">UpdateAccessPolicy</a></code> | <code>string</code> | [Write] aoss:UpdateAccessPolicy. |
 | <code><a href="#@cdk_utils/iam.aoss.AossActions.property.UpdateAccountSettings">UpdateAccountSettings</a></code> | <code>string</code> | [Write] aoss:UpdateAccountSettings. |
 | <code><a href="#@cdk_utils/iam.aoss.AossActions.property.UpdateCollection">UpdateCollection</a></code> | <code>string</code> | [Write] aoss:UpdateCollection. |
@@ -538,6 +894,30 @@ public readonly actionGetIndex: string;
 - *Type:* string
 
 [Read] aoss:GetIndex.
+
+---
+
+##### `actionGetIngestionJob`<sup>Required</sup> <a name="actionGetIngestionJob" id="@cdk_utils/iam.aoss.AossActions.property.actionGetIngestionJob"></a>
+
+```typescript
+public readonly actionGetIngestionJob: string;
+```
+
+- *Type:* string
+
+[Read] aoss:GetIngestionJob.
+
+---
+
+##### `actionGetIngestionStream`<sup>Required</sup> <a name="actionGetIngestionStream" id="@cdk_utils/iam.aoss.AossActions.property.actionGetIngestionStream"></a>
+
+```typescript
+public readonly actionGetIngestionStream: string;
+```
+
+- *Type:* string
+
+[Read] aoss:GetIngestionStream.
 
 ---
 
@@ -721,6 +1101,18 @@ public readonly BatchGetVpcEndpoint: string;
 
 ---
 
+##### `CancelIngestionJob`<sup>Required</sup> <a name="CancelIngestionJob" id="@cdk_utils/iam.aoss.AossActions.property.CancelIngestionJob"></a>
+
+```typescript
+public readonly CancelIngestionJob: string;
+```
+
+- *Type:* string
+
+[Write] aoss:CancelIngestionJob.
+
+---
+
 ##### `CreateAccessPolicy`<sup>Required</sup> <a name="CreateAccessPolicy" id="@cdk_utils/iam.aoss.AossActions.property.CreateAccessPolicy"></a>
 
 ```typescript
@@ -766,6 +1158,30 @@ public readonly CreateIndex: string;
 - *Type:* string
 
 [Write] aoss:CreateIndex.
+
+---
+
+##### `CreateIngestionJob`<sup>Required</sup> <a name="CreateIngestionJob" id="@cdk_utils/iam.aoss.AossActions.property.CreateIngestionJob"></a>
+
+```typescript
+public readonly CreateIngestionJob: string;
+```
+
+- *Type:* string
+
+[Write] aoss:CreateIngestionJob.
+
+---
+
+##### `CreateIngestionStream`<sup>Required</sup> <a name="CreateIngestionStream" id="@cdk_utils/iam.aoss.AossActions.property.CreateIngestionStream"></a>
+
+```typescript
+public readonly CreateIngestionStream: string;
+```
+
+- *Type:* string
+
+[Write] aoss:CreateIngestionStream.
 
 ---
 
@@ -877,6 +1293,18 @@ public readonly DeleteIndex: string;
 
 ---
 
+##### `DeleteIngestionStream`<sup>Required</sup> <a name="DeleteIngestionStream" id="@cdk_utils/iam.aoss.AossActions.property.DeleteIngestionStream"></a>
+
+```typescript
+public readonly DeleteIngestionStream: string;
+```
+
+- *Type:* string
+
+[Write] aoss:DeleteIngestionStream.
+
+---
+
 ##### `DeleteLifecyclePolicy`<sup>Required</sup> <a name="DeleteLifecyclePolicy" id="@cdk_utils/iam.aoss.AossActions.property.DeleteLifecyclePolicy"></a>
 
 ```typescript
@@ -961,6 +1389,30 @@ public readonly ListCollections: string;
 
 ---
 
+##### `ListIngestionJobs`<sup>Required</sup> <a name="ListIngestionJobs" id="@cdk_utils/iam.aoss.AossActions.property.ListIngestionJobs"></a>
+
+```typescript
+public readonly ListIngestionJobs: string;
+```
+
+- *Type:* string
+
+[List] aoss:ListIngestionJobs.
+
+---
+
+##### `ListIngestionStreams`<sup>Required</sup> <a name="ListIngestionStreams" id="@cdk_utils/iam.aoss.AossActions.property.ListIngestionStreams"></a>
+
+```typescript
+public readonly ListIngestionStreams: string;
+```
+
+- *Type:* string
+
+[List] aoss:ListIngestionStreams.
+
+---
+
 ##### `ListLifecyclePolicies`<sup>Required</sup> <a name="ListLifecyclePolicies" id="@cdk_utils/iam.aoss.AossActions.property.ListLifecyclePolicies"></a>
 
 ```typescript
@@ -1041,7 +1493,7 @@ public readonly TagResource: string;
 
 - *Type:* string
 
-[Write] aoss:TagResource.
+[Tagging] aoss:TagResource.
 
 ---
 
@@ -1053,7 +1505,7 @@ public readonly UntagResource: string;
 
 - *Type:* string
 
-[Write] aoss:UntagResource.
+[Tagging] aoss:UntagResource.
 
 ---
 
@@ -1190,6 +1642,7 @@ new aoss.AossConditions()
 | <code><a href="#@cdk_utils/iam.aoss.AossConditions.collection">collection</a></code> | Generates a condition block for `aoss:collection`. |
 | <code><a href="#@cdk_utils/iam.aoss.AossConditions.collectionGroup">collectionGroup</a></code> | Generates a condition block for `aoss:collection-group`. |
 | <code><a href="#@cdk_utils/iam.aoss.AossConditions.collectionId">collectionId</a></code> | Generates a condition block for `aoss:CollectionId`. |
+| <code><a href="#@cdk_utils/iam.aoss.AossConditions.deletionProtection">deletionProtection</a></code> | Generates a condition block for `aoss:DeletionProtection`. |
 | <code><a href="#@cdk_utils/iam.aoss.AossConditions.index">index</a></code> | Generates a condition block for `aoss:index`. |
 | <code><a href="#@cdk_utils/iam.aoss.AossConditions.requestTag">requestTag</a></code> | Generates a condition block for `aws:RequestTag/${TagKey}`. |
 | <code><a href="#@cdk_utils/iam.aoss.AossConditions.resourceTag">resourceTag</a></code> | Generates a condition block for `aws:ResourceTag/${TagKey}`. |
@@ -1240,6 +1693,22 @@ aoss.AossConditions.collectionId(value: string)
 Generates a condition block for `aoss:CollectionId`.
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.aoss.AossConditions.collectionId.parameter.value"></a>
+
+- *Type:* string
+
+---
+
+##### `deletionProtection` <a name="deletionProtection" id="@cdk_utils/iam.aoss.AossConditions.deletionProtection"></a>
+
+```typescript
+import { aoss } from '@cdk_utils/iam'
+
+aoss.AossConditions.deletionProtection(value: string)
+```
+
+Generates a condition block for `aoss:DeletionProtection`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.aoss.AossConditions.deletionProtection.parameter.value"></a>
 
 - *Type:* string
 
@@ -1329,16 +1798,20 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.aoss.AossConditions.property.CreateAccessPolicyConditionKeys">CreateAccessPolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateAccessPolicy action. |
 | <code><a href="#@cdk_utils/iam.aoss.AossConditions.property.CreateCollectionConditionKeys">CreateCollectionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateCollection action. |
 | <code><a href="#@cdk_utils/iam.aoss.AossConditions.property.CreateCollectionGroupConditionKeys">CreateCollectionGroupConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateCollectionGroup action. |
+| <code><a href="#@cdk_utils/iam.aoss.AossConditions.property.CreateIngestionJobConditionKeys">CreateIngestionJobConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateIngestionJob action. |
+| <code><a href="#@cdk_utils/iam.aoss.AossConditions.property.CreateIngestionStreamConditionKeys">CreateIngestionStreamConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateIngestionStream action. |
 | <code><a href="#@cdk_utils/iam.aoss.AossConditions.property.CreateLifecyclePolicyConditionKeys">CreateLifecyclePolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateLifecyclePolicy action. |
 | <code><a href="#@cdk_utils/iam.aoss.AossConditions.property.CreateSecurityPolicyConditionKeys">CreateSecurityPolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateSecurityPolicy action. |
 | <code><a href="#@cdk_utils/iam.aoss.AossConditions.property.DashboardsAccessAllConditionKeys">DashboardsAccessAllConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DashboardsAccessAll action. |
 | <code><a href="#@cdk_utils/iam.aoss.AossConditions.property.DeleteAccessPolicyConditionKeys">DeleteAccessPolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteAccessPolicy action. |
 | <code><a href="#@cdk_utils/iam.aoss.AossConditions.property.DeleteLifecyclePolicyConditionKeys">DeleteLifecyclePolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteLifecyclePolicy action. |
 | <code><a href="#@cdk_utils/iam.aoss.AossConditions.property.DeleteSecurityPolicyConditionKeys">DeleteSecurityPolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteSecurityPolicy action. |
+| <code><a href="#@cdk_utils/iam.aoss.AossConditions.property.DELETION_PROTECTION">DELETION_PROTECTION</a></code> | <code>string</code> | Condition key: aoss:DeletionProtection (String). |
 | <code><a href="#@cdk_utils/iam.aoss.AossConditions.property.INDEX">INDEX</a></code> | <code>string</code> | Condition key: aoss:index (String). |
 | <code><a href="#@cdk_utils/iam.aoss.AossConditions.property.TagResourceConditionKeys">TagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TagResource action. |
 | <code><a href="#@cdk_utils/iam.aoss.AossConditions.property.UntagResourceConditionKeys">UntagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UntagResource action. |
 | <code><a href="#@cdk_utils/iam.aoss.AossConditions.property.UpdateAccessPolicyConditionKeys">UpdateAccessPolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateAccessPolicy action. |
+| <code><a href="#@cdk_utils/iam.aoss.AossConditions.property.UpdateCollectionConditionKeys">UpdateCollectionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateCollection action. |
 | <code><a href="#@cdk_utils/iam.aoss.AossConditions.property.UpdateLifecyclePolicyConditionKeys">UpdateLifecyclePolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateLifecyclePolicy action. |
 | <code><a href="#@cdk_utils/iam.aoss.AossConditions.property.UpdateSecurityPolicyConditionKeys">UpdateSecurityPolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateSecurityPolicy action. |
 
@@ -1524,6 +1997,30 @@ Condition keys applicable to the CreateCollectionGroup action.
 
 ---
 
+##### `CreateIngestionJobConditionKeys`<sup>Required</sup> <a name="CreateIngestionJobConditionKeys" id="@cdk_utils/iam.aoss.AossConditions.property.CreateIngestionJobConditionKeys"></a>
+
+```typescript
+public readonly CreateIngestionJobConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateIngestionJob action.
+
+---
+
+##### `CreateIngestionStreamConditionKeys`<sup>Required</sup> <a name="CreateIngestionStreamConditionKeys" id="@cdk_utils/iam.aoss.AossConditions.property.CreateIngestionStreamConditionKeys"></a>
+
+```typescript
+public readonly CreateIngestionStreamConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateIngestionStream action.
+
+---
+
 ##### `CreateLifecyclePolicyConditionKeys`<sup>Required</sup> <a name="CreateLifecyclePolicyConditionKeys" id="@cdk_utils/iam.aoss.AossConditions.property.CreateLifecyclePolicyConditionKeys"></a>
 
 ```typescript
@@ -1596,6 +2093,18 @@ Condition keys applicable to the DeleteSecurityPolicy action.
 
 ---
 
+##### `DELETION_PROTECTION`<sup>Required</sup> <a name="DELETION_PROTECTION" id="@cdk_utils/iam.aoss.AossConditions.property.DELETION_PROTECTION"></a>
+
+```typescript
+public readonly DELETION_PROTECTION: string;
+```
+
+- *Type:* string
+
+Condition key: aoss:DeletionProtection (String).
+
+---
+
 ##### `INDEX`<sup>Required</sup> <a name="INDEX" id="@cdk_utils/iam.aoss.AossConditions.property.INDEX"></a>
 
 ```typescript
@@ -1641,6 +2150,18 @@ public readonly UpdateAccessPolicyConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the UpdateAccessPolicy action.
+
+---
+
+##### `UpdateCollectionConditionKeys`<sup>Required</sup> <a name="UpdateCollectionConditionKeys" id="@cdk_utils/iam.aoss.AossConditions.property.UpdateCollectionConditionKeys"></a>
+
+```typescript
+public readonly UpdateCollectionConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UpdateCollection action.
 
 ---
 
@@ -2422,12 +2943,18 @@ new aoss.AossResources()
 | <code><a href="#@cdk_utils/iam.aoss.AossResources.collection">collection</a></code> | Builds an ARN for the Collection resource. |
 | <code><a href="#@cdk_utils/iam.aoss.AossResources.collectionGroup">collectionGroup</a></code> | Builds an ARN for the CollectionGroup resource. |
 | <code><a href="#@cdk_utils/iam.aoss.AossResources.dashboards">dashboards</a></code> | Builds an ARN for the Dashboards resource. |
+| <code><a href="#@cdk_utils/iam.aoss.AossResources.ingestionJob">ingestionJob</a></code> | Builds an ARN for the IngestionJob resource. |
+| <code><a href="#@cdk_utils/iam.aoss.AossResources.ingestionStream">ingestionStream</a></code> | Builds an ARN for the IngestionStream resource. |
 | <code><a href="#@cdk_utils/iam.aoss.AossResources.isValidCollectionArn">isValidCollectionArn</a></code> | Validates whether a string is a valid ARN for the Collection resource. |
 | <code><a href="#@cdk_utils/iam.aoss.AossResources.isValidCollectionGroupArn">isValidCollectionGroupArn</a></code> | Validates whether a string is a valid ARN for the CollectionGroup resource. |
 | <code><a href="#@cdk_utils/iam.aoss.AossResources.isValidDashboardsArn">isValidDashboardsArn</a></code> | Validates whether a string is a valid ARN for the Dashboards resource. |
+| <code><a href="#@cdk_utils/iam.aoss.AossResources.isValidIngestionJobArn">isValidIngestionJobArn</a></code> | Validates whether a string is a valid ARN for the IngestionJob resource. |
+| <code><a href="#@cdk_utils/iam.aoss.AossResources.isValidIngestionStreamArn">isValidIngestionStreamArn</a></code> | Validates whether a string is a valid ARN for the IngestionStream resource. |
 | <code><a href="#@cdk_utils/iam.aoss.AossResources.parseCollectionArn">parseCollectionArn</a></code> | Parses a Collection ARN into its components. |
 | <code><a href="#@cdk_utils/iam.aoss.AossResources.parseCollectionGroupArn">parseCollectionGroupArn</a></code> | Parses a CollectionGroup ARN into its components. |
 | <code><a href="#@cdk_utils/iam.aoss.AossResources.parseDashboardsArn">parseDashboardsArn</a></code> | Parses a Dashboards ARN into its components. |
+| <code><a href="#@cdk_utils/iam.aoss.AossResources.parseIngestionJobArn">parseIngestionJobArn</a></code> | Parses a IngestionJob ARN into its components. |
+| <code><a href="#@cdk_utils/iam.aoss.AossResources.parseIngestionStreamArn">parseIngestionStreamArn</a></code> | Parses a IngestionStream ARN into its components. |
 
 ---
 
@@ -2479,6 +3006,38 @@ Builds an ARN for the Dashboards resource.
 
 ---
 
+##### `ingestionJob` <a name="ingestionJob" id="@cdk_utils/iam.aoss.AossResources.ingestionJob"></a>
+
+```typescript
+import { aoss } from '@cdk_utils/iam'
+
+aoss.AossResources.ingestionJob(props: AossIngestionJobArnProps)
+```
+
+Builds an ARN for the IngestionJob resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.aoss.AossResources.ingestionJob.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.aoss.AossIngestionJobArnProps">AossIngestionJobArnProps</a>
+
+---
+
+##### `ingestionStream` <a name="ingestionStream" id="@cdk_utils/iam.aoss.AossResources.ingestionStream"></a>
+
+```typescript
+import { aoss } from '@cdk_utils/iam'
+
+aoss.AossResources.ingestionStream(props: AossIngestionStreamArnProps)
+```
+
+Builds an ARN for the IngestionStream resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.aoss.AossResources.ingestionStream.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.aoss.AossIngestionStreamArnProps">AossIngestionStreamArnProps</a>
+
+---
+
 ##### `isValidCollectionArn` <a name="isValidCollectionArn" id="@cdk_utils/iam.aoss.AossResources.isValidCollectionArn"></a>
 
 ```typescript
@@ -2527,6 +3086,38 @@ Validates whether a string is a valid ARN for the Dashboards resource.
 
 ---
 
+##### `isValidIngestionJobArn` <a name="isValidIngestionJobArn" id="@cdk_utils/iam.aoss.AossResources.isValidIngestionJobArn"></a>
+
+```typescript
+import { aoss } from '@cdk_utils/iam'
+
+aoss.AossResources.isValidIngestionJobArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the IngestionJob resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.aoss.AossResources.isValidIngestionJobArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidIngestionStreamArn` <a name="isValidIngestionStreamArn" id="@cdk_utils/iam.aoss.AossResources.isValidIngestionStreamArn"></a>
+
+```typescript
+import { aoss } from '@cdk_utils/iam'
+
+aoss.AossResources.isValidIngestionStreamArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the IngestionStream resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.aoss.AossResources.isValidIngestionStreamArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `parseCollectionArn` <a name="parseCollectionArn" id="@cdk_utils/iam.aoss.AossResources.parseCollectionArn"></a>
 
 ```typescript
@@ -2570,6 +3161,38 @@ aoss.AossResources.parseDashboardsArn(arn: string)
 Parses a Dashboards ARN into its components.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.aoss.AossResources.parseDashboardsArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseIngestionJobArn` <a name="parseIngestionJobArn" id="@cdk_utils/iam.aoss.AossResources.parseIngestionJobArn"></a>
+
+```typescript
+import { aoss } from '@cdk_utils/iam'
+
+aoss.AossResources.parseIngestionJobArn(arn: string)
+```
+
+Parses a IngestionJob ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.aoss.AossResources.parseIngestionJobArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseIngestionStreamArn` <a name="parseIngestionStreamArn" id="@cdk_utils/iam.aoss.AossResources.parseIngestionStreamArn"></a>
+
+```typescript
+import { aoss } from '@cdk_utils/iam'
+
+aoss.AossResources.parseIngestionStreamArn(arn: string)
+```
+
+Parses a IngestionStream ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.aoss.AossResources.parseIngestionStreamArn.parameter.arn"></a>
 
 - *Type:* string
 

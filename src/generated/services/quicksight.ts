@@ -3750,7 +3750,6 @@ export class QuickSightOperations {
 	static readonly CreateThemeAlias: string[] = ["quicksight:CreateThemeAlias"];
 	/** IAM actions required for the CreateTopic API call. */
 	static readonly CreateTopic: string[] = [
-		"quicksight:CreateFolderMembership",
 		"quicksight:CreateTopic",
 		"quicksight:PassDataSet",
 		"quicksight:TagResource",

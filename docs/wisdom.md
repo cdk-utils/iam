@@ -1993,6 +1993,8 @@ new wisdom.WisdomActions()
 | <code><a href="#@cdk_utils/iam.wisdom.WisdomActions.property.NotifyRecommendationsReceived">NotifyRecommendationsReceived</a></code> | <code>string</code> | [Write] wisdom:NotifyRecommendationsReceived. |
 | <code><a href="#@cdk_utils/iam.wisdom.WisdomActions.property.PutFeedback">PutFeedback</a></code> | <code>string</code> | [Write] wisdom:PutFeedback. |
 | <code><a href="#@cdk_utils/iam.wisdom.WisdomActions.property.QueryAssistant">QueryAssistant</a></code> | <code>string</code> | [Read] wisdom:QueryAssistant. |
+| <code><a href="#@cdk_utils/iam.wisdom.WisdomActions.property.RegisterAssistantReplicaKey">RegisterAssistantReplicaKey</a></code> | <code>string</code> | [Write] wisdom:RegisterAssistantReplicaKey. |
+| <code><a href="#@cdk_utils/iam.wisdom.WisdomActions.property.RegisterKnowledgeBaseReplicaKey">RegisterKnowledgeBaseReplicaKey</a></code> | <code>string</code> | [Write] wisdom:RegisterKnowledgeBaseReplicaKey. |
 | <code><a href="#@cdk_utils/iam.wisdom.WisdomActions.property.RemoveAssistantAIAgent">RemoveAssistantAIAgent</a></code> | <code>string</code> | [Write] wisdom:RemoveAssistantAIAgent. |
 | <code><a href="#@cdk_utils/iam.wisdom.WisdomActions.property.RemoveKnowledgeBaseTemplateUri">RemoveKnowledgeBaseTemplateUri</a></code> | <code>string</code> | [Write] wisdom:RemoveKnowledgeBaseTemplateUri. |
 | <code><a href="#@cdk_utils/iam.wisdom.WisdomActions.property.RenderMessageTemplate">RenderMessageTemplate</a></code> | <code>string</code> | [Read] wisdom:RenderMessageTemplate. |
@@ -2930,6 +2932,30 @@ public readonly QueryAssistant: string;
 - *Type:* string
 
 [Read] wisdom:QueryAssistant.
+
+---
+
+##### `RegisterAssistantReplicaKey`<sup>Required</sup> <a name="RegisterAssistantReplicaKey" id="@cdk_utils/iam.wisdom.WisdomActions.property.RegisterAssistantReplicaKey"></a>
+
+```typescript
+public readonly RegisterAssistantReplicaKey: string;
+```
+
+- *Type:* string
+
+[Write] wisdom:RegisterAssistantReplicaKey.
+
+---
+
+##### `RegisterKnowledgeBaseReplicaKey`<sup>Required</sup> <a name="RegisterKnowledgeBaseReplicaKey" id="@cdk_utils/iam.wisdom.WisdomActions.property.RegisterKnowledgeBaseReplicaKey"></a>
+
+```typescript
+public readonly RegisterKnowledgeBaseReplicaKey: string;
+```
+
+- *Type:* string
+
+[Write] wisdom:RegisterKnowledgeBaseReplicaKey.
 
 ---
 

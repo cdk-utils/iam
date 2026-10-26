@@ -853,15 +853,6 @@
       "Name": "ValidatePipeline",
       "AuthorizedActions": [
         {
-          "Name": "PassRole",
-          "Context": {
-            "iam:PassedToService": [
-              "osis-pipelines.amazonaws.com"
-            ]
-          },
-          "Service": "iam"
-        },
-        {
           "Name": "ValidatePipeline",
           "Service": "osis"
         }
