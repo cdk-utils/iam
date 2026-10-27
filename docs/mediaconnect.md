@@ -3856,9 +3856,12 @@ new mediaconnect.MediaConnectOperations()
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.AddFlowOutputs">AddFlowOutputs</a></code> | <code>string[]</code> | IAM actions required for the AddFlowOutputs API call. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.AddFlowSources">AddFlowSources</a></code> | <code>string[]</code> | IAM actions required for the AddFlowSources API call. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.AddFlowVpcInterfaces">AddFlowVpcInterfaces</a></code> | <code>string[]</code> | IAM actions required for the AddFlowVpcInterfaces API call. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.BatchGetDestinationEndpoint">BatchGetDestinationEndpoint</a></code> | <code>string[]</code> | IAM actions required for the BatchGetDestinationEndpoint API call. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.BatchGetRouterInput">BatchGetRouterInput</a></code> | <code>string[]</code> | IAM actions required for the BatchGetRouterInput API call. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.BatchGetRouterNetworkInterface">BatchGetRouterNetworkInterface</a></code> | <code>string[]</code> | IAM actions required for the BatchGetRouterNetworkInterface API call. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.BatchGetRouterOutput">BatchGetRouterOutput</a></code> | <code>string[]</code> | IAM actions required for the BatchGetRouterOutput API call. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.BatchGetSourceEndpoint">BatchGetSourceEndpoint</a></code> | <code>string[]</code> | IAM actions required for the BatchGetSourceEndpoint API call. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.ConnectEndpoints">ConnectEndpoints</a></code> | <code>string[]</code> | IAM actions required for the ConnectEndpoints API call. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.CreateBridge">CreateBridge</a></code> | <code>string[]</code> | IAM actions required for the CreateBridge API call. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.CreateFlow">CreateFlow</a></code> | <code>string[]</code> | IAM actions required for the CreateFlow API call. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.CreateGateway">CreateGateway</a></code> | <code>string[]</code> | IAM actions required for the CreateGateway API call. |
@@ -3871,7 +3874,9 @@ new mediaconnect.MediaConnectOperations()
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.DeleteRouterInput">DeleteRouterInput</a></code> | <code>string[]</code> | IAM actions required for the DeleteRouterInput API call. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.DeleteRouterNetworkInterface">DeleteRouterNetworkInterface</a></code> | <code>string[]</code> | IAM actions required for the DeleteRouterNetworkInterface API call. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.DeleteRouterOutput">DeleteRouterOutput</a></code> | <code>string[]</code> | IAM actions required for the DeleteRouterOutput API call. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.DeregisterDestinationEndpoint">DeregisterDestinationEndpoint</a></code> | <code>string[]</code> | IAM actions required for the DeregisterDestinationEndpoint API call. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.DeregisterGatewayInstance">DeregisterGatewayInstance</a></code> | <code>string[]</code> | IAM actions required for the DeregisterGatewayInstance API call. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.DeregisterSourceEndpoint">DeregisterSourceEndpoint</a></code> | <code>string[]</code> | IAM actions required for the DeregisterSourceEndpoint API call. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.DescribeBridge">DescribeBridge</a></code> | <code>string[]</code> | IAM actions required for the DescribeBridge API call. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.DescribeFlow">DescribeFlow</a></code> | <code>string[]</code> | IAM actions required for the DescribeFlow API call. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.DescribeFlowSourceMetadata">DescribeFlowSourceMetadata</a></code> | <code>string[]</code> | IAM actions required for the DescribeFlowSourceMetadata API call. |
@@ -3880,8 +3885,10 @@ new mediaconnect.MediaConnectOperations()
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.DescribeGatewayInstance">DescribeGatewayInstance</a></code> | <code>string[]</code> | IAM actions required for the DescribeGatewayInstance API call. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.DescribeOffering">DescribeOffering</a></code> | <code>string[]</code> | IAM actions required for the DescribeOffering API call. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.DescribeReservation">DescribeReservation</a></code> | <code>string[]</code> | IAM actions required for the DescribeReservation API call. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.DisconnectEndpoints">DisconnectEndpoints</a></code> | <code>string[]</code> | IAM actions required for the DisconnectEndpoints API call. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.GrantFlowEntitlements">GrantFlowEntitlements</a></code> | <code>string[]</code> | IAM actions required for the GrantFlowEntitlements API call. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.ListBridges">ListBridges</a></code> | <code>string[]</code> | IAM actions required for the ListBridges API call. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.ListDestinationEndpoints">ListDestinationEndpoints</a></code> | <code>string[]</code> | IAM actions required for the ListDestinationEndpoints API call. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.ListEntitlements">ListEntitlements</a></code> | <code>string[]</code> | IAM actions required for the ListEntitlements API call. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.ListFlows">ListFlows</a></code> | <code>string[]</code> | IAM actions required for the ListFlows API call. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.ListGatewayInstances">ListGatewayInstances</a></code> | <code>string[]</code> | IAM actions required for the ListGatewayInstances API call. |
@@ -3891,14 +3898,19 @@ new mediaconnect.MediaConnectOperations()
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.ListRouterInputs">ListRouterInputs</a></code> | <code>string[]</code> | IAM actions required for the ListRouterInputs API call. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.ListRouterNetworkInterfaces">ListRouterNetworkInterfaces</a></code> | <code>string[]</code> | IAM actions required for the ListRouterNetworkInterfaces API call. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.ListRouterOutputs">ListRouterOutputs</a></code> | <code>string[]</code> | IAM actions required for the ListRouterOutputs API call. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.ListSourceEndpoints">ListSourceEndpoints</a></code> | <code>string[]</code> | IAM actions required for the ListSourceEndpoints API call. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.ListTagsForGlobalResource">ListTagsForGlobalResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForGlobalResource API call. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.opGetDestinationEndpoint">opGetDestinationEndpoint</a></code> | <code>string[]</code> | IAM actions required for the GetDestinationEndpoint API call. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.opGetRouterInput">opGetRouterInput</a></code> | <code>string[]</code> | IAM actions required for the GetRouterInput API call. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.opGetRouterInputSourceMetadata">opGetRouterInputSourceMetadata</a></code> | <code>string[]</code> | IAM actions required for the GetRouterInputSourceMetadata API call. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.opGetRouterInputThumbnail">opGetRouterInputThumbnail</a></code> | <code>string[]</code> | IAM actions required for the GetRouterInputThumbnail API call. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.opGetRouterNetworkInterface">opGetRouterNetworkInterface</a></code> | <code>string[]</code> | IAM actions required for the GetRouterNetworkInterface API call. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.opGetRouterOutput">opGetRouterOutput</a></code> | <code>string[]</code> | IAM actions required for the GetRouterOutput API call. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.opGetSourceEndpoint">opGetSourceEndpoint</a></code> | <code>string[]</code> | IAM actions required for the GetSourceEndpoint API call. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.PurchaseOffering">PurchaseOffering</a></code> | <code>string[]</code> | IAM actions required for the PurchaseOffering API call. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.RegisterDestinationEndpoint">RegisterDestinationEndpoint</a></code> | <code>string[]</code> | IAM actions required for the RegisterDestinationEndpoint API call. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.RegisterSourceEndpoint">RegisterSourceEndpoint</a></code> | <code>string[]</code> | IAM actions required for the RegisterSourceEndpoint API call. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.RemoveBridgeOutput">RemoveBridgeOutput</a></code> | <code>string[]</code> | IAM actions required for the RemoveBridgeOutput API call. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.RemoveBridgeSource">RemoveBridgeSource</a></code> | <code>string[]</code> | IAM actions required for the RemoveBridgeSource API call. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.RemoveFlowMediaStream">RemoveFlowMediaStream</a></code> | <code>string[]</code> | IAM actions required for the RemoveFlowMediaStream API call. |
@@ -3923,6 +3935,7 @@ new mediaconnect.MediaConnectOperations()
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.UpdateBridgeOutput">UpdateBridgeOutput</a></code> | <code>string[]</code> | IAM actions required for the UpdateBridgeOutput API call. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.UpdateBridgeSource">UpdateBridgeSource</a></code> | <code>string[]</code> | IAM actions required for the UpdateBridgeSource API call. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.UpdateBridgeState">UpdateBridgeState</a></code> | <code>string[]</code> | IAM actions required for the UpdateBridgeState API call. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.UpdateDestinationEndpoint">UpdateDestinationEndpoint</a></code> | <code>string[]</code> | IAM actions required for the UpdateDestinationEndpoint API call. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.UpdateFlow">UpdateFlow</a></code> | <code>string[]</code> | IAM actions required for the UpdateFlow API call. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.UpdateFlowEntitlement">UpdateFlowEntitlement</a></code> | <code>string[]</code> | IAM actions required for the UpdateFlowEntitlement API call. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.UpdateFlowMediaStream">UpdateFlowMediaStream</a></code> | <code>string[]</code> | IAM actions required for the UpdateFlowMediaStream API call. |
@@ -3932,6 +3945,7 @@ new mediaconnect.MediaConnectOperations()
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.UpdateRouterInput">UpdateRouterInput</a></code> | <code>string[]</code> | IAM actions required for the UpdateRouterInput API call. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.UpdateRouterNetworkInterface">UpdateRouterNetworkInterface</a></code> | <code>string[]</code> | IAM actions required for the UpdateRouterNetworkInterface API call. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.UpdateRouterOutput">UpdateRouterOutput</a></code> | <code>string[]</code> | IAM actions required for the UpdateRouterOutput API call. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.UpdateSourceEndpoint">UpdateSourceEndpoint</a></code> | <code>string[]</code> | IAM actions required for the UpdateSourceEndpoint API call. |
 
 ---
 
@@ -4007,6 +4021,18 @@ IAM actions required for the AddFlowVpcInterfaces API call.
 
 ---
 
+##### `BatchGetDestinationEndpoint`<sup>Required</sup> <a name="BatchGetDestinationEndpoint" id="@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.BatchGetDestinationEndpoint"></a>
+
+```typescript
+public readonly BatchGetDestinationEndpoint: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the BatchGetDestinationEndpoint API call.
+
+---
+
 ##### `BatchGetRouterInput`<sup>Required</sup> <a name="BatchGetRouterInput" id="@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.BatchGetRouterInput"></a>
 
 ```typescript
@@ -4040,6 +4066,30 @@ public readonly BatchGetRouterOutput: string[];
 - *Type:* string[]
 
 IAM actions required for the BatchGetRouterOutput API call.
+
+---
+
+##### `BatchGetSourceEndpoint`<sup>Required</sup> <a name="BatchGetSourceEndpoint" id="@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.BatchGetSourceEndpoint"></a>
+
+```typescript
+public readonly BatchGetSourceEndpoint: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the BatchGetSourceEndpoint API call.
+
+---
+
+##### `ConnectEndpoints`<sup>Required</sup> <a name="ConnectEndpoints" id="@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.ConnectEndpoints"></a>
+
+```typescript
+public readonly ConnectEndpoints: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ConnectEndpoints API call.
 
 ---
 
@@ -4187,6 +4237,18 @@ IAM actions required for the DeleteRouterOutput API call.
 
 ---
 
+##### `DeregisterDestinationEndpoint`<sup>Required</sup> <a name="DeregisterDestinationEndpoint" id="@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.DeregisterDestinationEndpoint"></a>
+
+```typescript
+public readonly DeregisterDestinationEndpoint: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeregisterDestinationEndpoint API call.
+
+---
+
 ##### `DeregisterGatewayInstance`<sup>Required</sup> <a name="DeregisterGatewayInstance" id="@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.DeregisterGatewayInstance"></a>
 
 ```typescript
@@ -4196,6 +4258,18 @@ public readonly DeregisterGatewayInstance: string[];
 - *Type:* string[]
 
 IAM actions required for the DeregisterGatewayInstance API call.
+
+---
+
+##### `DeregisterSourceEndpoint`<sup>Required</sup> <a name="DeregisterSourceEndpoint" id="@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.DeregisterSourceEndpoint"></a>
+
+```typescript
+public readonly DeregisterSourceEndpoint: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeregisterSourceEndpoint API call.
 
 ---
 
@@ -4295,6 +4369,18 @@ IAM actions required for the DescribeReservation API call.
 
 ---
 
+##### `DisconnectEndpoints`<sup>Required</sup> <a name="DisconnectEndpoints" id="@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.DisconnectEndpoints"></a>
+
+```typescript
+public readonly DisconnectEndpoints: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DisconnectEndpoints API call.
+
+---
+
 ##### `GrantFlowEntitlements`<sup>Required</sup> <a name="GrantFlowEntitlements" id="@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.GrantFlowEntitlements"></a>
 
 ```typescript
@@ -4316,6 +4402,18 @@ public readonly ListBridges: string[];
 - *Type:* string[]
 
 IAM actions required for the ListBridges API call.
+
+---
+
+##### `ListDestinationEndpoints`<sup>Required</sup> <a name="ListDestinationEndpoints" id="@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.ListDestinationEndpoints"></a>
+
+```typescript
+public readonly ListDestinationEndpoints: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListDestinationEndpoints API call.
 
 ---
 
@@ -4427,6 +4525,18 @@ IAM actions required for the ListRouterOutputs API call.
 
 ---
 
+##### `ListSourceEndpoints`<sup>Required</sup> <a name="ListSourceEndpoints" id="@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.ListSourceEndpoints"></a>
+
+```typescript
+public readonly ListSourceEndpoints: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListSourceEndpoints API call.
+
+---
+
 ##### `ListTagsForGlobalResource`<sup>Required</sup> <a name="ListTagsForGlobalResource" id="@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.ListTagsForGlobalResource"></a>
 
 ```typescript
@@ -4448,6 +4558,18 @@ public readonly ListTagsForResource: string[];
 - *Type:* string[]
 
 IAM actions required for the ListTagsForResource API call.
+
+---
+
+##### `opGetDestinationEndpoint`<sup>Required</sup> <a name="opGetDestinationEndpoint" id="@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.opGetDestinationEndpoint"></a>
+
+```typescript
+public readonly opGetDestinationEndpoint: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetDestinationEndpoint API call.
 
 ---
 
@@ -4511,6 +4633,18 @@ IAM actions required for the GetRouterOutput API call.
 
 ---
 
+##### `opGetSourceEndpoint`<sup>Required</sup> <a name="opGetSourceEndpoint" id="@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.opGetSourceEndpoint"></a>
+
+```typescript
+public readonly opGetSourceEndpoint: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetSourceEndpoint API call.
+
+---
+
 ##### `PurchaseOffering`<sup>Required</sup> <a name="PurchaseOffering" id="@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.PurchaseOffering"></a>
 
 ```typescript
@@ -4520,6 +4654,30 @@ public readonly PurchaseOffering: string[];
 - *Type:* string[]
 
 IAM actions required for the PurchaseOffering API call.
+
+---
+
+##### `RegisterDestinationEndpoint`<sup>Required</sup> <a name="RegisterDestinationEndpoint" id="@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.RegisterDestinationEndpoint"></a>
+
+```typescript
+public readonly RegisterDestinationEndpoint: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the RegisterDestinationEndpoint API call.
+
+---
+
+##### `RegisterSourceEndpoint`<sup>Required</sup> <a name="RegisterSourceEndpoint" id="@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.RegisterSourceEndpoint"></a>
+
+```typescript
+public readonly RegisterSourceEndpoint: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the RegisterSourceEndpoint API call.
 
 ---
 
@@ -4811,6 +4969,18 @@ IAM actions required for the UpdateBridgeState API call.
 
 ---
 
+##### `UpdateDestinationEndpoint`<sup>Required</sup> <a name="UpdateDestinationEndpoint" id="@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.UpdateDestinationEndpoint"></a>
+
+```typescript
+public readonly UpdateDestinationEndpoint: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateDestinationEndpoint API call.
+
+---
+
 ##### `UpdateFlow`<sup>Required</sup> <a name="UpdateFlow" id="@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.UpdateFlow"></a>
 
 ```typescript
@@ -4916,6 +5086,18 @@ public readonly UpdateRouterOutput: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateRouterOutput API call.
+
+---
+
+##### `UpdateSourceEndpoint`<sup>Required</sup> <a name="UpdateSourceEndpoint" id="@cdk_utils/iam.mediaconnect.MediaConnectOperations.property.UpdateSourceEndpoint"></a>
+
+```typescript
+public readonly UpdateSourceEndpoint: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateSourceEndpoint API call.
 
 ---
 

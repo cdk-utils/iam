@@ -678,6 +678,7 @@ new es.EsActions()
 | <code><a href="#@cdk_utils/iam.es.EsActions.property.actionGetUpgradeStatus">actionGetUpgradeStatus</a></code> | <code>string</code> | [Read] es:GetUpgradeStatus. |
 | <code><a href="#@cdk_utils/iam.es.EsActions.property.AddDataSource">AddDataSource</a></code> | <code>string</code> | [Write] es:AddDataSource. |
 | <code><a href="#@cdk_utils/iam.es.EsActions.property.AddDirectQueryDataSource">AddDirectQueryDataSource</a></code> | <code>string</code> | [Write] es:AddDirectQueryDataSource. |
+| <code><a href="#@cdk_utils/iam.es.EsActions.property.AddReplicationPeer">AddReplicationPeer</a></code> | <code>string</code> | [Write] es:AddReplicationPeer. |
 | <code><a href="#@cdk_utils/iam.es.EsActions.property.AddTags">AddTags</a></code> | <code>string</code> | [Tagging] es:AddTags. |
 | <code><a href="#@cdk_utils/iam.es.EsActions.property.AllListActions">AllListActions</a></code> | <code>string[]</code> | All list-level actions. |
 | <code><a href="#@cdk_utils/iam.es.EsActions.property.AllPermissionManagementActions">AllPermissionManagementActions</a></code> | <code>string[]</code> | All permission-management-level actions. |
@@ -691,6 +692,7 @@ new es.EsActions()
 | <code><a href="#@cdk_utils/iam.es.EsActions.property.CancelDomainConfigChange">CancelDomainConfigChange</a></code> | <code>string</code> | [Write] es:CancelDomainConfigChange. |
 | <code><a href="#@cdk_utils/iam.es.EsActions.property.CancelElasticsearchServiceSoftwareUpdate">CancelElasticsearchServiceSoftwareUpdate</a></code> | <code>string</code> | [Write] es:CancelElasticsearchServiceSoftwareUpdate. |
 | <code><a href="#@cdk_utils/iam.es.EsActions.property.CancelServiceSoftwareUpdate">CancelServiceSoftwareUpdate</a></code> | <code>string</code> | [Write] es:CancelServiceSoftwareUpdate. |
+| <code><a href="#@cdk_utils/iam.es.EsActions.property.CompareDomainConfiguration">CompareDomainConfiguration</a></code> | <code>string</code> | [Read] es:CompareDomainConfiguration. |
 | <code><a href="#@cdk_utils/iam.es.EsActions.property.CreateApplication">CreateApplication</a></code> | <code>string</code> | [Write] es:CreateApplication. |
 | <code><a href="#@cdk_utils/iam.es.EsActions.property.CreateDomain">CreateDomain</a></code> | <code>string</code> | [Write] es:CreateDomain. |
 | <code><a href="#@cdk_utils/iam.es.EsActions.property.CreateElasticsearchDomain">CreateElasticsearchDomain</a></code> | <code>string</code> | [Write] es:CreateElasticsearchDomain. |
@@ -722,6 +724,7 @@ new es.EsActions()
 | <code><a href="#@cdk_utils/iam.es.EsActions.property.DescribeDomainConfig">DescribeDomainConfig</a></code> | <code>string</code> | [Read] es:DescribeDomainConfig. |
 | <code><a href="#@cdk_utils/iam.es.EsActions.property.DescribeDomainHealth">DescribeDomainHealth</a></code> | <code>string</code> | [Read] es:DescribeDomainHealth. |
 | <code><a href="#@cdk_utils/iam.es.EsActions.property.DescribeDomainNodes">DescribeDomainNodes</a></code> | <code>string</code> | [Read] es:DescribeDomainNodes. |
+| <code><a href="#@cdk_utils/iam.es.EsActions.property.DescribeDomainReplication">DescribeDomainReplication</a></code> | <code>string</code> | [Read] es:DescribeDomainReplication. |
 | <code><a href="#@cdk_utils/iam.es.EsActions.property.DescribeDomains">DescribeDomains</a></code> | <code>string</code> | [List] es:DescribeDomains. |
 | <code><a href="#@cdk_utils/iam.es.EsActions.property.DescribeDryRunProgress">DescribeDryRunProgress</a></code> | <code>string</code> | [Read] es:DescribeDryRunProgress. |
 | <code><a href="#@cdk_utils/iam.es.EsActions.property.DescribeElasticsearchDomain">DescribeElasticsearchDomain</a></code> | <code>string</code> | [Read] es:DescribeElasticsearchDomain. |
@@ -750,6 +753,7 @@ new es.EsActions()
 | <code><a href="#@cdk_utils/iam.es.EsActions.property.ESHttpPatch">ESHttpPatch</a></code> | <code>string</code> | [Write] es:ESHttpPatch. |
 | <code><a href="#@cdk_utils/iam.es.EsActions.property.ESHttpPost">ESHttpPost</a></code> | <code>string</code> | [Write] es:ESHttpPost. |
 | <code><a href="#@cdk_utils/iam.es.EsActions.property.ESHttpPut">ESHttpPut</a></code> | <code>string</code> | [Write] es:ESHttpPut. |
+| <code><a href="#@cdk_utils/iam.es.EsActions.property.FailoverReplication">FailoverReplication</a></code> | <code>string</code> | [Write] es:FailoverReplication. |
 | <code><a href="#@cdk_utils/iam.es.EsActions.property.InsightFeedback">InsightFeedback</a></code> | <code>string</code> | [Write] es:InsightFeedback. |
 | <code><a href="#@cdk_utils/iam.es.EsActions.property.ListApplications">ListApplications</a></code> | <code>string</code> | [List] es:ListApplications. |
 | <code><a href="#@cdk_utils/iam.es.EsActions.property.ListDataSourceAttachments">ListDataSourceAttachments</a></code> | <code>string</code> | [List] es:ListDataSourceAttachments. |
@@ -777,6 +781,7 @@ new es.EsActions()
 | <code><a href="#@cdk_utils/iam.es.EsActions.property.RegisterCapability">RegisterCapability</a></code> | <code>string</code> | [Write] es:RegisterCapability. |
 | <code><a href="#@cdk_utils/iam.es.EsActions.property.RejectInboundConnection">RejectInboundConnection</a></code> | <code>string</code> | [Write] es:RejectInboundConnection. |
 | <code><a href="#@cdk_utils/iam.es.EsActions.property.RejectInboundCrossClusterSearchConnection">RejectInboundCrossClusterSearchConnection</a></code> | <code>string</code> | [Write] es:RejectInboundCrossClusterSearchConnection. |
+| <code><a href="#@cdk_utils/iam.es.EsActions.property.RemoveReplicationPeer">RemoveReplicationPeer</a></code> | <code>string</code> | [Write] es:RemoveReplicationPeer. |
 | <code><a href="#@cdk_utils/iam.es.EsActions.property.RemoveTags">RemoveTags</a></code> | <code>string</code> | [Tagging] es:RemoveTags. |
 | <code><a href="#@cdk_utils/iam.es.EsActions.property.RevokeVpcEndpointAccess">RevokeVpcEndpointAccess</a></code> | <code>string</code> | [Write] es:RevokeVpcEndpointAccess. |
 | <code><a href="#@cdk_utils/iam.es.EsActions.property.RollbackElasticsearchServiceSoftwareUpdate">RollbackElasticsearchServiceSoftwareUpdate</a></code> | <code>string</code> | [Write] es:RollbackElasticsearchServiceSoftwareUpdate. |
@@ -786,6 +791,7 @@ new es.EsActions()
 | <code><a href="#@cdk_utils/iam.es.EsActions.property.StartElasticsearchServiceSoftwareUpdate">StartElasticsearchServiceSoftwareUpdate</a></code> | <code>string</code> | [Write] es:StartElasticsearchServiceSoftwareUpdate. |
 | <code><a href="#@cdk_utils/iam.es.EsActions.property.StartMigration">StartMigration</a></code> | <code>string</code> | [Write] es:StartMigration. |
 | <code><a href="#@cdk_utils/iam.es.EsActions.property.StartServiceSoftwareUpdate">StartServiceSoftwareUpdate</a></code> | <code>string</code> | [Write] es:StartServiceSoftwareUpdate. |
+| <code><a href="#@cdk_utils/iam.es.EsActions.property.SwitchoverReplication">SwitchoverReplication</a></code> | <code>string</code> | [Write] es:SwitchoverReplication. |
 | <code><a href="#@cdk_utils/iam.es.EsActions.property.UpdateApplication">UpdateApplication</a></code> | <code>string</code> | [Write] es:UpdateApplication. |
 | <code><a href="#@cdk_utils/iam.es.EsActions.property.UpdateDataSource">UpdateDataSource</a></code> | <code>string</code> | [Write] es:UpdateDataSource. |
 | <code><a href="#@cdk_utils/iam.es.EsActions.property.UpdateDirectQueryDataSource">UpdateDirectQueryDataSource</a></code> | <code>string</code> | [Write] es:UpdateDirectQueryDataSource. |
@@ -1005,6 +1011,18 @@ public readonly AddDirectQueryDataSource: string;
 
 ---
 
+##### `AddReplicationPeer`<sup>Required</sup> <a name="AddReplicationPeer" id="@cdk_utils/iam.es.EsActions.property.AddReplicationPeer"></a>
+
+```typescript
+public readonly AddReplicationPeer: string;
+```
+
+- *Type:* string
+
+[Write] es:AddReplicationPeer.
+
+---
+
 ##### `AddTags`<sup>Required</sup> <a name="AddTags" id="@cdk_utils/iam.es.EsActions.property.AddTags"></a>
 
 ```typescript
@@ -1158,6 +1176,18 @@ public readonly CancelServiceSoftwareUpdate: string;
 - *Type:* string
 
 [Write] es:CancelServiceSoftwareUpdate.
+
+---
+
+##### `CompareDomainConfiguration`<sup>Required</sup> <a name="CompareDomainConfiguration" id="@cdk_utils/iam.es.EsActions.property.CompareDomainConfiguration"></a>
+
+```typescript
+public readonly CompareDomainConfiguration: string;
+```
+
+- *Type:* string
+
+[Read] es:CompareDomainConfiguration.
 
 ---
 
@@ -1533,6 +1563,18 @@ public readonly DescribeDomainNodes: string;
 
 ---
 
+##### `DescribeDomainReplication`<sup>Required</sup> <a name="DescribeDomainReplication" id="@cdk_utils/iam.es.EsActions.property.DescribeDomainReplication"></a>
+
+```typescript
+public readonly DescribeDomainReplication: string;
+```
+
+- *Type:* string
+
+[Read] es:DescribeDomainReplication.
+
+---
+
 ##### `DescribeDomains`<sup>Required</sup> <a name="DescribeDomains" id="@cdk_utils/iam.es.EsActions.property.DescribeDomains"></a>
 
 ```typescript
@@ -1869,6 +1911,18 @@ public readonly ESHttpPut: string;
 
 ---
 
+##### `FailoverReplication`<sup>Required</sup> <a name="FailoverReplication" id="@cdk_utils/iam.es.EsActions.property.FailoverReplication"></a>
+
+```typescript
+public readonly FailoverReplication: string;
+```
+
+- *Type:* string
+
+[Write] es:FailoverReplication.
+
+---
+
 ##### `InsightFeedback`<sup>Required</sup> <a name="InsightFeedback" id="@cdk_utils/iam.es.EsActions.property.InsightFeedback"></a>
 
 ```typescript
@@ -2193,6 +2247,18 @@ public readonly RejectInboundCrossClusterSearchConnection: string;
 
 ---
 
+##### `RemoveReplicationPeer`<sup>Required</sup> <a name="RemoveReplicationPeer" id="@cdk_utils/iam.es.EsActions.property.RemoveReplicationPeer"></a>
+
+```typescript
+public readonly RemoveReplicationPeer: string;
+```
+
+- *Type:* string
+
+[Write] es:RemoveReplicationPeer.
+
+---
+
 ##### `RemoveTags`<sup>Required</sup> <a name="RemoveTags" id="@cdk_utils/iam.es.EsActions.property.RemoveTags"></a>
 
 ```typescript
@@ -2298,6 +2364,18 @@ public readonly StartServiceSoftwareUpdate: string;
 - *Type:* string
 
 [Write] es:StartServiceSoftwareUpdate.
+
+---
+
+##### `SwitchoverReplication`<sup>Required</sup> <a name="SwitchoverReplication" id="@cdk_utils/iam.es.EsActions.property.SwitchoverReplication"></a>
+
+```typescript
+public readonly SwitchoverReplication: string;
+```
+
+- *Type:* string
+
+[Write] es:SwitchoverReplication.
 
 ---
 
@@ -2469,6 +2547,8 @@ new es.EsConditions()
 | --- | --- |
 | <code><a href="#@cdk_utils/iam.es.EsConditions.requestTag">requestTag</a></code> | Generates a condition block for `aws:RequestTag/${TagKey}`. |
 | <code><a href="#@cdk_utils/iam.es.EsConditions.resourceTag">resourceTag</a></code> | Generates a condition block for `aws:ResourceTag/${TagKey}`. |
+| <code><a href="#@cdk_utils/iam.es.EsConditions.securityGroupIds">securityGroupIds</a></code> | Generates a condition block for `es:SecurityGroupIds`. |
+| <code><a href="#@cdk_utils/iam.es.EsConditions.subnetIds">subnetIds</a></code> | Generates a condition block for `es:SubnetIds`. |
 | <code><a href="#@cdk_utils/iam.es.EsConditions.tagKeys">tagKeys</a></code> | Generates a condition block for `aws:TagKeys`. |
 
 ---
@@ -2505,6 +2585,38 @@ Generates a condition block for `aws:ResourceTag/${TagKey}`.
 
 ---
 
+##### `securityGroupIds` <a name="securityGroupIds" id="@cdk_utils/iam.es.EsConditions.securityGroupIds"></a>
+
+```typescript
+import { es } from '@cdk_utils/iam'
+
+es.EsConditions.securityGroupIds(values: string[])
+```
+
+Generates a condition block for `es:SecurityGroupIds`.
+
+###### `values`<sup>Required</sup> <a name="values" id="@cdk_utils/iam.es.EsConditions.securityGroupIds.parameter.values"></a>
+
+- *Type:* string[]
+
+---
+
+##### `subnetIds` <a name="subnetIds" id="@cdk_utils/iam.es.EsConditions.subnetIds"></a>
+
+```typescript
+import { es } from '@cdk_utils/iam'
+
+es.EsConditions.subnetIds(values: string[])
+```
+
+Generates a condition block for `es:SubnetIds`.
+
+###### `values`<sup>Required</sup> <a name="values" id="@cdk_utils/iam.es.EsConditions.subnetIds.parameter.values"></a>
+
+- *Type:* string[]
+
+---
+
 ##### `tagKeys` <a name="tagKeys" id="@cdk_utils/iam.es.EsConditions.tagKeys"></a>
 
 ```typescript
@@ -2535,6 +2647,8 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.es.EsConditions.property.CreateDomainConditionKeys">CreateDomainConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateDomain action. |
 | <code><a href="#@cdk_utils/iam.es.EsConditions.property.CreateElasticsearchDomainConditionKeys">CreateElasticsearchDomainConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateElasticsearchDomain action. |
 | <code><a href="#@cdk_utils/iam.es.EsConditions.property.RemoveTagsConditionKeys">RemoveTagsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the RemoveTags action. |
+| <code><a href="#@cdk_utils/iam.es.EsConditions.property.SECURITY_GROUP_IDS">SECURITY_GROUP_IDS</a></code> | <code>string</code> | Condition key: es:SecurityGroupIds (ArrayOfString). |
+| <code><a href="#@cdk_utils/iam.es.EsConditions.property.SUBNET_IDS">SUBNET_IDS</a></code> | <code>string</code> | Condition key: es:SubnetIds (ArrayOfString). |
 
 ---
 
@@ -2643,6 +2757,30 @@ public readonly RemoveTagsConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the RemoveTags action.
+
+---
+
+##### `SECURITY_GROUP_IDS`<sup>Required</sup> <a name="SECURITY_GROUP_IDS" id="@cdk_utils/iam.es.EsConditions.property.SECURITY_GROUP_IDS"></a>
+
+```typescript
+public readonly SECURITY_GROUP_IDS: string;
+```
+
+- *Type:* string
+
+Condition key: es:SecurityGroupIds (ArrayOfString).
+
+---
+
+##### `SUBNET_IDS`<sup>Required</sup> <a name="SUBNET_IDS" id="@cdk_utils/iam.es.EsConditions.property.SUBNET_IDS"></a>
+
+```typescript
+public readonly SUBNET_IDS: string;
+```
+
+- *Type:* string
+
+Condition key: es:SubnetIds (ArrayOfString).
 
 ---
 

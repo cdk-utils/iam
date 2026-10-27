@@ -3140,6 +3140,7 @@ new odb.OdbOperations()
 | <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.UpdateAutonomousDatabaseBackup">UpdateAutonomousDatabaseBackup</a></code> | <code>string[]</code> | IAM actions required for the UpdateAutonomousDatabaseBackup API call. |
 | <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.UpdateCloudExadataInfrastructure">UpdateCloudExadataInfrastructure</a></code> | <code>string[]</code> | IAM actions required for the UpdateCloudExadataInfrastructure API call. |
 | <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.UpdateExadbVmCluster">UpdateExadbVmCluster</a></code> | <code>string[]</code> | IAM actions required for the UpdateExadbVmCluster API call. |
+| <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.UpdateExascaleCloudExadataInfrastructure">UpdateExascaleCloudExadataInfrastructure</a></code> | <code>string[]</code> | IAM actions required for the UpdateExascaleCloudExadataInfrastructure API call. |
 | <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.UpdateExascaleDbStorageVault">UpdateExascaleDbStorageVault</a></code> | <code>string[]</code> | IAM actions required for the UpdateExascaleDbStorageVault API call. |
 | <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.UpdateOdbNetwork">UpdateOdbNetwork</a></code> | <code>string[]</code> | IAM actions required for the UpdateOdbNetwork API call. |
 | <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.UpdateOdbPeeringConnection">UpdateOdbPeeringConnection</a></code> | <code>string[]</code> | IAM actions required for the UpdateOdbPeeringConnection API call. |
@@ -4067,6 +4068,18 @@ public readonly UpdateExadbVmCluster: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateExadbVmCluster API call.
+
+---
+
+##### `UpdateExascaleCloudExadataInfrastructure`<sup>Required</sup> <a name="UpdateExascaleCloudExadataInfrastructure" id="@cdk_utils/iam.odb.OdbOperations.property.UpdateExascaleCloudExadataInfrastructure"></a>
+
+```typescript
+public readonly UpdateExascaleCloudExadataInfrastructure: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateExascaleCloudExadataInfrastructure API call.
 
 ---
 

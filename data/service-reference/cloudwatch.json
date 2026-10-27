@@ -4749,6 +4749,10 @@
       "Name": "PutCompositeAlarm",
       "AuthorizedActions": [
         {
+          "Name": "ListTagsForResource",
+          "Service": "cloudwatch"
+        },
+        {
           "Name": "PutCompositeAlarm",
           "Service": "cloudwatch"
         },

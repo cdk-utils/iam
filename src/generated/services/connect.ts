@@ -5638,6 +5638,8 @@ export class ConnectOperations {
 	static readonly UpdateNotificationContent: string[] = [
 		"connect:UpdateNotificationContent",
 	];
+	/** IAM actions required for the UpdateOutboundEmailContactMessage API call. */
+	static readonly UpdateOutboundEmailContactMessage: string[] = [];
 	/** IAM actions required for the UpdateParticipantAuthentication API call. */
 	static readonly UpdateParticipantAuthentication: string[] = [
 		"connect:UpdateParticipantAuthentication",

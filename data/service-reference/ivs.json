@@ -144,6 +144,31 @@
       }
     },
     {
+      "Name": "CreateFailoverSlateConfiguration",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Failover-Slate-Configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "CreateIngestConfiguration",
       "ActionConditionKeys": [
         "aws:RequestTag/${TagKey}",
@@ -382,6 +407,27 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteFailoverSlateConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Failover-Slate-Configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -655,6 +701,27 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetFailoverSlateConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Failover-Slate-Configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -1058,6 +1125,27 @@
       }
     },
     {
+      "Name": "ListFailoverSlateConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Failover-Slate-Configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ListIngestConfigurations",
       "Annotations": {
         "Properties": {
@@ -1363,6 +1451,9 @@
           "Name": "Encoder-Configuration"
         },
         {
+          "Name": "Failover-Slate-Configuration"
+        },
+        {
           "Name": "Ingest-Configuration"
         },
         {
@@ -1601,6 +1692,9 @@
           "Name": "Encoder-Configuration"
         },
         {
+          "Name": "Failover-Slate-Configuration"
+        },
+        {
           "Name": "Ingest-Configuration"
         },
         {
@@ -1656,6 +1750,9 @@
         },
         {
           "Name": "Encoder-Configuration"
+        },
+        {
+          "Name": "Failover-Slate-Configuration"
         },
         {
           "Name": "Ingest-Configuration"
@@ -1722,6 +1819,27 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateFailoverSlateConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Failover-Slate-Configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -1918,6 +2036,26 @@
       ]
     },
     {
+      "Name": "CreateFailoverSlateConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateFailoverSlateConfiguration",
+          "Service": "ivs"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "create_failover_slate_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "CreateIngestConfiguration",
       "AuthorizedActions": [
         {
@@ -2097,6 +2235,22 @@
         {
           "Name": "ivs-realtime",
           "Method": "delete_encoder_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteFailoverSlateConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteFailoverSlateConfiguration",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "delete_failover_slate_configuration",
           "Package": "Boto3"
         }
       ]
@@ -2305,6 +2459,22 @@
         {
           "Name": "ivs-realtime",
           "Method": "get_encoder_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetFailoverSlateConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetFailoverSlateConfiguration",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "get_failover_slate_configuration",
           "Package": "Boto3"
         }
       ]
@@ -2617,6 +2787,22 @@
         {
           "Name": "ivs-realtime",
           "Method": "list_encoder_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFailoverSlateConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFailoverSlateConfigurations",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "list_failover_slate_configurations",
           "Package": "Boto3"
         }
       ]
@@ -3073,6 +3259,22 @@
       ]
     },
     {
+      "Name": "UpdateFailoverSlateConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateFailoverSlateConfiguration",
+          "Service": "ivs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ivs",
+          "Method": "update_failover_slate_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "UpdateIngestConfiguration",
       "AuthorizedActions": [
         {
@@ -3153,6 +3355,15 @@
       "Name": "Encoder-Configuration",
       "ARNFormats": [
         "arn:${Partition}:ivs:${Region}:${Account}:encoder-configuration/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Failover-Slate-Configuration",
+      "ARNFormats": [
+        "arn:${Partition}:ivs:${Region}:${Account}:failover-slate-configuration/${ResourceId}"
       ],
       "ConditionKeys": [
         "aws:ResourceTag/${TagKey}"

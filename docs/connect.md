@@ -18634,6 +18634,7 @@ new connect.ConnectOperations()
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.UpdateMetricContent">UpdateMetricContent</a></code> | <code>string[]</code> | IAM actions required for the UpdateMetricContent API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.UpdateMetricMetadata">UpdateMetricMetadata</a></code> | <code>string[]</code> | IAM actions required for the UpdateMetricMetadata API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.UpdateNotificationContent">UpdateNotificationContent</a></code> | <code>string[]</code> | IAM actions required for the UpdateNotificationContent API call. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.UpdateOutboundEmailContactMessage">UpdateOutboundEmailContactMessage</a></code> | <code>string[]</code> | IAM actions required for the UpdateOutboundEmailContactMessage API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.UpdateParticipantAuthentication">UpdateParticipantAuthentication</a></code> | <code>string[]</code> | IAM actions required for the UpdateParticipantAuthentication API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.UpdateParticipantRoleConfig">UpdateParticipantRoleConfig</a></code> | <code>string[]</code> | IAM actions required for the UpdateParticipantRoleConfig API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.UpdatePhoneNumber">UpdatePhoneNumber</a></code> | <code>string[]</code> | IAM actions required for the UpdatePhoneNumber API call. |
@@ -23162,6 +23163,18 @@ public readonly UpdateNotificationContent: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateNotificationContent API call.
+
+---
+
+##### `UpdateOutboundEmailContactMessage`<sup>Required</sup> <a name="UpdateOutboundEmailContactMessage" id="@cdk_utils/iam.connect.ConnectOperations.property.UpdateOutboundEmailContactMessage"></a>
+
+```typescript
+public readonly UpdateOutboundEmailContactMessage: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateOutboundEmailContactMessage API call.
 
 ---
 

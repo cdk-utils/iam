@@ -406,6 +406,8 @@ export class SigninOperations {
 	static readonly CreateOAuth2TokenWithIAM: string[] = [
 		"signin:CreateOAuth2Token",
 	];
+	/** IAM actions required for the CreateOAuth2TokenWithTokenExchange API call. */
+	static readonly CreateOAuth2TokenWithTokenExchange: string[] = [];
 	/** IAM actions required for the DeleteConsoleAuthorizationConfiguration API call. */
 	static readonly DeleteConsoleAuthorizationConfiguration: string[] = [
 		"signin:DeleteConsoleAuthorizationConfiguration",

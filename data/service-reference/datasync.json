@@ -86,6 +86,11 @@
           "IsWrite": true
         }
       },
+      "Resources": [
+        {
+          "Name": "agent"
+        }
+      ],
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -206,6 +211,11 @@
           "IsWrite": true
         }
       },
+      "Resources": [
+        {
+          "Name": "agent"
+        }
+      ],
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -226,6 +236,11 @@
           "IsWrite": true
         }
       },
+      "Resources": [
+        {
+          "Name": "agent"
+        }
+      ],
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -246,6 +261,11 @@
           "IsWrite": true
         }
       },
+      "Resources": [
+        {
+          "Name": "agent"
+        }
+      ],
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -266,6 +286,11 @@
           "IsWrite": true
         }
       },
+      "Resources": [
+        {
+          "Name": "agent"
+        }
+      ],
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -286,6 +311,11 @@
           "IsWrite": true
         }
       },
+      "Resources": [
+        {
+          "Name": "agent"
+        }
+      ],
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -1131,6 +1161,9 @@
       },
       "Resources": [
         {
+          "Name": "agent"
+        },
+        {
           "Name": "location"
         }
       ],
@@ -1257,6 +1290,9 @@
       },
       "Resources": [
         {
+          "Name": "agent"
+        },
+        {
           "Name": "location"
         }
       ],
@@ -1278,6 +1314,9 @@
       },
       "Resources": [
         {
+          "Name": "agent"
+        },
+        {
           "Name": "location"
         }
       ],
@@ -1298,6 +1337,9 @@
         }
       },
       "Resources": [
+        {
+          "Name": "agent"
+        },
         {
           "Name": "location"
         }
@@ -1340,6 +1382,9 @@
         }
       },
       "Resources": [
+        {
+          "Name": "agent"
+        },
         {
           "Name": "location"
         }

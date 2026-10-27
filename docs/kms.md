@@ -4921,6 +4921,7 @@ new kms.KMSOperations()
 | <code><a href="#@cdk_utils/iam.kms.KMSOperations.property.CreateCustomKeyStore">CreateCustomKeyStore</a></code> | <code>string[]</code> | IAM actions required for the CreateCustomKeyStore API call. |
 | <code><a href="#@cdk_utils/iam.kms.KMSOperations.property.CreateGrant">CreateGrant</a></code> | <code>string[]</code> | IAM actions required for the CreateGrant API call. |
 | <code><a href="#@cdk_utils/iam.kms.KMSOperations.property.CreateKey">CreateKey</a></code> | <code>string[]</code> | IAM actions required for the CreateKey API call. |
+| <code><a href="#@cdk_utils/iam.kms.KMSOperations.property.Decapsulate">Decapsulate</a></code> | <code>string[]</code> | IAM actions required for the Decapsulate API call. |
 | <code><a href="#@cdk_utils/iam.kms.KMSOperations.property.Decrypt">Decrypt</a></code> | <code>string[]</code> | IAM actions required for the Decrypt API call. |
 | <code><a href="#@cdk_utils/iam.kms.KMSOperations.property.DeleteAlias">DeleteAlias</a></code> | <code>string[]</code> | IAM actions required for the DeleteAlias API call. |
 | <code><a href="#@cdk_utils/iam.kms.KMSOperations.property.DeleteCustomKeyStore">DeleteCustomKeyStore</a></code> | <code>string[]</code> | IAM actions required for the DeleteCustomKeyStore API call. |
@@ -4933,6 +4934,7 @@ new kms.KMSOperations()
 | <code><a href="#@cdk_utils/iam.kms.KMSOperations.property.DisconnectCustomKeyStore">DisconnectCustomKeyStore</a></code> | <code>string[]</code> | IAM actions required for the DisconnectCustomKeyStore API call. |
 | <code><a href="#@cdk_utils/iam.kms.KMSOperations.property.EnableKey">EnableKey</a></code> | <code>string[]</code> | IAM actions required for the EnableKey API call. |
 | <code><a href="#@cdk_utils/iam.kms.KMSOperations.property.EnableKeyRotation">EnableKeyRotation</a></code> | <code>string[]</code> | IAM actions required for the EnableKeyRotation API call. |
+| <code><a href="#@cdk_utils/iam.kms.KMSOperations.property.Encapsulate">Encapsulate</a></code> | <code>string[]</code> | IAM actions required for the Encapsulate API call. |
 | <code><a href="#@cdk_utils/iam.kms.KMSOperations.property.Encrypt">Encrypt</a></code> | <code>string[]</code> | IAM actions required for the Encrypt API call. |
 | <code><a href="#@cdk_utils/iam.kms.KMSOperations.property.GenerateDataKey">GenerateDataKey</a></code> | <code>string[]</code> | IAM actions required for the GenerateDataKey API call. |
 | <code><a href="#@cdk_utils/iam.kms.KMSOperations.property.GenerateDataKeyPair">GenerateDataKeyPair</a></code> | <code>string[]</code> | IAM actions required for the GenerateDataKeyPair API call. |
@@ -5041,6 +5043,18 @@ public readonly CreateKey: string[];
 - *Type:* string[]
 
 IAM actions required for the CreateKey API call.
+
+---
+
+##### `Decapsulate`<sup>Required</sup> <a name="Decapsulate" id="@cdk_utils/iam.kms.KMSOperations.property.Decapsulate"></a>
+
+```typescript
+public readonly Decapsulate: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the Decapsulate API call.
 
 ---
 
@@ -5185,6 +5199,18 @@ public readonly EnableKeyRotation: string[];
 - *Type:* string[]
 
 IAM actions required for the EnableKeyRotation API call.
+
+---
+
+##### `Encapsulate`<sup>Required</sup> <a name="Encapsulate" id="@cdk_utils/iam.kms.KMSOperations.property.Encapsulate"></a>
+
+```typescript
+public readonly Encapsulate: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the Encapsulate API call.
 
 ---
 

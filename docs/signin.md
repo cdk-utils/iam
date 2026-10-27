@@ -1271,6 +1271,7 @@ new signin.SigninOperations()
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.signin.SigninOperations.property.CreateOAuth2Token">CreateOAuth2Token</a></code> | <code>string[]</code> | IAM actions required for the CreateOAuth2Token API call. |
 | <code><a href="#@cdk_utils/iam.signin.SigninOperations.property.CreateOAuth2TokenWithIAM">CreateOAuth2TokenWithIAM</a></code> | <code>string[]</code> | IAM actions required for the CreateOAuth2TokenWithIAM API call. |
+| <code><a href="#@cdk_utils/iam.signin.SigninOperations.property.CreateOAuth2TokenWithTokenExchange">CreateOAuth2TokenWithTokenExchange</a></code> | <code>string[]</code> | IAM actions required for the CreateOAuth2TokenWithTokenExchange API call. |
 | <code><a href="#@cdk_utils/iam.signin.SigninOperations.property.DeleteConsoleAuthorizationConfiguration">DeleteConsoleAuthorizationConfiguration</a></code> | <code>string[]</code> | IAM actions required for the DeleteConsoleAuthorizationConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.signin.SigninOperations.property.DeleteResourcePermissionStatement">DeleteResourcePermissionStatement</a></code> | <code>string[]</code> | IAM actions required for the DeleteResourcePermissionStatement API call. |
 | <code><a href="#@cdk_utils/iam.signin.SigninOperations.property.IntrospectOAuth2TokenWithIAM">IntrospectOAuth2TokenWithIAM</a></code> | <code>string[]</code> | IAM actions required for the IntrospectOAuth2TokenWithIAM API call. |
@@ -1304,6 +1305,18 @@ public readonly CreateOAuth2TokenWithIAM: string[];
 - *Type:* string[]
 
 IAM actions required for the CreateOAuth2TokenWithIAM API call.
+
+---
+
+##### `CreateOAuth2TokenWithTokenExchange`<sup>Required</sup> <a name="CreateOAuth2TokenWithTokenExchange" id="@cdk_utils/iam.signin.SigninOperations.property.CreateOAuth2TokenWithTokenExchange"></a>
+
+```typescript
+public readonly CreateOAuth2TokenWithTokenExchange: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateOAuth2TokenWithTokenExchange API call.
 
 ---
 

@@ -1243,6 +1243,8 @@ export class OdbOperations {
 	];
 	/** IAM actions required for the UpdateExadbVmCluster API call. */
 	static readonly UpdateExadbVmCluster: string[] = ["odb:UpdateExadbVmCluster"];
+	/** IAM actions required for the UpdateExascaleCloudExadataInfrastructure API call. */
+	static readonly UpdateExascaleCloudExadataInfrastructure: string[] = [];
 	/** IAM actions required for the UpdateExascaleDbStorageVault API call. */
 	static readonly UpdateExascaleDbStorageVault: string[] = [
 		"odb:UpdateExascaleDbStorageVault",

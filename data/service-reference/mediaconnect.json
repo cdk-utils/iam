@@ -1901,6 +1901,16 @@
       ]
     },
     {
+      "Name": "BatchGetDestinationEndpoint",
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "batch_get_destination_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "BatchGetRouterInput",
       "AuthorizedActions": [
         {
@@ -1944,6 +1954,26 @@
         {
           "Name": "mediaconnect",
           "Method": "batch_get_router_output",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetSourceEndpoint",
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "batch_get_source_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ConnectEndpoints",
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "connect_endpoints",
           "Package": "Boto3"
         }
       ]
@@ -2264,6 +2294,16 @@
       ]
     },
     {
+      "Name": "DeregisterDestinationEndpoint",
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "deregister_destination_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DeregisterGatewayInstance",
       "AuthorizedActions": [
         {
@@ -2275,6 +2315,16 @@
         {
           "Name": "mediaconnect",
           "Method": "deregister_gateway_instance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeregisterSourceEndpoint",
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "deregister_source_endpoint",
           "Package": "Boto3"
         }
       ]
@@ -2408,6 +2458,26 @@
       ]
     },
     {
+      "Name": "DisconnectEndpoints",
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "disconnect_endpoints",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDestinationEndpoint",
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "get_destination_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetRouterInput",
       "AuthorizedActions": [
         {
@@ -2488,6 +2558,16 @@
       ]
     },
     {
+      "Name": "GetSourceEndpoint",
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "get_source_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GrantFlowEntitlements",
       "AuthorizedActions": [
         {
@@ -2528,6 +2608,16 @@
         {
           "Name": "mediaconnect",
           "Method": "list_bridges",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDestinationEndpoints",
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "list_destination_endpoints",
           "Package": "Boto3"
         }
       ]
@@ -2677,6 +2767,16 @@
       ]
     },
     {
+      "Name": "ListSourceEndpoints",
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "list_source_endpoints",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListTagsForGlobalResource",
       "SDK": [
         {
@@ -2714,6 +2814,38 @@
         {
           "Name": "mediaconnect",
           "Method": "purchase_offering",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RegisterDestinationEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "register_destination_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RegisterSourceEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "register_source_endpoint",
           "Package": "Boto3"
         }
       ]
@@ -3091,6 +3223,16 @@
       ]
     },
     {
+      "Name": "UpdateDestinationEndpoint",
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "update_destination_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "UpdateFlow",
       "AuthorizedActions": [
         {
@@ -3291,6 +3433,16 @@
         {
           "Name": "mediaconnect",
           "Method": "update_router_output",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSourceEndpoint",
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "update_source_endpoint",
           "Package": "Boto3"
         }
       ]

@@ -1303,19 +1303,28 @@ new billing.BillingOperations()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.AssociateContract">AssociateContract</a></code> | <code>string[]</code> | IAM actions required for the AssociateContract API call. |
 | <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.AssociateSourceViews">AssociateSourceViews</a></code> | <code>string[]</code> | IAM actions required for the AssociateSourceViews API call. |
+| <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.CancelContractualInvestmentAttestation">CancelContractualInvestmentAttestation</a></code> | <code>string[]</code> | IAM actions required for the CancelContractualInvestmentAttestation API call. |
 | <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.CreateBillingView">CreateBillingView</a></code> | <code>string[]</code> | IAM actions required for the CreateBillingView API call. |
+| <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.CreateContractualInvestmentAttestation">CreateContractualInvestmentAttestation</a></code> | <code>string[]</code> | IAM actions required for the CreateContractualInvestmentAttestation API call. |
 | <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.DeleteBillingView">DeleteBillingView</a></code> | <code>string[]</code> | IAM actions required for the DeleteBillingView API call. |
+| <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.DisassociateContract">DisassociateContract</a></code> | <code>string[]</code> | IAM actions required for the DisassociateContract API call. |
 | <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.DisassociateSourceViews">DisassociateSourceViews</a></code> | <code>string[]</code> | IAM actions required for the DisassociateSourceViews API call. |
 | <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.ListBillingViews">ListBillingViews</a></code> | <code>string[]</code> | IAM actions required for the ListBillingViews API call. |
 | <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.ListBillingViewSegments">ListBillingViewSegments</a></code> | <code>string[]</code> | IAM actions required for the ListBillingViewSegments API call. |
 | <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.ListBusinessSupportAccountCharges">ListBusinessSupportAccountCharges</a></code> | <code>string[]</code> | IAM actions required for the ListBusinessSupportAccountCharges API call. |
 | <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.ListBusinessSupportSubscriptionHistory">ListBusinessSupportSubscriptionHistory</a></code> | <code>string[]</code> | IAM actions required for the ListBusinessSupportSubscriptionHistory API call. |
+| <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.ListContracts">ListContracts</a></code> | <code>string[]</code> | IAM actions required for the ListContracts API call. |
+| <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.ListContractualInvestmentAttestations">ListContractualInvestmentAttestations</a></code> | <code>string[]</code> | IAM actions required for the ListContractualInvestmentAttestations API call. |
+| <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.ListContractualInvestments">ListContractualInvestments</a></code> | <code>string[]</code> | IAM actions required for the ListContractualInvestments API call. |
+| <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.ListContractualInvestmentSummaries">ListContractualInvestmentSummaries</a></code> | <code>string[]</code> | IAM actions required for the ListContractualInvestmentSummaries API call. |
 | <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.ListEnterpriseSupportLinkedAccountCharges">ListEnterpriseSupportLinkedAccountCharges</a></code> | <code>string[]</code> | IAM actions required for the ListEnterpriseSupportLinkedAccountCharges API call. |
 | <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.ListSourceViewsForBillingView">ListSourceViewsForBillingView</a></code> | <code>string[]</code> | IAM actions required for the ListSourceViewsForBillingView API call. |
 | <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
 | <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.opGetBillingPreferences">opGetBillingPreferences</a></code> | <code>string[]</code> | IAM actions required for the GetBillingPreferences API call. |
 | <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.opGetBillingView">opGetBillingView</a></code> | <code>string[]</code> | IAM actions required for the GetBillingView API call. |
+| <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.opGetContractInformation">opGetContractInformation</a></code> | <code>string[]</code> | IAM actions required for the GetContractInformation API call. |
 | <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.opGetCreditAllocationHistory">opGetCreditAllocationHistory</a></code> | <code>string[]</code> | IAM actions required for the GetCreditAllocationHistory API call. |
 | <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.opGetCredits">opGetCredits</a></code> | <code>string[]</code> | IAM actions required for the GetCredits API call. |
 | <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.opGetEnterpriseSupportChargeSummary">opGetEnterpriseSupportChargeSummary</a></code> | <code>string[]</code> | IAM actions required for the GetEnterpriseSupportChargeSummary API call. |
@@ -1326,6 +1335,18 @@ new billing.BillingOperations()
 | <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
 | <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.UpdateBillingPreferences">UpdateBillingPreferences</a></code> | <code>string[]</code> | IAM actions required for the UpdateBillingPreferences API call. |
 | <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.UpdateBillingView">UpdateBillingView</a></code> | <code>string[]</code> | IAM actions required for the UpdateBillingView API call. |
+
+---
+
+##### `AssociateContract`<sup>Required</sup> <a name="AssociateContract" id="@cdk_utils/iam.billing.BillingOperations.property.AssociateContract"></a>
+
+```typescript
+public readonly AssociateContract: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the AssociateContract API call.
 
 ---
 
@@ -1341,6 +1362,18 @@ IAM actions required for the AssociateSourceViews API call.
 
 ---
 
+##### `CancelContractualInvestmentAttestation`<sup>Required</sup> <a name="CancelContractualInvestmentAttestation" id="@cdk_utils/iam.billing.BillingOperations.property.CancelContractualInvestmentAttestation"></a>
+
+```typescript
+public readonly CancelContractualInvestmentAttestation: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CancelContractualInvestmentAttestation API call.
+
+---
+
 ##### `CreateBillingView`<sup>Required</sup> <a name="CreateBillingView" id="@cdk_utils/iam.billing.BillingOperations.property.CreateBillingView"></a>
 
 ```typescript
@@ -1353,6 +1386,18 @@ IAM actions required for the CreateBillingView API call.
 
 ---
 
+##### `CreateContractualInvestmentAttestation`<sup>Required</sup> <a name="CreateContractualInvestmentAttestation" id="@cdk_utils/iam.billing.BillingOperations.property.CreateContractualInvestmentAttestation"></a>
+
+```typescript
+public readonly CreateContractualInvestmentAttestation: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateContractualInvestmentAttestation API call.
+
+---
+
 ##### `DeleteBillingView`<sup>Required</sup> <a name="DeleteBillingView" id="@cdk_utils/iam.billing.BillingOperations.property.DeleteBillingView"></a>
 
 ```typescript
@@ -1362,6 +1407,18 @@ public readonly DeleteBillingView: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteBillingView API call.
+
+---
+
+##### `DisassociateContract`<sup>Required</sup> <a name="DisassociateContract" id="@cdk_utils/iam.billing.BillingOperations.property.DisassociateContract"></a>
+
+```typescript
+public readonly DisassociateContract: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DisassociateContract API call.
 
 ---
 
@@ -1425,6 +1482,54 @@ IAM actions required for the ListBusinessSupportSubscriptionHistory API call.
 
 ---
 
+##### `ListContracts`<sup>Required</sup> <a name="ListContracts" id="@cdk_utils/iam.billing.BillingOperations.property.ListContracts"></a>
+
+```typescript
+public readonly ListContracts: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListContracts API call.
+
+---
+
+##### `ListContractualInvestmentAttestations`<sup>Required</sup> <a name="ListContractualInvestmentAttestations" id="@cdk_utils/iam.billing.BillingOperations.property.ListContractualInvestmentAttestations"></a>
+
+```typescript
+public readonly ListContractualInvestmentAttestations: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListContractualInvestmentAttestations API call.
+
+---
+
+##### `ListContractualInvestments`<sup>Required</sup> <a name="ListContractualInvestments" id="@cdk_utils/iam.billing.BillingOperations.property.ListContractualInvestments"></a>
+
+```typescript
+public readonly ListContractualInvestments: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListContractualInvestments API call.
+
+---
+
+##### `ListContractualInvestmentSummaries`<sup>Required</sup> <a name="ListContractualInvestmentSummaries" id="@cdk_utils/iam.billing.BillingOperations.property.ListContractualInvestmentSummaries"></a>
+
+```typescript
+public readonly ListContractualInvestmentSummaries: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListContractualInvestmentSummaries API call.
+
+---
+
 ##### `ListEnterpriseSupportLinkedAccountCharges`<sup>Required</sup> <a name="ListEnterpriseSupportLinkedAccountCharges" id="@cdk_utils/iam.billing.BillingOperations.property.ListEnterpriseSupportLinkedAccountCharges"></a>
 
 ```typescript
@@ -1482,6 +1587,18 @@ public readonly opGetBillingView: string[];
 - *Type:* string[]
 
 IAM actions required for the GetBillingView API call.
+
+---
+
+##### `opGetContractInformation`<sup>Required</sup> <a name="opGetContractInformation" id="@cdk_utils/iam.billing.BillingOperations.property.opGetContractInformation"></a>
+
+```typescript
+public readonly opGetContractInformation: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetContractInformation API call.
 
 ---
 

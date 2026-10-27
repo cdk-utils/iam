@@ -356,6 +356,8 @@ export class KMSOperations {
 		"kms:PutKeyPolicy",
 		"kms:TagResource",
 	];
+	/** IAM actions required for the Decapsulate API call. */
+	static readonly Decapsulate: string[] = ["kms:Decapsulate"];
 	/** IAM actions required for the Decrypt API call. */
 	static readonly Decrypt: string[] = ["kms:Decrypt"];
 	/** IAM actions required for the DeleteAlias API call. */
@@ -386,6 +388,8 @@ export class KMSOperations {
 	static readonly EnableKey: string[] = ["kms:EnableKey"];
 	/** IAM actions required for the EnableKeyRotation API call. */
 	static readonly EnableKeyRotation: string[] = ["kms:EnableKeyRotation"];
+	/** IAM actions required for the Encapsulate API call. */
+	static readonly Encapsulate: string[] = ["kms:Encapsulate"];
 	/** IAM actions required for the Encrypt API call. */
 	static readonly Encrypt: string[] = ["kms:Encrypt"];
 	/** IAM actions required for the GenerateDataKey API call. */
