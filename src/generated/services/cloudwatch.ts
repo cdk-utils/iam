@@ -2031,6 +2031,7 @@ export class CloudWatchOperations {
 	];
 	/** IAM actions required for the PutCompositeAlarm API call. */
 	static readonly PutCompositeAlarm: string[] = [
+		"cloudwatch:ListTagsForResource",
 		"cloudwatch:PutCompositeAlarm",
 		"cloudwatch:TagResource",
 	];

@@ -25,6 +25,9 @@ export class IvsActions {
 	static readonly CreateChannel = "ivs:CreateChannel";
 	/** [Write] ivs:CreateEncoderConfiguration */
 	static readonly CreateEncoderConfiguration = "ivs:CreateEncoderConfiguration";
+	/** [Write] ivs:CreateFailoverSlateConfiguration */
+	static readonly CreateFailoverSlateConfiguration =
+		"ivs:CreateFailoverSlateConfiguration";
 	/** [Write] ivs:CreateIngestConfiguration */
 	static readonly CreateIngestConfiguration = "ivs:CreateIngestConfiguration";
 	/** [Write] ivs:CreateParticipantToken */
@@ -47,6 +50,9 @@ export class IvsActions {
 	static readonly DeleteChannel = "ivs:DeleteChannel";
 	/** [Write] ivs:DeleteEncoderConfiguration */
 	static readonly DeleteEncoderConfiguration = "ivs:DeleteEncoderConfiguration";
+	/** [Write] ivs:DeleteFailoverSlateConfiguration */
+	static readonly DeleteFailoverSlateConfiguration =
+		"ivs:DeleteFailoverSlateConfiguration";
 	/** [Write] ivs:DeleteIngestConfiguration */
 	static readonly DeleteIngestConfiguration = "ivs:DeleteIngestConfiguration";
 	/** [Write] ivs:DeletePlaybackKeyPair */
@@ -75,6 +81,9 @@ export class IvsActions {
 	static readonly actionGetComposition = "ivs:GetComposition";
 	/** [Read] ivs:GetEncoderConfiguration */
 	static readonly actionGetEncoderConfiguration = "ivs:GetEncoderConfiguration";
+	/** [Read] ivs:GetFailoverSlateConfiguration */
+	static readonly actionGetFailoverSlateConfiguration =
+		"ivs:GetFailoverSlateConfiguration";
 	/** [Read] ivs:GetIngestConfiguration */
 	static readonly actionGetIngestConfiguration = "ivs:GetIngestConfiguration";
 	/** [Read] ivs:GetParticipant */
@@ -115,6 +124,9 @@ export class IvsActions {
 	static readonly ListCompositions = "ivs:ListCompositions";
 	/** [List] ivs:ListEncoderConfigurations */
 	static readonly ListEncoderConfigurations = "ivs:ListEncoderConfigurations";
+	/** [List] ivs:ListFailoverSlateConfigurations */
+	static readonly ListFailoverSlateConfigurations =
+		"ivs:ListFailoverSlateConfigurations";
 	/** [List] ivs:ListIngestConfigurations */
 	static readonly ListIngestConfigurations = "ivs:ListIngestConfigurations";
 	/** [List] ivs:ListParticipantEvents */
@@ -173,6 +185,9 @@ export class IvsActions {
 	static readonly UpdateAdConfiguration = "ivs:UpdateAdConfiguration";
 	/** [Write] ivs:UpdateChannel */
 	static readonly UpdateChannel = "ivs:UpdateChannel";
+	/** [Write] ivs:UpdateFailoverSlateConfiguration */
+	static readonly UpdateFailoverSlateConfiguration =
+		"ivs:UpdateFailoverSlateConfiguration";
 	/** [Write] ivs:UpdateIngestConfiguration */
 	static readonly UpdateIngestConfiguration = "ivs:UpdateIngestConfiguration";
 	/** [Write] ivs:UpdatePlaybackRestrictionPolicy */
@@ -189,6 +204,7 @@ export class IvsActions {
 		IvsActions.actionGetChannel,
 		IvsActions.actionGetComposition,
 		IvsActions.actionGetEncoderConfiguration,
+		IvsActions.actionGetFailoverSlateConfiguration,
 		IvsActions.actionGetIngestConfiguration,
 		IvsActions.actionGetParticipant,
 		IvsActions.actionGetPlaybackKeyPair,
@@ -209,6 +225,7 @@ export class IvsActions {
 		IvsActions.CreateAdConfiguration,
 		IvsActions.CreateChannel,
 		IvsActions.CreateEncoderConfiguration,
+		IvsActions.CreateFailoverSlateConfiguration,
 		IvsActions.CreateIngestConfiguration,
 		IvsActions.CreateParticipantToken,
 		IvsActions.CreatePlaybackRestrictionPolicy,
@@ -219,6 +236,7 @@ export class IvsActions {
 		IvsActions.DeleteAdConfiguration,
 		IvsActions.DeleteChannel,
 		IvsActions.DeleteEncoderConfiguration,
+		IvsActions.DeleteFailoverSlateConfiguration,
 		IvsActions.DeleteIngestConfiguration,
 		IvsActions.DeletePlaybackKeyPair,
 		IvsActions.DeletePlaybackRestrictionPolicy,
@@ -241,6 +259,7 @@ export class IvsActions {
 		IvsActions.StopStream,
 		IvsActions.UpdateAdConfiguration,
 		IvsActions.UpdateChannel,
+		IvsActions.UpdateFailoverSlateConfiguration,
 		IvsActions.UpdateIngestConfiguration,
 		IvsActions.UpdatePlaybackRestrictionPolicy,
 		IvsActions.UpdateStage,
@@ -251,6 +270,7 @@ export class IvsActions {
 		IvsActions.ListChannels,
 		IvsActions.ListCompositions,
 		IvsActions.ListEncoderConfigurations,
+		IvsActions.ListFailoverSlateConfigurations,
 		IvsActions.ListIngestConfigurations,
 		IvsActions.ListParticipantEvents,
 		IvsActions.ListParticipantReplicas,
@@ -377,6 +397,34 @@ export interface IvsEncoderConfigurationArnProps {
  * Parsed components of a Encoder-Configuration ARN.
  */
 export interface IvsEncoderConfigurationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a Failover-Slate-Configuration ARN.
+ */
+export interface IvsFailoverSlateConfigurationArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Failover-Slate-Configuration ARN.
+ */
+export interface IvsFailoverSlateConfigurationArnComponents {
 	/** AWS partition. */
 	readonly partition: string;
 	/** AWS region. */
@@ -619,6 +667,8 @@ const CompositionArnRegex =
 	/^arn:(?<partition>[^:]+):ivs:(?<region>[^:]*):(?<account>[^:]*):composition\/(?<resourceId>[^:/?]+)$/;
 const EncoderConfigurationArnRegex =
 	/^arn:(?<partition>[^:]+):ivs:(?<region>[^:]*):(?<account>[^:]*):encoder-configuration\/(?<resourceId>[^:/?]+)$/;
+const FailoverSlateConfigurationArnRegex =
+	/^arn:(?<partition>[^:]+):ivs:(?<region>[^:]*):(?<account>[^:]*):failover-slate-configuration\/(?<resourceId>[^:/?]+)$/;
 const IngestConfigurationArnRegex =
 	/^arn:(?<partition>[^:]+):ivs:(?<region>[^:]*):(?<account>[^:]*):ingest-configuration\/(?<resourceId>[^:/?]+)$/;
 const PlaybackKeyPairArnRegex =
@@ -757,6 +807,41 @@ export class IvsResources {
 		const match = EncoderConfigurationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Encoder-Configuration ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			resourceId: match.groups!.resourceId,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the Failover-Slate-Configuration resource.
+	 */
+	static failoverSlateConfiguration(
+		props: IvsFailoverSlateConfigurationArnProps,
+	): string {
+		return `arn:${props.partition ?? "aws"}:ivs:${props.region ?? "*"}:${props.account ?? "*"}:failover-slate-configuration/${props.resourceId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the Failover-Slate-Configuration resource.
+	 */
+	static isValidFailoverSlateConfigurationArn(arn: string): boolean {
+		return FailoverSlateConfigurationArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a Failover-Slate-Configuration ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseFailoverSlateConfigurationArn(
+		arn: string,
+	): IvsFailoverSlateConfigurationArnComponents {
+		const match = FailoverSlateConfigurationArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid Failover-Slate-Configuration ARN: ${arn}`);
 		}
 		return {
 			partition: match.groups.partition,
@@ -1054,6 +1139,11 @@ export class IvsOperations {
 		"ivs:CreateEncoderConfiguration",
 		"ivs:TagResource",
 	];
+	/** IAM actions required for the CreateFailoverSlateConfiguration API call. */
+	static readonly CreateFailoverSlateConfiguration: string[] = [
+		"ivs:CreateFailoverSlateConfiguration",
+		"ivs:TagResource",
+	];
 	/** IAM actions required for the CreateIngestConfiguration API call. */
 	static readonly CreateIngestConfiguration: string[] = [
 		"ivs:CreateIngestConfiguration",
@@ -1098,6 +1188,10 @@ export class IvsOperations {
 	static readonly DeleteEncoderConfiguration: string[] = [
 		"ivs:DeleteEncoderConfiguration",
 	];
+	/** IAM actions required for the DeleteFailoverSlateConfiguration API call. */
+	static readonly DeleteFailoverSlateConfiguration: string[] = [
+		"ivs:DeleteFailoverSlateConfiguration",
+	];
 	/** IAM actions required for the DeleteIngestConfiguration API call. */
 	static readonly DeleteIngestConfiguration: string[] = [
 		"ivs:DeleteIngestConfiguration",
@@ -1137,6 +1231,10 @@ export class IvsOperations {
 	/** IAM actions required for the GetEncoderConfiguration API call. */
 	static readonly opGetEncoderConfiguration: string[] = [
 		"ivs:GetEncoderConfiguration",
+	];
+	/** IAM actions required for the GetFailoverSlateConfiguration API call. */
+	static readonly opGetFailoverSlateConfiguration: string[] = [
+		"ivs:GetFailoverSlateConfiguration",
 	];
 	/** IAM actions required for the GetIngestConfiguration API call. */
 	static readonly opGetIngestConfiguration: string[] = [
@@ -1191,6 +1289,10 @@ export class IvsOperations {
 	/** IAM actions required for the ListEncoderConfigurations API call. */
 	static readonly ListEncoderConfigurations: string[] = [
 		"ivs:ListEncoderConfigurations",
+	];
+	/** IAM actions required for the ListFailoverSlateConfigurations API call. */
+	static readonly ListFailoverSlateConfigurations: string[] = [
+		"ivs:ListFailoverSlateConfigurations",
 	];
 	/** IAM actions required for the ListIngestConfigurations API call. */
 	static readonly ListIngestConfigurations: string[] = [
@@ -1271,6 +1373,10 @@ export class IvsOperations {
 	];
 	/** IAM actions required for the UpdateChannel API call. */
 	static readonly UpdateChannel: string[] = ["ivs:UpdateChannel"];
+	/** IAM actions required for the UpdateFailoverSlateConfiguration API call. */
+	static readonly UpdateFailoverSlateConfiguration: string[] = [
+		"ivs:UpdateFailoverSlateConfiguration",
+	];
 	/** IAM actions required for the UpdateIngestConfiguration API call. */
 	static readonly UpdateIngestConfiguration: string[] = [
 		"ivs:UpdateIngestConfiguration",
@@ -1299,6 +1405,11 @@ export class IvsConditions {
 	];
 	/** Condition keys applicable to the CreateEncoderConfiguration action. */
 	static readonly CreateEncoderConfigurationConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
+	/** Condition keys applicable to the CreateFailoverSlateConfiguration action. */
+	static readonly CreateFailoverSlateConfigurationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];

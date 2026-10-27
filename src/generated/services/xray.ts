@@ -16,6 +16,8 @@ export class XrayActions {
 	static readonly BatchGetTraceSummaryById = "xray:BatchGetTraceSummaryById";
 	/** [List] xray:BatchGetTraces */
 	static readonly BatchGetTraces = "xray:BatchGetTraces";
+	/** [Write] xray:CallWithBearerToken */
+	static readonly CallWithBearerToken = "xray:CallWithBearerToken";
 	/** [Read] xray:CancelTraceRetrieval */
 	static readonly CancelTraceRetrieval = "xray:CancelTraceRetrieval";
 	/** [Write] xray:CreateGroup */
@@ -130,6 +132,7 @@ export class XrayActions {
 	];
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
+		XrayActions.CallWithBearerToken,
 		XrayActions.CreateGroup,
 		XrayActions.CreateSamplingRule,
 		XrayActions.DeleteGroup,

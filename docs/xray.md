@@ -376,6 +376,7 @@ new xray.XrayActions()
 | <code><a href="#@cdk_utils/iam.xray.XrayActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
 | <code><a href="#@cdk_utils/iam.xray.XrayActions.property.BatchGetTraces">BatchGetTraces</a></code> | <code>string</code> | [List] xray:BatchGetTraces. |
 | <code><a href="#@cdk_utils/iam.xray.XrayActions.property.BatchGetTraceSummaryById">BatchGetTraceSummaryById</a></code> | <code>string</code> | [Read] xray:BatchGetTraceSummaryById. |
+| <code><a href="#@cdk_utils/iam.xray.XrayActions.property.CallWithBearerToken">CallWithBearerToken</a></code> | <code>string</code> | [Write] xray:CallWithBearerToken. |
 | <code><a href="#@cdk_utils/iam.xray.XrayActions.property.CancelTraceRetrieval">CancelTraceRetrieval</a></code> | <code>string</code> | [Read] xray:CancelTraceRetrieval. |
 | <code><a href="#@cdk_utils/iam.xray.XrayActions.property.CreateGroup">CreateGroup</a></code> | <code>string</code> | [Write] xray:CreateGroup. |
 | <code><a href="#@cdk_utils/iam.xray.XrayActions.property.CreateSamplingRule">CreateSamplingRule</a></code> | <code>string</code> | [Write] xray:CreateSamplingRule. |
@@ -700,6 +701,18 @@ public readonly BatchGetTraceSummaryById: string;
 - *Type:* string
 
 [Read] xray:BatchGetTraceSummaryById.
+
+---
+
+##### `CallWithBearerToken`<sup>Required</sup> <a name="CallWithBearerToken" id="@cdk_utils/iam.xray.XrayActions.property.CallWithBearerToken"></a>
+
+```typescript
+public readonly CallWithBearerToken: string;
+```
+
+- *Type:* string
+
+[Write] xray:CallWithBearerToken.
 
 ---
 

@@ -21,6 +21,8 @@ export class EsActions {
 	static readonly AddDataSource = "es:AddDataSource";
 	/** [Write] es:AddDirectQueryDataSource */
 	static readonly AddDirectQueryDataSource = "es:AddDirectQueryDataSource";
+	/** [Write] es:AddReplicationPeer */
+	static readonly AddReplicationPeer = "es:AddReplicationPeer";
 	/** [Tagging] es:AddTags */
 	static readonly AddTags = "es:AddTags";
 	/** [Write] es:AssociatePackage */
@@ -39,6 +41,8 @@ export class EsActions {
 	/** [Write] es:CancelServiceSoftwareUpdate */
 	static readonly CancelServiceSoftwareUpdate =
 		"es:CancelServiceSoftwareUpdate";
+	/** [Read] es:CompareDomainConfiguration */
+	static readonly CompareDomainConfiguration = "es:CompareDomainConfiguration";
 	/** [Write] es:CreateApplication */
 	static readonly CreateApplication = "es:CreateApplication";
 	/** [Write] es:CreateDomain */
@@ -109,6 +113,8 @@ export class EsActions {
 	static readonly DescribeDomainHealth = "es:DescribeDomainHealth";
 	/** [Read] es:DescribeDomainNodes */
 	static readonly DescribeDomainNodes = "es:DescribeDomainNodes";
+	/** [Read] es:DescribeDomainReplication */
+	static readonly DescribeDomainReplication = "es:DescribeDomainReplication";
 	/** [List] es:DescribeDomains */
 	static readonly DescribeDomains = "es:DescribeDomains";
 	/** [Read] es:DescribeDryRunProgress */
@@ -175,6 +181,8 @@ export class EsActions {
 	static readonly ESHttpPost = "es:ESHttpPost";
 	/** [Write] es:ESHttpPut */
 	static readonly ESHttpPut = "es:ESHttpPut";
+	/** [Write] es:FailoverReplication */
+	static readonly FailoverReplication = "es:FailoverReplication";
 	/** [Read] es:GetApplication */
 	static readonly actionGetApplication = "es:GetApplication";
 	/** [Read] es:GetCapability */
@@ -266,6 +274,8 @@ export class EsActions {
 	/** [Write] es:RejectInboundCrossClusterSearchConnection */
 	static readonly RejectInboundCrossClusterSearchConnection =
 		"es:RejectInboundCrossClusterSearchConnection";
+	/** [Write] es:RemoveReplicationPeer */
+	static readonly RemoveReplicationPeer = "es:RemoveReplicationPeer";
 	/** [Tagging] es:RemoveTags */
 	static readonly RemoveTags = "es:RemoveTags";
 	/** [Write] es:RevokeVpcEndpointAccess */
@@ -285,6 +295,8 @@ export class EsActions {
 	static readonly StartMigration = "es:StartMigration";
 	/** [Write] es:StartServiceSoftwareUpdate */
 	static readonly StartServiceSoftwareUpdate = "es:StartServiceSoftwareUpdate";
+	/** [Write] es:SwitchoverReplication */
+	static readonly SwitchoverReplication = "es:SwitchoverReplication";
 	/** [Write] es:UpdateApplication */
 	static readonly UpdateApplication = "es:UpdateApplication";
 	/** [Write] es:UpdateDataSource */
@@ -314,6 +326,7 @@ export class EsActions {
 
 	/** All read-level actions. */
 	static readonly AllReadActions: string[] = [
+		EsActions.CompareDomainConfiguration,
 		EsActions.DescribeDataSourceAttachment,
 		EsActions.DescribeDomain,
 		EsActions.DescribeDomainAutoTunes,
@@ -321,6 +334,7 @@ export class EsActions {
 		EsActions.DescribeDomainConfig,
 		EsActions.DescribeDomainHealth,
 		EsActions.DescribeDomainNodes,
+		EsActions.DescribeDomainReplication,
 		EsActions.DescribeDryRunProgress,
 		EsActions.DescribeElasticsearchDomain,
 		EsActions.DescribeElasticsearchDomainConfig,
@@ -348,6 +362,7 @@ export class EsActions {
 		EsActions.AcceptInboundCrossClusterSearchConnection,
 		EsActions.AddDataSource,
 		EsActions.AddDirectQueryDataSource,
+		EsActions.AddReplicationPeer,
 		EsActions.AssociatePackage,
 		EsActions.AssociatePackages,
 		EsActions.AttachDataSource,
@@ -386,6 +401,7 @@ export class EsActions {
 		EsActions.ESHttpPatch,
 		EsActions.ESHttpPost,
 		EsActions.ESHttpPut,
+		EsActions.FailoverReplication,
 		EsActions.InsightFeedback,
 		EsActions.PurchaseReservedElasticsearchInstanceOffering,
 		EsActions.PurchaseReservedInstanceOffering,
@@ -393,6 +409,7 @@ export class EsActions {
 		EsActions.RegisterCapability,
 		EsActions.RejectInboundConnection,
 		EsActions.RejectInboundCrossClusterSearchConnection,
+		EsActions.RemoveReplicationPeer,
 		EsActions.RevokeVpcEndpointAccess,
 		EsActions.RollbackElasticsearchServiceSoftwareUpdate,
 		EsActions.RollbackServiceSoftwareUpdate,
@@ -400,6 +417,7 @@ export class EsActions {
 		EsActions.StartElasticsearchServiceSoftwareUpdate,
 		EsActions.StartMigration,
 		EsActions.StartServiceSoftwareUpdate,
+		EsActions.SwitchoverReplication,
 		EsActions.UpdateApplication,
 		EsActions.UpdateDataSource,
 		EsActions.UpdateDirectQueryDataSource,
@@ -978,11 +996,15 @@ export class EsConditions {
 	static readonly CreateDomainConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
+		"es:SecurityGroupIds",
+		"es:SubnetIds",
 	];
 	/** Condition keys applicable to the CreateElasticsearchDomain action. */
 	static readonly CreateElasticsearchDomainConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
+		"es:SecurityGroupIds",
+		"es:SubnetIds",
 	];
 	/** Condition keys applicable to the RemoveTags action. */
 	static readonly RemoveTagsConditionKeys: string[] = ["aws:TagKeys"];
@@ -993,6 +1015,10 @@ export class EsConditions {
 	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
 	static readonly AWS_TAG_KEYS = "aws:TagKeys";
+	/** Condition key: es:SecurityGroupIds (ArrayOfString) */
+	static readonly SECURITY_GROUP_IDS = "es:SecurityGroupIds";
+	/** Condition key: es:SubnetIds (ArrayOfString) */
+	static readonly SUBNET_IDS = "es:SubnetIds";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.
@@ -1013,5 +1039,21 @@ export class EsConditions {
 	 */
 	static tagKeys(values: string[]): Record<string, Record<string, string[]>> {
 		return { "ForAllValues:StringEquals": { "aws:TagKeys": values } };
+	}
+
+	/**
+	 * Generates a condition block for `es:SecurityGroupIds`.
+	 */
+	static securityGroupIds(
+		values: string[],
+	): Record<string, Record<string, string[]>> {
+		return { "ForAllValues:StringEquals": { "es:SecurityGroupIds": values } };
+	}
+
+	/**
+	 * Generates a condition block for `es:SubnetIds`.
+	 */
+	static subnetIds(values: string[]): Record<string, Record<string, string[]>> {
+		return { "ForAllValues:StringEquals": { "es:SubnetIds": values } };
 	}
 }

@@ -167,6 +167,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -603,6 +604,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2473,6 +2475,22 @@
       ]
     },
     {
+      "Name": "Decapsulate",
+      "AuthorizedActions": [
+        {
+          "Name": "Decapsulate",
+          "Service": "kms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kms",
+          "Method": "decapsulate",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "Decrypt",
       "AuthorizedActions": [
         {
@@ -2660,6 +2678,22 @@
         {
           "Name": "kms",
           "Method": "enable_key_rotation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "Encapsulate",
+      "AuthorizedActions": [
+        {
+          "Name": "Encapsulate",
+          "Service": "kms"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kms",
+          "Method": "encapsulate",
           "Package": "Boto3"
         }
       ]

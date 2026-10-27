@@ -1262,6 +1262,8 @@ export class MediaConnectOperations {
 		"iam:PassRole",
 		"mediaconnect:TagResource",
 	];
+	/** IAM actions required for the BatchGetDestinationEndpoint API call. */
+	static readonly BatchGetDestinationEndpoint: string[] = [];
 	/** IAM actions required for the BatchGetRouterInput API call. */
 	static readonly BatchGetRouterInput: string[] = [
 		"mediaconnect:GetRouterInput",
@@ -1274,6 +1276,10 @@ export class MediaConnectOperations {
 	static readonly BatchGetRouterOutput: string[] = [
 		"mediaconnect:GetRouterOutput",
 	];
+	/** IAM actions required for the BatchGetSourceEndpoint API call. */
+	static readonly BatchGetSourceEndpoint: string[] = [];
+	/** IAM actions required for the ConnectEndpoints API call. */
+	static readonly ConnectEndpoints: string[] = [];
 	/** IAM actions required for the CreateBridge API call. */
 	static readonly CreateBridge: string[] = [
 		"mediaconnect:AddBridgeOutputs",
@@ -1345,10 +1351,14 @@ export class MediaConnectOperations {
 		"mediaconnect:DeleteRouterOutput",
 		"mediaconnect:UpdateFlowSource",
 	];
+	/** IAM actions required for the DeregisterDestinationEndpoint API call. */
+	static readonly DeregisterDestinationEndpoint: string[] = [];
 	/** IAM actions required for the DeregisterGatewayInstance API call. */
 	static readonly DeregisterGatewayInstance: string[] = [
 		"mediaconnect:DeregisterGatewayInstance",
 	];
+	/** IAM actions required for the DeregisterSourceEndpoint API call. */
+	static readonly DeregisterSourceEndpoint: string[] = [];
 	/** IAM actions required for the DescribeBridge API call. */
 	static readonly DescribeBridge: string[] = ["mediaconnect:DescribeBridge"];
 	/** IAM actions required for the DescribeFlow API call. */
@@ -1375,6 +1385,10 @@ export class MediaConnectOperations {
 	static readonly DescribeReservation: string[] = [
 		"mediaconnect:DescribeReservation",
 	];
+	/** IAM actions required for the DisconnectEndpoints API call. */
+	static readonly DisconnectEndpoints: string[] = [];
+	/** IAM actions required for the GetDestinationEndpoint API call. */
+	static readonly opGetDestinationEndpoint: string[] = [];
 	/** IAM actions required for the GetRouterInput API call. */
 	static readonly opGetRouterInput: string[] = ["mediaconnect:GetRouterInput"];
 	/** IAM actions required for the GetRouterInputSourceMetadata API call. */
@@ -1393,6 +1407,8 @@ export class MediaConnectOperations {
 	static readonly opGetRouterOutput: string[] = [
 		"mediaconnect:GetRouterOutput",
 	];
+	/** IAM actions required for the GetSourceEndpoint API call. */
+	static readonly opGetSourceEndpoint: string[] = [];
 	/** IAM actions required for the GrantFlowEntitlements API call. */
 	static readonly GrantFlowEntitlements: string[] = [
 		"mediaconnect:GrantFlowEntitlements",
@@ -1401,6 +1417,8 @@ export class MediaConnectOperations {
 	];
 	/** IAM actions required for the ListBridges API call. */
 	static readonly ListBridges: string[] = ["mediaconnect:ListBridges"];
+	/** IAM actions required for the ListDestinationEndpoints API call. */
+	static readonly ListDestinationEndpoints: string[] = [];
 	/** IAM actions required for the ListEntitlements API call. */
 	static readonly ListEntitlements: string[] = [
 		"mediaconnect:ListEntitlements",
@@ -1431,6 +1449,8 @@ export class MediaConnectOperations {
 	static readonly ListRouterOutputs: string[] = [
 		"mediaconnect:ListRouterOutputs",
 	];
+	/** IAM actions required for the ListSourceEndpoints API call. */
+	static readonly ListSourceEndpoints: string[] = [];
 	/** IAM actions required for the ListTagsForGlobalResource API call. */
 	static readonly ListTagsForGlobalResource: string[] = [];
 	/** IAM actions required for the ListTagsForResource API call. */
@@ -1440,6 +1460,14 @@ export class MediaConnectOperations {
 	/** IAM actions required for the PurchaseOffering API call. */
 	static readonly PurchaseOffering: string[] = [
 		"mediaconnect:PurchaseOffering",
+	];
+	/** IAM actions required for the RegisterDestinationEndpoint API call. */
+	static readonly RegisterDestinationEndpoint: string[] = [
+		"mediaconnect:TagResource",
+	];
+	/** IAM actions required for the RegisterSourceEndpoint API call. */
+	static readonly RegisterSourceEndpoint: string[] = [
+		"mediaconnect:TagResource",
 	];
 	/** IAM actions required for the RemoveBridgeOutput API call. */
 	static readonly RemoveBridgeOutput: string[] = [
@@ -1519,6 +1547,8 @@ export class MediaConnectOperations {
 	static readonly UpdateBridgeState: string[] = [
 		"mediaconnect:UpdateBridgeState",
 	];
+	/** IAM actions required for the UpdateDestinationEndpoint API call. */
+	static readonly UpdateDestinationEndpoint: string[] = [];
 	/** IAM actions required for the UpdateFlow API call. */
 	static readonly UpdateFlow: string[] = ["mediaconnect:UpdateFlow"];
 	/** IAM actions required for the UpdateFlowEntitlement API call. */
@@ -1562,6 +1592,8 @@ export class MediaConnectOperations {
 		"mediaconnect:UpdateFlowSource",
 		"mediaconnect:UpdateRouterOutput",
 	];
+	/** IAM actions required for the UpdateSourceEndpoint API call. */
+	static readonly UpdateSourceEndpoint: string[] = [];
 }
 
 /**

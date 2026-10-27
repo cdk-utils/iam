@@ -445,6 +445,22 @@
       }
     },
     {
+      "Name": "DescribeReplicationBackfillResults",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "DescribeRepositories",
       "Annotations": {
         "Properties": {
@@ -724,6 +740,22 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListReplicationBackfills",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -1015,6 +1047,38 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartReplicationBackfill",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StopReplicationBackfill",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -1589,6 +1653,22 @@
       ]
     },
     {
+      "Name": "DescribeReplicationBackfillResults",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeReplicationBackfillResults",
+          "Service": "ecr"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ecr",
+          "Method": "describe_replication_backfill_results",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DescribeRepositories",
       "AuthorizedActions": [
         {
@@ -1841,6 +1921,22 @@
       ]
     },
     {
+      "Name": "ListReplicationBackfills",
+      "AuthorizedActions": [
+        {
+          "Name": "ListReplicationBackfills",
+          "Service": "ecr"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ecr",
+          "Method": "list_replication_backfills",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListTagsForResource",
       "AuthorizedActions": [
         {
@@ -2060,6 +2156,38 @@
         {
           "Name": "ecr",
           "Method": "start_lifecycle_policy_preview",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartReplicationBackfill",
+      "AuthorizedActions": [
+        {
+          "Name": "StartReplicationBackfill",
+          "Service": "ecr"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ecr",
+          "Method": "start_replication_backfill",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopReplicationBackfill",
+      "AuthorizedActions": [
+        {
+          "Name": "StopReplicationBackfill",
+          "Service": "ecr"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ecr",
+          "Method": "stop_replication_backfill",
           "Package": "Boto3"
         }
       ]

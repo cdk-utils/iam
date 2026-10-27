@@ -3287,6 +3287,16 @@
       ]
     },
     {
+      "Name": "UpdateExascaleCloudExadataInfrastructure",
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "update_exascale_cloud_exadata_infrastructure",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "UpdateExascaleDbStorageVault",
       "AuthorizedActions": [
         {

@@ -595,6 +595,154 @@ Defaults to "*".
 
 ---
 
+### IvsFailoverSlateConfigurationArnComponents <a name="IvsFailoverSlateConfigurationArnComponents" id="@cdk_utils/iam.ivs.IvsFailoverSlateConfigurationArnComponents"></a>
+
+Parsed components of a Failover-Slate-Configuration ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.ivs.IvsFailoverSlateConfigurationArnComponents.Initializer"></a>
+
+```typescript
+import { ivs } from '@cdk_utils/iam'
+
+const ivsFailoverSlateConfigurationArnComponents: ivs.IvsFailoverSlateConfigurationArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.ivs.IvsFailoverSlateConfigurationArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.ivs.IvsFailoverSlateConfigurationArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.ivs.IvsFailoverSlateConfigurationArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+| <code><a href="#@cdk_utils/iam.ivs.IvsFailoverSlateConfigurationArnComponents.property.resourceId">resourceId</a></code> | <code>string</code> | The ResourceId component. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.ivs.IvsFailoverSlateConfigurationArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.ivs.IvsFailoverSlateConfigurationArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.ivs.IvsFailoverSlateConfigurationArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+##### `resourceId`<sup>Required</sup> <a name="resourceId" id="@cdk_utils/iam.ivs.IvsFailoverSlateConfigurationArnComponents.property.resourceId"></a>
+
+```typescript
+public readonly resourceId: string;
+```
+
+- *Type:* string
+
+The ResourceId component.
+
+---
+
+### IvsFailoverSlateConfigurationArnProps <a name="IvsFailoverSlateConfigurationArnProps" id="@cdk_utils/iam.ivs.IvsFailoverSlateConfigurationArnProps"></a>
+
+Properties for building a Failover-Slate-Configuration ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.ivs.IvsFailoverSlateConfigurationArnProps.Initializer"></a>
+
+```typescript
+import { ivs } from '@cdk_utils/iam'
+
+const ivsFailoverSlateConfigurationArnProps: ivs.IvsFailoverSlateConfigurationArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.ivs.IvsFailoverSlateConfigurationArnProps.property.resourceId">resourceId</a></code> | <code>string</code> | The ResourceId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.ivs.IvsFailoverSlateConfigurationArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.ivs.IvsFailoverSlateConfigurationArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.ivs.IvsFailoverSlateConfigurationArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `resourceId`<sup>Required</sup> <a name="resourceId" id="@cdk_utils/iam.ivs.IvsFailoverSlateConfigurationArnProps.property.resourceId"></a>
+
+```typescript
+public readonly resourceId: string;
+```
+
+- *Type:* string
+
+The ResourceId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.ivs.IvsFailoverSlateConfigurationArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.ivs.IvsFailoverSlateConfigurationArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.ivs.IvsFailoverSlateConfigurationArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### IvsIngestConfigurationArnComponents <a name="IvsIngestConfigurationArnComponents" id="@cdk_utils/iam.ivs.IvsIngestConfigurationArnComponents"></a>
 
 Parsed components of a Ingest-Configuration ARN.
@@ -1809,6 +1957,7 @@ new ivs.IvsActions()
 | <code><a href="#@cdk_utils/iam.ivs.IvsActions.property.actionGetChannel">actionGetChannel</a></code> | <code>string</code> | [Read] ivs:GetChannel. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsActions.property.actionGetComposition">actionGetComposition</a></code> | <code>string</code> | [Read] ivs:GetComposition. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsActions.property.actionGetEncoderConfiguration">actionGetEncoderConfiguration</a></code> | <code>string</code> | [Read] ivs:GetEncoderConfiguration. |
+| <code><a href="#@cdk_utils/iam.ivs.IvsActions.property.actionGetFailoverSlateConfiguration">actionGetFailoverSlateConfiguration</a></code> | <code>string</code> | [Read] ivs:GetFailoverSlateConfiguration. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsActions.property.actionGetIngestConfiguration">actionGetIngestConfiguration</a></code> | <code>string</code> | [Read] ivs:GetIngestConfiguration. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsActions.property.actionGetParticipant">actionGetParticipant</a></code> | <code>string</code> | [Read] ivs:GetParticipant. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsActions.property.actionGetPlaybackKeyPair">actionGetPlaybackKeyPair</a></code> | <code>string</code> | [Read] ivs:GetPlaybackKeyPair. |
@@ -1832,6 +1981,7 @@ new ivs.IvsActions()
 | <code><a href="#@cdk_utils/iam.ivs.IvsActions.property.CreateAdConfiguration">CreateAdConfiguration</a></code> | <code>string</code> | [Write] ivs:CreateAdConfiguration. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsActions.property.CreateChannel">CreateChannel</a></code> | <code>string</code> | [Write] ivs:CreateChannel. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsActions.property.CreateEncoderConfiguration">CreateEncoderConfiguration</a></code> | <code>string</code> | [Write] ivs:CreateEncoderConfiguration. |
+| <code><a href="#@cdk_utils/iam.ivs.IvsActions.property.CreateFailoverSlateConfiguration">CreateFailoverSlateConfiguration</a></code> | <code>string</code> | [Write] ivs:CreateFailoverSlateConfiguration. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsActions.property.CreateIngestConfiguration">CreateIngestConfiguration</a></code> | <code>string</code> | [Write] ivs:CreateIngestConfiguration. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsActions.property.CreateParticipantToken">CreateParticipantToken</a></code> | <code>string</code> | [Write] ivs:CreateParticipantToken. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsActions.property.CreatePlaybackRestrictionPolicy">CreatePlaybackRestrictionPolicy</a></code> | <code>string</code> | [Write] ivs:CreatePlaybackRestrictionPolicy. |
@@ -1842,6 +1992,7 @@ new ivs.IvsActions()
 | <code><a href="#@cdk_utils/iam.ivs.IvsActions.property.DeleteAdConfiguration">DeleteAdConfiguration</a></code> | <code>string</code> | [Write] ivs:DeleteAdConfiguration. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsActions.property.DeleteChannel">DeleteChannel</a></code> | <code>string</code> | [Write] ivs:DeleteChannel. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsActions.property.DeleteEncoderConfiguration">DeleteEncoderConfiguration</a></code> | <code>string</code> | [Write] ivs:DeleteEncoderConfiguration. |
+| <code><a href="#@cdk_utils/iam.ivs.IvsActions.property.DeleteFailoverSlateConfiguration">DeleteFailoverSlateConfiguration</a></code> | <code>string</code> | [Write] ivs:DeleteFailoverSlateConfiguration. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsActions.property.DeleteIngestConfiguration">DeleteIngestConfiguration</a></code> | <code>string</code> | [Write] ivs:DeleteIngestConfiguration. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsActions.property.DeletePlaybackKeyPair">DeletePlaybackKeyPair</a></code> | <code>string</code> | [Write] ivs:DeletePlaybackKeyPair. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsActions.property.DeletePlaybackRestrictionPolicy">DeletePlaybackRestrictionPolicy</a></code> | <code>string</code> | [Write] ivs:DeletePlaybackRestrictionPolicy. |
@@ -1858,6 +2009,7 @@ new ivs.IvsActions()
 | <code><a href="#@cdk_utils/iam.ivs.IvsActions.property.ListChannels">ListChannels</a></code> | <code>string</code> | [List] ivs:ListChannels. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsActions.property.ListCompositions">ListCompositions</a></code> | <code>string</code> | [List] ivs:ListCompositions. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsActions.property.ListEncoderConfigurations">ListEncoderConfigurations</a></code> | <code>string</code> | [List] ivs:ListEncoderConfigurations. |
+| <code><a href="#@cdk_utils/iam.ivs.IvsActions.property.ListFailoverSlateConfigurations">ListFailoverSlateConfigurations</a></code> | <code>string</code> | [List] ivs:ListFailoverSlateConfigurations. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsActions.property.ListIngestConfigurations">ListIngestConfigurations</a></code> | <code>string</code> | [List] ivs:ListIngestConfigurations. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsActions.property.ListParticipantEvents">ListParticipantEvents</a></code> | <code>string</code> | [List] ivs:ListParticipantEvents. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsActions.property.ListParticipantReplicas">ListParticipantReplicas</a></code> | <code>string</code> | [List] ivs:ListParticipantReplicas. |
@@ -1886,6 +2038,7 @@ new ivs.IvsActions()
 | <code><a href="#@cdk_utils/iam.ivs.IvsActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] ivs:UntagResource. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsActions.property.UpdateAdConfiguration">UpdateAdConfiguration</a></code> | <code>string</code> | [Write] ivs:UpdateAdConfiguration. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsActions.property.UpdateChannel">UpdateChannel</a></code> | <code>string</code> | [Write] ivs:UpdateChannel. |
+| <code><a href="#@cdk_utils/iam.ivs.IvsActions.property.UpdateFailoverSlateConfiguration">UpdateFailoverSlateConfiguration</a></code> | <code>string</code> | [Write] ivs:UpdateFailoverSlateConfiguration. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsActions.property.UpdateIngestConfiguration">UpdateIngestConfiguration</a></code> | <code>string</code> | [Write] ivs:UpdateIngestConfiguration. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsActions.property.UpdatePlaybackRestrictionPolicy">UpdatePlaybackRestrictionPolicy</a></code> | <code>string</code> | [Write] ivs:UpdatePlaybackRestrictionPolicy. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsActions.property.UpdateStage">UpdateStage</a></code> | <code>string</code> | [Write] ivs:UpdateStage. |
@@ -1937,6 +2090,18 @@ public readonly actionGetEncoderConfiguration: string;
 - *Type:* string
 
 [Read] ivs:GetEncoderConfiguration.
+
+---
+
+##### `actionGetFailoverSlateConfiguration`<sup>Required</sup> <a name="actionGetFailoverSlateConfiguration" id="@cdk_utils/iam.ivs.IvsActions.property.actionGetFailoverSlateConfiguration"></a>
+
+```typescript
+public readonly actionGetFailoverSlateConfiguration: string;
+```
+
+- *Type:* string
+
+[Read] ivs:GetFailoverSlateConfiguration.
 
 ---
 
@@ -2216,6 +2381,18 @@ public readonly CreateEncoderConfiguration: string;
 
 ---
 
+##### `CreateFailoverSlateConfiguration`<sup>Required</sup> <a name="CreateFailoverSlateConfiguration" id="@cdk_utils/iam.ivs.IvsActions.property.CreateFailoverSlateConfiguration"></a>
+
+```typescript
+public readonly CreateFailoverSlateConfiguration: string;
+```
+
+- *Type:* string
+
+[Write] ivs:CreateFailoverSlateConfiguration.
+
+---
+
 ##### `CreateIngestConfiguration`<sup>Required</sup> <a name="CreateIngestConfiguration" id="@cdk_utils/iam.ivs.IvsActions.property.CreateIngestConfiguration"></a>
 
 ```typescript
@@ -2333,6 +2510,18 @@ public readonly DeleteEncoderConfiguration: string;
 - *Type:* string
 
 [Write] ivs:DeleteEncoderConfiguration.
+
+---
+
+##### `DeleteFailoverSlateConfiguration`<sup>Required</sup> <a name="DeleteFailoverSlateConfiguration" id="@cdk_utils/iam.ivs.IvsActions.property.DeleteFailoverSlateConfiguration"></a>
+
+```typescript
+public readonly DeleteFailoverSlateConfiguration: string;
+```
+
+- *Type:* string
+
+[Write] ivs:DeleteFailoverSlateConfiguration.
 
 ---
 
@@ -2525,6 +2714,18 @@ public readonly ListEncoderConfigurations: string;
 - *Type:* string
 
 [List] ivs:ListEncoderConfigurations.
+
+---
+
+##### `ListFailoverSlateConfigurations`<sup>Required</sup> <a name="ListFailoverSlateConfigurations" id="@cdk_utils/iam.ivs.IvsActions.property.ListFailoverSlateConfigurations"></a>
+
+```typescript
+public readonly ListFailoverSlateConfigurations: string;
+```
+
+- *Type:* string
+
+[List] ivs:ListFailoverSlateConfigurations.
 
 ---
 
@@ -2864,6 +3065,18 @@ public readonly UpdateChannel: string;
 
 ---
 
+##### `UpdateFailoverSlateConfiguration`<sup>Required</sup> <a name="UpdateFailoverSlateConfiguration" id="@cdk_utils/iam.ivs.IvsActions.property.UpdateFailoverSlateConfiguration"></a>
+
+```typescript
+public readonly UpdateFailoverSlateConfiguration: string;
+```
+
+- *Type:* string
+
+[Write] ivs:UpdateFailoverSlateConfiguration.
+
+---
+
 ##### `UpdateIngestConfiguration`<sup>Required</sup> <a name="UpdateIngestConfiguration" id="@cdk_utils/iam.ivs.IvsActions.property.UpdateIngestConfiguration"></a>
 
 ```typescript
@@ -2987,6 +3200,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.ivs.IvsConditions.property.CreateAdConfigurationConditionKeys">CreateAdConfigurationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateAdConfiguration action. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsConditions.property.CreateChannelConditionKeys">CreateChannelConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateChannel action. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsConditions.property.CreateEncoderConfigurationConditionKeys">CreateEncoderConfigurationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateEncoderConfiguration action. |
+| <code><a href="#@cdk_utils/iam.ivs.IvsConditions.property.CreateFailoverSlateConfigurationConditionKeys">CreateFailoverSlateConfigurationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateFailoverSlateConfiguration action. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsConditions.property.CreateIngestConfigurationConditionKeys">CreateIngestConfigurationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateIngestConfiguration action. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsConditions.property.CreateParticipantTokenConditionKeys">CreateParticipantTokenConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateParticipantToken action. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsConditions.property.CreatePlaybackRestrictionPolicyConditionKeys">CreatePlaybackRestrictionPolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreatePlaybackRestrictionPolicy action. |
@@ -3073,6 +3287,18 @@ public readonly CreateEncoderConfigurationConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the CreateEncoderConfiguration action.
+
+---
+
+##### `CreateFailoverSlateConfigurationConditionKeys`<sup>Required</sup> <a name="CreateFailoverSlateConfigurationConditionKeys" id="@cdk_utils/iam.ivs.IvsConditions.property.CreateFailoverSlateConfigurationConditionKeys"></a>
+
+```typescript
+public readonly CreateFailoverSlateConfigurationConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateFailoverSlateConfiguration action.
 
 ---
 
@@ -3274,6 +3500,7 @@ new ivs.IvsOperations()
 | <code><a href="#@cdk_utils/iam.ivs.IvsOperations.property.CreateAdConfiguration">CreateAdConfiguration</a></code> | <code>string[]</code> | IAM actions required for the CreateAdConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsOperations.property.CreateChannel">CreateChannel</a></code> | <code>string[]</code> | IAM actions required for the CreateChannel API call. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsOperations.property.CreateEncoderConfiguration">CreateEncoderConfiguration</a></code> | <code>string[]</code> | IAM actions required for the CreateEncoderConfiguration API call. |
+| <code><a href="#@cdk_utils/iam.ivs.IvsOperations.property.CreateFailoverSlateConfiguration">CreateFailoverSlateConfiguration</a></code> | <code>string[]</code> | IAM actions required for the CreateFailoverSlateConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsOperations.property.CreateIngestConfiguration">CreateIngestConfiguration</a></code> | <code>string[]</code> | IAM actions required for the CreateIngestConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsOperations.property.CreateParticipantToken">CreateParticipantToken</a></code> | <code>string[]</code> | IAM actions required for the CreateParticipantToken API call. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsOperations.property.CreatePlaybackRestrictionPolicy">CreatePlaybackRestrictionPolicy</a></code> | <code>string[]</code> | IAM actions required for the CreatePlaybackRestrictionPolicy API call. |
@@ -3284,6 +3511,7 @@ new ivs.IvsOperations()
 | <code><a href="#@cdk_utils/iam.ivs.IvsOperations.property.DeleteAdConfiguration">DeleteAdConfiguration</a></code> | <code>string[]</code> | IAM actions required for the DeleteAdConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsOperations.property.DeleteChannel">DeleteChannel</a></code> | <code>string[]</code> | IAM actions required for the DeleteChannel API call. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsOperations.property.DeleteEncoderConfiguration">DeleteEncoderConfiguration</a></code> | <code>string[]</code> | IAM actions required for the DeleteEncoderConfiguration API call. |
+| <code><a href="#@cdk_utils/iam.ivs.IvsOperations.property.DeleteFailoverSlateConfiguration">DeleteFailoverSlateConfiguration</a></code> | <code>string[]</code> | IAM actions required for the DeleteFailoverSlateConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsOperations.property.DeleteIngestConfiguration">DeleteIngestConfiguration</a></code> | <code>string[]</code> | IAM actions required for the DeleteIngestConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsOperations.property.DeletePlaybackKeyPair">DeletePlaybackKeyPair</a></code> | <code>string[]</code> | IAM actions required for the DeletePlaybackKeyPair API call. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsOperations.property.DeletePlaybackRestrictionPolicy">DeletePlaybackRestrictionPolicy</a></code> | <code>string[]</code> | IAM actions required for the DeletePlaybackRestrictionPolicy API call. |
@@ -3300,6 +3528,7 @@ new ivs.IvsOperations()
 | <code><a href="#@cdk_utils/iam.ivs.IvsOperations.property.ListChannels">ListChannels</a></code> | <code>string[]</code> | IAM actions required for the ListChannels API call. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsOperations.property.ListCompositions">ListCompositions</a></code> | <code>string[]</code> | IAM actions required for the ListCompositions API call. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsOperations.property.ListEncoderConfigurations">ListEncoderConfigurations</a></code> | <code>string[]</code> | IAM actions required for the ListEncoderConfigurations API call. |
+| <code><a href="#@cdk_utils/iam.ivs.IvsOperations.property.ListFailoverSlateConfigurations">ListFailoverSlateConfigurations</a></code> | <code>string[]</code> | IAM actions required for the ListFailoverSlateConfigurations API call. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsOperations.property.ListIngestConfigurations">ListIngestConfigurations</a></code> | <code>string[]</code> | IAM actions required for the ListIngestConfigurations API call. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsOperations.property.ListParticipantEvents">ListParticipantEvents</a></code> | <code>string[]</code> | IAM actions required for the ListParticipantEvents API call. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsOperations.property.ListParticipantReplicas">ListParticipantReplicas</a></code> | <code>string[]</code> | IAM actions required for the ListParticipantReplicas API call. |
@@ -3319,6 +3548,7 @@ new ivs.IvsOperations()
 | <code><a href="#@cdk_utils/iam.ivs.IvsOperations.property.opGetChannel">opGetChannel</a></code> | <code>string[]</code> | IAM actions required for the GetChannel API call. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsOperations.property.opGetComposition">opGetComposition</a></code> | <code>string[]</code> | IAM actions required for the GetComposition API call. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsOperations.property.opGetEncoderConfiguration">opGetEncoderConfiguration</a></code> | <code>string[]</code> | IAM actions required for the GetEncoderConfiguration API call. |
+| <code><a href="#@cdk_utils/iam.ivs.IvsOperations.property.opGetFailoverSlateConfiguration">opGetFailoverSlateConfiguration</a></code> | <code>string[]</code> | IAM actions required for the GetFailoverSlateConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsOperations.property.opGetIngestConfiguration">opGetIngestConfiguration</a></code> | <code>string[]</code> | IAM actions required for the GetIngestConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsOperations.property.opGetParticipant">opGetParticipant</a></code> | <code>string[]</code> | IAM actions required for the GetParticipant API call. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsOperations.property.opGetPlaybackKeyPair">opGetPlaybackKeyPair</a></code> | <code>string[]</code> | IAM actions required for the GetPlaybackKeyPair API call. |
@@ -3343,6 +3573,7 @@ new ivs.IvsOperations()
 | <code><a href="#@cdk_utils/iam.ivs.IvsOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsOperations.property.UpdateAdConfiguration">UpdateAdConfiguration</a></code> | <code>string[]</code> | IAM actions required for the UpdateAdConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsOperations.property.UpdateChannel">UpdateChannel</a></code> | <code>string[]</code> | IAM actions required for the UpdateChannel API call. |
+| <code><a href="#@cdk_utils/iam.ivs.IvsOperations.property.UpdateFailoverSlateConfiguration">UpdateFailoverSlateConfiguration</a></code> | <code>string[]</code> | IAM actions required for the UpdateFailoverSlateConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsOperations.property.UpdateIngestConfiguration">UpdateIngestConfiguration</a></code> | <code>string[]</code> | IAM actions required for the UpdateIngestConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsOperations.property.UpdatePlaybackRestrictionPolicy">UpdatePlaybackRestrictionPolicy</a></code> | <code>string[]</code> | IAM actions required for the UpdatePlaybackRestrictionPolicy API call. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsOperations.property.UpdateStage">UpdateStage</a></code> | <code>string[]</code> | IAM actions required for the UpdateStage API call. |
@@ -3418,6 +3649,18 @@ public readonly CreateEncoderConfiguration: string[];
 - *Type:* string[]
 
 IAM actions required for the CreateEncoderConfiguration API call.
+
+---
+
+##### `CreateFailoverSlateConfiguration`<sup>Required</sup> <a name="CreateFailoverSlateConfiguration" id="@cdk_utils/iam.ivs.IvsOperations.property.CreateFailoverSlateConfiguration"></a>
+
+```typescript
+public readonly CreateFailoverSlateConfiguration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateFailoverSlateConfiguration API call.
 
 ---
 
@@ -3538,6 +3781,18 @@ public readonly DeleteEncoderConfiguration: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteEncoderConfiguration API call.
+
+---
+
+##### `DeleteFailoverSlateConfiguration`<sup>Required</sup> <a name="DeleteFailoverSlateConfiguration" id="@cdk_utils/iam.ivs.IvsOperations.property.DeleteFailoverSlateConfiguration"></a>
+
+```typescript
+public readonly DeleteFailoverSlateConfiguration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteFailoverSlateConfiguration API call.
 
 ---
 
@@ -3730,6 +3985,18 @@ public readonly ListEncoderConfigurations: string[];
 - *Type:* string[]
 
 IAM actions required for the ListEncoderConfigurations API call.
+
+---
+
+##### `ListFailoverSlateConfigurations`<sup>Required</sup> <a name="ListFailoverSlateConfigurations" id="@cdk_utils/iam.ivs.IvsOperations.property.ListFailoverSlateConfigurations"></a>
+
+```typescript
+public readonly ListFailoverSlateConfigurations: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListFailoverSlateConfigurations API call.
 
 ---
 
@@ -3958,6 +4225,18 @@ public readonly opGetEncoderConfiguration: string[];
 - *Type:* string[]
 
 IAM actions required for the GetEncoderConfiguration API call.
+
+---
+
+##### `opGetFailoverSlateConfiguration`<sup>Required</sup> <a name="opGetFailoverSlateConfiguration" id="@cdk_utils/iam.ivs.IvsOperations.property.opGetFailoverSlateConfiguration"></a>
+
+```typescript
+public readonly opGetFailoverSlateConfiguration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetFailoverSlateConfiguration API call.
 
 ---
 
@@ -4249,6 +4528,18 @@ IAM actions required for the UpdateChannel API call.
 
 ---
 
+##### `UpdateFailoverSlateConfiguration`<sup>Required</sup> <a name="UpdateFailoverSlateConfiguration" id="@cdk_utils/iam.ivs.IvsOperations.property.UpdateFailoverSlateConfiguration"></a>
+
+```typescript
+public readonly UpdateFailoverSlateConfiguration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateFailoverSlateConfiguration API call.
+
+---
+
 ##### `UpdateIngestConfiguration`<sup>Required</sup> <a name="UpdateIngestConfiguration" id="@cdk_utils/iam.ivs.IvsOperations.property.UpdateIngestConfiguration"></a>
 
 ```typescript
@@ -4311,11 +4602,13 @@ new ivs.IvsResources()
 | <code><a href="#@cdk_utils/iam.ivs.IvsResources.channel">channel</a></code> | Builds an ARN for the Channel resource. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsResources.composition">composition</a></code> | Builds an ARN for the Composition resource. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsResources.encoderConfiguration">encoderConfiguration</a></code> | Builds an ARN for the Encoder-Configuration resource. |
+| <code><a href="#@cdk_utils/iam.ivs.IvsResources.failoverSlateConfiguration">failoverSlateConfiguration</a></code> | Builds an ARN for the Failover-Slate-Configuration resource. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsResources.ingestConfiguration">ingestConfiguration</a></code> | Builds an ARN for the Ingest-Configuration resource. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsResources.isValidAdConfigurationArn">isValidAdConfigurationArn</a></code> | Validates whether a string is a valid ARN for the Ad-Configuration resource. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsResources.isValidChannelArn">isValidChannelArn</a></code> | Validates whether a string is a valid ARN for the Channel resource. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsResources.isValidCompositionArn">isValidCompositionArn</a></code> | Validates whether a string is a valid ARN for the Composition resource. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsResources.isValidEncoderConfigurationArn">isValidEncoderConfigurationArn</a></code> | Validates whether a string is a valid ARN for the Encoder-Configuration resource. |
+| <code><a href="#@cdk_utils/iam.ivs.IvsResources.isValidFailoverSlateConfigurationArn">isValidFailoverSlateConfigurationArn</a></code> | Validates whether a string is a valid ARN for the Failover-Slate-Configuration resource. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsResources.isValidIngestConfigurationArn">isValidIngestConfigurationArn</a></code> | Validates whether a string is a valid ARN for the Ingest-Configuration resource. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsResources.isValidPlaybackKeyPairArn">isValidPlaybackKeyPairArn</a></code> | Validates whether a string is a valid ARN for the Playback-Key-Pair resource. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsResources.isValidPlaybackRestrictionPolicyArn">isValidPlaybackRestrictionPolicyArn</a></code> | Validates whether a string is a valid ARN for the Playback-Restriction-Policy resource. |
@@ -4328,6 +4621,7 @@ new ivs.IvsResources()
 | <code><a href="#@cdk_utils/iam.ivs.IvsResources.parseChannelArn">parseChannelArn</a></code> | Parses a Channel ARN into its components. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsResources.parseCompositionArn">parseCompositionArn</a></code> | Parses a Composition ARN into its components. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsResources.parseEncoderConfigurationArn">parseEncoderConfigurationArn</a></code> | Parses a Encoder-Configuration ARN into its components. |
+| <code><a href="#@cdk_utils/iam.ivs.IvsResources.parseFailoverSlateConfigurationArn">parseFailoverSlateConfigurationArn</a></code> | Parses a Failover-Slate-Configuration ARN into its components. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsResources.parseIngestConfigurationArn">parseIngestConfigurationArn</a></code> | Parses a Ingest-Configuration ARN into its components. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsResources.parsePlaybackKeyPairArn">parsePlaybackKeyPairArn</a></code> | Parses a Playback-Key-Pair ARN into its components. |
 | <code><a href="#@cdk_utils/iam.ivs.IvsResources.parsePlaybackRestrictionPolicyArn">parsePlaybackRestrictionPolicyArn</a></code> | Parses a Playback-Restriction-Policy ARN into its components. |
@@ -4410,6 +4704,22 @@ Builds an ARN for the Encoder-Configuration resource.
 
 ---
 
+##### `failoverSlateConfiguration` <a name="failoverSlateConfiguration" id="@cdk_utils/iam.ivs.IvsResources.failoverSlateConfiguration"></a>
+
+```typescript
+import { ivs } from '@cdk_utils/iam'
+
+ivs.IvsResources.failoverSlateConfiguration(props: IvsFailoverSlateConfigurationArnProps)
+```
+
+Builds an ARN for the Failover-Slate-Configuration resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.ivs.IvsResources.failoverSlateConfiguration.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.ivs.IvsFailoverSlateConfigurationArnProps">IvsFailoverSlateConfigurationArnProps</a>
+
+---
+
 ##### `ingestConfiguration` <a name="ingestConfiguration" id="@cdk_utils/iam.ivs.IvsResources.ingestConfiguration"></a>
 
 ```typescript
@@ -4485,6 +4795,22 @@ ivs.IvsResources.isValidEncoderConfigurationArn(arn: string)
 Validates whether a string is a valid ARN for the Encoder-Configuration resource.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.ivs.IvsResources.isValidEncoderConfigurationArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidFailoverSlateConfigurationArn` <a name="isValidFailoverSlateConfigurationArn" id="@cdk_utils/iam.ivs.IvsResources.isValidFailoverSlateConfigurationArn"></a>
+
+```typescript
+import { ivs } from '@cdk_utils/iam'
+
+ivs.IvsResources.isValidFailoverSlateConfigurationArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the Failover-Slate-Configuration resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.ivs.IvsResources.isValidFailoverSlateConfigurationArn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -4677,6 +5003,22 @@ ivs.IvsResources.parseEncoderConfigurationArn(arn: string)
 Parses a Encoder-Configuration ARN into its components.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.ivs.IvsResources.parseEncoderConfigurationArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseFailoverSlateConfigurationArn` <a name="parseFailoverSlateConfigurationArn" id="@cdk_utils/iam.ivs.IvsResources.parseFailoverSlateConfigurationArn"></a>
+
+```typescript
+import { ivs } from '@cdk_utils/iam'
+
+ivs.IvsResources.parseFailoverSlateConfigurationArn(arn: string)
+```
+
+Parses a Failover-Slate-Configuration ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.ivs.IvsResources.parseFailoverSlateConfigurationArn.parameter.arn"></a>
 
 - *Type:* string
 

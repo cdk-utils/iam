@@ -310,10 +310,16 @@ export class BillingResources {
  * API operation to required IAM actions mapping for billing.
  */
 export class BillingOperations {
+	/** IAM actions required for the AssociateContract API call. */
+	static readonly AssociateContract: string[] = ["billing:AssociateContract"];
 	/** IAM actions required for the AssociateSourceViews API call. */
 	static readonly AssociateSourceViews: string[] = [
 		"billing:AssociateSourceViews",
 		"billing:UseSourceView",
+	];
+	/** IAM actions required for the CancelContractualInvestmentAttestation API call. */
+	static readonly CancelContractualInvestmentAttestation: string[] = [
+		"billing:CancelContractualInvestmentAttestation",
 	];
 	/** IAM actions required for the CreateBillingView API call. */
 	static readonly CreateBillingView: string[] = [
@@ -321,8 +327,16 @@ export class BillingOperations {
 		"billing:TagResource",
 		"billing:UseSourceView",
 	];
+	/** IAM actions required for the CreateContractualInvestmentAttestation API call. */
+	static readonly CreateContractualInvestmentAttestation: string[] = [
+		"billing:CreateContractualInvestmentAttestation",
+	];
 	/** IAM actions required for the DeleteBillingView API call. */
 	static readonly DeleteBillingView: string[] = ["billing:DeleteBillingView"];
+	/** IAM actions required for the DisassociateContract API call. */
+	static readonly DisassociateContract: string[] = [
+		"billing:DisassociateContract",
+	];
 	/** IAM actions required for the DisassociateSourceViews API call. */
 	static readonly DisassociateSourceViews: string[] = [
 		"billing:DisassociateSourceViews",
@@ -334,6 +348,10 @@ export class BillingOperations {
 	];
 	/** IAM actions required for the GetBillingView API call. */
 	static readonly opGetBillingView: string[] = ["billing:GetBillingView"];
+	/** IAM actions required for the GetContractInformation API call. */
+	static readonly opGetContractInformation: string[] = [
+		"billing:GetContractInformation",
+	];
 	/** IAM actions required for the GetCreditAllocationHistory API call. */
 	static readonly opGetCreditAllocationHistory: string[] = [
 		"billing:GetCreditAllocationHistory",
@@ -366,6 +384,20 @@ export class BillingOperations {
 	/** IAM actions required for the ListBusinessSupportSubscriptionHistory API call. */
 	static readonly ListBusinessSupportSubscriptionHistory: string[] = [
 		"billing:ListBusinessSupportSubscriptionHistory",
+	];
+	/** IAM actions required for the ListContracts API call. */
+	static readonly ListContracts: string[] = ["billing:ListContracts"];
+	/** IAM actions required for the ListContractualInvestmentAttestations API call. */
+	static readonly ListContractualInvestmentAttestations: string[] = [
+		"billing:ListContractualInvestmentAttestations",
+	];
+	/** IAM actions required for the ListContractualInvestmentSummaries API call. */
+	static readonly ListContractualInvestmentSummaries: string[] = [
+		"billing:ListContractualInvestmentSummaries",
+	];
+	/** IAM actions required for the ListContractualInvestments API call. */
+	static readonly ListContractualInvestments: string[] = [
+		"billing:ListContractualInvestments",
 	];
 	/** IAM actions required for the ListEnterpriseSupportLinkedAccountCharges API call. */
 	static readonly ListEnterpriseSupportLinkedAccountCharges: string[] = [

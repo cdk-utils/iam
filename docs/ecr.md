@@ -216,11 +216,13 @@ new ecr.ECRActions()
 | <code><a href="#@cdk_utils/iam.ecr.ECRActions.property.DescribeImageSigningStatus">DescribeImageSigningStatus</a></code> | <code>string</code> | [Read] ecr:DescribeImageSigningStatus. |
 | <code><a href="#@cdk_utils/iam.ecr.ECRActions.property.DescribePullThroughCacheRules">DescribePullThroughCacheRules</a></code> | <code>string</code> | [List] ecr:DescribePullThroughCacheRules. |
 | <code><a href="#@cdk_utils/iam.ecr.ECRActions.property.DescribeRegistry">DescribeRegistry</a></code> | <code>string</code> | [Read] ecr:DescribeRegistry. |
+| <code><a href="#@cdk_utils/iam.ecr.ECRActions.property.DescribeReplicationBackfillResults">DescribeReplicationBackfillResults</a></code> | <code>string</code> | [Read] ecr:DescribeReplicationBackfillResults. |
 | <code><a href="#@cdk_utils/iam.ecr.ECRActions.property.DescribeRepositories">DescribeRepositories</a></code> | <code>string</code> | [Read] ecr:DescribeRepositories. |
 | <code><a href="#@cdk_utils/iam.ecr.ECRActions.property.DescribeRepositoryCreationTemplates">DescribeRepositoryCreationTemplates</a></code> | <code>string</code> | [Read] ecr:DescribeRepositoryCreationTemplates. |
 | <code><a href="#@cdk_utils/iam.ecr.ECRActions.property.InitiateLayerUpload">InitiateLayerUpload</a></code> | <code>string</code> | [Write] ecr:InitiateLayerUpload. |
 | <code><a href="#@cdk_utils/iam.ecr.ECRActions.property.ListImages">ListImages</a></code> | <code>string</code> | [List] ecr:ListImages. |
 | <code><a href="#@cdk_utils/iam.ecr.ECRActions.property.ListPullTimeUpdateExclusions">ListPullTimeUpdateExclusions</a></code> | <code>string</code> | [List] ecr:ListPullTimeUpdateExclusions. |
+| <code><a href="#@cdk_utils/iam.ecr.ECRActions.property.ListReplicationBackfills">ListReplicationBackfills</a></code> | <code>string</code> | [List] ecr:ListReplicationBackfills. |
 | <code><a href="#@cdk_utils/iam.ecr.ECRActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [Read] ecr:ListTagsForResource. |
 | <code><a href="#@cdk_utils/iam.ecr.ECRActions.property.PutAccountSetting">PutAccountSetting</a></code> | <code>string</code> | [Write] ecr:PutAccountSetting. |
 | <code><a href="#@cdk_utils/iam.ecr.ECRActions.property.PutImage">PutImage</a></code> | <code>string</code> | [Write] ecr:PutImage. |
@@ -236,6 +238,8 @@ new ecr.ECRActions()
 | <code><a href="#@cdk_utils/iam.ecr.ECRActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.ecr.ECRActions.property.StartImageScan">StartImageScan</a></code> | <code>string</code> | [Write] ecr:StartImageScan. |
 | <code><a href="#@cdk_utils/iam.ecr.ECRActions.property.StartLifecyclePolicyPreview">StartLifecyclePolicyPreview</a></code> | <code>string</code> | [Write] ecr:StartLifecyclePolicyPreview. |
+| <code><a href="#@cdk_utils/iam.ecr.ECRActions.property.StartReplicationBackfill">StartReplicationBackfill</a></code> | <code>string</code> | [Write] ecr:StartReplicationBackfill. |
+| <code><a href="#@cdk_utils/iam.ecr.ECRActions.property.StopReplicationBackfill">StopReplicationBackfill</a></code> | <code>string</code> | [Write] ecr:StopReplicationBackfill. |
 | <code><a href="#@cdk_utils/iam.ecr.ECRActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] ecr:TagResource. |
 | <code><a href="#@cdk_utils/iam.ecr.ECRActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] ecr:UntagResource. |
 | <code><a href="#@cdk_utils/iam.ecr.ECRActions.property.UpdateImageStorageClass">UpdateImageStorageClass</a></code> | <code>string</code> | [Write] ecr:UpdateImageStorageClass. |
@@ -714,6 +718,18 @@ public readonly DescribeRegistry: string;
 
 ---
 
+##### `DescribeReplicationBackfillResults`<sup>Required</sup> <a name="DescribeReplicationBackfillResults" id="@cdk_utils/iam.ecr.ECRActions.property.DescribeReplicationBackfillResults"></a>
+
+```typescript
+public readonly DescribeReplicationBackfillResults: string;
+```
+
+- *Type:* string
+
+[Read] ecr:DescribeReplicationBackfillResults.
+
+---
+
 ##### `DescribeRepositories`<sup>Required</sup> <a name="DescribeRepositories" id="@cdk_utils/iam.ecr.ECRActions.property.DescribeRepositories"></a>
 
 ```typescript
@@ -771,6 +787,18 @@ public readonly ListPullTimeUpdateExclusions: string;
 - *Type:* string
 
 [List] ecr:ListPullTimeUpdateExclusions.
+
+---
+
+##### `ListReplicationBackfills`<sup>Required</sup> <a name="ListReplicationBackfills" id="@cdk_utils/iam.ecr.ECRActions.property.ListReplicationBackfills"></a>
+
+```typescript
+public readonly ListReplicationBackfills: string;
+```
+
+- *Type:* string
+
+[List] ecr:ListReplicationBackfills.
 
 ---
 
@@ -951,6 +979,30 @@ public readonly StartLifecyclePolicyPreview: string;
 - *Type:* string
 
 [Write] ecr:StartLifecyclePolicyPreview.
+
+---
+
+##### `StartReplicationBackfill`<sup>Required</sup> <a name="StartReplicationBackfill" id="@cdk_utils/iam.ecr.ECRActions.property.StartReplicationBackfill"></a>
+
+```typescript
+public readonly StartReplicationBackfill: string;
+```
+
+- *Type:* string
+
+[Write] ecr:StartReplicationBackfill.
+
+---
+
+##### `StopReplicationBackfill`<sup>Required</sup> <a name="StopReplicationBackfill" id="@cdk_utils/iam.ecr.ECRActions.property.StopReplicationBackfill"></a>
+
+```typescript
+public readonly StopReplicationBackfill: string;
+```
+
+- *Type:* string
+
+[Write] ecr:StopReplicationBackfill.
 
 ---
 
@@ -1328,12 +1380,14 @@ new ecr.ECROperations()
 | <code><a href="#@cdk_utils/iam.ecr.ECROperations.property.DescribeImageSigningStatus">DescribeImageSigningStatus</a></code> | <code>string[]</code> | IAM actions required for the DescribeImageSigningStatus API call. |
 | <code><a href="#@cdk_utils/iam.ecr.ECROperations.property.DescribePullThroughCacheRules">DescribePullThroughCacheRules</a></code> | <code>string[]</code> | IAM actions required for the DescribePullThroughCacheRules API call. |
 | <code><a href="#@cdk_utils/iam.ecr.ECROperations.property.DescribeRegistry">DescribeRegistry</a></code> | <code>string[]</code> | IAM actions required for the DescribeRegistry API call. |
+| <code><a href="#@cdk_utils/iam.ecr.ECROperations.property.DescribeReplicationBackfillResults">DescribeReplicationBackfillResults</a></code> | <code>string[]</code> | IAM actions required for the DescribeReplicationBackfillResults API call. |
 | <code><a href="#@cdk_utils/iam.ecr.ECROperations.property.DescribeRepositories">DescribeRepositories</a></code> | <code>string[]</code> | IAM actions required for the DescribeRepositories API call. |
 | <code><a href="#@cdk_utils/iam.ecr.ECROperations.property.DescribeRepositoryCreationTemplates">DescribeRepositoryCreationTemplates</a></code> | <code>string[]</code> | IAM actions required for the DescribeRepositoryCreationTemplates API call. |
 | <code><a href="#@cdk_utils/iam.ecr.ECROperations.property.InitiateLayerUpload">InitiateLayerUpload</a></code> | <code>string[]</code> | IAM actions required for the InitiateLayerUpload API call. |
 | <code><a href="#@cdk_utils/iam.ecr.ECROperations.property.ListImageReferrers">ListImageReferrers</a></code> | <code>string[]</code> | IAM actions required for the ListImageReferrers API call. |
 | <code><a href="#@cdk_utils/iam.ecr.ECROperations.property.ListImages">ListImages</a></code> | <code>string[]</code> | IAM actions required for the ListImages API call. |
 | <code><a href="#@cdk_utils/iam.ecr.ECROperations.property.ListPullTimeUpdateExclusions">ListPullTimeUpdateExclusions</a></code> | <code>string[]</code> | IAM actions required for the ListPullTimeUpdateExclusions API call. |
+| <code><a href="#@cdk_utils/iam.ecr.ECROperations.property.ListReplicationBackfills">ListReplicationBackfills</a></code> | <code>string[]</code> | IAM actions required for the ListReplicationBackfills API call. |
 | <code><a href="#@cdk_utils/iam.ecr.ECROperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
 | <code><a href="#@cdk_utils/iam.ecr.ECROperations.property.opGetAccountSetting">opGetAccountSetting</a></code> | <code>string[]</code> | IAM actions required for the GetAccountSetting API call. |
 | <code><a href="#@cdk_utils/iam.ecr.ECROperations.property.opGetAuthorizationToken">opGetAuthorizationToken</a></code> | <code>string[]</code> | IAM actions required for the GetAuthorizationToken API call. |
@@ -1357,6 +1411,8 @@ new ecr.ECROperations()
 | <code><a href="#@cdk_utils/iam.ecr.ECROperations.property.RegisterPullTimeUpdateExclusion">RegisterPullTimeUpdateExclusion</a></code> | <code>string[]</code> | IAM actions required for the RegisterPullTimeUpdateExclusion API call. |
 | <code><a href="#@cdk_utils/iam.ecr.ECROperations.property.StartImageScan">StartImageScan</a></code> | <code>string[]</code> | IAM actions required for the StartImageScan API call. |
 | <code><a href="#@cdk_utils/iam.ecr.ECROperations.property.StartLifecyclePolicyPreview">StartLifecyclePolicyPreview</a></code> | <code>string[]</code> | IAM actions required for the StartLifecyclePolicyPreview API call. |
+| <code><a href="#@cdk_utils/iam.ecr.ECROperations.property.StartReplicationBackfill">StartReplicationBackfill</a></code> | <code>string[]</code> | IAM actions required for the StartReplicationBackfill API call. |
+| <code><a href="#@cdk_utils/iam.ecr.ECROperations.property.StopReplicationBackfill">StopReplicationBackfill</a></code> | <code>string[]</code> | IAM actions required for the StopReplicationBackfill API call. |
 | <code><a href="#@cdk_utils/iam.ecr.ECROperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
 | <code><a href="#@cdk_utils/iam.ecr.ECROperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
 | <code><a href="#@cdk_utils/iam.ecr.ECROperations.property.UpdateImageStorageClass">UpdateImageStorageClass</a></code> | <code>string[]</code> | IAM actions required for the UpdateImageStorageClass API call. |
@@ -1631,6 +1687,18 @@ IAM actions required for the DescribeRegistry API call.
 
 ---
 
+##### `DescribeReplicationBackfillResults`<sup>Required</sup> <a name="DescribeReplicationBackfillResults" id="@cdk_utils/iam.ecr.ECROperations.property.DescribeReplicationBackfillResults"></a>
+
+```typescript
+public readonly DescribeReplicationBackfillResults: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeReplicationBackfillResults API call.
+
+---
+
 ##### `DescribeRepositories`<sup>Required</sup> <a name="DescribeRepositories" id="@cdk_utils/iam.ecr.ECROperations.property.DescribeRepositories"></a>
 
 ```typescript
@@ -1700,6 +1768,18 @@ public readonly ListPullTimeUpdateExclusions: string[];
 - *Type:* string[]
 
 IAM actions required for the ListPullTimeUpdateExclusions API call.
+
+---
+
+##### `ListReplicationBackfills`<sup>Required</sup> <a name="ListReplicationBackfills" id="@cdk_utils/iam.ecr.ECROperations.property.ListReplicationBackfills"></a>
+
+```typescript
+public readonly ListReplicationBackfills: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListReplicationBackfills API call.
 
 ---
 
@@ -1976,6 +2056,30 @@ public readonly StartLifecyclePolicyPreview: string[];
 - *Type:* string[]
 
 IAM actions required for the StartLifecyclePolicyPreview API call.
+
+---
+
+##### `StartReplicationBackfill`<sup>Required</sup> <a name="StartReplicationBackfill" id="@cdk_utils/iam.ecr.ECROperations.property.StartReplicationBackfill"></a>
+
+```typescript
+public readonly StartReplicationBackfill: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StartReplicationBackfill API call.
+
+---
+
+##### `StopReplicationBackfill`<sup>Required</sup> <a name="StopReplicationBackfill" id="@cdk_utils/iam.ecr.ECROperations.property.StopReplicationBackfill"></a>
+
+```typescript
+public readonly StopReplicationBackfill: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StopReplicationBackfill API call.
 
 ---
 

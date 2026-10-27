@@ -79,6 +79,26 @@
       }
     },
     {
+      "Name": "AddReplicationPeer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "AddTags",
       "ActionConditionKeys": [
         "aws:RequestTag/${TagKey}",
@@ -250,6 +270,26 @@
       }
     },
     {
+      "Name": "CompareDomainConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "CreateApplication",
       "ActionConditionKeys": [
         "aws:RequestTag/${TagKey}",
@@ -272,7 +312,9 @@
       "Name": "CreateDomain",
       "ActionConditionKeys": [
         "aws:RequestTag/${TagKey}",
-        "aws:TagKeys"
+        "aws:TagKeys",
+        "es:SecurityGroupIds",
+        "es:SubnetIds"
       ],
       "Annotations": {
         "Properties": {
@@ -297,7 +339,9 @@
       "Name": "CreateElasticsearchDomain",
       "ActionConditionKeys": [
         "aws:RequestTag/${TagKey}",
-        "aws:TagKeys"
+        "aws:TagKeys",
+        "es:SecurityGroupIds",
+        "es:SubnetIds"
       ],
       "Annotations": {
         "Properties": {
@@ -840,6 +884,26 @@
       }
     },
     {
+      "Name": "DescribeDomainReplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "DescribeDomains",
       "Annotations": {
         "Properties": {
@@ -1338,6 +1402,26 @@
     },
     {
       "Name": "ESHttpPut",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "FailoverReplication",
       "Annotations": {
         "Properties": {
           "IsList": false,
@@ -2107,6 +2191,26 @@
       }
     },
     {
+      "Name": "RemoveReplicationPeer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "RemoveTags",
       "ActionConditionKeys": [
         "aws:TagKeys"
@@ -2272,6 +2376,26 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SwitchoverReplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -2521,6 +2645,18 @@
     },
     {
       "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "es:SecurityGroupIds",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "es:SubnetIds",
       "Types": [
         "ArrayOfString"
       ]

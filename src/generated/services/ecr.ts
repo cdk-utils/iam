@@ -65,6 +65,9 @@ export class ECRActions {
 		"ecr:DescribePullThroughCacheRules";
 	/** [Read] ecr:DescribeRegistry */
 	static readonly DescribeRegistry = "ecr:DescribeRegistry";
+	/** [Read] ecr:DescribeReplicationBackfillResults */
+	static readonly DescribeReplicationBackfillResults =
+		"ecr:DescribeReplicationBackfillResults";
 	/** [Read] ecr:DescribeRepositories */
 	static readonly DescribeRepositories = "ecr:DescribeRepositories";
 	/** [Read] ecr:DescribeRepositoryCreationTemplates */
@@ -99,6 +102,8 @@ export class ECRActions {
 	/** [List] ecr:ListPullTimeUpdateExclusions */
 	static readonly ListPullTimeUpdateExclusions =
 		"ecr:ListPullTimeUpdateExclusions";
+	/** [List] ecr:ListReplicationBackfills */
+	static readonly ListReplicationBackfills = "ecr:ListReplicationBackfills";
 	/** [Read] ecr:ListTagsForResource */
 	static readonly ListTagsForResource = "ecr:ListTagsForResource";
 	/** [Write] ecr:PutAccountSetting */
@@ -134,6 +139,10 @@ export class ECRActions {
 	/** [Write] ecr:StartLifecyclePolicyPreview */
 	static readonly StartLifecyclePolicyPreview =
 		"ecr:StartLifecyclePolicyPreview";
+	/** [Write] ecr:StartReplicationBackfill */
+	static readonly StartReplicationBackfill = "ecr:StartReplicationBackfill";
+	/** [Write] ecr:StopReplicationBackfill */
+	static readonly StopReplicationBackfill = "ecr:StopReplicationBackfill";
 	/** [Tagging] ecr:TagResource */
 	static readonly TagResource = "ecr:TagResource";
 	/** [Tagging] ecr:UntagResource */
@@ -160,6 +169,7 @@ export class ECRActions {
 		ECRActions.DescribeImageScanFindings,
 		ECRActions.DescribeImageSigningStatus,
 		ECRActions.DescribeRegistry,
+		ECRActions.DescribeReplicationBackfillResults,
 		ECRActions.DescribeRepositories,
 		ECRActions.DescribeRepositoryCreationTemplates,
 		ECRActions.actionGetAccountSetting,
@@ -202,6 +212,8 @@ export class ECRActions {
 		ECRActions.ReplicateImage,
 		ECRActions.StartImageScan,
 		ECRActions.StartLifecyclePolicyPreview,
+		ECRActions.StartReplicationBackfill,
+		ECRActions.StopReplicationBackfill,
 		ECRActions.UpdateImageStorageClass,
 		ECRActions.UpdatePullThroughCacheRule,
 		ECRActions.UpdateRepositoryCreationTemplate,
@@ -213,6 +225,7 @@ export class ECRActions {
 		ECRActions.DescribePullThroughCacheRules,
 		ECRActions.ListImages,
 		ECRActions.ListPullTimeUpdateExclusions,
+		ECRActions.ListReplicationBackfills,
 	];
 	/** All permission-management-level actions. */
 	static readonly AllPermissionManagementActions: string[] = [
@@ -384,6 +397,10 @@ export class ECROperations {
 	];
 	/** IAM actions required for the DescribeRegistry API call. */
 	static readonly DescribeRegistry: string[] = ["ecr:DescribeRegistry"];
+	/** IAM actions required for the DescribeReplicationBackfillResults API call. */
+	static readonly DescribeReplicationBackfillResults: string[] = [
+		"ecr:DescribeReplicationBackfillResults",
+	];
 	/** IAM actions required for the DescribeRepositories API call. */
 	static readonly DescribeRepositories: string[] = ["ecr:DescribeRepositories"];
 	/** IAM actions required for the DescribeRepositoryCreationTemplates API call. */
@@ -433,6 +450,10 @@ export class ECROperations {
 	static readonly ListPullTimeUpdateExclusions: string[] = [
 		"ecr:ListPullTimeUpdateExclusions",
 	];
+	/** IAM actions required for the ListReplicationBackfills API call. */
+	static readonly ListReplicationBackfills: string[] = [
+		"ecr:ListReplicationBackfills",
+	];
 	/** IAM actions required for the ListTagsForResource API call. */
 	static readonly ListTagsForResource: string[] = ["ecr:ListTagsForResource"];
 	/** IAM actions required for the PutAccountSetting API call. */
@@ -474,6 +495,14 @@ export class ECROperations {
 	/** IAM actions required for the StartLifecyclePolicyPreview API call. */
 	static readonly StartLifecyclePolicyPreview: string[] = [
 		"ecr:StartLifecyclePolicyPreview",
+	];
+	/** IAM actions required for the StartReplicationBackfill API call. */
+	static readonly StartReplicationBackfill: string[] = [
+		"ecr:StartReplicationBackfill",
+	];
+	/** IAM actions required for the StopReplicationBackfill API call. */
+	static readonly StopReplicationBackfill: string[] = [
+		"ecr:StopReplicationBackfill",
 	];
 	/** IAM actions required for the TagResource API call. */
 	static readonly TagResource: string[] = ["ecr:TagResource"];
