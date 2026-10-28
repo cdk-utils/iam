@@ -314,6 +314,8 @@ export class PartnercentralActions {
 	/** [Write] partnercentral:RejectEngagementInvitation */
 	static readonly RejectEngagementInvitation =
 		"partnercentral:RejectEngagementInvitation";
+	/** [List] partnercentral:SearchOpportunities */
+	static readonly SearchOpportunities = "partnercentral:SearchOpportunities";
 	/** [List] partnercentral:SearchPartnerCentralContent */
 	static readonly SearchPartnerCentralContent =
 		"partnercentral:SearchPartnerCentralContent";
@@ -531,6 +533,7 @@ export class PartnercentralActions {
 		PartnercentralActions.ListRevenueAttributionAllocations,
 		PartnercentralActions.ListRevenueAttributions,
 		PartnercentralActions.ListSolutions,
+		PartnercentralActions.SearchOpportunities,
 		PartnercentralActions.SearchPartnerCentralContent,
 		PartnercentralActions.SearchPartnerProfiles,
 	];
@@ -3129,6 +3132,10 @@ export class PartnercentralConditions {
 	];
 	/** Condition keys applicable to the RejectEngagementInvitation action. */
 	static readonly RejectEngagementInvitationConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the SearchOpportunities action. */
+	static readonly SearchOpportunitiesConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the SearchPartnerCentralContent action. */

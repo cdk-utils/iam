@@ -303,6 +303,69 @@
       }
     },
     {
+      "Name": "PauseConnector",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connector"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RestartConnector",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connector"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ResumeConnector",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connector"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "TagResource",
       "ActionConditionKeys": [
         "aws:RequestTag/${TagKey}",
@@ -697,6 +760,12 @@
     },
     {
       "Name": "PauseConnector",
+      "AuthorizedActions": [
+        {
+          "Name": "PauseConnector",
+          "Service": "kafkaconnect"
+        }
+      ],
       "SDK": [
         {
           "Name": "kafkaconnect",
@@ -707,6 +776,12 @@
     },
     {
       "Name": "RestartConnector",
+      "AuthorizedActions": [
+        {
+          "Name": "RestartConnector",
+          "Service": "kafkaconnect"
+        }
+      ],
       "SDK": [
         {
           "Name": "kafkaconnect",
@@ -717,6 +792,12 @@
     },
     {
       "Name": "ResumeConnector",
+      "AuthorizedActions": [
+        {
+          "Name": "ResumeConnector",
+          "Service": "kafkaconnect"
+        }
+      ],
       "SDK": [
         {
           "Name": "kafkaconnect",

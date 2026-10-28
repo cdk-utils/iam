@@ -10430,6 +10430,7 @@ new bedrock_agentcore.BedrockAgentcoreOperations()
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.opSetTokenVaultCMK">opSetTokenVaultCMK</a></code> | <code>string[]</code> | IAM actions required for the SetTokenVaultCMK API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.ProcessPayment">ProcessPayment</a></code> | <code>string[]</code> | IAM actions required for the ProcessPayment API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.PutResourcePolicy">PutResourcePolicy</a></code> | <code>string[]</code> | IAM actions required for the PutResourcePolicy API call. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.ResetTokenVaultKeyMaterial">ResetTokenVaultKeyMaterial</a></code> | <code>string[]</code> | IAM actions required for the ResetTokenVaultKeyMaterial API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.RetrieveMemoryRecords">RetrieveMemoryRecords</a></code> | <code>string[]</code> | IAM actions required for the RetrieveMemoryRecords API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.RotatePaymentConnectorCredentials">RotatePaymentConnectorCredentials</a></code> | <code>string[]</code> | IAM actions required for the RotatePaymentConnectorCredentials API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.SaveBrowserSessionProfile">SaveBrowserSessionProfile</a></code> | <code>string[]</code> | IAM actions required for the SaveBrowserSessionProfile API call. |
@@ -12769,6 +12770,18 @@ public readonly PutResourcePolicy: string[];
 - *Type:* string[]
 
 IAM actions required for the PutResourcePolicy API call.
+
+---
+
+##### `ResetTokenVaultKeyMaterial`<sup>Required</sup> <a name="ResetTokenVaultKeyMaterial" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.ResetTokenVaultKeyMaterial"></a>
+
+```typescript
+public readonly ResetTokenVaultKeyMaterial: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ResetTokenVaultKeyMaterial API call.
 
 ---
 

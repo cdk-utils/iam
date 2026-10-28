@@ -43276,6 +43276,7 @@ new ec2.EC2Operations()
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.opGetHostReservationPurchasePreview">opGetHostReservationPurchasePreview</a></code> | <code>string[]</code> | IAM actions required for the GetHostReservationPurchasePreview API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.opGetImageAncestry">opGetImageAncestry</a></code> | <code>string[]</code> | IAM actions required for the GetImageAncestry API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.opGetImageBlockPublicAccessState">opGetImageBlockPublicAccessState</a></code> | <code>string[]</code> | IAM actions required for the GetImageBlockPublicAccessState API call. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.opGetImageFindings">opGetImageFindings</a></code> | <code>string[]</code> | IAM actions required for the GetImageFindings API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.opGetInstanceMetadataDefaults">opGetInstanceMetadataDefaults</a></code> | <code>string[]</code> | IAM actions required for the GetInstanceMetadataDefaults API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.opGetInstanceTpmEkPub">opGetInstanceTpmEkPub</a></code> | <code>string[]</code> | IAM actions required for the GetInstanceTpmEkPub API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.opGetInstanceTypesFromInstanceRequirements">opGetInstanceTypesFromInstanceRequirements</a></code> | <code>string[]</code> | IAM actions required for the GetInstanceTypesFromInstanceRequirements API call. |
@@ -51521,6 +51522,18 @@ public readonly opGetImageBlockPublicAccessState: string[];
 - *Type:* string[]
 
 IAM actions required for the GetImageBlockPublicAccessState API call.
+
+---
+
+##### `opGetImageFindings`<sup>Required</sup> <a name="opGetImageFindings" id="@cdk_utils/iam.ec2.EC2Operations.property.opGetImageFindings"></a>
+
+```typescript
+public readonly opGetImageFindings: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetImageFindings API call.
 
 ---
 

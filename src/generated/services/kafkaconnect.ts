@@ -48,6 +48,12 @@ export class KafkaconnectActions {
 	/** [Read] kafkaconnect:ListWorkerConfigurations */
 	static readonly ListWorkerConfigurations =
 		"kafkaconnect:ListWorkerConfigurations";
+	/** [Write] kafkaconnect:PauseConnector */
+	static readonly PauseConnector = "kafkaconnect:PauseConnector";
+	/** [Write] kafkaconnect:RestartConnector */
+	static readonly RestartConnector = "kafkaconnect:RestartConnector";
+	/** [Write] kafkaconnect:ResumeConnector */
+	static readonly ResumeConnector = "kafkaconnect:ResumeConnector";
 	/** [Tagging] kafkaconnect:TagResource */
 	static readonly TagResource = "kafkaconnect:TagResource";
 	/** [Tagging] kafkaconnect:UntagResource */
@@ -75,6 +81,9 @@ export class KafkaconnectActions {
 		KafkaconnectActions.DeleteConnector,
 		KafkaconnectActions.DeleteCustomPlugin,
 		KafkaconnectActions.DeleteWorkerConfiguration,
+		KafkaconnectActions.PauseConnector,
+		KafkaconnectActions.RestartConnector,
+		KafkaconnectActions.ResumeConnector,
 		KafkaconnectActions.UpdateConnector,
 	];
 	/** All list-level actions. */
@@ -439,11 +448,13 @@ export class KafkaconnectOperations {
 		"kafkaconnect:ListWorkerConfigurations",
 	];
 	/** IAM actions required for the PauseConnector API call. */
-	static readonly PauseConnector: string[] = [];
+	static readonly PauseConnector: string[] = ["kafkaconnect:PauseConnector"];
 	/** IAM actions required for the RestartConnector API call. */
-	static readonly RestartConnector: string[] = [];
+	static readonly RestartConnector: string[] = [
+		"kafkaconnect:RestartConnector",
+	];
 	/** IAM actions required for the ResumeConnector API call. */
-	static readonly ResumeConnector: string[] = [];
+	static readonly ResumeConnector: string[] = ["kafkaconnect:ResumeConnector"];
 	/** IAM actions required for the TagResource API call. */
 	static readonly TagResource: string[] = ["kafkaconnect:TagResource"];
 	/** IAM actions required for the UntagResource API call. */

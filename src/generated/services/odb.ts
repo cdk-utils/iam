@@ -213,6 +213,9 @@ export class OdbActions {
 		"odb:UpdateCloudExadataInfrastructure";
 	/** [Write] odb:UpdateExadbVmCluster */
 	static readonly UpdateExadbVmCluster = "odb:UpdateExadbVmCluster";
+	/** [Write] odb:UpdateExascaleCloudExadataInfrastructure */
+	static readonly UpdateExascaleCloudExadataInfrastructure =
+		"odb:UpdateExascaleCloudExadataInfrastructure";
 	/** [Write] odb:UpdateExascaleDbStorageVault */
 	static readonly UpdateExascaleDbStorageVault =
 		"odb:UpdateExascaleDbStorageVault";
@@ -292,6 +295,7 @@ export class OdbActions {
 		OdbActions.UpdateAutonomousDatabaseBackup,
 		OdbActions.UpdateCloudExadataInfrastructure,
 		OdbActions.UpdateExadbVmCluster,
+		OdbActions.UpdateExascaleCloudExadataInfrastructure,
 		OdbActions.UpdateExascaleDbStorageVault,
 		OdbActions.UpdateGrantShare,
 		OdbActions.UpdateOdbNetwork,
@@ -1244,7 +1248,9 @@ export class OdbOperations {
 	/** IAM actions required for the UpdateExadbVmCluster API call. */
 	static readonly UpdateExadbVmCluster: string[] = ["odb:UpdateExadbVmCluster"];
 	/** IAM actions required for the UpdateExascaleCloudExadataInfrastructure API call. */
-	static readonly UpdateExascaleCloudExadataInfrastructure: string[] = [];
+	static readonly UpdateExascaleCloudExadataInfrastructure: string[] = [
+		"odb:UpdateExascaleCloudExadataInfrastructure",
+	];
 	/** IAM actions required for the UpdateExascaleDbStorageVault API call. */
 	static readonly UpdateExascaleDbStorageVault: string[] = [
 		"odb:UpdateExascaleDbStorageVault",

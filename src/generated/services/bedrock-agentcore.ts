@@ -3830,6 +3830,10 @@ export class BedrockAgentcoreOperations {
 	static readonly PutResourcePolicy: string[] = [
 		"bedrock-agentcore:PutResourcePolicy",
 	];
+	/** IAM actions required for the ResetTokenVaultKeyMaterial API call. */
+	static readonly ResetTokenVaultKeyMaterial: string[] = [
+		"bedrock-agentcore:ResetTokenVaultKeyMaterial",
+	];
 	/** IAM actions required for the RetrieveMemoryRecords API call. */
 	static readonly RetrieveMemoryRecords: string[] = [
 		"bedrock-agentcore:RetrieveMemoryRecords",

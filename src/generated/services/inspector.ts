@@ -302,10 +302,7 @@ export class InspectorOperations {
 	/** IAM actions required for the PreviewAgentsForResourceGroup API call. */
 	static readonly PreviewAgentsForResourceGroup: string[] = [];
 	/** IAM actions required for the RegisterCrossAccountAccessRole API call. */
-	static readonly RegisterCrossAccountAccessRole: string[] = [
-		"iam:PassRole",
-		"inspector:RegisterCrossAccountAccessRole",
-	];
+	static readonly RegisterCrossAccountAccessRole: string[] = [];
 	/** IAM actions required for the RemoveAttributesFromFindings API call. */
 	static readonly RemoveAttributesFromFindings: string[] = [
 		"inspector:RemoveAttributesFromFindings",

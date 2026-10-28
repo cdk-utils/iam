@@ -1600,6 +1600,7 @@ new odb.OdbActions()
 | <code><a href="#@cdk_utils/iam.odb.OdbActions.property.UpdateAutonomousDatabaseBackup">UpdateAutonomousDatabaseBackup</a></code> | <code>string</code> | [Write] odb:UpdateAutonomousDatabaseBackup. |
 | <code><a href="#@cdk_utils/iam.odb.OdbActions.property.UpdateCloudExadataInfrastructure">UpdateCloudExadataInfrastructure</a></code> | <code>string</code> | [Write] odb:UpdateCloudExadataInfrastructure. |
 | <code><a href="#@cdk_utils/iam.odb.OdbActions.property.UpdateExadbVmCluster">UpdateExadbVmCluster</a></code> | <code>string</code> | [Write] odb:UpdateExadbVmCluster. |
+| <code><a href="#@cdk_utils/iam.odb.OdbActions.property.UpdateExascaleCloudExadataInfrastructure">UpdateExascaleCloudExadataInfrastructure</a></code> | <code>string</code> | [Write] odb:UpdateExascaleCloudExadataInfrastructure. |
 | <code><a href="#@cdk_utils/iam.odb.OdbActions.property.UpdateExascaleDbStorageVault">UpdateExascaleDbStorageVault</a></code> | <code>string</code> | [Write] odb:UpdateExascaleDbStorageVault. |
 | <code><a href="#@cdk_utils/iam.odb.OdbActions.property.UpdateGrantShare">UpdateGrantShare</a></code> | <code>string</code> | [Write] odb:UpdateGrantShare. |
 | <code><a href="#@cdk_utils/iam.odb.OdbActions.property.UpdateOdbNetwork">UpdateOdbNetwork</a></code> | <code>string</code> | [Write] odb:UpdateOdbNetwork. |
@@ -2697,6 +2698,18 @@ public readonly UpdateExadbVmCluster: string;
 - *Type:* string
 
 [Write] odb:UpdateExadbVmCluster.
+
+---
+
+##### `UpdateExascaleCloudExadataInfrastructure`<sup>Required</sup> <a name="UpdateExascaleCloudExadataInfrastructure" id="@cdk_utils/iam.odb.OdbActions.property.UpdateExascaleCloudExadataInfrastructure"></a>
+
+```typescript
+public readonly UpdateExascaleCloudExadataInfrastructure: string;
+```
+
+- *Type:* string
+
+[Write] odb:UpdateExascaleCloudExadataInfrastructure.
 
 ---
 

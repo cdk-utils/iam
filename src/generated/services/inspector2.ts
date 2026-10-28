@@ -113,6 +113,9 @@ export class Inspector2Actions {
 		"inspector2:GetFindingsReportStatus";
 	/** [Read] inspector2:GetMember */
 	static readonly actionGetMember = "inspector2:GetMember";
+	/** [Read] inspector2:GetOnDemandScanStatus */
+	static readonly actionGetOnDemandScanStatus =
+		"inspector2:GetOnDemandScanStatus";
 	/** [Read] inspector2:GetSbomExport */
 	static readonly actionGetSbomExport = "inspector2:GetSbomExport";
 	/** [List] inspector2:ListAccountPermissions */
@@ -158,6 +161,8 @@ export class Inspector2Actions {
 	static readonly ListFindings = "inspector2:ListFindings";
 	/** [List] inspector2:ListMembers */
 	static readonly ListMembers = "inspector2:ListMembers";
+	/** [List] inspector2:ListOnDemandScans */
+	static readonly ListOnDemandScans = "inspector2:ListOnDemandScans";
 	/** [Read] inspector2:ListTagsForResource */
 	static readonly ListTagsForResource = "inspector2:ListTagsForResource";
 	/** [List] inspector2:ListUsageTotals */
@@ -175,6 +180,8 @@ export class Inspector2Actions {
 	static readonly StartCisSession = "inspector2:StartCisSession";
 	/** [Write] inspector2:StartCodeSecurityScan */
 	static readonly StartCodeSecurityScan = "inspector2:StartCodeSecurityScan";
+	/** [Write] inspector2:StartOnDemandScan */
+	static readonly StartOnDemandScan = "inspector2:StartOnDemandScan";
 	/** [Write] inspector2:StopCisSession */
 	static readonly StopCisSession = "inspector2:StopCisSession";
 	/** [Tagging] inspector2:TagResource */
@@ -230,6 +237,7 @@ export class Inspector2Actions {
 		Inspector2Actions.actionGetEncryptionKey,
 		Inspector2Actions.actionGetFindingsReportStatus,
 		Inspector2Actions.actionGetMember,
+		Inspector2Actions.actionGetOnDemandScanStatus,
 		Inspector2Actions.actionGetSbomExport,
 		Inspector2Actions.ListTagsForResource,
 		Inspector2Actions.SearchVulnerabilities,
@@ -264,6 +272,7 @@ export class Inspector2Actions {
 		Inspector2Actions.SendCisSessionTelemetry,
 		Inspector2Actions.StartCisSession,
 		Inspector2Actions.StartCodeSecurityScan,
+		Inspector2Actions.StartOnDemandScan,
 		Inspector2Actions.StopCisSession,
 		Inspector2Actions.UpdateCisScanConfiguration,
 		Inspector2Actions.UpdateCodeSecurityIntegration,
@@ -297,6 +306,7 @@ export class Inspector2Actions {
 		Inspector2Actions.ListFindingAggregations,
 		Inspector2Actions.ListFindings,
 		Inspector2Actions.ListMembers,
+		Inspector2Actions.ListOnDemandScans,
 		Inspector2Actions.ListUsageTotals,
 	];
 	/** All permission-management-level actions. */
@@ -865,6 +875,10 @@ export class Inspector2Operations {
 	];
 	/** IAM actions required for the GetMember API call. */
 	static readonly opGetMember: string[] = ["inspector2:GetMember"];
+	/** IAM actions required for the GetOnDemandScanStatus API call. */
+	static readonly opGetOnDemandScanStatus: string[] = [
+		"inspector2:GetOnDemandScanStatus",
+	];
 	/** IAM actions required for the GetSbomExport API call. */
 	static readonly opGetSbomExport: string[] = ["inspector2:GetSbomExport"];
 	/** IAM actions required for the ListAccountPermissions API call. */
@@ -923,6 +937,10 @@ export class Inspector2Operations {
 	static readonly ListFindings: string[] = ["inspector2:ListFindings"];
 	/** IAM actions required for the ListMembers API call. */
 	static readonly ListMembers: string[] = ["inspector2:ListMembers"];
+	/** IAM actions required for the ListOnDemandScans API call. */
+	static readonly ListOnDemandScans: string[] = [
+		"inspector2:ListOnDemandScans",
+	];
 	/** IAM actions required for the ListTagsForResource API call. */
 	static readonly ListTagsForResource: string[] = [
 		"inspector2:ListTagsForResource",
@@ -950,6 +968,10 @@ export class Inspector2Operations {
 	/** IAM actions required for the StartCodeSecurityScan API call. */
 	static readonly StartCodeSecurityScan: string[] = [
 		"inspector2:StartCodeSecurityScan",
+	];
+	/** IAM actions required for the StartOnDemandScan API call. */
+	static readonly StartOnDemandScan: string[] = [
+		"inspector2:StartOnDemandScan",
 	];
 	/** IAM actions required for the StopCisSession API call. */
 	static readonly StopCisSession: string[] = ["inspector2:StopCisSession"];
@@ -1029,6 +1051,14 @@ export class Inspector2Conditions {
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
+	/** Condition keys applicable to the CreateFindingsReport action. */
+	static readonly CreateFindingsReportConditionKeys: string[] = [
+		"inspector2:ExpectedBucketOwner",
+	];
+	/** Condition keys applicable to the CreateSbomExport action. */
+	static readonly CreateSbomExportConditionKeys: string[] = [
+		"inspector2:ExpectedBucketOwner",
+	];
 	/** Condition keys applicable to the DeleteCisScanConfiguration action. */
 	static readonly DeleteCisScanConfigurationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
@@ -1074,6 +1104,8 @@ export class Inspector2Conditions {
 	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
 	static readonly AWS_TAG_KEYS = "aws:TagKeys";
+	/** Condition key: inspector2:ExpectedBucketOwner (String) */
+	static readonly EXPECTED_BUCKET_OWNER = "inspector2:ExpectedBucketOwner";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.
@@ -1094,5 +1126,14 @@ export class Inspector2Conditions {
 	 */
 	static tagKeys(values: string[]): Record<string, Record<string, string[]>> {
 		return { "ForAllValues:StringEquals": { "aws:TagKeys": values } };
+	}
+
+	/**
+	 * Generates a condition block for `inspector2:ExpectedBucketOwner`.
+	 */
+	static expectedBucketOwner(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "inspector2:ExpectedBucketOwner": value } };
 	}
 }

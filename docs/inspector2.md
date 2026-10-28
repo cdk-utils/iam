@@ -1007,6 +1007,7 @@ new inspector2.Inspector2Actions()
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Actions.property.actionGetEncryptionKey">actionGetEncryptionKey</a></code> | <code>string</code> | [Read] inspector2:GetEncryptionKey. |
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Actions.property.actionGetFindingsReportStatus">actionGetFindingsReportStatus</a></code> | <code>string</code> | [Read] inspector2:GetFindingsReportStatus. |
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Actions.property.actionGetMember">actionGetMember</a></code> | <code>string</code> | [Read] inspector2:GetMember. |
+| <code><a href="#@cdk_utils/iam.inspector2.Inspector2Actions.property.actionGetOnDemandScanStatus">actionGetOnDemandScanStatus</a></code> | <code>string</code> | [Read] inspector2:GetOnDemandScanStatus. |
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Actions.property.actionGetSbomExport">actionGetSbomExport</a></code> | <code>string</code> | [Read] inspector2:GetSbomExport. |
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Actions.property.AllListActions">AllListActions</a></code> | <code>string[]</code> | All list-level actions. |
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Actions.property.AllPermissionManagementActions">AllPermissionManagementActions</a></code> | <code>string[]</code> | All permission-management-level actions. |
@@ -1059,6 +1060,7 @@ new inspector2.Inspector2Actions()
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Actions.property.ListFindingAggregations">ListFindingAggregations</a></code> | <code>string</code> | [List] inspector2:ListFindingAggregations. |
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Actions.property.ListFindings">ListFindings</a></code> | <code>string</code> | [List] inspector2:ListFindings. |
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Actions.property.ListMembers">ListMembers</a></code> | <code>string</code> | [List] inspector2:ListMembers. |
+| <code><a href="#@cdk_utils/iam.inspector2.Inspector2Actions.property.ListOnDemandScans">ListOnDemandScans</a></code> | <code>string</code> | [List] inspector2:ListOnDemandScans. |
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Actions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [Read] inspector2:ListTagsForResource. |
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Actions.property.ListUsageTotals">ListUsageTotals</a></code> | <code>string</code> | [List] inspector2:ListUsageTotals. |
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Actions.property.ResetEncryptionKey">ResetEncryptionKey</a></code> | <code>string</code> | [Write] inspector2:ResetEncryptionKey. |
@@ -1068,6 +1070,7 @@ new inspector2.Inspector2Actions()
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Actions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Actions.property.StartCisSession">StartCisSession</a></code> | <code>string</code> | [Write] inspector2:StartCisSession. |
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Actions.property.StartCodeSecurityScan">StartCodeSecurityScan</a></code> | <code>string</code> | [Write] inspector2:StartCodeSecurityScan. |
+| <code><a href="#@cdk_utils/iam.inspector2.Inspector2Actions.property.StartOnDemandScan">StartOnDemandScan</a></code> | <code>string</code> | [Write] inspector2:StartOnDemandScan. |
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Actions.property.StopCisSession">StopCisSession</a></code> | <code>string</code> | [Write] inspector2:StopCisSession. |
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Actions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] inspector2:TagResource. |
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Actions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] inspector2:UntagResource. |
@@ -1226,6 +1229,18 @@ public readonly actionGetMember: string;
 - *Type:* string
 
 [Read] inspector2:GetMember.
+
+---
+
+##### `actionGetOnDemandScanStatus`<sup>Required</sup> <a name="actionGetOnDemandScanStatus" id="@cdk_utils/iam.inspector2.Inspector2Actions.property.actionGetOnDemandScanStatus"></a>
+
+```typescript
+public readonly actionGetOnDemandScanStatus: string;
+```
+
+- *Type:* string
+
+[Read] inspector2:GetOnDemandScanStatus.
 
 ---
 
@@ -1853,6 +1868,18 @@ public readonly ListMembers: string;
 
 ---
 
+##### `ListOnDemandScans`<sup>Required</sup> <a name="ListOnDemandScans" id="@cdk_utils/iam.inspector2.Inspector2Actions.property.ListOnDemandScans"></a>
+
+```typescript
+public readonly ListOnDemandScans: string;
+```
+
+- *Type:* string
+
+[List] inspector2:ListOnDemandScans.
+
+---
+
 ##### `ListTagsForResource`<sup>Required</sup> <a name="ListTagsForResource" id="@cdk_utils/iam.inspector2.Inspector2Actions.property.ListTagsForResource"></a>
 
 ```typescript
@@ -1958,6 +1985,18 @@ public readonly StartCodeSecurityScan: string;
 - *Type:* string
 
 [Write] inspector2:StartCodeSecurityScan.
+
+---
+
+##### `StartOnDemandScan`<sup>Required</sup> <a name="StartOnDemandScan" id="@cdk_utils/iam.inspector2.Inspector2Actions.property.StartOnDemandScan"></a>
+
+```typescript
+public readonly StartOnDemandScan: string;
+```
+
+- *Type:* string
+
+[Write] inspector2:StartOnDemandScan.
 
 ---
 
@@ -2151,9 +2190,26 @@ new inspector2.Inspector2Conditions()
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdk_utils/iam.inspector2.Inspector2Conditions.expectedBucketOwner">expectedBucketOwner</a></code> | Generates a condition block for `inspector2:ExpectedBucketOwner`. |
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Conditions.requestTag">requestTag</a></code> | Generates a condition block for `aws:RequestTag/${TagKey}`. |
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Conditions.resourceTag">resourceTag</a></code> | Generates a condition block for `aws:ResourceTag/${TagKey}`. |
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Conditions.tagKeys">tagKeys</a></code> | Generates a condition block for `aws:TagKeys`. |
+
+---
+
+##### `expectedBucketOwner` <a name="expectedBucketOwner" id="@cdk_utils/iam.inspector2.Inspector2Conditions.expectedBucketOwner"></a>
+
+```typescript
+import { inspector2 } from '@cdk_utils/iam'
+
+inspector2.Inspector2Conditions.expectedBucketOwner(value: string)
+```
+
+Generates a condition block for `inspector2:ExpectedBucketOwner`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.inspector2.Inspector2Conditions.expectedBucketOwner.parameter.value"></a>
+
+- *Type:* string
 
 ---
 
@@ -2218,7 +2274,10 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Conditions.property.CreateCodeSecurityScanConfigurationConditionKeys">CreateCodeSecurityScanConfigurationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateCodeSecurityScanConfiguration action. |
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Conditions.property.CreateConnectorConditionKeys">CreateConnectorConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateConnector action. |
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Conditions.property.CreateFilterConditionKeys">CreateFilterConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateFilter action. |
+| <code><a href="#@cdk_utils/iam.inspector2.Inspector2Conditions.property.CreateFindingsReportConditionKeys">CreateFindingsReportConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateFindingsReport action. |
+| <code><a href="#@cdk_utils/iam.inspector2.Inspector2Conditions.property.CreateSbomExportConditionKeys">CreateSbomExportConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateSbomExport action. |
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Conditions.property.DeleteCisScanConfigurationConditionKeys">DeleteCisScanConfigurationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteCisScanConfiguration action. |
+| <code><a href="#@cdk_utils/iam.inspector2.Inspector2Conditions.property.EXPECTED_BUCKET_OWNER">EXPECTED_BUCKET_OWNER</a></code> | <code>string</code> | Condition key: inspector2:ExpectedBucketOwner (String). |
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Conditions.property.TagResourceConditionKeys">TagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TagResource action. |
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Conditions.property.UntagResourceConditionKeys">UntagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UntagResource action. |
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Conditions.property.UpdateCisScanConfigurationConditionKeys">UpdateCisScanConfigurationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateCisScanConfiguration action. |
@@ -2325,6 +2384,30 @@ Condition keys applicable to the CreateFilter action.
 
 ---
 
+##### `CreateFindingsReportConditionKeys`<sup>Required</sup> <a name="CreateFindingsReportConditionKeys" id="@cdk_utils/iam.inspector2.Inspector2Conditions.property.CreateFindingsReportConditionKeys"></a>
+
+```typescript
+public readonly CreateFindingsReportConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateFindingsReport action.
+
+---
+
+##### `CreateSbomExportConditionKeys`<sup>Required</sup> <a name="CreateSbomExportConditionKeys" id="@cdk_utils/iam.inspector2.Inspector2Conditions.property.CreateSbomExportConditionKeys"></a>
+
+```typescript
+public readonly CreateSbomExportConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateSbomExport action.
+
+---
+
 ##### `DeleteCisScanConfigurationConditionKeys`<sup>Required</sup> <a name="DeleteCisScanConfigurationConditionKeys" id="@cdk_utils/iam.inspector2.Inspector2Conditions.property.DeleteCisScanConfigurationConditionKeys"></a>
 
 ```typescript
@@ -2334,6 +2417,18 @@ public readonly DeleteCisScanConfigurationConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the DeleteCisScanConfiguration action.
+
+---
+
+##### `EXPECTED_BUCKET_OWNER`<sup>Required</sup> <a name="EXPECTED_BUCKET_OWNER" id="@cdk_utils/iam.inspector2.Inspector2Conditions.property.EXPECTED_BUCKET_OWNER"></a>
+
+```typescript
+public readonly EXPECTED_BUCKET_OWNER: string;
+```
+
+- *Type:* string
+
+Condition key: inspector2:ExpectedBucketOwner (String).
 
 ---
 
@@ -2491,6 +2586,7 @@ new inspector2.Inspector2Operations()
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Operations.property.ListFindingAggregations">ListFindingAggregations</a></code> | <code>string[]</code> | IAM actions required for the ListFindingAggregations API call. |
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Operations.property.ListFindings">ListFindings</a></code> | <code>string[]</code> | IAM actions required for the ListFindings API call. |
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Operations.property.ListMembers">ListMembers</a></code> | <code>string[]</code> | IAM actions required for the ListMembers API call. |
+| <code><a href="#@cdk_utils/iam.inspector2.Inspector2Operations.property.ListOnDemandScans">ListOnDemandScans</a></code> | <code>string[]</code> | IAM actions required for the ListOnDemandScans API call. |
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Operations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Operations.property.ListUsageTotals">ListUsageTotals</a></code> | <code>string[]</code> | IAM actions required for the ListUsageTotals API call. |
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Operations.property.opGetCisScanReport">opGetCisScanReport</a></code> | <code>string[]</code> | IAM actions required for the GetCisScanReport API call. |
@@ -2505,6 +2601,7 @@ new inspector2.Inspector2Operations()
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Operations.property.opGetEncryptionKey">opGetEncryptionKey</a></code> | <code>string[]</code> | IAM actions required for the GetEncryptionKey API call. |
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Operations.property.opGetFindingsReportStatus">opGetFindingsReportStatus</a></code> | <code>string[]</code> | IAM actions required for the GetFindingsReportStatus API call. |
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Operations.property.opGetMember">opGetMember</a></code> | <code>string[]</code> | IAM actions required for the GetMember API call. |
+| <code><a href="#@cdk_utils/iam.inspector2.Inspector2Operations.property.opGetOnDemandScanStatus">opGetOnDemandScanStatus</a></code> | <code>string[]</code> | IAM actions required for the GetOnDemandScanStatus API call. |
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Operations.property.opGetSbomExport">opGetSbomExport</a></code> | <code>string[]</code> | IAM actions required for the GetSbomExport API call. |
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Operations.property.ResetEncryptionKey">ResetEncryptionKey</a></code> | <code>string[]</code> | IAM actions required for the ResetEncryptionKey API call. |
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Operations.property.SearchVulnerabilities">SearchVulnerabilities</a></code> | <code>string[]</code> | IAM actions required for the SearchVulnerabilities API call. |
@@ -2512,6 +2609,7 @@ new inspector2.Inspector2Operations()
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Operations.property.SendCisSessionTelemetry">SendCisSessionTelemetry</a></code> | <code>string[]</code> | IAM actions required for the SendCisSessionTelemetry API call. |
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Operations.property.StartCisSession">StartCisSession</a></code> | <code>string[]</code> | IAM actions required for the StartCisSession API call. |
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Operations.property.StartCodeSecurityScan">StartCodeSecurityScan</a></code> | <code>string[]</code> | IAM actions required for the StartCodeSecurityScan API call. |
+| <code><a href="#@cdk_utils/iam.inspector2.Inspector2Operations.property.StartOnDemandScan">StartOnDemandScan</a></code> | <code>string[]</code> | IAM actions required for the StartOnDemandScan API call. |
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Operations.property.StopCisSession">StopCisSession</a></code> | <code>string[]</code> | IAM actions required for the StopCisSession API call. |
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Operations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
 | <code><a href="#@cdk_utils/iam.inspector2.Inspector2Operations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
@@ -3081,6 +3179,18 @@ IAM actions required for the ListMembers API call.
 
 ---
 
+##### `ListOnDemandScans`<sup>Required</sup> <a name="ListOnDemandScans" id="@cdk_utils/iam.inspector2.Inspector2Operations.property.ListOnDemandScans"></a>
+
+```typescript
+public readonly ListOnDemandScans: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListOnDemandScans API call.
+
+---
+
 ##### `ListTagsForResource`<sup>Required</sup> <a name="ListTagsForResource" id="@cdk_utils/iam.inspector2.Inspector2Operations.property.ListTagsForResource"></a>
 
 ```typescript
@@ -3249,6 +3359,18 @@ IAM actions required for the GetMember API call.
 
 ---
 
+##### `opGetOnDemandScanStatus`<sup>Required</sup> <a name="opGetOnDemandScanStatus" id="@cdk_utils/iam.inspector2.Inspector2Operations.property.opGetOnDemandScanStatus"></a>
+
+```typescript
+public readonly opGetOnDemandScanStatus: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetOnDemandScanStatus API call.
+
+---
+
 ##### `opGetSbomExport`<sup>Required</sup> <a name="opGetSbomExport" id="@cdk_utils/iam.inspector2.Inspector2Operations.property.opGetSbomExport"></a>
 
 ```typescript
@@ -3330,6 +3452,18 @@ public readonly StartCodeSecurityScan: string[];
 - *Type:* string[]
 
 IAM actions required for the StartCodeSecurityScan API call.
+
+---
+
+##### `StartOnDemandScan`<sup>Required</sup> <a name="StartOnDemandScan" id="@cdk_utils/iam.inspector2.Inspector2Operations.property.StartOnDemandScan"></a>
+
+```typescript
+public readonly StartOnDemandScan: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StartOnDemandScan API call.
 
 ---
 

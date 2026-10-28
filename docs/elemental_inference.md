@@ -337,13 +337,16 @@ new elemental_inference.ElementalInferenceActions()
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceActions.property.AssociateFeed">AssociateFeed</a></code> | <code>string</code> | [Write] elemental-inference:AssociateFeed. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceActions.property.CreateDictionary">CreateDictionary</a></code> | <code>string</code> | [Write] elemental-inference:CreateDictionary. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceActions.property.CreateFeed">CreateFeed</a></code> | <code>string</code> | [Write] elemental-inference:CreateFeed. |
+| <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceActions.property.CreateScheduleAction">CreateScheduleAction</a></code> | <code>string</code> | [Write] elemental-inference:CreateScheduleAction. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceActions.property.DeleteDictionary">DeleteDictionary</a></code> | <code>string</code> | [Write] elemental-inference:DeleteDictionary. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceActions.property.DeleteFeed">DeleteFeed</a></code> | <code>string</code> | [Write] elemental-inference:DeleteFeed. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceActions.property.DeleteFeedPolicy">DeleteFeedPolicy</a></code> | <code>string</code> | [Write] elemental-inference:DeleteFeedPolicy. |
+| <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceActions.property.DeleteScheduleAction">DeleteScheduleAction</a></code> | <code>string</code> | [Write] elemental-inference:DeleteScheduleAction. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceActions.property.DisassociateFeed">DisassociateFeed</a></code> | <code>string</code> | [Write] elemental-inference:DisassociateFeed. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceActions.property.ExportDictionaryEntries">ExportDictionaryEntries</a></code> | <code>string</code> | [Read] elemental-inference:ExportDictionaryEntries. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceActions.property.ListDictionaries">ListDictionaries</a></code> | <code>string</code> | [List] elemental-inference:ListDictionaries. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceActions.property.ListFeeds">ListFeeds</a></code> | <code>string</code> | [List] elemental-inference:ListFeeds. |
+| <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceActions.property.ListScheduleActions">ListScheduleActions</a></code> | <code>string</code> | [Read] elemental-inference:ListScheduleActions. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [Read] elemental-inference:ListTagsForResource. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceActions.property.PutFeedPolicy">PutFeedPolicy</a></code> | <code>string</code> | [Write] elemental-inference:PutFeedPolicy. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceActions.property.PutMedia">PutMedia</a></code> | <code>string</code> | [Write] elemental-inference:PutMedia. |
@@ -499,6 +502,18 @@ public readonly CreateFeed: string;
 
 ---
 
+##### `CreateScheduleAction`<sup>Required</sup> <a name="CreateScheduleAction" id="@cdk_utils/iam.elemental_inference.ElementalInferenceActions.property.CreateScheduleAction"></a>
+
+```typescript
+public readonly CreateScheduleAction: string;
+```
+
+- *Type:* string
+
+[Write] elemental-inference:CreateScheduleAction.
+
+---
+
 ##### `DeleteDictionary`<sup>Required</sup> <a name="DeleteDictionary" id="@cdk_utils/iam.elemental_inference.ElementalInferenceActions.property.DeleteDictionary"></a>
 
 ```typescript
@@ -532,6 +547,18 @@ public readonly DeleteFeedPolicy: string;
 - *Type:* string
 
 [Write] elemental-inference:DeleteFeedPolicy.
+
+---
+
+##### `DeleteScheduleAction`<sup>Required</sup> <a name="DeleteScheduleAction" id="@cdk_utils/iam.elemental_inference.ElementalInferenceActions.property.DeleteScheduleAction"></a>
+
+```typescript
+public readonly DeleteScheduleAction: string;
+```
+
+- *Type:* string
+
+[Write] elemental-inference:DeleteScheduleAction.
 
 ---
 
@@ -580,6 +607,18 @@ public readonly ListFeeds: string;
 - *Type:* string
 
 [List] elemental-inference:ListFeeds.
+
+---
+
+##### `ListScheduleActions`<sup>Required</sup> <a name="ListScheduleActions" id="@cdk_utils/iam.elemental_inference.ElementalInferenceActions.property.ListScheduleActions"></a>
+
+```typescript
+public readonly ListScheduleActions: string;
+```
+
+- *Type:* string
+
+[Read] elemental-inference:ListScheduleActions.
 
 ---
 

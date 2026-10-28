@@ -4249,6 +4249,7 @@ new partnercentral.PartnercentralActions()
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.RejectChannelHandshake">RejectChannelHandshake</a></code> | <code>string</code> | [Write] partnercentral:RejectChannelHandshake. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.RejectConnectionInvitation">RejectConnectionInvitation</a></code> | <code>string</code> | [Write] partnercentral:RejectConnectionInvitation. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.RejectEngagementInvitation">RejectEngagementInvitation</a></code> | <code>string</code> | [Write] partnercentral:RejectEngagementInvitation. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.SearchOpportunities">SearchOpportunities</a></code> | <code>string</code> | [List] partnercentral:SearchOpportunities. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.SearchPartnerCentralContent">SearchPartnerCentralContent</a></code> | <code>string</code> | [List] partnercentral:SearchPartnerCentralContent. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.SearchPartnerProfiles">SearchPartnerProfiles</a></code> | <code>string</code> | [List] partnercentral:SearchPartnerProfiles. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.SendEmailVerificationCode">SendEmailVerificationCode</a></code> | <code>string</code> | [Write] partnercentral:SendEmailVerificationCode. |
@@ -5672,6 +5673,18 @@ public readonly RejectEngagementInvitation: string;
 
 ---
 
+##### `SearchOpportunities`<sup>Required</sup> <a name="SearchOpportunities" id="@cdk_utils/iam.partnercentral.PartnercentralActions.property.SearchOpportunities"></a>
+
+```typescript
+public readonly SearchOpportunities: string;
+```
+
+- *Type:* string
+
+[List] partnercentral:SearchOpportunities.
+
+---
+
 ##### `SearchPartnerCentralContent`<sup>Required</sup> <a name="SearchPartnerCentralContent" id="@cdk_utils/iam.partnercentral.PartnercentralActions.property.SearchPartnerCentralContent"></a>
 
 ```typescript
@@ -6299,6 +6312,7 @@ Generates a condition block for `partnercentral:VerificationType`.
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.RejectConnectionInvitationConditionKeys">RejectConnectionInvitationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the RejectConnectionInvitation action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.RejectEngagementInvitationConditionKeys">RejectEngagementInvitationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the RejectEngagementInvitation action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.RELATED_ENTITY_TYPE">RELATED_ENTITY_TYPE</a></code> | <code>string</code> | Condition key: partnercentral:RelatedEntityType (String). |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.SearchOpportunitiesConditionKeys">SearchOpportunitiesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the SearchOpportunities action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.SearchPartnerCentralContentConditionKeys">SearchPartnerCentralContentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the SearchPartnerCentralContent action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.SendEmailVerificationCodeConditionKeys">SendEmailVerificationCodeConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the SendEmailVerificationCode action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.StartEngagementByAcceptingInvitationTaskConditionKeys">StartEngagementByAcceptingInvitationTaskConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartEngagementByAcceptingInvitationTask action. |
@@ -7622,6 +7636,18 @@ public readonly RELATED_ENTITY_TYPE: string;
 - *Type:* string
 
 Condition key: partnercentral:RelatedEntityType (String).
+
+---
+
+##### `SearchOpportunitiesConditionKeys`<sup>Required</sup> <a name="SearchOpportunitiesConditionKeys" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.property.SearchOpportunitiesConditionKeys"></a>
+
+```typescript
+public readonly SearchOpportunitiesConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the SearchOpportunities action.
 
 ---
 

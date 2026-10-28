@@ -38083,6 +38083,16 @@
       ]
     },
     {
+      "Name": "GetImageFindings",
+      "SDK": [
+        {
+          "Name": "ec2",
+          "Method": "get_image_findings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetInstanceMetadataDefaults",
       "AuthorizedActions": [
         {
