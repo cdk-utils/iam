@@ -18,12 +18,18 @@ export class ElementalInferenceActions {
 	static readonly CreateDictionary = "elemental-inference:CreateDictionary";
 	/** [Write] elemental-inference:CreateFeed */
 	static readonly CreateFeed = "elemental-inference:CreateFeed";
+	/** [Write] elemental-inference:CreateScheduleAction */
+	static readonly CreateScheduleAction =
+		"elemental-inference:CreateScheduleAction";
 	/** [Write] elemental-inference:DeleteDictionary */
 	static readonly DeleteDictionary = "elemental-inference:DeleteDictionary";
 	/** [Write] elemental-inference:DeleteFeed */
 	static readonly DeleteFeed = "elemental-inference:DeleteFeed";
 	/** [Write] elemental-inference:DeleteFeedPolicy */
 	static readonly DeleteFeedPolicy = "elemental-inference:DeleteFeedPolicy";
+	/** [Write] elemental-inference:DeleteScheduleAction */
+	static readonly DeleteScheduleAction =
+		"elemental-inference:DeleteScheduleAction";
 	/** [Write] elemental-inference:DisassociateFeed */
 	static readonly DisassociateFeed = "elemental-inference:DisassociateFeed";
 	/** [Read] elemental-inference:ExportDictionaryEntries */
@@ -41,6 +47,9 @@ export class ElementalInferenceActions {
 	static readonly ListDictionaries = "elemental-inference:ListDictionaries";
 	/** [List] elemental-inference:ListFeeds */
 	static readonly ListFeeds = "elemental-inference:ListFeeds";
+	/** [Read] elemental-inference:ListScheduleActions */
+	static readonly ListScheduleActions =
+		"elemental-inference:ListScheduleActions";
 	/** [Read] elemental-inference:ListTagsForResource */
 	static readonly ListTagsForResource =
 		"elemental-inference:ListTagsForResource";
@@ -64,6 +73,7 @@ export class ElementalInferenceActions {
 		ElementalInferenceActions.actionGetFeed,
 		ElementalInferenceActions.actionGetFeedPolicy,
 		ElementalInferenceActions.actionGetMetadata,
+		ElementalInferenceActions.ListScheduleActions,
 		ElementalInferenceActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
@@ -71,9 +81,11 @@ export class ElementalInferenceActions {
 		ElementalInferenceActions.AssociateFeed,
 		ElementalInferenceActions.CreateDictionary,
 		ElementalInferenceActions.CreateFeed,
+		ElementalInferenceActions.CreateScheduleAction,
 		ElementalInferenceActions.DeleteDictionary,
 		ElementalInferenceActions.DeleteFeed,
 		ElementalInferenceActions.DeleteFeedPolicy,
+		ElementalInferenceActions.DeleteScheduleAction,
 		ElementalInferenceActions.DisassociateFeed,
 		ElementalInferenceActions.PutFeedPolicy,
 		ElementalInferenceActions.PutMedia,
@@ -244,7 +256,9 @@ export class ElementalInferenceOperations {
 		"elemental-inference:TagResource",
 	];
 	/** IAM actions required for the CreateScheduleAction API call. */
-	static readonly CreateScheduleAction: string[] = [];
+	static readonly CreateScheduleAction: string[] = [
+		"elemental-inference:CreateScheduleAction",
+	];
 	/** IAM actions required for the DeleteDictionary API call. */
 	static readonly DeleteDictionary: string[] = [
 		"elemental-inference:DeleteDictionary",
@@ -256,7 +270,9 @@ export class ElementalInferenceOperations {
 		"elemental-inference:DeleteFeedPolicy",
 	];
 	/** IAM actions required for the DeleteScheduleAction API call. */
-	static readonly DeleteScheduleAction: string[] = [];
+	static readonly DeleteScheduleAction: string[] = [
+		"elemental-inference:DeleteScheduleAction",
+	];
 	/** IAM actions required for the DisassociateFeed API call. */
 	static readonly DisassociateFeed: string[] = [
 		"elemental-inference:DisassociateFeed",
@@ -284,7 +300,9 @@ export class ElementalInferenceOperations {
 	/** IAM actions required for the ListFeeds API call. */
 	static readonly ListFeeds: string[] = ["elemental-inference:ListFeeds"];
 	/** IAM actions required for the ListScheduleActions API call. */
-	static readonly ListScheduleActions: string[] = [];
+	static readonly ListScheduleActions: string[] = [
+		"elemental-inference:ListScheduleActions",
+	];
 	/** IAM actions required for the ListTagsForResource API call. */
 	static readonly ListTagsForResource: string[] = [
 		"elemental-inference:ListTagsForResource",

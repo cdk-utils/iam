@@ -201,6 +201,9 @@
           "Name": "cloud-exadata-infrastructure"
         },
         {
+          "Name": "exascale-db-storage-vault"
+        },
+        {
           "Name": "odb-network"
         }
       ],
@@ -273,6 +276,11 @@
           "IsWrite": true
         }
       },
+      "Resources": [
+        {
+          "Name": "cloud-exadata-infrastructure"
+        }
+      ],
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -1292,6 +1300,11 @@
           "IsWrite": false
         }
       },
+      "Resources": [
+        {
+          "Name": "cloud-exadata-infrastructure"
+        }
+      ],
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -1855,6 +1868,27 @@
       "Resources": [
         {
           "Name": "exadb-vm-cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateExascaleCloudExadataInfrastructure",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cloud-exadata-infrastructure"
         }
       ],
       "SupportedBy": {
@@ -3288,6 +3322,12 @@
     },
     {
       "Name": "UpdateExascaleCloudExadataInfrastructure",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateExascaleCloudExadataInfrastructure",
+          "Service": "odb"
+        }
+      ],
       "SDK": [
         {
           "Name": "odb",

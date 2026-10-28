@@ -470,7 +470,6 @@
       "Name": "RegisterCrossAccountAccessRole",
       "Annotations": {
         "Properties": {
-          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1282,21 +1281,6 @@
     },
     {
       "Name": "RegisterCrossAccountAccessRole",
-      "AuthorizedActions": [
-        {
-          "Name": "PassRole",
-          "Context": {
-            "iam:PassedToService": [
-              "inspector.amazonaws.com"
-            ]
-          },
-          "Service": "iam"
-        },
-        {
-          "Name": "RegisterCrossAccountAccessRole",
-          "Service": "inspector"
-        }
-      ],
       "SDK": [
         {
           "Name": "inspector",

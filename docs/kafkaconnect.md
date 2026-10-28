@@ -771,6 +771,9 @@ new kafkaconnect.KafkaconnectActions()
 | <code><a href="#@cdk_utils/iam.kafkaconnect.KafkaconnectActions.property.ListCustomPlugins">ListCustomPlugins</a></code> | <code>string</code> | [Read] kafkaconnect:ListCustomPlugins. |
 | <code><a href="#@cdk_utils/iam.kafkaconnect.KafkaconnectActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [Read] kafkaconnect:ListTagsForResource. |
 | <code><a href="#@cdk_utils/iam.kafkaconnect.KafkaconnectActions.property.ListWorkerConfigurations">ListWorkerConfigurations</a></code> | <code>string</code> | [Read] kafkaconnect:ListWorkerConfigurations. |
+| <code><a href="#@cdk_utils/iam.kafkaconnect.KafkaconnectActions.property.PauseConnector">PauseConnector</a></code> | <code>string</code> | [Write] kafkaconnect:PauseConnector. |
+| <code><a href="#@cdk_utils/iam.kafkaconnect.KafkaconnectActions.property.RestartConnector">RestartConnector</a></code> | <code>string</code> | [Write] kafkaconnect:RestartConnector. |
+| <code><a href="#@cdk_utils/iam.kafkaconnect.KafkaconnectActions.property.ResumeConnector">ResumeConnector</a></code> | <code>string</code> | [Write] kafkaconnect:ResumeConnector. |
 | <code><a href="#@cdk_utils/iam.kafkaconnect.KafkaconnectActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.kafkaconnect.KafkaconnectActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] kafkaconnect:TagResource. |
 | <code><a href="#@cdk_utils/iam.kafkaconnect.KafkaconnectActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] kafkaconnect:UntagResource. |
@@ -1015,6 +1018,42 @@ public readonly ListWorkerConfigurations: string;
 - *Type:* string
 
 [Read] kafkaconnect:ListWorkerConfigurations.
+
+---
+
+##### `PauseConnector`<sup>Required</sup> <a name="PauseConnector" id="@cdk_utils/iam.kafkaconnect.KafkaconnectActions.property.PauseConnector"></a>
+
+```typescript
+public readonly PauseConnector: string;
+```
+
+- *Type:* string
+
+[Write] kafkaconnect:PauseConnector.
+
+---
+
+##### `RestartConnector`<sup>Required</sup> <a name="RestartConnector" id="@cdk_utils/iam.kafkaconnect.KafkaconnectActions.property.RestartConnector"></a>
+
+```typescript
+public readonly RestartConnector: string;
+```
+
+- *Type:* string
+
+[Write] kafkaconnect:RestartConnector.
+
+---
+
+##### `ResumeConnector`<sup>Required</sup> <a name="ResumeConnector" id="@cdk_utils/iam.kafkaconnect.KafkaconnectActions.property.ResumeConnector"></a>
+
+```typescript
+public readonly ResumeConnector: string;
+```
+
+- *Type:* string
+
+[Write] kafkaconnect:ResumeConnector.
 
 ---
 

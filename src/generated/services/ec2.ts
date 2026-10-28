@@ -12233,6 +12233,8 @@ export class EC2Operations {
 	static readonly opGetImageBlockPublicAccessState: string[] = [
 		"ec2:GetImageBlockPublicAccessState",
 	];
+	/** IAM actions required for the GetImageFindings API call. */
+	static readonly opGetImageFindings: string[] = [];
 	/** IAM actions required for the GetInstanceMetadataDefaults API call. */
 	static readonly opGetInstanceMetadataDefaults: string[] = [
 		"ec2:GetInstanceMetadataDefaults",

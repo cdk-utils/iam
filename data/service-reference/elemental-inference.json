@@ -64,6 +64,27 @@
       }
     },
     {
+      "Name": "CreateScheduleAction",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "feed"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "DeleteDictionary",
       "Annotations": {
         "Properties": {
@@ -107,6 +128,27 @@
     },
     {
       "Name": "DeleteFeedPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "feed"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteScheduleAction",
       "Annotations": {
         "Properties": {
           "IsDataPlane": false,
@@ -278,6 +320,27 @@
           "IsWrite": false
         }
       },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListScheduleActions",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "feed"
+        }
+      ],
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -526,6 +589,12 @@
     },
     {
       "Name": "CreateScheduleAction",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateScheduleAction",
+          "Service": "elemental-inference"
+        }
+      ],
       "SDK": [
         {
           "Name": "elementalinference",
@@ -584,6 +653,12 @@
     },
     {
       "Name": "DeleteScheduleAction",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteScheduleAction",
+          "Service": "elemental-inference"
+        }
+      ],
       "SDK": [
         {
           "Name": "elementalinference",
@@ -716,6 +791,12 @@
     },
     {
       "Name": "ListScheduleActions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListScheduleActions",
+          "Service": "elemental-inference"
+        }
+      ],
       "SDK": [
         {
           "Name": "elementalinference",

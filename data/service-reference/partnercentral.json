@@ -2515,6 +2515,24 @@
       }
     },
     {
+      "Name": "SearchOpportunities",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "SearchPartnerCentralContent",
       "ActionConditionKeys": [
         "partnercentral:Catalog"

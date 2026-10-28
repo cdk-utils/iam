@@ -306,6 +306,9 @@
     },
     {
       "Name": "CreateFindingsReport",
+      "ActionConditionKeys": [
+        "inspector2:ExpectedBucketOwner"
+      ],
       "Annotations": {
         "Properties": {
           "IsDataPlane": false,
@@ -322,6 +325,9 @@
     },
     {
       "Name": "CreateSbomExport",
+      "ActionConditionKeys": [
+        "inspector2:ExpectedBucketOwner"
+      ],
       "Annotations": {
         "Properties": {
           "IsDataPlane": false,
@@ -733,6 +739,22 @@
       }
     },
     {
+      "Name": "GetOnDemandScanStatus",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "GetSbomExport",
       "Annotations": {
         "Properties": {
@@ -1021,6 +1043,22 @@
       }
     },
     {
+      "Name": "ListOnDemandScans",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ListTagsForResource",
       "Annotations": {
         "Properties": {
@@ -1146,6 +1184,22 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartOnDemandScan",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -1476,6 +1530,12 @@
       "Name": "aws:TagKeys",
       "Types": [
         "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "inspector2:ExpectedBucketOwner",
+      "Types": [
+        "String"
       ]
     }
   ],
@@ -2157,6 +2217,22 @@
       ]
     },
     {
+      "Name": "GetOnDemandScanStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "GetOnDemandScanStatus",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "get_on_demand_scan_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetSbomExport",
       "AuthorizedActions": [
         {
@@ -2445,6 +2521,22 @@
       ]
     },
     {
+      "Name": "ListOnDemandScans",
+      "AuthorizedActions": [
+        {
+          "Name": "ListOnDemandScans",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "list_on_demand_scans",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListTagsForResource",
       "AuthorizedActions": [
         {
@@ -2568,6 +2660,22 @@
         {
           "Name": "inspector2",
           "Method": "start_code_security_scan",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartOnDemandScan",
+      "AuthorizedActions": [
+        {
+          "Name": "StartOnDemandScan",
+          "Service": "inspector2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "inspector2",
+          "Method": "start_on_demand_scan",
           "Package": "Boto3"
         }
       ]
