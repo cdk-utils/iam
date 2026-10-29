@@ -576,6 +576,7 @@ new opensearch.OpenSearchOperations()
 | <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.AcceptInboundConnection">AcceptInboundConnection</a></code> | <code>string[]</code> | IAM actions required for the AcceptInboundConnection API call. |
 | <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.AddDataSource">AddDataSource</a></code> | <code>string[]</code> | IAM actions required for the AddDataSource API call. |
 | <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.AddDirectQueryDataSource">AddDirectQueryDataSource</a></code> | <code>string[]</code> | IAM actions required for the AddDirectQueryDataSource API call. |
+| <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.AddReplicationPeer">AddReplicationPeer</a></code> | <code>string[]</code> | IAM actions required for the AddReplicationPeer API call. |
 | <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.AddTags">AddTags</a></code> | <code>string[]</code> | IAM actions required for the AddTags API call. |
 | <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.AssociatePackage">AssociatePackage</a></code> | <code>string[]</code> | IAM actions required for the AssociatePackage API call. |
 | <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.AssociatePackages">AssociatePackages</a></code> | <code>string[]</code> | IAM actions required for the AssociatePackages API call. |
@@ -583,6 +584,7 @@ new opensearch.OpenSearchOperations()
 | <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.AuthorizeVpcEndpointAccess">AuthorizeVpcEndpointAccess</a></code> | <code>string[]</code> | IAM actions required for the AuthorizeVpcEndpointAccess API call. |
 | <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.CancelDomainConfigChange">CancelDomainConfigChange</a></code> | <code>string[]</code> | IAM actions required for the CancelDomainConfigChange API call. |
 | <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.CancelServiceSoftwareUpdate">CancelServiceSoftwareUpdate</a></code> | <code>string[]</code> | IAM actions required for the CancelServiceSoftwareUpdate API call. |
+| <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.CompareDomainConfiguration">CompareDomainConfiguration</a></code> | <code>string[]</code> | IAM actions required for the CompareDomainConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.CreateApplication">CreateApplication</a></code> | <code>string[]</code> | IAM actions required for the CreateApplication API call. |
 | <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.CreateDomain">CreateDomain</a></code> | <code>string[]</code> | IAM actions required for the CreateDomain API call. |
 | <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.CreateIndex">CreateIndex</a></code> | <code>string[]</code> | IAM actions required for the CreateIndex API call. |
@@ -606,6 +608,7 @@ new opensearch.OpenSearchOperations()
 | <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.DescribeDomainConfig">DescribeDomainConfig</a></code> | <code>string[]</code> | IAM actions required for the DescribeDomainConfig API call. |
 | <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.DescribeDomainHealth">DescribeDomainHealth</a></code> | <code>string[]</code> | IAM actions required for the DescribeDomainHealth API call. |
 | <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.DescribeDomainNodes">DescribeDomainNodes</a></code> | <code>string[]</code> | IAM actions required for the DescribeDomainNodes API call. |
+| <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.DescribeDomainReplication">DescribeDomainReplication</a></code> | <code>string[]</code> | IAM actions required for the DescribeDomainReplication API call. |
 | <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.DescribeDomains">DescribeDomains</a></code> | <code>string[]</code> | IAM actions required for the DescribeDomains API call. |
 | <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.DescribeDryRunProgress">DescribeDryRunProgress</a></code> | <code>string[]</code> | IAM actions required for the DescribeDryRunProgress API call. |
 | <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.DescribeInboundConnections">DescribeInboundConnections</a></code> | <code>string[]</code> | IAM actions required for the DescribeInboundConnections API call. |
@@ -619,6 +622,7 @@ new opensearch.OpenSearchOperations()
 | <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.DetachDataSource">DetachDataSource</a></code> | <code>string[]</code> | IAM actions required for the DetachDataSource API call. |
 | <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.DissociatePackage">DissociatePackage</a></code> | <code>string[]</code> | IAM actions required for the DissociatePackage API call. |
 | <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.DissociatePackages">DissociatePackages</a></code> | <code>string[]</code> | IAM actions required for the DissociatePackages API call. |
+| <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.FailoverReplication">FailoverReplication</a></code> | <code>string[]</code> | IAM actions required for the FailoverReplication API call. |
 | <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.InsightFeedback">InsightFeedback</a></code> | <code>string[]</code> | IAM actions required for the InsightFeedback API call. |
 | <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.ListApplications">ListApplications</a></code> | <code>string[]</code> | IAM actions required for the ListApplications API call. |
 | <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.ListDataSourceAttachments">ListDataSourceAttachments</a></code> | <code>string[]</code> | IAM actions required for the ListDataSourceAttachments API call. |
@@ -653,12 +657,14 @@ new opensearch.OpenSearchOperations()
 | <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.PutDefaultApplicationSetting">PutDefaultApplicationSetting</a></code> | <code>string[]</code> | IAM actions required for the PutDefaultApplicationSetting API call. |
 | <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.RegisterCapability">RegisterCapability</a></code> | <code>string[]</code> | IAM actions required for the RegisterCapability API call. |
 | <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.RejectInboundConnection">RejectInboundConnection</a></code> | <code>string[]</code> | IAM actions required for the RejectInboundConnection API call. |
+| <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.RemoveReplicationPeer">RemoveReplicationPeer</a></code> | <code>string[]</code> | IAM actions required for the RemoveReplicationPeer API call. |
 | <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.RemoveTags">RemoveTags</a></code> | <code>string[]</code> | IAM actions required for the RemoveTags API call. |
 | <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.RevokeVpcEndpointAccess">RevokeVpcEndpointAccess</a></code> | <code>string[]</code> | IAM actions required for the RevokeVpcEndpointAccess API call. |
 | <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.RollbackServiceSoftwareUpdate">RollbackServiceSoftwareUpdate</a></code> | <code>string[]</code> | IAM actions required for the RollbackServiceSoftwareUpdate API call. |
 | <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.StartDomainMaintenance">StartDomainMaintenance</a></code> | <code>string[]</code> | IAM actions required for the StartDomainMaintenance API call. |
 | <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.StartMigration">StartMigration</a></code> | <code>string[]</code> | IAM actions required for the StartMigration API call. |
 | <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.StartServiceSoftwareUpdate">StartServiceSoftwareUpdate</a></code> | <code>string[]</code> | IAM actions required for the StartServiceSoftwareUpdate API call. |
+| <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.SwitchoverReplication">SwitchoverReplication</a></code> | <code>string[]</code> | IAM actions required for the SwitchoverReplication API call. |
 | <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.UpdateApplication">UpdateApplication</a></code> | <code>string[]</code> | IAM actions required for the UpdateApplication API call. |
 | <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.UpdateDataSource">UpdateDataSource</a></code> | <code>string[]</code> | IAM actions required for the UpdateDataSource API call. |
 | <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.UpdateDirectQueryDataSource">UpdateDirectQueryDataSource</a></code> | <code>string[]</code> | IAM actions required for the UpdateDirectQueryDataSource API call. |
@@ -705,6 +711,18 @@ public readonly AddDirectQueryDataSource: string[];
 - *Type:* string[]
 
 IAM actions required for the AddDirectQueryDataSource API call.
+
+---
+
+##### `AddReplicationPeer`<sup>Required</sup> <a name="AddReplicationPeer" id="@cdk_utils/iam.opensearch.OpenSearchOperations.property.AddReplicationPeer"></a>
+
+```typescript
+public readonly AddReplicationPeer: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the AddReplicationPeer API call.
 
 ---
 
@@ -789,6 +807,18 @@ public readonly CancelServiceSoftwareUpdate: string[];
 - *Type:* string[]
 
 IAM actions required for the CancelServiceSoftwareUpdate API call.
+
+---
+
+##### `CompareDomainConfiguration`<sup>Required</sup> <a name="CompareDomainConfiguration" id="@cdk_utils/iam.opensearch.OpenSearchOperations.property.CompareDomainConfiguration"></a>
+
+```typescript
+public readonly CompareDomainConfiguration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CompareDomainConfiguration API call.
 
 ---
 
@@ -1068,6 +1098,18 @@ IAM actions required for the DescribeDomainNodes API call.
 
 ---
 
+##### `DescribeDomainReplication`<sup>Required</sup> <a name="DescribeDomainReplication" id="@cdk_utils/iam.opensearch.OpenSearchOperations.property.DescribeDomainReplication"></a>
+
+```typescript
+public readonly DescribeDomainReplication: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeDomainReplication API call.
+
+---
+
 ##### `DescribeDomains`<sup>Required</sup> <a name="DescribeDomains" id="@cdk_utils/iam.opensearch.OpenSearchOperations.property.DescribeDomains"></a>
 
 ```typescript
@@ -1221,6 +1263,18 @@ public readonly DissociatePackages: string[];
 - *Type:* string[]
 
 IAM actions required for the DissociatePackages API call.
+
+---
+
+##### `FailoverReplication`<sup>Required</sup> <a name="FailoverReplication" id="@cdk_utils/iam.opensearch.OpenSearchOperations.property.FailoverReplication"></a>
+
+```typescript
+public readonly FailoverReplication: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the FailoverReplication API call.
 
 ---
 
@@ -1632,6 +1686,18 @@ IAM actions required for the RejectInboundConnection API call.
 
 ---
 
+##### `RemoveReplicationPeer`<sup>Required</sup> <a name="RemoveReplicationPeer" id="@cdk_utils/iam.opensearch.OpenSearchOperations.property.RemoveReplicationPeer"></a>
+
+```typescript
+public readonly RemoveReplicationPeer: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the RemoveReplicationPeer API call.
+
+---
+
 ##### `RemoveTags`<sup>Required</sup> <a name="RemoveTags" id="@cdk_utils/iam.opensearch.OpenSearchOperations.property.RemoveTags"></a>
 
 ```typescript
@@ -1701,6 +1767,18 @@ public readonly StartServiceSoftwareUpdate: string[];
 - *Type:* string[]
 
 IAM actions required for the StartServiceSoftwareUpdate API call.
+
+---
+
+##### `SwitchoverReplication`<sup>Required</sup> <a name="SwitchoverReplication" id="@cdk_utils/iam.opensearch.OpenSearchOperations.property.SwitchoverReplication"></a>
+
+```typescript
+public readonly SwitchoverReplication: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the SwitchoverReplication API call.
 
 ---
 

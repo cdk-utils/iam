@@ -840,6 +840,7 @@ new neptune_db.NeptuneDBOperations()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.neptune_db.NeptuneDBOperations.property.CancelGremlinQuery">CancelGremlinQuery</a></code> | <code>string[]</code> | IAM actions required for the CancelGremlinQuery API call. |
+| <code><a href="#@cdk_utils/iam.neptune_db.NeptuneDBOperations.property.CancelIndexRebuild">CancelIndexRebuild</a></code> | <code>string[]</code> | IAM actions required for the CancelIndexRebuild API call. |
 | <code><a href="#@cdk_utils/iam.neptune_db.NeptuneDBOperations.property.CancelLoaderJob">CancelLoaderJob</a></code> | <code>string[]</code> | IAM actions required for the CancelLoaderJob API call. |
 | <code><a href="#@cdk_utils/iam.neptune_db.NeptuneDBOperations.property.CancelMLDataProcessingJob">CancelMLDataProcessingJob</a></code> | <code>string[]</code> | IAM actions required for the CancelMLDataProcessingJob API call. |
 | <code><a href="#@cdk_utils/iam.neptune_db.NeptuneDBOperations.property.CancelMLModelTrainingJob">CancelMLModelTrainingJob</a></code> | <code>string[]</code> | IAM actions required for the CancelMLModelTrainingJob API call. |
@@ -856,6 +857,7 @@ new neptune_db.NeptuneDBOperations()
 | <code><a href="#@cdk_utils/iam.neptune_db.NeptuneDBOperations.property.ExecuteOpenCypherExplainQuery">ExecuteOpenCypherExplainQuery</a></code> | <code>string[]</code> | IAM actions required for the ExecuteOpenCypherExplainQuery API call. |
 | <code><a href="#@cdk_utils/iam.neptune_db.NeptuneDBOperations.property.ExecuteOpenCypherQuery">ExecuteOpenCypherQuery</a></code> | <code>string[]</code> | IAM actions required for the ExecuteOpenCypherQuery API call. |
 | <code><a href="#@cdk_utils/iam.neptune_db.NeptuneDBOperations.property.ListGremlinQueries">ListGremlinQueries</a></code> | <code>string[]</code> | IAM actions required for the ListGremlinQueries API call. |
+| <code><a href="#@cdk_utils/iam.neptune_db.NeptuneDBOperations.property.ListIndexRebuilds">ListIndexRebuilds</a></code> | <code>string[]</code> | IAM actions required for the ListIndexRebuilds API call. |
 | <code><a href="#@cdk_utils/iam.neptune_db.NeptuneDBOperations.property.ListLoaderJobs">ListLoaderJobs</a></code> | <code>string[]</code> | IAM actions required for the ListLoaderJobs API call. |
 | <code><a href="#@cdk_utils/iam.neptune_db.NeptuneDBOperations.property.ListMLDataProcessingJobs">ListMLDataProcessingJobs</a></code> | <code>string[]</code> | IAM actions required for the ListMLDataProcessingJobs API call. |
 | <code><a href="#@cdk_utils/iam.neptune_db.NeptuneDBOperations.property.ListMLEndpoints">ListMLEndpoints</a></code> | <code>string[]</code> | IAM actions required for the ListMLEndpoints API call. |
@@ -866,6 +868,7 @@ new neptune_db.NeptuneDBOperations()
 | <code><a href="#@cdk_utils/iam.neptune_db.NeptuneDBOperations.property.ManageSparqlStatistics">ManageSparqlStatistics</a></code> | <code>string[]</code> | IAM actions required for the ManageSparqlStatistics API call. |
 | <code><a href="#@cdk_utils/iam.neptune_db.NeptuneDBOperations.property.opGetEngineStatus">opGetEngineStatus</a></code> | <code>string[]</code> | IAM actions required for the GetEngineStatus API call. |
 | <code><a href="#@cdk_utils/iam.neptune_db.NeptuneDBOperations.property.opGetGremlinQueryStatus">opGetGremlinQueryStatus</a></code> | <code>string[]</code> | IAM actions required for the GetGremlinQueryStatus API call. |
+| <code><a href="#@cdk_utils/iam.neptune_db.NeptuneDBOperations.property.opGetIndexRebuildStatus">opGetIndexRebuildStatus</a></code> | <code>string[]</code> | IAM actions required for the GetIndexRebuildStatus API call. |
 | <code><a href="#@cdk_utils/iam.neptune_db.NeptuneDBOperations.property.opGetLoaderJobStatus">opGetLoaderJobStatus</a></code> | <code>string[]</code> | IAM actions required for the GetLoaderJobStatus API call. |
 | <code><a href="#@cdk_utils/iam.neptune_db.NeptuneDBOperations.property.opGetMLDataProcessingJob">opGetMLDataProcessingJob</a></code> | <code>string[]</code> | IAM actions required for the GetMLDataProcessingJob API call. |
 | <code><a href="#@cdk_utils/iam.neptune_db.NeptuneDBOperations.property.opGetMLEndpoint">opGetMLEndpoint</a></code> | <code>string[]</code> | IAM actions required for the GetMLEndpoint API call. |
@@ -878,6 +881,8 @@ new neptune_db.NeptuneDBOperations()
 | <code><a href="#@cdk_utils/iam.neptune_db.NeptuneDBOperations.property.opGetRDFGraphSummary">opGetRDFGraphSummary</a></code> | <code>string[]</code> | IAM actions required for the GetRDFGraphSummary API call. |
 | <code><a href="#@cdk_utils/iam.neptune_db.NeptuneDBOperations.property.opGetSparqlStatistics">opGetSparqlStatistics</a></code> | <code>string[]</code> | IAM actions required for the GetSparqlStatistics API call. |
 | <code><a href="#@cdk_utils/iam.neptune_db.NeptuneDBOperations.property.opGetSparqlStream">opGetSparqlStream</a></code> | <code>string[]</code> | IAM actions required for the GetSparqlStream API call. |
+| <code><a href="#@cdk_utils/iam.neptune_db.NeptuneDBOperations.property.opGetStorageInfo">opGetStorageInfo</a></code> | <code>string[]</code> | IAM actions required for the GetStorageInfo API call. |
+| <code><a href="#@cdk_utils/iam.neptune_db.NeptuneDBOperations.property.StartIndexRebuild">StartIndexRebuild</a></code> | <code>string[]</code> | IAM actions required for the StartIndexRebuild API call. |
 | <code><a href="#@cdk_utils/iam.neptune_db.NeptuneDBOperations.property.StartLoaderJob">StartLoaderJob</a></code> | <code>string[]</code> | IAM actions required for the StartLoaderJob API call. |
 | <code><a href="#@cdk_utils/iam.neptune_db.NeptuneDBOperations.property.StartMLDataProcessingJob">StartMLDataProcessingJob</a></code> | <code>string[]</code> | IAM actions required for the StartMLDataProcessingJob API call. |
 | <code><a href="#@cdk_utils/iam.neptune_db.NeptuneDBOperations.property.StartMLModelTrainingJob">StartMLModelTrainingJob</a></code> | <code>string[]</code> | IAM actions required for the StartMLModelTrainingJob API call. |
@@ -894,6 +899,18 @@ public readonly CancelGremlinQuery: string[];
 - *Type:* string[]
 
 IAM actions required for the CancelGremlinQuery API call.
+
+---
+
+##### `CancelIndexRebuild`<sup>Required</sup> <a name="CancelIndexRebuild" id="@cdk_utils/iam.neptune_db.NeptuneDBOperations.property.CancelIndexRebuild"></a>
+
+```typescript
+public readonly CancelIndexRebuild: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CancelIndexRebuild API call.
 
 ---
 
@@ -1089,6 +1106,18 @@ IAM actions required for the ListGremlinQueries API call.
 
 ---
 
+##### `ListIndexRebuilds`<sup>Required</sup> <a name="ListIndexRebuilds" id="@cdk_utils/iam.neptune_db.NeptuneDBOperations.property.ListIndexRebuilds"></a>
+
+```typescript
+public readonly ListIndexRebuilds: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListIndexRebuilds API call.
+
+---
+
 ##### `ListLoaderJobs`<sup>Required</sup> <a name="ListLoaderJobs" id="@cdk_utils/iam.neptune_db.NeptuneDBOperations.property.ListLoaderJobs"></a>
 
 ```typescript
@@ -1206,6 +1235,18 @@ public readonly opGetGremlinQueryStatus: string[];
 - *Type:* string[]
 
 IAM actions required for the GetGremlinQueryStatus API call.
+
+---
+
+##### `opGetIndexRebuildStatus`<sup>Required</sup> <a name="opGetIndexRebuildStatus" id="@cdk_utils/iam.neptune_db.NeptuneDBOperations.property.opGetIndexRebuildStatus"></a>
+
+```typescript
+public readonly opGetIndexRebuildStatus: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetIndexRebuildStatus API call.
 
 ---
 
@@ -1350,6 +1391,30 @@ public readonly opGetSparqlStream: string[];
 - *Type:* string[]
 
 IAM actions required for the GetSparqlStream API call.
+
+---
+
+##### `opGetStorageInfo`<sup>Required</sup> <a name="opGetStorageInfo" id="@cdk_utils/iam.neptune_db.NeptuneDBOperations.property.opGetStorageInfo"></a>
+
+```typescript
+public readonly opGetStorageInfo: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetStorageInfo API call.
+
+---
+
+##### `StartIndexRebuild`<sup>Required</sup> <a name="StartIndexRebuild" id="@cdk_utils/iam.neptune_db.NeptuneDBOperations.property.StartIndexRebuild"></a>
+
+```typescript
+public readonly StartIndexRebuild: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StartIndexRebuild API call.
 
 ---
 

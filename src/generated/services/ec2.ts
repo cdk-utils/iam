@@ -12181,6 +12181,8 @@ export class EC2Operations {
 	static readonly opGetCapacityManagerMonitoredTagKeys: string[] = [
 		"ec2:GetCapacityManagerMonitoredTagKeys",
 	];
+	/** IAM actions required for the GetCapacityManagerSupportabilityScores API call. */
+	static readonly opGetCapacityManagerSupportabilityScores: string[] = [];
 	/** IAM actions required for the GetCapacityReservationUsage API call. */
 	static readonly opGetCapacityReservationUsage: string[] = [
 		"ec2:GetCapacityReservationUsage",

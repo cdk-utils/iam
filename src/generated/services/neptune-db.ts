@@ -212,6 +212,8 @@ export class NeptuneDBResources {
 export class NeptuneDBOperations {
 	/** IAM actions required for the CancelGremlinQuery API call. */
 	static readonly CancelGremlinQuery: string[] = [];
+	/** IAM actions required for the CancelIndexRebuild API call. */
+	static readonly CancelIndexRebuild: string[] = [];
 	/** IAM actions required for the CancelLoaderJob API call. */
 	static readonly CancelLoaderJob: string[] = [];
 	/** IAM actions required for the CancelMLDataProcessingJob API call. */
@@ -246,6 +248,8 @@ export class NeptuneDBOperations {
 	static readonly opGetEngineStatus: string[] = [];
 	/** IAM actions required for the GetGremlinQueryStatus API call. */
 	static readonly opGetGremlinQueryStatus: string[] = [];
+	/** IAM actions required for the GetIndexRebuildStatus API call. */
+	static readonly opGetIndexRebuildStatus: string[] = [];
 	/** IAM actions required for the GetLoaderJobStatus API call. */
 	static readonly opGetLoaderJobStatus: string[] = [];
 	/** IAM actions required for the GetMLDataProcessingJob API call. */
@@ -270,8 +274,12 @@ export class NeptuneDBOperations {
 	static readonly opGetSparqlStatistics: string[] = [];
 	/** IAM actions required for the GetSparqlStream API call. */
 	static readonly opGetSparqlStream: string[] = [];
+	/** IAM actions required for the GetStorageInfo API call. */
+	static readonly opGetStorageInfo: string[] = [];
 	/** IAM actions required for the ListGremlinQueries API call. */
 	static readonly ListGremlinQueries: string[] = [];
+	/** IAM actions required for the ListIndexRebuilds API call. */
+	static readonly ListIndexRebuilds: string[] = [];
 	/** IAM actions required for the ListLoaderJobs API call. */
 	static readonly ListLoaderJobs: string[] = [];
 	/** IAM actions required for the ListMLDataProcessingJobs API call. */
@@ -288,6 +296,8 @@ export class NeptuneDBOperations {
 	static readonly ManagePropertygraphStatistics: string[] = [];
 	/** IAM actions required for the ManageSparqlStatistics API call. */
 	static readonly ManageSparqlStatistics: string[] = [];
+	/** IAM actions required for the StartIndexRebuild API call. */
+	static readonly StartIndexRebuild: string[] = [];
 	/** IAM actions required for the StartLoaderJob API call. */
 	static readonly StartLoaderJob: string[] = [];
 	/** IAM actions required for the StartMLDataProcessingJob API call. */

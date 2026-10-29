@@ -37849,6 +37849,16 @@
       ]
     },
     {
+      "Name": "GetCapacityManagerSupportabilityScores",
+      "SDK": [
+        {
+          "Name": "ec2",
+          "Method": "get_capacity_manager_supportability_scores",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetCapacityReservationUsage",
       "AuthorizedActions": [
         {

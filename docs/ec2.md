@@ -43261,6 +43261,7 @@ new ec2.EC2Operations()
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.opGetCapacityManagerMetricData">opGetCapacityManagerMetricData</a></code> | <code>string[]</code> | IAM actions required for the GetCapacityManagerMetricData API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.opGetCapacityManagerMetricDimensions">opGetCapacityManagerMetricDimensions</a></code> | <code>string[]</code> | IAM actions required for the GetCapacityManagerMetricDimensions API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.opGetCapacityManagerMonitoredTagKeys">opGetCapacityManagerMonitoredTagKeys</a></code> | <code>string[]</code> | IAM actions required for the GetCapacityManagerMonitoredTagKeys API call. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.opGetCapacityManagerSupportabilityScores">opGetCapacityManagerSupportabilityScores</a></code> | <code>string[]</code> | IAM actions required for the GetCapacityManagerSupportabilityScores API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.opGetCapacityReservationUsage">opGetCapacityReservationUsage</a></code> | <code>string[]</code> | IAM actions required for the GetCapacityReservationUsage API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.opGetClientVpnEndpointAuthorizationPolicy">opGetClientVpnEndpointAuthorizationPolicy</a></code> | <code>string[]</code> | IAM actions required for the GetClientVpnEndpointAuthorizationPolicy API call. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Operations.property.opGetCoipPoolUsage">opGetCoipPoolUsage</a></code> | <code>string[]</code> | IAM actions required for the GetCoipPoolUsage API call. |
@@ -51342,6 +51343,18 @@ public readonly opGetCapacityManagerMonitoredTagKeys: string[];
 - *Type:* string[]
 
 IAM actions required for the GetCapacityManagerMonitoredTagKeys API call.
+
+---
+
+##### `opGetCapacityManagerSupportabilityScores`<sup>Required</sup> <a name="opGetCapacityManagerSupportabilityScores" id="@cdk_utils/iam.ec2.EC2Operations.property.opGetCapacityManagerSupportabilityScores"></a>
+
+```typescript
+public readonly opGetCapacityManagerSupportabilityScores: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetCapacityManagerSupportabilityScores API call.
 
 ---
 
