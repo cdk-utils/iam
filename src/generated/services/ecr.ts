@@ -132,6 +132,8 @@ export class ECRActions {
 		"ecr:RegisterPullTimeUpdateExclusion";
 	/** [Write] ecr:ReplicateImage */
 	static readonly ReplicateImage = "ecr:ReplicateImage";
+	/** [Write] ecr:ReplicateImageDelete */
+	static readonly ReplicateImageDelete = "ecr:ReplicateImageDelete";
 	/** [PermissionManagement] ecr:SetRepositoryPolicy */
 	static readonly actionSetRepositoryPolicy = "ecr:SetRepositoryPolicy";
 	/** [Write] ecr:StartImageScan */
@@ -210,6 +212,7 @@ export class ECRActions {
 		ECRActions.PutSigningConfiguration,
 		ECRActions.RegisterPullTimeUpdateExclusion,
 		ECRActions.ReplicateImage,
+		ECRActions.ReplicateImageDelete,
 		ECRActions.StartImageScan,
 		ECRActions.StartLifecyclePolicyPreview,
 		ECRActions.StartReplicationBackfill,

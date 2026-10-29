@@ -235,6 +235,7 @@ new ecr.ECRActions()
 | <code><a href="#@cdk_utils/iam.ecr.ECRActions.property.PutSigningConfiguration">PutSigningConfiguration</a></code> | <code>string</code> | [Write] ecr:PutSigningConfiguration. |
 | <code><a href="#@cdk_utils/iam.ecr.ECRActions.property.RegisterPullTimeUpdateExclusion">RegisterPullTimeUpdateExclusion</a></code> | <code>string</code> | [Write] ecr:RegisterPullTimeUpdateExclusion. |
 | <code><a href="#@cdk_utils/iam.ecr.ECRActions.property.ReplicateImage">ReplicateImage</a></code> | <code>string</code> | [Write] ecr:ReplicateImage. |
+| <code><a href="#@cdk_utils/iam.ecr.ECRActions.property.ReplicateImageDelete">ReplicateImageDelete</a></code> | <code>string</code> | [Write] ecr:ReplicateImageDelete. |
 | <code><a href="#@cdk_utils/iam.ecr.ECRActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.ecr.ECRActions.property.StartImageScan">StartImageScan</a></code> | <code>string</code> | [Write] ecr:StartImageScan. |
 | <code><a href="#@cdk_utils/iam.ecr.ECRActions.property.StartLifecyclePolicyPreview">StartLifecyclePolicyPreview</a></code> | <code>string</code> | [Write] ecr:StartLifecyclePolicyPreview. |
@@ -943,6 +944,18 @@ public readonly ReplicateImage: string;
 - *Type:* string
 
 [Write] ecr:ReplicateImage.
+
+---
+
+##### `ReplicateImageDelete`<sup>Required</sup> <a name="ReplicateImageDelete" id="@cdk_utils/iam.ecr.ECRActions.property.ReplicateImageDelete"></a>
+
+```typescript
+public readonly ReplicateImageDelete: string;
+```
+
+- *Type:* string
+
+[Write] ecr:ReplicateImageDelete.
 
 ---
 

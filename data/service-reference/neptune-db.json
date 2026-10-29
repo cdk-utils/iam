@@ -698,6 +698,16 @@
       ]
     },
     {
+      "Name": "CancelIndexRebuild",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "cancel_index_rebuild",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "CancelLoaderJob",
       "SDK": [
         {
@@ -868,6 +878,16 @@
       ]
     },
     {
+      "Name": "GetIndexRebuildStatus",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "get_index_rebuild_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetLoaderJobStatus",
       "SDK": [
         {
@@ -988,11 +1008,31 @@
       ]
     },
     {
+      "Name": "GetStorageInfo",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "get_storage_info",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListGremlinQueries",
       "SDK": [
         {
           "Name": "neptunedata",
           "Method": "list_gremlin_queries",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListIndexRebuilds",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "list_index_rebuilds",
           "Package": "Boto3"
         }
       ]
@@ -1073,6 +1113,16 @@
         {
           "Name": "neptunedata",
           "Method": "manage_sparql_statistics",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartIndexRebuild",
+      "SDK": [
+        {
+          "Name": "neptunedata",
+          "Method": "start_index_rebuild",
           "Package": "Boto3"
         }
       ]

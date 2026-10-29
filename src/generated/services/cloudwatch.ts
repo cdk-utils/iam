@@ -1746,7 +1746,7 @@ export class CloudWatchOperations {
 		"cloudwatch:TagResource",
 	];
 	/** IAM actions required for the CreateAlert API call. */
-	static readonly CreateAlert: string[] = ["cloudwatch:CreateAlert"];
+	static readonly CreateAlert: string[] = [];
 	/** IAM actions required for the CreateDomain API call. */
 	static readonly CreateDomain: string[] = [
 		"cloudwatch:CreateDomain",

@@ -115,7 +115,6 @@
       ],
       "Annotations": {
         "Properties": {
-          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3376,12 +3375,6 @@
     },
     {
       "Name": "CreateAlert",
-      "AuthorizedActions": [
-        {
-          "Name": "CreateAlert",
-          "Service": "cloudwatch"
-        }
-      ],
       "SDK": [
         {
           "Name": "cloudwatchomni",

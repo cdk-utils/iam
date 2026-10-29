@@ -85,6 +85,8 @@ export class AidevopsActions {
 	static readonly actionGetAssociation = "aidevops:GetAssociation";
 	/** [Read] aidevops:GetBacklogTask */
 	static readonly actionGetBacklogTask = "aidevops:GetBacklogTask";
+	/** [Read] aidevops:GetCatalogCapability */
+	static readonly actionGetCatalogCapability = "aidevops:GetCatalogCapability";
 	/** [Read] aidevops:GetKnowledgeItem */
 	static readonly actionGetKnowledgeItem = "aidevops:GetKnowledgeItem";
 	/** [Read] aidevops:GetOperatorApp */
@@ -113,6 +115,14 @@ export class AidevopsActions {
 	static readonly ListAssociations = "aidevops:ListAssociations";
 	/** [List] aidevops:ListBacklogTasks */
 	static readonly ListBacklogTasks = "aidevops:ListBacklogTasks";
+	/** [List] aidevops:ListCatalogCapabilities */
+	static readonly ListCatalogCapabilities = "aidevops:ListCatalogCapabilities";
+	/** [List] aidevops:ListCatalogCapabilityFiles */
+	static readonly ListCatalogCapabilityFiles =
+		"aidevops:ListCatalogCapabilityFiles";
+	/** [List] aidevops:ListCatalogCapabilityTypes */
+	static readonly ListCatalogCapabilityTypes =
+		"aidevops:ListCatalogCapabilityTypes";
 	/** [List] aidevops:ListChats */
 	static readonly ListChats = "aidevops:ListChats";
 	/** [List] aidevops:ListExecutions */
@@ -146,6 +156,8 @@ export class AidevopsActions {
 	static readonly RevokeAccessToken = "aidevops:RevokeAccessToken";
 	/** [Write] aidevops:RotateAccessToken */
 	static readonly RotateAccessToken = "aidevops:RotateAccessToken";
+	/** [Read] aidevops:SearchAssets */
+	static readonly SearchAssets = "aidevops:SearchAssets";
 	/** [Read] aidevops:SearchServiceAccessibleResource */
 	static readonly SearchServiceAccessibleResource =
 		"aidevops:SearchServiceAccessibleResource";
@@ -196,12 +208,14 @@ export class AidevopsActions {
 		AidevopsActions.actionGetAssetFile,
 		AidevopsActions.actionGetAssociation,
 		AidevopsActions.actionGetBacklogTask,
+		AidevopsActions.actionGetCatalogCapability,
 		AidevopsActions.actionGetKnowledgeItem,
 		AidevopsActions.actionGetOperatorApp,
 		AidevopsActions.actionGetRecommendation,
 		AidevopsActions.actionGetService,
 		AidevopsActions.actionGetTrigger,
 		AidevopsActions.ListTagsForResource,
+		AidevopsActions.SearchAssets,
 		AidevopsActions.SearchServiceAccessibleResource,
 	];
 	/** All write-level actions. */
@@ -259,6 +273,9 @@ export class AidevopsActions {
 		AidevopsActions.ListAssets,
 		AidevopsActions.ListAssociations,
 		AidevopsActions.ListBacklogTasks,
+		AidevopsActions.ListCatalogCapabilities,
+		AidevopsActions.ListCatalogCapabilityFiles,
+		AidevopsActions.ListCatalogCapabilityTypes,
 		AidevopsActions.ListChats,
 		AidevopsActions.ListExecutions,
 		AidevopsActions.ListGoals,
@@ -956,6 +973,11 @@ export class AidevopsConditions {
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
+	];
+	/** Condition keys applicable to the SearchAssets action. */
+	static readonly SearchAssetsConditionKeys: string[] = [
+		"aidevops:SourceAgentSpaceArn",
+		"aidevops:TargetAgentSpaceArn",
 	];
 	/** Condition keys applicable to the SendMessage action. */
 	static readonly SendMessageConditionKeys: string[] = [

@@ -211,6 +211,8 @@ export class OpenSearchOperations {
 		"es:AddTags",
 		"iam:PassRole",
 	];
+	/** IAM actions required for the AddReplicationPeer API call. */
+	static readonly AddReplicationPeer: string[] = ["es:AddReplicationPeer"];
 	/** IAM actions required for the AddTags API call. */
 	static readonly AddTags: string[] = ["es:AddTags"];
 	/** IAM actions required for the AssociatePackage API call. */
@@ -231,6 +233,10 @@ export class OpenSearchOperations {
 	static readonly CancelServiceSoftwareUpdate: string[] = [
 		"es:CancelElasticsearchServiceSoftwareUpdate",
 		"es:CancelServiceSoftwareUpdate",
+	];
+	/** IAM actions required for the CompareDomainConfiguration API call. */
+	static readonly CompareDomainConfiguration: string[] = [
+		"es:CompareDomainConfiguration",
 	];
 	/** IAM actions required for the CreateApplication API call. */
 	static readonly CreateApplication: string[] = [
@@ -312,6 +318,10 @@ export class OpenSearchOperations {
 	static readonly DescribeDomainHealth: string[] = ["es:DescribeDomainHealth"];
 	/** IAM actions required for the DescribeDomainNodes API call. */
 	static readonly DescribeDomainNodes: string[] = ["es:DescribeDomainNodes"];
+	/** IAM actions required for the DescribeDomainReplication API call. */
+	static readonly DescribeDomainReplication: string[] = [
+		"es:DescribeDomainReplication",
+	];
 	/** IAM actions required for the DescribeDomains API call. */
 	static readonly DescribeDomains: string[] = [
 		"es:DescribeDomains",
@@ -360,6 +370,8 @@ export class OpenSearchOperations {
 	static readonly DissociatePackage: string[] = ["es:DissociatePackage"];
 	/** IAM actions required for the DissociatePackages API call. */
 	static readonly DissociatePackages: string[] = ["es:DissociatePackages"];
+	/** IAM actions required for the FailoverReplication API call. */
+	static readonly FailoverReplication: string[] = [];
 	/** IAM actions required for the GetApplication API call. */
 	static readonly opGetApplication: string[] = ["es:GetApplication"];
 	/** IAM actions required for the GetCapability API call. */
@@ -467,6 +479,10 @@ export class OpenSearchOperations {
 		"es:RejectInboundConnection",
 		"es:RejectInboundCrossClusterSearchConnection",
 	];
+	/** IAM actions required for the RemoveReplicationPeer API call. */
+	static readonly RemoveReplicationPeer: string[] = [
+		"es:RemoveReplicationPeer",
+	];
 	/** IAM actions required for the RemoveTags API call. */
 	static readonly RemoveTags: string[] = ["es:RemoveTags"];
 	/** IAM actions required for the RevokeVpcEndpointAccess API call. */
@@ -488,6 +504,10 @@ export class OpenSearchOperations {
 	static readonly StartServiceSoftwareUpdate: string[] = [
 		"es:StartElasticsearchServiceSoftwareUpdate",
 		"es:StartServiceSoftwareUpdate",
+	];
+	/** IAM actions required for the SwitchoverReplication API call. */
+	static readonly SwitchoverReplication: string[] = [
+		"es:SwitchoverReplication",
 	];
 	/** IAM actions required for the UpdateApplication API call. */
 	static readonly UpdateApplication: string[] = ["es:UpdateApplication"];

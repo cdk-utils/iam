@@ -1003,6 +1003,7 @@ new aidevops.AidevopsActions()
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.actionGetAssetFile">actionGetAssetFile</a></code> | <code>string</code> | [Read] aidevops:GetAssetFile. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.actionGetAssociation">actionGetAssociation</a></code> | <code>string</code> | [Read] aidevops:GetAssociation. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.actionGetBacklogTask">actionGetBacklogTask</a></code> | <code>string</code> | [Read] aidevops:GetBacklogTask. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.actionGetCatalogCapability">actionGetCatalogCapability</a></code> | <code>string</code> | [Read] aidevops:GetCatalogCapability. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.actionGetKnowledgeItem">actionGetKnowledgeItem</a></code> | <code>string</code> | [Read] aidevops:GetKnowledgeItem. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.actionGetOperatorApp">actionGetOperatorApp</a></code> | <code>string</code> | [Read] aidevops:GetOperatorApp. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.actionGetRecommendation">actionGetRecommendation</a></code> | <code>string</code> | [Read] aidevops:GetRecommendation. |
@@ -1049,6 +1050,9 @@ new aidevops.AidevopsActions()
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.ListAssetVersions">ListAssetVersions</a></code> | <code>string</code> | [List] aidevops:ListAssetVersions. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.ListAssociations">ListAssociations</a></code> | <code>string</code> | [List] aidevops:ListAssociations. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.ListBacklogTasks">ListBacklogTasks</a></code> | <code>string</code> | [List] aidevops:ListBacklogTasks. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.ListCatalogCapabilities">ListCatalogCapabilities</a></code> | <code>string</code> | [List] aidevops:ListCatalogCapabilities. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.ListCatalogCapabilityFiles">ListCatalogCapabilityFiles</a></code> | <code>string</code> | [List] aidevops:ListCatalogCapabilityFiles. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.ListCatalogCapabilityTypes">ListCatalogCapabilityTypes</a></code> | <code>string</code> | [List] aidevops:ListCatalogCapabilityTypes. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.ListChats">ListChats</a></code> | <code>string</code> | [List] aidevops:ListChats. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.ListExecutions">ListExecutions</a></code> | <code>string</code> | [List] aidevops:ListExecutions. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.ListGoals">ListGoals</a></code> | <code>string</code> | [List] aidevops:ListGoals. |
@@ -1065,6 +1069,7 @@ new aidevops.AidevopsActions()
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.RegisterService">RegisterService</a></code> | <code>string</code> | [Write] aidevops:RegisterService. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.RevokeAccessToken">RevokeAccessToken</a></code> | <code>string</code> | [Write] aidevops:RevokeAccessToken. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.RotateAccessToken">RotateAccessToken</a></code> | <code>string</code> | [Write] aidevops:RotateAccessToken. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.SearchAssets">SearchAssets</a></code> | <code>string</code> | [Read] aidevops:SearchAssets. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.SearchServiceAccessibleResource">SearchServiceAccessibleResource</a></code> | <code>string</code> | [Read] aidevops:SearchServiceAccessibleResource. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.SendMessage">SendMessage</a></code> | <code>string</code> | [Write] aidevops:SendMessage. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
@@ -1179,6 +1184,18 @@ public readonly actionGetBacklogTask: string;
 - *Type:* string
 
 [Read] aidevops:GetBacklogTask.
+
+---
+
+##### `actionGetCatalogCapability`<sup>Required</sup> <a name="actionGetCatalogCapability" id="@cdk_utils/iam.aidevops.AidevopsActions.property.actionGetCatalogCapability"></a>
+
+```typescript
+public readonly actionGetCatalogCapability: string;
+```
+
+- *Type:* string
+
+[Read] aidevops:GetCatalogCapability.
 
 ---
 
@@ -1734,6 +1751,42 @@ public readonly ListBacklogTasks: string;
 
 ---
 
+##### `ListCatalogCapabilities`<sup>Required</sup> <a name="ListCatalogCapabilities" id="@cdk_utils/iam.aidevops.AidevopsActions.property.ListCatalogCapabilities"></a>
+
+```typescript
+public readonly ListCatalogCapabilities: string;
+```
+
+- *Type:* string
+
+[List] aidevops:ListCatalogCapabilities.
+
+---
+
+##### `ListCatalogCapabilityFiles`<sup>Required</sup> <a name="ListCatalogCapabilityFiles" id="@cdk_utils/iam.aidevops.AidevopsActions.property.ListCatalogCapabilityFiles"></a>
+
+```typescript
+public readonly ListCatalogCapabilityFiles: string;
+```
+
+- *Type:* string
+
+[List] aidevops:ListCatalogCapabilityFiles.
+
+---
+
+##### `ListCatalogCapabilityTypes`<sup>Required</sup> <a name="ListCatalogCapabilityTypes" id="@cdk_utils/iam.aidevops.AidevopsActions.property.ListCatalogCapabilityTypes"></a>
+
+```typescript
+public readonly ListCatalogCapabilityTypes: string;
+```
+
+- *Type:* string
+
+[List] aidevops:ListCatalogCapabilityTypes.
+
+---
+
 ##### `ListChats`<sup>Required</sup> <a name="ListChats" id="@cdk_utils/iam.aidevops.AidevopsActions.property.ListChats"></a>
 
 ```typescript
@@ -1923,6 +1976,18 @@ public readonly RotateAccessToken: string;
 - *Type:* string
 
 [Write] aidevops:RotateAccessToken.
+
+---
+
+##### `SearchAssets`<sup>Required</sup> <a name="SearchAssets" id="@cdk_utils/iam.aidevops.AidevopsActions.property.SearchAssets"></a>
+
+```typescript
+public readonly SearchAssets: string;
+```
+
+- *Type:* string
+
+[Read] aidevops:SearchAssets.
 
 ---
 
@@ -2301,6 +2366,7 @@ Generates a condition block for `aidevops:TargetAgentSpaceArn`.
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.ListTagsForResourceConditionKeys">ListTagsForResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListTagsForResource action. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.ListWebhooksConditionKeys">ListWebhooksConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListWebhooks action. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.RegisterServiceConditionKeys">RegisterServiceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the RegisterService action. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.SearchAssetsConditionKeys">SearchAssetsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the SearchAssets action. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.SendMessageConditionKeys">SendMessageConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the SendMessage action. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.SERVICE_TYPE">SERVICE_TYPE</a></code> | <code>string</code> | Condition key: aidevops:ServiceType (String). |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.SOURCE_AGENT_SPACE_ARN">SOURCE_AGENT_SPACE_ARN</a></code> | <code>string</code> | Condition key: aidevops:SourceAgentSpaceArn (ARN). |
@@ -2635,6 +2701,18 @@ public readonly RegisterServiceConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the RegisterService action.
+
+---
+
+##### `SearchAssetsConditionKeys`<sup>Required</sup> <a name="SearchAssetsConditionKeys" id="@cdk_utils/iam.aidevops.AidevopsConditions.property.SearchAssetsConditionKeys"></a>
+
+```typescript
+public readonly SearchAssetsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the SearchAssets action.
 
 ---
 
