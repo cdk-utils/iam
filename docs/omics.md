@@ -2413,7 +2413,7 @@ new omics.OmicsActions()
 | <code><a href="#@cdk_utils/iam.omics.OmicsActions.property.DeleteRunBatch">DeleteRunBatch</a></code> | <code>string</code> | [Write] omics:DeleteRunBatch. |
 | <code><a href="#@cdk_utils/iam.omics.OmicsActions.property.DeleteRunCache">DeleteRunCache</a></code> | <code>string</code> | [Write] omics:DeleteRunCache. |
 | <code><a href="#@cdk_utils/iam.omics.OmicsActions.property.DeleteRunGroup">DeleteRunGroup</a></code> | <code>string</code> | [Write] omics:DeleteRunGroup. |
-| <code><a href="#@cdk_utils/iam.omics.OmicsActions.property.DeleteS3AccessPolicy">DeleteS3AccessPolicy</a></code> | <code>string</code> | [Write] omics:DeleteS3AccessPolicy. |
+| <code><a href="#@cdk_utils/iam.omics.OmicsActions.property.DeleteS3AccessPolicy">DeleteS3AccessPolicy</a></code> | <code>string</code> | [PermissionManagement] omics:DeleteS3AccessPolicy. |
 | <code><a href="#@cdk_utils/iam.omics.OmicsActions.property.DeleteSequenceStore">DeleteSequenceStore</a></code> | <code>string</code> | [Write] omics:DeleteSequenceStore. |
 | <code><a href="#@cdk_utils/iam.omics.OmicsActions.property.DeleteShare">DeleteShare</a></code> | <code>string</code> | [Write] omics:DeleteShare. |
 | <code><a href="#@cdk_utils/iam.omics.OmicsActions.property.DeleteVariantStore">DeleteVariantStore</a></code> | <code>string</code> | [Write] omics:DeleteVariantStore. |
@@ -2445,7 +2445,7 @@ new omics.OmicsActions()
 | <code><a href="#@cdk_utils/iam.omics.OmicsActions.property.ListVariantStores">ListVariantStores</a></code> | <code>string</code> | [List] omics:ListVariantStores. |
 | <code><a href="#@cdk_utils/iam.omics.OmicsActions.property.ListWorkflows">ListWorkflows</a></code> | <code>string</code> | [List] omics:ListWorkflows. |
 | <code><a href="#@cdk_utils/iam.omics.OmicsActions.property.ListWorkflowVersions">ListWorkflowVersions</a></code> | <code>string</code> | [List] omics:ListWorkflowVersions. |
-| <code><a href="#@cdk_utils/iam.omics.OmicsActions.property.PutS3AccessPolicy">PutS3AccessPolicy</a></code> | <code>string</code> | [Write] omics:PutS3AccessPolicy. |
+| <code><a href="#@cdk_utils/iam.omics.OmicsActions.property.PutS3AccessPolicy">PutS3AccessPolicy</a></code> | <code>string</code> | [PermissionManagement] omics:PutS3AccessPolicy. |
 | <code><a href="#@cdk_utils/iam.omics.OmicsActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.omics.OmicsActions.property.StartAnnotationImportJob">StartAnnotationImportJob</a></code> | <code>string</code> | [Write] omics:StartAnnotationImportJob. |
 | <code><a href="#@cdk_utils/iam.omics.OmicsActions.property.StartReadSetActivationJob">StartReadSetActivationJob</a></code> | <code>string</code> | [Write] omics:StartReadSetActivationJob. |
@@ -3197,7 +3197,7 @@ public readonly DeleteS3AccessPolicy: string;
 
 - *Type:* string
 
-[Write] omics:DeleteS3AccessPolicy.
+[PermissionManagement] omics:DeleteS3AccessPolicy.
 
 ---
 
@@ -3581,7 +3581,7 @@ public readonly PutS3AccessPolicy: string;
 
 - *Type:* string
 
-[Write] omics:PutS3AccessPolicy.
+[PermissionManagement] omics:PutS3AccessPolicy.
 
 ---
 

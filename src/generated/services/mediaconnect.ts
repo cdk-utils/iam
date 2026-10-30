@@ -27,6 +27,8 @@ export class MediaConnectActions {
 	/** [Write] mediaconnect:AssociateRouterNetworkInterface */
 	static readonly AssociateRouterNetworkInterface =
 		"mediaconnect:AssociateRouterNetworkInterface";
+	/** [Write] mediaconnect:ConnectEndpoints */
+	static readonly ConnectEndpoints = "mediaconnect:ConnectEndpoints";
 	/** [Write] mediaconnect:CreateBridge */
 	static readonly CreateBridge = "mediaconnect:CreateBridge";
 	/** [Write] mediaconnect:CreateFlow */
@@ -46,6 +48,8 @@ export class MediaConnectActions {
 	static readonly DeleteFlow = "mediaconnect:DeleteFlow";
 	/** [Write] mediaconnect:DeleteGateway */
 	static readonly DeleteGateway = "mediaconnect:DeleteGateway";
+	/** [PermissionManagement] mediaconnect:DeleteResourcePolicy */
+	static readonly DeleteResourcePolicy = "mediaconnect:DeleteResourcePolicy";
 	/** [Write] mediaconnect:DeleteRouterInput */
 	static readonly DeleteRouterInput = "mediaconnect:DeleteRouterInput";
 	/** [Write] mediaconnect:DeleteRouterNetworkInterface */
@@ -53,9 +57,15 @@ export class MediaConnectActions {
 		"mediaconnect:DeleteRouterNetworkInterface";
 	/** [Write] mediaconnect:DeleteRouterOutput */
 	static readonly DeleteRouterOutput = "mediaconnect:DeleteRouterOutput";
+	/** [Write] mediaconnect:DeregisterDestinationEndpoint */
+	static readonly DeregisterDestinationEndpoint =
+		"mediaconnect:DeregisterDestinationEndpoint";
 	/** [Write] mediaconnect:DeregisterGatewayInstance */
 	static readonly DeregisterGatewayInstance =
 		"mediaconnect:DeregisterGatewayInstance";
+	/** [Write] mediaconnect:DeregisterSourceEndpoint */
+	static readonly DeregisterSourceEndpoint =
+		"mediaconnect:DeregisterSourceEndpoint";
 	/** [Read] mediaconnect:DescribeBridge */
 	static readonly DescribeBridge = "mediaconnect:DescribeBridge";
 	/** [Read] mediaconnect:DescribeFlow */
@@ -75,9 +85,16 @@ export class MediaConnectActions {
 	static readonly DescribeOffering = "mediaconnect:DescribeOffering";
 	/** [Read] mediaconnect:DescribeReservation */
 	static readonly DescribeReservation = "mediaconnect:DescribeReservation";
+	/** [Write] mediaconnect:DisconnectEndpoints */
+	static readonly DisconnectEndpoints = "mediaconnect:DisconnectEndpoints";
 	/** [Read] mediaconnect:DiscoverGatewayPollEndpoint */
 	static readonly DiscoverGatewayPollEndpoint =
 		"mediaconnect:DiscoverGatewayPollEndpoint";
+	/** [Read] mediaconnect:GetDestinationEndpoint */
+	static readonly actionGetDestinationEndpoint =
+		"mediaconnect:GetDestinationEndpoint";
+	/** [Read] mediaconnect:GetResourcePolicy */
+	static readonly actionGetResourcePolicy = "mediaconnect:GetResourcePolicy";
 	/** [Read] mediaconnect:GetRouterInput */
 	static readonly actionGetRouterInput = "mediaconnect:GetRouterInput";
 	/** [Read] mediaconnect:GetRouterInputSourceMetadata */
@@ -91,10 +108,15 @@ export class MediaConnectActions {
 		"mediaconnect:GetRouterNetworkInterface";
 	/** [Read] mediaconnect:GetRouterOutput */
 	static readonly actionGetRouterOutput = "mediaconnect:GetRouterOutput";
-	/** [Write] mediaconnect:GrantFlowEntitlements */
+	/** [Read] mediaconnect:GetSourceEndpoint */
+	static readonly actionGetSourceEndpoint = "mediaconnect:GetSourceEndpoint";
+	/** [PermissionManagement] mediaconnect:GrantFlowEntitlements */
 	static readonly GrantFlowEntitlements = "mediaconnect:GrantFlowEntitlements";
 	/** [List] mediaconnect:ListBridges */
 	static readonly ListBridges = "mediaconnect:ListBridges";
+	/** [List] mediaconnect:ListDestinationEndpoints */
+	static readonly ListDestinationEndpoints =
+		"mediaconnect:ListDestinationEndpoints";
 	/** [List] mediaconnect:ListEntitlements */
 	static readonly ListEntitlements = "mediaconnect:ListEntitlements";
 	/** [List] mediaconnect:ListFlows */
@@ -114,12 +136,22 @@ export class MediaConnectActions {
 		"mediaconnect:ListRouterNetworkInterfaces";
 	/** [List] mediaconnect:ListRouterOutputs */
 	static readonly ListRouterOutputs = "mediaconnect:ListRouterOutputs";
+	/** [List] mediaconnect:ListSourceEndpoints */
+	static readonly ListSourceEndpoints = "mediaconnect:ListSourceEndpoints";
 	/** [Read] mediaconnect:ListTagsForResource */
 	static readonly ListTagsForResource = "mediaconnect:ListTagsForResource";
 	/** [Write] mediaconnect:PollGateway */
 	static readonly PollGateway = "mediaconnect:PollGateway";
 	/** [Write] mediaconnect:PurchaseOffering */
 	static readonly PurchaseOffering = "mediaconnect:PurchaseOffering";
+	/** [PermissionManagement] mediaconnect:PutResourcePolicy */
+	static readonly PutResourcePolicy = "mediaconnect:PutResourcePolicy";
+	/** [Write] mediaconnect:RegisterDestinationEndpoint */
+	static readonly RegisterDestinationEndpoint =
+		"mediaconnect:RegisterDestinationEndpoint";
+	/** [Write] mediaconnect:RegisterSourceEndpoint */
+	static readonly RegisterSourceEndpoint =
+		"mediaconnect:RegisterSourceEndpoint";
 	/** [Write] mediaconnect:RemoveBridgeOutput */
 	static readonly RemoveBridgeOutput = "mediaconnect:RemoveBridgeOutput";
 	/** [Write] mediaconnect:RemoveBridgeSource */
@@ -137,7 +169,7 @@ export class MediaConnectActions {
 	static readonly RestartRouterInput = "mediaconnect:RestartRouterInput";
 	/** [Write] mediaconnect:RestartRouterOutput */
 	static readonly RestartRouterOutput = "mediaconnect:RestartRouterOutput";
-	/** [Write] mediaconnect:RevokeFlowEntitlement */
+	/** [PermissionManagement] mediaconnect:RevokeFlowEntitlement */
 	static readonly RevokeFlowEntitlement = "mediaconnect:RevokeFlowEntitlement";
 	/** [Write] mediaconnect:StartFlow */
 	static readonly StartFlow = "mediaconnect:StartFlow";
@@ -168,9 +200,12 @@ export class MediaConnectActions {
 	static readonly UpdateBridgeSource = "mediaconnect:UpdateBridgeSource";
 	/** [Write] mediaconnect:UpdateBridgeState */
 	static readonly UpdateBridgeState = "mediaconnect:UpdateBridgeState";
+	/** [Write] mediaconnect:UpdateDestinationEndpoint */
+	static readonly UpdateDestinationEndpoint =
+		"mediaconnect:UpdateDestinationEndpoint";
 	/** [Write] mediaconnect:UpdateFlow */
 	static readonly UpdateFlow = "mediaconnect:UpdateFlow";
-	/** [Write] mediaconnect:UpdateFlowEntitlement */
+	/** [PermissionManagement] mediaconnect:UpdateFlowEntitlement */
 	static readonly UpdateFlowEntitlement = "mediaconnect:UpdateFlowEntitlement";
 	/** [Write] mediaconnect:UpdateFlowMediaStream */
 	static readonly UpdateFlowMediaStream = "mediaconnect:UpdateFlowMediaStream";
@@ -187,6 +222,8 @@ export class MediaConnectActions {
 		"mediaconnect:UpdateRouterNetworkInterface";
 	/** [Write] mediaconnect:UpdateRouterOutput */
 	static readonly UpdateRouterOutput = "mediaconnect:UpdateRouterOutput";
+	/** [Write] mediaconnect:UpdateSourceEndpoint */
+	static readonly UpdateSourceEndpoint = "mediaconnect:UpdateSourceEndpoint";
 
 	/** All read-level actions. */
 	static readonly AllReadActions: string[] = [
@@ -199,11 +236,14 @@ export class MediaConnectActions {
 		MediaConnectActions.DescribeOffering,
 		MediaConnectActions.DescribeReservation,
 		MediaConnectActions.DiscoverGatewayPollEndpoint,
+		MediaConnectActions.actionGetDestinationEndpoint,
+		MediaConnectActions.actionGetResourcePolicy,
 		MediaConnectActions.actionGetRouterInput,
 		MediaConnectActions.actionGetRouterInputSourceMetadata,
 		MediaConnectActions.actionGetRouterInputThumbnail,
 		MediaConnectActions.actionGetRouterNetworkInterface,
 		MediaConnectActions.actionGetRouterOutput,
+		MediaConnectActions.actionGetSourceEndpoint,
 		MediaConnectActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
@@ -215,6 +255,7 @@ export class MediaConnectActions {
 		MediaConnectActions.AddFlowSources,
 		MediaConnectActions.AddFlowVpcInterfaces,
 		MediaConnectActions.AssociateRouterNetworkInterface,
+		MediaConnectActions.ConnectEndpoints,
 		MediaConnectActions.CreateBridge,
 		MediaConnectActions.CreateFlow,
 		MediaConnectActions.CreateGateway,
@@ -227,10 +268,14 @@ export class MediaConnectActions {
 		MediaConnectActions.DeleteRouterInput,
 		MediaConnectActions.DeleteRouterNetworkInterface,
 		MediaConnectActions.DeleteRouterOutput,
+		MediaConnectActions.DeregisterDestinationEndpoint,
 		MediaConnectActions.DeregisterGatewayInstance,
-		MediaConnectActions.GrantFlowEntitlements,
+		MediaConnectActions.DeregisterSourceEndpoint,
+		MediaConnectActions.DisconnectEndpoints,
 		MediaConnectActions.PollGateway,
 		MediaConnectActions.PurchaseOffering,
+		MediaConnectActions.RegisterDestinationEndpoint,
+		MediaConnectActions.RegisterSourceEndpoint,
 		MediaConnectActions.RemoveBridgeOutput,
 		MediaConnectActions.RemoveBridgeSource,
 		MediaConnectActions.RemoveFlowMediaStream,
@@ -239,7 +284,6 @@ export class MediaConnectActions {
 		MediaConnectActions.RemoveFlowVpcInterface,
 		MediaConnectActions.RestartRouterInput,
 		MediaConnectActions.RestartRouterOutput,
-		MediaConnectActions.RevokeFlowEntitlement,
 		MediaConnectActions.StartFlow,
 		MediaConnectActions.StartRouterInput,
 		MediaConnectActions.StartRouterOutput,
@@ -252,8 +296,8 @@ export class MediaConnectActions {
 		MediaConnectActions.UpdateBridgeOutput,
 		MediaConnectActions.UpdateBridgeSource,
 		MediaConnectActions.UpdateBridgeState,
+		MediaConnectActions.UpdateDestinationEndpoint,
 		MediaConnectActions.UpdateFlow,
-		MediaConnectActions.UpdateFlowEntitlement,
 		MediaConnectActions.UpdateFlowMediaStream,
 		MediaConnectActions.UpdateFlowOutput,
 		MediaConnectActions.UpdateFlowSource,
@@ -261,10 +305,12 @@ export class MediaConnectActions {
 		MediaConnectActions.UpdateRouterInput,
 		MediaConnectActions.UpdateRouterNetworkInterface,
 		MediaConnectActions.UpdateRouterOutput,
+		MediaConnectActions.UpdateSourceEndpoint,
 	];
 	/** All list-level actions. */
 	static readonly AllListActions: string[] = [
 		MediaConnectActions.ListBridges,
+		MediaConnectActions.ListDestinationEndpoints,
 		MediaConnectActions.ListEntitlements,
 		MediaConnectActions.ListFlows,
 		MediaConnectActions.ListGatewayInstances,
@@ -274,9 +320,16 @@ export class MediaConnectActions {
 		MediaConnectActions.ListRouterInputs,
 		MediaConnectActions.ListRouterNetworkInterfaces,
 		MediaConnectActions.ListRouterOutputs,
+		MediaConnectActions.ListSourceEndpoints,
 	];
 	/** All permission-management-level actions. */
-	static readonly AllPermissionManagementActions: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [
+		MediaConnectActions.DeleteResourcePolicy,
+		MediaConnectActions.GrantFlowEntitlements,
+		MediaConnectActions.PutResourcePolicy,
+		MediaConnectActions.RevokeFlowEntitlement,
+		MediaConnectActions.UpdateFlowEntitlement,
+	];
 	/** All tagging-level actions. */
 	static readonly AllTaggingActions: string[] = [
 		MediaConnectActions.TagResource,
@@ -314,6 +367,34 @@ export interface MediaConnectBridgeArnComponents {
 	readonly bridgeId: string;
 	/** The BridgeName component. */
 	readonly bridgeName: string;
+}
+
+/**
+ * Properties for building a DestinationEndpoint ARN.
+ */
+export interface MediaConnectDestinationEndpointArnProps {
+	/** The DestinationEndpointId component of the ARN. */
+	readonly destinationEndpointId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a DestinationEndpoint ARN.
+ */
+export interface MediaConnectDestinationEndpointArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DestinationEndpointId component. */
+	readonly destinationEndpointId: string;
 }
 
 /**
@@ -693,6 +774,34 @@ export interface MediaConnectSourceArnComponents {
 }
 
 /**
+ * Properties for building a SourceEndpoint ARN.
+ */
+export interface MediaConnectSourceEndpointArnProps {
+	/** The SourceEndpointId component of the ARN. */
+	readonly sourceEndpointId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a SourceEndpoint ARN.
+ */
+export interface MediaConnectSourceEndpointArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SourceEndpointId component. */
+	readonly sourceEndpointId: string;
+}
+
+/**
  * Properties for building a VpcInterface ARN.
  */
 export interface MediaConnectVPCInterfaceArnProps {
@@ -730,6 +839,8 @@ export interface MediaConnectVPCInterfaceArnComponents {
 
 const BridgeArnRegex =
 	/^arn:(?<partition>[^:]+):mediaconnect:(?<region>[^:]*):(?<account>[^:]*):bridge:(?<bridgeId>[^:/?]+):(?<bridgeName>[^:/?]+)$/;
+const DestinationEndpointArnRegex =
+	/^arn:(?<partition>[^:]+):mediaconnect:(?<region>[^:]*):(?<account>[^:]*):destinationEndpoint:(?<destinationEndpointId>[^:/?]+)$/;
 const EntitlementArnRegex =
 	/^arn:(?<partition>[^:]+):mediaconnect:(?<region>[^:]*):(?<account>[^:]*):entitlement:(?<flowId>[^:/?]+):(?<entitlementName>[^:/?]+)$/;
 const FlowArnRegex =
@@ -754,6 +865,8 @@ const RouterOutputArnRegex =
 	/^arn:(?<partition>[^:]+):mediaconnect:(?<region>[^:]*):(?<account>[^:]*):routerOutput:(?<routerOutputId>[^:/?]+)$/;
 const SourceArnRegex =
 	/^arn:(?<partition>[^:]+):mediaconnect:(?<region>[^:]*):(?<account>[^:]*):source:(?<sourceId>[^:/?]+):(?<sourceName>[^:/?]+)$/;
+const SourceEndpointArnRegex =
+	/^arn:(?<partition>[^:]+):mediaconnect:(?<region>[^:]*):(?<account>[^:]*):sourceEndpoint:(?<sourceEndpointId>[^:/?]+)$/;
 const VPCInterfaceArnRegex =
 	/^arn:(?<partition>[^:]+):mediaconnect:(?<region>[^:]*):(?<account>[^:]*):flow:(?<flowId>[^:/?]+):(?<flowName>[^:/?]+)\/vpcInterface\/(?<vpcInterfaceName>[^:/?]+)$/;
 
@@ -790,6 +903,41 @@ export class MediaConnectResources {
 			account: match.groups.account,
 			bridgeId: match.groups!.bridgeId,
 			bridgeName: match.groups!.bridgeName,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the DestinationEndpoint resource.
+	 */
+	static destinationEndpoint(
+		props: MediaConnectDestinationEndpointArnProps,
+	): string {
+		return `arn:${props.partition ?? "aws"}:mediaconnect:${props.region ?? "*"}:${props.account ?? "*"}:destinationEndpoint:${props.destinationEndpointId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the DestinationEndpoint resource.
+	 */
+	static isValidDestinationEndpointArn(arn: string): boolean {
+		return DestinationEndpointArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a DestinationEndpoint ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseDestinationEndpointArn(
+		arn: string,
+	): MediaConnectDestinationEndpointArnComponents {
+		const match = DestinationEndpointArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid DestinationEndpoint ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			destinationEndpointId: match.groups!.destinationEndpointId,
 		};
 	}
 
@@ -1192,6 +1340,39 @@ export class MediaConnectResources {
 	}
 
 	/**
+	 * Builds an ARN for the SourceEndpoint resource.
+	 */
+	static sourceEndpoint(props: MediaConnectSourceEndpointArnProps): string {
+		return `arn:${props.partition ?? "aws"}:mediaconnect:${props.region ?? "*"}:${props.account ?? "*"}:sourceEndpoint:${props.sourceEndpointId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the SourceEndpoint resource.
+	 */
+	static isValidSourceEndpointArn(arn: string): boolean {
+		return SourceEndpointArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a SourceEndpoint ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseSourceEndpointArn(
+		arn: string,
+	): MediaConnectSourceEndpointArnComponents {
+		const match = SourceEndpointArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid SourceEndpoint ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			sourceEndpointId: match.groups!.sourceEndpointId,
+		};
+	}
+
+	/**
 	 * Builds an ARN for the VpcInterface resource.
 	 */
 	static vpcInterface(props: MediaConnectVPCInterfaceArnProps): string {
@@ -1263,7 +1444,9 @@ export class MediaConnectOperations {
 		"mediaconnect:TagResource",
 	];
 	/** IAM actions required for the BatchGetDestinationEndpoint API call. */
-	static readonly BatchGetDestinationEndpoint: string[] = [];
+	static readonly BatchGetDestinationEndpoint: string[] = [
+		"mediaconnect:GetDestinationEndpoint",
+	];
 	/** IAM actions required for the BatchGetRouterInput API call. */
 	static readonly BatchGetRouterInput: string[] = [
 		"mediaconnect:GetRouterInput",
@@ -1277,9 +1460,13 @@ export class MediaConnectOperations {
 		"mediaconnect:GetRouterOutput",
 	];
 	/** IAM actions required for the BatchGetSourceEndpoint API call. */
-	static readonly BatchGetSourceEndpoint: string[] = [];
+	static readonly BatchGetSourceEndpoint: string[] = [
+		"mediaconnect:GetSourceEndpoint",
+	];
 	/** IAM actions required for the ConnectEndpoints API call. */
-	static readonly ConnectEndpoints: string[] = [];
+	static readonly ConnectEndpoints: string[] = [
+		"mediaconnect:ConnectEndpoints",
+	];
 	/** IAM actions required for the CreateBridge API call. */
 	static readonly CreateBridge: string[] = [
 		"mediaconnect:AddBridgeOutputs",
@@ -1304,6 +1491,7 @@ export class MediaConnectOperations {
 		"mediaconnect:AssociateRouterNetworkInterface",
 		"mediaconnect:CreateRouterInput",
 		"iam:PassRole",
+		"mediaconnect:RegisterDestinationEndpoint",
 		"mediaconnect:TagResource",
 		"mediaconnect:UpdateFlowOutput",
 	];
@@ -1317,6 +1505,7 @@ export class MediaConnectOperations {
 		"mediaconnect:AssociateRouterNetworkInterface",
 		"mediaconnect:CreateRouterOutput",
 		"iam:PassRole",
+		"mediaconnect:RegisterSourceEndpoint",
 		"mediaconnect:TagResource",
 		"mediaconnect:UpdateFlowSource",
 	];
@@ -1340,6 +1529,7 @@ export class MediaConnectOperations {
 	/** IAM actions required for the DeleteRouterInput API call. */
 	static readonly DeleteRouterInput: string[] = [
 		"mediaconnect:DeleteRouterInput",
+		"mediaconnect:DeregisterDestinationEndpoint",
 		"mediaconnect:UpdateFlowOutput",
 	];
 	/** IAM actions required for the DeleteRouterNetworkInterface API call. */
@@ -1349,16 +1539,21 @@ export class MediaConnectOperations {
 	/** IAM actions required for the DeleteRouterOutput API call. */
 	static readonly DeleteRouterOutput: string[] = [
 		"mediaconnect:DeleteRouterOutput",
+		"mediaconnect:DeregisterSourceEndpoint",
 		"mediaconnect:UpdateFlowSource",
 	];
 	/** IAM actions required for the DeregisterDestinationEndpoint API call. */
-	static readonly DeregisterDestinationEndpoint: string[] = [];
+	static readonly DeregisterDestinationEndpoint: string[] = [
+		"mediaconnect:DeregisterDestinationEndpoint",
+	];
 	/** IAM actions required for the DeregisterGatewayInstance API call. */
 	static readonly DeregisterGatewayInstance: string[] = [
 		"mediaconnect:DeregisterGatewayInstance",
 	];
 	/** IAM actions required for the DeregisterSourceEndpoint API call. */
-	static readonly DeregisterSourceEndpoint: string[] = [];
+	static readonly DeregisterSourceEndpoint: string[] = [
+		"mediaconnect:DeregisterSourceEndpoint",
+	];
 	/** IAM actions required for the DescribeBridge API call. */
 	static readonly DescribeBridge: string[] = ["mediaconnect:DescribeBridge"];
 	/** IAM actions required for the DescribeFlow API call. */
@@ -1386,9 +1581,13 @@ export class MediaConnectOperations {
 		"mediaconnect:DescribeReservation",
 	];
 	/** IAM actions required for the DisconnectEndpoints API call. */
-	static readonly DisconnectEndpoints: string[] = [];
+	static readonly DisconnectEndpoints: string[] = [
+		"mediaconnect:DisconnectEndpoints",
+	];
 	/** IAM actions required for the GetDestinationEndpoint API call. */
-	static readonly opGetDestinationEndpoint: string[] = [];
+	static readonly opGetDestinationEndpoint: string[] = [
+		"mediaconnect:GetDestinationEndpoint",
+	];
 	/** IAM actions required for the GetRouterInput API call. */
 	static readonly opGetRouterInput: string[] = ["mediaconnect:GetRouterInput"];
 	/** IAM actions required for the GetRouterInputSourceMetadata API call. */
@@ -1408,7 +1607,9 @@ export class MediaConnectOperations {
 		"mediaconnect:GetRouterOutput",
 	];
 	/** IAM actions required for the GetSourceEndpoint API call. */
-	static readonly opGetSourceEndpoint: string[] = [];
+	static readonly opGetSourceEndpoint: string[] = [
+		"mediaconnect:GetSourceEndpoint",
+	];
 	/** IAM actions required for the GrantFlowEntitlements API call. */
 	static readonly GrantFlowEntitlements: string[] = [
 		"mediaconnect:GrantFlowEntitlements",
@@ -1418,7 +1619,9 @@ export class MediaConnectOperations {
 	/** IAM actions required for the ListBridges API call. */
 	static readonly ListBridges: string[] = ["mediaconnect:ListBridges"];
 	/** IAM actions required for the ListDestinationEndpoints API call. */
-	static readonly ListDestinationEndpoints: string[] = [];
+	static readonly ListDestinationEndpoints: string[] = [
+		"mediaconnect:ListDestinationEndpoints",
+	];
 	/** IAM actions required for the ListEntitlements API call. */
 	static readonly ListEntitlements: string[] = [
 		"mediaconnect:ListEntitlements",
@@ -1450,7 +1653,9 @@ export class MediaConnectOperations {
 		"mediaconnect:ListRouterOutputs",
 	];
 	/** IAM actions required for the ListSourceEndpoints API call. */
-	static readonly ListSourceEndpoints: string[] = [];
+	static readonly ListSourceEndpoints: string[] = [
+		"mediaconnect:ListSourceEndpoints",
+	];
 	/** IAM actions required for the ListTagsForGlobalResource API call. */
 	static readonly ListTagsForGlobalResource: string[] = [];
 	/** IAM actions required for the ListTagsForResource API call. */
@@ -1463,10 +1668,12 @@ export class MediaConnectOperations {
 	];
 	/** IAM actions required for the RegisterDestinationEndpoint API call. */
 	static readonly RegisterDestinationEndpoint: string[] = [
+		"mediaconnect:RegisterDestinationEndpoint",
 		"mediaconnect:TagResource",
 	];
 	/** IAM actions required for the RegisterSourceEndpoint API call. */
 	static readonly RegisterSourceEndpoint: string[] = [
+		"mediaconnect:RegisterSourceEndpoint",
 		"mediaconnect:TagResource",
 	];
 	/** IAM actions required for the RemoveBridgeOutput API call. */
@@ -1548,7 +1755,9 @@ export class MediaConnectOperations {
 		"mediaconnect:UpdateBridgeState",
 	];
 	/** IAM actions required for the UpdateDestinationEndpoint API call. */
-	static readonly UpdateDestinationEndpoint: string[] = [];
+	static readonly UpdateDestinationEndpoint: string[] = [
+		"mediaconnect:UpdateDestinationEndpoint",
+	];
 	/** IAM actions required for the UpdateFlow API call. */
 	static readonly UpdateFlow: string[] = ["mediaconnect:UpdateFlow"];
 	/** IAM actions required for the UpdateFlowEntitlement API call. */
@@ -1593,7 +1802,9 @@ export class MediaConnectOperations {
 		"mediaconnect:UpdateRouterOutput",
 	];
 	/** IAM actions required for the UpdateSourceEndpoint API call. */
-	static readonly UpdateSourceEndpoint: string[] = [];
+	static readonly UpdateSourceEndpoint: string[] = [
+		"mediaconnect:UpdateSourceEndpoint",
+	];
 }
 
 /**

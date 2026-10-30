@@ -177,6 +177,154 @@ Defaults to "*".
 
 ---
 
+### MediaConnectDestinationEndpointArnComponents <a name="MediaConnectDestinationEndpointArnComponents" id="@cdk_utils/iam.mediaconnect.MediaConnectDestinationEndpointArnComponents"></a>
+
+Parsed components of a DestinationEndpoint ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.mediaconnect.MediaConnectDestinationEndpointArnComponents.Initializer"></a>
+
+```typescript
+import { mediaconnect } from '@cdk_utils/iam'
+
+const mediaConnectDestinationEndpointArnComponents: mediaconnect.MediaConnectDestinationEndpointArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectDestinationEndpointArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectDestinationEndpointArnComponents.property.destinationEndpointId">destinationEndpointId</a></code> | <code>string</code> | The DestinationEndpointId component. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectDestinationEndpointArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectDestinationEndpointArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.mediaconnect.MediaConnectDestinationEndpointArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `destinationEndpointId`<sup>Required</sup> <a name="destinationEndpointId" id="@cdk_utils/iam.mediaconnect.MediaConnectDestinationEndpointArnComponents.property.destinationEndpointId"></a>
+
+```typescript
+public readonly destinationEndpointId: string;
+```
+
+- *Type:* string
+
+The DestinationEndpointId component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.mediaconnect.MediaConnectDestinationEndpointArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.mediaconnect.MediaConnectDestinationEndpointArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### MediaConnectDestinationEndpointArnProps <a name="MediaConnectDestinationEndpointArnProps" id="@cdk_utils/iam.mediaconnect.MediaConnectDestinationEndpointArnProps"></a>
+
+Properties for building a DestinationEndpoint ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.mediaconnect.MediaConnectDestinationEndpointArnProps.Initializer"></a>
+
+```typescript
+import { mediaconnect } from '@cdk_utils/iam'
+
+const mediaConnectDestinationEndpointArnProps: mediaconnect.MediaConnectDestinationEndpointArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectDestinationEndpointArnProps.property.destinationEndpointId">destinationEndpointId</a></code> | <code>string</code> | The DestinationEndpointId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectDestinationEndpointArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectDestinationEndpointArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectDestinationEndpointArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `destinationEndpointId`<sup>Required</sup> <a name="destinationEndpointId" id="@cdk_utils/iam.mediaconnect.MediaConnectDestinationEndpointArnProps.property.destinationEndpointId"></a>
+
+```typescript
+public readonly destinationEndpointId: string;
+```
+
+- *Type:* string
+
+The DestinationEndpointId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.mediaconnect.MediaConnectDestinationEndpointArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.mediaconnect.MediaConnectDestinationEndpointArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.mediaconnect.MediaConnectDestinationEndpointArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### MediaConnectEntitlementArnComponents <a name="MediaConnectEntitlementArnComponents" id="@cdk_utils/iam.mediaconnect.MediaConnectEntitlementArnComponents"></a>
 
 Parsed components of a Entitlement ARN.
@@ -2213,6 +2361,154 @@ Defaults to "*".
 
 ---
 
+### MediaConnectSourceEndpointArnComponents <a name="MediaConnectSourceEndpointArnComponents" id="@cdk_utils/iam.mediaconnect.MediaConnectSourceEndpointArnComponents"></a>
+
+Parsed components of a SourceEndpoint ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.mediaconnect.MediaConnectSourceEndpointArnComponents.Initializer"></a>
+
+```typescript
+import { mediaconnect } from '@cdk_utils/iam'
+
+const mediaConnectSourceEndpointArnComponents: mediaconnect.MediaConnectSourceEndpointArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectSourceEndpointArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectSourceEndpointArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectSourceEndpointArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectSourceEndpointArnComponents.property.sourceEndpointId">sourceEndpointId</a></code> | <code>string</code> | The SourceEndpointId component. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.mediaconnect.MediaConnectSourceEndpointArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.mediaconnect.MediaConnectSourceEndpointArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.mediaconnect.MediaConnectSourceEndpointArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+##### `sourceEndpointId`<sup>Required</sup> <a name="sourceEndpointId" id="@cdk_utils/iam.mediaconnect.MediaConnectSourceEndpointArnComponents.property.sourceEndpointId"></a>
+
+```typescript
+public readonly sourceEndpointId: string;
+```
+
+- *Type:* string
+
+The SourceEndpointId component.
+
+---
+
+### MediaConnectSourceEndpointArnProps <a name="MediaConnectSourceEndpointArnProps" id="@cdk_utils/iam.mediaconnect.MediaConnectSourceEndpointArnProps"></a>
+
+Properties for building a SourceEndpoint ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.mediaconnect.MediaConnectSourceEndpointArnProps.Initializer"></a>
+
+```typescript
+import { mediaconnect } from '@cdk_utils/iam'
+
+const mediaConnectSourceEndpointArnProps: mediaconnect.MediaConnectSourceEndpointArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectSourceEndpointArnProps.property.sourceEndpointId">sourceEndpointId</a></code> | <code>string</code> | The SourceEndpointId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectSourceEndpointArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectSourceEndpointArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectSourceEndpointArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `sourceEndpointId`<sup>Required</sup> <a name="sourceEndpointId" id="@cdk_utils/iam.mediaconnect.MediaConnectSourceEndpointArnProps.property.sourceEndpointId"></a>
+
+```typescript
+public readonly sourceEndpointId: string;
+```
+
+- *Type:* string
+
+The SourceEndpointId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.mediaconnect.MediaConnectSourceEndpointArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.mediaconnect.MediaConnectSourceEndpointArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.mediaconnect.MediaConnectSourceEndpointArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### MediaConnectVPCInterfaceArnComponents <a name="MediaConnectVPCInterfaceArnComponents" id="@cdk_utils/iam.mediaconnect.MediaConnectVPCInterfaceArnComponents"></a>
 
 Parsed components of a VpcInterface ARN.
@@ -2439,11 +2735,14 @@ new mediaconnect.MediaConnectActions()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.actionGetDestinationEndpoint">actionGetDestinationEndpoint</a></code> | <code>string</code> | [Read] mediaconnect:GetDestinationEndpoint. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.actionGetResourcePolicy">actionGetResourcePolicy</a></code> | <code>string</code> | [Read] mediaconnect:GetResourcePolicy. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.actionGetRouterInput">actionGetRouterInput</a></code> | <code>string</code> | [Read] mediaconnect:GetRouterInput. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.actionGetRouterInputSourceMetadata">actionGetRouterInputSourceMetadata</a></code> | <code>string</code> | [Read] mediaconnect:GetRouterInputSourceMetadata. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.actionGetRouterInputThumbnail">actionGetRouterInputThumbnail</a></code> | <code>string</code> | [Read] mediaconnect:GetRouterInputThumbnail. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.actionGetRouterNetworkInterface">actionGetRouterNetworkInterface</a></code> | <code>string</code> | [Read] mediaconnect:GetRouterNetworkInterface. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.actionGetRouterOutput">actionGetRouterOutput</a></code> | <code>string</code> | [Read] mediaconnect:GetRouterOutput. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.actionGetSourceEndpoint">actionGetSourceEndpoint</a></code> | <code>string</code> | [Read] mediaconnect:GetSourceEndpoint. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.AddBridgeOutputs">AddBridgeOutputs</a></code> | <code>string</code> | [Write] mediaconnect:AddBridgeOutputs. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.AddBridgeSources">AddBridgeSources</a></code> | <code>string</code> | [Write] mediaconnect:AddBridgeSources. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.AddFlowMediaStreams">AddFlowMediaStreams</a></code> | <code>string</code> | [Write] mediaconnect:AddFlowMediaStreams. |
@@ -2456,6 +2755,7 @@ new mediaconnect.MediaConnectActions()
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.AllTaggingActions">AllTaggingActions</a></code> | <code>string[]</code> | All tagging-level actions. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.AssociateRouterNetworkInterface">AssociateRouterNetworkInterface</a></code> | <code>string</code> | [Write] mediaconnect:AssociateRouterNetworkInterface. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.ConnectEndpoints">ConnectEndpoints</a></code> | <code>string</code> | [Write] mediaconnect:ConnectEndpoints. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.CreateBridge">CreateBridge</a></code> | <code>string</code> | [Write] mediaconnect:CreateBridge. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.CreateFlow">CreateFlow</a></code> | <code>string</code> | [Write] mediaconnect:CreateFlow. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.CreateGateway">CreateGateway</a></code> | <code>string</code> | [Write] mediaconnect:CreateGateway. |
@@ -2465,10 +2765,13 @@ new mediaconnect.MediaConnectActions()
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.DeleteBridge">DeleteBridge</a></code> | <code>string</code> | [Write] mediaconnect:DeleteBridge. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.DeleteFlow">DeleteFlow</a></code> | <code>string</code> | [Write] mediaconnect:DeleteFlow. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.DeleteGateway">DeleteGateway</a></code> | <code>string</code> | [Write] mediaconnect:DeleteGateway. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.DeleteResourcePolicy">DeleteResourcePolicy</a></code> | <code>string</code> | [PermissionManagement] mediaconnect:DeleteResourcePolicy. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.DeleteRouterInput">DeleteRouterInput</a></code> | <code>string</code> | [Write] mediaconnect:DeleteRouterInput. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.DeleteRouterNetworkInterface">DeleteRouterNetworkInterface</a></code> | <code>string</code> | [Write] mediaconnect:DeleteRouterNetworkInterface. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.DeleteRouterOutput">DeleteRouterOutput</a></code> | <code>string</code> | [Write] mediaconnect:DeleteRouterOutput. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.DeregisterDestinationEndpoint">DeregisterDestinationEndpoint</a></code> | <code>string</code> | [Write] mediaconnect:DeregisterDestinationEndpoint. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.DeregisterGatewayInstance">DeregisterGatewayInstance</a></code> | <code>string</code> | [Write] mediaconnect:DeregisterGatewayInstance. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.DeregisterSourceEndpoint">DeregisterSourceEndpoint</a></code> | <code>string</code> | [Write] mediaconnect:DeregisterSourceEndpoint. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.DescribeBridge">DescribeBridge</a></code> | <code>string</code> | [Read] mediaconnect:DescribeBridge. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.DescribeFlow">DescribeFlow</a></code> | <code>string</code> | [Read] mediaconnect:DescribeFlow. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.DescribeFlowSourceMetadata">DescribeFlowSourceMetadata</a></code> | <code>string</code> | [Read] mediaconnect:DescribeFlowSourceMetadata. |
@@ -2477,9 +2780,11 @@ new mediaconnect.MediaConnectActions()
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.DescribeGatewayInstance">DescribeGatewayInstance</a></code> | <code>string</code> | [Read] mediaconnect:DescribeGatewayInstance. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.DescribeOffering">DescribeOffering</a></code> | <code>string</code> | [Read] mediaconnect:DescribeOffering. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.DescribeReservation">DescribeReservation</a></code> | <code>string</code> | [Read] mediaconnect:DescribeReservation. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.DisconnectEndpoints">DisconnectEndpoints</a></code> | <code>string</code> | [Write] mediaconnect:DisconnectEndpoints. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.DiscoverGatewayPollEndpoint">DiscoverGatewayPollEndpoint</a></code> | <code>string</code> | [Read] mediaconnect:DiscoverGatewayPollEndpoint. |
-| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.GrantFlowEntitlements">GrantFlowEntitlements</a></code> | <code>string</code> | [Write] mediaconnect:GrantFlowEntitlements. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.GrantFlowEntitlements">GrantFlowEntitlements</a></code> | <code>string</code> | [PermissionManagement] mediaconnect:GrantFlowEntitlements. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.ListBridges">ListBridges</a></code> | <code>string</code> | [List] mediaconnect:ListBridges. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.ListDestinationEndpoints">ListDestinationEndpoints</a></code> | <code>string</code> | [List] mediaconnect:ListDestinationEndpoints. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.ListEntitlements">ListEntitlements</a></code> | <code>string</code> | [List] mediaconnect:ListEntitlements. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.ListFlows">ListFlows</a></code> | <code>string</code> | [List] mediaconnect:ListFlows. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.ListGatewayInstances">ListGatewayInstances</a></code> | <code>string</code> | [List] mediaconnect:ListGatewayInstances. |
@@ -2489,9 +2794,13 @@ new mediaconnect.MediaConnectActions()
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.ListRouterInputs">ListRouterInputs</a></code> | <code>string</code> | [List] mediaconnect:ListRouterInputs. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.ListRouterNetworkInterfaces">ListRouterNetworkInterfaces</a></code> | <code>string</code> | [List] mediaconnect:ListRouterNetworkInterfaces. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.ListRouterOutputs">ListRouterOutputs</a></code> | <code>string</code> | [List] mediaconnect:ListRouterOutputs. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.ListSourceEndpoints">ListSourceEndpoints</a></code> | <code>string</code> | [List] mediaconnect:ListSourceEndpoints. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [Read] mediaconnect:ListTagsForResource. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.PollGateway">PollGateway</a></code> | <code>string</code> | [Write] mediaconnect:PollGateway. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.PurchaseOffering">PurchaseOffering</a></code> | <code>string</code> | [Write] mediaconnect:PurchaseOffering. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.PutResourcePolicy">PutResourcePolicy</a></code> | <code>string</code> | [PermissionManagement] mediaconnect:PutResourcePolicy. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.RegisterDestinationEndpoint">RegisterDestinationEndpoint</a></code> | <code>string</code> | [Write] mediaconnect:RegisterDestinationEndpoint. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.RegisterSourceEndpoint">RegisterSourceEndpoint</a></code> | <code>string</code> | [Write] mediaconnect:RegisterSourceEndpoint. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.RemoveBridgeOutput">RemoveBridgeOutput</a></code> | <code>string</code> | [Write] mediaconnect:RemoveBridgeOutput. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.RemoveBridgeSource">RemoveBridgeSource</a></code> | <code>string</code> | [Write] mediaconnect:RemoveBridgeSource. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.RemoveFlowMediaStream">RemoveFlowMediaStream</a></code> | <code>string</code> | [Write] mediaconnect:RemoveFlowMediaStream. |
@@ -2500,7 +2809,7 @@ new mediaconnect.MediaConnectActions()
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.RemoveFlowVpcInterface">RemoveFlowVpcInterface</a></code> | <code>string</code> | [Write] mediaconnect:RemoveFlowVpcInterface. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.RestartRouterInput">RestartRouterInput</a></code> | <code>string</code> | [Write] mediaconnect:RestartRouterInput. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.RestartRouterOutput">RestartRouterOutput</a></code> | <code>string</code> | [Write] mediaconnect:RestartRouterOutput. |
-| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.RevokeFlowEntitlement">RevokeFlowEntitlement</a></code> | <code>string</code> | [Write] mediaconnect:RevokeFlowEntitlement. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.RevokeFlowEntitlement">RevokeFlowEntitlement</a></code> | <code>string</code> | [PermissionManagement] mediaconnect:RevokeFlowEntitlement. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.StartFlow">StartFlow</a></code> | <code>string</code> | [Write] mediaconnect:StartFlow. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.StartRouterInput">StartRouterInput</a></code> | <code>string</code> | [Write] mediaconnect:StartRouterInput. |
@@ -2516,8 +2825,9 @@ new mediaconnect.MediaConnectActions()
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.UpdateBridgeOutput">UpdateBridgeOutput</a></code> | <code>string</code> | [Write] mediaconnect:UpdateBridgeOutput. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.UpdateBridgeSource">UpdateBridgeSource</a></code> | <code>string</code> | [Write] mediaconnect:UpdateBridgeSource. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.UpdateBridgeState">UpdateBridgeState</a></code> | <code>string</code> | [Write] mediaconnect:UpdateBridgeState. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.UpdateDestinationEndpoint">UpdateDestinationEndpoint</a></code> | <code>string</code> | [Write] mediaconnect:UpdateDestinationEndpoint. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.UpdateFlow">UpdateFlow</a></code> | <code>string</code> | [Write] mediaconnect:UpdateFlow. |
-| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.UpdateFlowEntitlement">UpdateFlowEntitlement</a></code> | <code>string</code> | [Write] mediaconnect:UpdateFlowEntitlement. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.UpdateFlowEntitlement">UpdateFlowEntitlement</a></code> | <code>string</code> | [PermissionManagement] mediaconnect:UpdateFlowEntitlement. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.UpdateFlowMediaStream">UpdateFlowMediaStream</a></code> | <code>string</code> | [Write] mediaconnect:UpdateFlowMediaStream. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.UpdateFlowOutput">UpdateFlowOutput</a></code> | <code>string</code> | [Write] mediaconnect:UpdateFlowOutput. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.UpdateFlowSource">UpdateFlowSource</a></code> | <code>string</code> | [Write] mediaconnect:UpdateFlowSource. |
@@ -2525,6 +2835,31 @@ new mediaconnect.MediaConnectActions()
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.UpdateRouterInput">UpdateRouterInput</a></code> | <code>string</code> | [Write] mediaconnect:UpdateRouterInput. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.UpdateRouterNetworkInterface">UpdateRouterNetworkInterface</a></code> | <code>string</code> | [Write] mediaconnect:UpdateRouterNetworkInterface. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.UpdateRouterOutput">UpdateRouterOutput</a></code> | <code>string</code> | [Write] mediaconnect:UpdateRouterOutput. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectActions.property.UpdateSourceEndpoint">UpdateSourceEndpoint</a></code> | <code>string</code> | [Write] mediaconnect:UpdateSourceEndpoint. |
+
+---
+
+##### `actionGetDestinationEndpoint`<sup>Required</sup> <a name="actionGetDestinationEndpoint" id="@cdk_utils/iam.mediaconnect.MediaConnectActions.property.actionGetDestinationEndpoint"></a>
+
+```typescript
+public readonly actionGetDestinationEndpoint: string;
+```
+
+- *Type:* string
+
+[Read] mediaconnect:GetDestinationEndpoint.
+
+---
+
+##### `actionGetResourcePolicy`<sup>Required</sup> <a name="actionGetResourcePolicy" id="@cdk_utils/iam.mediaconnect.MediaConnectActions.property.actionGetResourcePolicy"></a>
+
+```typescript
+public readonly actionGetResourcePolicy: string;
+```
+
+- *Type:* string
+
+[Read] mediaconnect:GetResourcePolicy.
 
 ---
 
@@ -2585,6 +2920,18 @@ public readonly actionGetRouterOutput: string;
 - *Type:* string
 
 [Read] mediaconnect:GetRouterOutput.
+
+---
+
+##### `actionGetSourceEndpoint`<sup>Required</sup> <a name="actionGetSourceEndpoint" id="@cdk_utils/iam.mediaconnect.MediaConnectActions.property.actionGetSourceEndpoint"></a>
+
+```typescript
+public readonly actionGetSourceEndpoint: string;
+```
+
+- *Type:* string
+
+[Read] mediaconnect:GetSourceEndpoint.
 
 ---
 
@@ -2732,6 +3079,18 @@ public readonly AssociateRouterNetworkInterface: string;
 
 ---
 
+##### `ConnectEndpoints`<sup>Required</sup> <a name="ConnectEndpoints" id="@cdk_utils/iam.mediaconnect.MediaConnectActions.property.ConnectEndpoints"></a>
+
+```typescript
+public readonly ConnectEndpoints: string;
+```
+
+- *Type:* string
+
+[Write] mediaconnect:ConnectEndpoints.
+
+---
+
 ##### `CreateBridge`<sup>Required</sup> <a name="CreateBridge" id="@cdk_utils/iam.mediaconnect.MediaConnectActions.property.CreateBridge"></a>
 
 ```typescript
@@ -2840,6 +3199,18 @@ public readonly DeleteGateway: string;
 
 ---
 
+##### `DeleteResourcePolicy`<sup>Required</sup> <a name="DeleteResourcePolicy" id="@cdk_utils/iam.mediaconnect.MediaConnectActions.property.DeleteResourcePolicy"></a>
+
+```typescript
+public readonly DeleteResourcePolicy: string;
+```
+
+- *Type:* string
+
+[PermissionManagement] mediaconnect:DeleteResourcePolicy.
+
+---
+
 ##### `DeleteRouterInput`<sup>Required</sup> <a name="DeleteRouterInput" id="@cdk_utils/iam.mediaconnect.MediaConnectActions.property.DeleteRouterInput"></a>
 
 ```typescript
@@ -2876,6 +3247,18 @@ public readonly DeleteRouterOutput: string;
 
 ---
 
+##### `DeregisterDestinationEndpoint`<sup>Required</sup> <a name="DeregisterDestinationEndpoint" id="@cdk_utils/iam.mediaconnect.MediaConnectActions.property.DeregisterDestinationEndpoint"></a>
+
+```typescript
+public readonly DeregisterDestinationEndpoint: string;
+```
+
+- *Type:* string
+
+[Write] mediaconnect:DeregisterDestinationEndpoint.
+
+---
+
 ##### `DeregisterGatewayInstance`<sup>Required</sup> <a name="DeregisterGatewayInstance" id="@cdk_utils/iam.mediaconnect.MediaConnectActions.property.DeregisterGatewayInstance"></a>
 
 ```typescript
@@ -2885,6 +3268,18 @@ public readonly DeregisterGatewayInstance: string;
 - *Type:* string
 
 [Write] mediaconnect:DeregisterGatewayInstance.
+
+---
+
+##### `DeregisterSourceEndpoint`<sup>Required</sup> <a name="DeregisterSourceEndpoint" id="@cdk_utils/iam.mediaconnect.MediaConnectActions.property.DeregisterSourceEndpoint"></a>
+
+```typescript
+public readonly DeregisterSourceEndpoint: string;
+```
+
+- *Type:* string
+
+[Write] mediaconnect:DeregisterSourceEndpoint.
 
 ---
 
@@ -2984,6 +3379,18 @@ public readonly DescribeReservation: string;
 
 ---
 
+##### `DisconnectEndpoints`<sup>Required</sup> <a name="DisconnectEndpoints" id="@cdk_utils/iam.mediaconnect.MediaConnectActions.property.DisconnectEndpoints"></a>
+
+```typescript
+public readonly DisconnectEndpoints: string;
+```
+
+- *Type:* string
+
+[Write] mediaconnect:DisconnectEndpoints.
+
+---
+
 ##### `DiscoverGatewayPollEndpoint`<sup>Required</sup> <a name="DiscoverGatewayPollEndpoint" id="@cdk_utils/iam.mediaconnect.MediaConnectActions.property.DiscoverGatewayPollEndpoint"></a>
 
 ```typescript
@@ -3004,7 +3411,7 @@ public readonly GrantFlowEntitlements: string;
 
 - *Type:* string
 
-[Write] mediaconnect:GrantFlowEntitlements.
+[PermissionManagement] mediaconnect:GrantFlowEntitlements.
 
 ---
 
@@ -3017,6 +3424,18 @@ public readonly ListBridges: string;
 - *Type:* string
 
 [List] mediaconnect:ListBridges.
+
+---
+
+##### `ListDestinationEndpoints`<sup>Required</sup> <a name="ListDestinationEndpoints" id="@cdk_utils/iam.mediaconnect.MediaConnectActions.property.ListDestinationEndpoints"></a>
+
+```typescript
+public readonly ListDestinationEndpoints: string;
+```
+
+- *Type:* string
+
+[List] mediaconnect:ListDestinationEndpoints.
 
 ---
 
@@ -3128,6 +3547,18 @@ public readonly ListRouterOutputs: string;
 
 ---
 
+##### `ListSourceEndpoints`<sup>Required</sup> <a name="ListSourceEndpoints" id="@cdk_utils/iam.mediaconnect.MediaConnectActions.property.ListSourceEndpoints"></a>
+
+```typescript
+public readonly ListSourceEndpoints: string;
+```
+
+- *Type:* string
+
+[List] mediaconnect:ListSourceEndpoints.
+
+---
+
 ##### `ListTagsForResource`<sup>Required</sup> <a name="ListTagsForResource" id="@cdk_utils/iam.mediaconnect.MediaConnectActions.property.ListTagsForResource"></a>
 
 ```typescript
@@ -3161,6 +3592,42 @@ public readonly PurchaseOffering: string;
 - *Type:* string
 
 [Write] mediaconnect:PurchaseOffering.
+
+---
+
+##### `PutResourcePolicy`<sup>Required</sup> <a name="PutResourcePolicy" id="@cdk_utils/iam.mediaconnect.MediaConnectActions.property.PutResourcePolicy"></a>
+
+```typescript
+public readonly PutResourcePolicy: string;
+```
+
+- *Type:* string
+
+[PermissionManagement] mediaconnect:PutResourcePolicy.
+
+---
+
+##### `RegisterDestinationEndpoint`<sup>Required</sup> <a name="RegisterDestinationEndpoint" id="@cdk_utils/iam.mediaconnect.MediaConnectActions.property.RegisterDestinationEndpoint"></a>
+
+```typescript
+public readonly RegisterDestinationEndpoint: string;
+```
+
+- *Type:* string
+
+[Write] mediaconnect:RegisterDestinationEndpoint.
+
+---
+
+##### `RegisterSourceEndpoint`<sup>Required</sup> <a name="RegisterSourceEndpoint" id="@cdk_utils/iam.mediaconnect.MediaConnectActions.property.RegisterSourceEndpoint"></a>
+
+```typescript
+public readonly RegisterSourceEndpoint: string;
+```
+
+- *Type:* string
+
+[Write] mediaconnect:RegisterSourceEndpoint.
 
 ---
 
@@ -3268,7 +3735,7 @@ public readonly RevokeFlowEntitlement: string;
 
 - *Type:* string
 
-[Write] mediaconnect:RevokeFlowEntitlement.
+[PermissionManagement] mediaconnect:RevokeFlowEntitlement.
 
 ---
 
@@ -3452,6 +3919,18 @@ public readonly UpdateBridgeState: string;
 
 ---
 
+##### `UpdateDestinationEndpoint`<sup>Required</sup> <a name="UpdateDestinationEndpoint" id="@cdk_utils/iam.mediaconnect.MediaConnectActions.property.UpdateDestinationEndpoint"></a>
+
+```typescript
+public readonly UpdateDestinationEndpoint: string;
+```
+
+- *Type:* string
+
+[Write] mediaconnect:UpdateDestinationEndpoint.
+
+---
+
 ##### `UpdateFlow`<sup>Required</sup> <a name="UpdateFlow" id="@cdk_utils/iam.mediaconnect.MediaConnectActions.property.UpdateFlow"></a>
 
 ```typescript
@@ -3472,7 +3951,7 @@ public readonly UpdateFlowEntitlement: string;
 
 - *Type:* string
 
-[Write] mediaconnect:UpdateFlowEntitlement.
+[PermissionManagement] mediaconnect:UpdateFlowEntitlement.
 
 ---
 
@@ -3557,6 +4036,18 @@ public readonly UpdateRouterOutput: string;
 - *Type:* string
 
 [Write] mediaconnect:UpdateRouterOutput.
+
+---
+
+##### `UpdateSourceEndpoint`<sup>Required</sup> <a name="UpdateSourceEndpoint" id="@cdk_utils/iam.mediaconnect.MediaConnectActions.property.UpdateSourceEndpoint"></a>
+
+```typescript
+public readonly UpdateSourceEndpoint: string;
+```
+
+- *Type:* string
+
+[Write] mediaconnect:UpdateSourceEndpoint.
 
 ---
 
@@ -5124,11 +5615,13 @@ new mediaconnect.MediaConnectResources()
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectResources.bridge">bridge</a></code> | Builds an ARN for the Bridge resource. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectResources.destinationEndpoint">destinationEndpoint</a></code> | Builds an ARN for the DestinationEndpoint resource. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectResources.entitlement">entitlement</a></code> | Builds an ARN for the Entitlement resource. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectResources.flow">flow</a></code> | Builds an ARN for the Flow resource. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectResources.gateway">gateway</a></code> | Builds an ARN for the Gateway resource. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectResources.gatewayInstance">gatewayInstance</a></code> | Builds an ARN for the GatewayInstance resource. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectResources.isValidBridgeArn">isValidBridgeArn</a></code> | Validates whether a string is a valid ARN for the Bridge resource. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectResources.isValidDestinationEndpointArn">isValidDestinationEndpointArn</a></code> | Validates whether a string is a valid ARN for the DestinationEndpoint resource. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectResources.isValidEntitlementArn">isValidEntitlementArn</a></code> | Validates whether a string is a valid ARN for the Entitlement resource. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectResources.isValidFlowArn">isValidFlowArn</a></code> | Validates whether a string is a valid ARN for the Flow resource. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectResources.isValidGatewayArn">isValidGatewayArn</a></code> | Validates whether a string is a valid ARN for the Gateway resource. |
@@ -5141,11 +5634,13 @@ new mediaconnect.MediaConnectResources()
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectResources.isValidRouterNetworkInterfaceArn">isValidRouterNetworkInterfaceArn</a></code> | Validates whether a string is a valid ARN for the RouterNetworkInterface resource. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectResources.isValidRouterOutputArn">isValidRouterOutputArn</a></code> | Validates whether a string is a valid ARN for the RouterOutput resource. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectResources.isValidSourceArn">isValidSourceArn</a></code> | Validates whether a string is a valid ARN for the Source resource. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectResources.isValidSourceEndpointArn">isValidSourceEndpointArn</a></code> | Validates whether a string is a valid ARN for the SourceEndpoint resource. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectResources.isValidVPCInterfaceArn">isValidVPCInterfaceArn</a></code> | Validates whether a string is a valid ARN for the VpcInterface resource. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectResources.mediaStream">mediaStream</a></code> | Builds an ARN for the MediaStream resource. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectResources.offering">offering</a></code> | Builds an ARN for the Offering resource. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectResources.output">output</a></code> | Builds an ARN for the Output resource. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectResources.parseBridgeArn">parseBridgeArn</a></code> | Parses a Bridge ARN into its components. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectResources.parseDestinationEndpointArn">parseDestinationEndpointArn</a></code> | Parses a DestinationEndpoint ARN into its components. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectResources.parseEntitlementArn">parseEntitlementArn</a></code> | Parses a Entitlement ARN into its components. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectResources.parseFlowArn">parseFlowArn</a></code> | Parses a Flow ARN into its components. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectResources.parseGatewayArn">parseGatewayArn</a></code> | Parses a Gateway ARN into its components. |
@@ -5158,12 +5653,14 @@ new mediaconnect.MediaConnectResources()
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectResources.parseRouterNetworkInterfaceArn">parseRouterNetworkInterfaceArn</a></code> | Parses a RouterNetworkInterface ARN into its components. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectResources.parseRouterOutputArn">parseRouterOutputArn</a></code> | Parses a RouterOutput ARN into its components. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectResources.parseSourceArn">parseSourceArn</a></code> | Parses a Source ARN into its components. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectResources.parseSourceEndpointArn">parseSourceEndpointArn</a></code> | Parses a SourceEndpoint ARN into its components. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectResources.parseVPCInterfaceArn">parseVPCInterfaceArn</a></code> | Parses a VpcInterface ARN into its components. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectResources.reservation">reservation</a></code> | Builds an ARN for the Reservation resource. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectResources.routerInput">routerInput</a></code> | Builds an ARN for the RouterInput resource. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectResources.routerNetworkInterface">routerNetworkInterface</a></code> | Builds an ARN for the RouterNetworkInterface resource. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectResources.routerOutput">routerOutput</a></code> | Builds an ARN for the RouterOutput resource. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectResources.source">source</a></code> | Builds an ARN for the Source resource. |
+| <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectResources.sourceEndpoint">sourceEndpoint</a></code> | Builds an ARN for the SourceEndpoint resource. |
 | <code><a href="#@cdk_utils/iam.mediaconnect.MediaConnectResources.vpcInterface">vpcInterface</a></code> | Builds an ARN for the VpcInterface resource. |
 
 ---
@@ -5181,6 +5678,22 @@ Builds an ARN for the Bridge resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.mediaconnect.MediaConnectResources.bridge.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.mediaconnect.MediaConnectBridgeArnProps">MediaConnectBridgeArnProps</a>
+
+---
+
+##### `destinationEndpoint` <a name="destinationEndpoint" id="@cdk_utils/iam.mediaconnect.MediaConnectResources.destinationEndpoint"></a>
+
+```typescript
+import { mediaconnect } from '@cdk_utils/iam'
+
+mediaconnect.MediaConnectResources.destinationEndpoint(props: MediaConnectDestinationEndpointArnProps)
+```
+
+Builds an ARN for the DestinationEndpoint resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.mediaconnect.MediaConnectResources.destinationEndpoint.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.mediaconnect.MediaConnectDestinationEndpointArnProps">MediaConnectDestinationEndpointArnProps</a>
 
 ---
 
@@ -5259,6 +5772,22 @@ mediaconnect.MediaConnectResources.isValidBridgeArn(arn: string)
 Validates whether a string is a valid ARN for the Bridge resource.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.mediaconnect.MediaConnectResources.isValidBridgeArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidDestinationEndpointArn` <a name="isValidDestinationEndpointArn" id="@cdk_utils/iam.mediaconnect.MediaConnectResources.isValidDestinationEndpointArn"></a>
+
+```typescript
+import { mediaconnect } from '@cdk_utils/iam'
+
+mediaconnect.MediaConnectResources.isValidDestinationEndpointArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the DestinationEndpoint resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.mediaconnect.MediaConnectResources.isValidDestinationEndpointArn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -5456,6 +5985,22 @@ Validates whether a string is a valid ARN for the Source resource.
 
 ---
 
+##### `isValidSourceEndpointArn` <a name="isValidSourceEndpointArn" id="@cdk_utils/iam.mediaconnect.MediaConnectResources.isValidSourceEndpointArn"></a>
+
+```typescript
+import { mediaconnect } from '@cdk_utils/iam'
+
+mediaconnect.MediaConnectResources.isValidSourceEndpointArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the SourceEndpoint resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.mediaconnect.MediaConnectResources.isValidSourceEndpointArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `isValidVPCInterfaceArn` <a name="isValidVPCInterfaceArn" id="@cdk_utils/iam.mediaconnect.MediaConnectResources.isValidVPCInterfaceArn"></a>
 
 ```typescript
@@ -5531,6 +6076,22 @@ mediaconnect.MediaConnectResources.parseBridgeArn(arn: string)
 Parses a Bridge ARN into its components.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.mediaconnect.MediaConnectResources.parseBridgeArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseDestinationEndpointArn` <a name="parseDestinationEndpointArn" id="@cdk_utils/iam.mediaconnect.MediaConnectResources.parseDestinationEndpointArn"></a>
+
+```typescript
+import { mediaconnect } from '@cdk_utils/iam'
+
+mediaconnect.MediaConnectResources.parseDestinationEndpointArn(arn: string)
+```
+
+Parses a DestinationEndpoint ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.mediaconnect.MediaConnectResources.parseDestinationEndpointArn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -5728,6 +6289,22 @@ Parses a Source ARN into its components.
 
 ---
 
+##### `parseSourceEndpointArn` <a name="parseSourceEndpointArn" id="@cdk_utils/iam.mediaconnect.MediaConnectResources.parseSourceEndpointArn"></a>
+
+```typescript
+import { mediaconnect } from '@cdk_utils/iam'
+
+mediaconnect.MediaConnectResources.parseSourceEndpointArn(arn: string)
+```
+
+Parses a SourceEndpoint ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.mediaconnect.MediaConnectResources.parseSourceEndpointArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `parseVPCInterfaceArn` <a name="parseVPCInterfaceArn" id="@cdk_utils/iam.mediaconnect.MediaConnectResources.parseVPCInterfaceArn"></a>
 
 ```typescript
@@ -5821,6 +6398,22 @@ Builds an ARN for the Source resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.mediaconnect.MediaConnectResources.source.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.mediaconnect.MediaConnectSourceArnProps">MediaConnectSourceArnProps</a>
+
+---
+
+##### `sourceEndpoint` <a name="sourceEndpoint" id="@cdk_utils/iam.mediaconnect.MediaConnectResources.sourceEndpoint"></a>
+
+```typescript
+import { mediaconnect } from '@cdk_utils/iam'
+
+mediaconnect.MediaConnectResources.sourceEndpoint(props: MediaConnectSourceEndpointArnProps)
+```
+
+Builds an ARN for the SourceEndpoint resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.mediaconnect.MediaConnectResources.sourceEndpoint.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.mediaconnect.MediaConnectSourceEndpointArnProps">MediaConnectSourceEndpointArnProps</a>
 
 ---
 

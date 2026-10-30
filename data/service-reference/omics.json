@@ -631,7 +631,7 @@
         "Properties": {
           "IsDataPlane": false,
           "IsList": false,
-          "IsPermissionManagement": false,
+          "IsPermissionManagement": true,
           "IsTaggingOnly": false,
           "IsWrite": true
         }
@@ -1759,7 +1759,7 @@
         "Properties": {
           "IsDataPlane": false,
           "IsList": false,
-          "IsPermissionManagement": false,
+          "IsPermissionManagement": true,
           "IsTaggingOnly": false,
           "IsWrite": true
         }

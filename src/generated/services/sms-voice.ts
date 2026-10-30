@@ -1217,7 +1217,6 @@ export class SMSVoiceOperations {
 	/** IAM actions required for the CreateConfigurationSetEventDestination API call. */
 	static readonly CreateConfigurationSetEventDestination: string[] = [
 		"sms-voice:CreateConfigurationSetEventDestination",
-		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateEventDestination API call. */
 	static readonly CreateEventDestination: string[] = [
