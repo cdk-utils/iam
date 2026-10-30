@@ -173,6 +173,27 @@
       }
     },
     {
+      "Name": "ConnectEndpoints",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "DestinationEndpoint"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "CreateBridge",
       "Annotations": {
         "Properties": {
@@ -378,6 +399,21 @@
       }
     },
     {
+      "Name": "DeleteResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "DeleteRouterInput",
       "Annotations": {
         "Properties": {
@@ -441,6 +477,27 @@
       }
     },
     {
+      "Name": "DeregisterDestinationEndpoint",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "DestinationEndpoint"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "DeregisterGatewayInstance",
       "Annotations": {
         "Properties": {
@@ -459,6 +516,27 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeregisterSourceEndpoint",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceEndpoint"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -630,6 +708,27 @@
       }
     },
     {
+      "Name": "DisconnectEndpoints",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "DestinationEndpoint"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "DiscoverGatewayPollEndpoint",
       "Annotations": {
         "Properties": {
@@ -644,6 +743,42 @@
           "Name": "Gateway"
         }
       ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDestinationEndpoint",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "DestinationEndpoint"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -755,6 +890,27 @@
       }
     },
     {
+      "Name": "GetSourceEndpoint",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceEndpoint"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "GrantFlowEntitlements",
       "ActionConditionKeys": [
         "aws:RequestTag/${TagKey}",
@@ -764,7 +920,7 @@
         "Properties": {
           "IsDataPlane": false,
           "IsList": false,
-          "IsPermissionManagement": false,
+          "IsPermissionManagement": true,
           "IsTaggingOnly": false,
           "IsWrite": true
         }
@@ -796,6 +952,22 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDestinationEndpoints",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -943,6 +1115,22 @@
       }
     },
     {
+      "Name": "ListSourceEndpoints",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ListTagsForResource",
       "Annotations": {
         "Properties": {
@@ -992,6 +1180,63 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RegisterDestinationEndpoint",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "DestinationEndpoint"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RegisterSourceEndpoint",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceEndpoint"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -1180,7 +1425,7 @@
         "Properties": {
           "IsDataPlane": false,
           "IsList": false,
-          "IsPermissionManagement": false,
+          "IsPermissionManagement": true,
           "IsTaggingOnly": false,
           "IsWrite": true
         }
@@ -1356,6 +1601,9 @@
       },
       "Resources": [
         {
+          "Name": "DestinationEndpoint"
+        },
+        {
           "Name": "Entitlement"
         },
         {
@@ -1378,6 +1626,9 @@
         },
         {
           "Name": "Source"
+        },
+        {
+          "Name": "SourceEndpoint"
         },
         {
           "Name": "VpcInterface"
@@ -1425,6 +1676,9 @@
       },
       "Resources": [
         {
+          "Name": "DestinationEndpoint"
+        },
+        {
           "Name": "Entitlement"
         },
         {
@@ -1447,6 +1701,9 @@
         },
         {
           "Name": "Source"
+        },
+        {
+          "Name": "SourceEndpoint"
         },
         {
           "Name": "VpcInterface"
@@ -1542,6 +1799,27 @@
       }
     },
     {
+      "Name": "UpdateDestinationEndpoint",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "DestinationEndpoint"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "UpdateFlow",
       "Annotations": {
         "Properties": {
@@ -1568,7 +1846,7 @@
         "Properties": {
           "IsDataPlane": false,
           "IsList": false,
-          "IsPermissionManagement": false,
+          "IsPermissionManagement": true,
           "IsTaggingOnly": false,
           "IsWrite": true
         }
@@ -1738,6 +2016,27 @@
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": false
       }
+    },
+    {
+      "Name": "UpdateSourceEndpoint",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceEndpoint"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
     }
   ],
   "ConditionKeys": [
@@ -1902,6 +2201,12 @@
     },
     {
       "Name": "BatchGetDestinationEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDestinationEndpoint",
+          "Service": "mediaconnect"
+        }
+      ],
       "SDK": [
         {
           "Name": "mediaconnect",
@@ -1960,6 +2265,12 @@
     },
     {
       "Name": "BatchGetSourceEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSourceEndpoint",
+          "Service": "mediaconnect"
+        }
+      ],
       "SDK": [
         {
           "Name": "mediaconnect",
@@ -1970,6 +2281,12 @@
     },
     {
       "Name": "ConnectEndpoints",
+      "AuthorizedActions": [
+        {
+          "Name": "ConnectEndpoints",
+          "Service": "mediaconnect"
+        }
+      ],
       "SDK": [
         {
           "Name": "mediaconnect",
@@ -2088,6 +2405,10 @@
           "Service": "iam"
         },
         {
+          "Name": "RegisterDestinationEndpoint",
+          "Service": "mediaconnect"
+        },
+        {
           "Name": "TagResource",
           "Service": "mediaconnect"
         },
@@ -2143,6 +2464,10 @@
             ]
           },
           "Service": "iam"
+        },
+        {
+          "Name": "RegisterSourceEndpoint",
+          "Service": "mediaconnect"
         },
         {
           "Name": "TagResource",
@@ -2245,6 +2570,10 @@
           "Service": "mediaconnect"
         },
         {
+          "Name": "DeregisterDestinationEndpoint",
+          "Service": "mediaconnect"
+        },
+        {
           "Name": "UpdateFlowOutput",
           "Service": "mediaconnect"
         }
@@ -2281,6 +2610,10 @@
           "Service": "mediaconnect"
         },
         {
+          "Name": "DeregisterSourceEndpoint",
+          "Service": "mediaconnect"
+        },
+        {
           "Name": "UpdateFlowSource",
           "Service": "mediaconnect"
         }
@@ -2295,6 +2628,12 @@
     },
     {
       "Name": "DeregisterDestinationEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "DeregisterDestinationEndpoint",
+          "Service": "mediaconnect"
+        }
+      ],
       "SDK": [
         {
           "Name": "mediaconnect",
@@ -2321,6 +2660,12 @@
     },
     {
       "Name": "DeregisterSourceEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "DeregisterSourceEndpoint",
+          "Service": "mediaconnect"
+        }
+      ],
       "SDK": [
         {
           "Name": "mediaconnect",
@@ -2459,6 +2804,12 @@
     },
     {
       "Name": "DisconnectEndpoints",
+      "AuthorizedActions": [
+        {
+          "Name": "DisconnectEndpoints",
+          "Service": "mediaconnect"
+        }
+      ],
       "SDK": [
         {
           "Name": "mediaconnect",
@@ -2469,6 +2820,12 @@
     },
     {
       "Name": "GetDestinationEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDestinationEndpoint",
+          "Service": "mediaconnect"
+        }
+      ],
       "SDK": [
         {
           "Name": "mediaconnect",
@@ -2559,6 +2916,12 @@
     },
     {
       "Name": "GetSourceEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSourceEndpoint",
+          "Service": "mediaconnect"
+        }
+      ],
       "SDK": [
         {
           "Name": "mediaconnect",
@@ -2614,6 +2977,12 @@
     },
     {
       "Name": "ListDestinationEndpoints",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDestinationEndpoints",
+          "Service": "mediaconnect"
+        }
+      ],
       "SDK": [
         {
           "Name": "mediaconnect",
@@ -2768,6 +3137,12 @@
     },
     {
       "Name": "ListSourceEndpoints",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSourceEndpoints",
+          "Service": "mediaconnect"
+        }
+      ],
       "SDK": [
         {
           "Name": "mediaconnect",
@@ -2822,6 +3197,10 @@
       "Name": "RegisterDestinationEndpoint",
       "AuthorizedActions": [
         {
+          "Name": "RegisterDestinationEndpoint",
+          "Service": "mediaconnect"
+        },
+        {
           "Name": "TagResource",
           "Service": "mediaconnect"
         }
@@ -2837,6 +3216,10 @@
     {
       "Name": "RegisterSourceEndpoint",
       "AuthorizedActions": [
+        {
+          "Name": "RegisterSourceEndpoint",
+          "Service": "mediaconnect"
+        },
         {
           "Name": "TagResource",
           "Service": "mediaconnect"
@@ -3224,6 +3607,12 @@
     },
     {
       "Name": "UpdateDestinationEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDestinationEndpoint",
+          "Service": "mediaconnect"
+        }
+      ],
       "SDK": [
         {
           "Name": "mediaconnect",
@@ -3439,6 +3828,12 @@
     },
     {
       "Name": "UpdateSourceEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSourceEndpoint",
+          "Service": "mediaconnect"
+        }
+      ],
       "SDK": [
         {
           "Name": "mediaconnect",
@@ -3453,6 +3848,15 @@
       "Name": "Bridge",
       "ARNFormats": [
         "arn:${Partition}:mediaconnect:${Region}:${Account}:bridge:${BridgeId}:${BridgeName}"
+      ]
+    },
+    {
+      "Name": "DestinationEndpoint",
+      "ARNFormats": [
+        "arn:${Partition}:mediaconnect:${Region}:${Account}:destinationEndpoint:${DestinationEndpointId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
       ]
     },
     {
@@ -3546,6 +3950,15 @@
       "Name": "Source",
       "ARNFormats": [
         "arn:${Partition}:mediaconnect:${Region}:${Account}:source:${SourceId}:${SourceName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "SourceEndpoint",
+      "ARNFormats": [
+        "arn:${Partition}:mediaconnect:${Region}:${Account}:sourceEndpoint:${SourceEndpointId}"
       ],
       "ConditionKeys": [
         "aws:ResourceTag/${TagKey}"

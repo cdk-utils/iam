@@ -77,7 +77,7 @@ export class OmicsActions {
 	static readonly DeleteRunCache = "omics:DeleteRunCache";
 	/** [Write] omics:DeleteRunGroup */
 	static readonly DeleteRunGroup = "omics:DeleteRunGroup";
-	/** [Write] omics:DeleteS3AccessPolicy */
+	/** [PermissionManagement] omics:DeleteS3AccessPolicy */
 	static readonly DeleteS3AccessPolicy = "omics:DeleteS3AccessPolicy";
 	/** [Write] omics:DeleteSequenceStore */
 	static readonly DeleteSequenceStore = "omics:DeleteSequenceStore";
@@ -195,7 +195,7 @@ export class OmicsActions {
 	static readonly ListWorkflowVersions = "omics:ListWorkflowVersions";
 	/** [List] omics:ListWorkflows */
 	static readonly ListWorkflows = "omics:ListWorkflows";
-	/** [Write] omics:PutS3AccessPolicy */
+	/** [PermissionManagement] omics:PutS3AccessPolicy */
 	static readonly PutS3AccessPolicy = "omics:PutS3AccessPolicy";
 	/** [Write] omics:StartAnnotationImportJob */
 	static readonly StartAnnotationImportJob = "omics:StartAnnotationImportJob";
@@ -297,13 +297,11 @@ export class OmicsActions {
 		OmicsActions.DeleteRunBatch,
 		OmicsActions.DeleteRunCache,
 		OmicsActions.DeleteRunGroup,
-		OmicsActions.DeleteS3AccessPolicy,
 		OmicsActions.DeleteSequenceStore,
 		OmicsActions.DeleteShare,
 		OmicsActions.DeleteVariantStore,
 		OmicsActions.DeleteWorkflow,
 		OmicsActions.DeleteWorkflowVersion,
-		OmicsActions.PutS3AccessPolicy,
 		OmicsActions.StartAnnotationImportJob,
 		OmicsActions.StartReadSetActivationJob,
 		OmicsActions.StartReadSetExportJob,
@@ -352,7 +350,10 @@ export class OmicsActions {
 		OmicsActions.ListWorkflows,
 	];
 	/** All permission-management-level actions. */
-	static readonly AllPermissionManagementActions: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [
+		OmicsActions.DeleteS3AccessPolicy,
+		OmicsActions.PutS3AccessPolicy,
+	];
 	/** All tagging-level actions. */
 	static readonly AllTaggingActions: string[] = [
 		OmicsActions.TagResource,

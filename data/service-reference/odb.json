@@ -648,7 +648,6 @@
       "Name": "DisassociateVirtualMachinesFromExadbVmCluster",
       "Annotations": {
         "Properties": {
-          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2449,12 +2448,6 @@
     },
     {
       "Name": "DisassociateVirtualMachinesFromExadbVmCluster",
-      "AuthorizedActions": [
-        {
-          "Name": "DisassociateVirtualMachinesFromExadbVmCluster",
-          "Service": "odb"
-        }
-      ],
       "SDK": [
         {
           "Name": "odb",
