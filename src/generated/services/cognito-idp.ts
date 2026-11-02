@@ -160,6 +160,8 @@ export class CognitoIdpActions {
 		"cognito-idp:DescribeRiskConfiguration";
 	/** [Read] cognito-idp:DescribeTerms */
 	static readonly DescribeTerms = "cognito-idp:DescribeTerms";
+	/** [Read] cognito-idp:DescribeTermsByClient */
+	static readonly DescribeTermsByClient = "cognito-idp:DescribeTermsByClient";
 	/** [Read] cognito-idp:DescribeUserImportJob */
 	static readonly DescribeUserImportJob = "cognito-idp:DescribeUserImportJob";
 	/** [Read] cognito-idp:DescribeUserPool */
@@ -176,6 +178,8 @@ export class CognitoIdpActions {
 	static readonly ForgotPassword = "cognito-idp:ForgotPassword";
 	/** [Read] cognito-idp:GetCSVHeader */
 	static readonly actionGetCSVHeader = "cognito-idp:GetCSVHeader";
+	/** [Write] cognito-idp:GetClientToken */
+	static readonly actionGetClientToken = "cognito-idp:GetClientToken";
 	/** [Read] cognito-idp:GetDevice */
 	static readonly actionGetDevice = "cognito-idp:GetDevice";
 	/** [Read] cognito-idp:GetGroup */
@@ -317,6 +321,7 @@ export class CognitoIdpActions {
 		CognitoIdpActions.DescribeResourceServer,
 		CognitoIdpActions.DescribeRiskConfiguration,
 		CognitoIdpActions.DescribeTerms,
+		CognitoIdpActions.DescribeTermsByClient,
 		CognitoIdpActions.DescribeUserImportJob,
 		CognitoIdpActions.DescribeUserPool,
 		CognitoIdpActions.DescribeUserPoolClient,
@@ -391,6 +396,7 @@ export class CognitoIdpActions {
 		CognitoIdpActions.DisassociateWebACL,
 		CognitoIdpActions.ForgetDevice,
 		CognitoIdpActions.ForgotPassword,
+		CognitoIdpActions.actionGetClientToken,
 		CognitoIdpActions.actionGetTokensFromRefreshToken,
 		CognitoIdpActions.GlobalSignOut,
 		CognitoIdpActions.InitiateAuth,
@@ -824,6 +830,7 @@ export class CognitoIdpOperations {
 	/** IAM actions required for the DescribeTermsByClient API call. */
 	static readonly DescribeTermsByClient: string[] = [
 		"cognito-idp:DescribeTerms",
+		"cognito-idp:DescribeTermsByClient",
 	];
 	/** IAM actions required for the DescribeUserImportJob API call. */
 	static readonly DescribeUserImportJob: string[] = [
@@ -846,7 +853,7 @@ export class CognitoIdpOperations {
 	/** IAM actions required for the GetCSVHeader API call. */
 	static readonly opGetCSVHeader: string[] = ["cognito-idp:GetCSVHeader"];
 	/** IAM actions required for the GetClientToken API call. */
-	static readonly opGetClientToken: string[] = [];
+	static readonly opGetClientToken: string[] = ["cognito-idp:GetClientToken"];
 	/** IAM actions required for the GetDevice API call. */
 	static readonly opGetDevice: string[] = ["cognito-idp:GetDevice"];
 	/** IAM actions required for the GetGroup API call. */

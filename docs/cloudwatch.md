@@ -2888,6 +2888,7 @@ new cloudwatch.CloudWatchActions()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetOmniThread">actionGetOmniThread</a></code> | <code>string</code> | [Read] cloudwatch:GetOmniThread. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetOTelEnrichment">actionGetOTelEnrichment</a></code> | <code>string</code> | [Read] cloudwatch:GetOTelEnrichment. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetPreferences">actionGetPreferences</a></code> | <code>string</code> | [Read] cloudwatch:GetPreferences. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetProfileRecords">actionGetProfileRecords</a></code> | <code>string</code> | [Read] cloudwatch:GetProfileRecords. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetRecords">actionGetRecords</a></code> | <code>string</code> | [Read] cloudwatch:GetRecords. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetResourceMetricsConfiguration">actionGetResourceMetricsConfiguration</a></code> | <code>string</code> | [Read] cloudwatch:GetResourceMetricsConfiguration. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetService">actionGetService</a></code> | <code>string</code> | [Read] cloudwatch:GetService. |
@@ -2997,6 +2998,7 @@ new cloudwatch.CloudWatchActions()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.PutMetricData">PutMetricData</a></code> | <code>string</code> | [Write] cloudwatch:PutMetricData. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.PutMetricStream">PutMetricStream</a></code> | <code>string</code> | [Write] cloudwatch:PutMetricStream. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.PutPipelineRule">PutPipelineRule</a></code> | <code>string</code> | [Write] cloudwatch:PutPipelineRule. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.PutProfileRecords">PutProfileRecords</a></code> | <code>string</code> | [Write] cloudwatch:PutProfileRecords. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.PutRecords">PutRecords</a></code> | <code>string</code> | [Write] cloudwatch:PutRecords. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.QueryTraces">QueryTraces</a></code> | <code>string</code> | [Write] cloudwatch:QueryTraces. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.SearchPrincipals">SearchPrincipals</a></code> | <code>string</code> | [Write] cloudwatch:SearchPrincipals. |
@@ -3304,6 +3306,18 @@ public readonly actionGetPreferences: string;
 - *Type:* string
 
 [Read] cloudwatch:GetPreferences.
+
+---
+
+##### `actionGetProfileRecords`<sup>Required</sup> <a name="actionGetProfileRecords" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetProfileRecords"></a>
+
+```typescript
+public readonly actionGetProfileRecords: string;
+```
+
+- *Type:* string
+
+[Read] cloudwatch:GetProfileRecords.
 
 ---
 
@@ -4615,6 +4629,18 @@ public readonly PutPipelineRule: string;
 
 ---
 
+##### `PutProfileRecords`<sup>Required</sup> <a name="PutProfileRecords" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.PutProfileRecords"></a>
+
+```typescript
+public readonly PutProfileRecords: string;
+```
+
+- *Type:* string
+
+[Write] cloudwatch:PutProfileRecords.
+
+---
+
 ##### `PutRecords`<sup>Required</sup> <a name="PutRecords" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.PutRecords"></a>
 
 ```typescript
@@ -5200,6 +5226,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetOmniDashboardConditionKeys">actionGetOmniDashboardConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetOmniDashboard action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetOmniThreadConditionKeys">actionGetOmniThreadConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetOmniThread action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetPreferencesConditionKeys">actionGetPreferencesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetPreferences action. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetProfileRecordsConditionKeys">actionGetProfileRecordsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetProfileRecords action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetRecordsConditionKeys">actionGetRecordsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetRecords action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetResourceMetricsConfigurationConditionKeys">actionGetResourceMetricsConfigurationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetResourceMetricsConfiguration action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetSpaceConditionKeys">actionGetSpaceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetSpace action. |
@@ -5438,6 +5465,18 @@ public readonly actionGetPreferencesConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the GetPreferences action.
+
+---
+
+##### `actionGetProfileRecordsConditionKeys`<sup>Required</sup> <a name="actionGetProfileRecordsConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetProfileRecordsConditionKeys"></a>
+
+```typescript
+public readonly actionGetProfileRecordsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetProfileRecords action.
 
 ---
 

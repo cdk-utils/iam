@@ -185,6 +185,8 @@ export class CloudWatchActions {
 	static readonly actionGetOmniThread = "cloudwatch:GetOmniThread";
 	/** [Read] cloudwatch:GetPreferences */
 	static readonly actionGetPreferences = "cloudwatch:GetPreferences";
+	/** [Read] cloudwatch:GetProfileRecords */
+	static readonly actionGetProfileRecords = "cloudwatch:GetProfileRecords";
 	/** [Read] cloudwatch:GetRecords */
 	static readonly actionGetRecords = "cloudwatch:GetRecords";
 	/** [Read] cloudwatch:GetResourceMetricsConfiguration */
@@ -298,6 +300,8 @@ export class CloudWatchActions {
 	static readonly PutMetricStream = "cloudwatch:PutMetricStream";
 	/** [Write] cloudwatch:PutPipelineRule */
 	static readonly PutPipelineRule = "cloudwatch:PutPipelineRule";
+	/** [Write] cloudwatch:PutProfileRecords */
+	static readonly PutProfileRecords = "cloudwatch:PutProfileRecords";
 	/** [Write] cloudwatch:PutRecords */
 	static readonly PutRecords = "cloudwatch:PutRecords";
 	/** [Write] cloudwatch:QueryTraces */
@@ -401,6 +405,7 @@ export class CloudWatchActions {
 		CloudWatchActions.actionGetOmniDashboard,
 		CloudWatchActions.actionGetOmniThread,
 		CloudWatchActions.actionGetPreferences,
+		CloudWatchActions.actionGetProfileRecords,
 		CloudWatchActions.actionGetRecords,
 		CloudWatchActions.actionGetResourceMetricsConfiguration,
 		CloudWatchActions.actionGetService,
@@ -467,6 +472,7 @@ export class CloudWatchActions {
 		CloudWatchActions.PutMetricData,
 		CloudWatchActions.PutMetricStream,
 		CloudWatchActions.PutPipelineRule,
+		CloudWatchActions.PutProfileRecords,
 		CloudWatchActions.PutRecords,
 		CloudWatchActions.QueryTraces,
 		CloudWatchActions.SearchPrincipals,
@@ -2291,6 +2297,10 @@ export class CloudWatchConditions {
 	];
 	/** Condition keys applicable to the GetPreferences action. */
 	static readonly actionGetPreferencesConditionKeys: string[] = [
+		"cloudwatch:HasAccessGrant",
+	];
+	/** Condition keys applicable to the GetProfileRecords action. */
+	static readonly actionGetProfileRecordsConditionKeys: string[] = [
 		"cloudwatch:HasAccessGrant",
 	];
 	/** Condition keys applicable to the GetRecords action. */

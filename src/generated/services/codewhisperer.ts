@@ -48,6 +48,8 @@ export class CodewhispererActions {
 	static readonly ListTagsForResource = "codewhisperer:ListTagsForResource";
 	/** [Tagging] codewhisperer:TagResource */
 	static readonly TagResource = "codewhisperer:TagResource";
+	/** [Read] codewhisperer:TestOtelConnection */
+	static readonly TestOtelConnection = "codewhisperer:TestOtelConnection";
 	/** [Tagging] codewhisperer:UntagResource */
 	static readonly UntagResource = "codewhisperer:UntagResource";
 	/** [Write] codewhisperer:UpdateCustomization */
@@ -59,6 +61,7 @@ export class CodewhispererActions {
 	static readonly AllReadActions: string[] = [
 		CodewhispererActions.GenerateRecommendations,
 		CodewhispererActions.actionGetCustomization,
+		CodewhispererActions.TestOtelConnection,
 	];
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
@@ -275,6 +278,10 @@ export class CodewhispererConditions {
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
+	];
+	/** Condition keys applicable to the TestOtelConnection action. */
+	static readonly TestOtelConnectionConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UntagResource action. */
 	static readonly UntagResourceConditionKeys: string[] = [

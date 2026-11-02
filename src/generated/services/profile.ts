@@ -1260,7 +1260,10 @@ export class ProfileOperations {
 	/** IAM actions required for the CreateProfile API call. */
 	static readonly CreateProfile: string[] = ["profile:CreateProfile"];
 	/** IAM actions required for the CreateRecommender API call. */
-	static readonly CreateRecommender: string[] = ["profile:CreateRecommender"];
+	static readonly CreateRecommender: string[] = [
+		"profile:CreateRecommender",
+		"profile:TagResource",
+	];
 	/** IAM actions required for the CreateRecommenderFilter API call. */
 	static readonly CreateRecommenderFilter: string[] = [
 		"profile:CreateRecommenderFilter",

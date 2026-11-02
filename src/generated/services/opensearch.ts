@@ -371,7 +371,7 @@ export class OpenSearchOperations {
 	/** IAM actions required for the DissociatePackages API call. */
 	static readonly DissociatePackages: string[] = ["es:DissociatePackages"];
 	/** IAM actions required for the FailoverReplication API call. */
-	static readonly FailoverReplication: string[] = [];
+	static readonly FailoverReplication: string[] = ["es:FailoverReplication"];
 	/** IAM actions required for the GetApplication API call. */
 	static readonly opGetApplication: string[] = ["es:GetApplication"];
 	/** IAM actions required for the GetCapability API call. */

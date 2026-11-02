@@ -3,6 +3,33 @@
   "ServiceName": "MWAA",
   "Actions": [
     {
+      "Name": "AccessAirflowResource",
+      "ActionConditionKeys": [
+        "airflow:DagAccessEntity",
+        "airflow:ResourceAction",
+        "airflow:ResourceId",
+        "airflow:ResourceType",
+        "airflow:TeamNames"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "CreateCliToken",
       "Annotations": {
         "Properties": {

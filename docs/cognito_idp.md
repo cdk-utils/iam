@@ -377,6 +377,7 @@ new cognito_idp.CognitoIdpActions()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.actionGetClientToken">actionGetClientToken</a></code> | <code>string</code> | [Write] cognito-idp:GetClientToken. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.actionGetCSVHeader">actionGetCSVHeader</a></code> | <code>string</code> | [Read] cognito-idp:GetCSVHeader. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.actionGetDevice">actionGetDevice</a></code> | <code>string</code> | [Read] cognito-idp:GetDevice. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.actionGetGroup">actionGetGroup</a></code> | <code>string</code> | [Read] cognito-idp:GetGroup. |
@@ -465,6 +466,7 @@ new cognito_idp.CognitoIdpActions()
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.DescribeResourceServer">DescribeResourceServer</a></code> | <code>string</code> | [Read] cognito-idp:DescribeResourceServer. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.DescribeRiskConfiguration">DescribeRiskConfiguration</a></code> | <code>string</code> | [Read] cognito-idp:DescribeRiskConfiguration. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.DescribeTerms">DescribeTerms</a></code> | <code>string</code> | [Read] cognito-idp:DescribeTerms. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.DescribeTermsByClient">DescribeTermsByClient</a></code> | <code>string</code> | [Read] cognito-idp:DescribeTermsByClient. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.DescribeUserImportJob">DescribeUserImportJob</a></code> | <code>string</code> | [Read] cognito-idp:DescribeUserImportJob. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.DescribeUserPool">DescribeUserPool</a></code> | <code>string</code> | [Read] cognito-idp:DescribeUserPool. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.DescribeUserPoolClient">DescribeUserPoolClient</a></code> | <code>string</code> | [Read] cognito-idp:DescribeUserPoolClient. |
@@ -512,6 +514,18 @@ new cognito_idp.CognitoIdpActions()
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.UpdateUserPoolReplica">UpdateUserPoolReplica</a></code> | <code>string</code> | [Write] cognito-idp:UpdateUserPoolReplica. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.VerifySoftwareToken">VerifySoftwareToken</a></code> | <code>string</code> | [Write] cognito-idp:VerifySoftwareToken. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.VerifyUserAttribute">VerifyUserAttribute</a></code> | <code>string</code> | [Write] cognito-idp:VerifyUserAttribute. |
+
+---
+
+##### `actionGetClientToken`<sup>Required</sup> <a name="actionGetClientToken" id="@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.actionGetClientToken"></a>
+
+```typescript
+public readonly actionGetClientToken: string;
+```
+
+- *Type:* string
+
+[Write] cognito-idp:GetClientToken.
 
 ---
 
@@ -1568,6 +1582,18 @@ public readonly DescribeTerms: string;
 - *Type:* string
 
 [Read] cognito-idp:DescribeTerms.
+
+---
+
+##### `DescribeTermsByClient`<sup>Required</sup> <a name="DescribeTermsByClient" id="@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.DescribeTermsByClient"></a>
+
+```typescript
+public readonly DescribeTermsByClient: string;
+```
+
+- *Type:* string
+
+[Read] cognito-idp:DescribeTermsByClient.
 
 ---
 
