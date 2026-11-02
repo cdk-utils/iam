@@ -6762,6 +6762,11 @@
       "Name": "DescribeServerlessV2PlatformVersions",
       "SDK": [
         {
+          "Name": "docdb",
+          "Method": "describe_serverless_v2_platform_versions",
+          "Package": "Boto3"
+        },
+        {
           "Name": "rds",
           "Method": "describe_serverless_v2_platform_versions",
           "Package": "Boto3"

@@ -1472,6 +1472,9 @@
           "Name": "Stage"
         },
         {
+          "Name": "Stage-Logging-Configuration"
+        },
+        {
           "Name": "Storage-Configuration"
         },
         {
@@ -1713,6 +1716,9 @@
           "Name": "Stage"
         },
         {
+          "Name": "Stage-Logging-Configuration"
+        },
+        {
           "Name": "Storage-Configuration"
         },
         {
@@ -1771,6 +1777,9 @@
         },
         {
           "Name": "Stage"
+        },
+        {
+          "Name": "Stage-Logging-Configuration"
         },
         {
           "Name": "Storage-Configuration"

@@ -12,6 +12,8 @@ export class AirflowActions {
 	/** The IAM service prefix. */
 	static readonly SERVICE_PREFIX = "airflow";
 
+	/** [Write] airflow:AccessAirflowResource */
+	static readonly AccessAirflowResource = "airflow:AccessAirflowResource";
 	/** [Write] airflow:CreateCliToken */
 	static readonly CreateCliToken = "airflow:CreateCliToken";
 	/** [Write] airflow:CreateEnvironment */
@@ -44,6 +46,7 @@ export class AirflowActions {
 	];
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
+		AirflowActions.AccessAirflowResource,
 		AirflowActions.CreateCliToken,
 		AirflowActions.CreateEnvironment,
 		AirflowActions.CreateWebLoginToken,
@@ -241,6 +244,14 @@ export class AirflowOperations {
  * Condition key constants and builders for airflow.
  */
 export class AirflowConditions {
+	/** Condition keys applicable to the AccessAirflowResource action. */
+	static readonly AccessAirflowResourceConditionKeys: string[] = [
+		"airflow:DagAccessEntity",
+		"airflow:ResourceAction",
+		"airflow:ResourceId",
+		"airflow:ResourceType",
+		"airflow:TeamNames",
+	];
 	/** Condition keys applicable to the CreateEnvironment action. */
 	static readonly CreateEnvironmentConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",

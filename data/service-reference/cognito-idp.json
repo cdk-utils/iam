@@ -1314,6 +1314,27 @@
       }
     },
     {
+      "Name": "DescribeTermsByClient",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "userpool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "DescribeUserImportJob",
       "Annotations": {
         "Properties": {
@@ -1463,6 +1484,22 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetClientToken",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -3647,6 +3684,10 @@
         {
           "Name": "DescribeTerms",
           "Service": "cognito-idp"
+        },
+        {
+          "Name": "DescribeTermsByClient",
+          "Service": "cognito-idp"
         }
       ],
       "SDK": [
@@ -3771,6 +3812,12 @@
     },
     {
       "Name": "GetClientToken",
+      "AuthorizedActions": [
+        {
+          "Name": "GetClientToken",
+          "Service": "cognito-idp"
+        }
+      ],
       "SDK": [
         {
           "Name": "cognito-idp",

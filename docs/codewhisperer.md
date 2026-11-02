@@ -346,6 +346,7 @@ new codewhisperer.CodewhispererActions()
 | <code><a href="#@cdk_utils/iam.codewhisperer.CodewhispererActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [List] codewhisperer:ListTagsForResource. |
 | <code><a href="#@cdk_utils/iam.codewhisperer.CodewhispererActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.codewhisperer.CodewhispererActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] codewhisperer:TagResource. |
+| <code><a href="#@cdk_utils/iam.codewhisperer.CodewhispererActions.property.TestOtelConnection">TestOtelConnection</a></code> | <code>string</code> | [Read] codewhisperer:TestOtelConnection. |
 | <code><a href="#@cdk_utils/iam.codewhisperer.CodewhispererActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] codewhisperer:UntagResource. |
 | <code><a href="#@cdk_utils/iam.codewhisperer.CodewhispererActions.property.UpdateCustomization">UpdateCustomization</a></code> | <code>string</code> | [Write] codewhisperer:UpdateCustomization. |
 | <code><a href="#@cdk_utils/iam.codewhisperer.CodewhispererActions.property.UpdateProfile">UpdateProfile</a></code> | <code>string</code> | [Write] codewhisperer:UpdateProfile. |
@@ -604,6 +605,18 @@ public readonly TagResource: string;
 
 ---
 
+##### `TestOtelConnection`<sup>Required</sup> <a name="TestOtelConnection" id="@cdk_utils/iam.codewhisperer.CodewhispererActions.property.TestOtelConnection"></a>
+
+```typescript
+public readonly TestOtelConnection: string;
+```
+
+- *Type:* string
+
+[Read] codewhisperer:TestOtelConnection.
+
+---
+
 ##### `UntagResource`<sup>Required</sup> <a name="UntagResource" id="@cdk_utils/iam.codewhisperer.CodewhispererActions.property.UntagResource"></a>
 
 ```typescript
@@ -736,6 +749,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.codewhisperer.CodewhispererConditions.property.ListCustomizationVersionsConditionKeys">ListCustomizationVersionsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListCustomizationVersions action. |
 | <code><a href="#@cdk_utils/iam.codewhisperer.CodewhispererConditions.property.ListTagsForResourceConditionKeys">ListTagsForResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListTagsForResource action. |
 | <code><a href="#@cdk_utils/iam.codewhisperer.CodewhispererConditions.property.TagResourceConditionKeys">TagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TagResource action. |
+| <code><a href="#@cdk_utils/iam.codewhisperer.CodewhispererConditions.property.TestOtelConnectionConditionKeys">TestOtelConnectionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TestOtelConnection action. |
 | <code><a href="#@cdk_utils/iam.codewhisperer.CodewhispererConditions.property.UntagResourceConditionKeys">UntagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UntagResource action. |
 | <code><a href="#@cdk_utils/iam.codewhisperer.CodewhispererConditions.property.UpdateCustomizationConditionKeys">UpdateCustomizationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateCustomization action. |
 | <code><a href="#@cdk_utils/iam.codewhisperer.CodewhispererConditions.property.UpdateProfileConditionKeys">UpdateProfileConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateProfile action. |
@@ -919,6 +933,18 @@ public readonly TagResourceConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the TagResource action.
+
+---
+
+##### `TestOtelConnectionConditionKeys`<sup>Required</sup> <a name="TestOtelConnectionConditionKeys" id="@cdk_utils/iam.codewhisperer.CodewhispererConditions.property.TestOtelConnectionConditionKeys"></a>
+
+```typescript
+public readonly TestOtelConnectionConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the TestOtelConnection action.
 
 ---
 

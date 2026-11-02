@@ -351,6 +351,7 @@ new airflow.AirflowActions()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.airflow.AirflowActions.property.AccessAirflowResource">AccessAirflowResource</a></code> | <code>string</code> | [Write] airflow:AccessAirflowResource. |
 | <code><a href="#@cdk_utils/iam.airflow.AirflowActions.property.actionGetEnvironment">actionGetEnvironment</a></code> | <code>string</code> | [Read] airflow:GetEnvironment. |
 | <code><a href="#@cdk_utils/iam.airflow.AirflowActions.property.AllListActions">AllListActions</a></code> | <code>string[]</code> | All list-level actions. |
 | <code><a href="#@cdk_utils/iam.airflow.AirflowActions.property.AllPermissionManagementActions">AllPermissionManagementActions</a></code> | <code>string[]</code> | All permission-management-level actions. |
@@ -369,6 +370,18 @@ new airflow.AirflowActions()
 | <code><a href="#@cdk_utils/iam.airflow.AirflowActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] airflow:TagResource. |
 | <code><a href="#@cdk_utils/iam.airflow.AirflowActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] airflow:UntagResource. |
 | <code><a href="#@cdk_utils/iam.airflow.AirflowActions.property.UpdateEnvironment">UpdateEnvironment</a></code> | <code>string</code> | [Write] airflow:UpdateEnvironment. |
+
+---
+
+##### `AccessAirflowResource`<sup>Required</sup> <a name="AccessAirflowResource" id="@cdk_utils/iam.airflow.AirflowActions.property.AccessAirflowResource"></a>
+
+```typescript
+public readonly AccessAirflowResource: string;
+```
+
+- *Type:* string
+
+[Write] airflow:AccessAirflowResource.
 
 ---
 
@@ -754,6 +767,7 @@ Generates a condition block for `airflow:TeamNames`.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.airflow.AirflowConditions.property.AccessAirflowResourceConditionKeys">AccessAirflowResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the AccessAirflowResource action. |
 | <code><a href="#@cdk_utils/iam.airflow.AirflowConditions.property.actionGetEnvironmentConditionKeys">actionGetEnvironmentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetEnvironment action. |
 | <code><a href="#@cdk_utils/iam.airflow.AirflowConditions.property.AWS_REQUEST_TAG">AWS_REQUEST_TAG</a></code> | <code>string</code> | Condition key: aws:RequestTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.airflow.AirflowConditions.property.AWS_RESOURCE_TAG">AWS_RESOURCE_TAG</a></code> | <code>string</code> | Condition key: aws:ResourceTag/${TagKey} (String). |
@@ -769,6 +783,18 @@ Generates a condition block for `airflow:TeamNames`.
 | <code><a href="#@cdk_utils/iam.airflow.AirflowConditions.property.TEAM_NAMES">TEAM_NAMES</a></code> | <code>string</code> | Condition key: airflow:TeamNames (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.airflow.AirflowConditions.property.UntagResourceConditionKeys">UntagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UntagResource action. |
 | <code><a href="#@cdk_utils/iam.airflow.AirflowConditions.property.UpdateEnvironmentConditionKeys">UpdateEnvironmentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateEnvironment action. |
+
+---
+
+##### `AccessAirflowResourceConditionKeys`<sup>Required</sup> <a name="AccessAirflowResourceConditionKeys" id="@cdk_utils/iam.airflow.AirflowConditions.property.AccessAirflowResourceConditionKeys"></a>
+
+```typescript
+public readonly AccessAirflowResourceConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the AccessAirflowResource action.
 
 ---
 
