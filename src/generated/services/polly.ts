@@ -24,6 +24,8 @@ export class PollyActions {
 	static readonly ListLexicons = "polly:ListLexicons";
 	/** [List] polly:ListSpeechSynthesisTasks */
 	static readonly ListSpeechSynthesisTasks = "polly:ListSpeechSynthesisTasks";
+	/** [Read] polly:ListTagsForResource */
+	static readonly ListTagsForResource = "polly:ListTagsForResource";
 	/** [Write] polly:PutLexicon */
 	static readonly PutLexicon = "polly:PutLexicon";
 	/** [Read] polly:StartSpeechSynthesisStream */
@@ -33,11 +35,16 @@ export class PollyActions {
 	static readonly StartSpeechSynthesisTask = "polly:StartSpeechSynthesisTask";
 	/** [Read] polly:SynthesizeSpeech */
 	static readonly SynthesizeSpeech = "polly:SynthesizeSpeech";
+	/** [Tagging] polly:TagResource */
+	static readonly TagResource = "polly:TagResource";
+	/** [Tagging] polly:UntagResource */
+	static readonly UntagResource = "polly:UntagResource";
 
 	/** All read-level actions. */
 	static readonly AllReadActions: string[] = [
 		PollyActions.actionGetLexicon,
 		PollyActions.actionGetSpeechSynthesisTask,
+		PollyActions.ListTagsForResource,
 		PollyActions.StartSpeechSynthesisStream,
 		PollyActions.SynthesizeSpeech,
 	];
@@ -56,7 +63,10 @@ export class PollyActions {
 	/** All permission-management-level actions. */
 	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly AllTaggingActions: string[] = [];
+	static readonly AllTaggingActions: string[] = [
+		PollyActions.TagResource,
+		PollyActions.UntagResource,
+	];
 }
 
 /**
@@ -147,7 +157,10 @@ export class PollyOperations {
 		"polly:ListSpeechSynthesisTasks",
 	];
 	/** IAM actions required for the PutLexicon API call. */
-	static readonly PutLexicon: string[] = ["polly:PutLexicon"];
+	static readonly PutLexicon: string[] = [
+		"polly:PutLexicon",
+		"polly:TagResource",
+	];
 	/** IAM actions required for the StartSpeechSynthesisStream API call. */
 	static readonly StartSpeechSynthesisStream: string[] = [
 		"polly:StartSpeechSynthesisStream",
@@ -158,4 +171,50 @@ export class PollyOperations {
 	];
 	/** IAM actions required for the SynthesizeSpeech API call. */
 	static readonly SynthesizeSpeech: string[] = ["polly:SynthesizeSpeech"];
+}
+
+/**
+ * Condition key constants and builders for polly.
+ */
+export class PollyConditions {
+	/** Condition keys applicable to the PutLexicon action. */
+	static readonly PutLexiconConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
+	/** Condition keys applicable to the TagResource action. */
+	static readonly TagResourceConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
+	/** Condition keys applicable to the UntagResource action. */
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
+
+	/** Condition key: aws:RequestTag/${TagKey} (String) */
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	/** Condition key: aws:ResourceTag/${TagKey} (String) */
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	/** Condition key: aws:TagKeys (ArrayOfString) */
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
+
+	/**
+	 * Generates a condition block for `aws:RequestTag/${TagKey}`.
+	 */
+	static requestTag(value: string): Record<string, Record<string, string>> {
+		return { StringEquals: { "aws:RequestTag/${TagKey}": value } };
+	}
+
+	/**
+	 * Generates a condition block for `aws:ResourceTag/${TagKey}`.
+	 */
+	static resourceTag(value: string): Record<string, Record<string, string>> {
+		return { StringEquals: { "aws:ResourceTag/${TagKey}": value } };
+	}
+
+	/**
+	 * Generates a condition block for `aws:TagKeys`.
+	 */
+	static tagKeys(values: string[]): Record<string, Record<string, string[]>> {
+		return { "ForAllValues:StringEquals": { "aws:TagKeys": values } };
+	}
 }

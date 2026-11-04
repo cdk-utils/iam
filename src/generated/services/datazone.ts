@@ -119,6 +119,8 @@ export class DatazoneActions {
 	/** [Write] datazone:CreateSubscriptionTarget */
 	static readonly CreateSubscriptionTarget =
 		"datazone:CreateSubscriptionTarget";
+	/** [Write] datazone:CreateUIConfiguration */
+	static readonly CreateUIConfiguration = "datazone:CreateUIConfiguration";
 	/** [Write] datazone:CreateUserProfile */
 	static readonly CreateUserProfile = "datazone:CreateUserProfile";
 	/** [Write] datazone:DeleteAccountPool */
@@ -202,6 +204,8 @@ export class DatazoneActions {
 	/** [Write] datazone:DeleteTimeSeriesDataPoints */
 	static readonly DeleteTimeSeriesDataPoints =
 		"datazone:DeleteTimeSeriesDataPoints";
+	/** [Write] datazone:DeleteUIConfiguration */
+	static readonly DeleteUIConfiguration = "datazone:DeleteUIConfiguration";
 	/** [Write] datazone:DeregisterAgentArtifact */
 	static readonly DeregisterAgentArtifact = "datazone:DeregisterAgentArtifact";
 	/** [Write] datazone:DisassociateEnvironmentRole */
@@ -261,6 +265,9 @@ export class DatazoneActions {
 		"datazone:GetDomainSharingPolicy";
 	/** [Read] datazone:GetDomainUnit */
 	static readonly actionGetDomainUnit = "datazone:GetDomainUnit";
+	/** [Read] datazone:GetEffectiveUICustomization */
+	static readonly actionGetEffectiveUICustomization =
+		"datazone:GetEffectiveUICustomization";
 	/** [Read] datazone:GetEnvironment */
 	static readonly actionGetEnvironment = "datazone:GetEnvironment";
 	/** [Read] datazone:GetEnvironmentAction */
@@ -331,6 +338,8 @@ export class DatazoneActions {
 	/** [Read] datazone:GetTimeSeriesDataPoint */
 	static readonly actionGetTimeSeriesDataPoint =
 		"datazone:GetTimeSeriesDataPoint";
+	/** [Read] datazone:GetUIConfiguration */
+	static readonly actionGetUIConfiguration = "datazone:GetUIConfiguration";
 	/** [Read] datazone:GetUpdateEligibility */
 	static readonly actionGetUpdateEligibility = "datazone:GetUpdateEligibility";
 	/** [Read] datazone:GetUserProfile */
@@ -439,6 +448,8 @@ export class DatazoneActions {
 	/** [List] datazone:ListTimeSeriesDataPoints */
 	static readonly ListTimeSeriesDataPoints =
 		"datazone:ListTimeSeriesDataPoints";
+	/** [List] datazone:ListUIConfigurations */
+	static readonly ListUIConfigurations = "datazone:ListUIConfigurations";
 	/** [List] datazone:ListWarehouseMetadata */
 	static readonly ListWarehouseMetadata = "datazone:ListWarehouseMetadata";
 	/** [Write] datazone:PostLineageEvent */
@@ -596,6 +607,8 @@ export class DatazoneActions {
 	/** [Write] datazone:UpdateSubscriptionTarget */
 	static readonly UpdateSubscriptionTarget =
 		"datazone:UpdateSubscriptionTarget";
+	/** [Write] datazone:UpdateUIConfiguration */
+	static readonly UpdateUIConfiguration = "datazone:UpdateUIConfiguration";
 	/** [Write] datazone:UpdateUserProfile */
 	static readonly UpdateUserProfile = "datazone:UpdateUserProfile";
 	/** [Write] datazone:ValidatePassRole */
@@ -630,6 +643,7 @@ export class DatazoneActions {
 		DatazoneActions.actionGetDomainExecutionRoleCredentials,
 		DatazoneActions.actionGetDomainSharingPolicy,
 		DatazoneActions.actionGetDomainUnit,
+		DatazoneActions.actionGetEffectiveUICustomization,
 		DatazoneActions.actionGetEnvironment,
 		DatazoneActions.actionGetEnvironmentAction,
 		DatazoneActions.actionGetEnvironmentActionLink,
@@ -659,6 +673,7 @@ export class DatazoneActions {
 		DatazoneActions.actionGetSubscriptionRequestDetails,
 		DatazoneActions.actionGetSubscriptionTarget,
 		DatazoneActions.actionGetTimeSeriesDataPoint,
+		DatazoneActions.actionGetUIConfiguration,
 		DatazoneActions.actionGetUpdateEligibility,
 		DatazoneActions.actionGetUserProfile,
 		DatazoneActions.ListTagsForResource,
@@ -710,6 +725,7 @@ export class DatazoneActions {
 		DatazoneActions.CreateSubscriptionGrant,
 		DatazoneActions.CreateSubscriptionRequest,
 		DatazoneActions.CreateSubscriptionTarget,
+		DatazoneActions.CreateUIConfiguration,
 		DatazoneActions.CreateUserProfile,
 		DatazoneActions.DeleteAccountPool,
 		DatazoneActions.DeleteAgentApprovalPolicy,
@@ -746,6 +762,7 @@ export class DatazoneActions {
 		DatazoneActions.DeleteSubscriptionRequest,
 		DatazoneActions.DeleteSubscriptionTarget,
 		DatazoneActions.DeleteTimeSeriesDataPoints,
+		DatazoneActions.DeleteUIConfiguration,
 		DatazoneActions.DeregisterAgentArtifact,
 		DatazoneActions.DisassociateEnvironmentRole,
 		DatazoneActions.DisassociateGovernedTerms,
@@ -809,6 +826,7 @@ export class DatazoneActions {
 		DatazoneActions.UpdateSubscriptionGrantStatus,
 		DatazoneActions.UpdateSubscriptionRequest,
 		DatazoneActions.UpdateSubscriptionTarget,
+		DatazoneActions.UpdateUIConfiguration,
 		DatazoneActions.UpdateUserProfile,
 		DatazoneActions.ValidatePassRole,
 	];
@@ -859,6 +877,7 @@ export class DatazoneActions {
 		DatazoneActions.ListSubscriptionTargets,
 		DatazoneActions.ListSubscriptions,
 		DatazoneActions.ListTimeSeriesDataPoints,
+		DatazoneActions.ListUIConfigurations,
 		DatazoneActions.ListWarehouseMetadata,
 		DatazoneActions.QueryGraph,
 		DatazoneActions.Search,

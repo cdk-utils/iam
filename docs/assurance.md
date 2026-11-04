@@ -229,7 +229,6 @@ new assurance.AssuranceActions()
 | <code><a href="#@cdk_utils/iam.assurance.AssuranceActions.property.DeleteProject">DeleteProject</a></code> | <code>string</code> | [Write] assurance:DeleteProject. |
 | <code><a href="#@cdk_utils/iam.assurance.AssuranceActions.property.DeregisterOrganizationDelegatedAdmin">DeregisterOrganizationDelegatedAdmin</a></code> | <code>string</code> | [Write] assurance:DeregisterOrganizationDelegatedAdmin. |
 | <code><a href="#@cdk_utils/iam.assurance.AssuranceActions.property.DisableFramework">DisableFramework</a></code> | <code>string</code> | [Write] assurance:DisableFramework. |
-| <code><a href="#@cdk_utils/iam.assurance.AssuranceActions.property.DownloadEvidence">DownloadEvidence</a></code> | <code>string</code> | [Read] assurance:DownloadEvidence. |
 | <code><a href="#@cdk_utils/iam.assurance.AssuranceActions.property.EnableFramework">EnableFramework</a></code> | <code>string</code> | [Write] assurance:EnableFramework. |
 | <code><a href="#@cdk_utils/iam.assurance.AssuranceActions.property.ListAssessmentAnnotations">ListAssessmentAnnotations</a></code> | <code>string</code> | [Read] assurance:ListAssessmentAnnotations. |
 | <code><a href="#@cdk_utils/iam.assurance.AssuranceActions.property.ListAssessmentJournalRecords">ListAssessmentJournalRecords</a></code> | <code>string</code> | [Read] assurance:ListAssessmentJournalRecords. |
@@ -253,7 +252,6 @@ new assurance.AssuranceActions()
 | <code><a href="#@cdk_utils/iam.assurance.AssuranceActions.property.ListPermissionSetAssignments">ListPermissionSetAssignments</a></code> | <code>string</code> | [Read] assurance:ListPermissionSetAssignments. |
 | <code><a href="#@cdk_utils/iam.assurance.AssuranceActions.property.ListPermissionSets">ListPermissionSets</a></code> | <code>string</code> | [Read] assurance:ListPermissionSets. |
 | <code><a href="#@cdk_utils/iam.assurance.AssuranceActions.property.ListProjects">ListProjects</a></code> | <code>string</code> | [Read] assurance:ListProjects. |
-| <code><a href="#@cdk_utils/iam.assurance.AssuranceActions.property.ListResourcesForControl">ListResourcesForControl</a></code> | <code>string</code> | [Read] assurance:ListResourcesForControl. |
 | <code><a href="#@cdk_utils/iam.assurance.AssuranceActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [Read] assurance:ListTagsForResource. |
 | <code><a href="#@cdk_utils/iam.assurance.AssuranceActions.property.ListTaskHistory">ListTaskHistory</a></code> | <code>string</code> | [Read] assurance:ListTaskHistory. |
 | <code><a href="#@cdk_utils/iam.assurance.AssuranceActions.property.ListTasks">ListTasks</a></code> | <code>string</code> | [Read] assurance:ListTasks. |
@@ -266,7 +264,6 @@ new assurance.AssuranceActions()
 | <code><a href="#@cdk_utils/iam.assurance.AssuranceActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.assurance.AssuranceActions.property.StartAssessment">StartAssessment</a></code> | <code>string</code> | [Write] assurance:StartAssessment. |
 | <code><a href="#@cdk_utils/iam.assurance.AssuranceActions.property.StartAssessmentReportExport">StartAssessmentReportExport</a></code> | <code>string</code> | [Write] assurance:StartAssessmentReportExport. |
-| <code><a href="#@cdk_utils/iam.assurance.AssuranceActions.property.StartResourceDiscovery">StartResourceDiscovery</a></code> | <code>string</code> | [Write] assurance:StartResourceDiscovery. |
 | <code><a href="#@cdk_utils/iam.assurance.AssuranceActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] assurance:TagResource. |
 | <code><a href="#@cdk_utils/iam.assurance.AssuranceActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] assurance:UntagResource. |
 | <code><a href="#@cdk_utils/iam.assurance.AssuranceActions.property.UpdateAnnotation">UpdateAnnotation</a></code> | <code>string</code> | [Write] assurance:UpdateAnnotation. |
@@ -280,7 +277,6 @@ new assurance.AssuranceActions()
 | <code><a href="#@cdk_utils/iam.assurance.AssuranceActions.property.UpdatePermissionSet">UpdatePermissionSet</a></code> | <code>string</code> | [Write] assurance:UpdatePermissionSet. |
 | <code><a href="#@cdk_utils/iam.assurance.AssuranceActions.property.UpdateProject">UpdateProject</a></code> | <code>string</code> | [Write] assurance:UpdateProject. |
 | <code><a href="#@cdk_utils/iam.assurance.AssuranceActions.property.UpdateTask">UpdateTask</a></code> | <code>string</code> | [Write] assurance:UpdateTask. |
-| <code><a href="#@cdk_utils/iam.assurance.AssuranceActions.property.UploadEvidence">UploadEvidence</a></code> | <code>string</code> | [Write] assurance:UploadEvidence. |
 | <code><a href="#@cdk_utils/iam.assurance.AssuranceActions.property.VendConnectionAccessToken">VendConnectionAccessToken</a></code> | <code>string</code> | [Write] assurance:VendConnectionAccessToken. |
 
 ---
@@ -909,18 +905,6 @@ public readonly DisableFramework: string;
 
 ---
 
-##### `DownloadEvidence`<sup>Required</sup> <a name="DownloadEvidence" id="@cdk_utils/iam.assurance.AssuranceActions.property.DownloadEvidence"></a>
-
-```typescript
-public readonly DownloadEvidence: string;
-```
-
-- *Type:* string
-
-[Read] assurance:DownloadEvidence.
-
----
-
 ##### `EnableFramework`<sup>Required</sup> <a name="EnableFramework" id="@cdk_utils/iam.assurance.AssuranceActions.property.EnableFramework"></a>
 
 ```typescript
@@ -1197,18 +1181,6 @@ public readonly ListProjects: string;
 
 ---
 
-##### `ListResourcesForControl`<sup>Required</sup> <a name="ListResourcesForControl" id="@cdk_utils/iam.assurance.AssuranceActions.property.ListResourcesForControl"></a>
-
-```typescript
-public readonly ListResourcesForControl: string;
-```
-
-- *Type:* string
-
-[Read] assurance:ListResourcesForControl.
-
----
-
 ##### `ListTagsForResource`<sup>Required</sup> <a name="ListTagsForResource" id="@cdk_utils/iam.assurance.AssuranceActions.property.ListTagsForResource"></a>
 
 ```typescript
@@ -1350,18 +1322,6 @@ public readonly StartAssessmentReportExport: string;
 - *Type:* string
 
 [Write] assurance:StartAssessmentReportExport.
-
----
-
-##### `StartResourceDiscovery`<sup>Required</sup> <a name="StartResourceDiscovery" id="@cdk_utils/iam.assurance.AssuranceActions.property.StartResourceDiscovery"></a>
-
-```typescript
-public readonly StartResourceDiscovery: string;
-```
-
-- *Type:* string
-
-[Write] assurance:StartResourceDiscovery.
 
 ---
 
@@ -1518,18 +1478,6 @@ public readonly UpdateTask: string;
 - *Type:* string
 
 [Write] assurance:UpdateTask.
-
----
-
-##### `UploadEvidence`<sup>Required</sup> <a name="UploadEvidence" id="@cdk_utils/iam.assurance.AssuranceActions.property.UploadEvidence"></a>
-
-```typescript
-public readonly UploadEvidence: string;
-```
-
-- *Type:* string
-
-[Write] assurance:UploadEvidence.
 
 ---
 
