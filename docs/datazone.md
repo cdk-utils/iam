@@ -201,6 +201,7 @@ new datazone.DatazoneActions()
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.actionGetDomainExecutionRoleCredentials">actionGetDomainExecutionRoleCredentials</a></code> | <code>string</code> | [Read] datazone:GetDomainExecutionRoleCredentials. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.actionGetDomainSharingPolicy">actionGetDomainSharingPolicy</a></code> | <code>string</code> | [Read] datazone:GetDomainSharingPolicy. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.actionGetDomainUnit">actionGetDomainUnit</a></code> | <code>string</code> | [Read] datazone:GetDomainUnit. |
+| <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.actionGetEffectiveUICustomization">actionGetEffectiveUICustomization</a></code> | <code>string</code> | [Read] datazone:GetEffectiveUICustomization. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.actionGetEnvironment">actionGetEnvironment</a></code> | <code>string</code> | [Read] datazone:GetEnvironment. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.actionGetEnvironmentAction">actionGetEnvironmentAction</a></code> | <code>string</code> | [Read] datazone:GetEnvironmentAction. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.actionGetEnvironmentActionLink">actionGetEnvironmentActionLink</a></code> | <code>string</code> | [Read] datazone:GetEnvironmentActionLink. |
@@ -222,6 +223,7 @@ new datazone.DatazoneActions()
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.actionGetNotebookCompute">actionGetNotebookCompute</a></code> | <code>string</code> | [Read] datazone:GetNotebookCompute. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.actionGetNotebookExport">actionGetNotebookExport</a></code> | <code>string</code> | [Read] datazone:GetNotebookExport. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.actionGetNotebookRun">actionGetNotebookRun</a></code> | <code>string</code> | [Read] datazone:GetNotebookRun. |
+| <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.actionGetNotificationPreference">actionGetNotificationPreference</a></code> | <code>string</code> | [Read] datazone:GetNotificationPreference. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.actionGetProject">actionGetProject</a></code> | <code>string</code> | [Read] datazone:GetProject. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.actionGetProjectProfile">actionGetProjectProfile</a></code> | <code>string</code> | [Read] datazone:GetProjectProfile. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.actionGetRule">actionGetRule</a></code> | <code>string</code> | [Read] datazone:GetRule. |
@@ -230,7 +232,9 @@ new datazone.DatazoneActions()
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.actionGetSubscriptionGrant">actionGetSubscriptionGrant</a></code> | <code>string</code> | [Read] datazone:GetSubscriptionGrant. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.actionGetSubscriptionRequestDetails">actionGetSubscriptionRequestDetails</a></code> | <code>string</code> | [Read] datazone:GetSubscriptionRequestDetails. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.actionGetSubscriptionTarget">actionGetSubscriptionTarget</a></code> | <code>string</code> | [Read] datazone:GetSubscriptionTarget. |
+| <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.actionGetSystemTableExportConfiguration">actionGetSystemTableExportConfiguration</a></code> | <code>string</code> | [Read] datazone:GetSystemTableExportConfiguration. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.actionGetTimeSeriesDataPoint">actionGetTimeSeriesDataPoint</a></code> | <code>string</code> | [Read] datazone:GetTimeSeriesDataPoint. |
+| <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.actionGetUIConfiguration">actionGetUIConfiguration</a></code> | <code>string</code> | [Read] datazone:GetUIConfiguration. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.actionGetUpdateEligibility">actionGetUpdateEligibility</a></code> | <code>string</code> | [Read] datazone:GetUpdateEligibility. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.actionGetUserProfile">actionGetUserProfile</a></code> | <code>string</code> | [Read] datazone:GetUserProfile. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.AddEntityOwner">AddEntityOwner</a></code> | <code>string</code> | [Write] datazone:AddEntityOwner. |
@@ -277,6 +281,7 @@ new datazone.DatazoneActions()
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.CreateGroupProfile">CreateGroupProfile</a></code> | <code>string</code> | [Write] datazone:CreateGroupProfile. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.CreateListingChangeSet">CreateListingChangeSet</a></code> | <code>string</code> | [Write] datazone:CreateListingChangeSet. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.CreateNotebook">CreateNotebook</a></code> | <code>string</code> | [Write] datazone:CreateNotebook. |
+| <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.CreateNotificationPreference">CreateNotificationPreference</a></code> | <code>string</code> | [Write] datazone:CreateNotificationPreference. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.CreateProject">CreateProject</a></code> | <code>string</code> | [Write] datazone:CreateProject. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.CreateProjectMembership">CreateProjectMembership</a></code> | <code>string</code> | [Write] datazone:CreateProjectMembership. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.CreateProjectProfile">CreateProjectProfile</a></code> | <code>string</code> | [Write] datazone:CreateProjectProfile. |
@@ -284,6 +289,7 @@ new datazone.DatazoneActions()
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.CreateSubscriptionGrant">CreateSubscriptionGrant</a></code> | <code>string</code> | [Write] datazone:CreateSubscriptionGrant. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.CreateSubscriptionRequest">CreateSubscriptionRequest</a></code> | <code>string</code> | [Write] datazone:CreateSubscriptionRequest. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.CreateSubscriptionTarget">CreateSubscriptionTarget</a></code> | <code>string</code> | [Write] datazone:CreateSubscriptionTarget. |
+| <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.CreateUIConfiguration">CreateUIConfiguration</a></code> | <code>string</code> | [Write] datazone:CreateUIConfiguration. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.CreateUserProfile">CreateUserProfile</a></code> | <code>string</code> | [Write] datazone:CreateUserProfile. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.DeleteAccountPool">DeleteAccountPool</a></code> | <code>string</code> | [Write] datazone:DeleteAccountPool. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.DeleteAgentApprovalPolicy">DeleteAgentApprovalPolicy</a></code> | <code>string</code> | [Write] datazone:DeleteAgentApprovalPolicy. |
@@ -313,6 +319,7 @@ new datazone.DatazoneActions()
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.DeleteLineageEvent">DeleteLineageEvent</a></code> | <code>string</code> | [Write] datazone:DeleteLineageEvent. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.DeleteListing">DeleteListing</a></code> | <code>string</code> | [Write] datazone:DeleteListing. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.DeleteNotebook">DeleteNotebook</a></code> | <code>string</code> | [Write] datazone:DeleteNotebook. |
+| <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.DeleteNotificationPreference">DeleteNotificationPreference</a></code> | <code>string</code> | [Write] datazone:DeleteNotificationPreference. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.DeleteProject">DeleteProject</a></code> | <code>string</code> | [Write] datazone:DeleteProject. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.DeleteProjectMembership">DeleteProjectMembership</a></code> | <code>string</code> | [Write] datazone:DeleteProjectMembership. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.DeleteProjectProfile">DeleteProjectProfile</a></code> | <code>string</code> | [Write] datazone:DeleteProjectProfile. |
@@ -321,6 +328,7 @@ new datazone.DatazoneActions()
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.DeleteSubscriptionRequest">DeleteSubscriptionRequest</a></code> | <code>string</code> | [Write] datazone:DeleteSubscriptionRequest. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.DeleteSubscriptionTarget">DeleteSubscriptionTarget</a></code> | <code>string</code> | [Write] datazone:DeleteSubscriptionTarget. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.DeleteTimeSeriesDataPoints">DeleteTimeSeriesDataPoints</a></code> | <code>string</code> | [Write] datazone:DeleteTimeSeriesDataPoints. |
+| <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.DeleteUIConfiguration">DeleteUIConfiguration</a></code> | <code>string</code> | [Write] datazone:DeleteUIConfiguration. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.DeregisterAgentArtifact">DeregisterAgentArtifact</a></code> | <code>string</code> | [Write] datazone:DeregisterAgentArtifact. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.DisassociateEnvironmentRole">DisassociateEnvironmentRole</a></code> | <code>string</code> | [Write] datazone:DisassociateEnvironmentRole. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.DisassociateGovernedTerms">DisassociateGovernedTerms</a></code> | <code>string</code> | [Write] datazone:DisassociateGovernedTerms. |
@@ -341,6 +349,7 @@ new datazone.DatazoneActions()
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.ListDataSourceRunActivities">ListDataSourceRunActivities</a></code> | <code>string</code> | [List] datazone:ListDataSourceRunActivities. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.ListDataSourceRuns">ListDataSourceRuns</a></code> | <code>string</code> | [List] datazone:ListDataSourceRuns. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.ListDataSources">ListDataSources</a></code> | <code>string</code> | [List] datazone:ListDataSources. |
+| <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.ListDeployableEnvironmentBlueprints">ListDeployableEnvironmentBlueprints</a></code> | <code>string</code> | [List] datazone:ListDeployableEnvironmentBlueprints. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.ListDesignations">ListDesignations</a></code> | <code>string</code> | [List] datazone:ListDesignations. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.ListDomains">ListDomains</a></code> | <code>string</code> | [List] datazone:ListDomains. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.ListDomainUnitsForParent">ListDomainUnitsForParent</a></code> | <code>string</code> | [List] datazone:ListDomainUnitsForParent. |
@@ -372,6 +381,7 @@ new datazone.DatazoneActions()
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.ListSubscriptionTargets">ListSubscriptionTargets</a></code> | <code>string</code> | [List] datazone:ListSubscriptionTargets. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [Read] datazone:ListTagsForResource. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.ListTimeSeriesDataPoints">ListTimeSeriesDataPoints</a></code> | <code>string</code> | [List] datazone:ListTimeSeriesDataPoints. |
+| <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.ListUIConfigurations">ListUIConfigurations</a></code> | <code>string</code> | [List] datazone:ListUIConfigurations. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.ListWarehouseMetadata">ListWarehouseMetadata</a></code> | <code>string</code> | [List] datazone:ListWarehouseMetadata. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.PostLineageEvent">PostLineageEvent</a></code> | <code>string</code> | [Write] datazone:PostLineageEvent. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.PostTimeSeriesDataPoints">PostTimeSeriesDataPoints</a></code> | <code>string</code> | [Write] datazone:PostTimeSeriesDataPoints. |
@@ -381,6 +391,7 @@ new datazone.DatazoneActions()
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.PutDataExportConfiguration">PutDataExportConfiguration</a></code> | <code>string</code> | [Write] datazone:PutDataExportConfiguration. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.PutDomainSharingPolicy">PutDomainSharingPolicy</a></code> | <code>string</code> | [PermissionManagement] datazone:PutDomainSharingPolicy. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.PutEnvironmentBlueprintConfiguration">PutEnvironmentBlueprintConfiguration</a></code> | <code>string</code> | [Write] datazone:PutEnvironmentBlueprintConfiguration. |
+| <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.PutSystemTableExportConfiguration">PutSystemTableExportConfiguration</a></code> | <code>string</code> | [Write] datazone:PutSystemTableExportConfiguration. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.QueryGraph">QueryGraph</a></code> | <code>string</code> | [List] datazone:QueryGraph. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.RefreshToken">RefreshToken</a></code> | <code>string</code> | [Write] datazone:RefreshToken. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.RegisterAgentArtifact">RegisterAgentArtifact</a></code> | <code>string</code> | [Write] datazone:RegisterAgentArtifact. |
@@ -418,6 +429,7 @@ new datazone.DatazoneActions()
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] datazone:UntagResource. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.UpdateAccountPool">UpdateAccountPool</a></code> | <code>string</code> | [Write] datazone:UpdateAccountPool. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.UpdateAssetFilter">UpdateAssetFilter</a></code> | <code>string</code> | [Write] datazone:UpdateAssetFilter. |
+| <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.UpdateAssetOwner">UpdateAssetOwner</a></code> | <code>string</code> | [Write] datazone:UpdateAssetOwner. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.UpdateCell">UpdateCell</a></code> | <code>string</code> | [Write] datazone:UpdateCell. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.UpdateCellRun">UpdateCellRun</a></code> | <code>string</code> | [Write] datazone:UpdateCellRun. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.UpdateConnection">UpdateConnection</a></code> | <code>string</code> | [Write] datazone:UpdateConnection. |
@@ -438,12 +450,14 @@ new datazone.DatazoneActions()
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.UpdateGlossaryTerm">UpdateGlossaryTerm</a></code> | <code>string</code> | [Write] datazone:UpdateGlossaryTerm. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.UpdateGroupProfile">UpdateGroupProfile</a></code> | <code>string</code> | [Write] datazone:UpdateGroupProfile. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.UpdateNotebook">UpdateNotebook</a></code> | <code>string</code> | [Write] datazone:UpdateNotebook. |
+| <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.UpdateNotificationPreference">UpdateNotificationPreference</a></code> | <code>string</code> | [Write] datazone:UpdateNotificationPreference. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.UpdateProject">UpdateProject</a></code> | <code>string</code> | [Write] datazone:UpdateProject. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.UpdateProjectProfile">UpdateProjectProfile</a></code> | <code>string</code> | [Write] datazone:UpdateProjectProfile. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.UpdateRule">UpdateRule</a></code> | <code>string</code> | [Write] datazone:UpdateRule. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.UpdateSubscriptionGrantStatus">UpdateSubscriptionGrantStatus</a></code> | <code>string</code> | [Write] datazone:UpdateSubscriptionGrantStatus. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.UpdateSubscriptionRequest">UpdateSubscriptionRequest</a></code> | <code>string</code> | [Write] datazone:UpdateSubscriptionRequest. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.UpdateSubscriptionTarget">UpdateSubscriptionTarget</a></code> | <code>string</code> | [Write] datazone:UpdateSubscriptionTarget. |
+| <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.UpdateUIConfiguration">UpdateUIConfiguration</a></code> | <code>string</code> | [Write] datazone:UpdateUIConfiguration. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.UpdateUserProfile">UpdateUserProfile</a></code> | <code>string</code> | [Write] datazone:UpdateUserProfile. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.ValidatePassRole">ValidatePassRole</a></code> | <code>string</code> | [Write] datazone:ValidatePassRole. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneActions.property.ValidatePolicy">ValidatePolicy</a></code> | <code>string</code> | [Read] datazone:ValidatePolicy. |
@@ -738,6 +752,18 @@ public readonly actionGetDomainUnit: string;
 
 ---
 
+##### `actionGetEffectiveUICustomization`<sup>Required</sup> <a name="actionGetEffectiveUICustomization" id="@cdk_utils/iam.datazone.DatazoneActions.property.actionGetEffectiveUICustomization"></a>
+
+```typescript
+public readonly actionGetEffectiveUICustomization: string;
+```
+
+- *Type:* string
+
+[Read] datazone:GetEffectiveUICustomization.
+
+---
+
 ##### `actionGetEnvironment`<sup>Required</sup> <a name="actionGetEnvironment" id="@cdk_utils/iam.datazone.DatazoneActions.property.actionGetEnvironment"></a>
 
 ```typescript
@@ -990,6 +1016,18 @@ public readonly actionGetNotebookRun: string;
 
 ---
 
+##### `actionGetNotificationPreference`<sup>Required</sup> <a name="actionGetNotificationPreference" id="@cdk_utils/iam.datazone.DatazoneActions.property.actionGetNotificationPreference"></a>
+
+```typescript
+public readonly actionGetNotificationPreference: string;
+```
+
+- *Type:* string
+
+[Read] datazone:GetNotificationPreference.
+
+---
+
 ##### `actionGetProject`<sup>Required</sup> <a name="actionGetProject" id="@cdk_utils/iam.datazone.DatazoneActions.property.actionGetProject"></a>
 
 ```typescript
@@ -1086,6 +1124,18 @@ public readonly actionGetSubscriptionTarget: string;
 
 ---
 
+##### `actionGetSystemTableExportConfiguration`<sup>Required</sup> <a name="actionGetSystemTableExportConfiguration" id="@cdk_utils/iam.datazone.DatazoneActions.property.actionGetSystemTableExportConfiguration"></a>
+
+```typescript
+public readonly actionGetSystemTableExportConfiguration: string;
+```
+
+- *Type:* string
+
+[Read] datazone:GetSystemTableExportConfiguration.
+
+---
+
 ##### `actionGetTimeSeriesDataPoint`<sup>Required</sup> <a name="actionGetTimeSeriesDataPoint" id="@cdk_utils/iam.datazone.DatazoneActions.property.actionGetTimeSeriesDataPoint"></a>
 
 ```typescript
@@ -1095,6 +1145,18 @@ public readonly actionGetTimeSeriesDataPoint: string;
 - *Type:* string
 
 [Read] datazone:GetTimeSeriesDataPoint.
+
+---
+
+##### `actionGetUIConfiguration`<sup>Required</sup> <a name="actionGetUIConfiguration" id="@cdk_utils/iam.datazone.DatazoneActions.property.actionGetUIConfiguration"></a>
+
+```typescript
+public readonly actionGetUIConfiguration: string;
+```
+
+- *Type:* string
+
+[Read] datazone:GetUIConfiguration.
 
 ---
 
@@ -1650,6 +1712,18 @@ public readonly CreateNotebook: string;
 
 ---
 
+##### `CreateNotificationPreference`<sup>Required</sup> <a name="CreateNotificationPreference" id="@cdk_utils/iam.datazone.DatazoneActions.property.CreateNotificationPreference"></a>
+
+```typescript
+public readonly CreateNotificationPreference: string;
+```
+
+- *Type:* string
+
+[Write] datazone:CreateNotificationPreference.
+
+---
+
 ##### `CreateProject`<sup>Required</sup> <a name="CreateProject" id="@cdk_utils/iam.datazone.DatazoneActions.property.CreateProject"></a>
 
 ```typescript
@@ -1731,6 +1805,18 @@ public readonly CreateSubscriptionTarget: string;
 - *Type:* string
 
 [Write] datazone:CreateSubscriptionTarget.
+
+---
+
+##### `CreateUIConfiguration`<sup>Required</sup> <a name="CreateUIConfiguration" id="@cdk_utils/iam.datazone.DatazoneActions.property.CreateUIConfiguration"></a>
+
+```typescript
+public readonly CreateUIConfiguration: string;
+```
+
+- *Type:* string
+
+[Write] datazone:CreateUIConfiguration.
 
 ---
 
@@ -2082,6 +2168,18 @@ public readonly DeleteNotebook: string;
 
 ---
 
+##### `DeleteNotificationPreference`<sup>Required</sup> <a name="DeleteNotificationPreference" id="@cdk_utils/iam.datazone.DatazoneActions.property.DeleteNotificationPreference"></a>
+
+```typescript
+public readonly DeleteNotificationPreference: string;
+```
+
+- *Type:* string
+
+[Write] datazone:DeleteNotificationPreference.
+
+---
+
 ##### `DeleteProject`<sup>Required</sup> <a name="DeleteProject" id="@cdk_utils/iam.datazone.DatazoneActions.property.DeleteProject"></a>
 
 ```typescript
@@ -2175,6 +2273,18 @@ public readonly DeleteTimeSeriesDataPoints: string;
 - *Type:* string
 
 [Write] datazone:DeleteTimeSeriesDataPoints.
+
+---
+
+##### `DeleteUIConfiguration`<sup>Required</sup> <a name="DeleteUIConfiguration" id="@cdk_utils/iam.datazone.DatazoneActions.property.DeleteUIConfiguration"></a>
+
+```typescript
+public readonly DeleteUIConfiguration: string;
+```
+
+- *Type:* string
+
+[Write] datazone:DeleteUIConfiguration.
 
 ---
 
@@ -2415,6 +2525,18 @@ public readonly ListDataSources: string;
 - *Type:* string
 
 [List] datazone:ListDataSources.
+
+---
+
+##### `ListDeployableEnvironmentBlueprints`<sup>Required</sup> <a name="ListDeployableEnvironmentBlueprints" id="@cdk_utils/iam.datazone.DatazoneActions.property.ListDeployableEnvironmentBlueprints"></a>
+
+```typescript
+public readonly ListDeployableEnvironmentBlueprints: string;
+```
+
+- *Type:* string
+
+[List] datazone:ListDeployableEnvironmentBlueprints.
 
 ---
 
@@ -2790,6 +2912,18 @@ public readonly ListTimeSeriesDataPoints: string;
 
 ---
 
+##### `ListUIConfigurations`<sup>Required</sup> <a name="ListUIConfigurations" id="@cdk_utils/iam.datazone.DatazoneActions.property.ListUIConfigurations"></a>
+
+```typescript
+public readonly ListUIConfigurations: string;
+```
+
+- *Type:* string
+
+[List] datazone:ListUIConfigurations.
+
+---
+
 ##### `ListWarehouseMetadata`<sup>Required</sup> <a name="ListWarehouseMetadata" id="@cdk_utils/iam.datazone.DatazoneActions.property.ListWarehouseMetadata"></a>
 
 ```typescript
@@ -2895,6 +3029,18 @@ public readonly PutEnvironmentBlueprintConfiguration: string;
 - *Type:* string
 
 [Write] datazone:PutEnvironmentBlueprintConfiguration.
+
+---
+
+##### `PutSystemTableExportConfiguration`<sup>Required</sup> <a name="PutSystemTableExportConfiguration" id="@cdk_utils/iam.datazone.DatazoneActions.property.PutSystemTableExportConfiguration"></a>
+
+```typescript
+public readonly PutSystemTableExportConfiguration: string;
+```
+
+- *Type:* string
+
+[Write] datazone:PutSystemTableExportConfiguration.
 
 ---
 
@@ -3342,6 +3488,18 @@ public readonly UpdateAssetFilter: string;
 
 ---
 
+##### `UpdateAssetOwner`<sup>Required</sup> <a name="UpdateAssetOwner" id="@cdk_utils/iam.datazone.DatazoneActions.property.UpdateAssetOwner"></a>
+
+```typescript
+public readonly UpdateAssetOwner: string;
+```
+
+- *Type:* string
+
+[Write] datazone:UpdateAssetOwner.
+
+---
+
 ##### `UpdateCell`<sup>Required</sup> <a name="UpdateCell" id="@cdk_utils/iam.datazone.DatazoneActions.property.UpdateCell"></a>
 
 ```typescript
@@ -3582,6 +3740,18 @@ public readonly UpdateNotebook: string;
 
 ---
 
+##### `UpdateNotificationPreference`<sup>Required</sup> <a name="UpdateNotificationPreference" id="@cdk_utils/iam.datazone.DatazoneActions.property.UpdateNotificationPreference"></a>
+
+```typescript
+public readonly UpdateNotificationPreference: string;
+```
+
+- *Type:* string
+
+[Write] datazone:UpdateNotificationPreference.
+
+---
+
 ##### `UpdateProject`<sup>Required</sup> <a name="UpdateProject" id="@cdk_utils/iam.datazone.DatazoneActions.property.UpdateProject"></a>
 
 ```typescript
@@ -3651,6 +3821,18 @@ public readonly UpdateSubscriptionTarget: string;
 - *Type:* string
 
 [Write] datazone:UpdateSubscriptionTarget.
+
+---
+
+##### `UpdateUIConfiguration`<sup>Required</sup> <a name="UpdateUIConfiguration" id="@cdk_utils/iam.datazone.DatazoneActions.property.UpdateUIConfiguration"></a>
+
+```typescript
+public readonly UpdateUIConfiguration: string;
+```
+
+- *Type:* string
+
+[Write] datazone:UpdateUIConfiguration.
 
 ---
 

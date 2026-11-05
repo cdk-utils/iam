@@ -6,6 +6,7 @@
       "Name": "AddWorkload",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -51,6 +52,7 @@
       "Name": "CreateLogPattern",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -66,6 +68,7 @@
       "Name": "DeleteApplication",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -96,6 +99,7 @@
       "Name": "DeleteLogPattern",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -111,6 +115,7 @@
       "Name": "DescribeApplication",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -126,6 +131,7 @@
       "Name": "DescribeComponent",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -141,6 +147,7 @@
       "Name": "DescribeComponentConfiguration",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -156,6 +163,7 @@
       "Name": "DescribeComponentConfigurationRecommendation",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -171,6 +179,7 @@
       "Name": "DescribeLogPattern",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -186,6 +195,7 @@
       "Name": "DescribeObservation",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -201,6 +211,7 @@
       "Name": "DescribeProblem",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -216,6 +227,7 @@
       "Name": "DescribeProblemObservations",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -231,6 +243,7 @@
       "Name": "DescribeWorkload",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -261,6 +274,7 @@
       "Name": "ListApplications",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -276,6 +290,7 @@
       "Name": "ListComponents",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -291,6 +306,7 @@
       "Name": "ListConfigurationHistory",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -306,6 +322,7 @@
       "Name": "ListLogPatternSets",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -321,6 +338,7 @@
       "Name": "ListLogPatterns",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -336,6 +354,7 @@
       "Name": "ListProblems",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -351,6 +370,7 @@
       "Name": "ListTagsForResource",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -366,6 +386,7 @@
       "Name": "ListWorkloads",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -381,6 +402,7 @@
       "Name": "RemoveWorkload",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -400,6 +422,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": true,
@@ -418,6 +441,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": true,
@@ -433,6 +457,7 @@
       "Name": "UpdateApplication",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -543,6 +568,12 @@
   "Operations": [
     {
       "Name": "AddWorkload",
+      "AuthorizedActions": [
+        {
+          "Name": "AddWorkload",
+          "Service": "applicationinsights"
+        }
+      ],
       "SDK": [
         {
           "Name": "application-insights",
@@ -573,6 +604,12 @@
     },
     {
       "Name": "CreateLogPattern",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateLogPattern",
+          "Service": "applicationinsights"
+        }
+      ],
       "SDK": [
         {
           "Name": "application-insights",
@@ -583,6 +620,12 @@
     },
     {
       "Name": "DeleteApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteApplication",
+          "Service": "applicationinsights"
+        }
+      ],
       "SDK": [
         {
           "Name": "application-insights",
@@ -603,6 +646,12 @@
     },
     {
       "Name": "DeleteLogPattern",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteLogPattern",
+          "Service": "applicationinsights"
+        }
+      ],
       "SDK": [
         {
           "Name": "application-insights",
@@ -613,6 +662,12 @@
     },
     {
       "Name": "DescribeApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeApplication",
+          "Service": "applicationinsights"
+        }
+      ],
       "SDK": [
         {
           "Name": "application-insights",
@@ -623,6 +678,12 @@
     },
     {
       "Name": "DescribeComponent",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeComponent",
+          "Service": "applicationinsights"
+        }
+      ],
       "SDK": [
         {
           "Name": "application-insights",
@@ -633,6 +694,12 @@
     },
     {
       "Name": "DescribeComponentConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeComponentConfiguration",
+          "Service": "applicationinsights"
+        }
+      ],
       "SDK": [
         {
           "Name": "application-insights",
@@ -643,6 +710,12 @@
     },
     {
       "Name": "DescribeComponentConfigurationRecommendation",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeComponentConfigurationRecommendation",
+          "Service": "applicationinsights"
+        }
+      ],
       "SDK": [
         {
           "Name": "application-insights",
@@ -653,6 +726,12 @@
     },
     {
       "Name": "DescribeLogPattern",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeLogPattern",
+          "Service": "applicationinsights"
+        }
+      ],
       "SDK": [
         {
           "Name": "application-insights",
@@ -663,6 +742,12 @@
     },
     {
       "Name": "DescribeObservation",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeObservation",
+          "Service": "applicationinsights"
+        }
+      ],
       "SDK": [
         {
           "Name": "application-insights",
@@ -673,6 +758,12 @@
     },
     {
       "Name": "DescribeProblem",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeProblem",
+          "Service": "applicationinsights"
+        }
+      ],
       "SDK": [
         {
           "Name": "application-insights",
@@ -683,6 +774,12 @@
     },
     {
       "Name": "DescribeProblemObservations",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeProblemObservations",
+          "Service": "applicationinsights"
+        }
+      ],
       "SDK": [
         {
           "Name": "application-insights",
@@ -693,6 +790,12 @@
     },
     {
       "Name": "DescribeWorkload",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeWorkload",
+          "Service": "applicationinsights"
+        }
+      ],
       "SDK": [
         {
           "Name": "application-insights",
@@ -703,6 +806,12 @@
     },
     {
       "Name": "ListApplications",
+      "AuthorizedActions": [
+        {
+          "Name": "ListApplications",
+          "Service": "applicationinsights"
+        }
+      ],
       "SDK": [
         {
           "Name": "application-insights",
@@ -713,6 +822,12 @@
     },
     {
       "Name": "ListComponents",
+      "AuthorizedActions": [
+        {
+          "Name": "ListComponents",
+          "Service": "applicationinsights"
+        }
+      ],
       "SDK": [
         {
           "Name": "application-insights",
@@ -723,6 +838,12 @@
     },
     {
       "Name": "ListConfigurationHistory",
+      "AuthorizedActions": [
+        {
+          "Name": "ListConfigurationHistory",
+          "Service": "applicationinsights"
+        }
+      ],
       "SDK": [
         {
           "Name": "application-insights",
@@ -733,6 +854,12 @@
     },
     {
       "Name": "ListLogPatternSets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListLogPatternSets",
+          "Service": "applicationinsights"
+        }
+      ],
       "SDK": [
         {
           "Name": "application-insights",
@@ -743,6 +870,12 @@
     },
     {
       "Name": "ListLogPatterns",
+      "AuthorizedActions": [
+        {
+          "Name": "ListLogPatterns",
+          "Service": "applicationinsights"
+        }
+      ],
       "SDK": [
         {
           "Name": "application-insights",
@@ -753,6 +886,12 @@
     },
     {
       "Name": "ListProblems",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProblems",
+          "Service": "applicationinsights"
+        }
+      ],
       "SDK": [
         {
           "Name": "application-insights",
@@ -763,6 +902,12 @@
     },
     {
       "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "applicationinsights"
+        }
+      ],
       "SDK": [
         {
           "Name": "application-insights",
@@ -773,6 +918,12 @@
     },
     {
       "Name": "ListWorkloads",
+      "AuthorizedActions": [
+        {
+          "Name": "ListWorkloads",
+          "Service": "applicationinsights"
+        }
+      ],
       "SDK": [
         {
           "Name": "application-insights",
@@ -783,6 +934,12 @@
     },
     {
       "Name": "RemoveWorkload",
+      "AuthorizedActions": [
+        {
+          "Name": "RemoveWorkload",
+          "Service": "applicationinsights"
+        }
+      ],
       "SDK": [
         {
           "Name": "application-insights",
@@ -793,6 +950,12 @@
     },
     {
       "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "applicationinsights"
+        }
+      ],
       "SDK": [
         {
           "Name": "application-insights",
@@ -803,6 +966,12 @@
     },
     {
       "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "applicationinsights"
+        }
+      ],
       "SDK": [
         {
           "Name": "application-insights",
@@ -813,6 +982,12 @@
     },
     {
       "Name": "UpdateApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateApplication",
+          "Service": "applicationinsights"
+        }
+      ],
       "SDK": [
         {
           "Name": "application-insights",

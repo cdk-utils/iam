@@ -587,26 +587,6 @@
       }
     },
     {
-      "Name": "DownloadEvidence",
-      "Annotations": {
-        "Properties": {
-          "IsList": false,
-          "IsPermissionManagement": false,
-          "IsTaggingOnly": false,
-          "IsWrite": false
-        }
-      },
-      "Resources": [
-        {
-          "Name": "environment"
-        }
-      ],
-      "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
-      }
-    },
-    {
       "Name": "EnableFramework",
       "Annotations": {
         "Properties": {
@@ -1392,26 +1372,6 @@
       }
     },
     {
-      "Name": "ListResourcesForControl",
-      "Annotations": {
-        "Properties": {
-          "IsList": false,
-          "IsPermissionManagement": false,
-          "IsTaggingOnly": false,
-          "IsWrite": false
-        }
-      },
-      "Resources": [
-        {
-          "Name": "environment"
-        }
-      ],
-      "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
-      }
-    },
-    {
       "Name": "ListTagsForResource",
       "Annotations": {
         "Properties": {
@@ -1608,26 +1568,6 @@
     },
     {
       "Name": "StartAssessmentReportExport",
-      "Annotations": {
-        "Properties": {
-          "IsList": false,
-          "IsPermissionManagement": false,
-          "IsTaggingOnly": false,
-          "IsWrite": true
-        }
-      },
-      "Resources": [
-        {
-          "Name": "environment"
-        }
-      ],
-      "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
-      }
-    },
-    {
-      "Name": "StartResourceDiscovery",
       "Annotations": {
         "Properties": {
           "IsList": false,
@@ -1895,26 +1835,6 @@
     },
     {
       "Name": "UpdateTask",
-      "Annotations": {
-        "Properties": {
-          "IsList": false,
-          "IsPermissionManagement": false,
-          "IsTaggingOnly": false,
-          "IsWrite": true
-        }
-      },
-      "Resources": [
-        {
-          "Name": "environment"
-        }
-      ],
-      "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
-      }
-    },
-    {
-      "Name": "UploadEvidence",
       "Annotations": {
         "Properties": {
           "IsList": false,
