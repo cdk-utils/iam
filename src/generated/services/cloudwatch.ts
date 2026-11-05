@@ -2068,6 +2068,7 @@ export class CloudWatchOperations {
 	];
 	/** IAM actions required for the PutMetricAlarm API call. */
 	static readonly PutMetricAlarm: string[] = [
+		"cloudwatch:ListTagsForResource",
 		"cloudwatch:PutMetricAlarm",
 		"cloudwatch:TagResource",
 	];

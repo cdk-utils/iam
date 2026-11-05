@@ -4920,6 +4920,10 @@
       "Name": "PutMetricAlarm",
       "AuthorizedActions": [
         {
+          "Name": "ListTagsForResource",
+          "Service": "cloudwatch"
+        },
+        {
           "Name": "PutMetricAlarm",
           "Service": "cloudwatch"
         },

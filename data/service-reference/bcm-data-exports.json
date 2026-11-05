@@ -326,6 +326,10 @@
           "Service": "cost-optimization-hub"
         },
         {
+          "Name": "PutReportDefinition",
+          "Service": "cur"
+        },
+        {
           "Name": "TagResource",
           "Service": "bcm-data-exports"
         },
