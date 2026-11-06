@@ -1878,6 +1878,69 @@
       }
     },
     {
+      "Name": "GetSoftwareResourcesV2",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hubv2"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSoftwareStatisticsV2",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hubv2"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSoftwareV2",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hubv2"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "GetUsage",
       "Annotations": {
         "Properties": {
@@ -4202,6 +4265,54 @@
         {
           "Name": "securityhub",
           "Method": "get_security_control_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSoftwareResourcesV2",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSoftwareResourcesV2",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "get_software_resources_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSoftwareStatisticsV2",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSoftwareStatisticsV2",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "get_software_statistics_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSoftwareV2",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSoftwareV2",
+          "Service": "securityhub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityhub",
+          "Method": "get_software_v2",
           "Package": "Boto3"
         }
       ]

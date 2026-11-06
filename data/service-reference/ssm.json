@@ -6038,6 +6038,10 @@
       "Name": "StartExecutionPreview",
       "AuthorizedActions": [
         {
+          "Name": "AddTagsToResource",
+          "Service": "ssm"
+        },
+        {
           "Name": "StartExecutionPreview",
           "Service": "ssm"
         }

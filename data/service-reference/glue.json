@@ -3278,6 +3278,7 @@
       "Name": "GetJobUpgradeAnalysis",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -5776,6 +5777,7 @@
       "Name": "StartJobUpgradeAnalysis",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -5986,6 +5988,7 @@
       "Name": "StopJobUpgradeAnalysis",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -9588,6 +9591,22 @@
       ]
     },
     {
+      "Name": "GetJobUpgradeAnalysis",
+      "AuthorizedActions": [
+        {
+          "Name": "GetJobUpgradeAnalysis",
+          "Service": "glue"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glue",
+          "Method": "get_job_upgrade_analysis",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetJobs",
       "AuthorizedActions": [
         {
@@ -11292,6 +11311,22 @@
       ]
     },
     {
+      "Name": "StartJobUpgradeAnalysis",
+      "AuthorizedActions": [
+        {
+          "Name": "StartJobUpgradeAnalysis",
+          "Service": "glue"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glue",
+          "Method": "start_job_upgrade_analysis",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "StartMLEvaluationTaskRun",
       "AuthorizedActions": [
         {
@@ -11425,6 +11460,22 @@
         {
           "Name": "glue",
           "Method": "stop_crawler_schedule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopJobUpgradeAnalysis",
+      "AuthorizedActions": [
+        {
+          "Name": "StopJobUpgradeAnalysis",
+          "Service": "glue"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glue",
+          "Method": "stop_job_upgrade_analysis",
           "Package": "Boto3"
         }
       ]

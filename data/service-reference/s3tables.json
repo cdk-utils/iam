@@ -3,6 +3,33 @@
   "ServiceName": "S3 Tables",
   "Actions": [
     {
+      "Name": "CompleteTableMigration",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "s3tables:TableBucketTag/${TagKey}",
+        "s3tables:namespace",
+        "s3tables:tableName"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Table"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "CreateNamespace",
       "Annotations": {
         "Properties": {
@@ -607,6 +634,33 @@
       }
     },
     {
+      "Name": "GetTableMigration",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "s3tables:TableBucketTag/${TagKey}",
+        "s3tables:namespace",
+        "s3tables:tableName"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Table"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "GetTablePolicy",
       "ActionConditionKeys": [
         "s3tables:namespace",
@@ -788,6 +842,36 @@
           "IsWrite": false
         }
       },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTableMigrations",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "s3tables:TableBucketTag/${TagKey}",
+        "s3tables:namespace",
+        "s3tables:tableName"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Table"
+        },
+        {
+          "Name": "TableBucket"
+        }
+      ],
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -1180,6 +1264,61 @@
       }
     },
     {
+      "Name": "StartTableMigration",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "s3tables:TableBucketTag/${TagKey}",
+        "s3tables:namespace"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "TableBucket"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SyncTableMigration",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "s3tables:TableBucketTag/${TagKey}",
+        "s3tables:namespace",
+        "s3tables:tableName"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Table"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "TagResource",
       "ActionConditionKeys": [
         "aws:RequestTag/${TagKey}",
@@ -1262,6 +1401,33 @@
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
       }
+    },
+    {
+      "Name": "UpdateTableMigration",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "s3tables:TableBucketTag/${TagKey}",
+        "s3tables:namespace",
+        "s3tables:tableName"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Table"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
     }
   ],
   "ConditionKeys": [
@@ -1321,6 +1487,22 @@
     }
   ],
   "Operations": [
+    {
+      "Name": "CompleteTableMigration",
+      "AuthorizedActions": [
+        {
+          "Name": "CompleteTableMigration",
+          "Service": "s3tables"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "s3tables",
+          "Method": "complete_table_migration",
+          "Package": "Boto3"
+        }
+      ]
+    },
     {
       "Name": "CreateNamespace",
       "AuthorizedActions": [
@@ -1750,6 +1932,22 @@
       ]
     },
     {
+      "Name": "GetTableMigration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetTableMigration",
+          "Service": "s3tables"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "s3tables",
+          "Method": "get_table_migration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetTablePolicy",
       "AuthorizedActions": [
         {
@@ -1873,6 +2071,22 @@
         {
           "Name": "s3tables",
           "Method": "list_table_buckets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTableMigrations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTableMigrations",
+          "Service": "s3tables"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "s3tables",
+          "Method": "list_table_migrations",
           "Package": "Boto3"
         }
       ]
@@ -2104,6 +2318,56 @@
       ]
     },
     {
+      "Name": "StartTableMigration",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "migration.s3tables.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartTableMigration",
+          "Service": "s3tables"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "s3tables",
+          "Method": "start_table_migration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SyncTableMigration",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "migration.s3tables.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "SyncTableMigration",
+          "Service": "s3tables"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "s3tables",
+          "Method": "sync_table_migration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "TagResource",
       "AuthorizedActions": [
         {
@@ -2147,6 +2411,22 @@
         {
           "Name": "s3tables",
           "Method": "update_table_metadata_location",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateTableMigration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateTableMigration",
+          "Service": "s3tables"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "s3tables",
+          "Method": "update_table_migration",
           "Package": "Boto3"
         }
       ]

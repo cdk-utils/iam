@@ -1308,6 +1308,10 @@ export class WisdomOperations {
 	static readonly PutFeedback: string[] = ["wisdom:PutFeedback"];
 	/** IAM actions required for the QueryAssistant API call. */
 	static readonly QueryAssistant: string[] = ["wisdom:QueryAssistant"];
+	/** IAM actions required for the RegisterAssistantReplicaKey API call. */
+	static readonly RegisterAssistantReplicaKey: string[] = [];
+	/** IAM actions required for the RegisterKnowledgeBaseReplicaKey API call. */
+	static readonly RegisterKnowledgeBaseReplicaKey: string[] = [];
 	/** IAM actions required for the RemoveAssistantAIAgent API call. */
 	static readonly RemoveAssistantAIAgent: string[] = [
 		"wisdom:RemoveAssistantAIAgent",

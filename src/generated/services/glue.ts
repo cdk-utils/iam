@@ -3008,6 +3008,10 @@ export class GlueOperations {
 	static readonly opGetJobRun: string[] = ["glue:GetJobRun"];
 	/** IAM actions required for the GetJobRuns API call. */
 	static readonly opGetJobRuns: string[] = ["glue:GetJobRuns"];
+	/** IAM actions required for the GetJobUpgradeAnalysis API call. */
+	static readonly opGetJobUpgradeAnalysis: string[] = [
+		"glue:GetJobUpgradeAnalysis",
+	];
 	/** IAM actions required for the GetJobs API call. */
 	static readonly opGetJobs: string[] = ["glue:GetJobs", "iam:PassRole"];
 	/** IAM actions required for the GetMLTaskRun API call. */
@@ -3316,6 +3320,10 @@ export class GlueOperations {
 		"glue:GetUsageProfile",
 		"glue:StartJobRun",
 	];
+	/** IAM actions required for the StartJobUpgradeAnalysis API call. */
+	static readonly StartJobUpgradeAnalysis: string[] = [
+		"glue:StartJobUpgradeAnalysis",
+	];
 	/** IAM actions required for the StartMLEvaluationTaskRun API call. */
 	static readonly StartMLEvaluationTaskRun: string[] = [
 		"glue:StartMLEvaluationTaskRun",
@@ -3342,6 +3350,10 @@ export class GlueOperations {
 	static readonly StopCrawler: string[] = ["glue:StopCrawler"];
 	/** IAM actions required for the StopCrawlerSchedule API call. */
 	static readonly StopCrawlerSchedule: string[] = ["glue:StopCrawlerSchedule"];
+	/** IAM actions required for the StopJobUpgradeAnalysis API call. */
+	static readonly StopJobUpgradeAnalysis: string[] = [
+		"glue:StopJobUpgradeAnalysis",
+	];
 	/** IAM actions required for the StopMaterializedViewRefreshTaskRun API call. */
 	static readonly StopMaterializedViewRefreshTaskRun: string[] = [];
 	/** IAM actions required for the StopSession API call. */

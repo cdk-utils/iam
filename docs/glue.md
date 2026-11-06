@@ -9306,6 +9306,7 @@ new glue.GlueOperations()
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetJobRun">opGetJobRun</a></code> | <code>string[]</code> | IAM actions required for the GetJobRun API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetJobRuns">opGetJobRuns</a></code> | <code>string[]</code> | IAM actions required for the GetJobRuns API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetJobs">opGetJobs</a></code> | <code>string[]</code> | IAM actions required for the GetJobs API call. |
+| <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetJobUpgradeAnalysis">opGetJobUpgradeAnalysis</a></code> | <code>string[]</code> | IAM actions required for the GetJobUpgradeAnalysis API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetMapping">opGetMapping</a></code> | <code>string[]</code> | IAM actions required for the GetMapping API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetMaterializedViewRefreshTaskRun">opGetMaterializedViewRefreshTaskRun</a></code> | <code>string[]</code> | IAM actions required for the GetMaterializedViewRefreshTaskRun API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetMLTaskRun">opGetMLTaskRun</a></code> | <code>string[]</code> | IAM actions required for the GetMLTaskRun API call. |
@@ -9378,6 +9379,7 @@ new glue.GlueOperations()
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.StartExportLabelsTaskRun">StartExportLabelsTaskRun</a></code> | <code>string[]</code> | IAM actions required for the StartExportLabelsTaskRun API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.StartImportLabelsTaskRun">StartImportLabelsTaskRun</a></code> | <code>string[]</code> | IAM actions required for the StartImportLabelsTaskRun API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.StartJobRun">StartJobRun</a></code> | <code>string[]</code> | IAM actions required for the StartJobRun API call. |
+| <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.StartJobUpgradeAnalysis">StartJobUpgradeAnalysis</a></code> | <code>string[]</code> | IAM actions required for the StartJobUpgradeAnalysis API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.StartMaterializedViewRefreshTaskRun">StartMaterializedViewRefreshTaskRun</a></code> | <code>string[]</code> | IAM actions required for the StartMaterializedViewRefreshTaskRun API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.StartMLEvaluationTaskRun">StartMLEvaluationTaskRun</a></code> | <code>string[]</code> | IAM actions required for the StartMLEvaluationTaskRun API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.StartMLLabelingSetGenerationTaskRun">StartMLLabelingSetGenerationTaskRun</a></code> | <code>string[]</code> | IAM actions required for the StartMLLabelingSetGenerationTaskRun API call. |
@@ -9387,6 +9389,7 @@ new glue.GlueOperations()
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.StopColumnStatisticsTaskRunSchedule">StopColumnStatisticsTaskRunSchedule</a></code> | <code>string[]</code> | IAM actions required for the StopColumnStatisticsTaskRunSchedule API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.StopCrawler">StopCrawler</a></code> | <code>string[]</code> | IAM actions required for the StopCrawler API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.StopCrawlerSchedule">StopCrawlerSchedule</a></code> | <code>string[]</code> | IAM actions required for the StopCrawlerSchedule API call. |
+| <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.StopJobUpgradeAnalysis">StopJobUpgradeAnalysis</a></code> | <code>string[]</code> | IAM actions required for the StopJobUpgradeAnalysis API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.StopMaterializedViewRefreshTaskRun">StopMaterializedViewRefreshTaskRun</a></code> | <code>string[]</code> | IAM actions required for the StopMaterializedViewRefreshTaskRun API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.StopSession">StopSession</a></code> | <code>string[]</code> | IAM actions required for the StopSession API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.StopTrigger">StopTrigger</a></code> | <code>string[]</code> | IAM actions required for the StopTrigger API call. |
@@ -11672,6 +11675,18 @@ IAM actions required for the GetJobs API call.
 
 ---
 
+##### `opGetJobUpgradeAnalysis`<sup>Required</sup> <a name="opGetJobUpgradeAnalysis" id="@cdk_utils/iam.glue.GlueOperations.property.opGetJobUpgradeAnalysis"></a>
+
+```typescript
+public readonly opGetJobUpgradeAnalysis: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetJobUpgradeAnalysis API call.
+
+---
+
 ##### `opGetMapping`<sup>Required</sup> <a name="opGetMapping" id="@cdk_utils/iam.glue.GlueOperations.property.opGetMapping"></a>
 
 ```typescript
@@ -12536,6 +12551,18 @@ IAM actions required for the StartJobRun API call.
 
 ---
 
+##### `StartJobUpgradeAnalysis`<sup>Required</sup> <a name="StartJobUpgradeAnalysis" id="@cdk_utils/iam.glue.GlueOperations.property.StartJobUpgradeAnalysis"></a>
+
+```typescript
+public readonly StartJobUpgradeAnalysis: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StartJobUpgradeAnalysis API call.
+
+---
+
 ##### `StartMaterializedViewRefreshTaskRun`<sup>Required</sup> <a name="StartMaterializedViewRefreshTaskRun" id="@cdk_utils/iam.glue.GlueOperations.property.StartMaterializedViewRefreshTaskRun"></a>
 
 ```typescript
@@ -12641,6 +12668,18 @@ public readonly StopCrawlerSchedule: string[];
 - *Type:* string[]
 
 IAM actions required for the StopCrawlerSchedule API call.
+
+---
+
+##### `StopJobUpgradeAnalysis`<sup>Required</sup> <a name="StopJobUpgradeAnalysis" id="@cdk_utils/iam.glue.GlueOperations.property.StopJobUpgradeAnalysis"></a>
+
+```typescript
+public readonly StopJobUpgradeAnalysis: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StopJobUpgradeAnalysis API call.
 
 ---
 

@@ -2710,6 +2710,7 @@ const cloudWatchViewArnComponents: cloudwatch.CloudWatchViewArnComponents = { ..
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchViewArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchViewArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchViewArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchViewArnComponents.property.viewId">viewId</a></code> | <code>string</code> | The ViewId component. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchViewArnComponents.property.viewName">viewName</a></code> | <code>string</code> | The ViewName component. |
 
 ---
@@ -2750,6 +2751,18 @@ AWS region.
 
 ---
 
+##### `viewId`<sup>Required</sup> <a name="viewId" id="@cdk_utils/iam.cloudwatch.CloudWatchViewArnComponents.property.viewId"></a>
+
+```typescript
+public readonly viewId: string;
+```
+
+- *Type:* string
+
+The ViewId component.
+
+---
+
 ##### `viewName`<sup>Required</sup> <a name="viewName" id="@cdk_utils/iam.cloudwatch.CloudWatchViewArnComponents.property.viewName"></a>
 
 ```typescript
@@ -2778,10 +2791,23 @@ const cloudWatchViewArnProps: cloudwatch.CloudWatchViewArnProps = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchViewArnProps.property.viewId">viewId</a></code> | <code>string</code> | The ViewId component of the ARN. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchViewArnProps.property.viewName">viewName</a></code> | <code>string</code> | The ViewName component of the ARN. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchViewArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchViewArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchViewArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `viewId`<sup>Required</sup> <a name="viewId" id="@cdk_utils/iam.cloudwatch.CloudWatchViewArnProps.property.viewId"></a>
+
+```typescript
+public readonly viewId: string;
+```
+
+- *Type:* string
+
+The ViewId component of the ARN.
 
 ---
 
@@ -2952,6 +2978,7 @@ new cloudwatch.CloudWatchActions()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DescribeAlarmsForMetric">DescribeAlarmsForMetric</a></code> | <code>string</code> | [Read] cloudwatch:DescribeAlarmsForMetric. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DescribeAnomalyDetectors">DescribeAnomalyDetectors</a></code> | <code>string</code> | [Read] cloudwatch:DescribeAnomalyDetectors. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DescribeInsightRules">DescribeInsightRules</a></code> | <code>string</code> | [Read] cloudwatch:DescribeInsightRules. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DetectGroupOutliers">DetectGroupOutliers</a></code> | <code>string</code> | [Read] cloudwatch:DetectGroupOutliers. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DisableAlarmActions">DisableAlarmActions</a></code> | <code>string</code> | [Write] cloudwatch:DisableAlarmActions. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DisableInsightRules">DisableInsightRules</a></code> | <code>string</code> | [Write] cloudwatch:DisableInsightRules. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.EnableAlarmActions">EnableAlarmActions</a></code> | <code>string</code> | [Write] cloudwatch:EnableAlarmActions. |
@@ -4074,6 +4101,18 @@ public readonly DescribeInsightRules: string;
 - *Type:* string
 
 [Read] cloudwatch:DescribeInsightRules.
+
+---
+
+##### `DetectGroupOutliers`<sup>Required</sup> <a name="DetectGroupOutliers" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DetectGroupOutliers"></a>
+
+```typescript
+public readonly DetectGroupOutliers: string;
+```
+
+- *Type:* string
+
+[Read] cloudwatch:DetectGroupOutliers.
 
 ---
 
