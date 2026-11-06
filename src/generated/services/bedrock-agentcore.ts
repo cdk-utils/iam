@@ -401,6 +401,8 @@ export class BedrockAgentcoreActions {
 	static readonly InvokeHarness = "bedrock-agentcore:InvokeHarness";
 	/** [Read] bedrock-agentcore:InvokeRegistryMcp */
 	static readonly InvokeRegistryMcp = "bedrock-agentcore:InvokeRegistryMcp";
+	/** [Write] bedrock-agentcore:InvokeWebAnswer */
+	static readonly InvokeWebAnswer = "bedrock-agentcore:InvokeWebAnswer";
 	/** [PermissionManagement] bedrock-agentcore:InvokeWebSearch */
 	static readonly InvokeWebSearch = "bedrock-agentcore:InvokeWebSearch";
 	/** [List] bedrock-agentcore:ListABTests */
@@ -827,6 +829,7 @@ export class BedrockAgentcoreActions {
 		BedrockAgentcoreActions.InvokeAgentRuntimeWithWebSocketStreamForUser,
 		BedrockAgentcoreActions.InvokeCodeInterpreter,
 		BedrockAgentcoreActions.InvokeHarness,
+		BedrockAgentcoreActions.InvokeWebAnswer,
 		BedrockAgentcoreActions.PassCapacityProvider,
 		BedrockAgentcoreActions.ProcessPayment,
 		BedrockAgentcoreActions.PutResourcePolicy,
@@ -1821,6 +1824,30 @@ export interface BedrockAgentcoreTokenVaultArnComponents {
 }
 
 /**
+ * Properties for building a web-answer ARN.
+ */
+export interface BedrockAgentcoreWebAnswerArnProps {
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a web-answer ARN.
+ */
+export interface BedrockAgentcoreWebAnswerArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+}
+
+/**
  * Properties for building a web-search ARN.
  */
 export interface BedrockAgentcoreWebSearchArnProps {
@@ -1964,6 +1991,8 @@ const RuntimeEndpointArnRegex =
 	/^arn:(?<partition>[^:]+):bedrock-agentcore:(?<region>[^:]*):(?<account>[^:]*):runtime\/(?<runtimeId>[^:/?]+)\/runtime-endpoint\/(?<name>[^:/?]+)$/;
 const TokenVaultArnRegex =
 	/^arn:(?<partition>[^:]+):bedrock-agentcore:(?<region>[^:]*):(?<account>[^:]*):token-vault\/(?<tokenVaultId>[^:/?]+)$/;
+const WebAnswerArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock-agentcore:(?<region>[^:]*):aws:tool\/web-answer\.v1$/;
 const WebSearchArnRegex =
 	/^arn:(?<partition>[^:]+):bedrock-agentcore:(?<region>[^:]*):(?<account>[^:]*):tool\/web-search\.v1$/;
 const WorkloadIdentityArnRegex =
@@ -2974,6 +3003,38 @@ export class BedrockAgentcoreResources {
 			region: match.groups.region,
 			account: match.groups.account,
 			tokenVaultId: match.groups!.tokenVaultId,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the web-answer resource.
+	 */
+	static webAnswer(props: BedrockAgentcoreWebAnswerArnProps): string {
+		return `arn:${props.partition ?? "aws"}:bedrock-agentcore:${props.region ?? "*"}:aws:tool/web-answer.v1`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the web-answer resource.
+	 */
+	static isValidWebAnswerArn(arn: string): boolean {
+		return WebAnswerArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a web-answer ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseWebAnswerArn(
+		arn: string,
+	): BedrockAgentcoreWebAnswerArnComponents {
+		const match = WebAnswerArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid web-answer ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
 		};
 	}
 

@@ -37,6 +37,7 @@ new agentaccess_mcp.AgentaccessMcpActions()
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.CallForwardedTool">CallForwardedTool</a></code> | <code>string</code> | [Write] agentaccess-mcp:CallForwardedTool. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.CheckConnectionStatus">CheckConnectionStatus</a></code> | <code>string</code> | [Read] agentaccess-mcp:CheckConnectionStatus. |
+| <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.CloseSession">CloseSession</a></code> | <code>string</code> | [Write] agentaccess-mcp:CloseSession. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.DoubleClick">DoubleClick</a></code> | <code>string</code> | [Write] agentaccess-mcp:DoubleClick. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.HoldKey">HoldKey</a></code> | <code>string</code> | [Write] agentaccess-mcp:HoldKey. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.InvokeMcp">InvokeMcp</a></code> | <code>string</code> | [Write] agentaccess-mcp:InvokeMcp. |
@@ -162,6 +163,18 @@ public readonly CheckConnectionStatus: string;
 - *Type:* string
 
 [Read] agentaccess-mcp:CheckConnectionStatus.
+
+---
+
+##### `CloseSession`<sup>Required</sup> <a name="CloseSession" id="@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.CloseSession"></a>
+
+```typescript
+public readonly CloseSession: string;
+```
+
+- *Type:* string
+
+[Write] agentaccess-mcp:CloseSession.
 
 ---
 
@@ -420,6 +433,7 @@ Generates a condition block for `agentaccess-mcp:StackArn`.
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.actionGetSessionInfoConditionKeys">actionGetSessionInfoConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetSessionInfo action. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.CallForwardedToolConditionKeys">CallForwardedToolConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CallForwardedTool action. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.CheckConnectionStatusConditionKeys">CheckConnectionStatusConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CheckConnectionStatus action. |
+| <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.CloseSessionConditionKeys">CloseSessionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CloseSession action. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.DoubleClickConditionKeys">DoubleClickConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DoubleClick action. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.HoldKeyConditionKeys">HoldKeyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the HoldKey action. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.InvokeMcpConditionKeys">InvokeMcpConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the InvokeMcp action. |
@@ -485,6 +499,18 @@ public readonly CheckConnectionStatusConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the CheckConnectionStatus action.
+
+---
+
+##### `CloseSessionConditionKeys`<sup>Required</sup> <a name="CloseSessionConditionKeys" id="@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.CloseSessionConditionKeys"></a>
+
+```typescript
+public readonly CloseSessionConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CloseSession action.
 
 ---
 

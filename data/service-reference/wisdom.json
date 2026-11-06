@@ -3450,6 +3450,26 @@
       ]
     },
     {
+      "Name": "RegisterAssistantReplicaKey",
+      "SDK": [
+        {
+          "Name": "qconnect",
+          "Method": "register_assistant_replica_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RegisterKnowledgeBaseReplicaKey",
+      "SDK": [
+        {
+          "Name": "qconnect",
+          "Method": "register_knowledge_base_replica_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "RemoveAssistantAIAgent",
       "AuthorizedActions": [
         {

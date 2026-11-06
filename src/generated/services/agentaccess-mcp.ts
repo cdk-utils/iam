@@ -17,6 +17,8 @@ export class AgentaccessMcpActions {
 	/** [Read] agentaccess-mcp:CheckConnectionStatus */
 	static readonly CheckConnectionStatus =
 		"agentaccess-mcp:CheckConnectionStatus";
+	/** [Write] agentaccess-mcp:CloseSession */
+	static readonly CloseSession = "agentaccess-mcp:CloseSession";
 	/** [Write] agentaccess-mcp:DoubleClick */
 	static readonly DoubleClick = "agentaccess-mcp:DoubleClick";
 	/** [Read] agentaccess-mcp:GetScreenshot */
@@ -63,6 +65,7 @@ export class AgentaccessMcpActions {
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
 		AgentaccessMcpActions.CallForwardedTool,
+		AgentaccessMcpActions.CloseSession,
 		AgentaccessMcpActions.DoubleClick,
 		AgentaccessMcpActions.HoldKey,
 		AgentaccessMcpActions.InvokeMcp,
@@ -98,6 +101,10 @@ export class AgentaccessMcpConditions {
 	];
 	/** Condition keys applicable to the CheckConnectionStatus action. */
 	static readonly CheckConnectionStatusConditionKeys: string[] = [
+		"agentaccess-mcp:StackArn",
+	];
+	/** Condition keys applicable to the CloseSession action. */
+	static readonly CloseSessionConditionKeys: string[] = [
 		"agentaccess-mcp:StackArn",
 	];
 	/** Condition keys applicable to the DoubleClick action. */

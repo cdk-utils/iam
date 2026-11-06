@@ -2355,6 +2355,7 @@ export class SSMOperations {
 	];
 	/** IAM actions required for the StartExecutionPreview API call. */
 	static readonly StartExecutionPreview: string[] = [
+		"ssm:AddTagsToResource",
 		"ssm:StartExecutionPreview",
 	];
 	/** IAM actions required for the StartSession API call. */

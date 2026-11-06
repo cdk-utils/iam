@@ -3,6 +3,126 @@
 
 ## Structs <a name="Structs" id="Structs"></a>
 
+### PaymentsConnectedaccountArnComponents <a name="PaymentsConnectedaccountArnComponents" id="@cdk_utils/iam.payments.PaymentsConnectedaccountArnComponents"></a>
+
+Parsed components of a connectedaccount ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.payments.PaymentsConnectedaccountArnComponents.Initializer"></a>
+
+```typescript
+import { payments } from '@cdk_utils/iam'
+
+const paymentsConnectedaccountArnComponents: payments.PaymentsConnectedaccountArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.payments.PaymentsConnectedaccountArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.payments.PaymentsConnectedaccountArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.payments.PaymentsConnectedaccountArnComponents.property.resourceId">resourceId</a></code> | <code>string</code> | The ResourceId component. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.payments.PaymentsConnectedaccountArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.payments.PaymentsConnectedaccountArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `resourceId`<sup>Required</sup> <a name="resourceId" id="@cdk_utils/iam.payments.PaymentsConnectedaccountArnComponents.property.resourceId"></a>
+
+```typescript
+public readonly resourceId: string;
+```
+
+- *Type:* string
+
+The ResourceId component.
+
+---
+
+### PaymentsConnectedaccountArnProps <a name="PaymentsConnectedaccountArnProps" id="@cdk_utils/iam.payments.PaymentsConnectedaccountArnProps"></a>
+
+Properties for building a connectedaccount ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.payments.PaymentsConnectedaccountArnProps.Initializer"></a>
+
+```typescript
+import { payments } from '@cdk_utils/iam'
+
+const paymentsConnectedaccountArnProps: payments.PaymentsConnectedaccountArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.payments.PaymentsConnectedaccountArnProps.property.resourceId">resourceId</a></code> | <code>string</code> | The ResourceId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.payments.PaymentsConnectedaccountArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.payments.PaymentsConnectedaccountArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+
+---
+
+##### `resourceId`<sup>Required</sup> <a name="resourceId" id="@cdk_utils/iam.payments.PaymentsConnectedaccountArnProps.property.resourceId"></a>
+
+```typescript
+public readonly resourceId: string;
+```
+
+- *Type:* string
+
+The ResourceId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.payments.PaymentsConnectedaccountArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.payments.PaymentsConnectedaccountArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
 ### PaymentsPaymentInstrumentArnComponents <a name="PaymentsPaymentInstrumentArnComponents" id="@cdk_utils/iam.payments.PaymentsPaymentInstrumentArnComponents"></a>
 
 Parsed components of a payment-instrument ARN.
@@ -150,6 +270,7 @@ new payments.PaymentsActions()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.payments.PaymentsActions.property.AcceptFinancingApplicationTerms">AcceptFinancingApplicationTerms</a></code> | <code>string</code> | [Write] payments:AcceptFinancingApplicationTerms. |
+| <code><a href="#@cdk_utils/iam.payments.PaymentsActions.property.actionGetConnectedAccount">actionGetConnectedAccount</a></code> | <code>string</code> | [Read] payments:GetConnectedAccount. |
 | <code><a href="#@cdk_utils/iam.payments.PaymentsActions.property.actionGetFinancingApplication">actionGetFinancingApplication</a></code> | <code>string</code> | [Read] payments:GetFinancingApplication. |
 | <code><a href="#@cdk_utils/iam.payments.PaymentsActions.property.actionGetFinancingLine">actionGetFinancingLine</a></code> | <code>string</code> | [Read] payments:GetFinancingLine. |
 | <code><a href="#@cdk_utils/iam.payments.PaymentsActions.property.actionGetFinancingLineWithdrawal">actionGetFinancingLineWithdrawal</a></code> | <code>string</code> | [Read] payments:GetFinancingLineWithdrawal. |
@@ -161,9 +282,12 @@ new payments.PaymentsActions()
 | <code><a href="#@cdk_utils/iam.payments.PaymentsActions.property.AllReadActions">AllReadActions</a></code> | <code>string[]</code> | All read-level actions. |
 | <code><a href="#@cdk_utils/iam.payments.PaymentsActions.property.AllTaggingActions">AllTaggingActions</a></code> | <code>string[]</code> | All tagging-level actions. |
 | <code><a href="#@cdk_utils/iam.payments.PaymentsActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
+| <code><a href="#@cdk_utils/iam.payments.PaymentsActions.property.CreateConnectedAccount">CreateConnectedAccount</a></code> | <code>string</code> | [Write] payments:CreateConnectedAccount. |
 | <code><a href="#@cdk_utils/iam.payments.PaymentsActions.property.CreateFinancingApplication">CreateFinancingApplication</a></code> | <code>string</code> | [Write] payments:CreateFinancingApplication. |
 | <code><a href="#@cdk_utils/iam.payments.PaymentsActions.property.CreatePaymentInstrument">CreatePaymentInstrument</a></code> | <code>string</code> | [Write] payments:CreatePaymentInstrument. |
+| <code><a href="#@cdk_utils/iam.payments.PaymentsActions.property.DeleteConnectedAccount">DeleteConnectedAccount</a></code> | <code>string</code> | [Write] payments:DeleteConnectedAccount. |
 | <code><a href="#@cdk_utils/iam.payments.PaymentsActions.property.DeletePaymentInstrument">DeletePaymentInstrument</a></code> | <code>string</code> | [Write] payments:DeletePaymentInstrument. |
+| <code><a href="#@cdk_utils/iam.payments.PaymentsActions.property.ListConnectedAccounts">ListConnectedAccounts</a></code> | <code>string</code> | [List] payments:ListConnectedAccounts. |
 | <code><a href="#@cdk_utils/iam.payments.PaymentsActions.property.ListFinancingApplications">ListFinancingApplications</a></code> | <code>string</code> | [List] payments:ListFinancingApplications. |
 | <code><a href="#@cdk_utils/iam.payments.PaymentsActions.property.ListFinancingLines">ListFinancingLines</a></code> | <code>string</code> | [List] payments:ListFinancingLines. |
 | <code><a href="#@cdk_utils/iam.payments.PaymentsActions.property.ListFinancingLineWithdrawals">ListFinancingLineWithdrawals</a></code> | <code>string</code> | [List] payments:ListFinancingLineWithdrawals. |
@@ -191,6 +315,18 @@ public readonly AcceptFinancingApplicationTerms: string;
 - *Type:* string
 
 [Write] payments:AcceptFinancingApplicationTerms.
+
+---
+
+##### `actionGetConnectedAccount`<sup>Required</sup> <a name="actionGetConnectedAccount" id="@cdk_utils/iam.payments.PaymentsActions.property.actionGetConnectedAccount"></a>
+
+```typescript
+public readonly actionGetConnectedAccount: string;
+```
+
+- *Type:* string
+
+[Read] payments:GetConnectedAccount.
 
 ---
 
@@ -326,6 +462,18 @@ All write-level actions.
 
 ---
 
+##### `CreateConnectedAccount`<sup>Required</sup> <a name="CreateConnectedAccount" id="@cdk_utils/iam.payments.PaymentsActions.property.CreateConnectedAccount"></a>
+
+```typescript
+public readonly CreateConnectedAccount: string;
+```
+
+- *Type:* string
+
+[Write] payments:CreateConnectedAccount.
+
+---
+
 ##### `CreateFinancingApplication`<sup>Required</sup> <a name="CreateFinancingApplication" id="@cdk_utils/iam.payments.PaymentsActions.property.CreateFinancingApplication"></a>
 
 ```typescript
@@ -350,6 +498,18 @@ public readonly CreatePaymentInstrument: string;
 
 ---
 
+##### `DeleteConnectedAccount`<sup>Required</sup> <a name="DeleteConnectedAccount" id="@cdk_utils/iam.payments.PaymentsActions.property.DeleteConnectedAccount"></a>
+
+```typescript
+public readonly DeleteConnectedAccount: string;
+```
+
+- *Type:* string
+
+[Write] payments:DeleteConnectedAccount.
+
+---
+
 ##### `DeletePaymentInstrument`<sup>Required</sup> <a name="DeletePaymentInstrument" id="@cdk_utils/iam.payments.PaymentsActions.property.DeletePaymentInstrument"></a>
 
 ```typescript
@@ -359,6 +519,18 @@ public readonly DeletePaymentInstrument: string;
 - *Type:* string
 
 [Write] payments:DeletePaymentInstrument.
+
+---
+
+##### `ListConnectedAccounts`<sup>Required</sup> <a name="ListConnectedAccounts" id="@cdk_utils/iam.payments.PaymentsActions.property.ListConnectedAccounts"></a>
+
+```typescript
+public readonly ListConnectedAccounts: string;
+```
+
+- *Type:* string
+
+[List] payments:ListConnectedAccounts.
 
 ---
 
@@ -626,6 +798,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.payments.PaymentsConditions.property.AWS_REQUEST_TAG">AWS_REQUEST_TAG</a></code> | <code>string</code> | Condition key: aws:RequestTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.payments.PaymentsConditions.property.AWS_RESOURCE_TAG">AWS_RESOURCE_TAG</a></code> | <code>string</code> | Condition key: aws:ResourceTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.payments.PaymentsConditions.property.AWS_TAG_KEYS">AWS_TAG_KEYS</a></code> | <code>string</code> | Condition key: aws:TagKeys (ArrayOfString). |
+| <code><a href="#@cdk_utils/iam.payments.PaymentsConditions.property.CreateConnectedAccountConditionKeys">CreateConnectedAccountConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateConnectedAccount action. |
 | <code><a href="#@cdk_utils/iam.payments.PaymentsConditions.property.CreatePaymentInstrumentConditionKeys">CreatePaymentInstrumentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreatePaymentInstrument action. |
 | <code><a href="#@cdk_utils/iam.payments.PaymentsConditions.property.TagResourceConditionKeys">TagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TagResource action. |
 | <code><a href="#@cdk_utils/iam.payments.PaymentsConditions.property.UntagResourceConditionKeys">UntagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UntagResource action. |
@@ -665,6 +838,18 @@ public readonly AWS_TAG_KEYS: string;
 - *Type:* string
 
 Condition key: aws:TagKeys (ArrayOfString).
+
+---
+
+##### `CreateConnectedAccountConditionKeys`<sup>Required</sup> <a name="CreateConnectedAccountConditionKeys" id="@cdk_utils/iam.payments.PaymentsConditions.property.CreateConnectedAccountConditionKeys"></a>
+
+```typescript
+public readonly CreateConnectedAccountConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateConnectedAccount action.
 
 ---
 
@@ -726,9 +911,44 @@ new payments.PaymentsResources()
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdk_utils/iam.payments.PaymentsResources.connectedaccount">connectedaccount</a></code> | Builds an ARN for the connectedaccount resource. |
+| <code><a href="#@cdk_utils/iam.payments.PaymentsResources.isValidConnectedaccountArn">isValidConnectedaccountArn</a></code> | Validates whether a string is a valid ARN for the connectedaccount resource. |
 | <code><a href="#@cdk_utils/iam.payments.PaymentsResources.isValidPaymentInstrumentArn">isValidPaymentInstrumentArn</a></code> | Validates whether a string is a valid ARN for the payment-instrument resource. |
+| <code><a href="#@cdk_utils/iam.payments.PaymentsResources.parseConnectedaccountArn">parseConnectedaccountArn</a></code> | Parses a connectedaccount ARN into its components. |
 | <code><a href="#@cdk_utils/iam.payments.PaymentsResources.parsePaymentInstrumentArn">parsePaymentInstrumentArn</a></code> | Parses a payment-instrument ARN into its components. |
 | <code><a href="#@cdk_utils/iam.payments.PaymentsResources.paymentInstrument">paymentInstrument</a></code> | Builds an ARN for the payment-instrument resource. |
+
+---
+
+##### `connectedaccount` <a name="connectedaccount" id="@cdk_utils/iam.payments.PaymentsResources.connectedaccount"></a>
+
+```typescript
+import { payments } from '@cdk_utils/iam'
+
+payments.PaymentsResources.connectedaccount(props: PaymentsConnectedaccountArnProps)
+```
+
+Builds an ARN for the connectedaccount resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.payments.PaymentsResources.connectedaccount.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.payments.PaymentsConnectedaccountArnProps">PaymentsConnectedaccountArnProps</a>
+
+---
+
+##### `isValidConnectedaccountArn` <a name="isValidConnectedaccountArn" id="@cdk_utils/iam.payments.PaymentsResources.isValidConnectedaccountArn"></a>
+
+```typescript
+import { payments } from '@cdk_utils/iam'
+
+payments.PaymentsResources.isValidConnectedaccountArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the connectedaccount resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.payments.PaymentsResources.isValidConnectedaccountArn.parameter.arn"></a>
+
+- *Type:* string
 
 ---
 
@@ -743,6 +963,22 @@ payments.PaymentsResources.isValidPaymentInstrumentArn(arn: string)
 Validates whether a string is a valid ARN for the payment-instrument resource.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.payments.PaymentsResources.isValidPaymentInstrumentArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseConnectedaccountArn` <a name="parseConnectedaccountArn" id="@cdk_utils/iam.payments.PaymentsResources.parseConnectedaccountArn"></a>
+
+```typescript
+import { payments } from '@cdk_utils/iam'
+
+payments.PaymentsResources.parseConnectedaccountArn(arn: string)
+```
+
+Parses a connectedaccount ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.payments.PaymentsResources.parseConnectedaccountArn.parameter.arn"></a>
 
 - *Type:* string
 
