@@ -87,6 +87,8 @@ export class AidevopsActions {
 	static readonly actionGetBacklogTask = "aidevops:GetBacklogTask";
 	/** [Read] aidevops:GetCatalogCapability */
 	static readonly actionGetCatalogCapability = "aidevops:GetCatalogCapability";
+	/** [Read] aidevops:GetChat */
+	static readonly actionGetChat = "aidevops:GetChat";
 	/** [Read] aidevops:GetKnowledgeItem */
 	static readonly actionGetKnowledgeItem = "aidevops:GetKnowledgeItem";
 	/** [Read] aidevops:GetOperatorApp */
@@ -179,6 +181,8 @@ export class AidevopsActions {
 	static readonly UpdateAssociation = "aidevops:UpdateAssociation";
 	/** [Write] aidevops:UpdateBacklogTask */
 	static readonly UpdateBacklogTask = "aidevops:UpdateBacklogTask";
+	/** [Write] aidevops:UpdateChat */
+	static readonly UpdateChat = "aidevops:UpdateChat";
 	/** [Write] aidevops:UpdateGoal */
 	static readonly UpdateGoal = "aidevops:UpdateGoal";
 	/** [Write] aidevops:UpdateKnowledgeItem */
@@ -209,6 +213,7 @@ export class AidevopsActions {
 		AidevopsActions.actionGetAssociation,
 		AidevopsActions.actionGetBacklogTask,
 		AidevopsActions.actionGetCatalogCapability,
+		AidevopsActions.actionGetChat,
 		AidevopsActions.actionGetKnowledgeItem,
 		AidevopsActions.actionGetOperatorApp,
 		AidevopsActions.actionGetRecommendation,
@@ -255,6 +260,7 @@ export class AidevopsActions {
 		AidevopsActions.UpdateAssetFile,
 		AidevopsActions.UpdateAssociation,
 		AidevopsActions.UpdateBacklogTask,
+		AidevopsActions.UpdateChat,
 		AidevopsActions.UpdateGoal,
 		AidevopsActions.UpdateKnowledgeItem,
 		AidevopsActions.UpdateOperatorAppIdpConfig,

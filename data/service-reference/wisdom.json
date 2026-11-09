@@ -1486,6 +1486,7 @@
       "Name": "RegisterAssistantReplicaKey",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3445,6 +3446,32 @@
         {
           "Name": "wisdom",
           "Method": "query_assistant",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RegisterAssistantReplicaKey",
+      "AuthorizedActions": [
+        {
+          "Name": "RegisterAssistantReplicaKey",
+          "Service": "wisdom"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "qconnect",
+          "Method": "register_assistant_replica_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RegisterKnowledgeBaseReplicaKey",
+      "SDK": [
+        {
+          "Name": "qconnect",
+          "Method": "register_knowledge_base_replica_key",
           "Package": "Boto3"
         }
       ]

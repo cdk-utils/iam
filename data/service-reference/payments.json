@@ -18,6 +18,25 @@
       }
     },
     {
+      "Name": "CreateConnectedAccount",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "CreateFinancingApplication",
       "Annotations": {
         "Properties": {
@@ -52,6 +71,26 @@
       }
     },
     {
+      "Name": "DeleteConnectedAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connectedaccount"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "DeletePaymentInstrument",
       "Annotations": {
         "Properties": {
@@ -61,6 +100,26 @@
           "IsWrite": true
         }
       },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetConnectedAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connectedaccount"
+        }
+      ],
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -151,6 +210,21 @@
       "Annotations": {
         "Properties": {
           "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListConnectedAccounts",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
           "IsWrite": false
@@ -278,6 +352,9 @@
       },
       "Resources": [
         {
+          "Name": "connectedaccount"
+        },
+        {
           "Name": "payment-instrument"
         }
       ],
@@ -317,6 +394,9 @@
       },
       "Resources": [
         {
+          "Name": "connectedaccount"
+        },
+        {
           "Name": "payment-instrument"
         }
       ],
@@ -339,6 +419,9 @@
         }
       },
       "Resources": [
+        {
+          "Name": "connectedaccount"
+        },
         {
           "Name": "payment-instrument"
         }
@@ -415,6 +498,15 @@
     }
   ],
   "Resources": [
+    {
+      "Name": "connectedaccount",
+      "ARNFormats": [
+        "arn:${Partition}:payments::${Account}:connectedaccount/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
     {
       "Name": "payment-instrument",
       "ARNFormats": [

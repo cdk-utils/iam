@@ -61,6 +61,11 @@
           "IsWrite": true
         }
       },
+      "Resources": [
+        {
+          "Name": "session"
+        }
+      ],
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -78,6 +83,30 @@
       "Name": "ssm:SourceInstanceARN",
       "Types": [
         "ARN"
+      ]
+    },
+    {
+      "Name": "ssm:resourceTag/aws:ssmmessages:session-id",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "ssm:resourceTag/aws:ssmmessages:target-id",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "session",
+      "ARNFormats": [
+        "arn:${Partition}:ssm:${Region}:${Account}:session/${SessionId}"
+      ],
+      "ConditionKeys": [
+        "ssm:resourceTag/aws:ssmmessages:session-id",
+        "ssm:resourceTag/aws:ssmmessages:target-id"
       ]
     }
   ],
