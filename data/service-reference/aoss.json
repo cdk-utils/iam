@@ -444,7 +444,6 @@
       "Name": "DeleteIndex",
       "Annotations": {
         "Properties": {
-          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,

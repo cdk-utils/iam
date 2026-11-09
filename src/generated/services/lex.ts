@@ -1168,7 +1168,11 @@ export class LexOperations {
 		"lex:DescribeBotRecommendation",
 	];
 	/** IAM actions required for the DescribeBotReplica API call. */
-	static readonly DescribeBotReplica: string[] = ["lex:DescribeBotReplica"];
+	static readonly DescribeBotReplica: string[] = [
+		"lex:DescribeBotAlias",
+		"lex:DescribeBotReplica",
+		"lex:DescribeBotVersion",
+	];
 	/** IAM actions required for the DescribeBotResourceGeneration API call. */
 	static readonly DescribeBotResourceGeneration: string[] = [
 		"lex:DescribeBotResourceGeneration",

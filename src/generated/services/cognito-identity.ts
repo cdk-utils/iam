@@ -292,6 +292,7 @@ export class CognitoIdentityConditions {
 	/** Condition keys applicable to the CreateIdentityPool action. */
 	static readonly CreateIdentityPoolConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
+		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteIdentities action. */

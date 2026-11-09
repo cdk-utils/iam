@@ -7766,9 +7766,12 @@ new glue.GlueConditions()
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdk_utils/iam.glue.GlueConditions.connectionType">connectionType</a></code> | Generates a condition block for `glue:ConnectionType`. |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.credentialIssuingService">credentialIssuingService</a></code> | Generates a condition block for `glue:CredentialIssuingService`. |
+| <code><a href="#@cdk_utils/iam.glue.GlueConditions.credentialVendingMode">credentialVendingMode</a></code> | Generates a condition block for `glue:CredentialVendingMode`. |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.enabledForRedshiftAutoDiscovery">enabledForRedshiftAutoDiscovery</a></code> | Generates a condition block for `glue:EnabledForRedshiftAutoDiscovery`. |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.federatedAuthorizationSource">federatedAuthorizationSource</a></code> | Generates a condition block for `glue:FederatedAuthorizationSource`. |
+| <code><a href="#@cdk_utils/iam.glue.GlueConditions.instanceURL">instanceURL</a></code> | Generates a condition block for `glue:InstanceUrl`. |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.lakeFormationPermissions">lakeFormationPermissions</a></code> | Generates a condition block for `glue:LakeFormationPermissions`. |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.requestTag">requestTag</a></code> | Generates a condition block for `aws:RequestTag/${TagKey}`. |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.resourceTag">resourceTag</a></code> | Generates a condition block for `aws:ResourceTag/${TagKey}`. |
@@ -7777,6 +7780,22 @@ new glue.GlueConditions()
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.subnetIds">subnetIds</a></code> | Generates a condition block for `glue:SubnetIds`. |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.tagKeys">tagKeys</a></code> | Generates a condition block for `aws:TagKeys`. |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.vpcIds">vpcIds</a></code> | Generates a condition block for `glue:VpcIds`. |
+
+---
+
+##### `connectionType` <a name="connectionType" id="@cdk_utils/iam.glue.GlueConditions.connectionType"></a>
+
+```typescript
+import { glue } from '@cdk_utils/iam'
+
+glue.GlueConditions.connectionType(value: string)
+```
+
+Generates a condition block for `glue:ConnectionType`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.glue.GlueConditions.connectionType.parameter.value"></a>
+
+- *Type:* string
 
 ---
 
@@ -7791,6 +7810,22 @@ glue.GlueConditions.credentialIssuingService(value: string)
 Generates a condition block for `glue:CredentialIssuingService`.
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.glue.GlueConditions.credentialIssuingService.parameter.value"></a>
+
+- *Type:* string
+
+---
+
+##### `credentialVendingMode` <a name="credentialVendingMode" id="@cdk_utils/iam.glue.GlueConditions.credentialVendingMode"></a>
+
+```typescript
+import { glue } from '@cdk_utils/iam'
+
+glue.GlueConditions.credentialVendingMode(value: string)
+```
+
+Generates a condition block for `glue:CredentialVendingMode`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.glue.GlueConditions.credentialVendingMode.parameter.value"></a>
 
 - *Type:* string
 
@@ -7823,6 +7858,22 @@ glue.GlueConditions.federatedAuthorizationSource(value: string)
 Generates a condition block for `glue:FederatedAuthorizationSource`.
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.glue.GlueConditions.federatedAuthorizationSource.parameter.value"></a>
+
+- *Type:* string
+
+---
+
+##### `instanceURL` <a name="instanceURL" id="@cdk_utils/iam.glue.GlueConditions.instanceURL"></a>
+
+```typescript
+import { glue } from '@cdk_utils/iam'
+
+glue.GlueConditions.instanceURL(value: string)
+```
+
+Generates a condition block for `glue:InstanceUrl`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.glue.GlueConditions.instanceURL.parameter.value"></a>
 
 - *Type:* string
 
@@ -7989,6 +8040,7 @@ Generates a condition block for `glue:VpcIds`.
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.BatchDeleteTableVersionConditionKeys">BatchDeleteTableVersionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the BatchDeleteTableVersion action. |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.BatchGetPartitionConditionKeys">BatchGetPartitionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the BatchGetPartition action. |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.BatchUpdatePartitionConditionKeys">BatchUpdatePartitionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the BatchUpdatePartition action. |
+| <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.CONNECTION_TYPE">CONNECTION_TYPE</a></code> | <code>string</code> | Condition key: glue:ConnectionType (String). |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.CreateBlueprintConditionKeys">CreateBlueprintConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateBlueprint action. |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.CreateCatalogConditionKeys">CreateCatalogConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateCatalog action. |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.CreateConnectionConditionKeys">CreateConnectionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateConnection action. |
@@ -8012,6 +8064,7 @@ Generates a condition block for `glue:VpcIds`.
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.CreateUserDefinedFunctionConditionKeys">CreateUserDefinedFunctionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateUserDefinedFunction action. |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.CreateWorkflowConditionKeys">CreateWorkflowConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateWorkflow action. |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.CREDENTIAL_ISSUING_SERVICE">CREDENTIAL_ISSUING_SERVICE</a></code> | <code>string</code> | Condition key: glue:CredentialIssuingService (String). |
+| <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.CREDENTIAL_VENDING_MODE">CREDENTIAL_VENDING_MODE</a></code> | <code>string</code> | Condition key: glue:CredentialVendingMode (String). |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.DeleteCatalogConditionKeys">DeleteCatalogConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteCatalog action. |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.DeleteColumnStatisticsForPartitionConditionKeys">DeleteColumnStatisticsForPartitionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteColumnStatisticsForPartition action. |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.DeleteColumnStatisticsForTableConditionKeys">DeleteColumnStatisticsForTableConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteColumnStatisticsForTable action. |
@@ -8028,6 +8081,7 @@ Generates a condition block for `glue:VpcIds`.
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.FederateAuthorizationConditionKeys">FederateAuthorizationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the FederateAuthorization action. |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.FEDERATED_AUTHORIZATION_SOURCE">FEDERATED_AUTHORIZATION_SOURCE</a></code> | <code>string</code> | Condition key: glue:FederatedAuthorizationSource (String). |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.ImportCatalogToGlueConditionKeys">ImportCatalogToGlueConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ImportCatalogToGlue action. |
+| <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.INSTANCE_URL">INSTANCE_URL</a></code> | <code>string</code> | Condition key: glue:InstanceUrl (String). |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.LAKE_FORMATION_PERMISSIONS">LAKE_FORMATION_PERMISSIONS</a></code> | <code>string</code> | Condition key: glue:LakeFormationPermissions (String). |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.ModifyIntegrationConditionKeys">ModifyIntegrationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ModifyIntegration action. |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.RegisterConnectionTypeConditionKeys">RegisterConnectionTypeConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the RegisterConnectionType action. |
@@ -8387,6 +8441,18 @@ Condition keys applicable to the BatchUpdatePartition action.
 
 ---
 
+##### `CONNECTION_TYPE`<sup>Required</sup> <a name="CONNECTION_TYPE" id="@cdk_utils/iam.glue.GlueConditions.property.CONNECTION_TYPE"></a>
+
+```typescript
+public readonly CONNECTION_TYPE: string;
+```
+
+- *Type:* string
+
+Condition key: glue:ConnectionType (String).
+
+---
+
 ##### `CreateBlueprintConditionKeys`<sup>Required</sup> <a name="CreateBlueprintConditionKeys" id="@cdk_utils/iam.glue.GlueConditions.property.CreateBlueprintConditionKeys"></a>
 
 ```typescript
@@ -8663,6 +8729,18 @@ Condition key: glue:CredentialIssuingService (String).
 
 ---
 
+##### `CREDENTIAL_VENDING_MODE`<sup>Required</sup> <a name="CREDENTIAL_VENDING_MODE" id="@cdk_utils/iam.glue.GlueConditions.property.CREDENTIAL_VENDING_MODE"></a>
+
+```typescript
+public readonly CREDENTIAL_VENDING_MODE: string;
+```
+
+- *Type:* string
+
+Condition key: glue:CredentialVendingMode (String).
+
+---
+
 ##### `DeleteCatalogConditionKeys`<sup>Required</sup> <a name="DeleteCatalogConditionKeys" id="@cdk_utils/iam.glue.GlueConditions.property.DeleteCatalogConditionKeys"></a>
 
 ```typescript
@@ -8852,6 +8930,18 @@ public readonly ImportCatalogToGlueConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the ImportCatalogToGlue action.
+
+---
+
+##### `INSTANCE_URL`<sup>Required</sup> <a name="INSTANCE_URL" id="@cdk_utils/iam.glue.GlueConditions.property.INSTANCE_URL"></a>
+
+```typescript
+public readonly INSTANCE_URL: string;
+```
+
+- *Type:* string
+
+Condition key: glue:InstanceUrl (String).
 
 ---
 
@@ -9306,6 +9396,7 @@ new glue.GlueOperations()
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetJobRun">opGetJobRun</a></code> | <code>string[]</code> | IAM actions required for the GetJobRun API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetJobRuns">opGetJobRuns</a></code> | <code>string[]</code> | IAM actions required for the GetJobRuns API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetJobs">opGetJobs</a></code> | <code>string[]</code> | IAM actions required for the GetJobs API call. |
+| <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetJobUpgradeAnalysis">opGetJobUpgradeAnalysis</a></code> | <code>string[]</code> | IAM actions required for the GetJobUpgradeAnalysis API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetMapping">opGetMapping</a></code> | <code>string[]</code> | IAM actions required for the GetMapping API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetMaterializedViewRefreshTaskRun">opGetMaterializedViewRefreshTaskRun</a></code> | <code>string[]</code> | IAM actions required for the GetMaterializedViewRefreshTaskRun API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetMLTaskRun">opGetMLTaskRun</a></code> | <code>string[]</code> | IAM actions required for the GetMLTaskRun API call. |
@@ -9378,6 +9469,7 @@ new glue.GlueOperations()
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.StartExportLabelsTaskRun">StartExportLabelsTaskRun</a></code> | <code>string[]</code> | IAM actions required for the StartExportLabelsTaskRun API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.StartImportLabelsTaskRun">StartImportLabelsTaskRun</a></code> | <code>string[]</code> | IAM actions required for the StartImportLabelsTaskRun API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.StartJobRun">StartJobRun</a></code> | <code>string[]</code> | IAM actions required for the StartJobRun API call. |
+| <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.StartJobUpgradeAnalysis">StartJobUpgradeAnalysis</a></code> | <code>string[]</code> | IAM actions required for the StartJobUpgradeAnalysis API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.StartMaterializedViewRefreshTaskRun">StartMaterializedViewRefreshTaskRun</a></code> | <code>string[]</code> | IAM actions required for the StartMaterializedViewRefreshTaskRun API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.StartMLEvaluationTaskRun">StartMLEvaluationTaskRun</a></code> | <code>string[]</code> | IAM actions required for the StartMLEvaluationTaskRun API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.StartMLLabelingSetGenerationTaskRun">StartMLLabelingSetGenerationTaskRun</a></code> | <code>string[]</code> | IAM actions required for the StartMLLabelingSetGenerationTaskRun API call. |
@@ -9387,6 +9479,7 @@ new glue.GlueOperations()
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.StopColumnStatisticsTaskRunSchedule">StopColumnStatisticsTaskRunSchedule</a></code> | <code>string[]</code> | IAM actions required for the StopColumnStatisticsTaskRunSchedule API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.StopCrawler">StopCrawler</a></code> | <code>string[]</code> | IAM actions required for the StopCrawler API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.StopCrawlerSchedule">StopCrawlerSchedule</a></code> | <code>string[]</code> | IAM actions required for the StopCrawlerSchedule API call. |
+| <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.StopJobUpgradeAnalysis">StopJobUpgradeAnalysis</a></code> | <code>string[]</code> | IAM actions required for the StopJobUpgradeAnalysis API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.StopMaterializedViewRefreshTaskRun">StopMaterializedViewRefreshTaskRun</a></code> | <code>string[]</code> | IAM actions required for the StopMaterializedViewRefreshTaskRun API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.StopSession">StopSession</a></code> | <code>string[]</code> | IAM actions required for the StopSession API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.StopTrigger">StopTrigger</a></code> | <code>string[]</code> | IAM actions required for the StopTrigger API call. |
@@ -11672,6 +11765,18 @@ IAM actions required for the GetJobs API call.
 
 ---
 
+##### `opGetJobUpgradeAnalysis`<sup>Required</sup> <a name="opGetJobUpgradeAnalysis" id="@cdk_utils/iam.glue.GlueOperations.property.opGetJobUpgradeAnalysis"></a>
+
+```typescript
+public readonly opGetJobUpgradeAnalysis: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetJobUpgradeAnalysis API call.
+
+---
+
 ##### `opGetMapping`<sup>Required</sup> <a name="opGetMapping" id="@cdk_utils/iam.glue.GlueOperations.property.opGetMapping"></a>
 
 ```typescript
@@ -12536,6 +12641,18 @@ IAM actions required for the StartJobRun API call.
 
 ---
 
+##### `StartJobUpgradeAnalysis`<sup>Required</sup> <a name="StartJobUpgradeAnalysis" id="@cdk_utils/iam.glue.GlueOperations.property.StartJobUpgradeAnalysis"></a>
+
+```typescript
+public readonly StartJobUpgradeAnalysis: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StartJobUpgradeAnalysis API call.
+
+---
+
 ##### `StartMaterializedViewRefreshTaskRun`<sup>Required</sup> <a name="StartMaterializedViewRefreshTaskRun" id="@cdk_utils/iam.glue.GlueOperations.property.StartMaterializedViewRefreshTaskRun"></a>
 
 ```typescript
@@ -12641,6 +12758,18 @@ public readonly StopCrawlerSchedule: string[];
 - *Type:* string[]
 
 IAM actions required for the StopCrawlerSchedule API call.
+
+---
+
+##### `StopJobUpgradeAnalysis`<sup>Required</sup> <a name="StopJobUpgradeAnalysis" id="@cdk_utils/iam.glue.GlueOperations.property.StopJobUpgradeAnalysis"></a>
+
+```typescript
+public readonly StopJobUpgradeAnalysis: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StopJobUpgradeAnalysis API call.
 
 ---
 

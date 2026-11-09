@@ -1004,6 +1004,7 @@ new aidevops.AidevopsActions()
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.actionGetAssociation">actionGetAssociation</a></code> | <code>string</code> | [Read] aidevops:GetAssociation. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.actionGetBacklogTask">actionGetBacklogTask</a></code> | <code>string</code> | [Read] aidevops:GetBacklogTask. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.actionGetCatalogCapability">actionGetCatalogCapability</a></code> | <code>string</code> | [Read] aidevops:GetCatalogCapability. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.actionGetChat">actionGetChat</a></code> | <code>string</code> | [Read] aidevops:GetChat. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.actionGetKnowledgeItem">actionGetKnowledgeItem</a></code> | <code>string</code> | [Read] aidevops:GetKnowledgeItem. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.actionGetOperatorApp">actionGetOperatorApp</a></code> | <code>string</code> | [Read] aidevops:GetOperatorApp. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.actionGetRecommendation">actionGetRecommendation</a></code> | <code>string</code> | [Read] aidevops:GetRecommendation. |
@@ -1081,6 +1082,7 @@ new aidevops.AidevopsActions()
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.UpdateAssetFile">UpdateAssetFile</a></code> | <code>string</code> | [Write] aidevops:UpdateAssetFile. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.UpdateAssociation">UpdateAssociation</a></code> | <code>string</code> | [Write] aidevops:UpdateAssociation. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.UpdateBacklogTask">UpdateBacklogTask</a></code> | <code>string</code> | [Write] aidevops:UpdateBacklogTask. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.UpdateChat">UpdateChat</a></code> | <code>string</code> | [Write] aidevops:UpdateChat. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.UpdateGoal">UpdateGoal</a></code> | <code>string</code> | [Write] aidevops:UpdateGoal. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.UpdateKnowledgeItem">UpdateKnowledgeItem</a></code> | <code>string</code> | [Write] aidevops:UpdateKnowledgeItem. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.UpdateOperatorAppIdpConfig">UpdateOperatorAppIdpConfig</a></code> | <code>string</code> | [Write] aidevops:UpdateOperatorAppIdpConfig. |
@@ -1196,6 +1198,18 @@ public readonly actionGetCatalogCapability: string;
 - *Type:* string
 
 [Read] aidevops:GetCatalogCapability.
+
+---
+
+##### `actionGetChat`<sup>Required</sup> <a name="actionGetChat" id="@cdk_utils/iam.aidevops.AidevopsActions.property.actionGetChat"></a>
+
+```typescript
+public readonly actionGetChat: string;
+```
+
+- *Type:* string
+
+[Read] aidevops:GetChat.
 
 ---
 
@@ -2120,6 +2134,18 @@ public readonly UpdateBacklogTask: string;
 - *Type:* string
 
 [Write] aidevops:UpdateBacklogTask.
+
+---
+
+##### `UpdateChat`<sup>Required</sup> <a name="UpdateChat" id="@cdk_utils/iam.aidevops.AidevopsActions.property.UpdateChat"></a>
+
+```typescript
+public readonly UpdateChat: string;
+```
+
+- *Type:* string
+
+[Write] aidevops:UpdateChat.
 
 ---
 
