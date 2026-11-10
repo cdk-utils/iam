@@ -6354,6 +6354,8 @@ export class SageMakerOperations {
 		"iam:PassRole",
 		"sagemaker:UpdateClusterSoftware",
 	];
+	/** IAM actions required for the CreateClusterExtension API call. */
+	static readonly CreateClusterExtension: string[] = ["sagemaker:AddTags"];
 	/** IAM actions required for the CreateClusterSchedulerConfig API call. */
 	static readonly CreateClusterSchedulerConfig: string[] = [
 		"sagemaker:AddTags",
@@ -6706,6 +6708,8 @@ export class SageMakerOperations {
 	static readonly DeleteAssociation: string[] = ["sagemaker:DeleteAssociation"];
 	/** IAM actions required for the DeleteCluster API call. */
 	static readonly DeleteCluster: string[] = ["sagemaker:DeleteCluster"];
+	/** IAM actions required for the DeleteClusterExtension API call. */
+	static readonly DeleteClusterExtension: string[] = [];
 	/** IAM actions required for the DeleteClusterSchedulerConfig API call. */
 	static readonly DeleteClusterSchedulerConfig: string[] = [
 		"sagemaker:DeleteClusterSchedulerConfig",
@@ -6910,6 +6914,8 @@ export class SageMakerOperations {
 	static readonly DescribeClusterEvent: string[] = [
 		"sagemaker:DescribeClusterEvent",
 	];
+	/** IAM actions required for the DescribeClusterExtension API call. */
+	static readonly DescribeClusterExtension: string[] = [];
 	/** IAM actions required for the DescribeClusterNode API call. */
 	static readonly DescribeClusterNode: string[] = [
 		"sagemaker:DescribeClusterNode",
@@ -7251,6 +7257,8 @@ export class SageMakerOperations {
 	];
 	/** IAM actions required for the ListClusterEvents API call. */
 	static readonly ListClusterEvents: string[] = ["sagemaker:ListClusterEvents"];
+	/** IAM actions required for the ListClusterExtensions API call. */
+	static readonly ListClusterExtensions: string[] = [];
 	/** IAM actions required for the ListClusterNodes API call. */
 	static readonly ListClusterNodes: string[] = ["sagemaker:ListClusterNodes"];
 	/** IAM actions required for the ListClusterSchedulerConfigs API call. */
@@ -7658,6 +7666,8 @@ export class SageMakerOperations {
 		"sagemaker:UpdateCluster",
 		"sagemaker:UpdateClusterSoftware",
 	];
+	/** IAM actions required for the UpdateClusterExtension API call. */
+	static readonly UpdateClusterExtension: string[] = [];
 	/** IAM actions required for the UpdateClusterSchedulerConfig API call. */
 	static readonly UpdateClusterSchedulerConfig: string[] = [
 		"sagemaker:UpdateClusterSchedulerConfig",

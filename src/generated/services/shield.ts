@@ -12,6 +12,9 @@ export class ShieldActions {
 	/** The IAM service prefix. */
 	static readonly SERVICE_PREFIX = "shield";
 
+	/** [Write] shield:AllowVendedLogDeliveryForResource */
+	static readonly AllowVendedLogDeliveryForResource =
+		"shield:AllowVendedLogDeliveryForResource";
 	/** [Write] shield:AssociateDRTLogBucket */
 	static readonly AssociateDRTLogBucket = "shield:AssociateDRTLogBucket";
 	/** [Write] shield:AssociateDRTRole */
@@ -117,6 +120,7 @@ export class ShieldActions {
 	];
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
+		ShieldActions.AllowVendedLogDeliveryForResource,
 		ShieldActions.AssociateDRTLogBucket,
 		ShieldActions.AssociateDRTRole,
 		ShieldActions.AssociateHealthCheck,

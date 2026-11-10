@@ -6027,8 +6027,8 @@
         }
       ],
       "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
       }
     },
     {
@@ -9134,6 +9134,34 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateOutboundEmailContactMessage",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "connect:Channel",
+        "connect:ContactAssociationId",
+        "connect:InstanceId",
+        "connect:UserArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "contact"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -16282,6 +16310,12 @@
     },
     {
       "Name": "UpdateOutboundEmailContactMessage",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateOutboundEmailContactMessage",
+          "Service": "connect"
+        }
+      ],
       "SDK": [
         {
           "Name": "connect",

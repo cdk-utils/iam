@@ -18,6 +18,10 @@ export class DynamoDBActions {
 	static readonly BatchGetItem = "dynamodb:BatchGetItem";
 	/** [Write] dynamodb:BatchWriteItem */
 	static readonly BatchWriteItem = "dynamodb:BatchWriteItem";
+	/** [Write] dynamodb:BulkPutItems */
+	static readonly BulkPutItems = "dynamodb:BulkPutItems";
+	/** [Write] dynamodb:CancelBulkOperation */
+	static readonly CancelBulkOperation = "dynamodb:CancelBulkOperation";
 	/** [Read] dynamodb:ConditionCheckItem */
 	static readonly ConditionCheckItem = "dynamodb:ConditionCheckItem";
 	/** [Write] dynamodb:CreateBackup */
@@ -46,6 +50,8 @@ export class DynamoDBActions {
 	static readonly DeleteTableReplica = "dynamodb:DeleteTableReplica";
 	/** [Read] dynamodb:DescribeBackup */
 	static readonly DescribeBackup = "dynamodb:DescribeBackup";
+	/** [Read] dynamodb:DescribeBulkOperation */
+	static readonly DescribeBulkOperation = "dynamodb:DescribeBulkOperation";
 	/** [Read] dynamodb:DescribeContinuousBackups */
 	static readonly DescribeContinuousBackups =
 		"dynamodb:DescribeContinuousBackups";
@@ -111,6 +117,8 @@ export class DynamoDBActions {
 	static readonly InjectError = "dynamodb:InjectError";
 	/** [List] dynamodb:ListBackups */
 	static readonly ListBackups = "dynamodb:ListBackups";
+	/** [List] dynamodb:ListBulkOperations */
+	static readonly ListBulkOperations = "dynamodb:ListBulkOperations";
 	/** [List] dynamodb:ListContributorInsights */
 	static readonly ListContributorInsights = "dynamodb:ListContributorInsights";
 	/** [List] dynamodb:ListExports */
@@ -160,6 +168,8 @@ export class DynamoDBActions {
 	static readonly SearchVectors = "dynamodb:SearchVectors";
 	/** [Write] dynamodb:StartAwsBackupJob */
 	static readonly StartAwsBackupJob = "dynamodb:StartAwsBackupJob";
+	/** [Write] dynamodb:StartBulkOperation */
+	static readonly StartBulkOperation = "dynamodb:StartBulkOperation";
 	/** [Tagging] dynamodb:TagResource */
 	static readonly TagResource = "dynamodb:TagResource";
 	/** [Tagging] dynamodb:UntagResource */
@@ -199,6 +209,7 @@ export class DynamoDBActions {
 		DynamoDBActions.BatchGetItem,
 		DynamoDBActions.ConditionCheckItem,
 		DynamoDBActions.DescribeBackup,
+		DynamoDBActions.DescribeBulkOperation,
 		DynamoDBActions.DescribeContinuousBackups,
 		DynamoDBActions.DescribeContributorInsights,
 		DynamoDBActions.DescribeEndpoints,
@@ -231,6 +242,8 @@ export class DynamoDBActions {
 	static readonly AllWriteActions: string[] = [
 		DynamoDBActions.AssociateTableReplica,
 		DynamoDBActions.BatchWriteItem,
+		DynamoDBActions.BulkPutItems,
+		DynamoDBActions.CancelBulkOperation,
 		DynamoDBActions.CreateBackup,
 		DynamoDBActions.CreateGlobalTable,
 		DynamoDBActions.CreateGlobalTableWitness,
@@ -257,6 +270,7 @@ export class DynamoDBActions {
 		DynamoDBActions.RestoreTableFromBackup,
 		DynamoDBActions.RestoreTableToPointInTime,
 		DynamoDBActions.StartAwsBackupJob,
+		DynamoDBActions.StartBulkOperation,
 		DynamoDBActions.UpdateContinuousBackups,
 		DynamoDBActions.UpdateContributorInsights,
 		DynamoDBActions.UpdateGlobalTable,
@@ -272,6 +286,7 @@ export class DynamoDBActions {
 	/** All list-level actions. */
 	static readonly AllListActions: string[] = [
 		DynamoDBActions.ListBackups,
+		DynamoDBActions.ListBulkOperations,
 		DynamoDBActions.ListContributorInsights,
 		DynamoDBActions.ListExports,
 		DynamoDBActions.ListGlobalTables,
@@ -321,6 +336,34 @@ export interface DynamoDBBackupArnComponents {
 	readonly tableName: string;
 	/** The BackupName component. */
 	readonly backupName: string;
+}
+
+/**
+ * Properties for building a bulk-operation ARN.
+ */
+export interface DynamoDBBulkOperationArnProps {
+	/** The BulkOperationId component of the ARN. */
+	readonly bulkOperationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a bulk-operation ARN.
+ */
+export interface DynamoDBBulkOperationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The BulkOperationId component. */
+	readonly bulkOperationId: string;
 }
 
 /**
@@ -505,6 +548,8 @@ export interface DynamoDBTableArnComponents {
 
 const BackupArnRegex =
 	/^arn:(?<partition>[^:]+):dynamodb:(?<region>[^:]*):(?<account>[^:]*):table\/(?<tableName>[^:/?]+)\/backup\/(?<backupName>[^:/?]+)$/;
+const BulkOperationArnRegex =
+	/^arn:(?<partition>[^:]+):dynamodb:(?<region>[^:]*):(?<account>[^:]*):bulk-operation\/(?<bulkOperationId>[^:/?]+)$/;
 const ExportArnRegex =
 	/^arn:(?<partition>[^:]+):dynamodb:(?<region>[^:]*):(?<account>[^:]*):table\/(?<tableName>[^:/?]+)\/export\/(?<exportName>[^:/?]+)$/;
 const GlobalTableArnRegex =
@@ -551,6 +596,39 @@ export class DynamoDBResources {
 			account: match.groups.account,
 			tableName: match.groups!.tableName,
 			backupName: match.groups!.backupName,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the bulk-operation resource.
+	 */
+	static bulkOperation(props: DynamoDBBulkOperationArnProps): string {
+		return `arn:${props.partition ?? "aws"}:dynamodb:${props.region ?? "*"}:${props.account ?? "*"}:bulk-operation/${props.bulkOperationId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the bulk-operation resource.
+	 */
+	static isValidBulkOperationArn(arn: string): boolean {
+		return BulkOperationArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a bulk-operation ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseBulkOperationArn(
+		arn: string,
+	): DynamoDBBulkOperationArnComponents {
+		const match = BulkOperationArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid bulk-operation ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			bulkOperationId: match.groups!.bulkOperationId,
 		};
 	}
 
@@ -759,6 +837,10 @@ export class DynamoDBOperations {
 	static readonly BatchGetItem: string[] = ["dynamodb:BatchGetItem"];
 	/** IAM actions required for the BatchWriteItem API call. */
 	static readonly BatchWriteItem: string[] = ["dynamodb:BatchWriteItem"];
+	/** IAM actions required for the CancelBulkOperation API call. */
+	static readonly CancelBulkOperation: string[] = [
+		"dynamodb:CancelBulkOperation",
+	];
 	/** IAM actions required for the CreateBackup API call. */
 	static readonly CreateBackup: string[] = ["dynamodb:CreateBackup"];
 	/** IAM actions required for the CreateGlobalTable API call. */
@@ -793,6 +875,10 @@ export class DynamoDBOperations {
 	static readonly DeleteTable: string[] = ["dynamodb:DeleteTable"];
 	/** IAM actions required for the DescribeBackup API call. */
 	static readonly DescribeBackup: string[] = ["dynamodb:DescribeBackup"];
+	/** IAM actions required for the DescribeBulkOperation API call. */
+	static readonly DescribeBulkOperation: string[] = [
+		"dynamodb:DescribeBulkOperation",
+	];
 	/** IAM actions required for the DescribeContinuousBackups API call. */
 	static readonly DescribeContinuousBackups: string[] = [
 		"dynamodb:DescribeContinuousBackups",
@@ -890,6 +976,10 @@ export class DynamoDBOperations {
 	static readonly ImportTable: string[] = ["dynamodb:ImportTable"];
 	/** IAM actions required for the ListBackups API call. */
 	static readonly ListBackups: string[] = ["dynamodb:ListBackups"];
+	/** IAM actions required for the ListBulkOperations API call. */
+	static readonly ListBulkOperations: string[] = [
+		"dynamodb:ListBulkOperations",
+	];
 	/** IAM actions required for the ListContributorInsights API call. */
 	static readonly ListContributorInsights: string[] = [
 		"dynamodb:ListContributorInsights",
@@ -947,6 +1037,11 @@ export class DynamoDBOperations {
 	];
 	/** IAM actions required for the SearchVectors API call. */
 	static readonly SearchVectors: string[] = [];
+	/** IAM actions required for the StartBulkPutItems API call. */
+	static readonly StartBulkPutItems: string[] = [
+		"dynamodb:BulkPutItems",
+		"dynamodb:StartBulkOperation",
+	];
 	/** IAM actions required for the TagResource API call. */
 	static readonly TagResource: string[] = ["dynamodb:TagResource"];
 	/** IAM actions required for the TransactGetItems API call. */

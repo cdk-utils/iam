@@ -348,6 +348,7 @@ new route53profiles.Route53profilesActions()
 | <code><a href="#@cdk_utils/iam.route53profiles.Route53profilesActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.route53profiles.Route53profilesActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] route53profiles:TagResource. |
 | <code><a href="#@cdk_utils/iam.route53profiles.Route53profilesActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] route53profiles:UntagResource. |
+| <code><a href="#@cdk_utils/iam.route53profiles.Route53profilesActions.property.UpdateProfileAssociation">UpdateProfileAssociation</a></code> | <code>string</code> | [Write] route53profiles:UpdateProfileAssociation. |
 | <code><a href="#@cdk_utils/iam.route53profiles.Route53profilesActions.property.UpdateProfileResourceAssociation">UpdateProfileResourceAssociation</a></code> | <code>string</code> | [Write] route53profiles:UpdateProfileResourceAssociation. |
 
 ---
@@ -625,6 +626,18 @@ public readonly UntagResource: string;
 - *Type:* string
 
 [Tagging] route53profiles:UntagResource.
+
+---
+
+##### `UpdateProfileAssociation`<sup>Required</sup> <a name="UpdateProfileAssociation" id="@cdk_utils/iam.route53profiles.Route53profilesActions.property.UpdateProfileAssociation"></a>
+
+```typescript
+public readonly UpdateProfileAssociation: string;
+```
+
+- *Type:* string
+
+[Write] route53profiles:UpdateProfileAssociation.
 
 ---
 
