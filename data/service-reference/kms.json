@@ -2285,6 +2285,12 @@
       ]
     },
     {
+      "Name": "kms:RecipientAttestation:PCR8:ServiceName",
+      "Types": [
+        "String"
+      ]
+    },
+    {
       "Name": "kms:RecipientAttestation:PCR9",
       "Types": [
         "String"

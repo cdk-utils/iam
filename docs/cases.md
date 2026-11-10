@@ -2172,9 +2172,11 @@ new cases.CasesOperations()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.cases.CasesOperations.property.BatchCreateRelatedItem">BatchCreateRelatedItem</a></code> | <code>string[]</code> | IAM actions required for the BatchCreateRelatedItem API call. |
 | <code><a href="#@cdk_utils/iam.cases.CasesOperations.property.BatchGetCaseRule">BatchGetCaseRule</a></code> | <code>string[]</code> | IAM actions required for the BatchGetCaseRule API call. |
 | <code><a href="#@cdk_utils/iam.cases.CasesOperations.property.BatchGetField">BatchGetField</a></code> | <code>string[]</code> | IAM actions required for the BatchGetField API call. |
 | <code><a href="#@cdk_utils/iam.cases.CasesOperations.property.BatchPutFieldOptions">BatchPutFieldOptions</a></code> | <code>string[]</code> | IAM actions required for the BatchPutFieldOptions API call. |
+| <code><a href="#@cdk_utils/iam.cases.CasesOperations.property.BatchUpdateCase">BatchUpdateCase</a></code> | <code>string[]</code> | IAM actions required for the BatchUpdateCase API call. |
 | <code><a href="#@cdk_utils/iam.cases.CasesOperations.property.CreateCase">CreateCase</a></code> | <code>string[]</code> | IAM actions required for the CreateCase API call. |
 | <code><a href="#@cdk_utils/iam.cases.CasesOperations.property.CreateCaseRule">CreateCaseRule</a></code> | <code>string[]</code> | IAM actions required for the CreateCaseRule API call. |
 | <code><a href="#@cdk_utils/iam.cases.CasesOperations.property.CreateDomain">CreateDomain</a></code> | <code>string[]</code> | IAM actions required for the CreateDomain API call. |
@@ -2218,6 +2220,18 @@ new cases.CasesOperations()
 
 ---
 
+##### `BatchCreateRelatedItem`<sup>Required</sup> <a name="BatchCreateRelatedItem" id="@cdk_utils/iam.cases.CasesOperations.property.BatchCreateRelatedItem"></a>
+
+```typescript
+public readonly BatchCreateRelatedItem: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the BatchCreateRelatedItem API call.
+
+---
+
 ##### `BatchGetCaseRule`<sup>Required</sup> <a name="BatchGetCaseRule" id="@cdk_utils/iam.cases.CasesOperations.property.BatchGetCaseRule"></a>
 
 ```typescript
@@ -2251,6 +2265,18 @@ public readonly BatchPutFieldOptions: string[];
 - *Type:* string[]
 
 IAM actions required for the BatchPutFieldOptions API call.
+
+---
+
+##### `BatchUpdateCase`<sup>Required</sup> <a name="BatchUpdateCase" id="@cdk_utils/iam.cases.CasesOperations.property.BatchUpdateCase"></a>
+
+```typescript
+public readonly BatchUpdateCase: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the BatchUpdateCase API call.
 
 ---
 

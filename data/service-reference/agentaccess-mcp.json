@@ -39,7 +39,43 @@
       }
     },
     {
+      "Name": "CloseSession",
+      "ActionConditionKeys": [
+        "agentaccess-mcp:StackArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "DoubleClick",
+      "ActionConditionKeys": [
+        "agentaccess-mcp:StackArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ExecuteSequence",
       "ActionConditionKeys": [
         "agentaccess-mcp:StackArn"
       ],
@@ -346,6 +382,24 @@
     },
     {
       "Name": "TypeText",
+      "ActionConditionKeys": [
+        "agentaccess-mcp:StackArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "Wait",
       "ActionConditionKeys": [
         "agentaccess-mcp:StackArn"
       ],

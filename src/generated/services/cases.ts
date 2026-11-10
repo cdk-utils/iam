@@ -631,6 +631,10 @@ export class CasesResources {
  * API operation to required IAM actions mapping for cases.
  */
 export class CasesOperations {
+	/** IAM actions required for the BatchCreateRelatedItem API call. */
+	static readonly BatchCreateRelatedItem: string[] = [
+		"cases:CreateRelatedItem",
+	];
 	/** IAM actions required for the BatchGetCaseRule API call. */
 	static readonly BatchGetCaseRule: string[] = ["cases:BatchGetCaseRule"];
 	/** IAM actions required for the BatchGetField API call. */
@@ -639,6 +643,8 @@ export class CasesOperations {
 	static readonly BatchPutFieldOptions: string[] = [
 		"cases:BatchPutFieldOptions",
 	];
+	/** IAM actions required for the BatchUpdateCase API call. */
+	static readonly BatchUpdateCase: string[] = ["cases:UpdateCase"];
 	/** IAM actions required for the CreateCase API call. */
 	static readonly CreateCase: string[] = [
 		"cases:CreateCase",

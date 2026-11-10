@@ -52,6 +52,9 @@ export class Route53profilesActions {
 	static readonly TagResource = "route53profiles:TagResource";
 	/** [Tagging] route53profiles:UntagResource */
 	static readonly UntagResource = "route53profiles:UntagResource";
+	/** [Write] route53profiles:UpdateProfileAssociation */
+	static readonly UpdateProfileAssociation =
+		"route53profiles:UpdateProfileAssociation";
 	/** [Write] route53profiles:UpdateProfileResourceAssociation */
 	static readonly UpdateProfileResourceAssociation =
 		"route53profiles:UpdateProfileResourceAssociation";
@@ -72,6 +75,7 @@ export class Route53profilesActions {
 		Route53profilesActions.DisassociateProfile,
 		Route53profilesActions.DisassociateResourceFromProfile,
 		Route53profilesActions.PutProfilePolicy,
+		Route53profilesActions.UpdateProfileAssociation,
 		Route53profilesActions.UpdateProfileResourceAssociation,
 	];
 	/** All list-level actions. */

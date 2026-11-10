@@ -37,7 +37,9 @@ new agentaccess_mcp.AgentaccessMcpActions()
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.CallForwardedTool">CallForwardedTool</a></code> | <code>string</code> | [Write] agentaccess-mcp:CallForwardedTool. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.CheckConnectionStatus">CheckConnectionStatus</a></code> | <code>string</code> | [Read] agentaccess-mcp:CheckConnectionStatus. |
+| <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.CloseSession">CloseSession</a></code> | <code>string</code> | [Write] agentaccess-mcp:CloseSession. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.DoubleClick">DoubleClick</a></code> | <code>string</code> | [Write] agentaccess-mcp:DoubleClick. |
+| <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.ExecuteSequence">ExecuteSequence</a></code> | <code>string</code> | [Write] agentaccess-mcp:ExecuteSequence. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.HoldKey">HoldKey</a></code> | <code>string</code> | [Write] agentaccess-mcp:HoldKey. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.InvokeMcp">InvokeMcp</a></code> | <code>string</code> | [Write] agentaccess-mcp:InvokeMcp. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.KeyPress">KeyPress</a></code> | <code>string</code> | [Write] agentaccess-mcp:KeyPress. |
@@ -54,6 +56,7 @@ new agentaccess_mcp.AgentaccessMcpActions()
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.ToggleAppSwitcher">ToggleAppSwitcher</a></code> | <code>string</code> | [Write] agentaccess-mcp:ToggleAppSwitcher. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.TripleClick">TripleClick</a></code> | <code>string</code> | [Write] agentaccess-mcp:TripleClick. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.TypeText">TypeText</a></code> | <code>string</code> | [Write] agentaccess-mcp:TypeText. |
+| <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.Wait">Wait</a></code> | <code>string</code> | [Write] agentaccess-mcp:Wait. |
 
 ---
 
@@ -165,6 +168,18 @@ public readonly CheckConnectionStatus: string;
 
 ---
 
+##### `CloseSession`<sup>Required</sup> <a name="CloseSession" id="@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.CloseSession"></a>
+
+```typescript
+public readonly CloseSession: string;
+```
+
+- *Type:* string
+
+[Write] agentaccess-mcp:CloseSession.
+
+---
+
 ##### `DoubleClick`<sup>Required</sup> <a name="DoubleClick" id="@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.DoubleClick"></a>
 
 ```typescript
@@ -174,6 +189,18 @@ public readonly DoubleClick: string;
 - *Type:* string
 
 [Write] agentaccess-mcp:DoubleClick.
+
+---
+
+##### `ExecuteSequence`<sup>Required</sup> <a name="ExecuteSequence" id="@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.ExecuteSequence"></a>
+
+```typescript
+public readonly ExecuteSequence: string;
+```
+
+- *Type:* string
+
+[Write] agentaccess-mcp:ExecuteSequence.
 
 ---
 
@@ -369,6 +396,18 @@ public readonly TypeText: string;
 
 ---
 
+##### `Wait`<sup>Required</sup> <a name="Wait" id="@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.Wait"></a>
+
+```typescript
+public readonly Wait: string;
+```
+
+- *Type:* string
+
+[Write] agentaccess-mcp:Wait.
+
+---
+
 ### AgentaccessMcpConditions <a name="AgentaccessMcpConditions" id="@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions"></a>
 
 Condition key constants and builders for agentaccess-mcp.
@@ -420,7 +459,9 @@ Generates a condition block for `agentaccess-mcp:StackArn`.
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.actionGetSessionInfoConditionKeys">actionGetSessionInfoConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetSessionInfo action. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.CallForwardedToolConditionKeys">CallForwardedToolConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CallForwardedTool action. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.CheckConnectionStatusConditionKeys">CheckConnectionStatusConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CheckConnectionStatus action. |
+| <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.CloseSessionConditionKeys">CloseSessionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CloseSession action. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.DoubleClickConditionKeys">DoubleClickConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DoubleClick action. |
+| <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.ExecuteSequenceConditionKeys">ExecuteSequenceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ExecuteSequence action. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.HoldKeyConditionKeys">HoldKeyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the HoldKey action. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.InvokeMcpConditionKeys">InvokeMcpConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the InvokeMcp action. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.KeyPressConditionKeys">KeyPressConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the KeyPress action. |
@@ -437,6 +478,7 @@ Generates a condition block for `agentaccess-mcp:StackArn`.
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.ToggleAppSwitcherConditionKeys">ToggleAppSwitcherConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ToggleAppSwitcher action. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.TripleClickConditionKeys">TripleClickConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TripleClick action. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.TypeTextConditionKeys">TypeTextConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TypeText action. |
+| <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.WaitConditionKeys">WaitConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the Wait action. |
 
 ---
 
@@ -488,6 +530,18 @@ Condition keys applicable to the CheckConnectionStatus action.
 
 ---
 
+##### `CloseSessionConditionKeys`<sup>Required</sup> <a name="CloseSessionConditionKeys" id="@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.CloseSessionConditionKeys"></a>
+
+```typescript
+public readonly CloseSessionConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CloseSession action.
+
+---
+
 ##### `DoubleClickConditionKeys`<sup>Required</sup> <a name="DoubleClickConditionKeys" id="@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.DoubleClickConditionKeys"></a>
 
 ```typescript
@@ -497,6 +551,18 @@ public readonly DoubleClickConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the DoubleClick action.
+
+---
+
+##### `ExecuteSequenceConditionKeys`<sup>Required</sup> <a name="ExecuteSequenceConditionKeys" id="@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.ExecuteSequenceConditionKeys"></a>
+
+```typescript
+public readonly ExecuteSequenceConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ExecuteSequence action.
 
 ---
 
@@ -689,6 +755,18 @@ public readonly TypeTextConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the TypeText action.
+
+---
+
+##### `WaitConditionKeys`<sup>Required</sup> <a name="WaitConditionKeys" id="@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.WaitConditionKeys"></a>
+
+```typescript
+public readonly WaitConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the Wait action.
 
 ---
 

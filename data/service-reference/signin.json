@@ -87,6 +87,30 @@
       }
     },
     {
+      "Name": "CreateBearerToken",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "oauth2-resource-service-principal",
+          "ConditionKeys": [
+            "signin:OAuthClientId",
+            "signin:OAuthGrantType"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "CreateOAuth2PublicClient",
       "ActionConditionKeys": [
         "signin:OAuthRedirectUri"
@@ -398,6 +422,16 @@
     }
   ],
   "Operations": [
+    {
+      "Name": "CreateBearerToken",
+      "SDK": [
+        {
+          "Name": "signin",
+          "Method": "create_bearer_token",
+          "Package": "Boto3"
+        }
+      ]
+    },
     {
       "Name": "CreateOAuth2Token",
       "AuthorizedActions": [
