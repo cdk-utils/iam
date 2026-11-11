@@ -1263,6 +1263,7 @@ new kms.KMSConditions()
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.recipientAttestationPcr6">recipientAttestationPcr6</a></code> | Generates a condition block for `kms:RecipientAttestation:PCR6`. |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.recipientAttestationPcr7">recipientAttestationPcr7</a></code> | Generates a condition block for `kms:RecipientAttestation:PCR7`. |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.recipientAttestationPcr8">recipientAttestationPcr8</a></code> | Generates a condition block for `kms:RecipientAttestation:PCR8`. |
+| <code><a href="#@cdk_utils/iam.kms.KMSConditions.recipientAttestationPcr8ServiceName">recipientAttestationPcr8ServiceName</a></code> | Generates a condition block for `kms:RecipientAttestation:PCR8:ServiceName`. |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.recipientAttestationPcr9">recipientAttestationPcr9</a></code> | Generates a condition block for `kms:RecipientAttestation:PCR9`. |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.reEncryptOnSameKey">reEncryptOnSameKey</a></code> | Generates a condition block for `kms:ReEncryptOnSameKey`. |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.replicaRegion">replicaRegion</a></code> | Generates a condition block for `kms:ReplicaRegion`. |
@@ -2580,6 +2581,22 @@ Generates a condition block for `kms:RecipientAttestation:PCR8`.
 
 ---
 
+##### `recipientAttestationPcr8ServiceName` <a name="recipientAttestationPcr8ServiceName" id="@cdk_utils/iam.kms.KMSConditions.recipientAttestationPcr8ServiceName"></a>
+
+```typescript
+import { kms } from '@cdk_utils/iam'
+
+kms.KMSConditions.recipientAttestationPcr8ServiceName(value: string)
+```
+
+Generates a condition block for `kms:RecipientAttestation:PCR8:ServiceName`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.kms.KMSConditions.recipientAttestationPcr8ServiceName.parameter.value"></a>
+
+- *Type:* string
+
+---
+
 ##### `recipientAttestationPcr9` <a name="recipientAttestationPcr9" id="@cdk_utils/iam.kms.KMSConditions.recipientAttestationPcr9"></a>
 
 ```typescript
@@ -2998,6 +3015,7 @@ Generates a condition block for `kms:WrappingKeySpec`.
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.RECIPIENT_ATTESTATION_PCR6">RECIPIENT_ATTESTATION_PCR6</a></code> | <code>string</code> | Condition key: kms:RecipientAttestation:PCR6 (String). |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.RECIPIENT_ATTESTATION_PCR7">RECIPIENT_ATTESTATION_PCR7</a></code> | <code>string</code> | Condition key: kms:RecipientAttestation:PCR7 (String). |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.RECIPIENT_ATTESTATION_PCR8">RECIPIENT_ATTESTATION_PCR8</a></code> | <code>string</code> | Condition key: kms:RecipientAttestation:PCR8 (String). |
+| <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.RECIPIENT_ATTESTATION_PCR8_SERVICE_NAME">RECIPIENT_ATTESTATION_PCR8_SERVICE_NAME</a></code> | <code>string</code> | Condition key: kms:RecipientAttestation:PCR8:ServiceName (String). |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.RECIPIENT_ATTESTATION_PCR9">RECIPIENT_ATTESTATION_PCR9</a></code> | <code>string</code> | Condition key: kms:RecipientAttestation:PCR9 (String). |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.ReEncryptFromConditionKeys">ReEncryptFromConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ReEncryptFrom action. |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.ReEncryptToConditionKeys">ReEncryptToConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ReEncryptTo action. |
@@ -4528,6 +4546,18 @@ public readonly RECIPIENT_ATTESTATION_PCR8: string;
 - *Type:* string
 
 Condition key: kms:RecipientAttestation:PCR8 (String).
+
+---
+
+##### `RECIPIENT_ATTESTATION_PCR8_SERVICE_NAME`<sup>Required</sup> <a name="RECIPIENT_ATTESTATION_PCR8_SERVICE_NAME" id="@cdk_utils/iam.kms.KMSConditions.property.RECIPIENT_ATTESTATION_PCR8_SERVICE_NAME"></a>
+
+```typescript
+public readonly RECIPIENT_ATTESTATION_PCR8_SERVICE_NAME: string;
+```
+
+- *Type:* string
+
+Condition key: kms:RecipientAttestation:PCR8:ServiceName (String).
 
 ---
 

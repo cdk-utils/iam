@@ -144,71 +144,132 @@ export class ApplicationinsightsActions {
  */
 export class ApplicationinsightsOperations {
 	/** IAM actions required for the AddWorkload API call. */
-	static readonly AddWorkload: string[] = [];
+	static readonly AddWorkload: string[] = ["applicationinsights:AddWorkload"];
 	/** IAM actions required for the CreateApplication API call. */
-	static readonly CreateApplication: string[] = [];
+	static readonly CreateApplication: string[] = [
+		"applicationinsights:CreateApplication",
+		"applicationinsights:TagResource",
+	];
 	/** IAM actions required for the CreateComponent API call. */
-	static readonly CreateComponent: string[] = [];
+	static readonly CreateComponent: string[] = [
+		"applicationinsights:CreateComponent",
+	];
 	/** IAM actions required for the CreateLogPattern API call. */
-	static readonly CreateLogPattern: string[] = [];
+	static readonly CreateLogPattern: string[] = [
+		"applicationinsights:CreateLogPattern",
+	];
 	/** IAM actions required for the DeleteApplication API call. */
-	static readonly DeleteApplication: string[] = [];
+	static readonly DeleteApplication: string[] = [
+		"applicationinsights:DeleteApplication",
+	];
 	/** IAM actions required for the DeleteComponent API call. */
-	static readonly DeleteComponent: string[] = [];
+	static readonly DeleteComponent: string[] = [
+		"applicationinsights:DeleteComponent",
+	];
 	/** IAM actions required for the DeleteLogPattern API call. */
-	static readonly DeleteLogPattern: string[] = [];
+	static readonly DeleteLogPattern: string[] = [
+		"applicationinsights:DeleteLogPattern",
+	];
 	/** IAM actions required for the DescribeApplication API call. */
-	static readonly DescribeApplication: string[] = [];
+	static readonly DescribeApplication: string[] = [
+		"applicationinsights:DescribeApplication",
+	];
 	/** IAM actions required for the DescribeComponent API call. */
-	static readonly DescribeComponent: string[] = [];
+	static readonly DescribeComponent: string[] = [
+		"applicationinsights:DescribeComponent",
+	];
 	/** IAM actions required for the DescribeComponentConfiguration API call. */
-	static readonly DescribeComponentConfiguration: string[] = [];
+	static readonly DescribeComponentConfiguration: string[] = [
+		"applicationinsights:DescribeComponentConfiguration",
+	];
 	/** IAM actions required for the DescribeComponentConfigurationRecommendation API call. */
-	static readonly DescribeComponentConfigurationRecommendation: string[] = [];
+	static readonly DescribeComponentConfigurationRecommendation: string[] = [
+		"applicationinsights:DescribeComponentConfigurationRecommendation",
+	];
 	/** IAM actions required for the DescribeLogPattern API call. */
-	static readonly DescribeLogPattern: string[] = [];
+	static readonly DescribeLogPattern: string[] = [
+		"applicationinsights:DescribeLogPattern",
+	];
 	/** IAM actions required for the DescribeObservation API call. */
-	static readonly DescribeObservation: string[] = [];
+	static readonly DescribeObservation: string[] = [
+		"applicationinsights:DescribeObservation",
+	];
 	/** IAM actions required for the DescribeProblem API call. */
-	static readonly DescribeProblem: string[] = [];
+	static readonly DescribeProblem: string[] = [
+		"applicationinsights:DescribeProblem",
+	];
 	/** IAM actions required for the DescribeProblemObservations API call. */
-	static readonly DescribeProblemObservations: string[] = [];
+	static readonly DescribeProblemObservations: string[] = [
+		"applicationinsights:DescribeProblemObservations",
+	];
 	/** IAM actions required for the DescribeWorkload API call. */
-	static readonly DescribeWorkload: string[] = [];
+	static readonly DescribeWorkload: string[] = [
+		"applicationinsights:DescribeWorkload",
+	];
 	/** IAM actions required for the ListApplications API call. */
-	static readonly ListApplications: string[] = [];
+	static readonly ListApplications: string[] = [
+		"applicationinsights:ListApplications",
+	];
 	/** IAM actions required for the ListComponents API call. */
-	static readonly ListComponents: string[] = [];
+	static readonly ListComponents: string[] = [
+		"applicationinsights:ListComponents",
+	];
 	/** IAM actions required for the ListConfigurationHistory API call. */
-	static readonly ListConfigurationHistory: string[] = [];
+	static readonly ListConfigurationHistory: string[] = [
+		"applicationinsights:ListConfigurationHistory",
+	];
 	/** IAM actions required for the ListLogPatternSets API call. */
-	static readonly ListLogPatternSets: string[] = [];
+	static readonly ListLogPatternSets: string[] = [
+		"applicationinsights:ListLogPatternSets",
+	];
 	/** IAM actions required for the ListLogPatterns API call. */
-	static readonly ListLogPatterns: string[] = [];
+	static readonly ListLogPatterns: string[] = [
+		"applicationinsights:ListLogPatterns",
+	];
 	/** IAM actions required for the ListProblems API call. */
-	static readonly ListProblems: string[] = [];
+	static readonly ListProblems: string[] = ["applicationinsights:ListProblems"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly ListTagsForResource: string[] = [];
+	static readonly ListTagsForResource: string[] = [
+		"applicationinsights:ListTagsForResource",
+	];
 	/** IAM actions required for the ListWorkloads API call. */
-	static readonly ListWorkloads: string[] = [];
+	static readonly ListWorkloads: string[] = [
+		"applicationinsights:ListWorkloads",
+	];
 	/** IAM actions required for the RemoveWorkload API call. */
-	static readonly RemoveWorkload: string[] = [];
+	static readonly RemoveWorkload: string[] = [
+		"applicationinsights:RemoveWorkload",
+	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TagResource: string[] = [];
+	static readonly TagResource: string[] = ["applicationinsights:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UntagResource: string[] = [];
+	static readonly UntagResource: string[] = [
+		"applicationinsights:UntagResource",
+	];
 	/** IAM actions required for the UpdateApplication API call. */
-	static readonly UpdateApplication: string[] = [];
+	static readonly UpdateApplication: string[] = [
+		"applicationinsights:UpdateApplication",
+	];
 	/** IAM actions required for the UpdateComponent API call. */
-	static readonly UpdateComponent: string[] = [];
+	static readonly UpdateComponent: string[] = [
+		"applicationinsights:UpdateComponent",
+	];
 	/** IAM actions required for the UpdateComponentConfiguration API call. */
-	static readonly UpdateComponentConfiguration: string[] = [];
+	static readonly UpdateComponentConfiguration: string[] = [
+		"applicationinsights:UpdateComponentConfiguration",
+	];
 	/** IAM actions required for the UpdateLogPattern API call. */
-	static readonly UpdateLogPattern: string[] = [];
+	static readonly UpdateLogPattern: string[] = [
+		"applicationinsights:UpdateLogPattern",
+	];
 	/** IAM actions required for the UpdateProblem API call. */
-	static readonly UpdateProblem: string[] = [];
+	static readonly UpdateProblem: string[] = [
+		"applicationinsights:UpdateProblem",
+	];
 	/** IAM actions required for the UpdateWorkload API call. */
-	static readonly UpdateWorkload: string[] = [];
+	static readonly UpdateWorkload: string[] = [
+		"applicationinsights:UpdateWorkload",
+	];
 }
 
 /**

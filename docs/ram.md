@@ -169,6 +169,7 @@ const ramPermissionArnComponents: ram.RamPermissionArnComponents = { ... }
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.ram.RamPermissionArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
 | <code><a href="#@cdk_utils/iam.ram.RamPermissionArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.ram.RamPermissionArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
 | <code><a href="#@cdk_utils/iam.ram.RamPermissionArnComponents.property.resourcePath">resourcePath</a></code> | <code>string</code> | The ResourcePath component. |
 
 ---
@@ -194,6 +195,18 @@ public readonly partition: string;
 - *Type:* string
 
 AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.ram.RamPermissionArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
 
 ---
 
@@ -228,6 +241,7 @@ const ramPermissionArnProps: ram.RamPermissionArnProps = { ... }
 | <code><a href="#@cdk_utils/iam.ram.RamPermissionArnProps.property.resourcePath">resourcePath</a></code> | <code>string</code> | The ResourcePath component of the ARN. |
 | <code><a href="#@cdk_utils/iam.ram.RamPermissionArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
 | <code><a href="#@cdk_utils/iam.ram.RamPermissionArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.ram.RamPermissionArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
 
 ---
 
@@ -268,6 +282,20 @@ public readonly partition: string;
 AWS partition.
 
 Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.ram.RamPermissionArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
 
 ---
 
@@ -594,6 +622,7 @@ new ram.RamActions()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.ram.RamActions.property.AcceptResourceShareInvitation">AcceptResourceShareInvitation</a></code> | <code>string</code> | [Write] ram:AcceptResourceShareInvitation. |
+| <code><a href="#@cdk_utils/iam.ram.RamActions.property.actionGetCustomerManagedPermissionPolicy">actionGetCustomerManagedPermissionPolicy</a></code> | <code>string</code> | [Read] ram:GetCustomerManagedPermissionPolicy. |
 | <code><a href="#@cdk_utils/iam.ram.RamActions.property.actionGetPermission">actionGetPermission</a></code> | <code>string</code> | [Read] ram:GetPermission. |
 | <code><a href="#@cdk_utils/iam.ram.RamActions.property.actionGetResourcePolicies">actionGetResourcePolicies</a></code> | <code>string</code> | [Read] ram:GetResourcePolicies. |
 | <code><a href="#@cdk_utils/iam.ram.RamActions.property.actionGetResourceShareAssociations">actionGetResourceShareAssociations</a></code> | <code>string</code> | [Read] ram:GetResourceShareAssociations. |
@@ -610,6 +639,7 @@ new ram.RamActions()
 | <code><a href="#@cdk_utils/iam.ram.RamActions.property.CreatePermission">CreatePermission</a></code> | <code>string</code> | [Write] ram:CreatePermission. |
 | <code><a href="#@cdk_utils/iam.ram.RamActions.property.CreatePermissionVersion">CreatePermissionVersion</a></code> | <code>string</code> | [Write] ram:CreatePermissionVersion. |
 | <code><a href="#@cdk_utils/iam.ram.RamActions.property.CreateResourceShare">CreateResourceShare</a></code> | <code>string</code> | [Write] ram:CreateResourceShare. |
+| <code><a href="#@cdk_utils/iam.ram.RamActions.property.DeleteCustomerManagedPermissionPolicy">DeleteCustomerManagedPermissionPolicy</a></code> | <code>string</code> | [PermissionManagement] ram:DeleteCustomerManagedPermissionPolicy. |
 | <code><a href="#@cdk_utils/iam.ram.RamActions.property.DeletePermission">DeletePermission</a></code> | <code>string</code> | [Write] ram:DeletePermission. |
 | <code><a href="#@cdk_utils/iam.ram.RamActions.property.DeletePermissionVersion">DeletePermissionVersion</a></code> | <code>string</code> | [Write] ram:DeletePermissionVersion. |
 | <code><a href="#@cdk_utils/iam.ram.RamActions.property.DeleteResourceShare">DeleteResourceShare</a></code> | <code>string</code> | [Write] ram:DeleteResourceShare. |
@@ -628,11 +658,13 @@ new ram.RamActions()
 | <code><a href="#@cdk_utils/iam.ram.RamActions.property.ListSourceAssociations">ListSourceAssociations</a></code> | <code>string</code> | [List] ram:ListSourceAssociations. |
 | <code><a href="#@cdk_utils/iam.ram.RamActions.property.PromotePermissionCreatedFromPolicy">PromotePermissionCreatedFromPolicy</a></code> | <code>string</code> | [Write] ram:PromotePermissionCreatedFromPolicy. |
 | <code><a href="#@cdk_utils/iam.ram.RamActions.property.PromoteResourceShareCreatedFromPolicy">PromoteResourceShareCreatedFromPolicy</a></code> | <code>string</code> | [Write] ram:PromoteResourceShareCreatedFromPolicy. |
+| <code><a href="#@cdk_utils/iam.ram.RamActions.property.PutCustomerManagedPermissionPolicy">PutCustomerManagedPermissionPolicy</a></code> | <code>string</code> | [PermissionManagement] ram:PutCustomerManagedPermissionPolicy. |
 | <code><a href="#@cdk_utils/iam.ram.RamActions.property.RejectResourceShareInvitation">RejectResourceShareInvitation</a></code> | <code>string</code> | [Write] ram:RejectResourceShareInvitation. |
 | <code><a href="#@cdk_utils/iam.ram.RamActions.property.ReplacePermissionAssociations">ReplacePermissionAssociations</a></code> | <code>string</code> | [Write] ram:ReplacePermissionAssociations. |
 | <code><a href="#@cdk_utils/iam.ram.RamActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.ram.RamActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] ram:TagResource. |
 | <code><a href="#@cdk_utils/iam.ram.RamActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] ram:UntagResource. |
+| <code><a href="#@cdk_utils/iam.ram.RamActions.property.UpdatePermission">UpdatePermission</a></code> | <code>string</code> | [Write] ram:UpdatePermission. |
 | <code><a href="#@cdk_utils/iam.ram.RamActions.property.UpdateResourceShare">UpdateResourceShare</a></code> | <code>string</code> | [Write] ram:UpdateResourceShare. |
 
 ---
@@ -646,6 +678,18 @@ public readonly AcceptResourceShareInvitation: string;
 - *Type:* string
 
 [Write] ram:AcceptResourceShareInvitation.
+
+---
+
+##### `actionGetCustomerManagedPermissionPolicy`<sup>Required</sup> <a name="actionGetCustomerManagedPermissionPolicy" id="@cdk_utils/iam.ram.RamActions.property.actionGetCustomerManagedPermissionPolicy"></a>
+
+```typescript
+public readonly actionGetCustomerManagedPermissionPolicy: string;
+```
+
+- *Type:* string
+
+[Read] ram:GetCustomerManagedPermissionPolicy.
 
 ---
 
@@ -838,6 +882,18 @@ public readonly CreateResourceShare: string;
 - *Type:* string
 
 [Write] ram:CreateResourceShare.
+
+---
+
+##### `DeleteCustomerManagedPermissionPolicy`<sup>Required</sup> <a name="DeleteCustomerManagedPermissionPolicy" id="@cdk_utils/iam.ram.RamActions.property.DeleteCustomerManagedPermissionPolicy"></a>
+
+```typescript
+public readonly DeleteCustomerManagedPermissionPolicy: string;
+```
+
+- *Type:* string
+
+[PermissionManagement] ram:DeleteCustomerManagedPermissionPolicy.
 
 ---
 
@@ -1057,6 +1113,18 @@ public readonly PromoteResourceShareCreatedFromPolicy: string;
 
 ---
 
+##### `PutCustomerManagedPermissionPolicy`<sup>Required</sup> <a name="PutCustomerManagedPermissionPolicy" id="@cdk_utils/iam.ram.RamActions.property.PutCustomerManagedPermissionPolicy"></a>
+
+```typescript
+public readonly PutCustomerManagedPermissionPolicy: string;
+```
+
+- *Type:* string
+
+[PermissionManagement] ram:PutCustomerManagedPermissionPolicy.
+
+---
+
 ##### `RejectResourceShareInvitation`<sup>Required</sup> <a name="RejectResourceShareInvitation" id="@cdk_utils/iam.ram.RamActions.property.RejectResourceShareInvitation"></a>
 
 ```typescript
@@ -1117,6 +1185,18 @@ public readonly UntagResource: string;
 
 ---
 
+##### `UpdatePermission`<sup>Required</sup> <a name="UpdatePermission" id="@cdk_utils/iam.ram.RamActions.property.UpdatePermission"></a>
+
+```typescript
+public readonly UpdatePermission: string;
+```
+
+- *Type:* string
+
+[Write] ram:UpdatePermission.
+
+---
+
 ##### `UpdateResourceShare`<sup>Required</sup> <a name="UpdateResourceShare" id="@cdk_utils/iam.ram.RamActions.property.UpdateResourceShare"></a>
 
 ```typescript
@@ -1154,9 +1234,15 @@ new ram.RamConditions()
 | <code><a href="#@cdk_utils/iam.ram.RamConditions.allowsExternalPrincipals">allowsExternalPrincipals</a></code> | Generates a condition block for `ram:AllowsExternalPrincipals`. |
 | <code><a href="#@cdk_utils/iam.ram.RamConditions.permissionARN">permissionARN</a></code> | Generates a condition block for `ram:PermissionArn`. |
 | <code><a href="#@cdk_utils/iam.ram.RamConditions.permissionResourceType">permissionResourceType</a></code> | Generates a condition block for `ram:PermissionResourceType`. |
+| <code><a href="#@cdk_utils/iam.ram.RamConditions.permissionTemplateParameter">permissionTemplateParameter</a></code> | Generates a condition block for `ram:PermissionTemplateParameter/${ParameterName}`. |
 | <code><a href="#@cdk_utils/iam.ram.RamConditions.principal">principal</a></code> | Generates a condition block for `ram:Principal`. |
 | <code><a href="#@cdk_utils/iam.ram.RamConditions.requestedAllowsExternalPrincipals">requestedAllowsExternalPrincipals</a></code> | Generates a condition block for `ram:RequestedAllowsExternalPrincipals`. |
+| <code><a href="#@cdk_utils/iam.ram.RamConditions.requestedPermissionArns">requestedPermissionArns</a></code> | Generates a condition block for `ram:RequestedPermissionArns`. |
+| <code><a href="#@cdk_utils/iam.ram.RamConditions.requestedPermissionResourceTypes">requestedPermissionResourceTypes</a></code> | Generates a condition block for `ram:RequestedPermissionResourceTypes`. |
+| <code><a href="#@cdk_utils/iam.ram.RamConditions.requestedPrincipals">requestedPrincipals</a></code> | Generates a condition block for `ram:RequestedPrincipals`. |
+| <code><a href="#@cdk_utils/iam.ram.RamConditions.requestedResourceArns">requestedResourceArns</a></code> | Generates a condition block for `ram:RequestedResourceArns`. |
 | <code><a href="#@cdk_utils/iam.ram.RamConditions.requestedResourceType">requestedResourceType</a></code> | Generates a condition block for `ram:RequestedResourceType`. |
+| <code><a href="#@cdk_utils/iam.ram.RamConditions.requestedResourceTypes">requestedResourceTypes</a></code> | Generates a condition block for `ram:RequestedResourceTypes`. |
 | <code><a href="#@cdk_utils/iam.ram.RamConditions.requestTag">requestTag</a></code> | Generates a condition block for `aws:RequestTag/${TagKey}`. |
 | <code><a href="#@cdk_utils/iam.ram.RamConditions.resourceARN">resourceARN</a></code> | Generates a condition block for `ram:ResourceArn`. |
 | <code><a href="#@cdk_utils/iam.ram.RamConditions.resourceShareName">resourceShareName</a></code> | Generates a condition block for `ram:ResourceShareName`. |
@@ -1215,6 +1301,22 @@ Generates a condition block for `ram:PermissionResourceType`.
 
 ---
 
+##### `permissionTemplateParameter` <a name="permissionTemplateParameter" id="@cdk_utils/iam.ram.RamConditions.permissionTemplateParameter"></a>
+
+```typescript
+import { ram } from '@cdk_utils/iam'
+
+ram.RamConditions.permissionTemplateParameter(values: string[])
+```
+
+Generates a condition block for `ram:PermissionTemplateParameter/${ParameterName}`.
+
+###### `values`<sup>Required</sup> <a name="values" id="@cdk_utils/iam.ram.RamConditions.permissionTemplateParameter.parameter.values"></a>
+
+- *Type:* string[]
+
+---
+
 ##### `principal` <a name="principal" id="@cdk_utils/iam.ram.RamConditions.principal"></a>
 
 ```typescript
@@ -1247,6 +1349,70 @@ Generates a condition block for `ram:RequestedAllowsExternalPrincipals`.
 
 ---
 
+##### `requestedPermissionArns` <a name="requestedPermissionArns" id="@cdk_utils/iam.ram.RamConditions.requestedPermissionArns"></a>
+
+```typescript
+import { ram } from '@cdk_utils/iam'
+
+ram.RamConditions.requestedPermissionArns(values: string[])
+```
+
+Generates a condition block for `ram:RequestedPermissionArns`.
+
+###### `values`<sup>Required</sup> <a name="values" id="@cdk_utils/iam.ram.RamConditions.requestedPermissionArns.parameter.values"></a>
+
+- *Type:* string[]
+
+---
+
+##### `requestedPermissionResourceTypes` <a name="requestedPermissionResourceTypes" id="@cdk_utils/iam.ram.RamConditions.requestedPermissionResourceTypes"></a>
+
+```typescript
+import { ram } from '@cdk_utils/iam'
+
+ram.RamConditions.requestedPermissionResourceTypes(values: string[])
+```
+
+Generates a condition block for `ram:RequestedPermissionResourceTypes`.
+
+###### `values`<sup>Required</sup> <a name="values" id="@cdk_utils/iam.ram.RamConditions.requestedPermissionResourceTypes.parameter.values"></a>
+
+- *Type:* string[]
+
+---
+
+##### `requestedPrincipals` <a name="requestedPrincipals" id="@cdk_utils/iam.ram.RamConditions.requestedPrincipals"></a>
+
+```typescript
+import { ram } from '@cdk_utils/iam'
+
+ram.RamConditions.requestedPrincipals(values: string[])
+```
+
+Generates a condition block for `ram:RequestedPrincipals`.
+
+###### `values`<sup>Required</sup> <a name="values" id="@cdk_utils/iam.ram.RamConditions.requestedPrincipals.parameter.values"></a>
+
+- *Type:* string[]
+
+---
+
+##### `requestedResourceArns` <a name="requestedResourceArns" id="@cdk_utils/iam.ram.RamConditions.requestedResourceArns"></a>
+
+```typescript
+import { ram } from '@cdk_utils/iam'
+
+ram.RamConditions.requestedResourceArns(values: string[])
+```
+
+Generates a condition block for `ram:RequestedResourceArns`.
+
+###### `values`<sup>Required</sup> <a name="values" id="@cdk_utils/iam.ram.RamConditions.requestedResourceArns.parameter.values"></a>
+
+- *Type:* string[]
+
+---
+
 ##### `requestedResourceType` <a name="requestedResourceType" id="@cdk_utils/iam.ram.RamConditions.requestedResourceType"></a>
 
 ```typescript
@@ -1260,6 +1426,22 @@ Generates a condition block for `ram:RequestedResourceType`.
 ###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.ram.RamConditions.requestedResourceType.parameter.value"></a>
 
 - *Type:* string
+
+---
+
+##### `requestedResourceTypes` <a name="requestedResourceTypes" id="@cdk_utils/iam.ram.RamConditions.requestedResourceTypes"></a>
+
+```typescript
+import { ram } from '@cdk_utils/iam'
+
+ram.RamConditions.requestedResourceTypes(values: string[])
+```
+
+Generates a condition block for `ram:RequestedResourceTypes`.
+
+###### `values`<sup>Required</sup> <a name="values" id="@cdk_utils/iam.ram.RamConditions.requestedResourceTypes.parameter.values"></a>
+
+- *Type:* string[]
 
 ---
 
@@ -1380,33 +1562,38 @@ Generates a condition block for `aws:TagKeys`.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdk_utils/iam.ram.RamConditions.property.AcceptResourceShareInvitationConditionKeys">AcceptResourceShareInvitationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the AcceptResourceShareInvitation action. |
+| <code><a href="#@cdk_utils/iam.ram.RamConditions.property.actionGetCustomerManagedPermissionPolicyConditionKeys">actionGetCustomerManagedPermissionPolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetCustomerManagedPermissionPolicy action. |
 | <code><a href="#@cdk_utils/iam.ram.RamConditions.property.actionGetPermissionConditionKeys">actionGetPermissionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetPermission action. |
-| <code><a href="#@cdk_utils/iam.ram.RamConditions.property.actionGetResourceSharesConditionKeys">actionGetResourceSharesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetResourceShares action. |
 | <code><a href="#@cdk_utils/iam.ram.RamConditions.property.actionSetDefaultPermissionVersionConditionKeys">actionSetDefaultPermissionVersionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the SetDefaultPermissionVersion action. |
 | <code><a href="#@cdk_utils/iam.ram.RamConditions.property.ALLOWS_EXTERNAL_PRINCIPALS">ALLOWS_EXTERNAL_PRINCIPALS</a></code> | <code>string</code> | Condition key: ram:AllowsExternalPrincipals (Bool). |
 | <code><a href="#@cdk_utils/iam.ram.RamConditions.property.AssociateResourceShareConditionKeys">AssociateResourceShareConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the AssociateResourceShare action. |
+| <code><a href="#@cdk_utils/iam.ram.RamConditions.property.AssociateResourceSharePermissionConditionKeys">AssociateResourceSharePermissionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the AssociateResourceSharePermission action. |
 | <code><a href="#@cdk_utils/iam.ram.RamConditions.property.AWS_REQUEST_TAG">AWS_REQUEST_TAG</a></code> | <code>string</code> | Condition key: aws:RequestTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.ram.RamConditions.property.AWS_RESOURCE_TAG">AWS_RESOURCE_TAG</a></code> | <code>string</code> | Condition key: aws:ResourceTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.ram.RamConditions.property.AWS_TAG_KEYS">AWS_TAG_KEYS</a></code> | <code>string</code> | Condition key: aws:TagKeys (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.ram.RamConditions.property.CreatePermissionConditionKeys">CreatePermissionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreatePermission action. |
 | <code><a href="#@cdk_utils/iam.ram.RamConditions.property.CreatePermissionVersionConditionKeys">CreatePermissionVersionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreatePermissionVersion action. |
 | <code><a href="#@cdk_utils/iam.ram.RamConditions.property.CreateResourceShareConditionKeys">CreateResourceShareConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateResourceShare action. |
+| <code><a href="#@cdk_utils/iam.ram.RamConditions.property.DeleteCustomerManagedPermissionPolicyConditionKeys">DeleteCustomerManagedPermissionPolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteCustomerManagedPermissionPolicy action. |
 | <code><a href="#@cdk_utils/iam.ram.RamConditions.property.DeletePermissionConditionKeys">DeletePermissionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeletePermission action. |
 | <code><a href="#@cdk_utils/iam.ram.RamConditions.property.DeletePermissionVersionConditionKeys">DeletePermissionVersionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeletePermissionVersion action. |
-| <code><a href="#@cdk_utils/iam.ram.RamConditions.property.DeleteResourceShareConditionKeys">DeleteResourceShareConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteResourceShare action. |
 | <code><a href="#@cdk_utils/iam.ram.RamConditions.property.DisassociateResourceShareConditionKeys">DisassociateResourceShareConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DisassociateResourceShare action. |
-| <code><a href="#@cdk_utils/iam.ram.RamConditions.property.ListPendingInvitationResourcesConditionKeys">ListPendingInvitationResourcesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListPendingInvitationResources action. |
+| <code><a href="#@cdk_utils/iam.ram.RamConditions.property.DisassociateResourceSharePermissionConditionKeys">DisassociateResourceSharePermissionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DisassociateResourceSharePermission action. |
 | <code><a href="#@cdk_utils/iam.ram.RamConditions.property.ListPermissionAssociationsConditionKeys">ListPermissionAssociationsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListPermissionAssociations action. |
-| <code><a href="#@cdk_utils/iam.ram.RamConditions.property.ListResourceSharePermissionsConditionKeys">ListResourceSharePermissionsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListResourceSharePermissions action. |
 | <code><a href="#@cdk_utils/iam.ram.RamConditions.property.PERMISSION_ARN">PERMISSION_ARN</a></code> | <code>string</code> | Condition key: ram:PermissionArn (ARN). |
 | <code><a href="#@cdk_utils/iam.ram.RamConditions.property.PERMISSION_RESOURCE_TYPE">PERMISSION_RESOURCE_TYPE</a></code> | <code>string</code> | Condition key: ram:PermissionResourceType (String). |
+| <code><a href="#@cdk_utils/iam.ram.RamConditions.property.PERMISSION_TEMPLATE_PARAMETER">PERMISSION_TEMPLATE_PARAMETER</a></code> | <code>string</code> | Condition key: ram:PermissionTemplateParameter/${ParameterName} (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.ram.RamConditions.property.PRINCIPAL">PRINCIPAL</a></code> | <code>string</code> | Condition key: ram:Principal (String). |
 | <code><a href="#@cdk_utils/iam.ram.RamConditions.property.PromotePermissionCreatedFromPolicyConditionKeys">PromotePermissionCreatedFromPolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PromotePermissionCreatedFromPolicy action. |
-| <code><a href="#@cdk_utils/iam.ram.RamConditions.property.RejectResourceShareInvitationConditionKeys">RejectResourceShareInvitationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the RejectResourceShareInvitation action. |
+| <code><a href="#@cdk_utils/iam.ram.RamConditions.property.PutCustomerManagedPermissionPolicyConditionKeys">PutCustomerManagedPermissionPolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutCustomerManagedPermissionPolicy action. |
 | <code><a href="#@cdk_utils/iam.ram.RamConditions.property.ReplacePermissionAssociationsConditionKeys">ReplacePermissionAssociationsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ReplacePermissionAssociations action. |
 | <code><a href="#@cdk_utils/iam.ram.RamConditions.property.REQUESTED_ALLOWS_EXTERNAL_PRINCIPALS">REQUESTED_ALLOWS_EXTERNAL_PRINCIPALS</a></code> | <code>string</code> | Condition key: ram:RequestedAllowsExternalPrincipals (Bool). |
+| <code><a href="#@cdk_utils/iam.ram.RamConditions.property.REQUESTED_PERMISSION_ARNS">REQUESTED_PERMISSION_ARNS</a></code> | <code>string</code> | Condition key: ram:RequestedPermissionArns (ArrayOfARN). |
+| <code><a href="#@cdk_utils/iam.ram.RamConditions.property.REQUESTED_PERMISSION_RESOURCE_TYPES">REQUESTED_PERMISSION_RESOURCE_TYPES</a></code> | <code>string</code> | Condition key: ram:RequestedPermissionResourceTypes (ArrayOfString). |
+| <code><a href="#@cdk_utils/iam.ram.RamConditions.property.REQUESTED_PRINCIPALS">REQUESTED_PRINCIPALS</a></code> | <code>string</code> | Condition key: ram:RequestedPrincipals (ArrayOfString). |
+| <code><a href="#@cdk_utils/iam.ram.RamConditions.property.REQUESTED_RESOURCE_ARNS">REQUESTED_RESOURCE_ARNS</a></code> | <code>string</code> | Condition key: ram:RequestedResourceArns (ArrayOfARN). |
 | <code><a href="#@cdk_utils/iam.ram.RamConditions.property.REQUESTED_RESOURCE_TYPE">REQUESTED_RESOURCE_TYPE</a></code> | <code>string</code> | Condition key: ram:RequestedResourceType (String). |
+| <code><a href="#@cdk_utils/iam.ram.RamConditions.property.REQUESTED_RESOURCE_TYPES">REQUESTED_RESOURCE_TYPES</a></code> | <code>string</code> | Condition key: ram:RequestedResourceTypes (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.ram.RamConditions.property.RESOURCE_ARN">RESOURCE_ARN</a></code> | <code>string</code> | Condition key: ram:ResourceArn (ARN). |
 | <code><a href="#@cdk_utils/iam.ram.RamConditions.property.RESOURCE_SHARE_NAME">RESOURCE_SHARE_NAME</a></code> | <code>string</code> | Condition key: ram:ResourceShareName (String). |
 | <code><a href="#@cdk_utils/iam.ram.RamConditions.property.RESOURCE_TAG">RESOURCE_TAG</a></code> | <code>string</code> | Condition key: ram:ResourceTag/${TagKey} (String). |
@@ -1414,19 +1601,19 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.ram.RamConditions.property.SHARE_OWNER_ACCOUNT_ID">SHARE_OWNER_ACCOUNT_ID</a></code> | <code>string</code> | Condition key: ram:ShareOwnerAccountId (String). |
 | <code><a href="#@cdk_utils/iam.ram.RamConditions.property.TagResourceConditionKeys">TagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TagResource action. |
 | <code><a href="#@cdk_utils/iam.ram.RamConditions.property.UntagResourceConditionKeys">UntagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UntagResource action. |
-| <code><a href="#@cdk_utils/iam.ram.RamConditions.property.UpdateResourceShareConditionKeys">UpdateResourceShareConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateResourceShare action. |
+| <code><a href="#@cdk_utils/iam.ram.RamConditions.property.UpdatePermissionConditionKeys">UpdatePermissionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdatePermission action. |
 
 ---
 
-##### `AcceptResourceShareInvitationConditionKeys`<sup>Required</sup> <a name="AcceptResourceShareInvitationConditionKeys" id="@cdk_utils/iam.ram.RamConditions.property.AcceptResourceShareInvitationConditionKeys"></a>
+##### `actionGetCustomerManagedPermissionPolicyConditionKeys`<sup>Required</sup> <a name="actionGetCustomerManagedPermissionPolicyConditionKeys" id="@cdk_utils/iam.ram.RamConditions.property.actionGetCustomerManagedPermissionPolicyConditionKeys"></a>
 
 ```typescript
-public readonly AcceptResourceShareInvitationConditionKeys: string[];
+public readonly actionGetCustomerManagedPermissionPolicyConditionKeys: string[];
 ```
 
 - *Type:* string[]
 
-Condition keys applicable to the AcceptResourceShareInvitation action.
+Condition keys applicable to the GetCustomerManagedPermissionPolicy action.
 
 ---
 
@@ -1439,18 +1626,6 @@ public readonly actionGetPermissionConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the GetPermission action.
-
----
-
-##### `actionGetResourceSharesConditionKeys`<sup>Required</sup> <a name="actionGetResourceSharesConditionKeys" id="@cdk_utils/iam.ram.RamConditions.property.actionGetResourceSharesConditionKeys"></a>
-
-```typescript
-public readonly actionGetResourceSharesConditionKeys: string[];
-```
-
-- *Type:* string[]
-
-Condition keys applicable to the GetResourceShares action.
 
 ---
 
@@ -1487,6 +1662,18 @@ public readonly AssociateResourceShareConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the AssociateResourceShare action.
+
+---
+
+##### `AssociateResourceSharePermissionConditionKeys`<sup>Required</sup> <a name="AssociateResourceSharePermissionConditionKeys" id="@cdk_utils/iam.ram.RamConditions.property.AssociateResourceSharePermissionConditionKeys"></a>
+
+```typescript
+public readonly AssociateResourceSharePermissionConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the AssociateResourceSharePermission action.
 
 ---
 
@@ -1562,6 +1749,18 @@ Condition keys applicable to the CreateResourceShare action.
 
 ---
 
+##### `DeleteCustomerManagedPermissionPolicyConditionKeys`<sup>Required</sup> <a name="DeleteCustomerManagedPermissionPolicyConditionKeys" id="@cdk_utils/iam.ram.RamConditions.property.DeleteCustomerManagedPermissionPolicyConditionKeys"></a>
+
+```typescript
+public readonly DeleteCustomerManagedPermissionPolicyConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DeleteCustomerManagedPermissionPolicy action.
+
+---
+
 ##### `DeletePermissionConditionKeys`<sup>Required</sup> <a name="DeletePermissionConditionKeys" id="@cdk_utils/iam.ram.RamConditions.property.DeletePermissionConditionKeys"></a>
 
 ```typescript
@@ -1586,18 +1785,6 @@ Condition keys applicable to the DeletePermissionVersion action.
 
 ---
 
-##### `DeleteResourceShareConditionKeys`<sup>Required</sup> <a name="DeleteResourceShareConditionKeys" id="@cdk_utils/iam.ram.RamConditions.property.DeleteResourceShareConditionKeys"></a>
-
-```typescript
-public readonly DeleteResourceShareConditionKeys: string[];
-```
-
-- *Type:* string[]
-
-Condition keys applicable to the DeleteResourceShare action.
-
----
-
 ##### `DisassociateResourceShareConditionKeys`<sup>Required</sup> <a name="DisassociateResourceShareConditionKeys" id="@cdk_utils/iam.ram.RamConditions.property.DisassociateResourceShareConditionKeys"></a>
 
 ```typescript
@@ -1610,15 +1797,15 @@ Condition keys applicable to the DisassociateResourceShare action.
 
 ---
 
-##### `ListPendingInvitationResourcesConditionKeys`<sup>Required</sup> <a name="ListPendingInvitationResourcesConditionKeys" id="@cdk_utils/iam.ram.RamConditions.property.ListPendingInvitationResourcesConditionKeys"></a>
+##### `DisassociateResourceSharePermissionConditionKeys`<sup>Required</sup> <a name="DisassociateResourceSharePermissionConditionKeys" id="@cdk_utils/iam.ram.RamConditions.property.DisassociateResourceSharePermissionConditionKeys"></a>
 
 ```typescript
-public readonly ListPendingInvitationResourcesConditionKeys: string[];
+public readonly DisassociateResourceSharePermissionConditionKeys: string[];
 ```
 
 - *Type:* string[]
 
-Condition keys applicable to the ListPendingInvitationResources action.
+Condition keys applicable to the DisassociateResourceSharePermission action.
 
 ---
 
@@ -1631,18 +1818,6 @@ public readonly ListPermissionAssociationsConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the ListPermissionAssociations action.
-
----
-
-##### `ListResourceSharePermissionsConditionKeys`<sup>Required</sup> <a name="ListResourceSharePermissionsConditionKeys" id="@cdk_utils/iam.ram.RamConditions.property.ListResourceSharePermissionsConditionKeys"></a>
-
-```typescript
-public readonly ListResourceSharePermissionsConditionKeys: string[];
-```
-
-- *Type:* string[]
-
-Condition keys applicable to the ListResourceSharePermissions action.
 
 ---
 
@@ -1670,6 +1845,18 @@ Condition key: ram:PermissionResourceType (String).
 
 ---
 
+##### `PERMISSION_TEMPLATE_PARAMETER`<sup>Required</sup> <a name="PERMISSION_TEMPLATE_PARAMETER" id="@cdk_utils/iam.ram.RamConditions.property.PERMISSION_TEMPLATE_PARAMETER"></a>
+
+```typescript
+public readonly PERMISSION_TEMPLATE_PARAMETER: string;
+```
+
+- *Type:* string
+
+Condition key: ram:PermissionTemplateParameter/${ParameterName} (ArrayOfString).
+
+---
+
 ##### `PRINCIPAL`<sup>Required</sup> <a name="PRINCIPAL" id="@cdk_utils/iam.ram.RamConditions.property.PRINCIPAL"></a>
 
 ```typescript
@@ -1694,15 +1881,15 @@ Condition keys applicable to the PromotePermissionCreatedFromPolicy action.
 
 ---
 
-##### `RejectResourceShareInvitationConditionKeys`<sup>Required</sup> <a name="RejectResourceShareInvitationConditionKeys" id="@cdk_utils/iam.ram.RamConditions.property.RejectResourceShareInvitationConditionKeys"></a>
+##### `PutCustomerManagedPermissionPolicyConditionKeys`<sup>Required</sup> <a name="PutCustomerManagedPermissionPolicyConditionKeys" id="@cdk_utils/iam.ram.RamConditions.property.PutCustomerManagedPermissionPolicyConditionKeys"></a>
 
 ```typescript
-public readonly RejectResourceShareInvitationConditionKeys: string[];
+public readonly PutCustomerManagedPermissionPolicyConditionKeys: string[];
 ```
 
 - *Type:* string[]
 
-Condition keys applicable to the RejectResourceShareInvitation action.
+Condition keys applicable to the PutCustomerManagedPermissionPolicy action.
 
 ---
 
@@ -1730,6 +1917,54 @@ Condition key: ram:RequestedAllowsExternalPrincipals (Bool).
 
 ---
 
+##### `REQUESTED_PERMISSION_ARNS`<sup>Required</sup> <a name="REQUESTED_PERMISSION_ARNS" id="@cdk_utils/iam.ram.RamConditions.property.REQUESTED_PERMISSION_ARNS"></a>
+
+```typescript
+public readonly REQUESTED_PERMISSION_ARNS: string;
+```
+
+- *Type:* string
+
+Condition key: ram:RequestedPermissionArns (ArrayOfARN).
+
+---
+
+##### `REQUESTED_PERMISSION_RESOURCE_TYPES`<sup>Required</sup> <a name="REQUESTED_PERMISSION_RESOURCE_TYPES" id="@cdk_utils/iam.ram.RamConditions.property.REQUESTED_PERMISSION_RESOURCE_TYPES"></a>
+
+```typescript
+public readonly REQUESTED_PERMISSION_RESOURCE_TYPES: string;
+```
+
+- *Type:* string
+
+Condition key: ram:RequestedPermissionResourceTypes (ArrayOfString).
+
+---
+
+##### `REQUESTED_PRINCIPALS`<sup>Required</sup> <a name="REQUESTED_PRINCIPALS" id="@cdk_utils/iam.ram.RamConditions.property.REQUESTED_PRINCIPALS"></a>
+
+```typescript
+public readonly REQUESTED_PRINCIPALS: string;
+```
+
+- *Type:* string
+
+Condition key: ram:RequestedPrincipals (ArrayOfString).
+
+---
+
+##### `REQUESTED_RESOURCE_ARNS`<sup>Required</sup> <a name="REQUESTED_RESOURCE_ARNS" id="@cdk_utils/iam.ram.RamConditions.property.REQUESTED_RESOURCE_ARNS"></a>
+
+```typescript
+public readonly REQUESTED_RESOURCE_ARNS: string;
+```
+
+- *Type:* string
+
+Condition key: ram:RequestedResourceArns (ArrayOfARN).
+
+---
+
 ##### `REQUESTED_RESOURCE_TYPE`<sup>Required</sup> <a name="REQUESTED_RESOURCE_TYPE" id="@cdk_utils/iam.ram.RamConditions.property.REQUESTED_RESOURCE_TYPE"></a>
 
 ```typescript
@@ -1739,6 +1974,18 @@ public readonly REQUESTED_RESOURCE_TYPE: string;
 - *Type:* string
 
 Condition key: ram:RequestedResourceType (String).
+
+---
+
+##### `REQUESTED_RESOURCE_TYPES`<sup>Required</sup> <a name="REQUESTED_RESOURCE_TYPES" id="@cdk_utils/iam.ram.RamConditions.property.REQUESTED_RESOURCE_TYPES"></a>
+
+```typescript
+public readonly REQUESTED_RESOURCE_TYPES: string;
+```
+
+- *Type:* string
+
+Condition key: ram:RequestedResourceTypes (ArrayOfString).
 
 ---
 
@@ -1826,15 +2073,15 @@ Condition keys applicable to the UntagResource action.
 
 ---
 
-##### `UpdateResourceShareConditionKeys`<sup>Required</sup> <a name="UpdateResourceShareConditionKeys" id="@cdk_utils/iam.ram.RamConditions.property.UpdateResourceShareConditionKeys"></a>
+##### `UpdatePermissionConditionKeys`<sup>Required</sup> <a name="UpdatePermissionConditionKeys" id="@cdk_utils/iam.ram.RamConditions.property.UpdatePermissionConditionKeys"></a>
 
 ```typescript
-public readonly UpdateResourceShareConditionKeys: string[];
+public readonly UpdatePermissionConditionKeys: string[];
 ```
 
 - *Type:* string[]
 
-Condition keys applicable to the UpdateResourceShare action.
+Condition keys applicable to the UpdatePermission action.
 
 ---
 
@@ -1896,6 +2143,7 @@ new ram.RamOperations()
 | <code><a href="#@cdk_utils/iam.ram.RamOperations.property.ReplacePermissionAssociations">ReplacePermissionAssociations</a></code> | <code>string[]</code> | IAM actions required for the ReplacePermissionAssociations API call. |
 | <code><a href="#@cdk_utils/iam.ram.RamOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
 | <code><a href="#@cdk_utils/iam.ram.RamOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
+| <code><a href="#@cdk_utils/iam.ram.RamOperations.property.UpdatePermission">UpdatePermission</a></code> | <code>string[]</code> | IAM actions required for the UpdatePermission API call. |
 | <code><a href="#@cdk_utils/iam.ram.RamOperations.property.UpdateResourceShare">UpdateResourceShare</a></code> | <code>string[]</code> | IAM actions required for the UpdateResourceShare API call. |
 
 ---
@@ -2305,6 +2553,18 @@ public readonly UntagResource: string[];
 - *Type:* string[]
 
 IAM actions required for the UntagResource API call.
+
+---
+
+##### `UpdatePermission`<sup>Required</sup> <a name="UpdatePermission" id="@cdk_utils/iam.ram.RamOperations.property.UpdatePermission"></a>
+
+```typescript
+public readonly UpdatePermission: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdatePermission API call.
 
 ---
 

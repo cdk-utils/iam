@@ -218,6 +218,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -499,6 +500,7 @@
       "Name": "DeleteFirewallPolicyV2",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -828,6 +830,7 @@
       "Name": "DescribeFirewallPolicyV2",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1299,6 +1302,7 @@
       "Name": "ListFirewallPoliciesV2",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1972,6 +1976,7 @@
       "Name": "UpdateFirewallPolicyV2",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2370,6 +2375,34 @@
       ]
     },
     {
+      "Name": "CreateFirewallPolicyV2",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateFirewallPolicyV2",
+          "Service": "network-firewall"
+        },
+        {
+          "Name": "ListRuleGroups",
+          "Service": "network-firewall"
+        },
+        {
+          "Name": "ListTLSInspectionConfigurations",
+          "Service": "network-firewall"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "create_firewall_policy_v2",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "CreateProxy",
       "AuthorizedActions": [
         {
@@ -2557,6 +2590,22 @@
         {
           "Name": "network-firewall",
           "Method": "delete_firewall_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteFirewallPolicyV2",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteFirewallPolicyV2",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "delete_firewall_policy_v2",
           "Package": "Boto3"
         }
       ]
@@ -2765,6 +2814,22 @@
         {
           "Name": "network-firewall",
           "Method": "describe_firewall_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeFirewallPolicyV2",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeFirewallPolicyV2",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "describe_firewall_policy_v2",
           "Package": "Boto3"
         }
       ]
@@ -3069,6 +3134,22 @@
         {
           "Name": "network-firewall",
           "Method": "list_firewall_policies",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFirewallPoliciesV2",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFirewallPoliciesV2",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "list_firewall_policies_v2",
           "Package": "Boto3"
         }
       ]
@@ -3477,6 +3558,30 @@
         {
           "Name": "network-firewall",
           "Method": "update_firewall_policy_change_protection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateFirewallPolicyV2",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRuleGroups",
+          "Service": "network-firewall"
+        },
+        {
+          "Name": "ListTLSInspectionConfigurations",
+          "Service": "network-firewall"
+        },
+        {
+          "Name": "UpdateFirewallPolicyV2",
+          "Service": "network-firewall"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-firewall",
+          "Method": "update_firewall_policy_v2",
           "Package": "Boto3"
         }
       ]

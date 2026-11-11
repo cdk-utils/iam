@@ -17,8 +17,12 @@ export class AgentaccessMcpActions {
 	/** [Read] agentaccess-mcp:CheckConnectionStatus */
 	static readonly CheckConnectionStatus =
 		"agentaccess-mcp:CheckConnectionStatus";
+	/** [Write] agentaccess-mcp:CloseSession */
+	static readonly CloseSession = "agentaccess-mcp:CloseSession";
 	/** [Write] agentaccess-mcp:DoubleClick */
 	static readonly DoubleClick = "agentaccess-mcp:DoubleClick";
+	/** [Write] agentaccess-mcp:ExecuteSequence */
+	static readonly ExecuteSequence = "agentaccess-mcp:ExecuteSequence";
 	/** [Read] agentaccess-mcp:GetScreenshot */
 	static readonly actionGetScreenshot = "agentaccess-mcp:GetScreenshot";
 	/** [Read] agentaccess-mcp:GetSessionInfo */
@@ -53,6 +57,8 @@ export class AgentaccessMcpActions {
 	static readonly TripleClick = "agentaccess-mcp:TripleClick";
 	/** [Write] agentaccess-mcp:TypeText */
 	static readonly TypeText = "agentaccess-mcp:TypeText";
+	/** [Write] agentaccess-mcp:Wait */
+	static readonly Wait = "agentaccess-mcp:Wait";
 
 	/** All read-level actions. */
 	static readonly AllReadActions: string[] = [
@@ -63,7 +69,9 @@ export class AgentaccessMcpActions {
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
 		AgentaccessMcpActions.CallForwardedTool,
+		AgentaccessMcpActions.CloseSession,
 		AgentaccessMcpActions.DoubleClick,
+		AgentaccessMcpActions.ExecuteSequence,
 		AgentaccessMcpActions.HoldKey,
 		AgentaccessMcpActions.InvokeMcp,
 		AgentaccessMcpActions.KeyPress,
@@ -79,6 +87,7 @@ export class AgentaccessMcpActions {
 		AgentaccessMcpActions.ToggleAppSwitcher,
 		AgentaccessMcpActions.TripleClick,
 		AgentaccessMcpActions.TypeText,
+		AgentaccessMcpActions.Wait,
 	];
 	/** All list-level actions. */
 	static readonly AllListActions: string[] = [];
@@ -100,8 +109,16 @@ export class AgentaccessMcpConditions {
 	static readonly CheckConnectionStatusConditionKeys: string[] = [
 		"agentaccess-mcp:StackArn",
 	];
+	/** Condition keys applicable to the CloseSession action. */
+	static readonly CloseSessionConditionKeys: string[] = [
+		"agentaccess-mcp:StackArn",
+	];
 	/** Condition keys applicable to the DoubleClick action. */
 	static readonly DoubleClickConditionKeys: string[] = [
+		"agentaccess-mcp:StackArn",
+	];
+	/** Condition keys applicable to the ExecuteSequence action. */
+	static readonly ExecuteSequenceConditionKeys: string[] = [
 		"agentaccess-mcp:StackArn",
 	];
 	/** Condition keys applicable to the GetScreenshot action. */
@@ -168,6 +185,8 @@ export class AgentaccessMcpConditions {
 	static readonly TypeTextConditionKeys: string[] = [
 		"agentaccess-mcp:StackArn",
 	];
+	/** Condition keys applicable to the Wait action. */
+	static readonly WaitConditionKeys: string[] = ["agentaccess-mcp:StackArn"];
 
 	/** Condition key: agentaccess-mcp:StackArn (ARN) */
 	static readonly STACK_ARN = "agentaccess-mcp:StackArn";

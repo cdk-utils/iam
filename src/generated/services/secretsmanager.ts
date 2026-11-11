@@ -188,6 +188,7 @@ export class SecretsManagerOperations {
 	/** IAM actions required for the CreateSecret API call. */
 	static readonly CreateSecret: string[] = [
 		"secretsmanager:CreateSecret",
+		"secretsmanager:PutResourcePolicy",
 		"secretsmanager:ReplicateSecretToRegions",
 		"secretsmanager:TagResource",
 	];

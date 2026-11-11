@@ -82,6 +82,8 @@ export class Route53domainsActions {
 	/** [Write] route53domains:ResendOperationAuthorization */
 	static readonly ResendOperationAuthorization =
 		"route53domains:ResendOperationAuthorization";
+	/** [Write] route53domains:RestoreDomain */
+	static readonly RestoreDomain = "route53domains:RestoreDomain";
 	/** [Write] route53domains:RetrieveDomainAuthCode */
 	static readonly RetrieveDomainAuthCode =
 		"route53domains:RetrieveDomainAuthCode";
@@ -132,6 +134,7 @@ export class Route53domainsActions {
 		Route53domainsActions.RenewDomain,
 		Route53domainsActions.ResendContactReachabilityEmail,
 		Route53domainsActions.ResendOperationAuthorization,
+		Route53domainsActions.RestoreDomain,
 		Route53domainsActions.RetrieveDomainAuthCode,
 		Route53domainsActions.TransferDomain,
 		Route53domainsActions.TransferDomainToAnotherAwsAccount,
@@ -255,6 +258,8 @@ export class Route53domainsOperations {
 	static readonly ResendOperationAuthorization: string[] = [
 		"route53domains:ResendOperationAuthorization",
 	];
+	/** IAM actions required for the RestoreDomain API call. */
+	static readonly RestoreDomain: string[] = ["route53domains:RestoreDomain"];
 	/** IAM actions required for the RetrieveDomainAuthCode API call. */
 	static readonly RetrieveDomainAuthCode: string[] = [
 		"route53domains:RetrieveDomainAuthCode",

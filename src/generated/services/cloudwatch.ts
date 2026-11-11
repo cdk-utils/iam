@@ -117,6 +117,8 @@ export class CloudWatchActions {
 		"cloudwatch:DescribeAnomalyDetectors";
 	/** [Read] cloudwatch:DescribeInsightRules */
 	static readonly DescribeInsightRules = "cloudwatch:DescribeInsightRules";
+	/** [Read] cloudwatch:DetectGroupOutliers */
+	static readonly DetectGroupOutliers = "cloudwatch:DetectGroupOutliers";
 	/** [Write] cloudwatch:DisableAlarmActions */
 	static readonly DisableAlarmActions = "cloudwatch:DisableAlarmActions";
 	/** [Write] cloudwatch:DisableInsightRules */
@@ -206,6 +208,8 @@ export class CloudWatchActions {
 	/** [Read] cloudwatch:GetSpaceCredentialsForOrganization */
 	static readonly actionGetSpaceCredentialsForOrganization =
 		"cloudwatch:GetSpaceCredentialsForOrganization";
+	/** [Read] cloudwatch:GetSpaceDataAccess */
+	static readonly actionGetSpaceDataAccess = "cloudwatch:GetSpaceDataAccess";
 	/** [Read] cloudwatch:GetTelemetryQueryResults */
 	static readonly actionGetTelemetryQueryResults =
 		"cloudwatch:GetTelemetryQueryResults";
@@ -380,6 +384,7 @@ export class CloudWatchActions {
 		CloudWatchActions.DescribeAlarmsForMetric,
 		CloudWatchActions.DescribeAnomalyDetectors,
 		CloudWatchActions.DescribeInsightRules,
+		CloudWatchActions.DetectGroupOutliers,
 		CloudWatchActions.GenerateQuery,
 		CloudWatchActions.GenerateQueryResultsSummary,
 		CloudWatchActions.actionGetAccessGrant,
@@ -414,6 +419,7 @@ export class CloudWatchActions {
 		CloudWatchActions.actionGetSpace,
 		CloudWatchActions.actionGetSpaceCredentials,
 		CloudWatchActions.actionGetSpaceCredentialsForOrganization,
+		CloudWatchActions.actionGetSpaceDataAccess,
 		CloudWatchActions.actionGetTelemetryQueryResults,
 		CloudWatchActions.actionGetTopologyDiscoveryStatus,
 		CloudWatchActions.actionGetTopologyMap,
@@ -1061,6 +1067,8 @@ export interface CloudWatchSpaceArnComponents {
 export interface CloudWatchViewArnProps {
 	/** The ViewName component of the ARN. */
 	readonly viewName: string;
+	/** The ViewId component of the ARN. */
+	readonly viewId: string;
 	/** AWS region. Defaults to "*". */
 	readonly region?: string;
 	/** AWS account ID. Defaults to "*". */
@@ -1081,6 +1089,8 @@ export interface CloudWatchViewArnComponents {
 	readonly account: string;
 	/** The ViewName component. */
 	readonly viewName: string;
+	/** The ViewId component. */
+	readonly viewId: string;
 }
 
 const AccessGrantArnRegex =
@@ -1120,7 +1130,7 @@ const SloArnRegex =
 const SpaceArnRegex =
 	/^arn:(?<partition>[^:]+):cloudwatch:(?<region>[^:]*):(?<account>[^:]*):space\/(?<spaceId>[^:/?]+)$/;
 const ViewArnRegex =
-	/^arn:(?<partition>[^:]+):cloudwatch:(?<region>[^:]*):(?<account>[^:]*):view\/(?<viewName>[^:/?]+)$/;
+	/^arn:(?<partition>[^:]+):cloudwatch:(?<region>[^:]*):(?<account>[^:]*):view\/(?<viewName>[^:/?]+)\/(?<viewId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for cloudwatch resources.
@@ -1707,7 +1717,7 @@ export class CloudWatchResources {
 	 * Builds an ARN for the view resource.
 	 */
 	static view(props: CloudWatchViewArnProps): string {
-		return `arn:${props.partition ?? "aws"}:cloudwatch:${props.region ?? "*"}:${props.account ?? "*"}:view/${props.viewName}`;
+		return `arn:${props.partition ?? "aws"}:cloudwatch:${props.region ?? "*"}:${props.account ?? "*"}:view/${props.viewName}/${props.viewId}`;
 	}
 
 	/**
@@ -1731,6 +1741,7 @@ export class CloudWatchResources {
 			region: match.groups.region,
 			account: match.groups.account,
 			viewName: match.groups!.viewName,
+			viewId: match.groups!.viewId,
 		};
 	}
 }
@@ -1961,6 +1972,10 @@ export class CloudWatchOperations {
 	static readonly opGetSpaceCredentialsForOrganization: string[] = [
 		"cloudwatch:GetSpaceCredentialsForOrganization",
 	];
+	/** IAM actions required for the GetSpaceDataAccess API call. */
+	static readonly opGetSpaceDataAccess: string[] = [
+		"cloudwatch:GetSpaceDataAccess",
+	];
 	/** IAM actions required for the GetTelemetryQueryResults API call. */
 	static readonly opGetTelemetryQueryResults: string[] = [
 		"cloudwatch:GetTelemetryQueryResults",
@@ -2068,6 +2083,7 @@ export class CloudWatchOperations {
 	];
 	/** IAM actions required for the PutMetricAlarm API call. */
 	static readonly PutMetricAlarm: string[] = [
+		"cloudwatch:ListTagsForResource",
 		"cloudwatch:PutMetricAlarm",
 		"cloudwatch:TagResource",
 	];
@@ -2312,6 +2328,10 @@ export class CloudWatchConditions {
 		["cloudwatch:ResourceArn"];
 	/** Condition keys applicable to the GetSpace action. */
 	static readonly actionGetSpaceConditionKeys: string[] = [
+		"cloudwatch:HasAccessGrant",
+	];
+	/** Condition keys applicable to the GetSpaceDataAccess action. */
+	static readonly actionGetSpaceDataAccessConditionKeys: string[] = [
 		"cloudwatch:HasAccessGrant",
 	];
 	/** Condition keys applicable to the GetTelemetryQueryResults action. */
