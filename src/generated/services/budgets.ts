@@ -248,7 +248,6 @@ export class BudgetsOperations {
 	/** IAM actions required for the DescribeBudgetAction API call. */
 	static readonly DescribeBudgetAction: string[] = [
 		"budgets:DescribeBudgetAction",
-		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the DescribeBudgetActionHistories API call. */
 	static readonly DescribeBudgetActionHistories: string[] = [

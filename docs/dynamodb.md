@@ -177,6 +177,154 @@ Defaults to "*".
 
 ---
 
+### DynamoDBBulkOperationArnComponents <a name="DynamoDBBulkOperationArnComponents" id="@cdk_utils/iam.dynamodb.DynamoDBBulkOperationArnComponents"></a>
+
+Parsed components of a bulk-operation ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.dynamodb.DynamoDBBulkOperationArnComponents.Initializer"></a>
+
+```typescript
+import { dynamodb } from '@cdk_utils/iam'
+
+const dynamoDBBulkOperationArnComponents: dynamodb.DynamoDBBulkOperationArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBBulkOperationArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBBulkOperationArnComponents.property.bulkOperationId">bulkOperationId</a></code> | <code>string</code> | The BulkOperationId component. |
+| <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBBulkOperationArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBBulkOperationArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.dynamodb.DynamoDBBulkOperationArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `bulkOperationId`<sup>Required</sup> <a name="bulkOperationId" id="@cdk_utils/iam.dynamodb.DynamoDBBulkOperationArnComponents.property.bulkOperationId"></a>
+
+```typescript
+public readonly bulkOperationId: string;
+```
+
+- *Type:* string
+
+The BulkOperationId component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.dynamodb.DynamoDBBulkOperationArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.dynamodb.DynamoDBBulkOperationArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### DynamoDBBulkOperationArnProps <a name="DynamoDBBulkOperationArnProps" id="@cdk_utils/iam.dynamodb.DynamoDBBulkOperationArnProps"></a>
+
+Properties for building a bulk-operation ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.dynamodb.DynamoDBBulkOperationArnProps.Initializer"></a>
+
+```typescript
+import { dynamodb } from '@cdk_utils/iam'
+
+const dynamoDBBulkOperationArnProps: dynamodb.DynamoDBBulkOperationArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBBulkOperationArnProps.property.bulkOperationId">bulkOperationId</a></code> | <code>string</code> | The BulkOperationId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBBulkOperationArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBBulkOperationArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBBulkOperationArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `bulkOperationId`<sup>Required</sup> <a name="bulkOperationId" id="@cdk_utils/iam.dynamodb.DynamoDBBulkOperationArnProps.property.bulkOperationId"></a>
+
+```typescript
+public readonly bulkOperationId: string;
+```
+
+- *Type:* string
+
+The BulkOperationId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.dynamodb.DynamoDBBulkOperationArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.dynamodb.DynamoDBBulkOperationArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.dynamodb.DynamoDBBulkOperationArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### DynamoDBExportArnComponents <a name="DynamoDBExportArnComponents" id="@cdk_utils/iam.dynamodb.DynamoDBExportArnComponents"></a>
 
 Parsed components of a export ARN.
@@ -1180,6 +1328,8 @@ new dynamodb.DynamoDBActions()
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBActions.property.AssociateTableReplica">AssociateTableReplica</a></code> | <code>string</code> | [Write] dynamodb:AssociateTableReplica. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBActions.property.BatchGetItem">BatchGetItem</a></code> | <code>string</code> | [Read] dynamodb:BatchGetItem. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBActions.property.BatchWriteItem">BatchWriteItem</a></code> | <code>string</code> | [Write] dynamodb:BatchWriteItem. |
+| <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBActions.property.BulkPutItems">BulkPutItems</a></code> | <code>string</code> | [Write] dynamodb:BulkPutItems. |
+| <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBActions.property.CancelBulkOperation">CancelBulkOperation</a></code> | <code>string</code> | [Write] dynamodb:CancelBulkOperation. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBActions.property.ConditionCheckItem">ConditionCheckItem</a></code> | <code>string</code> | [Read] dynamodb:ConditionCheckItem. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBActions.property.CreateBackup">CreateBackup</a></code> | <code>string</code> | [Write] dynamodb:CreateBackup. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBActions.property.CreateGlobalTable">CreateGlobalTable</a></code> | <code>string</code> | [Write] dynamodb:CreateGlobalTable. |
@@ -1193,6 +1343,7 @@ new dynamodb.DynamoDBActions()
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBActions.property.DeleteTable">DeleteTable</a></code> | <code>string</code> | [Write] dynamodb:DeleteTable. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBActions.property.DeleteTableReplica">DeleteTableReplica</a></code> | <code>string</code> | [Write] dynamodb:DeleteTableReplica. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBActions.property.DescribeBackup">DescribeBackup</a></code> | <code>string</code> | [Read] dynamodb:DescribeBackup. |
+| <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBActions.property.DescribeBulkOperation">DescribeBulkOperation</a></code> | <code>string</code> | [Read] dynamodb:DescribeBulkOperation. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBActions.property.DescribeContinuousBackups">DescribeContinuousBackups</a></code> | <code>string</code> | [Read] dynamodb:DescribeContinuousBackups. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBActions.property.DescribeContributorInsights">DescribeContributorInsights</a></code> | <code>string</code> | [Read] dynamodb:DescribeContributorInsights. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBActions.property.DescribeEndpoints">DescribeEndpoints</a></code> | <code>string</code> | [Read] dynamodb:DescribeEndpoints. |
@@ -1215,6 +1366,7 @@ new dynamodb.DynamoDBActions()
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBActions.property.ImportTable">ImportTable</a></code> | <code>string</code> | [Write] dynamodb:ImportTable. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBActions.property.InjectError">InjectError</a></code> | <code>string</code> | [Write] dynamodb:InjectError. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBActions.property.ListBackups">ListBackups</a></code> | <code>string</code> | [List] dynamodb:ListBackups. |
+| <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBActions.property.ListBulkOperations">ListBulkOperations</a></code> | <code>string</code> | [List] dynamodb:ListBulkOperations. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBActions.property.ListContributorInsights">ListContributorInsights</a></code> | <code>string</code> | [List] dynamodb:ListContributorInsights. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBActions.property.ListExports">ListExports</a></code> | <code>string</code> | [List] dynamodb:ListExports. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBActions.property.ListGlobalTables">ListGlobalTables</a></code> | <code>string</code> | [List] dynamodb:ListGlobalTables. |
@@ -1239,6 +1391,7 @@ new dynamodb.DynamoDBActions()
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBActions.property.SearchVectors">SearchVectors</a></code> | <code>string</code> | [Read] dynamodb:SearchVectors. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBActions.property.StartAwsBackupJob">StartAwsBackupJob</a></code> | <code>string</code> | [Write] dynamodb:StartAwsBackupJob. |
+| <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBActions.property.StartBulkOperation">StartBulkOperation</a></code> | <code>string</code> | [Write] dynamodb:StartBulkOperation. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] dynamodb:TagResource. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] dynamodb:UntagResource. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBActions.property.UpdateAbacStatus">UpdateAbacStatus</a></code> | <code>string</code> | [PermissionManagement] dynamodb:UpdateAbacStatus. |
@@ -1412,6 +1565,30 @@ public readonly BatchWriteItem: string;
 
 ---
 
+##### `BulkPutItems`<sup>Required</sup> <a name="BulkPutItems" id="@cdk_utils/iam.dynamodb.DynamoDBActions.property.BulkPutItems"></a>
+
+```typescript
+public readonly BulkPutItems: string;
+```
+
+- *Type:* string
+
+[Write] dynamodb:BulkPutItems.
+
+---
+
+##### `CancelBulkOperation`<sup>Required</sup> <a name="CancelBulkOperation" id="@cdk_utils/iam.dynamodb.DynamoDBActions.property.CancelBulkOperation"></a>
+
+```typescript
+public readonly CancelBulkOperation: string;
+```
+
+- *Type:* string
+
+[Write] dynamodb:CancelBulkOperation.
+
+---
+
 ##### `ConditionCheckItem`<sup>Required</sup> <a name="ConditionCheckItem" id="@cdk_utils/iam.dynamodb.DynamoDBActions.property.ConditionCheckItem"></a>
 
 ```typescript
@@ -1565,6 +1742,18 @@ public readonly DescribeBackup: string;
 - *Type:* string
 
 [Read] dynamodb:DescribeBackup.
+
+---
+
+##### `DescribeBulkOperation`<sup>Required</sup> <a name="DescribeBulkOperation" id="@cdk_utils/iam.dynamodb.DynamoDBActions.property.DescribeBulkOperation"></a>
+
+```typescript
+public readonly DescribeBulkOperation: string;
+```
+
+- *Type:* string
+
+[Read] dynamodb:DescribeBulkOperation.
 
 ---
 
@@ -1829,6 +2018,18 @@ public readonly ListBackups: string;
 - *Type:* string
 
 [List] dynamodb:ListBackups.
+
+---
+
+##### `ListBulkOperations`<sup>Required</sup> <a name="ListBulkOperations" id="@cdk_utils/iam.dynamodb.DynamoDBActions.property.ListBulkOperations"></a>
+
+```typescript
+public readonly ListBulkOperations: string;
+```
+
+- *Type:* string
+
+[List] dynamodb:ListBulkOperations.
 
 ---
 
@@ -2117,6 +2318,18 @@ public readonly StartAwsBackupJob: string;
 - *Type:* string
 
 [Write] dynamodb:StartAwsBackupJob.
+
+---
+
+##### `StartBulkOperation`<sup>Required</sup> <a name="StartBulkOperation" id="@cdk_utils/iam.dynamodb.DynamoDBActions.property.StartBulkOperation"></a>
+
+```typescript
+public readonly StartBulkOperation: string;
+```
+
+- *Type:* string
+
+[Write] dynamodb:StartBulkOperation.
 
 ---
 
@@ -3049,6 +3262,7 @@ new dynamodb.DynamoDBOperations()
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBOperations.property.BatchExecuteStatement">BatchExecuteStatement</a></code> | <code>string[]</code> | IAM actions required for the BatchExecuteStatement API call. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBOperations.property.BatchGetItem">BatchGetItem</a></code> | <code>string[]</code> | IAM actions required for the BatchGetItem API call. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBOperations.property.BatchWriteItem">BatchWriteItem</a></code> | <code>string[]</code> | IAM actions required for the BatchWriteItem API call. |
+| <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBOperations.property.CancelBulkOperation">CancelBulkOperation</a></code> | <code>string[]</code> | IAM actions required for the CancelBulkOperation API call. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBOperations.property.CreateBackup">CreateBackup</a></code> | <code>string[]</code> | IAM actions required for the CreateBackup API call. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBOperations.property.CreateGlobalTable">CreateGlobalTable</a></code> | <code>string[]</code> | IAM actions required for the CreateGlobalTable API call. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBOperations.property.CreateTable">CreateTable</a></code> | <code>string[]</code> | IAM actions required for the CreateTable API call. |
@@ -3057,6 +3271,7 @@ new dynamodb.DynamoDBOperations()
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBOperations.property.DeleteResourcePolicy">DeleteResourcePolicy</a></code> | <code>string[]</code> | IAM actions required for the DeleteResourcePolicy API call. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBOperations.property.DeleteTable">DeleteTable</a></code> | <code>string[]</code> | IAM actions required for the DeleteTable API call. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBOperations.property.DescribeBackup">DescribeBackup</a></code> | <code>string[]</code> | IAM actions required for the DescribeBackup API call. |
+| <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBOperations.property.DescribeBulkOperation">DescribeBulkOperation</a></code> | <code>string[]</code> | IAM actions required for the DescribeBulkOperation API call. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBOperations.property.DescribeContinuousBackups">DescribeContinuousBackups</a></code> | <code>string[]</code> | IAM actions required for the DescribeContinuousBackups API call. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBOperations.property.DescribeContributorInsights">DescribeContributorInsights</a></code> | <code>string[]</code> | IAM actions required for the DescribeContributorInsights API call. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBOperations.property.DescribeEndpoints">DescribeEndpoints</a></code> | <code>string[]</code> | IAM actions required for the DescribeEndpoints API call. |
@@ -3077,6 +3292,7 @@ new dynamodb.DynamoDBOperations()
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBOperations.property.ExportTableToPointInTime">ExportTableToPointInTime</a></code> | <code>string[]</code> | IAM actions required for the ExportTableToPointInTime API call. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBOperations.property.ImportTable">ImportTable</a></code> | <code>string[]</code> | IAM actions required for the ImportTable API call. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBOperations.property.ListBackups">ListBackups</a></code> | <code>string[]</code> | IAM actions required for the ListBackups API call. |
+| <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBOperations.property.ListBulkOperations">ListBulkOperations</a></code> | <code>string[]</code> | IAM actions required for the ListBulkOperations API call. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBOperations.property.ListContributorInsights">ListContributorInsights</a></code> | <code>string[]</code> | IAM actions required for the ListContributorInsights API call. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBOperations.property.ListExports">ListExports</a></code> | <code>string[]</code> | IAM actions required for the ListExports API call. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBOperations.property.ListGlobalTables">ListGlobalTables</a></code> | <code>string[]</code> | IAM actions required for the ListGlobalTables API call. |
@@ -3095,6 +3311,7 @@ new dynamodb.DynamoDBOperations()
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBOperations.property.RestoreTableToPointInTime">RestoreTableToPointInTime</a></code> | <code>string[]</code> | IAM actions required for the RestoreTableToPointInTime API call. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBOperations.property.Scan">Scan</a></code> | <code>string[]</code> | IAM actions required for the Scan API call. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBOperations.property.SearchVectors">SearchVectors</a></code> | <code>string[]</code> | IAM actions required for the SearchVectors API call. |
+| <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBOperations.property.StartBulkPutItems">StartBulkPutItems</a></code> | <code>string[]</code> | IAM actions required for the StartBulkPutItems API call. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBOperations.property.TransactGetItems">TransactGetItems</a></code> | <code>string[]</code> | IAM actions required for the TransactGetItems API call. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBOperations.property.TransactWriteItems">TransactWriteItems</a></code> | <code>string[]</code> | IAM actions required for the TransactWriteItems API call. |
@@ -3144,6 +3361,18 @@ public readonly BatchWriteItem: string[];
 - *Type:* string[]
 
 IAM actions required for the BatchWriteItem API call.
+
+---
+
+##### `CancelBulkOperation`<sup>Required</sup> <a name="CancelBulkOperation" id="@cdk_utils/iam.dynamodb.DynamoDBOperations.property.CancelBulkOperation"></a>
+
+```typescript
+public readonly CancelBulkOperation: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CancelBulkOperation API call.
 
 ---
 
@@ -3240,6 +3469,18 @@ public readonly DescribeBackup: string[];
 - *Type:* string[]
 
 IAM actions required for the DescribeBackup API call.
+
+---
+
+##### `DescribeBulkOperation`<sup>Required</sup> <a name="DescribeBulkOperation" id="@cdk_utils/iam.dynamodb.DynamoDBOperations.property.DescribeBulkOperation"></a>
+
+```typescript
+public readonly DescribeBulkOperation: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeBulkOperation API call.
 
 ---
 
@@ -3483,6 +3724,18 @@ IAM actions required for the ListBackups API call.
 
 ---
 
+##### `ListBulkOperations`<sup>Required</sup> <a name="ListBulkOperations" id="@cdk_utils/iam.dynamodb.DynamoDBOperations.property.ListBulkOperations"></a>
+
+```typescript
+public readonly ListBulkOperations: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListBulkOperations API call.
+
+---
+
 ##### `ListContributorInsights`<sup>Required</sup> <a name="ListContributorInsights" id="@cdk_utils/iam.dynamodb.DynamoDBOperations.property.ListContributorInsights"></a>
 
 ```typescript
@@ -3699,6 +3952,18 @@ IAM actions required for the SearchVectors API call.
 
 ---
 
+##### `StartBulkPutItems`<sup>Required</sup> <a name="StartBulkPutItems" id="@cdk_utils/iam.dynamodb.DynamoDBOperations.property.StartBulkPutItems"></a>
+
+```typescript
+public readonly StartBulkPutItems: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StartBulkPutItems API call.
+
+---
+
 ##### `TagResource`<sup>Required</sup> <a name="TagResource" id="@cdk_utils/iam.dynamodb.DynamoDBOperations.property.TagResource"></a>
 
 ```typescript
@@ -3878,11 +4143,13 @@ new dynamodb.DynamoDBResources()
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBResources.backup">backup</a></code> | Builds an ARN for the backup resource. |
+| <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBResources.bulkOperation">bulkOperation</a></code> | Builds an ARN for the bulk-operation resource. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBResources.export">export</a></code> | Builds an ARN for the export resource. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBResources.globalTable">globalTable</a></code> | Builds an ARN for the global-table resource. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBResources.import">import</a></code> | Builds an ARN for the import resource. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBResources.index">index</a></code> | Builds an ARN for the index resource. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBResources.isValidBackupArn">isValidBackupArn</a></code> | Validates whether a string is a valid ARN for the backup resource. |
+| <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBResources.isValidBulkOperationArn">isValidBulkOperationArn</a></code> | Validates whether a string is a valid ARN for the bulk-operation resource. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBResources.isValidExportArn">isValidExportArn</a></code> | Validates whether a string is a valid ARN for the export resource. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBResources.isValidGlobalTableArn">isValidGlobalTableArn</a></code> | Validates whether a string is a valid ARN for the global-table resource. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBResources.isValidImportArn">isValidImportArn</a></code> | Validates whether a string is a valid ARN for the import resource. |
@@ -3890,6 +4157,7 @@ new dynamodb.DynamoDBResources()
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBResources.isValidStreamArn">isValidStreamArn</a></code> | Validates whether a string is a valid ARN for the stream resource. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBResources.isValidTableArn">isValidTableArn</a></code> | Validates whether a string is a valid ARN for the table resource. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBResources.parseBackupArn">parseBackupArn</a></code> | Parses a backup ARN into its components. |
+| <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBResources.parseBulkOperationArn">parseBulkOperationArn</a></code> | Parses a bulk-operation ARN into its components. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBResources.parseExportArn">parseExportArn</a></code> | Parses a export ARN into its components. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBResources.parseGlobalTableArn">parseGlobalTableArn</a></code> | Parses a global-table ARN into its components. |
 | <code><a href="#@cdk_utils/iam.dynamodb.DynamoDBResources.parseImportArn">parseImportArn</a></code> | Parses a import ARN into its components. |
@@ -3914,6 +4182,22 @@ Builds an ARN for the backup resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.dynamodb.DynamoDBResources.backup.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.dynamodb.DynamoDBBackupArnProps">DynamoDBBackupArnProps</a>
+
+---
+
+##### `bulkOperation` <a name="bulkOperation" id="@cdk_utils/iam.dynamodb.DynamoDBResources.bulkOperation"></a>
+
+```typescript
+import { dynamodb } from '@cdk_utils/iam'
+
+dynamodb.DynamoDBResources.bulkOperation(props: DynamoDBBulkOperationArnProps)
+```
+
+Builds an ARN for the bulk-operation resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.dynamodb.DynamoDBResources.bulkOperation.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.dynamodb.DynamoDBBulkOperationArnProps">DynamoDBBulkOperationArnProps</a>
 
 ---
 
@@ -3992,6 +4276,22 @@ dynamodb.DynamoDBResources.isValidBackupArn(arn: string)
 Validates whether a string is a valid ARN for the backup resource.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.dynamodb.DynamoDBResources.isValidBackupArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidBulkOperationArn` <a name="isValidBulkOperationArn" id="@cdk_utils/iam.dynamodb.DynamoDBResources.isValidBulkOperationArn"></a>
+
+```typescript
+import { dynamodb } from '@cdk_utils/iam'
+
+dynamodb.DynamoDBResources.isValidBulkOperationArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the bulk-operation resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.dynamodb.DynamoDBResources.isValidBulkOperationArn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -4104,6 +4404,22 @@ dynamodb.DynamoDBResources.parseBackupArn(arn: string)
 Parses a backup ARN into its components.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.dynamodb.DynamoDBResources.parseBackupArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseBulkOperationArn` <a name="parseBulkOperationArn" id="@cdk_utils/iam.dynamodb.DynamoDBResources.parseBulkOperationArn"></a>
+
+```typescript
+import { dynamodb } from '@cdk_utils/iam'
+
+dynamodb.DynamoDBResources.parseBulkOperationArn(arn: string)
+```
+
+Parses a bulk-operation ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.dynamodb.DynamoDBResources.parseBulkOperationArn.parameter.arn"></a>
 
 - *Type:* string
 

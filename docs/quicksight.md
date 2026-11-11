@@ -3,6 +3,154 @@
 
 ## Structs <a name="Structs" id="Structs"></a>
 
+### QuickSightAccessControlApplicationArnComponents <a name="QuickSightAccessControlApplicationArnComponents" id="@cdk_utils/iam.quicksight.QuickSightAccessControlApplicationArnComponents"></a>
+
+Parsed components of a accessControlApplication ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.quicksight.QuickSightAccessControlApplicationArnComponents.Initializer"></a>
+
+```typescript
+import { quicksight } from '@cdk_utils/iam'
+
+const quickSightAccessControlApplicationArnComponents: quicksight.QuickSightAccessControlApplicationArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightAccessControlApplicationArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightAccessControlApplicationArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightAccessControlApplicationArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightAccessControlApplicationArnComponents.property.resourceId">resourceId</a></code> | <code>string</code> | The ResourceId component. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.quicksight.QuickSightAccessControlApplicationArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.quicksight.QuickSightAccessControlApplicationArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.quicksight.QuickSightAccessControlApplicationArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+##### `resourceId`<sup>Required</sup> <a name="resourceId" id="@cdk_utils/iam.quicksight.QuickSightAccessControlApplicationArnComponents.property.resourceId"></a>
+
+```typescript
+public readonly resourceId: string;
+```
+
+- *Type:* string
+
+The ResourceId component.
+
+---
+
+### QuickSightAccessControlApplicationArnProps <a name="QuickSightAccessControlApplicationArnProps" id="@cdk_utils/iam.quicksight.QuickSightAccessControlApplicationArnProps"></a>
+
+Properties for building a accessControlApplication ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.quicksight.QuickSightAccessControlApplicationArnProps.Initializer"></a>
+
+```typescript
+import { quicksight } from '@cdk_utils/iam'
+
+const quickSightAccessControlApplicationArnProps: quicksight.QuickSightAccessControlApplicationArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightAccessControlApplicationArnProps.property.resourceId">resourceId</a></code> | <code>string</code> | The ResourceId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightAccessControlApplicationArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightAccessControlApplicationArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightAccessControlApplicationArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `resourceId`<sup>Required</sup> <a name="resourceId" id="@cdk_utils/iam.quicksight.QuickSightAccessControlApplicationArnProps.property.resourceId"></a>
+
+```typescript
+public readonly resourceId: string;
+```
+
+- *Type:* string
+
+The ResourceId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.quicksight.QuickSightAccessControlApplicationArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.quicksight.QuickSightAccessControlApplicationArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.quicksight.QuickSightAccessControlApplicationArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### QuickSightAccountArnComponents <a name="QuickSightAccountArnComponents" id="@cdk_utils/iam.quicksight.QuickSightAccountArnComponents"></a>
 
 Parsed components of a account ARN.
@@ -3927,6 +4075,154 @@ Defaults to "*".
 
 ---
 
+### QuickSightInboundConnectorArnComponents <a name="QuickSightInboundConnectorArnComponents" id="@cdk_utils/iam.quicksight.QuickSightInboundConnectorArnComponents"></a>
+
+Parsed components of a inboundConnector ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.quicksight.QuickSightInboundConnectorArnComponents.Initializer"></a>
+
+```typescript
+import { quicksight } from '@cdk_utils/iam'
+
+const quickSightInboundConnectorArnComponents: quicksight.QuickSightInboundConnectorArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightInboundConnectorArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightInboundConnectorArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightInboundConnectorArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightInboundConnectorArnComponents.property.resourceId">resourceId</a></code> | <code>string</code> | The ResourceId component. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.quicksight.QuickSightInboundConnectorArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.quicksight.QuickSightInboundConnectorArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.quicksight.QuickSightInboundConnectorArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+##### `resourceId`<sup>Required</sup> <a name="resourceId" id="@cdk_utils/iam.quicksight.QuickSightInboundConnectorArnComponents.property.resourceId"></a>
+
+```typescript
+public readonly resourceId: string;
+```
+
+- *Type:* string
+
+The ResourceId component.
+
+---
+
+### QuickSightInboundConnectorArnProps <a name="QuickSightInboundConnectorArnProps" id="@cdk_utils/iam.quicksight.QuickSightInboundConnectorArnProps"></a>
+
+Properties for building a inboundConnector ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.quicksight.QuickSightInboundConnectorArnProps.Initializer"></a>
+
+```typescript
+import { quicksight } from '@cdk_utils/iam'
+
+const quickSightInboundConnectorArnProps: quicksight.QuickSightInboundConnectorArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightInboundConnectorArnProps.property.resourceId">resourceId</a></code> | <code>string</code> | The ResourceId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightInboundConnectorArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightInboundConnectorArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightInboundConnectorArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `resourceId`<sup>Required</sup> <a name="resourceId" id="@cdk_utils/iam.quicksight.QuickSightInboundConnectorArnProps.property.resourceId"></a>
+
+```typescript
+public readonly resourceId: string;
+```
+
+- *Type:* string
+
+The ResourceId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.quicksight.QuickSightInboundConnectorArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.quicksight.QuickSightInboundConnectorArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.quicksight.QuickSightInboundConnectorArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### QuickSightIngestionArnComponents <a name="QuickSightIngestionArnComponents" id="@cdk_utils/iam.quicksight.QuickSightIngestionArnComponents"></a>
 
 Parsed components of a ingestion ARN.
@@ -5798,6 +6094,7 @@ new quicksight.QuickSightActions()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.AllReadActions">AllReadActions</a></code> | <code>string[]</code> | All read-level actions. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.AllTaggingActions">AllTaggingActions</a></code> | <code>string[]</code> | All tagging-level actions. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.AuthorizeOAuthAccess">AuthorizeOAuthAccess</a></code> | <code>string</code> | [Write] quicksight:AuthorizeOAuthAccess. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.BatchCreateTopicReviewedAnswer">BatchCreateTopicReviewedAnswer</a></code> | <code>string</code> | [Write] quicksight:BatchCreateTopicReviewedAnswer. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.BatchDeleteKnowledgeBase">BatchDeleteKnowledgeBase</a></code> | <code>string</code> | [Write] quicksight:BatchDeleteKnowledgeBase. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.BatchDeleteTopicReviewedAnswer">BatchDeleteTopicReviewedAnswer</a></code> | <code>string</code> | [Write] quicksight:BatchDeleteTopicReviewedAnswer. |
@@ -5805,6 +6102,8 @@ new quicksight.QuickSightActions()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.BatchGetPreferences">BatchGetPreferences</a></code> | <code>string</code> | [Read] quicksight:BatchGetPreferences. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.BatchUpdatePreferences">BatchUpdatePreferences</a></code> | <code>string</code> | [Write] quicksight:BatchUpdatePreferences. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.CancelIngestion">CancelIngestion</a></code> | <code>string</code> | [Write] quicksight:CancelIngestion. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.CreateAccessControlApplication">CreateAccessControlApplication</a></code> | <code>string</code> | [Write] quicksight:CreateAccessControlApplication. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.CreateAccessControlApplicationSecret">CreateAccessControlApplicationSecret</a></code> | <code>string</code> | [Write] quicksight:CreateAccessControlApplicationSecret. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.CreateAccountCustomization">CreateAccountCustomization</a></code> | <code>string</code> | [Write] quicksight:CreateAccountCustomization. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.CreateAccountSubscription">CreateAccountSubscription</a></code> | <code>string</code> | [Write] quicksight:CreateAccountSubscription. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.CreateActionConnector">CreateActionConnector</a></code> | <code>string</code> | [Write] quicksight:CreateActionConnector. |
@@ -5827,11 +6126,13 @@ new quicksight.QuickSightActions()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.CreateGroup">CreateGroup</a></code> | <code>string</code> | [Write] quicksight:CreateGroup. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.CreateGroupMembership">CreateGroupMembership</a></code> | <code>string</code> | [Write] quicksight:CreateGroupMembership. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.CreateIAMPolicyAssignment">CreateIAMPolicyAssignment</a></code> | <code>string</code> | [Write] quicksight:CreateIAMPolicyAssignment. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.CreateInboundConnector">CreateInboundConnector</a></code> | <code>string</code> | [Write] quicksight:CreateInboundConnector. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.CreateIngestion">CreateIngestion</a></code> | <code>string</code> | [Write] quicksight:CreateIngestion. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.CreateKnowledgeBase">CreateKnowledgeBase</a></code> | <code>string</code> | [Write] quicksight:CreateKnowledgeBase. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.CreateLimitsProfile">CreateLimitsProfile</a></code> | <code>string</code> | [Write] quicksight:CreateLimitsProfile. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.CreateNamespace">CreateNamespace</a></code> | <code>string</code> | [Write] quicksight:CreateNamespace. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.CreateOAuthClientApplication">CreateOAuthClientApplication</a></code> | <code>string</code> | [Write] quicksight:CreateOAuthClientApplication. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.CreateOAuthToken">CreateOAuthToken</a></code> | <code>string</code> | [Write] quicksight:CreateOAuthToken. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.CreateReader">CreateReader</a></code> | <code>string</code> | [Write] quicksight:CreateReader. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.CreateRefreshSchedule">CreateRefreshSchedule</a></code> | <code>string</code> | [Write] quicksight:CreateRefreshSchedule. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.CreateRoleMembership">CreateRoleMembership</a></code> | <code>string</code> | [Write] quicksight:CreateRoleMembership. |
@@ -5844,6 +6145,8 @@ new quicksight.QuickSightActions()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.CreateTopicRefreshSchedule">CreateTopicRefreshSchedule</a></code> | <code>string</code> | [Write] quicksight:CreateTopicRefreshSchedule. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.CreateUser">CreateUser</a></code> | <code>string</code> | [Write] quicksight:CreateUser. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.CreateVPCConnection">CreateVPCConnection</a></code> | <code>string</code> | [Write] quicksight:CreateVPCConnection. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DeleteAccessControlApplication">DeleteAccessControlApplication</a></code> | <code>string</code> | [Write] quicksight:DeleteAccessControlApplication. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DeleteAccessControlApplicationSecret">DeleteAccessControlApplicationSecret</a></code> | <code>string</code> | [Write] quicksight:DeleteAccessControlApplicationSecret. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DeleteAccountCustomization">DeleteAccountCustomization</a></code> | <code>string</code> | [Write] quicksight:DeleteAccountCustomization. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DeleteAccountCustomPermission">DeleteAccountCustomPermission</a></code> | <code>string</code> | [Write] quicksight:DeleteAccountCustomPermission. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DeleteAccountSubscription">DeleteAccountSubscription</a></code> | <code>string</code> | [Write] quicksight:DeleteAccountSubscription. |
@@ -5871,6 +6174,7 @@ new quicksight.QuickSightActions()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DeleteGroupMembership">DeleteGroupMembership</a></code> | <code>string</code> | [Write] quicksight:DeleteGroupMembership. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DeleteIAMPolicyAssignment">DeleteIAMPolicyAssignment</a></code> | <code>string</code> | [Write] quicksight:DeleteIAMPolicyAssignment. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DeleteIdentityPropagationConfig">DeleteIdentityPropagationConfig</a></code> | <code>string</code> | [Write] quicksight:DeleteIdentityPropagationConfig. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DeleteInboundConnector">DeleteInboundConnector</a></code> | <code>string</code> | [Write] quicksight:DeleteInboundConnector. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DeleteKnowledgeBase">DeleteKnowledgeBase</a></code> | <code>string</code> | [Write] quicksight:DeleteKnowledgeBase. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DeleteLimitsProfile">DeleteLimitsProfile</a></code> | <code>string</code> | [Write] quicksight:DeleteLimitsProfile. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DeleteNamespace">DeleteNamespace</a></code> | <code>string</code> | [Write] quicksight:DeleteNamespace. |
@@ -5889,6 +6193,7 @@ new quicksight.QuickSightActions()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DeleteUserByPrincipalId">DeleteUserByPrincipalId</a></code> | <code>string</code> | [Write] quicksight:DeleteUserByPrincipalId. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DeleteUserCustomPermission">DeleteUserCustomPermission</a></code> | <code>string</code> | [Write] quicksight:DeleteUserCustomPermission. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DeleteVPCConnection">DeleteVPCConnection</a></code> | <code>string</code> | [Write] quicksight:DeleteVPCConnection. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeAccessControlApplication">DescribeAccessControlApplication</a></code> | <code>string</code> | [Read] quicksight:DescribeAccessControlApplication. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeAccountCustomization">DescribeAccountCustomization</a></code> | <code>string</code> | [Read] quicksight:DescribeAccountCustomization. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeAccountCustomPermission">DescribeAccountCustomPermission</a></code> | <code>string</code> | [Read] quicksight:DescribeAccountCustomPermission. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeAccountSettings">DescribeAccountSettings</a></code> | <code>string</code> | [Read] quicksight:DescribeAccountSettings. |
@@ -5934,6 +6239,7 @@ new quicksight.QuickSightActions()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeGroup">DescribeGroup</a></code> | <code>string</code> | [Read] quicksight:DescribeGroup. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeGroupMembership">DescribeGroupMembership</a></code> | <code>string</code> | [Read] quicksight:DescribeGroupMembership. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeIAMPolicyAssignment">DescribeIAMPolicyAssignment</a></code> | <code>string</code> | [Read] quicksight:DescribeIAMPolicyAssignment. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeInboundConnector">DescribeInboundConnector</a></code> | <code>string</code> | [Read] quicksight:DescribeInboundConnector. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeIngestion">DescribeIngestion</a></code> | <code>string</code> | [Read] quicksight:DescribeIngestion. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeIpRestriction">DescribeIpRestriction</a></code> | <code>string</code> | [Read] quicksight:DescribeIpRestriction. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeKeyRegistration">DescribeKeyRegistration</a></code> | <code>string</code> | [Read] quicksight:DescribeKeyRegistration. |
@@ -5946,6 +6252,7 @@ new quicksight.QuickSightActions()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeQuickIndexCapacity">DescribeQuickIndexCapacity</a></code> | <code>string</code> | [Read] quicksight:DescribeQuickIndexCapacity. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeQuickSightQSearchConfiguration">DescribeQuickSightQSearchConfiguration</a></code> | <code>string</code> | [Read] quicksight:DescribeQuickSightQSearchConfiguration. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeRefreshSchedule">DescribeRefreshSchedule</a></code> | <code>string</code> | [Read] quicksight:DescribeRefreshSchedule. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeResourcePermissions">DescribeResourcePermissions</a></code> | <code>string</code> | [Read] quicksight:DescribeResourcePermissions. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeRoleCustomPermission">DescribeRoleCustomPermission</a></code> | <code>string</code> | [Read] quicksight:DescribeRoleCustomPermission. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeSelfUpgradeConfiguration">DescribeSelfUpgradeConfiguration</a></code> | <code>string</code> | [Read] quicksight:DescribeSelfUpgradeConfiguration. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeSpace">DescribeSpace</a></code> | <code>string</code> | [Read] quicksight:DescribeSpace. |
@@ -5965,6 +6272,7 @@ new quicksight.QuickSightActions()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.GenerateEmbedUrlForAnonymousUser">GenerateEmbedUrlForAnonymousUser</a></code> | <code>string</code> | [Write] quicksight:GenerateEmbedUrlForAnonymousUser. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.GenerateEmbedUrlForRegisteredUser">GenerateEmbedUrlForRegisteredUser</a></code> | <code>string</code> | [Write] quicksight:GenerateEmbedUrlForRegisteredUser. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.GenerateEmbedUrlForRegisteredUserWithIdentity">GenerateEmbedUrlForRegisteredUserWithIdentity</a></code> | <code>string</code> | [Write] quicksight:GenerateEmbedUrlForRegisteredUserWithIdentity. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.ListAccessControlApplications">ListAccessControlApplications</a></code> | <code>string</code> | [List] quicksight:ListAccessControlApplications. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.ListActionConnectors">ListActionConnectors</a></code> | <code>string</code> | [List] quicksight:ListActionConnectors. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.ListAgents">ListAgents</a></code> | <code>string</code> | [List] quicksight:ListAgents. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.ListAnalyses">ListAnalyses</a></code> | <code>string</code> | [List] quicksight:ListAnalyses. |
@@ -5993,6 +6301,8 @@ new quicksight.QuickSightActions()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.ListIAMPolicyAssignments">ListIAMPolicyAssignments</a></code> | <code>string</code> | [List] quicksight:ListIAMPolicyAssignments. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.ListIAMPolicyAssignmentsForUser">ListIAMPolicyAssignmentsForUser</a></code> | <code>string</code> | [List] quicksight:ListIAMPolicyAssignmentsForUser. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.ListIdentityPropagationConfigs">ListIdentityPropagationConfigs</a></code> | <code>string</code> | [List] quicksight:ListIdentityPropagationConfigs. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.ListInboundConnectorApplicationAssociations">ListInboundConnectorApplicationAssociations</a></code> | <code>string</code> | [List] quicksight:ListInboundConnectorApplicationAssociations. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.ListInboundConnectors">ListInboundConnectors</a></code> | <code>string</code> | [List] quicksight:ListInboundConnectors. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.ListIngestions">ListIngestions</a></code> | <code>string</code> | [List] quicksight:ListIngestions. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.ListKMSKeysForUser">ListKMSKeysForUser</a></code> | <code>string</code> | [List] quicksight:ListKMSKeysForUser. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.ListKnowledgeBases">ListKnowledgeBases</a></code> | <code>string</code> | [List] quicksight:ListKnowledgeBases. |
@@ -6028,6 +6338,7 @@ new quicksight.QuickSightActions()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.RegisterUser">RegisterUser</a></code> | <code>string</code> | [Write] quicksight:RegisterUser. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.RemoveCustomerManagedKey">RemoveCustomerManagedKey</a></code> | <code>string</code> | [Write] quicksight:RemoveCustomerManagedKey. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.RestoreAnalysis">RestoreAnalysis</a></code> | <code>string</code> | [Write] quicksight:RestoreAnalysis. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.RevokeOAuthToken">RevokeOAuthToken</a></code> | <code>string</code> | [Write] quicksight:RevokeOAuthToken. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.ScopeDownPolicy">ScopeDownPolicy</a></code> | <code>string</code> | [Write] quicksight:ScopeDownPolicy. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.SearchActionConnectors">SearchActionConnectors</a></code> | <code>string</code> | [List] quicksight:SearchActionConnectors. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.SearchAgents">SearchAgents</a></code> | <code>string</code> | [List] quicksight:SearchAgents. |
@@ -6057,6 +6368,8 @@ new quicksight.QuickSightActions()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.UnpublishFlow">UnpublishFlow</a></code> | <code>string</code> | [Write] quicksight:UnpublishFlow. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.Unsubscribe">Unsubscribe</a></code> | <code>string</code> | [Write] quicksight:Unsubscribe. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] quicksight:UntagResource. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.UpdateAccessControlApplication">UpdateAccessControlApplication</a></code> | <code>string</code> | [Write] quicksight:UpdateAccessControlApplication. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.UpdateAccessControlApplicationSecret">UpdateAccessControlApplicationSecret</a></code> | <code>string</code> | [Write] quicksight:UpdateAccessControlApplicationSecret. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.UpdateAccountCustomization">UpdateAccountCustomization</a></code> | <code>string</code> | [Write] quicksight:UpdateAccountCustomization. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.UpdateAccountCustomPermission">UpdateAccountCustomPermission</a></code> | <code>string</code> | [Write] quicksight:UpdateAccountCustomPermission. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.UpdateAccountSettings">UpdateAccountSettings</a></code> | <code>string</code> | [Write] quicksight:UpdateAccountSettings. |
@@ -6096,6 +6409,8 @@ new quicksight.QuickSightActions()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.UpdateGroup">UpdateGroup</a></code> | <code>string</code> | [Write] quicksight:UpdateGroup. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.UpdateIAMPolicyAssignment">UpdateIAMPolicyAssignment</a></code> | <code>string</code> | [Write] quicksight:UpdateIAMPolicyAssignment. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.UpdateIdentityPropagationConfig">UpdateIdentityPropagationConfig</a></code> | <code>string</code> | [Write] quicksight:UpdateIdentityPropagationConfig. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.UpdateInboundConnector">UpdateInboundConnector</a></code> | <code>string</code> | [Write] quicksight:UpdateInboundConnector. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.UpdateInboundConnectorApplicationAssociations">UpdateInboundConnectorApplicationAssociations</a></code> | <code>string</code> | [Write] quicksight:UpdateInboundConnectorApplicationAssociations. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.UpdateIpRestriction">UpdateIpRestriction</a></code> | <code>string</code> | [Write] quicksight:UpdateIpRestriction. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.UpdateKeyRegistration">UpdateKeyRegistration</a></code> | <code>string</code> | [Write] quicksight:UpdateKeyRegistration. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.UpdateKnowledgeBase">UpdateKnowledgeBase</a></code> | <code>string</code> | [Write] quicksight:UpdateKnowledgeBase. |
@@ -6334,6 +6649,18 @@ All write-level actions.
 
 ---
 
+##### `AuthorizeOAuthAccess`<sup>Required</sup> <a name="AuthorizeOAuthAccess" id="@cdk_utils/iam.quicksight.QuickSightActions.property.AuthorizeOAuthAccess"></a>
+
+```typescript
+public readonly AuthorizeOAuthAccess: string;
+```
+
+- *Type:* string
+
+[Write] quicksight:AuthorizeOAuthAccess.
+
+---
+
 ##### `BatchCreateTopicReviewedAnswer`<sup>Required</sup> <a name="BatchCreateTopicReviewedAnswer" id="@cdk_utils/iam.quicksight.QuickSightActions.property.BatchCreateTopicReviewedAnswer"></a>
 
 ```typescript
@@ -6415,6 +6742,30 @@ public readonly CancelIngestion: string;
 - *Type:* string
 
 [Write] quicksight:CancelIngestion.
+
+---
+
+##### `CreateAccessControlApplication`<sup>Required</sup> <a name="CreateAccessControlApplication" id="@cdk_utils/iam.quicksight.QuickSightActions.property.CreateAccessControlApplication"></a>
+
+```typescript
+public readonly CreateAccessControlApplication: string;
+```
+
+- *Type:* string
+
+[Write] quicksight:CreateAccessControlApplication.
+
+---
+
+##### `CreateAccessControlApplicationSecret`<sup>Required</sup> <a name="CreateAccessControlApplicationSecret" id="@cdk_utils/iam.quicksight.QuickSightActions.property.CreateAccessControlApplicationSecret"></a>
+
+```typescript
+public readonly CreateAccessControlApplicationSecret: string;
+```
+
+- *Type:* string
+
+[Write] quicksight:CreateAccessControlApplicationSecret.
 
 ---
 
@@ -6682,6 +7033,18 @@ public readonly CreateIAMPolicyAssignment: string;
 
 ---
 
+##### `CreateInboundConnector`<sup>Required</sup> <a name="CreateInboundConnector" id="@cdk_utils/iam.quicksight.QuickSightActions.property.CreateInboundConnector"></a>
+
+```typescript
+public readonly CreateInboundConnector: string;
+```
+
+- *Type:* string
+
+[Write] quicksight:CreateInboundConnector.
+
+---
+
 ##### `CreateIngestion`<sup>Required</sup> <a name="CreateIngestion" id="@cdk_utils/iam.quicksight.QuickSightActions.property.CreateIngestion"></a>
 
 ```typescript
@@ -6739,6 +7102,18 @@ public readonly CreateOAuthClientApplication: string;
 - *Type:* string
 
 [Write] quicksight:CreateOAuthClientApplication.
+
+---
+
+##### `CreateOAuthToken`<sup>Required</sup> <a name="CreateOAuthToken" id="@cdk_utils/iam.quicksight.QuickSightActions.property.CreateOAuthToken"></a>
+
+```typescript
+public readonly CreateOAuthToken: string;
+```
+
+- *Type:* string
+
+[Write] quicksight:CreateOAuthToken.
 
 ---
 
@@ -6883,6 +7258,30 @@ public readonly CreateVPCConnection: string;
 - *Type:* string
 
 [Write] quicksight:CreateVPCConnection.
+
+---
+
+##### `DeleteAccessControlApplication`<sup>Required</sup> <a name="DeleteAccessControlApplication" id="@cdk_utils/iam.quicksight.QuickSightActions.property.DeleteAccessControlApplication"></a>
+
+```typescript
+public readonly DeleteAccessControlApplication: string;
+```
+
+- *Type:* string
+
+[Write] quicksight:DeleteAccessControlApplication.
+
+---
+
+##### `DeleteAccessControlApplicationSecret`<sup>Required</sup> <a name="DeleteAccessControlApplicationSecret" id="@cdk_utils/iam.quicksight.QuickSightActions.property.DeleteAccessControlApplicationSecret"></a>
+
+```typescript
+public readonly DeleteAccessControlApplicationSecret: string;
+```
+
+- *Type:* string
+
+[Write] quicksight:DeleteAccessControlApplicationSecret.
 
 ---
 
@@ -7210,6 +7609,18 @@ public readonly DeleteIdentityPropagationConfig: string;
 
 ---
 
+##### `DeleteInboundConnector`<sup>Required</sup> <a name="DeleteInboundConnector" id="@cdk_utils/iam.quicksight.QuickSightActions.property.DeleteInboundConnector"></a>
+
+```typescript
+public readonly DeleteInboundConnector: string;
+```
+
+- *Type:* string
+
+[Write] quicksight:DeleteInboundConnector.
+
+---
+
 ##### `DeleteKnowledgeBase`<sup>Required</sup> <a name="DeleteKnowledgeBase" id="@cdk_utils/iam.quicksight.QuickSightActions.property.DeleteKnowledgeBase"></a>
 
 ```typescript
@@ -7423,6 +7834,18 @@ public readonly DeleteVPCConnection: string;
 - *Type:* string
 
 [Write] quicksight:DeleteVPCConnection.
+
+---
+
+##### `DescribeAccessControlApplication`<sup>Required</sup> <a name="DescribeAccessControlApplication" id="@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeAccessControlApplication"></a>
+
+```typescript
+public readonly DescribeAccessControlApplication: string;
+```
+
+- *Type:* string
+
+[Read] quicksight:DescribeAccessControlApplication.
 
 ---
 
@@ -7966,6 +8389,18 @@ public readonly DescribeIAMPolicyAssignment: string;
 
 ---
 
+##### `DescribeInboundConnector`<sup>Required</sup> <a name="DescribeInboundConnector" id="@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeInboundConnector"></a>
+
+```typescript
+public readonly DescribeInboundConnector: string;
+```
+
+- *Type:* string
+
+[Read] quicksight:DescribeInboundConnector.
+
+---
+
 ##### `DescribeIngestion`<sup>Required</sup> <a name="DescribeIngestion" id="@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeIngestion"></a>
 
 ```typescript
@@ -8107,6 +8542,18 @@ public readonly DescribeRefreshSchedule: string;
 - *Type:* string
 
 [Read] quicksight:DescribeRefreshSchedule.
+
+---
+
+##### `DescribeResourcePermissions`<sup>Required</sup> <a name="DescribeResourcePermissions" id="@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeResourcePermissions"></a>
+
+```typescript
+public readonly DescribeResourcePermissions: string;
+```
+
+- *Type:* string
+
+[Read] quicksight:DescribeResourcePermissions.
 
 ---
 
@@ -8335,6 +8782,18 @@ public readonly GenerateEmbedUrlForRegisteredUserWithIdentity: string;
 - *Type:* string
 
 [Write] quicksight:GenerateEmbedUrlForRegisteredUserWithIdentity.
+
+---
+
+##### `ListAccessControlApplications`<sup>Required</sup> <a name="ListAccessControlApplications" id="@cdk_utils/iam.quicksight.QuickSightActions.property.ListAccessControlApplications"></a>
+
+```typescript
+public readonly ListAccessControlApplications: string;
+```
+
+- *Type:* string
+
+[List] quicksight:ListAccessControlApplications.
 
 ---
 
@@ -8671,6 +9130,30 @@ public readonly ListIdentityPropagationConfigs: string;
 - *Type:* string
 
 [List] quicksight:ListIdentityPropagationConfigs.
+
+---
+
+##### `ListInboundConnectorApplicationAssociations`<sup>Required</sup> <a name="ListInboundConnectorApplicationAssociations" id="@cdk_utils/iam.quicksight.QuickSightActions.property.ListInboundConnectorApplicationAssociations"></a>
+
+```typescript
+public readonly ListInboundConnectorApplicationAssociations: string;
+```
+
+- *Type:* string
+
+[List] quicksight:ListInboundConnectorApplicationAssociations.
+
+---
+
+##### `ListInboundConnectors`<sup>Required</sup> <a name="ListInboundConnectors" id="@cdk_utils/iam.quicksight.QuickSightActions.property.ListInboundConnectors"></a>
+
+```typescript
+public readonly ListInboundConnectors: string;
+```
+
+- *Type:* string
+
+[List] quicksight:ListInboundConnectors.
 
 ---
 
@@ -9094,6 +9577,18 @@ public readonly RestoreAnalysis: string;
 
 ---
 
+##### `RevokeOAuthToken`<sup>Required</sup> <a name="RevokeOAuthToken" id="@cdk_utils/iam.quicksight.QuickSightActions.property.RevokeOAuthToken"></a>
+
+```typescript
+public readonly RevokeOAuthToken: string;
+```
+
+- *Type:* string
+
+[Write] quicksight:RevokeOAuthToken.
+
+---
+
 ##### `ScopeDownPolicy`<sup>Required</sup> <a name="ScopeDownPolicy" id="@cdk_utils/iam.quicksight.QuickSightActions.property.ScopeDownPolicy"></a>
 
 ```typescript
@@ -9439,6 +9934,30 @@ public readonly UntagResource: string;
 - *Type:* string
 
 [Tagging] quicksight:UntagResource.
+
+---
+
+##### `UpdateAccessControlApplication`<sup>Required</sup> <a name="UpdateAccessControlApplication" id="@cdk_utils/iam.quicksight.QuickSightActions.property.UpdateAccessControlApplication"></a>
+
+```typescript
+public readonly UpdateAccessControlApplication: string;
+```
+
+- *Type:* string
+
+[Write] quicksight:UpdateAccessControlApplication.
+
+---
+
+##### `UpdateAccessControlApplicationSecret`<sup>Required</sup> <a name="UpdateAccessControlApplicationSecret" id="@cdk_utils/iam.quicksight.QuickSightActions.property.UpdateAccessControlApplicationSecret"></a>
+
+```typescript
+public readonly UpdateAccessControlApplicationSecret: string;
+```
+
+- *Type:* string
+
+[Write] quicksight:UpdateAccessControlApplicationSecret.
 
 ---
 
@@ -9907,6 +10426,30 @@ public readonly UpdateIdentityPropagationConfig: string;
 - *Type:* string
 
 [Write] quicksight:UpdateIdentityPropagationConfig.
+
+---
+
+##### `UpdateInboundConnector`<sup>Required</sup> <a name="UpdateInboundConnector" id="@cdk_utils/iam.quicksight.QuickSightActions.property.UpdateInboundConnector"></a>
+
+```typescript
+public readonly UpdateInboundConnector: string;
+```
+
+- *Type:* string
+
+[Write] quicksight:UpdateInboundConnector.
+
+---
+
+##### `UpdateInboundConnectorApplicationAssociations`<sup>Required</sup> <a name="UpdateInboundConnectorApplicationAssociations" id="@cdk_utils/iam.quicksight.QuickSightActions.property.UpdateInboundConnectorApplicationAssociations"></a>
+
+```typescript
+public readonly UpdateInboundConnectorApplicationAssociations: string;
+```
+
+- *Type:* string
+
+[Write] quicksight:UpdateInboundConnectorApplicationAssociations.
 
 ---
 
@@ -10506,6 +11049,7 @@ Generates a condition block for `quicksight:UserName`.
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightConditions.property.BatchCreateTopicReviewedAnswerConditionKeys">BatchCreateTopicReviewedAnswerConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the BatchCreateTopicReviewedAnswer action. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightConditions.property.BatchDeleteTopicReviewedAnswerConditionKeys">BatchDeleteTopicReviewedAnswerConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the BatchDeleteTopicReviewedAnswer action. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightConditions.property.CancelIngestionConditionKeys">CancelIngestionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CancelIngestion action. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightConditions.property.CreateAccessControlApplicationConditionKeys">CreateAccessControlApplicationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateAccessControlApplication action. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightConditions.property.CreateAccountCustomizationConditionKeys">CreateAccountCustomizationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateAccountCustomization action. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightConditions.property.CreateAccountSubscriptionConditionKeys">CreateAccountSubscriptionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateAccountSubscription action. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightConditions.property.CreateActionConnectorConditionKeys">CreateActionConnectorConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateActionConnector action. |
@@ -10519,6 +11063,7 @@ Generates a condition block for `quicksight:UserName`.
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightConditions.property.CreateEmailCustomizationTemplateConditionKeys">CreateEmailCustomizationTemplateConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateEmailCustomizationTemplate action. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightConditions.property.CreateFolderConditionKeys">CreateFolderConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateFolder action. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightConditions.property.CreateGroupMembershipConditionKeys">CreateGroupMembershipConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateGroupMembership action. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightConditions.property.CreateInboundConnectorConditionKeys">CreateInboundConnectorConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateInboundConnector action. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightConditions.property.CreateIngestionConditionKeys">CreateIngestionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateIngestion action. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightConditions.property.CreateKnowledgeBaseConditionKeys">CreateKnowledgeBaseConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateKnowledgeBase action. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightConditions.property.CreateNamespaceConditionKeys">CreateNamespaceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateNamespace action. |
@@ -10662,6 +11207,18 @@ public readonly CancelIngestionConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the CancelIngestion action.
+
+---
+
+##### `CreateAccessControlApplicationConditionKeys`<sup>Required</sup> <a name="CreateAccessControlApplicationConditionKeys" id="@cdk_utils/iam.quicksight.QuickSightConditions.property.CreateAccessControlApplicationConditionKeys"></a>
+
+```typescript
+public readonly CreateAccessControlApplicationConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateAccessControlApplication action.
 
 ---
 
@@ -10818,6 +11375,18 @@ public readonly CreateGroupMembershipConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the CreateGroupMembership action.
+
+---
+
+##### `CreateInboundConnectorConditionKeys`<sup>Required</sup> <a name="CreateInboundConnectorConditionKeys" id="@cdk_utils/iam.quicksight.QuickSightConditions.property.CreateInboundConnectorConditionKeys"></a>
+
+```typescript
+public readonly CreateInboundConnectorConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateInboundConnector action.
 
 ---
 
@@ -11687,6 +12256,7 @@ new quicksight.QuickSightOperations()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DescribeQPersonalizationConfiguration">DescribeQPersonalizationConfiguration</a></code> | <code>string[]</code> | IAM actions required for the DescribeQPersonalizationConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DescribeQuickSightQSearchConfiguration">DescribeQuickSightQSearchConfiguration</a></code> | <code>string[]</code> | IAM actions required for the DescribeQuickSightQSearchConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DescribeRefreshSchedule">DescribeRefreshSchedule</a></code> | <code>string[]</code> | IAM actions required for the DescribeRefreshSchedule API call. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DescribeResourcePermissions">DescribeResourcePermissions</a></code> | <code>string[]</code> | IAM actions required for the DescribeResourcePermissions API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DescribeRoleCustomPermission">DescribeRoleCustomPermission</a></code> | <code>string[]</code> | IAM actions required for the DescribeRoleCustomPermission API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DescribeSelfUpgradeConfiguration">DescribeSelfUpgradeConfiguration</a></code> | <code>string[]</code> | IAM actions required for the DescribeSelfUpgradeConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DescribeSpace">DescribeSpace</a></code> | <code>string[]</code> | IAM actions required for the DescribeSpace API call. |
@@ -11831,6 +12401,7 @@ new quicksight.QuickSightOperations()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.UpdateQPersonalizationConfiguration">UpdateQPersonalizationConfiguration</a></code> | <code>string[]</code> | IAM actions required for the UpdateQPersonalizationConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.UpdateQuickSightQSearchConfiguration">UpdateQuickSightQSearchConfiguration</a></code> | <code>string[]</code> | IAM actions required for the UpdateQuickSightQSearchConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.UpdateRefreshSchedule">UpdateRefreshSchedule</a></code> | <code>string[]</code> | IAM actions required for the UpdateRefreshSchedule API call. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.UpdateResourcePermissions">UpdateResourcePermissions</a></code> | <code>string[]</code> | IAM actions required for the UpdateResourcePermissions API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.UpdateRoleCustomPermission">UpdateRoleCustomPermission</a></code> | <code>string[]</code> | IAM actions required for the UpdateRoleCustomPermission API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.UpdateSelfUpgrade">UpdateSelfUpgrade</a></code> | <code>string[]</code> | IAM actions required for the UpdateSelfUpgrade API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.UpdateSelfUpgradeConfiguration">UpdateSelfUpgradeConfiguration</a></code> | <code>string[]</code> | IAM actions required for the UpdateSelfUpgradeConfiguration API call. |
@@ -13460,6 +14031,18 @@ public readonly DescribeRefreshSchedule: string[];
 - *Type:* string[]
 
 IAM actions required for the DescribeRefreshSchedule API call.
+
+---
+
+##### `DescribeResourcePermissions`<sup>Required</sup> <a name="DescribeResourcePermissions" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.DescribeResourcePermissions"></a>
+
+```typescript
+public readonly DescribeResourcePermissions: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeResourcePermissions API call.
 
 ---
 
@@ -15191,6 +15774,18 @@ IAM actions required for the UpdateRefreshSchedule API call.
 
 ---
 
+##### `UpdateResourcePermissions`<sup>Required</sup> <a name="UpdateResourcePermissions" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.UpdateResourcePermissions"></a>
+
+```typescript
+public readonly UpdateResourcePermissions: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateResourcePermissions API call.
+
+---
+
 ##### `UpdateRoleCustomPermission`<sup>Required</sup> <a name="UpdateRoleCustomPermission" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.UpdateRoleCustomPermission"></a>
 
 ```typescript
@@ -15465,6 +16060,7 @@ new quicksight.QuickSightResources()
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.accessControlApplication">accessControlApplication</a></code> | Builds an ARN for the accessControlApplication resource. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.account">account</a></code> | Builds an ARN for the account resource. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.actionconnector">actionconnector</a></code> | Builds an ARN for the actionconnector resource. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.agent">agent</a></code> | Builds an ARN for the agent resource. |
@@ -15491,7 +16087,9 @@ new quicksight.QuickSightResources()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.flow">flow</a></code> | Builds an ARN for the flow resource. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.folder">folder</a></code> | Builds an ARN for the folder resource. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.group">group</a></code> | Builds an ARN for the group resource. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.inboundConnector">inboundConnector</a></code> | Builds an ARN for the inboundConnector resource. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.ingestion">ingestion</a></code> | Builds an ARN for the ingestion resource. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.isValidAccessControlApplicationArn">isValidAccessControlApplicationArn</a></code> | Validates whether a string is a valid ARN for the accessControlApplication resource. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.isValidAccountArn">isValidAccountArn</a></code> | Validates whether a string is a valid ARN for the account resource. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.isValidActionconnectorArn">isValidActionconnectorArn</a></code> | Validates whether a string is a valid ARN for the actionconnector resource. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.isValidAgentArn">isValidAgentArn</a></code> | Validates whether a string is a valid ARN for the agent resource. |
@@ -15518,6 +16116,7 @@ new quicksight.QuickSightResources()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.isValidFlowArn">isValidFlowArn</a></code> | Validates whether a string is a valid ARN for the flow resource. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.isValidFolderArn">isValidFolderArn</a></code> | Validates whether a string is a valid ARN for the folder resource. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.isValidGroupArn">isValidGroupArn</a></code> | Validates whether a string is a valid ARN for the group resource. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.isValidInboundConnectorArn">isValidInboundConnectorArn</a></code> | Validates whether a string is a valid ARN for the inboundConnector resource. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.isValidIngestionArn">isValidIngestionArn</a></code> | Validates whether a string is a valid ARN for the ingestion resource. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.isValidKnowledgeBaseArn">isValidKnowledgeBaseArn</a></code> | Validates whether a string is a valid ARN for the knowledgeBase resource. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.isValidLimitsProfileArn">isValidLimitsProfileArn</a></code> | Validates whether a string is a valid ARN for the limitsProfile resource. |
@@ -15534,6 +16133,7 @@ new quicksight.QuickSightResources()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.limitsProfile">limitsProfile</a></code> | Builds an ARN for the limitsProfile resource. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.namespace">namespace</a></code> | Builds an ARN for the namespace resource. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.oauthClientApplication">oauthClientApplication</a></code> | Builds an ARN for the oauthClientApplication resource. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.parseAccessControlApplicationArn">parseAccessControlApplicationArn</a></code> | Parses a accessControlApplication ARN into its components. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.parseAccountArn">parseAccountArn</a></code> | Parses a account ARN into its components. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.parseActionconnectorArn">parseActionconnectorArn</a></code> | Parses a actionconnector ARN into its components. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.parseAgentArn">parseAgentArn</a></code> | Parses a agent ARN into its components. |
@@ -15560,6 +16160,7 @@ new quicksight.QuickSightResources()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.parseFlowArn">parseFlowArn</a></code> | Parses a flow ARN into its components. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.parseFolderArn">parseFolderArn</a></code> | Parses a folder ARN into its components. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.parseGroupArn">parseGroupArn</a></code> | Parses a group ARN into its components. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.parseInboundConnectorArn">parseInboundConnectorArn</a></code> | Parses a inboundConnector ARN into its components. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.parseIngestionArn">parseIngestionArn</a></code> | Parses a ingestion ARN into its components. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.parseKnowledgeBaseArn">parseKnowledgeBaseArn</a></code> | Parses a knowledgeBase ARN into its components. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.parseLimitsProfileArn">parseLimitsProfileArn</a></code> | Parses a limitsProfile ARN into its components. |
@@ -15579,6 +16180,22 @@ new quicksight.QuickSightResources()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.topic">topic</a></code> | Builds an ARN for the topic resource. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.user">user</a></code> | Builds an ARN for the user resource. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightResources.vpcconnection">vpcconnection</a></code> | Builds an ARN for the vpcconnection resource. |
+
+---
+
+##### `accessControlApplication` <a name="accessControlApplication" id="@cdk_utils/iam.quicksight.QuickSightResources.accessControlApplication"></a>
+
+```typescript
+import { quicksight } from '@cdk_utils/iam'
+
+quicksight.QuickSightResources.accessControlApplication(props: QuickSightAccessControlApplicationArnProps)
+```
+
+Builds an ARN for the accessControlApplication resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.quicksight.QuickSightResources.accessControlApplication.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.quicksight.QuickSightAccessControlApplicationArnProps">QuickSightAccessControlApplicationArnProps</a>
 
 ---
 
@@ -15998,6 +16615,22 @@ Builds an ARN for the group resource.
 
 ---
 
+##### `inboundConnector` <a name="inboundConnector" id="@cdk_utils/iam.quicksight.QuickSightResources.inboundConnector"></a>
+
+```typescript
+import { quicksight } from '@cdk_utils/iam'
+
+quicksight.QuickSightResources.inboundConnector(props: QuickSightInboundConnectorArnProps)
+```
+
+Builds an ARN for the inboundConnector resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.quicksight.QuickSightResources.inboundConnector.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.quicksight.QuickSightInboundConnectorArnProps">QuickSightInboundConnectorArnProps</a>
+
+---
+
 ##### `ingestion` <a name="ingestion" id="@cdk_utils/iam.quicksight.QuickSightResources.ingestion"></a>
 
 ```typescript
@@ -16011,6 +16644,22 @@ Builds an ARN for the ingestion resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.quicksight.QuickSightResources.ingestion.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.quicksight.QuickSightIngestionArnProps">QuickSightIngestionArnProps</a>
+
+---
+
+##### `isValidAccessControlApplicationArn` <a name="isValidAccessControlApplicationArn" id="@cdk_utils/iam.quicksight.QuickSightResources.isValidAccessControlApplicationArn"></a>
+
+```typescript
+import { quicksight } from '@cdk_utils/iam'
+
+quicksight.QuickSightResources.isValidAccessControlApplicationArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the accessControlApplication resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.quicksight.QuickSightResources.isValidAccessControlApplicationArn.parameter.arn"></a>
+
+- *Type:* string
 
 ---
 
@@ -16430,6 +17079,22 @@ Validates whether a string is a valid ARN for the group resource.
 
 ---
 
+##### `isValidInboundConnectorArn` <a name="isValidInboundConnectorArn" id="@cdk_utils/iam.quicksight.QuickSightResources.isValidInboundConnectorArn"></a>
+
+```typescript
+import { quicksight } from '@cdk_utils/iam'
+
+quicksight.QuickSightResources.isValidInboundConnectorArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the inboundConnector resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.quicksight.QuickSightResources.isValidInboundConnectorArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `isValidIngestionArn` <a name="isValidIngestionArn" id="@cdk_utils/iam.quicksight.QuickSightResources.isValidIngestionArn"></a>
 
 ```typescript
@@ -16683,6 +17348,22 @@ Builds an ARN for the oauthClientApplication resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.quicksight.QuickSightResources.oauthClientApplication.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.quicksight.QuickSightOauthClientApplicationArnProps">QuickSightOauthClientApplicationArnProps</a>
+
+---
+
+##### `parseAccessControlApplicationArn` <a name="parseAccessControlApplicationArn" id="@cdk_utils/iam.quicksight.QuickSightResources.parseAccessControlApplicationArn"></a>
+
+```typescript
+import { quicksight } from '@cdk_utils/iam'
+
+quicksight.QuickSightResources.parseAccessControlApplicationArn(arn: string)
+```
+
+Parses a accessControlApplication ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.quicksight.QuickSightResources.parseAccessControlApplicationArn.parameter.arn"></a>
+
+- *Type:* string
 
 ---
 
@@ -17097,6 +17778,22 @@ quicksight.QuickSightResources.parseGroupArn(arn: string)
 Parses a group ARN into its components.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.quicksight.QuickSightResources.parseGroupArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseInboundConnectorArn` <a name="parseInboundConnectorArn" id="@cdk_utils/iam.quicksight.QuickSightResources.parseInboundConnectorArn"></a>
+
+```typescript
+import { quicksight } from '@cdk_utils/iam'
+
+quicksight.QuickSightResources.parseInboundConnectorArn(arn: string)
+```
+
+Parses a inboundConnector ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.quicksight.QuickSightResources.parseInboundConnectorArn.parameter.arn"></a>
 
 - *Type:* string
 

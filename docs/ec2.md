@@ -891,6 +891,154 @@ Defaults to "*".
 
 ---
 
+### EC2CapacityReservationModificationQuoteArnComponents <a name="EC2CapacityReservationModificationQuoteArnComponents" id="@cdk_utils/iam.ec2.EC2CapacityReservationModificationQuoteArnComponents"></a>
+
+Parsed components of a capacity-reservation-modification-quote ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.ec2.EC2CapacityReservationModificationQuoteArnComponents.Initializer"></a>
+
+```typescript
+import { ec2 } from '@cdk_utils/iam'
+
+const eC2CapacityReservationModificationQuoteArnComponents: ec2.EC2CapacityReservationModificationQuoteArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.ec2.EC2CapacityReservationModificationQuoteArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2CapacityReservationModificationQuoteArnComponents.property.capacityReservationModificationQuoteId">capacityReservationModificationQuoteId</a></code> | <code>string</code> | The CapacityReservationModificationQuoteId component. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2CapacityReservationModificationQuoteArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2CapacityReservationModificationQuoteArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.ec2.EC2CapacityReservationModificationQuoteArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `capacityReservationModificationQuoteId`<sup>Required</sup> <a name="capacityReservationModificationQuoteId" id="@cdk_utils/iam.ec2.EC2CapacityReservationModificationQuoteArnComponents.property.capacityReservationModificationQuoteId"></a>
+
+```typescript
+public readonly capacityReservationModificationQuoteId: string;
+```
+
+- *Type:* string
+
+The CapacityReservationModificationQuoteId component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.ec2.EC2CapacityReservationModificationQuoteArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.ec2.EC2CapacityReservationModificationQuoteArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### EC2CapacityReservationModificationQuoteArnProps <a name="EC2CapacityReservationModificationQuoteArnProps" id="@cdk_utils/iam.ec2.EC2CapacityReservationModificationQuoteArnProps"></a>
+
+Properties for building a capacity-reservation-modification-quote ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.ec2.EC2CapacityReservationModificationQuoteArnProps.Initializer"></a>
+
+```typescript
+import { ec2 } from '@cdk_utils/iam'
+
+const eC2CapacityReservationModificationQuoteArnProps: ec2.EC2CapacityReservationModificationQuoteArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.ec2.EC2CapacityReservationModificationQuoteArnProps.property.capacityReservationModificationQuoteId">capacityReservationModificationQuoteId</a></code> | <code>string</code> | The CapacityReservationModificationQuoteId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2CapacityReservationModificationQuoteArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2CapacityReservationModificationQuoteArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2CapacityReservationModificationQuoteArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `capacityReservationModificationQuoteId`<sup>Required</sup> <a name="capacityReservationModificationQuoteId" id="@cdk_utils/iam.ec2.EC2CapacityReservationModificationQuoteArnProps.property.capacityReservationModificationQuoteId"></a>
+
+```typescript
+public readonly capacityReservationModificationQuoteId: string;
+```
+
+- *Type:* string
+
+The CapacityReservationModificationQuoteId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.ec2.EC2CapacityReservationModificationQuoteArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.ec2.EC2CapacityReservationModificationQuoteArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.ec2.EC2CapacityReservationModificationQuoteArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### EC2CarrierGatewayArnComponents <a name="EC2CarrierGatewayArnComponents" id="@cdk_utils/iam.ec2.EC2CarrierGatewayArnComponents"></a>
 
 Parsed components of a carrier-gateway ARN.
@@ -16612,6 +16760,7 @@ new ec2.EC2Actions()
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.actionGetCapacityManagerMetricDimensions">actionGetCapacityManagerMetricDimensions</a></code> | <code>string</code> | [Read] ec2:GetCapacityManagerMetricDimensions. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.actionGetCapacityManagerMonitoredTagKeys">actionGetCapacityManagerMonitoredTagKeys</a></code> | <code>string</code> | [List] ec2:GetCapacityManagerMonitoredTagKeys. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.actionGetCapacityReservationUsage">actionGetCapacityReservationUsage</a></code> | <code>string</code> | [Read] ec2:GetCapacityReservationUsage. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.actionGetClientVpnEndpointAuthorizationPolicy">actionGetClientVpnEndpointAuthorizationPolicy</a></code> | <code>string</code> | [Read] ec2:GetClientVpnEndpointAuthorizationPolicy. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.actionGetCoipPoolUsage">actionGetCoipPoolUsage</a></code> | <code>string</code> | [Read] ec2:GetCoipPoolUsage. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.actionGetConsoleOutput">actionGetConsoleOutput</a></code> | <code>string</code> | [Read] ec2:GetConsoleOutput. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.actionGetConsoleScreenshot">actionGetConsoleScreenshot</a></code> | <code>string</code> | [Read] ec2:GetConsoleScreenshot. |
@@ -16625,6 +16774,7 @@ new ec2.EC2Actions()
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.actionGetHostReservationPurchasePreview">actionGetHostReservationPurchasePreview</a></code> | <code>string</code> | [Read] ec2:GetHostReservationPurchasePreview. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.actionGetImageAncestry">actionGetImageAncestry</a></code> | <code>string</code> | [Read] ec2:GetImageAncestry. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.actionGetImageBlockPublicAccessState">actionGetImageBlockPublicAccessState</a></code> | <code>string</code> | [Read] ec2:GetImageBlockPublicAccessState. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.actionGetImageFindings">actionGetImageFindings</a></code> | <code>string</code> | [Read] ec2:GetImageFindings. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.actionGetInstanceMetadataDefaults">actionGetInstanceMetadataDefaults</a></code> | <code>string</code> | [List] ec2:GetInstanceMetadataDefaults. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.actionGetInstanceTpmEkPub">actionGetInstanceTpmEkPub</a></code> | <code>string</code> | [Read] ec2:GetInstanceTpmEkPub. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.actionGetInstanceTypesFromInstanceRequirements">actionGetInstanceTypesFromInstanceRequirements</a></code> | <code>string</code> | [List] ec2:GetInstanceTypesFromInstanceRequirements. |
@@ -16665,6 +16815,7 @@ new ec2.EC2Actions()
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.actionGetSnapshotBlockPublicAccessState">actionGetSnapshotBlockPublicAccessState</a></code> | <code>string</code> | [Read] ec2:GetSnapshotBlockPublicAccessState. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.actionGetSpotPlacementScores">actionGetSpotPlacementScores</a></code> | <code>string</code> | [Read] ec2:GetSpotPlacementScores. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.actionGetSubnetCidrReservations">actionGetSubnetCidrReservations</a></code> | <code>string</code> | [Read] ec2:GetSubnetCidrReservations. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.actionGetTransitGatewayAttachmentNatConfiguration">actionGetTransitGatewayAttachmentNatConfiguration</a></code> | <code>string</code> | [Read] ec2:GetTransitGatewayAttachmentNatConfiguration. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.actionGetTransitGatewayAttachmentPropagations">actionGetTransitGatewayAttachmentPropagations</a></code> | <code>string</code> | [List] ec2:GetTransitGatewayAttachmentPropagations. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.actionGetTransitGatewayMeteringPolicyEntries">actionGetTransitGatewayMeteringPolicyEntries</a></code> | <code>string</code> | [List] ec2:GetTransitGatewayMeteringPolicyEntries. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.actionGetTransitGatewayMulticastDomainAssociations">actionGetTransitGatewayMulticastDomainAssociations</a></code> | <code>string</code> | [List] ec2:GetTransitGatewayMulticastDomainAssociations. |
@@ -16750,6 +16901,7 @@ new ec2.EC2Actions()
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.CreateCapacityReservation">CreateCapacityReservation</a></code> | <code>string</code> | [Write] ec2:CreateCapacityReservation. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.CreateCapacityReservationBySplitting">CreateCapacityReservationBySplitting</a></code> | <code>string</code> | [Write] ec2:CreateCapacityReservationBySplitting. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.CreateCapacityReservationCancellationQuote">CreateCapacityReservationCancellationQuote</a></code> | <code>string</code> | [Write] ec2:CreateCapacityReservationCancellationQuote. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.CreateCapacityReservationDateChangeQuote">CreateCapacityReservationDateChangeQuote</a></code> | <code>string</code> | [Write] ec2:CreateCapacityReservationDateChangeQuote. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.CreateCapacityReservationFleet">CreateCapacityReservationFleet</a></code> | <code>string</code> | [Write] ec2:CreateCapacityReservationFleet. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.CreateCarrierGateway">CreateCarrierGateway</a></code> | <code>string</code> | [Write] ec2:CreateCarrierGateway. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.CreateClientVpnEndpoint">CreateClientVpnEndpoint</a></code> | <code>string</code> | [Write] ec2:CreateClientVpnEndpoint. |
@@ -16861,6 +17013,7 @@ new ec2.EC2Actions()
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.DeleteCapacityManagerDataExport">DeleteCapacityManagerDataExport</a></code> | <code>string</code> | [Write] ec2:DeleteCapacityManagerDataExport. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.DeleteCarrierGateway">DeleteCarrierGateway</a></code> | <code>string</code> | [Write] ec2:DeleteCarrierGateway. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.DeleteClientVpnEndpoint">DeleteClientVpnEndpoint</a></code> | <code>string</code> | [Write] ec2:DeleteClientVpnEndpoint. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.DeleteClientVpnEndpointAuthorizationPolicy">DeleteClientVpnEndpointAuthorizationPolicy</a></code> | <code>string</code> | [Write] ec2:DeleteClientVpnEndpointAuthorizationPolicy. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.DeleteClientVpnRoute">DeleteClientVpnRoute</a></code> | <code>string</code> | [Write] ec2:DeleteClientVpnRoute. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.DeleteCoipCidr">DeleteCoipCidr</a></code> | <code>string</code> | [Write] ec2:DeleteCoipCidr. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.DeleteCoipPool">DeleteCoipPool</a></code> | <code>string</code> | [Write] ec2:DeleteCoipPool. |
@@ -16987,6 +17140,7 @@ new ec2.EC2Actions()
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.DescribeCapacityManagerDataExports">DescribeCapacityManagerDataExports</a></code> | <code>string</code> | [List] ec2:DescribeCapacityManagerDataExports. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.DescribeCapacityReservationBillingRequests">DescribeCapacityReservationBillingRequests</a></code> | <code>string</code> | [List] ec2:DescribeCapacityReservationBillingRequests. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.DescribeCapacityReservationCancellationQuotes">DescribeCapacityReservationCancellationQuotes</a></code> | <code>string</code> | [List] ec2:DescribeCapacityReservationCancellationQuotes. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.DescribeCapacityReservationDateChangeQuotes">DescribeCapacityReservationDateChangeQuotes</a></code> | <code>string</code> | [List] ec2:DescribeCapacityReservationDateChangeQuotes. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.DescribeCapacityReservationFleets">DescribeCapacityReservationFleets</a></code> | <code>string</code> | [List] ec2:DescribeCapacityReservationFleets. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.DescribeCapacityReservations">DescribeCapacityReservations</a></code> | <code>string</code> | [List] ec2:DescribeCapacityReservations. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.DescribeCapacityReservationTopology">DescribeCapacityReservationTopology</a></code> | <code>string</code> | [List] ec2:DescribeCapacityReservationTopology. |
@@ -17261,6 +17415,7 @@ new ec2.EC2Actions()
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.ModifyCapacityReservation">ModifyCapacityReservation</a></code> | <code>string</code> | [Write] ec2:ModifyCapacityReservation. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.ModifyCapacityReservationFleet">ModifyCapacityReservationFleet</a></code> | <code>string</code> | [Write] ec2:ModifyCapacityReservationFleet. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.ModifyClientVpnEndpoint">ModifyClientVpnEndpoint</a></code> | <code>string</code> | [Write] ec2:ModifyClientVpnEndpoint. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.ModifyClientVpnEndpointAuthorizationPolicy">ModifyClientVpnEndpointAuthorizationPolicy</a></code> | <code>string</code> | [Write] ec2:ModifyClientVpnEndpointAuthorizationPolicy. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.ModifyDefaultCreditSpecification">ModifyDefaultCreditSpecification</a></code> | <code>string</code> | [Write] ec2:ModifyDefaultCreditSpecification. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.ModifyEbsDefaultKmsKeyId">ModifyEbsDefaultKmsKeyId</a></code> | <code>string</code> | [Write] ec2:ModifyEbsDefaultKmsKeyId. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.ModifyFleet">ModifyFleet</a></code> | <code>string</code> | [Write] ec2:ModifyFleet. |
@@ -17310,6 +17465,7 @@ new ec2.EC2Actions()
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.ModifyTrafficMirrorFilterRule">ModifyTrafficMirrorFilterRule</a></code> | <code>string</code> | [Write] ec2:ModifyTrafficMirrorFilterRule. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.ModifyTrafficMirrorSession">ModifyTrafficMirrorSession</a></code> | <code>string</code> | [Write] ec2:ModifyTrafficMirrorSession. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.ModifyTransitGateway">ModifyTransitGateway</a></code> | <code>string</code> | [Write] ec2:ModifyTransitGateway. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.ModifyTransitGatewayAttachmentNatConfiguration">ModifyTransitGatewayAttachmentNatConfiguration</a></code> | <code>string</code> | [Write] ec2:ModifyTransitGatewayAttachmentNatConfiguration. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.ModifyTransitGatewayMeteringPolicy">ModifyTransitGatewayMeteringPolicy</a></code> | <code>string</code> | [Write] ec2:ModifyTransitGatewayMeteringPolicy. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.ModifyTransitGatewayPolicyTableEntry">ModifyTransitGatewayPolicyTableEntry</a></code> | <code>string</code> | [Write] ec2:ModifyTransitGatewayPolicyTableEntry. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Actions.property.ModifyTransitGatewayPrefixListReference">ModifyTransitGatewayPrefixListReference</a></code> | <code>string</code> | [Write] ec2:ModifyTransitGatewayPrefixListReference. |
@@ -17656,6 +17812,18 @@ public readonly actionGetCapacityReservationUsage: string;
 
 ---
 
+##### `actionGetClientVpnEndpointAuthorizationPolicy`<sup>Required</sup> <a name="actionGetClientVpnEndpointAuthorizationPolicy" id="@cdk_utils/iam.ec2.EC2Actions.property.actionGetClientVpnEndpointAuthorizationPolicy"></a>
+
+```typescript
+public readonly actionGetClientVpnEndpointAuthorizationPolicy: string;
+```
+
+- *Type:* string
+
+[Read] ec2:GetClientVpnEndpointAuthorizationPolicy.
+
+---
+
 ##### `actionGetCoipPoolUsage`<sup>Required</sup> <a name="actionGetCoipPoolUsage" id="@cdk_utils/iam.ec2.EC2Actions.property.actionGetCoipPoolUsage"></a>
 
 ```typescript
@@ -17809,6 +17977,18 @@ public readonly actionGetImageBlockPublicAccessState: string;
 - *Type:* string
 
 [Read] ec2:GetImageBlockPublicAccessState.
+
+---
+
+##### `actionGetImageFindings`<sup>Required</sup> <a name="actionGetImageFindings" id="@cdk_utils/iam.ec2.EC2Actions.property.actionGetImageFindings"></a>
+
+```typescript
+public readonly actionGetImageFindings: string;
+```
+
+- *Type:* string
+
+[Read] ec2:GetImageFindings.
 
 ---
 
@@ -18289,6 +18469,18 @@ public readonly actionGetSubnetCidrReservations: string;
 - *Type:* string
 
 [Read] ec2:GetSubnetCidrReservations.
+
+---
+
+##### `actionGetTransitGatewayAttachmentNatConfiguration`<sup>Required</sup> <a name="actionGetTransitGatewayAttachmentNatConfiguration" id="@cdk_utils/iam.ec2.EC2Actions.property.actionGetTransitGatewayAttachmentNatConfiguration"></a>
+
+```typescript
+public readonly actionGetTransitGatewayAttachmentNatConfiguration: string;
+```
+
+- *Type:* string
+
+[Read] ec2:GetTransitGatewayAttachmentNatConfiguration.
 
 ---
 
@@ -19309,6 +19501,18 @@ public readonly CreateCapacityReservationCancellationQuote: string;
 - *Type:* string
 
 [Write] ec2:CreateCapacityReservationCancellationQuote.
+
+---
+
+##### `CreateCapacityReservationDateChangeQuote`<sup>Required</sup> <a name="CreateCapacityReservationDateChangeQuote" id="@cdk_utils/iam.ec2.EC2Actions.property.CreateCapacityReservationDateChangeQuote"></a>
+
+```typescript
+public readonly CreateCapacityReservationDateChangeQuote: string;
+```
+
+- *Type:* string
+
+[Write] ec2:CreateCapacityReservationDateChangeQuote.
 
 ---
 
@@ -20641,6 +20845,18 @@ public readonly DeleteClientVpnEndpoint: string;
 - *Type:* string
 
 [Write] ec2:DeleteClientVpnEndpoint.
+
+---
+
+##### `DeleteClientVpnEndpointAuthorizationPolicy`<sup>Required</sup> <a name="DeleteClientVpnEndpointAuthorizationPolicy" id="@cdk_utils/iam.ec2.EC2Actions.property.DeleteClientVpnEndpointAuthorizationPolicy"></a>
+
+```typescript
+public readonly DeleteClientVpnEndpointAuthorizationPolicy: string;
+```
+
+- *Type:* string
+
+[Write] ec2:DeleteClientVpnEndpointAuthorizationPolicy.
 
 ---
 
@@ -22153,6 +22369,18 @@ public readonly DescribeCapacityReservationCancellationQuotes: string;
 - *Type:* string
 
 [List] ec2:DescribeCapacityReservationCancellationQuotes.
+
+---
+
+##### `DescribeCapacityReservationDateChangeQuotes`<sup>Required</sup> <a name="DescribeCapacityReservationDateChangeQuotes" id="@cdk_utils/iam.ec2.EC2Actions.property.DescribeCapacityReservationDateChangeQuotes"></a>
+
+```typescript
+public readonly DescribeCapacityReservationDateChangeQuotes: string;
+```
+
+- *Type:* string
+
+[List] ec2:DescribeCapacityReservationDateChangeQuotes.
 
 ---
 
@@ -25444,6 +25672,18 @@ public readonly ModifyClientVpnEndpoint: string;
 
 ---
 
+##### `ModifyClientVpnEndpointAuthorizationPolicy`<sup>Required</sup> <a name="ModifyClientVpnEndpointAuthorizationPolicy" id="@cdk_utils/iam.ec2.EC2Actions.property.ModifyClientVpnEndpointAuthorizationPolicy"></a>
+
+```typescript
+public readonly ModifyClientVpnEndpointAuthorizationPolicy: string;
+```
+
+- *Type:* string
+
+[Write] ec2:ModifyClientVpnEndpointAuthorizationPolicy.
+
+---
+
 ##### `ModifyDefaultCreditSpecification`<sup>Required</sup> <a name="ModifyDefaultCreditSpecification" id="@cdk_utils/iam.ec2.EC2Actions.property.ModifyDefaultCreditSpecification"></a>
 
 ```typescript
@@ -26029,6 +26269,18 @@ public readonly ModifyTransitGateway: string;
 - *Type:* string
 
 [Write] ec2:ModifyTransitGateway.
+
+---
+
+##### `ModifyTransitGatewayAttachmentNatConfiguration`<sup>Required</sup> <a name="ModifyTransitGatewayAttachmentNatConfiguration" id="@cdk_utils/iam.ec2.EC2Actions.property.ModifyTransitGatewayAttachmentNatConfiguration"></a>
+
+```typescript
+public readonly ModifyTransitGatewayAttachmentNatConfiguration: string;
+```
+
+- *Type:* string
+
+[Write] ec2:ModifyTransitGatewayAttachmentNatConfiguration.
 
 ---
 
@@ -27468,11 +27720,13 @@ new ec2.EC2Conditions()
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.ephemeralStorage">ephemeralStorage</a></code> | Generates a condition block for `ec2:EphemeralStorage`. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.fisActionId">fisActionId</a></code> | Generates a condition block for `ec2:FisActionId`. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.fisTargetArns">fisTargetArns</a></code> | Generates a condition block for `ec2:FisTargetArns`. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.futureCapacitySpecification">futureCapacitySpecification</a></code> | Generates a condition block for `ec2:FutureCapacitySpecification`. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.gatewayType">gatewayType</a></code> | Generates a condition block for `ec2:GatewayType`. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.hostRecovery">hostRecovery</a></code> | Generates a condition block for `ec2:HostRecovery`. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.ikeVersions">ikeVersions</a></code> | Generates a condition block for `ec2:IKEVersions`. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.imageId">imageId</a></code> | Generates a condition block for `ec2:ImageID`. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.imageType">imageType</a></code> | Generates a condition block for `ec2:ImageType`. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.imageWatermarkKeys">imageWatermarkKeys</a></code> | Generates a condition block for `ec2:ImageWatermarkKeys`. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.insideTunnelCidr">insideTunnelCidr</a></code> | Generates a condition block for `ec2:InsideTunnelCidr`. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.insideTunnelIpv6Cidr">insideTunnelIpv6Cidr</a></code> | Generates a condition block for `ec2:InsideTunnelIpv6Cidr`. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.instanceAutoRecovery">instanceAutoRecovery</a></code> | Generates a condition block for `ec2:InstanceAutoRecovery`. |
@@ -28127,6 +28381,22 @@ Generates a condition block for `ec2:FisTargetArns`.
 
 ---
 
+##### `futureCapacitySpecification` <a name="futureCapacitySpecification" id="@cdk_utils/iam.ec2.EC2Conditions.futureCapacitySpecification"></a>
+
+```typescript
+import { ec2 } from '@cdk_utils/iam'
+
+ec2.EC2Conditions.futureCapacitySpecification(value: string)
+```
+
+Generates a condition block for `ec2:FutureCapacitySpecification`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.ec2.EC2Conditions.futureCapacitySpecification.parameter.value"></a>
+
+- *Type:* string
+
+---
+
 ##### `gatewayType` <a name="gatewayType" id="@cdk_utils/iam.ec2.EC2Conditions.gatewayType"></a>
 
 ```typescript
@@ -28204,6 +28474,22 @@ Generates a condition block for `ec2:ImageType`.
 ###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.ec2.EC2Conditions.imageType.parameter.value"></a>
 
 - *Type:* string
+
+---
+
+##### `imageWatermarkKeys` <a name="imageWatermarkKeys" id="@cdk_utils/iam.ec2.EC2Conditions.imageWatermarkKeys"></a>
+
+```typescript
+import { ec2 } from '@cdk_utils/iam'
+
+ec2.EC2Conditions.imageWatermarkKeys(values: string[])
+```
+
+Generates a condition block for `ec2:ImageWatermarkKeys`.
+
+###### `values`<sup>Required</sup> <a name="values" id="@cdk_utils/iam.ec2.EC2Conditions.imageWatermarkKeys.parameter.values"></a>
+
+- *Type:* string[]
 
 ---
 
@@ -29944,6 +30230,7 @@ Generates a condition block for `ec2:VpcPeeringConnectionID`.
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.actionGetCapacityManagerMetricDimensionsConditionKeys">actionGetCapacityManagerMetricDimensionsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetCapacityManagerMetricDimensions action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.actionGetCapacityManagerMonitoredTagKeysConditionKeys">actionGetCapacityManagerMonitoredTagKeysConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetCapacityManagerMonitoredTagKeys action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.actionGetCapacityReservationUsageConditionKeys">actionGetCapacityReservationUsageConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetCapacityReservationUsage action. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.actionGetClientVpnEndpointAuthorizationPolicyConditionKeys">actionGetClientVpnEndpointAuthorizationPolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetClientVpnEndpointAuthorizationPolicy action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.actionGetCoipPoolUsageConditionKeys">actionGetCoipPoolUsageConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetCoipPoolUsage action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.actionGetConsoleOutputConditionKeys">actionGetConsoleOutputConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetConsoleOutput action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.actionGetConsoleScreenshotConditionKeys">actionGetConsoleScreenshotConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetConsoleScreenshot action. |
@@ -29957,6 +30244,7 @@ Generates a condition block for `ec2:VpcPeeringConnectionID`.
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.actionGetHostReservationPurchasePreviewConditionKeys">actionGetHostReservationPurchasePreviewConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetHostReservationPurchasePreview action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.actionGetImageAncestryConditionKeys">actionGetImageAncestryConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetImageAncestry action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.actionGetImageBlockPublicAccessStateConditionKeys">actionGetImageBlockPublicAccessStateConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetImageBlockPublicAccessState action. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.actionGetImageFindingsConditionKeys">actionGetImageFindingsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetImageFindings action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.actionGetInstanceMetadataDefaultsConditionKeys">actionGetInstanceMetadataDefaultsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetInstanceMetadataDefaults action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.actionGetInstanceTpmEkPubConditionKeys">actionGetInstanceTpmEkPubConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetInstanceTpmEkPub action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.actionGetInstanceTypesFromInstanceRequirementsConditionKeys">actionGetInstanceTypesFromInstanceRequirementsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetInstanceTypesFromInstanceRequirements action. |
@@ -29997,6 +30285,7 @@ Generates a condition block for `ec2:VpcPeeringConnectionID`.
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.actionGetSnapshotBlockPublicAccessStateConditionKeys">actionGetSnapshotBlockPublicAccessStateConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetSnapshotBlockPublicAccessState action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.actionGetSpotPlacementScoresConditionKeys">actionGetSpotPlacementScoresConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetSpotPlacementScores action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.actionGetSubnetCidrReservationsConditionKeys">actionGetSubnetCidrReservationsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetSubnetCidrReservations action. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.actionGetTransitGatewayAttachmentNatConfigurationConditionKeys">actionGetTransitGatewayAttachmentNatConfigurationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetTransitGatewayAttachmentNatConfiguration action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.actionGetTransitGatewayAttachmentPropagationsConditionKeys">actionGetTransitGatewayAttachmentPropagationsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetTransitGatewayAttachmentPropagations action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.actionGetTransitGatewayMeteringPolicyEntriesConditionKeys">actionGetTransitGatewayMeteringPolicyEntriesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetTransitGatewayMeteringPolicyEntries action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.actionGetTransitGatewayMulticastDomainAssociationsConditionKeys">actionGetTransitGatewayMulticastDomainAssociationsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetTransitGatewayMulticastDomainAssociations action. |
@@ -30100,6 +30389,7 @@ Generates a condition block for `ec2:VpcPeeringConnectionID`.
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.CreateCapacityReservationBySplittingConditionKeys">CreateCapacityReservationBySplittingConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateCapacityReservationBySplitting action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.CreateCapacityReservationCancellationQuoteConditionKeys">CreateCapacityReservationCancellationQuoteConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateCapacityReservationCancellationQuote action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.CreateCapacityReservationConditionKeys">CreateCapacityReservationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateCapacityReservation action. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.CreateCapacityReservationDateChangeQuoteConditionKeys">CreateCapacityReservationDateChangeQuoteConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateCapacityReservationDateChangeQuote action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.CreateCapacityReservationFleetConditionKeys">CreateCapacityReservationFleetConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateCapacityReservationFleet action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.CreateCarrierGatewayConditionKeys">CreateCarrierGatewayConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateCarrierGateway action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.CreateClientVpnEndpointConditionKeys">CreateClientVpnEndpointConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateClientVpnEndpoint action. |
@@ -30210,6 +30500,7 @@ Generates a condition block for `ec2:VpcPeeringConnectionID`.
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.DeleteApplicationStatusCheckConditionKeys">DeleteApplicationStatusCheckConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteApplicationStatusCheck action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.DeleteCapacityManagerDataExportConditionKeys">DeleteCapacityManagerDataExportConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteCapacityManagerDataExport action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.DeleteCarrierGatewayConditionKeys">DeleteCarrierGatewayConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteCarrierGateway action. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.DeleteClientVpnEndpointAuthorizationPolicyConditionKeys">DeleteClientVpnEndpointAuthorizationPolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteClientVpnEndpointAuthorizationPolicy action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.DeleteClientVpnEndpointConditionKeys">DeleteClientVpnEndpointConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteClientVpnEndpoint action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.DeleteClientVpnRouteConditionKeys">DeleteClientVpnRouteConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteClientVpnRoute action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.DeleteCoipCidrConditionKeys">DeleteCoipCidrConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteCoipCidr action. |
@@ -30337,6 +30628,7 @@ Generates a condition block for `ec2:VpcPeeringConnectionID`.
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.DescribeCapacityManagerDataExportsConditionKeys">DescribeCapacityManagerDataExportsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeCapacityManagerDataExports action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.DescribeCapacityReservationBillingRequestsConditionKeys">DescribeCapacityReservationBillingRequestsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeCapacityReservationBillingRequests action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.DescribeCapacityReservationCancellationQuotesConditionKeys">DescribeCapacityReservationCancellationQuotesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeCapacityReservationCancellationQuotes action. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.DescribeCapacityReservationDateChangeQuotesConditionKeys">DescribeCapacityReservationDateChangeQuotesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeCapacityReservationDateChangeQuotes action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.DescribeCapacityReservationFleetsConditionKeys">DescribeCapacityReservationFleetsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeCapacityReservationFleets action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.DescribeCapacityReservationsConditionKeys">DescribeCapacityReservationsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeCapacityReservations action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.DescribeCapacityReservationTopologyConditionKeys">DescribeCapacityReservationTopologyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeCapacityReservationTopology action. |
@@ -30604,11 +30896,13 @@ Generates a condition block for `ec2:VpcPeeringConnectionID`.
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.ExportVerifiedAccessInstanceClientConfigurationConditionKeys">ExportVerifiedAccessInstanceClientConfigurationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ExportVerifiedAccessInstanceClientConfiguration action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.FIS_ACTION_ID">FIS_ACTION_ID</a></code> | <code>string</code> | Condition key: ec2:FisActionId (String). |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.FIS_TARGET_ARNS">FIS_TARGET_ARNS</a></code> | <code>string</code> | Condition key: ec2:FisTargetArns (ArrayOfARN). |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.FUTURE_CAPACITY_SPECIFICATION">FUTURE_CAPACITY_SPECIFICATION</a></code> | <code>string</code> | Condition key: ec2:FutureCapacitySpecification (ARN). |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.GATEWAY_TYPE">GATEWAY_TYPE</a></code> | <code>string</code> | Condition key: ec2:GatewayType (String). |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.HOST_RECOVERY">HOST_RECOVERY</a></code> | <code>string</code> | Condition key: ec2:HostRecovery (String). |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.IKE_VERSIONS">IKE_VERSIONS</a></code> | <code>string</code> | Condition key: ec2:IKEVersions (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.IMAGE_ID">IMAGE_ID</a></code> | <code>string</code> | Condition key: ec2:ImageID (String). |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.IMAGE_TYPE">IMAGE_TYPE</a></code> | <code>string</code> | Condition key: ec2:ImageType (String). |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.IMAGE_WATERMARK_KEYS">IMAGE_WATERMARK_KEYS</a></code> | <code>string</code> | Condition key: ec2:ImageWatermarkKeys (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.ImportByoipCidrToIpamConditionKeys">ImportByoipCidrToIpamConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ImportByoipCidrToIpam action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.ImportClientVpnClientCertificateRevocationListConditionKeys">ImportClientVpnClientCertificateRevocationListConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ImportClientVpnClientCertificateRevocationList action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.ImportImageConditionKeys">ImportImageConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ImportImage action. |
@@ -30657,6 +30951,7 @@ Generates a condition block for `ec2:VpcPeeringConnectionID`.
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.ModifyAvailabilityZoneGroupConditionKeys">ModifyAvailabilityZoneGroupConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ModifyAvailabilityZoneGroup action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.ModifyCapacityReservationConditionKeys">ModifyCapacityReservationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ModifyCapacityReservation action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.ModifyCapacityReservationFleetConditionKeys">ModifyCapacityReservationFleetConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ModifyCapacityReservationFleet action. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.ModifyClientVpnEndpointAuthorizationPolicyConditionKeys">ModifyClientVpnEndpointAuthorizationPolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ModifyClientVpnEndpointAuthorizationPolicy action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.ModifyClientVpnEndpointConditionKeys">ModifyClientVpnEndpointConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ModifyClientVpnEndpoint action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.ModifyDefaultCreditSpecificationConditionKeys">ModifyDefaultCreditSpecificationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ModifyDefaultCreditSpecification action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.ModifyEbsDefaultKmsKeyIdConditionKeys">ModifyEbsDefaultKmsKeyIdConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ModifyEbsDefaultKmsKeyId action. |
@@ -30706,6 +31001,7 @@ Generates a condition block for `ec2:VpcPeeringConnectionID`.
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.ModifyTrafficMirrorFilterNetworkServicesConditionKeys">ModifyTrafficMirrorFilterNetworkServicesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ModifyTrafficMirrorFilterNetworkServices action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.ModifyTrafficMirrorFilterRuleConditionKeys">ModifyTrafficMirrorFilterRuleConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ModifyTrafficMirrorFilterRule action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.ModifyTrafficMirrorSessionConditionKeys">ModifyTrafficMirrorSessionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ModifyTrafficMirrorSession action. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.ModifyTransitGatewayAttachmentNatConfigurationConditionKeys">ModifyTransitGatewayAttachmentNatConfigurationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ModifyTransitGatewayAttachmentNatConfiguration action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.ModifyTransitGatewayConditionKeys">ModifyTransitGatewayConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ModifyTransitGateway action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.ModifyTransitGatewayMeteringPolicyConditionKeys">ModifyTransitGatewayMeteringPolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ModifyTransitGatewayMeteringPolicy action. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Conditions.property.ModifyTransitGatewayPolicyTableEntryConditionKeys">ModifyTransitGatewayPolicyTableEntryConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ModifyTransitGatewayPolicyTableEntry action. |
@@ -31140,6 +31436,18 @@ Condition keys applicable to the GetCapacityReservationUsage action.
 
 ---
 
+##### `actionGetClientVpnEndpointAuthorizationPolicyConditionKeys`<sup>Required</sup> <a name="actionGetClientVpnEndpointAuthorizationPolicyConditionKeys" id="@cdk_utils/iam.ec2.EC2Conditions.property.actionGetClientVpnEndpointAuthorizationPolicyConditionKeys"></a>
+
+```typescript
+public readonly actionGetClientVpnEndpointAuthorizationPolicyConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetClientVpnEndpointAuthorizationPolicy action.
+
+---
+
 ##### `actionGetCoipPoolUsageConditionKeys`<sup>Required</sup> <a name="actionGetCoipPoolUsageConditionKeys" id="@cdk_utils/iam.ec2.EC2Conditions.property.actionGetCoipPoolUsageConditionKeys"></a>
 
 ```typescript
@@ -31293,6 +31601,18 @@ public readonly actionGetImageBlockPublicAccessStateConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the GetImageBlockPublicAccessState action.
+
+---
+
+##### `actionGetImageFindingsConditionKeys`<sup>Required</sup> <a name="actionGetImageFindingsConditionKeys" id="@cdk_utils/iam.ec2.EC2Conditions.property.actionGetImageFindingsConditionKeys"></a>
+
+```typescript
+public readonly actionGetImageFindingsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetImageFindings action.
 
 ---
 
@@ -31773,6 +32093,18 @@ public readonly actionGetSubnetCidrReservationsConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the GetSubnetCidrReservations action.
+
+---
+
+##### `actionGetTransitGatewayAttachmentNatConfigurationConditionKeys`<sup>Required</sup> <a name="actionGetTransitGatewayAttachmentNatConfigurationConditionKeys" id="@cdk_utils/iam.ec2.EC2Conditions.property.actionGetTransitGatewayAttachmentNatConfigurationConditionKeys"></a>
+
+```typescript
+public readonly actionGetTransitGatewayAttachmentNatConfigurationConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetTransitGatewayAttachmentNatConfiguration action.
 
 ---
 
@@ -33009,6 +33341,18 @@ public readonly CreateCapacityReservationConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the CreateCapacityReservation action.
+
+---
+
+##### `CreateCapacityReservationDateChangeQuoteConditionKeys`<sup>Required</sup> <a name="CreateCapacityReservationDateChangeQuoteConditionKeys" id="@cdk_utils/iam.ec2.EC2Conditions.property.CreateCapacityReservationDateChangeQuoteConditionKeys"></a>
+
+```typescript
+public readonly CreateCapacityReservationDateChangeQuoteConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateCapacityReservationDateChangeQuote action.
 
 ---
 
@@ -34329,6 +34673,18 @@ public readonly DeleteCarrierGatewayConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the DeleteCarrierGateway action.
+
+---
+
+##### `DeleteClientVpnEndpointAuthorizationPolicyConditionKeys`<sup>Required</sup> <a name="DeleteClientVpnEndpointAuthorizationPolicyConditionKeys" id="@cdk_utils/iam.ec2.EC2Conditions.property.DeleteClientVpnEndpointAuthorizationPolicyConditionKeys"></a>
+
+```typescript
+public readonly DeleteClientVpnEndpointAuthorizationPolicyConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DeleteClientVpnEndpointAuthorizationPolicy action.
 
 ---
 
@@ -35853,6 +36209,18 @@ public readonly DescribeCapacityReservationCancellationQuotesConditionKeys: stri
 - *Type:* string[]
 
 Condition keys applicable to the DescribeCapacityReservationCancellationQuotes action.
+
+---
+
+##### `DescribeCapacityReservationDateChangeQuotesConditionKeys`<sup>Required</sup> <a name="DescribeCapacityReservationDateChangeQuotesConditionKeys" id="@cdk_utils/iam.ec2.EC2Conditions.property.DescribeCapacityReservationDateChangeQuotesConditionKeys"></a>
+
+```typescript
+public readonly DescribeCapacityReservationDateChangeQuotesConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DescribeCapacityReservationDateChangeQuotes action.
 
 ---
 
@@ -39060,6 +39428,18 @@ Condition key: ec2:FisTargetArns (ArrayOfARN).
 
 ---
 
+##### `FUTURE_CAPACITY_SPECIFICATION`<sup>Required</sup> <a name="FUTURE_CAPACITY_SPECIFICATION" id="@cdk_utils/iam.ec2.EC2Conditions.property.FUTURE_CAPACITY_SPECIFICATION"></a>
+
+```typescript
+public readonly FUTURE_CAPACITY_SPECIFICATION: string;
+```
+
+- *Type:* string
+
+Condition key: ec2:FutureCapacitySpecification (ARN).
+
+---
+
 ##### `GATEWAY_TYPE`<sup>Required</sup> <a name="GATEWAY_TYPE" id="@cdk_utils/iam.ec2.EC2Conditions.property.GATEWAY_TYPE"></a>
 
 ```typescript
@@ -39117,6 +39497,18 @@ public readonly IMAGE_TYPE: string;
 - *Type:* string
 
 Condition key: ec2:ImageType (String).
+
+---
+
+##### `IMAGE_WATERMARK_KEYS`<sup>Required</sup> <a name="IMAGE_WATERMARK_KEYS" id="@cdk_utils/iam.ec2.EC2Conditions.property.IMAGE_WATERMARK_KEYS"></a>
+
+```typescript
+public readonly IMAGE_WATERMARK_KEYS: string;
+```
+
+- *Type:* string
+
+Condition key: ec2:ImageWatermarkKeys (ArrayOfString).
 
 ---
 
@@ -39693,6 +40085,18 @@ public readonly ModifyCapacityReservationFleetConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the ModifyCapacityReservationFleet action.
+
+---
+
+##### `ModifyClientVpnEndpointAuthorizationPolicyConditionKeys`<sup>Required</sup> <a name="ModifyClientVpnEndpointAuthorizationPolicyConditionKeys" id="@cdk_utils/iam.ec2.EC2Conditions.property.ModifyClientVpnEndpointAuthorizationPolicyConditionKeys"></a>
+
+```typescript
+public readonly ModifyClientVpnEndpointAuthorizationPolicyConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ModifyClientVpnEndpointAuthorizationPolicy action.
 
 ---
 
@@ -40281,6 +40685,18 @@ public readonly ModifyTrafficMirrorSessionConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the ModifyTrafficMirrorSession action.
+
+---
+
+##### `ModifyTransitGatewayAttachmentNatConfigurationConditionKeys`<sup>Required</sup> <a name="ModifyTransitGatewayAttachmentNatConfigurationConditionKeys" id="@cdk_utils/iam.ec2.EC2Conditions.property.ModifyTransitGatewayAttachmentNatConfigurationConditionKeys"></a>
+
+```typescript
+public readonly ModifyTransitGatewayAttachmentNatConfigurationConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ModifyTransitGatewayAttachmentNatConfiguration action.
 
 ---
 
@@ -53174,6 +53590,7 @@ new ec2.EC2Resources()
 | <code><a href="#@cdk_utils/iam.ec2.EC2Resources.capacityReservation">capacityReservation</a></code> | Builds an ARN for the capacity-reservation resource. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Resources.capacityReservationCancellationQuote">capacityReservationCancellationQuote</a></code> | Builds an ARN for the capacity-reservation-cancellation-quote resource. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Resources.capacityReservationFleet">capacityReservationFleet</a></code> | Builds an ARN for the capacity-reservation-fleet resource. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Resources.capacityReservationModificationQuote">capacityReservationModificationQuote</a></code> | Builds an ARN for the capacity-reservation-modification-quote resource. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Resources.carrierGateway">carrierGateway</a></code> | Builds an ARN for the carrier-gateway resource. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Resources.certificate">certificate</a></code> | Builds an ARN for the certificate resource. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Resources.clientVPNEndpoint">clientVPNEndpoint</a></code> | Builds an ARN for the client-vpn-endpoint resource. |
@@ -53219,6 +53636,7 @@ new ec2.EC2Resources()
 | <code><a href="#@cdk_utils/iam.ec2.EC2Resources.isValidCapacityReservationArn">isValidCapacityReservationArn</a></code> | Validates whether a string is a valid ARN for the capacity-reservation resource. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Resources.isValidCapacityReservationCancellationQuoteArn">isValidCapacityReservationCancellationQuoteArn</a></code> | Validates whether a string is a valid ARN for the capacity-reservation-cancellation-quote resource. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Resources.isValidCapacityReservationFleetArn">isValidCapacityReservationFleetArn</a></code> | Validates whether a string is a valid ARN for the capacity-reservation-fleet resource. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Resources.isValidCapacityReservationModificationQuoteArn">isValidCapacityReservationModificationQuoteArn</a></code> | Validates whether a string is a valid ARN for the capacity-reservation-modification-quote resource. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Resources.isValidCarrierGatewayArn">isValidCarrierGatewayArn</a></code> | Validates whether a string is a valid ARN for the carrier-gateway resource. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Resources.isValidCertificateArn">isValidCertificateArn</a></code> | Validates whether a string is a valid ARN for the certificate resource. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Resources.isValidClientVPNEndpointArn">isValidClientVPNEndpointArn</a></code> | Validates whether a string is a valid ARN for the client-vpn-endpoint resource. |
@@ -53351,6 +53769,7 @@ new ec2.EC2Resources()
 | <code><a href="#@cdk_utils/iam.ec2.EC2Resources.parseCapacityReservationArn">parseCapacityReservationArn</a></code> | Parses a capacity-reservation ARN into its components. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Resources.parseCapacityReservationCancellationQuoteArn">parseCapacityReservationCancellationQuoteArn</a></code> | Parses a capacity-reservation-cancellation-quote ARN into its components. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Resources.parseCapacityReservationFleetArn">parseCapacityReservationFleetArn</a></code> | Parses a capacity-reservation-fleet ARN into its components. |
+| <code><a href="#@cdk_utils/iam.ec2.EC2Resources.parseCapacityReservationModificationQuoteArn">parseCapacityReservationModificationQuoteArn</a></code> | Parses a capacity-reservation-modification-quote ARN into its components. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Resources.parseCarrierGatewayArn">parseCarrierGatewayArn</a></code> | Parses a carrier-gateway ARN into its components. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Resources.parseCertificateArn">parseCertificateArn</a></code> | Parses a certificate ARN into its components. |
 | <code><a href="#@cdk_utils/iam.ec2.EC2Resources.parseClientVPNEndpointArn">parseClientVPNEndpointArn</a></code> | Parses a client-vpn-endpoint ARN into its components. |
@@ -53606,6 +54025,22 @@ Builds an ARN for the capacity-reservation-fleet resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.ec2.EC2Resources.capacityReservationFleet.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.ec2.EC2CapacityReservationFleetArnProps">EC2CapacityReservationFleetArnProps</a>
+
+---
+
+##### `capacityReservationModificationQuote` <a name="capacityReservationModificationQuote" id="@cdk_utils/iam.ec2.EC2Resources.capacityReservationModificationQuote"></a>
+
+```typescript
+import { ec2 } from '@cdk_utils/iam'
+
+ec2.EC2Resources.capacityReservationModificationQuote(props: EC2CapacityReservationModificationQuoteArnProps)
+```
+
+Builds an ARN for the capacity-reservation-modification-quote resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.ec2.EC2Resources.capacityReservationModificationQuote.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.ec2.EC2CapacityReservationModificationQuoteArnProps">EC2CapacityReservationModificationQuoteArnProps</a>
 
 ---
 
@@ -54324,6 +54759,22 @@ ec2.EC2Resources.isValidCapacityReservationFleetArn(arn: string)
 Validates whether a string is a valid ARN for the capacity-reservation-fleet resource.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.ec2.EC2Resources.isValidCapacityReservationFleetArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidCapacityReservationModificationQuoteArn` <a name="isValidCapacityReservationModificationQuoteArn" id="@cdk_utils/iam.ec2.EC2Resources.isValidCapacityReservationModificationQuoteArn"></a>
+
+```typescript
+import { ec2 } from '@cdk_utils/iam'
+
+ec2.EC2Resources.isValidCapacityReservationModificationQuoteArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the capacity-reservation-modification-quote resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.ec2.EC2Resources.isValidCapacityReservationModificationQuoteArn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -56436,6 +56887,22 @@ ec2.EC2Resources.parseCapacityReservationFleetArn(arn: string)
 Parses a capacity-reservation-fleet ARN into its components.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.ec2.EC2Resources.parseCapacityReservationFleetArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseCapacityReservationModificationQuoteArn` <a name="parseCapacityReservationModificationQuoteArn" id="@cdk_utils/iam.ec2.EC2Resources.parseCapacityReservationModificationQuoteArn"></a>
+
+```typescript
+import { ec2 } from '@cdk_utils/iam'
+
+ec2.EC2Resources.parseCapacityReservationModificationQuoteArn(arn: string)
+```
+
+Parses a capacity-reservation-modification-quote ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.ec2.EC2Resources.parseCapacityReservationModificationQuoteArn.parameter.arn"></a>
 
 - *Type:* string
 

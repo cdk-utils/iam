@@ -3499,6 +3499,10 @@
       "Name": "CreateDistribution",
       "AuthorizedActions": [
         {
+          "Name": "AttachCertificateToDistribution",
+          "Service": "lightsail"
+        },
+        {
           "Name": "CreateDistribution",
           "Service": "lightsail"
         },

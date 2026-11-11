@@ -32,11 +32,19 @@ export class PartnercentralActions {
 	/** [Write] partnercentral:AssociateBenefitApplicationResource */
 	static readonly AssociateBenefitApplicationResource =
 		"partnercentral:AssociateBenefitApplicationResource";
+	/** [Write] partnercentral:AssociateBusinessPlan */
+	static readonly AssociateBusinessPlan =
+		"partnercentral:AssociateBusinessPlan";
 	/** [Write] partnercentral:AssociateOpportunity */
 	static readonly AssociateOpportunity = "partnercentral:AssociateOpportunity";
 	/** [Write] partnercentral:CancelBenefitApplication */
 	static readonly CancelBenefitApplication =
 		"partnercentral:CancelBenefitApplication";
+	/** [Write] partnercentral:CancelBusinessPlan */
+	static readonly CancelBusinessPlan = "partnercentral:CancelBusinessPlan";
+	/** [Write] partnercentral:CancelBusinessPlanSubmissionTask */
+	static readonly CancelBusinessPlanSubmissionTask =
+		"partnercentral:CancelBusinessPlanSubmissionTask";
 	/** [Write] partnercentral:CancelChannelHandshake */
 	static readonly CancelChannelHandshake =
 		"partnercentral:CancelChannelHandshake";
@@ -53,6 +61,9 @@ export class PartnercentralActions {
 		"partnercentral:CreateBenefitApplication";
 	/** [Write] partnercentral:CreateBusinessPlan */
 	static readonly CreateBusinessPlan = "partnercentral:CreateBusinessPlan";
+	/** [Write] partnercentral:CreateBusinessPlanItem */
+	static readonly CreateBusinessPlanItem =
+		"partnercentral:CreateBusinessPlanItem";
 	/** [Write] partnercentral:CreateChannelHandshake */
 	static readonly CreateChannelHandshake =
 		"partnercentral:CreateChannelHandshake";
@@ -97,6 +108,12 @@ export class PartnercentralActions {
 	/** [Write] partnercentral:CreateRevenueAttribution */
 	static readonly CreateRevenueAttribution =
 		"partnercentral:CreateRevenueAttribution";
+	/** [Write] partnercentral:DeleteBusinessPlanAttachment */
+	static readonly DeleteBusinessPlanAttachment =
+		"partnercentral:DeleteBusinessPlanAttachment";
+	/** [Write] partnercentral:DeleteBusinessPlanItem */
+	static readonly DeleteBusinessPlanItem =
+		"partnercentral:DeleteBusinessPlanItem";
 	/** [Write] partnercentral:DeleteProgramManagementAccount */
 	static readonly DeleteProgramManagementAccount =
 		"partnercentral:DeleteProgramManagementAccount";
@@ -111,6 +128,9 @@ export class PartnercentralActions {
 	/** [Write] partnercentral:DisassociateBenefitApplicationResource */
 	static readonly DisassociateBenefitApplicationResource =
 		"partnercentral:DisassociateBenefitApplicationResource";
+	/** [Write] partnercentral:DisassociateBusinessPlan */
+	static readonly DisassociateBusinessPlan =
+		"partnercentral:DisassociateBusinessPlan";
 	/** [Write] partnercentral:DisassociateOpportunity */
 	static readonly DisassociateOpportunity =
 		"partnercentral:DisassociateOpportunity";
@@ -132,6 +152,24 @@ export class PartnercentralActions {
 		"partnercentral:GetBenefitApplication";
 	/** [Read] partnercentral:GetBusinessPlan */
 	static readonly actionGetBusinessPlan = "partnercentral:GetBusinessPlan";
+	/** [Read] partnercentral:GetBusinessPlanAttachment */
+	static readonly actionGetBusinessPlanAttachment =
+		"partnercentral:GetBusinessPlanAttachment";
+	/** [Read] partnercentral:GetBusinessPlanAttachmentImportTask */
+	static readonly actionGetBusinessPlanAttachmentImportTask =
+		"partnercentral:GetBusinessPlanAttachmentImportTask";
+	/** [Read] partnercentral:GetBusinessPlanItem */
+	static readonly actionGetBusinessPlanItem =
+		"partnercentral:GetBusinessPlanItem";
+	/** [Read] partnercentral:GetBusinessPlanItemSchema */
+	static readonly actionGetBusinessPlanItemSchema =
+		"partnercentral:GetBusinessPlanItemSchema";
+	/** [Read] partnercentral:GetBusinessPlanSettings */
+	static readonly actionGetBusinessPlanSettings =
+		"partnercentral:GetBusinessPlanSettings";
+	/** [Read] partnercentral:GetBusinessPlanSubmissionTask */
+	static readonly actionGetBusinessPlanSubmissionTask =
+		"partnercentral:GetBusinessPlanSubmissionTask";
 	/** [Read] partnercentral:GetCollaborationChannel */
 	static readonly actionGetCollaborationChannel =
 		"partnercentral:GetCollaborationChannel";
@@ -169,6 +207,9 @@ export class PartnercentralActions {
 		"partnercentral:GetPartnerDashboard";
 	/** [Read] partnercentral:GetPartnerProfile */
 	static readonly actionGetPartnerProfile = "partnercentral:GetPartnerProfile";
+	/** [Read] partnercentral:GetPartnerReportingData */
+	static readonly actionGetPartnerReportingData =
+		"partnercentral:GetPartnerReportingData";
 	/** [Read] partnercentral:GetProfileUpdateTask */
 	static readonly actionGetProfileUpdateTask =
 		"partnercentral:GetProfileUpdateTask";
@@ -220,6 +261,24 @@ export class PartnercentralActions {
 		"partnercentral:ListBenefitApplications";
 	/** [List] partnercentral:ListBenefits */
 	static readonly ListBenefits = "partnercentral:ListBenefits";
+	/** [List] partnercentral:ListBusinessPlanAssociations */
+	static readonly ListBusinessPlanAssociations =
+		"partnercentral:ListBusinessPlanAssociations";
+	/** [List] partnercentral:ListBusinessPlanAttachmentImportTasks */
+	static readonly ListBusinessPlanAttachmentImportTasks =
+		"partnercentral:ListBusinessPlanAttachmentImportTasks";
+	/** [List] partnercentral:ListBusinessPlanAttachments */
+	static readonly ListBusinessPlanAttachments =
+		"partnercentral:ListBusinessPlanAttachments";
+	/** [List] partnercentral:ListBusinessPlanHistory */
+	static readonly ListBusinessPlanHistory =
+		"partnercentral:ListBusinessPlanHistory";
+	/** [List] partnercentral:ListBusinessPlanItems */
+	static readonly ListBusinessPlanItems =
+		"partnercentral:ListBusinessPlanItems";
+	/** [List] partnercentral:ListBusinessPlanSubmissionTasks */
+	static readonly ListBusinessPlanSubmissionTasks =
+		"partnercentral:ListBusinessPlanSubmissionTasks";
 	/** [List] partnercentral:ListBusinessPlans */
 	static readonly ListBusinessPlans = "partnercentral:ListBusinessPlans";
 	/** [List] partnercentral:ListChannelHandshakes */
@@ -297,6 +356,9 @@ export class PartnercentralActions {
 		"partnercentral:PutAllianceLeadContact";
 	/** [Write] partnercentral:PutBusinessPlan */
 	static readonly PutBusinessPlan = "partnercentral:PutBusinessPlan";
+	/** [Write] partnercentral:PutBusinessPlanSettings */
+	static readonly PutBusinessPlanSettings =
+		"partnercentral:PutBusinessPlanSettings";
 	/** [Write] partnercentral:PutProfileVisibility */
 	static readonly PutProfileVisibility = "partnercentral:PutProfileVisibility";
 	/** [Write] partnercentral:PutSellingSystemSettings */
@@ -325,6 +387,12 @@ export class PartnercentralActions {
 	/** [Write] partnercentral:SendEmailVerificationCode */
 	static readonly SendEmailVerificationCode =
 		"partnercentral:SendEmailVerificationCode";
+	/** [Write] partnercentral:StartBusinessPlanAttachmentImportTask */
+	static readonly StartBusinessPlanAttachmentImportTask =
+		"partnercentral:StartBusinessPlanAttachmentImportTask";
+	/** [Write] partnercentral:StartBusinessPlanSubmissionTask */
+	static readonly StartBusinessPlanSubmissionTask =
+		"partnercentral:StartBusinessPlanSubmissionTask";
 	/** [Write] partnercentral:StartEngagementByAcceptingInvitationTask */
 	static readonly StartEngagementByAcceptingInvitationTask =
 		"partnercentral:StartEngagementByAcceptingInvitationTask";
@@ -369,6 +437,11 @@ export class PartnercentralActions {
 	/** [Write] partnercentral:UpdateBenefitApplication */
 	static readonly UpdateBenefitApplication =
 		"partnercentral:UpdateBenefitApplication";
+	/** [Write] partnercentral:UpdateBusinessPlan */
+	static readonly UpdateBusinessPlan = "partnercentral:UpdateBusinessPlan";
+	/** [Write] partnercentral:UpdateBusinessPlanItem */
+	static readonly UpdateBusinessPlanItem =
+		"partnercentral:UpdateBusinessPlanItem";
 	/** [Write] partnercentral:UpdateConnectionPreferences */
 	static readonly UpdateConnectionPreferences =
 		"partnercentral:UpdateConnectionPreferences";
@@ -399,6 +472,12 @@ export class PartnercentralActions {
 		PartnercentralActions.actionGetBenefitAllocation,
 		PartnercentralActions.actionGetBenefitApplication,
 		PartnercentralActions.actionGetBusinessPlan,
+		PartnercentralActions.actionGetBusinessPlanAttachment,
+		PartnercentralActions.actionGetBusinessPlanAttachmentImportTask,
+		PartnercentralActions.actionGetBusinessPlanItem,
+		PartnercentralActions.actionGetBusinessPlanItemSchema,
+		PartnercentralActions.actionGetBusinessPlanSettings,
+		PartnercentralActions.actionGetBusinessPlanSubmissionTask,
 		PartnercentralActions.actionGetCollaborationChannel,
 		PartnercentralActions.actionGetConnection,
 		PartnercentralActions.actionGetConnectionInvitation,
@@ -413,6 +492,7 @@ export class PartnercentralActions {
 		PartnercentralActions.actionGetPartnerCentralContentMetadata,
 		PartnercentralActions.actionGetPartnerDashboard,
 		PartnercentralActions.actionGetPartnerProfile,
+		PartnercentralActions.actionGetPartnerReportingData,
 		PartnercentralActions.actionGetProfileUpdateTask,
 		PartnercentralActions.actionGetProfileVisibility,
 		PartnercentralActions.actionGetProgramManagementAccount,
@@ -441,14 +521,18 @@ export class PartnercentralActions {
 		PartnercentralActions.AssignOpportunity,
 		PartnercentralActions.AssociateAwsTrainingCertificationEmailDomain,
 		PartnercentralActions.AssociateBenefitApplicationResource,
+		PartnercentralActions.AssociateBusinessPlan,
 		PartnercentralActions.AssociateOpportunity,
 		PartnercentralActions.CancelBenefitApplication,
+		PartnercentralActions.CancelBusinessPlan,
+		PartnercentralActions.CancelBusinessPlanSubmissionTask,
 		PartnercentralActions.CancelChannelHandshake,
 		PartnercentralActions.CancelConnection,
 		PartnercentralActions.CancelConnectionInvitation,
 		PartnercentralActions.CancelProfileUpdateTask,
 		PartnercentralActions.CreateBenefitApplication,
 		PartnercentralActions.CreateBusinessPlan,
+		PartnercentralActions.CreateBusinessPlanItem,
 		PartnercentralActions.CreateChannelHandshake,
 		PartnercentralActions.CreateCollaborationChannelMembers,
 		PartnercentralActions.CreateCollaborationChannelRequest,
@@ -465,15 +549,19 @@ export class PartnercentralActions {
 		PartnercentralActions.CreateResourceSnapshot,
 		PartnercentralActions.CreateResourceSnapshotJob,
 		PartnercentralActions.CreateRevenueAttribution,
+		PartnercentralActions.DeleteBusinessPlanAttachment,
+		PartnercentralActions.DeleteBusinessPlanItem,
 		PartnercentralActions.DeleteProgramManagementAccount,
 		PartnercentralActions.DeleteRelationship,
 		PartnercentralActions.DeleteResourceSnapshotJob,
 		PartnercentralActions.DisassociateAwsTrainingCertificationEmailDomain,
 		PartnercentralActions.DisassociateBenefitApplicationResource,
+		PartnercentralActions.DisassociateBusinessPlan,
 		PartnercentralActions.DisassociateOpportunity,
 		PartnercentralActions.EnrollInPartnerPath,
 		PartnercentralActions.PutAllianceLeadContact,
 		PartnercentralActions.PutBusinessPlan,
+		PartnercentralActions.PutBusinessPlanSettings,
 		PartnercentralActions.PutProfileVisibility,
 		PartnercentralActions.PutSellingSystemSettings,
 		PartnercentralActions.RecallBenefitApplication,
@@ -481,6 +569,8 @@ export class PartnercentralActions {
 		PartnercentralActions.RejectConnectionInvitation,
 		PartnercentralActions.RejectEngagementInvitation,
 		PartnercentralActions.SendEmailVerificationCode,
+		PartnercentralActions.StartBusinessPlanAttachmentImportTask,
+		PartnercentralActions.StartBusinessPlanSubmissionTask,
 		PartnercentralActions.StartEngagementByAcceptingInvitationTask,
 		PartnercentralActions.StartEngagementFromOpportunityTask,
 		PartnercentralActions.StartOpportunityFromEngagementTask,
@@ -495,6 +585,8 @@ export class PartnercentralActions {
 		PartnercentralActions.SubmitBenefitApplication,
 		PartnercentralActions.SubmitOpportunity,
 		PartnercentralActions.UpdateBenefitApplication,
+		PartnercentralActions.UpdateBusinessPlan,
+		PartnercentralActions.UpdateBusinessPlanItem,
 		PartnercentralActions.UpdateConnectionPreferences,
 		PartnercentralActions.UpdateEngagementContext,
 		PartnercentralActions.UpdateMarketplaceRevenueShareAllocation,
@@ -509,6 +601,12 @@ export class PartnercentralActions {
 		PartnercentralActions.ListBenefitAllocations,
 		PartnercentralActions.ListBenefitApplications,
 		PartnercentralActions.ListBenefits,
+		PartnercentralActions.ListBusinessPlanAssociations,
+		PartnercentralActions.ListBusinessPlanAttachmentImportTasks,
+		PartnercentralActions.ListBusinessPlanAttachments,
+		PartnercentralActions.ListBusinessPlanHistory,
+		PartnercentralActions.ListBusinessPlanItems,
+		PartnercentralActions.ListBusinessPlanSubmissionTasks,
 		PartnercentralActions.ListBusinessPlans,
 		PartnercentralActions.ListChannelHandshakes,
 		PartnercentralActions.ListCollaborationChannels,
@@ -630,6 +728,38 @@ export interface PartnercentralBenefitApplicationArnProps {
  * Parsed components of a BenefitApplication ARN.
  */
 export interface PartnercentralBenefitApplicationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Catalog component. */
+	readonly catalog: string;
+	/** The Identifier component. */
+	readonly identifier: string;
+}
+
+/**
+ * Properties for building a BusinessPlan ARN.
+ */
+export interface PartnercentralBusinessPlanArnProps {
+	/** The Catalog component of the ARN. */
+	readonly catalog: string;
+	/** The Identifier component of the ARN. */
+	readonly identifier: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a BusinessPlan ARN.
+ */
+export interface PartnercentralBusinessPlanArnComponents {
 	/** AWS partition. */
 	readonly partition: string;
 	/** AWS region. */
@@ -796,6 +926,38 @@ export interface PartnercentralDashboardArnComponents {
 	readonly tableId: string;
 	/** The DashboardId component. */
 	readonly dashboardId: string;
+}
+
+/**
+ * Properties for building a Dataset ARN.
+ */
+export interface PartnercentralDatasetArnProps {
+	/** The Catalog component of the ARN. */
+	readonly catalog: string;
+	/** The Domain component of the ARN. */
+	readonly domain: string;
+	/** The DatasetName component of the ARN. */
+	readonly datasetName: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Dataset ARN.
+ */
+export interface PartnercentralDatasetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Catalog component. */
+	readonly catalog: string;
+	/** The Domain component. */
+	readonly domain: string;
+	/** The DatasetName component. */
+	readonly datasetName: string;
 }
 
 /**
@@ -1304,6 +1466,8 @@ const BenefitAllocationArnRegex =
 	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/benefit-allocation\/(?<identifier>[^:/?]+)$/;
 const BenefitApplicationArnRegex =
 	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/benefit-application\/(?<identifier>[^:/?]+)$/;
+const BusinessPlanArnRegex =
+	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/business-plan\/(?<identifier>[^:/?]+)$/;
 const ChannelHandshakeArnRegex =
 	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/channel-handshake\/(?<identifier>[^:/?]+)$/;
 const ConnectionArnRegex =
@@ -1314,6 +1478,8 @@ const ConnectionPreferencesArnRegex =
 	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/connection-preferences$/;
 const DashboardArnRegex =
 	/^arn:(?<partition>[^:]+):partnercentral::(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/ReportingData\/(?<tableId>[^:/?]+)\/Dashboard\/(?<dashboardId>[^:/?]+)$/;
+const DatasetArnRegex =
+	/^arn:(?<partition>[^:]+):partnercentral::(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/ReportingData\/(?<domain>[^:/?]+)\/Dataset\/(?<datasetName>[^:/?]+)$/;
 const EngagementArnRegex =
 	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*)::catalog\/(?<catalog>[^:/?]+)\/engagement\/(?<identifier>[^:/?]+)$/;
 const MarketplaceRevenueShareArnRegex =
@@ -1443,6 +1609,40 @@ export class PartnercentralResources {
 		const match = BenefitApplicationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid BenefitApplication ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			catalog: match.groups!.catalog,
+			identifier: match.groups!.identifier,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the BusinessPlan resource.
+	 */
+	static businessPlan(props: PartnercentralBusinessPlanArnProps): string {
+		return `arn:${props.partition ?? "aws"}:partnercentral:${props.region ?? "*"}:${props.account ?? "*"}:catalog/${props.catalog}/business-plan/${props.identifier}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the BusinessPlan resource.
+	 */
+	static isValidBusinessPlanArn(arn: string): boolean {
+		return BusinessPlanArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a BusinessPlan ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseBusinessPlanArn(
+		arn: string,
+	): PartnercentralBusinessPlanArnComponents {
+		const match = BusinessPlanArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid BusinessPlan ARN: ${arn}`);
 		}
 		return {
 			partition: match.groups.partition,
@@ -1623,6 +1823,38 @@ export class PartnercentralResources {
 			catalog: match.groups!.catalog,
 			tableId: match.groups!.tableId,
 			dashboardId: match.groups!.dashboardId,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the Dataset resource.
+	 */
+	static dataset(props: PartnercentralDatasetArnProps): string {
+		return `arn:${props.partition ?? "aws"}:partnercentral::${props.account ?? "*"}:catalog/${props.catalog}/ReportingData/${props.domain}/Dataset/${props.datasetName}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the Dataset resource.
+	 */
+	static isValidDatasetArn(arn: string): boolean {
+		return DatasetArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a Dataset ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseDatasetArn(arn: string): PartnercentralDatasetArnComponents {
+		const match = DatasetArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid Dataset ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			account: match.groups.account,
+			catalog: match.groups!.catalog,
+			domain: match.groups!.domain,
+			datasetName: match.groups!.datasetName,
 		};
 	}
 
@@ -2705,6 +2937,11 @@ export class PartnercentralConditions {
 		"partnercentral:FulfillmentTypes",
 		"partnercentral:Programs",
 	];
+	/** Condition keys applicable to the AssociateBusinessPlan action. */
+	static readonly AssociateBusinessPlanConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"partnercentral:Catalog",
+	];
 	/** Condition keys applicable to the AssociateOpportunity action. */
 	static readonly AssociateOpportunityConditionKeys: string[] = [
 		"partnercentral:Catalog",
@@ -2716,6 +2953,18 @@ export class PartnercentralConditions {
 		"partnercentral:Catalog",
 		"partnercentral:FulfillmentTypes",
 		"partnercentral:Programs",
+	];
+	/** Condition keys applicable to the CancelBusinessPlan action. */
+	static readonly CancelBusinessPlanConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"partnercentral:AllowAwsEngagement",
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the CancelBusinessPlanSubmissionTask action. */
+	static readonly CancelBusinessPlanSubmissionTaskConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"partnercentral:AllowAwsEngagement",
+		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the CancelChannelHandshake action. */
 	static readonly CancelChannelHandshakeConditionKeys: string[] = [
@@ -2744,6 +2993,22 @@ export class PartnercentralConditions {
 		"partnercentral:Catalog",
 		"partnercentral:FulfillmentTypes",
 		"partnercentral:Programs",
+	];
+	/** Condition keys applicable to the CreateBusinessPlan action. */
+	static readonly CreateBusinessPlanConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:ResourceTag/${TagKey}",
+		"aws:TagKeys",
+		"partnercentral:AllowAwsEngagement",
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the CreateBusinessPlanItem action. */
+	static readonly CreateBusinessPlanItemConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"partnercentral:AllowAwsEngagement",
+		"partnercentral:BusinessPlanItemStage",
+		"partnercentral:BusinessPlanItemType",
+		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the CreateChannelHandshake action. */
 	static readonly CreateChannelHandshakeConditionKeys: string[] = [
@@ -2821,6 +3086,20 @@ export class PartnercentralConditions {
 		"aws:TagKeys",
 		"partnercentral:Catalog",
 	];
+	/** Condition keys applicable to the DeleteBusinessPlanAttachment action. */
+	static readonly DeleteBusinessPlanAttachmentConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"partnercentral:AllowAwsEngagement",
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the DeleteBusinessPlanItem action. */
+	static readonly DeleteBusinessPlanItemConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"partnercentral:AllowAwsEngagement",
+		"partnercentral:BusinessPlanItemStage",
+		"partnercentral:BusinessPlanItemType",
+		"partnercentral:Catalog",
+	];
 	/** Condition keys applicable to the DeleteProgramManagementAccount action. */
 	static readonly DeleteProgramManagementAccountConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
@@ -2846,6 +3125,11 @@ export class PartnercentralConditions {
 			"partnercentral:FulfillmentTypes",
 			"partnercentral:Programs",
 		];
+	/** Condition keys applicable to the DisassociateBusinessPlan action. */
+	static readonly DisassociateBusinessPlanConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"partnercentral:Catalog",
+	];
 	/** Condition keys applicable to the DisassociateOpportunity action. */
 	static readonly DisassociateOpportunityConditionKeys: string[] = [
 		"partnercentral:Catalog",
@@ -2879,6 +3163,39 @@ export class PartnercentralConditions {
 		"partnercentral:Catalog",
 		"partnercentral:FulfillmentTypes",
 		"partnercentral:Programs",
+	];
+	/** Condition keys applicable to the GetBusinessPlan action. */
+	static readonly actionGetBusinessPlanConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the GetBusinessPlanAttachment action. */
+	static readonly actionGetBusinessPlanAttachmentConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the GetBusinessPlanAttachmentImportTask action. */
+	static readonly actionGetBusinessPlanAttachmentImportTaskConditionKeys: string[] =
+		["aws:ResourceTag/${TagKey}", "partnercentral:Catalog"];
+	/** Condition keys applicable to the GetBusinessPlanItem action. */
+	static readonly actionGetBusinessPlanItemConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"partnercentral:BusinessPlanItemStage",
+		"partnercentral:BusinessPlanItemType",
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the GetBusinessPlanItemSchema action. */
+	static readonly actionGetBusinessPlanItemSchemaConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the GetBusinessPlanSettings action. */
+	static readonly actionGetBusinessPlanSettingsConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the GetBusinessPlanSubmissionTask action. */
+	static readonly actionGetBusinessPlanSubmissionTaskConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the GetConnection action. */
 	static readonly actionGetConnectionConditionKeys: string[] = [
@@ -2924,6 +3241,10 @@ export class PartnercentralConditions {
 		["partnercentral:Catalog"];
 	/** Condition keys applicable to the GetPartnerDashboard action. */
 	static readonly actionGetPartnerDashboardConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the GetPartnerReportingData action. */
+	static readonly actionGetPartnerReportingDataConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the GetProfileUpdateTask action. */
@@ -3000,6 +3321,33 @@ export class PartnercentralConditions {
 		"partnercentral:Catalog",
 		"partnercentral:FulfillmentTypes",
 		"partnercentral:Programs",
+	];
+	/** Condition keys applicable to the ListBusinessPlanAssociations action. */
+	static readonly ListBusinessPlanAssociationsConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the ListBusinessPlanAttachmentImportTasks action. */
+	static readonly ListBusinessPlanAttachmentImportTasksConditionKeys: string[] =
+		["partnercentral:Catalog"];
+	/** Condition keys applicable to the ListBusinessPlanAttachments action. */
+	static readonly ListBusinessPlanAttachmentsConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the ListBusinessPlanHistory action. */
+	static readonly ListBusinessPlanHistoryConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the ListBusinessPlanItems action. */
+	static readonly ListBusinessPlanItemsConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the ListBusinessPlanSubmissionTasks action. */
+	static readonly ListBusinessPlanSubmissionTasksConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the ListBusinessPlans action. */
+	static readonly ListBusinessPlansConditionKeys: string[] = [
+		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the ListChannelHandshakes action. */
 	static readonly ListChannelHandshakesConditionKeys: string[] = [
@@ -3105,6 +3453,10 @@ export class PartnercentralConditions {
 		"aws:ResourceTag/${TagKey}",
 		"partnercentral:Catalog",
 	];
+	/** Condition keys applicable to the PutBusinessPlanSettings action. */
+	static readonly PutBusinessPlanSettingsConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
 	/** Condition keys applicable to the PutProfileVisibility action. */
 	static readonly PutProfileVisibilityConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
@@ -3144,6 +3496,19 @@ export class PartnercentralConditions {
 	];
 	/** Condition keys applicable to the SendEmailVerificationCode action. */
 	static readonly SendEmailVerificationCodeConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the StartBusinessPlanAttachmentImportTask action. */
+	static readonly StartBusinessPlanAttachmentImportTaskConditionKeys: string[] =
+		[
+			"aws:ResourceTag/${TagKey}",
+			"partnercentral:AllowAwsEngagement",
+			"partnercentral:Catalog",
+		];
+	/** Condition keys applicable to the StartBusinessPlanSubmissionTask action. */
+	static readonly StartBusinessPlanSubmissionTaskConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"partnercentral:AllowAwsEngagement",
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the StartEngagementByAcceptingInvitationTask action. */
@@ -3236,6 +3601,20 @@ export class PartnercentralConditions {
 		"partnercentral:FulfillmentTypes",
 		"partnercentral:Programs",
 	];
+	/** Condition keys applicable to the UpdateBusinessPlan action. */
+	static readonly UpdateBusinessPlanConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"partnercentral:AllowAwsEngagement",
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the UpdateBusinessPlanItem action. */
+	static readonly UpdateBusinessPlanItemConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"partnercentral:AllowAwsEngagement",
+		"partnercentral:BusinessPlanItemStage",
+		"partnercentral:BusinessPlanItemType",
+		"partnercentral:Catalog",
+	];
 	/** Condition keys applicable to the UpdateConnectionPreferences action. */
 	static readonly UpdateConnectionPreferencesConditionKeys: string[] = [
 		"partnercentral:Catalog",
@@ -3276,6 +3655,14 @@ export class PartnercentralConditions {
 	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
 	static readonly AWS_TAG_KEYS = "aws:TagKeys";
+	/** Condition key: partnercentral:AllowAwsEngagement (String) */
+	static readonly ALLOW_AWS_ENGAGEMENT = "partnercentral:AllowAwsEngagement";
+	/** Condition key: partnercentral:BusinessPlanItemStage (String) */
+	static readonly BUSINESS_PLAN_ITEM_STAGE =
+		"partnercentral:BusinessPlanItemStage";
+	/** Condition key: partnercentral:BusinessPlanItemType (String) */
+	static readonly BUSINESS_PLAN_ITEM_TYPE =
+		"partnercentral:BusinessPlanItemType";
 	/** Condition key: partnercentral:Catalog (String) */
 	static readonly CATALOG = "partnercentral:Catalog";
 	/** Condition key: partnercentral:ChannelHandshakeType (String) */
@@ -3309,6 +3696,33 @@ export class PartnercentralConditions {
 	 */
 	static tagKeys(values: string[]): Record<string, Record<string, string[]>> {
 		return { "ForAllValues:StringEquals": { "aws:TagKeys": values } };
+	}
+
+	/**
+	 * Generates a condition block for `partnercentral:AllowAwsEngagement`.
+	 */
+	static allowAWSEngagement(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "partnercentral:AllowAwsEngagement": value } };
+	}
+
+	/**
+	 * Generates a condition block for `partnercentral:BusinessPlanItemStage`.
+	 */
+	static businessPlanItemStage(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "partnercentral:BusinessPlanItemStage": value } };
+	}
+
+	/**
+	 * Generates a condition block for `partnercentral:BusinessPlanItemType`.
+	 */
+	static businessPlanItemType(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "partnercentral:BusinessPlanItemType": value } };
 	}
 
 	/**

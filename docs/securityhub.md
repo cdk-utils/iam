@@ -1541,6 +1541,9 @@ new securityhub.SecurityHubActions()
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.actionGetResourcesTrendsV2">actionGetResourcesTrendsV2</a></code> | <code>string</code> | [Read] securityhub:GetResourcesTrendsV2. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.actionGetResourcesV2">actionGetResourcesV2</a></code> | <code>string</code> | [Read] securityhub:GetResourcesV2. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.actionGetSecurityControlDefinition">actionGetSecurityControlDefinition</a></code> | <code>string</code> | [Read] securityhub:GetSecurityControlDefinition. |
+| <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.actionGetSoftwareResourcesV2">actionGetSoftwareResourcesV2</a></code> | <code>string</code> | [Read] securityhub:GetSoftwareResourcesV2. |
+| <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.actionGetSoftwareStatisticsV2">actionGetSoftwareStatisticsV2</a></code> | <code>string</code> | [Read] securityhub:GetSoftwareStatisticsV2. |
+| <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.actionGetSoftwareV2">actionGetSoftwareV2</a></code> | <code>string</code> | [Read] securityhub:GetSoftwareV2. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.actionGetUsage">actionGetUsage</a></code> | <code>string</code> | [Read] securityhub:GetUsage. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.actionGetUsageV2">actionGetUsageV2</a></code> | <code>string</code> | [Read] securityhub:GetUsageV2. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.AllListActions">AllListActions</a></code> | <code>string[]</code> | All list-level actions. |
@@ -1649,6 +1652,7 @@ new securityhub.SecurityHubActions()
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.UpdateOrganizationConfiguration">UpdateOrganizationConfiguration</a></code> | <code>string</code> | [Write] securityhub:UpdateOrganizationConfiguration. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.UpdateSecurityControl">UpdateSecurityControl</a></code> | <code>string</code> | [Write] securityhub:UpdateSecurityControl. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.UpdateSecurityHubConfiguration">UpdateSecurityHubConfiguration</a></code> | <code>string</code> | [Write] securityhub:UpdateSecurityHubConfiguration. |
+| <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.UpdateSecurityHubV2">UpdateSecurityHubV2</a></code> | <code>string</code> | [Write] securityhub:UpdateSecurityHubV2. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubActions.property.UpdateStandardsControl">UpdateStandardsControl</a></code> | <code>string</code> | [Write] securityhub:UpdateStandardsControl. |
 
 ---
@@ -2034,6 +2038,42 @@ public readonly actionGetSecurityControlDefinition: string;
 - *Type:* string
 
 [Read] securityhub:GetSecurityControlDefinition.
+
+---
+
+##### `actionGetSoftwareResourcesV2`<sup>Required</sup> <a name="actionGetSoftwareResourcesV2" id="@cdk_utils/iam.securityhub.SecurityHubActions.property.actionGetSoftwareResourcesV2"></a>
+
+```typescript
+public readonly actionGetSoftwareResourcesV2: string;
+```
+
+- *Type:* string
+
+[Read] securityhub:GetSoftwareResourcesV2.
+
+---
+
+##### `actionGetSoftwareStatisticsV2`<sup>Required</sup> <a name="actionGetSoftwareStatisticsV2" id="@cdk_utils/iam.securityhub.SecurityHubActions.property.actionGetSoftwareStatisticsV2"></a>
+
+```typescript
+public readonly actionGetSoftwareStatisticsV2: string;
+```
+
+- *Type:* string
+
+[Read] securityhub:GetSoftwareStatisticsV2.
+
+---
+
+##### `actionGetSoftwareV2`<sup>Required</sup> <a name="actionGetSoftwareV2" id="@cdk_utils/iam.securityhub.SecurityHubActions.property.actionGetSoftwareV2"></a>
+
+```typescript
+public readonly actionGetSoftwareV2: string;
+```
+
+- *Type:* string
+
+[Read] securityhub:GetSoftwareV2.
 
 ---
 
@@ -3333,6 +3373,18 @@ public readonly UpdateSecurityHubConfiguration: string;
 
 ---
 
+##### `UpdateSecurityHubV2`<sup>Required</sup> <a name="UpdateSecurityHubV2" id="@cdk_utils/iam.securityhub.SecurityHubActions.property.UpdateSecurityHubV2"></a>
+
+```typescript
+public readonly UpdateSecurityHubV2: string;
+```
+
+- *Type:* string
+
+[Write] securityhub:UpdateSecurityHubV2.
+
+---
+
 ##### `UpdateStandardsControl`<sup>Required</sup> <a name="UpdateStandardsControl" id="@cdk_utils/iam.securityhub.SecurityHubActions.property.UpdateStandardsControl"></a>
 
 ```typescript
@@ -3803,6 +3855,9 @@ new securityhub.SecurityHubOperations()
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.opGetResourcesTrendsV2">opGetResourcesTrendsV2</a></code> | <code>string[]</code> | IAM actions required for the GetResourcesTrendsV2 API call. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.opGetResourcesV2">opGetResourcesV2</a></code> | <code>string[]</code> | IAM actions required for the GetResourcesV2 API call. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.opGetSecurityControlDefinition">opGetSecurityControlDefinition</a></code> | <code>string[]</code> | IAM actions required for the GetSecurityControlDefinition API call. |
+| <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.opGetSoftwareResourcesV2">opGetSoftwareResourcesV2</a></code> | <code>string[]</code> | IAM actions required for the GetSoftwareResourcesV2 API call. |
+| <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.opGetSoftwareStatisticsV2">opGetSoftwareStatisticsV2</a></code> | <code>string[]</code> | IAM actions required for the GetSoftwareStatisticsV2 API call. |
+| <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.opGetSoftwareV2">opGetSoftwareV2</a></code> | <code>string[]</code> | IAM actions required for the GetSoftwareV2 API call. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.RegisterConnectorV2">RegisterConnectorV2</a></code> | <code>string[]</code> | IAM actions required for the RegisterConnectorV2 API call. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.StartConfigurationPolicyAssociation">StartConfigurationPolicyAssociation</a></code> | <code>string[]</code> | IAM actions required for the StartConfigurationPolicyAssociation API call. |
 | <code><a href="#@cdk_utils/iam.securityhub.SecurityHubOperations.property.StartConfigurationPolicyDisassociation">StartConfigurationPolicyDisassociation</a></code> | <code>string[]</code> | IAM actions required for the StartConfigurationPolicyDisassociation API call. |
@@ -5070,6 +5125,42 @@ public readonly opGetSecurityControlDefinition: string[];
 - *Type:* string[]
 
 IAM actions required for the GetSecurityControlDefinition API call.
+
+---
+
+##### `opGetSoftwareResourcesV2`<sup>Required</sup> <a name="opGetSoftwareResourcesV2" id="@cdk_utils/iam.securityhub.SecurityHubOperations.property.opGetSoftwareResourcesV2"></a>
+
+```typescript
+public readonly opGetSoftwareResourcesV2: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetSoftwareResourcesV2 API call.
+
+---
+
+##### `opGetSoftwareStatisticsV2`<sup>Required</sup> <a name="opGetSoftwareStatisticsV2" id="@cdk_utils/iam.securityhub.SecurityHubOperations.property.opGetSoftwareStatisticsV2"></a>
+
+```typescript
+public readonly opGetSoftwareStatisticsV2: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetSoftwareStatisticsV2 API call.
+
+---
+
+##### `opGetSoftwareV2`<sup>Required</sup> <a name="opGetSoftwareV2" id="@cdk_utils/iam.securityhub.SecurityHubOperations.property.opGetSoftwareV2"></a>
+
+```typescript
+public readonly opGetSoftwareV2: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetSoftwareV2 API call.
 
 ---
 

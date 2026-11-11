@@ -1837,6 +1837,7 @@ export class LightSailOperations {
 	];
 	/** IAM actions required for the CreateDistribution API call. */
 	static readonly CreateDistribution: string[] = [
+		"lightsail:AttachCertificateToDistribution",
 		"lightsail:CreateDistribution",
 		"lightsail:TagResource",
 	];

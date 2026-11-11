@@ -1232,7 +1232,6 @@ export class OdbOperations {
 	static readonly UntagResource: string[] = ["odb:UntagResource"];
 	/** IAM actions required for the UpdateAutonomousDatabase API call. */
 	static readonly UpdateAutonomousDatabase: string[] = [
-		"iam:PassRole",
 		"odb:UpdateAutonomousDatabase",
 	];
 	/** IAM actions required for the UpdateAutonomousDatabaseBackup API call. */

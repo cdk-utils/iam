@@ -1234,6 +1234,13 @@ export class NetworkFirewallOperations {
 		"network-firewall:ListTLSInspectionConfigurations",
 		"network-firewall:TagResource",
 	];
+	/** IAM actions required for the CreateFirewallPolicyV2 API call. */
+	static readonly CreateFirewallPolicyV2: string[] = [
+		"network-firewall:CreateFirewallPolicyV2",
+		"network-firewall:ListRuleGroups",
+		"network-firewall:ListTLSInspectionConfigurations",
+		"network-firewall:TagResource",
+	];
 	/** IAM actions required for the CreateProxy API call. */
 	static readonly CreateProxy: string[] = [
 		"network-firewall:CreateProxy",
@@ -1281,6 +1288,10 @@ export class NetworkFirewallOperations {
 	/** IAM actions required for the DeleteFirewallPolicy API call. */
 	static readonly DeleteFirewallPolicy: string[] = [
 		"network-firewall:DeleteFirewallPolicy",
+	];
+	/** IAM actions required for the DeleteFirewallPolicyV2 API call. */
+	static readonly DeleteFirewallPolicyV2: string[] = [
+		"network-firewall:DeleteFirewallPolicyV2",
 	];
 	/** IAM actions required for the DeleteNetworkFirewallTransitGatewayAttachment API call. */
 	static readonly DeleteNetworkFirewallTransitGatewayAttachment: string[] = [
@@ -1331,6 +1342,10 @@ export class NetworkFirewallOperations {
 	/** IAM actions required for the DescribeFirewallPolicy API call. */
 	static readonly DescribeFirewallPolicy: string[] = [
 		"network-firewall:DescribeFirewallPolicy",
+	];
+	/** IAM actions required for the DescribeFirewallPolicyV2 API call. */
+	static readonly DescribeFirewallPolicyV2: string[] = [
+		"network-firewall:DescribeFirewallPolicyV2",
 	];
 	/** IAM actions required for the DescribeFlowOperation API call. */
 	static readonly DescribeFlowOperation: string[] = [
@@ -1405,6 +1420,10 @@ export class NetworkFirewallOperations {
 	/** IAM actions required for the ListFirewallPolicies API call. */
 	static readonly ListFirewallPolicies: string[] = [
 		"network-firewall:ListFirewallPolicies",
+	];
+	/** IAM actions required for the ListFirewallPoliciesV2 API call. */
+	static readonly ListFirewallPoliciesV2: string[] = [
+		"network-firewall:ListFirewallPoliciesV2",
 	];
 	/** IAM actions required for the ListFirewalls API call. */
 	static readonly ListFirewalls: string[] = ["network-firewall:ListFirewalls"];
@@ -1499,6 +1518,12 @@ export class NetworkFirewallOperations {
 	/** IAM actions required for the UpdateFirewallPolicyChangeProtection API call. */
 	static readonly UpdateFirewallPolicyChangeProtection: string[] = [
 		"network-firewall:UpdateFirewallPolicyChangeProtection",
+	];
+	/** IAM actions required for the UpdateFirewallPolicyV2 API call. */
+	static readonly UpdateFirewallPolicyV2: string[] = [
+		"network-firewall:ListRuleGroups",
+		"network-firewall:ListTLSInspectionConfigurations",
+		"network-firewall:UpdateFirewallPolicyV2",
 	];
 	/** IAM actions required for the UpdateLoggingConfiguration API call. */
 	static readonly UpdateLoggingConfiguration: string[] = [

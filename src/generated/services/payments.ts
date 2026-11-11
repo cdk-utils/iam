@@ -15,13 +15,19 @@ export class PaymentsActions {
 	/** [Write] payments:AcceptFinancingApplicationTerms */
 	static readonly AcceptFinancingApplicationTerms =
 		"payments:AcceptFinancingApplicationTerms";
+	/** [Write] payments:CreateConnectedAccount */
+	static readonly CreateConnectedAccount = "payments:CreateConnectedAccount";
 	/** [Write] payments:CreateFinancingApplication */
 	static readonly CreateFinancingApplication =
 		"payments:CreateFinancingApplication";
 	/** [Write] payments:CreatePaymentInstrument */
 	static readonly CreatePaymentInstrument = "payments:CreatePaymentInstrument";
+	/** [Write] payments:DeleteConnectedAccount */
+	static readonly DeleteConnectedAccount = "payments:DeleteConnectedAccount";
 	/** [Write] payments:DeletePaymentInstrument */
 	static readonly DeletePaymentInstrument = "payments:DeletePaymentInstrument";
+	/** [Read] payments:GetConnectedAccount */
+	static readonly actionGetConnectedAccount = "payments:GetConnectedAccount";
 	/** [Read] payments:GetFinancingApplication */
 	static readonly actionGetFinancingApplication =
 		"payments:GetFinancingApplication";
@@ -36,6 +42,8 @@ export class PaymentsActions {
 	static readonly actionGetPaymentInstrument = "payments:GetPaymentInstrument";
 	/** [Read] payments:GetPaymentStatus */
 	static readonly actionGetPaymentStatus = "payments:GetPaymentStatus";
+	/** [List] payments:ListConnectedAccounts */
+	static readonly ListConnectedAccounts = "payments:ListConnectedAccounts";
 	/** [List] payments:ListFinancingApplications */
 	static readonly ListFinancingApplications =
 		"payments:ListFinancingApplications";
@@ -73,6 +81,7 @@ export class PaymentsActions {
 
 	/** All read-level actions. */
 	static readonly AllReadActions: string[] = [
+		PaymentsActions.actionGetConnectedAccount,
 		PaymentsActions.actionGetFinancingApplication,
 		PaymentsActions.actionGetFinancingLine,
 		PaymentsActions.actionGetFinancingLineWithdrawal,
@@ -82,8 +91,10 @@ export class PaymentsActions {
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
 		PaymentsActions.AcceptFinancingApplicationTerms,
+		PaymentsActions.CreateConnectedAccount,
 		PaymentsActions.CreateFinancingApplication,
 		PaymentsActions.CreatePaymentInstrument,
+		PaymentsActions.DeleteConnectedAccount,
 		PaymentsActions.DeletePaymentInstrument,
 		PaymentsActions.MakePayment,
 		PaymentsActions.UpdateFinancingApplication,
@@ -93,6 +104,7 @@ export class PaymentsActions {
 	/** All list-level actions. */
 	static readonly AllListActions: string[] = [
 		PaymentsActions.actionGetPaymentInstrument,
+		PaymentsActions.ListConnectedAccounts,
 		PaymentsActions.ListFinancingApplications,
 		PaymentsActions.ListFinancingLineWithdrawals,
 		PaymentsActions.ListFinancingLines,
@@ -109,6 +121,30 @@ export class PaymentsActions {
 		PaymentsActions.TagResource,
 		PaymentsActions.UntagResource,
 	];
+}
+
+/**
+ * Properties for building a connectedaccount ARN.
+ */
+export interface PaymentsConnectedaccountArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a connectedaccount ARN.
+ */
+export interface PaymentsConnectedaccountArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
 }
 
 /**
@@ -135,6 +171,8 @@ export interface PaymentsPaymentInstrumentArnComponents {
 	readonly resourceId: string;
 }
 
+const ConnectedaccountArnRegex =
+	/^arn:(?<partition>[^:]+):payments::(?<account>[^:]*):connectedaccount\/(?<resourceId>[^:/?]+)$/;
 const PaymentInstrumentArnRegex =
 	/^arn:(?<partition>[^:]+):payments::(?<account>[^:]*):payment-instrument:(?<resourceId>[^:/?]+)$/;
 
@@ -142,6 +180,38 @@ const PaymentInstrumentArnRegex =
  * ARN builders, validators, and parsers for payments resources.
  */
 export class PaymentsResources {
+	/**
+	 * Builds an ARN for the connectedaccount resource.
+	 */
+	static connectedaccount(props: PaymentsConnectedaccountArnProps): string {
+		return `arn:${props.partition ?? "aws"}:payments::${props.account ?? "*"}:connectedaccount/${props.resourceId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the connectedaccount resource.
+	 */
+	static isValidConnectedaccountArn(arn: string): boolean {
+		return ConnectedaccountArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a connectedaccount ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseConnectedaccountArn(
+		arn: string,
+	): PaymentsConnectedaccountArnComponents {
+		const match = ConnectedaccountArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid connectedaccount ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			account: match.groups.account,
+			resourceId: match.groups!.resourceId,
+		};
+	}
+
 	/**
 	 * Builds an ARN for the payment-instrument resource.
 	 */
@@ -179,6 +249,11 @@ export class PaymentsResources {
  * Condition key constants and builders for payments.
  */
 export class PaymentsConditions {
+	/** Condition keys applicable to the CreateConnectedAccount action. */
+	static readonly CreateConnectedAccountConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the CreatePaymentInstrument action. */
 	static readonly CreatePaymentInstrumentConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
