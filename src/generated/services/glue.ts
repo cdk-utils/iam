@@ -2644,6 +2644,8 @@ export class GlueOperations {
 		"glue:CreateCustomEntityType",
 		"glue:TagResource",
 	];
+	/** IAM actions required for the CreateDataQualityEvaluationConfig API call. */
+	static readonly CreateDataQualityEvaluationConfig: string[] = [];
 	/** IAM actions required for the CreateDataQualityRuleset API call. */
 	static readonly CreateDataQualityRuleset: string[] = [
 		"glue:CreateDataQualityRuleset",
@@ -2791,6 +2793,8 @@ export class GlueOperations {
 	static readonly DeleteCustomEntityType: string[] = [
 		"glue:DeleteCustomEntityType",
 	];
+	/** IAM actions required for the DeleteDataQualityEvaluationConfig API call. */
+	static readonly DeleteDataQualityEvaluationConfig: string[] = [];
 	/** IAM actions required for the DeleteDataQualityRuleset API call. */
 	static readonly DeleteDataQualityRuleset: string[] = [
 		"glue:DeleteDataQualityRuleset",
@@ -2942,6 +2946,8 @@ export class GlueOperations {
 	];
 	/** IAM actions required for the GetDataCatalogExportConfiguration API call. */
 	static readonly opGetDataCatalogExportConfiguration: string[] = [];
+	/** IAM actions required for the GetDataQualityEvaluationConfig API call. */
+	static readonly opGetDataQualityEvaluationConfig: string[] = [];
 	/** IAM actions required for the GetDataQualityModel API call. */
 	static readonly opGetDataQualityModel: string[] = [
 		"glue:GetDataQualityModel",
@@ -3008,6 +3014,10 @@ export class GlueOperations {
 	static readonly opGetJobRun: string[] = ["glue:GetJobRun"];
 	/** IAM actions required for the GetJobRuns API call. */
 	static readonly opGetJobRuns: string[] = ["glue:GetJobRuns"];
+	/** IAM actions required for the GetJobUpgradeAnalysis API call. */
+	static readonly opGetJobUpgradeAnalysis: string[] = [
+		"glue:GetJobUpgradeAnalysis",
+	];
 	/** IAM actions required for the GetJobs API call. */
 	static readonly opGetJobs: string[] = ["glue:GetJobs", "iam:PassRole"];
 	/** IAM actions required for the GetMLTaskRun API call. */
@@ -3139,6 +3149,8 @@ export class GlueOperations {
 	static readonly ListCustomEntityTypes: string[] = [
 		"glue:ListCustomEntityTypes",
 	];
+	/** IAM actions required for the ListDataQualityEvaluationConfigs API call. */
+	static readonly ListDataQualityEvaluationConfigs: string[] = [];
 	/** IAM actions required for the ListDataQualityResults API call. */
 	static readonly ListDataQualityResults: string[] = [
 		"glue:ListDataQualityResults",
@@ -3316,6 +3328,10 @@ export class GlueOperations {
 		"glue:GetUsageProfile",
 		"glue:StartJobRun",
 	];
+	/** IAM actions required for the StartJobUpgradeAnalysis API call. */
+	static readonly StartJobUpgradeAnalysis: string[] = [
+		"glue:StartJobUpgradeAnalysis",
+	];
 	/** IAM actions required for the StartMLEvaluationTaskRun API call. */
 	static readonly StartMLEvaluationTaskRun: string[] = [
 		"glue:StartMLEvaluationTaskRun",
@@ -3342,6 +3358,10 @@ export class GlueOperations {
 	static readonly StopCrawler: string[] = ["glue:StopCrawler"];
 	/** IAM actions required for the StopCrawlerSchedule API call. */
 	static readonly StopCrawlerSchedule: string[] = ["glue:StopCrawlerSchedule"];
+	/** IAM actions required for the StopJobUpgradeAnalysis API call. */
+	static readonly StopJobUpgradeAnalysis: string[] = [
+		"glue:StopJobUpgradeAnalysis",
+	];
 	/** IAM actions required for the StopMaterializedViewRefreshTaskRun API call. */
 	static readonly StopMaterializedViewRefreshTaskRun: string[] = [];
 	/** IAM actions required for the StopSession API call. */
@@ -3398,6 +3418,8 @@ export class GlueOperations {
 	static readonly UpdateCrawlerSchedule: string[] = [
 		"glue:UpdateCrawlerSchedule",
 	];
+	/** IAM actions required for the UpdateDataQualityEvaluationConfig API call. */
+	static readonly UpdateDataQualityEvaluationConfig: string[] = [];
 	/** IAM actions required for the UpdateDataQualityRuleset API call. */
 	static readonly UpdateDataQualityRuleset: string[] = [
 		"glue:UpdateDataQualityRuleset",
@@ -3520,6 +3542,9 @@ export class GlueConditions {
 	static readonly CreateConnectionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
+		"glue:ConnectionType",
+		"glue:CredentialVendingMode",
+		"glue:InstanceUrl",
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the CreateCrawler action. */
@@ -3807,6 +3832,9 @@ export class GlueConditions {
 	];
 	/** Condition keys applicable to the UpdateConnection action. */
 	static readonly UpdateConnectionConditionKeys: string[] = [
+		"glue:ConnectionType",
+		"glue:CredentialVendingMode",
+		"glue:InstanceUrl",
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the UpdateDatabase action. */
@@ -3840,14 +3868,20 @@ export class GlueConditions {
 	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
 	static readonly AWS_TAG_KEYS = "aws:TagKeys";
+	/** Condition key: glue:ConnectionType (String) */
+	static readonly CONNECTION_TYPE = "glue:ConnectionType";
 	/** Condition key: glue:CredentialIssuingService (String) */
 	static readonly CREDENTIAL_ISSUING_SERVICE = "glue:CredentialIssuingService";
+	/** Condition key: glue:CredentialVendingMode (String) */
+	static readonly CREDENTIAL_VENDING_MODE = "glue:CredentialVendingMode";
 	/** Condition key: glue:EnabledForRedshiftAutoDiscovery (Bool) */
 	static readonly ENABLED_FOR_REDSHIFT_AUTO_DISCOVERY =
 		"glue:EnabledForRedshiftAutoDiscovery";
 	/** Condition key: glue:FederatedAuthorizationSource (String) */
 	static readonly FEDERATED_AUTHORIZATION_SOURCE =
 		"glue:FederatedAuthorizationSource";
+	/** Condition key: glue:InstanceUrl (String) */
+	static readonly INSTANCE_URL = "glue:InstanceUrl";
 	/** Condition key: glue:LakeFormationPermissions (String) */
 	static readonly LAKE_FORMATION_PERMISSIONS = "glue:LakeFormationPermissions";
 	/** Condition key: glue:RoleAssumedBy (String) */
@@ -3881,12 +3915,28 @@ export class GlueConditions {
 	}
 
 	/**
+	 * Generates a condition block for `glue:ConnectionType`.
+	 */
+	static connectionType(value: string): Record<string, Record<string, string>> {
+		return { StringEquals: { "glue:ConnectionType": value } };
+	}
+
+	/**
 	 * Generates a condition block for `glue:CredentialIssuingService`.
 	 */
 	static credentialIssuingService(
 		value: string,
 	): Record<string, Record<string, string>> {
 		return { StringEquals: { "glue:CredentialIssuingService": value } };
+	}
+
+	/**
+	 * Generates a condition block for `glue:CredentialVendingMode`.
+	 */
+	static credentialVendingMode(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "glue:CredentialVendingMode": value } };
 	}
 
 	/**
@@ -3905,6 +3955,13 @@ export class GlueConditions {
 		value: string,
 	): Record<string, Record<string, string>> {
 		return { StringEquals: { "glue:FederatedAuthorizationSource": value } };
+	}
+
+	/**
+	 * Generates a condition block for `glue:InstanceUrl`.
+	 */
+	static instanceURL(value: string): Record<string, Record<string, string>> {
+		return { StringEquals: { "glue:InstanceUrl": value } };
 	}
 
 	/**

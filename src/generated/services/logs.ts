@@ -1390,6 +1390,7 @@ export class LogsOperations {
 		"logs:DescribeLogGroups",
 		"logs:DescribeQueryDefinitions",
 		"logs:FilterLogEvents",
+		"iam:PassRole",
 		"logs:StartQuery",
 		"logs:Unmask",
 	];

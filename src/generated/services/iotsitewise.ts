@@ -1464,6 +1464,7 @@ export class IotsitewiseOperations {
 	/** IAM actions required for the CreateAccessPolicy API call. */
 	static readonly CreateAccessPolicy: string[] = [
 		"iotsitewise:CreateAccessPolicy",
+		"iotsitewise:TagResource",
 	];
 	/** IAM actions required for the CreateApplication API call. */
 	static readonly CreateApplication: string[] = [

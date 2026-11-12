@@ -2710,6 +2710,7 @@ const cloudWatchViewArnComponents: cloudwatch.CloudWatchViewArnComponents = { ..
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchViewArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchViewArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchViewArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchViewArnComponents.property.viewId">viewId</a></code> | <code>string</code> | The ViewId component. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchViewArnComponents.property.viewName">viewName</a></code> | <code>string</code> | The ViewName component. |
 
 ---
@@ -2750,6 +2751,18 @@ AWS region.
 
 ---
 
+##### `viewId`<sup>Required</sup> <a name="viewId" id="@cdk_utils/iam.cloudwatch.CloudWatchViewArnComponents.property.viewId"></a>
+
+```typescript
+public readonly viewId: string;
+```
+
+- *Type:* string
+
+The ViewId component.
+
+---
+
 ##### `viewName`<sup>Required</sup> <a name="viewName" id="@cdk_utils/iam.cloudwatch.CloudWatchViewArnComponents.property.viewName"></a>
 
 ```typescript
@@ -2778,10 +2791,23 @@ const cloudWatchViewArnProps: cloudwatch.CloudWatchViewArnProps = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchViewArnProps.property.viewId">viewId</a></code> | <code>string</code> | The ViewId component of the ARN. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchViewArnProps.property.viewName">viewName</a></code> | <code>string</code> | The ViewName component of the ARN. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchViewArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchViewArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchViewArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `viewId`<sup>Required</sup> <a name="viewId" id="@cdk_utils/iam.cloudwatch.CloudWatchViewArnProps.property.viewId"></a>
+
+```typescript
+public readonly viewId: string;
+```
+
+- *Type:* string
+
+The ViewId component of the ARN.
 
 ---
 
@@ -2897,6 +2923,7 @@ new cloudwatch.CloudWatchActions()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetSpace">actionGetSpace</a></code> | <code>string</code> | [Read] cloudwatch:GetSpace. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetSpaceCredentials">actionGetSpaceCredentials</a></code> | <code>string</code> | [Read] cloudwatch:GetSpaceCredentials. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetSpaceCredentialsForOrganization">actionGetSpaceCredentialsForOrganization</a></code> | <code>string</code> | [Read] cloudwatch:GetSpaceCredentialsForOrganization. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetSpaceDataAccess">actionGetSpaceDataAccess</a></code> | <code>string</code> | [Read] cloudwatch:GetSpaceDataAccess. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetTelemetryQueryResults">actionGetTelemetryQueryResults</a></code> | <code>string</code> | [Read] cloudwatch:GetTelemetryQueryResults. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetTopologyDiscoveryStatus">actionGetTopologyDiscoveryStatus</a></code> | <code>string</code> | [Read] cloudwatch:GetTopologyDiscoveryStatus. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetTopologyMap">actionGetTopologyMap</a></code> | <code>string</code> | [Read] cloudwatch:GetTopologyMap. |
@@ -2952,6 +2979,7 @@ new cloudwatch.CloudWatchActions()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DescribeAlarmsForMetric">DescribeAlarmsForMetric</a></code> | <code>string</code> | [Read] cloudwatch:DescribeAlarmsForMetric. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DescribeAnomalyDetectors">DescribeAnomalyDetectors</a></code> | <code>string</code> | [Read] cloudwatch:DescribeAnomalyDetectors. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DescribeInsightRules">DescribeInsightRules</a></code> | <code>string</code> | [Read] cloudwatch:DescribeInsightRules. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DetectGroupOutliers">DetectGroupOutliers</a></code> | <code>string</code> | [Read] cloudwatch:DetectGroupOutliers. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DisableAlarmActions">DisableAlarmActions</a></code> | <code>string</code> | [Write] cloudwatch:DisableAlarmActions. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DisableInsightRules">DisableInsightRules</a></code> | <code>string</code> | [Write] cloudwatch:DisableInsightRules. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.EnableAlarmActions">EnableAlarmActions</a></code> | <code>string</code> | [Write] cloudwatch:EnableAlarmActions. |
@@ -3414,6 +3442,18 @@ public readonly actionGetSpaceCredentialsForOrganization: string;
 - *Type:* string
 
 [Read] cloudwatch:GetSpaceCredentialsForOrganization.
+
+---
+
+##### `actionGetSpaceDataAccess`<sup>Required</sup> <a name="actionGetSpaceDataAccess" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetSpaceDataAccess"></a>
+
+```typescript
+public readonly actionGetSpaceDataAccess: string;
+```
+
+- *Type:* string
+
+[Read] cloudwatch:GetSpaceDataAccess.
 
 ---
 
@@ -4074,6 +4114,18 @@ public readonly DescribeInsightRules: string;
 - *Type:* string
 
 [Read] cloudwatch:DescribeInsightRules.
+
+---
+
+##### `DetectGroupOutliers`<sup>Required</sup> <a name="DetectGroupOutliers" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DetectGroupOutliers"></a>
+
+```typescript
+public readonly DetectGroupOutliers: string;
+```
+
+- *Type:* string
+
+[Read] cloudwatch:DetectGroupOutliers.
 
 ---
 
@@ -5230,6 +5282,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetRecordsConditionKeys">actionGetRecordsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetRecords action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetResourceMetricsConfigurationConditionKeys">actionGetResourceMetricsConfigurationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetResourceMetricsConfiguration action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetSpaceConditionKeys">actionGetSpaceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetSpace action. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetSpaceDataAccessConditionKeys">actionGetSpaceDataAccessConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetSpaceDataAccess action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetTelemetryQueryResultsConditionKeys">actionGetTelemetryQueryResultsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetTelemetryQueryResults action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetViewConditionKeys">actionGetViewConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetView action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.ALARM_ACTIONS">ALARM_ACTIONS</a></code> | <code>string</code> | Condition key: cloudwatch:AlarmActions (ArrayOfString). |
@@ -5513,6 +5566,18 @@ public readonly actionGetSpaceConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the GetSpace action.
+
+---
+
+##### `actionGetSpaceDataAccessConditionKeys`<sup>Required</sup> <a name="actionGetSpaceDataAccessConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetSpaceDataAccessConditionKeys"></a>
+
+```typescript
+public readonly actionGetSpaceDataAccessConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetSpaceDataAccess action.
 
 ---
 
@@ -6569,6 +6634,7 @@ new cloudwatch.CloudWatchOperations()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetResourceMetricsConfiguration">opGetResourceMetricsConfiguration</a></code> | <code>string[]</code> | IAM actions required for the GetResourceMetricsConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetSpace">opGetSpace</a></code> | <code>string[]</code> | IAM actions required for the GetSpace API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetSpaceCredentialsForOrganization">opGetSpaceCredentialsForOrganization</a></code> | <code>string[]</code> | IAM actions required for the GetSpaceCredentialsForOrganization API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetSpaceDataAccess">opGetSpaceDataAccess</a></code> | <code>string[]</code> | IAM actions required for the GetSpaceDataAccess API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetTelemetryQueryResults">opGetTelemetryQueryResults</a></code> | <code>string[]</code> | IAM actions required for the GetTelemetryQueryResults API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetView">opGetView</a></code> | <code>string[]</code> | IAM actions required for the GetView API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opSetAlarmState">opSetAlarmState</a></code> | <code>string[]</code> | IAM actions required for the SetAlarmState API call. |
@@ -7576,6 +7642,18 @@ public readonly opGetSpaceCredentialsForOrganization: string[];
 - *Type:* string[]
 
 IAM actions required for the GetSpaceCredentialsForOrganization API call.
+
+---
+
+##### `opGetSpaceDataAccess`<sup>Required</sup> <a name="opGetSpaceDataAccess" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetSpaceDataAccess"></a>
+
+```typescript
+public readonly opGetSpaceDataAccess: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetSpaceDataAccess API call.
 
 ---
 

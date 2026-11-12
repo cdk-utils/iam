@@ -75,8 +75,6 @@ export class AssuranceActions {
 		"assurance:DeregisterOrganizationDelegatedAdmin";
 	/** [Write] assurance:DisableFramework */
 	static readonly DisableFramework = "assurance:DisableFramework";
-	/** [Read] assurance:DownloadEvidence */
-	static readonly DownloadEvidence = "assurance:DownloadEvidence";
 	/** [Write] assurance:EnableFramework */
 	static readonly EnableFramework = "assurance:EnableFramework";
 	/** [Read] assurance:GetAnnotation */
@@ -113,6 +111,9 @@ export class AssuranceActions {
 	static readonly actionGetPermissionSet = "assurance:GetPermissionSet";
 	/** [Read] assurance:GetProject */
 	static readonly actionGetProject = "assurance:GetProject";
+	/** [Read] assurance:GetResourceActivitiesQueryResults */
+	static readonly actionGetResourceActivitiesQueryResults =
+		"assurance:GetResourceActivitiesQueryResults";
 	/** [Read] assurance:GetTask */
 	static readonly actionGetTask = "assurance:GetTask";
 	/** [Read] assurance:ListAssessmentAnnotations */
@@ -163,8 +164,6 @@ export class AssuranceActions {
 	static readonly ListPermissionSets = "assurance:ListPermissionSets";
 	/** [Read] assurance:ListProjects */
 	static readonly ListProjects = "assurance:ListProjects";
-	/** [Read] assurance:ListResourcesForControl */
-	static readonly ListResourcesForControl = "assurance:ListResourcesForControl";
 	/** [Read] assurance:ListTagsForResource */
 	static readonly ListTagsForResource = "assurance:ListTagsForResource";
 	/** [Read] assurance:ListTaskHistory */
@@ -190,8 +189,9 @@ export class AssuranceActions {
 	/** [Write] assurance:StartAssessmentReportExport */
 	static readonly StartAssessmentReportExport =
 		"assurance:StartAssessmentReportExport";
-	/** [Write] assurance:StartResourceDiscovery */
-	static readonly StartResourceDiscovery = "assurance:StartResourceDiscovery";
+	/** [Read] assurance:StartResourceActivitiesQuery */
+	static readonly StartResourceActivitiesQuery =
+		"assurance:StartResourceActivitiesQuery";
 	/** [Tagging] assurance:TagResource */
 	static readonly TagResource = "assurance:TagResource";
 	/** [Tagging] assurance:UntagResource */
@@ -218,18 +218,12 @@ export class AssuranceActions {
 	static readonly UpdateProject = "assurance:UpdateProject";
 	/** [Write] assurance:UpdateTask */
 	static readonly UpdateTask = "assurance:UpdateTask";
-	/** [Write] assurance:UploadEvidence */
-	static readonly UploadEvidence = "assurance:UploadEvidence";
-	/** [Write] assurance:VendConnectionAccessToken */
-	static readonly VendConnectionAccessToken =
-		"assurance:VendConnectionAccessToken";
 
 	/** All read-level actions. */
 	static readonly AllReadActions: string[] = [
 		AssuranceActions.BatchGetComment,
 		AssuranceActions.BatchGetControl,
 		AssuranceActions.BatchGetTask,
-		AssuranceActions.DownloadEvidence,
 		AssuranceActions.actionGetAnnotation,
 		AssuranceActions.actionGetAssessment,
 		AssuranceActions.actionGetAssessmentReportContent,
@@ -246,6 +240,7 @@ export class AssuranceActions {
 		AssuranceActions.actionGetInvitation,
 		AssuranceActions.actionGetPermissionSet,
 		AssuranceActions.actionGetProject,
+		AssuranceActions.actionGetResourceActivitiesQueryResults,
 		AssuranceActions.actionGetTask,
 		AssuranceActions.ListAssessmentAnnotations,
 		AssuranceActions.ListAssessmentJournalRecords,
@@ -269,10 +264,10 @@ export class AssuranceActions {
 		AssuranceActions.ListPermissionSetAssignments,
 		AssuranceActions.ListPermissionSets,
 		AssuranceActions.ListProjects,
-		AssuranceActions.ListResourcesForControl,
 		AssuranceActions.ListTagsForResource,
 		AssuranceActions.ListTaskHistory,
 		AssuranceActions.ListTasks,
+		AssuranceActions.StartResourceActivitiesQuery,
 	];
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
@@ -312,7 +307,6 @@ export class AssuranceActions {
 		AssuranceActions.RevokePermissionSet,
 		AssuranceActions.StartAssessment,
 		AssuranceActions.StartAssessmentReportExport,
-		AssuranceActions.StartResourceDiscovery,
 		AssuranceActions.UpdateAnnotation,
 		AssuranceActions.UpdateAssessment,
 		AssuranceActions.UpdateComment,
@@ -324,8 +318,6 @@ export class AssuranceActions {
 		AssuranceActions.UpdatePermissionSet,
 		AssuranceActions.UpdateProject,
 		AssuranceActions.UpdateTask,
-		AssuranceActions.UploadEvidence,
-		AssuranceActions.VendConnectionAccessToken,
 	];
 	/** All list-level actions. */
 	static readonly AllListActions: string[] = [];

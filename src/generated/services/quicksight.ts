@@ -17,6 +17,8 @@ export class QuickSightActions {
 	/** [PermissionManagement] quicksight:AllowVendedLogDeliveryForResource */
 	static readonly AllowVendedLogDeliveryForResource =
 		"quicksight:AllowVendedLogDeliveryForResource";
+	/** [Write] quicksight:AuthorizeOAuthAccess */
+	static readonly AuthorizeOAuthAccess = "quicksight:AuthorizeOAuthAccess";
 	/** [Write] quicksight:BatchCreateTopicReviewedAnswer */
 	static readonly BatchCreateTopicReviewedAnswer =
 		"quicksight:BatchCreateTopicReviewedAnswer";
@@ -35,6 +37,12 @@ export class QuickSightActions {
 	static readonly BatchUpdatePreferences = "quicksight:BatchUpdatePreferences";
 	/** [Write] quicksight:CancelIngestion */
 	static readonly CancelIngestion = "quicksight:CancelIngestion";
+	/** [Write] quicksight:CreateAccessControlApplication */
+	static readonly CreateAccessControlApplication =
+		"quicksight:CreateAccessControlApplication";
+	/** [Write] quicksight:CreateAccessControlApplicationSecret */
+	static readonly CreateAccessControlApplicationSecret =
+		"quicksight:CreateAccessControlApplicationSecret";
 	/** [Write] quicksight:CreateAccountCustomization */
 	static readonly CreateAccountCustomization =
 		"quicksight:CreateAccountCustomization";
@@ -84,6 +92,8 @@ export class QuickSightActions {
 	/** [Write] quicksight:CreateIAMPolicyAssignment */
 	static readonly CreateIAMPolicyAssignment =
 		"quicksight:CreateIAMPolicyAssignment";
+	/** [Write] quicksight:CreateInboundConnector */
+	static readonly CreateInboundConnector = "quicksight:CreateInboundConnector";
 	/** [Write] quicksight:CreateIngestion */
 	static readonly CreateIngestion = "quicksight:CreateIngestion";
 	/** [Write] quicksight:CreateKnowledgeBase */
@@ -95,6 +105,8 @@ export class QuickSightActions {
 	/** [Write] quicksight:CreateOAuthClientApplication */
 	static readonly CreateOAuthClientApplication =
 		"quicksight:CreateOAuthClientApplication";
+	/** [Write] quicksight:CreateOAuthToken */
+	static readonly CreateOAuthToken = "quicksight:CreateOAuthToken";
 	/** [Write] quicksight:CreateReader */
 	static readonly CreateReader = "quicksight:CreateReader";
 	/** [Write] quicksight:CreateRefreshSchedule */
@@ -120,6 +132,12 @@ export class QuickSightActions {
 	static readonly CreateUser = "quicksight:CreateUser";
 	/** [Write] quicksight:CreateVPCConnection */
 	static readonly CreateVPCConnection = "quicksight:CreateVPCConnection";
+	/** [Write] quicksight:DeleteAccessControlApplication */
+	static readonly DeleteAccessControlApplication =
+		"quicksight:DeleteAccessControlApplication";
+	/** [Write] quicksight:DeleteAccessControlApplicationSecret */
+	static readonly DeleteAccessControlApplicationSecret =
+		"quicksight:DeleteAccessControlApplicationSecret";
 	/** [Write] quicksight:DeleteAccountCustomPermission */
 	static readonly DeleteAccountCustomPermission =
 		"quicksight:DeleteAccountCustomPermission";
@@ -183,6 +201,8 @@ export class QuickSightActions {
 	/** [Write] quicksight:DeleteIdentityPropagationConfig */
 	static readonly DeleteIdentityPropagationConfig =
 		"quicksight:DeleteIdentityPropagationConfig";
+	/** [Write] quicksight:DeleteInboundConnector */
+	static readonly DeleteInboundConnector = "quicksight:DeleteInboundConnector";
 	/** [Write] quicksight:DeleteKnowledgeBase */
 	static readonly DeleteKnowledgeBase = "quicksight:DeleteKnowledgeBase";
 	/** [Write] quicksight:DeleteLimitsProfile */
@@ -224,6 +244,9 @@ export class QuickSightActions {
 		"quicksight:DeleteUserCustomPermission";
 	/** [Write] quicksight:DeleteVPCConnection */
 	static readonly DeleteVPCConnection = "quicksight:DeleteVPCConnection";
+	/** [Read] quicksight:DescribeAccessControlApplication */
+	static readonly DescribeAccessControlApplication =
+		"quicksight:DescribeAccessControlApplication";
 	/** [Read] quicksight:DescribeAccountCustomPermission */
 	static readonly DescribeAccountCustomPermission =
 		"quicksight:DescribeAccountCustomPermission";
@@ -343,6 +366,9 @@ export class QuickSightActions {
 	/** [Read] quicksight:DescribeIAMPolicyAssignment */
 	static readonly DescribeIAMPolicyAssignment =
 		"quicksight:DescribeIAMPolicyAssignment";
+	/** [Read] quicksight:DescribeInboundConnector */
+	static readonly DescribeInboundConnector =
+		"quicksight:DescribeInboundConnector";
 	/** [Read] quicksight:DescribeIngestion */
 	static readonly DescribeIngestion = "quicksight:DescribeIngestion";
 	/** [Read] quicksight:DescribeIpRestriction */
@@ -374,6 +400,9 @@ export class QuickSightActions {
 	/** [Read] quicksight:DescribeRefreshSchedule */
 	static readonly DescribeRefreshSchedule =
 		"quicksight:DescribeRefreshSchedule";
+	/** [Read] quicksight:DescribeResourcePermissions */
+	static readonly DescribeResourcePermissions =
+		"quicksight:DescribeResourcePermissions";
 	/** [Read] quicksight:DescribeRoleCustomPermission */
 	static readonly DescribeRoleCustomPermission =
 		"quicksight:DescribeRoleCustomPermission";
@@ -443,6 +472,9 @@ export class QuickSightActions {
 	static readonly actionGetIdentityContext = "quicksight:GetIdentityContext";
 	/** [Read] quicksight:GetSessionEmbedUrl */
 	static readonly actionGetSessionEmbedUrl = "quicksight:GetSessionEmbedUrl";
+	/** [List] quicksight:ListAccessControlApplications */
+	static readonly ListAccessControlApplications =
+		"quicksight:ListAccessControlApplications";
 	/** [List] quicksight:ListActionConnectors */
 	static readonly ListActionConnectors = "quicksight:ListActionConnectors";
 	/** [List] quicksight:ListAgents */
@@ -506,6 +538,11 @@ export class QuickSightActions {
 	/** [List] quicksight:ListIdentityPropagationConfigs */
 	static readonly ListIdentityPropagationConfigs =
 		"quicksight:ListIdentityPropagationConfigs";
+	/** [List] quicksight:ListInboundConnectorApplicationAssociations */
+	static readonly ListInboundConnectorApplicationAssociations =
+		"quicksight:ListInboundConnectorApplicationAssociations";
+	/** [List] quicksight:ListInboundConnectors */
+	static readonly ListInboundConnectors = "quicksight:ListInboundConnectors";
 	/** [List] quicksight:ListIngestions */
 	static readonly ListIngestions = "quicksight:ListIngestions";
 	/** [List] quicksight:ListKMSKeysForUser */
@@ -582,6 +619,8 @@ export class QuickSightActions {
 		"quicksight:RemoveCustomerManagedKey";
 	/** [Write] quicksight:RestoreAnalysis */
 	static readonly RestoreAnalysis = "quicksight:RestoreAnalysis";
+	/** [Write] quicksight:RevokeOAuthToken */
+	static readonly RevokeOAuthToken = "quicksight:RevokeOAuthToken";
 	/** [Write] quicksight:ScopeDownPolicy */
 	static readonly ScopeDownPolicy = "quicksight:ScopeDownPolicy";
 	/** [List] quicksight:SearchActionConnectors */
@@ -645,6 +684,12 @@ export class QuickSightActions {
 	static readonly Unsubscribe = "quicksight:Unsubscribe";
 	/** [Tagging] quicksight:UntagResource */
 	static readonly UntagResource = "quicksight:UntagResource";
+	/** [Write] quicksight:UpdateAccessControlApplication */
+	static readonly UpdateAccessControlApplication =
+		"quicksight:UpdateAccessControlApplication";
+	/** [Write] quicksight:UpdateAccessControlApplicationSecret */
+	static readonly UpdateAccessControlApplicationSecret =
+		"quicksight:UpdateAccessControlApplicationSecret";
 	/** [Write] quicksight:UpdateAccountCustomPermission */
 	static readonly UpdateAccountCustomPermission =
 		"quicksight:UpdateAccountCustomPermission";
@@ -742,6 +787,11 @@ export class QuickSightActions {
 	/** [Write] quicksight:UpdateIdentityPropagationConfig */
 	static readonly UpdateIdentityPropagationConfig =
 		"quicksight:UpdateIdentityPropagationConfig";
+	/** [Write] quicksight:UpdateInboundConnector */
+	static readonly UpdateInboundConnector = "quicksight:UpdateInboundConnector";
+	/** [Write] quicksight:UpdateInboundConnectorApplicationAssociations */
+	static readonly UpdateInboundConnectorApplicationAssociations =
+		"quicksight:UpdateInboundConnectorApplicationAssociations";
 	/** [Write] quicksight:UpdateIpRestriction */
 	static readonly UpdateIpRestriction = "quicksight:UpdateIpRestriction";
 	/** [Write] quicksight:UpdateKeyRegistration */
@@ -822,6 +872,7 @@ export class QuickSightActions {
 	static readonly AllReadActions: string[] = [
 		QuickSightActions.BatchDescribeUserLimits,
 		QuickSightActions.BatchGetPreferences,
+		QuickSightActions.DescribeAccessControlApplication,
 		QuickSightActions.DescribeAccountCustomPermission,
 		QuickSightActions.DescribeAccountCustomization,
 		QuickSightActions.DescribeAccountSettings,
@@ -867,6 +918,7 @@ export class QuickSightActions {
 		QuickSightActions.DescribeGroup,
 		QuickSightActions.DescribeGroupMembership,
 		QuickSightActions.DescribeIAMPolicyAssignment,
+		QuickSightActions.DescribeInboundConnector,
 		QuickSightActions.DescribeIngestion,
 		QuickSightActions.DescribeIpRestriction,
 		QuickSightActions.DescribeKeyRegistration,
@@ -878,6 +930,7 @@ export class QuickSightActions {
 		QuickSightActions.DescribeQuickIndexCapacity,
 		QuickSightActions.DescribeQuickSightQSearchConfiguration,
 		QuickSightActions.DescribeRefreshSchedule,
+		QuickSightActions.DescribeResourcePermissions,
 		QuickSightActions.DescribeRoleCustomPermission,
 		QuickSightActions.DescribeSelfUpgradeConfiguration,
 		QuickSightActions.DescribeSpace,
@@ -913,11 +966,14 @@ export class QuickSightActions {
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
 		QuickSightActions.AccountConfigurations,
+		QuickSightActions.AuthorizeOAuthAccess,
 		QuickSightActions.BatchCreateTopicReviewedAnswer,
 		QuickSightActions.BatchDeleteKnowledgeBase,
 		QuickSightActions.BatchDeleteTopicReviewedAnswer,
 		QuickSightActions.BatchUpdatePreferences,
 		QuickSightActions.CancelIngestion,
+		QuickSightActions.CreateAccessControlApplication,
+		QuickSightActions.CreateAccessControlApplicationSecret,
 		QuickSightActions.CreateAccountCustomization,
 		QuickSightActions.CreateAccountSubscription,
 		QuickSightActions.CreateActionConnector,
@@ -940,11 +996,13 @@ export class QuickSightActions {
 		QuickSightActions.CreateGroup,
 		QuickSightActions.CreateGroupMembership,
 		QuickSightActions.CreateIAMPolicyAssignment,
+		QuickSightActions.CreateInboundConnector,
 		QuickSightActions.CreateIngestion,
 		QuickSightActions.CreateKnowledgeBase,
 		QuickSightActions.CreateLimitsProfile,
 		QuickSightActions.CreateNamespace,
 		QuickSightActions.CreateOAuthClientApplication,
+		QuickSightActions.CreateOAuthToken,
 		QuickSightActions.CreateReader,
 		QuickSightActions.CreateRefreshSchedule,
 		QuickSightActions.CreateRoleMembership,
@@ -957,6 +1015,8 @@ export class QuickSightActions {
 		QuickSightActions.CreateTopicRefreshSchedule,
 		QuickSightActions.CreateUser,
 		QuickSightActions.CreateVPCConnection,
+		QuickSightActions.DeleteAccessControlApplication,
+		QuickSightActions.DeleteAccessControlApplicationSecret,
 		QuickSightActions.DeleteAccountCustomPermission,
 		QuickSightActions.DeleteAccountCustomization,
 		QuickSightActions.DeleteAccountSubscription,
@@ -984,6 +1044,7 @@ export class QuickSightActions {
 		QuickSightActions.DeleteGroupMembership,
 		QuickSightActions.DeleteIAMPolicyAssignment,
 		QuickSightActions.DeleteIdentityPropagationConfig,
+		QuickSightActions.DeleteInboundConnector,
 		QuickSightActions.DeleteKnowledgeBase,
 		QuickSightActions.DeleteLimitsProfile,
 		QuickSightActions.DeleteNamespace,
@@ -1010,6 +1071,7 @@ export class QuickSightActions {
 		QuickSightActions.RegisterUser,
 		QuickSightActions.RemoveCustomerManagedKey,
 		QuickSightActions.RestoreAnalysis,
+		QuickSightActions.RevokeOAuthToken,
 		QuickSightActions.ScopeDownPolicy,
 		QuickSightActions.actionSetGroupMapping,
 		QuickSightActions.StartAssetBundleExportJob,
@@ -1022,6 +1084,8 @@ export class QuickSightActions {
 		QuickSightActions.Subscribe,
 		QuickSightActions.UnpublishFlow,
 		QuickSightActions.Unsubscribe,
+		QuickSightActions.UpdateAccessControlApplication,
+		QuickSightActions.UpdateAccessControlApplicationSecret,
 		QuickSightActions.UpdateAccountCustomPermission,
 		QuickSightActions.UpdateAccountCustomization,
 		QuickSightActions.UpdateAccountSettings,
@@ -1051,6 +1115,8 @@ export class QuickSightActions {
 		QuickSightActions.UpdateGroup,
 		QuickSightActions.UpdateIAMPolicyAssignment,
 		QuickSightActions.UpdateIdentityPropagationConfig,
+		QuickSightActions.UpdateInboundConnector,
+		QuickSightActions.UpdateInboundConnectorApplicationAssociations,
 		QuickSightActions.UpdateIpRestriction,
 		QuickSightActions.UpdateKeyRegistration,
 		QuickSightActions.UpdateKnowledgeBase,
@@ -1080,6 +1146,7 @@ export class QuickSightActions {
 	];
 	/** All list-level actions. */
 	static readonly AllListActions: string[] = [
+		QuickSightActions.ListAccessControlApplications,
 		QuickSightActions.ListActionConnectors,
 		QuickSightActions.ListAgents,
 		QuickSightActions.ListAnalyses,
@@ -1107,6 +1174,8 @@ export class QuickSightActions {
 		QuickSightActions.ListIAMPolicyAssignments,
 		QuickSightActions.ListIAMPolicyAssignmentsForUser,
 		QuickSightActions.ListIdentityPropagationConfigs,
+		QuickSightActions.ListInboundConnectorApplicationAssociations,
+		QuickSightActions.ListInboundConnectors,
 		QuickSightActions.ListIngestions,
 		QuickSightActions.ListKMSKeysForUser,
 		QuickSightActions.ListKnowledgeBases,
@@ -1173,6 +1242,34 @@ export class QuickSightActions {
 		QuickSightActions.TagResource,
 		QuickSightActions.UntagResource,
 	];
+}
+
+/**
+ * Properties for building a accessControlApplication ARN.
+ */
+export interface QuickSightAccessControlApplicationArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a accessControlApplication ARN.
+ */
+export interface QuickSightAccessControlApplicationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
 }
 
 /**
@@ -1916,6 +2013,34 @@ export interface QuickSightGroupArnComponents {
 }
 
 /**
+ * Properties for building a inboundConnector ARN.
+ */
+export interface QuickSightInboundConnectorArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a inboundConnector ARN.
+ */
+export interface QuickSightInboundConnectorArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
  * Properties for building a ingestion ARN.
  */
 export interface QuickSightIngestionArnProps {
@@ -2259,6 +2384,8 @@ export interface QuickSightVpcconnectionArnComponents {
 	readonly resourceId: string;
 }
 
+const AccessControlApplicationArnRegex =
+	/^arn:(?<partition>[^:]+):quicksight:(?<region>[^:]*):(?<account>[^:]*):access-control-application\/(?<resourceId>[^:/?]+)$/;
 const AccountArnRegex =
 	/^arn:(?<partition>[^:]+):quicksight:(?<region>[^:]*):(?<account>[^:]*):account\/(?<resourceId>[^:/?]+)$/;
 const ActionconnectorArnRegex =
@@ -2311,6 +2438,8 @@ const FolderArnRegex =
 	/^arn:(?<partition>[^:]+):quicksight:(?<region>[^:]*):(?<account>[^:]*):folder\/(?<resourceId>[^:/?]+)$/;
 const GroupArnRegex =
 	/^arn:(?<partition>[^:]+):quicksight:(?<region>[^:]*):(?<account>[^:]*):group\/(?<resourceId>[^:/?]+)$/;
+const InboundConnectorArnRegex =
+	/^arn:(?<partition>[^:]+):quicksight:(?<region>[^:]*):(?<account>[^:]*):inbound-connector\/(?<resourceId>[^:/?]+)$/;
 const IngestionArnRegex =
 	/^arn:(?<partition>[^:]+):quicksight:(?<region>[^:]*):(?<account>[^:]*):dataset\/(?<datasetId>[^:/?]+)\/ingestion\/(?<resourceId>[^:/?]+)$/;
 const KnowledgeBaseArnRegex =
@@ -2340,6 +2469,41 @@ const VpcconnectionArnRegex =
  * ARN builders, validators, and parsers for quicksight resources.
  */
 export class QuickSightResources {
+	/**
+	 * Builds an ARN for the accessControlApplication resource.
+	 */
+	static accessControlApplication(
+		props: QuickSightAccessControlApplicationArnProps,
+	): string {
+		return `arn:${props.partition ?? "aws"}:quicksight:${props.region ?? "*"}:${props.account ?? "*"}:access-control-application/${props.resourceId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the accessControlApplication resource.
+	 */
+	static isValidAccessControlApplicationArn(arn: string): boolean {
+		return AccessControlApplicationArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a accessControlApplication ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseAccessControlApplicationArn(
+		arn: string,
+	): QuickSightAccessControlApplicationArnComponents {
+		const match = AccessControlApplicationArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid accessControlApplication ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			resourceId: match.groups!.resourceId,
+		};
+	}
+
 	/**
 	 * Builds an ARN for the account resource.
 	 */
@@ -3170,6 +3334,39 @@ export class QuickSightResources {
 		const match = GroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid group ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			resourceId: match.groups!.resourceId,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the inboundConnector resource.
+	 */
+	static inboundConnector(props: QuickSightInboundConnectorArnProps): string {
+		return `arn:${props.partition ?? "aws"}:quicksight:${props.region ?? "*"}:${props.account ?? "*"}:inbound-connector/${props.resourceId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the inboundConnector resource.
+	 */
+	static isValidInboundConnectorArn(arn: string): boolean {
+		return InboundConnectorArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a inboundConnector ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseInboundConnectorArn(
+		arn: string,
+	): QuickSightInboundConnectorArnComponents {
+		const match = InboundConnectorArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid inboundConnector ARN: ${arn}`);
 		}
 		return {
 			partition: match.groups.partition,
@@ -4107,6 +4304,8 @@ export class QuickSightOperations {
 	static readonly DescribeRefreshSchedule: string[] = [
 		"quicksight:DescribeRefreshSchedule",
 	];
+	/** IAM actions required for the DescribeResourcePermissions API call. */
+	static readonly DescribeResourcePermissions: string[] = [];
 	/** IAM actions required for the DescribeRoleCustomPermission API call. */
 	static readonly DescribeRoleCustomPermission: string[] = [
 		"quicksight:DescribeRoleCustomPermission",
@@ -4606,6 +4805,11 @@ export class QuickSightOperations {
 	static readonly UpdateRefreshSchedule: string[] = [
 		"quicksight:UpdateRefreshSchedule",
 	];
+	/** IAM actions required for the UpdateResourcePermissions API call. */
+	static readonly UpdateResourcePermissions: string[] = [
+		"iam:PassRole",
+		"quicksight:UpdateResourcePermissions",
+	];
 	/** IAM actions required for the UpdateRoleCustomPermission API call. */
 	static readonly UpdateRoleCustomPermission: string[] = [
 		"quicksight:UpdateRoleCustomPermission",
@@ -4709,6 +4913,11 @@ export class QuickSightConditions {
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
+	/** Condition keys applicable to the CreateAccessControlApplication action. */
+	static readonly CreateAccessControlApplicationConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the CreateAccountCustomization action. */
 	static readonly CreateAccountCustomizationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
@@ -4771,6 +4980,11 @@ export class QuickSightConditions {
 	];
 	/** Condition keys applicable to the CreateGroupMembership action. */
 	static readonly CreateGroupMembershipConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
+	/** Condition keys applicable to the CreateInboundConnector action. */
+	static readonly CreateInboundConnectorConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];

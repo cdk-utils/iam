@@ -895,6 +895,7 @@ new kinesisanalytics.KinesisanalyticsOperations()
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.CreateApplication">CreateApplication</a></code> | <code>string[]</code> | IAM actions required for the CreateApplication API call. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.CreateApplicationPresignedUrl">CreateApplicationPresignedUrl</a></code> | <code>string[]</code> | IAM actions required for the CreateApplicationPresignedUrl API call. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.CreateApplicationSnapshot">CreateApplicationSnapshot</a></code> | <code>string[]</code> | IAM actions required for the CreateApplicationSnapshot API call. |
+| <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.CreateSnapshot">CreateSnapshot</a></code> | <code>string[]</code> | IAM actions required for the CreateSnapshot API call. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.DeleteApplication">DeleteApplication</a></code> | <code>string[]</code> | IAM actions required for the DeleteApplication API call. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.DeleteApplicationCloudWatchLoggingOption">DeleteApplicationCloudWatchLoggingOption</a></code> | <code>string[]</code> | IAM actions required for the DeleteApplicationCloudWatchLoggingOption API call. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.DeleteApplicationInputProcessingConfiguration">DeleteApplicationInputProcessingConfiguration</a></code> | <code>string[]</code> | IAM actions required for the DeleteApplicationInputProcessingConfiguration API call. |
@@ -902,15 +903,22 @@ new kinesisanalytics.KinesisanalyticsOperations()
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.DeleteApplicationReferenceDataSource">DeleteApplicationReferenceDataSource</a></code> | <code>string[]</code> | IAM actions required for the DeleteApplicationReferenceDataSource API call. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.DeleteApplicationSnapshot">DeleteApplicationSnapshot</a></code> | <code>string[]</code> | IAM actions required for the DeleteApplicationSnapshot API call. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.DeleteApplicationVpcConfiguration">DeleteApplicationVpcConfiguration</a></code> | <code>string[]</code> | IAM actions required for the DeleteApplicationVpcConfiguration API call. |
+| <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.DeleteSnapshot">DeleteSnapshot</a></code> | <code>string[]</code> | IAM actions required for the DeleteSnapshot API call. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.DescribeApplication">DescribeApplication</a></code> | <code>string[]</code> | IAM actions required for the DescribeApplication API call. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.DescribeApplicationOperation">DescribeApplicationOperation</a></code> | <code>string[]</code> | IAM actions required for the DescribeApplicationOperation API call. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.DescribeApplicationSnapshot">DescribeApplicationSnapshot</a></code> | <code>string[]</code> | IAM actions required for the DescribeApplicationSnapshot API call. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.DescribeApplicationVersion">DescribeApplicationVersion</a></code> | <code>string[]</code> | IAM actions required for the DescribeApplicationVersion API call. |
+| <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.DescribeSnapshot">DescribeSnapshot</a></code> | <code>string[]</code> | IAM actions required for the DescribeSnapshot API call. |
+| <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.DescribeSnapshotOperation">DescribeSnapshotOperation</a></code> | <code>string[]</code> | IAM actions required for the DescribeSnapshotOperation API call. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.DiscoverInputSchema">DiscoverInputSchema</a></code> | <code>string[]</code> | IAM actions required for the DiscoverInputSchema API call. |
+| <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.ExportSnapshot">ExportSnapshot</a></code> | <code>string[]</code> | IAM actions required for the ExportSnapshot API call. |
+| <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.ImportSnapshot">ImportSnapshot</a></code> | <code>string[]</code> | IAM actions required for the ImportSnapshot API call. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.ListApplicationOperations">ListApplicationOperations</a></code> | <code>string[]</code> | IAM actions required for the ListApplicationOperations API call. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.ListApplications">ListApplications</a></code> | <code>string[]</code> | IAM actions required for the ListApplications API call. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.ListApplicationSnapshots">ListApplicationSnapshots</a></code> | <code>string[]</code> | IAM actions required for the ListApplicationSnapshots API call. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.ListApplicationVersions">ListApplicationVersions</a></code> | <code>string[]</code> | IAM actions required for the ListApplicationVersions API call. |
+| <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.ListSnapshotOperations">ListSnapshotOperations</a></code> | <code>string[]</code> | IAM actions required for the ListSnapshotOperations API call. |
+| <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.ListSnapshots">ListSnapshots</a></code> | <code>string[]</code> | IAM actions required for the ListSnapshots API call. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.RollbackApplication">RollbackApplication</a></code> | <code>string[]</code> | IAM actions required for the RollbackApplication API call. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.StartApplication">StartApplication</a></code> | <code>string[]</code> | IAM actions required for the StartApplication API call. |
@@ -1030,6 +1038,18 @@ IAM actions required for the CreateApplicationSnapshot API call.
 
 ---
 
+##### `CreateSnapshot`<sup>Required</sup> <a name="CreateSnapshot" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.CreateSnapshot"></a>
+
+```typescript
+public readonly CreateSnapshot: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateSnapshot API call.
+
+---
+
 ##### `DeleteApplication`<sup>Required</sup> <a name="DeleteApplication" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.DeleteApplication"></a>
 
 ```typescript
@@ -1114,6 +1134,18 @@ IAM actions required for the DeleteApplicationVpcConfiguration API call.
 
 ---
 
+##### `DeleteSnapshot`<sup>Required</sup> <a name="DeleteSnapshot" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.DeleteSnapshot"></a>
+
+```typescript
+public readonly DeleteSnapshot: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteSnapshot API call.
+
+---
+
 ##### `DescribeApplication`<sup>Required</sup> <a name="DescribeApplication" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.DescribeApplication"></a>
 
 ```typescript
@@ -1162,6 +1194,30 @@ IAM actions required for the DescribeApplicationVersion API call.
 
 ---
 
+##### `DescribeSnapshot`<sup>Required</sup> <a name="DescribeSnapshot" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.DescribeSnapshot"></a>
+
+```typescript
+public readonly DescribeSnapshot: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeSnapshot API call.
+
+---
+
+##### `DescribeSnapshotOperation`<sup>Required</sup> <a name="DescribeSnapshotOperation" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.DescribeSnapshotOperation"></a>
+
+```typescript
+public readonly DescribeSnapshotOperation: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeSnapshotOperation API call.
+
+---
+
 ##### `DiscoverInputSchema`<sup>Required</sup> <a name="DiscoverInputSchema" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.DiscoverInputSchema"></a>
 
 ```typescript
@@ -1171,6 +1227,30 @@ public readonly DiscoverInputSchema: string[];
 - *Type:* string[]
 
 IAM actions required for the DiscoverInputSchema API call.
+
+---
+
+##### `ExportSnapshot`<sup>Required</sup> <a name="ExportSnapshot" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.ExportSnapshot"></a>
+
+```typescript
+public readonly ExportSnapshot: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ExportSnapshot API call.
+
+---
+
+##### `ImportSnapshot`<sup>Required</sup> <a name="ImportSnapshot" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.ImportSnapshot"></a>
+
+```typescript
+public readonly ImportSnapshot: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ImportSnapshot API call.
 
 ---
 
@@ -1219,6 +1299,30 @@ public readonly ListApplicationVersions: string[];
 - *Type:* string[]
 
 IAM actions required for the ListApplicationVersions API call.
+
+---
+
+##### `ListSnapshotOperations`<sup>Required</sup> <a name="ListSnapshotOperations" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.ListSnapshotOperations"></a>
+
+```typescript
+public readonly ListSnapshotOperations: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListSnapshotOperations API call.
+
+---
+
+##### `ListSnapshots`<sup>Required</sup> <a name="ListSnapshots" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.ListSnapshots"></a>
+
+```typescript
+public readonly ListSnapshots: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListSnapshots API call.
 
 ---
 

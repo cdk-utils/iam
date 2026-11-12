@@ -1557,7 +1557,10 @@ export class EventsOperations {
 	/** IAM actions required for the RevokeResource API call. */
 	static readonly RevokeResource: string[] = ["events:RevokeResource"];
 	/** IAM actions required for the StartReplay API call. */
-	static readonly StartReplay: string[] = ["events:StartReplay"];
+	static readonly StartReplay: string[] = [
+		"events:StartReplay",
+		"events:TagResource",
+	];
 	/** IAM actions required for the TagResource API call. */
 	static readonly TagResource: string[] = ["events:TagResource"];
 	/** IAM actions required for the TestEventPattern API call. */
