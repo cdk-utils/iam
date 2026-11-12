@@ -280,7 +280,7 @@
       },
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
+        "IAM Action Last Accessed": true
       }
     },
     {
@@ -718,7 +718,7 @@
       },
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
+        "IAM Action Last Accessed": true
       }
     },
     {
@@ -865,6 +865,21 @@
       "Annotations": {
         "Properties": {
           "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DetectGroupOutliers",
+      "Annotations": {
+        "Properties": {
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1547,7 +1562,7 @@
       },
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
+        "IAM Action Last Accessed": true
       }
     },
     {
@@ -1651,6 +1666,25 @@
     },
     {
       "Name": "GetSpaceCredentialsForOrganization",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSpaceDataAccess",
+      "ActionConditionKeys": [
+        "cloudwatch:HasAccessGrant"
+      ],
       "Annotations": {
         "Properties": {
           "IsDataPlane": false,
@@ -3237,7 +3271,7 @@
       },
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
+        "IAM Action Last Accessed": true
       }
     },
     {
@@ -4420,6 +4454,22 @@
       ]
     },
     {
+      "Name": "GetSpaceDataAccess",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSpaceDataAccess",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "get_space_data_access",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetTelemetryQueryResults",
       "AuthorizedActions": [
         {
@@ -4919,6 +4969,10 @@
     {
       "Name": "PutMetricAlarm",
       "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "cloudwatch"
+        },
         {
           "Name": "PutMetricAlarm",
           "Service": "cloudwatch"
@@ -5534,7 +5588,7 @@
     {
       "Name": "view",
       "ARNFormats": [
-        "arn:${Partition}:cloudwatch:${Region}:${Account}:view/${ViewName}"
+        "arn:${Partition}:cloudwatch:${Region}:${Account}:view/${ViewName}/${ViewId}"
       ],
       "ConditionKeys": [
         "aws:ResourceTag/${TagKey}"

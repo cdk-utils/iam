@@ -188,6 +188,7 @@ export class SecretsManagerOperations {
 	/** IAM actions required for the CreateSecret API call. */
 	static readonly CreateSecret: string[] = [
 		"secretsmanager:CreateSecret",
+		"secretsmanager:PutResourcePolicy",
 		"secretsmanager:ReplicateSecretToRegions",
 		"secretsmanager:TagResource",
 	];
@@ -240,6 +241,7 @@ export class SecretsManagerOperations {
 	];
 	/** IAM actions required for the StopReplicationToReplica API call. */
 	static readonly StopReplicationToReplica: string[] = [
+		"secretsmanager:DeleteResourcePolicy",
 		"secretsmanager:StopReplicationToReplica",
 	];
 	/** IAM actions required for the TagResource API call. */

@@ -103,6 +103,9 @@ export class DatazoneActions {
 	static readonly CreateListingChangeSet = "datazone:CreateListingChangeSet";
 	/** [Write] datazone:CreateNotebook */
 	static readonly CreateNotebook = "datazone:CreateNotebook";
+	/** [Write] datazone:CreateNotificationPreference */
+	static readonly CreateNotificationPreference =
+		"datazone:CreateNotificationPreference";
 	/** [Write] datazone:CreateProject */
 	static readonly CreateProject = "datazone:CreateProject";
 	/** [Write] datazone:CreateProjectMembership */
@@ -119,6 +122,8 @@ export class DatazoneActions {
 	/** [Write] datazone:CreateSubscriptionTarget */
 	static readonly CreateSubscriptionTarget =
 		"datazone:CreateSubscriptionTarget";
+	/** [Write] datazone:CreateUIConfiguration */
+	static readonly CreateUIConfiguration = "datazone:CreateUIConfiguration";
 	/** [Write] datazone:CreateUserProfile */
 	static readonly CreateUserProfile = "datazone:CreateUserProfile";
 	/** [Write] datazone:DeleteAccountPool */
@@ -183,6 +188,9 @@ export class DatazoneActions {
 	static readonly DeleteListing = "datazone:DeleteListing";
 	/** [Write] datazone:DeleteNotebook */
 	static readonly DeleteNotebook = "datazone:DeleteNotebook";
+	/** [Write] datazone:DeleteNotificationPreference */
+	static readonly DeleteNotificationPreference =
+		"datazone:DeleteNotificationPreference";
 	/** [Write] datazone:DeleteProject */
 	static readonly DeleteProject = "datazone:DeleteProject";
 	/** [Write] datazone:DeleteProjectMembership */
@@ -202,6 +210,8 @@ export class DatazoneActions {
 	/** [Write] datazone:DeleteTimeSeriesDataPoints */
 	static readonly DeleteTimeSeriesDataPoints =
 		"datazone:DeleteTimeSeriesDataPoints";
+	/** [Write] datazone:DeleteUIConfiguration */
+	static readonly DeleteUIConfiguration = "datazone:DeleteUIConfiguration";
 	/** [Write] datazone:DeregisterAgentArtifact */
 	static readonly DeregisterAgentArtifact = "datazone:DeregisterAgentArtifact";
 	/** [Write] datazone:DisassociateEnvironmentRole */
@@ -261,6 +271,9 @@ export class DatazoneActions {
 		"datazone:GetDomainSharingPolicy";
 	/** [Read] datazone:GetDomainUnit */
 	static readonly actionGetDomainUnit = "datazone:GetDomainUnit";
+	/** [Read] datazone:GetEffectiveUICustomization */
+	static readonly actionGetEffectiveUICustomization =
+		"datazone:GetEffectiveUICustomization";
 	/** [Read] datazone:GetEnvironment */
 	static readonly actionGetEnvironment = "datazone:GetEnvironment";
 	/** [Read] datazone:GetEnvironmentAction */
@@ -309,6 +322,9 @@ export class DatazoneActions {
 	static readonly actionGetNotebookExport = "datazone:GetNotebookExport";
 	/** [Read] datazone:GetNotebookRun */
 	static readonly actionGetNotebookRun = "datazone:GetNotebookRun";
+	/** [Read] datazone:GetNotificationPreference */
+	static readonly actionGetNotificationPreference =
+		"datazone:GetNotificationPreference";
 	/** [Read] datazone:GetProject */
 	static readonly actionGetProject = "datazone:GetProject";
 	/** [Read] datazone:GetProjectProfile */
@@ -328,9 +344,14 @@ export class DatazoneActions {
 	/** [Read] datazone:GetSubscriptionTarget */
 	static readonly actionGetSubscriptionTarget =
 		"datazone:GetSubscriptionTarget";
+	/** [Read] datazone:GetSystemTableExportConfiguration */
+	static readonly actionGetSystemTableExportConfiguration =
+		"datazone:GetSystemTableExportConfiguration";
 	/** [Read] datazone:GetTimeSeriesDataPoint */
 	static readonly actionGetTimeSeriesDataPoint =
 		"datazone:GetTimeSeriesDataPoint";
+	/** [Read] datazone:GetUIConfiguration */
+	static readonly actionGetUIConfiguration = "datazone:GetUIConfiguration";
 	/** [Read] datazone:GetUpdateEligibility */
 	static readonly actionGetUpdateEligibility = "datazone:GetUpdateEligibility";
 	/** [Read] datazone:GetUserProfile */
@@ -370,6 +391,9 @@ export class DatazoneActions {
 	static readonly ListDataSourceRuns = "datazone:ListDataSourceRuns";
 	/** [List] datazone:ListDataSources */
 	static readonly ListDataSources = "datazone:ListDataSources";
+	/** [List] datazone:ListDeployableEnvironmentBlueprints */
+	static readonly ListDeployableEnvironmentBlueprints =
+		"datazone:ListDeployableEnvironmentBlueprints";
 	/** [List] datazone:ListDesignations */
 	static readonly ListDesignations = "datazone:ListDesignations";
 	/** [List] datazone:ListDomainUnitsForParent */
@@ -439,6 +463,8 @@ export class DatazoneActions {
 	/** [List] datazone:ListTimeSeriesDataPoints */
 	static readonly ListTimeSeriesDataPoints =
 		"datazone:ListTimeSeriesDataPoints";
+	/** [List] datazone:ListUIConfigurations */
+	static readonly ListUIConfigurations = "datazone:ListUIConfigurations";
 	/** [List] datazone:ListWarehouseMetadata */
 	static readonly ListWarehouseMetadata = "datazone:ListWarehouseMetadata";
 	/** [Write] datazone:PostLineageEvent */
@@ -460,6 +486,9 @@ export class DatazoneActions {
 	/** [Write] datazone:PutEnvironmentBlueprintConfiguration */
 	static readonly PutEnvironmentBlueprintConfiguration =
 		"datazone:PutEnvironmentBlueprintConfiguration";
+	/** [Write] datazone:PutSystemTableExportConfiguration */
+	static readonly PutSystemTableExportConfiguration =
+		"datazone:PutSystemTableExportConfiguration";
 	/** [List] datazone:QueryGraph */
 	static readonly QueryGraph = "datazone:QueryGraph";
 	/** [Write] datazone:RefreshToken */
@@ -536,6 +565,8 @@ export class DatazoneActions {
 	static readonly UpdateAccountPool = "datazone:UpdateAccountPool";
 	/** [Write] datazone:UpdateAssetFilter */
 	static readonly UpdateAssetFilter = "datazone:UpdateAssetFilter";
+	/** [Write] datazone:UpdateAssetOwner */
+	static readonly UpdateAssetOwner = "datazone:UpdateAssetOwner";
 	/** [Write] datazone:UpdateCell */
 	static readonly UpdateCell = "datazone:UpdateCell";
 	/** [Write] datazone:UpdateCellRun */
@@ -581,6 +612,9 @@ export class DatazoneActions {
 	static readonly UpdateGroupProfile = "datazone:UpdateGroupProfile";
 	/** [Write] datazone:UpdateNotebook */
 	static readonly UpdateNotebook = "datazone:UpdateNotebook";
+	/** [Write] datazone:UpdateNotificationPreference */
+	static readonly UpdateNotificationPreference =
+		"datazone:UpdateNotificationPreference";
 	/** [Write] datazone:UpdateProject */
 	static readonly UpdateProject = "datazone:UpdateProject";
 	/** [Write] datazone:UpdateProjectProfile */
@@ -596,6 +630,8 @@ export class DatazoneActions {
 	/** [Write] datazone:UpdateSubscriptionTarget */
 	static readonly UpdateSubscriptionTarget =
 		"datazone:UpdateSubscriptionTarget";
+	/** [Write] datazone:UpdateUIConfiguration */
+	static readonly UpdateUIConfiguration = "datazone:UpdateUIConfiguration";
 	/** [Write] datazone:UpdateUserProfile */
 	static readonly UpdateUserProfile = "datazone:UpdateUserProfile";
 	/** [Write] datazone:ValidatePassRole */
@@ -630,6 +666,7 @@ export class DatazoneActions {
 		DatazoneActions.actionGetDomainExecutionRoleCredentials,
 		DatazoneActions.actionGetDomainSharingPolicy,
 		DatazoneActions.actionGetDomainUnit,
+		DatazoneActions.actionGetEffectiveUICustomization,
 		DatazoneActions.actionGetEnvironment,
 		DatazoneActions.actionGetEnvironmentAction,
 		DatazoneActions.actionGetEnvironmentActionLink,
@@ -650,6 +687,7 @@ export class DatazoneActions {
 		DatazoneActions.actionGetNotebookCompute,
 		DatazoneActions.actionGetNotebookExport,
 		DatazoneActions.actionGetNotebookRun,
+		DatazoneActions.actionGetNotificationPreference,
 		DatazoneActions.actionGetProject,
 		DatazoneActions.actionGetProjectProfile,
 		DatazoneActions.actionGetRule,
@@ -658,7 +696,9 @@ export class DatazoneActions {
 		DatazoneActions.actionGetSubscriptionGrant,
 		DatazoneActions.actionGetSubscriptionRequestDetails,
 		DatazoneActions.actionGetSubscriptionTarget,
+		DatazoneActions.actionGetSystemTableExportConfiguration,
 		DatazoneActions.actionGetTimeSeriesDataPoint,
+		DatazoneActions.actionGetUIConfiguration,
 		DatazoneActions.actionGetUpdateEligibility,
 		DatazoneActions.actionGetUserProfile,
 		DatazoneActions.ListTagsForResource,
@@ -703,6 +743,7 @@ export class DatazoneActions {
 		DatazoneActions.CreateGroupProfile,
 		DatazoneActions.CreateListingChangeSet,
 		DatazoneActions.CreateNotebook,
+		DatazoneActions.CreateNotificationPreference,
 		DatazoneActions.CreateProject,
 		DatazoneActions.CreateProjectMembership,
 		DatazoneActions.CreateProjectProfile,
@@ -710,6 +751,7 @@ export class DatazoneActions {
 		DatazoneActions.CreateSubscriptionGrant,
 		DatazoneActions.CreateSubscriptionRequest,
 		DatazoneActions.CreateSubscriptionTarget,
+		DatazoneActions.CreateUIConfiguration,
 		DatazoneActions.CreateUserProfile,
 		DatazoneActions.DeleteAccountPool,
 		DatazoneActions.DeleteAgentApprovalPolicy,
@@ -738,6 +780,7 @@ export class DatazoneActions {
 		DatazoneActions.DeleteLineageEvent,
 		DatazoneActions.DeleteListing,
 		DatazoneActions.DeleteNotebook,
+		DatazoneActions.DeleteNotificationPreference,
 		DatazoneActions.DeleteProject,
 		DatazoneActions.DeleteProjectMembership,
 		DatazoneActions.DeleteProjectProfile,
@@ -746,6 +789,7 @@ export class DatazoneActions {
 		DatazoneActions.DeleteSubscriptionRequest,
 		DatazoneActions.DeleteSubscriptionTarget,
 		DatazoneActions.DeleteTimeSeriesDataPoints,
+		DatazoneActions.DeleteUIConfiguration,
 		DatazoneActions.DeregisterAgentArtifact,
 		DatazoneActions.DisassociateEnvironmentRole,
 		DatazoneActions.DisassociateGovernedTerms,
@@ -758,6 +802,7 @@ export class DatazoneActions {
 		DatazoneActions.PutCellRunResult,
 		DatazoneActions.PutDataExportConfiguration,
 		DatazoneActions.PutEnvironmentBlueprintConfiguration,
+		DatazoneActions.PutSystemTableExportConfiguration,
 		DatazoneActions.RefreshToken,
 		DatazoneActions.RegisterAgentArtifact,
 		DatazoneActions.RejectPredictions,
@@ -783,6 +828,7 @@ export class DatazoneActions {
 		DatazoneActions.StopNotebookRun,
 		DatazoneActions.UpdateAccountPool,
 		DatazoneActions.UpdateAssetFilter,
+		DatazoneActions.UpdateAssetOwner,
 		DatazoneActions.UpdateCell,
 		DatazoneActions.UpdateCellRun,
 		DatazoneActions.UpdateConnection,
@@ -803,12 +849,14 @@ export class DatazoneActions {
 		DatazoneActions.UpdateGlossaryTerm,
 		DatazoneActions.UpdateGroupProfile,
 		DatazoneActions.UpdateNotebook,
+		DatazoneActions.UpdateNotificationPreference,
 		DatazoneActions.UpdateProject,
 		DatazoneActions.UpdateProjectProfile,
 		DatazoneActions.UpdateRule,
 		DatazoneActions.UpdateSubscriptionGrantStatus,
 		DatazoneActions.UpdateSubscriptionRequest,
 		DatazoneActions.UpdateSubscriptionTarget,
+		DatazoneActions.UpdateUIConfiguration,
 		DatazoneActions.UpdateUserProfile,
 		DatazoneActions.ValidatePassRole,
 	];
@@ -829,6 +877,7 @@ export class DatazoneActions {
 		DatazoneActions.ListDataSourceRunActivities,
 		DatazoneActions.ListDataSourceRuns,
 		DatazoneActions.ListDataSources,
+		DatazoneActions.ListDeployableEnvironmentBlueprints,
 		DatazoneActions.ListDesignations,
 		DatazoneActions.ListDomainUnitsForParent,
 		DatazoneActions.ListDomains,
@@ -859,6 +908,7 @@ export class DatazoneActions {
 		DatazoneActions.ListSubscriptionTargets,
 		DatazoneActions.ListSubscriptions,
 		DatazoneActions.ListTimeSeriesDataPoints,
+		DatazoneActions.ListUIConfigurations,
 		DatazoneActions.ListWarehouseMetadata,
 		DatazoneActions.QueryGraph,
 		DatazoneActions.Search,

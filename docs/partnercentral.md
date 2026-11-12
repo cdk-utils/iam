@@ -525,6 +525,180 @@ Defaults to "*".
 
 ---
 
+### PartnercentralBusinessPlanArnComponents <a name="PartnercentralBusinessPlanArnComponents" id="@cdk_utils/iam.partnercentral.PartnercentralBusinessPlanArnComponents"></a>
+
+Parsed components of a BusinessPlan ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.partnercentral.PartnercentralBusinessPlanArnComponents.Initializer"></a>
+
+```typescript
+import { partnercentral } from '@cdk_utils/iam'
+
+const partnercentralBusinessPlanArnComponents: partnercentral.PartnercentralBusinessPlanArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralBusinessPlanArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralBusinessPlanArnComponents.property.catalog">catalog</a></code> | <code>string</code> | The Catalog component. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralBusinessPlanArnComponents.property.identifier">identifier</a></code> | <code>string</code> | The Identifier component. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralBusinessPlanArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralBusinessPlanArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.partnercentral.PartnercentralBusinessPlanArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `catalog`<sup>Required</sup> <a name="catalog" id="@cdk_utils/iam.partnercentral.PartnercentralBusinessPlanArnComponents.property.catalog"></a>
+
+```typescript
+public readonly catalog: string;
+```
+
+- *Type:* string
+
+The Catalog component.
+
+---
+
+##### `identifier`<sup>Required</sup> <a name="identifier" id="@cdk_utils/iam.partnercentral.PartnercentralBusinessPlanArnComponents.property.identifier"></a>
+
+```typescript
+public readonly identifier: string;
+```
+
+- *Type:* string
+
+The Identifier component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.partnercentral.PartnercentralBusinessPlanArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.partnercentral.PartnercentralBusinessPlanArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### PartnercentralBusinessPlanArnProps <a name="PartnercentralBusinessPlanArnProps" id="@cdk_utils/iam.partnercentral.PartnercentralBusinessPlanArnProps"></a>
+
+Properties for building a BusinessPlan ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.partnercentral.PartnercentralBusinessPlanArnProps.Initializer"></a>
+
+```typescript
+import { partnercentral } from '@cdk_utils/iam'
+
+const partnercentralBusinessPlanArnProps: partnercentral.PartnercentralBusinessPlanArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralBusinessPlanArnProps.property.catalog">catalog</a></code> | <code>string</code> | The Catalog component of the ARN. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralBusinessPlanArnProps.property.identifier">identifier</a></code> | <code>string</code> | The Identifier component of the ARN. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralBusinessPlanArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralBusinessPlanArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralBusinessPlanArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `catalog`<sup>Required</sup> <a name="catalog" id="@cdk_utils/iam.partnercentral.PartnercentralBusinessPlanArnProps.property.catalog"></a>
+
+```typescript
+public readonly catalog: string;
+```
+
+- *Type:* string
+
+The Catalog component of the ARN.
+
+---
+
+##### `identifier`<sup>Required</sup> <a name="identifier" id="@cdk_utils/iam.partnercentral.PartnercentralBusinessPlanArnProps.property.identifier"></a>
+
+```typescript
+public readonly identifier: string;
+```
+
+- *Type:* string
+
+The Identifier component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.partnercentral.PartnercentralBusinessPlanArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.partnercentral.PartnercentralBusinessPlanArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.partnercentral.PartnercentralBusinessPlanArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### PartnercentralChannelHandshakeArnComponents <a name="PartnercentralChannelHandshakeArnComponents" id="@cdk_utils/iam.partnercentral.PartnercentralChannelHandshakeArnComponents"></a>
 
 Parsed components of a ChannelHandshake ARN.
@@ -1354,6 +1528,178 @@ Defaults to "*".
 ---
 
 ##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.partnercentral.PartnercentralDashboardArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+### PartnercentralDatasetArnComponents <a name="PartnercentralDatasetArnComponents" id="@cdk_utils/iam.partnercentral.PartnercentralDatasetArnComponents"></a>
+
+Parsed components of a Dataset ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.partnercentral.PartnercentralDatasetArnComponents.Initializer"></a>
+
+```typescript
+import { partnercentral } from '@cdk_utils/iam'
+
+const partnercentralDatasetArnComponents: partnercentral.PartnercentralDatasetArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralDatasetArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralDatasetArnComponents.property.catalog">catalog</a></code> | <code>string</code> | The Catalog component. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralDatasetArnComponents.property.datasetName">datasetName</a></code> | <code>string</code> | The DatasetName component. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralDatasetArnComponents.property.domain">domain</a></code> | <code>string</code> | The Domain component. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralDatasetArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.partnercentral.PartnercentralDatasetArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `catalog`<sup>Required</sup> <a name="catalog" id="@cdk_utils/iam.partnercentral.PartnercentralDatasetArnComponents.property.catalog"></a>
+
+```typescript
+public readonly catalog: string;
+```
+
+- *Type:* string
+
+The Catalog component.
+
+---
+
+##### `datasetName`<sup>Required</sup> <a name="datasetName" id="@cdk_utils/iam.partnercentral.PartnercentralDatasetArnComponents.property.datasetName"></a>
+
+```typescript
+public readonly datasetName: string;
+```
+
+- *Type:* string
+
+The DatasetName component.
+
+---
+
+##### `domain`<sup>Required</sup> <a name="domain" id="@cdk_utils/iam.partnercentral.PartnercentralDatasetArnComponents.property.domain"></a>
+
+```typescript
+public readonly domain: string;
+```
+
+- *Type:* string
+
+The Domain component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.partnercentral.PartnercentralDatasetArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+### PartnercentralDatasetArnProps <a name="PartnercentralDatasetArnProps" id="@cdk_utils/iam.partnercentral.PartnercentralDatasetArnProps"></a>
+
+Properties for building a Dataset ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.partnercentral.PartnercentralDatasetArnProps.Initializer"></a>
+
+```typescript
+import { partnercentral } from '@cdk_utils/iam'
+
+const partnercentralDatasetArnProps: partnercentral.PartnercentralDatasetArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralDatasetArnProps.property.catalog">catalog</a></code> | <code>string</code> | The Catalog component of the ARN. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralDatasetArnProps.property.datasetName">datasetName</a></code> | <code>string</code> | The DatasetName component of the ARN. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralDatasetArnProps.property.domain">domain</a></code> | <code>string</code> | The Domain component of the ARN. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralDatasetArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralDatasetArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+
+---
+
+##### `catalog`<sup>Required</sup> <a name="catalog" id="@cdk_utils/iam.partnercentral.PartnercentralDatasetArnProps.property.catalog"></a>
+
+```typescript
+public readonly catalog: string;
+```
+
+- *Type:* string
+
+The Catalog component of the ARN.
+
+---
+
+##### `datasetName`<sup>Required</sup> <a name="datasetName" id="@cdk_utils/iam.partnercentral.PartnercentralDatasetArnProps.property.datasetName"></a>
+
+```typescript
+public readonly datasetName: string;
+```
+
+- *Type:* string
+
+The DatasetName component of the ARN.
+
+---
+
+##### `domain`<sup>Required</sup> <a name="domain" id="@cdk_utils/iam.partnercentral.PartnercentralDatasetArnProps.property.domain"></a>
+
+```typescript
+public readonly domain: string;
+```
+
+- *Type:* string
+
+The Domain component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.partnercentral.PartnercentralDatasetArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.partnercentral.PartnercentralDatasetArnProps.property.partition"></a>
 
 ```typescript
 public readonly partition: string;
@@ -4142,6 +4488,12 @@ new partnercentral.PartnercentralActions()
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.actionGetBenefitAllocation">actionGetBenefitAllocation</a></code> | <code>string</code> | [Read] partnercentral:GetBenefitAllocation. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.actionGetBenefitApplication">actionGetBenefitApplication</a></code> | <code>string</code> | [Read] partnercentral:GetBenefitApplication. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.actionGetBusinessPlan">actionGetBusinessPlan</a></code> | <code>string</code> | [Read] partnercentral:GetBusinessPlan. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.actionGetBusinessPlanAttachment">actionGetBusinessPlanAttachment</a></code> | <code>string</code> | [Read] partnercentral:GetBusinessPlanAttachment. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.actionGetBusinessPlanAttachmentImportTask">actionGetBusinessPlanAttachmentImportTask</a></code> | <code>string</code> | [Read] partnercentral:GetBusinessPlanAttachmentImportTask. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.actionGetBusinessPlanItem">actionGetBusinessPlanItem</a></code> | <code>string</code> | [Read] partnercentral:GetBusinessPlanItem. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.actionGetBusinessPlanItemSchema">actionGetBusinessPlanItemSchema</a></code> | <code>string</code> | [Read] partnercentral:GetBusinessPlanItemSchema. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.actionGetBusinessPlanSettings">actionGetBusinessPlanSettings</a></code> | <code>string</code> | [Read] partnercentral:GetBusinessPlanSettings. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.actionGetBusinessPlanSubmissionTask">actionGetBusinessPlanSubmissionTask</a></code> | <code>string</code> | [Read] partnercentral:GetBusinessPlanSubmissionTask. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.actionGetCollaborationChannel">actionGetCollaborationChannel</a></code> | <code>string</code> | [Read] partnercentral:GetCollaborationChannel. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.actionGetConnection">actionGetConnection</a></code> | <code>string</code> | [Read] partnercentral:GetConnection. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.actionGetConnectionInvitation">actionGetConnectionInvitation</a></code> | <code>string</code> | [Read] partnercentral:GetConnectionInvitation. |
@@ -4156,6 +4508,7 @@ new partnercentral.PartnercentralActions()
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.actionGetPartnerCentralContentMetadata">actionGetPartnerCentralContentMetadata</a></code> | <code>string</code> | [Read] partnercentral:GetPartnerCentralContentMetadata. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.actionGetPartnerDashboard">actionGetPartnerDashboard</a></code> | <code>string</code> | [Read] partnercentral:GetPartnerDashboard. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.actionGetPartnerProfile">actionGetPartnerProfile</a></code> | <code>string</code> | [Read] partnercentral:GetPartnerProfile. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.actionGetPartnerReportingData">actionGetPartnerReportingData</a></code> | <code>string</code> | [Read] partnercentral:GetPartnerReportingData. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.actionGetProfileUpdateTask">actionGetProfileUpdateTask</a></code> | <code>string</code> | [Read] partnercentral:GetProfileUpdateTask. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.actionGetProfileVisibility">actionGetProfileVisibility</a></code> | <code>string</code> | [Read] partnercentral:GetProfileVisibility. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.actionGetProgramManagementAccount">actionGetProgramManagementAccount</a></code> | <code>string</code> | [Read] partnercentral:GetProgramManagementAccount. |
@@ -4180,14 +4533,18 @@ new partnercentral.PartnercentralActions()
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.AssignOpportunity">AssignOpportunity</a></code> | <code>string</code> | [Write] partnercentral:AssignOpportunity. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.AssociateAwsTrainingCertificationEmailDomain">AssociateAwsTrainingCertificationEmailDomain</a></code> | <code>string</code> | [Write] partnercentral:AssociateAwsTrainingCertificationEmailDomain. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.AssociateBenefitApplicationResource">AssociateBenefitApplicationResource</a></code> | <code>string</code> | [Write] partnercentral:AssociateBenefitApplicationResource. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.AssociateBusinessPlan">AssociateBusinessPlan</a></code> | <code>string</code> | [Write] partnercentral:AssociateBusinessPlan. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.AssociateOpportunity">AssociateOpportunity</a></code> | <code>string</code> | [Write] partnercentral:AssociateOpportunity. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.CancelBenefitApplication">CancelBenefitApplication</a></code> | <code>string</code> | [Write] partnercentral:CancelBenefitApplication. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.CancelBusinessPlan">CancelBusinessPlan</a></code> | <code>string</code> | [Write] partnercentral:CancelBusinessPlan. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.CancelBusinessPlanSubmissionTask">CancelBusinessPlanSubmissionTask</a></code> | <code>string</code> | [Write] partnercentral:CancelBusinessPlanSubmissionTask. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.CancelChannelHandshake">CancelChannelHandshake</a></code> | <code>string</code> | [Write] partnercentral:CancelChannelHandshake. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.CancelConnection">CancelConnection</a></code> | <code>string</code> | [Write] partnercentral:CancelConnection. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.CancelConnectionInvitation">CancelConnectionInvitation</a></code> | <code>string</code> | [Write] partnercentral:CancelConnectionInvitation. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.CancelProfileUpdateTask">CancelProfileUpdateTask</a></code> | <code>string</code> | [Write] partnercentral:CancelProfileUpdateTask. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.CreateBenefitApplication">CreateBenefitApplication</a></code> | <code>string</code> | [Write] partnercentral:CreateBenefitApplication. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.CreateBusinessPlan">CreateBusinessPlan</a></code> | <code>string</code> | [Write] partnercentral:CreateBusinessPlan. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.CreateBusinessPlanItem">CreateBusinessPlanItem</a></code> | <code>string</code> | [Write] partnercentral:CreateBusinessPlanItem. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.CreateChannelHandshake">CreateChannelHandshake</a></code> | <code>string</code> | [Write] partnercentral:CreateChannelHandshake. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.CreateCollaborationChannelMembers">CreateCollaborationChannelMembers</a></code> | <code>string</code> | [Write] partnercentral:CreateCollaborationChannelMembers. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.CreateCollaborationChannelRequest">CreateCollaborationChannelRequest</a></code> | <code>string</code> | [Write] partnercentral:CreateCollaborationChannelRequest. |
@@ -4204,17 +4561,26 @@ new partnercentral.PartnercentralActions()
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.CreateResourceSnapshot">CreateResourceSnapshot</a></code> | <code>string</code> | [Write] partnercentral:CreateResourceSnapshot. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.CreateResourceSnapshotJob">CreateResourceSnapshotJob</a></code> | <code>string</code> | [Write] partnercentral:CreateResourceSnapshotJob. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.CreateRevenueAttribution">CreateRevenueAttribution</a></code> | <code>string</code> | [Write] partnercentral:CreateRevenueAttribution. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.DeleteBusinessPlanAttachment">DeleteBusinessPlanAttachment</a></code> | <code>string</code> | [Write] partnercentral:DeleteBusinessPlanAttachment. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.DeleteBusinessPlanItem">DeleteBusinessPlanItem</a></code> | <code>string</code> | [Write] partnercentral:DeleteBusinessPlanItem. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.DeleteProgramManagementAccount">DeleteProgramManagementAccount</a></code> | <code>string</code> | [Write] partnercentral:DeleteProgramManagementAccount. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.DeleteRelationship">DeleteRelationship</a></code> | <code>string</code> | [Write] partnercentral:DeleteRelationship. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.DeleteResourceSnapshotJob">DeleteResourceSnapshotJob</a></code> | <code>string</code> | [Write] partnercentral:DeleteResourceSnapshotJob. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.DisassociateAwsTrainingCertificationEmailDomain">DisassociateAwsTrainingCertificationEmailDomain</a></code> | <code>string</code> | [Write] partnercentral:DisassociateAwsTrainingCertificationEmailDomain. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.DisassociateBenefitApplicationResource">DisassociateBenefitApplicationResource</a></code> | <code>string</code> | [Write] partnercentral:DisassociateBenefitApplicationResource. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.DisassociateBusinessPlan">DisassociateBusinessPlan</a></code> | <code>string</code> | [Write] partnercentral:DisassociateBusinessPlan. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.DisassociateOpportunity">DisassociateOpportunity</a></code> | <code>string</code> | [Write] partnercentral:DisassociateOpportunity. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.EnrollInPartnerPath">EnrollInPartnerPath</a></code> | <code>string</code> | [Write] partnercentral:EnrollInPartnerPath. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.ListBenefitAllocations">ListBenefitAllocations</a></code> | <code>string</code> | [List] partnercentral:ListBenefitAllocations. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.ListBenefitApplications">ListBenefitApplications</a></code> | <code>string</code> | [List] partnercentral:ListBenefitApplications. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.ListBenefits">ListBenefits</a></code> | <code>string</code> | [List] partnercentral:ListBenefits. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.ListBusinessPlanAssociations">ListBusinessPlanAssociations</a></code> | <code>string</code> | [List] partnercentral:ListBusinessPlanAssociations. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.ListBusinessPlanAttachmentImportTasks">ListBusinessPlanAttachmentImportTasks</a></code> | <code>string</code> | [List] partnercentral:ListBusinessPlanAttachmentImportTasks. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.ListBusinessPlanAttachments">ListBusinessPlanAttachments</a></code> | <code>string</code> | [List] partnercentral:ListBusinessPlanAttachments. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.ListBusinessPlanHistory">ListBusinessPlanHistory</a></code> | <code>string</code> | [List] partnercentral:ListBusinessPlanHistory. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.ListBusinessPlanItems">ListBusinessPlanItems</a></code> | <code>string</code> | [List] partnercentral:ListBusinessPlanItems. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.ListBusinessPlans">ListBusinessPlans</a></code> | <code>string</code> | [List] partnercentral:ListBusinessPlans. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.ListBusinessPlanSubmissionTasks">ListBusinessPlanSubmissionTasks</a></code> | <code>string</code> | [List] partnercentral:ListBusinessPlanSubmissionTasks. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.ListChannelHandshakes">ListChannelHandshakes</a></code> | <code>string</code> | [List] partnercentral:ListChannelHandshakes. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.ListCollaborationChannels">ListCollaborationChannels</a></code> | <code>string</code> | [List] partnercentral:ListCollaborationChannels. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.ListConnectionInvitations">ListConnectionInvitations</a></code> | <code>string</code> | [List] partnercentral:ListConnectionInvitations. |
@@ -4243,6 +4609,7 @@ new partnercentral.PartnercentralActions()
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [Read] partnercentral:ListTagsForResource. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.PutAllianceLeadContact">PutAllianceLeadContact</a></code> | <code>string</code> | [Write] partnercentral:PutAllianceLeadContact. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.PutBusinessPlan">PutBusinessPlan</a></code> | <code>string</code> | [Write] partnercentral:PutBusinessPlan. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.PutBusinessPlanSettings">PutBusinessPlanSettings</a></code> | <code>string</code> | [Write] partnercentral:PutBusinessPlanSettings. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.PutProfileVisibility">PutProfileVisibility</a></code> | <code>string</code> | [Write] partnercentral:PutProfileVisibility. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.PutSellingSystemSettings">PutSellingSystemSettings</a></code> | <code>string</code> | [Write] partnercentral:PutSellingSystemSettings. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.RecallBenefitApplication">RecallBenefitApplication</a></code> | <code>string</code> | [Write] partnercentral:RecallBenefitApplication. |
@@ -4254,6 +4621,8 @@ new partnercentral.PartnercentralActions()
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.SearchPartnerProfiles">SearchPartnerProfiles</a></code> | <code>string</code> | [List] partnercentral:SearchPartnerProfiles. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.SendEmailVerificationCode">SendEmailVerificationCode</a></code> | <code>string</code> | [Write] partnercentral:SendEmailVerificationCode. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.StartBusinessPlanAttachmentImportTask">StartBusinessPlanAttachmentImportTask</a></code> | <code>string</code> | [Write] partnercentral:StartBusinessPlanAttachmentImportTask. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.StartBusinessPlanSubmissionTask">StartBusinessPlanSubmissionTask</a></code> | <code>string</code> | [Write] partnercentral:StartBusinessPlanSubmissionTask. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.StartEngagementByAcceptingInvitationTask">StartEngagementByAcceptingInvitationTask</a></code> | <code>string</code> | [Write] partnercentral:StartEngagementByAcceptingInvitationTask. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.StartEngagementFromOpportunityTask">StartEngagementFromOpportunityTask</a></code> | <code>string</code> | [Write] partnercentral:StartEngagementFromOpportunityTask. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.StartOpportunityFromEngagementTask">StartOpportunityFromEngagementTask</a></code> | <code>string</code> | [Write] partnercentral:StartOpportunityFromEngagementTask. |
@@ -4270,6 +4639,8 @@ new partnercentral.PartnercentralActions()
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] partnercentral:TagResource. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] partnercentral:UntagResource. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.UpdateBenefitApplication">UpdateBenefitApplication</a></code> | <code>string</code> | [Write] partnercentral:UpdateBenefitApplication. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.UpdateBusinessPlan">UpdateBusinessPlan</a></code> | <code>string</code> | [Write] partnercentral:UpdateBusinessPlan. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.UpdateBusinessPlanItem">UpdateBusinessPlanItem</a></code> | <code>string</code> | [Write] partnercentral:UpdateBusinessPlanItem. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.UpdateConnectionPreferences">UpdateConnectionPreferences</a></code> | <code>string</code> | [Write] partnercentral:UpdateConnectionPreferences. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.UpdateEngagementContext">UpdateEngagementContext</a></code> | <code>string</code> | [Write] partnercentral:UpdateEngagementContext. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralActions.property.UpdateMarketplaceRevenueShareAllocation">UpdateMarketplaceRevenueShareAllocation</a></code> | <code>string</code> | [Write] partnercentral:UpdateMarketplaceRevenueShareAllocation. |
@@ -4386,6 +4757,78 @@ public readonly actionGetBusinessPlan: string;
 - *Type:* string
 
 [Read] partnercentral:GetBusinessPlan.
+
+---
+
+##### `actionGetBusinessPlanAttachment`<sup>Required</sup> <a name="actionGetBusinessPlanAttachment" id="@cdk_utils/iam.partnercentral.PartnercentralActions.property.actionGetBusinessPlanAttachment"></a>
+
+```typescript
+public readonly actionGetBusinessPlanAttachment: string;
+```
+
+- *Type:* string
+
+[Read] partnercentral:GetBusinessPlanAttachment.
+
+---
+
+##### `actionGetBusinessPlanAttachmentImportTask`<sup>Required</sup> <a name="actionGetBusinessPlanAttachmentImportTask" id="@cdk_utils/iam.partnercentral.PartnercentralActions.property.actionGetBusinessPlanAttachmentImportTask"></a>
+
+```typescript
+public readonly actionGetBusinessPlanAttachmentImportTask: string;
+```
+
+- *Type:* string
+
+[Read] partnercentral:GetBusinessPlanAttachmentImportTask.
+
+---
+
+##### `actionGetBusinessPlanItem`<sup>Required</sup> <a name="actionGetBusinessPlanItem" id="@cdk_utils/iam.partnercentral.PartnercentralActions.property.actionGetBusinessPlanItem"></a>
+
+```typescript
+public readonly actionGetBusinessPlanItem: string;
+```
+
+- *Type:* string
+
+[Read] partnercentral:GetBusinessPlanItem.
+
+---
+
+##### `actionGetBusinessPlanItemSchema`<sup>Required</sup> <a name="actionGetBusinessPlanItemSchema" id="@cdk_utils/iam.partnercentral.PartnercentralActions.property.actionGetBusinessPlanItemSchema"></a>
+
+```typescript
+public readonly actionGetBusinessPlanItemSchema: string;
+```
+
+- *Type:* string
+
+[Read] partnercentral:GetBusinessPlanItemSchema.
+
+---
+
+##### `actionGetBusinessPlanSettings`<sup>Required</sup> <a name="actionGetBusinessPlanSettings" id="@cdk_utils/iam.partnercentral.PartnercentralActions.property.actionGetBusinessPlanSettings"></a>
+
+```typescript
+public readonly actionGetBusinessPlanSettings: string;
+```
+
+- *Type:* string
+
+[Read] partnercentral:GetBusinessPlanSettings.
+
+---
+
+##### `actionGetBusinessPlanSubmissionTask`<sup>Required</sup> <a name="actionGetBusinessPlanSubmissionTask" id="@cdk_utils/iam.partnercentral.PartnercentralActions.property.actionGetBusinessPlanSubmissionTask"></a>
+
+```typescript
+public readonly actionGetBusinessPlanSubmissionTask: string;
+```
+
+- *Type:* string
+
+[Read] partnercentral:GetBusinessPlanSubmissionTask.
 
 ---
 
@@ -4554,6 +4997,18 @@ public readonly actionGetPartnerProfile: string;
 - *Type:* string
 
 [Read] partnercentral:GetPartnerProfile.
+
+---
+
+##### `actionGetPartnerReportingData`<sup>Required</sup> <a name="actionGetPartnerReportingData" id="@cdk_utils/iam.partnercentral.PartnercentralActions.property.actionGetPartnerReportingData"></a>
+
+```typescript
+public readonly actionGetPartnerReportingData: string;
+```
+
+- *Type:* string
+
+[Read] partnercentral:GetPartnerReportingData.
 
 ---
 
@@ -4845,6 +5300,18 @@ public readonly AssociateBenefitApplicationResource: string;
 
 ---
 
+##### `AssociateBusinessPlan`<sup>Required</sup> <a name="AssociateBusinessPlan" id="@cdk_utils/iam.partnercentral.PartnercentralActions.property.AssociateBusinessPlan"></a>
+
+```typescript
+public readonly AssociateBusinessPlan: string;
+```
+
+- *Type:* string
+
+[Write] partnercentral:AssociateBusinessPlan.
+
+---
+
 ##### `AssociateOpportunity`<sup>Required</sup> <a name="AssociateOpportunity" id="@cdk_utils/iam.partnercentral.PartnercentralActions.property.AssociateOpportunity"></a>
 
 ```typescript
@@ -4866,6 +5333,30 @@ public readonly CancelBenefitApplication: string;
 - *Type:* string
 
 [Write] partnercentral:CancelBenefitApplication.
+
+---
+
+##### `CancelBusinessPlan`<sup>Required</sup> <a name="CancelBusinessPlan" id="@cdk_utils/iam.partnercentral.PartnercentralActions.property.CancelBusinessPlan"></a>
+
+```typescript
+public readonly CancelBusinessPlan: string;
+```
+
+- *Type:* string
+
+[Write] partnercentral:CancelBusinessPlan.
+
+---
+
+##### `CancelBusinessPlanSubmissionTask`<sup>Required</sup> <a name="CancelBusinessPlanSubmissionTask" id="@cdk_utils/iam.partnercentral.PartnercentralActions.property.CancelBusinessPlanSubmissionTask"></a>
+
+```typescript
+public readonly CancelBusinessPlanSubmissionTask: string;
+```
+
+- *Type:* string
+
+[Write] partnercentral:CancelBusinessPlanSubmissionTask.
 
 ---
 
@@ -4938,6 +5429,18 @@ public readonly CreateBusinessPlan: string;
 - *Type:* string
 
 [Write] partnercentral:CreateBusinessPlan.
+
+---
+
+##### `CreateBusinessPlanItem`<sup>Required</sup> <a name="CreateBusinessPlanItem" id="@cdk_utils/iam.partnercentral.PartnercentralActions.property.CreateBusinessPlanItem"></a>
+
+```typescript
+public readonly CreateBusinessPlanItem: string;
+```
+
+- *Type:* string
+
+[Write] partnercentral:CreateBusinessPlanItem.
 
 ---
 
@@ -5133,6 +5636,30 @@ public readonly CreateRevenueAttribution: string;
 
 ---
 
+##### `DeleteBusinessPlanAttachment`<sup>Required</sup> <a name="DeleteBusinessPlanAttachment" id="@cdk_utils/iam.partnercentral.PartnercentralActions.property.DeleteBusinessPlanAttachment"></a>
+
+```typescript
+public readonly DeleteBusinessPlanAttachment: string;
+```
+
+- *Type:* string
+
+[Write] partnercentral:DeleteBusinessPlanAttachment.
+
+---
+
+##### `DeleteBusinessPlanItem`<sup>Required</sup> <a name="DeleteBusinessPlanItem" id="@cdk_utils/iam.partnercentral.PartnercentralActions.property.DeleteBusinessPlanItem"></a>
+
+```typescript
+public readonly DeleteBusinessPlanItem: string;
+```
+
+- *Type:* string
+
+[Write] partnercentral:DeleteBusinessPlanItem.
+
+---
+
 ##### `DeleteProgramManagementAccount`<sup>Required</sup> <a name="DeleteProgramManagementAccount" id="@cdk_utils/iam.partnercentral.PartnercentralActions.property.DeleteProgramManagementAccount"></a>
 
 ```typescript
@@ -5190,6 +5717,18 @@ public readonly DisassociateBenefitApplicationResource: string;
 - *Type:* string
 
 [Write] partnercentral:DisassociateBenefitApplicationResource.
+
+---
+
+##### `DisassociateBusinessPlan`<sup>Required</sup> <a name="DisassociateBusinessPlan" id="@cdk_utils/iam.partnercentral.PartnercentralActions.property.DisassociateBusinessPlan"></a>
+
+```typescript
+public readonly DisassociateBusinessPlan: string;
+```
+
+- *Type:* string
+
+[Write] partnercentral:DisassociateBusinessPlan.
 
 ---
 
@@ -5253,6 +5792,66 @@ public readonly ListBenefits: string;
 
 ---
 
+##### `ListBusinessPlanAssociations`<sup>Required</sup> <a name="ListBusinessPlanAssociations" id="@cdk_utils/iam.partnercentral.PartnercentralActions.property.ListBusinessPlanAssociations"></a>
+
+```typescript
+public readonly ListBusinessPlanAssociations: string;
+```
+
+- *Type:* string
+
+[List] partnercentral:ListBusinessPlanAssociations.
+
+---
+
+##### `ListBusinessPlanAttachmentImportTasks`<sup>Required</sup> <a name="ListBusinessPlanAttachmentImportTasks" id="@cdk_utils/iam.partnercentral.PartnercentralActions.property.ListBusinessPlanAttachmentImportTasks"></a>
+
+```typescript
+public readonly ListBusinessPlanAttachmentImportTasks: string;
+```
+
+- *Type:* string
+
+[List] partnercentral:ListBusinessPlanAttachmentImportTasks.
+
+---
+
+##### `ListBusinessPlanAttachments`<sup>Required</sup> <a name="ListBusinessPlanAttachments" id="@cdk_utils/iam.partnercentral.PartnercentralActions.property.ListBusinessPlanAttachments"></a>
+
+```typescript
+public readonly ListBusinessPlanAttachments: string;
+```
+
+- *Type:* string
+
+[List] partnercentral:ListBusinessPlanAttachments.
+
+---
+
+##### `ListBusinessPlanHistory`<sup>Required</sup> <a name="ListBusinessPlanHistory" id="@cdk_utils/iam.partnercentral.PartnercentralActions.property.ListBusinessPlanHistory"></a>
+
+```typescript
+public readonly ListBusinessPlanHistory: string;
+```
+
+- *Type:* string
+
+[List] partnercentral:ListBusinessPlanHistory.
+
+---
+
+##### `ListBusinessPlanItems`<sup>Required</sup> <a name="ListBusinessPlanItems" id="@cdk_utils/iam.partnercentral.PartnercentralActions.property.ListBusinessPlanItems"></a>
+
+```typescript
+public readonly ListBusinessPlanItems: string;
+```
+
+- *Type:* string
+
+[List] partnercentral:ListBusinessPlanItems.
+
+---
+
 ##### `ListBusinessPlans`<sup>Required</sup> <a name="ListBusinessPlans" id="@cdk_utils/iam.partnercentral.PartnercentralActions.property.ListBusinessPlans"></a>
 
 ```typescript
@@ -5262,6 +5861,18 @@ public readonly ListBusinessPlans: string;
 - *Type:* string
 
 [List] partnercentral:ListBusinessPlans.
+
+---
+
+##### `ListBusinessPlanSubmissionTasks`<sup>Required</sup> <a name="ListBusinessPlanSubmissionTasks" id="@cdk_utils/iam.partnercentral.PartnercentralActions.property.ListBusinessPlanSubmissionTasks"></a>
+
+```typescript
+public readonly ListBusinessPlanSubmissionTasks: string;
+```
+
+- *Type:* string
+
+[List] partnercentral:ListBusinessPlanSubmissionTasks.
 
 ---
 
@@ -5601,6 +6212,18 @@ public readonly PutBusinessPlan: string;
 
 ---
 
+##### `PutBusinessPlanSettings`<sup>Required</sup> <a name="PutBusinessPlanSettings" id="@cdk_utils/iam.partnercentral.PartnercentralActions.property.PutBusinessPlanSettings"></a>
+
+```typescript
+public readonly PutBusinessPlanSettings: string;
+```
+
+- *Type:* string
+
+[Write] partnercentral:PutBusinessPlanSettings.
+
+---
+
 ##### `PutProfileVisibility`<sup>Required</sup> <a name="PutProfileVisibility" id="@cdk_utils/iam.partnercentral.PartnercentralActions.property.PutProfileVisibility"></a>
 
 ```typescript
@@ -5730,6 +6353,30 @@ public readonly SERVICE_PREFIX: string;
 - *Type:* string
 
 The IAM service prefix.
+
+---
+
+##### `StartBusinessPlanAttachmentImportTask`<sup>Required</sup> <a name="StartBusinessPlanAttachmentImportTask" id="@cdk_utils/iam.partnercentral.PartnercentralActions.property.StartBusinessPlanAttachmentImportTask"></a>
+
+```typescript
+public readonly StartBusinessPlanAttachmentImportTask: string;
+```
+
+- *Type:* string
+
+[Write] partnercentral:StartBusinessPlanAttachmentImportTask.
+
+---
+
+##### `StartBusinessPlanSubmissionTask`<sup>Required</sup> <a name="StartBusinessPlanSubmissionTask" id="@cdk_utils/iam.partnercentral.PartnercentralActions.property.StartBusinessPlanSubmissionTask"></a>
+
+```typescript
+public readonly StartBusinessPlanSubmissionTask: string;
+```
+
+- *Type:* string
+
+[Write] partnercentral:StartBusinessPlanSubmissionTask.
 
 ---
 
@@ -5925,6 +6572,30 @@ public readonly UpdateBenefitApplication: string;
 
 ---
 
+##### `UpdateBusinessPlan`<sup>Required</sup> <a name="UpdateBusinessPlan" id="@cdk_utils/iam.partnercentral.PartnercentralActions.property.UpdateBusinessPlan"></a>
+
+```typescript
+public readonly UpdateBusinessPlan: string;
+```
+
+- *Type:* string
+
+[Write] partnercentral:UpdateBusinessPlan.
+
+---
+
+##### `UpdateBusinessPlanItem`<sup>Required</sup> <a name="UpdateBusinessPlanItem" id="@cdk_utils/iam.partnercentral.PartnercentralActions.property.UpdateBusinessPlanItem"></a>
+
+```typescript
+public readonly UpdateBusinessPlanItem: string;
+```
+
+- *Type:* string
+
+[Write] partnercentral:UpdateBusinessPlanItem.
+
+---
+
 ##### `UpdateConnectionPreferences`<sup>Required</sup> <a name="UpdateConnectionPreferences" id="@cdk_utils/iam.partnercentral.PartnercentralActions.property.UpdateConnectionPreferences"></a>
 
 ```typescript
@@ -6043,6 +6714,9 @@ new partnercentral.PartnercentralConditions()
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.allowAWSEngagement">allowAWSEngagement</a></code> | Generates a condition block for `partnercentral:AllowAwsEngagement`. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.businessPlanItemStage">businessPlanItemStage</a></code> | Generates a condition block for `partnercentral:BusinessPlanItemStage`. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.businessPlanItemType">businessPlanItemType</a></code> | Generates a condition block for `partnercentral:BusinessPlanItemType`. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.catalog">catalog</a></code> | Generates a condition block for `partnercentral:Catalog`. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.channelHandshakeType">channelHandshakeType</a></code> | Generates a condition block for `partnercentral:ChannelHandshakeType`. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.fulfillmentTypes">fulfillmentTypes</a></code> | Generates a condition block for `partnercentral:FulfillmentTypes`. |
@@ -6052,6 +6726,54 @@ new partnercentral.PartnercentralConditions()
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.resourceTag">resourceTag</a></code> | Generates a condition block for `aws:ResourceTag/${TagKey}`. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.tagKeys">tagKeys</a></code> | Generates a condition block for `aws:TagKeys`. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.verificationType">verificationType</a></code> | Generates a condition block for `partnercentral:VerificationType`. |
+
+---
+
+##### `allowAWSEngagement` <a name="allowAWSEngagement" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.allowAWSEngagement"></a>
+
+```typescript
+import { partnercentral } from '@cdk_utils/iam'
+
+partnercentral.PartnercentralConditions.allowAWSEngagement(value: string)
+```
+
+Generates a condition block for `partnercentral:AllowAwsEngagement`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.allowAWSEngagement.parameter.value"></a>
+
+- *Type:* string
+
+---
+
+##### `businessPlanItemStage` <a name="businessPlanItemStage" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.businessPlanItemStage"></a>
+
+```typescript
+import { partnercentral } from '@cdk_utils/iam'
+
+partnercentral.PartnercentralConditions.businessPlanItemStage(value: string)
+```
+
+Generates a condition block for `partnercentral:BusinessPlanItemStage`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.businessPlanItemStage.parameter.value"></a>
+
+- *Type:* string
+
+---
+
+##### `businessPlanItemType` <a name="businessPlanItemType" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.businessPlanItemType"></a>
+
+```typescript
+import { partnercentral } from '@cdk_utils/iam'
+
+partnercentral.PartnercentralConditions.businessPlanItemType(value: string)
+```
+
+Generates a condition block for `partnercentral:BusinessPlanItemType`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.businessPlanItemType.parameter.value"></a>
+
+- *Type:* string
 
 ---
 
@@ -6212,6 +6934,13 @@ Generates a condition block for `partnercentral:VerificationType`.
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.actionGetBenefitAllocationConditionKeys">actionGetBenefitAllocationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetBenefitAllocation action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.actionGetBenefitApplicationConditionKeys">actionGetBenefitApplicationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetBenefitApplication action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.actionGetBenefitConditionKeys">actionGetBenefitConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetBenefit action. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.actionGetBusinessPlanAttachmentConditionKeys">actionGetBusinessPlanAttachmentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetBusinessPlanAttachment action. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.actionGetBusinessPlanAttachmentImportTaskConditionKeys">actionGetBusinessPlanAttachmentImportTaskConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetBusinessPlanAttachmentImportTask action. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.actionGetBusinessPlanConditionKeys">actionGetBusinessPlanConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetBusinessPlan action. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.actionGetBusinessPlanItemConditionKeys">actionGetBusinessPlanItemConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetBusinessPlanItem action. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.actionGetBusinessPlanItemSchemaConditionKeys">actionGetBusinessPlanItemSchemaConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetBusinessPlanItemSchema action. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.actionGetBusinessPlanSettingsConditionKeys">actionGetBusinessPlanSettingsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetBusinessPlanSettings action. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.actionGetBusinessPlanSubmissionTaskConditionKeys">actionGetBusinessPlanSubmissionTaskConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetBusinessPlanSubmissionTask action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.actionGetConnectionConditionKeys">actionGetConnectionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetConnection action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.actionGetConnectionInvitationConditionKeys">actionGetConnectionInvitationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetConnectionInvitation action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.actionGetConnectionPreferencesConditionKeys">actionGetConnectionPreferencesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetConnectionPreferences action. |
@@ -6224,6 +6953,7 @@ Generates a condition block for `partnercentral:VerificationType`.
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.actionGetPartnerCentralContentMetadataConditionKeys">actionGetPartnerCentralContentMetadataConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetPartnerCentralContentMetadata action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.actionGetPartnerConditionKeys">actionGetPartnerConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetPartner action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.actionGetPartnerDashboardConditionKeys">actionGetPartnerDashboardConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetPartnerDashboard action. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.actionGetPartnerReportingDataConditionKeys">actionGetPartnerReportingDataConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetPartnerReportingData action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.actionGetProfileUpdateTaskConditionKeys">actionGetProfileUpdateTaskConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetProfileUpdateTask action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.actionGetProfileVisibilityConditionKeys">actionGetProfileVisibilityConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetProfileVisibility action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.actionGetProgramManagementAccountConditionKeys">actionGetProgramManagementAccountConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetProgramManagementAccount action. |
@@ -6239,15 +6969,21 @@ Generates a condition block for `partnercentral:VerificationType`.
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.actionGetRevenueAttributionConditionKeys">actionGetRevenueAttributionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetRevenueAttribution action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.actionGetSellingSystemSettingsConditionKeys">actionGetSellingSystemSettingsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetSellingSystemSettings action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.actionGetVerificationConditionKeys">actionGetVerificationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetVerification action. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.ALLOW_AWS_ENGAGEMENT">ALLOW_AWS_ENGAGEMENT</a></code> | <code>string</code> | Condition key: partnercentral:AllowAwsEngagement (String). |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.AmendBenefitApplicationConditionKeys">AmendBenefitApplicationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the AmendBenefitApplication action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.AssignOpportunityConditionKeys">AssignOpportunityConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the AssignOpportunity action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.AssociateAwsTrainingCertificationEmailDomainConditionKeys">AssociateAwsTrainingCertificationEmailDomainConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the AssociateAwsTrainingCertificationEmailDomain action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.AssociateBenefitApplicationResourceConditionKeys">AssociateBenefitApplicationResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the AssociateBenefitApplicationResource action. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.AssociateBusinessPlanConditionKeys">AssociateBusinessPlanConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the AssociateBusinessPlan action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.AssociateOpportunityConditionKeys">AssociateOpportunityConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the AssociateOpportunity action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.AWS_REQUEST_TAG">AWS_REQUEST_TAG</a></code> | <code>string</code> | Condition key: aws:RequestTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.AWS_RESOURCE_TAG">AWS_RESOURCE_TAG</a></code> | <code>string</code> | Condition key: aws:ResourceTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.AWS_TAG_KEYS">AWS_TAG_KEYS</a></code> | <code>string</code> | Condition key: aws:TagKeys (ArrayOfString). |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.BUSINESS_PLAN_ITEM_STAGE">BUSINESS_PLAN_ITEM_STAGE</a></code> | <code>string</code> | Condition key: partnercentral:BusinessPlanItemStage (String). |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.BUSINESS_PLAN_ITEM_TYPE">BUSINESS_PLAN_ITEM_TYPE</a></code> | <code>string</code> | Condition key: partnercentral:BusinessPlanItemType (String). |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.CancelBenefitApplicationConditionKeys">CancelBenefitApplicationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CancelBenefitApplication action. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.CancelBusinessPlanConditionKeys">CancelBusinessPlanConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CancelBusinessPlan action. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.CancelBusinessPlanSubmissionTaskConditionKeys">CancelBusinessPlanSubmissionTaskConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CancelBusinessPlanSubmissionTask action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.CancelChannelHandshakeConditionKeys">CancelChannelHandshakeConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CancelChannelHandshake action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.CancelConnectionConditionKeys">CancelConnectionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CancelConnection action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.CancelConnectionInvitationConditionKeys">CancelConnectionInvitationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CancelConnectionInvitation action. |
@@ -6255,6 +6991,8 @@ Generates a condition block for `partnercentral:VerificationType`.
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.CATALOG">CATALOG</a></code> | <code>string</code> | Condition key: partnercentral:Catalog (String). |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.CHANNEL_HANDSHAKE_TYPE">CHANNEL_HANDSHAKE_TYPE</a></code> | <code>string</code> | Condition key: partnercentral:ChannelHandshakeType (String). |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.CreateBenefitApplicationConditionKeys">CreateBenefitApplicationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateBenefitApplication action. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.CreateBusinessPlanConditionKeys">CreateBusinessPlanConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateBusinessPlan action. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.CreateBusinessPlanItemConditionKeys">CreateBusinessPlanItemConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateBusinessPlanItem action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.CreateChannelHandshakeConditionKeys">CreateChannelHandshakeConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateChannelHandshake action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.CreateConnectionInvitationConditionKeys">CreateConnectionInvitationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateConnectionInvitation action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.CreateEngagementConditionKeys">CreateEngagementConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateEngagement action. |
@@ -6269,16 +7007,26 @@ Generates a condition block for `partnercentral:VerificationType`.
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.CreateResourceSnapshotConditionKeys">CreateResourceSnapshotConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateResourceSnapshot action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.CreateResourceSnapshotJobConditionKeys">CreateResourceSnapshotJobConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateResourceSnapshotJob action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.CreateRevenueAttributionConditionKeys">CreateRevenueAttributionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateRevenueAttribution action. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.DeleteBusinessPlanAttachmentConditionKeys">DeleteBusinessPlanAttachmentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteBusinessPlanAttachment action. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.DeleteBusinessPlanItemConditionKeys">DeleteBusinessPlanItemConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteBusinessPlanItem action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.DeleteProgramManagementAccountConditionKeys">DeleteProgramManagementAccountConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteProgramManagementAccount action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.DeleteRelationshipConditionKeys">DeleteRelationshipConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteRelationship action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.DeleteResourceSnapshotJobConditionKeys">DeleteResourceSnapshotJobConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteResourceSnapshotJob action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.DisassociateAwsTrainingCertificationEmailDomainConditionKeys">DisassociateAwsTrainingCertificationEmailDomainConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DisassociateAwsTrainingCertificationEmailDomain action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.DisassociateBenefitApplicationResourceConditionKeys">DisassociateBenefitApplicationResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DisassociateBenefitApplicationResource action. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.DisassociateBusinessPlanConditionKeys">DisassociateBusinessPlanConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DisassociateBusinessPlan action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.DisassociateOpportunityConditionKeys">DisassociateOpportunityConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DisassociateOpportunity action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.FULFILLMENT_TYPES">FULFILLMENT_TYPES</a></code> | <code>string</code> | Condition key: partnercentral:FulfillmentTypes (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.ListBenefitAllocationsConditionKeys">ListBenefitAllocationsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListBenefitAllocations action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.ListBenefitApplicationsConditionKeys">ListBenefitApplicationsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListBenefitApplications action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.ListBenefitsConditionKeys">ListBenefitsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListBenefits action. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.ListBusinessPlanAssociationsConditionKeys">ListBusinessPlanAssociationsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListBusinessPlanAssociations action. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.ListBusinessPlanAttachmentImportTasksConditionKeys">ListBusinessPlanAttachmentImportTasksConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListBusinessPlanAttachmentImportTasks action. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.ListBusinessPlanAttachmentsConditionKeys">ListBusinessPlanAttachmentsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListBusinessPlanAttachments action. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.ListBusinessPlanHistoryConditionKeys">ListBusinessPlanHistoryConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListBusinessPlanHistory action. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.ListBusinessPlanItemsConditionKeys">ListBusinessPlanItemsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListBusinessPlanItems action. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.ListBusinessPlansConditionKeys">ListBusinessPlansConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListBusinessPlans action. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.ListBusinessPlanSubmissionTasksConditionKeys">ListBusinessPlanSubmissionTasksConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListBusinessPlanSubmissionTasks action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.ListChannelHandshakesConditionKeys">ListChannelHandshakesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListChannelHandshakes action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.ListConnectionInvitationsConditionKeys">ListConnectionInvitationsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListConnectionInvitations action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.ListConnectionsConditionKeys">ListConnectionsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListConnections action. |
@@ -6305,6 +7053,7 @@ Generates a condition block for `partnercentral:VerificationType`.
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.ListTagsForResourceConditionKeys">ListTagsForResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListTagsForResource action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.PROGRAMS">PROGRAMS</a></code> | <code>string</code> | Condition key: partnercentral:Programs (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.PutAllianceLeadContactConditionKeys">PutAllianceLeadContactConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutAllianceLeadContact action. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.PutBusinessPlanSettingsConditionKeys">PutBusinessPlanSettingsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutBusinessPlanSettings action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.PutProfileVisibilityConditionKeys">PutProfileVisibilityConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutProfileVisibility action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.PutSellingSystemSettingsConditionKeys">PutSellingSystemSettingsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutSellingSystemSettings action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.RecallBenefitApplicationConditionKeys">RecallBenefitApplicationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the RecallBenefitApplication action. |
@@ -6315,6 +7064,8 @@ Generates a condition block for `partnercentral:VerificationType`.
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.SearchOpportunitiesConditionKeys">SearchOpportunitiesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the SearchOpportunities action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.SearchPartnerCentralContentConditionKeys">SearchPartnerCentralContentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the SearchPartnerCentralContent action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.SendEmailVerificationCodeConditionKeys">SendEmailVerificationCodeConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the SendEmailVerificationCode action. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.StartBusinessPlanAttachmentImportTaskConditionKeys">StartBusinessPlanAttachmentImportTaskConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartBusinessPlanAttachmentImportTask action. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.StartBusinessPlanSubmissionTaskConditionKeys">StartBusinessPlanSubmissionTaskConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartBusinessPlanSubmissionTask action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.StartEngagementByAcceptingInvitationTaskConditionKeys">StartEngagementByAcceptingInvitationTaskConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartEngagementByAcceptingInvitationTask action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.StartEngagementFromOpportunityTaskConditionKeys">StartEngagementFromOpportunityTaskConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartEngagementFromOpportunityTask action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.StartOpportunityFromEngagementTaskConditionKeys">StartOpportunityFromEngagementTaskConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartOpportunityFromEngagementTask action. |
@@ -6331,6 +7082,8 @@ Generates a condition block for `partnercentral:VerificationType`.
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.TagResourceConditionKeys">TagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TagResource action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.UntagResourceConditionKeys">UntagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UntagResource action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.UpdateBenefitApplicationConditionKeys">UpdateBenefitApplicationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateBenefitApplication action. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.UpdateBusinessPlanConditionKeys">UpdateBusinessPlanConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateBusinessPlan action. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.UpdateBusinessPlanItemConditionKeys">UpdateBusinessPlanItemConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateBusinessPlanItem action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.UpdateConnectionPreferencesConditionKeys">UpdateConnectionPreferencesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateConnectionPreferences action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.UpdateEngagementContextConditionKeys">UpdateEngagementContextConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateEngagementContext action. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralConditions.property.UpdateMarketplaceRevenueShareAllocationConditionKeys">UpdateMarketplaceRevenueShareAllocationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateMarketplaceRevenueShareAllocation action. |
@@ -6436,6 +7189,90 @@ public readonly actionGetBenefitConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the GetBenefit action.
+
+---
+
+##### `actionGetBusinessPlanAttachmentConditionKeys`<sup>Required</sup> <a name="actionGetBusinessPlanAttachmentConditionKeys" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.property.actionGetBusinessPlanAttachmentConditionKeys"></a>
+
+```typescript
+public readonly actionGetBusinessPlanAttachmentConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetBusinessPlanAttachment action.
+
+---
+
+##### `actionGetBusinessPlanAttachmentImportTaskConditionKeys`<sup>Required</sup> <a name="actionGetBusinessPlanAttachmentImportTaskConditionKeys" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.property.actionGetBusinessPlanAttachmentImportTaskConditionKeys"></a>
+
+```typescript
+public readonly actionGetBusinessPlanAttachmentImportTaskConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetBusinessPlanAttachmentImportTask action.
+
+---
+
+##### `actionGetBusinessPlanConditionKeys`<sup>Required</sup> <a name="actionGetBusinessPlanConditionKeys" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.property.actionGetBusinessPlanConditionKeys"></a>
+
+```typescript
+public readonly actionGetBusinessPlanConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetBusinessPlan action.
+
+---
+
+##### `actionGetBusinessPlanItemConditionKeys`<sup>Required</sup> <a name="actionGetBusinessPlanItemConditionKeys" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.property.actionGetBusinessPlanItemConditionKeys"></a>
+
+```typescript
+public readonly actionGetBusinessPlanItemConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetBusinessPlanItem action.
+
+---
+
+##### `actionGetBusinessPlanItemSchemaConditionKeys`<sup>Required</sup> <a name="actionGetBusinessPlanItemSchemaConditionKeys" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.property.actionGetBusinessPlanItemSchemaConditionKeys"></a>
+
+```typescript
+public readonly actionGetBusinessPlanItemSchemaConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetBusinessPlanItemSchema action.
+
+---
+
+##### `actionGetBusinessPlanSettingsConditionKeys`<sup>Required</sup> <a name="actionGetBusinessPlanSettingsConditionKeys" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.property.actionGetBusinessPlanSettingsConditionKeys"></a>
+
+```typescript
+public readonly actionGetBusinessPlanSettingsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetBusinessPlanSettings action.
+
+---
+
+##### `actionGetBusinessPlanSubmissionTaskConditionKeys`<sup>Required</sup> <a name="actionGetBusinessPlanSubmissionTaskConditionKeys" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.property.actionGetBusinessPlanSubmissionTaskConditionKeys"></a>
+
+```typescript
+public readonly actionGetBusinessPlanSubmissionTaskConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetBusinessPlanSubmissionTask action.
 
 ---
 
@@ -6580,6 +7417,18 @@ public readonly actionGetPartnerDashboardConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the GetPartnerDashboard action.
+
+---
+
+##### `actionGetPartnerReportingDataConditionKeys`<sup>Required</sup> <a name="actionGetPartnerReportingDataConditionKeys" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.property.actionGetPartnerReportingDataConditionKeys"></a>
+
+```typescript
+public readonly actionGetPartnerReportingDataConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetPartnerReportingData action.
 
 ---
 
@@ -6763,6 +7612,18 @@ Condition keys applicable to the GetVerification action.
 
 ---
 
+##### `ALLOW_AWS_ENGAGEMENT`<sup>Required</sup> <a name="ALLOW_AWS_ENGAGEMENT" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.property.ALLOW_AWS_ENGAGEMENT"></a>
+
+```typescript
+public readonly ALLOW_AWS_ENGAGEMENT: string;
+```
+
+- *Type:* string
+
+Condition key: partnercentral:AllowAwsEngagement (String).
+
+---
+
 ##### `AmendBenefitApplicationConditionKeys`<sup>Required</sup> <a name="AmendBenefitApplicationConditionKeys" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.property.AmendBenefitApplicationConditionKeys"></a>
 
 ```typescript
@@ -6808,6 +7669,18 @@ public readonly AssociateBenefitApplicationResourceConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the AssociateBenefitApplicationResource action.
+
+---
+
+##### `AssociateBusinessPlanConditionKeys`<sup>Required</sup> <a name="AssociateBusinessPlanConditionKeys" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.property.AssociateBusinessPlanConditionKeys"></a>
+
+```typescript
+public readonly AssociateBusinessPlanConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the AssociateBusinessPlan action.
 
 ---
 
@@ -6859,6 +7732,30 @@ Condition key: aws:TagKeys (ArrayOfString).
 
 ---
 
+##### `BUSINESS_PLAN_ITEM_STAGE`<sup>Required</sup> <a name="BUSINESS_PLAN_ITEM_STAGE" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.property.BUSINESS_PLAN_ITEM_STAGE"></a>
+
+```typescript
+public readonly BUSINESS_PLAN_ITEM_STAGE: string;
+```
+
+- *Type:* string
+
+Condition key: partnercentral:BusinessPlanItemStage (String).
+
+---
+
+##### `BUSINESS_PLAN_ITEM_TYPE`<sup>Required</sup> <a name="BUSINESS_PLAN_ITEM_TYPE" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.property.BUSINESS_PLAN_ITEM_TYPE"></a>
+
+```typescript
+public readonly BUSINESS_PLAN_ITEM_TYPE: string;
+```
+
+- *Type:* string
+
+Condition key: partnercentral:BusinessPlanItemType (String).
+
+---
+
 ##### `CancelBenefitApplicationConditionKeys`<sup>Required</sup> <a name="CancelBenefitApplicationConditionKeys" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.property.CancelBenefitApplicationConditionKeys"></a>
 
 ```typescript
@@ -6868,6 +7765,30 @@ public readonly CancelBenefitApplicationConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the CancelBenefitApplication action.
+
+---
+
+##### `CancelBusinessPlanConditionKeys`<sup>Required</sup> <a name="CancelBusinessPlanConditionKeys" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.property.CancelBusinessPlanConditionKeys"></a>
+
+```typescript
+public readonly CancelBusinessPlanConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CancelBusinessPlan action.
+
+---
+
+##### `CancelBusinessPlanSubmissionTaskConditionKeys`<sup>Required</sup> <a name="CancelBusinessPlanSubmissionTaskConditionKeys" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.property.CancelBusinessPlanSubmissionTaskConditionKeys"></a>
+
+```typescript
+public readonly CancelBusinessPlanSubmissionTaskConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CancelBusinessPlanSubmissionTask action.
 
 ---
 
@@ -6952,6 +7873,30 @@ public readonly CreateBenefitApplicationConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the CreateBenefitApplication action.
+
+---
+
+##### `CreateBusinessPlanConditionKeys`<sup>Required</sup> <a name="CreateBusinessPlanConditionKeys" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.property.CreateBusinessPlanConditionKeys"></a>
+
+```typescript
+public readonly CreateBusinessPlanConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateBusinessPlan action.
+
+---
+
+##### `CreateBusinessPlanItemConditionKeys`<sup>Required</sup> <a name="CreateBusinessPlanItemConditionKeys" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.property.CreateBusinessPlanItemConditionKeys"></a>
+
+```typescript
+public readonly CreateBusinessPlanItemConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateBusinessPlanItem action.
 
 ---
 
@@ -7123,6 +8068,30 @@ Condition keys applicable to the CreateRevenueAttribution action.
 
 ---
 
+##### `DeleteBusinessPlanAttachmentConditionKeys`<sup>Required</sup> <a name="DeleteBusinessPlanAttachmentConditionKeys" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.property.DeleteBusinessPlanAttachmentConditionKeys"></a>
+
+```typescript
+public readonly DeleteBusinessPlanAttachmentConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DeleteBusinessPlanAttachment action.
+
+---
+
+##### `DeleteBusinessPlanItemConditionKeys`<sup>Required</sup> <a name="DeleteBusinessPlanItemConditionKeys" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.property.DeleteBusinessPlanItemConditionKeys"></a>
+
+```typescript
+public readonly DeleteBusinessPlanItemConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DeleteBusinessPlanItem action.
+
+---
+
 ##### `DeleteProgramManagementAccountConditionKeys`<sup>Required</sup> <a name="DeleteProgramManagementAccountConditionKeys" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.property.DeleteProgramManagementAccountConditionKeys"></a>
 
 ```typescript
@@ -7183,6 +8152,18 @@ Condition keys applicable to the DisassociateBenefitApplicationResource action.
 
 ---
 
+##### `DisassociateBusinessPlanConditionKeys`<sup>Required</sup> <a name="DisassociateBusinessPlanConditionKeys" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.property.DisassociateBusinessPlanConditionKeys"></a>
+
+```typescript
+public readonly DisassociateBusinessPlanConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DisassociateBusinessPlan action.
+
+---
+
 ##### `DisassociateOpportunityConditionKeys`<sup>Required</sup> <a name="DisassociateOpportunityConditionKeys" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.property.DisassociateOpportunityConditionKeys"></a>
 
 ```typescript
@@ -7240,6 +8221,90 @@ public readonly ListBenefitsConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the ListBenefits action.
+
+---
+
+##### `ListBusinessPlanAssociationsConditionKeys`<sup>Required</sup> <a name="ListBusinessPlanAssociationsConditionKeys" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.property.ListBusinessPlanAssociationsConditionKeys"></a>
+
+```typescript
+public readonly ListBusinessPlanAssociationsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ListBusinessPlanAssociations action.
+
+---
+
+##### `ListBusinessPlanAttachmentImportTasksConditionKeys`<sup>Required</sup> <a name="ListBusinessPlanAttachmentImportTasksConditionKeys" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.property.ListBusinessPlanAttachmentImportTasksConditionKeys"></a>
+
+```typescript
+public readonly ListBusinessPlanAttachmentImportTasksConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ListBusinessPlanAttachmentImportTasks action.
+
+---
+
+##### `ListBusinessPlanAttachmentsConditionKeys`<sup>Required</sup> <a name="ListBusinessPlanAttachmentsConditionKeys" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.property.ListBusinessPlanAttachmentsConditionKeys"></a>
+
+```typescript
+public readonly ListBusinessPlanAttachmentsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ListBusinessPlanAttachments action.
+
+---
+
+##### `ListBusinessPlanHistoryConditionKeys`<sup>Required</sup> <a name="ListBusinessPlanHistoryConditionKeys" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.property.ListBusinessPlanHistoryConditionKeys"></a>
+
+```typescript
+public readonly ListBusinessPlanHistoryConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ListBusinessPlanHistory action.
+
+---
+
+##### `ListBusinessPlanItemsConditionKeys`<sup>Required</sup> <a name="ListBusinessPlanItemsConditionKeys" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.property.ListBusinessPlanItemsConditionKeys"></a>
+
+```typescript
+public readonly ListBusinessPlanItemsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ListBusinessPlanItems action.
+
+---
+
+##### `ListBusinessPlansConditionKeys`<sup>Required</sup> <a name="ListBusinessPlansConditionKeys" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.property.ListBusinessPlansConditionKeys"></a>
+
+```typescript
+public readonly ListBusinessPlansConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ListBusinessPlans action.
+
+---
+
+##### `ListBusinessPlanSubmissionTasksConditionKeys`<sup>Required</sup> <a name="ListBusinessPlanSubmissionTasksConditionKeys" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.property.ListBusinessPlanSubmissionTasksConditionKeys"></a>
+
+```typescript
+public readonly ListBusinessPlanSubmissionTasksConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ListBusinessPlanSubmissionTasks action.
 
 ---
 
@@ -7555,6 +8620,18 @@ Condition keys applicable to the PutAllianceLeadContact action.
 
 ---
 
+##### `PutBusinessPlanSettingsConditionKeys`<sup>Required</sup> <a name="PutBusinessPlanSettingsConditionKeys" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.property.PutBusinessPlanSettingsConditionKeys"></a>
+
+```typescript
+public readonly PutBusinessPlanSettingsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the PutBusinessPlanSettings action.
+
+---
+
 ##### `PutProfileVisibilityConditionKeys`<sup>Required</sup> <a name="PutProfileVisibilityConditionKeys" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.property.PutProfileVisibilityConditionKeys"></a>
 
 ```typescript
@@ -7672,6 +8749,30 @@ public readonly SendEmailVerificationCodeConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the SendEmailVerificationCode action.
+
+---
+
+##### `StartBusinessPlanAttachmentImportTaskConditionKeys`<sup>Required</sup> <a name="StartBusinessPlanAttachmentImportTaskConditionKeys" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.property.StartBusinessPlanAttachmentImportTaskConditionKeys"></a>
+
+```typescript
+public readonly StartBusinessPlanAttachmentImportTaskConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the StartBusinessPlanAttachmentImportTask action.
+
+---
+
+##### `StartBusinessPlanSubmissionTaskConditionKeys`<sup>Required</sup> <a name="StartBusinessPlanSubmissionTaskConditionKeys" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.property.StartBusinessPlanSubmissionTaskConditionKeys"></a>
+
+```typescript
+public readonly StartBusinessPlanSubmissionTaskConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the StartBusinessPlanSubmissionTask action.
 
 ---
 
@@ -7864,6 +8965,30 @@ public readonly UpdateBenefitApplicationConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the UpdateBenefitApplication action.
+
+---
+
+##### `UpdateBusinessPlanConditionKeys`<sup>Required</sup> <a name="UpdateBusinessPlanConditionKeys" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.property.UpdateBusinessPlanConditionKeys"></a>
+
+```typescript
+public readonly UpdateBusinessPlanConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UpdateBusinessPlan action.
+
+---
+
+##### `UpdateBusinessPlanItemConditionKeys`<sup>Required</sup> <a name="UpdateBusinessPlanItemConditionKeys" id="@cdk_utils/iam.partnercentral.PartnercentralConditions.property.UpdateBusinessPlanItemConditionKeys"></a>
+
+```typescript
+public readonly UpdateBusinessPlanItemConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UpdateBusinessPlanItem action.
 
 ---
 
@@ -9574,11 +10699,13 @@ new partnercentral.PartnercentralResources()
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralResources.benefit">benefit</a></code> | Builds an ARN for the Benefit resource. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralResources.benefitAllocation">benefitAllocation</a></code> | Builds an ARN for the BenefitAllocation resource. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralResources.benefitApplication">benefitApplication</a></code> | Builds an ARN for the BenefitApplication resource. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralResources.businessPlan">businessPlan</a></code> | Builds an ARN for the BusinessPlan resource. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralResources.channelHandshake">channelHandshake</a></code> | Builds an ARN for the ChannelHandshake resource. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralResources.connection">connection</a></code> | Builds an ARN for the Connection resource. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralResources.connectionInvitation">connectionInvitation</a></code> | Builds an ARN for the ConnectionInvitation resource. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralResources.connectionPreferences">connectionPreferences</a></code> | Builds an ARN for the ConnectionPreferences resource. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralResources.dashboard">dashboard</a></code> | Builds an ARN for the Dashboard resource. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralResources.dataset">dataset</a></code> | Builds an ARN for the Dataset resource. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralResources.engagement">engagement</a></code> | Builds an ARN for the Engagement resource. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralResources.engagementByAcceptingInvitationTask">engagementByAcceptingInvitationTask</a></code> | Builds an ARN for the engagement-by-accepting-invitation-task resource. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralResources.engagementFromOpportunityTask">engagementFromOpportunityTask</a></code> | Builds an ARN for the engagement-from-opportunity-task resource. |
@@ -9586,11 +10713,13 @@ new partnercentral.PartnercentralResources()
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralResources.isValidBenefitAllocationArn">isValidBenefitAllocationArn</a></code> | Validates whether a string is a valid ARN for the BenefitAllocation resource. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralResources.isValidBenefitApplicationArn">isValidBenefitApplicationArn</a></code> | Validates whether a string is a valid ARN for the BenefitApplication resource. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralResources.isValidBenefitArn">isValidBenefitArn</a></code> | Validates whether a string is a valid ARN for the Benefit resource. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralResources.isValidBusinessPlanArn">isValidBusinessPlanArn</a></code> | Validates whether a string is a valid ARN for the BusinessPlan resource. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralResources.isValidChannelHandshakeArn">isValidChannelHandshakeArn</a></code> | Validates whether a string is a valid ARN for the ChannelHandshake resource. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralResources.isValidConnectionArn">isValidConnectionArn</a></code> | Validates whether a string is a valid ARN for the Connection resource. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralResources.isValidConnectionInvitationArn">isValidConnectionInvitationArn</a></code> | Validates whether a string is a valid ARN for the ConnectionInvitation resource. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralResources.isValidConnectionPreferencesArn">isValidConnectionPreferencesArn</a></code> | Validates whether a string is a valid ARN for the ConnectionPreferences resource. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralResources.isValidDashboardArn">isValidDashboardArn</a></code> | Validates whether a string is a valid ARN for the Dashboard resource. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralResources.isValidDatasetArn">isValidDatasetArn</a></code> | Validates whether a string is a valid ARN for the Dataset resource. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralResources.isValidEngagementArn">isValidEngagementArn</a></code> | Validates whether a string is a valid ARN for the Engagement resource. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralResources.isValidEngagementByAcceptingInvitationTaskArn">isValidEngagementByAcceptingInvitationTaskArn</a></code> | Validates whether a string is a valid ARN for the engagement-by-accepting-invitation-task resource. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralResources.isValidEngagementFromOpportunityTaskArn">isValidEngagementFromOpportunityTaskArn</a></code> | Validates whether a string is a valid ARN for the engagement-from-opportunity-task resource. |
@@ -9612,11 +10741,13 @@ new partnercentral.PartnercentralResources()
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralResources.parseBenefitAllocationArn">parseBenefitAllocationArn</a></code> | Parses a BenefitAllocation ARN into its components. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralResources.parseBenefitApplicationArn">parseBenefitApplicationArn</a></code> | Parses a BenefitApplication ARN into its components. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralResources.parseBenefitArn">parseBenefitArn</a></code> | Parses a Benefit ARN into its components. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralResources.parseBusinessPlanArn">parseBusinessPlanArn</a></code> | Parses a BusinessPlan ARN into its components. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralResources.parseChannelHandshakeArn">parseChannelHandshakeArn</a></code> | Parses a ChannelHandshake ARN into its components. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralResources.parseConnectionArn">parseConnectionArn</a></code> | Parses a Connection ARN into its components. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralResources.parseConnectionInvitationArn">parseConnectionInvitationArn</a></code> | Parses a ConnectionInvitation ARN into its components. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralResources.parseConnectionPreferencesArn">parseConnectionPreferencesArn</a></code> | Parses a ConnectionPreferences ARN into its components. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralResources.parseDashboardArn">parseDashboardArn</a></code> | Parses a Dashboard ARN into its components. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralResources.parseDatasetArn">parseDatasetArn</a></code> | Parses a Dataset ARN into its components. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralResources.parseEngagementArn">parseEngagementArn</a></code> | Parses a Engagement ARN into its components. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralResources.parseEngagementByAcceptingInvitationTaskArn">parseEngagementByAcceptingInvitationTaskArn</a></code> | Parses a engagement-by-accepting-invitation-task ARN into its components. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralResources.parseEngagementFromOpportunityTaskArn">parseEngagementFromOpportunityTaskArn</a></code> | Parses a engagement-from-opportunity-task ARN into its components. |
@@ -9688,6 +10819,22 @@ Builds an ARN for the BenefitApplication resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.partnercentral.PartnercentralResources.benefitApplication.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.partnercentral.PartnercentralBenefitApplicationArnProps">PartnercentralBenefitApplicationArnProps</a>
+
+---
+
+##### `businessPlan` <a name="businessPlan" id="@cdk_utils/iam.partnercentral.PartnercentralResources.businessPlan"></a>
+
+```typescript
+import { partnercentral } from '@cdk_utils/iam'
+
+partnercentral.PartnercentralResources.businessPlan(props: PartnercentralBusinessPlanArnProps)
+```
+
+Builds an ARN for the BusinessPlan resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.partnercentral.PartnercentralResources.businessPlan.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.partnercentral.PartnercentralBusinessPlanArnProps">PartnercentralBusinessPlanArnProps</a>
 
 ---
 
@@ -9768,6 +10915,22 @@ Builds an ARN for the Dashboard resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.partnercentral.PartnercentralResources.dashboard.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.partnercentral.PartnercentralDashboardArnProps">PartnercentralDashboardArnProps</a>
+
+---
+
+##### `dataset` <a name="dataset" id="@cdk_utils/iam.partnercentral.PartnercentralResources.dataset"></a>
+
+```typescript
+import { partnercentral } from '@cdk_utils/iam'
+
+partnercentral.PartnercentralResources.dataset(props: PartnercentralDatasetArnProps)
+```
+
+Builds an ARN for the Dataset resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.partnercentral.PartnercentralResources.dataset.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.partnercentral.PartnercentralDatasetArnProps">PartnercentralDatasetArnProps</a>
 
 ---
 
@@ -9883,6 +11046,22 @@ Validates whether a string is a valid ARN for the Benefit resource.
 
 ---
 
+##### `isValidBusinessPlanArn` <a name="isValidBusinessPlanArn" id="@cdk_utils/iam.partnercentral.PartnercentralResources.isValidBusinessPlanArn"></a>
+
+```typescript
+import { partnercentral } from '@cdk_utils/iam'
+
+partnercentral.PartnercentralResources.isValidBusinessPlanArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the BusinessPlan resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.partnercentral.PartnercentralResources.isValidBusinessPlanArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `isValidChannelHandshakeArn` <a name="isValidChannelHandshakeArn" id="@cdk_utils/iam.partnercentral.PartnercentralResources.isValidChannelHandshakeArn"></a>
 
 ```typescript
@@ -9958,6 +11137,22 @@ partnercentral.PartnercentralResources.isValidDashboardArn(arn: string)
 Validates whether a string is a valid ARN for the Dashboard resource.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.partnercentral.PartnercentralResources.isValidDashboardArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidDatasetArn` <a name="isValidDatasetArn" id="@cdk_utils/iam.partnercentral.PartnercentralResources.isValidDatasetArn"></a>
+
+```typescript
+import { partnercentral } from '@cdk_utils/iam'
+
+partnercentral.PartnercentralResources.isValidDatasetArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the Dataset resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.partnercentral.PartnercentralResources.isValidDatasetArn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -10299,6 +11494,22 @@ Parses a Benefit ARN into its components.
 
 ---
 
+##### `parseBusinessPlanArn` <a name="parseBusinessPlanArn" id="@cdk_utils/iam.partnercentral.PartnercentralResources.parseBusinessPlanArn"></a>
+
+```typescript
+import { partnercentral } from '@cdk_utils/iam'
+
+partnercentral.PartnercentralResources.parseBusinessPlanArn(arn: string)
+```
+
+Parses a BusinessPlan ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.partnercentral.PartnercentralResources.parseBusinessPlanArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `parseChannelHandshakeArn` <a name="parseChannelHandshakeArn" id="@cdk_utils/iam.partnercentral.PartnercentralResources.parseChannelHandshakeArn"></a>
 
 ```typescript
@@ -10374,6 +11585,22 @@ partnercentral.PartnercentralResources.parseDashboardArn(arn: string)
 Parses a Dashboard ARN into its components.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.partnercentral.PartnercentralResources.parseDashboardArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseDatasetArn` <a name="parseDatasetArn" id="@cdk_utils/iam.partnercentral.PartnercentralResources.parseDatasetArn"></a>
+
+```typescript
+import { partnercentral } from '@cdk_utils/iam'
+
+partnercentral.PartnercentralResources.parseDatasetArn(arn: string)
+```
+
+Parses a Dataset ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.partnercentral.PartnercentralResources.parseDatasetArn.parameter.arn"></a>
 
 - *Type:* string
 

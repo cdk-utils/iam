@@ -265,6 +265,8 @@ export class KinesisanalyticsOperations {
 	static readonly CreateApplicationSnapshot: string[] = [
 		"kinesisanalytics:CreateApplicationSnapshot",
 	];
+	/** IAM actions required for the CreateSnapshot API call. */
+	static readonly CreateSnapshot: string[] = ["kinesisanalytics:TagResource"];
 	/** IAM actions required for the DeleteApplication API call. */
 	static readonly DeleteApplication: string[] = [
 		"kinesisanalytics:DeleteApplication",
@@ -293,6 +295,8 @@ export class KinesisanalyticsOperations {
 	static readonly DeleteApplicationVpcConfiguration: string[] = [
 		"kinesisanalytics:DeleteApplicationVpcConfiguration",
 	];
+	/** IAM actions required for the DeleteSnapshot API call. */
+	static readonly DeleteSnapshot: string[] = [];
 	/** IAM actions required for the DescribeApplication API call. */
 	static readonly DescribeApplication: string[] = [
 		"kinesisanalytics:DescribeApplication",
@@ -309,11 +313,19 @@ export class KinesisanalyticsOperations {
 	static readonly DescribeApplicationVersion: string[] = [
 		"kinesisanalytics:DescribeApplicationVersion",
 	];
+	/** IAM actions required for the DescribeSnapshot API call. */
+	static readonly DescribeSnapshot: string[] = [];
+	/** IAM actions required for the DescribeSnapshotOperation API call. */
+	static readonly DescribeSnapshotOperation: string[] = [];
 	/** IAM actions required for the DiscoverInputSchema API call. */
 	static readonly DiscoverInputSchema: string[] = [
 		"kinesisanalytics:DiscoverInputSchema",
 		"iam:PassRole",
 	];
+	/** IAM actions required for the ExportSnapshot API call. */
+	static readonly ExportSnapshot: string[] = [];
+	/** IAM actions required for the ImportSnapshot API call. */
+	static readonly ImportSnapshot: string[] = ["iam:PassRole"];
 	/** IAM actions required for the ListApplicationOperations API call. */
 	static readonly ListApplicationOperations: string[] = [
 		"kinesisanalytics:ListApplicationOperations",
@@ -330,6 +342,10 @@ export class KinesisanalyticsOperations {
 	static readonly ListApplications: string[] = [
 		"kinesisanalytics:ListApplications",
 	];
+	/** IAM actions required for the ListSnapshotOperations API call. */
+	static readonly ListSnapshotOperations: string[] = [];
+	/** IAM actions required for the ListSnapshots API call. */
+	static readonly ListSnapshots: string[] = [];
 	/** IAM actions required for the ListTagsForResource API call. */
 	static readonly ListTagsForResource: string[] = [
 		"kinesisanalytics:ListTagsForResource",

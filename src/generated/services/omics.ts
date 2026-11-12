@@ -17,6 +17,8 @@ export class OmicsActions {
 		"omics:AbortMultipartReadSetUpload";
 	/** [Write] omics:AcceptShare */
 	static readonly AcceptShare = "omics:AcceptShare";
+	/** [Write] omics:AuthorizeRunProcessing */
+	static readonly AuthorizeRunProcessing = "omics:AuthorizeRunProcessing";
 	/** [Write] omics:BatchDeleteReadSet */
 	static readonly BatchDeleteReadSet = "omics:BatchDeleteReadSet";
 	/** [Write] omics:CancelAnnotationImportJob */
@@ -269,6 +271,7 @@ export class OmicsActions {
 	static readonly AllWriteActions: string[] = [
 		OmicsActions.AbortMultipartReadSetUpload,
 		OmicsActions.AcceptShare,
+		OmicsActions.AuthorizeRunProcessing,
 		OmicsActions.BatchDeleteReadSet,
 		OmicsActions.CancelAnnotationImportJob,
 		OmicsActions.CancelRun,

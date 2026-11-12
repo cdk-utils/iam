@@ -60,6 +60,7 @@ new route53domains.Route53domainsActions()
 | <code><a href="#@cdk_utils/iam.route53domains.Route53domainsActions.property.RenewDomain">RenewDomain</a></code> | <code>string</code> | [Write] route53domains:RenewDomain. |
 | <code><a href="#@cdk_utils/iam.route53domains.Route53domainsActions.property.ResendContactReachabilityEmail">ResendContactReachabilityEmail</a></code> | <code>string</code> | [Write] route53domains:ResendContactReachabilityEmail. |
 | <code><a href="#@cdk_utils/iam.route53domains.Route53domainsActions.property.ResendOperationAuthorization">ResendOperationAuthorization</a></code> | <code>string</code> | [Write] route53domains:ResendOperationAuthorization. |
+| <code><a href="#@cdk_utils/iam.route53domains.Route53domainsActions.property.RestoreDomain">RestoreDomain</a></code> | <code>string</code> | [Write] route53domains:RestoreDomain. |
 | <code><a href="#@cdk_utils/iam.route53domains.Route53domainsActions.property.RetrieveDomainAuthCode">RetrieveDomainAuthCode</a></code> | <code>string</code> | [Write] route53domains:RetrieveDomainAuthCode. |
 | <code><a href="#@cdk_utils/iam.route53domains.Route53domainsActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.route53domains.Route53domainsActions.property.TransferDomain">TransferDomain</a></code> | <code>string</code> | [Write] route53domains:TransferDomain. |
@@ -456,6 +457,18 @@ public readonly ResendOperationAuthorization: string;
 
 ---
 
+##### `RestoreDomain`<sup>Required</sup> <a name="RestoreDomain" id="@cdk_utils/iam.route53domains.Route53domainsActions.property.RestoreDomain"></a>
+
+```typescript
+public readonly RestoreDomain: string;
+```
+
+- *Type:* string
+
+[Write] route53domains:RestoreDomain.
+
+---
+
 ##### `RetrieveDomainAuthCode`<sup>Required</sup> <a name="RetrieveDomainAuthCode" id="@cdk_utils/iam.route53domains.Route53domainsActions.property.RetrieveDomainAuthCode"></a>
 
 ```typescript
@@ -615,6 +628,7 @@ new route53domains.Route53domainsOperations()
 | <code><a href="#@cdk_utils/iam.route53domains.Route53domainsOperations.property.RenewDomain">RenewDomain</a></code> | <code>string[]</code> | IAM actions required for the RenewDomain API call. |
 | <code><a href="#@cdk_utils/iam.route53domains.Route53domainsOperations.property.ResendContactReachabilityEmail">ResendContactReachabilityEmail</a></code> | <code>string[]</code> | IAM actions required for the ResendContactReachabilityEmail API call. |
 | <code><a href="#@cdk_utils/iam.route53domains.Route53domainsOperations.property.ResendOperationAuthorization">ResendOperationAuthorization</a></code> | <code>string[]</code> | IAM actions required for the ResendOperationAuthorization API call. |
+| <code><a href="#@cdk_utils/iam.route53domains.Route53domainsOperations.property.RestoreDomain">RestoreDomain</a></code> | <code>string[]</code> | IAM actions required for the RestoreDomain API call. |
 | <code><a href="#@cdk_utils/iam.route53domains.Route53domainsOperations.property.RetrieveDomainAuthCode">RetrieveDomainAuthCode</a></code> | <code>string[]</code> | IAM actions required for the RetrieveDomainAuthCode API call. |
 | <code><a href="#@cdk_utils/iam.route53domains.Route53domainsOperations.property.TransferDomain">TransferDomain</a></code> | <code>string[]</code> | IAM actions required for the TransferDomain API call. |
 | <code><a href="#@cdk_utils/iam.route53domains.Route53domainsOperations.property.TransferDomainToAnotherAwsAccount">TransferDomainToAnotherAwsAccount</a></code> | <code>string[]</code> | IAM actions required for the TransferDomainToAnotherAwsAccount API call. |
@@ -947,6 +961,18 @@ public readonly ResendOperationAuthorization: string[];
 - *Type:* string[]
 
 IAM actions required for the ResendOperationAuthorization API call.
+
+---
+
+##### `RestoreDomain`<sup>Required</sup> <a name="RestoreDomain" id="@cdk_utils/iam.route53domains.Route53domainsOperations.property.RestoreDomain"></a>
+
+```typescript
+public readonly RestoreDomain: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the RestoreDomain API call.
 
 ---
 

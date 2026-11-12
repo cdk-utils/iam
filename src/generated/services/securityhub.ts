@@ -235,6 +235,14 @@ export class SecurityHubActions {
 	/** [Read] securityhub:GetSecurityControlDefinition */
 	static readonly actionGetSecurityControlDefinition =
 		"securityhub:GetSecurityControlDefinition";
+	/** [Read] securityhub:GetSoftwareResourcesV2 */
+	static readonly actionGetSoftwareResourcesV2 =
+		"securityhub:GetSoftwareResourcesV2";
+	/** [Read] securityhub:GetSoftwareStatisticsV2 */
+	static readonly actionGetSoftwareStatisticsV2 =
+		"securityhub:GetSoftwareStatisticsV2";
+	/** [Read] securityhub:GetSoftwareV2 */
+	static readonly actionGetSoftwareV2 = "securityhub:GetSoftwareV2";
 	/** [Read] securityhub:GetUsage */
 	static readonly actionGetUsage = "securityhub:GetUsage";
 	/** [Read] securityhub:GetUsageV2 */
@@ -334,6 +342,8 @@ export class SecurityHubActions {
 	/** [Write] securityhub:UpdateSecurityHubConfiguration */
 	static readonly UpdateSecurityHubConfiguration =
 		"securityhub:UpdateSecurityHubConfiguration";
+	/** [Write] securityhub:UpdateSecurityHubV2 */
+	static readonly UpdateSecurityHubV2 = "securityhub:UpdateSecurityHubV2";
 	/** [Write] securityhub:UpdateStandardsControl */
 	static readonly UpdateStandardsControl = "securityhub:UpdateStandardsControl";
 
@@ -381,6 +391,9 @@ export class SecurityHubActions {
 		SecurityHubActions.actionGetResourcesTrendsV2,
 		SecurityHubActions.actionGetResourcesV2,
 		SecurityHubActions.actionGetSecurityControlDefinition,
+		SecurityHubActions.actionGetSoftwareResourcesV2,
+		SecurityHubActions.actionGetSoftwareStatisticsV2,
+		SecurityHubActions.actionGetSoftwareV2,
 		SecurityHubActions.actionGetUsage,
 		SecurityHubActions.actionGetUsageV2,
 		SecurityHubActions.ListControlEvaluationSummaries,
@@ -453,6 +466,7 @@ export class SecurityHubActions {
 		SecurityHubActions.UpdateOrganizationConfiguration,
 		SecurityHubActions.UpdateSecurityControl,
 		SecurityHubActions.UpdateSecurityHubConfiguration,
+		SecurityHubActions.UpdateSecurityHubV2,
 		SecurityHubActions.UpdateStandardsControl,
 	];
 	/** All list-level actions. */
@@ -1438,6 +1452,16 @@ export class SecurityHubOperations {
 	static readonly opGetSecurityControlDefinition: string[] = [
 		"securityhub:GetSecurityControlDefinition",
 	];
+	/** IAM actions required for the GetSoftwareResourcesV2 API call. */
+	static readonly opGetSoftwareResourcesV2: string[] = [
+		"securityhub:GetSoftwareResourcesV2",
+	];
+	/** IAM actions required for the GetSoftwareStatisticsV2 API call. */
+	static readonly opGetSoftwareStatisticsV2: string[] = [
+		"securityhub:GetSoftwareStatisticsV2",
+	];
+	/** IAM actions required for the GetSoftwareV2 API call. */
+	static readonly opGetSoftwareV2: string[] = ["securityhub:GetSoftwareV2"];
 	/** IAM actions required for the InviteMembers API call. */
 	static readonly InviteMembers: string[] = ["securityhub:InviteMembers"];
 	/** IAM actions required for the ListAggregatorsV2 API call. */
