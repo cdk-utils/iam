@@ -1269,6 +1269,22 @@
       }
     },
     {
+      "Name": "ListInvestigationRecords",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ListInvestigations",
       "Annotations": {
         "Properties": {
@@ -3117,6 +3133,22 @@
         {
           "Name": "guardduty",
           "Method": "list_ip_sets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListInvestigationRecords",
+      "AuthorizedActions": [
+        {
+          "Name": "ListInvestigationRecords",
+          "Service": "guardduty"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "guardduty",
+          "Method": "list_investigation_records",
           "Package": "Boto3"
         }
       ]

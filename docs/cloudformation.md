@@ -1298,6 +1298,7 @@ new cloudformation.CloudFormationActions()
 | <code><a href="#@cdk_utils/iam.cloudformation.CloudFormationActions.property.actionGetStackPolicy">actionGetStackPolicy</a></code> | <code>string</code> | [Read] cloudformation:GetStackPolicy. |
 | <code><a href="#@cdk_utils/iam.cloudformation.CloudFormationActions.property.actionGetTemplate">actionGetTemplate</a></code> | <code>string</code> | [Read] cloudformation:GetTemplate. |
 | <code><a href="#@cdk_utils/iam.cloudformation.CloudFormationActions.property.actionGetTemplateSummary">actionGetTemplateSummary</a></code> | <code>string</code> | [Read] cloudformation:GetTemplateSummary. |
+| <code><a href="#@cdk_utils/iam.cloudformation.CloudFormationActions.property.actionSetAlias">actionSetAlias</a></code> | <code>string</code> | [Write] cloudformation:SetAlias. |
 | <code><a href="#@cdk_utils/iam.cloudformation.CloudFormationActions.property.actionSetStackPolicy">actionSetStackPolicy</a></code> | <code>string</code> | [PermissionManagement] cloudformation:SetStackPolicy. |
 | <code><a href="#@cdk_utils/iam.cloudformation.CloudFormationActions.property.actionSetTypeConfiguration">actionSetTypeConfiguration</a></code> | <code>string</code> | [Write] cloudformation:SetTypeConfiguration. |
 | <code><a href="#@cdk_utils/iam.cloudformation.CloudFormationActions.property.actionSetTypeDefaultVersion">actionSetTypeDefaultVersion</a></code> | <code>string</code> | [Write] cloudformation:SetTypeDefaultVersion. |
@@ -1384,6 +1385,7 @@ new cloudformation.CloudFormationActions()
 | <code><a href="#@cdk_utils/iam.cloudformation.CloudFormationActions.property.RecordHandlerProgress">RecordHandlerProgress</a></code> | <code>string</code> | [Write] cloudformation:RecordHandlerProgress. |
 | <code><a href="#@cdk_utils/iam.cloudformation.CloudFormationActions.property.RegisterPublisher">RegisterPublisher</a></code> | <code>string</code> | [Write] cloudformation:RegisterPublisher. |
 | <code><a href="#@cdk_utils/iam.cloudformation.CloudFormationActions.property.RegisterType">RegisterType</a></code> | <code>string</code> | [Write] cloudformation:RegisterType. |
+| <code><a href="#@cdk_utils/iam.cloudformation.CloudFormationActions.property.RemoveAlias">RemoveAlias</a></code> | <code>string</code> | [Write] cloudformation:RemoveAlias. |
 | <code><a href="#@cdk_utils/iam.cloudformation.CloudFormationActions.property.RollbackStack">RollbackStack</a></code> | <code>string</code> | [Write] cloudformation:RollbackStack. |
 | <code><a href="#@cdk_utils/iam.cloudformation.CloudFormationActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.cloudformation.CloudFormationActions.property.SignalResource">SignalResource</a></code> | <code>string</code> | [Write] cloudformation:SignalResource. |
@@ -1483,6 +1485,18 @@ public readonly actionGetTemplateSummary: string;
 - *Type:* string
 
 [Read] cloudformation:GetTemplateSummary.
+
+---
+
+##### `actionSetAlias`<sup>Required</sup> <a name="actionSetAlias" id="@cdk_utils/iam.cloudformation.CloudFormationActions.property.actionSetAlias"></a>
+
+```typescript
+public readonly actionSetAlias: string;
+```
+
+- *Type:* string
+
+[Write] cloudformation:SetAlias.
 
 ---
 
@@ -2515,6 +2529,18 @@ public readonly RegisterType: string;
 - *Type:* string
 
 [Write] cloudformation:RegisterType.
+
+---
+
+##### `RemoveAlias`<sup>Required</sup> <a name="RemoveAlias" id="@cdk_utils/iam.cloudformation.CloudFormationActions.property.RemoveAlias"></a>
+
+```typescript
+public readonly RemoveAlias: string;
+```
+
+- *Type:* string
+
+[Write] cloudformation:RemoveAlias.
 
 ---
 

@@ -399,6 +399,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1502,6 +1503,22 @@
       ]
     },
     {
+      "Name": "GetGlueFunctionSessionContext",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDataAccess",
+          "Service": "lakeformation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "get_glue_function_session_context",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetLFTag",
       "SDK": [
         {
@@ -1607,6 +1624,22 @@
         {
           "Name": "lakeformation",
           "Method": "get_temporary_data_location_credentials",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetTemporaryGlueFunctionCredentials",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDataAccess",
+          "Service": "lakeformation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lakeformation",
+          "Method": "get_temporary_glue_function_credentials",
           "Package": "Boto3"
         }
       ]

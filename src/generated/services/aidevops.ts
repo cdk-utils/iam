@@ -87,10 +87,16 @@ export class AidevopsActions {
 	static readonly actionGetBacklogTask = "aidevops:GetBacklogTask";
 	/** [Read] aidevops:GetCatalogCapability */
 	static readonly actionGetCatalogCapability = "aidevops:GetCatalogCapability";
+	/** [Read] aidevops:GetChat */
+	static readonly actionGetChat = "aidevops:GetChat";
+	/** [Read] aidevops:GetKnowledgeGraph */
+	static readonly actionGetKnowledgeGraph = "aidevops:GetKnowledgeGraph";
 	/** [Read] aidevops:GetKnowledgeItem */
 	static readonly actionGetKnowledgeItem = "aidevops:GetKnowledgeItem";
 	/** [Read] aidevops:GetOperatorApp */
 	static readonly actionGetOperatorApp = "aidevops:GetOperatorApp";
+	/** [Read] aidevops:GetPlan */
+	static readonly actionGetPlan = "aidevops:GetPlan";
 	/** [Read] aidevops:GetRecommendation */
 	static readonly actionGetRecommendation = "aidevops:GetRecommendation";
 	/** [Read] aidevops:GetService */
@@ -101,8 +107,12 @@ export class AidevopsActions {
 	static readonly InitiateChatForCase = "aidevops:InitiateChatForCase";
 	/** [List] aidevops:ListAccessTokens */
 	static readonly ListAccessTokens = "aidevops:ListAccessTokens";
+	/** [Read] aidevops:ListAgentSpaceMetrics */
+	static readonly ListAgentSpaceMetrics = "aidevops:ListAgentSpaceMetrics";
 	/** [List] aidevops:ListAgentSpaces */
 	static readonly ListAgentSpaces = "aidevops:ListAgentSpaces";
+	/** [List] aidevops:ListAssetChanges */
+	static readonly ListAssetChanges = "aidevops:ListAssetChanges";
 	/** [List] aidevops:ListAssetFiles */
 	static readonly ListAssetFiles = "aidevops:ListAssetFiles";
 	/** [List] aidevops:ListAssetTypes */
@@ -163,6 +173,8 @@ export class AidevopsActions {
 		"aidevops:SearchServiceAccessibleResource";
 	/** [Write] aidevops:SendMessage */
 	static readonly SendMessage = "aidevops:SendMessage";
+	/** [Write] aidevops:StopPlan */
+	static readonly StopPlan = "aidevops:StopPlan";
 	/** [Tagging] aidevops:TagResource */
 	static readonly TagResource = "aidevops:TagResource";
 	/** [Tagging] aidevops:UntagResource */
@@ -179,6 +191,8 @@ export class AidevopsActions {
 	static readonly UpdateAssociation = "aidevops:UpdateAssociation";
 	/** [Write] aidevops:UpdateBacklogTask */
 	static readonly UpdateBacklogTask = "aidevops:UpdateBacklogTask";
+	/** [Write] aidevops:UpdateChat */
+	static readonly UpdateChat = "aidevops:UpdateChat";
 	/** [Write] aidevops:UpdateGoal */
 	static readonly UpdateGoal = "aidevops:UpdateGoal";
 	/** [Write] aidevops:UpdateKnowledgeItem */
@@ -209,11 +223,15 @@ export class AidevopsActions {
 		AidevopsActions.actionGetAssociation,
 		AidevopsActions.actionGetBacklogTask,
 		AidevopsActions.actionGetCatalogCapability,
+		AidevopsActions.actionGetChat,
+		AidevopsActions.actionGetKnowledgeGraph,
 		AidevopsActions.actionGetKnowledgeItem,
 		AidevopsActions.actionGetOperatorApp,
+		AidevopsActions.actionGetPlan,
 		AidevopsActions.actionGetRecommendation,
 		AidevopsActions.actionGetService,
 		AidevopsActions.actionGetTrigger,
+		AidevopsActions.ListAgentSpaceMetrics,
 		AidevopsActions.ListTagsForResource,
 		AidevopsActions.SearchAssets,
 		AidevopsActions.SearchServiceAccessibleResource,
@@ -249,12 +267,14 @@ export class AidevopsActions {
 		AidevopsActions.RevokeAccessToken,
 		AidevopsActions.RotateAccessToken,
 		AidevopsActions.SendMessage,
+		AidevopsActions.StopPlan,
 		AidevopsActions.UpdateAgentSpace,
 		AidevopsActions.UpdateApprovalAction,
 		AidevopsActions.UpdateAsset,
 		AidevopsActions.UpdateAssetFile,
 		AidevopsActions.UpdateAssociation,
 		AidevopsActions.UpdateBacklogTask,
+		AidevopsActions.UpdateChat,
 		AidevopsActions.UpdateGoal,
 		AidevopsActions.UpdateKnowledgeItem,
 		AidevopsActions.UpdateOperatorAppIdpConfig,
@@ -267,6 +287,7 @@ export class AidevopsActions {
 	static readonly AllListActions: string[] = [
 		AidevopsActions.ListAccessTokens,
 		AidevopsActions.ListAgentSpaces,
+		AidevopsActions.ListAssetChanges,
 		AidevopsActions.ListAssetFiles,
 		AidevopsActions.ListAssetTypes,
 		AidevopsActions.ListAssetVersions,
@@ -931,9 +952,19 @@ export class AidevopsConditions {
 		"aidevops:SourceAgentSpaceArn",
 		"aidevops:TargetAgentSpaceArn",
 	];
+	/** Condition keys applicable to the GetKnowledgeGraph action. */
+	static readonly actionGetKnowledgeGraphConditionKeys: string[] = [
+		"aidevops:SourceAgentSpaceArn",
+		"aidevops:TargetAgentSpaceArn",
+	];
 	/** Condition keys applicable to the GetService action. */
 	static readonly actionGetServiceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
+	];
+	/** Condition keys applicable to the ListAssetChanges action. */
+	static readonly ListAssetChangesConditionKeys: string[] = [
+		"aidevops:SourceAgentSpaceArn",
+		"aidevops:TargetAgentSpaceArn",
 	];
 	/** Condition keys applicable to the ListAssetFiles action. */
 	static readonly ListAssetFilesConditionKeys: string[] = [
@@ -999,6 +1030,10 @@ export class AidevopsConditions {
 	static readonly UpdateAgentSpaceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
+	/** Condition keys applicable to the UpdateApprovalAction action. */
+	static readonly UpdateApprovalActionConditionKeys: string[] = [
+		"aidevops:ApprovalTarget",
+	];
 	/** Condition keys applicable to the UpdateAssociation action. */
 	static readonly UpdateAssociationConditionKeys: string[] = [
 		"aidevops:ServiceType",
@@ -1013,6 +1048,8 @@ export class AidevopsConditions {
 		"aws:ResourceTag/${TagKey}",
 	];
 
+	/** Condition key: aidevops:ApprovalTarget (String) */
+	static readonly APPROVAL_TARGET = "aidevops:ApprovalTarget";
 	/** Condition key: aidevops:ServiceType (String) */
 	static readonly SERVICE_TYPE = "aidevops:ServiceType";
 	/** Condition key: aidevops:SourceAgentSpaceArn (ARN) */
@@ -1025,6 +1062,13 @@ export class AidevopsConditions {
 	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
 	static readonly AWS_TAG_KEYS = "aws:TagKeys";
+
+	/**
+	 * Generates a condition block for `aidevops:ApprovalTarget`.
+	 */
+	static approvalTarget(value: string): Record<string, Record<string, string>> {
+		return { StringEquals: { "aidevops:ApprovalTarget": value } };
+	}
 
 	/**
 	 * Generates a condition block for `aidevops:ServiceType`.

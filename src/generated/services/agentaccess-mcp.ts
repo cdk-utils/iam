@@ -17,8 +17,14 @@ export class AgentaccessMcpActions {
 	/** [Read] agentaccess-mcp:CheckConnectionStatus */
 	static readonly CheckConnectionStatus =
 		"agentaccess-mcp:CheckConnectionStatus";
+	/** [Write] agentaccess-mcp:CloseSession */
+	static readonly CloseSession = "agentaccess-mcp:CloseSession";
 	/** [Write] agentaccess-mcp:DoubleClick */
 	static readonly DoubleClick = "agentaccess-mcp:DoubleClick";
+	/** [Write] agentaccess-mcp:ExecuteSequence */
+	static readonly ExecuteSequence = "agentaccess-mcp:ExecuteSequence";
+	/** [Read] agentaccess-mcp:GetCurrentUser */
+	static readonly actionGetCurrentUser = "agentaccess-mcp:GetCurrentUser";
 	/** [Read] agentaccess-mcp:GetScreenshot */
 	static readonly actionGetScreenshot = "agentaccess-mcp:GetScreenshot";
 	/** [Read] agentaccess-mcp:GetSessionInfo */
@@ -47,23 +53,30 @@ export class AgentaccessMcpActions {
 	static readonly RightClick = "agentaccess-mcp:RightClick";
 	/** [Write] agentaccess-mcp:Scroll */
 	static readonly Scroll = "agentaccess-mcp:Scroll";
+	/** [Write] agentaccess-mcp:SwitchUser */
+	static readonly SwitchUser = "agentaccess-mcp:SwitchUser";
 	/** [Write] agentaccess-mcp:ToggleAppSwitcher */
 	static readonly ToggleAppSwitcher = "agentaccess-mcp:ToggleAppSwitcher";
 	/** [Write] agentaccess-mcp:TripleClick */
 	static readonly TripleClick = "agentaccess-mcp:TripleClick";
 	/** [Write] agentaccess-mcp:TypeText */
 	static readonly TypeText = "agentaccess-mcp:TypeText";
+	/** [Write] agentaccess-mcp:Wait */
+	static readonly Wait = "agentaccess-mcp:Wait";
 
 	/** All read-level actions. */
 	static readonly AllReadActions: string[] = [
 		AgentaccessMcpActions.CheckConnectionStatus,
+		AgentaccessMcpActions.actionGetCurrentUser,
 		AgentaccessMcpActions.actionGetScreenshot,
 		AgentaccessMcpActions.actionGetSessionInfo,
 	];
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
 		AgentaccessMcpActions.CallForwardedTool,
+		AgentaccessMcpActions.CloseSession,
 		AgentaccessMcpActions.DoubleClick,
+		AgentaccessMcpActions.ExecuteSequence,
 		AgentaccessMcpActions.HoldKey,
 		AgentaccessMcpActions.InvokeMcp,
 		AgentaccessMcpActions.KeyPress,
@@ -76,9 +89,11 @@ export class AgentaccessMcpActions {
 		AgentaccessMcpActions.MovePointer,
 		AgentaccessMcpActions.RightClick,
 		AgentaccessMcpActions.Scroll,
+		AgentaccessMcpActions.SwitchUser,
 		AgentaccessMcpActions.ToggleAppSwitcher,
 		AgentaccessMcpActions.TripleClick,
 		AgentaccessMcpActions.TypeText,
+		AgentaccessMcpActions.Wait,
 	];
 	/** All list-level actions. */
 	static readonly AllListActions: string[] = [];
@@ -94,83 +109,154 @@ export class AgentaccessMcpActions {
 export class AgentaccessMcpConditions {
 	/** Condition keys applicable to the CallForwardedTool action. */
 	static readonly CallForwardedToolConditionKeys: string[] = [
+		"agentaccess-mcp:ImageBuilderArn",
 		"agentaccess-mcp:StackArn",
 	];
 	/** Condition keys applicable to the CheckConnectionStatus action. */
 	static readonly CheckConnectionStatusConditionKeys: string[] = [
+		"agentaccess-mcp:ImageBuilderArn",
+		"agentaccess-mcp:StackArn",
+	];
+	/** Condition keys applicable to the CloseSession action. */
+	static readonly CloseSessionConditionKeys: string[] = [
+		"agentaccess-mcp:ImageBuilderArn",
 		"agentaccess-mcp:StackArn",
 	];
 	/** Condition keys applicable to the DoubleClick action. */
 	static readonly DoubleClickConditionKeys: string[] = [
+		"agentaccess-mcp:ImageBuilderArn",
+		"agentaccess-mcp:StackArn",
+	];
+	/** Condition keys applicable to the ExecuteSequence action. */
+	static readonly ExecuteSequenceConditionKeys: string[] = [
+		"agentaccess-mcp:ImageBuilderArn",
+		"agentaccess-mcp:StackArn",
+	];
+	/** Condition keys applicable to the GetCurrentUser action. */
+	static readonly actionGetCurrentUserConditionKeys: string[] = [
+		"agentaccess-mcp:ImageBuilderArn",
 		"agentaccess-mcp:StackArn",
 	];
 	/** Condition keys applicable to the GetScreenshot action. */
 	static readonly actionGetScreenshotConditionKeys: string[] = [
+		"agentaccess-mcp:ImageBuilderArn",
 		"agentaccess-mcp:StackArn",
 	];
 	/** Condition keys applicable to the GetSessionInfo action. */
 	static readonly actionGetSessionInfoConditionKeys: string[] = [
+		"agentaccess-mcp:ImageBuilderArn",
 		"agentaccess-mcp:StackArn",
 	];
 	/** Condition keys applicable to the HoldKey action. */
-	static readonly HoldKeyConditionKeys: string[] = ["agentaccess-mcp:StackArn"];
+	static readonly HoldKeyConditionKeys: string[] = [
+		"agentaccess-mcp:ImageBuilderArn",
+		"agentaccess-mcp:StackArn",
+	];
 	/** Condition keys applicable to the InvokeMcp action. */
 	static readonly InvokeMcpConditionKeys: string[] = [
+		"agentaccess-mcp:ImageBuilderArn",
+		"agentaccess-mcp:LocalUser",
 		"agentaccess-mcp:StackArn",
 	];
 	/** Condition keys applicable to the KeyPress action. */
 	static readonly KeyPressConditionKeys: string[] = [
+		"agentaccess-mcp:ImageBuilderArn",
 		"agentaccess-mcp:StackArn",
 	];
 	/** Condition keys applicable to the LaunchApplication action. */
 	static readonly LaunchApplicationConditionKeys: string[] = [
+		"agentaccess-mcp:ImageBuilderArn",
 		"agentaccess-mcp:StackArn",
 	];
 	/** Condition keys applicable to the LeftClick action. */
 	static readonly LeftClickConditionKeys: string[] = [
+		"agentaccess-mcp:ImageBuilderArn",
 		"agentaccess-mcp:StackArn",
 	];
 	/** Condition keys applicable to the LeftClickDrag action. */
 	static readonly LeftClickDragConditionKeys: string[] = [
+		"agentaccess-mcp:ImageBuilderArn",
 		"agentaccess-mcp:StackArn",
 	];
 	/** Condition keys applicable to the LeftMouseDown action. */
 	static readonly LeftMouseDownConditionKeys: string[] = [
+		"agentaccess-mcp:ImageBuilderArn",
 		"agentaccess-mcp:StackArn",
 	];
 	/** Condition keys applicable to the LeftMouseUp action. */
 	static readonly LeftMouseUpConditionKeys: string[] = [
+		"agentaccess-mcp:ImageBuilderArn",
 		"agentaccess-mcp:StackArn",
 	];
 	/** Condition keys applicable to the MiddleClick action. */
 	static readonly MiddleClickConditionKeys: string[] = [
+		"agentaccess-mcp:ImageBuilderArn",
 		"agentaccess-mcp:StackArn",
 	];
 	/** Condition keys applicable to the MovePointer action. */
 	static readonly MovePointerConditionKeys: string[] = [
+		"agentaccess-mcp:ImageBuilderArn",
 		"agentaccess-mcp:StackArn",
 	];
 	/** Condition keys applicable to the RightClick action. */
 	static readonly RightClickConditionKeys: string[] = [
+		"agentaccess-mcp:ImageBuilderArn",
 		"agentaccess-mcp:StackArn",
 	];
 	/** Condition keys applicable to the Scroll action. */
-	static readonly ScrollConditionKeys: string[] = ["agentaccess-mcp:StackArn"];
+	static readonly ScrollConditionKeys: string[] = [
+		"agentaccess-mcp:ImageBuilderArn",
+		"agentaccess-mcp:StackArn",
+	];
+	/** Condition keys applicable to the SwitchUser action. */
+	static readonly SwitchUserConditionKeys: string[] = [
+		"agentaccess-mcp:ImageBuilderArn",
+		"agentaccess-mcp:LocalUser",
+		"agentaccess-mcp:StackArn",
+	];
 	/** Condition keys applicable to the ToggleAppSwitcher action. */
 	static readonly ToggleAppSwitcherConditionKeys: string[] = [
+		"agentaccess-mcp:ImageBuilderArn",
 		"agentaccess-mcp:StackArn",
 	];
 	/** Condition keys applicable to the TripleClick action. */
 	static readonly TripleClickConditionKeys: string[] = [
+		"agentaccess-mcp:ImageBuilderArn",
 		"agentaccess-mcp:StackArn",
 	];
 	/** Condition keys applicable to the TypeText action. */
 	static readonly TypeTextConditionKeys: string[] = [
+		"agentaccess-mcp:ImageBuilderArn",
+		"agentaccess-mcp:StackArn",
+	];
+	/** Condition keys applicable to the Wait action. */
+	static readonly WaitConditionKeys: string[] = [
+		"agentaccess-mcp:ImageBuilderArn",
 		"agentaccess-mcp:StackArn",
 	];
 
+	/** Condition key: agentaccess-mcp:ImageBuilderArn (ARN) */
+	static readonly IMAGE_BUILDER_ARN = "agentaccess-mcp:ImageBuilderArn";
+	/** Condition key: agentaccess-mcp:LocalUser (String) */
+	static readonly LOCAL_USER = "agentaccess-mcp:LocalUser";
 	/** Condition key: agentaccess-mcp:StackArn (ARN) */
 	static readonly STACK_ARN = "agentaccess-mcp:StackArn";
+
+	/**
+	 * Generates a condition block for `agentaccess-mcp:ImageBuilderArn`.
+	 */
+	static imageBuilderARN(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { ArnEquals: { "agentaccess-mcp:ImageBuilderArn": value } };
+	}
+
+	/**
+	 * Generates a condition block for `agentaccess-mcp:LocalUser`.
+	 */
+	static localUser(value: string): Record<string, Record<string, string>> {
+		return { StringEquals: { "agentaccess-mcp:LocalUser": value } };
+	}
 
 	/**
 	 * Generates a condition block for `agentaccess-mcp:StackArn`.

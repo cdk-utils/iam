@@ -2712,6 +2712,9 @@
     },
     {
       "Name": "UpdateInstance",
+      "ActionConditionKeys": [
+        "sso:VpceAccessRequired"
+      ],
       "Annotations": {
         "Properties": {
           "IsDataPlane": false,
@@ -2917,6 +2920,12 @@
       "Name": "sso:PrimaryRegion",
       "Types": [
         "String"
+      ]
+    },
+    {
+      "Name": "sso:VpceAccessRequired",
+      "Types": [
+        "Bool"
       ]
     }
   ],

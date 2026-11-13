@@ -1522,6 +1522,7 @@
             "aws:ResourceTag/${TagKey}",
             "ec2:ImageID",
             "ec2:ImageType",
+            "ec2:ImageWatermarkKeys",
             "ec2:Owner",
             "ec2:Public",
             "ec2:ResourceTag/${TagKey}",
@@ -1991,7 +1992,8 @@
           "Name": "capacity-reservation",
           "ConditionKeys": [
             "aws:ResourceTag/${TagKey}",
-            "ec2:CapacityReservationFleet"
+            "ec2:CapacityReservationFleet",
+            "ec2:FutureCapacitySpecification"
           ]
         },
         {
@@ -2597,6 +2599,7 @@
           "Name": "capacity-reservation",
           "ConditionKeys": [
             "aws:ResourceTag/${TagKey}",
+            "ec2:FutureCapacitySpecification",
             "ec2:ResourceTag/${TagKey}"
           ]
         },
@@ -2611,6 +2614,42 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateCapacityReservationDateChangeQuote",
+      "ActionConditionKeys": [
+        "ec2:Region"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "capacity-reservation",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ec2:FutureCapacitySpecification",
+            "ec2:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "capacity-reservation-modification-quote",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -3362,6 +3401,7 @@
             "aws:ResourceTag/${TagKey}",
             "ec2:ImageID",
             "ec2:ImageType",
+            "ec2:ImageWatermarkKeys",
             "ec2:Owner",
             "ec2:Public",
             "ec2:ResourceTag/${TagKey}",
@@ -4819,6 +4859,7 @@
             "aws:ResourceTag/${TagKey}",
             "ec2:ImageID",
             "ec2:ImageType",
+            "ec2:ImageWatermarkKeys",
             "ec2:Owner",
             "ec2:Public",
             "ec2:ResourceTag/${TagKey}",
@@ -5373,6 +5414,7 @@
             "aws:ResourceTag/${TagKey}",
             "ec2:ImageID",
             "ec2:ImageType",
+            "ec2:ImageWatermarkKeys",
             "ec2:Owner",
             "ec2:Public",
             "ec2:ResourceTag/${TagKey}",
@@ -5512,7 +5554,8 @@
           "ConditionKeys": [
             "aws:RequestTag/${TagKey}",
             "aws:ResourceTag/${TagKey}",
-            "aws:TagKeys"
+            "aws:TagKeys",
+            "ec2:FutureCapacitySpecification"
           ]
         },
         {
@@ -5696,6 +5739,7 @@
             "aws:TagKeys",
             "ec2:ImageID",
             "ec2:ImageType",
+            "ec2:ImageWatermarkKeys",
             "ec2:Owner",
             "ec2:Public",
             "ec2:ResourceTag/${TagKey}",
@@ -7704,9 +7748,7 @@
           "Name": "vpc-endpoint-service",
           "ConditionKeys": [
             "aws:ResourceTag/${TagKey}",
-            "ec2:ResourceTag/${TagKey}",
-            "ec2:VpceMultiRegion",
-            "ec2:VpceServiceRegion"
+            "ec2:ResourceTag/${TagKey}"
           ]
         }
       ],
@@ -8077,6 +8119,40 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteClientVpnEndpointAuthorizationPolicy",
+      "ActionConditionKeys": [
+        "ec2:Region"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "client-vpn-endpoint",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ec2:ClientRootCertificateChainArn",
+            "ec2:CloudwatchLogGroupArn",
+            "ec2:CloudwatchLogStreamArn",
+            "ec2:DirectoryArn",
+            "ec2:ResourceTag/${TagKey}",
+            "ec2:SamlProviderArn",
+            "ec2:ServerCertificateArn"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -11656,9 +11732,7 @@
           "Name": "vpc-endpoint-service",
           "ConditionKeys": [
             "aws:ResourceTag/${TagKey}",
-            "ec2:ResourceTag/${TagKey}",
-            "ec2:VpceMultiRegion",
-            "ec2:VpceSupportedRegion"
+            "ec2:ResourceTag/${TagKey}"
           ]
         }
       ],
@@ -11995,6 +12069,7 @@
             "aws:ResourceTag/${TagKey}",
             "ec2:ImageID",
             "ec2:ImageType",
+            "ec2:ImageWatermarkKeys",
             "ec2:Owner",
             "ec2:Public",
             "ec2:ResourceTag/${TagKey}",
@@ -12529,6 +12604,25 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeCapacityReservationDateChangeQuotes",
+      "ActionConditionKeys": [
+        "ec2:Region"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -13261,6 +13355,7 @@
             "aws:ResourceTag/${TagKey}",
             "ec2:ImageID",
             "ec2:ImageType",
+            "ec2:ImageWatermarkKeys",
             "ec2:Owner",
             "ec2:Public",
             "ec2:ResourceTag/${TagKey}",
@@ -15884,9 +15979,7 @@
           "Name": "vpc-endpoint-service",
           "ConditionKeys": [
             "aws:ResourceTag/${TagKey}",
-            "ec2:ResourceTag/${TagKey}",
-            "ec2:VpceMultiRegion",
-            "ec2:VpceSupportedRegion"
+            "ec2:ResourceTag/${TagKey}"
           ]
         }
       ],
@@ -16128,6 +16221,7 @@
             "aws:ResourceTag/${TagKey}",
             "ec2:ImageID",
             "ec2:ImageType",
+            "ec2:ImageWatermarkKeys",
             "ec2:Owner",
             "ec2:Public",
             "ec2:ResourceTag/${TagKey}",
@@ -16642,6 +16736,7 @@
             "aws:ResourceTag/${TagKey}",
             "ec2:ImageID",
             "ec2:ImageType",
+            "ec2:ImageWatermarkKeys",
             "ec2:Owner",
             "ec2:Public",
             "ec2:ResourceTag/${TagKey}",
@@ -16694,6 +16789,7 @@
             "aws:ResourceTag/${TagKey}",
             "ec2:ImageID",
             "ec2:ImageType",
+            "ec2:ImageWatermarkKeys",
             "ec2:Owner",
             "ec2:Public",
             "ec2:ResourceTag/${TagKey}",
@@ -16727,6 +16823,7 @@
             "aws:ResourceTag/${TagKey}",
             "ec2:ImageID",
             "ec2:ImageType",
+            "ec2:ImageWatermarkKeys",
             "ec2:Owner",
             "ec2:Public",
             "ec2:ResourceTag/${TagKey}",
@@ -17960,6 +18057,7 @@
             "aws:ResourceTag/${TagKey}",
             "ec2:ImageID",
             "ec2:ImageType",
+            "ec2:ImageWatermarkKeys",
             "ec2:Owner",
             "ec2:Public",
             "ec2:ResourceTag/${TagKey}",
@@ -18088,6 +18186,7 @@
             "aws:ResourceTag/${TagKey}",
             "ec2:ImageID",
             "ec2:ImageType",
+            "ec2:ImageWatermarkKeys",
             "ec2:Owner",
             "ec2:Public",
             "ec2:ResourceTag/${TagKey}",
@@ -18621,6 +18720,7 @@
             "aws:ResourceTag/${TagKey}",
             "ec2:ImageID",
             "ec2:ImageType",
+            "ec2:ImageWatermarkKeys",
             "ec2:Owner",
             "ec2:Public",
             "ec2:ResourceTag/${TagKey}",
@@ -18892,13 +18992,48 @@
           "Name": "capacity-reservation",
           "ConditionKeys": [
             "aws:ResourceTag/${TagKey}",
-            "ec2:CapacityReservationFleet"
+            "ec2:CapacityReservationFleet",
+            "ec2:FutureCapacitySpecification"
           ]
         }
       ],
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetClientVpnEndpointAuthorizationPolicy",
+      "ActionConditionKeys": [
+        "ec2:Region"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "client-vpn-endpoint",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ec2:ClientRootCertificateChainArn",
+            "ec2:CloudwatchLogGroupArn",
+            "ec2:CloudwatchLogStreamArn",
+            "ec2:DirectoryArn",
+            "ec2:ResourceTag/${TagKey}",
+            "ec2:SamlProviderArn",
+            "ec2:ServerCertificateArn"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -19175,7 +19310,8 @@
           "Name": "capacity-reservation",
           "ConditionKeys": [
             "aws:ResourceTag/${TagKey}",
-            "ec2:CapacityReservationFleet"
+            "ec2:CapacityReservationFleet",
+            "ec2:FutureCapacitySpecification"
           ]
         }
       ],
@@ -19224,6 +19360,7 @@
             "aws:ResourceTag/${TagKey}",
             "ec2:ImageID",
             "ec2:ImageType",
+            "ec2:ImageWatermarkKeys",
             "ec2:Owner",
             "ec2:Public",
             "ec2:ResourceTag/${TagKey}",
@@ -19253,6 +19390,40 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetImageFindings",
+      "ActionConditionKeys": [
+        "ec2:Region"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "image",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ec2:ImageID",
+            "ec2:ImageType",
+            "ec2:ImageWatermarkKeys",
+            "ec2:Owner",
+            "ec2:Public",
+            "ec2:ResourceTag/${TagKey}",
+            "ec2:RootDeviceType"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -20427,6 +20598,34 @@
       }
     },
     {
+      "Name": "GetTransitGatewayAttachmentNatConfiguration",
+      "ActionConditionKeys": [
+        "ec2:Region"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "transit-gateway-attachment",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ec2:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "GetTransitGatewayAttachmentPropagations",
       "ActionConditionKeys": [
         "ec2:Region"
@@ -21413,7 +21612,15 @@
             "aws:ResourceTag/${TagKey}",
             "ec2:Attribute",
             "ec2:Attribute/${AttributeName}",
-            "ec2:CapacityReservationFleet"
+            "ec2:CapacityReservationFleet",
+            "ec2:FutureCapacitySpecification"
+          ]
+        },
+        {
+          "Name": "capacity-reservation-modification-quote",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ec2:ResourceTag/${TagKey}"
           ]
         }
       ],
@@ -21512,6 +21719,42 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ModifyClientVpnEndpointAuthorizationPolicy",
+      "ActionConditionKeys": [
+        "ec2:Region"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "client-vpn-endpoint",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ec2:Attribute",
+            "ec2:Attribute/${AttributeName}",
+            "ec2:ClientRootCertificateChainArn",
+            "ec2:CloudwatchLogGroupArn",
+            "ec2:CloudwatchLogStreamArn",
+            "ec2:DirectoryArn",
+            "ec2:ResourceTag/${TagKey}",
+            "ec2:SamlProviderArn",
+            "ec2:ServerCertificateArn"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -21736,6 +21979,7 @@
             "ec2:Attribute/${AttributeName}",
             "ec2:ImageID",
             "ec2:ImageType",
+            "ec2:ImageWatermarkKeys",
             "ec2:Owner",
             "ec2:Public",
             "ec2:ResourceTag/${TagKey}",
@@ -21842,7 +22086,8 @@
         {
           "Name": "capacity-reservation",
           "ConditionKeys": [
-            "aws:ResourceTag/${TagKey}"
+            "aws:ResourceTag/${TagKey}",
+            "ec2:FutureCapacitySpecification"
           ]
         },
         {
@@ -23385,6 +23630,36 @@
       }
     },
     {
+      "Name": "ModifyTransitGatewayAttachmentNatConfiguration",
+      "ActionConditionKeys": [
+        "ec2:Region"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "transit-gateway-attachment",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ec2:Attribute",
+            "ec2:Attribute/${AttributeName}",
+            "ec2:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ModifyTransitGatewayMeteringPolicy",
       "ActionConditionKeys": [
         "ec2:Region"
@@ -24060,9 +24335,7 @@
           "Name": "vpc-endpoint-service",
           "ConditionKeys": [
             "aws:ResourceTag/${TagKey}",
-            "ec2:ResourceTag/${TagKey}",
-            "ec2:VpceMultiRegion",
-            "ec2:VpceSupportedRegion"
+            "ec2:ResourceTag/${TagKey}"
           ]
         }
       ],
@@ -25499,8 +25772,8 @@
         }
       ],
       "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
       }
     },
     {
@@ -26081,6 +26354,7 @@
             "ec2:Attribute/${AttributeName}",
             "ec2:ImageID",
             "ec2:ImageType",
+            "ec2:ImageWatermarkKeys",
             "ec2:Owner",
             "ec2:Public",
             "ec2:ResourceTag/${TagKey}",
@@ -26506,6 +26780,7 @@
           "Name": "capacity-reservation",
           "ConditionKeys": [
             "aws:ResourceTag/${TagKey}",
+            "ec2:FutureCapacitySpecification",
             "ec2:IsLaunchTemplateResource",
             "ec2:LaunchTemplate"
           ]
@@ -27539,8 +27814,8 @@
         }
       ],
       "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
       }
     },
     {
@@ -27793,6 +28068,12 @@
       ]
     },
     {
+      "Name": "ec2:FutureCapacitySpecification",
+      "Types": [
+        "ARN"
+      ]
+    },
+    {
       "Name": "ec2:GatewayType",
       "Types": [
         "String"
@@ -27820,6 +28101,12 @@
       "Name": "ec2:ImageType",
       "Types": [
         "String"
+      ]
+    },
+    {
+      "Name": "ec2:ImageWatermarkKeys",
+      "Types": [
+        "ArrayOfString"
       ]
     },
     {
@@ -29647,6 +29934,10 @@
       "Name": "CreateCapacityReservationDateChangeQuote",
       "AuthorizedActions": [
         {
+          "Name": "CreateCapacityReservationDateChangeQuote",
+          "Service": "ec2"
+        },
+        {
           "Name": "CreateTags",
           "Service": "ec2"
         }
@@ -30514,6 +30805,22 @@
         {
           "Name": "ec2",
           "Method": "create_managed_prefix_list",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateMetricCategory",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateTags",
+          "Service": "ec2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ec2",
+          "Method": "create_metric_category",
           "Package": "Boto3"
         }
       ]
@@ -31752,6 +32059,12 @@
     },
     {
       "Name": "DeleteClientVpnEndpointAuthorizationPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteClientVpnEndpointAuthorizationPolicy",
+          "Service": "ec2"
+        }
+      ],
       "SDK": [
         {
           "Name": "ec2",
@@ -32284,6 +32597,16 @@
         {
           "Name": "ec2",
           "Method": "delete_managed_prefix_list",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteMetricCategory",
+      "SDK": [
+        {
+          "Name": "ec2",
+          "Method": "delete_metric_category",
           "Package": "Boto3"
         }
       ]
@@ -33714,6 +34037,12 @@
     },
     {
       "Name": "DescribeCapacityReservationDateChangeQuotes",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeCapacityReservationDateChangeQuotes",
+          "Service": "ec2"
+        }
+      ],
       "SDK": [
         {
           "Name": "ec2",
@@ -34998,6 +35327,16 @@
         {
           "Name": "ec2",
           "Method": "describe_managed_prefix_lists",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeMetricCategories",
+      "SDK": [
+        {
+          "Name": "ec2",
+          "Method": "describe_metric_categories",
           "Package": "Boto3"
         }
       ]
@@ -37876,6 +38215,12 @@
     },
     {
       "Name": "GetClientVpnEndpointAuthorizationPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetClientVpnEndpointAuthorizationPolicy",
+          "Service": "ec2"
+        }
+      ],
       "SDK": [
         {
           "Name": "ec2",
@@ -38094,6 +38439,12 @@
     },
     {
       "Name": "GetImageFindings",
+      "AuthorizedActions": [
+        {
+          "Name": "GetImageFindings",
+          "Service": "ec2"
+        }
+      ],
       "SDK": [
         {
           "Name": "ec2",
@@ -38728,6 +39079,12 @@
     },
     {
       "Name": "GetTransitGatewayAttachmentNatConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetTransitGatewayAttachmentNatConfiguration",
+          "Service": "ec2"
+        }
+      ],
       "SDK": [
         {
           "Name": "ec2",
@@ -39262,6 +39619,12 @@
     },
     {
       "Name": "ModifyClientVpnEndpointAuthorizationPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "ModifyClientVpnEndpointAuthorizationPolicy",
+          "Service": "ec2"
+        }
+      ],
       "SDK": [
         {
           "Name": "ec2",
@@ -39815,6 +40178,16 @@
       ]
     },
     {
+      "Name": "ModifyMetricCategory",
+      "SDK": [
+        {
+          "Name": "ec2",
+          "Method": "modify_metric_category",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ModifyNetworkInterfaceAttribute",
       "AuthorizedActions": [
         {
@@ -40040,6 +40413,12 @@
     },
     {
       "Name": "ModifyTransitGatewayAttachmentNatConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "ModifyTransitGatewayAttachmentNatConfiguration",
+          "Service": "ec2"
+        }
+      ],
       "SDK": [
         {
           "Name": "ec2",
@@ -41952,6 +42331,7 @@
         "ec2:EndDate",
         "ec2:EndDateType",
         "ec2:EphemeralStorage",
+        "ec2:FutureCapacitySpecification",
         "ec2:InstanceCount",
         "ec2:InstanceMatchCriteria",
         "ec2:InstancePlatform",
@@ -41989,6 +42369,21 @@
       "Name": "capacity-reservation-fleet",
       "ARNFormats": [
         "arn:${Partition}:ec2:${Region}:${Account}:capacity-reservation-fleet/${CapacityReservationFleetId}"
+      ],
+      "ConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "ec2:Attribute",
+        "ec2:Attribute/${AttributeName}",
+        "ec2:Region",
+        "ec2:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "capacity-reservation-modification-quote",
+      "ARNFormats": [
+        "arn:${Partition}:ec2:${Region}:${Account}:capacity-reservation-modification-quote/${CapacityReservationModificationQuoteId}"
       ],
       "ConditionKeys": [
         "aws:RequestTag/${TagKey}",
@@ -42261,6 +42656,7 @@
         "ec2:BootModeOverride",
         "ec2:ImageID",
         "ec2:ImageType",
+        "ec2:ImageWatermarkKeys",
         "ec2:IsLaunchTemplateResource",
         "ec2:LaunchTemplate",
         "ec2:Owner",

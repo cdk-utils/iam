@@ -2793,6 +2793,7 @@ new sso.SSOConditions()
 | <code><a href="#@cdk_utils/iam.sso.SSOConditions.requestTag">requestTag</a></code> | Generates a condition block for `aws:RequestTag/${TagKey}`. |
 | <code><a href="#@cdk_utils/iam.sso.SSOConditions.resourceTag">resourceTag</a></code> | Generates a condition block for `aws:ResourceTag/${TagKey}`. |
 | <code><a href="#@cdk_utils/iam.sso.SSOConditions.tagKeys">tagKeys</a></code> | Generates a condition block for `aws:TagKeys`. |
+| <code><a href="#@cdk_utils/iam.sso.SSOConditions.vpceAccessRequired">vpceAccessRequired</a></code> | Generates a condition block for `sso:VpceAccessRequired`. |
 
 ---
 
@@ -2876,6 +2877,22 @@ Generates a condition block for `aws:TagKeys`.
 
 ---
 
+##### `vpceAccessRequired` <a name="vpceAccessRequired" id="@cdk_utils/iam.sso.SSOConditions.vpceAccessRequired"></a>
+
+```typescript
+import { sso } from '@cdk_utils/iam'
+
+sso.SSOConditions.vpceAccessRequired(value: boolean)
+```
+
+Generates a condition block for `sso:VpceAccessRequired`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.sso.SSOConditions.vpceAccessRequired.parameter.value"></a>
+
+- *Type:* boolean
+
+---
+
 
 #### Constants <a name="Constants" id="Constants"></a>
 
@@ -2918,6 +2935,8 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.sso.SSOConditions.property.TagResourceConditionKeys">TagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TagResource action. |
 | <code><a href="#@cdk_utils/iam.sso.SSOConditions.property.UntagResourceConditionKeys">UntagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UntagResource action. |
 | <code><a href="#@cdk_utils/iam.sso.SSOConditions.property.UpdateApplicationConditionKeys">UpdateApplicationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateApplication action. |
+| <code><a href="#@cdk_utils/iam.sso.SSOConditions.property.UpdateInstanceConditionKeys">UpdateInstanceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateInstance action. |
+| <code><a href="#@cdk_utils/iam.sso.SSOConditions.property.VPCE_ACCESS_REQUIRED">VPCE_ACCESS_REQUIRED</a></code> | <code>string</code> | Condition key: sso:VpceAccessRequired (Bool). |
 
 ---
 
@@ -3362,6 +3381,30 @@ public readonly UpdateApplicationConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the UpdateApplication action.
+
+---
+
+##### `UpdateInstanceConditionKeys`<sup>Required</sup> <a name="UpdateInstanceConditionKeys" id="@cdk_utils/iam.sso.SSOConditions.property.UpdateInstanceConditionKeys"></a>
+
+```typescript
+public readonly UpdateInstanceConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UpdateInstance action.
+
+---
+
+##### `VPCE_ACCESS_REQUIRED`<sup>Required</sup> <a name="VPCE_ACCESS_REQUIRED" id="@cdk_utils/iam.sso.SSOConditions.property.VPCE_ACCESS_REQUIRED"></a>
+
+```typescript
+public readonly VPCE_ACCESS_REQUIRED: string;
+```
+
+- *Type:* string
+
+Condition key: sso:VpceAccessRequired (Bool).
 
 ---
 

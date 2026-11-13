@@ -5428,6 +5428,7 @@ new lightsail.LightSailOperations()
 | <code><a href="#@cdk_utils/iam.lightsail.LightSailOperations.property.AttachInstancesToLoadBalancer">AttachInstancesToLoadBalancer</a></code> | <code>string[]</code> | IAM actions required for the AttachInstancesToLoadBalancer API call. |
 | <code><a href="#@cdk_utils/iam.lightsail.LightSailOperations.property.AttachLoadBalancerTlsCertificate">AttachLoadBalancerTlsCertificate</a></code> | <code>string[]</code> | IAM actions required for the AttachLoadBalancerTlsCertificate API call. |
 | <code><a href="#@cdk_utils/iam.lightsail.LightSailOperations.property.AttachStaticIp">AttachStaticIp</a></code> | <code>string[]</code> | IAM actions required for the AttachStaticIp API call. |
+| <code><a href="#@cdk_utils/iam.lightsail.LightSailOperations.property.CheckSubdomainAvailability">CheckSubdomainAvailability</a></code> | <code>string[]</code> | IAM actions required for the CheckSubdomainAvailability API call. |
 | <code><a href="#@cdk_utils/iam.lightsail.LightSailOperations.property.CloseInstancePublicPorts">CloseInstancePublicPorts</a></code> | <code>string[]</code> | IAM actions required for the CloseInstancePublicPorts API call. |
 | <code><a href="#@cdk_utils/iam.lightsail.LightSailOperations.property.CopySnapshot">CopySnapshot</a></code> | <code>string[]</code> | IAM actions required for the CopySnapshot API call. |
 | <code><a href="#@cdk_utils/iam.lightsail.LightSailOperations.property.CreateBucket">CreateBucket</a></code> | <code>string[]</code> | IAM actions required for the CreateBucket API call. |
@@ -5454,6 +5455,7 @@ new lightsail.LightSailOperations()
 | <code><a href="#@cdk_utils/iam.lightsail.LightSailOperations.property.CreateRelationalDatabase">CreateRelationalDatabase</a></code> | <code>string[]</code> | IAM actions required for the CreateRelationalDatabase API call. |
 | <code><a href="#@cdk_utils/iam.lightsail.LightSailOperations.property.CreateRelationalDatabaseFromSnapshot">CreateRelationalDatabaseFromSnapshot</a></code> | <code>string[]</code> | IAM actions required for the CreateRelationalDatabaseFromSnapshot API call. |
 | <code><a href="#@cdk_utils/iam.lightsail.LightSailOperations.property.CreateRelationalDatabaseSnapshot">CreateRelationalDatabaseSnapshot</a></code> | <code>string[]</code> | IAM actions required for the CreateRelationalDatabaseSnapshot API call. |
+| <code><a href="#@cdk_utils/iam.lightsail.LightSailOperations.property.CreateSubdomain">CreateSubdomain</a></code> | <code>string[]</code> | IAM actions required for the CreateSubdomain API call. |
 | <code><a href="#@cdk_utils/iam.lightsail.LightSailOperations.property.DeleteAlarm">DeleteAlarm</a></code> | <code>string[]</code> | IAM actions required for the DeleteAlarm API call. |
 | <code><a href="#@cdk_utils/iam.lightsail.LightSailOperations.property.DeleteAutoSnapshot">DeleteAutoSnapshot</a></code> | <code>string[]</code> | IAM actions required for the DeleteAutoSnapshot API call. |
 | <code><a href="#@cdk_utils/iam.lightsail.LightSailOperations.property.DeleteBucket">DeleteBucket</a></code> | <code>string[]</code> | IAM actions required for the DeleteBucket API call. |
@@ -5475,6 +5477,7 @@ new lightsail.LightSailOperations()
 | <code><a href="#@cdk_utils/iam.lightsail.LightSailOperations.property.DeleteLoadBalancerTlsCertificate">DeleteLoadBalancerTlsCertificate</a></code> | <code>string[]</code> | IAM actions required for the DeleteLoadBalancerTlsCertificate API call. |
 | <code><a href="#@cdk_utils/iam.lightsail.LightSailOperations.property.DeleteRelationalDatabase">DeleteRelationalDatabase</a></code> | <code>string[]</code> | IAM actions required for the DeleteRelationalDatabase API call. |
 | <code><a href="#@cdk_utils/iam.lightsail.LightSailOperations.property.DeleteRelationalDatabaseSnapshot">DeleteRelationalDatabaseSnapshot</a></code> | <code>string[]</code> | IAM actions required for the DeleteRelationalDatabaseSnapshot API call. |
+| <code><a href="#@cdk_utils/iam.lightsail.LightSailOperations.property.DeleteSubdomain">DeleteSubdomain</a></code> | <code>string[]</code> | IAM actions required for the DeleteSubdomain API call. |
 | <code><a href="#@cdk_utils/iam.lightsail.LightSailOperations.property.DetachCertificateFromDistribution">DetachCertificateFromDistribution</a></code> | <code>string[]</code> | IAM actions required for the DetachCertificateFromDistribution API call. |
 | <code><a href="#@cdk_utils/iam.lightsail.LightSailOperations.property.DetachDisk">DetachDisk</a></code> | <code>string[]</code> | IAM actions required for the DetachDisk API call. |
 | <code><a href="#@cdk_utils/iam.lightsail.LightSailOperations.property.DetachInstancesFromLoadBalancer">DetachInstancesFromLoadBalancer</a></code> | <code>string[]</code> | IAM actions required for the DetachInstancesFromLoadBalancer API call. |
@@ -5552,6 +5555,7 @@ new lightsail.LightSailOperations()
 | <code><a href="#@cdk_utils/iam.lightsail.LightSailOperations.property.opGetSetupHistory">opGetSetupHistory</a></code> | <code>string[]</code> | IAM actions required for the GetSetupHistory API call. |
 | <code><a href="#@cdk_utils/iam.lightsail.LightSailOperations.property.opGetStaticIp">opGetStaticIp</a></code> | <code>string[]</code> | IAM actions required for the GetStaticIp API call. |
 | <code><a href="#@cdk_utils/iam.lightsail.LightSailOperations.property.opGetStaticIps">opGetStaticIps</a></code> | <code>string[]</code> | IAM actions required for the GetStaticIps API call. |
+| <code><a href="#@cdk_utils/iam.lightsail.LightSailOperations.property.opGetSubdomains">opGetSubdomains</a></code> | <code>string[]</code> | IAM actions required for the GetSubdomains API call. |
 | <code><a href="#@cdk_utils/iam.lightsail.LightSailOperations.property.opSetIpAddressType">opSetIpAddressType</a></code> | <code>string[]</code> | IAM actions required for the SetIpAddressType API call. |
 | <code><a href="#@cdk_utils/iam.lightsail.LightSailOperations.property.opSetResourceAccessForBucket">opSetResourceAccessForBucket</a></code> | <code>string[]</code> | IAM actions required for the SetResourceAccessForBucket API call. |
 | <code><a href="#@cdk_utils/iam.lightsail.LightSailOperations.property.PeerVpc">PeerVpc</a></code> | <code>string[]</code> | IAM actions required for the PeerVpc API call. |
@@ -5584,6 +5588,7 @@ new lightsail.LightSailOperations()
 | <code><a href="#@cdk_utils/iam.lightsail.LightSailOperations.property.UpdateLoadBalancerAttribute">UpdateLoadBalancerAttribute</a></code> | <code>string[]</code> | IAM actions required for the UpdateLoadBalancerAttribute API call. |
 | <code><a href="#@cdk_utils/iam.lightsail.LightSailOperations.property.UpdateRelationalDatabase">UpdateRelationalDatabase</a></code> | <code>string[]</code> | IAM actions required for the UpdateRelationalDatabase API call. |
 | <code><a href="#@cdk_utils/iam.lightsail.LightSailOperations.property.UpdateRelationalDatabaseParameters">UpdateRelationalDatabaseParameters</a></code> | <code>string[]</code> | IAM actions required for the UpdateRelationalDatabaseParameters API call. |
+| <code><a href="#@cdk_utils/iam.lightsail.LightSailOperations.property.UpdateSubdomainAssociation">UpdateSubdomainAssociation</a></code> | <code>string[]</code> | IAM actions required for the UpdateSubdomainAssociation API call. |
 
 ---
 
@@ -5656,6 +5661,18 @@ public readonly AttachStaticIp: string[];
 - *Type:* string[]
 
 IAM actions required for the AttachStaticIp API call.
+
+---
+
+##### `CheckSubdomainAvailability`<sup>Required</sup> <a name="CheckSubdomainAvailability" id="@cdk_utils/iam.lightsail.LightSailOperations.property.CheckSubdomainAvailability"></a>
+
+```typescript
+public readonly CheckSubdomainAvailability: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CheckSubdomainAvailability API call.
 
 ---
 
@@ -5971,6 +5988,18 @@ IAM actions required for the CreateRelationalDatabaseSnapshot API call.
 
 ---
 
+##### `CreateSubdomain`<sup>Required</sup> <a name="CreateSubdomain" id="@cdk_utils/iam.lightsail.LightSailOperations.property.CreateSubdomain"></a>
+
+```typescript
+public readonly CreateSubdomain: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateSubdomain API call.
+
+---
+
 ##### `DeleteAlarm`<sup>Required</sup> <a name="DeleteAlarm" id="@cdk_utils/iam.lightsail.LightSailOperations.property.DeleteAlarm"></a>
 
 ```typescript
@@ -6220,6 +6249,18 @@ public readonly DeleteRelationalDatabaseSnapshot: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteRelationalDatabaseSnapshot API call.
+
+---
+
+##### `DeleteSubdomain`<sup>Required</sup> <a name="DeleteSubdomain" id="@cdk_utils/iam.lightsail.LightSailOperations.property.DeleteSubdomain"></a>
+
+```typescript
+public readonly DeleteSubdomain: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteSubdomain API call.
 
 ---
 
@@ -7147,6 +7188,18 @@ IAM actions required for the GetStaticIps API call.
 
 ---
 
+##### `opGetSubdomains`<sup>Required</sup> <a name="opGetSubdomains" id="@cdk_utils/iam.lightsail.LightSailOperations.property.opGetSubdomains"></a>
+
+```typescript
+public readonly opGetSubdomains: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetSubdomains API call.
+
+---
+
 ##### `opSetIpAddressType`<sup>Required</sup> <a name="opSetIpAddressType" id="@cdk_utils/iam.lightsail.LightSailOperations.property.opSetIpAddressType"></a>
 
 ```typescript
@@ -7528,6 +7581,18 @@ public readonly UpdateRelationalDatabaseParameters: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateRelationalDatabaseParameters API call.
+
+---
+
+##### `UpdateSubdomainAssociation`<sup>Required</sup> <a name="UpdateSubdomainAssociation" id="@cdk_utils/iam.lightsail.LightSailOperations.property.UpdateSubdomainAssociation"></a>
+
+```typescript
+public readonly UpdateSubdomainAssociation: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateSubdomainAssociation API call.
 
 ---
 

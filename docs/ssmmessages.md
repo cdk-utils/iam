@@ -1,6 +1,155 @@
 # `ssmmessages` Submodule <a name="`ssmmessages` Submodule" id="@cdk_utils/iam.ssmmessages"></a>
 
 
+## Structs <a name="Structs" id="Structs"></a>
+
+### SsmmessagesSessionArnComponents <a name="SsmmessagesSessionArnComponents" id="@cdk_utils/iam.ssmmessages.SsmmessagesSessionArnComponents"></a>
+
+Parsed components of a session ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.ssmmessages.SsmmessagesSessionArnComponents.Initializer"></a>
+
+```typescript
+import { ssmmessages } from '@cdk_utils/iam'
+
+const ssmmessagesSessionArnComponents: ssmmessages.SsmmessagesSessionArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.ssmmessages.SsmmessagesSessionArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.ssmmessages.SsmmessagesSessionArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.ssmmessages.SsmmessagesSessionArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+| <code><a href="#@cdk_utils/iam.ssmmessages.SsmmessagesSessionArnComponents.property.sessionId">sessionId</a></code> | <code>string</code> | The SessionId component. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.ssmmessages.SsmmessagesSessionArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.ssmmessages.SsmmessagesSessionArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.ssmmessages.SsmmessagesSessionArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+##### `sessionId`<sup>Required</sup> <a name="sessionId" id="@cdk_utils/iam.ssmmessages.SsmmessagesSessionArnComponents.property.sessionId"></a>
+
+```typescript
+public readonly sessionId: string;
+```
+
+- *Type:* string
+
+The SessionId component.
+
+---
+
+### SsmmessagesSessionArnProps <a name="SsmmessagesSessionArnProps" id="@cdk_utils/iam.ssmmessages.SsmmessagesSessionArnProps"></a>
+
+Properties for building a session ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.ssmmessages.SsmmessagesSessionArnProps.Initializer"></a>
+
+```typescript
+import { ssmmessages } from '@cdk_utils/iam'
+
+const ssmmessagesSessionArnProps: ssmmessages.SsmmessagesSessionArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.ssmmessages.SsmmessagesSessionArnProps.property.sessionId">sessionId</a></code> | <code>string</code> | The SessionId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.ssmmessages.SsmmessagesSessionArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.ssmmessages.SsmmessagesSessionArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.ssmmessages.SsmmessagesSessionArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `sessionId`<sup>Required</sup> <a name="sessionId" id="@cdk_utils/iam.ssmmessages.SsmmessagesSessionArnProps.property.sessionId"></a>
+
+```typescript
+public readonly sessionId: string;
+```
+
+- *Type:* string
+
+The SessionId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.ssmmessages.SsmmessagesSessionArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.ssmmessages.SsmmessagesSessionArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.ssmmessages.SsmmessagesSessionArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
@@ -186,6 +335,8 @@ new ssmmessages.SsmmessagesConditions()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.ssmmessages.SsmmessagesConditions.property.CreateControlChannelConditionKeys">CreateControlChannelConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateControlChannel action. |
+| <code><a href="#@cdk_utils/iam.ssmmessages.SsmmessagesConditions.property.RESOURCE_TAG_AWS_SSMMESSAGES_SESSION_ID">RESOURCE_TAG_AWS_SSMMESSAGES_SESSION_ID</a></code> | <code>string</code> | Condition key: ssm:resourceTag/aws:ssmmessages:session-id (String). |
+| <code><a href="#@cdk_utils/iam.ssmmessages.SsmmessagesConditions.property.RESOURCE_TAG_AWS_SSMMESSAGES_TARGET_ID">RESOURCE_TAG_AWS_SSMMESSAGES_TARGET_ID</a></code> | <code>string</code> | Condition key: ssm:resourceTag/aws:ssmmessages:target-id (String). |
 | <code><a href="#@cdk_utils/iam.ssmmessages.SsmmessagesConditions.property.SOURCE_INSTANCE_ARN">SOURCE_INSTANCE_ARN</a></code> | <code>string</code> | Condition key: ec2:SourceInstanceARN (ARN). |
 
 ---
@@ -202,6 +353,30 @@ Condition keys applicable to the CreateControlChannel action.
 
 ---
 
+##### `RESOURCE_TAG_AWS_SSMMESSAGES_SESSION_ID`<sup>Required</sup> <a name="RESOURCE_TAG_AWS_SSMMESSAGES_SESSION_ID" id="@cdk_utils/iam.ssmmessages.SsmmessagesConditions.property.RESOURCE_TAG_AWS_SSMMESSAGES_SESSION_ID"></a>
+
+```typescript
+public readonly RESOURCE_TAG_AWS_SSMMESSAGES_SESSION_ID: string;
+```
+
+- *Type:* string
+
+Condition key: ssm:resourceTag/aws:ssmmessages:session-id (String).
+
+---
+
+##### `RESOURCE_TAG_AWS_SSMMESSAGES_TARGET_ID`<sup>Required</sup> <a name="RESOURCE_TAG_AWS_SSMMESSAGES_TARGET_ID" id="@cdk_utils/iam.ssmmessages.SsmmessagesConditions.property.RESOURCE_TAG_AWS_SSMMESSAGES_TARGET_ID"></a>
+
+```typescript
+public readonly RESOURCE_TAG_AWS_SSMMESSAGES_TARGET_ID: string;
+```
+
+- *Type:* string
+
+Condition key: ssm:resourceTag/aws:ssmmessages:target-id (String).
+
+---
+
 ##### `SOURCE_INSTANCE_ARN`<sup>Required</sup> <a name="SOURCE_INSTANCE_ARN" id="@cdk_utils/iam.ssmmessages.SsmmessagesConditions.property.SOURCE_INSTANCE_ARN"></a>
 
 ```typescript
@@ -213,5 +388,83 @@ public readonly SOURCE_INSTANCE_ARN: string;
 Condition key: ec2:SourceInstanceARN (ARN).
 
 ---
+
+### SsmmessagesResources <a name="SsmmessagesResources" id="@cdk_utils/iam.ssmmessages.SsmmessagesResources"></a>
+
+ARN builders, validators, and parsers for ssmmessages resources.
+
+#### Initializers <a name="Initializers" id="@cdk_utils/iam.ssmmessages.SsmmessagesResources.Initializer"></a>
+
+```typescript
+import { ssmmessages } from '@cdk_utils/iam'
+
+new ssmmessages.SsmmessagesResources()
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+
+---
+
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdk_utils/iam.ssmmessages.SsmmessagesResources.isValidSessionArn">isValidSessionArn</a></code> | Validates whether a string is a valid ARN for the session resource. |
+| <code><a href="#@cdk_utils/iam.ssmmessages.SsmmessagesResources.parseSessionArn">parseSessionArn</a></code> | Parses a session ARN into its components. |
+| <code><a href="#@cdk_utils/iam.ssmmessages.SsmmessagesResources.session">session</a></code> | Builds an ARN for the session resource. |
+
+---
+
+##### `isValidSessionArn` <a name="isValidSessionArn" id="@cdk_utils/iam.ssmmessages.SsmmessagesResources.isValidSessionArn"></a>
+
+```typescript
+import { ssmmessages } from '@cdk_utils/iam'
+
+ssmmessages.SsmmessagesResources.isValidSessionArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the session resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.ssmmessages.SsmmessagesResources.isValidSessionArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseSessionArn` <a name="parseSessionArn" id="@cdk_utils/iam.ssmmessages.SsmmessagesResources.parseSessionArn"></a>
+
+```typescript
+import { ssmmessages } from '@cdk_utils/iam'
+
+ssmmessages.SsmmessagesResources.parseSessionArn(arn: string)
+```
+
+Parses a session ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.ssmmessages.SsmmessagesResources.parseSessionArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `session` <a name="session" id="@cdk_utils/iam.ssmmessages.SsmmessagesResources.session"></a>
+
+```typescript
+import { ssmmessages } from '@cdk_utils/iam'
+
+ssmmessages.SsmmessagesResources.session(props: SsmmessagesSessionArnProps)
+```
+
+Builds an ARN for the session resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.ssmmessages.SsmmessagesResources.session.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.ssmmessages.SsmmessagesSessionArnProps">SsmmessagesSessionArnProps</a>
+
+---
+
+
 
 

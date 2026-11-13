@@ -177,6 +177,7 @@ new secretsmanager.SecretsManagerActions()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerActions.property.AcceptCrossAccountReplication">AcceptCrossAccountReplication</a></code> | <code>string</code> | [Write] secretsmanager:AcceptCrossAccountReplication. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerActions.property.actionGetRandomPassword">actionGetRandomPassword</a></code> | <code>string</code> | [Read] secretsmanager:GetRandomPassword. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerActions.property.actionGetResourcePolicy">actionGetResourcePolicy</a></code> | <code>string</code> | [Read] secretsmanager:GetResourcePolicy. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerActions.property.actionGetSecretValue">actionGetSecretValue</a></code> | <code>string</code> | [Read] secretsmanager:GetSecretValue. |
@@ -185,12 +186,15 @@ new secretsmanager.SecretsManagerActions()
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerActions.property.AllReadActions">AllReadActions</a></code> | <code>string[]</code> | All read-level actions. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerActions.property.AllTaggingActions">AllTaggingActions</a></code> | <code>string[]</code> | All tagging-level actions. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
+| <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerActions.property.AssociateCrossAccountReplica">AssociateCrossAccountReplica</a></code> | <code>string</code> | [Write] secretsmanager:AssociateCrossAccountReplica. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerActions.property.BatchGetSecretValue">BatchGetSecretValue</a></code> | <code>string</code> | [Read] secretsmanager:BatchGetSecretValue. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerActions.property.CancelRotateSecret">CancelRotateSecret</a></code> | <code>string</code> | [Write] secretsmanager:CancelRotateSecret. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerActions.property.CreateSecret">CreateSecret</a></code> | <code>string</code> | [Write] secretsmanager:CreateSecret. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerActions.property.DeleteResourcePolicy">DeleteResourcePolicy</a></code> | <code>string</code> | [PermissionManagement] secretsmanager:DeleteResourcePolicy. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerActions.property.DeleteSecret">DeleteSecret</a></code> | <code>string</code> | [Write] secretsmanager:DeleteSecret. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerActions.property.DescribeSecret">DescribeSecret</a></code> | <code>string</code> | [Read] secretsmanager:DescribeSecret. |
+| <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerActions.property.DisassociateCrossAccountReplica">DisassociateCrossAccountReplica</a></code> | <code>string</code> | [Write] secretsmanager:DisassociateCrossAccountReplica. |
+| <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerActions.property.ListResourcePolicies">ListResourcePolicies</a></code> | <code>string</code> | [Read] secretsmanager:ListResourcePolicies. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerActions.property.ListSecrets">ListSecrets</a></code> | <code>string</code> | [List] secretsmanager:ListSecrets. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerActions.property.ListSecretVersionIds">ListSecretVersionIds</a></code> | <code>string</code> | [Read] secretsmanager:ListSecretVersionIds. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerActions.property.PutResourcePolicy">PutResourcePolicy</a></code> | <code>string</code> | [PermissionManagement] secretsmanager:PutResourcePolicy. |
@@ -206,6 +210,18 @@ new secretsmanager.SecretsManagerActions()
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerActions.property.UpdateSecret">UpdateSecret</a></code> | <code>string</code> | [Write] secretsmanager:UpdateSecret. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerActions.property.UpdateSecretVersionStage">UpdateSecretVersionStage</a></code> | <code>string</code> | [Write] secretsmanager:UpdateSecretVersionStage. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerActions.property.ValidateResourcePolicy">ValidateResourcePolicy</a></code> | <code>string</code> | [PermissionManagement] secretsmanager:ValidateResourcePolicy. |
+
+---
+
+##### `AcceptCrossAccountReplication`<sup>Required</sup> <a name="AcceptCrossAccountReplication" id="@cdk_utils/iam.secretsmanager.SecretsManagerActions.property.AcceptCrossAccountReplication"></a>
+
+```typescript
+public readonly AcceptCrossAccountReplication: string;
+```
+
+- *Type:* string
+
+[Write] secretsmanager:AcceptCrossAccountReplication.
 
 ---
 
@@ -305,6 +321,18 @@ All write-level actions.
 
 ---
 
+##### `AssociateCrossAccountReplica`<sup>Required</sup> <a name="AssociateCrossAccountReplica" id="@cdk_utils/iam.secretsmanager.SecretsManagerActions.property.AssociateCrossAccountReplica"></a>
+
+```typescript
+public readonly AssociateCrossAccountReplica: string;
+```
+
+- *Type:* string
+
+[Write] secretsmanager:AssociateCrossAccountReplica.
+
+---
+
 ##### `BatchGetSecretValue`<sup>Required</sup> <a name="BatchGetSecretValue" id="@cdk_utils/iam.secretsmanager.SecretsManagerActions.property.BatchGetSecretValue"></a>
 
 ```typescript
@@ -374,6 +402,30 @@ public readonly DescribeSecret: string;
 - *Type:* string
 
 [Read] secretsmanager:DescribeSecret.
+
+---
+
+##### `DisassociateCrossAccountReplica`<sup>Required</sup> <a name="DisassociateCrossAccountReplica" id="@cdk_utils/iam.secretsmanager.SecretsManagerActions.property.DisassociateCrossAccountReplica"></a>
+
+```typescript
+public readonly DisassociateCrossAccountReplica: string;
+```
+
+- *Type:* string
+
+[Write] secretsmanager:DisassociateCrossAccountReplica.
+
+---
+
+##### `ListResourcePolicies`<sup>Required</sup> <a name="ListResourcePolicies" id="@cdk_utils/iam.secretsmanager.SecretsManagerActions.property.ListResourcePolicies"></a>
+
+```typescript
+public readonly ListResourcePolicies: string;
+```
+
+- *Type:* string
+
+[Read] secretsmanager:ListResourcePolicies.
 
 ---
 
@@ -582,6 +634,8 @@ new secretsmanager.SecretsManagerConditions()
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.addReplicaRegions">addReplicaRegions</a></code> | Generates a condition block for `secretsmanager:AddReplicaRegions`. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.blockPublicPolicy">blockPublicPolicy</a></code> | Generates a condition block for `secretsmanager:BlockPublicPolicy`. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.conditionName">conditionName</a></code> | Generates a condition block for `secretsmanager:Name`. |
+| <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.crossAccountPrimaryARN">crossAccountPrimaryARN</a></code> | Generates a condition block for `secretsmanager:CrossAccountPrimaryARN`. |
+| <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.crossAccountReplicaARN">crossAccountReplicaARN</a></code> | Generates a condition block for `secretsmanager:CrossAccountReplicaARN`. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.description">description</a></code> | Generates a condition block for `secretsmanager:Description`. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.externalSecretRotationRoleARN">externalSecretRotationRoleARN</a></code> | Generates a condition block for `secretsmanager:ExternalSecretRotationRoleArn`. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.forceDeleteWithoutRecovery">forceDeleteWithoutRecovery</a></code> | Generates a condition block for `secretsmanager:ForceDeleteWithoutRecovery`. |
@@ -589,7 +643,10 @@ new secretsmanager.SecretsManagerConditions()
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.kmsKeyARN">kmsKeyARN</a></code> | Generates a condition block for `secretsmanager:KmsKeyArn`. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.kmsKeyId">kmsKeyId</a></code> | Generates a condition block for `secretsmanager:KmsKeyId`. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.modifyRotationRules">modifyRotationRules</a></code> | Generates a condition block for `secretsmanager:ModifyRotationRules`. |
+| <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.policyName">policyName</a></code> | Generates a condition block for `secretsmanager:PolicyName`. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.recoveryWindowInDays">recoveryWindowInDays</a></code> | Generates a condition block for `secretsmanager:RecoveryWindowInDays`. |
+| <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.replicaRestriction">replicaRestriction</a></code> | Generates a condition block for `secretsmanager:ReplicaRestriction`. |
+| <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.replicationRoleARN">replicationRoleARN</a></code> | Generates a condition block for `secretsmanager:ReplicationRoleARN`. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.requestTag">requestTag</a></code> | Generates a condition block for `aws:RequestTag/${TagKey}`. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.resourceAllowRotationLambdaARN">resourceAllowRotationLambdaARN</a></code> | Generates a condition block for `secretsmanager:resource/AllowRotationLambdaArn`. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.resourceTag">resourceTag</a></code> | Generates a condition block for `aws:ResourceTag/${TagKey}`. |
@@ -649,6 +706,38 @@ secretsmanager.SecretsManagerConditions.conditionName(value: string)
 Generates a condition block for `secretsmanager:Name`.
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.secretsmanager.SecretsManagerConditions.conditionName.parameter.value"></a>
+
+- *Type:* string
+
+---
+
+##### `crossAccountPrimaryARN` <a name="crossAccountPrimaryARN" id="@cdk_utils/iam.secretsmanager.SecretsManagerConditions.crossAccountPrimaryARN"></a>
+
+```typescript
+import { secretsmanager } from '@cdk_utils/iam'
+
+secretsmanager.SecretsManagerConditions.crossAccountPrimaryARN(value: string)
+```
+
+Generates a condition block for `secretsmanager:CrossAccountPrimaryARN`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.secretsmanager.SecretsManagerConditions.crossAccountPrimaryARN.parameter.value"></a>
+
+- *Type:* string
+
+---
+
+##### `crossAccountReplicaARN` <a name="crossAccountReplicaARN" id="@cdk_utils/iam.secretsmanager.SecretsManagerConditions.crossAccountReplicaARN"></a>
+
+```typescript
+import { secretsmanager } from '@cdk_utils/iam'
+
+secretsmanager.SecretsManagerConditions.crossAccountReplicaARN(value: string)
+```
+
+Generates a condition block for `secretsmanager:CrossAccountReplicaARN`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.secretsmanager.SecretsManagerConditions.crossAccountReplicaARN.parameter.value"></a>
 
 - *Type:* string
 
@@ -766,6 +855,22 @@ Generates a condition block for `secretsmanager:ModifyRotationRules`.
 
 ---
 
+##### `policyName` <a name="policyName" id="@cdk_utils/iam.secretsmanager.SecretsManagerConditions.policyName"></a>
+
+```typescript
+import { secretsmanager } from '@cdk_utils/iam'
+
+secretsmanager.SecretsManagerConditions.policyName(value: string)
+```
+
+Generates a condition block for `secretsmanager:PolicyName`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.secretsmanager.SecretsManagerConditions.policyName.parameter.value"></a>
+
+- *Type:* string
+
+---
+
 ##### `recoveryWindowInDays` <a name="recoveryWindowInDays" id="@cdk_utils/iam.secretsmanager.SecretsManagerConditions.recoveryWindowInDays"></a>
 
 ```typescript
@@ -779,6 +884,38 @@ Generates a condition block for `secretsmanager:RecoveryWindowInDays`.
 ###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.secretsmanager.SecretsManagerConditions.recoveryWindowInDays.parameter.value"></a>
 
 - *Type:* number
+
+---
+
+##### `replicaRestriction` <a name="replicaRestriction" id="@cdk_utils/iam.secretsmanager.SecretsManagerConditions.replicaRestriction"></a>
+
+```typescript
+import { secretsmanager } from '@cdk_utils/iam'
+
+secretsmanager.SecretsManagerConditions.replicaRestriction(value: string)
+```
+
+Generates a condition block for `secretsmanager:ReplicaRestriction`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.secretsmanager.SecretsManagerConditions.replicaRestriction.parameter.value"></a>
+
+- *Type:* string
+
+---
+
+##### `replicationRoleARN` <a name="replicationRoleARN" id="@cdk_utils/iam.secretsmanager.SecretsManagerConditions.replicationRoleARN"></a>
+
+```typescript
+import { secretsmanager } from '@cdk_utils/iam'
+
+secretsmanager.SecretsManagerConditions.replicationRoleARN(value: string)
+```
+
+Generates a condition block for `secretsmanager:ReplicationRoleARN`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.secretsmanager.SecretsManagerConditions.replicationRoleARN.parameter.value"></a>
+
+- *Type:* string
 
 ---
 
@@ -995,32 +1132,41 @@ Generates a condition block for `secretsmanager:VersionStage`.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.AcceptCrossAccountReplicationConditionKeys">AcceptCrossAccountReplicationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the AcceptCrossAccountReplication action. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.actionGetResourcePolicyConditionKeys">actionGetResourcePolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetResourcePolicy action. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.actionGetSecretValueConditionKeys">actionGetSecretValueConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetSecretValue action. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.ADD_REPLICA_REGIONS">ADD_REPLICA_REGIONS</a></code> | <code>string</code> | Condition key: secretsmanager:AddReplicaRegions (ArrayOfString). |
+| <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.AssociateCrossAccountReplicaConditionKeys">AssociateCrossAccountReplicaConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the AssociateCrossAccountReplica action. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.AWS_REQUEST_TAG">AWS_REQUEST_TAG</a></code> | <code>string</code> | Condition key: aws:RequestTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.AWS_RESOURCE_TAG">AWS_RESOURCE_TAG</a></code> | <code>string</code> | Condition key: aws:ResourceTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.AWS_TAG_KEYS">AWS_TAG_KEYS</a></code> | <code>string</code> | Condition key: aws:TagKeys (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.BLOCK_PUBLIC_POLICY">BLOCK_PUBLIC_POLICY</a></code> | <code>string</code> | Condition key: secretsmanager:BlockPublicPolicy (Bool). |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.CancelRotateSecretConditionKeys">CancelRotateSecretConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CancelRotateSecret action. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.CreateSecretConditionKeys">CreateSecretConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateSecret action. |
+| <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.CROSS_ACCOUNT_PRIMARY_ARN">CROSS_ACCOUNT_PRIMARY_ARN</a></code> | <code>string</code> | Condition key: secretsmanager:CrossAccountPrimaryARN (ARN). |
+| <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.CROSS_ACCOUNT_REPLICA_ARN">CROSS_ACCOUNT_REPLICA_ARN</a></code> | <code>string</code> | Condition key: secretsmanager:CrossAccountReplicaARN (ARN). |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.DeleteResourcePolicyConditionKeys">DeleteResourcePolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteResourcePolicy action. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.DeleteSecretConditionKeys">DeleteSecretConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteSecret action. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.DescribeSecretConditionKeys">DescribeSecretConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeSecret action. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.DESCRIPTION">DESCRIPTION</a></code> | <code>string</code> | Condition key: secretsmanager:Description (String). |
+| <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.DisassociateCrossAccountReplicaConditionKeys">DisassociateCrossAccountReplicaConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DisassociateCrossAccountReplica action. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.EXTERNAL_SECRET_ROTATION_ROLE_ARN">EXTERNAL_SECRET_ROTATION_ROLE_ARN</a></code> | <code>string</code> | Condition key: secretsmanager:ExternalSecretRotationRoleArn (ARN). |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.FORCE_DELETE_WITHOUT_RECOVERY">FORCE_DELETE_WITHOUT_RECOVERY</a></code> | <code>string</code> | Condition key: secretsmanager:ForceDeleteWithoutRecovery (Bool). |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.FORCE_OVERWRITE_REPLICA_SECRET">FORCE_OVERWRITE_REPLICA_SECRET</a></code> | <code>string</code> | Condition key: secretsmanager:ForceOverwriteReplicaSecret (Bool). |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.KMS_KEY_ARN">KMS_KEY_ARN</a></code> | <code>string</code> | Condition key: secretsmanager:KmsKeyArn (ARN). |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.KMS_KEY_ID">KMS_KEY_ID</a></code> | <code>string</code> | Condition key: secretsmanager:KmsKeyId (String). |
+| <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.ListResourcePoliciesConditionKeys">ListResourcePoliciesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListResourcePolicies action. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.ListSecretVersionIdsConditionKeys">ListSecretVersionIdsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListSecretVersionIds action. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.MODIFY_ROTATION_RULES">MODIFY_ROTATION_RULES</a></code> | <code>string</code> | Condition key: secretsmanager:ModifyRotationRules (Bool). |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.NAME">NAME</a></code> | <code>string</code> | Condition key: secretsmanager:Name (String). |
+| <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.POLICY_NAME">POLICY_NAME</a></code> | <code>string</code> | Condition key: secretsmanager:PolicyName (String). |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.PutResourcePolicyConditionKeys">PutResourcePolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutResourcePolicy action. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.PutSecretValueConditionKeys">PutSecretValueConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutSecretValue action. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.RECOVERY_WINDOW_IN_DAYS">RECOVERY_WINDOW_IN_DAYS</a></code> | <code>string</code> | Condition key: secretsmanager:RecoveryWindowInDays (Numeric). |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.RemoveRegionsFromReplicationConditionKeys">RemoveRegionsFromReplicationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the RemoveRegionsFromReplication action. |
+| <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.REPLICA_RESTRICTION">REPLICA_RESTRICTION</a></code> | <code>string</code> | Condition key: secretsmanager:ReplicaRestriction (String). |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.ReplicateSecretToRegionsConditionKeys">ReplicateSecretToRegionsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ReplicateSecretToRegions action. |
+| <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.REPLICATION_ROLE_ARN">REPLICATION_ROLE_ARN</a></code> | <code>string</code> | Condition key: secretsmanager:ReplicationRoleARN (ARN). |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.RESOURCE_ALLOW_ROTATION_LAMBDA_ARN">RESOURCE_ALLOW_ROTATION_LAMBDA_ARN</a></code> | <code>string</code> | Condition key: secretsmanager:resource/AllowRotationLambdaArn (ARN). |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.RESOURCE_TAG_TAG_KEY">RESOURCE_TAG_TAG_KEY</a></code> | <code>string</code> | Condition key: secretsmanager:ResourceTag/tag-key (String). |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.RESOURCE_TYPE">RESOURCE_TYPE</a></code> | <code>string</code> | Condition key: secretsmanager:resource/Type (String). |
@@ -1039,6 +1185,18 @@ Generates a condition block for `secretsmanager:VersionStage`.
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.ValidateResourcePolicyConditionKeys">ValidateResourcePolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ValidateResourcePolicy action. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.VERSION_ID">VERSION_ID</a></code> | <code>string</code> | Condition key: secretsmanager:VersionId (String). |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.VERSION_STAGE">VERSION_STAGE</a></code> | <code>string</code> | Condition key: secretsmanager:VersionStage (String). |
+
+---
+
+##### `AcceptCrossAccountReplicationConditionKeys`<sup>Required</sup> <a name="AcceptCrossAccountReplicationConditionKeys" id="@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.AcceptCrossAccountReplicationConditionKeys"></a>
+
+```typescript
+public readonly AcceptCrossAccountReplicationConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the AcceptCrossAccountReplication action.
 
 ---
 
@@ -1075,6 +1233,18 @@ public readonly ADD_REPLICA_REGIONS: string;
 - *Type:* string
 
 Condition key: secretsmanager:AddReplicaRegions (ArrayOfString).
+
+---
+
+##### `AssociateCrossAccountReplicaConditionKeys`<sup>Required</sup> <a name="AssociateCrossAccountReplicaConditionKeys" id="@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.AssociateCrossAccountReplicaConditionKeys"></a>
+
+```typescript
+public readonly AssociateCrossAccountReplicaConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the AssociateCrossAccountReplica action.
 
 ---
 
@@ -1150,6 +1320,30 @@ Condition keys applicable to the CreateSecret action.
 
 ---
 
+##### `CROSS_ACCOUNT_PRIMARY_ARN`<sup>Required</sup> <a name="CROSS_ACCOUNT_PRIMARY_ARN" id="@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.CROSS_ACCOUNT_PRIMARY_ARN"></a>
+
+```typescript
+public readonly CROSS_ACCOUNT_PRIMARY_ARN: string;
+```
+
+- *Type:* string
+
+Condition key: secretsmanager:CrossAccountPrimaryARN (ARN).
+
+---
+
+##### `CROSS_ACCOUNT_REPLICA_ARN`<sup>Required</sup> <a name="CROSS_ACCOUNT_REPLICA_ARN" id="@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.CROSS_ACCOUNT_REPLICA_ARN"></a>
+
+```typescript
+public readonly CROSS_ACCOUNT_REPLICA_ARN: string;
+```
+
+- *Type:* string
+
+Condition key: secretsmanager:CrossAccountReplicaARN (ARN).
+
+---
+
 ##### `DeleteResourcePolicyConditionKeys`<sup>Required</sup> <a name="DeleteResourcePolicyConditionKeys" id="@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.DeleteResourcePolicyConditionKeys"></a>
 
 ```typescript
@@ -1195,6 +1389,18 @@ public readonly DESCRIPTION: string;
 - *Type:* string
 
 Condition key: secretsmanager:Description (String).
+
+---
+
+##### `DisassociateCrossAccountReplicaConditionKeys`<sup>Required</sup> <a name="DisassociateCrossAccountReplicaConditionKeys" id="@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.DisassociateCrossAccountReplicaConditionKeys"></a>
+
+```typescript
+public readonly DisassociateCrossAccountReplicaConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DisassociateCrossAccountReplica action.
 
 ---
 
@@ -1258,6 +1464,18 @@ Condition key: secretsmanager:KmsKeyId (String).
 
 ---
 
+##### `ListResourcePoliciesConditionKeys`<sup>Required</sup> <a name="ListResourcePoliciesConditionKeys" id="@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.ListResourcePoliciesConditionKeys"></a>
+
+```typescript
+public readonly ListResourcePoliciesConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ListResourcePolicies action.
+
+---
+
 ##### `ListSecretVersionIdsConditionKeys`<sup>Required</sup> <a name="ListSecretVersionIdsConditionKeys" id="@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.ListSecretVersionIdsConditionKeys"></a>
 
 ```typescript
@@ -1291,6 +1509,18 @@ public readonly NAME: string;
 - *Type:* string
 
 Condition key: secretsmanager:Name (String).
+
+---
+
+##### `POLICY_NAME`<sup>Required</sup> <a name="POLICY_NAME" id="@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.POLICY_NAME"></a>
+
+```typescript
+public readonly POLICY_NAME: string;
+```
+
+- *Type:* string
+
+Condition key: secretsmanager:PolicyName (String).
 
 ---
 
@@ -1342,6 +1572,18 @@ Condition keys applicable to the RemoveRegionsFromReplication action.
 
 ---
 
+##### `REPLICA_RESTRICTION`<sup>Required</sup> <a name="REPLICA_RESTRICTION" id="@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.REPLICA_RESTRICTION"></a>
+
+```typescript
+public readonly REPLICA_RESTRICTION: string;
+```
+
+- *Type:* string
+
+Condition key: secretsmanager:ReplicaRestriction (String).
+
+---
+
 ##### `ReplicateSecretToRegionsConditionKeys`<sup>Required</sup> <a name="ReplicateSecretToRegionsConditionKeys" id="@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.ReplicateSecretToRegionsConditionKeys"></a>
 
 ```typescript
@@ -1351,6 +1593,18 @@ public readonly ReplicateSecretToRegionsConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the ReplicateSecretToRegions action.
+
+---
+
+##### `REPLICATION_ROLE_ARN`<sup>Required</sup> <a name="REPLICATION_ROLE_ARN" id="@cdk_utils/iam.secretsmanager.SecretsManagerConditions.property.REPLICATION_ROLE_ARN"></a>
+
+```typescript
+public readonly REPLICATION_ROLE_ARN: string;
+```
+
+- *Type:* string
+
+Condition key: secretsmanager:ReplicationRoleARN (ARN).
 
 ---
 
@@ -1594,12 +1848,15 @@ new secretsmanager.SecretsManagerOperations()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerOperations.property.AssociateCrossAccountReplica">AssociateCrossAccountReplica</a></code> | <code>string[]</code> | IAM actions required for the AssociateCrossAccountReplica API call. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerOperations.property.BatchGetSecretValue">BatchGetSecretValue</a></code> | <code>string[]</code> | IAM actions required for the BatchGetSecretValue API call. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerOperations.property.CancelRotateSecret">CancelRotateSecret</a></code> | <code>string[]</code> | IAM actions required for the CancelRotateSecret API call. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerOperations.property.CreateSecret">CreateSecret</a></code> | <code>string[]</code> | IAM actions required for the CreateSecret API call. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerOperations.property.DeleteResourcePolicy">DeleteResourcePolicy</a></code> | <code>string[]</code> | IAM actions required for the DeleteResourcePolicy API call. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerOperations.property.DeleteSecret">DeleteSecret</a></code> | <code>string[]</code> | IAM actions required for the DeleteSecret API call. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerOperations.property.DescribeSecret">DescribeSecret</a></code> | <code>string[]</code> | IAM actions required for the DescribeSecret API call. |
+| <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerOperations.property.DisassociateCrossAccountReplica">DisassociateCrossAccountReplica</a></code> | <code>string[]</code> | IAM actions required for the DisassociateCrossAccountReplica API call. |
+| <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerOperations.property.ListResourcePolicies">ListResourcePolicies</a></code> | <code>string[]</code> | IAM actions required for the ListResourcePolicies API call. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerOperations.property.ListSecrets">ListSecrets</a></code> | <code>string[]</code> | IAM actions required for the ListSecrets API call. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerOperations.property.ListSecretVersionIds">ListSecretVersionIds</a></code> | <code>string[]</code> | IAM actions required for the ListSecretVersionIds API call. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerOperations.property.opGetRandomPassword">opGetRandomPassword</a></code> | <code>string[]</code> | IAM actions required for the GetRandomPassword API call. |
@@ -1617,6 +1874,18 @@ new secretsmanager.SecretsManagerOperations()
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerOperations.property.UpdateSecret">UpdateSecret</a></code> | <code>string[]</code> | IAM actions required for the UpdateSecret API call. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerOperations.property.UpdateSecretVersionStage">UpdateSecretVersionStage</a></code> | <code>string[]</code> | IAM actions required for the UpdateSecretVersionStage API call. |
 | <code><a href="#@cdk_utils/iam.secretsmanager.SecretsManagerOperations.property.ValidateResourcePolicy">ValidateResourcePolicy</a></code> | <code>string[]</code> | IAM actions required for the ValidateResourcePolicy API call. |
+
+---
+
+##### `AssociateCrossAccountReplica`<sup>Required</sup> <a name="AssociateCrossAccountReplica" id="@cdk_utils/iam.secretsmanager.SecretsManagerOperations.property.AssociateCrossAccountReplica"></a>
+
+```typescript
+public readonly AssociateCrossAccountReplica: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the AssociateCrossAccountReplica API call.
 
 ---
 
@@ -1689,6 +1958,30 @@ public readonly DescribeSecret: string[];
 - *Type:* string[]
 
 IAM actions required for the DescribeSecret API call.
+
+---
+
+##### `DisassociateCrossAccountReplica`<sup>Required</sup> <a name="DisassociateCrossAccountReplica" id="@cdk_utils/iam.secretsmanager.SecretsManagerOperations.property.DisassociateCrossAccountReplica"></a>
+
+```typescript
+public readonly DisassociateCrossAccountReplica: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DisassociateCrossAccountReplica API call.
+
+---
+
+##### `ListResourcePolicies`<sup>Required</sup> <a name="ListResourcePolicies" id="@cdk_utils/iam.secretsmanager.SecretsManagerOperations.property.ListResourcePolicies"></a>
+
+```typescript
+public readonly ListResourcePolicies: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListResourcePolicies API call.
 
 ---
 

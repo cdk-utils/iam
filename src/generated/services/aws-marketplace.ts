@@ -120,6 +120,9 @@ export class AWSMarketplaceActions {
 	/** [Read] aws-marketplace:GetSellerDashboard */
 	static readonly actionGetSellerDashboard =
 		"aws-marketplace:GetSellerDashboard";
+	/** [Read] aws-marketplace:GetSellerReportingData */
+	static readonly actionGetSellerReportingData =
+		"aws-marketplace:GetSellerReportingData";
 	/** [Read] aws-marketplace:GetTaxComplianceProfile */
 	static readonly actionGetTaxComplianceProfile =
 		"aws-marketplace:GetTaxComplianceProfile";
@@ -281,6 +284,7 @@ export class AWSMarketplaceActions {
 		AWSMarketplaceActions.actionGetProduct,
 		AWSMarketplaceActions.actionGetResourcePolicy,
 		AWSMarketplaceActions.actionGetSellerDashboard,
+		AWSMarketplaceActions.actionGetSellerReportingData,
 		AWSMarketplaceActions.actionGetTaxComplianceProfile,
 		AWSMarketplaceActions.actionGetVerification,
 		AWSMarketplaceActions.actionGetVerificationEvidence,
@@ -850,6 +854,38 @@ export interface AWSMarketplaceSellerDashboardArnComponents {
 }
 
 /**
+ * Properties for building a SellerDataset ARN.
+ */
+export interface AWSMarketplaceSellerDatasetArnProps {
+	/** The Catalog component of the ARN. */
+	readonly catalog: string;
+	/** The FactTable component of the ARN. */
+	readonly factTable: string;
+	/** The DatasetName component of the ARN. */
+	readonly datasetName: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a SellerDataset ARN.
+ */
+export interface AWSMarketplaceSellerDatasetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Catalog component. */
+	readonly catalog: string;
+	/** The FactTable component. */
+	readonly factTable: string;
+	/** The DatasetName component. */
+	readonly datasetName: string;
+}
+
+/**
  * Properties for building a TaxComplianceProfile ARN.
  */
 export interface AWSMarketplaceTaxComplianceProfileArnProps {
@@ -967,6 +1003,8 @@ const PurchaseOptionArnRegex =
 	/^arn:(?<partition>[^:]+):aws-marketplace:::catalog\/(?<catalogName>[^:/?]+)\/purchaseOption\/(?<purchaseOptionId>[^:/?]+)$/;
 const SellerDashboardArnRegex =
 	/^arn:(?<partition>[^:]+):aws-marketplace::(?<account>[^:]*):(?<catalog>[^:/?]+)\/ReportingData\/(?<factTable>[^:/?]+)\/Dashboard\/(?<dashboardName>[^:/?]+)$/;
+const SellerDatasetArnRegex =
+	/^arn:(?<partition>[^:]+):aws-marketplace::(?<account>[^:]*):(?<catalog>[^:/?]+)\/ReportingData\/(?<factTable>[^:/?]+)\/Dataset\/(?<datasetName>[^:/?]+)$/;
 const TaxComplianceProfileArnRegex =
 	/^arn:(?<partition>[^:]+):aws-marketplace:(?<region>[^:]*):(?<account>[^:]*):tax-compliance-profile\/(?<resourceId>[^:/?]+)$/;
 const TaxComplianceProfileChangeTaskArnRegex =
@@ -1479,6 +1517,40 @@ export class AWSMarketplaceResources {
 			catalog: match.groups!.catalog,
 			factTable: match.groups!.factTable,
 			dashboardName: match.groups!.dashboardName,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the SellerDataset resource.
+	 */
+	static sellerDataset(props: AWSMarketplaceSellerDatasetArnProps): string {
+		return `arn:${props.partition ?? "aws"}:aws-marketplace::${props.account ?? "*"}:${props.catalog}/ReportingData/${props.factTable}/Dataset/${props.datasetName}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the SellerDataset resource.
+	 */
+	static isValidSellerDatasetArn(arn: string): boolean {
+		return SellerDatasetArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a SellerDataset ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseSellerDatasetArn(
+		arn: string,
+	): AWSMarketplaceSellerDatasetArnComponents {
+		const match = SellerDatasetArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid SellerDataset ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			account: match.groups.account,
+			catalog: match.groups!.catalog,
+			factTable: match.groups!.factTable,
+			datasetName: match.groups!.datasetName,
 		};
 	}
 

@@ -59,6 +59,8 @@ export class CognitoIdpActions {
 	/** [Read] cognito-idp:AdminListUserAuthEvents */
 	static readonly AdminListUserAuthEvents =
 		"cognito-idp:AdminListUserAuthEvents";
+	/** [List] cognito-idp:AdminListUserSessions */
+	static readonly AdminListUserSessions = "cognito-idp:AdminListUserSessions";
 	/** [Write] cognito-idp:AdminRemoveUserFromGroup */
 	static readonly AdminRemoveUserFromGroup =
 		"cognito-idp:AdminRemoveUserFromGroup";
@@ -67,6 +69,8 @@ export class CognitoIdpActions {
 	/** [Write] cognito-idp:AdminRespondToAuthChallenge */
 	static readonly AdminRespondToAuthChallenge =
 		"cognito-idp:AdminRespondToAuthChallenge";
+	/** [Write] cognito-idp:AdminRevokeUserSession */
+	static readonly AdminRevokeUserSession = "cognito-idp:AdminRevokeUserSession";
 	/** [Write] cognito-idp:AdminSetUserMFAPreference */
 	static readonly AdminSetUserMFAPreference =
 		"cognito-idp:AdminSetUserMFAPreference";
@@ -205,9 +209,15 @@ export class CognitoIdpActions {
 	/** [Read] cognito-idp:GetUserAttributeVerificationCode */
 	static readonly actionGetUserAttributeVerificationCode =
 		"cognito-idp:GetUserAttributeVerificationCode";
+	/** [Read] cognito-idp:GetUserPoolClientSessionConfiguration */
+	static readonly actionGetUserPoolClientSessionConfiguration =
+		"cognito-idp:GetUserPoolClientSessionConfiguration";
 	/** [Read] cognito-idp:GetUserPoolMfaConfig */
 	static readonly actionGetUserPoolMfaConfig =
 		"cognito-idp:GetUserPoolMfaConfig";
+	/** [Read] cognito-idp:GetUserPoolSessionConfiguration */
+	static readonly actionGetUserPoolSessionConfiguration =
+		"cognito-idp:GetUserPoolSessionConfiguration";
 	/** [Read] cognito-idp:GetWebACLForResource */
 	static readonly actionGetWebACLForResource =
 		"cognito-idp:GetWebACLForResource";
@@ -240,6 +250,8 @@ export class CognitoIdpActions {
 	static readonly ListUserPoolReplicas = "cognito-idp:ListUserPoolReplicas";
 	/** [List] cognito-idp:ListUserPools */
 	static readonly ListUserPools = "cognito-idp:ListUserPools";
+	/** [List] cognito-idp:ListUserSessions */
+	static readonly ListUserSessions = "cognito-idp:ListUserSessions";
 	/** [List] cognito-idp:ListUsers */
 	static readonly ListUsers = "cognito-idp:ListUsers";
 	/** [List] cognito-idp:ListUsersInGroup */
@@ -250,6 +262,8 @@ export class CognitoIdpActions {
 	static readonly RespondToAuthChallenge = "cognito-idp:RespondToAuthChallenge";
 	/** [Write] cognito-idp:RevokeToken */
 	static readonly RevokeToken = "cognito-idp:RevokeToken";
+	/** [Write] cognito-idp:RevokeUserSession */
+	static readonly RevokeUserSession = "cognito-idp:RevokeUserSession";
 	/** [Write] cognito-idp:SetLogDeliveryConfiguration */
 	static readonly actionSetLogDeliveryConfiguration =
 		"cognito-idp:SetLogDeliveryConfiguration";
@@ -261,9 +275,15 @@ export class CognitoIdpActions {
 	/** [Write] cognito-idp:SetUserMFAPreference */
 	static readonly actionSetUserMFAPreference =
 		"cognito-idp:SetUserMFAPreference";
+	/** [Write] cognito-idp:SetUserPoolClientSessionConfiguration */
+	static readonly actionSetUserPoolClientSessionConfiguration =
+		"cognito-idp:SetUserPoolClientSessionConfiguration";
 	/** [Write] cognito-idp:SetUserPoolMfaConfig */
 	static readonly actionSetUserPoolMfaConfig =
 		"cognito-idp:SetUserPoolMfaConfig";
+	/** [Write] cognito-idp:SetUserPoolSessionConfiguration */
+	static readonly actionSetUserPoolSessionConfiguration =
+		"cognito-idp:SetUserPoolSessionConfiguration";
 	/** [Write] cognito-idp:SetUserSettings */
 	static readonly actionSetUserSettings = "cognito-idp:SetUserSettings";
 	/** [Write] cognito-idp:SignUp */
@@ -336,7 +356,9 @@ export class CognitoIdpActions {
 		CognitoIdpActions.actionGetUICustomization,
 		CognitoIdpActions.actionGetUser,
 		CognitoIdpActions.actionGetUserAttributeVerificationCode,
+		CognitoIdpActions.actionGetUserPoolClientSessionConfiguration,
 		CognitoIdpActions.actionGetUserPoolMfaConfig,
+		CognitoIdpActions.actionGetUserPoolSessionConfiguration,
 		CognitoIdpActions.actionGetWebACLForResource,
 	];
 	/** All write-level actions. */
@@ -358,6 +380,7 @@ export class CognitoIdpActions {
 		CognitoIdpActions.AdminRemoveUserFromGroup,
 		CognitoIdpActions.AdminResetUserPassword,
 		CognitoIdpActions.AdminRespondToAuthChallenge,
+		CognitoIdpActions.AdminRevokeUserSession,
 		CognitoIdpActions.AdminSetUserMFAPreference,
 		CognitoIdpActions.AdminSetUserPassword,
 		CognitoIdpActions.AdminSetUserSettings,
@@ -403,11 +426,14 @@ export class CognitoIdpActions {
 		CognitoIdpActions.ResendConfirmationCode,
 		CognitoIdpActions.RespondToAuthChallenge,
 		CognitoIdpActions.RevokeToken,
+		CognitoIdpActions.RevokeUserSession,
 		CognitoIdpActions.actionSetLogDeliveryConfiguration,
 		CognitoIdpActions.actionSetRiskConfiguration,
 		CognitoIdpActions.actionSetUICustomization,
 		CognitoIdpActions.actionSetUserMFAPreference,
+		CognitoIdpActions.actionSetUserPoolClientSessionConfiguration,
 		CognitoIdpActions.actionSetUserPoolMfaConfig,
+		CognitoIdpActions.actionSetUserPoolSessionConfiguration,
 		CognitoIdpActions.actionSetUserSettings,
 		CognitoIdpActions.SignUp,
 		CognitoIdpActions.StartUserImportJob,
@@ -432,6 +458,7 @@ export class CognitoIdpActions {
 	static readonly AllListActions: string[] = [
 		CognitoIdpActions.AdminListDevices,
 		CognitoIdpActions.AdminListGroupsForUser,
+		CognitoIdpActions.AdminListUserSessions,
 		CognitoIdpActions.ListDevices,
 		CognitoIdpActions.ListGroups,
 		CognitoIdpActions.ListIdentityProviders,
@@ -444,6 +471,7 @@ export class CognitoIdpActions {
 		CognitoIdpActions.ListUserPoolClients,
 		CognitoIdpActions.ListUserPoolReplicas,
 		CognitoIdpActions.ListUserPools,
+		CognitoIdpActions.ListUserSessions,
 		CognitoIdpActions.ListUsers,
 		CognitoIdpActions.ListUsersInGroup,
 	];
@@ -664,6 +692,10 @@ export class CognitoIdpOperations {
 	static readonly AdminListUserAuthEvents: string[] = [
 		"cognito-idp:AdminListUserAuthEvents",
 	];
+	/** IAM actions required for the AdminListUserSessions API call. */
+	static readonly AdminListUserSessions: string[] = [
+		"cognito-idp:AdminListUserSessions",
+	];
 	/** IAM actions required for the AdminRemoveUserFromGroup API call. */
 	static readonly AdminRemoveUserFromGroup: string[] = [
 		"cognito-idp:AdminRemoveUserFromGroup",
@@ -675,6 +707,10 @@ export class CognitoIdpOperations {
 	/** IAM actions required for the AdminRespondToAuthChallenge API call. */
 	static readonly AdminRespondToAuthChallenge: string[] = [
 		"cognito-idp:AdminRespondToAuthChallenge",
+	];
+	/** IAM actions required for the AdminRevokeUserSession API call. */
+	static readonly AdminRevokeUserSession: string[] = [
+		"cognito-idp:AdminRevokeUserSession",
 	];
 	/** IAM actions required for the AdminSetUserMFAPreference API call. */
 	static readonly AdminSetUserMFAPreference: string[] = [
@@ -890,9 +926,17 @@ export class CognitoIdpOperations {
 	];
 	/** IAM actions required for the GetUserAuthFactors API call. */
 	static readonly opGetUserAuthFactors: string[] = [];
+	/** IAM actions required for the GetUserPoolClientSessionConfiguration API call. */
+	static readonly opGetUserPoolClientSessionConfiguration: string[] = [
+		"cognito-idp:GetUserPoolClientSessionConfiguration",
+	];
 	/** IAM actions required for the GetUserPoolMfaConfig API call. */
 	static readonly opGetUserPoolMfaConfig: string[] = [
 		"cognito-idp:GetUserPoolMfaConfig",
+	];
+	/** IAM actions required for the GetUserPoolSessionConfiguration API call. */
+	static readonly opGetUserPoolSessionConfiguration: string[] = [
+		"cognito-idp:GetUserPoolSessionConfiguration",
 	];
 	/** IAM actions required for the GlobalSignOut API call. */
 	static readonly GlobalSignOut: string[] = ["cognito-idp:GlobalSignOut"];
@@ -934,6 +978,8 @@ export class CognitoIdpOperations {
 	];
 	/** IAM actions required for the ListUserPools API call. */
 	static readonly ListUserPools: string[] = ["cognito-idp:ListUserPools"];
+	/** IAM actions required for the ListUserSessions API call. */
+	static readonly ListUserSessions: string[] = ["cognito-idp:ListUserSessions"];
 	/** IAM actions required for the ListUsers API call. */
 	static readonly ListUsers: string[] = ["cognito-idp:ListUsers"];
 	/** IAM actions required for the ListUsersInGroup API call. */
@@ -950,6 +996,10 @@ export class CognitoIdpOperations {
 	];
 	/** IAM actions required for the RevokeToken API call. */
 	static readonly RevokeToken: string[] = ["cognito-idp:RevokeToken"];
+	/** IAM actions required for the RevokeUserSession API call. */
+	static readonly RevokeUserSession: string[] = [
+		"cognito-idp:RevokeUserSession",
+	];
 	/** IAM actions required for the SetLogDeliveryConfiguration API call. */
 	static readonly opSetLogDeliveryConfiguration: string[] = [
 		"cognito-idp:SetLogDeliveryConfiguration",
@@ -966,10 +1016,18 @@ export class CognitoIdpOperations {
 	static readonly opSetUserMFAPreference: string[] = [
 		"cognito-idp:SetUserMFAPreference",
 	];
+	/** IAM actions required for the SetUserPoolClientSessionConfiguration API call. */
+	static readonly opSetUserPoolClientSessionConfiguration: string[] = [
+		"cognito-idp:SetUserPoolClientSessionConfiguration",
+	];
 	/** IAM actions required for the SetUserPoolMfaConfig API call. */
 	static readonly opSetUserPoolMfaConfig: string[] = [
 		"iam:PassRole",
 		"cognito-idp:SetUserPoolMfaConfig",
+	];
+	/** IAM actions required for the SetUserPoolSessionConfiguration API call. */
+	static readonly opSetUserPoolSessionConfiguration: string[] = [
+		"cognito-idp:SetUserPoolSessionConfiguration",
 	];
 	/** IAM actions required for the SetUserSettings API call. */
 	static readonly opSetUserSettings: string[] = ["cognito-idp:SetUserSettings"];

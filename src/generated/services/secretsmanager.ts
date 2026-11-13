@@ -12,6 +12,12 @@ export class SecretsManagerActions {
 	/** The IAM service prefix. */
 	static readonly SERVICE_PREFIX = "secretsmanager";
 
+	/** [Write] secretsmanager:AcceptCrossAccountReplication */
+	static readonly AcceptCrossAccountReplication =
+		"secretsmanager:AcceptCrossAccountReplication";
+	/** [Write] secretsmanager:AssociateCrossAccountReplica */
+	static readonly AssociateCrossAccountReplica =
+		"secretsmanager:AssociateCrossAccountReplica";
 	/** [Read] secretsmanager:BatchGetSecretValue */
 	static readonly BatchGetSecretValue = "secretsmanager:BatchGetSecretValue";
 	/** [Write] secretsmanager:CancelRotateSecret */
@@ -24,12 +30,17 @@ export class SecretsManagerActions {
 	static readonly DeleteSecret = "secretsmanager:DeleteSecret";
 	/** [Read] secretsmanager:DescribeSecret */
 	static readonly DescribeSecret = "secretsmanager:DescribeSecret";
+	/** [Write] secretsmanager:DisassociateCrossAccountReplica */
+	static readonly DisassociateCrossAccountReplica =
+		"secretsmanager:DisassociateCrossAccountReplica";
 	/** [Read] secretsmanager:GetRandomPassword */
 	static readonly actionGetRandomPassword = "secretsmanager:GetRandomPassword";
 	/** [Read] secretsmanager:GetResourcePolicy */
 	static readonly actionGetResourcePolicy = "secretsmanager:GetResourcePolicy";
 	/** [Read] secretsmanager:GetSecretValue */
 	static readonly actionGetSecretValue = "secretsmanager:GetSecretValue";
+	/** [Read] secretsmanager:ListResourcePolicies */
+	static readonly ListResourcePolicies = "secretsmanager:ListResourcePolicies";
 	/** [Read] secretsmanager:ListSecretVersionIds */
 	static readonly ListSecretVersionIds = "secretsmanager:ListSecretVersionIds";
 	/** [List] secretsmanager:ListSecrets */
@@ -71,13 +82,17 @@ export class SecretsManagerActions {
 		SecretsManagerActions.actionGetRandomPassword,
 		SecretsManagerActions.actionGetResourcePolicy,
 		SecretsManagerActions.actionGetSecretValue,
+		SecretsManagerActions.ListResourcePolicies,
 		SecretsManagerActions.ListSecretVersionIds,
 	];
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
+		SecretsManagerActions.AcceptCrossAccountReplication,
+		SecretsManagerActions.AssociateCrossAccountReplica,
 		SecretsManagerActions.CancelRotateSecret,
 		SecretsManagerActions.CreateSecret,
 		SecretsManagerActions.DeleteSecret,
+		SecretsManagerActions.DisassociateCrossAccountReplica,
 		SecretsManagerActions.PutSecretValue,
 		SecretsManagerActions.RemoveRegionsFromReplication,
 		SecretsManagerActions.ReplicateSecretToRegions,
@@ -175,6 +190,12 @@ export class SecretsManagerResources {
  * API operation to required IAM actions mapping for secretsmanager.
  */
 export class SecretsManagerOperations {
+	/** IAM actions required for the AssociateCrossAccountReplica API call. */
+	static readonly AssociateCrossAccountReplica: string[] = [
+		"secretsmanager:AssociateCrossAccountReplica",
+		"secretsmanager:GetSecretValue",
+		"iam:PassRole",
+	];
 	/** IAM actions required for the BatchGetSecretValue API call. */
 	static readonly BatchGetSecretValue: string[] = [
 		"secretsmanager:BatchGetSecretValue",
@@ -188,6 +209,7 @@ export class SecretsManagerOperations {
 	/** IAM actions required for the CreateSecret API call. */
 	static readonly CreateSecret: string[] = [
 		"secretsmanager:CreateSecret",
+		"secretsmanager:PutResourcePolicy",
 		"secretsmanager:ReplicateSecretToRegions",
 		"secretsmanager:TagResource",
 	];
@@ -199,6 +221,10 @@ export class SecretsManagerOperations {
 	static readonly DeleteSecret: string[] = ["secretsmanager:DeleteSecret"];
 	/** IAM actions required for the DescribeSecret API call. */
 	static readonly DescribeSecret: string[] = ["secretsmanager:DescribeSecret"];
+	/** IAM actions required for the DisassociateCrossAccountReplica API call. */
+	static readonly DisassociateCrossAccountReplica: string[] = [
+		"secretsmanager:DisassociateCrossAccountReplica",
+	];
 	/** IAM actions required for the GetRandomPassword API call. */
 	static readonly opGetRandomPassword: string[] = [
 		"secretsmanager:GetRandomPassword",
@@ -210,6 +236,10 @@ export class SecretsManagerOperations {
 	/** IAM actions required for the GetSecretValue API call. */
 	static readonly opGetSecretValue: string[] = [
 		"secretsmanager:GetSecretValue",
+	];
+	/** IAM actions required for the ListResourcePolicies API call. */
+	static readonly ListResourcePolicies: string[] = [
+		"secretsmanager:ListResourcePolicies",
 	];
 	/** IAM actions required for the ListSecretVersionIds API call. */
 	static readonly ListSecretVersionIds: string[] = [
@@ -240,6 +270,7 @@ export class SecretsManagerOperations {
 	];
 	/** IAM actions required for the StopReplicationToReplica API call. */
 	static readonly StopReplicationToReplica: string[] = [
+		"secretsmanager:DeleteResourcePolicy",
 		"secretsmanager:StopReplicationToReplica",
 	];
 	/** IAM actions required for the TagResource API call. */
@@ -263,6 +294,28 @@ export class SecretsManagerOperations {
  * Condition key constants and builders for secretsmanager.
  */
 export class SecretsManagerConditions {
+	/** Condition keys applicable to the AcceptCrossAccountReplication action. */
+	static readonly AcceptCrossAccountReplicationConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"secretsmanager:CrossAccountReplicaARN",
+		"secretsmanager:ReplicaRestriction",
+		"secretsmanager:ReplicationRoleARN",
+		"secretsmanager:ResourceTag/tag-key",
+		"secretsmanager:SecretId",
+		"secretsmanager:SecretPrimaryRegion",
+		"secretsmanager:resource/AllowRotationLambdaArn",
+	];
+	/** Condition keys applicable to the AssociateCrossAccountReplica action. */
+	static readonly AssociateCrossAccountReplicaConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"secretsmanager:CrossAccountReplicaARN",
+		"secretsmanager:ReplicaRestriction",
+		"secretsmanager:ReplicationRoleARN",
+		"secretsmanager:ResourceTag/tag-key",
+		"secretsmanager:SecretId",
+		"secretsmanager:SecretPrimaryRegion",
+		"secretsmanager:resource/AllowRotationLambdaArn",
+	];
 	/** Condition keys applicable to the CancelRotateSecret action. */
 	static readonly CancelRotateSecretConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
@@ -278,6 +331,7 @@ export class SecretsManagerConditions {
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 		"secretsmanager:AddReplicaRegions",
+		"secretsmanager:CrossAccountPrimaryARN",
 		"secretsmanager:Description",
 		"secretsmanager:ForceOverwriteReplicaSecret",
 		"secretsmanager:KmsKeyArn",
@@ -289,6 +343,7 @@ export class SecretsManagerConditions {
 	/** Condition keys applicable to the DeleteResourcePolicy action. */
 	static readonly DeleteResourcePolicyConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
+		"secretsmanager:PolicyName",
 		"secretsmanager:ResourceTag/tag-key",
 		"secretsmanager:SecretId",
 		"secretsmanager:SecretPrimaryRegion",
@@ -315,9 +370,19 @@ export class SecretsManagerConditions {
 		"secretsmanager:resource/AllowRotationLambdaArn",
 		"secretsmanager:resource/Type",
 	];
+	/** Condition keys applicable to the DisassociateCrossAccountReplica action. */
+	static readonly DisassociateCrossAccountReplicaConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"secretsmanager:CrossAccountReplicaARN",
+		"secretsmanager:ResourceTag/tag-key",
+		"secretsmanager:SecretId",
+		"secretsmanager:SecretPrimaryRegion",
+		"secretsmanager:resource/AllowRotationLambdaArn",
+	];
 	/** Condition keys applicable to the GetResourcePolicy action. */
 	static readonly actionGetResourcePolicyConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
+		"secretsmanager:PolicyName",
 		"secretsmanager:ResourceTag/tag-key",
 		"secretsmanager:SecretId",
 		"secretsmanager:SecretPrimaryRegion",
@@ -335,6 +400,15 @@ export class SecretsManagerConditions {
 		"secretsmanager:resource/AllowRotationLambdaArn",
 		"secretsmanager:resource/Type",
 	];
+	/** Condition keys applicable to the ListResourcePolicies action. */
+	static readonly ListResourcePoliciesConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"secretsmanager:ResourceTag/tag-key",
+		"secretsmanager:SecretId",
+		"secretsmanager:SecretPrimaryRegion",
+		"secretsmanager:resource/AllowRotationLambdaArn",
+		"secretsmanager:resource/Type",
+	];
 	/** Condition keys applicable to the ListSecretVersionIds action. */
 	static readonly ListSecretVersionIdsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
@@ -348,6 +422,7 @@ export class SecretsManagerConditions {
 	static readonly PutResourcePolicyConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"secretsmanager:BlockPublicPolicy",
+		"secretsmanager:PolicyName",
 		"secretsmanager:ResourceTag/tag-key",
 		"secretsmanager:SecretId",
 		"secretsmanager:SecretPrimaryRegion",
@@ -478,6 +553,12 @@ export class SecretsManagerConditions {
 	static readonly ADD_REPLICA_REGIONS = "secretsmanager:AddReplicaRegions";
 	/** Condition key: secretsmanager:BlockPublicPolicy (Bool) */
 	static readonly BLOCK_PUBLIC_POLICY = "secretsmanager:BlockPublicPolicy";
+	/** Condition key: secretsmanager:CrossAccountPrimaryARN (ARN) */
+	static readonly CROSS_ACCOUNT_PRIMARY_ARN =
+		"secretsmanager:CrossAccountPrimaryARN";
+	/** Condition key: secretsmanager:CrossAccountReplicaARN (ARN) */
+	static readonly CROSS_ACCOUNT_REPLICA_ARN =
+		"secretsmanager:CrossAccountReplicaARN";
 	/** Condition key: secretsmanager:Description (String) */
 	static readonly DESCRIPTION = "secretsmanager:Description";
 	/** Condition key: secretsmanager:ExternalSecretRotationRoleArn (ARN) */
@@ -497,9 +578,15 @@ export class SecretsManagerConditions {
 	static readonly MODIFY_ROTATION_RULES = "secretsmanager:ModifyRotationRules";
 	/** Condition key: secretsmanager:Name (String) */
 	static readonly NAME = "secretsmanager:Name";
+	/** Condition key: secretsmanager:PolicyName (String) */
+	static readonly POLICY_NAME = "secretsmanager:PolicyName";
 	/** Condition key: secretsmanager:RecoveryWindowInDays (Numeric) */
 	static readonly RECOVERY_WINDOW_IN_DAYS =
 		"secretsmanager:RecoveryWindowInDays";
+	/** Condition key: secretsmanager:ReplicaRestriction (String) */
+	static readonly REPLICA_RESTRICTION = "secretsmanager:ReplicaRestriction";
+	/** Condition key: secretsmanager:ReplicationRoleARN (ARN) */
+	static readonly REPLICATION_ROLE_ARN = "secretsmanager:ReplicationRoleARN";
 	/** Condition key: secretsmanager:ResourceTag/tag-key (String) */
 	static readonly RESOURCE_TAG_TAG_KEY = "secretsmanager:ResourceTag/tag-key";
 	/** Condition key: secretsmanager:RotateImmediately (Bool) */
@@ -563,6 +650,24 @@ export class SecretsManagerConditions {
 		value: boolean,
 	): Record<string, Record<string, boolean>> {
 		return { Bool: { "secretsmanager:BlockPublicPolicy": value } };
+	}
+
+	/**
+	 * Generates a condition block for `secretsmanager:CrossAccountPrimaryARN`.
+	 */
+	static crossAccountPrimaryARN(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { ArnEquals: { "secretsmanager:CrossAccountPrimaryARN": value } };
+	}
+
+	/**
+	 * Generates a condition block for `secretsmanager:CrossAccountReplicaARN`.
+	 */
+	static crossAccountReplicaARN(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { ArnEquals: { "secretsmanager:CrossAccountReplicaARN": value } };
 	}
 
 	/**
@@ -632,12 +737,37 @@ export class SecretsManagerConditions {
 	}
 
 	/**
+	 * Generates a condition block for `secretsmanager:PolicyName`.
+	 */
+	static policyName(value: string): Record<string, Record<string, string>> {
+		return { StringEquals: { "secretsmanager:PolicyName": value } };
+	}
+
+	/**
 	 * Generates a condition block for `secretsmanager:RecoveryWindowInDays`.
 	 */
 	static recoveryWindowInDays(
 		value: number,
 	): Record<string, Record<string, number>> {
 		return { NumericEquals: { "secretsmanager:RecoveryWindowInDays": value } };
+	}
+
+	/**
+	 * Generates a condition block for `secretsmanager:ReplicaRestriction`.
+	 */
+	static replicaRestriction(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "secretsmanager:ReplicaRestriction": value } };
+	}
+
+	/**
+	 * Generates a condition block for `secretsmanager:ReplicationRoleARN`.
+	 */
+	static replicationRoleARN(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { ArnEquals: { "secretsmanager:ReplicationRoleARN": value } };
 	}
 
 	/**

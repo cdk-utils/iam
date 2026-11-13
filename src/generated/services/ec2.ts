@@ -192,6 +192,9 @@ export class EC2Actions {
 	/** [Write] ec2:CreateCapacityReservationCancellationQuote */
 	static readonly CreateCapacityReservationCancellationQuote =
 		"ec2:CreateCapacityReservationCancellationQuote";
+	/** [Write] ec2:CreateCapacityReservationDateChangeQuote */
+	static readonly CreateCapacityReservationDateChangeQuote =
+		"ec2:CreateCapacityReservationDateChangeQuote";
 	/** [Write] ec2:CreateCapacityReservationFleet */
 	static readonly CreateCapacityReservationFleet =
 		"ec2:CreateCapacityReservationFleet";
@@ -460,6 +463,9 @@ export class EC2Actions {
 	static readonly DeleteCarrierGateway = "ec2:DeleteCarrierGateway";
 	/** [Write] ec2:DeleteClientVpnEndpoint */
 	static readonly DeleteClientVpnEndpoint = "ec2:DeleteClientVpnEndpoint";
+	/** [Write] ec2:DeleteClientVpnEndpointAuthorizationPolicy */
+	static readonly DeleteClientVpnEndpointAuthorizationPolicy =
+		"ec2:DeleteClientVpnEndpointAuthorizationPolicy";
 	/** [Write] ec2:DeleteClientVpnRoute */
 	static readonly DeleteClientVpnRoute = "ec2:DeleteClientVpnRoute";
 	/** [Write] ec2:DeleteCoipCidr */
@@ -769,6 +775,9 @@ export class EC2Actions {
 	/** [List] ec2:DescribeCapacityReservationCancellationQuotes */
 	static readonly DescribeCapacityReservationCancellationQuotes =
 		"ec2:DescribeCapacityReservationCancellationQuotes";
+	/** [List] ec2:DescribeCapacityReservationDateChangeQuotes */
+	static readonly DescribeCapacityReservationDateChangeQuotes =
+		"ec2:DescribeCapacityReservationDateChangeQuotes";
 	/** [List] ec2:DescribeCapacityReservationFleets */
 	static readonly DescribeCapacityReservationFleets =
 		"ec2:DescribeCapacityReservationFleets";
@@ -1444,6 +1453,9 @@ export class EC2Actions {
 	/** [Read] ec2:GetCapacityReservationUsage */
 	static readonly actionGetCapacityReservationUsage =
 		"ec2:GetCapacityReservationUsage";
+	/** [Read] ec2:GetClientVpnEndpointAuthorizationPolicy */
+	static readonly actionGetClientVpnEndpointAuthorizationPolicy =
+		"ec2:GetClientVpnEndpointAuthorizationPolicy";
 	/** [Read] ec2:GetCoipPoolUsage */
 	static readonly actionGetCoipPoolUsage = "ec2:GetCoipPoolUsage";
 	/** [Read] ec2:GetConsoleOutput */
@@ -1477,6 +1489,8 @@ export class EC2Actions {
 	/** [Read] ec2:GetImageBlockPublicAccessState */
 	static readonly actionGetImageBlockPublicAccessState =
 		"ec2:GetImageBlockPublicAccessState";
+	/** [Read] ec2:GetImageFindings */
+	static readonly actionGetImageFindings = "ec2:GetImageFindings";
 	/** [List] ec2:GetInstanceMetadataDefaults */
 	static readonly actionGetInstanceMetadataDefaults =
 		"ec2:GetInstanceMetadataDefaults";
@@ -1585,6 +1599,9 @@ export class EC2Actions {
 	/** [Read] ec2:GetSubnetCidrReservations */
 	static readonly actionGetSubnetCidrReservations =
 		"ec2:GetSubnetCidrReservations";
+	/** [Read] ec2:GetTransitGatewayAttachmentNatConfiguration */
+	static readonly actionGetTransitGatewayAttachmentNatConfiguration =
+		"ec2:GetTransitGatewayAttachmentNatConfiguration";
 	/** [List] ec2:GetTransitGatewayAttachmentPropagations */
 	static readonly actionGetTransitGatewayAttachmentPropagations =
 		"ec2:GetTransitGatewayAttachmentPropagations";
@@ -1678,6 +1695,9 @@ export class EC2Actions {
 		"ec2:ModifyCapacityReservationFleet";
 	/** [Write] ec2:ModifyClientVpnEndpoint */
 	static readonly ModifyClientVpnEndpoint = "ec2:ModifyClientVpnEndpoint";
+	/** [Write] ec2:ModifyClientVpnEndpointAuthorizationPolicy */
+	static readonly ModifyClientVpnEndpointAuthorizationPolicy =
+		"ec2:ModifyClientVpnEndpointAuthorizationPolicy";
 	/** [Write] ec2:ModifyDefaultCreditSpecification */
 	static readonly ModifyDefaultCreditSpecification =
 		"ec2:ModifyDefaultCreditSpecification";
@@ -1796,6 +1816,9 @@ export class EC2Actions {
 	static readonly ModifyTrafficMirrorSession = "ec2:ModifyTrafficMirrorSession";
 	/** [Write] ec2:ModifyTransitGateway */
 	static readonly ModifyTransitGateway = "ec2:ModifyTransitGateway";
+	/** [Write] ec2:ModifyTransitGatewayAttachmentNatConfiguration */
+	static readonly ModifyTransitGatewayAttachmentNatConfiguration =
+		"ec2:ModifyTransitGatewayAttachmentNatConfiguration";
 	/** [Write] ec2:ModifyTransitGatewayMeteringPolicy */
 	static readonly ModifyTransitGatewayMeteringPolicy =
 		"ec2:ModifyTransitGatewayMeteringPolicy";
@@ -2093,6 +2116,7 @@ export class EC2Actions {
 		EC2Actions.actionGetCapacityManagerMetricData,
 		EC2Actions.actionGetCapacityManagerMetricDimensions,
 		EC2Actions.actionGetCapacityReservationUsage,
+		EC2Actions.actionGetClientVpnEndpointAuthorizationPolicy,
 		EC2Actions.actionGetCoipPoolUsage,
 		EC2Actions.actionGetConsoleOutput,
 		EC2Actions.actionGetConsoleScreenshot,
@@ -2105,6 +2129,7 @@ export class EC2Actions {
 		EC2Actions.actionGetHostReservationPurchasePreview,
 		EC2Actions.actionGetImageAncestry,
 		EC2Actions.actionGetImageBlockPublicAccessState,
+		EC2Actions.actionGetImageFindings,
 		EC2Actions.actionGetInstanceTpmEkPub,
 		EC2Actions.actionGetInstanceUefiData,
 		EC2Actions.actionGetIpamAddressHistory,
@@ -2139,6 +2164,7 @@ export class EC2Actions {
 		EC2Actions.actionGetSnapshotBlockPublicAccessState,
 		EC2Actions.actionGetSpotPlacementScores,
 		EC2Actions.actionGetSubnetCidrReservations,
+		EC2Actions.actionGetTransitGatewayAttachmentNatConfiguration,
 		EC2Actions.StartDeclarativePoliciesReport,
 		EC2Actions.ValidateSecurityGroupQuotasForInterface,
 	];
@@ -2214,6 +2240,7 @@ export class EC2Actions {
 		EC2Actions.CreateCapacityReservation,
 		EC2Actions.CreateCapacityReservationBySplitting,
 		EC2Actions.CreateCapacityReservationCancellationQuote,
+		EC2Actions.CreateCapacityReservationDateChangeQuote,
 		EC2Actions.CreateCapacityReservationFleet,
 		EC2Actions.CreateCarrierGateway,
 		EC2Actions.CreateClientVpnEndpoint,
@@ -2320,6 +2347,7 @@ export class EC2Actions {
 		EC2Actions.DeleteCapacityManagerDataExport,
 		EC2Actions.DeleteCarrierGateway,
 		EC2Actions.DeleteClientVpnEndpoint,
+		EC2Actions.DeleteClientVpnEndpointAuthorizationPolicy,
 		EC2Actions.DeleteClientVpnRoute,
 		EC2Actions.DeleteCoipCidr,
 		EC2Actions.DeleteCoipPool,
@@ -2508,6 +2536,7 @@ export class EC2Actions {
 		EC2Actions.ModifyCapacityReservation,
 		EC2Actions.ModifyCapacityReservationFleet,
 		EC2Actions.ModifyClientVpnEndpoint,
+		EC2Actions.ModifyClientVpnEndpointAuthorizationPolicy,
 		EC2Actions.ModifyDefaultCreditSpecification,
 		EC2Actions.ModifyEbsDefaultKmsKeyId,
 		EC2Actions.ModifyFleet,
@@ -2555,6 +2584,7 @@ export class EC2Actions {
 		EC2Actions.ModifyTrafficMirrorFilterRule,
 		EC2Actions.ModifyTrafficMirrorSession,
 		EC2Actions.ModifyTransitGateway,
+		EC2Actions.ModifyTransitGatewayAttachmentNatConfiguration,
 		EC2Actions.ModifyTransitGatewayMeteringPolicy,
 		EC2Actions.ModifyTransitGatewayPolicyTableEntry,
 		EC2Actions.ModifyTransitGatewayPrefixListReference,
@@ -2685,6 +2715,7 @@ export class EC2Actions {
 		EC2Actions.DescribeCapacityManagerDataExports,
 		EC2Actions.DescribeCapacityReservationBillingRequests,
 		EC2Actions.DescribeCapacityReservationCancellationQuotes,
+		EC2Actions.DescribeCapacityReservationDateChangeQuotes,
 		EC2Actions.DescribeCapacityReservationFleets,
 		EC2Actions.DescribeCapacityReservationTopology,
 		EC2Actions.DescribeCapacityReservations,
@@ -3088,6 +3119,34 @@ export interface EC2CapacityReservationFleetArnComponents {
 	readonly account: string;
 	/** The CapacityReservationFleetId component. */
 	readonly capacityReservationFleetId: string;
+}
+
+/**
+ * Properties for building a capacity-reservation-modification-quote ARN.
+ */
+export interface EC2CapacityReservationModificationQuoteArnProps {
+	/** The CapacityReservationModificationQuoteId component of the ARN. */
+	readonly capacityReservationModificationQuoteId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a capacity-reservation-modification-quote ARN.
+ */
+export interface EC2CapacityReservationModificationQuoteArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CapacityReservationModificationQuoteId component. */
+	readonly capacityReservationModificationQuoteId: string;
 }
 
 /**
@@ -6082,6 +6141,8 @@ const CapacityReservationCancellationQuoteArnRegex =
 	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):capacity-reservation-cancellation-quote\/(?<capacityReservationCancellationQuoteId>[^:/?]+)$/;
 const CapacityReservationFleetArnRegex =
 	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):capacity-reservation-fleet\/(?<capacityReservationFleetId>[^:/?]+)$/;
+const CapacityReservationModificationQuoteArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):capacity-reservation-modification-quote\/(?<capacityReservationModificationQuoteId>[^:/?]+)$/;
 const CarrierGatewayArnRegex =
 	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):carrier-gateway\/(?<carrierGatewayId>[^:/?]+)$/;
 const CertificateArnRegex =
@@ -6507,6 +6568,44 @@ export class EC2Resources {
 			region: match.groups.region,
 			account: match.groups.account,
 			capacityReservationFleetId: match.groups!.capacityReservationFleetId,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the capacity-reservation-modification-quote resource.
+	 */
+	static capacityReservationModificationQuote(
+		props: EC2CapacityReservationModificationQuoteArnProps,
+	): string {
+		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:capacity-reservation-modification-quote/${props.capacityReservationModificationQuoteId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the capacity-reservation-modification-quote resource.
+	 */
+	static isValidCapacityReservationModificationQuoteArn(arn: string): boolean {
+		return CapacityReservationModificationQuoteArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a capacity-reservation-modification-quote ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseCapacityReservationModificationQuoteArn(
+		arn: string,
+	): EC2CapacityReservationModificationQuoteArnComponents {
+		const match = CapacityReservationModificationQuoteArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(
+				`Invalid capacity-reservation-modification-quote ARN: ${arn}`,
+			);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			capacityReservationModificationQuoteId:
+				match.groups!.capacityReservationModificationQuoteId,
 		};
 	}
 
@@ -10337,6 +10436,7 @@ export class EC2Operations {
 	];
 	/** IAM actions required for the CreateCapacityReservationDateChangeQuote API call. */
 	static readonly CreateCapacityReservationDateChangeQuote: string[] = [
+		"ec2:CreateCapacityReservationDateChangeQuote",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateCapacityReservationFleet API call. */
@@ -10535,6 +10635,8 @@ export class EC2Operations {
 		"ec2:CreateManagedPrefixList",
 		"ec2:CreateTags",
 	];
+	/** IAM actions required for the CreateMetricCategory API call. */
+	static readonly CreateMetricCategory: string[] = ["ec2:CreateTags"];
 	/** IAM actions required for the CreateNatGateway API call. */
 	static readonly CreateNatGateway: string[] = [
 		"ec2:CreateNatGateway",
@@ -10833,7 +10935,9 @@ export class EC2Operations {
 		"ec2:DeleteClientVpnEndpoint",
 	];
 	/** IAM actions required for the DeleteClientVpnEndpointAuthorizationPolicy API call. */
-	static readonly DeleteClientVpnEndpointAuthorizationPolicy: string[] = [];
+	static readonly DeleteClientVpnEndpointAuthorizationPolicy: string[] = [
+		"ec2:DeleteClientVpnEndpointAuthorizationPolicy",
+	];
 	/** IAM actions required for the DeleteClientVpnRoute API call. */
 	static readonly DeleteClientVpnRoute: string[] = ["ec2:DeleteClientVpnRoute"];
 	/** IAM actions required for the DeleteCoipCidr API call. */
@@ -10939,6 +11043,8 @@ export class EC2Operations {
 	static readonly DeleteManagedPrefixList: string[] = [
 		"ec2:DeleteManagedPrefixList",
 	];
+	/** IAM actions required for the DeleteMetricCategory API call. */
+	static readonly DeleteMetricCategory: string[] = [];
 	/** IAM actions required for the DeleteNatGateway API call. */
 	static readonly DeleteNatGateway: string[] = ["ec2:DeleteNatGateway"];
 	/** IAM actions required for the DeleteNetworkAcl API call. */
@@ -11252,7 +11358,9 @@ export class EC2Operations {
 		"ec2:DescribeCapacityReservationCancellationQuotes",
 	];
 	/** IAM actions required for the DescribeCapacityReservationDateChangeQuotes API call. */
-	static readonly DescribeCapacityReservationDateChangeQuotes: string[] = [];
+	static readonly DescribeCapacityReservationDateChangeQuotes: string[] = [
+		"ec2:DescribeCapacityReservationDateChangeQuotes",
+	];
 	/** IAM actions required for the DescribeCapacityReservationFleets API call. */
 	static readonly DescribeCapacityReservationFleets: string[] = [
 		"ec2:DescribeCapacityReservationFleets",
@@ -11532,6 +11640,8 @@ export class EC2Operations {
 	static readonly DescribeManagedPrefixLists: string[] = [
 		"ec2:DescribeManagedPrefixLists",
 	];
+	/** IAM actions required for the DescribeMetricCategories API call. */
+	static readonly DescribeMetricCategories: string[] = [];
 	/** IAM actions required for the DescribeMovingAddresses API call. */
 	static readonly DescribeMovingAddresses: string[] = [];
 	/** IAM actions required for the DescribeNatGateways API call. */
@@ -12188,7 +12298,9 @@ export class EC2Operations {
 		"ec2:GetCapacityReservationUsage",
 	];
 	/** IAM actions required for the GetClientVpnEndpointAuthorizationPolicy API call. */
-	static readonly opGetClientVpnEndpointAuthorizationPolicy: string[] = [];
+	static readonly opGetClientVpnEndpointAuthorizationPolicy: string[] = [
+		"ec2:GetClientVpnEndpointAuthorizationPolicy",
+	];
 	/** IAM actions required for the GetCoipPoolUsage API call. */
 	static readonly opGetCoipPoolUsage: string[] = ["ec2:GetCoipPoolUsage"];
 	/** IAM actions required for the GetConsoleOutput API call. */
@@ -12236,7 +12348,7 @@ export class EC2Operations {
 		"ec2:GetImageBlockPublicAccessState",
 	];
 	/** IAM actions required for the GetImageFindings API call. */
-	static readonly opGetImageFindings: string[] = [];
+	static readonly opGetImageFindings: string[] = ["ec2:GetImageFindings"];
 	/** IAM actions required for the GetInstanceMetadataDefaults API call. */
 	static readonly opGetInstanceMetadataDefaults: string[] = [
 		"ec2:GetInstanceMetadataDefaults",
@@ -12386,7 +12498,9 @@ export class EC2Operations {
 		"ec2:GetSubnetCidrReservations",
 	];
 	/** IAM actions required for the GetTransitGatewayAttachmentNatConfiguration API call. */
-	static readonly opGetTransitGatewayAttachmentNatConfiguration: string[] = [];
+	static readonly opGetTransitGatewayAttachmentNatConfiguration: string[] = [
+		"ec2:GetTransitGatewayAttachmentNatConfiguration",
+	];
 	/** IAM actions required for the GetTransitGatewayAttachmentPropagations API call. */
 	static readonly opGetTransitGatewayAttachmentPropagations: string[] = [
 		"ec2:GetTransitGatewayAttachmentPropagations",
@@ -12510,7 +12624,9 @@ export class EC2Operations {
 		"ec2:ModifyClientVpnEndpoint",
 	];
 	/** IAM actions required for the ModifyClientVpnEndpointAuthorizationPolicy API call. */
-	static readonly ModifyClientVpnEndpointAuthorizationPolicy: string[] = [];
+	static readonly ModifyClientVpnEndpointAuthorizationPolicy: string[] = [
+		"ec2:ModifyClientVpnEndpointAuthorizationPolicy",
+	];
 	/** IAM actions required for the ModifyDefaultCreditSpecification API call. */
 	static readonly ModifyDefaultCreditSpecification: string[] = [
 		"ec2:ModifyDefaultCreditSpecification",
@@ -12631,6 +12747,8 @@ export class EC2Operations {
 	static readonly ModifyManagedResourceVisibility: string[] = [
 		"ec2:ModifyManagedResourceVisibility",
 	];
+	/** IAM actions required for the ModifyMetricCategory API call. */
+	static readonly ModifyMetricCategory: string[] = [];
 	/** IAM actions required for the ModifyNetworkInterfaceAttribute API call. */
 	static readonly ModifyNetworkInterfaceAttribute: string[] = [
 		"ec2:ModifyNetworkInterfaceAttribute",
@@ -12682,7 +12800,9 @@ export class EC2Operations {
 	/** IAM actions required for the ModifyTransitGateway API call. */
 	static readonly ModifyTransitGateway: string[] = ["ec2:ModifyTransitGateway"];
 	/** IAM actions required for the ModifyTransitGatewayAttachmentNatConfiguration API call. */
-	static readonly ModifyTransitGatewayAttachmentNatConfiguration: string[] = [];
+	static readonly ModifyTransitGatewayAttachmentNatConfiguration: string[] = [
+		"ec2:ModifyTransitGatewayAttachmentNatConfiguration",
+	];
 	/** IAM actions required for the ModifyTransitGatewayMeteringPolicy API call. */
 	static readonly ModifyTransitGatewayMeteringPolicy: string[] = [
 		"ec2:ModifyTransitGatewayMeteringPolicy",
@@ -13324,6 +13444,9 @@ export class EC2Conditions {
 	/** Condition keys applicable to the CreateCapacityReservationCancellationQuote action. */
 	static readonly CreateCapacityReservationCancellationQuoteConditionKeys: string[] =
 		["ec2:Region"];
+	/** Condition keys applicable to the CreateCapacityReservationDateChangeQuote action. */
+	static readonly CreateCapacityReservationDateChangeQuoteConditionKeys: string[] =
+		["ec2:Region"];
 	/** Condition keys applicable to the CreateCapacityReservationFleet action. */
 	static readonly CreateCapacityReservationFleetConditionKeys: string[] = [
 		"ec2:Region",
@@ -13669,6 +13792,9 @@ export class EC2Conditions {
 	static readonly DeleteClientVpnEndpointConditionKeys: string[] = [
 		"ec2:Region",
 	];
+	/** Condition keys applicable to the DeleteClientVpnEndpointAuthorizationPolicy action. */
+	static readonly DeleteClientVpnEndpointAuthorizationPolicyConditionKeys: string[] =
+		["ec2:Region"];
 	/** Condition keys applicable to the DeleteClientVpnRoute action. */
 	static readonly DeleteClientVpnRouteConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DeleteCoipCidr action. */
@@ -14065,6 +14191,9 @@ export class EC2Conditions {
 		["ec2:Region"];
 	/** Condition keys applicable to the DescribeCapacityReservationCancellationQuotes action. */
 	static readonly DescribeCapacityReservationCancellationQuotesConditionKeys: string[] =
+		["ec2:Region"];
+	/** Condition keys applicable to the DescribeCapacityReservationDateChangeQuotes action. */
+	static readonly DescribeCapacityReservationDateChangeQuotesConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DescribeCapacityReservationFleets action. */
 	static readonly DescribeCapacityReservationFleetsConditionKeys: string[] = [
@@ -14959,6 +15088,9 @@ export class EC2Conditions {
 	static readonly actionGetCapacityReservationUsageConditionKeys: string[] = [
 		"ec2:Region",
 	];
+	/** Condition keys applicable to the GetClientVpnEndpointAuthorizationPolicy action. */
+	static readonly actionGetClientVpnEndpointAuthorizationPolicyConditionKeys: string[] =
+		["ec2:Region"];
 	/** Condition keys applicable to the GetCoipPoolUsage action. */
 	static readonly actionGetCoipPoolUsageConditionKeys: string[] = [
 		"ec2:Region",
@@ -15006,6 +15138,10 @@ export class EC2Conditions {
 	/** Condition keys applicable to the GetImageBlockPublicAccessState action. */
 	static readonly actionGetImageBlockPublicAccessStateConditionKeys: string[] =
 		["ec2:Region"];
+	/** Condition keys applicable to the GetImageFindings action. */
+	static readonly actionGetImageFindingsConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the GetInstanceMetadataDefaults action. */
 	static readonly actionGetInstanceMetadataDefaultsConditionKeys: string[] = [
 		"ec2:Region",
@@ -15146,6 +15282,9 @@ export class EC2Conditions {
 	static readonly actionGetSubnetCidrReservationsConditionKeys: string[] = [
 		"ec2:Region",
 	];
+	/** Condition keys applicable to the GetTransitGatewayAttachmentNatConfiguration action. */
+	static readonly actionGetTransitGatewayAttachmentNatConfigurationConditionKeys: string[] =
+		["ec2:Region"];
 	/** Condition keys applicable to the GetTransitGatewayAttachmentPropagations action. */
 	static readonly actionGetTransitGatewayAttachmentPropagationsConditionKeys: string[] =
 		["ec2:Region"];
@@ -15262,6 +15401,9 @@ export class EC2Conditions {
 	static readonly ModifyClientVpnEndpointConditionKeys: string[] = [
 		"ec2:Region",
 	];
+	/** Condition keys applicable to the ModifyClientVpnEndpointAuthorizationPolicy action. */
+	static readonly ModifyClientVpnEndpointAuthorizationPolicyConditionKeys: string[] =
+		["ec2:Region"];
 	/** Condition keys applicable to the ModifyDefaultCreditSpecification action. */
 	static readonly ModifyDefaultCreditSpecificationConditionKeys: string[] = [
 		"ec2:Region",
@@ -15432,6 +15574,9 @@ export class EC2Conditions {
 	];
 	/** Condition keys applicable to the ModifyTransitGateway action. */
 	static readonly ModifyTransitGatewayConditionKeys: string[] = ["ec2:Region"];
+	/** Condition keys applicable to the ModifyTransitGatewayAttachmentNatConfiguration action. */
+	static readonly ModifyTransitGatewayAttachmentNatConfigurationConditionKeys: string[] =
+		["ec2:Region"];
 	/** Condition keys applicable to the ModifyTransitGatewayMeteringPolicy action. */
 	static readonly ModifyTransitGatewayMeteringPolicyConditionKeys: string[] = [
 		"ec2:Region",
@@ -15868,6 +16013,9 @@ export class EC2Conditions {
 	static readonly FIS_ACTION_ID = "ec2:FisActionId";
 	/** Condition key: ec2:FisTargetArns (ArrayOfARN) */
 	static readonly FIS_TARGET_ARNS = "ec2:FisTargetArns";
+	/** Condition key: ec2:FutureCapacitySpecification (ARN) */
+	static readonly FUTURE_CAPACITY_SPECIFICATION =
+		"ec2:FutureCapacitySpecification";
 	/** Condition key: ec2:GatewayType (String) */
 	static readonly GATEWAY_TYPE = "ec2:GatewayType";
 	/** Condition key: ec2:HostRecovery (String) */
@@ -15878,6 +16026,8 @@ export class EC2Conditions {
 	static readonly IMAGE_ID = "ec2:ImageID";
 	/** Condition key: ec2:ImageType (String) */
 	static readonly IMAGE_TYPE = "ec2:ImageType";
+	/** Condition key: ec2:ImageWatermarkKeys (ArrayOfString) */
+	static readonly IMAGE_WATERMARK_KEYS = "ec2:ImageWatermarkKeys";
 	/** Condition key: ec2:InsideTunnelCidr (String) */
 	static readonly INSIDE_TUNNEL_CIDR = "ec2:InsideTunnelCidr";
 	/** Condition key: ec2:InsideTunnelIpv6Cidr (String) */
@@ -16398,6 +16548,15 @@ export class EC2Conditions {
 	}
 
 	/**
+	 * Generates a condition block for `ec2:FutureCapacitySpecification`.
+	 */
+	static futureCapacitySpecification(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { ArnEquals: { "ec2:FutureCapacitySpecification": value } };
+	}
+
+	/**
 	 * Generates a condition block for `ec2:GatewayType`.
 	 */
 	static gatewayType(value: string): Record<string, Record<string, string>> {
@@ -16432,6 +16591,17 @@ export class EC2Conditions {
 	 */
 	static imageType(value: string): Record<string, Record<string, string>> {
 		return { StringEquals: { "ec2:ImageType": value } };
+	}
+
+	/**
+	 * Generates a condition block for `ec2:ImageWatermarkKeys`.
+	 */
+	static imageWatermarkKeys(
+		values: string[],
+	): Record<string, Record<string, string[]>> {
+		return {
+			"ForAllValues:StringEquals": { "ec2:ImageWatermarkKeys": values },
+		};
 	}
 
 	/**

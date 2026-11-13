@@ -31,6 +31,7 @@ new user_subscriptions.UserSubscriptionsActions()
 | <code><a href="#@cdk_utils/iam.user_subscriptions.UserSubscriptionsActions.property.actionGetAutoTopUpRule">actionGetAutoTopUpRule</a></code> | <code>string</code> | [Read] user-subscriptions:GetAutoTopUpRule. |
 | <code><a href="#@cdk_utils/iam.user_subscriptions.UserSubscriptionsActions.property.actionGetCurrentPlanDetails">actionGetCurrentPlanDetails</a></code> | <code>string</code> | [Read] user-subscriptions:GetCurrentPlanDetails. |
 | <code><a href="#@cdk_utils/iam.user_subscriptions.UserSubscriptionsActions.property.actionGetEffectiveUsageLimit">actionGetEffectiveUsageLimit</a></code> | <code>string</code> | [Read] user-subscriptions:GetEffectiveUsageLimit. |
+| <code><a href="#@cdk_utils/iam.user_subscriptions.UserSubscriptionsActions.property.actionGetOverageConfig">actionGetOverageConfig</a></code> | <code>string</code> | [Read] user-subscriptions:GetOverageConfig. |
 | <code><a href="#@cdk_utils/iam.user_subscriptions.UserSubscriptionsActions.property.actionGetPurchaseSession">actionGetPurchaseSession</a></code> | <code>string</code> | [Read] user-subscriptions:GetPurchaseSession. |
 | <code><a href="#@cdk_utils/iam.user_subscriptions.UserSubscriptionsActions.property.actionGetUsageLimitHistory">actionGetUsageLimitHistory</a></code> | <code>string</code> | [Read] user-subscriptions:GetUsageLimitHistory. |
 | <code><a href="#@cdk_utils/iam.user_subscriptions.UserSubscriptionsActions.property.actionSetAutoTopUpRule">actionSetAutoTopUpRule</a></code> | <code>string</code> | [Write] user-subscriptions:SetAutoTopUpRule. |
@@ -54,6 +55,7 @@ new user_subscriptions.UserSubscriptionsActions()
 | <code><a href="#@cdk_utils/iam.user_subscriptions.UserSubscriptionsActions.property.ListClaims">ListClaims</a></code> | <code>string</code> | [List] user-subscriptions:ListClaims. |
 | <code><a href="#@cdk_utils/iam.user_subscriptions.UserSubscriptionsActions.property.ListEntitlements">ListEntitlements</a></code> | <code>string</code> | [List] user-subscriptions:ListEntitlements. |
 | <code><a href="#@cdk_utils/iam.user_subscriptions.UserSubscriptionsActions.property.ListUsageLimits">ListUsageLimits</a></code> | <code>string</code> | [List] user-subscriptions:ListUsageLimits. |
+| <code><a href="#@cdk_utils/iam.user_subscriptions.UserSubscriptionsActions.property.ListUsagesAndLimits">ListUsagesAndLimits</a></code> | <code>string</code> | [List] user-subscriptions:ListUsagesAndLimits. |
 | <code><a href="#@cdk_utils/iam.user_subscriptions.UserSubscriptionsActions.property.ListUserSubscriptions">ListUserSubscriptions</a></code> | <code>string</code> | [List] user-subscriptions:ListUserSubscriptions. |
 | <code><a href="#@cdk_utils/iam.user_subscriptions.UserSubscriptionsActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.user_subscriptions.UserSubscriptionsActions.property.UpdateClaim">UpdateClaim</a></code> | <code>string</code> | [Write] user-subscriptions:UpdateClaim. |
@@ -93,6 +95,18 @@ public readonly actionGetEffectiveUsageLimit: string;
 - *Type:* string
 
 [Read] user-subscriptions:GetEffectiveUsageLimit.
+
+---
+
+##### `actionGetOverageConfig`<sup>Required</sup> <a name="actionGetOverageConfig" id="@cdk_utils/iam.user_subscriptions.UserSubscriptionsActions.property.actionGetOverageConfig"></a>
+
+```typescript
+public readonly actionGetOverageConfig: string;
+```
+
+- *Type:* string
+
+[Read] user-subscriptions:GetOverageConfig.
 
 ---
 
@@ -369,6 +383,18 @@ public readonly ListUsageLimits: string;
 - *Type:* string
 
 [List] user-subscriptions:ListUsageLimits.
+
+---
+
+##### `ListUsagesAndLimits`<sup>Required</sup> <a name="ListUsagesAndLimits" id="@cdk_utils/iam.user_subscriptions.UserSubscriptionsActions.property.ListUsagesAndLimits"></a>
+
+```typescript
+public readonly ListUsagesAndLimits: string;
+```
+
+- *Type:* string
+
+[List] user-subscriptions:ListUsagesAndLimits.
 
 ---
 

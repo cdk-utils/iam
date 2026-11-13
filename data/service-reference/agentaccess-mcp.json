@@ -5,6 +5,7 @@
     {
       "Name": "CallForwardedTool",
       "ActionConditionKeys": [
+        "agentaccess-mcp:ImageBuilderArn",
         "agentaccess-mcp:StackArn"
       ],
       "Annotations": {
@@ -23,6 +24,7 @@
     {
       "Name": "CheckConnectionStatus",
       "ActionConditionKeys": [
+        "agentaccess-mcp:ImageBuilderArn",
         "agentaccess-mcp:StackArn"
       ],
       "Annotations": {
@@ -39,8 +41,9 @@
       }
     },
     {
-      "Name": "DoubleClick",
+      "Name": "CloseSession",
       "ActionConditionKeys": [
+        "agentaccess-mcp:ImageBuilderArn",
         "agentaccess-mcp:StackArn"
       ],
       "Annotations": {
@@ -57,8 +60,66 @@
       }
     },
     {
+      "Name": "DoubleClick",
+      "ActionConditionKeys": [
+        "agentaccess-mcp:ImageBuilderArn",
+        "agentaccess-mcp:StackArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ExecuteSequence",
+      "ActionConditionKeys": [
+        "agentaccess-mcp:ImageBuilderArn",
+        "agentaccess-mcp:StackArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCurrentUser",
+      "ActionConditionKeys": [
+        "agentaccess-mcp:ImageBuilderArn",
+        "agentaccess-mcp:StackArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "GetScreenshot",
       "ActionConditionKeys": [
+        "agentaccess-mcp:ImageBuilderArn",
         "agentaccess-mcp:StackArn"
       ],
       "Annotations": {
@@ -77,6 +138,7 @@
     {
       "Name": "GetSessionInfo",
       "ActionConditionKeys": [
+        "agentaccess-mcp:ImageBuilderArn",
         "agentaccess-mcp:StackArn"
       ],
       "Annotations": {
@@ -95,6 +157,7 @@
     {
       "Name": "HoldKey",
       "ActionConditionKeys": [
+        "agentaccess-mcp:ImageBuilderArn",
         "agentaccess-mcp:StackArn"
       ],
       "Annotations": {
@@ -113,6 +176,8 @@
     {
       "Name": "InvokeMcp",
       "ActionConditionKeys": [
+        "agentaccess-mcp:ImageBuilderArn",
+        "agentaccess-mcp:LocalUser",
         "agentaccess-mcp:StackArn"
       ],
       "Annotations": {
@@ -131,6 +196,7 @@
     {
       "Name": "KeyPress",
       "ActionConditionKeys": [
+        "agentaccess-mcp:ImageBuilderArn",
         "agentaccess-mcp:StackArn"
       ],
       "Annotations": {
@@ -149,6 +215,7 @@
     {
       "Name": "LaunchApplication",
       "ActionConditionKeys": [
+        "agentaccess-mcp:ImageBuilderArn",
         "agentaccess-mcp:StackArn"
       ],
       "Annotations": {
@@ -167,6 +234,7 @@
     {
       "Name": "LeftClick",
       "ActionConditionKeys": [
+        "agentaccess-mcp:ImageBuilderArn",
         "agentaccess-mcp:StackArn"
       ],
       "Annotations": {
@@ -185,6 +253,7 @@
     {
       "Name": "LeftClickDrag",
       "ActionConditionKeys": [
+        "agentaccess-mcp:ImageBuilderArn",
         "agentaccess-mcp:StackArn"
       ],
       "Annotations": {
@@ -203,6 +272,7 @@
     {
       "Name": "LeftMouseDown",
       "ActionConditionKeys": [
+        "agentaccess-mcp:ImageBuilderArn",
         "agentaccess-mcp:StackArn"
       ],
       "Annotations": {
@@ -221,6 +291,7 @@
     {
       "Name": "LeftMouseUp",
       "ActionConditionKeys": [
+        "agentaccess-mcp:ImageBuilderArn",
         "agentaccess-mcp:StackArn"
       ],
       "Annotations": {
@@ -239,6 +310,7 @@
     {
       "Name": "MiddleClick",
       "ActionConditionKeys": [
+        "agentaccess-mcp:ImageBuilderArn",
         "agentaccess-mcp:StackArn"
       ],
       "Annotations": {
@@ -257,6 +329,7 @@
     {
       "Name": "MovePointer",
       "ActionConditionKeys": [
+        "agentaccess-mcp:ImageBuilderArn",
         "agentaccess-mcp:StackArn"
       ],
       "Annotations": {
@@ -275,6 +348,7 @@
     {
       "Name": "RightClick",
       "ActionConditionKeys": [
+        "agentaccess-mcp:ImageBuilderArn",
         "agentaccess-mcp:StackArn"
       ],
       "Annotations": {
@@ -293,6 +367,27 @@
     {
       "Name": "Scroll",
       "ActionConditionKeys": [
+        "agentaccess-mcp:ImageBuilderArn",
+        "agentaccess-mcp:StackArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SwitchUser",
+      "ActionConditionKeys": [
+        "agentaccess-mcp:ImageBuilderArn",
+        "agentaccess-mcp:LocalUser",
         "agentaccess-mcp:StackArn"
       ],
       "Annotations": {
@@ -311,6 +406,7 @@
     {
       "Name": "ToggleAppSwitcher",
       "ActionConditionKeys": [
+        "agentaccess-mcp:ImageBuilderArn",
         "agentaccess-mcp:StackArn"
       ],
       "Annotations": {
@@ -329,6 +425,7 @@
     {
       "Name": "TripleClick",
       "ActionConditionKeys": [
+        "agentaccess-mcp:ImageBuilderArn",
         "agentaccess-mcp:StackArn"
       ],
       "Annotations": {
@@ -347,6 +444,26 @@
     {
       "Name": "TypeText",
       "ActionConditionKeys": [
+        "agentaccess-mcp:ImageBuilderArn",
+        "agentaccess-mcp:StackArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "Wait",
+      "ActionConditionKeys": [
+        "agentaccess-mcp:ImageBuilderArn",
         "agentaccess-mcp:StackArn"
       ],
       "Annotations": {
@@ -364,6 +481,18 @@
     }
   ],
   "ConditionKeys": [
+    {
+      "Name": "agentaccess-mcp:ImageBuilderArn",
+      "Types": [
+        "ARN"
+      ]
+    },
+    {
+      "Name": "agentaccess-mcp:LocalUser",
+      "Types": [
+        "String"
+      ]
+    },
     {
       "Name": "agentaccess-mcp:StackArn",
       "Types": [

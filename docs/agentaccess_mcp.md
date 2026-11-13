@@ -28,6 +28,7 @@ new agentaccess_mcp.AgentaccessMcpActions()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.actionGetCurrentUser">actionGetCurrentUser</a></code> | <code>string</code> | [Read] agentaccess-mcp:GetCurrentUser. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.actionGetScreenshot">actionGetScreenshot</a></code> | <code>string</code> | [Read] agentaccess-mcp:GetScreenshot. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.actionGetSessionInfo">actionGetSessionInfo</a></code> | <code>string</code> | [Read] agentaccess-mcp:GetSessionInfo. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.AllListActions">AllListActions</a></code> | <code>string[]</code> | All list-level actions. |
@@ -37,7 +38,9 @@ new agentaccess_mcp.AgentaccessMcpActions()
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.CallForwardedTool">CallForwardedTool</a></code> | <code>string</code> | [Write] agentaccess-mcp:CallForwardedTool. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.CheckConnectionStatus">CheckConnectionStatus</a></code> | <code>string</code> | [Read] agentaccess-mcp:CheckConnectionStatus. |
+| <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.CloseSession">CloseSession</a></code> | <code>string</code> | [Write] agentaccess-mcp:CloseSession. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.DoubleClick">DoubleClick</a></code> | <code>string</code> | [Write] agentaccess-mcp:DoubleClick. |
+| <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.ExecuteSequence">ExecuteSequence</a></code> | <code>string</code> | [Write] agentaccess-mcp:ExecuteSequence. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.HoldKey">HoldKey</a></code> | <code>string</code> | [Write] agentaccess-mcp:HoldKey. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.InvokeMcp">InvokeMcp</a></code> | <code>string</code> | [Write] agentaccess-mcp:InvokeMcp. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.KeyPress">KeyPress</a></code> | <code>string</code> | [Write] agentaccess-mcp:KeyPress. |
@@ -51,9 +54,23 @@ new agentaccess_mcp.AgentaccessMcpActions()
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.RightClick">RightClick</a></code> | <code>string</code> | [Write] agentaccess-mcp:RightClick. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.Scroll">Scroll</a></code> | <code>string</code> | [Write] agentaccess-mcp:Scroll. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
+| <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.SwitchUser">SwitchUser</a></code> | <code>string</code> | [Write] agentaccess-mcp:SwitchUser. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.ToggleAppSwitcher">ToggleAppSwitcher</a></code> | <code>string</code> | [Write] agentaccess-mcp:ToggleAppSwitcher. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.TripleClick">TripleClick</a></code> | <code>string</code> | [Write] agentaccess-mcp:TripleClick. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.TypeText">TypeText</a></code> | <code>string</code> | [Write] agentaccess-mcp:TypeText. |
+| <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.Wait">Wait</a></code> | <code>string</code> | [Write] agentaccess-mcp:Wait. |
+
+---
+
+##### `actionGetCurrentUser`<sup>Required</sup> <a name="actionGetCurrentUser" id="@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.actionGetCurrentUser"></a>
+
+```typescript
+public readonly actionGetCurrentUser: string;
+```
+
+- *Type:* string
+
+[Read] agentaccess-mcp:GetCurrentUser.
 
 ---
 
@@ -165,6 +182,18 @@ public readonly CheckConnectionStatus: string;
 
 ---
 
+##### `CloseSession`<sup>Required</sup> <a name="CloseSession" id="@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.CloseSession"></a>
+
+```typescript
+public readonly CloseSession: string;
+```
+
+- *Type:* string
+
+[Write] agentaccess-mcp:CloseSession.
+
+---
+
 ##### `DoubleClick`<sup>Required</sup> <a name="DoubleClick" id="@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.DoubleClick"></a>
 
 ```typescript
@@ -174,6 +203,18 @@ public readonly DoubleClick: string;
 - *Type:* string
 
 [Write] agentaccess-mcp:DoubleClick.
+
+---
+
+##### `ExecuteSequence`<sup>Required</sup> <a name="ExecuteSequence" id="@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.ExecuteSequence"></a>
+
+```typescript
+public readonly ExecuteSequence: string;
+```
+
+- *Type:* string
+
+[Write] agentaccess-mcp:ExecuteSequence.
 
 ---
 
@@ -333,6 +374,18 @@ The IAM service prefix.
 
 ---
 
+##### `SwitchUser`<sup>Required</sup> <a name="SwitchUser" id="@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.SwitchUser"></a>
+
+```typescript
+public readonly SwitchUser: string;
+```
+
+- *Type:* string
+
+[Write] agentaccess-mcp:SwitchUser.
+
+---
+
 ##### `ToggleAppSwitcher`<sup>Required</sup> <a name="ToggleAppSwitcher" id="@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.ToggleAppSwitcher"></a>
 
 ```typescript
@@ -369,6 +422,18 @@ public readonly TypeText: string;
 
 ---
 
+##### `Wait`<sup>Required</sup> <a name="Wait" id="@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpActions.property.Wait"></a>
+
+```typescript
+public readonly Wait: string;
+```
+
+- *Type:* string
+
+[Write] agentaccess-mcp:Wait.
+
+---
+
 ### AgentaccessMcpConditions <a name="AgentaccessMcpConditions" id="@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions"></a>
 
 Condition key constants and builders for agentaccess-mcp.
@@ -391,7 +456,41 @@ new agentaccess_mcp.AgentaccessMcpConditions()
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.imageBuilderARN">imageBuilderARN</a></code> | Generates a condition block for `agentaccess-mcp:ImageBuilderArn`. |
+| <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.localUser">localUser</a></code> | Generates a condition block for `agentaccess-mcp:LocalUser`. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.stackARN">stackARN</a></code> | Generates a condition block for `agentaccess-mcp:StackArn`. |
+
+---
+
+##### `imageBuilderARN` <a name="imageBuilderARN" id="@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.imageBuilderARN"></a>
+
+```typescript
+import { agentaccess_mcp } from '@cdk_utils/iam'
+
+agentaccess_mcp.AgentaccessMcpConditions.imageBuilderARN(value: string)
+```
+
+Generates a condition block for `agentaccess-mcp:ImageBuilderArn`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.imageBuilderARN.parameter.value"></a>
+
+- *Type:* string
+
+---
+
+##### `localUser` <a name="localUser" id="@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.localUser"></a>
+
+```typescript
+import { agentaccess_mcp } from '@cdk_utils/iam'
+
+agentaccess_mcp.AgentaccessMcpConditions.localUser(value: string)
+```
+
+Generates a condition block for `agentaccess-mcp:LocalUser`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.localUser.parameter.value"></a>
+
+- *Type:* string
 
 ---
 
@@ -416,12 +515,16 @@ Generates a condition block for `agentaccess-mcp:StackArn`.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.actionGetCurrentUserConditionKeys">actionGetCurrentUserConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetCurrentUser action. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.actionGetScreenshotConditionKeys">actionGetScreenshotConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetScreenshot action. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.actionGetSessionInfoConditionKeys">actionGetSessionInfoConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetSessionInfo action. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.CallForwardedToolConditionKeys">CallForwardedToolConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CallForwardedTool action. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.CheckConnectionStatusConditionKeys">CheckConnectionStatusConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CheckConnectionStatus action. |
+| <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.CloseSessionConditionKeys">CloseSessionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CloseSession action. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.DoubleClickConditionKeys">DoubleClickConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DoubleClick action. |
+| <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.ExecuteSequenceConditionKeys">ExecuteSequenceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ExecuteSequence action. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.HoldKeyConditionKeys">HoldKeyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the HoldKey action. |
+| <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.IMAGE_BUILDER_ARN">IMAGE_BUILDER_ARN</a></code> | <code>string</code> | Condition key: agentaccess-mcp:ImageBuilderArn (ARN). |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.InvokeMcpConditionKeys">InvokeMcpConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the InvokeMcp action. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.KeyPressConditionKeys">KeyPressConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the KeyPress action. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.LaunchApplicationConditionKeys">LaunchApplicationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the LaunchApplication action. |
@@ -429,14 +532,29 @@ Generates a condition block for `agentaccess-mcp:StackArn`.
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.LeftClickDragConditionKeys">LeftClickDragConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the LeftClickDrag action. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.LeftMouseDownConditionKeys">LeftMouseDownConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the LeftMouseDown action. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.LeftMouseUpConditionKeys">LeftMouseUpConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the LeftMouseUp action. |
+| <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.LOCAL_USER">LOCAL_USER</a></code> | <code>string</code> | Condition key: agentaccess-mcp:LocalUser (String). |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.MiddleClickConditionKeys">MiddleClickConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the MiddleClick action. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.MovePointerConditionKeys">MovePointerConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the MovePointer action. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.RightClickConditionKeys">RightClickConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the RightClick action. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.ScrollConditionKeys">ScrollConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the Scroll action. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.STACK_ARN">STACK_ARN</a></code> | <code>string</code> | Condition key: agentaccess-mcp:StackArn (ARN). |
+| <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.SwitchUserConditionKeys">SwitchUserConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the SwitchUser action. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.ToggleAppSwitcherConditionKeys">ToggleAppSwitcherConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ToggleAppSwitcher action. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.TripleClickConditionKeys">TripleClickConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TripleClick action. |
 | <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.TypeTextConditionKeys">TypeTextConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TypeText action. |
+| <code><a href="#@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.WaitConditionKeys">WaitConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the Wait action. |
+
+---
+
+##### `actionGetCurrentUserConditionKeys`<sup>Required</sup> <a name="actionGetCurrentUserConditionKeys" id="@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.actionGetCurrentUserConditionKeys"></a>
+
+```typescript
+public readonly actionGetCurrentUserConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetCurrentUser action.
 
 ---
 
@@ -488,6 +606,18 @@ Condition keys applicable to the CheckConnectionStatus action.
 
 ---
 
+##### `CloseSessionConditionKeys`<sup>Required</sup> <a name="CloseSessionConditionKeys" id="@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.CloseSessionConditionKeys"></a>
+
+```typescript
+public readonly CloseSessionConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CloseSession action.
+
+---
+
 ##### `DoubleClickConditionKeys`<sup>Required</sup> <a name="DoubleClickConditionKeys" id="@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.DoubleClickConditionKeys"></a>
 
 ```typescript
@@ -500,6 +630,18 @@ Condition keys applicable to the DoubleClick action.
 
 ---
 
+##### `ExecuteSequenceConditionKeys`<sup>Required</sup> <a name="ExecuteSequenceConditionKeys" id="@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.ExecuteSequenceConditionKeys"></a>
+
+```typescript
+public readonly ExecuteSequenceConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ExecuteSequence action.
+
+---
+
 ##### `HoldKeyConditionKeys`<sup>Required</sup> <a name="HoldKeyConditionKeys" id="@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.HoldKeyConditionKeys"></a>
 
 ```typescript
@@ -509,6 +651,18 @@ public readonly HoldKeyConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the HoldKey action.
+
+---
+
+##### `IMAGE_BUILDER_ARN`<sup>Required</sup> <a name="IMAGE_BUILDER_ARN" id="@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.IMAGE_BUILDER_ARN"></a>
+
+```typescript
+public readonly IMAGE_BUILDER_ARN: string;
+```
+
+- *Type:* string
+
+Condition key: agentaccess-mcp:ImageBuilderArn (ARN).
 
 ---
 
@@ -596,6 +750,18 @@ Condition keys applicable to the LeftMouseUp action.
 
 ---
 
+##### `LOCAL_USER`<sup>Required</sup> <a name="LOCAL_USER" id="@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.LOCAL_USER"></a>
+
+```typescript
+public readonly LOCAL_USER: string;
+```
+
+- *Type:* string
+
+Condition key: agentaccess-mcp:LocalUser (String).
+
+---
+
 ##### `MiddleClickConditionKeys`<sup>Required</sup> <a name="MiddleClickConditionKeys" id="@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.MiddleClickConditionKeys"></a>
 
 ```typescript
@@ -656,6 +822,18 @@ Condition key: agentaccess-mcp:StackArn (ARN).
 
 ---
 
+##### `SwitchUserConditionKeys`<sup>Required</sup> <a name="SwitchUserConditionKeys" id="@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.SwitchUserConditionKeys"></a>
+
+```typescript
+public readonly SwitchUserConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the SwitchUser action.
+
+---
+
 ##### `ToggleAppSwitcherConditionKeys`<sup>Required</sup> <a name="ToggleAppSwitcherConditionKeys" id="@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.ToggleAppSwitcherConditionKeys"></a>
 
 ```typescript
@@ -689,6 +867,18 @@ public readonly TypeTextConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the TypeText action.
+
+---
+
+##### `WaitConditionKeys`<sup>Required</sup> <a name="WaitConditionKeys" id="@cdk_utils/iam.agentaccess_mcp.AgentaccessMcpConditions.property.WaitConditionKeys"></a>
+
+```typescript
+public readonly WaitConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the Wait action.
 
 ---
 

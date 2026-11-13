@@ -1004,8 +1004,11 @@ new aidevops.AidevopsActions()
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.actionGetAssociation">actionGetAssociation</a></code> | <code>string</code> | [Read] aidevops:GetAssociation. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.actionGetBacklogTask">actionGetBacklogTask</a></code> | <code>string</code> | [Read] aidevops:GetBacklogTask. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.actionGetCatalogCapability">actionGetCatalogCapability</a></code> | <code>string</code> | [Read] aidevops:GetCatalogCapability. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.actionGetChat">actionGetChat</a></code> | <code>string</code> | [Read] aidevops:GetChat. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.actionGetKnowledgeGraph">actionGetKnowledgeGraph</a></code> | <code>string</code> | [Read] aidevops:GetKnowledgeGraph. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.actionGetKnowledgeItem">actionGetKnowledgeItem</a></code> | <code>string</code> | [Read] aidevops:GetKnowledgeItem. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.actionGetOperatorApp">actionGetOperatorApp</a></code> | <code>string</code> | [Read] aidevops:GetOperatorApp. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.actionGetPlan">actionGetPlan</a></code> | <code>string</code> | [Read] aidevops:GetPlan. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.actionGetRecommendation">actionGetRecommendation</a></code> | <code>string</code> | [Read] aidevops:GetRecommendation. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.actionGetService">actionGetService</a></code> | <code>string</code> | [Read] aidevops:GetService. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.actionGetTrigger">actionGetTrigger</a></code> | <code>string</code> | [Read] aidevops:GetTrigger. |
@@ -1043,7 +1046,9 @@ new aidevops.AidevopsActions()
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.EndChatForCase">EndChatForCase</a></code> | <code>string</code> | [Write] aidevops:EndChatForCase. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.InitiateChatForCase">InitiateChatForCase</a></code> | <code>string</code> | [Write] aidevops:InitiateChatForCase. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.ListAccessTokens">ListAccessTokens</a></code> | <code>string</code> | [List] aidevops:ListAccessTokens. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.ListAgentSpaceMetrics">ListAgentSpaceMetrics</a></code> | <code>string</code> | [Read] aidevops:ListAgentSpaceMetrics. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.ListAgentSpaces">ListAgentSpaces</a></code> | <code>string</code> | [List] aidevops:ListAgentSpaces. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.ListAssetChanges">ListAssetChanges</a></code> | <code>string</code> | [List] aidevops:ListAssetChanges. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.ListAssetFiles">ListAssetFiles</a></code> | <code>string</code> | [List] aidevops:ListAssetFiles. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.ListAssets">ListAssets</a></code> | <code>string</code> | [List] aidevops:ListAssets. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.ListAssetTypes">ListAssetTypes</a></code> | <code>string</code> | [List] aidevops:ListAssetTypes. |
@@ -1073,6 +1078,7 @@ new aidevops.AidevopsActions()
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.SearchServiceAccessibleResource">SearchServiceAccessibleResource</a></code> | <code>string</code> | [Read] aidevops:SearchServiceAccessibleResource. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.SendMessage">SendMessage</a></code> | <code>string</code> | [Write] aidevops:SendMessage. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.StopPlan">StopPlan</a></code> | <code>string</code> | [Write] aidevops:StopPlan. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] aidevops:TagResource. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] aidevops:UntagResource. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.UpdateAgentSpace">UpdateAgentSpace</a></code> | <code>string</code> | [Write] aidevops:UpdateAgentSpace. |
@@ -1081,6 +1087,7 @@ new aidevops.AidevopsActions()
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.UpdateAssetFile">UpdateAssetFile</a></code> | <code>string</code> | [Write] aidevops:UpdateAssetFile. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.UpdateAssociation">UpdateAssociation</a></code> | <code>string</code> | [Write] aidevops:UpdateAssociation. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.UpdateBacklogTask">UpdateBacklogTask</a></code> | <code>string</code> | [Write] aidevops:UpdateBacklogTask. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.UpdateChat">UpdateChat</a></code> | <code>string</code> | [Write] aidevops:UpdateChat. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.UpdateGoal">UpdateGoal</a></code> | <code>string</code> | [Write] aidevops:UpdateGoal. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.UpdateKnowledgeItem">UpdateKnowledgeItem</a></code> | <code>string</code> | [Write] aidevops:UpdateKnowledgeItem. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.UpdateOperatorAppIdpConfig">UpdateOperatorAppIdpConfig</a></code> | <code>string</code> | [Write] aidevops:UpdateOperatorAppIdpConfig. |
@@ -1199,6 +1206,30 @@ public readonly actionGetCatalogCapability: string;
 
 ---
 
+##### `actionGetChat`<sup>Required</sup> <a name="actionGetChat" id="@cdk_utils/iam.aidevops.AidevopsActions.property.actionGetChat"></a>
+
+```typescript
+public readonly actionGetChat: string;
+```
+
+- *Type:* string
+
+[Read] aidevops:GetChat.
+
+---
+
+##### `actionGetKnowledgeGraph`<sup>Required</sup> <a name="actionGetKnowledgeGraph" id="@cdk_utils/iam.aidevops.AidevopsActions.property.actionGetKnowledgeGraph"></a>
+
+```typescript
+public readonly actionGetKnowledgeGraph: string;
+```
+
+- *Type:* string
+
+[Read] aidevops:GetKnowledgeGraph.
+
+---
+
 ##### `actionGetKnowledgeItem`<sup>Required</sup> <a name="actionGetKnowledgeItem" id="@cdk_utils/iam.aidevops.AidevopsActions.property.actionGetKnowledgeItem"></a>
 
 ```typescript
@@ -1220,6 +1251,18 @@ public readonly actionGetOperatorApp: string;
 - *Type:* string
 
 [Read] aidevops:GetOperatorApp.
+
+---
+
+##### `actionGetPlan`<sup>Required</sup> <a name="actionGetPlan" id="@cdk_utils/iam.aidevops.AidevopsActions.property.actionGetPlan"></a>
+
+```typescript
+public readonly actionGetPlan: string;
+```
+
+- *Type:* string
+
+[Read] aidevops:GetPlan.
 
 ---
 
@@ -1667,6 +1710,18 @@ public readonly ListAccessTokens: string;
 
 ---
 
+##### `ListAgentSpaceMetrics`<sup>Required</sup> <a name="ListAgentSpaceMetrics" id="@cdk_utils/iam.aidevops.AidevopsActions.property.ListAgentSpaceMetrics"></a>
+
+```typescript
+public readonly ListAgentSpaceMetrics: string;
+```
+
+- *Type:* string
+
+[Read] aidevops:ListAgentSpaceMetrics.
+
+---
+
 ##### `ListAgentSpaces`<sup>Required</sup> <a name="ListAgentSpaces" id="@cdk_utils/iam.aidevops.AidevopsActions.property.ListAgentSpaces"></a>
 
 ```typescript
@@ -1676,6 +1731,18 @@ public readonly ListAgentSpaces: string;
 - *Type:* string
 
 [List] aidevops:ListAgentSpaces.
+
+---
+
+##### `ListAssetChanges`<sup>Required</sup> <a name="ListAssetChanges" id="@cdk_utils/iam.aidevops.AidevopsActions.property.ListAssetChanges"></a>
+
+```typescript
+public readonly ListAssetChanges: string;
+```
+
+- *Type:* string
+
+[List] aidevops:ListAssetChanges.
 
 ---
 
@@ -2027,6 +2094,18 @@ The IAM service prefix.
 
 ---
 
+##### `StopPlan`<sup>Required</sup> <a name="StopPlan" id="@cdk_utils/iam.aidevops.AidevopsActions.property.StopPlan"></a>
+
+```typescript
+public readonly StopPlan: string;
+```
+
+- *Type:* string
+
+[Write] aidevops:StopPlan.
+
+---
+
 ##### `TagResource`<sup>Required</sup> <a name="TagResource" id="@cdk_utils/iam.aidevops.AidevopsActions.property.TagResource"></a>
 
 ```typescript
@@ -2120,6 +2199,18 @@ public readonly UpdateBacklogTask: string;
 - *Type:* string
 
 [Write] aidevops:UpdateBacklogTask.
+
+---
+
+##### `UpdateChat`<sup>Required</sup> <a name="UpdateChat" id="@cdk_utils/iam.aidevops.AidevopsActions.property.UpdateChat"></a>
+
+```typescript
+public readonly UpdateChat: string;
+```
+
+- *Type:* string
+
+[Write] aidevops:UpdateChat.
 
 ---
 
@@ -2229,12 +2320,29 @@ new aidevops.AidevopsConditions()
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.approvalTarget">approvalTarget</a></code> | Generates a condition block for `aidevops:ApprovalTarget`. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.requestTag">requestTag</a></code> | Generates a condition block for `aws:RequestTag/${TagKey}`. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.resourceTag">resourceTag</a></code> | Generates a condition block for `aws:ResourceTag/${TagKey}`. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.serviceType">serviceType</a></code> | Generates a condition block for `aidevops:ServiceType`. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.sourceAgentSpaceARN">sourceAgentSpaceARN</a></code> | Generates a condition block for `aidevops:SourceAgentSpaceArn`. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.tagKeys">tagKeys</a></code> | Generates a condition block for `aws:TagKeys`. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.targetAgentSpaceARN">targetAgentSpaceARN</a></code> | Generates a condition block for `aidevops:TargetAgentSpaceArn`. |
+
+---
+
+##### `approvalTarget` <a name="approvalTarget" id="@cdk_utils/iam.aidevops.AidevopsConditions.approvalTarget"></a>
+
+```typescript
+import { aidevops } from '@cdk_utils/iam'
+
+aidevops.AidevopsConditions.approvalTarget(value: string)
+```
+
+Generates a condition block for `aidevops:ApprovalTarget`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.aidevops.AidevopsConditions.approvalTarget.parameter.value"></a>
+
+- *Type:* string
 
 ---
 
@@ -2345,7 +2453,9 @@ Generates a condition block for `aidevops:TargetAgentSpaceArn`.
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.actionGetAssetFileConditionKeys">actionGetAssetFileConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetAssetFile action. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.actionGetAssociationConditionKeys">actionGetAssociationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetAssociation action. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.actionGetBacklogTaskConditionKeys">actionGetBacklogTaskConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetBacklogTask action. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.actionGetKnowledgeGraphConditionKeys">actionGetKnowledgeGraphConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetKnowledgeGraph action. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.actionGetServiceConditionKeys">actionGetServiceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetService action. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.APPROVAL_TARGET">APPROVAL_TARGET</a></code> | <code>string</code> | Condition key: aidevops:ApprovalTarget (String). |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.AssociateServiceConditionKeys">AssociateServiceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the AssociateService action. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.AWS_REQUEST_TAG">AWS_REQUEST_TAG</a></code> | <code>string</code> | Condition key: aws:RequestTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.AWS_RESOURCE_TAG">AWS_RESOURCE_TAG</a></code> | <code>string</code> | Condition key: aws:ResourceTag/${TagKey} (String). |
@@ -2358,6 +2468,7 @@ Generates a condition block for `aidevops:TargetAgentSpaceArn`.
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.DeregisterServiceConditionKeys">DeregisterServiceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeregisterService action. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.DescribePrivateConnectionConditionKeys">DescribePrivateConnectionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribePrivateConnection action. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.DisassociateServiceConditionKeys">DisassociateServiceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DisassociateService action. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.ListAssetChangesConditionKeys">ListAssetChangesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListAssetChanges action. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.ListAssetFilesConditionKeys">ListAssetFilesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListAssetFiles action. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.ListAssetsConditionKeys">ListAssetsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListAssets action. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.ListBacklogTasksConditionKeys">ListBacklogTasksConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListBacklogTasks action. |
@@ -2374,6 +2485,7 @@ Generates a condition block for `aidevops:TargetAgentSpaceArn`.
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.TARGET_AGENT_SPACE_ARN">TARGET_AGENT_SPACE_ARN</a></code> | <code>string</code> | Condition key: aidevops:TargetAgentSpaceArn (ARN). |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.UntagResourceConditionKeys">UntagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UntagResource action. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.UpdateAgentSpaceConditionKeys">UpdateAgentSpaceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateAgentSpace action. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.UpdateApprovalActionConditionKeys">UpdateApprovalActionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateApprovalAction action. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.UpdateAssociationConditionKeys">UpdateAssociationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateAssociation action. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.UpdateBacklogTaskConditionKeys">UpdateBacklogTaskConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateBacklogTask action. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsConditions.property.UpdatePrivateConnectionCertificateConditionKeys">UpdatePrivateConnectionCertificateConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdatePrivateConnectionCertificate action. |
@@ -2452,6 +2564,18 @@ Condition keys applicable to the GetBacklogTask action.
 
 ---
 
+##### `actionGetKnowledgeGraphConditionKeys`<sup>Required</sup> <a name="actionGetKnowledgeGraphConditionKeys" id="@cdk_utils/iam.aidevops.AidevopsConditions.property.actionGetKnowledgeGraphConditionKeys"></a>
+
+```typescript
+public readonly actionGetKnowledgeGraphConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetKnowledgeGraph action.
+
+---
+
 ##### `actionGetServiceConditionKeys`<sup>Required</sup> <a name="actionGetServiceConditionKeys" id="@cdk_utils/iam.aidevops.AidevopsConditions.property.actionGetServiceConditionKeys"></a>
 
 ```typescript
@@ -2461,6 +2585,18 @@ public readonly actionGetServiceConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the GetService action.
+
+---
+
+##### `APPROVAL_TARGET`<sup>Required</sup> <a name="APPROVAL_TARGET" id="@cdk_utils/iam.aidevops.AidevopsConditions.property.APPROVAL_TARGET"></a>
+
+```typescript
+public readonly APPROVAL_TARGET: string;
+```
+
+- *Type:* string
+
+Condition key: aidevops:ApprovalTarget (String).
 
 ---
 
@@ -2605,6 +2741,18 @@ public readonly DisassociateServiceConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the DisassociateService action.
+
+---
+
+##### `ListAssetChangesConditionKeys`<sup>Required</sup> <a name="ListAssetChangesConditionKeys" id="@cdk_utils/iam.aidevops.AidevopsConditions.property.ListAssetChangesConditionKeys"></a>
+
+```typescript
+public readonly ListAssetChangesConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ListAssetChanges action.
 
 ---
 
@@ -2797,6 +2945,18 @@ public readonly UpdateAgentSpaceConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the UpdateAgentSpace action.
+
+---
+
+##### `UpdateApprovalActionConditionKeys`<sup>Required</sup> <a name="UpdateApprovalActionConditionKeys" id="@cdk_utils/iam.aidevops.AidevopsConditions.property.UpdateApprovalActionConditionKeys"></a>
+
+```typescript
+public readonly UpdateApprovalActionConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UpdateApprovalAction action.
 
 ---
 

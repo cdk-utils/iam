@@ -701,6 +701,7 @@ new signin.SigninActions()
 | <code><a href="#@cdk_utils/iam.signin.SigninActions.property.Authenticate">Authenticate</a></code> | <code>string</code> | [Read] signin:Authenticate. |
 | <code><a href="#@cdk_utils/iam.signin.SigninActions.property.AuthorizeOAuth2Access">AuthorizeOAuth2Access</a></code> | <code>string</code> | [Read] signin:AuthorizeOAuth2Access. |
 | <code><a href="#@cdk_utils/iam.signin.SigninActions.property.CreateAccount">CreateAccount</a></code> | <code>string</code> | [Write] signin:CreateAccount. |
+| <code><a href="#@cdk_utils/iam.signin.SigninActions.property.CreateBearerToken">CreateBearerToken</a></code> | <code>string</code> | [Read] signin:CreateBearerToken. |
 | <code><a href="#@cdk_utils/iam.signin.SigninActions.property.CreateOAuth2PublicClient">CreateOAuth2PublicClient</a></code> | <code>string</code> | [Write] signin:CreateOAuth2PublicClient. |
 | <code><a href="#@cdk_utils/iam.signin.SigninActions.property.CreateOAuth2Token">CreateOAuth2Token</a></code> | <code>string</code> | [Read] signin:CreateOAuth2Token. |
 | <code><a href="#@cdk_utils/iam.signin.SigninActions.property.CreateTrustedIdentityPropagationApplicationForConsole">CreateTrustedIdentityPropagationApplicationForConsole</a></code> | <code>string</code> | [Write] signin:CreateTrustedIdentityPropagationApplicationForConsole. |
@@ -833,6 +834,18 @@ public readonly CreateAccount: string;
 - *Type:* string
 
 [Write] signin:CreateAccount.
+
+---
+
+##### `CreateBearerToken`<sup>Required</sup> <a name="CreateBearerToken" id="@cdk_utils/iam.signin.SigninActions.property.CreateBearerToken"></a>
+
+```typescript
+public readonly CreateBearerToken: string;
+```
+
+- *Type:* string
+
+[Read] signin:CreateBearerToken.
 
 ---
 
@@ -1269,6 +1282,7 @@ new signin.SigninOperations()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.signin.SigninOperations.property.CreateBearerToken">CreateBearerToken</a></code> | <code>string[]</code> | IAM actions required for the CreateBearerToken API call. |
 | <code><a href="#@cdk_utils/iam.signin.SigninOperations.property.CreateOAuth2Token">CreateOAuth2Token</a></code> | <code>string[]</code> | IAM actions required for the CreateOAuth2Token API call. |
 | <code><a href="#@cdk_utils/iam.signin.SigninOperations.property.CreateOAuth2TokenWithIAM">CreateOAuth2TokenWithIAM</a></code> | <code>string[]</code> | IAM actions required for the CreateOAuth2TokenWithIAM API call. |
 | <code><a href="#@cdk_utils/iam.signin.SigninOperations.property.CreateOAuth2TokenWithTokenExchange">CreateOAuth2TokenWithTokenExchange</a></code> | <code>string[]</code> | IAM actions required for the CreateOAuth2TokenWithTokenExchange API call. |
@@ -1281,6 +1295,18 @@ new signin.SigninOperations()
 | <code><a href="#@cdk_utils/iam.signin.SigninOperations.property.PutConsoleAuthorizationConfiguration">PutConsoleAuthorizationConfiguration</a></code> | <code>string[]</code> | IAM actions required for the PutConsoleAuthorizationConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.signin.SigninOperations.property.PutResourcePermissionStatement">PutResourcePermissionStatement</a></code> | <code>string[]</code> | IAM actions required for the PutResourcePermissionStatement API call. |
 | <code><a href="#@cdk_utils/iam.signin.SigninOperations.property.RevokeOAuth2TokenWithIAM">RevokeOAuth2TokenWithIAM</a></code> | <code>string[]</code> | IAM actions required for the RevokeOAuth2TokenWithIAM API call. |
+
+---
+
+##### `CreateBearerToken`<sup>Required</sup> <a name="CreateBearerToken" id="@cdk_utils/iam.signin.SigninOperations.property.CreateBearerToken"></a>
+
+```typescript
+public readonly CreateBearerToken: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateBearerToken API call.
 
 ---
 
