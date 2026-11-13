@@ -11356,6 +11356,22 @@
       ]
     },
     {
+      "Name": "CreateClusterExtension",
+      "AuthorizedActions": [
+        {
+          "Name": "AddTags",
+          "Service": "sagemaker"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sagemaker",
+          "Method": "create_cluster_extension",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "CreateClusterSchedulerConfig",
       "AuthorizedActions": [
         {
@@ -12657,7 +12673,6 @@
           "Name": "PassRole",
           "Context": {
             "iam:PassedToService": [
-              "sagemaker.amazonaws.com",
               "training-session.sagemaker.amazonaws.com"
             ]
           },
@@ -12966,6 +12981,16 @@
         {
           "Name": "sagemaker",
           "Method": "delete_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteClusterExtension",
+      "SDK": [
+        {
+          "Name": "sagemaker",
+          "Method": "delete_cluster_extension",
           "Package": "Boto3"
         }
       ]
@@ -14030,6 +14055,16 @@
         {
           "Name": "sagemaker",
           "Method": "describe_cluster_event",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeClusterExtension",
+      "SDK": [
+        {
+          "Name": "sagemaker",
+          "Method": "describe_cluster_extension",
           "Package": "Boto3"
         }
       ]
@@ -15621,6 +15656,16 @@
         {
           "Name": "sagemaker",
           "Method": "list_cluster_events",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListClusterExtensions",
+      "SDK": [
+        {
+          "Name": "sagemaker",
+          "Method": "list_cluster_extensions",
           "Package": "Boto3"
         }
       ]
@@ -17671,6 +17716,16 @@
         {
           "Name": "sagemaker",
           "Method": "update_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateClusterExtension",
+      "SDK": [
+        {
+          "Name": "sagemaker",
+          "Method": "update_cluster_extension",
           "Package": "Boto3"
         }
       ]

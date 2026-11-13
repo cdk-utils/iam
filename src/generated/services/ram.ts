@@ -26,6 +26,9 @@ export class RamActions {
 	static readonly CreatePermissionVersion = "ram:CreatePermissionVersion";
 	/** [Write] ram:CreateResourceShare */
 	static readonly CreateResourceShare = "ram:CreateResourceShare";
+	/** [PermissionManagement] ram:DeleteCustomerManagedPermissionPolicy */
+	static readonly DeleteCustomerManagedPermissionPolicy =
+		"ram:DeleteCustomerManagedPermissionPolicy";
 	/** [Write] ram:DeletePermission */
 	static readonly DeletePermission = "ram:DeletePermission";
 	/** [Write] ram:DeletePermissionVersion */
@@ -40,6 +43,9 @@ export class RamActions {
 	/** [PermissionManagement] ram:EnableSharingWithAwsOrganization */
 	static readonly EnableSharingWithAwsOrganization =
 		"ram:EnableSharingWithAwsOrganization";
+	/** [Read] ram:GetCustomerManagedPermissionPolicy */
+	static readonly actionGetCustomerManagedPermissionPolicy =
+		"ram:GetCustomerManagedPermissionPolicy";
 	/** [Read] ram:GetPermission */
 	static readonly actionGetPermission = "ram:GetPermission";
 	/** [Read] ram:GetResourcePolicies */
@@ -81,6 +87,9 @@ export class RamActions {
 	/** [Write] ram:PromoteResourceShareCreatedFromPolicy */
 	static readonly PromoteResourceShareCreatedFromPolicy =
 		"ram:PromoteResourceShareCreatedFromPolicy";
+	/** [PermissionManagement] ram:PutCustomerManagedPermissionPolicy */
+	static readonly PutCustomerManagedPermissionPolicy =
+		"ram:PutCustomerManagedPermissionPolicy";
 	/** [Write] ram:RejectResourceShareInvitation */
 	static readonly RejectResourceShareInvitation =
 		"ram:RejectResourceShareInvitation";
@@ -94,11 +103,14 @@ export class RamActions {
 	static readonly TagResource = "ram:TagResource";
 	/** [Tagging] ram:UntagResource */
 	static readonly UntagResource = "ram:UntagResource";
+	/** [Write] ram:UpdatePermission */
+	static readonly UpdatePermission = "ram:UpdatePermission";
 	/** [Write] ram:UpdateResourceShare */
 	static readonly UpdateResourceShare = "ram:UpdateResourceShare";
 
 	/** All read-level actions. */
 	static readonly AllReadActions: string[] = [
+		RamActions.actionGetCustomerManagedPermissionPolicy,
 		RamActions.actionGetPermission,
 		RamActions.actionGetResourcePolicies,
 		RamActions.actionGetResourceShareAssociations,
@@ -124,6 +136,7 @@ export class RamActions {
 		RamActions.RejectResourceShareInvitation,
 		RamActions.ReplacePermissionAssociations,
 		RamActions.actionSetDefaultPermissionVersion,
+		RamActions.UpdatePermission,
 		RamActions.UpdateResourceShare,
 	];
 	/** All list-level actions. */
@@ -140,7 +153,9 @@ export class RamActions {
 	];
 	/** All permission-management-level actions. */
 	static readonly AllPermissionManagementActions: string[] = [
+		RamActions.DeleteCustomerManagedPermissionPolicy,
 		RamActions.EnableSharingWithAwsOrganization,
+		RamActions.PutCustomerManagedPermissionPolicy,
 	];
 	/** All tagging-level actions. */
 	static readonly AllTaggingActions: string[] = [
@@ -183,6 +198,8 @@ export interface RamCustomerManagedPermissionArnComponents {
 export interface RamPermissionArnProps {
 	/** The ResourcePath component of the ARN. */
 	readonly resourcePath: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
 	/** AWS account ID. Defaults to "*". */
 	readonly account?: string;
 	/** AWS partition. Defaults to "aws". */
@@ -195,6 +212,8 @@ export interface RamPermissionArnProps {
 export interface RamPermissionArnComponents {
 	/** AWS partition. */
 	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
 	/** AWS account ID. */
 	readonly account: string;
 	/** The ResourcePath component. */
@@ -260,7 +279,7 @@ export interface RamResourceShareInvitationArnComponents {
 const CustomerManagedPermissionArnRegex =
 	/^arn:(?<partition>[^:]+):ram:(?<region>[^:]*):(?<account>[^:]*):permission\/(?<resourcePath>[^:/?]+)$/;
 const PermissionArnRegex =
-	/^arn:(?<partition>[^:]+):ram::(?<account>[^:]*):permission\/(?<resourcePath>[^:/?]+)$/;
+	/^arn:(?<partition>[^:]+):ram::aws:permission\/(?<resourcePath>[^:/?]+)$/;
 const ResourceShareArnRegex =
 	/^arn:(?<partition>[^:]+):ram:(?<region>[^:]*):(?<account>[^:]*):resource-share\/(?<resourcePath>[^:/?]+)$/;
 const ResourceShareInvitationArnRegex =
@@ -309,7 +328,7 @@ export class RamResources {
 	 * Builds an ARN for the permission resource.
 	 */
 	static permission(props: RamPermissionArnProps): string {
-		return `arn:${props.partition ?? "aws"}:ram::${props.account ?? "*"}:permission/${props.resourcePath}`;
+		return `arn:${props.partition ?? "aws"}:ram::aws:permission/${props.resourcePath}`;
 	}
 
 	/**
@@ -330,6 +349,7 @@ export class RamResources {
 		}
 		return {
 			partition: match.groups.partition,
+			region: match.groups.region,
 			account: match.groups.account,
 			resourcePath: match.groups!.resourcePath,
 		};
@@ -522,6 +542,8 @@ export class RamOperations {
 	static readonly TagResource: string[] = ["ram:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
 	static readonly UntagResource: string[] = ["ram:UntagResource"];
+	/** IAM actions required for the UpdatePermission API call. */
+	static readonly UpdatePermission: string[] = ["ram:UpdatePermission"];
 	/** IAM actions required for the UpdateResourceShare API call. */
 	static readonly UpdateResourceShare: string[] = ["ram:UpdateResourceShare"];
 }
@@ -530,120 +552,96 @@ export class RamOperations {
  * Condition key constants and builders for ram.
  */
 export class RamConditions {
-	/** Condition keys applicable to the AcceptResourceShareInvitation action. */
-	static readonly AcceptResourceShareInvitationConditionKeys: string[] = [
-		"ram:ResourceShareName",
-		"ram:ShareOwnerAccountId",
-	];
 	/** Condition keys applicable to the AssociateResourceShare action. */
 	static readonly AssociateResourceShareConditionKeys: string[] = [
-		"aws:ResourceTag/${TagKey}",
-		"ram:AllowsExternalPrincipals",
-		"ram:Principal",
-		"ram:RequestedResourceType",
-		"ram:ResourceArn",
-		"ram:ResourceShareName",
-		"ram:ResourceTag/${TagKey}",
-		"ram:RetainSharingOnAccountLeaveOrganization",
+		"ram:RequestedPermissionArns",
+		"ram:RequestedPermissionResourceTypes",
+		"ram:RequestedPrincipals",
+		"ram:RequestedResourceArns",
+		"ram:RequestedResourceTypes",
+	];
+	/** Condition keys applicable to the AssociateResourceSharePermission action. */
+	static readonly AssociateResourceSharePermissionConditionKeys: string[] = [
+		"ram:RequestedPermissionArns",
+		"ram:RequestedPermissionResourceTypes",
 	];
 	/** Condition keys applicable to the CreatePermission action. */
 	static readonly CreatePermissionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
-		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
-		"ram:PermissionArn",
-		"ram:PermissionResourceType",
+		"ram:RequestedPermissionArns",
+		"ram:RequestedPermissionResourceTypes",
 	];
 	/** Condition keys applicable to the CreatePermissionVersion action. */
 	static readonly CreatePermissionVersionConditionKeys: string[] = [
-		"ram:PermissionArn",
-		"ram:PermissionResourceType",
+		"ram:RequestedPermissionArns",
+		"ram:RequestedPermissionResourceTypes",
 	];
 	/** Condition keys applicable to the CreateResourceShare action. */
 	static readonly CreateResourceShareConditionKeys: string[] = [
-		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
-		"ram:AllowsExternalPrincipals",
-		"ram:Principal",
-		"ram:RequestedAllowsExternalPrincipals",
-		"ram:RequestedResourceType",
-		"ram:ResourceArn",
-		"ram:RetainSharingOnAccountLeaveOrganization",
+		"ram:RequestedPermissionArns",
+		"ram:RequestedPermissionResourceTypes",
+		"ram:RequestedPrincipals",
+		"ram:RequestedResourceArns",
+		"ram:RequestedResourceTypes",
 	];
+	/** Condition keys applicable to the DeleteCustomerManagedPermissionPolicy action. */
+	static readonly DeleteCustomerManagedPermissionPolicyConditionKeys: string[] =
+		["ram:RequestedPermissionArns", "ram:RequestedPermissionResourceTypes"];
 	/** Condition keys applicable to the DeletePermission action. */
 	static readonly DeletePermissionConditionKeys: string[] = [
-		"aws:ResourceTag/${TagKey}",
-		"ram:PermissionArn",
-		"ram:PermissionResourceType",
+		"ram:RequestedPermissionArns",
+		"ram:RequestedPermissionResourceTypes",
 	];
 	/** Condition keys applicable to the DeletePermissionVersion action. */
 	static readonly DeletePermissionVersionConditionKeys: string[] = [
-		"ram:PermissionArn",
-		"ram:PermissionResourceType",
-	];
-	/** Condition keys applicable to the DeleteResourceShare action. */
-	static readonly DeleteResourceShareConditionKeys: string[] = [
-		"aws:ResourceTag/${TagKey}",
-		"ram:AllowsExternalPrincipals",
-		"ram:ResourceShareName",
-		"ram:ResourceTag/${TagKey}",
-		"ram:RetainSharingOnAccountLeaveOrganization",
+		"ram:RequestedPermissionArns",
+		"ram:RequestedPermissionResourceTypes",
 	];
 	/** Condition keys applicable to the DisassociateResourceShare action. */
 	static readonly DisassociateResourceShareConditionKeys: string[] = [
-		"aws:ResourceTag/${TagKey}",
-		"ram:AllowsExternalPrincipals",
-		"ram:Principal",
-		"ram:RequestedResourceType",
-		"ram:ResourceArn",
-		"ram:ResourceShareName",
-		"ram:ResourceTag/${TagKey}",
-		"ram:RetainSharingOnAccountLeaveOrganization",
+		"ram:RequestedPrincipals",
+		"ram:RequestedResourceArns",
+		"ram:RequestedResourceTypes",
 	];
+	/** Condition keys applicable to the DisassociateResourceSharePermission action. */
+	static readonly DisassociateResourceSharePermissionConditionKeys: string[] = [
+		"ram:RequestedPermissionArns",
+		"ram:RequestedPermissionResourceTypes",
+	];
+	/** Condition keys applicable to the GetCustomerManagedPermissionPolicy action. */
+	static readonly actionGetCustomerManagedPermissionPolicyConditionKeys: string[] =
+		["ram:RequestedPermissionArns", "ram:RequestedPermissionResourceTypes"];
 	/** Condition keys applicable to the GetPermission action. */
 	static readonly actionGetPermissionConditionKeys: string[] = [
-		"ram:PermissionArn",
-	];
-	/** Condition keys applicable to the GetResourceShares action. */
-	static readonly actionGetResourceSharesConditionKeys: string[] = [
-		"aws:RequestTag/${TagKey}",
-		"aws:TagKeys",
-	];
-	/** Condition keys applicable to the ListPendingInvitationResources action. */
-	static readonly ListPendingInvitationResourcesConditionKeys: string[] = [
-		"ram:ResourceShareName",
+		"ram:RequestedPermissionArns",
+		"ram:RequestedPermissionResourceTypes",
 	];
 	/** Condition keys applicable to the ListPermissionAssociations action. */
 	static readonly ListPermissionAssociationsConditionKeys: string[] = [
-		"ram:PermissionArn",
-		"ram:PermissionResourceType",
-	];
-	/** Condition keys applicable to the ListResourceSharePermissions action. */
-	static readonly ListResourceSharePermissionsConditionKeys: string[] = [
-		"aws:ResourceTag/${TagKey}",
-		"ram:AllowsExternalPrincipals",
-		"ram:ResourceShareName",
-		"ram:RetainSharingOnAccountLeaveOrganization",
+		"ram:RequestedPermissionArns",
+		"ram:RequestedPermissionResourceTypes",
 	];
 	/** Condition keys applicable to the PromotePermissionCreatedFromPolicy action. */
 	static readonly PromotePermissionCreatedFromPolicyConditionKeys: string[] = [
-		"ram:PermissionArn",
-		"ram:PermissionResourceType",
+		"ram:RequestedPermissionArns",
+		"ram:RequestedPermissionResourceTypes",
 	];
-	/** Condition keys applicable to the RejectResourceShareInvitation action. */
-	static readonly RejectResourceShareInvitationConditionKeys: string[] = [
-		"ram:ResourceShareName",
-		"ram:ShareOwnerAccountId",
+	/** Condition keys applicable to the PutCustomerManagedPermissionPolicy action. */
+	static readonly PutCustomerManagedPermissionPolicyConditionKeys: string[] = [
+		"ram:RequestedPermissionArns",
+		"ram:RequestedPermissionResourceTypes",
 	];
 	/** Condition keys applicable to the ReplacePermissionAssociations action. */
 	static readonly ReplacePermissionAssociationsConditionKeys: string[] = [
-		"ram:PermissionArn",
-		"ram:PermissionResourceType",
+		"ram:RequestedPermissionArns",
+		"ram:RequestedPermissionResourceTypes",
 	];
 	/** Condition keys applicable to the SetDefaultPermissionVersion action. */
 	static readonly actionSetDefaultPermissionVersionConditionKeys: string[] = [
-		"ram:PermissionArn",
-		"ram:PermissionResourceType",
+		"ram:RequestedPermissionArns",
+		"ram:RequestedPermissionResourceTypes",
 	];
 	/** Condition keys applicable to the TagResource action. */
 	static readonly TagResourceConditionKeys: string[] = [
@@ -652,14 +650,10 @@ export class RamConditions {
 	];
 	/** Condition keys applicable to the UntagResource action. */
 	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
-	/** Condition keys applicable to the UpdateResourceShare action. */
-	static readonly UpdateResourceShareConditionKeys: string[] = [
-		"aws:ResourceTag/${TagKey}",
-		"ram:AllowsExternalPrincipals",
-		"ram:RequestedAllowsExternalPrincipals",
-		"ram:ResourceShareName",
-		"ram:ResourceTag/${TagKey}",
-		"ram:RetainSharingOnAccountLeaveOrganization",
+	/** Condition keys applicable to the UpdatePermission action. */
+	static readonly UpdatePermissionConditionKeys: string[] = [
+		"ram:RequestedPermissionArns",
+		"ram:RequestedPermissionResourceTypes",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
@@ -674,13 +668,27 @@ export class RamConditions {
 	static readonly PERMISSION_ARN = "ram:PermissionArn";
 	/** Condition key: ram:PermissionResourceType (String) */
 	static readonly PERMISSION_RESOURCE_TYPE = "ram:PermissionResourceType";
+	/** Condition key: ram:PermissionTemplateParameter/${ParameterName} (ArrayOfString) */
+	static readonly PERMISSION_TEMPLATE_PARAMETER =
+		"ram:PermissionTemplateParameter/${ParameterName}";
 	/** Condition key: ram:Principal (String) */
 	static readonly PRINCIPAL = "ram:Principal";
 	/** Condition key: ram:RequestedAllowsExternalPrincipals (Bool) */
 	static readonly REQUESTED_ALLOWS_EXTERNAL_PRINCIPALS =
 		"ram:RequestedAllowsExternalPrincipals";
+	/** Condition key: ram:RequestedPermissionArns (ArrayOfARN) */
+	static readonly REQUESTED_PERMISSION_ARNS = "ram:RequestedPermissionArns";
+	/** Condition key: ram:RequestedPermissionResourceTypes (ArrayOfString) */
+	static readonly REQUESTED_PERMISSION_RESOURCE_TYPES =
+		"ram:RequestedPermissionResourceTypes";
+	/** Condition key: ram:RequestedPrincipals (ArrayOfString) */
+	static readonly REQUESTED_PRINCIPALS = "ram:RequestedPrincipals";
+	/** Condition key: ram:RequestedResourceArns (ArrayOfARN) */
+	static readonly REQUESTED_RESOURCE_ARNS = "ram:RequestedResourceArns";
 	/** Condition key: ram:RequestedResourceType (String) */
 	static readonly REQUESTED_RESOURCE_TYPE = "ram:RequestedResourceType";
+	/** Condition key: ram:RequestedResourceTypes (ArrayOfString) */
+	static readonly REQUESTED_RESOURCE_TYPES = "ram:RequestedResourceTypes";
 	/** Condition key: ram:ResourceArn (ARN) */
 	static readonly RESOURCE_ARN = "ram:ResourceArn";
 	/** Condition key: ram:ResourceShareName (String) */
@@ -740,6 +748,19 @@ export class RamConditions {
 	}
 
 	/**
+	 * Generates a condition block for `ram:PermissionTemplateParameter/${ParameterName}`.
+	 */
+	static permissionTemplateParameter(
+		values: string[],
+	): Record<string, Record<string, string[]>> {
+		return {
+			"ForAllValues:StringEquals": {
+				"ram:PermissionTemplateParameter/${ParameterName}": values,
+			},
+		};
+	}
+
+	/**
 	 * Generates a condition block for `ram:Principal`.
 	 */
 	static principal(value: string): Record<string, Record<string, string>> {
@@ -756,12 +777,69 @@ export class RamConditions {
 	}
 
 	/**
+	 * Generates a condition block for `ram:RequestedPermissionArns`.
+	 */
+	static requestedPermissionArns(
+		values: string[],
+	): Record<string, Record<string, string[]>> {
+		return {
+			"ForAllValues:ArnEquals": { "ram:RequestedPermissionArns": values },
+		};
+	}
+
+	/**
+	 * Generates a condition block for `ram:RequestedPermissionResourceTypes`.
+	 */
+	static requestedPermissionResourceTypes(
+		values: string[],
+	): Record<string, Record<string, string[]>> {
+		return {
+			"ForAllValues:StringEquals": {
+				"ram:RequestedPermissionResourceTypes": values,
+			},
+		};
+	}
+
+	/**
+	 * Generates a condition block for `ram:RequestedPrincipals`.
+	 */
+	static requestedPrincipals(
+		values: string[],
+	): Record<string, Record<string, string[]>> {
+		return {
+			"ForAllValues:StringEquals": { "ram:RequestedPrincipals": values },
+		};
+	}
+
+	/**
+	 * Generates a condition block for `ram:RequestedResourceArns`.
+	 */
+	static requestedResourceArns(
+		values: string[],
+	): Record<string, Record<string, string[]>> {
+		return {
+			"ForAllValues:ArnEquals": { "ram:RequestedResourceArns": values },
+		};
+	}
+
+	/**
 	 * Generates a condition block for `ram:RequestedResourceType`.
 	 */
 	static requestedResourceType(
 		value: string,
 	): Record<string, Record<string, string>> {
 		return { StringEquals: { "ram:RequestedResourceType": value } };
+	}
+
+	/**
+	 * Generates a condition block for `ram:RequestedResourceTypes`.
+	 */
+	static requestedResourceTypes(
+		values: string[],
+	): Record<string, Record<string, string[]>> {
+		return {
+			"ForAllValues:StringEquals": { "ram:RequestedResourceTypes": values },
+		};
 	}
 
 	/**

@@ -355,6 +355,7 @@ new s3tables.S3tablesActions()
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesActions.property.actionGetTable">actionGetTable</a></code> | <code>string</code> | [Read] s3tables:GetTable. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesActions.property.actionGetTableBucket">actionGetTableBucket</a></code> | <code>string</code> | [Read] s3tables:GetTableBucket. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesActions.property.actionGetTableBucketEncryption">actionGetTableBucketEncryption</a></code> | <code>string</code> | [Read] s3tables:GetTableBucketEncryption. |
+| <code><a href="#@cdk_utils/iam.s3tables.S3tablesActions.property.actionGetTableBucketLogging">actionGetTableBucketLogging</a></code> | <code>string</code> | [Read] s3tables:GetTableBucketLogging. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesActions.property.actionGetTableBucketMaintenanceConfiguration">actionGetTableBucketMaintenanceConfiguration</a></code> | <code>string</code> | [Read] s3tables:GetTableBucketMaintenanceConfiguration. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesActions.property.actionGetTableBucketMetricsConfiguration">actionGetTableBucketMetricsConfiguration</a></code> | <code>string</code> | [Read] s3tables:GetTableBucketMetricsConfiguration. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesActions.property.actionGetTableBucketPolicy">actionGetTableBucketPolicy</a></code> | <code>string</code> | [Read] s3tables:GetTableBucketPolicy. |
@@ -365,6 +366,7 @@ new s3tables.S3tablesActions()
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesActions.property.actionGetTableMaintenanceConfiguration">actionGetTableMaintenanceConfiguration</a></code> | <code>string</code> | [Read] s3tables:GetTableMaintenanceConfiguration. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesActions.property.actionGetTableMaintenanceJobStatus">actionGetTableMaintenanceJobStatus</a></code> | <code>string</code> | [Read] s3tables:GetTableMaintenanceJobStatus. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesActions.property.actionGetTableMetadataLocation">actionGetTableMetadataLocation</a></code> | <code>string</code> | [Read] s3tables:GetTableMetadataLocation. |
+| <code><a href="#@cdk_utils/iam.s3tables.S3tablesActions.property.actionGetTableMigration">actionGetTableMigration</a></code> | <code>string</code> | [Read] s3tables:GetTableMigration. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesActions.property.actionGetTablePolicy">actionGetTablePolicy</a></code> | <code>string</code> | [Read] s3tables:GetTablePolicy. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesActions.property.actionGetTableRecordExpirationConfiguration">actionGetTableRecordExpirationConfiguration</a></code> | <code>string</code> | [Read] s3tables:GetTableRecordExpirationConfiguration. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesActions.property.actionGetTableRecordExpirationJobStatus">actionGetTableRecordExpirationJobStatus</a></code> | <code>string</code> | [Read] s3tables:GetTableRecordExpirationJobStatus. |
@@ -376,6 +378,7 @@ new s3tables.S3tablesActions()
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesActions.property.AllReadActions">AllReadActions</a></code> | <code>string[]</code> | All read-level actions. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesActions.property.AllTaggingActions">AllTaggingActions</a></code> | <code>string[]</code> | All tagging-level actions. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
+| <code><a href="#@cdk_utils/iam.s3tables.S3tablesActions.property.CompleteTableMigration">CompleteTableMigration</a></code> | <code>string</code> | [Write] s3tables:CompleteTableMigration. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesActions.property.CreateNamespace">CreateNamespace</a></code> | <code>string</code> | [Write] s3tables:CreateNamespace. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesActions.property.CreateTable">CreateTable</a></code> | <code>string</code> | [Write] s3tables:CreateTable. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesActions.property.CreateTableBucket">CreateTableBucket</a></code> | <code>string</code> | [Write] s3tables:CreateTableBucket. |
@@ -390,9 +393,11 @@ new s3tables.S3tablesActions()
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesActions.property.DeleteTableReplication">DeleteTableReplication</a></code> | <code>string</code> | [Write] s3tables:DeleteTableReplication. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesActions.property.ListNamespaces">ListNamespaces</a></code> | <code>string</code> | [List] s3tables:ListNamespaces. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesActions.property.ListTableBuckets">ListTableBuckets</a></code> | <code>string</code> | [List] s3tables:ListTableBuckets. |
+| <code><a href="#@cdk_utils/iam.s3tables.S3tablesActions.property.ListTableMigrations">ListTableMigrations</a></code> | <code>string</code> | [List] s3tables:ListTableMigrations. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesActions.property.ListTables">ListTables</a></code> | <code>string</code> | [List] s3tables:ListTables. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [List] s3tables:ListTagsForResource. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesActions.property.PutTableBucketEncryption">PutTableBucketEncryption</a></code> | <code>string</code> | [Write] s3tables:PutTableBucketEncryption. |
+| <code><a href="#@cdk_utils/iam.s3tables.S3tablesActions.property.PutTableBucketLogging">PutTableBucketLogging</a></code> | <code>string</code> | [Write] s3tables:PutTableBucketLogging. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesActions.property.PutTableBucketMaintenanceConfiguration">PutTableBucketMaintenanceConfiguration</a></code> | <code>string</code> | [Write] s3tables:PutTableBucketMaintenanceConfiguration. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesActions.property.PutTableBucketMetricsConfiguration">PutTableBucketMetricsConfiguration</a></code> | <code>string</code> | [Write] s3tables:PutTableBucketMetricsConfiguration. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesActions.property.PutTableBucketPolicy">PutTableBucketPolicy</a></code> | <code>string</code> | [PermissionManagement] s3tables:PutTableBucketPolicy. |
@@ -407,9 +412,12 @@ new s3tables.S3tablesActions()
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesActions.property.PutTableStorageClass">PutTableStorageClass</a></code> | <code>string</code> | [Write] s3tables:PutTableStorageClass. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesActions.property.RenameTable">RenameTable</a></code> | <code>string</code> | [Write] s3tables:RenameTable. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
+| <code><a href="#@cdk_utils/iam.s3tables.S3tablesActions.property.StartTableMigration">StartTableMigration</a></code> | <code>string</code> | [Write] s3tables:StartTableMigration. |
+| <code><a href="#@cdk_utils/iam.s3tables.S3tablesActions.property.SyncTableMigration">SyncTableMigration</a></code> | <code>string</code> | [Write] s3tables:SyncTableMigration. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] s3tables:TagResource. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] s3tables:UntagResource. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesActions.property.UpdateTableMetadataLocation">UpdateTableMetadataLocation</a></code> | <code>string</code> | [Write] s3tables:UpdateTableMetadataLocation. |
+| <code><a href="#@cdk_utils/iam.s3tables.S3tablesActions.property.UpdateTableMigration">UpdateTableMigration</a></code> | <code>string</code> | [Write] s3tables:UpdateTableMigration. |
 
 ---
 
@@ -458,6 +466,18 @@ public readonly actionGetTableBucketEncryption: string;
 - *Type:* string
 
 [Read] s3tables:GetTableBucketEncryption.
+
+---
+
+##### `actionGetTableBucketLogging`<sup>Required</sup> <a name="actionGetTableBucketLogging" id="@cdk_utils/iam.s3tables.S3tablesActions.property.actionGetTableBucketLogging"></a>
+
+```typescript
+public readonly actionGetTableBucketLogging: string;
+```
+
+- *Type:* string
+
+[Read] s3tables:GetTableBucketLogging.
 
 ---
 
@@ -578,6 +598,18 @@ public readonly actionGetTableMetadataLocation: string;
 - *Type:* string
 
 [Read] s3tables:GetTableMetadataLocation.
+
+---
+
+##### `actionGetTableMigration`<sup>Required</sup> <a name="actionGetTableMigration" id="@cdk_utils/iam.s3tables.S3tablesActions.property.actionGetTableMigration"></a>
+
+```typescript
+public readonly actionGetTableMigration: string;
+```
+
+- *Type:* string
+
+[Read] s3tables:GetTableMigration.
 
 ---
 
@@ -710,6 +742,18 @@ public readonly AllWriteActions: string[];
 - *Type:* string[]
 
 All write-level actions.
+
+---
+
+##### `CompleteTableMigration`<sup>Required</sup> <a name="CompleteTableMigration" id="@cdk_utils/iam.s3tables.S3tablesActions.property.CompleteTableMigration"></a>
+
+```typescript
+public readonly CompleteTableMigration: string;
+```
+
+- *Type:* string
+
+[Write] s3tables:CompleteTableMigration.
 
 ---
 
@@ -881,6 +925,18 @@ public readonly ListTableBuckets: string;
 
 ---
 
+##### `ListTableMigrations`<sup>Required</sup> <a name="ListTableMigrations" id="@cdk_utils/iam.s3tables.S3tablesActions.property.ListTableMigrations"></a>
+
+```typescript
+public readonly ListTableMigrations: string;
+```
+
+- *Type:* string
+
+[List] s3tables:ListTableMigrations.
+
+---
+
 ##### `ListTables`<sup>Required</sup> <a name="ListTables" id="@cdk_utils/iam.s3tables.S3tablesActions.property.ListTables"></a>
 
 ```typescript
@@ -914,6 +970,18 @@ public readonly PutTableBucketEncryption: string;
 - *Type:* string
 
 [Write] s3tables:PutTableBucketEncryption.
+
+---
+
+##### `PutTableBucketLogging`<sup>Required</sup> <a name="PutTableBucketLogging" id="@cdk_utils/iam.s3tables.S3tablesActions.property.PutTableBucketLogging"></a>
+
+```typescript
+public readonly PutTableBucketLogging: string;
+```
+
+- *Type:* string
+
+[Write] s3tables:PutTableBucketLogging.
 
 ---
 
@@ -1085,6 +1153,30 @@ The IAM service prefix.
 
 ---
 
+##### `StartTableMigration`<sup>Required</sup> <a name="StartTableMigration" id="@cdk_utils/iam.s3tables.S3tablesActions.property.StartTableMigration"></a>
+
+```typescript
+public readonly StartTableMigration: string;
+```
+
+- *Type:* string
+
+[Write] s3tables:StartTableMigration.
+
+---
+
+##### `SyncTableMigration`<sup>Required</sup> <a name="SyncTableMigration" id="@cdk_utils/iam.s3tables.S3tablesActions.property.SyncTableMigration"></a>
+
+```typescript
+public readonly SyncTableMigration: string;
+```
+
+- *Type:* string
+
+[Write] s3tables:SyncTableMigration.
+
+---
+
 ##### `TagResource`<sup>Required</sup> <a name="TagResource" id="@cdk_utils/iam.s3tables.S3tablesActions.property.TagResource"></a>
 
 ```typescript
@@ -1118,6 +1210,18 @@ public readonly UpdateTableMetadataLocation: string;
 - *Type:* string
 
 [Write] s3tables:UpdateTableMetadataLocation.
+
+---
+
+##### `UpdateTableMigration`<sup>Required</sup> <a name="UpdateTableMigration" id="@cdk_utils/iam.s3tables.S3tablesActions.property.UpdateTableMigration"></a>
+
+```typescript
+public readonly UpdateTableMigration: string;
+```
+
+- *Type:* string
+
+[Write] s3tables:UpdateTableMigration.
 
 ---
 
@@ -1311,6 +1415,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesConditions.property.actionGetTableMaintenanceConfigurationConditionKeys">actionGetTableMaintenanceConfigurationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetTableMaintenanceConfiguration action. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesConditions.property.actionGetTableMaintenanceJobStatusConditionKeys">actionGetTableMaintenanceJobStatusConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetTableMaintenanceJobStatus action. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesConditions.property.actionGetTableMetadataLocationConditionKeys">actionGetTableMetadataLocationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetTableMetadataLocation action. |
+| <code><a href="#@cdk_utils/iam.s3tables.S3tablesConditions.property.actionGetTableMigrationConditionKeys">actionGetTableMigrationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetTableMigration action. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesConditions.property.actionGetTablePolicyConditionKeys">actionGetTablePolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetTablePolicy action. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesConditions.property.actionGetTableRecordExpirationConfigurationConditionKeys">actionGetTableRecordExpirationConfigurationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetTableRecordExpirationConfiguration action. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesConditions.property.actionGetTableRecordExpirationJobStatusConditionKeys">actionGetTableRecordExpirationJobStatusConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetTableRecordExpirationJobStatus action. |
@@ -1320,6 +1425,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesConditions.property.AWS_REQUEST_TAG">AWS_REQUEST_TAG</a></code> | <code>string</code> | Condition key: aws:RequestTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesConditions.property.AWS_RESOURCE_TAG">AWS_RESOURCE_TAG</a></code> | <code>string</code> | Condition key: aws:ResourceTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesConditions.property.AWS_TAG_KEYS">AWS_TAG_KEYS</a></code> | <code>string</code> | Condition key: aws:TagKeys (ArrayOfString). |
+| <code><a href="#@cdk_utils/iam.s3tables.S3tablesConditions.property.CompleteTableMigrationConditionKeys">CompleteTableMigrationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CompleteTableMigration action. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesConditions.property.CreateTableBucketConditionKeys">CreateTableBucketConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateTableBucket action. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesConditions.property.CreateTableConditionKeys">CreateTableConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateTable action. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesConditions.property.DeleteNamespaceConditionKeys">DeleteNamespaceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteNamespace action. |
@@ -1327,6 +1433,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesConditions.property.DeleteTablePolicyConditionKeys">DeleteTablePolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteTablePolicy action. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesConditions.property.DeleteTableReplicationConditionKeys">DeleteTableReplicationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteTableReplication action. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesConditions.property.KMS_KEY_ARN">KMS_KEY_ARN</a></code> | <code>string</code> | Condition key: s3tables:KMSKeyArn (ARN). |
+| <code><a href="#@cdk_utils/iam.s3tables.S3tablesConditions.property.ListTableMigrationsConditionKeys">ListTableMigrationsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListTableMigrations action. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesConditions.property.ListTablesConditionKeys">ListTablesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListTables action. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesConditions.property.ListTagsForResourceConditionKeys">ListTagsForResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListTagsForResource action. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesConditions.property.NAMESPACE">NAMESPACE</a></code> | <code>string</code> | Condition key: s3tables:namespace (String). |
@@ -1341,12 +1448,15 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesConditions.property.PutTableStorageClassConditionKeys">PutTableStorageClassConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutTableStorageClass action. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesConditions.property.RenameTableConditionKeys">RenameTableConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the RenameTable action. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesConditions.property.SSE_ALGORITHM">SSE_ALGORITHM</a></code> | <code>string</code> | Condition key: s3tables:SSEAlgorithm (String). |
+| <code><a href="#@cdk_utils/iam.s3tables.S3tablesConditions.property.StartTableMigrationConditionKeys">StartTableMigrationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartTableMigration action. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesConditions.property.STORAGE_CLASS">STORAGE_CLASS</a></code> | <code>string</code> | Condition key: s3tables:StorageClass (String). |
+| <code><a href="#@cdk_utils/iam.s3tables.S3tablesConditions.property.SyncTableMigrationConditionKeys">SyncTableMigrationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the SyncTableMigration action. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesConditions.property.TABLE_BUCKET_TAG">TABLE_BUCKET_TAG</a></code> | <code>string</code> | Condition key: s3tables:TableBucketTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesConditions.property.TABLE_NAME">TABLE_NAME</a></code> | <code>string</code> | Condition key: s3tables:tableName (String). |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesConditions.property.TagResourceConditionKeys">TagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TagResource action. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesConditions.property.UntagResourceConditionKeys">UntagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UntagResource action. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesConditions.property.UpdateTableMetadataLocationConditionKeys">UpdateTableMetadataLocationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateTableMetadataLocation action. |
+| <code><a href="#@cdk_utils/iam.s3tables.S3tablesConditions.property.UpdateTableMigrationConditionKeys">UpdateTableMigrationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateTableMigration action. |
 
 ---
 
@@ -1431,6 +1541,18 @@ public readonly actionGetTableMetadataLocationConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the GetTableMetadataLocation action.
+
+---
+
+##### `actionGetTableMigrationConditionKeys`<sup>Required</sup> <a name="actionGetTableMigrationConditionKeys" id="@cdk_utils/iam.s3tables.S3tablesConditions.property.actionGetTableMigrationConditionKeys"></a>
+
+```typescript
+public readonly actionGetTableMigrationConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetTableMigration action.
 
 ---
 
@@ -1542,6 +1664,18 @@ Condition key: aws:TagKeys (ArrayOfString).
 
 ---
 
+##### `CompleteTableMigrationConditionKeys`<sup>Required</sup> <a name="CompleteTableMigrationConditionKeys" id="@cdk_utils/iam.s3tables.S3tablesConditions.property.CompleteTableMigrationConditionKeys"></a>
+
+```typescript
+public readonly CompleteTableMigrationConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CompleteTableMigration action.
+
+---
+
 ##### `CreateTableBucketConditionKeys`<sup>Required</sup> <a name="CreateTableBucketConditionKeys" id="@cdk_utils/iam.s3tables.S3tablesConditions.property.CreateTableBucketConditionKeys"></a>
 
 ```typescript
@@ -1623,6 +1757,18 @@ public readonly KMS_KEY_ARN: string;
 - *Type:* string
 
 Condition key: s3tables:KMSKeyArn (ARN).
+
+---
+
+##### `ListTableMigrationsConditionKeys`<sup>Required</sup> <a name="ListTableMigrationsConditionKeys" id="@cdk_utils/iam.s3tables.S3tablesConditions.property.ListTableMigrationsConditionKeys"></a>
+
+```typescript
+public readonly ListTableMigrationsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ListTableMigrations action.
 
 ---
 
@@ -1794,6 +1940,18 @@ Condition key: s3tables:SSEAlgorithm (String).
 
 ---
 
+##### `StartTableMigrationConditionKeys`<sup>Required</sup> <a name="StartTableMigrationConditionKeys" id="@cdk_utils/iam.s3tables.S3tablesConditions.property.StartTableMigrationConditionKeys"></a>
+
+```typescript
+public readonly StartTableMigrationConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the StartTableMigration action.
+
+---
+
 ##### `STORAGE_CLASS`<sup>Required</sup> <a name="STORAGE_CLASS" id="@cdk_utils/iam.s3tables.S3tablesConditions.property.STORAGE_CLASS"></a>
 
 ```typescript
@@ -1803,6 +1961,18 @@ public readonly STORAGE_CLASS: string;
 - *Type:* string
 
 Condition key: s3tables:StorageClass (String).
+
+---
+
+##### `SyncTableMigrationConditionKeys`<sup>Required</sup> <a name="SyncTableMigrationConditionKeys" id="@cdk_utils/iam.s3tables.S3tablesConditions.property.SyncTableMigrationConditionKeys"></a>
+
+```typescript
+public readonly SyncTableMigrationConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the SyncTableMigration action.
 
 ---
 
@@ -1866,6 +2036,18 @@ Condition keys applicable to the UpdateTableMetadataLocation action.
 
 ---
 
+##### `UpdateTableMigrationConditionKeys`<sup>Required</sup> <a name="UpdateTableMigrationConditionKeys" id="@cdk_utils/iam.s3tables.S3tablesConditions.property.UpdateTableMigrationConditionKeys"></a>
+
+```typescript
+public readonly UpdateTableMigrationConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UpdateTableMigration action.
+
+---
+
 ### S3tablesOperations <a name="S3tablesOperations" id="@cdk_utils/iam.s3tables.S3tablesOperations"></a>
 
 API operation to required IAM actions mapping for s3tables.
@@ -1890,6 +2072,7 @@ new s3tables.S3tablesOperations()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.s3tables.S3tablesOperations.property.CompleteTableMigration">CompleteTableMigration</a></code> | <code>string[]</code> | IAM actions required for the CompleteTableMigration API call. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesOperations.property.CreateNamespace">CreateNamespace</a></code> | <code>string[]</code> | IAM actions required for the CreateNamespace API call. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesOperations.property.CreateTable">CreateTable</a></code> | <code>string[]</code> | IAM actions required for the CreateTable API call. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesOperations.property.CreateTableBucket">CreateTableBucket</a></code> | <code>string[]</code> | IAM actions required for the CreateTableBucket API call. |
@@ -1904,12 +2087,14 @@ new s3tables.S3tablesOperations()
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesOperations.property.DeleteTableReplication">DeleteTableReplication</a></code> | <code>string[]</code> | IAM actions required for the DeleteTableReplication API call. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesOperations.property.ListNamespaces">ListNamespaces</a></code> | <code>string[]</code> | IAM actions required for the ListNamespaces API call. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesOperations.property.ListTableBuckets">ListTableBuckets</a></code> | <code>string[]</code> | IAM actions required for the ListTableBuckets API call. |
+| <code><a href="#@cdk_utils/iam.s3tables.S3tablesOperations.property.ListTableMigrations">ListTableMigrations</a></code> | <code>string[]</code> | IAM actions required for the ListTableMigrations API call. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesOperations.property.ListTables">ListTables</a></code> | <code>string[]</code> | IAM actions required for the ListTables API call. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesOperations.property.opGetNamespace">opGetNamespace</a></code> | <code>string[]</code> | IAM actions required for the GetNamespace API call. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesOperations.property.opGetTable">opGetTable</a></code> | <code>string[]</code> | IAM actions required for the GetTable API call. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesOperations.property.opGetTableBucket">opGetTableBucket</a></code> | <code>string[]</code> | IAM actions required for the GetTableBucket API call. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesOperations.property.opGetTableBucketEncryption">opGetTableBucketEncryption</a></code> | <code>string[]</code> | IAM actions required for the GetTableBucketEncryption API call. |
+| <code><a href="#@cdk_utils/iam.s3tables.S3tablesOperations.property.opGetTableBucketLogging">opGetTableBucketLogging</a></code> | <code>string[]</code> | IAM actions required for the GetTableBucketLogging API call. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesOperations.property.opGetTableBucketMaintenanceConfiguration">opGetTableBucketMaintenanceConfiguration</a></code> | <code>string[]</code> | IAM actions required for the GetTableBucketMaintenanceConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesOperations.property.opGetTableBucketMetricsConfiguration">opGetTableBucketMetricsConfiguration</a></code> | <code>string[]</code> | IAM actions required for the GetTableBucketMetricsConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesOperations.property.opGetTableBucketPolicy">opGetTableBucketPolicy</a></code> | <code>string[]</code> | IAM actions required for the GetTableBucketPolicy API call. |
@@ -1919,6 +2104,7 @@ new s3tables.S3tablesOperations()
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesOperations.property.opGetTableMaintenanceConfiguration">opGetTableMaintenanceConfiguration</a></code> | <code>string[]</code> | IAM actions required for the GetTableMaintenanceConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesOperations.property.opGetTableMaintenanceJobStatus">opGetTableMaintenanceJobStatus</a></code> | <code>string[]</code> | IAM actions required for the GetTableMaintenanceJobStatus API call. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesOperations.property.opGetTableMetadataLocation">opGetTableMetadataLocation</a></code> | <code>string[]</code> | IAM actions required for the GetTableMetadataLocation API call. |
+| <code><a href="#@cdk_utils/iam.s3tables.S3tablesOperations.property.opGetTableMigration">opGetTableMigration</a></code> | <code>string[]</code> | IAM actions required for the GetTableMigration API call. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesOperations.property.opGetTablePolicy">opGetTablePolicy</a></code> | <code>string[]</code> | IAM actions required for the GetTablePolicy API call. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesOperations.property.opGetTableRecordExpirationConfiguration">opGetTableRecordExpirationConfiguration</a></code> | <code>string[]</code> | IAM actions required for the GetTableRecordExpirationConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesOperations.property.opGetTableRecordExpirationJobStatus">opGetTableRecordExpirationJobStatus</a></code> | <code>string[]</code> | IAM actions required for the GetTableRecordExpirationJobStatus API call. |
@@ -1926,6 +2112,7 @@ new s3tables.S3tablesOperations()
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesOperations.property.opGetTableReplicationStatus">opGetTableReplicationStatus</a></code> | <code>string[]</code> | IAM actions required for the GetTableReplicationStatus API call. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesOperations.property.opGetTableStorageClass">opGetTableStorageClass</a></code> | <code>string[]</code> | IAM actions required for the GetTableStorageClass API call. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesOperations.property.PutTableBucketEncryption">PutTableBucketEncryption</a></code> | <code>string[]</code> | IAM actions required for the PutTableBucketEncryption API call. |
+| <code><a href="#@cdk_utils/iam.s3tables.S3tablesOperations.property.PutTableBucketLogging">PutTableBucketLogging</a></code> | <code>string[]</code> | IAM actions required for the PutTableBucketLogging API call. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesOperations.property.PutTableBucketMaintenanceConfiguration">PutTableBucketMaintenanceConfiguration</a></code> | <code>string[]</code> | IAM actions required for the PutTableBucketMaintenanceConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesOperations.property.PutTableBucketMetricsConfiguration">PutTableBucketMetricsConfiguration</a></code> | <code>string[]</code> | IAM actions required for the PutTableBucketMetricsConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesOperations.property.PutTableBucketPolicy">PutTableBucketPolicy</a></code> | <code>string[]</code> | IAM actions required for the PutTableBucketPolicy API call. |
@@ -1936,9 +2123,24 @@ new s3tables.S3tablesOperations()
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesOperations.property.PutTableRecordExpirationConfiguration">PutTableRecordExpirationConfiguration</a></code> | <code>string[]</code> | IAM actions required for the PutTableRecordExpirationConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesOperations.property.PutTableReplication">PutTableReplication</a></code> | <code>string[]</code> | IAM actions required for the PutTableReplication API call. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesOperations.property.RenameTable">RenameTable</a></code> | <code>string[]</code> | IAM actions required for the RenameTable API call. |
+| <code><a href="#@cdk_utils/iam.s3tables.S3tablesOperations.property.StartTableMigration">StartTableMigration</a></code> | <code>string[]</code> | IAM actions required for the StartTableMigration API call. |
+| <code><a href="#@cdk_utils/iam.s3tables.S3tablesOperations.property.SyncTableMigration">SyncTableMigration</a></code> | <code>string[]</code> | IAM actions required for the SyncTableMigration API call. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
 | <code><a href="#@cdk_utils/iam.s3tables.S3tablesOperations.property.UpdateTableMetadataLocation">UpdateTableMetadataLocation</a></code> | <code>string[]</code> | IAM actions required for the UpdateTableMetadataLocation API call. |
+| <code><a href="#@cdk_utils/iam.s3tables.S3tablesOperations.property.UpdateTableMigration">UpdateTableMigration</a></code> | <code>string[]</code> | IAM actions required for the UpdateTableMigration API call. |
+
+---
+
+##### `CompleteTableMigration`<sup>Required</sup> <a name="CompleteTableMigration" id="@cdk_utils/iam.s3tables.S3tablesOperations.property.CompleteTableMigration"></a>
+
+```typescript
+public readonly CompleteTableMigration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CompleteTableMigration API call.
 
 ---
 
@@ -2110,6 +2312,18 @@ IAM actions required for the ListTableBuckets API call.
 
 ---
 
+##### `ListTableMigrations`<sup>Required</sup> <a name="ListTableMigrations" id="@cdk_utils/iam.s3tables.S3tablesOperations.property.ListTableMigrations"></a>
+
+```typescript
+public readonly ListTableMigrations: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListTableMigrations API call.
+
+---
+
 ##### `ListTables`<sup>Required</sup> <a name="ListTables" id="@cdk_utils/iam.s3tables.S3tablesOperations.property.ListTables"></a>
 
 ```typescript
@@ -2179,6 +2393,18 @@ public readonly opGetTableBucketEncryption: string[];
 - *Type:* string[]
 
 IAM actions required for the GetTableBucketEncryption API call.
+
+---
+
+##### `opGetTableBucketLogging`<sup>Required</sup> <a name="opGetTableBucketLogging" id="@cdk_utils/iam.s3tables.S3tablesOperations.property.opGetTableBucketLogging"></a>
+
+```typescript
+public readonly opGetTableBucketLogging: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetTableBucketLogging API call.
 
 ---
 
@@ -2290,6 +2516,18 @@ IAM actions required for the GetTableMetadataLocation API call.
 
 ---
 
+##### `opGetTableMigration`<sup>Required</sup> <a name="opGetTableMigration" id="@cdk_utils/iam.s3tables.S3tablesOperations.property.opGetTableMigration"></a>
+
+```typescript
+public readonly opGetTableMigration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetTableMigration API call.
+
+---
+
 ##### `opGetTablePolicy`<sup>Required</sup> <a name="opGetTablePolicy" id="@cdk_utils/iam.s3tables.S3tablesOperations.property.opGetTablePolicy"></a>
 
 ```typescript
@@ -2371,6 +2609,18 @@ public readonly PutTableBucketEncryption: string[];
 - *Type:* string[]
 
 IAM actions required for the PutTableBucketEncryption API call.
+
+---
+
+##### `PutTableBucketLogging`<sup>Required</sup> <a name="PutTableBucketLogging" id="@cdk_utils/iam.s3tables.S3tablesOperations.property.PutTableBucketLogging"></a>
+
+```typescript
+public readonly PutTableBucketLogging: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the PutTableBucketLogging API call.
 
 ---
 
@@ -2494,6 +2744,30 @@ IAM actions required for the RenameTable API call.
 
 ---
 
+##### `StartTableMigration`<sup>Required</sup> <a name="StartTableMigration" id="@cdk_utils/iam.s3tables.S3tablesOperations.property.StartTableMigration"></a>
+
+```typescript
+public readonly StartTableMigration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StartTableMigration API call.
+
+---
+
+##### `SyncTableMigration`<sup>Required</sup> <a name="SyncTableMigration" id="@cdk_utils/iam.s3tables.S3tablesOperations.property.SyncTableMigration"></a>
+
+```typescript
+public readonly SyncTableMigration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the SyncTableMigration API call.
+
+---
+
 ##### `TagResource`<sup>Required</sup> <a name="TagResource" id="@cdk_utils/iam.s3tables.S3tablesOperations.property.TagResource"></a>
 
 ```typescript
@@ -2527,6 +2801,18 @@ public readonly UpdateTableMetadataLocation: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateTableMetadataLocation API call.
+
+---
+
+##### `UpdateTableMigration`<sup>Required</sup> <a name="UpdateTableMigration" id="@cdk_utils/iam.s3tables.S3tablesOperations.property.UpdateTableMigration"></a>
+
+```typescript
+public readonly UpdateTableMigration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateTableMigration API call.
 
 ---
 

@@ -392,6 +392,7 @@ new shield.ShieldActions()
 | <code><a href="#@cdk_utils/iam.shield.ShieldActions.property.actionGetGlobalThreatData">actionGetGlobalThreatData</a></code> | <code>string</code> | [Read] shield:GetGlobalThreatData. |
 | <code><a href="#@cdk_utils/iam.shield.ShieldActions.property.actionGetSubscriptionState">actionGetSubscriptionState</a></code> | <code>string</code> | [Read] shield:GetSubscriptionState. |
 | <code><a href="#@cdk_utils/iam.shield.ShieldActions.property.AllListActions">AllListActions</a></code> | <code>string[]</code> | All list-level actions. |
+| <code><a href="#@cdk_utils/iam.shield.ShieldActions.property.AllowVendedLogDeliveryForResource">AllowVendedLogDeliveryForResource</a></code> | <code>string</code> | [Write] shield:AllowVendedLogDeliveryForResource. |
 | <code><a href="#@cdk_utils/iam.shield.ShieldActions.property.AllPermissionManagementActions">AllPermissionManagementActions</a></code> | <code>string[]</code> | All permission-management-level actions. |
 | <code><a href="#@cdk_utils/iam.shield.ShieldActions.property.AllReadActions">AllReadActions</a></code> | <code>string[]</code> | All read-level actions. |
 | <code><a href="#@cdk_utils/iam.shield.ShieldActions.property.AllTaggingActions">AllTaggingActions</a></code> | <code>string[]</code> | All tagging-level actions. |
@@ -470,6 +471,18 @@ public readonly AllListActions: string[];
 - *Type:* string[]
 
 All list-level actions.
+
+---
+
+##### `AllowVendedLogDeliveryForResource`<sup>Required</sup> <a name="AllowVendedLogDeliveryForResource" id="@cdk_utils/iam.shield.ShieldActions.property.AllowVendedLogDeliveryForResource"></a>
+
+```typescript
+public readonly AllowVendedLogDeliveryForResource: string;
+```
+
+- *Type:* string
+
+[Write] shield:AllowVendedLogDeliveryForResource.
 
 ---
 

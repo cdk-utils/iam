@@ -867,6 +867,8 @@ export class Route53Operations {
 	static readonly CreateQueryLoggingConfig: string[] = [
 		"route53:CreateQueryLoggingConfig",
 	];
+	/** IAM actions required for the CreateResourceRecordSetProtections API call. */
+	static readonly CreateResourceRecordSetProtections: string[] = [];
 	/** IAM actions required for the CreateReusableDelegationSet API call. */
 	static readonly CreateReusableDelegationSet: string[] = [
 		"route53:CreateReusableDelegationSet",
@@ -907,6 +909,8 @@ export class Route53Operations {
 	static readonly DeleteQueryLoggingConfig: string[] = [
 		"route53:DeleteQueryLoggingConfig",
 	];
+	/** IAM actions required for the DeleteResourceRecordSetProtections API call. */
+	static readonly DeleteResourceRecordSetProtections: string[] = [];
 	/** IAM actions required for the DeleteReusableDelegationSet API call. */
 	static readonly DeleteReusableDelegationSet: string[] = [
 		"route53:DeleteReusableDelegationSet",
@@ -1019,6 +1023,8 @@ export class Route53Operations {
 	static readonly ListQueryLoggingConfigs: string[] = [
 		"route53:ListQueryLoggingConfigs",
 	];
+	/** IAM actions required for the ListResourceRecordSetProtections API call. */
+	static readonly ListResourceRecordSetProtections: string[] = [];
 	/** IAM actions required for the ListResourceRecordSets API call. */
 	static readonly ListResourceRecordSets: string[] = [
 		"route53:ListResourceRecordSets",

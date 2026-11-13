@@ -2172,9 +2172,11 @@ new cases.CasesOperations()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.cases.CasesOperations.property.BatchCreateRelatedItem">BatchCreateRelatedItem</a></code> | <code>string[]</code> | IAM actions required for the BatchCreateRelatedItem API call. |
 | <code><a href="#@cdk_utils/iam.cases.CasesOperations.property.BatchGetCaseRule">BatchGetCaseRule</a></code> | <code>string[]</code> | IAM actions required for the BatchGetCaseRule API call. |
 | <code><a href="#@cdk_utils/iam.cases.CasesOperations.property.BatchGetField">BatchGetField</a></code> | <code>string[]</code> | IAM actions required for the BatchGetField API call. |
 | <code><a href="#@cdk_utils/iam.cases.CasesOperations.property.BatchPutFieldOptions">BatchPutFieldOptions</a></code> | <code>string[]</code> | IAM actions required for the BatchPutFieldOptions API call. |
+| <code><a href="#@cdk_utils/iam.cases.CasesOperations.property.BatchUpdateCase">BatchUpdateCase</a></code> | <code>string[]</code> | IAM actions required for the BatchUpdateCase API call. |
 | <code><a href="#@cdk_utils/iam.cases.CasesOperations.property.CreateCase">CreateCase</a></code> | <code>string[]</code> | IAM actions required for the CreateCase API call. |
 | <code><a href="#@cdk_utils/iam.cases.CasesOperations.property.CreateCaseRule">CreateCaseRule</a></code> | <code>string[]</code> | IAM actions required for the CreateCaseRule API call. |
 | <code><a href="#@cdk_utils/iam.cases.CasesOperations.property.CreateDomain">CreateDomain</a></code> | <code>string[]</code> | IAM actions required for the CreateDomain API call. |
@@ -2202,11 +2204,13 @@ new cases.CasesOperations()
 | <code><a href="#@cdk_utils/iam.cases.CasesOperations.property.opGetCaseEventConfiguration">opGetCaseEventConfiguration</a></code> | <code>string[]</code> | IAM actions required for the GetCaseEventConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.cases.CasesOperations.property.opGetDomain">opGetDomain</a></code> | <code>string[]</code> | IAM actions required for the GetDomain API call. |
 | <code><a href="#@cdk_utils/iam.cases.CasesOperations.property.opGetLayout">opGetLayout</a></code> | <code>string[]</code> | IAM actions required for the GetLayout API call. |
+| <code><a href="#@cdk_utils/iam.cases.CasesOperations.property.opGetMergeCasesStatus">opGetMergeCasesStatus</a></code> | <code>string[]</code> | IAM actions required for the GetMergeCasesStatus API call. |
 | <code><a href="#@cdk_utils/iam.cases.CasesOperations.property.opGetTemplate">opGetTemplate</a></code> | <code>string[]</code> | IAM actions required for the GetTemplate API call. |
 | <code><a href="#@cdk_utils/iam.cases.CasesOperations.property.PutCaseEventConfiguration">PutCaseEventConfiguration</a></code> | <code>string[]</code> | IAM actions required for the PutCaseEventConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.cases.CasesOperations.property.SearchAllRelatedItems">SearchAllRelatedItems</a></code> | <code>string[]</code> | IAM actions required for the SearchAllRelatedItems API call. |
 | <code><a href="#@cdk_utils/iam.cases.CasesOperations.property.SearchCases">SearchCases</a></code> | <code>string[]</code> | IAM actions required for the SearchCases API call. |
 | <code><a href="#@cdk_utils/iam.cases.CasesOperations.property.SearchRelatedItems">SearchRelatedItems</a></code> | <code>string[]</code> | IAM actions required for the SearchRelatedItems API call. |
+| <code><a href="#@cdk_utils/iam.cases.CasesOperations.property.StartMergeCases">StartMergeCases</a></code> | <code>string[]</code> | IAM actions required for the StartMergeCases API call. |
 | <code><a href="#@cdk_utils/iam.cases.CasesOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
 | <code><a href="#@cdk_utils/iam.cases.CasesOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
 | <code><a href="#@cdk_utils/iam.cases.CasesOperations.property.UpdateCase">UpdateCase</a></code> | <code>string[]</code> | IAM actions required for the UpdateCase API call. |
@@ -2215,6 +2219,18 @@ new cases.CasesOperations()
 | <code><a href="#@cdk_utils/iam.cases.CasesOperations.property.UpdateLayout">UpdateLayout</a></code> | <code>string[]</code> | IAM actions required for the UpdateLayout API call. |
 | <code><a href="#@cdk_utils/iam.cases.CasesOperations.property.UpdateRelatedItem">UpdateRelatedItem</a></code> | <code>string[]</code> | IAM actions required for the UpdateRelatedItem API call. |
 | <code><a href="#@cdk_utils/iam.cases.CasesOperations.property.UpdateTemplate">UpdateTemplate</a></code> | <code>string[]</code> | IAM actions required for the UpdateTemplate API call. |
+
+---
+
+##### `BatchCreateRelatedItem`<sup>Required</sup> <a name="BatchCreateRelatedItem" id="@cdk_utils/iam.cases.CasesOperations.property.BatchCreateRelatedItem"></a>
+
+```typescript
+public readonly BatchCreateRelatedItem: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the BatchCreateRelatedItem API call.
 
 ---
 
@@ -2251,6 +2267,18 @@ public readonly BatchPutFieldOptions: string[];
 - *Type:* string[]
 
 IAM actions required for the BatchPutFieldOptions API call.
+
+---
+
+##### `BatchUpdateCase`<sup>Required</sup> <a name="BatchUpdateCase" id="@cdk_utils/iam.cases.CasesOperations.property.BatchUpdateCase"></a>
+
+```typescript
+public readonly BatchUpdateCase: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the BatchUpdateCase API call.
 
 ---
 
@@ -2578,6 +2606,18 @@ IAM actions required for the GetLayout API call.
 
 ---
 
+##### `opGetMergeCasesStatus`<sup>Required</sup> <a name="opGetMergeCasesStatus" id="@cdk_utils/iam.cases.CasesOperations.property.opGetMergeCasesStatus"></a>
+
+```typescript
+public readonly opGetMergeCasesStatus: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetMergeCasesStatus API call.
+
+---
+
 ##### `opGetTemplate`<sup>Required</sup> <a name="opGetTemplate" id="@cdk_utils/iam.cases.CasesOperations.property.opGetTemplate"></a>
 
 ```typescript
@@ -2635,6 +2675,18 @@ public readonly SearchRelatedItems: string[];
 - *Type:* string[]
 
 IAM actions required for the SearchRelatedItems API call.
+
+---
+
+##### `StartMergeCases`<sup>Required</sup> <a name="StartMergeCases" id="@cdk_utils/iam.cases.CasesOperations.property.StartMergeCases"></a>
+
+```typescript
+public readonly StartMergeCases: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StartMergeCases API call.
 
 ---
 

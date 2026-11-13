@@ -1778,6 +1778,8 @@ export class LightSailOperations {
 	];
 	/** IAM actions required for the AttachStaticIp API call. */
 	static readonly AttachStaticIp: string[] = ["lightsail:AttachStaticIp"];
+	/** IAM actions required for the CheckSubdomainAvailability API call. */
+	static readonly CheckSubdomainAvailability: string[] = [];
 	/** IAM actions required for the CloseInstancePublicPorts API call. */
 	static readonly CloseInstancePublicPorts: string[] = [
 		"lightsail:CloseInstancePublicPorts",
@@ -1837,6 +1839,7 @@ export class LightSailOperations {
 	];
 	/** IAM actions required for the CreateDistribution API call. */
 	static readonly CreateDistribution: string[] = [
+		"lightsail:AttachCertificateToDistribution",
 		"lightsail:CreateDistribution",
 		"lightsail:TagResource",
 	];
@@ -1895,6 +1898,8 @@ export class LightSailOperations {
 		"lightsail:CreateRelationalDatabaseSnapshot",
 		"lightsail:TagResource",
 	];
+	/** IAM actions required for the CreateSubdomain API call. */
+	static readonly CreateSubdomain: string[] = ["lightsail:TagResource"];
 	/** IAM actions required for the DeleteAlarm API call. */
 	static readonly DeleteAlarm: string[] = ["lightsail:DeleteAlarm"];
 	/** IAM actions required for the DeleteAutoSnapshot API call. */
@@ -1963,6 +1968,8 @@ export class LightSailOperations {
 	static readonly DeleteRelationalDatabaseSnapshot: string[] = [
 		"lightsail:DeleteRelationalDatabaseSnapshot",
 	];
+	/** IAM actions required for the DeleteSubdomain API call. */
+	static readonly DeleteSubdomain: string[] = [];
 	/** IAM actions required for the DetachCertificateFromDistribution API call. */
 	static readonly DetachCertificateFromDistribution: string[] = [
 		"lightsail:DetachCertificateFromDistribution",
@@ -2187,6 +2194,8 @@ export class LightSailOperations {
 	static readonly opGetStaticIp: string[] = ["lightsail:GetStaticIp"];
 	/** IAM actions required for the GetStaticIps API call. */
 	static readonly opGetStaticIps: string[] = ["lightsail:GetStaticIps"];
+	/** IAM actions required for the GetSubdomains API call. */
+	static readonly opGetSubdomains: string[] = [];
 	/** IAM actions required for the ImportKeyPair API call. */
 	static readonly ImportKeyPair: string[] = ["lightsail:ImportKeyPair"];
 	/** IAM actions required for the IsVpcPeered API call. */
@@ -2296,6 +2305,8 @@ export class LightSailOperations {
 	static readonly UpdateRelationalDatabaseParameters: string[] = [
 		"lightsail:UpdateRelationalDatabaseParameters",
 	];
+	/** IAM actions required for the UpdateSubdomainAssociation API call. */
+	static readonly UpdateSubdomainAssociation: string[] = [];
 }
 
 /**

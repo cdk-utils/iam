@@ -666,6 +666,7 @@ new opensearch.OpenSearchOperations()
 | <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.StartServiceSoftwareUpdate">StartServiceSoftwareUpdate</a></code> | <code>string[]</code> | IAM actions required for the StartServiceSoftwareUpdate API call. |
 | <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.SwitchoverReplication">SwitchoverReplication</a></code> | <code>string[]</code> | IAM actions required for the SwitchoverReplication API call. |
 | <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.UpdateApplication">UpdateApplication</a></code> | <code>string[]</code> | IAM actions required for the UpdateApplication API call. |
+| <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.UpdateClone">UpdateClone</a></code> | <code>string[]</code> | IAM actions required for the UpdateClone API call. |
 | <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.UpdateDataSource">UpdateDataSource</a></code> | <code>string[]</code> | IAM actions required for the UpdateDataSource API call. |
 | <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.UpdateDirectQueryDataSource">UpdateDirectQueryDataSource</a></code> | <code>string[]</code> | IAM actions required for the UpdateDirectQueryDataSource API call. |
 | <code><a href="#@cdk_utils/iam.opensearch.OpenSearchOperations.property.UpdateDomainConfig">UpdateDomainConfig</a></code> | <code>string[]</code> | IAM actions required for the UpdateDomainConfig API call. |
@@ -1791,6 +1792,18 @@ public readonly UpdateApplication: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateApplication API call.
+
+---
+
+##### `UpdateClone`<sup>Required</sup> <a name="UpdateClone" id="@cdk_utils/iam.opensearch.OpenSearchOperations.property.UpdateClone"></a>
+
+```typescript
+public readonly UpdateClone: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateClone API call.
 
 ---
 

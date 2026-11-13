@@ -899,8 +899,8 @@
         }
       ],
       "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
       }
     },
     {
@@ -2419,6 +2419,27 @@
       }
     },
     {
+      "Name": "UpdateClone",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "UpdateDataSource",
       "Annotations": {
         "Properties": {
@@ -3509,6 +3530,22 @@
         {
           "Name": "es",
           "Method": "start_elasticsearch_service_software_update",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateClone",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateClone",
+          "Service": "es"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "es",
+          "Method": "update_clone",
           "Package": "Boto3"
         }
       ]

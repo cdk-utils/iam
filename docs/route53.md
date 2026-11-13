@@ -2643,6 +2643,7 @@ new route53.Route53Operations()
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.CreateHostedZone">CreateHostedZone</a></code> | <code>string[]</code> | IAM actions required for the CreateHostedZone API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.CreateKeySigningKey">CreateKeySigningKey</a></code> | <code>string[]</code> | IAM actions required for the CreateKeySigningKey API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.CreateQueryLoggingConfig">CreateQueryLoggingConfig</a></code> | <code>string[]</code> | IAM actions required for the CreateQueryLoggingConfig API call. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.CreateResourceRecordSetProtections">CreateResourceRecordSetProtections</a></code> | <code>string[]</code> | IAM actions required for the CreateResourceRecordSetProtections API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.CreateReusableDelegationSet">CreateReusableDelegationSet</a></code> | <code>string[]</code> | IAM actions required for the CreateReusableDelegationSet API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.CreateTrafficPolicy">CreateTrafficPolicy</a></code> | <code>string[]</code> | IAM actions required for the CreateTrafficPolicy API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.CreateTrafficPolicyInstance">CreateTrafficPolicyInstance</a></code> | <code>string[]</code> | IAM actions required for the CreateTrafficPolicyInstance API call. |
@@ -2654,6 +2655,7 @@ new route53.Route53Operations()
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.DeleteHostedZone">DeleteHostedZone</a></code> | <code>string[]</code> | IAM actions required for the DeleteHostedZone API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.DeleteKeySigningKey">DeleteKeySigningKey</a></code> | <code>string[]</code> | IAM actions required for the DeleteKeySigningKey API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.DeleteQueryLoggingConfig">DeleteQueryLoggingConfig</a></code> | <code>string[]</code> | IAM actions required for the DeleteQueryLoggingConfig API call. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.DeleteResourceRecordSetProtections">DeleteResourceRecordSetProtections</a></code> | <code>string[]</code> | IAM actions required for the DeleteResourceRecordSetProtections API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.DeleteReusableDelegationSet">DeleteReusableDelegationSet</a></code> | <code>string[]</code> | IAM actions required for the DeleteReusableDelegationSet API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.DeleteTrafficPolicy">DeleteTrafficPolicy</a></code> | <code>string[]</code> | IAM actions required for the DeleteTrafficPolicy API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.DeleteTrafficPolicyInstance">DeleteTrafficPolicyInstance</a></code> | <code>string[]</code> | IAM actions required for the DeleteTrafficPolicyInstance API call. |
@@ -2670,6 +2672,7 @@ new route53.Route53Operations()
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.ListHostedZonesByName">ListHostedZonesByName</a></code> | <code>string[]</code> | IAM actions required for the ListHostedZonesByName API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.ListHostedZonesByVPC">ListHostedZonesByVPC</a></code> | <code>string[]</code> | IAM actions required for the ListHostedZonesByVPC API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.ListQueryLoggingConfigs">ListQueryLoggingConfigs</a></code> | <code>string[]</code> | IAM actions required for the ListQueryLoggingConfigs API call. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.ListResourceRecordSetProtections">ListResourceRecordSetProtections</a></code> | <code>string[]</code> | IAM actions required for the ListResourceRecordSetProtections API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.ListResourceRecordSets">ListResourceRecordSets</a></code> | <code>string[]</code> | IAM actions required for the ListResourceRecordSets API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.ListReusableDelegationSets">ListReusableDelegationSets</a></code> | <code>string[]</code> | IAM actions required for the ListReusableDelegationSets API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
@@ -2827,6 +2830,18 @@ IAM actions required for the CreateQueryLoggingConfig API call.
 
 ---
 
+##### `CreateResourceRecordSetProtections`<sup>Required</sup> <a name="CreateResourceRecordSetProtections" id="@cdk_utils/iam.route53.Route53Operations.property.CreateResourceRecordSetProtections"></a>
+
+```typescript
+public readonly CreateResourceRecordSetProtections: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateResourceRecordSetProtections API call.
+
+---
+
 ##### `CreateReusableDelegationSet`<sup>Required</sup> <a name="CreateReusableDelegationSet" id="@cdk_utils/iam.route53.Route53Operations.property.CreateReusableDelegationSet"></a>
 
 ```typescript
@@ -2956,6 +2971,18 @@ public readonly DeleteQueryLoggingConfig: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteQueryLoggingConfig API call.
+
+---
+
+##### `DeleteResourceRecordSetProtections`<sup>Required</sup> <a name="DeleteResourceRecordSetProtections" id="@cdk_utils/iam.route53.Route53Operations.property.DeleteResourceRecordSetProtections"></a>
+
+```typescript
+public readonly DeleteResourceRecordSetProtections: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteResourceRecordSetProtections API call.
 
 ---
 
@@ -3148,6 +3175,18 @@ public readonly ListQueryLoggingConfigs: string[];
 - *Type:* string[]
 
 IAM actions required for the ListQueryLoggingConfigs API call.
+
+---
+
+##### `ListResourceRecordSetProtections`<sup>Required</sup> <a name="ListResourceRecordSetProtections" id="@cdk_utils/iam.route53.Route53Operations.property.ListResourceRecordSetProtections"></a>
+
+```typescript
+public readonly ListResourceRecordSetProtections: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListResourceRecordSetProtections API call.
 
 ---
 

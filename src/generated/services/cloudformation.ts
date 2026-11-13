@@ -216,8 +216,12 @@ export class CloudFormationActions {
 	static readonly RegisterPublisher = "cloudformation:RegisterPublisher";
 	/** [Write] cloudformation:RegisterType */
 	static readonly RegisterType = "cloudformation:RegisterType";
+	/** [Write] cloudformation:RemoveAlias */
+	static readonly RemoveAlias = "cloudformation:RemoveAlias";
 	/** [Write] cloudformation:RollbackStack */
 	static readonly RollbackStack = "cloudformation:RollbackStack";
+	/** [Write] cloudformation:SetAlias */
+	static readonly actionSetAlias = "cloudformation:SetAlias";
 	/** [PermissionManagement] cloudformation:SetStackPolicy */
 	static readonly actionSetStackPolicy = "cloudformation:SetStackPolicy";
 	/** [Write] cloudformation:SetTypeConfiguration */
@@ -324,7 +328,9 @@ export class CloudFormationActions {
 		CloudFormationActions.RecordHandlerProgress,
 		CloudFormationActions.RegisterPublisher,
 		CloudFormationActions.RegisterType,
+		CloudFormationActions.RemoveAlias,
 		CloudFormationActions.RollbackStack,
+		CloudFormationActions.actionSetAlias,
 		CloudFormationActions.actionSetTypeConfiguration,
 		CloudFormationActions.actionSetTypeDefaultVersion,
 		CloudFormationActions.SignalResource,

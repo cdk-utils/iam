@@ -2385,6 +2385,7 @@ new omics.OmicsActions()
 | <code><a href="#@cdk_utils/iam.omics.OmicsActions.property.AllReadActions">AllReadActions</a></code> | <code>string[]</code> | All read-level actions. |
 | <code><a href="#@cdk_utils/iam.omics.OmicsActions.property.AllTaggingActions">AllTaggingActions</a></code> | <code>string[]</code> | All tagging-level actions. |
 | <code><a href="#@cdk_utils/iam.omics.OmicsActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
+| <code><a href="#@cdk_utils/iam.omics.OmicsActions.property.AuthorizeRunProcessing">AuthorizeRunProcessing</a></code> | <code>string</code> | [Write] omics:AuthorizeRunProcessing. |
 | <code><a href="#@cdk_utils/iam.omics.OmicsActions.property.BatchDeleteReadSet">BatchDeleteReadSet</a></code> | <code>string</code> | [Write] omics:BatchDeleteReadSet. |
 | <code><a href="#@cdk_utils/iam.omics.OmicsActions.property.CancelAnnotationImportJob">CancelAnnotationImportJob</a></code> | <code>string</code> | [Write] omics:CancelAnnotationImportJob. |
 | <code><a href="#@cdk_utils/iam.omics.OmicsActions.property.CancelRun">CancelRun</a></code> | <code>string</code> | [Write] omics:CancelRun. |
@@ -2850,6 +2851,18 @@ public readonly AllWriteActions: string[];
 - *Type:* string[]
 
 All write-level actions.
+
+---
+
+##### `AuthorizeRunProcessing`<sup>Required</sup> <a name="AuthorizeRunProcessing" id="@cdk_utils/iam.omics.OmicsActions.property.AuthorizeRunProcessing"></a>
+
+```typescript
+public readonly AuthorizeRunProcessing: string;
+```
+
+- *Type:* string
+
+[Write] omics:AuthorizeRunProcessing.
 
 ---
 

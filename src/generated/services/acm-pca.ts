@@ -230,7 +230,10 @@ export class ACMPcaOperations {
 		"acm-pca:ImportCertificateAuthorityCertificate",
 	];
 	/** IAM actions required for the IssueCertificate API call. */
-	static readonly IssueCertificate: string[] = ["acm-pca:IssueCertificate"];
+	static readonly IssueCertificate: string[] = [
+		"acm-pca:GetCertificate",
+		"acm-pca:IssueCertificate",
+	];
 	/** IAM actions required for the ListCertificateAuthorities API call. */
 	static readonly ListCertificateAuthorities: string[] = [
 		"acm-pca:ListCertificateAuthorities",
