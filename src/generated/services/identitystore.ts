@@ -654,6 +654,7 @@ export class IdentitystoreOperations {
 	];
 	/** IAM actions required for the UpdateUser API call. */
 	static readonly UpdateUser: string[] = [
+		"sso-directory:DisableUser",
 		"identitystore:UpdateUser",
 		"sso-directory:UpdateUser",
 		"sso-directory:UpdateUserName",

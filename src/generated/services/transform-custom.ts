@@ -19,6 +19,9 @@ export class TransformCustomActions {
 	/** [Write] transform-custom:CompleteTransformationPackageUpload */
 	static readonly CompleteTransformationPackageUpload =
 		"transform-custom:CompleteTransformationPackageUpload";
+	/** [Write] transform-custom:ContributeKnowledgeItems */
+	static readonly ContributeKnowledgeItems =
+		"transform-custom:ContributeKnowledgeItems";
 	/** [Write] transform-custom:ConverseStream */
 	static readonly ConverseStream = "transform-custom:ConverseStream";
 	/** [Write] transform-custom:CreateAnalysis */
@@ -46,6 +49,9 @@ export class TransformCustomActions {
 	static readonly DeleteRemediation = "transform-custom:DeleteRemediation";
 	/** [Write] transform-custom:DeleteRepository */
 	static readonly DeleteRepository = "transform-custom:DeleteRepository";
+	/** [PermissionManagement] transform-custom:DeleteResourcePolicy */
+	static readonly DeleteResourcePolicy =
+		"transform-custom:DeleteResourcePolicy";
 	/** [Write] transform-custom:DeleteSource */
 	static readonly DeleteSource = "transform-custom:DeleteSource";
 	/** [Write] transform-custom:DeleteTransformationPackage */
@@ -71,6 +77,9 @@ export class TransformCustomActions {
 	static readonly actionGetRemediation = "transform-custom:GetRemediation";
 	/** [Read] transform-custom:GetRepository */
 	static readonly actionGetRepository = "transform-custom:GetRepository";
+	/** [Read] transform-custom:GetResourcePolicy */
+	static readonly actionGetResourcePolicy =
+		"transform-custom:GetResourcePolicy";
 	/** [Read] transform-custom:GetSource */
 	static readonly actionGetSource = "transform-custom:GetSource";
 	/** [Read] transform-custom:GetTransformationPackageUrl */
@@ -104,6 +113,8 @@ export class TransformCustomActions {
 	/** [Read] transform-custom:ListTransformationPackageShares */
 	static readonly ListTransformationPackageShares =
 		"transform-custom:ListTransformationPackageShares";
+	/** [PermissionManagement] transform-custom:PutResourcePolicy */
+	static readonly PutResourcePolicy = "transform-custom:PutResourcePolicy";
 	/** [Write] transform-custom:SendTelemetryEvent */
 	static readonly SendTelemetryEvent = "transform-custom:SendTelemetryEvent";
 	/** [Write] transform-custom:ShareTransformationPackage */
@@ -146,6 +157,7 @@ export class TransformCustomActions {
 		TransformCustomActions.actionGetKnowledgeItem,
 		TransformCustomActions.actionGetRemediation,
 		TransformCustomActions.actionGetRepository,
+		TransformCustomActions.actionGetResourcePolicy,
 		TransformCustomActions.actionGetSource,
 		TransformCustomActions.actionGetTransformationPackageUrl,
 		TransformCustomActions.ListAnalysisArtifacts,
@@ -158,6 +170,7 @@ export class TransformCustomActions {
 		TransformCustomActions.BatchCreateFindings,
 		TransformCustomActions.BatchUpdateFindings,
 		TransformCustomActions.CompleteTransformationPackageUpload,
+		TransformCustomActions.ContributeKnowledgeItems,
 		TransformCustomActions.ConverseStream,
 		TransformCustomActions.CreateAnalysis,
 		TransformCustomActions.CreateCampaign,
@@ -198,7 +211,10 @@ export class TransformCustomActions {
 		TransformCustomActions.ListTransformationPackageMetadata,
 	];
 	/** All permission-management-level actions. */
-	static readonly AllPermissionManagementActions: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [
+		TransformCustomActions.DeleteResourcePolicy,
+		TransformCustomActions.PutResourcePolicy,
+	];
 	/** All tagging-level actions. */
 	static readonly AllTaggingActions: string[] = [
 		TransformCustomActions.TagResource,
@@ -725,6 +741,10 @@ export class TransformCustomConditions {
 	static readonly CompleteTransformationPackageUploadConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
+	/** Condition keys applicable to the ContributeKnowledgeItems action. */
+	static readonly ContributeKnowledgeItemsConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the CreateAnalysis action. */
 	static readonly CreateAnalysisConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
@@ -785,6 +805,10 @@ export class TransformCustomConditions {
 	static readonly DeleteRepositoryConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
+	/** Condition keys applicable to the DeleteResourcePolicy action. */
+	static readonly DeleteResourcePolicyConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the DeleteSource action. */
 	static readonly DeleteSourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
@@ -824,6 +848,10 @@ export class TransformCustomConditions {
 	static readonly actionGetRepositoryConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
+	/** Condition keys applicable to the GetResourcePolicy action. */
+	static readonly actionGetResourcePolicyConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the GetSource action. */
 	static readonly actionGetSourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
@@ -842,6 +870,10 @@ export class TransformCustomConditions {
 	];
 	/** Condition keys applicable to the ListTransformationPackageShares action. */
 	static readonly ListTransformationPackageSharesConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
+	/** Condition keys applicable to the PutResourcePolicy action. */
+	static readonly PutResourcePolicyConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ShareTransformationPackage action. */

@@ -1039,6 +1039,302 @@ Defaults to "*".
 
 ---
 
+### MgnRemoteSourceActionJobResourceArnComponents <a name="MgnRemoteSourceActionJobResourceArnComponents" id="@cdk_utils/iam.mgn.MgnRemoteSourceActionJobResourceArnComponents"></a>
+
+Parsed components of a RemoteSourceActionJobResource ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.mgn.MgnRemoteSourceActionJobResourceArnComponents.Initializer"></a>
+
+```typescript
+import { mgn } from '@cdk_utils/iam'
+
+const mgnRemoteSourceActionJobResourceArnComponents: mgn.MgnRemoteSourceActionJobResourceArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.mgn.MgnRemoteSourceActionJobResourceArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.mgn.MgnRemoteSourceActionJobResourceArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.mgn.MgnRemoteSourceActionJobResourceArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+| <code><a href="#@cdk_utils/iam.mgn.MgnRemoteSourceActionJobResourceArnComponents.property.remoteSourceActionJobId">remoteSourceActionJobId</a></code> | <code>string</code> | The RemoteSourceActionJobID component. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.mgn.MgnRemoteSourceActionJobResourceArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.mgn.MgnRemoteSourceActionJobResourceArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.mgn.MgnRemoteSourceActionJobResourceArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+##### `remoteSourceActionJobId`<sup>Required</sup> <a name="remoteSourceActionJobId" id="@cdk_utils/iam.mgn.MgnRemoteSourceActionJobResourceArnComponents.property.remoteSourceActionJobId"></a>
+
+```typescript
+public readonly remoteSourceActionJobId: string;
+```
+
+- *Type:* string
+
+The RemoteSourceActionJobID component.
+
+---
+
+### MgnRemoteSourceActionJobResourceArnProps <a name="MgnRemoteSourceActionJobResourceArnProps" id="@cdk_utils/iam.mgn.MgnRemoteSourceActionJobResourceArnProps"></a>
+
+Properties for building a RemoteSourceActionJobResource ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.mgn.MgnRemoteSourceActionJobResourceArnProps.Initializer"></a>
+
+```typescript
+import { mgn } from '@cdk_utils/iam'
+
+const mgnRemoteSourceActionJobResourceArnProps: mgn.MgnRemoteSourceActionJobResourceArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.mgn.MgnRemoteSourceActionJobResourceArnProps.property.remoteSourceActionJobId">remoteSourceActionJobId</a></code> | <code>string</code> | The RemoteSourceActionJobID component of the ARN. |
+| <code><a href="#@cdk_utils/iam.mgn.MgnRemoteSourceActionJobResourceArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.mgn.MgnRemoteSourceActionJobResourceArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.mgn.MgnRemoteSourceActionJobResourceArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `remoteSourceActionJobId`<sup>Required</sup> <a name="remoteSourceActionJobId" id="@cdk_utils/iam.mgn.MgnRemoteSourceActionJobResourceArnProps.property.remoteSourceActionJobId"></a>
+
+```typescript
+public readonly remoteSourceActionJobId: string;
+```
+
+- *Type:* string
+
+The RemoteSourceActionJobID component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.mgn.MgnRemoteSourceActionJobResourceArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.mgn.MgnRemoteSourceActionJobResourceArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.mgn.MgnRemoteSourceActionJobResourceArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
+### MgnRemoteSourceActionResourceArnComponents <a name="MgnRemoteSourceActionResourceArnComponents" id="@cdk_utils/iam.mgn.MgnRemoteSourceActionResourceArnComponents"></a>
+
+Parsed components of a RemoteSourceActionResource ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.mgn.MgnRemoteSourceActionResourceArnComponents.Initializer"></a>
+
+```typescript
+import { mgn } from '@cdk_utils/iam'
+
+const mgnRemoteSourceActionResourceArnComponents: mgn.MgnRemoteSourceActionResourceArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.mgn.MgnRemoteSourceActionResourceArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.mgn.MgnRemoteSourceActionResourceArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.mgn.MgnRemoteSourceActionResourceArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+| <code><a href="#@cdk_utils/iam.mgn.MgnRemoteSourceActionResourceArnComponents.property.remoteSourceActionId">remoteSourceActionId</a></code> | <code>string</code> | The RemoteSourceActionID component. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.mgn.MgnRemoteSourceActionResourceArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.mgn.MgnRemoteSourceActionResourceArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.mgn.MgnRemoteSourceActionResourceArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+##### `remoteSourceActionId`<sup>Required</sup> <a name="remoteSourceActionId" id="@cdk_utils/iam.mgn.MgnRemoteSourceActionResourceArnComponents.property.remoteSourceActionId"></a>
+
+```typescript
+public readonly remoteSourceActionId: string;
+```
+
+- *Type:* string
+
+The RemoteSourceActionID component.
+
+---
+
+### MgnRemoteSourceActionResourceArnProps <a name="MgnRemoteSourceActionResourceArnProps" id="@cdk_utils/iam.mgn.MgnRemoteSourceActionResourceArnProps"></a>
+
+Properties for building a RemoteSourceActionResource ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.mgn.MgnRemoteSourceActionResourceArnProps.Initializer"></a>
+
+```typescript
+import { mgn } from '@cdk_utils/iam'
+
+const mgnRemoteSourceActionResourceArnProps: mgn.MgnRemoteSourceActionResourceArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.mgn.MgnRemoteSourceActionResourceArnProps.property.remoteSourceActionId">remoteSourceActionId</a></code> | <code>string</code> | The RemoteSourceActionID component of the ARN. |
+| <code><a href="#@cdk_utils/iam.mgn.MgnRemoteSourceActionResourceArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.mgn.MgnRemoteSourceActionResourceArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.mgn.MgnRemoteSourceActionResourceArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `remoteSourceActionId`<sup>Required</sup> <a name="remoteSourceActionId" id="@cdk_utils/iam.mgn.MgnRemoteSourceActionResourceArnProps.property.remoteSourceActionId"></a>
+
+```typescript
+public readonly remoteSourceActionId: string;
+```
+
+- *Type:* string
+
+The RemoteSourceActionID component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.mgn.MgnRemoteSourceActionResourceArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.mgn.MgnRemoteSourceActionResourceArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.mgn.MgnRemoteSourceActionResourceArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### MgnReplicationConfigurationTemplateResourceArnComponents <a name="MgnReplicationConfigurationTemplateResourceArnComponents" id="@cdk_utils/iam.mgn.MgnReplicationConfigurationTemplateResourceArnComponents"></a>
 
 Parsed components of a ReplicationConfigurationTemplateResource ARN.
@@ -1666,6 +1962,7 @@ new mgn.MgnActions()
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.actionGetAgentSnapshotCreditsForMgn">actionGetAgentSnapshotCreditsForMgn</a></code> | <code>string</code> | [Read] mgn:GetAgentSnapshotCreditsForMgn. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.actionGetChannelCommandsForMgn">actionGetChannelCommandsForMgn</a></code> | <code>string</code> | [Read] mgn:GetChannelCommandsForMgn. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.actionGetLaunchConfiguration">actionGetLaunchConfiguration</a></code> | <code>string</code> | [Read] mgn:GetLaunchConfiguration. |
+| <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.actionGetLaunchConfigurationDefaults">actionGetLaunchConfigurationDefaults</a></code> | <code>string</code> | [Read] mgn:GetLaunchConfigurationDefaults. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.actionGetNetworkMigrationDefinition">actionGetNetworkMigrationDefinition</a></code> | <code>string</code> | [Read] mgn:GetNetworkMigrationDefinition. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.actionGetNetworkMigrationMapperSegmentConstruct">actionGetNetworkMigrationMapperSegmentConstruct</a></code> | <code>string</code> | [Read] mgn:GetNetworkMigrationMapperSegmentConstruct. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.actionGetReplicationConfiguration">actionGetReplicationConfiguration</a></code> | <code>string</code> | [Read] mgn:GetReplicationConfiguration. |
@@ -1686,6 +1983,7 @@ new mgn.MgnActions()
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.CreateConnector">CreateConnector</a></code> | <code>string</code> | [Write] mgn:CreateConnector. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.CreateLaunchConfigurationTemplate">CreateLaunchConfigurationTemplate</a></code> | <code>string</code> | [Write] mgn:CreateLaunchConfigurationTemplate. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.CreateNetworkMigrationDefinition">CreateNetworkMigrationDefinition</a></code> | <code>string</code> | [Write] mgn:CreateNetworkMigrationDefinition. |
+| <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.CreateRemoteSourceAction">CreateRemoteSourceAction</a></code> | <code>string</code> | [Write] mgn:CreateRemoteSourceAction. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.CreateReplicationConfigurationTemplate">CreateReplicationConfigurationTemplate</a></code> | <code>string</code> | [Write] mgn:CreateReplicationConfigurationTemplate. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.CreateVcenterClientForMgn">CreateVcenterClientForMgn</a></code> | <code>string</code> | [Write] mgn:CreateVcenterClientForMgn. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.CreateWave">CreateWave</a></code> | <code>string</code> | [Write] mgn:CreateWave. |
@@ -1694,6 +1992,7 @@ new mgn.MgnActions()
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.DeleteJob">DeleteJob</a></code> | <code>string</code> | [Write] mgn:DeleteJob. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.DeleteLaunchConfigurationTemplate">DeleteLaunchConfigurationTemplate</a></code> | <code>string</code> | [Write] mgn:DeleteLaunchConfigurationTemplate. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.DeleteNetworkMigrationDefinition">DeleteNetworkMigrationDefinition</a></code> | <code>string</code> | [Write] mgn:DeleteNetworkMigrationDefinition. |
+| <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.DeleteRemoteSourceAction">DeleteRemoteSourceAction</a></code> | <code>string</code> | [Write] mgn:DeleteRemoteSourceAction. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.DeleteReplicationConfigurationTemplate">DeleteReplicationConfigurationTemplate</a></code> | <code>string</code> | [Write] mgn:DeleteReplicationConfigurationTemplate. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.DeleteSourceServer">DeleteSourceServer</a></code> | <code>string</code> | [Write] mgn:DeleteSourceServer. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.DeleteVcenterClient">DeleteVcenterClient</a></code> | <code>string</code> | [Write] mgn:DeleteVcenterClient. |
@@ -1730,10 +2029,15 @@ new mgn.MgnActions()
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.ListNetworkMigrationDeployments">ListNetworkMigrationDeployments</a></code> | <code>string</code> | [List] mgn:ListNetworkMigrationDeployments. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.ListNetworkMigrationExecutionArtifacts">ListNetworkMigrationExecutionArtifacts</a></code> | <code>string</code> | [List] mgn:ListNetworkMigrationExecutionArtifacts. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.ListNetworkMigrationExecutions">ListNetworkMigrationExecutions</a></code> | <code>string</code> | [List] mgn:ListNetworkMigrationExecutions. |
+| <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.ListNetworkMigrationInsights">ListNetworkMigrationInsights</a></code> | <code>string</code> | [List] mgn:ListNetworkMigrationInsights. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.ListNetworkMigrationMapperSegmentConstructs">ListNetworkMigrationMapperSegmentConstructs</a></code> | <code>string</code> | [List] mgn:ListNetworkMigrationMapperSegmentConstructs. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.ListNetworkMigrationMapperSegments">ListNetworkMigrationMapperSegments</a></code> | <code>string</code> | [List] mgn:ListNetworkMigrationMapperSegments. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.ListNetworkMigrationMappings">ListNetworkMigrationMappings</a></code> | <code>string</code> | [List] mgn:ListNetworkMigrationMappings. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.ListNetworkMigrationMappingUpdates">ListNetworkMigrationMappingUpdates</a></code> | <code>string</code> | [List] mgn:ListNetworkMigrationMappingUpdates. |
+| <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.ListRemoteSourceActionInvocationResults">ListRemoteSourceActionInvocationResults</a></code> | <code>string</code> | [List] mgn:ListRemoteSourceActionInvocationResults. |
+| <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.ListRemoteSourceActionInvocations">ListRemoteSourceActionInvocations</a></code> | <code>string</code> | [List] mgn:ListRemoteSourceActionInvocations. |
+| <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.ListRemoteSourceActionJobs">ListRemoteSourceActionJobs</a></code> | <code>string</code> | [List] mgn:ListRemoteSourceActionJobs. |
+| <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.ListRemoteSourceActions">ListRemoteSourceActions</a></code> | <code>string</code> | [List] mgn:ListRemoteSourceActions. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.ListSourceServerActions">ListSourceServerActions</a></code> | <code>string</code> | [List] mgn:ListSourceServerActions. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [Read] mgn:ListTagsForResource. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.ListTemplateActions">ListTemplateActions</a></code> | <code>string</code> | [List] mgn:ListTemplateActions. |
@@ -1771,6 +2075,7 @@ new mgn.MgnActions()
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.StartNetworkMigrationDeployment">StartNetworkMigrationDeployment</a></code> | <code>string</code> | [Write] mgn:StartNetworkMigrationDeployment. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.StartNetworkMigrationMapping">StartNetworkMigrationMapping</a></code> | <code>string</code> | [Write] mgn:StartNetworkMigrationMapping. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.StartNetworkMigrationMappingUpdate">StartNetworkMigrationMappingUpdate</a></code> | <code>string</code> | [Write] mgn:StartNetworkMigrationMappingUpdate. |
+| <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.StartRemoteSourceActionJob">StartRemoteSourceActionJob</a></code> | <code>string</code> | [Write] mgn:StartRemoteSourceActionJob. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.StartReplication">StartReplication</a></code> | <code>string</code> | [Write] mgn:StartReplication. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.StartSnapshotGroupForMgn">StartSnapshotGroupForMgn</a></code> | <code>string</code> | [Write] mgn:StartSnapshotGroupForMgn. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.StartTest">StartTest</a></code> | <code>string</code> | [Write] mgn:StartTest. |
@@ -1789,10 +2094,12 @@ new mgn.MgnActions()
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.UpdateApplication">UpdateApplication</a></code> | <code>string</code> | [Write] mgn:UpdateApplication. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.UpdateConnector">UpdateConnector</a></code> | <code>string</code> | [Write] mgn:UpdateConnector. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.UpdateLaunchConfiguration">UpdateLaunchConfiguration</a></code> | <code>string</code> | [Write] mgn:UpdateLaunchConfiguration. |
+| <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.UpdateLaunchConfigurationDefaults">UpdateLaunchConfigurationDefaults</a></code> | <code>string</code> | [Write] mgn:UpdateLaunchConfigurationDefaults. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.UpdateLaunchConfigurationTemplate">UpdateLaunchConfigurationTemplate</a></code> | <code>string</code> | [Write] mgn:UpdateLaunchConfigurationTemplate. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.UpdateNetworkMigrationDefinition">UpdateNetworkMigrationDefinition</a></code> | <code>string</code> | [Write] mgn:UpdateNetworkMigrationDefinition. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.UpdateNetworkMigrationMapperSegment">UpdateNetworkMigrationMapperSegment</a></code> | <code>string</code> | [Write] mgn:UpdateNetworkMigrationMapperSegment. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.UpdateNetworkMigrationMapperSegmentConstruct">UpdateNetworkMigrationMapperSegmentConstruct</a></code> | <code>string</code> | [Write] mgn:UpdateNetworkMigrationMapperSegmentConstruct. |
+| <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.UpdateRemoteSourceAction">UpdateRemoteSourceAction</a></code> | <code>string</code> | [Write] mgn:UpdateRemoteSourceAction. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.UpdateReplicationConfiguration">UpdateReplicationConfiguration</a></code> | <code>string</code> | [Write] mgn:UpdateReplicationConfiguration. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.UpdateReplicationConfigurationTemplate">UpdateReplicationConfigurationTemplate</a></code> | <code>string</code> | [Write] mgn:UpdateReplicationConfigurationTemplate. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnActions.property.UpdateSourceServer">UpdateSourceServer</a></code> | <code>string</code> | [Write] mgn:UpdateSourceServer. |
@@ -1907,6 +2214,18 @@ public readonly actionGetLaunchConfiguration: string;
 - *Type:* string
 
 [Read] mgn:GetLaunchConfiguration.
+
+---
+
+##### `actionGetLaunchConfigurationDefaults`<sup>Required</sup> <a name="actionGetLaunchConfigurationDefaults" id="@cdk_utils/iam.mgn.MgnActions.property.actionGetLaunchConfigurationDefaults"></a>
+
+```typescript
+public readonly actionGetLaunchConfigurationDefaults: string;
+```
+
+- *Type:* string
+
+[Read] mgn:GetLaunchConfigurationDefaults.
 
 ---
 
@@ -2150,6 +2469,18 @@ public readonly CreateNetworkMigrationDefinition: string;
 
 ---
 
+##### `CreateRemoteSourceAction`<sup>Required</sup> <a name="CreateRemoteSourceAction" id="@cdk_utils/iam.mgn.MgnActions.property.CreateRemoteSourceAction"></a>
+
+```typescript
+public readonly CreateRemoteSourceAction: string;
+```
+
+- *Type:* string
+
+[Write] mgn:CreateRemoteSourceAction.
+
+---
+
 ##### `CreateReplicationConfigurationTemplate`<sup>Required</sup> <a name="CreateReplicationConfigurationTemplate" id="@cdk_utils/iam.mgn.MgnActions.property.CreateReplicationConfigurationTemplate"></a>
 
 ```typescript
@@ -2243,6 +2574,18 @@ public readonly DeleteNetworkMigrationDefinition: string;
 - *Type:* string
 
 [Write] mgn:DeleteNetworkMigrationDefinition.
+
+---
+
+##### `DeleteRemoteSourceAction`<sup>Required</sup> <a name="DeleteRemoteSourceAction" id="@cdk_utils/iam.mgn.MgnActions.property.DeleteRemoteSourceAction"></a>
+
+```typescript
+public readonly DeleteRemoteSourceAction: string;
+```
+
+- *Type:* string
+
+[Write] mgn:DeleteRemoteSourceAction.
 
 ---
 
@@ -2678,6 +3021,18 @@ public readonly ListNetworkMigrationExecutions: string;
 
 ---
 
+##### `ListNetworkMigrationInsights`<sup>Required</sup> <a name="ListNetworkMigrationInsights" id="@cdk_utils/iam.mgn.MgnActions.property.ListNetworkMigrationInsights"></a>
+
+```typescript
+public readonly ListNetworkMigrationInsights: string;
+```
+
+- *Type:* string
+
+[List] mgn:ListNetworkMigrationInsights.
+
+---
+
 ##### `ListNetworkMigrationMapperSegmentConstructs`<sup>Required</sup> <a name="ListNetworkMigrationMapperSegmentConstructs" id="@cdk_utils/iam.mgn.MgnActions.property.ListNetworkMigrationMapperSegmentConstructs"></a>
 
 ```typescript
@@ -2723,6 +3078,54 @@ public readonly ListNetworkMigrationMappingUpdates: string;
 - *Type:* string
 
 [List] mgn:ListNetworkMigrationMappingUpdates.
+
+---
+
+##### `ListRemoteSourceActionInvocationResults`<sup>Required</sup> <a name="ListRemoteSourceActionInvocationResults" id="@cdk_utils/iam.mgn.MgnActions.property.ListRemoteSourceActionInvocationResults"></a>
+
+```typescript
+public readonly ListRemoteSourceActionInvocationResults: string;
+```
+
+- *Type:* string
+
+[List] mgn:ListRemoteSourceActionInvocationResults.
+
+---
+
+##### `ListRemoteSourceActionInvocations`<sup>Required</sup> <a name="ListRemoteSourceActionInvocations" id="@cdk_utils/iam.mgn.MgnActions.property.ListRemoteSourceActionInvocations"></a>
+
+```typescript
+public readonly ListRemoteSourceActionInvocations: string;
+```
+
+- *Type:* string
+
+[List] mgn:ListRemoteSourceActionInvocations.
+
+---
+
+##### `ListRemoteSourceActionJobs`<sup>Required</sup> <a name="ListRemoteSourceActionJobs" id="@cdk_utils/iam.mgn.MgnActions.property.ListRemoteSourceActionJobs"></a>
+
+```typescript
+public readonly ListRemoteSourceActionJobs: string;
+```
+
+- *Type:* string
+
+[List] mgn:ListRemoteSourceActionJobs.
+
+---
+
+##### `ListRemoteSourceActions`<sup>Required</sup> <a name="ListRemoteSourceActions" id="@cdk_utils/iam.mgn.MgnActions.property.ListRemoteSourceActions"></a>
+
+```typescript
+public readonly ListRemoteSourceActions: string;
+```
+
+- *Type:* string
+
+[List] mgn:ListRemoteSourceActions.
 
 ---
 
@@ -3170,6 +3573,18 @@ public readonly StartNetworkMigrationMappingUpdate: string;
 
 ---
 
+##### `StartRemoteSourceActionJob`<sup>Required</sup> <a name="StartRemoteSourceActionJob" id="@cdk_utils/iam.mgn.MgnActions.property.StartRemoteSourceActionJob"></a>
+
+```typescript
+public readonly StartRemoteSourceActionJob: string;
+```
+
+- *Type:* string
+
+[Write] mgn:StartRemoteSourceActionJob.
+
+---
+
 ##### `StartReplication`<sup>Required</sup> <a name="StartReplication" id="@cdk_utils/iam.mgn.MgnActions.property.StartReplication"></a>
 
 ```typescript
@@ -3386,6 +3801,18 @@ public readonly UpdateLaunchConfiguration: string;
 
 ---
 
+##### `UpdateLaunchConfigurationDefaults`<sup>Required</sup> <a name="UpdateLaunchConfigurationDefaults" id="@cdk_utils/iam.mgn.MgnActions.property.UpdateLaunchConfigurationDefaults"></a>
+
+```typescript
+public readonly UpdateLaunchConfigurationDefaults: string;
+```
+
+- *Type:* string
+
+[Write] mgn:UpdateLaunchConfigurationDefaults.
+
+---
+
 ##### `UpdateLaunchConfigurationTemplate`<sup>Required</sup> <a name="UpdateLaunchConfigurationTemplate" id="@cdk_utils/iam.mgn.MgnActions.property.UpdateLaunchConfigurationTemplate"></a>
 
 ```typescript
@@ -3431,6 +3858,18 @@ public readonly UpdateNetworkMigrationMapperSegmentConstruct: string;
 - *Type:* string
 
 [Write] mgn:UpdateNetworkMigrationMapperSegmentConstruct.
+
+---
+
+##### `UpdateRemoteSourceAction`<sup>Required</sup> <a name="UpdateRemoteSourceAction" id="@cdk_utils/iam.mgn.MgnActions.property.UpdateRemoteSourceAction"></a>
+
+```typescript
+public readonly UpdateRemoteSourceAction: string;
+```
+
+- *Type:* string
+
+[Write] mgn:UpdateRemoteSourceAction.
 
 ---
 
@@ -3612,6 +4051,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.mgn.MgnConditions.property.CreateConnectorConditionKeys">CreateConnectorConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateConnector action. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnConditions.property.CreateLaunchConfigurationTemplateConditionKeys">CreateLaunchConfigurationTemplateConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateLaunchConfigurationTemplate action. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnConditions.property.CreateNetworkMigrationDefinitionConditionKeys">CreateNetworkMigrationDefinitionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateNetworkMigrationDefinition action. |
+| <code><a href="#@cdk_utils/iam.mgn.MgnConditions.property.CreateRemoteSourceActionConditionKeys">CreateRemoteSourceActionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateRemoteSourceAction action. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnConditions.property.CreateReplicationConfigurationTemplateConditionKeys">CreateReplicationConfigurationTemplateConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateReplicationConfigurationTemplate action. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnConditions.property.CreateVcenterClientForMgnConditionKeys">CreateVcenterClientForMgnConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateVcenterClientForMgn action. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnConditions.property.CreateWaveConditionKeys">CreateWaveConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateWave action. |
@@ -3619,6 +4059,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.mgn.MgnConditions.property.StartCutoverConditionKeys">StartCutoverConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartCutover action. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnConditions.property.StartExportConditionKeys">StartExportConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartExport action. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnConditions.property.StartImportConditionKeys">StartImportConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartImport action. |
+| <code><a href="#@cdk_utils/iam.mgn.MgnConditions.property.StartRemoteSourceActionJobConditionKeys">StartRemoteSourceActionJobConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartRemoteSourceActionJob action. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnConditions.property.StartTestConditionKeys">StartTestConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartTest action. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnConditions.property.TagResourceConditionKeys">TagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TagResource action. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnConditions.property.TerminateTargetInstancesConditionKeys">TerminateTargetInstancesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TerminateTargetInstances action. |
@@ -3722,6 +4163,18 @@ Condition keys applicable to the CreateNetworkMigrationDefinition action.
 
 ---
 
+##### `CreateRemoteSourceActionConditionKeys`<sup>Required</sup> <a name="CreateRemoteSourceActionConditionKeys" id="@cdk_utils/iam.mgn.MgnConditions.property.CreateRemoteSourceActionConditionKeys"></a>
+
+```typescript
+public readonly CreateRemoteSourceActionConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateRemoteSourceAction action.
+
+---
+
 ##### `CreateReplicationConfigurationTemplateConditionKeys`<sup>Required</sup> <a name="CreateReplicationConfigurationTemplateConditionKeys" id="@cdk_utils/iam.mgn.MgnConditions.property.CreateReplicationConfigurationTemplateConditionKeys"></a>
 
 ```typescript
@@ -3803,6 +4256,18 @@ public readonly StartImportConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the StartImport action.
+
+---
+
+##### `StartRemoteSourceActionJobConditionKeys`<sup>Required</sup> <a name="StartRemoteSourceActionJobConditionKeys" id="@cdk_utils/iam.mgn.MgnConditions.property.StartRemoteSourceActionJobConditionKeys"></a>
+
+```typescript
+public readonly StartRemoteSourceActionJobConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the StartRemoteSourceActionJob action.
 
 ---
 
@@ -5149,6 +5614,8 @@ new mgn.MgnResources()
 | <code><a href="#@cdk_utils/iam.mgn.MgnResources.isValidJobResourceArn">isValidJobResourceArn</a></code> | Validates whether a string is a valid ARN for the JobResource resource. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnResources.isValidLaunchConfigurationTemplateResourceArn">isValidLaunchConfigurationTemplateResourceArn</a></code> | Validates whether a string is a valid ARN for the LaunchConfigurationTemplateResource resource. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnResources.isValidNetworkMigrationDefinitionResourceArn">isValidNetworkMigrationDefinitionResourceArn</a></code> | Validates whether a string is a valid ARN for the NetworkMigrationDefinitionResource resource. |
+| <code><a href="#@cdk_utils/iam.mgn.MgnResources.isValidRemoteSourceActionJobResourceArn">isValidRemoteSourceActionJobResourceArn</a></code> | Validates whether a string is a valid ARN for the RemoteSourceActionJobResource resource. |
+| <code><a href="#@cdk_utils/iam.mgn.MgnResources.isValidRemoteSourceActionResourceArn">isValidRemoteSourceActionResourceArn</a></code> | Validates whether a string is a valid ARN for the RemoteSourceActionResource resource. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnResources.isValidReplicationConfigurationTemplateResourceArn">isValidReplicationConfigurationTemplateResourceArn</a></code> | Validates whether a string is a valid ARN for the ReplicationConfigurationTemplateResource resource. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnResources.isValidSourceServerResourceArn">isValidSourceServerResourceArn</a></code> | Validates whether a string is a valid ARN for the SourceServerResource resource. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnResources.isValidVcenterClientResourceArn">isValidVcenterClientResourceArn</a></code> | Validates whether a string is a valid ARN for the VcenterClientResource resource. |
@@ -5163,10 +5630,14 @@ new mgn.MgnResources()
 | <code><a href="#@cdk_utils/iam.mgn.MgnResources.parseJobResourceArn">parseJobResourceArn</a></code> | Parses a JobResource ARN into its components. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnResources.parseLaunchConfigurationTemplateResourceArn">parseLaunchConfigurationTemplateResourceArn</a></code> | Parses a LaunchConfigurationTemplateResource ARN into its components. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnResources.parseNetworkMigrationDefinitionResourceArn">parseNetworkMigrationDefinitionResourceArn</a></code> | Parses a NetworkMigrationDefinitionResource ARN into its components. |
+| <code><a href="#@cdk_utils/iam.mgn.MgnResources.parseRemoteSourceActionJobResourceArn">parseRemoteSourceActionJobResourceArn</a></code> | Parses a RemoteSourceActionJobResource ARN into its components. |
+| <code><a href="#@cdk_utils/iam.mgn.MgnResources.parseRemoteSourceActionResourceArn">parseRemoteSourceActionResourceArn</a></code> | Parses a RemoteSourceActionResource ARN into its components. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnResources.parseReplicationConfigurationTemplateResourceArn">parseReplicationConfigurationTemplateResourceArn</a></code> | Parses a ReplicationConfigurationTemplateResource ARN into its components. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnResources.parseSourceServerResourceArn">parseSourceServerResourceArn</a></code> | Parses a SourceServerResource ARN into its components. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnResources.parseVcenterClientResourceArn">parseVcenterClientResourceArn</a></code> | Parses a VcenterClientResource ARN into its components. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnResources.parseWaveResourceArn">parseWaveResourceArn</a></code> | Parses a WaveResource ARN into its components. |
+| <code><a href="#@cdk_utils/iam.mgn.MgnResources.remoteSourceActionJobResource">remoteSourceActionJobResource</a></code> | Builds an ARN for the RemoteSourceActionJobResource resource. |
+| <code><a href="#@cdk_utils/iam.mgn.MgnResources.remoteSourceActionResource">remoteSourceActionResource</a></code> | Builds an ARN for the RemoteSourceActionResource resource. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnResources.replicationConfigurationTemplateResource">replicationConfigurationTemplateResource</a></code> | Builds an ARN for the ReplicationConfigurationTemplateResource resource. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnResources.sourceServerResource">sourceServerResource</a></code> | Builds an ARN for the SourceServerResource resource. |
 | <code><a href="#@cdk_utils/iam.mgn.MgnResources.vcenterClientResource">vcenterClientResource</a></code> | Builds an ARN for the VcenterClientResource resource. |
@@ -5345,6 +5816,38 @@ mgn.MgnResources.isValidNetworkMigrationDefinitionResourceArn(arn: string)
 Validates whether a string is a valid ARN for the NetworkMigrationDefinitionResource resource.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.mgn.MgnResources.isValidNetworkMigrationDefinitionResourceArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidRemoteSourceActionJobResourceArn` <a name="isValidRemoteSourceActionJobResourceArn" id="@cdk_utils/iam.mgn.MgnResources.isValidRemoteSourceActionJobResourceArn"></a>
+
+```typescript
+import { mgn } from '@cdk_utils/iam'
+
+mgn.MgnResources.isValidRemoteSourceActionJobResourceArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the RemoteSourceActionJobResource resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.mgn.MgnResources.isValidRemoteSourceActionJobResourceArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidRemoteSourceActionResourceArn` <a name="isValidRemoteSourceActionResourceArn" id="@cdk_utils/iam.mgn.MgnResources.isValidRemoteSourceActionResourceArn"></a>
+
+```typescript
+import { mgn } from '@cdk_utils/iam'
+
+mgn.MgnResources.isValidRemoteSourceActionResourceArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the RemoteSourceActionResource resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.mgn.MgnResources.isValidRemoteSourceActionResourceArn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -5574,6 +6077,38 @@ Parses a NetworkMigrationDefinitionResource ARN into its components.
 
 ---
 
+##### `parseRemoteSourceActionJobResourceArn` <a name="parseRemoteSourceActionJobResourceArn" id="@cdk_utils/iam.mgn.MgnResources.parseRemoteSourceActionJobResourceArn"></a>
+
+```typescript
+import { mgn } from '@cdk_utils/iam'
+
+mgn.MgnResources.parseRemoteSourceActionJobResourceArn(arn: string)
+```
+
+Parses a RemoteSourceActionJobResource ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.mgn.MgnResources.parseRemoteSourceActionJobResourceArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseRemoteSourceActionResourceArn` <a name="parseRemoteSourceActionResourceArn" id="@cdk_utils/iam.mgn.MgnResources.parseRemoteSourceActionResourceArn"></a>
+
+```typescript
+import { mgn } from '@cdk_utils/iam'
+
+mgn.MgnResources.parseRemoteSourceActionResourceArn(arn: string)
+```
+
+Parses a RemoteSourceActionResource ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.mgn.MgnResources.parseRemoteSourceActionResourceArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `parseReplicationConfigurationTemplateResourceArn` <a name="parseReplicationConfigurationTemplateResourceArn" id="@cdk_utils/iam.mgn.MgnResources.parseReplicationConfigurationTemplateResourceArn"></a>
 
 ```typescript
@@ -5635,6 +6170,38 @@ Parses a WaveResource ARN into its components.
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.mgn.MgnResources.parseWaveResourceArn.parameter.arn"></a>
 
 - *Type:* string
+
+---
+
+##### `remoteSourceActionJobResource` <a name="remoteSourceActionJobResource" id="@cdk_utils/iam.mgn.MgnResources.remoteSourceActionJobResource"></a>
+
+```typescript
+import { mgn } from '@cdk_utils/iam'
+
+mgn.MgnResources.remoteSourceActionJobResource(props: MgnRemoteSourceActionJobResourceArnProps)
+```
+
+Builds an ARN for the RemoteSourceActionJobResource resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.mgn.MgnResources.remoteSourceActionJobResource.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.mgn.MgnRemoteSourceActionJobResourceArnProps">MgnRemoteSourceActionJobResourceArnProps</a>
+
+---
+
+##### `remoteSourceActionResource` <a name="remoteSourceActionResource" id="@cdk_utils/iam.mgn.MgnResources.remoteSourceActionResource"></a>
+
+```typescript
+import { mgn } from '@cdk_utils/iam'
+
+mgn.MgnResources.remoteSourceActionResource(props: MgnRemoteSourceActionResourceArnProps)
+```
+
+Builds an ARN for the RemoteSourceActionResource resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.mgn.MgnResources.remoteSourceActionResource.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.mgn.MgnRemoteSourceActionResourceArnProps">MgnRemoteSourceActionResourceArnProps</a>
 
 ---
 

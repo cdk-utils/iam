@@ -348,6 +348,7 @@ new route53profiles.Route53profilesActions()
 | <code><a href="#@cdk_utils/iam.route53profiles.Route53profilesActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.route53profiles.Route53profilesActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] route53profiles:TagResource. |
 | <code><a href="#@cdk_utils/iam.route53profiles.Route53profilesActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] route53profiles:UntagResource. |
+| <code><a href="#@cdk_utils/iam.route53profiles.Route53profilesActions.property.UpdateProfileAssociation">UpdateProfileAssociation</a></code> | <code>string</code> | [Write] route53profiles:UpdateProfileAssociation. |
 | <code><a href="#@cdk_utils/iam.route53profiles.Route53profilesActions.property.UpdateProfileResourceAssociation">UpdateProfileResourceAssociation</a></code> | <code>string</code> | [Write] route53profiles:UpdateProfileResourceAssociation. |
 
 ---
@@ -625,6 +626,18 @@ public readonly UntagResource: string;
 - *Type:* string
 
 [Tagging] route53profiles:UntagResource.
+
+---
+
+##### `UpdateProfileAssociation`<sup>Required</sup> <a name="UpdateProfileAssociation" id="@cdk_utils/iam.route53profiles.Route53profilesActions.property.UpdateProfileAssociation"></a>
+
+```typescript
+public readonly UpdateProfileAssociation: string;
+```
+
+- *Type:* string
+
+[Write] route53profiles:UpdateProfileAssociation.
 
 ---
 
@@ -1086,6 +1099,7 @@ new route53profiles.Route53profilesOperations()
 | <code><a href="#@cdk_utils/iam.route53profiles.Route53profilesOperations.property.opGetProfileResourceAssociation">opGetProfileResourceAssociation</a></code> | <code>string[]</code> | IAM actions required for the GetProfileResourceAssociation API call. |
 | <code><a href="#@cdk_utils/iam.route53profiles.Route53profilesOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
 | <code><a href="#@cdk_utils/iam.route53profiles.Route53profilesOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
+| <code><a href="#@cdk_utils/iam.route53profiles.Route53profilesOperations.property.UpdateProfileAssociation">UpdateProfileAssociation</a></code> | <code>string[]</code> | IAM actions required for the UpdateProfileAssociation API call. |
 | <code><a href="#@cdk_utils/iam.route53profiles.Route53profilesOperations.property.UpdateProfileResourceAssociation">UpdateProfileResourceAssociation</a></code> | <code>string[]</code> | IAM actions required for the UpdateProfileResourceAssociation API call. |
 
 ---
@@ -1267,6 +1281,18 @@ public readonly UntagResource: string[];
 - *Type:* string[]
 
 IAM actions required for the UntagResource API call.
+
+---
+
+##### `UpdateProfileAssociation`<sup>Required</sup> <a name="UpdateProfileAssociation" id="@cdk_utils/iam.route53profiles.Route53profilesOperations.property.UpdateProfileAssociation"></a>
+
+```typescript
+public readonly UpdateProfileAssociation: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateProfileAssociation API call.
 
 ---
 

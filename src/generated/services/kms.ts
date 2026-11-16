@@ -1354,6 +1354,9 @@ export class KMSConditions {
 	static readonly RECIPIENT_ATTESTATION_PCR7 = "kms:RecipientAttestation:PCR7";
 	/** Condition key: kms:RecipientAttestation:PCR8 (String) */
 	static readonly RECIPIENT_ATTESTATION_PCR8 = "kms:RecipientAttestation:PCR8";
+	/** Condition key: kms:RecipientAttestation:PCR8:ServiceName (String) */
+	static readonly RECIPIENT_ATTESTATION_PCR8_SERVICE_NAME =
+		"kms:RecipientAttestation:PCR8:ServiceName";
 	/** Condition key: kms:RecipientAttestation:PCR9 (String) */
 	static readonly RECIPIENT_ATTESTATION_PCR9 = "kms:RecipientAttestation:PCR9";
 	/** Condition key: kms:ReplicaRegion (String) */
@@ -2158,6 +2161,17 @@ export class KMSConditions {
 		value: string,
 	): Record<string, Record<string, string>> {
 		return { StringEquals: { "kms:RecipientAttestation:PCR8": value } };
+	}
+
+	/**
+	 * Generates a condition block for `kms:RecipientAttestation:PCR8:ServiceName`.
+	 */
+	static recipientAttestationPcr8ServiceName(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return {
+			StringEquals: { "kms:RecipientAttestation:PCR8:ServiceName": value },
+		};
 	}
 
 	/**

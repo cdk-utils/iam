@@ -1465,6 +1465,12 @@ export class LambdaOperations {
 		"iam:PassRole",
 		"lambda:TagResource",
 	];
+	/** IAM actions required for the CreateRuntime API call. */
+	static readonly CreateRuntime: string[] = ["lambda:TagResource"];
+	/** IAM actions required for the CreateRuntimeAlias API call. */
+	static readonly CreateRuntimeAlias: string[] = [];
+	/** IAM actions required for the CreateRuntimeVersion API call. */
+	static readonly CreateRuntimeVersion: string[] = [];
 	/** IAM actions required for the CreateWebFunction API call. */
 	static readonly CreateWebFunction: string[] = [
 		"lambda:CreateWebFunction",
@@ -1535,6 +1541,12 @@ export class LambdaOperations {
 		"lambda:DeleteResourcePolicy",
 		"lambda:RemovePermission",
 	];
+	/** IAM actions required for the DeleteRuntime API call. */
+	static readonly DeleteRuntime: string[] = [];
+	/** IAM actions required for the DeleteRuntimeAlias API call. */
+	static readonly DeleteRuntimeAlias: string[] = [];
+	/** IAM actions required for the DeleteRuntimeVersion API call. */
+	static readonly DeleteRuntimeVersion: string[] = [];
 	/** IAM actions required for the DeleteWebFunction API call. */
 	static readonly DeleteWebFunction: string[] = ["lambda:DeleteWebFunction"];
 	/** IAM actions required for the DeleteWebFunctionEndpoint API call. */
@@ -1645,10 +1657,16 @@ export class LambdaOperations {
 		"lambda:GetPolicy",
 		"lambda:GetResourcePolicy",
 	];
+	/** IAM actions required for the GetRuntime API call. */
+	static readonly opGetRuntime: string[] = [];
+	/** IAM actions required for the GetRuntimeAlias API call. */
+	static readonly opGetRuntimeAlias: string[] = [];
 	/** IAM actions required for the GetRuntimeManagementConfig API call. */
 	static readonly opGetRuntimeManagementConfig: string[] = [
 		"lambda:GetRuntimeManagementConfig",
 	];
+	/** IAM actions required for the GetRuntimeVersion API call. */
+	static readonly opGetRuntimeVersion: string[] = [];
 	/** IAM actions required for the GetWebAccountSettings API call. */
 	static readonly opGetWebAccountSettings: string[] = [
 		"lambda:GetWebAccountSettings",
@@ -1745,6 +1763,12 @@ export class LambdaOperations {
 	static readonly ListProvisionedConcurrencyConfigs: string[] = [
 		"lambda:ListProvisionedConcurrencyConfigs",
 	];
+	/** IAM actions required for the ListRuntimeAliases API call. */
+	static readonly ListRuntimeAliases: string[] = [];
+	/** IAM actions required for the ListRuntimeVersions API call. */
+	static readonly ListRuntimeVersions: string[] = [];
+	/** IAM actions required for the ListRuntimes API call. */
+	static readonly ListRuntimes: string[] = [];
 	/** IAM actions required for the ListTags API call. */
 	static readonly ListTags: string[] = ["lambda:ListTags"];
 	/** IAM actions required for the ListVersionsByFunction API call. */
@@ -1809,6 +1833,8 @@ export class LambdaOperations {
 	];
 	/** IAM actions required for the RemovePermission API call. */
 	static readonly RemovePermission: string[] = ["lambda:RemovePermission"];
+	/** IAM actions required for the RestoreRuntime API call. */
+	static readonly RestoreRuntime: string[] = [];
 	/** IAM actions required for the ResumeMicrovm API call. */
 	static readonly ResumeMicrovm: string[] = ["lambda:ResumeMicrovm"];
 	/** IAM actions required for the RunMicrovm API call. */
@@ -1887,6 +1913,12 @@ export class LambdaOperations {
 		"iam:PassRole",
 		"lambda:UpdateNetworkConnector",
 	];
+	/** IAM actions required for the UpdateRuntime API call. */
+	static readonly UpdateRuntime: string[] = [];
+	/** IAM actions required for the UpdateRuntimeAlias API call. */
+	static readonly UpdateRuntimeAlias: string[] = [];
+	/** IAM actions required for the UpdateRuntimeVersion API call. */
+	static readonly UpdateRuntimeVersion: string[] = [];
 	/** IAM actions required for the UpdateWebFunctionEndpoint API call. */
 	static readonly UpdateWebFunctionEndpoint: string[] = [
 		"lambda:UpdateWebFunctionEndpoint",

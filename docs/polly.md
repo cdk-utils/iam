@@ -188,11 +188,14 @@ new polly.PollyActions()
 | <code><a href="#@cdk_utils/iam.polly.PollyActions.property.DescribeVoices">DescribeVoices</a></code> | <code>string</code> | [List] polly:DescribeVoices. |
 | <code><a href="#@cdk_utils/iam.polly.PollyActions.property.ListLexicons">ListLexicons</a></code> | <code>string</code> | [List] polly:ListLexicons. |
 | <code><a href="#@cdk_utils/iam.polly.PollyActions.property.ListSpeechSynthesisTasks">ListSpeechSynthesisTasks</a></code> | <code>string</code> | [List] polly:ListSpeechSynthesisTasks. |
+| <code><a href="#@cdk_utils/iam.polly.PollyActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [Read] polly:ListTagsForResource. |
 | <code><a href="#@cdk_utils/iam.polly.PollyActions.property.PutLexicon">PutLexicon</a></code> | <code>string</code> | [Write] polly:PutLexicon. |
 | <code><a href="#@cdk_utils/iam.polly.PollyActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.polly.PollyActions.property.StartSpeechSynthesisStream">StartSpeechSynthesisStream</a></code> | <code>string</code> | [Read] polly:StartSpeechSynthesisStream. |
 | <code><a href="#@cdk_utils/iam.polly.PollyActions.property.StartSpeechSynthesisTask">StartSpeechSynthesisTask</a></code> | <code>string</code> | [Write] polly:StartSpeechSynthesisTask. |
 | <code><a href="#@cdk_utils/iam.polly.PollyActions.property.SynthesizeSpeech">SynthesizeSpeech</a></code> | <code>string</code> | [Read] polly:SynthesizeSpeech. |
+| <code><a href="#@cdk_utils/iam.polly.PollyActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] polly:TagResource. |
+| <code><a href="#@cdk_utils/iam.polly.PollyActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] polly:UntagResource. |
 
 ---
 
@@ -328,6 +331,18 @@ public readonly ListSpeechSynthesisTasks: string;
 
 ---
 
+##### `ListTagsForResource`<sup>Required</sup> <a name="ListTagsForResource" id="@cdk_utils/iam.polly.PollyActions.property.ListTagsForResource"></a>
+
+```typescript
+public readonly ListTagsForResource: string;
+```
+
+- *Type:* string
+
+[Read] polly:ListTagsForResource.
+
+---
+
 ##### `PutLexicon`<sup>Required</sup> <a name="PutLexicon" id="@cdk_utils/iam.polly.PollyActions.property.PutLexicon"></a>
 
 ```typescript
@@ -388,6 +403,192 @@ public readonly SynthesizeSpeech: string;
 
 ---
 
+##### `TagResource`<sup>Required</sup> <a name="TagResource" id="@cdk_utils/iam.polly.PollyActions.property.TagResource"></a>
+
+```typescript
+public readonly TagResource: string;
+```
+
+- *Type:* string
+
+[Tagging] polly:TagResource.
+
+---
+
+##### `UntagResource`<sup>Required</sup> <a name="UntagResource" id="@cdk_utils/iam.polly.PollyActions.property.UntagResource"></a>
+
+```typescript
+public readonly UntagResource: string;
+```
+
+- *Type:* string
+
+[Tagging] polly:UntagResource.
+
+---
+
+### PollyConditions <a name="PollyConditions" id="@cdk_utils/iam.polly.PollyConditions"></a>
+
+Condition key constants and builders for polly.
+
+#### Initializers <a name="Initializers" id="@cdk_utils/iam.polly.PollyConditions.Initializer"></a>
+
+```typescript
+import { polly } from '@cdk_utils/iam'
+
+new polly.PollyConditions()
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+
+---
+
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdk_utils/iam.polly.PollyConditions.requestTag">requestTag</a></code> | Generates a condition block for `aws:RequestTag/${TagKey}`. |
+| <code><a href="#@cdk_utils/iam.polly.PollyConditions.resourceTag">resourceTag</a></code> | Generates a condition block for `aws:ResourceTag/${TagKey}`. |
+| <code><a href="#@cdk_utils/iam.polly.PollyConditions.tagKeys">tagKeys</a></code> | Generates a condition block for `aws:TagKeys`. |
+
+---
+
+##### `requestTag` <a name="requestTag" id="@cdk_utils/iam.polly.PollyConditions.requestTag"></a>
+
+```typescript
+import { polly } from '@cdk_utils/iam'
+
+polly.PollyConditions.requestTag(value: string)
+```
+
+Generates a condition block for `aws:RequestTag/${TagKey}`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.polly.PollyConditions.requestTag.parameter.value"></a>
+
+- *Type:* string
+
+---
+
+##### `resourceTag` <a name="resourceTag" id="@cdk_utils/iam.polly.PollyConditions.resourceTag"></a>
+
+```typescript
+import { polly } from '@cdk_utils/iam'
+
+polly.PollyConditions.resourceTag(value: string)
+```
+
+Generates a condition block for `aws:ResourceTag/${TagKey}`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.polly.PollyConditions.resourceTag.parameter.value"></a>
+
+- *Type:* string
+
+---
+
+##### `tagKeys` <a name="tagKeys" id="@cdk_utils/iam.polly.PollyConditions.tagKeys"></a>
+
+```typescript
+import { polly } from '@cdk_utils/iam'
+
+polly.PollyConditions.tagKeys(values: string[])
+```
+
+Generates a condition block for `aws:TagKeys`.
+
+###### `values`<sup>Required</sup> <a name="values" id="@cdk_utils/iam.polly.PollyConditions.tagKeys.parameter.values"></a>
+
+- *Type:* string[]
+
+---
+
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.polly.PollyConditions.property.AWS_REQUEST_TAG">AWS_REQUEST_TAG</a></code> | <code>string</code> | Condition key: aws:RequestTag/${TagKey} (String). |
+| <code><a href="#@cdk_utils/iam.polly.PollyConditions.property.AWS_RESOURCE_TAG">AWS_RESOURCE_TAG</a></code> | <code>string</code> | Condition key: aws:ResourceTag/${TagKey} (String). |
+| <code><a href="#@cdk_utils/iam.polly.PollyConditions.property.AWS_TAG_KEYS">AWS_TAG_KEYS</a></code> | <code>string</code> | Condition key: aws:TagKeys (ArrayOfString). |
+| <code><a href="#@cdk_utils/iam.polly.PollyConditions.property.PutLexiconConditionKeys">PutLexiconConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutLexicon action. |
+| <code><a href="#@cdk_utils/iam.polly.PollyConditions.property.TagResourceConditionKeys">TagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TagResource action. |
+| <code><a href="#@cdk_utils/iam.polly.PollyConditions.property.UntagResourceConditionKeys">UntagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UntagResource action. |
+
+---
+
+##### `AWS_REQUEST_TAG`<sup>Required</sup> <a name="AWS_REQUEST_TAG" id="@cdk_utils/iam.polly.PollyConditions.property.AWS_REQUEST_TAG"></a>
+
+```typescript
+public readonly AWS_REQUEST_TAG: string;
+```
+
+- *Type:* string
+
+Condition key: aws:RequestTag/${TagKey} (String).
+
+---
+
+##### `AWS_RESOURCE_TAG`<sup>Required</sup> <a name="AWS_RESOURCE_TAG" id="@cdk_utils/iam.polly.PollyConditions.property.AWS_RESOURCE_TAG"></a>
+
+```typescript
+public readonly AWS_RESOURCE_TAG: string;
+```
+
+- *Type:* string
+
+Condition key: aws:ResourceTag/${TagKey} (String).
+
+---
+
+##### `AWS_TAG_KEYS`<sup>Required</sup> <a name="AWS_TAG_KEYS" id="@cdk_utils/iam.polly.PollyConditions.property.AWS_TAG_KEYS"></a>
+
+```typescript
+public readonly AWS_TAG_KEYS: string;
+```
+
+- *Type:* string
+
+Condition key: aws:TagKeys (ArrayOfString).
+
+---
+
+##### `PutLexiconConditionKeys`<sup>Required</sup> <a name="PutLexiconConditionKeys" id="@cdk_utils/iam.polly.PollyConditions.property.PutLexiconConditionKeys"></a>
+
+```typescript
+public readonly PutLexiconConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the PutLexicon action.
+
+---
+
+##### `TagResourceConditionKeys`<sup>Required</sup> <a name="TagResourceConditionKeys" id="@cdk_utils/iam.polly.PollyConditions.property.TagResourceConditionKeys"></a>
+
+```typescript
+public readonly TagResourceConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the TagResource action.
+
+---
+
+##### `UntagResourceConditionKeys`<sup>Required</sup> <a name="UntagResourceConditionKeys" id="@cdk_utils/iam.polly.PollyConditions.property.UntagResourceConditionKeys"></a>
+
+```typescript
+public readonly UntagResourceConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UntagResource action.
+
+---
+
 ### PollyOperations <a name="PollyOperations" id="@cdk_utils/iam.polly.PollyOperations"></a>
 
 API operation to required IAM actions mapping for polly.
@@ -416,12 +617,15 @@ new polly.PollyOperations()
 | <code><a href="#@cdk_utils/iam.polly.PollyOperations.property.DescribeVoices">DescribeVoices</a></code> | <code>string[]</code> | IAM actions required for the DescribeVoices API call. |
 | <code><a href="#@cdk_utils/iam.polly.PollyOperations.property.ListLexicons">ListLexicons</a></code> | <code>string[]</code> | IAM actions required for the ListLexicons API call. |
 | <code><a href="#@cdk_utils/iam.polly.PollyOperations.property.ListSpeechSynthesisTasks">ListSpeechSynthesisTasks</a></code> | <code>string[]</code> | IAM actions required for the ListSpeechSynthesisTasks API call. |
+| <code><a href="#@cdk_utils/iam.polly.PollyOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
 | <code><a href="#@cdk_utils/iam.polly.PollyOperations.property.opGetLexicon">opGetLexicon</a></code> | <code>string[]</code> | IAM actions required for the GetLexicon API call. |
 | <code><a href="#@cdk_utils/iam.polly.PollyOperations.property.opGetSpeechSynthesisTask">opGetSpeechSynthesisTask</a></code> | <code>string[]</code> | IAM actions required for the GetSpeechSynthesisTask API call. |
 | <code><a href="#@cdk_utils/iam.polly.PollyOperations.property.PutLexicon">PutLexicon</a></code> | <code>string[]</code> | IAM actions required for the PutLexicon API call. |
 | <code><a href="#@cdk_utils/iam.polly.PollyOperations.property.StartSpeechSynthesisStream">StartSpeechSynthesisStream</a></code> | <code>string[]</code> | IAM actions required for the StartSpeechSynthesisStream API call. |
 | <code><a href="#@cdk_utils/iam.polly.PollyOperations.property.StartSpeechSynthesisTask">StartSpeechSynthesisTask</a></code> | <code>string[]</code> | IAM actions required for the StartSpeechSynthesisTask API call. |
 | <code><a href="#@cdk_utils/iam.polly.PollyOperations.property.SynthesizeSpeech">SynthesizeSpeech</a></code> | <code>string[]</code> | IAM actions required for the SynthesizeSpeech API call. |
+| <code><a href="#@cdk_utils/iam.polly.PollyOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
+| <code><a href="#@cdk_utils/iam.polly.PollyOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
 
 ---
 
@@ -470,6 +674,18 @@ public readonly ListSpeechSynthesisTasks: string[];
 - *Type:* string[]
 
 IAM actions required for the ListSpeechSynthesisTasks API call.
+
+---
+
+##### `ListTagsForResource`<sup>Required</sup> <a name="ListTagsForResource" id="@cdk_utils/iam.polly.PollyOperations.property.ListTagsForResource"></a>
+
+```typescript
+public readonly ListTagsForResource: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListTagsForResource API call.
 
 ---
 
@@ -542,6 +758,30 @@ public readonly SynthesizeSpeech: string[];
 - *Type:* string[]
 
 IAM actions required for the SynthesizeSpeech API call.
+
+---
+
+##### `TagResource`<sup>Required</sup> <a name="TagResource" id="@cdk_utils/iam.polly.PollyOperations.property.TagResource"></a>
+
+```typescript
+public readonly TagResource: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the TagResource API call.
+
+---
+
+##### `UntagResource`<sup>Required</sup> <a name="UntagResource" id="@cdk_utils/iam.polly.PollyOperations.property.UntagResource"></a>
+
+```typescript
+public readonly UntagResource: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UntagResource API call.
 
 ---
 

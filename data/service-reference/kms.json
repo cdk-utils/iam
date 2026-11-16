@@ -180,8 +180,8 @@
         }
       ],
       "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
       }
     },
     {
@@ -617,8 +617,8 @@
         }
       ],
       "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
       }
     },
     {
@@ -2280,6 +2280,12 @@
     },
     {
       "Name": "kms:RecipientAttestation:PCR8",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "kms:RecipientAttestation:PCR8:ServiceName",
       "Types": [
         "String"
       ]

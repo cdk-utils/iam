@@ -829,6 +829,9 @@ export class ConnectActions {
 	/** [Write] connect:UpdateNotificationContent */
 	static readonly UpdateNotificationContent =
 		"connect:UpdateNotificationContent";
+	/** [Write] connect:UpdateOutboundEmailContactMessage */
+	static readonly UpdateOutboundEmailContactMessage =
+		"connect:UpdateOutboundEmailContactMessage";
 	/** [Write] connect:UpdateParticipantAuthentication */
 	static readonly UpdateParticipantAuthentication =
 		"connect:UpdateParticipantAuthentication";
@@ -1204,6 +1207,7 @@ export class ConnectActions {
 		ConnectActions.UpdateMetricContent,
 		ConnectActions.UpdateMetricMetadata,
 		ConnectActions.UpdateNotificationContent,
+		ConnectActions.UpdateOutboundEmailContactMessage,
 		ConnectActions.UpdateParticipantAuthentication,
 		ConnectActions.UpdateParticipantRoleConfig,
 		ConnectActions.UpdatePhoneNumber,
@@ -5639,7 +5643,9 @@ export class ConnectOperations {
 		"connect:UpdateNotificationContent",
 	];
 	/** IAM actions required for the UpdateOutboundEmailContactMessage API call. */
-	static readonly UpdateOutboundEmailContactMessage: string[] = [];
+	static readonly UpdateOutboundEmailContactMessage: string[] = [
+		"connect:UpdateOutboundEmailContactMessage",
+	];
 	/** IAM actions required for the UpdateParticipantAuthentication API call. */
 	static readonly UpdateParticipantAuthentication: string[] = [
 		"connect:UpdateParticipantAuthentication",
@@ -7423,6 +7429,14 @@ export class ConnectConditions {
 	static readonly UpdateNotificationContentConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"connect:InstanceId",
+	];
+	/** Condition keys applicable to the UpdateOutboundEmailContactMessage action. */
+	static readonly UpdateOutboundEmailContactMessageConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"connect:Channel",
+		"connect:ContactAssociationId",
+		"connect:InstanceId",
+		"connect:UserArn",
 	];
 	/** Condition keys applicable to the UpdateParticipantAuthentication action. */
 	static readonly UpdateParticipantAuthenticationConditionKeys: string[] = [

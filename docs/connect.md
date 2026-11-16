@@ -8006,6 +8006,7 @@ new connect.ConnectActions()
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.UpdateMetricContent">UpdateMetricContent</a></code> | <code>string</code> | [Write] connect:UpdateMetricContent. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.UpdateMetricMetadata">UpdateMetricMetadata</a></code> | <code>string</code> | [Write] connect:UpdateMetricMetadata. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.UpdateNotificationContent">UpdateNotificationContent</a></code> | <code>string</code> | [Write] connect:UpdateNotificationContent. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.UpdateOutboundEmailContactMessage">UpdateOutboundEmailContactMessage</a></code> | <code>string</code> | [Write] connect:UpdateOutboundEmailContactMessage. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.UpdateParticipantAuthentication">UpdateParticipantAuthentication</a></code> | <code>string</code> | [Write] connect:UpdateParticipantAuthentication. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.UpdateParticipantRoleConfig">UpdateParticipantRoleConfig</a></code> | <code>string</code> | [Write] connect:UpdateParticipantRoleConfig. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.UpdatePhoneNumber">UpdatePhoneNumber</a></code> | <code>string</code> | [Write] connect:UpdatePhoneNumber. |
@@ -12307,6 +12308,18 @@ public readonly UpdateNotificationContent: string;
 
 ---
 
+##### `UpdateOutboundEmailContactMessage`<sup>Required</sup> <a name="UpdateOutboundEmailContactMessage" id="@cdk_utils/iam.connect.ConnectActions.property.UpdateOutboundEmailContactMessage"></a>
+
+```typescript
+public readonly UpdateOutboundEmailContactMessage: string;
+```
+
+- *Type:* string
+
+[Write] connect:UpdateOutboundEmailContactMessage.
+
+---
+
 ##### `UpdateParticipantAuthentication`<sup>Required</sup> <a name="UpdateParticipantAuthentication" id="@cdk_utils/iam.connect.ConnectActions.property.UpdateParticipantAuthentication"></a>
 
 ```typescript
@@ -13502,6 +13515,7 @@ Generates a condition block for `connect:UserArn`.
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.UpdateMetricContentConditionKeys">UpdateMetricContentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateMetricContent action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.UpdateMetricMetadataConditionKeys">UpdateMetricMetadataConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateMetricMetadata action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.UpdateNotificationContentConditionKeys">UpdateNotificationContentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateNotificationContent action. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.UpdateOutboundEmailContactMessageConditionKeys">UpdateOutboundEmailContactMessageConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateOutboundEmailContactMessage action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.UpdateParticipantAuthenticationConditionKeys">UpdateParticipantAuthenticationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateParticipantAuthentication action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.UpdateParticipantRoleConfigConditionKeys">UpdateParticipantRoleConfigConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateParticipantRoleConfig action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.UpdatePhoneNumberConditionKeys">UpdatePhoneNumberConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdatePhoneNumber action. |
@@ -17765,6 +17779,18 @@ public readonly UpdateNotificationContentConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the UpdateNotificationContent action.
+
+---
+
+##### `UpdateOutboundEmailContactMessageConditionKeys`<sup>Required</sup> <a name="UpdateOutboundEmailContactMessageConditionKeys" id="@cdk_utils/iam.connect.ConnectConditions.property.UpdateOutboundEmailContactMessageConditionKeys"></a>
+
+```typescript
+public readonly UpdateOutboundEmailContactMessageConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UpdateOutboundEmailContactMessage action.
 
 ---
 

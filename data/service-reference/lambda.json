@@ -1571,7 +1571,7 @@
         }
       ],
       "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
+        "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": false
       }
     },
@@ -3342,6 +3342,42 @@
       ]
     },
     {
+      "Name": "CreateRuntime",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "lambda"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "lambda-core",
+          "Method": "create_runtime",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRuntimeAlias",
+      "SDK": [
+        {
+          "Name": "lambda-core",
+          "Method": "create_runtime_alias",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRuntimeVersion",
+      "SDK": [
+        {
+          "Name": "lambda-core",
+          "Method": "create_runtime_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "CreateWebFunction",
       "AuthorizedActions": [
         {
@@ -3664,6 +3700,36 @@
         {
           "Name": "lambda-web",
           "Method": "delete_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRuntime",
+      "SDK": [
+        {
+          "Name": "lambda-core",
+          "Method": "delete_runtime",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRuntimeAlias",
+      "SDK": [
+        {
+          "Name": "lambda-core",
+          "Method": "delete_runtime_alias",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRuntimeVersion",
+      "SDK": [
+        {
+          "Name": "lambda-core",
+          "Method": "delete_runtime_version",
           "Package": "Boto3"
         }
       ]
@@ -4172,6 +4238,26 @@
       ]
     },
     {
+      "Name": "GetRuntime",
+      "SDK": [
+        {
+          "Name": "lambda-core",
+          "Method": "get_runtime",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRuntimeAlias",
+      "SDK": [
+        {
+          "Name": "lambda-core",
+          "Method": "get_runtime_alias",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetRuntimeManagementConfig",
       "AuthorizedActions": [
         {
@@ -4183,6 +4269,16 @@
         {
           "Name": "lambda",
           "Method": "get_runtime_management_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRuntimeVersion",
+      "SDK": [
+        {
+          "Name": "lambda-core",
+          "Method": "get_runtime_version",
           "Package": "Boto3"
         }
       ]
@@ -4646,6 +4742,36 @@
       ]
     },
     {
+      "Name": "ListRuntimeAliases",
+      "SDK": [
+        {
+          "Name": "lambda-core",
+          "Method": "list_runtime_aliases",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRuntimeVersions",
+      "SDK": [
+        {
+          "Name": "lambda-core",
+          "Method": "list_runtime_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRuntimes",
+      "SDK": [
+        {
+          "Name": "lambda-core",
+          "Method": "list_runtimes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListTags",
       "AuthorizedActions": [
         {
@@ -4946,6 +5072,16 @@
         {
           "Name": "lambda",
           "Method": "remove_permission",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RestoreRuntime",
+      "SDK": [
+        {
+          "Name": "lambda-core",
+          "Method": "restore_runtime",
           "Package": "Boto3"
         }
       ]
@@ -5354,6 +5490,36 @@
         {
           "Name": "lambda-core",
           "Method": "update_network_connector",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRuntime",
+      "SDK": [
+        {
+          "Name": "lambda-core",
+          "Method": "update_runtime",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRuntimeAlias",
+      "SDK": [
+        {
+          "Name": "lambda-core",
+          "Method": "update_runtime_alias",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRuntimeVersion",
+      "SDK": [
+        {
+          "Name": "lambda-core",
+          "Method": "update_runtime_version",
           "Package": "Boto3"
         }
       ]

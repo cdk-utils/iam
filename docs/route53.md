@@ -1373,6 +1373,7 @@ new route53.Route53Actions()
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.actionGetHostedZone">actionGetHostedZone</a></code> | <code>string</code> | [List] route53:GetHostedZone. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.actionGetHostedZoneCount">actionGetHostedZoneCount</a></code> | <code>string</code> | [List] route53:GetHostedZoneCount. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.actionGetHostedZoneLimit">actionGetHostedZoneLimit</a></code> | <code>string</code> | [Read] route53:GetHostedZoneLimit. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.actionGetIpGuardrailPolicy">actionGetIpGuardrailPolicy</a></code> | <code>string</code> | [Read] route53:GetIpGuardrailPolicy. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.actionGetQueryLoggingConfig">actionGetQueryLoggingConfig</a></code> | <code>string</code> | [Read] route53:GetQueryLoggingConfig. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.actionGetReusableDelegationSet">actionGetReusableDelegationSet</a></code> | <code>string</code> | [List] route53:GetReusableDelegationSet. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.actionGetReusableDelegationSetLimit">actionGetReusableDelegationSetLimit</a></code> | <code>string</code> | [Read] route53:GetReusableDelegationSetLimit. |
@@ -1392,8 +1393,10 @@ new route53.Route53Actions()
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.CreateCidrCollection">CreateCidrCollection</a></code> | <code>string</code> | [Write] route53:CreateCidrCollection. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.CreateHealthCheck">CreateHealthCheck</a></code> | <code>string</code> | [Write] route53:CreateHealthCheck. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.CreateHostedZone">CreateHostedZone</a></code> | <code>string</code> | [Write] route53:CreateHostedZone. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.CreateIpGuardrailPolicy">CreateIpGuardrailPolicy</a></code> | <code>string</code> | [Write] route53:CreateIpGuardrailPolicy. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.CreateKeySigningKey">CreateKeySigningKey</a></code> | <code>string</code> | [Write] route53:CreateKeySigningKey. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.CreateQueryLoggingConfig">CreateQueryLoggingConfig</a></code> | <code>string</code> | [Write] route53:CreateQueryLoggingConfig. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.CreateResourceRecordSetProtections">CreateResourceRecordSetProtections</a></code> | <code>string</code> | [Write] route53:CreateResourceRecordSetProtections. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.CreateReusableDelegationSet">CreateReusableDelegationSet</a></code> | <code>string</code> | [Write] route53:CreateReusableDelegationSet. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.CreateTrafficPolicy">CreateTrafficPolicy</a></code> | <code>string</code> | [Write] route53:CreateTrafficPolicy. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.CreateTrafficPolicyInstance">CreateTrafficPolicyInstance</a></code> | <code>string</code> | [Write] route53:CreateTrafficPolicyInstance. |
@@ -1403,8 +1406,10 @@ new route53.Route53Actions()
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.DeleteCidrCollection">DeleteCidrCollection</a></code> | <code>string</code> | [Write] route53:DeleteCidrCollection. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.DeleteHealthCheck">DeleteHealthCheck</a></code> | <code>string</code> | [Write] route53:DeleteHealthCheck. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.DeleteHostedZone">DeleteHostedZone</a></code> | <code>string</code> | [Write] route53:DeleteHostedZone. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.DeleteIpGuardrailPolicy">DeleteIpGuardrailPolicy</a></code> | <code>string</code> | [Write] route53:DeleteIpGuardrailPolicy. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.DeleteKeySigningKey">DeleteKeySigningKey</a></code> | <code>string</code> | [Write] route53:DeleteKeySigningKey. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.DeleteQueryLoggingConfig">DeleteQueryLoggingConfig</a></code> | <code>string</code> | [Write] route53:DeleteQueryLoggingConfig. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.DeleteResourceRecordSetProtections">DeleteResourceRecordSetProtections</a></code> | <code>string</code> | [Write] route53:DeleteResourceRecordSetProtections. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.DeleteReusableDelegationSet">DeleteReusableDelegationSet</a></code> | <code>string</code> | [Write] route53:DeleteReusableDelegationSet. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.DeleteTrafficPolicy">DeleteTrafficPolicy</a></code> | <code>string</code> | [Write] route53:DeleteTrafficPolicy. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.DeleteTrafficPolicyInstance">DeleteTrafficPolicyInstance</a></code> | <code>string</code> | [Write] route53:DeleteTrafficPolicyInstance. |
@@ -1420,7 +1425,9 @@ new route53.Route53Actions()
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.ListHostedZones">ListHostedZones</a></code> | <code>string</code> | [List] route53:ListHostedZones. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.ListHostedZonesByName">ListHostedZonesByName</a></code> | <code>string</code> | [List] route53:ListHostedZonesByName. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.ListHostedZonesByVPC">ListHostedZonesByVPC</a></code> | <code>string</code> | [List] route53:ListHostedZonesByVPC. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.ListIpGuardrailPolicies">ListIpGuardrailPolicies</a></code> | <code>string</code> | [List] route53:ListIpGuardrailPolicies. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.ListQueryLoggingConfigs">ListQueryLoggingConfigs</a></code> | <code>string</code> | [List] route53:ListQueryLoggingConfigs. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.ListResourceRecordSetProtections">ListResourceRecordSetProtections</a></code> | <code>string</code> | [List] route53:ListResourceRecordSetProtections. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.ListResourceRecordSets">ListResourceRecordSets</a></code> | <code>string</code> | [List] route53:ListResourceRecordSets. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.ListReusableDelegationSets">ListReusableDelegationSets</a></code> | <code>string</code> | [Read] route53:ListReusableDelegationSets. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [Read] route53:ListTagsForResource. |
@@ -1436,6 +1443,7 @@ new route53.Route53Actions()
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.UpdateHealthCheck">UpdateHealthCheck</a></code> | <code>string</code> | [Write] route53:UpdateHealthCheck. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.UpdateHostedZoneComment">UpdateHostedZoneComment</a></code> | <code>string</code> | [Write] route53:UpdateHostedZoneComment. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.UpdateHostedZoneFeatures">UpdateHostedZoneFeatures</a></code> | <code>string</code> | [Write] route53:UpdateHostedZoneFeatures. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.UpdateIpGuardrailPolicy">UpdateIpGuardrailPolicy</a></code> | <code>string</code> | [Write] route53:UpdateIpGuardrailPolicy. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.UpdateTrafficPolicyComment">UpdateTrafficPolicyComment</a></code> | <code>string</code> | [Write] route53:UpdateTrafficPolicyComment. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.UpdateTrafficPolicyInstance">UpdateTrafficPolicyInstance</a></code> | <code>string</code> | [Write] route53:UpdateTrafficPolicyInstance. |
 
@@ -1582,6 +1590,18 @@ public readonly actionGetHostedZoneLimit: string;
 - *Type:* string
 
 [Read] route53:GetHostedZoneLimit.
+
+---
+
+##### `actionGetIpGuardrailPolicy`<sup>Required</sup> <a name="actionGetIpGuardrailPolicy" id="@cdk_utils/iam.route53.Route53Actions.property.actionGetIpGuardrailPolicy"></a>
+
+```typescript
+public readonly actionGetIpGuardrailPolicy: string;
+```
+
+- *Type:* string
+
+[Read] route53:GetIpGuardrailPolicy.
 
 ---
 
@@ -1813,6 +1833,18 @@ public readonly CreateHostedZone: string;
 
 ---
 
+##### `CreateIpGuardrailPolicy`<sup>Required</sup> <a name="CreateIpGuardrailPolicy" id="@cdk_utils/iam.route53.Route53Actions.property.CreateIpGuardrailPolicy"></a>
+
+```typescript
+public readonly CreateIpGuardrailPolicy: string;
+```
+
+- *Type:* string
+
+[Write] route53:CreateIpGuardrailPolicy.
+
+---
+
 ##### `CreateKeySigningKey`<sup>Required</sup> <a name="CreateKeySigningKey" id="@cdk_utils/iam.route53.Route53Actions.property.CreateKeySigningKey"></a>
 
 ```typescript
@@ -1834,6 +1866,18 @@ public readonly CreateQueryLoggingConfig: string;
 - *Type:* string
 
 [Write] route53:CreateQueryLoggingConfig.
+
+---
+
+##### `CreateResourceRecordSetProtections`<sup>Required</sup> <a name="CreateResourceRecordSetProtections" id="@cdk_utils/iam.route53.Route53Actions.property.CreateResourceRecordSetProtections"></a>
+
+```typescript
+public readonly CreateResourceRecordSetProtections: string;
+```
+
+- *Type:* string
+
+[Write] route53:CreateResourceRecordSetProtections.
 
 ---
 
@@ -1945,6 +1989,18 @@ public readonly DeleteHostedZone: string;
 
 ---
 
+##### `DeleteIpGuardrailPolicy`<sup>Required</sup> <a name="DeleteIpGuardrailPolicy" id="@cdk_utils/iam.route53.Route53Actions.property.DeleteIpGuardrailPolicy"></a>
+
+```typescript
+public readonly DeleteIpGuardrailPolicy: string;
+```
+
+- *Type:* string
+
+[Write] route53:DeleteIpGuardrailPolicy.
+
+---
+
 ##### `DeleteKeySigningKey`<sup>Required</sup> <a name="DeleteKeySigningKey" id="@cdk_utils/iam.route53.Route53Actions.property.DeleteKeySigningKey"></a>
 
 ```typescript
@@ -1966,6 +2022,18 @@ public readonly DeleteQueryLoggingConfig: string;
 - *Type:* string
 
 [Write] route53:DeleteQueryLoggingConfig.
+
+---
+
+##### `DeleteResourceRecordSetProtections`<sup>Required</sup> <a name="DeleteResourceRecordSetProtections" id="@cdk_utils/iam.route53.Route53Actions.property.DeleteResourceRecordSetProtections"></a>
+
+```typescript
+public readonly DeleteResourceRecordSetProtections: string;
+```
+
+- *Type:* string
+
+[Write] route53:DeleteResourceRecordSetProtections.
 
 ---
 
@@ -2149,6 +2217,18 @@ public readonly ListHostedZonesByVPC: string;
 
 ---
 
+##### `ListIpGuardrailPolicies`<sup>Required</sup> <a name="ListIpGuardrailPolicies" id="@cdk_utils/iam.route53.Route53Actions.property.ListIpGuardrailPolicies"></a>
+
+```typescript
+public readonly ListIpGuardrailPolicies: string;
+```
+
+- *Type:* string
+
+[List] route53:ListIpGuardrailPolicies.
+
+---
+
 ##### `ListQueryLoggingConfigs`<sup>Required</sup> <a name="ListQueryLoggingConfigs" id="@cdk_utils/iam.route53.Route53Actions.property.ListQueryLoggingConfigs"></a>
 
 ```typescript
@@ -2158,6 +2238,18 @@ public readonly ListQueryLoggingConfigs: string;
 - *Type:* string
 
 [List] route53:ListQueryLoggingConfigs.
+
+---
+
+##### `ListResourceRecordSetProtections`<sup>Required</sup> <a name="ListResourceRecordSetProtections" id="@cdk_utils/iam.route53.Route53Actions.property.ListResourceRecordSetProtections"></a>
+
+```typescript
+public readonly ListResourceRecordSetProtections: string;
+```
+
+- *Type:* string
+
+[List] route53:ListResourceRecordSetProtections.
 
 ---
 
@@ -2338,6 +2430,18 @@ public readonly UpdateHostedZoneFeatures: string;
 - *Type:* string
 
 [Write] route53:UpdateHostedZoneFeatures.
+
+---
+
+##### `UpdateIpGuardrailPolicy`<sup>Required</sup> <a name="UpdateIpGuardrailPolicy" id="@cdk_utils/iam.route53.Route53Actions.property.UpdateIpGuardrailPolicy"></a>
+
+```typescript
+public readonly UpdateIpGuardrailPolicy: string;
+```
+
+- *Type:* string
+
+[Write] route53:UpdateIpGuardrailPolicy.
 
 ---
 
@@ -2643,6 +2747,7 @@ new route53.Route53Operations()
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.CreateHostedZone">CreateHostedZone</a></code> | <code>string[]</code> | IAM actions required for the CreateHostedZone API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.CreateKeySigningKey">CreateKeySigningKey</a></code> | <code>string[]</code> | IAM actions required for the CreateKeySigningKey API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.CreateQueryLoggingConfig">CreateQueryLoggingConfig</a></code> | <code>string[]</code> | IAM actions required for the CreateQueryLoggingConfig API call. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.CreateResourceRecordSetProtections">CreateResourceRecordSetProtections</a></code> | <code>string[]</code> | IAM actions required for the CreateResourceRecordSetProtections API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.CreateReusableDelegationSet">CreateReusableDelegationSet</a></code> | <code>string[]</code> | IAM actions required for the CreateReusableDelegationSet API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.CreateTrafficPolicy">CreateTrafficPolicy</a></code> | <code>string[]</code> | IAM actions required for the CreateTrafficPolicy API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.CreateTrafficPolicyInstance">CreateTrafficPolicyInstance</a></code> | <code>string[]</code> | IAM actions required for the CreateTrafficPolicyInstance API call. |
@@ -2654,6 +2759,7 @@ new route53.Route53Operations()
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.DeleteHostedZone">DeleteHostedZone</a></code> | <code>string[]</code> | IAM actions required for the DeleteHostedZone API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.DeleteKeySigningKey">DeleteKeySigningKey</a></code> | <code>string[]</code> | IAM actions required for the DeleteKeySigningKey API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.DeleteQueryLoggingConfig">DeleteQueryLoggingConfig</a></code> | <code>string[]</code> | IAM actions required for the DeleteQueryLoggingConfig API call. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.DeleteResourceRecordSetProtections">DeleteResourceRecordSetProtections</a></code> | <code>string[]</code> | IAM actions required for the DeleteResourceRecordSetProtections API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.DeleteReusableDelegationSet">DeleteReusableDelegationSet</a></code> | <code>string[]</code> | IAM actions required for the DeleteReusableDelegationSet API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.DeleteTrafficPolicy">DeleteTrafficPolicy</a></code> | <code>string[]</code> | IAM actions required for the DeleteTrafficPolicy API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.DeleteTrafficPolicyInstance">DeleteTrafficPolicyInstance</a></code> | <code>string[]</code> | IAM actions required for the DeleteTrafficPolicyInstance API call. |
@@ -2670,6 +2776,7 @@ new route53.Route53Operations()
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.ListHostedZonesByName">ListHostedZonesByName</a></code> | <code>string[]</code> | IAM actions required for the ListHostedZonesByName API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.ListHostedZonesByVPC">ListHostedZonesByVPC</a></code> | <code>string[]</code> | IAM actions required for the ListHostedZonesByVPC API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.ListQueryLoggingConfigs">ListQueryLoggingConfigs</a></code> | <code>string[]</code> | IAM actions required for the ListQueryLoggingConfigs API call. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.ListResourceRecordSetProtections">ListResourceRecordSetProtections</a></code> | <code>string[]</code> | IAM actions required for the ListResourceRecordSetProtections API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.ListResourceRecordSets">ListResourceRecordSets</a></code> | <code>string[]</code> | IAM actions required for the ListResourceRecordSets API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.ListReusableDelegationSets">ListReusableDelegationSets</a></code> | <code>string[]</code> | IAM actions required for the ListReusableDelegationSets API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
@@ -2827,6 +2934,18 @@ IAM actions required for the CreateQueryLoggingConfig API call.
 
 ---
 
+##### `CreateResourceRecordSetProtections`<sup>Required</sup> <a name="CreateResourceRecordSetProtections" id="@cdk_utils/iam.route53.Route53Operations.property.CreateResourceRecordSetProtections"></a>
+
+```typescript
+public readonly CreateResourceRecordSetProtections: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateResourceRecordSetProtections API call.
+
+---
+
 ##### `CreateReusableDelegationSet`<sup>Required</sup> <a name="CreateReusableDelegationSet" id="@cdk_utils/iam.route53.Route53Operations.property.CreateReusableDelegationSet"></a>
 
 ```typescript
@@ -2956,6 +3075,18 @@ public readonly DeleteQueryLoggingConfig: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteQueryLoggingConfig API call.
+
+---
+
+##### `DeleteResourceRecordSetProtections`<sup>Required</sup> <a name="DeleteResourceRecordSetProtections" id="@cdk_utils/iam.route53.Route53Operations.property.DeleteResourceRecordSetProtections"></a>
+
+```typescript
+public readonly DeleteResourceRecordSetProtections: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteResourceRecordSetProtections API call.
 
 ---
 
@@ -3148,6 +3279,18 @@ public readonly ListQueryLoggingConfigs: string[];
 - *Type:* string[]
 
 IAM actions required for the ListQueryLoggingConfigs API call.
+
+---
+
+##### `ListResourceRecordSetProtections`<sup>Required</sup> <a name="ListResourceRecordSetProtections" id="@cdk_utils/iam.route53.Route53Operations.property.ListResourceRecordSetProtections"></a>
+
+```typescript
+public readonly ListResourceRecordSetProtections: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListResourceRecordSetProtections API call.
 
 ---
 

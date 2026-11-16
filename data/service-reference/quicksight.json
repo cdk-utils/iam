@@ -33,6 +33,21 @@
       }
     },
     {
+      "Name": "AuthorizeOAuthAccess",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "BatchCreateTopicReviewedAnswer",
       "ActionConditionKeys": [
         "aws:RequestTag/${TagKey}",
@@ -172,6 +187,50 @@
       "Resources": [
         {
           "Name": "ingestion"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateAccessControlApplication",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "accessControlApplication"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateAccessControlApplicationSecret",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "accessControlApplication"
         }
       ],
       "SupportedBy": {
@@ -687,6 +746,30 @@
       }
     },
     {
+      "Name": "CreateInboundConnector",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "inboundConnector"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "CreateIngestion",
       "ActionConditionKeys": [
         "aws:RequestTag/${TagKey}",
@@ -794,6 +877,21 @@
       "Annotations": {
         "Properties": {
           "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateOAuthToken",
+      "Annotations": {
+        "Properties": {
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1067,6 +1165,46 @@
           "IsWrite": true
         }
       },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteAccessControlApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "accessControlApplication"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteAccessControlApplicationSecret",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "accessControlApplication"
+        }
+      ],
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -1632,6 +1770,26 @@
       }
     },
     {
+      "Name": "DeleteInboundConnector",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "inboundConnector"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "DeleteKnowledgeBase",
       "Annotations": {
         "Properties": {
@@ -2007,6 +2165,26 @@
       "Resources": [
         {
           "Name": "vpcconnection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeAccessControlApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "accessControlApplication"
         }
       ],
       "SupportedBy": {
@@ -2943,6 +3121,26 @@
       }
     },
     {
+      "Name": "DescribeInboundConnector",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "inboundConnector"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "DescribeIngestion",
       "ActionConditionKeys": [
         "aws:RequestTag/${TagKey}",
@@ -3171,6 +3369,21 @@
           "Name": "refreshschedule"
         }
       ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeResourcePermissions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -3763,6 +3976,21 @@
       }
     },
     {
+      "Name": "ListAccessControlApplications",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ListActionConnectors",
       "Annotations": {
         "Properties": {
@@ -4307,6 +4535,41 @@
       }
     },
     {
+      "Name": "ListInboundConnectorApplicationAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "inboundConnector"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListInboundConnectors",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ListIngestions",
       "ActionConditionKeys": [
         "aws:RequestTag/${TagKey}",
@@ -4517,6 +4780,9 @@
       },
       "Resources": [
         {
+          "Name": "accessControlApplication"
+        },
+        {
           "Name": "actionconnector"
         },
         {
@@ -4554,6 +4820,9 @@
         },
         {
           "Name": "folder"
+        },
+        {
+          "Name": "inboundConnector"
         },
         {
           "Name": "namespace"
@@ -5054,6 +5323,21 @@
           "Name": "analysis"
         }
       ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RevokeOAuthToken",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -5565,6 +5849,9 @@
       },
       "Resources": [
         {
+          "Name": "accessControlApplication"
+        },
+        {
           "Name": "actionconnector"
         },
         {
@@ -5602,6 +5889,9 @@
         },
         {
           "Name": "folder"
+        },
+        {
+          "Name": "inboundConnector"
         },
         {
           "Name": "ingestion"
@@ -5685,6 +5975,9 @@
       },
       "Resources": [
         {
+          "Name": "accessControlApplication"
+        },
+        {
           "Name": "actionconnector"
         },
         {
@@ -5724,6 +6017,9 @@
           "Name": "folder"
         },
         {
+          "Name": "inboundConnector"
+        },
+        {
           "Name": "ingestion"
         },
         {
@@ -5746,6 +6042,46 @@
         },
         {
           "Name": "vpcconnection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAccessControlApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "accessControlApplication"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAccessControlApplicationSecret",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "accessControlApplication"
         }
       ],
       "SupportedBy": {
@@ -6547,6 +6883,46 @@
       }
     },
     {
+      "Name": "UpdateInboundConnector",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "inboundConnector"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateInboundConnectorApplicationAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "inboundConnector"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "UpdateIpRestriction",
       "Annotations": {
         "Properties": {
@@ -6754,6 +7130,7 @@
       "Name": "UpdateResourcePermissions",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -9651,6 +10028,16 @@
       ]
     },
     {
+      "Name": "DescribeResourcePermissions",
+      "SDK": [
+        {
+          "Name": "quicksight",
+          "Method": "describe_resource_permissions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DescribeRoleCustomPermission",
       "AuthorizedActions": [
         {
@@ -12049,6 +12436,31 @@
       ]
     },
     {
+      "Name": "UpdateResourcePermissions",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "quicksight.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateResourcePermissions",
+          "Service": "quicksight"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "quicksight",
+          "Method": "update_resource_permissions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "UpdateRoleCustomPermission",
       "AuthorizedActions": [
         {
@@ -12416,6 +12828,15 @@
   ],
   "Resources": [
     {
+      "Name": "accessControlApplication",
+      "ARNFormats": [
+        "arn:${Partition}:quicksight:${Region}:${Account}:access-control-application/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
       "Name": "account",
       "ARNFormats": [
         "arn:${Partition}:quicksight:${Region}:${Account}:account/${ResourceId}"
@@ -12611,6 +13032,15 @@
       "Name": "group",
       "ARNFormats": [
         "arn:${Partition}:quicksight:${Region}:${Account}:group/${ResourceId}"
+      ]
+    },
+    {
+      "Name": "inboundConnector",
+      "ARNFormats": [
+        "arn:${Partition}:quicksight:${Region}:${Account}:inbound-connector/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
       ]
     },
     {

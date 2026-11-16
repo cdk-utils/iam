@@ -2609,6 +2609,178 @@ Defaults to "aws".
 
 ---
 
+### AWSMarketplaceSellerDatasetArnComponents <a name="AWSMarketplaceSellerDatasetArnComponents" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnComponents"></a>
+
+Parsed components of a SellerDataset ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnComponents.Initializer"></a>
+
+```typescript
+import { aws_marketplace } from '@cdk_utils/iam'
+
+const aWSMarketplaceSellerDatasetArnComponents: aws_marketplace.AWSMarketplaceSellerDatasetArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnComponents.property.catalog">catalog</a></code> | <code>string</code> | The Catalog component. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnComponents.property.datasetName">datasetName</a></code> | <code>string</code> | The DatasetName component. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnComponents.property.factTable">factTable</a></code> | <code>string</code> | The FactTable component. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `catalog`<sup>Required</sup> <a name="catalog" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnComponents.property.catalog"></a>
+
+```typescript
+public readonly catalog: string;
+```
+
+- *Type:* string
+
+The Catalog component.
+
+---
+
+##### `datasetName`<sup>Required</sup> <a name="datasetName" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnComponents.property.datasetName"></a>
+
+```typescript
+public readonly datasetName: string;
+```
+
+- *Type:* string
+
+The DatasetName component.
+
+---
+
+##### `factTable`<sup>Required</sup> <a name="factTable" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnComponents.property.factTable"></a>
+
+```typescript
+public readonly factTable: string;
+```
+
+- *Type:* string
+
+The FactTable component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+### AWSMarketplaceSellerDatasetArnProps <a name="AWSMarketplaceSellerDatasetArnProps" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnProps"></a>
+
+Properties for building a SellerDataset ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnProps.Initializer"></a>
+
+```typescript
+import { aws_marketplace } from '@cdk_utils/iam'
+
+const aWSMarketplaceSellerDatasetArnProps: aws_marketplace.AWSMarketplaceSellerDatasetArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnProps.property.catalog">catalog</a></code> | <code>string</code> | The Catalog component of the ARN. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnProps.property.datasetName">datasetName</a></code> | <code>string</code> | The DatasetName component of the ARN. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnProps.property.factTable">factTable</a></code> | <code>string</code> | The FactTable component of the ARN. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+
+---
+
+##### `catalog`<sup>Required</sup> <a name="catalog" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnProps.property.catalog"></a>
+
+```typescript
+public readonly catalog: string;
+```
+
+- *Type:* string
+
+The Catalog component of the ARN.
+
+---
+
+##### `datasetName`<sup>Required</sup> <a name="datasetName" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnProps.property.datasetName"></a>
+
+```typescript
+public readonly datasetName: string;
+```
+
+- *Type:* string
+
+The DatasetName component of the ARN.
+
+---
+
+##### `factTable`<sup>Required</sup> <a name="factTable" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnProps.property.factTable"></a>
+
+```typescript
+public readonly factTable: string;
+```
+
+- *Type:* string
+
+The FactTable component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
 ### AWSMarketplaceTaxComplianceProfileArnComponents <a name="AWSMarketplaceTaxComplianceProfileArnComponents" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceTaxComplianceProfileArnComponents"></a>
 
 Parsed components of a TaxComplianceProfile ARN.
@@ -3127,6 +3299,7 @@ new aws_marketplace.AWSMarketplaceActions()
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.actionGetProduct">actionGetProduct</a></code> | <code>string</code> | [Read] aws-marketplace:GetProduct. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.actionGetResourcePolicy">actionGetResourcePolicy</a></code> | <code>string</code> | [Read] aws-marketplace:GetResourcePolicy. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.actionGetSellerDashboard">actionGetSellerDashboard</a></code> | <code>string</code> | [Read] aws-marketplace:GetSellerDashboard. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.actionGetSellerReportingData">actionGetSellerReportingData</a></code> | <code>string</code> | [Read] aws-marketplace:GetSellerReportingData. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.actionGetTaxComplianceProfile">actionGetTaxComplianceProfile</a></code> | <code>string</code> | [Read] aws-marketplace:GetTaxComplianceProfile. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.actionGetVerification">actionGetVerification</a></code> | <code>string</code> | [Read] aws-marketplace:GetVerification. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.actionGetVerificationEvidence">actionGetVerificationEvidence</a></code> | <code>string</code> | [Read] aws-marketplace:GetVerificationEvidence. |
@@ -3471,6 +3644,18 @@ public readonly actionGetSellerDashboard: string;
 - *Type:* string
 
 [Read] aws-marketplace:GetSellerDashboard.
+
+---
+
+##### `actionGetSellerReportingData`<sup>Required</sup> <a name="actionGetSellerReportingData" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.actionGetSellerReportingData"></a>
+
+```typescript
+public readonly actionGetSellerReportingData: string;
+```
+
+- *Type:* string
+
+[Read] aws-marketplace:GetSellerReportingData.
 
 ---
 
@@ -5989,6 +6174,7 @@ new aws_marketplace.AWSMarketplaceResources()
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.isValidProductArn">isValidProductArn</a></code> | Validates whether a string is a valid ARN for the Product resource. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.isValidPurchaseOptionArn">isValidPurchaseOptionArn</a></code> | Validates whether a string is a valid ARN for the PurchaseOption resource. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.isValidSellerDashboardArn">isValidSellerDashboardArn</a></code> | Validates whether a string is a valid ARN for the SellerDashboard resource. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.isValidSellerDatasetArn">isValidSellerDatasetArn</a></code> | Validates whether a string is a valid ARN for the SellerDataset resource. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.isValidTaxComplianceProfileArn">isValidTaxComplianceProfileArn</a></code> | Validates whether a string is a valid ARN for the TaxComplianceProfile resource. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.isValidTaxComplianceProfileChangeTaskArn">isValidTaxComplianceProfileChangeTaskArn</a></code> | Validates whether a string is a valid ARN for the TaxComplianceProfileChangeTask resource. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.isValidVerificationEvidenceArn">isValidVerificationEvidenceArn</a></code> | Validates whether a string is a valid ARN for the VerificationEvidence resource. |
@@ -6010,12 +6196,14 @@ new aws_marketplace.AWSMarketplaceResources()
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.parseProductArn">parseProductArn</a></code> | Parses a Product ARN into its components. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.parsePurchaseOptionArn">parsePurchaseOptionArn</a></code> | Parses a PurchaseOption ARN into its components. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.parseSellerDashboardArn">parseSellerDashboardArn</a></code> | Parses a SellerDashboard ARN into its components. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.parseSellerDatasetArn">parseSellerDatasetArn</a></code> | Parses a SellerDataset ARN into its components. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.parseTaxComplianceProfileArn">parseTaxComplianceProfileArn</a></code> | Parses a TaxComplianceProfile ARN into its components. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.parseTaxComplianceProfileChangeTaskArn">parseTaxComplianceProfileChangeTaskArn</a></code> | Parses a TaxComplianceProfileChangeTask ARN into its components. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.parseVerificationEvidenceArn">parseVerificationEvidenceArn</a></code> | Parses a VerificationEvidence ARN into its components. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.product">product</a></code> | Builds an ARN for the Product resource. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.purchaseOption">purchaseOption</a></code> | Builds an ARN for the PurchaseOption resource. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.sellerDashboard">sellerDashboard</a></code> | Builds an ARN for the SellerDashboard resource. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.sellerDataset">sellerDataset</a></code> | Builds an ARN for the SellerDataset resource. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.taxComplianceProfile">taxComplianceProfile</a></code> | Builds an ARN for the TaxComplianceProfile resource. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.taxComplianceProfileChangeTask">taxComplianceProfileChangeTask</a></code> | Builds an ARN for the TaxComplianceProfileChangeTask resource. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.verificationEvidence">verificationEvidence</a></code> | Builds an ARN for the VerificationEvidence resource. |
@@ -6406,6 +6594,22 @@ Validates whether a string is a valid ARN for the SellerDashboard resource.
 
 ---
 
+##### `isValidSellerDatasetArn` <a name="isValidSellerDatasetArn" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.isValidSellerDatasetArn"></a>
+
+```typescript
+import { aws_marketplace } from '@cdk_utils/iam'
+
+aws_marketplace.AWSMarketplaceResources.isValidSellerDatasetArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the SellerDataset resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.isValidSellerDatasetArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `isValidTaxComplianceProfileArn` <a name="isValidTaxComplianceProfileArn" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.isValidTaxComplianceProfileArn"></a>
 
 ```typescript
@@ -6742,6 +6946,22 @@ Parses a SellerDashboard ARN into its components.
 
 ---
 
+##### `parseSellerDatasetArn` <a name="parseSellerDatasetArn" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.parseSellerDatasetArn"></a>
+
+```typescript
+import { aws_marketplace } from '@cdk_utils/iam'
+
+aws_marketplace.AWSMarketplaceResources.parseSellerDatasetArn(arn: string)
+```
+
+Parses a SellerDataset ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.parseSellerDatasetArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `parseTaxComplianceProfileArn` <a name="parseTaxComplianceProfileArn" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.parseTaxComplianceProfileArn"></a>
 
 ```typescript
@@ -6835,6 +7055,22 @@ Builds an ARN for the SellerDashboard resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.sellerDashboard.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDashboardArnProps">AWSMarketplaceSellerDashboardArnProps</a>
+
+---
+
+##### `sellerDataset` <a name="sellerDataset" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.sellerDataset"></a>
+
+```typescript
+import { aws_marketplace } from '@cdk_utils/iam'
+
+aws_marketplace.AWSMarketplaceResources.sellerDataset(props: AWSMarketplaceSellerDatasetArnProps)
+```
+
+Builds an ARN for the SellerDataset resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.sellerDataset.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnProps">AWSMarketplaceSellerDatasetArnProps</a>
 
 ---
 

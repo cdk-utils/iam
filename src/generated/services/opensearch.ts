@@ -511,6 +511,8 @@ export class OpenSearchOperations {
 	];
 	/** IAM actions required for the UpdateApplication API call. */
 	static readonly UpdateApplication: string[] = ["es:UpdateApplication"];
+	/** IAM actions required for the UpdateClone API call. */
+	static readonly UpdateClone: string[] = ["es:UpdateClone"];
 	/** IAM actions required for the UpdateDataSource API call. */
 	static readonly UpdateDataSource: string[] = [
 		"iam:PassRole",

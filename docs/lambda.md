@@ -5086,6 +5086,9 @@ new lambda.LambdaOperations()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.CreateMicrovmImage">CreateMicrovmImage</a></code> | <code>string[]</code> | IAM actions required for the CreateMicrovmImage API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.CreateMicrovmShellAuthToken">CreateMicrovmShellAuthToken</a></code> | <code>string[]</code> | IAM actions required for the CreateMicrovmShellAuthToken API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.CreateNetworkConnector">CreateNetworkConnector</a></code> | <code>string[]</code> | IAM actions required for the CreateNetworkConnector API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.CreateRuntime">CreateRuntime</a></code> | <code>string[]</code> | IAM actions required for the CreateRuntime API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.CreateRuntimeAlias">CreateRuntimeAlias</a></code> | <code>string[]</code> | IAM actions required for the CreateRuntimeAlias API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.CreateRuntimeVersion">CreateRuntimeVersion</a></code> | <code>string[]</code> | IAM actions required for the CreateRuntimeVersion API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.CreateWebFunction">CreateWebFunction</a></code> | <code>string[]</code> | IAM actions required for the CreateWebFunction API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.CreateWebFunctionEndpoint">CreateWebFunctionEndpoint</a></code> | <code>string[]</code> | IAM actions required for the CreateWebFunctionEndpoint API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.CreateWebFunctionRevision">CreateWebFunctionRevision</a></code> | <code>string[]</code> | IAM actions required for the CreateWebFunctionRevision API call. |
@@ -5104,6 +5107,9 @@ new lambda.LambdaOperations()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteNetworkConnector">DeleteNetworkConnector</a></code> | <code>string[]</code> | IAM actions required for the DeleteNetworkConnector API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteProvisionedConcurrencyConfig">DeleteProvisionedConcurrencyConfig</a></code> | <code>string[]</code> | IAM actions required for the DeleteProvisionedConcurrencyConfig API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteResourcePolicy">DeleteResourcePolicy</a></code> | <code>string[]</code> | IAM actions required for the DeleteResourcePolicy API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteRuntime">DeleteRuntime</a></code> | <code>string[]</code> | IAM actions required for the DeleteRuntime API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteRuntimeAlias">DeleteRuntimeAlias</a></code> | <code>string[]</code> | IAM actions required for the DeleteRuntimeAlias API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteRuntimeVersion">DeleteRuntimeVersion</a></code> | <code>string[]</code> | IAM actions required for the DeleteRuntimeVersion API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteWebFunction">DeleteWebFunction</a></code> | <code>string[]</code> | IAM actions required for the DeleteWebFunction API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteWebFunctionEndpoint">DeleteWebFunctionEndpoint</a></code> | <code>string[]</code> | IAM actions required for the DeleteWebFunctionEndpoint API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteWebFunctionRevision">DeleteWebFunctionRevision</a></code> | <code>string[]</code> | IAM actions required for the DeleteWebFunctionRevision API call. |
@@ -5132,6 +5138,9 @@ new lambda.LambdaOperations()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.ListNetworkConnectors">ListNetworkConnectors</a></code> | <code>string[]</code> | IAM actions required for the ListNetworkConnectors API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.ListNetworkConnectorVersions">ListNetworkConnectorVersions</a></code> | <code>string[]</code> | IAM actions required for the ListNetworkConnectorVersions API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.ListProvisionedConcurrencyConfigs">ListProvisionedConcurrencyConfigs</a></code> | <code>string[]</code> | IAM actions required for the ListProvisionedConcurrencyConfigs API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.ListRuntimeAliases">ListRuntimeAliases</a></code> | <code>string[]</code> | IAM actions required for the ListRuntimeAliases API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.ListRuntimes">ListRuntimes</a></code> | <code>string[]</code> | IAM actions required for the ListRuntimes API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.ListRuntimeVersions">ListRuntimeVersions</a></code> | <code>string[]</code> | IAM actions required for the ListRuntimeVersions API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.ListTags">ListTags</a></code> | <code>string[]</code> | IAM actions required for the ListTags API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.ListVersionsByFunction">ListVersionsByFunction</a></code> | <code>string[]</code> | IAM actions required for the ListVersionsByFunction API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.ListWebFunctionEndpoints">ListWebFunctionEndpoints</a></code> | <code>string[]</code> | IAM actions required for the ListWebFunctionEndpoints API call. |
@@ -5165,7 +5174,10 @@ new lambda.LambdaOperations()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetPolicy">opGetPolicy</a></code> | <code>string[]</code> | IAM actions required for the GetPolicy API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetProvisionedConcurrencyConfig">opGetProvisionedConcurrencyConfig</a></code> | <code>string[]</code> | IAM actions required for the GetProvisionedConcurrencyConfig API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetResourcePolicy">opGetResourcePolicy</a></code> | <code>string[]</code> | IAM actions required for the GetResourcePolicy API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetRuntime">opGetRuntime</a></code> | <code>string[]</code> | IAM actions required for the GetRuntime API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetRuntimeAlias">opGetRuntimeAlias</a></code> | <code>string[]</code> | IAM actions required for the GetRuntimeAlias API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetRuntimeManagementConfig">opGetRuntimeManagementConfig</a></code> | <code>string[]</code> | IAM actions required for the GetRuntimeManagementConfig API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetRuntimeVersion">opGetRuntimeVersion</a></code> | <code>string[]</code> | IAM actions required for the GetRuntimeVersion API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetWebAccountSettings">opGetWebAccountSettings</a></code> | <code>string[]</code> | IAM actions required for the GetWebAccountSettings API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetWebFunction">opGetWebFunction</a></code> | <code>string[]</code> | IAM actions required for the GetWebFunction API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetWebFunctionEndpoint">opGetWebFunctionEndpoint</a></code> | <code>string[]</code> | IAM actions required for the GetWebFunctionEndpoint API call. |
@@ -5183,6 +5195,7 @@ new lambda.LambdaOperations()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.RemoveEventSource">RemoveEventSource</a></code> | <code>string[]</code> | IAM actions required for the RemoveEventSource API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.RemoveLayerVersionPermission">RemoveLayerVersionPermission</a></code> | <code>string[]</code> | IAM actions required for the RemoveLayerVersionPermission API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.RemovePermission">RemovePermission</a></code> | <code>string[]</code> | IAM actions required for the RemovePermission API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.RestoreRuntime">RestoreRuntime</a></code> | <code>string[]</code> | IAM actions required for the RestoreRuntime API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.ResumeMicrovm">ResumeMicrovm</a></code> | <code>string[]</code> | IAM actions required for the ResumeMicrovm API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.RunMicrovm">RunMicrovm</a></code> | <code>string[]</code> | IAM actions required for the RunMicrovm API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.SendDurableExecutionCallbackFailure">SendDurableExecutionCallbackFailure</a></code> | <code>string[]</code> | IAM actions required for the SendDurableExecutionCallbackFailure API call. |
@@ -5204,6 +5217,9 @@ new lambda.LambdaOperations()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.UpdateMicrovmImage">UpdateMicrovmImage</a></code> | <code>string[]</code> | IAM actions required for the UpdateMicrovmImage API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.UpdateMicrovmImageVersion">UpdateMicrovmImageVersion</a></code> | <code>string[]</code> | IAM actions required for the UpdateMicrovmImageVersion API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.UpdateNetworkConnector">UpdateNetworkConnector</a></code> | <code>string[]</code> | IAM actions required for the UpdateNetworkConnector API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.UpdateRuntime">UpdateRuntime</a></code> | <code>string[]</code> | IAM actions required for the UpdateRuntime API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.UpdateRuntimeAlias">UpdateRuntimeAlias</a></code> | <code>string[]</code> | IAM actions required for the UpdateRuntimeAlias API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.UpdateRuntimeVersion">UpdateRuntimeVersion</a></code> | <code>string[]</code> | IAM actions required for the UpdateRuntimeVersion API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.UpdateWebFunctionEndpoint">UpdateWebFunctionEndpoint</a></code> | <code>string[]</code> | IAM actions required for the UpdateWebFunctionEndpoint API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.UploadFunction">UploadFunction</a></code> | <code>string[]</code> | IAM actions required for the UploadFunction API call. |
 
@@ -5374,6 +5390,42 @@ public readonly CreateNetworkConnector: string[];
 - *Type:* string[]
 
 IAM actions required for the CreateNetworkConnector API call.
+
+---
+
+##### `CreateRuntime`<sup>Required</sup> <a name="CreateRuntime" id="@cdk_utils/iam.lambda.LambdaOperations.property.CreateRuntime"></a>
+
+```typescript
+public readonly CreateRuntime: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateRuntime API call.
+
+---
+
+##### `CreateRuntimeAlias`<sup>Required</sup> <a name="CreateRuntimeAlias" id="@cdk_utils/iam.lambda.LambdaOperations.property.CreateRuntimeAlias"></a>
+
+```typescript
+public readonly CreateRuntimeAlias: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateRuntimeAlias API call.
+
+---
+
+##### `CreateRuntimeVersion`<sup>Required</sup> <a name="CreateRuntimeVersion" id="@cdk_utils/iam.lambda.LambdaOperations.property.CreateRuntimeVersion"></a>
+
+```typescript
+public readonly CreateRuntimeVersion: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateRuntimeVersion API call.
 
 ---
 
@@ -5590,6 +5642,42 @@ public readonly DeleteResourcePolicy: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteResourcePolicy API call.
+
+---
+
+##### `DeleteRuntime`<sup>Required</sup> <a name="DeleteRuntime" id="@cdk_utils/iam.lambda.LambdaOperations.property.DeleteRuntime"></a>
+
+```typescript
+public readonly DeleteRuntime: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteRuntime API call.
+
+---
+
+##### `DeleteRuntimeAlias`<sup>Required</sup> <a name="DeleteRuntimeAlias" id="@cdk_utils/iam.lambda.LambdaOperations.property.DeleteRuntimeAlias"></a>
+
+```typescript
+public readonly DeleteRuntimeAlias: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteRuntimeAlias API call.
+
+---
+
+##### `DeleteRuntimeVersion`<sup>Required</sup> <a name="DeleteRuntimeVersion" id="@cdk_utils/iam.lambda.LambdaOperations.property.DeleteRuntimeVersion"></a>
+
+```typescript
+public readonly DeleteRuntimeVersion: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteRuntimeVersion API call.
 
 ---
 
@@ -5926,6 +6014,42 @@ public readonly ListProvisionedConcurrencyConfigs: string[];
 - *Type:* string[]
 
 IAM actions required for the ListProvisionedConcurrencyConfigs API call.
+
+---
+
+##### `ListRuntimeAliases`<sup>Required</sup> <a name="ListRuntimeAliases" id="@cdk_utils/iam.lambda.LambdaOperations.property.ListRuntimeAliases"></a>
+
+```typescript
+public readonly ListRuntimeAliases: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListRuntimeAliases API call.
+
+---
+
+##### `ListRuntimes`<sup>Required</sup> <a name="ListRuntimes" id="@cdk_utils/iam.lambda.LambdaOperations.property.ListRuntimes"></a>
+
+```typescript
+public readonly ListRuntimes: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListRuntimes API call.
+
+---
+
+##### `ListRuntimeVersions`<sup>Required</sup> <a name="ListRuntimeVersions" id="@cdk_utils/iam.lambda.LambdaOperations.property.ListRuntimeVersions"></a>
+
+```typescript
+public readonly ListRuntimeVersions: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListRuntimeVersions API call.
 
 ---
 
@@ -6325,6 +6449,30 @@ IAM actions required for the GetResourcePolicy API call.
 
 ---
 
+##### `opGetRuntime`<sup>Required</sup> <a name="opGetRuntime" id="@cdk_utils/iam.lambda.LambdaOperations.property.opGetRuntime"></a>
+
+```typescript
+public readonly opGetRuntime: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetRuntime API call.
+
+---
+
+##### `opGetRuntimeAlias`<sup>Required</sup> <a name="opGetRuntimeAlias" id="@cdk_utils/iam.lambda.LambdaOperations.property.opGetRuntimeAlias"></a>
+
+```typescript
+public readonly opGetRuntimeAlias: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetRuntimeAlias API call.
+
+---
+
 ##### `opGetRuntimeManagementConfig`<sup>Required</sup> <a name="opGetRuntimeManagementConfig" id="@cdk_utils/iam.lambda.LambdaOperations.property.opGetRuntimeManagementConfig"></a>
 
 ```typescript
@@ -6334,6 +6482,18 @@ public readonly opGetRuntimeManagementConfig: string[];
 - *Type:* string[]
 
 IAM actions required for the GetRuntimeManagementConfig API call.
+
+---
+
+##### `opGetRuntimeVersion`<sup>Required</sup> <a name="opGetRuntimeVersion" id="@cdk_utils/iam.lambda.LambdaOperations.property.opGetRuntimeVersion"></a>
+
+```typescript
+public readonly opGetRuntimeVersion: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetRuntimeVersion API call.
 
 ---
 
@@ -6538,6 +6698,18 @@ public readonly RemovePermission: string[];
 - *Type:* string[]
 
 IAM actions required for the RemovePermission API call.
+
+---
+
+##### `RestoreRuntime`<sup>Required</sup> <a name="RestoreRuntime" id="@cdk_utils/iam.lambda.LambdaOperations.property.RestoreRuntime"></a>
+
+```typescript
+public readonly RestoreRuntime: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the RestoreRuntime API call.
 
 ---
 
@@ -6790,6 +6962,42 @@ public readonly UpdateNetworkConnector: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateNetworkConnector API call.
+
+---
+
+##### `UpdateRuntime`<sup>Required</sup> <a name="UpdateRuntime" id="@cdk_utils/iam.lambda.LambdaOperations.property.UpdateRuntime"></a>
+
+```typescript
+public readonly UpdateRuntime: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateRuntime API call.
+
+---
+
+##### `UpdateRuntimeAlias`<sup>Required</sup> <a name="UpdateRuntimeAlias" id="@cdk_utils/iam.lambda.LambdaOperations.property.UpdateRuntimeAlias"></a>
+
+```typescript
+public readonly UpdateRuntimeAlias: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateRuntimeAlias API call.
+
+---
+
+##### `UpdateRuntimeVersion`<sup>Required</sup> <a name="UpdateRuntimeVersion" id="@cdk_utils/iam.lambda.LambdaOperations.property.UpdateRuntimeVersion"></a>
+
+```typescript
+public readonly UpdateRuntimeVersion: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateRuntimeVersion API call.
 
 ---
 

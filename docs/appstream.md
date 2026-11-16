@@ -1157,6 +1157,7 @@ new appstream.AppstreamActions()
 | <code><a href="#@cdk_utils/iam.appstream.AppstreamActions.property.UpdateDirectoryConfig">UpdateDirectoryConfig</a></code> | <code>string</code> | [Write] appstream:UpdateDirectoryConfig. |
 | <code><a href="#@cdk_utils/iam.appstream.AppstreamActions.property.UpdateEntitlement">UpdateEntitlement</a></code> | <code>string</code> | [Write] appstream:UpdateEntitlement. |
 | <code><a href="#@cdk_utils/iam.appstream.AppstreamActions.property.UpdateFleet">UpdateFleet</a></code> | <code>string</code> | [Write] appstream:UpdateFleet. |
+| <code><a href="#@cdk_utils/iam.appstream.AppstreamActions.property.UpdateImageBuilder">UpdateImageBuilder</a></code> | <code>string</code> | [Write] appstream:UpdateImageBuilder. |
 | <code><a href="#@cdk_utils/iam.appstream.AppstreamActions.property.UpdateImagePermissions">UpdateImagePermissions</a></code> | <code>string</code> | [Write] appstream:UpdateImagePermissions. |
 | <code><a href="#@cdk_utils/iam.appstream.AppstreamActions.property.UpdateStack">UpdateStack</a></code> | <code>string</code> | [Write] appstream:UpdateStack. |
 | <code><a href="#@cdk_utils/iam.appstream.AppstreamActions.property.UpdateThemeForStack">UpdateThemeForStack</a></code> | <code>string</code> | [Write] appstream:UpdateThemeForStack. |
@@ -2267,6 +2268,18 @@ public readonly UpdateFleet: string;
 
 ---
 
+##### `UpdateImageBuilder`<sup>Required</sup> <a name="UpdateImageBuilder" id="@cdk_utils/iam.appstream.AppstreamActions.property.UpdateImageBuilder"></a>
+
+```typescript
+public readonly UpdateImageBuilder: string;
+```
+
+- *Type:* string
+
+[Write] appstream:UpdateImageBuilder.
+
+---
+
 ##### `UpdateImagePermissions`<sup>Required</sup> <a name="UpdateImagePermissions" id="@cdk_utils/iam.appstream.AppstreamActions.property.UpdateImagePermissions"></a>
 
 ```typescript
@@ -2448,6 +2461,7 @@ Generates a condition block for `appstream:userId`.
 | <code><a href="#@cdk_utils/iam.appstream.AppstreamConditions.property.UpdateAppBlockBuilderConditionKeys">UpdateAppBlockBuilderConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateAppBlockBuilder action. |
 | <code><a href="#@cdk_utils/iam.appstream.AppstreamConditions.property.UpdateApplicationConditionKeys">UpdateApplicationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateApplication action. |
 | <code><a href="#@cdk_utils/iam.appstream.AppstreamConditions.property.UpdateFleetConditionKeys">UpdateFleetConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateFleet action. |
+| <code><a href="#@cdk_utils/iam.appstream.AppstreamConditions.property.UpdateImageBuilderConditionKeys">UpdateImageBuilderConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateImageBuilder action. |
 | <code><a href="#@cdk_utils/iam.appstream.AppstreamConditions.property.UpdateImagePermissionsConditionKeys">UpdateImagePermissionsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateImagePermissions action. |
 | <code><a href="#@cdk_utils/iam.appstream.AppstreamConditions.property.UpdateStackConditionKeys">UpdateStackConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateStack action. |
 | <code><a href="#@cdk_utils/iam.appstream.AppstreamConditions.property.USER_ID">USER_ID</a></code> | <code>string</code> | Condition key: appstream:userId (String). |
@@ -3018,6 +3032,18 @@ Condition keys applicable to the UpdateFleet action.
 
 ---
 
+##### `UpdateImageBuilderConditionKeys`<sup>Required</sup> <a name="UpdateImageBuilderConditionKeys" id="@cdk_utils/iam.appstream.AppstreamConditions.property.UpdateImageBuilderConditionKeys"></a>
+
+```typescript
+public readonly UpdateImageBuilderConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UpdateImageBuilder action.
+
+---
+
 ##### `UpdateImagePermissionsConditionKeys`<sup>Required</sup> <a name="UpdateImagePermissionsConditionKeys" id="@cdk_utils/iam.appstream.AppstreamConditions.property.UpdateImagePermissionsConditionKeys"></a>
 
 ```typescript
@@ -3164,6 +3190,7 @@ new appstream.AppstreamOperations()
 | <code><a href="#@cdk_utils/iam.appstream.AppstreamOperations.property.UpdateDirectoryConfig">UpdateDirectoryConfig</a></code> | <code>string[]</code> | IAM actions required for the UpdateDirectoryConfig API call. |
 | <code><a href="#@cdk_utils/iam.appstream.AppstreamOperations.property.UpdateEntitlement">UpdateEntitlement</a></code> | <code>string[]</code> | IAM actions required for the UpdateEntitlement API call. |
 | <code><a href="#@cdk_utils/iam.appstream.AppstreamOperations.property.UpdateFleet">UpdateFleet</a></code> | <code>string[]</code> | IAM actions required for the UpdateFleet API call. |
+| <code><a href="#@cdk_utils/iam.appstream.AppstreamOperations.property.UpdateImageBuilder">UpdateImageBuilder</a></code> | <code>string[]</code> | IAM actions required for the UpdateImageBuilder API call. |
 | <code><a href="#@cdk_utils/iam.appstream.AppstreamOperations.property.UpdateImagePermissions">UpdateImagePermissions</a></code> | <code>string[]</code> | IAM actions required for the UpdateImagePermissions API call. |
 | <code><a href="#@cdk_utils/iam.appstream.AppstreamOperations.property.UpdateStack">UpdateStack</a></code> | <code>string[]</code> | IAM actions required for the UpdateStack API call. |
 | <code><a href="#@cdk_utils/iam.appstream.AppstreamOperations.property.UpdateThemeForStack">UpdateThemeForStack</a></code> | <code>string[]</code> | IAM actions required for the UpdateThemeForStack API call. |
@@ -4199,6 +4226,18 @@ public readonly UpdateFleet: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateFleet API call.
+
+---
+
+##### `UpdateImageBuilder`<sup>Required</sup> <a name="UpdateImageBuilder" id="@cdk_utils/iam.appstream.AppstreamOperations.property.UpdateImageBuilder"></a>
+
+```typescript
+public readonly UpdateImageBuilder: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateImageBuilder API call.
 
 ---
 

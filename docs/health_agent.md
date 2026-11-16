@@ -1064,6 +1064,7 @@ new health_agent.HealthAgentActions()
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.AllReadActions">AllReadActions</a></code> | <code>string[]</code> | All read-level actions. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.AllTaggingActions">AllTaggingActions</a></code> | <code>string[]</code> | All tagging-level actions. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
+| <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.BatchRefillPatientPharmacyPrescriptions">BatchRefillPatientPharmacyPrescriptions</a></code> | <code>string</code> | [Write] health-agent:BatchRefillPatientPharmacyPrescriptions. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.CancelAppointment">CancelAppointment</a></code> | <code>string</code> | [Write] health-agent:CancelAppointment. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.CreateAgent">CreateAgent</a></code> | <code>string</code> | [Write] health-agent:CreateAgent. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.CreateDomain">CreateDomain</a></code> | <code>string</code> | [Write] health-agent:CreateDomain. |
@@ -1082,6 +1083,7 @@ new health_agent.HealthAgentActions()
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.ListPatientAppointments">ListPatientAppointments</a></code> | <code>string</code> | [Read] health-agent:ListPatientAppointments. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.ListPatientInsuranceCoverages">ListPatientInsuranceCoverages</a></code> | <code>string</code> | [Read] health-agent:ListPatientInsuranceCoverages. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.ListPatientMedications">ListPatientMedications</a></code> | <code>string</code> | [Read] health-agent:ListPatientMedications. |
+| <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.ListPatientPharmacyPrescriptions">ListPatientPharmacyPrescriptions</a></code> | <code>string</code> | [Read] health-agent:ListPatientPharmacyPrescriptions. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.ListProviders">ListProviders</a></code> | <code>string</code> | [Read] health-agent:ListProviders. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.ListSessionRecords">ListSessionRecords</a></code> | <code>string</code> | [List] health-agent:ListSessionRecords. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.ListSubscriptions">ListSubscriptions</a></code> | <code>string</code> | [List] health-agent:ListSubscriptions. |
@@ -1307,6 +1309,18 @@ All write-level actions.
 
 ---
 
+##### `BatchRefillPatientPharmacyPrescriptions`<sup>Required</sup> <a name="BatchRefillPatientPharmacyPrescriptions" id="@cdk_utils/iam.health_agent.HealthAgentActions.property.BatchRefillPatientPharmacyPrescriptions"></a>
+
+```typescript
+public readonly BatchRefillPatientPharmacyPrescriptions: string;
+```
+
+- *Type:* string
+
+[Write] health-agent:BatchRefillPatientPharmacyPrescriptions.
+
+---
+
 ##### `CancelAppointment`<sup>Required</sup> <a name="CancelAppointment" id="@cdk_utils/iam.health_agent.HealthAgentActions.property.CancelAppointment"></a>
 
 ```typescript
@@ -1520,6 +1534,18 @@ public readonly ListPatientMedications: string;
 - *Type:* string
 
 [Read] health-agent:ListPatientMedications.
+
+---
+
+##### `ListPatientPharmacyPrescriptions`<sup>Required</sup> <a name="ListPatientPharmacyPrescriptions" id="@cdk_utils/iam.health_agent.HealthAgentActions.property.ListPatientPharmacyPrescriptions"></a>
+
+```typescript
+public readonly ListPatientPharmacyPrescriptions: string;
+```
+
+- *Type:* string
+
+[Read] health-agent:ListPatientPharmacyPrescriptions.
 
 ---
 

@@ -3839,6 +3839,8 @@ new wisdom.WisdomOperations()
 | <code><a href="#@cdk_utils/iam.wisdom.WisdomOperations.property.opGetSession">opGetSession</a></code> | <code>string[]</code> | IAM actions required for the GetSession API call. |
 | <code><a href="#@cdk_utils/iam.wisdom.WisdomOperations.property.PutFeedback">PutFeedback</a></code> | <code>string[]</code> | IAM actions required for the PutFeedback API call. |
 | <code><a href="#@cdk_utils/iam.wisdom.WisdomOperations.property.QueryAssistant">QueryAssistant</a></code> | <code>string[]</code> | IAM actions required for the QueryAssistant API call. |
+| <code><a href="#@cdk_utils/iam.wisdom.WisdomOperations.property.RegisterAssistantReplicaKey">RegisterAssistantReplicaKey</a></code> | <code>string[]</code> | IAM actions required for the RegisterAssistantReplicaKey API call. |
+| <code><a href="#@cdk_utils/iam.wisdom.WisdomOperations.property.RegisterKnowledgeBaseReplicaKey">RegisterKnowledgeBaseReplicaKey</a></code> | <code>string[]</code> | IAM actions required for the RegisterKnowledgeBaseReplicaKey API call. |
 | <code><a href="#@cdk_utils/iam.wisdom.WisdomOperations.property.RemoveAssistantAIAgent">RemoveAssistantAIAgent</a></code> | <code>string[]</code> | IAM actions required for the RemoveAssistantAIAgent API call. |
 | <code><a href="#@cdk_utils/iam.wisdom.WisdomOperations.property.RemoveKnowledgeBaseTemplateUri">RemoveKnowledgeBaseTemplateUri</a></code> | <code>string[]</code> | IAM actions required for the RemoveKnowledgeBaseTemplateUri API call. |
 | <code><a href="#@cdk_utils/iam.wisdom.WisdomOperations.property.RenderMessageTemplate">RenderMessageTemplate</a></code> | <code>string[]</code> | IAM actions required for the RenderMessageTemplate API call. |
@@ -4703,6 +4705,30 @@ public readonly QueryAssistant: string[];
 - *Type:* string[]
 
 IAM actions required for the QueryAssistant API call.
+
+---
+
+##### `RegisterAssistantReplicaKey`<sup>Required</sup> <a name="RegisterAssistantReplicaKey" id="@cdk_utils/iam.wisdom.WisdomOperations.property.RegisterAssistantReplicaKey"></a>
+
+```typescript
+public readonly RegisterAssistantReplicaKey: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the RegisterAssistantReplicaKey API call.
+
+---
+
+##### `RegisterKnowledgeBaseReplicaKey`<sup>Required</sup> <a name="RegisterKnowledgeBaseReplicaKey" id="@cdk_utils/iam.wisdom.WisdomOperations.property.RegisterKnowledgeBaseReplicaKey"></a>
+
+```typescript
+public readonly RegisterKnowledgeBaseReplicaKey: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the RegisterKnowledgeBaseReplicaKey API call.
 
 ---
 

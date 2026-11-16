@@ -241,6 +241,31 @@
       }
     },
     {
+      "Name": "CreateSystemTableConfiguration",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "system-table"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "CreateWorkGroup",
       "ActionConditionKeys": [
         "aws:RequestTag/${TagKey}",
@@ -368,6 +393,27 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteSystemTableConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "system-table"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -892,6 +938,27 @@
       }
     },
     {
+      "Name": "GetSystemTableConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "system-table"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "GetTable",
       "Annotations": {
         "Properties": {
@@ -1233,6 +1300,22 @@
       }
     },
     {
+      "Name": "ListSystemTableStatuses",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ListTableMetadata",
       "Annotations": {
         "Properties": {
@@ -1273,6 +1356,9 @@
         },
         {
           "Name": "session"
+        },
+        {
+          "Name": "system-table"
         },
         {
           "Name": "workgroup"
@@ -1476,6 +1562,9 @@
           "Name": "session"
         },
         {
+          "Name": "system-table"
+        },
+        {
           "Name": "workgroup"
         }
       ],
@@ -1531,6 +1620,9 @@
         },
         {
           "Name": "session"
+        },
+        {
+          "Name": "system-table"
         },
         {
           "Name": "workgroup"
@@ -1665,6 +1757,27 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateSystemTableConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "system-table"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -1879,6 +1992,26 @@
       ]
     },
     {
+      "Name": "CreateSystemTableConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSystemTableConfiguration",
+          "Service": "athena"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "athena"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "athena",
+          "Method": "create_system_table_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "CreateWorkGroup",
       "AuthorizedActions": [
         {
@@ -1983,6 +2116,22 @@
         {
           "Name": "athena",
           "Method": "delete_prepared_statement",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSystemTableConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSystemTableConfiguration",
+          "Service": "athena"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "athena",
+          "Method": "delete_system_table_configuration",
           "Package": "Boto3"
         }
       ]
@@ -2292,6 +2441,22 @@
       ]
     },
     {
+      "Name": "GetSystemTableConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSystemTableConfiguration",
+          "Service": "athena"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "athena",
+          "Method": "get_system_table_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetTableMetadata",
       "AuthorizedActions": [
         {
@@ -2543,6 +2708,22 @@
         {
           "Name": "athena",
           "Method": "list_sessions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSystemTableStatuses",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSystemTableStatuses",
+          "Service": "athena"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "athena",
+          "Method": "list_system_table_statuses",
           "Package": "Boto3"
         }
       ]
@@ -2853,6 +3034,22 @@
       ]
     },
     {
+      "Name": "UpdateSystemTableConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSystemTableConfiguration",
+          "Service": "athena"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "athena",
+          "Method": "update_system_table_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "UpdateWorkGroup",
       "AuthorizedActions": [
         {
@@ -2901,6 +3098,15 @@
       "Name": "session",
       "ARNFormats": [
         "arn:${Partition}:athena:${Region}:${Account}:workgroup/${WorkGroupName}/session/${SessionId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "system-table",
+      "ARNFormats": [
+        "arn:${Partition}:athena:${Region}:${Account}:system-table/${TableName}"
       ],
       "ConditionKeys": [
         "aws:ResourceTag/${TagKey}"

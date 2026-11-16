@@ -1200,7 +1200,10 @@ export class ResiliencehubOperations {
 		"resiliencehub:TagResource",
 	];
 	/** IAM actions required for the ImportPolicy API call. */
-	static readonly ImportPolicy: string[] = ["resiliencehub:ImportPolicy"];
+	static readonly ImportPolicy: string[] = [
+		"resiliencehub:ImportPolicy",
+		"resiliencehub:TagResource",
+	];
 	/** IAM actions required for the ImportResourcesToDraftAppVersion API call. */
 	static readonly ImportResourcesToDraftAppVersion: string[] = [
 		"resiliencehub:ImportResourcesToDraftAppVersion",

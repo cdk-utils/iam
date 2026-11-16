@@ -3,6 +3,22 @@
   "ServiceName": "MWAA Serverless",
   "Actions": [
     {
+      "Name": "CreateAirflowUiUrl",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "CreateWorkflow",
       "ActionConditionKeys": [
         "aws:RequestTag/${TagKey}",
@@ -345,6 +361,22 @@
     }
   ],
   "Operations": [
+    {
+      "Name": "CreateAirflowUiUrl",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAirflowUiUrl",
+          "Service": "airflow-serverless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mwaa-serverless",
+          "Method": "create_airflow_ui_url",
+          "Package": "Boto3"
+        }
+      ]
+    },
     {
       "Name": "CreateWorkflow",
       "AuthorizedActions": [

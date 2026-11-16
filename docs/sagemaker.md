@@ -20600,6 +20600,7 @@ new sagemaker.SageMakerOperations()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.CreateAutoMLJob">CreateAutoMLJob</a></code> | <code>string[]</code> | IAM actions required for the CreateAutoMLJob API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.CreateAutoMLJobV2">CreateAutoMLJobV2</a></code> | <code>string[]</code> | IAM actions required for the CreateAutoMLJobV2 API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.CreateCluster">CreateCluster</a></code> | <code>string[]</code> | IAM actions required for the CreateCluster API call. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.CreateClusterExtension">CreateClusterExtension</a></code> | <code>string[]</code> | IAM actions required for the CreateClusterExtension API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.CreateClusterSchedulerConfig">CreateClusterSchedulerConfig</a></code> | <code>string[]</code> | IAM actions required for the CreateClusterSchedulerConfig API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.CreateCodeRepository">CreateCodeRepository</a></code> | <code>string[]</code> | IAM actions required for the CreateCodeRepository API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.CreateCompilationJob">CreateCompilationJob</a></code> | <code>string[]</code> | IAM actions required for the CreateCompilationJob API call. |
@@ -20672,6 +20673,7 @@ new sagemaker.SageMakerOperations()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DeleteArtifact">DeleteArtifact</a></code> | <code>string[]</code> | IAM actions required for the DeleteArtifact API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DeleteAssociation">DeleteAssociation</a></code> | <code>string[]</code> | IAM actions required for the DeleteAssociation API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DeleteCluster">DeleteCluster</a></code> | <code>string[]</code> | IAM actions required for the DeleteCluster API call. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DeleteClusterExtension">DeleteClusterExtension</a></code> | <code>string[]</code> | IAM actions required for the DeleteClusterExtension API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DeleteClusterSchedulerConfig">DeleteClusterSchedulerConfig</a></code> | <code>string[]</code> | IAM actions required for the DeleteClusterSchedulerConfig API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DeleteCodeRepository">DeleteCodeRepository</a></code> | <code>string[]</code> | IAM actions required for the DeleteCodeRepository API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DeleteCompilationJob">DeleteCompilationJob</a></code> | <code>string[]</code> | IAM actions required for the DeleteCompilationJob API call. |
@@ -20740,7 +20742,9 @@ new sagemaker.SageMakerOperations()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeAutoMLJobV2">DescribeAutoMLJobV2</a></code> | <code>string[]</code> | IAM actions required for the DescribeAutoMLJobV2 API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeCluster">DescribeCluster</a></code> | <code>string[]</code> | IAM actions required for the DescribeCluster API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeClusterEvent">DescribeClusterEvent</a></code> | <code>string[]</code> | IAM actions required for the DescribeClusterEvent API call. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeClusterExtension">DescribeClusterExtension</a></code> | <code>string[]</code> | IAM actions required for the DescribeClusterExtension API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeClusterNode">DescribeClusterNode</a></code> | <code>string[]</code> | IAM actions required for the DescribeClusterNode API call. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeClusterOperation">DescribeClusterOperation</a></code> | <code>string[]</code> | IAM actions required for the DescribeClusterOperation API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeClusterSchedulerConfig">DescribeClusterSchedulerConfig</a></code> | <code>string[]</code> | IAM actions required for the DescribeClusterSchedulerConfig API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeCodeRepository">DescribeCodeRepository</a></code> | <code>string[]</code> | IAM actions required for the DescribeCodeRepository API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeCompilationJob">DescribeCompilationJob</a></code> | <code>string[]</code> | IAM actions required for the DescribeCompilationJob API call. |
@@ -20830,7 +20834,10 @@ new sagemaker.SageMakerOperations()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListAutoMLJobs">ListAutoMLJobs</a></code> | <code>string[]</code> | IAM actions required for the ListAutoMLJobs API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListCandidatesForAutoMLJob">ListCandidatesForAutoMLJob</a></code> | <code>string[]</code> | IAM actions required for the ListCandidatesForAutoMLJob API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListClusterEvents">ListClusterEvents</a></code> | <code>string[]</code> | IAM actions required for the ListClusterEvents API call. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListClusterExtensions">ListClusterExtensions</a></code> | <code>string[]</code> | IAM actions required for the ListClusterExtensions API call. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListClusterExtensionVersions">ListClusterExtensionVersions</a></code> | <code>string[]</code> | IAM actions required for the ListClusterExtensionVersions API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListClusterNodes">ListClusterNodes</a></code> | <code>string[]</code> | IAM actions required for the ListClusterNodes API call. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListClusterOperations">ListClusterOperations</a></code> | <code>string[]</code> | IAM actions required for the ListClusterOperations API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListClusters">ListClusters</a></code> | <code>string[]</code> | IAM actions required for the ListClusters API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListClusterSchedulerConfigs">ListClusterSchedulerConfigs</a></code> | <code>string[]</code> | IAM actions required for the ListClusterSchedulerConfigs API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListCodeRepositories">ListCodeRepositories</a></code> | <code>string[]</code> | IAM actions required for the ListCodeRepositories API call. |
@@ -20970,6 +20977,7 @@ new sagemaker.SageMakerOperations()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.UpdateAppImageConfig">UpdateAppImageConfig</a></code> | <code>string[]</code> | IAM actions required for the UpdateAppImageConfig API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.UpdateArtifact">UpdateArtifact</a></code> | <code>string[]</code> | IAM actions required for the UpdateArtifact API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.UpdateCluster">UpdateCluster</a></code> | <code>string[]</code> | IAM actions required for the UpdateCluster API call. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.UpdateClusterExtension">UpdateClusterExtension</a></code> | <code>string[]</code> | IAM actions required for the UpdateClusterExtension API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.UpdateClusterSchedulerConfig">UpdateClusterSchedulerConfig</a></code> | <code>string[]</code> | IAM actions required for the UpdateClusterSchedulerConfig API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.UpdateClusterSoftware">UpdateClusterSoftware</a></code> | <code>string[]</code> | IAM actions required for the UpdateClusterSoftware API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.UpdateCodeRepository">UpdateCodeRepository</a></code> | <code>string[]</code> | IAM actions required for the UpdateCodeRepository API call. |
@@ -21325,6 +21333,18 @@ public readonly CreateCluster: string[];
 - *Type:* string[]
 
 IAM actions required for the CreateCluster API call.
+
+---
+
+##### `CreateClusterExtension`<sup>Required</sup> <a name="CreateClusterExtension" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.CreateClusterExtension"></a>
+
+```typescript
+public readonly CreateClusterExtension: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateClusterExtension API call.
 
 ---
 
@@ -22192,6 +22212,18 @@ IAM actions required for the DeleteCluster API call.
 
 ---
 
+##### `DeleteClusterExtension`<sup>Required</sup> <a name="DeleteClusterExtension" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.DeleteClusterExtension"></a>
+
+```typescript
+public readonly DeleteClusterExtension: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteClusterExtension API call.
+
+---
+
 ##### `DeleteClusterSchedulerConfig`<sup>Required</sup> <a name="DeleteClusterSchedulerConfig" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.DeleteClusterSchedulerConfig"></a>
 
 ```typescript
@@ -23008,6 +23040,18 @@ IAM actions required for the DescribeClusterEvent API call.
 
 ---
 
+##### `DescribeClusterExtension`<sup>Required</sup> <a name="DescribeClusterExtension" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeClusterExtension"></a>
+
+```typescript
+public readonly DescribeClusterExtension: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeClusterExtension API call.
+
+---
+
 ##### `DescribeClusterNode`<sup>Required</sup> <a name="DescribeClusterNode" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeClusterNode"></a>
 
 ```typescript
@@ -23017,6 +23061,18 @@ public readonly DescribeClusterNode: string[];
 - *Type:* string[]
 
 IAM actions required for the DescribeClusterNode API call.
+
+---
+
+##### `DescribeClusterOperation`<sup>Required</sup> <a name="DescribeClusterOperation" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeClusterOperation"></a>
+
+```typescript
+public readonly DescribeClusterOperation: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeClusterOperation API call.
 
 ---
 
@@ -24088,6 +24144,30 @@ IAM actions required for the ListClusterEvents API call.
 
 ---
 
+##### `ListClusterExtensions`<sup>Required</sup> <a name="ListClusterExtensions" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListClusterExtensions"></a>
+
+```typescript
+public readonly ListClusterExtensions: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListClusterExtensions API call.
+
+---
+
+##### `ListClusterExtensionVersions`<sup>Required</sup> <a name="ListClusterExtensionVersions" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListClusterExtensionVersions"></a>
+
+```typescript
+public readonly ListClusterExtensionVersions: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListClusterExtensionVersions API call.
+
+---
+
 ##### `ListClusterNodes`<sup>Required</sup> <a name="ListClusterNodes" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListClusterNodes"></a>
 
 ```typescript
@@ -24097,6 +24177,18 @@ public readonly ListClusterNodes: string[];
 - *Type:* string[]
 
 IAM actions required for the ListClusterNodes API call.
+
+---
+
+##### `ListClusterOperations`<sup>Required</sup> <a name="ListClusterOperations" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListClusterOperations"></a>
+
+```typescript
+public readonly ListClusterOperations: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListClusterOperations API call.
 
 ---
 
@@ -25765,6 +25857,18 @@ public readonly UpdateCluster: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateCluster API call.
+
+---
+
+##### `UpdateClusterExtension`<sup>Required</sup> <a name="UpdateClusterExtension" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.UpdateClusterExtension"></a>
+
+```typescript
+public readonly UpdateClusterExtension: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateClusterExtension API call.
 
 ---
 

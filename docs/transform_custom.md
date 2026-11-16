@@ -1247,6 +1247,7 @@ new transform_custom.TransformCustomActions()
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.actionGetKnowledgeItem">actionGetKnowledgeItem</a></code> | <code>string</code> | [Read] transform-custom:GetKnowledgeItem. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.actionGetRemediation">actionGetRemediation</a></code> | <code>string</code> | [Read] transform-custom:GetRemediation. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.actionGetRepository">actionGetRepository</a></code> | <code>string</code> | [Read] transform-custom:GetRepository. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.actionGetResourcePolicy">actionGetResourcePolicy</a></code> | <code>string</code> | [Read] transform-custom:GetResourcePolicy. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.actionGetSource">actionGetSource</a></code> | <code>string</code> | [Read] transform-custom:GetSource. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.actionGetTransformationPackageUrl">actionGetTransformationPackageUrl</a></code> | <code>string</code> | [Read] transform-custom:GetTransformationPackageUrl. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.AllListActions">AllListActions</a></code> | <code>string[]</code> | All list-level actions. |
@@ -1257,6 +1258,7 @@ new transform_custom.TransformCustomActions()
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.BatchCreateFindings">BatchCreateFindings</a></code> | <code>string</code> | [Write] transform-custom:BatchCreateFindings. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.BatchUpdateFindings">BatchUpdateFindings</a></code> | <code>string</code> | [Write] transform-custom:BatchUpdateFindings. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.CompleteTransformationPackageUpload">CompleteTransformationPackageUpload</a></code> | <code>string</code> | [Write] transform-custom:CompleteTransformationPackageUpload. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.ContributeKnowledgeItems">ContributeKnowledgeItems</a></code> | <code>string</code> | [Write] transform-custom:ContributeKnowledgeItems. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.ConverseStream">ConverseStream</a></code> | <code>string</code> | [Write] transform-custom:ConverseStream. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.CreateAnalysis">CreateAnalysis</a></code> | <code>string</code> | [Write] transform-custom:CreateAnalysis. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.CreateCampaign">CreateCampaign</a></code> | <code>string</code> | [Write] transform-custom:CreateCampaign. |
@@ -1270,6 +1272,7 @@ new transform_custom.TransformCustomActions()
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.DeleteKnowledgeItem">DeleteKnowledgeItem</a></code> | <code>string</code> | [Write] transform-custom:DeleteKnowledgeItem. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.DeleteRemediation">DeleteRemediation</a></code> | <code>string</code> | [Write] transform-custom:DeleteRemediation. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.DeleteRepository">DeleteRepository</a></code> | <code>string</code> | [Write] transform-custom:DeleteRepository. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.DeleteResourcePolicy">DeleteResourcePolicy</a></code> | <code>string</code> | [PermissionManagement] transform-custom:DeleteResourcePolicy. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.DeleteSource">DeleteSource</a></code> | <code>string</code> | [Write] transform-custom:DeleteSource. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.DeleteTransformationPackage">DeleteTransformationPackage</a></code> | <code>string</code> | [Write] transform-custom:DeleteTransformationPackage. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.ExecuteTransformation">ExecuteTransformation</a></code> | <code>string</code> | [Write] transform-custom:ExecuteTransformation. |
@@ -1285,6 +1288,7 @@ new transform_custom.TransformCustomActions()
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [Read] transform-custom:ListTagsForResource. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.ListTransformationPackageMetadata">ListTransformationPackageMetadata</a></code> | <code>string</code> | [List] transform-custom:ListTransformationPackageMetadata. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.ListTransformationPackageShares">ListTransformationPackageShares</a></code> | <code>string</code> | [Read] transform-custom:ListTransformationPackageShares. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.PutResourcePolicy">PutResourcePolicy</a></code> | <code>string</code> | [PermissionManagement] transform-custom:PutResourcePolicy. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.SendTelemetryEvent">SendTelemetryEvent</a></code> | <code>string</code> | [Write] transform-custom:SendTelemetryEvent. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.ShareTransformationPackage">ShareTransformationPackage</a></code> | <code>string</code> | [Write] transform-custom:ShareTransformationPackage. |
@@ -1395,6 +1399,18 @@ public readonly actionGetRepository: string;
 - *Type:* string
 
 [Read] transform-custom:GetRepository.
+
+---
+
+##### `actionGetResourcePolicy`<sup>Required</sup> <a name="actionGetResourcePolicy" id="@cdk_utils/iam.transform_custom.TransformCustomActions.property.actionGetResourcePolicy"></a>
+
+```typescript
+public readonly actionGetResourcePolicy: string;
+```
+
+- *Type:* string
+
+[Read] transform-custom:GetResourcePolicy.
 
 ---
 
@@ -1515,6 +1531,18 @@ public readonly CompleteTransformationPackageUpload: string;
 - *Type:* string
 
 [Write] transform-custom:CompleteTransformationPackageUpload.
+
+---
+
+##### `ContributeKnowledgeItems`<sup>Required</sup> <a name="ContributeKnowledgeItems" id="@cdk_utils/iam.transform_custom.TransformCustomActions.property.ContributeKnowledgeItems"></a>
+
+```typescript
+public readonly ContributeKnowledgeItems: string;
+```
+
+- *Type:* string
+
+[Write] transform-custom:ContributeKnowledgeItems.
 
 ---
 
@@ -1671,6 +1699,18 @@ public readonly DeleteRepository: string;
 - *Type:* string
 
 [Write] transform-custom:DeleteRepository.
+
+---
+
+##### `DeleteResourcePolicy`<sup>Required</sup> <a name="DeleteResourcePolicy" id="@cdk_utils/iam.transform_custom.TransformCustomActions.property.DeleteResourcePolicy"></a>
+
+```typescript
+public readonly DeleteResourcePolicy: string;
+```
+
+- *Type:* string
+
+[PermissionManagement] transform-custom:DeleteResourcePolicy.
 
 ---
 
@@ -1851,6 +1891,18 @@ public readonly ListTransformationPackageShares: string;
 - *Type:* string
 
 [Read] transform-custom:ListTransformationPackageShares.
+
+---
+
+##### `PutResourcePolicy`<sup>Required</sup> <a name="PutResourcePolicy" id="@cdk_utils/iam.transform_custom.TransformCustomActions.property.PutResourcePolicy"></a>
+
+```typescript
+public readonly PutResourcePolicy: string;
+```
+
+- *Type:* string
+
+[PermissionManagement] transform-custom:PutResourcePolicy.
 
 ---
 
@@ -2110,6 +2162,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.actionGetKnowledgeItemConditionKeys">actionGetKnowledgeItemConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetKnowledgeItem action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.actionGetRemediationConditionKeys">actionGetRemediationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetRemediation action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.actionGetRepositoryConditionKeys">actionGetRepositoryConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetRepository action. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.actionGetResourcePolicyConditionKeys">actionGetResourcePolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetResourcePolicy action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.actionGetSourceConditionKeys">actionGetSourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetSource action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.actionGetTransformationPackageUrlConditionKeys">actionGetTransformationPackageUrlConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetTransformationPackageUrl action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.AWS_REQUEST_TAG">AWS_REQUEST_TAG</a></code> | <code>string</code> | Condition key: aws:RequestTag/${TagKey} (String). |
@@ -2117,6 +2170,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.AWS_TAG_KEYS">AWS_TAG_KEYS</a></code> | <code>string</code> | Condition key: aws:TagKeys (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.BatchCreateFindingsConditionKeys">BatchCreateFindingsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the BatchCreateFindings action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.CompleteTransformationPackageUploadConditionKeys">CompleteTransformationPackageUploadConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CompleteTransformationPackageUpload action. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.ContributeKnowledgeItemsConditionKeys">ContributeKnowledgeItemsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ContributeKnowledgeItems action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.CreateAnalysisConditionKeys">CreateAnalysisConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateAnalysis action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.CreateCampaignConditionKeys">CreateCampaignConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateCampaign action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.CreateRemediationConditionKeys">CreateRemediationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateRemediation action. |
@@ -2129,12 +2183,14 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.DeleteKnowledgeItemConditionKeys">DeleteKnowledgeItemConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteKnowledgeItem action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.DeleteRemediationConditionKeys">DeleteRemediationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteRemediation action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.DeleteRepositoryConditionKeys">DeleteRepositoryConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteRepository action. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.DeleteResourcePolicyConditionKeys">DeleteResourcePolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteResourcePolicy action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.DeleteSourceConditionKeys">DeleteSourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteSource action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.DeleteTransformationPackageConditionKeys">DeleteTransformationPackageConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteTransformationPackage action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.ExecuteTransformationConditionKeys">ExecuteTransformationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ExecuteTransformation action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.ListAnalysisArtifactsConditionKeys">ListAnalysisArtifactsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListAnalysisArtifacts action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.ListCampaignRepositoriesConditionKeys">ListCampaignRepositoriesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListCampaignRepositories action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.ListTransformationPackageSharesConditionKeys">ListTransformationPackageSharesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListTransformationPackageShares action. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.PutResourcePolicyConditionKeys">PutResourcePolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutResourcePolicy action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.ShareTransformationPackageConditionKeys">ShareTransformationPackageConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ShareTransformationPackage action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.TagResourceConditionKeys">TagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TagResource action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.UnshareTransformationPackageConditionKeys">UnshareTransformationPackageConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UnshareTransformationPackage action. |
@@ -2234,6 +2290,18 @@ Condition keys applicable to the GetRepository action.
 
 ---
 
+##### `actionGetResourcePolicyConditionKeys`<sup>Required</sup> <a name="actionGetResourcePolicyConditionKeys" id="@cdk_utils/iam.transform_custom.TransformCustomConditions.property.actionGetResourcePolicyConditionKeys"></a>
+
+```typescript
+public readonly actionGetResourcePolicyConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetResourcePolicy action.
+
+---
+
 ##### `actionGetSourceConditionKeys`<sup>Required</sup> <a name="actionGetSourceConditionKeys" id="@cdk_utils/iam.transform_custom.TransformCustomConditions.property.actionGetSourceConditionKeys"></a>
 
 ```typescript
@@ -2315,6 +2383,18 @@ public readonly CompleteTransformationPackageUploadConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the CompleteTransformationPackageUpload action.
+
+---
+
+##### `ContributeKnowledgeItemsConditionKeys`<sup>Required</sup> <a name="ContributeKnowledgeItemsConditionKeys" id="@cdk_utils/iam.transform_custom.TransformCustomConditions.property.ContributeKnowledgeItemsConditionKeys"></a>
+
+```typescript
+public readonly ContributeKnowledgeItemsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ContributeKnowledgeItems action.
 
 ---
 
@@ -2462,6 +2542,18 @@ Condition keys applicable to the DeleteRepository action.
 
 ---
 
+##### `DeleteResourcePolicyConditionKeys`<sup>Required</sup> <a name="DeleteResourcePolicyConditionKeys" id="@cdk_utils/iam.transform_custom.TransformCustomConditions.property.DeleteResourcePolicyConditionKeys"></a>
+
+```typescript
+public readonly DeleteResourcePolicyConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DeleteResourcePolicy action.
+
+---
+
 ##### `DeleteSourceConditionKeys`<sup>Required</sup> <a name="DeleteSourceConditionKeys" id="@cdk_utils/iam.transform_custom.TransformCustomConditions.property.DeleteSourceConditionKeys"></a>
 
 ```typescript
@@ -2531,6 +2623,18 @@ public readonly ListTransformationPackageSharesConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the ListTransformationPackageShares action.
+
+---
+
+##### `PutResourcePolicyConditionKeys`<sup>Required</sup> <a name="PutResourcePolicyConditionKeys" id="@cdk_utils/iam.transform_custom.TransformCustomConditions.property.PutResourcePolicyConditionKeys"></a>
+
+```typescript
+public readonly PutResourcePolicyConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the PutResourcePolicy action.
 
 ---
 

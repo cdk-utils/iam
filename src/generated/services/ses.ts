@@ -363,6 +363,9 @@ export class SesActions {
 	/** [Write] ses:PutAccountDedicatedIpWarmupAttributes */
 	static readonly PutAccountDedicatedIpWarmupAttributes =
 		"ses:PutAccountDedicatedIpWarmupAttributes";
+	/** [Write] ses:PutAccountDeliveryAttributes */
+	static readonly PutAccountDeliveryAttributes =
+		"ses:PutAccountDeliveryAttributes";
 	/** [Write] ses:PutAccountDetails */
 	static readonly PutAccountDetails = "ses:PutAccountDetails";
 	/** [Write] ses:PutAccountPricingAttributes */
@@ -675,6 +678,7 @@ export class SesActions {
 		SesActions.DeregisterMemberFromAddressList,
 		SesActions.DisassociateEmailIdentityCertificate,
 		SesActions.PutAccountDedicatedIpWarmupAttributes,
+		SesActions.PutAccountDeliveryAttributes,
 		SesActions.PutAccountDetails,
 		SesActions.PutAccountPricingAttributes,
 		SesActions.PutAccountSendingAttributes,
@@ -3299,6 +3303,10 @@ export class SesConditions {
 	/** Condition keys applicable to the PutAccountDedicatedIpWarmupAttributes action. */
 	static readonly PutAccountDedicatedIpWarmupAttributesConditionKeys: string[] =
 		["ses:ApiVersion"];
+	/** Condition keys applicable to the PutAccountDeliveryAttributes action. */
+	static readonly PutAccountDeliveryAttributesConditionKeys: string[] = [
+		"ses:ApiVersion",
+	];
 	/** Condition keys applicable to the PutAccountDetails action. */
 	static readonly PutAccountDetailsConditionKeys: string[] = ["ses:ApiVersion"];
 	/** Condition keys applicable to the PutAccountPricingAttributes action. */

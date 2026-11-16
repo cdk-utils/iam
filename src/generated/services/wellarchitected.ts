@@ -18,10 +18,19 @@ export class WellArchitectedActions {
 	static readonly AssociateProfiles = "wellarchitected:AssociateProfiles";
 	/** [Write] wellarchitected:ConfigureIntegration */
 	static readonly ConfigureIntegration = "wellarchitected:ConfigureIntegration";
+	/** [Write] wellarchitected:CreateAgentBasicProfile */
+	static readonly CreateAgentBasicProfile =
+		"wellarchitected:CreateAgentBasicProfile";
 	/** [Write] wellarchitected:CreateAgentContext */
 	static readonly CreateAgentContext = "wellarchitected:CreateAgentContext";
 	/** [Write] wellarchitected:CreateAgentGoal */
 	static readonly CreateAgentGoal = "wellarchitected:CreateAgentGoal";
+	/** [Write] wellarchitected:CreateAgentOrganizationalProfile */
+	static readonly CreateAgentOrganizationalProfile =
+		"wellarchitected:CreateAgentOrganizationalProfile";
+	/** [Write] wellarchitected:CreateAgentOrganizationalReport */
+	static readonly CreateAgentOrganizationalReport =
+		"wellarchitected:CreateAgentOrganizationalReport";
 	/** [Write] wellarchitected:CreateAgentProfile */
 	static readonly CreateAgentProfile = "wellarchitected:CreateAgentProfile";
 	/** [Write] wellarchitected:CreateLensShare */
@@ -46,8 +55,17 @@ export class WellArchitectedActions {
 	static readonly DeleteAgentContext = "wellarchitected:DeleteAgentContext";
 	/** [Write] wellarchitected:DeleteAgentGoal */
 	static readonly DeleteAgentGoal = "wellarchitected:DeleteAgentGoal";
+	/** [Write] wellarchitected:DeleteAgentOrganizationalReport */
+	static readonly DeleteAgentOrganizationalReport =
+		"wellarchitected:DeleteAgentOrganizationalReport";
 	/** [Write] wellarchitected:DeleteAgentProfile */
 	static readonly DeleteAgentProfile = "wellarchitected:DeleteAgentProfile";
+	/** [Write] wellarchitected:DeleteAgentProfilePolicy */
+	static readonly DeleteAgentProfilePolicy =
+		"wellarchitected:DeleteAgentProfilePolicy";
+	/** [Write] wellarchitected:DeleteAgentRecommendationPolicy */
+	static readonly DeleteAgentRecommendationPolicy =
+		"wellarchitected:DeleteAgentRecommendationPolicy";
 	/** [Write] wellarchitected:DeleteLens */
 	static readonly DeleteLens = "wellarchitected:DeleteLens";
 	/** [Write] wellarchitected:DeleteLensShare */
@@ -74,14 +92,29 @@ export class WellArchitectedActions {
 	static readonly actionGetAgentContext = "wellarchitected:GetAgentContext";
 	/** [Read] wellarchitected:GetAgentGoal */
 	static readonly actionGetAgentGoal = "wellarchitected:GetAgentGoal";
+	/** [Read] wellarchitected:GetAgentOrganizationalReport */
+	static readonly actionGetAgentOrganizationalReport =
+		"wellarchitected:GetAgentOrganizationalReport";
+	/** [Read] wellarchitected:GetAgentOrganizationalReportData */
+	static readonly actionGetAgentOrganizationalReportData =
+		"wellarchitected:GetAgentOrganizationalReportData";
+	/** [Read] wellarchitected:GetAgentPreferences */
+	static readonly actionGetAgentPreferences =
+		"wellarchitected:GetAgentPreferences";
 	/** [Read] wellarchitected:GetAgentProfile */
 	static readonly actionGetAgentProfile = "wellarchitected:GetAgentProfile";
+	/** [Read] wellarchitected:GetAgentProfilePolicy */
+	static readonly actionGetAgentProfilePolicy =
+		"wellarchitected:GetAgentProfilePolicy";
 	/** [Read] wellarchitected:GetAgentRecommendation */
 	static readonly actionGetAgentRecommendation =
 		"wellarchitected:GetAgentRecommendation";
 	/** [Read] wellarchitected:GetAgentRecommendationGeneration */
 	static readonly actionGetAgentRecommendationGeneration =
 		"wellarchitected:GetAgentRecommendationGeneration";
+	/** [Read] wellarchitected:GetAgentRecommendationPolicy */
+	static readonly actionGetAgentRecommendationPolicy =
+		"wellarchitected:GetAgentRecommendationPolicy";
 	/** [Read] wellarchitected:GetAnswer */
 	static readonly actionGetAnswer = "wellarchitected:GetAnswer";
 	/** [Read] wellarchitected:GetConsolidatedReport */
@@ -118,19 +151,22 @@ export class WellArchitectedActions {
 	static readonly actionGetWorkload = "wellarchitected:GetWorkload";
 	/** [Write] wellarchitected:ImportLens */
 	static readonly ImportLens = "wellarchitected:ImportLens";
-	/** [Read] wellarchitected:ListAgentContexts */
+	/** [List] wellarchitected:ListAgentContexts */
 	static readonly ListAgentContexts = "wellarchitected:ListAgentContexts";
-	/** [Read] wellarchitected:ListAgentGoals */
+	/** [List] wellarchitected:ListAgentGoals */
 	static readonly ListAgentGoals = "wellarchitected:ListAgentGoals";
-	/** [Read] wellarchitected:ListAgentProfiles */
+	/** [List] wellarchitected:ListAgentOrganizationalReports */
+	static readonly ListAgentOrganizationalReports =
+		"wellarchitected:ListAgentOrganizationalReports";
+	/** [List] wellarchitected:ListAgentProfiles */
 	static readonly ListAgentProfiles = "wellarchitected:ListAgentProfiles";
-	/** [Read] wellarchitected:ListAgentRecommendationGenerations */
+	/** [List] wellarchitected:ListAgentRecommendationGenerations */
 	static readonly ListAgentRecommendationGenerations =
 		"wellarchitected:ListAgentRecommendationGenerations";
-	/** [Read] wellarchitected:ListAgentRecommendationItems */
+	/** [List] wellarchitected:ListAgentRecommendationItems */
 	static readonly ListAgentRecommendationItems =
 		"wellarchitected:ListAgentRecommendationItems";
-	/** [Read] wellarchitected:ListAgentRecommendations */
+	/** [List] wellarchitected:ListAgentRecommendations */
 	static readonly ListAgentRecommendations =
 		"wellarchitected:ListAgentRecommendations";
 	/** [List] wellarchitected:ListAnswers */
@@ -174,9 +210,20 @@ export class WellArchitectedActions {
 	static readonly ListWorkloadShares = "wellarchitected:ListWorkloadShares";
 	/** [List] wellarchitected:ListWorkloads */
 	static readonly ListWorkloads = "wellarchitected:ListWorkloads";
+	/** [Write] wellarchitected:PutAgentPreferences */
+	static readonly PutAgentPreferences = "wellarchitected:PutAgentPreferences";
+	/** [Write] wellarchitected:PutAgentProfilePolicy */
+	static readonly PutAgentProfilePolicy =
+		"wellarchitected:PutAgentProfilePolicy";
 	/** [Write] wellarchitected:PutAgentRecommendationFeedback */
 	static readonly PutAgentRecommendationFeedback =
 		"wellarchitected:PutAgentRecommendationFeedback";
+	/** [Write] wellarchitected:PutAgentRecommendationPolicy */
+	static readonly PutAgentRecommendationPolicy =
+		"wellarchitected:PutAgentRecommendationPolicy";
+	/** [Write] wellarchitected:SendAgentOrganizationalReportDataToS3 */
+	static readonly SendAgentOrganizationalReportDataToS3 =
+		"wellarchitected:SendAgentOrganizationalReportDataToS3";
 	/** [Write] wellarchitected:StartAgentRecommendationGeneration */
 	static readonly StartAgentRecommendationGeneration =
 		"wellarchitected:StartAgentRecommendationGeneration";
@@ -188,6 +235,9 @@ export class WellArchitectedActions {
 	static readonly UpdateAgentContext = "wellarchitected:UpdateAgentContext";
 	/** [Write] wellarchitected:UpdateAgentGoal */
 	static readonly UpdateAgentGoal = "wellarchitected:UpdateAgentGoal";
+	/** [Write] wellarchitected:UpdateAgentOrganizationalProfile */
+	static readonly UpdateAgentOrganizationalProfile =
+		"wellarchitected:UpdateAgentOrganizationalProfile";
 	/** [Write] wellarchitected:UpdateAgentProfile */
 	static readonly UpdateAgentProfile = "wellarchitected:UpdateAgentProfile";
 	/** [Write] wellarchitected:UpdateAgentRecommendationStatus */
@@ -232,9 +282,14 @@ export class WellArchitectedActions {
 		WellArchitectedActions.ExportLens,
 		WellArchitectedActions.actionGetAgentContext,
 		WellArchitectedActions.actionGetAgentGoal,
+		WellArchitectedActions.actionGetAgentOrganizationalReport,
+		WellArchitectedActions.actionGetAgentOrganizationalReportData,
+		WellArchitectedActions.actionGetAgentPreferences,
 		WellArchitectedActions.actionGetAgentProfile,
+		WellArchitectedActions.actionGetAgentProfilePolicy,
 		WellArchitectedActions.actionGetAgentRecommendation,
 		WellArchitectedActions.actionGetAgentRecommendationGeneration,
+		WellArchitectedActions.actionGetAgentRecommendationPolicy,
 		WellArchitectedActions.actionGetAnswer,
 		WellArchitectedActions.actionGetConsolidatedReport,
 		WellArchitectedActions.actionGetGlobalSettings,
@@ -249,12 +304,6 @@ export class WellArchitectedActions {
 		WellArchitectedActions.actionGetReviewTemplateAnswer,
 		WellArchitectedActions.actionGetReviewTemplateLensReview,
 		WellArchitectedActions.actionGetWorkload,
-		WellArchitectedActions.ListAgentContexts,
-		WellArchitectedActions.ListAgentGoals,
-		WellArchitectedActions.ListAgentProfiles,
-		WellArchitectedActions.ListAgentRecommendationGenerations,
-		WellArchitectedActions.ListAgentRecommendationItems,
-		WellArchitectedActions.ListAgentRecommendations,
 		WellArchitectedActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
@@ -262,8 +311,11 @@ export class WellArchitectedActions {
 		WellArchitectedActions.AssociateLenses,
 		WellArchitectedActions.AssociateProfiles,
 		WellArchitectedActions.ConfigureIntegration,
+		WellArchitectedActions.CreateAgentBasicProfile,
 		WellArchitectedActions.CreateAgentContext,
 		WellArchitectedActions.CreateAgentGoal,
+		WellArchitectedActions.CreateAgentOrganizationalProfile,
+		WellArchitectedActions.CreateAgentOrganizationalReport,
 		WellArchitectedActions.CreateAgentProfile,
 		WellArchitectedActions.CreateLensShare,
 		WellArchitectedActions.CreateLensVersion,
@@ -276,7 +328,10 @@ export class WellArchitectedActions {
 		WellArchitectedActions.CreateWorkloadShare,
 		WellArchitectedActions.DeleteAgentContext,
 		WellArchitectedActions.DeleteAgentGoal,
+		WellArchitectedActions.DeleteAgentOrganizationalReport,
 		WellArchitectedActions.DeleteAgentProfile,
+		WellArchitectedActions.DeleteAgentProfilePolicy,
+		WellArchitectedActions.DeleteAgentRecommendationPolicy,
 		WellArchitectedActions.DeleteLens,
 		WellArchitectedActions.DeleteLensShare,
 		WellArchitectedActions.DeleteProfile,
@@ -288,10 +343,15 @@ export class WellArchitectedActions {
 		WellArchitectedActions.DisassociateLenses,
 		WellArchitectedActions.DisassociateProfiles,
 		WellArchitectedActions.ImportLens,
+		WellArchitectedActions.PutAgentPreferences,
+		WellArchitectedActions.PutAgentProfilePolicy,
 		WellArchitectedActions.PutAgentRecommendationFeedback,
+		WellArchitectedActions.PutAgentRecommendationPolicy,
+		WellArchitectedActions.SendAgentOrganizationalReportDataToS3,
 		WellArchitectedActions.StartAgentRecommendationGeneration,
 		WellArchitectedActions.UpdateAgentContext,
 		WellArchitectedActions.UpdateAgentGoal,
+		WellArchitectedActions.UpdateAgentOrganizationalProfile,
 		WellArchitectedActions.UpdateAgentProfile,
 		WellArchitectedActions.UpdateAgentRecommendationStatus,
 		WellArchitectedActions.UpdateAnswer,
@@ -311,6 +371,13 @@ export class WellArchitectedActions {
 	];
 	/** All list-level actions. */
 	static readonly AllListActions: string[] = [
+		WellArchitectedActions.ListAgentContexts,
+		WellArchitectedActions.ListAgentGoals,
+		WellArchitectedActions.ListAgentOrganizationalReports,
+		WellArchitectedActions.ListAgentProfiles,
+		WellArchitectedActions.ListAgentRecommendationGenerations,
+		WellArchitectedActions.ListAgentRecommendationItems,
+		WellArchitectedActions.ListAgentRecommendations,
 		WellArchitectedActions.ListAnswers,
 		WellArchitectedActions.ListCheckDetails,
 		WellArchitectedActions.ListCheckSummaries,
@@ -1082,6 +1149,11 @@ export class WellArchitectedConditions {
 	static readonly AssociateProfilesConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
+	/** Condition keys applicable to the CreateAgentBasicProfile action. */
+	static readonly CreateAgentBasicProfileConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the CreateAgentContext action. */
 	static readonly CreateAgentContextConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
@@ -1089,6 +1161,11 @@ export class WellArchitectedConditions {
 	/** Condition keys applicable to the CreateAgentGoal action. */
 	static readonly CreateAgentGoalConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
+	];
+	/** Condition keys applicable to the CreateAgentOrganizationalProfile action. */
+	static readonly CreateAgentOrganizationalProfileConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateAgentProfile action. */
 	static readonly CreateAgentProfileConditionKeys: string[] = [
@@ -1147,6 +1224,14 @@ export class WellArchitectedConditions {
 	static readonly DeleteAgentProfileConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
+	/** Condition keys applicable to the DeleteAgentProfilePolicy action. */
+	static readonly DeleteAgentProfilePolicyConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
+	/** Condition keys applicable to the DeleteAgentRecommendationPolicy action. */
+	static readonly DeleteAgentRecommendationPolicyConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the DeleteLens action. */
 	static readonly DeleteLensConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
@@ -1203,6 +1288,10 @@ export class WellArchitectedConditions {
 	static readonly actionGetAgentProfileConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
+	/** Condition keys applicable to the GetAgentProfilePolicy action. */
+	static readonly actionGetAgentProfilePolicyConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the GetAgentRecommendation action. */
 	static readonly actionGetAgentRecommendationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
@@ -1210,6 +1299,10 @@ export class WellArchitectedConditions {
 	/** Condition keys applicable to the GetAgentRecommendationGeneration action. */
 	static readonly actionGetAgentRecommendationGenerationConditionKeys: string[] =
 		["aws:ResourceTag/${TagKey}"];
+	/** Condition keys applicable to the GetAgentRecommendationPolicy action. */
+	static readonly actionGetAgentRecommendationPolicyConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the GetAnswer action. */
 	static readonly actionGetAnswerConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
@@ -1327,8 +1420,16 @@ export class WellArchitectedConditions {
 	static readonly ListWorkloadSharesConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
+	/** Condition keys applicable to the PutAgentProfilePolicy action. */
+	static readonly PutAgentProfilePolicyConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the PutAgentRecommendationFeedback action. */
 	static readonly PutAgentRecommendationFeedbackConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
+	/** Condition keys applicable to the PutAgentRecommendationPolicy action. */
+	static readonly PutAgentRecommendationPolicyConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the StartAgentRecommendationGeneration action. */
@@ -1348,6 +1449,10 @@ export class WellArchitectedConditions {
 	];
 	/** Condition keys applicable to the UpdateAgentGoal action. */
 	static readonly UpdateAgentGoalConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
+	/** Condition keys applicable to the UpdateAgentOrganizationalProfile action. */
+	static readonly UpdateAgentOrganizationalProfileConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpdateAgentProfile action. */

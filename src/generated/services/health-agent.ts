@@ -14,6 +14,9 @@ export class HealthAgentActions {
 
 	/** [Write] health-agent:ActivateSubscription */
 	static readonly ActivateSubscription = "health-agent:ActivateSubscription";
+	/** [Write] health-agent:BatchRefillPatientPharmacyPrescriptions */
+	static readonly BatchRefillPatientPharmacyPrescriptions =
+		"health-agent:BatchRefillPatientPharmacyPrescriptions";
 	/** [Write] health-agent:CancelAppointment */
 	static readonly CancelAppointment = "health-agent:CancelAppointment";
 	/** [Write] health-agent:CreateAgent */
@@ -79,6 +82,9 @@ export class HealthAgentActions {
 	/** [Read] health-agent:ListPatientMedications */
 	static readonly ListPatientMedications =
 		"health-agent:ListPatientMedications";
+	/** [Read] health-agent:ListPatientPharmacyPrescriptions */
+	static readonly ListPatientPharmacyPrescriptions =
+		"health-agent:ListPatientPharmacyPrescriptions";
 	/** [Read] health-agent:ListProviders */
 	static readonly ListProviders = "health-agent:ListProviders";
 	/** [List] health-agent:ListSessionRecords */
@@ -134,12 +140,14 @@ export class HealthAgentActions {
 		HealthAgentActions.ListPatientAppointments,
 		HealthAgentActions.ListPatientInsuranceCoverages,
 		HealthAgentActions.ListPatientMedications,
+		HealthAgentActions.ListPatientPharmacyPrescriptions,
 		HealthAgentActions.ListProviders,
 		HealthAgentActions.MatchPatient,
 	];
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
 		HealthAgentActions.ActivateSubscription,
+		HealthAgentActions.BatchRefillPatientPharmacyPrescriptions,
 		HealthAgentActions.CancelAppointment,
 		HealthAgentActions.CreateAgent,
 		HealthAgentActions.CreateDomain,

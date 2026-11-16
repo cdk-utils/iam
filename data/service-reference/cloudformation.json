@@ -1654,6 +1654,27 @@
       }
     },
     {
+      "Name": "RemoveAlias",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stack"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "RollbackStack",
       "ActionConditionKeys": [
         "cloudformation:RoleArn"
@@ -1675,6 +1696,27 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SetAlias",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stack"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -3583,6 +3625,22 @@
       ]
     },
     {
+      "Name": "RemoveAlias",
+      "AuthorizedActions": [
+        {
+          "Name": "RemoveAlias",
+          "Service": "cloudformation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudformation",
+          "Method": "remove_alias",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "RollbackStack",
       "AuthorizedActions": [
         {
@@ -3603,6 +3661,22 @@
         {
           "Name": "cloudformation",
           "Method": "rollback_stack",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SetAlias",
+      "AuthorizedActions": [
+        {
+          "Name": "SetAlias",
+          "Service": "cloudformation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudformation",
+          "Method": "set_alias",
           "Package": "Boto3"
         }
       ]

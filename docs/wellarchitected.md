@@ -919,9 +919,14 @@ new wellarchitected.WellArchitectedActions()
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.actionGetAgentContext">actionGetAgentContext</a></code> | <code>string</code> | [Read] wellarchitected:GetAgentContext. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.actionGetAgentGoal">actionGetAgentGoal</a></code> | <code>string</code> | [Read] wellarchitected:GetAgentGoal. |
+| <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.actionGetAgentOrganizationalReport">actionGetAgentOrganizationalReport</a></code> | <code>string</code> | [Read] wellarchitected:GetAgentOrganizationalReport. |
+| <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.actionGetAgentOrganizationalReportData">actionGetAgentOrganizationalReportData</a></code> | <code>string</code> | [Read] wellarchitected:GetAgentOrganizationalReportData. |
+| <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.actionGetAgentPreferences">actionGetAgentPreferences</a></code> | <code>string</code> | [Read] wellarchitected:GetAgentPreferences. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.actionGetAgentProfile">actionGetAgentProfile</a></code> | <code>string</code> | [Read] wellarchitected:GetAgentProfile. |
+| <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.actionGetAgentProfilePolicy">actionGetAgentProfilePolicy</a></code> | <code>string</code> | [Read] wellarchitected:GetAgentProfilePolicy. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.actionGetAgentRecommendation">actionGetAgentRecommendation</a></code> | <code>string</code> | [Read] wellarchitected:GetAgentRecommendation. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.actionGetAgentRecommendationGeneration">actionGetAgentRecommendationGeneration</a></code> | <code>string</code> | [Read] wellarchitected:GetAgentRecommendationGeneration. |
+| <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.actionGetAgentRecommendationPolicy">actionGetAgentRecommendationPolicy</a></code> | <code>string</code> | [Read] wellarchitected:GetAgentRecommendationPolicy. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.actionGetAnswer">actionGetAnswer</a></code> | <code>string</code> | [Read] wellarchitected:GetAnswer. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.actionGetConsolidatedReport">actionGetConsolidatedReport</a></code> | <code>string</code> | [Read] wellarchitected:GetConsolidatedReport. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.actionGetGlobalSettings">actionGetGlobalSettings</a></code> | <code>string</code> | [Read] wellarchitected:GetGlobalSettings. |
@@ -944,8 +949,11 @@ new wellarchitected.WellArchitectedActions()
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.AssociateLenses">AssociateLenses</a></code> | <code>string</code> | [Write] wellarchitected:AssociateLenses. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.AssociateProfiles">AssociateProfiles</a></code> | <code>string</code> | [Write] wellarchitected:AssociateProfiles. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.ConfigureIntegration">ConfigureIntegration</a></code> | <code>string</code> | [Write] wellarchitected:ConfigureIntegration. |
+| <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.CreateAgentBasicProfile">CreateAgentBasicProfile</a></code> | <code>string</code> | [Write] wellarchitected:CreateAgentBasicProfile. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.CreateAgentContext">CreateAgentContext</a></code> | <code>string</code> | [Write] wellarchitected:CreateAgentContext. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.CreateAgentGoal">CreateAgentGoal</a></code> | <code>string</code> | [Write] wellarchitected:CreateAgentGoal. |
+| <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.CreateAgentOrganizationalProfile">CreateAgentOrganizationalProfile</a></code> | <code>string</code> | [Write] wellarchitected:CreateAgentOrganizationalProfile. |
+| <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.CreateAgentOrganizationalReport">CreateAgentOrganizationalReport</a></code> | <code>string</code> | [Write] wellarchitected:CreateAgentOrganizationalReport. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.CreateAgentProfile">CreateAgentProfile</a></code> | <code>string</code> | [Write] wellarchitected:CreateAgentProfile. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.CreateLensShare">CreateLensShare</a></code> | <code>string</code> | [Write] wellarchitected:CreateLensShare. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.CreateLensVersion">CreateLensVersion</a></code> | <code>string</code> | [Write] wellarchitected:CreateLensVersion. |
@@ -958,7 +966,10 @@ new wellarchitected.WellArchitectedActions()
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.CreateWorkloadShare">CreateWorkloadShare</a></code> | <code>string</code> | [Write] wellarchitected:CreateWorkloadShare. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.DeleteAgentContext">DeleteAgentContext</a></code> | <code>string</code> | [Write] wellarchitected:DeleteAgentContext. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.DeleteAgentGoal">DeleteAgentGoal</a></code> | <code>string</code> | [Write] wellarchitected:DeleteAgentGoal. |
+| <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.DeleteAgentOrganizationalReport">DeleteAgentOrganizationalReport</a></code> | <code>string</code> | [Write] wellarchitected:DeleteAgentOrganizationalReport. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.DeleteAgentProfile">DeleteAgentProfile</a></code> | <code>string</code> | [Write] wellarchitected:DeleteAgentProfile. |
+| <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.DeleteAgentProfilePolicy">DeleteAgentProfilePolicy</a></code> | <code>string</code> | [Write] wellarchitected:DeleteAgentProfilePolicy. |
+| <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.DeleteAgentRecommendationPolicy">DeleteAgentRecommendationPolicy</a></code> | <code>string</code> | [Write] wellarchitected:DeleteAgentRecommendationPolicy. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.DeleteLens">DeleteLens</a></code> | <code>string</code> | [Write] wellarchitected:DeleteLens. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.DeleteLensShare">DeleteLensShare</a></code> | <code>string</code> | [Write] wellarchitected:DeleteLensShare. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.DeleteProfile">DeleteProfile</a></code> | <code>string</code> | [Write] wellarchitected:DeleteProfile. |
@@ -971,12 +982,13 @@ new wellarchitected.WellArchitectedActions()
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.DisassociateProfiles">DisassociateProfiles</a></code> | <code>string</code> | [Write] wellarchitected:DisassociateProfiles. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.ExportLens">ExportLens</a></code> | <code>string</code> | [Read] wellarchitected:ExportLens. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.ImportLens">ImportLens</a></code> | <code>string</code> | [Write] wellarchitected:ImportLens. |
-| <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.ListAgentContexts">ListAgentContexts</a></code> | <code>string</code> | [Read] wellarchitected:ListAgentContexts. |
-| <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.ListAgentGoals">ListAgentGoals</a></code> | <code>string</code> | [Read] wellarchitected:ListAgentGoals. |
-| <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.ListAgentProfiles">ListAgentProfiles</a></code> | <code>string</code> | [Read] wellarchitected:ListAgentProfiles. |
-| <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.ListAgentRecommendationGenerations">ListAgentRecommendationGenerations</a></code> | <code>string</code> | [Read] wellarchitected:ListAgentRecommendationGenerations. |
-| <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.ListAgentRecommendationItems">ListAgentRecommendationItems</a></code> | <code>string</code> | [Read] wellarchitected:ListAgentRecommendationItems. |
-| <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.ListAgentRecommendations">ListAgentRecommendations</a></code> | <code>string</code> | [Read] wellarchitected:ListAgentRecommendations. |
+| <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.ListAgentContexts">ListAgentContexts</a></code> | <code>string</code> | [List] wellarchitected:ListAgentContexts. |
+| <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.ListAgentGoals">ListAgentGoals</a></code> | <code>string</code> | [List] wellarchitected:ListAgentGoals. |
+| <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.ListAgentOrganizationalReports">ListAgentOrganizationalReports</a></code> | <code>string</code> | [List] wellarchitected:ListAgentOrganizationalReports. |
+| <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.ListAgentProfiles">ListAgentProfiles</a></code> | <code>string</code> | [List] wellarchitected:ListAgentProfiles. |
+| <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.ListAgentRecommendationGenerations">ListAgentRecommendationGenerations</a></code> | <code>string</code> | [List] wellarchitected:ListAgentRecommendationGenerations. |
+| <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.ListAgentRecommendationItems">ListAgentRecommendationItems</a></code> | <code>string</code> | [List] wellarchitected:ListAgentRecommendationItems. |
+| <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.ListAgentRecommendations">ListAgentRecommendations</a></code> | <code>string</code> | [List] wellarchitected:ListAgentRecommendations. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.ListAnswers">ListAnswers</a></code> | <code>string</code> | [List] wellarchitected:ListAnswers. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.ListCheckDetails">ListCheckDetails</a></code> | <code>string</code> | [List] wellarchitected:ListCheckDetails. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.ListCheckSummaries">ListCheckSummaries</a></code> | <code>string</code> | [List] wellarchitected:ListCheckSummaries. |
@@ -996,13 +1008,18 @@ new wellarchitected.WellArchitectedActions()
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.ListTemplateShares">ListTemplateShares</a></code> | <code>string</code> | [List] wellarchitected:ListTemplateShares. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.ListWorkloads">ListWorkloads</a></code> | <code>string</code> | [List] wellarchitected:ListWorkloads. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.ListWorkloadShares">ListWorkloadShares</a></code> | <code>string</code> | [List] wellarchitected:ListWorkloadShares. |
+| <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.PutAgentPreferences">PutAgentPreferences</a></code> | <code>string</code> | [Write] wellarchitected:PutAgentPreferences. |
+| <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.PutAgentProfilePolicy">PutAgentProfilePolicy</a></code> | <code>string</code> | [Write] wellarchitected:PutAgentProfilePolicy. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.PutAgentRecommendationFeedback">PutAgentRecommendationFeedback</a></code> | <code>string</code> | [Write] wellarchitected:PutAgentRecommendationFeedback. |
+| <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.PutAgentRecommendationPolicy">PutAgentRecommendationPolicy</a></code> | <code>string</code> | [Write] wellarchitected:PutAgentRecommendationPolicy. |
+| <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.SendAgentOrganizationalReportDataToS3">SendAgentOrganizationalReportDataToS3</a></code> | <code>string</code> | [Write] wellarchitected:SendAgentOrganizationalReportDataToS3. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.StartAgentRecommendationGeneration">StartAgentRecommendationGeneration</a></code> | <code>string</code> | [Write] wellarchitected:StartAgentRecommendationGeneration. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] wellarchitected:TagResource. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] wellarchitected:UntagResource. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.UpdateAgentContext">UpdateAgentContext</a></code> | <code>string</code> | [Write] wellarchitected:UpdateAgentContext. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.UpdateAgentGoal">UpdateAgentGoal</a></code> | <code>string</code> | [Write] wellarchitected:UpdateAgentGoal. |
+| <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.UpdateAgentOrganizationalProfile">UpdateAgentOrganizationalProfile</a></code> | <code>string</code> | [Write] wellarchitected:UpdateAgentOrganizationalProfile. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.UpdateAgentProfile">UpdateAgentProfile</a></code> | <code>string</code> | [Write] wellarchitected:UpdateAgentProfile. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.UpdateAgentRecommendationStatus">UpdateAgentRecommendationStatus</a></code> | <code>string</code> | [Write] wellarchitected:UpdateAgentRecommendationStatus. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.UpdateAnswer">UpdateAnswer</a></code> | <code>string</code> | [Write] wellarchitected:UpdateAnswer. |
@@ -1046,6 +1063,42 @@ public readonly actionGetAgentGoal: string;
 
 ---
 
+##### `actionGetAgentOrganizationalReport`<sup>Required</sup> <a name="actionGetAgentOrganizationalReport" id="@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.actionGetAgentOrganizationalReport"></a>
+
+```typescript
+public readonly actionGetAgentOrganizationalReport: string;
+```
+
+- *Type:* string
+
+[Read] wellarchitected:GetAgentOrganizationalReport.
+
+---
+
+##### `actionGetAgentOrganizationalReportData`<sup>Required</sup> <a name="actionGetAgentOrganizationalReportData" id="@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.actionGetAgentOrganizationalReportData"></a>
+
+```typescript
+public readonly actionGetAgentOrganizationalReportData: string;
+```
+
+- *Type:* string
+
+[Read] wellarchitected:GetAgentOrganizationalReportData.
+
+---
+
+##### `actionGetAgentPreferences`<sup>Required</sup> <a name="actionGetAgentPreferences" id="@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.actionGetAgentPreferences"></a>
+
+```typescript
+public readonly actionGetAgentPreferences: string;
+```
+
+- *Type:* string
+
+[Read] wellarchitected:GetAgentPreferences.
+
+---
+
 ##### `actionGetAgentProfile`<sup>Required</sup> <a name="actionGetAgentProfile" id="@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.actionGetAgentProfile"></a>
 
 ```typescript
@@ -1055,6 +1108,18 @@ public readonly actionGetAgentProfile: string;
 - *Type:* string
 
 [Read] wellarchitected:GetAgentProfile.
+
+---
+
+##### `actionGetAgentProfilePolicy`<sup>Required</sup> <a name="actionGetAgentProfilePolicy" id="@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.actionGetAgentProfilePolicy"></a>
+
+```typescript
+public readonly actionGetAgentProfilePolicy: string;
+```
+
+- *Type:* string
+
+[Read] wellarchitected:GetAgentProfilePolicy.
 
 ---
 
@@ -1079,6 +1144,18 @@ public readonly actionGetAgentRecommendationGeneration: string;
 - *Type:* string
 
 [Read] wellarchitected:GetAgentRecommendationGeneration.
+
+---
+
+##### `actionGetAgentRecommendationPolicy`<sup>Required</sup> <a name="actionGetAgentRecommendationPolicy" id="@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.actionGetAgentRecommendationPolicy"></a>
+
+```typescript
+public readonly actionGetAgentRecommendationPolicy: string;
+```
+
+- *Type:* string
+
+[Read] wellarchitected:GetAgentRecommendationPolicy.
 
 ---
 
@@ -1346,6 +1423,18 @@ public readonly ConfigureIntegration: string;
 
 ---
 
+##### `CreateAgentBasicProfile`<sup>Required</sup> <a name="CreateAgentBasicProfile" id="@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.CreateAgentBasicProfile"></a>
+
+```typescript
+public readonly CreateAgentBasicProfile: string;
+```
+
+- *Type:* string
+
+[Write] wellarchitected:CreateAgentBasicProfile.
+
+---
+
 ##### `CreateAgentContext`<sup>Required</sup> <a name="CreateAgentContext" id="@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.CreateAgentContext"></a>
 
 ```typescript
@@ -1367,6 +1456,30 @@ public readonly CreateAgentGoal: string;
 - *Type:* string
 
 [Write] wellarchitected:CreateAgentGoal.
+
+---
+
+##### `CreateAgentOrganizationalProfile`<sup>Required</sup> <a name="CreateAgentOrganizationalProfile" id="@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.CreateAgentOrganizationalProfile"></a>
+
+```typescript
+public readonly CreateAgentOrganizationalProfile: string;
+```
+
+- *Type:* string
+
+[Write] wellarchitected:CreateAgentOrganizationalProfile.
+
+---
+
+##### `CreateAgentOrganizationalReport`<sup>Required</sup> <a name="CreateAgentOrganizationalReport" id="@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.CreateAgentOrganizationalReport"></a>
+
+```typescript
+public readonly CreateAgentOrganizationalReport: string;
+```
+
+- *Type:* string
+
+[Write] wellarchitected:CreateAgentOrganizationalReport.
 
 ---
 
@@ -1514,6 +1627,18 @@ public readonly DeleteAgentGoal: string;
 
 ---
 
+##### `DeleteAgentOrganizationalReport`<sup>Required</sup> <a name="DeleteAgentOrganizationalReport" id="@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.DeleteAgentOrganizationalReport"></a>
+
+```typescript
+public readonly DeleteAgentOrganizationalReport: string;
+```
+
+- *Type:* string
+
+[Write] wellarchitected:DeleteAgentOrganizationalReport.
+
+---
+
 ##### `DeleteAgentProfile`<sup>Required</sup> <a name="DeleteAgentProfile" id="@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.DeleteAgentProfile"></a>
 
 ```typescript
@@ -1523,6 +1648,30 @@ public readonly DeleteAgentProfile: string;
 - *Type:* string
 
 [Write] wellarchitected:DeleteAgentProfile.
+
+---
+
+##### `DeleteAgentProfilePolicy`<sup>Required</sup> <a name="DeleteAgentProfilePolicy" id="@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.DeleteAgentProfilePolicy"></a>
+
+```typescript
+public readonly DeleteAgentProfilePolicy: string;
+```
+
+- *Type:* string
+
+[Write] wellarchitected:DeleteAgentProfilePolicy.
+
+---
+
+##### `DeleteAgentRecommendationPolicy`<sup>Required</sup> <a name="DeleteAgentRecommendationPolicy" id="@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.DeleteAgentRecommendationPolicy"></a>
+
+```typescript
+public readonly DeleteAgentRecommendationPolicy: string;
+```
+
+- *Type:* string
+
+[Write] wellarchitected:DeleteAgentRecommendationPolicy.
 
 ---
 
@@ -1678,7 +1827,7 @@ public readonly ListAgentContexts: string;
 
 - *Type:* string
 
-[Read] wellarchitected:ListAgentContexts.
+[List] wellarchitected:ListAgentContexts.
 
 ---
 
@@ -1690,7 +1839,19 @@ public readonly ListAgentGoals: string;
 
 - *Type:* string
 
-[Read] wellarchitected:ListAgentGoals.
+[List] wellarchitected:ListAgentGoals.
+
+---
+
+##### `ListAgentOrganizationalReports`<sup>Required</sup> <a name="ListAgentOrganizationalReports" id="@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.ListAgentOrganizationalReports"></a>
+
+```typescript
+public readonly ListAgentOrganizationalReports: string;
+```
+
+- *Type:* string
+
+[List] wellarchitected:ListAgentOrganizationalReports.
 
 ---
 
@@ -1702,7 +1863,7 @@ public readonly ListAgentProfiles: string;
 
 - *Type:* string
 
-[Read] wellarchitected:ListAgentProfiles.
+[List] wellarchitected:ListAgentProfiles.
 
 ---
 
@@ -1714,7 +1875,7 @@ public readonly ListAgentRecommendationGenerations: string;
 
 - *Type:* string
 
-[Read] wellarchitected:ListAgentRecommendationGenerations.
+[List] wellarchitected:ListAgentRecommendationGenerations.
 
 ---
 
@@ -1726,7 +1887,7 @@ public readonly ListAgentRecommendationItems: string;
 
 - *Type:* string
 
-[Read] wellarchitected:ListAgentRecommendationItems.
+[List] wellarchitected:ListAgentRecommendationItems.
 
 ---
 
@@ -1738,7 +1899,7 @@ public readonly ListAgentRecommendations: string;
 
 - *Type:* string
 
-[Read] wellarchitected:ListAgentRecommendations.
+[List] wellarchitected:ListAgentRecommendations.
 
 ---
 
@@ -1970,6 +2131,30 @@ public readonly ListWorkloadShares: string;
 
 ---
 
+##### `PutAgentPreferences`<sup>Required</sup> <a name="PutAgentPreferences" id="@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.PutAgentPreferences"></a>
+
+```typescript
+public readonly PutAgentPreferences: string;
+```
+
+- *Type:* string
+
+[Write] wellarchitected:PutAgentPreferences.
+
+---
+
+##### `PutAgentProfilePolicy`<sup>Required</sup> <a name="PutAgentProfilePolicy" id="@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.PutAgentProfilePolicy"></a>
+
+```typescript
+public readonly PutAgentProfilePolicy: string;
+```
+
+- *Type:* string
+
+[Write] wellarchitected:PutAgentProfilePolicy.
+
+---
+
 ##### `PutAgentRecommendationFeedback`<sup>Required</sup> <a name="PutAgentRecommendationFeedback" id="@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.PutAgentRecommendationFeedback"></a>
 
 ```typescript
@@ -1979,6 +2164,30 @@ public readonly PutAgentRecommendationFeedback: string;
 - *Type:* string
 
 [Write] wellarchitected:PutAgentRecommendationFeedback.
+
+---
+
+##### `PutAgentRecommendationPolicy`<sup>Required</sup> <a name="PutAgentRecommendationPolicy" id="@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.PutAgentRecommendationPolicy"></a>
+
+```typescript
+public readonly PutAgentRecommendationPolicy: string;
+```
+
+- *Type:* string
+
+[Write] wellarchitected:PutAgentRecommendationPolicy.
+
+---
+
+##### `SendAgentOrganizationalReportDataToS3`<sup>Required</sup> <a name="SendAgentOrganizationalReportDataToS3" id="@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.SendAgentOrganizationalReportDataToS3"></a>
+
+```typescript
+public readonly SendAgentOrganizationalReportDataToS3: string;
+```
+
+- *Type:* string
+
+[Write] wellarchitected:SendAgentOrganizationalReportDataToS3.
 
 ---
 
@@ -2051,6 +2260,18 @@ public readonly UpdateAgentGoal: string;
 - *Type:* string
 
 [Write] wellarchitected:UpdateAgentGoal.
+
+---
+
+##### `UpdateAgentOrganizationalProfile`<sup>Required</sup> <a name="UpdateAgentOrganizationalProfile" id="@cdk_utils/iam.wellarchitected.WellArchitectedActions.property.UpdateAgentOrganizationalProfile"></a>
+
+```typescript
+public readonly UpdateAgentOrganizationalProfile: string;
+```
+
+- *Type:* string
+
+[Write] wellarchitected:UpdateAgentOrganizationalProfile.
 
 ---
 
@@ -2347,8 +2568,10 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.actionGetAgentContextConditionKeys">actionGetAgentContextConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetAgentContext action. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.actionGetAgentGoalConditionKeys">actionGetAgentGoalConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetAgentGoal action. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.actionGetAgentProfileConditionKeys">actionGetAgentProfileConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetAgentProfile action. |
+| <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.actionGetAgentProfilePolicyConditionKeys">actionGetAgentProfilePolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetAgentProfilePolicy action. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.actionGetAgentRecommendationConditionKeys">actionGetAgentRecommendationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetAgentRecommendation action. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.actionGetAgentRecommendationGenerationConditionKeys">actionGetAgentRecommendationGenerationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetAgentRecommendationGeneration action. |
+| <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.actionGetAgentRecommendationPolicyConditionKeys">actionGetAgentRecommendationPolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetAgentRecommendationPolicy action. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.actionGetAnswerConditionKeys">actionGetAnswerConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetAnswer action. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.actionGetLensConditionKeys">actionGetLensConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetLens action. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.actionGetLensReviewConditionKeys">actionGetLensReviewConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetLensReview action. |
@@ -2365,8 +2588,10 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.AWS_REQUEST_TAG">AWS_REQUEST_TAG</a></code> | <code>string</code> | Condition key: aws:RequestTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.AWS_RESOURCE_TAG">AWS_RESOURCE_TAG</a></code> | <code>string</code> | Condition key: aws:ResourceTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.AWS_TAG_KEYS">AWS_TAG_KEYS</a></code> | <code>string</code> | Condition key: aws:TagKeys (ArrayOfString). |
+| <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.CreateAgentBasicProfileConditionKeys">CreateAgentBasicProfileConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateAgentBasicProfile action. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.CreateAgentContextConditionKeys">CreateAgentContextConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateAgentContext action. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.CreateAgentGoalConditionKeys">CreateAgentGoalConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateAgentGoal action. |
+| <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.CreateAgentOrganizationalProfileConditionKeys">CreateAgentOrganizationalProfileConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateAgentOrganizationalProfile action. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.CreateAgentProfileConditionKeys">CreateAgentProfileConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateAgentProfile action. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.CreateLensShareConditionKeys">CreateLensShareConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateLensShare action. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.CreateLensVersionConditionKeys">CreateLensVersionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateLensVersion action. |
@@ -2380,6 +2605,8 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.DeleteAgentContextConditionKeys">DeleteAgentContextConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteAgentContext action. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.DeleteAgentGoalConditionKeys">DeleteAgentGoalConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteAgentGoal action. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.DeleteAgentProfileConditionKeys">DeleteAgentProfileConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteAgentProfile action. |
+| <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.DeleteAgentProfilePolicyConditionKeys">DeleteAgentProfilePolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteAgentProfilePolicy action. |
+| <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.DeleteAgentRecommendationPolicyConditionKeys">DeleteAgentRecommendationPolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteAgentRecommendationPolicy action. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.DeleteLensConditionKeys">DeleteLensConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteLens action. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.DeleteLensShareConditionKeys">DeleteLensShareConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteLensShare action. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.DeleteProfileConditionKeys">DeleteProfileConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteProfile action. |
@@ -2410,12 +2637,15 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.ListTagsForResourceConditionKeys">ListTagsForResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListTagsForResource action. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.ListTemplateSharesConditionKeys">ListTemplateSharesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListTemplateShares action. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.ListWorkloadSharesConditionKeys">ListWorkloadSharesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListWorkloadShares action. |
+| <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.PutAgentProfilePolicyConditionKeys">PutAgentProfilePolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutAgentProfilePolicy action. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.PutAgentRecommendationFeedbackConditionKeys">PutAgentRecommendationFeedbackConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutAgentRecommendationFeedback action. |
+| <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.PutAgentRecommendationPolicyConditionKeys">PutAgentRecommendationPolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutAgentRecommendationPolicy action. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.StartAgentRecommendationGenerationConditionKeys">StartAgentRecommendationGenerationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartAgentRecommendationGeneration action. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.TagResourceConditionKeys">TagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TagResource action. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.UntagResourceConditionKeys">UntagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UntagResource action. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.UpdateAgentContextConditionKeys">UpdateAgentContextConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateAgentContext action. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.UpdateAgentGoalConditionKeys">UpdateAgentGoalConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateAgentGoal action. |
+| <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.UpdateAgentOrganizationalProfileConditionKeys">UpdateAgentOrganizationalProfileConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateAgentOrganizationalProfile action. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.UpdateAgentProfileConditionKeys">UpdateAgentProfileConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateAgentProfile action. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.UpdateAgentRecommendationStatusConditionKeys">UpdateAgentRecommendationStatusConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateAgentRecommendationStatus action. |
 | <code><a href="#@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.UpdateAnswerConditionKeys">UpdateAnswerConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateAnswer action. |
@@ -2470,6 +2700,18 @@ Condition keys applicable to the GetAgentProfile action.
 
 ---
 
+##### `actionGetAgentProfilePolicyConditionKeys`<sup>Required</sup> <a name="actionGetAgentProfilePolicyConditionKeys" id="@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.actionGetAgentProfilePolicyConditionKeys"></a>
+
+```typescript
+public readonly actionGetAgentProfilePolicyConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetAgentProfilePolicy action.
+
+---
+
 ##### `actionGetAgentRecommendationConditionKeys`<sup>Required</sup> <a name="actionGetAgentRecommendationConditionKeys" id="@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.actionGetAgentRecommendationConditionKeys"></a>
 
 ```typescript
@@ -2491,6 +2733,18 @@ public readonly actionGetAgentRecommendationGenerationConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the GetAgentRecommendationGeneration action.
+
+---
+
+##### `actionGetAgentRecommendationPolicyConditionKeys`<sup>Required</sup> <a name="actionGetAgentRecommendationPolicyConditionKeys" id="@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.actionGetAgentRecommendationPolicyConditionKeys"></a>
+
+```typescript
+public readonly actionGetAgentRecommendationPolicyConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetAgentRecommendationPolicy action.
 
 ---
 
@@ -2686,6 +2940,18 @@ Condition key: aws:TagKeys (ArrayOfString).
 
 ---
 
+##### `CreateAgentBasicProfileConditionKeys`<sup>Required</sup> <a name="CreateAgentBasicProfileConditionKeys" id="@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.CreateAgentBasicProfileConditionKeys"></a>
+
+```typescript
+public readonly CreateAgentBasicProfileConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateAgentBasicProfile action.
+
+---
+
 ##### `CreateAgentContextConditionKeys`<sup>Required</sup> <a name="CreateAgentContextConditionKeys" id="@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.CreateAgentContextConditionKeys"></a>
 
 ```typescript
@@ -2707,6 +2973,18 @@ public readonly CreateAgentGoalConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the CreateAgentGoal action.
+
+---
+
+##### `CreateAgentOrganizationalProfileConditionKeys`<sup>Required</sup> <a name="CreateAgentOrganizationalProfileConditionKeys" id="@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.CreateAgentOrganizationalProfileConditionKeys"></a>
+
+```typescript
+public readonly CreateAgentOrganizationalProfileConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateAgentOrganizationalProfile action.
 
 ---
 
@@ -2863,6 +3141,30 @@ public readonly DeleteAgentProfileConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the DeleteAgentProfile action.
+
+---
+
+##### `DeleteAgentProfilePolicyConditionKeys`<sup>Required</sup> <a name="DeleteAgentProfilePolicyConditionKeys" id="@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.DeleteAgentProfilePolicyConditionKeys"></a>
+
+```typescript
+public readonly DeleteAgentProfilePolicyConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DeleteAgentProfilePolicy action.
+
+---
+
+##### `DeleteAgentRecommendationPolicyConditionKeys`<sup>Required</sup> <a name="DeleteAgentRecommendationPolicyConditionKeys" id="@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.DeleteAgentRecommendationPolicyConditionKeys"></a>
+
+```typescript
+public readonly DeleteAgentRecommendationPolicyConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DeleteAgentRecommendationPolicy action.
 
 ---
 
@@ -3226,6 +3528,18 @@ Condition keys applicable to the ListWorkloadShares action.
 
 ---
 
+##### `PutAgentProfilePolicyConditionKeys`<sup>Required</sup> <a name="PutAgentProfilePolicyConditionKeys" id="@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.PutAgentProfilePolicyConditionKeys"></a>
+
+```typescript
+public readonly PutAgentProfilePolicyConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the PutAgentProfilePolicy action.
+
+---
+
 ##### `PutAgentRecommendationFeedbackConditionKeys`<sup>Required</sup> <a name="PutAgentRecommendationFeedbackConditionKeys" id="@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.PutAgentRecommendationFeedbackConditionKeys"></a>
 
 ```typescript
@@ -3235,6 +3549,18 @@ public readonly PutAgentRecommendationFeedbackConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the PutAgentRecommendationFeedback action.
+
+---
+
+##### `PutAgentRecommendationPolicyConditionKeys`<sup>Required</sup> <a name="PutAgentRecommendationPolicyConditionKeys" id="@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.PutAgentRecommendationPolicyConditionKeys"></a>
+
+```typescript
+public readonly PutAgentRecommendationPolicyConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the PutAgentRecommendationPolicy action.
 
 ---
 
@@ -3295,6 +3621,18 @@ public readonly UpdateAgentGoalConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the UpdateAgentGoal action.
+
+---
+
+##### `UpdateAgentOrganizationalProfileConditionKeys`<sup>Required</sup> <a name="UpdateAgentOrganizationalProfileConditionKeys" id="@cdk_utils/iam.wellarchitected.WellArchitectedConditions.property.UpdateAgentOrganizationalProfileConditionKeys"></a>
+
+```typescript
+public readonly UpdateAgentOrganizationalProfileConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UpdateAgentOrganizationalProfile action.
 
 ---
 
