@@ -42,6 +42,9 @@ export class UserSubscriptionsActions {
 	/** [Read] user-subscriptions:GetEffectiveUsageLimit */
 	static readonly actionGetEffectiveUsageLimit =
 		"user-subscriptions:GetEffectiveUsageLimit";
+	/** [Read] user-subscriptions:GetOverageConfig */
+	static readonly actionGetOverageConfig =
+		"user-subscriptions:GetOverageConfig";
 	/** [Read] user-subscriptions:GetPurchaseSession */
 	static readonly actionGetPurchaseSession =
 		"user-subscriptions:GetPurchaseSession";
@@ -59,6 +62,9 @@ export class UserSubscriptionsActions {
 	static readonly ListEntitlements = "user-subscriptions:ListEntitlements";
 	/** [List] user-subscriptions:ListUsageLimits */
 	static readonly ListUsageLimits = "user-subscriptions:ListUsageLimits";
+	/** [List] user-subscriptions:ListUsagesAndLimits */
+	static readonly ListUsagesAndLimits =
+		"user-subscriptions:ListUsagesAndLimits";
 	/** [List] user-subscriptions:ListUserSubscriptions */
 	static readonly ListUserSubscriptions =
 		"user-subscriptions:ListUserSubscriptions";
@@ -78,6 +84,7 @@ export class UserSubscriptionsActions {
 		UserSubscriptionsActions.actionGetAutoTopUpRule,
 		UserSubscriptionsActions.actionGetCurrentPlanDetails,
 		UserSubscriptionsActions.actionGetEffectiveUsageLimit,
+		UserSubscriptionsActions.actionGetOverageConfig,
 		UserSubscriptionsActions.actionGetPurchaseSession,
 		UserSubscriptionsActions.actionGetUsageLimitHistory,
 	];
@@ -103,6 +110,7 @@ export class UserSubscriptionsActions {
 		UserSubscriptionsActions.ListClaims,
 		UserSubscriptionsActions.ListEntitlements,
 		UserSubscriptionsActions.ListUsageLimits,
+		UserSubscriptionsActions.ListUsagesAndLimits,
 		UserSubscriptionsActions.ListUserSubscriptions,
 	];
 	/** All permission-management-level actions. */

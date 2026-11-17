@@ -309,6 +309,7 @@ The following submodules are available:
 - [opsworks_cm](./opsworks_cm.md)
 - [organizations](./organizations.md)
 - [osis](./osis.md)
+- [osm](./osm.md)
 - [outposts](./outposts.md)
 - [panorama](./panorama.md)
 - [partnercentral](./partnercentral.md)

@@ -793,6 +793,7 @@ new es.EsActions()
 | <code><a href="#@cdk_utils/iam.es.EsActions.property.StartServiceSoftwareUpdate">StartServiceSoftwareUpdate</a></code> | <code>string</code> | [Write] es:StartServiceSoftwareUpdate. |
 | <code><a href="#@cdk_utils/iam.es.EsActions.property.SwitchoverReplication">SwitchoverReplication</a></code> | <code>string</code> | [Write] es:SwitchoverReplication. |
 | <code><a href="#@cdk_utils/iam.es.EsActions.property.UpdateApplication">UpdateApplication</a></code> | <code>string</code> | [Write] es:UpdateApplication. |
+| <code><a href="#@cdk_utils/iam.es.EsActions.property.UpdateClone">UpdateClone</a></code> | <code>string</code> | [Write] es:UpdateClone. |
 | <code><a href="#@cdk_utils/iam.es.EsActions.property.UpdateDataSource">UpdateDataSource</a></code> | <code>string</code> | [Write] es:UpdateDataSource. |
 | <code><a href="#@cdk_utils/iam.es.EsActions.property.UpdateDirectQueryDataSource">UpdateDirectQueryDataSource</a></code> | <code>string</code> | [Write] es:UpdateDirectQueryDataSource. |
 | <code><a href="#@cdk_utils/iam.es.EsActions.property.UpdateDomainConfig">UpdateDomainConfig</a></code> | <code>string</code> | [Write] es:UpdateDomainConfig. |
@@ -2391,6 +2392,18 @@ public readonly UpdateApplication: string;
 
 ---
 
+##### `UpdateClone`<sup>Required</sup> <a name="UpdateClone" id="@cdk_utils/iam.es.EsActions.property.UpdateClone"></a>
+
+```typescript
+public readonly UpdateClone: string;
+```
+
+- *Type:* string
+
+[Write] es:UpdateClone.
+
+---
+
 ##### `UpdateDataSource`<sup>Required</sup> <a name="UpdateDataSource" id="@cdk_utils/iam.es.EsActions.property.UpdateDataSource"></a>
 
 ```typescript
@@ -2855,6 +2868,7 @@ new es.EsOperations()
 | <code><a href="#@cdk_utils/iam.es.EsOperations.property.RemoveTags">RemoveTags</a></code> | <code>string[]</code> | IAM actions required for the RemoveTags API call. |
 | <code><a href="#@cdk_utils/iam.es.EsOperations.property.RevokeVpcEndpointAccess">RevokeVpcEndpointAccess</a></code> | <code>string[]</code> | IAM actions required for the RevokeVpcEndpointAccess API call. |
 | <code><a href="#@cdk_utils/iam.es.EsOperations.property.StartElasticsearchServiceSoftwareUpdate">StartElasticsearchServiceSoftwareUpdate</a></code> | <code>string[]</code> | IAM actions required for the StartElasticsearchServiceSoftwareUpdate API call. |
+| <code><a href="#@cdk_utils/iam.es.EsOperations.property.UpdateClone">UpdateClone</a></code> | <code>string[]</code> | IAM actions required for the UpdateClone API call. |
 | <code><a href="#@cdk_utils/iam.es.EsOperations.property.UpdateElasticsearchDomainConfig">UpdateElasticsearchDomainConfig</a></code> | <code>string[]</code> | IAM actions required for the UpdateElasticsearchDomainConfig API call. |
 | <code><a href="#@cdk_utils/iam.es.EsOperations.property.UpdatePackage">UpdatePackage</a></code> | <code>string[]</code> | IAM actions required for the UpdatePackage API call. |
 | <code><a href="#@cdk_utils/iam.es.EsOperations.property.UpdateVpcEndpoint">UpdateVpcEndpoint</a></code> | <code>string[]</code> | IAM actions required for the UpdateVpcEndpoint API call. |
@@ -3423,6 +3437,18 @@ public readonly StartElasticsearchServiceSoftwareUpdate: string[];
 - *Type:* string[]
 
 IAM actions required for the StartElasticsearchServiceSoftwareUpdate API call.
+
+---
+
+##### `UpdateClone`<sup>Required</sup> <a name="UpdateClone" id="@cdk_utils/iam.es.EsOperations.property.UpdateClone"></a>
+
+```typescript
+public readonly UpdateClone: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateClone API call.
 
 ---
 

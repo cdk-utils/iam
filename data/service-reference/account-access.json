@@ -361,6 +361,16 @@
       ]
     },
     {
+      "Name": "GetRoleCredentials",
+      "SDK": [
+        {
+          "Name": "account-access-runtime",
+          "Method": "get_role_credentials",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListApplications",
       "AuthorizedActions": [
         {
@@ -388,6 +398,16 @@
         {
           "Name": "account-access",
           "Method": "list_entitlements",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRoles",
+      "SDK": [
+        {
+          "Name": "account-access-runtime",
+          "Method": "list_roles",
           "Package": "Boto3"
         }
       ]

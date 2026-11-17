@@ -1435,6 +1435,7 @@ export class ConfigOperations {
 	/** IAM actions required for the PutServiceLinkedConfigurationRecorder API call. */
 	static readonly PutServiceLinkedConfigurationRecorder: string[] = [
 		"config:PutServiceLinkedConfigurationRecorder",
+		"config:TagResource",
 	];
 	/** IAM actions required for the PutStoredQuery API call. */
 	static readonly PutStoredQuery: string[] = [

@@ -310,6 +310,7 @@ export * as opsworks from "./services/opsworks";
 export * as opsworks_cm from "./services/opsworks-cm";
 export * as organizations from "./services/organizations";
 export * as osis from "./services/osis";
+export * as osm from "./services/osm";
 export * as outposts from "./services/outposts";
 export * as panorama from "./services/panorama";
 export * as partnercentral from "./services/partnercentral";

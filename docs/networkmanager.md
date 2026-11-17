@@ -3286,12 +3286,14 @@ new networkmanager.NetworkManagerOperations()
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.AcceptAttachment">AcceptAttachment</a></code> | <code>string[]</code> | IAM actions required for the AcceptAttachment API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.AssociateConnectPeer">AssociateConnectPeer</a></code> | <code>string[]</code> | IAM actions required for the AssociateConnectPeer API call. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.AssociateContextStore">AssociateContextStore</a></code> | <code>string[]</code> | IAM actions required for the AssociateContextStore API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.AssociateCustomerGateway">AssociateCustomerGateway</a></code> | <code>string[]</code> | IAM actions required for the AssociateCustomerGateway API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.AssociateLink">AssociateLink</a></code> | <code>string[]</code> | IAM actions required for the AssociateLink API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.AssociateTransitGatewayConnectPeer">AssociateTransitGatewayConnectPeer</a></code> | <code>string[]</code> | IAM actions required for the AssociateTransitGatewayConnectPeer API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.CreateConnectAttachment">CreateConnectAttachment</a></code> | <code>string[]</code> | IAM actions required for the CreateConnectAttachment API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.CreateConnection">CreateConnection</a></code> | <code>string[]</code> | IAM actions required for the CreateConnection API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.CreateConnectPeer">CreateConnectPeer</a></code> | <code>string[]</code> | IAM actions required for the CreateConnectPeer API call. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.CreateContextStore">CreateContextStore</a></code> | <code>string[]</code> | IAM actions required for the CreateContextStore API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.CreateCoreNetwork">CreateCoreNetwork</a></code> | <code>string[]</code> | IAM actions required for the CreateCoreNetwork API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.CreateCoreNetworkPrefixListAssociation">CreateCoreNetworkPrefixListAssociation</a></code> | <code>string[]</code> | IAM actions required for the CreateCoreNetworkPrefixListAssociation API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.CreateDevice">CreateDevice</a></code> | <code>string[]</code> | IAM actions required for the CreateDevice API call. |
@@ -3306,6 +3308,7 @@ new networkmanager.NetworkManagerOperations()
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.DeleteAttachment">DeleteAttachment</a></code> | <code>string[]</code> | IAM actions required for the DeleteAttachment API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.DeleteConnection">DeleteConnection</a></code> | <code>string[]</code> | IAM actions required for the DeleteConnection API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.DeleteConnectPeer">DeleteConnectPeer</a></code> | <code>string[]</code> | IAM actions required for the DeleteConnectPeer API call. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.DeleteContextStore">DeleteContextStore</a></code> | <code>string[]</code> | IAM actions required for the DeleteContextStore API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.DeleteCoreNetwork">DeleteCoreNetwork</a></code> | <code>string[]</code> | IAM actions required for the DeleteCoreNetwork API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.DeleteCoreNetworkPolicyVersion">DeleteCoreNetworkPolicyVersion</a></code> | <code>string[]</code> | IAM actions required for the DeleteCoreNetworkPolicyVersion API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.DeleteCoreNetworkPrefixListAssociation">DeleteCoreNetworkPrefixListAssociation</a></code> | <code>string[]</code> | IAM actions required for the DeleteCoreNetworkPrefixListAssociation API call. |
@@ -3318,6 +3321,7 @@ new networkmanager.NetworkManagerOperations()
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.DeregisterTransitGateway">DeregisterTransitGateway</a></code> | <code>string[]</code> | IAM actions required for the DeregisterTransitGateway API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.DescribeGlobalNetworks">DescribeGlobalNetworks</a></code> | <code>string[]</code> | IAM actions required for the DescribeGlobalNetworks API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.DisassociateConnectPeer">DisassociateConnectPeer</a></code> | <code>string[]</code> | IAM actions required for the DisassociateConnectPeer API call. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.DisassociateContextStore">DisassociateContextStore</a></code> | <code>string[]</code> | IAM actions required for the DisassociateContextStore API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.DisassociateCustomerGateway">DisassociateCustomerGateway</a></code> | <code>string[]</code> | IAM actions required for the DisassociateCustomerGateway API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.DisassociateLink">DisassociateLink</a></code> | <code>string[]</code> | IAM actions required for the DisassociateLink API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.DisassociateTransitGatewayConnectPeer">DisassociateTransitGatewayConnectPeer</a></code> | <code>string[]</code> | IAM actions required for the DisassociateTransitGatewayConnectPeer API call. |
@@ -3326,6 +3330,10 @@ new networkmanager.NetworkManagerOperations()
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.ListAttachmentRoutingPolicyAssociations">ListAttachmentRoutingPolicyAssociations</a></code> | <code>string[]</code> | IAM actions required for the ListAttachmentRoutingPolicyAssociations API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.ListAttachments">ListAttachments</a></code> | <code>string[]</code> | IAM actions required for the ListAttachments API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.ListConnectPeers">ListConnectPeers</a></code> | <code>string[]</code> | IAM actions required for the ListConnectPeers API call. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.ListContextChanges">ListContextChanges</a></code> | <code>string[]</code> | IAM actions required for the ListContextChanges API call. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.ListContexts">ListContexts</a></code> | <code>string[]</code> | IAM actions required for the ListContexts API call. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.ListContextStoreAssociations">ListContextStoreAssociations</a></code> | <code>string[]</code> | IAM actions required for the ListContextStoreAssociations API call. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.ListContextStores">ListContextStores</a></code> | <code>string[]</code> | IAM actions required for the ListContextStores API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.ListCoreNetworkPolicyVersions">ListCoreNetworkPolicyVersions</a></code> | <code>string[]</code> | IAM actions required for the ListCoreNetworkPolicyVersions API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.ListCoreNetworkPrefixListAssociations">ListCoreNetworkPrefixListAssociations</a></code> | <code>string[]</code> | IAM actions required for the ListCoreNetworkPrefixListAssociations API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.ListCoreNetworkRoutingInformation">ListCoreNetworkRoutingInformation</a></code> | <code>string[]</code> | IAM actions required for the ListCoreNetworkRoutingInformation API call. |
@@ -3337,6 +3345,9 @@ new networkmanager.NetworkManagerOperations()
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.opGetConnections">opGetConnections</a></code> | <code>string[]</code> | IAM actions required for the GetConnections API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.opGetConnectPeer">opGetConnectPeer</a></code> | <code>string[]</code> | IAM actions required for the GetConnectPeer API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.opGetConnectPeerAssociations">opGetConnectPeerAssociations</a></code> | <code>string[]</code> | IAM actions required for the GetConnectPeerAssociations API call. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.opGetContextStore">opGetContextStore</a></code> | <code>string[]</code> | IAM actions required for the GetContextStore API call. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.opGetContextStoreAssociation">opGetContextStoreAssociation</a></code> | <code>string[]</code> | IAM actions required for the GetContextStoreAssociation API call. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.opGetContextVersion">opGetContextVersion</a></code> | <code>string[]</code> | IAM actions required for the GetContextVersion API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.opGetCoreNetwork">opGetCoreNetwork</a></code> | <code>string[]</code> | IAM actions required for the GetCoreNetwork API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.opGetCoreNetworkChangeEvents">opGetCoreNetworkChangeEvents</a></code> | <code>string[]</code> | IAM actions required for the GetCoreNetworkChangeEvents API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.opGetCoreNetworkChangeSet">opGetCoreNetworkChangeSet</a></code> | <code>string[]</code> | IAM actions required for the GetCoreNetworkChangeSet API call. |
@@ -3373,6 +3384,7 @@ new networkmanager.NetworkManagerOperations()
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.UpdateAttachmentNatConfiguration">UpdateAttachmentNatConfiguration</a></code> | <code>string[]</code> | IAM actions required for the UpdateAttachmentNatConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.UpdateConnection">UpdateConnection</a></code> | <code>string[]</code> | IAM actions required for the UpdateConnection API call. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.UpdateContextStore">UpdateContextStore</a></code> | <code>string[]</code> | IAM actions required for the UpdateContextStore API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.UpdateCoreNetwork">UpdateCoreNetwork</a></code> | <code>string[]</code> | IAM actions required for the UpdateCoreNetwork API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.UpdateDevice">UpdateDevice</a></code> | <code>string[]</code> | IAM actions required for the UpdateDevice API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.UpdateDirectConnectGatewayAttachment">UpdateDirectConnectGatewayAttachment</a></code> | <code>string[]</code> | IAM actions required for the UpdateDirectConnectGatewayAttachment API call. |
@@ -3405,6 +3417,18 @@ public readonly AssociateConnectPeer: string[];
 - *Type:* string[]
 
 IAM actions required for the AssociateConnectPeer API call.
+
+---
+
+##### `AssociateContextStore`<sup>Required</sup> <a name="AssociateContextStore" id="@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.AssociateContextStore"></a>
+
+```typescript
+public readonly AssociateContextStore: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the AssociateContextStore API call.
 
 ---
 
@@ -3477,6 +3501,18 @@ public readonly CreateConnectPeer: string[];
 - *Type:* string[]
 
 IAM actions required for the CreateConnectPeer API call.
+
+---
+
+##### `CreateContextStore`<sup>Required</sup> <a name="CreateContextStore" id="@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.CreateContextStore"></a>
+
+```typescript
+public readonly CreateContextStore: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateContextStore API call.
 
 ---
 
@@ -3648,6 +3684,18 @@ IAM actions required for the DeleteConnectPeer API call.
 
 ---
 
+##### `DeleteContextStore`<sup>Required</sup> <a name="DeleteContextStore" id="@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.DeleteContextStore"></a>
+
+```typescript
+public readonly DeleteContextStore: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteContextStore API call.
+
+---
+
 ##### `DeleteCoreNetwork`<sup>Required</sup> <a name="DeleteCoreNetwork" id="@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.DeleteCoreNetwork"></a>
 
 ```typescript
@@ -3792,6 +3840,18 @@ IAM actions required for the DisassociateConnectPeer API call.
 
 ---
 
+##### `DisassociateContextStore`<sup>Required</sup> <a name="DisassociateContextStore" id="@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.DisassociateContextStore"></a>
+
+```typescript
+public readonly DisassociateContextStore: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DisassociateContextStore API call.
+
+---
+
 ##### `DisassociateCustomerGateway`<sup>Required</sup> <a name="DisassociateCustomerGateway" id="@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.DisassociateCustomerGateway"></a>
 
 ```typescript
@@ -3885,6 +3945,54 @@ public readonly ListConnectPeers: string[];
 - *Type:* string[]
 
 IAM actions required for the ListConnectPeers API call.
+
+---
+
+##### `ListContextChanges`<sup>Required</sup> <a name="ListContextChanges" id="@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.ListContextChanges"></a>
+
+```typescript
+public readonly ListContextChanges: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListContextChanges API call.
+
+---
+
+##### `ListContexts`<sup>Required</sup> <a name="ListContexts" id="@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.ListContexts"></a>
+
+```typescript
+public readonly ListContexts: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListContexts API call.
+
+---
+
+##### `ListContextStoreAssociations`<sup>Required</sup> <a name="ListContextStoreAssociations" id="@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.ListContextStoreAssociations"></a>
+
+```typescript
+public readonly ListContextStoreAssociations: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListContextStoreAssociations API call.
+
+---
+
+##### `ListContextStores`<sup>Required</sup> <a name="ListContextStores" id="@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.ListContextStores"></a>
+
+```typescript
+public readonly ListContextStores: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListContextStores API call.
 
 ---
 
@@ -4017,6 +4125,42 @@ public readonly opGetConnectPeerAssociations: string[];
 - *Type:* string[]
 
 IAM actions required for the GetConnectPeerAssociations API call.
+
+---
+
+##### `opGetContextStore`<sup>Required</sup> <a name="opGetContextStore" id="@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.opGetContextStore"></a>
+
+```typescript
+public readonly opGetContextStore: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetContextStore API call.
+
+---
+
+##### `opGetContextStoreAssociation`<sup>Required</sup> <a name="opGetContextStoreAssociation" id="@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.opGetContextStoreAssociation"></a>
+
+```typescript
+public readonly opGetContextStoreAssociation: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetContextStoreAssociation API call.
+
+---
+
+##### `opGetContextVersion`<sup>Required</sup> <a name="opGetContextVersion" id="@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.opGetContextVersion"></a>
+
+```typescript
+public readonly opGetContextVersion: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetContextVersion API call.
 
 ---
 
@@ -4449,6 +4593,18 @@ public readonly UpdateConnection: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateConnection API call.
+
+---
+
+##### `UpdateContextStore`<sup>Required</sup> <a name="UpdateContextStore" id="@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.UpdateContextStore"></a>
+
+```typescript
+public readonly UpdateContextStore: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateContextStore API call.
 
 ---
 

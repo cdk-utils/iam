@@ -2579,6 +2579,10 @@
           "Service": "codebuild"
         },
         {
+          "Name": "DescribeSecret",
+          "Service": "secretsmanager"
+        },
+        {
           "Name": "PassRole",
           "Context": {
             "iam:PassedToService": [
@@ -3325,6 +3329,10 @@
     {
       "Name": "UpdateProject",
       "AuthorizedActions": [
+        {
+          "Name": "DescribeSecret",
+          "Service": "secretsmanager"
+        },
         {
           "Name": "PassRole",
           "Context": {

@@ -799,6 +799,26 @@
       }
     },
     {
+      "Name": "GetSellerReportingData",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SellerDataset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "GetTaxComplianceProfile",
       "Annotations": {
         "Properties": {
@@ -3037,6 +3057,12 @@
       "Name": "SellerDashboard",
       "ARNFormats": [
         "arn:${Partition}:aws-marketplace::${Account}:${Catalog}/ReportingData/${FactTable}/Dashboard/${DashboardName}"
+      ]
+    },
+    {
+      "Name": "SellerDataset",
+      "ARNFormats": [
+        "arn:${Partition}:aws-marketplace::${Account}:${Catalog}/ReportingData/${FactTable}/Dataset/${DatasetName}"
       ]
     },
     {

@@ -435,6 +435,22 @@
       }
     },
     {
+      "Name": "RestoreDomain",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "RetrieveDomainAuthCode",
       "Annotations": {
         "Properties": {
@@ -996,6 +1012,22 @@
         {
           "Name": "route53domains",
           "Method": "resend_operation_authorization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RestoreDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "RestoreDomain",
+          "Service": "route53domains"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53domains",
+          "Method": "restore_domain",
           "Package": "Boto3"
         }
       ]

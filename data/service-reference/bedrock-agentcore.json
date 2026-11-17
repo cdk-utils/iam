@@ -3265,6 +3265,13 @@
     },
     {
       "Name": "InvokeGateway",
+      "ActionConditionKeys": [
+        "bedrock-agentcore:InboundJwtClaim/aud",
+        "bedrock-agentcore:InboundJwtClaim/client_id",
+        "bedrock-agentcore:InboundJwtClaim/iss",
+        "bedrock-agentcore:InboundJwtClaim/scope",
+        "bedrock-agentcore:InboundJwtClaim/sub"
+      ],
       "Annotations": {
         "Properties": {
           "IsList": false,
@@ -3320,6 +3327,26 @@
       "Resources": [
         {
           "Name": "registry"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "InvokeWebAnswer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "web-answer"
         }
       ],
       "SupportedBy": {
@@ -8399,6 +8426,16 @@
       ]
     },
     {
+      "Name": "InvokeWebSearch",
+      "SDK": [
+        {
+          "Name": "bedrock-agentcore",
+          "Method": "invoke_web_search",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListABTests",
       "AuthorizedActions": [
         {
@@ -9778,6 +9815,10 @@
       "Name": "UpdateGateway",
       "AuthorizedActions": [
         {
+          "Name": "CreateGateway",
+          "Service": "bedrock-agentcore"
+        },
+        {
           "Name": "PassRole",
           "Context": {
             "iam:PassedToService": [
@@ -10396,6 +10437,12 @@
       ],
       "ConditionKeys": [
         "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "web-answer",
+      "ARNFormats": [
+        "arn:${Partition}:bedrock-agentcore:${Region}:aws:tool/web-answer.v1"
       ]
     },
     {

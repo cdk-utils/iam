@@ -1015,6 +1015,7 @@ new securityagent.SecurityagentActions()
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.ListThreatModels">ListThreatModels</a></code> | <code>string</code> | [List] securityagent:ListThreatModels. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.ListThreats">ListThreats</a></code> | <code>string</code> | [List] securityagent:ListThreats. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.PutDesignReviewFeedback">PutDesignReviewFeedback</a></code> | <code>string</code> | [Write] securityagent:PutDesignReviewFeedback. |
+| <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.ResumePentestJob">ResumePentestJob</a></code> | <code>string</code> | [Write] securityagent:ResumePentestJob. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.StartCodeRemediation">StartCodeRemediation</a></code> | <code>string</code> | [Write] securityagent:StartCodeRemediation. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.StartCodeReviewJob">StartCodeReviewJob</a></code> | <code>string</code> | [Write] securityagent:StartCodeReviewJob. |
@@ -2218,6 +2219,18 @@ public readonly PutDesignReviewFeedback: string;
 - *Type:* string
 
 [Write] securityagent:PutDesignReviewFeedback.
+
+---
+
+##### `ResumePentestJob`<sup>Required</sup> <a name="ResumePentestJob" id="@cdk_utils/iam.securityagent.SecurityagentActions.property.ResumePentestJob"></a>
+
+```typescript
+public readonly ResumePentestJob: string;
+```
+
+- *Type:* string
+
+[Write] securityagent:ResumePentestJob.
 
 ---
 

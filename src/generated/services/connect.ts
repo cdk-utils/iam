@@ -829,6 +829,9 @@ export class ConnectActions {
 	/** [Write] connect:UpdateNotificationContent */
 	static readonly UpdateNotificationContent =
 		"connect:UpdateNotificationContent";
+	/** [Write] connect:UpdateOutboundEmailContactMessage */
+	static readonly UpdateOutboundEmailContactMessage =
+		"connect:UpdateOutboundEmailContactMessage";
 	/** [Write] connect:UpdateParticipantAuthentication */
 	static readonly UpdateParticipantAuthentication =
 		"connect:UpdateParticipantAuthentication";
@@ -1204,6 +1207,7 @@ export class ConnectActions {
 		ConnectActions.UpdateMetricContent,
 		ConnectActions.UpdateMetricMetadata,
 		ConnectActions.UpdateNotificationContent,
+		ConnectActions.UpdateOutboundEmailContactMessage,
 		ConnectActions.UpdateParticipantAuthentication,
 		ConnectActions.UpdateParticipantRoleConfig,
 		ConnectActions.UpdatePhoneNumber,
@@ -4342,6 +4346,8 @@ export class ConnectOperations {
 	static readonly ActivateEvaluationForm: string[] = [
 		"connect:ActivateEvaluationForm",
 	];
+	/** IAM actions required for the ApproveTimeOff API call. */
+	static readonly ApproveTimeOff: string[] = [];
 	/** IAM actions required for the AssociateAnalyticsDataSet API call. */
 	static readonly AssociateAnalyticsDataSet: string[] = [
 		"connect:AssociateAnalyticsDataSet",
@@ -4448,6 +4454,8 @@ export class ConnectOperations {
 	];
 	/** IAM actions required for the CancelParticipantAuthentication API call. */
 	static readonly CancelParticipantAuthentication: string[] = [];
+	/** IAM actions required for the CancelTimeOff API call. */
+	static readonly CancelTimeOff: string[] = [];
 	/** IAM actions required for the ClaimPhoneNumber API call. */
 	static readonly ClaimPhoneNumber: string[] = [
 		"connect:ClaimPhoneNumber",
@@ -4603,6 +4611,8 @@ export class ConnectOperations {
 	];
 	/** IAM actions required for the CreateTestCase API call. */
 	static readonly CreateTestCase: string[] = ["connect:TagResource"];
+	/** IAM actions required for the CreateTimeOff API call. */
+	static readonly CreateTimeOff: string[] = [];
 	/** IAM actions required for the CreateTrafficDistributionGroup API call. */
 	static readonly CreateTrafficDistributionGroup: string[] = [
 		"connect:CreateTrafficDistributionGroup",
@@ -4648,6 +4658,8 @@ export class ConnectOperations {
 	static readonly DeactivateEvaluationForm: string[] = [
 		"connect:DeactivateEvaluationForm",
 	];
+	/** IAM actions required for the DeleteAllEntitySessions API call. */
+	static readonly DeleteAllEntitySessions: string[] = [];
 	/** IAM actions required for the DeleteAttachedFile API call. */
 	static readonly DeleteAttachedFile: string[] = ["connect:DeleteAttachedFile"];
 	/** IAM actions required for the DeleteContactData API call. */
@@ -5012,6 +5024,8 @@ export class ConnectOperations {
 	static readonly opGetTaskTemplate: string[] = ["connect:GetTaskTemplate"];
 	/** IAM actions required for the GetTestCaseExecutionSummary API call. */
 	static readonly opGetTestCaseExecutionSummary: string[] = [];
+	/** IAM actions required for the GetTimeOff API call. */
+	static readonly opGetTimeOff: string[] = [];
 	/** IAM actions required for the GetTrafficDistribution API call. */
 	static readonly opGetTrafficDistribution: string[] = [
 		"connect:GetTrafficDistribution",
@@ -5277,8 +5291,12 @@ export class ConnectOperations {
 	static readonly MonitorContact: string[] = ["connect:MonitorContact"];
 	/** IAM actions required for the PauseContact API call. */
 	static readonly PauseContact: string[] = ["connect:PauseContact"];
+	/** IAM actions required for the PutTimeOffBalance API call. */
+	static readonly PutTimeOffBalance: string[] = [];
 	/** IAM actions required for the PutUserStatus API call. */
 	static readonly PutUserStatus: string[] = ["connect:PutUserStatus"];
+	/** IAM actions required for the RejectTimeOff API call. */
+	static readonly RejectTimeOff: string[] = [];
 	/** IAM actions required for the ReleasePhoneNumber API call. */
 	static readonly ReleasePhoneNumber: string[] = ["connect:ReleasePhoneNumber"];
 	/** IAM actions required for the ReplicateInstance API call. */
@@ -5639,7 +5657,9 @@ export class ConnectOperations {
 		"connect:UpdateNotificationContent",
 	];
 	/** IAM actions required for the UpdateOutboundEmailContactMessage API call. */
-	static readonly UpdateOutboundEmailContactMessage: string[] = [];
+	static readonly UpdateOutboundEmailContactMessage: string[] = [
+		"connect:UpdateOutboundEmailContactMessage",
+	];
 	/** IAM actions required for the UpdateParticipantAuthentication API call. */
 	static readonly UpdateParticipantAuthentication: string[] = [
 		"connect:UpdateParticipantAuthentication",
@@ -7423,6 +7443,14 @@ export class ConnectConditions {
 	static readonly UpdateNotificationContentConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"connect:InstanceId",
+	];
+	/** Condition keys applicable to the UpdateOutboundEmailContactMessage action. */
+	static readonly UpdateOutboundEmailContactMessageConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"connect:Channel",
+		"connect:ContactAssociationId",
+		"connect:InstanceId",
+		"connect:UserArn",
 	];
 	/** Condition keys applicable to the UpdateParticipantAuthentication action. */
 	static readonly UpdateParticipantAuthenticationConditionKeys: string[] = [

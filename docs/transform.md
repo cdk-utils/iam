@@ -356,6 +356,9 @@ new transform.TransformActions()
 | <code><a href="#@cdk_utils/iam.transform.TransformActions.property.actionGetAgent">actionGetAgent</a></code> | <code>string</code> | [Read] transform:GetAgent. |
 | <code><a href="#@cdk_utils/iam.transform.TransformActions.property.actionGetAgentRuntimeConfiguration">actionGetAgentRuntimeConfiguration</a></code> | <code>string</code> | [Read] transform:GetAgentRuntimeConfiguration. |
 | <code><a href="#@cdk_utils/iam.transform.TransformActions.property.actionGetConnector">actionGetConnector</a></code> | <code>string</code> | [Read] transform:GetConnector. |
+| <code><a href="#@cdk_utils/iam.transform.TransformActions.property.actionGetPartner">actionGetPartner</a></code> | <code>string</code> | [Read] transform:GetPartner. |
+| <code><a href="#@cdk_utils/iam.transform.TransformActions.property.actionGetPartnerByAccountId">actionGetPartnerByAccountId</a></code> | <code>string</code> | [Read] transform:GetPartnerByAccountId. |
+| <code><a href="#@cdk_utils/iam.transform.TransformActions.property.actionGetPartnerByArn">actionGetPartnerByArn</a></code> | <code>string</code> | [Read] transform:GetPartnerByArn. |
 | <code><a href="#@cdk_utils/iam.transform.TransformActions.property.actionGetWebAppUrl">actionGetWebAppUrl</a></code> | <code>string</code> | [Read] transform:GetWebAppUrl. |
 | <code><a href="#@cdk_utils/iam.transform.TransformActions.property.AllListActions">AllListActions</a></code> | <code>string[]</code> | All list-level actions. |
 | <code><a href="#@cdk_utils/iam.transform.TransformActions.property.AllPermissionManagementActions">AllPermissionManagementActions</a></code> | <code>string[]</code> | All permission-management-level actions. |
@@ -372,7 +375,9 @@ new transform.TransformActions()
 | <code><a href="#@cdk_utils/iam.transform.TransformActions.property.ListProfiles">ListProfiles</a></code> | <code>string</code> | [List] transform:ListProfiles. |
 | <code><a href="#@cdk_utils/iam.transform.TransformActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [Read] transform:ListTagsForResource. |
 | <code><a href="#@cdk_utils/iam.transform.TransformActions.property.PutAgentRuntimeConfiguration">PutAgentRuntimeConfiguration</a></code> | <code>string</code> | [Write] transform:PutAgentRuntimeConfiguration. |
+| <code><a href="#@cdk_utils/iam.transform.TransformActions.property.PutPartner">PutPartner</a></code> | <code>string</code> | [Write] transform:PutPartner. |
 | <code><a href="#@cdk_utils/iam.transform.TransformActions.property.RejectConnector">RejectConnector</a></code> | <code>string</code> | [Write] transform:RejectConnector. |
+| <code><a href="#@cdk_utils/iam.transform.TransformActions.property.RemovePartner">RemovePartner</a></code> | <code>string</code> | [Write] transform:RemovePartner. |
 | <code><a href="#@cdk_utils/iam.transform.TransformActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.transform.TransformActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] transform:TagResource. |
 | <code><a href="#@cdk_utils/iam.transform.TransformActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] transform:UntagResource. |
@@ -439,6 +444,42 @@ public readonly actionGetConnector: string;
 - *Type:* string
 
 [Read] transform:GetConnector.
+
+---
+
+##### `actionGetPartner`<sup>Required</sup> <a name="actionGetPartner" id="@cdk_utils/iam.transform.TransformActions.property.actionGetPartner"></a>
+
+```typescript
+public readonly actionGetPartner: string;
+```
+
+- *Type:* string
+
+[Read] transform:GetPartner.
+
+---
+
+##### `actionGetPartnerByAccountId`<sup>Required</sup> <a name="actionGetPartnerByAccountId" id="@cdk_utils/iam.transform.TransformActions.property.actionGetPartnerByAccountId"></a>
+
+```typescript
+public readonly actionGetPartnerByAccountId: string;
+```
+
+- *Type:* string
+
+[Read] transform:GetPartnerByAccountId.
+
+---
+
+##### `actionGetPartnerByArn`<sup>Required</sup> <a name="actionGetPartnerByArn" id="@cdk_utils/iam.transform.TransformActions.property.actionGetPartnerByArn"></a>
+
+```typescript
+public readonly actionGetPartnerByArn: string;
+```
+
+- *Type:* string
+
+[Read] transform:GetPartnerByArn.
 
 ---
 
@@ -634,6 +675,18 @@ public readonly PutAgentRuntimeConfiguration: string;
 
 ---
 
+##### `PutPartner`<sup>Required</sup> <a name="PutPartner" id="@cdk_utils/iam.transform.TransformActions.property.PutPartner"></a>
+
+```typescript
+public readonly PutPartner: string;
+```
+
+- *Type:* string
+
+[Write] transform:PutPartner.
+
+---
+
 ##### `RejectConnector`<sup>Required</sup> <a name="RejectConnector" id="@cdk_utils/iam.transform.TransformActions.property.RejectConnector"></a>
 
 ```typescript
@@ -643,6 +696,18 @@ public readonly RejectConnector: string;
 - *Type:* string
 
 [Write] transform:RejectConnector.
+
+---
+
+##### `RemovePartner`<sup>Required</sup> <a name="RemovePartner" id="@cdk_utils/iam.transform.TransformActions.property.RemovePartner"></a>
+
+```typescript
+public readonly RemovePartner: string;
+```
+
+- *Type:* string
+
+[Write] transform:RemovePartner.
 
 ---
 

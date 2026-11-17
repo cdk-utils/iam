@@ -422,7 +422,7 @@
         }
       },
       "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
+        "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": false
       }
     },
@@ -1410,8 +1410,8 @@
         }
       },
       "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
       }
     },
     {
@@ -1425,8 +1425,8 @@
         }
       },
       "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
       }
     }
   ],
@@ -1597,6 +1597,15 @@
         {
           "Name": "CreateWebACL",
           "Service": "wafv2"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "wafv2.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
         },
         {
           "Name": "TagResource",
@@ -2466,6 +2475,15 @@
     {
       "Name": "UpdateWebACL",
       "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "wafv2.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
         {
           "Name": "UpdateWebACL",
           "Service": "wafv2"

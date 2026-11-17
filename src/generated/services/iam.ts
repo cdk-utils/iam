@@ -1770,6 +1770,8 @@ export class IAMOperations {
 	static readonly opGetPolicyVersion: string[] = ["iam:GetPolicyVersion"];
 	/** IAM actions required for the GetRequestAuthorizationDetails API call. */
 	static readonly opGetRequestAuthorizationDetails: string[] = [];
+	/** IAM actions required for the GetRequestAuthorizationPolicy API call. */
+	static readonly opGetRequestAuthorizationPolicy: string[] = [];
 	/** IAM actions required for the GetRole API call. */
 	static readonly opGetRole: string[] = ["iam:GetRole"];
 	/** IAM actions required for the GetRolePolicy API call. */

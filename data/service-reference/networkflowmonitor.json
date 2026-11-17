@@ -28,6 +28,31 @@
       }
     },
     {
+      "Name": "CreatePerformanceMonitor",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "performancemonitor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "CreateScope",
       "ActionConditionKeys": [
         "aws:RequestTag/${TagKey}",
@@ -61,6 +86,27 @@
       "Resources": [
         {
           "Name": "monitor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeletePerformanceMonitor",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "performancemonitor"
         }
       ],
       "SupportedBy": {
@@ -111,6 +157,48 @@
       }
     },
     {
+      "Name": "GetMonitorScopeSuggestions",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "performancemonitor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetPerformanceMonitor",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "performancemonitor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "GetQueryResultsMonitorTopContributors",
       "Annotations": {
         "Properties": {
@@ -124,6 +212,27 @@
       "Resources": [
         {
           "Name": "monitor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetQueryResultsPerformanceMonitor",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": true,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "performancemonitor"
         }
       ],
       "SupportedBy": {
@@ -187,6 +296,27 @@
       "Resources": [
         {
           "Name": "monitor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetQueryStatusPerformanceMonitor",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": true,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "performancemonitor"
         }
       ],
       "SupportedBy": {
@@ -274,6 +404,22 @@
       }
     },
     {
+      "Name": "ListPerformanceMonitors",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ListScopes",
       "Annotations": {
         "Properties": {
@@ -303,6 +449,9 @@
       "Resources": [
         {
           "Name": "monitor"
+        },
+        {
+          "Name": "performancemonitor"
         },
         {
           "Name": "scope"
@@ -342,6 +491,27 @@
       "Resources": [
         {
           "Name": "monitor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartQueryPerformanceMonitor",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": true,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "performancemonitor"
         }
       ],
       "SupportedBy": {
@@ -413,6 +583,27 @@
       }
     },
     {
+      "Name": "StopQueryPerformanceMonitor",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": true,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "performancemonitor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "StopQueryWorkloadInsightsTopContributors",
       "Annotations": {
         "Properties": {
@@ -474,6 +665,9 @@
           "Name": "monitor"
         },
         {
+          "Name": "performancemonitor"
+        },
+        {
           "Name": "scope"
         }
       ],
@@ -501,6 +695,9 @@
           "Name": "monitor"
         },
         {
+          "Name": "performancemonitor"
+        },
+        {
           "Name": "scope"
         }
       ],
@@ -523,6 +720,27 @@
       "Resources": [
         {
           "Name": "monitor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdatePerformanceMonitor",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "performancemonitor"
         }
       ],
       "SupportedBy": {
@@ -594,6 +812,26 @@
       ]
     },
     {
+      "Name": "CreatePerformanceMonitor",
+      "AuthorizedActions": [
+        {
+          "Name": "CreatePerformanceMonitor",
+          "Service": "networkflowmonitor"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "networkflowmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "networkflowmonitor",
+          "Method": "create_performance_monitor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "CreateScope",
       "AuthorizedActions": [
         {
@@ -625,6 +863,22 @@
         {
           "Name": "networkflowmonitor",
           "Method": "delete_monitor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePerformanceMonitor",
+      "AuthorizedActions": [
+        {
+          "Name": "DeletePerformanceMonitor",
+          "Service": "networkflowmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "networkflowmonitor",
+          "Method": "delete_performance_monitor",
           "Package": "Boto3"
         }
       ]
@@ -662,6 +916,38 @@
       ]
     },
     {
+      "Name": "GetMonitorScopeSuggestions",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMonitorScopeSuggestions",
+          "Service": "networkflowmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "networkflowmonitor",
+          "Method": "get_monitor_scope_suggestions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPerformanceMonitor",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPerformanceMonitor",
+          "Service": "networkflowmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "networkflowmonitor",
+          "Method": "get_performance_monitor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetQueryResultsMonitorTopContributors",
       "AuthorizedActions": [
         {
@@ -673,6 +959,22 @@
         {
           "Name": "networkflowmonitor",
           "Method": "get_query_results_monitor_top_contributors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetQueryResultsPerformanceMonitor",
+      "AuthorizedActions": [
+        {
+          "Name": "GetQueryResultsPerformanceMonitor",
+          "Service": "networkflowmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "networkflowmonitor",
+          "Method": "get_query_results_performance_monitor",
           "Package": "Boto3"
         }
       ]
@@ -721,6 +1023,22 @@
         {
           "Name": "networkflowmonitor",
           "Method": "get_query_status_monitor_top_contributors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetQueryStatusPerformanceMonitor",
+      "AuthorizedActions": [
+        {
+          "Name": "GetQueryStatusPerformanceMonitor",
+          "Service": "networkflowmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "networkflowmonitor",
+          "Method": "get_query_status_performance_monitor",
           "Package": "Boto3"
         }
       ]
@@ -790,6 +1108,22 @@
       ]
     },
     {
+      "Name": "ListPerformanceMonitors",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPerformanceMonitors",
+          "Service": "networkflowmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "networkflowmonitor",
+          "Method": "list_performance_monitors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListScopes",
       "AuthorizedActions": [
         {
@@ -838,6 +1172,22 @@
       ]
     },
     {
+      "Name": "StartQueryPerformanceMonitor",
+      "AuthorizedActions": [
+        {
+          "Name": "StartQueryPerformanceMonitor",
+          "Service": "networkflowmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "networkflowmonitor",
+          "Method": "start_query_performance_monitor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "StartQueryWorkloadInsightsTopContributors",
       "AuthorizedActions": [
         {
@@ -881,6 +1231,22 @@
         {
           "Name": "networkflowmonitor",
           "Method": "stop_query_monitor_top_contributors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopQueryPerformanceMonitor",
+      "AuthorizedActions": [
+        {
+          "Name": "StopQueryPerformanceMonitor",
+          "Service": "networkflowmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "networkflowmonitor",
+          "Method": "stop_query_performance_monitor",
           "Package": "Boto3"
         }
       ]
@@ -966,6 +1332,22 @@
       ]
     },
     {
+      "Name": "UpdatePerformanceMonitor",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdatePerformanceMonitor",
+          "Service": "networkflowmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "networkflowmonitor",
+          "Method": "update_performance_monitor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "UpdateScope",
       "AuthorizedActions": [
         {
@@ -987,6 +1369,15 @@
       "Name": "monitor",
       "ARNFormats": [
         "arn:${Partition}:networkflowmonitor:${Region}:${Account}:monitor/${MonitorName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "performancemonitor",
+      "ARNFormats": [
+        "arn:${Partition}:networkflowmonitor:${Region}:${Account}:performancemonitor/${MonitorName}"
       ],
       "ConditionKeys": [
         "aws:ResourceTag/${TagKey}"

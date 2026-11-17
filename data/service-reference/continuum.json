@@ -124,6 +124,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -184,6 +185,7 @@
       "Name": "DeleteIntegration",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -370,6 +372,7 @@
       "Name": "GetIntegration",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -570,6 +573,7 @@
       "Name": "ListIntegrations",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -610,6 +614,7 @@
       "Name": "StartIntegrationAuthorization",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -671,6 +676,7 @@
       "Name": "UpdateIntegration",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -767,6 +773,21 @@
     },
     {
       "Name": "CreateIntegration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateIntegration",
+          "Service": "continuum"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "continuum.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
       "SDK": [
         {
           "Name": "continuum",
@@ -797,6 +818,12 @@
     },
     {
       "Name": "DeleteIntegration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteIntegration",
+          "Service": "continuum"
+        }
+      ],
       "SDK": [
         {
           "Name": "continuum",
@@ -887,6 +914,12 @@
     },
     {
       "Name": "GetIntegration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetIntegration",
+          "Service": "continuum"
+        }
+      ],
       "SDK": [
         {
           "Name": "continuum",
@@ -987,6 +1020,12 @@
     },
     {
       "Name": "ListIntegrations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListIntegrations",
+          "Service": "continuum"
+        }
+      ],
       "SDK": [
         {
           "Name": "continuum",
@@ -1007,6 +1046,12 @@
     },
     {
       "Name": "StartIntegrationAuthorization",
+      "AuthorizedActions": [
+        {
+          "Name": "StartIntegrationAuthorization",
+          "Service": "continuum"
+        }
+      ],
       "SDK": [
         {
           "Name": "continuum",
@@ -1037,6 +1082,21 @@
     },
     {
       "Name": "UpdateIntegration",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "continuum.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateIntegration",
+          "Service": "continuum"
+        }
+      ],
       "SDK": [
         {
           "Name": "continuum",

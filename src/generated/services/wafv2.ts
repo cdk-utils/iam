@@ -1149,6 +1149,7 @@ export class Wafv2Operations {
 	/** IAM actions required for the CreateWebACL API call. */
 	static readonly CreateWebACL: string[] = [
 		"wafv2:CreateWebACL",
+		"iam:PassRole",
 		"wafv2:TagResource",
 	];
 	/** IAM actions required for the DeleteAPIKey API call. */
@@ -1321,7 +1322,10 @@ export class Wafv2Operations {
 	/** IAM actions required for the UpdateRuleGroup API call. */
 	static readonly UpdateRuleGroup: string[] = ["wafv2:UpdateRuleGroup"];
 	/** IAM actions required for the UpdateWebACL API call. */
-	static readonly UpdateWebACL: string[] = ["wafv2:UpdateWebACL"];
+	static readonly UpdateWebACL: string[] = [
+		"iam:PassRole",
+		"wafv2:UpdateWebACL",
+	];
 }
 
 /**

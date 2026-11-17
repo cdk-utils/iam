@@ -1298,6 +1298,7 @@ new cloudformation.CloudFormationActions()
 | <code><a href="#@cdk_utils/iam.cloudformation.CloudFormationActions.property.actionGetStackPolicy">actionGetStackPolicy</a></code> | <code>string</code> | [Read] cloudformation:GetStackPolicy. |
 | <code><a href="#@cdk_utils/iam.cloudformation.CloudFormationActions.property.actionGetTemplate">actionGetTemplate</a></code> | <code>string</code> | [Read] cloudformation:GetTemplate. |
 | <code><a href="#@cdk_utils/iam.cloudformation.CloudFormationActions.property.actionGetTemplateSummary">actionGetTemplateSummary</a></code> | <code>string</code> | [Read] cloudformation:GetTemplateSummary. |
+| <code><a href="#@cdk_utils/iam.cloudformation.CloudFormationActions.property.actionSetAlias">actionSetAlias</a></code> | <code>string</code> | [Write] cloudformation:SetAlias. |
 | <code><a href="#@cdk_utils/iam.cloudformation.CloudFormationActions.property.actionSetStackPolicy">actionSetStackPolicy</a></code> | <code>string</code> | [PermissionManagement] cloudformation:SetStackPolicy. |
 | <code><a href="#@cdk_utils/iam.cloudformation.CloudFormationActions.property.actionSetTypeConfiguration">actionSetTypeConfiguration</a></code> | <code>string</code> | [Write] cloudformation:SetTypeConfiguration. |
 | <code><a href="#@cdk_utils/iam.cloudformation.CloudFormationActions.property.actionSetTypeDefaultVersion">actionSetTypeDefaultVersion</a></code> | <code>string</code> | [Write] cloudformation:SetTypeDefaultVersion. |
@@ -1384,6 +1385,7 @@ new cloudformation.CloudFormationActions()
 | <code><a href="#@cdk_utils/iam.cloudformation.CloudFormationActions.property.RecordHandlerProgress">RecordHandlerProgress</a></code> | <code>string</code> | [Write] cloudformation:RecordHandlerProgress. |
 | <code><a href="#@cdk_utils/iam.cloudformation.CloudFormationActions.property.RegisterPublisher">RegisterPublisher</a></code> | <code>string</code> | [Write] cloudformation:RegisterPublisher. |
 | <code><a href="#@cdk_utils/iam.cloudformation.CloudFormationActions.property.RegisterType">RegisterType</a></code> | <code>string</code> | [Write] cloudformation:RegisterType. |
+| <code><a href="#@cdk_utils/iam.cloudformation.CloudFormationActions.property.RemoveAlias">RemoveAlias</a></code> | <code>string</code> | [Write] cloudformation:RemoveAlias. |
 | <code><a href="#@cdk_utils/iam.cloudformation.CloudFormationActions.property.RollbackStack">RollbackStack</a></code> | <code>string</code> | [Write] cloudformation:RollbackStack. |
 | <code><a href="#@cdk_utils/iam.cloudformation.CloudFormationActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.cloudformation.CloudFormationActions.property.SignalResource">SignalResource</a></code> | <code>string</code> | [Write] cloudformation:SignalResource. |
@@ -1483,6 +1485,18 @@ public readonly actionGetTemplateSummary: string;
 - *Type:* string
 
 [Read] cloudformation:GetTemplateSummary.
+
+---
+
+##### `actionSetAlias`<sup>Required</sup> <a name="actionSetAlias" id="@cdk_utils/iam.cloudformation.CloudFormationActions.property.actionSetAlias"></a>
+
+```typescript
+public readonly actionSetAlias: string;
+```
+
+- *Type:* string
+
+[Write] cloudformation:SetAlias.
 
 ---
 
@@ -2518,6 +2532,18 @@ public readonly RegisterType: string;
 
 ---
 
+##### `RemoveAlias`<sup>Required</sup> <a name="RemoveAlias" id="@cdk_utils/iam.cloudformation.CloudFormationActions.property.RemoveAlias"></a>
+
+```typescript
+public readonly RemoveAlias: string;
+```
+
+- *Type:* string
+
+[Write] cloudformation:RemoveAlias.
+
+---
+
 ##### `RollbackStack`<sup>Required</sup> <a name="RollbackStack" id="@cdk_utils/iam.cloudformation.CloudFormationActions.property.RollbackStack"></a>
 
 ```typescript
@@ -3506,6 +3532,7 @@ new cloudformation.CloudFormationOperations()
 | <code><a href="#@cdk_utils/iam.cloudformation.CloudFormationOperations.property.opGetStackPolicy">opGetStackPolicy</a></code> | <code>string[]</code> | IAM actions required for the GetStackPolicy API call. |
 | <code><a href="#@cdk_utils/iam.cloudformation.CloudFormationOperations.property.opGetTemplate">opGetTemplate</a></code> | <code>string[]</code> | IAM actions required for the GetTemplate API call. |
 | <code><a href="#@cdk_utils/iam.cloudformation.CloudFormationOperations.property.opGetTemplateSummary">opGetTemplateSummary</a></code> | <code>string[]</code> | IAM actions required for the GetTemplateSummary API call. |
+| <code><a href="#@cdk_utils/iam.cloudformation.CloudFormationOperations.property.opSetAlias">opSetAlias</a></code> | <code>string[]</code> | IAM actions required for the SetAlias API call. |
 | <code><a href="#@cdk_utils/iam.cloudformation.CloudFormationOperations.property.opSetStackPolicy">opSetStackPolicy</a></code> | <code>string[]</code> | IAM actions required for the SetStackPolicy API call. |
 | <code><a href="#@cdk_utils/iam.cloudformation.CloudFormationOperations.property.opSetTypeConfiguration">opSetTypeConfiguration</a></code> | <code>string[]</code> | IAM actions required for the SetTypeConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.cloudformation.CloudFormationOperations.property.opSetTypeDefaultVersion">opSetTypeDefaultVersion</a></code> | <code>string[]</code> | IAM actions required for the SetTypeDefaultVersion API call. |
@@ -3513,6 +3540,7 @@ new cloudformation.CloudFormationOperations()
 | <code><a href="#@cdk_utils/iam.cloudformation.CloudFormationOperations.property.RecordHandlerProgress">RecordHandlerProgress</a></code> | <code>string[]</code> | IAM actions required for the RecordHandlerProgress API call. |
 | <code><a href="#@cdk_utils/iam.cloudformation.CloudFormationOperations.property.RegisterPublisher">RegisterPublisher</a></code> | <code>string[]</code> | IAM actions required for the RegisterPublisher API call. |
 | <code><a href="#@cdk_utils/iam.cloudformation.CloudFormationOperations.property.RegisterType">RegisterType</a></code> | <code>string[]</code> | IAM actions required for the RegisterType API call. |
+| <code><a href="#@cdk_utils/iam.cloudformation.CloudFormationOperations.property.RemoveAlias">RemoveAlias</a></code> | <code>string[]</code> | IAM actions required for the RemoveAlias API call. |
 | <code><a href="#@cdk_utils/iam.cloudformation.CloudFormationOperations.property.RollbackStack">RollbackStack</a></code> | <code>string[]</code> | IAM actions required for the RollbackStack API call. |
 | <code><a href="#@cdk_utils/iam.cloudformation.CloudFormationOperations.property.SignalResource">SignalResource</a></code> | <code>string[]</code> | IAM actions required for the SignalResource API call. |
 | <code><a href="#@cdk_utils/iam.cloudformation.CloudFormationOperations.property.StartResourceScan">StartResourceScan</a></code> | <code>string[]</code> | IAM actions required for the StartResourceScan API call. |
@@ -4476,6 +4504,18 @@ IAM actions required for the GetTemplateSummary API call.
 
 ---
 
+##### `opSetAlias`<sup>Required</sup> <a name="opSetAlias" id="@cdk_utils/iam.cloudformation.CloudFormationOperations.property.opSetAlias"></a>
+
+```typescript
+public readonly opSetAlias: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the SetAlias API call.
+
+---
+
 ##### `opSetStackPolicy`<sup>Required</sup> <a name="opSetStackPolicy" id="@cdk_utils/iam.cloudformation.CloudFormationOperations.property.opSetStackPolicy"></a>
 
 ```typescript
@@ -4557,6 +4597,18 @@ public readonly RegisterType: string[];
 - *Type:* string[]
 
 IAM actions required for the RegisterType API call.
+
+---
+
+##### `RemoveAlias`<sup>Required</sup> <a name="RemoveAlias" id="@cdk_utils/iam.cloudformation.CloudFormationOperations.property.RemoveAlias"></a>
+
+```typescript
+public readonly RemoveAlias: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the RemoveAlias API call.
 
 ---
 

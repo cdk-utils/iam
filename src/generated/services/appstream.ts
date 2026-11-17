@@ -207,6 +207,8 @@ export class AppstreamActions {
 	static readonly UpdateEntitlement = "appstream:UpdateEntitlement";
 	/** [Write] appstream:UpdateFleet */
 	static readonly UpdateFleet = "appstream:UpdateFleet";
+	/** [Write] appstream:UpdateImageBuilder */
+	static readonly UpdateImageBuilder = "appstream:UpdateImageBuilder";
 	/** [Write] appstream:UpdateImagePermissions */
 	static readonly UpdateImagePermissions = "appstream:UpdateImagePermissions";
 	/** [Write] appstream:UpdateStack */
@@ -284,6 +286,7 @@ export class AppstreamActions {
 		AppstreamActions.UpdateDirectoryConfig,
 		AppstreamActions.UpdateEntitlement,
 		AppstreamActions.UpdateFleet,
+		AppstreamActions.UpdateImageBuilder,
 		AppstreamActions.UpdateImagePermissions,
 		AppstreamActions.UpdateStack,
 		AppstreamActions.UpdateThemeForStack,
@@ -1005,6 +1008,8 @@ export class AppstreamOperations {
 		"iam:PassRole",
 		"appstream:UpdateFleet",
 	];
+	/** IAM actions required for the UpdateImageBuilder API call. */
+	static readonly UpdateImageBuilder: string[] = [];
 	/** IAM actions required for the UpdateImagePermissions API call. */
 	static readonly UpdateImagePermissions: string[] = [
 		"appstream:UpdateImagePermissions",
@@ -1200,6 +1205,10 @@ export class AppstreamConditions {
 	];
 	/** Condition keys applicable to the UpdateFleet action. */
 	static readonly UpdateFleetConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
+	/** Condition keys applicable to the UpdateImageBuilder action. */
+	static readonly UpdateImageBuilderConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpdateImagePermissions action. */

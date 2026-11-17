@@ -18,6 +18,8 @@ export class SigninActions {
 	static readonly AuthorizeOAuth2Access = "signin:AuthorizeOAuth2Access";
 	/** [Write] signin:CreateAccount */
 	static readonly CreateAccount = "signin:CreateAccount";
+	/** [Read] signin:CreateBearerToken */
+	static readonly CreateBearerToken = "signin:CreateBearerToken";
 	/** [Write] signin:CreateOAuth2PublicClient */
 	static readonly CreateOAuth2PublicClient = "signin:CreateOAuth2PublicClient";
 	/** [Read] signin:CreateOAuth2Token */
@@ -57,6 +59,7 @@ export class SigninActions {
 	static readonly AllReadActions: string[] = [
 		SigninActions.Authenticate,
 		SigninActions.AuthorizeOAuth2Access,
+		SigninActions.CreateBearerToken,
 		SigninActions.CreateOAuth2Token,
 		SigninActions.actionGetConsoleAuthorizationConfiguration,
 		SigninActions.actionGetResourcePolicy,
@@ -400,6 +403,8 @@ export class SigninResources {
  * API operation to required IAM actions mapping for signin.
  */
 export class SigninOperations {
+	/** IAM actions required for the CreateBearerToken API call. */
+	static readonly CreateBearerToken: string[] = [];
 	/** IAM actions required for the CreateOAuth2Token API call. */
 	static readonly CreateOAuth2Token: string[] = ["signin:CreateOAuth2Token"];
 	/** IAM actions required for the CreateOAuth2TokenWithIAM API call. */

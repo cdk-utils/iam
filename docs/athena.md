@@ -473,6 +473,154 @@ Defaults to "*".
 
 ---
 
+### AthenaSystemTableArnComponents <a name="AthenaSystemTableArnComponents" id="@cdk_utils/iam.athena.AthenaSystemTableArnComponents"></a>
+
+Parsed components of a system-table ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.athena.AthenaSystemTableArnComponents.Initializer"></a>
+
+```typescript
+import { athena } from '@cdk_utils/iam'
+
+const athenaSystemTableArnComponents: athena.AthenaSystemTableArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.athena.AthenaSystemTableArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.athena.AthenaSystemTableArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.athena.AthenaSystemTableArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+| <code><a href="#@cdk_utils/iam.athena.AthenaSystemTableArnComponents.property.tableName">tableName</a></code> | <code>string</code> | The TableName component. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.athena.AthenaSystemTableArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.athena.AthenaSystemTableArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.athena.AthenaSystemTableArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+##### `tableName`<sup>Required</sup> <a name="tableName" id="@cdk_utils/iam.athena.AthenaSystemTableArnComponents.property.tableName"></a>
+
+```typescript
+public readonly tableName: string;
+```
+
+- *Type:* string
+
+The TableName component.
+
+---
+
+### AthenaSystemTableArnProps <a name="AthenaSystemTableArnProps" id="@cdk_utils/iam.athena.AthenaSystemTableArnProps"></a>
+
+Properties for building a system-table ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.athena.AthenaSystemTableArnProps.Initializer"></a>
+
+```typescript
+import { athena } from '@cdk_utils/iam'
+
+const athenaSystemTableArnProps: athena.AthenaSystemTableArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.athena.AthenaSystemTableArnProps.property.tableName">tableName</a></code> | <code>string</code> | The TableName component of the ARN. |
+| <code><a href="#@cdk_utils/iam.athena.AthenaSystemTableArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.athena.AthenaSystemTableArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.athena.AthenaSystemTableArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `tableName`<sup>Required</sup> <a name="tableName" id="@cdk_utils/iam.athena.AthenaSystemTableArnProps.property.tableName"></a>
+
+```typescript
+public readonly tableName: string;
+```
+
+- *Type:* string
+
+The TableName component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.athena.AthenaSystemTableArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.athena.AthenaSystemTableArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.athena.AthenaSystemTableArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### AthenaWorkgroupArnComponents <a name="AthenaWorkgroupArnComponents" id="@cdk_utils/iam.athena.AthenaWorkgroupArnComponents"></a>
 
 Parsed components of a workgroup ARN.
@@ -671,6 +819,7 @@ new athena.AthenaActions()
 | <code><a href="#@cdk_utils/iam.athena.AthenaActions.property.actionGetSession">actionGetSession</a></code> | <code>string</code> | [Read] athena:GetSession. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaActions.property.actionGetSessionEndpoint">actionGetSessionEndpoint</a></code> | <code>string</code> | [Write] athena:GetSessionEndpoint. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaActions.property.actionGetSessionStatus">actionGetSessionStatus</a></code> | <code>string</code> | [Read] athena:GetSessionStatus. |
+| <code><a href="#@cdk_utils/iam.athena.AthenaActions.property.actionGetSystemTableConfiguration">actionGetSystemTableConfiguration</a></code> | <code>string</code> | [Read] athena:GetSystemTableConfiguration. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaActions.property.actionGetTable">actionGetTable</a></code> | <code>string</code> | [Read] athena:GetTable. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaActions.property.actionGetTableMetadata">actionGetTableMetadata</a></code> | <code>string</code> | [Read] athena:GetTableMetadata. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaActions.property.actionGetTables">actionGetTables</a></code> | <code>string</code> | [Read] athena:GetTables. |
@@ -691,12 +840,14 @@ new athena.AthenaActions()
 | <code><a href="#@cdk_utils/iam.athena.AthenaActions.property.CreateNotebook">CreateNotebook</a></code> | <code>string</code> | [Write] athena:CreateNotebook. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaActions.property.CreatePreparedStatement">CreatePreparedStatement</a></code> | <code>string</code> | [Write] athena:CreatePreparedStatement. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaActions.property.CreatePresignedNotebookUrl">CreatePresignedNotebookUrl</a></code> | <code>string</code> | [Write] athena:CreatePresignedNotebookUrl. |
+| <code><a href="#@cdk_utils/iam.athena.AthenaActions.property.CreateSystemTableConfiguration">CreateSystemTableConfiguration</a></code> | <code>string</code> | [Write] athena:CreateSystemTableConfiguration. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaActions.property.CreateWorkGroup">CreateWorkGroup</a></code> | <code>string</code> | [Write] athena:CreateWorkGroup. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaActions.property.DeleteCapacityReservation">DeleteCapacityReservation</a></code> | <code>string</code> | [Write] athena:DeleteCapacityReservation. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaActions.property.DeleteDataCatalog">DeleteDataCatalog</a></code> | <code>string</code> | [Write] athena:DeleteDataCatalog. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaActions.property.DeleteNamedQuery">DeleteNamedQuery</a></code> | <code>string</code> | [Write] athena:DeleteNamedQuery. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaActions.property.DeleteNotebook">DeleteNotebook</a></code> | <code>string</code> | [Write] athena:DeleteNotebook. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaActions.property.DeletePreparedStatement">DeletePreparedStatement</a></code> | <code>string</code> | [Write] athena:DeletePreparedStatement. |
+| <code><a href="#@cdk_utils/iam.athena.AthenaActions.property.DeleteSystemTableConfiguration">DeleteSystemTableConfiguration</a></code> | <code>string</code> | [Write] athena:DeleteSystemTableConfiguration. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaActions.property.DeleteWorkGroup">DeleteWorkGroup</a></code> | <code>string</code> | [Write] athena:DeleteWorkGroup. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaActions.property.ExportNotebook">ExportNotebook</a></code> | <code>string</code> | [Write] athena:ExportNotebook. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaActions.property.ImportNotebook">ImportNotebook</a></code> | <code>string</code> | [Write] athena:ImportNotebook. |
@@ -713,6 +864,7 @@ new athena.AthenaActions()
 | <code><a href="#@cdk_utils/iam.athena.AthenaActions.property.ListPreparedStatements">ListPreparedStatements</a></code> | <code>string</code> | [List] athena:ListPreparedStatements. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaActions.property.ListQueryExecutions">ListQueryExecutions</a></code> | <code>string</code> | [Read] athena:ListQueryExecutions. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaActions.property.ListSessions">ListSessions</a></code> | <code>string</code> | [List] athena:ListSessions. |
+| <code><a href="#@cdk_utils/iam.athena.AthenaActions.property.ListSystemTableStatuses">ListSystemTableStatuses</a></code> | <code>string</code> | [List] athena:ListSystemTableStatuses. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaActions.property.ListTableMetadata">ListTableMetadata</a></code> | <code>string</code> | [Read] athena:ListTableMetadata. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [Read] athena:ListTagsForResource. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaActions.property.ListWorkGroups">ListWorkGroups</a></code> | <code>string</code> | [List] athena:ListWorkGroups. |
@@ -733,6 +885,7 @@ new athena.AthenaActions()
 | <code><a href="#@cdk_utils/iam.athena.AthenaActions.property.UpdateNotebook">UpdateNotebook</a></code> | <code>string</code> | [Write] athena:UpdateNotebook. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaActions.property.UpdateNotebookMetadata">UpdateNotebookMetadata</a></code> | <code>string</code> | [Write] athena:UpdateNotebookMetadata. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaActions.property.UpdatePreparedStatement">UpdatePreparedStatement</a></code> | <code>string</code> | [Write] athena:UpdatePreparedStatement. |
+| <code><a href="#@cdk_utils/iam.athena.AthenaActions.property.UpdateSystemTableConfiguration">UpdateSystemTableConfiguration</a></code> | <code>string</code> | [Write] athena:UpdateSystemTableConfiguration. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaActions.property.UpdateWorkGroup">UpdateWorkGroup</a></code> | <code>string</code> | [Write] athena:UpdateWorkGroup. |
 
 ---
@@ -1025,6 +1178,18 @@ public readonly actionGetSessionStatus: string;
 
 ---
 
+##### `actionGetSystemTableConfiguration`<sup>Required</sup> <a name="actionGetSystemTableConfiguration" id="@cdk_utils/iam.athena.AthenaActions.property.actionGetSystemTableConfiguration"></a>
+
+```typescript
+public readonly actionGetSystemTableConfiguration: string;
+```
+
+- *Type:* string
+
+[Read] athena:GetSystemTableConfiguration.
+
+---
+
 ##### `actionGetTable`<sup>Required</sup> <a name="actionGetTable" id="@cdk_utils/iam.athena.AthenaActions.property.actionGetTable"></a>
 
 ```typescript
@@ -1265,6 +1430,18 @@ public readonly CreatePresignedNotebookUrl: string;
 
 ---
 
+##### `CreateSystemTableConfiguration`<sup>Required</sup> <a name="CreateSystemTableConfiguration" id="@cdk_utils/iam.athena.AthenaActions.property.CreateSystemTableConfiguration"></a>
+
+```typescript
+public readonly CreateSystemTableConfiguration: string;
+```
+
+- *Type:* string
+
+[Write] athena:CreateSystemTableConfiguration.
+
+---
+
 ##### `CreateWorkGroup`<sup>Required</sup> <a name="CreateWorkGroup" id="@cdk_utils/iam.athena.AthenaActions.property.CreateWorkGroup"></a>
 
 ```typescript
@@ -1334,6 +1511,18 @@ public readonly DeletePreparedStatement: string;
 - *Type:* string
 
 [Write] athena:DeletePreparedStatement.
+
+---
+
+##### `DeleteSystemTableConfiguration`<sup>Required</sup> <a name="DeleteSystemTableConfiguration" id="@cdk_utils/iam.athena.AthenaActions.property.DeleteSystemTableConfiguration"></a>
+
+```typescript
+public readonly DeleteSystemTableConfiguration: string;
+```
+
+- *Type:* string
+
+[Write] athena:DeleteSystemTableConfiguration.
 
 ---
 
@@ -1526,6 +1715,18 @@ public readonly ListSessions: string;
 - *Type:* string
 
 [List] athena:ListSessions.
+
+---
+
+##### `ListSystemTableStatuses`<sup>Required</sup> <a name="ListSystemTableStatuses" id="@cdk_utils/iam.athena.AthenaActions.property.ListSystemTableStatuses"></a>
+
+```typescript
+public readonly ListSystemTableStatuses: string;
+```
+
+- *Type:* string
+
+[List] athena:ListSystemTableStatuses.
 
 ---
 
@@ -1769,6 +1970,18 @@ public readonly UpdatePreparedStatement: string;
 
 ---
 
+##### `UpdateSystemTableConfiguration`<sup>Required</sup> <a name="UpdateSystemTableConfiguration" id="@cdk_utils/iam.athena.AthenaActions.property.UpdateSystemTableConfiguration"></a>
+
+```typescript
+public readonly UpdateSystemTableConfiguration: string;
+```
+
+- *Type:* string
+
+[Write] athena:UpdateSystemTableConfiguration.
+
+---
+
 ##### `UpdateWorkGroup`<sup>Required</sup> <a name="UpdateWorkGroup" id="@cdk_utils/iam.athena.AthenaActions.property.UpdateWorkGroup"></a>
 
 ```typescript
@@ -1867,6 +2080,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.athena.AthenaConditions.property.AWS_TAG_KEYS">AWS_TAG_KEYS</a></code> | <code>string</code> | Condition key: aws:TagKeys (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.athena.AthenaConditions.property.CreateCapacityReservationConditionKeys">CreateCapacityReservationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateCapacityReservation action. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaConditions.property.CreateDataCatalogConditionKeys">CreateDataCatalogConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateDataCatalog action. |
+| <code><a href="#@cdk_utils/iam.athena.AthenaConditions.property.CreateSystemTableConfigurationConditionKeys">CreateSystemTableConfigurationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateSystemTableConfiguration action. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaConditions.property.CreateWorkGroupConditionKeys">CreateWorkGroupConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateWorkGroup action. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaConditions.property.StartSessionConditionKeys">StartSessionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartSession action. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaConditions.property.TagResourceConditionKeys">TagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TagResource action. |
@@ -1931,6 +2145,18 @@ public readonly CreateDataCatalogConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the CreateDataCatalog action.
+
+---
+
+##### `CreateSystemTableConfigurationConditionKeys`<sup>Required</sup> <a name="CreateSystemTableConfigurationConditionKeys" id="@cdk_utils/iam.athena.AthenaConditions.property.CreateSystemTableConfigurationConditionKeys"></a>
+
+```typescript
+public readonly CreateSystemTableConfigurationConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateSystemTableConfiguration action.
 
 ---
 
@@ -2016,12 +2242,14 @@ new athena.AthenaOperations()
 | <code><a href="#@cdk_utils/iam.athena.AthenaOperations.property.CreateNotebook">CreateNotebook</a></code> | <code>string[]</code> | IAM actions required for the CreateNotebook API call. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaOperations.property.CreatePreparedStatement">CreatePreparedStatement</a></code> | <code>string[]</code> | IAM actions required for the CreatePreparedStatement API call. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaOperations.property.CreatePresignedNotebookUrl">CreatePresignedNotebookUrl</a></code> | <code>string[]</code> | IAM actions required for the CreatePresignedNotebookUrl API call. |
+| <code><a href="#@cdk_utils/iam.athena.AthenaOperations.property.CreateSystemTableConfiguration">CreateSystemTableConfiguration</a></code> | <code>string[]</code> | IAM actions required for the CreateSystemTableConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaOperations.property.CreateWorkGroup">CreateWorkGroup</a></code> | <code>string[]</code> | IAM actions required for the CreateWorkGroup API call. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaOperations.property.DeleteCapacityReservation">DeleteCapacityReservation</a></code> | <code>string[]</code> | IAM actions required for the DeleteCapacityReservation API call. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaOperations.property.DeleteDataCatalog">DeleteDataCatalog</a></code> | <code>string[]</code> | IAM actions required for the DeleteDataCatalog API call. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaOperations.property.DeleteNamedQuery">DeleteNamedQuery</a></code> | <code>string[]</code> | IAM actions required for the DeleteNamedQuery API call. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaOperations.property.DeleteNotebook">DeleteNotebook</a></code> | <code>string[]</code> | IAM actions required for the DeleteNotebook API call. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaOperations.property.DeletePreparedStatement">DeletePreparedStatement</a></code> | <code>string[]</code> | IAM actions required for the DeletePreparedStatement API call. |
+| <code><a href="#@cdk_utils/iam.athena.AthenaOperations.property.DeleteSystemTableConfiguration">DeleteSystemTableConfiguration</a></code> | <code>string[]</code> | IAM actions required for the DeleteSystemTableConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaOperations.property.DeleteWorkGroup">DeleteWorkGroup</a></code> | <code>string[]</code> | IAM actions required for the DeleteWorkGroup API call. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaOperations.property.ExportNotebook">ExportNotebook</a></code> | <code>string[]</code> | IAM actions required for the ExportNotebook API call. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaOperations.property.ImportNotebook">ImportNotebook</a></code> | <code>string[]</code> | IAM actions required for the ImportNotebook API call. |
@@ -2038,6 +2266,7 @@ new athena.AthenaOperations()
 | <code><a href="#@cdk_utils/iam.athena.AthenaOperations.property.ListPreparedStatements">ListPreparedStatements</a></code> | <code>string[]</code> | IAM actions required for the ListPreparedStatements API call. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaOperations.property.ListQueryExecutions">ListQueryExecutions</a></code> | <code>string[]</code> | IAM actions required for the ListQueryExecutions API call. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaOperations.property.ListSessions">ListSessions</a></code> | <code>string[]</code> | IAM actions required for the ListSessions API call. |
+| <code><a href="#@cdk_utils/iam.athena.AthenaOperations.property.ListSystemTableStatuses">ListSystemTableStatuses</a></code> | <code>string[]</code> | IAM actions required for the ListSystemTableStatuses API call. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaOperations.property.ListTableMetadata">ListTableMetadata</a></code> | <code>string[]</code> | IAM actions required for the ListTableMetadata API call. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaOperations.property.ListWorkGroups">ListWorkGroups</a></code> | <code>string[]</code> | IAM actions required for the ListWorkGroups API call. |
@@ -2058,6 +2287,7 @@ new athena.AthenaOperations()
 | <code><a href="#@cdk_utils/iam.athena.AthenaOperations.property.opGetSession">opGetSession</a></code> | <code>string[]</code> | IAM actions required for the GetSession API call. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaOperations.property.opGetSessionEndpoint">opGetSessionEndpoint</a></code> | <code>string[]</code> | IAM actions required for the GetSessionEndpoint API call. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaOperations.property.opGetSessionStatus">opGetSessionStatus</a></code> | <code>string[]</code> | IAM actions required for the GetSessionStatus API call. |
+| <code><a href="#@cdk_utils/iam.athena.AthenaOperations.property.opGetSystemTableConfiguration">opGetSystemTableConfiguration</a></code> | <code>string[]</code> | IAM actions required for the GetSystemTableConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaOperations.property.opGetTableMetadata">opGetTableMetadata</a></code> | <code>string[]</code> | IAM actions required for the GetTableMetadata API call. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaOperations.property.opGetWorkGroup">opGetWorkGroup</a></code> | <code>string[]</code> | IAM actions required for the GetWorkGroup API call. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaOperations.property.PutCapacityAssignmentConfiguration">PutCapacityAssignmentConfiguration</a></code> | <code>string[]</code> | IAM actions required for the PutCapacityAssignmentConfiguration API call. |
@@ -2075,6 +2305,7 @@ new athena.AthenaOperations()
 | <code><a href="#@cdk_utils/iam.athena.AthenaOperations.property.UpdateNotebook">UpdateNotebook</a></code> | <code>string[]</code> | IAM actions required for the UpdateNotebook API call. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaOperations.property.UpdateNotebookMetadata">UpdateNotebookMetadata</a></code> | <code>string[]</code> | IAM actions required for the UpdateNotebookMetadata API call. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaOperations.property.UpdatePreparedStatement">UpdatePreparedStatement</a></code> | <code>string[]</code> | IAM actions required for the UpdatePreparedStatement API call. |
+| <code><a href="#@cdk_utils/iam.athena.AthenaOperations.property.UpdateSystemTableConfiguration">UpdateSystemTableConfiguration</a></code> | <code>string[]</code> | IAM actions required for the UpdateSystemTableConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaOperations.property.UpdateWorkGroup">UpdateWorkGroup</a></code> | <code>string[]</code> | IAM actions required for the UpdateWorkGroup API call. |
 
 ---
@@ -2199,6 +2430,18 @@ IAM actions required for the CreatePresignedNotebookUrl API call.
 
 ---
 
+##### `CreateSystemTableConfiguration`<sup>Required</sup> <a name="CreateSystemTableConfiguration" id="@cdk_utils/iam.athena.AthenaOperations.property.CreateSystemTableConfiguration"></a>
+
+```typescript
+public readonly CreateSystemTableConfiguration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateSystemTableConfiguration API call.
+
+---
+
 ##### `CreateWorkGroup`<sup>Required</sup> <a name="CreateWorkGroup" id="@cdk_utils/iam.athena.AthenaOperations.property.CreateWorkGroup"></a>
 
 ```typescript
@@ -2268,6 +2511,18 @@ public readonly DeletePreparedStatement: string[];
 - *Type:* string[]
 
 IAM actions required for the DeletePreparedStatement API call.
+
+---
+
+##### `DeleteSystemTableConfiguration`<sup>Required</sup> <a name="DeleteSystemTableConfiguration" id="@cdk_utils/iam.athena.AthenaOperations.property.DeleteSystemTableConfiguration"></a>
+
+```typescript
+public readonly DeleteSystemTableConfiguration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteSystemTableConfiguration API call.
 
 ---
 
@@ -2460,6 +2715,18 @@ public readonly ListSessions: string[];
 - *Type:* string[]
 
 IAM actions required for the ListSessions API call.
+
+---
+
+##### `ListSystemTableStatuses`<sup>Required</sup> <a name="ListSystemTableStatuses" id="@cdk_utils/iam.athena.AthenaOperations.property.ListSystemTableStatuses"></a>
+
+```typescript
+public readonly ListSystemTableStatuses: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListSystemTableStatuses API call.
 
 ---
 
@@ -2703,6 +2970,18 @@ IAM actions required for the GetSessionStatus API call.
 
 ---
 
+##### `opGetSystemTableConfiguration`<sup>Required</sup> <a name="opGetSystemTableConfiguration" id="@cdk_utils/iam.athena.AthenaOperations.property.opGetSystemTableConfiguration"></a>
+
+```typescript
+public readonly opGetSystemTableConfiguration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetSystemTableConfiguration API call.
+
+---
+
 ##### `opGetTableMetadata`<sup>Required</sup> <a name="opGetTableMetadata" id="@cdk_utils/iam.athena.AthenaOperations.property.opGetTableMetadata"></a>
 
 ```typescript
@@ -2907,6 +3186,18 @@ IAM actions required for the UpdatePreparedStatement API call.
 
 ---
 
+##### `UpdateSystemTableConfiguration`<sup>Required</sup> <a name="UpdateSystemTableConfiguration" id="@cdk_utils/iam.athena.AthenaOperations.property.UpdateSystemTableConfiguration"></a>
+
+```typescript
+public readonly UpdateSystemTableConfiguration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateSystemTableConfiguration API call.
+
+---
+
 ##### `UpdateWorkGroup`<sup>Required</sup> <a name="UpdateWorkGroup" id="@cdk_utils/iam.athena.AthenaOperations.property.UpdateWorkGroup"></a>
 
 ```typescript
@@ -2946,12 +3237,15 @@ new athena.AthenaResources()
 | <code><a href="#@cdk_utils/iam.athena.AthenaResources.isValidCapacityReservationArn">isValidCapacityReservationArn</a></code> | Validates whether a string is a valid ARN for the capacity-reservation resource. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaResources.isValidDatacatalogArn">isValidDatacatalogArn</a></code> | Validates whether a string is a valid ARN for the datacatalog resource. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaResources.isValidSessionArn">isValidSessionArn</a></code> | Validates whether a string is a valid ARN for the session resource. |
+| <code><a href="#@cdk_utils/iam.athena.AthenaResources.isValidSystemTableArn">isValidSystemTableArn</a></code> | Validates whether a string is a valid ARN for the system-table resource. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaResources.isValidWorkgroupArn">isValidWorkgroupArn</a></code> | Validates whether a string is a valid ARN for the workgroup resource. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaResources.parseCapacityReservationArn">parseCapacityReservationArn</a></code> | Parses a capacity-reservation ARN into its components. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaResources.parseDatacatalogArn">parseDatacatalogArn</a></code> | Parses a datacatalog ARN into its components. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaResources.parseSessionArn">parseSessionArn</a></code> | Parses a session ARN into its components. |
+| <code><a href="#@cdk_utils/iam.athena.AthenaResources.parseSystemTableArn">parseSystemTableArn</a></code> | Parses a system-table ARN into its components. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaResources.parseWorkgroupArn">parseWorkgroupArn</a></code> | Parses a workgroup ARN into its components. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaResources.session">session</a></code> | Builds an ARN for the session resource. |
+| <code><a href="#@cdk_utils/iam.athena.AthenaResources.systemTable">systemTable</a></code> | Builds an ARN for the system-table resource. |
 | <code><a href="#@cdk_utils/iam.athena.AthenaResources.workgroup">workgroup</a></code> | Builds an ARN for the workgroup resource. |
 
 ---
@@ -3036,6 +3330,22 @@ Validates whether a string is a valid ARN for the session resource.
 
 ---
 
+##### `isValidSystemTableArn` <a name="isValidSystemTableArn" id="@cdk_utils/iam.athena.AthenaResources.isValidSystemTableArn"></a>
+
+```typescript
+import { athena } from '@cdk_utils/iam'
+
+athena.AthenaResources.isValidSystemTableArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the system-table resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.athena.AthenaResources.isValidSystemTableArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `isValidWorkgroupArn` <a name="isValidWorkgroupArn" id="@cdk_utils/iam.athena.AthenaResources.isValidWorkgroupArn"></a>
 
 ```typescript
@@ -3100,6 +3410,22 @@ Parses a session ARN into its components.
 
 ---
 
+##### `parseSystemTableArn` <a name="parseSystemTableArn" id="@cdk_utils/iam.athena.AthenaResources.parseSystemTableArn"></a>
+
+```typescript
+import { athena } from '@cdk_utils/iam'
+
+athena.AthenaResources.parseSystemTableArn(arn: string)
+```
+
+Parses a system-table ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.athena.AthenaResources.parseSystemTableArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `parseWorkgroupArn` <a name="parseWorkgroupArn" id="@cdk_utils/iam.athena.AthenaResources.parseWorkgroupArn"></a>
 
 ```typescript
@@ -3129,6 +3455,22 @@ Builds an ARN for the session resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.athena.AthenaResources.session.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.athena.AthenaSessionArnProps">AthenaSessionArnProps</a>
+
+---
+
+##### `systemTable` <a name="systemTable" id="@cdk_utils/iam.athena.AthenaResources.systemTable"></a>
+
+```typescript
+import { athena } from '@cdk_utils/iam'
+
+athena.AthenaResources.systemTable(props: AthenaSystemTableArnProps)
+```
+
+Builds an ARN for the system-table resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.athena.AthenaResources.systemTable.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.athena.AthenaSystemTableArnProps">AthenaSystemTableArnProps</a>
 
 ---
 

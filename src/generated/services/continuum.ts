@@ -533,13 +533,16 @@ export class ContinuumOperations {
 	/** IAM actions required for the CreateEnvironment API call. */
 	static readonly CreateEnvironment: string[] = [];
 	/** IAM actions required for the CreateIntegration API call. */
-	static readonly CreateIntegration: string[] = [];
+	static readonly CreateIntegration: string[] = [
+		"continuum:CreateIntegration",
+		"iam:PassRole",
+	];
 	/** IAM actions required for the DeleteCollector API call. */
 	static readonly DeleteCollector: string[] = [];
 	/** IAM actions required for the DeleteEnvironment API call. */
 	static readonly DeleteEnvironment: string[] = [];
 	/** IAM actions required for the DeleteIntegration API call. */
-	static readonly DeleteIntegration: string[] = [];
+	static readonly DeleteIntegration: string[] = ["continuum:DeleteIntegration"];
 	/** IAM actions required for the DisassociateCollector API call. */
 	static readonly DisassociateCollector: string[] = [];
 	/** IAM actions required for the GetCodeFinding API call. */
@@ -557,7 +560,7 @@ export class ContinuumOperations {
 	/** IAM actions required for the GetEnvironment API call. */
 	static readonly opGetEnvironment: string[] = [];
 	/** IAM actions required for the GetIntegration API call. */
-	static readonly opGetIntegration: string[] = [];
+	static readonly opGetIntegration: string[] = ["continuum:GetIntegration"];
 	/** IAM actions required for the GetResourcePolicy API call. */
 	static readonly opGetResourcePolicy: string[] = [];
 	/** IAM actions required for the ListAssociatedCollectors API call. */
@@ -577,17 +580,22 @@ export class ContinuumOperations {
 	/** IAM actions required for the ListEnvironments API call. */
 	static readonly ListEnvironments: string[] = [];
 	/** IAM actions required for the ListIntegrations API call. */
-	static readonly ListIntegrations: string[] = [];
+	static readonly ListIntegrations: string[] = ["continuum:ListIntegrations"];
 	/** IAM actions required for the PutResourcePolicy API call. */
 	static readonly PutResourcePolicy: string[] = [];
 	/** IAM actions required for the StartIntegrationAuthorization API call. */
-	static readonly StartIntegrationAuthorization: string[] = [];
+	static readonly StartIntegrationAuthorization: string[] = [
+		"continuum:StartIntegrationAuthorization",
+	];
 	/** IAM actions required for the UpdateCollector API call. */
 	static readonly UpdateCollector: string[] = [];
 	/** IAM actions required for the UpdateEnvironment API call. */
 	static readonly UpdateEnvironment: string[] = [];
 	/** IAM actions required for the UpdateIntegration API call. */
-	static readonly UpdateIntegration: string[] = [];
+	static readonly UpdateIntegration: string[] = [
+		"iam:PassRole",
+		"continuum:UpdateIntegration",
+	];
 }
 
 /**

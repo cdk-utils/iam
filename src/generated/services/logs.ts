@@ -1353,7 +1353,10 @@ export class LogsOperations {
 	/** IAM actions required for the PutIndexPolicy API call. */
 	static readonly PutIndexPolicy: string[] = ["logs:PutIndexPolicy"];
 	/** IAM actions required for the PutIntegration API call. */
-	static readonly PutIntegration: string[] = ["logs:PutIntegration"];
+	static readonly PutIntegration: string[] = [
+		"iam:PassRole",
+		"logs:PutIntegration",
+	];
 	/** IAM actions required for the PutLogEvents API call. */
 	static readonly PutLogEvents: string[] = ["logs:PutLogEvents"];
 	/** IAM actions required for the PutLogGroupDeletionProtection API call. */
@@ -1390,6 +1393,7 @@ export class LogsOperations {
 		"logs:DescribeLogGroups",
 		"logs:DescribeQueryDefinitions",
 		"logs:FilterLogEvents",
+		"iam:PassRole",
 		"logs:StartQuery",
 		"logs:Unmask",
 	];

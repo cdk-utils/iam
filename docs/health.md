@@ -609,6 +609,8 @@ new health.HealthOperations()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.health.HealthOperations.property.ConfigureTags">ConfigureTags</a></code> | <code>string[]</code> | IAM actions required for the ConfigureTags API call. |
+| <code><a href="#@cdk_utils/iam.health.HealthOperations.property.ConfigureTagsForOrganization">ConfigureTagsForOrganization</a></code> | <code>string[]</code> | IAM actions required for the ConfigureTagsForOrganization API call. |
 | <code><a href="#@cdk_utils/iam.health.HealthOperations.property.DescribeAffectedAccountsForOrganization">DescribeAffectedAccountsForOrganization</a></code> | <code>string[]</code> | IAM actions required for the DescribeAffectedAccountsForOrganization API call. |
 | <code><a href="#@cdk_utils/iam.health.HealthOperations.property.DescribeAffectedEntities">DescribeAffectedEntities</a></code> | <code>string[]</code> | IAM actions required for the DescribeAffectedEntities API call. |
 | <code><a href="#@cdk_utils/iam.health.HealthOperations.property.DescribeAffectedEntitiesForOrganization">DescribeAffectedEntitiesForOrganization</a></code> | <code>string[]</code> | IAM actions required for the DescribeAffectedEntitiesForOrganization API call. |
@@ -622,8 +624,42 @@ new health.HealthOperations()
 | <code><a href="#@cdk_utils/iam.health.HealthOperations.property.DescribeEventTypes">DescribeEventTypes</a></code> | <code>string[]</code> | IAM actions required for the DescribeEventTypes API call. |
 | <code><a href="#@cdk_utils/iam.health.HealthOperations.property.DescribeHealthServiceStatusForOrganization">DescribeHealthServiceStatusForOrganization</a></code> | <code>string[]</code> | IAM actions required for the DescribeHealthServiceStatusForOrganization API call. |
 | <code><a href="#@cdk_utils/iam.health.HealthOperations.property.DescribeServiceLifecycle">DescribeServiceLifecycle</a></code> | <code>string[]</code> | IAM actions required for the DescribeServiceLifecycle API call. |
+| <code><a href="#@cdk_utils/iam.health.HealthOperations.property.DescribeTagKeys">DescribeTagKeys</a></code> | <code>string[]</code> | IAM actions required for the DescribeTagKeys API call. |
+| <code><a href="#@cdk_utils/iam.health.HealthOperations.property.DescribeTagKeysForOrganization">DescribeTagKeysForOrganization</a></code> | <code>string[]</code> | IAM actions required for the DescribeTagKeysForOrganization API call. |
+| <code><a href="#@cdk_utils/iam.health.HealthOperations.property.DescribeTags">DescribeTags</a></code> | <code>string[]</code> | IAM actions required for the DescribeTags API call. |
+| <code><a href="#@cdk_utils/iam.health.HealthOperations.property.DescribeTagsForOrganization">DescribeTagsForOrganization</a></code> | <code>string[]</code> | IAM actions required for the DescribeTagsForOrganization API call. |
+| <code><a href="#@cdk_utils/iam.health.HealthOperations.property.DescribeTagsOnboardingStatus">DescribeTagsOnboardingStatus</a></code> | <code>string[]</code> | IAM actions required for the DescribeTagsOnboardingStatus API call. |
+| <code><a href="#@cdk_utils/iam.health.HealthOperations.property.DescribeTagsOnboardingStatusForOrganization">DescribeTagsOnboardingStatusForOrganization</a></code> | <code>string[]</code> | IAM actions required for the DescribeTagsOnboardingStatusForOrganization API call. |
 | <code><a href="#@cdk_utils/iam.health.HealthOperations.property.DisableHealthServiceAccessForOrganization">DisableHealthServiceAccessForOrganization</a></code> | <code>string[]</code> | IAM actions required for the DisableHealthServiceAccessForOrganization API call. |
+| <code><a href="#@cdk_utils/iam.health.HealthOperations.property.DisableTags">DisableTags</a></code> | <code>string[]</code> | IAM actions required for the DisableTags API call. |
+| <code><a href="#@cdk_utils/iam.health.HealthOperations.property.DisableTagsForOrganization">DisableTagsForOrganization</a></code> | <code>string[]</code> | IAM actions required for the DisableTagsForOrganization API call. |
 | <code><a href="#@cdk_utils/iam.health.HealthOperations.property.EnableHealthServiceAccessForOrganization">EnableHealthServiceAccessForOrganization</a></code> | <code>string[]</code> | IAM actions required for the EnableHealthServiceAccessForOrganization API call. |
+| <code><a href="#@cdk_utils/iam.health.HealthOperations.property.EnableTags">EnableTags</a></code> | <code>string[]</code> | IAM actions required for the EnableTags API call. |
+| <code><a href="#@cdk_utils/iam.health.HealthOperations.property.EnableTagsForOrganization">EnableTagsForOrganization</a></code> | <code>string[]</code> | IAM actions required for the EnableTagsForOrganization API call. |
+
+---
+
+##### `ConfigureTags`<sup>Required</sup> <a name="ConfigureTags" id="@cdk_utils/iam.health.HealthOperations.property.ConfigureTags"></a>
+
+```typescript
+public readonly ConfigureTags: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ConfigureTags API call.
+
+---
+
+##### `ConfigureTagsForOrganization`<sup>Required</sup> <a name="ConfigureTagsForOrganization" id="@cdk_utils/iam.health.HealthOperations.property.ConfigureTagsForOrganization"></a>
+
+```typescript
+public readonly ConfigureTagsForOrganization: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ConfigureTagsForOrganization API call.
 
 ---
 
@@ -783,6 +819,78 @@ IAM actions required for the DescribeServiceLifecycle API call.
 
 ---
 
+##### `DescribeTagKeys`<sup>Required</sup> <a name="DescribeTagKeys" id="@cdk_utils/iam.health.HealthOperations.property.DescribeTagKeys"></a>
+
+```typescript
+public readonly DescribeTagKeys: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeTagKeys API call.
+
+---
+
+##### `DescribeTagKeysForOrganization`<sup>Required</sup> <a name="DescribeTagKeysForOrganization" id="@cdk_utils/iam.health.HealthOperations.property.DescribeTagKeysForOrganization"></a>
+
+```typescript
+public readonly DescribeTagKeysForOrganization: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeTagKeysForOrganization API call.
+
+---
+
+##### `DescribeTags`<sup>Required</sup> <a name="DescribeTags" id="@cdk_utils/iam.health.HealthOperations.property.DescribeTags"></a>
+
+```typescript
+public readonly DescribeTags: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeTags API call.
+
+---
+
+##### `DescribeTagsForOrganization`<sup>Required</sup> <a name="DescribeTagsForOrganization" id="@cdk_utils/iam.health.HealthOperations.property.DescribeTagsForOrganization"></a>
+
+```typescript
+public readonly DescribeTagsForOrganization: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeTagsForOrganization API call.
+
+---
+
+##### `DescribeTagsOnboardingStatus`<sup>Required</sup> <a name="DescribeTagsOnboardingStatus" id="@cdk_utils/iam.health.HealthOperations.property.DescribeTagsOnboardingStatus"></a>
+
+```typescript
+public readonly DescribeTagsOnboardingStatus: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeTagsOnboardingStatus API call.
+
+---
+
+##### `DescribeTagsOnboardingStatusForOrganization`<sup>Required</sup> <a name="DescribeTagsOnboardingStatusForOrganization" id="@cdk_utils/iam.health.HealthOperations.property.DescribeTagsOnboardingStatusForOrganization"></a>
+
+```typescript
+public readonly DescribeTagsOnboardingStatusForOrganization: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeTagsOnboardingStatusForOrganization API call.
+
+---
+
 ##### `DisableHealthServiceAccessForOrganization`<sup>Required</sup> <a name="DisableHealthServiceAccessForOrganization" id="@cdk_utils/iam.health.HealthOperations.property.DisableHealthServiceAccessForOrganization"></a>
 
 ```typescript
@@ -795,6 +903,30 @@ IAM actions required for the DisableHealthServiceAccessForOrganization API call.
 
 ---
 
+##### `DisableTags`<sup>Required</sup> <a name="DisableTags" id="@cdk_utils/iam.health.HealthOperations.property.DisableTags"></a>
+
+```typescript
+public readonly DisableTags: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DisableTags API call.
+
+---
+
+##### `DisableTagsForOrganization`<sup>Required</sup> <a name="DisableTagsForOrganization" id="@cdk_utils/iam.health.HealthOperations.property.DisableTagsForOrganization"></a>
+
+```typescript
+public readonly DisableTagsForOrganization: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DisableTagsForOrganization API call.
+
+---
+
 ##### `EnableHealthServiceAccessForOrganization`<sup>Required</sup> <a name="EnableHealthServiceAccessForOrganization" id="@cdk_utils/iam.health.HealthOperations.property.EnableHealthServiceAccessForOrganization"></a>
 
 ```typescript
@@ -804,6 +936,30 @@ public readonly EnableHealthServiceAccessForOrganization: string[];
 - *Type:* string[]
 
 IAM actions required for the EnableHealthServiceAccessForOrganization API call.
+
+---
+
+##### `EnableTags`<sup>Required</sup> <a name="EnableTags" id="@cdk_utils/iam.health.HealthOperations.property.EnableTags"></a>
+
+```typescript
+public readonly EnableTags: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the EnableTags API call.
+
+---
+
+##### `EnableTagsForOrganization`<sup>Required</sup> <a name="EnableTagsForOrganization" id="@cdk_utils/iam.health.HealthOperations.property.EnableTagsForOrganization"></a>
+
+```typescript
+public readonly EnableTagsForOrganization: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the EnableTagsForOrganization API call.
 
 ---
 

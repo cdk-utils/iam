@@ -653,13 +653,22 @@ export class AossOperations {
 		"aoss:ListSecurityPolicies",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly ListTagsForResource: string[] = ["aoss:ListTagsForResource"];
+	static readonly ListTagsForResource: string[] = [
+		"aoss:ListTagsForResource",
+		"osm:ListTagsForResource",
+	];
 	/** IAM actions required for the ListVpcEndpoints API call. */
 	static readonly ListVpcEndpoints: string[] = ["aoss:ListVpcEndpoints"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TagResource: string[] = ["aoss:TagResource"];
+	static readonly TagResource: string[] = [
+		"aoss:TagResource",
+		"osm:TagResource",
+	];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UntagResource: string[] = ["aoss:UntagResource"];
+	static readonly UntagResource: string[] = [
+		"aoss:UntagResource",
+		"osm:UntagResource",
+	];
 	/** IAM actions required for the UpdateAccessPolicy API call. */
 	static readonly UpdateAccessPolicy: string[] = ["aoss:UpdateAccessPolicy"];
 	/** IAM actions required for the UpdateAccountSettings API call. */

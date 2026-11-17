@@ -3185,6 +3185,7 @@ new ses.SesActions()
 | <code><a href="#@cdk_utils/iam.ses.SesActions.property.ListTrafficPolicies">ListTrafficPolicies</a></code> | <code>string</code> | [List] ses:ListTrafficPolicies. |
 | <code><a href="#@cdk_utils/iam.ses.SesActions.property.ListVerifiedEmailAddresses">ListVerifiedEmailAddresses</a></code> | <code>string</code> | [Read] ses:ListVerifiedEmailAddresses. |
 | <code><a href="#@cdk_utils/iam.ses.SesActions.property.PutAccountDedicatedIpWarmupAttributes">PutAccountDedicatedIpWarmupAttributes</a></code> | <code>string</code> | [Write] ses:PutAccountDedicatedIpWarmupAttributes. |
+| <code><a href="#@cdk_utils/iam.ses.SesActions.property.PutAccountDeliveryAttributes">PutAccountDeliveryAttributes</a></code> | <code>string</code> | [Write] ses:PutAccountDeliveryAttributes. |
 | <code><a href="#@cdk_utils/iam.ses.SesActions.property.PutAccountDetails">PutAccountDetails</a></code> | <code>string</code> | [Write] ses:PutAccountDetails. |
 | <code><a href="#@cdk_utils/iam.ses.SesActions.property.PutAccountPricingAttributes">PutAccountPricingAttributes</a></code> | <code>string</code> | [Write] ses:PutAccountPricingAttributes. |
 | <code><a href="#@cdk_utils/iam.ses.SesActions.property.PutAccountSendingAttributes">PutAccountSendingAttributes</a></code> | <code>string</code> | [Write] ses:PutAccountSendingAttributes. |
@@ -5297,6 +5298,18 @@ public readonly PutAccountDedicatedIpWarmupAttributes: string;
 
 ---
 
+##### `PutAccountDeliveryAttributes`<sup>Required</sup> <a name="PutAccountDeliveryAttributes" id="@cdk_utils/iam.ses.SesActions.property.PutAccountDeliveryAttributes"></a>
+
+```typescript
+public readonly PutAccountDeliveryAttributes: string;
+```
+
+- *Type:* string
+
+[Write] ses:PutAccountDeliveryAttributes.
+
+---
+
 ##### `PutAccountDetails`<sup>Required</sup> <a name="PutAccountDetails" id="@cdk_utils/iam.ses.SesActions.property.PutAccountDetails"></a>
 
 ```typescript
@@ -6621,6 +6634,7 @@ Generates a condition block for `ses:TenantName`.
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.property.MULTI_REGION_ENDPOINT_ID">MULTI_REGION_ENDPOINT_ID</a></code> | <code>string</code> | Condition key: ses:MultiRegionEndpointId (String). |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.property.OPEN_TRACKING_ENABLED">OPEN_TRACKING_ENABLED</a></code> | <code>string</code> | Condition key: ses:OpenTrackingEnabled (String). |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.property.PutAccountDedicatedIpWarmupAttributesConditionKeys">PutAccountDedicatedIpWarmupAttributesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutAccountDedicatedIpWarmupAttributes action. |
+| <code><a href="#@cdk_utils/iam.ses.SesConditions.property.PutAccountDeliveryAttributesConditionKeys">PutAccountDeliveryAttributesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutAccountDeliveryAttributes action. |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.property.PutAccountDetailsConditionKeys">PutAccountDetailsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutAccountDetails action. |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.property.PutAccountPricingAttributesConditionKeys">PutAccountPricingAttributesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutAccountPricingAttributes action. |
 | <code><a href="#@cdk_utils/iam.ses.SesConditions.property.PutAccountSendingAttributesConditionKeys">PutAccountSendingAttributesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutAccountSendingAttributes action. |
@@ -8397,6 +8411,18 @@ public readonly PutAccountDedicatedIpWarmupAttributesConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the PutAccountDedicatedIpWarmupAttributes action.
+
+---
+
+##### `PutAccountDeliveryAttributesConditionKeys`<sup>Required</sup> <a name="PutAccountDeliveryAttributesConditionKeys" id="@cdk_utils/iam.ses.SesConditions.property.PutAccountDeliveryAttributesConditionKeys"></a>
+
+```typescript
+public readonly PutAccountDeliveryAttributesConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the PutAccountDeliveryAttributes action.
 
 ---
 

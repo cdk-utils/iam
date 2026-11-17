@@ -8006,6 +8006,7 @@ new connect.ConnectActions()
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.UpdateMetricContent">UpdateMetricContent</a></code> | <code>string</code> | [Write] connect:UpdateMetricContent. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.UpdateMetricMetadata">UpdateMetricMetadata</a></code> | <code>string</code> | [Write] connect:UpdateMetricMetadata. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.UpdateNotificationContent">UpdateNotificationContent</a></code> | <code>string</code> | [Write] connect:UpdateNotificationContent. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.UpdateOutboundEmailContactMessage">UpdateOutboundEmailContactMessage</a></code> | <code>string</code> | [Write] connect:UpdateOutboundEmailContactMessage. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.UpdateParticipantAuthentication">UpdateParticipantAuthentication</a></code> | <code>string</code> | [Write] connect:UpdateParticipantAuthentication. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.UpdateParticipantRoleConfig">UpdateParticipantRoleConfig</a></code> | <code>string</code> | [Write] connect:UpdateParticipantRoleConfig. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectActions.property.UpdatePhoneNumber">UpdatePhoneNumber</a></code> | <code>string</code> | [Write] connect:UpdatePhoneNumber. |
@@ -12307,6 +12308,18 @@ public readonly UpdateNotificationContent: string;
 
 ---
 
+##### `UpdateOutboundEmailContactMessage`<sup>Required</sup> <a name="UpdateOutboundEmailContactMessage" id="@cdk_utils/iam.connect.ConnectActions.property.UpdateOutboundEmailContactMessage"></a>
+
+```typescript
+public readonly UpdateOutboundEmailContactMessage: string;
+```
+
+- *Type:* string
+
+[Write] connect:UpdateOutboundEmailContactMessage.
+
+---
+
 ##### `UpdateParticipantAuthentication`<sup>Required</sup> <a name="UpdateParticipantAuthentication" id="@cdk_utils/iam.connect.ConnectActions.property.UpdateParticipantAuthentication"></a>
 
 ```typescript
@@ -13502,6 +13515,7 @@ Generates a condition block for `connect:UserArn`.
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.UpdateMetricContentConditionKeys">UpdateMetricContentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateMetricContent action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.UpdateMetricMetadataConditionKeys">UpdateMetricMetadataConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateMetricMetadata action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.UpdateNotificationContentConditionKeys">UpdateNotificationContentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateNotificationContent action. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.UpdateOutboundEmailContactMessageConditionKeys">UpdateOutboundEmailContactMessageConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateOutboundEmailContactMessage action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.UpdateParticipantAuthenticationConditionKeys">UpdateParticipantAuthenticationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateParticipantAuthentication action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.UpdateParticipantRoleConfigConditionKeys">UpdateParticipantRoleConfigConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateParticipantRoleConfig action. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectConditions.property.UpdatePhoneNumberConditionKeys">UpdatePhoneNumberConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdatePhoneNumber action. |
@@ -17768,6 +17782,18 @@ Condition keys applicable to the UpdateNotificationContent action.
 
 ---
 
+##### `UpdateOutboundEmailContactMessageConditionKeys`<sup>Required</sup> <a name="UpdateOutboundEmailContactMessageConditionKeys" id="@cdk_utils/iam.connect.ConnectConditions.property.UpdateOutboundEmailContactMessageConditionKeys"></a>
+
+```typescript
+public readonly UpdateOutboundEmailContactMessageConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UpdateOutboundEmailContactMessage action.
+
+---
+
 ##### `UpdateParticipantAuthenticationConditionKeys`<sup>Required</sup> <a name="UpdateParticipantAuthenticationConditionKeys" id="@cdk_utils/iam.connect.ConnectConditions.property.UpdateParticipantAuthenticationConditionKeys"></a>
 
 ```typescript
@@ -18261,6 +18287,7 @@ new connect.ConnectOperations()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.ActivateEvaluationForm">ActivateEvaluationForm</a></code> | <code>string[]</code> | IAM actions required for the ActivateEvaluationForm API call. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.ApproveTimeOff">ApproveTimeOff</a></code> | <code>string[]</code> | IAM actions required for the ApproveTimeOff API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.AssociateAnalyticsDataSet">AssociateAnalyticsDataSet</a></code> | <code>string[]</code> | IAM actions required for the AssociateAnalyticsDataSet API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.AssociateApprovedOrigin">AssociateApprovedOrigin</a></code> | <code>string[]</code> | IAM actions required for the AssociateApprovedOrigin API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.AssociateBot">AssociateBot</a></code> | <code>string[]</code> | IAM actions required for the AssociateBot API call. |
@@ -18291,6 +18318,7 @@ new connect.ConnectOperations()
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.BatchPutContact">BatchPutContact</a></code> | <code>string[]</code> | IAM actions required for the BatchPutContact API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.BatchUpdateDataTableValue">BatchUpdateDataTableValue</a></code> | <code>string[]</code> | IAM actions required for the BatchUpdateDataTableValue API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.CancelParticipantAuthentication">CancelParticipantAuthentication</a></code> | <code>string[]</code> | IAM actions required for the CancelParticipantAuthentication API call. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.CancelTimeOff">CancelTimeOff</a></code> | <code>string[]</code> | IAM actions required for the CancelTimeOff API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.ClaimPhoneNumber">ClaimPhoneNumber</a></code> | <code>string[]</code> | IAM actions required for the ClaimPhoneNumber API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.CompleteAttachedFileUpload">CompleteAttachedFileUpload</a></code> | <code>string[]</code> | IAM actions required for the CompleteAttachedFileUpload API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.CompleteAttachmentUpload">CompleteAttachmentUpload</a></code> | <code>string[]</code> | IAM actions required for the CompleteAttachmentUpload API call. |
@@ -18328,6 +18356,7 @@ new connect.ConnectOperations()
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.CreateSecurityProfile">CreateSecurityProfile</a></code> | <code>string[]</code> | IAM actions required for the CreateSecurityProfile API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.CreateTaskTemplate">CreateTaskTemplate</a></code> | <code>string[]</code> | IAM actions required for the CreateTaskTemplate API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.CreateTestCase">CreateTestCase</a></code> | <code>string[]</code> | IAM actions required for the CreateTestCase API call. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.CreateTimeOff">CreateTimeOff</a></code> | <code>string[]</code> | IAM actions required for the CreateTimeOff API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.CreateTrafficDistributionGroup">CreateTrafficDistributionGroup</a></code> | <code>string[]</code> | IAM actions required for the CreateTrafficDistributionGroup API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.CreateUseCase">CreateUseCase</a></code> | <code>string[]</code> | IAM actions required for the CreateUseCase API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.CreateUser">CreateUser</a></code> | <code>string[]</code> | IAM actions required for the CreateUser API call. |
@@ -18338,6 +18367,7 @@ new connect.ConnectOperations()
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.CreateWorkspace">CreateWorkspace</a></code> | <code>string[]</code> | IAM actions required for the CreateWorkspace API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.CreateWorkspacePage">CreateWorkspacePage</a></code> | <code>string[]</code> | IAM actions required for the CreateWorkspacePage API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.DeactivateEvaluationForm">DeactivateEvaluationForm</a></code> | <code>string[]</code> | IAM actions required for the DeactivateEvaluationForm API call. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.DeleteAllEntitySessions">DeleteAllEntitySessions</a></code> | <code>string[]</code> | IAM actions required for the DeleteAllEntitySessions API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.DeleteAttachedFile">DeleteAttachedFile</a></code> | <code>string[]</code> | IAM actions required for the DeleteAttachedFile API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.DeleteContactData">DeleteContactData</a></code> | <code>string[]</code> | IAM actions required for the DeleteContactData API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.DeleteContactEvaluation">DeleteContactEvaluation</a></code> | <code>string[]</code> | IAM actions required for the DeleteContactEvaluation API call. |
@@ -18533,10 +18563,13 @@ new connect.ConnectOperations()
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.opGetPromptFile">opGetPromptFile</a></code> | <code>string[]</code> | IAM actions required for the GetPromptFile API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.opGetTaskTemplate">opGetTaskTemplate</a></code> | <code>string[]</code> | IAM actions required for the GetTaskTemplate API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.opGetTestCaseExecutionSummary">opGetTestCaseExecutionSummary</a></code> | <code>string[]</code> | IAM actions required for the GetTestCaseExecutionSummary API call. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.opGetTimeOff">opGetTimeOff</a></code> | <code>string[]</code> | IAM actions required for the GetTimeOff API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.opGetTrafficDistribution">opGetTrafficDistribution</a></code> | <code>string[]</code> | IAM actions required for the GetTrafficDistribution API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.opGetTranscript">opGetTranscript</a></code> | <code>string[]</code> | IAM actions required for the GetTranscript API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.PauseContact">PauseContact</a></code> | <code>string[]</code> | IAM actions required for the PauseContact API call. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.PutTimeOffBalance">PutTimeOffBalance</a></code> | <code>string[]</code> | IAM actions required for the PutTimeOffBalance API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.PutUserStatus">PutUserStatus</a></code> | <code>string[]</code> | IAM actions required for the PutUserStatus API call. |
+| <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.RejectTimeOff">RejectTimeOff</a></code> | <code>string[]</code> | IAM actions required for the RejectTimeOff API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.ReleasePhoneNumber">ReleasePhoneNumber</a></code> | <code>string[]</code> | IAM actions required for the ReleasePhoneNumber API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.ReplicateInstance">ReplicateInstance</a></code> | <code>string[]</code> | IAM actions required for the ReplicateInstance API call. |
 | <code><a href="#@cdk_utils/iam.connect.ConnectOperations.property.ResumeContact">ResumeContact</a></code> | <code>string[]</code> | IAM actions required for the ResumeContact API call. |
@@ -18687,6 +18720,18 @@ public readonly ActivateEvaluationForm: string[];
 - *Type:* string[]
 
 IAM actions required for the ActivateEvaluationForm API call.
+
+---
+
+##### `ApproveTimeOff`<sup>Required</sup> <a name="ApproveTimeOff" id="@cdk_utils/iam.connect.ConnectOperations.property.ApproveTimeOff"></a>
+
+```typescript
+public readonly ApproveTimeOff: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ApproveTimeOff API call.
 
 ---
 
@@ -19047,6 +19092,18 @@ public readonly CancelParticipantAuthentication: string[];
 - *Type:* string[]
 
 IAM actions required for the CancelParticipantAuthentication API call.
+
+---
+
+##### `CancelTimeOff`<sup>Required</sup> <a name="CancelTimeOff" id="@cdk_utils/iam.connect.ConnectOperations.property.CancelTimeOff"></a>
+
+```typescript
+public readonly CancelTimeOff: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CancelTimeOff API call.
 
 ---
 
@@ -19494,6 +19551,18 @@ IAM actions required for the CreateTestCase API call.
 
 ---
 
+##### `CreateTimeOff`<sup>Required</sup> <a name="CreateTimeOff" id="@cdk_utils/iam.connect.ConnectOperations.property.CreateTimeOff"></a>
+
+```typescript
+public readonly CreateTimeOff: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateTimeOff API call.
+
+---
+
 ##### `CreateTrafficDistributionGroup`<sup>Required</sup> <a name="CreateTrafficDistributionGroup" id="@cdk_utils/iam.connect.ConnectOperations.property.CreateTrafficDistributionGroup"></a>
 
 ```typescript
@@ -19611,6 +19680,18 @@ public readonly DeactivateEvaluationForm: string[];
 - *Type:* string[]
 
 IAM actions required for the DeactivateEvaluationForm API call.
+
+---
+
+##### `DeleteAllEntitySessions`<sup>Required</sup> <a name="DeleteAllEntitySessions" id="@cdk_utils/iam.connect.ConnectOperations.property.DeleteAllEntitySessions"></a>
+
+```typescript
+public readonly DeleteAllEntitySessions: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteAllEntitySessions API call.
 
 ---
 
@@ -21954,6 +22035,18 @@ IAM actions required for the GetTestCaseExecutionSummary API call.
 
 ---
 
+##### `opGetTimeOff`<sup>Required</sup> <a name="opGetTimeOff" id="@cdk_utils/iam.connect.ConnectOperations.property.opGetTimeOff"></a>
+
+```typescript
+public readonly opGetTimeOff: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetTimeOff API call.
+
+---
+
 ##### `opGetTrafficDistribution`<sup>Required</sup> <a name="opGetTrafficDistribution" id="@cdk_utils/iam.connect.ConnectOperations.property.opGetTrafficDistribution"></a>
 
 ```typescript
@@ -21990,6 +22083,18 @@ IAM actions required for the PauseContact API call.
 
 ---
 
+##### `PutTimeOffBalance`<sup>Required</sup> <a name="PutTimeOffBalance" id="@cdk_utils/iam.connect.ConnectOperations.property.PutTimeOffBalance"></a>
+
+```typescript
+public readonly PutTimeOffBalance: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the PutTimeOffBalance API call.
+
+---
+
 ##### `PutUserStatus`<sup>Required</sup> <a name="PutUserStatus" id="@cdk_utils/iam.connect.ConnectOperations.property.PutUserStatus"></a>
 
 ```typescript
@@ -21999,6 +22104,18 @@ public readonly PutUserStatus: string[];
 - *Type:* string[]
 
 IAM actions required for the PutUserStatus API call.
+
+---
+
+##### `RejectTimeOff`<sup>Required</sup> <a name="RejectTimeOff" id="@cdk_utils/iam.connect.ConnectOperations.property.RejectTimeOff"></a>
+
+```typescript
+public readonly RejectTimeOff: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the RejectTimeOff API call.
 
 ---
 

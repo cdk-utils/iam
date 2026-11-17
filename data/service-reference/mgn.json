@@ -229,6 +229,25 @@
       }
     },
     {
+      "Name": "CreateRemoteSourceAction",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "CreateReplicationConfigurationTemplate",
       "ActionConditionKeys": [
         "aws:RequestTag/${TagKey}",
@@ -390,6 +409,26 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteRemoteSourceAction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RemoteSourceActionResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -864,6 +903,26 @@
       }
     },
     {
+      "Name": "GetLaunchConfigurationDefaults",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "GetNetworkMigrationDefinition",
       "Annotations": {
         "Properties": {
@@ -1324,6 +1383,26 @@
       }
     },
     {
+      "Name": "ListNetworkMigrationInsights",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NetworkMigrationDefinitionResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ListNetworkMigrationMapperSegmentConstructs",
       "Annotations": {
         "Properties": {
@@ -1405,6 +1484,76 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListRemoteSourceActionInvocationResults",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListRemoteSourceActionInvocations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RemoteSourceActionJobResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListRemoteSourceActionJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListRemoteSourceActions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -2120,6 +2269,36 @@
       }
     },
     {
+      "Name": "StartRemoteSourceActionJob",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ConnectorResource"
+        },
+        {
+          "Name": "RemoteSourceActionResource"
+        },
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "StartReplication",
       "Annotations": {
         "Properties": {
@@ -2237,6 +2416,12 @@
           "Name": "LaunchConfigurationTemplateResource"
         },
         {
+          "Name": "RemoteSourceActionJobResource"
+        },
+        {
+          "Name": "RemoteSourceActionResource"
+        },
+        {
           "Name": "ReplicationConfigurationTemplateResource"
         },
         {
@@ -2347,6 +2532,12 @@
         },
         {
           "Name": "LaunchConfigurationTemplateResource"
+        },
+        {
+          "Name": "RemoteSourceActionJobResource"
+        },
+        {
+          "Name": "RemoteSourceActionResource"
         },
         {
           "Name": "ReplicationConfigurationTemplateResource"
@@ -2545,6 +2736,26 @@
       }
     },
     {
+      "Name": "UpdateLaunchConfigurationDefaults",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "UpdateLaunchConfigurationTemplate",
       "Annotations": {
         "Properties": {
@@ -2620,6 +2831,26 @@
       "Resources": [
         {
           "Name": "NetworkMigrationDefinitionResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateRemoteSourceAction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RemoteSourceActionResource"
         }
       ],
       "SupportedBy": {
@@ -4399,6 +4630,24 @@
       "Name": "NetworkMigrationDefinitionResource",
       "ARNFormats": [
         "arn:${Partition}:mgn:${Region}:${Account}:network-migration-definition/${NetworkMigrationDefinitionID}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "RemoteSourceActionJobResource",
+      "ARNFormats": [
+        "arn:${Partition}:mgn:${Region}:${Account}:remote-source-action-job/${RemoteSourceActionJobID}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "RemoteSourceActionResource",
+      "ARNFormats": [
+        "arn:${Partition}:mgn:${Region}:${Account}:remote-source-action/${RemoteSourceActionID}"
       ],
       "ConditionKeys": [
         "aws:ResourceTag/${TagKey}"

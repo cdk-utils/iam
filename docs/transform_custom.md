@@ -447,6 +447,154 @@ Defaults to "*".
 
 ---
 
+### TransformCustomIssueGroupArnComponents <a name="TransformCustomIssueGroupArnComponents" id="@cdk_utils/iam.transform_custom.TransformCustomIssueGroupArnComponents"></a>
+
+Parsed components of a issue-group ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.transform_custom.TransformCustomIssueGroupArnComponents.Initializer"></a>
+
+```typescript
+import { transform_custom } from '@cdk_utils/iam'
+
+const transformCustomIssueGroupArnComponents: transform_custom.TransformCustomIssueGroupArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomIssueGroupArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomIssueGroupArnComponents.property.issueGroupId">issueGroupId</a></code> | <code>string</code> | The IssueGroupId component. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomIssueGroupArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomIssueGroupArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.transform_custom.TransformCustomIssueGroupArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `issueGroupId`<sup>Required</sup> <a name="issueGroupId" id="@cdk_utils/iam.transform_custom.TransformCustomIssueGroupArnComponents.property.issueGroupId"></a>
+
+```typescript
+public readonly issueGroupId: string;
+```
+
+- *Type:* string
+
+The IssueGroupId component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.transform_custom.TransformCustomIssueGroupArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.transform_custom.TransformCustomIssueGroupArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### TransformCustomIssueGroupArnProps <a name="TransformCustomIssueGroupArnProps" id="@cdk_utils/iam.transform_custom.TransformCustomIssueGroupArnProps"></a>
+
+Properties for building a issue-group ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.transform_custom.TransformCustomIssueGroupArnProps.Initializer"></a>
+
+```typescript
+import { transform_custom } from '@cdk_utils/iam'
+
+const transformCustomIssueGroupArnProps: transform_custom.TransformCustomIssueGroupArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomIssueGroupArnProps.property.issueGroupId">issueGroupId</a></code> | <code>string</code> | The IssueGroupId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomIssueGroupArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomIssueGroupArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomIssueGroupArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `issueGroupId`<sup>Required</sup> <a name="issueGroupId" id="@cdk_utils/iam.transform_custom.TransformCustomIssueGroupArnProps.property.issueGroupId"></a>
+
+```typescript
+public readonly issueGroupId: string;
+```
+
+- *Type:* string
+
+The IssueGroupId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.transform_custom.TransformCustomIssueGroupArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.transform_custom.TransformCustomIssueGroupArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.transform_custom.TransformCustomIssueGroupArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### TransformCustomKnowledgeItemArnComponents <a name="TransformCustomKnowledgeItemArnComponents" id="@cdk_utils/iam.transform_custom.TransformCustomKnowledgeItemArnComponents"></a>
 
 Parsed components of a knowledge-item ARN.
@@ -917,6 +1065,154 @@ Defaults to "*".
 
 ---
 
+### TransformCustomRemediationPlanArnComponents <a name="TransformCustomRemediationPlanArnComponents" id="@cdk_utils/iam.transform_custom.TransformCustomRemediationPlanArnComponents"></a>
+
+Parsed components of a remediation-plan ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.transform_custom.TransformCustomRemediationPlanArnComponents.Initializer"></a>
+
+```typescript
+import { transform_custom } from '@cdk_utils/iam'
+
+const transformCustomRemediationPlanArnComponents: transform_custom.TransformCustomRemediationPlanArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomRemediationPlanArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomRemediationPlanArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomRemediationPlanArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomRemediationPlanArnComponents.property.remediationPlanId">remediationPlanId</a></code> | <code>string</code> | The RemediationPlanId component. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.transform_custom.TransformCustomRemediationPlanArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.transform_custom.TransformCustomRemediationPlanArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.transform_custom.TransformCustomRemediationPlanArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+##### `remediationPlanId`<sup>Required</sup> <a name="remediationPlanId" id="@cdk_utils/iam.transform_custom.TransformCustomRemediationPlanArnComponents.property.remediationPlanId"></a>
+
+```typescript
+public readonly remediationPlanId: string;
+```
+
+- *Type:* string
+
+The RemediationPlanId component.
+
+---
+
+### TransformCustomRemediationPlanArnProps <a name="TransformCustomRemediationPlanArnProps" id="@cdk_utils/iam.transform_custom.TransformCustomRemediationPlanArnProps"></a>
+
+Properties for building a remediation-plan ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.transform_custom.TransformCustomRemediationPlanArnProps.Initializer"></a>
+
+```typescript
+import { transform_custom } from '@cdk_utils/iam'
+
+const transformCustomRemediationPlanArnProps: transform_custom.TransformCustomRemediationPlanArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomRemediationPlanArnProps.property.remediationPlanId">remediationPlanId</a></code> | <code>string</code> | The RemediationPlanId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomRemediationPlanArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomRemediationPlanArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomRemediationPlanArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `remediationPlanId`<sup>Required</sup> <a name="remediationPlanId" id="@cdk_utils/iam.transform_custom.TransformCustomRemediationPlanArnProps.property.remediationPlanId"></a>
+
+```typescript
+public readonly remediationPlanId: string;
+```
+
+- *Type:* string
+
+The RemediationPlanId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.transform_custom.TransformCustomRemediationPlanArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.transform_custom.TransformCustomRemediationPlanArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.transform_custom.TransformCustomRemediationPlanArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### TransformCustomRepositoryArnComponents <a name="TransformCustomRepositoryArnComponents" id="@cdk_utils/iam.transform_custom.TransformCustomRepositoryArnComponents"></a>
 
 Parsed components of a repository ARN.
@@ -1052,6 +1348,154 @@ Defaults to "aws".
 ---
 
 ##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.transform_custom.TransformCustomRepositoryArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
+### TransformCustomSkillCreationJobArnComponents <a name="TransformCustomSkillCreationJobArnComponents" id="@cdk_utils/iam.transform_custom.TransformCustomSkillCreationJobArnComponents"></a>
+
+Parsed components of a skill-creation-job ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.transform_custom.TransformCustomSkillCreationJobArnComponents.Initializer"></a>
+
+```typescript
+import { transform_custom } from '@cdk_utils/iam'
+
+const transformCustomSkillCreationJobArnComponents: transform_custom.TransformCustomSkillCreationJobArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomSkillCreationJobArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomSkillCreationJobArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomSkillCreationJobArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomSkillCreationJobArnComponents.property.skillCreationJobId">skillCreationJobId</a></code> | <code>string</code> | The SkillCreationJobId component. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.transform_custom.TransformCustomSkillCreationJobArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.transform_custom.TransformCustomSkillCreationJobArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.transform_custom.TransformCustomSkillCreationJobArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+##### `skillCreationJobId`<sup>Required</sup> <a name="skillCreationJobId" id="@cdk_utils/iam.transform_custom.TransformCustomSkillCreationJobArnComponents.property.skillCreationJobId"></a>
+
+```typescript
+public readonly skillCreationJobId: string;
+```
+
+- *Type:* string
+
+The SkillCreationJobId component.
+
+---
+
+### TransformCustomSkillCreationJobArnProps <a name="TransformCustomSkillCreationJobArnProps" id="@cdk_utils/iam.transform_custom.TransformCustomSkillCreationJobArnProps"></a>
+
+Properties for building a skill-creation-job ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.transform_custom.TransformCustomSkillCreationJobArnProps.Initializer"></a>
+
+```typescript
+import { transform_custom } from '@cdk_utils/iam'
+
+const transformCustomSkillCreationJobArnProps: transform_custom.TransformCustomSkillCreationJobArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomSkillCreationJobArnProps.property.skillCreationJobId">skillCreationJobId</a></code> | <code>string</code> | The SkillCreationJobId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomSkillCreationJobArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomSkillCreationJobArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomSkillCreationJobArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `skillCreationJobId`<sup>Required</sup> <a name="skillCreationJobId" id="@cdk_utils/iam.transform_custom.TransformCustomSkillCreationJobArnProps.property.skillCreationJobId"></a>
+
+```typescript
+public readonly skillCreationJobId: string;
+```
+
+- *Type:* string
+
+The SkillCreationJobId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.transform_custom.TransformCustomSkillCreationJobArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.transform_custom.TransformCustomSkillCreationJobArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.transform_custom.TransformCustomSkillCreationJobArnProps.property.region"></a>
 
 ```typescript
 public readonly region: string;
@@ -1244,9 +1688,13 @@ new transform_custom.TransformCustomActions()
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.actionGetCampaign">actionGetCampaign</a></code> | <code>string</code> | [Read] transform-custom:GetCampaign. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.actionGetFinding">actionGetFinding</a></code> | <code>string</code> | [Read] transform-custom:GetFinding. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.actionGetFindingGroups">actionGetFindingGroups</a></code> | <code>string</code> | [Read] transform-custom:GetFindingGroups. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.actionGetIssueGroup">actionGetIssueGroup</a></code> | <code>string</code> | [Read] transform-custom:GetIssueGroup. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.actionGetKnowledgeItem">actionGetKnowledgeItem</a></code> | <code>string</code> | [Read] transform-custom:GetKnowledgeItem. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.actionGetRemediation">actionGetRemediation</a></code> | <code>string</code> | [Read] transform-custom:GetRemediation. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.actionGetRemediationPlan">actionGetRemediationPlan</a></code> | <code>string</code> | [Read] transform-custom:GetRemediationPlan. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.actionGetRepository">actionGetRepository</a></code> | <code>string</code> | [Read] transform-custom:GetRepository. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.actionGetResourcePolicy">actionGetResourcePolicy</a></code> | <code>string</code> | [Read] transform-custom:GetResourcePolicy. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.actionGetSkillCreationJob">actionGetSkillCreationJob</a></code> | <code>string</code> | [Read] transform-custom:GetSkillCreationJob. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.actionGetSource">actionGetSource</a></code> | <code>string</code> | [Read] transform-custom:GetSource. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.actionGetTransformationPackageUrl">actionGetTransformationPackageUrl</a></code> | <code>string</code> | [Read] transform-custom:GetTransformationPackageUrl. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.AllListActions">AllListActions</a></code> | <code>string[]</code> | All list-level actions. |
@@ -1256,11 +1704,15 @@ new transform_custom.TransformCustomActions()
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.BatchCreateFindings">BatchCreateFindings</a></code> | <code>string</code> | [Write] transform-custom:BatchCreateFindings. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.BatchUpdateFindings">BatchUpdateFindings</a></code> | <code>string</code> | [Write] transform-custom:BatchUpdateFindings. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.CancelSkillCreationJob">CancelSkillCreationJob</a></code> | <code>string</code> | [Write] transform-custom:CancelSkillCreationJob. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.CompleteTransformationPackageUpload">CompleteTransformationPackageUpload</a></code> | <code>string</code> | [Write] transform-custom:CompleteTransformationPackageUpload. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.ConnectSource">ConnectSource</a></code> | <code>string</code> | [Write] transform-custom:ConnectSource. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.ContributeKnowledgeItems">ContributeKnowledgeItems</a></code> | <code>string</code> | [Write] transform-custom:ContributeKnowledgeItems. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.ConverseStream">ConverseStream</a></code> | <code>string</code> | [Write] transform-custom:ConverseStream. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.CreateAnalysis">CreateAnalysis</a></code> | <code>string</code> | [Write] transform-custom:CreateAnalysis. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.CreateCampaign">CreateCampaign</a></code> | <code>string</code> | [Write] transform-custom:CreateCampaign. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.CreateRemediation">CreateRemediation</a></code> | <code>string</code> | [Write] transform-custom:CreateRemediation. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.CreateRemediationPlan">CreateRemediationPlan</a></code> | <code>string</code> | [Write] transform-custom:CreateRemediationPlan. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.CreateRepository">CreateRepository</a></code> | <code>string</code> | [Write] transform-custom:CreateRepository. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.CreateSource">CreateSource</a></code> | <code>string</code> | [Write] transform-custom:CreateSource. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.CreateTransformationPackageUrl">CreateTransformationPackageUrl</a></code> | <code>string</code> | [Write] transform-custom:CreateTransformationPackageUrl. |
@@ -1269,7 +1721,9 @@ new transform_custom.TransformCustomActions()
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.DeleteFinding">DeleteFinding</a></code> | <code>string</code> | [Write] transform-custom:DeleteFinding. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.DeleteKnowledgeItem">DeleteKnowledgeItem</a></code> | <code>string</code> | [Write] transform-custom:DeleteKnowledgeItem. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.DeleteRemediation">DeleteRemediation</a></code> | <code>string</code> | [Write] transform-custom:DeleteRemediation. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.DeleteRemediationPlan">DeleteRemediationPlan</a></code> | <code>string</code> | [Write] transform-custom:DeleteRemediationPlan. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.DeleteRepository">DeleteRepository</a></code> | <code>string</code> | [Write] transform-custom:DeleteRepository. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.DeleteResourcePolicy">DeleteResourcePolicy</a></code> | <code>string</code> | [PermissionManagement] transform-custom:DeleteResourcePolicy. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.DeleteSource">DeleteSource</a></code> | <code>string</code> | [Write] transform-custom:DeleteSource. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.DeleteTransformationPackage">DeleteTransformationPackage</a></code> | <code>string</code> | [Write] transform-custom:DeleteTransformationPackage. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.ExecuteTransformation">ExecuteTransformation</a></code> | <code>string</code> | [Write] transform-custom:ExecuteTransformation. |
@@ -1278,27 +1732,37 @@ new transform_custom.TransformCustomActions()
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.ListCampaignRepositories">ListCampaignRepositories</a></code> | <code>string</code> | [Read] transform-custom:ListCampaignRepositories. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.ListCampaigns">ListCampaigns</a></code> | <code>string</code> | [List] transform-custom:ListCampaigns. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.ListFindings">ListFindings</a></code> | <code>string</code> | [List] transform-custom:ListFindings. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.ListIssueGroups">ListIssueGroups</a></code> | <code>string</code> | [List] transform-custom:ListIssueGroups. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.ListKnowledgeItems">ListKnowledgeItems</a></code> | <code>string</code> | [List] transform-custom:ListKnowledgeItems. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.ListRemediationPlans">ListRemediationPlans</a></code> | <code>string</code> | [List] transform-custom:ListRemediationPlans. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.ListRemediations">ListRemediations</a></code> | <code>string</code> | [List] transform-custom:ListRemediations. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.ListRepositories">ListRepositories</a></code> | <code>string</code> | [List] transform-custom:ListRepositories. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.ListSkillCreationJobs">ListSkillCreationJobs</a></code> | <code>string</code> | [List] transform-custom:ListSkillCreationJobs. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.ListSources">ListSources</a></code> | <code>string</code> | [List] transform-custom:ListSources. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [Read] transform-custom:ListTagsForResource. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.ListTransformationPackageMetadata">ListTransformationPackageMetadata</a></code> | <code>string</code> | [List] transform-custom:ListTransformationPackageMetadata. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.ListTransformationPackageShares">ListTransformationPackageShares</a></code> | <code>string</code> | [Read] transform-custom:ListTransformationPackageShares. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.PutResourcePolicy">PutResourcePolicy</a></code> | <code>string</code> | [PermissionManagement] transform-custom:PutResourcePolicy. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.ReadRepositoryContent">ReadRepositoryContent</a></code> | <code>string</code> | [Write] transform-custom:ReadRepositoryContent. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.SendTelemetryEvent">SendTelemetryEvent</a></code> | <code>string</code> | [Write] transform-custom:SendTelemetryEvent. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.ShareTransformationPackage">ShareTransformationPackage</a></code> | <code>string</code> | [Write] transform-custom:ShareTransformationPackage. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.StartSkillCreationJob">StartSkillCreationJob</a></code> | <code>string</code> | [Write] transform-custom:StartSkillCreationJob. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] transform-custom:TagResource. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.UnshareTransformationPackage">UnshareTransformationPackage</a></code> | <code>string</code> | [Write] transform-custom:UnshareTransformationPackage. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] transform-custom:UntagResource. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.UpdateAnalysis">UpdateAnalysis</a></code> | <code>string</code> | [Write] transform-custom:UpdateAnalysis. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.UpdateCampaign">UpdateCampaign</a></code> | <code>string</code> | [Write] transform-custom:UpdateCampaign. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.UpdateCampaignRepositoryStatus">UpdateCampaignRepositoryStatus</a></code> | <code>string</code> | [Write] transform-custom:UpdateCampaignRepositoryStatus. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.UpdateIssueGroup">UpdateIssueGroup</a></code> | <code>string</code> | [Write] transform-custom:UpdateIssueGroup. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.UpdateKnowledgeItemConfiguration">UpdateKnowledgeItemConfiguration</a></code> | <code>string</code> | [Write] transform-custom:UpdateKnowledgeItemConfiguration. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.UpdateKnowledgeItemStatus">UpdateKnowledgeItemStatus</a></code> | <code>string</code> | [Write] transform-custom:UpdateKnowledgeItemStatus. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.UpdateRemediation">UpdateRemediation</a></code> | <code>string</code> | [Write] transform-custom:UpdateRemediation. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.UpdateRemediationPlan">UpdateRemediationPlan</a></code> | <code>string</code> | [Write] transform-custom:UpdateRemediationPlan. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.UpdateRepository">UpdateRepository</a></code> | <code>string</code> | [Write] transform-custom:UpdateRepository. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.UpdateSkillCreationJob">UpdateSkillCreationJob</a></code> | <code>string</code> | [Write] transform-custom:UpdateSkillCreationJob. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.UpdateSource">UpdateSource</a></code> | <code>string</code> | [Write] transform-custom:UpdateSource. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomActions.property.WriteRepositoryContent">WriteRepositoryContent</a></code> | <code>string</code> | [Write] transform-custom:WriteRepositoryContent. |
 
 ---
 
@@ -1362,6 +1826,18 @@ public readonly actionGetFindingGroups: string;
 
 ---
 
+##### `actionGetIssueGroup`<sup>Required</sup> <a name="actionGetIssueGroup" id="@cdk_utils/iam.transform_custom.TransformCustomActions.property.actionGetIssueGroup"></a>
+
+```typescript
+public readonly actionGetIssueGroup: string;
+```
+
+- *Type:* string
+
+[Read] transform-custom:GetIssueGroup.
+
+---
+
 ##### `actionGetKnowledgeItem`<sup>Required</sup> <a name="actionGetKnowledgeItem" id="@cdk_utils/iam.transform_custom.TransformCustomActions.property.actionGetKnowledgeItem"></a>
 
 ```typescript
@@ -1386,6 +1862,18 @@ public readonly actionGetRemediation: string;
 
 ---
 
+##### `actionGetRemediationPlan`<sup>Required</sup> <a name="actionGetRemediationPlan" id="@cdk_utils/iam.transform_custom.TransformCustomActions.property.actionGetRemediationPlan"></a>
+
+```typescript
+public readonly actionGetRemediationPlan: string;
+```
+
+- *Type:* string
+
+[Read] transform-custom:GetRemediationPlan.
+
+---
+
 ##### `actionGetRepository`<sup>Required</sup> <a name="actionGetRepository" id="@cdk_utils/iam.transform_custom.TransformCustomActions.property.actionGetRepository"></a>
 
 ```typescript
@@ -1395,6 +1883,30 @@ public readonly actionGetRepository: string;
 - *Type:* string
 
 [Read] transform-custom:GetRepository.
+
+---
+
+##### `actionGetResourcePolicy`<sup>Required</sup> <a name="actionGetResourcePolicy" id="@cdk_utils/iam.transform_custom.TransformCustomActions.property.actionGetResourcePolicy"></a>
+
+```typescript
+public readonly actionGetResourcePolicy: string;
+```
+
+- *Type:* string
+
+[Read] transform-custom:GetResourcePolicy.
+
+---
+
+##### `actionGetSkillCreationJob`<sup>Required</sup> <a name="actionGetSkillCreationJob" id="@cdk_utils/iam.transform_custom.TransformCustomActions.property.actionGetSkillCreationJob"></a>
+
+```typescript
+public readonly actionGetSkillCreationJob: string;
+```
+
+- *Type:* string
+
+[Read] transform-custom:GetSkillCreationJob.
 
 ---
 
@@ -1506,6 +2018,18 @@ public readonly BatchUpdateFindings: string;
 
 ---
 
+##### `CancelSkillCreationJob`<sup>Required</sup> <a name="CancelSkillCreationJob" id="@cdk_utils/iam.transform_custom.TransformCustomActions.property.CancelSkillCreationJob"></a>
+
+```typescript
+public readonly CancelSkillCreationJob: string;
+```
+
+- *Type:* string
+
+[Write] transform-custom:CancelSkillCreationJob.
+
+---
+
 ##### `CompleteTransformationPackageUpload`<sup>Required</sup> <a name="CompleteTransformationPackageUpload" id="@cdk_utils/iam.transform_custom.TransformCustomActions.property.CompleteTransformationPackageUpload"></a>
 
 ```typescript
@@ -1515,6 +2039,30 @@ public readonly CompleteTransformationPackageUpload: string;
 - *Type:* string
 
 [Write] transform-custom:CompleteTransformationPackageUpload.
+
+---
+
+##### `ConnectSource`<sup>Required</sup> <a name="ConnectSource" id="@cdk_utils/iam.transform_custom.TransformCustomActions.property.ConnectSource"></a>
+
+```typescript
+public readonly ConnectSource: string;
+```
+
+- *Type:* string
+
+[Write] transform-custom:ConnectSource.
+
+---
+
+##### `ContributeKnowledgeItems`<sup>Required</sup> <a name="ContributeKnowledgeItems" id="@cdk_utils/iam.transform_custom.TransformCustomActions.property.ContributeKnowledgeItems"></a>
+
+```typescript
+public readonly ContributeKnowledgeItems: string;
+```
+
+- *Type:* string
+
+[Write] transform-custom:ContributeKnowledgeItems.
 
 ---
 
@@ -1563,6 +2111,18 @@ public readonly CreateRemediation: string;
 - *Type:* string
 
 [Write] transform-custom:CreateRemediation.
+
+---
+
+##### `CreateRemediationPlan`<sup>Required</sup> <a name="CreateRemediationPlan" id="@cdk_utils/iam.transform_custom.TransformCustomActions.property.CreateRemediationPlan"></a>
+
+```typescript
+public readonly CreateRemediationPlan: string;
+```
+
+- *Type:* string
+
+[Write] transform-custom:CreateRemediationPlan.
 
 ---
 
@@ -1662,6 +2222,18 @@ public readonly DeleteRemediation: string;
 
 ---
 
+##### `DeleteRemediationPlan`<sup>Required</sup> <a name="DeleteRemediationPlan" id="@cdk_utils/iam.transform_custom.TransformCustomActions.property.DeleteRemediationPlan"></a>
+
+```typescript
+public readonly DeleteRemediationPlan: string;
+```
+
+- *Type:* string
+
+[Write] transform-custom:DeleteRemediationPlan.
+
+---
+
 ##### `DeleteRepository`<sup>Required</sup> <a name="DeleteRepository" id="@cdk_utils/iam.transform_custom.TransformCustomActions.property.DeleteRepository"></a>
 
 ```typescript
@@ -1671,6 +2243,18 @@ public readonly DeleteRepository: string;
 - *Type:* string
 
 [Write] transform-custom:DeleteRepository.
+
+---
+
+##### `DeleteResourcePolicy`<sup>Required</sup> <a name="DeleteResourcePolicy" id="@cdk_utils/iam.transform_custom.TransformCustomActions.property.DeleteResourcePolicy"></a>
+
+```typescript
+public readonly DeleteResourcePolicy: string;
+```
+
+- *Type:* string
+
+[PermissionManagement] transform-custom:DeleteResourcePolicy.
 
 ---
 
@@ -1770,6 +2354,18 @@ public readonly ListFindings: string;
 
 ---
 
+##### `ListIssueGroups`<sup>Required</sup> <a name="ListIssueGroups" id="@cdk_utils/iam.transform_custom.TransformCustomActions.property.ListIssueGroups"></a>
+
+```typescript
+public readonly ListIssueGroups: string;
+```
+
+- *Type:* string
+
+[List] transform-custom:ListIssueGroups.
+
+---
+
 ##### `ListKnowledgeItems`<sup>Required</sup> <a name="ListKnowledgeItems" id="@cdk_utils/iam.transform_custom.TransformCustomActions.property.ListKnowledgeItems"></a>
 
 ```typescript
@@ -1779,6 +2375,18 @@ public readonly ListKnowledgeItems: string;
 - *Type:* string
 
 [List] transform-custom:ListKnowledgeItems.
+
+---
+
+##### `ListRemediationPlans`<sup>Required</sup> <a name="ListRemediationPlans" id="@cdk_utils/iam.transform_custom.TransformCustomActions.property.ListRemediationPlans"></a>
+
+```typescript
+public readonly ListRemediationPlans: string;
+```
+
+- *Type:* string
+
+[List] transform-custom:ListRemediationPlans.
 
 ---
 
@@ -1803,6 +2411,18 @@ public readonly ListRepositories: string;
 - *Type:* string
 
 [List] transform-custom:ListRepositories.
+
+---
+
+##### `ListSkillCreationJobs`<sup>Required</sup> <a name="ListSkillCreationJobs" id="@cdk_utils/iam.transform_custom.TransformCustomActions.property.ListSkillCreationJobs"></a>
+
+```typescript
+public readonly ListSkillCreationJobs: string;
+```
+
+- *Type:* string
+
+[List] transform-custom:ListSkillCreationJobs.
 
 ---
 
@@ -1854,6 +2474,30 @@ public readonly ListTransformationPackageShares: string;
 
 ---
 
+##### `PutResourcePolicy`<sup>Required</sup> <a name="PutResourcePolicy" id="@cdk_utils/iam.transform_custom.TransformCustomActions.property.PutResourcePolicy"></a>
+
+```typescript
+public readonly PutResourcePolicy: string;
+```
+
+- *Type:* string
+
+[PermissionManagement] transform-custom:PutResourcePolicy.
+
+---
+
+##### `ReadRepositoryContent`<sup>Required</sup> <a name="ReadRepositoryContent" id="@cdk_utils/iam.transform_custom.TransformCustomActions.property.ReadRepositoryContent"></a>
+
+```typescript
+public readonly ReadRepositoryContent: string;
+```
+
+- *Type:* string
+
+[Write] transform-custom:ReadRepositoryContent.
+
+---
+
 ##### `SendTelemetryEvent`<sup>Required</sup> <a name="SendTelemetryEvent" id="@cdk_utils/iam.transform_custom.TransformCustomActions.property.SendTelemetryEvent"></a>
 
 ```typescript
@@ -1887,6 +2531,18 @@ public readonly ShareTransformationPackage: string;
 - *Type:* string
 
 [Write] transform-custom:ShareTransformationPackage.
+
+---
+
+##### `StartSkillCreationJob`<sup>Required</sup> <a name="StartSkillCreationJob" id="@cdk_utils/iam.transform_custom.TransformCustomActions.property.StartSkillCreationJob"></a>
+
+```typescript
+public readonly StartSkillCreationJob: string;
+```
+
+- *Type:* string
+
+[Write] transform-custom:StartSkillCreationJob.
 
 ---
 
@@ -1962,6 +2618,18 @@ public readonly UpdateCampaignRepositoryStatus: string;
 
 ---
 
+##### `UpdateIssueGroup`<sup>Required</sup> <a name="UpdateIssueGroup" id="@cdk_utils/iam.transform_custom.TransformCustomActions.property.UpdateIssueGroup"></a>
+
+```typescript
+public readonly UpdateIssueGroup: string;
+```
+
+- *Type:* string
+
+[Write] transform-custom:UpdateIssueGroup.
+
+---
+
 ##### `UpdateKnowledgeItemConfiguration`<sup>Required</sup> <a name="UpdateKnowledgeItemConfiguration" id="@cdk_utils/iam.transform_custom.TransformCustomActions.property.UpdateKnowledgeItemConfiguration"></a>
 
 ```typescript
@@ -1998,6 +2666,18 @@ public readonly UpdateRemediation: string;
 
 ---
 
+##### `UpdateRemediationPlan`<sup>Required</sup> <a name="UpdateRemediationPlan" id="@cdk_utils/iam.transform_custom.TransformCustomActions.property.UpdateRemediationPlan"></a>
+
+```typescript
+public readonly UpdateRemediationPlan: string;
+```
+
+- *Type:* string
+
+[Write] transform-custom:UpdateRemediationPlan.
+
+---
+
 ##### `UpdateRepository`<sup>Required</sup> <a name="UpdateRepository" id="@cdk_utils/iam.transform_custom.TransformCustomActions.property.UpdateRepository"></a>
 
 ```typescript
@@ -2010,6 +2690,18 @@ public readonly UpdateRepository: string;
 
 ---
 
+##### `UpdateSkillCreationJob`<sup>Required</sup> <a name="UpdateSkillCreationJob" id="@cdk_utils/iam.transform_custom.TransformCustomActions.property.UpdateSkillCreationJob"></a>
+
+```typescript
+public readonly UpdateSkillCreationJob: string;
+```
+
+- *Type:* string
+
+[Write] transform-custom:UpdateSkillCreationJob.
+
+---
+
 ##### `UpdateSource`<sup>Required</sup> <a name="UpdateSource" id="@cdk_utils/iam.transform_custom.TransformCustomActions.property.UpdateSource"></a>
 
 ```typescript
@@ -2019,6 +2711,18 @@ public readonly UpdateSource: string;
 - *Type:* string
 
 [Write] transform-custom:UpdateSource.
+
+---
+
+##### `WriteRepositoryContent`<sup>Required</sup> <a name="WriteRepositoryContent" id="@cdk_utils/iam.transform_custom.TransformCustomActions.property.WriteRepositoryContent"></a>
+
+```typescript
+public readonly WriteRepositoryContent: string;
+```
+
+- *Type:* string
+
+[Write] transform-custom:WriteRepositoryContent.
 
 ---
 
@@ -2107,19 +2811,27 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.actionGetAnalysisConditionKeys">actionGetAnalysisConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetAnalysis action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.actionGetCampaignConditionKeys">actionGetCampaignConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetCampaign action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.actionGetFindingConditionKeys">actionGetFindingConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetFinding action. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.actionGetIssueGroupConditionKeys">actionGetIssueGroupConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetIssueGroup action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.actionGetKnowledgeItemConditionKeys">actionGetKnowledgeItemConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetKnowledgeItem action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.actionGetRemediationConditionKeys">actionGetRemediationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetRemediation action. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.actionGetRemediationPlanConditionKeys">actionGetRemediationPlanConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetRemediationPlan action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.actionGetRepositoryConditionKeys">actionGetRepositoryConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetRepository action. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.actionGetResourcePolicyConditionKeys">actionGetResourcePolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetResourcePolicy action. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.actionGetSkillCreationJobConditionKeys">actionGetSkillCreationJobConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetSkillCreationJob action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.actionGetSourceConditionKeys">actionGetSourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetSource action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.actionGetTransformationPackageUrlConditionKeys">actionGetTransformationPackageUrlConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetTransformationPackageUrl action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.AWS_REQUEST_TAG">AWS_REQUEST_TAG</a></code> | <code>string</code> | Condition key: aws:RequestTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.AWS_RESOURCE_TAG">AWS_RESOURCE_TAG</a></code> | <code>string</code> | Condition key: aws:ResourceTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.AWS_TAG_KEYS">AWS_TAG_KEYS</a></code> | <code>string</code> | Condition key: aws:TagKeys (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.BatchCreateFindingsConditionKeys">BatchCreateFindingsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the BatchCreateFindings action. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.CancelSkillCreationJobConditionKeys">CancelSkillCreationJobConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CancelSkillCreationJob action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.CompleteTransformationPackageUploadConditionKeys">CompleteTransformationPackageUploadConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CompleteTransformationPackageUpload action. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.ConnectSourceConditionKeys">ConnectSourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ConnectSource action. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.ContributeKnowledgeItemsConditionKeys">ContributeKnowledgeItemsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ContributeKnowledgeItems action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.CreateAnalysisConditionKeys">CreateAnalysisConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateAnalysis action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.CreateCampaignConditionKeys">CreateCampaignConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateCampaign action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.CreateRemediationConditionKeys">CreateRemediationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateRemediation action. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.CreateRemediationPlanConditionKeys">CreateRemediationPlanConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateRemediationPlan action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.CreateRepositoryConditionKeys">CreateRepositoryConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateRepository action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.CreateSourceConditionKeys">CreateSourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateSource action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.CreateTransformationPackageUrlConditionKeys">CreateTransformationPackageUrlConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateTransformationPackageUrl action. |
@@ -2128,25 +2840,34 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.DeleteFindingConditionKeys">DeleteFindingConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteFinding action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.DeleteKnowledgeItemConditionKeys">DeleteKnowledgeItemConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteKnowledgeItem action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.DeleteRemediationConditionKeys">DeleteRemediationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteRemediation action. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.DeleteRemediationPlanConditionKeys">DeleteRemediationPlanConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteRemediationPlan action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.DeleteRepositoryConditionKeys">DeleteRepositoryConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteRepository action. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.DeleteResourcePolicyConditionKeys">DeleteResourcePolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteResourcePolicy action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.DeleteSourceConditionKeys">DeleteSourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteSource action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.DeleteTransformationPackageConditionKeys">DeleteTransformationPackageConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteTransformationPackage action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.ExecuteTransformationConditionKeys">ExecuteTransformationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ExecuteTransformation action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.ListAnalysisArtifactsConditionKeys">ListAnalysisArtifactsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListAnalysisArtifacts action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.ListCampaignRepositoriesConditionKeys">ListCampaignRepositoriesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListCampaignRepositories action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.ListTransformationPackageSharesConditionKeys">ListTransformationPackageSharesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListTransformationPackageShares action. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.PutResourcePolicyConditionKeys">PutResourcePolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutResourcePolicy action. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.ReadRepositoryContentConditionKeys">ReadRepositoryContentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ReadRepositoryContent action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.ShareTransformationPackageConditionKeys">ShareTransformationPackageConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ShareTransformationPackage action. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.StartSkillCreationJobConditionKeys">StartSkillCreationJobConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartSkillCreationJob action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.TagResourceConditionKeys">TagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TagResource action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.UnshareTransformationPackageConditionKeys">UnshareTransformationPackageConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UnshareTransformationPackage action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.UntagResourceConditionKeys">UntagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UntagResource action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.UpdateAnalysisConditionKeys">UpdateAnalysisConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateAnalysis action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.UpdateCampaignConditionKeys">UpdateCampaignConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateCampaign action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.UpdateCampaignRepositoryStatusConditionKeys">UpdateCampaignRepositoryStatusConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateCampaignRepositoryStatus action. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.UpdateIssueGroupConditionKeys">UpdateIssueGroupConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateIssueGroup action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.UpdateKnowledgeItemConfigurationConditionKeys">UpdateKnowledgeItemConfigurationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateKnowledgeItemConfiguration action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.UpdateKnowledgeItemStatusConditionKeys">UpdateKnowledgeItemStatusConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateKnowledgeItemStatus action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.UpdateRemediationConditionKeys">UpdateRemediationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateRemediation action. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.UpdateRemediationPlanConditionKeys">UpdateRemediationPlanConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateRemediationPlan action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.UpdateRepositoryConditionKeys">UpdateRepositoryConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateRepository action. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.UpdateSkillCreationJobConditionKeys">UpdateSkillCreationJobConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateSkillCreationJob action. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.UpdateSourceConditionKeys">UpdateSourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateSource action. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomConditions.property.WriteRepositoryContentConditionKeys">WriteRepositoryContentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the WriteRepositoryContent action. |
 
 ---
 
@@ -2198,6 +2919,18 @@ Condition keys applicable to the GetFinding action.
 
 ---
 
+##### `actionGetIssueGroupConditionKeys`<sup>Required</sup> <a name="actionGetIssueGroupConditionKeys" id="@cdk_utils/iam.transform_custom.TransformCustomConditions.property.actionGetIssueGroupConditionKeys"></a>
+
+```typescript
+public readonly actionGetIssueGroupConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetIssueGroup action.
+
+---
+
 ##### `actionGetKnowledgeItemConditionKeys`<sup>Required</sup> <a name="actionGetKnowledgeItemConditionKeys" id="@cdk_utils/iam.transform_custom.TransformCustomConditions.property.actionGetKnowledgeItemConditionKeys"></a>
 
 ```typescript
@@ -2222,6 +2955,18 @@ Condition keys applicable to the GetRemediation action.
 
 ---
 
+##### `actionGetRemediationPlanConditionKeys`<sup>Required</sup> <a name="actionGetRemediationPlanConditionKeys" id="@cdk_utils/iam.transform_custom.TransformCustomConditions.property.actionGetRemediationPlanConditionKeys"></a>
+
+```typescript
+public readonly actionGetRemediationPlanConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetRemediationPlan action.
+
+---
+
 ##### `actionGetRepositoryConditionKeys`<sup>Required</sup> <a name="actionGetRepositoryConditionKeys" id="@cdk_utils/iam.transform_custom.TransformCustomConditions.property.actionGetRepositoryConditionKeys"></a>
 
 ```typescript
@@ -2231,6 +2976,30 @@ public readonly actionGetRepositoryConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the GetRepository action.
+
+---
+
+##### `actionGetResourcePolicyConditionKeys`<sup>Required</sup> <a name="actionGetResourcePolicyConditionKeys" id="@cdk_utils/iam.transform_custom.TransformCustomConditions.property.actionGetResourcePolicyConditionKeys"></a>
+
+```typescript
+public readonly actionGetResourcePolicyConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetResourcePolicy action.
+
+---
+
+##### `actionGetSkillCreationJobConditionKeys`<sup>Required</sup> <a name="actionGetSkillCreationJobConditionKeys" id="@cdk_utils/iam.transform_custom.TransformCustomConditions.property.actionGetSkillCreationJobConditionKeys"></a>
+
+```typescript
+public readonly actionGetSkillCreationJobConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetSkillCreationJob action.
 
 ---
 
@@ -2306,6 +3075,18 @@ Condition keys applicable to the BatchCreateFindings action.
 
 ---
 
+##### `CancelSkillCreationJobConditionKeys`<sup>Required</sup> <a name="CancelSkillCreationJobConditionKeys" id="@cdk_utils/iam.transform_custom.TransformCustomConditions.property.CancelSkillCreationJobConditionKeys"></a>
+
+```typescript
+public readonly CancelSkillCreationJobConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CancelSkillCreationJob action.
+
+---
+
 ##### `CompleteTransformationPackageUploadConditionKeys`<sup>Required</sup> <a name="CompleteTransformationPackageUploadConditionKeys" id="@cdk_utils/iam.transform_custom.TransformCustomConditions.property.CompleteTransformationPackageUploadConditionKeys"></a>
 
 ```typescript
@@ -2315,6 +3096,30 @@ public readonly CompleteTransformationPackageUploadConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the CompleteTransformationPackageUpload action.
+
+---
+
+##### `ConnectSourceConditionKeys`<sup>Required</sup> <a name="ConnectSourceConditionKeys" id="@cdk_utils/iam.transform_custom.TransformCustomConditions.property.ConnectSourceConditionKeys"></a>
+
+```typescript
+public readonly ConnectSourceConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ConnectSource action.
+
+---
+
+##### `ContributeKnowledgeItemsConditionKeys`<sup>Required</sup> <a name="ContributeKnowledgeItemsConditionKeys" id="@cdk_utils/iam.transform_custom.TransformCustomConditions.property.ContributeKnowledgeItemsConditionKeys"></a>
+
+```typescript
+public readonly ContributeKnowledgeItemsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ContributeKnowledgeItems action.
 
 ---
 
@@ -2351,6 +3156,18 @@ public readonly CreateRemediationConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the CreateRemediation action.
+
+---
+
+##### `CreateRemediationPlanConditionKeys`<sup>Required</sup> <a name="CreateRemediationPlanConditionKeys" id="@cdk_utils/iam.transform_custom.TransformCustomConditions.property.CreateRemediationPlanConditionKeys"></a>
+
+```typescript
+public readonly CreateRemediationPlanConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateRemediationPlan action.
 
 ---
 
@@ -2450,6 +3267,18 @@ Condition keys applicable to the DeleteRemediation action.
 
 ---
 
+##### `DeleteRemediationPlanConditionKeys`<sup>Required</sup> <a name="DeleteRemediationPlanConditionKeys" id="@cdk_utils/iam.transform_custom.TransformCustomConditions.property.DeleteRemediationPlanConditionKeys"></a>
+
+```typescript
+public readonly DeleteRemediationPlanConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DeleteRemediationPlan action.
+
+---
+
 ##### `DeleteRepositoryConditionKeys`<sup>Required</sup> <a name="DeleteRepositoryConditionKeys" id="@cdk_utils/iam.transform_custom.TransformCustomConditions.property.DeleteRepositoryConditionKeys"></a>
 
 ```typescript
@@ -2459,6 +3288,18 @@ public readonly DeleteRepositoryConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the DeleteRepository action.
+
+---
+
+##### `DeleteResourcePolicyConditionKeys`<sup>Required</sup> <a name="DeleteResourcePolicyConditionKeys" id="@cdk_utils/iam.transform_custom.TransformCustomConditions.property.DeleteResourcePolicyConditionKeys"></a>
+
+```typescript
+public readonly DeleteResourcePolicyConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DeleteResourcePolicy action.
 
 ---
 
@@ -2534,6 +3375,30 @@ Condition keys applicable to the ListTransformationPackageShares action.
 
 ---
 
+##### `PutResourcePolicyConditionKeys`<sup>Required</sup> <a name="PutResourcePolicyConditionKeys" id="@cdk_utils/iam.transform_custom.TransformCustomConditions.property.PutResourcePolicyConditionKeys"></a>
+
+```typescript
+public readonly PutResourcePolicyConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the PutResourcePolicy action.
+
+---
+
+##### `ReadRepositoryContentConditionKeys`<sup>Required</sup> <a name="ReadRepositoryContentConditionKeys" id="@cdk_utils/iam.transform_custom.TransformCustomConditions.property.ReadRepositoryContentConditionKeys"></a>
+
+```typescript
+public readonly ReadRepositoryContentConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ReadRepositoryContent action.
+
+---
+
 ##### `ShareTransformationPackageConditionKeys`<sup>Required</sup> <a name="ShareTransformationPackageConditionKeys" id="@cdk_utils/iam.transform_custom.TransformCustomConditions.property.ShareTransformationPackageConditionKeys"></a>
 
 ```typescript
@@ -2543,6 +3408,18 @@ public readonly ShareTransformationPackageConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the ShareTransformationPackage action.
+
+---
+
+##### `StartSkillCreationJobConditionKeys`<sup>Required</sup> <a name="StartSkillCreationJobConditionKeys" id="@cdk_utils/iam.transform_custom.TransformCustomConditions.property.StartSkillCreationJobConditionKeys"></a>
+
+```typescript
+public readonly StartSkillCreationJobConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the StartSkillCreationJob action.
 
 ---
 
@@ -2618,6 +3495,18 @@ Condition keys applicable to the UpdateCampaignRepositoryStatus action.
 
 ---
 
+##### `UpdateIssueGroupConditionKeys`<sup>Required</sup> <a name="UpdateIssueGroupConditionKeys" id="@cdk_utils/iam.transform_custom.TransformCustomConditions.property.UpdateIssueGroupConditionKeys"></a>
+
+```typescript
+public readonly UpdateIssueGroupConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UpdateIssueGroup action.
+
+---
+
 ##### `UpdateKnowledgeItemConfigurationConditionKeys`<sup>Required</sup> <a name="UpdateKnowledgeItemConfigurationConditionKeys" id="@cdk_utils/iam.transform_custom.TransformCustomConditions.property.UpdateKnowledgeItemConfigurationConditionKeys"></a>
 
 ```typescript
@@ -2654,6 +3543,18 @@ Condition keys applicable to the UpdateRemediation action.
 
 ---
 
+##### `UpdateRemediationPlanConditionKeys`<sup>Required</sup> <a name="UpdateRemediationPlanConditionKeys" id="@cdk_utils/iam.transform_custom.TransformCustomConditions.property.UpdateRemediationPlanConditionKeys"></a>
+
+```typescript
+public readonly UpdateRemediationPlanConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UpdateRemediationPlan action.
+
+---
+
 ##### `UpdateRepositoryConditionKeys`<sup>Required</sup> <a name="UpdateRepositoryConditionKeys" id="@cdk_utils/iam.transform_custom.TransformCustomConditions.property.UpdateRepositoryConditionKeys"></a>
 
 ```typescript
@@ -2666,6 +3567,18 @@ Condition keys applicable to the UpdateRepository action.
 
 ---
 
+##### `UpdateSkillCreationJobConditionKeys`<sup>Required</sup> <a name="UpdateSkillCreationJobConditionKeys" id="@cdk_utils/iam.transform_custom.TransformCustomConditions.property.UpdateSkillCreationJobConditionKeys"></a>
+
+```typescript
+public readonly UpdateSkillCreationJobConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UpdateSkillCreationJob action.
+
+---
+
 ##### `UpdateSourceConditionKeys`<sup>Required</sup> <a name="UpdateSourceConditionKeys" id="@cdk_utils/iam.transform_custom.TransformCustomConditions.property.UpdateSourceConditionKeys"></a>
 
 ```typescript
@@ -2675,6 +3588,18 @@ public readonly UpdateSourceConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the UpdateSource action.
+
+---
+
+##### `WriteRepositoryContentConditionKeys`<sup>Required</sup> <a name="WriteRepositoryContentConditionKeys" id="@cdk_utils/iam.transform_custom.TransformCustomConditions.property.WriteRepositoryContentConditionKeys"></a>
+
+```typescript
+public readonly WriteRepositoryContentConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the WriteRepositoryContent action.
 
 ---
 
@@ -2703,26 +3628,35 @@ new transform_custom.TransformCustomResources()
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomResources.analysis">analysis</a></code> | Builds an ARN for the analysis resource. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomResources.campaign">campaign</a></code> | Builds an ARN for the campaign resource. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomResources.finding">finding</a></code> | Builds an ARN for the finding resource. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomResources.issueGroup">issueGroup</a></code> | Builds an ARN for the issue-group resource. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomResources.isValidAnalysisArn">isValidAnalysisArn</a></code> | Validates whether a string is a valid ARN for the analysis resource. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomResources.isValidCampaignArn">isValidCampaignArn</a></code> | Validates whether a string is a valid ARN for the campaign resource. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomResources.isValidFindingArn">isValidFindingArn</a></code> | Validates whether a string is a valid ARN for the finding resource. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomResources.isValidIssueGroupArn">isValidIssueGroupArn</a></code> | Validates whether a string is a valid ARN for the issue-group resource. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomResources.isValidKnowledgeItemArn">isValidKnowledgeItemArn</a></code> | Validates whether a string is a valid ARN for the knowledge-item resource. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomResources.isValidPackageArn">isValidPackageArn</a></code> | Validates whether a string is a valid ARN for the package resource. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomResources.isValidRemediationArn">isValidRemediationArn</a></code> | Validates whether a string is a valid ARN for the remediation resource. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomResources.isValidRemediationPlanArn">isValidRemediationPlanArn</a></code> | Validates whether a string is a valid ARN for the remediation-plan resource. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomResources.isValidRepositoryArn">isValidRepositoryArn</a></code> | Validates whether a string is a valid ARN for the repository resource. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomResources.isValidSkillCreationJobArn">isValidSkillCreationJobArn</a></code> | Validates whether a string is a valid ARN for the skill-creation-job resource. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomResources.isValidSourceArn">isValidSourceArn</a></code> | Validates whether a string is a valid ARN for the source resource. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomResources.knowledgeItem">knowledgeItem</a></code> | Builds an ARN for the knowledge-item resource. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomResources.package">package</a></code> | Builds an ARN for the package resource. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomResources.parseAnalysisArn">parseAnalysisArn</a></code> | Parses a analysis ARN into its components. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomResources.parseCampaignArn">parseCampaignArn</a></code> | Parses a campaign ARN into its components. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomResources.parseFindingArn">parseFindingArn</a></code> | Parses a finding ARN into its components. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomResources.parseIssueGroupArn">parseIssueGroupArn</a></code> | Parses a issue-group ARN into its components. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomResources.parseKnowledgeItemArn">parseKnowledgeItemArn</a></code> | Parses a knowledge-item ARN into its components. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomResources.parsePackageArn">parsePackageArn</a></code> | Parses a package ARN into its components. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomResources.parseRemediationArn">parseRemediationArn</a></code> | Parses a remediation ARN into its components. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomResources.parseRemediationPlanArn">parseRemediationPlanArn</a></code> | Parses a remediation-plan ARN into its components. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomResources.parseRepositoryArn">parseRepositoryArn</a></code> | Parses a repository ARN into its components. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomResources.parseSkillCreationJobArn">parseSkillCreationJobArn</a></code> | Parses a skill-creation-job ARN into its components. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomResources.parseSourceArn">parseSourceArn</a></code> | Parses a source ARN into its components. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomResources.remediation">remediation</a></code> | Builds an ARN for the remediation resource. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomResources.remediationPlan">remediationPlan</a></code> | Builds an ARN for the remediation-plan resource. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomResources.repository">repository</a></code> | Builds an ARN for the repository resource. |
+| <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomResources.skillCreationJob">skillCreationJob</a></code> | Builds an ARN for the skill-creation-job resource. |
 | <code><a href="#@cdk_utils/iam.transform_custom.TransformCustomResources.source">source</a></code> | Builds an ARN for the source resource. |
 
 ---
@@ -2775,6 +3709,22 @@ Builds an ARN for the finding resource.
 
 ---
 
+##### `issueGroup` <a name="issueGroup" id="@cdk_utils/iam.transform_custom.TransformCustomResources.issueGroup"></a>
+
+```typescript
+import { transform_custom } from '@cdk_utils/iam'
+
+transform_custom.TransformCustomResources.issueGroup(props: TransformCustomIssueGroupArnProps)
+```
+
+Builds an ARN for the issue-group resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.transform_custom.TransformCustomResources.issueGroup.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.transform_custom.TransformCustomIssueGroupArnProps">TransformCustomIssueGroupArnProps</a>
+
+---
+
 ##### `isValidAnalysisArn` <a name="isValidAnalysisArn" id="@cdk_utils/iam.transform_custom.TransformCustomResources.isValidAnalysisArn"></a>
 
 ```typescript
@@ -2818,6 +3768,22 @@ transform_custom.TransformCustomResources.isValidFindingArn(arn: string)
 Validates whether a string is a valid ARN for the finding resource.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.transform_custom.TransformCustomResources.isValidFindingArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidIssueGroupArn` <a name="isValidIssueGroupArn" id="@cdk_utils/iam.transform_custom.TransformCustomResources.isValidIssueGroupArn"></a>
+
+```typescript
+import { transform_custom } from '@cdk_utils/iam'
+
+transform_custom.TransformCustomResources.isValidIssueGroupArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the issue-group resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.transform_custom.TransformCustomResources.isValidIssueGroupArn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -2871,6 +3837,22 @@ Validates whether a string is a valid ARN for the remediation resource.
 
 ---
 
+##### `isValidRemediationPlanArn` <a name="isValidRemediationPlanArn" id="@cdk_utils/iam.transform_custom.TransformCustomResources.isValidRemediationPlanArn"></a>
+
+```typescript
+import { transform_custom } from '@cdk_utils/iam'
+
+transform_custom.TransformCustomResources.isValidRemediationPlanArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the remediation-plan resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.transform_custom.TransformCustomResources.isValidRemediationPlanArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `isValidRepositoryArn` <a name="isValidRepositoryArn" id="@cdk_utils/iam.transform_custom.TransformCustomResources.isValidRepositoryArn"></a>
 
 ```typescript
@@ -2882,6 +3864,22 @@ transform_custom.TransformCustomResources.isValidRepositoryArn(arn: string)
 Validates whether a string is a valid ARN for the repository resource.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.transform_custom.TransformCustomResources.isValidRepositoryArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidSkillCreationJobArn` <a name="isValidSkillCreationJobArn" id="@cdk_utils/iam.transform_custom.TransformCustomResources.isValidSkillCreationJobArn"></a>
+
+```typescript
+import { transform_custom } from '@cdk_utils/iam'
+
+transform_custom.TransformCustomResources.isValidSkillCreationJobArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the skill-creation-job resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.transform_custom.TransformCustomResources.isValidSkillCreationJobArn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -2983,6 +3981,22 @@ Parses a finding ARN into its components.
 
 ---
 
+##### `parseIssueGroupArn` <a name="parseIssueGroupArn" id="@cdk_utils/iam.transform_custom.TransformCustomResources.parseIssueGroupArn"></a>
+
+```typescript
+import { transform_custom } from '@cdk_utils/iam'
+
+transform_custom.TransformCustomResources.parseIssueGroupArn(arn: string)
+```
+
+Parses a issue-group ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.transform_custom.TransformCustomResources.parseIssueGroupArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `parseKnowledgeItemArn` <a name="parseKnowledgeItemArn" id="@cdk_utils/iam.transform_custom.TransformCustomResources.parseKnowledgeItemArn"></a>
 
 ```typescript
@@ -3031,6 +4045,22 @@ Parses a remediation ARN into its components.
 
 ---
 
+##### `parseRemediationPlanArn` <a name="parseRemediationPlanArn" id="@cdk_utils/iam.transform_custom.TransformCustomResources.parseRemediationPlanArn"></a>
+
+```typescript
+import { transform_custom } from '@cdk_utils/iam'
+
+transform_custom.TransformCustomResources.parseRemediationPlanArn(arn: string)
+```
+
+Parses a remediation-plan ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.transform_custom.TransformCustomResources.parseRemediationPlanArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `parseRepositoryArn` <a name="parseRepositoryArn" id="@cdk_utils/iam.transform_custom.TransformCustomResources.parseRepositoryArn"></a>
 
 ```typescript
@@ -3042,6 +4072,22 @@ transform_custom.TransformCustomResources.parseRepositoryArn(arn: string)
 Parses a repository ARN into its components.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.transform_custom.TransformCustomResources.parseRepositoryArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseSkillCreationJobArn` <a name="parseSkillCreationJobArn" id="@cdk_utils/iam.transform_custom.TransformCustomResources.parseSkillCreationJobArn"></a>
+
+```typescript
+import { transform_custom } from '@cdk_utils/iam'
+
+transform_custom.TransformCustomResources.parseSkillCreationJobArn(arn: string)
+```
+
+Parses a skill-creation-job ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.transform_custom.TransformCustomResources.parseSkillCreationJobArn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -3079,6 +4125,22 @@ Builds an ARN for the remediation resource.
 
 ---
 
+##### `remediationPlan` <a name="remediationPlan" id="@cdk_utils/iam.transform_custom.TransformCustomResources.remediationPlan"></a>
+
+```typescript
+import { transform_custom } from '@cdk_utils/iam'
+
+transform_custom.TransformCustomResources.remediationPlan(props: TransformCustomRemediationPlanArnProps)
+```
+
+Builds an ARN for the remediation-plan resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.transform_custom.TransformCustomResources.remediationPlan.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.transform_custom.TransformCustomRemediationPlanArnProps">TransformCustomRemediationPlanArnProps</a>
+
+---
+
 ##### `repository` <a name="repository" id="@cdk_utils/iam.transform_custom.TransformCustomResources.repository"></a>
 
 ```typescript
@@ -3092,6 +4154,22 @@ Builds an ARN for the repository resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.transform_custom.TransformCustomResources.repository.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.transform_custom.TransformCustomRepositoryArnProps">TransformCustomRepositoryArnProps</a>
+
+---
+
+##### `skillCreationJob` <a name="skillCreationJob" id="@cdk_utils/iam.transform_custom.TransformCustomResources.skillCreationJob"></a>
+
+```typescript
+import { transform_custom } from '@cdk_utils/iam'
+
+transform_custom.TransformCustomResources.skillCreationJob(props: TransformCustomSkillCreationJobArnProps)
+```
+
+Builds an ARN for the skill-creation-job resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.transform_custom.TransformCustomResources.skillCreationJob.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.transform_custom.TransformCustomSkillCreationJobArnProps">TransformCustomSkillCreationJobArnProps</a>
 
 ---
 

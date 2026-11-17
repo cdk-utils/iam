@@ -1629,6 +1629,154 @@ Defaults to "*".
 
 ---
 
+### CloudWatchMetricQueryDefinitionArnComponents <a name="CloudWatchMetricQueryDefinitionArnComponents" id="@cdk_utils/iam.cloudwatch.CloudWatchMetricQueryDefinitionArnComponents"></a>
+
+Parsed components of a metric-query-definition ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.cloudwatch.CloudWatchMetricQueryDefinitionArnComponents.Initializer"></a>
+
+```typescript
+import { cloudwatch } from '@cdk_utils/iam'
+
+const cloudWatchMetricQueryDefinitionArnComponents: cloudwatch.CloudWatchMetricQueryDefinitionArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchMetricQueryDefinitionArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchMetricQueryDefinitionArnComponents.property.metricDataQueryDefinitionId">metricDataQueryDefinitionId</a></code> | <code>string</code> | The MetricDataQueryDefinitionId component. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchMetricQueryDefinitionArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchMetricQueryDefinitionArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.cloudwatch.CloudWatchMetricQueryDefinitionArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `metricDataQueryDefinitionId`<sup>Required</sup> <a name="metricDataQueryDefinitionId" id="@cdk_utils/iam.cloudwatch.CloudWatchMetricQueryDefinitionArnComponents.property.metricDataQueryDefinitionId"></a>
+
+```typescript
+public readonly metricDataQueryDefinitionId: string;
+```
+
+- *Type:* string
+
+The MetricDataQueryDefinitionId component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.cloudwatch.CloudWatchMetricQueryDefinitionArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.cloudwatch.CloudWatchMetricQueryDefinitionArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### CloudWatchMetricQueryDefinitionArnProps <a name="CloudWatchMetricQueryDefinitionArnProps" id="@cdk_utils/iam.cloudwatch.CloudWatchMetricQueryDefinitionArnProps"></a>
+
+Properties for building a metric-query-definition ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.cloudwatch.CloudWatchMetricQueryDefinitionArnProps.Initializer"></a>
+
+```typescript
+import { cloudwatch } from '@cdk_utils/iam'
+
+const cloudWatchMetricQueryDefinitionArnProps: cloudwatch.CloudWatchMetricQueryDefinitionArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchMetricQueryDefinitionArnProps.property.metricDataQueryDefinitionId">metricDataQueryDefinitionId</a></code> | <code>string</code> | The MetricDataQueryDefinitionId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchMetricQueryDefinitionArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchMetricQueryDefinitionArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchMetricQueryDefinitionArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `metricDataQueryDefinitionId`<sup>Required</sup> <a name="metricDataQueryDefinitionId" id="@cdk_utils/iam.cloudwatch.CloudWatchMetricQueryDefinitionArnProps.property.metricDataQueryDefinitionId"></a>
+
+```typescript
+public readonly metricDataQueryDefinitionId: string;
+```
+
+- *Type:* string
+
+The MetricDataQueryDefinitionId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.cloudwatch.CloudWatchMetricQueryDefinitionArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.cloudwatch.CloudWatchMetricQueryDefinitionArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.cloudwatch.CloudWatchMetricQueryDefinitionArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### CloudWatchMetricStreamArnComponents <a name="CloudWatchMetricStreamArnComponents" id="@cdk_utils/iam.cloudwatch.CloudWatchMetricStreamArnComponents"></a>
 
 Parsed components of a metric-stream ARN.
@@ -2710,6 +2858,7 @@ const cloudWatchViewArnComponents: cloudwatch.CloudWatchViewArnComponents = { ..
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchViewArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchViewArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchViewArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchViewArnComponents.property.viewId">viewId</a></code> | <code>string</code> | The ViewId component. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchViewArnComponents.property.viewName">viewName</a></code> | <code>string</code> | The ViewName component. |
 
 ---
@@ -2750,6 +2899,18 @@ AWS region.
 
 ---
 
+##### `viewId`<sup>Required</sup> <a name="viewId" id="@cdk_utils/iam.cloudwatch.CloudWatchViewArnComponents.property.viewId"></a>
+
+```typescript
+public readonly viewId: string;
+```
+
+- *Type:* string
+
+The ViewId component.
+
+---
+
 ##### `viewName`<sup>Required</sup> <a name="viewName" id="@cdk_utils/iam.cloudwatch.CloudWatchViewArnComponents.property.viewName"></a>
 
 ```typescript
@@ -2778,10 +2939,23 @@ const cloudWatchViewArnProps: cloudwatch.CloudWatchViewArnProps = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchViewArnProps.property.viewId">viewId</a></code> | <code>string</code> | The ViewId component of the ARN. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchViewArnProps.property.viewName">viewName</a></code> | <code>string</code> | The ViewName component of the ARN. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchViewArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchViewArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchViewArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `viewId`<sup>Required</sup> <a name="viewId" id="@cdk_utils/iam.cloudwatch.CloudWatchViewArnProps.property.viewId"></a>
+
+```typescript
+public readonly viewId: string;
+```
+
+- *Type:* string
+
+The ViewId component of the ARN.
 
 ---
 
@@ -2881,6 +3055,7 @@ new cloudwatch.CloudWatchActions()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetIntegration">actionGetIntegration</a></code> | <code>string</code> | [Read] cloudwatch:GetIntegration. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetIntelligenceConfiguration">actionGetIntelligenceConfiguration</a></code> | <code>string</code> | [Read] cloudwatch:GetIntelligenceConfiguration. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetMetricData">actionGetMetricData</a></code> | <code>string</code> | [Read] cloudwatch:GetMetricData. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetMetricDataQueryDefinition">actionGetMetricDataQueryDefinition</a></code> | <code>string</code> | [Read] cloudwatch:GetMetricDataQueryDefinition. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetMetricStatistics">actionGetMetricStatistics</a></code> | <code>string</code> | [Read] cloudwatch:GetMetricStatistics. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetMetricStream">actionGetMetricStream</a></code> | <code>string</code> | [Read] cloudwatch:GetMetricStream. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetMetricWidgetImage">actionGetMetricWidgetImage</a></code> | <code>string</code> | [Read] cloudwatch:GetMetricWidgetImage. |
@@ -2897,6 +3072,7 @@ new cloudwatch.CloudWatchActions()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetSpace">actionGetSpace</a></code> | <code>string</code> | [Read] cloudwatch:GetSpace. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetSpaceCredentials">actionGetSpaceCredentials</a></code> | <code>string</code> | [Read] cloudwatch:GetSpaceCredentials. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetSpaceCredentialsForOrganization">actionGetSpaceCredentialsForOrganization</a></code> | <code>string</code> | [Read] cloudwatch:GetSpaceCredentialsForOrganization. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetSpaceDataAccess">actionGetSpaceDataAccess</a></code> | <code>string</code> | [Read] cloudwatch:GetSpaceDataAccess. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetTelemetryQueryResults">actionGetTelemetryQueryResults</a></code> | <code>string</code> | [Read] cloudwatch:GetTelemetryQueryResults. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetTopologyDiscoveryStatus">actionGetTopologyDiscoveryStatus</a></code> | <code>string</code> | [Read] cloudwatch:GetTopologyDiscoveryStatus. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetTopologyMap">actionGetTopologyMap</a></code> | <code>string</code> | [Read] cloudwatch:GetTopologyMap. |
@@ -2939,6 +3115,7 @@ new cloudwatch.CloudWatchActions()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DeleteIngestionEndpoint">DeleteIngestionEndpoint</a></code> | <code>string</code> | [Write] cloudwatch:DeleteIngestionEndpoint. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DeleteInsightRules">DeleteInsightRules</a></code> | <code>string</code> | [Write] cloudwatch:DeleteInsightRules. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DeleteIntegration">DeleteIntegration</a></code> | <code>string</code> | [Write] cloudwatch:DeleteIntegration. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DeleteMetricDataQueryDefinition">DeleteMetricDataQueryDefinition</a></code> | <code>string</code> | [Write] cloudwatch:DeleteMetricDataQueryDefinition. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DeleteMetricStream">DeleteMetricStream</a></code> | <code>string</code> | [Write] cloudwatch:DeleteMetricStream. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DeleteOmniDashboard">DeleteOmniDashboard</a></code> | <code>string</code> | [Write] cloudwatch:DeleteOmniDashboard. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DeleteOmniThread">DeleteOmniThread</a></code> | <code>string</code> | [Write] cloudwatch:DeleteOmniThread. |
@@ -2952,6 +3129,7 @@ new cloudwatch.CloudWatchActions()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DescribeAlarmsForMetric">DescribeAlarmsForMetric</a></code> | <code>string</code> | [Read] cloudwatch:DescribeAlarmsForMetric. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DescribeAnomalyDetectors">DescribeAnomalyDetectors</a></code> | <code>string</code> | [Read] cloudwatch:DescribeAnomalyDetectors. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DescribeInsightRules">DescribeInsightRules</a></code> | <code>string</code> | [Read] cloudwatch:DescribeInsightRules. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DetectGroupOutliers">DetectGroupOutliers</a></code> | <code>string</code> | [Read] cloudwatch:DetectGroupOutliers. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DisableAlarmActions">DisableAlarmActions</a></code> | <code>string</code> | [Write] cloudwatch:DisableAlarmActions. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DisableInsightRules">DisableInsightRules</a></code> | <code>string</code> | [Write] cloudwatch:DisableInsightRules. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.EnableAlarmActions">EnableAlarmActions</a></code> | <code>string</code> | [Write] cloudwatch:EnableAlarmActions. |
@@ -2973,6 +3151,7 @@ new cloudwatch.CloudWatchActions()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListIngestionEndpoints">ListIngestionEndpoints</a></code> | <code>string</code> | [List] cloudwatch:ListIngestionEndpoints. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListIntegrations">ListIntegrations</a></code> | <code>string</code> | [List] cloudwatch:ListIntegrations. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListManagedInsightRules">ListManagedInsightRules</a></code> | <code>string</code> | [Read] cloudwatch:ListManagedInsightRules. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListMetricDataQueryDefinitions">ListMetricDataQueryDefinitions</a></code> | <code>string</code> | [List] cloudwatch:ListMetricDataQueryDefinitions. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListMetrics">ListMetrics</a></code> | <code>string</code> | [List] cloudwatch:ListMetrics. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListMetricStreams">ListMetricStreams</a></code> | <code>string</code> | [List] cloudwatch:ListMetricStreams. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListOmniDashboards">ListOmniDashboards</a></code> | <code>string</code> | [List] cloudwatch:ListOmniDashboards. |
@@ -2996,6 +3175,7 @@ new cloudwatch.CloudWatchActions()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.PutManagedInsightRules">PutManagedInsightRules</a></code> | <code>string</code> | [Write] cloudwatch:PutManagedInsightRules. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.PutMetricAlarm">PutMetricAlarm</a></code> | <code>string</code> | [Write] cloudwatch:PutMetricAlarm. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.PutMetricData">PutMetricData</a></code> | <code>string</code> | [Write] cloudwatch:PutMetricData. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.PutMetricDataQueryDefinition">PutMetricDataQueryDefinition</a></code> | <code>string</code> | [Write] cloudwatch:PutMetricDataQueryDefinition. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.PutMetricStream">PutMetricStream</a></code> | <code>string</code> | [Write] cloudwatch:PutMetricStream. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.PutPipelineRule">PutPipelineRule</a></code> | <code>string</code> | [Write] cloudwatch:PutPipelineRule. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.PutProfileRecords">PutProfileRecords</a></code> | <code>string</code> | [Write] cloudwatch:PutProfileRecords. |
@@ -3225,6 +3405,18 @@ public readonly actionGetMetricData: string;
 
 ---
 
+##### `actionGetMetricDataQueryDefinition`<sup>Required</sup> <a name="actionGetMetricDataQueryDefinition" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetMetricDataQueryDefinition"></a>
+
+```typescript
+public readonly actionGetMetricDataQueryDefinition: string;
+```
+
+- *Type:* string
+
+[Read] cloudwatch:GetMetricDataQueryDefinition.
+
+---
+
 ##### `actionGetMetricStatistics`<sup>Required</sup> <a name="actionGetMetricStatistics" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetMetricStatistics"></a>
 
 ```typescript
@@ -3414,6 +3606,18 @@ public readonly actionGetSpaceCredentialsForOrganization: string;
 - *Type:* string
 
 [Read] cloudwatch:GetSpaceCredentialsForOrganization.
+
+---
+
+##### `actionGetSpaceDataAccess`<sup>Required</sup> <a name="actionGetSpaceDataAccess" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetSpaceDataAccess"></a>
+
+```typescript
+public readonly actionGetSpaceDataAccess: string;
+```
+
+- *Type:* string
+
+[Read] cloudwatch:GetSpaceDataAccess.
 
 ---
 
@@ -3921,6 +4125,18 @@ public readonly DeleteIntegration: string;
 
 ---
 
+##### `DeleteMetricDataQueryDefinition`<sup>Required</sup> <a name="DeleteMetricDataQueryDefinition" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DeleteMetricDataQueryDefinition"></a>
+
+```typescript
+public readonly DeleteMetricDataQueryDefinition: string;
+```
+
+- *Type:* string
+
+[Write] cloudwatch:DeleteMetricDataQueryDefinition.
+
+---
+
 ##### `DeleteMetricStream`<sup>Required</sup> <a name="DeleteMetricStream" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DeleteMetricStream"></a>
 
 ```typescript
@@ -4074,6 +4290,18 @@ public readonly DescribeInsightRules: string;
 - *Type:* string
 
 [Read] cloudwatch:DescribeInsightRules.
+
+---
+
+##### `DetectGroupOutliers`<sup>Required</sup> <a name="DetectGroupOutliers" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DetectGroupOutliers"></a>
+
+```typescript
+public readonly DetectGroupOutliers: string;
+```
+
+- *Type:* string
+
+[Read] cloudwatch:DetectGroupOutliers.
 
 ---
 
@@ -4326,6 +4554,18 @@ public readonly ListManagedInsightRules: string;
 - *Type:* string
 
 [Read] cloudwatch:ListManagedInsightRules.
+
+---
+
+##### `ListMetricDataQueryDefinitions`<sup>Required</sup> <a name="ListMetricDataQueryDefinitions" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListMetricDataQueryDefinitions"></a>
+
+```typescript
+public readonly ListMetricDataQueryDefinitions: string;
+```
+
+- *Type:* string
+
+[List] cloudwatch:ListMetricDataQueryDefinitions.
 
 ---
 
@@ -4602,6 +4842,18 @@ public readonly PutMetricData: string;
 - *Type:* string
 
 [Write] cloudwatch:PutMetricData.
+
+---
+
+##### `PutMetricDataQueryDefinition`<sup>Required</sup> <a name="PutMetricDataQueryDefinition" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.PutMetricDataQueryDefinition"></a>
+
+```typescript
+public readonly PutMetricDataQueryDefinition: string;
+```
+
+- *Type:* string
+
+[Write] cloudwatch:PutMetricDataQueryDefinition.
 
 ---
 
@@ -5230,6 +5482,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetRecordsConditionKeys">actionGetRecordsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetRecords action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetResourceMetricsConfigurationConditionKeys">actionGetResourceMetricsConfigurationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetResourceMetricsConfiguration action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetSpaceConditionKeys">actionGetSpaceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetSpace action. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetSpaceDataAccessConditionKeys">actionGetSpaceDataAccessConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetSpaceDataAccess action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetTelemetryQueryResultsConditionKeys">actionGetTelemetryQueryResultsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetTelemetryQueryResults action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetViewConditionKeys">actionGetViewConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetView action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.ALARM_ACTIONS">ALARM_ACTIONS</a></code> | <code>string</code> | Condition key: cloudwatch:AlarmActions (ArrayOfString). |
@@ -5286,6 +5539,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.PutManagedInsightRulesConditionKeys">PutManagedInsightRulesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutManagedInsightRules action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.PutMetricAlarmConditionKeys">PutMetricAlarmConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutMetricAlarm action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.PutMetricDataConditionKeys">PutMetricDataConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutMetricData action. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.PutMetricDataQueryDefinitionConditionKeys">PutMetricDataQueryDefinitionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutMetricDataQueryDefinition action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.PutMetricStreamConditionKeys">PutMetricStreamConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutMetricStream action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.PutRecordsConditionKeys">PutRecordsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutRecords action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.REQUEST_INSIGHT_RULE_LOG_GROUPS">REQUEST_INSIGHT_RULE_LOG_GROUPS</a></code> | <code>string</code> | Condition key: cloudwatch:requestInsightRuleLogGroups (ArrayOfString). |
@@ -5513,6 +5767,18 @@ public readonly actionGetSpaceConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the GetSpace action.
+
+---
+
+##### `actionGetSpaceDataAccessConditionKeys`<sup>Required</sup> <a name="actionGetSpaceDataAccessConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetSpaceDataAccessConditionKeys"></a>
+
+```typescript
+public readonly actionGetSpaceDataAccessConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetSpaceDataAccess action.
 
 ---
 
@@ -6188,6 +6454,18 @@ Condition keys applicable to the PutMetricData action.
 
 ---
 
+##### `PutMetricDataQueryDefinitionConditionKeys`<sup>Required</sup> <a name="PutMetricDataQueryDefinitionConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.PutMetricDataQueryDefinitionConditionKeys"></a>
+
+```typescript
+public readonly PutMetricDataQueryDefinitionConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the PutMetricDataQueryDefinition action.
+
+---
+
 ##### `PutMetricStreamConditionKeys`<sup>Required</sup> <a name="PutMetricStreamConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.PutMetricStreamConditionKeys"></a>
 
 ```typescript
@@ -6513,6 +6791,7 @@ new cloudwatch.CloudWatchOperations()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.DeleteDomainForOrganization">DeleteDomainForOrganization</a></code> | <code>string[]</code> | IAM actions required for the DeleteDomainForOrganization API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.DeleteInsightRules">DeleteInsightRules</a></code> | <code>string[]</code> | IAM actions required for the DeleteInsightRules API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.DeleteIntegration">DeleteIntegration</a></code> | <code>string[]</code> | IAM actions required for the DeleteIntegration API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.DeleteMetricDataQueryDefinition">DeleteMetricDataQueryDefinition</a></code> | <code>string[]</code> | IAM actions required for the DeleteMetricDataQueryDefinition API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.DeleteMetricStream">DeleteMetricStream</a></code> | <code>string[]</code> | IAM actions required for the DeleteMetricStream API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.DeleteOmniDashboard">DeleteOmniDashboard</a></code> | <code>string[]</code> | IAM actions required for the DeleteOmniDashboard API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.DeleteResourceMetricsConfiguration">DeleteResourceMetricsConfiguration</a></code> | <code>string[]</code> | IAM actions required for the DeleteResourceMetricsConfiguration API call. |
@@ -6538,6 +6817,7 @@ new cloudwatch.CloudWatchOperations()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.ListDomains">ListDomains</a></code> | <code>string[]</code> | IAM actions required for the ListDomains API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.ListIntegrations">ListIntegrations</a></code> | <code>string[]</code> | IAM actions required for the ListIntegrations API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.ListManagedInsightRules">ListManagedInsightRules</a></code> | <code>string[]</code> | IAM actions required for the ListManagedInsightRules API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.ListMetricDataQueryDefinitions">ListMetricDataQueryDefinitions</a></code> | <code>string[]</code> | IAM actions required for the ListMetricDataQueryDefinitions API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.ListMetrics">ListMetrics</a></code> | <code>string[]</code> | IAM actions required for the ListMetrics API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.ListMetricStreams">ListMetricStreams</a></code> | <code>string[]</code> | IAM actions required for the ListMetricStreams API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.ListOmniDashboards">ListOmniDashboards</a></code> | <code>string[]</code> | IAM actions required for the ListOmniDashboards API call. |
@@ -6561,6 +6841,7 @@ new cloudwatch.CloudWatchOperations()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetIntegration">opGetIntegration</a></code> | <code>string[]</code> | IAM actions required for the GetIntegration API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetIntelligenceConfiguration">opGetIntelligenceConfiguration</a></code> | <code>string[]</code> | IAM actions required for the GetIntelligenceConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetMetricData">opGetMetricData</a></code> | <code>string[]</code> | IAM actions required for the GetMetricData API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetMetricDataQueryDefinition">opGetMetricDataQueryDefinition</a></code> | <code>string[]</code> | IAM actions required for the GetMetricDataQueryDefinition API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetMetricStatistics">opGetMetricStatistics</a></code> | <code>string[]</code> | IAM actions required for the GetMetricStatistics API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetMetricStream">opGetMetricStream</a></code> | <code>string[]</code> | IAM actions required for the GetMetricStream API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetMetricWidgetImage">opGetMetricWidgetImage</a></code> | <code>string[]</code> | IAM actions required for the GetMetricWidgetImage API call. |
@@ -6569,6 +6850,7 @@ new cloudwatch.CloudWatchOperations()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetResourceMetricsConfiguration">opGetResourceMetricsConfiguration</a></code> | <code>string[]</code> | IAM actions required for the GetResourceMetricsConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetSpace">opGetSpace</a></code> | <code>string[]</code> | IAM actions required for the GetSpace API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetSpaceCredentialsForOrganization">opGetSpaceCredentialsForOrganization</a></code> | <code>string[]</code> | IAM actions required for the GetSpaceCredentialsForOrganization API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetSpaceDataAccess">opGetSpaceDataAccess</a></code> | <code>string[]</code> | IAM actions required for the GetSpaceDataAccess API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetTelemetryQueryResults">opGetTelemetryQueryResults</a></code> | <code>string[]</code> | IAM actions required for the GetTelemetryQueryResults API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetView">opGetView</a></code> | <code>string[]</code> | IAM actions required for the GetView API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opSetAlarmState">opSetAlarmState</a></code> | <code>string[]</code> | IAM actions required for the SetAlarmState API call. |
@@ -6582,6 +6864,7 @@ new cloudwatch.CloudWatchOperations()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.PutManagedInsightRules">PutManagedInsightRules</a></code> | <code>string[]</code> | IAM actions required for the PutManagedInsightRules API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.PutMetricAlarm">PutMetricAlarm</a></code> | <code>string[]</code> | IAM actions required for the PutMetricAlarm API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.PutMetricData">PutMetricData</a></code> | <code>string[]</code> | IAM actions required for the PutMetricData API call. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.PutMetricDataQueryDefinition">PutMetricDataQueryDefinition</a></code> | <code>string[]</code> | IAM actions required for the PutMetricDataQueryDefinition API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.PutMetricStream">PutMetricStream</a></code> | <code>string[]</code> | IAM actions required for the PutMetricStream API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.SearchPrincipals">SearchPrincipals</a></code> | <code>string[]</code> | IAM actions required for the SearchPrincipals API call. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.StartMetricStreams">StartMetricStreams</a></code> | <code>string[]</code> | IAM actions required for the StartMetricStreams API call. |
@@ -6907,6 +7190,18 @@ IAM actions required for the DeleteIntegration API call.
 
 ---
 
+##### `DeleteMetricDataQueryDefinition`<sup>Required</sup> <a name="DeleteMetricDataQueryDefinition" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.DeleteMetricDataQueryDefinition"></a>
+
+```typescript
+public readonly DeleteMetricDataQueryDefinition: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteMetricDataQueryDefinition API call.
+
+---
+
 ##### `DeleteMetricStream`<sup>Required</sup> <a name="DeleteMetricStream" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.DeleteMetricStream"></a>
 
 ```typescript
@@ -7207,6 +7502,18 @@ IAM actions required for the ListManagedInsightRules API call.
 
 ---
 
+##### `ListMetricDataQueryDefinitions`<sup>Required</sup> <a name="ListMetricDataQueryDefinitions" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.ListMetricDataQueryDefinitions"></a>
+
+```typescript
+public readonly ListMetricDataQueryDefinitions: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListMetricDataQueryDefinitions API call.
+
+---
+
 ##### `ListMetrics`<sup>Required</sup> <a name="ListMetrics" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.ListMetrics"></a>
 
 ```typescript
@@ -7483,6 +7790,18 @@ IAM actions required for the GetMetricData API call.
 
 ---
 
+##### `opGetMetricDataQueryDefinition`<sup>Required</sup> <a name="opGetMetricDataQueryDefinition" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetMetricDataQueryDefinition"></a>
+
+```typescript
+public readonly opGetMetricDataQueryDefinition: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetMetricDataQueryDefinition API call.
+
+---
+
 ##### `opGetMetricStatistics`<sup>Required</sup> <a name="opGetMetricStatistics" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetMetricStatistics"></a>
 
 ```typescript
@@ -7576,6 +7895,18 @@ public readonly opGetSpaceCredentialsForOrganization: string[];
 - *Type:* string[]
 
 IAM actions required for the GetSpaceCredentialsForOrganization API call.
+
+---
+
+##### `opGetSpaceDataAccess`<sup>Required</sup> <a name="opGetSpaceDataAccess" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.opGetSpaceDataAccess"></a>
+
+```typescript
+public readonly opGetSpaceDataAccess: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetSpaceDataAccess API call.
 
 ---
 
@@ -7732,6 +8063,18 @@ public readonly PutMetricData: string[];
 - *Type:* string[]
 
 IAM actions required for the PutMetricData API call.
+
+---
+
+##### `PutMetricDataQueryDefinition`<sup>Required</sup> <a name="PutMetricDataQueryDefinition" id="@cdk_utils/iam.cloudwatch.CloudWatchOperations.property.PutMetricDataQueryDefinition"></a>
+
+```typescript
+public readonly PutMetricDataQueryDefinition: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the PutMetricDataQueryDefinition API call.
 
 ---
 
@@ -8043,6 +8386,7 @@ new cloudwatch.CloudWatchResources()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidIngestionEndpointArn">isValidIngestionEndpointArn</a></code> | Validates whether a string is a valid ARN for the ingestion-endpoint resource. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidInsightRuleArn">isValidInsightRuleArn</a></code> | Validates whether a string is a valid ARN for the insight-rule resource. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidIntegrationArn">isValidIntegrationArn</a></code> | Validates whether a string is a valid ARN for the integration resource. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidMetricQueryDefinitionArn">isValidMetricQueryDefinitionArn</a></code> | Validates whether a string is a valid ARN for the metric-query-definition resource. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidMetricStreamArn">isValidMetricStreamArn</a></code> | Validates whether a string is a valid ARN for the metric-stream resource. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidOmniDashboardArn">isValidOmniDashboardArn</a></code> | Validates whether a string is a valid ARN for the omni-dashboard resource. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidOrganizationAccessGrantArn">isValidOrganizationAccessGrantArn</a></code> | Validates whether a string is a valid ARN for the organization-access-grant resource. |
@@ -8051,6 +8395,7 @@ new cloudwatch.CloudWatchResources()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidSloArn">isValidSloArn</a></code> | Validates whether a string is a valid ARN for the slo resource. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidSpaceArn">isValidSpaceArn</a></code> | Validates whether a string is a valid ARN for the space resource. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidViewArn">isValidViewArn</a></code> | Validates whether a string is a valid ARN for the view resource. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.metricQueryDefinition">metricQueryDefinition</a></code> | Builds an ARN for the metric-query-definition resource. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.metricStream">metricStream</a></code> | Builds an ARN for the metric-stream resource. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.omniDashboard">omniDashboard</a></code> | Builds an ARN for the omni-dashboard resource. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.organizationAccessGrant">organizationAccessGrant</a></code> | Builds an ARN for the organization-access-grant resource. |
@@ -8066,6 +8411,7 @@ new cloudwatch.CloudWatchResources()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.parseIngestionEndpointArn">parseIngestionEndpointArn</a></code> | Parses a ingestion-endpoint ARN into its components. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.parseInsightRuleArn">parseInsightRuleArn</a></code> | Parses a insight-rule ARN into its components. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.parseIntegrationArn">parseIntegrationArn</a></code> | Parses a integration ARN into its components. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.parseMetricQueryDefinitionArn">parseMetricQueryDefinitionArn</a></code> | Parses a metric-query-definition ARN into its components. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.parseMetricStreamArn">parseMetricStreamArn</a></code> | Parses a metric-stream ARN into its components. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.parseOmniDashboardArn">parseOmniDashboardArn</a></code> | Parses a omni-dashboard ARN into its components. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.parseOrganizationAccessGrantArn">parseOrganizationAccessGrantArn</a></code> | Parses a organization-access-grant ARN into its components. |
@@ -8433,6 +8779,22 @@ Validates whether a string is a valid ARN for the integration resource.
 
 ---
 
+##### `isValidMetricQueryDefinitionArn` <a name="isValidMetricQueryDefinitionArn" id="@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidMetricQueryDefinitionArn"></a>
+
+```typescript
+import { cloudwatch } from '@cdk_utils/iam'
+
+cloudwatch.CloudWatchResources.isValidMetricQueryDefinitionArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the metric-query-definition resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidMetricQueryDefinitionArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `isValidMetricStreamArn` <a name="isValidMetricStreamArn" id="@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidMetricStreamArn"></a>
 
 ```typescript
@@ -8558,6 +8920,22 @@ Validates whether a string is a valid ARN for the view resource.
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidViewArn.parameter.arn"></a>
 
 - *Type:* string
+
+---
+
+##### `metricQueryDefinition` <a name="metricQueryDefinition" id="@cdk_utils/iam.cloudwatch.CloudWatchResources.metricQueryDefinition"></a>
+
+```typescript
+import { cloudwatch } from '@cdk_utils/iam'
+
+cloudwatch.CloudWatchResources.metricQueryDefinition(props: CloudWatchMetricQueryDefinitionArnProps)
+```
+
+Builds an ARN for the metric-query-definition resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.cloudwatch.CloudWatchResources.metricQueryDefinition.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.cloudwatch.CloudWatchMetricQueryDefinitionArnProps">CloudWatchMetricQueryDefinitionArnProps</a>
 
 ---
 
@@ -8796,6 +9174,22 @@ cloudwatch.CloudWatchResources.parseIntegrationArn(arn: string)
 Parses a integration ARN into its components.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.cloudwatch.CloudWatchResources.parseIntegrationArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseMetricQueryDefinitionArn` <a name="parseMetricQueryDefinitionArn" id="@cdk_utils/iam.cloudwatch.CloudWatchResources.parseMetricQueryDefinitionArn"></a>
+
+```typescript
+import { cloudwatch } from '@cdk_utils/iam'
+
+cloudwatch.CloudWatchResources.parseMetricQueryDefinitionArn(arn: string)
+```
+
+Parses a metric-query-definition ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.cloudwatch.CloudWatchResources.parseMetricQueryDefinitionArn.parameter.arn"></a>
 
 - *Type:* string
 
