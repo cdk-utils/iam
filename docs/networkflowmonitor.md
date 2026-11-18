@@ -151,6 +151,154 @@ Defaults to "*".
 
 ---
 
+### NetworkflowmonitorPerformancemonitorArnComponents <a name="NetworkflowmonitorPerformancemonitorArnComponents" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorPerformancemonitorArnComponents"></a>
+
+Parsed components of a performancemonitor ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorPerformancemonitorArnComponents.Initializer"></a>
+
+```typescript
+import { networkflowmonitor } from '@cdk_utils/iam'
+
+const networkflowmonitorPerformancemonitorArnComponents: networkflowmonitor.NetworkflowmonitorPerformancemonitorArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorPerformancemonitorArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorPerformancemonitorArnComponents.property.monitorName">monitorName</a></code> | <code>string</code> | The MonitorName component. |
+| <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorPerformancemonitorArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorPerformancemonitorArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorPerformancemonitorArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `monitorName`<sup>Required</sup> <a name="monitorName" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorPerformancemonitorArnComponents.property.monitorName"></a>
+
+```typescript
+public readonly monitorName: string;
+```
+
+- *Type:* string
+
+The MonitorName component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorPerformancemonitorArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorPerformancemonitorArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### NetworkflowmonitorPerformancemonitorArnProps <a name="NetworkflowmonitorPerformancemonitorArnProps" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorPerformancemonitorArnProps"></a>
+
+Properties for building a performancemonitor ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorPerformancemonitorArnProps.Initializer"></a>
+
+```typescript
+import { networkflowmonitor } from '@cdk_utils/iam'
+
+const networkflowmonitorPerformancemonitorArnProps: networkflowmonitor.NetworkflowmonitorPerformancemonitorArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorPerformancemonitorArnProps.property.monitorName">monitorName</a></code> | <code>string</code> | The MonitorName component of the ARN. |
+| <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorPerformancemonitorArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorPerformancemonitorArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorPerformancemonitorArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `monitorName`<sup>Required</sup> <a name="monitorName" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorPerformancemonitorArnProps.property.monitorName"></a>
+
+```typescript
+public readonly monitorName: string;
+```
+
+- *Type:* string
+
+The MonitorName component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorPerformancemonitorArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorPerformancemonitorArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorPerformancemonitorArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### NetworkflowmonitorScopeArnComponents <a name="NetworkflowmonitorScopeArnComponents" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorScopeArnComponents"></a>
 
 Parsed components of a scope ARN.
@@ -326,10 +474,14 @@ new networkflowmonitor.NetworkflowmonitorActions()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.actionGetMonitor">actionGetMonitor</a></code> | <code>string</code> | [Read] networkflowmonitor:GetMonitor. |
+| <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.actionGetMonitorScopeSuggestions">actionGetMonitorScopeSuggestions</a></code> | <code>string</code> | [Read] networkflowmonitor:GetMonitorScopeSuggestions. |
+| <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.actionGetPerformanceMonitor">actionGetPerformanceMonitor</a></code> | <code>string</code> | [Read] networkflowmonitor:GetPerformanceMonitor. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.actionGetQueryResultsMonitorTopContributors">actionGetQueryResultsMonitorTopContributors</a></code> | <code>string</code> | [Read] networkflowmonitor:GetQueryResultsMonitorTopContributors. |
+| <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.actionGetQueryResultsPerformanceMonitor">actionGetQueryResultsPerformanceMonitor</a></code> | <code>string</code> | [Read] networkflowmonitor:GetQueryResultsPerformanceMonitor. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.actionGetQueryResultsWorkloadInsightsTopContributors">actionGetQueryResultsWorkloadInsightsTopContributors</a></code> | <code>string</code> | [Read] networkflowmonitor:GetQueryResultsWorkloadInsightsTopContributors. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.actionGetQueryResultsWorkloadInsightsTopContributorsData">actionGetQueryResultsWorkloadInsightsTopContributorsData</a></code> | <code>string</code> | [Read] networkflowmonitor:GetQueryResultsWorkloadInsightsTopContributorsData. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.actionGetQueryStatusMonitorTopContributors">actionGetQueryStatusMonitorTopContributors</a></code> | <code>string</code> | [Read] networkflowmonitor:GetQueryStatusMonitorTopContributors. |
+| <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.actionGetQueryStatusPerformanceMonitor">actionGetQueryStatusPerformanceMonitor</a></code> | <code>string</code> | [Read] networkflowmonitor:GetQueryStatusPerformanceMonitor. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.actionGetQueryStatusWorkloadInsightsTopContributors">actionGetQueryStatusWorkloadInsightsTopContributors</a></code> | <code>string</code> | [Read] networkflowmonitor:GetQueryStatusWorkloadInsightsTopContributors. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.actionGetQueryStatusWorkloadInsightsTopContributorsData">actionGetQueryStatusWorkloadInsightsTopContributorsData</a></code> | <code>string</code> | [Read] networkflowmonitor:GetQueryStatusWorkloadInsightsTopContributorsData. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.actionGetScope">actionGetScope</a></code> | <code>string</code> | [Read] networkflowmonitor:GetScope. |
@@ -339,23 +491,29 @@ new networkflowmonitor.NetworkflowmonitorActions()
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.AllTaggingActions">AllTaggingActions</a></code> | <code>string[]</code> | All tagging-level actions. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.CreateMonitor">CreateMonitor</a></code> | <code>string</code> | [Write] networkflowmonitor:CreateMonitor. |
+| <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.CreatePerformanceMonitor">CreatePerformanceMonitor</a></code> | <code>string</code> | [Write] networkflowmonitor:CreatePerformanceMonitor. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.CreateScope">CreateScope</a></code> | <code>string</code> | [Write] networkflowmonitor:CreateScope. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.DeleteMonitor">DeleteMonitor</a></code> | <code>string</code> | [Write] networkflowmonitor:DeleteMonitor. |
+| <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.DeletePerformanceMonitor">DeletePerformanceMonitor</a></code> | <code>string</code> | [Write] networkflowmonitor:DeletePerformanceMonitor. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.DeleteScope">DeleteScope</a></code> | <code>string</code> | [Write] networkflowmonitor:DeleteScope. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.ListMonitors">ListMonitors</a></code> | <code>string</code> | [List] networkflowmonitor:ListMonitors. |
+| <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.ListPerformanceMonitors">ListPerformanceMonitors</a></code> | <code>string</code> | [List] networkflowmonitor:ListPerformanceMonitors. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.ListScopes">ListScopes</a></code> | <code>string</code> | [List] networkflowmonitor:ListScopes. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [Read] networkflowmonitor:ListTagsForResource. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.Publish">Publish</a></code> | <code>string</code> | [Write] networkflowmonitor:Publish. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.StartQueryMonitorTopContributors">StartQueryMonitorTopContributors</a></code> | <code>string</code> | [Write] networkflowmonitor:StartQueryMonitorTopContributors. |
+| <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.StartQueryPerformanceMonitor">StartQueryPerformanceMonitor</a></code> | <code>string</code> | [Write] networkflowmonitor:StartQueryPerformanceMonitor. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.StartQueryWorkloadInsightsTopContributors">StartQueryWorkloadInsightsTopContributors</a></code> | <code>string</code> | [Write] networkflowmonitor:StartQueryWorkloadInsightsTopContributors. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.StartQueryWorkloadInsightsTopContributorsData">StartQueryWorkloadInsightsTopContributorsData</a></code> | <code>string</code> | [Write] networkflowmonitor:StartQueryWorkloadInsightsTopContributorsData. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.StopQueryMonitorTopContributors">StopQueryMonitorTopContributors</a></code> | <code>string</code> | [Write] networkflowmonitor:StopQueryMonitorTopContributors. |
+| <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.StopQueryPerformanceMonitor">StopQueryPerformanceMonitor</a></code> | <code>string</code> | [Write] networkflowmonitor:StopQueryPerformanceMonitor. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.StopQueryWorkloadInsightsTopContributors">StopQueryWorkloadInsightsTopContributors</a></code> | <code>string</code> | [Write] networkflowmonitor:StopQueryWorkloadInsightsTopContributors. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.StopQueryWorkloadInsightsTopContributorsData">StopQueryWorkloadInsightsTopContributorsData</a></code> | <code>string</code> | [Write] networkflowmonitor:StopQueryWorkloadInsightsTopContributorsData. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] networkflowmonitor:TagResource. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] networkflowmonitor:UntagResource. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.UpdateMonitor">UpdateMonitor</a></code> | <code>string</code> | [Write] networkflowmonitor:UpdateMonitor. |
+| <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.UpdatePerformanceMonitor">UpdatePerformanceMonitor</a></code> | <code>string</code> | [Write] networkflowmonitor:UpdatePerformanceMonitor. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.UpdateScope">UpdateScope</a></code> | <code>string</code> | [Write] networkflowmonitor:UpdateScope. |
 
 ---
@@ -372,6 +530,30 @@ public readonly actionGetMonitor: string;
 
 ---
 
+##### `actionGetMonitorScopeSuggestions`<sup>Required</sup> <a name="actionGetMonitorScopeSuggestions" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.actionGetMonitorScopeSuggestions"></a>
+
+```typescript
+public readonly actionGetMonitorScopeSuggestions: string;
+```
+
+- *Type:* string
+
+[Read] networkflowmonitor:GetMonitorScopeSuggestions.
+
+---
+
+##### `actionGetPerformanceMonitor`<sup>Required</sup> <a name="actionGetPerformanceMonitor" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.actionGetPerformanceMonitor"></a>
+
+```typescript
+public readonly actionGetPerformanceMonitor: string;
+```
+
+- *Type:* string
+
+[Read] networkflowmonitor:GetPerformanceMonitor.
+
+---
+
 ##### `actionGetQueryResultsMonitorTopContributors`<sup>Required</sup> <a name="actionGetQueryResultsMonitorTopContributors" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.actionGetQueryResultsMonitorTopContributors"></a>
 
 ```typescript
@@ -381,6 +563,18 @@ public readonly actionGetQueryResultsMonitorTopContributors: string;
 - *Type:* string
 
 [Read] networkflowmonitor:GetQueryResultsMonitorTopContributors.
+
+---
+
+##### `actionGetQueryResultsPerformanceMonitor`<sup>Required</sup> <a name="actionGetQueryResultsPerformanceMonitor" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.actionGetQueryResultsPerformanceMonitor"></a>
+
+```typescript
+public readonly actionGetQueryResultsPerformanceMonitor: string;
+```
+
+- *Type:* string
+
+[Read] networkflowmonitor:GetQueryResultsPerformanceMonitor.
 
 ---
 
@@ -417,6 +611,18 @@ public readonly actionGetQueryStatusMonitorTopContributors: string;
 - *Type:* string
 
 [Read] networkflowmonitor:GetQueryStatusMonitorTopContributors.
+
+---
+
+##### `actionGetQueryStatusPerformanceMonitor`<sup>Required</sup> <a name="actionGetQueryStatusPerformanceMonitor" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.actionGetQueryStatusPerformanceMonitor"></a>
+
+```typescript
+public readonly actionGetQueryStatusPerformanceMonitor: string;
+```
+
+- *Type:* string
+
+[Read] networkflowmonitor:GetQueryStatusPerformanceMonitor.
 
 ---
 
@@ -528,6 +734,18 @@ public readonly CreateMonitor: string;
 
 ---
 
+##### `CreatePerformanceMonitor`<sup>Required</sup> <a name="CreatePerformanceMonitor" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.CreatePerformanceMonitor"></a>
+
+```typescript
+public readonly CreatePerformanceMonitor: string;
+```
+
+- *Type:* string
+
+[Write] networkflowmonitor:CreatePerformanceMonitor.
+
+---
+
 ##### `CreateScope`<sup>Required</sup> <a name="CreateScope" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.CreateScope"></a>
 
 ```typescript
@@ -552,6 +770,18 @@ public readonly DeleteMonitor: string;
 
 ---
 
+##### `DeletePerformanceMonitor`<sup>Required</sup> <a name="DeletePerformanceMonitor" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.DeletePerformanceMonitor"></a>
+
+```typescript
+public readonly DeletePerformanceMonitor: string;
+```
+
+- *Type:* string
+
+[Write] networkflowmonitor:DeletePerformanceMonitor.
+
+---
+
 ##### `DeleteScope`<sup>Required</sup> <a name="DeleteScope" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.DeleteScope"></a>
 
 ```typescript
@@ -573,6 +803,18 @@ public readonly ListMonitors: string;
 - *Type:* string
 
 [List] networkflowmonitor:ListMonitors.
+
+---
+
+##### `ListPerformanceMonitors`<sup>Required</sup> <a name="ListPerformanceMonitors" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.ListPerformanceMonitors"></a>
+
+```typescript
+public readonly ListPerformanceMonitors: string;
+```
+
+- *Type:* string
+
+[List] networkflowmonitor:ListPerformanceMonitors.
 
 ---
 
@@ -636,6 +878,18 @@ public readonly StartQueryMonitorTopContributors: string;
 
 ---
 
+##### `StartQueryPerformanceMonitor`<sup>Required</sup> <a name="StartQueryPerformanceMonitor" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.StartQueryPerformanceMonitor"></a>
+
+```typescript
+public readonly StartQueryPerformanceMonitor: string;
+```
+
+- *Type:* string
+
+[Write] networkflowmonitor:StartQueryPerformanceMonitor.
+
+---
+
 ##### `StartQueryWorkloadInsightsTopContributors`<sup>Required</sup> <a name="StartQueryWorkloadInsightsTopContributors" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.StartQueryWorkloadInsightsTopContributors"></a>
 
 ```typescript
@@ -669,6 +923,18 @@ public readonly StopQueryMonitorTopContributors: string;
 - *Type:* string
 
 [Write] networkflowmonitor:StopQueryMonitorTopContributors.
+
+---
+
+##### `StopQueryPerformanceMonitor`<sup>Required</sup> <a name="StopQueryPerformanceMonitor" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.StopQueryPerformanceMonitor"></a>
+
+```typescript
+public readonly StopQueryPerformanceMonitor: string;
+```
+
+- *Type:* string
+
+[Write] networkflowmonitor:StopQueryPerformanceMonitor.
 
 ---
 
@@ -729,6 +995,18 @@ public readonly UpdateMonitor: string;
 - *Type:* string
 
 [Write] networkflowmonitor:UpdateMonitor.
+
+---
+
+##### `UpdatePerformanceMonitor`<sup>Required</sup> <a name="UpdatePerformanceMonitor" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorActions.property.UpdatePerformanceMonitor"></a>
+
+```typescript
+public readonly UpdatePerformanceMonitor: string;
+```
+
+- *Type:* string
+
+[Write] networkflowmonitor:UpdatePerformanceMonitor.
 
 ---
 
@@ -829,6 +1107,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorConditions.property.AWS_RESOURCE_TAG">AWS_RESOURCE_TAG</a></code> | <code>string</code> | Condition key: aws:ResourceTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorConditions.property.AWS_TAG_KEYS">AWS_TAG_KEYS</a></code> | <code>string</code> | Condition key: aws:TagKeys (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorConditions.property.CreateMonitorConditionKeys">CreateMonitorConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateMonitor action. |
+| <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorConditions.property.CreatePerformanceMonitorConditionKeys">CreatePerformanceMonitorConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreatePerformanceMonitor action. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorConditions.property.CreateScopeConditionKeys">CreateScopeConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateScope action. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorConditions.property.TagResourceConditionKeys">TagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TagResource action. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorConditions.property.UntagResourceConditionKeys">UntagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UntagResource action. |
@@ -880,6 +1159,18 @@ public readonly CreateMonitorConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the CreateMonitor action.
+
+---
+
+##### `CreatePerformanceMonitorConditionKeys`<sup>Required</sup> <a name="CreatePerformanceMonitorConditionKeys" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorConditions.property.CreatePerformanceMonitorConditionKeys"></a>
+
+```typescript
+public readonly CreatePerformanceMonitorConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreatePerformanceMonitor action.
 
 ---
 
@@ -944,29 +1235,39 @@ new networkflowmonitor.NetworkflowmonitorOperations()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.CreateMonitor">CreateMonitor</a></code> | <code>string[]</code> | IAM actions required for the CreateMonitor API call. |
+| <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.CreatePerformanceMonitor">CreatePerformanceMonitor</a></code> | <code>string[]</code> | IAM actions required for the CreatePerformanceMonitor API call. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.CreateScope">CreateScope</a></code> | <code>string[]</code> | IAM actions required for the CreateScope API call. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.DeleteMonitor">DeleteMonitor</a></code> | <code>string[]</code> | IAM actions required for the DeleteMonitor API call. |
+| <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.DeletePerformanceMonitor">DeletePerformanceMonitor</a></code> | <code>string[]</code> | IAM actions required for the DeletePerformanceMonitor API call. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.DeleteScope">DeleteScope</a></code> | <code>string[]</code> | IAM actions required for the DeleteScope API call. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.ListMonitors">ListMonitors</a></code> | <code>string[]</code> | IAM actions required for the ListMonitors API call. |
+| <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.ListPerformanceMonitors">ListPerformanceMonitors</a></code> | <code>string[]</code> | IAM actions required for the ListPerformanceMonitors API call. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.ListScopes">ListScopes</a></code> | <code>string[]</code> | IAM actions required for the ListScopes API call. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.opGetMonitor">opGetMonitor</a></code> | <code>string[]</code> | IAM actions required for the GetMonitor API call. |
+| <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.opGetMonitorScopeSuggestions">opGetMonitorScopeSuggestions</a></code> | <code>string[]</code> | IAM actions required for the GetMonitorScopeSuggestions API call. |
+| <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.opGetPerformanceMonitor">opGetPerformanceMonitor</a></code> | <code>string[]</code> | IAM actions required for the GetPerformanceMonitor API call. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.opGetQueryResultsMonitorTopContributors">opGetQueryResultsMonitorTopContributors</a></code> | <code>string[]</code> | IAM actions required for the GetQueryResultsMonitorTopContributors API call. |
+| <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.opGetQueryResultsPerformanceMonitor">opGetQueryResultsPerformanceMonitor</a></code> | <code>string[]</code> | IAM actions required for the GetQueryResultsPerformanceMonitor API call. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.opGetQueryResultsWorkloadInsightsTopContributors">opGetQueryResultsWorkloadInsightsTopContributors</a></code> | <code>string[]</code> | IAM actions required for the GetQueryResultsWorkloadInsightsTopContributors API call. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.opGetQueryResultsWorkloadInsightsTopContributorsData">opGetQueryResultsWorkloadInsightsTopContributorsData</a></code> | <code>string[]</code> | IAM actions required for the GetQueryResultsWorkloadInsightsTopContributorsData API call. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.opGetQueryStatusMonitorTopContributors">opGetQueryStatusMonitorTopContributors</a></code> | <code>string[]</code> | IAM actions required for the GetQueryStatusMonitorTopContributors API call. |
+| <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.opGetQueryStatusPerformanceMonitor">opGetQueryStatusPerformanceMonitor</a></code> | <code>string[]</code> | IAM actions required for the GetQueryStatusPerformanceMonitor API call. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.opGetQueryStatusWorkloadInsightsTopContributors">opGetQueryStatusWorkloadInsightsTopContributors</a></code> | <code>string[]</code> | IAM actions required for the GetQueryStatusWorkloadInsightsTopContributors API call. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.opGetQueryStatusWorkloadInsightsTopContributorsData">opGetQueryStatusWorkloadInsightsTopContributorsData</a></code> | <code>string[]</code> | IAM actions required for the GetQueryStatusWorkloadInsightsTopContributorsData API call. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.opGetScope">opGetScope</a></code> | <code>string[]</code> | IAM actions required for the GetScope API call. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.StartQueryMonitorTopContributors">StartQueryMonitorTopContributors</a></code> | <code>string[]</code> | IAM actions required for the StartQueryMonitorTopContributors API call. |
+| <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.StartQueryPerformanceMonitor">StartQueryPerformanceMonitor</a></code> | <code>string[]</code> | IAM actions required for the StartQueryPerformanceMonitor API call. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.StartQueryWorkloadInsightsTopContributors">StartQueryWorkloadInsightsTopContributors</a></code> | <code>string[]</code> | IAM actions required for the StartQueryWorkloadInsightsTopContributors API call. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.StartQueryWorkloadInsightsTopContributorsData">StartQueryWorkloadInsightsTopContributorsData</a></code> | <code>string[]</code> | IAM actions required for the StartQueryWorkloadInsightsTopContributorsData API call. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.StopQueryMonitorTopContributors">StopQueryMonitorTopContributors</a></code> | <code>string[]</code> | IAM actions required for the StopQueryMonitorTopContributors API call. |
+| <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.StopQueryPerformanceMonitor">StopQueryPerformanceMonitor</a></code> | <code>string[]</code> | IAM actions required for the StopQueryPerformanceMonitor API call. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.StopQueryWorkloadInsightsTopContributors">StopQueryWorkloadInsightsTopContributors</a></code> | <code>string[]</code> | IAM actions required for the StopQueryWorkloadInsightsTopContributors API call. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.StopQueryWorkloadInsightsTopContributorsData">StopQueryWorkloadInsightsTopContributorsData</a></code> | <code>string[]</code> | IAM actions required for the StopQueryWorkloadInsightsTopContributorsData API call. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.UpdateMonitor">UpdateMonitor</a></code> | <code>string[]</code> | IAM actions required for the UpdateMonitor API call. |
+| <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.UpdatePerformanceMonitor">UpdatePerformanceMonitor</a></code> | <code>string[]</code> | IAM actions required for the UpdatePerformanceMonitor API call. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.UpdateScope">UpdateScope</a></code> | <code>string[]</code> | IAM actions required for the UpdateScope API call. |
 
 ---
@@ -980,6 +1281,18 @@ public readonly CreateMonitor: string[];
 - *Type:* string[]
 
 IAM actions required for the CreateMonitor API call.
+
+---
+
+##### `CreatePerformanceMonitor`<sup>Required</sup> <a name="CreatePerformanceMonitor" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.CreatePerformanceMonitor"></a>
+
+```typescript
+public readonly CreatePerformanceMonitor: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreatePerformanceMonitor API call.
 
 ---
 
@@ -1007,6 +1320,18 @@ IAM actions required for the DeleteMonitor API call.
 
 ---
 
+##### `DeletePerformanceMonitor`<sup>Required</sup> <a name="DeletePerformanceMonitor" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.DeletePerformanceMonitor"></a>
+
+```typescript
+public readonly DeletePerformanceMonitor: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeletePerformanceMonitor API call.
+
+---
+
 ##### `DeleteScope`<sup>Required</sup> <a name="DeleteScope" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.DeleteScope"></a>
 
 ```typescript
@@ -1028,6 +1353,18 @@ public readonly ListMonitors: string[];
 - *Type:* string[]
 
 IAM actions required for the ListMonitors API call.
+
+---
+
+##### `ListPerformanceMonitors`<sup>Required</sup> <a name="ListPerformanceMonitors" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.ListPerformanceMonitors"></a>
+
+```typescript
+public readonly ListPerformanceMonitors: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListPerformanceMonitors API call.
 
 ---
 
@@ -1067,6 +1404,30 @@ IAM actions required for the GetMonitor API call.
 
 ---
 
+##### `opGetMonitorScopeSuggestions`<sup>Required</sup> <a name="opGetMonitorScopeSuggestions" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.opGetMonitorScopeSuggestions"></a>
+
+```typescript
+public readonly opGetMonitorScopeSuggestions: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetMonitorScopeSuggestions API call.
+
+---
+
+##### `opGetPerformanceMonitor`<sup>Required</sup> <a name="opGetPerformanceMonitor" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.opGetPerformanceMonitor"></a>
+
+```typescript
+public readonly opGetPerformanceMonitor: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetPerformanceMonitor API call.
+
+---
+
 ##### `opGetQueryResultsMonitorTopContributors`<sup>Required</sup> <a name="opGetQueryResultsMonitorTopContributors" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.opGetQueryResultsMonitorTopContributors"></a>
 
 ```typescript
@@ -1076,6 +1437,18 @@ public readonly opGetQueryResultsMonitorTopContributors: string[];
 - *Type:* string[]
 
 IAM actions required for the GetQueryResultsMonitorTopContributors API call.
+
+---
+
+##### `opGetQueryResultsPerformanceMonitor`<sup>Required</sup> <a name="opGetQueryResultsPerformanceMonitor" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.opGetQueryResultsPerformanceMonitor"></a>
+
+```typescript
+public readonly opGetQueryResultsPerformanceMonitor: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetQueryResultsPerformanceMonitor API call.
 
 ---
 
@@ -1112,6 +1485,18 @@ public readonly opGetQueryStatusMonitorTopContributors: string[];
 - *Type:* string[]
 
 IAM actions required for the GetQueryStatusMonitorTopContributors API call.
+
+---
+
+##### `opGetQueryStatusPerformanceMonitor`<sup>Required</sup> <a name="opGetQueryStatusPerformanceMonitor" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.opGetQueryStatusPerformanceMonitor"></a>
+
+```typescript
+public readonly opGetQueryStatusPerformanceMonitor: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetQueryStatusPerformanceMonitor API call.
 
 ---
 
@@ -1163,6 +1548,18 @@ IAM actions required for the StartQueryMonitorTopContributors API call.
 
 ---
 
+##### `StartQueryPerformanceMonitor`<sup>Required</sup> <a name="StartQueryPerformanceMonitor" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.StartQueryPerformanceMonitor"></a>
+
+```typescript
+public readonly StartQueryPerformanceMonitor: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StartQueryPerformanceMonitor API call.
+
+---
+
 ##### `StartQueryWorkloadInsightsTopContributors`<sup>Required</sup> <a name="StartQueryWorkloadInsightsTopContributors" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.StartQueryWorkloadInsightsTopContributors"></a>
 
 ```typescript
@@ -1196,6 +1593,18 @@ public readonly StopQueryMonitorTopContributors: string[];
 - *Type:* string[]
 
 IAM actions required for the StopQueryMonitorTopContributors API call.
+
+---
+
+##### `StopQueryPerformanceMonitor`<sup>Required</sup> <a name="StopQueryPerformanceMonitor" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.StopQueryPerformanceMonitor"></a>
+
+```typescript
+public readonly StopQueryPerformanceMonitor: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StopQueryPerformanceMonitor API call.
 
 ---
 
@@ -1259,6 +1668,18 @@ IAM actions required for the UpdateMonitor API call.
 
 ---
 
+##### `UpdatePerformanceMonitor`<sup>Required</sup> <a name="UpdatePerformanceMonitor" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.UpdatePerformanceMonitor"></a>
+
+```typescript
+public readonly UpdatePerformanceMonitor: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdatePerformanceMonitor API call.
+
+---
+
 ##### `UpdateScope`<sup>Required</sup> <a name="UpdateScope" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorOperations.property.UpdateScope"></a>
 
 ```typescript
@@ -1294,10 +1715,13 @@ new networkflowmonitor.NetworkflowmonitorResources()
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorResources.isValidMonitorArn">isValidMonitorArn</a></code> | Validates whether a string is a valid ARN for the monitor resource. |
+| <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorResources.isValidPerformancemonitorArn">isValidPerformancemonitorArn</a></code> | Validates whether a string is a valid ARN for the performancemonitor resource. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorResources.isValidScopeArn">isValidScopeArn</a></code> | Validates whether a string is a valid ARN for the scope resource. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorResources.monitor">monitor</a></code> | Builds an ARN for the monitor resource. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorResources.parseMonitorArn">parseMonitorArn</a></code> | Parses a monitor ARN into its components. |
+| <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorResources.parsePerformancemonitorArn">parsePerformancemonitorArn</a></code> | Parses a performancemonitor ARN into its components. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorResources.parseScopeArn">parseScopeArn</a></code> | Parses a scope ARN into its components. |
+| <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorResources.performancemonitor">performancemonitor</a></code> | Builds an ARN for the performancemonitor resource. |
 | <code><a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorResources.scope">scope</a></code> | Builds an ARN for the scope resource. |
 
 ---
@@ -1313,6 +1737,22 @@ networkflowmonitor.NetworkflowmonitorResources.isValidMonitorArn(arn: string)
 Validates whether a string is a valid ARN for the monitor resource.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorResources.isValidMonitorArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidPerformancemonitorArn` <a name="isValidPerformancemonitorArn" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorResources.isValidPerformancemonitorArn"></a>
+
+```typescript
+import { networkflowmonitor } from '@cdk_utils/iam'
+
+networkflowmonitor.NetworkflowmonitorResources.isValidPerformancemonitorArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the performancemonitor resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorResources.isValidPerformancemonitorArn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -1366,6 +1806,22 @@ Parses a monitor ARN into its components.
 
 ---
 
+##### `parsePerformancemonitorArn` <a name="parsePerformancemonitorArn" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorResources.parsePerformancemonitorArn"></a>
+
+```typescript
+import { networkflowmonitor } from '@cdk_utils/iam'
+
+networkflowmonitor.NetworkflowmonitorResources.parsePerformancemonitorArn(arn: string)
+```
+
+Parses a performancemonitor ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorResources.parsePerformancemonitorArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `parseScopeArn` <a name="parseScopeArn" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorResources.parseScopeArn"></a>
 
 ```typescript
@@ -1379,6 +1835,22 @@ Parses a scope ARN into its components.
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorResources.parseScopeArn.parameter.arn"></a>
 
 - *Type:* string
+
+---
+
+##### `performancemonitor` <a name="performancemonitor" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorResources.performancemonitor"></a>
+
+```typescript
+import { networkflowmonitor } from '@cdk_utils/iam'
+
+networkflowmonitor.NetworkflowmonitorResources.performancemonitor(props: NetworkflowmonitorPerformancemonitorArnProps)
+```
+
+Builds an ARN for the performancemonitor resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorResources.performancemonitor.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.networkflowmonitor.NetworkflowmonitorPerformancemonitorArnProps">NetworkflowmonitorPerformancemonitorArnProps</a>
 
 ---
 

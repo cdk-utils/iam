@@ -207,6 +207,8 @@ export class AppstreamActions {
 	static readonly UpdateEntitlement = "appstream:UpdateEntitlement";
 	/** [Write] appstream:UpdateFleet */
 	static readonly UpdateFleet = "appstream:UpdateFleet";
+	/** [Write] appstream:UpdateImageBuilder */
+	static readonly UpdateImageBuilder = "appstream:UpdateImageBuilder";
 	/** [Write] appstream:UpdateImagePermissions */
 	static readonly UpdateImagePermissions = "appstream:UpdateImagePermissions";
 	/** [Write] appstream:UpdateStack */
@@ -284,6 +286,7 @@ export class AppstreamActions {
 		AppstreamActions.UpdateDirectoryConfig,
 		AppstreamActions.UpdateEntitlement,
 		AppstreamActions.UpdateFleet,
+		AppstreamActions.UpdateImageBuilder,
 		AppstreamActions.UpdateImagePermissions,
 		AppstreamActions.UpdateStack,
 		AppstreamActions.UpdateThemeForStack,
@@ -759,13 +762,17 @@ export class AppstreamResources {
  */
 export class AppstreamOperations {
 	/** IAM actions required for the AssociateAppBlockBuilderAppBlock API call. */
-	static readonly AssociateAppBlockBuilderAppBlock: string[] = [];
+	static readonly AssociateAppBlockBuilderAppBlock: string[] = [
+		"appstream:AssociateAppBlockBuilderAppBlock",
+	];
 	/** IAM actions required for the AssociateApplicationFleet API call. */
 	static readonly AssociateApplicationFleet: string[] = [
 		"appstream:AssociateApplicationFleet",
 	];
 	/** IAM actions required for the AssociateApplicationToEntitlement API call. */
-	static readonly AssociateApplicationToEntitlement: string[] = [];
+	static readonly AssociateApplicationToEntitlement: string[] = [
+		"appstream:AssociateApplicationToEntitlement",
+	];
 	/** IAM actions required for the AssociateFleet API call. */
 	static readonly AssociateFleet: string[] = ["appstream:AssociateFleet"];
 	/** IAM actions required for the AssociateSoftwareToImageBuilder API call. */
@@ -797,17 +804,9 @@ export class AppstreamOperations {
 	/** IAM actions required for the CreateExportImageTask API call. */
 	static readonly CreateExportImageTask: string[] = [];
 	/** IAM actions required for the CreateFleet API call. */
-	static readonly CreateFleet: string[] = [
-		"appstream:CreateFleet",
-		"iam:PassRole",
-		"appstream:TagResource",
-	];
+	static readonly CreateFleet: string[] = [];
 	/** IAM actions required for the CreateImageBuilder API call. */
-	static readonly CreateImageBuilder: string[] = [
-		"appstream:CreateImageBuilder",
-		"iam:PassRole",
-		"appstream:TagResource",
-	];
+	static readonly CreateImageBuilder: string[] = [];
 	/** IAM actions required for the CreateImageBuilderStreamingURL API call. */
 	static readonly CreateImageBuilderStreamingURL: string[] = [
 		"appstream:CreateImageBuilderStreamingURL",
@@ -815,10 +814,7 @@ export class AppstreamOperations {
 	/** IAM actions required for the CreateImportedImage API call. */
 	static readonly CreateImportedImage: string[] = [];
 	/** IAM actions required for the CreateStack API call. */
-	static readonly CreateStack: string[] = [
-		"appstream:CreateStack",
-		"appstream:TagResource",
-	];
+	static readonly CreateStack: string[] = [];
 	/** IAM actions required for the CreateStreamingURL API call. */
 	static readonly CreateStreamingURL: string[] = [
 		"appstream:CreateStreamingURL",
@@ -826,10 +822,7 @@ export class AppstreamOperations {
 	/** IAM actions required for the CreateThemeForStack API call. */
 	static readonly CreateThemeForStack: string[] = [];
 	/** IAM actions required for the CreateUpdatedImage API call. */
-	static readonly CreateUpdatedImage: string[] = [
-		"appstream:CreateUpdatedImage",
-		"appstream:TagResource",
-	];
+	static readonly CreateUpdatedImage: string[] = [];
 	/** IAM actions required for the CreateUsageReportSubscription API call. */
 	static readonly CreateUsageReportSubscription: string[] = [
 		"appstream:CreateUsageReportSubscription",
@@ -837,9 +830,11 @@ export class AppstreamOperations {
 	/** IAM actions required for the CreateUser API call. */
 	static readonly CreateUser: string[] = ["appstream:CreateUser"];
 	/** IAM actions required for the DeleteAppBlock API call. */
-	static readonly DeleteAppBlock: string[] = [];
+	static readonly DeleteAppBlock: string[] = ["appstream:DeleteAppBlock"];
 	/** IAM actions required for the DeleteAppBlockBuilder API call. */
-	static readonly DeleteAppBlockBuilder: string[] = [];
+	static readonly DeleteAppBlockBuilder: string[] = [
+		"appstream:DeleteAppBlockBuilder",
+	];
 	/** IAM actions required for the DeleteApplication API call. */
 	static readonly DeleteApplication: string[] = ["appstream:DeleteApplication"];
 	/** IAM actions required for the DeleteDirectoryConfig API call. */
@@ -933,7 +928,9 @@ export class AppstreamOperations {
 	/** IAM actions required for the DisableUser API call. */
 	static readonly DisableUser: string[] = ["appstream:DisableUser"];
 	/** IAM actions required for the DisassociateAppBlockBuilderAppBlock API call. */
-	static readonly DisassociateAppBlockBuilderAppBlock: string[] = [];
+	static readonly DisassociateAppBlockBuilderAppBlock: string[] = [
+		"appstream:DisassociateAppBlockBuilderAppBlock",
+	];
 	/** IAM actions required for the DisassociateApplicationFleet API call. */
 	static readonly DisassociateApplicationFleet: string[] = [
 		"appstream:DisassociateApplicationFleet",
@@ -953,7 +950,9 @@ export class AppstreamOperations {
 	/** IAM actions required for the ExpireSession API call. */
 	static readonly ExpireSession: string[] = ["appstream:ExpireSession"];
 	/** IAM actions required for the GetExportImageTask API call. */
-	static readonly opGetExportImageTask: string[] = [];
+	static readonly opGetExportImageTask: string[] = [
+		"appstream:GetExportImageTask",
+	];
 	/** IAM actions required for the ListAssociatedFleets API call. */
 	static readonly ListAssociatedFleets: string[] = [
 		"appstream:ListAssociatedFleets",
@@ -967,13 +966,17 @@ export class AppstreamOperations {
 		"appstream:ListEntitledApplications",
 	];
 	/** IAM actions required for the ListExportImageTasks API call. */
-	static readonly ListExportImageTasks: string[] = [];
+	static readonly ListExportImageTasks: string[] = [
+		"appstream:ListExportImageTasks",
+	];
 	/** IAM actions required for the ListTagsForResource API call. */
 	static readonly ListTagsForResource: string[] = [
 		"appstream:ListTagsForResource",
 	];
 	/** IAM actions required for the StartAppBlockBuilder API call. */
-	static readonly StartAppBlockBuilder: string[] = [];
+	static readonly StartAppBlockBuilder: string[] = [
+		"appstream:StartAppBlockBuilder",
+	];
 	/** IAM actions required for the StartFleet API call. */
 	static readonly StartFleet: string[] = ["appstream:StartFleet"];
 	/** IAM actions required for the StartImageBuilder API call. */
@@ -981,7 +984,9 @@ export class AppstreamOperations {
 	/** IAM actions required for the StartSoftwareDeploymentToImageBuilder API call. */
 	static readonly StartSoftwareDeploymentToImageBuilder: string[] = [];
 	/** IAM actions required for the StopAppBlockBuilder API call. */
-	static readonly StopAppBlockBuilder: string[] = [];
+	static readonly StopAppBlockBuilder: string[] = [
+		"appstream:StopAppBlockBuilder",
+	];
 	/** IAM actions required for the StopFleet API call. */
 	static readonly StopFleet: string[] = ["appstream:StopFleet"];
 	/** IAM actions required for the StopImageBuilder API call. */
@@ -991,9 +996,11 @@ export class AppstreamOperations {
 	/** IAM actions required for the UntagResource API call. */
 	static readonly UntagResource: string[] = ["appstream:UntagResource"];
 	/** IAM actions required for the UpdateAppBlockBuilder API call. */
-	static readonly UpdateAppBlockBuilder: string[] = [];
+	static readonly UpdateAppBlockBuilder: string[] = [
+		"appstream:UpdateAppBlockBuilder",
+	];
 	/** IAM actions required for the UpdateApplication API call. */
-	static readonly UpdateApplication: string[] = [];
+	static readonly UpdateApplication: string[] = ["appstream:UpdateApplication"];
 	/** IAM actions required for the UpdateDirectoryConfig API call. */
 	static readonly UpdateDirectoryConfig: string[] = [
 		"appstream:UpdateDirectoryConfig",
@@ -1001,9 +1008,10 @@ export class AppstreamOperations {
 	/** IAM actions required for the UpdateEntitlement API call. */
 	static readonly UpdateEntitlement: string[] = ["appstream:UpdateEntitlement"];
 	/** IAM actions required for the UpdateFleet API call. */
-	static readonly UpdateFleet: string[] = [
-		"iam:PassRole",
-		"appstream:UpdateFleet",
+	static readonly UpdateFleet: string[] = [];
+	/** IAM actions required for the UpdateImageBuilder API call. */
+	static readonly UpdateImageBuilder: string[] = [
+		"appstream:UpdateImageBuilder",
 	];
 	/** IAM actions required for the UpdateImagePermissions API call. */
 	static readonly UpdateImagePermissions: string[] = [
@@ -1200,6 +1208,10 @@ export class AppstreamConditions {
 	];
 	/** Condition keys applicable to the UpdateFleet action. */
 	static readonly UpdateFleetConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
+	/** Condition keys applicable to the UpdateImageBuilder action. */
+	static readonly UpdateImageBuilderConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpdateImagePermissions action. */

@@ -4216,7 +4216,6 @@ export class BedrockOperations {
 		"bedrock:CallWithBearerToken",
 		"bedrock:InvokeModel",
 		"bedrock:InvokeModelWithResponseStream",
-		"bedrock:InvokeTool",
 	];
 	/** IAM actions required for the ListAdvancedPromptOptimizationJobs API call. */
 	static readonly ListAdvancedPromptOptimizationJobs: string[] = [

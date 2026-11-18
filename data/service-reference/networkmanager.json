@@ -1516,8 +1516,8 @@
         }
       ],
       "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
       }
     },
     {
@@ -2050,8 +2050,8 @@
         }
       ],
       "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
       }
     },
     {
@@ -2374,6 +2374,16 @@
       ]
     },
     {
+      "Name": "AssociateContextStore",
+      "SDK": [
+        {
+          "Name": "networkmanager",
+          "Method": "associate_context_store",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "AssociateCustomerGateway",
       "AuthorizedActions": [
         {
@@ -2485,6 +2495,22 @@
         {
           "Name": "networkmanager",
           "Method": "create_connection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateContextStore",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "networkmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "networkmanager",
+          "Method": "create_context_store",
           "Package": "Boto3"
         }
       ]
@@ -2782,6 +2808,16 @@
       ]
     },
     {
+      "Name": "DeleteContextStore",
+      "SDK": [
+        {
+          "Name": "networkmanager",
+          "Method": "delete_context_store",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DeleteCoreNetwork",
       "AuthorizedActions": [
         {
@@ -2974,6 +3010,16 @@
       ]
     },
     {
+      "Name": "DisassociateContextStore",
+      "SDK": [
+        {
+          "Name": "networkmanager",
+          "Method": "disassociate_context_store",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DisassociateCustomerGateway",
       "AuthorizedActions": [
         {
@@ -3097,6 +3143,36 @@
         {
           "Name": "networkmanager",
           "Method": "get_connections",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetContextStore",
+      "SDK": [
+        {
+          "Name": "networkmanager",
+          "Method": "get_context_store",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetContextStoreAssociation",
+      "SDK": [
+        {
+          "Name": "networkmanager",
+          "Method": "get_context_store_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetContextVersion",
+      "SDK": [
+        {
+          "Name": "networkmanager",
+          "Method": "get_context_version",
           "Package": "Boto3"
         }
       ]
@@ -3534,6 +3610,46 @@
       ]
     },
     {
+      "Name": "ListContextChanges",
+      "SDK": [
+        {
+          "Name": "networkmanager",
+          "Method": "list_context_changes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListContextStoreAssociations",
+      "SDK": [
+        {
+          "Name": "networkmanager",
+          "Method": "list_context_store_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListContextStores",
+      "SDK": [
+        {
+          "Name": "networkmanager",
+          "Method": "list_context_stores",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListContexts",
+      "SDK": [
+        {
+          "Name": "networkmanager",
+          "Method": "list_contexts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListCoreNetworkPolicyVersions",
       "AuthorizedActions": [
         {
@@ -3849,6 +3965,16 @@
         {
           "Name": "networkmanager",
           "Method": "update_connection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateContextStore",
+      "SDK": [
+        {
+          "Name": "networkmanager",
+          "Method": "update_context_store",
           "Package": "Boto3"
         }
       ]

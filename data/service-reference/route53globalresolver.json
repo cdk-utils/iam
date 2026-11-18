@@ -1115,6 +1115,22 @@
       ]
     },
     {
+      "Name": "CreateCoreNetworkEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "create_core_network_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "CreateDNSView",
       "AuthorizedActions": [
         {
@@ -1218,6 +1234,16 @@
         {
           "Name": "route53globalresolver",
           "Method": "delete_access_token",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCoreNetworkEndpoint",
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "delete_core_network_endpoint",
           "Package": "Boto3"
         }
       ]
@@ -1367,6 +1393,16 @@
       ]
     },
     {
+      "Name": "GetCoreNetworkEndpoint",
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "get_core_network_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetDNSView",
       "AuthorizedActions": [
         {
@@ -1506,6 +1542,16 @@
         {
           "Name": "route53globalresolver",
           "Method": "list_access_tokens",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCoreNetworkEndpoints",
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "list_core_network_endpoints",
           "Package": "Boto3"
         }
       ]
@@ -1708,6 +1754,16 @@
         {
           "Name": "route53globalresolver",
           "Method": "update_access_token",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCoreNetworkEndpoint",
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "update_core_network_endpoint",
           "Package": "Boto3"
         }
       ]

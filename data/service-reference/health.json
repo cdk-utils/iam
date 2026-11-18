@@ -261,6 +261,26 @@
   ],
   "Operations": [
     {
+      "Name": "ConfigureTags",
+      "SDK": [
+        {
+          "Name": "health",
+          "Method": "configure_tags",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ConfigureTagsForOrganization",
+      "SDK": [
+        {
+          "Name": "health",
+          "Method": "configure_tags_for_organization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DescribeAffectedAccountsForOrganization",
       "AuthorizedActions": [
         {
@@ -487,6 +507,84 @@
       ]
     },
     {
+      "Name": "DescribeTagKeys",
+      "SDK": [
+        {
+          "Name": "health",
+          "Method": "describe_tag_keys",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeTagKeysForOrganization",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAccounts",
+          "Service": "organizations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "health",
+          "Method": "describe_tag_keys_for_organization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeTags",
+      "SDK": [
+        {
+          "Name": "health",
+          "Method": "describe_tags",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeTagsForOrganization",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAccounts",
+          "Service": "organizations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "health",
+          "Method": "describe_tags_for_organization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeTagsOnboardingStatus",
+      "SDK": [
+        {
+          "Name": "health",
+          "Method": "describe_tags_onboarding_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeTagsOnboardingStatusForOrganization",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAccounts",
+          "Service": "organizations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "health",
+          "Method": "describe_tags_onboarding_status_for_organization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DisableHealthServiceAccessForOrganization",
       "AuthorizedActions": [
         {
@@ -506,6 +604,32 @@
         {
           "Name": "health",
           "Method": "disable_health_service_access_for_organization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisableTags",
+      "SDK": [
+        {
+          "Name": "health",
+          "Method": "disable_tags",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisableTagsForOrganization",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAccounts",
+          "Service": "organizations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "health",
+          "Method": "disable_tags_for_organization",
           "Package": "Boto3"
         }
       ]
@@ -534,6 +658,26 @@
         {
           "Name": "health",
           "Method": "enable_health_service_access_for_organization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "EnableTags",
+      "SDK": [
+        {
+          "Name": "health",
+          "Method": "enable_tags",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "EnableTagsForOrganization",
+      "SDK": [
+        {
+          "Name": "health",
+          "Method": "enable_tags_for_organization",
           "Package": "Boto3"
         }
       ]

@@ -3,6 +3,25 @@
   "ServiceName": "Marketplace",
   "Actions": [
     {
+      "Name": "AcceptAgreementApproval",
+      "ActionConditionKeys": [
+        "aws-marketplace:AgreementType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "AcceptAgreementApprovalRequest",
       "Annotations": {
         "Properties": {
@@ -189,8 +208,12 @@
     },
     {
       "Name": "CancelAgreementRequest",
+      "ActionConditionKeys": [
+        "aws-marketplace:AgreementType"
+      ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -447,6 +470,25 @@
       }
     },
     {
+      "Name": "GetAgreementApproval",
+      "ActionConditionKeys": [
+        "aws-marketplace:AgreementType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "GetAgreementApprovalRequest",
       "Annotations": {
         "Properties": {
@@ -466,6 +508,25 @@
       "ActionConditionKeys": [
         "aws-marketplace:AgreementType",
         "aws-marketplace:PartyType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAgreementContacts",
+      "ActionConditionKeys": [
+        "aws-marketplace:AgreementType"
       ],
       "Annotations": {
         "Properties": {
@@ -522,8 +583,50 @@
     },
     {
       "Name": "GetAgreementRequest",
+      "ActionConditionKeys": [
+        "aws-marketplace:AgreementType"
+      ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAgreementRequestApprovalPlans",
+      "ActionConditionKeys": [
+        "aws-marketplace:AgreementType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAgreementRequestTerms",
+      "ActionConditionKeys": [
+        "aws-marketplace:AgreementType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -799,6 +902,26 @@
       }
     },
     {
+      "Name": "GetSellerReportingData",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SellerDataset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "GetTaxComplianceProfile",
       "Annotations": {
         "Properties": {
@@ -860,6 +983,22 @@
       "Name": "ListAgreementApprovalRequests",
       "Annotations": {
         "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAgreementApprovals",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -954,6 +1093,7 @@
       "Name": "ListAgreementRequests",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1389,6 +1529,25 @@
       }
     },
     {
+      "Name": "RejectAgreementApproval",
+      "ActionConditionKeys": [
+        "aws-marketplace:AgreementType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "RejectAgreementApprovalRequest",
       "Annotations": {
         "Properties": {
@@ -1550,6 +1709,24 @@
       "Annotations": {
         "Properties": {
           "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartAgreementApprovals",
+      "ActionConditionKeys": [
+        "aws-marketplace:AgreementType"
+      ],
+      "Annotations": {
+        "Properties": {
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1937,6 +2114,22 @@
   ],
   "Operations": [
     {
+      "Name": "AcceptAgreementApproval",
+      "AuthorizedActions": [
+        {
+          "Name": "AcceptAgreementApproval",
+          "Service": "aws-marketplace"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "marketplace-agreement",
+          "Method": "accept_agreement_approval",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "AcceptAgreementCancellationRequest",
       "AuthorizedActions": [
         {
@@ -2097,6 +2290,22 @@
       ]
     },
     {
+      "Name": "CancelAgreementRequest",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelAgreementRequest",
+          "Service": "aws-marketplace"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "marketplace-agreement",
+          "Method": "cancel_agreement_request",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "CancelChangeSet",
       "AuthorizedActions": [
         {
@@ -2217,6 +2426,22 @@
       ]
     },
     {
+      "Name": "GetAgreementApproval",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAgreementApproval",
+          "Service": "aws-marketplace"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "marketplace-agreement",
+          "Method": "get_agreement_approval",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetAgreementCancellationRequest",
       "AuthorizedActions": [
         {
@@ -2228,6 +2453,22 @@
         {
           "Name": "marketplace-agreement",
           "Method": "get_agreement_cancellation_request",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAgreementContacts",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAgreementContacts",
+          "Service": "aws-marketplace"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "marketplace-agreement",
+          "Method": "get_agreement_contacts",
           "Package": "Boto3"
         }
       ]
@@ -2264,6 +2505,54 @@
         {
           "Name": "marketplace-agreement",
           "Method": "get_agreement_payment_request",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAgreementRequest",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAgreementRequest",
+          "Service": "aws-marketplace"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "marketplace-agreement",
+          "Method": "get_agreement_request",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAgreementRequestApprovalPlans",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAgreementRequestApprovalPlans",
+          "Service": "aws-marketplace"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "marketplace-agreement",
+          "Method": "get_agreement_request_approval_plans",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAgreementRequestTerms",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAgreementRequestTerms",
+          "Service": "aws-marketplace"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "marketplace-agreement",
+          "Method": "get_agreement_request_terms",
           "Package": "Boto3"
         }
       ]
@@ -2433,6 +2722,22 @@
       ]
     },
     {
+      "Name": "ListAgreementApprovals",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAgreementApprovals",
+          "Service": "aws-marketplace"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "marketplace-agreement",
+          "Method": "list_agreement_approvals",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListAgreementCancellationRequests",
       "AuthorizedActions": [
         {
@@ -2492,6 +2797,22 @@
         {
           "Name": "marketplace-agreement",
           "Method": "list_agreement_payment_requests",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAgreementRequests",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAgreementRequests",
+          "Service": "aws-marketplace"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "marketplace-agreement",
+          "Method": "list_agreement_requests",
           "Package": "Boto3"
         }
       ]
@@ -2690,6 +3011,22 @@
       ]
     },
     {
+      "Name": "RejectAgreementApproval",
+      "AuthorizedActions": [
+        {
+          "Name": "RejectAgreementApproval",
+          "Service": "aws-marketplace"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "marketplace-agreement",
+          "Method": "reject_agreement_approval",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "RejectAgreementCancellationRequest",
       "AuthorizedActions": [
         {
@@ -2817,6 +3154,16 @@
         {
           "Name": "marketplace-agreement",
           "Method": "send_agreement_payment_request",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartAgreementApprovals",
+      "SDK": [
+        {
+          "Name": "marketplace-agreement",
+          "Method": "start_agreement_approvals",
           "Package": "Boto3"
         }
       ]
@@ -3037,6 +3384,12 @@
       "Name": "SellerDashboard",
       "ARNFormats": [
         "arn:${Partition}:aws-marketplace::${Account}:${Catalog}/ReportingData/${FactTable}/Dashboard/${DashboardName}"
+      ]
+    },
+    {
+      "Name": "SellerDataset",
+      "ARNFormats": [
+        "arn:${Partition}:aws-marketplace::${Account}:${Catalog}/ReportingData/${FactTable}/Dataset/${DatasetName}"
       ]
     },
     {

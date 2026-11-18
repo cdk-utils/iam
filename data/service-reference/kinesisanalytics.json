@@ -950,6 +950,22 @@
       ]
     },
     {
+      "Name": "CreateSnapshot",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "kinesisanalytics"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesisanalyticsv2",
+          "Method": "create_snapshot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DeleteApplication",
       "AuthorizedActions": [
         {
@@ -1087,6 +1103,16 @@
       ]
     },
     {
+      "Name": "DeleteSnapshot",
+      "SDK": [
+        {
+          "Name": "kinesisanalyticsv2",
+          "Method": "delete_snapshot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DescribeApplication",
       "AuthorizedActions": [
         {
@@ -1156,6 +1182,26 @@
       ]
     },
     {
+      "Name": "DescribeSnapshot",
+      "SDK": [
+        {
+          "Name": "kinesisanalyticsv2",
+          "Method": "describe_snapshot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSnapshotOperation",
+      "SDK": [
+        {
+          "Name": "kinesisanalyticsv2",
+          "Method": "describe_snapshot_operation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DiscoverInputSchema",
       "AuthorizedActions": [
         {
@@ -1181,6 +1227,37 @@
         {
           "Name": "kinesisanalyticsv2",
           "Method": "discover_input_schema",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ExportSnapshot",
+      "SDK": [
+        {
+          "Name": "kinesisanalyticsv2",
+          "Method": "export_snapshot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ImportSnapshot",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "kinesisanalytics.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesisanalyticsv2",
+          "Method": "import_snapshot",
           "Package": "Boto3"
         }
       ]
@@ -1250,6 +1327,26 @@
         {
           "Name": "kinesisanalyticsv2",
           "Method": "list_applications",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSnapshotOperations",
+      "SDK": [
+        {
+          "Name": "kinesisanalyticsv2",
+          "Method": "list_snapshot_operations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSnapshots",
+      "SDK": [
+        {
+          "Name": "kinesisanalyticsv2",
+          "Method": "list_snapshots",
           "Package": "Boto3"
         }
       ]

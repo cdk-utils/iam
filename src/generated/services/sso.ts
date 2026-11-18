@@ -1332,6 +1332,10 @@ export class SSOConditions {
 	static readonly UpdateApplicationConditionKeys: string[] = [
 		"sso:ApplicationAccount",
 	];
+	/** Condition keys applicable to the UpdateInstance action. */
+	static readonly UpdateInstanceConditionKeys: string[] = [
+		"sso:VpceAccessRequired",
+	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
 	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
@@ -1347,6 +1351,8 @@ export class SSOConditions {
 	static readonly APPLICATION_ACCOUNT = "sso:ApplicationAccount";
 	/** Condition key: sso:PrimaryRegion (String) */
 	static readonly PRIMARY_REGION = "sso:PrimaryRegion";
+	/** Condition key: sso:VpceAccessRequired (Bool) */
+	static readonly VPCE_ACCESS_REQUIRED = "sso:VpceAccessRequired";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.
@@ -1383,5 +1389,14 @@ export class SSOConditions {
 	 */
 	static primaryRegion(value: string): Record<string, Record<string, string>> {
 		return { StringEquals: { "sso:PrimaryRegion": value } };
+	}
+
+	/**
+	 * Generates a condition block for `sso:VpceAccessRequired`.
+	 */
+	static vpceAccessRequired(
+		value: boolean,
+	): Record<string, Record<string, boolean>> {
+		return { Bool: { "sso:VpceAccessRequired": value } };
 	}
 }

@@ -1396,7 +1396,10 @@ export class EventsOperations {
 		"events:CreateApiDestination",
 	];
 	/** IAM actions required for the CreateArchive API call. */
-	static readonly CreateArchive: string[] = ["events:CreateArchive"];
+	static readonly CreateArchive: string[] = [
+		"events:CreateArchive",
+		"events:TagResource",
+	];
 	/** IAM actions required for the CreateConnection API call. */
 	static readonly CreateConnection: string[] = ["events:CreateConnection"];
 	/** IAM actions required for the CreateEndpoint API call. */
@@ -1557,7 +1560,10 @@ export class EventsOperations {
 	/** IAM actions required for the RevokeResource API call. */
 	static readonly RevokeResource: string[] = ["events:RevokeResource"];
 	/** IAM actions required for the StartReplay API call. */
-	static readonly StartReplay: string[] = ["events:StartReplay"];
+	static readonly StartReplay: string[] = [
+		"events:StartReplay",
+		"events:TagResource",
+	];
 	/** IAM actions required for the TagResource API call. */
 	static readonly TagResource: string[] = ["events:TagResource"];
 	/** IAM actions required for the TestEventPattern API call. */

@@ -255,6 +255,16 @@ export class ElementalInferenceOperations {
 		"iam:PassRole",
 		"elemental-inference:TagResource",
 	];
+	/** IAM actions required for the CreateFunction API call. */
+	static readonly CreateFunction: string[] = [
+		"elemental-inference:TagResource",
+	];
+	/** IAM actions required for the CreateQuestionSet API call. */
+	static readonly CreateQuestionSet: string[] = [
+		"elemental-inference:TagResource",
+	];
+	/** IAM actions required for the CreateQuestionSetVersion API call. */
+	static readonly CreateQuestionSetVersion: string[] = [];
 	/** IAM actions required for the CreateScheduleAction API call. */
 	static readonly CreateScheduleAction: string[] = [
 		"elemental-inference:CreateScheduleAction",
@@ -269,6 +279,12 @@ export class ElementalInferenceOperations {
 	static readonly DeleteFeedPolicy: string[] = [
 		"elemental-inference:DeleteFeedPolicy",
 	];
+	/** IAM actions required for the DeleteFunction API call. */
+	static readonly DeleteFunction: string[] = [];
+	/** IAM actions required for the DeleteQuestionSet API call. */
+	static readonly DeleteQuestionSet: string[] = [];
+	/** IAM actions required for the DeleteQuestionSetVersion API call. */
+	static readonly DeleteQuestionSetVersion: string[] = [];
 	/** IAM actions required for the DeleteScheduleAction API call. */
 	static readonly DeleteScheduleAction: string[] = [
 		"elemental-inference:DeleteScheduleAction",
@@ -293,12 +309,22 @@ export class ElementalInferenceOperations {
 	];
 	/** IAM actions required for the GetFixture API call. */
 	static readonly opGetFixture: string[] = [];
+	/** IAM actions required for the GetFunction API call. */
+	static readonly opGetFunction: string[] = [];
+	/** IAM actions required for the GetQuestionSet API call. */
+	static readonly opGetQuestionSet: string[] = [];
 	/** IAM actions required for the ListDictionaries API call. */
 	static readonly ListDictionaries: string[] = [
 		"elemental-inference:ListDictionaries",
 	];
 	/** IAM actions required for the ListFeeds API call. */
 	static readonly ListFeeds: string[] = ["elemental-inference:ListFeeds"];
+	/** IAM actions required for the ListFunctions API call. */
+	static readonly ListFunctions: string[] = [];
+	/** IAM actions required for the ListQuestionSetVersions API call. */
+	static readonly ListQuestionSetVersions: string[] = [];
+	/** IAM actions required for the ListQuestionSets API call. */
+	static readonly ListQuestionSets: string[] = [];
 	/** IAM actions required for the ListScheduleActions API call. */
 	static readonly ListScheduleActions: string[] = [
 		"elemental-inference:ListScheduleActions",
@@ -328,6 +354,10 @@ export class ElementalInferenceOperations {
 		"iam:PassRole",
 		"elemental-inference:UpdateFeed",
 	];
+	/** IAM actions required for the UpdateFunction API call. */
+	static readonly UpdateFunction: string[] = [];
+	/** IAM actions required for the UpdateQuestionSet API call. */
+	static readonly UpdateQuestionSet: string[] = [];
 }
 
 /**

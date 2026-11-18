@@ -280,7 +280,7 @@
       },
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
+        "IAM Action Last Accessed": true
       }
     },
     {
@@ -620,6 +620,27 @@
       }
     },
     {
+      "Name": "DeleteMetricDataQueryDefinition",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "metric-query-definition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "DeleteMetricStream",
       "Annotations": {
         "Properties": {
@@ -718,7 +739,7 @@
       },
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
+        "IAM Action Last Accessed": true
       }
     },
     {
@@ -865,6 +886,21 @@
       "Annotations": {
         "Properties": {
           "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DetectGroupOutliers",
+      "Annotations": {
+        "Properties": {
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1358,6 +1394,27 @@
       }
     },
     {
+      "Name": "GetMetricDataQueryDefinition",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "metric-query-definition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "GetMetricStatistics",
       "Annotations": {
         "Properties": {
@@ -1547,7 +1604,7 @@
       },
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
+        "IAM Action Last Accessed": true
       }
     },
     {
@@ -1651,6 +1708,25 @@
     },
     {
       "Name": "GetSpaceCredentialsForOrganization",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSpaceDataAccess",
+      "ActionConditionKeys": [
+        "cloudwatch:HasAccessGrant"
+      ],
       "Annotations": {
         "Properties": {
           "IsDataPlane": false,
@@ -1989,6 +2065,22 @@
       }
     },
     {
+      "Name": "ListMetricDataQueryDefinitions",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ListMetricStreams",
       "Annotations": {
         "Properties": {
@@ -2195,6 +2287,12 @@
         },
         {
           "Name": "insight-rule",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "metric-query-definition",
           "ConditionKeys": [
             "aws:ResourceTag/${TagKey}"
           ]
@@ -2522,6 +2620,31 @@
           "ConditionKeys": [
             "aws:ResourceTag/${TagKey}"
           ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutMetricDataQueryDefinition",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "metric-query-definition"
         }
       ],
       "SupportedBy": {
@@ -2918,6 +3041,12 @@
           ]
         },
         {
+          "Name": "metric-query-definition",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
           "Name": "metric-stream",
           "ConditionKeys": [
             "aws:ResourceTag/${TagKey}"
@@ -2983,6 +3112,12 @@
         },
         {
           "Name": "insight-rule",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "metric-query-definition",
           "ConditionKeys": [
             "aws:ResourceTag/${TagKey}"
           ]
@@ -3237,7 +3372,7 @@
       },
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
+        "IAM Action Last Accessed": true
       }
     },
     {
@@ -3824,6 +3959,22 @@
       ]
     },
     {
+      "Name": "DeleteMetricDataQueryDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteMetricDataQueryDefinition",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatch",
+          "Method": "delete_metric_data_query_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DeleteMetricStream",
       "AuthorizedActions": [
         {
@@ -4292,6 +4443,22 @@
       ]
     },
     {
+      "Name": "GetMetricDataQueryDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMetricDataQueryDefinition",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatch",
+          "Method": "get_metric_data_query_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetMetricStatistics",
       "AuthorizedActions": [
         {
@@ -4415,6 +4582,22 @@
         {
           "Name": "cloudwatchomni",
           "Method": "get_space_credentials_for_organization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSpaceDataAccess",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSpaceDataAccess",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatchomni",
+          "Method": "get_space_data_access",
           "Package": "Boto3"
         }
       ]
@@ -4591,6 +4774,22 @@
         {
           "Name": "cloudwatch",
           "Method": "list_managed_insight_rules",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMetricDataQueryDefinitions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListMetricDataQueryDefinitions",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatch",
+          "Method": "list_metric_data_query_definitions",
           "Package": "Boto3"
         }
       ]
@@ -4920,6 +5119,10 @@
       "Name": "PutMetricAlarm",
       "AuthorizedActions": [
         {
+          "Name": "ListTagsForResource",
+          "Service": "cloudwatch"
+        },
+        {
           "Name": "PutMetricAlarm",
           "Service": "cloudwatch"
         },
@@ -4948,6 +5151,26 @@
         {
           "Name": "cloudwatch",
           "Method": "put_metric_data",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutMetricDataQueryDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "PutMetricDataQueryDefinition",
+          "Service": "cloudwatch"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "cloudwatch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudwatch",
+          "Method": "put_metric_data_query_definition",
           "Package": "Boto3"
         }
       ]
@@ -5469,6 +5692,15 @@
       ]
     },
     {
+      "Name": "metric-query-definition",
+      "ARNFormats": [
+        "arn:${Partition}:cloudwatch:${Region}:${Account}:metric-query-definition/${MetricDataQueryDefinitionId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
       "Name": "metric-stream",
       "ARNFormats": [
         "arn:${Partition}:cloudwatch:${Region}:${Account}:metric-stream/${MetricStreamName}"
@@ -5534,7 +5766,7 @@
     {
       "Name": "view",
       "ARNFormats": [
-        "arn:${Partition}:cloudwatch:${Region}:${Account}:view/${ViewName}"
+        "arn:${Partition}:cloudwatch:${Region}:${Account}:view/${ViewName}/${ViewId}"
       ],
       "ConditionKeys": [
         "aws:ResourceTag/${TagKey}"

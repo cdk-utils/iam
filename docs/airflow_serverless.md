@@ -185,6 +185,7 @@ new airflow_serverless.AirflowServerlessActions()
 | <code><a href="#@cdk_utils/iam.airflow_serverless.AirflowServerlessActions.property.AllReadActions">AllReadActions</a></code> | <code>string[]</code> | All read-level actions. |
 | <code><a href="#@cdk_utils/iam.airflow_serverless.AirflowServerlessActions.property.AllTaggingActions">AllTaggingActions</a></code> | <code>string[]</code> | All tagging-level actions. |
 | <code><a href="#@cdk_utils/iam.airflow_serverless.AirflowServerlessActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
+| <code><a href="#@cdk_utils/iam.airflow_serverless.AirflowServerlessActions.property.CreateAirflowUiUrl">CreateAirflowUiUrl</a></code> | <code>string</code> | [Read] airflow-serverless:CreateAirflowUiUrl. |
 | <code><a href="#@cdk_utils/iam.airflow_serverless.AirflowServerlessActions.property.CreateWorkflow">CreateWorkflow</a></code> | <code>string</code> | [Write] airflow-serverless:CreateWorkflow. |
 | <code><a href="#@cdk_utils/iam.airflow_serverless.AirflowServerlessActions.property.DeleteWorkflow">DeleteWorkflow</a></code> | <code>string</code> | [Write] airflow-serverless:DeleteWorkflow. |
 | <code><a href="#@cdk_utils/iam.airflow_serverless.AirflowServerlessActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [Read] airflow-serverless:ListTagsForResource. |
@@ -294,6 +295,18 @@ public readonly AllWriteActions: string[];
 - *Type:* string[]
 
 All write-level actions.
+
+---
+
+##### `CreateAirflowUiUrl`<sup>Required</sup> <a name="CreateAirflowUiUrl" id="@cdk_utils/iam.airflow_serverless.AirflowServerlessActions.property.CreateAirflowUiUrl"></a>
+
+```typescript
+public readonly CreateAirflowUiUrl: string;
+```
+
+- *Type:* string
+
+[Read] airflow-serverless:CreateAirflowUiUrl.
 
 ---
 
@@ -652,6 +665,7 @@ new airflow_serverless.AirflowServerlessOperations()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.airflow_serverless.AirflowServerlessOperations.property.CreateAirflowUiUrl">CreateAirflowUiUrl</a></code> | <code>string[]</code> | IAM actions required for the CreateAirflowUiUrl API call. |
 | <code><a href="#@cdk_utils/iam.airflow_serverless.AirflowServerlessOperations.property.CreateWorkflow">CreateWorkflow</a></code> | <code>string[]</code> | IAM actions required for the CreateWorkflow API call. |
 | <code><a href="#@cdk_utils/iam.airflow_serverless.AirflowServerlessOperations.property.DeleteWorkflow">DeleteWorkflow</a></code> | <code>string[]</code> | IAM actions required for the DeleteWorkflow API call. |
 | <code><a href="#@cdk_utils/iam.airflow_serverless.AirflowServerlessOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
@@ -667,6 +681,18 @@ new airflow_serverless.AirflowServerlessOperations()
 | <code><a href="#@cdk_utils/iam.airflow_serverless.AirflowServerlessOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
 | <code><a href="#@cdk_utils/iam.airflow_serverless.AirflowServerlessOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
 | <code><a href="#@cdk_utils/iam.airflow_serverless.AirflowServerlessOperations.property.UpdateWorkflow">UpdateWorkflow</a></code> | <code>string[]</code> | IAM actions required for the UpdateWorkflow API call. |
+
+---
+
+##### `CreateAirflowUiUrl`<sup>Required</sup> <a name="CreateAirflowUiUrl" id="@cdk_utils/iam.airflow_serverless.AirflowServerlessOperations.property.CreateAirflowUiUrl"></a>
+
+```typescript
+public readonly CreateAirflowUiUrl: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateAirflowUiUrl API call.
 
 ---
 

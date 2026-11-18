@@ -920,6 +920,8 @@ export class NetworkManagerOperations {
 	static readonly AssociateConnectPeer: string[] = [
 		"networkmanager:AssociateConnectPeer",
 	];
+	/** IAM actions required for the AssociateContextStore API call. */
+	static readonly AssociateContextStore: string[] = [];
 	/** IAM actions required for the AssociateCustomerGateway API call. */
 	static readonly AssociateCustomerGateway: string[] = [
 		"networkmanager:AssociateCustomerGateway",
@@ -947,6 +949,8 @@ export class NetworkManagerOperations {
 		"networkmanager:CreateConnection",
 		"networkmanager:TagResource",
 	];
+	/** IAM actions required for the CreateContextStore API call. */
+	static readonly CreateContextStore: string[] = ["networkmanager:TagResource"];
 	/** IAM actions required for the CreateCoreNetwork API call. */
 	static readonly CreateCoreNetwork: string[] = [
 		"networkmanager:CreateCoreNetwork",
@@ -1020,6 +1024,8 @@ export class NetworkManagerOperations {
 	static readonly DeleteConnection: string[] = [
 		"networkmanager:DeleteConnection",
 	];
+	/** IAM actions required for the DeleteContextStore API call. */
+	static readonly DeleteContextStore: string[] = [];
 	/** IAM actions required for the DeleteCoreNetwork API call. */
 	static readonly DeleteCoreNetwork: string[] = [
 		"networkmanager:DeleteCoreNetwork",
@@ -1060,6 +1066,8 @@ export class NetworkManagerOperations {
 	static readonly DisassociateConnectPeer: string[] = [
 		"networkmanager:DisassociateConnectPeer",
 	];
+	/** IAM actions required for the DisassociateContextStore API call. */
+	static readonly DisassociateContextStore: string[] = [];
 	/** IAM actions required for the DisassociateCustomerGateway API call. */
 	static readonly DisassociateCustomerGateway: string[] = [
 		"networkmanager:DisassociateCustomerGateway",
@@ -1092,6 +1100,12 @@ export class NetworkManagerOperations {
 	static readonly opGetConnections: string[] = [
 		"networkmanager:GetConnections",
 	];
+	/** IAM actions required for the GetContextStore API call. */
+	static readonly opGetContextStore: string[] = [];
+	/** IAM actions required for the GetContextStoreAssociation API call. */
+	static readonly opGetContextStoreAssociation: string[] = [];
+	/** IAM actions required for the GetContextVersion API call. */
+	static readonly opGetContextVersion: string[] = [];
 	/** IAM actions required for the GetCoreNetwork API call. */
 	static readonly opGetCoreNetwork: string[] = [
 		"networkmanager:GetCoreNetwork",
@@ -1194,6 +1208,14 @@ export class NetworkManagerOperations {
 	static readonly ListConnectPeers: string[] = [
 		"networkmanager:ListConnectPeers",
 	];
+	/** IAM actions required for the ListContextChanges API call. */
+	static readonly ListContextChanges: string[] = [];
+	/** IAM actions required for the ListContextStoreAssociations API call. */
+	static readonly ListContextStoreAssociations: string[] = [];
+	/** IAM actions required for the ListContextStores API call. */
+	static readonly ListContextStores: string[] = [];
+	/** IAM actions required for the ListContexts API call. */
+	static readonly ListContexts: string[] = [];
 	/** IAM actions required for the ListCoreNetworkPolicyVersions API call. */
 	static readonly ListCoreNetworkPolicyVersions: string[] = [
 		"networkmanager:ListCoreNetworkPolicyVersions",
@@ -1268,6 +1290,8 @@ export class NetworkManagerOperations {
 	static readonly UpdateConnection: string[] = [
 		"networkmanager:UpdateConnection",
 	];
+	/** IAM actions required for the UpdateContextStore API call. */
+	static readonly UpdateContextStore: string[] = [];
 	/** IAM actions required for the UpdateCoreNetwork API call. */
 	static readonly UpdateCoreNetwork: string[] = [
 		"networkmanager:UpdateCoreNetwork",

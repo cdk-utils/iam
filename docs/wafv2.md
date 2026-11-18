@@ -2292,6 +2292,8 @@ new wafv2.Wafv2Actions()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Actions.property.actionGetDecryptedAPIKey">actionGetDecryptedAPIKey</a></code> | <code>string</code> | [Read] wafv2:GetDecryptedAPIKey. |
+| <code><a href="#@cdk_utils/iam.wafv2.Wafv2Actions.property.actionGetEvent">actionGetEvent</a></code> | <code>string</code> | [Read] wafv2:GetEvent. |
+| <code><a href="#@cdk_utils/iam.wafv2.Wafv2Actions.property.actionGetEventActor">actionGetEventActor</a></code> | <code>string</code> | [Read] wafv2:GetEventActor. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Actions.property.actionGetIPSet">actionGetIPSet</a></code> | <code>string</code> | [Read] wafv2:GetIPSet. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Actions.property.actionGetLoggingConfiguration">actionGetLoggingConfiguration</a></code> | <code>string</code> | [Read] wafv2:GetLoggingConfiguration. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Actions.property.actionGetManagedRuleSet">actionGetManagedRuleSet</a></code> | <code>string</code> | [Read] wafv2:GetManagedRuleSet. |
@@ -2337,6 +2339,9 @@ new wafv2.Wafv2Actions()
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Actions.property.ListAPIKeys">ListAPIKeys</a></code> | <code>string</code> | [List] wafv2:ListAPIKeys. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Actions.property.ListAvailableManagedRuleGroups">ListAvailableManagedRuleGroups</a></code> | <code>string</code> | [List] wafv2:ListAvailableManagedRuleGroups. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Actions.property.ListAvailableManagedRuleGroupVersions">ListAvailableManagedRuleGroupVersions</a></code> | <code>string</code> | [List] wafv2:ListAvailableManagedRuleGroupVersions. |
+| <code><a href="#@cdk_utils/iam.wafv2.Wafv2Actions.property.ListEventActors">ListEventActors</a></code> | <code>string</code> | [List] wafv2:ListEventActors. |
+| <code><a href="#@cdk_utils/iam.wafv2.Wafv2Actions.property.ListEvents">ListEvents</a></code> | <code>string</code> | [List] wafv2:ListEvents. |
+| <code><a href="#@cdk_utils/iam.wafv2.Wafv2Actions.property.ListEventsByWebACL">ListEventsByWebACL</a></code> | <code>string</code> | [List] wafv2:ListEventsByWebACL. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Actions.property.ListIPSets">ListIPSets</a></code> | <code>string</code> | [List] wafv2:ListIPSets. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Actions.property.ListLoggingConfigurations">ListLoggingConfigurations</a></code> | <code>string</code> | [List] wafv2:ListLoggingConfigurations. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Actions.property.ListManagedRuleSets">ListManagedRuleSets</a></code> | <code>string</code> | [List] wafv2:ListManagedRuleSets. |
@@ -2373,6 +2378,30 @@ public readonly actionGetDecryptedAPIKey: string;
 - *Type:* string
 
 [Read] wafv2:GetDecryptedAPIKey.
+
+---
+
+##### `actionGetEvent`<sup>Required</sup> <a name="actionGetEvent" id="@cdk_utils/iam.wafv2.Wafv2Actions.property.actionGetEvent"></a>
+
+```typescript
+public readonly actionGetEvent: string;
+```
+
+- *Type:* string
+
+[Read] wafv2:GetEvent.
+
+---
+
+##### `actionGetEventActor`<sup>Required</sup> <a name="actionGetEventActor" id="@cdk_utils/iam.wafv2.Wafv2Actions.property.actionGetEventActor"></a>
+
+```typescript
+public readonly actionGetEventActor: string;
+```
+
+- *Type:* string
+
+[Read] wafv2:GetEventActor.
 
 ---
 
@@ -2913,6 +2942,42 @@ public readonly ListAvailableManagedRuleGroupVersions: string;
 - *Type:* string
 
 [List] wafv2:ListAvailableManagedRuleGroupVersions.
+
+---
+
+##### `ListEventActors`<sup>Required</sup> <a name="ListEventActors" id="@cdk_utils/iam.wafv2.Wafv2Actions.property.ListEventActors"></a>
+
+```typescript
+public readonly ListEventActors: string;
+```
+
+- *Type:* string
+
+[List] wafv2:ListEventActors.
+
+---
+
+##### `ListEvents`<sup>Required</sup> <a name="ListEvents" id="@cdk_utils/iam.wafv2.Wafv2Actions.property.ListEvents"></a>
+
+```typescript
+public readonly ListEvents: string;
+```
+
+- *Type:* string
+
+[List] wafv2:ListEvents.
+
+---
+
+##### `ListEventsByWebACL`<sup>Required</sup> <a name="ListEventsByWebACL" id="@cdk_utils/iam.wafv2.Wafv2Actions.property.ListEventsByWebACL"></a>
+
+```typescript
+public readonly ListEventsByWebACL: string;
+```
+
+- *Type:* string
+
+[List] wafv2:ListEventsByWebACL.
 
 ---
 

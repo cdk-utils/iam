@@ -299,6 +299,8 @@ export class EsActions {
 	static readonly SwitchoverReplication = "es:SwitchoverReplication";
 	/** [Write] es:UpdateApplication */
 	static readonly UpdateApplication = "es:UpdateApplication";
+	/** [Write] es:UpdateClone */
+	static readonly UpdateClone = "es:UpdateClone";
 	/** [Write] es:UpdateDataSource */
 	static readonly UpdateDataSource = "es:UpdateDataSource";
 	/** [Write] es:UpdateDirectQueryDataSource */
@@ -419,6 +421,7 @@ export class EsActions {
 		EsActions.StartServiceSoftwareUpdate,
 		EsActions.SwitchoverReplication,
 		EsActions.UpdateApplication,
+		EsActions.UpdateClone,
 		EsActions.UpdateDataSource,
 		EsActions.UpdateDirectQueryDataSource,
 		EsActions.UpdateDomainConfig,
@@ -956,6 +959,8 @@ export class EsOperations {
 		"es:StartElasticsearchServiceSoftwareUpdate",
 		"es:StartServiceSoftwareUpdate",
 	];
+	/** IAM actions required for the UpdateClone API call. */
+	static readonly UpdateClone: string[] = ["es:UpdateClone"];
 	/** IAM actions required for the UpdateElasticsearchDomainConfig API call. */
 	static readonly UpdateElasticsearchDomainConfig: string[] = [
 		"iam:PassRole",

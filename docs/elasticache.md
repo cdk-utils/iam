@@ -2892,6 +2892,7 @@ new elasticache.ElastiCacheConditions()
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.durability">durability</a></code> | Generates a condition block for `elasticache:Durability`. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.engineType">engineType</a></code> | Generates a condition block for `elasticache:EngineType`. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.engineVersion">engineVersion</a></code> | Generates a condition block for `elasticache:EngineVersion`. |
+| <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.integrationType">integrationType</a></code> | Generates a condition block for `elasticache:IntegrationType`. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.kmsKeyId">kmsKeyId</a></code> | Generates a condition block for `elasticache:KmsKeyId`. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.maximumDataStorage">maximumDataStorage</a></code> | Generates a condition block for `elasticache:MaximumDataStorage`. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.maximumEcpuPerSecond">maximumEcpuPerSecond</a></code> | Generates a condition block for `elasticache:MaximumECPUPerSecond`. |
@@ -3080,6 +3081,22 @@ elasticache.ElastiCacheConditions.engineVersion(value: string)
 Generates a condition block for `elasticache:EngineVersion`.
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.elasticache.ElastiCacheConditions.engineVersion.parameter.value"></a>
+
+- *Type:* string
+
+---
+
+##### `integrationType` <a name="integrationType" id="@cdk_utils/iam.elasticache.ElastiCacheConditions.integrationType"></a>
+
+```typescript
+import { elasticache } from '@cdk_utils/iam'
+
+elasticache.ElastiCacheConditions.integrationType(value: string)
+```
+
+Generates a condition block for `elasticache:IntegrationType`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.elasticache.ElastiCacheConditions.integrationType.parameter.value"></a>
 
 - *Type:* string
 
@@ -3372,6 +3389,7 @@ Generates a condition block for `elasticache:UserAuthenticationMode`.
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.FailoverGlobalReplicationGroupConditionKeys">FailoverGlobalReplicationGroupConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the FailoverGlobalReplicationGroup action. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.IncreaseNodeGroupsInGlobalReplicationGroupConditionKeys">IncreaseNodeGroupsInGlobalReplicationGroupConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the IncreaseNodeGroupsInGlobalReplicationGroup action. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.IncreaseReplicaCountConditionKeys">IncreaseReplicaCountConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the IncreaseReplicaCount action. |
+| <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.INTEGRATION_TYPE">INTEGRATION_TYPE</a></code> | <code>string</code> | Condition key: elasticache:IntegrationType (String). |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.InterruptClusterAzPowerConditionKeys">InterruptClusterAzPowerConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the InterruptClusterAzPower action. |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.KMS_KEY_ID">KMS_KEY_ID</a></code> | <code>string</code> | Condition key: elasticache:KmsKeyId (String). |
 | <code><a href="#@cdk_utils/iam.elasticache.ElastiCacheConditions.property.ListAllowedNodeTypeModificationsConditionKeys">ListAllowedNodeTypeModificationsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListAllowedNodeTypeModifications action. |
@@ -4099,6 +4117,18 @@ public readonly IncreaseReplicaCountConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the IncreaseReplicaCount action.
+
+---
+
+##### `INTEGRATION_TYPE`<sup>Required</sup> <a name="INTEGRATION_TYPE" id="@cdk_utils/iam.elasticache.ElastiCacheConditions.property.INTEGRATION_TYPE"></a>
+
+```typescript
+public readonly INTEGRATION_TYPE: string;
+```
+
+- *Type:* string
+
+Condition key: elasticache:IntegrationType (String).
 
 ---
 

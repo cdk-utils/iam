@@ -180,6 +180,9 @@ export class GuardDutyActions {
 	static readonly ListFindings = "guardduty:ListFindings";
 	/** [List] guardduty:ListIPSets */
 	static readonly ListIPSets = "guardduty:ListIPSets";
+	/** [Read] guardduty:ListInvestigationRecords */
+	static readonly ListInvestigationRecords =
+		"guardduty:ListInvestigationRecords";
 	/** [List] guardduty:ListInvestigations */
 	static readonly ListInvestigations = "guardduty:ListInvestigations";
 	/** [List] guardduty:ListInvitations */
@@ -285,6 +288,7 @@ export class GuardDutyActions {
 		GuardDutyActions.actionGetThreatIntelSet,
 		GuardDutyActions.actionGetTrustedEntitySet,
 		GuardDutyActions.actionGetUsageStatistics,
+		GuardDutyActions.ListInvestigationRecords,
 		GuardDutyActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
@@ -1298,6 +1302,10 @@ export class GuardDutyOperations {
 	static readonly ListFindings: string[] = ["guardduty:ListFindings"];
 	/** IAM actions required for the ListIPSets API call. */
 	static readonly ListIPSets: string[] = ["guardduty:ListIPSets"];
+	/** IAM actions required for the ListInvestigationRecords API call. */
+	static readonly ListInvestigationRecords: string[] = [
+		"guardduty:ListInvestigationRecords",
+	];
 	/** IAM actions required for the ListInvestigations API call. */
 	static readonly ListInvestigations: string[] = [
 		"guardduty:ListInvestigations",

@@ -4113,6 +4113,7 @@ new iam.IAMOperations()
 | <code><a href="#@cdk_utils/iam.iam.IAMOperations.property.opGetPolicy">opGetPolicy</a></code> | <code>string[]</code> | IAM actions required for the GetPolicy API call. |
 | <code><a href="#@cdk_utils/iam.iam.IAMOperations.property.opGetPolicyVersion">opGetPolicyVersion</a></code> | <code>string[]</code> | IAM actions required for the GetPolicyVersion API call. |
 | <code><a href="#@cdk_utils/iam.iam.IAMOperations.property.opGetRequestAuthorizationDetails">opGetRequestAuthorizationDetails</a></code> | <code>string[]</code> | IAM actions required for the GetRequestAuthorizationDetails API call. |
+| <code><a href="#@cdk_utils/iam.iam.IAMOperations.property.opGetRequestAuthorizationPolicy">opGetRequestAuthorizationPolicy</a></code> | <code>string[]</code> | IAM actions required for the GetRequestAuthorizationPolicy API call. |
 | <code><a href="#@cdk_utils/iam.iam.IAMOperations.property.opGetRole">opGetRole</a></code> | <code>string[]</code> | IAM actions required for the GetRole API call. |
 | <code><a href="#@cdk_utils/iam.iam.IAMOperations.property.opGetRolePolicy">opGetRolePolicy</a></code> | <code>string[]</code> | IAM actions required for the GetRolePolicy API call. |
 | <code><a href="#@cdk_utils/iam.iam.IAMOperations.property.opGetRoleTemplateVersion">opGetRoleTemplateVersion</a></code> | <code>string[]</code> | IAM actions required for the GetRoleTemplateVersion API call. |
@@ -5603,6 +5604,18 @@ public readonly opGetRequestAuthorizationDetails: string[];
 - *Type:* string[]
 
 IAM actions required for the GetRequestAuthorizationDetails API call.
+
+---
+
+##### `opGetRequestAuthorizationPolicy`<sup>Required</sup> <a name="opGetRequestAuthorizationPolicy" id="@cdk_utils/iam.iam.IAMOperations.property.opGetRequestAuthorizationPolicy"></a>
+
+```typescript
+public readonly opGetRequestAuthorizationPolicy: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetRequestAuthorizationPolicy API call.
 
 ---
 

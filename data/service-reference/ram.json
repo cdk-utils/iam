@@ -4,10 +4,6 @@
   "Actions": [
     {
       "Name": "AcceptResourceShareInvitation",
-      "ActionConditionKeys": [
-        "ram:ResourceShareName",
-        "ram:ShareOwnerAccountId"
-      ],
       "Annotations": {
         "Properties": {
           "IsDataPlane": false,
@@ -19,7 +15,11 @@
       },
       "Resources": [
         {
-          "Name": "resource-share-invitation"
+          "Name": "resource-share-invitation",
+          "ConditionKeys": [
+            "ram:ResourceShareName",
+            "ram:ShareOwnerAccountId"
+          ]
         }
       ],
       "SupportedBy": {
@@ -30,14 +30,11 @@
     {
       "Name": "AssociateResourceShare",
       "ActionConditionKeys": [
-        "aws:ResourceTag/${TagKey}",
-        "ram:AllowsExternalPrincipals",
-        "ram:Principal",
-        "ram:RequestedResourceType",
-        "ram:ResourceArn",
-        "ram:ResourceShareName",
-        "ram:ResourceTag/${TagKey}",
-        "ram:RetainSharingOnAccountLeaveOrganization"
+        "ram:RequestedPermissionArns",
+        "ram:RequestedPermissionResourceTypes",
+        "ram:RequestedPrincipals",
+        "ram:RequestedResourceArns",
+        "ram:RequestedResourceTypes"
       ],
       "Annotations": {
         "Properties": {
@@ -50,7 +47,17 @@
       },
       "Resources": [
         {
-          "Name": "resource-share"
+          "Name": "resource-share",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ram:AllowsExternalPrincipals",
+            "ram:Principal",
+            "ram:RequestedResourceType",
+            "ram:ResourceArn",
+            "ram:ResourceShareName",
+            "ram:ResourceTag/${TagKey}",
+            "ram:RetainSharingOnAccountLeaveOrganization"
+          ]
         }
       ],
       "SupportedBy": {
@@ -60,6 +67,10 @@
     },
     {
       "Name": "AssociateResourceSharePermission",
+      "ActionConditionKeys": [
+        "ram:RequestedPermissionArns",
+        "ram:RequestedPermissionResourceTypes"
+      ],
       "Annotations": {
         "Properties": {
           "IsDataPlane": false,
@@ -71,13 +82,33 @@
       },
       "Resources": [
         {
-          "Name": "customer-managed-permission"
+          "Name": "customer-managed-permission",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ram:PermissionArn",
+            "ram:PermissionResourceType",
+            "ram:PermissionTemplateParameter/${ParameterName}",
+            "ram:ResourceTag/${TagKey}"
+          ]
         },
         {
-          "Name": "permission"
+          "Name": "permission",
+          "ConditionKeys": [
+            "ram:PermissionArn",
+            "ram:PermissionResourceType",
+            "ram:PermissionTemplateParameter/${ParameterName}"
+          ]
         },
         {
-          "Name": "resource-share"
+          "Name": "resource-share",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ram:AllowsExternalPrincipals",
+            "ram:PermissionArn",
+            "ram:ResourceShareName",
+            "ram:ResourceTag/${TagKey}",
+            "ram:RetainSharingOnAccountLeaveOrganization"
+          ]
         }
       ],
       "SupportedBy": {
@@ -89,30 +120,9 @@
       "Name": "CreatePermission",
       "ActionConditionKeys": [
         "aws:RequestTag/${TagKey}",
-        "aws:ResourceTag/${TagKey}",
         "aws:TagKeys",
-        "ram:PermissionArn",
-        "ram:PermissionResourceType"
-      ],
-      "Annotations": {
-        "Properties": {
-          "IsDataPlane": false,
-          "IsList": false,
-          "IsPermissionManagement": false,
-          "IsTaggingOnly": false,
-          "IsWrite": true
-        }
-      },
-      "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": true,
-        "IAM Action Last Accessed": true
-      }
-    },
-    {
-      "Name": "CreatePermissionVersion",
-      "ActionConditionKeys": [
-        "ram:PermissionArn",
-        "ram:PermissionResourceType"
+        "ram:RequestedPermissionArns",
+        "ram:RequestedPermissionResourceTypes"
       ],
       "Annotations": {
         "Properties": {
@@ -125,7 +135,45 @@
       },
       "Resources": [
         {
-          "Name": "customer-managed-permission"
+          "Name": "customer-managed-permission",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:ResourceTag/${TagKey}",
+            "ram:PermissionArn",
+            "ram:PermissionResourceType",
+            "ram:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreatePermissionVersion",
+      "ActionConditionKeys": [
+        "ram:RequestedPermissionArns",
+        "ram:RequestedPermissionResourceTypes"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "customer-managed-permission",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ram:PermissionArn",
+            "ram:PermissionResourceType",
+            "ram:ResourceTag/${TagKey}"
+          ]
         }
       ],
       "SupportedBy": {
@@ -136,35 +184,12 @@
     {
       "Name": "CreateResourceShare",
       "ActionConditionKeys": [
-        "aws:RequestTag/${TagKey}",
         "aws:TagKeys",
-        "ram:AllowsExternalPrincipals",
-        "ram:Principal",
-        "ram:RequestedAllowsExternalPrincipals",
-        "ram:RequestedResourceType",
-        "ram:ResourceArn",
-        "ram:RetainSharingOnAccountLeaveOrganization"
-      ],
-      "Annotations": {
-        "Properties": {
-          "IsDataPlane": false,
-          "IsList": false,
-          "IsPermissionManagement": false,
-          "IsTaggingOnly": false,
-          "IsWrite": true
-        }
-      },
-      "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": true,
-        "IAM Action Last Accessed": true
-      }
-    },
-    {
-      "Name": "DeletePermission",
-      "ActionConditionKeys": [
-        "aws:ResourceTag/${TagKey}",
-        "ram:PermissionArn",
-        "ram:PermissionResourceType"
+        "ram:RequestedPermissionArns",
+        "ram:RequestedPermissionResourceTypes",
+        "ram:RequestedPrincipals",
+        "ram:RequestedResourceArns",
+        "ram:RequestedResourceTypes"
       ],
       "Annotations": {
         "Properties": {
@@ -177,7 +202,94 @@
       },
       "Resources": [
         {
-          "Name": "customer-managed-permission"
+          "Name": "customer-managed-permission",
+          "ConditionKeys": [
+            "ram:PermissionArn",
+            "ram:PermissionResourceType",
+            "ram:PermissionTemplateParameter/${ParameterName}"
+          ]
+        },
+        {
+          "Name": "permission",
+          "ConditionKeys": [
+            "ram:PermissionArn",
+            "ram:PermissionResourceType",
+            "ram:PermissionTemplateParameter/${ParameterName}"
+          ]
+        },
+        {
+          "Name": "resource-share",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "ram:AllowsExternalPrincipals",
+            "ram:Principal",
+            "ram:RequestedAllowsExternalPrincipals",
+            "ram:RequestedResourceType",
+            "ram:ResourceArn",
+            "ram:ResourceShareName",
+            "ram:RetainSharingOnAccountLeaveOrganization"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteCustomerManagedPermissionPolicy",
+      "ActionConditionKeys": [
+        "ram:RequestedPermissionArns",
+        "ram:RequestedPermissionResourceTypes"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "customer-managed-permission",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ram:PermissionArn",
+            "ram:PermissionResourceType",
+            "ram:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeletePermission",
+      "ActionConditionKeys": [
+        "ram:RequestedPermissionArns",
+        "ram:RequestedPermissionResourceTypes"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "customer-managed-permission",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ram:PermissionArn",
+            "ram:PermissionResourceType",
+            "ram:ResourceTag/${TagKey}"
+          ]
         }
       ],
       "SupportedBy": {
@@ -188,8 +300,8 @@
     {
       "Name": "DeletePermissionVersion",
       "ActionConditionKeys": [
-        "ram:PermissionArn",
-        "ram:PermissionResourceType"
+        "ram:RequestedPermissionArns",
+        "ram:RequestedPermissionResourceTypes"
       ],
       "Annotations": {
         "Properties": {
@@ -202,7 +314,13 @@
       },
       "Resources": [
         {
-          "Name": "customer-managed-permission"
+          "Name": "customer-managed-permission",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ram:PermissionArn",
+            "ram:PermissionResourceType",
+            "ram:ResourceTag/${TagKey}"
+          ]
         }
       ],
       "SupportedBy": {
@@ -212,13 +330,6 @@
     },
     {
       "Name": "DeleteResourceShare",
-      "ActionConditionKeys": [
-        "aws:ResourceTag/${TagKey}",
-        "ram:AllowsExternalPrincipals",
-        "ram:ResourceShareName",
-        "ram:ResourceTag/${TagKey}",
-        "ram:RetainSharingOnAccountLeaveOrganization"
-      ],
       "Annotations": {
         "Properties": {
           "IsDataPlane": false,
@@ -230,7 +341,14 @@
       },
       "Resources": [
         {
-          "Name": "resource-share"
+          "Name": "resource-share",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ram:AllowsExternalPrincipals",
+            "ram:ResourceShareName",
+            "ram:ResourceTag/${TagKey}",
+            "ram:RetainSharingOnAccountLeaveOrganization"
+          ]
         }
       ],
       "SupportedBy": {
@@ -241,14 +359,9 @@
     {
       "Name": "DisassociateResourceShare",
       "ActionConditionKeys": [
-        "aws:ResourceTag/${TagKey}",
-        "ram:AllowsExternalPrincipals",
-        "ram:Principal",
-        "ram:RequestedResourceType",
-        "ram:ResourceArn",
-        "ram:ResourceShareName",
-        "ram:ResourceTag/${TagKey}",
-        "ram:RetainSharingOnAccountLeaveOrganization"
+        "ram:RequestedPrincipals",
+        "ram:RequestedResourceArns",
+        "ram:RequestedResourceTypes"
       ],
       "Annotations": {
         "Properties": {
@@ -261,7 +374,17 @@
       },
       "Resources": [
         {
-          "Name": "resource-share"
+          "Name": "resource-share",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ram:AllowsExternalPrincipals",
+            "ram:Principal",
+            "ram:RequestedResourceType",
+            "ram:ResourceArn",
+            "ram:ResourceShareName",
+            "ram:ResourceTag/${TagKey}",
+            "ram:RetainSharingOnAccountLeaveOrganization"
+          ]
         }
       ],
       "SupportedBy": {
@@ -271,6 +394,10 @@
     },
     {
       "Name": "DisassociateResourceSharePermission",
+      "ActionConditionKeys": [
+        "ram:RequestedPermissionArns",
+        "ram:RequestedPermissionResourceTypes"
+      ],
       "Annotations": {
         "Properties": {
           "IsDataPlane": false,
@@ -282,13 +409,31 @@
       },
       "Resources": [
         {
-          "Name": "customer-managed-permission"
+          "Name": "customer-managed-permission",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ram:PermissionArn",
+            "ram:PermissionResourceType",
+            "ram:ResourceTag/${TagKey}"
+          ]
         },
         {
-          "Name": "permission"
+          "Name": "permission",
+          "ConditionKeys": [
+            "ram:PermissionArn",
+            "ram:PermissionResourceType"
+          ]
         },
         {
-          "Name": "resource-share"
+          "Name": "resource-share",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ram:AllowsExternalPrincipals",
+            "ram:PermissionArn",
+            "ram:ResourceShareName",
+            "ram:ResourceTag/${TagKey}",
+            "ram:RetainSharingOnAccountLeaveOrganization"
+          ]
         }
       ],
       "SupportedBy": {
@@ -313,9 +458,40 @@
       }
     },
     {
+      "Name": "GetCustomerManagedPermissionPolicy",
+      "ActionConditionKeys": [
+        "ram:RequestedPermissionArns",
+        "ram:RequestedPermissionResourceTypes"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "customer-managed-permission",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ram:PermissionArn",
+            "ram:PermissionResourceType",
+            "ram:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "GetPermission",
       "ActionConditionKeys": [
-        "ram:PermissionArn"
+        "ram:RequestedPermissionArns",
+        "ram:RequestedPermissionResourceTypes"
       ],
       "Annotations": {
         "Properties": {
@@ -328,10 +504,20 @@
       },
       "Resources": [
         {
-          "Name": "customer-managed-permission"
+          "Name": "customer-managed-permission",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ram:PermissionArn",
+            "ram:PermissionResourceType",
+            "ram:ResourceTag/${TagKey}"
+          ]
         },
         {
-          "Name": "permission"
+          "Name": "permission",
+          "ConditionKeys": [
+            "ram:PermissionArn",
+            "ram:PermissionResourceType"
+          ]
         }
       ],
       "SupportedBy": {
@@ -389,10 +575,6 @@
     },
     {
       "Name": "GetResourceShares",
-      "ActionConditionKeys": [
-        "aws:RequestTag/${TagKey}",
-        "aws:TagKeys"
-      ],
       "Annotations": {
         "Properties": {
           "IsDataPlane": false,
@@ -409,9 +591,6 @@
     },
     {
       "Name": "ListPendingInvitationResources",
-      "ActionConditionKeys": [
-        "ram:ResourceShareName"
-      ],
       "Annotations": {
         "Properties": {
           "IsDataPlane": false,
@@ -423,7 +602,11 @@
       },
       "Resources": [
         {
-          "Name": "resource-share-invitation"
+          "Name": "resource-share-invitation",
+          "ConditionKeys": [
+            "ram:ResourceShareName",
+            "ram:ShareOwnerAccountId"
+          ]
         }
       ],
       "SupportedBy": {
@@ -434,8 +617,8 @@
     {
       "Name": "ListPermissionAssociations",
       "ActionConditionKeys": [
-        "ram:PermissionArn",
-        "ram:PermissionResourceType"
+        "ram:RequestedPermissionArns",
+        "ram:RequestedPermissionResourceTypes"
       ],
       "Annotations": {
         "Properties": {
@@ -446,14 +629,6 @@
           "IsWrite": false
         }
       },
-      "Resources": [
-        {
-          "Name": "customer-managed-permission"
-        },
-        {
-          "Name": "permission"
-        }
-      ],
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
@@ -470,6 +645,24 @@
           "IsWrite": false
         }
       },
+      "Resources": [
+        {
+          "Name": "customer-managed-permission",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ram:PermissionArn",
+            "ram:PermissionResourceType",
+            "ram:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "permission",
+          "ConditionKeys": [
+            "ram:PermissionArn",
+            "ram:PermissionResourceType"
+          ]
+        }
+      ],
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
@@ -525,12 +718,6 @@
     },
     {
       "Name": "ListResourceSharePermissions",
-      "ActionConditionKeys": [
-        "aws:ResourceTag/${TagKey}",
-        "ram:AllowsExternalPrincipals",
-        "ram:ResourceShareName",
-        "ram:RetainSharingOnAccountLeaveOrganization"
-      ],
       "Annotations": {
         "Properties": {
           "IsDataPlane": false,
@@ -542,7 +729,14 @@
       },
       "Resources": [
         {
-          "Name": "resource-share"
+          "Name": "resource-share",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ram:AllowsExternalPrincipals",
+            "ram:ResourceShareName",
+            "ram:ResourceTag/${TagKey}",
+            "ram:RetainSharingOnAccountLeaveOrganization"
+          ]
         }
       ],
       "SupportedBy": {
@@ -601,8 +795,8 @@
     {
       "Name": "PromotePermissionCreatedFromPolicy",
       "ActionConditionKeys": [
-        "ram:PermissionArn",
-        "ram:PermissionResourceType"
+        "ram:RequestedPermissionArns",
+        "ram:RequestedPermissionResourceTypes"
       ],
       "Annotations": {
         "Properties": {
@@ -615,7 +809,11 @@
       },
       "Resources": [
         {
-          "Name": "customer-managed-permission"
+          "Name": "customer-managed-permission",
+          "ConditionKeys": [
+            "ram:PermissionArn",
+            "ram:PermissionResourceType"
+          ]
         }
       ],
       "SupportedBy": {
@@ -636,7 +834,13 @@
       },
       "Resources": [
         {
-          "Name": "resource-share"
+          "Name": "resource-share",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ram:AllowsExternalPrincipals",
+            "ram:ResourceShareName",
+            "ram:ResourceTag/${TagKey}"
+          ]
         }
       ],
       "SupportedBy": {
@@ -645,11 +849,37 @@
       }
     },
     {
-      "Name": "RejectResourceShareInvitation",
+      "Name": "PutCustomerManagedPermissionPolicy",
       "ActionConditionKeys": [
-        "ram:ResourceShareName",
-        "ram:ShareOwnerAccountId"
+        "ram:RequestedPermissionArns",
+        "ram:RequestedPermissionResourceTypes"
       ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "customer-managed-permission",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ram:PermissionArn",
+            "ram:PermissionResourceType",
+            "ram:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RejectResourceShareInvitation",
       "Annotations": {
         "Properties": {
           "IsDataPlane": false,
@@ -661,7 +891,11 @@
       },
       "Resources": [
         {
-          "Name": "resource-share-invitation"
+          "Name": "resource-share-invitation",
+          "ConditionKeys": [
+            "ram:ResourceShareName",
+            "ram:ShareOwnerAccountId"
+          ]
         }
       ],
       "SupportedBy": {
@@ -672,8 +906,8 @@
     {
       "Name": "ReplacePermissionAssociations",
       "ActionConditionKeys": [
-        "ram:PermissionArn",
-        "ram:PermissionResourceType"
+        "ram:RequestedPermissionArns",
+        "ram:RequestedPermissionResourceTypes"
       ],
       "Annotations": {
         "Properties": {
@@ -686,10 +920,22 @@
       },
       "Resources": [
         {
-          "Name": "customer-managed-permission"
+          "Name": "customer-managed-permission",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ram:PermissionArn",
+            "ram:PermissionResourceType",
+            "ram:PermissionTemplateParameter/${ParameterName}",
+            "ram:ResourceTag/${TagKey}"
+          ]
         },
         {
-          "Name": "permission"
+          "Name": "permission",
+          "ConditionKeys": [
+            "ram:PermissionArn",
+            "ram:PermissionResourceType",
+            "ram:PermissionTemplateParameter/${ParameterName}"
+          ]
         }
       ],
       "SupportedBy": {
@@ -700,8 +946,8 @@
     {
       "Name": "SetDefaultPermissionVersion",
       "ActionConditionKeys": [
-        "ram:PermissionArn",
-        "ram:PermissionResourceType"
+        "ram:RequestedPermissionArns",
+        "ram:RequestedPermissionResourceTypes"
       ],
       "Annotations": {
         "Properties": {
@@ -714,7 +960,13 @@
       },
       "Resources": [
         {
-          "Name": "customer-managed-permission"
+          "Name": "customer-managed-permission",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ram:PermissionArn",
+            "ram:PermissionResourceType",
+            "ram:ResourceTag/${TagKey}"
+          ]
         }
       ],
       "SupportedBy": {
@@ -739,10 +991,22 @@
       },
       "Resources": [
         {
-          "Name": "customer-managed-permission"
+          "Name": "customer-managed-permission",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ram:PermissionArn",
+            "ram:PermissionResourceType",
+            "ram:ResourceTag/${TagKey}"
+          ]
         },
         {
-          "Name": "resource-share"
+          "Name": "resource-share",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ram:AllowsExternalPrincipals",
+            "ram:ResourceShareName",
+            "ram:ResourceTag/${TagKey}"
+          ]
         }
       ],
       "SupportedBy": {
@@ -766,10 +1030,22 @@
       },
       "Resources": [
         {
-          "Name": "customer-managed-permission"
+          "Name": "customer-managed-permission",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ram:PermissionArn",
+            "ram:PermissionResourceType",
+            "ram:ResourceTag/${TagKey}"
+          ]
         },
         {
-          "Name": "resource-share"
+          "Name": "resource-share",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ram:AllowsExternalPrincipals",
+            "ram:ResourceShareName",
+            "ram:ResourceTag/${TagKey}"
+          ]
         }
       ],
       "SupportedBy": {
@@ -778,14 +1054,10 @@
       }
     },
     {
-      "Name": "UpdateResourceShare",
+      "Name": "UpdatePermission",
       "ActionConditionKeys": [
-        "aws:ResourceTag/${TagKey}",
-        "ram:AllowsExternalPrincipals",
-        "ram:RequestedAllowsExternalPrincipals",
-        "ram:ResourceShareName",
-        "ram:ResourceTag/${TagKey}",
-        "ram:RetainSharingOnAccountLeaveOrganization"
+        "ram:RequestedPermissionArns",
+        "ram:RequestedPermissionResourceTypes"
       ],
       "Annotations": {
         "Properties": {
@@ -798,7 +1070,42 @@
       },
       "Resources": [
         {
-          "Name": "resource-share"
+          "Name": "customer-managed-permission",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ram:PermissionArn",
+            "ram:PermissionResourceType",
+            "ram:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateResourceShare",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resource-share",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "ram:AllowsExternalPrincipals",
+            "ram:RequestedAllowsExternalPrincipals",
+            "ram:ResourceShareName",
+            "ram:ResourceTag/${TagKey}",
+            "ram:RetainSharingOnAccountLeaveOrganization"
+          ]
         }
       ],
       "SupportedBy": {
@@ -845,6 +1152,12 @@
       ]
     },
     {
+      "Name": "ram:PermissionTemplateParameter/${ParameterName}",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
       "Name": "ram:Principal",
       "Types": [
         "String"
@@ -857,9 +1170,39 @@
       ]
     },
     {
+      "Name": "ram:RequestedPermissionArns",
+      "Types": [
+        "ArrayOfARN"
+      ]
+    },
+    {
+      "Name": "ram:RequestedPermissionResourceTypes",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "ram:RequestedPrincipals",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "ram:RequestedResourceArns",
+      "Types": [
+        "ArrayOfARN"
+      ]
+    },
+    {
       "Name": "ram:RequestedResourceType",
       "Types": [
         "String"
+      ]
+    },
+    {
+      "Name": "ram:RequestedResourceTypes",
+      "Types": [
+        "ArrayOfString"
       ]
     },
     {
@@ -1447,6 +1790,22 @@
       ]
     },
     {
+      "Name": "UpdatePermission",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdatePermission",
+          "Service": "ram"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ram",
+          "Method": "update_permission",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "UpdateResourceShare",
       "AuthorizedActions": [
         {
@@ -1472,13 +1831,14 @@
       "ConditionKeys": [
         "aws:ResourceTag/${TagKey}",
         "ram:PermissionArn",
-        "ram:PermissionResourceType"
+        "ram:PermissionResourceType",
+        "ram:ResourceTag/${TagKey}"
       ]
     },
     {
       "Name": "permission",
       "ARNFormats": [
-        "arn:${Partition}:ram::${Account}:permission/${ResourcePath}"
+        "arn:${Partition}:ram::aws:permission/${ResourcePath}"
       ],
       "ConditionKeys": [
         "ram:PermissionArn",
@@ -1493,7 +1853,9 @@
       "ConditionKeys": [
         "aws:ResourceTag/${TagKey}",
         "ram:AllowsExternalPrincipals",
-        "ram:ResourceShareName"
+        "ram:ResourceShareName",
+        "ram:ResourceTag/${TagKey}",
+        "ram:RetainSharingOnAccountLeaveOrganization"
       ]
     },
     {
@@ -1502,6 +1864,7 @@
         "arn:${Partition}:ram:${Region}:${Account}:resource-share-invitation/${ResourcePath}"
       ],
       "ConditionKeys": [
+        "ram:ResourceShareName",
         "ram:ShareOwnerAccountId"
       ]
     }

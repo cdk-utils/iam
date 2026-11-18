@@ -715,6 +715,7 @@ export class CodeBuildOperations {
 	/** IAM actions required for the CreateProject API call. */
 	static readonly CreateProject: string[] = [
 		"codebuild:CreateProject",
+		"secretsmanager:DescribeSecret",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateReportGroup API call. */
@@ -852,6 +853,7 @@ export class CodeBuildOperations {
 	];
 	/** IAM actions required for the UpdateProject API call. */
 	static readonly UpdateProject: string[] = [
+		"secretsmanager:DescribeSecret",
 		"iam:PassRole",
 		"codebuild:UpdateProject",
 	];

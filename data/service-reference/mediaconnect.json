@@ -186,11 +186,14 @@
       "Resources": [
         {
           "Name": "DestinationEndpoint"
+        },
+        {
+          "Name": "SourceEndpoint"
         }
       ],
       "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
       }
     },
     {
@@ -493,8 +496,8 @@
         }
       ],
       "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
       }
     },
     {
@@ -535,8 +538,8 @@
         }
       ],
       "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
       }
     },
     {
@@ -721,11 +724,14 @@
       "Resources": [
         {
           "Name": "DestinationEndpoint"
+        },
+        {
+          "Name": "SourceEndpoint"
         }
       ],
       "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
       }
     },
     {
@@ -765,8 +771,8 @@
         }
       ],
       "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
       }
     },
     {
@@ -906,8 +912,8 @@
         }
       ],
       "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
       }
     },
     {
@@ -966,8 +972,8 @@
         }
       },
       "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
       }
     },
     {
@@ -1126,8 +1132,8 @@
         }
       },
       "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
       }
     },
     {
@@ -1174,7 +1180,7 @@
       },
       "Resources": [
         {
-          "Name": "Reservation"
+          "Name": "Offering"
         }
       ],
       "SupportedBy": {
@@ -1214,8 +1220,8 @@
         }
       ],
       "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
       }
     },
     {
@@ -1235,8 +1241,8 @@
         }
       ],
       "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
       }
     },
     {
@@ -1815,8 +1821,8 @@
         }
       ],
       "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
       }
     },
     {
@@ -1852,6 +1858,9 @@
         }
       },
       "Resources": [
+        {
+          "Name": "Entitlement"
+        },
         {
           "Name": "Flow"
         }
@@ -2034,8 +2043,8 @@
         }
       ],
       "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
       }
     }
   ],

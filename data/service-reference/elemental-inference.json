@@ -588,6 +588,48 @@
       ]
     },
     {
+      "Name": "CreateFunction",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "elemental-inference"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "elementalinference",
+          "Method": "create_function",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateQuestionSet",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "elemental-inference"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "elementalinference",
+          "Method": "create_question_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateQuestionSetVersion",
+      "SDK": [
+        {
+          "Name": "elementalinference",
+          "Method": "create_question_set_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "CreateScheduleAction",
       "AuthorizedActions": [
         {
@@ -647,6 +689,36 @@
         {
           "Name": "elementalinference",
           "Method": "delete_feed_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteFunction",
+      "SDK": [
+        {
+          "Name": "elementalinference",
+          "Method": "delete_function",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteQuestionSet",
+      "SDK": [
+        {
+          "Name": "elementalinference",
+          "Method": "delete_question_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteQuestionSetVersion",
+      "SDK": [
+        {
+          "Name": "elementalinference",
+          "Method": "delete_question_set_version",
           "Package": "Boto3"
         }
       ]
@@ -758,6 +830,26 @@
       ]
     },
     {
+      "Name": "GetFunction",
+      "SDK": [
+        {
+          "Name": "elementalinference",
+          "Method": "get_function",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetQuestionSet",
+      "SDK": [
+        {
+          "Name": "elementalinference",
+          "Method": "get_question_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListDictionaries",
       "AuthorizedActions": [
         {
@@ -785,6 +877,36 @@
         {
           "Name": "elementalinference",
           "Method": "list_feeds",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFunctions",
+      "SDK": [
+        {
+          "Name": "elementalinference",
+          "Method": "list_functions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListQuestionSetVersions",
+      "SDK": [
+        {
+          "Name": "elementalinference",
+          "Method": "list_question_set_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListQuestionSets",
+      "SDK": [
+        {
+          "Name": "elementalinference",
+          "Method": "list_question_sets",
           "Package": "Boto3"
         }
       ]
@@ -916,6 +1038,26 @@
         {
           "Name": "elementalinference",
           "Method": "update_feed",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateFunction",
+      "SDK": [
+        {
+          "Name": "elementalinference",
+          "Method": "update_function",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateQuestionSet",
+      "SDK": [
+        {
+          "Name": "elementalinference",
+          "Method": "update_question_set",
           "Package": "Boto3"
         }
       ]

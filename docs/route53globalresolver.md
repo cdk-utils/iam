@@ -1578,12 +1578,14 @@ new route53globalresolver.Route53globalresolverOperations()
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.BatchUpdateFirewallRule">BatchUpdateFirewallRule</a></code> | <code>string[]</code> | IAM actions required for the BatchUpdateFirewallRule API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.CreateAccessSource">CreateAccessSource</a></code> | <code>string[]</code> | IAM actions required for the CreateAccessSource API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.CreateAccessToken">CreateAccessToken</a></code> | <code>string[]</code> | IAM actions required for the CreateAccessToken API call. |
+| <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.CreateCoreNetworkEndpoint">CreateCoreNetworkEndpoint</a></code> | <code>string[]</code> | IAM actions required for the CreateCoreNetworkEndpoint API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.CreateDNSView">CreateDNSView</a></code> | <code>string[]</code> | IAM actions required for the CreateDNSView API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.CreateFirewallDomainList">CreateFirewallDomainList</a></code> | <code>string[]</code> | IAM actions required for the CreateFirewallDomainList API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.CreateFirewallRule">CreateFirewallRule</a></code> | <code>string[]</code> | IAM actions required for the CreateFirewallRule API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.CreateGlobalResolver">CreateGlobalResolver</a></code> | <code>string[]</code> | IAM actions required for the CreateGlobalResolver API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.DeleteAccessSource">DeleteAccessSource</a></code> | <code>string[]</code> | IAM actions required for the DeleteAccessSource API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.DeleteAccessToken">DeleteAccessToken</a></code> | <code>string[]</code> | IAM actions required for the DeleteAccessToken API call. |
+| <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.DeleteCoreNetworkEndpoint">DeleteCoreNetworkEndpoint</a></code> | <code>string[]</code> | IAM actions required for the DeleteCoreNetworkEndpoint API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.DeleteDNSView">DeleteDNSView</a></code> | <code>string[]</code> | IAM actions required for the DeleteDNSView API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.DeleteFirewallDomainList">DeleteFirewallDomainList</a></code> | <code>string[]</code> | IAM actions required for the DeleteFirewallDomainList API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.DeleteFirewallRule">DeleteFirewallRule</a></code> | <code>string[]</code> | IAM actions required for the DeleteFirewallRule API call. |
@@ -1594,6 +1596,7 @@ new route53globalresolver.Route53globalresolverOperations()
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.ImportFirewallDomains">ImportFirewallDomains</a></code> | <code>string[]</code> | IAM actions required for the ImportFirewallDomains API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.ListAccessSources">ListAccessSources</a></code> | <code>string[]</code> | IAM actions required for the ListAccessSources API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.ListAccessTokens">ListAccessTokens</a></code> | <code>string[]</code> | IAM actions required for the ListAccessTokens API call. |
+| <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.ListCoreNetworkEndpoints">ListCoreNetworkEndpoints</a></code> | <code>string[]</code> | IAM actions required for the ListCoreNetworkEndpoints API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.ListDNSViews">ListDNSViews</a></code> | <code>string[]</code> | IAM actions required for the ListDNSViews API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.ListFirewallDomainLists">ListFirewallDomainLists</a></code> | <code>string[]</code> | IAM actions required for the ListFirewallDomainLists API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.ListFirewallDomains">ListFirewallDomains</a></code> | <code>string[]</code> | IAM actions required for the ListFirewallDomains API call. |
@@ -1605,6 +1608,7 @@ new route53globalresolver.Route53globalresolverOperations()
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.opGetAccessSource">opGetAccessSource</a></code> | <code>string[]</code> | IAM actions required for the GetAccessSource API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.opGetAccessToken">opGetAccessToken</a></code> | <code>string[]</code> | IAM actions required for the GetAccessToken API call. |
+| <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.opGetCoreNetworkEndpoint">opGetCoreNetworkEndpoint</a></code> | <code>string[]</code> | IAM actions required for the GetCoreNetworkEndpoint API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.opGetDNSView">opGetDNSView</a></code> | <code>string[]</code> | IAM actions required for the GetDNSView API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.opGetFirewallDomainList">opGetFirewallDomainList</a></code> | <code>string[]</code> | IAM actions required for the GetFirewallDomainList API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.opGetFirewallRule">opGetFirewallRule</a></code> | <code>string[]</code> | IAM actions required for the GetFirewallRule API call. |
@@ -1615,6 +1619,7 @@ new route53globalresolver.Route53globalresolverOperations()
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.UpdateAccessSource">UpdateAccessSource</a></code> | <code>string[]</code> | IAM actions required for the UpdateAccessSource API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.UpdateAccessToken">UpdateAccessToken</a></code> | <code>string[]</code> | IAM actions required for the UpdateAccessToken API call. |
+| <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.UpdateCoreNetworkEndpoint">UpdateCoreNetworkEndpoint</a></code> | <code>string[]</code> | IAM actions required for the UpdateCoreNetworkEndpoint API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.UpdateDNSView">UpdateDNSView</a></code> | <code>string[]</code> | IAM actions required for the UpdateDNSView API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.UpdateFirewallDomains">UpdateFirewallDomains</a></code> | <code>string[]</code> | IAM actions required for the UpdateFirewallDomains API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.UpdateFirewallRule">UpdateFirewallRule</a></code> | <code>string[]</code> | IAM actions required for the UpdateFirewallRule API call. |
@@ -1695,6 +1700,18 @@ IAM actions required for the CreateAccessToken API call.
 
 ---
 
+##### `CreateCoreNetworkEndpoint`<sup>Required</sup> <a name="CreateCoreNetworkEndpoint" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.CreateCoreNetworkEndpoint"></a>
+
+```typescript
+public readonly CreateCoreNetworkEndpoint: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateCoreNetworkEndpoint API call.
+
+---
+
 ##### `CreateDNSView`<sup>Required</sup> <a name="CreateDNSView" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.CreateDNSView"></a>
 
 ```typescript
@@ -1764,6 +1781,18 @@ public readonly DeleteAccessToken: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteAccessToken API call.
+
+---
+
+##### `DeleteCoreNetworkEndpoint`<sup>Required</sup> <a name="DeleteCoreNetworkEndpoint" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.DeleteCoreNetworkEndpoint"></a>
+
+```typescript
+public readonly DeleteCoreNetworkEndpoint: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteCoreNetworkEndpoint API call.
 
 ---
 
@@ -1884,6 +1913,18 @@ public readonly ListAccessTokens: string[];
 - *Type:* string[]
 
 IAM actions required for the ListAccessTokens API call.
+
+---
+
+##### `ListCoreNetworkEndpoints`<sup>Required</sup> <a name="ListCoreNetworkEndpoints" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.ListCoreNetworkEndpoints"></a>
+
+```typescript
+public readonly ListCoreNetworkEndpoints: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListCoreNetworkEndpoints API call.
 
 ---
 
@@ -2019,6 +2060,18 @@ IAM actions required for the GetAccessToken API call.
 
 ---
 
+##### `opGetCoreNetworkEndpoint`<sup>Required</sup> <a name="opGetCoreNetworkEndpoint" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.opGetCoreNetworkEndpoint"></a>
+
+```typescript
+public readonly opGetCoreNetworkEndpoint: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetCoreNetworkEndpoint API call.
+
+---
+
 ##### `opGetDNSView`<sup>Required</sup> <a name="opGetDNSView" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.opGetDNSView"></a>
 
 ```typescript
@@ -2136,6 +2189,18 @@ public readonly UpdateAccessToken: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateAccessToken API call.
+
+---
+
+##### `UpdateCoreNetworkEndpoint`<sup>Required</sup> <a name="UpdateCoreNetworkEndpoint" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.UpdateCoreNetworkEndpoint"></a>
+
+```typescript
+public readonly UpdateCoreNetworkEndpoint: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateCoreNetworkEndpoint API call.
 
 ---
 

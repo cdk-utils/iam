@@ -1,0 +1,717 @@
+{
+  "Name": "osm",
+  "ServiceName": "OpenSearch Memory",
+  "Actions": [
+    {
+      "Name": "BatchGetEvent",
+      "ActionConditionKeys": [
+        "osm:actorId",
+        "osm:sessionId"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "space"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateEvent",
+      "ActionConditionKeys": [
+        "osm:actorId",
+        "osm:sessionId"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "space"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateMemory",
+      "ActionConditionKeys": [
+        "osm:actorId",
+        "osm:strategyName"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "space"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateSpace",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "space"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteEvent",
+      "ActionConditionKeys": [
+        "osm:actorId",
+        "osm:sessionId"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "space"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteMemory",
+      "ActionConditionKeys": [
+        "osm:actorId",
+        "osm:strategyName"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "space"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteSpace",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "space"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetEvent",
+      "ActionConditionKeys": [
+        "osm:actorId",
+        "osm:sessionId"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "space"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetMemory",
+      "ActionConditionKeys": [
+        "osm:actorId",
+        "osm:strategyName"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "space"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSpace",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "space"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEvents",
+      "ActionConditionKeys": [
+        "osm:actorId",
+        "osm:sessionId"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "space"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListMemories",
+      "ActionConditionKeys": [
+        "osm:actorId",
+        "osm:strategyName"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "space"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListSpaces",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "space"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "space"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SearchEvents",
+      "ActionConditionKeys": [
+        "osm:actorId",
+        "osm:sessionId"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "space"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SearchMemories",
+      "ActionConditionKeys": [
+        "osm:actorId",
+        "osm:strategyName"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "space"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "space"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "space"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateMemory",
+      "ActionConditionKeys": [
+        "osm:actorId",
+        "osm:strategyName"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "space"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateSpace",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "space"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "osm:actorId",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "osm:sessionId",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "osm:strategyName",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "BatchGetEvent",
+      "SDK": [
+        {
+          "Name": "opensearchmemory",
+          "Method": "batch_get_event",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateEvent",
+      "SDK": [
+        {
+          "Name": "opensearchmemory",
+          "Method": "create_event",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateMemory",
+      "SDK": [
+        {
+          "Name": "opensearchmemory",
+          "Method": "create_memory",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSpace",
+      "SDK": [
+        {
+          "Name": "opensearchmemory",
+          "Method": "create_space",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteEvent",
+      "SDK": [
+        {
+          "Name": "opensearchmemory",
+          "Method": "delete_event",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteMemory",
+      "SDK": [
+        {
+          "Name": "opensearchmemory",
+          "Method": "delete_memory",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSpace",
+      "SDK": [
+        {
+          "Name": "opensearchmemory",
+          "Method": "delete_space",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEvent",
+      "SDK": [
+        {
+          "Name": "opensearchmemory",
+          "Method": "get_event",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMemory",
+      "SDK": [
+        {
+          "Name": "opensearchmemory",
+          "Method": "get_memory",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSpace",
+      "SDK": [
+        {
+          "Name": "opensearchmemory",
+          "Method": "get_space",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEvents",
+      "SDK": [
+        {
+          "Name": "opensearchmemory",
+          "Method": "list_events",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMemories",
+      "SDK": [
+        {
+          "Name": "opensearchmemory",
+          "Method": "list_memories",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSpaces",
+      "SDK": [
+        {
+          "Name": "opensearchmemory",
+          "Method": "list_spaces",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "SDK": [
+        {
+          "Name": "opensearchmemory",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SearchEvents",
+      "SDK": [
+        {
+          "Name": "opensearchmemory",
+          "Method": "search_events",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SearchMemories",
+      "SDK": [
+        {
+          "Name": "opensearchmemory",
+          "Method": "search_memories",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "SDK": [
+        {
+          "Name": "opensearchmemory",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "SDK": [
+        {
+          "Name": "opensearchmemory",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateMemory",
+      "SDK": [
+        {
+          "Name": "opensearchmemory",
+          "Method": "update_memory",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSpace",
+      "SDK": [
+        {
+          "Name": "opensearchmemory",
+          "Method": "update_space",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "space",
+      "ARNFormats": [
+        "arn:${Partition}:osm:${Region}:${Account}:space/${SpaceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.5"
+}

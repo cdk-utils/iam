@@ -12,6 +12,9 @@ export class AWSMarketplaceActions {
 	/** The IAM service prefix. */
 	static readonly SERVICE_PREFIX = "aws-marketplace";
 
+	/** [Write] aws-marketplace:AcceptAgreementApproval */
+	static readonly AcceptAgreementApproval =
+		"aws-marketplace:AcceptAgreementApproval";
 	/** [Write] aws-marketplace:AcceptAgreementApprovalRequest */
 	static readonly AcceptAgreementApprovalRequest =
 		"aws-marketplace:AcceptAgreementApprovalRequest";
@@ -75,12 +78,18 @@ export class AWSMarketplaceActions {
 	/** [Write] aws-marketplace:DisassociateProductsFromPrivateMarketplace */
 	static readonly DisassociateProductsFromPrivateMarketplace =
 		"aws-marketplace:DisassociateProductsFromPrivateMarketplace";
+	/** [Read] aws-marketplace:GetAgreementApproval */
+	static readonly actionGetAgreementApproval =
+		"aws-marketplace:GetAgreementApproval";
 	/** [Read] aws-marketplace:GetAgreementApprovalRequest */
 	static readonly actionGetAgreementApprovalRequest =
 		"aws-marketplace:GetAgreementApprovalRequest";
 	/** [Read] aws-marketplace:GetAgreementCancellationRequest */
 	static readonly actionGetAgreementCancellationRequest =
 		"aws-marketplace:GetAgreementCancellationRequest";
+	/** [Read] aws-marketplace:GetAgreementContacts */
+	static readonly actionGetAgreementContacts =
+		"aws-marketplace:GetAgreementContacts";
 	/** [Read] aws-marketplace:GetAgreementEntitlements */
 	static readonly actionGetAgreementEntitlements =
 		"aws-marketplace:GetAgreementEntitlements";
@@ -90,6 +99,12 @@ export class AWSMarketplaceActions {
 	/** [Read] aws-marketplace:GetAgreementRequest */
 	static readonly actionGetAgreementRequest =
 		"aws-marketplace:GetAgreementRequest";
+	/** [Read] aws-marketplace:GetAgreementRequestApprovalPlans */
+	static readonly actionGetAgreementRequestApprovalPlans =
+		"aws-marketplace:GetAgreementRequestApprovalPlans";
+	/** [Read] aws-marketplace:GetAgreementRequestTerms */
+	static readonly actionGetAgreementRequestTerms =
+		"aws-marketplace:GetAgreementRequestTerms";
 	/** [List] aws-marketplace:GetAgreementTerms */
 	static readonly actionGetAgreementTerms = "aws-marketplace:GetAgreementTerms";
 	/** [Read] aws-marketplace:GetBillingAdjustmentRequest */
@@ -120,6 +135,9 @@ export class AWSMarketplaceActions {
 	/** [Read] aws-marketplace:GetSellerDashboard */
 	static readonly actionGetSellerDashboard =
 		"aws-marketplace:GetSellerDashboard";
+	/** [Read] aws-marketplace:GetSellerReportingData */
+	static readonly actionGetSellerReportingData =
+		"aws-marketplace:GetSellerReportingData";
 	/** [Read] aws-marketplace:GetTaxComplianceProfile */
 	static readonly actionGetTaxComplianceProfile =
 		"aws-marketplace:GetTaxComplianceProfile";
@@ -131,6 +149,9 @@ export class AWSMarketplaceActions {
 	/** [List] aws-marketplace:ListAgreementApprovalRequests */
 	static readonly ListAgreementApprovalRequests =
 		"aws-marketplace:ListAgreementApprovalRequests";
+	/** [List] aws-marketplace:ListAgreementApprovals */
+	static readonly ListAgreementApprovals =
+		"aws-marketplace:ListAgreementApprovals";
 	/** [List] aws-marketplace:ListAgreementCancellationRequests */
 	static readonly ListAgreementCancellationRequests =
 		"aws-marketplace:ListAgreementCancellationRequests";
@@ -202,6 +223,9 @@ export class AWSMarketplaceActions {
 	static readonly PutResourcePolicy = "aws-marketplace:PutResourcePolicy";
 	/** [Write] aws-marketplace:RegisterUsage */
 	static readonly RegisterUsage = "aws-marketplace:RegisterUsage";
+	/** [Write] aws-marketplace:RejectAgreementApproval */
+	static readonly RejectAgreementApproval =
+		"aws-marketplace:RejectAgreementApproval";
 	/** [Write] aws-marketplace:RejectAgreementApprovalRequest */
 	static readonly RejectAgreementApprovalRequest =
 		"aws-marketplace:RejectAgreementApprovalRequest";
@@ -225,6 +249,9 @@ export class AWSMarketplaceActions {
 	/** [Write] aws-marketplace:SendAgreementPaymentRequest */
 	static readonly SendAgreementPaymentRequest =
 		"aws-marketplace:SendAgreementPaymentRequest";
+	/** [Write] aws-marketplace:StartAgreementApprovals */
+	static readonly StartAgreementApprovals =
+		"aws-marketplace:StartAgreementApprovals";
 	/** [Write] aws-marketplace:StartBuild */
 	static readonly StartBuild = "aws-marketplace:StartBuild";
 	/** [Write] aws-marketplace:StartChangeSet */
@@ -264,11 +291,15 @@ export class AWSMarketplaceActions {
 		AWSMarketplaceActions.DescribeChangeSet,
 		AWSMarketplaceActions.DescribeEntity,
 		AWSMarketplaceActions.DescribeProcurementSystemConfiguration,
+		AWSMarketplaceActions.actionGetAgreementApproval,
 		AWSMarketplaceActions.actionGetAgreementApprovalRequest,
 		AWSMarketplaceActions.actionGetAgreementCancellationRequest,
+		AWSMarketplaceActions.actionGetAgreementContacts,
 		AWSMarketplaceActions.actionGetAgreementEntitlements,
 		AWSMarketplaceActions.actionGetAgreementPaymentRequest,
 		AWSMarketplaceActions.actionGetAgreementRequest,
+		AWSMarketplaceActions.actionGetAgreementRequestApprovalPlans,
+		AWSMarketplaceActions.actionGetAgreementRequestTerms,
 		AWSMarketplaceActions.actionGetBillingAdjustmentRequest,
 		AWSMarketplaceActions.actionGetBuyerDashboard,
 		AWSMarketplaceActions.actionGetEntitlements,
@@ -281,6 +312,7 @@ export class AWSMarketplaceActions {
 		AWSMarketplaceActions.actionGetProduct,
 		AWSMarketplaceActions.actionGetResourcePolicy,
 		AWSMarketplaceActions.actionGetSellerDashboard,
+		AWSMarketplaceActions.actionGetSellerReportingData,
 		AWSMarketplaceActions.actionGetTaxComplianceProfile,
 		AWSMarketplaceActions.actionGetVerification,
 		AWSMarketplaceActions.actionGetVerificationEvidence,
@@ -290,6 +322,7 @@ export class AWSMarketplaceActions {
 	];
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
+		AWSMarketplaceActions.AcceptAgreementApproval,
 		AWSMarketplaceActions.AcceptAgreementApprovalRequest,
 		AWSMarketplaceActions.AcceptAgreementCancellationRequest,
 		AWSMarketplaceActions.AcceptAgreementPaymentRequest,
@@ -310,12 +343,14 @@ export class AWSMarketplaceActions {
 		AWSMarketplaceActions.PutDeploymentParameter,
 		AWSMarketplaceActions.PutProcurementSystemConfiguration,
 		AWSMarketplaceActions.RegisterUsage,
+		AWSMarketplaceActions.RejectAgreementApproval,
 		AWSMarketplaceActions.RejectAgreementApprovalRequest,
 		AWSMarketplaceActions.RejectAgreementCancellationRequest,
 		AWSMarketplaceActions.RejectAgreementPaymentRequest,
 		AWSMarketplaceActions.ResolveCustomer,
 		AWSMarketplaceActions.SendAgreementCancellationRequest,
 		AWSMarketplaceActions.SendAgreementPaymentRequest,
+		AWSMarketplaceActions.StartAgreementApprovals,
 		AWSMarketplaceActions.StartBuild,
 		AWSMarketplaceActions.StartChangeSet,
 		AWSMarketplaceActions.StartInvoiceSubmissionTask,
@@ -332,6 +367,7 @@ export class AWSMarketplaceActions {
 		AWSMarketplaceActions.DescribePrivateMarketplaceRequests,
 		AWSMarketplaceActions.actionGetAgreementTerms,
 		AWSMarketplaceActions.ListAgreementApprovalRequests,
+		AWSMarketplaceActions.ListAgreementApprovals,
 		AWSMarketplaceActions.ListAgreementCancellationRequests,
 		AWSMarketplaceActions.ListAgreementCharges,
 		AWSMarketplaceActions.ListAgreementInvoiceLineItems,
@@ -850,6 +886,38 @@ export interface AWSMarketplaceSellerDashboardArnComponents {
 }
 
 /**
+ * Properties for building a SellerDataset ARN.
+ */
+export interface AWSMarketplaceSellerDatasetArnProps {
+	/** The Catalog component of the ARN. */
+	readonly catalog: string;
+	/** The FactTable component of the ARN. */
+	readonly factTable: string;
+	/** The DatasetName component of the ARN. */
+	readonly datasetName: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a SellerDataset ARN.
+ */
+export interface AWSMarketplaceSellerDatasetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Catalog component. */
+	readonly catalog: string;
+	/** The FactTable component. */
+	readonly factTable: string;
+	/** The DatasetName component. */
+	readonly datasetName: string;
+}
+
+/**
  * Properties for building a TaxComplianceProfile ARN.
  */
 export interface AWSMarketplaceTaxComplianceProfileArnProps {
@@ -967,6 +1035,8 @@ const PurchaseOptionArnRegex =
 	/^arn:(?<partition>[^:]+):aws-marketplace:::catalog\/(?<catalogName>[^:/?]+)\/purchaseOption\/(?<purchaseOptionId>[^:/?]+)$/;
 const SellerDashboardArnRegex =
 	/^arn:(?<partition>[^:]+):aws-marketplace::(?<account>[^:]*):(?<catalog>[^:/?]+)\/ReportingData\/(?<factTable>[^:/?]+)\/Dashboard\/(?<dashboardName>[^:/?]+)$/;
+const SellerDatasetArnRegex =
+	/^arn:(?<partition>[^:]+):aws-marketplace::(?<account>[^:]*):(?<catalog>[^:/?]+)\/ReportingData\/(?<factTable>[^:/?]+)\/Dataset\/(?<datasetName>[^:/?]+)$/;
 const TaxComplianceProfileArnRegex =
 	/^arn:(?<partition>[^:]+):aws-marketplace:(?<region>[^:]*):(?<account>[^:]*):tax-compliance-profile\/(?<resourceId>[^:/?]+)$/;
 const TaxComplianceProfileChangeTaskArnRegex =
@@ -1483,6 +1553,40 @@ export class AWSMarketplaceResources {
 	}
 
 	/**
+	 * Builds an ARN for the SellerDataset resource.
+	 */
+	static sellerDataset(props: AWSMarketplaceSellerDatasetArnProps): string {
+		return `arn:${props.partition ?? "aws"}:aws-marketplace::${props.account ?? "*"}:${props.catalog}/ReportingData/${props.factTable}/Dataset/${props.datasetName}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the SellerDataset resource.
+	 */
+	static isValidSellerDatasetArn(arn: string): boolean {
+		return SellerDatasetArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a SellerDataset ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseSellerDatasetArn(
+		arn: string,
+	): AWSMarketplaceSellerDatasetArnComponents {
+		const match = SellerDatasetArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid SellerDataset ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			account: match.groups.account,
+			catalog: match.groups!.catalog,
+			factTable: match.groups!.factTable,
+			datasetName: match.groups!.datasetName,
+		};
+	}
+
+	/**
 	 * Builds an ARN for the TaxComplianceProfile resource.
 	 */
 	static taxComplianceProfile(
@@ -1593,6 +1697,10 @@ export class AWSMarketplaceResources {
  * API operation to required IAM actions mapping for aws-marketplace.
  */
 export class AWSMarketplaceOperations {
+	/** IAM actions required for the AcceptAgreementApproval API call. */
+	static readonly AcceptAgreementApproval: string[] = [
+		"aws-marketplace:AcceptAgreementApproval",
+	];
 	/** IAM actions required for the AcceptAgreementCancellationRequest API call. */
 	static readonly AcceptAgreementCancellationRequest: string[] = [
 		"aws-marketplace:AcceptAgreementCancellationRequest",
@@ -1633,6 +1741,10 @@ export class AWSMarketplaceOperations {
 	static readonly CancelAgreementPaymentRequest: string[] = [
 		"aws-marketplace:CancelAgreementPaymentRequest",
 	];
+	/** IAM actions required for the CancelAgreementRequest API call. */
+	static readonly CancelAgreementRequest: string[] = [
+		"aws-marketplace:CancelAgreementRequest",
+	];
 	/** IAM actions required for the CancelChangeSet API call. */
 	static readonly CancelChangeSet: string[] = [
 		"aws-marketplace:CancelChangeSet",
@@ -1661,9 +1773,17 @@ export class AWSMarketplaceOperations {
 	];
 	/** IAM actions required for the DescribeEntity API call. */
 	static readonly DescribeEntity: string[] = ["aws-marketplace:DescribeEntity"];
+	/** IAM actions required for the GetAgreementApproval API call. */
+	static readonly opGetAgreementApproval: string[] = [
+		"aws-marketplace:GetAgreementApproval",
+	];
 	/** IAM actions required for the GetAgreementCancellationRequest API call. */
 	static readonly opGetAgreementCancellationRequest: string[] = [
 		"aws-marketplace:GetAgreementCancellationRequest",
+	];
+	/** IAM actions required for the GetAgreementContacts API call. */
+	static readonly opGetAgreementContacts: string[] = [
+		"aws-marketplace:GetAgreementContacts",
 	];
 	/** IAM actions required for the GetAgreementEntitlements API call. */
 	static readonly opGetAgreementEntitlements: string[] = [
@@ -1673,6 +1793,18 @@ export class AWSMarketplaceOperations {
 	/** IAM actions required for the GetAgreementPaymentRequest API call. */
 	static readonly opGetAgreementPaymentRequest: string[] = [
 		"aws-marketplace:GetAgreementPaymentRequest",
+	];
+	/** IAM actions required for the GetAgreementRequest API call. */
+	static readonly opGetAgreementRequest: string[] = [
+		"aws-marketplace:GetAgreementRequest",
+	];
+	/** IAM actions required for the GetAgreementRequestApprovalPlans API call. */
+	static readonly opGetAgreementRequestApprovalPlans: string[] = [
+		"aws-marketplace:GetAgreementRequestApprovalPlans",
+	];
+	/** IAM actions required for the GetAgreementRequestTerms API call. */
+	static readonly opGetAgreementRequestTerms: string[] = [
+		"aws-marketplace:GetAgreementRequestTerms",
 	];
 	/** IAM actions required for the GetAgreementTerms API call. */
 	static readonly opGetAgreementTerms: string[] = [
@@ -1705,6 +1837,10 @@ export class AWSMarketplaceOperations {
 	static readonly opGetResourcePolicy: string[] = [
 		"aws-marketplace:GetResourcePolicy",
 	];
+	/** IAM actions required for the ListAgreementApprovals API call. */
+	static readonly ListAgreementApprovals: string[] = [
+		"aws-marketplace:ListAgreementApprovals",
+	];
 	/** IAM actions required for the ListAgreementCancellationRequests API call. */
 	static readonly ListAgreementCancellationRequests: string[] = [
 		"aws-marketplace:ListAgreementCancellationRequests",
@@ -1720,6 +1856,10 @@ export class AWSMarketplaceOperations {
 	/** IAM actions required for the ListAgreementPaymentRequests API call. */
 	static readonly ListAgreementPaymentRequests: string[] = [
 		"aws-marketplace:ListAgreementPaymentRequests",
+	];
+	/** IAM actions required for the ListAgreementRequests API call. */
+	static readonly ListAgreementRequests: string[] = [
+		"aws-marketplace:ListAgreementRequests",
 	];
 	/** IAM actions required for the ListAssessments API call. */
 	static readonly ListAssessments: string[] = [
@@ -1762,6 +1902,10 @@ export class AWSMarketplaceOperations {
 	];
 	/** IAM actions required for the RegisterUsage API call. */
 	static readonly RegisterUsage: string[] = ["aws-marketplace:RegisterUsage"];
+	/** IAM actions required for the RejectAgreementApproval API call. */
+	static readonly RejectAgreementApproval: string[] = [
+		"aws-marketplace:RejectAgreementApproval",
+	];
 	/** IAM actions required for the RejectAgreementCancellationRequest API call. */
 	static readonly RejectAgreementCancellationRequest: string[] = [
 		"aws-marketplace:RejectAgreementCancellationRequest",
@@ -1791,6 +1935,8 @@ export class AWSMarketplaceOperations {
 	static readonly SendAgreementPaymentRequest: string[] = [
 		"aws-marketplace:SendAgreementPaymentRequest",
 	];
+	/** IAM actions required for the StartAgreementApprovals API call. */
+	static readonly StartAgreementApprovals: string[] = [];
 	/** IAM actions required for the StartChangeSet API call. */
 	static readonly StartChangeSet: string[] = [
 		"aws-marketplace:DescribeAgreement",
@@ -1816,6 +1962,10 @@ export class AWSMarketplaceOperations {
  * Condition key constants and builders for aws-marketplace.
  */
 export class AWSMarketplaceConditions {
+	/** Condition keys applicable to the AcceptAgreementApproval action. */
+	static readonly AcceptAgreementApprovalConditionKeys: string[] = [
+		"aws-marketplace:AgreementType",
+	];
 	/** Condition keys applicable to the AcceptAgreementCancellationRequest action. */
 	static readonly AcceptAgreementCancellationRequestConditionKeys: string[] = [
 		"aws-marketplace:AgreementType",
@@ -1850,6 +2000,10 @@ export class AWSMarketplaceConditions {
 		"aws-marketplace:AgreementType",
 		"aws-marketplace:PartyType",
 	];
+	/** Condition keys applicable to the CancelAgreementRequest action. */
+	static readonly CancelAgreementRequestConditionKeys: string[] = [
+		"aws-marketplace:AgreementType",
+	];
 	/** Condition keys applicable to the CreateAgreementRequest action. */
 	static readonly CreateAgreementRequestConditionKeys: string[] = [
 		"aws-marketplace:AgreementType",
@@ -1865,9 +2019,17 @@ export class AWSMarketplaceConditions {
 		"aws-marketplace:AgreementType",
 		"aws-marketplace:PartyType",
 	];
+	/** Condition keys applicable to the GetAgreementApproval action. */
+	static readonly actionGetAgreementApprovalConditionKeys: string[] = [
+		"aws-marketplace:AgreementType",
+	];
 	/** Condition keys applicable to the GetAgreementCancellationRequest action. */
 	static readonly actionGetAgreementCancellationRequestConditionKeys: string[] =
 		["aws-marketplace:AgreementType", "aws-marketplace:PartyType"];
+	/** Condition keys applicable to the GetAgreementContacts action. */
+	static readonly actionGetAgreementContactsConditionKeys: string[] = [
+		"aws-marketplace:AgreementType",
+	];
 	/** Condition keys applicable to the GetAgreementEntitlements action. */
 	static readonly actionGetAgreementEntitlementsConditionKeys: string[] = [
 		"aws-marketplace:AgreementType",
@@ -1876,6 +2038,17 @@ export class AWSMarketplaceConditions {
 	static readonly actionGetAgreementPaymentRequestConditionKeys: string[] = [
 		"aws-marketplace:AgreementType",
 		"aws-marketplace:PartyType",
+	];
+	/** Condition keys applicable to the GetAgreementRequest action. */
+	static readonly actionGetAgreementRequestConditionKeys: string[] = [
+		"aws-marketplace:AgreementType",
+	];
+	/** Condition keys applicable to the GetAgreementRequestApprovalPlans action. */
+	static readonly actionGetAgreementRequestApprovalPlansConditionKeys: string[] =
+		["aws-marketplace:AgreementType"];
+	/** Condition keys applicable to the GetAgreementRequestTerms action. */
+	static readonly actionGetAgreementRequestTermsConditionKeys: string[] = [
+		"aws-marketplace:AgreementType",
 	];
 	/** Condition keys applicable to the GetAgreementTerms action. */
 	static readonly actionGetAgreementTermsConditionKeys: string[] = [
@@ -1929,6 +2102,10 @@ export class AWSMarketplaceConditions {
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
+	/** Condition keys applicable to the RejectAgreementApproval action. */
+	static readonly RejectAgreementApprovalConditionKeys: string[] = [
+		"aws-marketplace:AgreementType",
+	];
 	/** Condition keys applicable to the RejectAgreementCancellationRequest action. */
 	static readonly RejectAgreementCancellationRequestConditionKeys: string[] = [
 		"aws-marketplace:AgreementType",
@@ -1953,6 +2130,10 @@ export class AWSMarketplaceConditions {
 	static readonly SendAgreementPaymentRequestConditionKeys: string[] = [
 		"aws-marketplace:AgreementType",
 		"aws-marketplace:PartyType",
+	];
+	/** Condition keys applicable to the StartAgreementApprovals action. */
+	static readonly StartAgreementApprovalsConditionKeys: string[] = [
+		"aws-marketplace:AgreementType",
 	];
 	/** Condition keys applicable to the StartChangeSet action. */
 	static readonly StartChangeSetConditionKeys: string[] = [

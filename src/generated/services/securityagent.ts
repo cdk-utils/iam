@@ -242,6 +242,8 @@ export class SecurityagentActions {
 	/** [Write] securityagent:PutDesignReviewFeedback */
 	static readonly PutDesignReviewFeedback =
 		"securityagent:PutDesignReviewFeedback";
+	/** [Write] securityagent:ResumePentestJob */
+	static readonly ResumePentestJob = "securityagent:ResumePentestJob";
 	/** [Write] securityagent:StartCodeRemediation */
 	static readonly StartCodeRemediation = "securityagent:StartCodeRemediation";
 	/** [Write] securityagent:StartCodeReviewJob */
@@ -372,6 +374,7 @@ export class SecurityagentActions {
 		SecurityagentActions.ImportSecurityRequirements,
 		SecurityagentActions.InitiateProviderRegistration,
 		SecurityagentActions.PutDesignReviewFeedback,
+		SecurityagentActions.ResumePentestJob,
 		SecurityagentActions.StartCodeRemediation,
 		SecurityagentActions.StartCodeReviewJob,
 		SecurityagentActions.StartPentestJob,

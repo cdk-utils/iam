@@ -17,6 +17,10 @@ export class LambdaActions {
 		"lambda:AddLayerVersionPermission";
 	/** [PermissionManagement] lambda:AddPermission */
 	static readonly AddPermission = "lambda:AddPermission";
+	/** [Write] lambda:AssociateRuntimeAlias */
+	static readonly AssociateRuntimeAlias = "lambda:AssociateRuntimeAlias";
+	/** [Write] lambda:AssociateRuntimeVersion */
+	static readonly AssociateRuntimeVersion = "lambda:AssociateRuntimeVersion";
 	/** [Write] lambda:CheckpointDurableExecution */
 	static readonly CheckpointDurableExecution =
 		"lambda:CheckpointDurableExecution";
@@ -43,6 +47,12 @@ export class LambdaActions {
 		"lambda:CreateMicrovmShellAuthToken";
 	/** [Write] lambda:CreateNetworkConnector */
 	static readonly CreateNetworkConnector = "lambda:CreateNetworkConnector";
+	/** [Write] lambda:CreateRuntime */
+	static readonly CreateRuntime = "lambda:CreateRuntime";
+	/** [Write] lambda:CreateRuntimeAlias */
+	static readonly CreateRuntimeAlias = "lambda:CreateRuntimeAlias";
+	/** [Write] lambda:CreateRuntimeVersion */
+	static readonly CreateRuntimeVersion = "lambda:CreateRuntimeVersion";
 	/** [Write] lambda:CreateWebFunction */
 	static readonly CreateWebFunction = "lambda:CreateWebFunction";
 	/** [Write] lambda:CreateWebFunctionEndpoint */
@@ -86,6 +96,12 @@ export class LambdaActions {
 		"lambda:DeleteProvisionedConcurrencyConfig";
 	/** [PermissionManagement] lambda:DeleteResourcePolicy */
 	static readonly DeleteResourcePolicy = "lambda:DeleteResourcePolicy";
+	/** [Write] lambda:DeleteRuntime */
+	static readonly DeleteRuntime = "lambda:DeleteRuntime";
+	/** [Write] lambda:DeleteRuntimeAlias */
+	static readonly DeleteRuntimeAlias = "lambda:DeleteRuntimeAlias";
+	/** [Write] lambda:DeleteRuntimeVersion */
+	static readonly DeleteRuntimeVersion = "lambda:DeleteRuntimeVersion";
 	/** [Write] lambda:DeleteWebFunction */
 	static readonly DeleteWebFunction = "lambda:DeleteWebFunction";
 	/** [Write] lambda:DeleteWebFunctionEndpoint */
@@ -160,9 +176,15 @@ export class LambdaActions {
 		"lambda:GetProvisionedConcurrencyConfig";
 	/** [Read] lambda:GetResourcePolicy */
 	static readonly actionGetResourcePolicy = "lambda:GetResourcePolicy";
+	/** [Read] lambda:GetRuntime */
+	static readonly actionGetRuntime = "lambda:GetRuntime";
+	/** [Read] lambda:GetRuntimeAlias */
+	static readonly actionGetRuntimeAlias = "lambda:GetRuntimeAlias";
 	/** [Read] lambda:GetRuntimeManagementConfig */
 	static readonly actionGetRuntimeManagementConfig =
 		"lambda:GetRuntimeManagementConfig";
+	/** [Read] lambda:GetRuntimeVersion */
+	static readonly actionGetRuntimeVersion = "lambda:GetRuntimeVersion";
 	/** [Read] lambda:GetWebAccountSettings */
 	static readonly actionGetWebAccountSettings = "lambda:GetWebAccountSettings";
 	/** [Read] lambda:GetWebFunction */
@@ -231,6 +253,12 @@ export class LambdaActions {
 	/** [List] lambda:ListProvisionedConcurrencyConfigs */
 	static readonly ListProvisionedConcurrencyConfigs =
 		"lambda:ListProvisionedConcurrencyConfigs";
+	/** [List] lambda:ListRuntimeAliases */
+	static readonly ListRuntimeAliases = "lambda:ListRuntimeAliases";
+	/** [List] lambda:ListRuntimeVersions */
+	static readonly ListRuntimeVersions = "lambda:ListRuntimeVersions";
+	/** [List] lambda:ListRuntimes */
+	static readonly ListRuntimes = "lambda:ListRuntimes";
 	/** [Read] lambda:ListTags */
 	static readonly ListTags = "lambda:ListTags";
 	/** [List] lambda:ListVersionsByFunction */
@@ -275,6 +303,8 @@ export class LambdaActions {
 		"lambda:RemoveLayerVersionPermission";
 	/** [PermissionManagement] lambda:RemovePermission */
 	static readonly RemovePermission = "lambda:RemovePermission";
+	/** [Write] lambda:RestoreRuntime */
+	static readonly RestoreRuntime = "lambda:RestoreRuntime";
 	/** [Write] lambda:ResumeMicrovm */
 	static readonly ResumeMicrovm = "lambda:ResumeMicrovm";
 	/** [Write] lambda:RunMicrovm */
@@ -326,6 +356,12 @@ export class LambdaActions {
 		"lambda:UpdateMicrovmImageVersion";
 	/** [Write] lambda:UpdateNetworkConnector */
 	static readonly UpdateNetworkConnector = "lambda:UpdateNetworkConnector";
+	/** [Write] lambda:UpdateRuntime */
+	static readonly UpdateRuntime = "lambda:UpdateRuntime";
+	/** [Write] lambda:UpdateRuntimeAlias */
+	static readonly UpdateRuntimeAlias = "lambda:UpdateRuntimeAlias";
+	/** [Write] lambda:UpdateRuntimeVersion */
+	static readonly UpdateRuntimeVersion = "lambda:UpdateRuntimeVersion";
 	/** [Write] lambda:UpdateWebFunctionEndpoint */
 	static readonly UpdateWebFunctionEndpoint =
 		"lambda:UpdateWebFunctionEndpoint";
@@ -358,7 +394,10 @@ export class LambdaActions {
 		LambdaActions.actionGetPolicy,
 		LambdaActions.actionGetProvisionedConcurrencyConfig,
 		LambdaActions.actionGetResourcePolicy,
+		LambdaActions.actionGetRuntime,
+		LambdaActions.actionGetRuntimeAlias,
 		LambdaActions.actionGetRuntimeManagementConfig,
+		LambdaActions.actionGetRuntimeVersion,
 		LambdaActions.actionGetWebAccountSettings,
 		LambdaActions.actionGetWebFunction,
 		LambdaActions.actionGetWebFunctionEndpoint,
@@ -367,6 +406,8 @@ export class LambdaActions {
 	];
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
+		LambdaActions.AssociateRuntimeAlias,
+		LambdaActions.AssociateRuntimeVersion,
 		LambdaActions.CheckpointDurableExecution,
 		LambdaActions.ConnectMicrovm,
 		LambdaActions.CreateAlias,
@@ -379,6 +420,9 @@ export class LambdaActions {
 		LambdaActions.CreateMicrovmImage,
 		LambdaActions.CreateMicrovmShellAuthToken,
 		LambdaActions.CreateNetworkConnector,
+		LambdaActions.CreateRuntime,
+		LambdaActions.CreateRuntimeAlias,
+		LambdaActions.CreateRuntimeVersion,
 		LambdaActions.CreateWebFunction,
 		LambdaActions.CreateWebFunctionEndpoint,
 		LambdaActions.CreateWebFunctionRevision,
@@ -396,6 +440,9 @@ export class LambdaActions {
 		LambdaActions.DeleteMicrovmImageVersion,
 		LambdaActions.DeleteNetworkConnector,
 		LambdaActions.DeleteProvisionedConcurrencyConfig,
+		LambdaActions.DeleteRuntime,
+		LambdaActions.DeleteRuntimeAlias,
+		LambdaActions.DeleteRuntimeVersion,
 		LambdaActions.DeleteWebFunction,
 		LambdaActions.DeleteWebFunctionEndpoint,
 		LambdaActions.DeleteWebFunctionRevision,
@@ -414,6 +461,7 @@ export class LambdaActions {
 		LambdaActions.PutFunctionScalingConfig,
 		LambdaActions.PutProvisionedConcurrencyConfig,
 		LambdaActions.PutRuntimeManagementConfig,
+		LambdaActions.RestoreRuntime,
 		LambdaActions.ResumeMicrovm,
 		LambdaActions.RunMicrovm,
 		LambdaActions.SendDurableExecutionCallbackFailure,
@@ -434,6 +482,9 @@ export class LambdaActions {
 		LambdaActions.UpdateMicrovmImage,
 		LambdaActions.UpdateMicrovmImageVersion,
 		LambdaActions.UpdateNetworkConnector,
+		LambdaActions.UpdateRuntime,
+		LambdaActions.UpdateRuntimeAlias,
+		LambdaActions.UpdateRuntimeVersion,
 		LambdaActions.UpdateWebFunctionEndpoint,
 	];
 	/** All list-level actions. */
@@ -459,6 +510,9 @@ export class LambdaActions {
 		LambdaActions.ListNetworkConnectorVersions,
 		LambdaActions.ListNetworkConnectors,
 		LambdaActions.ListProvisionedConcurrencyConfigs,
+		LambdaActions.ListRuntimeAliases,
+		LambdaActions.ListRuntimeVersions,
+		LambdaActions.ListRuntimes,
 		LambdaActions.ListVersionsByFunction,
 		LambdaActions.ListWebFunctionEndpoints,
 		LambdaActions.ListWebFunctionRevisions,
@@ -815,6 +869,98 @@ export interface LambdaNetworkConnectorArnComponents {
 }
 
 /**
+ * Properties for building a runtime ARN.
+ */
+export interface LambdaRuntimeArnProps {
+	/** The RuntimeName component of the ARN. */
+	readonly runtimeName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a runtime ARN.
+ */
+export interface LambdaRuntimeArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RuntimeName component. */
+	readonly runtimeName: string;
+}
+
+/**
+ * Properties for building a runtimeAlias ARN.
+ */
+export interface LambdaRuntimeAliasArnProps {
+	/** The RuntimeName component of the ARN. */
+	readonly runtimeName: string;
+	/** The Name component of the ARN. */
+	readonly name: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a runtimeAlias ARN.
+ */
+export interface LambdaRuntimeAliasArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RuntimeName component. */
+	readonly runtimeName: string;
+	/** The Name component. */
+	readonly name: string;
+}
+
+/**
+ * Properties for building a runtimeVersion ARN.
+ */
+export interface LambdaRuntimeVersionArnProps {
+	/** The RuntimeName component of the ARN. */
+	readonly runtimeName: string;
+	/** The Name component of the ARN. */
+	readonly name: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a runtimeVersion ARN.
+ */
+export interface LambdaRuntimeVersionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RuntimeName component. */
+	readonly runtimeName: string;
+	/** The Name component. */
+	readonly name: string;
+}
+
+/**
  * Properties for building a webFunction ARN.
  */
 export interface LambdaWebFunctionArnProps {
@@ -928,6 +1074,12 @@ const MicrovmImageArnRegex =
 	/^arn:(?<partition>[^:]+):lambda:(?<region>[^:]*):(?<account>[^:]*):microvm-image:(?<microvmImageName>[^:/?]+)$/;
 const NetworkConnectorArnRegex =
 	/^arn:(?<partition>[^:]+):lambda:(?<region>[^:]*):(?<account>[^:]*):network-connector:(?<networkConnectorId>[^:/?]+)$/;
+const RuntimeArnRegex =
+	/^arn:(?<partition>[^:]+):lambda:(?<region>[^:]*):(?<account>[^:]*):runtime\/(?<runtimeName>[^:/?]+)$/;
+const RuntimeAliasArnRegex =
+	/^arn:(?<partition>[^:]+):lambda:(?<region>[^:]*):(?<account>[^:]*):runtime\/(?<runtimeName>[^:/?]+)\/alias\/(?<name>[^:/?]+)$/;
+const RuntimeVersionArnRegex =
+	/^arn:(?<partition>[^:]+):lambda:(?<region>[^:]*):(?<account>[^:]*):runtime\/(?<runtimeName>[^:/?]+)\/version\/(?<name>[^:/?]+)$/;
 const WebFunctionArnRegex =
 	/^arn:(?<partition>[^:]+):lambda:(?<region>[^:]*):(?<account>[^:]*):web-function\/(?<functionName>[^:/?]+)$/;
 const WebFunctionEndpointArnRegex =
@@ -1299,6 +1451,103 @@ export class LambdaResources {
 	}
 
 	/**
+	 * Builds an ARN for the runtime resource.
+	 */
+	static runtime(props: LambdaRuntimeArnProps): string {
+		return `arn:${props.partition ?? "aws"}:lambda:${props.region ?? "*"}:${props.account ?? "*"}:runtime/${props.runtimeName}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the runtime resource.
+	 */
+	static isValidRuntimeArn(arn: string): boolean {
+		return RuntimeArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a runtime ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseRuntimeArn(arn: string): LambdaRuntimeArnComponents {
+		const match = RuntimeArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid runtime ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			runtimeName: match.groups!.runtimeName,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the runtimeAlias resource.
+	 */
+	static runtimeAlias(props: LambdaRuntimeAliasArnProps): string {
+		return `arn:${props.partition ?? "aws"}:lambda:${props.region ?? "*"}:${props.account ?? "*"}:runtime/${props.runtimeName}/alias/${props.name}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the runtimeAlias resource.
+	 */
+	static isValidRuntimeAliasArn(arn: string): boolean {
+		return RuntimeAliasArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a runtimeAlias ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseRuntimeAliasArn(arn: string): LambdaRuntimeAliasArnComponents {
+		const match = RuntimeAliasArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid runtimeAlias ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			runtimeName: match.groups!.runtimeName,
+			name: match.groups!.name,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the runtimeVersion resource.
+	 */
+	static runtimeVersion(props: LambdaRuntimeVersionArnProps): string {
+		return `arn:${props.partition ?? "aws"}:lambda:${props.region ?? "*"}:${props.account ?? "*"}:runtime/${props.runtimeName}/version/${props.name}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the runtimeVersion resource.
+	 */
+	static isValidRuntimeVersionArn(arn: string): boolean {
+		return RuntimeVersionArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a runtimeVersion ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseRuntimeVersionArn(
+		arn: string,
+	): LambdaRuntimeVersionArnComponents {
+		const match = RuntimeVersionArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid runtimeVersion ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			runtimeName: match.groups!.runtimeName,
+			name: match.groups!.name,
+		};
+	}
+
+	/**
 	 * Builds an ARN for the webFunction resource.
 	 */
 	static webFunction(props: LambdaWebFunctionArnProps): string {
@@ -1434,6 +1683,8 @@ export class LambdaOperations {
 	];
 	/** IAM actions required for the CreateFunction API call. */
 	static readonly CreateFunction: string[] = [
+		"lambda:AssociateRuntimeAlias",
+		"lambda:AssociateRuntimeVersion",
 		"lambda:CreateFunction",
 		"lambda:GetLayerVersion",
 		"lambda:PassCapacityProvider",
@@ -1465,6 +1716,17 @@ export class LambdaOperations {
 		"iam:PassRole",
 		"lambda:TagResource",
 	];
+	/** IAM actions required for the CreateRuntime API call. */
+	static readonly CreateRuntime: string[] = [
+		"lambda:CreateRuntime",
+		"lambda:TagResource",
+	];
+	/** IAM actions required for the CreateRuntimeAlias API call. */
+	static readonly CreateRuntimeAlias: string[] = ["lambda:CreateRuntimeAlias"];
+	/** IAM actions required for the CreateRuntimeVersion API call. */
+	static readonly CreateRuntimeVersion: string[] = [
+		"lambda:CreateRuntimeVersion",
+	];
 	/** IAM actions required for the CreateWebFunction API call. */
 	static readonly CreateWebFunction: string[] = [
 		"lambda:CreateWebFunction",
@@ -1492,6 +1754,8 @@ export class LambdaOperations {
 	static readonly DeleteCodeSigningConfig: string[] = [
 		"lambda:DeleteCodeSigningConfig",
 	];
+	/** IAM actions required for the DeleteDurableExecution API call. */
+	static readonly DeleteDurableExecution: string[] = [];
 	/** IAM actions required for the DeleteEventSourceMapping API call. */
 	static readonly DeleteEventSourceMapping: string[] = [
 		"lambda:DeleteEventSourceMapping",
@@ -1534,6 +1798,14 @@ export class LambdaOperations {
 	static readonly DeleteResourcePolicy: string[] = [
 		"lambda:DeleteResourcePolicy",
 		"lambda:RemovePermission",
+	];
+	/** IAM actions required for the DeleteRuntime API call. */
+	static readonly DeleteRuntime: string[] = ["lambda:DeleteRuntime"];
+	/** IAM actions required for the DeleteRuntimeAlias API call. */
+	static readonly DeleteRuntimeAlias: string[] = ["lambda:DeleteRuntimeAlias"];
+	/** IAM actions required for the DeleteRuntimeVersion API call. */
+	static readonly DeleteRuntimeVersion: string[] = [
+		"lambda:DeleteRuntimeVersion",
 	];
 	/** IAM actions required for the DeleteWebFunction API call. */
 	static readonly DeleteWebFunction: string[] = ["lambda:DeleteWebFunction"];
@@ -1645,10 +1917,16 @@ export class LambdaOperations {
 		"lambda:GetPolicy",
 		"lambda:GetResourcePolicy",
 	];
+	/** IAM actions required for the GetRuntime API call. */
+	static readonly opGetRuntime: string[] = ["lambda:GetRuntime"];
+	/** IAM actions required for the GetRuntimeAlias API call. */
+	static readonly opGetRuntimeAlias: string[] = ["lambda:GetRuntimeAlias"];
 	/** IAM actions required for the GetRuntimeManagementConfig API call. */
 	static readonly opGetRuntimeManagementConfig: string[] = [
 		"lambda:GetRuntimeManagementConfig",
 	];
+	/** IAM actions required for the GetRuntimeVersion API call. */
+	static readonly opGetRuntimeVersion: string[] = ["lambda:GetRuntimeVersion"];
 	/** IAM actions required for the GetWebAccountSettings API call. */
 	static readonly opGetWebAccountSettings: string[] = [
 		"lambda:GetWebAccountSettings",
@@ -1745,6 +2023,14 @@ export class LambdaOperations {
 	static readonly ListProvisionedConcurrencyConfigs: string[] = [
 		"lambda:ListProvisionedConcurrencyConfigs",
 	];
+	/** IAM actions required for the ListRuntimeAliases API call. */
+	static readonly ListRuntimeAliases: string[] = ["lambda:ListRuntimeAliases"];
+	/** IAM actions required for the ListRuntimeVersions API call. */
+	static readonly ListRuntimeVersions: string[] = [
+		"lambda:ListRuntimeVersions",
+	];
+	/** IAM actions required for the ListRuntimes API call. */
+	static readonly ListRuntimes: string[] = ["lambda:ListRuntimes"];
 	/** IAM actions required for the ListTags API call. */
 	static readonly ListTags: string[] = ["lambda:ListTags"];
 	/** IAM actions required for the ListVersionsByFunction API call. */
@@ -1761,6 +2047,8 @@ export class LambdaOperations {
 	];
 	/** IAM actions required for the ListWebFunctions API call. */
 	static readonly ListWebFunctions: string[] = ["lambda:ListWebFunctions"];
+	/** IAM actions required for the PauseDurableExecution API call. */
+	static readonly PauseDurableExecution: string[] = [];
 	/** IAM actions required for the PublishLayerVersion API call. */
 	static readonly PublishLayerVersion: string[] = [
 		"lambda:PublishLayerVersion",
@@ -1809,6 +2097,10 @@ export class LambdaOperations {
 	];
 	/** IAM actions required for the RemovePermission API call. */
 	static readonly RemovePermission: string[] = ["lambda:RemovePermission"];
+	/** IAM actions required for the RestoreRuntime API call. */
+	static readonly RestoreRuntime: string[] = ["lambda:RestoreRuntime"];
+	/** IAM actions required for the ResumeDurableExecution API call. */
+	static readonly ResumeDurableExecution: string[] = [];
 	/** IAM actions required for the ResumeMicrovm API call. */
 	static readonly ResumeMicrovm: string[] = ["lambda:ResumeMicrovm"];
 	/** IAM actions required for the RunMicrovm API call. */
@@ -1859,6 +2151,8 @@ export class LambdaOperations {
 	static readonly UpdateFunctionCode: string[] = ["lambda:UpdateFunctionCode"];
 	/** IAM actions required for the UpdateFunctionConfiguration API call. */
 	static readonly UpdateFunctionConfiguration: string[] = [
+		"lambda:AssociateRuntimeAlias",
+		"lambda:AssociateRuntimeVersion",
 		"lambda:GetLayerVersion",
 		"lambda:PassCapacityProvider",
 		"iam:PassRole",
@@ -1886,6 +2180,14 @@ export class LambdaOperations {
 	static readonly UpdateNetworkConnector: string[] = [
 		"iam:PassRole",
 		"lambda:UpdateNetworkConnector",
+	];
+	/** IAM actions required for the UpdateRuntime API call. */
+	static readonly UpdateRuntime: string[] = ["lambda:UpdateRuntime"];
+	/** IAM actions required for the UpdateRuntimeAlias API call. */
+	static readonly UpdateRuntimeAlias: string[] = ["lambda:UpdateRuntimeAlias"];
+	/** IAM actions required for the UpdateRuntimeVersion API call. */
+	static readonly UpdateRuntimeVersion: string[] = [
+		"lambda:UpdateRuntimeVersion",
 	];
 	/** IAM actions required for the UpdateWebFunctionEndpoint API call. */
 	static readonly UpdateWebFunctionEndpoint: string[] = [
@@ -1948,6 +2250,11 @@ export class LambdaConditions {
 		"aws:TagKeys",
 		"lambda:SecurityGroupIds",
 		"lambda:SubnetIds",
+	];
+	/** Condition keys applicable to the CreateRuntime action. */
+	static readonly CreateRuntimeConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateWebFunction action. */
 	static readonly CreateWebFunctionConditionKeys: string[] = [

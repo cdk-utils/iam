@@ -29,10 +29,15 @@ export class Route53Actions {
 	static readonly CreateHealthCheck = "route53:CreateHealthCheck";
 	/** [Write] route53:CreateHostedZone */
 	static readonly CreateHostedZone = "route53:CreateHostedZone";
+	/** [Write] route53:CreateIpGuardrailPolicy */
+	static readonly CreateIpGuardrailPolicy = "route53:CreateIpGuardrailPolicy";
 	/** [Write] route53:CreateKeySigningKey */
 	static readonly CreateKeySigningKey = "route53:CreateKeySigningKey";
 	/** [Write] route53:CreateQueryLoggingConfig */
 	static readonly CreateQueryLoggingConfig = "route53:CreateQueryLoggingConfig";
+	/** [Write] route53:CreateResourceRecordSetProtections */
+	static readonly CreateResourceRecordSetProtections =
+		"route53:CreateResourceRecordSetProtections";
 	/** [Write] route53:CreateReusableDelegationSet */
 	static readonly CreateReusableDelegationSet =
 		"route53:CreateReusableDelegationSet";
@@ -55,10 +60,15 @@ export class Route53Actions {
 	static readonly DeleteHealthCheck = "route53:DeleteHealthCheck";
 	/** [Write] route53:DeleteHostedZone */
 	static readonly DeleteHostedZone = "route53:DeleteHostedZone";
+	/** [Write] route53:DeleteIpGuardrailPolicy */
+	static readonly DeleteIpGuardrailPolicy = "route53:DeleteIpGuardrailPolicy";
 	/** [Write] route53:DeleteKeySigningKey */
 	static readonly DeleteKeySigningKey = "route53:DeleteKeySigningKey";
 	/** [Write] route53:DeleteQueryLoggingConfig */
 	static readonly DeleteQueryLoggingConfig = "route53:DeleteQueryLoggingConfig";
+	/** [Write] route53:DeleteResourceRecordSetProtections */
+	static readonly DeleteResourceRecordSetProtections =
+		"route53:DeleteResourceRecordSetProtections";
 	/** [Write] route53:DeleteReusableDelegationSet */
 	static readonly DeleteReusableDelegationSet =
 		"route53:DeleteReusableDelegationSet";
@@ -102,6 +112,8 @@ export class Route53Actions {
 	static readonly actionGetHostedZoneCount = "route53:GetHostedZoneCount";
 	/** [Read] route53:GetHostedZoneLimit */
 	static readonly actionGetHostedZoneLimit = "route53:GetHostedZoneLimit";
+	/** [Read] route53:GetIpGuardrailPolicy */
+	static readonly actionGetIpGuardrailPolicy = "route53:GetIpGuardrailPolicy";
 	/** [Read] route53:GetQueryLoggingConfig */
 	static readonly actionGetQueryLoggingConfig = "route53:GetQueryLoggingConfig";
 	/** [List] route53:GetReusableDelegationSet */
@@ -134,8 +146,13 @@ export class Route53Actions {
 	static readonly ListHostedZonesByName = "route53:ListHostedZonesByName";
 	/** [List] route53:ListHostedZonesByVPC */
 	static readonly ListHostedZonesByVPC = "route53:ListHostedZonesByVPC";
+	/** [List] route53:ListIpGuardrailPolicies */
+	static readonly ListIpGuardrailPolicies = "route53:ListIpGuardrailPolicies";
 	/** [List] route53:ListQueryLoggingConfigs */
 	static readonly ListQueryLoggingConfigs = "route53:ListQueryLoggingConfigs";
+	/** [List] route53:ListResourceRecordSetProtections */
+	static readonly ListResourceRecordSetProtections =
+		"route53:ListResourceRecordSetProtections";
 	/** [List] route53:ListResourceRecordSets */
 	static readonly ListResourceRecordSets = "route53:ListResourceRecordSets";
 	/** [Read] route53:ListReusableDelegationSets */
@@ -170,6 +187,8 @@ export class Route53Actions {
 	static readonly UpdateHostedZoneComment = "route53:UpdateHostedZoneComment";
 	/** [Write] route53:UpdateHostedZoneFeatures */
 	static readonly UpdateHostedZoneFeatures = "route53:UpdateHostedZoneFeatures";
+	/** [Write] route53:UpdateIpGuardrailPolicy */
+	static readonly UpdateIpGuardrailPolicy = "route53:UpdateIpGuardrailPolicy";
 	/** [Write] route53:UpdateTrafficPolicyComment */
 	static readonly UpdateTrafficPolicyComment =
 		"route53:UpdateTrafficPolicyComment";
@@ -183,6 +202,7 @@ export class Route53Actions {
 		Route53Actions.actionGetDNSSEC,
 		Route53Actions.actionGetHealthCheck,
 		Route53Actions.actionGetHostedZoneLimit,
+		Route53Actions.actionGetIpGuardrailPolicy,
 		Route53Actions.actionGetQueryLoggingConfig,
 		Route53Actions.actionGetReusableDelegationSetLimit,
 		Route53Actions.actionGetTrafficPolicy,
@@ -205,8 +225,10 @@ export class Route53Actions {
 		Route53Actions.CreateCidrCollection,
 		Route53Actions.CreateHealthCheck,
 		Route53Actions.CreateHostedZone,
+		Route53Actions.CreateIpGuardrailPolicy,
 		Route53Actions.CreateKeySigningKey,
 		Route53Actions.CreateQueryLoggingConfig,
+		Route53Actions.CreateResourceRecordSetProtections,
 		Route53Actions.CreateReusableDelegationSet,
 		Route53Actions.CreateTrafficPolicy,
 		Route53Actions.CreateTrafficPolicyInstance,
@@ -216,8 +238,10 @@ export class Route53Actions {
 		Route53Actions.DeleteCidrCollection,
 		Route53Actions.DeleteHealthCheck,
 		Route53Actions.DeleteHostedZone,
+		Route53Actions.DeleteIpGuardrailPolicy,
 		Route53Actions.DeleteKeySigningKey,
 		Route53Actions.DeleteQueryLoggingConfig,
+		Route53Actions.DeleteResourceRecordSetProtections,
 		Route53Actions.DeleteReusableDelegationSet,
 		Route53Actions.DeleteTrafficPolicy,
 		Route53Actions.DeleteTrafficPolicyInstance,
@@ -228,6 +252,7 @@ export class Route53Actions {
 		Route53Actions.UpdateHealthCheck,
 		Route53Actions.UpdateHostedZoneComment,
 		Route53Actions.UpdateHostedZoneFeatures,
+		Route53Actions.UpdateIpGuardrailPolicy,
 		Route53Actions.UpdateTrafficPolicyComment,
 		Route53Actions.UpdateTrafficPolicyInstance,
 	];
@@ -248,7 +273,9 @@ export class Route53Actions {
 		Route53Actions.ListHostedZones,
 		Route53Actions.ListHostedZonesByName,
 		Route53Actions.ListHostedZonesByVPC,
+		Route53Actions.ListIpGuardrailPolicies,
 		Route53Actions.ListQueryLoggingConfigs,
+		Route53Actions.ListResourceRecordSetProtections,
 		Route53Actions.ListResourceRecordSets,
 		Route53Actions.ListTrafficPolicies,
 		Route53Actions.ListTrafficPolicyInstancesByHostedZone,
@@ -867,6 +894,10 @@ export class Route53Operations {
 	static readonly CreateQueryLoggingConfig: string[] = [
 		"route53:CreateQueryLoggingConfig",
 	];
+	/** IAM actions required for the CreateResourceRecordSetProtections API call. */
+	static readonly CreateResourceRecordSetProtections: string[] = [
+		"route53:CreateResourceRecordSetProtections",
+	];
 	/** IAM actions required for the CreateReusableDelegationSet API call. */
 	static readonly CreateReusableDelegationSet: string[] = [
 		"route53:CreateReusableDelegationSet",
@@ -906,6 +937,10 @@ export class Route53Operations {
 	/** IAM actions required for the DeleteQueryLoggingConfig API call. */
 	static readonly DeleteQueryLoggingConfig: string[] = [
 		"route53:DeleteQueryLoggingConfig",
+	];
+	/** IAM actions required for the DeleteResourceRecordSetProtections API call. */
+	static readonly DeleteResourceRecordSetProtections: string[] = [
+		"route53:DeleteResourceRecordSetProtections",
 	];
 	/** IAM actions required for the DeleteReusableDelegationSet API call. */
 	static readonly DeleteReusableDelegationSet: string[] = [
@@ -1018,6 +1053,10 @@ export class Route53Operations {
 	/** IAM actions required for the ListQueryLoggingConfigs API call. */
 	static readonly ListQueryLoggingConfigs: string[] = [
 		"route53:ListQueryLoggingConfigs",
+	];
+	/** IAM actions required for the ListResourceRecordSetProtections API call. */
+	static readonly ListResourceRecordSetProtections: string[] = [
+		"route53:ListResourceRecordSetProtections",
 	];
 	/** IAM actions required for the ListResourceRecordSets API call. */
 	static readonly ListResourceRecordSets: string[] = [

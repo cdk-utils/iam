@@ -538,6 +538,10 @@ export class Route53globalresolverOperations {
 		"route53globalresolver:CreateAccessToken",
 		"route53globalresolver:TagResource",
 	];
+	/** IAM actions required for the CreateCoreNetworkEndpoint API call. */
+	static readonly CreateCoreNetworkEndpoint: string[] = [
+		"route53globalresolver:TagResource",
+	];
 	/** IAM actions required for the CreateDNSView API call. */
 	static readonly CreateDNSView: string[] = [
 		"route53globalresolver:CreateDNSView",
@@ -565,6 +569,8 @@ export class Route53globalresolverOperations {
 	static readonly DeleteAccessToken: string[] = [
 		"route53globalresolver:DeleteAccessToken",
 	];
+	/** IAM actions required for the DeleteCoreNetworkEndpoint API call. */
+	static readonly DeleteCoreNetworkEndpoint: string[] = [];
 	/** IAM actions required for the DeleteDNSView API call. */
 	static readonly DeleteDNSView: string[] = [
 		"route53globalresolver:DeleteDNSView",
@@ -601,6 +607,8 @@ export class Route53globalresolverOperations {
 	static readonly opGetAccessToken: string[] = [
 		"route53globalresolver:GetAccessToken",
 	];
+	/** IAM actions required for the GetCoreNetworkEndpoint API call. */
+	static readonly opGetCoreNetworkEndpoint: string[] = [];
 	/** IAM actions required for the GetDNSView API call. */
 	static readonly opGetDNSView: string[] = ["route53globalresolver:GetDNSView"];
 	/** IAM actions required for the GetFirewallDomainList API call. */
@@ -635,6 +643,8 @@ export class Route53globalresolverOperations {
 	static readonly ListAccessTokens: string[] = [
 		"route53globalresolver:ListAccessTokens",
 	];
+	/** IAM actions required for the ListCoreNetworkEndpoints API call. */
+	static readonly ListCoreNetworkEndpoints: string[] = [];
 	/** IAM actions required for the ListDNSViews API call. */
 	static readonly ListDNSViews: string[] = [
 		"route53globalresolver:ListDNSViews",
@@ -683,6 +693,8 @@ export class Route53globalresolverOperations {
 	static readonly UpdateAccessToken: string[] = [
 		"route53globalresolver:UpdateAccessToken",
 	];
+	/** IAM actions required for the UpdateCoreNetworkEndpoint API call. */
+	static readonly UpdateCoreNetworkEndpoint: string[] = [];
 	/** IAM actions required for the UpdateDNSView API call. */
 	static readonly UpdateDNSView: string[] = [
 		"route53globalresolver:UpdateDNSView",

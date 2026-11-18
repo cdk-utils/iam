@@ -14,6 +14,9 @@ export class GameLiftActions {
 
 	/** [Write] gamelift:AcceptMatch */
 	static readonly AcceptMatch = "gamelift:AcceptMatch";
+	/** [PermissionManagement] gamelift:AllowVendedLogDeliveryForResource */
+	static readonly AllowVendedLogDeliveryForResource =
+		"gamelift:AllowVendedLogDeliveryForResource";
 	/** [Write] gamelift:ClaimGameServer */
 	static readonly ClaimGameServer = "gamelift:ClaimGameServer";
 	/** [Write] gamelift:CreateAlias */
@@ -418,7 +421,9 @@ export class GameLiftActions {
 		GameLiftActions.ListScripts,
 	];
 	/** All permission-management-level actions. */
-	static readonly AllPermissionManagementActions: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [
+		GameLiftActions.AllowVendedLogDeliveryForResource,
+	];
 	/** All tagging-level actions. */
 	static readonly AllTaggingActions: string[] = [
 		GameLiftActions.TagResource,

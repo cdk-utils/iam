@@ -5471,6 +5471,16 @@
       ]
     },
     {
+      "Name": "GetRequestAuthorizationPolicy",
+      "SDK": [
+        {
+          "Name": "iam-toolbox",
+          "Method": "get_request_authorization_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetRole",
       "AuthorizedActions": [
         {

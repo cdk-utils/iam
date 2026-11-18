@@ -153,6 +153,10 @@ export class HealthResources {
  * API operation to required IAM actions mapping for health.
  */
 export class HealthOperations {
+	/** IAM actions required for the ConfigureTags API call. */
+	static readonly ConfigureTags: string[] = [];
+	/** IAM actions required for the ConfigureTagsForOrganization API call. */
+	static readonly ConfigureTagsForOrganization: string[] = [];
 	/** IAM actions required for the DescribeAffectedAccountsForOrganization API call. */
 	static readonly DescribeAffectedAccountsForOrganization: string[] = [
 		"health:DescribeAffectedAccountsForOrganization",
@@ -205,10 +209,34 @@ export class HealthOperations {
 	];
 	/** IAM actions required for the DescribeServiceLifecycle API call. */
 	static readonly DescribeServiceLifecycle: string[] = [];
+	/** IAM actions required for the DescribeTagKeys API call. */
+	static readonly DescribeTagKeys: string[] = [];
+	/** IAM actions required for the DescribeTagKeysForOrganization API call. */
+	static readonly DescribeTagKeysForOrganization: string[] = [
+		"organizations:ListAccounts",
+	];
+	/** IAM actions required for the DescribeTags API call. */
+	static readonly DescribeTags: string[] = [];
+	/** IAM actions required for the DescribeTagsForOrganization API call. */
+	static readonly DescribeTagsForOrganization: string[] = [
+		"organizations:ListAccounts",
+	];
+	/** IAM actions required for the DescribeTagsOnboardingStatus API call. */
+	static readonly DescribeTagsOnboardingStatus: string[] = [];
+	/** IAM actions required for the DescribeTagsOnboardingStatusForOrganization API call. */
+	static readonly DescribeTagsOnboardingStatusForOrganization: string[] = [
+		"organizations:ListAccounts",
+	];
 	/** IAM actions required for the DisableHealthServiceAccessForOrganization API call. */
 	static readonly DisableHealthServiceAccessForOrganization: string[] = [
 		"organizations:DisableAWSServiceAccess",
 		"health:DisableHealthServiceAccessForOrganization",
+		"organizations:ListAccounts",
+	];
+	/** IAM actions required for the DisableTags API call. */
+	static readonly DisableTags: string[] = [];
+	/** IAM actions required for the DisableTagsForOrganization API call. */
+	static readonly DisableTagsForOrganization: string[] = [
 		"organizations:ListAccounts",
 	];
 	/** IAM actions required for the EnableHealthServiceAccessForOrganization API call. */
@@ -218,6 +246,10 @@ export class HealthOperations {
 		"health:EnableHealthServiceAccessForOrganization",
 		"organizations:ListAccounts",
 	];
+	/** IAM actions required for the EnableTags API call. */
+	static readonly EnableTags: string[] = [];
+	/** IAM actions required for the EnableTagsForOrganization API call. */
+	static readonly EnableTagsForOrganization: string[] = [];
 }
 
 /**

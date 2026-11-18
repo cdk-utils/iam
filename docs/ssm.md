@@ -3319,6 +3319,7 @@ new ssm.SSMActions()
 | <code><a href="#@cdk_utils/iam.ssm.SSMActions.property.DeletePatchBaseline">DeletePatchBaseline</a></code> | <code>string</code> | [Write] ssm:DeletePatchBaseline. |
 | <code><a href="#@cdk_utils/iam.ssm.SSMActions.property.DeleteResourceDataSync">DeleteResourceDataSync</a></code> | <code>string</code> | [Write] ssm:DeleteResourceDataSync. |
 | <code><a href="#@cdk_utils/iam.ssm.SSMActions.property.DeleteResourcePolicy">DeleteResourcePolicy</a></code> | <code>string</code> | [PermissionManagement] ssm:DeleteResourcePolicy. |
+| <code><a href="#@cdk_utils/iam.ssm.SSMActions.property.DeregisterDefaultHostManagementConfiguration">DeregisterDefaultHostManagementConfiguration</a></code> | <code>string</code> | [Write] ssm:DeregisterDefaultHostManagementConfiguration. |
 | <code><a href="#@cdk_utils/iam.ssm.SSMActions.property.DeregisterManagedInstance">DeregisterManagedInstance</a></code> | <code>string</code> | [Write] ssm:DeregisterManagedInstance. |
 | <code><a href="#@cdk_utils/iam.ssm.SSMActions.property.DeregisterPatchBaselineForPatchGroup">DeregisterPatchBaselineForPatchGroup</a></code> | <code>string</code> | [Write] ssm:DeregisterPatchBaselineForPatchGroup. |
 | <code><a href="#@cdk_utils/iam.ssm.SSMActions.property.DeregisterTargetFromMaintenanceWindow">DeregisterTargetFromMaintenanceWindow</a></code> | <code>string</code> | [Write] ssm:DeregisterTargetFromMaintenanceWindow. |
@@ -3387,6 +3388,7 @@ new ssm.SSMActions()
 | <code><a href="#@cdk_utils/iam.ssm.SSMActions.property.PutInventory">PutInventory</a></code> | <code>string</code> | [Write] ssm:PutInventory. |
 | <code><a href="#@cdk_utils/iam.ssm.SSMActions.property.PutParameter">PutParameter</a></code> | <code>string</code> | [Write] ssm:PutParameter. |
 | <code><a href="#@cdk_utils/iam.ssm.SSMActions.property.PutResourcePolicy">PutResourcePolicy</a></code> | <code>string</code> | [PermissionManagement] ssm:PutResourcePolicy. |
+| <code><a href="#@cdk_utils/iam.ssm.SSMActions.property.RegisterDefaultHostManagementConfiguration">RegisterDefaultHostManagementConfiguration</a></code> | <code>string</code> | [Write] ssm:RegisterDefaultHostManagementConfiguration. |
 | <code><a href="#@cdk_utils/iam.ssm.SSMActions.property.RegisterDefaultPatchBaseline">RegisterDefaultPatchBaseline</a></code> | <code>string</code> | [Write] ssm:RegisterDefaultPatchBaseline. |
 | <code><a href="#@cdk_utils/iam.ssm.SSMActions.property.RegisterManagedInstance">RegisterManagedInstance</a></code> | <code>string</code> | [Write] ssm:RegisterManagedInstance. |
 | <code><a href="#@cdk_utils/iam.ssm.SSMActions.property.RegisterPatchBaselineForPatchGroup">RegisterPatchBaselineForPatchGroup</a></code> | <code>string</code> | [Write] ssm:RegisterPatchBaselineForPatchGroup. |
@@ -4171,6 +4173,18 @@ public readonly DeleteResourcePolicy: string;
 - *Type:* string
 
 [PermissionManagement] ssm:DeleteResourcePolicy.
+
+---
+
+##### `DeregisterDefaultHostManagementConfiguration`<sup>Required</sup> <a name="DeregisterDefaultHostManagementConfiguration" id="@cdk_utils/iam.ssm.SSMActions.property.DeregisterDefaultHostManagementConfiguration"></a>
+
+```typescript
+public readonly DeregisterDefaultHostManagementConfiguration: string;
+```
+
+- *Type:* string
+
+[Write] ssm:DeregisterDefaultHostManagementConfiguration.
 
 ---
 
@@ -4987,6 +5001,18 @@ public readonly PutResourcePolicy: string;
 - *Type:* string
 
 [PermissionManagement] ssm:PutResourcePolicy.
+
+---
+
+##### `RegisterDefaultHostManagementConfiguration`<sup>Required</sup> <a name="RegisterDefaultHostManagementConfiguration" id="@cdk_utils/iam.ssm.SSMActions.property.RegisterDefaultHostManagementConfiguration"></a>
+
+```typescript
+public readonly RegisterDefaultHostManagementConfiguration: string;
+```
+
+- *Type:* string
+
+[Write] ssm:RegisterDefaultHostManagementConfiguration.
 
 ---
 
@@ -7103,6 +7129,7 @@ new ssm.SSMOperations()
 | <code><a href="#@cdk_utils/iam.ssm.SSMOperations.property.DeletePatchBaseline">DeletePatchBaseline</a></code> | <code>string[]</code> | IAM actions required for the DeletePatchBaseline API call. |
 | <code><a href="#@cdk_utils/iam.ssm.SSMOperations.property.DeleteResourceDataSync">DeleteResourceDataSync</a></code> | <code>string[]</code> | IAM actions required for the DeleteResourceDataSync API call. |
 | <code><a href="#@cdk_utils/iam.ssm.SSMOperations.property.DeleteResourcePolicy">DeleteResourcePolicy</a></code> | <code>string[]</code> | IAM actions required for the DeleteResourcePolicy API call. |
+| <code><a href="#@cdk_utils/iam.ssm.SSMOperations.property.DeregisterDefaultHostManagementConfiguration">DeregisterDefaultHostManagementConfiguration</a></code> | <code>string[]</code> | IAM actions required for the DeregisterDefaultHostManagementConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.ssm.SSMOperations.property.DeregisterManagedInstance">DeregisterManagedInstance</a></code> | <code>string[]</code> | IAM actions required for the DeregisterManagedInstance API call. |
 | <code><a href="#@cdk_utils/iam.ssm.SSMOperations.property.DeregisterPatchBaselineForPatchGroup">DeregisterPatchBaselineForPatchGroup</a></code> | <code>string[]</code> | IAM actions required for the DeregisterPatchBaselineForPatchGroup API call. |
 | <code><a href="#@cdk_utils/iam.ssm.SSMOperations.property.DeregisterTargetFromMaintenanceWindow">DeregisterTargetFromMaintenanceWindow</a></code> | <code>string[]</code> | IAM actions required for the DeregisterTargetFromMaintenanceWindow API call. |
@@ -7194,6 +7221,7 @@ new ssm.SSMOperations()
 | <code><a href="#@cdk_utils/iam.ssm.SSMOperations.property.PutInventory">PutInventory</a></code> | <code>string[]</code> | IAM actions required for the PutInventory API call. |
 | <code><a href="#@cdk_utils/iam.ssm.SSMOperations.property.PutParameter">PutParameter</a></code> | <code>string[]</code> | IAM actions required for the PutParameter API call. |
 | <code><a href="#@cdk_utils/iam.ssm.SSMOperations.property.PutResourcePolicy">PutResourcePolicy</a></code> | <code>string[]</code> | IAM actions required for the PutResourcePolicy API call. |
+| <code><a href="#@cdk_utils/iam.ssm.SSMOperations.property.RegisterDefaultHostManagementConfiguration">RegisterDefaultHostManagementConfiguration</a></code> | <code>string[]</code> | IAM actions required for the RegisterDefaultHostManagementConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.ssm.SSMOperations.property.RegisterDefaultPatchBaseline">RegisterDefaultPatchBaseline</a></code> | <code>string[]</code> | IAM actions required for the RegisterDefaultPatchBaseline API call. |
 | <code><a href="#@cdk_utils/iam.ssm.SSMOperations.property.RegisterPatchBaselineForPatchGroup">RegisterPatchBaselineForPatchGroup</a></code> | <code>string[]</code> | IAM actions required for the RegisterPatchBaselineForPatchGroup API call. |
 | <code><a href="#@cdk_utils/iam.ssm.SSMOperations.property.RegisterTargetWithMaintenanceWindow">RegisterTargetWithMaintenanceWindow</a></code> | <code>string[]</code> | IAM actions required for the RegisterTargetWithMaintenanceWindow API call. |
@@ -7552,6 +7580,18 @@ public readonly DeleteResourcePolicy: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteResourcePolicy API call.
+
+---
+
+##### `DeregisterDefaultHostManagementConfiguration`<sup>Required</sup> <a name="DeregisterDefaultHostManagementConfiguration" id="@cdk_utils/iam.ssm.SSMOperations.property.DeregisterDefaultHostManagementConfiguration"></a>
+
+```typescript
+public readonly DeregisterDefaultHostManagementConfiguration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeregisterDefaultHostManagementConfiguration API call.
 
 ---
 
@@ -8644,6 +8684,18 @@ public readonly PutResourcePolicy: string[];
 - *Type:* string[]
 
 IAM actions required for the PutResourcePolicy API call.
+
+---
+
+##### `RegisterDefaultHostManagementConfiguration`<sup>Required</sup> <a name="RegisterDefaultHostManagementConfiguration" id="@cdk_utils/iam.ssm.SSMOperations.property.RegisterDefaultHostManagementConfiguration"></a>
+
+```typescript
+public readonly RegisterDefaultHostManagementConfiguration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the RegisterDefaultHostManagementConfiguration API call.
 
 ---
 
